@@ -26,7 +26,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_embassy/mp_embassy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x10964dac, Offset: 0x2d8
 // Size: 0x2c
 function on_localclient_connect(localclientnum) {
@@ -35,7 +35,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace mp_embassy/mp_embassy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe0916b10, Offset: 0x310
 // Size: 0x2c
 function on_gameplay_started(localclientnum) {
@@ -44,7 +44,7 @@ function on_gameplay_started(localclientnum) {
 }
 
 // Namespace mp_embassy/mp_embassy
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6e83c51e, Offset: 0x348
 // Size: 0x104
 function spawn_flavor_apc_explosion(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

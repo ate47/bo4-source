@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_aat_kill_o_watt/zm_aat_kill_o_watt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf1329342, Offset: 0x170
 // Size: 0x26c
 function __init__() {
@@ -43,7 +43,7 @@ function __init__() {
 }
 
 // Namespace zm_aat_kill_o_watt/zm_aat_kill_o_watt
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xef8d2d17, Offset: 0x3e8
 // Size: 0x9c
 function result(death, attacker, mod, weapon) {
@@ -55,7 +55,7 @@ function result(death, attacker, mod, weapon) {
 }
 
 // Namespace zm_aat_kill_o_watt/zm_aat_kill_o_watt
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc97e3935, Offset: 0x490
 // Size: 0x130
 function function_1d0f645d(player) {
@@ -73,7 +73,7 @@ function function_1d0f645d(player) {
 }
 
 // Namespace zm_aat_kill_o_watt/zm_aat_kill_o_watt
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x32ff1105, Offset: 0x5c8
 // Size: 0x154
 function function_3c98a3f4(player, var_fb0999c0) {
@@ -94,7 +94,7 @@ function function_3c98a3f4(player, var_fb0999c0) {
 }
 
 // Namespace zm_aat_kill_o_watt/zm_aat_kill_o_watt
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2eff0815, Offset: 0x728
 // Size: 0x8c
 function function_fbd6ea47(player) {
@@ -106,7 +106,7 @@ function function_fbd6ea47(player) {
 }
 
 // Namespace zm_aat_kill_o_watt/zm_aat_kill_o_watt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbaf18d3d, Offset: 0x7c0
 // Size: 0x5e
 function function_439d6573() {

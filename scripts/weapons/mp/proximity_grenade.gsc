@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1224cdf0, Offset: 0xc0
 // Size: 0x22
 function __init__() {

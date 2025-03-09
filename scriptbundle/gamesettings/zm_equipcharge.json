@@ -9,8 +9,8 @@
     "name": "zm_equipcharge",
     "displayname": "#hash_4b2a9aba09d09c12",
     "label1": "#hash_51aa03eea5a0dd76",
-    "var_71b6e020": "#hash_1413f5dcb3e0f537",
+    "label3": "#hash_1413f5dcb3e0f537",
     "label2": "#hash_7e5de0c85e3519f0",
-    "var_9de86f42": 3,
+    "optionscount": 3,
     "setting": "zmEquipmentChargeRate"
 }

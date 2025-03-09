@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bot_position/zm_bot_position
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xac67fbe3, Offset: 0x110
 // Size: 0x154
 function __init__() {
@@ -34,7 +34,7 @@ function __init__() {
 }
 
 // Namespace zm_bot_position/zm_bot_position
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd51d8be1, Offset: 0x270
 // Size: 0x3a
 function zombie_in_combat(params, tacbundle) {
@@ -45,7 +45,7 @@ function zombie_in_combat(params, tacbundle) {
 }
 
 // Namespace zm_bot_position/zm_bot_position
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7e45f191, Offset: 0x2b8
 // Size: 0x3a
 function function_6300517d(params, tacbundle) {
@@ -56,7 +56,7 @@ function function_6300517d(params, tacbundle) {
 }
 
 // Namespace zm_bot_position/zm_bot_position
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x546fd46f, Offset: 0x300
 // Size: 0x188
 function function_a3d8f155(params, tacbundle) {
@@ -82,7 +82,7 @@ function function_a3d8f155(params, tacbundle) {
 }
 
 // Namespace zm_bot_position/zm_bot_position
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc1a86cb5, Offset: 0x490
 // Size: 0x4a
 function zombie_interact(params, tacbundle) {
@@ -93,7 +93,7 @@ function zombie_interact(params, tacbundle) {
 }
 
 // Namespace zm_bot_position/zm_bot_position
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xaa9a7cb2, Offset: 0x4e8
 // Size: 0x4a
 function zombie_weapon_upgrade(params, tacbundle) {
@@ -104,7 +104,7 @@ function zombie_weapon_upgrade(params, tacbundle) {
 }
 
 // Namespace zm_bot_position/zm_bot_position
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x45d1de10, Offset: 0x540
 // Size: 0x102
 function function_a0b3c01e() {
@@ -125,7 +125,7 @@ function function_a0b3c01e() {
 }
 
 // Namespace zm_bot_position/zm_bot_position
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa6a5e8d9, Offset: 0x650
 // Size: 0x5a
 function function_957ba503() {

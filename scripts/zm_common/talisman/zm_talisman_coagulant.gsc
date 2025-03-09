@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_talisman_coagulant/zm_talisman_coagulant
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfd5eb051, Offset: 0x110
 // Size: 0x2c
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zm_talisman_coagulant/zm_talisman_coagulant
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x353675d9, Offset: 0x148
 // Size: 0x12
 function activate_talisman() {

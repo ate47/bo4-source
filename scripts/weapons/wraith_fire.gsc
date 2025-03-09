@@ -25,7 +25,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x55a9cf6, Offset: 0x208
 // Size: 0x112
 function init_shared() {
@@ -41,7 +41,7 @@ function init_shared() {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x18ca03fd, Offset: 0x328
 // Size: 0x26
 function function_5ea93036(watcher) {
@@ -49,7 +49,7 @@ function function_5ea93036(watcher) {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x56d354e, Offset: 0x358
 // Size: 0x8c
 function function_dfe5cf4c(watcher, player) {
@@ -60,7 +60,7 @@ function function_dfe5cf4c(watcher, player) {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x46a290dd, Offset: 0x3f0
 // Size: 0x2e
 function function_4dbceded() {
@@ -70,7 +70,7 @@ function function_4dbceded() {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf51e619c, Offset: 0x428
 // Size: 0x264
 function function_13f6636b(owner, weapon) {
@@ -99,7 +99,7 @@ function function_13f6636b(owner, weapon) {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x937f9be6, Offset: 0x698
 // Size: 0x8c
 function function_3932cbd9(owner, origin, normal, velocity, killcament, weapon, team, customsettings) {
@@ -108,7 +108,7 @@ function function_3932cbd9(owner, origin, normal, velocity, killcament, weapon, 
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xad03ee07, Offset: 0x730
 // Size: 0x66
 function is_under_water(position) {
@@ -117,7 +117,7 @@ function is_under_water(position) {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x73c35dea, Offset: 0x7a0
 // Size: 0x48
 function function_a66ba8cc(water_depth) {
@@ -125,7 +125,7 @@ function function_a66ba8cc(water_depth) {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x846d9bb4, Offset: 0x7f0
 // Size: 0x2e
 function get_water_depth(position) {
@@ -133,7 +133,7 @@ function get_water_depth(position) {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x53598544, Offset: 0x828
 // Size: 0x7a
 function function_b66b2f4d() {
@@ -145,7 +145,7 @@ function function_b66b2f4d() {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc04fdeaf, Offset: 0x8b0
 // Size: 0x8c
 function function_7cbeb2f0(normal) {
@@ -158,7 +158,7 @@ function function_7cbeb2f0(normal) {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xe612b478, Offset: 0x948
 // Size: 0x96c
 function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon, team, customsettings) {
@@ -230,7 +230,8 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
             x = originalposition[0];
             y = originalposition[1];
             lowestz = var_69d15ad0[#"position"][2];
-            for (z = originalposition[2]; z > lowestz; z -= randomintrange(20, 30)) {
+            z = originalposition[2];
+            while (z > lowestz) {
                 newpos = (x, y, z);
                 water_depth = get_water_depth(newpos);
                 if (function_a66ba8cc(water_depth) || is_under_water(newpos)) {
@@ -239,6 +240,7 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
                     break;
                 }
                 level thread function_42b9fdbe(var_f483ab45, newpos, wall_normal, int(customsettings.var_b79d64a9), team);
+                z -= randomintrange(20, 30);
             }
             var_bc9ec158 = 0.6 * var_69d15ad0[#"fraction"];
             if (var_bc9ec158 > 0) {
@@ -269,7 +271,7 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8a2d34ab, Offset: 0x12c0
 // Size: 0x98
 function function_523961e2(startpos, normal, var_4997e17c, fxindex, fxcount, defaultdistance, rotation) {
@@ -279,7 +281,7 @@ function function_523961e2(startpos, normal, var_4997e17c, fxindex, fxcount, def
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 13, eflags: 0x1 linked
+// Params 13, eflags: 0x0
 // Checksum 0x5d59b051, Offset: 0x1360
 // Size: 0x10b0
 function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotation, killcament, weapon, customsettings, team, var_e76400c0, wallnormal, var_693f108f) {
@@ -336,7 +338,7 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
                 if (function_a66ba8cc(water_depth)) {
                     locations[#"normal"][count] = (0, 0, 1);
                     locations[#"steam"][count] = 1;
-                    locations[#"loc"][count] = locations[#"loc"][count] - (0, 0, water_depth);
+                    locations[#"loc"][count] -= (0, 0, water_depth);
                 } else {
                     locations[#"normal"][count] = tracedown[#"normal"];
                     locations[#"smallfire"][count] = 1;
@@ -359,7 +361,7 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
                 if (function_a66ba8cc(water_depth)) {
                     locations[#"normal"][locindex] = (0, 0, 1);
                     locations[#"steam"][locindex] = 1;
-                    locations[#"loc"][locindex] = locations[#"loc"][locindex] - (0, 0, water_depth);
+                    locations[#"loc"][locindex] -= (0, 0, water_depth);
                     continue;
                 }
                 locations[#"normal"][locindex] = var_9417df90[#"normal"];
@@ -427,7 +429,7 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x72227895, Offset: 0x2418
 // Size: 0x9c
 function function_42b9fdbe(weapon, loc, normal, duration, team, mdl_anchor) {
@@ -437,7 +439,7 @@ function function_42b9fdbe(weapon, loc, normal, duration, team, mdl_anchor) {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x3daee41b, Offset: 0x24c0
 // Size: 0x186
 function function_a25dee15(weapon, loc, normal, duration, team) {
@@ -458,7 +460,7 @@ function function_a25dee15(weapon, loc, normal, duration, team) {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfc9933a, Offset: 0x2650
 // Size: 0x4c
 function function_4e5a1dd3(mdl_anchor) {
@@ -490,7 +492,7 @@ function function_4e5a1dd3(mdl_anchor) {
 #/
 
 // Namespace wraith_fire/wraith_fire
-// Params 11, eflags: 0x1 linked
+// Params 11, eflags: 0x0
 // Checksum 0xab9bf636, Offset: 0x2768
 // Size: 0x698
 function damageeffectarea(owner, position, killcament, normal, weapon, customsettings, radius_multiplier, var_e76400c0, wallnormal, var_cbaaea69, mdl_anchor) {
@@ -584,7 +586,7 @@ function damageeffectarea(owner, position, killcament, normal, weapon, customset
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xb6249eeb, Offset: 0x2e08
 // Size: 0x50
 function private is_round_reset() {
@@ -595,7 +597,7 @@ function private is_round_reset() {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x9f4f6285, Offset: 0x2e60
 // Size: 0x22
 function private function_30125f88() {
@@ -606,7 +608,7 @@ function private function_30125f88() {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xfc65148b, Offset: 0x2e90
 // Size: 0x15c
 function function_124fe29c(a_targets, owner, position, fireeffectarea, var_289a74bc, killcament, weapon, customsettings) {
@@ -628,7 +630,7 @@ function function_124fe29c(a_targets, owner, position, fireeffectarea, var_289a7
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc1b8c551, Offset: 0x2ff8
 // Size: 0x54
 function function_e7f6e154(n_count_per_network_frame = 1) {
@@ -639,7 +641,7 @@ function function_e7f6e154(n_count_per_network_frame = 1) {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5b4dc95c, Offset: 0x3058
 // Size: 0x54
 function stopfiresound() {
@@ -652,7 +654,7 @@ function stopfiresound() {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 11, eflags: 0x1 linked
+// Params 11, eflags: 0x0
 // Checksum 0x923229b2, Offset: 0x30b8
 // Size: 0x3dc
 function function_9464e4ad(owner, position, killcament, normal, weapon, customsettings, radius_multiplier, var_e76400c0, wallnormal, var_cbaaea69, mdl_anchor) {
@@ -702,7 +704,7 @@ function function_9464e4ad(owner, position, killcament, normal, weapon, customse
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa4691b4e, Offset: 0x34a0
 // Size: 0x33c
 function getpotentialtargets(owner, customsettings) {
@@ -796,7 +798,7 @@ function function_5a49ebd3(team) {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xf8c65320, Offset: 0x3950
 // Size: 0x434
 function trytoapplyfiredamage(target, owner, position, fireeffectarea, var_289a74bc, killcament, weapon, customsettings) {
@@ -856,7 +858,7 @@ function trytoapplyfiredamage(target, owner, position, fireeffectarea, var_289a7
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc87180fa, Offset: 0x3d90
 // Size: 0x1cc
 function damageinfirearea(origin, killcament, trace, position, weapon, customsettings, owner) {
@@ -889,7 +891,7 @@ function damageinfirearea(origin, killcament, trace, position, weapon, customset
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf643314, Offset: 0x3f68
 // Size: 0x152
 function function_37ddab3(origin, killcament, trace, position, weapon, customsettings, owner) {
@@ -910,7 +912,7 @@ function function_37ddab3(origin, killcament, trace, position, weapon, customset
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbe1a992e, Offset: 0x40c8
 // Size: 0x14e
 function sndfiredamage() {
@@ -931,7 +933,7 @@ function sndfiredamage() {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xab71831a, Offset: 0x4220
 // Size: 0x4c
 function sndfiredamage_deleteent(ent) {
@@ -942,7 +944,7 @@ function sndfiredamage_deleteent(ent) {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x155d7eaf, Offset: 0x4278
 // Size: 0xf0
 function hitpos(start, end, color) {
@@ -958,7 +960,7 @@ function hitpos(start, end, color) {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x260ec7f5, Offset: 0x4370
 // Size: 0xfc
 function candofiredamage(killcament, victim, resetfiretime) {
@@ -978,7 +980,7 @@ function candofiredamage(killcament, victim, resetfiretime) {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8f1e11b7, Offset: 0x4478
 // Size: 0x44
 function resetfiredamage(entnum, time) {
@@ -989,7 +991,7 @@ function resetfiredamage(entnum, time) {
 }
 
 // Namespace wraith_fire/wraith_fire
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x7c8334d1, Offset: 0x44c8
 // Size: 0xb4
 function function_85ff22aa(origin, radius, color, alpha, time) {

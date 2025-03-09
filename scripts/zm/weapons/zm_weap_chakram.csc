@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_chakram/zm_weap_chakram
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3727bcad, Offset: 0x1c0
 // Size: 0x74a
 function __init__() {
@@ -51,7 +51,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_chakram/zm_weap_chakram
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe5f89be3, Offset: 0x918
 // Size: 0xb4
 function function_8e1552b1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -63,7 +63,7 @@ function function_8e1552b1(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_chakram/zm_weap_chakram
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2b483689, Offset: 0x9d8
 // Size: 0xb4
 function function_6831ee4b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -75,7 +75,7 @@ function function_6831ee4b(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_chakram/zm_weap_chakram
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x86d4524d, Offset: 0xa98
 // Size: 0x90
 function chakram_melee_hit(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -85,7 +85,7 @@ function chakram_melee_hit(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_chakram/zm_weap_chakram
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf3a43ac3, Offset: 0xb30
 // Size: 0x7c
 function chakram_head_pop_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -95,7 +95,7 @@ function chakram_head_pop_fx(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace zm_weap_chakram/zm_weap_chakram
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x21ea6bbb, Offset: 0xbb8
 // Size: 0x126
 function chakram_throw_trail_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -116,7 +116,7 @@ function chakram_throw_trail_fx(localclientnum, oldval, newval, bnewent, binitia
 }
 
 // Namespace zm_weap_chakram/zm_weap_chakram
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfc72bdfc, Offset: 0xce8
 // Size: 0xbc
 function chakram_throw_impact_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -127,7 +127,7 @@ function chakram_throw_impact_fx(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace zm_weap_chakram/zm_weap_chakram
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd51b0a62, Offset: 0xdb0
 // Size: 0xa4
 function chakram_throw_special_impact_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -138,7 +138,7 @@ function chakram_throw_special_impact_fx(localclientnum, oldval, newval, bnewent
 }
 
 // Namespace zm_weap_chakram/zm_weap_chakram
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa8c89e7e, Offset: 0xe60
 // Size: 0x7c
 function chakram_speed_buff_postfx(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -148,7 +148,7 @@ function chakram_speed_buff_postfx(localclientnum, oldvalue, newvalue, bnewent, 
 }
 
 // Namespace zm_weap_chakram/zm_weap_chakram
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x369d252b, Offset: 0xee8
 // Size: 0x6dc
 function chakram_whirlwind_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -227,7 +227,7 @@ function chakram_whirlwind_fx(localclientnum, oldval, newval, bnewent, binitials
 }
 
 // Namespace zm_weap_chakram/zm_weap_chakram
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xfadb0e62, Offset: 0x15d0
 // Size: 0xf6
 function private function_cfefd76a(localclientnum, var_b3673abf, var_3ab46b9) {
@@ -243,7 +243,7 @@ function private function_cfefd76a(localclientnum, var_b3673abf, var_3ab46b9) {
 }
 
 // Namespace zm_weap_chakram/zm_weap_chakram
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2076129e, Offset: 0x16d0
 // Size: 0x74
 function chakram_whirlwind_shred_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -251,7 +251,7 @@ function chakram_whirlwind_shred_fx(localclientnum, oldval, newval, bnewent, bin
 }
 
 // Namespace zm_weap_chakram/zm_weap_chakram
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xafe3fd62, Offset: 0x1750
 // Size: 0xfa
 function chakram_rumble(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {

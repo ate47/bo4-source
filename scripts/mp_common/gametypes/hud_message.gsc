@@ -37,7 +37,7 @@ function init() {
     game.strings[#"players_forfeited"] = #"mp/players_forfeited";
     game.strings[#"other_teams_forfeited"] = #"mp_other_teams_forfeited";
     game.strings[#"host_sucks"] = #"mp/host_sucks";
-    game.strings[#"host_ended"] = #"hash_cd63faed592da03";
+    game.strings[#"host_ended"] = #"mp/host_ended_game";
     game.strings[#"game_ended"] = #"mp/ended_game";
     level.var_c3abe983 = [];
     function_5d9d54a9(0, game.strings[#"tie"]);

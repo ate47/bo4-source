@@ -4,7 +4,7 @@
 #namespace killstreak_bundles;
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf9d028c1, Offset: 0x1f8
 // Size: 0xac
 function register_killstreak_bundle(type) {
@@ -15,7 +15,7 @@ function register_killstreak_bundle(type) {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7bb645c, Offset: 0x2b0
 // Size: 0x6c
 function register_bundle(type, bundle) {
@@ -25,7 +25,7 @@ function register_bundle(type, bundle) {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd604cb83, Offset: 0x328
 // Size: 0xaa
 function get_bundle(killstreak) {
@@ -39,7 +39,7 @@ function get_bundle(killstreak) {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8e94a788, Offset: 0x3e0
 // Size: 0x1a
 function spawned(bundle) {
@@ -47,7 +47,7 @@ function spawned(bundle) {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x26b9e3d3, Offset: 0x408
 // Size: 0xa
 function function_48e9536e() {
@@ -55,7 +55,7 @@ function function_48e9536e() {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6fd1d0c3, Offset: 0x420
 // Size: 0x22
 function get_hack_timeout() {
@@ -63,7 +63,7 @@ function get_hack_timeout() {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x48312667, Offset: 0x450
 // Size: 0x48
 function get_hack_protection() {
@@ -71,7 +71,7 @@ function get_hack_protection() {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x474ac5d3, Offset: 0x4a0
 // Size: 0x4a
 function get_hack_tool_inner_time() {
@@ -79,7 +79,7 @@ function get_hack_tool_inner_time() {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xeb9c0c41, Offset: 0x4f8
 // Size: 0x4a
 function get_hack_tool_outer_time() {
@@ -87,7 +87,7 @@ function get_hack_tool_outer_time() {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdfe8b08d, Offset: 0x550
 // Size: 0x4a
 function get_hack_tool_inner_radius() {
@@ -95,7 +95,7 @@ function get_hack_tool_inner_radius() {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x407e7325, Offset: 0x5a8
 // Size: 0x4a
 function get_hack_tool_outer_radius() {
@@ -103,7 +103,7 @@ function get_hack_tool_outer_radius() {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1454a4b9, Offset: 0x600
 // Size: 0x4a
 function get_lost_line_of_sight_limit_msec() {
@@ -111,7 +111,7 @@ function get_lost_line_of_sight_limit_msec() {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x74e48abb, Offset: 0x658
 // Size: 0x4a
 function get_hack_tool_no_line_of_sight_time() {
@@ -119,7 +119,7 @@ function get_hack_tool_no_line_of_sight_time() {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x87bd2c7e, Offset: 0x6b0
 // Size: 0x48
 function get_hack_scoreevent() {
@@ -127,7 +127,7 @@ function get_hack_scoreevent() {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3d7e30f7, Offset: 0x700
 // Size: 0x4e
 function get_hack_fx() {
@@ -135,7 +135,7 @@ function get_hack_fx() {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x63695afe, Offset: 0x758
 // Size: 0x4e
 function get_hack_loop_fx() {
@@ -143,7 +143,7 @@ function get_hack_loop_fx() {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc5a49f1c, Offset: 0x7b0
 // Size: 0x22
 function get_max_health(killstreaktype) {
@@ -151,7 +151,7 @@ function get_max_health(killstreaktype) {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb713cc4, Offset: 0x7e0
 // Size: 0x22
 function get_low_health(killstreaktype) {
@@ -159,7 +159,7 @@ function get_low_health(killstreaktype) {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3c517396, Offset: 0x810
 // Size: 0x22
 function get_hacked_health(killstreaktype) {
@@ -167,14 +167,14 @@ function get_hacked_health(killstreaktype) {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xc5547d50, Offset: 0x840
 // Size: 0x694
 function get_shots_to_kill(weapon, meansofdeath, bundle) {
     shotstokill = undefined;
     baseweapon = weapons::getbaseweapon(weapon);
     if (baseweapon === level.weaponflechette && weaponhasattachment(weapon, "uber")) {
-        if (bundle.var_d3413870 === "swat_team" || bundle.var_d3413870 === "overwatch_helicopter") {
+        if (bundle.kstype === "swat_team" || bundle.kstype === "overwatch_helicopter") {
             if (isactor(self)) {
                 shotstokill = bundle.var_3020f1b2;
             } else {
@@ -186,7 +186,7 @@ function get_shots_to_kill(weapon, meansofdeath, bundle) {
         return (isdefined(shotstokill) ? shotstokill : 0);
     }
     if (baseweapon === level.weaponspecialcrossbow) {
-        if (bundle.var_d3413870 === "swat_team" || bundle.var_d3413870 === "overwatch_helicopter") {
+        if (bundle.kstype === "swat_team" || bundle.kstype === "overwatch_helicopter") {
             if (isactor(self)) {
                 shotstokill = bundle.var_1de74ef1;
             } else {
@@ -296,7 +296,7 @@ function get_shots_to_kill(weapon, meansofdeath, bundle) {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa114bd40, Offset: 0xee0
 // Size: 0xb8
 function get_emp_grenade_damage(killstreaktype, maxhealth) {
@@ -315,7 +315,7 @@ function get_emp_grenade_damage(killstreaktype, maxhealth) {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xdd0e7e1e, Offset: 0xfa0
 // Size: 0x6e
 function function_daad16b8(maxhealth, weapon_damage, var_8cef04) {
@@ -330,7 +330,7 @@ function function_daad16b8(maxhealth, weapon_damage, var_8cef04) {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd6173b3a, Offset: 0x1018
 // Size: 0x56
 function function_14bd8ba5(damage, damage_multiplier) {
@@ -344,7 +344,7 @@ function function_14bd8ba5(damage, damage_multiplier) {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x49a83cca, Offset: 0x1078
 // Size: 0x5a
 function function_6bacfedc(weapon, levelweapon) {
@@ -360,7 +360,7 @@ function function_90509610(weapon, levelweapon) {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x7b269847, Offset: 0x1148
 // Size: 0xba
 function get_weapon_damage(killstreaktype, maxhealth, attacker, weapon, type, damage, flags, chargeshotlevel) {
@@ -373,7 +373,7 @@ function get_weapon_damage(killstreaktype, maxhealth, attacker, weapon, type, da
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x95fde4e1, Offset: 0x1210
 // Size: 0x6aa
 function function_dd7587e4(bundle, maxhealth, attacker, weapon, type, damage, flags, chargeshotlevel) {

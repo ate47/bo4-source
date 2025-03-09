@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "allow_gestures",
     "displayname": "#menu/allow_gestures",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "boastEnabled",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_blundergat/zm_weap_blundergat
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa0f5f881, Offset: 0x2f0
 // Size: 0x3fa
 function __init__() {
@@ -40,7 +40,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_blundergat/zm_weap_blundergat
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe7328fcd, Offset: 0x6f8
 // Size: 0x12e
 function blundergat_dart_blink(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -60,7 +60,7 @@ function blundergat_dart_blink(localclientnum, oldval, newval, bnewent, binitial
 }
 
 // Namespace zm_weap_blundergat/zm_weap_blundergat
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6d0364b9, Offset: 0x830
 // Size: 0x25e
 function magma_gat_blob_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -97,7 +97,7 @@ function magma_gat_blob_fx(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_blundergat/zm_weap_blundergat
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4fb2feac, Offset: 0xa98
 // Size: 0x114
 function zombie_magma_fire_explosion(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -116,7 +116,7 @@ function zombie_magma_fire_explosion(localclientnum, oldval, newval, bnewent, bi
 }
 
 // Namespace zm_weap_blundergat/zm_weap_blundergat
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x29bcd6eb, Offset: 0xbb8
 // Size: 0x48c
 function positional_zombie_fire_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -193,7 +193,7 @@ function positional_zombie_fire_fx(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_weap_blundergat/zm_weap_blundergat
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x5856bcbb, Offset: 0x1050
 // Size: 0x8d4
 function private function_6af9874(localclientnum, newval) {

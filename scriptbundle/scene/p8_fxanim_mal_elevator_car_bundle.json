@@ -1,0 +1,54 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7fd49137643886b4",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "down_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4dda2b0d7191c6cc",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "up"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4a7cd67d7ca2a15d",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "up_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_48d39d7e37adae03",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "down"
+                }
+            ],
+            "model": "#hash_2dfeec7c3af1aadf",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mal_elevator_car_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_powerup_bonus_points_team/zm_powerup_bonus_points_team
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa17aa717, Offset: 0x120
 // Size: 0x84
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace zm_powerup_bonus_points_team/zm_powerup_bonus_points_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x64988313, Offset: 0x1b0
 // Size: 0x44
 function grab_bonus_points_team(player) {
@@ -34,7 +34,7 @@ function grab_bonus_points_team(player) {
 }
 
 // Namespace zm_powerup_bonus_points_team/zm_powerup_bonus_points_team
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc87018a7, Offset: 0x200
 // Size: 0x120
 function bonus_points_team_powerup(item, player) {

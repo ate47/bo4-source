@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace lead_drone/lead_drone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa3814471, Offset: 0x108
 // Size: 0x4c
 function __init__() {
@@ -20,7 +20,7 @@ function __init__() {
 }
 
 // Namespace lead_drone/lead_drone
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xbe08bc0d, Offset: 0x160
 // Size: 0x8c
 function reload(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

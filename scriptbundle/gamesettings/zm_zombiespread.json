@@ -8,8 +8,8 @@
     "name": "zm_zombiespread",
     "displayname": "#hash_5469d52f29775c3d",
     "label1": "#hash_4bf2d101b5a0c299",
-    "var_71b6e020": "#hash_118e4d7cfa60ba63",
+    "label3": "#hash_118e4d7cfa60ba63",
     "label2": "#hash_1ba60b6389d20648",
-    "var_9de86f42": 3,
+    "optionscount": 3,
     "setting": "zmZombieSpread"
 }

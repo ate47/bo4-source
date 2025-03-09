@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_tricannon/zm_weap_tricannon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd53c7177, Offset: 0x1b8
 // Size: 0x22a
 function __init__() {
@@ -36,7 +36,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_tricannon/zm_weap_tricannon
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd5eb2f20, Offset: 0x3f0
 // Size: 0x84
 function function_4c32ce00(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -48,7 +48,7 @@ function function_4c32ce00(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_tricannon/zm_weap_tricannon
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2ea973a5, Offset: 0x480
 // Size: 0x11c
 function function_af90fb8c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -66,7 +66,7 @@ function function_af90fb8c(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_tricannon/zm_weap_tricannon
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x532af67e, Offset: 0x5a8
 // Size: 0x1a4
 function function_39fb4ba9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

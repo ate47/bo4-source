@@ -22,7 +22,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_nixie_tubes/wz_nixie_tubes
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa84bafd6, Offset: 0x128
 // Size: 0x124
 function __init__() {
@@ -30,14 +30,14 @@ function __init__() {
     nixie_tube_cage = getdynent("nixie_tube_cage");
     if (!(isdefined(level.var_f64d56a1) && level.var_f64d56a1)) {
         if (isdefined(nixie_tube_cage)) {
-            function_e2a06860(nixie_tube_cage, 3);
+            setdynentstate(nixie_tube_cage, 3);
         }
     }
     level thread function_5f309cfb();
 }
 
 // Namespace wz_nixie_tubes/wz_nixie_tubes
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x321744c, Offset: 0x258
 // Size: 0x8c
 function function_5f309cfb() {
@@ -46,7 +46,7 @@ function function_5f309cfb() {
     nixie_tube_cage = getdynent("nixie_tube_cage");
     if (!(isdefined(level.var_f64d56a1) && level.var_f64d56a1)) {
         if (isdefined(nixie_tube_cage)) {
-            function_e2a06860(nixie_tube_cage, 3);
+            setdynentstate(nixie_tube_cage, 3);
         }
     }
 }

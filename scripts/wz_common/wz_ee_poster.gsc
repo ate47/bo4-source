@@ -10,7 +10,7 @@
 
 // Namespace wz_ee_poster/wz_ee_poster
 // Params 0, eflags: 0x2
-// Checksum 0x62125e01, Offset: 0xe8
+// Checksum 0xe0f28bc9, Offset: 0xe8
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"wz_ee_poster", &__init__, undefined, undefined);
@@ -18,15 +18,15 @@ function autoexec __init__system__() {
 
 // Namespace wz_ee_poster/wz_ee_poster
 // Params 0, eflags: 0x2
-// Checksum 0xe3202ab6, Offset: 0x130
+// Checksum 0x26732f6e, Offset: 0x130
 // Size: 0x5a
 function autoexec __init() {
     level.var_5805dc3b = isdefined(getgametypesetting(#"hash_5f842714fa80e5a9")) ? getgametypesetting(#"hash_5f842714fa80e5a9") : 0;
 }
 
 // Namespace wz_ee_poster/wz_ee_poster
-// Params 0, eflags: 0x1 linked
-// Checksum 0x4e8eaaae, Offset: 0x198
+// Params 0, eflags: 0x0
+// Checksum 0xe3b30abc, Offset: 0x198
 // Size: 0x1c
 function __init__() {
     hidemiscmodels("poster_damaged");
@@ -34,7 +34,7 @@ function __init__() {
 
 // Namespace wz_ee_poster/grenade_fire
 // Params 1, eflags: 0x44
-// Checksum 0xec48a7b0, Offset: 0x1c0
+// Checksum 0xbbc4e3df, Offset: 0x1c0
 // Size: 0x154
 function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
     if (level.inprematchperiod || !level.var_5805dc3b) {
@@ -56,8 +56,8 @@ function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
 }
 
 // Namespace wz_ee_poster/wz_ee_poster
-// Params 2, eflags: 0x1 linked
-// Checksum 0x2157cf14, Offset: 0x320
+// Params 2, eflags: 0x0
+// Checksum 0x3c6829b7, Offset: 0x320
 // Size: 0x224
 function function_3383b382(player, poster_trigger) {
     if (!isdefined(player) || !isdefined(self) || !isdefined(poster_trigger)) {
@@ -95,8 +95,8 @@ function function_3383b382(player, poster_trigger) {
 }
 
 // Namespace wz_ee_poster/wz_ee_poster
-// Params 1, eflags: 0x1 linked
-// Checksum 0x4860f9e, Offset: 0x550
+// Params 1, eflags: 0x0
+// Checksum 0x662eb3d, Offset: 0x550
 // Size: 0x110
 function function_79c8b708(var_b721e8a9) {
     if (!isdefined(var_b721e8a9)) {
@@ -115,8 +115,8 @@ function function_79c8b708(var_b721e8a9) {
 }
 
 // Namespace wz_ee_poster/wz_ee_poster
-// Params 1, eflags: 0x1 linked
-// Checksum 0x6bcf0c59, Offset: 0x668
+// Params 1, eflags: 0x0
+// Checksum 0xba34814f, Offset: 0x668
 // Size: 0x11a
 function function_7a1e21a9(v_loc) {
     self endon(#"death");

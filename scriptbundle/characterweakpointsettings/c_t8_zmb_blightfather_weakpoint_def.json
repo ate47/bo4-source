@@ -2,36 +2,36 @@
     "weakpoints": [
         {
             "type": "#weakpoint",
-            "var_910e2f9b": "j_head",
-            "var_51e8b151": "tag_mouth_weakspot",
+            "hash_910e2f9b": "j_head",
+            "hash_51e8b151": "tag_mouth_weakspot",
             "activebydefault": 1,
             "hitradius": 16,
             "health": 0.12
         },
         {
             "type": "#weakpoint",
-            "var_51e8b151": "tag_elbow_weakspot_le",
+            "hash_51e8b151": "tag_elbow_weakspot_le",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 0.06
         },
         {
             "type": "#weakpoint",
-            "var_51e8b151": "tag_elbow_weakspot_ri",
+            "hash_51e8b151": "tag_elbow_weakspot_ri",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 0.06
         },
         {
             "type": "#weakpoint",
-            "var_51e8b151": "tag_eggsack_weakspot_le",
+            "hash_51e8b151": "tag_eggsack_weakspot_le",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 0.1
         },
         {
             "type": "#weakpoint",
-            "var_51e8b151": "tag_eggsack_weakspot_ri",
+            "hash_51e8b151": "tag_eggsack_weakspot_ri",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 0.1
@@ -41,5 +41,5 @@
     "model": "#c_t8_zmb_blightfather_body1",
     "type": "characterweakpointsettings",
     "name": "c_t8_zmb_blightfather_weakpoint_def",
-    "var_96a09826": 5
+    "hash_96a09826": 5
 }

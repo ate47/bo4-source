@@ -778,12 +778,16 @@ function get_ground_normal(traceignore, debug) {
     }
     tracepoints = array(self.origin);
     if (getdvarint(#"hash_32aee631b4444f90", 1)) {
-        for (i = -1; i <= 1; i += 2) {
-            for (j = -1; j <= 1; j += 2) {
+        i = -1;
+        while (i <= 1) {
+            j = -1;
+            while (j <= 1) {
                 corner = ignore getpointinbounds(i, j, 0);
                 corner = (corner[0], corner[1], self.origin[2]);
                 tracepoints[tracepoints.size] = corner;
+                j += 2;
             }
+            i += 2;
         }
     }
     function_c0665212(1);

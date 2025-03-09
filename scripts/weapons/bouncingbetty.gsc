@@ -8,7 +8,7 @@
 #namespace bouncingbetty;
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa6e9effe, Offset: 0x150
 // Size: 0x374
 function init_shared() {
@@ -41,7 +41,7 @@ function init_shared() {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdf43adc3, Offset: 0x4d0
 // Size: 0x64
 function register() {
@@ -76,7 +76,7 @@ function register() {
 #/
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xab9cd39e, Offset: 0x7e8
 // Size: 0x176
 function createbouncingbettywatcher(watcher) {
@@ -101,7 +101,7 @@ function createbouncingbettywatcher(watcher) {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2de4e08f, Offset: 0x968
 // Size: 0x74
 function onbouncingbettyfizzleout() {
@@ -115,7 +115,7 @@ function onbouncingbettyfizzleout() {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9296d9b4, Offset: 0x9e8
 // Size: 0xac
 function onspawnbouncingbetty(watcher, owner) {
@@ -129,7 +129,7 @@ function onspawnbouncingbetty(watcher, owner) {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8cbbc8a7, Offset: 0xaa0
 // Size: 0x66
 function trackusedstatondeath() {
@@ -142,7 +142,7 @@ function trackusedstatondeath() {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xceb54864, Offset: 0xb10
 // Size: 0x3e
 function donotrackusedstatonpickup() {
@@ -152,7 +152,7 @@ function donotrackusedstatonpickup() {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc1098234, Offset: 0xb58
 // Size: 0x56
 function trackusedonhack() {
@@ -163,7 +163,7 @@ function trackusedonhack() {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3f94da74, Offset: 0xbb8
 // Size: 0x64
 function trackbouncingbettyasused() {
@@ -173,7 +173,7 @@ function trackbouncingbettyasused() {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x94708abe, Offset: 0xc28
 // Size: 0x8a
 function trackonowner(owner) {
@@ -191,7 +191,7 @@ function trackonowner(owner) {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x52120927, Offset: 0xcc0
 // Size: 0x29c
 function spawnminemover() {
@@ -221,7 +221,7 @@ function spawnminemover() {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdfed91e0, Offset: 0xf68
 // Size: 0x54
 function killminemoveronpickup() {
@@ -231,7 +231,7 @@ function killminemoveronpickup() {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xafcfd739, Offset: 0xfc8
 // Size: 0x5c
 function killminemover() {
@@ -244,7 +244,7 @@ function killminemover() {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe111d62f, Offset: 0x1030
 // Size: 0x14c
 function bouncingbettydetonate(attacker, weapon, target) {
@@ -270,7 +270,7 @@ function bouncingbettydetonate(attacker, weapon, target) {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb9cad3d7, Offset: 0x1188
 // Size: 0xe4
 function bouncingbettydestroyed() {
@@ -285,7 +285,7 @@ function bouncingbettydestroyed() {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8cb1df24, Offset: 0x1278
 // Size: 0x114
 function bouncingbettyjumpandexplode() {
@@ -303,7 +303,7 @@ function bouncingbettyjumpandexplode() {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5b48408a, Offset: 0x1398
 // Size: 0x18c
 function mineexplode(explosiondir, explodepos) {

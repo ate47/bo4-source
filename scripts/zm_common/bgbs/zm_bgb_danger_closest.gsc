@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_danger_closest/zm_bgb_danger_closest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdc8896bf, Offset: 0xd0
 // Size: 0x5c
 function __init__() {

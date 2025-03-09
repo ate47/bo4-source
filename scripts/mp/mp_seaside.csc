@@ -31,7 +31,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_seaside/mp_seaside
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x408a25c4, Offset: 0x450
 // Size: 0xc2
 function dom_flag_base_fx_override(flag, team) {
@@ -56,7 +56,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_seaside/mp_seaside
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2b5c7418, Offset: 0x520
 // Size: 0xc2
 function dom_flag_cap_fx_override(flag, team) {
@@ -81,7 +81,7 @@ function dom_flag_cap_fx_override(flag, team) {
 }
 
 // Namespace mp_seaside/mp_seaside
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x738f9488, Offset: 0x5f0
 // Size: 0x120
 function on_localclient_connect(localclientnum) {
@@ -96,7 +96,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace mp_seaside/mp_seaside
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9c04b74a, Offset: 0x718
 // Size: 0xe2
 function hide_tank_rob(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -114,7 +114,7 @@ function hide_tank_rob(localclientnum, oldval, newval, bnewent, binitialsnap, fi
 }
 
 // Namespace mp_seaside/mp_seaside
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1370e18, Offset: 0x808
 // Size: 0x1c
 function on_localclient_spawned(localclientnum) {
@@ -122,7 +122,7 @@ function on_localclient_spawned(localclientnum) {
 }
 
 // Namespace mp_seaside/mp_seaside
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5127b8c7, Offset: 0x830
 // Size: 0x110
 function function_88a882af() {
@@ -142,7 +142,7 @@ function function_88a882af() {
 }
 
 // Namespace mp_seaside/mp_seaside
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5cc4d660, Offset: 0x948
 // Size: 0xdc
 function on_gameplay_started(localclientnum) {
@@ -156,7 +156,7 @@ function on_gameplay_started(localclientnum) {
 }
 
 // Namespace mp_seaside/mp_seaside
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa7eb2239, Offset: 0xa30
 // Size: 0xd8
 function remove_blood_decals(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

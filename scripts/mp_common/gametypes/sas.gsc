@@ -113,7 +113,7 @@ function givecustomloadout() {
     defaultweapon = level.weapon_sas_primary_weapon;
     loadout::init_player(1);
     loadout::function_f436358b(self.curclass);
-    self function_e6f9e3cd();
+    self cleartalents();
     self giveperks();
     self giveweapon(defaultweapon);
     self.primaryloadoutweapon = defaultweapon;
@@ -227,7 +227,7 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
             }
             attacker playlocalsound("mpl_fracture_sting_moved");
             self globallogic_audio::leader_dialog_on_player("sasHumiliated");
-            scoreevents::processscoreevent(#"hash_4c6081a9cebf868a", attacker, self, weapon);
+            scoreevents::processscoreevent(#"setback_sas", attacker, self, weapon);
         }
         return;
     }

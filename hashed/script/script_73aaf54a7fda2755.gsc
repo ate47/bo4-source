@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_1d05befd/namespace_1d05befd
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4f4724cc, Offset: 0x218
 // Size: 0x194
 function __init__() {
@@ -38,7 +38,7 @@ function __init__() {
 }
 
 // Namespace namespace_1d05befd/namespace_1d05befd
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x3b8
 // Size: 0x4
 function __main__() {
@@ -46,11 +46,11 @@ function __main__() {
 }
 
 // Namespace namespace_1d05befd/namespace_1d05befd
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xbd0dee7f, Offset: 0x3c8
 // Size: 0x72
 function private function_65089f84() {
-    if (isdefined(self.var_9fde8624) && self.var_9fde8624 == #"zombie_electric") {
+    if (isdefined(self.subarchetype) && self.subarchetype == #"zombie_electric") {
         zm_behavior::function_57d3b5eb();
         self thread clientfield::set("zm_ai/zombie_electric_fx_clientfield", 1);
         self.actor_killed_override = &function_1a47fb39;
@@ -58,17 +58,17 @@ function private function_65089f84() {
 }
 
 // Namespace namespace_1d05befd/namespace_1d05befd
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa531d208, Offset: 0x448
 // Size: 0xb4
 function private function_4639701a(params) {
-    if (isdefined(params.eattacker) && isdefined(params.eattacker.var_9fde8624) && isdefined(params.smeansofdeath) && params.eattacker.var_9fde8624 == #"zombie_electric" && params.smeansofdeath == "MOD_MELEE") {
+    if (isdefined(params.eattacker) && isdefined(params.eattacker.subarchetype) && isdefined(params.smeansofdeath) && params.eattacker.subarchetype == #"zombie_electric" && params.smeansofdeath == "MOD_MELEE") {
         self status_effect::status_effect_apply(level.var_f8eb6737, undefined, self, 0);
     }
 }
 
 // Namespace namespace_1d05befd/namespace_1d05befd
-// Params 8, eflags: 0x5 linked
+// Params 8, eflags: 0x4
 // Checksum 0x38449093, Offset: 0x508
 // Size: 0x16c
 function private function_1a47fb39(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime) {
@@ -86,7 +86,7 @@ function private function_1a47fb39(einflictor, attacker, idamage, smeansofdeath,
 }
 
 // Namespace namespace_1d05befd/namespace_1d05befd
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x76a3e18f, Offset: 0x680
 // Size: 0x320
 function private function_25c6cba0(entity, origin) {
@@ -104,7 +104,7 @@ function private function_25c6cba0(entity, origin) {
     }
     zombies = getaiteamarray(level.zombie_team);
     foreach (zombie in zombies) {
-        if (zombie.archetype == #"zombie" && (!isdefined(zombie.var_9fde8624) || zombie.var_9fde8624 != #"zombie_electric") && isdefined(entity.b_in_water) && entity.b_in_water && isdefined(zombie.b_in_water) && zombie.b_in_water && distancesquared(origin, zombie.origin) <= 250000) {
+        if (zombie.archetype == #"zombie" && (!isdefined(zombie.subarchetype) || zombie.subarchetype != #"zombie_electric") && isdefined(entity.b_in_water) && entity.b_in_water && isdefined(zombie.b_in_water) && zombie.b_in_water && distancesquared(origin, zombie.origin) <= 250000) {
             zombie clientfield::set("zombie_electric_burst_stun_friendly_clientfield", 1);
             zombie ai::stun(5);
             zombie thread function_ef1b9d42();
@@ -113,7 +113,7 @@ function private function_25c6cba0(entity, origin) {
 }
 
 // Namespace namespace_1d05befd/namespace_1d05befd
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x2f035908, Offset: 0x9a8
 // Size: 0x3c
 function private function_ef1b9d42() {
@@ -123,7 +123,7 @@ function private function_ef1b9d42() {
 }
 
 // Namespace namespace_1d05befd/namespace_1d05befd
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb174a28f, Offset: 0x9f0
 // Size: 0x146
 function private function_79e38cc4(origin) {

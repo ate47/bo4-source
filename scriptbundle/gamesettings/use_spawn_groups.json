@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "use_spawn_groups",
     "displayname": "#menu/use_spawngroups",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "useSpawnGroups",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

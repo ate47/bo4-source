@@ -20,7 +20,7 @@ function autoexec precache() {
 }
 
 // Namespace archetype_nosferatu/archetype_nosferatu
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfb74a1f0, Offset: 0x118
 // Size: 0x4c
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace archetype_nosferatu/archetype_nosferatu
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3919cd08, Offset: 0x170
 // Size: 0x15c
 function function_5b1f1713(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

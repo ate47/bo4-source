@@ -1,0 +1,176 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_63f069b576a0c4b6",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_5059dd413f6682a4",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "fakeactor 1",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_63f068b576a0c303",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_2955972b5bc22470",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "fakeactor 2",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_72482558932defb2",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_2f5b0c4606dfb392",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "fakeactor 3",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_72482658932df165",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_72fc0207aad4c457",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "fakeactor 4",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_72482458932dedff",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_211160b7bb9a0001",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "fakeactor 5",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_63f06db576a0cb82",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_2f5b0c4606dfb392",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "fakeactor 7",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_63f06cb576a0c9cf",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_72fc0207aad4c457",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "fakeactor 8",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_63f06bb576a0c81c",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_211160b7bb9a0001",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "fakeactor 9",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_63f072b576a0d401",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_650732a6a3c8d092",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "fakeactor 10",
+            "removeweapon": 1
+        }
+    ],
+    "scenetype": "scene",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_t8_vign_cust_emb_civs_running_02",
+    "dontsync": 1,
+    "aligntarget": "tag_align_embassy_market",
+    "team": "any",
+    "hash_922b4fc5": 900,
+    "hash_3e692842": 200
+}

@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_78b5ff6bf6c15f06",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_ec9254e497c0dad",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_zmuseum_chaos_sidea_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

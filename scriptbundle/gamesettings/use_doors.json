@@ -3,7 +3,7 @@
     "type": "gamesettings",
     "name": "use_doors",
     "displayname": "#hash_243d89217c18bb4f",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "use_doors",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

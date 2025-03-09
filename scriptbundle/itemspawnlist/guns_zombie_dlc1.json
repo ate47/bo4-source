@@ -3,24 +3,24 @@
         {
             "minweight": 100,
             "itementry": "tr_leveraction_t8_item",
-            "var_3f8c08e3": "ammo_type_762_item",
+            "childitementry_1": "ammo_type_762_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "lmg_double_t8_item",
-            "var_3f8c08e3": "ammo_type_762_item",
+            "childitementry_1": "ammo_type_762_item",
             "maxweight": 200,
             "available": -1
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 200,
+    "hash_7fb0967b": 200,
     "type": "itemspawnlist",
-    "var_345eba59": 2,
-    "var_9b009839": -1,
-    "var_dc7ffbef": 1,
+    "hash_345eba59": 2,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
     "name": "guns_zombie_dlc1",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

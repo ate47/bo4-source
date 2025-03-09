@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_cache_back/zm_bgb_cache_back
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x57cc0a9e, Offset: 0xd8
 // Size: 0x4c
 function __init__() {

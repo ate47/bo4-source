@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_talisman_shield_durability_legendary/zm_talisman_shield_durability_legendary
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9fa9fcf3, Offset: 0x120
 // Size: 0x2c
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zm_talisman_shield_durability_legendary/zm_talisman_shield_durability_legendary
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x211392b1, Offset: 0x158
 // Size: 0x12
 function activate_talisman() {

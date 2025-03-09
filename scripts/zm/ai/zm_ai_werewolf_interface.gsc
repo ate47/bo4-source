@@ -4,7 +4,7 @@
 #namespace zm_ai_werewolf_interface;
 
 // Namespace zm_ai_werewolf_interface/zm_ai_werewolf_interface
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1e64ecbc, Offset: 0x78
 // Size: 0xb4
 function registerwerewolfinterfaceattributes() {

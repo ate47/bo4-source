@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 // Checksum 0xa1c36df6, Offset: 0xc8
 // Size: 0x64
 function __init__() {
-    character_unlock_fixup::register_character_unlock(#"dempsey_unlock", #"hash_23d5f8566508f9f5", #"cu15_item", &function_d95e620c, #"hash_557b228047615fb0");
+    character_unlock_fixup::register_character_unlock(#"dempsey_unlock", #"prt_wz_dempsey", #"cu15_item", &function_d95e620c, #"hash_557b228047615fb0");
 }
 
 // Namespace character_unlock_dempsey_fixup/character_unlock_dempsey_fixup

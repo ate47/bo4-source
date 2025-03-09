@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_nuketown_sign/wz_nuketown_sign
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3c679f8f, Offset: 0x128
 // Size: 0x3c
 function __main__() {
@@ -22,7 +22,7 @@ function __main__() {
 }
 
 // Namespace wz_nuketown_sign/wz_nuketown_sign
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8a08a649, Offset: 0x170
 // Size: 0x24
 function on_gameplay_started(localclientnum) {
@@ -30,36 +30,36 @@ function on_gameplay_started(localclientnum) {
 }
 
 // Namespace wz_nuketown_sign/wz_nuketown_sign
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcc799a55, Offset: 0x1a0
 // Size: 0x498
 function nuked_population_sign_think(localclientnum) {
-    var_80ac8621 = getent(localclientnum, "counter_tens", "targetname");
-    var_3c0c17f2 = getent(localclientnum, "counter_ones", "targetname");
+    tens_model = getent(localclientnum, "counter_tens", "targetname");
+    ones_model = getent(localclientnum, "counter_ones", "targetname");
     zone = getent(localclientnum, "nuketown_island_zone", "targetname");
     time = set_dvar_float_if_unset("scr_dial_rotate_time", "0.5");
     /#
-        level thread function_102a701c(var_80ac8621, var_3c0c17f2);
+        level thread function_102a701c(tens_model, ones_model);
     #/
     step = 36;
     ones = 0;
     tens = 0;
-    var_80ac8621 rotateroll(step, 0.05);
-    var_3c0c17f2 rotateroll(step, 0.05);
+    tens_model rotateroll(step, 0.05);
+    ones_model rotateroll(step, 0.05);
     for (;;) {
         wait 1;
-        var_c510abcc = 0;
+        dosign = 0;
         players = getlocalplayers();
         foreach (localplayer in players) {
             if (!isdefined(localplayer)) {
                 continue;
             }
             if (istouching(localplayer.origin, zone) && !localplayer isplayerswimming()) {
-                var_c510abcc = 1;
+                dosign = 1;
                 break;
             }
         }
-        if (!var_c510abcc) {
+        if (!dosign) {
             continue;
         }
         players = [];
@@ -77,28 +77,28 @@ function nuked_population_sign_think(localclientnum) {
             ones--;
             if (ones < 0) {
                 ones = 9;
-                var_80ac8621 rotateroll(0 - step, time);
+                tens_model rotateroll(0 - step, time);
                 tens--;
             }
-            var_3c0c17f2 rotateroll(0 - step, time);
-            var_3c0c17f2 waittill(#"rotatedone");
+            ones_model rotateroll(0 - step, time);
+            ones_model waittill(#"rotatedone");
         }
         while (players.size > dial) {
             ones++;
             if (ones > 9) {
                 ones = 0;
-                var_80ac8621 rotateroll(step, time);
+                tens_model rotateroll(step, time);
                 tens++;
             }
-            var_3c0c17f2 rotateroll(step, time);
-            var_3c0c17f2 waittill(#"rotatedone");
+            ones_model rotateroll(step, time);
+            ones_model waittill(#"rotatedone");
             dial = ones + tens * 10;
         }
     }
 }
 
 // Namespace wz_nuketown_sign/wz_nuketown_sign
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3bf303d6, Offset: 0x640
 // Size: 0x6a
 function set_dvar_float_if_unset(dvar, value) {

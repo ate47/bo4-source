@@ -1,0 +1,72 @@
+{
+    "keys": [
+        {
+            "name": "#hash_546cf703cefda965",
+            "xPakEntry": {
+                "key": 17214712287617868107,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 6144,
+            "keyFlags": 3
+        },
+        {
+            "name": "#hash_30238e7ba3a07e60",
+            "xPakEntry": {
+                "key": 16661778547758415618,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 2048,
+            "keyFlags": 1
+        },
+        {
+            "name": "#hash_b2048d671ae88e3",
+            "xPakEntry": {
+                "key": 17807239359188484276,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 4096,
+            "keyFlags": 3
+        },
+        {
+            "name": "#hash_3d8ada522b0586ea",
+            "xPakEntry": {
+                "key": 16661778547758415618,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 2048,
+            "keyFlags": 1
+        }
+    ]
+}

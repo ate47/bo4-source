@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_ai_weeping_angel/zm_ai_weeping_angel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0xc8
 // Size: 0x4
 function __init__() {

@@ -21,7 +21,7 @@
 #/
 
 // Namespace zm_sq/zm_sq
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb7b5e522, Offset: 0x148
 // Size: 0x674
 function register(name, step_name, var_e788cdd7, setup_func, cleanup_func, var_d6ca4caf, var_27465eb4) {
@@ -107,7 +107,7 @@ function register(name, step_name, var_e788cdd7, setup_func, cleanup_func, var_d
 }
 
 // Namespace zm_sq/zm_sq
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7719adeb, Offset: 0x7c8
 // Size: 0x254
 function start(name, var_9d8cf7f = 0) {
@@ -167,7 +167,7 @@ function function_9212ff4d(ee_name, step_name) {
 }
 
 // Namespace zm_sq/zm_sq
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x786c174e, Offset: 0xc28
 // Size: 0x894
 function private run_step(ee, step, var_5ea5c94d) {
@@ -259,7 +259,7 @@ function private run_step(ee, step, var_5ea5c94d) {
 }
 
 // Namespace zm_sq/zm_sq
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x4b4345fc, Offset: 0x14c8
 // Size: 0xb6
 function private function_3f795dc3(ee, step, var_5ea5c94d) {
@@ -272,7 +272,7 @@ function private function_3f795dc3(ee, step, var_5ea5c94d) {
 }
 
 // Namespace zm_sq/zm_sq
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x25e3ebe5, Offset: 0x1588
 // Size: 0x12a
 function private function_df365859(notifyhash) {

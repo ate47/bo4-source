@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace drown/drown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6a908e0c, Offset: 0x158
 // Size: 0xe4
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace drown/drown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xef43bfe6, Offset: 0x248
 // Size: 0x54
 function on_connect() {
@@ -38,7 +38,7 @@ function on_connect() {
 }
 
 // Namespace drown/drown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe424b73b, Offset: 0x2a8
 // Size: 0x6a
 function activate_player_health_visionset() {
@@ -50,7 +50,7 @@ function activate_player_health_visionset() {
 }
 
 // Namespace drown/drown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb4da327d, Offset: 0x320
 // Size: 0x4e
 function deactivate_player_health_visionset() {
@@ -61,7 +61,7 @@ function deactivate_player_health_visionset() {
 }
 
 // Namespace drown/drown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x90cafceb, Offset: 0x378
 // Size: 0x4c
 function function_27777812() {
@@ -70,7 +70,7 @@ function function_27777812() {
 }
 
 // Namespace drown/drown
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3e1235f1, Offset: 0x3d0
 // Size: 0x44
 function function_c621d98c(params) {
@@ -79,7 +79,7 @@ function function_c621d98c(params) {
 }
 
 // Namespace drown/drown
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe927b880, Offset: 0x420
 // Size: 0x3c
 function function_84845e32(params) {
@@ -92,7 +92,7 @@ function function_84845e32(params) {
 }
 
 // Namespace drown/drown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x14b69e6e, Offset: 0x468
 // Size: 0x654
 function watch_player_drowning() {
@@ -165,7 +165,7 @@ function watch_player_drowning() {
 }
 
 // Namespace drown/drown
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc325cbd4, Offset: 0xac8
 // Size: 0x64
 function function_1ef50162(params = undefined) {

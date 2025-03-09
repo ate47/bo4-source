@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace status_effect_pulse/status_effect_pulse
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb84e94fb, Offset: 0x100
 // Size: 0x4c
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace status_effect_pulse/status_effect_pulse
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfa36bca6, Offset: 0x158
 // Size: 0xa4
 function on_pulsed_change(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -35,7 +35,7 @@ function on_pulsed_change(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace status_effect_pulse/status_effect_pulse
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xba864091, Offset: 0x208
 // Size: 0xbc
 function start_pulse_effects(localplayer, bwastimejump = 0) {
@@ -49,7 +49,7 @@ function start_pulse_effects(localplayer, bwastimejump = 0) {
 }
 
 // Namespace status_effect_pulse/status_effect_pulse
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf073487c, Offset: 0x2d0
 // Size: 0xb4
 function stop_pulse_effects(localplayer, oldval, bwastimejump = 0) {

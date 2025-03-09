@@ -11,7 +11,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace rewindobjects/rewindobjects
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8a2d07f, Offset: 0xe0
 // Size: 0x12
 function __init__() {
@@ -30,7 +30,7 @@ function initrewindobjectwatchers(localclientnum) {
 }
 
 // Namespace rewindobjects/rewindobjects
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb25ee99, Offset: 0x170
 // Size: 0x18c
 function watchrewindableevents(localclientnum) {
@@ -62,7 +62,7 @@ function watchrewindableevents(localclientnum) {
 }
 
 // Namespace rewindobjects/rewindobjects
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x936e1491, Offset: 0x308
 // Size: 0x220
 function startrewindableevent(localclientnum, timekey) {
@@ -93,7 +93,7 @@ function startrewindableevent(localclientnum, timekey) {
 }
 
 // Namespace rewindobjects/rewindobjects
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd1e74c52, Offset: 0x530
 // Size: 0x44
 function createnapalmrewindwatcher(localclientnum) {
@@ -102,7 +102,7 @@ function createnapalmrewindwatcher(localclientnum) {
 }
 
 // Namespace rewindobjects/rewindobjects
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x13c1e5f, Offset: 0x580
 // Size: 0x36
 function createairstrikerewindwatcher(localclientnum) {
@@ -110,7 +110,7 @@ function createairstrikerewindwatcher(localclientnum) {
 }
 
 // Namespace rewindobjects/rewindobjects
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb489d281, Offset: 0x5c0
 // Size: 0x100
 function createrewindwatcher(localclientnum, name) {
@@ -130,7 +130,7 @@ function createrewindwatcher(localclientnum, name) {
 }
 
 // Namespace rewindobjects/rewindobjects
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x41036766, Offset: 0x6c8
 // Size: 0x176
 function resetondemojump(localclientnum) {
@@ -168,7 +168,7 @@ function addtimedfunction(name, func, relativestarttimeinsecs) {
 }
 
 // Namespace rewindobjects/rewindobjects
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x39eb7fe5, Offset: 0x920
 // Size: 0xa0
 function getrewindwatcher(localclientnum, name) {
@@ -205,7 +205,7 @@ function addrewindableeventtowatcher(starttime, data) {
 }
 
 // Namespace rewindobjects/rewindobjects
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x9e58fbf6, Offset: 0xaf8
 // Size: 0x14e
 function servertimedmoveto(localclientnum, startpoint, endpoint, starttime, duration) {
@@ -230,7 +230,7 @@ function servertimedmoveto(localclientnum, startpoint, endpoint, starttime, dura
 }
 
 // Namespace rewindobjects/rewindobjects
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x317489c, Offset: 0xc50
 // Size: 0x10e
 function servertimedrotateto(localclientnum, angles, starttime, duration, timein, timeout) {
@@ -275,7 +275,7 @@ function removecliententonjump(clientent, localclientnum) {
 }
 
 // Namespace rewindobjects/rewindobjects
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x9f5f57a9, Offset: 0xe38
 // Size: 0xa0
 function getpointonline(startpoint, endpoint, ratio) {

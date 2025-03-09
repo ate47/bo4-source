@@ -21,17 +21,17 @@
                         }
                     ],
                     "damagethreshold": 0.1,
-                    "var_132c9791": 1,
-                    "var_b3dddfd3": 1,
+                    "hash_132c9791": 1,
+                    "hash_b3dddfd3": 1,
                     "name": "shot 2"
                 }
             ],
             "model": "#p8_fxanim_gp_pigeon_01_mod",
             "type": "prop",
-            "var_a1c5c678": 1,
+            "hash_a1c5c678": 1,
             "deletewhenfinished": 1,
             "name": "prop 1",
-            "var_873368a8": 10,
+            "hash_873368a8": 10,
             "allowdeath": 1,
             "takedamage": 1
         }

@@ -35,11 +35,11 @@
                 }
             ],
             "customclassname": "#hash_73bf78bd8d8db95d",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#smg_capacity_t8",
-            "var_aadf0bc9": 2,
-            "var_38f854e5": 6,
+            "hash_aadf0bc9": 2,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_medicalinjectiongun"
         },
         {
@@ -74,12 +74,12 @@
                 }
             ],
             "customclassname": "#hash_6338674bdead3158",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#ar_modular_t8",
-            "var_aadf0bc9": 2,
+            "hash_aadf0bc9": 2,
             "secondary": "#pistol_standard_t8",
-            "var_38f854e5": 6,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_equipmentcharge"
         },
         {
@@ -114,12 +114,12 @@
                 }
             ],
             "customclassname": "#hash_76fba834032b8fb7",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#lmg_standard_t8",
-            "var_aadf0bc9": 1,
+            "hash_aadf0bc9": 1,
             "secondary": "#launcher_standard_t8",
-            "var_38f854e5": 6,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_armor"
         },
         {
@@ -154,12 +154,12 @@
                 }
             ],
             "customclassname": "#hash_13262c0a18d54ad0",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#tr_longburst_t8",
-            "var_aadf0bc9": 1,
+            "hash_aadf0bc9": 1,
             "secondary": "#shotgun_semiauto_t8",
-            "var_38f854e5": 6,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_scorestreakcharge"
         },
         {
@@ -199,12 +199,12 @@
                 }
             ],
             "customclassname": "#hash_554a0a19e3773c1a",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#sniper_quickscope_t8",
-            "var_aadf0bc9": 1,
+            "hash_aadf0bc9": 1,
             "secondary": "#smg_fastfire_t8",
-            "var_38f854e5": 5,
+            "hash_38f854e5": 5,
             "tacticalgear": "#gear_awareness"
         },
         {
@@ -247,12 +247,12 @@
                 }
             ],
             "customclassname": "#hash_639f992affc7299e",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 3,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 3,
             "primary": "#pistol_revolver_t8",
-            "var_aadf0bc9": 1,
+            "hash_aadf0bc9": 1,
             "secondary": "#shotgun_pump_t8",
-            "var_38f854e5": 3,
+            "hash_38f854e5": 3,
             "tacticalgear": "#gear_medicalinjectiongun",
             "primarygrenade": "#hatchet"
         }
@@ -271,11 +271,11 @@
                 }
             ],
             "customclassname": "#class/slot1",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#smg_standard_t8",
             "secondary": "#pistol_standard_t8",
-            "var_38f854e5": 6,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_medicalinjectiongun"
         },
         {
@@ -291,11 +291,11 @@
                 }
             ],
             "customclassname": "#class/slot2",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#ar_accurate_t8",
             "secondary": "#pistol_standard_t8",
-            "var_38f854e5": 6,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_equipmentcharge"
         },
         {
@@ -311,11 +311,11 @@
                 }
             ],
             "customclassname": "#class/slot3",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#lmg_standard_t8",
             "secondary": "#launcher_standard_t8",
-            "var_38f854e5": 6,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_scorestreakcharge"
         },
         {
@@ -331,11 +331,11 @@
                 }
             ],
             "customclassname": "#class/slot4",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#tr_powersemi_t8",
             "secondary": "#launcher_standard_t8",
-            "var_38f854e5": 6,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_armor"
         },
         {
@@ -351,11 +351,11 @@
                 }
             ],
             "customclassname": "#class/slot5",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#sniper_powerbolt_t8",
             "secondary": "#pistol_standard_t8",
-            "var_38f854e5": 5,
+            "hash_38f854e5": 5,
             "tacticalgear": "#gear_awareness"
         },
         {
@@ -373,7 +373,7 @@
             "customclassname": "#class/slot6",
             "primary": "#ar_accurate_t8",
             "secondary": "#shotgun_pump_t8",
-            "var_38f854e5": 3,
+            "hash_38f854e5": 3,
             "tacticalgear": "#gear_awareness"
         }
     ],
@@ -388,18 +388,18 @@
             "killstreak": "#helicopter_comlink"
         }
     ],
-    "var_9027ef1e": "#hash_71dab9659ba194f4",
-    "var_68c52059": "#hash_71dab7659ba1918e",
-    "var_b255336c": "#hash_71daba659ba196a7",
-    "var_55e07a90": "#hash_27b5b2b4f08e4dcb",
-    "var_7afec4cc": "#hash_71dabb659ba1985a",
-    "var_326fb3af": "#hash_3de97428b08ef1b3",
-    "var_67931df5": "#hash_3aae961aff62ddf0",
-    "var_fafb44c3": "#hash_71daba659ba196a7",
-    "var_43b5563a": "#hash_41038f141e60fbfc",
+    "hash_9027ef1e": "#hash_71dab9659ba194f4",
+    "hash_68c52059": "#hash_71dab7659ba1918e",
+    "hash_b255336c": "#hash_71daba659ba196a7",
+    "hash_55e07a90": "#hash_27b5b2b4f08e4dcb",
+    "hash_7afec4cc": "#hash_71dabb659ba1985a",
+    "hash_326fb3af": "#hash_3de97428b08ef1b3",
+    "hash_67931df5": "#hash_3aae961aff62ddf0",
+    "hash_fafb44c3": "#hash_71daba659ba196a7",
+    "hash_43b5563a": "#hash_41038f141e60fbfc",
     "name": "mp_default_loadouts",
     "sessionmode": "mp",
-    "var_4f96d17e": 6,
-    "var_57ed547e": 6,
-    "var_ebfaaff3": 3
+    "hash_4f96d17e": 6,
+    "hash_57ed547e": 6,
+    "hash_ebfaaff3": 3
 }

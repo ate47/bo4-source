@@ -12,15 +12,15 @@
 
 // Namespace zm_trap_electric/zm_trap_electric
 // Params 0, eflags: 0x2
-// Checksum 0x953042d3, Offset: 0x178
+// Checksum 0xdf4f5c62, Offset: 0x178
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zm_trap_electric", &__init__, undefined, undefined);
 }
 
 // Namespace zm_trap_electric/zm_trap_electric
-// Params 0, eflags: 0x1 linked
-// Checksum 0xc920cdd, Offset: 0x1c0
+// Params 0, eflags: 0x0
+// Checksum 0x758d7756, Offset: 0x1c0
 // Size: 0x180
 function __init__() {
     zm_traps::register_trap_basic_info("electric", &trap_activate_electric, &trap_audio);
@@ -36,8 +36,8 @@ function __init__() {
 }
 
 // Namespace zm_trap_electric/zm_trap_electric
-// Params 0, eflags: 0x1 linked
-// Checksum 0x539e5a6b, Offset: 0x348
+// Params 0, eflags: 0x0
+// Checksum 0x527dc4ee, Offset: 0x348
 // Size: 0x184
 function trap_activate_electric() {
     self._trap_duration = 40;
@@ -60,8 +60,8 @@ function trap_activate_electric() {
 }
 
 // Namespace zm_trap_electric/zm_trap_electric
-// Params 1, eflags: 0x1 linked
-// Checksum 0xb4e515ba, Offset: 0x4d8
+// Params 1, eflags: 0x0
+// Checksum 0x1fc2eb41, Offset: 0x4d8
 // Size: 0x114
 function trap_audio(trap) {
     sound_origin = spawn("script_origin", self.origin);
@@ -78,8 +78,8 @@ function trap_audio(trap) {
 }
 
 // Namespace zm_trap_electric/zm_trap_electric
-// Params 1, eflags: 0x1 linked
-// Checksum 0xb7591ba1, Offset: 0x5f8
+// Params 1, eflags: 0x0
+// Checksum 0xd0bcf15f, Offset: 0x5f8
 // Size: 0x78
 function play_electrical_sound(trap) {
     trap endon(#"trap_done");
@@ -90,8 +90,8 @@ function play_electrical_sound(trap) {
 }
 
 // Namespace zm_trap_electric/zm_trap_electric
-// Params 1, eflags: 0x1 linked
-// Checksum 0x3c953b78, Offset: 0x678
+// Params 1, eflags: 0x0
+// Checksum 0x48a21170, Offset: 0x678
 // Size: 0x84
 function player_damage(trigger) {
     shock_status_effect = getstatuseffect(#"hash_19533caf858a9f3b");
@@ -102,8 +102,8 @@ function player_damage(trigger) {
 }
 
 // Namespace zm_trap_electric/zm_trap_electric
-// Params 1, eflags: 0x1 linked
-// Checksum 0xf8e84d31, Offset: 0x708
+// Params 1, eflags: 0x0
+// Checksum 0x57d3a9bd, Offset: 0x708
 // Size: 0x474
 function damage(trap) {
     if (isdefined(self.marked_for_death) && self.marked_for_death) {

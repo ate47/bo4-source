@@ -3,66 +3,66 @@
         {
             "minweight": 75,
             "itementry": "smg_handling_t8_item",
-            "var_3f8c08e3": "ammo_type_9mm_item",
+            "childitementry_1": "ammo_type_9mm_item",
             "maxweight": 75,
             "available": -1
         },
         {
             "minweight": 75,
             "itementry": "smg_fastfire_t8_item",
-            "var_3f8c08e3": "ammo_type_45_item",
+            "childitementry_1": "ammo_type_45_item",
             "maxweight": 75,
             "available": -1
         },
         {
             "minweight": 150,
             "itementry": "smg_standard_t8_item",
-            "var_3f8c08e3": "ammo_type_9mm_item",
+            "childitementry_1": "ammo_type_9mm_item",
             "maxweight": 160,
             "available": -1
         },
         {
             "minweight": 115,
             "itementry": "smg_capacity_t8_item",
-            "var_3f8c08e3": "ammo_type_9mm_item",
+            "childitementry_1": "ammo_type_9mm_item",
             "maxweight": 120,
             "available": -1
         },
         {
             "minweight": 150,
             "itementry": "smg_accurate_t8_item",
-            "var_3f8c08e3": "ammo_type_45_item",
+            "childitementry_1": "ammo_type_45_item",
             "maxweight": 160,
             "available": -1
         },
         {
             "minweight": 115,
             "itementry": "smg_fastburst_t8_item",
-            "var_3f8c08e3": "ammo_type_45_item",
+            "childitementry_1": "ammo_type_45_item",
             "maxweight": 120,
             "available": -1
         },
         {
             "minweight": 75,
             "itementry": "smg_mp40_t8_item",
-            "var_3f8c08e3": "ammo_type_9mm_item",
+            "childitementry_1": "ammo_type_9mm_item",
             "maxweight": 75,
             "available": -1
         },
         {
             "minweight": 120,
             "itementry": "smg_folding_t8_item",
-            "var_3f8c08e3": "ammo_type_9mm_item",
+            "childitementry_1": "ammo_type_9mm_item",
             "maxweight": 150,
             "available": -1
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 200,
+    "hash_7fb0967b": 200,
     "type": "itemspawnlist",
-    "var_345eba59": 8,
-    "var_9b009839": -1,
-    "var_dc7ffbef": 1,
+    "hash_345eba59": 8,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
     "name": "guns_smgs_dlc1",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

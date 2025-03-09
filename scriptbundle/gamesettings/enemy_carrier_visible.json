@@ -8,8 +8,8 @@
     "name": "enemy_carrier_visible",
     "displayname": "#menu/enemy_carrier",
     "label1": "#menu/disabled",
-    "var_71b6e020": "#menu/delayed",
+    "label3": "#menu/delayed",
     "label2": "#menu/enabled",
-    "var_9de86f42": 3,
+    "optionscount": 3,
     "setting": "enemyCarrierVisible"
 }

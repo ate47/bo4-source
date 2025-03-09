@@ -1,0 +1,16 @@
+{
+    "name": "#hash_4a84799f658c20de",
+    "baseWeapon": "#hash_38ffd09564931482",
+    "unk70": "#recon_car",
+    "streamkey": "#hash_40b9e0b41d7faec8",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#hash_1d94f391334",
+    "tunables2": "#hash_1d94f391334",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "image_e90": "#hash_95fc9c7df21711ab",
+    "image_e98": "#hash_95fc9c7df21711ab",
+    "underwaterExplosionSurfaceFX": [],
+    "var_2e4a8800": "#recon_car_scoreevents"
+}

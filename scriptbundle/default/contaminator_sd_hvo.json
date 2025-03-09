@@ -1,42 +1,42 @@
 {
     "statsarray": [
         {
-            "var_82670522": "stats_radiation_field_kill",
+            "hash_82670522": "stats_radiation_field_kill",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_5e65bf8482917876"
         },
         {
-            "var_82670522": "stats_radiation_field_radiating_enemy",
+            "hash_82670522": "stats_radiation_field_radiating_enemy",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_289242637f7dc89f"
         },
         {
-            "var_82670522": "stats_radiation_field_assist",
+            "hash_82670522": "stats_radiation_field_assist",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_7dc96d4edd4706a3"
         },
         {
             "stattype": "objectiveekia",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_5d1ab6f5e0227795"
         },
         {
             "stattype": "damagedone",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_5418827f408e5ca2"
         },
         {
             "stattype": "objectivescore",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_6abbd7a88ee593ed"
         }
     ],
-    "var_447510ee": "prt_mp_firebreak",
+    "hash_447510ee": "prt_mp_firebreak",
     "defaultimage": "#ui_icon_hvo_base",
     "cardname": "#hash_250d4ce416d76d06",
     "name": "contaminator_sd_hvo",
-    "var_46a95923": "sd"
+    "associatedgamemode": "sd"
 }

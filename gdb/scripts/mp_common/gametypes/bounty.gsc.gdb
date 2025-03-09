@@ -39,9 +39,9 @@ STRING "<dev string:xd2>" 0x7ab0
 DEVBLOCK 0xc04
 # bounty::onstartgametype@2e2
 DEVBLOCK 0x1b5a
-# bounty::function_9659b3b4@2
+# bounty::buy_menu_open@2
 DEVBLOCK 0x1eea
-# bounty::function_d764db12@2
+# bounty::buy_menu_close@2
 DEVBLOCK 0x1f5a
 # bounty::function_f878f4bf@4a
 DEVBLOCK 0x4b1a

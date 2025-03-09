@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace serversettings/serversettings
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x472e701a, Offset: 0xe0
 // Size: 0x24
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace serversettings/serversettings
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4fdb1e7a, Offset: 0x110
 // Size: 0x43e
 function main() {
@@ -66,7 +66,7 @@ function main() {
 }
 
 // Namespace serversettings/serversettings
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4252bf13, Offset: 0x558
 // Size: 0x1f4
 function updateserversettings() {

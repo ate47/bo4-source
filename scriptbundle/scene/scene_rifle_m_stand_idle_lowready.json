@@ -16,7 +16,7 @@
             "lerptime": 1,
             "model": "#hash_7d34923130fabf8c",
             "type": "player",
-            "var_d318cc2c": 1,
+            "hash_d318cc2c": 1,
             "name": "bot",
             "allowdeath": 1,
             "takedamage": 1

@@ -24,7 +24,7 @@
                                     "stageimage": "#hash_4b1901f1dfc5158a"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#hash_56af1bf88e729603"
                         }
                     ],
@@ -38,16 +38,16 @@
                                     "stageimage": "#hash_5ef0b8da29c42486"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#hash_2695edd24ddf6e7b"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "var_516217cd": 2,
+            "hash_516217cd": 2,
             "name": "trap_part_1",
-            "var_a0ebe517": "#hash_48c5bcc6c9fab9d6"
+            "hash_a0ebe517": "#hash_48c5bcc6c9fab9d6"
         },
         {
             "phases": [
@@ -59,7 +59,7 @@
                                     "stageimage": "#hash_4b1901f1dfc5158a"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#hash_639cad37c167bf8e"
                         }
                     ],
@@ -73,16 +73,16 @@
                                     "stageimage": "#hash_5ef0b8da29c42486"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#hash_4a5aa2652a3ee760"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "var_516217cd": 2,
+            "hash_516217cd": 2,
             "name": "trap_part_2",
-            "var_a0ebe517": "#hash_7d940511ce9f0341"
+            "hash_a0ebe517": "#hash_7d940511ce9f0341"
         }
     ],
     "challenges": [
@@ -119,7 +119,7 @@
                     "stageimage": "#hash_73dc667901a5a4dd"
                 }
             ],
-            "var_1d91eeba": 1,
+            "hash_1d91eeba": 1,
             "clientfield": "#hash_6608231515ad6e93"
         },
         {
@@ -128,7 +128,7 @@
                     "stageimage": "#hash_70ad7a9e5372134f"
                 }
             ],
-            "var_1d91eeba": 1,
+            "hash_1d91eeba": 1,
             "clientfield": "#hash_6608241515ad7046"
         },
         {
@@ -137,18 +137,18 @@
                     "stageimage": "#hash_17ed6d25067fba24"
                 }
             ],
-            "var_1d91eeba": 1,
+            "hash_1d91eeba": 1,
             "clientfield": "#hash_6608251515ad71f9"
         }
     ],
-    "var_5a90928f": "#hash_7ed874a0ecdefd90",
+    "hash_5a90928f": "#hash_7ed874a0ecdefd90",
     "configstringfiletype": "scriptbundle",
-    "var_aa76b7dd": 1,
-    "var_6fa1ca44": 2,
+    "hash_aa76b7dd": 1,
+    "hash_6fa1ca44": 2,
     "type": "zminventory",
-    "var_af62a8e8": 3,
+    "hash_af62a8e8": 3,
     "name": "zm_inventory_office",
-    "var_a05daa90": 3,
-    "var_f22d6ad5": 5,
-    "var_f7d932ea": "#hash_518608853a37856e"
+    "hash_a05daa90": 3,
+    "hash_f22d6ad5": 5,
+    "hash_f7d932ea": "#hash_518608853a37856e"
 }

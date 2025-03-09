@@ -5,7 +5,7 @@
     "weapon": "weapon#ww_crossbow_t8_wz",
     "type": "itemspawnentry",
     "angleoffsetz": 35,
-    "var_65b3a12": 6,
+    "hash_65b3a12": 6,
     "name": "death_of_orion_t8_item",
     "icon": "#hash_38208b311390cffb",
     "modelscale": 1,

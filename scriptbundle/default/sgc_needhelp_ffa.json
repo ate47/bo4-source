@@ -3,5 +3,5 @@
     "name": "sgc_needhelp_ffa",
     "title": "#hash_13d6e6281ae4c785",
     "gametype": "#ffa_gun",
-    "var_981c6467": "gestable_command_taunt"
+    "gestablecallout": "gestable_command_taunt"
 }

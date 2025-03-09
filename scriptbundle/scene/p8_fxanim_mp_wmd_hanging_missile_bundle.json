@@ -1,0 +1,27 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_43579e41f14cde30",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_7cad0e31148c93c3",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_wmd_hanging_missile_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

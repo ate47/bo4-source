@@ -1,0 +1,28 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_17994b808b3a6631",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_7316e36c591bfcc0",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_morocco_sign_smoke_lounge_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

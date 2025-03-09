@@ -5,7 +5,7 @@
 #namespace zm_zodt8_sound;
 
 // Namespace zm_zodt8_sound/zm_zodt8_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3de38d16, Offset: 0x118
 // Size: 0x34
 function main() {
@@ -14,7 +14,7 @@ function main() {
 }
 
 // Namespace zm_zodt8_sound/zm_zodt8_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4cd73f6c, Offset: 0x158
 // Size: 0x15c
 function startzmbspawnersoundloops() {
@@ -43,7 +43,7 @@ function startzmbspawnersoundloops() {
 }
 
 // Namespace zm_zodt8_sound/zm_zodt8_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa348c19, Offset: 0x2c0
 // Size: 0x18a
 function soundloopthink() {
@@ -89,14 +89,14 @@ function function_a6e35dcd() {
 }
 
 // Namespace zm_zodt8_sound/zm_zodt8_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x20b9e932, Offset: 0x498
 // Size: 0x266
 function function_9466dec0() {
     var_7a522422 = struct::get_array("sndWoodRattles", "targetname");
     var_c5cacee = struct::get_array("sndPipeRattles", "targetname");
     var_61bc8796 = struct::get_array("sndWoodStress", "targetname");
-    level waittill(#"hash_1fc99aa6e862afbd");
+    level waittill(#"play_destruction_sounds");
     playsound(0, #"hash_36a95d08ed4998f6", (20, -5248, 1196));
     foreach (rattle in var_7a522422) {
         playsound(0, #"hash_565a94625021a254", rattle.origin);

@@ -1,0 +1,125 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1602549d9787b78",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "shot 1",
+                    "diewhenfinished": 1
+                }
+            ],
+            "model": "#veh_t8_civ_motorcycle_police",
+            "type": "prop",
+            "name": "motorcycle_1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_44ced657e3dbb83b",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "shot 1",
+                    "diewhenfinished": 1
+                }
+            ],
+            "model": "#veh_t8_civ_motorcycle_police",
+            "type": "prop",
+            "name": "motorcycle_2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4e8218ec6e20b322",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "shot 1",
+                    "diewhenfinished": 1
+                }
+            ],
+            "model": "#veh_t8_civ_motorcycle_police",
+            "type": "prop",
+            "name": "motorcycle_3"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2911aec427f4ad5d",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "shot 1",
+                    "diewhenfinished": 1
+                }
+            ],
+            "model": "#hash_317ef320b0c3d435",
+            "type": "prop",
+            "name": "ch_moto1",
+            "aligntargettag": "tag_driver",
+            "aligntarget": "motorcycle_1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2911aec427f4ad5d",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "shot 1",
+                    "diewhenfinished": 1
+                }
+            ],
+            "model": "#hash_317ef320b0c3d435",
+            "type": "prop",
+            "name": "ch_moto2",
+            "aligntargettag": "tag_driver",
+            "aligntarget": "motorcycle_2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2911aec427f4ad5d",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "shot 1",
+                    "diewhenfinished": 1
+                }
+            ],
+            "model": "#hash_317ef320b0c3d435",
+            "type": "prop",
+            "name": "ch_moto3",
+            "aligntargettag": "tag_driver",
+            "aligntarget": "motorcycle_3"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_sta_runaway_vehicles_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

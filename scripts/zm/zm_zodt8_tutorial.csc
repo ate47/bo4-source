@@ -33,7 +33,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x967438fb, Offset: 0x608
 // Size: 0x19c
 function function_9fc8cc9c(localclientnum) {
@@ -62,7 +62,7 @@ function function_9fc8cc9c(localclientnum) {
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x58f61cff, Offset: 0x7b0
 // Size: 0x154
 function tutorial_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -84,7 +84,7 @@ function tutorial_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5373692a, Offset: 0x910
 // Size: 0x13e
 function function_a9c8f9d2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -106,7 +106,7 @@ function function_a9c8f9d2(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x353e2402, Offset: 0xa58
 // Size: 0xba
 function function_7c8084eb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -120,7 +120,7 @@ function function_7c8084eb(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe2aa0759, Offset: 0xb20
 // Size: 0x154
 function function_8057ebca(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

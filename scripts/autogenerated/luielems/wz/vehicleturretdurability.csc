@@ -7,7 +7,7 @@
 class cvehicleturretdurability : cluielem {
 
     // Namespace cvehicleturretdurability/vehicleturretdurability
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x89a2d801, Offset: 0x330
     // Size: 0x30
     function set_bar_percent(localclientnum, value) {
@@ -15,7 +15,7 @@ class cvehicleturretdurability : cluielem {
     }
 
     // Namespace cvehicleturretdurability/vehicleturretdurability
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xfd0b67fc, Offset: 0x2f8
     // Size: 0x2c
     function open(localclientnum) {
@@ -23,7 +23,7 @@ class cvehicleturretdurability : cluielem {
     }
 
     // Namespace cvehicleturretdurability/vehicleturretdurability
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x92cba120, Offset: 0x2a8
     // Size: 0x48
     function function_fa582112(localclientnum) {
@@ -32,7 +32,7 @@ class cvehicleturretdurability : cluielem {
     }
 
     // Namespace cvehicleturretdurability/vehicleturretdurability
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x1f60fffb, Offset: 0x278
     // Size: 0x24
     function register_clientside(uid) {
@@ -40,7 +40,7 @@ class cvehicleturretdurability : cluielem {
     }
 
     // Namespace cvehicleturretdurability/vehicleturretdurability
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x49840796, Offset: 0x218
     // Size: 0x54
     function setup_clientfields(uid, var_661989d5) {
@@ -51,7 +51,7 @@ class cvehicleturretdurability : cluielem {
 }
 
 // Namespace vehicleturretdurability/vehicleturretdurability
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4d5c2af0, Offset: 0xb0
 // Size: 0x4c
 function register(uid, var_661989d5) {

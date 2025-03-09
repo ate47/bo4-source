@@ -48,7 +48,7 @@ class class_60aca60a {
     var var_85a7b7d2;
 
     // Namespace class_60aca60a/swat_team
-    // Params 0, eflags: 0x9 linked
+    // Params 0, eflags: 0x8
     // Checksum 0xfbb6faf9, Offset: 0x2120
     // Size: 0x1e
     constructor() {
@@ -67,7 +67,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa9dedfad, Offset: 0xa28
 // Size: 0x3dc
 function __init__() {
@@ -102,7 +102,7 @@ function __init__() {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2020bf22, Offset: 0xe10
 // Size: 0x48
 function function_3675de8b() {
@@ -112,7 +112,7 @@ function function_3675de8b() {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc36137ec, Offset: 0xe60
 // Size: 0x6c
 function function_fe5b1120(helicopter, attackingplayer) {
@@ -124,7 +124,7 @@ function function_fe5b1120(helicopter, attackingplayer) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x191e57e5, Offset: 0xed8
 // Size: 0x21e
 function createremoteweapontrigger(hintstring) {
@@ -149,7 +149,7 @@ function createremoteweapontrigger(hintstring) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x85cf7077, Offset: 0x1100
 // Size: 0x44
 function function_944f0911(hintstring) {
@@ -158,7 +158,7 @@ function function_944f0911(hintstring) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc57dc7a9, Offset: 0x1150
 // Size: 0xc0
 function function_ab9a9770(player) {
@@ -170,7 +170,7 @@ function function_ab9a9770(player) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa859b47c, Offset: 0x1218
 // Size: 0x350
 function function_87bf6422(killstreak) {
@@ -210,7 +210,7 @@ function function_87bf6422(killstreak) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3c72c7a4, Offset: 0x1570
 // Size: 0x18c
 function function_6936559a(context) {
@@ -231,7 +231,7 @@ function function_6936559a(context) {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x38b04275, Offset: 0x1708
 // Size: 0x45c
 function private registerbehaviorscriptfunctions() {
@@ -259,7 +259,7 @@ function private registerbehaviorscriptfunctions() {
 }
 
 // Namespace swat_team/swat_team
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x68891cfc, Offset: 0x1b70
 // Size: 0xa2
 function function_6edff1e1(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -270,7 +270,7 @@ function function_6edff1e1(entity, mocompanim, mocompanimblendouttime, mocompani
 }
 
 // Namespace swat_team/swat_team
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x9b1cace2, Offset: 0x1c20
 // Size: 0x5a
 function function_8acd749d(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -279,7 +279,7 @@ function function_8acd749d(entity, mocompanim, mocompanimblendouttime, mocompani
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xefabca69, Offset: 0x1c88
 // Size: 0x44
 function private function_7b12237f(entity) {
@@ -290,7 +290,7 @@ function private function_7b12237f(entity) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd42b68c, Offset: 0x1cd8
 // Size: 0x44
 function private function_e3151f98(entity) {
@@ -301,7 +301,7 @@ function private function_e3151f98(entity) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7d633122, Offset: 0x1d28
 // Size: 0x24
 function private function_e5f59cf0(entity) {
@@ -309,7 +309,7 @@ function private function_e5f59cf0(entity) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x9d5447fd, Offset: 0x1d58
 // Size: 0x9e
 function private function_3c677dcd(entity) {
@@ -322,7 +322,7 @@ function private function_3c677dcd(entity) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf3dcfe85, Offset: 0x1e00
 // Size: 0x44
 function private function_5bc83fac(entity) {
@@ -332,7 +332,7 @@ function private function_5bc83fac(entity) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x40475ae6, Offset: 0x1e50
 // Size: 0x296
 function private swatshouldmelee(entity) {
@@ -381,7 +381,7 @@ function private swatshouldmelee(entity) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x10141e33, Offset: 0x20f0
 // Size: 0x24
 function private function_5e207da3(entity) {
@@ -389,7 +389,7 @@ function private function_5e207da3(entity) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x24d4573a, Offset: 0x21e8
 // Size: 0x64
 function private function_91228fe2(entity) {
@@ -402,7 +402,7 @@ function private function_91228fe2(entity) {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x8e0033ab, Offset: 0x2258
 // Size: 0x74
 function private function_a72ef6ce(entity, newspot) {
@@ -417,7 +417,7 @@ function private function_a72ef6ce(entity, newspot) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcce0f367, Offset: 0x22d8
 // Size: 0x6e
 function private function_f046ec67(entity) {
@@ -427,7 +427,7 @@ function private function_f046ec67(entity) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x774a518d, Offset: 0x2350
 // Size: 0x6e
 function private function_615dc1b2(entity) {
@@ -436,7 +436,7 @@ function private function_615dc1b2(entity) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf80bb84a, Offset: 0x23c8
 // Size: 0x920
 function private function_fb9f1f3b(entity) {
@@ -548,7 +548,7 @@ function private function_fb9f1f3b(entity) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x61cc6931, Offset: 0x2cf0
 // Size: 0x2ba
 function private function_994477c0(entity) {
@@ -601,7 +601,7 @@ function private function_994477c0(entity) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1074fb05, Offset: 0x2fb8
 // Size: 0x9c
 function private on_swat_kill(params) {
@@ -611,7 +611,7 @@ function private on_swat_kill(params) {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xb383a05e, Offset: 0x3060
 // Size: 0xc4
 function private function_493691bc() {
@@ -627,7 +627,7 @@ function private function_493691bc() {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa3ad0b90, Offset: 0x3130
 // Size: 0x2f4
 function private function_6f7a6cbc(params) {
@@ -663,7 +663,7 @@ function private function_6f7a6cbc(params) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2d1bea3a, Offset: 0x3430
 // Size: 0x20e
 function function_416a0a80(owner) {
@@ -698,7 +698,7 @@ function function_416a0a80(owner) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x99ea5da3, Offset: 0x3648
 // Size: 0x92
 function function_3863cd9(swat) {
@@ -711,7 +711,7 @@ function function_3863cd9(swat) {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x12367313, Offset: 0x36e8
 // Size: 0x4c
 function private function_b4f4603e() {
@@ -720,7 +720,7 @@ function private function_b4f4603e() {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x89f50d71, Offset: 0x3740
 // Size: 0x1a2
 function private function_e69272bf() {
@@ -748,7 +748,7 @@ function private function_e69272bf() {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x3921f24b, Offset: 0x38f0
 // Size: 0x356
 function private function_ace0a9bc() {
@@ -798,7 +798,7 @@ function private function_ace0a9bc() {
 }
 
 // Namespace swat_team/swat_team
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x5c563560, Offset: 0x3c50
 // Size: 0x1d0
 function private function_8fa2faa5(swat, helicopter, position) {
@@ -831,7 +831,7 @@ function private function_8fa2faa5(swat, helicopter, position) {
 }
 
 // Namespace swat_team/swat_team
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xcb373088, Offset: 0x3e28
 // Size: 0x244
 function private function_67260255(swat, helicopter, killstreak_id) {
@@ -858,7 +858,7 @@ function private function_67260255(swat, helicopter, killstreak_id) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd146112, Offset: 0x4078
 // Size: 0x8c
 function private function_ab6f69a1(swat) {
@@ -871,7 +871,7 @@ function private function_ab6f69a1(swat) {
 }
 
 // Namespace swat_team/swat_team
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x136414f5, Offset: 0x4110
 // Size: 0x388
 function swat_deploy(swat, helicopter, position, var_a298d55b, var_eead001f) {
@@ -925,7 +925,7 @@ function swat_deploy(swat, helicopter, position, var_a298d55b, var_eead001f) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x9e9da71e, Offset: 0x44a0
 // Size: 0x166
 function private function_8de67419(leavenode) {
@@ -953,7 +953,7 @@ function private function_8de67419(leavenode) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4d388118, Offset: 0x4610
 // Size: 0x484
 function function_9fe56d0b(helicopter) {
@@ -1021,7 +1021,7 @@ function function_9fe56d0b(helicopter) {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xe90ad22e, Offset: 0x4aa0
 // Size: 0x160
 function private function_5ca48510(helicopter, var_1c996690) {
@@ -1036,7 +1036,7 @@ function private function_5ca48510(helicopter, var_1c996690) {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb9725a44, Offset: 0x4c08
 // Size: 0x74
 function heli_reset() {
@@ -1047,7 +1047,7 @@ function heli_reset() {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcd884d5d, Offset: 0x4c88
 // Size: 0x10c
 function function_656691ab() {
@@ -1070,7 +1070,7 @@ function function_656691ab() {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x21fb270f, Offset: 0x4da0
 // Size: 0x114
 function function_9ffc1856(goalpos, stop) {
@@ -1088,7 +1088,7 @@ function function_9ffc1856(goalpos, stop) {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x80056bd7, Offset: 0x4ec0
 // Size: 0x3a8
 function private function_67c394f2(helicopter, destination) {
@@ -1142,7 +1142,7 @@ function private function_67c394f2(helicopter, destination) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x42b00f43, Offset: 0x5270
 // Size: 0x4c
 function swat_helicopter_explode(helicopter) {
@@ -1154,7 +1154,7 @@ function swat_helicopter_explode(helicopter) {
 }
 
 // Namespace swat_team/swat_team
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x668830dd, Offset: 0x52c8
 // Size: 0x2a0
 function private spawn_swat_helicopter(owner, origin, angles, context) {
@@ -1188,7 +1188,7 @@ function private spawn_swat_helicopter(owner, origin, angles, context) {
 }
 
 // Namespace swat_team/swat_team
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0x8a78537b, Offset: 0x5570
 // Size: 0x1c0
 function function_11038a4a(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
@@ -1213,7 +1213,7 @@ function function_11038a4a(einflictor, eattacker, idamage, idflags, smeansofdeat
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x74b033d, Offset: 0x5738
 // Size: 0x10c
 function private function_ab26fd70(helicopter) {
@@ -1227,7 +1227,7 @@ function private function_ab26fd70(helicopter) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2f228a00, Offset: 0x5850
 // Size: 0x104
 function private function_61baa879(helicopter) {
@@ -1254,7 +1254,7 @@ function private function_b7ec43e(rope) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x9c8bfd7d, Offset: 0x59a8
 // Size: 0x114
 function private function_21f27c75(helicopter) {
@@ -1272,7 +1272,7 @@ function private function_21f27c75(helicopter) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x630caa71, Offset: 0x5ac8
 // Size: 0x2e
 function private function_d4331865(rope) {
@@ -1283,7 +1283,7 @@ function private function_d4331865(rope) {
 }
 
 // Namespace swat_team/swat_team
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0xea980cf2, Offset: 0x5b00
 // Size: 0x120
 function function_47cf421e(inflictor, attacker, damage, idflags, meansofdeath, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
@@ -1298,7 +1298,7 @@ function function_47cf421e(inflictor, attacker, damage, idflags, meansofdeath, w
 }
 
 // Namespace swat_team/swat_team
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x163bf8c0, Offset: 0x5c28
 // Size: 0x52
 function function_cc3b1643(weapon, shitloc, smeansofdeath) {
@@ -1312,7 +1312,7 @@ function function_cc3b1643(weapon, shitloc, smeansofdeath) {
 }
 
 // Namespace swat_team/swat_team
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x64a80124, Offset: 0x5c88
 // Size: 0x142
 function function_e588f057(inflictor, attacker, damage, idflags, meansofdeath, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
@@ -1332,7 +1332,7 @@ function function_e588f057(inflictor, attacker, damage, idflags, meansofdeath, w
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8f2ab0cc, Offset: 0x5dd8
 // Size: 0x3e
 function function_7fac6670(swat_gunner) {
@@ -1342,7 +1342,7 @@ function function_7fac6670(swat_gunner) {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe580c2d, Offset: 0x5e20
 // Size: 0x334
 function function_ab667e1c(owner, helicopter) {
@@ -1381,7 +1381,7 @@ function function_ab667e1c(owner, helicopter) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x78a9b2a9, Offset: 0x6160
 // Size: 0x22e
 function function_a543b380(player) {
@@ -1424,7 +1424,7 @@ function function_a543b380(player) {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa8339232, Offset: 0x6398
 // Size: 0x1d4
 function function_18a9058c() {
@@ -1452,7 +1452,7 @@ function function_18a9058c() {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x91e7b93f, Offset: 0x6578
 // Size: 0x96
 function private function_75277c27(tacpoint, context) {
@@ -1469,7 +1469,7 @@ function private function_75277c27(tacpoint, context) {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x8506c091, Offset: 0x6618
 // Size: 0xa6
 function private function_7d90f954(origin, context) {
@@ -1486,7 +1486,7 @@ function private function_7d90f954(origin, context) {
 }
 
 // Namespace swat_team/swat_team
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x87eca7a4, Offset: 0x66c8
 // Size: 0x104
 function private function_9153c267(origin, context, verticaloffset) {
@@ -1508,7 +1508,7 @@ function private function_9153c267(origin, context, verticaloffset) {
 }
 
 // Namespace swat_team/swat_team
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x73103d18, Offset: 0x67d8
 // Size: 0x160
 function private function_accec5c5(origin, context, verticaloffset) {
@@ -1531,7 +1531,7 @@ function private function_accec5c5(origin, context, verticaloffset) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4873cb77, Offset: 0x6940
 // Size: 0x9e
 function function_d15dd929(origin) {
@@ -1565,7 +1565,7 @@ function function_d15dd929(origin) {
 #/
 
 // Namespace swat_team/swat_team
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xbdab3cfc, Offset: 0x6ab0
 // Size: 0xf2
 function function_6dc6bc6b(origins, context, verticaloffset) {
@@ -1582,7 +1582,7 @@ function function_6dc6bc6b(origins, context, verticaloffset) {
 }
 
 // Namespace swat_team/swat_team
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x4907b75a, Offset: 0x6bb0
 // Size: 0x148
 function private function_fc826e6(tacpoints, context, verticaloffset) {
@@ -1600,7 +1600,7 @@ function private function_fc826e6(tacpoints, context, verticaloffset) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd8e3cd62, Offset: 0x6d00
 // Size: 0xbc
 function private function_187f6d8f(tacpoints) {
@@ -1613,7 +1613,7 @@ function private function_187f6d8f(tacpoints) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5679455d, Offset: 0x6dc8
 // Size: 0x4e
 function function_3b759619(var_1c996690) {
@@ -1625,7 +1625,7 @@ function function_3b759619(var_1c996690) {
 }
 
 // Namespace swat_team/swat_team
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xd3b896b3, Offset: 0x6e20
 // Size: 0x3f8
 function function_263d3e9e(var_1c996690, context, owner, secondattempt = 0) {
@@ -1700,7 +1700,7 @@ function function_fe13a227(helicopter, var_1c996690, destination) {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x85877a5f, Offset: 0x7320
 // Size: 0x2c6
 function function_2bade425(owner, helicopter) {
@@ -1740,7 +1740,7 @@ function function_2bade425(owner, helicopter) {
 }
 
 // Namespace swat_team/swat_team
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0xdb9c47f0, Offset: 0x75f0
 // Size: 0x600
 function private function_820e7c92(owner, var_1c996690, nodes, context) {
@@ -1803,7 +1803,7 @@ function private function_820e7c92(owner, var_1c996690, nodes, context) {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8a164c00, Offset: 0x7bf8
 // Size: 0xc4
 function function_5479b133(team, killstreak_id) {
@@ -1816,7 +1816,7 @@ function function_5479b133(team, killstreak_id) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdfb7aa51, Offset: 0x7cc8
 // Size: 0x152
 function function_2765a1f0(meansofdeath) {
@@ -1845,7 +1845,7 @@ function function_2765a1f0(meansofdeath) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa1ea40ef, Offset: 0x7e28
 // Size: 0x60a
 function private registerrein_amb(type) {
@@ -1922,7 +1922,7 @@ function private registerrein_amb(type) {
 }
 
 // Namespace swat_team/swat_team
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xdd755b55, Offset: 0x8440
 // Size: 0x2a4
 function spawn_swat_team(owner, context, origin) {
@@ -1968,7 +1968,7 @@ function spawn_swat_team(owner, context, origin) {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x45c7f47c, Offset: 0x86f0
 // Size: 0xb0
 function private function_d1c52e08() {
@@ -1985,7 +1985,7 @@ function private function_d1c52e08() {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x54449ccc, Offset: 0x87a8
 // Size: 0x1ae
 function function_48d57bc8() {
@@ -2013,7 +2013,7 @@ function function_48d57bc8() {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbe5ed369, Offset: 0x8960
 // Size: 0x5fe
 function function_8821879c(killstreak_id) {
@@ -2103,7 +2103,7 @@ function function_8821879c(killstreak_id) {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7c933ae8, Offset: 0x8f68
 // Size: 0xaa
 function function_47e16e28() {
@@ -2118,7 +2118,7 @@ function function_47e16e28() {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc2ba34ea, Offset: 0x9020
 // Size: 0x300
 function swat_loop(killstreak_id) {
@@ -2168,7 +2168,7 @@ function swat_loop(killstreak_id) {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x13e26faa, Offset: 0x9328
 // Size: 0x2c
 function sort_by_score(left, right) {
@@ -2176,7 +2176,7 @@ function sort_by_score(left, right) {
 }
 
 // Namespace swat_team/swat_team
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xc9f11016, Offset: 0x9360
 // Size: 0x162
 function private function_2d44c54f(var_eca4744a, var_56bd1bef, nodes) {
@@ -2193,7 +2193,7 @@ function private function_2d44c54f(var_eca4744a, var_56bd1bef, nodes) {
 }
 
 // Namespace swat_team/swat_team
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xa5db7e44, Offset: 0x94d0
 // Size: 0x2f6
 function function_a4ab9672(swat, owner, var_eca4744a, var_56bd1bef, forced = 0) {
@@ -2235,7 +2235,7 @@ function function_a4ab9672(swat, owner, var_eca4744a, var_56bd1bef, forced = 0) 
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc3575684, Offset: 0x97d0
 // Size: 0xaa
 function function_7b3ad3fe(swat, location) {
@@ -2248,7 +2248,7 @@ function function_7b3ad3fe(swat, location) {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x54fd0d94, Offset: 0x9888
 // Size: 0x78e
 function function_4c2ed78d(owner, forced = 0) {
@@ -2365,7 +2365,7 @@ function function_4c2ed78d(owner, forced = 0) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x47ca5c6c, Offset: 0xa020
 // Size: 0x13e
 function swat_escort(playgesture = 1) {
@@ -2388,7 +2388,7 @@ function swat_escort(playgesture = 1) {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3339cada, Offset: 0xa168
 // Size: 0x386
 function swat_guard() {
@@ -2443,7 +2443,7 @@ function swat_guard() {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf3fd7eeb, Offset: 0xa4f8
 // Size: 0x1c
 function function_d524c2b8(str_notify) {
@@ -2451,7 +2451,7 @@ function function_d524c2b8(str_notify) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x81cb3c08, Offset: 0xa520
 // Size: 0xbe
 function function_a38d2d73(tacpoint) {
@@ -2465,7 +2465,7 @@ function function_a38d2d73(tacpoint) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcd21ca94, Offset: 0xa5e8
 // Size: 0xaa
 function function_4670789f(tacpoint) {
@@ -2479,7 +2479,7 @@ function function_4670789f(tacpoint) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe571af60, Offset: 0xa6a0
 // Size: 0xec
 function private function_9cb166cd(tacpoints) {
@@ -2494,7 +2494,7 @@ function private function_9cb166cd(tacpoints) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7028a855, Offset: 0xa798
 // Size: 0x218
 function private function_e74b21de(owner) {
@@ -2528,7 +2528,7 @@ function private function_e74b21de(owner) {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x65c6f54a, Offset: 0xa9b8
 // Size: 0x86
 function start_swat_team_leave() {
@@ -2544,7 +2544,7 @@ function start_swat_team_leave() {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xecb7773e, Offset: 0xaa48
 // Size: 0x160
 function function_ac0e6696() {
@@ -2569,7 +2569,7 @@ function function_ac0e6696() {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x93c432b7, Offset: 0xabb0
 // Size: 0x184
 function swat_leave() {
@@ -2595,7 +2595,7 @@ function swat_leave() {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcaef932, Offset: 0xad40
 // Size: 0x2f8
 function swat_cleanup(destroy_heli) {
@@ -2644,7 +2644,7 @@ function swat_cleanup(destroy_heli) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x602f793d, Offset: 0xb040
 // Size: 0x24
 function function_d86da2e8(params) {
@@ -2652,7 +2652,7 @@ function function_d86da2e8(params) {
 }
 
 // Namespace swat_team/swat_team
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x84243a75, Offset: 0xb070
 // Size: 0x2d2
 function function_610d3790(einflictor, victim, idamage, weapon) {
@@ -2684,7 +2684,7 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xda02d73c, Offset: 0xb350
 // Size: 0x21c
 function private function_59f58b93(origin) {
@@ -2706,7 +2706,7 @@ function private function_59f58b93(origin) {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x681ff101, Offset: 0xb578
 // Size: 0x92
 function private function_d738127f() {
@@ -2723,7 +2723,7 @@ function private function_d738127f() {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd019d469, Offset: 0xb618
 // Size: 0x132
 function function_5615237b(origin) {
@@ -2744,7 +2744,7 @@ function function_5615237b(origin) {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x723de26c, Offset: 0xb758
 // Size: 0x236
 function function_4c0ed253(location, context) {
@@ -2777,7 +2777,7 @@ function function_4c0ed253(location, context) {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xac0101d2, Offset: 0xb998
 // Size: 0x490
 function islocationgood(location, context) {
@@ -2855,7 +2855,7 @@ function checkweaponchange(team, killstreak_id) {
 }
 
 // Namespace swat_team/swat_team
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfbcf28c6, Offset: 0xbf78
 // Size: 0x6a
 function stopkillstreak(context) {
@@ -2877,7 +2877,7 @@ function addoffsetontopoint(point, direction, offset) {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x42ad41a7, Offset: 0xc070
 // Size: 0x18c
 function obj_set(str_objective, e_target) {
@@ -2898,7 +2898,7 @@ function obj_set(str_objective, e_target) {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc829de04, Offset: 0xc208
 // Size: 0x104
 function function_a00c5973(str_objective, e_target) {

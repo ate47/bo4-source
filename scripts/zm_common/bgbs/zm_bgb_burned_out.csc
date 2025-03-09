@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_burned_out/zm_bgb_burned_out
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x603df02, Offset: 0x208
 // Size: 0x222
 function __init__() {
@@ -33,7 +33,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_burned_out/zm_bgb_burned_out
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2f4cd058, Offset: 0x438
 // Size: 0x94
 function function_874dcef1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -43,7 +43,7 @@ function function_874dcef1(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_bgb_burned_out/zm_bgb_burned_out
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xba0368ba, Offset: 0x4d8
 // Size: 0x94
 function function_5b403c46(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -53,7 +53,7 @@ function function_5b403c46(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_bgb_burned_out/zm_bgb_burned_out
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7c84ec1e, Offset: 0x578
 // Size: 0x10a
 function function_908b00b2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -69,7 +69,7 @@ function function_908b00b2(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_bgb_burned_out/zm_bgb_burned_out
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfecc54bd, Offset: 0x690
 // Size: 0x10a
 function function_35616d2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

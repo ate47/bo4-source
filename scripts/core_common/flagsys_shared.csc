@@ -3,7 +3,7 @@
 #namespace flagsys;
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf2fca391, Offset: 0x98
 // Size: 0x3e
 function set(str_flag) {
@@ -27,7 +27,7 @@ function set_for_time(n_time, str_flag) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf22c6980, Offset: 0x150
 // Size: 0x64
 function clear(str_flag) {
@@ -38,7 +38,7 @@ function clear(str_flag) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe45cb388, Offset: 0x1c0
 // Size: 0x6c
 function set_val(str_flag, b_val) {
@@ -59,7 +59,7 @@ function toggle(str_flag) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3321ad21, Offset: 0x280
 // Size: 0x3c
 function get(str_flag) {
@@ -67,7 +67,7 @@ function get(str_flag) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x85ba0cab, Offset: 0x2c8
 // Size: 0x46
 function wait_till(str_flag) {
@@ -91,7 +91,7 @@ function wait_till_timeout(n_timeout, str_flag) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xeccb8265, Offset: 0x3a8
 // Size: 0x84
 function wait_till_all(a_flags) {
@@ -119,7 +119,7 @@ function wait_till_all_timeout(n_timeout, a_flags) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x171f3f0c, Offset: 0x4c8
 // Size: 0xa4
 function wait_till_any(a_flags) {
@@ -146,7 +146,7 @@ function wait_till_any_timeout(n_timeout, a_flags) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd9b64fca, Offset: 0x608
 // Size: 0x46
 function wait_till_clear(str_flag) {
@@ -170,7 +170,7 @@ function wait_till_clear_timeout(n_timeout, str_flag) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xca317c70, Offset: 0x6e8
 // Size: 0x84
 function wait_till_clear_all(a_flags) {
@@ -198,7 +198,7 @@ function wait_till_clear_all_timeout(n_timeout, a_flags) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x33b500f7, Offset: 0x808
 // Size: 0xb0
 function wait_till_clear_any(a_flags) {

@@ -9,7 +9,7 @@
 #namespace mute_smoke;
 
 // Namespace mute_smoke/mute_smoke
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x14d00976, Offset: 0x118
 // Size: 0x13c
 function init_shared() {
@@ -28,7 +28,7 @@ function init_shared() {
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1d0b5e1e, Offset: 0x260
 // Size: 0x1c
 function on_player_spawned() {
@@ -36,7 +36,7 @@ function on_player_spawned() {
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x6d615a1b, Offset: 0x288
 // Size: 0x19c
 function function_3c893ac6(owner, statweapon, grenadeweaponname, duration, totaltime) {
@@ -59,7 +59,7 @@ function function_3c893ac6(owner, statweapon, grenadeweaponname, duration, total
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf81ba633, Offset: 0x430
 // Size: 0x160
 function smoke_detonate(owner, statweapon, smokeweapon, position, radius, effectlifetime, smokeblockduration) {
@@ -80,7 +80,7 @@ function smoke_detonate(owner, statweapon, smokeweapon, position, radius, effect
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbf683ca1, Offset: 0x598
 // Size: 0xf8
 function function_15263a60(radius) {
@@ -113,7 +113,7 @@ function function_15263a60(radius) {
 #/
 
 // Namespace mute_smoke/mute_smoke
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1b263e94, Offset: 0x6d0
 // Size: 0x154
 function function_2ece9391(owner, duration) {
@@ -146,7 +146,7 @@ function function_e2288bb6() {
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xeee75e41, Offset: 0x8c8
 // Size: 0xf8
 function private function_79583198() {
@@ -167,7 +167,7 @@ function private function_79583198() {
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xe971eae0, Offset: 0x9c8
 // Size: 0xf8
 function private function_b3862968() {
@@ -188,7 +188,7 @@ function private function_b3862968() {
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7d66e8f0, Offset: 0xac8
 // Size: 0x3c
 function function_7033488b(notifyhash) {
@@ -198,7 +198,7 @@ function function_7033488b(notifyhash) {
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5bddbb73, Offset: 0xb10
 // Size: 0x210
 function function_c2e7fcb4() {
@@ -228,7 +228,7 @@ function function_c2e7fcb4() {
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x51165a9b, Offset: 0xd28
 // Size: 0xf4
 function function_40abb79a(in_enemy_mute_smoke, applicant) {
@@ -247,7 +247,7 @@ function function_40abb79a(in_enemy_mute_smoke, applicant) {
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5194c3f5, Offset: 0xe28
 // Size: 0xa8
 function function_41470017(var_56d6af0e, applicant) {
@@ -283,7 +283,7 @@ function event_handler[grenade_fire] function_f9d992c2(eventstruct) {
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6ac82341, Offset: 0x1000
 // Size: 0x2e
 function function_783a1c07(weapon) {
@@ -291,7 +291,7 @@ function function_783a1c07(weapon) {
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xad9f6d81, Offset: 0x1038
 // Size: 0x444
 function function_a4998ccd(grenade_origin, player_origin, weapon) {
@@ -341,7 +341,7 @@ function function_a4998ccd(grenade_origin, player_origin, weapon) {
 #/
 
 // Namespace mute_smoke/mute_smoke
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x8e5078cf, Offset: 0x1550
 // Size: 0x124
 function function_20c7dcdc(position, duration, startsound, stopsound, loopsound) {

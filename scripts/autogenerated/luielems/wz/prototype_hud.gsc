@@ -7,14 +7,14 @@
 // Method(s) 21 Total 28
 class cprototype_hud : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cprototype_hud/prototype_hud
     // Params 2, eflags: 0x0
     // Checksum 0x9bd15039, Offset: 0xda0
     // Size: 0x3c
     function set_deploy_prompt_visibility(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "deploy_prompt_visibility", value);
+        player clientfield::function_9bf78ef8(_uid, "deploy_prompt_visibility", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -22,7 +22,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xa9bbffbd, Offset: 0xd58
     // Size: 0x3c
     function set_fail_fanfare_visibility(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "fail_fanfare_visibility", value);
+        player clientfield::function_9bf78ef8(_uid, "fail_fanfare_visibility", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -30,7 +30,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xca916871, Offset: 0xd10
     // Size: 0x3c
     function set_fanfare_visibility(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "fanfare_visibility", value);
+        player clientfield::function_9bf78ef8(_uid, "fanfare_visibility", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -38,7 +38,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xfbd1de33, Offset: 0xcc8
     // Size: 0x3c
     function set_objective3_strike(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "objective3_strike", value);
+        player clientfield::function_9bf78ef8(_uid, "objective3_strike", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -46,7 +46,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xcf9d1bd0, Offset: 0xc80
     // Size: 0x3c
     function set_objective2_strike(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "objective2_strike", value);
+        player clientfield::function_9bf78ef8(_uid, "objective2_strike", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -54,7 +54,7 @@ class cprototype_hud : cluielem {
     // Checksum 0x7b924f7f, Offset: 0xc38
     // Size: 0x3c
     function set_objective1_strike(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "objective1_strike", value);
+        player clientfield::function_9bf78ef8(_uid, "objective1_strike", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -62,7 +62,7 @@ class cprototype_hud : cluielem {
     // Checksum 0x38273724, Offset: 0xbf0
     // Size: 0x3c
     function set_objective_prompt_visibility(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "objective_prompt_visibility", value);
+        player clientfield::function_9bf78ef8(_uid, "objective_prompt_visibility", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -70,7 +70,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xf6f0374e, Offset: 0xba8
     // Size: 0x3c
     function set_objective3_string(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "objective3_string", value);
+        player clientfield::function_9bf78ef8(_uid, "objective3_string", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -78,7 +78,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xcbdac031, Offset: 0xb60
     // Size: 0x3c
     function set_objective2_string(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "objective2_string", value);
+        player clientfield::function_9bf78ef8(_uid, "objective2_string", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -86,7 +86,7 @@ class cprototype_hud : cluielem {
     // Checksum 0x2becf7c4, Offset: 0xb18
     // Size: 0x3c
     function set_objective1_string(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "objective1_string", value);
+        player clientfield::function_9bf78ef8(_uid, "objective1_string", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -94,7 +94,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xba7a32eb, Offset: 0xad0
     // Size: 0x3c
     function set_active_objective_string(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "active_objective_string", value);
+        player clientfield::function_9bf78ef8(_uid, "active_objective_string", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -102,7 +102,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xe2c4bf8, Offset: 0xa88
     // Size: 0x3c
     function set_craft_progress(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "craft_progress", value);
+        player clientfield::function_9bf78ef8(_uid, "craft_progress", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -110,7 +110,7 @@ class cprototype_hud : cluielem {
     // Checksum 0x1c66732b, Offset: 0xa40
     // Size: 0x3c
     function set_resource_count_visibility(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "resource_count_visibility", value);
+        player clientfield::function_9bf78ef8(_uid, "resource_count_visibility", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -118,7 +118,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xa007f782, Offset: 0x9f8
     // Size: 0x3c
     function set_defense_resource_count(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "defense_resource_count", value);
+        player clientfield::function_9bf78ef8(_uid, "defense_resource_count", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -126,7 +126,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xb7aeb639, Offset: 0x9b0
     // Size: 0x3c
     function set_upgrade_resource_count(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "upgrade_resource_count", value);
+        player clientfield::function_9bf78ef8(_uid, "upgrade_resource_count", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -134,7 +134,7 @@ class cprototype_hud : cluielem {
     // Checksum 0x91ad8421, Offset: 0x968
     // Size: 0x3c
     function set_barrier_prompt_visibility(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "barrier_prompt_visibility", value);
+        player clientfield::function_9bf78ef8(_uid, "barrier_prompt_visibility", value);
     }
 
     // Namespace cprototype_hud/prototype_hud

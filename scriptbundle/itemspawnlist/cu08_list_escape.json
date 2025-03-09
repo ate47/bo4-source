@@ -1,0 +1,16 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "cu08_item",
+            "maxweight": 1,
+            "available": 1
+        }
+    ],
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 1,
+    "hash_9b009839": -1,
+    "name": "cu08_list_escape",
+    "supplystashweight": 100
+}

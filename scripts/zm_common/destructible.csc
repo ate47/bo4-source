@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace destructible/destructible
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4356c90b, Offset: 0x108
 // Size: 0x4c
 function __init__() {
@@ -20,7 +20,7 @@ function __init__() {
 }
 
 // Namespace destructible/destructible
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc943e15f, Offset: 0x160
 // Size: 0x94
 function playgrenaderumble(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -29,7 +29,7 @@ function playgrenaderumble(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace destructible/destructible
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1ff2ebc8, Offset: 0x200
 // Size: 0x104
 function doexplosion(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

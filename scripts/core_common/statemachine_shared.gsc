@@ -1,7 +1,7 @@
 #namespace statemachine;
 
 // Namespace statemachine/statemachine_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xeb03767a, Offset: 0x78
 // Size: 0x140
 function create(name, owner, change_notify = "change_state") {
@@ -28,7 +28,7 @@ function create(name, owner, change_notify = "change_state") {
 }
 
 // Namespace statemachine/statemachine_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x630260d7, Offset: 0x1c0
 // Size: 0xde
 function clear() {
@@ -47,7 +47,7 @@ function clear() {
 }
 
 // Namespace statemachine/statemachine_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xb8ac72cb, Offset: 0x2a8
 // Size: 0x144
 function add_state(name, enter_func, update_func, exit_func, reenter_func) {
@@ -66,7 +66,7 @@ function add_state(name, enter_func, update_func, exit_func, reenter_func) {
 }
 
 // Namespace statemachine/statemachine_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1edec118, Offset: 0x3f8
 // Size: 0x18
 function get_state(name) {
@@ -74,7 +74,7 @@ function get_state(name) {
 }
 
 // Namespace statemachine/statemachine_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbdb16f2, Offset: 0x418
 // Size: 0x28
 function has_state(name) {
@@ -82,7 +82,7 @@ function has_state(name) {
 }
 
 // Namespace statemachine/statemachine_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xb384be65, Offset: 0x448
 // Size: 0xfc
 function add_interrupt_connection(from_state_name, to_state_name, on_notify, checkfunc) {
@@ -98,7 +98,7 @@ function add_interrupt_connection(from_state_name, to_state_name, on_notify, che
 }
 
 // Namespace statemachine/statemachine_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xbc4ddc6c, Offset: 0x550
 // Size: 0x190
 function add_utility_connection(from_state_name, to_state_name, checkfunc, defaultscore) {
@@ -122,7 +122,7 @@ function add_utility_connection(from_state_name, to_state_name, checkfunc, defau
 }
 
 // Namespace statemachine/statemachine_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x30e1db99, Offset: 0x6e8
 // Size: 0x5c
 function function_b94a7666(from_state_name, on_notify) {
@@ -131,7 +131,7 @@ function function_b94a7666(from_state_name, on_notify) {
 }
 
 // Namespace statemachine/statemachine_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5c250df2, Offset: 0x750
 // Size: 0x280
 function set_state(name, state_params) {
@@ -177,7 +177,7 @@ function set_state(name, state_params) {
 }
 
 // Namespace statemachine/statemachine_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaf1883ef, Offset: 0x9d8
 // Size: 0xd0
 function threadnotifyconnections(state) {
@@ -189,7 +189,7 @@ function threadnotifyconnections(state) {
 }
 
 // Namespace statemachine/statemachine_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x322b05f1, Offset: 0xab0
 // Size: 0x100
 function connection_on_notify(state_machine, notify_name, connection) {
@@ -208,7 +208,7 @@ function connection_on_notify(state_machine, notify_name, connection) {
 }
 
 // Namespace statemachine/statemachine_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4d238523, Offset: 0xbb8
 // Size: 0x2a4
 function evaluate_connections(eval_func, params) {

@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace rank/rank_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd805e866, Offset: 0x160
 // Size: 0x24
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace rank/rank_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xee0ff086, Offset: 0x190
 // Size: 0x34c
 function init() {
@@ -57,7 +57,7 @@ function init() {
 }
 
 // Namespace rank/rank_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x91f12470, Offset: 0x4e8
 // Size: 0x656
 function initscoreinfo() {
@@ -113,7 +113,7 @@ function initscoreinfo() {
 }
 
 // Namespace rank/rank_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x83431d00, Offset: 0xb48
 // Size: 0x50
 function getrankxpcapped(inrankxp) {
@@ -124,7 +124,7 @@ function getrankxpcapped(inrankxp) {
 }
 
 // Namespace rank/rank_shared
-// Params 20, eflags: 0x1 linked
+// Params 20, eflags: 0x0
 // Checksum 0x78cc2557, Offset: 0xba0
 // Size: 0x748
 function registerscoreinfo(type, row, lp, xp, sp, hs, res, var_e775f7ed, dp, is_obj, label, medalname, job_type, var_b6593614, var_1a39d14, var_bdbfb0e, var_a434fd2d, is_deprecated, bounty_reward, var_65181181) {
@@ -219,7 +219,7 @@ function registerscoreinfo(type, row, lp, xp, sp, hs, res, var_e775f7ed, dp, is_
 }
 
 // Namespace rank/rank_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe3cf4583, Offset: 0x12f0
 // Size: 0x66
 function function_ca5d4a8(type) {
@@ -227,7 +227,7 @@ function function_ca5d4a8(type) {
 }
 
 // Namespace rank/rank_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe5f320b4, Offset: 0x1360
 // Size: 0x11e
 function getscoreinfovalue(type) {
@@ -247,7 +247,7 @@ function getscoreinfovalue(type) {
 }
 
 // Namespace rank/rank_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1c77a0b, Offset: 0x1488
 // Size: 0x22
 function function_4587103(type) {
@@ -255,7 +255,7 @@ function function_4587103(type) {
 }
 
 // Namespace rank/rank_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1b768aae, Offset: 0x14b8
 // Size: 0xa
 function getrole() {
@@ -263,7 +263,7 @@ function getrole() {
 }
 
 // Namespace rank/rank_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x586e3d33, Offset: 0x14d0
 // Size: 0xce
 function getscoreinfoposition(type) {
@@ -322,7 +322,7 @@ function shouldskipmomentumdisplay(type) {
 }
 
 // Namespace rank/rank_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x39235383, Offset: 0x1788
 // Size: 0x2a
 function getscoreinfolabel(type) {
@@ -338,7 +338,7 @@ function getcombatefficiencyevent(type) {
 }
 
 // Namespace rank/rank_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfaccca60, Offset: 0x17f8
 // Size: 0x4c
 function doesscoreinfocounttowardrampage(type) {
@@ -346,7 +346,7 @@ function doesscoreinfocounttowardrampage(type) {
 }
 
 // Namespace rank/rank_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6b83e1c7, Offset: 0x1850
 // Size: 0x84
 function function_f7b5d9fa(type) {
@@ -358,7 +358,7 @@ function function_f7b5d9fa(type) {
 }
 
 // Namespace rank/rank_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x155e4a72, Offset: 0x18e0
 // Size: 0x5a
 function getrankinfominxp(rankid = 0) {
@@ -367,7 +367,7 @@ function getrankinfominxp(rankid = 0) {
 }
 
 // Namespace rank/rank_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xafc815b, Offset: 0x1948
 // Size: 0x5a
 function getrankinfomaxxp(rankid = 0) {
@@ -376,7 +376,7 @@ function getrankinfomaxxp(rankid = 0) {
 }
 
 // Namespace rank/rank_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4e39d3ce, Offset: 0x19b0
 // Size: 0x5a
 function getrankinfoxpamt(rankid = 0) {
@@ -385,7 +385,7 @@ function getrankinfoxpamt(rankid = 0) {
 }
 
 // Namespace rank/rank_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3ee29ac6, Offset: 0x1a18
 // Size: 0xd8
 function shouldkickbyrank() {
@@ -405,7 +405,7 @@ function shouldkickbyrank() {
 }
 
 // Namespace rank/rank_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x35501a6f, Offset: 0x1af8
 // Size: 0x98
 function getrankxpstat() {
@@ -421,7 +421,7 @@ function getrankxpstat() {
 }
 
 // Namespace rank/rank_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb7f553bd, Offset: 0x1b98
 // Size: 0x70
 function getarenapointsstat() {
@@ -431,7 +431,7 @@ function getarenapointsstat() {
 }
 
 // Namespace rank/rank_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1fe3eb3e, Offset: 0x1c10
 // Size: 0x94c
 function on_player_connect() {
@@ -618,7 +618,7 @@ function getitemindex(refstring) {
 }
 
 // Namespace rank/rank_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9a3e5ad3, Offset: 0x2a98
 // Size: 0x12
 function endgameupdate() {
@@ -626,7 +626,7 @@ function endgameupdate() {
 }
 
 // Namespace rank/rank_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe37283f3, Offset: 0x2ab8
 // Size: 0xa4
 function getrank() {
@@ -639,7 +639,7 @@ function getrank() {
 }
 
 // Namespace rank/rank_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x61872a64, Offset: 0x2b68
 // Size: 0x74
 function getspm() {
@@ -652,7 +652,7 @@ function getspm() {
 }
 
 // Namespace rank/rank_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x17db2bba, Offset: 0x2be8
 // Size: 0x2a
 function getrankxp() {
@@ -660,7 +660,7 @@ function getrankxp() {
 }
 
 // Namespace rank/rank_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc980ab86, Offset: 0x2c20
 // Size: 0x62
 function function_bcb5e246(type) {

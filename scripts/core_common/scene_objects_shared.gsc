@@ -47,7 +47,7 @@ class csceneobject {
     var var_efc540b6;
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x9 linked
+    // Params 0, eflags: 0x8
     // Checksum 0x7fdff29e, Offset: 0x878
     // Size: 0x26
     constructor() {
@@ -57,7 +57,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x11 linked
+    // Params 0, eflags: 0x10
     // Checksum 0x35082c65, Offset: 0x8a8
     // Size: 0x24
     destructor() {
@@ -67,7 +67,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x41ce3f8e, Offset: 0x9098
     // Size: 0xc4
     function warning(condition, str_msg) {
@@ -82,7 +82,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xa1207e7e, Offset: 0x8f18
     // Size: 0x178
     function error(condition, str_msg) {
@@ -102,7 +102,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x56fe1cb3, Offset: 0x8e38
     // Size: 0xd4
     function log(str_msg) {
@@ -110,7 +110,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x7295dd9a, Offset: 0x8e00
     // Size: 0x30
     function is_skipping_scene() {
@@ -118,7 +118,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x92b6a6b9, Offset: 0x8dc8
     // Size: 0x2c
     function skip_scene(b_wait_one_frame) {
@@ -129,7 +129,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x8aba385a, Offset: 0x8d58
     // Size: 0x66
     function skip_scene_shot_animations() {
@@ -143,7 +143,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x2aab459, Offset: 0x8b58
     // Size: 0x1f4
     function skip_animation_on_server() {
@@ -169,7 +169,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x31c93f1e, Offset: 0x8950
     // Size: 0x1fc
     function skip_animation_on_client() {
@@ -197,7 +197,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xbe132daa, Offset: 0x8888
     // Size: 0xbc
     function skip_anim_on_server(entity, anim_name) {
@@ -219,7 +219,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xd7a94502, Offset: 0x8808
     // Size: 0x74
     function skip_anim_on_client(entity, anim_name) {
@@ -239,7 +239,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x44479fac, Offset: 0x86f0
     // Size: 0x10a
     function _should_skip_anim(animation) {
@@ -258,7 +258,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xf488c428, Offset: 0x8698
     // Size: 0x4a
     function in_a_different_scene() {
@@ -266,7 +266,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x2851d456, Offset: 0x8578
     // Size: 0x118
     function in_this_scene(ent) {
@@ -291,7 +291,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x948064ae, Offset: 0x8550
     // Size: 0x1c
     function is_vehicle() {
@@ -299,15 +299,15 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x5a146ed5, Offset: 0x8500
     // Size: 0x48
     function is_actor() {
-        return _s.type === "actor" && !(isdefined(_s.var_615b1f16) && _s.var_615b1f16);
+        return _s.type === "actor" && !(isdefined(_s.usefakeactor) && _s.usefakeactor);
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xed35f32c, Offset: 0x8450
     // Size: 0xa4
     function function_71b7c9e3(player) {
@@ -320,7 +320,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x34580015, Offset: 0x8418
     // Size: 0x2e
     function function_527113ae() {
@@ -328,7 +328,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x1b7cb7e5, Offset: 0x83f0
     // Size: 0x1c
     function is_shared_player() {
@@ -336,7 +336,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xa278a76f, Offset: 0x83c8
     // Size: 0x1c
     function function_209522a0() {
@@ -344,7 +344,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x933b64b7, Offset: 0x83a0
     // Size: 0x1c
     function is_player_model() {
@@ -352,7 +352,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x7d93773b, Offset: 0x8338
     // Size: 0x5a
     function is_player() {
@@ -360,7 +360,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xd69ad800, Offset: 0x82b0
     // Size: 0x7c
     function function_3919a776() {
@@ -371,7 +371,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xf856ddce, Offset: 0x8228
     // Size: 0x7c
     function is_alive() {
@@ -379,7 +379,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x253c7342, Offset: 0x81f0
     // Size: 0x2c
     function function_3e22944e() {
@@ -387,7 +387,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x57a72e52, Offset: 0x81c0
     // Size: 0x28
     function function_48382a1c() {
@@ -395,7 +395,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x8dde89f8, Offset: 0x8100
     // Size: 0xb8
     function function_5c2a9efa() {
@@ -409,7 +409,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x71a91717, Offset: 0x80a0
     // Size: 0x58
     function get_camera_tween_out() {
@@ -418,7 +418,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xd782878b, Offset: 0x8040
     // Size: 0x58
     function get_camera_tween() {
@@ -427,7 +427,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x4371a9bf, Offset: 0x8008
     // Size: 0x2c
     function get_lerp_time() {
@@ -435,7 +435,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xfb8a9920, Offset: 0x7f50
     // Size: 0xae
     function regroup_invulnerability(e_player) {
@@ -448,7 +448,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x49394b61, Offset: 0x7d88
     // Size: 0x1bc
     function play_regroup_fx_for_scene(e_player) {
@@ -472,7 +472,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x4ee4fe56, Offset: 0x7c30
     // Size: 0x14a
     function kill_ent() {
@@ -494,7 +494,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x80f724d1, Offset: 0x7c20
     // Size: 0x4
     function _spawn_ent() {
@@ -502,7 +502,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xf241674a, Offset: 0x79a0
     // Size: 0x274
     function spawn_ent() {
@@ -537,7 +537,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x529d96b6, Offset: 0x7958
     // Size: 0x3e
     function function_f9936b53() {
@@ -545,7 +545,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xe1586a13, Offset: 0x7910
     // Size: 0x3e
     function function_d2039b28() {
@@ -553,7 +553,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x655c6af1, Offset: 0x78f8
     // Size: 0xc
     function on_play_anim(ent) {
@@ -561,7 +561,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xae515d8f, Offset: 0x7880
     // Size: 0x6c
     function function_98561e95() {
@@ -574,7 +574,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x833b1548, Offset: 0x7578
     // Size: 0x2fc
     function function_5c082667() {
@@ -615,7 +615,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 6, eflags: 0x1 linked
+    // Params 6, eflags: 0x0
     // Checksum 0xd08c21d2, Offset: 0x6cd8
     // Size: 0x894
     function _play_anim(animation, n_rate, n_blend, n_time, var_7d32b2c6, paused) {
@@ -709,7 +709,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x8234f93e, Offset: 0x6b28
     // Size: 0x1a4
     function function_a04fb5f4() {
@@ -738,7 +738,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xfcdba9ac, Offset: 0x6588
     // Size: 0x596
     function update_alignment() {
@@ -782,7 +782,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 4, eflags: 0x1 linked
+    // Params 4, eflags: 0x0
     // Checksum 0x76ad3621, Offset: 0x6020
     // Size: 0x55a
     function play_anim(animation, b_camera_anim = 0, var_e052b59a = 0, n_start_time = 0) {
@@ -863,7 +863,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0x33cd8632, Offset: 0x5fd8
     // Size: 0x40
     function animation_lookup(animation, ent = self._e, b_camera = 0) {
@@ -871,7 +871,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x7e67d346, Offset: 0x5f88
     // Size: 0x44
     function function_a808aac7() {
@@ -882,7 +882,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0xe4b6d0c, Offset: 0x5e78
     // Size: 0x102
     function function_376c9d87(var_ec50a0d3, n_movement, player) {
@@ -906,7 +906,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xabfb9af0, Offset: 0x5db0
     // Size: 0xba
     function set_objective() {
@@ -922,7 +922,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x5addd9bc, Offset: 0x5ce0
     // Size: 0xc6
     function restore_saved_ent() {
@@ -934,7 +934,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x8a2e080c, Offset: 0x5cc0
     // Size: 0x12
     function get_orig_name() {
@@ -942,7 +942,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xdd3f4dcd, Offset: 0x5c48
     // Size: 0x6a
     function _assign_unique_name() {
@@ -954,7 +954,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x3a593bac, Offset: 0x57a0
     // Size: 0x49c
     function function_128f0294(s_shot, var_37fa9b04) {
@@ -996,7 +996,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xf5cc831c, Offset: 0x5658
     // Size: 0x13a
     function function_f12c5e67(s_shot) {
@@ -1010,7 +1010,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xc9620a8a, Offset: 0x5628
     // Size: 0x24
     function function_b52254e6() {
@@ -1021,7 +1021,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xc474ab5a, Offset: 0x53c0
     // Size: 0x25e
     function function_23575fad() {
@@ -1057,7 +1057,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xb443282e, Offset: 0x5120
     // Size: 0x298
     function function_b485ee21(s_shot, var_37fa9b04) {
@@ -1082,7 +1082,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x3b83dd39, Offset: 0x4f78
     // Size: 0x19c
     function function_ea176ba9() {
@@ -1105,7 +1105,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x8f52b266, Offset: 0x4ea8
     // Size: 0xc2
     function function_1205d1f0() {
@@ -1124,7 +1124,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xba5f1b4b, Offset: 0x49b8
     // Size: 0x4e4
     function function_72f549e0(s_shot, var_37fa9b04) {
@@ -1187,7 +1187,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x19f8aa50, Offset: 0x4940
     // Size: 0x6c
     function function_20f309bf(str_notify) {
@@ -1201,7 +1201,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x3cd45f6b, Offset: 0x4618
     // Size: 0x31e
     function function_14f96d6b() {
@@ -1241,7 +1241,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x580eeb9f, Offset: 0x4518
     // Size: 0xf4
     function get_align_tag() {
@@ -1259,7 +1259,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xb897057, Offset: 0x42b8
     // Size: 0x256
     function get_align_ent() {
@@ -1290,7 +1290,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x80f724d1, Offset: 0x42a8
     // Size: 0x4
     function _cleanup() {
@@ -1298,7 +1298,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x2bbddfaf, Offset: 0x41c8
     // Size: 0xd4
     function function_2035b6d6(_e) {
@@ -1309,7 +1309,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x1553ae11, Offset: 0x40c0
     // Size: 0xfc
     function function_9960f8f0(_e) {
@@ -1322,7 +1322,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x49f0834c, Offset: 0x3dc8
     // Size: 0x2ec
     function function_fda037ff() {
@@ -1359,7 +1359,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x12668f3d, Offset: 0x3a98
     // Size: 0x324
     function cleanup() {
@@ -1396,7 +1396,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x751ba5, Offset: 0x3a18
     // Size: 0x74
     function _stop(b_dont_clear_anim = 0) {
@@ -1409,7 +1409,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x84cf24d9, Offset: 0x38f0
     // Size: 0x11c
     function stop(b_clear = 0, b_dont_clear_anim = 0) {
@@ -1433,7 +1433,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xfa3c3e0d, Offset: 0x3820
     // Size: 0xc4
     function function_9e4b3920() {
@@ -1447,7 +1447,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x87d3795, Offset: 0x3590
     // Size: 0x284
     function scene_reach() {
@@ -1469,7 +1469,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x734a2f5d, Offset: 0x3500
     // Size: 0x84
     function run_wait(wait_time) {
@@ -1481,7 +1481,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x28d27c9c, Offset: 0x3460
     // Size: 0x94
     function _dynamic_paths() {
@@ -1493,7 +1493,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xf94d9388, Offset: 0x33a0
     // Size: 0xb8
     function function_37c00617() {
@@ -1507,7 +1507,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x17ceb1c3, Offset: 0x3278
     // Size: 0x11c
     function function_ebbbd00d() {
@@ -1534,7 +1534,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xa906115e, Offset: 0x3238
     // Size: 0x36
     function function_587971b6() {
@@ -1542,7 +1542,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x45d74d8b, Offset: 0x3188
     // Size: 0xa6
     function function_dd4f74e1() {
@@ -1554,7 +1554,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xc1ce502a, Offset: 0x3148
     // Size: 0x34
     function function_ee94f77() {
@@ -1564,7 +1564,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xfe68d28b, Offset: 0x26d0
     // Size: 0xa6c
     function play(str_shot = "play", n_start_time) {
@@ -1688,7 +1688,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xa4f205ca, Offset: 0x2540
     // Size: 0x184
     function function_638ad737(str_shot) {
@@ -1704,7 +1704,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xfa52c2f9, Offset: 0x2238
     // Size: 0x2fc
     function function_1e19d813() {
@@ -1736,7 +1736,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x9c3de6c, Offset: 0x21d8
     // Size: 0x58
     function has_streamer_hint() {
@@ -1747,7 +1747,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x52f50404, Offset: 0x2170
     // Size: 0x5c
     function function_e91c94b9(n_shot) {
@@ -1760,7 +1760,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xb5fe6898, Offset: 0x2118
     // Size: 0x4c
     function function_9ec459a2() {
@@ -1770,17 +1770,17 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xdd4027cc, Offset: 0x20c0
     // Size: 0x4c
     function function_f0e3e344() {
-        if (isdefined(var_55b4f21e.var_1c7fbd6b) && isdefined(_e)) {
-            _e setmodel(var_55b4f21e.var_1c7fbd6b);
+        if (isdefined(var_55b4f21e.shotmodel) && isdefined(_e)) {
+            _e setmodel(var_55b4f21e.shotmodel);
         }
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x5ea45d74, Offset: 0x2028
     // Size: 0x90
     function function_730a4c60(str_shot) {
@@ -1793,7 +1793,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x85a27deb, Offset: 0x1f90
     // Size: 0x90
     function get_shot(str_shot) {
@@ -1806,7 +1806,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xbc225c9f, Offset: 0x1f48
     // Size: 0x3e
     function function_b260bdcc(str_shot) {
@@ -1814,7 +1814,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x27b28931, Offset: 0x1f00
     // Size: 0x3e
     function function_24f8cfb5(str_shot) {
@@ -1822,7 +1822,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xbeea71cd, Offset: 0x1df8
     // Size: 0xfe
     function function_e0df299e(_str_shot) {
@@ -1838,7 +1838,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x4a239485, Offset: 0x1c98
     // Size: 0x154
     function get_animation_name(_str_shot) {
@@ -1858,7 +1858,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x80f724d1, Offset: 0x1c88
     // Size: 0x4
     function function_d09b043() {
@@ -1866,7 +1866,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xbce5f40e, Offset: 0x1ac8
     // Size: 0x1b4
     function _prepare() {
@@ -1890,7 +1890,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x613a85de, Offset: 0x1708
     // Size: 0x3b4
     function function_4b3d4226() {
@@ -1930,7 +1930,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x96a9d433, Offset: 0xf90
     // Size: 0x770
     function prepare() {
@@ -2026,7 +2026,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x678635a2, Offset: 0xdd8
     // Size: 0x1aa
     function _spawn() {
@@ -2051,7 +2051,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x28f6730e, Offset: 0xb98
     // Size: 0x234
     function spawn() {
@@ -2074,7 +2074,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x5cf5835f, Offset: 0xb08
     // Size: 0x84
     function first_init(s_objdef, o_scene) {
@@ -2088,7 +2088,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x65e0d411, Offset: 0xa78
     // Size: 0x84
     function _reset_values(ent = self._e) {
@@ -2099,7 +2099,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x9d5e039e, Offset: 0x9d0
     // Size: 0x9c
     function _set_values(ent = self._e) {
@@ -2108,7 +2108,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x6669143e, Offset: 0x958
     // Size: 0x6c
     function reset_ent_val(str_key, ent = self._e) {
@@ -2118,7 +2118,7 @@ class csceneobject {
     }
 
     // Namespace csceneobject/scene_objects_shared
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0x630975ec, Offset: 0x8d8
     // Size: 0x74
     function set_ent_val(str_key, value, ent = self._e) {
@@ -2167,7 +2167,7 @@ class cscene {
     var var_b0ff34ce;
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x9 linked
+    // Params 0, eflags: 0x8
     // Checksum 0x611860f3, Offset: 0xa518
     // Size: 0x66
     constructor() {
@@ -2182,7 +2182,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x11 linked
+    // Params 0, eflags: 0x10
     // Checksum 0x8fb0cde7, Offset: 0xa588
     // Size: 0x24
     destructor() {
@@ -2192,7 +2192,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x27379345, Offset: 0x11980
     // Size: 0x64
     function warning(condition, str_msg) {
@@ -2208,7 +2208,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x2c1c7bd8, Offset: 0x118c0
     // Size: 0xb4
     function error(condition, str_msg) {
@@ -2227,7 +2227,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x2a4a642a, Offset: 0x11850
     // Size: 0x64
     function log(str_msg) {
@@ -2235,7 +2235,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xb29793a2, Offset: 0x11820
     // Size: 0x24
     function remove_object(o_object) {
@@ -2243,7 +2243,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x2c938e15, Offset: 0x117a0
     // Size: 0x76
     function add_object(o_object) {
@@ -2256,7 +2256,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xb8fb543a, Offset: 0x11708
     // Size: 0x8e
     function has_player() {
@@ -2272,7 +2272,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xe404e8d7, Offset: 0x11650
     // Size: 0xae
     function _skip_scene() {
@@ -2286,7 +2286,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xee1d6fec, Offset: 0x112e0
     // Size: 0x366
     function finish_scene_skipping() {
@@ -2330,7 +2330,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x8fc52138, Offset: 0x10af0
     // Size: 0x7e8
     function skip_scene(var_11843b70, str_shot = self._a_active_shots[0]) {
@@ -2436,7 +2436,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x6f080fe7, Offset: 0x10ac0
     // Size: 0x26
     function is_scene_shared() {
@@ -2447,7 +2447,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x8a6df063, Offset: 0x10aa0
     // Size: 0x14
     function on_error() {
@@ -2455,7 +2455,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xc4586996, Offset: 0x109b8
     // Size: 0xe0
     function get_valid_objects() {
@@ -2474,7 +2474,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x57e919d5, Offset: 0x10800
     // Size: 0x1ae
     function sync_with_other_scenes(str_shot) {
@@ -2496,7 +2496,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x1066b3ff, Offset: 0x106e8
     // Size: 0x10c
     function wait_till_objects_finished(str_shot, &array) {
@@ -2510,7 +2510,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xda421c95, Offset: 0x106b0
     // Size: 0x2c
     function wait_till_shot_finished(str_shot) {
@@ -2518,7 +2518,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x32143448, Offset: 0x10598
     // Size: 0x10c
     function wait_till_objects_ready(str_shot, &array) {
@@ -2532,7 +2532,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x2c6464d7, Offset: 0x10448
     // Size: 0x148
     function function_9a5f92e7() {
@@ -2551,7 +2551,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xc15a2e1a, Offset: 0x102d8
     // Size: 0x164
     function wait_till_shot_ready(str_shot, o_exclude) {
@@ -2575,7 +2575,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xcc753eea, Offset: 0x102a8
     // Size: 0x28
     function is_looping() {
@@ -2583,7 +2583,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x1248134f, Offset: 0x10138
     // Size: 0x162
     function get_align_ent() {
@@ -2606,7 +2606,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xac93f0f4, Offset: 0x10120
     // Size: 0xa
     function get_root() {
@@ -2614,7 +2614,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xe99d0c64, Offset: 0xfff8
     // Size: 0x120
     function get_ents() {
@@ -2637,7 +2637,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xd8b8bf6b, Offset: 0xfc40
     // Size: 0x3b0
     function _call_shot_funcs(str_shot, b_waittill_go = 0) {
@@ -2684,7 +2684,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x56dd2da3, Offset: 0xf9a8
     // Size: 0x28a
     function stop(b_clear = 0, b_finished = 0) {
@@ -2710,8 +2710,8 @@ class cscene {
             }
             if (isdefined(_e_root) && isdefined(_e_root.last_scene_state_instance)) {
                 if (!b_finished) {
-                    level.last_scene_state[_str_name] = level.last_scene_state[_str_name] + "<dev string:x443>";
-                    _e_root.last_scene_state_instance[_str_name] = _e_root.last_scene_state_instance[_str_name] + "<dev string:x443>";
+                    level.last_scene_state[_str_name] += "<dev string:x443>";
+                    _e_root.last_scene_state_instance[_str_name] += "<dev string:x443>";
                 }
                 if (!isdefined(_e_root.scriptbundlename)) {
                     _e_root notify(#"stop_debug_display");
@@ -2722,7 +2722,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xb5fb9be2, Offset: 0xf980
     // Size: 0x1a
     function has_init_state() {
@@ -2730,7 +2730,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xcd83c25d, Offset: 0xf580
     // Size: 0x3f4
     function run_next(str_current_shot) {
@@ -2793,7 +2793,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x3503a512, Offset: 0xf498
     // Size: 0xda
     function get_next_shot(str_current_shot) {
@@ -2810,7 +2810,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xf0f9781d, Offset: 0xf370
     // Size: 0x11a
     function has_next_shot(str_current_shot = self._a_active_shots[0]) {
@@ -2832,7 +2832,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x86996438, Offset: 0xf350
     // Size: 0x18
     function scene_skip_completed() {
@@ -2840,7 +2840,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x672785b6, Offset: 0xf318
     // Size: 0x2e
     function is_skipping_player_scene() {
@@ -2848,7 +2848,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xbf4a5e16, Offset: 0xf298
     // Size: 0x74
     function is_skipping_scene() {
@@ -2856,7 +2856,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xe810e667, Offset: 0xf1a0
     // Size: 0xec
     function _stop_camera_anim_on_player(player) {
@@ -2871,7 +2871,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x2f737350, Offset: 0xf0e8
     // Size: 0xb0
     function _stop_camera_anims() {
@@ -2885,7 +2885,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x7ea3522f, Offset: 0xf088
     // Size: 0x58
     function loop_camera_anim_to_set_up_for_capture() {
@@ -2897,7 +2897,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 4, eflags: 0x1 linked
+    // Params 4, eflags: 0x0
     // Checksum 0xa69bf137, Offset: 0xef60
     // Size: 0x11c
     function _play_camera_anim_on_player(player, v_origin, v_angles, ignore_initial_notetracks) {
@@ -2914,7 +2914,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x12b1f780, Offset: 0xef18
     // Size: 0x3c
     function _play_camera_anim_on_player_callback(player) {
@@ -2922,7 +2922,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xf914160f, Offset: 0xedb0
     // Size: 0x15c
     function _play_camera_anims() {
@@ -2943,7 +2943,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xdcefe10e, Offset: 0xed08
     // Size: 0x9c
     function _wait_for_camera_animation(str_cam, n_start_time) {
@@ -2956,7 +2956,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xfda9d9b, Offset: 0xec48
     // Size: 0xb8
     function function_3e22b6ac() {
@@ -2970,7 +2970,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x803e07c8, Offset: 0xebe0
     // Size: 0x5e
     function function_ab0c6edb() {
@@ -2980,7 +2980,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 4, eflags: 0x1 linked
+    // Params 4, eflags: 0x0
     // Checksum 0x924feb9, Offset: 0xd480
     // Size: 0x1756
     function play(str_shot = "play", a_ents, b_testing = 0, str_mode = "") {
@@ -3229,7 +3229,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0xf8a2e612, Offset: 0xd340
     // Size: 0x136
     function get_anim_relative_start_time(animation, n_start_time, b_camera_anim = 0) {
@@ -3255,7 +3255,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x43cd70ec, Offset: 0xd160
     // Size: 0x1d8
     function get_objects(type, str_team) {
@@ -3289,7 +3289,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xf663a15b, Offset: 0xd110
     // Size: 0x44
     function _is_ent_vehicle(ent, str_team) {
@@ -3297,7 +3297,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x741bb90, Offset: 0xd0c0
     // Size: 0x44
     function _is_ent_actor(ent, str_team) {
@@ -3305,7 +3305,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x4738dcdc, Offset: 0xd040
     // Size: 0x78
     function _is_ent_companion(ent, str_team) {
@@ -3316,7 +3316,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xa45eb2b6, Offset: 0xcfe8
     // Size: 0x4c
     function _is_ent_player(ent, str_team) {
@@ -3324,7 +3324,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 5, eflags: 0x1 linked
+    // Params 5, eflags: 0x0
     // Checksum 0xa0427d37, Offset: 0xce70
     // Size: 0x16e
     function _assign_ents_by_type(&a_objects, &a_ents, str_type, func_test, str_team) {
@@ -3349,7 +3349,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x39b81e86, Offset: 0xca90
     // Size: 0x3d6
     function _assign_ents_by_name(&a_objects, &a_ents) {
@@ -3376,7 +3376,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xece41692, Offset: 0xca00
     // Size: 0x82
     function assign_ent(o_obj, ent) {
@@ -3390,7 +3390,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x47da61e6, Offset: 0xc590
     // Size: 0x468
     function assign_ents(a_ents) {
@@ -3435,7 +3435,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x36297bb9, Offset: 0xc3e0
     // Size: 0x1a4
     function sync_with_client_scene(str_shot, b_test_run = 0) {
@@ -3473,7 +3473,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x4a3b5722, Offset: 0xc3c0
     // Size: 0x16
     function get_object_id() {
@@ -3482,7 +3482,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x73d66b7c, Offset: 0xc218
     // Size: 0x1a0
     function get_valid_object_defs() {
@@ -3505,7 +3505,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x7dabb86a, Offset: 0xc000
     // Size: 0x20a
     function new_object(str_type) {
@@ -3539,7 +3539,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x24a9b299, Offset: 0xbed0
     // Size: 0x124
     function remove_from_sync_list(str_shot) {
@@ -3558,7 +3558,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xb752bb54, Offset: 0xbd40
     // Size: 0x186
     function add_to_sync_list(str_shot) {
@@ -3579,7 +3579,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x3ad533d1, Offset: 0xbd20
     // Size: 0x18
     function get_request_time(str_shot) {
@@ -3587,7 +3587,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x7ad9aa8c, Offset: 0xbcf8
     // Size: 0x1e
     function set_request_time(str_shot) {
@@ -3595,7 +3595,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x6f4cd3fc, Offset: 0xbbc0
     // Size: 0x12c
     function function_558aaa66(s_instance, s_obj) {
@@ -3611,7 +3611,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xdcd12fc4, Offset: 0xbae8
     // Size: 0xca
     function function_85ed339(s_obj) {
@@ -3626,14 +3626,14 @@ class cscene {
         default:
             break;
         }
-        if (isdefined(s_obj.var_615b1f16) && s_obj.var_615b1f16) {
+        if (isdefined(s_obj.usefakeactor) && s_obj.usefakeactor) {
             str_type = "fakeactor";
         }
         return str_type;
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x56c59a4c, Offset: 0xba98
     // Size: 0x46
     function is_player(s_obj) {
@@ -3644,7 +3644,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x194e2d6d, Offset: 0xb8f0
     // Size: 0x1a0
     function function_4f12fd77(s_obj) {
@@ -3656,7 +3656,7 @@ class cscene {
                 if (s_shot.name === "init") {
                     continue;
                 }
-                if (!isdefined(s_shot.entry) && !isdefined(s_shot.var_1c7fbd6b) && !isdefined(s_shot.var_64c0ee5a) && !isdefined(s_shot.cleanuphide) && !isdefined(s_shot.cleanupshow) && !isdefined(s_shot.cleanupdelete) && !isdefined(s_shot.var_3ea5d95f) && !isdefined(s_shot.var_8645db22)) {
+                if (!isdefined(s_shot.entry) && !isdefined(s_shot.shotmodel) && !isdefined(s_shot.var_64c0ee5a) && !isdefined(s_shot.cleanuphide) && !isdefined(s_shot.cleanupshow) && !isdefined(s_shot.cleanupdelete) && !isdefined(s_shot.var_3ea5d95f) && !isdefined(s_shot.var_8645db22)) {
                     arrayremovevalue(s_obj.shots, s_shot, 1);
                 }
             }
@@ -3664,7 +3664,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x1930d641, Offset: 0xb8d0
     // Size: 0x18
     function function_b260bdcc(str_shot) {
@@ -3672,7 +3672,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xed853958, Offset: 0xb8b0
     // Size: 0x18
     function function_24f8cfb5(str_shot) {
@@ -3680,7 +3680,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x219e51b8, Offset: 0xb718
     // Size: 0x18a
     function function_f9ac3929(var_f4348b83, s_shot) {
@@ -3708,7 +3708,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xbcb8dda8, Offset: 0xb570
     // Size: 0x19a
     function function_eb2133a3(var_f4348b83, s_shot) {
@@ -3736,7 +3736,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x3cf5436b, Offset: 0xb218
     // Size: 0x34a
     function function_ff8b808(obj, var_90acec35) {
@@ -3777,7 +3777,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x1504d521, Offset: 0xb0f8
     // Size: 0x114
     function function_73fcc32b(obj, var_87439bc3) {
@@ -3791,7 +3791,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 5, eflags: 0x1 linked
+    // Params 5, eflags: 0x0
     // Checksum 0xbcf7b8aa, Offset: 0xab78
     // Size: 0x576
     function init(str_scenedef, s_scenedef, e_align, a_ents, b_test_run) {
@@ -3851,7 +3851,7 @@ class cscene {
     }
 
     // Namespace cscene/scene_objects_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xed512f22, Offset: 0xa5b8
     // Size: 0x5b4
     function function_4412dc65(str_shot) {
@@ -3912,7 +3912,7 @@ class cscene {
 }
 
 // Namespace scene/scene_objects_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x625d3f1, Offset: 0x7b8
 // Size: 0x56
 function prepare_player_model_anim(ent) {
@@ -3923,7 +3923,7 @@ function prepare_player_model_anim(ent) {
 }
 
 // Namespace scene/scene_objects_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x907fdfda, Offset: 0x818
 // Size: 0x56
 function prepare_generic_model_anim(ent) {

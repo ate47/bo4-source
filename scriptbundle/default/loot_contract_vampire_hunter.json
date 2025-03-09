@@ -4,6 +4,6 @@
     "contracttitle": "#weapon/pistol_standard_t8",
     "name": "loot_contract_vampire_hunter",
     "contractdescription": "#weapon/pistol_standard_t8",
-    "var_f15e270f": "#white",
-    "var_1c057e8c": "#hash_125e8118af1ad83e"
+    "hash_f15e270f": "#white",
+    "hash_1c057e8c": "#hash_125e8118af1ad83e"
 }

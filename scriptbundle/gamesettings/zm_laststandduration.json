@@ -4,14 +4,14 @@
     "value2": "1",
     "value3": "2",
     "value1": "0",
-    "var_dfed6968": "3",
+    "value4": "3",
     "type": "gamesettings",
     "name": "zm_laststandduration",
     "displayname": "#hash_74369b37a7e6939d",
-    "var_684ccd4c": "#hash_58d704c861150b81",
+    "label4": "#hash_58d704c861150b81",
     "label1": "#hash_68b65fb510ccd214",
-    "var_71b6e020": "#hash_1ba60b6389d20648",
+    "label3": "#hash_1ba60b6389d20648",
     "label2": "#hash_7055d21eae0da1ef",
-    "var_9de86f42": 4,
+    "optionscount": 4,
     "setting": "zmLastStandDuration"
 }

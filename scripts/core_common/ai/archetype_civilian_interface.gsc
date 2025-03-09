@@ -5,7 +5,7 @@
 #namespace civilianinterface;
 
 // Namespace civilianinterface/archetype_civilian_interface
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x68503044, Offset: 0xa0
 // Size: 0x1dc
 function registercivilianinterfaceattributes() {

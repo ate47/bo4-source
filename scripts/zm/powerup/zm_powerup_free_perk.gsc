@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_powerup_free_perk/zm_powerup_free_perk
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcf08cc46, Offset: 0x138
 // Size: 0x9c
 function __init__() {
@@ -36,7 +36,7 @@ function __init__() {
 }
 
 // Namespace zm_powerup_free_perk/zm_powerup_free_perk
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc8f141cc, Offset: 0x1e0
 // Size: 0xc2
 function grab_free_perk(var_a3878cd) {

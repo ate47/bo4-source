@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_audio/zm_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x402b3676, Offset: 0x2b8
 // Size: 0x1ec
 function __init__() {
@@ -37,7 +37,7 @@ function __init__() {
 }
 
 // Namespace zm_audio/zm_audio
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2f228697, Offset: 0x4b0
 // Size: 0xc
 function on_player_spawned(localclientnum) {
@@ -45,7 +45,7 @@ function on_player_spawned(localclientnum) {
 }
 
 // Namespace zm_audio/zm_audio
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe99750d4, Offset: 0x4c8
 // Size: 0x46
 function delay_set_exert_id(newval) {
@@ -56,7 +56,7 @@ function delay_set_exert_id(newval) {
 }
 
 // Namespace zm_audio/zm_audio
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xebbaa601, Offset: 0x518
 // Size: 0xa4
 function charindex_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -73,7 +73,7 @@ function charindex_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace zm_audio/zm_audio
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x180474e9, Offset: 0x5c8
 // Size: 0x62
 function isspeaking_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -97,7 +97,7 @@ function zmbmuslooper() {
 }
 
 // Namespace zm_audio/zm_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x218e8fe5, Offset: 0x6e0
 // Size: 0x7c
 function waitfor_music_stop() {
@@ -109,7 +109,7 @@ function waitfor_music_stop() {
 }
 
 // Namespace zm_audio/zm_audio
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x32f8f65e, Offset: 0x768
 // Size: 0x34
 function playerfalldamagesound(client_num, firstperson) {
@@ -117,7 +117,7 @@ function playerfalldamagesound(client_num, firstperson) {
 }
 
 // Namespace zm_audio/zm_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x41da7534, Offset: 0x7a8
 // Size: 0x3c
 function clientvoicesetup() {
@@ -126,7 +126,7 @@ function clientvoicesetup() {
 }
 
 // Namespace zm_audio/zm_audio
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf4eacfbb, Offset: 0x7f0
 // Size: 0x8c
 function audio_player_connect(localclientnum) {
@@ -136,7 +136,7 @@ function audio_player_connect(localclientnum) {
 }
 
 // Namespace zm_audio/zm_audio
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb9228368, Offset: 0x888
 // Size: 0xa8
 function sndvonotifyplain(localclientnum, var_3d2dc382) {
@@ -153,7 +153,7 @@ function sndvonotifyplain(localclientnum, var_3d2dc382) {
 }
 
 // Namespace zm_audio/zm_audio
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xad503c93, Offset: 0x938
 // Size: 0x1cc
 function playerexert(localclientnum, exert) {
@@ -185,7 +185,7 @@ function playerexert(localclientnum, exert) {
 }
 
 // Namespace zm_audio/zm_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1b8caf77, Offset: 0xb10
 // Size: 0x64
 function function_42e50d5() {
@@ -201,7 +201,7 @@ function function_42e50d5() {
 }
 
 // Namespace zm_audio/zm_audio
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9f39b390, Offset: 0xb80
 // Size: 0x70
 function sndvonotifydtp(localclientnum, notifystring) {
@@ -247,7 +247,7 @@ function sndmeleeswipe(localclientnum, notifystring) {
 }
 
 // Namespace zm_audio/zm_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf31bb026, Offset: 0xdd0
 // Size: 0x74
 function end_gameover_snapshot() {
@@ -258,7 +258,7 @@ function end_gameover_snapshot() {
 }
 
 // Namespace zm_audio/zm_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2d37cfe5, Offset: 0xe50
 // Size: 0x4c
 function gameover_snapshot() {
@@ -268,7 +268,7 @@ function gameover_snapshot() {
 }
 
 // Namespace zm_audio/zm_audio
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x137ef6ae, Offset: 0xea8
 // Size: 0x10e
 function sndzmblaststand(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

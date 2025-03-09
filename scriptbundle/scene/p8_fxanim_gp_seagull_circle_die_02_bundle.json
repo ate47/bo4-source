@@ -14,9 +14,9 @@
             ],
             "model": "#hash_7defc77aa593e72e",
             "type": "prop",
-            "var_a1c5c678": 1,
+            "hash_a1c5c678": 1,
             "name": "prop 1",
-            "var_873368a8": 1000
+            "hash_873368a8": 1000
         }
     ],
     "scenetype": "fxanim",

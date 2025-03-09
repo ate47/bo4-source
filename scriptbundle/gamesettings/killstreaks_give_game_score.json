@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "killstreaks_give_game_score",
     "displayname": "#hash_229999258e9176a5",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "killstreaksGiveGameScore",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

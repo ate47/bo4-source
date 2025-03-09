@@ -28,7 +28,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8e357bc, Offset: 0x378
 // Size: 0x326
 function __init__() {
@@ -60,7 +60,7 @@ function __init__() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x479c30ac, Offset: 0x6a8
 // Size: 0x37e
 function function_5aa948ab() {
@@ -68,8 +68,8 @@ function function_5aa948ab() {
     if (!isdefined(level.var_9d47488.tunables.var_2fa95b34)) {
         level.var_9d47488.tunables.var_2fa95b34 = 0;
     }
-    if (!isdefined(level.var_9d47488.tunables.var_170c494e)) {
-        level.var_9d47488.tunables.var_170c494e = 0;
+    if (!isdefined(level.var_9d47488.tunables.prompttime)) {
+        level.var_9d47488.tunables.prompttime = 0;
     }
     if (!isdefined(level.var_9d47488.tunables.var_b9cf9139)) {
         level.var_9d47488.tunables.var_b9cf9139 = 0;
@@ -80,8 +80,8 @@ function function_5aa948ab() {
     if (!isdefined(level.var_9d47488.tunables.var_9bdbf8df)) {
         level.var_9d47488.tunables.var_9bdbf8df = 0;
     }
-    if (!isdefined(level.var_9d47488.tunables.var_c0c99398)) {
-        level.var_9d47488.tunables.var_c0c99398 = 0;
+    if (!isdefined(level.var_9d47488.tunables.failedtime)) {
+        level.var_9d47488.tunables.failedtime = 0;
     }
     if (!isdefined(level.var_9d47488.tunables.var_9abfd5cf)) {
         level.var_9d47488.tunables.var_9abfd5cf = 0;
@@ -92,8 +92,8 @@ function function_5aa948ab() {
     if (!isdefined(level.var_9d47488.tunables.var_a06eff0b)) {
         level.var_9d47488.tunables.var_a06eff0b = 0;
     }
-    level.var_9d47488.tunables.var_1f80b74 = level.var_9d47488.tunables.var_170c494e + level.var_9d47488.tunables.var_b9cf9139 + level.var_9d47488.tunables.var_5ee35075 + level.var_9d47488.tunables.var_9bdbf8df + level.var_9d47488.tunables.var_2fa95b34;
-    level.var_9d47488.tunables.maxduration = level.var_9d47488.tunables.var_1f80b74 + level.var_9d47488.tunables.var_c0c99398;
+    level.var_9d47488.tunables.var_1f80b74 = level.var_9d47488.tunables.prompttime + level.var_9d47488.tunables.var_b9cf9139 + level.var_9d47488.tunables.var_5ee35075 + level.var_9d47488.tunables.var_9bdbf8df + level.var_9d47488.tunables.var_2fa95b34;
+    level.var_9d47488.tunables.maxduration = level.var_9d47488.tunables.var_1f80b74 + level.var_9d47488.tunables.failedtime;
     if (!isdefined(level.var_9d47488.tunables.yaw)) {
         level.var_9d47488.tunables.yaw = 0;
     }
@@ -103,7 +103,7 @@ function function_5aa948ab() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3aa4f0bc, Offset: 0xa30
 // Size: 0x86
 function onplayerconnect() {
@@ -114,7 +114,7 @@ function onplayerconnect() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc810879c, Offset: 0xac0
 // Size: 0x2a
 function onspawned() {
@@ -140,7 +140,7 @@ function onemp(attacker, ownerentnum) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xeca4796e, Offset: 0xb78
 // Size: 0x40
 function function_1c601b99() {
@@ -150,7 +150,7 @@ function function_1c601b99() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x31b46461, Offset: 0xbc0
 // Size: 0x194
 function function_bff5c062(var_c75e900a, attackingplayer) {
@@ -177,7 +177,7 @@ function function_bff5c062(var_c75e900a, attackingplayer) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3bf9ed11, Offset: 0xd60
 // Size: 0x7c
 function function_c3d93fc(grenade, weapon) {
@@ -188,7 +188,7 @@ function function_c3d93fc(grenade, weapon) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x78ddb1fe, Offset: 0xde8
 // Size: 0x234
 function function_d573e71(grenade, weapon) {
@@ -216,7 +216,7 @@ function function_d573e71(grenade, weapon) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf3a3dde7, Offset: 0x1028
 // Size: 0x3f4
 function function_3019d870(origin, angles) {
@@ -261,7 +261,7 @@ function function_3019d870(origin, angles) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x68897681, Offset: 0x1428
 // Size: 0x48
 function function_c7561b46(target) {
@@ -272,7 +272,7 @@ function function_c7561b46(target) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2f2f5dc3, Offset: 0x1478
 // Size: 0xf2
 function watchabandoned() {
@@ -289,7 +289,7 @@ function watchabandoned() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe26e6edb, Offset: 0x1578
 // Size: 0x34
 function configureteampost(owner, ishacked) {
@@ -298,7 +298,7 @@ function configureteampost(owner, ishacked) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe8d511cb, Offset: 0x15b8
 // Size: 0x3c
 function autosetvisibletoall() {
@@ -309,7 +309,7 @@ function autosetvisibletoall() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xddc30c8, Offset: 0x1600
 // Size: 0x21c
 function function_f43b3686(originalowner) {
@@ -336,7 +336,7 @@ function function_f43b3686(originalowner) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd8b8c4a5, Offset: 0x1828
 // Size: 0xd8
 function function_53df8a4c(entnum, abandoned = 0) {
@@ -350,7 +350,7 @@ function function_53df8a4c(entnum, abandoned = 0) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2da4c7b8, Offset: 0x1908
 // Size: 0x8e
 function function_a8552c0a() {
@@ -364,7 +364,7 @@ function function_a8552c0a() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x254e3e8b, Offset: 0x19a0
 // Size: 0xc8
 function function_f0eb3dbb() {
@@ -380,7 +380,7 @@ function function_f0eb3dbb() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xb971b3c4, Offset: 0x1a70
 // Size: 0xc8
 function private shock_rumble_loop() {
@@ -397,7 +397,7 @@ function private shock_rumble_loop() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1dae890f, Offset: 0x1b40
 // Size: 0x2a4
 function function_6db15645(target) {
@@ -431,7 +431,7 @@ function function_6db15645(target) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xd2f436dc, Offset: 0x1df0
 // Size: 0x28c
 function function_a78e666b(target, tag, offset = (0, 0, 0), var_9bd28e34) {
@@ -471,7 +471,7 @@ function function_a78e666b(target, tag, offset = (0, 0, 0), var_9bd28e34) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xfd5b61a7, Offset: 0x2088
 // Size: 0x1de
 function function_9a66b97b(target, tag, offset = (0, 0, 0), tagpos, seekermine) {
@@ -498,7 +498,7 @@ function function_9a66b97b(target, tag, offset = (0, 0, 0), tagpos, seekermine) 
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x642dc697, Offset: 0x2270
 // Size: 0x164
 function watchtargetdeath(seekermine) {
@@ -516,7 +516,7 @@ function watchtargetdeath(seekermine) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x427db631, Offset: 0x23e0
 // Size: 0x6c
 function function_d688b485(var_1a9a5cee) {
@@ -529,7 +529,7 @@ function function_d688b485(var_1a9a5cee) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x81429d82, Offset: 0x2458
 // Size: 0x44
 function function_7fe95ae0(var_1a9a5cee) {
@@ -541,7 +541,7 @@ function function_7fe95ae0(var_1a9a5cee) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xfbd2af2e, Offset: 0x24a8
 // Size: 0x156
 function function_724e8f1c(var_26b2b1bb, arcsource, depth) {
@@ -552,7 +552,7 @@ function function_724e8f1c(var_26b2b1bb, arcsource, depth) {
     #/
     if (isplayer(self)) {
         if (!(isdefined(self.var_cf18d244) && self.var_cf18d244)) {
-            self function_3653370a(var_26b2b1bb, arcsource);
+            self minigame_start(var_26b2b1bb, arcsource);
         } else {
             self.var_dda9b735.isshocked = 1;
             self thread function_e380fde7(undefined, "gestable_shocked_reaction", level.var_9d47488.tunables.var_1f80b74 + level.var_9d47488.tunables.var_9abfd5cf, 1, 0);
@@ -566,7 +566,7 @@ function function_724e8f1c(var_26b2b1bb, arcsource, depth) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x2cd3d42e, Offset: 0x2608
 // Size: 0xac
 function function_1750438e(effect, weapon, owner) {
@@ -581,7 +581,7 @@ function function_1750438e(effect, weapon, owner) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xb4b664f7, Offset: 0x26c0
 // Size: 0x144
 function cleartarget(target, var_26b2b1bb, seekermine) {
@@ -603,7 +603,7 @@ function cleartarget(target, var_26b2b1bb, seekermine) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x305447a7, Offset: 0x2810
 // Size: 0x3c
 function function_afd97197() {
@@ -612,10 +612,10 @@ function function_afd97197() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf9049f8c, Offset: 0x2858
 // Size: 0x15c
-function function_3653370a(var_26b2b1bb, seekermine) {
+function minigame_start(var_26b2b1bb, seekermine) {
     self notify(#"hash_3319597daca726ad");
     self.var_dda9b735.state = 0;
     self.var_dda9b735.prompt = 0;
@@ -632,7 +632,7 @@ function function_3653370a(var_26b2b1bb, seekermine) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x177dbbc3, Offset: 0x29c0
 // Size: 0x6c
 function function_ef690fef(seekermine, var_26b2b1bb) {
@@ -643,7 +643,7 @@ function function_ef690fef(seekermine, var_26b2b1bb) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x42d1be30, Offset: 0x2a38
 // Size: 0x74
 function function_6c31fc8f(seekermine, var_26b2b1bb) {
@@ -655,7 +655,7 @@ function function_6c31fc8f(seekermine, var_26b2b1bb) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfb1e53b, Offset: 0x2ab8
 // Size: 0x7c
 function function_44cae5c5(time) {
@@ -669,7 +669,7 @@ function function_44cae5c5(time) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xafdec948, Offset: 0x2b40
 // Size: 0x1e2
 function function_dfbbefb8() {
@@ -685,7 +685,7 @@ function function_dfbbefb8() {
         return;
     }
     self thread function_7d2591b();
-    wait level.var_9d47488.tunables.var_170c494e;
+    wait level.var_9d47488.tunables.prompttime;
     self.var_dda9b735.prompt = 2;
     self.var_dda9b735.var_aacd5e7c = gettime();
     wait level.var_9d47488.tunables.var_5ee35075;
@@ -697,12 +697,12 @@ function function_dfbbefb8() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x58291166, Offset: 0x2d30
 // Size: 0xc4
 function function_7d2591b() {
     self endon(#"death", #"seekermine_minigame_complete");
-    waittime = level.var_9d47488.tunables.var_170c494e * 1000;
+    waittime = level.var_9d47488.tunables.prompttime * 1000;
     starttime = gettime();
     do {
         progress = (gettime() - starttime) / waittime;
@@ -712,7 +712,7 @@ function function_7d2591b() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x707ed74b, Offset: 0x2e00
 // Size: 0x3e
 function function_6c023d11() {
@@ -724,7 +724,7 @@ function function_6c023d11() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd4114d6f, Offset: 0x2e48
 // Size: 0x266
 function function_e56220fe() {
@@ -765,7 +765,7 @@ function function_e56220fe() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8c25d616, Offset: 0x30b8
 // Size: 0x51c
 function function_f6f0c876(var_26b2b1bb, seekermine) {
@@ -800,12 +800,12 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
         islooping = 0;
         self playsoundtoplayer(#"uin_seeker_qte_success", self);
         self battlechatter::function_72b65730();
-        function_1750438e(level.var_9d47488.tunables.var_df3ed3fd, seekermine.arcweapon, seekermine.owner);
+        function_1750438e(level.var_9d47488.tunables.sesuccess, seekermine.arcweapon, seekermine.owner);
         animdelay = level.var_9d47488.tunables.var_a06eff0b;
         println("<dev string:x59>");
         break;
     case 2:
-        waitduration = level.var_9d47488.tunables.var_c0c99398;
+        waitduration = level.var_9d47488.tunables.failedtime;
         self playsoundtoplayer(#"uin_seeker_qte_fail", self);
         self battlechatter::pain_vox("MOD_ELECTROCUTED", self.arcweapon);
         function_1750438e(level.var_9d47488.tunables.var_292fba11, seekermine.arcweapon, seekermine.owner);
@@ -827,7 +827,7 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x9abd7288, Offset: 0x35e0
 // Size: 0xcc
 function function_24d08109(seekermine, waitduration, var_26b2b1bb, state) {
@@ -844,7 +844,7 @@ function function_24d08109(seekermine, waitduration, var_26b2b1bb, state) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb863661b, Offset: 0x36b8
 // Size: 0x5c
 function function_b6ee86e3(seekermine, var_26b2b1bb) {
@@ -853,7 +853,7 @@ function function_b6ee86e3(seekermine, var_26b2b1bb) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xba0ee68a, Offset: 0x3720
 // Size: 0x2e2
 function function_e380fde7(var_84a7f98e, gesturetable, waitduration, islooping, animdelay) {

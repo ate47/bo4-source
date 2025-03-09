@@ -5,6 +5,6 @@
     "name": "medal_rcxd_kill",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#ui_icon_medal_kaboom",
-    "stringref": "#hash_33d2d7c6acc9f23f",
+    "stringref": "#medal/rcxd_kill",
     "iconlarge": "#ui_icon_medal_kaboom_large"
 }

@@ -1,0 +1,144 @@
+{
+    "objects": [
+        {
+            "mainanim": "#hash_66bdd52749e03dad",
+            "model": "#hash_576a80d2cd959d92",
+            "type": "prop",
+            "vmtype": "server",
+            "name": "vent_roof_slow",
+            "spawnoninit": 1,
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "p7_fxanim_gp_vent_roof_slow_bundle",
+    "nextscenemode": "init"
+}

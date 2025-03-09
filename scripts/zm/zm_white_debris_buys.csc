@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_white_debris_buys/zm_white_debris_buys
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xece4c4da, Offset: 0xf0
 // Size: 0x5c
 function init() {
@@ -20,7 +20,7 @@ function init() {
 }
 
 // Namespace zm_white_debris_buys/zm_white_debris_buys
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdb24d0ea, Offset: 0x158
 // Size: 0x126
 function function_32f95e3f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

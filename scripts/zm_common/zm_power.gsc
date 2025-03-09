@@ -27,7 +27,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_power/zm_power
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa945dfe0, Offset: 0x260
 // Size: 0x1e
 function __init__() {
@@ -36,7 +36,7 @@ function __init__() {
 }
 
 // Namespace zm_power/zm_power
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x938f0128, Offset: 0x288
 // Size: 0x44
 function __main__() {
@@ -69,7 +69,7 @@ function __main__() {
 #/
 
 // Namespace zm_power/zm_power
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x21db757b, Offset: 0x3d0
 // Size: 0x84
 function electric_switch_init() {
@@ -82,7 +82,7 @@ function electric_switch_init() {
 }
 
 // Namespace zm_power/zm_power
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8015001c, Offset: 0x460
 // Size: 0x810
 function electric_switch() {
@@ -205,7 +205,7 @@ function electric_switch() {
 }
 
 // Namespace zm_power/zm_power
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x870d4386, Offset: 0xc78
 // Size: 0xc4
 function elec_switch_on(master_switch, fx_pos) {
@@ -219,7 +219,7 @@ function elec_switch_on(master_switch, fx_pos) {
 }
 
 // Namespace zm_power/zm_power
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf94a7eec, Offset: 0xd48
 // Size: 0x44
 function elec_switch_off(master_switch) {
@@ -228,7 +228,7 @@ function elec_switch_off(master_switch) {
 }
 
 // Namespace zm_power/zm_power
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x99da707f, Offset: 0xd98
 // Size: 0x74
 function function_9d9892d2(master_switch) {
@@ -241,7 +241,7 @@ function function_9d9892d2(master_switch) {
 }
 
 // Namespace zm_power/zm_power
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xeac5b61c, Offset: 0xe18
 // Size: 0x48
 function artifact_mind_on(master_switch, fx_pos, user) {
@@ -249,7 +249,7 @@ function artifact_mind_on(master_switch, fx_pos, user) {
 }
 
 // Namespace zm_power/zm_power
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdfbc211d, Offset: 0xe68
 // Size: 0x80
 function watch_global_power() {
@@ -262,7 +262,7 @@ function watch_global_power() {
 }
 
 // Namespace zm_power/zm_power
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2442ffbe, Offset: 0xef0
 // Size: 0x374
 function standard_powered_items() {
@@ -295,7 +295,7 @@ function standard_powered_items() {
 }
 
 // Namespace zm_power/zm_power
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xacf6f1a7, Offset: 0x1270
 // Size: 0x90
 function zone_controlled_perk(zone) {
@@ -309,7 +309,7 @@ function zone_controlled_perk(zone) {
 }
 
 // Namespace zm_power/zm_power
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x443a899c, Offset: 0x1308
 // Size: 0x112
 function add_powered_item(power_on_func, power_off_func, range_func, cost_func, power_sources, self_powered, target) {
@@ -329,7 +329,7 @@ function add_powered_item(power_on_func, power_off_func, range_func, cost_func, 
 }
 
 // Namespace zm_power/zm_power
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd78e0434, Offset: 0x1428
 // Size: 0x2c
 function remove_powered_item(powered) {
@@ -358,7 +358,7 @@ function add_temp_powered_item(power_on_func, power_off_func, range_func, cost_f
 }
 
 // Namespace zm_power/zm_power
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x897eed5, Offset: 0x1608
 // Size: 0x118
 function watch_temp_powered_item(powered) {
@@ -377,7 +377,7 @@ function watch_temp_powered_item(powered) {
 }
 
 // Namespace zm_power/zm_power
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x8c8dfa0c, Offset: 0x1728
 // Size: 0xe4
 function change_power_in_radius(delta, origin, radius) {
@@ -393,7 +393,7 @@ function change_power_in_radius(delta, origin, radius) {
 }
 
 // Namespace zm_power/zm_power
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xed919a77, Offset: 0x1818
 // Size: 0xa8
 function change_power(delta, origin, radius) {
@@ -415,7 +415,7 @@ function change_power(delta, origin, radius) {
 }
 
 // Namespace zm_power/zm_power
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x3947d501, Offset: 0x18c8
 // Size: 0x7e
 function revert_power_to_list(delta, origin, radius, powered_list) {
@@ -426,7 +426,7 @@ function revert_power_to_list(delta, origin, radius, powered_list) {
 }
 
 // Namespace zm_power/zm_power
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xe1f5b681, Offset: 0x1950
 // Size: 0x130
 function revert_power(delta, origin, radius, powered_list) {
@@ -523,7 +523,7 @@ function has_local_power(origin) {
 }
 
 // Namespace zm_power/zm_power
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x593c7543, Offset: 0x1f18
 // Size: 0xa4
 function get_powered_item_cost() {
@@ -561,7 +561,7 @@ function get_local_power_cost(localpower) {
 }
 
 // Namespace zm_power/zm_power
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x81e59605, Offset: 0x2128
 // Size: 0xfe
 function set_global_power(on_off) {
@@ -578,7 +578,7 @@ function set_global_power(on_off) {
 }
 
 // Namespace zm_power/zm_power
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xacecf3e6, Offset: 0x2230
 // Size: 0xfc
 function global_power(on_off) {
@@ -630,7 +630,7 @@ function cost_negligible() {
 }
 
 // Namespace zm_power/zm_power
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3c34940, Offset: 0x23b8
 // Size: 0x72
 function cost_low_if_local() {
@@ -659,7 +659,7 @@ function cost_high() {
 }
 
 // Namespace zm_power/zm_power
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x7927b78d, Offset: 0x2478
 // Size: 0x60
 function door_range(delta, origin, radius) {
@@ -673,7 +673,7 @@ function door_range(delta, origin, radius) {
 }
 
 // Namespace zm_power/zm_power
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x55cd01ff, Offset: 0x24e0
 // Size: 0x5c
 function door_power_on(origin, radius) {
@@ -683,7 +683,7 @@ function door_power_on(origin, radius) {
 }
 
 // Namespace zm_power/zm_power
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9378a182, Offset: 0x2548
 // Size: 0x5e
 function door_power_off(origin, radius) {
@@ -693,7 +693,7 @@ function door_power_off(origin, radius) {
 }
 
 // Namespace zm_power/zm_power
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9d625eab, Offset: 0x25b0
 // Size: 0x5c
 function door_local_power_on(origin, radius) {
@@ -703,7 +703,7 @@ function door_local_power_on(origin, radius) {
 }
 
 // Namespace zm_power/zm_power
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8217f5aa, Offset: 0x2618
 // Size: 0x5e
 function door_local_power_off(origin, radius) {
@@ -713,7 +713,7 @@ function door_local_power_off(origin, radius) {
 }
 
 // Namespace zm_power/zm_power
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x15d6c7ec, Offset: 0x2680
 // Size: 0x92
 function cost_door() {
@@ -761,7 +761,7 @@ function zombie_power_off(origin, radius) {
 }
 
 // Namespace zm_power/zm_power
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6521147e, Offset: 0x2838
 // Size: 0xa2
 function stun_zombie() {
@@ -783,7 +783,7 @@ function stun_zombie() {
 }
 
 // Namespace zm_power/zm_power
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xb56a24c6, Offset: 0x28e8
 // Size: 0xf0
 function perk_range(delta, origin, radius) {
@@ -802,7 +802,7 @@ function perk_range(delta, origin, radius) {
 }
 
 // Namespace zm_power/zm_power
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x57a7f3b6, Offset: 0x29e0
 // Size: 0x9c
 function perk_power_on(origin, radius) {
@@ -812,7 +812,7 @@ function perk_power_on(origin, radius) {
 }
 
 // Namespace zm_power/zm_power
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6d07343, Offset: 0x2a88
 // Size: 0x17a
 function perk_power_off(origin, radius) {
@@ -833,7 +833,7 @@ function perk_power_off(origin, radius) {
 }
 
 // Namespace zm_power/zm_power
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x46cbce4e, Offset: 0x2c10
 // Size: 0x34c
 function turn_power_on_and_open_doors(power_zone) {
@@ -874,7 +874,7 @@ function turn_power_on_and_open_doors(power_zone) {
 }
 
 // Namespace zm_power/zm_power
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcc60e11a, Offset: 0x2f68
 // Size: 0x2ec
 function turn_power_off_and_close_doors(power_zone) {

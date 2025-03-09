@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace art/art
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xacaea37, Offset: 0xd0
 // Size: 0x156
 function __init__() {
@@ -50,7 +50,7 @@ function __init__() {
 #/
 
 // Namespace art/art
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbbb012fa, Offset: 0x280
 // Size: 0xc8
 function strtok_loc(string, par1) {

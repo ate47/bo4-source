@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_ai_werewolf/zm_ai_werewolf
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6d76280e, Offset: 0x288
 // Size: 0x184
 function __init__() {
@@ -30,7 +30,7 @@ function __init__() {
 }
 
 // Namespace zm_ai_werewolf/zm_ai_werewolf
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x505d6a89, Offset: 0x418
 // Size: 0xbc
 function function_d45ef8ea(localclientnum) {
@@ -42,7 +42,7 @@ function function_d45ef8ea(localclientnum) {
 }
 
 // Namespace zm_ai_werewolf/zm_ai_werewolf
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x720d7403, Offset: 0x4e0
 // Size: 0x74
 function on_entity_shutdown(localclientnum) {
@@ -56,7 +56,7 @@ function on_entity_shutdown(localclientnum) {
 }
 
 // Namespace zm_ai_werewolf/zm_ai_werewolf
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x70df5fd2, Offset: 0x560
 // Size: 0x5c
 function function_c65ce64a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -66,7 +66,7 @@ function function_c65ce64a(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_ai_werewolf/zm_ai_werewolf
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6dc30090, Offset: 0x5c8
 // Size: 0x64
 function function_815cc85c(localclientnum) {
@@ -76,7 +76,7 @@ function function_815cc85c(localclientnum) {
 }
 
 // Namespace zm_ai_werewolf/zm_ai_werewolf
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfa479459, Offset: 0x638
 // Size: 0xa4
 function function_3f3f0d8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -90,7 +90,7 @@ function function_3f3f0d8(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_ai_werewolf/zm_ai_werewolf
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x48b728de, Offset: 0x6e8
 // Size: 0x6c
 function private function_39053880(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -100,7 +100,7 @@ function private function_39053880(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_werewolf/zm_ai_werewolf
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x9f838f74, Offset: 0x760
 // Size: 0x194
 function private function_f4b140ab(localclientnum, pos, surface, notetrack, bone) {
@@ -125,7 +125,7 @@ function private function_f4b140ab(localclientnum, pos, surface, notetrack, bone
 }
 
 // Namespace zm_ai_werewolf/zm_ai_werewolf
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xb0900fb4, Offset: 0x900
 // Size: 0x174
 function private function_e980911c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

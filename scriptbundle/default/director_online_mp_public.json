@@ -9,16 +9,16 @@
     "lobbytype": 1,
     "menumusic": "lobby_mp",
     "room": "lobby_pose",
-    "var_7f60c82f": 10,
+    "hash_7f60c82f": 10,
     "kicker": "#hash_69818a6a90daf973",
     "isadvertised": 1,
     "maxclients": 10,
     "name": "director_online_mp_public",
     "networkmode": 2,
     "errtarget": "director_online_mp_pregame",
-    "var_ec76767d": 3,
+    "hash_ec76767d": 3,
     "title": "#menu/multiplayer",
     "isgame": 1,
     "maxlocalclients": 2,
-    "var_38c7a0d1": "showdirectorpublic"
+    "hash_38c7a0d1": "showdirectorpublic"
 }

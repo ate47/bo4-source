@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace riotshield/riotshield
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6617e761, Offset: 0xc0
 // Size: 0x14
 function __init__() {

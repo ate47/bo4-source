@@ -35,7 +35,7 @@ function autoexec main() {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x4be8a720, Offset: 0x358
 // Size: 0xa4
 function private registerbehaviorscriptfunctions() {
@@ -46,7 +46,7 @@ function private registerbehaviorscriptfunctions() {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xb22e7f1a, Offset: 0x408
 // Size: 0x19c
 function private function_4c731a08() {
@@ -67,7 +67,7 @@ function private function_4c731a08() {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x11cd8a05, Offset: 0x5b0
 // Size: 0x6e
 function private function_deb99302() {
@@ -80,7 +80,7 @@ function private function_deb99302() {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0xecbcf4ae, Offset: 0x628
 // Size: 0x7a
 function private function_767db9a1(attacker, weapon, boneindex, hitloc, point) {
@@ -90,7 +90,7 @@ function private function_767db9a1(attacker, weapon, boneindex, hitloc, point) {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1fc87a64, Offset: 0x6b0
 // Size: 0x32
 function function_ad0f2b39(aoe) {
@@ -100,7 +100,7 @@ function function_ad0f2b39(aoe) {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xc1c7236d, Offset: 0x6f0
 // Size: 0x1a6
 function private function_848ff0cc(elephant, rider) {
@@ -126,7 +126,7 @@ function private function_848ff0cc(elephant, rider) {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xf0a40cb8, Offset: 0x8a0
 // Size: 0x9a
 function private function_9b64dc73(enemies, entity) {
@@ -137,7 +137,7 @@ function private function_9b64dc73(enemies, entity) {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2cada206, Offset: 0x948
 // Size: 0x34
 function private function_502d9d0d(entity, projectile) {
@@ -145,7 +145,7 @@ function private function_502d9d0d(entity, projectile) {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x80f724d1, Offset: 0x988
 // Size: 0x4
 function private function_dae74ff5() {
@@ -153,7 +153,7 @@ function private function_dae74ff5() {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xfbfd9cf9, Offset: 0x998
 // Size: 0x4e
 function private function_e41280fd() {
@@ -164,7 +164,7 @@ function private function_e41280fd() {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x2e06b869, Offset: 0x9f0
 // Size: 0x52
 function private function_882f233() {
@@ -175,7 +175,7 @@ function private function_882f233() {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x25df1028, Offset: 0xa50
 // Size: 0x26e
 function private function_aef0aaa4() {
@@ -224,7 +224,7 @@ function function_7b10e526(index, multival, target) {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xf573475b, Offset: 0xe80
 // Size: 0x2c4
 function private function_d13a21cb(entity, projectile) {
@@ -259,7 +259,7 @@ function private function_d13a21cb(entity, projectile) {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xe06ad053, Offset: 0x1150
 // Size: 0x33c
 function private function_7d162bd0(projectile, var_e15d8b1f, var_c3f91959) {
@@ -298,7 +298,7 @@ function private function_7d162bd0(projectile, var_e15d8b1f, var_c3f91959) {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x3357d78, Offset: 0x1498
 // Size: 0xa0
 function private function_5ae551a6(enemy, projectile) {
@@ -318,7 +318,7 @@ function private function_5ae551a6(enemy, projectile) {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x6be63d9c, Offset: 0x1540
 // Size: 0x56
 function private function_61d12301(projectile) {
@@ -328,7 +328,7 @@ function private function_61d12301(projectile) {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf66ddf5f, Offset: 0x15a0
 // Size: 0x38
 function private watch_for_death(projectile) {
@@ -338,7 +338,7 @@ function private watch_for_death(projectile) {
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0xf1ce7708, Offset: 0x15e0
 // Size: 0x528
 function function_6b086058(inflictor, attacker, damage, idflags, meansofdeath, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {

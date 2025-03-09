@@ -4,7 +4,7 @@
 #namespace botinterface;
 
 // Namespace botinterface/bot_interface
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x66209cc, Offset: 0x98
 // Size: 0x2ec
 function registerbotinterfaceattributes() {

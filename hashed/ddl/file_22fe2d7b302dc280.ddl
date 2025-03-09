@@ -115,7 +115,7 @@ version 10 {
     // offset 0xcd8, size 0x20
     int totalshots;
     // offset 0xcf8, size 0x20
-    int hash_5e8a9a502b3f3df8;
+    int meleekills;
     // offset 0xd18, size 0x20
     float hash_491587fc34c54122;
     // offset 0xd38, size 0x20

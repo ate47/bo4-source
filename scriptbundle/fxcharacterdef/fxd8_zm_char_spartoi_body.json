@@ -2,10 +2,10 @@
     "effectcount": 2,
     "configstringfiletype": "scriptbundle",
     "type": "fxcharacterdef",
-    "var_70f592cb": "#hash_6675a54c73addf25",
+    "hash_70f592cb": "#hash_6675a54c73addf25",
     "vmtype": "client",
     "name": "fxd8_zm_char_spartoi_body",
-    "var_a0d91763": "j_spine4",
-    "var_c7a3c7dd": "#hash_70c604c24563ff7a",
-    "var_edb57500": "j_head"
+    "hash_a0d91763": "j_spine4",
+    "hash_c7a3c7dd": "#hash_70c604c24563ff7a",
+    "hash_edb57500": "j_head"
 }

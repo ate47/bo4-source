@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace status_effect_wound/status_effect_wound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcae4a069, Offset: 0xf0
 // Size: 0x6c
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace status_effect_wound/status_effect_wound
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x87d0259f, Offset: 0x168
 // Size: 0x204
 function wound_apply(var_756fda07, weapon, applicant) {
@@ -55,7 +55,7 @@ function wound_apply(var_756fda07, weapon, applicant) {
 }
 
 // Namespace status_effect_wound/status_effect_wound
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4f94b176, Offset: 0x378
 // Size: 0xca
 function function_a54d41f7(starttime) {
@@ -71,7 +71,7 @@ function function_a54d41f7(starttime) {
 }
 
 // Namespace status_effect_wound/status_effect_wound
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x42cf9e4e, Offset: 0x450
 // Size: 0xf0
 function private function_f6fec56f() {
@@ -89,7 +89,7 @@ function private function_f6fec56f() {
 }
 
 // Namespace status_effect_wound/status_effect_wound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x167aa7bd, Offset: 0x548
 // Size: 0x24
 function wound_end() {

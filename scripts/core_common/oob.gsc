@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace oob/oob
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x548e3867, Offset: 0x208
 // Size: 0x564
 function __init__() {
@@ -77,7 +77,7 @@ function __init__() {
 #/
 
 // Namespace oob/oob
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1eb70a73, Offset: 0x7c0
 // Size: 0xbc
 function run_oob_trigger() {
@@ -93,7 +93,7 @@ function run_oob_trigger() {
 }
 
 // Namespace oob/oob
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5db4318f, Offset: 0x888
 // Size: 0x20
 function isoutofbounds() {
@@ -104,7 +104,7 @@ function isoutofbounds() {
 }
 
 // Namespace oob/oob
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x905c4d42, Offset: 0x8b0
 // Size: 0x1f4
 function istouchinganyoobtrigger() {
@@ -133,7 +133,7 @@ function istouchinganyoobtrigger() {
 }
 
 // Namespace oob/oob
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc654ef7e, Offset: 0xab0
 // Size: 0xd2
 function chr_party(point) {
@@ -150,7 +150,7 @@ function chr_party(point) {
 }
 
 // Namespace oob/oob
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2ca0683b, Offset: 0xb90
 // Size: 0xe6
 function resetoobtimer(is_host_migrating, b_disable_timekeep) {
@@ -173,7 +173,7 @@ function resetoobtimer(is_host_migrating, b_disable_timekeep) {
 }
 
 // Namespace oob/oob
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe97c9157, Offset: 0xc80
 // Size: 0xcc
 function waitforclonetouch() {
@@ -199,7 +199,7 @@ function getadjusedplayer(player) {
 }
 
 // Namespace oob/oob
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1d891c1d, Offset: 0xda8
 // Size: 0x1c2
 function waitforplayertouch() {
@@ -236,7 +236,7 @@ function waitforplayertouch() {
 }
 
 // Namespace oob/oob
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe4b32947, Offset: 0xf78
 // Size: 0x1c4
 function enter_oob(entity) {
@@ -259,7 +259,7 @@ function enter_oob(entity) {
 }
 
 // Namespace oob/oob
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcebb6651, Offset: 0x1148
 // Size: 0xe8
 function function_c5278cb0(vehicle) {
@@ -280,7 +280,7 @@ function function_c5278cb0(vehicle) {
 }
 
 // Namespace oob/oob
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3bbe4319, Offset: 0x1238
 // Size: 0x8a
 function function_65b20() {
@@ -297,7 +297,7 @@ function function_65b20() {
 }
 
 // Namespace oob/oob
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x838c722c, Offset: 0x12d0
 // Size: 0xd8
 function getdistancefromlastvalidplayerloc(entity) {
@@ -317,7 +317,7 @@ function getdistancefromlastvalidplayerloc(entity) {
 }
 
 // Namespace oob/oob
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd1426056, Offset: 0x13b0
 // Size: 0x264
 function updatevisualeffects(entity) {
@@ -357,7 +357,7 @@ function updatevisualeffects(entity) {
 }
 
 // Namespace oob/oob
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x23f05d42, Offset: 0x1620
 // Size: 0x274
 function killentity(entity) {
@@ -385,7 +385,7 @@ function killentity(entity) {
 }
 
 // Namespace oob/oob
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xab6cd90a, Offset: 0x18a0
 // Size: 0x210
 function watchforleave(entity) {
@@ -419,7 +419,7 @@ function watchforleave(entity) {
 }
 
 // Namespace oob/oob
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x37f29fed, Offset: 0x1ab8
 // Size: 0x74
 function watchfordeath(entity) {
@@ -429,7 +429,7 @@ function watchfordeath(entity) {
 }
 
 // Namespace oob/oob
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc1f09c11, Offset: 0x1b38
 // Size: 0x54
 function watchforhostmigration(entity) {
@@ -439,7 +439,7 @@ function watchforhostmigration(entity) {
 }
 
 // Namespace oob/oob
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x77d5b80, Offset: 0x1b98
 // Size: 0x4a
 function private disableplayeroob(disabled) {

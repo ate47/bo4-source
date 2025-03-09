@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_disable_regen/zm_trial_disable_regen
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe7f40035, Offset: 0x108
 // Size: 0x5c
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_disable_regen/zm_trial_disable_regen
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x1678fc6d, Offset: 0x170
 // Size: 0x90
 function private on_begin() {
@@ -37,7 +37,7 @@ function private on_begin() {
 }
 
 // Namespace zm_trial_disable_regen/zm_trial_disable_regen
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc1ddd899, Offset: 0x208
 // Size: 0x98
 function private on_end(round_reset) {

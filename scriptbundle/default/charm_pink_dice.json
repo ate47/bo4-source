@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_pink_dice",
-    "var_ff3063df": "attach_t8_charm_pink_dice_view",
+    "hash_ff3063df": "attach_t8_charm_pink_dice_view",
     "image": "ui_icon_weapon_charms_pink_dice",
     "name": "charm_pink_dice",
     "displayname": "#hash_1aa567b647b8e14",
     "icon": "ui_icon_weapon_charms_pink_dice",
-    "var_ef5ad2b3": "attach_t8_charm_pink_dice_view",
+    "hash_ef5ad2b3": "attach_t8_charm_pink_dice_view",
     "previewimage": "#ui_icon_weapon_charms_pink_dice"
 }

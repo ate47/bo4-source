@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_office_debris_buys/zm_office_debris_buys
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa5d7faa8, Offset: 0x108
 // Size: 0x5c
 function init() {
@@ -22,7 +22,7 @@ function init() {
 }
 
 // Namespace zm_office_debris_buys/zm_office_debris_buys
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x229d5408, Offset: 0x170
 // Size: 0xa0
 function function_ffef72a() {
@@ -33,7 +33,7 @@ function function_ffef72a() {
 }
 
 // Namespace zm_office_debris_buys/zm_office_debris_buys
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8216e49d, Offset: 0x218
 // Size: 0x288
 function function_31a1d10f() {

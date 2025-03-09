@@ -42,7 +42,10 @@ version 8 {
         uint64 lobby_id;
     };
 
-<error reading members entry for hash_704bf204d8d5f4dd>
+    // idx 4 members 0 size 0x0
+    struct hash_704bf204d8d5f4dd {
+    };
+
     // idx 0 members 5
     enum hash_54196e9e9860f0be {
         pc, // 0x0,

@@ -8,8 +8,8 @@
     "name": "random_objective_locations",
     "displayname": "#hash_766bba2ccc0f4317",
     "label1": "#menu/linear",
-    "var_71b6e020": "#menu/random",
+    "label3": "#menu/random",
     "label2": "#hash_1396b0c702a81da0",
-    "var_9de86f42": 3,
+    "optionscount": 3,
     "setting": "randomObjectiveLocations"
 }

@@ -4,7 +4,7 @@
 #namespace namespace_a01a2431;
 
 // Namespace namespace_a01a2431/namespace_a01a2431
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5a3cb8f7, Offset: 0xc8
 // Size: 0x204
 function preload() {

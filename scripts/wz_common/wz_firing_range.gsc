@@ -100,10 +100,10 @@ function private event_handler[event_cf200f34] function_209450ae(eventstruct) {
     if (isstruct(bundle) && isarray(bundle.dynentstates)) {
         var_daedea1b = bundle.dynentstates[dynent.hitindex];
         if (isdefined(var_daedea1b.stateanim)) {
-            function_e2a06860(dynent, dynent.hitindex);
+            setdynentstate(dynent, dynent.hitindex);
             animlength = getanimlength(var_daedea1b.stateanim);
             wait animlength;
-            function_e2a06860(dynent, 0);
+            setdynentstate(dynent, 0);
             dynent.hitindex = 1 + dynent.hitindex % 2;
         }
     }

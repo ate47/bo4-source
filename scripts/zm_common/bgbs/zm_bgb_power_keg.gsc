@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_power_keg/zm_bgb_power_keg
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa3548bc8, Offset: 0xe8
 // Size: 0x74
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_power_keg/zm_bgb_power_keg
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7fbca705, Offset: 0x168
 // Size: 0x24
 function activation() {
@@ -31,7 +31,7 @@ function activation() {
 }
 
 // Namespace zm_bgb_power_keg/zm_bgb_power_keg
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf8b6bf29, Offset: 0x198
 // Size: 0x1a
 function validation() {

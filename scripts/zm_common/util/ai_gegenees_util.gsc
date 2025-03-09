@@ -28,7 +28,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x32be42c2, Offset: 0x238
 // Size: 0x1b4
 function __init__() {
@@ -45,7 +45,7 @@ function __init__() {
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa93db46, Offset: 0x3f8
 // Size: 0x4c
 function __main__() {
@@ -53,7 +53,7 @@ function __main__() {
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xa6d94c4, Offset: 0x450
 // Size: 0xde
 function private function_b656013e() {
@@ -64,13 +64,13 @@ function private function_b656013e() {
         waitframe(1);
     }
     level flag::wait_till(#"pap_quest_completed");
-    bundle.var_628192b0 = 0.5;
-    bundle.var_fc420d71 = 0.4;
+    bundle.weakpointdamagescale = 0.5;
+    bundle.instakilldamagescale = 0.4;
     bundle.var_97b22faa = 0.75;
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3d1f1be9, Offset: 0x538
 // Size: 0x10e
 function function_ea46ca6f() {
@@ -87,7 +87,7 @@ function function_ea46ca6f() {
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x10040d60, Offset: 0x650
 // Size: 0xa4
 function gegenees_init() {
@@ -99,7 +99,7 @@ function gegenees_init() {
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x84f53a00, Offset: 0x700
 // Size: 0x2a8
 function function_7640eac2() {
@@ -142,7 +142,7 @@ function function_7640eac2() {
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x992ce860, Offset: 0x9b0
 // Size: 0x244
 function function_9a9b5f49(spot) {
@@ -174,7 +174,7 @@ function function_9a9b5f49(spot) {
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
-// Params 10, eflags: 0x5 linked
+// Params 10, eflags: 0x4
 // Checksum 0x5da9b680, Offset: 0xc00
 // Size: 0x130
 function private function_7e791d5d(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime) {
@@ -191,7 +191,7 @@ function private function_7e791d5d(einflictor, eattacker, idamage, idflags, smea
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x558ce1e4, Offset: 0xd38
 // Size: 0x292
 function function_7107da88(var_dbce0c44) {
@@ -233,7 +233,7 @@ function function_7107da88(var_dbce0c44) {
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x96de9a1, Offset: 0xfd8
 // Size: 0x3c
 function round_spawn() {
@@ -246,7 +246,7 @@ function round_spawn() {
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x7bfa1897, Offset: 0x1020
 // Size: 0x280
 function spawn_single(b_force_spawn = 0, var_eb3a8721, var_bc66d64b) {
@@ -285,7 +285,7 @@ function spawn_single(b_force_spawn = 0, var_eb3a8721, var_bc66d64b) {
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd0824853, Offset: 0x12a8
 // Size: 0xbc
 function function_48c60fc2() {
@@ -298,7 +298,7 @@ function function_48c60fc2() {
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa1f44add, Offset: 0x1370
 // Size: 0xaa
 function function_5685dac6() {
@@ -316,7 +316,7 @@ function function_5685dac6() {
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb2e2199d, Offset: 0x1428
 // Size: 0xdc
 function function_13080a96() {
@@ -334,7 +334,7 @@ function function_13080a96() {
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xc11a6c3e, Offset: 0x1510
 // Size: 0x90
 function function_2ce6dcd4(spawner, s_spot, var_bc66d64b) {
@@ -347,7 +347,7 @@ function function_2ce6dcd4(spawner, s_spot, var_bc66d64b) {
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x46e6d4c6, Offset: 0x15a8
 // Size: 0x1b2
 function function_c1a0ea97(n_round_number) {

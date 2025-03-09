@@ -7,7 +7,7 @@
     "consumable": 1,
     "name": "armor_shard_item",
     "displayname": "#hash_6911b319f54dc1ed",
-    "var_36781d9f": "fly_drop_armor_repair_plate",
+    "dropsound": "fly_drop_armor_repair_plate",
     "stackcount": 5,
     "icon": "#ui_icon_inventory_armor_scrap",
     "casttime": 3,

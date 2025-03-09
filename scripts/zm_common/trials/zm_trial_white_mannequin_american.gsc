@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_white_mannequin_american/zm_trial_white_mannequin_american
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdbddc67c, Offset: 0x160
 // Size: 0x54
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_white_mannequin_american/zm_trial_white_mannequin_american
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xa6055d74, Offset: 0x1c0
 // Size: 0x228
 function private on_begin() {
@@ -56,7 +56,7 @@ function private on_begin() {
 }
 
 // Namespace zm_trial_white_mannequin_american/zm_trial_white_mannequin_american
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x20356e11, Offset: 0x3f0
 // Size: 0x13c
 function private on_end(round_reset) {
@@ -73,7 +73,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_white_mannequin_american/zm_trial_white_mannequin_american
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0xb480260, Offset: 0x538
 // Size: 0x66
 function function_26edbcdc(inflictor, attacker, damage, flags, meansofdeath, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
@@ -81,7 +81,7 @@ function function_26edbcdc(inflictor, attacker, damage, flags, meansofdeath, wea
 }
 
 // Namespace zm_trial_white_mannequin_american/zm_trial_white_mannequin_american
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xa7c8ce21, Offset: 0x5a8
 // Size: 0x10e
 function private function_545d53bf() {
@@ -106,7 +106,7 @@ function private function_545d53bf() {
 }
 
 // Namespace zm_trial_white_mannequin_american/zm_trial_white_mannequin_american
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x705ef076, Offset: 0x6c0
 // Size: 0x124
 function private function_33f0ddd3(s_event) {
@@ -126,7 +126,7 @@ function private function_33f0ddd3(s_event) {
 }
 
 // Namespace zm_trial_white_mannequin_american/zm_trial_white_mannequin_american
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb0b27d54, Offset: 0x7f0
 // Size: 0x14c
 function function_7532e17c(ai_mannequin) {

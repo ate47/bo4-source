@@ -123,7 +123,7 @@
     "name": "ai_vign_zm_mob_pod",
     "dontsync": 1,
     "disablesceneskipping": 1,
-    "var_241c5f3c": 1,
+    "hash_241c5f3c": 1,
     "aligntarget": "tag_align_escape_lab",
     "team": "any"
 }

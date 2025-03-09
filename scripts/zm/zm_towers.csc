@@ -213,7 +213,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa6a114e8, Offset: 0x3768
 // Size: 0x54
 function function_5b893414(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -221,22 +221,22 @@ function function_5b893414(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x73de6f41, Offset: 0x37c8
 // Size: 0xd4
 function function_26c4a8d5() {
     self notify("273a0aad6f4ce331");
     self endon("273a0aad6f4ce331");
-    level waittill(#"hash_2a33c8604d0de6ea");
+    level waittill(#"start_pstfx_slowed");
     a_players = getlocalplayers();
     array::thread_all(a_players, &postfx::playpostfxbundle, #"pstfx_slowed");
-    level waittill(#"hash_785fd96b8f6dfcc0");
+    level waittill(#"stop_pstfx_slowed");
     a_players = getlocalplayers();
     array::thread_all(a_players, &postfx::exitpostfxbundle, #"pstfx_slowed");
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x23b776f8, Offset: 0x38a8
 // Size: 0x7c
 function function_ce727843(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -246,7 +246,7 @@ function function_ce727843(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4a0be8b8, Offset: 0x3930
 // Size: 0xbe
 function pickup_dung(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -262,7 +262,7 @@ function pickup_dung(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb8b0fef2, Offset: 0x39f8
 // Size: 0x9c
 function function_8565be53(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -271,7 +271,7 @@ function function_8565be53(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x372dbe7a, Offset: 0x3aa0
 // Size: 0x8c
 function function_35bf68a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -283,7 +283,7 @@ function function_35bf68a(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfac860a7, Offset: 0x3b38
 // Size: 0x8c
 function function_605da720(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -295,7 +295,7 @@ function function_605da720(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x90078555, Offset: 0x3bd0
 // Size: 0x15e
 function function_2312778c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -319,7 +319,7 @@ function function_2312778c(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x70175afe, Offset: 0x3d38
 // Size: 0x8c
 function function_240a3342(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -331,7 +331,7 @@ function function_240a3342(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf8d0cd14, Offset: 0x3dd0
 // Size: 0x8c
 function function_9eb43a48(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -343,7 +343,7 @@ function function_9eb43a48(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x52bd6ab4, Offset: 0x3e68
 // Size: 0x15e
 function fertilizer_smell(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -365,7 +365,7 @@ function fertilizer_smell(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3a07f43e, Offset: 0x3fd0
 // Size: 0x17c
 function function_8fc72b02(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -383,7 +383,7 @@ function function_8fc72b02(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xee6e26c, Offset: 0x4158
 // Size: 0x1ec
 function function_70e21be0(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -410,7 +410,7 @@ function function_70e21be0(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x615680d9, Offset: 0x4350
 // Size: 0x146
 function function_345ea423(localclientnum) {
@@ -431,7 +431,7 @@ function function_345ea423(localclientnum) {
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd58c04bb, Offset: 0x44a0
 // Size: 0x276
 function ra_eyes_beam_fire(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -455,7 +455,7 @@ function ra_eyes_beam_fire(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x942bba7f, Offset: 0x4720
 // Size: 0x276
 function ra_rooftop_eyes_beam_fire(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -479,7 +479,7 @@ function ra_rooftop_eyes_beam_fire(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3068f971, Offset: 0x49a0
 // Size: 0x7c
 function function_339af7bd(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -491,7 +491,7 @@ function function_339af7bd(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x645cca51, Offset: 0x4a28
 // Size: 0x7c
 function function_e131f9b8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -503,7 +503,7 @@ function function_e131f9b8(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x15d59f9c, Offset: 0x4ab0
 // Size: 0x156
 function function_b675c8b2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -526,7 +526,7 @@ function function_b675c8b2(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x676f9bb1, Offset: 0x4c10
 // Size: 0xbe
 function function_9cb4a774(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -541,7 +541,7 @@ function function_9cb4a774(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x24cf9272, Offset: 0x4cd8
 // Size: 0xbe
 function function_eba8a203(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -556,7 +556,7 @@ function function_eba8a203(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xee72911e, Offset: 0x4da0
 // Size: 0xbe
 function function_1467cfe7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -571,7 +571,7 @@ function function_1467cfe7(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdc11b347, Offset: 0x4e68
 // Size: 0xbe
 function toggle_blue_glow(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -586,7 +586,7 @@ function toggle_blue_glow(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8ff53f7f, Offset: 0x4f30
 // Size: 0xbe
 function toggle_chaos_ball(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -616,7 +616,7 @@ function function_fd119bd7(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa770fef7, Offset: 0x50c0
 // Size: 0xbe
 function toggle_sentinel_artifact_mist_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -631,7 +631,7 @@ function toggle_sentinel_artifact_mist_fx(localclientnum, oldval, newval, bnewen
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3b014961, Offset: 0x5188
 // Size: 0x10c
 function function_5eaabec(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -647,14 +647,14 @@ function function_5eaabec(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5a6bd5a5, Offset: 0x52a0
 // Size: 0x2a0
 function crowd_react_boss(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
-        smodelanimcmd("siege_crowds_battle", "unpause", "set_anim", array::random(array(#"hash_5cb3945473641f29", #"hash_503f5811c1c5e5e6", #"hash_1f6ed2b98c8d027b", #"hash_64e6aa218a7720e8", #"hash_4754434927e48765", #"hash_121b33ccb82a7192")));
+        smodelanimcmd("siege_crowds_battle", "unpause", "set_anim", array::random(array(#"grp27_ch_zdlc0_crowd_cheer_grp01_double_row", #"grp27_ch_zdlc0_crowd_cheer_grp02_double_row", #"grp27_ch_zdlc0_crowd_cheer_grp03_double_row", #"grp27_ch_zdlc0_crowd_cheer_grp04_double_row", #"grp27_ch_zdlc0_crowd_cheer_grp05_double_row", #"grp27_ch_zdlc0_crowd_cheer_grp06_double_row")));
     } else {
-        smodelanimcmd("siege_crowds_battle", "unpause", "set_anim", array::random(array(#"hash_6b5a40bc4e870ff3", #"hash_56072b7700ddf344", #"hash_36841dd229ef8ac1", #"hash_592b16ba1f2e74aa", #"hash_23b34e6a58a2c83f", #"hash_5669312379919260")));
+        smodelanimcmd("siege_crowds_battle", "unpause", "set_anim", array::random(array(#"grp27_ch_zdlc0_crowd_calm_grp01_double_row", #"grp27_ch_zdlc0_crowd_calm_grp02_double_row", #"grp27_ch_zdlc0_crowd_calm_grp03_double_row", #"grp27_ch_zdlc0_crowd_calm_grp04_double_row", #"grp27_ch_zdlc0_crowd_calm_grp05_double_row", #"grp27_ch_zdlc0_crowd_calm_grp06_double_row")));
     }
     smodelanimcmd("siege_crowds_battle", "goto_random", "set_playback_speed", randomfloatrange(0.75, 1));
     if (newval) {
@@ -666,7 +666,7 @@ function crowd_react_boss(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa0f6d2e5, Offset: 0x5548
 // Size: 0x440
 function crowd_react(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -753,7 +753,7 @@ function crowd_react(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 }
 
 // Namespace zm_towers/zm_towers
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1d345ccd, Offset: 0x5990
 // Size: 0xfec
 function function_628c5b1f(str_group, var_eafa8a1a, var_55a37c48) {
@@ -761,79 +761,79 @@ function function_628c5b1f(str_group, var_eafa8a1a, var_55a37c48) {
     var_55a37c48 = isdefined(var_55a37c48) ? var_55a37c48 : randomfloatrange(0.75, 1);
     switch (var_eafa8a1a) {
     case #"seated_to_angry":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_5c60a6f5f1a9d64a")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_seatd_to_stand_angry_01_civ_1")), "set_playback_speed", var_55a37c48);
         wait 1.733 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_5596d5887d732c0e", #"hash_5596d4887d732a5b", #"hash_5596d3887d7328a8", #"hash_5596da887d73348d", #"hash_5596d9887d7332da")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_1", #"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_2", #"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_3", #"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_4", #"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_5")), "set_playback_speed", var_55a37c48);
         break;
     case #"seated_to_neutral":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_dec580832649b0")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_seatd_to_stand_neutral_01_civ_1")), "set_playback_speed", var_55a37c48);
         wait 1.733 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_146c97641992ac6c", #"hash_146c9a641992b185", #"hash_146c99641992afd2", #"hash_146c94641992a753")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_01_civ_1", #"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_01_civ_2", #"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_01_civ_3", #"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_01_civ_4")), "set_playback_speed", var_55a37c48);
         break;
     case #"seated_to_cheer":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_1ce343c6e117581e")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_seatd_to_stand_cheer_01_civ_1")), "set_playback_speed", var_55a37c48);
         wait 2.033 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_4da666f21f604782", #"hash_4da665f21f6045cf", #"hash_4da664f21f60441c", #"hash_4da663f21f604269", #"hash_4da662f21f6040b6")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_1", #"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_2", #"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_3", #"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_4", #"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_5")), "set_playback_speed", var_55a37c48);
         break;
     case #"angry_to_seated":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_4d9e626e573c7720")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_angry_to_seatd_01_civ_1")), "set_playback_speed", var_55a37c48);
         wait 3.8333 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_73397fae2c5e2e65", #"hash_73397cae2c5e294c", #"hash_73397dae2c5e2aff", #"hash_73397aae2c5e25e6", #"hash_73397bae2c5e2799", #"hash_733978ae2c5e2280")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_1", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_2", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_3", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_4", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_5", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_6")), "set_playback_speed", var_55a37c48);
         break;
     case #"angry_to_neutral":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_4cff3d99c8e94c1")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_angry_to_stand_neutral_01_civ_1")), "set_playback_speed", var_55a37c48);
         wait 5 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_146c97641992ac6c", #"hash_146c9a641992b185", #"hash_146c99641992afd2", #"hash_146c94641992a753")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_01_civ_1", #"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_01_civ_2", #"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_01_civ_3", #"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_01_civ_4")), "set_playback_speed", var_55a37c48);
         break;
     case #"angry_to_cheer":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_4da666f21f604782", #"hash_4da665f21f6045cf", #"hash_4da664f21f60441c", #"hash_4da663f21f604269", #"hash_4da662f21f6040b6")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_1", #"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_2", #"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_3", #"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_4", #"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_5")), "set_playback_speed", var_55a37c48);
         break;
     case #"neutral_to_seated":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_6938770d4f4e8ff2")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_to_seatd_01_civ_1")), "set_playback_speed", var_55a37c48);
         wait 3.9 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_73397fae2c5e2e65", #"hash_73397cae2c5e294c", #"hash_73397dae2c5e2aff", #"hash_73397aae2c5e25e6", #"hash_73397bae2c5e2799", #"hash_733978ae2c5e2280")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_1", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_2", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_3", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_4", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_5", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_6")), "set_playback_speed", var_55a37c48);
         break;
     case #"neutral_to_angry":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_130c0f8d88ebfed1")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_to_stand_angry_01_civ_1")), "set_playback_speed", var_55a37c48);
         wait 5 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_5596d5887d732c0e", #"hash_5596d4887d732a5b", #"hash_5596d3887d7328a8", #"hash_5596da887d73348d", #"hash_5596d9887d7332da")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_1", #"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_2", #"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_3", #"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_4", #"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_5")), "set_playback_speed", var_55a37c48);
         break;
     case #"neutral_to_cheer":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_6c2063a701bdda05")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_to_stand_cheer_01_civ_1")), "set_playback_speed", var_55a37c48);
         wait 3.333 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_4da666f21f604782", #"hash_4da665f21f6045cf", #"hash_4da664f21f60441c", #"hash_4da663f21f604269", #"hash_4da662f21f6040b6")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_1", #"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_2", #"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_3", #"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_4", #"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_5")), "set_playback_speed", var_55a37c48);
         break;
     case #"cheer_to_seated":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_72e771137a0c1fb4")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_to_seatd_01_civ_1")), "set_playback_speed", var_55a37c48);
         wait 2.7 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_73397fae2c5e2e65", #"hash_73397cae2c5e294c", #"hash_73397dae2c5e2aff", #"hash_73397aae2c5e25e6", #"hash_73397bae2c5e2799", #"hash_733978ae2c5e2280")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_1", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_2", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_3", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_4", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_5", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_6")), "set_playback_speed", var_55a37c48);
         break;
     case #"cheer_to_angry":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_5596d5887d732c0e", #"hash_5596d4887d732a5b", #"hash_5596d3887d7328a8", #"hash_5596da887d73348d", #"hash_5596d9887d7332da")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_1", #"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_2", #"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_3", #"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_4", #"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_5")), "set_playback_speed", var_55a37c48);
         break;
     case #"cheer_to_neutral":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_4573975901365b65")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_to_stand_neutral_01_civ_1")), "set_playback_speed", var_55a37c48);
         wait 5 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_146c97641992ac6c", #"hash_146c9a641992b185", #"hash_146c99641992afd2", #"hash_146c94641992a753")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_01_civ_1", #"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_01_civ_2", #"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_01_civ_3", #"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_01_civ_4")), "set_playback_speed", var_55a37c48);
         break;
     case #"seated":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_73397fae2c5e2e65", #"hash_73397cae2c5e294c", #"hash_73397dae2c5e2aff", #"hash_73397aae2c5e25e6", #"hash_73397bae2c5e2799", #"hash_733978ae2c5e2280")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_1", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_2", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_3", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_4", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_5", #"ch_vign_tplt_prebtl_zm_crowd_seatd_01_civ_6")), "set_playback_speed", var_55a37c48);
         break;
     case #"angry":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_5596d5887d732c0e", #"hash_5596d4887d732a5b", #"hash_5596d3887d7328a8", #"hash_5596da887d73348d", #"hash_5596d9887d7332da")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_1", #"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_2", #"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_3", #"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_4", #"ch_vign_tplt_prebtl_zm_crowd_stand_angry_01_civ_5")), "set_playback_speed", var_55a37c48);
         break;
     case #"neutral":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_146c97641992ac6c", #"hash_146c9a641992b185", #"hash_146c99641992afd2", #"hash_146c94641992a753")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_01_civ_1", #"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_01_civ_2", #"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_01_civ_3", #"ch_vign_tplt_prebtl_zm_crowd_stand_neutral_01_civ_4")), "set_playback_speed", var_55a37c48);
         break;
     case #"cheer":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_4da666f21f604782", #"hash_4da665f21f6045cf", #"hash_4da664f21f60441c", #"hash_4da663f21f604269", #"hash_4da662f21f6040b6")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_1", #"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_2", #"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_3", #"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_4", #"ch_vign_tplt_prebtl_zm_crowd_stand_cheer_01_civ_5")), "set_playback_speed", var_55a37c48);
         break;
     }
     smodelanimcmd(str_group, "goto_random");
 }
 
 // Namespace zm_towers/zm_towers
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x370f30, Offset: 0x6988
 // Size: 0xbca
 function function_1e3bd96a(str_group, var_eafa8a1a, var_55a37c48) {
@@ -841,78 +841,78 @@ function function_1e3bd96a(str_group, var_eafa8a1a, var_55a37c48) {
     var_55a37c48 = isdefined(var_55a37c48) ? var_55a37c48 : randomfloatrange(0.75, 1);
     switch (var_eafa8a1a) {
     case #"seated_to_angry":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_2e2971c6c8f10114")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_seatd_to_stand_angry_1")), "set_playback_speed", var_55a37c48);
         wait 2.7;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_6b167472b1814bb2")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_angry_1")), "set_playback_speed", var_55a37c48);
         break;
     case #"seated_to_neutral":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_12629d4e935c4656")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_seatd_to_stand_neutral_1")), "set_playback_speed", var_55a37c48);
         wait 2.7 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_69dc776360ba1330")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_neutral_1")), "set_playback_speed", var_55a37c48);
         break;
     case #"seated_to_cheer":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_2da56ff9700d9164")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_seatd_to_stand_cheer_1")), "set_playback_speed", var_55a37c48);
         wait 2.7 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_43f1a9a1879ea5d6")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_cheer_1")), "set_playback_speed", var_55a37c48);
         break;
     case #"angry_to_seated":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_6c024bd52bb7e766")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_angry_to_seatd_1")), "set_playback_speed", var_55a37c48);
         wait 5 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_f31fa5dc0acf5f")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_seatd_neutral_1")), "set_playback_speed", var_55a37c48);
         break;
     case #"angry_to_neutral":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_baf5290a3576eed")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_angry_to_stand_neutral_1")), "set_playback_speed", var_55a37c48);
         wait 8.333 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_69dc776360ba1330")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_neutral_1")), "set_playback_speed", var_55a37c48);
         break;
     case #"angry_to_cheer":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_43f1a9a1879ea5d6")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_cheer_1")), "set_playback_speed", var_55a37c48);
         break;
     case #"neutral_to_seated":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_3e5b404caf7e8b58")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_neutral_to_seatd_1")), "set_playback_speed", var_55a37c48);
         wait 5 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_f31fa5dc0acf5f")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_seatd_neutral_1")), "set_playback_speed", var_55a37c48);
         break;
     case #"neutral_to_angry":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_196682111694d8f1")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_neutral_to_stand_angry_1")), "set_playback_speed", var_55a37c48);
         wait 8.333 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_6b167472b1814bb2")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_angry_1")), "set_playback_speed", var_55a37c48);
         break;
     case #"neutral_to_cheer":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_6afc936043f3a9f9")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_neutral_to_stand_cheer_1")), "set_playback_speed", var_55a37c48);
         wait 8.333 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_43f1a9a1879ea5d6")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_cheer_1")), "set_playback_speed", var_55a37c48);
         break;
     case #"cheer_to_seated":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_6f45d5578dd7000a")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_cheer_to_seatd_1")), "set_playback_speed", var_55a37c48);
         wait 5 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_f31fa5dc0acf5f")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_seatd_neutral_1")), "set_playback_speed", var_55a37c48);
         break;
     case #"cheer_to_angry":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_6b167472b1814bb2")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_angry_1")), "set_playback_speed", var_55a37c48);
         break;
     case #"cheer_to_neutral":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_556eddf8af2677b1")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_cheer_to_stand_neutral_1")), "set_playback_speed", var_55a37c48);
         wait 6.666 / var_55a37c48;
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_69dc776360ba1330")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_neutral_1")), "set_playback_speed", var_55a37c48);
         break;
     case #"seated":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_f31fa5dc0acf5f")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_seatd_neutral_1")), "set_playback_speed", var_55a37c48);
         break;
     case #"angry":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_6b167472b1814bb2")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_angry_1")), "set_playback_speed", var_55a37c48);
         break;
     case #"neutral":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_69dc776360ba1330")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_neutral_1")), "set_playback_speed", var_55a37c48);
         break;
     case #"cheer":
-        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_43f1a9a1879ea5d6")), "set_playback_speed", var_55a37c48);
+        smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"grp27_ch_vign_tplt_prebtl_zm_crowd_stand_cheer_1")), "set_playback_speed", var_55a37c48);
         break;
     }
 }
 
 // Namespace zm_towers/zm_towers
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1acd5a6, Offset: 0x7560
 // Size: 0x34
 function function_1bb8e9c4() {
@@ -922,7 +922,7 @@ function function_1bb8e9c4() {
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x59a3ab48, Offset: 0x75a0
 // Size: 0x11e
 function crowd_react_wave(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -937,7 +937,7 @@ function crowd_react_wave(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_towers/zm_towers
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd54391f4, Offset: 0x76c8
 // Size: 0x148
 function _crowd_react_wave() {
@@ -954,7 +954,7 @@ function _crowd_react_wave() {
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe8c100d0, Offset: 0x7818
 // Size: 0x62
 function function_99220e91(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -966,7 +966,7 @@ function function_99220e91(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x45116812, Offset: 0x7888
 // Size: 0x48c
 function snd_crowd_react(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1045,7 +1045,7 @@ function snd_crowd_react(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace zm_towers/zm_towers
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcf71af87, Offset: 0x7d20
 // Size: 0x100
 function function_9ed12c12(localclientnum, str_alias) {
@@ -1059,7 +1059,7 @@ function function_9ed12c12(localclientnum, str_alias) {
 }
 
 // Namespace zm_towers/zm_towers
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1d1c92e4, Offset: 0x7e28
 // Size: 0x214
 function function_cdc077de(localclientnum) {
@@ -1085,7 +1085,7 @@ function function_cdc077de(localclientnum) {
 }
 
 // Namespace zm_towers/zm_towers
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe0646967, Offset: 0x8048
 // Size: 0x166
 function function_21a2fea4(localclientnum, var_a0d24aa6) {
@@ -1104,7 +1104,7 @@ function function_21a2fea4(localclientnum, var_a0d24aa6) {
 }
 
 // Namespace zm_towers/zm_towers
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe93c5212, Offset: 0x81b8
 // Size: 0x24e
 function function_cbe2ea1(localclientnum, var_49f77cdc, var_4b327660 = 0) {
@@ -1133,7 +1133,7 @@ function function_cbe2ea1(localclientnum, var_49f77cdc, var_4b327660 = 0) {
 }
 
 // Namespace zm_towers/zm_towers
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7956a726, Offset: 0x8410
 // Size: 0x42c
 function function_ba9941c(localclientnum, newval) {
@@ -1182,7 +1182,7 @@ function function_ba9941c(localclientnum, newval) {
 }
 
 // Namespace zm_towers/zm_towers
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9a1bac92, Offset: 0x8848
 // Size: 0x2f6
 function function_f68a332e(localclientnum, var_12ae4a7b) {
@@ -1216,7 +1216,7 @@ function function_f68a332e(localclientnum, var_12ae4a7b) {
 }
 
 // Namespace zm_towers/zm_towers
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x29c2fd0f, Offset: 0x8b48
 // Size: 0x288
 function setup_personality_character_exerts() {
@@ -1239,7 +1239,7 @@ function setup_personality_character_exerts() {
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc38d577c, Offset: 0x8dd8
 // Size: 0x1f8
 function special_round_camera_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1266,7 +1266,7 @@ function special_round_camera_fx(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x43625a1, Offset: 0x8fd8
 // Size: 0xb4
 function function_94675baf(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1280,7 +1280,7 @@ function function_94675baf(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1d36b73, Offset: 0x9098
 // Size: 0x13e
 function function_bdc63758(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1301,7 +1301,7 @@ function function_bdc63758(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x69e11109, Offset: 0x91e0
 // Size: 0x13e
 function function_c41817fc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1322,7 +1322,7 @@ function function_c41817fc(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd62f4329, Offset: 0x9328
 // Size: 0x13e
 function function_27a7a3be(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1343,7 +1343,7 @@ function function_27a7a3be(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xddfd6a36, Offset: 0x9470
 // Size: 0x13e
 function function_d056a230(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1364,7 +1364,7 @@ function function_d056a230(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf96a52cb, Offset: 0x95b8
 // Size: 0x302
 function function_57f3914e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1398,7 +1398,7 @@ function function_57f3914e(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7383a655, Offset: 0x98c8
 // Size: 0x302
 function function_6e6d4bfc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1432,7 +1432,7 @@ function function_6e6d4bfc(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf599cdcc, Offset: 0x9bd8
 // Size: 0x302
 function function_66050c9e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1466,7 +1466,7 @@ function function_66050c9e(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1da59249, Offset: 0x9ee8
 // Size: 0x302
 function function_1c231f3f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1500,7 +1500,7 @@ function function_1c231f3f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x86466449, Offset: 0xa1f8
 // Size: 0xb6
 function function_87e8980d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1515,7 +1515,7 @@ function function_87e8980d(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb85da8c6, Offset: 0xa2b8
 // Size: 0xb6
 function function_b29b7566(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1530,7 +1530,7 @@ function function_b29b7566(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7b902582, Offset: 0xa378
 // Size: 0x74
 function banner_soul_burst(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1538,7 +1538,7 @@ function banner_soul_burst(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8ba03e6d, Offset: 0xa3f8
 // Size: 0xba
 function function_a1d393ad(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1553,7 +1553,7 @@ function function_a1d393ad(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x888c3ed3, Offset: 0xa4c0
 // Size: 0x118
 function function_ee4f01d8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1566,7 +1566,7 @@ function function_ee4f01d8(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8a09bc1c, Offset: 0xa5e0
 // Size: 0x10c
 function acid_trap_death_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1583,7 +1583,7 @@ function acid_trap_death_fx(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2c1f84e2, Offset: 0xa6f8
 // Size: 0xc6
 function function_29bd0c51(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1598,7 +1598,7 @@ function function_29bd0c51(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x151c64f8, Offset: 0xa7c8
 // Size: 0xc6
 function function_75347b12(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1613,7 +1613,7 @@ function function_75347b12(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x18c8540e, Offset: 0xa898
 // Size: 0x136
 function function_25ebc4f7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1635,7 +1635,7 @@ function function_25ebc4f7(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1400eb07, Offset: 0xa9d8
 // Size: 0x114
 function acid_trap_postfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1653,7 +1653,7 @@ function acid_trap_postfx(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x187965c3, Offset: 0xaaf8
 // Size: 0xbe
 function function_a8195148(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1668,7 +1668,7 @@ function function_a8195148(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6ff85cd1, Offset: 0xabc0
 // Size: 0x126
 function function_24673586(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1686,7 +1686,7 @@ function function_24673586(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4df56c3e, Offset: 0xacf0
 // Size: 0xd4
 function function_e9a85af(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1695,7 +1695,7 @@ function function_e9a85af(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa5fcc4fc, Offset: 0xadd0
 // Size: 0x5c
 function function_90076b73(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1703,7 +1703,7 @@ function function_90076b73(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf168d246, Offset: 0xae38
 // Size: 0x5c
 function function_e26b1e6b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1711,7 +1711,7 @@ function function_e26b1e6b(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x11c88909, Offset: 0xaea0
 // Size: 0x5c
 function function_25a6ede2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1719,7 +1719,7 @@ function function_25a6ede2(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd2c5097e, Offset: 0xaf08
 // Size: 0x5c
 function function_a2800857(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1727,7 +1727,7 @@ function function_a2800857(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2eeaa2f0, Offset: 0xaf70
 // Size: 0x9c
 function function_daa52f70(localclientnum, str_tower) {
@@ -1736,7 +1736,7 @@ function function_daa52f70(localclientnum, str_tower) {
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x50968d53, Offset: 0xb018
 // Size: 0xbe
 function ww_quest_melting(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1751,7 +1751,7 @@ function ww_quest_melting(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xda777bee, Offset: 0xb0e0
 // Size: 0xbe
 function function_76dd176c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1766,7 +1766,7 @@ function function_76dd176c(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xbb6c96d0, Offset: 0xb1a8
 // Size: 0x74
 function function_5dc8b5fa(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1774,7 +1774,7 @@ function function_5dc8b5fa(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4d391f54, Offset: 0xb228
 // Size: 0x74
 function function_91305947(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1782,7 +1782,7 @@ function function_91305947(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf7b28ce6, Offset: 0xb2a8
 // Size: 0xe6
 function function_ba86af94(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1798,7 +1798,7 @@ function function_ba86af94(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc8b470da, Offset: 0xb398
 // Size: 0x2b2
 function function_36469123(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1830,7 +1830,7 @@ function function_36469123(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xac6d7ab2, Offset: 0xb658
 // Size: 0x1fe
 function function_a7b41dea(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1858,7 +1858,7 @@ function function_a7b41dea(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb9b33bd6, Offset: 0xb860
 // Size: 0xe6
 function function_1941a5ca(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1874,7 +1874,7 @@ function function_1941a5ca(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x11869be9, Offset: 0xb950
 // Size: 0x7c
 function ww_quest_earthquake(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1883,7 +1883,7 @@ function ww_quest_earthquake(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4363469e, Offset: 0xb9d8
 // Size: 0xcc
 function function_98d53b6b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1897,7 +1897,7 @@ function function_98d53b6b(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9afd778e, Offset: 0xbab0
 // Size: 0x8c
 function maelstrom_initiate(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1906,7 +1906,7 @@ function maelstrom_initiate(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4d4fd03e, Offset: 0xbb48
 // Size: 0x138
 function maelstrom_initiate_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1918,7 +1918,7 @@ function maelstrom_initiate_fx(localclientnum, oldval, newval, bnewent, binitial
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x953b1181, Offset: 0xbc88
 // Size: 0xe6
 function maelstrom_conduct(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1934,7 +1934,7 @@ function maelstrom_conduct(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfddfec52, Offset: 0xbd78
 // Size: 0x17e
 function function_e21e7dbe(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1958,7 +1958,7 @@ function function_e21e7dbe(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x20779f9f, Offset: 0xbf00
 // Size: 0x10c
 function function_4a9243dc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1975,7 +1975,7 @@ function function_4a9243dc(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdbf5db43, Offset: 0xc018
 // Size: 0xa4
 function maelstrom_discharge(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1983,7 +1983,7 @@ function maelstrom_discharge(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5f4aa64d, Offset: 0xc0c8
 // Size: 0xec
 function maelstrom_death(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -1993,7 +1993,7 @@ function maelstrom_death(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x74f460fc, Offset: 0xc1c0
 // Size: 0x106
 function maelstrom_storm(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -2012,7 +2012,7 @@ function maelstrom_storm(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8178c7a2, Offset: 0xc2d0
 // Size: 0x64
 function function_2d6ec02(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -2020,7 +2020,7 @@ function function_2d6ec02(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf3b65e63, Offset: 0xc340
 // Size: 0xa4
 function maelstrom_ending(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -2032,7 +2032,7 @@ function maelstrom_ending(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa1fbe998, Offset: 0xc3f0
 // Size: 0x8c
 function function_7dbeb0c5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -2040,7 +2040,7 @@ function function_7dbeb0c5(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdfe77e5a, Offset: 0xc488
 // Size: 0xbe
 function function_fa2e6690(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -2055,7 +2055,7 @@ function function_fa2e6690(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x71ac164a, Offset: 0xc550
 // Size: 0x84
 function function_fc502d48(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -2067,7 +2067,7 @@ function function_fc502d48(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc9457790, Offset: 0xc5e0
 // Size: 0x54
 function function_5cdc8b28(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -2075,7 +2075,7 @@ function function_5cdc8b28(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2cd1d246, Offset: 0xc640
 // Size: 0x2be
 function function_a8fa1dc3(b_show) {
@@ -2117,7 +2117,7 @@ function function_a8fa1dc3(b_show) {
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x145ca11d, Offset: 0xc908
 // Size: 0xee
 function function_5c9f28ec(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -2132,7 +2132,7 @@ function function_5c9f28ec(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x64f5d126, Offset: 0xca00
 // Size: 0xd2
 function function_e63747a9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -2143,7 +2143,7 @@ function function_e63747a9(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x86ac0083, Offset: 0xcae0
 // Size: 0xc4
 function function_44a2fe02(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -2157,7 +2157,7 @@ function function_44a2fe02(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8f1c8cb0, Offset: 0xcbb0
 // Size: 0x84
 function function_4c2b87ed(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -2169,7 +2169,7 @@ function function_4c2b87ed(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_towers/zm_towers
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x13363984, Offset: 0xcc40
 // Size: 0x164
 function startzmbspawnersoundloops() {
@@ -2199,7 +2199,7 @@ function startzmbspawnersoundloops() {
 }
 
 // Namespace zm_towers/zm_towers
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1fe831bc, Offset: 0xcdb0
 // Size: 0x18a
 function soundloopthink() {

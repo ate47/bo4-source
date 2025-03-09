@@ -1,0 +1,28 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#p8_fxanim_mp_hacienda_floating_debris_anim",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#p8_fxanim_mp_hacienda_floating_debris_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "p8_fxanim_mp_hacienda_floating_debris_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

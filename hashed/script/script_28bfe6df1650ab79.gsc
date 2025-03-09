@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_e01afe67/namespace_e01afe67
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x53595dcd, Offset: 0xe8
 // Size: 0x5c
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace namespace_e01afe67/namespace_e01afe67
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x2ad713fb, Offset: 0x150
 // Size: 0x35c
 function private on_begin() {
@@ -52,7 +52,7 @@ function private on_begin() {
 }
 
 // Namespace namespace_e01afe67/namespace_e01afe67
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x67a2ced, Offset: 0x4b8
 // Size: 0x224
 function private on_end(round_reset) {
@@ -85,7 +85,7 @@ function is_active() {
 }
 
 // Namespace namespace_e01afe67/namespace_e01afe67
-// Params 12, eflags: 0x5 linked
+// Params 12, eflags: 0x4
 // Checksum 0xc80e936d, Offset: 0x728
 // Size: 0xbc
 function private height_check(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -96,7 +96,7 @@ function private height_check(inflictor, attacker, damage, flags, meansofdeath, 
 }
 
 // Namespace namespace_e01afe67/namespace_e01afe67
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xe2e2dfd9, Offset: 0x7f0
 // Size: 0x1e
 function private on_ai_spawned() {
@@ -105,7 +105,7 @@ function private on_ai_spawned() {
 }
 
 // Namespace namespace_e01afe67/namespace_e01afe67
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x19ebd0d1, Offset: 0x818
 // Size: 0x24
 function private function_33f0ddd3(eventstruct) {
@@ -113,7 +113,7 @@ function private function_33f0ddd3(eventstruct) {
 }
 
 // Namespace namespace_e01afe67/namespace_e01afe67
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x739397b6, Offset: 0x848
 // Size: 0x1e0
 function private function_6a8979c9() {
@@ -125,7 +125,7 @@ function private function_6a8979c9() {
             self unlockweapon(weapon);
         }
         if (weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone) {
-            if (self function_635f9c02(weapon)) {
+            if (self isweaponlocked(weapon)) {
                 self lockweapon(weapon.dualwieldweapon);
                 continue;
             }

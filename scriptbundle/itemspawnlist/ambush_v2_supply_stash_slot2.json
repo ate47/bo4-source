@@ -3,21 +3,21 @@
         {
             "minweight": 50,
             "itementry": "sniper_fastrechamber_t8_gold_item",
-            "var_3f8c08e3": "ammo_type_338_item",
+            "childitementry_1": "ammo_type_338_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
             "itementry": "sniper_powerbolt_t8_gold_item",
-            "var_3f8c08e3": "ammo_type_50cal_item",
+            "childitementry_1": "ammo_type_50cal_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
             "itementry": "sniper_quickscope_t8_gold_item",
-            "var_3f8c08e3": "ammo_type_338_item",
+            "childitementry_1": "ammo_type_338_item",
             "maxweight": 50,
             "available": 1
         },
@@ -35,11 +35,11 @@
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 12000,
+    "hash_7fb0967b": 12000,
     "type": "itemspawnlist",
-    "var_345eba59": 5,
-    "var_9b009839": -1,
+    "hash_345eba59": 5,
+    "hash_9b009839": -1,
     "name": "ambush_v2_supply_stash_slot2",
-    "var_fde72c94": 100,
+    "supplystashweight": 100,
     "supplystash": 1
 }

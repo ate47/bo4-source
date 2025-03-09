@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_white_electric_traps/zm_white_electric_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x81aa6534, Offset: 0x120
 // Size: 0x34
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace zm_white_electric_traps/zm_white_electric_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe2d394e, Offset: 0x160
 // Size: 0xc2
 function init_fx() {
@@ -33,7 +33,7 @@ function init_fx() {
 }
 
 // Namespace zm_white_electric_traps/zm_white_electric_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x82ba7cfd, Offset: 0x230
 // Size: 0xb4
 function init_clientfields() {
@@ -42,7 +42,7 @@ function init_clientfields() {
 }
 
 // Namespace zm_white_electric_traps/zm_white_electric_traps
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4af579c5, Offset: 0x2f0
 // Size: 0x10c
 function function_946acaec(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -60,7 +60,7 @@ function function_946acaec(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_white_electric_traps/zm_white_electric_traps
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb11f1801, Offset: 0x408
 // Size: 0x1fe
 function electrocute_ai(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

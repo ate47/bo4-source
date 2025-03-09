@@ -1,7 +1,7 @@
 #namespace activecamo;
 
 // Namespace activecamo/activecamo_shared_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x91557067, Offset: 0x68
 // Size: 0x6e
 function function_385ef18d(camoweapon) {
@@ -14,7 +14,7 @@ function function_385ef18d(camoweapon) {
 }
 
 // Namespace activecamo/activecamo_shared_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa92ec6c5, Offset: 0xe0
 // Size: 0x106
 function function_c14cb514(weapon) {

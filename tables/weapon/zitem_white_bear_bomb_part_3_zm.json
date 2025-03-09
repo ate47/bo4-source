@@ -1,0 +1,13 @@
+{
+    "name": "#zitem_white_bear_bomb_part_3_zm",
+    "baseWeapon": "#zitem_white_bear_bomb_part_3",
+    "streamkey": "#hash_6c8959f97805f414",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#hash_1d986397e28",
+    "viewmodel": "#hash_1d945268ca0",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "image_d40": "#$blacktransparent",
+    "underwaterExplosionSurfaceFX": []
+}

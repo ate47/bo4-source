@@ -10,7 +10,7 @@
                         }
                     ],
                     "name": "play",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -20,7 +20,7 @@
                         }
                     ],
                     "name": "shot 3",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -30,7 +30,7 @@
                         }
                     ],
                     "name": "shot 4",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -40,14 +40,14 @@
                         }
                     ],
                     "name": "shot 2",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 }
             ],
             "model": "#tag_origin",
             "type": "sharedplayer",
             "name": "cam",
             "aligntarget": "tag_align_frozen",
-            "var_29563fd6": 90
+            "hash_29563fd6": 90
         },
         {
             "shots": [
@@ -59,7 +59,7 @@
                         }
                     ],
                     "name": "play",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -69,7 +69,7 @@
                         }
                     ],
                     "name": "shot 3",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -79,7 +79,7 @@
                         }
                     ],
                     "name": "shot 4",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -89,16 +89,16 @@
                         }
                     ],
                     "name": "shot 2",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 }
             ],
             "type": "fakeplayer",
             "name": "frozen_moment_character",
-            "var_29563fd6": 87,
-            "var_eb00c330": 1,
-            "var_be60a82b": 4,
-            "var_922b4fc5": -9,
-            "var_3e692842": 50
+            "hash_29563fd6": 87,
+            "hash_eb00c330": 1,
+            "hash_be60a82b": 4,
+            "hash_922b4fc5": -9,
+            "hash_3e692842": 50
         },
         {
             "shots": [
@@ -110,7 +110,7 @@
                         }
                     ],
                     "name": "play",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -120,7 +120,7 @@
                         }
                     ],
                     "name": "shot 3",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -130,7 +130,7 @@
                         }
                     ],
                     "name": "shot 4",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -140,18 +140,18 @@
                         }
                     ],
                     "name": "shot 2",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 }
             ],
             "model": "#wpn_t8_pistol_standard_prop_static",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 3",
-            "var_16999a5d": -5,
-            "var_29563fd6": 88,
-            "var_be60a82b": 9,
-            "var_922b4fc5": -10,
-            "var_3e692842": 50.5
+            "hash_16999a5d": -5,
+            "hash_29563fd6": 88,
+            "hash_be60a82b": 9,
+            "hash_922b4fc5": -10,
+            "hash_3e692842": 50.5
         },
         {
             "shots": [
@@ -163,7 +163,7 @@
                         }
                     ],
                     "name": "play",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -173,7 +173,7 @@
                         }
                     ],
                     "name": "shot 3",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -183,7 +183,7 @@
                         }
                     ],
                     "name": "shot 4",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -193,17 +193,17 @@
                         }
                     ],
                     "name": "shot 2",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 }
             ],
             "model": "#wpn_t8_pistol_standard_prop_static",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 4",
-            "var_29563fd6": 101,
-            "var_be60a82b": 3,
-            "var_922b4fc5": -18.5,
-            "var_3e692842": 41
+            "hash_29563fd6": 101,
+            "hash_be60a82b": 3,
+            "hash_922b4fc5": -18.5,
+            "hash_3e692842": 41
         },
         {
             "shots": [
@@ -215,7 +215,7 @@
                         }
                     ],
                     "name": "play",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -225,7 +225,7 @@
                         }
                     ],
                     "name": "shot 3",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -235,7 +235,7 @@
                         }
                     ],
                     "name": "shot 4",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -245,17 +245,17 @@
                         }
                     ],
                     "name": "shot 2",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 }
             ],
             "model": "#p8_fxanim_wz_supply_stash_ammo_mod",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 5",
-            "var_29563fd6": 67,
-            "var_be60a82b": -1,
-            "var_922b4fc5": -8,
-            "var_3e692842": -2
+            "hash_29563fd6": 67,
+            "hash_be60a82b": -1,
+            "hash_922b4fc5": -8,
+            "hash_3e692842": -2
         },
         {
             "shots": [
@@ -267,7 +267,7 @@
                         }
                     ],
                     "name": "play",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -277,7 +277,7 @@
                         }
                     ],
                     "name": "shot 3",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -287,7 +287,7 @@
                         }
                     ],
                     "name": "shot 4",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -297,18 +297,18 @@
                         }
                     ],
                     "name": "shot 2",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 }
             ],
             "model": "#wpn_t8_ar_k57_world",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 1",
-            "var_29563fd6": 87,
-            "var_eb00c330": 1,
-            "var_be60a82b": 4,
-            "var_922b4fc5": -9,
-            "var_3e692842": 50
+            "hash_29563fd6": 87,
+            "hash_eb00c330": 1,
+            "hash_be60a82b": 4,
+            "hash_922b4fc5": -9,
+            "hash_3e692842": 50
         },
         {
             "shots": [
@@ -320,7 +320,7 @@
                         }
                     ],
                     "name": "play",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -330,7 +330,7 @@
                         }
                     ],
                     "name": "shot 3",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -340,7 +340,7 @@
                         }
                     ],
                     "name": "shot 4",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -350,18 +350,18 @@
                         }
                     ],
                     "name": "shot 2",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 }
             ],
             "model": "#wpn_t8_ar_k57_world",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 2",
-            "var_29563fd6": 87,
-            "var_eb00c330": 1,
-            "var_be60a82b": 4,
-            "var_922b4fc5": -9,
-            "var_3e692842": 50
+            "hash_29563fd6": 87,
+            "hash_eb00c330": 1,
+            "hash_be60a82b": 4,
+            "hash_922b4fc5": -9,
+            "hash_3e692842": 50
         }
     ],
     "scenetype": "scene",

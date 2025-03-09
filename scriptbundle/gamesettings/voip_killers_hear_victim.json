@@ -4,8 +4,8 @@
     "type": "gamesettings",
     "name": "voip_killers_hear_victim",
     "displayname": "#hash_14a9695ab64cef1c",
-    "var_9de86f42": 2,
-    "var_765cfd09": 1,
+    "optionscount": 2,
+    "hash_765cfd09": 1,
     "setting": "voipKillersHearVictim",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

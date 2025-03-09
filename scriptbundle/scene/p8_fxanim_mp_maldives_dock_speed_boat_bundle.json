@@ -1,0 +1,27 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7fadd4101fea6c6d",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_402bbe67ffb485ef",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_maldives_dock_speed_boat_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

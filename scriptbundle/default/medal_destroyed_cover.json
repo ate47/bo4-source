@@ -4,6 +4,6 @@
     "name": "medal_destroyed_cover",
     "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
     "iconsmall": "#hash_5470a700e006d85e",
-    "stringref": "#hash_7f3ee3f02b00cb0",
+    "stringref": "#medal/destroyed_cover",
     "iconlarge": "#hash_5470a700e006d85e"
 }

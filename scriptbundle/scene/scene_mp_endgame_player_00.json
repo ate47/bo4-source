@@ -22,7 +22,7 @@
             "name": "topplayer1",
             "aligntarget": "team_pose_cam",
             "cameratweenout": 8,
-            "var_922b4fc5": 5,
+            "hash_922b4fc5": 5,
             "cameratween": 7
         }
     ],

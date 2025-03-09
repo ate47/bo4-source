@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_licensed_contractor/zm_bgb_licensed_contractor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe462710e, Offset: 0xd8
 // Size: 0x4c
 function __init__() {

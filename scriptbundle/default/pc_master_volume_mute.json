@@ -1,18 +1,18 @@
 {
     "descriptionimage": "#hash_79fda6795137590",
     "description": "#hash_1fa4c43338f38bc1",
-    "var_60fcfffa": "#hash_4f296b5d8de59165",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 0.1,
+    "hash_60fcfffa": "#hash_4f296b5d8de59165",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 0.1,
     "maxvalue": 1,
     "name": "pc_master_volume_mute",
     "displayname": "#hash_345c1e76aca9104f",
     "decimalplace": 0.01,
-    "var_66faec87": 1,
+    "hash_66faec87": 1,
     "statname": "snd_mute_master_volume",
-    "var_82c732a7": 1,
-    "var_d4e288e": 1,
-    "var_b7401319": "#hash_722c1428b45507e8"
+    "isenableddisabled": 1,
+    "hash_d4e288e": 1,
+    "hash_b7401319": "#hash_722c1428b45507e8"
 }

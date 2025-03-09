@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_powerup_bonus_points_player/zm_powerup_bonus_points_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb04a5614, Offset: 0x100
 // Size: 0x64
 function __init__() {

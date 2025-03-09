@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_ai_white_nova_crawler/zm_ai_white_nova_crawler
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe57f2da8, Offset: 0x320
 // Size: 0x1e4
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace zm_ai_white_nova_crawler/zm_ai_white_nova_crawler
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xdd0c08a1, Offset: 0x510
 // Size: 0xee
 function private function_582a3075(localclientnum) {
@@ -37,12 +37,12 @@ function private function_582a3075(localclientnum) {
         self._effect = [];
     }
     self._effect[#"hash_219e13e8868d7af4"] = "zm_ai/fx8_nova_crawler_explode";
-    if (isdefined(self.var_9fde8624)) {
-        if (self.var_9fde8624 == #"blue_nova_crawler") {
+    if (isdefined(self.subarchetype)) {
+        if (self.subarchetype == #"blue_nova_crawler") {
             self._effect[#"hash_219e13e8868d7af4"] = "zm_ai/fx8_nova_crawler_mq_explode";
             return;
         }
-        if (self.var_9fde8624 == #"ranged_nova_crawler") {
+        if (self.subarchetype == #"ranged_nova_crawler") {
             self._effect[#"hash_219e13e8868d7af4"] = "zm_ai/fx8_nova_crawler_elec_explode";
             self._effect[#"nova_crawler_phase_teleport_end_fx"] = "zm_ai/fx8_nova_crawler_elec_teleport_appear";
         }
@@ -50,7 +50,7 @@ function private function_582a3075(localclientnum) {
 }
 
 // Namespace zm_ai_white_nova_crawler/zm_ai_white_nova_crawler
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x56a28960, Offset: 0x608
 // Size: 0xc6
 function private function_be621cc7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -65,7 +65,7 @@ function private function_be621cc7(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_white_nova_crawler/zm_ai_white_nova_crawler
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xa5a78595, Offset: 0x6d8
 // Size: 0x9c
 function private function_18c564d0(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -75,7 +75,7 @@ function private function_18c564d0(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_white_nova_crawler/zm_ai_white_nova_crawler
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xdeea54f3, Offset: 0x780
 // Size: 0xa4
 function private function_c9ef107f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -86,7 +86,7 @@ function private function_c9ef107f(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_white_nova_crawler/zm_ai_white_nova_crawler
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x44237e3e, Offset: 0x830
 // Size: 0x8c
 function function_2a92d45(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -97,7 +97,7 @@ function function_2a92d45(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_ai_white_nova_crawler/zm_ai_white_nova_crawler
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x295cdda8, Offset: 0x8c8
 // Size: 0xce
 function function_9ed375e1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

@@ -1,0 +1,14 @@
+{
+    "name": "#zitem_spectral_shield_part_2_zm",
+    "baseWeapon": "#zitem_spectral_shield_part_2",
+    "streamkey": "#hash_12b9ab5e5571493c",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "gadgetreadysoundplayer": "#hash_132010159e8da970",
+    "tunables1": "#hash_1d986e3861c",
+    "viewmodel": "#hash_1d9563013d0",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "image_d40": "#$blacktransparent",
+    "underwaterExplosionSurfaceFX": []
+}

@@ -4,14 +4,14 @@
     "value2": "1",
     "value3": "2",
     "value1": "0",
-    "var_dfed6968": "3",
+    "value4": "3",
     "type": "gamesettings",
     "label": "#hash_4bf59e78dfb9da30",
     "name": "zm_doorstate",
     "displayname": "#hash_c8cbcf5089e3cb5",
     "label1": "#hash_3b41c280ca439dd1",
-    "var_71b6e020": "#hash_7ebc76ab224b7dcb",
+    "label3": "#hash_7ebc76ab224b7dcb",
     "label2": "#hash_4bf59e78dfb9da30",
-    "var_9de86f42": 3,
+    "optionscount": 3,
     "setting": "zmDoorState"
 }

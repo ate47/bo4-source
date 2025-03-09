@@ -1,0 +1,28 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_615b62d181b88e90",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_15c669933d476c9b",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "hash_9c542279": 1,
+    "name": "p8_fxanim_gp_furnish_roof_kiosk_s2_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

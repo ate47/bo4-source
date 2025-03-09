@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace exploder/exploder_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6dc61ac9, Offset: 0x150
 // Size: 0x34
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace exploder/exploder_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x57311db6, Offset: 0x190
 // Size: 0xcd4
 function player_init(clientnum) {
@@ -162,7 +162,7 @@ function player_init(clientnum) {
 }
 
 // Namespace exploder/exploder_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x853954e7, Offset: 0xe70
 // Size: 0xd4
 function getexploderid(ent) {
@@ -178,7 +178,7 @@ function getexploderid(ent) {
 }
 
 // Namespace exploder/exploder_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0xf50
 // Size: 0x4
 function reportexploderids() {
@@ -186,7 +186,7 @@ function reportexploderids() {
 }
 
 // Namespace exploder/exploder_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf817cc60, Offset: 0xf60
 // Size: 0x54
 function exploder(exploder_id) {
@@ -198,7 +198,7 @@ function exploder(exploder_id) {
 }
 
 // Namespace exploder/exploder_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9bc527e9, Offset: 0xfc0
 // Size: 0xfc
 function activate_exploder(num) {
@@ -216,7 +216,7 @@ function activate_exploder(num) {
 }
 
 // Namespace exploder/exploder_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3e713b22, Offset: 0x10c8
 // Size: 0x10c
 function activate_individual_exploder() {
@@ -236,7 +236,7 @@ function activate_individual_exploder() {
 }
 
 // Namespace exploder/exploder_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf4b4d2f5, Offset: 0x11e0
 // Size: 0x76
 function activate_radiant_exploder(string) {
@@ -249,7 +249,7 @@ function activate_radiant_exploder(string) {
 }
 
 // Namespace exploder/exploder_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x66c1c032, Offset: 0x1260
 // Size: 0x1a4
 function stop_exploder(exploder_id) {
@@ -277,7 +277,7 @@ function stop_exploder(exploder_id) {
 }
 
 // Namespace exploder/exploder_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9e4362c8, Offset: 0x1410
 // Size: 0xac
 function kill_exploder(exploder_id) {
@@ -291,7 +291,7 @@ function kill_exploder(exploder_id) {
 }
 
 // Namespace exploder/exploder_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf41b004a, Offset: 0x14c8
 // Size: 0x11c
 function exploder_delay() {
@@ -312,7 +312,7 @@ function exploder_delay() {
 }
 
 // Namespace exploder/exploder_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbc989f0d, Offset: 0x15f0
 // Size: 0x8c
 function exploder_playsound() {
@@ -323,7 +323,7 @@ function exploder_playsound() {
 }
 
 // Namespace exploder/exploder_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x76a3c542, Offset: 0x1688
 // Size: 0xb4
 function exploder_earthquake() {
@@ -335,7 +335,7 @@ function exploder_earthquake() {
 }
 
 // Namespace exploder/exploder_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4b13b5b6, Offset: 0x1748
 // Size: 0x68
 function exploder_is_lightning_exploder(num) {
@@ -401,7 +401,7 @@ function playlightloopexploder(exploderindex) {
 }
 
 // Namespace exploder/exploder_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x36f5898c, Offset: 0x1ab8
 // Size: 0x76
 function createexploder(fxid) {
@@ -412,7 +412,7 @@ function createexploder(fxid) {
 }
 
 // Namespace exploder/exploder_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xffd967c8, Offset: 0x1b38
 // Size: 0x32c
 function cannon_effect() {
@@ -450,7 +450,7 @@ function cannon_effect() {
 }
 
 // Namespace exploder/exploder_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x16e68258, Offset: 0x1e70
 // Size: 0x28e
 function fire_effect() {
@@ -484,7 +484,7 @@ function fire_effect() {
 }
 
 // Namespace exploder/exploder_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd1852c5e, Offset: 0x2108
 // Size: 0x11a
 function playexploderfx(clientnum) {
@@ -503,7 +503,7 @@ function playexploderfx(clientnum) {
 }
 
 // Namespace exploder/exploder_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc13b76df, Offset: 0x2230
 // Size: 0x2c
 function stop_after_duration(name, duration) {
@@ -512,7 +512,7 @@ function stop_after_duration(name, duration) {
 }
 
 // Namespace exploder/exploder_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9ac43bf5, Offset: 0x2268
 // Size: 0x5c
 function exploder_duration(name, duration) {

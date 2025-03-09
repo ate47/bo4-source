@@ -1,8 +1,8 @@
 {
-    "var_2ecceeab": "#drone_squadron_kill",
+    "hash_2ecceeab": "#drone_squadron_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
     "name": "drone_squadron_scoreevents",
-    "var_e1b418c1": "ability"
+    "customsettingstype": "ability"
 }

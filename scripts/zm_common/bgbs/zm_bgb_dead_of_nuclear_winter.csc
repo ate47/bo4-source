@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_dead_of_nuclear_winter/zm_bgb_dead_of_nuclear_winter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xed8d79e, Offset: 0xd8
 // Size: 0x4c
 function __init__() {

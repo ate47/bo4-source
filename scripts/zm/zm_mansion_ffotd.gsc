@@ -11,7 +11,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_mansion_ffotd/zm_mansion_ffotd
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xda2f6dc4, Offset: 0x208
 // Size: 0x12c
 function __init__() {
@@ -30,7 +30,7 @@ function __init__() {
 }
 
 // Namespace zm_mansion_ffotd/zm_mansion_ffotd
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb114d82d, Offset: 0x340
 // Size: 0x21c
 function __main__() {

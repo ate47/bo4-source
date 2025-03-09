@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_galvaknuckles_t8/zm_weap_galvaknuckles_t8
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x60cd2c99, Offset: 0xf0
 // Size: 0x6c
 function private __init__() {
@@ -24,7 +24,7 @@ function private __init__() {
 }
 
 // Namespace zm_weap_galvaknuckles_t8/zm_weap_galvaknuckles_t8
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x1392d2a5, Offset: 0x168
 // Size: 0x54
 function private __main__() {
@@ -32,7 +32,7 @@ function private __main__() {
 }
 
 // Namespace zm_weap_galvaknuckles_t8/zm_weap_galvaknuckles_t8
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf4ce94c6, Offset: 0x1c8
 // Size: 0x104
 function on_ai_killed(s_params) {

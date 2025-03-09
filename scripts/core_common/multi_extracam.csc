@@ -3,7 +3,7 @@
 #namespace multi_extracam;
 
 // Namespace multi_extracam/multi_extracam
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x16de8a63, Offset: 0x90
 // Size: 0xc2
 function extracam_reset_index(localclientnum, index) {
@@ -18,7 +18,7 @@ function extracam_reset_index(localclientnum, index) {
 }
 
 // Namespace multi_extracam/multi_extracam
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6345d5d, Offset: 0x160
 // Size: 0x62
 function extracam_init_index(localclientnum, target, index) {
@@ -27,7 +27,7 @@ function extracam_init_index(localclientnum, target, index) {
 }
 
 // Namespace multi_extracam/multi_extracam
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x95484785, Offset: 0x1d0
 // Size: 0x196
 function extracam_init_item(localclientnum, copy_ent, index) {

@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_special_enemy/zm_trial_special_enemy
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x631c87a2, Offset: 0xe8
 // Size: 0x5c
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_special_enemy/zm_trial_special_enemy
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x10078c50, Offset: 0x150
 // Size: 0x1b4
 function private on_begin(enemy_type, var_6b96eb7b, var_46cce0c5, var_6ad4e7c6, var_44445188) {
@@ -57,7 +57,7 @@ function private on_begin(enemy_type, var_6b96eb7b, var_46cce0c5, var_6ad4e7c6, 
 }
 
 // Namespace zm_trial_special_enemy/zm_trial_special_enemy
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x60fd0da7, Offset: 0x310
 // Size: 0x9c
 function private on_end(round_reset) {
@@ -72,7 +72,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_special_enemy/zm_trial_special_enemy
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x693ad098, Offset: 0x3b8
 // Size: 0x184
 function private on_ai_killed(params) {
@@ -95,7 +95,7 @@ function private on_ai_killed(params) {
 }
 
 // Namespace zm_trial_special_enemy/zm_trial_special_enemy
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x579651a9, Offset: 0x548
 // Size: 0x1e
 function private get_zombie_count_for_round(round_number, player_count) {
@@ -103,7 +103,7 @@ function private get_zombie_count_for_round(round_number, player_count) {
 }
 
 // Namespace zm_trial_special_enemy/zm_trial_special_enemy
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x90578105, Offset: 0x570
 // Size: 0x224
 function private spawn_enemy() {
@@ -135,7 +135,7 @@ function private spawn_enemy() {
 }
 
 // Namespace zm_trial_special_enemy/zm_trial_special_enemy
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb10ab0b3, Offset: 0x7a0
 // Size: 0x92
 function function_95c1dd81(name, spawn_callback) {
@@ -150,7 +150,7 @@ function function_95c1dd81(name, spawn_callback) {
 }
 
 // Namespace zm_trial_special_enemy/zm_trial_special_enemy
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x19169baf, Offset: 0x840
 // Size: 0x32
 function is_active() {

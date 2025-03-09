@@ -10,7 +10,7 @@
 #namespace zm_red_ww_quests;
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x697d62b0, Offset: 0x1e0
 // Size: 0x14d4
 function init() {
@@ -98,7 +98,7 @@ function init() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf69ae439, Offset: 0x16c0
 // Size: 0x1cc
 function function_91aa103(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -124,7 +124,7 @@ function function_91aa103(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe6656581, Offset: 0x1898
 // Size: 0x182
 function ww_combat_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -154,7 +154,7 @@ function ww_combat_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6c9734a9, Offset: 0x1a28
 // Size: 0x7a
 function function_944d867a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -162,7 +162,7 @@ function function_944d867a(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x555c432b, Offset: 0x1ab0
 // Size: 0x7a
 function function_9d8dd7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -170,7 +170,7 @@ function function_9d8dd7(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xbe90610c, Offset: 0x1b38
 // Size: 0x7a
 function function_2879e2a2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -178,7 +178,7 @@ function function_2879e2a2(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x301e3f74, Offset: 0x1bc0
 // Size: 0x7a
 function function_dcfcbf53(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -186,7 +186,7 @@ function function_dcfcbf53(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8481531d, Offset: 0x1c48
 // Size: 0x8c
 function function_58806d4f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -198,7 +198,7 @@ function function_58806d4f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6069a26e, Offset: 0x1ce0
 // Size: 0x8c
 function function_b2beae83(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -210,7 +210,7 @@ function function_b2beae83(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x916b6b05, Offset: 0x1d78
 // Size: 0x8c
 function function_283ae654(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -222,7 +222,7 @@ function function_283ae654(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb1702343, Offset: 0x1e10
 // Size: 0xb4
 function function_4854ae4f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -236,7 +236,7 @@ function function_4854ae4f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc3bb2354, Offset: 0x1ed0
 // Size: 0xb4
 function function_f8b29e52(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -250,7 +250,7 @@ function function_f8b29e52(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x20536692, Offset: 0x1f90
 // Size: 0x7a
 function function_251c7b6d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -258,7 +258,7 @@ function function_251c7b6d(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x70c764b2, Offset: 0x2018
 // Size: 0x7a
 function function_587efcf8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -266,7 +266,7 @@ function function_587efcf8(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7b4ee216, Offset: 0x20a0
 // Size: 0x10a
 function function_84874233(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -284,7 +284,7 @@ function function_84874233(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8b83765, Offset: 0x21b8
 // Size: 0x10a
 function function_f2536be(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -302,7 +302,7 @@ function function_f2536be(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa9357e61, Offset: 0x22d0
 // Size: 0x10a
 function function_b50a9153(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -320,7 +320,7 @@ function function_b50a9153(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb470074a, Offset: 0x23e8
 // Size: 0x2ac
 function function_d152d13c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -350,7 +350,7 @@ function function_d152d13c(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe71e6f0e, Offset: 0x26a0
 // Size: 0xfc
 function function_32753a57(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -370,7 +370,7 @@ function function_32753a57(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe0f9b68d, Offset: 0x27a8
 // Size: 0x7a
 function ouranos_feather_hit_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -378,7 +378,7 @@ function ouranos_feather_hit_fx(localclientnum, oldval, newval, bnewent, binitia
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdd0f14eb, Offset: 0x2830
 // Size: 0x104
 function charon_portal_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -394,7 +394,7 @@ function charon_portal_fx(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x872a8764, Offset: 0x2940
 // Size: 0x8c
 function charon_curse_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -406,7 +406,7 @@ function charon_curse_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc7451ac3, Offset: 0x29d8
 // Size: 0xf2
 function function_e887425a(localclientnum) {
@@ -422,7 +422,7 @@ function function_e887425a(localclientnum) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x99427966, Offset: 0x2ad8
 // Size: 0xae
 function function_761eecad(localclientnum) {
@@ -437,7 +437,7 @@ function function_761eecad(localclientnum) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6d17a594, Offset: 0x2b90
 // Size: 0x22c
 function charon_teleport_postfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -470,7 +470,7 @@ function charon_teleport_postfx(localclientnum, oldval, newval, bnewent, binitia
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x30f0890, Offset: 0x2dc8
 // Size: 0x232
 function gaia_sprout_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -520,7 +520,7 @@ function function_edc6704a(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x94d01508, Offset: 0x3098
 // Size: 0xec
 function function_162c09a8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -538,7 +538,7 @@ function function_162c09a8(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2a3bbc3e, Offset: 0x3190
 // Size: 0x1ac
 function gaia_portal_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -559,7 +559,7 @@ function gaia_portal_fx(localclientnum, oldval, newval, bnewent, binitialsnap, f
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x353c8e00, Offset: 0x3348
 // Size: 0x22c
 function hemera_teleport_postfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -592,7 +592,7 @@ function hemera_teleport_postfx(localclientnum, oldval, newval, bnewent, binitia
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7344299, Offset: 0x3580
 // Size: 0x22c
 function gaia_teleport_postfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -625,7 +625,7 @@ function gaia_teleport_postfx(localclientnum, oldval, newval, bnewent, binitials
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf53d36e7, Offset: 0x37b8
 // Size: 0x22c
 function ouranos_teleport_postfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -658,7 +658,7 @@ function ouranos_teleport_postfx(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xbe9766cf, Offset: 0x39f0
 // Size: 0x114
 function function_3d5367c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -678,7 +678,7 @@ function function_3d5367c(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x597a1446, Offset: 0x3b10
 // Size: 0x13c
 function function_66bf3a98(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -699,7 +699,7 @@ function function_66bf3a98(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf2fe6674, Offset: 0x3c58
 // Size: 0x16c
 function function_251065bc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -729,7 +729,7 @@ function function_251065bc(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3038a7e8, Offset: 0x3dd0
 // Size: 0x102
 function gaia_chaos_destroy(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

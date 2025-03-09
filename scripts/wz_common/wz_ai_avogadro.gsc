@@ -27,7 +27,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xeec158bf, Offset: 0x218
 // Size: 0x164
 function __init__() {
@@ -42,7 +42,7 @@ function __init__() {
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x388
 // Size: 0x4
 function __main__() {
@@ -50,7 +50,7 @@ function __main__() {
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xcd08cf1c, Offset: 0x398
 // Size: 0x25a
 function private function_f34df3c() {
@@ -66,8 +66,8 @@ function private function_f34df3c() {
     self.var_1731eda3 = 1;
     self.var_2c628c0f = 1;
     self.var_721a3dbd = 1;
-    self.var_12ec333b = 1;
-    self.var_6501ffdf = 1;
+    self.instakill_doors = 1;
+    self.is_miniboss = 1;
     self.var_872e52b0 = &function_d44ccb0a;
     self.var_8f61d7f4 = 1;
     self wz_ai_utils::function_9758722("walk");
@@ -89,7 +89,7 @@ function private function_f34df3c() {
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x81705518, Offset: 0x600
 // Size: 0x8c
 function private function_c41e67c() {
@@ -103,7 +103,7 @@ function private function_c41e67c() {
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x611959b2, Offset: 0x698
 // Size: 0x2e
 function function_5ff730c7() {
@@ -121,7 +121,7 @@ function private function_745e91e8(entity) {
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x39031b1c, Offset: 0x710
 // Size: 0x8
 function function_d44ccb0a() {
@@ -129,7 +129,7 @@ function function_d44ccb0a() {
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdd493f21, Offset: 0x720
 // Size: 0x128
 function function_905d3c1a(entity) {
@@ -142,7 +142,7 @@ function function_905d3c1a(entity) {
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9bd98e80, Offset: 0x850
 // Size: 0x24
 function avogadrodespawn(entity) {
@@ -150,7 +150,7 @@ function avogadrodespawn(entity) {
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2a1ca916, Offset: 0x880
 // Size: 0x198
 function onallcracks(entity) {
@@ -169,7 +169,7 @@ function onallcracks(entity) {
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x502abb3, Offset: 0xa20
 // Size: 0x24
 function avogadrorespawn(entity) {
@@ -177,7 +177,7 @@ function avogadrorespawn(entity) {
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x49153f73, Offset: 0xa50
 // Size: 0xf0
 function function_edc8c459(entity) {
@@ -197,7 +197,7 @@ function function_edc8c459(entity) {
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x43fd0405, Offset: 0xb48
 // Size: 0x2f2
 function function_ce2bd83c(params) {
@@ -236,7 +236,7 @@ function function_ce2bd83c(params) {
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x30728422, Offset: 0xe48
 // Size: 0x5c
 function function_e44ef704(params) {
@@ -247,7 +247,7 @@ function function_e44ef704(params) {
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8d51ffe0, Offset: 0xeb0
 // Size: 0xe4
 function function_ac94df05(entity) {
@@ -258,7 +258,7 @@ function function_ac94df05(entity) {
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x71fd686d, Offset: 0xfa0
 // Size: 0x80
 function function_7d5cf0e4(entity) {

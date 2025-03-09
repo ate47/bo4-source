@@ -11,7 +11,7 @@
 #namespace callback;
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x84569fc2, Offset: 0x128
 // Size: 0x5c
 function callback(event, params) {
@@ -22,7 +22,7 @@ function callback(event, params) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf0f9e0d6, Offset: 0x190
 // Size: 0xb0
 function function_bea20a96(event, params) {
@@ -33,7 +33,7 @@ function function_bea20a96(event, params) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2b792a9a, Offset: 0x248
 // Size: 0xd0
 function function_daed27e8(event, params) {
@@ -45,7 +45,7 @@ function function_daed27e8(event, params) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xcce64424, Offset: 0x320
 // Size: 0x274
 function private mpl_heatwave_fx(ent, event, params) {
@@ -80,7 +80,7 @@ function private mpl_heatwave_fx(ent, event, params) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x516b037d, Offset: 0x5a0
 // Size: 0x4c
 function add_callback(event, func, obj, a_params) {
@@ -88,7 +88,7 @@ function add_callback(event, func, obj, a_params) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xc030b3d5, Offset: 0x5f8
 // Size: 0x44
 function function_d8abfc3d(event, func, obj, a_params) {
@@ -96,7 +96,7 @@ function function_d8abfc3d(event, func, obj, a_params) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0xcb86b010, Offset: 0x648
 // Size: 0x21c
 function private function_2b653c00(ent, event, func, obj, a_params) {
@@ -125,7 +125,7 @@ function private function_2b653c00(ent, event, func, obj, a_params) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xee54b94f, Offset: 0x870
 // Size: 0x3c
 function private function_862146b3(event, func) {
@@ -133,7 +133,7 @@ function private function_862146b3(event, func) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1d643576, Offset: 0x8b8
 // Size: 0x8c
 function remove_callback_on_death(event, func) {
@@ -144,7 +144,7 @@ function remove_callback_on_death(event, func) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x9959e51c, Offset: 0x950
 // Size: 0x3c
 function remove_callback(event, func, obj) {
@@ -152,7 +152,7 @@ function remove_callback(event, func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x7266be6f, Offset: 0x998
 // Size: 0x44
 function function_52ac9652(event, func, obj, instant) {
@@ -160,7 +160,7 @@ function function_52ac9652(event, func, obj, instant) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x3b83e856, Offset: 0x9e8
 // Size: 0x1fc
 function private function_3f5f097e(ent, event, func, obj, instant) {
@@ -194,7 +194,7 @@ function private function_3f5f097e(ent, event, func, obj, instant) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa2b45217, Offset: 0xbf0
 // Size: 0x3c
 function on_finalize_initialization(func, obj) {
@@ -202,7 +202,7 @@ function on_finalize_initialization(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 3, eflags: 0x21 linked variadic
+// Params 3, eflags: 0x20 variadic
 // Checksum 0xf89be2a2, Offset: 0xc38
 // Size: 0x44
 function on_connect(func, obj, ...) {
@@ -210,7 +210,7 @@ function on_connect(func, obj, ...) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x202fdc0f, Offset: 0xc88
 // Size: 0x3c
 function remove_on_connect(func, obj) {
@@ -218,7 +218,7 @@ function remove_on_connect(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x49ab0659, Offset: 0xcd0
 // Size: 0x3c
 function on_connecting(func, obj) {
@@ -234,7 +234,7 @@ function remove_on_connecting(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x86fc821d, Offset: 0xd60
 // Size: 0x3c
 function on_disconnect(func, obj) {
@@ -250,7 +250,7 @@ function remove_on_disconnect(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdb107381, Offset: 0xdf0
 // Size: 0x3c
 function on_spawned(func, obj) {
@@ -290,7 +290,7 @@ function remove_on_deleted(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x63cd15d, Offset: 0xf58
 // Size: 0x3c
 function on_loadout(func, obj) {
@@ -298,7 +298,7 @@ function on_loadout(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb96cc40d, Offset: 0xfa0
 // Size: 0x3c
 function remove_on_loadout(func, obj) {
@@ -306,7 +306,7 @@ function remove_on_loadout(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbc5f2011, Offset: 0xfe8
 // Size: 0x3c
 function on_player_damage(func, obj) {
@@ -322,7 +322,7 @@ function remove_on_player_damage(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2a988e1a, Offset: 0x1078
 // Size: 0x3c
 function on_start_gametype(func, obj) {
@@ -330,7 +330,7 @@ function on_start_gametype(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd6f4272, Offset: 0x10c0
 // Size: 0x3c
 function on_end_game(func, obj) {
@@ -341,12 +341,12 @@ function on_end_game(func, obj) {
 // Params 2, eflags: 0x0
 // Checksum 0xc6261666, Offset: 0x1108
 // Size: 0x3c
-function function_14dae612(func, obj) {
-    add_callback(#"hash_1b5be9017cd4b5fa", func, obj);
+function on_game_shutdown(func, obj) {
+    add_callback(#"on_game_shutdown", func, obj);
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x43b76ad6, Offset: 0x1150
 // Size: 0x3c
 function on_game_playing(func, obj) {
@@ -354,7 +354,7 @@ function on_game_playing(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa868744, Offset: 0x1198
 // Size: 0x3c
 function on_joined_team(func, obj) {
@@ -362,7 +362,7 @@ function on_joined_team(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdc8ac6d, Offset: 0x11e0
 // Size: 0x3c
 function on_joined_spectate(func, obj) {
@@ -370,7 +370,7 @@ function on_joined_spectate(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x32350ef, Offset: 0x1228
 // Size: 0x3c
 function on_player_killed(func, obj) {
@@ -378,7 +378,7 @@ function on_player_killed(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbeb0e916, Offset: 0x1270
 // Size: 0x3c
 function on_player_killed_with_params(func, obj) {
@@ -426,7 +426,7 @@ function function_c53a8ab8(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x17a981e7, Offset: 0x1420
 // Size: 0x3c
 function on_ai_killed(func, obj) {
@@ -442,7 +442,7 @@ function remove_on_ai_killed(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x477bad34, Offset: 0x14b0
 // Size: 0x3c
 function on_actor_killed(func, obj) {
@@ -458,7 +458,7 @@ function remove_on_actor_killed(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb38d0b55, Offset: 0x1540
 // Size: 0x3c
 function on_vehicle_spawned(func, obj) {
@@ -474,7 +474,7 @@ function remove_on_vehicle_spawned(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa5ae4be8, Offset: 0x15d0
 // Size: 0x3c
 function on_vehicle_killed(func, obj) {
@@ -514,7 +514,7 @@ function remove_on_ai_damage(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcb569f75, Offset: 0x1738
 // Size: 0x3c
 function on_ai_spawned(func, obj) {
@@ -530,7 +530,7 @@ function remove_on_ai_spawned(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x86f92b65, Offset: 0x17c8
 // Size: 0x3c
 function on_actor_damage(func, obj) {
@@ -549,20 +549,20 @@ function remove_on_actor_damage(func, obj) {
 // Params 2, eflags: 0x0
 // Checksum 0x3cdc138b, Offset: 0x1858
 // Size: 0x3c
-function function_9d78f548(func, obj) {
-    add_callback(#"hash_2e68909d4e4ed889", func, obj);
+function on_scriptmover_damage(func, obj) {
+    add_callback(#"on_scriptmover_damage", func, obj);
 }
 
 // Namespace callback/callbacks_shared
 // Params 2, eflags: 0x0
 // Checksum 0x6ac669df, Offset: 0x18a0
 // Size: 0x3c
-function function_f125b93a(func, obj) {
-    remove_callback(#"hash_2e68909d4e4ed889", func, obj);
+function remove_on_scriptmover_damage(func, obj) {
+    remove_callback(#"on_scriptmover_damage", func, obj);
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xadf1f59a, Offset: 0x18e8
 // Size: 0x3c
 function on_vehicle_damage(func, obj) {
@@ -594,7 +594,7 @@ function remove_on_downed(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe74c576d, Offset: 0x1a08
 // Size: 0x3c
 function on_laststand(func, obj) {
@@ -610,7 +610,7 @@ function remove_on_laststand(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd6a8a085, Offset: 0x1a98
 // Size: 0x3c
 function on_bleedout(func, obj) {
@@ -618,7 +618,7 @@ function on_bleedout(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3ffbb095, Offset: 0x1ae0
 // Size: 0x3c
 function on_revived(func, obj) {
@@ -642,7 +642,7 @@ function on_challenge_complete(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3ed583ea, Offset: 0x1bb8
 // Size: 0x3c
 function on_weapon_change(func, obj) {
@@ -658,7 +658,7 @@ function remove_on_weapon_change(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xee4e1d97, Offset: 0x1c48
 // Size: 0x3c
 function on_weapon_fired(func, obj) {
@@ -674,7 +674,7 @@ function remove_on_weapon_fired(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8ea2a6d9, Offset: 0x1cd8
 // Size: 0x3c
 function on_grenade_fired(func, obj) {
@@ -690,7 +690,7 @@ function remove_on_grenade_fired(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe4fef738, Offset: 0x1d68
 // Size: 0x3c
 function on_offhand_fire(func, obj) {
@@ -706,7 +706,7 @@ function remove_on_offhand_fire(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfbf1a71a, Offset: 0x1df8
 // Size: 0x3c
 function function_4b7977fe(func, obj) {
@@ -722,7 +722,7 @@ function function_61583a71(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb80c13e5, Offset: 0x1e88
 // Size: 0x3c
 function on_detonate(func, obj) {
@@ -738,7 +738,7 @@ function remove_on_detonate(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb772467a, Offset: 0x1f18
 // Size: 0x3c
 function on_double_tap_detonate(func, obj) {
@@ -754,7 +754,7 @@ function remove_on_double_tap_detonate(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe537229b, Offset: 0x1fa8
 // Size: 0x3c
 function on_death(func, obj) {
@@ -762,7 +762,7 @@ function on_death(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6be04e4d, Offset: 0x1ff0
 // Size: 0x3c
 function remove_on_death(func, obj) {
@@ -770,15 +770,15 @@ function remove_on_death(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2e2fb659, Offset: 0x2038
 // Size: 0x3c
-function function_27d9ab8(func, obj) {
-    add_callback(#"hash_1e4a4ca774f4ce22", func, obj);
+function on_trigger_spawned(func, obj) {
+    add_callback(#"on_trigger_spawned", func, obj);
 }
 
 // Namespace callback/callbacks_shared
-// Params 3, eflags: 0x21 linked variadic
+// Params 3, eflags: 0x20 variadic
 // Checksum 0xad8ddd2f, Offset: 0x2080
 // Size: 0x44
 function on_trigger(func, obj, ...) {
@@ -794,7 +794,7 @@ function remove_on_trigger(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 3, eflags: 0x21 linked variadic
+// Params 3, eflags: 0x20 variadic
 // Checksum 0xfaa7acc, Offset: 0x2118
 // Size: 0x44
 function on_trigger_once(func, obj, ...) {
@@ -802,7 +802,7 @@ function on_trigger_once(func, obj, ...) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xacdac15, Offset: 0x2168
 // Size: 0x3c
 function remove_on_trigger_once(func, obj) {
@@ -858,7 +858,7 @@ function function_16046baa(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8576071b, Offset: 0x2360
 // Size: 0x3c
 function on_menu_response(func, obj) {
@@ -940,7 +940,7 @@ function event_handler[level_finalizeinit] codecallback_finalizeinitialization(e
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8e7f1694, Offset: 0x2630
 // Size: 0x4a
 function add_weapon_damage(weapontype, callback) {
@@ -951,7 +951,7 @@ function add_weapon_damage(weapontype, callback) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x90c9d5e0, Offset: 0x2688
 // Size: 0xda
 function callback_weapon_damage(eattacker, einflictor, weapon, meansofdeath, damage) {
@@ -979,7 +979,7 @@ function add_weapon_fired(weapon, callback) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3a6c7e69, Offset: 0x27c8
 // Size: 0xa2
 function callback_weapon_fired(weapon) {
@@ -1279,7 +1279,7 @@ function event_handler[vehicle_radiusdamage] codecallback_vehicleradiusdamage(ev
 }
 
 // Namespace callback/callbacks_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf544437d, Offset: 0x35c0
 // Size: 0xae
 function finishcustomtraversallistener() {
@@ -1295,7 +1295,7 @@ function finishcustomtraversallistener() {
 }
 
 // Namespace callback/callbacks_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x94aa7060, Offset: 0x3678
 // Size: 0x74
 function killedcustomtraversallistener() {
@@ -1357,7 +1357,7 @@ function event_handler[ui_menuresponse] codecallback_menuresponse(eventstruct) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd341ed76, Offset: 0x3a28
 // Size: 0xf8
 function menu_response_queue_pump() {
@@ -1455,7 +1455,7 @@ function event_handler[event_40f83b44] function_4b5ab05f(eventstruct) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe3bec634, Offset: 0x3fb8
 // Size: 0x23c
 function abort_level() {
@@ -1552,11 +1552,11 @@ function event_handler[event_d6f9e6ad] function_8877d89(eventstruct) {
 function event_handler[event_31e1c5e9] function_7d45bff(eventstruct) {
     self endon(#"death");
     level flagsys::wait_till("system_init_complete");
-    self callback(#"hash_1e4a4ca774f4ce22");
+    self callback(#"on_trigger_spawned");
 }
 
 // Namespace callback/trigger
-// Params 2, eflags: 0x41 linked
+// Params 2, eflags: 0x40
 // Checksum 0x71da971f, Offset: 0x4420
 // Size: 0xb4
 function event_handler[trigger] codecallback_trigger(eventstruct, look_trigger = 0) {
@@ -1674,7 +1674,7 @@ function event_handler[death] codecallback_death(eventstruct) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x4848
 // Size: 0x4
 function callback_void() {

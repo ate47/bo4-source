@@ -24,7 +24,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_gridlock/mp_gridlock
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x30f6822d, Offset: 0x2a0
 // Size: 0xf2
 function dom_flag_base_fx_override(flag, team) {
@@ -54,7 +54,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_gridlock/mp_gridlock
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9c0be739, Offset: 0x3a0
 // Size: 0xf2
 function dom_flag_cap_fx_override(flag, team) {
@@ -84,7 +84,7 @@ function dom_flag_cap_fx_override(flag, team) {
 }
 
 // Namespace mp_gridlock/mp_gridlock
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6ed059a8, Offset: 0x4a0
 // Size: 0x2c
 function on_localclient_connect(localclientnum) {
@@ -93,7 +93,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace mp_gridlock/mp_gridlock
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdbded6fd, Offset: 0x4d8
 // Size: 0x2c
 function on_gameplay_started(localclientnum) {

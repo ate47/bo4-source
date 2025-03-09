@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_bo4_emblem",
-    "var_ff3063df": "attach_t8_charm_bo4_emblem_view",
+    "hash_ff3063df": "attach_t8_charm_bo4_emblem_view",
     "image": "ui_icon_weapon_charms_bo4_emblem",
     "name": "charm_bo4_emblem",
     "displayname": "#hash_682234bdda34f313",
     "icon": "ui_icon_weapon_charms_bo4_emblem",
-    "var_ef5ad2b3": "attach_t8_charm_bo4_emblem_view",
+    "hash_ef5ad2b3": "attach_t8_charm_bo4_emblem_view",
     "previewimage": "#ui_icon_weapon_charms_bo4_emblem"
 }

@@ -23,7 +23,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5b471977, Offset: 0x260
 // Size: 0xb4
 function __init__() {
@@ -32,7 +32,7 @@ function __init__() {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x606eb934, Offset: 0x320
 // Size: 0x11c
 function private __main__() {
@@ -46,7 +46,7 @@ function private __main__() {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x43a774df, Offset: 0x448
 // Size: 0xec
 function private function_e969e75(aoeid) {
@@ -64,7 +64,7 @@ function private function_e969e75(aoeid) {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf7181c5f, Offset: 0x540
 // Size: 0x246
 function function_15dea507(aoeid, type, var_5ff737c1) {
@@ -96,7 +96,7 @@ function function_15dea507(aoeid, type, var_5ff737c1) {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xfe437ba8, Offset: 0x790
 // Size: 0x3fc
 function private function_dcc24343(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -160,7 +160,7 @@ function private function_dcc24343(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x51145609, Offset: 0xb98
 // Size: 0x4a
 function private function_6bcf2a61(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

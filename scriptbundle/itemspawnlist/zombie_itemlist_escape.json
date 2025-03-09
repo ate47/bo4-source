@@ -1,0 +1,22 @@
+{
+    "itemlist": [
+        {
+            "minweight": 70,
+            "itementry": "zombie_itemlist",
+            "maxweight": 85,
+            "available": 1
+        },
+        {
+            "minweight": 30,
+            "itementry": "cu_escape_list",
+            "maxweight": 15,
+            "available": 1
+        }
+    ],
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 2,
+    "hash_9b009839": -1,
+    "name": "zombie_itemlist_escape",
+    "supplystashweight": 100
+}

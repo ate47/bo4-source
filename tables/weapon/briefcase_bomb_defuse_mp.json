@@ -1,0 +1,15 @@
+{
+    "name": "#briefcase_bomb_defuse_mp",
+    "baseWeapon": "#briefcase_bomb_defuse",
+    "displayname": "#weapon/bomb",
+    "unk70": "#weapon_null",
+    "streamkey": "#hash_1922ed6e690f6ad9",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#hash_1d942572410",
+    "viewmodel": "#hash_1d936a82180",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "image_e90": "#hud_obit_case",
+    "underwaterExplosionSurfaceFX": []
+}

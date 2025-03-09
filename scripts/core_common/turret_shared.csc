@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace turret/turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9d769735, Offset: 0x110
 // Size: 0x4c
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace turret/turret_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x71bdaae7, Offset: 0x168
 // Size: 0x116
 function field_toggle_lensflare(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

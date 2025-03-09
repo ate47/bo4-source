@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 #namespace namespace_e2d53d54;
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x3d1ab65b, Offset: 0x398
 // Size: 0x734
 function private __init__() {
@@ -40,7 +40,7 @@ function private __init__() {
     plannercommanderutility::registerutilityapi("commanderScoreDomFlags", &function_78126acd);
     plannercommanderutility::registerutilityapi("commanderScoreStopWanderingDom", &function_8ee25278);
     plannercommanderutility::registerutilityapi("commanderScoreKothZone", &function_eb0a4e86);
-    plannerutility::registerplannerapi(#"hash_6130077bb861d4fa", &function_2f04f764);
+    plannerutility::registerplannerapi(#"hash_6130077bb861d4fa", &raw\italian\sound\vox\scripted\zmb_tomb\vox_plr_1_exert_death_high_d_0.SN40.xenon.snd);
     plannerutility::registerplannerapi(#"hash_23ede7441ff7e15f", &function_34c0ebaf);
     plannerutility::registerplannerapi(#"hash_9d5448e604895e", &function_68a32d83);
     plannerutility::registerplannerapi(#"hash_58f852e4b26d4080", &function_380f4233);
@@ -69,14 +69,15 @@ function private __init__() {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x352d8dbc, Offset: 0xad8
 // Size: 0x174
 function private _calculatepositionquerypath(queryresult, position, entity) {
     path = undefined;
     longestpath = 0;
     if (queryresult.data.size > 0) {
-        for (index = 0; index < queryresult.data.size; index += 16) {
+        index = 0;
+        while (index < queryresult.data.size) {
             goalpoints = [];
             for (goalindex = index; goalindex - index < 16 && goalindex < queryresult.data.size; goalindex++) {
                 goalpoints[goalpoints.size] = queryresult.data[goalindex].origin;
@@ -88,13 +89,14 @@ function private _calculatepositionquerypath(queryresult, position, entity) {
                     longestpath = pathsegment.pathdistance;
                 }
             }
+            index += 16;
         }
     }
     return path;
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0xa9e5484e, Offset: 0xc58
 // Size: 0x39e
 function private function_c0e398c4(bots, var_26b45a5e, bbkey, claimed = undefined) {
@@ -155,7 +157,7 @@ function private function_c0e398c4(bots, var_26b45a5e, bbkey, claimed = undefine
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x5b8eaae5, Offset: 0x1000
 // Size: 0xa8
 function private function_3ea6bf0b(gameobject, defending_team) {
@@ -173,7 +175,7 @@ function private function_3ea6bf0b(gameobject, defending_team) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xaa561069, Offset: 0x10b0
 // Size: 0x2dc
 function private function_c5bf12a5(commander) {
@@ -212,7 +214,7 @@ function private function_c5bf12a5(commander) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa1d59482, Offset: 0x1398
 // Size: 0x334
 function private function_88ab5a6e(commander) {
@@ -256,7 +258,7 @@ function private function_88ab5a6e(commander) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe5cf4471, Offset: 0x16d8
 // Size: 0x174
 function private function_337c2c5d(commander) {
@@ -281,7 +283,7 @@ function private function_337c2c5d(commander) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2354af02, Offset: 0x1858
 // Size: 0x174
 function private function_4364713f(commander) {
@@ -306,7 +308,7 @@ function private function_4364713f(commander) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7711939a, Offset: 0x19d8
 // Size: 0x34c
 function private function_c111c0aa(commander) {
@@ -349,7 +351,7 @@ function private function_c111c0aa(commander) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x3e89d10b, Offset: 0x1d30
 // Size: 0x174
 function private function_7e03c94a(commander) {
@@ -374,7 +376,7 @@ function private function_7e03c94a(commander) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xbc582afe, Offset: 0x1eb0
 // Size: 0x9a
 function private function_cb29a211(commander, squad, constants) {
@@ -386,7 +388,7 @@ function private function_cb29a211(commander, squad, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x1b35700f, Offset: 0x1f58
 // Size: 0xda
 function private function_e319475e(commander, squad, constants) {
@@ -407,7 +409,7 @@ function private function_e319475e(commander, squad, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xdcd1c2c, Offset: 0x2040
 // Size: 0xee
 function private function_f478ac94(commander, squad, constants) {
@@ -425,7 +427,7 @@ function private function_f478ac94(commander, squad, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xad53c44f, Offset: 0x2138
 // Size: 0x14e
 function private function_78126acd(commander, squad, constants) {
@@ -444,7 +446,7 @@ function private function_78126acd(commander, squad, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x3d29ee47, Offset: 0x2290
 // Size: 0xf6
 function private function_8ee25278(commander, squad, constants) {
@@ -463,7 +465,7 @@ function private function_8ee25278(commander, squad, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xb2eba3bd, Offset: 0x2390
 // Size: 0xc6
 function private function_eb0a4e86(commander, squad, constants) {
@@ -479,10 +481,10 @@ function private function_eb0a4e86(commander, squad, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x6cb6d536, Offset: 0x2460
 // Size: 0x1a2
-function private function_2f04f764(planner, constants) {
+function private raw\italian\sound\vox\scripted\zmb_tomb\vox_plr_1_exert_death_high_d_0.SN40.xenon.snd(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
     commanderteam = planner::getblackboardattribute(planner, #"team");
     assert(squadindex >= 0, "<dev string:xa4>");
@@ -500,7 +502,7 @@ function private function_2f04f764(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x82cf797b, Offset: 0x2610
 // Size: 0x98
 function private function_34c0ebaf(planner, constants) {
@@ -511,7 +513,7 @@ function private function_34c0ebaf(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x440a2ee8, Offset: 0x26b0
 // Size: 0x98
 function private function_68a32d83(planner, constants) {
@@ -522,7 +524,7 @@ function private function_68a32d83(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x576a2cbc, Offset: 0x2750
 // Size: 0x98
 function private function_380f4233(planner, constants) {
@@ -533,7 +535,7 @@ function private function_380f4233(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xd8b964ca, Offset: 0x27f0
 // Size: 0xa2
 function private function_4792217e(planner, constants) {
@@ -544,7 +546,7 @@ function private function_4792217e(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x288beed8, Offset: 0x28a0
 // Size: 0xa2
 function private function_97e7d0d8(planner, constants) {
@@ -555,7 +557,7 @@ function private function_97e7d0d8(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x5adc711a, Offset: 0x2950
 // Size: 0x138
 function private function_493ead90(planner, constants) {
@@ -572,7 +574,7 @@ function private function_493ead90(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xf0b1cfb3, Offset: 0x2a90
 // Size: 0xa2
 function private function_cd5b7cc9(planner, constants) {
@@ -583,7 +585,7 @@ function private function_cd5b7cc9(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x84df3faf, Offset: 0x2b40
 // Size: 0x26
 function private function_efa74ce4(planner, constants) {
@@ -591,7 +593,7 @@ function private function_efa74ce4(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xbfbf2b73, Offset: 0x2b70
 // Size: 0x112
 function private function_b35625c2(planner, constants) {
@@ -605,7 +607,7 @@ function private function_b35625c2(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x7542eee9, Offset: 0x2c90
 // Size: 0x3aa
 function private function_a207b2e4(planner, constants) {
@@ -652,7 +654,7 @@ function private function_a207b2e4(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x39dc796b, Offset: 0x3048
 // Size: 0x4fa
 function private function_9d8a9994(planner, constants) {
@@ -710,7 +712,7 @@ function private function_9d8a9994(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x4ea19cd0, Offset: 0x3550
 // Size: 0x112
 function private function_913bffb1(planner, constants) {
@@ -724,7 +726,7 @@ function private function_913bffb1(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x4034bdd3, Offset: 0x3670
 // Size: 0x39a
 function private function_edf25221(planner, constants) {
@@ -779,7 +781,7 @@ function private function_edf25221(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xf7696208, Offset: 0x3a18
 // Size: 0x112
 function private function_90af2101(planner, constants) {
@@ -793,7 +795,7 @@ function private function_90af2101(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xec5178cb, Offset: 0x3b38
 // Size: 0x122
 function private function_bca7d900(planner, constants) {
@@ -808,7 +810,7 @@ function private function_bca7d900(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xe801a37, Offset: 0x3c68
 // Size: 0x192
 function private function_1cce4bb6(planner, constants) {
@@ -830,7 +832,7 @@ function private function_1cce4bb6(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xb5ed6c4d, Offset: 0x3e08
 // Size: 0x122
 function private function_f192ef84(planner, constants) {
@@ -845,7 +847,7 @@ function private function_f192ef84(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xdfc66873, Offset: 0x3f38
 // Size: 0x12a
 function private function_7a576970(planner, constants) {
@@ -861,7 +863,7 @@ function private function_7a576970(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xea8c91ff, Offset: 0x4070
 // Size: 0x242
 function private function_53600d78(planner, constants) {
@@ -890,7 +892,7 @@ function private function_53600d78(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2002d732, Offset: 0x42c0
 // Size: 0x132
 function private function_7a9a7a24(planner, constants) {
@@ -907,7 +909,7 @@ function private function_7a9a7a24(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xb1b8f58a, Offset: 0x4400
 // Size: 0x14a
 function private function_b032f16b(planner, constants) {
@@ -923,7 +925,7 @@ function private function_b032f16b(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x8a21b90f, Offset: 0x4558
 // Size: 0xd2
 function private function_9c7e3773(planner, constants) {
@@ -936,7 +938,7 @@ function private function_9c7e3773(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xf5398d16, Offset: 0x4638
 // Size: 0x4c
 function private function_39cd5957(planner, constants) {
@@ -945,7 +947,7 @@ function private function_39cd5957(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x7606ed71, Offset: 0x4690
 // Size: 0x4c
 function private function_97659d05(planner, constants) {
@@ -954,7 +956,7 @@ function private function_97659d05(planner, constants) {
 }
 
 // Namespace namespace_e2d53d54/planner_mp_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x54881e95, Offset: 0x46e8
 // Size: 0x30
 function private function_9e016913(planner, constants) {

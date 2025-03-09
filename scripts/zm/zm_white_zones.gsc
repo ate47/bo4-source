@@ -11,7 +11,7 @@
 #namespace zm_white_zones;
 
 // Namespace zm_white_zones/zm_white_zones
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaba70b6, Offset: 0x510
 // Size: 0x24
 function init() {
@@ -19,7 +19,7 @@ function init() {
 }
 
 // Namespace zm_white_zones/zm_white_zones
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd388fd0d, Offset: 0x540
 // Size: 0x914
 function zone_init() {
@@ -85,7 +85,7 @@ function zone_init() {
 }
 
 // Namespace zm_white_zones/zm_white_zones
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xff748ee9, Offset: 0xe60
 // Size: 0x76
 function function_fb29f7ca() {
@@ -98,7 +98,7 @@ function function_fb29f7ca() {
 }
 
 // Namespace zm_white_zones/zm_white_zones
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7a21919a, Offset: 0xee0
 // Size: 0x64
 function function_3673cfa1() {
@@ -108,7 +108,7 @@ function function_3673cfa1() {
 }
 
 // Namespace zm_white_zones/zm_white_zones
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x801d5cd4, Offset: 0xf50
 // Size: 0xc4
 function function_57ea545d(str_flag) {
@@ -122,7 +122,7 @@ function function_57ea545d(str_flag) {
 }
 
 // Namespace zm_white_zones/zm_white_zones
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x61436315, Offset: 0x1020
 // Size: 0x104
 function is_bunker_zone(str_zone) {
@@ -149,7 +149,7 @@ function is_bunker_zone(str_zone) {
 }
 
 // Namespace zm_white_zones/zm_white_zones
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe96b3859, Offset: 0x1130
 // Size: 0x1c
 function function_29ec1ad7() {
@@ -157,7 +157,7 @@ function function_29ec1ad7() {
 }
 
 // Namespace zm_white_zones/zm_white_zones
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3405f7e5, Offset: 0x1158
 // Size: 0xb8
 function function_8e0b371() {
@@ -174,7 +174,7 @@ function function_8e0b371() {
 }
 
 // Namespace zm_white_zones/zm_white_zones
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x96b5d8ca, Offset: 0x1218
 // Size: 0x45e
 function function_ab7f70b9(e_player) {

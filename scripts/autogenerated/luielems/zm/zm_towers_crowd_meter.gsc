@@ -7,14 +7,14 @@
 // Method(s) 7 Total 14
 class czm_towers_crowd_meter : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace czm_towers_crowd_meter/zm_towers_crowd_meter
     // Params 2, eflags: 0x0
     // Checksum 0x1d96674c, Offset: 0x678
     // Size: 0x3c
     function set_visible(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "visible", value);
+        player clientfield::function_9bf78ef8(_uid, "visible", value);
     }
 
     // Namespace czm_towers_crowd_meter/zm_towers_crowd_meter
@@ -23,51 +23,51 @@ class czm_towers_crowd_meter : cluielem {
     // Size: 0x33c
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(_uid, "_state", 0);
             return;
         }
         if (#"crowd_server_paused" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(_uid, "_state", 1);
             return;
         }
         if (#"crowd_loathes" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 2);
+            player clientfield::function_9bf78ef8(_uid, "_state", 2);
             return;
         }
         if (#"crowd_hates" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 3);
+            player clientfield::function_9bf78ef8(_uid, "_state", 3);
             return;
         }
         if (#"crowd_no_love" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 4);
+            player clientfield::function_9bf78ef8(_uid, "_state", 4);
             return;
         }
         if (#"crowd_warm_up" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 5);
+            player clientfield::function_9bf78ef8(_uid, "_state", 5);
             return;
         }
         if (#"crowd_likes" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 6);
+            player clientfield::function_9bf78ef8(_uid, "_state", 6);
             return;
         }
         if (#"crowd_loves" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 7);
+            player clientfield::function_9bf78ef8(_uid, "_state", 7);
             return;
         }
         if (#"crowd_power_up_available_good" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 8);
+            player clientfield::function_9bf78ef8(_uid, "_state", 8);
             return;
         }
         if (#"crowd_power_up_available_bad" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 9);
+            player clientfield::function_9bf78ef8(_uid, "_state", 9);
             return;
         }
         if (#"crowd_power_up_available_good_partial" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 10);
+            player clientfield::function_9bf78ef8(_uid, "_state", 10);
             return;
         }
         if (#"crowd_power_up_available_bad_partial" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 11);
+            player clientfield::function_9bf78ef8(_uid, "_state", 11);
             return;
         }
         assertmsg("<dev string:x38>");

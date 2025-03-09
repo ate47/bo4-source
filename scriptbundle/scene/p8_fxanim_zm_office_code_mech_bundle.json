@@ -106,7 +106,7 @@
             "type": "prop",
             "vmtype": "server",
             "name": "code_mech",
-            "var_132e5621": 1
+            "preserveangle": 1
         }
     ],
     "scenetype": "fxanim",

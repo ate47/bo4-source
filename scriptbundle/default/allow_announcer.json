@@ -3,5 +3,5 @@
     "name": "allow_announcer",
     "displayname": "#menu/announcer",
     "setting": "allowAnnouncer",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

@@ -43,7 +43,7 @@
 #namespace load;
 
 // Namespace load/load
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9e36e891, Offset: 0x300
 // Size: 0x114
 function main() {
@@ -61,7 +61,7 @@ function main() {
 }
 
 // Namespace load/load
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd098ee3b, Offset: 0x420
 // Size: 0x244
 function footsteps() {
@@ -88,7 +88,7 @@ function footsteps() {
 }
 
 // Namespace load/load
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x703c1b88, Offset: 0x670
 // Size: 0x9c
 function start_intro_screen_zm() {
@@ -101,7 +101,7 @@ function start_intro_screen_zm() {
 }
 
 // Namespace load/load
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3a5cdf33, Offset: 0x718
 // Size: 0x34
 function register_clientfields() {

@@ -19,7 +19,7 @@
                 }
             ],
             "description": "#hash_762125cda5e8f283",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "description": "#hash_762124cda5e8f0d0"
@@ -27,8 +27,8 @@
     ],
     "description": "#hash_13d8fcc067f4d014",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 3,
-    "var_e8b98a8a": "#hash_31ed753676e47763",
+    "hash_eda4062b": 3,
+    "hash_e8b98a8a": "#hash_31ed753676e47763",
     "model": "#p8_wz_cu_coin_fortune_bag_full",
     "type": "itemspawnentry",
     "hintstring": "#hash_3704dc2854dba865",
@@ -38,7 +38,7 @@
     "icon": "#hash_2deb30f85fdbd34d",
     "modelscale": 2,
     "rarity": "None",
-    "var_a51bc1f7": "#hash_7205d4effffcffca",
+    "hash_a51bc1f7": "#hash_7205d4effffcffca",
     "handler": "#hash_5c844f5c1207159c",
     "rewardname": "#hash_6ce34ffbb3998db9",
     "itemtype": "quest"

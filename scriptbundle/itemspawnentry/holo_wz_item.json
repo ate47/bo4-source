@@ -9,7 +9,7 @@
     "model": "#attach_t8_optic_holo_world",
     "type": "itemspawnentry",
     "hintstring": "#hash_4938f240cc79a5a",
-    "var_65b3a12": 1,
+    "hash_65b3a12": 1,
     "name": "holo_wz_item",
     "displayname": "#hash_4938f240cc79a5a",
     "icon": "#ui_icon_attachment_holo",

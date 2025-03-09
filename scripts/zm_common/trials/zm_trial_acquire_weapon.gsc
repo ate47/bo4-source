@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_acquire_weapon/zm_trial_acquire_weapon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb9488383, Offset: 0x198
 // Size: 0x5c
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_acquire_weapon/zm_trial_acquire_weapon
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x529f23ba, Offset: 0x200
 // Size: 0x944
 function private on_begin(weapon_name, var_eaa7f0ba, var_957937ee, var_9c56c5a9, var_b896fe29) {
@@ -132,7 +132,7 @@ function private on_begin(weapon_name, var_eaa7f0ba, var_957937ee, var_9c56c5a9,
 }
 
 // Namespace zm_trial_acquire_weapon/zm_trial_acquire_weapon
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xaf37e5f6, Offset: 0xb50
 // Size: 0x3ce
 function private on_end(round_reset) {
@@ -178,7 +178,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_acquire_weapon/zm_trial_acquire_weapon
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9fe336d, Offset: 0xf28
 // Size: 0x378
 function setup_objective(str_weapon, s_challenge) {
@@ -221,7 +221,7 @@ function setup_objective(str_weapon, s_challenge) {
 }
 
 // Namespace zm_trial_acquire_weapon/zm_trial_acquire_weapon
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xce66079f, Offset: 0x12a8
 // Size: 0x21a
 function private monitor_objective(s_challenge, a_weapons) {
@@ -245,7 +245,7 @@ function private monitor_objective(s_challenge, a_weapons) {
 }
 
 // Namespace zm_trial_acquire_weapon/zm_trial_acquire_weapon
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x210f9b21, Offset: 0x14d0
 // Size: 0x1b4
 function private function_fa5e5e08() {
@@ -276,7 +276,7 @@ function private function_fa5e5e08() {
 }
 
 // Namespace zm_trial_acquire_weapon/zm_trial_acquire_weapon
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x3a9b9141, Offset: 0x1690
 // Size: 0x142
 function private function_52f6931d() {
@@ -299,7 +299,7 @@ function private function_52f6931d() {
 }
 
 // Namespace zm_trial_acquire_weapon/zm_trial_acquire_weapon
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xf5f9ee5c, Offset: 0x17e0
 // Size: 0x162
 function private function_46feb36d() {
@@ -321,7 +321,7 @@ function private function_46feb36d() {
 }
 
 // Namespace zm_trial_acquire_weapon/zm_trial_acquire_weapon
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xcd969937, Offset: 0x1950
 // Size: 0xf4
 function private function_e73fbbf7() {

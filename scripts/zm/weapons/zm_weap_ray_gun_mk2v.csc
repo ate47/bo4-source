@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1b209169, Offset: 0x190
 // Size: 0x364
 function __init__() {
@@ -35,7 +35,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x53b028dd, Offset: 0x500
 // Size: 0xac
 function beam_fire(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -47,7 +47,7 @@ function beam_fire(localclientnum, oldval, newval, bnewent, binitialsnap, fieldn
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbbf03a3f, Offset: 0x5b8
 // Size: 0x8e
 function function_efbf12ac(localclientnum) {
@@ -66,7 +66,7 @@ function function_efbf12ac(localclientnum) {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe5c40cb8, Offset: 0x650
 // Size: 0x10a
 function function_e7a7ac96(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -83,7 +83,7 @@ function function_e7a7ac96(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfef27540, Offset: 0x768
 // Size: 0x19a
 function flash_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -114,7 +114,7 @@ function flash_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldna
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9d197363, Offset: 0x910
 // Size: 0x1be
 function function_84a63db9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -143,7 +143,7 @@ function function_84a63db9(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xaeac3e71, Offset: 0xad8
 // Size: 0xe4
 function function_97482bc3(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -158,7 +158,7 @@ function function_97482bc3(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5edca0d5, Offset: 0xbc8
 // Size: 0x74
 function function_4013653a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -166,7 +166,7 @@ function function_4013653a(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb9d26123, Offset: 0xc48
 // Size: 0x9c
 function death_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

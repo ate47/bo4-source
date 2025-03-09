@@ -3,7 +3,7 @@
 #namespace planner;
 
 // Namespace planner/planner
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x4ae3e704, Offset: 0xc8
 // Size: 0x114
 function private _blackboardsapplyundostate(planner, state) {
@@ -19,7 +19,7 @@ function private _blackboardsapplyundostate(planner, state) {
 }
 
 // Namespace planner/planner
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x4a8d5b4, Offset: 0x1e8
 // Size: 0x104
 function private _blackboardscalculateundostate(planner) {
@@ -33,7 +33,7 @@ function private _blackboardscalculateundostate(planner) {
 }
 
 // Namespace planner/planner
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcbb984fa, Offset: 0x2f8
 // Size: 0xe0
 function private _blackboardsreadmode(planner) {
@@ -45,7 +45,7 @@ function private _blackboardsreadmode(planner) {
 }
 
 // Namespace planner/planner
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf0354b9, Offset: 0x3e0
 // Size: 0xe0
 function private _blackboardsreadwritemode(planner) {
@@ -57,7 +57,7 @@ function private _blackboardsreadwritemode(planner) {
 }
 
 // Namespace planner/planner
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2a554532, Offset: 0x4c8
 // Size: 0x52
 function private _initializeplannerfunctions(functype) {
@@ -70,7 +70,7 @@ function private _initializeplannerfunctions(functype) {
 }
 
 // Namespace planner/planner
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb54d03a, Offset: 0x528
 // Size: 0x1e
 function private _plancalculateplanindex(planner) {
@@ -78,7 +78,7 @@ function private _plancalculateplanindex(planner) {
 }
 
 // Namespace planner/planner
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x9c8669c9, Offset: 0x550
 // Size: 0x298
 function private _planexpandaction(planner, action) {
@@ -108,7 +108,7 @@ function private _planexpandaction(planner, action) {
 }
 
 // Namespace planner/planner
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x1bddcaca, Offset: 0x7f0
 // Size: 0x170
 function private _planexpandpostcondition(planner, postcondition) {
@@ -129,7 +129,7 @@ function private _planexpandpostcondition(planner, postcondition) {
 }
 
 // Namespace planner/planner
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xab49430e, Offset: 0x968
 // Size: 0x168
 function private _planexpandprecondition(planner, precondition) {
@@ -149,7 +149,7 @@ function private _planexpandprecondition(planner, precondition) {
 }
 
 // Namespace planner/planner
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xbeeb951f, Offset: 0xad8
 // Size: 0x64
 function private _planfindnextsibling(planner, parentnodeentry, currentchildindex) {
@@ -158,7 +158,7 @@ function private _planfindnextsibling(planner, parentnodeentry, currentchildinde
 }
 
 // Namespace planner/planner
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb3a94d02, Offset: 0xb48
 // Size: 0x44
 function private _planstackhasnodes(planner) {
@@ -167,7 +167,7 @@ function private _planstackhasnodes(planner) {
 }
 
 // Namespace planner/planner
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xebd0a9ec, Offset: 0xb98
 // Size: 0x8c
 function private _planstackpeeknode(planner) {
@@ -178,7 +178,7 @@ function private _planstackpeeknode(planner) {
 }
 
 // Namespace planner/planner
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x45ad52c3, Offset: 0xc30
 // Size: 0xac
 function private _planstackpopnode(planner) {
@@ -190,7 +190,7 @@ function private _planstackpopnode(planner) {
 }
 
 // Namespace planner/planner
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x9014b843, Offset: 0xce8
 // Size: 0x126
 function private _planstackpushnode(planner, node, childindex = undefined) {
@@ -205,7 +205,7 @@ function private _planstackpushnode(planner, node, childindex = undefined) {
 }
 
 // Namespace planner/planner
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x56d87ce2, Offset: 0xe18
 // Size: 0x28a
 function private _planpushvalidparent(planner, childnodeentry, result) {
@@ -249,7 +249,7 @@ function private _planpushvalidparent(planner, childnodeentry, result) {
 }
 
 // Namespace planner/planner
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa6771835, Offset: 0x10b0
 // Size: 0x24a
 function private _planprocessstack(planner) {
@@ -283,7 +283,7 @@ function private _planprocessstack(planner) {
 }
 
 // Namespace planner/planner
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xd0c58196, Offset: 0x1308
 // Size: 0xea
 function private _undoplan(planner, planindex) {
@@ -306,7 +306,7 @@ function addaction(parent, actionname, constants) {
 }
 
 // Namespace planner/planner
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3539ae9f, Offset: 0x1460
 // Size: 0xb2
 function addchild(parent, node) {
@@ -365,7 +365,7 @@ function addprecondition(parent, functionname, constants) {
 }
 
 // Namespace planner/planner
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf72218f5, Offset: 0x16a8
 // Size: 0x42
 function cancel(planner) {
@@ -374,7 +374,7 @@ function cancel(planner) {
 }
 
 // Namespace planner/planner
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x79c1ab7f, Offset: 0x16f8
 // Size: 0xc6
 function createaction(actionname, constants) {
@@ -388,7 +388,7 @@ function createaction(actionname, constants) {
 }
 
 // Namespace planner/planner
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe4f462d8, Offset: 0x17c8
 // Size: 0xc6
 function createplanner(name) {
@@ -405,7 +405,7 @@ function createplanner(name) {
 }
 
 // Namespace planner/planner
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xed52093f, Offset: 0x1898
 // Size: 0x126
 function createpostcondition(functionname, constants) {
@@ -420,7 +420,7 @@ function createpostcondition(functionname, constants) {
 }
 
 // Namespace planner/planner
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2148a93e, Offset: 0x19c8
 // Size: 0x126
 function createprecondition(functionname, constants) {
@@ -435,7 +435,7 @@ function createprecondition(functionname, constants) {
 }
 
 // Namespace planner/planner
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x637c2a73, Offset: 0x1af8
 // Size: 0x42
 function createselector() {
@@ -446,7 +446,7 @@ function createselector() {
 }
 
 // Namespace planner/planner
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfebce52f, Offset: 0x1b48
 // Size: 0x42
 function createsequence() {
@@ -457,7 +457,7 @@ function createsequence() {
 }
 
 // Namespace planner/planner
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x19fe12a6, Offset: 0x1b98
 // Size: 0xd8
 function createsubblackboard(planner) {
@@ -471,7 +471,7 @@ function createsubblackboard(planner) {
 }
 
 // Namespace planner/planner
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x92932927, Offset: 0x1c78
 // Size: 0x122
 function getblackboardattribute(planner, attribute, blackboardindex = 0) {
@@ -494,7 +494,7 @@ function getblackboardvalues(planner, blackboardindex) {
 }
 
 // Namespace planner/planner
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa43d50b5, Offset: 0x1e70
 // Size: 0xb4
 function getsubblackboard(planner, blackboardindex) {
@@ -505,7 +505,7 @@ function getsubblackboard(planner, blackboardindex) {
 }
 
 // Namespace planner/planner
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x424ced55, Offset: 0x1f30
 // Size: 0x286
 function plan(planner, blackboardvalues, maxframetime = 3, starttime = undefined, var_302e19d3 = 0) {
@@ -635,7 +635,7 @@ function plan(planner, blackboardvalues, maxframetime = 3, starttime = undefined
 #/
 
 // Namespace planner/planner
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xcb1f5636, Offset: 0x2770
 // Size: 0x14c
 function setblackboardattribute(planner, attribute, value, blackboardindex = 0, readonly = 0) {
@@ -647,7 +647,7 @@ function setblackboardattribute(planner, attribute, value, blackboardindex = 0, 
 }
 
 // Namespace planner/planner
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2c749ce5, Offset: 0x28c8
 // Size: 0x76
 function subblackboardcount(planner) {
@@ -659,7 +659,7 @@ function subblackboardcount(planner) {
 #namespace plannerutility;
 
 // Namespace plannerutility/planner
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6772921, Offset: 0x2948
 // Size: 0x4aa
 function createplannerfromasset(assetname) {
@@ -720,7 +720,7 @@ function createplannerfromasset(assetname) {
 }
 
 // Namespace plannerutility/planner
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaea18e2e, Offset: 0x2e00
 // Size: 0xbe
 function getplannerapifunction(functionname) {
@@ -730,7 +730,7 @@ function getplannerapifunction(functionname) {
 }
 
 // Namespace plannerutility/planner
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x68becd93, Offset: 0x2ec8
 // Size: 0xbe
 function getplanneractionfunctions(actionname) {
@@ -740,7 +740,7 @@ function getplanneractionfunctions(actionname) {
 }
 
 // Namespace plannerutility/planner
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9aea3328, Offset: 0x2f90
 // Size: 0x13c
 function registerplannerapi(functionname, functionptr) {
@@ -752,7 +752,7 @@ function registerplannerapi(functionname, functionptr) {
 }
 
 // Namespace plannerutility/planner
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xc1ae2c31, Offset: 0x30d8
 // Size: 0x246
 function registerplanneraction(actionname, paramfuncptr, initializefuncptr, updatefuncptr, terminatefuncptr) {

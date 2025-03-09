@@ -1,0 +1,44 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_603e6615e9fb001e",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 2,
+                    "spacermax": 10,
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6be47436aa71eefd",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_132c9791": 1,
+                    "hash_b3dddfd3": 1,
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_1b66b002e235b507",
+            "type": "prop",
+            "hash_a1c5c678": 1,
+            "deletewhenfinished": 1,
+            "name": "prop 1",
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_gp_bird_puffin_preen_idle_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -4,7 +4,7 @@
 #namespace zombie_death;
 
 // Namespace zombie_death/zombie_death
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xae522adc, Offset: 0x160
 // Size: 0x76
 function on_fire_timeout() {
@@ -85,7 +85,7 @@ function flame_death_fx() {
 }
 
 // Namespace zombie_death/zombie_death
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6aaece95, Offset: 0x620
 // Size: 0x90
 function randomize_array(array) {
@@ -99,7 +99,7 @@ function randomize_array(array) {
 }
 
 // Namespace zombie_death/zombie_death
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x95341e1b, Offset: 0x6b8
 // Size: 0x6e
 function set_last_gib_time() {
@@ -170,7 +170,7 @@ function get_gib_ref(direction) {
 }
 
 // Namespace zombie_death/zombie_death
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x958c6419, Offset: 0xaa0
 // Size: 0x28
 function get_random(array) {

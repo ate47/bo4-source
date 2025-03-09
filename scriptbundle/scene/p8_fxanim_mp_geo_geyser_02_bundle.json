@@ -1,0 +1,45 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7d0467f6bc007642",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_78a51d0bfbfeea5b",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5dd9098de70ec518",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                }
+            ],
+            "model": "#hash_22dcef7892794dae",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_geo_geyser_02_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

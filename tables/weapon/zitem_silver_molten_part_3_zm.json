@@ -1,0 +1,12 @@
+{
+    "name": "#zitem_silver_molten_part_3_zm",
+    "baseWeapon": "#zitem_silver_molten_part_3",
+    "streamkey": "#hash_359551b63729fcc0",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#hash_1d987eb7e88",
+    "viewmodel": "#hash_1d955b39ee0",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "underwaterExplosionSurfaceFX": []
+}

@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_disable_upgraded_weapons/zm_trial_disable_upgraded_weapons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9cdb43c6, Offset: 0xd8
 // Size: 0x5c
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_disable_upgraded_weapons/zm_trial_disable_upgraded_weapons
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xe66a79a2, Offset: 0x140
 // Size: 0x1c4
 function private on_begin() {
@@ -46,7 +46,7 @@ function private on_begin() {
 }
 
 // Namespace zm_trial_disable_upgraded_weapons/zm_trial_disable_upgraded_weapons
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7fb58799, Offset: 0x310
 // Size: 0x1dc
 function private on_end(round_reset) {
@@ -67,7 +67,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_disable_upgraded_weapons/zm_trial_disable_upgraded_weapons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf8e59557, Offset: 0x4f8
 // Size: 0x32
 function is_active() {
@@ -76,7 +76,7 @@ function is_active() {
 }
 
 // Namespace zm_trial_disable_upgraded_weapons/zm_trial_disable_upgraded_weapons
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x45195f85, Offset: 0x538
 // Size: 0x24
 function private function_33f0ddd3(eventstruct) {
@@ -84,7 +84,7 @@ function private function_33f0ddd3(eventstruct) {
 }
 
 // Namespace zm_trial_disable_upgraded_weapons/zm_trial_disable_upgraded_weapons
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xb57119c5, Offset: 0x568
 // Size: 0x1c0
 function private function_6a8979c9() {
@@ -96,7 +96,7 @@ function private function_6a8979c9() {
             self unlockweapon(weapon);
         }
         if (weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone) {
-            if (self function_635f9c02(weapon)) {
+            if (self isweaponlocked(weapon)) {
                 self lockweapon(weapon.dualwieldweapon);
                 continue;
             }

@@ -15,8 +15,8 @@
         {
             "minweight": 100,
             "itementry": "armor_shard_item",
-            "var_8261a18": "armor_shard_item",
-            "var_3f8c08e3": "armor_shard_item",
+            "childitementry_2": "armor_shard_item",
+            "childitementry_1": "armor_shard_item",
             "maxweight": 100,
             "available": 1
         },
@@ -34,12 +34,12 @@
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 4000,
+    "hash_7fb0967b": 4000,
     "type": "itemspawnlist",
-    "var_345eba59": 5,
-    "var_9b009839": 10,
+    "hash_345eba59": 5,
+    "hash_9b009839": 10,
     "name": "blackjack_ammo_stash_parent_guns",
     "displayname": "#hash_552e95261f2d04be",
-    "var_fde72c94": 100,
+    "supplystashweight": 100,
     "supplystash": 1
 }

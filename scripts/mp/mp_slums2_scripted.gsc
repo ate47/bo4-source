@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace mp_slums2_scripted/mp_slums2_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x66c9a1e3, Offset: 0x100
 // Size: 0x24
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace mp_slums2_scripted/mp_slums2_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x554c0eaf, Offset: 0x130
 // Size: 0x2c
 function __main__() {
@@ -34,7 +34,7 @@ function __main__() {
 }
 
 // Namespace mp_slums2_scripted/mp_slums2_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x714a8d40, Offset: 0x168
 // Size: 0x114
 function on_game_playing() {
@@ -51,7 +51,7 @@ function on_game_playing() {
 }
 
 // Namespace mp_slums2_scripted/mp_slums2_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcc7371b6, Offset: 0x288
 // Size: 0x84
 function function_2cdcf5c3() {
@@ -65,7 +65,7 @@ function function_2cdcf5c3() {
 }
 
 // Namespace mp_slums2_scripted/mp_slums2_scripted
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa5a03a1c, Offset: 0x318
 // Size: 0x5c
 function function_33022f5b(a_ents) {

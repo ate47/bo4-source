@@ -3,7 +3,7 @@
 #namespace bot_animation;
 
 // Namespace bot_animation/bot_animation
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4bc044e0, Offset: 0x98
 // Size: 0x124
 function play_animation(var_f6550bae) {
@@ -20,7 +20,7 @@ function play_animation(var_f6550bae) {
 }
 
 // Namespace bot_animation/bot_animation
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x169ea4ff, Offset: 0x1c8
 // Size: 0x1f4
 function private function_33f98f4(animation, mocomp, blendout) {

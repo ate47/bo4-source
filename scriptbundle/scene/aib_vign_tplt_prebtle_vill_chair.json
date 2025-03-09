@@ -1,0 +1,43 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7e1bf13ab45c0343",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_4ce9fe1d957caacd",
+            "type": "fakeactor",
+            "name": "fakeactor 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7df3d6f93ae90b8f",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_613a0199c2565f32",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_tplt_prebtle_vill_chair",
+    "dontsync": 1,
+    "team": "any"
+}

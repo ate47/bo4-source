@@ -20,7 +20,7 @@
 #namespace zm_escape_travel;
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8575f0c7, Offset: 0x558
 // Size: 0x784
 function init_alcatraz_zipline() {
@@ -85,7 +85,7 @@ function init_alcatraz_zipline() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x65ecf2db, Offset: 0xce8
 // Size: 0x140
 function function_815e3997() {
@@ -105,7 +105,7 @@ function function_815e3997() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7dcc3f47, Offset: 0xe30
 // Size: 0x304
 function gondola_hostmigration() {
@@ -161,7 +161,7 @@ function link_player_to_gondola() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfbeaa0a9, Offset: 0x1230
 // Size: 0xa0
 function function_9a8ab327() {
@@ -176,7 +176,7 @@ function function_9a8ab327() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8484122, Offset: 0x12d8
 // Size: 0xf6
 function zombie_alcatraz_player_intersection_tracker_override(other_player) {
@@ -193,7 +193,7 @@ function zombie_alcatraz_player_intersection_tracker_override(other_player) {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcf43fabc, Offset: 0x13d8
 // Size: 0xda
 function establish_gondola_door_definition(mdl_door) {
@@ -216,7 +216,7 @@ function establish_gondola_door_definition(mdl_door) {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd2e4b78a, Offset: 0x14c0
 // Size: 0xda
 function establish_gondola_gate_definition(mdl_gate) {
@@ -239,7 +239,7 @@ function establish_gondola_gate_definition(mdl_gate) {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xebe0f0c5, Offset: 0x15a8
 // Size: 0xba
 function establish_gondola_landing_door_definition(mdl_door) {
@@ -261,7 +261,7 @@ function establish_gondola_landing_door_definition(mdl_door) {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5b06dd61, Offset: 0x1670
 // Size: 0xba
 function establish_gondola_landing_gate_definition(mdl_gate) {
@@ -283,7 +283,7 @@ function establish_gondola_landing_gate_definition(mdl_gate) {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x53216cb, Offset: 0x1738
 // Size: 0x4c8
 function gondola_doors_move(str_side, n_state) {
@@ -353,7 +353,7 @@ function gondola_doors_move(str_side, n_state) {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xcc30d53c, Offset: 0x1c08
 // Size: 0x1bc
 function gondola_gate_moves(n_state, n_side_modifier, var_d134f0d1, var_b82242be, var_8bd1eeb0, var_b0f06f50) {
@@ -365,7 +365,7 @@ function gondola_gate_moves(n_state, n_side_modifier, var_d134f0d1, var_b82242be
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 10, eflags: 0x1 linked
+// Params 10, eflags: 0x0
 // Checksum 0x92073941, Offset: 0x1dd0
 // Size: 0x30c
 function gondola_gate_and_door_moves(n_state, n_side_modifier, var_d134f0d1, mdl_door_left, var_b82242be, mdl_door_right, var_8bd1eeb0, var_b3c73561, var_b0f06f50, var_1c80ffe2) {
@@ -381,7 +381,7 @@ function gondola_gate_and_door_moves(n_state, n_side_modifier, var_d134f0d1, mdl
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf7d50c3d, Offset: 0x20e8
 // Size: 0x3ce
 function zipline_move_trigger_think() {
@@ -441,7 +441,7 @@ function zipline_move_trigger_think() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf04e1415, Offset: 0x24c0
 // Size: 0x43e
 function zipline_call_trigger_think() {
@@ -508,7 +508,7 @@ function zipline_call_trigger_think() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xac094cf6, Offset: 0x2908
 // Size: 0xc8c
 function move_gondola(b_suppress_doors_close = 0) {
@@ -635,7 +635,7 @@ function move_gondola(b_suppress_doors_close = 0) {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa5489b2e, Offset: 0x35a0
 // Size: 0x10c
 function gondola_lights_red() {
@@ -650,7 +650,7 @@ function gondola_lights_red() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x75bd3d98, Offset: 0x36b8
 // Size: 0xe4
 function gondola_lights_green() {
@@ -664,7 +664,7 @@ function gondola_lights_green() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7834461c, Offset: 0x37a8
 // Size: 0x1a
 function function_c64e4079() {
@@ -673,7 +673,7 @@ function function_c64e4079() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6a9c7493, Offset: 0x37d0
 // Size: 0x1a
 function function_565994f0() {
@@ -682,7 +682,7 @@ function function_565994f0() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe11e50b8, Offset: 0x37f8
 // Size: 0x11e
 function check_when_gondola_moves_if_groundent_is_undefined(e_gondola) {
@@ -700,7 +700,7 @@ function check_when_gondola_moves_if_groundent_is_undefined(e_gondola) {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd82fd1a, Offset: 0x3920
 // Size: 0x218
 function create_gondola_poi() {
@@ -724,7 +724,7 @@ function create_gondola_poi() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xab8f0cd9, Offset: 0x3b40
 // Size: 0x44
 function tear_down_gondola_poi() {
@@ -735,7 +735,7 @@ function tear_down_gondola_poi() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd931ce8f, Offset: 0x3b90
 // Size: 0xfc
 function gondola_moving_vo() {
@@ -756,7 +756,7 @@ function gondola_moving_vo() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x157a4633, Offset: 0x3c98
 // Size: 0xb8
 function array_players_on_gondola() {
@@ -771,7 +771,7 @@ function array_players_on_gondola() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8268c8b3, Offset: 0x3d58
 // Size: 0x58
 function function_dc269d0d(a_zombies, e_gondola) {
@@ -783,7 +783,7 @@ function function_dc269d0d(a_zombies, e_gondola) {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf166c488, Offset: 0x3db8
 // Size: 0xa4
 function function_6a4544e() {
@@ -799,7 +799,7 @@ function function_6a4544e() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbef5a839, Offset: 0x3e68
 // Size: 0x7a
 function gondola_physics_explosion(n_move_time) {
@@ -811,7 +811,7 @@ function gondola_physics_explosion(n_move_time) {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xadfb697b, Offset: 0x3ef0
 // Size: 0x74
 function function_d8e07db3() {
@@ -823,7 +823,7 @@ function function_d8e07db3() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7c883754, Offset: 0x3f70
 // Size: 0x4ee
 function player_escaped_gondola_failsafe() {
@@ -876,7 +876,7 @@ function player_escaped_gondola_failsafe() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf55157ae, Offset: 0x4468
 // Size: 0xd0
 function private function_da48c149(s_pos) {
@@ -894,7 +894,7 @@ function private function_da48c149(s_pos) {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4618227f, Offset: 0x4540
 // Size: 0xcc
 function gondola_cooldown() {
@@ -907,7 +907,7 @@ function gondola_cooldown() {
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x2aeeb0e7, Offset: 0x4618
 // Size: 0x74
 function private function_de1be51e() {

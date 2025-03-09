@@ -473,7 +473,7 @@ function private function_738575c4(takeoldweapon, givestreak = 1) {
 // Size: 0x104
 function private function_d2f0197a() {
     if (isdefined(self.pers[#"dynamic_loadout"].armor)) {
-        self function_b5feff95(#"hash_6be738527a4213aa");
+        self addtalent(#"hash_6be738527a4213aa");
         armor = self.pers[#"dynamic_loadout"].armor;
         self function_52630bb(armor);
         self armor::set_armor(armor.armor, armor.armor, 0, armor.var_767b7337, armor.var_782dbf79, armor.var_673a16ad, armor.var_741010b5, 1, 1, 1);
@@ -629,13 +629,13 @@ function private function_6a829089() {
 // Checksum 0xe47923cf, Offset: 0x2df8
 // Size: 0x1b4
 function private function_422164cd() {
-    self function_e6f9e3cd();
+    self cleartalents();
     self clearperks();
     foreach (talent in self.pers[#"dynamic_loadout"].talents) {
         if (talent == #"hash_7932008294f0d876") {
             continue;
         }
-        self function_b5feff95(talent + level.game_mode_suffix);
+        self addtalent(talent + level.game_mode_suffix);
         if (talent == #"gear_medicalinjectiongun") {
             self.var_c7e6d7c7 = 1;
         }

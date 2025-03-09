@@ -5,6 +5,6 @@
     "name": "medal_hatchet_kill",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#ui_icon_medal_choppedup",
-    "stringref": "#hash_6587318c4418924d",
+    "stringref": "#medal/hatchet_kill",
     "iconlarge": "#ui_icon_medal_choppedup_large"
 }

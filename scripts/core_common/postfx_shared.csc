@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace postfx/postfx_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xabb1ac02, Offset: 0xe0
 // Size: 0x24
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace postfx/postfx_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9adc05d7, Offset: 0x110
 // Size: 0x7c
 function localplayer_postfx_bundle_init(localclientnum) {
@@ -122,7 +122,7 @@ function localplayer_postfx_bundle_init(localclientnum) {
 #/
 
 // Namespace postfx/postfx_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x11135e94, Offset: 0x670
 // Size: 0x3c
 function playpostfxbundle(playbundlename) {
@@ -131,7 +131,7 @@ function playpostfxbundle(playbundlename) {
 }
 
 // Namespace postfx/postfx_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe6c4f3e2, Offset: 0x6b8
 // Size: 0x84
 function watchentityshutdown(playbundlename) {
@@ -143,7 +143,7 @@ function watchentityshutdown(playbundlename) {
 }
 
 // Namespace postfx/postfx_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x973925d3, Offset: 0x748
 // Size: 0x24
 function stoppostfxbundle(bundlename) {
@@ -159,7 +159,7 @@ function function_c8b5f318(bundlename, constname, constvalue) {
 }
 
 // Namespace postfx/postfx_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x501c8811, Offset: 0x7c0
 // Size: 0x22
 function function_556665f2(bundlename) {
@@ -167,7 +167,7 @@ function function_556665f2(bundlename) {
 }
 
 // Namespace postfx/postfx_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb03ce68d, Offset: 0x7f0
 // Size: 0x24
 function exitpostfxbundle(bundlename) {
@@ -175,7 +175,7 @@ function exitpostfxbundle(bundlename) {
 }
 
 // Namespace postfx/postfx_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x437f0fba, Offset: 0x820
 // Size: 0x11c
 function setfrontendstreamingoverlay(localclientnum, system, enabled) {

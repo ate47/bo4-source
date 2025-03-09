@@ -3,89 +3,89 @@
         {
             "minweight": 1,
             "itementry": "sniper_fastrechamber_t8_gold_item",
-            "var_3f8c08e3": "ammo_type_338_item",
+            "childitementry_1": "ammo_type_338_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
             "itementry": "sniper_quickscope_t8_gold_item",
-            "var_3f8c08e3": "ammo_type_338_item",
+            "childitementry_1": "ammo_type_338_item",
             "maxweight": 1,
             "available": 3
         },
         {
             "minweight": 1,
             "itementry": "sniper_powerbolt_t8_gold_item",
-            "var_3f8c08e3": "ammo_type_50cal_item",
+            "childitementry_1": "ammo_type_50cal_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
             "itementry": "sniper_powersemi_t8_gold_item",
-            "var_3f8c08e3": "ammo_type_338_item",
+            "childitementry_1": "ammo_type_338_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
             "itementry": "ar_modular_t8_gold_item",
-            "var_3f8c08e3": "ammo_type_762_item",
+            "childitementry_1": "ammo_type_762_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
             "itementry": "ar_stealth_t8_gold_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
             "itementry": "ar_fastfire_t8_gold_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
             "itementry": "ar_accurate_t8_gold_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
             "itementry": "ar_damage_t8_gold_item",
-            "var_3f8c08e3": "ammo_type_762_item",
+            "childitementry_1": "ammo_type_762_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
             "itementry": "tr_longburst_t8_gold_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 1
         },
         {
             "minweight": 1,
             "itementry": "tr_midburst_t8_gold_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 1
         },
         {
             "minweight": 1,
             "itementry": "tr_powersemi_t8_gold_item",
-            "var_3f8c08e3": "ammo_type_762_item",
+            "childitementry_1": "ammo_type_762_item",
             "maxweight": 1
         }
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 12,
-    "var_9b009839": -1,
+    "hash_345eba59": 12,
+    "hash_9b009839": -1,
     "name": "hellhound_gold_guns",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_white_mobile_plan/zm_trial_white_mobile_plan
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x82db74a1, Offset: 0xc8
 // Size: 0x5c
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_white_mobile_plan/zm_trial_white_mobile_plan
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8ce822b5, Offset: 0x130
 // Size: 0x4c
 function private on_begin(var_ff22cb62) {
@@ -34,7 +34,7 @@ function private on_begin(var_ff22cb62) {
 }
 
 // Namespace zm_trial_white_mobile_plan/zm_trial_white_mobile_plan
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x37885646, Offset: 0x188
 // Size: 0xc4
 function private on_end(round_reset) {
@@ -50,7 +50,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_white_mobile_plan/zm_trial_white_mobile_plan
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x4b0c130e, Offset: 0x258
 // Size: 0x12c
 function private function_53627246() {

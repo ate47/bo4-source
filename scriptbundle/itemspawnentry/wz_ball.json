@@ -7,7 +7,7 @@
     "type": "itemspawnentry",
     "name": "wz_ball",
     "displayname": "#weapon/basketball",
-    "var_36781d9f": "wpn_bball_bounce_default",
+    "dropsound": "wpn_bball_bounce_default",
     "icon": "#ui_icon_inventory_p7_fir_ball_sports_basketball",
     "modelscale": 1,
     "rarity": "None",

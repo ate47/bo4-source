@@ -1,0 +1,143 @@
+{
+    "objects": [
+        {
+            "mainanim": "#hash_7b79fb44c02e5dc7",
+            "model": "#hash_3f413e2d3d909a62",
+            "type": "prop",
+            "vmtype": "server",
+            "name": "roof_tarp_01",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "p7_fxanim_mp_slums_tarp_plastic_roof_01_bundle",
+    "nextscenemode": "init"
+}

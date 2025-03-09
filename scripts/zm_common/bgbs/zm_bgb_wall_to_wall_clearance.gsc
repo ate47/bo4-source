@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_wall_to_wall_clearance/zm_bgb_wall_to_wall_clearance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdf5d1e69, Offset: 0xe8
 // Size: 0x84
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_wall_to_wall_clearance/zm_bgb_wall_to_wall_clearance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc2738ffe, Offset: 0x178
 // Size: 0x64
 function enable() {
@@ -36,7 +36,7 @@ function enable() {
 }
 
 // Namespace zm_bgb_wall_to_wall_clearance/zm_bgb_wall_to_wall_clearance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb73cab53, Offset: 0x1e8
 // Size: 0x64
 function disable() {
@@ -46,7 +46,7 @@ function disable() {
 }
 
 // Namespace zm_bgb_wall_to_wall_clearance/zm_bgb_wall_to_wall_clearance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x41034431, Offset: 0x258
 // Size: 0x2e
 function validation() {
@@ -57,7 +57,7 @@ function validation() {
 }
 
 // Namespace zm_bgb_wall_to_wall_clearance/zm_bgb_wall_to_wall_clearance
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3f0f46fb, Offset: 0x290
 // Size: 0x18
 function function_84832f40(w_wallbuy, var_2b6f3563) {
@@ -65,7 +65,7 @@ function function_84832f40(w_wallbuy, var_2b6f3563) {
 }
 
 // Namespace zm_bgb_wall_to_wall_clearance/zm_bgb_wall_to_wall_clearance
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcbf163d0, Offset: 0x2b0
 // Size: 0x3e
 function override_ammo_cost(w_wallbuy, stub) {

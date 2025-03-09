@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_23a5d69e5c512c93",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_73ae302152805289",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "p8_fxanim_mp_silo_netting_orange_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

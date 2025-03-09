@@ -11,7 +11,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace voice_events/voice_events
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x24302667, Offset: 0xb8
 // Size: 0x2a
 function __init__() {
@@ -93,7 +93,7 @@ function queue_event(queuename, event, handlerfunc, priority = 0, params = undef
 }
 
 // Namespace voice_events/voice_events
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfebf4d4b, Offset: 0x6d0
 // Size: 0x230
 function function_c710099c(event, params) {
@@ -125,7 +125,7 @@ function function_c710099c(event, params) {
 }
 
 // Namespace voice_events/voice_events
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x91382913, Offset: 0x908
 // Size: 0x7c
 function private queue_item(&queue, item) {
@@ -138,7 +138,7 @@ function private queue_item(&queue, item) {
 }
 
 // Namespace voice_events/voice_events
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb666aeea, Offset: 0x990
 // Size: 0xba
 function private function_accf7a2e(&queue) {

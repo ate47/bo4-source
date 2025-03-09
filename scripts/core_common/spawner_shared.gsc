@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace spawner/spawner_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x69d27872, Offset: 0x1b0
 // Size: 0x164
 function __init__() {
@@ -45,7 +45,7 @@ function __init__() {
 }
 
 // Namespace spawner/spawner_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe5289b01, Offset: 0x320
 // Size: 0xe4
 function __main__() {
@@ -61,7 +61,7 @@ function __main__() {
 }
 
 // Namespace spawner/spawner_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x382f739a, Offset: 0x410
 // Size: 0x2b2
 function global_ai_array() {
@@ -95,7 +95,7 @@ function global_ai_array() {
 }
 
 // Namespace spawner/spawner_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd2d1bc04, Offset: 0x6d0
 // Size: 0x2e
 function spawn_throttle_reset() {
@@ -106,7 +106,7 @@ function spawn_throttle_reset() {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1e86d40b, Offset: 0x708
 // Size: 0x68
 function global_spawn_throttle(n_count_per_network_frame = 4) {
@@ -119,7 +119,7 @@ function global_spawn_throttle(n_count_per_network_frame = 4) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3e275a8e, Offset: 0x778
 // Size: 0xdc
 function spawn_prethink() {
@@ -142,7 +142,7 @@ function spawn_prethink() {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5ac8c974, Offset: 0x860
 // Size: 0x246
 function spawn_think(spawner) {
@@ -180,7 +180,7 @@ function spawn_think(spawner) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x453391df, Offset: 0xab0
 // Size: 0x3b6
 function run_spawn_functions() {
@@ -230,7 +230,7 @@ function run_spawn_functions() {
 }
 
 // Namespace spawner/spawner_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x21f9c7b5, Offset: 0xe70
 // Size: 0x24
 function living_ai_prethink() {
@@ -240,7 +240,7 @@ function living_ai_prethink() {
 }
 
 // Namespace spawner/spawner_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfb89702e, Offset: 0xea0
 // Size: 0xa6
 function crawl_through_targets_to_init_flags() {
@@ -255,7 +255,7 @@ function crawl_through_targets_to_init_flags() {
 }
 
 // Namespace spawner/spawner_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf6b5ce13, Offset: 0xf50
 // Size: 0x16
 function remove_spawner_values() {
@@ -264,7 +264,7 @@ function remove_spawner_values() {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1b7c4cb3, Offset: 0xf70
 // Size: 0x36c
 function spawn_think_action(spawner) {
@@ -329,7 +329,7 @@ function spawn_think_action(spawner) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x92845247, Offset: 0x12e8
 // Size: 0x9c
 function function_27fb21d8(s_scene) {
@@ -345,7 +345,7 @@ function function_27fb21d8(s_scene) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa4689a33, Offset: 0x1390
 // Size: 0x2a
 function get_target_ents(target) {
@@ -353,7 +353,7 @@ function get_target_ents(target) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcb71f2ed, Offset: 0x13c8
 // Size: 0x2a
 function get_target_nodes(target) {
@@ -361,7 +361,7 @@ function get_target_nodes(target) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9ad44f86, Offset: 0x1400
 // Size: 0x2a
 function get_target_structs(target) {
@@ -369,7 +369,7 @@ function get_target_structs(target) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3da8425, Offset: 0x1438
 // Size: 0x2c
 function node_has_radius(node) {
@@ -393,7 +393,7 @@ function go_to_struct(node, optional_arrived_at_node_func) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1bc4f175, Offset: 0x14f0
 // Size: 0xd4
 function go_to_node(node, goal_type, optional_arrived_at_node_func) {
@@ -410,7 +410,7 @@ function go_to_node(node, goal_type, optional_arrived_at_node_func) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa93b5458, Offset: 0x15d0
 // Size: 0x14a
 function get_least_used_from_array(array) {
@@ -434,7 +434,7 @@ function get_least_used_from_array(array) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x97e6fb86, Offset: 0x1728
 // Size: 0x4e4
 function go_to_node_using_funcs(node, get_target_func, set_goal_func_quits, optional_arrived_at_node_func, require_player_dist) {
@@ -517,7 +517,7 @@ function go_to_node_using_funcs(node, get_target_func, set_goal_func_quits, opti
 }
 
 // Namespace spawner/spawner_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xde59fc57, Offset: 0x1c18
 // Size: 0x2e4
 function go_to_node_wait_for_player(node, get_target_func, dist) {
@@ -561,7 +561,7 @@ function go_to_node_wait_for_player(node, get_target_func, dist) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6788ed24, Offset: 0x1f08
 // Size: 0x2c
 function go_to_node_set_goal_pos(ent) {
@@ -569,7 +569,7 @@ function go_to_node_set_goal_pos(ent) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x623264be, Offset: 0x1f40
 // Size: 0x24
 function go_to_node_set_goal_node(node) {
@@ -577,7 +577,7 @@ function go_to_node_set_goal_node(node) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfb3489aa, Offset: 0x1f70
 // Size: 0x22
 function remove_crawled(ent) {
@@ -588,7 +588,7 @@ function remove_crawled(ent) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7cedf184, Offset: 0x1fa0
 // Size: 0x168
 function crawl_target_and_init_flags(ent, get_func) {
@@ -622,7 +622,7 @@ function crawl_target_and_init_flags(ent, get_func) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf096e64e, Offset: 0x2110
 // Size: 0x27e
 function get_node_funcs_based_on_target(node, goal_type) {
@@ -661,7 +661,7 @@ function get_node_funcs_based_on_target(node, goal_type) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd96fc837, Offset: 0x2398
 // Size: 0xb6
 function update_target_array(str_target) {
@@ -680,7 +680,7 @@ function update_target_array(str_target) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x89a335df, Offset: 0x2458
 // Size: 0x72
 function set_goalradius_based_on_settings(node) {
@@ -696,7 +696,7 @@ function set_goalradius_based_on_settings(node) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x933a1eab, Offset: 0x24d8
 // Size: 0x82
 function get_goal(str_goal, str_key = "targetname") {
@@ -785,7 +785,7 @@ function get_goal(str_goal, str_key = "targetname") {
 #/
 
 // Namespace spawner/spawner_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2fbbbd81, Offset: 0x2ef8
 // Size: 0x2a4
 function aigroup_init(aigroup, spawner) {
@@ -817,7 +817,7 @@ function aigroup_init(aigroup, spawner) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc4ca16d7, Offset: 0x31a8
 // Size: 0x48
 function aigroup_spawner_death(tracker) {
@@ -826,7 +826,7 @@ function aigroup_spawner_death(tracker) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9036d30e, Offset: 0x31f8
 // Size: 0xb6
 function aigroup_think(tracker) {
@@ -842,7 +842,7 @@ function aigroup_think(tracker) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xea13f089, Offset: 0x32b8
 // Size: 0x8c
 function set_ai_group_cleared_flag(tracker) {
@@ -865,7 +865,7 @@ function trigger_requires_player(trigger) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x624cb30e, Offset: 0x3380
 // Size: 0xbcc
 function spawn(b_force = 0, str_targetname, v_origin, v_angles, bignorespawninglimit) {
@@ -1038,7 +1038,7 @@ function spawn(b_force = 0, str_targetname, v_origin, v_angles, bignorespawningl
 }
 
 // Namespace spawner/spawner_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xce837e3c, Offset: 0x3f58
 // Size: 0x44
 function function_d4a13039() {
@@ -1049,7 +1049,7 @@ function function_d4a13039() {
 }
 
 // Namespace spawner/spawner_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa8c8f4a2, Offset: 0x3fa8
 // Size: 0xaa
 function teleport_spawned(v_origin = self.origin, v_angles = self.angles, b_reset_entity = 1) {
@@ -1062,7 +1062,7 @@ function teleport_spawned(v_origin = self.origin, v_angles = self.angles, b_rese
 }
 
 // Namespace spawner/spawner_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xefea561c, Offset: 0x4060
 // Size: 0xec
 function check_player_requirements() {
@@ -1093,7 +1093,7 @@ function check_player_requirements() {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x836cdf6f, Offset: 0x4158
 // Size: 0x6e
 function spawn_failed(spawn) {
@@ -1129,7 +1129,7 @@ function set_ai_group_cleared_count(aigroup, count) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb72fcdcc, Offset: 0x42d0
 // Size: 0x6c
 function waittill_ai_group_cleared(aigroup) {
@@ -1194,7 +1194,7 @@ function get_ai_group_sentient_count(aigroup) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6420ed3e, Offset: 0x4568
 // Size: 0xbc
 function get_ai_group_spawner_count(aigroup) {
@@ -1223,7 +1223,7 @@ function get_ai_group_ai(aigroup) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 3, eflags: 0x21 linked variadic
+// Params 3, eflags: 0x20 variadic
 // Checksum 0x5b73222f, Offset: 0x46e8
 // Size: 0x148
 function add_global_spawn_function(team, spawn_func, ...) {
@@ -1267,7 +1267,7 @@ function add_ai_spawn_function(spawn_func, ...) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 3, eflags: 0x21 linked variadic
+// Params 3, eflags: 0x20 variadic
 // Checksum 0xa353548c, Offset: 0x49e0
 // Size: 0x148
 function add_archetype_spawn_function(archetype, spawn_func, ...) {
@@ -1327,7 +1327,7 @@ function remove_global_spawn_function(team, func) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 2, eflags: 0x21 linked variadic
+// Params 2, eflags: 0x20 variadic
 // Checksum 0x26f9c0d, Offset: 0x4dd0
 // Size: 0xc6
 function add_spawn_function(spawn_func, ...) {
@@ -1342,7 +1342,7 @@ function add_spawn_function(spawn_func, ...) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfba74d5c, Offset: 0x4ea0
 // Size: 0x112
 function remove_spawn_function(func) {
@@ -1393,7 +1393,7 @@ function remove_spawn_function_ai_group(str_aigroup, func_spawn, param_1, param_
 }
 
 // Namespace spawner/spawner_shared
-// Params 3, eflags: 0x21 linked variadic
+// Params 3, eflags: 0x20 variadic
 // Checksum 0xce6fc222, Offset: 0x5278
 // Size: 0x1e8
 function simple_spawn(name_or_spawners, spawn_func, ...) {
@@ -1450,7 +1450,7 @@ function autoexec init_female_spawn() {
 }
 
 // Namespace spawner/spawner_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3f1514cc, Offset: 0x5570
 // Size: 0x1a
 function set_female_percent(percent) {

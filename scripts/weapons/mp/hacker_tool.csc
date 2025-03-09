@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x249720ea, Offset: 0xc0
 // Size: 0x14
 function __init__() {

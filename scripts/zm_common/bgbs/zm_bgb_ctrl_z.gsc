@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_ctrl_z/zm_bgb_ctrl_z
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbb01eda8, Offset: 0x150
 // Size: 0x84
 function __init__() {
@@ -30,7 +30,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_ctrl_z/zm_bgb_ctrl_z
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbb7056fc, Offset: 0x1e0
 // Size: 0x26e
 function enable() {
@@ -69,7 +69,7 @@ function enable() {
 }
 
 // Namespace zm_bgb_ctrl_z/zm_bgb_ctrl_z
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd5392987, Offset: 0x458
 // Size: 0xe
 function disable() {
@@ -77,7 +77,7 @@ function disable() {
 }
 
 // Namespace zm_bgb_ctrl_z/zm_bgb_ctrl_z
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x852971c4, Offset: 0x470
 // Size: 0x30
 function validation() {
@@ -89,7 +89,7 @@ function validation() {
 }
 
 // Namespace zm_bgb_ctrl_z/zm_bgb_ctrl_z
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe85b04e1, Offset: 0x4a8
 // Size: 0x1f4
 function turn_z(player) {
@@ -128,7 +128,7 @@ function turn_z(player) {
 }
 
 // Namespace zm_bgb_ctrl_z/zm_bgb_ctrl_z
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc0b2ae56, Offset: 0x6a8
 // Size: 0xdc
 function zombie_death_time_limit(e_attacker) {
@@ -145,7 +145,7 @@ function zombie_death_time_limit(e_attacker) {
 }
 
 // Namespace zm_bgb_ctrl_z/zm_bgb_ctrl_z
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc2835df3, Offset: 0x790
 // Size: 0x172
 function function_880a86b2() {

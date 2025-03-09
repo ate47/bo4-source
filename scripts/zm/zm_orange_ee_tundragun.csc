@@ -4,7 +4,7 @@
 #namespace zm_orange_ee_tundragun;
 
 // Namespace zm_orange_ee_tundragun/zm_orange_ee_tundragun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x90
 // Size: 0x4
 function init() {

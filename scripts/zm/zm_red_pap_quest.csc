@@ -9,7 +9,7 @@
 #namespace zm_red_pap_quest;
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2d5016c6, Offset: 0xf0
 // Size: 0x352
 function init_clientfield() {
@@ -27,7 +27,7 @@ function init_clientfield() {
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6da124c0, Offset: 0x450
 // Size: 0x3c
 function function_56b9111c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -35,7 +35,7 @@ function function_56b9111c(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xbbdbd950, Offset: 0x498
 // Size: 0x3c
 function function_f2332be2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -43,7 +43,7 @@ function function_f2332be2(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2d6025e5, Offset: 0x4e0
 // Size: 0x94
 function function_11d62eb0(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -55,7 +55,7 @@ function function_11d62eb0(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x95bf318b, Offset: 0x580
 // Size: 0x94
 function function_e83bf3a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -67,7 +67,7 @@ function function_e83bf3a(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb20e224e, Offset: 0x620
 // Size: 0x74
 function function_417c12e1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -75,7 +75,7 @@ function function_417c12e1(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xabc79eec, Offset: 0x6a0
 // Size: 0x9c
 function crystal_explosion_func(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -84,7 +84,7 @@ function crystal_explosion_func(localclientnum, oldval, newval, bnewent, binitia
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x445daefe, Offset: 0x748
 // Size: 0x94
 function function_5783c958(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -96,7 +96,7 @@ function function_5783c958(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xac7a16b1, Offset: 0x7e8
 // Size: 0x94
 function function_6c40f793(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

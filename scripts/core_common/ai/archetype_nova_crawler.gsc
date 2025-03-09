@@ -7,7 +7,7 @@
 
 // Namespace archetypenovacrawler/archetype_nova_crawler
 // Params 0, eflags: 0x2
-// Checksum 0x3b87998, Offset: 0x88
+// Checksum 0x31908c24, Offset: 0x88
 // Size: 0x54
 function autoexec init() {
     novacrawlerinterface::registernovacrawlerinterfaceattributes();
@@ -19,7 +19,7 @@ function autoexec init() {
 
     // Namespace archetypenovacrawler/archetype_nova_crawler
     // Params 0, eflags: 0x4
-    // Checksum 0x7317d21a, Offset: 0xe8
+    // Checksum 0xedab19b3, Offset: 0xe8
     // Size: 0x24
     function private function_32107b12() {
         assert(isdefined(self.ai));
@@ -28,8 +28,8 @@ function autoexec init() {
 #/
 
 // Namespace archetypenovacrawler/archetype_nova_crawler
-// Params 0, eflags: 0x5 linked
-// Checksum 0x59675f20, Offset: 0x118
+// Params 0, eflags: 0x4
+// Checksum 0x28b8c8ec, Offset: 0x118
 // Size: 0x62
 function private function_ea4610a7() {
     blackboard::createblackboardforentity(self);
@@ -39,16 +39,16 @@ function private function_ea4610a7() {
 }
 
 // Namespace archetypenovacrawler/archetype_nova_crawler
-// Params 1, eflags: 0x5 linked
-// Checksum 0xb7eca9f, Offset: 0x188
+// Params 1, eflags: 0x4
+// Checksum 0xc0325b70, Offset: 0x188
 // Size: 0xc
 function private function_b11c2bcd(entity) {
     
 }
 
 // Namespace archetypenovacrawler/archetype_nova_crawler
-// Params 1, eflags: 0x5 linked
-// Checksum 0xa0a8b0f4, Offset: 0x1a0
+// Params 1, eflags: 0x4
+// Checksum 0x559853c3, Offset: 0x1a0
 // Size: 0x2c
 function private function_80f18700(entity) {
     self.__blackboard = undefined;
@@ -56,7 +56,7 @@ function private function_80f18700(entity) {
 }
 
 // Namespace archetypenovacrawler/archetype_nova_crawler
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x80f724d1, Offset: 0x1d8
 // Size: 0x4
 function private registerbehaviorscriptfunctions() {
@@ -67,7 +67,7 @@ function private registerbehaviorscriptfunctions() {
 
     // Namespace archetypenovacrawler/archetype_nova_crawler
     // Params 1, eflags: 0x4
-    // Checksum 0x37d5ba90, Offset: 0x1e8
+    // Checksum 0xdb541c6a, Offset: 0x1e8
     // Size: 0x54
     function private function_3d50e4d0(message) {
         if (getdvarint(#"hash_35bebcc5f50d2641", 0)) {

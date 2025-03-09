@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x705a4883, Offset: 0x1c0
 // Size: 0x144
 function __init__() {
@@ -35,7 +35,7 @@ function __init__() {
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xb4573efd, Offset: 0x310
 // Size: 0x1ec
 function result(death, attacker, mod, weapon) {
@@ -72,7 +72,7 @@ function result(death, attacker, mod, weapon) {
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd9daecfb, Offset: 0x508
 // Size: 0x208
 function function_8e97a3a4(attacker, weapon) {
@@ -106,7 +106,7 @@ function function_8e97a3a4(attacker, weapon) {
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x4be31d57, Offset: 0x718
 // Size: 0x164
 function private function_fef86dd4(var_c5ad44f1, n_damage, e_attacker, weapon) {
@@ -126,7 +126,7 @@ function private function_fef86dd4(var_c5ad44f1, n_damage, e_attacker, weapon) {
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8566cac5, Offset: 0x888
 // Size: 0x126
 function function_682e5375() {
@@ -155,7 +155,7 @@ function function_682e5375() {
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2d809d31, Offset: 0x9b8
 // Size: 0x12c
 function zombie_death_time_limit(e_attacker, weapon) {
@@ -173,7 +173,7 @@ function zombie_death_time_limit(e_attacker, weapon) {
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x45850472, Offset: 0xaf0
 // Size: 0x160
 function function_a22e41ec(_hash) {
@@ -196,7 +196,7 @@ function function_a22e41ec(_hash) {
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xfc2f5ff2, Offset: 0xc58
 // Size: 0x206
 function zombie_death_explosion(var_58928a4b, e_attacker, weapon) {
@@ -226,7 +226,7 @@ function zombie_death_explosion(var_58928a4b, e_attacker, weapon) {
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xddf69ad2, Offset: 0xe68
 // Size: 0x86
 function zombie_kill_tracker(e_attacker) {
@@ -247,7 +247,7 @@ function zombie_kill_tracker(e_attacker) {
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xeab78241, Offset: 0xef8
 // Size: 0x10c
 function zombie_death_gib(e_attacker, weapon) {

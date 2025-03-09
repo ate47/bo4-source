@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7b49959d, Offset: 0x200
 // Size: 0x1ac
 function __init__() {
@@ -33,7 +33,7 @@ function __init__() {
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x49b0f3aa, Offset: 0x3b8
 // Size: 0x2e4
 function function_791e18ed(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -80,7 +80,7 @@ function function_791e18ed(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe284431c, Offset: 0x6a8
 // Size: 0x70
 function function_b9c917cc(localclientnum, str_bundle) {
@@ -91,7 +91,7 @@ function function_b9c917cc(localclientnum, str_bundle) {
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x69c17bfa, Offset: 0x720
 // Size: 0x84
 function zm_aat_brain_decay_explosion(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

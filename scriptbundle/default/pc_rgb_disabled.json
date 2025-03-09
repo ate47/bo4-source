@@ -1,18 +1,18 @@
 {
     "descriptionimage": "#hash_227938edafa1f35d",
     "description": "#hash_105af61e02c8cf3c",
-    "var_60fcfffa": "#hash_43ecbdda975e2ac1",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 0.1,
+    "hash_60fcfffa": "#hash_43ecbdda975e2ac1",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 0.1,
     "maxvalue": 1,
     "name": "pc_rgb_disabled",
     "displayname": "#hash_697cdd22b2892234",
     "decimalplace": 0.01,
-    "var_66faec87": 2,
+    "hash_66faec87": 2,
     "statname": "rgb_disable",
-    "var_82c732a7": 1,
-    "var_d4e288e": 1,
-    "var_b7401319": "#hash_439156e8d96d245"
+    "isenableddisabled": 1,
+    "hash_d4e288e": 1,
+    "hash_b7401319": "#hash_439156e8d96d245"
 }

@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_red_boss_fight/zm_trial_red_boss_fight
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa1b3ec4b, Offset: 0x120
 // Size: 0x5c
 function __init__() {
@@ -32,7 +32,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_red_boss_fight/zm_trial_red_boss_fight
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xd5ac9f1f, Offset: 0x188
 // Size: 0x3c
 function private on_begin() {
@@ -43,7 +43,7 @@ function private on_begin() {
 }
 
 // Namespace zm_trial_red_boss_fight/zm_trial_red_boss_fight
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xde95d40f, Offset: 0x1d0
 // Size: 0x9c
 function private on_end(round_reset) {
@@ -59,7 +59,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_red_boss_fight/zm_trial_red_boss_fight
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x2c924659, Offset: 0x278
 // Size: 0x1f0
 function private start_boss_fight() {
@@ -90,7 +90,7 @@ function private start_boss_fight() {
 }
 
 // Namespace zm_trial_red_boss_fight/zm_trial_red_boss_fight
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x83b01a1d, Offset: 0x470
 // Size: 0x60
 function function_7d23aaf2(player, var_feed7374) {

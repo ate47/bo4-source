@@ -1,16 +1,16 @@
 {
     "categoryindex": 1,
-    "var_60fcfffa": "#menu/on",
-    "var_10e01ad5": 1,
+    "hash_60fcfffa": "#menu/on",
+    "hash_10e01ad5": 1,
     "iscategory": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "pc_category_mouse",
     "displayname": "#hash_6ca114a49cbc126f",
     "decimalplace": 0.01,
-    "var_66faec87": 100,
-    "var_d4e288e": 15,
-    "var_b7401319": "#menu/off"
+    "hash_66faec87": 100,
+    "hash_d4e288e": 15,
+    "hash_b7401319": "#menu/off"
 }

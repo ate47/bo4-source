@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf229a58c, Offset: 0x568
 // Size: 0x584
 function __init__() {
@@ -42,7 +42,7 @@ function __init__() {
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x278f518b, Offset: 0xaf8
 // Size: 0x1cc
 function shrink_globe(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -69,7 +69,7 @@ function shrink_globe(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3c18894, Offset: 0xcd0
 // Size: 0x5c
 function shrink_zombie(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -79,7 +79,7 @@ function shrink_zombie(localclientnum, oldval, newval, bnewent, binitialsnap, fi
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7ab55644, Offset: 0xd38
 // Size: 0x294
 function function_847080fa(localclientnum) {
@@ -107,12 +107,14 @@ function function_847080fa(localclientnum) {
         e_model thread scene::play(var_99d5ab4f, e_model);
     }
     var_1f698175 = 1;
-    for (var_cf6d072d = 0.02; var_1f698175 > 0.1; var_cf6d072d *= 1.00433) {
+    var_cf6d072d = 0.02;
+    while (var_1f698175 > 0.1) {
         waitframe(1);
         var_1f698175 -= var_cf6d072d;
         if (var_1f698175 > 0) {
             e_model setscale(var_1f698175);
         }
+        var_cf6d072d *= 1.00433;
     }
     playsound(localclientnum, #"hash_6abe8c2d3548831c", e_model.origin + (0, 0, 35));
     playfx(localclientnum, "zm_weapons/fx8_www_shrink_enemy_death", e_model.origin + (0, 0, 35));
@@ -120,7 +122,7 @@ function function_847080fa(localclientnum) {
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x438669c6, Offset: 0xfd8
 // Size: 0xa2
 function function_d8cf1bd7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -134,7 +136,7 @@ function function_d8cf1bd7(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x103e7dc1, Offset: 0x1088
 // Size: 0x1f4
 function function_751c64a4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -161,7 +163,7 @@ function function_751c64a4(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xec2cc353, Offset: 0x1288
 // Size: 0xae
 function function_7fe3e4c8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -176,7 +178,7 @@ function function_7fe3e4c8(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xccb8f904, Offset: 0x1340
 // Size: 0xfe
 function function_1af615a9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -193,7 +195,7 @@ function function_1af615a9(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd84e198b, Offset: 0x1448
 // Size: 0x1ae
 function function_ac54fdec(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -219,7 +221,7 @@ function function_ac54fdec(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfab3a711, Offset: 0x1600
 // Size: 0x1e4
 function drag_portal(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -246,7 +248,7 @@ function drag_portal(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8c32fa82, Offset: 0x17f0
 // Size: 0x84
 function function_872ccd5b(var_ff3c5ccc, var_fc01b069) {
@@ -258,7 +260,7 @@ function function_872ccd5b(var_ff3c5ccc, var_fc01b069) {
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x56ca364b, Offset: 0x1880
 // Size: 0xa2
 function function_68a87cde(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -272,7 +274,7 @@ function function_68a87cde(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x47141094, Offset: 0x1930
 // Size: 0x64
 function function_332e7c58(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -280,7 +282,7 @@ function function_332e7c58(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa3600ce3, Offset: 0x19a0
 // Size: 0x64
 function function_3b7e3b9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -288,7 +290,7 @@ function function_3b7e3b9(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xd4e5bb55, Offset: 0x1a10
 // Size: 0xf4
 function function_9fe38370(localclientnum, newval, str_tag) {
@@ -306,7 +308,7 @@ function function_9fe38370(localclientnum, newval, str_tag) {
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc162b4d4, Offset: 0x1b10
 // Size: 0x33c
 function function_84884488(localclientnum) {
@@ -348,7 +350,7 @@ function function_84884488(localclientnum) {
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5d8dae43, Offset: 0x1e58
 // Size: 0x94
 function function_30c6d85() {
@@ -364,7 +366,7 @@ function function_30c6d85() {
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb244000, Offset: 0x1ef8
 // Size: 0x64
 function function_dd9a8d7c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -372,7 +374,7 @@ function function_dd9a8d7c(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x51031dfd, Offset: 0x1f68
 // Size: 0x64
 function function_51595e12(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -380,7 +382,7 @@ function function_51595e12(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x9cc045b4, Offset: 0x1fd8
 // Size: 0x3c
 function function_df636944(localclientnum, newval, str_tag) {

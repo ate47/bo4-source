@@ -13,7 +13,7 @@ function autoexec init() {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x13c27abc, Offset: 0x110
 // Size: 0x280
 function private function_d64f1d30() {
@@ -40,7 +40,7 @@ function private function_d64f1d30() {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb35f72d2, Offset: 0x398
 // Size: 0x33c
 function play_vehicle_anim(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -86,7 +86,7 @@ function play_vehicle_anim(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd79dfb55, Offset: 0x6e0
 // Size: 0x2a
 function set_vehicleriders_bundle(str_bundlename) {

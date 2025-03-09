@@ -4,14 +4,14 @@
     "value2": "1",
     "value3": "2",
     "value1": "0",
-    "var_dfed6968": "3",
-    "var_71ce0d1f": "4",
+    "value4": "3",
+    "value5": "4",
     "type": "gamesettings",
     "label": "#hash_6e36be7afbe498e7",
     "name": "round_switch",
     "displayname": "#menu/round_switch",
     "label1": "#menu/disabled",
     "label2": "#menu/every_round",
-    "var_9de86f42": 5,
+    "optionscount": 5,
     "setting": "roundSwitch"
 }

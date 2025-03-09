@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_stock_option/zm_bgb_stock_option
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x27d48bd4, Offset: 0xd0
 // Size: 0x4c
 function __init__() {

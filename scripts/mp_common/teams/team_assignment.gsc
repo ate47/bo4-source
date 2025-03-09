@@ -620,7 +620,8 @@ function function_a9822793() {
                 if (team == #"none") {
                     continue;
                 }
-                for (current_count = level.maxteamplayers - var_a787dfe7; current_count < level.maxteamplayers; current_count += function_78db0e06(var_6f782d8f, team)) {
+                current_count = level.maxteamplayers - var_a787dfe7;
+                while (current_count < level.maxteamplayers) {
                     var_6f782d8f = function_b25f48bf(team, var_a787dfe7, distribution[platoon], var_ed0a1ecc[platoon]);
                     if (!isdefined(var_6f782d8f)) {
                         break;
@@ -635,6 +636,7 @@ function function_a9822793() {
                             }
                         }
                     }
+                    current_count += function_78db0e06(var_6f782d8f, team);
                 }
                 var_75aa1f3c[index] = #"none";
             }

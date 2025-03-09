@@ -10,15 +10,15 @@
                         }
                     ],
                     "name": "shot 1",
-                    "var_eb00c330": 2.99995,
-                    "var_be60a82b": 0.125
+                    "hash_eb00c330": 2.9999545,
+                    "hash_be60a82b": 0.125
                 }
             ],
             "model": "#c_t8_zmb_dlc2_skeleton_arm_right",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "skeleton_arm",
-            "var_3e692842": 100
+            "hash_3e692842": 100
         }
     ],
     "scenetype": "scene",

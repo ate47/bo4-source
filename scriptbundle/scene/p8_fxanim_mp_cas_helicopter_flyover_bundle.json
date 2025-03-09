@@ -1,0 +1,192 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_683711ed797a9b8c",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2922742a891b7ef0",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#veh_t8_mil_helicopter_light_closed",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_594751fbf51a93cf",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2b539c8fd88bc6b3",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#veh_t8_mil_helicopter_light_closed",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_34ba4a13307f56a6",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_623d4a7136694fa",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#veh_t8_mil_helicopter_light_closed",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 3"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1b34798b2d2081a9",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2aea1a260c4b4d",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_3389c221f81ed1a4",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 4"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_504038268d7f23e8",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5422b447f8ffbc1c",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_2a8593bc99d3a940",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 6"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_79f8191bfcaa0d5b",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_25a5c44b050a9ccf",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_3389c221f81ed1a4",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 5"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4e1c955e463ee139",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7420133b3a50c7e9",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_431ca9cc4e757e33",
+            "type": "prop",
+            "name": "prop 7"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_cas_helicopter_flyover_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

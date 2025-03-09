@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb891f501, Offset: 0x2d0
 // Size: 0x772
 function __init__() {
@@ -55,7 +55,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa0acbb96, Offset: 0xa50
 // Size: 0xcc
 function function_abff2ba8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -67,7 +67,7 @@ function function_abff2ba8(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4ab71ef0, Offset: 0xb28
 // Size: 0xcc
 function function_cde26b0e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -79,7 +79,7 @@ function function_cde26b0e(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x11d41b58, Offset: 0xc00
 // Size: 0xac
 function skull_turret_beam_fire(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -91,7 +91,7 @@ function skull_turret_beam_fire(localclientnum, oldval, newval, bnewent, binitia
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x11ab6dc2, Offset: 0xcb8
 // Size: 0xec
 function function_69ccb98b(localclientnum) {
@@ -115,7 +115,7 @@ function function_69ccb98b(localclientnum) {
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3558c45d, Offset: 0xdb0
 // Size: 0x1ba
 function function_da5829be(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -143,7 +143,7 @@ function function_da5829be(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb1e225f1, Offset: 0xf78
 // Size: 0x20a
 function flash_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -202,7 +202,7 @@ function function_7067b673(origin1, origin2, color) {
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2e158e00, Offset: 0x1280
 // Size: 0x136
 function function_f11b8d1d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -222,7 +222,7 @@ function function_f11b8d1d(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1f4d8296, Offset: 0x13c0
 // Size: 0x204
 function beacon_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -254,7 +254,7 @@ function beacon_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldn
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x7815abd0, Offset: 0x15d0
 // Size: 0x8c
 function private function_d05553c6(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -264,7 +264,7 @@ function private function_d05553c6(localclientnum, oldvalue, newvalue, bnewent, 
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb7580ba9, Offset: 0x1668
 // Size: 0x186
 function function_3f83a22f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -296,7 +296,7 @@ function function_3f83a22f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xda53d036, Offset: 0x17f8
 // Size: 0x11e
 function revive_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -315,7 +315,7 @@ function revive_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldn
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd5fcbc26, Offset: 0x1920
 // Size: 0xfa
 function scepter_rumble(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {

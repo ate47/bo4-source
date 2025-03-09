@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace gadget_combat_efficiency/gadget_combat_efficiency
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa66815ca, Offset: 0xf8
 // Size: 0x4c
 function __init__() {
@@ -20,7 +20,7 @@ function __init__() {
 }
 
 // Namespace gadget_combat_efficiency/gadget_combat_efficiency
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4c369a6c, Offset: 0x150
 // Size: 0x126
 function function_24a1439f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "spawn_select",
     "displayname": "#menu/select_spawn",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "spawnSelectEnabled",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

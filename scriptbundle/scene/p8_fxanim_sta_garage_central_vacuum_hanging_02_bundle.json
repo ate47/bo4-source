@@ -1,0 +1,28 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_103a04086016ad82",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermax": 16,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_3cee21701b1da8d1",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "polishing",
+    "type": "scene",
+    "name": "p8_fxanim_sta_garage_central_vacuum_hanging_02_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

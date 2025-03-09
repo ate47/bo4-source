@@ -1,0 +1,151 @@
+{
+    "objects": [
+        {
+            "mainanim": "#pb_rifle_endgame_1stplace_idle",
+            "model": "#c_t7_mp_warrior_mpc_fb1_skin1",
+            "type": "actor",
+            "vmtype": "server",
+            "name": "topplayer1",
+            "team": "any",
+            "takedamage": 1
+        },
+        {
+            "type": "actor",
+            "vmtype": "server",
+            "name": "topplayer2",
+            "team": "any",
+            "takedamage": 1
+        },
+        {
+            "type": "actor",
+            "vmtype": "server",
+            "name": "topplayer3",
+            "team": "any",
+            "takedamage": 1
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        }
+    ],
+    "scenetype": "scene",
+    "cameraswitcher": "ui_cam_endgame_mp_sector",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "sb_mp_sector_endgame",
+    "nextscenemode": "init"
+}

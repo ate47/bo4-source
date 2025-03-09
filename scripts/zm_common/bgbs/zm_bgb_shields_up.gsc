@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_shields_up/zm_bgb_shields_up
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x56224796, Offset: 0xf8
 // Size: 0x74
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_shields_up/zm_bgb_shields_up
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5bcc4b26, Offset: 0x178
 // Size: 0x1c
 function activation() {
@@ -35,7 +35,7 @@ function activation() {
 }
 
 // Namespace zm_bgb_shields_up/zm_bgb_shields_up
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5de0a5bc, Offset: 0x1a0
 // Size: 0xac
 function validation() {
@@ -55,7 +55,7 @@ function validation() {
 }
 
 // Namespace zm_bgb_shields_up/zm_bgb_shields_up
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x186592db, Offset: 0x258
 // Size: 0x13c
 function give_shield() {

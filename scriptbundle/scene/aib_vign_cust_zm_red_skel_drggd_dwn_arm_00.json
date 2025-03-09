@@ -10,8 +10,8 @@
                         }
                     ],
                     "name": "shot 1",
-                    "var_eb00c330": 2.99995,
-                    "var_be60a82b": 0.125
+                    "hash_eb00c330": 2.9999545,
+                    "hash_be60a82b": 0.125
                 }
             ],
             "model": "#c_t8_zmb_dlc2_skeleton_arm_right",

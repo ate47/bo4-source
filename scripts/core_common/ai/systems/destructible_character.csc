@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace destructclientutils/destructible_character
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7df6ee6, Offset: 0x1d8
 // Size: 0x5e6
 function __init__() {
@@ -61,7 +61,7 @@ function __init__() {
 }
 
 // Namespace destructclientutils/destructible_character
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xdfc01cd2, Offset: 0x7c8
 // Size: 0x20
 function private _getdestructibledef(entity) {
@@ -69,7 +69,7 @@ function private _getdestructibledef(entity) {
 }
 
 // Namespace destructclientutils/destructible_character
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x34c99393, Offset: 0x7f0
 // Size: 0x14a
 function private _destructhandler(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -96,7 +96,7 @@ function private _destructhandler(localclientnum, oldvalue, newvalue, bnewent, b
 }
 
 // Namespace destructclientutils/destructible_character
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0xc3560f21, Offset: 0x948
 // Size: 0x1bc
 function private _destructpiece(localclientnum, entity, piecenumber, shouldspawngibs) {
@@ -118,7 +118,7 @@ function private _destructpiece(localclientnum, entity, piecenumber, shouldspawn
 }
 
 // Namespace destructclientutils/destructible_character
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x891330c4, Offset: 0xb10
 // Size: 0x32
 function private _getdestructstate(localclientnum, entity) {
@@ -129,7 +129,7 @@ function private _getdestructstate(localclientnum, entity) {
 }
 
 // Namespace destructclientutils/destructible_character
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x7ea628b8, Offset: 0xb50
 // Size: 0xd8
 function private _handledestructcallbacks(localclientnum, entity, piecenumber) {
@@ -143,7 +143,7 @@ function private _handledestructcallbacks(localclientnum, entity, piecenumber) {
 }
 
 // Namespace destructclientutils/destructible_character
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x311f091f, Offset: 0xc30
 // Size: 0xde
 function adddestructpiececallback(localclientnum, entity, piecenumber, callbackfunction) {
@@ -160,7 +160,7 @@ function adddestructpiececallback(localclientnum, entity, piecenumber, callbackf
 }
 
 // Namespace destructclientutils/destructible_character
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa7c142ca, Offset: 0xd18
 // Size: 0x3e
 function ispiecedestructed(localclientnum, entity, piecenumber) {

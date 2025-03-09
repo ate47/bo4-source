@@ -26,7 +26,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa2cc84a3, Offset: 0x2a8
 // Size: 0x134
 function __init__() {
@@ -45,7 +45,7 @@ function __init__() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x23a38c27, Offset: 0x3e8
 // Size: 0x6
 function is_bot_ranked_match() {
@@ -53,7 +53,7 @@ function is_bot_ranked_match() {
 }
 
 // Namespace bot/bot
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xd8515869, Offset: 0x3f8
 // Size: 0x182
 function add_bot(team, name = undefined, clanabbrev = undefined) {
@@ -78,7 +78,7 @@ function add_bot(team, name = undefined, clanabbrev = undefined) {
 }
 
 // Namespace bot/bot
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe7c8ea5a, Offset: 0x588
 // Size: 0x90
 function add_bots(count = 1, team) {
@@ -93,7 +93,7 @@ function add_bots(count = 1, team) {
 }
 
 // Namespace bot/bot
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xb32b69de, Offset: 0x620
 // Size: 0xe8
 function add_fixed_spawn_bot(team, origin, yaw, roleindex = undefined) {
@@ -110,7 +110,7 @@ function add_fixed_spawn_bot(team, origin, yaw, roleindex = undefined) {
 }
 
 // Namespace bot/bot
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xdfc7de07, Offset: 0x710
 // Size: 0xca
 function add_balanced_bot(allies, maxallies, axis, maxaxis) {
@@ -124,7 +124,7 @@ function add_balanced_bot(allies, maxallies, axis, maxaxis) {
 }
 
 // Namespace bot/bot
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x6b134f9e, Offset: 0x7e8
 // Size: 0x158
 function fixed_spawn_override(origin, yaw, node = undefined, force = 1) {
@@ -146,7 +146,7 @@ function fixed_spawn_override(origin, yaw, node = undefined, force = 1) {
 }
 
 // Namespace bot/bot
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2c7731d4, Offset: 0x948
 // Size: 0x16e
 function function_7dc6049e(vehicle, seatindex = undefined) {
@@ -201,7 +201,7 @@ function remove_random_bot() {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xccb4b0fa, Offset: 0xc18
 // Size: 0x64
 function remove_bot(bot) {
@@ -215,7 +215,7 @@ function remove_bot(bot) {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x66760ed4, Offset: 0xc88
 // Size: 0x32
 function get_bots() {
@@ -224,7 +224,7 @@ function get_bots() {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xff414cbd, Offset: 0xcc8
 // Size: 0xa8
 function filter_bots(players) {
@@ -238,7 +238,7 @@ function filter_bots(players) {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x299dfd0, Offset: 0xd78
 // Size: 0xc4
 function get_friendly_bots() {
@@ -254,7 +254,7 @@ function get_friendly_bots() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7dcf7d67, Offset: 0xe48
 // Size: 0xe0
 function get_enemy_bots() {
@@ -272,7 +272,7 @@ function get_enemy_bots() {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x30d5ac2f, Offset: 0xf30
 // Size: 0xcc
 function function_a0f5b7f5(team) {
@@ -288,7 +288,7 @@ function function_a0f5b7f5(team) {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x53818c07, Offset: 0x1008
 // Size: 0xc0
 function get_bot_by_entity_number(entnum) {
@@ -319,7 +319,7 @@ function bot_count() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x87dc5e15, Offset: 0x1170
 // Size: 0xf6
 function on_player_connect() {
@@ -344,7 +344,7 @@ function on_player_connect() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe029aeff, Offset: 0x1270
 // Size: 0x27a
 function on_player_spawned() {
@@ -382,7 +382,7 @@ function on_player_spawned() {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x401a9d9b, Offset: 0x14f8
 // Size: 0x6e
 function on_player_damage(params) {
@@ -396,7 +396,7 @@ function on_player_damage(params) {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xed5fd305, Offset: 0x1570
 // Size: 0xac
 function on_player_killed() {
@@ -414,7 +414,7 @@ function on_player_killed() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x67817d38, Offset: 0x1628
 // Size: 0x3c
 function on_player_disconnect() {
@@ -427,7 +427,7 @@ function on_player_disconnect() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5f8d6fde, Offset: 0x1670
 // Size: 0x90
 function function_c6e29bdf() {
@@ -445,7 +445,7 @@ function function_c6e29bdf() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9b00dc40, Offset: 0x1708
 // Size: 0x36
 function function_3d575aa3() {
@@ -457,7 +457,7 @@ function function_3d575aa3() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xac23186, Offset: 0x1748
 // Size: 0x556
 function update_loop() {
@@ -526,7 +526,7 @@ function update_loop() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2f54362e, Offset: 0x1ca8
 // Size: 0x174
 function function_23c46f6e() {
@@ -554,7 +554,7 @@ function function_23c46f6e() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5b5a2466, Offset: 0x1e28
 // Size: 0xd6
 function function_92b0ec6b() {
@@ -571,7 +571,7 @@ function function_92b0ec6b() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x26226b8b, Offset: 0x1f08
 // Size: 0xbc
 function function_ec403901() {
@@ -589,7 +589,7 @@ function function_ec403901() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xee441e2, Offset: 0x1fd0
 // Size: 0x19c
 function function_ffbfd83b() {
@@ -612,7 +612,7 @@ function function_ffbfd83b() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfebaa879, Offset: 0x2178
 // Size: 0x2e4
 function update_swim() {
@@ -659,7 +659,7 @@ function update_swim() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6fee2bde, Offset: 0x2468
 // Size: 0xfc
 function init_bot() {
@@ -674,11 +674,11 @@ function init_bot() {
     self.bot.var_18fa994c = 0;
     self.bot.var_857c5ea8 = 0;
     blackboard::createblackboardforentity(self);
-    self function_eaf7ef38(#"hash_1b029888c4965031", #"hash_41b1340b7efb3261");
+    self function_eaf7ef38(#"bot.ai_ast", #"hash_41b1340b7efb3261");
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x94f8ffb1, Offset: 0x2570
 // Size: 0xc
 function initialized() {
@@ -686,7 +686,7 @@ function initialized() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaa03328f, Offset: 0x2588
 // Size: 0x3c
 function function_acc4267f() {
@@ -694,7 +694,7 @@ function function_acc4267f() {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf8f3c092, Offset: 0x25d0
 // Size: 0x32e
 function function_678e7c0(bundlename) {
@@ -725,7 +725,7 @@ function function_678e7c0(bundlename) {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x39f1deb0, Offset: 0x2908
 // Size: 0x42
 function fov_angle_to_cosine(fovangle = 0) {
@@ -736,7 +736,7 @@ function fov_angle_to_cosine(fovangle = 0) {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfb1f0f10, Offset: 0x2958
 // Size: 0x12
 function function_d473f7de() {
@@ -744,7 +744,7 @@ function function_d473f7de() {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xac3c2021, Offset: 0x2978
 // Size: 0x1e
 function set_interact(interact) {
@@ -752,7 +752,7 @@ function set_interact(interact) {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfa3d73bf, Offset: 0x29a0
 // Size: 0x12
 function clear_interact() {
@@ -760,7 +760,7 @@ function clear_interact() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2cfa3d3b, Offset: 0x29c0
 // Size: 0x12
 function get_interact() {
@@ -768,7 +768,7 @@ function get_interact() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xda4370ec, Offset: 0x29e0
 // Size: 0x14
 function has_interact() {
@@ -776,7 +776,7 @@ function has_interact() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x27cfc214, Offset: 0x2a00
 // Size: 0x5a
 function function_dd750ead() {
@@ -784,7 +784,7 @@ function function_dd750ead() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb72802c0, Offset: 0x2a68
 // Size: 0x32
 function function_914feddd() {
@@ -792,7 +792,7 @@ function function_914feddd() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa2fcf993, Offset: 0x2aa8
 // Size: 0x56
 function function_e8a17817() {
@@ -800,7 +800,7 @@ function function_e8a17817() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa91962d7, Offset: 0x2b08
 // Size: 0x5e
 function function_2d99e476() {
@@ -808,7 +808,7 @@ function function_2d99e476() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x40344f49, Offset: 0x2b70
 // Size: 0x3a
 function function_4e55eb5d() {
@@ -816,7 +816,7 @@ function function_4e55eb5d() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1ea96b45, Offset: 0x2bb8
 // Size: 0x3a
 function function_ca9fb875() {
@@ -824,7 +824,7 @@ function function_ca9fb875() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb635e87c, Offset: 0x2c00
 // Size: 0x5c
 function function_43a720c7() {
@@ -857,7 +857,7 @@ function function_bba89736() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x19491280, Offset: 0x2e10
 // Size: 0x12
 function get_revive_target() {
@@ -865,7 +865,7 @@ function get_revive_target() {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf2015d70, Offset: 0x2e30
 // Size: 0x1e
 function set_revive_target(target) {
@@ -873,7 +873,7 @@ function set_revive_target(target) {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7d1c27e, Offset: 0x2e58
 // Size: 0x1c
 function clear_revive_target() {
@@ -889,7 +889,7 @@ function menu_cancel(menukey) {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcd535d9b, Offset: 0x2ef8
 // Size: 0x58
 function has_visible_enemy() {
@@ -900,7 +900,7 @@ function has_visible_enemy() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x659e418b, Offset: 0x2f58
 // Size: 0x64
 function in_combat() {
@@ -917,7 +917,7 @@ function in_combat() {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7511f9a8, Offset: 0x2fc8
 // Size: 0xc2
 function fwd_dot(point) {
@@ -931,7 +931,7 @@ function fwd_dot(point) {
 }
 
 // Namespace bot/bot
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x889b737f, Offset: 0x3098
 // Size: 0x36
 function function_7aeb27f1(smin, smax) {
@@ -939,7 +939,7 @@ function function_7aeb27f1(smin, smax) {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x85519224, Offset: 0x30d8
 // Size: 0xe2
 function eye_trace(hitents = 0) {
@@ -952,7 +952,7 @@ function eye_trace(hitents = 0) {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfe0c65dd, Offset: 0x31c8
 // Size: 0xb6
 function function_343d7ef4() {
@@ -971,7 +971,7 @@ function function_343d7ef4() {
 }
 
 // Namespace bot/bot
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xc021a5e5, Offset: 0x3288
 // Size: 0x24
 function function_b5dd2fd2(entity, attribute, oldvalue, value) {
@@ -979,7 +979,7 @@ function function_b5dd2fd2(entity, attribute, oldvalue, value) {
 }
 
 // Namespace bot/bot
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x227a77de, Offset: 0x32b8
 // Size: 0x11e
 function get_nearest_node(pos, maxradius = 24, minradius = 0, height = 64) {
@@ -999,7 +999,7 @@ function get_nearest_node(pos, maxradius = 24, minradius = 0, height = 64) {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x46f5715b, Offset: 0x33e0
 // Size: 0x46
 function get_position_node() {
@@ -1012,7 +1012,7 @@ function get_position_node() {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3bab689, Offset: 0x3430
 // Size: 0x12c
 function allow_all(allow) {
@@ -1031,7 +1031,7 @@ function allow_all(allow) {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1292514a, Offset: 0x3568
 // Size: 0x11a
 function function_f0c35734(trigger) {
@@ -1046,7 +1046,7 @@ function function_f0c35734(trigger) {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x89ca3795, Offset: 0x3690
 // Size: 0x152
 function function_52947b70(trigger) {
@@ -1062,12 +1062,12 @@ function function_52947b70(trigger) {
 }
 
 // Namespace bot/bot
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7b5c1dcf, Offset: 0x37f0
 // Size: 0x12c
 function function_e0aceb0c(tacbundle, dvarstr) {
     healthratio = self.health / self.maxhealth;
-    if (healthratio <= tacbundle.var_ac1c818f) {
+    if (healthratio <= tacbundle.lowhealthratio) {
         /#
             self record_text("<dev string:xbd>", (1, 0, 0), dvarstr);
         #/
@@ -1090,7 +1090,7 @@ function function_e0aceb0c(tacbundle, dvarstr) {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x97ee327, Offset: 0x3928
 // Size: 0x12a
 function function_b78e1ebf(lefthand = 0) {
@@ -1112,7 +1112,7 @@ function function_b78e1ebf(lefthand = 0) {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x87741f51, Offset: 0x3a60
 // Size: 0x4c
 function function_e2c892a5(lefthand = 0) {
@@ -1124,7 +1124,7 @@ function function_e2c892a5(lefthand = 0) {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x685f09aa, Offset: 0x3ab8
 // Size: 0x162
 function function_a7106162(lefthand = 0) {
@@ -1138,18 +1138,18 @@ function function_a7106162(lefthand = 0) {
     if (isdefined(level.var_bddfddcf)) {
         return self [[ level.var_bddfddcf ]](lefthand);
     } else if (weapon function_7f23578e()) {
-        if (self function_a39f313c(lefthand) || self isplayerswimming()) {
+        if (self isweaponready(lefthand) || self isplayerswimming()) {
             return (gettime() > (lefthand ? self.bot.var_af11e334 : self.bot.var_51cee2ad));
         }
         return 0;
     } else if (weapon function_903ea2a5()) {
-        return (self function_a39f313c(lefthand) || self isplayerswimming());
+        return (self isweaponready(lefthand) || self isplayerswimming());
     }
     return 1;
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x27512a3b, Offset: 0x3c28
 // Size: 0x50
 function get_current_weapon(lefthand = 0) {
@@ -1161,7 +1161,7 @@ function get_current_weapon(lefthand = 0) {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe08646e1, Offset: 0x3c80
 // Size: 0x50
 function weapon_loaded(weapon) {
@@ -1169,7 +1169,7 @@ function weapon_loaded(weapon) {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc7422e33, Offset: 0x3cd8
 // Size: 0x14
 function function_7f23578e() {
@@ -1177,7 +1177,7 @@ function function_7f23578e() {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5ea81388, Offset: 0x3cf8
 // Size: 0x14
 function function_903ea2a5() {
@@ -1357,7 +1357,7 @@ function devgui_add_bots(host, botarg, count) {
 }
 
 // Namespace bot/bot
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe4aa6169, Offset: 0x4be0
 // Size: 0x248
 function function_2d5436be(origin, spiral) {
@@ -1436,7 +1436,7 @@ function devgui_add_fixed_spawn_bots(botarg, var_b27e53da, countarg) {
 }
 
 // Namespace bot/bot
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9b61216b, Offset: 0x5358
 // Size: 0xda
 function devgui_relative_team(host, botarg) {
@@ -1519,7 +1519,7 @@ function devgui_tpose(host, botarg) {
     bots = devgui_get_bots(host, botarg);
     foreach (bot in bots) {
         setdvar(#"bg_boastenabled", 1);
-        bot function_c6775cf9("dev_boast_tpose");
+        bot playboast("dev_boast_tpose");
     }
 }
 
@@ -1606,7 +1606,7 @@ function devgui_goal(botarg, cmdarg) {
 }
 
 // Namespace bot/bot
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa56d2452, Offset: 0x5de0
 // Size: 0x158
 function function_bbc3f17e(botarg, force = 0) {
@@ -1624,7 +1624,7 @@ function function_bbc3f17e(botarg, force = 0) {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4eb8067d, Offset: 0x5f40
 // Size: 0xc8
 function devgui_goal_clear(botarg) {
@@ -1636,7 +1636,7 @@ function devgui_goal_clear(botarg) {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5c75acc1, Offset: 0x6010
 // Size: 0xc8
 function devgui_goal_me(botarg) {
@@ -1648,7 +1648,7 @@ function devgui_goal_me(botarg) {
 }
 
 // Namespace bot/bot
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x802bce4d, Offset: 0x60e0
 // Size: 0x15a
 function devgui_get_bots(host, botarg) {
@@ -1677,7 +1677,7 @@ function devgui_get_bots(host, botarg) {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x710ed5cd, Offset: 0x6248
 // Size: 0x1b2
 function function_7090aa98() {
@@ -1752,7 +1752,7 @@ function function_35e77034(weapon) {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5fe5a91f, Offset: 0x6628
 // Size: 0x98
 function function_85e7342b() {
@@ -1845,7 +1845,7 @@ function function_85e7342b() {
             recordline(bottom, top, color, channel, self);
             return;
         }
-        function_af72dbc5(trigger.origin, mins, maxs, trigger.angles[0], color, channel, self);
+        recordbox(trigger.origin, mins, maxs, trigger.angles[0], color, channel, self);
     }
 
     // Namespace bot/bot
@@ -1963,7 +1963,7 @@ function function_301f229d(team) {
 }
 
 // Namespace bot/bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x921fd392, Offset: 0x7388
 // Size: 0x184
 function populate_bots() {
@@ -1990,7 +1990,7 @@ function populate_bots() {
 }
 
 // Namespace bot/bot
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9c0d9387, Offset: 0x7518
 // Size: 0x170
 function monitor_bot_team_population(maxallies, maxaxis) {
@@ -2016,7 +2016,7 @@ function monitor_bot_team_population(maxallies, maxaxis) {
 }
 
 // Namespace bot/bot
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe10c1ffd, Offset: 0x7690
 // Size: 0xfa
 function fill_balanced_teams(maxallies, maxaxis) {
@@ -2028,7 +2028,7 @@ function fill_balanced_teams(maxallies, maxaxis) {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf65da7b2, Offset: 0x7798
 // Size: 0x100
 function monitor_bot_population(maxfree) {
@@ -2054,7 +2054,7 @@ function monitor_bot_population(maxfree) {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x863f42c, Offset: 0x78a0
 // Size: 0x168
 function remove_best_bot(players) {

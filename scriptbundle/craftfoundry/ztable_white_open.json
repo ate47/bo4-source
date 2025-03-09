@@ -1,7 +1,7 @@
 {
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
-    "var_2a2adea3": 2,
+    "blueprintcount": 2,
     "blueprint01": "zblueprint_zhield_white",
     "blueprint02": "zblueprint_white_mmtd",
     "name": "ztable_white_open",

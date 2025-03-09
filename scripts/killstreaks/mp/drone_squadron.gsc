@@ -39,7 +39,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2307a95b, Offset: 0x398
 // Size: 0x234
 function __init__() {
@@ -59,7 +59,7 @@ function __init__() {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1b064cd4, Offset: 0x5d8
 // Size: 0x870
 function calcspawnorigin(origin, angles) {
@@ -157,7 +157,7 @@ function calcspawnorigin(origin, angles) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xeb49341c, Offset: 0xe50
 // Size: 0xac4
 function function_d52c51c6(killstreaktype) {
@@ -274,7 +274,7 @@ function function_d52c51c6(killstreaktype) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x54f3ff7c, Offset: 0x1920
 // Size: 0xa0
 function function_1c601b99() {
@@ -287,7 +287,7 @@ function function_1c601b99() {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2bb6e620, Offset: 0x19c8
 // Size: 0xa4
 function private function_576084fa(drone, attackingplayer) {
@@ -300,7 +300,7 @@ function private function_576084fa(drone, attackingplayer) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x44f53f76, Offset: 0x1a78
 // Size: 0x124
 function function_bff5c062(dronesquad, attackingplayer) {
@@ -319,7 +319,7 @@ function function_bff5c062(dronesquad, attackingplayer) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3f13967b, Offset: 0x1ba8
 // Size: 0x44
 function function_127fb8f3(dronesquad, attackingplayer) {
@@ -327,7 +327,7 @@ function function_127fb8f3(dronesquad, attackingplayer) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5e7abdc1, Offset: 0x1bf8
 // Size: 0x54
 function hackedcallbackpre(hacker) {
@@ -337,7 +337,7 @@ function hackedcallbackpre(hacker) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9ff56122, Offset: 0x1c58
 // Size: 0x76
 function hackedcallbackpost(hacker) {
@@ -348,7 +348,7 @@ function hackedcallbackpost(hacker) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3016a8cd, Offset: 0x1cd8
 // Size: 0x34
 function configureteampost(owner, ishacked) {
@@ -357,7 +357,7 @@ function configureteampost(owner, ishacked) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x382c0064, Offset: 0x1d18
 // Size: 0x78
 function watchgameended() {
@@ -370,7 +370,7 @@ function watchgameended() {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x60b463a5, Offset: 0x1d98
 // Size: 0x224
 function function_97bbef8(drone_squadron) {
@@ -399,7 +399,7 @@ function function_97bbef8(drone_squadron) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xff9ce631, Offset: 0x1fc8
 // Size: 0x224
 function function_d9733cc9(drone_squadron, exitrequestedbyowner) {
@@ -434,7 +434,7 @@ function function_d9733cc9(drone_squadron, exitrequestedbyowner) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6b0ed5b9, Offset: 0x21f8
 // Size: 0x140
 function ontimeout() {
@@ -452,7 +452,7 @@ function ontimeout() {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x149193bd, Offset: 0x2340
 // Size: 0x34
 function ontimecheck() {
@@ -460,7 +460,7 @@ function ontimecheck() {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x802d3e77, Offset: 0x2380
 // Size: 0x4e
 function function_2d28907() {
@@ -471,7 +471,7 @@ function function_2d28907() {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x149a29a2, Offset: 0x23d8
 // Size: 0xcc
 function function_c94a0c4d(params) {
@@ -486,7 +486,7 @@ function function_c94a0c4d(params) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1ead59fe, Offset: 0x24b0
 // Size: 0x22c
 function watchdeath() {
@@ -514,7 +514,7 @@ function watchdeath() {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4635e95f, Offset: 0x26e8
 // Size: 0xa8
 function watchteamchange() {
@@ -529,7 +529,7 @@ function watchteamchange() {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe1fe2e8e, Offset: 0x2798
 // Size: 0xe0
 function watchwater() {
@@ -546,7 +546,7 @@ function watchwater() {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x54b1fbde, Offset: 0x2880
 // Size: 0x3b0
 function function_89609eb8(origin, angles) {
@@ -587,7 +587,7 @@ function function_89609eb8(origin, angles) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa9dd81bf, Offset: 0x2c38
 // Size: 0xac
 function function_f9ec0116(drone, leavenode) {
@@ -600,7 +600,7 @@ function function_f9ec0116(drone, leavenode) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x96e40f74, Offset: 0x2cf0
 // Size: 0x3bc
 function watchshutdown() {
@@ -687,7 +687,7 @@ function function_da3b4d35() {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfb992343, Offset: 0x33f0
 // Size: 0x438
 function function_c7284de2() {
@@ -741,7 +741,7 @@ function function_c7284de2() {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xac8f8e7e, Offset: 0x3830
 // Size: 0x8e
 function private function_410e488d(leaddrone, target) {
@@ -753,7 +753,7 @@ function private function_410e488d(leaddrone, target) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe1ea2fd9, Offset: 0x38c8
 // Size: 0xce
 function private function_74ceb0a5(leaddrone) {
@@ -771,7 +771,7 @@ function private function_74ceb0a5(leaddrone) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x91ed0f05, Offset: 0x39a0
 // Size: 0xac
 function private function_47a6b2ec(player) {
@@ -783,7 +783,7 @@ function private function_47a6b2ec(player) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x716a4b6b, Offset: 0x3a58
 // Size: 0xcc
 function private function_bef71297(player, target) {
@@ -800,7 +800,7 @@ function private function_bef71297(player, target) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2bc57b5, Offset: 0x3b30
 // Size: 0xac
 function private function_d0eb04e9(player) {
@@ -812,7 +812,7 @@ function private function_d0eb04e9(player) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x4a7fedbf, Offset: 0x3be8
 // Size: 0xcc
 function private function_d43ba50b(player, target) {
@@ -829,7 +829,7 @@ function private function_d43ba50b(player, target) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd15bb9c5, Offset: 0x3cc0
 // Size: 0xc6
 function private function_35909ca6(player) {
@@ -849,7 +849,7 @@ function private function_35909ca6(player) {
 }
 
 // Namespace drone_squadron/drone_squadron
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc9cfefa6, Offset: 0x3d90
 // Size: 0x54
 function private function_a9737855(params) {

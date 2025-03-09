@@ -37,8 +37,8 @@
                         }
                     ],
                     "name": "shot 4",
-                    "var_39fd697b": "core_frontend_spectre",
-                    "var_b94164e": "core_frontend_spectre"
+                    "hash_39fd697b": "core_frontend_spectre",
+                    "hash_b94164e": "core_frontend_spectre"
                 }
             ],
             "model": "#tag_origin",
@@ -83,8 +83,8 @@
                         }
                     ],
                     "name": "shot 4",
-                    "var_39fd697b": "core_frontend_spectre",
-                    "var_b94164e": "core_frontend_spectre"
+                    "hash_39fd697b": "core_frontend_spectre",
+                    "hash_b94164e": "core_frontend_spectre"
                 }
             ],
             "model": "#hash_19e8b4fa37be234d",
@@ -128,8 +128,8 @@
                         }
                     ],
                     "name": "shot 4",
-                    "var_39fd697b": "core_frontend_spectre",
-                    "var_b94164e": "core_frontend_spectre"
+                    "hash_39fd697b": "core_frontend_spectre",
+                    "hash_b94164e": "core_frontend_spectre"
                 }
             ],
             "model": "#wpn_t8_sig_blade_world",
@@ -174,8 +174,8 @@
                         }
                     ],
                     "name": "shot 4",
-                    "var_39fd697b": "core_frontend_spectre",
-                    "var_b94164e": "core_frontend_spectre"
+                    "hash_39fd697b": "core_frontend_spectre",
+                    "hash_b94164e": "core_frontend_spectre"
                 }
             ],
             "model": "#hash_228d6995eaf4053",
@@ -220,8 +220,8 @@
                         }
                     ],
                     "name": "shot 4",
-                    "var_39fd697b": "core_frontend_spectre",
-                    "var_b94164e": "core_frontend_spectre"
+                    "hash_39fd697b": "core_frontend_spectre",
+                    "hash_b94164e": "core_frontend_spectre"
                 }
             ],
             "model": "#hash_72c32bb7f037871e",
@@ -266,8 +266,8 @@
                         }
                     ],
                     "name": "shot 4",
-                    "var_39fd697b": "core_frontend_spectre",
-                    "var_b94164e": "core_frontend_spectre"
+                    "hash_39fd697b": "core_frontend_spectre",
+                    "hash_b94164e": "core_frontend_spectre"
                 }
             ],
             "model": "#wpn_t8_smg_mp9_world",
@@ -312,8 +312,8 @@
                         }
                     ],
                     "name": "shot 4",
-                    "var_39fd697b": "core_frontend_spectre",
-                    "var_b94164e": "core_frontend_spectre"
+                    "hash_39fd697b": "core_frontend_spectre",
+                    "hash_b94164e": "core_frontend_spectre"
                 }
             ],
             "model": "#hash_66848fc11e4858bb",

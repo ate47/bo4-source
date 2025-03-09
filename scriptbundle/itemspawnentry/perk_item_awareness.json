@@ -1,7 +1,7 @@
 {
     "talents": [
         {
-            "talent": "#hash_2c69425ff5091dff"
+            "talent": "#talent_awareness_wz"
         }
     ],
     "amount": 1,
@@ -20,7 +20,7 @@
     "modelscale": 1,
     "rarity": "None",
     "equipsound": "uin_wz_perk_aware",
-    "var_38f854e5": 1,
+    "hash_38f854e5": 1,
     "handler": "#generic_pickup",
     "itemtype": "generic"
 }

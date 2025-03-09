@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace status_effect_pulse/status_effect_pulse
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xae49137e, Offset: 0x118
 // Size: 0xbc
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace status_effect_pulse/status_effect_pulse
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1e0
 // Size: 0x4
 function on_player_spawned() {
@@ -34,7 +34,7 @@ function on_player_spawned() {
 }
 
 // Namespace status_effect_pulse/status_effect_pulse
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x948a8da8, Offset: 0x1f0
 // Size: 0x154
 function pulse_apply(var_756fda07, weapon, applicant) {
@@ -48,7 +48,7 @@ function pulse_apply(var_756fda07, weapon, applicant) {
 }
 
 // Namespace status_effect_pulse/status_effect_pulse
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcbb2537f, Offset: 0x350
 // Size: 0xae
 function private pulse_rumble_loop(duration) {
@@ -63,7 +63,7 @@ function private pulse_rumble_loop(duration) {
 }
 
 // Namespace status_effect_pulse/status_effect_pulse
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3e550d39, Offset: 0x408
 // Size: 0x8c
 function pulse_end() {
@@ -80,7 +80,7 @@ function pulse_end() {
 }
 
 // Namespace status_effect_pulse/status_effect_pulse
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf3b97d0f, Offset: 0x4a0
 // Size: 0x54
 function shutdownpulserebootindicatormenu() {

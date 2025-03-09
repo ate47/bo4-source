@@ -1,0 +1,14 @@
+{
+    "name": "#zitem_riotshield_part_1_zm",
+    "baseWeapon": "#zitem_riotshield_part_1",
+    "streamkey": "#hash_31881ab8d3369bda",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "gadgetreadysoundplayer": "#pickup",
+    "tunables1": "#hash_1d986397e28",
+    "viewmodel": "#hash_1d945268ca0",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "image_d40": "#$blacktransparent",
+    "underwaterExplosionSurfaceFX": []
+}

@@ -31,7 +31,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x88514463, Offset: 0x3e8
 // Size: 0x124
 function __init__() {
@@ -47,7 +47,7 @@ function __init__() {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x73b0a39f, Offset: 0x518
 // Size: 0x4c
 function __main__() {
@@ -59,7 +59,7 @@ function __main__() {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x57efaeda, Offset: 0x570
 // Size: 0x1ce
 function init_weapon_upgrade() {
@@ -82,7 +82,7 @@ function init_weapon_upgrade() {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9d2c42e5, Offset: 0x748
 // Size: 0xd74
 function init_spawnable_weapon_upgrade() {
@@ -205,7 +205,7 @@ function init_spawnable_weapon_upgrade() {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2ce60ef9, Offset: 0x14c8
 // Size: 0x74
 function function_44840c02(str_targetname) {
@@ -242,7 +242,7 @@ function function_c970de50(trigger, parent) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8bd01906, Offset: 0x17a0
 // Size: 0x74
 function function_753c491c(trigger) {
@@ -347,7 +347,7 @@ function add_dynamic_wallbuy(weapon, wallbuy, pristine) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x57dd28, Offset: 0x1ec0
 // Size: 0x9e0
 function wall_weapon_update_prompt(player) {
@@ -489,7 +489,7 @@ function wall_weapon_update_prompt(player) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6c7221e9, Offset: 0x28a8
 // Size: 0xbc
 function reset_wallbuy_internal(set_hint_string) {
@@ -548,7 +548,7 @@ function reset_wallbuys() {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc0b2c3fd, Offset: 0x2d08
 // Size: 0x34
 function get_weapon_hint_ammo() {
@@ -559,7 +559,7 @@ function get_weapon_hint_ammo() {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4356e0a2, Offset: 0x2d48
 // Size: 0x3c
 function weapon_set_first_time_hint(cost, ammo_cost) {
@@ -567,7 +567,7 @@ function weapon_set_first_time_hint(cost, ammo_cost) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x817a4416, Offset: 0x2d90
 // Size: 0x3a
 function placeable_mine_can_buy_weapon_extra_check_func(w_weapon) {
@@ -578,7 +578,7 @@ function placeable_mine_can_buy_weapon_extra_check_func(w_weapon) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x400dc5e8, Offset: 0x2dd8
 // Size: 0x1028
 function weapon_spawn_think() {
@@ -812,7 +812,7 @@ function weapon_spawn_think() {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x393a951f, Offset: 0x3e08
 // Size: 0x56
 function should_upgrade_weapon(player) {
@@ -826,7 +826,7 @@ function should_upgrade_weapon(player) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x1196fa7a, Offset: 0x3e68
 // Size: 0x4e6
 function show_all_weapon_buys(player, cost, ammo_cost, is_grenade) {
@@ -891,7 +891,7 @@ function show_all_weapon_buys(player, cost, ammo_cost, is_grenade) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2f6ef832, Offset: 0x4358
 // Size: 0x194
 function weapon_show(player) {
@@ -919,7 +919,7 @@ function weapon_show(player) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1fed411d, Offset: 0x44f8
 // Size: 0xac
 function is_wallbuy(w_to_check) {
@@ -933,7 +933,7 @@ function is_wallbuy(w_to_check) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x339b451, Offset: 0x45b0
 // Size: 0xaa
 function function_c047c228(func_override) {
@@ -951,7 +951,7 @@ function function_c047c228(func_override) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6345a3af, Offset: 0x4668
 // Size: 0x24
 function function_a6889c(func_override) {
@@ -959,7 +959,7 @@ function function_a6889c(func_override) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaf871d96, Offset: 0x4698
 // Size: 0xaa
 function function_48f914bd(func_override) {
@@ -977,7 +977,7 @@ function function_48f914bd(func_override) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x43b4e5a8, Offset: 0x4750
 // Size: 0x24
 function function_99911dae(func_override) {
@@ -985,7 +985,7 @@ function function_99911dae(func_override) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8688cf9, Offset: 0x4780
 // Size: 0xaa
 function function_33023da5(func_override) {
@@ -1003,7 +1003,7 @@ function function_33023da5(func_override) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x965f808a, Offset: 0x4838
 // Size: 0x24
 function function_782e8955(func_override) {
@@ -1011,7 +1011,7 @@ function function_782e8955(func_override) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2ea815db, Offset: 0x4868
 // Size: 0xf4
 function function_284616f8(var_8f48d608 = 0) {

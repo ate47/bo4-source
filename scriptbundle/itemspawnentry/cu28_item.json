@@ -12,7 +12,7 @@
                 }
             ],
             "description": "#hash_2396c7aa8bdab21c",
-            "var_57b131bd": 2
+            "hash_57b131bd": 2
         },
         {
             "description": "#hash_2396caaa8bdab735"
@@ -20,8 +20,8 @@
     ],
     "description": "#hash_37738499f67cb3ee",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 2,
-    "var_e8b98a8a": "#hash_3658295ff39e722d",
+    "hash_eda4062b": 2,
+    "hash_e8b98a8a": "#hash_3658295ff39e722d",
     "model": "#hash_68dd6c3d61c97ec9",
     "type": "itemspawnentry",
     "hintstring": "#hash_161c216ed83a1283",

@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace tracker/tracker
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe0b3ff8a, Offset: 0xe0
 // Size: 0x14
 function __init__() {

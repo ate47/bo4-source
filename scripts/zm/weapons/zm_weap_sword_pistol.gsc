@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1ac86b80, Offset: 0x290
 // Size: 0x7dc
 function __init__() {
@@ -71,7 +71,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf8ed92d9, Offset: 0xa78
 // Size: 0x54
 function on_disconnect() {
@@ -84,7 +84,7 @@ function on_disconnect() {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xb1c52eba, Offset: 0xad8
 // Size: 0x340
 function private function_eca0c19d() {
@@ -131,7 +131,7 @@ function private function_eca0c19d() {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1105f838, Offset: 0xe20
 // Size: 0xe8
 function private function_6fe1307b(weapon) {
@@ -150,7 +150,7 @@ function private function_6fe1307b(weapon) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x239d9ffc, Offset: 0xf10
 // Size: 0x8c
 function private blood_death_fx(var_14ef0a6c) {
@@ -164,7 +164,7 @@ function private blood_death_fx(var_14ef0a6c) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6ab9c639, Offset: 0xfa8
 // Size: 0x84
 function function_fe3f086c(e_target, leftswing, weapon = level.weaponnone) {
@@ -176,16 +176,16 @@ function function_fe3f086c(e_target, leftswing, weapon = level.weaponnone) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xda4e5390, Offset: 0x1038
 // Size: 0x24c
 function chop_actor(ai, leftswing, weapon = level.weaponnone) {
     self endon(#"weapon_change", #"disconnect", #"bled_out");
     ai endon(#"death");
-    if (!isdefined(ai.var_6f84b820)) {
+    if (!isdefined(ai.zm_ai_category)) {
         return;
     }
-    switch (ai.var_6f84b820) {
+    switch (ai.zm_ai_category) {
     case #"popcorn":
     case #"basic":
     case #"enhanced":
@@ -215,7 +215,7 @@ function chop_actor(ai, leftswing, weapon = level.weaponnone) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xcc90b9e8, Offset: 0x1290
 // Size: 0x7c
 function function_5e2c9b64(e_target, leftswing, weapon = level.weaponnone) {
@@ -225,7 +225,7 @@ function function_5e2c9b64(e_target, leftswing, weapon = level.weaponnone) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xbe4d5989, Offset: 0x1318
 // Size: 0x2ce
 function function_787cd537(first_time, leftswing, weapon = level.weaponnone) {
@@ -264,7 +264,7 @@ function function_787cd537(first_time, leftswing, weapon = level.weaponnone) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa8f3465d, Offset: 0x15f0
 // Size: 0x124
 function function_a9e0db86(player) {
@@ -281,7 +281,7 @@ function function_a9e0db86(player) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x5495d48e, Offset: 0x1720
 // Size: 0x8c
 function function_7d2970bc(e_target, weapon, n_damage) {
@@ -292,7 +292,7 @@ function function_7d2970bc(e_target, weapon, n_damage) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf704042b, Offset: 0x17b8
 // Size: 0x5c
 function function_5922a7dc(weapon) {
@@ -304,7 +304,7 @@ function function_5922a7dc(weapon) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3ae8df8b, Offset: 0x1820
 // Size: 0x5c
 function function_65c52c4c(weapon) {
@@ -313,7 +313,7 @@ function function_65c52c4c(weapon) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x88c6ad36, Offset: 0x1888
 // Size: 0x1378
 function private function_698ddbd9(weapon) {
@@ -339,7 +339,7 @@ function private function_698ddbd9(weapon) {
     var_825c6643 = var_2dfd6afd * var_2dfd6afd;
     var_2069eb4c = zm_hero_weapon::function_7c3681f7();
     var_2069eb4c = arraysortclosest(var_2069eb4c, var_2ed6f142, undefined, undefined, var_2dfd6afd);
-    if (isdefined(a_beamtrace[#"entity"]) && a_beamtrace[#"entity"].var_6f84b820 === #"inanimate" || isdefined(level.var_2c19331b) && isinarray(level.var_2c19331b, a_beamtrace[#"entity"])) {
+    if (isdefined(a_beamtrace[#"entity"]) && a_beamtrace[#"entity"].zm_ai_category === #"inanimate" || isdefined(level.var_2c19331b) && isinarray(level.var_2c19331b, a_beamtrace[#"entity"])) {
         a_beamtrace[#"entity"].b_is_valid_target = 1;
         if (!isdefined(var_2069eb4c)) {
             var_2069eb4c = [];
@@ -457,10 +457,10 @@ function private function_698ddbd9(weapon) {
             if (isdefined(e_target.aat_turned) && e_target.aat_turned) {
                 continue;
             }
-            if (!isdefined(e_target.var_6f84b820)) {
+            if (!isdefined(e_target.zm_ai_category)) {
                 continue;
             }
-            switch (e_target.var_6f84b820) {
+            switch (e_target.zm_ai_category) {
             case #"popcorn":
             case #"basic":
             case #"enhanced":
@@ -516,7 +516,7 @@ function private function_698ddbd9(weapon) {
         self.var_4ecb8a5c clientfield::increment("" + #"dragon_roar_explosion");
         var_2069eb4c = zm_hero_weapon::function_7c3681f7();
         var_2069eb4c = arraysortclosest(var_2069eb4c, var_2ed6f142, undefined, undefined, level.hero_weapon_stats[#"sword_pistol"][#"hash_634b06c9d5064145"]);
-        if (isdefined(a_trace) && isdefined(a_trace[#"entity"]) && function_ffa5b184(a_trace[#"entity"].var_6f84b820 === #"inanimate")) {
+        if (isdefined(a_trace) && isdefined(a_trace[#"entity"]) && function_ffa5b184(a_trace[#"entity"].zm_ai_category === #"inanimate")) {
             if (!isdefined(var_2069eb4c)) {
                 var_2069eb4c = [];
             } else if (!isarray(var_2069eb4c)) {
@@ -527,10 +527,10 @@ function private function_698ddbd9(weapon) {
             }
         }
         foreach (e_target in var_2069eb4c) {
-            if (!isdefined(e_target.var_6f84b820)) {
+            if (!isdefined(e_target.zm_ai_category)) {
                 continue;
             }
-            switch (e_target.var_6f84b820) {
+            switch (e_target.zm_ai_category) {
             case #"popcorn":
             case #"basic":
             case #"enhanced":
@@ -567,7 +567,7 @@ function private function_698ddbd9(weapon) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x34d7fff1, Offset: 0x2c08
 // Size: 0x110
 function function_5ff8ad0b(weapon, var_fb504c3b) {
@@ -582,7 +582,7 @@ function function_5ff8ad0b(weapon, var_fb504c3b) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xfa28adce, Offset: 0x2d20
 // Size: 0xb8
 function private function_be6cef79(weapon) {
@@ -600,7 +600,7 @@ function private function_be6cef79(weapon) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1d86b11c, Offset: 0x2de0
 // Size: 0x71a
 function private function_e47a52e0(weapon) {
@@ -680,7 +680,7 @@ function private function_e47a52e0(weapon) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xf9b3030d, Offset: 0x3508
 // Size: 0x4c8
 function private function_5c924730() {
@@ -748,16 +748,16 @@ function private function_5c924730() {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2c99072d, Offset: 0x39d8
 // Size: 0x124
 function private function_e29f395c(e_zombie, weapon) {
-    if (!isdefined(e_zombie.var_6f84b820)) {
+    if (!isdefined(e_zombie.zm_ai_category)) {
         return;
     }
     [[ level.var_396cf513 ]]->waitinqueue(e_zombie);
     if (isalive(e_zombie)) {
-        switch (e_zombie.var_6f84b820) {
+        switch (e_zombie.zm_ai_category) {
         case #"popcorn":
         case #"basic":
         case #"enhanced":
@@ -773,7 +773,7 @@ function private function_e29f395c(e_zombie, weapon) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x6602ded1, Offset: 0x3b08
 // Size: 0x12c
 function private function_72070f02(player, weapon) {
@@ -787,12 +787,12 @@ function private function_72070f02(player, weapon) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6e4b53c9, Offset: 0x3c40
 // Size: 0x2cc
 function function_37106789(player, weapon) {
     self endon(#"death");
-    if (!isdefined(self.var_6f84b820)) {
+    if (!isdefined(self.zm_ai_category)) {
         return;
     }
     n_time_started = gettime() / 1000;
@@ -821,7 +821,7 @@ function function_37106789(player, weapon) {
     self clientfield::increment("" + #"viper_bite_projectile_impact");
     self notify(#"hash_1404343e2a1a434c");
     waitframe(1);
-    switch (self.var_6f84b820) {
+    switch (self.zm_ai_category) {
     case #"popcorn":
     case #"basic":
     case #"enhanced":
@@ -836,7 +836,7 @@ function function_37106789(player, weapon) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1843bd35, Offset: 0x3f18
 // Size: 0xbc
 function function_571d2d19(player, weapon) {
@@ -850,7 +850,7 @@ function function_571d2d19(player, weapon) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2fa63a07, Offset: 0x3fe0
 // Size: 0x336
 function private function_3295542a(player, weapon) {
@@ -881,10 +881,10 @@ function private function_3295542a(player, weapon) {
         if (!isalive(ai_zombie)) {
             continue;
         }
-        if (!isdefined(ai_zombie.var_6f84b820)) {
+        if (!isdefined(ai_zombie.zm_ai_category)) {
             continue;
         }
-        switch (ai_zombie.var_6f84b820) {
+        switch (ai_zombie.zm_ai_category) {
         case #"popcorn":
         case #"basic":
         case #"enhanced":
@@ -903,7 +903,7 @@ function private function_3295542a(player, weapon) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x23ed78ad, Offset: 0x4320
 // Size: 0x162
 function swordpistol_rumble(var_b2e05bae) {
@@ -931,7 +931,7 @@ function swordpistol_rumble(var_b2e05bae) {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x49ee1b29, Offset: 0x4490
 // Size: 0xac
 function private function_68ff89f7(w_swordpistol) {

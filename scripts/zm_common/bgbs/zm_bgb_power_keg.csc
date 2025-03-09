@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_power_keg/zm_bgb_power_keg
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x82dda024, Offset: 0xd8
 // Size: 0x4c
 function __init__() {

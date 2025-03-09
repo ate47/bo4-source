@@ -43,43 +43,43 @@
     ],
     "statsarray": [
         {
-            "var_233a23b6": 1,
-            "var_82670522": "stats_headshot",
+            "hash_233a23b6": 1,
+            "hash_82670522": "stats_headshot",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_619e74f99b27b9ae"
         },
         {
-            "var_233a23b6": 1,
-            "var_82670522": "stats_kill_enemy_one_bullet",
+            "hash_233a23b6": 1,
+            "hash_82670522": "stats_kill_enemy_one_bullet",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_368e2354e16e7ffb"
         },
         {
-            "var_233a23b6": 1,
-            "var_82670522": "stats_kill_enemies_one_bullet",
+            "hash_233a23b6": 1,
+            "hash_82670522": "stats_kill_enemies_one_bullet",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_4735fd772cb73794"
         },
         {
-            "var_233a23b6": 1,
-            "var_82670522": "stats_ekia",
+            "hash_233a23b6": 1,
+            "hash_82670522": "stats_ekia",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_2391441b1e8929a5"
         },
         {
-            "var_233a23b6": 1,
-            "var_82670522": "stats_shutdowns",
+            "hash_233a23b6": 1,
+            "hash_82670522": "stats_shutdowns",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_158193577a14c86e"
         }
     ],
     "defaultimage": "#ui_icon_hvo_base",
     "cardname": "#hash_7833035cc421c727",
     "name": "sharpshooter_hvo",
-    "var_46a95923": "none"
+    "associatedgamemode": "none"
 }

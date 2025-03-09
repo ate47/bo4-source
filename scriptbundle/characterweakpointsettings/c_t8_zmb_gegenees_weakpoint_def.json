@@ -2,33 +2,33 @@
     "weakpoints": [
         {
             "hitloc": "helmet",
-            "var_641ce20e": 1,
+            "hash_641ce20e": 1,
             "type": "#armor",
-            "var_51e8b151": "j_head",
+            "hash_51e8b151": "j_head",
             "activebydefault": 1,
             "hitradius": 15,
             "health": 0.08
         },
         {
             "hitloc": "head",
-            "var_8223b0cf": 2,
+            "hash_8223b0cf": 2,
             "type": "#weakpoint",
-            "var_51e8b151": "j_head",
+            "hash_51e8b151": "j_head",
             "hitradius": 15,
             "health": 1
         },
         {
-            "var_8223b0cf": 2,
+            "hash_8223b0cf": 2,
             "type": "#weakpoint",
-            "var_51e8b151": "tag_back_ws",
+            "hash_51e8b151": "tag_back_ws",
             "activebydefault": 1,
             "hitradius": 25,
             "health": 1
         },
         {
-            "var_8223b0cf": 2,
+            "hash_8223b0cf": 2,
             "type": "#weakpoint",
-            "var_51e8b151": "tag_chest_ws",
+            "hash_51e8b151": "tag_chest_ws",
             "activebydefault": 1,
             "hitradius": 15,
             "health": 1
@@ -38,5 +38,5 @@
     "model": "#c_t8_zmb_dlc2_gegenees_fb1",
     "type": "characterweakpointsettings",
     "name": "c_t8_zmb_gegenees_weakpoint_def",
-    "var_96a09826": 4
+    "hash_96a09826": 4
 }

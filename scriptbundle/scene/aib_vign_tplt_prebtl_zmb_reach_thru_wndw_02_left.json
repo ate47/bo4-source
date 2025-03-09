@@ -1,0 +1,31 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3581b72381c7ef1",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_390ef727870ca85b",
+            "type": "fakeactor",
+            "name": "fakeactor 1",
+            "allowdeath": 1,
+            "removeweapon": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_tplt_prebtl_zmb_reach_thru_wndw_02_left",
+    "dontsync": 1,
+    "hash_29563fd6": 180,
+    "team": "any"
+}

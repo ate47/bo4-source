@@ -16,7 +16,7 @@
                 }
             ],
             "description": "#hash_723a64b62576b2a7",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "description": "#hash_723a65b62576b45a"
@@ -24,8 +24,8 @@
     ],
     "description": "#hash_763edb9060c94c5f",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 2,
-    "var_e8b98a8a": "#hash_58b710d31643246a",
+    "hash_eda4062b": 2,
+    "hash_e8b98a8a": "#hash_58b710d31643246a",
     "model": "#p8_wz_cu_hat_tanker",
     "type": "itemspawnentry",
     "hintstring": "#hash_1943b05edbb6e818",

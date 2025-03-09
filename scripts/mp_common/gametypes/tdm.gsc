@@ -59,7 +59,7 @@ function event_handler[gametype_init] main(eventstruct) {
 }
 
 // Namespace tdm/tdm
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdd03835c, Offset: 0x538
 // Size: 0xec
 function function_a8da260c() {
@@ -72,7 +72,7 @@ function function_a8da260c() {
 }
 
 // Namespace tdm/tdm
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x99d016f8, Offset: 0x630
 // Size: 0xba
 function onstartgametype() {
@@ -93,7 +93,7 @@ function onstartgametype() {
 }
 
 // Namespace tdm/tdm
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x52e1d7fe, Offset: 0x6f8
 // Size: 0x64
 function onspawnplayer(predictedspawn) {
@@ -105,7 +105,7 @@ function onspawnplayer(predictedspawn) {
 }
 
 // Namespace tdm/tdm
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x594955ff, Offset: 0x768
 // Size: 0x24
 function onroundswitch() {
@@ -114,7 +114,7 @@ function onroundswitch() {
 }
 
 // Namespace tdm/tdm
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x73b850f6, Offset: 0x798
 // Size: 0x24
 function onendround(var_c1e98979) {
@@ -122,7 +122,7 @@ function onendround(var_c1e98979) {
 }
 
 // Namespace tdm/tdm
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x22f27d4, Offset: 0x7c8
 // Size: 0x1a4
 function onscoreclosemusic() {
@@ -155,7 +155,7 @@ function onscoreclosemusic() {
 }
 
 // Namespace tdm/tdm
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0x3d8bb1cf, Offset: 0x978
 // Size: 0x224
 function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {
@@ -183,7 +183,7 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
 }
 
 // Namespace tdm/tdm
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6539d9e3, Offset: 0xba8
 // Size: 0x114
 function function_e596b745(var_c1e98979) {
@@ -206,7 +206,7 @@ function function_e596b745(var_c1e98979) {
 }
 
 // Namespace tdm/tdm
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x89c887c7, Offset: 0xcc8
 // Size: 0x3e
 function function_f9df98d3(type, value) {

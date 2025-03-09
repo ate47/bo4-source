@@ -1,15 +1,15 @@
 {
-    "var_d58bd0e9": "#hash_629aa64fb8f1aec7",
-    "var_67b4a761": "#hash_629aa64fb8f1aec7",
-    "var_2ecceeab": "#attack_dog_kill",
+    "hash_d58bd0e9": "#hash_629aa64fb8f1aec7",
+    "hash_67b4a761": "#hash_629aa64fb8f1aec7",
+    "hash_2ecceeab": "#attack_dog_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
-    "var_2892e164": "#hash_1bf180f8945b240d",
+    "hash_2892e164": "#hash_1bf180f8945b240d",
     "vmtype": "both",
-    "var_16abf654": "#hash_629aa64fb8f1aec7",
+    "hash_16abf654": "#hash_629aa64fb8f1aec7",
     "name": "ability_dog_mp_scoreevents",
-    "var_e1b418c1": "ability",
-    "var_1b8b6771": "#hash_629aa64fb8f1aec7",
-    "var_3143c814": "#attack_dog_shutdown",
-    "var_6643c0a0": "#hash_629aa64fb8f1aec7"
+    "customsettingstype": "ability",
+    "hash_1b8b6771": "#hash_629aa64fb8f1aec7",
+    "hash_3143c814": "#attack_dog_shutdown",
+    "hash_6643c0a0": "#hash_629aa64fb8f1aec7"
 }

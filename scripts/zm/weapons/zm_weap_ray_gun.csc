@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_ray_gun/zm_weap_ray_gun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf5300071, Offset: 0x140
 // Size: 0xd4
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_ray_gun/zm_weap_ray_gun
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1dfabd97, Offset: 0x220
 // Size: 0x274
 function function_2602ff58(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

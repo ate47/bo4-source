@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "escalation_enabled",
     "displayname": "#hash_5456c7b94cf88f3a",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "escalationEnabled",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

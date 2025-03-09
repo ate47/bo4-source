@@ -10,7 +10,7 @@
 #namespace killstreaks;
 
 // Namespace killstreaks/killstreaks_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd6408e03, Offset: 0x180
 // Size: 0x1fe
 function init_shared() {
@@ -26,7 +26,7 @@ function init_shared() {
 }
 
 // Namespace killstreaks/killstreaks_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x531f3a32, Offset: 0x388
 // Size: 0x232
 function timeout_beep(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -70,7 +70,7 @@ function timeout_beep(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace killstreaks/killstreaks_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4cf5619d, Offset: 0x5c8
 // Size: 0x100
 function function_6d265b7f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -84,7 +84,7 @@ function function_6d265b7f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace killstreaks/killstreaks_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe0fcb5b9, Offset: 0x6d0
 // Size: 0x138
 function function_c66f053(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -101,7 +101,7 @@ function function_c66f053(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace killstreaks/killstreaks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x28575b15, Offset: 0x810
 // Size: 0x126
 function function_429c452(localclientnum, should_play) {
@@ -134,7 +134,7 @@ function function_429c452(localclientnum, should_play) {
 }
 
 // Namespace killstreaks/killstreaks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x902d7e62, Offset: 0x940
 // Size: 0x11e
 function function_e56218ab(localclientnum, should_play) {
@@ -167,7 +167,7 @@ function function_e56218ab(localclientnum, should_play) {
 }
 
 // Namespace killstreaks/killstreaks_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5df9fb25, Offset: 0xa68
 // Size: 0xbc
 function function_77515127(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -176,7 +176,7 @@ function function_77515127(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace killstreaks/killstreaks_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x23314bc7, Offset: 0xb30
 // Size: 0x5c
 function on_player_spawned(localclientnum) {
@@ -185,7 +185,7 @@ function on_player_spawned(localclientnum) {
 }
 
 // Namespace killstreaks/killstreaks_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfd426cf9, Offset: 0xb98
 // Size: 0xe0
 function function_17381fe(localclientnum) {

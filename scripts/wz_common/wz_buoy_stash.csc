@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_buoy_stash/wz_buoy_stash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x916e8feb, Offset: 0x110
 // Size: 0x4c
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace wz_buoy_stash/wz_buoy_stash
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2e72125f, Offset: 0x168
 // Size: 0xfa
 function function_a99ec0bc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

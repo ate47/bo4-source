@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f68ce86a55bfb43",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 30,
+                    "spacermax": 45,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_769e25d821c01ed7",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_gp_zm_teddybear_banging_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -9,7 +9,7 @@
 #namespace frontend;
 
 // Namespace frontend/frontend
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0xb8
 // Size: 0x4
 function callback_void() {
@@ -17,7 +17,7 @@ function callback_void() {
 }
 
 // Namespace frontend/frontend
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1fc054c9, Offset: 0xc8
 // Size: 0x24
 function callback_actorspawnedfrontend(spawner) {
@@ -47,7 +47,7 @@ function event_handler[gametype_init] main(eventstruct) {
 }
 
 // Namespace frontend/frontend
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf16d4d04, Offset: 0x280
 // Size: 0x1c
 function callback_playerconnect() {
@@ -129,28 +129,28 @@ function callback_playerconnect() {
     // Checksum 0x910a666d, Offset: 0x6f8
     // Size: 0x3dc
     function function_27d2e95a() {
-        level.var_314051a1 = getscriptbundle("<dev string:x1c2>");
-        if (!isdefined(level.var_314051a1)) {
+        level.callingsbundle = getscriptbundle("<dev string:x1c2>");
+        if (!isdefined(level.callingsbundle)) {
             return;
         }
         setdvar(#"callings_cmd", "<dev string:x86>");
         adddebugcommand("<dev string:x1d9>");
-        for (seasonid = 1; seasonid <= level.var_314051a1.size; seasonid++) {
+        for (seasonid = 1; seasonid <= level.callingsbundle.size; seasonid++) {
             for (var_d49657fd = 0; var_d49657fd < 4; var_d49657fd++) {
-                faction = getscriptbundle(level.var_314051a1.factionlist[var_d49657fd].faction);
+                faction = getscriptbundle(level.callingsbundle.factionlist[var_d49657fd].faction);
                 factionname = makelocalizedstring(faction.factionname);
                 var_662e72f3 = array(0, 1, 3, 6, 12);
                 counter = 1;
                 foreach (tokens in var_662e72f3) {
-                    var_3430f147 = "<dev string:x22d>" + seasonid + "<dev string:x23c>" + var_d49657fd + "<dev string:x23c>" + tokens;
-                    devgui_string = "<dev string:x240>" + seasonid + "<dev string:x275>" + factionname + "<dev string:x27a>" + tokens + "<dev string:x27e>" + (tokens != 1 ? "<dev string:x287>" : "<dev string:x86>") + "<dev string:x28b>" + counter + "<dev string:x28f>" + var_3430f147 + "<dev string:x2a2>";
+                    tokencmd = "<dev string:x22d>" + seasonid + "<dev string:x23c>" + var_d49657fd + "<dev string:x23c>" + tokens;
+                    devgui_string = "<dev string:x240>" + seasonid + "<dev string:x275>" + factionname + "<dev string:x27a>" + tokens + "<dev string:x27e>" + (tokens != 1 ? "<dev string:x287>" : "<dev string:x86>") + "<dev string:x28b>" + counter + "<dev string:x28f>" + tokencmd + "<dev string:x2a2>";
                     adddebugcommand(devgui_string);
                     counter++;
                 }
                 counter = 1;
-                for (var_cab404b1 = 0; var_cab404b1 <= 12; var_cab404b1++) {
-                    var_f6c57b = "<dev string:x2a7>" + seasonid + "<dev string:x23c>" + var_d49657fd + "<dev string:x23c>" + var_cab404b1;
-                    devgui_string = "<dev string:x2bd>" + seasonid + "<dev string:x275>" + factionname + "<dev string:x2fa>" + var_cab404b1 + "<dev string:x28b>" + counter + "<dev string:x28f>" + var_f6c57b + "<dev string:x2a2>";
+                for (completedtier = 0; completedtier <= 12; completedtier++) {
+                    var_f6c57b = "<dev string:x2a7>" + seasonid + "<dev string:x23c>" + var_d49657fd + "<dev string:x23c>" + completedtier;
+                    devgui_string = "<dev string:x2bd>" + seasonid + "<dev string:x275>" + factionname + "<dev string:x2fa>" + completedtier + "<dev string:x28b>" + counter + "<dev string:x28f>" + var_f6c57b + "<dev string:x2a2>";
                     adddebugcommand(devgui_string);
                     counter++;
                 }
@@ -203,7 +203,7 @@ function callback_playerconnect() {
     // Checksum 0x82e97db5, Offset: 0xdd0
     // Size: 0x2a6
     function function_87e397ba() {
-        for (seasonid = 1; seasonid <= level.var_314051a1.size; seasonid++) {
+        for (seasonid = 1; seasonid <= level.callingsbundle.size; seasonid++) {
             function_c209f336(seasonid);
         }
         function_1c289498("<dev string:x43c>", "<dev string:x44c>");
@@ -231,7 +231,7 @@ function callback_playerconnect() {
     // Checksum 0x81e3496a, Offset: 0x1080
     // Size: 0x488
     function function_2cdf0184() {
-        if (!isdefined(level.var_314051a1)) {
+        if (!isdefined(level.callingsbundle)) {
             return;
         }
         level endon(#"game_ended");
@@ -312,19 +312,19 @@ function callback_playerconnect() {
     function function_e4ea0153() {
         setdvar(#"hash_3319d0fd07c9ead8", "<dev string:x86>");
         while (true) {
-            var_8c931e31 = getdvarstring(#"hash_3319d0fd07c9ead8", "<dev string:x86>");
-            if (var_8c931e31 == "<dev string:x86>") {
+            aarcmd = getdvarstring(#"hash_3319d0fd07c9ead8", "<dev string:x86>");
+            if (aarcmd == "<dev string:x86>") {
                 waitframe(1);
                 continue;
             }
-            if (var_8c931e31 == "<dev string:x6ae>") {
+            if (aarcmd == "<dev string:x6ae>") {
                 luinotifyevent(#"aar_clear_rewards");
-            } else if (var_8c931e31 == "<dev string:x6c2>") {
+            } else if (aarcmd == "<dev string:x6c2>") {
                 if (!isdefined(level.var_9c7f7c5d)) {
                     level thread function_daf9ea48();
                     level.var_9c7f7c5d = 1;
                 }
-            } else if (var_8c931e31 == "<dev string:x6e3>") {
+            } else if (aarcmd == "<dev string:x6e3>") {
                 function_9eac333e();
             }
             setdvar(#"hash_3319d0fd07c9ead8", "<dev string:x86>");

@@ -1,21 +1,21 @@
 {
     "expander_options": [
         {
-            "var_35e98147": "pc_horizontal_mouse_sensitivity"
+            "expanderoption": "pc_horizontal_mouse_sensitivity"
         }
     ],
-    "var_d7c59c8f": "pc_mouse_sensitivity",
-    "var_60fcfffa": "#hash_7cdc6df793f97d8c",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_d7c59c8f": "pc_mouse_sensitivity",
+    "hash_60fcfffa": "#hash_7cdc6df793f97d8c",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "pc_expander_mousesensitivity",
     "decimalplace": 0.01,
-    "var_54a43dc2": 1,
-    "var_66faec87": 100,
+    "hash_54a43dc2": 1,
+    "hash_66faec87": 100,
     "statname": "expanderMousesensitivity",
-    "var_d4e288e": 15,
-    "var_b7401319": "#hash_4cb3e74e686b536d"
+    "hash_d4e288e": 15,
+    "hash_b7401319": "#hash_4cb3e74e686b536d"
 }

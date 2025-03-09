@@ -12,7 +12,7 @@ function autoexec __init__() {
 }
 
 // Namespace wz_common_vehicles_fixup/wz_common_vehicles_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7859a222, Offset: 0x98
 // Size: 0x2db4
 function function_6df391ab() {
@@ -23,7 +23,7 @@ function function_6df391ab() {
     var_74257310 = &item_world_fixup::add_item_replacement;
     var_f8a4c541 = &item_world_fixup::function_6991057;
     if (!(isdefined(getgametypesetting(#"wzenableatv")) && getgametypesetting(#"wzenableatv"))) {
-        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"hash_25481b71f9abe27d", #"");
+        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"quad_wz_vehicle", #"");
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"quad_wz_vehicle_black", #"");
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"hash_7df5c3630a76391e", #"");
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"quad_wz_vehicle_green", #"");
@@ -52,7 +52,7 @@ function function_6df391ab() {
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"zodiac_wz_vehicle_odg", #"");
     }
     if (!(isdefined(getgametypesetting(#"wzenablearav")) && getgametypesetting(#"wzenablearav"))) {
-        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"hash_71e093f11898ba29", #"");
+        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"fav_wz_vehicle", #"");
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"fav_wz_vehicle_blk", #"");
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"fav_wz_vehicle_grn", #"");
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"fav_wz_vehicle_tan", #"");

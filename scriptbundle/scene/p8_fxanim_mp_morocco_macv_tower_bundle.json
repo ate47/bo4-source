@@ -1,0 +1,43 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7a73d86f0e632bde",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#p8_fxanim_mp_morocco_macv_tower_mod",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2744deb6be8502a",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_4fe7c359e5e19bf",
+            "type": "prop",
+            "name": "prop 2"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_morocco_macv_tower_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

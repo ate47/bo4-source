@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "mp_only_headshots",
     "displayname": "#menu/headshotsonly",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "specialistOnlyHeadshots_allies_1",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

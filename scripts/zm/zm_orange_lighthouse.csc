@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_orange_lighthouse/zm_orange_lighthouse
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb57b77d3, Offset: 0x1b0
 // Size: 0x3c
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace zm_orange_lighthouse/zm_orange_lighthouse
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x69b98c7d, Offset: 0x1f8
 // Size: 0xfc
 function init_clientfields() {
@@ -35,7 +35,7 @@ function init_clientfields() {
 }
 
 // Namespace zm_orange_lighthouse/zm_orange_lighthouse
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf3470a9f, Offset: 0x300
 // Size: 0x152
 function init_fx() {
@@ -49,7 +49,7 @@ function init_fx() {
 }
 
 // Namespace zm_orange_lighthouse/zm_orange_lighthouse
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1e96745d, Offset: 0x460
 // Size: 0x51a
 function function_6a10478(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -105,7 +105,7 @@ function function_6a10478(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_orange_lighthouse/zm_orange_lighthouse
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa1f475fc, Offset: 0x988
 // Size: 0x9c
 function function_a177b2da(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -114,7 +114,7 @@ function function_a177b2da(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_orange_lighthouse/zm_orange_lighthouse
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x99c8c73f, Offset: 0xa30
 // Size: 0x152
 function function_c7fb0e97(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

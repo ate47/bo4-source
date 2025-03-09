@@ -3,7 +3,7 @@
 /#
 
     // Namespace blackboard/blackboard_vehicle
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xe3c30a9d, Offset: 0x68
     // Size: 0x34
     function registervehicleblackboardattributes() {
@@ -13,7 +13,7 @@
 #/
 
 // Namespace blackboard/blackboard_vehicle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x508c8009, Offset: 0xa8
 // Size: 0x3a
 function bb_getspeed() {
@@ -22,7 +22,7 @@ function bb_getspeed() {
 }
 
 // Namespace blackboard/blackboard_vehicle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9761ddbc, Offset: 0xf0
 // Size: 0x4a
 function bb_vehgetenemyyaw() {
@@ -35,7 +35,7 @@ function bb_vehgetenemyyaw() {
 }
 
 // Namespace blackboard/blackboard_vehicle
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x552fdd8f, Offset: 0x148
 // Size: 0x15e
 function vehgetpredictedyawtoenemy(entity, lookaheadtime) {

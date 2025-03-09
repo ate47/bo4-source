@@ -5,7 +5,7 @@
 #namespace zm_orange_ww_quest;
 
 // Namespace zm_orange_ww_quest/zm_orange_ww_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdfb8588a, Offset: 0xc8
 // Size: 0x13c
 function init() {
@@ -29,7 +29,7 @@ function soul_release(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace zm_orange_ww_quest/zm_orange_ww_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x10f461dc, Offset: 0x2d8
 // Size: 0x7c
 function _target_saving(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

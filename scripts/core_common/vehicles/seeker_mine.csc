@@ -15,7 +15,7 @@ function autoexec main() {
 }
 
 // Namespace seeker_mine/seeker_mine
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc435e582, Offset: 0x1c8
 // Size: 0xac
 function spawned(localclientnum) {
@@ -29,7 +29,7 @@ function spawned(localclientnum) {
 }
 
 // Namespace seeker_mine/seeker_mine
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x600d58fb, Offset: 0x280
 // Size: 0xb8
 function private update_light(localclientnum) {
@@ -47,7 +47,7 @@ function private update_light(localclientnum) {
 }
 
 // Namespace seeker_mine/seeker_mine
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xd0c75bcf, Offset: 0x340
 // Size: 0x84
 function private fxhandler(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -59,7 +59,7 @@ function private fxhandler(localclientnum, oldvalue, newvalue, bnewent, binitial
 }
 
 // Namespace seeker_mine/seeker_mine
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7326d3a6, Offset: 0x3d0
 // Size: 0xc4
 function play_seeker_mine_fx(localclientnum) {
@@ -71,7 +71,7 @@ function play_seeker_mine_fx(localclientnum) {
 }
 
 // Namespace seeker_mine/seeker_mine
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xfb1605d, Offset: 0x4a0
 // Size: 0x54
 function function_cece47d2(localclientnum, entity, fx) {
@@ -80,7 +80,7 @@ function function_cece47d2(localclientnum, entity, fx) {
 }
 
 // Namespace seeker_mine/seeker_mine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x30cf29e, Offset: 0x500
 // Size: 0x34
 function function_5aa8d239(localclientnum, fx) {
@@ -90,7 +90,7 @@ function function_5aa8d239(localclientnum, fx) {
 }
 
 // Namespace seeker_mine/seeker_mine
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x39623459, Offset: 0x540
 // Size: 0x62
 function private lightfxhandler(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {

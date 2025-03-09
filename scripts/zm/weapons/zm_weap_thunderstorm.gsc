@@ -26,7 +26,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf6639ae1, Offset: 0x250
 // Size: 0x2ac
 function __init__() {
@@ -46,7 +46,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2be1f346, Offset: 0x508
 // Size: 0xcc
 function __main__() {
@@ -60,7 +60,7 @@ function __main__() {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x264a64d7, Offset: 0x5e0
 // Size: 0x2a
 function function_f2cc0ca9(entities) {
@@ -68,7 +68,7 @@ function function_f2cc0ca9(entities) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc83d12f8, Offset: 0x618
 // Size: 0x42
 function function_72e5d54f(watcher) {
@@ -78,7 +78,7 @@ function function_72e5d54f(watcher) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe3b4dab6, Offset: 0x668
 // Size: 0xda
 function function_6c5cb6e() {
@@ -96,7 +96,7 @@ function function_6c5cb6e() {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x267d635a, Offset: 0x750
 // Size: 0xd0
 function function_feb1573e() {
@@ -111,7 +111,7 @@ function function_feb1573e() {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x78b0f161, Offset: 0x828
 // Size: 0x8c
 function function_cf0a2056() {
@@ -124,7 +124,7 @@ function function_cf0a2056() {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd5640669, Offset: 0x8c0
 // Size: 0xbc
 function function_39a41e25(watcher, player) {
@@ -140,7 +140,7 @@ function function_39a41e25(watcher, player) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x4d375117, Offset: 0x988
 // Size: 0x25c
 function function_3b0168a9(v_origin, v_angles, player) {
@@ -177,7 +177,7 @@ function function_3b0168a9(v_origin, v_angles, player) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdc28e4cf, Offset: 0xbf0
 // Size: 0x18
 function function_cd366cf2(e_grenade, e_player) {
@@ -185,7 +185,7 @@ function function_cd366cf2(e_grenade, e_player) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd3e9b8a1, Offset: 0xc10
 // Size: 0x48e
 function function_5f724c2e(e_grenade) {
@@ -267,7 +267,7 @@ function function_5f724c2e(e_grenade) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x986fec0e, Offset: 0x10a8
 // Size: 0xa4
 function function_5abeb589(e_grenade, var_e6d102c0 = 1) {
@@ -285,7 +285,7 @@ function function_5abeb589(e_grenade, var_e6d102c0 = 1) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x726cd1b9, Offset: 0x1158
 // Size: 0xcc
 function function_5d44b698(v_origin) {
@@ -301,7 +301,7 @@ function function_5d44b698(v_origin) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xef3f7b35, Offset: 0x1230
 // Size: 0x1a4
 function function_b603ab34(e_player, var_10d4f67d) {
@@ -321,7 +321,7 @@ function function_b603ab34(e_player, var_10d4f67d) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x63be43d6, Offset: 0x13e0
 // Size: 0xa0
 function function_57011892(e_player) {
@@ -334,7 +334,7 @@ function function_57011892(e_player) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa2b5dbf7, Offset: 0x1488
 // Size: 0x12c
 function pegasus_think() {
@@ -360,7 +360,7 @@ function function_4b198b8f(a_ents) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x535edda, Offset: 0x1628
 // Size: 0x152
 function function_6973e5e8(n_player_index, var_f013d620) {
@@ -370,7 +370,7 @@ function function_6973e5e8(n_player_index, var_f013d620) {
         a_ai_zombies = self get_zombie_targets(var_f013d620);
         if (isdefined(a_ai_zombies) && a_ai_zombies.size) {
             for (i = 0; i < a_ai_zombies.size; i++) {
-                if (isalive(a_ai_zombies[i]) && isdefined(a_ai_zombies[i].takedamage) && !(isdefined(a_ai_zombies[i].aat_turned) && a_ai_zombies[i].aat_turned) && isdefined(a_ai_zombies[i].var_6f84b820)) {
+                if (isalive(a_ai_zombies[i]) && isdefined(a_ai_zombies[i].takedamage) && !(isdefined(a_ai_zombies[i].aat_turned) && a_ai_zombies[i].aat_turned) && isdefined(a_ai_zombies[i].zm_ai_category)) {
                     a_ai_zombies[i] thread function_9c1450b8(self, n_player_index);
                     wait 0.1;
                 }
@@ -380,7 +380,7 @@ function function_6973e5e8(n_player_index, var_f013d620) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x323bff95, Offset: 0x1788
 // Size: 0xd0
 function function_3f08f8e9(var_10d4f67d) {
@@ -398,14 +398,14 @@ function function_3f08f8e9(var_10d4f67d) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd7bde5a0, Offset: 0x1860
 // Size: 0x142
 function function_9c1450b8(var_10d4f67d, n_player_index) {
     self endon(#"death");
     e_player = var_10d4f67d.player;
     self.var_45bfef99 = 1;
-    switch (self.var_6f84b820) {
+    switch (self.zm_ai_category) {
     case #"heavy":
     case #"miniboss":
         var_b1c1c5cf = zm_equipment::function_7d948481(0.1, 0.25, 0.25, 1);
@@ -419,7 +419,7 @@ function function_9c1450b8(var_10d4f67d, n_player_index) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x381ded3a, Offset: 0x19b0
 // Size: 0x14c
 function function_90c53706(var_10d4f67d, n_player_index) {
@@ -437,7 +437,7 @@ function function_90c53706(var_10d4f67d, n_player_index) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x48a91ca8, Offset: 0x1b08
 // Size: 0x110
 function function_7c333a0f(var_10d4f67d, var_5d7b4163, n_player_index) {
@@ -454,7 +454,7 @@ function function_7c333a0f(var_10d4f67d, var_5d7b4163, n_player_index) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb9b07425, Offset: 0x1c20
 // Size: 0x3e
 function function_54ad0847(var_10d4f67d) {
@@ -464,7 +464,7 @@ function function_54ad0847(var_10d4f67d) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd898421e, Offset: 0x1c68
 // Size: 0x130
 function get_zombie_targets(v_origin) {
@@ -484,7 +484,7 @@ function get_zombie_targets(v_origin) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc18547ae, Offset: 0x1da0
 // Size: 0x134
 function function_32b5113(ai_zombie) {
@@ -500,7 +500,7 @@ function function_32b5113(ai_zombie) {
     if (isdefined(ai_zombie.var_69a981e6) && ai_zombie.var_69a981e6) {
         return false;
     }
-    if (!isdefined(ai_zombie.var_6f84b820)) {
+    if (!isdefined(ai_zombie.zm_ai_category)) {
         /#
             if (isdefined(ai_zombie.archetype)) {
                 println("<dev string:x38>" + ai_zombie.archetype + "<dev string:x5f>");
@@ -512,7 +512,7 @@ function function_32b5113(ai_zombie) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8c692482, Offset: 0x1ee0
 // Size: 0x12c
 function function_97429d68(n_player_index) {
@@ -535,7 +535,7 @@ function function_97429d68(n_player_index) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc06cdcec, Offset: 0x2018
 // Size: 0x1a
 function function_d0671de3() {
@@ -543,7 +543,7 @@ function function_d0671de3() {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa706735d, Offset: 0x2040
 // Size: 0x94
 function grenade_stolen_by_sam(weapon) {
@@ -554,7 +554,7 @@ function grenade_stolen_by_sam(weapon) {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9722b223, Offset: 0x20e0
 // Size: 0x74
 function function_72085d9() {

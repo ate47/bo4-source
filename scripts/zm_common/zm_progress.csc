@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_progress/zm_progress
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfcc13c3, Offset: 0xf8
 // Size: 0x1c
 function __init__() {

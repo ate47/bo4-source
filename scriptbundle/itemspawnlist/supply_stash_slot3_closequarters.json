@@ -3,7 +3,7 @@
         {
             "minweight": 50,
             "itementry": "launcher_standard_t8_item",
-            "var_3f8c08e3": "ammo_type_rocket_item",
+            "childitementry_1": "ammo_type_rocket_item",
             "maxweight": 50,
             "available": 1
         },
@@ -50,11 +50,11 @@
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 12000,
+    "hash_7fb0967b": 12000,
     "type": "itemspawnlist",
-    "var_345eba59": 8,
-    "var_9b009839": -1,
+    "hash_345eba59": 8,
+    "hash_9b009839": -1,
     "name": "supply_stash_slot3_closequarters",
-    "var_fde72c94": 100,
+    "supplystashweight": 100,
     "supplystash": 1
 }

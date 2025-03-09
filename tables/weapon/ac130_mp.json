@@ -1,0 +1,22 @@
+{
+    "name": "#ac130_mp",
+    "baseWeapon": "#ac130",
+    "displayname": "#killstreak/ac130",
+    "unk70": "#ac130",
+    "streamkey": "#hash_18ee8c474932e5bd",
+    "sound660": "#uin_unavailable_charging",
+    "projexplosionsound": "#hash_20cda79cd396562",
+    "tunables1": "#hash_1d942572410",
+    "viewmodel": "#hash_1d931a15a90",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "gadgetIconAvailable": "#hash_a107590bee7ff858",
+    "gadgetIconUnavailable": "#hash_acacfcef8e95adf8",
+    "image_d40": "#compass_objpoint_helicopter",
+    "image_d48": "#compass_objpoint_helicopter",
+    "image_e90": "#hash_c724f19193a918bd",
+    "crateObjective": "#gunship_waypoint",
+    "underwaterExplosionSurfaceFX": [],
+    "var_2e4a8800": "#remote_missile_scoreevents",
+    "image_1048": "#ui_icon_scorestreaks_gunship_hud"
+}

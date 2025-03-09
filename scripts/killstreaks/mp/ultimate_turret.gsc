@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2d25cfe9, Offset: 0x100
 // Size: 0x4c
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7e90efae, Offset: 0x158
 // Size: 0x2c
 function function_4b645b3f(killstreaktype) {
@@ -33,7 +33,7 @@ function function_4b645b3f(killstreaktype) {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5d80bd50, Offset: 0x190
 // Size: 0x6e
 function turret_destroyed(attacker, weapon) {

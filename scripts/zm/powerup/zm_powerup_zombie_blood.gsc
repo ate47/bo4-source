@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_powerup_zombie_blood/zm_powerup_zombie_blood
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2b51ae8f, Offset: 0x230
 // Size: 0x204
 function __init__() {
@@ -44,7 +44,7 @@ function __init__() {
 }
 
 // Namespace zm_powerup_zombie_blood/zm_powerup_zombie_blood
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xefbc5298, Offset: 0x440
 // Size: 0x3e
 function init_player_zombie_blood_vars() {
@@ -53,7 +53,7 @@ function init_player_zombie_blood_vars() {
 }
 
 // Namespace zm_powerup_zombie_blood/zm_powerup_zombie_blood
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xefb9db7, Offset: 0x488
 // Size: 0x24
 function grab_zombie_blood(e_player) {
@@ -61,7 +61,7 @@ function grab_zombie_blood(e_player) {
 }
 
 // Namespace zm_powerup_zombie_blood/zm_powerup_zombie_blood
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1170e05b, Offset: 0x4b8
 // Size: 0x4c0
 function zombie_blood_powerup(mdl_powerup, e_player) {
@@ -95,7 +95,7 @@ function zombie_blood_powerup(mdl_powerup, e_player) {
     e_player thread watch_zombie_blood_early_exit();
     while (e_player.zombie_vars[#"zombie_powerup_zombie_blood_time"] >= 0) {
         waitframe(1);
-        e_player.zombie_vars[#"zombie_powerup_zombie_blood_time"] = e_player.zombie_vars[#"zombie_powerup_zombie_blood_time"] - 0.05;
+        e_player.zombie_vars[#"zombie_powerup_zombie_blood_time"] -= 0.05;
     }
     e_player setcharacteroutfit(0);
     e_player notify(#"zombie_blood_over");
@@ -114,7 +114,7 @@ function zombie_blood_powerup(mdl_powerup, e_player) {
 }
 
 // Namespace zm_powerup_zombie_blood/zm_powerup_zombie_blood
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x492966b6, Offset: 0x980
 // Size: 0xa2
 function watch_zombie_blood_early_exit() {
@@ -126,7 +126,7 @@ function watch_zombie_blood_early_exit() {
 }
 
 // Namespace zm_powerup_zombie_blood/zm_powerup_zombie_blood
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa8410284, Offset: 0xa30
 // Size: 0x190
 function make_zombie_blood_entity() {

@@ -23,7 +23,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_e7b06f1b/namespace_e7b06f1b
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x118
 // Size: 0x4
 function __init__() {
@@ -40,7 +40,7 @@ function function_f1d9de41(player) {
 }
 
 // Namespace namespace_e7b06f1b/namespace_e7b06f1b
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa9e5f9c9, Offset: 0x178
 // Size: 0x74
 function function_386c20ef(player) {

@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_demo/zm_demo
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xac2e80c8, Offset: 0x110
 // Size: 0x54
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace zm_demo/zm_demo
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x217f2f9d, Offset: 0x170
 // Size: 0x24
 function player_on_connect(localclientnum) {
@@ -37,7 +37,7 @@ function player_on_connect(localclientnum) {
 }
 
 // Namespace zm_demo/zm_demo
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd9e2a2bb, Offset: 0x1a0
 // Size: 0x294
 function watch_predicted_player_changes(localclientnum) {

@@ -10,7 +10,7 @@
     "attachslotbody": 1,
     "type": "itemspawnentry",
     "hintstring": "#hash_215c3e3eb8ff0a22",
-    "var_65b3a12": 1,
+    "hash_65b3a12": 1,
     "name": "laser_sight_wz_item",
     "displayname": "#hash_215c3e3eb8ff0a22",
     "icon": "#ui_icon_attachment_laser",

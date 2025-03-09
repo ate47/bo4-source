@@ -1,0 +1,15 @@
+name,string
+#zm_hint_text,zm_hint_text
+#zm_trial_counter,zm_trial_counter
+#zm_arcade_timer,zm_arcade_timer
+#self_revive_visuals,self_revive_visuals
+#zm_armor,zm_armor
+#zm_trial_weapon_locked,zm_trial_weapon_locked
+#zm_build_progress,zm_build_progress
+#zm_laststand_client,zm_laststand_client
+#self_revive_visuals_rush,self_revive_visuals_rush
+#zm_location,zm_location
+#revive_hud,revive_hud
+#game_over,game_over
+#zm_trial_timer,zm_trial_timer
+#zm_game_over,zm_game_over

@@ -1,0 +1,28 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4a7120b4eaa21199",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_2b4cbb40a5483488",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "p8_fxanim_mp_militia_pulley_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_electric_cherry/zm_perk_electric_cherry
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfa42616e, Offset: 0x230
 // Size: 0x104
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_electric_cherry/zm_perk_electric_cherry
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdc52733e, Offset: 0x340
 // Size: 0x2a2
 function init_electric_cherry() {
@@ -46,7 +46,7 @@ function init_electric_cherry() {
 }
 
 // Namespace zm_perk_electric_cherry/zm_perk_electric_cherry
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x5f0
 // Size: 0x4
 function electric_cherry_client_field_func() {
@@ -54,7 +54,7 @@ function electric_cherry_client_field_func() {
 }
 
 // Namespace zm_perk_electric_cherry/zm_perk_electric_cherry
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x600
 // Size: 0x4
 function electric_cherry_code_callback_func() {
@@ -62,7 +62,7 @@ function electric_cherry_code_callback_func() {
 }
 
 // Namespace zm_perk_electric_cherry/zm_perk_electric_cherry
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4842ff75, Offset: 0x610
 // Size: 0x122
 function electric_cherry_reload_attack_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -84,7 +84,7 @@ function electric_cherry_reload_attack_fx(localclientnum, oldval, newval, bnewen
 }
 
 // Namespace zm_perk_electric_cherry/zm_perk_electric_cherry
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xec2af631, Offset: 0x740
 // Size: 0x1f6
 function tesla_death_fx_callback(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -120,7 +120,7 @@ function tesla_death_fx_callback(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace zm_perk_electric_cherry/zm_perk_electric_cherry
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfa342fe2, Offset: 0x940
 // Size: 0x2b6
 function tesla_shock_eyes_fx_callback(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

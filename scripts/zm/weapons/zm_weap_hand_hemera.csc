@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_hand_hemera/zm_weap_hand_hemera
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5f1e636f, Offset: 0x1d8
 // Size: 0x40a
 function __init__() {
@@ -41,7 +41,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_hand_hemera/zm_weap_hand_hemera
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3a009c66, Offset: 0x5f0
 // Size: 0x21c
 function hemera_impact_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -65,7 +65,7 @@ function hemera_impact_fx(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_weap_hand_hemera/zm_weap_hand_hemera
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x59f617a4, Offset: 0x818
 // Size: 0x2dc
 function function_ab086ad8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -100,7 +100,7 @@ function function_ab086ad8(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_hand_hemera/zm_weap_hand_hemera
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xcf44758f, Offset: 0xb00
 // Size: 0xaa
 function hemera_shoot_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -111,7 +111,7 @@ function hemera_shoot_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace zm_weap_hand_hemera/zm_weap_hand_hemera
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1fb1b977, Offset: 0xbb8
 // Size: 0x154
 function function_c6d1bdb0(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -138,7 +138,7 @@ function function_c6d1bdb0(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_hand_hemera/zm_weap_hand_hemera
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9c175820, Offset: 0xd18
 // Size: 0x19a
 function function_68e9fdbb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -169,7 +169,7 @@ function function_68e9fdbb(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_hand_hemera/zm_weap_hand_hemera
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5a8863d9, Offset: 0xec0
 // Size: 0xac
 function function_70e72eac(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -181,7 +181,7 @@ function function_70e72eac(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_hand_hemera/zm_weap_hand_hemera
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc7c20a02, Offset: 0xf78
 // Size: 0xc6
 function function_f1f34b1b(localclientnum) {
@@ -204,7 +204,7 @@ function function_f1f34b1b(localclientnum) {
 }
 
 // Namespace zm_weap_hand_hemera/zm_weap_hand_hemera
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdf678fd5, Offset: 0x1048
 // Size: 0x17a
 function function_4662df7a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -222,7 +222,7 @@ function function_4662df7a(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_hand_hemera/zm_weap_hand_hemera
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x94391d01, Offset: 0x11d0
 // Size: 0x124
 function function_3fd7be85(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

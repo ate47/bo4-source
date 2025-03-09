@@ -1,0 +1,23 @@
+{
+    "name": "#hash_3e9eabb86ee717c0",
+    "baseWeapon": "#inventory_counteruav",
+    "displayname": "#killstreak/cuav",
+    "unk70": "#counteruav",
+    "streamkey": "#hash_394bb1a4761db682",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "sound660": "#uin_unavailable_charging",
+    "projexplosionsound": "#hash_20cda79cd396562",
+    "tunables1": "#hash_1d942572410",
+    "viewmodel": "#hash_1d9324230f0",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "gadgetIconAvailable": "#ui_icon_scorestreaks_cuav_light",
+    "gadgetIconUnavailable": "#ui_icon_scorestreaks_cuav_dark",
+    "image_d40": "#hash_18f29c51f057398d",
+    "image_d48": "#hash_18f29c51f057398d",
+    "image_e90": "#hash_18f29c51f057398d",
+    "crateObjective": "#counteruav_waypoint",
+    "underwaterExplosionSurfaceFX": [],
+    "image_1048": "#hash_18f29c51f057398d"
+}

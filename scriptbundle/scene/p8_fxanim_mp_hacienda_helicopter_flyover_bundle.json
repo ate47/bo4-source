@@ -1,0 +1,113 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_8276b202e0b864",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4d41c08e51cbd534",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#veh_t8_mil_helicopter_light_closed",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7281c3f320d30013",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4173fb04975c014f",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#p8_foliage_tree_olive_large_b",
+            "type": "prop",
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_10a98e87deeab317",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4d82a95522f1bca3",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_1fb9cf1ecd63735",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 3"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4a518b02ad00a7fd",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7154dee77db312cd",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_3109423a306d6d53",
+            "type": "prop",
+            "name": "prop 4"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_hacienda_helicopter_flyover_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_61dbb57be87e229d",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_663f1213a02a107c",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "p8_fxanim_mp_offshore_alt_crate_door_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

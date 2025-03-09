@@ -7,7 +7,7 @@
 #namespace scoreevents;
 
 // Namespace scoreevents/scoreevents_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x6c178449, Offset: 0x140
 // Size: 0xb8
 function function_6f51d1e9(event, players, victim, weapon) {
@@ -23,7 +23,7 @@ function function_6f51d1e9(event, players, victim, weapon) {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x8e08fe88, Offset: 0x200
 // Size: 0x674
 function processscoreevent(event, player, victim, weapon, var_36f23f1f) {
@@ -111,7 +111,7 @@ function processscoreevent(event, player, victim, weapon, var_36f23f1f) {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcd39143e, Offset: 0x880
 // Size: 0x16a
 function shouldaddrankxp(player) {
@@ -141,7 +141,7 @@ function shouldaddrankxp(player) {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3e35b6b6, Offset: 0x9f8
 // Size: 0x9c
 function uninterruptedobitfeedkills(attacker, weapon) {
@@ -156,7 +156,7 @@ function uninterruptedobitfeedkills(attacker, weapon) {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x294d3c02, Offset: 0xaa0
 // Size: 0x64
 function function_c046c773(waitduration, event, player, victim, weapon) {
@@ -166,7 +166,7 @@ function function_c046c773(waitduration, event, player, victim, weapon) {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x90eaa5ff, Offset: 0xb10
 // Size: 0x30
 function isregisteredevent(type) {
@@ -177,7 +177,7 @@ function isregisteredevent(type) {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x886ebe9f, Offset: 0xb48
 // Size: 0x4c
 function decrementlastobituaryplayercountafterfade() {
@@ -188,7 +188,7 @@ function decrementlastobituaryplayercountafterfade() {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2d42533b, Offset: 0xba0
 // Size: 0x122
 function function_2b96d7dc() {
@@ -213,7 +213,7 @@ function function_2b96d7dc() {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x40d2b611, Offset: 0xcd0
 // Size: 0x25a
 function getscoreeventtablename(gametype) {
@@ -264,7 +264,7 @@ function getscoreeventtableid(gametype) {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb6f9d4df, Offset: 0x1028
 // Size: 0x1ec
 function givecratecapturemedal(crate, capturer) {
@@ -338,7 +338,7 @@ function register_thief_shutdown_enemy_event(event_func) {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd26a5ace, Offset: 0x1360
 // Size: 0xa4
 function hero_ability_kill_event(ability, victim_ability) {
@@ -353,7 +353,7 @@ function hero_ability_kill_event(ability, victim_ability) {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x41f47c2a, Offset: 0x1410
 // Size: 0xa4
 function hero_ability_multikill_event(killcount, ability) {
@@ -368,7 +368,7 @@ function hero_ability_multikill_event(killcount, ability) {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x89927ce4, Offset: 0x14c0
 // Size: 0xa4
 function hero_weapon_multikill_event(killcount, weapon) {
@@ -398,7 +398,7 @@ function thief_shutdown_enemy_event() {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7445a52c, Offset: 0x1608
 // Size: 0x34
 function function_dcdf1105() {
@@ -406,7 +406,7 @@ function function_dcdf1105() {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb9f795c0, Offset: 0x1648
 // Size: 0xe
 function player_fully_healed() {
@@ -414,7 +414,7 @@ function player_fully_healed() {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x98cafcf2, Offset: 0x1660
 // Size: 0x10
 function player_spawned() {
@@ -424,7 +424,7 @@ function player_spawned() {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x92e2b475, Offset: 0x1678
 // Size: 0xc4
 function function_f40d64cc(attacker, vehicle, weapon) {

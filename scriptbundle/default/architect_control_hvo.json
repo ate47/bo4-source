@@ -1,42 +1,42 @@
 {
     "statsarray": [
         {
-            "var_82670522": "stats_deployable_cover_kill",
+            "hash_82670522": "stats_deployable_cover_kill",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_f16f29c7e6f1c19"
         },
         {
-            "var_82670522": "stats_hpm_suppress",
+            "hash_82670522": "stats_hpm_suppress",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_785366bfc4a5f74f"
         },
         {
-            "var_82670522": "stats_deployable_cover_assist",
+            "hash_82670522": "stats_deployable_cover_assist",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_73d3def88fa5cf5d"
         },
         {
             "stattype": "objectiveekia",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_5d1ab6f5e0227795"
         },
         {
             "stattype": "damagedone",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_5418827f408e5ca2"
         },
         {
             "stattype": "objectivescore",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_4d3552e327f94ecf"
         }
     ],
-    "var_447510ee": "prt_mp_engineer",
+    "hash_447510ee": "prt_mp_engineer",
     "defaultimage": "#ui_icon_hvo_base",
     "cardname": "#hash_6c3a2112468353be",
     "name": "architect_control_hvo",
-    "var_46a95923": "control"
+    "associatedgamemode": "control"
 }

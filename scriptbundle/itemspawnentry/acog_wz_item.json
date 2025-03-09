@@ -9,7 +9,7 @@
     "model": "#attach_t8_optic_acog_world",
     "type": "itemspawnentry",
     "hintstring": "#wz/attach_acog",
-    "var_65b3a12": 1,
+    "hash_65b3a12": 1,
     "name": "acog_wz_item",
     "displayname": "#wz/attach_acog",
     "icon": "#ui_icon_attachment_recon",

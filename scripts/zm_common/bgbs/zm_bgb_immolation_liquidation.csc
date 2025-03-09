@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_immolation_liquidation/zm_bgb_immolation_liquidation
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x41893864, Offset: 0xd8
 // Size: 0x4c
 function __init__() {

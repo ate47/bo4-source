@@ -1,16 +1,16 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "var_826726a": "#hash_318630efd9dca28c"
+            "hash_826726a": "#hash_318630efd9dca28c"
         }
     ],
     "contracticon": "#hash_63837c0a45951f67",
-    "var_d0100eab": 1,
+    "hash_d0100eab": 1,
     "relateditemname": "#hash_62bd0375e9e20dab",
     "contracttitle": "#hash_318630efd9dca28c",
     "name": "loot_contract_torque_highlander",
     "contractdescription": "#hash_8b1fc81e30f868",
-    "var_f15e270f": "#white",
-    "var_1c057e8c": "#hash_2912e9ec8da5726f",
-    "var_e08fc162": "#hash_5ed2a0cc9b45c73f"
+    "hash_f15e270f": "#white",
+    "hash_1c057e8c": "#hash_2912e9ec8da5726f",
+    "hash_e08fc162": "#hash_5ed2a0cc9b45c73f"
 }

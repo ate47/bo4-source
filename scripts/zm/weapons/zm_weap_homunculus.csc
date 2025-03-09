@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_homunculus/zm_weap_homunculus
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfc01387f, Offset: 0x168
 // Size: 0xb4
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_homunculus/zm_weap_homunculus
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x12668483, Offset: 0x228
 // Size: 0x38
 function __main__() {
@@ -36,7 +36,7 @@ function __main__() {
 }
 
 // Namespace zm_weap_homunculus/zm_weap_homunculus
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xab5e8c2b, Offset: 0x268
 // Size: 0xe4
 function function_6fcc4908(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -52,7 +52,7 @@ function function_6fcc4908(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_homunculus/zm_weap_homunculus
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd1bf28af, Offset: 0x358
 // Size: 0xc4
 function function_3e362ad8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

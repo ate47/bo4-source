@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace dog/dog
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x843322c4, Offset: 0xf8
 // Size: 0x7c
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace dog/dog
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5e4d86cf, Offset: 0x180
 // Size: 0x44
 function spawned(local_client_num, bundle) {
@@ -35,7 +35,7 @@ function spawned(local_client_num, bundle) {
 }
 
 // Namespace dog/dog
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xefcec1ed, Offset: 0x1d0
 // Size: 0x5c
 function function_a25e8ff(local_client_num) {

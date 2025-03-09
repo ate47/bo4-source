@@ -1,0 +1,43 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_58fe6fa7b5a2e6ec",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_25296e1dd1049a01",
+            "type": "prop",
+            "name": "actor 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4c40de88b4fce0ef",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_763d1a02bc9e212a",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_tplt_prebtl_zmb_astronaut_zm_on_ceiling_05_a",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_white_private_mannequin/zm_white_private_mannequin
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x488985fd, Offset: 0x110
 // Size: 0x5c
 function __init__() {
@@ -20,7 +20,7 @@ function __init__() {
 }
 
 // Namespace zm_white_private_mannequin/zm_white_private_mannequin
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x178
 // Size: 0x4
 function __main__() {
@@ -28,7 +28,7 @@ function __main__() {
 }
 
 // Namespace zm_white_private_mannequin/zm_white_private_mannequin
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc41fb4c9, Offset: 0x188
 // Size: 0x7c
 function function_a1ee0828(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

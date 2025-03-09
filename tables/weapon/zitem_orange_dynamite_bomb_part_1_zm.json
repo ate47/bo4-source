@@ -1,0 +1,14 @@
+{
+    "name": "#zitem_orange_dynamite_bomb_part_1_zm",
+    "baseWeapon": "#zitem_orange_dynamite_bomb_part_1",
+    "streamkey": "#hash_284862245e703b14",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "gadgetreadysoundplayer": "#dynamite",
+    "tunables1": "#hash_1d9864fc4a8",
+    "viewmodel": "#hash_1d953758eb0",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "image_d40": "#$blacktransparent",
+    "underwaterExplosionSurfaceFX": []
+}

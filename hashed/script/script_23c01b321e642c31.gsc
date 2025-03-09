@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_d6ef1c07/namespace_d6ef1c07
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf0ab0f9d, Offset: 0xe0
 // Size: 0x5c
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace namespace_d6ef1c07/namespace_d6ef1c07
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x71a23571, Offset: 0x148
 // Size: 0x1fc
 function private on_begin(var_2a54eca1, var_b3fc75a6, var_40988d98, var_968ac18f) {
@@ -55,7 +55,7 @@ function private on_begin(var_2a54eca1, var_b3fc75a6, var_40988d98, var_968ac18f
 }
 
 // Namespace namespace_d6ef1c07/namespace_d6ef1c07
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x36821d0c, Offset: 0x350
 // Size: 0x22c
 function private on_end(round_reset) {
@@ -82,7 +82,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace namespace_d6ef1c07/namespace_d6ef1c07
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x609bedb0, Offset: 0x588
 // Size: 0x12e
 function private function_7f62f098(challenge) {
@@ -108,7 +108,7 @@ function private function_7f62f098(challenge) {
 }
 
 // Namespace namespace_d6ef1c07/namespace_d6ef1c07
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc831a75a, Offset: 0x6c0
 // Size: 0xd4
 function private function_138aec8e(attacker) {

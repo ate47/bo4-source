@@ -6,7 +6,7 @@
 #namespace zm_red_fasttravel;
 
 // Namespace zm_red_fasttravel/zm_red_fasttravel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd13f28c7, Offset: 0x180
 // Size: 0x37a
 function init() {
@@ -26,7 +26,7 @@ function init() {
 }
 
 // Namespace zm_red_fasttravel/zm_red_fasttravel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa58a0807, Offset: 0x508
 // Size: 0x284
 function main() {
@@ -58,7 +58,7 @@ function main() {
 }
 
 // Namespace zm_red_fasttravel/zm_red_fasttravel
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7881f22d, Offset: 0x798
 // Size: 0x2aa
 function function_ec7e76a8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -94,7 +94,7 @@ function function_ec7e76a8(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_fasttravel/zm_red_fasttravel
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6ce5eb9c, Offset: 0xa50
 // Size: 0x64
 function override_fasttravel_end_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -104,7 +104,7 @@ function override_fasttravel_end_fx(localclientnum, oldval, newval, bnewent, bin
 }
 
 // Namespace zm_red_fasttravel/zm_red_fasttravel
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1700de58, Offset: 0xac0
 // Size: 0x8c
 function function_e968fd4f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -116,7 +116,7 @@ function function_e968fd4f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_fasttravel/zm_red_fasttravel
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7a299aa6, Offset: 0xb58
 // Size: 0x7c
 function forcestream_crafted_item(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

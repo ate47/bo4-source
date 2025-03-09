@@ -19,10 +19,10 @@
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 200,
+    "hash_7fb0967b": 200,
     "type": "itemspawnlist",
-    "var_345eba59": 3,
-    "var_9b009839": -1,
+    "hash_345eba59": 3,
+    "hash_9b009839": -1,
     "name": "health_list_low_hardcore",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

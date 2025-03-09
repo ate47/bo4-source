@@ -104,7 +104,7 @@ function function_8bf71bd6() {
         linktraversal(traversal_start_node);
     }
     player function_587e512e();
-    function_e2a06860(gate, 1);
+    setdynentstate(gate, 1);
 }
 
 // Namespace character_unlock_nikolai/character_unlock_nikolai

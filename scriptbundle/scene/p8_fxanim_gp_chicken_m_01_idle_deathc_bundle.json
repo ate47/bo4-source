@@ -1,0 +1,44 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_174c25b7ce388433",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 2,
+                    "spacermax": 6,
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6983fa47167d620f",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_132c9791": 1,
+                    "hash_b3dddfd3": 1,
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_69e2e2ad0153bf5a",
+            "type": "prop",
+            "hash_a1c5c678": 1,
+            "name": "prop 1",
+            "hash_873368a8": 10,
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_gp_chicken_m_01_idle_deathc_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

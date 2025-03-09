@@ -7,14 +7,14 @@
 // Method(s) 6 Total 13
 class cmp_infect_timer : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cmp_infect_timer/mp_infect_timer
     // Params 2, eflags: 0x0
     // Checksum 0x800210c9, Offset: 0x2d8
     // Size: 0x3c
     function function_8c8674a4(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "infectionTimeRemaining", value);
+        player clientfield::function_9bf78ef8(_uid, "infectionTimeRemaining", value);
     }
 
     // Namespace cmp_infect_timer/mp_infect_timer

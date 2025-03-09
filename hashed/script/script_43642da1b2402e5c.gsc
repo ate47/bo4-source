@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_a9e73d8d/namespace_a9e73d8d
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x89007523, Offset: 0x170
 // Size: 0x5c
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace namespace_a9e73d8d/namespace_a9e73d8d
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x4038cf6e, Offset: 0x1d8
 // Size: 0x16c
 function private on_begin() {
@@ -49,7 +49,7 @@ function private on_begin() {
 }
 
 // Namespace namespace_a9e73d8d/namespace_a9e73d8d
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x50c94472, Offset: 0x350
 // Size: 0xa4
 function private on_end(round_reset) {
@@ -62,7 +62,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace namespace_a9e73d8d/namespace_a9e73d8d
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x42bd558b, Offset: 0x400
 // Size: 0x214
 function private refill_ammo() {
@@ -87,7 +87,7 @@ function private refill_ammo() {
 }
 
 // Namespace namespace_a9e73d8d/namespace_a9e73d8d
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x3836240f, Offset: 0x620
 // Size: 0x118
 function private lock_shield() {
@@ -103,7 +103,7 @@ function private lock_shield() {
 }
 
 // Namespace namespace_a9e73d8d/namespace_a9e73d8d
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcee7b4c4, Offset: 0x740
 // Size: 0x184
 function private function_33f0ddd3(s_event) {
@@ -127,7 +127,7 @@ function private function_33f0ddd3(s_event) {
 }
 
 // Namespace namespace_a9e73d8d/namespace_a9e73d8d
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xe35582f0, Offset: 0x8d0
 // Size: 0x1f4
 function private function_29ee24dd() {
@@ -152,7 +152,7 @@ function private function_29ee24dd() {
 }
 
 // Namespace namespace_a9e73d8d/namespace_a9e73d8d
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6a381480, Offset: 0xad0
 // Size: 0x32
 function is_active() {
@@ -161,7 +161,7 @@ function is_active() {
 }
 
 // Namespace namespace_a9e73d8d/namespace_a9e73d8d
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa7843761, Offset: 0xb10
 // Size: 0x60
 function private on_ai_killed(params) {
@@ -171,7 +171,7 @@ function private on_ai_killed(params) {
 }
 
 // Namespace namespace_a9e73d8d/namespace_a9e73d8d
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x38076a49, Offset: 0xb78
 // Size: 0x1b0
 function private reset_ammo(var_f2c84b6b) {

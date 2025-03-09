@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_bowie/zm_weap_bowie
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xe113d4e9, Offset: 0x180
 // Size: 0x24
 function private __init__() {
@@ -24,7 +24,7 @@ function private __init__() {
 }
 
 // Namespace zm_weap_bowie/zm_weap_bowie
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x627fbf5f, Offset: 0x1b0
 // Size: 0x19e
 function private __main__() {

@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9d67ae71, Offset: 0x238
 // Size: 0x422
 function __init__() {
@@ -42,7 +42,7 @@ function __init__() {
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf133933f, Offset: 0x668
 // Size: 0x14e
 function fan_trap_blood_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -62,7 +62,7 @@ function fan_trap_blood_fx(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x78fe4287, Offset: 0x7c0
 // Size: 0xde
 function rumble_fan_trap(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -81,7 +81,7 @@ function rumble_fan_trap(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9399307d, Offset: 0x8a8
 // Size: 0x1ac
 function acid_trap_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -104,7 +104,7 @@ function acid_trap_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9d2f1810, Offset: 0xa60
 // Size: 0xee
 function acid_trap_death_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -120,7 +120,7 @@ function acid_trap_death_fx(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd0024089, Offset: 0xb58
 // Size: 0x206
 function player_acid_trap_post_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -150,7 +150,7 @@ function player_acid_trap_post_fx(localclientnum, oldval, newval, bnewent, binit
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x61f1e63a, Offset: 0xd68
 // Size: 0x13c
 function function_17956e93(localclientnum) {
@@ -175,7 +175,7 @@ function function_17956e93(localclientnum) {
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb5cf8eb8, Offset: 0xeb0
 // Size: 0x144
 function function_502136a5(str_notify) {
@@ -201,7 +201,7 @@ function function_502136a5(str_notify) {
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x32c0a7b0, Offset: 0x1000
 // Size: 0x114
 function spinning_trap_blood_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -220,7 +220,7 @@ function spinning_trap_blood_fx(localclientnum, oldval, newval, bnewent, binitia
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8b7427c7, Offset: 0x1120
 // Size: 0xba
 function spinning_trap_eye_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -234,7 +234,7 @@ function spinning_trap_eye_fx(localclientnum, oldval, newval, bnewent, binitials
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe309b0b6, Offset: 0x11e8
 // Size: 0xde
 function rumble_spinning_trap(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

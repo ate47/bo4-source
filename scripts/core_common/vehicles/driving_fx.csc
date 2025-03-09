@@ -18,7 +18,7 @@ function event_handler[enter_vehicle] codecallback_vehicleenter(eventstruct) {
 }
 
 // Namespace driving_fx/driving_fx
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x30a91e41, Offset: 0x1d0
 // Size: 0x12c
 function vehicle_enter(localclientnum, vehicle) {
@@ -39,7 +39,7 @@ function vehicle_enter(localclientnum, vehicle) {
 }
 
 // Namespace driving_fx/driving_fx
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xeff07fd6, Offset: 0x308
 // Size: 0x308
 function collision_thread(localclientnum) {
@@ -90,7 +90,7 @@ function collision_thread(localclientnum) {
 }
 
 // Namespace driving_fx/driving_fx
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x43137edd, Offset: 0x618
 // Size: 0x178
 function jump_landing_thread(localclientnum) {
@@ -120,7 +120,7 @@ function jump_landing_thread(localclientnum) {
 }
 
 // Namespace driving_fx/driving_fx
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x305212d6, Offset: 0x798
 // Size: 0x148
 function suspension_thread(localclientnum) {
@@ -146,7 +146,7 @@ function suspension_thread(localclientnum) {
 }
 
 // Namespace driving_fx/driving_fx
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8ce367f4, Offset: 0x8e8
 // Size: 0x86
 function get_impact_vol_from_speed() {
@@ -158,7 +158,7 @@ function get_impact_vol_from_speed() {
 }
 
 // Namespace driving_fx/driving_fx
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf1730e7e, Offset: 0x978
 // Size: 0x230
 function function_b6f1b2f1() {
@@ -189,7 +189,7 @@ function function_b6f1b2f1() {
 }
 
 // Namespace driving_fx/driving_fx
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xef05b905, Offset: 0xbb0
 // Size: 0x6c
 function function_73e08cca(surface) {
@@ -204,7 +204,7 @@ function function_73e08cca(surface) {
 }
 
 // Namespace driving_fx/driving_fx
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x52e1961, Offset: 0xc28
 // Size: 0xce
 function stop_postfx_on_exit(var_89ae88b4) {
@@ -218,7 +218,7 @@ function stop_postfx_on_exit(var_89ae88b4) {
 }
 
 // Namespace driving_fx/driving_fx
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdaeac015, Offset: 0xd00
 // Size: 0x10e
 function function_ace6c248(var_89ae88b4) {
@@ -237,7 +237,7 @@ function function_ace6c248(var_89ae88b4) {
 }
 
 // Namespace driving_fx/driving_fx
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x422f807c, Offset: 0xe18
 // Size: 0x10a
 function function_dc263531(var_fd4bffcb, forcestop) {
@@ -256,7 +256,7 @@ function function_dc263531(var_fd4bffcb, forcestop) {
 }
 
 // Namespace driving_fx/driving_fx
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe2da5d29, Offset: 0xf30
 // Size: 0x258
 function function_d79b3148(localclientnum, driver) {

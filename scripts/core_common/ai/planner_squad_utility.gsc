@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 #namespace plannersquadutility;
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x3bdc29a4, Offset: 0x218
 // Size: 0x82c
 function private __init__() {
@@ -60,7 +60,7 @@ function private __init__() {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xdd8cf27, Offset: 0xa50
 // Size: 0x1cc
 function private _assigngameobject(bot, gameobject) {
@@ -82,7 +82,7 @@ function private _assigngameobject(bot, gameobject) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x76fc58ac, Offset: 0xc28
 // Size: 0x6c
 function private _cleargameobject(bot) {
@@ -94,7 +94,7 @@ function private _cleargameobject(bot) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8f0790e7, Offset: 0xca0
 // Size: 0x376
 function private _calculateadjustedpathsegments(params) {
@@ -144,7 +144,7 @@ function private _calculateadjustedpathsegments(params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x6470693f, Offset: 0x1020
 // Size: 0x98
 function private function_48bd5e74(bots) {
@@ -157,7 +157,7 @@ function private function_48bd5e74(bots) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2fd7bb67, Offset: 0x10c0
 // Size: 0xac
 function private function_66f80bb1(bots) {
@@ -170,7 +170,7 @@ function private function_66f80bb1(bots) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x51642834, Offset: 0x1178
 // Size: 0xb0
 function private function_e1b14108(bots) {
@@ -183,7 +183,7 @@ function private function_e1b14108(bots) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x62ed5118, Offset: 0x1230
 // Size: 0xbc
 function private function_8ff43349(bots) {
@@ -237,7 +237,7 @@ function private _debugadjustedpath(params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc957b135, Offset: 0x16a0
 // Size: 0x624
 function private _evaluateadjustedpath(params) {
@@ -311,7 +311,7 @@ function private _evaluateadjustedpath(params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x4a29d4b0, Offset: 0x1cd0
 // Size: 0xa2
 function private _evaluatepointdanger(bot, center, inner, outer) {
@@ -322,21 +322,21 @@ function private _evaluatepointdanger(bot, center, inner, outer) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc806996b, Offset: 0x1d80
 // Size: 0xb6
 function private _isinjured(bot) {
     if (strategiccommandutility::isvalidbot(bot) && isdefined(bot.health) && isdefined(bot.maxhealth)) {
         tacstate = bot bot::function_d473f7de();
         if (isdefined(tacstate)) {
-            return (bot.health / bot.maxhealth <= (isdefined(tacstate.var_ac1c818f) ? tacstate.var_ac1c818f : 0));
+            return (bot.health / bot.maxhealth <= (isdefined(tacstate.lowhealthratio) ? tacstate.lowhealthratio : 0));
         }
     }
     return false;
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x50c203fe, Offset: 0x1e40
 // Size: 0x92
 function private _paramshasbots(params) {
@@ -349,7 +349,7 @@ function private _paramshasbots(params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x658dacaf, Offset: 0x1ee0
 // Size: 0x17e
 function private _setgoalpoint(bot, point, likelyenemyposition) {
@@ -376,7 +376,7 @@ function private _setgoalpoint(bot, point, likelyenemyposition) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xf6a0898f, Offset: 0x2068
 // Size: 0xf6
 function private function_a1574a8d(bot, trigger, likelyenemyposition) {
@@ -396,7 +396,7 @@ function private function_a1574a8d(bot, trigger, likelyenemyposition) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x7b2b75aa, Offset: 0x2168
 // Size: 0x6e
 function private function_d065f4fd(adjustedpath, currentpathsegment, var_769cf7b7) {
@@ -410,7 +410,7 @@ function private function_d065f4fd(adjustedpath, currentpathsegment, var_769cf7b
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xd5280c1f, Offset: 0x21e0
 // Size: 0x11a
 function private strategybotgoalparam(planner, constants) {
@@ -425,7 +425,7 @@ function private strategybotgoalparam(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x65a49234, Offset: 0x2308
 // Size: 0x454
 function private strategybotobjectparam(planner, constants) {
@@ -474,7 +474,7 @@ function private strategybotobjectparam(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x34ac27ed, Offset: 0x2768
 // Size: 0xf6
 function strategybotparam(planner, constants) {
@@ -488,7 +488,7 @@ function strategybotparam(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xe46d4565, Offset: 0x2868
 // Size: 0x46
 function private strategyclearareaobjectiveparam(planner, constants) {
@@ -498,7 +498,7 @@ function private strategyclearareaobjectiveparam(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x1f093cc, Offset: 0x28b8
 // Size: 0x46
 function private strategyclearareaobjectparam(planner, constants) {
@@ -508,7 +508,7 @@ function private strategyclearareaobjectparam(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x59e92a14, Offset: 0x2908
 // Size: 0x64
 function private strategyclearareatoescortinit(planner, params) {
@@ -520,7 +520,7 @@ function private strategyclearareatoescortinit(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xa114a441, Offset: 0x2978
 // Size: 0x46
 function private strategyclearareatoescortparam(planner, constants) {
@@ -530,7 +530,7 @@ function private strategyclearareatoescortparam(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x42cbdc1d, Offset: 0x29c8
 // Size: 0x7a
 function private strategyclearareatogoldenpathinit(planner, params) {
@@ -544,7 +544,7 @@ function private strategyclearareatogoldenpathinit(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x489dde45, Offset: 0x2a50
 // Size: 0x456
 function private strategyclearareatogoldenpathparam(planner, constants) {
@@ -595,7 +595,7 @@ function private strategyclearareatogoldenpathparam(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x7bc5cf9f, Offset: 0x2eb0
 // Size: 0x16e
 function private function_903aeb1c(planner, params) {
@@ -621,7 +621,7 @@ function private function_903aeb1c(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xbf1a055b, Offset: 0x3028
 // Size: 0x282
 function private strategyclearareatogoldenpathupdate(planner, params) {
@@ -655,7 +655,7 @@ function private strategyclearareatogoldenpathupdate(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x27f25acb, Offset: 0x32b8
 // Size: 0x90
 function private strategyclearareatoobjectinit(planner, params) {
@@ -670,7 +670,7 @@ function private strategyclearareatoobjectinit(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xa6d74b40, Offset: 0x3350
 // Size: 0x64
 function private strategyclearareatoobjectiveinit(planner, params) {
@@ -682,7 +682,7 @@ function private strategyclearareatoobjectiveinit(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2f96666d, Offset: 0x33c0
 // Size: 0x69a
 function private strategyclearareatoattackobjectupdate(planner, params) {
@@ -765,7 +765,7 @@ function private strategyclearareatoattackobjectupdate(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xc7609df3, Offset: 0x3a68
 // Size: 0x2d0
 function private strategyclearareatodefendobjectupdate(planner, params) {
@@ -803,7 +803,7 @@ function private strategyclearareatodefendobjectupdate(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xa7b30422, Offset: 0x3d40
 // Size: 0x2c2
 function private strategyclearareatoescortupdate(planner, params) {
@@ -844,7 +844,7 @@ function private strategyclearareatoescortupdate(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xe7120295, Offset: 0x4010
 // Size: 0x3b4
 function private strategyclearareatoobjectiveupdate(planner, params) {
@@ -890,7 +890,7 @@ function private strategyclearareatoobjectiveupdate(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xfb01e3f0, Offset: 0x43d0
 // Size: 0x13a
 function private strategyhasattackobject(planner, constants) {
@@ -907,7 +907,7 @@ function private strategyhasattackobject(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xeb935e7b, Offset: 0x4518
 // Size: 0x13e
 function private strategyhasescort(planner, constants) {
@@ -929,7 +929,7 @@ function private strategyhasescort(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xcb413314, Offset: 0x4660
 // Size: 0x62
 function private strategyhasescortpoi(planner, constants) {
@@ -938,7 +938,7 @@ function private strategyhasescortpoi(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x719ef5bd, Offset: 0x46d0
 // Size: 0x34
 function private strategyhasforcegoal(planner, constants) {
@@ -946,7 +946,7 @@ function private strategyhasforcegoal(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x1f504f09, Offset: 0x4710
 // Size: 0xf6
 function private function_790fb743(planner, constants) {
@@ -959,7 +959,7 @@ function private function_790fb743(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x38de5e8b, Offset: 0x4810
 // Size: 0x25a
 function private function_f6ec02a4(planner, constants) {
@@ -988,7 +988,7 @@ function private function_f6ec02a4(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xca039b73, Offset: 0x4a78
 // Size: 0x254
 function private strategyhasbelowxammounsafe(planner, constants) {
@@ -1016,7 +1016,7 @@ function private strategyhasbelowxammounsafe(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x19a969f7, Offset: 0x4cd8
 // Size: 0xf2
 function private strategyhasblackboardvalue(planner, constants) {
@@ -1027,7 +1027,7 @@ function private strategyhasblackboardvalue(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xcbb3fab0, Offset: 0x4dd8
 // Size: 0x13a
 function private strategyhasdefendobject(planner, constants) {
@@ -1044,7 +1044,7 @@ function private strategyhasdefendobject(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xbcb00fb7, Offset: 0x4f20
 // Size: 0x10c
 function private strategyhasobjective(planner, constants) {
@@ -1061,7 +1061,7 @@ function private strategyhasobjective(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xa72dd2e6, Offset: 0x5038
 // Size: 0x5a
 function private function_b384b9b6(planner, constants) {
@@ -1070,7 +1070,7 @@ function private function_b384b9b6(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x8325e185, Offset: 0x50a0
 // Size: 0x114
 function private function_2083115a(planner, constants) {
@@ -1096,7 +1096,7 @@ function private function_2083115a(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x356081e, Offset: 0x51c0
 // Size: 0x52
 function private strategyhaspathableammocache(planner, constants) {
@@ -1105,7 +1105,7 @@ function private strategyhaspathableammocache(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xf72d1ae5, Offset: 0x5220
 // Size: 0x11c
 function private strategyrushammocacheinit(planner, params) {
@@ -1123,7 +1123,7 @@ function private strategyrushammocacheinit(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xe412cea3, Offset: 0x5348
 // Size: 0x1f8
 function private function_a0f209b7(planner, constants) {
@@ -1149,7 +1149,7 @@ function private function_a0f209b7(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x29e37713, Offset: 0x5548
 // Size: 0x38
 function private function_b3ede444(planner, params) {
@@ -1160,7 +1160,7 @@ function private function_b3ede444(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xcf0ed201, Offset: 0x5588
 // Size: 0x440
 function private function_942e45dc(planner, params) {
@@ -1218,7 +1218,7 @@ function private function_942e45dc(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x43e55ad0, Offset: 0x59d0
 // Size: 0xba
 function private function_6ed940fb(planner, params) {
@@ -1232,7 +1232,7 @@ function private function_6ed940fb(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x1c2de0a6, Offset: 0x5a98
 // Size: 0xe2
 function private function_4c91e90d(planner, params) {
@@ -1249,7 +1249,7 @@ function private function_4c91e90d(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x14adcebd, Offset: 0x5b88
 // Size: 0x51e
 function private strategyrushammocacheparam(planner, constants) {
@@ -1310,7 +1310,7 @@ function private strategyrushammocacheparam(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x522af366, Offset: 0x60b0
 // Size: 0x14a
 function private strategyrushammocacheupdate(planner, params) {
@@ -1331,7 +1331,7 @@ function private strategyrushammocacheupdate(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xa38ad3e3, Offset: 0x6208
 // Size: 0x114
 function private strategyrushattackobjectinit(planner, params) {
@@ -1349,7 +1349,7 @@ function private strategyrushattackobjectinit(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xc229ee39, Offset: 0x6328
 // Size: 0x78
 function private strategyrushattackobjectupdate(planner, params) {
@@ -1363,7 +1363,7 @@ function private strategyrushattackobjectupdate(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xe7adcb88, Offset: 0x63a8
 // Size: 0x112
 function private strategyrushdefendobjectinit(planner, params) {
@@ -1381,7 +1381,7 @@ function private strategyrushdefendobjectinit(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x75285bde, Offset: 0x64c8
 // Size: 0x78
 function private strategyrushdefendobjectupdate(planner, params) {
@@ -1395,7 +1395,7 @@ function private strategyrushdefendobjectupdate(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x3d25f4a6, Offset: 0x6548
 // Size: 0x224
 function private strategyrushescortparam(planner, constants) {
@@ -1421,7 +1421,7 @@ function private strategyrushescortparam(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xda189e58, Offset: 0x6778
 // Size: 0x2f2
 function private function_5ac5aed(planner, params) {
@@ -1456,7 +1456,7 @@ function private function_5ac5aed(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xab5dc419, Offset: 0x6a78
 // Size: 0x130
 function private function_a856fc9d(planner, params) {
@@ -1476,7 +1476,7 @@ function private function_a856fc9d(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xf1f1bae2, Offset: 0x6bb0
 // Size: 0xfc
 function private strategyrushforcegoalinit(planner, params) {
@@ -1493,7 +1493,7 @@ function private strategyrushforcegoalinit(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x947509b8, Offset: 0x6cb8
 // Size: 0x4e
 function private strategyrushforcegoalupdate(planner, params) {
@@ -1507,7 +1507,7 @@ function private strategyrushforcegoalupdate(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2f9dcd29, Offset: 0x6d10
 // Size: 0x162
 function private strategyrushobjectiveinit(planner, params) {
@@ -1528,7 +1528,7 @@ function private strategyrushobjectiveinit(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xb1f5b930, Offset: 0x6e80
 // Size: 0x304
 function private strategyrushobjectiveparam(planner, constants) {
@@ -1566,7 +1566,7 @@ function private strategyrushobjectiveparam(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xfb37d11f, Offset: 0x7190
 // Size: 0x8c
 function private strategyrushobjectiveupdate(planner, params) {
@@ -1580,7 +1580,7 @@ function private strategyrushobjectiveupdate(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x4cd2f087, Offset: 0x7228
 // Size: 0x282
 function private function_e96dd96b(planner, constants) {
@@ -1607,7 +1607,7 @@ function private function_e96dd96b(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xc10c115, Offset: 0x74b8
 // Size: 0x148
 function private function_50c7bd5a(planner, constants) {
@@ -1625,7 +1625,7 @@ function private function_50c7bd5a(planner, constants) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xb3c4f083, Offset: 0x7608
 // Size: 0xba
 function private strategywanderinit(planner, params) {
@@ -1639,7 +1639,7 @@ function private strategywanderinit(planner, params) {
 }
 
 // Namespace plannersquadutility/planner_squad_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x17c2809d, Offset: 0x76d0
 // Size: 0x24a
 function private strategywanderupdate(planner, params) {

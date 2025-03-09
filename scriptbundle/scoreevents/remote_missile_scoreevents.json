@@ -1,8 +1,8 @@
 {
-    "var_2ecceeab": "#hellstorm_missile_kill",
+    "hash_2ecceeab": "#hellstorm_missile_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
     "name": "remote_missile_scoreevents",
-    "var_e1b418c1": "ability"
+    "customsettingstype": "ability"
 }

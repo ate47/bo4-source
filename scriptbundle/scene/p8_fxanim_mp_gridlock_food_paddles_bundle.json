@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_52c54d5540961e8e",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 3,
+                    "spacermax": 5,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_5a4af4f3e8494955",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_gridlock_food_paddles_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -3,7 +3,7 @@
 #namespace system;
 
 // Namespace system/system_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xf613164, Offset: 0x88
 // Size: 0x18e
 function register(str_name, func_preinit, func_postinit, reqs) {
@@ -24,7 +24,7 @@ function register(str_name, func_preinit, func_postinit, reqs) {
 }
 
 // Namespace system/system_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2e313ddd, Offset: 0x220
 // Size: 0x94
 function exec_post_system(func) {
@@ -41,7 +41,7 @@ function exec_post_system(func) {
 }
 
 // Namespace system/system_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe664e6a2, Offset: 0x2c0
 // Size: 0x1e4
 function function_5095b2c6(func) {
@@ -60,7 +60,7 @@ function function_5095b2c6(func) {
 }
 
 // Namespace system/system_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x136e5f24, Offset: 0x4b0
 // Size: 0xbe
 function run_post_systems() {
@@ -73,7 +73,7 @@ function run_post_systems() {
 }
 
 // Namespace system/system_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa9198406, Offset: 0x578
 // Size: 0x92
 function exec_pre_system(func) {
@@ -90,7 +90,7 @@ function exec_pre_system(func) {
 }
 
 // Namespace system/system_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf7cb479e, Offset: 0x618
 // Size: 0x1a4
 function function_8dfa23e0(func) {
@@ -108,7 +108,7 @@ function function_8dfa23e0(func) {
 }
 
 // Namespace system/system_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb8797dbe, Offset: 0x7c8
 // Size: 0x98
 function run_pre_systems() {
@@ -119,7 +119,7 @@ function run_pre_systems() {
 }
 
 // Namespace system/system_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x205c29cc, Offset: 0x868
 // Size: 0x2c
 function wait_till(required_systems) {

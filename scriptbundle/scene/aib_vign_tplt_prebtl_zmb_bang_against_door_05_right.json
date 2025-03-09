@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5446a9181f82a0e5",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_2073a5b32e79df7a",
+            "type": "fakeactor",
+            "name": "fakeactor 2",
+            "allowdeath": 1,
+            "removeweapon": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_tplt_prebtl_zmb_bang_against_door_05_right",
+    "dontsync": 1,
+    "team": "any"
+}

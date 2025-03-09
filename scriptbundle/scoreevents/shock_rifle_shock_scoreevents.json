@@ -3,5 +3,5 @@
     "type": "scoreevents",
     "vmtype": "both",
     "name": "shock_rifle_shock_scoreevents",
-    "var_e1b418c1": "status effect"
+    "customsettingstype": "status effect"
 }

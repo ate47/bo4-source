@@ -4,7 +4,7 @@
 #namespace zm_escape_catwalk_event;
 
 // Namespace zm_escape_catwalk_event/zm_escape_catwalk_event
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4f45d32e, Offset: 0xa8
 // Size: 0x32
 function init_fx() {
@@ -12,7 +12,7 @@ function init_fx() {
 }
 
 // Namespace zm_escape_catwalk_event/zm_escape_catwalk_event
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9021423f, Offset: 0xe8
 // Size: 0xb4
 function init_clientfields() {
@@ -21,7 +21,7 @@ function init_clientfields() {
 }
 
 // Namespace zm_escape_catwalk_event/zm_escape_catwalk_event
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x54e823f7, Offset: 0x1a8
 // Size: 0xaa
 function function_a3874ae0(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -34,7 +34,7 @@ function function_a3874ae0(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape_catwalk_event/zm_escape_catwalk_event
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5c62dede, Offset: 0x260
 // Size: 0x64
 function function_1fe913e0(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

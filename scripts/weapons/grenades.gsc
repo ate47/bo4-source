@@ -4,7 +4,7 @@
 #namespace grenades;
 
 // Namespace grenades/grenades
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x87b60f9, Offset: 0x88
 // Size: 0xac
 function init_shared() {
@@ -14,7 +14,7 @@ function init_shared() {
 }
 
 // Namespace grenades/grenades
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa8974499, Offset: 0x140
 // Size: 0x26
 function creategrenadewatcher(watcher) {
@@ -22,7 +22,7 @@ function creategrenadewatcher(watcher) {
 }
 
 // Namespace grenades/grenades
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x72b8e77d, Offset: 0x170
 // Size: 0x4c
 function function_aa95d684(watcher, player) {
@@ -31,7 +31,7 @@ function function_aa95d684(watcher, player) {
 }
 
 // Namespace grenades/grenades
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaaea4cd2, Offset: 0x1c8
 // Size: 0x6c
 function function_5f86757d() {

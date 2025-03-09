@@ -1,8 +1,8 @@
 {
     "configstringfiletype": "scriptbundle",
-    "var_ce9b2d06": "gsol_zm_packapunch",
+    "hash_ce9b2d06": "gsol_zm_packapunch",
     "type": "gamesettingoptioncategory",
     "name": "gsoc_zm_packapunch",
-    "var_dea17465": "#hash_40c3c9f045a1912d",
-    "var_608158f2": "#hash_44d095fc76e38f7b"
+    "hash_dea17465": "#hash_40c3c9f045a1912d",
+    "hash_608158f2": "#hash_44d095fc76e38f7b"
 }

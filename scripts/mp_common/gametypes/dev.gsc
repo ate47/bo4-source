@@ -637,7 +637,7 @@ function on_player_connected() {
                 if (!isdefined(player)) {
                     continue;
                 }
-                player function_e6f9e3cd();
+                player cleartalents();
                 player loadout::function_3d16577a(player.team, player.curclass);
             }
             setdvar(#"scr_giveskill", "<dev string:x38>");
@@ -651,7 +651,7 @@ function on_player_connected() {
                 if (!isdefined(player)) {
                     continue;
                 }
-                player function_b5feff95(var_2fe3f7e3);
+                player addtalent(var_2fe3f7e3);
                 player loadout::function_3d16577a(player.team, player.curclass);
             }
             setdvar(#"scr_giveskill", "<dev string:x38>");
@@ -663,7 +663,7 @@ function on_player_connected() {
                 if (!isdefined(player)) {
                     continue;
                 }
-                player function_e6f9e3cd();
+                player cleartalents();
                 player loadout::function_3d16577a(player.team, player.curclass);
             }
             setdvar(#"scr_givetalent", "<dev string:x38>");
@@ -677,7 +677,7 @@ function on_player_connected() {
                 if (!isdefined(player)) {
                     continue;
                 }
-                player function_b5feff95(var_2fe3f7e3);
+                player addtalent(var_2fe3f7e3);
                 player loadout::function_3d16577a(player.team, player.curclass);
             }
             setdvar(#"scr_givetalent", "<dev string:x38>");

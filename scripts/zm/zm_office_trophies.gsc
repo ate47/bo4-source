@@ -8,7 +8,7 @@
 #namespace zm_office_trophies;
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4bccbb33, Offset: 0x1d8
 // Size: 0x114
 function init() {
@@ -24,7 +24,7 @@ function init() {
 }
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2fd07513, Offset: 0x2f8
 // Size: 0x64
 function on_player_connect() {
@@ -37,7 +37,7 @@ function on_player_connect() {
 }
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x155a5768, Offset: 0x368
 // Size: 0x74
 function function_b091b039() {
@@ -50,7 +50,7 @@ function function_b091b039() {
 }
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5052797a, Offset: 0x3e8
 // Size: 0x9e
 function function_ea30554a() {
@@ -68,7 +68,7 @@ function function_ea30554a() {
 }
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9b37a16f, Offset: 0x490
 // Size: 0x10c
 function function_7fe4eb1d(s_params) {
@@ -90,7 +90,7 @@ function function_7fe4eb1d(s_params) {
 }
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5989f554, Offset: 0x5a8
 // Size: 0xbc
 function function_60193f7d() {
@@ -108,7 +108,7 @@ function function_60193f7d() {
 }
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfc110d03, Offset: 0x670
 // Size: 0x126
 function function_8addaa01(params) {
@@ -133,7 +133,7 @@ function function_8addaa01(params) {
 }
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7417580, Offset: 0x7a0
 // Size: 0xb4
 function function_dab4588() {
@@ -151,7 +151,7 @@ function function_dab4588() {
 }
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf35b642, Offset: 0x860
 // Size: 0x1c
 function on_player_last_stand() {
@@ -159,7 +159,7 @@ function on_player_last_stand() {
 }
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7a61f06d, Offset: 0x888
 // Size: 0x5c
 function function_edf1b266() {
@@ -169,7 +169,7 @@ function function_edf1b266() {
 }
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xea3fc5a0, Offset: 0x8f0
 // Size: 0x84
 function function_1ac7a037() {
@@ -182,7 +182,7 @@ function function_1ac7a037() {
 }
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3ed0e658, Offset: 0x980
 // Size: 0x11e
 function function_60f79e9c(params) {
@@ -207,7 +207,7 @@ function function_60f79e9c(params) {
 }
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa22bf87a, Offset: 0xaa8
 // Size: 0xbe
 function function_1cc0b38a() {
@@ -220,7 +220,7 @@ function function_1cc0b38a() {
 }
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6ef8b3d8, Offset: 0xb70
 // Size: 0x144
 function function_d62a70b4() {
@@ -249,7 +249,7 @@ function function_d62a70b4() {
 }
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc0d4e08f, Offset: 0xcc0
 // Size: 0x42
 function function_98390b60() {
@@ -261,7 +261,7 @@ function function_98390b60() {
 }
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfe755743, Offset: 0xd10
 // Size: 0xb8
 function function_3db52483() {
@@ -278,7 +278,7 @@ function function_3db52483() {
 }
 
 // Namespace zm_office_trophies/zm_office_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6bee8d45, Offset: 0xdd0
 // Size: 0x11c
 function player_teleport_watcher() {

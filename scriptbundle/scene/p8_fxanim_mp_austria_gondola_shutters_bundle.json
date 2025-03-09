@@ -1,0 +1,43 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6f1256b9d6a2e6a1",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_ba82d1f62b12f10",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_fae42e54a1a9dc",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_2f5aeebf9a75662f",
+            "type": "prop",
+            "name": "prop 2"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_austria_gondola_shutters_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

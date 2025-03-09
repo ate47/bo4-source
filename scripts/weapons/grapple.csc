@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace grapple/grapple
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x69f48d05, Offset: 0x188
 // Size: 0x5e
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace grapple/grapple
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xca0b2c8c, Offset: 0x1f0
 // Size: 0x94
 function player_on_spawned(localclientnum) {
@@ -38,7 +38,7 @@ function player_on_spawned(localclientnum) {
 }
 
 // Namespace grapple/grapple
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x26a6e802, Offset: 0x290
 // Size: 0x21c
 function function_664d0a50(localclientnum) {
@@ -82,7 +82,7 @@ function function_664d0a50(localclientnum) {
 }
 
 // Namespace grapple/grapple
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe1ec5d4a, Offset: 0x4b8
 // Size: 0xa4
 function grapple_light_watch_end(localclientnum, handle, name) {
@@ -97,7 +97,7 @@ function grapple_light_watch_end(localclientnum, handle, name) {
 }
 
 // Namespace grapple/grapple
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb7fe3842, Offset: 0x568
 // Size: 0x1e8
 function function_2297363d(localclientnum) {
@@ -130,7 +130,7 @@ function function_2297363d(localclientnum) {
 }
 
 // Namespace grapple/grapple
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x61c0964c, Offset: 0x758
 // Size: 0x84
 function function_bbd7fc60(var_428d0be2) {

@@ -22,7 +22,7 @@
 #namespace zm_orange_mq_sendoff;
 
 // Namespace zm_orange_mq_sendoff/zm_orange_mq_sendoff
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x313e7c65, Offset: 0x240
 // Size: 0x44
 function preload() {
@@ -30,7 +30,7 @@ function preload() {
 }
 
 // Namespace zm_orange_mq_sendoff/zm_orange_mq_sendoff
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xffa468ef, Offset: 0x290
 // Size: 0x64
 function init() {
@@ -39,7 +39,7 @@ function init() {
 }
 
 // Namespace zm_orange_mq_sendoff/zm_orange_mq_sendoff
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9ff08d77, Offset: 0x300
 // Size: 0x174
 function function_5309464a(var_5ea5c94d) {
@@ -61,7 +61,7 @@ function function_5309464a(var_5ea5c94d) {
 }
 
 // Namespace zm_orange_mq_sendoff/zm_orange_mq_sendoff
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x26797bc7, Offset: 0x480
 // Size: 0x1c
 function function_ae270d9e(var_5ea5c94d, ended_early) {
@@ -70,7 +70,7 @@ function function_ae270d9e(var_5ea5c94d, ended_early) {
 }
 
 // Namespace zm_orange_mq_sendoff/zm_orange_mq_sendoff
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9722becc, Offset: 0x4a8
 // Size: 0x4c
 function function_b5f900c3() {
@@ -82,7 +82,7 @@ function function_b5f900c3() {
 }
 
 // Namespace zm_orange_mq_sendoff/zm_orange_mq_sendoff
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8ad33e28, Offset: 0x500
 // Size: 0x1ec
 function function_39c9e020() {
@@ -115,7 +115,7 @@ function function_39c9e020() {
 }
 
 // Namespace zm_orange_mq_sendoff/zm_orange_mq_sendoff
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9464413d, Offset: 0x6f8
 // Size: 0x64
 function sun_deck_watcher() {
@@ -130,7 +130,7 @@ function sun_deck_watcher() {
 }
 
 // Namespace zm_orange_mq_sendoff/zm_orange_mq_sendoff
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x53386672, Offset: 0x768
 // Size: 0x43c
 function function_d096f18f() {
@@ -186,7 +186,7 @@ function function_8a707841(n_loop_time) {
 }
 
 // Namespace zm_orange_mq_sendoff/zm_orange_mq_sendoff
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x211e53e0, Offset: 0xc90
 // Size: 0xc4
 function function_39d9b290() {
@@ -202,7 +202,7 @@ function function_39d9b290() {
 }
 
 // Namespace zm_orange_mq_sendoff/zm_orange_mq_sendoff
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x93491629, Offset: 0xd60
 // Size: 0x1cc
 function function_bf106bdf() {
@@ -219,7 +219,7 @@ function function_bf106bdf() {
 }
 
 // Namespace zm_orange_mq_sendoff/zm_orange_mq_sendoff
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6bc603e5, Offset: 0xf38
 // Size: 0x74
 function pickup_device(e_item, e_player) {

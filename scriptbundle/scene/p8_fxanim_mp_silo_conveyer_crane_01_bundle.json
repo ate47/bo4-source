@@ -1,0 +1,28 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#p8_fxanim_mp_silo_conveyer_crane_01_anim",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_65a17a9d6b65a5c0",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "p8_fxanim_mp_silo_conveyer_crane_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -33,7 +33,7 @@ function autoexec init() {
 }
 
 // Namespace mannequinbehavior/archetype_mannequin
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6079f26d, Offset: 0x3f8
 // Size: 0x94
 function mannequincollisionservice(entity) {
@@ -45,7 +45,7 @@ function mannequincollisionservice(entity) {
 }
 
 // Namespace mannequinbehavior/archetype_mannequin
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7d6090e7, Offset: 0x498
 // Size: 0xc
 function mannequinspawnsetup(entity) {
@@ -53,7 +53,7 @@ function mannequinspawnsetup(entity) {
 }
 
 // Namespace mannequinbehavior/archetype_mannequin
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xae8fa9ef, Offset: 0x4b0
 // Size: 0x162
 function private mannequinshouldmelee(entity) {

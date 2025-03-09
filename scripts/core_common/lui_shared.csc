@@ -15,57 +15,57 @@
 // Method(s) 12 Total 12
 class cluielem {
 
+    var _uid;
     var var_47d8642e;
-    var var_47e79fc;
 
     // Namespace cluielem/lui_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xbbfcd106, Offset: 0x29c0
     // Size: 0x5a
     function get_data(localclientnum, field) {
         assert(var_47d8642e, "<dev string:x162>");
-        return function_88759655(localclientnum, var_47e79fc, field);
+        return function_88759655(localclientnum, _uid, field);
     }
 
     // Namespace cluielem/lui_shared
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0xdfd2cdb7, Offset: 0x2950
     // Size: 0x64
     function set_data(localclientnum, field, value) {
         assert(var_47d8642e, "<dev string:x162>");
-        function_bcc2134a(localclientnum, var_47e79fc, field, value);
+        function_bcc2134a(localclientnum, _uid, field, value);
     }
 
     // Namespace cluielem/lui_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x34de8d6, Offset: 0x28f0
     // Size: 0x54
     function close(localclientnum) {
         assert(var_47d8642e, "<dev string:x121>");
-        closeluielem(localclientnum, var_47e79fc);
+        closeluielem(localclientnum, _uid);
     }
 
     // Namespace cluielem/lui_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x885ea434, Offset: 0x2890
     // Size: 0x52
     function is_open(localclientnum) {
         assert(var_47d8642e, "<dev string:xe0>");
-        return isluielemopen(localclientnum, var_47e79fc);
+        return isluielemopen(localclientnum, _uid);
     }
 
     // Namespace cluielem/lui_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x237b563f, Offset: 0x2818
     // Size: 0x6c
     function open(localclientnum, menu_name) {
         assert(var_47d8642e, "<dev string:xe0>");
-        openluielem(localclientnum, menu_name, var_47e79fc);
+        openluielem(localclientnum, menu_name, _uid);
         function_fa582112(localclientnum);
     }
 
     // Namespace cluielem/lui_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xbecc2060, Offset: 0x27d8
     // Size: 0x34
     function function_fa582112(localclientnum) {
@@ -73,38 +73,38 @@ class cluielem {
     }
 
     // Namespace cluielem/lui_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xdb389259, Offset: 0x27a8
     // Size: 0x26
     function register_clientside(uid) {
-        var_47e79fc = uid;
+        _uid = uid;
         var_47d8642e = 1;
     }
 
     // Namespace cluielem/lui_shared
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0xcdf44b94, Offset: 0x2710
     // Size: 0x8c
     function function_dcb34c80(var_2a0de052, field_name, version) {
         assert(!var_47d8642e, "<dev string:x5d>");
-        clientfield::register_bgcache("clientuimodel", var_2a0de052, "luielement." + var_47e79fc + "." + field_name, version, undefined, 0, 0);
+        clientfield::register_bgcache("clientuimodel", var_2a0de052, "luielement." + _uid + "." + field_name, version, undefined, 0, 0);
     }
 
     // Namespace cluielem/lui_shared
-    // Params 5, eflags: 0x1 linked
+    // Params 5, eflags: 0x0
     // Checksum 0x6df9dd22, Offset: 0x2680
     // Size: 0x84
     function add_clientfield(field_name, version, bits, type, callback) {
         assert(!var_47d8642e, "<dev string:x5d>");
-        clientfield::register_luielem(var_47e79fc, field_name, version, bits, type, callback, 0, 0);
+        clientfield::register_luielem(_uid, field_name, version, bits, type, callback, 0, 0);
     }
 
     // Namespace cluielem/lui_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xf4a31fea, Offset: 0x2650
     // Size: 0x26
     function setup_clientfields(uid) {
-        var_47e79fc = uid;
+        _uid = uid;
         var_47d8642e = 0;
     }
 
@@ -119,7 +119,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace lui/lui_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x46a44f90, Offset: 0x210
 // Size: 0x8c
 function __init__() {
@@ -131,7 +131,7 @@ function __init__() {
 }
 
 // Namespace lui/lui_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x61a2d184, Offset: 0x2a8
 // Size: 0x24
 function on_player_connect(localclientnum) {
@@ -139,7 +139,7 @@ function on_player_connect(localclientnum) {
 }
 
 // Namespace lui/lui_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5e7ac0c8, Offset: 0x2d8
 // Size: 0x56
 function initmenudata(localclientnum) {
@@ -206,7 +206,7 @@ function addmenuexploders(menu_name, localclientnum, exploder) {
 }
 
 // Namespace lui/lui_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xc9f77dc1, Offset: 0x800
 // Size: 0x176
 function linktocustomcharacter(menu_name, localclientnum, target_name, alt_render_mode = 1) {
@@ -225,7 +225,7 @@ function linktocustomcharacter(menu_name, localclientnum, target_name, alt_rende
 }
 
 // Namespace lui/lui_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x56898a71, Offset: 0x980
 // Size: 0x52
 function getcharacterdataformenu(menu_name, localclientnum) {
@@ -236,7 +236,7 @@ function getcharacterdataformenu(menu_name, localclientnum) {
 }
 
 // Namespace lui/lui_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb0d18591, Offset: 0x9e0
 // Size: 0x5a
 function function_e41243c1(var_e953aca6) {
@@ -249,7 +249,7 @@ function function_e41243c1(var_e953aca6) {
 }
 
 // Namespace lui/lui_shared
-// Params 10, eflags: 0x1 linked
+// Params 10, eflags: 0x0
 // Checksum 0xef99f1a0, Offset: 0xa48
 // Size: 0x1c2
 function createcameramenu(menu_name, localclientnum, target_name, xcam, sub_xcam, xcam_frame = undefined, var_1f199068 = undefined, var_2c679be0 = undefined, lerp_time = 0, lut_index = 0) {
@@ -259,7 +259,7 @@ function createcameramenu(menu_name, localclientnum, target_name, xcam, sub_xcam
 }
 
 // Namespace lui/lui_shared
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0xfa915d3f, Offset: 0xc18
 // Size: 0x132
 function function_9d7ab167(menu_name, localclientnum, session_mode, target_name, xcam, sub_xcam, xcam_frame = undefined, lerp_time = 0, lut_index = 0) {
@@ -268,7 +268,7 @@ function function_9d7ab167(menu_name, localclientnum, session_mode, target_name,
 }
 
 // Namespace lui/lui_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x19e8a101, Offset: 0xd58
 // Size: 0x15a
 function createcustomcameramenu(menu_name, localclientnum, camera_function, has_state, var_1f199068 = undefined, var_2c679be0 = undefined, lut_index = 0) {
@@ -278,7 +278,7 @@ function createcustomcameramenu(menu_name, localclientnum, camera_function, has_
 }
 
 // Namespace lui/lui_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xdae62470, Offset: 0xec0
 // Size: 0x7d8
 function setup_menu(localclientnum, menu_data, previous_menu) {
@@ -370,7 +370,7 @@ function setup_menu(localclientnum, menu_data, previous_menu) {
 }
 
 // Namespace lui/lui_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xeb446262, Offset: 0x16a0
 // Size: 0x174
 function function_afb6dd92(localclientnum, menu_data) {
@@ -392,7 +392,7 @@ function function_afb6dd92(localclientnum, menu_data) {
 }
 
 // Namespace lui/lui_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdd8acb09, Offset: 0x1820
 // Size: 0x450
 function client_menus(localclientnum) {
@@ -457,7 +457,7 @@ function client_menus(localclientnum) {
 }
 
 // Namespace lui/lui_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf487d22b, Offset: 0x1c78
 // Size: 0xb4
 function is_current_menu(localclientnum, menu_name, state = undefined) {
@@ -468,7 +468,7 @@ function is_current_menu(localclientnum, menu_name, state = undefined) {
 }
 
 // Namespace lui/lui_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xd098dc2d, Offset: 0x1d38
 // Size: 0x134
 function screen_fade(n_time, n_target_alpha = 1, n_start_alpha = 0, str_color = "black", b_force_close_menu = 0) {
@@ -482,7 +482,7 @@ function screen_fade(n_time, n_target_alpha = 1, n_start_alpha = 0, str_color = 
 }
 
 // Namespace lui/lui_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc79af91d, Offset: 0x1e78
 // Size: 0x3a
 function screen_fade_out(n_time, str_color) {
@@ -491,7 +491,7 @@ function screen_fade_out(n_time, str_color) {
 }
 
 // Namespace lui/lui_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x78285d5a, Offset: 0x1ec0
 // Size: 0x42
 function screen_fade_in(n_time, str_color) {
@@ -514,7 +514,7 @@ function screen_close_menu() {
 }
 
 // Namespace lui/lui_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xf49b81d1, Offset: 0x1fc0
 // Size: 0xfc
 function private _screen_close_menu() {
@@ -536,7 +536,7 @@ function private _screen_close_menu() {
 }
 
 // Namespace lui/lui_shared
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0xdfede2e4, Offset: 0x20c8
 // Size: 0x3dc
 function private _screen_fade(n_time, n_target_alpha, n_start_alpha, v_color, b_force_close_menu) {
@@ -592,7 +592,7 @@ function private _screen_fade(n_time, n_target_alpha, n_start_alpha, v_color, b_
 }
 
 // Namespace lui/lui_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x95628f47, Offset: 0x24b0
 // Size: 0xa4
 function set_color(menu, color) {

@@ -27,7 +27,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_gridlock/mp_gridlock
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc5d678cb, Offset: 0x298
 // Size: 0x84
 function on_game_playing() {
@@ -39,7 +39,7 @@ function on_game_playing() {
 }
 
 // Namespace mp_gridlock/mp_gridlock
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xff49ff0a, Offset: 0x328
 // Size: 0x2c
 function function_2cdcf5c3() {

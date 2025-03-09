@@ -75,11 +75,13 @@ function ambient_flak_think(point) {
     level thread ambient_flak_rotate(point);
     level thread ambient_flak_flash(point, min_burst_time, max_burst_time);
     for (;;) {
-        for (timer = randomfloatrange(min_burst_time, max_burst_time); timer > 0; timer -= 0.2) {
+        timer = randomfloatrange(min_burst_time, max_burst_time);
+        while (timer > 0) {
             point.is_firing = 1;
             playfx(0, level._effect[point.fx_id], point.origin, point.forward, point.up);
             thread sound::play_in_space(0, "wpn_triple25_fire", point.origin);
             wait 0.2;
+            timer -= 0.2;
         }
         point.is_firing = 0;
         wait randomfloatrange(min_delay, max_delay);

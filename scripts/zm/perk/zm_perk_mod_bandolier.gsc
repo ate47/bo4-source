@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_bandolier/zm_perk_mod_bandolier
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x587397e, Offset: 0xe0
 // Size: 0x14
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_bandolier/zm_perk_mod_bandolier
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd1c36d04, Offset: 0x100
 // Size: 0x94
 function function_27473e44() {
@@ -30,7 +30,7 @@ function function_27473e44() {
 }
 
 // Namespace zm_perk_mod_bandolier/zm_perk_mod_bandolier
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbcae9e91, Offset: 0x1a0
 // Size: 0x1c
 function give_mod_perk() {
@@ -38,7 +38,7 @@ function give_mod_perk() {
 }
 
 // Namespace zm_perk_mod_bandolier/zm_perk_mod_bandolier
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x2246689c, Offset: 0x1c8
 // Size: 0x36
 function function_3781ff37(b_pause, str_perk, str_result, n_slot) {
@@ -46,7 +46,7 @@ function function_3781ff37(b_pause, str_perk, str_result, n_slot) {
 }
 
 // Namespace zm_perk_mod_bandolier/zm_perk_mod_bandolier
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa79f56a, Offset: 0x208
 // Size: 0x354
 function function_9335851() {

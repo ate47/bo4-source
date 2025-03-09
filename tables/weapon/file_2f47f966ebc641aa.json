@@ -1,0 +1,13 @@
+{
+    "name": "#hash_2f47f966ebc641aa",
+    "baseWeapon": "#hash_15c137ad251bba76",
+    "displayname": "#hash_36b0f4217f0831b8",
+    "streamkey": "#hash_109ceefe8d1e0f9c",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "sound830": "#hash_3a3768d0b55db0fb",
+    "tunables1": "#hash_1d94f391334",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "underwaterExplosionSurfaceFX": []
+}

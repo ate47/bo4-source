@@ -1,0 +1,15 @@
+{
+    "name": "#scavenger_item_mp",
+    "baseWeapon": "#scavenger_item",
+    "unk70": "#weapon_null",
+    "streamkey": "#hash_412f61d317bf1ce1",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#hash_1d942572410",
+    "viewmodel": "#hash_1d932429550",
+    "model_a80": "#viewmodel_hands_no_model",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "image_cb0": "#hash_f69fd7de2314b29a",
+    "underwaterExplosionSurfaceFX": []
+}

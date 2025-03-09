@@ -59,13 +59,13 @@ function function_ded5d217() {
     var_7b969086 = getdynentarray("wind_turbine");
     foreach (turbine in var_7b969086) {
         if (randomint(100) > 20) {
-            function_e2a06860(turbine, randomintrange(1, 4));
+            setdynentstate(turbine, randomintrange(1, 4));
         }
     }
     level flagsys::wait_till(#"hash_507a4486c4a79f1d");
     foreach (turbine in var_7b969086) {
         if (randomint(100) > 20) {
-            function_e2a06860(turbine, randomintrange(1, 4));
+            setdynentstate(turbine, randomintrange(1, 4));
         }
     }
 }
@@ -88,7 +88,7 @@ function init_elevator(var_fd98a47c) {
         elevator = getent(position.target, "targetname");
         elevator.buttons = dynents;
         if (position.script_noteworthy === "start") {
-            function_e2a06860(dynent, 1);
+            setdynentstate(dynent, 1);
             if (!isdefined(elevator.target)) {
                 continue;
             }
@@ -369,8 +369,8 @@ function elevator_move(elevator) {
     elevator playsound("evt_elevator_start");
     elevator playloopsound("evt_elevator_move", 0);
     elevator moveto(position.origin, 10, 0.5, 0.5);
-    function_e2a06860(elevator.var_d98394f7, 1);
-    function_e2a06860(elevator.currentfloor, 1);
+    setdynentstate(elevator.var_d98394f7, 1);
+    setdynentstate(elevator.currentfloor, 1);
     var_d98394f7 = elevator.currentfloor;
     elevator.currentfloor = elevator.var_d98394f7;
     elevator.var_d98394f7 = var_d98394f7;
@@ -384,7 +384,7 @@ function elevator_move(elevator) {
     } else {
         elevator.button sethintstring(#"hash_29965b65bca9cd7b");
     }
-    function_e2a06860(elevator.var_d98394f7, 0);
+    setdynentstate(elevator.var_d98394f7, 0);
     elevator.button triggerenable(1);
 }
 
@@ -446,7 +446,7 @@ function function_d7b6ee00(activator, laststate, state) {
             } else if (state == 2) {
                 state = 1;
             }
-            function_e2a06860(self, state);
+            setdynentstate(self, state);
             return 0;
         }
     }
@@ -483,7 +483,7 @@ function function_51a020(activator, laststate, state) {
             }
         }
         if (currentstate != state) {
-            function_e2a06860(var_a9309589, state);
+            setdynentstate(var_a9309589, state);
         }
     }
     return true;
@@ -518,7 +518,7 @@ function private function_5d409a7b(eventstruct) {
     if (state <= 2) {
         var_6c9f448d = dynent.health / dynent.maxhealth;
         if (var_6c9f448d <= 0.5) {
-            function_e2a06860(dynent, state + 3);
+            setdynentstate(dynent, state + 3);
         }
     }
 }

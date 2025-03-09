@@ -1,7 +1,7 @@
 #namespace shaderanim;
 
 // Namespace shaderanim/shaderanim_shared
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xccc7fb4f, Offset: 0x78
 // Size: 0x1c4
 function animate_crack(localclientnum, vectorname, delay, duration, start, end) {
@@ -20,10 +20,12 @@ function animate_crack(localclientnum, vectorname, delay, duration, start, end) 
     timestep = 0.01 * direction;
     value = start;
     self mapshaderconstant(localclientnum, 0, vectorname, value, 0, 0, 0);
-    for (i = 0; i < durationseconds; i += timestep) {
+    i = 0;
+    while (i < durationseconds) {
         value += valstep;
         wait 0.01;
         self mapshaderconstant(localclientnum, 0, vectorname, value, 0, 0, 0);
+        i += timestep;
     }
     self mapshaderconstant(localclientnum, 0, vectorname, end, 0, 0, 0);
 }

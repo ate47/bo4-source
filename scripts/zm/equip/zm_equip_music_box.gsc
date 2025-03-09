@@ -14,15 +14,15 @@
 
 // Namespace music_box/zm_equip_music_box
 // Params 0, eflags: 0x2
-// Checksum 0xee5470bb, Offset: 0x188
+// Checksum 0x910cedcd, Offset: 0x188
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"music_box", &__init__, undefined, undefined);
 }
 
 // Namespace music_box/zm_equip_music_box
-// Params 0, eflags: 0x1 linked
-// Checksum 0x5d903e2e, Offset: 0x1d0
+// Params 0, eflags: 0x0
+// Checksum 0x8298bbc3, Offset: 0x1d0
 // Size: 0x1ce
 function __init__() {
     level.w_music_box = getweapon(#"music_box");
@@ -41,8 +41,8 @@ function __init__() {
 }
 
 // Namespace music_box/zm_equip_music_box
-// Params 1, eflags: 0x1 linked
-// Checksum 0x4d4c358c, Offset: 0x3a8
+// Params 1, eflags: 0x0
+// Checksum 0xab485c6a, Offset: 0x3a8
 // Size: 0x1cc
 function on_grenade_fired(s_params) {
     if (s_params.weapon === level.w_music_box && isdefined(s_params.projectile)) {
@@ -64,8 +64,8 @@ function on_grenade_fired(s_params) {
 }
 
 // Namespace music_box/zm_equip_music_box
-// Params 2, eflags: 0x1 linked
-// Checksum 0x6b3ee95e, Offset: 0x580
+// Params 2, eflags: 0x0
+// Checksum 0x6175c0cc, Offset: 0x580
 // Size: 0x91c
 function function_9d9bff80(var_2fe3186e, attacker) {
     self endon(#"death");
@@ -79,7 +79,7 @@ function function_9d9bff80(var_2fe3186e, attacker) {
     a_zombies = array::filter(a_zombies, 0, &function_3adb94b4);
     foreach (e_zombie in a_zombies) {
         if (isalive(e_zombie) && e_zombie.marked_for_death !== 1 && e_zombie.var_46d39f48 !== 1 && e_zombie.no_gib !== 1) {
-            if (e_zombie.var_6f84b820 === #"popcorn") {
+            if (e_zombie.zm_ai_category === #"popcorn") {
                 [[ level.var_14160fb0 ]]->waitinqueue(e_zombie);
                 e_zombie dodamage(e_zombie.maxhealth, e_zombie.origin, attacker, self, 0, "MOD_GRENADE", 0, self.weapon);
                 continue;
@@ -145,8 +145,8 @@ function function_9d9bff80(var_2fe3186e, attacker) {
 }
 
 // Namespace music_box/zm_equip_music_box
-// Params 0, eflags: 0x1 linked
-// Checksum 0xbee61416, Offset: 0xea8
+// Params 0, eflags: 0x0
+// Checksum 0x8ac6f033, Offset: 0xea8
 // Size: 0x84
 function function_6b8c9160() {
     wait 4;
@@ -157,8 +157,8 @@ function function_6b8c9160() {
 }
 
 // Namespace music_box/zm_equip_music_box
-// Params 1, eflags: 0x1 linked
-// Checksum 0xcee27a57, Offset: 0xf38
+// Params 1, eflags: 0x0
+// Checksum 0x7e671cc2, Offset: 0xf38
 // Size: 0x90
 function function_3adb94b4(e_zombie) {
     if (isdefined(e_zombie.var_42d5176d) && e_zombie.var_42d5176d || e_zombie.marked_for_death === 1 || e_zombie.var_46d39f48 === 1 || e_zombie.no_gib === 1) {
@@ -171,9 +171,9 @@ function function_3adb94b4(e_zombie) {
 }
 
 // Namespace music_box/zm_equip_music_box
-// Params 1, eflags: 0x5 linked
-// Checksum 0xb48676ad, Offset: 0xfd0
-// Size: 0xbe
+// Params 1, eflags: 0x4
+// Checksum 0xb7031012, Offset: 0xfd0
+// Size: 0xb8
 function private function_3710157f(e_zombie) {
     level endon(#"end_game");
     self endon(#"death");
@@ -184,14 +184,13 @@ function private function_3710157f(e_zombie) {
                 break;
             }
             self scene::play(#"ai_zm_ora_zombie_music_box_rise", "rise", e_zombie);
-            waitframe(1);
         }
     }
 }
 
 // Namespace music_box/zm_equip_music_box
-// Params 1, eflags: 0x1 linked
-// Checksum 0xb7fcea1b, Offset: 0x1098
+// Params 1, eflags: 0x0
+// Checksum 0xcef9735a, Offset: 0x1090
 // Size: 0x3c
 function function_da6a44df(s_result) {
     if (isdefined(self.var_42d5176d)) {
@@ -200,8 +199,8 @@ function function_da6a44df(s_result) {
 }
 
 // Namespace music_box/zm_equip_music_box
-// Params 0, eflags: 0x1 linked
-// Checksum 0x55a7c4eb, Offset: 0x10e0
+// Params 0, eflags: 0x0
+// Checksum 0x1142c4c1, Offset: 0x10d8
 // Size: 0x64
 function function_4ada560e() {
     if (isdefined(self)) {
@@ -214,8 +213,8 @@ function function_4ada560e() {
 }
 
 // Namespace music_box/zm_equip_music_box
-// Params 1, eflags: 0x1 linked
-// Checksum 0x404510, Offset: 0x1150
+// Params 1, eflags: 0x0
+// Checksum 0xf1be5b93, Offset: 0x1148
 // Size: 0x12c
 function _second_compass_map_mp_ruins(e_owner) {
     if (ispointonnavmesh(self.origin, 60)) {
@@ -236,8 +235,8 @@ function _second_compass_map_mp_ruins(e_owner) {
 }
 
 // Namespace music_box/zm_equip_music_box
-// Params 0, eflags: 0x1 linked
-// Checksum 0x2940070, Offset: 0x1288
+// Params 0, eflags: 0x0
+// Checksum 0x97de8904, Offset: 0x1280
 // Size: 0x194
 function function_9a83be2b() {
     players = getplayers();
@@ -256,8 +255,8 @@ function function_9a83be2b() {
 }
 
 // Namespace music_box/zm_equip_music_box
-// Params 1, eflags: 0x1 linked
-// Checksum 0x8b67cbe8, Offset: 0x1428
+// Params 1, eflags: 0x0
+// Checksum 0x4a391841, Offset: 0x1420
 // Size: 0x2e
 function function_cdb0d1e(e_zombie) {
     if (e_zombie.var_42d5176d === 1) {

@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe1f96268, Offset: 0x368
 // Size: 0x254
 function __init__() {
@@ -58,7 +58,7 @@ function init() {
 }
 
 // Namespace death_circle/death_circle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x226fbeb3, Offset: 0x6d0
 // Size: 0x2a8
 function function_5e412e4a(var_ae6c2bbe) {
@@ -77,7 +77,7 @@ function function_5e412e4a(var_ae6c2bbe) {
 }
 
 // Namespace death_circle/death_circle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x41c40c30, Offset: 0x980
 // Size: 0x5e
 function function_d81873aa(delaysec) {
@@ -87,7 +87,7 @@ function function_d81873aa(delaysec) {
 }
 
 // Namespace death_circle/death_circle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x50a7bbce, Offset: 0x9e8
 // Size: 0x5e
 function function_114f128a(delaysec) {
@@ -97,7 +97,7 @@ function function_114f128a(delaysec) {
 }
 
 // Namespace death_circle/death_circle
-// Params 14, eflags: 0x1 linked
+// Params 14, eflags: 0x0
 // Checksum 0x33096311, Offset: 0xa50
 // Size: 0x330
 function add_circle(var_3b9f4abf, mapwidth = 0, mapheight = 0, radius = 0, damage = 0, damageinterval = 0, waitsec = 0, scalesec = 0, var_227b1773 = 0, var_42682706 = 0, var_83c673f5 = 0, var_55ad5e4 = 0, var_c3bf31b = 0, var_18fa918d = 0) {
@@ -113,7 +113,7 @@ function add_circle(var_3b9f4abf, mapwidth = 0, mapheight = 0, radius = 0, damag
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x99378cc, Offset: 0xd88
 // Size: 0x264
 function private shuffle_circles() {
@@ -156,7 +156,7 @@ function private shuffle_circles() {
 }
 
 // Namespace death_circle/death_circle
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xa6b3c572, Offset: 0xff8
 // Size: 0x2ae
 function private function_9bae34b3(var_b0b91d4, finalcircle, oobtriggers) {
@@ -198,7 +198,7 @@ function private function_9bae34b3(var_b0b91d4, finalcircle, oobtriggers) {
 }
 
 // Namespace death_circle/death_circle
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x45e4b1fc, Offset: 0x12b0
 // Size: 0xe6
 function private function_a0004b40(var_b0b91d4, lastcircle, finalindex, oobtriggers) {
@@ -217,7 +217,7 @@ function private function_a0004b40(var_b0b91d4, lastcircle, finalindex, oobtrigg
 }
 
 // Namespace death_circle/death_circle
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x7051d141, Offset: 0x13a0
 // Size: 0x28e
 function private function_a84cfbd0(var_b0b91d4, circle, nextcircle, oobtriggers) {
@@ -259,7 +259,7 @@ function private function_a84cfbd0(var_b0b91d4, circle, nextcircle, oobtriggers)
 }
 
 // Namespace death_circle/death_circle
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf263a9f1, Offset: 0x1638
 // Size: 0x154
 function private function_3e47f08b(circle) {
@@ -281,7 +281,7 @@ function private function_3e47f08b(circle) {
 }
 
 // Namespace death_circle/death_circle
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x543d300d, Offset: 0x1798
 // Size: 0x92
 function private function_f52fd8eb(origin, oobtriggers) {
@@ -294,7 +294,7 @@ function private function_f52fd8eb(origin, oobtriggers) {
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfaa11b96, Offset: 0x1838
 // Size: 0x2c
 function function_55bf22ef() {
@@ -315,7 +315,7 @@ function function_b57e3cde(enabled) {
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x483d0175, Offset: 0x18d8
 // Size: 0x22
 function function_dca12a73() {
@@ -323,7 +323,7 @@ function function_dca12a73() {
 }
 
 // Namespace death_circle/death_circle
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x95b0d906, Offset: 0x1908
 // Size: 0x4a
 function private function_ccac34f8(var_36aa237c, var_11dc771d) {
@@ -333,7 +333,7 @@ function private function_ccac34f8(var_36aa237c, var_11dc771d) {
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xcc424481, Offset: 0x1960
 // Size: 0xa4
 function private function_a1dbce4a() {
@@ -349,7 +349,7 @@ function private function_a1dbce4a() {
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdffdf033, Offset: 0x1a10
 // Size: 0xc7c
 function start() {
@@ -488,7 +488,7 @@ function start() {
 }
 
 // Namespace death_circle/death_circle
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x91502310, Offset: 0x2698
 // Size: 0xee
 function private function_76c22343(var_227b1773, value, var_ed2d510) {
@@ -508,7 +508,7 @@ function private function_76c22343(var_227b1773, value, var_ed2d510) {
 }
 
 // Namespace death_circle/death_circle
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x76a5dd3b, Offset: 0x2790
 // Size: 0x2c
 function private cleanup_circle(notifyhash) {
@@ -516,7 +516,7 @@ function private cleanup_circle(notifyhash) {
 }
 
 // Namespace death_circle/death_circle
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xf222951a, Offset: 0x27c8
 // Size: 0x184
 function private countdown(waitsec, circleindex, nextcircle) {
@@ -542,7 +542,7 @@ function private countdown(waitsec, circleindex, nextcircle) {
 }
 
 // Namespace death_circle/death_circle
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xc2c85c0c, Offset: 0x2958
 // Size: 0x286
 function private function_9229c3b3(scalesec, newradius, neworigin) {
@@ -580,7 +580,7 @@ function private function_9229c3b3(scalesec, newradius, neworigin) {
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x4d626462, Offset: 0x2be8
 // Size: 0x5a
 function private function_8bd303cc() {
@@ -592,7 +592,7 @@ function private function_8bd303cc() {
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xa2373a19, Offset: 0x2c50
 // Size: 0xcc
 function private function_ce0f27e0() {
@@ -624,7 +624,7 @@ function function_a086017a(point) {
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x511d969, Offset: 0x2dc8
 // Size: 0x78e
 function private function_dc15ad60() {
@@ -712,7 +712,7 @@ function private function_dc15ad60() {
 }
 
 // Namespace death_circle/death_circle
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x976b6a04, Offset: 0x3560
 // Size: 0xa8
 function private cleanup_feedback(notifyhash) {
@@ -723,7 +723,7 @@ function private cleanup_feedback(notifyhash) {
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf73747ce, Offset: 0x3610
 // Size: 0x3b4
 function function_ba02cfb5() {
@@ -763,7 +763,7 @@ function function_ba02cfb5() {
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8508ad9e, Offset: 0x39d0
 // Size: 0x102
 function function_664f77db() {
@@ -782,7 +782,7 @@ function function_664f77db() {
 }
 
 // Namespace death_circle/death_circle
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x742a1dc6, Offset: 0x3ae0
 // Size: 0xf0
 function function_936b3f09(p, d, circle) {
@@ -795,7 +795,7 @@ function function_936b3f09(p, d, circle) {
 }
 
 // Namespace death_circle/death_circle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4af57df, Offset: 0x3bd8
 // Size: 0x2c
 function show_effects(intensity) {
@@ -803,7 +803,7 @@ function show_effects(intensity) {
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x607ed9d5, Offset: 0x3c10
 // Size: 0x24
 function hide_effects() {
@@ -855,7 +855,7 @@ function function_49443399() {
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x33d6c49b, Offset: 0x4160
 // Size: 0x36
 function function_9956f107() {

@@ -209,12 +209,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 2",
-            "var_16999a5d": -1,
-            "var_29563fd6": -23,
-            "var_eb00c330": 37,
-            "var_be60a82b": 36,
-            "var_922b4fc5": 52,
-            "var_3e692842": 27
+            "hash_16999a5d": -1,
+            "hash_29563fd6": -23,
+            "hash_eb00c330": 37,
+            "hash_be60a82b": 36,
+            "hash_922b4fc5": 52,
+            "hash_3e692842": 27
         }
     ],
     "scenetype": "scene",

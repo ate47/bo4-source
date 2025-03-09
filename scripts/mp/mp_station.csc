@@ -24,7 +24,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_station/mp_station
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2cd91bcf, Offset: 0x288
 // Size: 0xf2
 function dom_flag_base_fx_override(flag, team) {
@@ -54,7 +54,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_station/mp_station
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1c040a76, Offset: 0x388
 // Size: 0xf2
 function dom_flag_cap_fx_override(flag, team) {

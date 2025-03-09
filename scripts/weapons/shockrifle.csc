@@ -8,7 +8,7 @@
 #namespace shockrifle;
 
 // Namespace shockrifle/shockrifle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x73642fb, Offset: 0x130
 // Size: 0xdc
 function init_shared() {
@@ -18,7 +18,7 @@ function init_shared() {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6bd0c252, Offset: 0x218
 // Size: 0xcc
 function shock_rifle_shocked(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -30,7 +30,7 @@ function shock_rifle_shocked(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace shockrifle/shockrifle
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x48fada4e, Offset: 0x2f0
 // Size: 0x76
 function shock_rifle_damage(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -41,7 +41,7 @@ function shock_rifle_damage(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace shockrifle/shockrifle
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc2b0b69e, Offset: 0x370
 // Size: 0x7c
 function shock_rifle_sound(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

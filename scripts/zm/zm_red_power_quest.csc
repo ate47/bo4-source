@@ -9,7 +9,7 @@
 #namespace zm_red_power_quest;
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc9459725, Offset: 0x1c8
 // Size: 0x8f2
 function init() {
@@ -52,7 +52,7 @@ function init() {
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x37f974ae, Offset: 0xac8
 // Size: 0x84
 function pegasus_ambient_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -62,7 +62,7 @@ function pegasus_ambient_fx(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa53705e7, Offset: 0xb58
 // Size: 0x248
 function function_5f8c1946(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -86,7 +86,7 @@ function function_5f8c1946(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe1a193f3, Offset: 0xda8
 // Size: 0x104
 function perseus_teleport_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -97,7 +97,7 @@ function perseus_teleport_fx(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb2b1d048, Offset: 0xeb8
 // Size: 0x1fe
 function pegasus_teleport_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -119,7 +119,7 @@ function pegasus_teleport_fx(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x648f446d, Offset: 0x10c0
 // Size: 0xac
 function zombie_breakout_func(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -128,7 +128,7 @@ function zombie_breakout_func(localclientnum, oldval, newval, bnewent, binitials
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf26ee52b, Offset: 0x1178
 // Size: 0x1ac
 function pegasus_beam_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -158,7 +158,7 @@ function pegasus_beam_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf481587d, Offset: 0x1330
 // Size: 0x94
 function chaos_explosion(localclientnum) {
@@ -168,7 +168,7 @@ function chaos_explosion(localclientnum) {
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x83a405bc, Offset: 0x13d0
 // Size: 0xc6
 function artifact_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -183,7 +183,7 @@ function artifact_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1f47c5c3, Offset: 0x14a0
 // Size: 0x74
 function function_638482f6(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -191,7 +191,7 @@ function function_638482f6(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1d96df07, Offset: 0x1520
 // Size: 0x74
 function function_988637e5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -199,7 +199,7 @@ function function_988637e5(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x12732de7, Offset: 0x15a0
 // Size: 0xbe
 function function_785a67c5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -214,7 +214,7 @@ function function_785a67c5(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe6670930, Offset: 0x1668
 // Size: 0xbe
 function function_8d9ce264(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -229,7 +229,7 @@ function function_8d9ce264(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5f7faa3b, Offset: 0x1730
 // Size: 0x1ee
 function function_cca9b50e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -258,7 +258,7 @@ function function_cca9b50e(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcc300322, Offset: 0x1928
 // Size: 0x58
 function function_7152ba7c(mdl_artifact) {
@@ -271,7 +271,7 @@ function function_7152ba7c(mdl_artifact) {
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xafe96925, Offset: 0x1988
 // Size: 0x94
 function function_1bad7fac(localclientnum) {
@@ -287,7 +287,7 @@ function function_1bad7fac(localclientnum) {
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x171f534c, Offset: 0x1a28
 // Size: 0x74
 function function_cb64dcb1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -295,7 +295,7 @@ function function_cb64dcb1(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x70cc62f3, Offset: 0x1aa8
 // Size: 0x134
 function function_c96c5397(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -318,7 +318,7 @@ function function_c96c5397(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x323ec426, Offset: 0x1be8
 // Size: 0x15c
 function function_192be936(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

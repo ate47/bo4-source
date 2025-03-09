@@ -15,7 +15,7 @@
 #namespace ct_tutorial_skirmish;
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4338b5c4, Offset: 0x210
 // Size: 0x332
 function init() {
@@ -58,7 +58,7 @@ function init() {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd3ac04b5, Offset: 0x550
 // Size: 0xbc
 function on_end_game(params) {
@@ -70,7 +70,7 @@ function on_end_game(params) {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x56ed9150, Offset: 0x618
 // Size: 0x5c
 function initial_black() {
@@ -81,7 +81,7 @@ function initial_black() {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x19d012eb, Offset: 0x680
 // Size: 0xa0
 function function_92c29649() {
@@ -99,7 +99,7 @@ function function_92c29649() {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x43afea91, Offset: 0x728
 // Size: 0x124
 function function_c11071a8() {
@@ -153,7 +153,7 @@ function function_5e1029a() {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x13b1089a, Offset: 0x9f0
 // Size: 0x94
 function function_edd52efc() {
@@ -172,8 +172,8 @@ function get_roleindex(name) {
     sessionmode = currentsessionmode();
     playerroletemplatecount = getplayerroletemplatecount(sessionmode);
     for (i = 0; i < playerroletemplatecount; i++) {
-        var_3c6fd4f7 = function_b14806c6(i, sessionmode);
-        if (var_3c6fd4f7 == name) {
+        prtname = function_b14806c6(i, sessionmode);
+        if (prtname == name) {
             return i;
         }
     }
@@ -181,7 +181,7 @@ function get_roleindex(name) {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2e2f0c7b, Offset: 0xb40
 // Size: 0x3ee
 function function_8599f7cb() {
@@ -242,7 +242,7 @@ function function_8599f7cb() {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf52d41d1, Offset: 0xf38
 // Size: 0x28c
 function function_6cc515f7(str_difficulty) {
@@ -281,7 +281,7 @@ function function_6cc515f7(str_difficulty) {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3f770d3f, Offset: 0x11d0
 // Size: 0x74
 function function_ccc3b1e3(var_d6602dc0) {
@@ -292,7 +292,7 @@ function function_ccc3b1e3(var_d6602dc0) {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x134d80fc, Offset: 0x1250
 // Size: 0xcc
 function private function_95e72b33(moviefile) {
@@ -306,7 +306,7 @@ function private function_95e72b33(moviefile) {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4a37d61a, Offset: 0x1328
 // Size: 0x236
 function challenges_init() {
@@ -336,7 +336,7 @@ function player_weapons() {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x64e8454b, Offset: 0x15d0
 // Size: 0x59e
 function give_killstreaks(a_str_killstreaks) {
@@ -413,7 +413,7 @@ function give_killstreaks(a_str_killstreaks) {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7228ae54, Offset: 0x1b78
 // Size: 0xb4
 function function_3ba6ee5d(weapon, amount) {
@@ -428,7 +428,7 @@ function function_3ba6ee5d(weapon, amount) {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc62cbddb, Offset: 0x1c38
 // Size: 0x3ee
 function function_b958401e(n_index) {
@@ -514,27 +514,27 @@ function function_d8cdeb6a(n_index) {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0xdba3d061, Offset: 0x2568
 // Size: 0x714
 function function_1833fe3e(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {
     if (self.team !== attacker.team && !isbot(attacker) && isplayer(attacker)) {
         if (level.ct_difficulty == "hard") {
-            if (attacker function_15e5c1da(#"veteran_kills") < level.var_f0b5757d) {
+            if (attacker newvalueoptions(#"veteran_kills") < level.var_f0b5757d) {
                 attacker function_9401373f(#"veteran_kills", 1);
             }
         }
         attacker.var_7e008e0c++;
-        if (attacker.var_7e008e0c > attacker function_15e5c1da(#"best_killstreak") && attacker.var_7e008e0c <= level.var_7e008e0c) {
+        if (attacker.var_7e008e0c > attacker newvalueoptions(#"best_killstreak") && attacker.var_7e008e0c <= level.var_7e008e0c) {
             attacker function_9401373f(#"best_killstreak", 1);
         }
         if (killstreaks::is_killstreak_weapon(weapon) && weapon != getweapon(#"dog_ai_defaultmelee")) {
-            if (attacker function_15e5c1da(#"scorestreak_kills") < level.var_24370902) {
+            if (attacker newvalueoptions(#"scorestreak_kills") < level.var_24370902) {
                 attacker function_9401373f(#"scorestreak_kills", 1);
             }
         }
         if (isdefined(weapon.isheroweapon) && weapon.isheroweapon || isdefined(weapon.var_76ce72e8) && weapon.var_76ce72e8 || weapon == getweapon(#"sig_buckler_turret") || weapon == getweapon(#"sig_buckler_dw") || weapon == getweapon(#"dog_ai_defaultmelee")) {
-            if (attacker function_15e5c1da(#"hash_513bb5302a850f1c") < level.var_94b2e2da) {
+            if (attacker newvalueoptions(#"hash_513bb5302a850f1c") < level.var_94b2e2da) {
                 attacker function_9401373f(#"hash_513bb5302a850f1c", 1);
             }
         }
@@ -547,42 +547,42 @@ function function_1833fe3e(einflictor, attacker, idamage, smeansofdeath, weapon,
         case #"weapon_pistol":
         case #"weapon_launcher":
         case #"weapon_cqb":
-            if (attacker function_15e5c1da(#"hash_512584b15284d144") < level.var_924497ca) {
+            if (attacker newvalueoptions(#"hash_512584b15284d144") < level.var_924497ca) {
                 attacker function_9401373f(#"hash_512584b15284d144", 1);
             }
             break;
         case #"weapon_assault":
-            if (attacker function_15e5c1da(#"hash_683d7dfc8782d6b9") < level.var_b7ad6f5b) {
+            if (attacker newvalueoptions(#"hash_683d7dfc8782d6b9") < level.var_b7ad6f5b) {
                 attacker function_9401373f(#"hash_683d7dfc8782d6b9", 1);
             }
             break;
         case #"weapon_smg":
-            if (attacker function_15e5c1da(#"hash_68046b0858420412") < level.var_c30109f4) {
+            if (attacker newvalueoptions(#"hash_68046b0858420412") < level.var_c30109f4) {
                 attacker function_9401373f(#"hash_68046b0858420412", 1);
             }
             break;
         case #"weapon_tactical":
-            if (attacker function_15e5c1da(#"hash_4d4a62396c1ec8") < level.var_26d708d7) {
+            if (attacker newvalueoptions(#"hash_4d4a62396c1ec8") < level.var_26d708d7) {
                 attacker function_9401373f(#"hash_4d4a62396c1ec8", 1);
             }
             break;
         case #"weapon_lmg":
-            if (attacker function_15e5c1da(#"hash_3caeae083fb50ceb") < level.var_4ac5338a) {
+            if (attacker newvalueoptions(#"hash_3caeae083fb50ceb") < level.var_4ac5338a) {
                 attacker function_9401373f(#"hash_3caeae083fb50ceb", 1);
             }
             break;
         case #"weapon_sniper":
-            if (attacker function_15e5c1da("#weapon_class_kills_sniper") < level.var_92dc2d7c) {
+            if (attacker newvalueoptions("#weapon_class_kills_sniper") < level.var_92dc2d7c) {
                 attacker function_9401373f(#"hash_1aee13f64efb2ef2", 1);
             }
             break;
         }
         if (smeansofdeath === "MOD_HEAD_SHOT") {
-            if (attacker function_15e5c1da(#"headshots") < level.var_247f79eb) {
+            if (attacker newvalueoptions(#"headshots") < level.var_247f79eb) {
                 attacker function_9401373f(#"headshots", 1);
             }
         } else if (smeansofdeath === "MOD_MELEE" || smeansofdeath === "MOD_MELEE_WEAPON_BUTT" || smeansofdeath === "MOD_MELEE_ASSASSINATE") {
-            if (attacker function_15e5c1da(#"melee_kills") < level.var_6f99c3bd) {
+            if (attacker newvalueoptions(#"melee_kills") < level.var_6f99c3bd) {
                 attacker function_9401373f(#"melee_kills", 1);
             }
         }
@@ -592,7 +592,7 @@ function function_1833fe3e(einflictor, attacker, idamage, smeansofdeath, weapon,
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3d3d2bfa, Offset: 0x2c88
 // Size: 0x19c
 function function_8e22d234() {
@@ -608,7 +608,7 @@ function function_8e22d234() {
     if (player.score != a_scores[0]) {
         return;
     }
-    if (player function_15e5c1da(#"hash_1ebacadf6dc3dbdf") < level.var_9356f44c) {
+    if (player newvalueoptions(#"hash_1ebacadf6dc3dbdf") < level.var_9356f44c) {
         player function_9401373f(#"hash_1ebacadf6dc3dbdf", 1);
         player function_ea859fe2();
         player thread function_78a17c00();
@@ -616,7 +616,7 @@ function function_8e22d234() {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc88bf21b, Offset: 0x2e30
 // Size: 0x1fc
 function function_b4ebcd8a() {
@@ -644,14 +644,14 @@ function function_b4ebcd8a() {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xeb112fb5, Offset: 0x3038
 // Size: 0xec
 function function_51450191() {
-    if (self function_15e5c1da(#"bronze_stars") < 10) {
+    if (self newvalueoptions(#"bronze_stars") < 10) {
         self function_9401373f(#"bronze_stars", 1);
         self function_ea859fe2();
-        if (self function_15e5c1da(#"bronze_stars") == 10) {
+        if (self newvalueoptions(#"bronze_stars") == 10) {
             self function_399964c8(1);
             self giveachievement("st_stargazer");
             wait 1;
@@ -661,18 +661,18 @@ function function_51450191() {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5473e49, Offset: 0x3130
 // Size: 0x64
 function function_46f9c28e() {
-    if (self function_15e5c1da(#"silver_stars") < 10) {
+    if (self newvalueoptions(#"silver_stars") < 10) {
         self function_9401373f(#"silver_stars", 1);
         self function_ea859fe2();
     }
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x168f8166, Offset: 0x31a0
 // Size: 0x9c
 function function_9b717ff4() {
@@ -685,12 +685,12 @@ function function_9b717ff4() {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x315ed677, Offset: 0x3248
 // Size: 0x94
 function function_ca8c7182() {
     self function_9b717ff4();
-    if (self function_15e5c1da(#"gold_stars") < 10) {
+    if (self newvalueoptions(#"gold_stars") < 10) {
         self function_9401373f(#"gold_stars", 1);
         self function_ea859fe2();
         self thread function_78a17c00();
@@ -698,7 +698,7 @@ function function_ca8c7182() {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2cb37e6f, Offset: 0x32e8
 // Size: 0x2d4
 function function_78a17c00() {
@@ -706,43 +706,43 @@ function function_78a17c00() {
     if (self function_dd91e3dd() < 30) {
         b_complete = 0;
     }
-    if (self function_15e5c1da(#"best_killstreak") < level.var_7e008e0c) {
+    if (self newvalueoptions(#"best_killstreak") < level.var_7e008e0c) {
         b_complete = 0;
     }
-    if (self function_15e5c1da(#"melee_kills") < level.var_6f99c3bd) {
+    if (self newvalueoptions(#"melee_kills") < level.var_6f99c3bd) {
         b_complete = 0;
     }
-    if (self function_15e5c1da(#"hash_512584b15284d144") < level.var_924497ca) {
+    if (self newvalueoptions(#"hash_512584b15284d144") < level.var_924497ca) {
         b_complete = 0;
     }
-    if (self function_15e5c1da(#"headshots") < level.var_247f79eb) {
+    if (self newvalueoptions(#"headshots") < level.var_247f79eb) {
         b_complete = 0;
     }
-    if (self function_15e5c1da(#"scorestreak_kills") < level.var_24370902) {
+    if (self newvalueoptions(#"scorestreak_kills") < level.var_24370902) {
         b_complete = 0;
     }
-    if (self function_15e5c1da(#"hash_513bb5302a850f1c") < level.var_94b2e2da) {
+    if (self newvalueoptions(#"hash_513bb5302a850f1c") < level.var_94b2e2da) {
         b_complete = 0;
     }
-    if (self function_15e5c1da(#"veteran_kills") < level.var_f0b5757d) {
+    if (self newvalueoptions(#"veteran_kills") < level.var_f0b5757d) {
         b_complete = 0;
     }
-    if (self function_15e5c1da(#"hash_1ebacadf6dc3dbdf") < level.var_9356f44c) {
+    if (self newvalueoptions(#"hash_1ebacadf6dc3dbdf") < level.var_9356f44c) {
         b_complete = 0;
     }
-    if (self function_15e5c1da(#"hash_683d7dfc8782d6b9") < level.var_b7ad6f5b) {
+    if (self newvalueoptions(#"hash_683d7dfc8782d6b9") < level.var_b7ad6f5b) {
         b_complete = 0;
     }
-    if (self function_15e5c1da(#"hash_3caeae083fb50ceb") < level.var_4ac5338a) {
+    if (self newvalueoptions(#"hash_3caeae083fb50ceb") < level.var_4ac5338a) {
         b_complete = 0;
     }
-    if (self function_15e5c1da(#"hash_68046b0858420412") < level.var_c30109f4) {
+    if (self newvalueoptions(#"hash_68046b0858420412") < level.var_c30109f4) {
         b_complete = 0;
     }
-    if (self function_15e5c1da(#"hash_1aee13f64efb2ef2") < level.var_92dc2d7c) {
+    if (self newvalueoptions(#"hash_1aee13f64efb2ef2") < level.var_92dc2d7c) {
         b_complete = 0;
     }
-    if (self function_15e5c1da(#"hash_4d4a62396c1ec8") < level.var_26d708d7) {
+    if (self newvalueoptions(#"hash_4d4a62396c1ec8") < level.var_26d708d7) {
         b_complete = 0;
     }
     if (b_complete) {
@@ -751,7 +751,7 @@ function function_78a17c00() {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa58ef590, Offset: 0x35c8
 // Size: 0x3a
 function function_2162b140() {
@@ -762,7 +762,7 @@ function function_2162b140() {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 11, eflags: 0x1 linked
+// Params 11, eflags: 0x0
 // Checksum 0x6bc14d09, Offset: 0x3610
 // Size: 0xae
 function on_player_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, modelindex, psoffsettime) {
@@ -774,7 +774,7 @@ function on_player_damage(einflictor, eattacker, idamage, idflags, smeansofdeath
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbf2d60e9, Offset: 0x36c8
 // Size: 0x82
 function function_5f516f9d(stathash, var_16538d01 = 0) {
@@ -786,7 +786,7 @@ function function_5f516f9d(stathash, var_16538d01 = 0) {
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9efdd46f, Offset: 0x3758
 // Size: 0xfc
 function function_9a022fbc(str_state) {

@@ -33,9 +33,9 @@
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 5,
-    "var_9b009839": -1,
+    "hash_345eba59": 5,
+    "hash_9b009839": -1,
     "name": "zombie_supply_stash_cu28",
-    "var_fde72c94": 100,
+    "supplystashweight": 100,
     "supplystash": 1
 }

@@ -1,14 +1,14 @@
 {
     "contracticon": "#hash_7a4411ddf242da1b",
-    "var_2e7ca5b9": "core_frontend_rng_reserve",
-    "var_cb6692ec": "#ui_icon_blackmarket_lockskull_256",
-    "var_c36cc884": "#img_t8_menu_mp_loadscreen_arsenal",
-    "var_b042b989": "#hash_1370744c760fd71c",
+    "hash_2e7ca5b9": "core_frontend_rng_reserve",
+    "hash_cb6692ec": "#ui_icon_blackmarket_lockskull_256",
+    "hash_c36cc884": "#img_t8_menu_mp_loadscreen_arsenal",
+    "hash_b042b989": "#hash_1370744c760fd71c",
     "contracttitle": "#hash_7ed95236c9e8f8b3",
-    "var_832d7586": "#hash_1bf060cf96fd9380",
+    "hash_832d7586": "#hash_1bf060cf96fd9380",
     "name": "loot_season_2",
     "bannerstring": "#hash_2b81b691a5faa21d",
-    "var_7ec13217": "#hash_1f1e4314badb48e3",
+    "hash_7ec13217": "#hash_1f1e4314badb48e3",
     "bannerimage": "#hash_2fc61de4c5d0b290",
-    "var_f15e270f": "#white"
+    "hash_f15e270f": "#white"
 }

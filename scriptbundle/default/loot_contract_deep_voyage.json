@@ -3,10 +3,10 @@
     "relateditemname": "#weapon/smg_fastfire_t8",
     "contracttitle": "#hash_3824d76b4a721017",
     "name": "loot_contract_deep_voyage",
-    "var_69b5a265": "core_frontend_smg_fastfire_deep_voyage",
-    "var_4b258f2c": "#hash_2127aae7139504a7",
+    "hash_69b5a265": "core_frontend_smg_fastfire_deep_voyage",
+    "hash_4b258f2c": "#hash_2127aae7139504a7",
     "contractdescription": "#hash_7680bf2bc2219eb1",
-    "var_f15e270f": "#white",
-    "var_1c057e8c": "#hash_631267d72e41ae8e",
-    "var_e08fc162": "#hash_7d8a86decfd51e90"
+    "hash_f15e270f": "#white",
+    "hash_1c057e8c": "#hash_631267d72e41ae8e",
+    "hash_e08fc162": "#hash_7d8a86decfd51e90"
 }

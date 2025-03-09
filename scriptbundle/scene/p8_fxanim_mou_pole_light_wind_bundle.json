@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5033e4b0bf3c9c6e",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 10,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#p8_fxanim_mou_pole_light_wind_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mou_pole_light_wind_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -14,14 +14,14 @@
         }
     ],
     "description": "#hash_65c197c3e3ac4a18",
-    "var_60fcfffa": "#menu/on",
-    "var_10e01ad5": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#menu/on",
+    "hash_10e01ad5": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "gamertag_indicator",
     "displayname": "#platform/team_indicator",
-    "var_66faec87": 10,
+    "hash_66faec87": 10,
     "statname": "team_indicator",
-    "var_b7401319": "#menu/off"
+    "hash_b7401319": "#menu/off"
 }

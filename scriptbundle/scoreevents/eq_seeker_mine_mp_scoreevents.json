@@ -3,7 +3,7 @@
     "type": "scoreevents",
     "vmtype": "both",
     "name": "eq_seeker_mine_mp_scoreevents",
-    "var_e1b418c1": "ability",
-    "var_3143c814": "#hash_2cc3287407441d3e",
-    "var_fcd2ff3a": 1
+    "customsettingstype": "ability",
+    "hash_3143c814": "#hash_2cc3287407441d3e",
+    "hash_fcd2ff3a": 1
 }

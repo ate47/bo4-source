@@ -1,0 +1,12 @@
+vm,name
+server,#scripts/core_common/audio_shared.gsc
+server,#scripts/core_common/dialog_shared.gsc
+server,#scripts/core_common/contracts_shared.gsc
+server,#scripts/core_common/music_shared.gsc
+server,#scripts/weapons/sticky_grenade.gsc
+client,#scripts/core/gametypes/frontend_blackmarket.csc
+client,#scripts/core/gametypes/frontend_zm_laboratory.csc
+client,#scripts/core_common/audio_shared.csc
+client,#scripts/core_common/dialog_shared.csc
+client,#scripts/core_common/music_shared.csc
+client,#scripts/weapons/sticky_grenade.csc

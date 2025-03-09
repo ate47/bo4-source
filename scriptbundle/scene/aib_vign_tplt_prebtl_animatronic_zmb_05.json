@@ -1,0 +1,27 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_435524e4741c56d",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_5f05d0788902eb7a",
+            "type": "prop",
+            "name": "actor 1"
+        }
+    ],
+    "scenetype": "scene",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_tplt_prebtl_animatronic_zmb_05",
+    "dontsync": 1,
+    "team": "any"
+}

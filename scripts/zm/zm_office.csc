@@ -79,7 +79,7 @@ function function_63a0685c(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_office/zm_office
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8d14ce26, Offset: 0x840
 // Size: 0xf4
 function function_1ed795b7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -97,7 +97,7 @@ function function_1ed795b7(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_office/zm_office
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb496561a, Offset: 0x940
 // Size: 0xf8
 function function_93f4e0e6(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -114,7 +114,7 @@ function function_93f4e0e6(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_office/zm_office
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5277a3d0, Offset: 0xa40
 // Size: 0x4c
 function pentagon_zpo_listener() {
@@ -126,7 +126,7 @@ function pentagon_zpo_listener() {
 }
 
 // Namespace zm_office/zm_office
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe87c363e, Offset: 0xa98
 // Size: 0x124
 function pentagon_tlo_listener() {
@@ -147,7 +147,7 @@ function pentagon_tlo_listener() {
 }
 
 // Namespace zm_office/zm_office
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa462c275, Offset: 0xbc8
 // Size: 0x152
 function function_b8da6f44() {
@@ -161,7 +161,7 @@ function function_b8da6f44() {
 }
 
 // Namespace zm_office/zm_office
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8e7d5f03, Offset: 0xd28
 // Size: 0x288
 function setup_personality_character_exerts() {

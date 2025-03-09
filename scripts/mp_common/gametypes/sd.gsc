@@ -163,8 +163,8 @@ function getbetterteam() {
         player = level.players[i];
         team = player.pers[#"team"];
         if (isdefined(team) && (team == #"allies" || team == #"axis")) {
-            kills[team] = kills[team] + player.kills;
-            deaths[team] = deaths[team] + player.deaths;
+            kills[team] += player.kills;
+            deaths[team] += player.deaths;
         }
     }
     if (kills[#"allies"] > kills[#"axis"]) {
@@ -703,7 +703,7 @@ function function_46031620(team, player, result) {
 // Checksum 0x4c5b40be, Offset: 0x32a8
 // Size: 0x2c
 function oncantuse(player) {
-    player iprintlnbold(#"hash_480e9067f6524bf");
+    player iprintlnbold(#"mp/cant_plant_without_bomb");
 }
 
 // Namespace sd/sd
@@ -770,7 +770,7 @@ function onusedefuseobject(player) {
     for (index = 0; index < level.bombzones.size; index++) {
         level.bombzones[index].isplanted = 0;
     }
-    level thread popups::displayteammessagetoall(#"hash_53c3f7bb9aec1bcc", player);
+    level thread popups::displayteammessagetoall(#"mp/explosives_defused_by", player);
     if (isdefined(player.pers[#"defuses"])) {
         player.pers[#"defuses"]++;
         player.defuses = player.pers[#"defuses"];

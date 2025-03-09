@@ -1,19 +1,19 @@
 {
     "descriptionimage": "#hash_b0051468c8fa60d",
     "description": "#hash_151ba4b44077b094",
-    "var_60fcfffa": "#hash_33f7784385593061",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 0.1,
+    "hash_60fcfffa": "#hash_33f7784385593061",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 0.1,
     "maxvalue": -1,
     "name": "pc_invert_y_axis",
     "displayname": "#hash_2992e7cae8b9f7ec",
     "decimalplace": 0.01,
-    "var_66faec87": 2,
+    "hash_66faec87": 2,
     "statname": "m_pitchSign",
-    "var_82c732a7": 1,
+    "isenableddisabled": 1,
     "minvalue": 1,
-    "var_d4e288e": 1,
-    "var_b7401319": "#hash_62ed1ce9b3cdba91"
+    "hash_d4e288e": 1,
+    "hash_b7401319": "#hash_62ed1ce9b3cdba91"
 }

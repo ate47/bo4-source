@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "decay_progress",
     "displayname": "#menu/decay_progress",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "decayProgress",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

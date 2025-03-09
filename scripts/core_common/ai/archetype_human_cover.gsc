@@ -64,7 +64,7 @@ function autoexec registerbehaviorscriptfunctions() {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3ffaba47, Offset: 0xbc8
 // Size: 0x8f6
 function shouldthrowgrenadeatcovercondition(entity, throwifpossible = 0) {
@@ -154,7 +154,7 @@ function shouldthrowgrenadeatcovercondition(entity, throwifpossible = 0) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcdea8e2d, Offset: 0x14c8
 // Size: 0x130
 function private sensenearbyplayers(entity) {
@@ -172,7 +172,7 @@ function private sensenearbyplayers(entity) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8a66f935, Offset: 0x1600
 // Size: 0x16a
 function private coverpreparetothrowgrenade(entity) {
@@ -192,7 +192,7 @@ function private coverpreparetothrowgrenade(entity) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8644b82b, Offset: 0x1778
 // Size: 0x20c
 function private covercleanuptothrowgrenade(entity) {
@@ -215,7 +215,7 @@ function private covercleanuptothrowgrenade(entity) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x986a3019, Offset: 0x1990
 // Size: 0x9c
 function private canchangestanceatcovercondition(entity) {
@@ -229,7 +229,7 @@ function private canchangestanceatcovercondition(entity) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x9beb0b4b, Offset: 0x1a38
 // Size: 0x2e
 function private shouldreturntosuppressedcover(entity) {
@@ -240,7 +240,7 @@ function private shouldreturntosuppressedcover(entity) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x3ad69c30, Offset: 0x1a70
 // Size: 0x18e
 function private shouldreturntocovercondition(entity) {
@@ -274,7 +274,7 @@ function private shouldreturntocovercondition(entity) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x958284f5, Offset: 0x1c08
 // Size: 0x14e
 function private shouldadjusttocover(entity) {
@@ -298,7 +298,7 @@ function private shouldadjusttocover(entity) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xced8e092, Offset: 0x1d60
 // Size: 0x1c2
 function private shouldvantageatcovercondition(entity) {
@@ -316,7 +316,7 @@ function private shouldvantageatcovercondition(entity) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x44f445af, Offset: 0x1f30
 // Size: 0xe
 function private supportsvantagecovercondition(entity) {
@@ -324,7 +324,7 @@ function private supportsvantagecovercondition(entity) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x1b867163, Offset: 0x1f48
 // Size: 0x54
 function private covervantageinitialize(entity, asmstatename) {
@@ -333,7 +333,7 @@ function private covervantageinitialize(entity, asmstatename) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x90fcb35d, Offset: 0x1fa8
 // Size: 0x6c
 function private coverblindfireshootactionstart(entity, asmstatename) {
@@ -343,7 +343,7 @@ function private coverblindfireshootactionstart(entity, asmstatename) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x87464423, Offset: 0x2020
 // Size: 0x54
 function private preparetochangestancetostand(entity, asmstatename) {
@@ -352,7 +352,7 @@ function private preparetochangestancetostand(entity, asmstatename) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x813555c2, Offset: 0x2080
 // Size: 0x3a
 function private cleanupchangestancetostand(entity, asmstatename) {
@@ -361,7 +361,7 @@ function private cleanupchangestancetostand(entity, asmstatename) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x132638b4, Offset: 0x20c8
 // Size: 0x54
 function private preparetochangestancetocrouch(entity, asmstatename) {
@@ -370,7 +370,7 @@ function private preparetochangestancetocrouch(entity, asmstatename) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x16a47d1d, Offset: 0x2128
 // Size: 0x3a
 function private cleanupchangestancetocrouch(entity, asmstatename) {
@@ -379,7 +379,7 @@ function private cleanupchangestancetocrouch(entity, asmstatename) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x84beb3a2, Offset: 0x2170
 // Size: 0x6c
 function private prepareforadjusttocover(entity, asmstatename) {
@@ -389,7 +389,7 @@ function private prepareforadjusttocover(entity, asmstatename) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xda672929, Offset: 0x21e8
 // Size: 0xf2
 function private coverchangestanceactionstart(entity, asmstatename) {
@@ -406,7 +406,7 @@ function private coverchangestanceactionstart(entity, asmstatename) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1dde1c8f, Offset: 0x22e8
 // Size: 0x47a
 function temp_get_arm_offset(entity, throwposition) {
@@ -464,7 +464,7 @@ function temp_get_arm_offset(entity, throwposition) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb8734a66, Offset: 0x2770
 // Size: 0x4c
 function private function_f120d301(entity) {
@@ -472,7 +472,7 @@ function private function_f120d301(entity) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf193d042, Offset: 0x27c8
 // Size: 0x4c
 function private function_ae382dda(entity) {
@@ -480,7 +480,7 @@ function private function_ae382dda(entity) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x9ba867c9, Offset: 0x2820
 // Size: 0x4c
 function private function_e17114c2(entity) {
@@ -488,7 +488,7 @@ function private function_e17114c2(entity) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x49987cf9, Offset: 0x2878
 // Size: 0x3c
 function private switchtogrenadelauncher(entity) {
@@ -497,7 +497,7 @@ function private switchtogrenadelauncher(entity) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcd0d559f, Offset: 0x28c0
 // Size: 0x3c
 function private switchtolightninggun(entity) {
@@ -506,7 +506,7 @@ function private switchtolightninggun(entity) {
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x86e6a342, Offset: 0x2908
 // Size: 0x3c
 function private switchtoannihilator(entity) {

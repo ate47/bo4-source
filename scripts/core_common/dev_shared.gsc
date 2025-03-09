@@ -380,8 +380,8 @@
                 continue;
             }
             util::add_debug_command(body_customization_devgui_base + body_name + "<dev string:x24d>" + "<dev string:x1aa>" + "<dev string:x1b4>" + "<dev string:x1a6>" + "<dev string:x1c2>" + playerbodytype + "<dev string:x1d8>");
-            var_13240050 = function_d299ef16(playerbodytype, mode);
-            for (outfitindex = 0; outfitindex < var_13240050; outfitindex++) {
+            outfitcount = function_d299ef16(playerbodytype, mode);
+            for (outfitindex = 0; outfitindex < outfitcount; outfitindex++) {
                 var_9cf37283 = function_d7c3cf6c(playerbodytype, outfitindex, mode);
                 if (var_9cf37283.valid) {
                     var_346660ac = function_2c6232e5(makelocalizedstring(function_9e72a96(var_9cf37283.var_74996050)));

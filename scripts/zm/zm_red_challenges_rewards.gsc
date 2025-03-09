@@ -25,7 +25,7 @@
 #namespace zm_red_challenges_rewards;
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4ada6114, Offset: 0x2a8
 // Size: 0xa6
 function init() {
@@ -42,7 +42,7 @@ function init() {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3525e66b, Offset: 0x358
 // Size: 0x82
 function function_ab6fd86c(e_player, s_bowl) {
@@ -52,7 +52,7 @@ function function_ab6fd86c(e_player, s_bowl) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7c926f4, Offset: 0x3e8
 // Size: 0x42a
 function function_4909d78c(e_player) {
@@ -114,7 +114,7 @@ function function_4909d78c(e_player) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb585d1e3, Offset: 0x820
 // Size: 0x6a
 function function_324787f7() {
@@ -126,7 +126,7 @@ function function_324787f7() {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb7035db1, Offset: 0x898
 // Size: 0x174
 function function_2c76782d() {
@@ -156,7 +156,7 @@ function function_2c76782d() {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9a6509aa, Offset: 0xa18
 // Size: 0x1d4
 function function_3165516b(var_1e2067f4, var_35477d79) {
@@ -192,7 +192,7 @@ function function_3165516b(var_1e2067f4, var_35477d79) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5f13a361, Offset: 0xbf8
 // Size: 0xa6c
 function function_123bcbcf() {
@@ -330,7 +330,7 @@ function function_123bcbcf() {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x746ea457, Offset: 0x1670
 // Size: 0x52
 function set_tribute(n_amount) {
@@ -340,7 +340,7 @@ function set_tribute(n_amount) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf8f3bb04, Offset: 0x16d0
 // Size: 0x120
 function function_56c888ce(a_str_rewards) {
@@ -367,7 +367,7 @@ function function_56c888ce(a_str_rewards) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3a9d35f0, Offset: 0x17f8
 // Size: 0x16a
 function function_29e6dc49(var_be164210 = 1, var_6c9485fc = 15) {
@@ -387,7 +387,7 @@ function function_29e6dc49(var_be164210 = 1, var_6c9485fc = 15) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x275938de, Offset: 0x1970
 // Size: 0x24c
 function function_d36fb590(var_aa4f9213, var_6c9485fc = 15, var_b7e0faf0 = 1) {
@@ -422,7 +422,7 @@ function function_d36fb590(var_aa4f9213, var_6c9485fc = 15, var_b7e0faf0 = 1) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x86463164, Offset: 0x1bc8
 // Size: 0x116
 function function_ed4a5d52(var_f0de9b92) {
@@ -472,7 +472,7 @@ function function_f152b354(str_bgb, var_6c9485fc = 15) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xef17c6a1, Offset: 0x1e18
 // Size: 0x24c
 function give_weapon_reward(var_7ed75e97, var_6c9485fc = 15, b_upgraded = 0, var_5876e0e2 = undefined) {
@@ -510,7 +510,7 @@ function give_weapon_reward(var_7ed75e97, var_6c9485fc = 15, b_upgraded = 0, var
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xebd7b72f, Offset: 0x2070
 // Size: 0xfa
 function function_e2a25377(str_weapon_name) {
@@ -528,7 +528,7 @@ function function_e2a25377(str_weapon_name) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1db8c41d, Offset: 0x2178
 // Size: 0x324
 function function_53a333a8(var_ecffa2a8, var_41f9c5ff = undefined, var_893baaf = undefined) {
@@ -578,7 +578,7 @@ function function_53a333a8(var_ecffa2a8, var_41f9c5ff = undefined, var_893baaf =
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaafa2b8b, Offset: 0x24a8
 // Size: 0x110
 function function_73fda38e(n_amount) {
@@ -610,7 +610,7 @@ function function_73fda38e(n_amount) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8cfdf3be, Offset: 0x25c0
 // Size: 0xac
 function function_b858f95a() {
@@ -624,7 +624,7 @@ function function_b858f95a() {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1285f15b, Offset: 0x2678
 // Size: 0x30a
 function function_955b59b2(var_5436555f, var_893baaf) {
@@ -682,7 +682,7 @@ function function_955b59b2(var_5436555f, var_893baaf) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x479dc653, Offset: 0x2990
 // Size: 0xd2
 function function_9275b11b() {
@@ -701,7 +701,7 @@ function function_9275b11b() {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xef665c63, Offset: 0x2a70
 // Size: 0x1be
 function function_ae2c0ba5() {
@@ -734,7 +734,7 @@ function function_ae2c0ba5() {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbfe548f2, Offset: 0x2c38
 // Size: 0x422
 function function_a8243f37() {
@@ -783,7 +783,7 @@ function function_a8243f37() {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x587bff92, Offset: 0x3068
 // Size: 0x1fe
 function get_weapon(var_7ed75e97) {
@@ -824,7 +824,7 @@ function get_weapon(var_7ed75e97) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1b2e15b1, Offset: 0x3270
 // Size: 0x16a
 function function_566c19d5(var_3d01acc1, n_index) {
@@ -852,7 +852,7 @@ function function_566c19d5(var_3d01acc1, n_index) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x95f5ee30, Offset: 0x33e8
 // Size: 0x19c
 function give_perk_reward(var_16c042b8, var_6c9485fc = 15) {
@@ -874,7 +874,7 @@ function give_perk_reward(var_16c042b8, var_6c9485fc = 15) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5d7dd0d7, Offset: 0x3590
 // Size: 0x8c
 function function_545834dc(var_16c042b8) {
@@ -892,7 +892,7 @@ function function_545834dc(var_16c042b8) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1dad7a47, Offset: 0x3628
 // Size: 0x7c
 function function_8665509b(var_6c9485fc = 15) {
@@ -904,7 +904,7 @@ function function_8665509b(var_6c9485fc = 15) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x24435548, Offset: 0x36b0
 // Size: 0x164
 function function_7dc3dfdb(var_6c9485fc = 0) {
@@ -925,7 +925,7 @@ function function_7dc3dfdb(var_6c9485fc = 0) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1cb299b9, Offset: 0x3820
 // Size: 0x9c
 function function_fc6ae19f() {
@@ -949,7 +949,7 @@ function get_weapon_upgrade(weapon) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x77091587, Offset: 0x3948
 // Size: 0x208
 function function_dcda5d87(mdl_reward, b_rotate = 1, var_b9b24 = 1, var_b7e0faf0 = 1) {
@@ -979,7 +979,7 @@ function function_dcda5d87(mdl_reward, b_rotate = 1, var_b9b24 = 1, var_b7e0faf0
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xde3d0e77, Offset: 0x3b58
 // Size: 0x26e
 function function_51fd2597(var_b9b24 = 1) {
@@ -1010,7 +1010,7 @@ function function_51fd2597(var_b9b24 = 1) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xed27d497, Offset: 0x3dd0
 // Size: 0x3c
 function function_57b8a4e9(e_pickup) {
@@ -1019,7 +1019,7 @@ function function_57b8a4e9(e_pickup) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9f25f045, Offset: 0x3e18
 // Size: 0x5c
 function function_f7cdf2f7(var_b7e0faf0 = 1) {
@@ -1031,7 +1031,7 @@ function function_f7cdf2f7(var_b7e0faf0 = 1) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x3d2e9ec, Offset: 0x3e80
 // Size: 0x12c
 function pickup_timeout(e_player, var_cbfbd48a, var_22b0e42b = 15) {
@@ -1064,7 +1064,7 @@ function pickup_timeout(e_player, var_cbfbd48a, var_22b0e42b = 15) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xace5b284, Offset: 0x3fb8
 // Size: 0x27a
 function function_6c62f074(var_9e09931e) {
@@ -1105,7 +1105,7 @@ function function_6c62f074(var_9e09931e) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1edb6269, Offset: 0x4240
 // Size: 0x214
 function function_4071e6d() {
@@ -1172,7 +1172,7 @@ function function_abd417dc(var_7ed75e97, var_5876e0e2 = undefined, b_upgraded = 
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x15bae5ce, Offset: 0x46c8
 // Size: 0x2ec
 function function_e08e4c9c(str_bgb, var_8b84b3ce) {
@@ -1213,7 +1213,7 @@ function function_e08e4c9c(str_bgb, var_8b84b3ce) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa9d36aef, Offset: 0x49c0
 // Size: 0x3c
 function give_bgb(var_de21c97b) {
@@ -1223,7 +1223,7 @@ function give_bgb(var_de21c97b) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf8b0e698, Offset: 0x4a08
 // Size: 0x2d4
 function function_445c5623(var_aa4f9213, var_8b84b3ce, var_b7e0faf0 = 1) {
@@ -1261,7 +1261,7 @@ function function_445c5623(var_aa4f9213, var_8b84b3ce, var_b7e0faf0 = 1) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8d9d03ef, Offset: 0x4ce8
 // Size: 0x244
 function function_ae58bd73(var_8b84b3ce) {
@@ -1289,7 +1289,7 @@ function function_ae58bd73(var_8b84b3ce) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x35919b32, Offset: 0x4f38
 // Size: 0x1e6
 function function_c45635c7(mdl_reward, b_rotate, var_b9b24, var_b7e0faf0 = 1) {
@@ -1323,7 +1323,7 @@ function function_c45635c7(mdl_reward, b_rotate, var_b9b24, var_b7e0faf0 = 1) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xbf8c4cd7, Offset: 0x5128
 // Size: 0x176
 function function_cdb9fba6(mdl_reward, b_rotate, var_b9b24, var_b7e0faf0 = 1) {
@@ -1347,7 +1347,7 @@ function function_cdb9fba6(mdl_reward, b_rotate, var_b9b24, var_b7e0faf0 = 1) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4df96bbc, Offset: 0x52a8
 // Size: 0xb8
 function function_3413bcb8(e_player) {
@@ -1361,7 +1361,7 @@ function function_3413bcb8(e_player) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3b77139f, Offset: 0x5368
 // Size: 0x8c
 function function_8b1e1959() {
@@ -1377,7 +1377,7 @@ function function_8b1e1959() {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x92700e25, Offset: 0x5400
 // Size: 0x104
 function function_529e8585(var_fd6264f6) {
@@ -1392,7 +1392,7 @@ function function_529e8585(var_fd6264f6) {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x46eac9b3, Offset: 0x5510
 // Size: 0x48
 function function_50ce2afd() {
@@ -1402,7 +1402,7 @@ function function_50ce2afd() {
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9b9f5592, Offset: 0x5560
 // Size: 0x2c
 function function_bec5bf67(type) {

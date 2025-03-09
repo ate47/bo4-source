@@ -590,7 +590,7 @@ version 19 {
         timewhennexthost, // 0x51,
         hash_1b0d87a2f1c0272a, // 0x52,
         hash_1b148631540ae995, // 0x53,
-        hash_1b2898c0a3f4e7c1, // 0x54,
+        killed_dog, // 0x54,
         hash_1b5a22bbb1c029a2, // 0x55,
         hash_1bb99705ba9a0e6c, // 0x56,
         hash_1bc0e2d787ec3594, // 0x57,
@@ -928,7 +928,7 @@ version 19 {
         doa, // 0x5,
         hash_4cb6801fbfb4feba, // 0x6,
         hash_59109354c237d415, // 0x7,
-        hash_61b9f30e20aecc3a, // 0x8,
+        pvpo, // 0x8,
         hash_6dbe071fd1f51551, // 0x9,
         hash_73a25371d607ae0f, // 0xa,
         pvp, // 0xb
@@ -997,7 +997,7 @@ version 19 {
         weapon_grenadelauncher, // 0xb,
         weapon_launcher, // 0xc,
         weapon_grenade, // 0xd,
-        hash_5352e5bf9311b021, // 0xe,
+        weapon_projectile, // 0xe,
         weapon_shotgun, // 0xf,
         weapon_lmg, // 0x10,
         weapon_tactical, // 0x11,
@@ -1086,8 +1086,8 @@ version 19 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -1120,9 +1120,9 @@ version 19 {
 
     // idx 15 members 5
     enum hash_8fa49f7da0821e {
-        hash_d6a8a92ed62461c, // 0x0,
-        hash_211897601e420060, // 0x1,
-        hash_3be7fbbad14a09aa, // 0x2,
+        mouth, // 0x0,
+        ears, // 0x1,
+        nose, // 0x2,
         face, // 0x3,
         eyes, // 0x4
     };
@@ -1857,7 +1857,7 @@ version 18 {
         timewhennexthost, // 0x51,
         hash_1b0d87a2f1c0272a, // 0x52,
         hash_1b148631540ae995, // 0x53,
-        hash_1b2898c0a3f4e7c1, // 0x54,
+        killed_dog, // 0x54,
         hash_1b5a22bbb1c029a2, // 0x55,
         hash_1bb99705ba9a0e6c, // 0x56,
         hash_1bc0e2d787ec3594, // 0x57,
@@ -2195,7 +2195,7 @@ version 18 {
         doa, // 0x5,
         hash_4cb6801fbfb4feba, // 0x6,
         hash_59109354c237d415, // 0x7,
-        hash_61b9f30e20aecc3a, // 0x8,
+        pvpo, // 0x8,
         hash_6dbe071fd1f51551, // 0x9,
         hash_73a25371d607ae0f, // 0xa,
         pvp, // 0xb
@@ -2264,7 +2264,7 @@ version 18 {
         weapon_grenadelauncher, // 0xb,
         weapon_launcher, // 0xc,
         weapon_grenade, // 0xd,
-        hash_5352e5bf9311b021, // 0xe,
+        weapon_projectile, // 0xe,
         weapon_shotgun, // 0xf,
         weapon_lmg, // 0x10,
         weapon_tactical, // 0x11,
@@ -2353,8 +2353,8 @@ version 18 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -2387,9 +2387,9 @@ version 18 {
 
     // idx 15 members 5
     enum hash_8fa49f7da0821e {
-        hash_d6a8a92ed62461c, // 0x0,
-        hash_211897601e420060, // 0x1,
-        hash_3be7fbbad14a09aa, // 0x2,
+        mouth, // 0x0,
+        ears, // 0x1,
+        nose, // 0x2,
         face, // 0x3,
         eyes, // 0x4
     };
@@ -3124,7 +3124,7 @@ version 17 {
         timewhennexthost, // 0x51,
         hash_1b0d87a2f1c0272a, // 0x52,
         hash_1b148631540ae995, // 0x53,
-        hash_1b2898c0a3f4e7c1, // 0x54,
+        killed_dog, // 0x54,
         hash_1b5a22bbb1c029a2, // 0x55,
         hash_1bb99705ba9a0e6c, // 0x56,
         hash_1bc0e2d787ec3594, // 0x57,
@@ -3461,7 +3461,7 @@ version 17 {
         doa, // 0x5,
         hash_4cb6801fbfb4feba, // 0x6,
         hash_59109354c237d415, // 0x7,
-        hash_61b9f30e20aecc3a, // 0x8,
+        pvpo, // 0x8,
         hash_6dbe071fd1f51551, // 0x9,
         hash_73a25371d607ae0f, // 0xa,
         pvp, // 0xb
@@ -3530,7 +3530,7 @@ version 17 {
         weapon_grenadelauncher, // 0xb,
         weapon_launcher, // 0xc,
         weapon_grenade, // 0xd,
-        hash_5352e5bf9311b021, // 0xe,
+        weapon_projectile, // 0xe,
         weapon_shotgun, // 0xf,
         weapon_lmg, // 0x10,
         weapon_tactical, // 0x11,
@@ -3619,8 +3619,8 @@ version 17 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -3653,9 +3653,9 @@ version 17 {
 
     // idx 15 members 5
     enum hash_8fa49f7da0821e {
-        hash_d6a8a92ed62461c, // 0x0,
-        hash_211897601e420060, // 0x1,
-        hash_3be7fbbad14a09aa, // 0x2,
+        mouth, // 0x0,
+        ears, // 0x1,
+        nose, // 0x2,
         face, // 0x3,
         eyes, // 0x4
     };
@@ -4390,7 +4390,7 @@ version 16 {
         timewhennexthost, // 0x51,
         hash_1b0d87a2f1c0272a, // 0x52,
         hash_1b148631540ae995, // 0x53,
-        hash_1b2898c0a3f4e7c1, // 0x54,
+        killed_dog, // 0x54,
         hash_1b5a22bbb1c029a2, // 0x55,
         hash_1bb99705ba9a0e6c, // 0x56,
         hash_1bc0e2d787ec3594, // 0x57,
@@ -4727,7 +4727,7 @@ version 16 {
         doa, // 0x5,
         hash_4cb6801fbfb4feba, // 0x6,
         hash_59109354c237d415, // 0x7,
-        hash_61b9f30e20aecc3a, // 0x8,
+        pvpo, // 0x8,
         hash_6dbe071fd1f51551, // 0x9,
         hash_73a25371d607ae0f, // 0xa,
         pvp, // 0xb
@@ -4796,7 +4796,7 @@ version 16 {
         weapon_grenadelauncher, // 0xb,
         weapon_launcher, // 0xc,
         weapon_grenade, // 0xd,
-        hash_5352e5bf9311b021, // 0xe,
+        weapon_projectile, // 0xe,
         weapon_shotgun, // 0xf,
         weapon_lmg, // 0x10,
         weapon_tactical, // 0x11,
@@ -4831,7 +4831,7 @@ version 16 {
         supply, // 0x15,
         stalker2, // 0x16,
         extclip2, // 0x17,
-        hash_19496adf1642b2e0, // 0x18,
+        floatdot, // 0x18,
         steadyaim2, // 0x19,
         hash_19f95db795729dff, // 0x1a,
         tacknife, // 0x1b,
@@ -4893,8 +4893,8 @@ version 16 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -4927,9 +4927,9 @@ version 16 {
 
     // idx 15 members 5
     enum hash_8fa49f7da0821e {
-        hash_d6a8a92ed62461c, // 0x0,
-        hash_211897601e420060, // 0x1,
-        hash_3be7fbbad14a09aa, // 0x2,
+        mouth, // 0x0,
+        ears, // 0x1,
+        nose, // 0x2,
         face, // 0x3,
         eyes, // 0x4
     };

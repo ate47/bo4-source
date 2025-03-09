@@ -31,7 +31,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1b4708ff, Offset: 0x238
 // Size: 0x15c
 function __init__() {
@@ -45,7 +45,7 @@ function __init__() {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xdec1967b, Offset: 0x3a0
 // Size: 0x78
 function function_2994c93(v_origin, v_angles, player) {
@@ -56,7 +56,7 @@ function function_2994c93(v_origin, v_angles, player) {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x3e308619, Offset: 0x420
 // Size: 0xd2
 function function_58c4db23(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -66,7 +66,7 @@ function function_58c4db23(inflictor, attacker, damage, flags, meansofdeath, wea
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x37d65ced, Offset: 0x500
 // Size: 0x9c
 function on_player_revived(s_params) {
@@ -82,7 +82,7 @@ function on_player_revived(s_params) {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x895dd20, Offset: 0x5a8
 // Size: 0xde
 function initturret() {
@@ -101,7 +101,7 @@ function initturret() {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x87748da2, Offset: 0x690
 // Size: 0x4e
 function function_c41ea657(watcher) {
@@ -111,7 +111,7 @@ function function_c41ea657(watcher) {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x83eb97f3, Offset: 0x6e8
 // Size: 0x3cc
 function function_3be2d17f(watcher, player) {
@@ -158,7 +158,7 @@ function function_3be2d17f(watcher, player) {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2f240349, Offset: 0xac0
 // Size: 0x34
 function function_d3ea6abe() {
@@ -168,7 +168,7 @@ function function_d3ea6abe() {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb9e6e9f8, Offset: 0xb00
 // Size: 0x7c
 function function_24910d60() {
@@ -183,7 +183,7 @@ function function_24910d60() {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x122b7907, Offset: 0xb88
 // Size: 0xbc
 function function_7f9eb7f() {
@@ -200,7 +200,7 @@ function function_7f9eb7f() {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xab69831c, Offset: 0xc50
 // Size: 0x4fc
 function onplaceturret(turret) {
@@ -251,7 +251,7 @@ function onplaceturret(turret) {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0xf8389d02, Offset: 0x1158
 // Size: 0x1c8
 function onturretdamage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
@@ -272,7 +272,7 @@ function onturretdamage(einflictor, eattacker, idamage, idflags, smeansofdeath, 
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x6f49b954, Offset: 0x1328
 // Size: 0x74
 function onturretdeath(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime) {
@@ -280,7 +280,7 @@ function onturretdeath(einflictor, eattacker, idamage, smeansofdeath, weapon, vd
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x244aae0c, Offset: 0x13a8
 // Size: 0x84
 function ondeathafterframeend(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime) {
@@ -291,7 +291,7 @@ function ondeathafterframeend(einflictor, eattacker, idamage, smeansofdeath, wea
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xae0cf7e9, Offset: 0x1438
 // Size: 0x2e4
 function ondeath(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime) {
@@ -341,7 +341,7 @@ function ondeath(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, sh
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x90c1fc6b, Offset: 0x1728
 // Size: 0x20
 function onshutdown(turret) {
@@ -349,7 +349,7 @@ function onshutdown(turret) {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7f8fede2, Offset: 0x1750
 // Size: 0x114
 function turret_watch_owner_events() {
@@ -368,7 +368,7 @@ function turret_watch_owner_events() {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb47a3f5f, Offset: 0x1870
 // Size: 0xe0
 function turret_laser_watch() {
@@ -388,7 +388,7 @@ function turret_laser_watch() {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x97a6e38d, Offset: 0x1958
 // Size: 0xae
 function setup_death_watch_for_new_targets() {
@@ -404,7 +404,7 @@ function setup_death_watch_for_new_targets() {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x250f0da0, Offset: 0x1a10
 // Size: 0xac
 function target_death_watch(turretvehicle) {
@@ -416,7 +416,7 @@ function target_death_watch(turretvehicle) {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6f08a65a, Offset: 0x1ac8
 // Size: 0x848
 function turretscanning() {
@@ -510,7 +510,7 @@ function turretscanning() {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9d46ef2f, Offset: 0x2318
 // Size: 0x26
 function has_active_enemy() {
@@ -521,7 +521,7 @@ function has_active_enemy() {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xee797f1d, Offset: 0x2348
 // Size: 0x1c
 function function_99f0804f() {
@@ -529,7 +529,7 @@ function function_99f0804f() {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf23896e5, Offset: 0x2370
 // Size: 0xe4
 function function_45ffb470(attacker, callback_data) {
@@ -550,7 +550,7 @@ function function_45ffb470(attacker, callback_data) {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdba264d6, Offset: 0x2460
 // Size: 0x1cc
 function function_31477582() {

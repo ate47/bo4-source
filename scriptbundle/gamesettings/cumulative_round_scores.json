@@ -7,8 +7,8 @@
     "displayname": "#menu/win_rule",
     "label1": "#hash_1aba847ac9288fac",
     "label2": "#menu/round_wins",
-    "var_9de86f42": 2,
-    "var_4c593dfd": "#hash_1b667eb8b6270fa7",
-    "var_35fb1141": "#hash_11e698e464030e8e",
+    "optionscount": 2,
+    "hinttext2": "#hash_1b667eb8b6270fa7",
+    "hinttext1": "#hash_11e698e464030e8e",
     "setting": "cumulativeRoundScores"
 }

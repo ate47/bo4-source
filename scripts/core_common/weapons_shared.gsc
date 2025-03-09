@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace weapons/weapons_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x150abc80, Offset: 0x1c8
 // Size: 0x64
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace weapons/weapons_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3718746f, Offset: 0x238
 // Size: 0x24
 function on_connect() {
@@ -34,7 +34,7 @@ function on_connect() {
 }
 
 // Namespace weapons/weapons_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa2f47ba, Offset: 0x268
 // Size: 0x54
 function on_player_spawned() {
@@ -83,7 +83,7 @@ function on_player_spawned() {
 #/
 
 // Namespace weapons/weapons_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc66546d, Offset: 0x498
 // Size: 0x8a
 function getbaseweapon(weapon) {
@@ -99,7 +99,7 @@ function getbaseweapon(weapon) {
 }
 
 // Namespace weapons/weapons_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xc02ff64d, Offset: 0x530
 // Size: 0x16a
 function function_c0101095(weapon, forward, var_62e5b78) {
@@ -119,7 +119,7 @@ function function_c0101095(weapon, forward, var_62e5b78) {
 }
 
 // Namespace weapons/weapons_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6240a297, Offset: 0x6a8
 // Size: 0x5c
 function function_f40168d3() {
@@ -130,7 +130,7 @@ function function_f40168d3() {
 }
 
 // Namespace weapons/weapons_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x51935542, Offset: 0x710
 // Size: 0x34
 function function_430e844a(params) {
@@ -141,7 +141,7 @@ function function_430e844a(params) {
 }
 
 // Namespace weapons/weapons_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd47bd556, Offset: 0x750
 // Size: 0xd26
 function function_e870d33d() {
@@ -331,7 +331,7 @@ function function_e870d33d() {
 }
 
 // Namespace weapons/weapons_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xae3e4065, Offset: 0x1480
 // Size: 0x10c
 function function_18a9a4e4(settings) {
@@ -353,7 +353,7 @@ function function_18a9a4e4(settings) {
 }
 
 // Namespace weapons/weapons_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x82854205, Offset: 0x1598
 // Size: 0xd4
 function function_7a677105(weapon) {
@@ -369,7 +369,7 @@ function function_7a677105(weapon) {
 }
 
 // Namespace weapons/weapons_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8b83aa6a, Offset: 0x1678
 // Size: 0x70
 function is_primary_weapon(weapon) {
@@ -378,7 +378,7 @@ function is_primary_weapon(weapon) {
 }
 
 // Namespace weapons/weapons_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbe444b01, Offset: 0x16f0
 // Size: 0x48
 function is_side_arm(weapon) {
@@ -387,7 +387,7 @@ function is_side_arm(weapon) {
 }
 
 // Namespace weapons/weapons_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3887287b, Offset: 0x1740
 // Size: 0x48
 function is_inventory(weapon) {
@@ -396,7 +396,7 @@ function is_inventory(weapon) {
 }
 
 // Namespace weapons/weapons_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x46254f78, Offset: 0x1790
 // Size: 0x48
 function is_grenade(weapon) {
@@ -405,7 +405,7 @@ function is_grenade(weapon) {
 }
 
 // Namespace weapons/weapons_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9ad1fa2e, Offset: 0x17e0
 // Size: 0x34
 function force_stowed_weapon_update() {
@@ -415,7 +415,7 @@ function force_stowed_weapon_update() {
 }
 
 // Namespace weapons/weapons_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf2ec2e9f, Offset: 0x1820
 // Size: 0x94
 function detach_carry_object_model() {
@@ -431,7 +431,7 @@ function detach_carry_object_model() {
 }
 
 // Namespace weapons/weapons_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3a600829, Offset: 0x18c0
 // Size: 0x144
 function detach_all_weapons() {
@@ -462,7 +462,7 @@ function detach_all_weapons() {
 }
 
 // Namespace weapons/weapons_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x40975f4f, Offset: 0x1a10
 // Size: 0x40c
 function stow_on_back(current) {
@@ -532,7 +532,7 @@ function stow_on_back(current) {
 }
 
 // Namespace weapons/weapons_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9917c22e, Offset: 0x1e28
 // Size: 0xfc
 function stow_on_hip() {
@@ -566,7 +566,7 @@ function weapondamagetracepassed(from, to, startradius, ignore) {
 }
 
 // Namespace weapons/weapons_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x86996636, Offset: 0x1fa0
 // Size: 0x1f0
 function weapondamagetrace(from, to, startradius, ignore) {
@@ -592,7 +592,7 @@ function weapondamagetrace(from, to, startradius, ignore) {
 }
 
 // Namespace weapons/weapons_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x931bc910, Offset: 0x2198
 // Size: 0x3c
 function has_lmg() {
@@ -601,7 +601,7 @@ function has_lmg() {
 }
 
 // Namespace weapons/weapons_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3b36bed3, Offset: 0x21e0
 // Size: 0x32
 function has_launcher() {
@@ -610,7 +610,7 @@ function has_launcher() {
 }
 
 // Namespace weapons/weapons_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x480fee5e, Offset: 0x2220
 // Size: 0x32
 function has_heavy_weapon() {
@@ -619,7 +619,7 @@ function has_heavy_weapon() {
 }
 
 // Namespace weapons/weapons_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x19257558, Offset: 0x2260
 // Size: 0x60
 function has_lockon(target) {
@@ -629,7 +629,7 @@ function has_lockon(target) {
 }
 
 // Namespace weapons/weapons_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5ec27786, Offset: 0x22c8
 // Size: 0x8e
 function function_9568854f(weapon, attachmentname) {
@@ -642,7 +642,7 @@ function function_9568854f(weapon, attachmentname) {
 }
 
 // Namespace weapons/weapons_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xb0f305a8, Offset: 0x2360
 // Size: 0x90
 function function_74bbb3fa(damage, weapon, target) {
@@ -660,7 +660,7 @@ function function_74bbb3fa(damage, weapon, target) {
 }
 
 // Namespace weapons/weapons_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe6bcd7f2, Offset: 0x23f8
 // Size: 0x84
 function isheadshot(shitloc, smeansofdeath) {

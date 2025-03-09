@@ -84,10 +84,10 @@
             "model": "#hash_66161656c8ef4b2d",
             "type": "prop",
             "name": "skeleton_arm",
-            "var_873368a8": 10000,
-            "var_be60a82b": 65,
-            "var_922b4fc5": 625,
-            "var_3e692842": 525,
+            "hash_873368a8": 10000,
+            "hash_be60a82b": 65,
+            "hash_922b4fc5": 625,
+            "hash_3e692842": 525,
             "takedamage": 1
         }
     ],
@@ -97,6 +97,6 @@
     "type": "scene",
     "name": "p8_fxanim_zm_esc_crane_bundle",
     "dontsync": 1,
-    "var_241c5f3c": 1,
+    "hash_241c5f3c": 1,
     "team": "any"
 }

@@ -5,6 +5,6 @@
     "name": "medal_multikill_6",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#ui_icon_medal_megakill",
-    "stringref": "#hash_1a098393ba2c5983",
+    "stringref": "#medal/multikill_6",
     "iconlarge": "#ui_icon_medal_megakill_large"
 }

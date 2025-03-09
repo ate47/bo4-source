@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd137a0a0, Offset: 0x208
 // Size: 0x31c
 function __init__() {
@@ -37,7 +37,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x95efb974, Offset: 0x530
 // Size: 0x24
 function on_localplayer_spawned(localclientnum) {
@@ -45,7 +45,7 @@ function on_localplayer_spawned(localclientnum) {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xad225dfe, Offset: 0x560
 // Size: 0x52
 function function_32981481() {
@@ -55,7 +55,7 @@ function function_32981481() {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x5c0
 // Size: 0x4
 function function_e4d3a447() {
@@ -63,7 +63,7 @@ function function_e4d3a447() {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x5d0
 // Size: 0x4
 function function_82460430() {
@@ -71,7 +71,7 @@ function function_82460430() {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6a0a4192, Offset: 0x5e0
 // Size: 0x74
 function function_f041176c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -79,7 +79,7 @@ function function_f041176c(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xba2617da, Offset: 0x660
 // Size: 0x11c
 function function_8f9318d5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -94,7 +94,7 @@ function function_8f9318d5(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8cafb9ad, Offset: 0x788
 // Size: 0x11c
 function function_680538e2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -109,7 +109,7 @@ function function_680538e2(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xeb492ad4, Offset: 0x8b0
 // Size: 0x260
 function function_58c4bf12(localclientnum) {
@@ -137,7 +137,7 @@ function function_58c4bf12(localclientnum) {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbdbc3a06, Offset: 0xb18
 // Size: 0x46
 function function_c8066972(str_notify) {
@@ -148,7 +148,7 @@ function function_c8066972(str_notify) {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x744705f2, Offset: 0xb68
 // Size: 0x46
 function function_e6bf47a3(str_notify) {
@@ -159,7 +159,7 @@ function function_e6bf47a3(str_notify) {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5043182f, Offset: 0xbb8
 // Size: 0x62
 function function_a5b9c520(localclientnum) {

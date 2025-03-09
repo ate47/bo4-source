@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_ai_brutus/zm_ai_brutus
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x66c96db8, Offset: 0x220
 // Size: 0x10c
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace zm_ai_brutus/zm_ai_brutus
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9078650d, Offset: 0x338
 // Size: 0x10c
 function function_80adaab1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -51,7 +51,7 @@ function function_80adaab1(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_ai_brutus/zm_ai_brutus
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4a01e520, Offset: 0x450
 // Size: 0xfc
 function brutus_shock_attack_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -68,7 +68,7 @@ function brutus_shock_attack_fx(localclientnum, oldval, newval, bnewent, binitia
 }
 
 // Namespace zm_ai_brutus/zm_ai_brutus
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xaf7a0d55, Offset: 0x558
 // Size: 0x5c
 function brutus_shock_attack_player(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -76,7 +76,7 @@ function brutus_shock_attack_player(localclientnum, oldval, newval, bnewent, bin
 }
 
 // Namespace zm_ai_brutus/zm_ai_brutus
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x49d559e, Offset: 0x5c0
 // Size: 0x12e
 function function_6e2a738c(localclientnum, pos, surface, notetrack, bone) {

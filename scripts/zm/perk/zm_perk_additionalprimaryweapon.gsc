@@ -28,7 +28,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_additionalprimaryweapon/zm_perk_additionalprimaryweapon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x15f7869c, Offset: 0x280
 // Size: 0x24
 function __init__() {
@@ -37,7 +37,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_additionalprimaryweapon/zm_perk_additionalprimaryweapon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x91a2f2e6, Offset: 0x2b0
 // Size: 0x22c
 function enable_additional_primary_weapon_perk_for_level() {
@@ -54,7 +54,7 @@ function enable_additional_primary_weapon_perk_for_level() {
 }
 
 // Namespace zm_perk_additionalprimaryweapon/zm_perk_additionalprimaryweapon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb6eed8ac, Offset: 0x4e8
 // Size: 0x106
 function additional_primary_weapon_precache() {
@@ -70,7 +70,7 @@ function additional_primary_weapon_precache() {
 }
 
 // Namespace zm_perk_additionalprimaryweapon/zm_perk_additionalprimaryweapon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2dd5bd5a, Offset: 0x5f8
 // Size: 0x2c
 function additional_primary_weapon_register_clientfield() {
@@ -78,7 +78,7 @@ function additional_primary_weapon_register_clientfield() {
 }
 
 // Namespace zm_perk_additionalprimaryweapon/zm_perk_additionalprimaryweapon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd14592b1, Offset: 0x630
 // Size: 0xc
 function additional_primary_weapon_set_clientfield(state) {
@@ -86,7 +86,7 @@ function additional_primary_weapon_set_clientfield(state) {
 }
 
 // Namespace zm_perk_additionalprimaryweapon/zm_perk_additionalprimaryweapon
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xccb391f3, Offset: 0x648
 // Size: 0xb6
 function additional_primary_weapon_perk_machine_setup(use_trigger, perk_machine, bump_trigger, collision) {
@@ -102,7 +102,7 @@ function additional_primary_weapon_perk_machine_setup(use_trigger, perk_machine,
 }
 
 // Namespace zm_perk_additionalprimaryweapon/zm_perk_additionalprimaryweapon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4f21b11d, Offset: 0x708
 // Size: 0x34
 function give_additional_primary_weapon_perk() {
@@ -111,7 +111,7 @@ function give_additional_primary_weapon_perk() {
 }
 
 // Namespace zm_perk_additionalprimaryweapon/zm_perk_additionalprimaryweapon
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xf2366f2a, Offset: 0x748
 // Size: 0x2e4
 function take_additional_primary_weapon_perk(b_pause, str_perk, str_result, n_slot) {
@@ -149,7 +149,7 @@ function take_additional_primary_weapon_perk(b_pause, str_perk, str_result, n_sl
 }
 
 // Namespace zm_perk_additionalprimaryweapon/zm_perk_additionalprimaryweapon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xabf7fcdc, Offset: 0xa38
 // Size: 0x2b8
 function function_1a9f3a91() {
@@ -192,7 +192,7 @@ function function_1a9f3a91() {
 }
 
 // Namespace zm_perk_additionalprimaryweapon/zm_perk_additionalprimaryweapon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1e7180ca, Offset: 0xcf8
 // Size: 0x6e
 function function_61446ba9() {

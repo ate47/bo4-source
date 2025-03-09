@@ -1,19 +1,19 @@
 {
     "descriptionimage": "#hash_1fa2283fa1a27106",
     "description": "#hash_fb1190121a28f65",
-    "var_60fcfffa": "#hash_52bdd7f7d9745a78",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#hash_52bdd7f7d9745a78",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "name": "pc_priority_looting",
     "displayname": "#hash_568d76cb19208973",
     "rangestartvalue": 60,
     "decimalplace": 1,
-    "var_66faec87": 120,
+    "hash_66faec87": 120,
     "statname": "warzonePriorityPickups",
-    "var_82c732a7": 1,
+    "isenableddisabled": 1,
     "minvalue": 1,
-    "var_d4e288e": 90,
-    "var_b7401319": "#hash_72ed85897f7616d5"
+    "hash_d4e288e": 90,
+    "hash_b7401319": "#hash_72ed85897f7616d5"
 }

@@ -8,7 +8,7 @@
 #namespace namespace_87b5173f;
 
 // Namespace namespace_87b5173f/namespace_87b5173f
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3ca9e79a, Offset: 0x200
 // Size: 0x3f2
 function init() {
@@ -32,7 +32,7 @@ function init() {
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf780b5e3, Offset: 0x600
 // Size: 0x1ac
 function acid_trap_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -55,7 +55,7 @@ function acid_trap_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4e802f2a, Offset: 0x7b8
 // Size: 0xee
 function acid_trap_death_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -71,7 +71,7 @@ function acid_trap_death_fx(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa83babbc, Offset: 0x8b0
 // Size: 0x206
 function player_acid_trap_post_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -101,7 +101,7 @@ function player_acid_trap_post_fx(localclientnum, oldval, newval, bnewent, binit
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x89250d26, Offset: 0xac0
 // Size: 0x13c
 function function_17956e93(localclientnum) {
@@ -126,7 +126,7 @@ function function_17956e93(localclientnum) {
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x15d3eae5, Offset: 0xc08
 // Size: 0x144
 function function_502136a5(str_notify) {
@@ -152,7 +152,7 @@ function function_502136a5(str_notify) {
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc623b751, Offset: 0xd58
 // Size: 0x176
 function fire_trap_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -174,7 +174,7 @@ function fire_trap_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5b1afb06, Offset: 0xed8
 // Size: 0xfe
 function player_fire_trap_post_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -194,7 +194,7 @@ function player_fire_trap_post_fx(localclientnum, oldval, newval, bnewent, binit
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x25d11a1d, Offset: 0xfe0
 // Size: 0x6c
 function function_33da4ab(localclientnum) {
@@ -206,7 +206,7 @@ function function_33da4ab(localclientnum) {
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x67c7a1a8, Offset: 0x1058
 // Size: 0x74
 function function_3204a9f(str_notify) {
@@ -219,7 +219,7 @@ function function_3204a9f(str_notify) {
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2721f6af, Offset: 0x10d8
 // Size: 0x114
 function spinning_trap_blood_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -238,7 +238,7 @@ function spinning_trap_blood_fx(localclientnum, oldval, newval, bnewent, binitia
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7c00637, Offset: 0x11f8
 // Size: 0xba
 function spinning_trap_eye_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -252,7 +252,7 @@ function spinning_trap_eye_fx(localclientnum, oldval, newval, bnewent, binitials
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc0f336ae, Offset: 0x12c0
 // Size: 0xde
 function rumble_spinning_trap(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

@@ -1,0 +1,144 @@
+{
+    "objects": [
+        {
+            "mainanim": "#hash_3cd99272f989874c",
+            "model": "#hash_649c6e8eec5986b6",
+            "type": "prop",
+            "vmtype": "server",
+            "name": "sin_idle_lamp_02",
+            "spawnoninit": 1,
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "p7_fxanim_gp_lamp_hanging_sin_lamppost_02_bundle",
+    "nextscenemode": "init"
+}

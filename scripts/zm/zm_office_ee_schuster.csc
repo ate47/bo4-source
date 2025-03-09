@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_office_ee_schuster/zm_office_ee_schuster
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7b2f8d74, Offset: 0x120
 // Size: 0x7a
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace zm_office_ee_schuster/zm_office_ee_schuster
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1683de33, Offset: 0x1a8
 // Size: 0x154
 function function_50865dc7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

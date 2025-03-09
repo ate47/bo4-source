@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace icepick/gadget_icepick
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3d30dc65, Offset: 0xe8
 // Size: 0x34
 function __init__() {

@@ -1,0 +1,22 @@
+{
+    "name": "#hash_6befa4e45eef7681",
+    "baseWeapon": "#notdowned",
+    "displayname": "#weapon/noweapon",
+    "streamkey": "#hash_187250f7eadaf3b1",
+    "sound800": "#hash_9db90f9293a22a4",
+    "sound810": "#hash_9db90f9293a22a4",
+    "tunables1": "#hash_1d942572ce0",
+    "viewmodel": "#hash_1d936a8f540",
+    "fx_bc8": "#hash_76e95841d9038476",
+    "fx_bd0": "#hash_76e26c41d8fd87c4",
+    "sharedWeaponSounds_c08": "#default",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "fx_c80": "#hash_793002a7f8d0cfde",
+    "fx_c88": "#hash_793002a7f8d0cfde",
+    "fx_c90": "#hash_793002a7f8d0cfde",
+    "fx_c98": "#hash_793002a7f8d0cfde",
+    "image_cb8": "#hash_ca8bad72d298364b",
+    "rumble_dc0": "#defaultweapon_fire",
+    "underwaterExplosionSurfaceFX": []
+}

@@ -14,7 +14,7 @@
 #namespace zm_orange_mq_dials;
 
 // Namespace zm_orange_mq_dials/zm_orange_mq_dials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1e0
 // Size: 0x4
 function preload() {
@@ -22,7 +22,7 @@ function preload() {
 }
 
 // Namespace zm_orange_mq_dials/zm_orange_mq_dials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x83b40ff8, Offset: 0x1f0
 // Size: 0x26c
 function main() {
@@ -46,7 +46,7 @@ function main() {
 }
 
 // Namespace zm_orange_mq_dials/zm_orange_mq_dials
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6f47ab51, Offset: 0x468
 // Size: 0x26c
 function function_77ed3bab(var_5ea5c94d) {
@@ -80,7 +80,7 @@ function function_77ed3bab(var_5ea5c94d) {
 }
 
 // Namespace zm_orange_mq_dials/zm_orange_mq_dials
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfec00162, Offset: 0x6e0
 // Size: 0xfc
 function function_51ecc801(var_5ea5c94d, ended_early) {
@@ -96,7 +96,7 @@ function function_51ecc801(var_5ea5c94d, ended_early) {
 }
 
 // Namespace zm_orange_mq_dials/zm_orange_mq_dials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x374a2b0d, Offset: 0x7e8
 // Size: 0x24
 function function_bd605daa() {
@@ -104,7 +104,7 @@ function function_bd605daa() {
 }
 
 // Namespace zm_orange_mq_dials/zm_orange_mq_dials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc5cb5c6c, Offset: 0x818
 // Size: 0x90
 function function_5a73ee80() {
@@ -118,7 +118,7 @@ function function_5a73ee80() {
 }
 
 // Namespace zm_orange_mq_dials/zm_orange_mq_dials
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x90eaa58b, Offset: 0x8b0
 // Size: 0x33e
 function private function_1e5c0d3b() {
@@ -172,7 +172,7 @@ function private function_1e5c0d3b() {
 }
 
 // Namespace zm_orange_mq_dials/zm_orange_mq_dials
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xea409397, Offset: 0xbf8
 // Size: 0x12e
 function private lavapit_breach_(object) {
@@ -192,7 +192,7 @@ function private lavapit_breach_(object) {
 }
 
 // Namespace zm_orange_mq_dials/zm_orange_mq_dials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xba2f7338, Offset: 0xd30
 // Size: 0xa0
 function function_a02dfba() {
@@ -203,7 +203,7 @@ function function_a02dfba() {
 }
 
 // Namespace zm_orange_mq_dials/zm_orange_mq_dials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x237f2afd, Offset: 0xdd8
 // Size: 0xf2
 function function_eb2835af() {
@@ -216,7 +216,7 @@ function function_eb2835af() {
 }
 
 // Namespace zm_orange_mq_dials/zm_orange_mq_dials
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x226fa7ba, Offset: 0xed8
 // Size: 0x102
 function function_66365668(n_code) {
@@ -237,7 +237,7 @@ function function_66365668(n_code) {
 }
 
 // Namespace zm_orange_mq_dials/zm_orange_mq_dials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd5a784d2, Offset: 0xfe8
 // Size: 0x12c
 function function_5f228e90() {
@@ -251,7 +251,7 @@ function function_5f228e90() {
 }
 
 // Namespace zm_orange_mq_dials/zm_orange_mq_dials
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x652b52d8, Offset: 0x1120
 // Size: 0x104
 function function_ca3efcd8(e_code, str_noteworthy, n_code) {

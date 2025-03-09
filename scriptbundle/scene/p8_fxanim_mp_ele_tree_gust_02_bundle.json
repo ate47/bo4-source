@@ -1,0 +1,36 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_68c0151b85fdffbd",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_538d79a841c60b9c",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_5887778b0abacc71",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_ele_tree_gust_02_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

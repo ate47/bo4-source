@@ -9,15 +9,15 @@
 
 // Namespace zombie_vortex/zombie_vortex
 // Params 0, eflags: 0x2
-// Checksum 0xf631501, Offset: 0x1b8
+// Checksum 0x6d6cdd3d, Offset: 0x1b8
 // Size: 0x44
 function autoexec __init__system__() {
     system::register(#"vortex_shared", &__init__, &__main__, undefined);
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 0, eflags: 0x1 linked
-// Checksum 0x304d1c41, Offset: 0x208
+// Params 0, eflags: 0x0
+// Checksum 0x297f43a6, Offset: 0x208
 // Size: 0x1b4
 function __init__() {
     if (!isdefined(level.vsmgr_prio_visionset_zombie_vortex)) {
@@ -39,16 +39,16 @@ function __init__() {
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 0, eflags: 0x1 linked
-// Checksum 0xe703e6ac, Offset: 0x3c8
+// Params 0, eflags: 0x0
+// Checksum 0x24342839, Offset: 0x3c8
 // Size: 0x24
 function __main__() {
     level vehicle_ai::register_custom_add_state_callback(&idgun_add_vehicle_death_state);
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 0, eflags: 0x1 linked
-// Checksum 0x77bd8e4, Offset: 0x3f8
+// Params 0, eflags: 0x0
+// Checksum 0x85a7e071, Offset: 0x3f8
 // Size: 0x100
 function init_vortices() {
     for (i = 0; i < 8; i++) {
@@ -63,8 +63,8 @@ function init_vortices() {
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 0, eflags: 0x1 linked
-// Checksum 0x8c627ea8, Offset: 0x500
+// Params 0, eflags: 0x0
+// Checksum 0xd236e689, Offset: 0x500
 // Size: 0xac
 function get_unused_vortex() {
     foreach (vortex in level.vortex_manager.a_vorticies) {
@@ -77,7 +77,7 @@ function get_unused_vortex() {
 
 // Namespace zombie_vortex/zombie_vortex
 // Params 0, eflags: 0x0
-// Checksum 0xf1886664, Offset: 0x5b8
+// Checksum 0x22e09924, Offset: 0x5b8
 // Size: 0xa6
 function get_active_vortex_count() {
     count = 0;
@@ -91,7 +91,7 @@ function get_active_vortex_count() {
 
 // Namespace zombie_vortex/zombie_vortex
 // Params 4, eflags: 0x4
-// Checksum 0xd6f46b18, Offset: 0x668
+// Checksum 0xa56bd804, Offset: 0x668
 // Size: 0x68
 function private stop_vortex_fx_after_time(vortex_fx_handle, vortex_position, vortex_explosion_fx, n_vortex_time) {
     n_starttime = gettime();
@@ -102,7 +102,7 @@ function private stop_vortex_fx_after_time(vortex_fx_handle, vortex_position, vo
 
 // Namespace zombie_vortex/zombie_vortex
 // Params 8, eflags: 0x0
-// Checksum 0x2bb74a95, Offset: 0x6d8
+// Checksum 0x36597062, Offset: 0x6d8
 // Size: 0x79c
 function start_timed_vortex(effect_version, v_vortex_origin, n_vortex_radius, n_vortex_explosion_radius, eattacker = undefined, weapon = undefined, should_shellshock_player = undefined, should_shield = undefined) {
     self endon(#"death", #"disconnect");
@@ -199,8 +199,8 @@ function start_timed_vortex(effect_version, v_vortex_origin, n_vortex_radius, n_
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 3, eflags: 0x1 linked
-// Checksum 0xd1375acb, Offset: 0xe80
+// Params 3, eflags: 0x0
+// Checksum 0xd808da41, Offset: 0xe80
 // Size: 0x14c
 function vortex_z_extension(a_ai_zombies, v_vortex_origin, n_vortex_radius) {
     a_ai_zombies_extended = array::get_all_closest(v_vortex_origin, getaiteamarray(#"axis"), undefined, undefined, n_vortex_radius + 72);
@@ -217,8 +217,8 @@ function vortex_z_extension(a_ai_zombies, v_vortex_origin, n_vortex_radius) {
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 3, eflags: 0x5 linked
-// Checksum 0x4614f45f, Offset: 0xfd8
+// Params 3, eflags: 0x4
+// Checksum 0xde593e, Offset: 0xfd8
 // Size: 0x338
 function private vortex_explosion(v_vortex_explosion_origin, eattacker, n_vortex_radius) {
     team = #"axis";
@@ -258,8 +258,8 @@ function private vortex_explosion(v_vortex_explosion_origin, eattacker, n_vortex
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 1, eflags: 0x1 linked
-// Checksum 0xc8022cc6, Offset: 0x1318
+// Params 1, eflags: 0x0
+// Checksum 0xdee58bb4, Offset: 0x1318
 // Size: 0xbe
 function player_vortex_visionset(name) {
     self endon(#"death");
@@ -271,8 +271,8 @@ function player_vortex_visionset(name) {
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 0, eflags: 0x1 linked
-// Checksum 0x825d9fde, Offset: 0x13e0
+// Params 0, eflags: 0x0
+// Checksum 0xd1028bbd, Offset: 0x13e0
 // Size: 0x9c
 function idgun_add_vehicle_death_state() {
     if (isairborne(self)) {
@@ -283,8 +283,8 @@ function idgun_add_vehicle_death_state() {
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 1, eflags: 0x1 linked
-// Checksum 0xb62b3990, Offset: 0x1488
+// Params 1, eflags: 0x0
+// Checksum 0xf2b2cb91, Offset: 0x1488
 // Size: 0x54
 function state_idgun_crush_enter(params) {
     self vehicle_ai::clearalllookingandtargeting();
@@ -293,8 +293,8 @@ function state_idgun_crush_enter(params) {
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 1, eflags: 0x1 linked
-// Checksum 0x54cc9253, Offset: 0x14e8
+// Params 1, eflags: 0x0
+// Checksum 0x230befea, Offset: 0x14e8
 // Size: 0x4c
 function flyentdelete(enttowatch) {
     self endon(#"death");
@@ -303,8 +303,8 @@ function flyentdelete(enttowatch) {
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 1, eflags: 0x1 linked
-// Checksum 0x45712afa, Offset: 0x1540
+// Params 1, eflags: 0x0
+// Checksum 0x6bce9b9b, Offset: 0x1540
 // Size: 0x270
 function state_idgun_crush_update(params) {
     self endon(#"death");
@@ -336,8 +336,8 @@ function state_idgun_crush_update(params) {
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 1, eflags: 0x1 linked
-// Checksum 0x918cbc1c, Offset: 0x17b8
+// Params 1, eflags: 0x0
+// Checksum 0xdb723f79, Offset: 0x17b8
 // Size: 0x5e
 function state_idgun_flying_crush_enter(params) {
     self vehicle_ai::clearallmovement();
@@ -347,8 +347,8 @@ function state_idgun_flying_crush_enter(params) {
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 1, eflags: 0x1 linked
-// Checksum 0xdb962d61, Offset: 0x1820
+// Params 1, eflags: 0x0
+// Checksum 0xb51d7c7e, Offset: 0x1820
 // Size: 0x164
 function state_idgun_flying_crush_update(params) {
     self endon(#"death");
@@ -366,8 +366,8 @@ function state_idgun_flying_crush_update(params) {
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 1, eflags: 0x1 linked
-// Checksum 0x37d0e033, Offset: 0x1990
+// Params 1, eflags: 0x0
+// Checksum 0xf3590467, Offset: 0x1990
 // Size: 0x84
 function switch_to_crush_asm(black_hole_center) {
     self endon(#"death");
@@ -381,8 +381,8 @@ function switch_to_crush_asm(black_hole_center) {
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 1, eflags: 0x1 linked
-// Checksum 0x7131a9c4, Offset: 0x1a20
+// Params 1, eflags: 0x0
+// Checksum 0x3ec63d4f, Offset: 0x1a20
 // Size: 0x94
 function state_idgun_flying_death_update(params) {
     self endon(#"death");

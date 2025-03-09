@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2428f69d, Offset: 0x118
 // Size: 0x31c
 function __init__() {
@@ -38,7 +38,7 @@ function __init__() {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb1b010e7, Offset: 0x440
 // Size: 0x42
 function start() {
@@ -48,7 +48,7 @@ function start() {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb39c8a71, Offset: 0x490
 // Size: 0x16
 function stop() {
@@ -56,7 +56,7 @@ function stop() {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x77301edc, Offset: 0x4b0
 // Size: 0x16
 function reset() {
@@ -64,7 +64,7 @@ function reset() {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x93236b1a, Offset: 0x4d0
 // Size: 0x92
 function update(tacbundle) {
@@ -79,7 +79,7 @@ function update(tacbundle) {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaf4f1c92, Offset: 0x570
 // Size: 0x86
 function handle_path_success() {
@@ -95,7 +95,7 @@ function handle_path_success() {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2240f145, Offset: 0x600
 // Size: 0x86
 function handle_goal_reached() {
@@ -111,7 +111,7 @@ function handle_goal_reached() {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x32f7c8c8, Offset: 0x690
 // Size: 0x2a
 function register_handler(name, func) {
@@ -119,7 +119,7 @@ function register_handler(name, func) {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc9504e68, Offset: 0x6c8
 // Size: 0x2a
 function register_stance(name, func) {
@@ -127,7 +127,7 @@ function register_stance(name, func) {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfe238835, Offset: 0x700
 // Size: 0x1a4
 function function_7beea81f(tacbundle) {
@@ -157,7 +157,7 @@ function function_7beea81f(tacbundle) {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x45bafe56, Offset: 0x8b0
 // Size: 0x168
 function function_ab5be907(tacbundle, params, node) {
@@ -183,7 +183,7 @@ function function_ab5be907(tacbundle, params, node) {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x13b1b17d, Offset: 0xa20
 // Size: 0xbe
 function g_stop_player_too_many_weapons_monitor(name) {
@@ -205,7 +205,7 @@ function g_stop_player_too_many_weapons_monitor(name) {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1e1f5f2c, Offset: 0xae8
 // Size: 0x3a
 function handle_default(tacbundle, params, node) {
@@ -213,7 +213,7 @@ function handle_default(tacbundle, params, node) {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1a77624d, Offset: 0xb30
 // Size: 0x11a
 function function_7857357b(tacbundle, params, node) {
@@ -238,7 +238,7 @@ function function_7857357b(tacbundle, params, node) {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xffc1fac5, Offset: 0xc58
 // Size: 0x11a
 function function_f1b497ec(tacbundle, params, node) {
@@ -264,7 +264,7 @@ function function_f1b497ec(tacbundle, params, node) {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe0351493, Offset: 0xd80
 // Size: 0x11a
 function function_41d967fe(tacbundle, params, node) {
@@ -290,7 +290,7 @@ function function_41d967fe(tacbundle, params, node) {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa5a903ac, Offset: 0xea8
 // Size: 0x182
 function function_f71302f4(tacbundle, params, node) {
@@ -325,7 +325,7 @@ function function_f71302f4(tacbundle, params, node) {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x398a6ba8, Offset: 0x1038
 // Size: 0x162
 function function_821cce69(tacbundle, params, node) {
@@ -357,7 +357,7 @@ function function_821cce69(tacbundle, params, node) {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x9661fab9, Offset: 0x11a8
 // Size: 0xda
 function function_5485fc7b(tacbundle, params, node) {
@@ -377,7 +377,7 @@ function function_5485fc7b(tacbundle, params, node) {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xd7fe67fb, Offset: 0x1290
 // Size: 0x212
 function function_e4f752b9(tacbundle, params, node) {
@@ -415,7 +415,7 @@ function function_e4f752b9(tacbundle, params, node) {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x65e04662, Offset: 0x14b0
 // Size: 0x31a
 function function_d22ff818(tacbundle, params, node) {
@@ -472,7 +472,7 @@ function function_d22ff818(tacbundle, params, node) {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xc5b30d43, Offset: 0x17d8
 // Size: 0x39a
 function function_1989cfaf(tacbundle, params, node) {
@@ -535,7 +535,7 @@ function function_1989cfaf(tacbundle, params, node) {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7f313680, Offset: 0x1b80
 // Size: 0x64
 function sprint() {
@@ -546,7 +546,7 @@ function sprint() {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8d004f98, Offset: 0x1bf0
 // Size: 0x64
 function stand() {
@@ -557,7 +557,7 @@ function stand() {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1452a7fc, Offset: 0x1c60
 // Size: 0x64
 function crouch() {
@@ -568,7 +568,7 @@ function crouch() {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb89449c2, Offset: 0x1cd0
 // Size: 0x64
 function prone() {
@@ -579,7 +579,7 @@ function prone() {
 }
 
 // Namespace bot_stance/bot_stance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x604ffb37, Offset: 0x1d40
 // Size: 0x64
 function slide() {

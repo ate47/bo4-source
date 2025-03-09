@@ -40,7 +40,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_elevation/mp_elevation
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6e366fdc, Offset: 0x2f8
 // Size: 0xbc
 function function_2cdcf5c3() {
@@ -56,7 +56,7 @@ function function_2cdcf5c3() {
 }
 
 // Namespace mp_elevation/mp_elevation
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x777883b3, Offset: 0x3c0
 // Size: 0x14c
 function on_game_playing() {
@@ -71,7 +71,7 @@ function on_game_playing() {
 }
 
 // Namespace mp_elevation/mp_elevation
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9a98f2a9, Offset: 0x518
 // Size: 0x1c
 function function_fb047aa8() {
@@ -79,7 +79,7 @@ function function_fb047aa8() {
 }
 
 // Namespace mp_elevation/mp_elevation
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8f0cb42e, Offset: 0x540
 // Size: 0x34
 function stop_exploders() {

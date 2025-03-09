@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_anti_entrapment/zm_bgb_anti_entrapment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb32af224, Offset: 0xd0
 // Size: 0x4c
 function __init__() {

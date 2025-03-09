@@ -2,12 +2,12 @@
     "configstringfiletype": "scriptbundle",
     "result": "weapon#pistol_topbreak_t8_zm",
     "type": "craftblueprint",
-    "var_99577dd3": "weapon#zitem_orange_zipline_crank_part_1_zm",
-    "var_670f9944": "weapon#zitem_orange_zipline_crank_part_2_zm",
+    "component01": "weapon#zitem_orange_zipline_crank_part_1_zm",
+    "component02": "weapon#zitem_orange_zipline_crank_part_2_zm",
     "name": "zblueprint_orange_zipline_crank",
     "displayname": "orange_zipline_crank",
-    "var_46309255": "one_time_craft",
+    "postcraft": "one_time_craft",
     "componentcount": 2,
-    "var_d8967a0c": 1,
-    "var_318c150c": "section_quests"
+    "takecomponents": 1,
+    "hash_318c150c": "section_quests"
 }

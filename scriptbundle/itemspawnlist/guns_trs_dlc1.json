@@ -3,37 +3,37 @@
         {
             "minweight": 100,
             "itementry": "tr_midburst_t8_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "tr_longburst_t8_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 50,
             "itementry": "tr_powersemi_t8_item",
-            "var_3f8c08e3": "ammo_type_762_item",
+            "childitementry_1": "ammo_type_762_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 50,
             "itementry": "sniper_mini14_t8_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 100
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 200,
+    "hash_7fb0967b": 200,
     "type": "itemspawnlist",
-    "var_345eba59": 4,
-    "var_9b009839": -1,
-    "var_dc7ffbef": 1,
+    "hash_345eba59": 4,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
     "name": "guns_trs_dlc1",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

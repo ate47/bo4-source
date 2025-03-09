@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd7492663, Offset: 0x100
 // Size: 0x4e
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa2b5406c, Offset: 0x158
 // Size: 0x9e
 function function_aad9199e(pulsedenemy) {
@@ -43,7 +43,7 @@ function function_aad9199e(pulsedenemy) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6a5cd249, Offset: 0x200
 // Size: 0x84
 function function_fc3478b7(pulsedenemy) {
@@ -54,7 +54,7 @@ function function_fc3478b7(pulsedenemy) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc13629ed, Offset: 0x290
 // Size: 0xac
 function function_c0520f6f(victim, waittime) {
@@ -66,7 +66,7 @@ function function_c0520f6f(victim, waittime) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd89c9687, Offset: 0x348
 // Size: 0x210
 function awardscore() {

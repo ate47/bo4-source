@@ -7,7 +7,7 @@
 // Method(s) 6 Total 13
 class cct_shared_desc : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cct_shared_desc/ct_shared_desc
     // Params 2, eflags: 0x0
@@ -15,15 +15,15 @@ class cct_shared_desc : cluielem {
     // Size: 0xfc
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(_uid, "_state", 0);
             return;
         }
         if (#"hash_3319eaa2c590a2ac" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(_uid, "_state", 1);
             return;
         }
         if (#"hash_2ac3b79c708dcfd5" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 2);
+            player clientfield::function_9bf78ef8(_uid, "_state", 2);
             return;
         }
         assertmsg("<dev string:x38>");

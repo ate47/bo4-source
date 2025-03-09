@@ -1,0 +1,41 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_40861ef038c627dd",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 10,
+                    "spacermax": 15,
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_788e8f83fe1b0aa6",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 15,
+                    "spacermax": 20,
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_6885c5e8eabf8b98",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_wmd_satellite_dish_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

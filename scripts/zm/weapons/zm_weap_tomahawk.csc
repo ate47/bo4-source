@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb8d47c3b, Offset: 0x240
 // Size: 0x522
 function __init__() {
@@ -44,7 +44,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3698e871, Offset: 0x770
 // Size: 0x84
 function tomahawk_in_use(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -58,7 +58,7 @@ function tomahawk_in_use(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x84ec4035, Offset: 0x800
 // Size: 0x23a
 function play_tomahawk_pickup_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -95,7 +95,7 @@ function play_tomahawk_pickup_fx(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xaefd6998, Offset: 0xa48
 // Size: 0x7c
 function function_9a3953ea(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -103,7 +103,7 @@ function function_9a3953ea(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8a03e0e7, Offset: 0xad0
 // Size: 0x1ea
 function tomahawk_trail_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -132,7 +132,7 @@ function tomahawk_trail_fx(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1cd96866, Offset: 0xcc8
 // Size: 0x1cc
 function tomahawk_impact_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -158,7 +158,7 @@ function tomahawk_impact_fx(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x881d332d, Offset: 0xea0
 // Size: 0x134
 function tomahawk_charge_up_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -178,7 +178,7 @@ function tomahawk_charge_up_fx(localclientnum, oldval, newval, bnewent, binitial
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9fb2d44, Offset: 0xfe0
 // Size: 0xb6
 function function_eea02302(localclientnum) {
@@ -196,7 +196,7 @@ function function_eea02302(localclientnum) {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x43a782b2, Offset: 0x10a0
 // Size: 0xc2
 function tomahawk_rumble(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {

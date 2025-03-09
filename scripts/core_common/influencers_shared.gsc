@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace influencers/influencers_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa71ca70b, Offset: 0x138
 // Size: 0x8c
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace influencers/influencers_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5f8c42b, Offset: 0x1d0
 // Size: 0x34
 function onplayerspawned() {
@@ -37,7 +37,7 @@ function onplayerspawned() {
 }
 
 // Namespace influencers/influencers_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x85a634be, Offset: 0x210
 // Size: 0x5c
 function onplayerconnect() {
@@ -47,7 +47,7 @@ function onplayerconnect() {
 }
 
 // Namespace influencers/influencers_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xabddfbbf, Offset: 0x278
 // Size: 0x54
 function on_player_death(params) {
@@ -58,7 +58,7 @@ function on_player_death(params) {
 }
 
 // Namespace influencers/influencers_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9b800ee, Offset: 0x2d8
 // Size: 0x16
 function on_joined_team(params) {
@@ -66,7 +66,7 @@ function on_joined_team(params) {
 }
 
 // Namespace influencers/influencers_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9f5c575f, Offset: 0x2f8
 // Size: 0x74
 function on_grenade_fired(params) {
@@ -76,7 +76,7 @@ function on_grenade_fired(params) {
 }
 
 // Namespace influencers/influencers_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdab27c90, Offset: 0x378
 // Size: 0x52
 function get_friendly_team_mask(team) {
@@ -89,7 +89,7 @@ function get_friendly_team_mask(team) {
 }
 
 // Namespace influencers/influencers_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcc63ba13, Offset: 0x3d8
 // Size: 0x52
 function get_enemy_team_mask(team) {
@@ -102,7 +102,7 @@ function get_enemy_team_mask(team) {
 }
 
 // Namespace influencers/influencers_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x50e9677, Offset: 0x438
 // Size: 0xf0
 function private add_influencer_tracker(influencer, name) {
@@ -144,7 +144,7 @@ function create_influencer_generic(str_name, origin_or_entity, str_team, is_for_
 }
 
 // Namespace influencers/influencers_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1eff53df, Offset: 0x6a0
 // Size: 0x3a
 function create_influencer(name, origin, team_mask) {
@@ -152,7 +152,7 @@ function create_influencer(name, origin, team_mask) {
 }
 
 // Namespace influencers/influencers_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x3dfcf016, Offset: 0x6e8
 // Size: 0x6a
 function create_friendly_influencer(name, origin, team) {
@@ -162,7 +162,7 @@ function create_friendly_influencer(name, origin, team) {
 }
 
 // Namespace influencers/influencers_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xc6a67494, Offset: 0x760
 // Size: 0x6a
 function create_enemy_influencer(name, origin, team) {
@@ -172,7 +172,7 @@ function create_enemy_influencer(name, origin, team) {
 }
 
 // Namespace influencers/influencers_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x304823fa, Offset: 0x7d8
 // Size: 0x2a
 function create_entity_influencer(name, team_mask) {
@@ -197,7 +197,7 @@ function create_entity_friendly_influencer(name, team) {
 }
 
 // Namespace influencers/influencers_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7c21fa7f, Offset: 0x8b8
 // Size: 0x52
 function create_entity_enemy_influencer(name, team) {
@@ -206,7 +206,7 @@ function create_entity_enemy_influencer(name, team) {
 }
 
 // Namespace influencers/influencers_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xecb5472e, Offset: 0x918
 // Size: 0x1d2
 function create_player_influencers() {
@@ -239,7 +239,7 @@ function create_player_influencers() {
 }
 
 // Namespace influencers/influencers_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa375fa43, Offset: 0xaf8
 // Size: 0x7c
 function create_player_spawn_influencers(spawn_origin) {
@@ -248,7 +248,7 @@ function create_player_spawn_influencers(spawn_origin) {
 }
 
 // Namespace influencers/influencers_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x86524ebb, Offset: 0xb80
 // Size: 0x90
 function private remove_influencer_tracking(to_be_removed) {
@@ -260,7 +260,7 @@ function private remove_influencer_tracking(to_be_removed) {
 }
 
 // Namespace influencers/influencers_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x763f31ac, Offset: 0xc18
 // Size: 0x9a
 function private is_influencer_tracked(influencer) {
@@ -275,7 +275,7 @@ function private is_influencer_tracked(influencer) {
 }
 
 // Namespace influencers/influencers_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x29013508, Offset: 0xcc0
 // Size: 0x54
 function remove_influencer(to_be_removed) {
@@ -286,7 +286,7 @@ function remove_influencer(to_be_removed) {
 }
 
 // Namespace influencers/influencers_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6dc23ee6, Offset: 0xd20
 // Size: 0x146
 function remove_influencers() {
@@ -307,7 +307,7 @@ function remove_influencers() {
 }
 
 // Namespace influencers/influencers_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x84dbb377, Offset: 0xe70
 // Size: 0x12c
 function create_grenade_influencers(parent_team, weapon, grenade) {
@@ -328,7 +328,7 @@ function create_grenade_influencers(parent_team, weapon, grenade) {
 }
 
 // Namespace influencers/influencers_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x605b9b15, Offset: 0xfa8
 // Size: 0x7e
 function create_map_placed_influencers() {
@@ -340,7 +340,7 @@ function create_map_placed_influencers() {
 }
 
 // Namespace influencers/influencers_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4a7665f9, Offset: 0x1030
 // Size: 0xa0
 function create_map_placed_influencer(influencer_entity) {

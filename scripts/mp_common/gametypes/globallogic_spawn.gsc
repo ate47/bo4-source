@@ -1185,7 +1185,7 @@ function waitandspawnclient(timealreadypassed) {
             var_821200bb = 0;
         }
         if (var_821200bb > 0) {
-            hud_message::setlowermessage(#"hash_7d1a0e5bd191fce", var_821200bb);
+            hud_message::setlowermessage(#"mp/friendly_fire_will_not", var_821200bb);
             self thread respawn_asspectator(self.origin + (0, 0, 60), self.angles);
             spawnedasspectator = 1;
             wait var_821200bb;

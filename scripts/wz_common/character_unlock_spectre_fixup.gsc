@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 // Checksum 0xcd871972, Offset: 0xc8
 // Size: 0x64
 function __init__() {
-    character_unlock_fixup::register_character_unlock(#"spectre_unlock", #"hash_1ee2659e8dff07d8", #"cu34_item", &function_d95e620c, #"hash_27023afb3f91aba5");
+    character_unlock_fixup::register_character_unlock(#"spectre_unlock", #"prt_wz_spectre", #"cu34_item", &function_d95e620c, #"hash_27023afb3f91aba5");
 }
 
 // Namespace character_unlock_spectre_fixup/character_unlock_spectre_fixup

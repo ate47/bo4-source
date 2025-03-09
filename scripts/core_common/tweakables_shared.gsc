@@ -11,7 +11,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace tweakables/tweakables_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6365e5e6, Offset: 0xd0
 // Size: 0x6ec
 function __init__() {
@@ -55,7 +55,7 @@ function __init__() {
 }
 
 // Namespace tweakables/tweakables_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1537adf9, Offset: 0x7c8
 // Size: 0x1ea
 function gettweakabledvarvalue(category, name) {
@@ -132,7 +132,7 @@ function gettweakabledvar(category, name) {
 }
 
 // Namespace tweakables/tweakables_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x637467df, Offset: 0xb90
 // Size: 0x240
 function gettweakablevalue(category, name) {
@@ -174,7 +174,7 @@ function gettweakablevalue(category, name) {
 }
 
 // Namespace tweakables/tweakables_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2399b027, Offset: 0xdd8
 // Size: 0x1c8
 function gettweakablelastvalue(category, name) {
@@ -249,7 +249,7 @@ function settweakablevalue(category, name, value) {
 }
 
 // Namespace tweakables/tweakables_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xd175eb59, Offset: 0x1180
 // Size: 0x1c2
 function settweakablelastvalue(category, name, value) {
@@ -284,7 +284,7 @@ function settweakablelastvalue(category, name, value) {
 }
 
 // Namespace tweakables/tweakables_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xd4f7e873, Offset: 0x1350
 // Size: 0x612
 function registertweakable(category, name, dvar, value) {
@@ -368,7 +368,7 @@ function registertweakable(category, name, dvar, value) {
 }
 
 // Namespace tweakables/tweakables_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x12ed907a, Offset: 0x1970
 // Size: 0x32
 function setclienttweakable(category, name) {
@@ -376,7 +376,7 @@ function setclienttweakable(category, name) {
 }
 
 // Namespace tweakables/tweakables_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x625f91ac, Offset: 0x19b0
 // Size: 0xf4
 function updateuitweakables(debug_refresh) {

@@ -5,7 +5,7 @@
 #namespace init;
 
 // Namespace init/init
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5b7a63c, Offset: 0xc0
 // Size: 0xd6
 function initweapon(weapon) {
@@ -20,7 +20,7 @@ function initweapon(weapon) {
 }
 
 // Namespace init/init
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xea0388f, Offset: 0x1a0
 // Size: 0x46a
 function main() {
@@ -193,7 +193,7 @@ function gettranssplittime(approachtype, dir) {
 }
 
 // Namespace init/init
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd73d8988, Offset: 0xb60
 // Size: 0x1c6
 function firstinit() {
@@ -228,7 +228,7 @@ function onplayerconnect() {
 }
 
 // Namespace init/init
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6dfbafbf, Offset: 0xd70
 // Size: 0x172
 function setnextplayergrenadetime() {
@@ -252,7 +252,7 @@ function setnextplayergrenadetime() {
 }
 
 // Namespace init/init
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3e29b032, Offset: 0xef0
 // Size: 0xdc
 function addtomissiles(grenade) {
@@ -306,7 +306,7 @@ function event_handler[missile_fire] function_596d3a28(eventstruct) {
 }
 
 // Namespace init/init
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1138
 // Size: 0x4
 function end_script() {

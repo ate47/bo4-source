@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_tortoise/zm_perk_mod_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa0773b11, Offset: 0xc0
 // Size: 0x14
 function __init__() {
@@ -20,7 +20,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_tortoise/zm_perk_mod_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdcd94b0d, Offset: 0xe0
 // Size: 0x74
 function function_dfb8db6a() {
@@ -29,7 +29,7 @@ function function_dfb8db6a() {
 }
 
 // Namespace zm_perk_mod_tortoise/zm_perk_mod_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x160
 // Size: 0x4
 function function_cdedb133() {
@@ -37,7 +37,7 @@ function function_cdedb133() {
 }
 
 // Namespace zm_perk_mod_tortoise/zm_perk_mod_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x170
 // Size: 0x4
 function function_7e8d1b34() {
@@ -45,7 +45,7 @@ function function_7e8d1b34() {
 }
 
 // Namespace zm_perk_mod_tortoise/zm_perk_mod_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x180
 // Size: 0x4
 function function_de73ba5c() {

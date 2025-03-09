@@ -12,7 +12,7 @@ function autoexec __init__() {
 }
 
 // Namespace namespace_f75691cc/namespace_f75691cc
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4baf3559, Offset: 0x98
 // Size: 0x20c
 function function_d8c2344b() {

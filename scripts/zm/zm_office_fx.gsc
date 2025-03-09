@@ -1,7 +1,7 @@
 #namespace zm_office_fx;
 
 // Namespace zm_office_fx/zm_office_fx
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa9b91092, Offset: 0x68
 // Size: 0x1b2
 function init() {

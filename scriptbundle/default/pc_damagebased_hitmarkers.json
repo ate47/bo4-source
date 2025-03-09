@@ -1,18 +1,18 @@
 {
     "descriptionimage": "#hash_200f0950c9a409f6",
     "description": "#hash_5f53928f4ab69a0f",
-    "var_60fcfffa": "#hash_43ecbdda975e2ac1",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 0.1,
+    "hash_60fcfffa": "#hash_43ecbdda975e2ac1",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 0.1,
     "name": "pc_damagebased_hitmarkers",
     "displayname": "#hash_440344988dc4b045",
     "decimalplace": 0.01,
-    "var_66faec87": 2,
+    "hash_66faec87": 2,
     "statname": "hitmarkers_damage_type",
-    "var_82c732a7": 1,
+    "isenableddisabled": 1,
     "minvalue": 1,
-    "var_d4e288e": 1,
-    "var_b7401319": "#hash_439156e8d96d245"
+    "hash_d4e288e": 1,
+    "hash_b7401319": "#hash_439156e8d96d245"
 }

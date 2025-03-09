@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace antipersonnel_guidance/multilockapguidance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x81dffcc2, Offset: 0xf8
 // Size: 0x4c
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace antipersonnel_guidance/multilockapguidance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xae07a6eb, Offset: 0x150
 // Size: 0xb0
 function player_init() {
@@ -34,7 +34,7 @@ function player_init() {
 }
 
 // Namespace antipersonnel_guidance/multilockapguidance
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe30ec086, Offset: 0x208
 // Size: 0x19e
 function watch_lockon(localclientnum) {

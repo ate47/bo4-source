@@ -1,8 +1,8 @@
 {
-    "var_2ecceeab": "#overwatch_helicopter_kill",
+    "hash_2ecceeab": "#overwatch_helicopter_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
     "name": "overwatch_helicopter_scoreevents",
-    "var_e1b418c1": "ability"
+    "customsettingstype": "ability"
 }

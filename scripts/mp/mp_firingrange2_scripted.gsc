@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace mp_firingrange2_scripted/mp_firingrange2_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x60a82057, Offset: 0x118
 // Size: 0x24
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace mp_firingrange2_scripted/mp_firingrange2_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdec49f0a, Offset: 0x148
 // Size: 0x2c
 function __main__() {
@@ -35,7 +35,7 @@ function __main__() {
 }
 
 // Namespace mp_firingrange2_scripted/mp_firingrange2_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5d89e816, Offset: 0x180
 // Size: 0x94
 function on_game_playing() {
@@ -47,7 +47,7 @@ function on_game_playing() {
 }
 
 // Namespace mp_firingrange2_scripted/mp_firingrange2_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x25cb11a4, Offset: 0x220
 // Size: 0xb4
 function function_2cdcf5c3() {

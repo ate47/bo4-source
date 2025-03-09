@@ -9,7 +9,7 @@
                             "stageimage": "#hash_a4f2def438bc162"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#hash_40b098e265f3e592"
                 },
                 {
@@ -19,7 +19,7 @@
                             "stageimage": "#hash_1d52114c56c1b808"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#hash_40b097e265f3e3df"
                 },
                 {
@@ -29,11 +29,11 @@
                             "stageimage": "#hash_5f4dc252b5774dd5"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#hash_40b096e265f3e22c"
                 }
             ],
-            "var_b048489f": 3
+            "hash_b048489f": 3
         }
     ],
     "shieldpieces": [
@@ -86,12 +86,12 @@
     ],
     "objectivebackground": "#hash_718abef0eea9a942",
     "configstringfiletype": "scriptbundle",
-    "var_aa76b7dd": 8,
+    "hash_aa76b7dd": 8,
     "type": "zminventory",
-    "var_af62a8e8": 3,
+    "hash_af62a8e8": 3,
     "name": "zm_inventory_escape",
-    "var_f128673a": "#hash_2028b2c0395c86bf",
-    "var_c029b82f": 1,
-    "var_846fa8e": "#zm_escape_paschal",
-    "var_16fb993f": "#hash_30727aefda60cbd4"
+    "hash_f128673a": "#hash_2028b2c0395c86bf",
+    "hash_c029b82f": 1,
+    "hash_846fa8e": "#zm_escape_paschal",
+    "hash_16fb993f": "#hash_30727aefda60cbd4"
 }

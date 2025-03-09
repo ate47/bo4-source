@@ -10,7 +10,7 @@
                         }
                     ],
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "entry": [
@@ -47,7 +47,7 @@
                         }
                     ],
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "entry": [
@@ -57,8 +57,8 @@
                         }
                     ],
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "entry": [
@@ -68,7 +68,7 @@
                         }
                     ],
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "entry": [
@@ -105,7 +105,7 @@
                         }
                     ],
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "entry": [
@@ -115,8 +115,8 @@
                         }
                     ],
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "entry": [
@@ -126,8 +126,8 @@
                         }
                     ],
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "entry": [
@@ -137,7 +137,7 @@
                         }
                     ],
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "entry": [
@@ -183,7 +183,7 @@
                         }
                     ],
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "entry": [
@@ -193,8 +193,8 @@
                         }
                     ],
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "entry": [
@@ -204,8 +204,8 @@
                         }
                     ],
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#tag_origin_animate",
@@ -216,7 +216,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -229,12 +229,12 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "entry": [
@@ -245,7 +245,7 @@
                     ],
                     "cleanuphide": 1,
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -258,21 +258,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -296,18 +296,18 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "prepareshow": 1,
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_740425b92da5ba4e",
@@ -318,7 +318,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -331,12 +331,12 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "entry": [
@@ -347,7 +347,7 @@
                     ],
                     "cleanuphide": 1,
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -367,21 +367,21 @@
                     ],
                     "prepareshow": 1,
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -405,18 +405,18 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "prepareshow": 1,
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_7466d6ac8ad656e6",
@@ -427,7 +427,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -440,7 +440,7 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "entry": [
@@ -450,8 +450,8 @@
                         }
                     ],
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "entry": [
@@ -461,7 +461,7 @@
                         }
                     ],
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "entry": [
@@ -494,21 +494,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -532,18 +532,18 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "prepareshow": 1,
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_258f1c261d6ac7e6",
@@ -554,7 +554,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -567,12 +567,12 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "entry": [
@@ -583,7 +583,7 @@
                     ],
                     "cleanuphide": 1,
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -605,17 +605,17 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "entry": [
@@ -627,7 +627,7 @@
                     "prepareshow": 1,
                     "cleanuphide": 1,
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -643,18 +643,18 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "prepareshow": 1,
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_19656e27a62fb489",
@@ -665,7 +665,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -678,16 +678,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -700,21 +700,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "entry": [
@@ -756,17 +756,17 @@
                     ],
                     "cleanupdelete": 1,
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#p8_mov_zm_gla_weapon_axe_01",
@@ -777,7 +777,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -790,16 +790,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -812,21 +812,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -842,12 +842,12 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "entry": [
@@ -857,8 +857,8 @@
                         }
                     ],
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_68afd73a6d5c8314",
@@ -875,7 +875,7 @@
                         }
                     ],
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "entry": [
@@ -913,17 +913,17 @@
                     ],
                     "cleanuphide": 1,
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "prepareshow": 1,
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "cleanuphide": 1,
@@ -938,23 +938,23 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "prepareshow": 1,
                     "cleanuphide": 1,
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -970,18 +970,18 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "prepareshow": 1,
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_3c954413cbb4e650",
@@ -992,7 +992,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -1005,7 +1005,7 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "entry": [
@@ -1015,8 +1015,8 @@
                         }
                     ],
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "entry": [
@@ -1026,7 +1026,7 @@
                         }
                     ],
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "entry": [
@@ -1054,17 +1054,17 @@
                     "prepareshow": 1,
                     "cleanuphide": 1,
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "entry": [
@@ -1076,7 +1076,7 @@
                     "prepareshow": 1,
                     "cleanuphide": 1,
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -1100,17 +1100,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_7ce0eb9fb0174c3a",
@@ -1121,7 +1121,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -1134,7 +1134,7 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "entry": [
@@ -1144,8 +1144,8 @@
                         }
                     ],
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "entry": [
@@ -1155,7 +1155,7 @@
                         }
                     ],
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "entry": [
@@ -1197,17 +1197,17 @@
                     "prepareshow": 1,
                     "cleanuphide": 1,
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "entry": [
@@ -1219,7 +1219,7 @@
                     "prepareshow": 1,
                     "cleanuphide": 1,
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -1243,17 +1243,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_4a61b16b4110cba7",
@@ -1264,7 +1264,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -1277,12 +1277,12 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "entry": [
@@ -1293,7 +1293,7 @@
                     ],
                     "cleanuphide": 1,
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -1313,22 +1313,22 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "prepareshow": 1,
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "prepareshow": 1,
@@ -1349,18 +1349,18 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "prepareshow": 1,
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_7ce0eb9fb0174c3a",
@@ -1371,7 +1371,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -1384,12 +1384,12 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "entry": [
@@ -1400,7 +1400,7 @@
                     ],
                     "cleanuphide": 1,
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -1413,21 +1413,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -1451,17 +1451,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_4a61b16b4110cba7",
@@ -1472,7 +1472,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -1485,12 +1485,12 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "entry": [
@@ -1501,7 +1501,7 @@
                     ],
                     "cleanuphide": 1,
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -1514,21 +1514,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -1552,17 +1552,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_7ce0eb9fb0174c3a",
@@ -1573,7 +1573,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -1586,12 +1586,12 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "entry": [
@@ -1602,7 +1602,7 @@
                     ],
                     "cleanuphide": 1,
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -1615,21 +1615,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -1645,17 +1645,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_4a61b16b4110cba7",
@@ -1666,7 +1666,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -1679,16 +1679,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -1701,17 +1701,17 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "entry": [
@@ -1722,7 +1722,7 @@
                     ],
                     "cleanuphide": 1,
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -1753,12 +1753,12 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "entry": [
@@ -1769,8 +1769,8 @@
                     ],
                     "prepareshow": 1,
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#p8_mov_zm_gla_chopping_block",
@@ -1781,7 +1781,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -1794,16 +1794,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -1816,21 +1816,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -1846,12 +1846,12 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "entry": [
@@ -1861,8 +1861,8 @@
                         }
                     ],
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#p8_mov_zm_gla_chopping_block",
@@ -1873,7 +1873,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -1886,16 +1886,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -1908,21 +1908,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -1938,12 +1938,12 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "entry": [
@@ -1953,8 +1953,8 @@
                         }
                     ],
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#p8_mov_zm_gla_chopping_block",
@@ -1965,7 +1965,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -1978,16 +1978,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -2000,21 +2000,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -2030,12 +2030,12 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "entry": [
@@ -2045,8 +2045,8 @@
                         }
                     ],
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#p8_mov_zm_gla_chopping_block",
@@ -2057,7 +2057,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -2070,16 +2070,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -2092,21 +2092,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -2122,12 +2122,12 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "entry": [
@@ -2137,8 +2137,8 @@
                         }
                     ],
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_14c348b1d895f7b1",
@@ -2149,7 +2149,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -2162,16 +2162,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -2184,21 +2184,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -2214,12 +2214,12 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "entry": [
@@ -2229,8 +2229,8 @@
                         }
                     ],
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_2f666bb2f4cb8be9",
@@ -2241,7 +2241,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -2254,16 +2254,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -2276,21 +2276,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -2306,12 +2306,12 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "entry": [
@@ -2321,8 +2321,8 @@
                         }
                     ],
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_798c2bca983e168c",
@@ -2333,7 +2333,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -2346,16 +2346,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -2368,21 +2368,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -2398,12 +2398,12 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "entry": [
@@ -2413,8 +2413,8 @@
                         }
                     ],
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_54d54f3258305ab1",
@@ -2431,7 +2431,7 @@
                         }
                     ],
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "entry": [
@@ -2462,16 +2462,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -2484,21 +2484,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -2514,23 +2514,23 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_2b458f17054945d9",
             "type": "prop",
             "name": "prop 22",
-            "var_be60a82b": -500
+            "hash_be60a82b": -500
         },
         {
             "shots": [
@@ -2542,7 +2542,7 @@
                         }
                     ],
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -2555,16 +2555,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -2577,21 +2577,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -2607,17 +2607,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_11d00220470db280",
@@ -2634,7 +2634,7 @@
                         }
                     ],
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -2647,16 +2647,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -2669,21 +2669,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -2699,17 +2699,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_50813a66e4b4e2b3",
@@ -2726,7 +2726,7 @@
                         }
                     ],
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -2739,16 +2739,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -2761,21 +2761,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -2791,17 +2791,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_697b10947df3a153",
@@ -2818,7 +2818,7 @@
                         }
                     ],
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -2831,16 +2831,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -2853,21 +2853,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -2883,17 +2883,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_3be85cfd2fbfc6e1",
@@ -2910,7 +2910,7 @@
                         }
                     ],
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -2923,16 +2923,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -2945,21 +2945,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -2975,17 +2975,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_57c60091689d66d2",
@@ -3002,7 +3002,7 @@
                         }
                     ],
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -3015,16 +3015,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -3037,21 +3037,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -3067,17 +3067,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_5dd8abee2d470359",
@@ -3088,7 +3088,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -3107,16 +3107,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -3129,21 +3129,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -3159,17 +3159,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#tag_origin_animate",
@@ -3180,7 +3180,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -3199,16 +3199,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -3221,21 +3221,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -3251,17 +3251,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_4726f545c425a53b",
@@ -3272,7 +3272,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -3285,16 +3285,16 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -3307,12 +3307,12 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "entry": [
@@ -3322,12 +3322,12 @@
                         }
                     ],
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "entry": [
@@ -3362,12 +3362,12 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "entry": [
@@ -3378,8 +3378,8 @@
                     ],
                     "prepareshow": 1,
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_119fdcf3e238a978",
@@ -3390,7 +3390,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -3403,12 +3403,12 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "entry": [
@@ -3418,7 +3418,7 @@
                         }
                     ],
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "entry": [
@@ -3449,7 +3449,7 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "entry": [
@@ -3459,17 +3459,17 @@
                         }
                     ],
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -3485,7 +3485,7 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "entry": [
@@ -3495,8 +3495,8 @@
                         }
                     ],
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "entry": [
@@ -3506,8 +3506,8 @@
                         }
                     ],
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#hash_654b8434b49db0b8",
@@ -3518,7 +3518,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -3531,12 +3531,12 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "entry": [
@@ -3547,7 +3547,7 @@
                     ],
                     "cleanuphide": 1,
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -3568,21 +3568,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -3606,17 +3606,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#p8_mov_zm_gla_rope_restraint_01_scarlet",
@@ -3627,7 +3627,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -3640,12 +3640,12 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "entry": [
@@ -3656,7 +3656,7 @@
                     ],
                     "cleanuphide": 1,
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -3669,17 +3669,17 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "entry": [
@@ -3691,7 +3691,7 @@
                     "prepareshow": 1,
                     "cleanuphide": 1,
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -3707,17 +3707,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#p8_mov_zm_gla_rope_restraint_01_stanton",
@@ -3728,7 +3728,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -3741,12 +3741,12 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "entry": [
@@ -3757,7 +3757,7 @@
                     ],
                     "cleanuphide": 1,
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -3770,21 +3770,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -3800,17 +3800,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#p8_mov_zm_gla_rope_restraint_01_diego",
@@ -3821,7 +3821,7 @@
             "shots": [
                 {
                     "name": "shot010",
-                    "var_b94164e": "xd_010"
+                    "hash_b94164e": "xd_010"
                 },
                 {
                     "name": "shot020"
@@ -3834,12 +3834,12 @@
                 },
                 {
                     "name": "shot050",
-                    "var_39fd697b": "xd_010"
+                    "hash_39fd697b": "xd_010"
                 },
                 {
                     "name": "shot060",
-                    "var_39fd697b": "xd_060",
-                    "var_b94164e": "xd_060"
+                    "hash_39fd697b": "xd_060",
+                    "hash_b94164e": "xd_060"
                 },
                 {
                     "entry": [
@@ -3850,7 +3850,7 @@
                     ],
                     "cleanuphide": 1,
                     "name": "shot070",
-                    "var_b94164e": "xd_070"
+                    "hash_b94164e": "xd_070"
                 },
                 {
                     "name": "shot080"
@@ -3863,21 +3863,21 @@
                 },
                 {
                     "name": "shot120",
-                    "var_39fd697b": "xd_070"
+                    "hash_39fd697b": "xd_070"
                 },
                 {
                     "name": "sh135",
-                    "var_39fd697b": "xd_135",
-                    "var_b94164e": "xd_135"
+                    "hash_39fd697b": "xd_135",
+                    "hash_b94164e": "xd_135"
                 },
                 {
                     "name": "sh138",
-                    "var_39fd697b": "xd_138",
-                    "var_b94164e": "xd_138"
+                    "hash_39fd697b": "xd_138",
+                    "hash_b94164e": "xd_138"
                 },
                 {
                     "name": "shot140",
-                    "var_b94164e": "xd_140"
+                    "hash_b94164e": "xd_140"
                 },
                 {
                     "name": "sh145"
@@ -3893,17 +3893,17 @@
                 },
                 {
                     "name": "sh168",
-                    "var_39fd697b": "xd_140"
+                    "hash_39fd697b": "xd_140"
                 },
                 {
                     "name": "shot170",
-                    "var_39fd697b": "xd_170",
-                    "var_b94164e": "xd_170"
+                    "hash_39fd697b": "xd_170",
+                    "hash_b94164e": "xd_170"
                 },
                 {
                     "name": "shot180",
-                    "var_39fd697b": "xd_180",
-                    "var_b94164e": "xd_180"
+                    "hash_39fd697b": "xd_180",
+                    "hash_b94164e": "xd_180"
                 }
             ],
             "model": "#p8_mov_zm_gla_rope_restraint_01_bruno",
@@ -3919,8 +3919,8 @@
     "name": "cin_zm_ix_outro",
     "dontsync": 1,
     "disablesceneskipping": 1,
-    "var_241c5f3c": 1,
-    "var_a6da2039": "cin_zm_ix_outro",
+    "hash_241c5f3c": 1,
+    "hash_a6da2039": "cin_zm_ix_outro",
     "aligntarget": "tag_align_arena",
     "team": "any"
 }

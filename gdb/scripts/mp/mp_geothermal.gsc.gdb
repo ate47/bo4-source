@@ -4,11 +4,11 @@ CHECKSUM 0x1ad75dae
 ######################################################
 ####################  DEV BLOCKS  ####################
 ######################################################
-# mp_geothermal::function_7854a074@bc
+# mp_geothermal::geyser_think@bc
 DEVBLOCK 0x1504
-# mp_geothermal::function_7854a074@12a
+# mp_geothermal::geyser_think@12a
 DEVBLOCK 0x1572
-# mp_geothermal::function_7854a074@17a
+# mp_geothermal::geyser_think@17a
 DEVBLOCK 0x15c2
 # mp_geothermal::function_dda9d732@40
 DEVBLOCK 0x1678

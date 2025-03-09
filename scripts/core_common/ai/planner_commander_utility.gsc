@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 #namespace plannercommanderutility;
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xf2a6c1c9, Offset: 0x558
 // Size: 0x12b4
 function private __init__() {
@@ -183,7 +183,7 @@ function private _calculatealliedteams(team) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xaefbe91, Offset: 0x1bb8
 // Size: 0xe0
 function private _calculatebotscentroid(doppelbots) {
@@ -199,7 +199,7 @@ function private _calculatebotscentroid(doppelbots) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x34aa0f8, Offset: 0x1ca0
 // Size: 0x146
 function private _calculateclosestgameobject(position, gameobjects) {
@@ -265,7 +265,7 @@ function private function_65b16924(doppelbots, components) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x93143356, Offset: 0x20d8
 // Size: 0x3a4
 function private _calculateallpathablegameobjects(planner, doppelbots, gameobjects) {
@@ -327,7 +327,7 @@ function private _calculateallpathablegameobjects(planner, doppelbots, gameobjec
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x5521abe0, Offset: 0x2488
 // Size: 0x40c
 function private function_816f4052(planner, doppelbots, bundles) {
@@ -400,7 +400,7 @@ function private function_816f4052(planner, doppelbots, bundles) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xc4c28362, Offset: 0x28a0
 // Size: 0x52c
 function private function_77cd4593(planner, doppelbots, components) {
@@ -493,7 +493,7 @@ function private function_77cd4593(planner, doppelbots, components) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x5f69e1c4, Offset: 0x2dd8
 // Size: 0x34a
 function private function_98bde2b6(doppelbots, entities) {
@@ -548,7 +548,7 @@ function private function_98bde2b6(doppelbots, entities) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x8b428574, Offset: 0x3130
 // Size: 0x26a
 function private _calculateallpathableobjectives(doppelbots, objectives) {
@@ -594,7 +594,7 @@ function private _calculateallpathableobjectives(doppelbots, objectives) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x8e8d804f, Offset: 0x33a8
 // Size: 0x3da
 function private _calculateallpathableclients(doppelbots, clients) {
@@ -655,14 +655,15 @@ function private _calculateallpathableclients(doppelbots, clients) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xfba4e0e9, Offset: 0x3790
 // Size: 0x174
 function private _calculatepositionquerypath(queryresult, position, entity) {
     path = undefined;
     longestpath = 0;
     if (queryresult.data.size > 0) {
-        for (index = 0; index < queryresult.data.size; index += 16) {
+        index = 0;
+        while (index < queryresult.data.size) {
             goalpoints = [];
             for (goalindex = index; goalindex - index < 16 && goalindex < queryresult.data.size; goalindex++) {
                 goalpoints[goalpoints.size] = queryresult.data[goalindex].origin;
@@ -674,13 +675,14 @@ function private _calculatepositionquerypath(queryresult, position, entity) {
                     longestpath = pathsegment.pathdistance;
                 }
             }
+            index += 16;
         }
     }
     return path;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xd2ccc1f0, Offset: 0x3910
 // Size: 0x12e
 function private _calculateprioritygameobjects(gameobjects, prioritygameobjectidentifiers) {
@@ -729,7 +731,7 @@ function private _updatehistoricalgameobjects(commander) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x12a62758, Offset: 0x3c30
 // Size: 0x46c
 function private daemonupdateclients(commander) {
@@ -780,7 +782,7 @@ function private daemonupdateclients(commander) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xaadc9dd2, Offset: 0x40a8
 // Size: 0x6d4
 function private daemonupdategameobjects(commander) {
@@ -862,7 +864,7 @@ function private daemonupdategameobjects(commander) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7c751133, Offset: 0x4788
 // Size: 0x364
 function private function_e6443602(commander) {
@@ -905,7 +907,7 @@ function private function_e6443602(commander) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xbbface81, Offset: 0x4af8
 // Size: 0x688
 function private function_7706a6fa(commander) {
@@ -979,7 +981,7 @@ function private function_7706a6fa(commander) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe9470614, Offset: 0x5188
 // Size: 0x794
 function private daemonupdateobjective(commander) {
@@ -1062,7 +1064,7 @@ function private daemonupdateobjective(commander) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4fb76f2, Offset: 0x5928
 // Size: 0xf6
 function function_790fb743(planner, constants) {
@@ -1075,7 +1077,7 @@ function function_790fb743(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xf8747714, Offset: 0x5a28
 // Size: 0xbc
 function private function_a05a08bf(planner, constants) {
@@ -1084,7 +1086,7 @@ function private function_a05a08bf(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x10c0cb6c, Offset: 0x5af0
 // Size: 0xc0
 function private strategyblackboardvalueistrue(planner, constants) {
@@ -1093,7 +1095,7 @@ function private strategyblackboardvalueistrue(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xe6bd1fd5, Offset: 0x5bb8
 // Size: 0x20e
 function private function_a75b29d8(planner, constants) {
@@ -1119,7 +1121,7 @@ function private function_a75b29d8(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x1934e10f, Offset: 0x5dd0
 // Size: 0x242
 function private function_e0092cfc(planner, constant) {
@@ -1141,7 +1143,7 @@ function private function_e0092cfc(planner, constant) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xeca19666, Offset: 0x6020
 // Size: 0x5aa
 function private function_86270cca(planner, constant) {
@@ -1203,7 +1205,7 @@ function private function_86270cca(planner, constant) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xdfa873d6, Offset: 0x65d8
 // Size: 0x472
 function private function_14c766b3(planner, constant) {
@@ -1255,7 +1257,7 @@ function private function_14c766b3(planner, constant) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x83fd9145, Offset: 0x6a58
 // Size: 0x2aa
 function private function_52012b78(planner, constant) {
@@ -1295,7 +1297,7 @@ function private function_52012b78(planner, constant) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x4de03a0b, Offset: 0x6d10
 // Size: 0x2b2
 function private function_34464159(planner, constant) {
@@ -1331,7 +1333,7 @@ function private function_34464159(planner, constant) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x725f6c25, Offset: 0x6fd0
 // Size: 0x10a
 function private strategysquadcalculatepathableobjectivesparam(planner, constant) {
@@ -1345,7 +1347,7 @@ function private strategysquadcalculatepathableobjectivesparam(planner, constant
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xf477def6, Offset: 0x70e8
 // Size: 0x10a
 function private strategysquadcalculatepathableplayersparam(planner, constant) {
@@ -1359,7 +1361,7 @@ function private strategysquadcalculatepathableplayersparam(planner, constant) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2bb147ac, Offset: 0x7200
 // Size: 0xf4
 function private strategyincrementblackboardvalue(planner, constants) {
@@ -1369,7 +1371,7 @@ function private strategyincrementblackboardvalue(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x7b0b17a1, Offset: 0x7300
 // Size: 0x354
 function private function_166d74b2(planner, constants) {
@@ -1413,7 +1415,7 @@ function private function_166d74b2(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x928323a8, Offset: 0x7660
 // Size: 0x1c4
 function private function_f162255b(planner, constants) {
@@ -1430,7 +1432,7 @@ function private function_f162255b(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x22d674df, Offset: 0x7830
 // Size: 0xdc
 function private strategysetblackboardvalue(planner, constants) {
@@ -1440,7 +1442,7 @@ function private strategysetblackboardvalue(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2d925baa, Offset: 0x7918
 // Size: 0xe4
 function private function_20de0d52(planner, constants) {
@@ -1450,7 +1452,7 @@ function private function_20de0d52(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x82e23cb1, Offset: 0x7a08
 // Size: 0x1de
 function private strategyshouldrushprogress(planner, constant) {
@@ -1477,7 +1479,7 @@ function private strategyshouldrushprogress(planner, constant) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x329638fc, Offset: 0x7bf0
 // Size: 0x1de
 function private strategyshouldthrottleprogress(planner, constant) {
@@ -1504,7 +1506,7 @@ function private strategyshouldthrottleprogress(planner, constant) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xefe2ed83, Offset: 0x7dd8
 // Size: 0x122
 function private strategysquadorderparam(planner, constants) {
@@ -1516,7 +1518,7 @@ function private strategysquadorderparam(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x3962dc7f, Offset: 0x7f08
 // Size: 0xc2
 function private strategysquadassignforcegoalparam(planner, constants) {
@@ -1528,7 +1530,7 @@ function private strategysquadassignforcegoalparam(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xd08e876d, Offset: 0x7fd8
 // Size: 0x26a
 function private strategysquadassignpathableescortparam(planner, constants) {
@@ -1557,7 +1559,7 @@ function private strategysquadassignpathableescortparam(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x4c237ccc, Offset: 0x8250
 // Size: 0x2c2
 function private strategysquadassignpathableobjectparam(planner, constant) {
@@ -1590,7 +1592,7 @@ function private strategysquadassignpathableobjectparam(planner, constant) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xc0aefea8, Offset: 0x8520
 // Size: 0x192
 function private strategysquadassignpathableobjectiveparam(planner, constant) {
@@ -1611,7 +1613,7 @@ function private strategysquadassignpathableobjectiveparam(planner, constant) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x796f4162, Offset: 0x86c0
 // Size: 0x32a
 function private strategysquadassignpathableunclaimedobjectparam(planner, constant) {
@@ -1644,7 +1646,7 @@ function private strategysquadassignpathableunclaimedobjectparam(planner, consta
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xb4c9e3eb, Offset: 0x89f8
 // Size: 0xda
 function private function_b77887e(planner, constants) {
@@ -1657,7 +1659,7 @@ function private function_b77887e(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x4ba58032, Offset: 0x8ae0
 // Size: 0x9a
 function private strategysquadassignwanderparam(planner, constants) {
@@ -1668,7 +1670,7 @@ function private strategysquadassignwanderparam(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2daa736b, Offset: 0x8b88
 // Size: 0x142
 function private strategysquadclaimobjectparam(planner, constants) {
@@ -1683,7 +1685,7 @@ function private strategysquadclaimobjectparam(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x12516e7c, Offset: 0x8cd8
 // Size: 0x1c4
 function private strategysquadcopyblackboardvalue(planner, constants) {
@@ -1696,7 +1698,7 @@ function private strategysquadcopyblackboardvalue(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x3b984550, Offset: 0x8ea8
 // Size: 0x1c4
 function private function_86c0732e(planner, constants) {
@@ -1709,7 +1711,7 @@ function private function_86c0732e(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2200d856, Offset: 0x9078
 // Size: 0x42
 function private function_d58b0781(planner, constants) {
@@ -1717,7 +1719,7 @@ function private function_d58b0781(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xa22dc873, Offset: 0x90c8
 // Size: 0x3a
 function private function_45f841ea(planner, constants) {
@@ -1725,7 +1727,7 @@ function private function_45f841ea(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x9e924dd4, Offset: 0x9110
 // Size: 0x2c2
 function private function_faa6dd57(planner, constants, var_92812a91) {
@@ -1754,7 +1756,7 @@ function private function_faa6dd57(planner, constants, var_92812a91) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xbb81c77b, Offset: 0x93e0
 // Size: 0x2c2
 function private strategysquadcreateofsizexparam(planner, constants) {
@@ -1780,7 +1782,7 @@ function private strategysquadcreateofsizexparam(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xbe9bbcf3, Offset: 0x96b0
 // Size: 0x1ba
 function private strategysquadescortassignmainguardparam(planner, constants) {
@@ -1797,7 +1799,7 @@ function private strategysquadescortassignmainguardparam(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xc6b10255, Offset: 0x9878
 // Size: 0x1ba
 function private strategysquadescortassignrearguardparam(planner, constants) {
@@ -1814,7 +1816,7 @@ function private strategysquadescortassignrearguardparam(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x402e2e8a, Offset: 0x9a40
 // Size: 0x1ba
 function private strategysquadescortassignvanguardparam(planner, constants) {
@@ -1831,7 +1833,7 @@ function private strategysquadescortassignvanguardparam(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x3bc20ace, Offset: 0x9c08
 // Size: 0x11a
 function private strategysquadescortcalculatepathablepoiparam(planner, constants) {
@@ -1845,7 +1847,7 @@ function private strategysquadescortcalculatepathablepoiparam(planner, constants
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x4e929437, Offset: 0x9d30
 // Size: 0x10e
 function private strategysquadescorthasnomainguard(planner, constants) {
@@ -1861,7 +1863,7 @@ function private strategysquadescorthasnomainguard(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xc7128a9e, Offset: 0x9e48
 // Size: 0x10c
 function private strategysquadescorthasnorearguard(planner, constants) {
@@ -1877,7 +1879,7 @@ function private strategysquadescorthasnorearguard(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x59c91ab0, Offset: 0x9f60
 // Size: 0x10c
 function private strategysquadescorthasnovanguard(planner, constants) {
@@ -1893,7 +1895,7 @@ function private strategysquadescorthasnovanguard(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xc4dd410, Offset: 0xa078
 // Size: 0x19c
 function private strategysquadsortescortpoi(planner, constants) {
@@ -1917,7 +1919,7 @@ function private strategysquadsortescortpoi(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xa9d5736, Offset: 0xa220
 // Size: 0x146
 function private bunker_exposure_scale(planner, constants) {
@@ -1932,7 +1934,7 @@ function private bunker_exposure_scale(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x3675944a, Offset: 0xa370
 // Size: 0x98
 function private strategysquadhaspathableescort(planner, constants) {
@@ -1943,7 +1945,7 @@ function private strategysquadhaspathableescort(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xc1ab06b1, Offset: 0xa410
 // Size: 0xa2
 function private strategysquadhaspathableobject(planner, constants) {
@@ -1954,7 +1956,7 @@ function private strategysquadhaspathableobject(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x4a4aa98b, Offset: 0xa4c0
 // Size: 0x98
 function private strategysquadhaspathableobjective(planner, constants) {
@@ -1965,7 +1967,7 @@ function private strategysquadhaspathableobjective(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xc1dfeb1, Offset: 0xa560
 // Size: 0xee
 function private strategysquadhaspathableunclaimedobject(planner, constant) {
@@ -1981,7 +1983,7 @@ function private strategysquadhaspathableunclaimedobject(planner, constant) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2ea818a3, Offset: 0xa658
 // Size: 0xa2
 function private strategyhasatleastxassaultobjects(planner, constants) {
@@ -1990,7 +1992,7 @@ function private strategyhasatleastxassaultobjects(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2edfed4c, Offset: 0xa708
 // Size: 0xa2
 function private strategyhasatleastxdefendobjects(planner, constants) {
@@ -1999,7 +2001,7 @@ function private strategyhasatleastxdefendobjects(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xeb6fd23d, Offset: 0xa7b8
 // Size: 0xa2
 function private strategyhasatleastxobjectives(planner, constants) {
@@ -2008,7 +2010,7 @@ function private strategyhasatleastxobjectives(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x5da7ebb0, Offset: 0xa868
 // Size: 0xa2
 function private strategyhasatleastxplayers(planner, constants) {
@@ -2017,7 +2019,7 @@ function private strategyhasatleastxplayers(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x28d70af3, Offset: 0xa918
 // Size: 0x21e
 function private strategyhasatleastxpriorityassaultobjects(planner, constants) {
@@ -2041,7 +2043,7 @@ function private strategyhasatleastxpriorityassaultobjects(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x3b7f891e, Offset: 0xab40
 // Size: 0x21e
 function private strategyhasatleastxprioritydefendobjects(planner, constants) {
@@ -2065,7 +2067,7 @@ function private strategyhasatleastxprioritydefendobjects(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x9ef6ecc, Offset: 0xad68
 // Size: 0xa2
 function private strategyhasatleastxunassignedbots(planner, constants) {
@@ -2074,7 +2076,7 @@ function private strategyhasatleastxunassignedbots(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfb435738, Offset: 0xae18
 // Size: 0x13a
 function strategyhasatleastxunclaimedassaultobjects(planner, constants) {
@@ -2090,7 +2092,7 @@ function strategyhasatleastxunclaimedassaultobjects(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe06dbe3, Offset: 0xaf60
 // Size: 0x13a
 function strategyhasatleastxunclaimeddefendobjects(planner, constants) {
@@ -2106,7 +2108,7 @@ function strategyhasatleastxunclaimeddefendobjects(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x955290e9, Offset: 0xb0a8
 // Size: 0x236
 function strategyhasatleastxunclaimedpriorityassaultobjects(planner, constants) {
@@ -2130,7 +2132,7 @@ function strategyhasatleastxunclaimedpriorityassaultobjects(planner, constants) 
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x73fe3214, Offset: 0xb2e8
 // Size: 0x236
 function strategyhasatleastxunclaimedprioritydefendobjects(planner, constants) {
@@ -2154,7 +2156,7 @@ function strategyhasatleastxunclaimedprioritydefendobjects(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6f80d6eb, Offset: 0xb528
 // Size: 0x34
 function strategyhasforcegoal(planner, constants) {
@@ -2162,7 +2164,7 @@ function strategyhasforcegoal(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc97968de, Offset: 0xb568
 // Size: 0x1dc
 function function_f6a3c6d5(planner, constants) {
@@ -2182,7 +2184,7 @@ function function_f6a3c6d5(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xd89c2275, Offset: 0xb750
 // Size: 0x38
 function private strategypathinghascalculatedpaths(planner, constants) {
@@ -2190,7 +2192,7 @@ function private strategypathinghascalculatedpaths(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x59269413, Offset: 0xb790
 // Size: 0xae
 function private strategypathinghascalculatedpathablepath(planner, constants) {
@@ -2201,7 +2203,7 @@ function private strategypathinghascalculatedpathablepath(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xc6de43d8, Offset: 0xb848
 // Size: 0x38
 function private strategypathinghasnorequestpoints(planner, constants) {
@@ -2209,7 +2211,7 @@ function private strategypathinghasnorequestpoints(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x18ee9fed, Offset: 0xb888
 // Size: 0x38
 function private strategypathinghasrequestpoints(planner, constants) {
@@ -2217,7 +2219,7 @@ function private strategypathinghasrequestpoints(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x8a19570, Offset: 0xb8c8
 // Size: 0x72
 function private strategypathinghasunprocessedgameobjects(planner, constants) {
@@ -2227,7 +2229,7 @@ function private strategypathinghasunprocessedgameobjects(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x291009a6, Offset: 0xb948
 // Size: 0x72
 function private strategypathinghasunprocessedobjectives(planner, constants) {
@@ -2237,7 +2239,7 @@ function private strategypathinghasunprocessedobjectives(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xaddb5985, Offset: 0xb9c8
 // Size: 0xd4
 function private strategypathinghasunprocessedrequestpoints(planner, constants) {
@@ -2249,7 +2251,7 @@ function private strategypathinghasunprocessedrequestpoints(planner, constants) 
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xe92493a1, Offset: 0xbaa8
 // Size: 0x72
 function private strategypathinghasunreachablepath(planner, constants) {
@@ -2259,7 +2261,7 @@ function private strategypathinghasunreachablepath(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xbc4b86c9, Offset: 0xbb28
 // Size: 0x72
 function private strategypathingaddassaultgameobjectsparam(planner, constants) {
@@ -2269,7 +2271,7 @@ function private strategypathingaddassaultgameobjectsparam(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x896d087a, Offset: 0xbba8
 // Size: 0x72
 function private strategypathingadddefendgameobjectsparam(planner, constants) {
@@ -2279,7 +2281,7 @@ function private strategypathingadddefendgameobjectsparam(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x3293fa65, Offset: 0xbc28
 // Size: 0x72
 function private strategypathingaddobjectivesparam(planner, constants) {
@@ -2289,7 +2291,7 @@ function private strategypathingaddobjectivesparam(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xf2ee7744, Offset: 0xbca8
 // Size: 0xc2
 function private strategypathingaddsquadbotsparam(planner, constants) {
@@ -2301,7 +2303,7 @@ function private strategypathingaddsquadbotsparam(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xa01d8bba, Offset: 0xbd78
 // Size: 0x19a
 function private strategypathingaddsquadescortsparam(planner, constants) {
@@ -2320,7 +2322,7 @@ function private strategypathingaddsquadescortsparam(planner, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xde41e2f6, Offset: 0xbf20
 // Size: 0x142
 function private strategypathingaddtosquadcalculatedgameobjectsparam(planner, constants) {
@@ -2339,7 +2341,7 @@ function private strategypathingaddtosquadcalculatedgameobjectsparam(planner, co
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xdd4b4596, Offset: 0xc070
 // Size: 0x142
 function private strategypathingaddtosquadcalculatedobjectivesparam(planner, constants) {
@@ -2358,7 +2360,7 @@ function private strategypathingaddtosquadcalculatedobjectivesparam(planner, con
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xeca1e02c, Offset: 0xc1c0
 // Size: 0x332
 function private strategypathingcalculatepathtorequestedpointsparam(planner, constants) {
@@ -2397,7 +2399,7 @@ function private strategypathingcalculatepathtorequestedpointsparam(planner, con
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x49cc39a7, Offset: 0xc500
 // Size: 0x1c2
 function private strategypathingcalculategameobjectrequestpointsparam(planner, constants) {
@@ -2419,7 +2421,7 @@ function private strategypathingcalculategameobjectrequestpointsparam(planner, c
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x6b4a2b41, Offset: 0xc6d0
 // Size: 0x1c2
 function private strategypathingcalculateobjectiverequestpointsparam(planner, constants) {
@@ -2441,7 +2443,7 @@ function private strategypathingcalculateobjectiverequestpointsparam(planner, co
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x7c849866, Offset: 0xc8a0
 // Size: 0x1f2
 function private strategypathingcalculateobjectivepathabilityparam(planner, constants) {
@@ -2467,7 +2469,7 @@ function private strategypathingcalculateobjectivepathabilityparam(planner, cons
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xfdbe9524, Offset: 0xcaa0
 // Size: 0x1f2
 function private strategypathingcalculategameobjectpathabilityparam(planner, constants) {
@@ -2493,7 +2495,7 @@ function private strategypathingcalculategameobjectpathabilityparam(planner, con
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x6261aad, Offset: 0xcca0
 // Size: 0x166
 function private function_61d2b8ef(commander, squad, constants) {
@@ -2512,7 +2514,7 @@ function private function_61d2b8ef(commander, squad, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x91fad4cc, Offset: 0xce10
 // Size: 0x116
 function private utilityscorebotpresence(commander, squad, constants) {
@@ -2530,7 +2532,7 @@ function private utilityscorebotpresence(commander, squad, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xfdb247bc, Offset: 0xcf30
 // Size: 0x18e
 function private function_de2b04c0(commander, squad, constants) {
@@ -2555,7 +2557,7 @@ function private function_de2b04c0(commander, squad, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x587c1973, Offset: 0xd0c8
 // Size: 0x1fe
 function private utilityscoreescortpathing(commander, squad, constants) {
@@ -2588,7 +2590,7 @@ function private utilityscoreescortpathing(commander, squad, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x9286fa76, Offset: 0xd2d0
 // Size: 0xae
 function utilityscoreforcegoal(commander, squad, constants) {
@@ -2602,7 +2604,7 @@ function utilityscoreforcegoal(commander, squad, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x50bfd1, Offset: 0xd388
 // Size: 0x172
 function private utilityscoregameobjectpathing(commander, squad, constants) {
@@ -2623,7 +2625,7 @@ function private utilityscoregameobjectpathing(commander, squad, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x837ca704, Offset: 0xd508
 // Size: 0x42a
 function private utilityscoregameobjectpriority(commander, squad, constants) {
@@ -2677,7 +2679,7 @@ function private utilityscoregameobjectpriority(commander, squad, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xe2598487, Offset: 0xd940
 // Size: 0x132
 function private utilityscoregameobjectsvalidity(commander, squad, constants) {
@@ -2695,7 +2697,7 @@ function private utilityscoregameobjectsvalidity(commander, squad, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x7ec81742, Offset: 0xda80
 // Size: 0x5a
 function private function_2985faa1(commander, squad, constants) {
@@ -2707,7 +2709,7 @@ function private function_2985faa1(commander, squad, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x49a1c09, Offset: 0xdae8
 // Size: 0x242
 function private utilityscoreprogressthrottling(commander, squad, constants) {
@@ -2741,7 +2743,7 @@ function private utilityscoreprogressthrottling(commander, squad, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x1e110715, Offset: 0xdd38
 // Size: 0x21a
 function private function_a65b2be5(commander, squad, constants) {
@@ -2769,7 +2771,7 @@ function private function_a65b2be5(commander, squad, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x8d88a504, Offset: 0xdf60
 // Size: 0x10e
 function private function_f389ef61(commander, squad, constants) {
@@ -2788,7 +2790,7 @@ function private function_f389ef61(commander, squad, constants) {
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x98d0ddd, Offset: 0xe078
 // Size: 0x12e
 function private utilityscoreviableescort(commander, squad, constants) {

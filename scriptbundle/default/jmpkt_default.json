@@ -2,6 +2,6 @@
     "wingsuit": "wing_default",
     "name": "jmpkt_default",
     "displayname": "#menu/default",
-    "var_4fa85a25": "dfxt_default",
+    "hash_4fa85a25": "dfxt_default",
     "parachute": "para_default"
 }

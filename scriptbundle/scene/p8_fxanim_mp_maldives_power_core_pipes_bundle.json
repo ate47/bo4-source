@@ -1,0 +1,43 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_249316a29f849acf",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_2b7c75942b28ab8a",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_cce897ddeb298c8",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_1265e91f3f6caafb",
+            "type": "prop",
+            "name": "prop 2"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_maldives_power_core_pipes_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

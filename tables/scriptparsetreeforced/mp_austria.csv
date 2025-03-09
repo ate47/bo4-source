@@ -1,0 +1,5 @@
+vm,name
+server,#scripts/mp/mp_austria_scripted.gsc
+server,#scripts/mp/mp_maps_lighting.gsc
+client,#scripts/mp/mp_austria_scripted.csc
+client,#scripts/mp/mp_maps_lighting.csc

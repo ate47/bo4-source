@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace dart/dart
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1435a83c, Offset: 0x1c8
 // Size: 0x174
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace dart/dart
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xda71752c, Offset: 0x348
 // Size: 0x7c
 function update_ammo(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -39,7 +39,7 @@ function update_ammo(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 }
 
 // Namespace dart/dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdc5746fb, Offset: 0x3d0
 // Size: 0x1e
 function spawned(localclientnum) {
@@ -47,7 +47,7 @@ function spawned(localclientnum) {
 }
 
 // Namespace dart/dart
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf6878800, Offset: 0x3f8
 // Size: 0x94
 function fog_bank_3_callback(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

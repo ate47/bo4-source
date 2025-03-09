@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfde3d248, Offset: 0x268
 // Size: 0x50c
 function __init__() {
@@ -49,7 +49,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x944c5d12, Offset: 0x780
 // Size: 0x1a0
 function function_7157628d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -75,7 +75,7 @@ function function_7157628d(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd6724e6a, Offset: 0x928
 // Size: 0x74
 function function_75a608a3(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -83,7 +83,7 @@ function function_75a608a3(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x49e7714c, Offset: 0x9a8
 // Size: 0x1a0
 function function_bec8c33(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -109,7 +109,7 @@ function function_bec8c33(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf7e9a3c6, Offset: 0xb50
 // Size: 0xfc
 function function_b6e5e889(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -132,7 +132,7 @@ function function_b6e5e889(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbf8b6f0b, Offset: 0xc58
 // Size: 0x2f2
 function function_2509f629(localclientnum, var_77e629d2 = 1) {
@@ -159,7 +159,7 @@ function function_2509f629(localclientnum, var_77e629d2 = 1) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x84f29bb9, Offset: 0xf58
 // Size: 0xc6
 function function_a7ca9a9f(localclientnum) {
@@ -179,7 +179,7 @@ function function_a7ca9a9f(localclientnum) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa69dab51, Offset: 0x1028
 // Size: 0x11c
 function function_fc035b41(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -195,7 +195,7 @@ function function_fc035b41(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x18cf8326, Offset: 0x1150
 // Size: 0x33e
 function function_8635aaf9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -244,7 +244,7 @@ function function_8635aaf9(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb64afaf6, Offset: 0x1498
 // Size: 0x1f6
 function function_59a204ea(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -280,7 +280,7 @@ function function_59a204ea(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb13b3ae7, Offset: 0x1698
 // Size: 0x1c4
 function function_98530904(localclientnum, b_charged = 0) {

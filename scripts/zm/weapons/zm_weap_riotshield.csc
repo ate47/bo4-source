@@ -9,15 +9,15 @@
 
 // Namespace zm_equip_shield/zm_weap_riotshield
 // Params 0, eflags: 0x2
-// Checksum 0xd57813f7, Offset: 0x148
+// Checksum 0x382cb82, Offset: 0x148
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zm_equip_shield", &__init__, undefined, undefined);
 }
 
 // Namespace zm_equip_shield/zm_weap_riotshield
-// Params 0, eflags: 0x1 linked
-// Checksum 0x551f4b43, Offset: 0x190
+// Params 0, eflags: 0x0
+// Checksum 0x114a81e, Offset: 0x190
 // Size: 0xec
 function __init__() {
     callback::on_spawned(&player_on_spawned);
@@ -27,16 +27,16 @@ function __init__() {
 }
 
 // Namespace zm_equip_shield/zm_weap_riotshield
-// Params 1, eflags: 0x1 linked
-// Checksum 0x9297f7e0, Offset: 0x288
+// Params 1, eflags: 0x0
+// Checksum 0x9a481a23, Offset: 0x288
 // Size: 0x24
 function player_on_spawned(localclientnum) {
     self thread watch_weapon_changes(localclientnum);
 }
 
 // Namespace zm_equip_shield/zm_weap_riotshield
-// Params 1, eflags: 0x1 linked
-// Checksum 0xb4ca75a5, Offset: 0x2b8
+// Params 1, eflags: 0x0
+// Checksum 0x3022c90c, Offset: 0x2b8
 // Size: 0x132
 function watch_weapon_changes(localclientnum) {
     self endon(#"death");
@@ -59,8 +59,8 @@ function watch_weapon_changes(localclientnum) {
 }
 
 // Namespace zm_equip_shield/zm_weap_riotshield
-// Params 7, eflags: 0x1 linked
-// Checksum 0xd3c10536, Offset: 0x3f8
+// Params 7, eflags: 0x0
+// Checksum 0x81434cc, Offset: 0x3f8
 // Size: 0x64
 function zm_shield_damage_rumble(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
@@ -69,8 +69,8 @@ function zm_shield_damage_rumble(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace zm_equip_shield/zm_weap_riotshield
-// Params 7, eflags: 0x1 linked
-// Checksum 0x5c91b346, Offset: 0x468
+// Params 7, eflags: 0x0
+// Checksum 0x7b190cec, Offset: 0x468
 // Size: 0x64
 function zm_shield_break_rumble(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {

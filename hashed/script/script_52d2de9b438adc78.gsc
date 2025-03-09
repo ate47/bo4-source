@@ -9,7 +9,7 @@
 #namespace ir_strobe;
 
 // Namespace ir_strobe/namespace_f0840611
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x94d2bf0e, Offset: 0x148
 // Size: 0x54
 function init_shared() {
@@ -20,7 +20,7 @@ function init_shared() {
 }
 
 // Namespace ir_strobe/namespace_f0840611
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x94caf0e3, Offset: 0x1a8
 // Size: 0x82
 function function_8806675d(ksweap, activatefunc) {
@@ -34,7 +34,7 @@ function function_8806675d(ksweap, activatefunc) {
 }
 
 // Namespace ir_strobe/namespace_f0840611
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x58d741de, Offset: 0x238
 // Size: 0x8e
 function function_c5d20b5c(owner, context, position) {
@@ -45,7 +45,7 @@ function function_c5d20b5c(owner, context, position) {
 }
 
 // Namespace ir_strobe/namespace_f0840611
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc36a7702, Offset: 0x2d0
 // Size: 0x244
 function function_f625256f(killstreak_id, context) {
@@ -87,7 +87,7 @@ function function_f625256f(killstreak_id, context) {
 }
 
 // Namespace ir_strobe/namespace_f0840611
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf505817a, Offset: 0x520
 // Size: 0x122
 function cleanup(context, player) {
@@ -110,7 +110,7 @@ function cleanup(context, player) {
 }
 
 // Namespace ir_strobe/namespace_f0840611
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe357c924, Offset: 0x650
 // Size: 0xc4
 function markercleanupthread(context) {
@@ -123,7 +123,7 @@ function markercleanupthread(context) {
 }
 
 // Namespace ir_strobe/namespace_f0840611
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5d7d5024, Offset: 0x720
 // Size: 0x6b6
 function markerupdatethread(context) {
@@ -164,7 +164,7 @@ function markerupdatethread(context) {
         } else {
             weapon = getweapon("ir_strobe");
             eye = player getweaponmuzzlepoint();
-            results = function_e6ba3ec9(weapon, eye, angles, player);
+            results = projectiletrace(weapon, eye, angles, player);
         }
         markermodel.origin = results[#"position"] + (0, 0, 6);
         node = helicopter::getvalidrandomstartnode(markermodel.origin);
@@ -205,7 +205,7 @@ function markerupdatethread(context) {
 }
 
 // Namespace ir_strobe/namespace_f0840611
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x84cbe00e, Offset: 0xde0
 // Size: 0x594
 function function_ef6c4a46(killstreak_id, trigger_event, supplydropweapon, context) {
@@ -292,7 +292,7 @@ function function_ef6c4a46(killstreak_id, trigger_event, supplydropweapon, conte
 }
 
 // Namespace ir_strobe/namespace_f0840611
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd4b32bb8, Offset: 0x1380
 // Size: 0xce
 function cleanupwatcherondeath(killstreak_id, var_b57ab85c) {
@@ -303,7 +303,7 @@ function cleanupwatcherondeath(killstreak_id, var_b57ab85c) {
 }
 
 // Namespace ir_strobe/namespace_f0840611
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7c67c309, Offset: 0x1458
 // Size: 0x8c
 function checkforemp() {
@@ -341,7 +341,7 @@ function event_handler[grenade_fire] function_cb63f633(eventstruct) {
 }
 
 // Namespace ir_strobe/namespace_f0840611
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb8cc6848, Offset: 0x15f8
 // Size: 0x10c
 function function_d5ca3f62(player) {
@@ -365,7 +365,7 @@ function function_d5ca3f62(player) {
 }
 
 // Namespace ir_strobe/namespace_f0840611
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x1503748f, Offset: 0x1710
 // Size: 0xe4
 function private function_2cbae477(var_babebdbc = #"weapon/fx8_equip_swat_smk_signal", var_76361c1a = "tag_flash") {
@@ -389,7 +389,7 @@ function function_284b1d4c(origin, model, timeout = undefined, var_babebdbc = un
 }
 
 // Namespace ir_strobe/namespace_f0840611
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd9c2874, Offset: 0x18d8
 // Size: 0xa4
 function private function_f61c0c1(timeout) {

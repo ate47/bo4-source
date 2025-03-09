@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_aat_frostbite/zm_aat_frostbite
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x392862e6, Offset: 0x200
 // Size: 0x1c2
 function __init__() {
@@ -32,7 +32,7 @@ function __init__() {
 }
 
 // Namespace zm_aat_frostbite/zm_aat_frostbite
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x719853ad, Offset: 0x3d0
 // Size: 0x174
 function function_bad6b477(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -55,7 +55,7 @@ function function_bad6b477(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_aat_frostbite/zm_aat_frostbite
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x41ae1fbf, Offset: 0x550
 // Size: 0x1f8
 function function_d84b013b(localclientnum, b_freeze) {
@@ -94,7 +94,7 @@ function function_d84b013b(localclientnum, b_freeze) {
 }
 
 // Namespace zm_aat_frostbite/zm_aat_frostbite
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x680fda49, Offset: 0x750
 // Size: 0x74
 function function_b8cda358(localclientnum) {
@@ -108,7 +108,7 @@ function function_b8cda358(localclientnum) {
 }
 
 // Namespace zm_aat_frostbite/zm_aat_frostbite
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x836279da, Offset: 0x7d0
 // Size: 0xe4
 function aat_frostbite_explosion(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

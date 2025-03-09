@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace mp_cairo_scripted/mp_cairo_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8bdf5521, Offset: 0x4c8
 // Size: 0x24
 function __init__() {
@@ -27,11 +27,11 @@ function __init__() {
 }
 
 // Namespace mp_cairo_scripted/mp_cairo_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa99aaa28, Offset: 0x4f8
 // Size: 0x120
 function __main__() {
-    level.var_f3e25805 = &function_c3c859e1;
+    level.var_f3e25805 = &prematch_init;
     level thread function_34fc666e();
     array::run_all(getentarray("dynamic_car_clip", "targetname"), &disconnectpaths);
     foreach (node in getnodearray("dynamic_car_traverse", "targetname")) {
@@ -42,7 +42,7 @@ function __main__() {
 }
 
 // Namespace mp_cairo_scripted/mp_cairo_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x68ccc71c, Offset: 0x620
 // Size: 0x54
 function on_game_playing() {
@@ -50,20 +50,20 @@ function on_game_playing() {
 }
 
 // Namespace mp_cairo_scripted/mp_cairo_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6f99aee3, Offset: 0x680
 // Size: 0x56
-function function_c3c859e1() {
+function prematch_init() {
     if (util::isfirstround()) {
         if (getgametypesetting(#"allowmapscripting")) {
-            level thread scene::play(#"hash_f73ff215479cc55");
+            level thread scene::play(#"p8_fxanim_mp_havana_ac130_drop_bundle");
         }
         return;
     }
 }
 
 // Namespace mp_cairo_scripted/mp_cairo_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x41953591, Offset: 0x6e0
 // Size: 0xf4
 function function_34fc666e() {
@@ -75,7 +75,7 @@ function function_34fc666e() {
     }
     if (util::isfirstround()) {
         if (getgametypesetting(#"allowmapscripting")) {
-            level scene::play(#"hash_f73ff215479cc55");
+            level scene::play(#"p8_fxanim_mp_havana_ac130_drop_bundle");
         }
     }
     level flag::wait_till("first_player_spawned");
@@ -84,12 +84,12 @@ function function_34fc666e() {
 }
 
 // Namespace mp_cairo_scripted/mp_cairo_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6c6d540a, Offset: 0x7e0
 // Size: 0x408
 function function_69cdac99() {
     level endon(#"game_ended");
-    var_fc58d99c = undefined;
+    next_line = undefined;
     last_line = undefined;
     var_c7ecf728 = [];
     var_c7ecf728[0] = "vox_cuba_propaganda_radio_0";
@@ -118,21 +118,21 @@ function function_69cdac99() {
     var_c7ecf728[23] = "vox_usbr_us_propaganda_radio_7";
     var_c7ecf728[24] = "vox_usbr_us_propaganda_radio_8";
     var_c7ecf728[25] = "vox_usbr_us_propaganda_radio_9";
-    var_df74694e = array((2043, -787, 1), (2344, 599, 150), (865, 878, 216), (-1775, -76, 219));
-    var_e7f143a4 = array((1486, 189, 64), (-1802, 1706, 93));
+    tv_locs = array((2043, -787, 1), (2344, 599, 150), (865, 878, 216), (-1775, -76, 219));
+    radio_locs = array((1486, 189, 64), (-1802, 1706, 93));
     while (true) {
         do {
-            var_fc58d99c = randomintrange(0, 26);
+            next_line = randomintrange(0, 26);
             waitframe(1);
-        } while (var_fc58d99c === last_line);
-        last_line = var_fc58d99c;
-        if (isdefined(var_c7ecf728[var_fc58d99c])) {
-            var_34f4feb8 = var_df74694e;
-            if (var_fc58d99c >= 14) {
-                var_34f4feb8 = var_e7f143a4;
+        } while (next_line === last_line);
+        last_line = next_line;
+        if (isdefined(var_c7ecf728[next_line])) {
+            line_locs = tv_locs;
+            if (next_line >= 14) {
+                line_locs = radio_locs;
             }
-            foreach (var_cb4f5d9 in var_34f4feb8) {
-                playsoundatposition(var_c7ecf728[var_fc58d99c], var_cb4f5d9);
+            foreach (line_pos in line_locs) {
+                playsoundatposition(var_c7ecf728[next_line], line_pos);
             }
             wait randomfloatrange(34, 65);
         }

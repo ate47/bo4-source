@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_escape_magicbox/zm_escape_magicbox
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x48bd41f9, Offset: 0x158
 // Size: 0x6e
 function __init__() {
@@ -32,7 +32,7 @@ function __init__() {
 }
 
 // Namespace zm_escape_magicbox/zm_escape_magicbox
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2b48dc2, Offset: 0x1d0
 // Size: 0x36
 function __main__() {
@@ -41,7 +41,7 @@ function __main__() {
 }
 
 // Namespace zm_escape_magicbox/zm_escape_magicbox
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x48fc408b, Offset: 0x210
 // Size: 0x258
 function custom_joker_movement() {
@@ -72,7 +72,7 @@ function custom_joker_movement() {
 }
 
 // Namespace zm_escape_magicbox/zm_escape_magicbox
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x70ad379c, Offset: 0x470
 // Size: 0xac
 function watch_for_lock() {
@@ -87,7 +87,7 @@ function watch_for_lock() {
 }
 
 // Namespace zm_escape_magicbox/zm_escape_magicbox
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe545cc27, Offset: 0x528
 // Size: 0xfc
 function clean_up_locked_box() {
@@ -108,7 +108,7 @@ function clean_up_locked_box() {
 }
 
 // Namespace zm_escape_magicbox/zm_escape_magicbox
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x53210b8, Offset: 0x630
 // Size: 0xce
 function magic_box_locks() {
@@ -124,7 +124,7 @@ function magic_box_locks() {
 }
 
 // Namespace zm_escape_magicbox/zm_escape_magicbox
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9e084125, Offset: 0x708
 // Size: 0xe6
 function magic_box_unlocks() {
@@ -141,7 +141,7 @@ function magic_box_unlocks() {
 }
 
 // Namespace zm_escape_magicbox/zm_escape_magicbox
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8e520bb8, Offset: 0x7f8
 // Size: 0xc2
 function set_locked_magicbox_state(state) {

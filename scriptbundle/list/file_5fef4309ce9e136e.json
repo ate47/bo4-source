@@ -1,9 +1,0 @@
-{
-    "name": "#hash_5fef4309ce9e136e",
-    "assetType": "gamesettingoption",
-    "assets": [
-        "#tr_longburst_restriction",
-        "#tr_midburst_restriction",
-        "#tr_powersemi_restriction"
-    ]
-}

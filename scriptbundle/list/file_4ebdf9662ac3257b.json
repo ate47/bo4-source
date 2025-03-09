@@ -1,9 +1,0 @@
-{
-    "name": "#hash_4ebdf9662ac3257b",
-    "assetType": "gamesettingoptioncategory",
-    "assets": [
-        "#gsoc_zm_health",
-        "#gsoc_zm_points",
-        "#gsoc_zm_laststand"
-    ]
-}

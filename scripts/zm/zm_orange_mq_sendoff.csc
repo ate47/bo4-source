@@ -4,7 +4,7 @@
 #namespace zm_orange_mq_sendoff;
 
 // Namespace zm_orange_mq_sendoff/zm_orange_mq_sendoff
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfceb41b0, Offset: 0x98
 // Size: 0x84
 function preload() {
@@ -13,7 +13,7 @@ function preload() {
 }
 
 // Namespace zm_orange_mq_sendoff/zm_orange_mq_sendoff
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc90f837b, Offset: 0x128
 // Size: 0x74
 function function_e5ecfa90(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

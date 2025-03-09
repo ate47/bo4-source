@@ -1,13 +1,13 @@
 {
     "description": "#hash_1cfc6eacdde708e8",
-    "var_60fcfffa": "#menu/on",
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#menu/on",
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "show_subtitles",
     "displayname": "#hash_5edefd3349994820",
-    "var_66faec87": 10,
+    "hash_66faec87": 10,
     "statname": "cg_subtitles",
-    "var_82c732a7": 1,
-    "var_b7401319": "#menu/off"
+    "isenableddisabled": 1,
+    "hash_b7401319": "#menu/off"
 }

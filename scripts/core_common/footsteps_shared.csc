@@ -1,7 +1,7 @@
 #namespace footsteps;
 
 // Namespace footsteps/footsteps_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3cf6d2ca, Offset: 0x68
 // Size: 0x64
 function missing_ai_footstep_callback() {
@@ -27,7 +27,7 @@ function registeraitypefootstepcb(archetype, callback) {
 }
 
 // Namespace footsteps/footsteps_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x4d61e290, Offset: 0x170
 // Size: 0xe2
 function playaifootstep(client_num, pos, surface, notetrack, bone) {

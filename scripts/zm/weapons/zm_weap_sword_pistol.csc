@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2be68f13, Offset: 0x1a0
 // Size: 0x632
 function __init__() {
@@ -44,7 +44,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf5f04db3, Offset: 0x7e0
 // Size: 0x94
 function function_8e1552b1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -53,7 +53,7 @@ function function_8e1552b1(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x52a243b6, Offset: 0x880
 // Size: 0x94
 function function_6831ee4b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -62,7 +62,7 @@ function function_6831ee4b(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x86d1f4b7, Offset: 0x920
 // Size: 0xa4
 function dragon_roar_impact(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -71,7 +71,7 @@ function dragon_roar_impact(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf629018e, Offset: 0x9d0
 // Size: 0x94
 function dragon_roar_explosion(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -80,7 +80,7 @@ function dragon_roar_explosion(localclientnum, oldval, newval, bnewent, binitial
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x39a7a21c, Offset: 0xa70
 // Size: 0xd0
 function viper_bite_projectile(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -98,7 +98,7 @@ function viper_bite_projectile(localclientnum, oldval, newval, bnewent, binitial
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa615379, Offset: 0xb48
 // Size: 0xa4
 function viper_bite_projectile_impact(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -107,7 +107,7 @@ function viper_bite_projectile_impact(localclientnum, oldval, newval, bnewent, b
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe6291829, Offset: 0xbf8
 // Size: 0x1b4
 function viper_bite_bitten_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -131,7 +131,7 @@ function viper_bite_bitten_fx(localclientnum, oldval, newval, bnewent, binitials
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe891e147, Offset: 0xdb8
 // Size: 0xfa
 function swordpistol_rumble(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {

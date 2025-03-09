@@ -20,12 +20,12 @@ function event_handler[level_init] main(eventstruct) {
     load::main();
     compass::setupminimap("");
     level.cleandepositpoints = array((1663, -2262, 11.25), (-506, -3186, 14), (3888, -32, 39), (71, -1169, 14), (3398, -2146, 7));
-    level.var_f3e25805 = &function_c3c859e1;
+    level.var_f3e25805 = &prematch_init;
     level thread function_34fc666e();
 }
 
 // Namespace mp_embassy/mp_embassy
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf20670f1, Offset: 0x2c0
 // Size: 0x19c
 function function_34fc666e() {
@@ -34,33 +34,33 @@ function function_34fc666e() {
         while (!draft::function_d255fb3e()) {
             waitframe(1);
         }
-        level thread scene::play(#"hash_127ce0c6d4b4f2aa");
-        level thread scene::play(#"hash_127cdfc6d4b4f0f7");
+        level thread scene::play(#"aib_t8_vign_cust_emb_civs_running_01");
+        level thread scene::play(#"aib_t8_vign_cust_emb_civs_running_02");
         return;
     }
-    var_a79220ea = getent("spawn_flavor_apc_explode", "targetname");
-    var_a79220ea setmodel("veh_t8_mil_apc_macv_dead_no_turret_no_armor_mp_grey");
-    scene::skipto_end(#"hash_ebe25ca358c0cba");
+    mdl_apc = getent("spawn_flavor_apc_explode", "targetname");
+    mdl_apc setmodel("veh_t8_mil_apc_macv_dead_no_turret_no_armor_mp_grey");
+    scene::skipto_end(#"p8_fxanim_mp_emb_apc_arrive_bundle");
     level flag::wait_till("first_player_spawned");
     array::delete_all(getentarray("sun_block", "targetname"));
     exploder::exploder("fxexp_embassy_aftermath");
 }
 
 // Namespace mp_embassy/mp_embassy
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb11b092e, Offset: 0x468
 // Size: 0x19e
-function function_c3c859e1() {
+function prematch_init() {
     array::delete_all(getentarray("sun_block", "targetname"));
-    scene::stop(#"hash_127ce0c6d4b4f2aa", 1);
-    scene::stop(#"hash_127cdfc6d4b4f0f7", 1);
+    scene::stop(#"aib_t8_vign_cust_emb_civs_running_01", 1);
+    scene::stop(#"aib_t8_vign_cust_emb_civs_running_02", 1);
     if (util::isfirstround() && getgametypesetting(#"allowmapscripting")) {
         exploder::exploder("fxexp_embassy_explosion");
-        level util::delay(4, "game_ended", &scene::play, #"hash_ebe25ca358c0cba");
-        level thread scene::play(#"hash_1971c36184b14ef8");
-        var_a79220ea = getent("spawn_flavor_apc_explode", "targetname");
-        var_a79220ea setmodel("veh_t8_mil_apc_macv_dead_no_turret_no_armor_mp_grey");
-        var_a79220ea clientfield::increment("spawn_flavor_apc_explosion");
+        level util::delay(4, "game_ended", &scene::play, #"p8_fxanim_mp_emb_apc_arrive_bundle");
+        level thread scene::play(#"p8_fxanim_mp_emb_balloons_fly_bundle");
+        mdl_apc = getent("spawn_flavor_apc_explode", "targetname");
+        mdl_apc setmodel("veh_t8_mil_apc_macv_dead_no_turret_no_armor_mp_grey");
+        mdl_apc clientfield::increment("spawn_flavor_apc_explosion");
         return;
     }
 }

@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_42cba673/planner_zm_generic_commander
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x420d61, Offset: 0xe8
 // Size: 0x1c
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace namespace_42cba673/planner_zm_generic_commander
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdd1a2186, Offset: 0x110
 // Size: 0x3a
 function createcommanderplanner(team) {
@@ -34,7 +34,7 @@ function createcommanderplanner(team) {
 }
 
 // Namespace namespace_42cba673/planner_zm_generic_commander
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x50c2ef89, Offset: 0x158
 // Size: 0x20c
 function createcommander() {

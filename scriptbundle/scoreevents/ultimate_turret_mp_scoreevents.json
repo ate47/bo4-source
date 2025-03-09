@@ -1,8 +1,8 @@
 {
-    "var_2ecceeab": "#automated_turret_kill",
+    "hash_2ecceeab": "#automated_turret_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
     "name": "ultimate_turret_mp_scoreevents",
-    "var_e1b418c1": "ability"
+    "customsettingstype": "ability"
 }

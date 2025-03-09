@@ -4,7 +4,7 @@
 #namespace zm_escape_util;
 
 // Namespace zm_escape_util/zm_escape_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcdf18d4a, Offset: 0xb8
 // Size: 0x192
 function init_clientfields() {
@@ -16,7 +16,7 @@ function init_clientfields() {
 }
 
 // Namespace zm_escape_util/zm_escape_util
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3eea0193, Offset: 0x258
 // Size: 0x176
 function function_6799fbc4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -40,7 +40,7 @@ function function_6799fbc4(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape_util/zm_escape_util
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x302271c5, Offset: 0x3d8
 // Size: 0x36
 function private function_c06aed2(localclientnum) {
@@ -49,7 +49,7 @@ function private function_c06aed2(localclientnum) {
 }
 
 // Namespace zm_escape_util/zm_escape_util
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd0fd499c, Offset: 0x418
 // Size: 0x36
 function private function_59cd4ca1(localclientnum) {
@@ -58,7 +58,7 @@ function private function_59cd4ca1(localclientnum) {
 }
 
 // Namespace zm_escape_util/zm_escape_util
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x334d2394, Offset: 0x458
 // Size: 0x112
 function function_e2c78db9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -77,7 +77,7 @@ function function_e2c78db9(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape_util/zm_escape_util
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x821d1fe3, Offset: 0x578
 // Size: 0xba
 function function_41f46060(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -91,7 +91,7 @@ function function_41f46060(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape_util/zm_escape_util
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb6f6ca37, Offset: 0x640
 // Size: 0x7c
 function function_b334fc71(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

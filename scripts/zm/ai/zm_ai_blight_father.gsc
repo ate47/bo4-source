@@ -56,15 +56,15 @@
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
 // Params 0, eflags: 0x2
-// Checksum 0x9e5cb69b, Offset: 0xbc8
+// Checksum 0xec0e93e2, Offset: 0xbc8
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zm_ai_blight_father", &__init__, undefined, undefined);
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x1 linked
-// Checksum 0xdeb49cf4, Offset: 0xc10
+// Params 0, eflags: 0x0
+// Checksum 0xa94a217e, Offset: 0xc10
 // Size: 0x9ca
 function __init__() {
     registerbehaviorscriptfunctions();
@@ -133,8 +133,8 @@ function __init__() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 4, eflags: 0x5 linked
-// Checksum 0x8a8f0add, Offset: 0x15e8
+// Params 4, eflags: 0x4
+// Checksum 0x2711dd32, Offset: 0x15e8
 // Size: 0x7c
 function private function_3e8300e9(entity, attribute, oldvalue, value) {
     if (value == "low") {
@@ -145,15 +145,15 @@ function private function_3e8300e9(entity, attribute, oldvalue, value) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x5 linked
-// Checksum 0xe818c0a8, Offset: 0x1670
+// Params 0, eflags: 0x4
+// Checksum 0x47cb3c62, Offset: 0x1670
 // Size: 0x12
 function private on_player_spawned() {
     self.grapple_tag = "j_mainroot";
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x80f724d1, Offset: 0x1690
 // Size: 0x4
 function private function_ce1b7f67() {
@@ -161,8 +161,8 @@ function private function_ce1b7f67() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x5 linked
-// Checksum 0xe52df68, Offset: 0x16a0
+// Params 0, eflags: 0x4
+// Checksum 0x4ad11d01, Offset: 0x16a0
 // Size: 0x668
 function private function_7c52f40() {
     self endon(#"death");
@@ -237,14 +237,14 @@ function private function_7c52f40() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x5 linked
-// Checksum 0xb7c0b537, Offset: 0x1d10
+// Params 0, eflags: 0x4
+// Checksum 0xc2df1c12, Offset: 0x1d10
 // Size: 0xfc
 function private function_95a6fbef() {
     self.maxhealth = int(self zm_ai_utility::function_8d44707e(1, self._starting_round_number) * (isdefined(level.var_9503486c) ? level.var_9503486c : 1));
     self.health = self.maxhealth;
     namespace_81245006::initweakpoints(self, #"c_t8_zmb_blightfather_weakpoint_def");
-    zm_score::function_e5d6e6dd(#"blight_father", self ai::function_9139c839().var_bd058b07);
+    zm_score::function_e5d6e6dd(#"blight_father", self ai::function_9139c839().blightfatherscore);
     self zm_score::function_82732ced();
     /#
         function_f8411b4d(self);
@@ -252,8 +252,8 @@ function private function_95a6fbef() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xbe595e0a, Offset: 0x1e18
+// Params 1, eflags: 0x4
+// Checksum 0xcccab425, Offset: 0x1e18
 // Size: 0xdc
 function private function_36b05ed0(entity) {
     entity hidepart("tag_tongue_grab", "c_t8_zmb_blightfather_tongue2", 1);
@@ -271,8 +271,8 @@ function private function_36b05ed0(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x32562475, Offset: 0x1f00
+// Params 1, eflags: 0x4
+// Checksum 0xf8e4469d, Offset: 0x1f00
 // Size: 0xdc
 function private killed_callback(e_attacker) {
     if (self.archetype != #"blight_father") {
@@ -288,8 +288,8 @@ function private killed_callback(e_attacker) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xbc8ef27, Offset: 0x1fe8
+// Params 1, eflags: 0x4
+// Checksum 0xaee3bbc0, Offset: 0x1fe8
 // Size: 0x3c
 function private function_7bef9c3c(params) {
     if (self.archetype !== #"blight_father") {
@@ -299,16 +299,16 @@ function private function_7bef9c3c(params) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x1 linked
-// Checksum 0xc13c5b91, Offset: 0x2030
+// Params 0, eflags: 0x0
+// Checksum 0x41434fe3, Offset: 0x2030
 // Size: 0x12
 function function_ee833cd6() {
     self.completed_emerging_into_playable_area = 1;
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x1 linked
-// Checksum 0xbe680f8e, Offset: 0x2050
+// Params 0, eflags: 0x0
+// Checksum 0x5392cfc8, Offset: 0x2050
 // Size: 0x288
 function function_2628e1c2() {
     if (!isdefined(level.var_801efcc7)) {
@@ -350,8 +350,8 @@ function function_2628e1c2() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x5 linked
-// Checksum 0x27d6a808, Offset: 0x22e0
+// Params 0, eflags: 0x4
+// Checksum 0x19b8d3a0, Offset: 0x22e0
 // Size: 0x1174
 function private registerbehaviorscriptfunctions() {
     assert(isscriptfunctionptr(&function_2784f3ff));
@@ -441,8 +441,8 @@ function private registerbehaviorscriptfunctions() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x1 linked
-// Checksum 0xa4409f8a, Offset: 0x3460
+// Params 1, eflags: 0x0
+// Checksum 0x5f91bd4b, Offset: 0x3460
 // Size: 0x1c4
 function function_b78adc65(entity) {
     if (entity isragdoll()) {
@@ -466,8 +466,8 @@ function function_b78adc65(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x5 linked
-// Checksum 0x72c9ae04, Offset: 0x3630
+// Params 0, eflags: 0x4
+// Checksum 0xef3ff63b, Offset: 0x3630
 // Size: 0x4c
 function private function_529b7fb9() {
     self endon(#"death");
@@ -478,8 +478,8 @@ function private function_529b7fb9() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x1 linked
-// Checksum 0x91f153e8, Offset: 0x3688
+// Params 0, eflags: 0x0
+// Checksum 0x48809e39, Offset: 0x3688
 // Size: 0x8e
 function function_4589bd24() {
     if (isdefined(self.favoriteenemy)) {
@@ -493,8 +493,8 @@ function function_4589bd24() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x1 linked
-// Checksum 0xf03974d5, Offset: 0x3720
+// Params 0, eflags: 0x0
+// Checksum 0xf0493860, Offset: 0x3720
 // Size: 0x18e
 function function_753b4884() {
     if (zm_lockdown_util::function_7bfa8895(self)) {
@@ -512,8 +512,8 @@ function function_753b4884() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x88bac70d, Offset: 0x38b8
+// Params 1, eflags: 0x4
+// Checksum 0xe3a50b4a, Offset: 0x38b8
 // Size: 0x12a
 function private function_f2914d65(entity) {
     enemies = getaiarchetypearray(#"zombie");
@@ -526,8 +526,8 @@ function private function_f2914d65(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 2, eflags: 0x5 linked
-// Checksum 0x8345e072, Offset: 0x39f0
+// Params 2, eflags: 0x4
+// Checksum 0xa2f497f1, Offset: 0x39f0
 // Size: 0x1a8
 function private function_3d752709(enemy, target) {
     if (isdefined(enemy.knockdown) && enemy.knockdown) {
@@ -553,8 +553,8 @@ function private function_3d752709(enemy, target) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 2, eflags: 0x5 linked
-// Checksum 0x6e25a79, Offset: 0x3ba0
+// Params 2, eflags: 0x4
+// Checksum 0x9127c0c1, Offset: 0x3ba0
 // Size: 0x4a
 function private function_69b8daf(origin, angles) {
     fx_model = util::spawn_model(#"tag_origin", origin, angles);
@@ -562,8 +562,8 @@ function private function_69b8daf(origin, angles) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x28947caf, Offset: 0x3bf8
+// Params 1, eflags: 0x4
+// Checksum 0x9488e146, Offset: 0x3bf8
 // Size: 0x24
 function private blightfathershouldshowpain(entity) {
     if (isdefined(entity.var_fbec06fa)) {
@@ -573,8 +573,8 @@ function private blightfathershouldshowpain(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xe7943e64, Offset: 0x3c28
+// Params 1, eflags: 0x4
+// Checksum 0xb49663ff, Offset: 0x3c28
 // Size: 0x54
 function private function_8d9b9683(entity) {
     function_173d7fb2(entity);
@@ -583,16 +583,16 @@ function private function_8d9b9683(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xb081c6d, Offset: 0x3c88
+// Params 1, eflags: 0x4
+// Checksum 0xd72ae022, Offset: 0x3c88
 // Size: 0x6c
 function private function_3515ad4b(entity) {
     return blightfathershouldshowpain(entity) || zm_behavior::zombieshouldstun(entity) || function_2ed4a174(entity) || zm_behavior::zombieshouldknockdown(entity);
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x1c8449c8, Offset: 0x3d00
+// Params 1, eflags: 0x4
+// Checksum 0x3060a028, Offset: 0x3d00
 // Size: 0x22
 function private function_173d7fb2(entity) {
     entity.var_fbec06fa = undefined;
@@ -600,8 +600,8 @@ function private function_173d7fb2(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 12, eflags: 0x5 linked
-// Checksum 0x36414428, Offset: 0x3d30
+// Params 12, eflags: 0x4
+// Checksum 0xb77685b3, Offset: 0x3d30
 // Size: 0x178
 function private function_515b4a87(inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
     if (!(isdefined(self.var_c8f98f87) && self.var_c8f98f87) && isdefined(self.e_grapplee) && (hitloc == "head" || attacker === self.e_grapplee)) {
@@ -620,8 +620,8 @@ function private function_515b4a87(inflictor, attacker, damage, flags, meansofda
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x5 linked
-// Checksum 0xf77fbf2a, Offset: 0x3eb0
+// Params 0, eflags: 0x4
+// Checksum 0x101ce328, Offset: 0x3eb0
 // Size: 0x34
 function private function_76c1f56f() {
     function_c526065b(self);
@@ -629,8 +629,8 @@ function private function_76c1f56f() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x65f27715, Offset: 0x3ef0
+// Params 1, eflags: 0x4
+// Checksum 0x83ad5b62, Offset: 0x3ef0
 // Size: 0x6c
 function private function_cf18d183(grapplee) {
     if (isdefined(grapplee) && isplayer(grapplee)) {
@@ -640,8 +640,8 @@ function private function_cf18d183(grapplee) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x3730ba23, Offset: 0x3f68
+// Params 1, eflags: 0x4
+// Checksum 0xb86cb467, Offset: 0x3f68
 // Size: 0x214
 function private blightfatherdeathstart(entity) {
     entity val::set(#"blight_father_death", "takedamage", 0);
@@ -671,8 +671,8 @@ function private blightfatherdeathstart(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x384bca21, Offset: 0x4188
+// Params 1, eflags: 0x4
+// Checksum 0xbc2333ed, Offset: 0x4188
 // Size: 0x42
 function private blightfathershouldmelee(entity) {
     if (function_66e66814(entity)) {
@@ -682,8 +682,8 @@ function private blightfathershouldmelee(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xdfc65be3, Offset: 0x41d8
+// Params 1, eflags: 0x4
+// Checksum 0xc7055848, Offset: 0x41d8
 // Size: 0x142
 function private function_66e66814(entity) {
     if (!isdefined(entity.var_81ce9fcd)) {
@@ -704,8 +704,8 @@ function private function_66e66814(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x87194bc1, Offset: 0x4328
+// Params 1, eflags: 0x4
+// Checksum 0x6d9a13c6, Offset: 0x4328
 // Size: 0x408
 function private function_ac921de9(entity) {
     meleerange = entity ai::function_9139c839().var_558fb394;
@@ -746,8 +746,8 @@ function private function_ac921de9(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x74430625, Offset: 0x4738
+// Params 1, eflags: 0x4
+// Checksum 0xd5c1d38, Offset: 0x4738
 // Size: 0x462
 function private function_911c3934(entity) {
     /#
@@ -811,8 +811,8 @@ function private function_911c3934(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x1 linked
-// Checksum 0x982ca8a, Offset: 0x4ba8
+// Params 1, eflags: 0x0
+// Checksum 0xdd9ad022, Offset: 0x4ba8
 // Size: 0x66
 function function_51dbdb8f(var_9cb85074) {
     if (!isdefined(var_9cb85074) || !isarray(level.var_fe96a4c4)) {
@@ -825,8 +825,8 @@ function function_51dbdb8f(var_9cb85074) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xed9e270f, Offset: 0x4c18
+// Params 1, eflags: 0x4
+// Checksum 0x20d28330, Offset: 0x4c18
 // Size: 0x54
 function private function_283b9654(entity) {
     function_25f9cc48(entity);
@@ -835,8 +835,8 @@ function private function_283b9654(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 2, eflags: 0x5 linked
-// Checksum 0x2bdfb4fe, Offset: 0x4c78
+// Params 2, eflags: 0x4
+// Checksum 0xb3fa7cc5, Offset: 0x4c78
 // Size: 0x38
 function private function_fa33f4aa(entity, asmstatename) {
     if (zm_behavior::zombieshouldstun(entity)) {
@@ -846,8 +846,8 @@ function private function_fa33f4aa(entity, asmstatename) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x1377aaf8, Offset: 0x4cb8
+// Params 1, eflags: 0x4
+// Checksum 0xec04926c, Offset: 0x4cb8
 // Size: 0x54
 function private function_d83ac1e7(entity) {
     function_25f9cc48(entity);
@@ -856,8 +856,8 @@ function private function_d83ac1e7(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 2, eflags: 0x5 linked
-// Checksum 0x7859c881, Offset: 0x4d18
+// Params 2, eflags: 0x4
+// Checksum 0xaaa22779, Offset: 0x4d18
 // Size: 0x30
 function private function_928e66ad(entity, asmstatename) {
     function_f108c0ea(entity);
@@ -865,8 +865,8 @@ function private function_928e66ad(entity, asmstatename) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xa69a6b8c, Offset: 0x4d50
+// Params 1, eflags: 0x4
+// Checksum 0xb20d8e44, Offset: 0x4d50
 // Size: 0x54
 function private function_f108c0ea(entity) {
     if (function_3515ad4b(entity)) {
@@ -876,8 +876,8 @@ function private function_f108c0ea(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x5 linked
-// Checksum 0xbeedd5cb, Offset: 0x4db0
+// Params 0, eflags: 0x4
+// Checksum 0x92f156c7, Offset: 0x4db0
 // Size: 0x50
 function private function_775f8cf2() {
     if (isdefined(self.var_177b7a47) && self.var_177b7a47) {
@@ -890,8 +890,8 @@ function private function_775f8cf2() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 13, eflags: 0x5 linked
-// Checksum 0x455df747, Offset: 0x4e08
+// Params 13, eflags: 0x4
+// Checksum 0xb16681d6, Offset: 0x4e08
 // Size: 0x114
 function private function_3df61a1a(entity, inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
     entity.var_2703428f--;
@@ -901,8 +901,8 @@ function private function_3df61a1a(entity, inflictor, attacker, damage, flags, m
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 13, eflags: 0x5 linked
-// Checksum 0xf63ff587, Offset: 0x4f28
+// Params 13, eflags: 0x4
+// Checksum 0xe82d4700, Offset: 0x4f28
 // Size: 0x156
 function private function_fa7c080(entity, inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
     entity.var_c8f98f87 = 1;
@@ -918,24 +918,24 @@ function private function_fa7c080(entity, inflictor, attacker, damage, flags, me
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 13, eflags: 0x5 linked
-// Checksum 0xc8ad1af0, Offset: 0x5088
+// Params 13, eflags: 0x4
+// Checksum 0x9ea890ff, Offset: 0x5088
 // Size: 0x8c
 function private function_9bbe631c(entity, inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
     entity clientfield::set("blight_father_weakpoint_l_elbow_fx", 0);
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 13, eflags: 0x5 linked
-// Checksum 0xfa19fff2, Offset: 0x5120
+// Params 13, eflags: 0x4
+// Checksum 0x1b073c37, Offset: 0x5120
 // Size: 0x8c
 function private function_5a1a4ad(entity, inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
     entity clientfield::set("blight_father_weakpoint_r_elbow_fx", 0);
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 13, eflags: 0x5 linked
-// Checksum 0x24e4b443, Offset: 0x51b8
+// Params 13, eflags: 0x4
+// Checksum 0x20a29c9c, Offset: 0x51b8
 // Size: 0x16c
 function private function_40034805(entity, inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
     entity.var_177b7a47 = 1;
@@ -951,8 +951,8 @@ function private function_40034805(entity, inflictor, attacker, damage, flags, m
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 13, eflags: 0x5 linked
-// Checksum 0xad417a69, Offset: 0x5330
+// Params 13, eflags: 0x4
+// Checksum 0x192c8372, Offset: 0x5330
 // Size: 0x16c
 function private function_33b2c99e(entity, inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
     entity.var_7c54fb46 = 1;
@@ -968,8 +968,8 @@ function private function_33b2c99e(entity, inflictor, attacker, damage, flags, m
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 14, eflags: 0x5 linked
-// Checksum 0xfc0b0e81, Offset: 0x54a8
+// Params 14, eflags: 0x4
+// Checksum 0xe41e0032, Offset: 0x54a8
 // Size: 0x22c
 function private function_cacd1506(var_84ed9a13, entity, inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
     if (namespace_81245006::function_f29756fe(var_84ed9a13) != 1) {
@@ -996,8 +996,8 @@ function private function_cacd1506(var_84ed9a13, entity, inflictor, attacker, da
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x1 linked
-// Checksum 0x5b278afd, Offset: 0x56e0
+// Params 1, eflags: 0x0
+// Checksum 0x3b2b64d6, Offset: 0x56e0
 // Size: 0x74
 function function_6f109d76(ai) {
     if (level.var_a51ca41a <= 2) {
@@ -1008,8 +1008,8 @@ function function_6f109d76(ai) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 12, eflags: 0x5 linked
-// Checksum 0x44d09313, Offset: 0x5760
+// Params 12, eflags: 0x4
+// Checksum 0xeeca1056, Offset: 0x5760
 // Size: 0x3c6
 function private function_afce1cf(inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
     entity = self;
@@ -1051,8 +1051,8 @@ function private function_afce1cf(inflictor, attacker, damage, flags, meansofdam
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x2375fa05, Offset: 0x5b30
+// Params 1, eflags: 0x4
+// Checksum 0xdc0f071b, Offset: 0x5b30
 // Size: 0xe8
 function private function_f9d9f198(entity) {
     var_bee929e7 = entity astsearch("grapple_attack_vomit@blight_father");
@@ -1064,16 +1064,16 @@ function private function_f9d9f198(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x76b93a69, Offset: 0x5c20
+// Params 1, eflags: 0x4
+// Checksum 0xe29acba4, Offset: 0x5c20
 // Size: 0x36
 function private function_35edac9c(entity) {
     entity.var_f7c29bc4 = gettime() + entity ai::function_9139c839().var_eed65399;
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 2, eflags: 0x5 linked
-// Checksum 0xa2a9c7b5, Offset: 0x5c60
+// Params 2, eflags: 0x4
+// Checksum 0x79f73a3c, Offset: 0x5c60
 // Size: 0x1e6
 function private function_5d7f8057(entity, player) {
     if (entity.var_c8088bcb.timestamp !== gettime()) {
@@ -1093,8 +1093,8 @@ function private function_5d7f8057(entity, player) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xb5ded491, Offset: 0x5e50
+// Params 1, eflags: 0x4
+// Checksum 0x8322bed6, Offset: 0x5e50
 // Size: 0x4a
 function private function_aaad8487(entity) {
     if (!isdefined(level.var_e82b911f) || level.var_e82b911f === entity) {
@@ -1105,16 +1105,16 @@ function private function_aaad8487(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xa935d664, Offset: 0x5ea8
+// Params 1, eflags: 0x4
+// Checksum 0x9590ca57, Offset: 0x5ea8
 // Size: 0x16
 function private function_3782350(entity) {
     level.var_e82b911f = undefined;
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xdaeafe51, Offset: 0x5ec8
+// Params 1, eflags: 0x4
+// Checksum 0x3c99bc5a, Offset: 0x5ec8
 // Size: 0x76
 function private function_4bd1c37e(entity) {
     if (function_aaad8487(entity)) {
@@ -1130,8 +1130,8 @@ function private function_4bd1c37e(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x5a23fa6, Offset: 0x5f48
+// Params 1, eflags: 0x4
+// Checksum 0x66a9bd1d, Offset: 0x5f48
 // Size: 0x346
 function private function_2784f3ff(entity) {
     if (isdefined(level.var_9cfa4efd) && level.var_9cfa4efd) {
@@ -1188,16 +1188,16 @@ function private function_2784f3ff(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x51f8974b, Offset: 0x6298
+// Params 1, eflags: 0x4
+// Checksum 0x79c02a42, Offset: 0x6298
 // Size: 0x18
 function private function_d6ded650(entity) {
     return isdefined(entity.e_grapplee);
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xda0b9ac1, Offset: 0x62b8
+// Params 1, eflags: 0x4
+// Checksum 0x7d9f3103, Offset: 0x62b8
 // Size: 0x3c
 function private function_e0b3baff(notifyhash) {
     function_c526065b(self);
@@ -1205,8 +1205,8 @@ function private function_e0b3baff(notifyhash) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 2, eflags: 0x5 linked
-// Checksum 0x6bb46319, Offset: 0x6300
+// Params 2, eflags: 0x4
+// Checksum 0xd2de48e8, Offset: 0x6300
 // Size: 0x66c
 function private function_96f5d05a(entity, var_4c0587b) {
     if (!isdefined(entity)) {
@@ -1260,8 +1260,8 @@ function private function_96f5d05a(entity, var_4c0587b) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xba56236a, Offset: 0x6978
+// Params 1, eflags: 0x4
+// Checksum 0x7311744b, Offset: 0x6978
 // Size: 0x6c
 function private function_55cba1f3(prone_2_run_roll) {
     self endon(#"death", #"hash_46064b6c2cb5cf20");
@@ -1273,8 +1273,8 @@ function private function_55cba1f3(prone_2_run_roll) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xe0a23d1d, Offset: 0x69f0
+// Params 1, eflags: 0x4
+// Checksum 0xc3509cd3, Offset: 0x69f0
 // Size: 0x1e4
 function private function_28dddd64(entity) {
     entity.var_cdc2bec8 = 0;
@@ -1295,8 +1295,8 @@ function private function_28dddd64(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x1 linked
-// Checksum 0x201c0246, Offset: 0x6be0
+// Params 1, eflags: 0x0
+// Checksum 0xed109e57, Offset: 0x6be0
 // Size: 0x32
 function function_ef973b70(entity) {
     if (isdefined(entity.var_54c1950f)) {
@@ -1306,8 +1306,8 @@ function function_ef973b70(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x1 linked
-// Checksum 0xe6855cfa, Offset: 0x6c20
+// Params 1, eflags: 0x0
+// Checksum 0xb1475199, Offset: 0x6c20
 // Size: 0x3c
 function function_31963d63(notifyhash) {
     if (notifyhash === #"movedone") {
@@ -1316,8 +1316,8 @@ function function_31963d63(notifyhash) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 3, eflags: 0x1 linked
-// Checksum 0xba724983, Offset: 0x6c68
+// Params 3, eflags: 0x0
+// Checksum 0x87628628, Offset: 0x6c68
 // Size: 0x560
 function function_9d1a26f1(entity, var_8a713db5, var_3e06882e) {
     entity endon(#"death", #"hash_2fb2eddfa6a0ef3f");
@@ -1380,8 +1380,8 @@ function function_9d1a26f1(entity, var_8a713db5, var_3e06882e) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 4, eflags: 0x5 linked
-// Checksum 0x15e7c3b2, Offset: 0x71d0
+// Params 4, eflags: 0x4
+// Checksum 0x250ff60c, Offset: 0x71d0
 // Size: 0x254
 function private function_5afb347c(entity, var_6aab4b, var_8a713db5, var_3e06882e) {
     foreach (var_cf12838e in var_3e06882e) {
@@ -1401,8 +1401,8 @@ function private function_5afb347c(entity, var_6aab4b, var_8a713db5, var_3e06882
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x5 linked
-// Checksum 0x9d18cbcd, Offset: 0x7430
+// Params 0, eflags: 0x4
+// Checksum 0xdb10b297, Offset: 0x7430
 // Size: 0x4c
 function private function_c1b0cbda() {
     self endon(#"death");
@@ -1413,8 +1413,8 @@ function private function_c1b0cbda() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 3, eflags: 0x5 linked
-// Checksum 0xd3f4e505, Offset: 0x7488
+// Params 3, eflags: 0x4
+// Checksum 0x30d38813, Offset: 0x7488
 // Size: 0x384
 function private function_91dcbd1c(prone_2_run_roll, var_a424c06a, e_grapplee) {
     if (!isdefined(var_a424c06a)) {
@@ -1458,8 +1458,8 @@ function private function_91dcbd1c(prone_2_run_roll, var_a424c06a, e_grapplee) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 2, eflags: 0x1 linked
-// Checksum 0xb62325b2, Offset: 0x7818
+// Params 2, eflags: 0x0
+// Checksum 0x24393809, Offset: 0x7818
 // Size: 0x2ce
 function function_c526065b(entity, var_e0ef3075) {
     grapplee = var_e0ef3075;
@@ -1508,15 +1508,15 @@ function function_c526065b(entity, var_e0ef3075) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x5 linked
-// Checksum 0xfd0c7dbd, Offset: 0x7af0
+// Params 0, eflags: 0x4
+// Checksum 0x145a55a3, Offset: 0x7af0
 // Size: 0x1bc
 function private function_def41e89() {
     enemies = getaispeciesarray(level.zombie_team, "all");
     enemies = arraysortclosest(enemies, self.origin, undefined, 0, self getpathfindingradius() + 100);
     foreach (enemy in enemies) {
         if (self istouching(enemy)) {
-            if (isdefined(enemy.allowdeath) && enemy.allowdeath && (enemy.var_6f84b820 === #"basic" || enemy.var_6f84b820 === #"popcorn")) {
+            if (isdefined(enemy.allowdeath) && enemy.allowdeath && (enemy.zm_ai_category === #"basic" || enemy.zm_ai_category === #"popcorn")) {
                 enemy zm_cleanup::function_23621259();
                 enemy kill();
                 continue;
@@ -1528,8 +1528,8 @@ function private function_def41e89() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x1 linked
-// Checksum 0x531f90cd, Offset: 0x7cb8
+// Params 1, eflags: 0x0
+// Checksum 0x2b0a406a, Offset: 0x7cb8
 // Size: 0x122
 function function_d67c455e(notifyhash) {
     if (isdefined(self.prone_2_run_roll)) {
@@ -1557,8 +1557,8 @@ function function_d67c455e(notifyhash) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x5 linked
-// Checksum 0xf57d6f13, Offset: 0x7de8
+// Params 0, eflags: 0x4
+// Checksum 0xaef60ec6, Offset: 0x7de8
 // Size: 0x44
 function private function_babdb8e7() {
     self clientfield::set_to_player("tongueGrabRumble", 1);
@@ -1566,8 +1566,8 @@ function private function_babdb8e7() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 5, eflags: 0x5 linked
-// Checksum 0x84404d1e, Offset: 0x7e38
+// Params 5, eflags: 0x4
+// Checksum 0x951e098b, Offset: 0x7e38
 // Size: 0xdc
 function private function_299dd40e(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
     if (zm_utility::is_player_valid(entity.var_bef7624d)) {
@@ -1579,8 +1579,8 @@ function private function_299dd40e(entity, mocompanim, mocompanimblendouttime, m
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 5, eflags: 0x5 linked
-// Checksum 0x639f7d9a, Offset: 0x7f20
+// Params 5, eflags: 0x4
+// Checksum 0xa6c32986, Offset: 0x7f20
 // Size: 0x1ac
 function private function_689831cf(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
     if (function_ef973b70(entity) === 0 && zm_utility::is_player_valid(entity.var_bef7624d) && !isdefined(entity.e_grapplee)) {
@@ -1600,16 +1600,16 @@ function private function_689831cf(entity, mocompanim, mocompanimblendouttime, m
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 5, eflags: 0x5 linked
-// Checksum 0xfd073df4, Offset: 0x80d8
+// Params 5, eflags: 0x4
+// Checksum 0xee1badb7, Offset: 0x80d8
 // Size: 0x4c
 function private function_42de48fb(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
     entity orientmode("face default");
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 2, eflags: 0x5 linked
-// Checksum 0x6445523e, Offset: 0x8130
+// Params 2, eflags: 0x4
+// Checksum 0xbffc8ddc, Offset: 0x8130
 // Size: 0x58
 function private function_b62014ac(entity, asmstatename) {
     if (function_ef973b70(entity) === 0 || function_ef973b70(entity) === 1) {
@@ -1619,8 +1619,8 @@ function private function_b62014ac(entity, asmstatename) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 2, eflags: 0x5 linked
-// Checksum 0x76d18ff8, Offset: 0x8190
+// Params 2, eflags: 0x4
+// Checksum 0xfbf2c6ab, Offset: 0x8190
 // Size: 0x3e
 function private function_8cbef8fd(entity, asmstatename) {
     if (function_ef973b70(entity) === 2) {
@@ -1630,8 +1630,8 @@ function private function_8cbef8fd(entity, asmstatename) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x1 linked
-// Checksum 0xd56494d3, Offset: 0x81d8
+// Params 1, eflags: 0x0
+// Checksum 0xf4632577, Offset: 0x81d8
 // Size: 0x2c
 function function_b5b42347(entity) {
     entity.var_bef7624d = undefined;
@@ -1639,8 +1639,8 @@ function function_b5b42347(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xfdcec44, Offset: 0x8210
+// Params 1, eflags: 0x4
+// Checksum 0x4e6c420f, Offset: 0x8210
 // Size: 0x5c
 function private watch_disconnect(grappler) {
     grappler endon(#"death", #"hash_2fb2eddfa6a0ef3f");
@@ -1649,8 +1649,8 @@ function private watch_disconnect(grappler) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xac41a572, Offset: 0x8278
+// Params 1, eflags: 0x4
+// Checksum 0x25c1de80, Offset: 0x8278
 // Size: 0x4e
 function private function_5e853c85(grappler) {
     self endon(#"disconnect");
@@ -1662,7 +1662,7 @@ function private function_5e853c85(grappler) {
 
     // Namespace zm_ai_blight_father/zm_ai_blight_father
     // Params 1, eflags: 0x4
-    // Checksum 0x935cfd72, Offset: 0x82d0
+    // Checksum 0xde6e0678, Offset: 0x82d0
     // Size: 0xa8
     function private function_e989972e(grappler) {
         self endon(#"disconnect");
@@ -1679,8 +1679,8 @@ function private function_5e853c85(grappler) {
 #/
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x8650294, Offset: 0x8380
+// Params 1, eflags: 0x4
+// Checksum 0xea1b4cd3, Offset: 0x8380
 // Size: 0x1d0
 function private function_62b3b7a3(entity) {
     grapplee = entity.e_grapplee;
@@ -1701,8 +1701,8 @@ function private function_62b3b7a3(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x11efeada, Offset: 0x8558
+// Params 1, eflags: 0x4
+// Checksum 0xadd9c91f, Offset: 0x8558
 // Size: 0x25c
 function private function_1d2646(entity) {
     var_78a5a6c3 = 0;
@@ -1733,8 +1733,8 @@ function private function_1d2646(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x1f36a8b7, Offset: 0x87c0
+// Params 1, eflags: 0x4
+// Checksum 0xd6923dea, Offset: 0x87c0
 // Size: 0x48
 function private function_563d56de(entity) {
     if (isdefined(entity.var_e6c8672d)) {
@@ -1744,16 +1744,16 @@ function private function_563d56de(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x23870c3e, Offset: 0x8810
+// Params 1, eflags: 0x4
+// Checksum 0x9760462f, Offset: 0x8810
 // Size: 0x2a
 function private function_d6fbf1b7(entity) {
     return zombie_utility::is_player_valid(entity.e_grapplee, undefined, undefined, 0);
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xf42d7321, Offset: 0x8848
+// Params 1, eflags: 0x4
+// Checksum 0xc932dda0, Offset: 0x8848
 // Size: 0x174
 function private function_bc3eb15a(entity) {
     entity showpart("tag_tongue_grab", "c_t8_zmb_blightfather_tongue2", 1);
@@ -1769,8 +1769,8 @@ function private function_bc3eb15a(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xfc1d6f4, Offset: 0x89c8
+// Params 1, eflags: 0x4
+// Checksum 0x30783594, Offset: 0x89c8
 // Size: 0x46
 function private function_1d9f449a(entity) {
     grapplee = entity.e_grapplee;
@@ -1778,8 +1778,8 @@ function private function_1d9f449a(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x12b1a9b1, Offset: 0x8a18
+// Params 1, eflags: 0x4
+// Checksum 0x545e1521, Offset: 0x8a18
 // Size: 0x6c
 function private function_25f9cc48(entity) {
     entity notify(#"hash_2fb2eddfa6a0ef3f");
@@ -1789,8 +1789,8 @@ function private function_25f9cc48(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xcc99b947, Offset: 0x8a90
+// Params 1, eflags: 0x4
+// Checksum 0xbd8ebcfe, Offset: 0x8a90
 // Size: 0x4c
 function private function_1177eb85(entity) {
     function_25f9cc48(entity);
@@ -1798,8 +1798,8 @@ function private function_1177eb85(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x9fde043a, Offset: 0x8ae8
+// Params 1, eflags: 0x4
+// Checksum 0x95e6175d, Offset: 0x8ae8
 // Size: 0x64
 function private function_1dac0714(entity) {
     function_25f9cc48(entity);
@@ -1808,16 +1808,16 @@ function private function_1dac0714(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x247a9aca, Offset: 0x8b58
+// Params 1, eflags: 0x4
+// Checksum 0xcb4d5a34, Offset: 0x8b58
 // Size: 0x24
 function private function_fc84db95(entity) {
     function_1dac0714(entity);
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xaf627c86, Offset: 0x8b88
+// Params 1, eflags: 0x4
+// Checksum 0x3a01edc5, Offset: 0x8b88
 // Size: 0x52
 function private function_2ed4a174(entity) {
     if (isdefined(entity.var_cdc2bec8) && entity.var_cdc2bec8 > entity ai::function_9139c839().var_2c6cfada) {
@@ -1827,8 +1827,8 @@ function private function_2ed4a174(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x1 linked
-// Checksum 0x641e21bf, Offset: 0x8be8
+// Params 1, eflags: 0x0
+// Checksum 0x134a5e2, Offset: 0x8be8
 // Size: 0x34
 function function_744be31d(player) {
     if (self.e_grapplee !== player) {
@@ -1838,8 +1838,8 @@ function function_744be31d(player) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xd6f94def, Offset: 0x8c28
+// Params 1, eflags: 0x4
+// Checksum 0x92383174, Offset: 0x8c28
 // Size: 0xac
 function private function_7a634eaa(entity) {
     grapplee = entity.e_grapplee;
@@ -1853,8 +1853,8 @@ function private function_7a634eaa(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 2, eflags: 0x5 linked
-// Checksum 0xde0305ee, Offset: 0x8ce0
+// Params 2, eflags: 0x4
+// Checksum 0xbea24550, Offset: 0x8ce0
 // Size: 0x144
 function private function_d5ba6cc6(blight_father, player) {
     player endon(#"death", #"disconnect");
@@ -1869,8 +1869,8 @@ function private function_d5ba6cc6(blight_father, player) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xebbff737, Offset: 0x8e30
+// Params 1, eflags: 0x4
+// Checksum 0x52576c0b, Offset: 0x8e30
 // Size: 0x44
 function private function_b3f66ac3(entity) {
     entity clientfield::set("blight_father_vomit_fx", 0);
@@ -1878,24 +1878,24 @@ function private function_b3f66ac3(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x6c56e559, Offset: 0x8e80
+// Params 1, eflags: 0x4
+// Checksum 0x4b29daa0, Offset: 0x8e80
 // Size: 0x34
 function private function_51ead3e8(entity) {
     entity showpart("tag_tongue_grab", "c_t8_zmb_blightfather_tongue2", 1);
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x326c851e, Offset: 0x8ec0
+// Params 1, eflags: 0x4
+// Checksum 0xf8bd42e5, Offset: 0x8ec0
 // Size: 0x34
 function private function_bb6aa70c(entity) {
     entity hidepart("tag_tongue_grab", "c_t8_zmb_blightfather_tongue2", 1);
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 2, eflags: 0x5 linked
-// Checksum 0x953ea173, Offset: 0x8f00
+// Params 2, eflags: 0x4
+// Checksum 0x1e53fd1c, Offset: 0x8f00
 // Size: 0x1fa
 function private function_7fe36aac(entity, minplayerdist) {
     playerpositions = [];
@@ -1921,8 +1921,8 @@ function private function_7fe36aac(entity, minplayerdist) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 4, eflags: 0x5 linked
-// Checksum 0xea823fc8, Offset: 0x9108
+// Params 4, eflags: 0x4
+// Checksum 0x2cae5700, Offset: 0x9108
 // Size: 0x9a
 function private function_c90a5ebb(entity, attribute, oldvalue, value) {
     if (!value) {
@@ -1937,8 +1937,8 @@ function private function_c90a5ebb(entity, attribute, oldvalue, value) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x48828dc0, Offset: 0x91b0
+// Params 1, eflags: 0x4
+// Checksum 0x6df760e1, Offset: 0x91b0
 // Size: 0x752
 function private function_7055b26(entity) {
     /#
@@ -2052,8 +2052,8 @@ function private function_7055b26(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x1 linked
-// Checksum 0xf4434518, Offset: 0x9910
+// Params 1, eflags: 0x0
+// Checksum 0x6acd1ac1, Offset: 0x9910
 // Size: 0x102
 function function_b57f31b6(player) {
     if (isdefined(level.var_3e10516a) && level.var_3e10516a) {
@@ -2071,8 +2071,8 @@ function function_b57f31b6(player) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x5 linked
-// Checksum 0x777aadf6, Offset: 0x9a20
+// Params 0, eflags: 0x4
+// Checksum 0x6775e12a, Offset: 0x9a20
 // Size: 0x140
 function private function_158a1b7e() {
     self endon(#"death");
@@ -2092,8 +2092,8 @@ function private function_158a1b7e() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xaf1e69a, Offset: 0x9b68
+// Params 1, eflags: 0x4
+// Checksum 0x5d152f11, Offset: 0x9b68
 // Size: 0x64
 function private function_d6e82d62(stub) {
     if (isdefined(stub.var_bebc05f5)) {
@@ -2103,8 +2103,8 @@ function private function_d6e82d62(stub) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xea879f1c, Offset: 0x9bd8
+// Params 1, eflags: 0x4
+// Checksum 0x357ce8b9, Offset: 0x9bd8
 // Size: 0x74
 function private function_b9a828e1(model) {
     model clientfield::set("blight_father_purchase_lockdown_vomit_fx", 0);
@@ -2115,8 +2115,8 @@ function private function_b9a828e1(model) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x4fcfead3, Offset: 0x9c58
+// Params 1, eflags: 0x4
+// Checksum 0x28b2d228, Offset: 0x9c58
 // Size: 0xc0
 function private function_e1ba6416(entity) {
     if (isdefined(entity.var_c8f98f87) && entity.var_c8f98f87) {
@@ -2135,8 +2135,8 @@ function private function_e1ba6416(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x2199001, Offset: 0x9d20
+// Params 1, eflags: 0x4
+// Checksum 0x6646582, Offset: 0x9d20
 // Size: 0x292
 function private function_a0edafd0(entity) {
     if (zm_lockdown_util::function_7bfa8895(entity)) {
@@ -2183,8 +2183,8 @@ function private function_a0edafd0(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 5, eflags: 0x5 linked
-// Checksum 0x90f7f20b, Offset: 0x9fc0
+// Params 5, eflags: 0x4
+// Checksum 0x11f866ba, Offset: 0x9fc0
 // Size: 0x1fc
 function private function_6ab8460f(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
     stub = zm_lockdown_util::function_87c1193e(entity);
@@ -2203,24 +2203,24 @@ function private function_6ab8460f(entity, mocompanim, mocompanimblendouttime, m
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x58dc72ce, Offset: 0xa1c8
+// Params 1, eflags: 0x4
+// Checksum 0xeb94e7c7, Offset: 0xa1c8
 // Size: 0x2a
 function private function_37d1a803(entity) {
     return entity ai::function_9139c839().var_f246f6de;
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xbc915e37, Offset: 0xa200
+// Params 1, eflags: 0x4
+// Checksum 0xda6a171f, Offset: 0xa200
 // Size: 0x28
 function private function_71b8279d(entity) {
     return isdefined(entity.var_6ee32f47) && entity.var_6ee32f47;
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x5 linked
-// Checksum 0xca999233, Offset: 0xa230
+// Params 0, eflags: 0x4
+// Checksum 0x70fff06d, Offset: 0xa230
 // Size: 0x8c
 function private function_63b7576d() {
     var_3c533fa2 = 0;
@@ -2233,8 +2233,8 @@ function private function_63b7576d() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x5 linked
-// Checksum 0x4aed385a, Offset: 0xa2c8
+// Params 0, eflags: 0x4
+// Checksum 0x13856fd0, Offset: 0xa2c8
 // Size: 0xa8
 function private function_c48604c0() {
     foreach (trigger in level.var_445e24c8) {
@@ -2248,8 +2248,8 @@ function private function_c48604c0() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x2e2337ad, Offset: 0xa378
+// Params 1, eflags: 0x4
+// Checksum 0x4638e9b6, Offset: 0xa378
 // Size: 0x42
 function private function_da2c4ce9(trigger) {
     trigger.inuse = 0;
@@ -2258,8 +2258,8 @@ function private function_da2c4ce9(trigger) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x849cc35a, Offset: 0xa3c8
+// Params 1, eflags: 0x4
+// Checksum 0xcafefb4d, Offset: 0xa3c8
 // Size: 0x48
 function private function_8383fdf9(entity) {
     var_329b1080 = function_19249d10(entity);
@@ -2268,8 +2268,8 @@ function private function_8383fdf9(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xc2974e45, Offset: 0xa418
+// Params 1, eflags: 0x4
+// Checksum 0x7c391b00, Offset: 0xa418
 // Size: 0x684
 function private function_19249d10(entity) {
     if (isdefined(level.var_9cfa4efd) && level.var_9cfa4efd) {
@@ -2339,16 +2339,16 @@ function private function_19249d10(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x29cbb034, Offset: 0xaaa8
+// Params 1, eflags: 0x4
+// Checksum 0x15fa01b2, Offset: 0xaaa8
 // Size: 0x2c
 function private function_d5a0a1eb(entity) {
     entity clientfield::set("blight_father_amb_sac_clientfield", 0);
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x51f2e8ba, Offset: 0xaae0
+// Params 1, eflags: 0x4
+// Checksum 0x5680d22c, Offset: 0xaae0
 // Size: 0x5c
 function private function_e0d8f770(entity) {
     entity.var_b2a80abc = gettime() + function_37d1a803(entity);
@@ -2357,8 +2357,8 @@ function private function_e0d8f770(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xfb6653ff, Offset: 0xab48
+// Params 1, eflags: 0x4
+// Checksum 0x16f5aee6, Offset: 0xab48
 // Size: 0x94
 function private function_d2b91209(entity) {
     if (!isdefined(entity.favoriteenemy)) {
@@ -2370,8 +2370,8 @@ function private function_d2b91209(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xfd2ba8b8, Offset: 0xabe8
+// Params 1, eflags: 0x4
+// Checksum 0x9d9d3a5b, Offset: 0xabe8
 // Size: 0x94
 function private function_78f5c48e(entity) {
     if (!isdefined(entity.favoriteenemy)) {
@@ -2383,8 +2383,8 @@ function private function_78f5c48e(entity) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x5 linked
-// Checksum 0xc619c662, Offset: 0xac88
+// Params 0, eflags: 0x4
+// Checksum 0x44526023, Offset: 0xac88
 // Size: 0x4c
 function private function_ebd22bba() {
     self endon(#"death");
@@ -2393,8 +2393,8 @@ function private function_ebd22bba() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 3, eflags: 0x5 linked
-// Checksum 0x5b2ac419, Offset: 0xace0
+// Params 3, eflags: 0x4
+// Checksum 0x41218f7a, Offset: 0xace0
 // Size: 0x568
 function private blightfatherlaunchchaosmissile(var_f794172e, var_61622673, var_f3486358) {
     var_ced3ec54 = self gettagorigin(var_f3486358);
@@ -2456,8 +2456,8 @@ function private blightfatherlaunchchaosmissile(var_f794172e, var_61622673, var_
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x1 linked
-// Checksum 0x3ede8a4f, Offset: 0xb250
+// Params 1, eflags: 0x0
+// Checksum 0xded95e63, Offset: 0xb250
 // Size: 0x4c
 function function_a6a20b2c(var_3797b49d) {
     self waittill(#"death");
@@ -2466,8 +2466,8 @@ function function_a6a20b2c(var_3797b49d) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x1 linked
-// Checksum 0xc05f82bf, Offset: 0xb2a8
+// Params 1, eflags: 0x0
+// Checksum 0x8ef65a3c, Offset: 0xb2a8
 // Size: 0xe4
 function function_b2be1340(starting_health) {
     self endon(#"detonated");
@@ -2483,7 +2483,7 @@ function function_b2be1340(starting_health) {
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
 // Params 4, eflags: 0x4
-// Checksum 0x938dddfb, Offset: 0xb398
+// Checksum 0xf717e97, Offset: 0xb398
 // Size: 0x10e
 function private function_581a06c7(forward_dir, var_ced3ec54, var_27e1ee12, max_angle) {
     vec_to_enemy = var_27e1ee12 - var_ced3ec54;
@@ -2499,8 +2499,8 @@ function private function_581a06c7(forward_dir, var_ced3ec54, var_27e1ee12, max_
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 2, eflags: 0x5 linked
-// Checksum 0x31cdbb20, Offset: 0xb4b0
+// Params 2, eflags: 0x4
+// Checksum 0x2ed427c5, Offset: 0xb4b0
 // Size: 0x18e
 function private function_5f3390fd(var_61622673, var_4fee43d4) {
     self endon(#"death", #"detonated");
@@ -2525,8 +2525,8 @@ function private function_5f3390fd(var_61622673, var_4fee43d4) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 3, eflags: 0x5 linked
-// Checksum 0x273ce2a, Offset: 0xb648
+// Params 3, eflags: 0x4
+// Checksum 0x6162341a, Offset: 0xb648
 // Size: 0x394
 function private function_1974d26f(var_3fa92868, var_10ed5867, var_eb325a79) {
     self endon(#"detonated", #"death");
@@ -2581,8 +2581,8 @@ function private function_1974d26f(var_3fa92868, var_10ed5867, var_eb325a79) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xea9cc07e, Offset: 0xb9e8
+// Params 1, eflags: 0x4
+// Checksum 0xe2788189, Offset: 0xb9e8
 // Size: 0x304
 function private function_124486ee(delay) {
     if (!isdefined(self)) {
@@ -2625,8 +2625,8 @@ function private function_124486ee(delay) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x38950c9, Offset: 0xbcf8
+// Params 1, eflags: 0x4
+// Checksum 0x38896d9b, Offset: 0xbcf8
 // Size: 0x29e
 function private function_44e3e0d1(var_51a7ab9c) {
     players = getplayers();
@@ -2671,8 +2671,8 @@ function private function_44e3e0d1(var_51a7ab9c) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 3, eflags: 0x5 linked
-// Checksum 0x4606adbe, Offset: 0xbfa0
+// Params 3, eflags: 0x4
+// Checksum 0x912ca706, Offset: 0xbfa0
 // Size: 0x140
 function private function_8e8b1dfc(var_c45ef84c, blight_father, weapon) {
     foreach (player in level.activeplayers) {
@@ -2691,7 +2691,7 @@ function private function_8e8b1dfc(var_c45ef84c, blight_father, weapon) {
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
 // Params 0, eflags: 0x0
-// Checksum 0x7f65d059, Offset: 0xc0e8
+// Checksum 0x8ab0a50e, Offset: 0xc0e8
 // Size: 0x60
 function function_3dbdca02() {
     level.var_1b8dabf3++;
@@ -2703,8 +2703,8 @@ function function_3dbdca02() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x1 linked
-// Checksum 0xc5ea6b1b, Offset: 0xc150
+// Params 0, eflags: 0x0
+// Checksum 0xf303f305, Offset: 0xc150
 // Size: 0x20a
 function function_39212989() {
     if (!self zm_ai_utility::function_db610082()) {
@@ -2743,24 +2743,24 @@ function function_39212989() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x1 linked
-// Checksum 0x4946362e, Offset: 0xc368
+// Params 0, eflags: 0x0
+// Checksum 0xbe12c35a, Offset: 0xc368
 // Size: 0x12
 function function_3a0cdf7f() {
     self.b_ignore_cleanup = 1;
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x1 linked
-// Checksum 0x645a2e36, Offset: 0xc388
+// Params 1, eflags: 0x0
+// Checksum 0xa40e305a, Offset: 0xc388
 // Size: 0xc
 function function_8e4c43d3(n_health_percent) {
     
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x1 linked
-// Checksum 0xc49f3eac, Offset: 0xc3a0
+// Params 1, eflags: 0x0
+// Checksum 0xcab3e24f, Offset: 0xc3a0
 // Size: 0xe2
 function function_fa00e485(n_round_number) {
     level endon(#"end_game");
@@ -2777,8 +2777,8 @@ function function_fa00e485(n_round_number) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x1 linked
-// Checksum 0x544606f4, Offset: 0xc490
+// Params 1, eflags: 0x0
+// Checksum 0x2dd2d6c, Offset: 0xc490
 // Size: 0x27a
 function function_633d7436(var_dbce0c44) {
     forced = zm_trial_force_archetypes::function_ff2a74e7(#"blight_father");
@@ -2830,8 +2830,8 @@ function function_633d7436(var_dbce0c44) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x1 linked
-// Checksum 0x320fb7e5, Offset: 0xc718
+// Params 0, eflags: 0x0
+// Checksum 0x74f19895, Offset: 0xc718
 // Size: 0xbc
 function function_858c7fa5() {
     var_c64622d1 = function_a24ee603();
@@ -2843,8 +2843,8 @@ function function_858c7fa5() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x1 linked
-// Checksum 0x9e82223c, Offset: 0xc7e0
+// Params 0, eflags: 0x0
+// Checksum 0x2c8e64b5, Offset: 0xc7e0
 // Size: 0x104
 function function_a24ee603() {
     if (isdefined(level.var_95c10956)) {
@@ -2860,8 +2860,8 @@ function function_a24ee603() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x1 linked
-// Checksum 0xea78fa00, Offset: 0xc8f0
+// Params 0, eflags: 0x0
+// Checksum 0x49a5233e, Offset: 0xc8f0
 // Size: 0xc2
 function function_2f701be7() {
     n_player_count = zm_utility::function_a2541519(level.players.size);
@@ -2880,8 +2880,8 @@ function function_2f701be7() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x1 linked
-// Checksum 0x67c34b7c, Offset: 0xc9c0
+// Params 0, eflags: 0x0
+// Checksum 0x4d0711f4, Offset: 0xc9c0
 // Size: 0x96
 function round_spawn() {
     /#
@@ -2898,8 +2898,8 @@ function round_spawn() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x5 linked
-// Checksum 0xce2377f7, Offset: 0xca60
+// Params 0, eflags: 0x4
+// Checksum 0xcb14ec46, Offset: 0xca60
 // Size: 0x90
 function private function_2315440d() {
     spawners = getspawnerarray("zombie_blight_father_spawner", "script_noteworthy");
@@ -2910,16 +2910,16 @@ function private function_2315440d() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0xb7bce429, Offset: 0xcaf8
+// Params 1, eflags: 0x4
+// Checksum 0xb24d0010, Offset: 0xcaf8
 // Size: 0x1a
 function private on_host_migration_begin(params) {
     level.var_9cfa4efd = 1;
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x5fe39132, Offset: 0xcb20
+// Params 1, eflags: 0x4
+// Checksum 0x986d0bcd, Offset: 0xcb20
 // Size: 0x46
 function private on_host_migration_end(params) {
     level.var_9cfa4efd = undefined;
@@ -2930,7 +2930,7 @@ function private on_host_migration_end(params) {
 
     // Namespace zm_ai_blight_father/zm_ai_blight_father
     // Params 1, eflags: 0x4
-    // Checksum 0xf7f8793a, Offset: 0xcb70
+    // Checksum 0xc8226295, Offset: 0xcb70
     // Size: 0x8a
     function private function_ebc88dbd(part_name) {
         foreach (weakpoint in self.var_d88561ed) {
@@ -2942,7 +2942,7 @@ function private on_host_migration_end(params) {
 
     // Namespace zm_ai_blight_father/zm_ai_blight_father
     // Params 1, eflags: 0x4
-    // Checksum 0x8c688f9b, Offset: 0xcc08
+    // Checksum 0x5409469b, Offset: 0xcc08
     // Size: 0x180
     function private function_cab68577(hittag) {
         enemies = getaiarchetypearray(#"blight_father");
@@ -2961,7 +2961,7 @@ function private on_host_migration_end(params) {
 
     // Namespace zm_ai_blight_father/zm_ai_blight_father
     // Params 1, eflags: 0x4
-    // Checksum 0x18353e3c, Offset: 0xcd90
+    // Checksum 0xb218349e, Offset: 0xcd90
     // Size: 0xde
     function private function_f8411b4d(blight_father) {
         if (isdefined(level.var_d4c91513)) {
@@ -2975,7 +2975,7 @@ function private on_host_migration_end(params) {
 
     // Namespace zm_ai_blight_father/zm_ai_blight_father
     // Params 0, eflags: 0x4
-    // Checksum 0x44934b35, Offset: 0xce78
+    // Checksum 0x56796485, Offset: 0xce78
     // Size: 0x430
     function private function_a2751530() {
         mapname = util::get_map_name();
@@ -3029,7 +3029,7 @@ function private on_host_migration_end(params) {
 
     // Namespace zm_ai_blight_father/zm_ai_blight_father
     // Params 0, eflags: 0x4
-    // Checksum 0x64950095, Offset: 0xd2b0
+    // Checksum 0xee7aa117, Offset: 0xd2b0
     // Size: 0xae
     function private function_255c7194() {
         player = getplayers()[0];
@@ -3042,7 +3042,7 @@ function private on_host_migration_end(params) {
 
     // Namespace zm_ai_blight_father/zm_ai_blight_father
     // Params 0, eflags: 0x4
-    // Checksum 0x9d6d686b, Offset: 0xd368
+    // Checksum 0xdd1783e3, Offset: 0xd368
     // Size: 0x12c
     function private function_4d72a4a6() {
         blight_father_spawners = getspawnerarray("<dev string:x1ff>", "<dev string:x21e>");
@@ -3067,7 +3067,7 @@ function private on_host_migration_end(params) {
 
     // Namespace zm_ai_blight_father/zm_ai_blight_father
     // Params 0, eflags: 0x4
-    // Checksum 0xe1b9b31f, Offset: 0xd4a0
+    // Checksum 0x1d1d2b8d, Offset: 0xd4a0
     // Size: 0xc0
     function private function_d420b133() {
         enemies = getaiarchetypearray(#"blight_father");

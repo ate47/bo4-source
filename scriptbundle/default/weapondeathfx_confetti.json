@@ -1,10 +1,10 @@
 {
     "lootid": "#hash_6010891c78c26988",
-    "var_904b37bc": "#hash_172bbcb73bccd66b",
+    "hash_904b37bc": "#hash_172bbcb73bccd66b",
     "image": "loot04_ui_icon_blackmarket_reserves_death_fx_confetti",
     "name": "weapondeathfx_confetti",
     "displayname": "#hash_3ad34b109062d9c7",
     "icon": "loot04_ui_icon_cac_death_fx_confetti",
-    "var_eeb78b92": "#hash_7efd849e8dae913f",
+    "hash_eeb78b92": "#hash_7efd849e8dae913f",
     "previewimage": "#loot04_ui_icon_blackmarket_reserves_death_fx_confetti"
 }

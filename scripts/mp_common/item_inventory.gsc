@@ -87,7 +87,7 @@ function function_299d2131(maxhealth, healthamount, var_4465ef1e) {
     self.heal.var_bc840360 = math::clamp(healthamount + self.health, 0, maxhealth);
     self.heal.rate = healthamount / var_4465ef1e;
     self gadget_health_regen::function_ddfdddb1();
-    self gadget_health_regen::function_1e02d458();
+    self gadget_health_regen::heal_start();
     self callback::function_d8abfc3d(#"done_healing", &function_4a257174);
 }
 
@@ -99,7 +99,7 @@ function function_4a257174() {
     if (isdefined(self)) {
         self callback::function_52ac9652(#"done_healing", &function_4a257174);
         self.var_44d52546 = undefined;
-        gadget_health_regen::function_7993d50e();
+        gadget_health_regen::heal_end();
     }
 }
 
@@ -295,7 +295,7 @@ function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
                 dropitem.amount = eventstruct.weapon.name == #"basketball" ? 1 : 0;
                 dropitem.count = 1;
                 dropitem clientfield::set("dynamic_item_drop", 1);
-                dropitem function_46d7f921(dropitem.id);
+                dropitem setitemindex(dropitem.id);
                 level.item_spawn_drops[dropitem.networkid] = dropitem;
             }
             return;
@@ -780,12 +780,12 @@ function private function_a4413333() {
 // Checksum 0x44b443d6, Offset: 0x3490
 // Size: 0x3e4
 function private function_6c36ab6b() {
-    self function_e6f9e3cd();
+    self cleartalents();
     foreach (item in self.inventory.items) {
         itementry = item.itementry;
         if (isdefined(itementry) && !(isdefined(itementry.consumable) && itementry.consumable) && isarray(itementry.talents)) {
             foreach (var_9de7969b in itementry.talents) {
-                self function_b5feff95(var_9de7969b.talent);
+                self addtalent(var_9de7969b.talent);
             }
         }
     }
@@ -793,7 +793,7 @@ function private function_6c36ab6b() {
         itementry = item.itementry;
         if (isdefined(itementry) && isarray(itementry.talents)) {
             foreach (var_9de7969b in itementry.talents) {
-                self function_b5feff95(var_9de7969b.talent);
+                self addtalent(var_9de7969b.talent);
             }
         }
     }
@@ -2478,7 +2478,7 @@ function give_inventory_item(item, itemcount = 1, var_aec6fa7f = 0, slotid = und
                     continue;
                 }
                 var_8c6165fc = int(min(itemcount, var_35f34839));
-                self.inventory.items[i].count = self.inventory.items[i].count + var_8c6165fc;
+                self.inventory.items[i].count += var_8c6165fc;
                 item.networkid = self.inventory.items[i].networkid;
                 self function_b00db06(9, self.inventory.items[i].networkid, self.inventory.items[i].count);
                 if (i == 10) {
@@ -3481,7 +3481,7 @@ function use_inventory_item(networkid, usecount = 1, var_dfe6c7e5 = 1) {
             if (isdefined(self.inventory.items[i].itementry.unlimited) && self.inventory.items[i].itementry.unlimited) {
                 break;
             }
-            self.inventory.items[i].count = self.inventory.items[i].count - usecount;
+            self.inventory.items[i].count -= usecount;
             if (self.inventory.items[i].count < 0) {
                 self.inventory.items[i].count = 0;
                 break;

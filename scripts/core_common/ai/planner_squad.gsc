@@ -184,13 +184,13 @@ function private function_bf7acc22(squad) {
             recordline(bottom, top, color, channel);
             return;
         }
-        function_af72dbc5(trigger.origin, mins, maxs, trigger.angles[0], color, channel);
+        recordbox(trigger.origin, mins, maxs, trigger.angles[0], color, channel);
     }
 
 #/
 
 // Namespace plannersquad/planner_squad
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x283b6616, Offset: 0x12a0
 // Size: 0x2ce
 function private _executeplan(squad) {
@@ -232,7 +232,7 @@ function private _executeplan(squad) {
 }
 
 // Namespace plannersquad/planner_squad
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xaa6cebac, Offset: 0x1578
 // Size: 0xd4
 function private function_9de03b3f(squad) {
@@ -249,7 +249,7 @@ function private function_9de03b3f(squad) {
 }
 
 // Namespace plannersquad/planner_squad
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb1972837, Offset: 0x1658
 // Size: 0x7a
 function private _plan(squad) {
@@ -260,7 +260,7 @@ function private _plan(squad) {
 }
 
 // Namespace plannersquad/planner_squad
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb1c915a3, Offset: 0x16e0
 // Size: 0xde
 function private _strategize(squad) {
@@ -280,7 +280,7 @@ function private _strategize(squad) {
 }
 
 // Namespace plannersquad/planner_squad
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd376ca49, Offset: 0x17c8
 // Size: 0xe6
 function private _updateplanner(squad) {
@@ -299,7 +299,7 @@ function private _updateplanner(squad) {
 #namespace plannersquadutility;
 
 // Namespace plannersquadutility/planner_squad
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x53a286d3, Offset: 0x18b8
 // Size: 0x1f0
 function createsquad(blackboard, planner, updaterate = float(function_60d95f53()) / 1000 * 100, maxplannerframetime = 2) {
@@ -328,7 +328,7 @@ function createsquad(blackboard, planner, updaterate = float(function_60d95f53()
 }
 
 // Namespace plannersquadutility/planner_squad
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf74e00c3, Offset: 0x1ab0
 // Size: 0x32
 function getblackboardattribute(squad, attribute) {
@@ -344,7 +344,7 @@ function setblackboardattribute(squad, attribute, value) {
 }
 
 // Namespace plannersquadutility/planner_squad
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfe853130, Offset: 0x1b38
 // Size: 0x34
 function shutdown(squad) {

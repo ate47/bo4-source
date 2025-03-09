@@ -13,7 +13,7 @@ function event_handler[gametype_init] main(eventstruct) {
 }
 
 // Namespace zclassic/zclassic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xba7e0427, Offset: 0xd8
 // Size: 0x24
 function onprecachegametype() {
@@ -21,7 +21,7 @@ function onprecachegametype() {
 }
 
 // Namespace zclassic/zclassic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8a8910eb, Offset: 0x108
 // Size: 0x24
 function onstartgametype() {

@@ -491,8 +491,8 @@ function function_9d4aabb9(destroyedbyenemy) {
     }
     if (game.state == "playing") {
         if (self.health <= 0) {
-            if (isdefined(level.var_934fb97.bundle.var_b3756378)) {
-                self playsound(level.var_934fb97.bundle.var_b3756378);
+            if (isdefined(level.var_934fb97.bundle.destructionaudio)) {
+                self playsound(level.var_934fb97.bundle.destructionaudio);
             }
         }
         if (isdefined(destroyedbyenemy) && destroyedbyenemy) {
@@ -512,7 +512,7 @@ function function_9d4aabb9(destroyedbyenemy) {
     }
     if (isdefined(level.var_934fb97.bundle.ksexplosionfx)) {
         playfx(level.var_934fb97.bundle.ksexplosionfx, self.origin);
-        self playsound(level.var_934fb97.bundle.var_b3756378);
+        self playsound(level.var_934fb97.bundle.destructionaudio);
     }
     if (isdefined(level.var_934fb97.bundle.var_bb6c29b4) && isdefined(self.var_d02ddb8e) && self.var_d02ddb8e == getweapon(#"shock_rifle")) {
         playfx(level.var_934fb97.bundle.var_bb6c29b4, self.origin);
@@ -682,7 +682,7 @@ function function_9abdee8c(object) {
     supplypod setmodel(level.var_934fb97.weapon.var_22082a57);
     object.supplypod = supplypod;
     supplypod.var_2d045452 = object;
-    supplypod function_41b29ff0("wpn_t8_eqp_supply_pod_destructible");
+    supplypod setdestructibledef("wpn_t8_eqp_supply_pod_destructible");
     supplypod useanimtree("generic");
     supplypod.owner = player;
     supplypod.clientid = supplypod.owner.clientid;
@@ -709,9 +709,9 @@ function function_9abdee8c(object) {
     supplypod.builttime = gettime();
     supplypod.uniqueid = function_fec0924();
     playcommanderaudio(level.var_934fb97.bundle.var_69b1ff7, player getteam());
-    playcommanderaudio(level.var_934fb97.bundle.var_4f37dfe9, util::getotherteam(player getteam()));
-    if (isdefined(level.var_934fb97.bundle.var_a0db3d4d)) {
-        supplypod playloopsound(level.var_934fb97.bundle.var_a0db3d4d);
+    playcommanderaudio(level.var_934fb97.bundle.deployedenemy, util::getotherteam(player getteam()));
+    if (isdefined(level.var_934fb97.bundle.ambientaudio)) {
+        supplypod playloopsound(level.var_934fb97.bundle.ambientaudio);
     }
     if (isdefined(level.var_934fb97.bundle.var_4f845dc4) ? level.var_934fb97.bundle.var_4f845dc4 : 0) {
         supplypod.var_134eefb9 = getobjectiveid();

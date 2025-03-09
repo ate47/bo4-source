@@ -29,7 +29,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace lightning_chain/zm_lightning_chain
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x49252a8e, Offset: 0x278
 // Size: 0x1c4
 function init() {
@@ -47,7 +47,7 @@ function init() {
 }
 
 // Namespace lightning_chain/zm_lightning_chain
-// Params 14, eflags: 0x1 linked
+// Params 14, eflags: 0x0
 // Checksum 0x144d33ca, Offset: 0x448
 // Size: 0x252
 function create_lightning_chain_params(max_arcs = 5, max_enemies_killed = 10, radius_start = 300, radius_decay = 20, head_gib_chance = 75, arc_travel_time = 0.11, kills_for_powerup = 10, min_fx_distance = 128, network_death_choke = 4, should_kill_enemies = 1, clientside_fx = 1, arc_fx_sound = undefined, no_fx = 0, prevent_weapon_kill_credit = 0) {
@@ -70,7 +70,7 @@ function create_lightning_chain_params(max_arcs = 5, max_enemies_killed = 10, ra
 }
 
 // Namespace lightning_chain/zm_lightning_chain
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xf5e01bf5, Offset: 0x6a8
 // Size: 0x7a
 function private on_player_connect() {
@@ -85,7 +85,7 @@ function private on_player_connect() {
 }
 
 // Namespace lightning_chain/zm_lightning_chain
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xc172089a, Offset: 0x730
 // Size: 0x2ce
 function arc_damage(source_enemy, player, arc_num, params = level.default_lightning_chain_params) {
@@ -126,7 +126,7 @@ function arc_damage(source_enemy, player, arc_num, params = level.default_lightn
 }
 
 // Namespace lightning_chain/zm_lightning_chain
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x9d803e9f, Offset: 0xa08
 // Size: 0x6c
 function arc_damage_ent(player, arc_num, params = level.default_lightning_chain_params) {
@@ -135,7 +135,7 @@ function arc_damage_ent(player, arc_num, params = level.default_lightning_chain_
 }
 
 // Namespace lightning_chain/zm_lightning_chain
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x6633c914, Offset: 0xa80
 // Size: 0xe4
 function private lc_end_arc_damage(arc_num, enemies_hit_num, params) {
@@ -162,7 +162,7 @@ function private lc_end_arc_damage(arc_num, enemies_hit_num, params) {
 }
 
 // Namespace lightning_chain/zm_lightning_chain
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xb3c6aa1f, Offset: 0xb70
 // Size: 0x248
 function private lc_get_enemies_in_area(origin, distance, player) {
@@ -209,7 +209,7 @@ function private lc_get_enemies_in_area(origin, distance, player) {
 }
 
 // Namespace lightning_chain/zm_lightning_chain
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x80a7b1c, Offset: 0xdc0
 // Size: 0xec
 function private lc_flag_hit(enemy, hit) {
@@ -237,7 +237,7 @@ function private lc_flag_hit(enemy, hit) {
 }
 
 // Namespace lightning_chain/zm_lightning_chain
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x6d0cf9a2, Offset: 0xeb8
 // Size: 0x4cc
 function private lc_do_damage(source_enemy, arc_num, player, params) {
@@ -314,7 +314,7 @@ function private lc_do_damage(source_enemy, arc_num, player, params) {
 }
 
 // Namespace lightning_chain/zm_lightning_chain
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x6e261932, Offset: 0x1390
 // Size: 0x174
 function private function_915d4fec(params, v_origin, player) {
@@ -332,7 +332,7 @@ function private function_915d4fec(params, v_origin, player) {
 }
 
 // Namespace lightning_chain/zm_lightning_chain
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xabeb0952, Offset: 0x1510
 // Size: 0x1dc
 function lc_play_death_fx(arc_num, params) {
@@ -369,7 +369,7 @@ function lc_play_death_fx(arc_num, params) {
 }
 
 // Namespace lightning_chain/zm_lightning_chain
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa67f3cc7, Offset: 0x16f8
 // Size: 0x29c
 function lc_play_arc_fx(target, params) {

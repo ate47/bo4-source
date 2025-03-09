@@ -1,10 +1,10 @@
 {
-    "var_2ecceeab": "#radiation_field_kill",
+    "hash_2ecceeab": "#radiation_field_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
     "name": "gadget_radiation_field_mp_scoreevents",
-    "var_e1b418c1": "ability",
-    "var_3143c814": "#radiation_field_shutdown",
-    "var_fcd2ff3a": 1
+    "customsettingstype": "ability",
+    "hash_3143c814": "#radiation_field_shutdown",
+    "hash_fcd2ff3a": 1
 }

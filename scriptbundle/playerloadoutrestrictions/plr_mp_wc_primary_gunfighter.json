@@ -1,7 +1,7 @@
 {
     "configstringfiletype": "scriptbundle",
     "type": "playerloadoutrestrictions",
-    "var_355c3581": 1,
+    "hash_355c3581": 1,
     "name": "plr_mp_wc_primary_gunfighter",
-    "var_9bb0ceab": "#bonuscard_primary_gunfighter"
+    "hash_9bb0ceab": "#bonuscard_primary_gunfighter"
 }

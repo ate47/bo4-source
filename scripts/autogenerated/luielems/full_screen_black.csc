@@ -7,7 +7,7 @@
 class cfull_screen_black : cluielem {
 
     // Namespace cfull_screen_black/full_screen_black
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xa96a7069, Offset: 0x810
     // Size: 0x30
     function set_drawhud(localclientnum, value) {
@@ -15,7 +15,7 @@ class cfull_screen_black : cluielem {
     }
 
     // Namespace cfull_screen_black/full_screen_black
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x762135ca, Offset: 0x7d8
     // Size: 0x30
     function set_endalpha(localclientnum, value) {
@@ -23,7 +23,7 @@ class cfull_screen_black : cluielem {
     }
 
     // Namespace cfull_screen_black/full_screen_black
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x2f79870b, Offset: 0x7a0
     // Size: 0x30
     function set_startalpha(localclientnum, value) {
@@ -31,7 +31,7 @@ class cfull_screen_black : cluielem {
     }
 
     // Namespace cfull_screen_black/full_screen_black
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x780c8161, Offset: 0x768
     // Size: 0x30
     function set_fadeovertime(localclientnum, value) {
@@ -39,7 +39,7 @@ class cfull_screen_black : cluielem {
     }
 
     // Namespace cfull_screen_black/full_screen_black
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x51e86f79, Offset: 0x730
     // Size: 0x30
     function set_blue(localclientnum, value) {
@@ -47,7 +47,7 @@ class cfull_screen_black : cluielem {
     }
 
     // Namespace cfull_screen_black/full_screen_black
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x87efab85, Offset: 0x6f8
     // Size: 0x30
     function set_green(localclientnum, value) {
@@ -55,7 +55,7 @@ class cfull_screen_black : cluielem {
     }
 
     // Namespace cfull_screen_black/full_screen_black
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x59bf51d1, Offset: 0x6c0
     // Size: 0x30
     function set_red(localclientnum, value) {
@@ -63,7 +63,7 @@ class cfull_screen_black : cluielem {
     }
 
     // Namespace cfull_screen_black/full_screen_black
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x1f1f9b49, Offset: 0x688
     // Size: 0x2c
     function open(localclientnum) {
@@ -71,7 +71,7 @@ class cfull_screen_black : cluielem {
     }
 
     // Namespace cfull_screen_black/full_screen_black
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xd53fce31, Offset: 0x570
     // Size: 0x110
     function function_fa582112(localclientnum) {
@@ -86,7 +86,7 @@ class cfull_screen_black : cluielem {
     }
 
     // Namespace cfull_screen_black/full_screen_black
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x805bb644, Offset: 0x540
     // Size: 0x24
     function register_clientside(uid) {
@@ -94,7 +94,7 @@ class cfull_screen_black : cluielem {
     }
 
     // Namespace cfull_screen_black/full_screen_black
-    // Params 8, eflags: 0x1 linked
+    // Params 8, eflags: 0x0
     // Checksum 0xb7350a45, Offset: 0x3c0
     // Size: 0x174
     function setup_clientfields(uid, redcallback, greencallback, bluecallback, fadeovertimecallback, var_b046940, var_34291db, var_32445b2) {
@@ -111,7 +111,7 @@ class cfull_screen_black : cluielem {
 }
 
 // Namespace full_screen_black/full_screen_black
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x320d2459, Offset: 0xf0
 // Size: 0x94
 function register(uid, redcallback, greencallback, bluecallback, fadeovertimecallback, var_b046940, var_34291db, var_32445b2) {

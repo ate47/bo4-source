@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_powerup_zombie_blood/zm_powerup_zombie_blood
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe4d08031, Offset: 0x1b0
 // Size: 0x134
 function __init__() {
@@ -30,7 +30,7 @@ function __init__() {
 }
 
 // Namespace zm_powerup_zombie_blood/zm_powerup_zombie_blood
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5b79fa75, Offset: 0x2f0
 // Size: 0x374
 function toggle_player_zombie_blood_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

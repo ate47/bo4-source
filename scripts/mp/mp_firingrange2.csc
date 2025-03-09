@@ -29,7 +29,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_firingrange2/mp_firingrange2
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x64a5929d, Offset: 0x2c0
 // Size: 0xf2
 function dom_flag_base_fx_override(flag, team) {
@@ -59,7 +59,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_firingrange2/mp_firingrange2
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdd52af52, Offset: 0x3c0
 // Size: 0xf2
 function dom_flag_cap_fx_override(flag, team) {

@@ -5,6 +5,6 @@
     "name": "medal_gunship_killjoy",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#ui_icon_medal_destroy_gunship",
-    "stringref": "#hash_5e5f8a4e6890e672",
+    "stringref": "#medal/gunship_killjoy",
     "iconlarge": "#ui_icon_medal_destroy_gunship_large"
 }

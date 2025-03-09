@@ -7,7 +7,7 @@
 #namespace zm_orange_mq_fuse;
 
 // Namespace zm_orange_mq_fuse/zm_orange_mq_fuse
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9659cff5, Offset: 0xf8
 // Size: 0xa4
 function preload() {
@@ -26,7 +26,7 @@ function main() {
 }
 
 // Namespace zm_orange_mq_fuse/zm_orange_mq_fuse
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x43474752, Offset: 0x1b8
 // Size: 0x184
 function init_clientfields() {
@@ -37,7 +37,7 @@ function init_clientfields() {
 }
 
 // Namespace zm_orange_mq_fuse/zm_orange_mq_fuse
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x542ee9b0, Offset: 0x348
 // Size: 0xac
 function elemental_shard_glow(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

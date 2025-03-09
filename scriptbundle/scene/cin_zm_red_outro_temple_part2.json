@@ -45,8 +45,8 @@
     "name": "cin_zm_red_outro_temple_part2",
     "dontsync": 1,
     "disablesceneskipping": 1,
-    "var_241c5f3c": 1,
-    "var_a6da2039": "cin_zm_red_outro_temple_part2",
+    "hash_241c5f3c": 1,
+    "hash_a6da2039": "cin_zm_red_outro_temple_part2",
     "aligntarget": "tag_align_red_temple",
     "ignorestreamer": 1,
     "team": "any"

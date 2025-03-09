@@ -136,7 +136,7 @@ function function_ff357d24() {
 // Checksum 0xc7055468, Offset: 0x610
 // Size: 0x4c
 function give_loadout() {
-    self function_e6f9e3cd();
+    self cleartalents();
     self clearperks();
     self function_ff357d24();
 }

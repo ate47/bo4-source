@@ -45,7 +45,7 @@ function private autoexec function_88c28903() {
 }
 
 // Namespace zm_zodt8_trials/zm_zodt8_trials
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xaca45a51, Offset: 0x1d0
 // Size: 0x71e
 function private function_6bf7d04f(var_c766fbe6) {
@@ -104,12 +104,12 @@ function private function_6bf7d04f(var_c766fbe6) {
             }
         } else if (player_count == 1) {
             var_c766fbe6[#"blight_father"] = 3;
-            var_c766fbe6[#"stoker"] = var_c766fbe6[#"stoker"] + 2;
-            var_c766fbe6[#"catalyst"] = var_c766fbe6[#"catalyst"] + 8;
+            var_c766fbe6[#"stoker"] += 2;
+            var_c766fbe6[#"catalyst"] += 8;
         } else {
             var_c766fbe6[#"blight_father"] = 8;
-            var_c766fbe6[#"stoker"] = var_c766fbe6[#"stoker"] + 4;
-            var_c766fbe6[#"catalyst"] = var_c766fbe6[#"catalyst"] + 16;
+            var_c766fbe6[#"stoker"] += 4;
+            var_c766fbe6[#"catalyst"] += 16;
         }
     }
     return var_c766fbe6;

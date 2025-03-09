@@ -5,7 +5,7 @@
 #namespace zm_mansion_sound;
 
 // Namespace zm_mansion_sound/zm_mansion_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9a54727d, Offset: 0xc0
 // Size: 0x14
 function main() {
@@ -13,7 +13,7 @@ function main() {
 }
 
 // Namespace zm_mansion_sound/zm_mansion_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x973614a4, Offset: 0xe0
 // Size: 0x15c
 function startzmbspawnersoundloops() {
@@ -42,7 +42,7 @@ function startzmbspawnersoundloops() {
 }
 
 // Namespace zm_mansion_sound/zm_mansion_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2bd61ad5, Offset: 0x248
 // Size: 0x18a
 function soundloopthink() {

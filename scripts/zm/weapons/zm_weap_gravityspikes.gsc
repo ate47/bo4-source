@@ -29,15 +29,15 @@
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
 // Params 0, eflags: 0x2
-// Checksum 0x305b5461, Offset: 0x440
+// Checksum 0x51fe158f, Offset: 0x440
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zm_weap_gravityspikes", &__init__, undefined, undefined);
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x1 linked
-// Checksum 0xf3031af7, Offset: 0x488
+// Params 0, eflags: 0x0
+// Checksum 0x1aa102e1, Offset: 0x488
 // Size: 0x2ac
 function __init__() {
     level.hero_weapon[#"gravityspikes"][0] = getweapon(#"hero_gravityspikes_t8_lv1");
@@ -64,8 +64,8 @@ function __init__() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x1 linked
-// Checksum 0x2a201ec5, Offset: 0x740
+// Params 0, eflags: 0x0
+// Checksum 0x71943781, Offset: 0x740
 // Size: 0x2d4
 function register_clientfields() {
     clientfield::register("actor", "gravity_slam_down", 1, 1, "int");
@@ -86,8 +86,8 @@ function register_clientfields() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 2, eflags: 0x1 linked
-// Checksum 0xa0c9d18c, Offset: 0xa20
+// Params 2, eflags: 0x0
+// Checksum 0xace3ec3a, Offset: 0xa20
 // Size: 0xcc
 function function_4d17107b(weapon, var_e7c11b0c = 1) {
     if (weapon == level.hero_weapon[#"gravityspikes"][2]) {
@@ -103,8 +103,8 @@ function function_4d17107b(weapon, var_e7c11b0c = 1) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x1 linked
-// Checksum 0x5f773141, Offset: 0xaf8
+// Params 0, eflags: 0x0
+// Checksum 0x11acaf3f, Offset: 0xaf8
 // Size: 0x398
 function function_326aec56() {
     self endon(#"disconnect");
@@ -152,8 +152,8 @@ function function_326aec56() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x5 linked
-// Checksum 0x8a437749, Offset: 0xe98
+// Params 0, eflags: 0x4
+// Checksum 0x45889ecb, Offset: 0xe98
 // Size: 0x98
 function private function_5a6c0fea() {
     self endon(#"disconnect");
@@ -167,8 +167,8 @@ function private function_5a6c0fea() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0xe2932e40, Offset: 0xf38
+// Params 1, eflags: 0x4
+// Checksum 0x1f013e67, Offset: 0xf38
 // Size: 0x154
 function private function_e0537f19(w_gravityspikes) {
     self notify("3e6e1fb0a555c2a5");
@@ -192,8 +192,8 @@ function private function_e0537f19(w_gravityspikes) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 2, eflags: 0x1 linked
-// Checksum 0x248bb878, Offset: 0x1098
+// Params 2, eflags: 0x0
+// Checksum 0xec4c8362, Offset: 0x1098
 // Size: 0x128
 function gravityspikes_attack_watcher(w_gravityspikes, n_level) {
     self endon(#"disconnect", #"bled_out", #"death", #"gravity_spike_expired");
@@ -212,8 +212,8 @@ function gravityspikes_attack_watcher(w_gravityspikes, n_level) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0x7920acdf, Offset: 0x11c8
+// Params 1, eflags: 0x4
+// Checksum 0x2d244f28, Offset: 0x11c8
 // Size: 0x174
 function private knockdown_zombies_slam(var_52b14308) {
     v_forward = anglestoforward(self getplayerangles());
@@ -228,8 +228,8 @@ function private knockdown_zombies_slam(var_52b14308) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0x18a7aa76, Offset: 0x1348
+// Params 1, eflags: 0x4
+// Checksum 0x3a887597, Offset: 0x1348
 // Size: 0xa4
 function private play_slam_fx(v_pos) {
     mdl_fx_pos = util::spawn_model("tag_origin", v_pos, (-90, 0, 0));
@@ -243,8 +243,8 @@ function private play_slam_fx(v_pos) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0xf6d95971, Offset: 0x13f8
+// Params 1, eflags: 0x4
+// Checksum 0x93b5dfce, Offset: 0x13f8
 // Size: 0x6c
 function private zombie_slam_direction(v_position) {
     self endon(#"death");
@@ -255,8 +255,8 @@ function private zombie_slam_direction(v_position) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 11, eflags: 0x5 linked
-// Checksum 0xdcbfdc7, Offset: 0x1470
+// Params 11, eflags: 0x4
+// Checksum 0x4d30b07f, Offset: 0x1470
 // Size: 0x94
 function private player_invulnerable_during_gravityspike_slam(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex) {
     if (self.n_gravityspikes_state === 1 && isdefined(self.gravityspikes_slam) && self.gravityspikes_slam) {
@@ -266,8 +266,8 @@ function private player_invulnerable_during_gravityspike_slam(einflictor, eattac
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x5 linked
-// Checksum 0xf3995558, Offset: 0x1510
+// Params 0, eflags: 0x4
+// Checksum 0xf9defccd, Offset: 0x1510
 // Size: 0x3a
 function private no_damage_gravityspikes_slam() {
     self endon(#"disconnect");
@@ -277,8 +277,8 @@ function private no_damage_gravityspikes_slam() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x5 linked
-// Checksum 0x71b82740, Offset: 0x1558
+// Params 0, eflags: 0x4
+// Checksum 0x75f3efd6, Offset: 0x1558
 // Size: 0x4ba
 function private gravityspikes_stuck_above_zombie_watcher() {
     self notify("3582bc9c4933ff9f");
@@ -331,8 +331,8 @@ function private gravityspikes_stuck_above_zombie_watcher() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x1 linked
-// Checksum 0xf3a63e55, Offset: 0x1a20
+// Params 1, eflags: 0x0
+// Checksum 0x3828947, Offset: 0x1a20
 // Size: 0x122
 function gravityspikes_altfire_watcher(w_gravityspikes) {
     self endon(#"disconnect", #"bled_out", #"death", #"gravity_spike_expired", #"gravity_spike_planted");
@@ -349,8 +349,8 @@ function gravityspikes_altfire_watcher(w_gravityspikes) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0x9599611d, Offset: 0x1b50
+// Params 1, eflags: 0x4
+// Checksum 0xa720e1e1, Offset: 0x1b50
 // Size: 0x334
 function private function_26a4b7f5(w_gravityspikes) {
     self endon(#"disconnect", #"gravity_spike_expired", #"gravity_spike_planted");
@@ -361,7 +361,7 @@ function private function_26a4b7f5(w_gravityspikes) {
         var_b735005c = arraygetclosest(self.origin, getaiteamarray(level.zombie_team), 200);
         a_ai_zombies = array::get_all_closest(self.origin, getaiteamarray(level.zombie_team), undefined, undefined, 200);
         foreach (ai_zombie in a_ai_zombies) {
-            if (isalive(ai_zombie) && (ai_zombie.var_6f84b820 == #"basic" || ai_zombie.var_6f84b820 == #"enhanced") && math::cointoss()) {
+            if (isalive(ai_zombie) && (ai_zombie.zm_ai_category == #"basic" || ai_zombie.zm_ai_category == #"enhanced") && math::cointoss()) {
                 ai_zombie thread zombie_utility::setup_zombie_knockdown(v_pos);
             }
         }
@@ -369,7 +369,7 @@ function private function_26a4b7f5(w_gravityspikes) {
             wait 0.2;
             continue;
         }
-        if (var_b735005c.var_6f84b820 == #"basic" || var_b735005c.var_6f84b820 == #"popcorn" || var_b735005c.var_6f84b820 == #"enhanced") {
+        if (var_b735005c.zm_ai_category == #"basic" || var_b735005c.zm_ai_category == #"popcorn" || var_b735005c.zm_ai_category == #"enhanced") {
             while (isalive(var_b735005c)) {
                 var_b735005c thread function_6a21cc79(self, w_gravityspikes);
                 wait 0.2;
@@ -383,12 +383,12 @@ function private function_26a4b7f5(w_gravityspikes) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 2, eflags: 0x5 linked
-// Checksum 0xbaf28221, Offset: 0x1e90
+// Params 2, eflags: 0x4
+// Checksum 0x8cd04095, Offset: 0x1e90
 // Size: 0x30c
 function private function_6a21cc79(e_player, w_gravityspikes) {
     self endon(#"death");
-    if (self.var_6f84b820 == #"basic" || self.var_6f84b820 == #"enhanced") {
+    if (self.zm_ai_category == #"basic" || self.zm_ai_category == #"enhanced") {
         [[ level.ai_gravity_throttle ]]->waitinqueue(self);
         n_damage = self.maxhealth * 0.25;
         self clientfield::increment("gravity_aoe_impact_tu6");
@@ -400,13 +400,13 @@ function private function_6a21cc79(e_player, w_gravityspikes) {
         }
         return;
     }
-    if (self.var_6f84b820 == #"popcorn") {
+    if (self.zm_ai_category == #"popcorn") {
         self clientfield::increment("gravity_aoe_impact_tu6");
         [[ level.ai_gravity_throttle ]]->waitinqueue(self);
         self dodamage(self.health + 100, self.origin, e_player, e_player, "head", "MOD_ELECTROCUTED", 0, w_gravityspikes);
         return;
     }
-    if (self.var_6f84b820 == #"miniboss" || self.var_6f84b820 == #"boss") {
+    if (self.zm_ai_category == #"miniboss" || self.zm_ai_category == #"boss") {
         self clientfield::increment("gravity_aoe_impact_tu6");
         [[ level.ai_gravity_throttle ]]->waitinqueue(self);
         self dodamage(self.maxhealth * 0.1, self.origin, e_player, e_player, "head", "MOD_ELECTROCUTED", 0, w_gravityspikes);
@@ -418,8 +418,8 @@ function private function_6a21cc79(e_player, w_gravityspikes) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0x570dd545, Offset: 0x21a8
+// Params 1, eflags: 0x4
+// Checksum 0x52ce3d1b, Offset: 0x21a8
 // Size: 0x13c
 function private electrocute_actor(ai_zombie) {
     self endon(#"disconnect");
@@ -441,8 +441,8 @@ function private electrocute_actor(ai_zombie) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 2, eflags: 0x5 linked
-// Checksum 0x555e9872, Offset: 0x22f0
+// Params 2, eflags: 0x4
+// Checksum 0xf02fb103, Offset: 0x22f0
 // Size: 0x5c
 function private arc_damage_init(ai_zombie, params) {
     self endon(#"disconnect");
@@ -453,8 +453,8 @@ function private arc_damage_init(ai_zombie, params) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0xc88ce031, Offset: 0x2358
+// Params 1, eflags: 0x4
+// Checksum 0x7e875422, Offset: 0x2358
 // Size: 0x14c
 function private tesla_death(e_player) {
     self endon(#"death");
@@ -476,8 +476,8 @@ function private tesla_death(e_player) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x5 linked
-// Checksum 0x37089d8f, Offset: 0x24b0
+// Params 0, eflags: 0x4
+// Checksum 0x7ddf680d, Offset: 0x24b0
 // Size: 0x134
 function private function_cc9e1996() {
     self notify("3e6df5bd8abc99d1");
@@ -501,8 +501,8 @@ function private function_cc9e1996() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x1 linked
-// Checksum 0xbdc01303, Offset: 0x25f0
+// Params 1, eflags: 0x0
+// Checksum 0x6a928b0d, Offset: 0x25f0
 // Size: 0x154
 function function_28be8532(w_gravityspikes) {
     self endon(#"disconnect", #"bled_out", #"death", #"gravity_spike_expired", #"hash_55b145e95edc2ebe");
@@ -523,8 +523,8 @@ function function_28be8532(w_gravityspikes) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x5 linked
-// Checksum 0xc2f014c7, Offset: 0x2750
+// Params 0, eflags: 0x4
+// Checksum 0x59910e95, Offset: 0x2750
 // Size: 0x48
 function private gravity_spike_position_valid() {
     if (!ispointonnavmesh(self.origin, self)) {
@@ -537,8 +537,8 @@ function private gravity_spike_position_valid() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x5 linked
-// Checksum 0xcf632914, Offset: 0x27a0
+// Params 0, eflags: 0x4
+// Checksum 0x6ea3c7e0, Offset: 0x27a0
 // Size: 0x282
 function private player_near_gravity_vortex() {
     self endon(#"disconnect", #"bled_out", #"death", #"gravity_spike_expired");
@@ -567,16 +567,16 @@ function private player_near_gravity_vortex() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x1 linked
-// Checksum 0x95f01b60, Offset: 0x2a30
+// Params 0, eflags: 0x0
+// Checksum 0x867c5324, Offset: 0x2a30
 // Size: 0x1c
 function function_984185e0() {
     self thread function_fa0a1b19();
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x1 linked
-// Checksum 0x70bd6c69, Offset: 0x2a58
+// Params 0, eflags: 0x0
+// Checksum 0x66f9a779, Offset: 0x2a58
 // Size: 0xb6
 function function_fa0a1b19() {
     if (!isdefined(self.var_f9c533d9)) {
@@ -592,8 +592,8 @@ function function_fa0a1b19() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0x5074cf28, Offset: 0x2b18
+// Params 1, eflags: 0x4
+// Checksum 0x3fc385bc, Offset: 0x2b18
 // Size: 0xa4
 function private function_23494ff7(e_revivee) {
     if (!(isdefined(e_revivee.var_4fc8bf2a) && e_revivee.var_4fc8bf2a)) {
@@ -608,8 +608,8 @@ function private function_23494ff7(e_revivee) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0xd8d15adb, Offset: 0x2bc8
+// Params 1, eflags: 0x4
+// Checksum 0x345abc47, Offset: 0x2bc8
 // Size: 0x8c
 function private function_9c510b18(e_revivee) {
     e_revivee endon(#"disconnect", #"death", #"bledout", #"stop_revive_trigger");
@@ -618,8 +618,8 @@ function private function_9c510b18(e_revivee) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x1 linked
-// Checksum 0xc6ca4d9d, Offset: 0x2c60
+// Params 1, eflags: 0x0
+// Checksum 0xb2f9a75, Offset: 0x2c60
 // Size: 0x62
 function override_revive_time(e_revivee) {
     n_time = 3;
@@ -632,8 +632,8 @@ function override_revive_time(e_revivee) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x1 linked
-// Checksum 0xba1e2718, Offset: 0x2cd0
+// Params 1, eflags: 0x0
+// Checksum 0x517f53a, Offset: 0x2cd0
 // Size: 0x62
 function function_569653b(s_params) {
     if (self != level) {
@@ -649,8 +649,8 @@ function function_569653b(s_params) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x1 linked
-// Checksum 0x63708391, Offset: 0x2d40
+// Params 1, eflags: 0x0
+// Checksum 0x5553ecd0, Offset: 0x2d40
 // Size: 0x1a0
 function function_d5c9a81(e_revivee) {
     if (!isdefined(e_revivee.revivetrigger)) {
@@ -687,8 +687,8 @@ function function_d5c9a81(e_revivee) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x1 linked
-// Checksum 0x5fef76b4, Offset: 0x2ee8
+// Params 1, eflags: 0x0
+// Checksum 0xe3aeb4f6, Offset: 0x2ee8
 // Size: 0x36
 function function_957545d8(perk) {
     self thread zm_perks::function_b2dfd295(perk, &function_1049648d);
@@ -696,16 +696,16 @@ function function_957545d8(perk) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 2, eflags: 0x1 linked
-// Checksum 0xe476a844, Offset: 0x2f28
+// Params 2, eflags: 0x0
+// Checksum 0x89f2897, Offset: 0x2f28
 // Size: 0x28
 function function_1049648d(e_reviver, var_84280a99) {
     return isdefined(self.var_fed415aa) && self.var_fed415aa;
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x1 linked
-// Checksum 0x34aebb74, Offset: 0x2f58
+// Params 1, eflags: 0x0
+// Checksum 0xabeb904f, Offset: 0x2f58
 // Size: 0x472
 function plant_gravity_trap(w_gravityspikes) {
     self endoncallback(&function_c9830e97, #"bled_out", #"death");
@@ -748,8 +748,8 @@ function plant_gravity_trap(w_gravityspikes) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x1 linked
-// Checksum 0x74fb20d2, Offset: 0x33d8
+// Params 1, eflags: 0x0
+// Checksum 0x37884d51, Offset: 0x33d8
 // Size: 0x34
 function function_c9830e97(var_c34665fc) {
     if (isdefined(self.b_gravity_trap_spikes_in_ground) && self.b_gravity_trap_spikes_in_ground) {
@@ -758,8 +758,8 @@ function function_c9830e97(var_c34665fc) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0x50c6c1e2, Offset: 0x3418
+// Params 1, eflags: 0x4
+// Checksum 0x11434a19, Offset: 0x3418
 // Size: 0x14c
 function private gravity_trap_loop(w_gravityspikes) {
     self endon(#"disconnect", #"bled_out", #"death");
@@ -782,8 +782,8 @@ function private gravity_trap_loop(w_gravityspikes) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0xb2d2b16c, Offset: 0x3570
+// Params 1, eflags: 0x4
+// Checksum 0xd53d804b, Offset: 0x3570
 // Size: 0x1cc
 function private gravity_trap_check(player) {
     player endon(#"disconnect", #"bled_out", #"death");
@@ -810,8 +810,8 @@ function private gravity_trap_check(player) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0x4fc0311b, Offset: 0x3748
+// Params 1, eflags: 0x4
+// Checksum 0x43873c4a, Offset: 0x3748
 // Size: 0x21a
 function private create_gravity_trap_spikes_in_ground(a_s_spawn_pos) {
     if (!isdefined(self.mdl_gravity_trap_spikes)) {
@@ -837,8 +837,8 @@ function private create_gravity_trap_spikes_in_ground(a_s_spawn_pos) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x5 linked
-// Checksum 0xa06cadcb, Offset: 0x3970
+// Params 0, eflags: 0x4
+// Checksum 0xe30df921, Offset: 0x3970
 // Size: 0x7c
 function private gravity_spike_planted_play() {
     self endon(#"death");
@@ -848,8 +848,8 @@ function private gravity_spike_planted_play() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x5 linked
-// Checksum 0xc7cf949d, Offset: 0x39f8
+// Params 0, eflags: 0x4
+// Checksum 0x3b5d1acb, Offset: 0x39f8
 // Size: 0x17e
 function private destroy_gravity_trap_spikes_in_ground() {
     mdl_spike_source = self.mdl_gravity_trap_fx_source;
@@ -875,8 +875,8 @@ function private destroy_gravity_trap_spikes_in_ground() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0x4a18f1e7, Offset: 0x3b80
+// Params 1, eflags: 0x4
+// Checksum 0x4746121c, Offset: 0x3b80
 // Size: 0x144
 function private gravity_trap_fx_on(s_spawn_pos) {
     self endoncallback(&function_f1c63c4c, #"disconnect");
@@ -894,8 +894,8 @@ function private gravity_trap_fx_on(s_spawn_pos) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x1 linked
-// Checksum 0xc51f83b7, Offset: 0x3cd0
+// Params 1, eflags: 0x0
+// Checksum 0x2f98ba57, Offset: 0x3cd0
 // Size: 0x34
 function function_f1c63c4c(str_notify) {
     if (isdefined(self.mdl_gravity_trap_fx_source)) {
@@ -904,8 +904,8 @@ function function_f1c63c4c(str_notify) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x5 linked
-// Checksum 0x1aba8add, Offset: 0x3d10
+// Params 0, eflags: 0x4
+// Checksum 0x581562f1, Offset: 0x3d10
 // Size: 0x74
 function private gravity_trap_fx_off() {
     if (!isdefined(self.mdl_gravity_trap_fx_source)) {
@@ -917,16 +917,16 @@ function private gravity_trap_fx_off() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x1 linked
-// Checksum 0xece5453c, Offset: 0x3d90
+// Params 1, eflags: 0x0
+// Checksum 0xfe5b577d, Offset: 0x3d90
 // Size: 0x1a
 function update_gravityspikes_state(n_gravityspikes_state) {
     self.n_gravityspikes_state = n_gravityspikes_state;
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 3, eflags: 0x5 linked
-// Checksum 0x7f0e8a5c, Offset: 0x3db8
+// Params 3, eflags: 0x4
+// Checksum 0x3b0e18a, Offset: 0x3db8
 // Size: 0xee
 function private check_for_range_and_los(v_attack_source, n_allowed_z_diff, n_radius_sq) {
     if (isalive(self)) {
@@ -944,8 +944,8 @@ function private check_for_range_and_los(v_attack_source, n_allowed_z_diff, n_ra
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0x42bc3ca3, Offset: 0x3eb0
+// Params 1, eflags: 0x4
+// Checksum 0x43550210, Offset: 0x3eb0
 // Size: 0x46
 function private gravityspikes_target_filtering(ai_enemy) {
     b_callback_result = 1;
@@ -956,8 +956,8 @@ function private gravityspikes_target_filtering(ai_enemy) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 6, eflags: 0x5 linked
-// Checksum 0x377b2d7e, Offset: 0x3f00
+// Params 6, eflags: 0x4
+// Checksum 0x4b991ac, Offset: 0x3f00
 // Size: 0xf64
 function private zombie_lift(player, v_attack_source, n_push_away, n_lift_height, v_lift_offset, n_lift_speed) {
     self endon(#"death");
@@ -966,17 +966,17 @@ function private zombie_lift(player, v_attack_source, n_push_away, n_lift_height
         self thread [[ self.zombie_lift_override ]](player, v_attack_source, n_push_away, n_lift_height, v_lift_offset, n_lift_speed);
         return;
     }
-    if (!isdefined(self) || !isdefined(self.var_6f84b820)) {
+    if (!isdefined(self) || !isdefined(self.zm_ai_category)) {
         return;
     }
-    if (self.var_6f84b820 === #"popcorn") {
+    if (self.zm_ai_category === #"popcorn") {
         [[ level.ai_gravity_throttle ]]->waitinqueue(self);
         self.no_powerups = 1;
         self dodamage(self.health + 100, self.origin, player, player, "head", "MOD_ELECTROCUTED", 0, w_gravityspikes);
         self playsound("wpn_dg4_electrocution_impact");
         return;
     }
-    if (self.var_6f84b820 === #"miniboss") {
+    if (self.zm_ai_category === #"miniboss") {
         [[ level.ai_gravity_throttle ]]->waitinqueue(self);
         if (isalive(self) && isdefined(self.b_melee_kill) && self.b_melee_kill && !(isdefined(self.var_5bf7575e) && self.var_5bf7575e) && !(isdefined(player.b_gravity_trap_spikes_in_ground) && player.b_gravity_trap_spikes_in_ground)) {
             self dodamage(self.maxhealth * 0.1, self.origin, player, player, "head", "MOD_ELECTROCUTED", 0, w_gravityspikes);
@@ -1021,7 +1021,7 @@ function private zombie_lift(player, v_attack_source, n_push_away, n_lift_height
         }
         return;
     }
-    if (self.var_6f84b820 === #"boss") {
+    if (self.zm_ai_category === #"boss") {
         if (isalive(self) && isdefined(self.b_melee_kill) && self.b_melee_kill && !(isdefined(self.var_5bf7575e) && self.var_5bf7575e) && !(isdefined(player.b_gravity_trap_spikes_in_ground) && player.b_gravity_trap_spikes_in_ground)) {
             [[ level.ai_gravity_throttle ]]->waitinqueue(self);
             self dodamage(self.maxhealth * 0.05, self.origin, player, player, "head", "MOD_ELECTROCUTED", 0, w_gravityspikes);
@@ -1117,8 +1117,8 @@ function private zombie_lift(player, v_attack_source, n_push_away, n_lift_height
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x1 linked
-// Checksum 0x28ad8fd4, Offset: 0x4e70
+// Params 1, eflags: 0x0
+// Checksum 0xf174f9c0, Offset: 0x4e70
 // Size: 0x3c
 function function_8d31d238(a_ents) {
     self waittill(#"scene_done");
@@ -1128,8 +1128,8 @@ function function_8d31d238(a_ents) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0x2949d8de, Offset: 0x4eb8
+// Params 1, eflags: 0x4
+// Checksum 0x9cbdfd71, Offset: 0x4eb8
 // Size: 0x9e
 function private gravity_trap_notify_watcher(player) {
     self endon(#"gravity_trap_complete");
@@ -1141,8 +1141,8 @@ function private gravity_trap_notify_watcher(player) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x5 linked
-// Checksum 0xb49c2850, Offset: 0x4f60
+// Params 0, eflags: 0x4
+// Checksum 0x9122bafb, Offset: 0x4f60
 // Size: 0x9e
 function private gravity_trap_timeout_watcher() {
     self endon(#"gravity_trap_complete");
@@ -1154,8 +1154,8 @@ function private gravity_trap_timeout_watcher() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 2, eflags: 0x5 linked
-// Checksum 0x9a0c006c, Offset: 0x5008
+// Params 2, eflags: 0x4
+// Checksum 0x791981c3, Offset: 0x5008
 // Size: 0x16c
 function private zombie_lift_wacky_rotate(n_lift_time, player) {
     player endon(#"gravity_spike_expired");
@@ -1169,8 +1169,8 @@ function private zombie_lift_wacky_rotate(n_lift_time, player) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0x1f120153, Offset: 0x5180
+// Params 1, eflags: 0x4
+// Checksum 0x331d7bb9, Offset: 0x5180
 // Size: 0x19c
 function private zombie_kill_and_gib(player) {
     self endon(#"death");
@@ -1196,8 +1196,8 @@ function private zombie_kill_and_gib(player) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x5 linked
-// Checksum 0xb67b73c5, Offset: 0x5328
+// Params 0, eflags: 0x4
+// Checksum 0xa145fb0a, Offset: 0x5328
 // Size: 0x40
 function private track_lifted_for_ragdoll_count() {
     level.n_zombies_lifted_for_ragdoll++;
@@ -1206,12 +1206,12 @@ function private track_lifted_for_ragdoll_count() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0xf818c663, Offset: 0x5370
+// Params 1, eflags: 0x4
+// Checksum 0xd7305a18, Offset: 0x5370
 // Size: 0x154
 function private corpse_off_navmesh_watcher(n_timeout) {
     self.b_ignore_cleanup = 1;
-    if (self.var_6f84b820 !== #"basic" && self.var_6f84b820 !== #"enhanced") {
+    if (self.zm_ai_category !== #"basic" && self.zm_ai_category !== #"enhanced") {
         return;
     }
     s_result = self waittilltimeout(n_timeout, #"actor_corpse", #"deleted");
@@ -1228,8 +1228,8 @@ function private corpse_off_navmesh_watcher(n_timeout) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x5 linked
-// Checksum 0x2e05e9af, Offset: 0x54d0
+// Params 0, eflags: 0x4
+// Checksum 0xba78e016, Offset: 0x54d0
 // Size: 0xcc
 function private do_zombie_explode() {
     waitframe(1);
@@ -1248,8 +1248,8 @@ function private do_zombie_explode() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 3, eflags: 0x5 linked
-// Checksum 0x8009ab7a, Offset: 0x55a8
+// Params 3, eflags: 0x4
+// Checksum 0x2d3bc842, Offset: 0x55a8
 // Size: 0xbc
 function private gravity_spike_melee_kill(v_position, player, var_52b14308) {
     self.b_melee_kill = 1;
@@ -1260,8 +1260,8 @@ function private gravity_spike_melee_kill(v_position, player, var_52b14308) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x1 linked
-// Checksum 0xd082ab86, Offset: 0x5670
+// Params 1, eflags: 0x0
+// Checksum 0x72fa8131, Offset: 0x5670
 // Size: 0xcc
 function function_478a4910(w_gravityspikes) {
     self endon(#"disconnect", #"bled_out", #"death", #"gravity_spike_expired", #"gravity_spike_planted");

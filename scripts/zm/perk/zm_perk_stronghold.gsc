@@ -22,7 +22,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7e854e83, Offset: 0x1f0
 // Size: 0x34
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x230
 // Size: 0x4
 function __main__() {
@@ -39,7 +39,7 @@ function __main__() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6cb78a41, Offset: 0x240
 // Size: 0x23c
 function enable_stronghold_perk_for_level() {
@@ -56,7 +56,7 @@ function enable_stronghold_perk_for_level() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x488
 // Size: 0x4
 function init_stronghold() {
@@ -64,7 +64,7 @@ function init_stronghold() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc251b800, Offset: 0x498
 // Size: 0x10e
 function function_e03779ee() {
@@ -80,7 +80,7 @@ function function_e03779ee() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe5d75b42, Offset: 0x5b0
 // Size: 0x44
 function function_356a31cb() {
@@ -88,7 +88,7 @@ function function_356a31cb() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xff41f720, Offset: 0x600
 // Size: 0xc
 function function_721cc6dc(state) {
@@ -96,7 +96,7 @@ function function_721cc6dc(state) {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x4462d83a, Offset: 0x618
 // Size: 0xb6
 function function_f15d3355(use_trigger, perk_machine, bump_trigger, collision) {
@@ -112,7 +112,7 @@ function function_f15d3355(use_trigger, perk_machine, bump_trigger, collision) {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf0bcc693, Offset: 0x6d8
 // Size: 0x1c
 function function_1dd08a86() {
@@ -120,7 +120,7 @@ function function_1dd08a86() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x29fbb24b, Offset: 0x700
 // Size: 0x54
 function function_9a3871b7(b_pause, str_perk, str_result, n_slot) {
@@ -129,7 +129,7 @@ function function_9a3871b7(b_pause, str_perk, str_result, n_slot) {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbdddc9c6, Offset: 0x760
 // Size: 0x1e8
 function function_7424eebb() {
@@ -158,7 +158,7 @@ function function_7424eebb() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7b16f7df, Offset: 0x950
 // Size: 0x76
 function function_7b5fc171() {
@@ -171,7 +171,7 @@ function function_7b5fc171() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7875b35f, Offset: 0x9d0
 // Size: 0xd4
 function function_a84fcb78(var_3a553e99) {
@@ -188,7 +188,7 @@ function function_a84fcb78(var_3a553e99) {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x18af00ea, Offset: 0xab0
 // Size: 0x3c
 function add_armor() {
@@ -196,7 +196,7 @@ function add_armor() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe7f3c346, Offset: 0xaf8
 // Size: 0x5a
 function function_c25b980c() {
@@ -208,7 +208,7 @@ function function_c25b980c() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x8f4a6873, Offset: 0xb60
 // Size: 0x98
 function function_11154900(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

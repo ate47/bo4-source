@@ -1,7 +1,7 @@
 #namespace perks;
 
 // Namespace perks/perks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8219a3d3, Offset: 0x68
 // Size: 0xd4
 function perk_setperk(str_perk) {
@@ -18,7 +18,7 @@ function perk_setperk(str_perk) {
 }
 
 // Namespace perks/perks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x789e35b0, Offset: 0x148
 // Size: 0xb4
 function perk_unsetperk(str_perk) {
@@ -36,7 +36,7 @@ function perk_unsetperk(str_perk) {
 }
 
 // Namespace perks/perks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2c0fb884, Offset: 0x208
 // Size: 0x4a
 function perk_hasperk(str_perk) {
@@ -47,7 +47,7 @@ function perk_hasperk(str_perk) {
 }
 
 // Namespace perks/perks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x69dd788, Offset: 0x260
 // Size: 0x26
 function perk_reset_all() {

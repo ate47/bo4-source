@@ -5,7 +5,7 @@
 #namespace zm_office_sound;
 
 // Namespace zm_office_sound/zm_office_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3a83571c, Offset: 0xc0
 // Size: 0x34
 function main() {
@@ -14,7 +14,7 @@ function main() {
 }
 
 // Namespace zm_office_sound/zm_office_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xda192bd2, Offset: 0x100
 // Size: 0x15c
 function startzmbspawnersoundloops() {
@@ -43,7 +43,7 @@ function startzmbspawnersoundloops() {
 }
 
 // Namespace zm_office_sound/zm_office_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5dfe1345, Offset: 0x268
 // Size: 0x18a
 function soundloopthink() {
@@ -80,7 +80,7 @@ function soundloopthink() {
 }
 
 // Namespace zm_office_sound/zm_office_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe1be1901, Offset: 0x400
 // Size: 0xe4
 function function_6e0048f1() {

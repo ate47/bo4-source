@@ -30,9 +30,9 @@
             ],
             "type": "fakeplayer",
             "name": "aar_character",
-            "var_f839fa70": "aar_character",
-            "var_29563fd6": -37,
-            "var_3e692842": 5
+            "exportname": "aar_character",
+            "hash_29563fd6": -37,
+            "hash_3e692842": 5
         }
     ],
     "scenetype": "scene",

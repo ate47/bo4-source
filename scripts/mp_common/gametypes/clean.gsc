@@ -685,7 +685,7 @@ function function_83e87bd5(player) {
     time = gettime();
     player.var_916cc864 = time;
     if (isdefined(player.pers[#"cleandeposits"])) {
-        player.pers[#"cleandeposits"] = player.pers[#"cleandeposits"] + 1;
+        player.pers[#"cleandeposits"] += 1;
         player.cleandeposits = player.pers[#"cleandeposits"];
         [[ level.var_37d62931 ]](player, 1);
     }
@@ -745,7 +745,7 @@ function function_95cbd646(player) {
     if (self.victimteam == player.team) {
         player playsound("mpl_fracture_enemy_pickup_m");
         if (isdefined(player.pers[#"cleandenies"])) {
-            player.pers[#"cleandenies"] = player.pers[#"cleandenies"] + 1;
+            player.pers[#"cleandenies"] += 1;
             player.cleandenies = player.pers[#"cleandenies"];
             [[ level.var_37d62931 ]](player, 1);
         }

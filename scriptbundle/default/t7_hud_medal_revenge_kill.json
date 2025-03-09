@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_revenge_kill",
     "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
     "iconsmall": "#t7_hud_medal_revenge_kill",
-    "stringref": "#hash_1b4cbbe611a085fe",
+    "stringref": "#medal/revenge_kill",
     "iconlarge": "#t7_hud_medal_revenge_kill_lrg"
 }

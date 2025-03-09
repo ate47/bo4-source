@@ -581,7 +581,7 @@ function start_warzone() {
 // Size: 0xfc
 function private function_fbb2b180() {
     level flagsys::wait_till(#"insertion_teleport_completed");
-    function_3ca3c6e4();
+    resetdynents();
     resetglass();
     if (isdefined(level.var_82eb1dab)) {
         foreach (deathmodel in level.var_82eb1dab) {
@@ -1272,7 +1272,7 @@ function function_c1a417ee(params) {
         self luinotifyevent(#"eliminator_info", 3, 0, function_4a856ead(smeansofdeath), 0);
     }
     self function_75134917();
-    self function_e6f9e3cd();
+    self cleartalents();
     self.specialty = self getloadoutperks(0);
     self loadout::register_perks();
 }
@@ -1465,10 +1465,10 @@ function function_de15dc32(killed_player, disconnected_player) {
         if (!isdefined(player_count.alive_platoons[platoon])) {
             player_count.alive_platoons[platoon] = 0;
         }
-        player_count.alive_platoons[platoon] = player_count.alive_platoons[platoon] + var_40073db2;
+        player_count.alive_platoons[platoon] += var_40073db2;
         if (var_77cfc33d && level.var_c2cc011f && var_40073db2 > 0) {
             player_count.alive += var_ead60f69;
-            player_count.alive_platoons[platoon] = player_count.alive_platoons[platoon] + var_ead60f69;
+            player_count.alive_platoons[platoon] += var_ead60f69;
         }
     }
     return player_count;

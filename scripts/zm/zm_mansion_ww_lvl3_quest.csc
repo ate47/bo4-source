@@ -14,7 +14,7 @@
 #namespace mansion_ww_lvl3_quest;
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x44786535, Offset: 0x110
 // Size: 0x5a2
 function init() {
@@ -44,7 +44,7 @@ function init() {
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe16da332, Offset: 0x6c0
 // Size: 0xb2
 function function_41ad73f5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -58,7 +58,7 @@ function function_41ad73f5(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x26ba68cf, Offset: 0x780
 // Size: 0xb2
 function function_3ab850d6(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -72,7 +72,7 @@ function function_3ab850d6(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xabbe797d, Offset: 0x840
 // Size: 0x7c
 function function_c08eda18(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -82,7 +82,7 @@ function function_c08eda18(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2f76424d, Offset: 0x8c8
 // Size: 0xea
 function function_d19e8c30(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -101,7 +101,7 @@ function function_d19e8c30(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5329bcdb, Offset: 0x9c0
 // Size: 0x74
 function function_9c99bb9c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -109,7 +109,7 @@ function function_9c99bb9c(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf3419159, Offset: 0xa40
 // Size: 0xea
 function function_2a76a74e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -124,7 +124,7 @@ function function_2a76a74e(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3e1e1f38, Offset: 0xb38
 // Size: 0x8c
 function function_6bc1e300(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -136,7 +136,7 @@ function function_6bc1e300(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x68bf350a, Offset: 0xbd0
 // Size: 0xb2
 function function_fdbcb111(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -160,7 +160,7 @@ function function_ea733c8f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8224004e, Offset: 0xd18
 // Size: 0xb2
 function function_d96d1ec8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -174,7 +174,7 @@ function function_d96d1ec8(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4c79fc, Offset: 0xdd8
 // Size: 0xb2
 function ww_lvl3_crafting_table_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

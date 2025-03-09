@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "death_circle",
     "displayname": "#menu/death_circle",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "deathCircle",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

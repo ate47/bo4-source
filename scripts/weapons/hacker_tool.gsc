@@ -11,7 +11,7 @@
 #namespace hacker_tool;
 
 // Namespace hacker_tool/hacker_tool
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7f602a14, Offset: 0x100
 // Size: 0x184
 function init_shared() {
@@ -33,7 +33,7 @@ function init_shared() {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3bf4f91, Offset: 0x290
 // Size: 0x4c
 function on_player_spawned() {
@@ -43,7 +43,7 @@ function on_player_spawned() {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xaef5989c, Offset: 0x2e8
 // Size: 0x204
 function clearhackertarget(weapon, successfulhack, spawned) {
@@ -84,7 +84,7 @@ function clearhackertarget(weapon, successfulhack, spawned) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6e0ecc7b, Offset: 0x4f8
 // Size: 0x6e8
 function watchhackertoolfired() {
@@ -182,7 +182,7 @@ function event_handler[grenade_pullback] function_f4068d35(eventstruct) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe89c39a8, Offset: 0xd18
 // Size: 0xce
 function watchhackertoolinterrupt(weapon) {
@@ -197,7 +197,7 @@ function watchhackertoolinterrupt(weapon) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x44c70472, Offset: 0xdf0
 // Size: 0xc4
 function watchhackertoolend(weapon) {
@@ -209,7 +209,7 @@ function watchhackertoolend(weapon) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3ac9e5fd, Offset: 0xec0
 // Size: 0x164
 function watchforgrenadefire(weapon) {
@@ -234,7 +234,7 @@ function watchforgrenadefire(weapon) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3817d864, Offset: 0x1030
 // Size: 0x6e
 function playhackertoolsoundloop() {
@@ -246,7 +246,7 @@ function playhackertoolsoundloop() {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa3d4af9, Offset: 0x10a8
 // Size: 0x36
 function stophackertoolsoundloop() {
@@ -256,7 +256,7 @@ function stophackertoolsoundloop() {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf2abbdec, Offset: 0x10e8
 // Size: 0x980
 function hackertooltargetloop(weapon) {
@@ -399,7 +399,7 @@ function hackertooltargetloop(weapon) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x802e5c4, Offset: 0x1a70
 // Size: 0xce
 function watchtargetentityupdate(besttarget) {
@@ -413,7 +413,7 @@ function watchtargetentityupdate(besttarget) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf5d36b3b, Offset: 0x1b48
 // Size: 0x35e
 function getbesthackertooltarget(weapon) {
@@ -475,7 +475,7 @@ function getbesthackertooltarget(weapon) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xedc43d6d, Offset: 0x1eb0
 // Size: 0x5e
 function cantargetentity(target, weapon) {
@@ -489,7 +489,7 @@ function cantargetentity(target, weapon) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbd1ad08c, Offset: 0x1f18
 // Size: 0xaa
 function iswithinhackertoolreticle(target, weapon) {
@@ -502,7 +502,7 @@ function iswithinhackertoolreticle(target, weapon) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd54a9938, Offset: 0x1fd0
 // Size: 0x1c0
 function hackingtimescale(target) {
@@ -528,7 +528,7 @@ function hackingtimescale(target) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x399b73d1, Offset: 0x2198
 // Size: 0x7c
 function hackingtimenolineofsightscale(target) {
@@ -541,7 +541,7 @@ function hackingtimenolineofsightscale(target) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x66df85cb, Offset: 0x2220
 // Size: 0xd4
 function isentityhackableweaponobject(entity) {
@@ -563,7 +563,7 @@ function isentityhackableweaponobject(entity) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5752e22d, Offset: 0x2300
 // Size: 0xc6
 function getweaponobjecthackerradius(entity) {
@@ -580,7 +580,7 @@ function getweaponobjecthackerradius(entity) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x10a31021, Offset: 0x23d0
 // Size: 0xc6
 function getweaponobjecthacktimems(entity) {
@@ -597,7 +597,7 @@ function getweaponobjecthacktimems(entity) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8696de81, Offset: 0x24a0
 // Size: 0x3e
 function isentityhackablecarepackage(entity) {
@@ -608,7 +608,7 @@ function isentityhackablecarepackage(entity) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x2b938ef5, Offset: 0x24e8
 // Size: 0x160
 function isvalidhackertooltarget(ent, weapon, allowhacked) {
@@ -636,7 +636,7 @@ function isvalidhackertooltarget(ent, weapon, allowhacked) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8ce28ccc, Offset: 0x2650
 // Size: 0x34
 function isentitypreviouslyhacked(entity) {
@@ -647,7 +647,7 @@ function isentitypreviouslyhacked(entity) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7781f40a, Offset: 0x2690
 // Size: 0x196
 function hackersoftsighttest(weapon) {
@@ -679,7 +679,7 @@ function hackersoftsighttest(weapon) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb8462652, Offset: 0x2830
 // Size: 0xa6
 function registerwithhackertool(radius, hacktimems) {
@@ -699,7 +699,7 @@ function registerwithhackertool(radius, hacktimems) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb9fd3ccf, Offset: 0x28e0
 // Size: 0x34
 function watchhackableentitydeath() {
@@ -708,7 +708,7 @@ function watchhackableentitydeath() {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb1cc6920, Offset: 0x2920
 // Size: 0xea
 function gethackertoolinnerradius(target) {
@@ -727,7 +727,7 @@ function gethackertoolinnerradius(target) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbe83d7c, Offset: 0x2a18
 // Size: 0xea
 function gethackertoolouterradius(target) {
@@ -746,7 +746,7 @@ function gethackertoolouterradius(target) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x24a277e3, Offset: 0x2b10
 // Size: 0x14e
 function gethacktime(target) {
@@ -771,7 +771,7 @@ function gethacktime(target) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x710604c8, Offset: 0x2c68
 // Size: 0x14e
 function gethackoutertime(target) {
@@ -796,7 +796,7 @@ function gethackoutertime(target) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc1ca81ff, Offset: 0x2dc0
 // Size: 0x84
 function getlockontime(target, weapon) {

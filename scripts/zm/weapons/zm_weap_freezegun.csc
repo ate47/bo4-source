@@ -7,15 +7,15 @@
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
 // Params 0, eflags: 0x2
-// Checksum 0xdcb58083, Offset: 0x288
+// Checksum 0xf14576f9, Offset: 0x288
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zm_weap_freezegun", &_init_, undefined, undefined);
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 0, eflags: 0x1 linked
-// Checksum 0xa4f6b0f2, Offset: 0x2d0
+// Params 0, eflags: 0x0
+// Checksum 0x83d98e31, Offset: 0x2d0
 // Size: 0x4aa
 function _init_() {
     clientfield::register("actor", "" + #"hash_2f305a0bea20d6ed", 1, 1, "int", &function_16d503c6, 0, 0);
@@ -40,8 +40,8 @@ function _init_() {
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 7, eflags: 0x1 linked
-// Checksum 0xc0cc8ade, Offset: 0x788
+// Params 7, eflags: 0x0
+// Checksum 0x7affded9, Offset: 0x788
 // Size: 0x134
 function function_16d503c6(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (!(getdvarint(#"splitscreen_playercount", 1) > 2)) {
@@ -57,8 +57,8 @@ function function_16d503c6(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 7, eflags: 0x1 linked
-// Checksum 0x429383a7, Offset: 0x8c8
+// Params 7, eflags: 0x0
+// Checksum 0xaa8b7f77, Offset: 0x8c8
 // Size: 0x134
 function function_89a4ffa9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (!(getdvarint(#"splitscreen_playercount", 1) > 2)) {
@@ -74,8 +74,8 @@ function function_89a4ffa9(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 7, eflags: 0x1 linked
-// Checksum 0x39dc0f69, Offset: 0xa08
+// Params 7, eflags: 0x0
+// Checksum 0xe91e149f, Offset: 0xa08
 // Size: 0x11c
 function function_64927e54(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (!(getdvarint(#"splitscreen_playercount", 1) > 2)) {
@@ -89,8 +89,8 @@ function function_64927e54(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 7, eflags: 0x1 linked
-// Checksum 0x370be01d, Offset: 0xb30
+// Params 7, eflags: 0x0
+// Checksum 0x73a8f962, Offset: 0xb30
 // Size: 0x11c
 function function_407434d9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (!(getdvarint(#"splitscreen_playercount", 1) > 2)) {
@@ -104,8 +104,8 @@ function function_407434d9(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 7, eflags: 0x1 linked
-// Checksum 0x3725f014, Offset: 0xc58
+// Params 7, eflags: 0x0
+// Checksum 0x999b4e2a, Offset: 0xc58
 // Size: 0x74
 function function_7cdb7d7f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
@@ -116,8 +116,8 @@ function function_7cdb7d7f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 1, eflags: 0x1 linked
-// Checksum 0x6f2c5719, Offset: 0xcd8
+// Params 1, eflags: 0x0
+// Checksum 0xe1eccd98, Offset: 0xcd8
 // Size: 0x1cc
 function function_3022a1c2(localclientnum) {
     if (!isdefined(self.var_c2fa696b)) {
@@ -142,16 +142,16 @@ function function_3022a1c2(localclientnum) {
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 4, eflags: 0x1 linked
-// Checksum 0x4bff0457, Offset: 0xeb0
+// Params 4, eflags: 0x0
+// Checksum 0xdc5a6263, Offset: 0xeb0
 // Size: 0x58
 function function_ad4b7a78(localclientnum, fx, key, tag) {
     self.var_c2fa696b[localclientnum][key] = util::playfxontag(localclientnum, fx, self, tag);
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 1, eflags: 0x1 linked
-// Checksum 0xe136be2c, Offset: 0xf10
+// Params 1, eflags: 0x0
+// Checksum 0xb4f46bba, Offset: 0xf10
 // Size: 0x9e
 function function_2ee2fcd8(localclientnum) {
     self endon(#"death");
@@ -164,16 +164,16 @@ function function_2ee2fcd8(localclientnum) {
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 2, eflags: 0x1 linked
-// Checksum 0xb62f5200, Offset: 0xfb8
+// Params 2, eflags: 0x0
+// Checksum 0x59f9d20b, Offset: 0xfb8
 // Size: 0x3c
 function function_d4bf34b7(localclientnum, key) {
     deletefx(localclientnum, self.var_c2fa696b[localclientnum][key]);
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 7, eflags: 0x1 linked
-// Checksum 0xe33f9a10, Offset: 0x1000
+// Params 7, eflags: 0x0
+// Checksum 0xbdd2e165, Offset: 0x1000
 // Size: 0x74
 function function_bf0f2e8f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
@@ -184,8 +184,8 @@ function function_bf0f2e8f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 1, eflags: 0x1 linked
-// Checksum 0xf3e472e4, Offset: 0x1080
+// Params 1, eflags: 0x0
+// Checksum 0x936f2dc1, Offset: 0x1080
 // Size: 0x26c
 function function_de5f3855(localclientnum) {
     if (!isdefined(self.var_dc23481f)) {
@@ -214,16 +214,16 @@ function function_de5f3855(localclientnum) {
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 4, eflags: 0x1 linked
-// Checksum 0x29c6ba49, Offset: 0x12f8
+// Params 4, eflags: 0x0
+// Checksum 0x1059cb09, Offset: 0x12f8
 // Size: 0x58
 function function_637a31ed(localclientnum, fx, key, tag) {
     self.var_dc23481f[localclientnum][key] = util::playfxontag(localclientnum, fx, self, tag);
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 1, eflags: 0x1 linked
-// Checksum 0x782c64fa, Offset: 0x1358
+// Params 1, eflags: 0x0
+// Checksum 0x98fd9e9d, Offset: 0x1358
 // Size: 0xbc
 function function_9babbcd9(localclientnum) {
     self endon(#"death");
@@ -237,32 +237,32 @@ function function_9babbcd9(localclientnum) {
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 2, eflags: 0x1 linked
-// Checksum 0xca9cd2aa, Offset: 0x1420
+// Params 2, eflags: 0x0
+// Checksum 0x4bd8e26a, Offset: 0x1420
 // Size: 0x3c
 function function_90674103(localclientnum, key) {
     deletefx(localclientnum, self.var_dc23481f[localclientnum][key]);
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 1, eflags: 0x1 linked
-// Checksum 0xadce3459, Offset: 0x1468
+// Params 1, eflags: 0x0
+// Checksum 0xb7eaf547, Offset: 0x1468
 // Size: 0x24
 function function_f0236487(localclientnum) {
     function_3ab6779c(localclientnum, 0);
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 1, eflags: 0x1 linked
-// Checksum 0xb8cbdb68, Offset: 0x1498
+// Params 1, eflags: 0x0
+// Checksum 0xb06e4f70, Offset: 0x1498
 // Size: 0x24
 function function_3b6be5ed(localclientnum) {
     function_3ab6779c(localclientnum, 1);
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 1, eflags: 0x1 linked
-// Checksum 0x53d7c4bf, Offset: 0x14c8
+// Params 1, eflags: 0x0
+// Checksum 0x35f51039, Offset: 0x14c8
 // Size: 0xa4
 function function_91bb8595(gib_origin) {
     start_pos = self.origin;
@@ -273,8 +273,8 @@ function function_91bb8595(gib_origin) {
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 2, eflags: 0x5 linked
-// Checksum 0x7211c520, Offset: 0x1578
+// Params 2, eflags: 0x4
+// Checksum 0x494a7911, Offset: 0x1578
 // Size: 0xc4
 function private function_3ab6779c(localclientnum, var_44146a38) {
     if (util::is_mature()) {
@@ -287,8 +287,8 @@ function private function_3ab6779c(localclientnum, var_44146a38) {
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 1, eflags: 0x5 linked
-// Checksum 0x62840936, Offset: 0x1648
+// Params 1, eflags: 0x4
+// Checksum 0x1e5e8fd6, Offset: 0x1648
 // Size: 0x19e
 function private function_3386e437(gibflag) {
     gib_model = undefined;
@@ -331,8 +331,8 @@ function private function_3386e437(gibflag) {
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 4, eflags: 0x5 linked
-// Checksum 0xcacc6a16, Offset: 0x17f0
+// Params 4, eflags: 0x4
+// Checksum 0x7bcd1213, Offset: 0x17f0
 // Size: 0x134
 function private function_c4fded40(localclientnum, tag_name, gibflag, var_44146a38) {
     gib_origin = self gettagorigin(tag_name);
@@ -347,8 +347,8 @@ function private function_c4fded40(localclientnum, tag_name, gibflag, var_44146a
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
-// Params 7, eflags: 0x1 linked
-// Checksum 0xb9d0abaa, Offset: 0x1930
+// Params 7, eflags: 0x0
+// Checksum 0x8c229cf2, Offset: 0x1930
 // Size: 0x84
 function function_3b23bb2f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {

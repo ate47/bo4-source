@@ -7,14 +7,14 @@
 // Method(s) 9 Total 16
 class cremote_missile_targets : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cremote_missile_targets/remote_missile_targets
     // Params 2, eflags: 0x0
     // Checksum 0x52ec8bbe, Offset: 0x4f0
     // Size: 0x3c
     function set_extra_target_3(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "extra_target_3", value);
+        player clientfield::function_9bf78ef8(_uid, "extra_target_3", value);
     }
 
     // Namespace cremote_missile_targets/remote_missile_targets
@@ -22,7 +22,7 @@ class cremote_missile_targets : cluielem {
     // Checksum 0x7e009f12, Offset: 0x4a8
     // Size: 0x3c
     function set_extra_target_2(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "extra_target_2", value);
+        player clientfield::function_9bf78ef8(_uid, "extra_target_2", value);
     }
 
     // Namespace cremote_missile_targets/remote_missile_targets
@@ -30,7 +30,7 @@ class cremote_missile_targets : cluielem {
     // Checksum 0x82aa601f, Offset: 0x460
     // Size: 0x3c
     function set_extra_target_1(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "extra_target_1", value);
+        player clientfield::function_9bf78ef8(_uid, "extra_target_1", value);
     }
 
     // Namespace cremote_missile_targets/remote_missile_targets
@@ -38,7 +38,7 @@ class cremote_missile_targets : cluielem {
     // Checksum 0x1d30a022, Offset: 0x418
     // Size: 0x3c
     function set_player_target_active(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "player_target_active", value);
+        player clientfield::function_9bf78ef8(_uid, "player_target_active", value);
     }
 
     // Namespace cremote_missile_targets/remote_missile_targets

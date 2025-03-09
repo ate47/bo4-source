@@ -10,7 +10,7 @@
                         }
                     ],
                     "name": "play",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -29,8 +29,8 @@
                         }
                     ],
                     "name": "shot 5",
-                    "var_39fd697b": "core_frontend_ruin",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_39fd697b": "core_frontend_ruin",
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -46,7 +46,7 @@
             "type": "sharedplayer",
             "name": "cam",
             "aligntarget": "tag_align_frozen",
-            "var_29563fd6": 90
+            "hash_29563fd6": 90
         },
         {
             "shots": [
@@ -58,7 +58,7 @@
                         }
                     ],
                     "name": "play",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -77,8 +77,8 @@
                         }
                     ],
                     "name": "shot 5",
-                    "var_39fd697b": "core_frontend_ruin",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_39fd697b": "core_frontend_ruin",
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -103,7 +103,7 @@
                         }
                     ],
                     "name": "play",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [
@@ -122,8 +122,8 @@
                         }
                     ],
                     "name": "shot 5",
-                    "var_39fd697b": "core_frontend_ruin",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_39fd697b": "core_frontend_ruin",
+                    "hash_b94164e": "core_frontend_ruin"
                 },
                 {
                     "entry": [

@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zodcompanionclientutils/archetype_zod_companion
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x407db045, Offset: 0x1a8
 // Size: 0x124
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace zodcompanionclientutils/archetype_zod_companion
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa916eb4a, Offset: 0x2d8
 // Size: 0x12c
 function private zodcompanionspawnsetup(localclientnum) {
@@ -44,7 +44,7 @@ function private zodcompanionspawnsetup(localclientnum) {
 }
 
 // Namespace zodcompanionclientutils/archetype_zod_companion
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xfd825a4b, Offset: 0x410
 // Size: 0x10c
 function zodcompanionheadgibfx(localclientnum, entity, gibflag) {
@@ -81,7 +81,7 @@ function zodcompanionclearfx(localclientnum, entity) {
 }
 
 // Namespace zodcompanionclientutils/archetype_zod_companion
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x52e182ee, Offset: 0x618
 // Size: 0xba
 function private _gibcallback(localclientnum, entity, gibflag) {
@@ -103,7 +103,7 @@ function private _gibcallback(localclientnum, entity, gibflag) {
 }
 
 // Namespace zodcompanionclientutils/archetype_zod_companion
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x80816e53, Offset: 0x6e0
 // Size: 0xf2
 function play_revival_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

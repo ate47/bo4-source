@@ -7,14 +7,14 @@
 // Method(s) 7 Total 14
 class czm_tut_hint_text : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace czm_tut_hint_text/zm_tut_hint_text
     // Params 2, eflags: 0x0
     // Checksum 0xe0d368c2, Offset: 0x3f8
     // Size: 0x3c
     function set_text(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "text", value);
+        player clientfield::function_9bf78ef8(_uid, "text", value);
     }
 
     // Namespace czm_tut_hint_text/zm_tut_hint_text
@@ -23,11 +23,11 @@ class czm_tut_hint_text : cluielem {
     // Size: 0xbc
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(_uid, "_state", 0);
             return;
         }
         if (#"visible" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(_uid, "_state", 1);
             return;
         }
         assertmsg("<dev string:x38>");

@@ -65,10 +65,10 @@ function __init__() {
     level.draftstructs[#"allies"] = #"draft_team_struct_allies";
     level.draftstructs[#"axis"] = #"hash_700492f71a083a7c";
     level.draftstructs[#"spectator"] = #"draft_team_struct_allies";
-    level.var_1f0933dc = [];
-    level.var_1f0933dc[#"allies"] = "mp_draft_lights_allies";
-    level.var_1f0933dc[#"axis"] = "mp_draft_lights_axis";
-    level.var_eeee7da4 = undefined;
+    level.draftexploders = [];
+    level.draftexploders[#"allies"] = "mp_draft_lights_allies";
+    level.draftexploders[#"axis"] = "mp_draft_lights_axis";
+    level.activeexploder = undefined;
     level.playerscriptstructs = [];
     level.playerscriptstructs[#"free"] = [];
     level.playerscriptstructs[#"allies"] = [];
@@ -83,13 +83,13 @@ function __init__() {
     level.draftstage = 0;
     level.draftcharacters = [];
     level.draftactive = [];
-    level.var_368aaeb9 = [];
+    level.draftactivecam = [];
     level.var_df72fe54 = [];
     level.draftintroplayed = [];
     for (i = 0; i < getmaxlocalclients(); i++) {
         level.draftactive[i] = 0;
         level.draftintroplayed[i] = 0;
-        level.var_368aaeb9[i] = "";
+        level.draftactivecam[i] = "";
         level.var_df72fe54[i] = "";
         for (t = 0; t < level.var_a968beb.size; t++) {
             level.draftcharacters[i][level.var_a968beb[t]] = [];
@@ -139,7 +139,7 @@ function play_intro_cinematic(localclientnum) {
     if (isdefined(level.var_a72b250f[team])) {
         var_17e3fc35 = struct::get(level.var_a72b250f[team]);
         if (isdefined(var_17e3fc35) && isdefined(level.var_99ef4320) && isdefined(level.var_99ef4320[team])) {
-            level.var_368aaeb9[localclientnum] = "cam_draft_intro";
+            level.draftactivecam[localclientnum] = "cam_draft_intro";
             playmaincamxcam(localclientnum, level.var_99ef4320[team], 0, "cam_draft_intro", "", var_17e3fc35.origin, var_17e3fc35.angles);
             duration = getcamanimtime(level.var_99ef4320[team]);
             wait float(duration) / 1000;
@@ -169,7 +169,7 @@ function show_cam(localclientnum, xcam, animname, lerpduration) {
     if (!isdefined(xcam) || !isdefined(animname)) {
         return;
     }
-    if (isdefined(level.var_368aaeb9[localclientnum]) && level.var_368aaeb9[localclientnum] == animname && isdefined(level.var_df72fe54[localclientnum]) && level.var_df72fe54[localclientnum] == xcam) {
+    if (isdefined(level.draftactivecam[localclientnum]) && level.draftactivecam[localclientnum] == animname && isdefined(level.var_df72fe54[localclientnum]) && level.var_df72fe54[localclientnum] == xcam) {
         return;
     }
     if (shoutcaster::is_shoutcaster(localclientnum)) {
@@ -180,7 +180,7 @@ function show_cam(localclientnum, xcam, animname, lerpduration) {
         draftstruct = struct::get(level.draftstructs[team], "targetname");
         if (isdefined(draftstruct)) {
             playmaincamxcam(localclientnum, xcam, lerpduration, animname, "", draftstruct.origin, draftstruct.angles);
-            level.var_368aaeb9[localclientnum] = animname;
+            level.draftactivecam[localclientnum] = animname;
             level.var_df72fe54[localclientnum] = xcam;
         }
     }
@@ -192,7 +192,7 @@ function show_cam(localclientnum, xcam, animname, lerpduration) {
 // Size: 0x44
 function stop_cameras(localclientnum) {
     stopmaincamxcam(localclientnum);
-    level.var_368aaeb9[localclientnum] = undefined;
+    level.draftactivecam[localclientnum] = undefined;
     level.var_df72fe54[localclientnum] = undefined;
 }
 
@@ -226,9 +226,9 @@ function function_fccaf2ed(localclientnum, lerpduration) {
 // Size: 0x7c
 function enable_lights(localclientnum) {
     team = function_c4dfe16e(localclientnum);
-    if (isdefined(level.var_1f0933dc[team])) {
-        level.var_eeee7da4 = level.var_1f0933dc[team];
-        playradiantexploder(localclientnum, level.var_eeee7da4);
+    if (isdefined(level.draftexploders[team])) {
+        level.activeexploder = level.draftexploders[team];
+        playradiantexploder(localclientnum, level.activeexploder);
     }
 }
 
@@ -237,9 +237,9 @@ function enable_lights(localclientnum) {
 // Checksum 0x3ffa44b, Offset: 0x4500
 // Size: 0x46
 function function_2c486f35(localclientnum) {
-    if (isdefined(level.var_eeee7da4)) {
-        killradiantexploder(localclientnum, level.var_eeee7da4);
-        level.var_eeee7da4 = undefined;
+    if (isdefined(level.activeexploder)) {
+        killradiantexploder(localclientnum, level.activeexploder);
+        level.activeexploder = undefined;
     }
 }
 
@@ -324,11 +324,11 @@ function function_b139ecfb(localclientnum) {
 // Params 4, eflags: 0x0
 // Checksum 0x72dd7a0c, Offset: 0x49f8
 // Size: 0x14c
-function function_1cf2437c(localclientnum, draftcharacter, oldcharacterindex, var_121d6e9a) {
+function function_1cf2437c(localclientnum, draftcharacter, oldcharacterindex, newcharacterindex) {
     if (!isdefined([[ draftcharacter ]]->function_82e05d64().player)) {
         return;
     }
-    if ([[ draftcharacter ]]->function_82e05d64().localclientnum === localclientnum && isdefined([[ draftcharacter ]]->function_82e05d64().var_c018da16) && player_role::is_valid([[ draftcharacter ]]->function_82e05d64().var_c018da16.charactertype)) {
+    if ([[ draftcharacter ]]->function_82e05d64().localclientnum === localclientnum && isdefined([[ draftcharacter ]]->function_82e05d64().selectedcharacterdata) && player_role::is_valid([[ draftcharacter ]]->function_82e05d64().selectedcharacterdata.charactertype)) {
         if (isdefined(level.var_aefa616f) && level.var_aefa616f && dialog_shared::dialog_chance("characterSelectMaldivesChance")) {
             [[ draftcharacter ]]->function_82e05d64().player dialog_shared::play_dialog("maldivesCharacterSelectOverride", localclientnum);
             return;
@@ -433,9 +433,9 @@ function function_93a4f3c5(localclientnum, draftcharacter) {
             return false;
         }
         [[ draftcharacter ]]->function_82e05d64().activecharacter = var_3f83e0ee;
-    } else if (!isdefined(var_de58f286.activecharacter) || character_customization::function_aa5382ed(var_de58f286.activecharacter, var_de58f286.var_c018da16)) {
-        function_1cf2437c(localclientnum, draftcharacter, var_de58f286.activecharacter, var_de58f286.var_c018da16);
-        var_de58f286.activecharacter = var_de58f286.var_c018da16;
+    } else if (!isdefined(var_de58f286.activecharacter) || character_customization::function_aa5382ed(var_de58f286.activecharacter, var_de58f286.selectedcharacterdata)) {
+        function_1cf2437c(localclientnum, draftcharacter, var_de58f286.activecharacter, var_de58f286.selectedcharacterdata);
+        var_de58f286.activecharacter = var_de58f286.selectedcharacterdata;
     }
     if (isdefined(var_de58f286.activecharacter) && player_role::is_valid(var_de58f286.activecharacter.charactertype)) {
         [[ draftcharacter ]]->function_1ec9448d(0);
@@ -550,7 +550,7 @@ function update_team(localclientnum, var_4123f2c1) {
             continue;
         }
         draftcharacter = level.draftcharacters[localclientnum][team][i];
-        [[ draftcharacter ]]->function_82e05d64().var_c018da16 = undefined;
+        [[ draftcharacter ]]->function_82e05d64().selectedcharacterdata = undefined;
         [[ draftcharacter ]]->function_82e05d64().primaryweapon = level.weaponnone;
         [[ draftcharacter ]]->function_82e05d64().primaryweaponoptions = 0;
         [[ draftcharacter ]]->function_82e05d64().secondaryweapon = level.weaponnone;
@@ -566,8 +566,8 @@ function update_team(localclientnum, var_4123f2c1) {
                 player = getentbynum(localclientnum, clientnum);
                 if (isdefined(player) && player function_e4f35989()) {
                     [[ draftcharacter ]]->function_82e05d64().player = player;
-                    [[ draftcharacter ]]->function_82e05d64().var_c018da16 = player function_79a48799();
-                    if (isdefined([[ draftcharacter ]]->function_82e05d64().var_c018da16) && player_role::is_valid([[ draftcharacter ]]->function_82e05d64().var_c018da16.charactertype) && player_role::is_valid([[ draftcharacter ]]->function_82e05d64().focusedcharacterindex)) {
+                    [[ draftcharacter ]]->function_82e05d64().selectedcharacterdata = player function_79a48799();
+                    if (isdefined([[ draftcharacter ]]->function_82e05d64().selectedcharacterdata) && player_role::is_valid([[ draftcharacter ]]->function_82e05d64().selectedcharacterdata.charactertype) && player_role::is_valid([[ draftcharacter ]]->function_82e05d64().focusedcharacterindex)) {
                         [[ draftcharacter ]]->function_82e05d64().activecharacter = undefined;
                         [[ draftcharacter ]]->function_82e05d64().focusedcharacterindex = 0;
                     }
@@ -587,7 +587,7 @@ function update_team(localclientnum, var_4123f2c1) {
                         [[ draftcharacter ]]->function_82e05d64().secondaryweaponoptions = localplayer function_64c66c4b();
                     }
                     [[ draftcharacter ]]->function_82e05d64().localclientnum = localclientnum;
-                    if (isdefined([[ draftcharacter ]]->function_82e05d64().var_c018da16) && player_role::is_valid([[ draftcharacter ]]->function_82e05d64().var_c018da16.charactertype) || shoutcaster::is_shoutcaster(localclientnum)) {
+                    if (isdefined([[ draftcharacter ]]->function_82e05d64().selectedcharacterdata) && player_role::is_valid([[ draftcharacter ]]->function_82e05d64().selectedcharacterdata.charactertype) || shoutcaster::is_shoutcaster(localclientnum)) {
                         function_236a944e(localclientnum);
                         lerpduration = 1000;
                         if (var_4123f2c1) {

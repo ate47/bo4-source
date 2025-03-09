@@ -6,7 +6,6 @@
 #using scripts\zm\zm_orange_util;
 #using scripts\zm_common\callbacks;
 #using scripts\zm_common\zm;
-#using scripts\zm_common\zm_customgame;
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_zonemgr;
 
@@ -14,14 +13,12 @@
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0xab3630c4, Offset: 0x470
-// Size: 0x164
+// Checksum 0x40f7f106, Offset: 0x468
+// Size: 0x13c
 function init() {
     level function_e12fb431();
     level function_2b6fe83b();
-    if (zm_custom::function_901b751c(#"zmpowerdoorstate") != 2) {
-        level third_fallen_soldiers_robots_decon_room_cleared();
-    }
+    level third_fallen_soldiers_robots_decon_room_cleared();
     callback::on_connect(&on_player_connect);
     callback::on_ai_killed(&function_4ff2cfd9);
     level flag::init(#"hash_6046825f3ec27c48");
@@ -35,18 +32,16 @@ function init() {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0x83889d0b, Offset: 0x5e0
-// Size: 0x5c
+// Checksum 0x623d51e5, Offset: 0x5b0
+// Size: 0x34
 function main() {
-    if (zm_custom::function_901b751c(#"zmpowerdoorstate") != 2) {
-        level thread function_63522769();
-    }
+    level thread function_63522769();
     level thread function_b0e59abe();
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0x1b6f5592, Offset: 0x648
+// Checksum 0x934e37f9, Offset: 0x5f0
 // Size: 0x8c
 function on_player_connect() {
     self.var_c4baf001 = 0;
@@ -61,7 +56,7 @@ function on_player_connect() {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0x7ef746cd, Offset: 0x6e0
+// Checksum 0x78dfb5b1, Offset: 0x688
 // Size: 0x64
 function function_ea67bd7c() {
     level endon(#"game_ended");
@@ -73,7 +68,7 @@ function function_ea67bd7c() {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0xa9010204, Offset: 0x750
+// Checksum 0x176df8da, Offset: 0x6f8
 // Size: 0xa0
 function function_e12fb431() {
     a_e_bells = getentarray("challenges_bell", "targetname");
@@ -84,7 +79,7 @@ function function_e12fb431() {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0x17f90583, Offset: 0x7f8
+// Checksum 0x5cb23ed1, Offset: 0x7a0
 // Size: 0xbc
 function function_e86e864b() {
     while (true) {
@@ -97,11 +92,11 @@ function function_e86e864b() {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0x385f66fc, Offset: 0x8c0
+// Checksum 0x996a0e24, Offset: 0x868
 // Size: 0x130
 function function_790e5d6() {
-    self notify("137e016f39e5002f");
-    self endon("137e016f39e5002f");
+    self notify("6bc3c02292831de5");
+    self endon("6bc3c02292831de5");
     self endon(#"death");
     self endon(#"disconnect");
     self endon(#"bells_failed");
@@ -126,11 +121,11 @@ function function_790e5d6() {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0x27ce2ec6, Offset: 0x9f8
+// Checksum 0x77c61653, Offset: 0x9a0
 // Size: 0x84
 function function_a0367a9() {
-    self notify("277601283555658b");
-    self endon("277601283555658b");
+    self notify("2893aeee5972a277");
+    self endon("2893aeee5972a277");
     self endon(#"death");
     self endon(#"disconnect");
     self endon(#"bells_complete");
@@ -142,7 +137,7 @@ function function_a0367a9() {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 1, eflags: 0x0
-// Checksum 0x8f56b83a, Offset: 0xa88
+// Checksum 0x1b95b1f5, Offset: 0xa30
 // Size: 0x64
 function function_c28621d7(s_params) {
     if (isdefined(self.water_damage) && self.water_damage && !level flag::get(#"hash_e1ce5432989899")) {
@@ -152,7 +147,7 @@ function function_c28621d7(s_params) {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 1, eflags: 0x0
-// Checksum 0x3d6b4ac1, Offset: 0xaf8
+// Checksum 0x20a32bf, Offset: 0xaa0
 // Size: 0x112
 function function_b9f47977(e_zombie) {
     self endon(#"hash_402140b7cdc4bca1");
@@ -172,7 +167,7 @@ function function_b9f47977(e_zombie) {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0x301b7623, Offset: 0xc18
+// Checksum 0x5e62aebb, Offset: 0xbc0
 // Size: 0x2c
 function function_e140ff5c() {
     self endon(#"cleanup_freezegun_triggers");
@@ -183,7 +178,7 @@ function function_e140ff5c() {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 1, eflags: 0x0
-// Checksum 0x6489d2cc, Offset: 0xc50
+// Checksum 0x29916329, Offset: 0xbf8
 // Size: 0x14c
 function function_4ff2cfd9(s_result) {
     if (self.archetype == #"zombie_dog" && zm_orange_util::function_fe8ee9f0(s_result.weapon, 0) && !level flag::get(#"hash_6046825f3ec27c48")) {
@@ -201,7 +196,7 @@ function function_4ff2cfd9(s_result) {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0x94a93bae, Offset: 0xda8
+// Checksum 0xee78c529, Offset: 0xd50
 // Size: 0x6c
 function function_6c88da5b() {
     while (level.var_a43a746d < 5) {
@@ -215,7 +210,7 @@ function function_6c88da5b() {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0x299c3d99, Offset: 0xe20
+// Checksum 0x63315c1e, Offset: 0xdc8
 // Size: 0x154
 function function_3202188() {
     self endon(#"death");
@@ -241,7 +236,7 @@ function function_3202188() {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0x727237e9, Offset: 0xf80
+// Checksum 0xf8d12137, Offset: 0xf28
 // Size: 0x7c
 function function_b0e59abe() {
     level flag::wait_till(#"edge_of_the_world_complete");
@@ -255,7 +250,7 @@ function function_b0e59abe() {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0xe90b109f, Offset: 0x1008
+// Checksum 0xee3aa11d, Offset: 0xfb0
 // Size: 0x1206
 function third_fallen_soldiers_robots_decon_room_cleared() {
     level flag::init(#"hash_113f70c573aed94d");
@@ -480,7 +475,7 @@ function third_fallen_soldiers_robots_decon_room_cleared() {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0x55800620, Offset: 0x2218
+// Checksum 0x7ddbb66b, Offset: 0x21c0
 // Size: 0x12c
 function function_63522769() {
     level flag::wait_till_all(level.var_55b76576);
@@ -495,7 +490,7 @@ function function_63522769() {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0x3c498046, Offset: 0x2350
+// Checksum 0xa2d1db0f, Offset: 0x22f8
 // Size: 0x150
 function function_c7b3bfea() {
     self endon(#"death");
@@ -521,7 +516,7 @@ function function_c7b3bfea() {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 1, eflags: 0x0
-// Checksum 0x73b8c307, Offset: 0x24a8
+// Checksum 0x1ed5a6ce, Offset: 0x2450
 // Size: 0x3a
 function function_5b264d4d(s_result) {
     if (isplayer(s_result.eattacker)) {
@@ -531,7 +526,7 @@ function function_5b264d4d(s_result) {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0x6637a6b6, Offset: 0x24f0
+// Checksum 0xc0c80f14, Offset: 0x2498
 // Size: 0x52
 function function_3d9f4eef() {
     self endon(#"disconnect");
@@ -544,7 +539,7 @@ function function_3d9f4eef() {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0x9f247b07, Offset: 0x2550
+// Checksum 0xdb655d8c, Offset: 0x24f8
 // Size: 0x64
 function function_2b6fe83b() {
     e_jar = getent("animosity", "targetname");
@@ -554,7 +549,7 @@ function function_2b6fe83b() {
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0, eflags: 0x0
-// Checksum 0xf4dc9c16, Offset: 0x25c0
+// Checksum 0x4ad62357, Offset: 0x2568
 // Size: 0x158
 function function_82947e72() {
     while (true) {

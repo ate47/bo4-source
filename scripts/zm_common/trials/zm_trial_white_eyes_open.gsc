@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_white_eyes_open/zm_trial_white_eyes_open
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xee53b2db, Offset: 0x170
 // Size: 0x5c
 function __init__() {
@@ -32,7 +32,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_white_eyes_open/zm_trial_white_eyes_open
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x2e77dcf0, Offset: 0x1d8
 // Size: 0x5ac
 function private on_begin() {
@@ -81,7 +81,7 @@ function private on_begin() {
 }
 
 // Namespace zm_trial_white_eyes_open/zm_trial_white_eyes_open
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x9d086fac, Offset: 0x790
 // Size: 0x244
 function private on_end(round_reset) {
@@ -105,7 +105,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_white_eyes_open/zm_trial_white_eyes_open
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3e63cece, Offset: 0x9e0
 // Size: 0x64
 function teleport_player() {
@@ -118,7 +118,7 @@ function teleport_player() {
 }
 
 // Namespace zm_trial_white_eyes_open/zm_trial_white_eyes_open
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd28f975c, Offset: 0xa50
 // Size: 0xec
 function private on_player_damage(params) {
@@ -130,7 +130,7 @@ function private on_player_damage(params) {
 }
 
 // Namespace zm_trial_white_eyes_open/zm_trial_white_eyes_open
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xdfeafb94, Offset: 0xb48
 // Size: 0x2c
 function private function_660c908(behaviortreeentity) {

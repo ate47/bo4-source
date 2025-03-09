@@ -9,7 +9,7 @@
 #namespace tacticalinsertion;
 
 // Namespace tacticalinsertion/tacticalinsertion
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa151324a, Offset: 0x190
 // Size: 0x8c
 function init_shared() {
@@ -19,7 +19,7 @@ function init_shared() {
 }
 
 // Namespace tacticalinsertion/tacticalinsertion
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5a3a4c78, Offset: 0x228
 // Size: 0xd8
 function istacspawntouchingcrates(origin, angles) {
@@ -35,7 +35,7 @@ function istacspawntouchingcrates(origin, angles) {
 }
 
 // Namespace tacticalinsertion/tacticalinsertion
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xda7af148, Offset: 0x308
 // Size: 0x148
 function overridespawn(ispredictedspawn) {
@@ -64,7 +64,7 @@ function overridespawn(ispredictedspawn) {
 }
 
 // Namespace tacticalinsertion/tacticalinsertion
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc11b027d, Offset: 0x458
 // Size: 0x3c
 function waitanddelete(time) {
@@ -74,7 +74,7 @@ function waitanddelete(time) {
 }
 
 // Namespace tacticalinsertion/tacticalinsertion
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf6df1823, Offset: 0x4a0
 // Size: 0x6c
 function watch(player) {
@@ -86,7 +86,7 @@ function watch(player) {
 }
 
 // Namespace tacticalinsertion/tacticalinsertion
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x22a518e6, Offset: 0x518
 // Size: 0x1e0
 function watchusetrigger(trigger, callback, playersoundonuse, npcsoundonuse) {
@@ -122,7 +122,7 @@ function watchusetrigger(trigger, callback, playersoundonuse, npcsoundonuse) {
 }
 
 // Namespace tacticalinsertion/tacticalinsertion
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6c7f03bc, Offset: 0x700
 // Size: 0x4c
 function watchdisconnect() {
@@ -132,7 +132,7 @@ function watchdisconnect() {
 }
 
 // Namespace tacticalinsertion/tacticalinsertion
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd13558c7, Offset: 0x758
 // Size: 0x234
 function destroy_tactical_insertion(attacker) {
@@ -160,7 +160,7 @@ function destroy_tactical_insertion(attacker) {
 }
 
 // Namespace tacticalinsertion/tacticalinsertion
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb4ad2a4e, Offset: 0x998
 // Size: 0xec
 function fizzle(attacker) {
@@ -179,7 +179,7 @@ function fizzle(attacker) {
 }
 
 // Namespace tacticalinsertion/tacticalinsertion
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1b6bd20e, Offset: 0xa90
 // Size: 0x74
 function pickup(attacker) {
@@ -190,7 +190,7 @@ function pickup(attacker) {
 }
 
 // Namespace tacticalinsertion/tacticalinsertion
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5dfa6685, Offset: 0xb10
 // Size: 0x7d8
 function spawntacticalinsertion() {
@@ -276,7 +276,7 @@ function spawntacticalinsertion() {
 }
 
 // Namespace tacticalinsertion/tacticalinsertion
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x79f82cc6, Offset: 0x12f0
 // Size: 0x114
 function cancel_button_think() {
@@ -299,7 +299,7 @@ function cancel_button_think() {
 }
 
 // Namespace tacticalinsertion/tacticalinsertion
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x90370b3e, Offset: 0x1410
 // Size: 0x3c
 function canceltackinsertionbutton() {
@@ -310,7 +310,7 @@ function canceltackinsertionbutton() {
 }
 
 // Namespace tacticalinsertion/tacticalinsertion
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xecea58ad, Offset: 0x1458
 // Size: 0x76
 function cancel_button_press() {
@@ -370,7 +370,7 @@ function gettacticalinsertions() {
 }
 
 // Namespace tacticalinsertion/tacticalinsertion
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb8a0b011, Offset: 0x16e8
 // Size: 0xe4
 function tacticalinsertiondestroyedbytrophysystem(attacker, trophysystem) {

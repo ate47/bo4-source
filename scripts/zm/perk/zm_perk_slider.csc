@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_slider/zm_perk_slider
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x52a45c80, Offset: 0x188
 // Size: 0x5c
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_slider/zm_perk_slider
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x218b45a6, Offset: 0x1f0
 // Size: 0xe4
 function enable_slider_perk_for_level() {
@@ -35,7 +35,7 @@ function enable_slider_perk_for_level() {
 }
 
 // Namespace zm_perk_slider/zm_perk_slider
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x2e0
 // Size: 0x4
 function init_slider() {
@@ -43,7 +43,7 @@ function init_slider() {
 }
 
 // Namespace zm_perk_slider/zm_perk_slider
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9739d33d, Offset: 0x2f0
 // Size: 0x5c
 function function_4bb29d61() {
@@ -51,7 +51,7 @@ function function_4bb29d61() {
 }
 
 // Namespace zm_perk_slider/zm_perk_slider
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x358
 // Size: 0x4
 function function_90b5e96c() {
@@ -59,7 +59,7 @@ function function_90b5e96c() {
 }
 
 // Namespace zm_perk_slider/zm_perk_slider
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x45991c80, Offset: 0x368
 // Size: 0xa4
 function function_4feff2f7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

@@ -3,7 +3,7 @@
 #namespace bb;
 
 // Namespace bb/bb_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfb638f6b, Offset: 0x70
 // Size: 0x64
 function init_shared() {
@@ -13,7 +13,7 @@ function init_shared() {
 }
 
 // Namespace bb/bb_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0xe0
 // Size: 0x4
 function init() {
@@ -21,7 +21,7 @@ function init() {
 }
 
 // Namespace bb/bb_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xeace06c7, Offset: 0xf0
 // Size: 0x86
 function on_player_spawned() {
@@ -34,7 +34,7 @@ function on_player_spawned() {
 }
 
 // Namespace bb/bb_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xc0f9c291, Offset: 0x180
 // Size: 0x236
 function commit_weapon_data(spawnid, currentweapon, time0) {
@@ -65,7 +65,7 @@ function commit_weapon_data(spawnid, currentweapon, time0) {
 }
 
 // Namespace bb/bb_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8d35305b, Offset: 0x3c0
 // Size: 0x72
 function add_to_stat(statname, delta) {
@@ -73,12 +73,12 @@ function add_to_stat(statname, delta) {
         return;
     }
     if (isdefined(self._bbdata) && isdefined(self._bbdata[statname])) {
-        self._bbdata[statname] = self._bbdata[statname] + delta;
+        self._bbdata[statname] += delta;
     }
 }
 
 // Namespace bb/bb_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9c71db45, Offset: 0x440
 // Size: 0x44
 function function_a7ba460f(reason) {
@@ -86,7 +86,7 @@ function function_a7ba460f(reason) {
 }
 
 // Namespace bb/bb_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x4078b50b, Offset: 0x490
 // Size: 0x94
 function function_afcc007d(name, clientnum, xuid) {
@@ -95,7 +95,7 @@ function function_afcc007d(name, clientnum, xuid) {
 }
 
 // Namespace bb/bb_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x785d6c9b, Offset: 0x530
 // Size: 0x94
 function function_e0dfa262(name, clientnum, xuid) {
@@ -104,7 +104,7 @@ function function_e0dfa262(name, clientnum, xuid) {
 }
 
 // Namespace bb/bb_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd37b290, Offset: 0x5d0
 // Size: 0x3a
 function player_joined_team(params) {

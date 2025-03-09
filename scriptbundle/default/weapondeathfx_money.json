@@ -1,10 +1,10 @@
 {
     "lootid": "#hash_307f9b4d9546acbc",
-    "var_904b37bc": "#hash_44a8590d669bed6b",
+    "hash_904b37bc": "#hash_44a8590d669bed6b",
     "image": "loot04_ui_icon_blackmarket_reserves_death_fx_money",
     "name": "weapondeathfx_money",
     "displayname": "#hash_284bab3e953057c5",
     "icon": "loot04_ui_icon_cac_death_fx_money",
-    "var_eeb78b92": "#hash_407c4da8c1919e3f",
+    "hash_eeb78b92": "#hash_407c4da8c1919e3f",
     "previewimage": "#loot04_ui_icon_blackmarket_reserves_death_fx_money"
 }

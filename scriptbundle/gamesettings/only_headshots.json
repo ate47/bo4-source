@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "only_headshots",
     "displayname": "#menu/headshotsonly",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "onlyHeadshots",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

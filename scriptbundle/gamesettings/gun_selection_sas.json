@@ -4,14 +4,14 @@
     "value2": "1",
     "value3": "2",
     "value1": "0",
-    "var_dfed6968": "3",
+    "value4": "3",
     "type": "gamesettings",
     "name": "gun_selection_sas",
     "displayname": "#hash_6418bf3a0f74f537",
-    "var_684ccd4c": "#weapon/knife_ballistic",
+    "label4": "#weapon/knife_ballistic",
     "label1": "#menu/none",
-    "var_71b6e020": "#weapon/crossbow",
+    "label3": "#weapon/crossbow",
     "label2": "#weapon/hatchet",
-    "var_9de86f42": 4,
+    "optionscount": 4,
     "setting": "gunSelection"
 }

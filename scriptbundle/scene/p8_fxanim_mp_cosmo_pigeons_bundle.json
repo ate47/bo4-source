@@ -1,0 +1,335 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_36dc40ebe650fded",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_759775d85f98191c",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_gp_pigeon_01_mod",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2a0395305f69dd78",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_ea21a3188b12c1f",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_gp_pigeon_01_mod",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_477fab61029c60ff",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_179e4b92f6f1bfb6",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_gp_pigeon_01_mod",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 3"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_19a199cf9b4ffbd2",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5b700a78cfac5791",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_gp_pigeon_01_mod",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 4"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_775505e081960c69",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_e3c387cf2b746f0",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_gp_pigeon_01_mod",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 5"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_21b36afb44a984a4",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_106d60e242278eb3",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_gp_pigeon_01_mod",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 6"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4fb4dde8650e4bbb",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6b3d98f97d025cfa",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_gp_pigeon_01_mod",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 7"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4c7eb3b9e5adac8e",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_70c55cc3deed685",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_gp_pigeon_01_mod",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 8"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2fd81a51257f66c5",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_159276d776a05af4",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_gp_pigeon_01_mod",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 9"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6187a429177c790b",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3e6026e451d7a94a",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_gp_pigeon_01_mod",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 10"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4a9966dc69199b34",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_38ac30e519de2f83",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_gp_pigeon_01_mod",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 11"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5e17eb06afd42579",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_d1c9dbac2b13e40",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_gp_pigeon_01_mod",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 12"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_cosmo_pigeons_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

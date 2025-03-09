@@ -50,7 +50,7 @@ function private __main__() {
 // Size: 0x140
 function private function_a23699fe() {
     level endon(#"game_ended");
-    var_cf4e80a7 = 250;
+    sticker_iw9_512 = 250;
     while (true) {
         for (i = 0; i < level.var_7d95e1ed.size; i++) {
             monkey = level.var_7d95e1ed[i];
@@ -61,7 +61,7 @@ function private function_a23699fe() {
                 monkey delete();
                 continue;
             }
-            if (function_7e60533f(monkey, var_cf4e80a7)) {
+            if (function_7e60533f(monkey, sticker_iw9_512)) {
                 monkey thread function_b9934c1d();
             }
             waitframe(1);

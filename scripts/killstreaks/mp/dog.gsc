@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace dog/dog
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdf48a33a, Offset: 0x110
 // Size: 0x11c
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
         bundle.var_32f64ba3 = "actor_spawner_boct_mp_dog";
     }
     killstreaks::register_bundle(bundle, &spawned);
-    killstreaks::allow_assists(bundle.var_d3413870, 1);
+    killstreaks::allow_assists(bundle.kstype, 1);
     level.var_e2174183 = getweapon(#"ability_dog");
     level.var_da7fa0b = getweapon(#"dog_ai_defaultmelee");
     ability_power::function_9d78823f(level.var_e2174183, level.var_da7fa0b);

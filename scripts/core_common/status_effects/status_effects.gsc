@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace status_effect/status_effects
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xddb9498c, Offset: 0xd0
 // Size: 0x7c
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace status_effect/status_effects
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6f49628f, Offset: 0x158
 // Size: 0x34
 function on_player_connect() {
@@ -40,7 +40,7 @@ function on_player_connect() {
 }
 
 // Namespace status_effect/status_effects
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x416c84c8, Offset: 0x198
 // Size: 0x1c
 function on_player_disconnect() {
@@ -50,7 +50,7 @@ function on_player_disconnect() {
 }
 
 // Namespace status_effect/status_effects
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaf45c0ac, Offset: 0x1c0
 // Size: 0x80
 function on_end_game() {

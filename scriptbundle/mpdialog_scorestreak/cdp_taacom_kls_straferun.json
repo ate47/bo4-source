@@ -5,7 +5,7 @@
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "cdp_taacom_kls_straferun",
-    "var_6f9447b2": "#hash_1abcc24108c8c6d1",
-    "var_61d32c30": "#hash_1abcbf4108c8c1b8",
-    "var_b6b855f9": "#hash_1abcc14108c8c51e"
+    "hash_6f9447b2": "#hash_1abcc24108c8c6d1",
+    "hash_61d32c30": "#hash_1abcbf4108c8c1b8",
+    "hash_b6b855f9": "#hash_1abcc14108c8c51e"
 }

@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace grapple/grapple
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x28f19c0d, Offset: 0xe0
 // Size: 0xc4
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace grapple/grapple
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7b8ddd90, Offset: 0x1b0
 // Size: 0x26
 function function_422f24cc(watcher) {
@@ -35,7 +35,7 @@ function function_422f24cc(watcher) {
 }
 
 // Namespace grapple/grapple
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xf7482952, Offset: 0x1e0
 // Size: 0x98
 function function_d79e9bb5(attacker, victim, weapon, attackerweapon, meansofdeath) {
@@ -46,7 +46,7 @@ function function_d79e9bb5(attacker, victim, weapon, attackerweapon, meansofdeat
 }
 
 // Namespace grapple/grapple
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4a404361, Offset: 0x280
 // Size: 0x58
 function gadget_grapple_off(slot, weapon) {
@@ -56,7 +56,7 @@ function gadget_grapple_off(slot, weapon) {
 }
 
 // Namespace grapple/grapple
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9d77125a, Offset: 0x2e0
 // Size: 0x1c
 function function_8fa5ff65() {
@@ -64,7 +64,7 @@ function function_8fa5ff65() {
 }
 
 // Namespace grapple/grapple
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3139995e, Offset: 0x308
 // Size: 0x82
 function function_9dd08ccf() {
@@ -76,7 +76,7 @@ function function_9dd08ccf() {
 }
 
 // Namespace grapple/grapple
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x154f4f66, Offset: 0x398
 // Size: 0x24
 function function_1987d583(watcher) {

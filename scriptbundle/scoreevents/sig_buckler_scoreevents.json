@@ -1,15 +1,15 @@
 {
-    "var_d58bd0e9": "#hash_21021d13c3c3c1da",
-    "var_67b4a761": "#hash_21021d13c3c3c1da",
-    "var_2ecceeab": "#battle_shield_kill",
+    "hash_d58bd0e9": "#hash_21021d13c3c3c1da",
+    "hash_67b4a761": "#hash_21021d13c3c3c1da",
+    "hash_2ecceeab": "#battle_shield_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "var_16abf654": "#hash_21021d13c3c3c1da",
+    "hash_16abf654": "#hash_21021d13c3c3c1da",
     "name": "sig_buckler_scoreevents",
-    "var_e1b418c1": "ability",
-    "var_1b8b6771": "#hash_21021d13c3c3c1da",
-    "var_3143c814": "#battle_shield_shutdown",
-    "var_170b3630": "#shield_assist",
-    "var_6643c0a0": "#hash_21021d13c3c3c1da"
+    "customsettingstype": "ability",
+    "hash_1b8b6771": "#hash_21021d13c3c3c1da",
+    "hash_3143c814": "#battle_shield_shutdown",
+    "hash_170b3630": "#shield_assist",
+    "hash_6643c0a0": "#hash_21021d13c3c3c1da"
 }

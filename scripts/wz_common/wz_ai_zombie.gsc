@@ -218,7 +218,7 @@ function custom_melee_fire() {
     if (isdefined(hitent)) {
         if (isvehicle(hitent)) {
             damage = self.var_a0193213;
-            if (isdefined(self.var_6501ffdf) && self.var_6501ffdf) {
+            if (isdefined(self.is_miniboss) && self.is_miniboss) {
                 damage = randomintrange(850, 1200);
             }
             function_2713ff17(hitent, damage);
@@ -231,7 +231,7 @@ function custom_melee_fire() {
                 var_aabf4080 = hitent.maxhealth;
             }
             if (isdefined(var_aabf4080)) {
-                if (isdefined(self.var_6501ffdf) && self.var_6501ffdf) {
+                if (isdefined(self.is_miniboss) && self.is_miniboss) {
                     damage = int(var_aabf4080 / 2) + 1;
                     hitent dodamage(damage, hitent.origin, self, self);
                 } else {
@@ -507,8 +507,8 @@ function private function_cf051788() {
     self.health = self.maxhealth;
     self.cant_move_cb = &function_9c573bc6;
     self.var_31a789c0 = 1;
-    self.var_6a7537d8 = 1;
-    self.var_4e5539eb = 0;
+    self.itemdropcount = 1;
+    self.isonnavmeshcount = 0;
     self.surfacetype = "";
     self.var_db912cfe = 1;
     self.var_a0193213 = 50;
@@ -522,7 +522,7 @@ function private function_cf051788() {
     self.var_20e07206 = 1;
     self.var_721a3dbd = 1;
     self.var_35eedf58 = 1;
-    self.var_12ec333b = 1;
+    self.instakill_doors = 1;
     self.is_special = 0;
 }
 
@@ -835,7 +835,7 @@ function zombie_on_melee() {
     foreach (dynent in var_d54999e4) {
         if (function_8f57dc52(dynent)) {
             var_f3fec032 = function_489009c1(dynent);
-            function_e2a06860(dynent, var_f3fec032.destroyed);
+            setdynentstate(dynent, var_f3fec032.destroyed);
         }
     }
     self.var_4c85ebad = undefined;
@@ -2049,7 +2049,7 @@ function private function_b8eff92a(state) {
             self wz_ai_utils::function_9758722("walk");
         }
         self.favoriteenemy = undefined;
-        self.var_4e5539eb = 0;
+        self.isonnavmeshcount = 0;
         break;
     case 3:
         move_speed = "sprint";
@@ -2243,18 +2243,18 @@ function private function_34eacecd() {
     }
     if (isdefined(level.var_3140c814) && level.var_3140c814 && isdefined(self.var_721a3dbd) && self.var_721a3dbd) {
         if (!self.isonnavmesh && !self function_dd070839()) {
-            if (!isdefined(self.var_4e5539eb)) {
-                self.var_4e5539eb = 0;
+            if (!isdefined(self.isonnavmeshcount)) {
+                self.isonnavmeshcount = 0;
             }
-            self.var_4e5539eb++;
-            if (self.var_4e5539eb > 10) {
+            self.isonnavmeshcount++;
+            if (self.isonnavmeshcount > 10) {
                 self.var_ef59b90 = 5;
             }
         } else if (isdefined(self.enemy_override) || isdefined(self.favoriteenemy) || isdefined(self.attackable)) {
             self.var_ef59b90 = 3;
-            self.var_4e5539eb = 0;
+            self.isonnavmeshcount = 0;
         } else {
-            self.var_4e5539eb = 0;
+            self.isonnavmeshcount = 0;
         }
     }
     if (isdefined(self.var_5ed989c7) && self.var_5ed989c7) {
@@ -2673,7 +2673,7 @@ function private damagedoor(entity) {
         var_9b1a1b39 = 1;
         foreach (dynent in self.dynentarray) {
             damage = 10;
-            if (isdefined(self.var_12ec333b) && self.var_12ec333b) {
+            if (isdefined(self.instakill_doors) && self.instakill_doors) {
                 damage = dynent.health;
             }
             dynent dodamage(damage, self.origin, self, self, "none", "MOD_EXPLOSIVE");
@@ -2709,7 +2709,7 @@ function private function_7c8e35e8(entity, asmstate) {
         unlinktraversal(node);
         entity.var_834b0770 = node;
         node.owner = entity;
-        if (isdefined(entity.var_12ec333b) && entity.var_12ec333b || isdefined(entity.var_6501ffdf) && entity.var_6501ffdf) {
+        if (isdefined(entity.instakill_doors) && entity.instakill_doors || isdefined(entity.is_miniboss) && entity.is_miniboss) {
             entity callback::function_d8abfc3d(#"on_ai_melee", &damagedoor);
         }
         if (isdefined(asmstate)) {

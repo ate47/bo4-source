@@ -4,6 +4,6 @@
     "type": "fxcharacterdef",
     "vmtype": "client",
     "name": "fxd8_zm_char_zombie_base_body",
-    "var_a0d91763": "j_spine4",
-    "var_c7a3c7dd": "#hash_311a865a91014b22"
+    "hash_a0d91763": "j_spine4",
+    "hash_c7a3c7dd": "#hash_311a865a91014b22"
 }

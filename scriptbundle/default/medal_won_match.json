@@ -5,6 +5,6 @@
     "name": "medal_won_match",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#ui_icon_medal_victor",
-    "stringref": "#hash_617c8b21eba1766d",
+    "stringref": "#medal/won_match",
     "iconlarge": "#ui_icon_medal_victor_large"
 }

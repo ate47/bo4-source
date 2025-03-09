@@ -1,17 +1,17 @@
 {
-    "var_b2353cab": "#hash_349d2789fc29dd7b",
+    "hash_b2353cab": "#hash_349d2789fc29dd7b",
     "effectcount": 5,
     "configstringfiletype": "scriptbundle",
-    "var_702e93ea": "j_shoulder_le",
+    "hash_702e93ea": "j_shoulder_le",
     "type": "fxcharacterdef",
-    "var_70f592cb": "#hash_63074eb9d1a1e00c",
+    "hash_70f592cb": "#hash_63074eb9d1a1e00c",
     "vmtype": "client",
     "name": "fxd8_zm_char_cata_cor_body",
-    "var_a0d91763": "j_elbow_ri",
-    "var_320e9190": "#hash_5400356a313e2ec3",
-    "var_c7a3c7dd": "#hash_22aac55b4e3e4c42",
-    "var_bae031ea": "#hash_5400356a313e2ec3",
-    "var_edb57500": "j_elbow_le",
-    "var_743ecb88": "j_teeth_upper",
-    "var_434f4b19": "j_shoulder_ri"
+    "hash_a0d91763": "j_elbow_ri",
+    "hash_320e9190": "#hash_5400356a313e2ec3",
+    "hash_c7a3c7dd": "#hash_22aac55b4e3e4c42",
+    "hash_bae031ea": "#hash_5400356a313e2ec3",
+    "hash_edb57500": "j_elbow_le",
+    "hash_743ecb88": "j_teeth_upper",
+    "hash_434f4b19": "j_shoulder_ri"
 }

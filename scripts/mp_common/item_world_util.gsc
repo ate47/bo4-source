@@ -473,7 +473,7 @@ function function_41f06d9d(itementry) {
 // Checksum 0xf5fb9e1a, Offset: 0x1c90
 // Size: 0x22
 function function_74e1e547(point) {
-    return function_3238d10d(point);
+    return validateorigin(point);
 }
 
 // Namespace item_world_util/item_world_util

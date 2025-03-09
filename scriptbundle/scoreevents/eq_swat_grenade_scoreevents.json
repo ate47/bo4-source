@@ -3,5 +3,5 @@
     "type": "scoreevents",
     "vmtype": "both",
     "name": "eq_swat_grenade_scoreevents",
-    "var_e1b418c1": "ability"
+    "customsettingstype": "ability"
 }

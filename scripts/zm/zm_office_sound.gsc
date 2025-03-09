@@ -7,7 +7,7 @@
 #namespace zm_office_sound;
 
 // Namespace zm_office_sound/zm_office_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb5d78733, Offset: 0xe0
 // Size: 0x34
 function main() {
@@ -16,7 +16,7 @@ function main() {
 }
 
 // Namespace zm_office_sound/zm_office_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd52ea851, Offset: 0x120
 // Size: 0x64
 function function_7624a4cd() {
@@ -26,7 +26,7 @@ function function_7624a4cd() {
 }
 
 // Namespace zm_office_sound/zm_office_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5e07d4cb, Offset: 0x190
 // Size: 0x15a
 function function_f71796ca() {
@@ -50,7 +50,7 @@ function function_f71796ca() {
 }
 
 // Namespace zm_office_sound/zm_office_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc66ca105, Offset: 0x2f8
 // Size: 0x78
 function function_e856acd2() {
@@ -62,7 +62,7 @@ function function_e856acd2() {
 }
 
 // Namespace zm_office_sound/zm_office_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf612772b, Offset: 0x378
 // Size: 0x1ee
 function function_bc327ddf() {
@@ -96,7 +96,7 @@ function function_bc327ddf() {
 }
 
 // Namespace zm_office_sound/zm_office_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcdc8d5bb, Offset: 0x570
 // Size: 0x4c
 function function_b72b5f36() {
@@ -105,7 +105,7 @@ function function_b72b5f36() {
 }
 
 // Namespace zm_office_sound/zm_office_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5072b0c6, Offset: 0x5c8
 // Size: 0x154
 function function_43e2a503() {

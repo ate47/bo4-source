@@ -1,0 +1,37 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_990ed6a77c7d9ea",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_758d0bfc0cbb93d5",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_7bf2476ec51bf3d6",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_silo_helicopter_crash_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

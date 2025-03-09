@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_office_umbrella/zm_office_umbrella
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4fa0d220, Offset: 0x100
 // Size: 0xb4
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace zm_office_umbrella/zm_office_umbrella
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6962c8d7, Offset: 0x1c0
 // Size: 0x8c
 function function_87d68f99(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -33,7 +33,7 @@ function function_87d68f99(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_office_umbrella/zm_office_umbrella
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf8a11820, Offset: 0x258
 // Size: 0x84
 function narrative_room(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

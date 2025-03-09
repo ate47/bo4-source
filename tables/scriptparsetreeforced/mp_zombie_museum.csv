@@ -1,0 +1,6 @@
+vm,name
+server,#scripts/mp/mp_zombie_museum_scripted.gsc
+server,#scripts/mp/mp_maps_lighting.gsc
+server,#scripts/mp/mp_zombie_museum_teleporter.gsc
+client,#scripts/mp/mp_zombie_museum_scripted.csc
+client,#scripts/mp/mp_maps_lighting.csc

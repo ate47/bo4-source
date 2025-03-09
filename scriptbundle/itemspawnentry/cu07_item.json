@@ -16,7 +16,7 @@
                 }
             ],
             "description": "#hash_29d120c5aabca367",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "description": "#hash_29d121c5aabca51a"
@@ -24,8 +24,8 @@
     ],
     "description": "#hash_4a91f19ad1e9e99f",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 2,
-    "var_e8b98a8a": "#hash_344d7560d19b42aa",
+    "hash_eda4062b": 2,
+    "hash_e8b98a8a": "#hash_344d7560d19b42aa",
     "model": "#p8_wz_cu_dog_collar_tags",
     "type": "itemspawnentry",
     "hintstring": "#hash_7a55ec7348fc5d58",
@@ -35,7 +35,7 @@
     "icon": "#hash_53c6b639b6b8efd3",
     "modelscale": 4,
     "rarity": "None",
-    "var_a51bc1f7": "#hash_36fc8130df24444b",
+    "hash_a51bc1f7": "#hash_36fc8130df24444b",
     "handler": "#hash_5c844f5c1207159c",
     "rewardname": "#hash_725b1719bd56b4ec",
     "itemtype": "quest"

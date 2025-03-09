@@ -10,15 +10,15 @@
 
 // Namespace zm_weap_flamethrower/zm_weap_flamethrower
 // Params 0, eflags: 0x2
-// Checksum 0xe3ed9b67, Offset: 0x1a0
+// Checksum 0xb8656dda, Offset: 0x1a0
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zm_weap_flamethrower", &__init__, undefined, undefined);
 }
 
 // Namespace zm_weap_flamethrower/zm_weap_flamethrower
-// Params 0, eflags: 0x1 linked
-// Checksum 0x97a14862, Offset: 0x1e8
+// Params 0, eflags: 0x0
+// Checksum 0xfefab9f, Offset: 0x1e8
 // Size: 0x22a
 function __init__() {
     clientfield::register("scriptmover", "flamethrower_tornado_fx", 1, 1, "int", &flamethrower_tornado_fx, 0, 0);
@@ -33,8 +33,8 @@ function __init__() {
 }
 
 // Namespace zm_weap_flamethrower/zm_weap_flamethrower
-// Params 7, eflags: 0x1 linked
-// Checksum 0x967b6660, Offset: 0x420
+// Params 7, eflags: 0x0
+// Checksum 0x8945638d, Offset: 0x420
 // Size: 0x196
 function flamethrower_tornado_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
@@ -61,8 +61,8 @@ function flamethrower_tornado_fx(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace zm_weap_flamethrower/zm_weap_flamethrower
-// Params 1, eflags: 0x1 linked
-// Checksum 0xd22401bf, Offset: 0x5c0
+// Params 1, eflags: 0x0
+// Checksum 0x7a87c413, Offset: 0x5c0
 // Size: 0x8a
 function function_ea05550b(localclientnum) {
     self endon(#"death", #"hash_4a10e61d27734104");
@@ -72,8 +72,8 @@ function function_ea05550b(localclientnum) {
 }
 
 // Namespace zm_weap_flamethrower/zm_weap_flamethrower
-// Params 7, eflags: 0x1 linked
-// Checksum 0xdb7bc7de, Offset: 0x658
+// Params 7, eflags: 0x0
+// Checksum 0x4455e6d7, Offset: 0x658
 // Size: 0x15c
 function function_4e325cd6(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     self endon(#"death", #"hash_4a10e61d27734104");
@@ -92,8 +92,8 @@ function function_4e325cd6(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_flamethrower/zm_weap_flamethrower
-// Params 7, eflags: 0x5 linked
-// Checksum 0x2b30ae5a, Offset: 0x7c0
+// Params 7, eflags: 0x4
+// Checksum 0x69ef2097, Offset: 0x7c0
 // Size: 0x8c
 function private function_d05553c6(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newvalue && !namespace_a6aea2c6::is_active(#"silent_film")) {
@@ -102,8 +102,8 @@ function private function_d05553c6(localclientnum, oldvalue, newvalue, bnewent, 
 }
 
 // Namespace zm_weap_flamethrower/zm_weap_flamethrower
-// Params 7, eflags: 0x1 linked
-// Checksum 0x7bf9b1e9, Offset: 0x858
+// Params 7, eflags: 0x0
+// Checksum 0xc4b123bc, Offset: 0x858
 // Size: 0xcc
 function flamethrower_wind_blast_flash(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (self zm_utility::function_f8796df3(localclientnum)) {
@@ -114,8 +114,8 @@ function flamethrower_wind_blast_flash(localclientnum, oldval, newval, bnewent, 
 }
 
 // Namespace zm_weap_flamethrower/zm_weap_flamethrower
-// Params 7, eflags: 0x1 linked
-// Checksum 0x2caad5a5, Offset: 0x930
+// Params 7, eflags: 0x0
+// Checksum 0xc50d736d, Offset: 0x930
 // Size: 0xcc
 function flamethrower_tornado_blast_flash(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (self zm_utility::function_f8796df3(localclientnum)) {

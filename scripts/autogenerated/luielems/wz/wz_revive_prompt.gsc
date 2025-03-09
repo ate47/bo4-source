@@ -7,42 +7,42 @@
 // Method(s) 9 Total 16
 class cwz_revive_prompt : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x4e3f5dd1, Offset: 0x4d8
     // Size: 0x3c
     function set_cowardsway(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "cowardsWay", value);
+        player clientfield::function_9bf78ef8(_uid, "cowardsWay", value);
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x2cf071a9, Offset: 0x490
     // Size: 0x3c
     function set_reviveprogress(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "reviveProgress", value);
+        player clientfield::function_9bf78ef8(_uid, "reviveProgress", value);
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xbfc54322, Offset: 0x448
     // Size: 0x3c
     function set_health(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "health", value);
+        player clientfield::function_9bf78ef8(_uid, "health", value);
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xbca400cc, Offset: 0x400
     // Size: 0x3c
     function set_clientnum(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "clientnum", value);
+        player clientfield::function_9bf78ef8(_uid, "clientnum", value);
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x3ab05ea6, Offset: 0x3d0
     // Size: 0x24
     function close(player) {
@@ -50,7 +50,7 @@ class cwz_revive_prompt : cluielem {
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xa46f2a8, Offset: 0x380
     // Size: 0x44
     function open(player, persistent = 0) {
@@ -58,7 +58,7 @@ class cwz_revive_prompt : cluielem {
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xe01e272, Offset: 0x2b0
     // Size: 0xc4
     function setup_clientfields(uid) {
@@ -72,7 +72,7 @@ class cwz_revive_prompt : cluielem {
 }
 
 // Namespace wz_revive_prompt/wz_revive_prompt
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc2c72f5f, Offset: 0xf8
 // Size: 0x40
 function register(uid) {

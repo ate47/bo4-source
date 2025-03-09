@@ -1,0 +1,46 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2a033cbc8bc97b97",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 5,
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_43581ab456bdada1",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "damagethreshold": 0.1,
+                    "hash_132c9791": 1,
+                    "hash_b3dddfd3": 1,
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#p8_fxanim_gp_parrot_orange_mod",
+            "type": "prop",
+            "hash_a1c5c678": 1,
+            "deletewhenfinished": 1,
+            "name": "prop 1",
+            "hash_873368a8": 10,
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_gp_parrot_standing_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

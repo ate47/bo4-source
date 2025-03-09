@@ -3,15 +3,15 @@
         {
             "minweight": 150,
             "itementry": "shotgun_pump_t8_item",
-            "var_3f8c08e3": "ammo_type_12ga_item",
+            "childitementry_1": "ammo_type_12ga_item",
             "maxweight": 200,
             "available": -1
         }
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 1,
-    "var_9b009839": -1,
+    "hash_345eba59": 1,
+    "hash_9b009839": -1,
     "name": "floor_list_shotgun",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

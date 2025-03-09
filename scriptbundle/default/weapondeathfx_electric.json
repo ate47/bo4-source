@@ -1,10 +1,10 @@
 {
     "lootid": "#hash_43dc64f58d9e826f",
-    "var_904b37bc": "#hash_dba22a16e731c60",
+    "hash_904b37bc": "#hash_dba22a16e731c60",
     "image": "loot06_ui_icon_blackmarket_reserves_death_fx_eletric",
     "name": "weapondeathfx_electric",
     "displayname": "#hash_60a82395c46b52ac",
     "icon": "loot06_ui_icon_cac_death_fx_electric",
-    "var_eeb78b92": "#hash_4901c97c2613de1e",
+    "hash_eeb78b92": "#hash_4901c97c2613de1e",
     "previewimage": "#loot06_ui_icon_blackmarket_reserves_death_fx_eletric"
 }

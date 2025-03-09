@@ -7,7 +7,7 @@
 class czm_trial_timer : cluielem {
 
     // Namespace czm_trial_timer/zm_trial_timer
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x65be9101, Offset: 0x410
     // Size: 0x30
     function set_under_round_rules(localclientnum, value) {
@@ -15,7 +15,7 @@ class czm_trial_timer : cluielem {
     }
 
     // Namespace czm_trial_timer/zm_trial_timer
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x16648483, Offset: 0x3d8
     // Size: 0x30
     function set_timer_text(localclientnum, value) {
@@ -23,7 +23,7 @@ class czm_trial_timer : cluielem {
     }
 
     // Namespace czm_trial_timer/zm_trial_timer
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xaccde763, Offset: 0x3a0
     // Size: 0x2c
     function open(localclientnum) {
@@ -31,7 +31,7 @@ class czm_trial_timer : cluielem {
     }
 
     // Namespace czm_trial_timer/zm_trial_timer
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xa534817c, Offset: 0x330
     // Size: 0x68
     function function_fa582112(localclientnum) {
@@ -41,7 +41,7 @@ class czm_trial_timer : cluielem {
     }
 
     // Namespace czm_trial_timer/zm_trial_timer
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x688fb4bf, Offset: 0x300
     // Size: 0x24
     function register_clientside(uid) {
@@ -49,7 +49,7 @@ class czm_trial_timer : cluielem {
     }
 
     // Namespace czm_trial_timer/zm_trial_timer
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0x172b89ad, Offset: 0x270
     // Size: 0x84
     function setup_clientfields(uid, var_96b8e5ea, var_33be6591) {
@@ -61,7 +61,7 @@ class czm_trial_timer : cluielem {
 }
 
 // Namespace zm_trial_timer/zm_trial_timer
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6eab7518, Offset: 0xd0
 // Size: 0x58
 function register(uid, var_96b8e5ea, var_33be6591) {

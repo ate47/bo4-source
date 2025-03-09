@@ -5,7 +5,7 @@
     "weapon": "weapon#hash_7ecd376f9782832",
     "type": "itemspawnentry",
     "name": "health_item_large",
-    "var_36781d9f": "fly_drop_generic",
+    "dropsound": "fly_drop_generic",
     "stackcount": 1,
     "icon": "#hash_754ad869787d7ac0",
     "modelscale": 1.2,

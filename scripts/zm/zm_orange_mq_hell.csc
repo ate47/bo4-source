@@ -8,7 +8,7 @@
 #namespace zm_orange_mq_hell;
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd5af1bad, Offset: 0x1b0
 // Size: 0x694
 function preload() {
@@ -36,7 +36,7 @@ function preload() {
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xeb3c02a9, Offset: 0x850
 // Size: 0x82
 function function_f1749965(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -46,7 +46,7 @@ function function_f1749965(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc05f8332, Offset: 0x8e0
 // Size: 0x6c
 function function_44aa40e0(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -56,7 +56,7 @@ function function_44aa40e0(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7aa98724, Offset: 0x958
 // Size: 0x7c
 function function_e378599(n_radius) {
@@ -66,7 +66,7 @@ function function_e378599(n_radius) {
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7075690a, Offset: 0x9e0
 // Size: 0x100
 function lava_init(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -78,7 +78,7 @@ function lava_init(localclientnum, oldval, newval, bnewent, binitialsnap, fieldn
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf94eb21e, Offset: 0xae8
 // Size: 0x224
 function lava_control(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -105,7 +105,7 @@ function lava_control(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2ec5fa9a, Offset: 0xd18
 // Size: 0x144
 function function_f490f0e5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -127,7 +127,7 @@ function function_f490f0e5(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x39faa9b1, Offset: 0xe68
 // Size: 0x1a6
 function function_19f2f0f2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -154,7 +154,7 @@ function function_19f2f0f2(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa4a6bb68, Offset: 0x1018
 // Size: 0x5c
 function function_cbc22c9d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -162,7 +162,7 @@ function function_cbc22c9d(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfcb79abf, Offset: 0x1080
 // Size: 0x74
 function play_lantern_explode_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -170,7 +170,7 @@ function play_lantern_explode_fx(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x31ef962b, Offset: 0x1100
 // Size: 0x84
 function function_bd0807f3(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -182,7 +182,7 @@ function function_bd0807f3(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7ce1068f, Offset: 0x1190
 // Size: 0x94
 function function_eb481d38(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zombie_brutus_util/ai_brutus_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4305c72, Offset: 0x120
 // Size: 0x4c
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace zombie_brutus_util/ai_brutus_util
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xeb380bad, Offset: 0x178
 // Size: 0xbc
 function function_6f198c81(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

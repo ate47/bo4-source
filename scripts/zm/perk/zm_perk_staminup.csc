@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_staminup/zm_perk_staminup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbbdf4997, Offset: 0x178
 // Size: 0x14
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_staminup/zm_perk_staminup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaf84dd13, Offset: 0x198
 // Size: 0x104
 function enable_staminup_perk_for_level() {
@@ -35,7 +35,7 @@ function enable_staminup_perk_for_level() {
 }
 
 // Namespace zm_perk_staminup/zm_perk_staminup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3d37af16, Offset: 0x2a8
 // Size: 0x4a
 function init_staminup() {
@@ -45,7 +45,7 @@ function init_staminup() {
 }
 
 // Namespace zm_perk_staminup/zm_perk_staminup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x300
 // Size: 0x4
 function staminup_client_field_func() {
@@ -53,7 +53,7 @@ function staminup_client_field_func() {
 }
 
 // Namespace zm_perk_staminup/zm_perk_staminup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x310
 // Size: 0x4
 function staminup_callback_func() {

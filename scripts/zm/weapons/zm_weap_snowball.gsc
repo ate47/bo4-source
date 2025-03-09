@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_snowball/zm_weap_snowball
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x16e9a33, Offset: 0x158
 // Size: 0x284
 function __init__() {
@@ -43,7 +43,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_snowball/zm_weap_snowball
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf127adc0, Offset: 0x3e8
 // Size: 0x418
 function on_grenade_fired(s_params) {
@@ -80,7 +80,7 @@ function on_grenade_fired(s_params) {
 }
 
 // Namespace zm_weap_snowball/zm_weap_snowball
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x8f5b662, Offset: 0x808
 // Size: 0x74
 function private function_6e2124f7() {
@@ -91,7 +91,7 @@ function private function_6e2124f7() {
 }
 
 // Namespace zm_weap_snowball/zm_weap_snowball
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x101071c2, Offset: 0x888
 // Size: 0x74
 function private function_2291fc03() {
@@ -102,7 +102,7 @@ function private function_2291fc03() {
 }
 
 // Namespace zm_weap_snowball/zm_weap_snowball
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0xb54d6640, Offset: 0x908
 // Size: 0x14e
 function function_5ff12a45(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -128,7 +128,7 @@ function function_5ff12a45(inflictor, attacker, damage, flags, meansofdeath, wea
 }
 
 // Namespace zm_weap_snowball/zm_weap_snowball
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x2f4f4da9, Offset: 0xa60
 // Size: 0xde
 function function_ee240a8e(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

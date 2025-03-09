@@ -544,13 +544,13 @@ function function_2a494565(isselfdestruct) {
         objective_delete(smartcover.objectiveid);
         gameobjects::release_obj_id(smartcover.objectiveid);
     }
-    if (isdefined(level.smartcoversettings.bundle.var_35fbc280)) {
+    if (isdefined(level.smartcoversettings.bundle.destructionfx)) {
         if (isdefined(isselfdestruct) && isselfdestruct) {
-            var_415135a0 = level.smartcoversettings.bundle.var_28811698;
-            var_72db9941 = level.smartcoversettings.bundle.var_5493f8b0;
+            var_415135a0 = level.smartcoversettings.bundle.selfdestructfx;
+            var_72db9941 = level.smartcoversettings.bundle.selfdestructaudio;
         } else {
-            var_415135a0 = level.smartcoversettings.bundle.var_35fbc280;
-            var_72db9941 = level.smartcoversettings.bundle.var_b3756378;
+            var_415135a0 = level.smartcoversettings.bundle.destructionfx;
+            var_72db9941 = level.smartcoversettings.bundle.destructionaudio;
         }
         var_b0e81be9 = isdefined(self gettagorigin("tag_cover_base_d0")) ? self gettagorigin("tag_cover_base_d0") : self.origin;
         var_505e3308 = isdefined(self gettagangles("tag_cover_base_d0")) ? self gettagangles("tag_cover_base_d0") : self.angles;
@@ -699,7 +699,7 @@ function createsmartcover(watcher, var_5ebbec19, origin, angles, var_796be15d) {
     watcher.objectarray[watcher.objectarray.size] = var_89b6fd44;
     var_c6f47ca9 = getdvarint(#"hash_1d8eb304f5cf8033", 0);
     if (var_c6f47ca9 == 1) {
-        var_89b6fd44 function_41b29ff0(player function_884d0700(var_796be15d));
+        var_89b6fd44 setdestructibledef(player function_884d0700(var_796be15d));
     }
     var_89b6fd44.angles = angles;
     var_89b6fd44.owner = player;
@@ -1095,7 +1095,7 @@ function microwaveentity(entity) {
             entity notify(#"end_microwaveentitypostshutdowncleanup");
             return;
         }
-        damage = (isdefined(level.smartcoversettings.bundle.var_d2369c5a) ? level.smartcoversettings.bundle.var_d2369c5a : 0) * damagescalar;
+        damage = (isdefined(level.smartcoversettings.bundle.microwavedamage) ? level.smartcoversettings.bundle.microwavedamage : 0) * damagescalar;
         if (level.hardcoremode) {
             damage *= isdefined(level.smartcoversettings.bundle.var_78c1e37b) ? level.smartcoversettings.bundle.var_78c1e37b : 0.25;
         }

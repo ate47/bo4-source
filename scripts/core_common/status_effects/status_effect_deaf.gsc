@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace status_effect_deaf/status_effect_deaf
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc45e05f4, Offset: 0xd0
 // Size: 0x8c
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace status_effect_deaf/status_effect_deaf
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x168
 // Size: 0x4
 function on_player_spawned() {
@@ -32,7 +32,7 @@ function on_player_spawned() {
 }
 
 // Namespace status_effect_deaf/status_effect_deaf
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x51a69f95, Offset: 0x178
 // Size: 0x1c
 function deaf_apply(var_756fda07, weapon, applicant) {
@@ -40,7 +40,7 @@ function deaf_apply(var_756fda07, weapon, applicant) {
 }
 
 // Namespace status_effect_deaf/status_effect_deaf
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1a0
 // Size: 0x4
 function function_c5189bd() {

@@ -3,7 +3,7 @@
 #namespace commander_util;
 
 // Namespace commander_util/commander_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7a013708, Offset: 0x70
 // Size: 0x9a
 function function_2c38e191(team) {
@@ -22,7 +22,7 @@ function function_2c38e191(team) {
 }
 
 // Namespace commander_util/commander_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x93cbae75, Offset: 0x118
 // Size: 0x9a
 function pause_commander(team) {

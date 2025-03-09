@@ -1,18 +1,18 @@
 {
     "contracticon": "#hash_3aa94b036ae68117",
-    "var_2e7ca5b9": "core_frontend_rng_reserve",
-    "var_94988c2": "#ui_icon_blackmarket_store_tile_focus_08",
-    "var_cb6692ec": "#ui_icon_blackmarket_lockskull_256",
-    "var_c36cc884": "#img_t8_menu_mp_loadscreen_arsenal",
-    "var_b042b989": "#hash_1370744c760fd71c",
+    "hash_2e7ca5b9": "core_frontend_rng_reserve",
+    "hash_94988c2": "#ui_icon_blackmarket_store_tile_focus_08",
+    "hash_cb6692ec": "#ui_icon_blackmarket_lockskull_256",
+    "hash_c36cc884": "#img_t8_menu_mp_loadscreen_arsenal",
+    "hash_b042b989": "#hash_1370744c760fd71c",
     "contracttitle": "#hash_7ed95c36c9e909b1",
-    "var_832d7586": "#hash_1bf06acf96fda47e",
+    "hash_832d7586": "#hash_1bf06acf96fda47e",
     "name": "loot_season_8",
     "bannerstring": "#hash_2b81b691a5faa21d",
-    "var_7ec13217": "#hash_1f1e4314badb48e3",
+    "hash_7ec13217": "#hash_1f1e4314badb48e3",
     "bannerimage": "#hash_47251be9bf56c8ff",
-    "var_f15e270f": "#white",
-    "var_998f25eb": "#ui_icon_blackmarket_store_tile_default_08",
+    "hash_f15e270f": "#white",
+    "hash_998f25eb": "#ui_icon_blackmarket_store_tile_default_08",
     "squareimage": "#ui_icon_blackmarket_store_tile_default_09",
-    "var_a1901465": "#ui_icon_blackmarket_store_tile_focus_09"
+    "hash_a1901465": "#ui_icon_blackmarket_store_tile_focus_09"
 }

@@ -5,7 +5,7 @@
 #namespace weaponobjects;
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6f1ee32b, Offset: 0xd8
 // Size: 0x1cc
 function function_b455d5d8() {
@@ -22,7 +22,7 @@ function function_b455d5d8() {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5cc76fc1, Offset: 0x2b0
 // Size: 0xf6
 function createspecialcrossbowwatchertypes(watcher) {
@@ -53,7 +53,7 @@ function function_f297d773() {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xeb0c9abd, Offset: 0x4c0
 // Size: 0x26
 function function_1eaa3e20(watcher) {
@@ -62,7 +62,7 @@ function function_1eaa3e20(watcher) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9ffe44af, Offset: 0x4f0
 // Size: 0xae
 function createhatchetwatcher(watcher) {
@@ -77,7 +77,7 @@ function createhatchetwatcher(watcher) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc8f5f2d1, Offset: 0x5a8
 // Size: 0x1a
 function createtactinsertwatcher(watcher) {
@@ -85,7 +85,7 @@ function createtactinsertwatcher(watcher) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5b1d009, Offset: 0x5d0
 // Size: 0x86
 function creatercbombwatcher(watcher) {
@@ -100,7 +100,7 @@ function creatercbombwatcher(watcher) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe3d64544, Offset: 0x660
 // Size: 0x9a
 function createqrdronewatcher(watcher) {
@@ -116,7 +116,7 @@ function createqrdronewatcher(watcher) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7eeb86ea, Offset: 0x708
 // Size: 0xb0
 function getspikelauncheractivespikecount(watcher) {
@@ -150,7 +150,7 @@ function watchspikelauncheritemcountchanged(watcher) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2ea3f1be, Offset: 0x8d8
 // Size: 0x84
 function spikesdetonating(watcher) {
@@ -185,7 +185,7 @@ function createspikelauncherwatcher(watcher) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcd7f2b66, Offset: 0xab8
 // Size: 0x2a
 function createplayerhelicopterwatcher(watcher) {
@@ -206,7 +206,7 @@ function function_50d4198b(watcher) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x907b50d4, Offset: 0xb50
 // Size: 0xc4
 function function_f0e307a2(watcher, player) {
@@ -221,7 +221,7 @@ function function_f0e307a2(watcher, player) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfa0d7872, Offset: 0xc20
 // Size: 0xc4
 function function_b70eb3a9(watcher, player) {
@@ -234,7 +234,7 @@ function function_b70eb3a9(watcher, player) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc53c4de0, Offset: 0xcf0
 // Size: 0x170
 function function_5742754c() {
@@ -262,7 +262,7 @@ function function_5742754c() {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xecc41cc1, Offset: 0xe68
 // Size: 0x16c
 function function_e98cee52(player, station) {
@@ -286,7 +286,7 @@ function function_e98cee52(player, station) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x116c4560, Offset: 0xfe0
 // Size: 0xb8
 function function_61bdb626(weapon) {
@@ -299,7 +299,7 @@ function function_61bdb626(weapon) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdaecc0df, Offset: 0x10a0
 // Size: 0x34
 function function_42eeab72(station) {
@@ -308,7 +308,7 @@ function function_42eeab72(station) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3c03a841, Offset: 0x10e0
 // Size: 0x2c
 function function_f47cd4cb() {
@@ -318,7 +318,7 @@ function function_f47cd4cb() {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc19cf275, Offset: 0x1118
 // Size: 0xe4
 function delayedspikedetonation(attacker, weapon) {
@@ -337,7 +337,7 @@ function delayedspikedetonation(attacker, weapon) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x8c21c52d, Offset: 0x1208
 // Size: 0x6c
 function spikedetonate(attacker, weapon, target) {
@@ -351,7 +351,7 @@ function spikedetonate(attacker, weapon, target) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7a42ed3, Offset: 0x1280
 // Size: 0x38
 function onspawnhatchet(watcher, player) {
@@ -361,7 +361,7 @@ function onspawnhatchet(watcher, player) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x78ce9d35, Offset: 0x12c0
 // Size: 0x3c
 function onspawncrossbowbolt(watcher, player) {
@@ -370,7 +370,7 @@ function onspawncrossbowbolt(watcher, player) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7295c385, Offset: 0x1308
 // Size: 0xdc
 function onspawncrossbowbolt_internal(watcher, player) {
@@ -389,7 +389,7 @@ function onspawncrossbowbolt_internal(watcher, player) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8154f0b9, Offset: 0x13f0
 // Size: 0x3c
 function onspawncrossbowboltimpact(s_watcher, e_player) {
@@ -398,7 +398,7 @@ function onspawncrossbowboltimpact(s_watcher, e_player) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x46c3401, Offset: 0x1438
 // Size: 0x104
 function onspawncrossbowboltimpact_internal(s_watcher, e_player) {
@@ -415,7 +415,7 @@ function onspawncrossbowboltimpact_internal(s_watcher, e_player) {
 }
 
 // Namespace weaponobjects/namespace_4c668920
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6e3d80d4, Offset: 0x1548
 // Size: 0xb6
 function dieonentitydeath(entity, player) {

@@ -631,9 +631,9 @@
     "type": "scene",
     "name": "aib_vign_cust_zm_red_boss_intro",
     "dontsync": 1,
-    "var_a6da2039": "aib_vign_cust_zm_red_boss_intro",
+    "hash_a6da2039": "aib_vign_cust_zm_red_boss_intro",
     "aligntarget": "tag_align_red_boss",
     "ignorestreamer": 1,
     "team": "any",
-    "var_3e692842": -4
+    "hash_3e692842": -4
 }

@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 // Checksum 0x44e49629, Offset: 0xc8
 // Size: 0x84
 function __init__() {
-    character_unlock_fixup::register_character_unlock(#"torque_unlock", #"hash_6999516e5e35a515", #"cu02_item", &function_d95e620c, #"hash_a9ec4883fd0293d", #"hash_3843c83850f09a08", #"hash_b47463756c6a60f");
+    character_unlock_fixup::register_character_unlock(#"torque_unlock", #"prt_wz_engineer", #"cu02_item", &function_d95e620c, #"hash_a9ec4883fd0293d", #"hash_3843c83850f09a08", #"hash_b47463756c6a60f");
 }
 
 // Namespace character_unlock_torque_fixup/character_unlock_torque_fixup

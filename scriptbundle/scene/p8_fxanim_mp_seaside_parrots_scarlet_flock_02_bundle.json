@@ -1,0 +1,42 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_38873cae0fced134",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 3,
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c13accf7342b879",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 3,
+                    "name": "shot 1",
+                    "blend": 1
+                }
+            ],
+            "model": "#p8_fxanim_gp_parrot_scarlet_mod",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "bird"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_seaside_parrots_scarlet_flock_02_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

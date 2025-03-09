@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_9d28c60/namespace_9d28c60
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xbcf8d0f2, Offset: 0x108
 // Size: 0x4c
 function private __init__() {
@@ -25,11 +25,11 @@ function private __init__() {
 }
 
 // Namespace namespace_9d28c60/namespace_9d28c60
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x27d4cacd, Offset: 0x160
 // Size: 0x44
 function private function_e67297f2() {
-    if (self.var_9fde8624 !== #"brutus_special") {
+    if (self.subarchetype !== #"brutus_special") {
         return;
     }
     self attach("c_t8_zmb_mob_brutus_boss_baton", "tag_weapon_right");
@@ -56,7 +56,7 @@ function private function_e67297f2() {
         case #"hash_3b5a33d5b7ae4e80":
             spawners = getspawnerarray();
             foreach (spawner in spawners) {
-                if (spawner.var_9fde8624 === #"brutus_special" && isdefined(spawner.script_noteworthy)) {
+                if (spawner.subarchetype === #"brutus_special" && isdefined(spawner.script_noteworthy)) {
                     zm_devgui::spawn_archetype(spawner.script_noteworthy);
                     break;
                 }
@@ -65,7 +65,7 @@ function private function_e67297f2() {
         case #"hash_2e229b658a79d09f":
             brutuses = getaiarchetypearray(#"brutus");
             foreach (brutus in brutuses) {
-                if (brutus.var_9fde8624 === #"brutus_special") {
+                if (brutus.subarchetype === #"brutus_special") {
                     brutus kill(undefined, undefined, undefined, undefined, 0, 1);
                 }
             }

@@ -1,19 +1,19 @@
 {
     "descriptionimage": "#hash_b0051468c8fa60d",
     "description": "#hash_522e00cdda09849c",
-    "var_60fcfffa": "#hash_7cdc6df793f97d8c",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 0.01,
+    "hash_60fcfffa": "#hash_7cdc6df793f97d8c",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 0.01,
     "maxvalue": 1,
     "name": "pc_ads_sensitivity_vertical_high_zoom",
     "displayname": "#hash_4b4e75056d893fd4",
     "rangestartvalue": 0.1,
-    "var_d6897f56": 1,
+    "hash_d6897f56": 1,
     "decimalplace": 0.01,
-    "var_66faec87": 2,
+    "hash_66faec87": 2,
     "statname": "m_mouseADSPitchMultiplierHighZoom",
-    "var_d4e288e": 1,
-    "var_b7401319": "#hash_4cb3e74e686b536d"
+    "hash_d4e288e": 1,
+    "hash_b7401319": "#hash_4cb3e74e686b536d"
 }

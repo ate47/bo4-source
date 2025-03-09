@@ -20,7 +20,7 @@ function autoexec main() {
 }
 
 // Namespace archetype_secondary_animations/archetype_secondary_animations
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8ef7547a, Offset: 0x1f0
 // Size: 0x6c
 function private secondaryanimationsinit(localclientnum) {
@@ -32,7 +32,7 @@ function private secondaryanimationsinit(localclientnum) {
 }
 
 // Namespace archetype_secondary_animations/archetype_secondary_animations
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x81b369c3, Offset: 0x268
 // Size: 0x5a
 function private on_entity_spawn(localclientnum) {
@@ -43,7 +43,7 @@ function private on_entity_spawn(localclientnum) {
 }
 
 // Namespace archetype_secondary_animations/archetype_secondary_animations
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8d625855, Offset: 0x2d0
 // Size: 0x72
 function private on_entity_shutdown(localclientnum) {
@@ -60,7 +60,7 @@ function private on_entity_shutdown(localclientnum) {
 }
 
 // Namespace archetype_secondary_animations/archetype_secondary_animations
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x18e0371b, Offset: 0x350
 // Size: 0x748
 function buildandvalidatefacialanimationlist(localclientnum) {
@@ -95,7 +95,7 @@ function buildandvalidatefacialanimationlist(localclientnum) {
 }
 
 // Namespace archetype_secondary_animations/archetype_secondary_animations
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x53dbb957, Offset: 0xaa0
 // Size: 0x176
 function private getfacialanimoverride(localclientnum) {
@@ -121,7 +121,7 @@ function private getfacialanimoverride(localclientnum) {
 }
 
 // Namespace archetype_secondary_animations/archetype_secondary_animations
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x61a35605, Offset: 0xc20
 // Size: 0xa6
 function private function_176c97f8(substate) {
@@ -132,7 +132,7 @@ function private function_176c97f8(substate) {
 }
 
 // Namespace archetype_secondary_animations/archetype_secondary_animations
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x44d21a55, Offset: 0xcd0
 // Size: 0x5e
 function private function_f5dde44(substate) {
@@ -143,7 +143,7 @@ function private function_f5dde44(substate) {
 }
 
 // Namespace archetype_secondary_animations/archetype_secondary_animations
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x279eb7ab, Offset: 0xd38
 // Size: 0x5b8
 function private secondaryfacialanimationthink(localclientnum) {
@@ -234,7 +234,7 @@ function private secondaryfacialanimationthink(localclientnum) {
 }
 
 // Namespace archetype_secondary_animations/archetype_secondary_animations
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x4042ff87, Offset: 0x12f8
 // Size: 0xfc
 function private applynewfaceanim(localclientnum, animation, clearoncompletion = 0) {
@@ -252,7 +252,7 @@ function private applynewfaceanim(localclientnum, animation, clearoncompletion =
 }
 
 // Namespace archetype_secondary_animations/archetype_secondary_animations
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x32ea08d5, Offset: 0x1400
 // Size: 0x18a
 function private applydeathanim(localclientnum) {
@@ -283,7 +283,7 @@ function private applydeathanim(localclientnum) {
 }
 
 // Namespace archetype_secondary_animations/archetype_secondary_animations
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x99952f62, Offset: 0x1598
 // Size: 0x76
 function private clearcurrentfacialanim(localclientnum) {

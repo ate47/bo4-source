@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7a82e748baef1e73",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 3,
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_mp_jungle2_alt_boat_zodiac_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_jungle2_alt_boat_zodiac_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

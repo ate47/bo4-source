@@ -3,21 +3,21 @@
         {
             "minweight": 100,
             "itementry": "tr_flechette_t8_item",
-            "var_3f8c08e3": "ammo_type_762_item",
+            "childitementry_1": "ammo_type_762_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "lmg_stealth_t8_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "ar_peacekeeper_t8_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 100,
             "available": -1
         },
@@ -30,7 +30,7 @@
         {
             "minweight": 50,
             "itementry": "health_item_squad",
-            "var_3f8c08e3": "health_item_squad",
+            "childitementry_1": "health_item_squad",
             "maxweight": 50,
             "available": -1
         },
@@ -139,28 +139,28 @@
         {
             "minweight": 100,
             "itementry": "ar_an94_t8_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "ar_doublebarrel_t8_item",
-            "var_3f8c08e3": "ammo_type_762_item",
+            "childitementry_1": "ammo_type_762_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "smg_minigun_t8_item",
-            "var_3f8c08e3": "ammo_type_9mm_item",
+            "childitementry_1": "ammo_type_9mm_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "smg_vmp_t8_item",
-            "var_3f8c08e3": "ammo_type_9mm_item",
+            "childitementry_1": "ammo_type_9mm_item",
             "maxweight": 100,
             "available": -1
         },
@@ -178,11 +178,11 @@
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 200,
+    "hash_7fb0967b": 200,
     "type": "itemspawnlist",
-    "var_345eba59": 28,
-    "var_9b009839": -1,
-    "var_dc7ffbef": 1,
+    "hash_345eba59": 28,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
     "name": "weapons_test_guns",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

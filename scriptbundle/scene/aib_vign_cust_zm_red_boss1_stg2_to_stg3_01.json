@@ -76,8 +76,8 @@
     "type": "scene",
     "name": "aib_vign_cust_zm_red_boss1_stg2_to_stg3_01",
     "dontsync": 1,
-    "var_29563fd6": 160,
+    "hash_29563fd6": 160,
     "team": "any",
-    "var_be60a82b": -17,
-    "var_3e692842": 27
+    "hash_be60a82b": -17,
+    "hash_3e692842": 27
 }

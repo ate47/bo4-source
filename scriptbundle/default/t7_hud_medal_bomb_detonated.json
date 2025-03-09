@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_bomb_detonated",
     "backinglarge": "#t7_hud_medal_backing_gamemode_lrg",
     "iconsmall": "#t7_hud_medal_bomb_detonated",
-    "stringref": "#hash_2623f29090c7ebfe",
+    "stringref": "#medal/bomb_detonated",
     "iconlarge": "#t7_hud_medal_bomb_detonated_lrg"
 }

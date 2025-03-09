@@ -3,92 +3,92 @@
         {
             "minweight": 100,
             "itementry": "ar_fastfire_t8_operator_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "ar_stealth_t8_operator_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "tr_longburst_t8_operator_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "tr_midburst_t8_operator_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "tr_powersemi_t8_operator_item",
-            "var_3f8c08e3": "ammo_type_762_item",
+            "childitementry_1": "ammo_type_762_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "sniper_fastrechamber_t8_operator_item",
-            "var_3f8c08e3": "ammo_type_338_item",
+            "childitementry_1": "ammo_type_338_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "sniper_quickscope_t8_operator_item",
-            "var_3f8c08e3": "ammo_type_338_item",
+            "childitementry_1": "ammo_type_338_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "lmg_spray_t8_operator_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "lmg_standard_t8_operator_item",
-            "var_3f8c08e3": "ammo_type_762_item",
+            "childitementry_1": "ammo_type_762_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "smg_accurate_t8_operator_item",
-            "var_3f8c08e3": "ammo_type_45_item",
+            "childitementry_1": "ammo_type_45_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "smg_fastfire_t8_operator_item",
-            "var_3f8c08e3": "ammo_type_45_item",
+            "childitementry_1": "ammo_type_45_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "pistol_revolver_t8_operator_item",
-            "var_3f8c08e3": "ammo_type_45_item",
+            "childitementry_1": "ammo_type_45_item",
             "maxweight": 100,
             "available": -1
         }
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 12,
-    "var_9b009839": -1,
+    "hash_345eba59": 12,
+    "hash_9b009839": -1,
     "name": "supply_stash_operator_mod_weapons",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

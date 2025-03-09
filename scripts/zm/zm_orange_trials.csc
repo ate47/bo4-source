@@ -4,7 +4,7 @@
 #namespace zm_orange_trials;
 
 // Namespace zm_orange_trials/zm_orange_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcde04808, Offset: 0xa0
 // Size: 0xdc
 function preload() {
@@ -14,7 +14,7 @@ function preload() {
 }
 
 // Namespace zm_orange_trials/zm_orange_trials
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb7804c10, Offset: 0x188
 // Size: 0x12c
 function function_8532d13f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -34,7 +34,7 @@ function function_8532d13f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_orange_trials/zm_orange_trials
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4202cf6b, Offset: 0x2c0
 // Size: 0xac
 function function_804015d2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

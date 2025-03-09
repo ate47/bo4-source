@@ -33,8 +33,8 @@
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 5,
-    "var_9b009839": -1,
+    "hash_345eba59": 5,
+    "hash_9b009839": -1,
     "name": "zombie_apoc_event_homunculus_list",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

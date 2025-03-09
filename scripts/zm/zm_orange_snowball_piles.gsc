@@ -13,7 +13,7 @@
 
 // Namespace zm_orange_snowball_piles/zm_orange_snowball_piles
 // Params 0, eflags: 0x0
-// Checksum 0xbe7c7d46, Offset: 0x108
+// Checksum 0xb06df3ba, Offset: 0x108
 // Size: 0x184
 function init() {
     a_s_snowball_piles = struct::get_array("snowball_pile");
@@ -33,7 +33,7 @@ function init() {
 
 // Namespace zm_orange_snowball_piles/zm_orange_snowball_piles
 // Params 1, eflags: 0x4
-// Checksum 0xa509a3e3, Offset: 0x298
+// Checksum 0x7290cfb0, Offset: 0x298
 // Size: 0xb2
 function private function_dd028fcb(e_player) {
     var_d49d10b0 = e_player zm_loadout::get_player_lethal_grenade();
@@ -50,7 +50,7 @@ function private function_dd028fcb(e_player) {
 
 // Namespace zm_orange_snowball_piles/zm_orange_snowball_piles
 // Params 0, eflags: 0x4
-// Checksum 0x24d2aa5e, Offset: 0x358
+// Checksum 0xc642a8d7, Offset: 0x358
 // Size: 0xc6
 function private function_608b90b4() {
     self endon(#"end_game");
@@ -67,7 +67,7 @@ function private function_608b90b4() {
 
 // Namespace zm_orange_snowball_piles/zm_orange_snowball_piles
 // Params 0, eflags: 0x0
-// Checksum 0x716d83c5, Offset: 0x428
+// Checksum 0x476d09b8, Offset: 0x428
 // Size: 0x3fc
 function function_79ef6b93() {
     var_d49d10b0 = self zm_loadout::get_player_lethal_grenade();
@@ -111,7 +111,7 @@ function function_79ef6b93() {
 
 // Namespace zm_orange_snowball_piles/zm_orange_snowball_piles
 // Params 0, eflags: 0x0
-// Checksum 0x6e14bc87, Offset: 0x830
+// Checksum 0xce75c00d, Offset: 0x830
 // Size: 0xfc
 function function_3bb2f43b() {
     if (isdefined(self.var_3b55baa1) && isdefined(self.var_e01bb56) && self function_75a76099()) {
@@ -128,12 +128,11 @@ function function_3bb2f43b() {
 
 // Namespace zm_orange_snowball_piles/zm_orange_snowball_piles
 // Params 0, eflags: 0x0
-// Checksum 0x7ff61693, Offset: 0x938
-// Size: 0x27c
+// Checksum 0x2b4ecb01, Offset: 0x938
+// Size: 0x26c
 function function_76e94d52() {
     self notify(#"grenade_change");
     self endon(#"grenade_change");
-    self endon(#"death");
     level endon(#"end_game");
     while (true) {
         var_d49d10b0 = self zm_loadout::get_player_lethal_grenade();
@@ -169,7 +168,7 @@ function function_76e94d52() {
 
 // Namespace zm_orange_snowball_piles/zm_orange_snowball_piles
 // Params 0, eflags: 0x0
-// Checksum 0x907ec408, Offset: 0xbc0
+// Checksum 0xc252861c, Offset: 0xbb0
 // Size: 0x88
 function function_75a76099() {
     var_d49d10b0 = self zm_loadout::get_player_lethal_grenade();
@@ -181,10 +180,9 @@ function function_75a76099() {
 
 // Namespace zm_orange_snowball_piles/zm_orange_snowball_piles
 // Params 0, eflags: 0x0
-// Checksum 0x6f7ca0f6, Offset: 0xc50
-// Size: 0x12e
+// Checksum 0x2d9621e6, Offset: 0xc40
+// Size: 0x116
 function function_e1b7c710() {
-    self endon(#"death");
     level flag::wait_till_any(array("round_reset", #"trial_failed"));
     if (isdefined(self.var_3b55baa1) && isdefined(self.var_e01bb56) && self function_75a76099()) {
         self zm_loadout::set_player_lethal_grenade(self.var_3b55baa1);

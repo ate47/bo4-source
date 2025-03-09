@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_512633d23f8ac004",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 3,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_bd7257aa134b2b5",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_gp_dish_satellite_01_s4_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -1,14 +1,14 @@
 {
-    "var_d58bd0e9": "#hash_1ff9cffb9d62d81a",
-    "var_67b4a761": "#hash_1ff9cffb9d62d81a",
-    "var_2ecceeab": "#tempest_kill",
+    "hash_d58bd0e9": "#hash_1ff9cffb9d62d81a",
+    "hash_67b4a761": "#hash_1ff9cffb9d62d81a",
+    "hash_2ecceeab": "#tempest_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "var_16abf654": "#hash_1ff9cffb9d62d81a",
+    "hash_16abf654": "#hash_1ff9cffb9d62d81a",
     "name": "hero_lightninggun_scoreevents",
-    "var_e1b418c1": "ability",
-    "var_1b8b6771": "#hash_1ff9cffb9d62d81a",
-    "var_3143c814": "#tempest_shutdown",
-    "var_6643c0a0": "#hash_1ff9cffb9d62d81a"
+    "customsettingstype": "ability",
+    "hash_1b8b6771": "#hash_1ff9cffb9d62d81a",
+    "hash_3143c814": "#tempest_shutdown",
+    "hash_6643c0a0": "#hash_1ff9cffb9d62d81a"
 }

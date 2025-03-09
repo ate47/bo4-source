@@ -70,7 +70,7 @@
 #/
 
 // Namespace ai_interface/ai_interface
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf36e74c5, Offset: 0x820
 // Size: 0x52
 function private _initializelevelinterface(archetype) {
@@ -85,7 +85,7 @@ function private _initializelevelinterface(archetype) {
 #namespace ai;
 
 // Namespace ai/ai_interface
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xffd46be1, Offset: 0x880
 // Size: 0x2a
 function createinterfaceforentity(entity) {
@@ -95,7 +95,7 @@ function createinterfaceforentity(entity) {
 }
 
 // Namespace ai/ai_interface
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x165a3d0, Offset: 0x8b8
 // Size: 0x8c
 function getaiattribute(entity, attribute) {
@@ -109,7 +109,7 @@ function getaiattribute(entity, attribute) {
 }
 
 // Namespace ai/ai_interface
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x209ea5aa, Offset: 0x950
 // Size: 0x86
 function hasaiattribute(entity, attribute) {
@@ -117,7 +117,7 @@ function hasaiattribute(entity, attribute) {
 }
 
 // Namespace ai/ai_interface
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x5aeedb23, Offset: 0x9e0
 // Size: 0x17c
 function registerentityinterface(archetype, attribute, defaultvalue, callbackfunction) {
@@ -136,7 +136,7 @@ function registerentityinterface(archetype, attribute, defaultvalue, callbackfun
 }
 
 // Namespace ai/ai_interface
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x889e916d, Offset: 0xb68
 // Size: 0x1f4
 function registermatchedinterface(archetype, attribute, defaultvalue, possiblevalues, callbackfunction) {
@@ -157,7 +157,7 @@ function registermatchedinterface(archetype, attribute, defaultvalue, possibleva
 }
 
 // Namespace ai/ai_interface
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xc0361b74, Offset: 0xd68
 // Size: 0x33c
 function registernumericinterface(archetype, attribute, defaultvalue, minimum, maximum, callbackfunction) {
@@ -201,7 +201,7 @@ function registervectorinterface(archetype, attribute, defaultvalue, callbackfun
 }
 
 // Namespace ai/ai_interface
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6fbdc64, Offset: 0x1238
 // Size: 0x130
 function setaiattribute(entity, attribute, value) {

@@ -11,15 +11,15 @@
 
 // Namespace zm_ai_catalyst/zm_ai_catalyst
 // Params 0, eflags: 0x2
-// Checksum 0xb65aa6f7, Offset: 0x418
+// Checksum 0xc6430af1, Offset: 0x418
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zm_ai_catalyst", &__init__, undefined, undefined);
 }
 
 // Namespace zm_ai_catalyst/zm_ai_catalyst
-// Params 0, eflags: 0x5 linked
-// Checksum 0xf75c8f4a, Offset: 0x460
+// Params 0, eflags: 0x4
+// Checksum 0x6db9b517, Offset: 0x460
 // Size: 0x1cc
 function private __init__() {
     if (!isarchetypeloaded(#"catalyst")) {
@@ -39,8 +39,8 @@ function private __init__() {
 }
 
 // Namespace zm_ai_catalyst/zm_ai_catalyst
-// Params 0, eflags: 0x1 linked
-// Checksum 0xed57792a, Offset: 0x638
+// Params 0, eflags: 0x0
+// Checksum 0x77f7d934, Offset: 0x638
 // Size: 0x1fc
 function function_b6fd8c68() {
     clientfield::register("actor", "catalyst_aura_clientfield", 1, 3, "int", &function_213aaacc, 0, 0);
@@ -53,8 +53,8 @@ function function_b6fd8c68() {
 }
 
 // Namespace zm_ai_catalyst/zm_ai_catalyst
-// Params 7, eflags: 0x5 linked
-// Checksum 0x4cb66fc1, Offset: 0x840
+// Params 7, eflags: 0x4
+// Checksum 0xf1a856dd, Offset: 0x840
 // Size: 0x14c
 function private function_213aaacc(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     self util::waittill_dobj(localclientnum);
@@ -81,8 +81,8 @@ function private function_213aaacc(localclientnum, oldvalue, newvalue, bnewent, 
 }
 
 // Namespace zm_ai_catalyst/zm_ai_catalyst
-// Params 7, eflags: 0x5 linked
-// Checksum 0xe2df42f9, Offset: 0x998
+// Params 7, eflags: 0x4
+// Checksum 0xeb9ed4e0, Offset: 0x998
 // Size: 0x9c
 function private function_b3c2dc1c(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     util::playfxontag(localclientnum, level._effect[#"fx8_aat_opposite_exp"], self, "j_spine4");
@@ -90,8 +90,8 @@ function private function_b3c2dc1c(localclientnum, oldvalue, newvalue, bnewent, 
 }
 
 // Namespace zm_ai_catalyst/zm_ai_catalyst
-// Params 7, eflags: 0x5 linked
-// Checksum 0x16dd3077, Offset: 0xa40
+// Params 7, eflags: 0x4
+// Checksum 0xcff5fb08, Offset: 0xa40
 // Size: 0x194
 function private function_8cc5be3b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newval) {
@@ -116,8 +116,8 @@ function private function_8cc5be3b(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_catalyst/zm_ai_catalyst
-// Params 7, eflags: 0x5 linked
-// Checksum 0x4d703753, Offset: 0xbe0
+// Params 7, eflags: 0x4
+// Checksum 0x5ea6d90e, Offset: 0xbe0
 // Size: 0x186
 function private function_72d9d9e7(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newvalue === 1) {
@@ -140,8 +140,8 @@ function private function_72d9d9e7(localclientnum, oldvalue, newvalue, bnewent, 
 }
 
 // Namespace zm_ai_catalyst/zm_ai_catalyst
-// Params 7, eflags: 0x5 linked
-// Checksum 0x111a71b1, Offset: 0xd70
+// Params 7, eflags: 0x4
+// Checksum 0x6f0b6aa5, Offset: 0xd70
 // Size: 0xd6
 function private function_dce55f49(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newvalue === 1) {
@@ -157,8 +157,8 @@ function private function_dce55f49(localclientnum, oldvalue, newvalue, bnewent, 
 }
 
 // Namespace zm_ai_catalyst/zm_ai_catalyst
-// Params 1, eflags: 0x5 linked
-// Checksum 0x4cb1e791, Offset: 0xe50
+// Params 1, eflags: 0x4
+// Checksum 0xdf536d, Offset: 0xe50
 // Size: 0x13c
 function private function_8c78e227(localclientnum) {
     self notify(#"hash_28942d030dbe705");
@@ -175,8 +175,8 @@ function private function_8c78e227(localclientnum) {
 }
 
 // Namespace zm_ai_catalyst/zm_ai_catalyst
-// Params 7, eflags: 0x5 linked
-// Checksum 0xf7becf73, Offset: 0xf98
+// Params 7, eflags: 0x4
+// Checksum 0x75b810e5, Offset: 0xf98
 // Size: 0xc4
 function private function_1578a764(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     util::playfxontag(localclientnum, level._effect[#"fx8_cata_plasma_blast"], self, "j_spine4");
@@ -185,12 +185,12 @@ function private function_1578a764(localclientnum, oldvalue, newvalue, bnewent, 
 }
 
 // Namespace zm_ai_catalyst/zm_ai_catalyst
-// Params 7, eflags: 0x5 linked
-// Checksum 0x3fc48e04, Offset: 0x1068
+// Params 7, eflags: 0x4
+// Checksum 0xf2bac430, Offset: 0x1068
 // Size: 0x15c
 function private function_5c22755(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     self util::waittill_dobj(localclientnum);
-    if (newvalue && isdefined(self) && self.var_9fde8624 === #"catalyst_corrosive") {
+    if (newvalue && isdefined(self) && self.subarchetype === #"catalyst_corrosive") {
         animname = self getprimarydeltaanim();
         if (!isdefined(animname) || animname != "ai_t8_zm_zod_catalyst_corrosive_death_01" && animname != "ai_t8_zm_zod_catalyst_corrosive_death_02") {
             animname = "ai_t8_zm_zod_catalyst_corrosive_death_01";
@@ -204,8 +204,8 @@ function private function_5c22755(localclientnum, oldvalue, newvalue, bnewent, b
 }
 
 // Namespace zm_ai_catalyst/zm_ai_catalyst
-// Params 1, eflags: 0x5 linked
-// Checksum 0x624e10b0, Offset: 0x11d0
+// Params 1, eflags: 0x4
+// Checksum 0xa833eee9, Offset: 0x11d0
 // Size: 0x124
 function private function_ce9e3dc7(animname) {
     self endon(#"death");
@@ -228,8 +228,8 @@ function private function_ce9e3dc7(animname) {
 }
 
 // Namespace zm_ai_catalyst/zm_ai_catalyst
-// Params 1, eflags: 0x5 linked
-// Checksum 0xbcc5df0d, Offset: 0x1300
+// Params 1, eflags: 0x4
+// Checksum 0x9e3fdd51, Offset: 0x1300
 // Size: 0x22
 function private function_5608540a(localclientnum) {
     self.var_fab3cf78 = #"hash_10bdf06ea5640d49";

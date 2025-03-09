@@ -1,0 +1,5 @@
+vm,name
+server,#scripts/mp/mp_maldives_elevators.gsc
+server,#scripts/mp/mp_maldives_scripted.gsc
+server,#scripts/mp/mp_maps_lighting.gsc
+client,#scripts/mp/mp_maps_lighting.csc

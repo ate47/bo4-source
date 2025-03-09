@@ -16,7 +16,7 @@
                 }
             ],
             "description": "#hash_2ab30ae80d7cd215",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "teamsizedescriptions": [
@@ -34,7 +34,7 @@
                 }
             ],
             "description": "#hash_4175bed334f4b2f2",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "description": "#hash_2ab308e80d7cceaf"
@@ -43,7 +43,7 @@
     "amount": 1,
     "description": "#hash_380a44f5bb88e0bc",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 3,
+    "hash_eda4062b": 3,
     "weapon": "weapon#sig_bow_quickshot_wz",
     "type": "itemspawnentry",
     "angleoffsetz": 90,

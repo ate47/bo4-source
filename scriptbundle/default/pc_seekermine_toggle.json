@@ -1,18 +1,18 @@
 {
     "descriptionimage": "#hash_5815772cefee9fb8",
     "description": "#hash_51d39abeec8843d8",
-    "var_60fcfffa": "#hash_2222dd50e5e35d4",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 0.1,
+    "hash_60fcfffa": "#hash_2222dd50e5e35d4",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 0.1,
     "maxvalue": 1,
     "name": "pc_seekermine_toggle",
     "displayname": "#hash_1cde0c31036f0170",
     "decimalplace": 0.01,
-    "var_66faec87": 2,
+    "hash_66faec87": 2,
     "statname": "seeker_mine_toggle",
-    "var_82c732a7": 1,
-    "var_d4e288e": 1,
-    "var_b7401319": "#hash_31a2e842c09df09e"
+    "isenableddisabled": 1,
+    "hash_d4e288e": 1,
+    "hash_b7401319": "#hash_31a2e842c09df09e"
 }

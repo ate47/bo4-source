@@ -11,7 +11,7 @@ class throttle {
     var var_3cd6b18f;
 
     // Namespace throttle/throttle_shared
-    // Params 0, eflags: 0x9 linked
+    // Params 0, eflags: 0x8
     // Checksum 0xcf965234, Offset: 0xa8
     // Size: 0x66
     constructor() {
@@ -23,7 +23,7 @@ class throttle {
     }
 
     // Namespace throttle/throttle_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x269f96d9, Offset: 0x498
     // Size: 0x24
     function leavequeue(entity) {
@@ -31,7 +31,7 @@ class throttle {
     }
 
     // Namespace throttle/throttle_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xba410401, Offset: 0x468
     // Size: 0x22
     function wm_ht_posidlestart(entity) {
@@ -39,7 +39,7 @@ class throttle {
     }
 
     // Namespace throttle/throttle_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x2d25ee26, Offset: 0x308
     // Size: 0x154
     function waitinqueue(entity = randomint(2147483647)) {
@@ -65,7 +65,7 @@ class throttle {
     }
 
     // Namespace throttle/throttle_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xadac57ee, Offset: 0x268
     // Size: 0x94
     function initialize(processlimit = 1, updaterate = float(function_60d95f53()) / 1000) {
@@ -75,7 +75,7 @@ class throttle {
     }
 
     // Namespace throttle/throttle_shared
-    // Params 0, eflags: 0x5 linked
+    // Params 0, eflags: 0x4
     // Checksum 0x6910f927, Offset: 0x128
     // Size: 0x132
     function private _updatethrottle() {
@@ -97,7 +97,7 @@ class throttle {
     }
 
     // Namespace throttle/throttle_shared
-    // Params 1, eflags: 0x5 linked
+    // Params 1, eflags: 0x4
     // Checksum 0x2c744361, Offset: 0x68
     // Size: 0x34
     function private _updatethrottlethread(throttle) {

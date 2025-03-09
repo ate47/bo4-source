@@ -4,7 +4,7 @@
 #namespace zodcompanioninterface;
 
 // Namespace zodcompanioninterface/archetype_zod_companion_interface
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe3a4e9bf, Offset: 0x78
 // Size: 0x4c
 function registerzodcompanioninterfaceattributes() {

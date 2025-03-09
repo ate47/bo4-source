@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace fx/fx_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe6d7f20b, Offset: 0x138
 // Size: 0x24
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace fx/fx_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x287a3a1f, Offset: 0x168
 // Size: 0x2b2
 function player_init(clientnum) {
@@ -63,7 +63,7 @@ function player_init(clientnum) {
 }
 
 // Namespace fx/fx_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x91f36924, Offset: 0x428
 // Size: 0x5c
 function validate(fxid, origin) {
@@ -95,7 +95,7 @@ function create_loop_sound() {
 }
 
 // Namespace fx/fx_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x90644b95, Offset: 0x5c8
 // Size: 0x106
 function create_effect(type, fxid) {
@@ -134,7 +134,7 @@ function create_loop_effect(fxid) {
 }
 
 // Namespace fx/fx_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1d3fe65d, Offset: 0x798
 // Size: 0x86
 function set_forward_and_up_vectors() {
@@ -143,7 +143,7 @@ function set_forward_and_up_vectors() {
 }
 
 // Namespace fx/fx_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x23bae28e, Offset: 0x828
 // Size: 0x5c
 function oneshot_thread(clientnum) {
@@ -166,7 +166,7 @@ function oneshot_thread(clientnum) {
 #/
 
 // Namespace fx/fx_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xce9444a3, Offset: 0x8a0
 // Size: 0x154
 function loop_sound(clientnum) {
@@ -184,7 +184,7 @@ function loop_sound(clientnum) {
 }
 
 // Namespace fx/fx_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x83746f1e, Offset: 0xa00
 // Size: 0x46
 function lightning(normalfunc, flashfunc) {
@@ -194,7 +194,7 @@ function lightning(normalfunc, flashfunc) {
 }
 
 // Namespace fx/fx_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x699f5327, Offset: 0xa50
 // Size: 0xfc
 function loop_thread(clientnum) {
@@ -223,7 +223,7 @@ function loop_thread(clientnum) {
 }
 
 // Namespace fx/fx_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x90809520, Offset: 0xb58
 // Size: 0x5c
 function loop_stop(clientnum, timeout) {
@@ -235,7 +235,7 @@ function loop_stop(clientnum, timeout) {
 }
 
 // Namespace fx/fx_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x914d0738, Offset: 0xbc0
 // Size: 0x3c
 function create_looper(clientnum) {
@@ -244,7 +244,7 @@ function create_looper(clientnum) {
 }
 
 // Namespace fx/fx_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb57d46c3, Offset: 0xc08
 // Size: 0x246
 function loop(clientnum) {
@@ -262,7 +262,7 @@ function loop(clientnum) {
 }
 
 // Namespace fx/fx_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x379f6710, Offset: 0xe58
 // Size: 0x18c
 function create_trigger(clientnum) {
@@ -277,7 +277,7 @@ function create_trigger(clientnum) {
 }
 
 // Namespace fx/fx_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x30b15157, Offset: 0xff0
 // Size: 0x7c
 function function_3539a829(local_client_num, friendly_fx, enemy_fx, tag) {
@@ -321,7 +321,7 @@ function blinky_light(localclientnum, tagname, friendlyfx, enemyfx) {
 }
 
 // Namespace fx/fx_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe9347995, Offset: 0x1218
 // Size: 0x56
 function stop_blinky_light(localclientnum) {
@@ -334,7 +334,7 @@ function stop_blinky_light(localclientnum) {
 }
 
 // Namespace fx/fx_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcc6971b7, Offset: 0x1278
 // Size: 0x5c
 function blinky_emp_wait(localclientnum) {

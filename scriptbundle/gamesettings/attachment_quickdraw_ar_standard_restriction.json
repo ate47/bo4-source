@@ -3,6 +3,6 @@
     "type": "gamesettings",
     "name": "attachment_quickdraw_ar_standard_restriction",
     "displayname": "#weapon/ar_standard_t8",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "itemRestrictions__ar_standard_t8__attachments__quickdraw"
 }

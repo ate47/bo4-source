@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_towers_challenges/zm_towers_challenges
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5756de63, Offset: 0xf8
 // Size: 0x5c
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace zm_towers_challenges/zm_towers_challenges
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x160
 // Size: 0x4
 function __main__() {
@@ -31,7 +31,7 @@ function __main__() {
 }
 
 // Namespace zm_towers_challenges/zm_towers_challenges
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x84a7fd41, Offset: 0x170
 // Size: 0xe4
 function function_a45824f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

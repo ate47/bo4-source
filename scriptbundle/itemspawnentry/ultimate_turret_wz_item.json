@@ -7,7 +7,7 @@
     "hintstring": "#hash_69a3d01cedc93f4c",
     "name": "ultimate_turret_wz_item",
     "displayname": "#weapon/ultimate_turret",
-    "var_36781d9f": "fly_drop_generic",
+    "dropsound": "fly_drop_generic",
     "stackcount": 1,
     "icon": "#ui_icon_scorestreaks_turret_mini_render",
     "modelscale": 1,

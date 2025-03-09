@@ -5,9 +5,9 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "scorestreak_drone_squadron_restriction",
-    "displayname": "#hash_49b814200018a236",
+    "displayname": "#killstreak/drone_squadron",
     "label1": "#menu/enabled",
     "label2": "#menu/disabled",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "itemRestrictions__drone_squadron__restricted"
 }

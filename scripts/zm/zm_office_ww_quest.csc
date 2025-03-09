@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_office_ww_quest/zm_office_ww_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x974da93c, Offset: 0xd8
 // Size: 0x14
 function __init__() {
@@ -20,7 +20,7 @@ function __init__() {
 }
 
 // Namespace zm_office_ww_quest/zm_office_ww_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc4deb76f, Offset: 0xf8
 // Size: 0x5c
 function init_clientfields() {
@@ -28,7 +28,7 @@ function init_clientfields() {
 }
 
 // Namespace zm_office_ww_quest/zm_office_ww_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfba82297, Offset: 0x160
 // Size: 0x6c
 function drawer_rumble(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

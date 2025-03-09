@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace recon_car/recon_car
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1ea71e1b, Offset: 0x120
 // Size: 0xb4
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace recon_car/recon_car
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x244f0521, Offset: 0x1e0
 // Size: 0x26
 function spawned(localclientnum, killstreak_duration) {

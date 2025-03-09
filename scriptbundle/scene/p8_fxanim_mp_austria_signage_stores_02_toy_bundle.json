@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2b70ffa763af0dad",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 3,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_4c84b23b87e2c296",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_austria_signage_stores_02_toy_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

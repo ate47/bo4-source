@@ -1,7 +1,7 @@
 #namespace behaviortreenetworkutility;
 
 // Namespace behaviortreenetworkutility/behavior_tree_utility
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x20fa0909, Offset: 0x68
 // Size: 0xcc
 function registerbehaviortreescriptapi(functionname, functionptr, allowedcallsperframe) {
@@ -17,7 +17,7 @@ function registerbehaviortreescriptapi(functionname, functionptr, allowedcallspe
 }
 
 // Namespace behaviortreenetworkutility/behavior_tree_utility
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x8d3678bc, Offset: 0x140
 // Size: 0x1e0
 function registerbehaviortreeaction(actionname, startfuncptr, updatefuncptr, terminatefuncptr) {

@@ -33,7 +33,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace dart/dart
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x16b05047, Offset: 0x360
 // Size: 0x1f4
 function __init__() {
@@ -50,7 +50,7 @@ function __init__() {
 }
 
 // Namespace dart/dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc23340d4, Offset: 0x560
 // Size: 0x66
 function wait_dart_timed_out(time) {
@@ -60,7 +60,7 @@ function wait_dart_timed_out(time) {
 }
 
 // Namespace dart/dart
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf4be6110, Offset: 0x5d0
 // Size: 0xbe
 function wait_for_throw_status() {
@@ -73,7 +73,7 @@ function wait_for_throw_status() {
 }
 
 // Namespace dart/dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc03a1dea, Offset: 0x698
 // Size: 0x2f0
 function activatedart(killstreaktype) {
@@ -117,7 +117,7 @@ function activatedart(killstreaktype) {
 }
 
 // Namespace dart/dart
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb7a687c2, Offset: 0x990
 // Size: 0x42
 function cleanup_grenade() {
@@ -126,7 +126,7 @@ function cleanup_grenade() {
 }
 
 // Namespace dart/dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x40480a21, Offset: 0x9e0
 // Size: 0x32c
 function watchthrow(missileweapon) {
@@ -166,7 +166,7 @@ function watchthrow(missileweapon) {
 }
 
 // Namespace dart/dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdc2f2ecd, Offset: 0xd18
 // Size: 0xd4
 function function_6fe329bb(missileweapon) {
@@ -180,7 +180,7 @@ function function_6fe329bb(missileweapon) {
 }
 
 // Namespace dart/dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2d83cf6e, Offset: 0xdf8
 // Size: 0x11c
 function hackedprefunction(hacker) {
@@ -197,7 +197,7 @@ function hackedprefunction(hacker) {
 }
 
 // Namespace dart/dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x49c5d9d5, Offset: 0xf20
 // Size: 0xac
 function hackedpostfunction(hacker) {
@@ -210,7 +210,7 @@ function hackedpostfunction(hacker) {
 }
 
 // Namespace dart/dart
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x951945b, Offset: 0xfd8
 // Size: 0xfe
 function watchremotecontroldeactivate() {
@@ -232,7 +232,7 @@ function watchremotecontroldeactivate() {
 }
 
 // Namespace dart/dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4dbc1d61, Offset: 0x10e0
 // Size: 0x4e
 function dart_hacked_health_update(hacker) {
@@ -243,7 +243,7 @@ function dart_hacked_health_update(hacker) {
 }
 
 // Namespace dart/dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1dc324cf, Offset: 0x1138
 // Size: 0xc2
 function check_launch_space(origin) {
@@ -255,7 +255,7 @@ function check_launch_space(origin) {
 }
 
 // Namespace dart/dart
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x8f9b3b8e, Offset: 0x1208
 // Size: 0x5a4
 function spawndart(grenade, killstreak_id, spawn_origin) {
@@ -336,7 +336,7 @@ function debug_origin() {
 }
 
 // Namespace dart/dart
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfeab9025, Offset: 0x1828
 // Size: 0xfc
 function waitremotecontrol() {
@@ -355,7 +355,7 @@ function waitremotecontrol() {
 }
 
 // Namespace dart/dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x67fdf9d8, Offset: 0x1930
 // Size: 0x21c
 function startdartremotecontrol(dart) {
@@ -385,7 +385,7 @@ function startdartremotecontrol(dart) {
 }
 
 // Namespace dart/dart
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x75a371d3, Offset: 0x1b58
 // Size: 0x2c
 function enddartremotecontrol(dart, exitrequestedbyowner) {
@@ -393,7 +393,7 @@ function enddartremotecontrol(dart, exitrequestedbyowner) {
 }
 
 // Namespace dart/dart
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x988f7747, Offset: 0x1b90
 // Size: 0x3c
 function dartdistancefailure() {
@@ -402,7 +402,7 @@ function dartdistancefailure() {
 }
 
 // Namespace dart/dart
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x28e12fe8, Offset: 0x1bd8
 // Size: 0x1ac
 function stop_remote_weapon(attacker, weapon) {
@@ -423,7 +423,7 @@ function stop_remote_weapon(attacker, weapon) {
 }
 
 // Namespace dart/dart
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0x9ffe6f0a, Offset: 0x1d90
 // Size: 0x152
 function dartdamageoverride(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
@@ -437,7 +437,7 @@ function dartdamageoverride(einflictor, eattacker, idamage, idflags, smeansofdea
 }
 
 // Namespace dart/dart
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9f8c0138, Offset: 0x1ef0
 // Size: 0x3c
 function emp_damage_cb(attacker, weapon) {
@@ -446,7 +446,7 @@ function emp_damage_cb(attacker, weapon) {
 }
 
 // Namespace dart/dart
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2c84fb90, Offset: 0x1f38
 // Size: 0x80
 function darpredictedcollision() {
@@ -462,7 +462,7 @@ function darpredictedcollision() {
 }
 
 // Namespace dart/dart
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4858e079, Offset: 0x1fc0
 // Size: 0xfc
 function watchcollision() {
@@ -483,7 +483,7 @@ function watchcollision() {
 }
 
 // Namespace dart/dart
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6d434fe3, Offset: 0x20c8
 // Size: 0x8c
 function watchdeath() {
@@ -496,7 +496,7 @@ function watchdeath() {
 }
 
 // Namespace dart/dart
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6c67a084, Offset: 0x2160
 // Size: 0xdc
 function watchownernondeathevents(endcondition1, endcondition2) {
@@ -510,7 +510,7 @@ function watchownernondeathevents(endcondition1, endcondition2) {
 }
 
 // Namespace dart/dart
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa2eadd6, Offset: 0x2248
 // Size: 0x5c
 function watchforgameend() {
@@ -521,7 +521,7 @@ function watchforgameend() {
 }
 
 // Namespace dart/dart
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xac5ebc95, Offset: 0x22b0
 // Size: 0x194
 function watchammo() {
@@ -551,7 +551,7 @@ function watchammo() {
 }
 
 // Namespace dart/dart
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xce002f3f, Offset: 0x2450
 // Size: 0x7bc
 function leave_dart() {
@@ -666,7 +666,7 @@ function deleteonconditions(condition) {
 }
 
 // Namespace dart/dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x41509678, Offset: 0x2c98
 // Size: 0x4c
 function waitthendelete(waittime) {
@@ -676,7 +676,7 @@ function waitthendelete(waittime) {
 }
 
 // Namespace dart/dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa80ea818, Offset: 0x2cf0
 // Size: 0x116
 function play_bda_dialog(pilotindex) {
@@ -698,7 +698,7 @@ function play_bda_dialog(pilotindex) {
 }
 
 // Namespace dart/dart
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x10d1be58, Offset: 0x2e10
 // Size: 0xbc
 function enabledartmissilelocking() {
@@ -713,7 +713,7 @@ function enabledartmissilelocking() {
 }
 
 // Namespace dart/dart
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xae944611, Offset: 0x2ed8
 // Size: 0x84
 function disabledartmissilelocking() {
@@ -728,7 +728,7 @@ function disabledartmissilelocking() {
 }
 
 // Namespace dart/dart
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc5bfe09c, Offset: 0x2f68
 // Size: 0x6a
 function getdartmissiletargets() {
@@ -738,7 +738,7 @@ function getdartmissiletargets() {
 }
 
 // Namespace dart/dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x74c45fca, Offset: 0x2fe0
 // Size: 0x140
 function isvaliddartmissiletarget(ent) {
@@ -767,7 +767,7 @@ function isvaliddartmissiletarget(ent) {
 }
 
 // Namespace dart/dart
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xba793205, Offset: 0x3128
 // Size: 0x1ae
 function isstillvaliddartmissiletarget(ent, weapon) {

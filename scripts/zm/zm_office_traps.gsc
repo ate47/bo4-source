@@ -7,7 +7,7 @@
 #namespace zm_office_traps;
 
 // Namespace zm_office_traps/zm_office_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf484c70, Offset: 0x140
 // Size: 0xc4
 function init() {
@@ -19,7 +19,7 @@ function init() {
 }
 
 // Namespace zm_office_traps/zm_office_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8d84e15c, Offset: 0x210
 // Size: 0x64
 function init_flags() {
@@ -29,7 +29,7 @@ function init_flags() {
 }
 
 // Namespace zm_office_traps/zm_office_traps
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcbdce62c, Offset: 0x280
 // Size: 0x14c
 function function_a28f0b21(e_holder, w_item) {
@@ -46,7 +46,7 @@ function function_a28f0b21(e_holder, w_item) {
 }
 
 // Namespace zm_office_traps/zm_office_traps
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x690ca250, Offset: 0x3d8
 // Size: 0x12c
 function function_af5c24bb(e_holder, w_item) {
@@ -62,7 +62,7 @@ function function_af5c24bb(e_holder, w_item) {
 }
 
 // Namespace zm_office_traps/zm_office_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa80946b8, Offset: 0x510
 // Size: 0x64
 function function_e021562c() {
@@ -73,7 +73,7 @@ function function_e021562c() {
 }
 
 // Namespace zm_office_traps/zm_office_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1a988da1, Offset: 0x580
 // Size: 0x404
 function function_cebfdd08() {
@@ -126,7 +126,7 @@ function function_cebfdd08() {
 }
 
 // Namespace zm_office_traps/zm_office_traps
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x53973f90, Offset: 0x990
 // Size: 0x7c
 function function_a72b7c27(str_flag) {
@@ -141,7 +141,7 @@ function function_a72b7c27(str_flag) {
 }
 
 // Namespace zm_office_traps/zm_office_traps
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x74fe2677, Offset: 0xa18
 // Size: 0x5c
 function function_91882233(str_flag) {
@@ -155,7 +155,7 @@ function function_91882233(str_flag) {
 }
 
 // Namespace zm_office_traps/zm_office_traps
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x304bc79c, Offset: 0xa80
 // Size: 0x1d4
 function function_5bd53e9b(var_a703e7de, str_flag) {

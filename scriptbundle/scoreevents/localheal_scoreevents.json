@@ -1,15 +1,15 @@
 {
-    "var_d58bd0e9": "#hash_24531d906ae1ae81",
-    "var_67b4a761": "#hash_24531d906ae1ae81",
-    "var_2ecceeab": "#stim_kill",
+    "hash_d58bd0e9": "#hash_24531d906ae1ae81",
+    "hash_67b4a761": "#hash_24531d906ae1ae81",
+    "hash_2ecceeab": "#stim_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
-    "var_1253685d": "#hash_7abaaaadeb0ef038",
+    "hash_1253685d": "#hash_7abaaaadeb0ef038",
     "vmtype": "both",
-    "var_16abf654": "#hash_24531d906ae1ae81",
+    "hash_16abf654": "#hash_24531d906ae1ae81",
     "name": "localheal_scoreevents",
-    "var_e1b418c1": "ability",
-    "var_1b8b6771": "#hash_24531d906ae1ae81",
-    "var_3143c814": "#tak5_shutdown",
-    "var_6643c0a0": "#hash_24531d906ae1ae81"
+    "customsettingstype": "ability",
+    "hash_1b8b6771": "#hash_24531d906ae1ae81",
+    "hash_3143c814": "#tak5_shutdown",
+    "hash_6643c0a0": "#hash_24531d906ae1ae81"
 }

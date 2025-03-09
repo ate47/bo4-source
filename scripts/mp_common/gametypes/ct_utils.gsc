@@ -4028,8 +4028,8 @@ function get_roleindex(name) {
     sessionmode = currentsessionmode();
     playerroletemplatecount = getplayerroletemplatecount(sessionmode);
     for (i = 0; i < playerroletemplatecount; i++) {
-        var_3c6fd4f7 = function_b14806c6(i, sessionmode);
-        if (var_3c6fd4f7 == name) {
+        prtname = function_b14806c6(i, sessionmode);
+        if (prtname == name) {
             return i;
         }
     }

@@ -16,7 +16,7 @@
                 }
             ],
             "description": "#hash_1f5091f592b63363",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "teamsizedescriptions": [
@@ -34,7 +34,7 @@
                 }
             ],
             "description": "#hash_1f5092f592b63516",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "description": "#hash_1f5093f592b636c9"
@@ -42,8 +42,8 @@
     ],
     "description": "#hash_7fbe67060c64d1e3",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 3,
-    "var_e8b98a8a": "#hash_5deb16df644e7e5e",
+    "hash_eda4062b": 3,
+    "hash_e8b98a8a": "#hash_5deb16df644e7e5e",
     "model": "#p8_wz_cu_hat_wool",
     "type": "itemspawnentry",
     "hintstring": "#hash_99fc2e66d019964",

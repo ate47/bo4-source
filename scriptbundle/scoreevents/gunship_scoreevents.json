@@ -1,8 +1,8 @@
 {
-    "var_2ecceeab": "#gunship_kill",
+    "hash_2ecceeab": "#gunship_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
     "name": "gunship_scoreevents",
-    "var_e1b418c1": "ability"
+    "customsettingstype": "ability"
 }

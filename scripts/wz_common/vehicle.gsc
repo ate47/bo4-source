@@ -572,7 +572,7 @@ function function_3054737a(vehicle) {
     if (game.state == "pregame" || !isplayer(self) || self isremotecontrolling() || isdefined(vehicle.session)) {
         return;
     }
-    vehicle.session = {#vehicle:vehicle.vehicletype, #var_2dbaf8ca:vehicle.origin[0], #var_1ff15d37:vehicle.origin[1], #var_16f7d5d0:vehicle.origin[0], #var_4ba3155:vehicle.origin[1], #var_c87538d9:vehicle.trackingindex, #start_time:gettime(), #end_time:0, #start_health:vehicle.health, #end_health:vehicle.health, #first_player:int(self getxuid(1)), #var_efe98761:1, #var_309ad81f:0, #var_5ba0df6e:0, #var_770fd50d:0, #var_33f48e5a:0, #var_ecd1fe60:0, #vehicle_kills:0, #var_ffb0c509:0, #var_45bf3627:0, #var_3893d13e:0, #passenger_kills:0};
+    vehicle.session = {#vehicle:vehicle.vehicletype, #var_2dbaf8ca:vehicle.origin[0], #var_1ff15d37:vehicle.origin[1], #var_16f7d5d0:vehicle.origin[0], #var_4ba3155:vehicle.origin[1], #var_c87538d9:vehicle.trackingindex, #start_time:gettime(), #end_time:0, #start_health:vehicle.health, #end_health:vehicle.health, #first_player:int(self getxuid(1)), #var_efe98761:1, #var_309ad81f:0, #var_5ba0df6e:0, #var_770fd50d:0, #var_33f48e5a:0, #var_ecd1fe60:0, #vehicle_kills:0, #var_ffb0c509:0, #var_45bf3627:0, #raw\russian\sound\vox\scripted\isa\vox_isa_encourage_lost_01.SN65.xenon.snd:0, #passenger_kills:0};
 }
 
 // Namespace wz_vehicle/vehicle
@@ -660,12 +660,12 @@ function on_vehicle_damage(params) {
                             } else if (damage > 100 * var_ebe816eb) {
                                 damage = 100 * var_ebe816eb;
                             }
-                            vehicle.var_96c0f900[1] = vehicle.var_96c0f900[1] - damage;
+                            vehicle.var_96c0f900[1] -= damage;
                             vehicle function_902cf00a(damageparts, int(damage));
                             break;
                         case #"mod_rifle_bullet":
                         case #"mod_pistol_bullet":
-                            vehicle.var_96c0f900[1] = vehicle.var_96c0f900[1] - params.idamage / var_b522a590;
+                            vehicle.var_96c0f900[1] -= params.idamage / var_b522a590;
                             vehicle function_902cf00a(damageparts, int(params.idamage / var_b522a590));
                             break;
                         }
@@ -738,7 +738,7 @@ function on_player_killed(params) {
     if (isdefined(victim.usingvehicle) && victim.usingvehicle) {
         vehicle = victim getvehicleoccupied();
         if (isdefined(vehicle) && isdefined(vehicle.session)) {
-            vehicle.session.var_3893d13e++;
+            vehicle.session.raw\russian\sound\vox\scripted\isa\vox_isa_encourage_lost_01.SN65.xenon.snd++;
         }
     }
     if (isdefined(attacker.usingvehicle) && attacker.usingvehicle) {
@@ -1204,7 +1204,7 @@ function update_turret_fire(vehicle, seat_index, var_c269692d) {
     while (true) {
         params = vehicle waittill(#"gunner_weapon_fired");
         if (params.gunner_index === seat_index) {
-            vehicle.var_96c0f900[seat_index] = vehicle.var_96c0f900[seat_index] - var_c269692d;
+            vehicle.var_96c0f900[seat_index] -= var_c269692d;
             var_251a3d58 = function_41cb03eb(seat_index);
             if (isdefined(var_251a3d58)) {
                 damageparts = [];
@@ -1406,7 +1406,7 @@ function function_1592c29e(player, eventstruct) {
     if (!isdefined(eventstruct.vehicle)) {
         return;
     }
-    if (function_3238d10d(eventstruct.vehicle.origin)) {
+    if (validateorigin(eventstruct.vehicle.origin)) {
         playsoundatposition(#"hash_7a0942da55ff521d", eventstruct.vehicle.origin);
     }
     eventstruct.vehicle vehicle::toggle_control_bone_group(1, 1);
@@ -1428,7 +1428,7 @@ function function_67e1a636(player, eventstruct) {
     }
     occupants = eventstruct.vehicle getvehoccupants();
     if (!isdefined(occupants) || occupants.size == 0) {
-        if (function_3238d10d(eventstruct.vehicle.origin)) {
+        if (validateorigin(eventstruct.vehicle.origin)) {
             playsoundatposition(#"hash_7a0942da55ff521d", eventstruct.vehicle.origin);
         }
         eventstruct.vehicle vehicle::toggle_control_bone_group(1, 0);
@@ -1501,7 +1501,7 @@ function private function_782a6e87() {
     oldhealth = self.health;
     self setvehicletype("veh_muscle_car_convertible_player_wz_replacer");
     util::wait_network_frame();
-    self function_41b29ff0(#"hash_896eebec81ec647");
+    self setdestructibledef(#"hash_896eebec81ec647");
     util::wait_network_frame();
     damage = self.healthdefault - oldhealth;
     if (damage > 0) {

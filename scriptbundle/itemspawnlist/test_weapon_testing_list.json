@@ -15,14 +15,14 @@
         {
             "minweight": 50,
             "itementry": "shotgun_pump_t8_item",
-            "var_3f8c08e3": "ammo_type_12ga_item",
+            "childitementry_1": "ammo_type_12ga_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
             "itementry": "shotgun_semiauto_t8_item",
-            "var_3f8c08e3": "ammo_type_12ga_item",
+            "childitementry_1": "ammo_type_12ga_item",
             "maxweight": 50,
             "available": -1
         },
@@ -89,8 +89,8 @@
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 14,
-    "var_9b009839": -1,
+    "hash_345eba59": 14,
+    "hash_9b009839": -1,
     "name": "test_weapon_testing_list",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

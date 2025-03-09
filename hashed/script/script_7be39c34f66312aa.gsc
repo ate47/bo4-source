@@ -5,7 +5,7 @@
 #namespace namespace_6a81d072;
 
 // Namespace namespace_6a81d072/namespace_6a81d072
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2a61b067, Offset: 0xf8
 // Size: 0x5c
 function init() {
@@ -16,7 +16,7 @@ function init() {
 }
 
 // Namespace namespace_6a81d072/namespace_6a81d072
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcd296cb7, Offset: 0x160
 // Size: 0xe4
 function get_location_from_chest_index(chest_index) {
@@ -32,7 +32,7 @@ function get_location_from_chest_index(chest_index) {
 }
 
 // Namespace namespace_6a81d072/namespace_6a81d072
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd06bc572, Offset: 0x250
 // Size: 0x338
 function magic_box_update() {

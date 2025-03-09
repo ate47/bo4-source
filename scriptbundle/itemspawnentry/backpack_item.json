@@ -2,7 +2,7 @@
     "amount": 1,
     "description": "#hash_11e20e7aebbc76a3",
     "configstringfiletype": "scriptbundle",
-    "var_3e688854": -7,
+    "hash_3e688854": -7,
     "model": "#p8_backpack_military",
     "type": "itemspawnentry",
     "hintstring": "#hash_2b2096d421c8cd24",

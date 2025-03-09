@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_zombshell/zm_perk_zombshell
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9724e510, Offset: 0x1a8
 // Size: 0x22c
 function __init__() {
@@ -32,7 +32,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_zombshell/zm_perk_zombshell
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xadee0758, Offset: 0x3e0
 // Size: 0x92
 function function_efe56acb() {
@@ -42,7 +42,7 @@ function function_efe56acb() {
 }
 
 // Namespace zm_perk_zombshell/zm_perk_zombshell
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x480
 // Size: 0x4
 function function_9e1d9985() {
@@ -50,7 +50,7 @@ function function_9e1d9985() {
 }
 
 // Namespace zm_perk_zombshell/zm_perk_zombshell
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x490
 // Size: 0x4
 function function_d0ba0d3() {
@@ -58,7 +58,7 @@ function function_d0ba0d3() {
 }
 
 // Namespace zm_perk_zombshell/zm_perk_zombshell
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf9954723, Offset: 0x4a0
 // Size: 0x1ae
 function zombshell_aoe(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -85,7 +85,7 @@ function zombshell_aoe(localclientnum, oldval, newval, bnewent, binitialsnap, fi
 }
 
 // Namespace zm_perk_zombshell/zm_perk_zombshell
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf68f6908, Offset: 0x658
 // Size: 0x204
 function function_1e112e5f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -117,7 +117,7 @@ function function_1e112e5f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_perk_zombshell/zm_perk_zombshell
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xcfe5cc47, Offset: 0x868
 // Size: 0x74
 function zombshell_explosion(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

@@ -10,7 +10,7 @@
 #namespace zm_white_special_rounds;
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf1a26bc3, Offset: 0x480
 // Size: 0xbc
 function init() {
@@ -22,7 +22,7 @@ function init() {
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdbec50d5, Offset: 0x548
 // Size: 0x404
 function register_clientfields() {
@@ -43,7 +43,7 @@ function register_clientfields() {
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xbff2c56c, Offset: 0x958
 // Size: 0x74
 function function_e54e60de(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -51,7 +51,7 @@ function function_e54e60de(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x557851fa, Offset: 0x9d8
 // Size: 0x74
 function function_a9b5240b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -59,7 +59,7 @@ function function_a9b5240b(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb985628b, Offset: 0xa58
 // Size: 0x74
 function function_32acf82a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -67,7 +67,7 @@ function function_32acf82a(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf70d5713, Offset: 0xad8
 // Size: 0x64
 function vent_interact_feedback(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -77,7 +77,7 @@ function vent_interact_feedback(localclientnum, oldval, newval, bnewent, binitia
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x84d868ef, Offset: 0xb48
 // Size: 0xc2
 function function_aa1e486e() {
@@ -91,7 +91,7 @@ function function_aa1e486e() {
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x23e48702, Offset: 0xc18
 // Size: 0x2aa
 function portal_map_gas_indicators_init(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -118,7 +118,7 @@ function portal_map_gas_indicators_init(localclientnum, oldval, newval, bnewent,
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9c85f3f9, Offset: 0xed0
 // Size: 0x94
 function portal_map_gas_indicator_green_house(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -132,7 +132,7 @@ function portal_map_gas_indicator_green_house(localclientnum, oldval, newval, bn
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf52e28b5, Offset: 0xf70
 // Size: 0x94
 function portal_map_gas_indicator_hammond_house(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -146,7 +146,7 @@ function portal_map_gas_indicator_hammond_house(localclientnum, oldval, newval, 
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2eca723b, Offset: 0x1010
 // Size: 0x94
 function portal_map_gas_indicator_hoggatt_house(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -160,7 +160,7 @@ function portal_map_gas_indicator_hoggatt_house(localclientnum, oldval, newval, 
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfdecc262, Offset: 0x10b0
 // Size: 0x94
 function portal_map_gas_indicator_obrien_house(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -174,7 +174,7 @@ function portal_map_gas_indicator_obrien_house(localclientnum, oldval, newval, b
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa6d63652, Offset: 0x1150
 // Size: 0x94
 function portal_map_gas_indicator_reinsel_house(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -188,7 +188,7 @@ function portal_map_gas_indicator_reinsel_house(localclientnum, oldval, newval, 
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x11c87d38, Offset: 0x11f0
 // Size: 0x94
 function portal_map_gas_indicator_yellow_house(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -202,7 +202,7 @@ function portal_map_gas_indicator_yellow_house(localclientnum, oldval, newval, b
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x60906d7f, Offset: 0x1290
 // Size: 0x94
 function portal_map_gas_indicator_generators(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -216,7 +216,7 @@ function portal_map_gas_indicator_generators(localclientnum, oldval, newval, bne
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa1cc5111, Offset: 0x1330
 // Size: 0x120
 function function_a7084ac5(localclientnum, tag) {
@@ -231,7 +231,7 @@ function function_a7084ac5(localclientnum, tag) {
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd34ed233, Offset: 0x1458
 // Size: 0x120
 function function_f05553f1(localclientnum, tag) {
@@ -246,7 +246,7 @@ function function_f05553f1(localclientnum, tag) {
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xbdc3b5a0, Offset: 0x1580
 // Size: 0x2e6
 function function_88991669(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -275,7 +275,7 @@ function function_88991669(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc0aa3c1d, Offset: 0x1870
 // Size: 0x9c
 function play_generator_sound_sweetner(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

@@ -23,7 +23,7 @@ function autoexec __init__system__() {
 #namespace strategiccommandutility;
 
 // Namespace strategiccommandutility/strategic_command
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xfc007b6e, Offset: 0x340
 // Size: 0xec
 function private __init__() {
@@ -41,14 +41,15 @@ function private __init__() {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x67d8970d, Offset: 0x438
 // Size: 0x19e
 function private function_ee3d20f5(entity, points) {
     path = undefined;
     shortestpath = undefined;
     start = entity getclosestpointonnavvolume(entity.origin, 200);
-    for (index = 0; index < points.size; index += 16) {
+    index = 0;
+    while (index < points.size) {
         goalpoints = [];
         for (goalindex = index; goalindex - index < 16 && goalindex < points.size; goalindex++) {
             goalpoints[goalpoints.size] = entity getclosestpointonnavvolume(points[goalindex].origin, 200);
@@ -61,12 +62,13 @@ function private function_ee3d20f5(entity, points) {
                 return path;
             }
         }
+        index += 16;
     }
     return path;
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xaa3f11b1, Offset: 0x5e0
 // Size: 0x210
 function private _calculatepathtopoints(entity, points) {
@@ -74,7 +76,8 @@ function private _calculatepathtopoints(entity, points) {
     shortestpath = undefined;
     entradius = entity getpathfindingradius();
     entposition = getclosestpointonnavmesh(entity.origin, 200, entradius);
-    for (index = 0; index < points.size; index += 16) {
+    index = 0;
+    while (index < points.size) {
         goalpoints = [];
         for (goalindex = index; goalindex - index < 16 && goalindex < points.size; goalindex++) {
             if (ispointonnavmesh(points[goalindex].origin, entradius)) {
@@ -92,6 +95,7 @@ function private _calculatepathtopoints(entity, points) {
                 shortestpath = possiblepath.pathdistance;
             }
         }
+        index += 16;
     }
     return path;
 }
@@ -661,7 +665,7 @@ function private _debuggameobjects() {
                 recordline(bottom, top, color, channel);
                 return;
             }
-            function_af72dbc5(volume.origin, mins, maxs, volume.angles[0], color, channel);
+            recordbox(volume.origin, mins, maxs, volume.angles[0], color, channel);
         #/
     }
 
@@ -723,7 +727,7 @@ function private _debuggameobjects() {
 #/
 
 // Namespace strategiccommandutility/strategic_command
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x6298948, Offset: 0x39f8
 // Size: 0x10a
 function private function_7712a8e4(strategy, var_a5bd84a3, var_48ce643a, doppelbots = 1, companions = 1) {
@@ -744,7 +748,7 @@ function private function_7712a8e4(strategy, var_a5bd84a3, var_48ce643a, doppelb
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1997ef46, Offset: 0x3b10
 // Size: 0x2c8
 function function_700c578d(bundle) {
@@ -785,7 +789,7 @@ function function_700c578d(bundle) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x63cb6474, Offset: 0x3de0
 // Size: 0xcc
 function function_2cce6a82(entity, bundle) {
@@ -805,7 +809,7 @@ function function_2cce6a82(entity, bundle) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4dad5056, Offset: 0x3eb8
 // Size: 0x11a
 function function_704d5fbd(bot, component) {
@@ -830,7 +834,7 @@ function function_704d5fbd(bot, component) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf0ceb9fc, Offset: 0x3fe0
 // Size: 0x134
 function calculatepathtogameobject(bot, gameobject) {
@@ -871,7 +875,7 @@ function function_71866d71(bot, breadcrumb) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7c8305c2, Offset: 0x41e8
 // Size: 0x19c
 function calculatepathtoobjective(bot, objective) {
@@ -902,7 +906,7 @@ function calculatepathtoobjective(bot, objective) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x44f3c3bb, Offset: 0x4390
 // Size: 0xd2
 function calculatepathtopoints(bot, points) {
@@ -922,7 +926,7 @@ function calculatepathtopoints(bot, points) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x81a2c116, Offset: 0x4470
 // Size: 0x132
 function calculatepathtoposition(entity, position, radius = 200, halfheight = 100) {
@@ -943,7 +947,7 @@ function calculatepathtoposition(entity, position, radius = 200, halfheight = 10
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x56738f77, Offset: 0x45b0
 // Size: 0x182
 function calculatepathtotrigger(bot, trigger) {
@@ -1009,7 +1013,7 @@ function function_e696ce55(bot, trigger) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xc7179080, Offset: 0x48d0
 // Size: 0x13c
 function calculateprogressrushing(lowerboundpercentile, upperboundpercentile, destroyedobjects, totalobjects, enemydestroyedobjects, enemytotalobjects) {
@@ -1027,7 +1031,7 @@ function calculateprogressrushing(lowerboundpercentile, upperboundpercentile, de
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x501668a4, Offset: 0x4a18
 // Size: 0x144
 function calculateprogressthrottling(lowerboundpercentile, upperboundpercentile, destroyedobjects, totalobjects, enemydestroyedobjects, enemytotalobjects) {
@@ -1045,7 +1049,7 @@ function calculateprogressthrottling(lowerboundpercentile, upperboundpercentile,
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x82eae158, Offset: 0x4b68
 // Size: 0x340
 function function_1e3c1b91(var_b7f15515, var_5e513205) {
@@ -1089,7 +1093,7 @@ function function_1e3c1b91(var_b7f15515, var_5e513205) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x97016d6e, Offset: 0x4eb0
 // Size: 0x532
 function function_423cfbc1(side, var_ebfc3fac = undefined, missioncomponent = undefined, gameobject = undefined) {
@@ -1158,7 +1162,7 @@ function function_423cfbc1(side, var_ebfc3fac = undefined, missioncomponent = un
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe0b61343, Offset: 0x53f0
 // Size: 0x92
 function function_4b0c469d(vehicle) {
@@ -1189,7 +1193,7 @@ function candefendgameobject(team, gameobject) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd26ed468, Offset: 0x55b8
 // Size: 0x4a
 function function_a1edb007(team) {
@@ -1201,7 +1205,7 @@ function function_a1edb007(team) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8784d1d1, Offset: 0x5610
 // Size: 0xca
 function function_5c2c9542(entity, component) {
@@ -1234,7 +1238,7 @@ function function_45c5edc6(side) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6e89f690, Offset: 0x5790
 // Size: 0x9c
 function function_d077c2b6(side) {
@@ -1248,7 +1252,7 @@ function function_d077c2b6(side) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2f6ff9fb, Offset: 0x5838
 // Size: 0x5e
 function function_a0f88aca(gpbundle, team) {
@@ -1257,7 +1261,7 @@ function function_a0f88aca(gpbundle, team) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x717d74cb, Offset: 0x58a0
 // Size: 0x68
 function function_778568e2(entity) {
@@ -1281,7 +1285,7 @@ function function_e1b87d35(entity) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7cb3534, Offset: 0x5980
 // Size: 0x52
 function function_9ab82e4f(entity) {
@@ -1292,7 +1296,7 @@ function function_9ab82e4f(entity) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4bb316a5, Offset: 0x59e0
 // Size: 0x3c
 function isvalidbotorplayer(client) {
@@ -1300,7 +1304,7 @@ function isvalidbotorplayer(client) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x866491ef, Offset: 0x5a28
 // Size: 0x9c
 function isvalidbot(bot) {
@@ -1308,7 +1312,7 @@ function isvalidbot(bot) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x185eedff, Offset: 0x5ad0
 // Size: 0x88
 function function_4732f860(bot) {
@@ -1321,7 +1325,7 @@ function function_4732f860(bot) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa6d9fefd, Offset: 0x5b60
 // Size: 0x166
 function function_208c970d(gpbundle, var_832340f2) {
@@ -1353,7 +1357,7 @@ function function_208c970d(gpbundle, var_832340f2) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf03e7f17, Offset: 0x5cd0
 // Size: 0x6e
 function isvalidplayer(client) {
@@ -1361,7 +1365,7 @@ function isvalidplayer(client) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x142565a2, Offset: 0x5d48
 // Size: 0x1c6
 function function_f867cce0(missioncomponent, commanderteam) {
@@ -1396,7 +1400,7 @@ function function_f867cce0(missioncomponent, commanderteam) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbf0d3e4d, Offset: 0x5f18
 // Size: 0x16c
 function querypointsaroundgameobject(bot, gameobject) {
@@ -1419,7 +1423,7 @@ function querypointsaroundgameobject(bot, gameobject) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5d6dfaba, Offset: 0x6090
 // Size: 0x244
 function querypointsinsideobjective(bot, trigger) {
@@ -1450,7 +1454,7 @@ function querypointsinsideobjective(bot, trigger) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xc460dfb4, Offset: 0x62e0
 // Size: 0x16c
 function querypointsinsideposition(bot, position, radius, halfheight) {
@@ -1481,7 +1485,7 @@ function querypointsinsideposition(bot, position, radius, halfheight) {
         var_c2a08848 = 0;
         while (var_c2a08848 < var_2586092e) {
             if (getdvarint(#"ai_debugsquadpointquery", 0)) {
-                function_af72dbc5(obb.center, obb.halfsize * -1, obb.halfsize, obb.angles[1], (0, 1, 0), "<dev string:x21e>");
+                recordbox(obb.center, obb.halfsize * -1, obb.halfsize, obb.angles[1], (0, 1, 0), "<dev string:x21e>");
                 foreach (point in points) {
                     recordstar(point.origin, (1, 0.5, 0), "<dev string:x21e>");
                 }
@@ -1494,7 +1498,7 @@ function querypointsinsideposition(bot, position, radius, halfheight) {
 #/
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x84d9ec3d, Offset: 0x65b8
 // Size: 0x1c8
 function querypointsinsidetrigger(bot, trigger) {
@@ -1522,7 +1526,7 @@ function querypointsinsidetrigger(bot, trigger) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd4445dce, Offset: 0x6788
 // Size: 0x100
 function function_210f00bf(bot, trigger) {
@@ -1573,7 +1577,7 @@ function function_3837a75d(side) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdc471f9f, Offset: 0x6a10
 // Size: 0xee
 function function_1852d313(strategicbundle, side) {
@@ -1590,7 +1594,7 @@ function function_1852d313(strategicbundle, side) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbd7efb9d, Offset: 0x6b08
 // Size: 0x24e
 function function_f4921cb3(var_6d1ae0e2) {
@@ -1632,7 +1636,7 @@ function function_f4921cb3(var_6d1ae0e2) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x3140b2e9, Offset: 0x6d60
 // Size: 0x62
 function function_f59ca353(strategy, doppelbots = 1, companions = 1) {
@@ -1640,7 +1644,7 @@ function function_f59ca353(strategy, doppelbots = 1, companions = 1) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xd722f3d, Offset: 0x6dd0
 // Size: 0x62
 function function_698a5382(strategy, doppelbots = 1, companions = 1) {
@@ -1648,7 +1652,7 @@ function function_698a5382(strategy, doppelbots = 1, companions = 1) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xac34da7, Offset: 0x6e40
 // Size: 0x62
 function function_54032f13(strategy, doppelbots = 1, companions = 1) {

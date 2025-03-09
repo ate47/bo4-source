@@ -1,10 +1,10 @@
 {
     "lootid": "#hash_2d01a2e7e30a4bc7",
-    "var_904b37bc": "#hash_3eb32f0f72df0c50",
+    "hash_904b37bc": "#hash_3eb32f0f72df0c50",
     "image": "loot04_ui_icon_blackmarket_reserves_death_fx_water",
     "name": "weapondeathfx_water",
     "displayname": "#hash_373b7a84e7ac2c2e",
     "icon": "loot04_ui_icon_cac_death_fx_water",
-    "var_eeb78b92": "#hash_48521e381bda64ee",
+    "hash_eeb78b92": "#hash_48521e381bda64ee",
     "previewimage": "#loot04_ui_icon_cac_death_fx_water"
 }

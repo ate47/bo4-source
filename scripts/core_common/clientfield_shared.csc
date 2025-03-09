@@ -1,7 +1,7 @@
 #namespace clientfield;
 
 // Namespace clientfield/clientfield_shared
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xfff629ec, Offset: 0x90
 // Size: 0x74
 function register(str_pool_name, str_name, n_version, n_bits, str_type, func_callback, b_host, b_callback_for_zero_when_new) {
@@ -9,7 +9,7 @@ function register(str_pool_name, str_name, n_version, n_bits, str_type, func_cal
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x3d67865a, Offset: 0x110
 // Size: 0x8c
 function register_luielem(unique_name, field_name, n_version, n_bits, str_type, func_callback, b_host, b_callback_for_zero_when_new) {
@@ -17,7 +17,7 @@ function register_luielem(unique_name, field_name, n_version, n_bits, str_type, 
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc0d5c26f, Offset: 0x1a8
 // Size: 0x6c
 function register_bgcache(poolname, var_b693fec6, uniqueid, version, func_callback, b_host, b_callback_for_zero_when_new) {
@@ -25,7 +25,7 @@ function register_bgcache(poolname, var_b693fec6, uniqueid, version, func_callba
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8946ca47, Offset: 0x220
 // Size: 0x44
 function get(field_name) {
@@ -36,7 +36,7 @@ function get(field_name) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x497546df, Offset: 0x270
 // Size: 0x22
 function get_to_player(field_name) {

@@ -10,7 +10,7 @@
 #namespace gadget_vision_pulse;
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x364a4479, Offset: 0x1b8
 // Size: 0x22e
 function init_shared() {
@@ -33,7 +33,7 @@ function init_shared() {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe35bf797, Offset: 0x3f0
 // Size: 0x34
 function deployed_off(slot, weapon) {
@@ -41,7 +41,7 @@ function deployed_off(slot, weapon) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xda6f2cbb, Offset: 0x430
 // Size: 0x5a
 function is_pulsed(attacker, victim, weapon, attackerweapon, meansofdeath) {
@@ -49,7 +49,7 @@ function is_pulsed(attacker, victim, weapon, attackerweapon, meansofdeath) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6d3f360, Offset: 0x498
 // Size: 0x1a
 function function_f5632baf(func) {
@@ -57,7 +57,7 @@ function function_f5632baf(func) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x281ddb07, Offset: 0x4c0
 // Size: 0x2a
 function gadget_vision_pulse_is_inuse(slot) {
@@ -65,7 +65,7 @@ function gadget_vision_pulse_is_inuse(slot) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa3c15ee3, Offset: 0x4f8
 // Size: 0x22
 function gadget_vision_pulse_is_flickering(slot) {
@@ -73,7 +73,7 @@ function gadget_vision_pulse_is_flickering(slot) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x654c053b, Offset: 0x528
 // Size: 0x2c
 function gadget_vision_pulse_on_flicker(slot, weapon) {
@@ -81,7 +81,7 @@ function gadget_vision_pulse_on_flicker(slot, weapon) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x97c17712, Offset: 0x560
 // Size: 0x54
 function gadget_vision_pulse_on_spawn() {
@@ -103,7 +103,7 @@ function gadget_vision_pulse_ramp_hold_func() {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc2c8cdf3, Offset: 0x618
 // Size: 0x13c
 function gadget_vision_pulse_watch_death(slot, weapon) {
@@ -122,7 +122,7 @@ function gadget_vision_pulse_watch_death(slot, weapon) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1ba013cc, Offset: 0x760
 // Size: 0xdc
 function gadget_vision_pulse_watch_emp(slot, weapon) {
@@ -142,7 +142,7 @@ function gadget_vision_pulse_watch_emp(slot, weapon) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x41df9623, Offset: 0x848
 // Size: 0x12e
 function function_46f384d5() {
@@ -161,7 +161,7 @@ function function_46f384d5() {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd7ecde3, Offset: 0x980
 // Size: 0xf4
 function gadget_vision_pulse_on(slot, weapon) {
@@ -180,7 +180,7 @@ function gadget_vision_pulse_on(slot, weapon) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd273235, Offset: 0xa80
 // Size: 0x1e
 function gadget_vision_pulse_off(slot, weapon) {
@@ -188,7 +188,7 @@ function gadget_vision_pulse_off(slot, weapon) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2c0b8575, Offset: 0xaa8
 // Size: 0x3b4
 function gadget_vision_pulse_start(slot, weapon) {
@@ -235,7 +235,7 @@ function gadget_vision_pulse_start(slot, weapon) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6772ed0d, Offset: 0xe68
 // Size: 0x144
 function shutdown_vision_pulse(spottedenemy, immediate, weapon) {
@@ -259,7 +259,7 @@ function shutdown_vision_pulse(spottedenemy, immediate, weapon) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf6d9db9e, Offset: 0xfb8
 // Size: 0x114
 function function_19bef771(weapon) {
@@ -278,7 +278,7 @@ function function_19bef771(weapon) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfe4b58dd, Offset: 0x10d8
 // Size: 0x84
 function wait_until_is_done(slot, timepulse) {
@@ -288,7 +288,7 @@ function wait_until_is_done(slot, timepulse) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6b513261, Offset: 0x1168
 // Size: 0xec
 function gadget_vision_pulse_flicker(slot, weapon) {
@@ -309,7 +309,7 @@ function gadget_vision_pulse_flicker(slot, weapon) {
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x52bfbed, Offset: 0x1260
 // Size: 0x9c
 function set_gadget_vision_pulse_status(status, time) {

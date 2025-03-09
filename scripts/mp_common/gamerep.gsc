@@ -209,10 +209,10 @@ function gamerepupdatenonpersistentplayerinformation() {
         if (!isdefined(game.gamerep[#"players"][name][#"totaltimeplayed"])) {
             game.gamerep[#"players"][name][#"totaltimeplayed"] = 0;
         }
-        game.gamerep[#"players"][name][#"totaltimeplayed"] = game.gamerep[#"players"][name][#"totaltimeplayed"] + self.timeplayed[#"total"];
+        game.gamerep[#"players"][name][#"totaltimeplayed"] += self.timeplayed[#"total"];
     }
     if (isdefined(self.tacticalinsertioncount)) {
-        game.gamerep[#"players"][name][#"tacticalinsertions"] = game.gamerep[#"players"][name][#"tacticalinsertions"] + self.tacticalinsertioncount;
+        game.gamerep[#"players"][name][#"tacticalinsertions"] += self.tacticalinsertioncount;
     }
 }
 

@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcfaa22f1, Offset: 0x1b8
 // Size: 0x5c
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x55152949, Offset: 0x220
 // Size: 0xe4
 function enable_tortoise_perk_for_level() {
@@ -35,7 +35,7 @@ function enable_tortoise_perk_for_level() {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x310
 // Size: 0x4
 function function_3cc019d7() {
@@ -43,7 +43,7 @@ function function_3cc019d7() {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x26f6ae42, Offset: 0x320
 // Size: 0x4c
 function function_6dd9c0ca() {
@@ -51,7 +51,7 @@ function function_6dd9c0ca() {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x378
 // Size: 0x4
 function function_cdbbd4f1() {
@@ -59,7 +59,7 @@ function function_cdbbd4f1() {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xab3d3794, Offset: 0x388
 // Size: 0x7c
 function function_f92dce50(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

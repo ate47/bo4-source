@@ -10,8 +10,8 @@
                         }
                     ],
                     "name": "play",
-                    "var_39fd697b": "core_frontend_buff",
-                    "var_b94164e": "core_frontend_buff"
+                    "hash_39fd697b": "core_frontend_buff",
+                    "hash_b94164e": "core_frontend_buff"
                 },
                 {
                     "entry": [
@@ -21,8 +21,8 @@
                         }
                     ],
                     "name": "play2",
-                    "var_39fd697b": "core_frontend_buff",
-                    "var_b94164e": "core_frontend_buff"
+                    "hash_39fd697b": "core_frontend_buff",
+                    "hash_b94164e": "core_frontend_buff"
                 },
                 {
                     "entry": [
@@ -32,8 +32,8 @@
                         }
                     ],
                     "name": "play5",
-                    "var_39fd697b": "core_frontend_buff",
-                    "var_b94164e": "core_frontend_buff"
+                    "hash_39fd697b": "core_frontend_buff",
+                    "hash_b94164e": "core_frontend_buff"
                 },
                 {
                     "entry": [
@@ -43,8 +43,8 @@
                         }
                     ],
                     "name": "play6",
-                    "var_39fd697b": "core_frontend_buff",
-                    "var_b94164e": "core_frontend_buff"
+                    "hash_39fd697b": "core_frontend_buff",
+                    "hash_b94164e": "core_frontend_buff"
                 }
             ],
             "model": "#tag_origin",
@@ -62,8 +62,8 @@
                         }
                     ],
                     "name": "play",
-                    "var_39fd697b": "core_frontend_buff",
-                    "var_b94164e": "core_frontend_buff"
+                    "hash_39fd697b": "core_frontend_buff",
+                    "hash_b94164e": "core_frontend_buff"
                 },
                 {
                     "entry": [
@@ -73,8 +73,8 @@
                         }
                     ],
                     "name": "play2",
-                    "var_39fd697b": "core_frontend_buff",
-                    "var_b94164e": "core_frontend_buff"
+                    "hash_39fd697b": "core_frontend_buff",
+                    "hash_b94164e": "core_frontend_buff"
                 },
                 {
                     "entry": [
@@ -84,8 +84,8 @@
                         }
                     ],
                     "name": "play5",
-                    "var_39fd697b": "core_frontend_buff",
-                    "var_b94164e": "core_frontend_buff"
+                    "hash_39fd697b": "core_frontend_buff",
+                    "hash_b94164e": "core_frontend_buff"
                 },
                 {
                     "entry": [
@@ -95,8 +95,8 @@
                         }
                     ],
                     "name": "play6",
-                    "var_39fd697b": "core_frontend_buff",
-                    "var_b94164e": "core_frontend_buff"
+                    "hash_39fd697b": "core_frontend_buff",
+                    "hash_b94164e": "core_frontend_buff"
                 }
             ],
             "type": "fakeplayer",
@@ -112,8 +112,8 @@
                         }
                     ],
                     "name": "play",
-                    "var_39fd697b": "core_frontend_buff",
-                    "var_b94164e": "core_frontend_buff"
+                    "hash_39fd697b": "core_frontend_buff",
+                    "hash_b94164e": "core_frontend_buff"
                 },
                 {
                     "entry": [
@@ -123,8 +123,8 @@
                         }
                     ],
                     "name": "play2",
-                    "var_39fd697b": "core_frontend_buff",
-                    "var_b94164e": "core_frontend_buff"
+                    "hash_39fd697b": "core_frontend_buff",
+                    "hash_b94164e": "core_frontend_buff"
                 },
                 {
                     "entry": [
@@ -134,8 +134,8 @@
                         }
                     ],
                     "name": "play5",
-                    "var_39fd697b": "core_frontend_buff",
-                    "var_b94164e": "core_frontend_buff"
+                    "hash_39fd697b": "core_frontend_buff",
+                    "hash_b94164e": "core_frontend_buff"
                 },
                 {
                     "entry": [
@@ -145,8 +145,8 @@
                         }
                     ],
                     "name": "play6",
-                    "var_39fd697b": "core_frontend_buff",
-                    "var_b94164e": "core_frontend_buff"
+                    "hash_39fd697b": "core_frontend_buff",
+                    "hash_b94164e": "core_frontend_buff"
                 }
             ],
             "model": "#hash_15caf9166b5de2ec",
@@ -164,8 +164,8 @@
                         }
                     ],
                     "name": "play",
-                    "var_39fd697b": "core_frontend_buff",
-                    "var_b94164e": "core_frontend_buff"
+                    "hash_39fd697b": "core_frontend_buff",
+                    "hash_b94164e": "core_frontend_buff"
                 },
                 {
                     "entry": [
@@ -175,8 +175,8 @@
                         }
                     ],
                     "name": "play2",
-                    "var_39fd697b": "core_frontend_buff",
-                    "var_b94164e": "core_frontend_buff"
+                    "hash_39fd697b": "core_frontend_buff",
+                    "hash_b94164e": "core_frontend_buff"
                 },
                 {
                     "entry": [
@@ -186,8 +186,8 @@
                         }
                     ],
                     "name": "play5",
-                    "var_39fd697b": "core_frontend_buff",
-                    "var_b94164e": "core_frontend_buff"
+                    "hash_39fd697b": "core_frontend_buff",
+                    "hash_b94164e": "core_frontend_buff"
                 },
                 {
                     "entry": [
@@ -197,8 +197,8 @@
                         }
                     ],
                     "name": "play6",
-                    "var_39fd697b": "core_frontend_buff",
-                    "var_b94164e": "core_frontend_buff"
+                    "hash_39fd697b": "core_frontend_buff",
+                    "hash_b94164e": "core_frontend_buff"
                 }
             ],
             "model": "#wpn_t8_smg_handling_prop",

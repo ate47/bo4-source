@@ -1,16 +1,16 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "var_826726a": "#hash_3963c3e923f20726"
+            "hash_826726a": "#hash_3963c3e923f20726"
         }
     ],
     "contracticon": "#hash_58fad9d8c3565ebc",
-    "var_d0100eab": 1,
+    "hash_d0100eab": 1,
     "relateditemname": "#hash_3b87d7eb92a261aa",
     "contracttitle": "#hash_3963c3e923f20726",
     "name": "loot_contract_seraph_cop",
     "contractdescription": "#hash_2b74684c4562d5ef",
-    "var_f15e270f": "#white",
-    "var_1c057e8c": "#hash_20768a52ba1603b4",
-    "var_e08fc162": "#hash_6cd16258087119d6"
+    "hash_f15e270f": "#white",
+    "hash_1c057e8c": "#hash_20768a52ba1603b4",
+    "hash_e08fc162": "#hash_6cd16258087119d6"
 }

@@ -14,7 +14,7 @@
 #namespace mansion_triad;
 
 // Namespace mansion_triad/zm_mansion_triad
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x96e5b1c3, Offset: 0x180
 // Size: 0x5a4
 function init_clientfields() {
@@ -39,7 +39,7 @@ function init_clientfields() {
 }
 
 // Namespace mansion_triad/zm_mansion_triad
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x591829d0, Offset: 0x730
 // Size: 0x41e
 function function_da63d789(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -102,7 +102,7 @@ function function_da63d789(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_triad/zm_mansion_triad
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x73c02353, Offset: 0xb58
 // Size: 0x8c
 function function_da5e1d54(localclientnum, fx_blue_fire) {
@@ -115,7 +115,7 @@ function function_da5e1d54(localclientnum, fx_blue_fire) {
 }
 
 // Namespace mansion_triad/zm_mansion_triad
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x85757f4a, Offset: 0xbf0
 // Size: 0x1d4
 function triad_beam(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -146,7 +146,7 @@ function triad_beam(localclientnum, oldval, newval, bnewent, binitialsnap, field
 }
 
 // Namespace mansion_triad/zm_mansion_triad
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb7182f3b, Offset: 0xdd0
 // Size: 0x24e
 function function_41640257(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -182,7 +182,7 @@ function function_41640257(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_triad/zm_mansion_triad
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xac66712d, Offset: 0x1028
 // Size: 0x1b6
 function function_b24b4025(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

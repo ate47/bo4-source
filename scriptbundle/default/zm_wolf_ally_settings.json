@@ -1,15 +1,1 @@
-{
-    "configstringfiletype": "scriptbundle",
-    "maxhealth": 100,
-    "chargemeleedist": 175,
-    "var_fc420d71": 1,
-    "name": "zm_wolf_ally_settings",
-    "minhealth": 100,
-    "var_628192b0": 1,
-    "var_250a1683": 100,
-    "var_97b22faa": 1,
-    "damagescale": 1,
-    "category": "#basic",
-    "normalmeleedist": 72,
-    "var_450edb3b": 1
-}
+{}

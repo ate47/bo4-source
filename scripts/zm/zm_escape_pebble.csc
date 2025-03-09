@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_escape_pebble/zm_escape_pebble
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x53a431dd, Offset: 0x168
 // Size: 0x35a
 function __init__() {
@@ -34,7 +34,7 @@ function __init__() {
 }
 
 // Namespace zm_escape_pebble/zm_escape_pebble
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x988b7df9, Offset: 0x4d0
 // Size: 0x84
 function function_87d68f99(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -43,7 +43,7 @@ function function_87d68f99(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape_pebble/zm_escape_pebble
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x35a2e68a, Offset: 0x560
 // Size: 0x74
 function function_33f1dd99(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -51,7 +51,7 @@ function function_33f1dd99(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape_pebble/zm_escape_pebble
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8ebc1be4, Offset: 0x5e0
 // Size: 0x84
 function narrative_room(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -63,7 +63,7 @@ function narrative_room(localclientnum, oldval, newval, bnewent, binitialsnap, f
 }
 
 // Namespace zm_escape_pebble/zm_escape_pebble
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x645089df, Offset: 0x670
 // Size: 0x84
 function attic_room(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -75,7 +75,7 @@ function attic_room(localclientnum, oldval, newval, bnewent, binitialsnap, field
 }
 
 // Namespace zm_escape_pebble/zm_escape_pebble
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdc56d60, Offset: 0x700
 // Size: 0x74
 function glyph_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -83,7 +83,7 @@ function glyph_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldna
 }
 
 // Namespace zm_escape_pebble/zm_escape_pebble
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9bfd671f, Offset: 0x780
 // Size: 0x1c6
 function function_db9b47b5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -111,7 +111,7 @@ function function_db9b47b5(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape_pebble/zm_escape_pebble
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x19dbaa89, Offset: 0x950
 // Size: 0x74
 function function_2f00e842(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

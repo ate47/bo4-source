@@ -4,8 +4,8 @@
 #namespace blightfatherinterface;
 
 // Namespace blightfatherinterface/archetype_blight_father_interface
-// Params 0, eflags: 0x1 linked
-// Checksum 0x23bdf114, Offset: 0x88
+// Params 0, eflags: 0x0
+// Checksum 0x73bf06e8, Offset: 0x88
 // Size: 0x10c
 function registerblightfatherinterfaceattributes() {
     ai::registermatchedinterface(#"blight_father", #"tongue_grab_enabled", 1, array(1, 0));

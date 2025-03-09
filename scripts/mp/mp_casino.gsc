@@ -6,7 +6,7 @@
 #namespace mp_casino;
 
 // Namespace mp_casino/mp_casino
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x110d8092, Offset: 0xc0
 // Size: 0x52
 function function_1fb8a998(var_f6b5167, newlocation) {
@@ -17,7 +17,7 @@ function function_1fb8a998(var_f6b5167, newlocation) {
 }
 
 // Namespace mp_casino/mp_casino
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xca51f091, Offset: 0x120
 // Size: 0x25a
 function function_9bcbe7e1() {

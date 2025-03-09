@@ -1,0 +1,88 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5cada35ec4e4fec1",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4248ad2c4f6d449d",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#veh_t8_mil_air_transport_mp_dark",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_333d64b3ec7393d6",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2933483d642ad766",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#veh_t8_mil_air_transport_mp_dark",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5d7d1e32da3a0d57",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7d80aa2cc4caf05f",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_5ae8c90068b6fbd7",
+            "type": "prop",
+            "name": "prop 3"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_morocco_air_drop_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

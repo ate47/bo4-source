@@ -1,0 +1,79 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_13dc5c1ef93896bf",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2a0577fc4c3b8d7",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1757d98442092b90",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                }
+            ],
+            "model": "#hash_71cd5b68d0b3aa92",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_34200fb1dbfa2e40",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4d530502eb6e42dc",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6eeb8240b7b3ad",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                }
+            ],
+            "model": "#hash_5d8534db29cfe92f",
+            "type": "prop",
+            "name": "prop 2"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_icebreaker_container_drop_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

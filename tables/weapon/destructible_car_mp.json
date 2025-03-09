@@ -1,0 +1,19 @@
+{
+    "name": "#destructible_car_mp",
+    "baseWeapon": "#destructible_car",
+    "displayname": "#hash_324148041f3cf49d",
+    "unk70": "#destructible_car",
+    "streamkey": "#hash_5341d3a07008958",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "projexplosionsound": "#wpn_grenade_explode",
+    "tunables1": "#hash_1d942572410",
+    "viewmodel": "#hash_1d932429550",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "image_cb0": "#hash_f69fd7de2314b29a",
+    "image_d40": "#hash_35bcd8e79fae334b",
+    "image_e90": "#hash_35bcd8e79fae334b",
+    "fx_f00": "#hash_80e7395fb42d35f6",
+    "underwaterExplosionSurfaceFX": []
+}

@@ -182,9 +182,9 @@
                 setdvar(#"bg_boastenabled", 1);
                 players = getplayers();
                 if (isdefined(level.boastplayer) && isdefined(players[level.boastplayer])) {
-                    players[level.boastplayer] function_c6775cf9(gesture);
+                    players[level.boastplayer] playboast(gesture);
                 } else {
-                    players[0] function_c6775cf9(gesture);
+                    players[0] playboast(gesture);
                 }
                 setdvar(#"scr_boast_gesture", "<dev string:x68>");
             }
@@ -733,7 +733,8 @@
         cmd = "<dev string:x5e5>";
         util::add_devgui(path + "<dev string:x608>", cmd + "<dev string:x610>");
         for (minutes = 0; minutes < 10; minutes++) {
-            for (seconds = 0; seconds < 60; seconds += 15) {
+            seconds = 0;
+            while (seconds < 60) {
                 var_99cfbb07 = "<dev string:x68>" + seconds;
                 totalseconds = minutes * 60 + seconds;
                 if (seconds == 0) {
@@ -745,6 +746,7 @@
                     }
                 }
                 util::add_devgui(path + minutes + "<dev string:x61e>" + var_99cfbb07, cmd + totalseconds);
+                seconds += 15;
             }
             waitframe(1);
         }

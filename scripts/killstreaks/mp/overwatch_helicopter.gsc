@@ -42,7 +42,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd00b783a, Offset: 0x4a8
 // Size: 0x374
 function __init__() {
@@ -73,7 +73,7 @@ function __init__() {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x83c63806, Offset: 0x828
 // Size: 0x48
 function function_1c601b99() {
@@ -83,7 +83,7 @@ function function_1c601b99() {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2b2fe151, Offset: 0x878
 // Size: 0x144
 function function_bff5c062(overwatchhelicopter, attackingplayer) {
@@ -102,10 +102,10 @@ function function_bff5c062(overwatchhelicopter, attackingplayer) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3bc76929, Offset: 0x9c8
 // Size: 0xd0
-function function_2e1b9b27(var_d3413870) {
+function function_2e1b9b27(kstype) {
     if (!self killstreakrules::iskillstreakallowed("overwatch_helicopter", self.team)) {
         return 0;
     }
@@ -122,7 +122,7 @@ function function_2e1b9b27(var_d3413870) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2029c769, Offset: 0xaa0
 // Size: 0x698
 function function_ca6698c6() {
@@ -189,7 +189,7 @@ function function_ca6698c6() {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x4bcc8f12, Offset: 0x1140
 // Size: 0x20c
 function function_f6442ecd(helicopter, player, ownerleft) {
@@ -224,7 +224,7 @@ function function_f6442ecd(helicopter, player, ownerleft) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x462a902c, Offset: 0x1358
 // Size: 0x28
 function deletehelicoptercallback() {
@@ -233,7 +233,7 @@ function deletehelicoptercallback() {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0x6c4d8991, Offset: 0x1388
 // Size: 0x45e
 function function_a0068ca0(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
@@ -278,7 +278,7 @@ function function_a0068ca0(einflictor, eattacker, idamage, idflags, smeansofdeat
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd9bca7a2, Offset: 0x17f0
 // Size: 0x3c
 function wait_and_explode() {
@@ -290,7 +290,7 @@ function wait_and_explode() {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x19b36909, Offset: 0x1838
 // Size: 0x9c
 function performleavehelicopterfromdamage() {
@@ -306,7 +306,7 @@ function performleavehelicopterfromdamage() {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd44746f8, Offset: 0x18e0
 // Size: 0xe4
 function function_49dca506(helicopter, attacker) {
@@ -324,7 +324,7 @@ function function_49dca506(helicopter, attacker) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1f723a75, Offset: 0x19d0
 // Size: 0xb4
 function function_520df983(helicopter) {
@@ -338,7 +338,7 @@ function function_520df983(helicopter) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa802eb99, Offset: 0x1a90
 // Size: 0xb4
 function function_a9fc0ef6(helicopter) {
@@ -353,7 +353,7 @@ function function_a9fc0ef6(helicopter) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x14e9574, Offset: 0x1b50
 // Size: 0x150
 function watchplayerteamchangethread(helicopter) {
@@ -371,7 +371,7 @@ function watchplayerteamchangethread(helicopter) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xd20fbe4a, Offset: 0x1ca8
 // Size: 0x1aa
 function function_82fb79e3(startnode, protectdest, hardpointtype, heli_team) {
@@ -400,7 +400,7 @@ function function_82fb79e3(startnode, protectdest, hardpointtype, heli_team) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd3ce622c, Offset: 0x1e60
 // Size: 0x24e
 function function_5c15f6d6() {
@@ -437,7 +437,7 @@ function function_5c15f6d6() {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xb1d6d01b, Offset: 0x20b8
 // Size: 0x34c
 function function_c4b00a04(startnode, protectdest, hardpointtype, heli_team) {
@@ -476,7 +476,7 @@ function function_c4b00a04(startnode, protectdest, hardpointtype, heli_team) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5145a565, Offset: 0x2410
 // Size: 0xaa
 function function_af77f078(helicopter) {
@@ -491,7 +491,7 @@ function function_af77f078(helicopter) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1552a7e2, Offset: 0x24c8
 // Size: 0x42e
 function heli_get_protect_spot(protectdest, overrideradius, heli_team) {
@@ -546,7 +546,7 @@ function heli_get_protect_spot(protectdest, overrideradius, heli_team) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x164b6fad, Offset: 0x2900
 // Size: 0x4de
 function function_ab667e1c(owner, helicopter) {
@@ -603,7 +603,7 @@ function function_ab667e1c(owner, helicopter) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xeb4500a8, Offset: 0x2de8
 // Size: 0x140
 function function_64b435c4(ai) {
@@ -625,7 +625,7 @@ function function_64b435c4(ai) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcd093ee2, Offset: 0x2f30
 // Size: 0x33a
 function function_b8047055(swat_gunner, helicopter) {
@@ -676,7 +676,7 @@ function function_b8047055(swat_gunner, helicopter) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xece9aadf, Offset: 0x3278
 // Size: 0x2f2
 function private on_player_killed(params) {
@@ -709,7 +709,7 @@ function private on_player_killed(params) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd8668539, Offset: 0x3578
 // Size: 0xea
 function function_8338a92d(params) {
@@ -725,7 +725,7 @@ function function_8338a92d(params) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x412e37c5, Offset: 0x3670
 // Size: 0x156
 function function_24de8afe(var_e8c2fadd, owner) {
@@ -755,7 +755,7 @@ function private function_b5e16bd7(swat_gunner) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x543d9a6e, Offset: 0x3838
 // Size: 0x6e
 function function_7fac6670(swat_gunner) {
@@ -769,7 +769,7 @@ function function_7fac6670(swat_gunner) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xd84b4ae8, Offset: 0x38b0
 // Size: 0x204
 function private function_ab6f69a1(swat, helicopter) {
@@ -798,7 +798,7 @@ function private function_ab6f69a1(swat, helicopter) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x8367b900, Offset: 0x3ac0
 // Size: 0xc4
 function private function_67260255(swat, helicopter, killstreak_id) {
@@ -811,7 +811,7 @@ function private function_67260255(swat, helicopter, killstreak_id) {
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf619e8a7, Offset: 0x3b90
 // Size: 0xae
 function private swat_cleanup(helicopter) {

@@ -4,14 +4,14 @@
     "value2": "1",
     "value3": "2",
     "value1": "0",
-    "var_dfed6968": "3",
+    "value4": "3",
     "type": "gamesettings",
     "name": "zm_enhanceddamagemult",
     "displayname": "#hash_2736823c3970cd3d",
-    "var_684ccd4c": "#hash_1f0968aad9d63087",
+    "label4": "#hash_1f0968aad9d63087",
     "label1": "#hash_8547de6ff2e6e2a",
-    "var_71b6e020": "#hash_3d70f0da8afd383a",
+    "label3": "#hash_3d70f0da8afd383a",
     "label2": "#hash_4bf59e78dfb9da30",
-    "var_9de86f42": 3,
+    "optionscount": 3,
     "setting": "zmEnhancedDamageMult"
 }

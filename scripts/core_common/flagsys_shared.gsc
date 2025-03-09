@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xed35aec, Offset: 0xe8
 // Size: 0x1c
 function __init__() {
@@ -20,7 +20,7 @@ function __init__() {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa9fc5d8d, Offset: 0x110
 // Size: 0xd0
 function update_flag_dvars() {
@@ -50,7 +50,7 @@ function init_dvar(str_dvar) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7b83d3b6, Offset: 0x2a8
 // Size: 0x3e
 function set(str_flag) {
@@ -62,7 +62,7 @@ function set(str_flag) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf0887d4c, Offset: 0x2f0
 // Size: 0x6c
 function increment(str_flag) {
@@ -77,7 +77,7 @@ function increment(str_flag) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3a1d7796, Offset: 0x368
 // Size: 0x9c
 function decrement(str_flag) {
@@ -101,7 +101,7 @@ function set_for_time(n_time, str_flag) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4411c3b1, Offset: 0x480
 // Size: 0x64
 function clear(str_flag) {
@@ -112,7 +112,7 @@ function clear(str_flag) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x332772c8, Offset: 0x4f0
 // Size: 0x6c
 function set_val(str_flag, b_val) {
@@ -133,7 +133,7 @@ function toggle(str_flag) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x13a93454, Offset: 0x5b0
 // Size: 0x3c
 function get(str_flag) {
@@ -141,7 +141,7 @@ function get(str_flag) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa4d87f59, Offset: 0x5f8
 // Size: 0x46
 function wait_till(str_flag) {
@@ -165,7 +165,7 @@ function wait_till_timeout(n_timeout, str_flag) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x61355a1d, Offset: 0x6d8
 // Size: 0x84
 function wait_till_all(a_flags) {
@@ -193,7 +193,7 @@ function wait_till_all_timeout(n_timeout, a_flags) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2a78f8e5, Offset: 0x7f8
 // Size: 0xa4
 function wait_till_any(a_flags) {
@@ -220,7 +220,7 @@ function wait_till_any_timeout(n_timeout, a_flags) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3f4725fb, Offset: 0x938
 // Size: 0x46
 function wait_till_clear(str_flag) {
@@ -244,7 +244,7 @@ function wait_till_clear_timeout(n_timeout, str_flag) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2b79dcff, Offset: 0xa18
 // Size: 0x84
 function wait_till_clear_all(a_flags) {
@@ -272,7 +272,7 @@ function wait_till_clear_all_timeout(n_timeout, a_flags) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xde17a66d, Offset: 0xb38
 // Size: 0xb0
 function wait_till_clear_any(a_flags) {

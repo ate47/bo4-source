@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_s_demon",
-    "var_ff3063df": "attach_t8_charm_s_demon_view",
+    "hash_ff3063df": "attach_t8_charm_s_demon_view",
     "image": "ui_icon_weapon_charms_demon_clown",
     "name": "charm_s_demon",
     "displayname": "#hash_16da48776890f132",
     "icon": "ui_icon_weapon_charms_demon_clown",
-    "var_ef5ad2b3": "attach_t8_charm_s_demon_view",
+    "hash_ef5ad2b3": "attach_t8_charm_s_demon_view",
     "previewimage": "#ui_icon_weapon_charms_demon_clown"
 }

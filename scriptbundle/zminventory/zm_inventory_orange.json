@@ -9,7 +9,7 @@
                             "stageimage": "#hash_370d3d727d09cfc9"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#zm_orange_zipquest_crank_1"
                 },
                 {
@@ -19,11 +19,11 @@
                             "stageimage": "#hash_370d3d727d09cfc9"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#zm_orange_zipquest_crank_2"
                 }
             ],
-            "var_b048489f": 2
+            "hash_b048489f": 2
         },
         {
             "components": [
@@ -34,7 +34,7 @@
                             "stageimage": "#hash_75ba6ae548c645ea"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#zm_orange_zipquest_handle"
                 },
                 {
@@ -48,7 +48,7 @@
                             "stageimage": "#hash_74ba26396cd76369"
                         }
                     ],
-                    "var_1d91eeba": 2,
+                    "hash_1d91eeba": 2,
                     "clientfield": "#zm_orange_zipquest_keycard_1"
                 },
                 {
@@ -62,11 +62,11 @@
                             "stageimage": "#hash_74ba26396cd76369"
                         }
                     ],
-                    "var_1d91eeba": 2,
+                    "hash_1d91eeba": 2,
                     "clientfield": "#zm_orange_zipquest_keycard_2"
                 }
             ],
-            "var_b048489f": 3
+            "hash_b048489f": 3
         },
         {
             "components": [
@@ -77,11 +77,11 @@
                             "stageimage": "#hash_75ba6ae548c645ea"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#zm_orange_zipquest_handle_final"
                 }
             ],
-            "var_b048489f": 1
+            "hash_b048489f": 1
         }
     ],
     "shieldpieces": [
@@ -109,7 +109,7 @@
                                     "stageimage": "#hash_6846778bc95b7134"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#heat_pack_part_bottle"
                         },
                         {
@@ -118,7 +118,7 @@
                                     "stageimage": "#hash_5062dc56f4dcf3db"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#heat_pack_part_tube"
                         },
                         {
@@ -127,7 +127,7 @@
                                     "stageimage": "#hash_27d3a0acc4f71b2c"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#heat_pack_part_canister"
                         }
                     ],
@@ -141,17 +141,17 @@
                                     "stageimage": "#hash_3ee506ee6b5facd6"
                                 }
                             ],
-                            "var_1d91eeba": 1,
-                            "var_7db3435c": 1,
+                            "hash_1d91eeba": 1,
+                            "hash_7db3435c": 1,
                             "clientfield": "#heat_pack_complete"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "var_516217cd": 2,
+            "hash_516217cd": 2,
             "name": "heat_pack",
-            "var_a0ebe517": "#heat_pack_phase"
+            "hash_a0ebe517": "#heat_pack_phase"
         },
         {
             "phases": [
@@ -166,7 +166,7 @@
                                     "stageimage": "#hash_1b6848cb2fd015d8"
                                 }
                             ],
-                            "var_1d91eeba": 2,
+                            "hash_1d91eeba": 2,
                             "clientfield": "#flinger_gear_box_1"
                         },
                         {
@@ -178,16 +178,16 @@
                                     "stageimage": "#hash_1b6848cb2fd015d8"
                                 }
                             ],
-                            "var_1d91eeba": 2,
+                            "hash_1d91eeba": 2,
                             "clientfield": "#flinger_gear_box_2"
                         }
                     ],
                     "list_items": 2
                 }
             ],
-            "var_516217cd": 1,
+            "hash_516217cd": 1,
             "name": "flinger",
-            "var_a0ebe517": "#flinger_phase"
+            "hash_a0ebe517": "#flinger_phase"
         },
         {
             "phases": [
@@ -199,7 +199,7 @@
                                     "stageimage": "#hash_524fd3c09cd2486a"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#orange_dynamite_bomb_part_1_owned"
                         },
                         {
@@ -208,7 +208,7 @@
                                     "stageimage": "#hash_2c2591029d6e9c0c"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#orange_dynamite_bomb_part_2_owned"
                         },
                         {
@@ -217,7 +217,7 @@
                                     "stageimage": "#hash_53db4d4435557493"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#orange_dynamite_bomb_part_3_owned"
                         }
                     ],
@@ -231,16 +231,16 @@
                                     "stageimage": "#hash_1273ffc1da3b8cca"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#orange_dynamite_bomb_complete"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "var_516217cd": 2,
+            "hash_516217cd": 2,
             "name": "dynamite_bomb",
-            "var_a0ebe517": "#dynamite_bomb_phase"
+            "hash_a0ebe517": "#dynamite_bomb_phase"
         }
     ],
     "challenges": [
@@ -377,7 +377,7 @@
                     "stageimage": "#hash_59f3b04e36880056"
                 }
             ],
-            "var_1d91eeba": 1,
+            "hash_1d91eeba": 1,
             "clientfield": "#zm_orange_pap_rock"
         },
         {
@@ -392,7 +392,7 @@
                     "stageimage": "#hash_60237c88b08baad1"
                 }
             ],
-            "var_1d91eeba": 3,
+            "hash_1d91eeba": 3,
             "clientfield": "#zm_orange_ww_quest"
         },
         {
@@ -404,23 +404,23 @@
                     "stageimage": "#hash_ab1f80d32070c33"
                 }
             ],
-            "var_1d91eeba": 2,
-            "var_7db3435c": 1,
+            "hash_1d91eeba": 2,
+            "hash_7db3435c": 1,
             "clientfield": "#zm_orange_spleen"
         }
     ],
-    "var_5a90928f": "#zm_orange_challenges",
+    "hash_5a90928f": "#zm_orange_challenges",
     "configstringfiletype": "scriptbundle",
-    "var_aa76b7dd": 12,
-    "var_6fa1ca44": 3,
-    "var_c53f31a1": "#zm_orange_challenges_target",
+    "hash_aa76b7dd": 12,
+    "hash_6fa1ca44": 3,
+    "hash_c53f31a1": "#zm_orange_challenges_target",
     "type": "zminventory",
-    "var_af62a8e8": 3,
-    "var_b10f2611": "#zm_orange_zipquest_phase_num",
+    "hash_af62a8e8": 3,
+    "hash_b10f2611": "#zm_orange_zipquest_phase_num",
     "name": "zm_inventory_orange",
-    "var_a05daa90": 3,
-    "var_c029b82f": 3,
-    "var_846fa8e": "#zm_orange_objective_progress",
-    "var_f22d6ad5": 15,
-    "var_f7d932ea": "#zm_orange_challenges_progress"
+    "hash_a05daa90": 3,
+    "hash_c029b82f": 3,
+    "hash_846fa8e": "#zm_orange_objective_progress",
+    "hash_f22d6ad5": 15,
+    "hash_f7d932ea": "#zm_orange_challenges_progress"
 }

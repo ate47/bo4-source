@@ -111,7 +111,7 @@ function on_menu_response(params) {
             level notify(#"hash_197c640e2f684a74");
             return;
         }
-        self iprintln(#"hash_6e4cedc56165f367");
+        self iprintln(#"mp/host_endgame_response");
         return;
     }
     if (response == "autocontrol") {
@@ -196,7 +196,7 @@ function function_2d1eb0ec(intpayload) {
     callout = getscriptbundle(level.var_4a38c46e[var_a4d879fa]);
     var_e7a0076b = callout.title;
     if (var_f4cd8d56 == 1) {
-        var_e7a0076b = isdefined(callout.var_82887152) ? callout.var_82887152 : callout.var_799fa983;
+        var_e7a0076b = isdefined(callout.var_82887152) ? callout.var_82887152 : callout.titlealt;
     } else if (var_f4cd8d56 == 2) {
         var_e7a0076b = callout.titleready;
     }
@@ -232,8 +232,8 @@ function function_2d1eb0ec(intpayload) {
             gesture = undefined;
             if (isdefined(callout.var_17d07d2d) && var_f4cd8d56 == 1) {
                 gesture = self gestures::function_c77349d4(callout.var_17d07d2d);
-            } else if (isdefined(callout.var_981c6467)) {
-                gesture = self gestures::function_c77349d4(callout.var_981c6467);
+            } else if (isdefined(callout.gestablecallout)) {
+                gesture = self gestures::function_c77349d4(callout.gestablecallout);
             }
             if (isdefined(gesture)) {
                 self gestures::play_gesture(gesture, undefined, 0);

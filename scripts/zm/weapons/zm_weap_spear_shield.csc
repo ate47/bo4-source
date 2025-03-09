@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_spear_shield/zm_weap_spear_shield
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x56d9d7bd, Offset: 0xf8
 // Size: 0x7e
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_spear_shield/zm_weap_spear_shield
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x180
 // Size: 0x4
 function __main__() {

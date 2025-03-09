@@ -5,7 +5,7 @@
     "backtarget": "main",
     "maxlocalclientsnetwork": 2,
     "mainmode": -1,
-    "var_d16ccae8": 1,
+    "hash_d16ccae8": 1,
     "isprivate": 1,
     "menumusic": "titlescreen",
     "room": "auto",
@@ -15,6 +15,6 @@
     "errtarget": "director_lan",
     "egamemodes": 1,
     "maxlocalclients": 1,
-    "var_38c7a0d1": "showdirectorcustom",
-    "var_f0c68dbb": 1
+    "hash_38c7a0d1": "showdirectorcustom",
+    "hash_f0c68dbb": 1
 }

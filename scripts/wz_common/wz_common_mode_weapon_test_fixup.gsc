@@ -12,7 +12,7 @@ function autoexec __init__() {
 }
 
 // Namespace wz_common_mode_weapon_test_fixup/wz_common_mode_weapon_test_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf66456d, Offset: 0x160
 // Size: 0x6c4
 function function_e420bad2() {

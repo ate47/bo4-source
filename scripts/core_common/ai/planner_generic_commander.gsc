@@ -6,7 +6,7 @@
 #namespace plannergenericcommander;
 
 // Namespace plannergenericcommander/planner_generic_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc3567989, Offset: 0x290
 // Size: 0x32
 function private _createcommanderplanner(team) {
@@ -15,7 +15,7 @@ function private _createcommanderplanner(team) {
 }
 
 // Namespace plannergenericcommander/planner_generic_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x86fc34b1, Offset: 0x2d0
 // Size: 0x32
 function private _createsquadplanner(team) {
@@ -24,7 +24,7 @@ function private _createsquadplanner(team) {
 }
 
 // Namespace plannergenericcommander/planner_generic_commander
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x36501048, Offset: 0x310
 // Size: 0xc8
 function createcommander(team) {
@@ -36,7 +36,7 @@ function createcommander(team) {
 }
 
 // Namespace plannergenericcommander/planner_generic_commander
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb8fcb612, Offset: 0x3e0
 // Size: 0x74
 function commanderdaemons(commander) {
@@ -46,7 +46,7 @@ function commanderdaemons(commander) {
 }
 
 // Namespace plannergenericcommander/planner_generic_commander
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2738d30c, Offset: 0x460
 // Size: 0x1b4
 function commanderutilityevaluators(commander) {
@@ -76,7 +76,7 @@ function function_6549878f() {
 }
 
 // Namespace plannergenericcommander/planner_generic_commander
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1342a587, Offset: 0x690
 // Size: 0x44
 function function_321afadc() {

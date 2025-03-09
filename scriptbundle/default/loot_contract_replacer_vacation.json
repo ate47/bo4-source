@@ -2,9 +2,9 @@
     "contracticon": "#hash_7f6b8b47541339d2",
     "contracttitle": "#hash_31e500a2133a5596",
     "name": "loot_contract_replacer_vacation",
-    "var_4b258f2c": "#hash_292ca1cbdcb4e55b",
+    "hash_4b258f2c": "#hash_292ca1cbdcb4e55b",
     "contractdescription": "#menu/blackout_character",
-    "var_f15e270f": "#white",
-    "var_1c057e8c": "#hash_7e57ba5ab495a5f8",
-    "var_e08fc162": "#hash_209ef2c49fb1a166"
+    "hash_f15e270f": "#white",
+    "hash_1c057e8c": "#hash_7e57ba5ab495a5f8",
+    "hash_e08fc162": "#hash_209ef2c49fb1a166"
 }

@@ -458,8 +458,10 @@ function fadetoblackandbackin() {
 function stunstaticfx(duration) {
     self endon(#"remove_remote_weapon");
     wait duration - 0.5;
-    for (time = duration - 0.5; time < duration; time += 0.05) {
+    time = duration - 0.5;
+    while (time < duration) {
         waitframe(1);
+        time += 0.05;
     }
 }
 

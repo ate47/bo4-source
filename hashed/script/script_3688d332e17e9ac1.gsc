@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_ae2d0839/namespace_ae2d0839
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x733adc69, Offset: 0x110
 // Size: 0x5c
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace namespace_ae2d0839/namespace_ae2d0839
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x530b07dd, Offset: 0x178
 // Size: 0x344
 function private on_begin(var_59803fa8) {
@@ -56,7 +56,7 @@ function private on_begin(var_59803fa8) {
 }
 
 // Namespace namespace_ae2d0839/namespace_ae2d0839
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x906c7059, Offset: 0x4c8
 // Size: 0x30c
 function private on_end(round_reset) {
@@ -86,7 +86,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace namespace_ae2d0839/namespace_ae2d0839
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x52b974f6, Offset: 0x7e0
 // Size: 0xf2
 function private on_ai_damage(params) {
@@ -96,7 +96,7 @@ function private on_ai_damage(params) {
 }
 
 // Namespace namespace_ae2d0839/namespace_ae2d0839
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x85d9b19d, Offset: 0x8e0
 // Size: 0x1a4
 function private on_weapon_fired(params) {
@@ -122,7 +122,7 @@ function private on_weapon_fired(params) {
 }
 
 // Namespace namespace_ae2d0839/namespace_ae2d0839
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x32c9e1d8, Offset: 0xa90
 // Size: 0x7e
 function function_b33ed7bd() {
@@ -134,7 +134,7 @@ function function_b33ed7bd() {
 }
 
 // Namespace namespace_ae2d0839/namespace_ae2d0839
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1262f4ea, Offset: 0xb18
 // Size: 0x32
 function is_active() {
@@ -143,12 +143,12 @@ function is_active() {
 }
 
 // Namespace namespace_ae2d0839/namespace_ae2d0839
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa5498fae, Offset: 0xb58
 // Size: 0xd4
 function private function_33f0ddd3(s_event) {
     if (s_event.event === "give_weapon") {
-        if (!self function_635f9c02(s_event.weapon)) {
+        if (!self isweaponlocked(s_event.weapon)) {
             self lockweapon(s_event.weapon, 0, 1);
         }
         if (zm_loadout::is_melee_weapon(s_event.weapon) || zm_loadout::is_lethal_grenade(s_event.weapon)) {

@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_a35b43eb/zm_mansion_traps_firegates
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x33b0c313, Offset: 0x120
 // Size: 0x72
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace namespace_a35b43eb/zm_mansion_traps_firegates
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xce093a33, Offset: 0x1a0
 // Size: 0xb4
 function init_clientfields() {
@@ -35,7 +35,7 @@ function init_clientfields() {
 }
 
 // Namespace namespace_a35b43eb/zm_mansion_traps_firegates
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x798220c8, Offset: 0x260
 // Size: 0x142
 function function_1d5b8b9f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -57,7 +57,7 @@ function function_1d5b8b9f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_a35b43eb/zm_mansion_traps_firegates
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf9fbd3b4, Offset: 0x3b0
 // Size: 0x212
 function function_b3f0f5cd(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

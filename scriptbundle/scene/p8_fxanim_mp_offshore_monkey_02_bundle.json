@@ -1,0 +1,156 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3b81b4da43e05443",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_11790b551d871a22",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "run"
+                }
+            ],
+            "model": "#hash_381d75531ae577b9",
+            "type": "prop",
+            "name": "monkey_path2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7bda5a6b2938bdba",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 3,
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1ea469f272d84043",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "run",
+                    "blend": 1
+                }
+            ],
+            "model": "#hash_314ae34dd8273e66",
+            "type": "prop",
+            "name": "monkey1",
+            "aligntargettag": "monkey_link1_jnt",
+            "aligntarget": "monkey_path2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7bda596b2938bc07",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 3,
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1ea469f272d84043",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "run",
+                    "blend": 1
+                }
+            ],
+            "model": "#hash_314ae34dd8273e66",
+            "type": "prop",
+            "name": "monkey2",
+            "aligntargettag": "monkey_link2_jnt",
+            "aligntarget": "monkey_path2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7bda586b2938ba54",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 3,
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1ea46af272d841f6",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "run",
+                    "blend": 1
+                }
+            ],
+            "model": "#hash_314ae34dd8273e66",
+            "type": "prop",
+            "name": "monkey3",
+            "aligntargettag": "monkey_link3_jnt",
+            "aligntarget": "monkey_path2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7bda596b2938bc07",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 3,
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1ea469f272d84043",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "run",
+                    "blend": 1
+                }
+            ],
+            "model": "#hash_314ae34dd8273e66",
+            "type": "prop",
+            "name": "monkey4",
+            "aligntargettag": "monkey_link4_jnt",
+            "aligntarget": "monkey_path2"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_offshore_monkey_02_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

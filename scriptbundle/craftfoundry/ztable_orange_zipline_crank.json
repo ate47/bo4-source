@@ -1,7 +1,7 @@
 {
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
-    "var_2a2adea3": 1,
+    "blueprintcount": 1,
     "blueprint01": "zblueprint_orange_zipline_crank",
     "name": "ztable_orange_zipline_crank",
     "displayname": "office_trap_battery"

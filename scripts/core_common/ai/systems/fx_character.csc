@@ -35,7 +35,7 @@ function autoexec main() {
 #namespace fxclientutils;
 
 // Namespace fxclientutils/fx_character
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x6ceaacfd, Offset: 0x348
 // Size: 0x1c
 function private _getfxbundle(name) {
@@ -43,7 +43,7 @@ function private _getfxbundle(name) {
 }
 
 // Namespace fxclientutils/fx_character
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x984f35b3, Offset: 0x370
 // Size: 0x13e
 function private _configentity(localclientnum, entity) {
@@ -60,7 +60,7 @@ function private _configentity(localclientnum, entity) {
 }
 
 // Namespace fxclientutils/fx_character
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xc1286e00, Offset: 0x4b8
 // Size: 0x13c
 function private _destructhandler(localclientnum, entity, piecenumber) {
@@ -79,7 +79,7 @@ function private _destructhandler(localclientnum, entity, piecenumber) {
 }
 
 // Namespace fxclientutils/fx_character
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x7e7bf27a, Offset: 0x600
 // Size: 0x13c
 function private _gibhandler(localclientnum, entity, gibflag) {
@@ -98,7 +98,7 @@ function private _gibhandler(localclientnum, entity, gibflag) {
 }
 
 // Namespace fxclientutils/fx_character
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8d4f59bb, Offset: 0x748
 // Size: 0x92
 function private _gibpartnametogibflag(gibpartname) {
@@ -119,7 +119,7 @@ function private _gibpartnametogibflag(gibpartname) {
 }
 
 // Namespace fxclientutils/fx_character
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x8353b5db, Offset: 0x7e8
 // Size: 0x42
 function private _isgibbed(localclientnum, entity, stopongibflag) {
@@ -130,7 +130,7 @@ function private _isgibbed(localclientnum, entity, stopongibflag) {
 }
 
 // Namespace fxclientutils/fx_character
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x1d9b8899, Offset: 0x838
 // Size: 0x42
 function private _ispiecedestructed(localclientnum, entity, stoponpiecedestroyed) {
@@ -141,7 +141,7 @@ function private _ispiecedestructed(localclientnum, entity, stoponpiecedestroyed
 }
 
 // Namespace fxclientutils/fx_character
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xdc423e9c, Offset: 0x888
 // Size: 0x6e
 function private _shouldplayfx(localclientnum, entity, fxstruct) {
@@ -155,7 +155,7 @@ function private _shouldplayfx(localclientnum, entity, fxstruct) {
 }
 
 // Namespace fxclientutils/fx_character
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x3c1d0ce1, Offset: 0x900
 // Size: 0x162
 function playfxbundle(localclientnum, entity, fxscriptbundle) {
@@ -197,7 +197,7 @@ function stopallfxbundles(localclientnum, entity) {
 }
 
 // Namespace fxclientutils/fx_character
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1bf37b19, Offset: 0xba0
 // Size: 0x128
 function stopfxbundle(localclientnum, entity, fxscriptbundle) {
@@ -217,7 +217,7 @@ function stopfxbundle(localclientnum, entity, fxscriptbundle) {
 }
 
 // Namespace fxclientutils/fx_character
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa8ca9a66, Offset: 0xcd0
 // Size: 0x128
 function function_ae92446(localclientnum, entity, fxscriptbundle) {

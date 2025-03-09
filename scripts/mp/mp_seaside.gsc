@@ -32,19 +32,19 @@ function event_handler[level_init] main(eventstruct) {
     load::main();
     compass::setupminimap("");
     level.cleandepositpoints = array((0, -1016, 711), (1120, 288, 712), (-499, -2437, 776), (-745, -1165, 776), (775, -2820, 725));
-    var_8751af93 = struct::get("spawn_flavor_tanks", "targetname");
-    if (isdefined(var_8751af93) && isdefined(var_8751af93.scene_ents)) {
-        var_8751af93.scene_ents[#"vehicle 1"] clientfield::set("hide_tank_rob", 1);
-        var_8751af93.scene_ents[#"vehicle 2"] clientfield::set("hide_tank_rob", 1);
-        var_8751af93.scene_ents[#"vehicle 3"] clientfield::set("hide_tank_rob", 1);
-        var_8751af93.scene_ents[#"vehicle 1"] notsolid();
-        var_8751af93.scene_ents[#"vehicle 2"] notsolid();
-        var_8751af93.scene_ents[#"vehicle 3"] notsolid();
+    tank_scene = struct::get("spawn_flavor_tanks", "targetname");
+    if (isdefined(tank_scene) && isdefined(tank_scene.scene_ents)) {
+        tank_scene.scene_ents[#"vehicle 1"] clientfield::set("hide_tank_rob", 1);
+        tank_scene.scene_ents[#"vehicle 2"] clientfield::set("hide_tank_rob", 1);
+        tank_scene.scene_ents[#"vehicle 3"] clientfield::set("hide_tank_rob", 1);
+        tank_scene.scene_ents[#"vehicle 1"] notsolid();
+        tank_scene.scene_ents[#"vehicle 2"] notsolid();
+        tank_scene.scene_ents[#"vehicle 3"] notsolid();
     }
 }
 
 // Namespace mp_seaside/mp_seaside
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x460
 // Size: 0x4
 function precache() {
@@ -52,7 +52,7 @@ function precache() {
 }
 
 // Namespace mp_seaside/mp_seaside
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcfd6b011, Offset: 0x470
 // Size: 0x11c
 function on_game_playing() {

@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_dividend_yield/zm_bgb_dividend_yield
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7ebb8698, Offset: 0x140
 // Size: 0x10a
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_dividend_yield/zm_bgb_dividend_yield
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2024bdf2, Offset: 0x258
 // Size: 0x12c
 function function_441dc042(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -52,7 +52,7 @@ function function_441dc042(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_bgb_dividend_yield/zm_bgb_dividend_yield
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa9436c5a, Offset: 0x390
 // Size: 0x104
 function function_1e792793(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

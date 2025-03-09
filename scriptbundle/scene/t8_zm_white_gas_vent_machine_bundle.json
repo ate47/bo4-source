@@ -185,7 +185,7 @@
             "model": "#hash_34e42dfa52b23249",
             "type": "prop",
             "name": "gas_vent_machine",
-            "var_873368a8": 100
+            "hash_873368a8": 100
         }
     ],
     "scenetype": "fxanim",

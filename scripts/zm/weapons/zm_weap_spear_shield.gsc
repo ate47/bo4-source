@@ -40,7 +40,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_spear_shield/zm_weap_spear_shield
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf7458b1, Offset: 0x1c0
 // Size: 0x7e
 function __init__() {
@@ -50,7 +50,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_spear_shield/zm_weap_spear_shield
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x180208f, Offset: 0x248
 // Size: 0x1e
 function __main__() {
@@ -70,7 +70,7 @@ function __main__() {
 #/
 
 // Namespace zm_weap_spear_shield/zm_weap_spear_shield
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x80c02641, Offset: 0x290
 // Size: 0x64
 function function_4b03aab(weapon) {
@@ -82,7 +82,7 @@ function function_4b03aab(weapon) {
 }
 
 // Namespace zm_weap_spear_shield/zm_weap_spear_shield
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x32373e77, Offset: 0x300
 // Size: 0x42c
 function function_dcdaf81c(weapon, riotshield_knockdown_range, riotshield_gib_range, riotshield_fling_range, var_1c3d89, riotshield_cylinder_radius, riotshield_fling_force_melee) {
@@ -123,7 +123,7 @@ function function_dcdaf81c(weapon, riotshield_knockdown_range, riotshield_gib_ra
         if (!isdefined(ai_enemy)) {
             continue;
         }
-        switch (ai_enemy.var_6f84b820) {
+        switch (ai_enemy.zm_ai_category) {
         case #"heavy":
         case #"miniboss":
         case #"boss":
@@ -149,7 +149,7 @@ function function_dcdaf81c(weapon, riotshield_knockdown_range, riotshield_gib_ra
 }
 
 // Namespace zm_weap_spear_shield/zm_weap_spear_shield
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x972c1556, Offset: 0x738
 // Size: 0xfc
 function function_80a146c1(player, weapon) {
@@ -234,7 +234,7 @@ function function_376cd4f6(weapon) {
         shield_damage += zombie_utility::get_zombie_var(#"riotshield_knockdown_damage_shield");
     }
     foreach (ai_enemy in level.var_21ffc192) {
-        switch (ai_enemy.var_6f84b820) {
+        switch (ai_enemy.zm_ai_category) {
         case #"heavy":
         case #"miniboss":
         case #"boss":

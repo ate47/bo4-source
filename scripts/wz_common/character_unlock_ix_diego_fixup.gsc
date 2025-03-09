@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 // Checksum 0x5b0c25a2, Offset: 0xc8
 // Size: 0x64
 function __init__() {
-    character_unlock_fixup::register_character_unlock(#"ix_diego_unlock", #"hash_75365263415c16f2", #"cu29_item", &function_d95e620c, #"hash_374df23cda9c79ed");
+    character_unlock_fixup::register_character_unlock(#"ix_diego_unlock", #"prt_wz_diego_dlc0", #"cu29_item", &function_d95e620c, #"hash_374df23cda9c79ed");
 }
 
 // Namespace character_unlock_ix_diego_fixup/character_unlock_ix_diego_fixup

@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 // Checksum 0x3c9f6f0c, Offset: 0xc8
 // Size: 0x64
 function __init__() {
-    character_unlock_fixup::register_character_unlock(#"richtofen_unlock", #"hash_66b69b90a30bcc88", #"cu17_item", &function_d95e620c, #"hash_418312990213bc41");
+    character_unlock_fixup::register_character_unlock(#"richtofen_unlock", #"prt_wz_richtofen", #"cu17_item", &function_d95e620c, #"hash_418312990213bc41");
 }
 
 // Namespace character_unlock_richtofen_fixup/character_unlock_richtofen_fixup

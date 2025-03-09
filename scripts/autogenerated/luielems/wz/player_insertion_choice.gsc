@@ -7,7 +7,7 @@
 // Method(s) 6 Total 13
 class cplayer_insertion_choice : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cplayer_insertion_choice/player_insertion_choice
     // Params 2, eflags: 0x0
@@ -15,19 +15,19 @@ class cplayer_insertion_choice : cluielem {
     // Size: 0x13c
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(_uid, "_state", 0);
             return;
         }
         if (#"groundvehicle" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(_uid, "_state", 1);
             return;
         }
         if (#"halojump" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 2);
+            player clientfield::function_9bf78ef8(_uid, "_state", 2);
             return;
         }
         if (#"heli" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 3);
+            player clientfield::function_9bf78ef8(_uid, "_state", 3);
             return;
         }
         assertmsg("<dev string:x38>");

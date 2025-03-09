@@ -84,7 +84,7 @@ function private on_end(round_reset) {
     case #"hash_5a202c5d6f53d672":
         if (!round_reset) {
             foreach (player in getplayers()) {
-                player function_e0c7d69(1);
+                player showcrosshair(1);
                 player clientfield::set_to_player("" + #"hash_1b9477ddcf30191f", 0);
             }
         }
@@ -137,12 +137,12 @@ function private function_69fa75f8() {
     level endon(#"hash_7646638df88a3656");
     while (true) {
         self clientfield::set_to_player("" + #"hash_1b9477ddcf30191f", 1);
-        self function_e0c7d69(0);
+        self showcrosshair(0);
         while (true) {
             s_waitresult = self waittilltimeout(1, #"weapon_fired", #"hash_3e0895cd0cc16d2d", #"lightning_ball_created", #"viper_bite_projectile");
             if (s_waitresult._notify != "timeout") {
                 self clientfield::set_to_player("" + #"hash_1b9477ddcf30191f", 0);
-                self function_e0c7d69(1);
+                self showcrosshair(1);
                 continue;
             }
             break;

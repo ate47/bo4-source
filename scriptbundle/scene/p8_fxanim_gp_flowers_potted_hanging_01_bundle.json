@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4a4d7d8880670a52",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 4,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_788335418e855f49",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_gp_flowers_potted_hanging_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace planemortar/planemortar
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x41aa442b, Offset: 0x188
 // Size: 0x7c
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace planemortar/planemortar
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa72ec4f7, Offset: 0x210
 // Size: 0xca
 function planemortar_contrail(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

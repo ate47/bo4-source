@@ -567,7 +567,7 @@ function function_551980b7(dialogname) {
     }
     switch (dialogname) {
     case #"battery":
-        dialogkey = playerbundle.var_15dfa8ec;
+        dialogkey = playerbundle.threatbattery;
         break;
     case #"buffassault":
         dialogkey = playerbundle.var_f33cef89;
@@ -597,7 +597,7 @@ function function_551980b7(dialogname) {
         dialogkey = playerbundle.var_1bfb0e39;
         break;
     case #"seraph":
-        dialogkey = playerbundle.var_f072d2d2;
+        dialogkey = playerbundle.threatseraph;
         break;
     case #"spectre":
         dialogkey = playerbundle.var_5fdf57ca;
@@ -2158,7 +2158,7 @@ function play_gadget_ready(weapon, userflip = 0) {
         dialogkey = playerbundle.var_cb080e91;
         break;
     case #"eq_cluster_semtex_grenade":
-        dialogkey = playerbundle.var_1497b2f4;
+        dialogkey = playerbundle.semtexready;
         break;
     case #"eq_concertina_wire":
         dialogkey = playerbundle.var_b55793d6;
@@ -2511,49 +2511,49 @@ function function_e3ebbf87(var_aa988d26, var_c1132df6) {
     } else {
         switch (specialistname) {
         case #"battery":
-            dialogalias = var_aa988d26.var_4ecb4e64;
+            dialogalias = var_aa988d26.batterycallout;
             break;
         case #"buffassault":
-            dialogalias = var_aa988d26.var_903053f4;
+            dialogalias = var_aa988d26.crashcallout;
             break;
         case #"engineer":
-            dialogalias = var_aa988d26.var_f5e77f05;
+            dialogalias = var_aa988d26.engineercallout;
             break;
         case #"firebreak":
-            dialogalias = var_aa988d26.var_ea3c9565;
+            dialogalias = var_aa988d26.firebreakcallout;
             break;
         case #"nomad":
-            dialogalias = var_aa988d26.var_20c482a5;
+            dialogalias = var_aa988d26.nomadcallout;
             break;
         case #"outrider":
-            dialogalias = var_aa988d26.var_87c8ec66;
+            dialogalias = var_aa988d26.outridercallout;
             break;
         case #"prophet":
-            dialogalias = var_aa988d26.var_b8de476c;
+            dialogalias = var_aa988d26.prophetcallout;
             break;
         case #"reaper":
-            dialogalias = var_aa988d26.var_64a03a3e;
+            dialogalias = var_aa988d26.reapercallout;
             break;
         case #"recon":
-            dialogalias = var_aa988d26.var_88484588;
+            dialogalias = var_aa988d26.reconcallout;
             break;
         case #"ruin":
-            dialogalias = var_aa988d26.var_fa4018ce;
+            dialogalias = var_aa988d26.ruincallout;
             break;
         case #"seraph":
-            dialogalias = var_aa988d26.var_a221d9a2;
+            dialogalias = var_aa988d26.seraphcallout;
             break;
         case #"spectre":
-            dialogalias = var_aa988d26.var_d7fde75f;
+            dialogalias = var_aa988d26.spectrecallout;
             break;
         case #"swatpolice":
-            dialogalias = var_aa988d26.var_7ac02231;
+            dialogalias = var_aa988d26.swatcallout;
             break;
         case #"zero":
-            dialogalias = var_aa988d26.var_ebb4b55;
+            dialogalias = var_aa988d26.zerocallout;
             break;
         case #"blackjack_bo4":
-            dialogalias = var_aa988d26.var_f449ccb6;
+            dialogalias = var_aa988d26.blackjackcallout;
             break;
         case #"captain_price":
             dialogalias = var_aa988d26.var_1411ad27;
@@ -2565,69 +2565,69 @@ function function_e3ebbf87(var_aa988d26, var_c1132df6) {
             dialogalias = var_aa988d26.var_1d9994d5;
             break;
         case #"hudson":
-            dialogalias = var_aa988d26.var_236ed551;
+            dialogalias = var_aa988d26.hudsoncallout;
             break;
         case #"hudson_hawaiian":
             dialogalias = var_aa988d26.var_609b5733;
             break;
         case #"mason":
-            dialogalias = var_aa988d26.var_36156b4;
+            dialogalias = var_aa988d26.masoncallout;
             break;
         case #"matt_shadows":
             dialogalias = var_aa988d26.var_e7c3ff0b;
             break;
         case #"menendez":
-            dialogalias = var_aa988d26.var_af7dd877;
+            dialogalias = var_aa988d26.menendezcallout;
             break;
         case #"replacer":
-            dialogalias = var_aa988d26.var_5e46d9cc;
+            dialogalias = var_aa988d26.replacercallout;
             break;
         case #"reznov":
-            dialogalias = var_aa988d26.var_d5950da8;
+            dialogalias = var_aa988d26.reznovcallout;
             break;
         case #"sarah_hall":
             dialogalias = var_aa988d26.var_9e49481e;
             break;
         case #"sergei":
-            dialogalias = var_aa988d26.var_6f74d606;
+            dialogalias = var_aa988d26.sergeicallout;
             break;
         case #"trejo":
-            dialogalias = var_aa988d26.var_8420517a;
+            dialogalias = var_aa988d26.trejocallout;
             break;
         case #"weaver":
-            dialogalias = var_aa988d26.var_efe1407c;
+            dialogalias = var_aa988d26.weavercallout;
             break;
         case #"woods":
-            dialogalias = var_aa988d26.var_86f07f8a;
+            dialogalias = var_aa988d26.woodscallout;
             break;
         case #"woods_old":
             dialogalias = var_aa988d26.var_e5b468ae;
             break;
         case #"yuri":
-            dialogalias = var_aa988d26.var_be14530f;
+            dialogalias = var_aa988d26.yuricallout;
             break;
         case #"bruno":
-            dialogalias = var_aa988d26.var_69d3e46;
+            dialogalias = var_aa988d26.brunocallout;
             break;
         case #"brutus":
-            dialogalias = var_aa988d26.var_c691fc24;
+            dialogalias = var_aa988d26.brutuscallout;
             break;
         case #"dempsey":
         case #"primis_dempsey":
-            dialogalias = var_aa988d26.var_8b897e74;
+            dialogalias = var_aa988d26.dempseycallout;
             break;
         case #"diego":
-            dialogalias = var_aa988d26.var_45341635;
+            dialogalias = var_aa988d26.diegocallout;
             break;
         case #"marlton":
-            dialogalias = var_aa988d26.var_88c12253;
+            dialogalias = var_aa988d26.marltoncallout;
             break;
         case #"misty":
-            dialogalias = var_aa988d26.var_ff5cea3b;
+            dialogalias = var_aa988d26.mistycallout;
             break;
         case #"nikolai":
         case #"primis_nikolai":
-            dialogalias = var_aa988d26.var_27bc4433;
+            dialogalias = var_aa988d26.nikolaicallout;
             break;
         case #"ofc_dempsey":
             dialogalias = var_aa988d26.var_95a03453;
@@ -2643,29 +2643,29 @@ function function_e3ebbf87(var_aa988d26, var_c1132df6) {
             break;
         case #"primis_richtofen":
         case #"richtofen":
-            dialogalias = var_aa988d26.var_af612a6d;
+            dialogalias = var_aa988d26.richtofencallout;
             break;
         case #"russman":
-            dialogalias = var_aa988d26.var_53de84dc;
+            dialogalias = var_aa988d26.russmancallout;
             break;
         case #"scarlett":
-            dialogalias = var_aa988d26.var_38efdc20;
+            dialogalias = var_aa988d26.scarlettcallout;
             break;
         case #"shadowman":
-            dialogalias = var_aa988d26.var_71422e;
+            dialogalias = var_aa988d26.shadowmancallout;
             break;
         case #"shaw":
-            dialogalias = var_aa988d26.var_beab1094;
+            dialogalias = var_aa988d26.shawcallout;
             break;
         case #"stuhlinger":
-            dialogalias = var_aa988d26.var_c9e3892;
+            dialogalias = var_aa988d26.stuhlingercallout;
             break;
         case #"primis_takeo":
         case #"takeo":
-            dialogalias = var_aa988d26.var_b3201047;
+            dialogalias = var_aa988d26.takeocallout;
             break;
         case #"tedd":
-            dialogalias = var_aa988d26.var_6e548d8e;
+            dialogalias = var_aa988d26.teddcallout;
             break;
         case #"zombie_female":
             dialogalias = var_aa988d26.var_63dc7b96;
@@ -2674,16 +2674,16 @@ function function_e3ebbf87(var_aa988d26, var_c1132df6) {
             dialogalias = var_aa988d26.var_afc5e0c1;
             break;
         case #"female1":
-            dialogalias = var_aa988d26.var_891c58d0;
+            dialogalias = var_aa988d26.female1callout;
             break;
         case #"female2":
-            dialogalias = var_aa988d26.var_2f702d3e;
+            dialogalias = var_aa988d26.female2callout;
             break;
         case #"female3":
-            dialogalias = var_aa988d26.var_1e68d30e;
+            dialogalias = var_aa988d26.female3callout;
             break;
         case #"female4":
-            dialogalias = var_aa988d26.var_68ef0dd5;
+            dialogalias = var_aa988d26.female4callout;
             break;
         case #"air_female":
             dialogalias = var_aa988d26.var_19e39499;

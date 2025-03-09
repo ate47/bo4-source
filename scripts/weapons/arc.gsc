@@ -8,7 +8,7 @@
 #namespace arc;
 
 // Namespace arc/arc
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc7fd1335, Offset: 0x98
 // Size: 0x9c
 function init_arc(weapon, var_26b2b1bb) {
@@ -41,7 +41,7 @@ function init_arc(weapon, var_26b2b1bb) {
 #/
 
 // Namespace arc/arc
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9a5bb72e, Offset: 0x198
 // Size: 0xaa
 function setup_arc(weapon, var_26b2b1bb) {
@@ -61,7 +61,7 @@ function setup_arc(weapon, var_26b2b1bb) {
 }
 
 // Namespace arc/arc
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe6190043, Offset: 0x250
 // Size: 0x7c
 function function_8d134256(var_26b2b1bb) {
@@ -71,7 +71,7 @@ function function_8d134256(var_26b2b1bb) {
 }
 
 // Namespace arc/arc
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xfc41fff4, Offset: 0x2d8
 // Size: 0x8c
 function function_874bd25a(eattacker, einflictor, weapon, meansofdeath, damage) {
@@ -81,7 +81,7 @@ function function_874bd25a(eattacker, einflictor, weapon, meansofdeath, damage) 
 }
 
 // Namespace arc/arc
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x127c7d09, Offset: 0x370
 // Size: 0x114
 function function_9b14bec4(eattacker, einflictor, weapon, meansofdeath, damage, var_26b2b1bb) {
@@ -120,7 +120,7 @@ function function_9b14bec4(eattacker, einflictor, weapon, meansofdeath, damage, 
 #/
 
 // Namespace arc/arc
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xc8e1660f, Offset: 0x570
 // Size: 0xa2
 function distancecheck(var_26b2b1bb, target, arc_source_pos, arc_source_origin) {
@@ -136,7 +136,7 @@ function distancecheck(var_26b2b1bb, target, arc_source_pos, arc_source_origin) 
 }
 
 // Namespace arc/arc
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x66c5146a, Offset: 0x620
 // Size: 0x2b2
 function function_33d5b9a6(var_26b2b1bb, eattacker, arc_source, arc_source_origin, depth, target, var_4d3cc1a7 = 1) {
@@ -185,7 +185,7 @@ function function_33d5b9a6(var_26b2b1bb, eattacker, arc_source, arc_source_origi
 }
 
 // Namespace arc/arc
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x70132c1, Offset: 0x8e0
 // Size: 0x206
 function find_arc_targets(var_26b2b1bb, eattacker, arc_source, arc_source_origin, depth, var_4d3cc1a7 = 1) {
@@ -213,7 +213,7 @@ function find_arc_targets(var_26b2b1bb, eattacker, arc_source, arc_source_origin
 }
 
 // Namespace arc/arc
-// Params 11, eflags: 0x1 linked
+// Params 11, eflags: 0x0
 // Checksum 0x7bcb0a19, Offset: 0xaf0
 // Size: 0x1f6
 function function_30a9a6c1(var_26b2b1bb, delay, eattacker, arc_source, var_9a099e60, arc_source_origin, arc_source_pos, arc_target, arc_target_pos, depth, var_4d3cc1a7 = 1) {
@@ -240,7 +240,7 @@ function function_30a9a6c1(var_26b2b1bb, delay, eattacker, arc_source, var_9a099
 }
 
 // Namespace arc/arc
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2480e92b, Offset: 0xcf0
 // Size: 0xa4
 function function_db12bbd1(arc_source) {
@@ -255,7 +255,7 @@ function function_db12bbd1(arc_source) {
 }
 
 // Namespace arc/arc
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x46c509d9, Offset: 0xda0
 // Size: 0xaa
 function function_41827934(arc_source, arc_target) {
@@ -273,7 +273,7 @@ function function_41827934(arc_source, arc_target) {
 }
 
 // Namespace arc/arc
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8b05538b, Offset: 0xe58
 // Size: 0xe8
 function function_936e96aa(var_26b2b1bb) {

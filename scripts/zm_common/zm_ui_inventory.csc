@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_ui_inventory/zm_ui_inventory
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xbb6d8b9a, Offset: 0x128
 // Size: 0x150
 function private __init__() {

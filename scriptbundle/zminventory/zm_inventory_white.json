@@ -9,7 +9,7 @@
                             "stageimage": "#hash_520db7764f24e6bb"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#hash_6608231515ad6e93"
                 },
                 {
@@ -19,7 +19,7 @@
                             "stageimage": "#hash_520db8764f24e86e"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#hash_6608241515ad7046"
                 },
                 {
@@ -29,11 +29,11 @@
                             "stageimage": "#hash_520db9764f24ea21"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#hash_6608251515ad71f9"
                 }
             ],
-            "var_b048489f": 3
+            "hash_b048489f": 3
         },
         {
             "components": [
@@ -44,7 +44,7 @@
                             "stageimage": "#hash_6497c30520ed9f0a"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#teleporter_pad_1"
                 },
                 {
@@ -54,11 +54,11 @@
                             "stageimage": "#hash_6497c30520ed9f0a"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#teleporter_pad_2"
                 }
             ],
-            "var_b048489f": 2
+            "hash_b048489f": 2
         }
     ],
     "shieldpieces": [
@@ -89,8 +89,8 @@
                                     "stageimage": "#ui_icon_inventory_zm_white_fuse_pickup_yellow"
                                 }
                             ],
-                            "var_1d91eeba": 2,
-                            "var_7db3435c": 1,
+                            "hash_1d91eeba": 2,
+                            "hash_7db3435c": 1,
                             "clientfield": "#zm_white_ww_mk2v_ammo"
                         }
                     ],
@@ -107,8 +107,8 @@
                                     "stageimage": "#hash_53a64436ec4d6140"
                                 }
                             ],
-                            "var_1d91eeba": 2,
-                            "var_7db3435c": 1,
+                            "hash_1d91eeba": 2,
+                            "hash_7db3435c": 1,
                             "clientfield": "#zm_white_ww_mk2x_ammo"
                         }
                     ],
@@ -125,8 +125,8 @@
                                     "stageimage": "#hash_460ca6a260f318c4"
                                 }
                             ],
-                            "var_1d91eeba": 2,
-                            "var_7db3435c": 1,
+                            "hash_1d91eeba": 2,
+                            "hash_7db3435c": 1,
                             "clientfield": "#zm_white_ww_mk2y_ammo"
                         }
                     ],
@@ -143,18 +143,18 @@
                                     "stageimage": "#hash_4c928b221443789e"
                                 }
                             ],
-                            "var_1d91eeba": 2,
-                            "var_7db3435c": 1,
+                            "hash_1d91eeba": 2,
+                            "hash_7db3435c": 1,
                             "clientfield": "#zm_white_ww_mk2z_ammo"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "var_7db3435c": 1,
-            "var_516217cd": 4,
+            "hash_7db3435c": 1,
+            "hash_516217cd": 4,
             "name": "zm_white_ww_mod",
-            "var_a0ebe517": "#zm_white_ww_mod_phase"
+            "hash_a0ebe517": "#zm_white_ww_mod_phase"
         },
         {
             "phases": [
@@ -166,16 +166,16 @@
                                     "stageimage": "#hash_5c241e7c16d67796"
                                 }
                             ],
-                            "var_1d91eeba": 1,
-                            "var_7db3435c": 1,
+                            "hash_1d91eeba": 1,
+                            "hash_7db3435c": 1,
                             "clientfield": "#zm_white_ww_husk_part"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "var_7db3435c": 1,
-            "var_516217cd": 1,
+            "hash_7db3435c": 1,
+            "hash_516217cd": 1,
             "name": "zm_white_ww_husk"
         },
         {
@@ -188,14 +188,14 @@
                                     "stageimage": "#hash_5cc7e44a03efab70"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#zm_white_private_mannequin_key_part"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "var_516217cd": 1,
+            "hash_516217cd": 1,
             "name": "zm_white_private_mannequin_key"
         }
     ],
@@ -244,7 +244,7 @@
                     "stageimage": "#hash_35c94057300e0eac"
                 }
             ],
-            "var_1d91eeba": 1,
+            "hash_1d91eeba": 1,
             "clientfield": "#hash_133f5935959cbd21"
         },
         {
@@ -253,7 +253,7 @@
                     "stageimage": "#hash_125dcc445cdead9"
                 }
             ],
-            "var_1d91eeba": 1,
+            "hash_1d91eeba": 1,
             "clientfield": "#hash_133f5635959cb808"
         },
         {
@@ -262,21 +262,21 @@
                     "stageimage": "#hash_125d9c445cde5c0"
                 }
             ],
-            "var_1d91eeba": 1,
+            "hash_1d91eeba": 1,
             "clientfield": "#hash_133f5735959cb9bb"
         }
     ],
     "objectivebackground": "#hash_71aaa3fae51b94e2",
     "configstringfiletype": "scriptbundle",
-    "var_aa76b7dd": 9,
-    "var_6fa1ca44": 3,
+    "hash_aa76b7dd": 9,
+    "hash_6fa1ca44": 3,
     "type": "zminventory",
-    "var_af62a8e8": 3,
-    "var_b10f2611": "#zm_whiteteleporter_phase_num",
+    "hash_af62a8e8": 3,
+    "hash_b10f2611": "#zm_whiteteleporter_phase_num",
     "name": "zm_inventory_white",
-    "var_f128673a": "#hash_1b86326ea73c0d46",
-    "var_a05daa90": 3,
-    "var_c029b82f": 2,
-    "var_846fa8e": "#zm_white_breakfast_trial",
-    "var_16fb993f": "#hash_1ebd66c5e00ca2ef"
+    "hash_f128673a": "#hash_1b86326ea73c0d46",
+    "hash_a05daa90": 3,
+    "hash_c029b82f": 2,
+    "hash_846fa8e": "#zm_white_breakfast_trial",
+    "hash_16fb993f": "#hash_1ebd66c5e00ca2ef"
 }

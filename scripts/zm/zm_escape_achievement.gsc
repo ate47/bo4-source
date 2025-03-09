@@ -7,7 +7,7 @@
 #namespace zm_escape_achievement;
 
 // Namespace zm_escape_achievement/zm_escape_achievement
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaa9fca55, Offset: 0x278
 // Size: 0x24
 function init() {
@@ -15,7 +15,7 @@ function init() {
 }
 
 // Namespace zm_escape_achievement/zm_escape_achievement
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2723c129, Offset: 0x2a8
 // Size: 0xdc
 function function_17b76033() {
@@ -31,7 +31,7 @@ function function_17b76033() {
 }
 
 // Namespace zm_escape_achievement/zm_escape_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x74c48d92, Offset: 0x390
 // Size: 0x44
 function private function_73fdd23e() {
@@ -41,7 +41,7 @@ function private function_73fdd23e() {
 }
 
 // Namespace zm_escape_achievement/zm_escape_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x7371e1fc, Offset: 0x3e0
 // Size: 0x44
 function private function_f47a878a() {
@@ -51,7 +51,7 @@ function private function_f47a878a() {
 }
 
 // Namespace zm_escape_achievement/zm_escape_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xdbcc10e5, Offset: 0x430
 // Size: 0x44
 function private function_70003bac() {
@@ -61,7 +61,7 @@ function private function_70003bac() {
 }
 
 // Namespace zm_escape_achievement/zm_escape_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xf0333b1a, Offset: 0x480
 // Size: 0x294
 function private function_4f363fd4() {
@@ -87,7 +87,7 @@ function private function_4f363fd4() {
 }
 
 // Namespace zm_escape_achievement/zm_escape_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x7d0c722, Offset: 0x720
 // Size: 0x44
 function private function_cf262a06() {
@@ -97,7 +97,7 @@ function private function_cf262a06() {
 }
 
 // Namespace zm_escape_achievement/zm_escape_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xbe9f23fc, Offset: 0x770
 // Size: 0x1ec
 function private function_e5df009() {
@@ -127,7 +127,7 @@ function private function_e5df009() {
 }
 
 // Namespace zm_escape_achievement/zm_escape_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x10353eb, Offset: 0x968
 // Size: 0xb2
 function private function_4c6d1750() {
@@ -142,7 +142,7 @@ function private function_4c6d1750() {
 }
 
 // Namespace zm_escape_achievement/zm_escape_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xb22489bb, Offset: 0xa28
 // Size: 0x224
 function private function_8b752e69() {
@@ -166,7 +166,7 @@ function private function_8b752e69() {
 }
 
 // Namespace zm_escape_achievement/zm_escape_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xcbc86ed5, Offset: 0xc58
 // Size: 0x1dc
 function private function_ce31237b() {

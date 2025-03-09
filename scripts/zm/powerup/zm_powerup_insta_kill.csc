@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_powerup_insta_kill/zm_powerup_insta_kill
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x906af0e9, Offset: 0xf0
 // Size: 0x4c
 function __init__() {

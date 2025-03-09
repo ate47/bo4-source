@@ -7,7 +7,7 @@
 // Method(s) 6 Total 13
 class cct_progressbar_status : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cct_progressbar_status/ct_progressbar_status
     // Params 2, eflags: 0x0
@@ -15,47 +15,47 @@ class cct_progressbar_status : cluielem {
     // Size: 0x2fc
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(_uid, "_state", 0);
             return;
         }
         if (#"download_complete" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(_uid, "_state", 1);
             return;
         }
         if (#"downloading" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 2);
+            player clientfield::function_9bf78ef8(_uid, "_state", 2);
             return;
         }
         if (#"connection_lost" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 3);
+            player clientfield::function_9bf78ef8(_uid, "_state", 3);
             return;
         }
         if (#"downloading1" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 4);
+            player clientfield::function_9bf78ef8(_uid, "_state", 4);
             return;
         }
         if (#"hash_42f8a09c2e0a99e3" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 5);
+            player clientfield::function_9bf78ef8(_uid, "_state", 5);
             return;
         }
         if (#"awaitingconnection" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 6);
+            player clientfield::function_9bf78ef8(_uid, "_state", 6);
             return;
         }
         if (#"hash_7f00f68e42b5b8f6" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 7);
+            player clientfield::function_9bf78ef8(_uid, "_state", 7);
             return;
         }
         if (#"sabotagedata" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 8);
+            player clientfield::function_9bf78ef8(_uid, "_state", 8);
             return;
         }
         if (#"sabotagedata1" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 9);
+            player clientfield::function_9bf78ef8(_uid, "_state", 9);
             return;
         }
         if (#"hash_7185fe2194047325" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 10);
+            player clientfield::function_9bf78ef8(_uid, "_state", 10);
             return;
         }
         assertmsg("<dev string:x38>");

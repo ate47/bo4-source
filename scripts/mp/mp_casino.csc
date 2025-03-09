@@ -25,7 +25,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_casino/mp_casino
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x28983c96, Offset: 0x318
 // Size: 0xf2
 function dom_flag_base_fx_override(flag, team) {
@@ -55,7 +55,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_casino/mp_casino
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x81b478db, Offset: 0x418
 // Size: 0xf2
 function dom_flag_cap_fx_override(flag, team) {

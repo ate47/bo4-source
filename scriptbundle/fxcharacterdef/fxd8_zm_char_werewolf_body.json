@@ -4,6 +4,6 @@
     "type": "fxcharacterdef",
     "vmtype": "client",
     "name": "fxd8_zm_char_werewolf_body",
-    "var_a0d91763": "tag_eye",
-    "var_c7a3c7dd": "#hash_524decea28717b7c"
+    "hash_a0d91763": "tag_eye",
+    "hash_c7a3c7dd": "#hash_524decea28717b7c"
 }

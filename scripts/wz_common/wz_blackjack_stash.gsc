@@ -5,15 +5,15 @@
 
 // Namespace wz_stash_blackjack/wz_blackjack_stash
 // Params 0, eflags: 0x2
-// Checksum 0xdbd9f54e, Offset: 0x78
+// Checksum 0xeda00467, Offset: 0x78
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"wz_stash_blackjack", &__init__, undefined, undefined);
 }
 
 // Namespace wz_stash_blackjack/wz_blackjack_stash
-// Params 0, eflags: 0x1 linked
-// Checksum 0x7ce66c71, Offset: 0xc0
+// Params 0, eflags: 0x0
+// Checksum 0xa2c3c610, Offset: 0xc0
 // Size: 0xcc
 function __init__() {
     level.blackjackstash = isdefined(getgametypesetting(#"wzlootlockers")) ? getgametypesetting(#"wzlootlockers") : 0;
@@ -24,8 +24,8 @@ function __init__() {
 }
 
 // Namespace wz_stash_blackjack/wz_blackjack_stash
-// Params 0, eflags: 0x5 linked
-// Checksum 0x673097ba, Offset: 0x198
+// Params 0, eflags: 0x4
+// Checksum 0x5cd2ebde, Offset: 0x198
 // Size: 0xb0
 function private function_e973becc() {
     item_world::function_4de3ca98();

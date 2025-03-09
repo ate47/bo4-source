@@ -861,10 +861,10 @@ function function_356caede(team) {
         var_abdbed5a = level.var_91c33dcb.finishers[bundle_index].("finisherbundle");
         var_d1d9820d = getscriptbundle(var_abdbed5a);
         if (isdefined(var_d1d9820d.("attacker_gesture"))) {
-            finisher function_c6775cf9(var_d1d9820d.("attacker_gesture"));
+            finisher playboast(var_d1d9820d.("attacker_gesture"));
         }
         if (isdefined(var_d1d9820d.("victim_gesture"))) {
-            self function_c6775cf9(var_d1d9820d.("victim_gesture"));
+            self playboast(var_d1d9820d.("victim_gesture"));
         }
         self function_fab0e07e(finisher);
         if (!isdefined(finisher)) {
@@ -896,10 +896,10 @@ function function_356caede(team) {
                     return true;
                 } else {
                     self function_516a3bef(1);
-                    self function_7c685040();
+                    self stopallboasts();
                 }
             }
-            finisher function_7c685040();
+            finisher stopallboasts();
         }
     }
     return false;

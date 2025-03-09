@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_score/zm_score
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x239cdc73, Offset: 0x178
 // Size: 0x16c
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace zm_score/zm_score
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x4710d02b, Offset: 0x2f0
 // Size: 0xa6
 function score_cf_register_info(name, version, max_count, func_callback) {

@@ -5,6 +5,6 @@
     "name": "medal_killstreak_10",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#ui_icon_medal_merciless",
-    "stringref": "#hash_37a1e701eb895c45",
+    "stringref": "#medal/killstreak_10",
     "iconlarge": "#ui_icon_medal_merciless_large"
 }

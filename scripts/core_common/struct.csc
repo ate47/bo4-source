@@ -21,7 +21,7 @@ function event_handler[createstruct] createstruct(struct) {
 }
 
 // Namespace struct/struct
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x246243fe, Offset: 0x118
 // Size: 0xa6
 function init() {
@@ -37,7 +37,7 @@ function init() {
 }
 
 // Namespace struct/struct
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8048977f, Offset: 0x1c8
 // Size: 0xae
 function get(kvp_value, kvp_key = "targetname") {
@@ -58,7 +58,7 @@ function spawn(v_origin = (0, 0, 0), v_angles = (0, 0, 0)) {
 }
 
 // Namespace struct/struct
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5e36600a, Offset: 0x300
 // Size: 0x4e
 function get_array(kvp_value, kvp_key = "targetname") {
@@ -69,7 +69,7 @@ function get_array(kvp_value, kvp_key = "targetname") {
 }
 
 // Namespace struct/struct
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3591009e, Offset: 0x358
 // Size: 0x24
 function delete() {
@@ -77,7 +77,7 @@ function delete() {
 }
 
 // Namespace struct/struct
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbc63c5aa, Offset: 0x388
 // Size: 0x72
 function get_script_bundle(str_type, str_name) {
@@ -89,7 +89,7 @@ function get_script_bundle(str_type, str_name) {
 }
 
 // Namespace struct/struct
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x78d50ba6, Offset: 0x408
 // Size: 0xb6
 function get_script_bundles(str_type) {

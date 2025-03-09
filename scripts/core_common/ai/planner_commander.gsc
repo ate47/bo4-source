@@ -30,7 +30,7 @@ function autoexec main() {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x7c9ec4a4, Offset: 0x298
 // Size: 0x84
 function private __init__() {
@@ -51,7 +51,7 @@ function private _cancelstrategize(commander) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1cb95b2, Offset: 0x368
 // Size: 0x140
 function private _cloneblackboard(commander) {
@@ -72,7 +72,7 @@ function private _cloneblackboard(commander) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xd284e559, Offset: 0x4b0
 // Size: 0x1b4
 function private function_b1c3f0bd(commander, &blackboard) {
@@ -93,7 +93,7 @@ function private function_b1c3f0bd(commander, &blackboard) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x4f411cf1, Offset: 0x670
 // Size: 0x774
 function private function_12b9fafb(commander, &blackboard) {
@@ -173,7 +173,7 @@ function private function_12b9fafb(commander, &blackboard) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x225a6a4d, Offset: 0xdf0
 // Size: 0xf8
 function private _createsquads(commander) {
@@ -306,7 +306,7 @@ function private function_9962ffd8(commander) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xeac65681, Offset: 0x1898
 // Size: 0x6a
 function private _disbandallsquads(commander) {
@@ -317,7 +317,7 @@ function private _disbandallsquads(commander) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xfaa5bbc5, Offset: 0x1910
 // Size: 0x1cc
 function private _disbandsquads(commander) {
@@ -347,7 +347,7 @@ function private _disbandsquads(commander) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x9b43cacd, Offset: 0x1ae8
 // Size: 0x332
 function private _evaluatefitness(commander, squad) {
@@ -383,7 +383,7 @@ function private _evaluatefitness(commander, squad) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa78b6c4c, Offset: 0x1e28
 // Size: 0x1c4
 function private _evaluatesquads(commander) {
@@ -411,7 +411,7 @@ function private _evaluatesquads(commander) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x1adfb6aa, Offset: 0x1ff8
 // Size: 0x74c
 function private _initializeblackboard(commander, team) {
@@ -455,7 +455,7 @@ function private _initializeblackboard(commander, team) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x22d1ed34, Offset: 0x2750
 // Size: 0x52
 function private _initializedaemonfunctions(functype) {
@@ -468,7 +468,7 @@ function private _initializedaemonfunctions(functype) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7ceb3667, Offset: 0x27b0
 // Size: 0x64
 function private _initializedaemons(commander) {
@@ -478,7 +478,7 @@ function private _initializedaemons(commander) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x30d15d5d, Offset: 0x2820
 // Size: 0x1a
 function private _initializesquads(commander) {
@@ -486,7 +486,7 @@ function private _initializesquads(commander) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x690c10fd, Offset: 0x2848
 // Size: 0x52
 function private _initializeutilityfunctions(functype) {
@@ -499,7 +499,7 @@ function private _initializeutilityfunctions(functype) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xfdbe7816, Offset: 0x28a8
 // Size: 0x478
 function private function_f9d38682(commander) {
@@ -557,7 +557,7 @@ function private function_f9d38682(commander) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x7504f7cd, Offset: 0x2d28
 // Size: 0x166
 function private _plan(commander, &blackboard) {
@@ -632,7 +632,7 @@ function private _reclaimescortparameters(commander, &blackboard) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x3d0571eb, Offset: 0x33c0
 // Size: 0x45c
 function private function_ac4ff936(commander, &blackboard) {
@@ -683,7 +683,7 @@ function private function_ac4ff936(commander, &blackboard) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf6204044, Offset: 0x3828
 // Size: 0x7f4
 function private function_60f42acc(commander) {
@@ -783,7 +783,7 @@ function private function_60f42acc(commander) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xcd4b7c16, Offset: 0x4028
 // Size: 0x3cc
 function private function_d8b8afde(commander, &blackboard) {
@@ -822,7 +822,7 @@ function private function_d8b8afde(commander, &blackboard) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x85170689, Offset: 0x4400
 // Size: 0x224
 function private _strategize(commander) {
@@ -864,7 +864,7 @@ function private _strategize(commander) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1702e238, Offset: 0x4630
 // Size: 0x1f4
 function private _updateblackboarddaemons(commander) {
@@ -893,7 +893,7 @@ function private _updateblackboarddaemons(commander) {
 }
 
 // Namespace plannercommander/planner_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb33042d3, Offset: 0x4830
 // Size: 0x10c
 function private _updateplanner(commander) {
@@ -919,7 +919,7 @@ function private _updateplanner(commander) {
 #namespace plannercommanderutility;
 
 // Namespace plannercommanderutility/planner_commander
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x91eaf60e, Offset: 0x4948
 // Size: 0x14e
 function adddaemon(commander, daemonname, updaterate = float(function_60d95f53()) / 1000 * 10) {
@@ -934,7 +934,7 @@ function adddaemon(commander, daemonname, updaterate = float(function_60d95f53()
 }
 
 // Namespace plannercommanderutility/planner_commander
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x3b35a79, Offset: 0x4aa0
 // Size: 0xc6
 function addsquadevaluator(commander, evaluatorname, constants = []) {
@@ -944,7 +944,7 @@ function addsquadevaluator(commander, evaluatorname, constants = []) {
 }
 
 // Namespace plannercommanderutility/planner_commander
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5876719f, Offset: 0x4b70
 // Size: 0x436
 function createcommander(team, commanderplanner, squadplanner, commanderupdaterate = float(function_60d95f53()) / 1000 * 40, squadupdaterate = float(function_60d95f53()) / 1000 * 100, commandermaxframetime = 2, squadmaxplannerframetime = 2) {
@@ -1013,7 +1013,7 @@ function initializeenemythrottle(commander, enemycommander, upperbound, lowerbou
 }
 
 // Namespace plannercommanderutility/planner_commander
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa5b50f0b, Offset: 0x51a8
 // Size: 0xce
 function getdaemonapifunction(functionname) {
@@ -1023,7 +1023,7 @@ function getdaemonapifunction(functionname) {
 }
 
 // Namespace plannercommanderutility/planner_commander
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcfe75193, Offset: 0x5280
 // Size: 0xce
 function getutilityapifunction(functionname) {
@@ -1033,7 +1033,7 @@ function getutilityapifunction(functionname) {
 }
 
 // Namespace plannercommanderutility/planner_commander
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb726b0b3, Offset: 0x5358
 // Size: 0xa2
 function pausecommander(commander) {
@@ -1048,7 +1048,7 @@ function pausecommander(commander) {
 }
 
 // Namespace plannercommanderutility/planner_commander
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5cd67b39, Offset: 0x5408
 // Size: 0x134
 function registerdaemonapi(functionname, functionptr) {
@@ -1060,7 +1060,7 @@ function registerdaemonapi(functionname, functionptr) {
 }
 
 // Namespace plannercommanderutility/planner_commander
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x69400c5d, Offset: 0x5548
 // Size: 0x134
 function registerutilityapi(functionname, functionptr) {
@@ -1072,7 +1072,7 @@ function registerutilityapi(functionname, functionptr) {
 }
 
 // Namespace plannercommanderutility/planner_commander
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x22a27897, Offset: 0x5688
 // Size: 0xb2
 function function_2974807c(commander) {
@@ -1087,7 +1087,7 @@ function function_2974807c(commander) {
 }
 
 // Namespace plannercommanderutility/planner_commander
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x7b447b58, Offset: 0x5748
 // Size: 0x6c
 function setforcegoalattribute(commander, attribute, oldvalue, value) {
@@ -1096,7 +1096,7 @@ function setforcegoalattribute(commander, attribute, oldvalue, value) {
 }
 
 // Namespace plannercommanderutility/planner_commander
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xd3d38641, Offset: 0x57c0
 // Size: 0x6c
 function setgoldenpathattribute(commander, attribute, oldvalue, value) {

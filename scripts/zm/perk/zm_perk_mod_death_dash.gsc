@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_death_dash/zm_perk_mod_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x14a8c56, Offset: 0x140
 // Size: 0x14
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_death_dash/zm_perk_mod_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9a25c8e3, Offset: 0x160
 // Size: 0xd4
 function function_27473e44() {
@@ -36,7 +36,7 @@ function function_27473e44() {
 }
 
 // Namespace zm_perk_mod_death_dash/zm_perk_mod_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1b05fcd, Offset: 0x240
 // Size: 0x34
 function register_clientfield() {
@@ -44,7 +44,7 @@ function register_clientfield() {
 }
 
 // Namespace zm_perk_mod_death_dash/zm_perk_mod_death_dash
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3979dbeb, Offset: 0x280
 // Size: 0xc
 function set_clientfield(state) {
@@ -52,7 +52,7 @@ function set_clientfield(state) {
 }
 
 // Namespace zm_perk_mod_death_dash/zm_perk_mod_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb1661d50, Offset: 0x298
 // Size: 0x60
 function give_perk() {
@@ -64,7 +64,7 @@ function give_perk() {
 }
 
 // Namespace zm_perk_mod_death_dash/zm_perk_mod_death_dash
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x9b01e485, Offset: 0x300
 // Size: 0x36
 function take_perk(b_pause, str_perk, str_result, n_slot) {
@@ -72,7 +72,7 @@ function take_perk(b_pause, str_perk, str_result, n_slot) {
 }
 
 // Namespace zm_perk_mod_death_dash/zm_perk_mod_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x19c45182, Offset: 0x340
 // Size: 0x2b2
 function function_6607df78() {
@@ -88,10 +88,10 @@ function function_6607df78() {
             if (!isalive(ai_zombie) || isdefined(ai_zombie.marked_for_death) && ai_zombie.marked_for_death) {
                 continue;
             }
-            if (!isdefined(ai_zombie.var_6f84b820)) {
+            if (!isdefined(ai_zombie.zm_ai_category)) {
                 continue;
             }
-            switch (ai_zombie.var_6f84b820) {
+            switch (ai_zombie.zm_ai_category) {
             case #"heavy":
             case #"miniboss":
             case #"enhanced":

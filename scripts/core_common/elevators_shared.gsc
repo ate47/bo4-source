@@ -406,13 +406,13 @@ class class_727456f3 {
     // Params 3, eflags: 0x0
     // Checksum 0x12deba49, Offset: 0x15a8
     // Size: 0x2ae
-    function function_64d6a132(var_20aecb28, var_2605b4dd, b_inside) {
-        var_a7a692e3 = isdefined(var_20aecb28.script_int) ? var_20aecb28.script_int : 1;
+    function function_64d6a132(s_gameobject, var_2605b4dd, b_inside) {
+        var_a7a692e3 = isdefined(s_gameobject.script_int) ? s_gameobject.script_int : 1;
         if (b_inside) {
             var_2af3d553 endon(#"hash_10ae3aed4e10c4c7");
         }
         while (true) {
-            waitresult = var_20aecb28.mdl_gameobject waittill(#"gameobject_end_use_player");
+            waitresult = s_gameobject.mdl_gameobject waittill(#"gameobject_end_use_player");
             e_player = waitresult.player;
             if (var_2605b4dd) {
                 function_47b06180(var_a7a692e3);
@@ -444,10 +444,10 @@ class class_727456f3 {
     // Params 1, eflags: 0x0
     // Checksum 0x6cd835e5, Offset: 0x14c8
     // Size: 0xd6
-    function function_789cee92(var_20aecb28) {
+    function function_789cee92(s_gameobject) {
         while (true) {
-            if (isdefined(var_20aecb28.mdl_gameobject)) {
-                waitresult = var_20aecb28.mdl_gameobject waittill(#"gameobject_end_use_player");
+            if (isdefined(s_gameobject.mdl_gameobject)) {
+                waitresult = s_gameobject.mdl_gameobject waittill(#"gameobject_end_use_player");
                 e_player = waitresult.player;
                 if (!self flag::get("elevator_moving")) {
                     if (var_de7ae77 == 1) {
@@ -497,13 +497,13 @@ class class_727456f3 {
     // Params 3, eflags: 0x0
     // Checksum 0x74c9bc09, Offset: 0x1288
     // Size: 0xa4
-    function function_8986542b(var_20aecb28, var_2605b4dd, b_inside) {
+    function function_8986542b(s_gameobject, var_2605b4dd, b_inside) {
         if (b_inside) {
-            var_10b20309 = var_20aecb28;
-            var_20aecb28.mdl_gameobject.trigger enablelinkto();
-            var_20aecb28.mdl_gameobject.trigger linkto(var_2af3d553);
+            var_10b20309 = s_gameobject;
+            s_gameobject.mdl_gameobject.trigger enablelinkto();
+            s_gameobject.mdl_gameobject.trigger linkto(var_2af3d553);
         }
-        thread function_64d6a132(var_20aecb28, var_2605b4dd, b_inside);
+        thread function_64d6a132(s_gameobject, var_2605b4dd, b_inside);
     }
 
     // Namespace namespace_727456f3/elevators_shared
@@ -677,9 +677,9 @@ function init_elevator() {
         [[ var_1313d6ba ]]->function_dc171119();
     } else if (var_1313d6ba.m_s_bundle.var_46d9acb0 == "push_button") {
         a_s_gameobjects = struct::get_array("elevator_push_button", "targetname");
-        foreach (var_20aecb28 in a_s_gameobjects) {
-            if (isdefined(var_20aecb28.target) && var_20aecb28.target === var_1313d6ba.var_a2f96f78.targetname) {
-                thread [[ var_1313d6ba ]]->function_789cee92(var_20aecb28);
+        foreach (s_gameobject in a_s_gameobjects) {
+            if (isdefined(s_gameobject.target) && s_gameobject.target === var_1313d6ba.var_a2f96f78.targetname) {
+                thread [[ var_1313d6ba ]]->function_789cee92(s_gameobject);
             }
         }
     }
@@ -709,15 +709,15 @@ function function_a7d817a6() {
         if (s_instance.var_1313d6ba.m_s_bundle.var_46d9acb0 == "up_and_down") {
             var_af8a8a63 = struct::get_array("elevator_button_inside", "targetname");
             var_d3c75026 = struct::get_array("elevator_button_call", "targetname");
-            foreach (var_20aecb28 in var_af8a8a63) {
-                if (isdefined(var_20aecb28.target) && var_20aecb28.target == s_instance.targetname) {
-                    [[ s_instance.var_1313d6ba ]]->function_8986542b(var_20aecb28, 0, 1);
+            foreach (s_gameobject in var_af8a8a63) {
+                if (isdefined(s_gameobject.target) && s_gameobject.target == s_instance.targetname) {
+                    [[ s_instance.var_1313d6ba ]]->function_8986542b(s_gameobject, 0, 1);
                     break;
                 }
             }
-            foreach (var_20aecb28 in var_d3c75026) {
-                if (isdefined(var_20aecb28.target) && var_20aecb28.target == s_instance.targetname) {
-                    [[ s_instance.var_1313d6ba ]]->function_8986542b(var_20aecb28, 1, 0);
+            foreach (s_gameobject in var_d3c75026) {
+                if (isdefined(s_gameobject.target) && s_gameobject.target == s_instance.targetname) {
+                    [[ s_instance.var_1313d6ba ]]->function_8986542b(s_gameobject, 1, 0);
                 }
             }
         }

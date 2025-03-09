@@ -11,7 +11,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace gestures/gestures
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd0619651, Offset: 0xe8
 // Size: 0x324
 function main() {
@@ -50,7 +50,7 @@ function give_gesture(gestureweapon) {
 }
 
 // Namespace gestures/gestures
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x35d4a0da, Offset: 0x4e8
 // Size: 0x8e
 function clear_gesture() {
@@ -63,7 +63,7 @@ function clear_gesture() {
 }
 
 // Namespace gestures/gestures
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa8bdbf04, Offset: 0x580
 // Size: 0x72
 function function_e198bde3(gesturename) {
@@ -81,7 +81,7 @@ function function_e198bde3(gesturename) {
 }
 
 // Namespace gestures/gestures
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4ce8ab5f, Offset: 0x600
 // Size: 0x192
 function function_a5202150(gesturename, weaponname) {
@@ -127,7 +127,7 @@ function function_ba4529d4(gesturename) {
 }
 
 // Namespace gestures/gestures
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x26f4e297, Offset: 0x868
 // Size: 0x26e
 function function_8cc27b6d(gesturename) {
@@ -161,7 +161,7 @@ function function_8cc27b6d(gesturename) {
 }
 
 // Namespace gestures/gestures
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5c7d1349, Offset: 0xae0
 // Size: 0x72
 function function_c77349d4(var_851342cf) {
@@ -175,7 +175,7 @@ function function_c77349d4(var_851342cf) {
 }
 
 // Namespace gestures/gestures
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x760b682, Offset: 0xb60
 // Size: 0x8e
 function play_gesture(gesturename, target, var_a085312c, blendtime, starttime, var_15fc620c, stopall) {
@@ -189,7 +189,7 @@ function play_gesture(gesturename, target, var_a085312c, blendtime, starttime, v
 }
 
 // Namespace gestures/gestures
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdbaaef5d, Offset: 0xbf8
 // Size: 0x6a
 function function_b6cc48ed(gesturename, target, var_a085312c, blendtime, starttime, var_15fc620c, stopall) {
@@ -197,7 +197,7 @@ function function_b6cc48ed(gesturename, target, var_a085312c, blendtime, startti
 }
 
 // Namespace gestures/gestures
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x153b54c, Offset: 0xc70
 // Size: 0x92
 function function_56e00fbf(var_851342cf, target, var_a085312c, blendtime, starttime, var_15fc620c, stopall) {
@@ -221,7 +221,7 @@ function function_e62f6dde(var_851342cf, target, var_a085312c, blendtime, startt
 }
 
 // Namespace gestures/gestures
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x56057e39, Offset: 0xdb0
 // Size: 0x23a
 function function_f3e2696f(ent, weapon, weapon_options, timeout, var_1e89628f, var_1d78d31, callbackfail) {

@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_87f097c4/wz_ee_zombie_bathtub
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1f543c83, Offset: 0x120
 // Size: 0x144
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace namespace_87f097c4/wz_ee_zombie_bathtub
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1cf0c20b, Offset: 0x270
 // Size: 0xa4
 function zombie_arm_blood_splash(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -36,7 +36,7 @@ function zombie_arm_blood_splash(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace namespace_87f097c4/wz_ee_zombie_bathtub
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7dd77ea, Offset: 0x320
 // Size: 0xac
 function bathtub_fake_soul_sfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

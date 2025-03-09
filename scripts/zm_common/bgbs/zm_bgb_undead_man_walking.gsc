@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_undead_man_walking/zm_bgb_undead_man_walking
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x92656164, Offset: 0xf0
 // Size: 0x64
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_undead_man_walking/zm_bgb_undead_man_walking
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x10594ce0, Offset: 0x160
 // Size: 0xb4
 function enable() {
@@ -40,7 +40,7 @@ function enable() {
 }
 
 // Namespace zm_bgb_undead_man_walking/zm_bgb_undead_man_walking
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4dcb8914, Offset: 0x220
 // Size: 0xac
 function function_da70ffac() {
@@ -53,7 +53,7 @@ function function_da70ffac() {
 }
 
 // Namespace zm_bgb_undead_man_walking/zm_bgb_undead_man_walking
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9da75f05, Offset: 0x2d8
 // Size: 0x1ce
 function function_8b96ace8(b_walk = 1) {
@@ -62,7 +62,7 @@ function function_8b96ace8(b_walk = 1) {
         var_5d66253 = 0;
         if (isdefined(level.var_2f67e192)) {
             var_5d66253 = [[ level.var_2f67e192 ]](a_ai[i]);
-        } else if (isalive(a_ai[i]) && (a_ai[i].var_6f84b820 === #"basic" || a_ai[i].var_6f84b820 === #"enhanced") && a_ai[i].team === level.zombie_team) {
+        } else if (isalive(a_ai[i]) && (a_ai[i].zm_ai_category === #"basic" || a_ai[i].zm_ai_category === #"enhanced") && a_ai[i].team === level.zombie_team) {
             var_5d66253 = 1;
         }
         if (var_5d66253) {
@@ -79,14 +79,14 @@ function function_8b96ace8(b_walk = 1) {
 }
 
 // Namespace zm_bgb_undead_man_walking/zm_bgb_undead_man_walking
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x955c4937, Offset: 0x4b0
 // Size: 0xd4
 function function_db1ee563() {
     var_5d66253 = 0;
     if (isdefined(level.var_2f67e192)) {
         var_5d66253 = [[ level.var_2f67e192 ]](self);
-    } else if (isalive(self) && (self.var_6f84b820 === #"basic" || self.var_6f84b820 === #"enhanced") && self.team === level.zombie_team) {
+    } else if (isalive(self) && (self.zm_ai_category === #"basic" || self.zm_ai_category === #"enhanced") && self.team === level.zombie_team) {
         var_5d66253 = 1;
     }
     if (var_5d66253) {

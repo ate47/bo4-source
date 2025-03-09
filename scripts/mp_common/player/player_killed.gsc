@@ -1249,7 +1249,7 @@ function private suicide(einflictor, attacker, smeansofdeath, weapon, shitloc) {
         self.suicide = 1;
     }
     if (isdefined(self.friendlydamage)) {
-        self iprintln(#"hash_7d1a0e5bd191fce");
+        self iprintln(#"mp/friendly_fire_will_not");
         if (level.teamkillpointloss) {
             scoresub = self [[ level.getteamkillscore ]](einflictor, attacker, smeansofdeath, weapon);
             globallogic_score::function_17a678b7(attacker, scoresub);
@@ -1787,7 +1787,7 @@ function function_a932bf9c() {
     reductionpersecond = 1 / timeperoneteamkillreduction;
     while (true) {
         if (isalive(self)) {
-            self.pers[#"teamkills_nostats"] = self.pers[#"teamkills_nostats"] - reductionpersecond;
+            self.pers[#"teamkills_nostats"] -= reductionpersecond;
             if (self.pers[#"teamkills_nostats"] < level.minimumallowedteamkills) {
                 self.pers[#"teamkills_nostats"] = level.minimumallowedteamkills;
                 break;

@@ -5,6 +5,6 @@
     "name": "medal_defused_bomb",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#ui_icon_medal_hero",
-    "stringref": "#hash_31ba844d2183dd82",
+    "stringref": "#medal/defused_bomb",
     "iconlarge": "#ui_icon_medal_hero_large"
 }

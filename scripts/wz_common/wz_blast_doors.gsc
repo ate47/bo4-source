@@ -17,7 +17,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace wz_blast_doors/wz_blast_doors
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xac584acb, Offset: 0x198
 // Size: 0x5b0
 function function_a2279366() {
@@ -25,7 +25,7 @@ function function_a2279366() {
     if (!level.var_3f2c54f) {
         blastdoorbuttons = getdynentarray("blastdoor_button");
         foreach (button in blastdoorbuttons) {
-            function_e2a06860(button, 1);
+            setdynentstate(button, 1);
         }
         item_world::function_1b11e73c();
         specialitems = function_91b29d2a("blast_doors_special_weapon");
@@ -35,7 +35,7 @@ function function_a2279366() {
         item_world::function_4de3ca98();
         blastdoorbuttons = getdynentarray("blastdoor_button");
         foreach (button in blastdoorbuttons) {
-            function_e2a06860(button, 1);
+            setdynentstate(button, 1);
         }
         supplystashes = getdynentarray("blast_doors_supply_stash");
         foreach (supplystash in supplystashes) {
@@ -72,7 +72,7 @@ function function_a2279366() {
 }
 
 // Namespace wz_blast_doors/wz_blast_doors
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x88c81d28, Offset: 0x750
 // Size: 0x1d0
 function function_cd4de84f(doors) {
@@ -97,7 +97,7 @@ function function_cd4de84f(doors) {
 }
 
 // Namespace wz_blast_doors/wz_blast_doors
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xcd66b5a, Offset: 0x928
 // Size: 0x2dc
 function function_ed401dbd(activator, laststate, state) {
@@ -107,7 +107,7 @@ function function_ed401dbd(activator, laststate, state) {
             currentstate = function_ffdbe8c2(self);
             waitframe(1);
             playsoundatposition(#"hash_3559ba9c4c9b08f", self.origin);
-            function_e2a06860(self, currentstate);
+            setdynentstate(self, currentstate);
             return;
         }
         foreach (dynent in var_fe1d375b) {
@@ -117,14 +117,14 @@ function function_ed401dbd(activator, laststate, state) {
         foreach (dynent in var_fe1d375b) {
             currentstate = function_ffdbe8c2(dynent);
             if (currentstate != state) {
-                function_e2a06860(dynent, state);
+                setdynentstate(dynent, state);
             }
         }
         var_c1ffc425 = getdynentarray("blastdoor_button");
         foreach (blast_door_button in var_c1ffc425) {
             var_73141fdc = function_ffdbe8c2(blast_door_button);
             if (var_73141fdc != state) {
-                function_e2a06860(blast_door_button, state);
+                setdynentstate(blast_door_button, state);
             }
         }
         activator stats::function_d40764f3(#"fracking_blast_doors_opened", 1);

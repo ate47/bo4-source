@@ -904,7 +904,7 @@ function function_a25e421c() {
                 }
             }
         }
-        self gadget_health_regen::function_7993d50e();
+        self gadget_health_regen::heal_end();
         self.health = self.spawnhealth;
         self ghost();
         self notsolid();
@@ -1199,7 +1199,7 @@ function function_f795bf83(insertion, vehicle, yaw) {
     self unlink();
     self setstance("stand");
     self function_648c1f6(vehicle, undefined, 0, 180, 180, 85, 85);
-    self gadget_health_regen::function_7993d50e();
+    self gadget_health_regen::heal_end();
     self.health = self.spawnhealth;
     self cameraactivate(1);
     self setclientthirdperson(1);

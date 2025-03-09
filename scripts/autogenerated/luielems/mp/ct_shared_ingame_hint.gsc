@@ -7,14 +7,14 @@
 // Method(s) 7 Total 14
 class cct_shared_ingame_hint : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cct_shared_ingame_hint/ct_shared_ingame_hint
     // Params 2, eflags: 0x0
     // Checksum 0x311f4293, Offset: 0x600
     // Size: 0x3c
     function set_ingamehint(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "inGameHint", value);
+        player clientfield::function_9bf78ef8(_uid, "inGameHint", value);
     }
 
     // Namespace cct_shared_ingame_hint/ct_shared_ingame_hint
@@ -23,43 +23,43 @@ class cct_shared_ingame_hint : cluielem {
     // Size: 0x2bc
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(_uid, "_state", 0);
             return;
         }
         if (#"fadeout" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(_uid, "_state", 1);
             return;
         }
         if (#"green" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 2);
+            player clientfield::function_9bf78ef8(_uid, "_state", 2);
             return;
         }
         if (#"grey" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 3);
+            player clientfield::function_9bf78ef8(_uid, "_state", 3);
             return;
         }
         if (#"red" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 4);
+            player clientfield::function_9bf78ef8(_uid, "_state", 4);
             return;
         }
         if (#"green_fadeout" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 5);
+            player clientfield::function_9bf78ef8(_uid, "_state", 5);
             return;
         }
         if (#"grey_fadeout" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 6);
+            player clientfield::function_9bf78ef8(_uid, "_state", 6);
             return;
         }
         if (#"red_fadeout" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 7);
+            player clientfield::function_9bf78ef8(_uid, "_state", 7);
             return;
         }
         if (#"red_paused" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 8);
+            player clientfield::function_9bf78ef8(_uid, "_state", 8);
             return;
         }
         if (#"hash_3d131b584420ca82" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 9);
+            player clientfield::function_9bf78ef8(_uid, "_state", 9);
             return;
         }
         assertmsg("<dev string:x38>");

@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_in_plain_sight/zm_bgb_in_plain_sight
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7b751cae, Offset: 0x130
 // Size: 0x174
 function __init__() {
@@ -45,7 +45,7 @@ function validation() {
 }
 
 // Namespace zm_bgb_in_plain_sight/zm_bgb_in_plain_sight
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb0bdac6c, Offset: 0x300
 // Size: 0x1ae
 function activation() {

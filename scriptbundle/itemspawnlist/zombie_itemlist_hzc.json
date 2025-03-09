@@ -21,14 +21,14 @@
         {
             "minweight": 10,
             "itementry": "tr_leveraction_t8_item",
-            "var_3f8c08e3": "ammo_type_762_double_item",
+            "childitementry_1": "ammo_type_762_double_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
             "itementry": "lmg_double_t8_item",
-            "var_3f8c08e3": "ammo_type_762_double_item",
+            "childitementry_1": "ammo_type_762_double_item",
             "maxweight": 10,
             "available": 1
         },
@@ -59,8 +59,8 @@
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 9,
-    "var_9b009839": -1,
+    "hash_345eba59": 9,
+    "hash_9b009839": -1,
     "name": "zombie_itemlist_hzc",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

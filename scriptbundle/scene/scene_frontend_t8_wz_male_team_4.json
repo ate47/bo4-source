@@ -16,8 +16,7 @@
             "type": "fakeplayer",
             "name": "specialist"
         },
-        {
-        }
+        {}
     ],
     "scenetype": "scene",
     "configstringfiletype": "scriptbundle",

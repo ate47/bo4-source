@@ -3,6 +3,6 @@
     "type": "gamesettings",
     "name": "scope_elo_smg_fastfire_restriction",
     "displayname": "#weapon/smg_fastfire_t8",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "itemRestrictions__smg_fastfire_t8__attachments__elo"
 }

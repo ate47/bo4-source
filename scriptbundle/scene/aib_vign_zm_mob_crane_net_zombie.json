@@ -20,17 +20,17 @@
                         }
                     ],
                     "damagethreshold": 0.1,
-                    "var_b3dddfd3": 1,
+                    "hash_b3dddfd3": 1,
                     "name": "death"
                 }
             ],
             "model": "#spawner_zm_zombie",
             "type": "actor",
-            "var_615b1f16": 1,
+            "usefakeactor": 1,
             "name": "zombie",
-            "var_873368a8": 200,
+            "hash_873368a8": 200,
             "aligntargettag": "tag_net_3",
-            "var_69aabff2": 1,
+            "hash_69aabff2": 1,
             "aligntarget": "docks_crane_link",
             "takedamage": 1
         }

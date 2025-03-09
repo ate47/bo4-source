@@ -1,0 +1,19 @@
+{
+    "name": "#straferun_gun_mp",
+    "baseWeapon": "#straferun_gun",
+    "displayname": "#killstreak/straferun",
+    "unk70": "#killstreak_straferun",
+    "streamkey": "#hash_d72dee5e7aa5e08",
+    "sound140": "#wpn_a10_shot_loop_npc",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#hash_1d94f39114c",
+    "fx_bd0": "#hash_164c32da69bb27cc",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "image_cb0": "#hash_f69fd7de2314b29a",
+    "image_e90": "#hash_a7ba3c44ae920c9d",
+    "fx_f00": "#hash_1bea15ef1bc566f7",
+    "underwaterExplosionSurfaceFX": [],
+    "var_2e4a8800": "#straferun_scoreevents"
+}

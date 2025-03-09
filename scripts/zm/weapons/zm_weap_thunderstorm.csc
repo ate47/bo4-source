@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3913ac70, Offset: 0x1a8
 // Size: 0x44a
 function __init__() {
@@ -40,7 +40,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7db25ea7, Offset: 0x600
 // Size: 0x38
 function __main__() {
@@ -50,7 +50,7 @@ function __main__() {
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x80bf38c7, Offset: 0x640
 // Size: 0x156
 function function_ab086ad8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -69,7 +69,7 @@ function function_ab086ad8(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf5375a65, Offset: 0x7a0
 // Size: 0x74
 function aoe_indicator_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -77,7 +77,7 @@ function aoe_indicator_fx(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x14077d6e, Offset: 0x820
 // Size: 0x10a
 function electric_storm_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -95,7 +95,7 @@ function electric_storm_fx(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf89a24e9, Offset: 0x938
 // Size: 0x74
 function function_acecb36a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -103,7 +103,7 @@ function function_acecb36a(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x32e5a7b8, Offset: 0x9b8
 // Size: 0x11c
 function function_6e837718(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -118,7 +118,7 @@ function function_6e837718(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x220ca976, Offset: 0xae0
 // Size: 0x1dc
 function function_46a56fe2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -148,7 +148,7 @@ function function_46a56fe2(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa1efa434, Offset: 0xcc8
 // Size: 0xac
 function function_5b4619(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

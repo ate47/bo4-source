@@ -23,7 +23,7 @@ function autoexec main() {
 #namespace gibserverutils;
 
 // Namespace gibserverutils/gib
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x8ec906ce, Offset: 0x270
 // Size: 0x30e
 function private function_3aa023f1(name, entity) {
@@ -68,7 +68,7 @@ function private function_3aa023f1(name, entity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xb507ccf3, Offset: 0x588
 // Size: 0x48
 function private function_69db754(name, gibflag, entity) {
@@ -77,7 +77,7 @@ function private function_69db754(name, gibflag, entity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x5f08b9a3, Offset: 0x5d8
 // Size: 0x2c
 function private _annihilate(entity) {
@@ -87,7 +87,7 @@ function private _annihilate(entity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x13b149e4, Offset: 0x610
 // Size: 0xc4
 function private _getgibextramodel(entity, gibflag) {
@@ -101,7 +101,7 @@ function private _getgibextramodel(entity, gibflag) {
 }
 
 // Namespace gibserverutils/gib
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x183b7a57, Offset: 0x6e0
 // Size: 0x68
 function private _gibextra(entity, gibflag) {
@@ -116,7 +116,7 @@ function private _gibextra(entity, gibflag) {
 }
 
 // Namespace gibserverutils/gib
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x3b9b43cb, Offset: 0x750
 // Size: 0x1f4
 function private _gibextrainternal(entity, gibflag) {
@@ -147,7 +147,7 @@ function private _gibextrainternal(entity, gibflag) {
 }
 
 // Namespace gibserverutils/gib
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xcb7ca5c0, Offset: 0x950
 // Size: 0x88
 function private _gibentity(entity, gibflag) {
@@ -162,7 +162,7 @@ function private _gibentity(entity, gibflag) {
 }
 
 // Namespace gibserverutils/gib
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xebff824e, Offset: 0x9e0
 // Size: 0x194
 function private _gibentityinternal(entity, gibflag) {
@@ -190,7 +190,7 @@ function private _gibentityinternal(entity, gibflag) {
 }
 
 // Namespace gibserverutils/gib
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc05bf64c, Offset: 0xb80
 // Size: 0x152
 function private _getgibbedlegmodel(entity) {
@@ -208,7 +208,7 @@ function private _getgibbedlegmodel(entity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x64085d49, Offset: 0xce0
 // Size: 0x2a
 function private _getgibbedstate(entity) {
@@ -219,7 +219,7 @@ function private _getgibbedstate(entity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xbad6f872, Offset: 0xd18
 // Size: 0x152
 function private _getgibbedtorsomodel(entity) {
@@ -237,7 +237,7 @@ function private _getgibbedtorsomodel(entity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x20954053, Offset: 0xe78
 // Size: 0x18
 function private _hasgibdef(entity) {
@@ -245,7 +245,7 @@ function private _hasgibdef(entity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xd1ebdf0, Offset: 0xe98
 // Size: 0xae
 function private _hasgibpieces(entity, gibflag) {
@@ -260,7 +260,7 @@ function private _hasgibpieces(entity, gibflag) {
 }
 
 // Namespace gibserverutils/gib
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xd96be9ce, Offset: 0xf50
 // Size: 0x124
 function private _setgibbed(entity, gibflag, gibdir) {
@@ -277,7 +277,7 @@ function private _setgibbed(entity, gibflag, gibdir) {
 }
 
 // Namespace gibserverutils/gib
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5b9e9c89, Offset: 0x1080
 // Size: 0xac
 function annihilate(entity) {
@@ -296,7 +296,7 @@ function annihilate(entity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2a3f61bf, Offset: 0x1138
 // Size: 0x64
 function copygibstate(originalentity, newentity) {
@@ -306,7 +306,7 @@ function copygibstate(originalentity, newentity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2fc1f586, Offset: 0x11a8
 // Size: 0x30
 function isgibbed(entity, gibflag) {
@@ -314,7 +314,7 @@ function isgibbed(entity, gibflag) {
 }
 
 // Namespace gibserverutils/gib
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfe0175f6, Offset: 0x11e0
 // Size: 0x22
 function gibhat(entity) {
@@ -322,7 +322,7 @@ function gibhat(entity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa43595dd, Offset: 0x1210
 // Size: 0x92
 function gibhead(entity) {
@@ -332,7 +332,7 @@ function gibhead(entity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc7069ca8, Offset: 0x12b0
 // Size: 0xb8
 function gibleftarm(entity) {
@@ -348,7 +348,7 @@ function gibleftarm(entity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaefc3a27, Offset: 0x1370
 // Size: 0xd0
 function gibrightarm(entity) {
@@ -365,7 +365,7 @@ function gibrightarm(entity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdc8b3253, Offset: 0x1448
 // Size: 0x98
 function gibleftleg(entity) {
@@ -378,7 +378,7 @@ function gibleftleg(entity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xba21ea7a, Offset: 0x14e8
 // Size: 0x98
 function gibrightleg(entity) {
@@ -391,7 +391,7 @@ function gibrightleg(entity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x90ae34a7, Offset: 0x1588
 // Size: 0xb0
 function giblegs(entity) {
@@ -512,7 +512,7 @@ function event_handler[player_gibbothlegsvel] playergiblegsvel(entitystruct) {
 }
 
 // Namespace gibserverutils/gib
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2e092198, Offset: 0x1a28
 // Size: 0x170
 function reapplyhiddengibpieces(entity) {
@@ -536,7 +536,7 @@ function reapplyhiddengibpieces(entity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4193165a, Offset: 0x1ba0
 // Size: 0x118
 function showhiddengibpieces(entity) {
@@ -555,7 +555,7 @@ function showhiddengibpieces(entity) {
 }
 
 // Namespace gibserverutils/gib
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x853fd1c6, Offset: 0x1cc0
 // Size: 0x94
 function togglespawngibs(entity, shouldspawngibs) {

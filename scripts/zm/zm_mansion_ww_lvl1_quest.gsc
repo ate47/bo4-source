@@ -23,7 +23,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x218
 // Size: 0x4
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9237d419, Offset: 0x228
 // Size: 0x8c
 function __main__() {
@@ -46,7 +46,7 @@ function __main__() {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x38523e2e, Offset: 0x2c0
 // Size: 0x1fc
 function function_716f2019() {
@@ -68,7 +68,7 @@ function function_716f2019() {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf9a31fd, Offset: 0x4c8
 // Size: 0x5c
 function function_5d870c2c() {
@@ -77,7 +77,7 @@ function function_5d870c2c() {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfca42825, Offset: 0x530
 // Size: 0x4c
 function function_20d38ac0(a_ents) {
@@ -88,7 +88,7 @@ function function_20d38ac0(a_ents) {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x26cd0cbe, Offset: 0x588
 // Size: 0x244
 function function_53e45f4e() {
@@ -113,7 +113,7 @@ function function_53e45f4e() {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa2084780, Offset: 0x7d8
 // Size: 0x15e
 function init_case_locks() {
@@ -131,7 +131,7 @@ function init_case_locks() {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf0faaa95, Offset: 0x940
 // Size: 0x208
 function function_7706457d(e_player) {
@@ -154,7 +154,7 @@ function function_7706457d(e_player) {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8f5c2df7, Offset: 0xb50
 // Size: 0x1cc
 function function_7310e1e0() {
@@ -177,7 +177,7 @@ function function_7310e1e0() {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc6f046de, Offset: 0xd28
 // Size: 0xc6
 function lock_rotate() {
@@ -192,7 +192,7 @@ function lock_rotate() {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xc48f6e2, Offset: 0xdf8
 // Size: 0xac
 function function_8b4cc6ae(origin, arc_angle_degrees = 90, do_trace, e_ignore) {
@@ -205,7 +205,7 @@ function function_8b4cc6ae(origin, arc_angle_degrees = 90, do_trace, e_ignore) {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x958d9aaf, Offset: 0xeb0
 // Size: 0x1bc
 function function_2325482e() {
@@ -226,7 +226,7 @@ function function_2325482e() {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe204b7e4, Offset: 0x1078
 // Size: 0xc6
 function function_7e7626b5() {
@@ -244,7 +244,7 @@ function function_7e7626b5() {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xac6263f1, Offset: 0x1148
 // Size: 0xc2
 function function_9ffdf1be(e_player) {
@@ -259,7 +259,7 @@ function function_9ffdf1be(e_player) {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8504bc93, Offset: 0x1218
 // Size: 0xe0
 function function_f4f7650b() {
@@ -276,7 +276,7 @@ function function_f4f7650b() {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6c99b0b, Offset: 0x1300
 // Size: 0x1b4
 function init_lock() {
@@ -306,7 +306,7 @@ function init_lock() {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe522fcf1, Offset: 0x14c0
 // Size: 0xee
 function scramble_lock(n_random_start) {
@@ -322,7 +322,7 @@ function scramble_lock(n_random_start) {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x486ca92b, Offset: 0x15b8
 // Size: 0x120
 function function_175e4696(var_1e30344b) {
@@ -345,7 +345,7 @@ function function_175e4696(var_1e30344b) {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7b0878e4, Offset: 0x16e0
 // Size: 0x1c8
 function function_8476e19() {
@@ -366,7 +366,7 @@ function function_8476e19() {
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x11c8218f, Offset: 0x18b0
 // Size: 0x12c
 function function_4e833729() {

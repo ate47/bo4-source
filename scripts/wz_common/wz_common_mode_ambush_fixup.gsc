@@ -12,7 +12,7 @@ function autoexec __init__() {
 }
 
 // Namespace wz_common_mode_ambush_fixup/wz_common_mode_ambush_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3d7bdd5, Offset: 0xe0
 // Size: 0x10ac
 function function_62cd02cc() {

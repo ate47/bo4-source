@@ -34,7 +34,7 @@ function power_is_hero_ability(gadget) {
 }
 
 // Namespace ability_power/ability_power
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x53372255, Offset: 0x210
 // Size: 0x4a
 function function_9d78823f(gadget, weapon) {
@@ -45,7 +45,7 @@ function function_9d78823f(gadget, weapon) {
 }
 
 // Namespace ability_power/ability_power
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xce767c7b, Offset: 0x268
 // Size: 0x5a
 function is_weapon_or_variant_same_as_gadget(weapon, gadget) {
@@ -61,7 +61,7 @@ function is_weapon_or_variant_same_as_gadget(weapon, gadget) {
 }
 
 // Namespace ability_power/ability_power
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x3ef1d7a5, Offset: 0x2d0
 // Size: 0x386
 function power_gain_event_score(event, eattacker, score, weapon) {
@@ -153,7 +153,7 @@ function power_gain_event_killed_actor(eattacker, meansofdeath) {
 }
 
 // Namespace ability_power/ability_power
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x3d1a1e0a, Offset: 0x7d8
 // Size: 0x18c
 function power_gain_event(slot, eattacker, val, source) {
@@ -173,7 +173,7 @@ function power_gain_event(slot, eattacker, val, source) {
         }
         powerleft = self gadgetpowerchange(slot, powertoadd);
         if (0 < powertoadd) {
-            self.var_aec4af05[slot] = self.var_aec4af05[slot] + powertoadd;
+            self.var_aec4af05[slot] += powertoadd;
         }
         /#
             self cpower_print(slot, "<dev string:x5c>" + powertoadd + "<dev string:x68>" + source + "<dev string:x75>" + powerleft);
@@ -182,7 +182,7 @@ function power_gain_event(slot, eattacker, val, source) {
 }
 
 // Namespace ability_power/ability_power
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xe393b7b9, Offset: 0x970
 // Size: 0x17e
 function power_loss_event_took_damage(eattacker, einflictor, weapon, smeansofdeath, idamage) {
@@ -211,7 +211,7 @@ function power_loss_event_took_damage(eattacker, einflictor, weapon, smeansofdea
 }
 
 // Namespace ability_power/ability_power
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xa1b523f4, Offset: 0xaf8
 // Size: 0xcc
 function power_loss_event(slot, eattacker, val, source) {
@@ -234,7 +234,7 @@ function power_drain_completely(slot) {
 }
 
 // Namespace ability_power/ability_power
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb2d93029, Offset: 0xc28
 // Size: 0x6e
 function ismovingpowerloss() {
@@ -244,7 +244,7 @@ function ismovingpowerloss() {
 }
 
 // Namespace ability_power/ability_power
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd40bb2cb, Offset: 0xca0
 // Size: 0x240
 function power_consume_timer_think(slot, weapon) {

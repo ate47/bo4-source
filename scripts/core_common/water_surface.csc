@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace water_surface/water_surface
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf84ab761, Offset: 0x100
 // Size: 0xac
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace water_surface/water_surface
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x84dd99f5, Offset: 0x1b8
 // Size: 0xdc
 function localplayer_spawned(localclientnum) {
@@ -46,7 +46,7 @@ function localplayer_spawned(localclientnum) {
 }
 
 // Namespace water_surface/water_surface
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc0e7b56d, Offset: 0x2a0
 // Size: 0xf0
 function underwaterwatchbegin() {
@@ -67,7 +67,7 @@ function underwaterwatchbegin() {
 }
 
 // Namespace water_surface/water_surface
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3fd92440, Offset: 0x398
 // Size: 0xf0
 function underwaterwatchend() {
@@ -88,7 +88,7 @@ function underwaterwatchend() {
 }
 
 // Namespace water_surface/water_surface
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb198176, Offset: 0x490
 // Size: 0x12c
 function underwaterbegin() {
@@ -107,7 +107,7 @@ function underwaterbegin() {
 }
 
 // Namespace water_surface/water_surface
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x22a0e157, Offset: 0x5c8
 // Size: 0xbc
 function underwaterend() {
@@ -131,23 +131,29 @@ function startwaterdive() {
     filter::set_filter_water_scuba_dive_speed(self, 1, 0.25);
     filter::set_filter_water_wash_color(self, 1, 0.16, 0.5, 0.9);
     filter::set_filter_water_wash_reveal_dir(self, 1, -1);
-    for (i = 0; i < 0.05; i += 0.01) {
+    i = 0;
+    while (i < 0.05) {
         filter::set_filter_water_dive_bubbles(self, 1, i / 0.05);
         wait 0.01;
+        i += 0.01;
     }
     filter::set_filter_water_dive_bubbles(self, 1, 1);
     filter::set_filter_water_scuba_bubble_attitude(self, 1, -1);
     filter::set_filter_water_scuba_bubbles(self, 1, 1);
     filter::set_filter_water_wash_reveal_dir(self, 1, 1);
-    for (i = 0.2; i > 0; i -= 0.01) {
+    i = 0.2;
+    while (i > 0) {
         filter::set_filter_water_dive_bubbles(self, 1, i / 0.2);
         wait 0.01;
+        i -= 0.01;
     }
     filter::set_filter_water_dive_bubbles(self, 1, 0);
     wait 0.1;
-    for (i = 0.2; i > 0; i -= 0.01) {
+    i = 0.2;
+    while (i > 0) {
         filter::set_filter_water_scuba_bubbles(self, 1, i / 0.2);
         wait 0.01;
+        i -= 0.01;
     }
 }
 
@@ -162,7 +168,8 @@ function startwatersheeting() {
     filter::enable_filter_water_sheeting(self, 1);
     filter::set_filter_water_sheet_reveal(self, 1, 1);
     filter::set_filter_water_sheet_speed(self, 1, 1);
-    for (i = 2; i > 0; i -= 0.01) {
+    i = 2;
+    while (i > 0) {
         filter::set_filter_water_sheet_reveal(self, 1, i / 2);
         filter::set_filter_water_sheet_speed(self, 1, i / 2);
         rivulet1 = i / 2 - 0.19;
@@ -170,6 +177,7 @@ function startwatersheeting() {
         rivulet3 = i / 2 - 0.07;
         filter::set_filter_water_sheet_rivulet_reveal(self, 1, rivulet1, rivulet2, rivulet3);
         wait 0.01;
+        i -= 0.01;
     }
     filter::set_filter_water_sheet_reveal(self, 1, 0);
     filter::set_filter_water_sheet_speed(self, 1, 0);
@@ -177,7 +185,7 @@ function startwatersheeting() {
 }
 
 // Namespace water_surface/water_surface
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8fdcaa2a, Offset: 0xae0
 // Size: 0xb6
 function stop_player_fx(localclient) {

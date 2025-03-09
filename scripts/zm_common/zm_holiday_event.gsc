@@ -23,7 +23,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x56be0873, Offset: 0x188
 // Size: 0xc4
 function __init__() {
@@ -35,7 +35,7 @@ function __init__() {
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8094419b, Offset: 0x258
 // Size: 0x1ac
 function __main__() {
@@ -58,7 +58,7 @@ function __main__() {
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x31934452, Offset: 0x410
 // Size: 0x6a
 function function_e95f47c2() {
@@ -72,7 +72,7 @@ function function_e95f47c2() {
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa32a1f98, Offset: 0x488
 // Size: 0xcc
 function function_da29ac13() {
@@ -84,7 +84,7 @@ function function_da29ac13() {
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe5ff85bb, Offset: 0x560
 // Size: 0x132
 function function_e12bc077() {
@@ -106,7 +106,7 @@ function function_e12bc077() {
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x85befd5c, Offset: 0x6a0
 // Size: 0x10e
 function function_cfe06357(attacker) {
@@ -128,7 +128,7 @@ function function_cfe06357(attacker) {
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8f5ba084, Offset: 0x7b8
 // Size: 0x10c
 function function_a33a15c() {
@@ -152,7 +152,7 @@ function function_a33a15c() {
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x92f66b07, Offset: 0x8d0
 // Size: 0x40c
 function function_23287dd() {
@@ -205,7 +205,7 @@ function function_23287dd() {
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x69d76420, Offset: 0xce8
 // Size: 0xfc
 function function_1443aaa(b_success = 0) {
@@ -227,7 +227,7 @@ function function_1443aaa(b_success = 0) {
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb0d11d83, Offset: 0xdf0
 // Size: 0x144
 function function_ded808d5() {
@@ -245,7 +245,7 @@ function function_ded808d5() {
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x164b564b, Offset: 0xf40
 // Size: 0x15c
 function function_4634a866() {
@@ -266,7 +266,7 @@ function function_4634a866() {
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7a0d0d86, Offset: 0x10a8
 // Size: 0xe8
 function function_efe5c28() {
@@ -283,7 +283,7 @@ function function_efe5c28() {
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb3fdd68f, Offset: 0x1198
 // Size: 0xc6
 function function_55f8e11e(e_box) {

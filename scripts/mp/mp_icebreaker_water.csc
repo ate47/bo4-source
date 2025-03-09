@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace mp_icebreaker_water/mp_icebreaker_water
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x96523a35, Offset: 0x130
 // Size: 0x6c
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace mp_icebreaker_water/mp_icebreaker_water
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3ee3c98a, Offset: 0x1a8
 // Size: 0x7c
 function on_player_spawned(localclientnum) {
@@ -38,7 +38,7 @@ function on_player_spawned(localclientnum) {
 }
 
 // Namespace mp_icebreaker_water/mp_icebreaker_water
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8da5f46f, Offset: 0x230
 // Size: 0x2c6
 function toggle_player_freezing_water(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

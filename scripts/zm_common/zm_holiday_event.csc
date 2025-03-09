@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf4ae1a00, Offset: 0x110
 // Size: 0xd4
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc990b76d, Offset: 0x1f0
 // Size: 0x8c
 function function_b245ef9e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -37,7 +37,7 @@ function function_b245ef9e(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x50b2d231, Offset: 0x288
 // Size: 0x146
 function function_9a20c93e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

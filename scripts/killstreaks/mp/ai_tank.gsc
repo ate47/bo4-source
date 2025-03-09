@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace ai_tank/ai_tank
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdbafeea9, Offset: 0x198
 // Size: 0xbe
 function __init__() {
@@ -35,7 +35,7 @@ function __init__() {
 }
 
 // Namespace ai_tank/ai_tank
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe89c0f9f, Offset: 0x260
 // Size: 0xc4
 function function_c44c9bde(drone) {
@@ -47,7 +47,7 @@ function function_c44c9bde(drone) {
 }
 
 // Namespace ai_tank/ai_tank
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x27f76b20, Offset: 0x330
 // Size: 0x34
 function ontimecheck() {
@@ -55,7 +55,7 @@ function ontimecheck() {
 }
 
 // Namespace ai_tank/ai_tank
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x25f8c27f, Offset: 0x370
 // Size: 0x74
 function function_577150fd(drone) {
@@ -67,7 +67,7 @@ function function_577150fd(drone) {
 }
 
 // Namespace ai_tank/ai_tank
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcec85317, Offset: 0x3f0
 // Size: 0x3c
 function function_dd1ad60e(drone) {
@@ -78,7 +78,7 @@ function function_dd1ad60e(drone) {
 }
 
 // Namespace ai_tank/ai_tank
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5f8e1a8d, Offset: 0x438
 // Size: 0x22
 function function_103d8f6(killstreaktype) {
@@ -86,7 +86,7 @@ function function_103d8f6(killstreaktype) {
 }
 
 // Namespace ai_tank/ai_tank
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xd6dffc87, Offset: 0x468
 // Size: 0x88
 function function_23e43434(killstreak_id, context, team) {
@@ -100,7 +100,7 @@ function function_23e43434(killstreak_id, context, team) {
 }
 
 // Namespace ai_tank/ai_tank
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x170d08f9, Offset: 0x4f8
 // Size: 0xf2
 function function_1e11d939(attacker, weapon) {
@@ -124,7 +124,7 @@ function function_1e11d939(attacker, weapon) {
 }
 
 // Namespace ai_tank/ai_tank
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3be19fb1, Offset: 0x5f8
 // Size: 0x1e
 function function_47a8e7a8() {
@@ -134,7 +134,7 @@ function function_47a8e7a8() {
 }
 
 // Namespace ai_tank/ai_tank
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe4f7924a, Offset: 0x620
 // Size: 0x10c
 function function_22528515() {

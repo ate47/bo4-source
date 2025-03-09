@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace mp_austria_scripted/mp_austria_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcf84f9a0, Offset: 0x140
 // Size: 0xc2
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace mp_austria_scripted/mp_austria_scripted
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1254edd2, Offset: 0x210
 // Size: 0x6c
 function flip_skybox(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -33,21 +33,21 @@ function flip_skybox(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 }
 
 // Namespace mp_austria_scripted/mp_austria_scripted
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd3e3bb25, Offset: 0x288
 // Size: 0x12a
 function zombie_eyes_clientfield_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    if (isdefined(self.var_ea20345f)) {
-        self stoprenderoverridebundle(self.var_ea20345f, "j_head");
+    if (isdefined(self.eye_rob)) {
+        self stoprenderoverridebundle(self.eye_rob, "j_head");
     }
     if (isdefined(self.var_3231a850)) {
         stopfx(localclientnum, self.var_3231a850);
         self.var_3231a850 = undefined;
     }
     if (newval) {
-        self.var_ea20345f = "rob_zm_eyes_red";
+        self.eye_rob = "rob_zm_eyes_red";
         var_d40cd873 = "eye_glow";
-        self playrenderoverridebundle(self.var_ea20345f, "j_head");
+        self playrenderoverridebundle(self.eye_rob, "j_head");
         self.var_3231a850 = util::playfxontag(localclientnum, level._effect[#"hash_61fce653578d7f82"], self, "j_eyeball_le");
     }
 }

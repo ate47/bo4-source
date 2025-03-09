@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdda56cb9, Offset: 0x180
 // Size: 0x5d6
 function __init__() {
@@ -45,7 +45,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x90f235ce, Offset: 0x760
 // Size: 0x5c
 function function_37d03e44(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -53,7 +53,7 @@ function function_37d03e44(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x802a1cdc, Offset: 0x7c8
 // Size: 0x104
 function lightning_bolt_fx(localclientnum, owner, position) {
@@ -69,7 +69,7 @@ function lightning_bolt_fx(localclientnum, owner, position) {
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb9a0fa1a, Offset: 0x8d8
 // Size: 0x84
 function function_e6845153(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -77,7 +77,7 @@ function function_e6845153(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd0f0a564, Offset: 0x968
 // Size: 0x1a6
 function hammer_storm(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -105,7 +105,7 @@ function hammer_storm(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9dde111c, Offset: 0xb18
 // Size: 0x78
 function function_9f78a957(localclientnum) {
@@ -118,7 +118,7 @@ function function_9f78a957(localclientnum) {
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb423c8e5, Offset: 0xb98
 // Size: 0xfc
 function function_54b0b1b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -133,7 +133,7 @@ function function_54b0b1b(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe9b0de5a, Offset: 0xca0
 // Size: 0xfe
 function function_93d275f2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -151,7 +151,7 @@ function function_93d275f2(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x25aeacb4, Offset: 0xda8
 // Size: 0x250
 function private function_7dac3bb6(localclientnum) {
@@ -184,7 +184,7 @@ function private function_7dac3bb6(localclientnum) {
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe4b76de3, Offset: 0x1000
 // Size: 0x96
 function function_311f3501(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -197,7 +197,7 @@ function function_311f3501(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x5a12475c, Offset: 0x10a0
 // Size: 0x96
 function private function_85050f7f(localclientnum) {
@@ -213,7 +213,7 @@ function private function_85050f7f(localclientnum) {
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x2b5953fd, Offset: 0x1140
 // Size: 0x8c
 function private function_6765f5b4(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -223,7 +223,7 @@ function private function_6765f5b4(localclientnum, oldvalue, newvalue, bnewent, 
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x35af8a06, Offset: 0x11d8
 // Size: 0x106
 function function_cd968d6(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -241,7 +241,7 @@ function function_cd968d6(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x45fec1a4, Offset: 0x12e8
 // Size: 0x8a
 function hammer_rumble(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {

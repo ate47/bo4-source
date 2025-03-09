@@ -33,11 +33,11 @@ function __init__() {
     level.var_76fc612e = 50;
     level.var_e147d7b8 = isdefined(getgametypesetting(#"wzaizones")) ? getgametypesetting(#"wzaizones") : 1;
     level.var_cca518d = isdefined(getgametypesetting(#"wzzombies")) ? getgametypesetting(#"wzzombies") : 1;
-    level.var_d33a57a = isdefined(getgametypesetting(#"wzblightfather")) ? getgametypesetting(#"wzblightfather") : 0;
-    level.var_b6e30614 = isdefined(getgametypesetting(#"wzhellhounds")) ? getgametypesetting(#"wzhellhounds") : 0;
-    level.var_6b59ac2c = isdefined(getgametypesetting(#"wzbrutus")) ? getgametypesetting(#"wzbrutus") : 0;
+    level.warzoneblightfatherenabled = isdefined(getgametypesetting(#"wzblightfather")) ? getgametypesetting(#"wzblightfather") : 0;
+    level.warzonehellhoundenabled = isdefined(getgametypesetting(#"wzhellhounds")) ? getgametypesetting(#"wzhellhounds") : 0;
+    level.warzonebrutusenabled = isdefined(getgametypesetting(#"wzbrutus")) ? getgametypesetting(#"wzbrutus") : 0;
     level.var_4f7f5c18 = isdefined(getgametypesetting(#"wzbrutuslarge")) ? getgametypesetting(#"wzbrutuslarge") : 0;
-    level.var_9196aafd = isdefined(getgametypesetting(#"wzavogadro")) ? getgametypesetting(#"wzavogadro") : 0;
+    level.warzoneavogadroenabled = isdefined(getgametypesetting(#"wzavogadro")) ? getgametypesetting(#"wzavogadro") : 0;
     level.warzonespawnspecial = isdefined(getgametypesetting(#"wzspawnspecial")) ? getgametypesetting(#"wzspawnspecial") : 0;
     level.warzoneblightfatherseverywhere = isdefined(getgametypesetting(#"wzblightfatherseverywhere")) ? getgametypesetting(#"wzblightfatherseverywhere") : 0;
     level.warzonehellhoundseverywhere = isdefined(getgametypesetting(#"wzhellhoundseverywhere")) ? getgametypesetting(#"wzhellhoundseverywhere") : 0;
@@ -64,7 +64,7 @@ function __init__() {
         }
     }
     level.var_d06e67bc = isdefined(getgametypesetting(#"wzzonerandom")) ? getgametypesetting(#"wzzonerandom") : 0;
-    level.var_3622eea1 = isdefined(getgametypesetting(#"wzzoneindex")) ? getgametypesetting(#"wzzoneindex") : 0;
+    level.warzonezoneindex = isdefined(getgametypesetting(#"wzzoneindex")) ? getgametypesetting(#"wzzoneindex") : 0;
     level.var_b4143320 = isdefined(getgametypesetting(#"hash_234ae2f2ff58263f")) ? getgametypesetting(#"hash_234ae2f2ff58263f") : 0;
     level.var_acfc1745 = isdefined(getgametypesetting(#"hash_622b18585020f430")) ? getgametypesetting(#"hash_622b18585020f430") : 3;
     level.var_1b2f5c9d = isdefined(getgametypesetting(#"hash_3d9a364d54750dca")) ? getgametypesetting(#"hash_3d9a364d54750dca") : 3;
@@ -659,7 +659,7 @@ function function_4e0be090(ai_zone) {
             ai_zone.var_484efd06 delete();
         }
         item_world::function_8eee98dd(stash);
-        function_e2a06860(stash, 1);
+        setdynentstate(stash, 1);
         if (isdefined(ai_zone.var_3d72175) && ai_zone.var_3d72175 == stash) {
             ai_zone.minimap playsound(#"hash_549138b690b81b8c");
         }
@@ -1013,10 +1013,10 @@ function function_a2ac506b(zone_name, spawner_type, var_800d413a) {
     if (!level.var_cca518d && var_800d413a == #"hash_618248fca82d83a6") {
         return;
     }
-    if (!level.var_d33a57a && var_800d413a == #"spawner_wz_blight_father") {
+    if (!level.warzoneblightfatherenabled && var_800d413a == #"spawner_wz_blight_father") {
         return;
     }
-    if (!level.var_b6e30614 && var_800d413a == #"spawner_boct_zombie_dog_wz") {
+    if (!level.warzonehellhoundenabled && var_800d413a == #"spawner_boct_zombie_dog_wz") {
         return;
     }
     var_a59ba023 = function_aacb2027(zone_name, spawner_type);
@@ -1109,10 +1109,10 @@ function function_5f0d105a(zone_category, zone_name, spawner_type, var_aeae9f59,
     if (!level.var_cca518d && spawner_type == #"hash_618248fca82d83a6") {
         return;
     }
-    if (!level.var_d33a57a && spawner_type == #"spawner_wz_blight_father") {
+    if (!level.warzoneblightfatherenabled && spawner_type == #"spawner_wz_blight_father") {
         return;
     }
-    if (!level.var_b6e30614 && spawner_type == #"spawner_boct_zombie_dog_wz") {
+    if (!level.warzonehellhoundenabled && spawner_type == #"spawner_boct_zombie_dog_wz") {
         return;
     }
     if (isdefined(level.var_6df0d3b6) && ![[ level.var_6df0d3b6 ]](zone_name)) {

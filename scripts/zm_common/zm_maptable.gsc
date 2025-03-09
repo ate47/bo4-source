@@ -3,7 +3,7 @@
 #namespace zm_maptable;
 
 // Namespace zm_maptable/zm_maptable
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x780a1913, Offset: 0x70
 // Size: 0x14e
 function function_10672567() {
@@ -36,7 +36,7 @@ function function_10672567() {
 }
 
 // Namespace zm_maptable/zm_maptable
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x53a2df7b, Offset: 0x1c8
 // Size: 0x5a
 function get_cast() {
@@ -49,7 +49,7 @@ function get_cast() {
 }
 
 // Namespace zm_maptable/zm_maptable
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x69742274, Offset: 0x230
 // Size: 0x42
 function get_story() {

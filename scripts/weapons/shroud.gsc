@@ -23,7 +23,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace shroud/shroud
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x23110648, Offset: 0x218
 // Size: 0x1f4
 function init_shared() {
@@ -45,7 +45,7 @@ function init_shared() {
 }
 
 // Namespace shroud/shroud
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2b32c619, Offset: 0x418
 // Size: 0x70
 function function_1c601b99() {
@@ -58,7 +58,7 @@ function function_1c601b99() {
 }
 
 // Namespace shroud/shroud
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3125721, Offset: 0x490
 // Size: 0x284
 function function_bff5c062(shroud, attackingplayer) {
@@ -94,7 +94,7 @@ function function_bff5c062(shroud, attackingplayer) {
 }
 
 // Namespace shroud/shroud
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x130163c0, Offset: 0x720
 // Size: 0x64
 function register() {
@@ -103,7 +103,7 @@ function register() {
 }
 
 // Namespace shroud/shroud
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbc94152, Offset: 0x790
 // Size: 0x6c
 function on_player_spawned() {
@@ -114,7 +114,7 @@ function on_player_spawned() {
 }
 
 // Namespace shroud/shroud
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xed8cce08, Offset: 0x808
 // Size: 0x236
 function function_75f9989a(attacker, victim, weapon, attackerweapon, meansofdeath) {
@@ -141,7 +141,7 @@ function function_75f9989a(attacker, victim, weapon, attackerweapon, meansofdeat
 }
 
 // Namespace shroud/shroud
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa3ea24d7, Offset: 0xa48
 // Size: 0x200
 function function_a86d28fc(attacker, victim) {
@@ -176,7 +176,7 @@ function function_a86d28fc(attacker, victim) {
 }
 
 // Namespace shroud/shroud
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb8eb0ead, Offset: 0xc50
 // Size: 0x116
 function function_2fb567f2(watcher) {
@@ -196,7 +196,7 @@ function function_2fb567f2(watcher) {
 }
 
 // Namespace shroud/shroud
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x95a86e14, Offset: 0xd70
 // Size: 0x24
 function function_95c69960(player) {
@@ -204,7 +204,7 @@ function function_95c69960(player) {
 }
 
 // Namespace shroud/shroud
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x56ad7a82, Offset: 0xda0
 // Size: 0x400
 function function_f4970a20(watcher, player) {
@@ -253,7 +253,7 @@ function function_f4970a20(watcher, player) {
 }
 
 // Namespace shroud/shroud
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x32b0292f, Offset: 0x11a8
 // Size: 0xec
 function private function_6852f0e1() {
@@ -272,7 +272,7 @@ function private function_6852f0e1() {
 }
 
 // Namespace shroud/shroud
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xab5d18ef, Offset: 0x12a0
 // Size: 0x2a
 function function_aa8bb7be() {
@@ -281,7 +281,7 @@ function function_aa8bb7be() {
 }
 
 // Namespace shroud/shroud
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x37b48593, Offset: 0x12d8
 // Size: 0x15c
 function function_c142e8ec(attacker, callback_data) {
@@ -302,7 +302,7 @@ function function_c142e8ec(attacker, callback_data) {
 }
 
 // Namespace shroud/shroud
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x789b81d7, Offset: 0x1440
 // Size: 0x1c
 function function_4db10465() {
@@ -310,7 +310,7 @@ function function_4db10465() {
 }
 
 // Namespace shroud/shroud
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xbb021b7d, Offset: 0x1468
 // Size: 0x204
 function function_4b3bc61d(attacker, weapon, target) {
@@ -325,7 +325,7 @@ function function_4b3bc61d(attacker, weapon, target) {
         attacker challenges::destroyedequipment(weapon);
         self.owner globallogic_score::function_5829abe3(attacker, weapon, self.weapon);
     }
-    if (function_3238d10d(self.origin)) {
+    if (validateorigin(self.origin)) {
         playsoundatposition(#"hash_330c9380b91a673", self.origin);
     }
     if (isdefined(level.var_d2600afc)) {
@@ -336,7 +336,7 @@ function function_4b3bc61d(attacker, weapon, target) {
 }
 
 // Namespace shroud/shroud
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb42aed79, Offset: 0x1678
 // Size: 0x38e
 function function_55de888f(watcher) {

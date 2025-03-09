@@ -12,7 +12,7 @@ function set_forward_and_up_vectors() {
 }
 
 // Namespace fx/fx_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2874a5b6, Offset: 0x138
 // Size: 0x36
 function get(fx) {
@@ -23,7 +23,7 @@ function get(fx) {
 }
 
 // Namespace fx/fx_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbaf8d44f, Offset: 0x178
 // Size: 0x15e
 function create_effect(type, fxid) {
@@ -70,7 +70,7 @@ function create_oneshot_effect(fxid) {
 }
 
 // Namespace fx/fx_shared
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x8a9391ba, Offset: 0x3a0
 // Size: 0x27c
 function play(str_fx, v_origin = (0, 0, 0), v_angles = (0, 0, 0), time_to_delete_or_notify, b_link_to_self = 0, str_tag, b_no_cull, b_ignore_pause_world) {
@@ -99,7 +99,7 @@ function play(str_fx, v_origin = (0, 0, 0), v_angles = (0, 0, 0), time_to_delete
 }
 
 // Namespace fx/fx_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x222182dc, Offset: 0x628
 // Size: 0xdc
 function _play_fx_delete(ent, time_to_delete_or_notify = -1) {

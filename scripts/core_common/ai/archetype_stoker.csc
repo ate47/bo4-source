@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace archetype_stoker/archetype_stoker
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd158b9c9, Offset: 0xf0
 // Size: 0x64
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace archetype_stoker/archetype_stoker
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xe7e439e5, Offset: 0x160
 // Size: 0x1bc
 function function_7188417c(localclientnum, pos, surface, notetrack, bone) {
@@ -55,7 +55,7 @@ function function_7188417c(localclientnum, pos, surface, notetrack, bone) {
 }
 
 // Namespace archetype_stoker/archetype_stoker
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcaa01b7b, Offset: 0x328
 // Size: 0x2c
 function private function_580b77a2(localclientnum) {

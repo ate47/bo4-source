@@ -493,7 +493,7 @@ version 125 {
     };
 
     // idx 29 members 5 size 0xb0
-    struct hash_7f7a5814a86a5885 {
+    struct killstreakevent {
         // offset 0x0, size 0x60
         int event_pos[3];
         // offset 0x60, size 0x20
@@ -671,7 +671,7 @@ version 125 {
         // offset 0xdc0, size 0x20
         float totaldistancetravelled;
         // offset 0xde0, size 0x998
-        byte score_events[hash_3f0bbc4ce2f2cf1c];
+        byte score_events[scoreevents_e];
         // offset 0x1778, size 0x40
         uint64 hash_35e13b49beac01b0;
         // offset 0x17b8, size 0x20
@@ -923,7 +923,7 @@ version 125 {
         // offset 0x150, size 0x10
         uint:16 victimtimespentswimmingdeciseconds;
         // offset 0x160, size 0x20
-        uint hash_2031532f95082529;
+        uint xp_earned;
         // offset 0x180, size 0x10
         uint:16 victimtimespentwallrunningdeciseconds;
         // offset 0x190, size 0x60
@@ -1256,7 +1256,7 @@ version 125 {
     };
 
     // idx 7 members 307
-    enum hash_3f0bbc4ce2f2cf1c {
+    enum scoreevents_e {
         counter_uav_assist, // 0x0,
         assist_flash, // 0x1,
         optic_camo_kill, // 0x2,
@@ -1310,13 +1310,13 @@ version 125 {
         hash_170fea11fe7de6e7, // 0x32,
         dom_point_secured, // 0x33,
         hash_17edb6b68a001f59, // 0x34,
-        hash_1846a930be3dfc4b, // 0x35,
+        armblades_kill, // 0x35,
         flag_carrier_kill_return_close, // 0x36,
         kill_enemy_with_their_weapon, // 0x37,
-        hash_1a4ddc0a7abb42c2, // 0x38,
+        raps_kill, // 0x38,
         hash_1acd9e99eabf5080, // 0x39,
         completed_match, // 0x3a,
-        hash_1b2898c0a3f4e7c1, // 0x3b,
+        killed_dog, // 0x3b,
         downed_player, // 0x3c,
         killstreak_8, // 0x3d,
         killstreak_9, // 0x3e,
@@ -1349,7 +1349,7 @@ version 125 {
         kill_enemy_that_is_using_optic_camo, // 0x59,
         lightninggun_multikill, // 0x5a,
         kill_sd, // 0x5b,
-        hash_2bda45b4f5d8b4fa, // 0x5c,
+        sentinel_kill, // 0x5c,
         kill_enemy_with_hacked_care_package, // 0x5d,
         destroyed_remote_missile, // 0x5e,
         flag_capture, // 0x5f,
@@ -1359,7 +1359,7 @@ version 125 {
         kill_enemy_that_is_wallrunning, // 0x63,
         defused_bomb, // 0x64,
         kill_enemy_while_capping_dom, // 0x65,
-        hash_30ea80ebb28fcad9, // 0x66,
+        killed_armblades_enemy, // 0x66,
         gelgun_kill, // 0x67,
         electrified, // 0x68,
         kill_denied, // 0x69,
@@ -1604,7 +1604,7 @@ version 125 {
     // offset 0x11dc70, size 0x20
     int hash_6ed65ba529599bb5;
     // offset 0x11dc90, size 0x8
-    byte hash_115ec7b8fbf85bae;
+    byte player_count_end;
     // offset 0x11dc98, size 0x40
     xhash game_type;
     // offset 0x11dcd8, size 0x8
@@ -1620,7 +1620,7 @@ version 125 {
     // offset 0x11dea0, size 0xed80
     hash_c464eb471b1c18a challengescompleted[100];
     // offset 0x12cc20, size 0x55f0
-    hash_7f7a5814a86a5885 killstreaks[125];
+    killstreakevent killstreaks[125];
     // offset 0x132210, size 0xaa0
     hash_298025d6535ffa40 hash_7357a4f64d8993b7[20];
     // offset 0x132cb0, size 0x8
@@ -1638,13 +1638,13 @@ version 125 {
     // offset 0x134c28, size 0x20
     int playlist_id;
     // offset 0x134c48, size 0x20
-    uint hash_d2c3c4dbbb08a57;
+    uint utc_end_time_s;
     // offset 0x134c68, size 0x8
     byte hash_63f745385e07b822;
     // offset 0x134c70, size 0x20
-    uint hash_589dfa1826b4eeac;
+    uint utc_start_time_s;
     // offset 0x134c90, size 0x8
-    byte hash_2e9e7ae5d3016cb;
+    byte player_count_start;
     // offset 0x134c98, size 0x520
     hash_5117bce61a2e0fe3 header;
     // offset 0x1351b8, size 0xa00
@@ -1690,7 +1690,7 @@ version 125 {
     // offset 0x2a0f3a, size 0x1
     bool is_draw;
     // offset 0x2a0f3b, size 0x1
-    bool hash_671d5b300061b30f;
+    bool is_private_match;
     // offset 0x2a0f3c, size 0x1
     bool is_dedicated;
     // offset 0x2a0f3d, size 0x1

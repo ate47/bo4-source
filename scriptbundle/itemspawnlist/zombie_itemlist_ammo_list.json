@@ -51,8 +51,8 @@
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 8,
-    "var_9b009839": -1,
+    "hash_345eba59": 8,
+    "hash_9b009839": -1,
     "name": "zombie_itemlist_ammo_list",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

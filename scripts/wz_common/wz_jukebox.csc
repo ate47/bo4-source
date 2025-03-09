@@ -21,7 +21,7 @@ function autoexec __init() {
 }
 
 // Namespace wz_jukebox/wz_jukebox
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb7beb90f, Offset: 0x198
 // Size: 0x1c
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace wz_jukebox/wz_jukebox
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x796fd175, Offset: 0x1c0
 // Size: 0x198
 function function_2bf3c36e() {
@@ -72,7 +72,7 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
 }
 
 // Namespace wz_jukebox/wz_jukebox
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6f583a49, Offset: 0x470
 // Size: 0x46
 function jukebox_off() {
@@ -84,7 +84,7 @@ function jukebox_off() {
 }
 
 // Namespace wz_jukebox/wz_jukebox
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xebc5d27b, Offset: 0x4c0
 // Size: 0x212
 function jukebox_on() {

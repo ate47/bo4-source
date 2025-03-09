@@ -1,7 +1,7 @@
 #namespace simple_hostmigration;
 
 // Namespace simple_hostmigration/simple_hostmigration
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x68
 // Size: 0x4
 function migration_setupgametype() {
@@ -57,7 +57,7 @@ function migration_writeplayerdata(player, i) {
 }
 
 // Namespace simple_hostmigration/simple_hostmigration
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x108
 // Size: 0x4
 function updatehostmigrationdata() {

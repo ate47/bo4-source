@@ -579,18 +579,18 @@ version 129 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -601,7 +601,7 @@ version 129 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -630,7 +630,7 @@ version 129 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -693,7 +693,7 @@ version 129 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x280
     hash_6fa063681576be01 hash_1c26da773971edbe[10];
     // offset 0x6a0, size 0x1180
@@ -1368,18 +1368,18 @@ version 128 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -1390,7 +1390,7 @@ version 128 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -1419,7 +1419,7 @@ version 128 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -1482,7 +1482,7 @@ version 128 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x280
     hash_6fa063681576be01 hash_1c26da773971edbe[10];
     // offset 0x6a0, size 0x1180
@@ -2153,18 +2153,18 @@ version 127 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -2175,7 +2175,7 @@ version 127 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -2204,7 +2204,7 @@ version 127 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -2267,7 +2267,7 @@ version 127 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x280
     hash_6fa063681576be01 hash_1c26da773971edbe[10];
     // offset 0x6a0, size 0x1180
@@ -2922,18 +2922,18 @@ version 126 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -2944,7 +2944,7 @@ version 126 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -2973,7 +2973,7 @@ version 126 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -3029,7 +3029,7 @@ version 126 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x280
     hash_6fa063681576be01 hash_1c26da773971edbe[10];
     // offset 0x6a0, size 0x1180
@@ -3674,18 +3674,18 @@ version 125 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -3696,7 +3696,7 @@ version 125 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -3725,7 +3725,7 @@ version 125 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -3781,7 +3781,7 @@ version 125 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -4420,18 +4420,18 @@ version 124 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -4442,7 +4442,7 @@ version 124 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -4471,7 +4471,7 @@ version 124 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -4527,7 +4527,7 @@ version 124 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -5164,18 +5164,18 @@ version 123 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -5186,7 +5186,7 @@ version 123 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -5215,7 +5215,7 @@ version 123 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -5271,7 +5271,7 @@ version 123 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -5908,18 +5908,18 @@ version 122 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -5930,7 +5930,7 @@ version 122 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -5959,7 +5959,7 @@ version 122 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -6015,7 +6015,7 @@ version 122 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -6644,18 +6644,18 @@ version 121 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -6666,7 +6666,7 @@ version 121 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -6695,7 +6695,7 @@ version 121 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -6751,7 +6751,7 @@ version 121 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -7378,18 +7378,18 @@ version 120 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -7400,7 +7400,7 @@ version 120 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -7429,7 +7429,7 @@ version 120 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -7485,7 +7485,7 @@ version 120 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -8113,18 +8113,18 @@ version 119 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -8135,7 +8135,7 @@ version 119 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -8164,7 +8164,7 @@ version 119 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -8220,7 +8220,7 @@ version 119 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -8843,18 +8843,18 @@ version 118 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -8865,7 +8865,7 @@ version 118 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -8894,7 +8894,7 @@ version 118 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -8950,7 +8950,7 @@ version 118 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -9572,18 +9572,18 @@ version 117 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -9594,7 +9594,7 @@ version 117 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -9623,7 +9623,7 @@ version 117 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -9679,7 +9679,7 @@ version 117 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -10291,18 +10291,18 @@ version 116 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -10313,7 +10313,7 @@ version 116 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -10342,7 +10342,7 @@ version 116 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -10398,7 +10398,7 @@ version 116 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -11009,18 +11009,18 @@ version 115 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -11031,7 +11031,7 @@ version 115 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -11060,7 +11060,7 @@ version 115 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -11116,7 +11116,7 @@ version 115 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -11723,18 +11723,18 @@ version 114 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -11745,7 +11745,7 @@ version 114 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -11774,7 +11774,7 @@ version 114 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -11830,7 +11830,7 @@ version 114 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -12435,18 +12435,18 @@ version 113 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -12457,7 +12457,7 @@ version 113 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -12486,7 +12486,7 @@ version 113 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -12542,7 +12542,7 @@ version 113 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -13145,18 +13145,18 @@ version 112 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -13167,7 +13167,7 @@ version 112 {
         hash_7152f1598a5c3de, // 0x1,
         hash_b4cdbec9f5007d3, // 0x2,
         hash_12eda6dc2d0d4a00, // 0x3,
-        hash_16582f0e479c96e9, // 0x4,
+        spectreeditiongame, // 0x4,
         hash_16d83fd17a87c96b, // 0x5,
         enhancedgame, // 0x6,
         hash_1be23f482b82219f, // 0x7,
@@ -13196,7 +13196,7 @@ version 112 {
         hash_6a89b0043762730b, // 0x1e,
         hash_6f7c1ff18a02ed4e, // 0x1f,
         hash_744d387c398d82ad, // 0x20,
-        hash_7541976a426adb94, // 0x21,
+        predigitalgame, // 0x21,
         hash_754c2b9dddd8a254, // 0x22,
         hash_76c3d78317b27b11, // 0x23
     };
@@ -13252,7 +13252,7 @@ version 112 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -13855,18 +13855,18 @@ version 111 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -13905,7 +13905,7 @@ version 111 {
         hash_6a89b0043762730b, // 0x1d,
         hash_6f7c1ff18a02ed4e, // 0x1e,
         hash_744d387c398d82ad, // 0x1f,
-        hash_7541976a426adb94, // 0x20,
+        predigitalgame, // 0x20,
         hash_754c2b9dddd8a254, // 0x21,
         hash_76c3d78317b27b11, // 0x22
     };
@@ -13961,7 +13961,7 @@ version 111 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -14563,18 +14563,18 @@ version 110 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -14613,7 +14613,7 @@ version 110 {
         hash_6a89b0043762730b, // 0x1d,
         hash_6f7c1ff18a02ed4e, // 0x1e,
         hash_744d387c398d82ad, // 0x1f,
-        hash_7541976a426adb94, // 0x20,
+        predigitalgame, // 0x20,
         hash_754c2b9dddd8a254, // 0x21,
         hash_76c3d78317b27b11, // 0x22
     };
@@ -14669,7 +14669,7 @@ version 110 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -15271,18 +15271,18 @@ version 109 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -15321,7 +15321,7 @@ version 109 {
         hash_6a89b0043762730b, // 0x1d,
         hash_6f7c1ff18a02ed4e, // 0x1e,
         hash_744d387c398d82ad, // 0x1f,
-        hash_7541976a426adb94, // 0x20,
+        predigitalgame, // 0x20,
         hash_754c2b9dddd8a254, // 0x21,
         hash_76c3d78317b27b11, // 0x22
     };
@@ -15377,7 +15377,7 @@ version 109 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -15978,18 +15978,18 @@ version 108 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -16028,7 +16028,7 @@ version 108 {
         hash_6a89b0043762730b, // 0x1d,
         hash_6f7c1ff18a02ed4e, // 0x1e,
         hash_744d387c398d82ad, // 0x1f,
-        hash_7541976a426adb94, // 0x20,
+        predigitalgame, // 0x20,
         hash_754c2b9dddd8a254, // 0x21,
         hash_76c3d78317b27b11, // 0x22
     };
@@ -16084,7 +16084,7 @@ version 108 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -16684,18 +16684,18 @@ version 107 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -16734,7 +16734,7 @@ version 107 {
         hash_6a89b0043762730b, // 0x1d,
         hash_6f7c1ff18a02ed4e, // 0x1e,
         hash_744d387c398d82ad, // 0x1f,
-        hash_7541976a426adb94, // 0x20,
+        predigitalgame, // 0x20,
         hash_754c2b9dddd8a254, // 0x21,
         hash_76c3d78317b27b11, // 0x22
     };
@@ -16790,7 +16790,7 @@ version 107 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -17388,18 +17388,18 @@ version 106 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -17438,7 +17438,7 @@ version 106 {
         hash_6a89b0043762730b, // 0x1d,
         hash_6f7c1ff18a02ed4e, // 0x1e,
         hash_744d387c398d82ad, // 0x1f,
-        hash_7541976a426adb94, // 0x20,
+        predigitalgame, // 0x20,
         hash_754c2b9dddd8a254, // 0x21,
         hash_76c3d78317b27b11, // 0x22
     };
@@ -17494,7 +17494,7 @@ version 106 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -18090,18 +18090,18 @@ version 105 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -18135,7 +18135,7 @@ version 105 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -18191,7 +18191,7 @@ version 105 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -18789,20 +18789,20 @@ version 104 {
 
     // idx 5 members 16
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         hash_70fe115fad3f4fa, // 0x2,
         prt_mp_mercenary, // 0x3,
         prt_mp_technomancer, // 0x4,
         prt_mp_engineer, // 0x5,
         hash_3ca96ae1bd7d344f, // 0x6,
-        hash_3d9018ee4053e35c, // 0x7,
+        prt_mp_outrider, // 0x7,
         prt_mp_swatpolice, // 0x8,
-        hash_4a011dffec0dd650, // 0x9,
+        prt_mp_spectre, // 0x9,
         prt_mp_recon, // 0xa,
         prt_mp_battery, // 0xb,
         prt_mp_enforcer, // 0xc,
-        hash_6e7befeff487ba9a, // 0xd,
+        prt_mp_zero, // 0xd,
         prt_mp_trapper, // 0xe,
         prt_mp_firebreak, // 0xf
     };
@@ -18836,7 +18836,7 @@ version 104 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -18892,7 +18892,7 @@ version 104 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -19490,18 +19490,18 @@ version 103 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -19535,7 +19535,7 @@ version 103 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -19591,7 +19591,7 @@ version 103 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -20189,18 +20189,18 @@ version 102 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -20234,7 +20234,7 @@ version 102 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -20290,7 +20290,7 @@ version 102 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -20885,18 +20885,18 @@ version 101 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -20930,7 +20930,7 @@ version 101 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -20986,7 +20986,7 @@ version 101 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -21580,18 +21580,18 @@ version 100 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -21625,7 +21625,7 @@ version 100 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -21681,7 +21681,7 @@ version 100 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -22270,18 +22270,18 @@ version 99 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -22315,7 +22315,7 @@ version 99 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -22371,7 +22371,7 @@ version 99 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -22960,18 +22960,18 @@ version 98 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -23005,7 +23005,7 @@ version 98 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -23061,7 +23061,7 @@ version 98 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -23641,18 +23641,18 @@ version 97 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -23686,7 +23686,7 @@ version 97 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -23742,7 +23742,7 @@ version 97 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -24322,18 +24322,18 @@ version 96 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -24367,7 +24367,7 @@ version 96 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -24423,7 +24423,7 @@ version 96 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -24991,18 +24991,18 @@ version 95 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -25036,7 +25036,7 @@ version 95 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -25092,7 +25092,7 @@ version 95 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -25656,18 +25656,18 @@ version 94 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -25701,7 +25701,7 @@ version 94 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -25757,7 +25757,7 @@ version 94 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -26319,18 +26319,18 @@ version 93 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -26364,7 +26364,7 @@ version 93 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -26420,7 +26420,7 @@ version 93 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -26974,18 +26974,18 @@ version 92 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -27019,7 +27019,7 @@ version 92 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -27073,7 +27073,7 @@ version 92 {
     // offset 0x3c0, size 0x20
     int motdversionviewed;
     // offset 0x3e0, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x400, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x1580, size 0x40
@@ -27621,18 +27621,18 @@ version 91 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -27666,7 +27666,7 @@ version 91 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -27720,7 +27720,7 @@ version 91 {
     // offset 0x3c0, size 0x20
     int motdversionviewed;
     // offset 0x3e0, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x400, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x1580, size 0x40
@@ -28267,18 +28267,18 @@ version 90 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -28312,7 +28312,7 @@ version 90 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -28366,7 +28366,7 @@ version 90 {
     // offset 0x3c0, size 0x20
     int motdversionviewed;
     // offset 0x3e0, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x400, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x1580, size 0x40
@@ -28907,18 +28907,18 @@ version 89 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -28952,7 +28952,7 @@ version 89 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -29006,7 +29006,7 @@ version 89 {
     // offset 0x3c0, size 0x20
     int motdversionviewed;
     // offset 0x3e0, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x400, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x1580, size 0x40
@@ -29547,18 +29547,18 @@ version 88 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -29592,7 +29592,7 @@ version 88 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -29646,7 +29646,7 @@ version 88 {
     // offset 0x3c0, size 0x20
     int motdversionviewed;
     // offset 0x3e0, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x400, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x1580, size 0x40
@@ -30183,18 +30183,18 @@ version 87 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -30228,7 +30228,7 @@ version 87 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -30282,7 +30282,7 @@ version 87 {
     // offset 0x3c0, size 0x20
     int motdversionviewed;
     // offset 0x3e0, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x400, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x1580, size 0x40
@@ -30818,18 +30818,18 @@ version 86 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -30863,7 +30863,7 @@ version 86 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -30917,7 +30917,7 @@ version 86 {
     // offset 0x3c0, size 0x20
     int motdversionviewed;
     // offset 0x3e0, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x400, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x1580, size 0x40
@@ -31453,18 +31453,18 @@ version 85 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -31498,7 +31498,7 @@ version 85 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -31552,7 +31552,7 @@ version 85 {
     // offset 0x3c0, size 0x20
     int motdversionviewed;
     // offset 0x3e0, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x400, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x1580, size 0x40
@@ -32078,18 +32078,18 @@ version 84 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -32123,7 +32123,7 @@ version 84 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -32168,7 +32168,7 @@ version 84 {
     // offset 0x300, size 0x20
     int motdversionviewed;
     // offset 0x320, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x340, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x14c0, size 0x40
@@ -32694,18 +32694,18 @@ version 83 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -32739,7 +32739,7 @@ version 83 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -32784,7 +32784,7 @@ version 83 {
     // offset 0x300, size 0x20
     int motdversionviewed;
     // offset 0x320, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x340, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x14c0, size 0x40
@@ -33306,18 +33306,18 @@ version 82 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -33351,7 +33351,7 @@ version 82 {
         hash_6a89b0043762730b, // 0x18,
         hash_6f7c1ff18a02ed4e, // 0x19,
         hash_744d387c398d82ad, // 0x1a,
-        hash_7541976a426adb94, // 0x1b,
+        predigitalgame, // 0x1b,
         hash_754c2b9dddd8a254, // 0x1c,
         hash_76c3d78317b27b11, // 0x1d
     };
@@ -33396,7 +33396,7 @@ version 82 {
     // offset 0x300, size 0x20
     int motdversionviewed;
     // offset 0x320, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x340, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x14c0, size 0x40
@@ -33918,18 +33918,18 @@ version 81 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -33962,7 +33962,7 @@ version 81 {
         hash_6a89b0043762730b, // 0x17,
         hash_6f7c1ff18a02ed4e, // 0x18,
         hash_744d387c398d82ad, // 0x19,
-        hash_7541976a426adb94, // 0x1a,
+        predigitalgame, // 0x1a,
         hash_754c2b9dddd8a254, // 0x1b,
         hash_76c3d78317b27b11, // 0x1c
     };
@@ -34007,7 +34007,7 @@ version 81 {
     // offset 0x300, size 0x20
     int motdversionviewed;
     // offset 0x320, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x340, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x14c0, size 0x40
@@ -34529,18 +34529,18 @@ version 80 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -34572,7 +34572,7 @@ version 80 {
         hash_6f7c1ff18a02ed4e, // 0x16,
         hash_70d9a113171c8b3e, // 0x17,
         hash_744d387c398d82ad, // 0x18,
-        hash_7541976a426adb94, // 0x19,
+        predigitalgame, // 0x19,
         hash_754c2b9dddd8a254, // 0x1a,
         hash_76c3d78317b27b11, // 0x1b
     };
@@ -34617,7 +34617,7 @@ version 80 {
     // offset 0x300, size 0x20
     int motdversionviewed;
     // offset 0x320, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x340, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x14c0, size 0x40
@@ -35139,18 +35139,18 @@ version 79 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -35182,7 +35182,7 @@ version 79 {
         hash_6f7c1ff18a02ed4e, // 0x16,
         hash_70d9a113171c8b3e, // 0x17,
         hash_744d387c398d82ad, // 0x18,
-        hash_7541976a426adb94, // 0x19,
+        predigitalgame, // 0x19,
         hash_754c2b9dddd8a254, // 0x1a,
         hash_76c3d78317b27b11, // 0x1b
     };
@@ -35225,7 +35225,7 @@ version 79 {
     // offset 0x2e0, size 0x20
     int motdversionviewed;
     // offset 0x300, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x320, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x14a0, size 0x40
@@ -35745,18 +35745,18 @@ version 78 {
 
     // idx 5 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -35788,7 +35788,7 @@ version 78 {
         hash_6f7c1ff18a02ed4e, // 0x16,
         hash_70d9a113171c8b3e, // 0x17,
         hash_744d387c398d82ad, // 0x18,
-        hash_7541976a426adb94, // 0x19,
+        predigitalgame, // 0x19,
         hash_754c2b9dddd8a254, // 0x1a,
         hash_76c3d78317b27b11, // 0x1b
     };
@@ -35831,7 +35831,7 @@ version 78 {
     // offset 0x2e0, size 0x20
     int motdversionviewed;
     // offset 0x300, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x320, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x14a0, size 0x40
@@ -35968,7 +35968,7 @@ version 77 {
         hash_6f7c1ff18a02ed4e, // 0x16,
         hash_70d9a113171c8b3e, // 0x17,
         hash_744d387c398d82ad, // 0x18,
-        hash_7541976a426adb94, // 0x19,
+        predigitalgame, // 0x19,
         hash_754c2b9dddd8a254, // 0x1a,
         hash_76c3d78317b27b11, // 0x1b
     };
@@ -36019,7 +36019,7 @@ version 77 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -36165,7 +36165,7 @@ version 76 {
     // offset 0x3e0, size 0x20
     int motdversionviewed;
     // offset 0x400, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x420, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x15a0, size 0x40
@@ -36305,7 +36305,7 @@ version 75 {
     // offset 0x380, size 0x20
     int motdversionviewed;
     // offset 0x3a0, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x3c0, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x1540, size 0x40
@@ -37056,7 +37056,7 @@ version 74 {
         hash_1b0d87a2f1c0272a, // 0xe4,
         hash_1b148631540ae995, // 0xe5,
         hash_1b18c55e5bfab97d, // 0xe6,
-        hash_1b2898c0a3f4e7c1, // 0xe7,
+        killed_dog, // 0xe7,
         kills_ads_stock_and_cpu, // 0xe8,
         kill_near_plant_engineer_hardwired, // 0xe9,
         hash_1b5a22bbb1c029a2, // 0xea,
@@ -37958,7 +37958,7 @@ version 74 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -38123,7 +38123,7 @@ version 74 {
     // offset 0x3f200, size 0x20
     int motdversionviewed;
     // offset 0x3f220, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x3f240, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x3f248, size 0xc30
@@ -38918,7 +38918,7 @@ version 73 {
         hash_1b0d87a2f1c0272a, // 0xe4,
         hash_1b148631540ae995, // 0xe5,
         hash_1b18c55e5bfab97d, // 0xe6,
-        hash_1b2898c0a3f4e7c1, // 0xe7,
+        killed_dog, // 0xe7,
         kills_ads_stock_and_cpu, // 0xe8,
         kill_near_plant_engineer_hardwired, // 0xe9,
         hash_1b5a22bbb1c029a2, // 0xea,
@@ -39820,7 +39820,7 @@ version 73 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -39987,7 +39987,7 @@ version 73 {
     // offset 0x3f240, size 0x20
     int motdversionviewed;
     // offset 0x3f260, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x3f280, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x3f288, size 0xc30
@@ -40772,7 +40772,7 @@ version 72 {
         hash_1b0d87a2f1c0272a, // 0xe4,
         hash_1b148631540ae995, // 0xe5,
         hash_1b18c55e5bfab97d, // 0xe6,
-        hash_1b2898c0a3f4e7c1, // 0xe7,
+        killed_dog, // 0xe7,
         kills_ads_stock_and_cpu, // 0xe8,
         kill_near_plant_engineer_hardwired, // 0xe9,
         hash_1b5a22bbb1c029a2, // 0xea,
@@ -41674,7 +41674,7 @@ version 72 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -41839,7 +41839,7 @@ version 72 {
     // offset 0x3f200, size 0x20
     int motdversionviewed;
     // offset 0x3f220, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x3f240, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x3f248, size 0xc30
@@ -42624,7 +42624,7 @@ version 71 {
         hash_1b0d87a2f1c0272a, // 0xe4,
         hash_1b148631540ae995, // 0xe5,
         hash_1b18c55e5bfab97d, // 0xe6,
-        hash_1b2898c0a3f4e7c1, // 0xe7,
+        killed_dog, // 0xe7,
         kills_ads_stock_and_cpu, // 0xe8,
         kill_near_plant_engineer_hardwired, // 0xe9,
         hash_1b5a22bbb1c029a2, // 0xea,
@@ -43526,7 +43526,7 @@ version 71 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -43691,7 +43691,7 @@ version 71 {
     // offset 0x3f200, size 0x20
     int motdversionviewed;
     // offset 0x3f220, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x3f240, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x3f248, size 0xc30
@@ -44476,7 +44476,7 @@ version 70 {
         hash_1b0d87a2f1c0272a, // 0xe4,
         hash_1b148631540ae995, // 0xe5,
         hash_1b18c55e5bfab97d, // 0xe6,
-        hash_1b2898c0a3f4e7c1, // 0xe7,
+        killed_dog, // 0xe7,
         kills_ads_stock_and_cpu, // 0xe8,
         kill_near_plant_engineer_hardwired, // 0xe9,
         hash_1b5a22bbb1c029a2, // 0xea,
@@ -45372,7 +45372,7 @@ version 70 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -45537,7 +45537,7 @@ version 70 {
     // offset 0x3cd40, size 0x20
     int motdversionviewed;
     // offset 0x3cd60, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x3cd80, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x3cd88, size 0xc30

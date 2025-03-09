@@ -1,8 +1,0 @@
-{
-    "name": "#gsol_zm_specialweapons",
-    "assetType": "gamesettingoption",
-    "assets": [
-        "#zm_specweap",
-        "#zm_specweapcharge"
-    ]
-}

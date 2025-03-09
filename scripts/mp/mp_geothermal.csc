@@ -27,7 +27,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_geothermal/mp_geothermal
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x80ec18eb, Offset: 0x2c8
 // Size: 0xf2
 function dom_flag_base_fx_override(flag, team) {
@@ -57,7 +57,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_geothermal/mp_geothermal
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3bea3f64, Offset: 0x3c8
 // Size: 0xf2
 function dom_flag_cap_fx_override(flag, team) {
@@ -87,7 +87,7 @@ function dom_flag_cap_fx_override(flag, team) {
 }
 
 // Namespace mp_geothermal/mp_geothermal
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x905bbec9, Offset: 0x4c8
 // Size: 0x2c
 function on_localclient_connect(localclientnum) {
@@ -96,7 +96,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace mp_geothermal/mp_geothermal
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x130ad926, Offset: 0x500
 // Size: 0x2c
 function on_gameplay_started(localclientnum) {
@@ -105,7 +105,7 @@ function on_gameplay_started(localclientnum) {
 }
 
 // Namespace mp_geothermal/mp_geothermal
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfa47f16d, Offset: 0x538
 // Size: 0xfc
 function toggle_player_steam(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

@@ -7,7 +7,7 @@
 #namespace red_boss_battle;
 
 // Namespace red_boss_battle/zm_red_boss_battle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x46cbff36, Offset: 0x150
 // Size: 0x426
 function init() {
@@ -29,7 +29,7 @@ function init() {
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8f91d013, Offset: 0x580
 // Size: 0x132
 function function_6e3ecc82(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -50,7 +50,7 @@ function function_6e3ecc82(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x39975a05, Offset: 0x6c0
 // Size: 0x74
 function pegasus_emerge(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -58,7 +58,7 @@ function pegasus_emerge(localclientnum, oldval, newval, bnewent, binitialsnap, f
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x40c444c1, Offset: 0x740
 // Size: 0x13e
 function function_272aa016(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -81,7 +81,7 @@ function function_272aa016(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9cc32cb6, Offset: 0x888
 // Size: 0x11c
 function function_a27b945a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -96,7 +96,7 @@ function function_a27b945a(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc0dca5a3, Offset: 0x9b0
 // Size: 0x5c
 function function_b9329291(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -104,7 +104,7 @@ function function_b9329291(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3145d344, Offset: 0xa18
 // Size: 0x12c
 function function_ed1d0231(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -120,7 +120,7 @@ function function_ed1d0231(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5d72ca99, Offset: 0xb50
 // Size: 0x96
 function function_37d1ee2e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -133,7 +133,7 @@ function function_37d1ee2e(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa336065e, Offset: 0xbf0
 // Size: 0x278
 function private function_e9aa9e80(localclientnum) {
@@ -167,7 +167,7 @@ function private function_e9aa9e80(localclientnum) {
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcf72ea6f, Offset: 0xe70
 // Size: 0x96
 function private function_954b9602(localclientnum) {
@@ -183,7 +183,7 @@ function private function_954b9602(localclientnum) {
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4ca58769, Offset: 0xf10
 // Size: 0x1f4
 function function_5091797(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -208,7 +208,7 @@ function function_5091797(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xabc85803, Offset: 0x1110
 // Size: 0xd4
 function function_e2680ff3(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

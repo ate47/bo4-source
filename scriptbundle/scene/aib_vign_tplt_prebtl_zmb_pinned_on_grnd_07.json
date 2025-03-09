@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1e3ffc9c097d3909",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_1d1fa7ab1a8bd350",
+            "type": "fakeactor",
+            "name": "actor 1",
+            "allowdeath": 1,
+            "removeweapon": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_tplt_prebtl_zmb_pinned_on_grnd_07",
+    "dontsync": 1,
+    "team": "any"
+}

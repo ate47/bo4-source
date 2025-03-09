@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x905d2d4a, Offset: 0x190
 // Size: 0x33c
 function __init__() {
@@ -45,7 +45,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0xa4305665, Offset: 0x4d8
 // Size: 0xee
 function function_5ff12a45(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -60,7 +60,7 @@ function function_5ff12a45(inflictor, attacker, damage, flags, meansofdeath, wea
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x551e8e66, Offset: 0x5d0
 // Size: 0xa4
 function on_weapon_change(s_params) {
@@ -74,7 +74,7 @@ function on_weapon_change(s_params) {
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xf18e4bdd, Offset: 0x680
 // Size: 0xa4
 function function_de59b16a(e_source, str_mod, var_8e05c280, weapon) {
@@ -87,7 +87,7 @@ function function_de59b16a(e_source, str_mod, var_8e05c280, weapon) {
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xda1109df, Offset: 0x730
 // Size: 0x1ac
 function function_fd1a163d(e_source, damage, meansofdeath, weapon, shitloc) {
@@ -106,7 +106,7 @@ function function_fd1a163d(e_source, damage, meansofdeath, weapon, shitloc) {
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x5a077e4b, Offset: 0x8e8
 // Size: 0x21e
 function function_e0525d4e(var_6a3758f2, e_source, meansofdeath, weapon, shitloc) {
@@ -131,7 +131,7 @@ function function_e0525d4e(var_6a3758f2, e_source, meansofdeath, weapon, shitloc
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x22e3ab25, Offset: 0xb10
 // Size: 0x8c
 function function_4764da22(e_source, meansofdeath, weapon, shitloc) {
@@ -144,7 +144,7 @@ function function_4764da22(e_source, meansofdeath, weapon, shitloc) {
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xe1cf433f, Offset: 0xba8
 // Size: 0x8c
 function function_487ae8a7(e_source, meansofdeath, weapon, shitloc) {
@@ -157,7 +157,7 @@ function function_487ae8a7(e_source, meansofdeath, weapon, shitloc) {
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x56814cad, Offset: 0xc40
 // Size: 0x3c
 function function_b7a6f208(w_weapon) {
@@ -165,7 +165,7 @@ function function_b7a6f208(w_weapon) {
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x15667e71, Offset: 0xc88
 // Size: 0x140
 function function_9f86f360(e_player, var_3e8e91cb, n_range) {
@@ -183,7 +183,7 @@ function function_9f86f360(e_player, var_3e8e91cb, n_range) {
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb496dc1, Offset: 0xdd0
 // Size: 0x154
 function function_bd5b7309(player, var_fb0999c0) {
@@ -204,7 +204,7 @@ function function_bd5b7309(player, var_fb0999c0) {
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcbfa9544, Offset: 0xf30
 // Size: 0xbc
 function function_5253f1fb(player) {
@@ -216,7 +216,7 @@ function function_5253f1fb(player) {
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9e531dc7, Offset: 0xff8
 // Size: 0x5e
 function function_80fa8760() {

@@ -53,7 +53,7 @@
 #namespace zm_red_ww_quests;
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf059358d, Offset: 0x13e8
 // Size: 0xe9c
 function init() {
@@ -132,7 +132,7 @@ function init() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfd2f0e1e, Offset: 0x2290
 // Size: 0x6ac
 function function_9c17f532() {
@@ -208,7 +208,7 @@ function function_9c17f532() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xebce746a, Offset: 0x2948
 // Size: 0x2c0
 function function_65bda766(a_hands) {
@@ -241,7 +241,7 @@ function function_65bda766(a_hands) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2f19a956, Offset: 0x2c10
 // Size: 0x86
 function ww_oracle_cooldown() {
@@ -256,7 +256,7 @@ function ww_oracle_cooldown() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x635fe97, Offset: 0x2ca0
 // Size: 0x292
 function function_f72adc9d(a_s_hands) {
@@ -297,7 +297,7 @@ function function_4a16a553(str_clue) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa86a9c34, Offset: 0x2fa0
 // Size: 0x1a4
 function function_95a52218() {
@@ -317,7 +317,7 @@ function function_95a52218() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb50a4dfe, Offset: 0x3150
 // Size: 0x2a6
 function function_7e94450c() {
@@ -342,9 +342,9 @@ function function_7e94450c() {
         }
     }
     if (self.model === #"p8_fxanim_zm_red_ww_shell_rubble_mod") {
-        e_brick thread scene::play(#"hash_23eb09f6191aa0c7", "Shot 1", e_brick);
+        e_brick thread scene::play(#"p8_fxanim_zm_red_ww_shell_rubble_bundle", "Shot 1", e_brick);
     } else {
-        e_brick thread scene::play(#"hash_71a4fbf82c039a2", "Shot 1", e_brick);
+        e_brick thread scene::play(#"p8_fxanim_zm_red_ww_shell_mound_bundle", "Shot 1", e_brick);
     }
     e_brick clientfield::set("" + #"hash_23ba81a7c071845d", 0);
     t_damage delete();
@@ -352,7 +352,7 @@ function function_7e94450c() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x262098d1, Offset: 0x3400
 // Size: 0x13e
 function function_5e0885f9() {
@@ -368,7 +368,7 @@ function function_5e0885f9() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb6151fcc, Offset: 0x3548
 // Size: 0xb0
 function function_10310ecb() {
@@ -382,7 +382,7 @@ function function_10310ecb() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x81b5c475, Offset: 0x3600
 // Size: 0x138
 function function_fa621ff5(e_destructible) {
@@ -397,7 +397,7 @@ function function_fa621ff5(e_destructible) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x24043bfb, Offset: 0x3740
 // Size: 0x15e
 function function_4186be5f() {
@@ -435,7 +435,7 @@ function function_4186be5f() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf93fc6b, Offset: 0x38a8
 // Size: 0x14e
 function function_aaaf780e(var_87658653, t_damage) {
@@ -452,7 +452,7 @@ function function_aaaf780e(var_87658653, t_damage) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x290a012, Offset: 0x3a00
 // Size: 0x44c
 function function_cf82cb0b() {
@@ -496,7 +496,7 @@ function function_cf82cb0b() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3a85bc7, Offset: 0x3e58
 // Size: 0x218
 function function_c573751a(e_player) {
@@ -518,7 +518,7 @@ function function_c573751a(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x25f995d7, Offset: 0x4078
 // Size: 0x1484
 function function_809767d(str_hand) {
@@ -538,7 +538,7 @@ function function_809767d(str_hand) {
         s_quest.var_f94ca998 = "fxexp_wq_h_portal";
         s_quest.var_83a4152c = "fxexp_wq_h_portal_return";
         s_quest.var_4d50be8e = "fxexp_wq_h_portal_p";
-        s_quest.var_99aa2e37 = #"hash_4ac1073c8fc24cfc";
+        s_quest.var_99aa2e37 = #"p8_fxanim_zm_red_ww_hand_hemera_bundle";
         s_quest.var_7c6b53db = #"hash_3b91b084eadff65e";
         s_quest.var_eaa1f384 = #"hash_14dfce1123c05a79";
         s_quest.var_29f1fc2d = #"hash_4c08d1414859cc60";
@@ -753,7 +753,7 @@ function function_809767d(str_hand) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x45678d93, Offset: 0x5508
 // Size: 0x178
 function on_player_disconnect() {
@@ -773,7 +773,7 @@ function on_player_disconnect() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf4dae4e2, Offset: 0x5688
 // Size: 0x174
 function function_6ef2b98f(eventstruct) {
@@ -790,7 +790,7 @@ function function_6ef2b98f(eventstruct) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x44984e25, Offset: 0x5808
 // Size: 0x274
 function function_841236e4(w_weapon, var_b6bc44ed) {
@@ -814,7 +814,7 @@ function function_841236e4(w_weapon, var_b6bc44ed) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x54beeca0, Offset: 0x5a88
 // Size: 0xbc
 function function_887b7e4b(str_hand, var_b6bc44ed) {
@@ -827,7 +827,7 @@ function function_887b7e4b(str_hand, var_b6bc44ed) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcb73de1b, Offset: 0x5b50
 // Size: 0x11c
 function on_player_connect() {
@@ -844,7 +844,7 @@ function on_player_connect() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 10, eflags: 0x1 linked
+// Params 10, eflags: 0x0
 // Checksum 0xd10a1460, Offset: 0x5c78
 // Size: 0x26a
 function on_player_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime) {
@@ -867,7 +867,7 @@ function on_player_damage(einflictor, eattacker, idamage, idflags, smeansofdeath
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc534cde8, Offset: 0x5ef0
 // Size: 0xbc
 function function_996fee51() {
@@ -881,7 +881,7 @@ function function_996fee51() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x266ffc70, Offset: 0x5fb8
 // Size: 0x1fa
 function function_9b3e9487(w_weapon) {
@@ -892,7 +892,7 @@ function function_9b3e9487(w_weapon) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfeec1f18, Offset: 0x61c0
 // Size: 0xab6
 function function_9f665c5d(e_player) {
@@ -991,7 +991,7 @@ function function_9f665c5d(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x880d65a6, Offset: 0x6c80
 // Size: 0x158
 function function_75fd2345() {
@@ -1012,7 +1012,7 @@ function function_75fd2345() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x94cecd89, Offset: 0x6de0
 // Size: 0x2ec
 function function_37c18ffd(str_hand) {
@@ -1064,7 +1064,7 @@ function function_37c18ffd(str_hand) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x83700c30, Offset: 0x70d8
 // Size: 0xcc
 function function_7bd1fb22(str_hand, e_player) {
@@ -1078,7 +1078,7 @@ function function_7bd1fb22(str_hand, e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xed5c3267, Offset: 0x71b0
 // Size: 0x518
 function private function_f7cee57d(s_quest) {
@@ -1134,7 +1134,7 @@ function private function_f7cee57d(s_quest) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1301eede, Offset: 0x76d0
 // Size: 0x2dc
 function function_9520e85d(str_hand) {
@@ -1169,7 +1169,7 @@ function function_9520e85d(str_hand) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2976ea4c, Offset: 0x79b8
 // Size: 0x2da
 function function_2a513082(weapon) {
@@ -1231,7 +1231,7 @@ function function_2a513082(weapon) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd5a0f5c9, Offset: 0x7ca0
 // Size: 0x282
 function function_4c66319a(str_hand) {
@@ -1271,7 +1271,7 @@ function function_4c66319a(str_hand) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc3ca327c, Offset: 0x7f30
 // Size: 0x64
 function function_6e84f472() {
@@ -1281,7 +1281,7 @@ function function_6e84f472() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x65fa257a, Offset: 0x7fa0
 // Size: 0x1c4
 function function_a7e94e36(a_ents) {
@@ -1306,7 +1306,7 @@ function function_a7e94e36(a_ents) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x23bc2295, Offset: 0x8170
 // Size: 0xca
 function private function_2db4d0dc(e_player) {
@@ -1322,7 +1322,7 @@ function private function_2db4d0dc(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfcd7eb97, Offset: 0x8248
 // Size: 0x74
 function function_97c8cfa0(e_player) {
@@ -1334,7 +1334,7 @@ function function_97c8cfa0(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x553419c6, Offset: 0x82c8
 // Size: 0x4c
 function private function_576d6fe0(e_player) {
@@ -1344,7 +1344,7 @@ function private function_576d6fe0(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6cd8c6de, Offset: 0x8320
 // Size: 0x172
 function function_9aa785fe(e_player) {
@@ -1364,7 +1364,7 @@ function function_9aa785fe(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x602526a3, Offset: 0x84a0
 // Size: 0x20e
 function function_7f7c692(str_hand) {
@@ -1389,7 +1389,7 @@ function function_7f7c692(str_hand) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6c4c524, Offset: 0x86b8
 // Size: 0xac
 function function_89b62137(v_anchor) {
@@ -1404,7 +1404,7 @@ function function_89b62137(v_anchor) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x306082b6, Offset: 0x8770
 // Size: 0xc4
 function function_57b78484(e_player) {
@@ -1416,7 +1416,7 @@ function function_57b78484(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc1830bd6, Offset: 0x8840
 // Size: 0x430
 function function_6b3c32b6(str_hand, e_player) {
@@ -1477,7 +1477,7 @@ function function_6b3c32b6(str_hand, e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x15304cf9, Offset: 0x8c78
 // Size: 0xa4
 function function_119d1b73(e_player) {
@@ -1488,7 +1488,7 @@ function function_119d1b73(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x262a9083, Offset: 0x8d28
 // Size: 0x94
 function function_313d0f8d(e_player) {
@@ -1500,7 +1500,7 @@ function function_313d0f8d(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9314e693, Offset: 0x8dc8
 // Size: 0xd4
 function function_f5639b00(e_player) {
@@ -1518,7 +1518,7 @@ function function_f5639b00(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbf818785, Offset: 0x8ea8
 // Size: 0x49c
 function function_f25f67a7() {
@@ -1583,7 +1583,7 @@ function function_f25f67a7() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc13982a, Offset: 0x9350
 // Size: 0x104
 function function_652b2ac5() {
@@ -1599,7 +1599,7 @@ function function_652b2ac5() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcf785c3, Offset: 0x9460
 // Size: 0xec
 function function_808746de(e_player) {
@@ -1618,7 +1618,7 @@ function function_808746de(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x41c68a10, Offset: 0x9558
 // Size: 0x270
 function function_10139c6(e_player) {
@@ -1644,7 +1644,7 @@ function function_10139c6(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x831a3a8a, Offset: 0x97d0
 // Size: 0x2ee
 function private function_e695bb99() {
@@ -1676,7 +1676,7 @@ function private function_e695bb99() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf4f94734, Offset: 0x9ac8
 // Size: 0x1d6
 function private function_6d15a744(e_player) {
@@ -1699,7 +1699,7 @@ function private function_6d15a744(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xec465d19, Offset: 0x9ca8
 // Size: 0x1f8
 function function_a975461d(var_d4a055df = 0) {
@@ -1724,7 +1724,7 @@ function function_a975461d(var_d4a055df = 0) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbf3e0c40, Offset: 0x9ea8
 // Size: 0x4ac
 function function_bce6357e() {
@@ -1782,7 +1782,7 @@ function function_bce6357e() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x664bb7e, Offset: 0xa360
 // Size: 0x1b4
 function function_3c79dc29(e_player) {
@@ -1808,7 +1808,7 @@ function function_3c79dc29(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7f547f22, Offset: 0xa520
 // Size: 0x94
 function function_425a6ec6() {
@@ -1823,7 +1823,7 @@ function function_425a6ec6() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x4d77a0a3, Offset: 0xa5c0
 // Size: 0x1f4
 function private function_ab234072(var_cd1844a3) {
@@ -1846,7 +1846,7 @@ function private function_ab234072(var_cd1844a3) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x35a04e03, Offset: 0xa7c0
 // Size: 0x24
 function private function_2eeb736b(var_c34665fc) {
@@ -1854,7 +1854,7 @@ function private function_2eeb736b(var_c34665fc) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1fc25178, Offset: 0xa7f0
 // Size: 0xd4
 function private function_8f228be7(var_cd1844a3) {
@@ -1867,7 +1867,7 @@ function private function_8f228be7(var_cd1844a3) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x17b0b4c, Offset: 0xa8d0
 // Size: 0x122
 function disable_health_regen() {
@@ -1884,7 +1884,7 @@ function disable_health_regen() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x532f88a6, Offset: 0xaa00
 // Size: 0xbc
 function private function_e9127e33() {
@@ -1903,7 +1903,7 @@ function private function_e9127e33() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x53c13b6b, Offset: 0xaac8
 // Size: 0x3c4
 function function_e6e126b4(e_target, w_weapon) {
@@ -1946,7 +1946,7 @@ function function_e6e126b4(e_target, w_weapon) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xfc3a04a1, Offset: 0xae98
 // Size: 0xfc
 function function_cdbadaff(var_a06d0f4f, var_2d8a1db5, n_time) {
@@ -1961,7 +1961,7 @@ function function_cdbadaff(var_a06d0f4f, var_2d8a1db5, n_time) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x34b9759c, Offset: 0xafa0
 // Size: 0x48
 function function_5d783702(n_stop) {
@@ -1971,7 +1971,7 @@ function function_5d783702(n_stop) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8925514f, Offset: 0xaff0
 // Size: 0x1b0
 function function_adc2d252(e_player) {
@@ -1991,7 +1991,7 @@ function function_adc2d252(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfe8f349, Offset: 0xb1a8
 // Size: 0xe8
 function function_819b24b8(e_player) {
@@ -2005,7 +2005,7 @@ function function_819b24b8(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x571214b8, Offset: 0xb298
 // Size: 0xe8
 function function_92aa1a80(e_player) {
@@ -2019,7 +2019,7 @@ function function_92aa1a80(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2feb14fd, Offset: 0xb388
 // Size: 0x16c
 function function_41234931(b_downed = 0) {
@@ -2044,7 +2044,7 @@ function function_41234931(b_downed = 0) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xedcd8773, Offset: 0xb500
 // Size: 0x74
 function function_7b28cf91(e_player) {
@@ -2055,7 +2055,7 @@ function function_7b28cf91(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7e90a220, Offset: 0xb580
 // Size: 0x72
 function private function_af78c3b3(b_disable = 1) {
@@ -2069,7 +2069,7 @@ function private function_af78c3b3(b_disable = 1) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2297557c, Offset: 0xb600
 // Size: 0x92
 function private _shit_bhb_invalid_area(e_player, player_has_weapon) {
@@ -2080,7 +2080,7 @@ function private _shit_bhb_invalid_area(e_player, player_has_weapon) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe4313e6a, Offset: 0xb6a0
 // Size: 0x23c
 function function_60f650e3() {
@@ -2102,7 +2102,7 @@ function function_60f650e3() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xab7bd40f, Offset: 0xb8e8
 // Size: 0xb0
 function function_c9d01f4f(e_player) {
@@ -2113,7 +2113,7 @@ function function_c9d01f4f(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x64844609, Offset: 0xb9a0
 // Size: 0x264
 function function_b962a4a6(var_542837e6) {
@@ -2146,7 +2146,7 @@ function function_b962a4a6(var_542837e6) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x91fbd905, Offset: 0xbc10
 // Size: 0x168
 function function_4771e682(var_542837e6) {
@@ -2169,7 +2169,7 @@ function function_4771e682(var_542837e6) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe9415fcf, Offset: 0xbd80
 // Size: 0x5ac
 function function_2a290bb7(var_542837e6, v_position, e_player) {
@@ -2224,7 +2224,7 @@ function function_2a290bb7(var_542837e6, v_position, e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x590f8585, Offset: 0xc338
 // Size: 0x36
 function function_86780a1e() {
@@ -2235,7 +2235,7 @@ function function_86780a1e() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb50fe956, Offset: 0xc378
 // Size: 0x3a4
 function function_79a8a785(var_542837e6, e_player) {
@@ -2282,7 +2282,7 @@ function function_79a8a785(var_542837e6, e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x55985c6c, Offset: 0xc728
 // Size: 0x214
 function function_85a789f1() {
@@ -2318,7 +2318,7 @@ function function_85a789f1() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x418d0095, Offset: 0xc948
 // Size: 0x876
 function function_65d82d13() {
@@ -2397,7 +2397,7 @@ function function_65d82d13() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4159197, Offset: 0xd1c8
 // Size: 0x132
 function light_energy_carry(e_player) {
@@ -2414,7 +2414,7 @@ function light_energy_carry(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1f397c41, Offset: 0xd308
 // Size: 0x36
 function function_fbcb1210(s_params) {
@@ -2422,7 +2422,7 @@ function function_fbcb1210(s_params) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf2af6731, Offset: 0xd348
 // Size: 0x294
 function function_9aa74e4(var_542837e6, e_player, str_clientfield) {
@@ -2460,7 +2460,7 @@ function function_9aa74e4(var_542837e6, e_player, str_clientfield) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9fc5f314, Offset: 0xd5e8
 // Size: 0x294
 function function_9c79eeed(e_player) {
@@ -2496,7 +2496,7 @@ function function_9c79eeed(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2149c8b0, Offset: 0xd888
 // Size: 0x104
 function function_dbe1d7b8() {
@@ -2512,7 +2512,7 @@ function function_dbe1d7b8() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x16b22582, Offset: 0xd998
 // Size: 0x84
 function light_countdown(n_time) {
@@ -2529,7 +2529,7 @@ function light_countdown(n_time) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xab58be9e, Offset: 0xda28
 // Size: 0xe2
 function function_35d91981(e_player) {
@@ -2539,7 +2539,7 @@ function function_35d91981(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x68e9350e, Offset: 0xdb18
 // Size: 0xc
 function function_419874c2(e_player) {
@@ -2547,7 +2547,7 @@ function function_419874c2(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1723d6f3, Offset: 0xdb30
 // Size: 0x24c
 function function_29022c99() {
@@ -2571,7 +2571,7 @@ function function_29022c99() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9612563d, Offset: 0xdd88
 // Size: 0x36
 function function_d5dcd2b0(e_player) {
@@ -2580,7 +2580,7 @@ function function_d5dcd2b0(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf27d71d9, Offset: 0xddc8
 // Size: 0x1d4
 function function_42afccbf(e_target, weapon = level.weaponnone, n_damage) {
@@ -2608,7 +2608,7 @@ function function_42afccbf(e_target, weapon = level.weaponnone, n_damage) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfc630caa, Offset: 0xdfa8
 // Size: 0x15c
 function function_479cad97(e_target, registerzmb_pod_play_preferred) {
@@ -2633,7 +2633,7 @@ function function_479cad97(e_target, registerzmb_pod_play_preferred) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6931f23f, Offset: 0xe110
 // Size: 0x1a4
 function function_759247cd(str_loc) {
@@ -2663,7 +2663,7 @@ function function_759247cd(str_loc) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa35eff2f, Offset: 0xe2c0
 // Size: 0x7e
 function function_fb68b3bb() {
@@ -2675,7 +2675,7 @@ function function_fb68b3bb() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x311a9e53, Offset: 0xe348
 // Size: 0xe4
 function spawn_feather(e_player) {
@@ -2688,7 +2688,7 @@ function spawn_feather(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xb70b1e80, Offset: 0xe438
 // Size: 0x6cc
 function function_6d466962(var_8290a028, s_original, mdl_feather, e_player = undefined) {
@@ -2719,7 +2719,7 @@ function function_6d466962(var_8290a028, s_original, mdl_feather, e_player = und
             break;
         case #"s_ww_ouranos_arrow_serpent":
             var_511277e5 = #"p8_fxanim_zm_red_apollo_arrow_dmg_03_bundle";
-            var_e3ed6c41 = #"hash_417d6d68cfb494d2";
+            var_e3ed6c41 = #"p8_fxanim_zm_red_ouranos_feather_03_bundle";
             var_8806d469 = "feather03_slot03";
             var_adcf0d98 = "tag_feather_03";
             break;
@@ -2775,7 +2775,7 @@ function function_6d466962(var_8290a028, s_original, mdl_feather, e_player = und
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xfac36be6, Offset: 0xeb10
 // Size: 0x284
 function function_381519d9(var_8290a028, mdl_feather, n_max_height, s_original) {
@@ -2809,7 +2809,7 @@ function function_381519d9(var_8290a028, mdl_feather, n_max_height, s_original) 
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x28cc9b21, Offset: 0xeda0
 // Size: 0x112
 function function_759736f(var_8290a028, mdl_feather) {
@@ -2823,7 +2823,7 @@ function function_759736f(var_8290a028, mdl_feather) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x21d50fc7, Offset: 0xeec0
 // Size: 0xc
 function function_35c395f1(e_player) {
@@ -2831,7 +2831,7 @@ function function_35c395f1(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9f22dba5, Offset: 0xeed8
 // Size: 0x37c
 function function_dd1c5ae6() {
@@ -2861,7 +2861,7 @@ function function_dd1c5ae6() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x43eb9c04, Offset: 0xf260
 // Size: 0x54
 function private function_bbee7f7b() {
@@ -2870,7 +2870,7 @@ function private function_bbee7f7b() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x378ab308, Offset: 0xf2c0
 // Size: 0xc
 function function_ca04e287(e_player) {
@@ -2878,7 +2878,7 @@ function function_ca04e287(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf8181109, Offset: 0xf2d8
 // Size: 0x2ac
 function function_68080923(var_52666e80, mdl_tree) {
@@ -2914,7 +2914,7 @@ function function_68080923(var_52666e80, mdl_tree) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x98ccf9db, Offset: 0xf590
 // Size: 0x31c
 function function_1775f520() {
@@ -2969,7 +2969,7 @@ function function_1775f520() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfe077e1, Offset: 0xf8b8
 // Size: 0xec
 function function_ab1bce1d(a_ents) {
@@ -2981,19 +2981,19 @@ function function_ab1bce1d(a_ents) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb406f8d0, Offset: 0xf9b0
 // Size: 0xac
 function function_fffb9aee(mdl_tree) {
     level endon(#"end_game");
     self thread function_ac211843();
     mdl_tree clientfield::set("" + #"hash_3c85334429a971b4", 0);
-    mdl_tree scene::play(#"hash_14bd682f680e9baa", "heal", mdl_tree);
+    mdl_tree scene::play(#"p8_fxanim_zm_red_gaia_bush_bundle", "heal", mdl_tree);
     mdl_tree setmodel(#"hash_3cb03679991cf4ad");
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x16ef08e9, Offset: 0xfa68
 // Size: 0x21c
 function function_ac211843(b_failed) {
@@ -3001,9 +3001,9 @@ function function_ac211843(b_failed) {
     var_cb2f80a0 = getent(self.target, "targetname");
     if (isdefined(b_failed) && b_failed) {
         wait 45;
-        var_cb2f80a0 scene::play(#"hash_12afdd17d7f069df", "regrow", var_cb2f80a0);
+        var_cb2f80a0 scene::play(#"p8_fxanim_zm_red_gaia_sprout_bundle", "regrow", var_cb2f80a0);
     } else {
-        var_cb2f80a0 scene::play(#"hash_12afdd17d7f069df", "grow", var_cb2f80a0);
+        var_cb2f80a0 scene::play(#"p8_fxanim_zm_red_gaia_sprout_bundle", "grow", var_cb2f80a0);
     }
     self flag::set(#"seedling_available");
     s_result = self waittill(#"trigger_activated");
@@ -3018,7 +3018,7 @@ function function_ac211843(b_failed) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x20c16fc1, Offset: 0xfc90
 // Size: 0x2a0
 function function_41cb93cc(e_player) {
@@ -3049,7 +3049,7 @@ function function_41cb93cc(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x888153d0, Offset: 0xff38
 // Size: 0x194
 function function_f4b436d5() {
@@ -3074,7 +3074,7 @@ function function_f4b436d5() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe2094bb0, Offset: 0x100d8
 // Size: 0x8c
 function function_9ef120d8() {
@@ -3085,7 +3085,7 @@ function function_9ef120d8() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc63614fe, Offset: 0x10170
 // Size: 0x36
 function function_3462981(s_params) {
@@ -3093,7 +3093,7 @@ function function_3462981(s_params) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3ccd362b, Offset: 0x101b0
 // Size: 0x10e
 function function_3b0917e6(eventstruct) {
@@ -3107,7 +3107,7 @@ function function_3b0917e6(eventstruct) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd60d2a48, Offset: 0x102c8
 // Size: 0x56
 function function_54da9fac() {
@@ -3117,7 +3117,7 @@ function function_54da9fac() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaf4100c3, Offset: 0x10328
 // Size: 0x45a
 function function_1c5aedd8(e_player) {
@@ -3163,7 +3163,7 @@ function function_1c5aedd8(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8668847, Offset: 0x10790
 // Size: 0x1cc
 function function_fd3d477c() {
@@ -3187,7 +3187,7 @@ function function_fd3d477c() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6806ee0f, Offset: 0x10968
 // Size: 0x150
 function function_73c422de(e_player) {
@@ -3201,7 +3201,7 @@ function function_73c422de(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe926fb6e, Offset: 0x10ac0
 // Size: 0xc
 function function_bde99aa3(e_player) {
@@ -3209,7 +3209,7 @@ function function_bde99aa3(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb1b8564a, Offset: 0x10ad8
 // Size: 0x194
 function function_4e2445e0() {
@@ -3243,7 +3243,7 @@ function function_4e2445e0() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5e71cd63, Offset: 0x10c78
 // Size: 0x7bc
 function function_6161ce9a(e_player) {
@@ -3348,7 +3348,7 @@ function function_6161ce9a(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x15f096c5, Offset: 0x11440
 // Size: 0x8c
 function function_74337491() {
@@ -3378,7 +3378,7 @@ function pause_zombies(b_pause = 0, var_53458a86 = 1) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xb7614f62, Offset: 0x115a0
 // Size: 0x76
 function private function_9c9f9731() {
@@ -3388,7 +3388,7 @@ function private function_9c9f9731() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3bb5e56a, Offset: 0x11620
 // Size: 0x19e
 function function_88edd220(e_player, w_charged) {
@@ -3404,7 +3404,7 @@ function function_88edd220(e_player, w_charged) {
     }
     e_player disableweaponcycling();
     e_player waittill(#"weapon_change_complete");
-    n_max_ammo = e_player function_b7f1fd2c(w_charged);
+    n_max_ammo = e_player getclipsize(w_charged);
     while (true) {
         if (e_player getweaponammoclip(w_charged) < n_max_ammo) {
             e_player givemaxammo(w_charged);
@@ -3414,17 +3414,19 @@ function function_88edd220(e_player, w_charged) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x82a92b46, Offset: 0x117c8
 // Size: 0x110
 function function_8ad28be8(e_player) {
     e_player endon(#"disconnect", #"hash_4d89e2bb8e3d1eb3");
     e_player.var_ac8a5779 = 0;
-    for (n_time = 0; n_time < 120 && !level flag::get("round_reset"); n_time += 0.5) {
+    n_time = 0;
+    while (n_time < 120 && !level flag::get("round_reset")) {
         if (e_player.var_ac8a5779 > 60) {
             break;
         }
         wait 0.5;
+        n_time += 0.5;
     }
     if (level flag::get("round_reset")) {
         b_success = 0;
@@ -3435,7 +3437,7 @@ function function_8ad28be8(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x920522a5, Offset: 0x118e0
 // Size: 0x154
 function function_cb939976(s_params) {
@@ -3452,7 +3454,7 @@ function function_cb939976(s_params) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7f1fbc65, Offset: 0x11a40
 // Size: 0x594
 function function_aea7779d(e_player) {
@@ -3519,7 +3521,7 @@ function function_aea7779d(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7542d12e, Offset: 0x11fe0
 // Size: 0x3ae
 function function_f3a9ad8c(e_player) {
@@ -3582,7 +3584,7 @@ function function_f3a9ad8c(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xbc71cf69, Offset: 0x12398
 // Size: 0x72
 function private function_4aea06b0(b_disable = 1) {
@@ -3596,7 +3598,7 @@ function private function_4aea06b0(b_disable = 1) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x21b0a8ed, Offset: 0x12418
 // Size: 0xe
 function function_9e0db7fd(player) {
@@ -3604,7 +3606,7 @@ function function_9e0db7fd(player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfbc80282, Offset: 0x12430
 // Size: 0x6
 function function_c5a5fbb1() {
@@ -3612,7 +3614,7 @@ function function_c5a5fbb1() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4de0b265, Offset: 0x12440
 // Size: 0x1f2
 function sndonoverride_no_() {
@@ -3652,7 +3654,7 @@ function sndonoverride_no_() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaf257182, Offset: 0x12640
 // Size: 0x2ae
 function function_4de98257(var_7e847524) {
@@ -3692,7 +3694,7 @@ function function_4de98257(var_7e847524) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x34d4cfc3, Offset: 0x128f8
 // Size: 0x1e4
 function function_bba98e7f(e_player) {
@@ -3714,7 +3716,7 @@ function function_bba98e7f(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x264bbe, Offset: 0x12ae8
 // Size: 0x84
 function function_4cd29565(s_quest) {
@@ -3727,7 +3729,7 @@ function function_4cd29565(s_quest) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x23c3a3, Offset: 0x12b78
 // Size: 0x17c
 function function_530d7ea0(var_bcf66490, e_player) {
@@ -3751,7 +3753,7 @@ function function_530d7ea0(var_bcf66490, e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xecc2a00, Offset: 0x12d00
 // Size: 0x16c
 function function_2d281542(var_bcf66490) {
@@ -3760,7 +3762,7 @@ function function_2d281542(var_bcf66490) {
         wait 1.5;
         level.var_643e7b15 clientfield::set("" + #"gaia_sprout_fx", 0);
         level thread scene::play("p8_fxanim_zm_red_gaia_portal_bundle", "grow");
-        level waittill(#"hash_3d66510793795cd4");
+        level waittill(#"rob_in_wreath");
         self.mdl_portal clientfield::set("" + #"gaia_portal_fx", var_bcf66490);
         return;
     }
@@ -3771,7 +3773,7 @@ function function_2d281542(var_bcf66490) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb8c970ad, Offset: 0x12e78
 // Size: 0x568
 function function_aeaedb3c() {
@@ -3824,7 +3826,7 @@ function function_aeaedb3c() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x645089ae, Offset: 0x133e8
 // Size: 0x84
 function function_ec538ada() {
@@ -3835,7 +3837,7 @@ function function_ec538ada() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xba320d24, Offset: 0x13478
 // Size: 0x284
 function is_soul_capture(var_88206a50, e_zombie) {
@@ -3857,7 +3859,7 @@ function is_soul_capture(var_88206a50, e_zombie) {
     if (isdefined(e_zombie.attacker) && isplayer(e_zombie.attacker) || isdefined(e_zombie.damageinflictor) && isplayer(e_zombie.damageinflictor)) {
         n_dist_sq = distance2dsquared(e_zombie.origin, var_88206a50.origin);
         if (isdefined(e_zombie) && e_zombie istouching(var_c87cb9d0) || isdefined(e_zombie.var_47d982a1) && e_zombie.var_47d982a1 && n_dist_sq <= 44100) {
-            if (!isdefined(var_88206a50.var_96f1a1e1) && e_zombie.archetype == #"catalyst" && e_zombie.var_9fde8624 == str_archetype) {
+            if (!isdefined(var_88206a50.var_96f1a1e1) && e_zombie.archetype == #"catalyst" && e_zombie.subarchetype == str_archetype) {
                 var_88206a50.var_96f1a1e1 = 1;
                 return true;
             } else if (isdefined(var_88206a50.var_96f1a1e1) && var_88206a50.var_96f1a1e1) {
@@ -3869,7 +3871,7 @@ function is_soul_capture(var_88206a50, e_zombie) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x95032e30, Offset: 0x13708
 // Size: 0x504
 function soul_captured(var_f0e6c7a2, ent) {
@@ -3929,7 +3931,7 @@ function soul_captured(var_f0e6c7a2, ent) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x81dbd766, Offset: 0x13c18
 // Size: 0xd4
 function function_34e4438c() {
@@ -3943,7 +3945,7 @@ function function_34e4438c() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf61b7789, Offset: 0x13cf8
 // Size: 0x608
 function function_59382270(e_player) {
@@ -4002,7 +4004,7 @@ function function_59382270(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2b16c0db, Offset: 0x14308
 // Size: 0x6a
 function function_d271c27e() {
@@ -4013,7 +4015,7 @@ function function_d271c27e() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8a5d5c15, Offset: 0x14380
 // Size: 0x188
 function function_f5f50d2b(e_player) {
@@ -4035,7 +4037,7 @@ function function_f5f50d2b(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4d418cff, Offset: 0x14510
 // Size: 0x278
 function function_d62ba10e() {
@@ -4072,7 +4074,7 @@ function function_d62ba10e() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcc85e866, Offset: 0x14790
 // Size: 0x40c
 function function_f53f86f8(e_player, s_pap_interact) {
@@ -4123,7 +4125,7 @@ function function_f53f86f8(e_player, s_pap_interact) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x190a4726, Offset: 0x14ba8
 // Size: 0x21c
 function pack_portal_fx(s_pap_interact) {
@@ -4157,7 +4159,7 @@ function pack_portal_fx(s_pap_interact) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x16997963, Offset: 0x14dd0
 // Size: 0x52c
 function function_6df333f3(e_player) {
@@ -4240,7 +4242,7 @@ function function_6df333f3(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcfb5ca1, Offset: 0x15308
 // Size: 0x8c
 function function_a6300fa2(ai_zombie) {
@@ -4254,7 +4256,7 @@ function function_a6300fa2(ai_zombie) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf0512d5f, Offset: 0x153a0
 // Size: 0x150
 function function_eeed4f2f(s_spawn_loc) {
@@ -4282,7 +4284,7 @@ function function_eeed4f2f(s_spawn_loc) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa32ffd9b, Offset: 0x154f8
 // Size: 0xac
 function function_3f05435f() {
@@ -4297,7 +4299,7 @@ function function_3f05435f() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xefa82204, Offset: 0x155b0
 // Size: 0xc0
 function function_7a15e228(s_spawn_loc) {
@@ -4312,7 +4314,7 @@ function function_7a15e228(s_spawn_loc) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaa35c1e5, Offset: 0x15678
 // Size: 0x180
 function function_b2a3182b(e_player) {
@@ -4344,7 +4346,7 @@ function function_b2a3182b(e_player) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x6637307d, Offset: 0x15800
 // Size: 0xac
 function private function_cee9fb17() {
@@ -4358,7 +4360,7 @@ function private function_cee9fb17() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1672f2d9, Offset: 0x158b8
 // Size: 0x78
 function function_e7a6f333(s_params) {
@@ -4374,7 +4376,7 @@ function function_e7a6f333(s_params) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8bdb83cb, Offset: 0x15938
 // Size: 0x674
 function function_f2081007(e_player, s_pap_interact) {
@@ -4458,7 +4460,7 @@ function function_f2081007(e_player, s_pap_interact) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2a3d15f, Offset: 0x15fb8
 // Size: 0xf2
 function function_99b6184() {
@@ -4475,7 +4477,7 @@ function function_99b6184() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc9716185, Offset: 0x160b8
 // Size: 0xd8
 function function_d0b13de1() {
@@ -4494,7 +4496,7 @@ function function_d0b13de1() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xdd6477bb, Offset: 0x16198
 // Size: 0x1d0
 function private function_63eabd37() {
@@ -4515,7 +4517,7 @@ function private function_63eabd37() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x125bee5, Offset: 0x16370
 // Size: 0x7c
 function private function_43a6c665(w_cur) {
@@ -4527,7 +4529,7 @@ function private function_43a6c665(w_cur) {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9374dc1f, Offset: 0x163f8
 // Size: 0xec
 function function_7d2500d8() {
@@ -4549,7 +4551,7 @@ function function_7d2500d8() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3df81e8a, Offset: 0x164f0
 // Size: 0x1b2
 function function_a3e12f96() {
@@ -4571,7 +4573,7 @@ function function_a3e12f96() {
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb3a21efe, Offset: 0x166b0
 // Size: 0xc4
 function function_8d47bf8(e_player) {

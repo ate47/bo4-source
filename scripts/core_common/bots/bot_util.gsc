@@ -7,7 +7,7 @@
 #namespace bot_util;
 
 // Namespace bot_util/bot_util
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x5c703f81, Offset: 0xb8
 // Size: 0x1b2
 function function_23cbc6c1(goal, b_force = 0, n_radius, n_height) {
@@ -34,7 +34,7 @@ function function_23cbc6c1(goal, b_force = 0, n_radius, n_height) {
 }
 
 // Namespace bot_util/bot_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x63106721, Offset: 0x278
 // Size: 0xd2
 function function_33834a13() {

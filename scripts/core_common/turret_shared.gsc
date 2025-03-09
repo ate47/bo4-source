@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace turret/turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfcd986f3, Offset: 0x308
 // Size: 0x4e
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3d0adbf9, Offset: 0x360
 // Size: 0x5a
 function get_weapon(n_index = 0) {
@@ -44,7 +44,7 @@ function get_parent(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd934a1f8, Offset: 0x400
 // Size: 0x54
 function laser_death_watcher() {
@@ -73,7 +73,7 @@ function enable_laser(b_enable, n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdf1f675b, Offset: 0x510
 // Size: 0xaa
 function watch_for_flash() {
@@ -85,7 +85,7 @@ function watch_for_flash() {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaffa479c, Offset: 0x5c8
 // Size: 0xfa
 function watch_for_flash_and_stun(n_index) {
@@ -107,7 +107,7 @@ function watch_for_flash_and_stun(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x80105f35, Offset: 0x6d0
 // Size: 0x148
 function emp_watcher(n_index) {
@@ -148,7 +148,7 @@ function enable_emp(b_enable, n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x593ab284, Offset: 0x8b0
 // Size: 0x3e
 function set_team(str_team, n_index) {
@@ -171,7 +171,7 @@ function get_team(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x436d5550, Offset: 0x968
 // Size: 0x2a
 function is_turret_enabled(n_index) {
@@ -179,7 +179,7 @@ function is_turret_enabled(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf6100c34, Offset: 0x9a0
 // Size: 0x4c
 function does_need_user(n_index) {
@@ -187,7 +187,7 @@ function does_need_user(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdef6431b, Offset: 0x9f8
 // Size: 0x32
 function does_have_user(n_index) {
@@ -195,7 +195,7 @@ function does_have_user(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf882e4d7, Offset: 0xa38
 // Size: 0x22
 function get_user(n_index) {
@@ -203,7 +203,7 @@ function get_user(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x11c2d81f, Offset: 0xa68
 // Size: 0x8a
 function _set_turret_needs_user(n_index, b_needs_user) {
@@ -250,7 +250,7 @@ function set_burst_parameters(n_fire_min, n_fire_max, n_wait_min, n_wait_max, n_
 }
 
 // Namespace turret/turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbbeb7d39, Offset: 0xc58
 // Size: 0x56
 function set_torso_targetting(n_index, n_torso_targetting_offset = -12) {
@@ -259,7 +259,7 @@ function set_torso_targetting(n_index, n_torso_targetting_offset = -12) {
 }
 
 // Namespace turret/turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3040aa17, Offset: 0xcb8
 // Size: 0x56
 function set_target_leading(n_index, n_target_leading_factor = 0.1) {
@@ -268,7 +268,7 @@ function set_target_leading(n_index, n_target_leading_factor = 0.1) {
 }
 
 // Namespace turret/turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe7c7d72a, Offset: 0xd18
 // Size: 0x6c
 function set_on_target_angle(n_angle, n_index) {
@@ -283,7 +283,7 @@ function set_on_target_angle(n_angle, n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x462eebe8, Offset: 0xd90
 // Size: 0xf2
 function set_target(e_target, v_offset, n_index) {
@@ -303,7 +303,7 @@ function set_target(e_target, v_offset, n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3d65de5d, Offset: 0xe90
 // Size: 0x286
 function _get_default_target_offset(e_target, n_index) {
@@ -339,7 +339,7 @@ function _get_default_target_offset(e_target, n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc502c007, Offset: 0x1120
 // Size: 0xb2
 function get_target(n_index) {
@@ -350,7 +350,7 @@ function get_target(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6441951b, Offset: 0x11e0
 // Size: 0x4c
 function is_target(e_target, n_index) {
@@ -362,7 +362,7 @@ function is_target(e_target, n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa261652c, Offset: 0x1238
 // Size: 0xac
 function clear_target(n_index) {
@@ -387,7 +387,7 @@ function set_min_target_distance_squared(n_distance_squared, n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x70093a68, Offset: 0x1340
 // Size: 0x15a
 function fire(n_index) {
@@ -409,7 +409,7 @@ function fire(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x27bcc625, Offset: 0x14a8
 // Size: 0xb8
 function stop(n_index, b_clear_target = 0) {
@@ -424,7 +424,7 @@ function stop(n_index, b_clear_target = 0) {
 }
 
 // Namespace turret/turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x23aaf71c, Offset: 0x1568
 // Size: 0x1b8
 function fire_for_time(n_time, n_index = 0) {
@@ -450,7 +450,7 @@ function fire_for_time(n_time, n_index = 0) {
 }
 
 // Namespace turret/turret_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x66ec6ab3, Offset: 0x1728
 // Size: 0xf4
 function shoot_at_target(e_target, n_time, v_offset, n_index, b_just_once) {
@@ -463,7 +463,7 @@ function shoot_at_target(e_target, n_time, v_offset, n_index, b_just_once) {
 }
 
 // Namespace turret/turret_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xc9e4c4de, Offset: 0x1828
 // Size: 0x174
 function _shoot_turret_at_target(e_target, n_time, v_offset, n_index, b_just_once) {
@@ -488,7 +488,7 @@ function _shoot_turret_at_target(e_target, n_time, v_offset, n_index, b_just_onc
 }
 
 // Namespace turret/turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5713dcb8, Offset: 0x19a8
 // Size: 0xa2
 function _waittill_turret_on_target(e_target, n_index) {
@@ -511,7 +511,7 @@ function shoot_at_target_once(e_target, v_offset, n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x758e261b, Offset: 0x1aa8
 // Size: 0xfc
 function enable(n_index, b_user_required, v_offset) {
@@ -544,7 +544,7 @@ function disable_ai_getoff(n_index, b_disable = 1) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa2294072, Offset: 0x1c38
 // Size: 0x90
 function disable(n_index) {
@@ -584,7 +584,7 @@ function unpause(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8b6c0047, Offset: 0x1de8
 // Size: 0x496
 function _turret_think(n_index, v_offset) {
@@ -654,7 +654,7 @@ function _turret_think(n_index, v_offset) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5def2a2f, Offset: 0x2288
 // Size: 0x54
 function _turret_health_monitor(n_index) {
@@ -665,7 +665,7 @@ function _turret_health_monitor(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc30af2a3, Offset: 0x22e8
 // Size: 0x88
 function _turret_health_monitor_loop(n_index) {
@@ -679,7 +679,7 @@ function _turret_health_monitor_loop(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x45b6f9f7, Offset: 0x2378
 // Size: 0x1d6
 function _has_nearby_player_enemy(index, turret) {
@@ -744,7 +744,7 @@ function _waittill_user_change(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa937ce4, Offset: 0x2760
 // Size: 0xb8
 function _check_for_paused(n_index) {
@@ -765,7 +765,7 @@ function _check_for_paused(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xff3f0426, Offset: 0x2820
 // Size: 0xdc
 function _drop_turret(n_index, bexitifautomatedonly) {
@@ -784,7 +784,7 @@ function does_have_target(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe7d0e6f0, Offset: 0x2940
 // Size: 0x76
 function _user_check(n_index) {
@@ -847,7 +847,7 @@ function _user_check(n_index) {
 #/
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb2dc4554, Offset: 0x2ce8
 // Size: 0x92
 function _get_turret_data(n_index) {
@@ -877,7 +877,7 @@ function has_turret(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4cb4cbe0, Offset: 0x2dc8
 // Size: 0xae
 function _update_turret_arcs(n_index) {
@@ -889,7 +889,7 @@ function _update_turret_arcs(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x400f1e24, Offset: 0x2e80
 // Size: 0x1b0
 function _init_turret(n_index = 0) {
@@ -917,7 +917,7 @@ function _init_turret(n_index = 0) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6889c107, Offset: 0x3038
 // Size: 0x250
 function _init_vehicle_turret(n_index) {
@@ -962,7 +962,7 @@ function _init_vehicle_turret(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6a927691, Offset: 0x3290
 // Size: 0x1f2
 function _burst_fire(n_max_time, n_index) {
@@ -1001,7 +1001,7 @@ function _burst_fire(n_max_time, n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xad8bd058, Offset: 0x3490
 // Size: 0xf2
 function _get_burst_fire_time(n_index) {
@@ -1020,7 +1020,7 @@ function _get_burst_fire_time(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcac5077, Offset: 0x3590
 // Size: 0xf2
 function _get_burst_wait_time(n_index) {
@@ -1039,7 +1039,7 @@ function _get_burst_wait_time(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf5f33ddd, Offset: 0x3690
 // Size: 0x2a
 function _index(n_index) {
@@ -1047,7 +1047,7 @@ function _index(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe5bfae35, Offset: 0x36c8
 // Size: 0xe6
 function _get_best_target(n_index) {
@@ -1074,7 +1074,7 @@ function _get_best_target(n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb2f1a1aa, Offset: 0x37b8
 // Size: 0x16a
 function can_hit_target(e_target, n_index) {
@@ -1095,7 +1095,7 @@ function can_hit_target(e_target, n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x5a53a8c5, Offset: 0x3930
 // Size: 0x28e
 function trace_test(e_target, v_offset = (0, 0, 0), n_index) {
@@ -1149,7 +1149,7 @@ function set_occupy_no_target_time(time, n_index) {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x95320dca, Offset: 0x3c68
 // Size: 0x2c
 function toggle_lensflare(bool) {
@@ -1181,7 +1181,7 @@ function track_lens_flare() {
 }
 
 // Namespace turret/turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbdb19f1f, Offset: 0x3e08
 // Size: 0xaa
 function _get_gunner_tag_for_turret_index(n_index) {

@@ -1,16 +1,16 @@
 {
-    "var_4dbc4aee": "#hash_b9ef623f63eb472",
+    "hash_4dbc4aee": "#hash_b9ef623f63eb472",
     "configstringfiletype": "scriptbundle",
     "result": "weapon#pistol_topbreak_t8_zm",
     "type": "craftblueprint",
-    "var_99577dd3": "weapon#hash_357e452940a24480",
-    "var_670f9944": "weapon#hash_cbca54286491987",
-    "var_2e0a273a": "weapon#hash_392389373e7f5e32",
+    "component01": "weapon#hash_357e452940a24480",
+    "component02": "weapon#hash_cbca54286491987",
+    "component03": "weapon#hash_392389373e7f5e32",
     "name": "zblueprint_trap_hellpools",
     "displayname": "Hellpools",
-    "var_391591d0": "#hash_b9ef623f63eb472",
-    "var_46309255": "one_time_craft",
-    "var_abd9b2d0": "#hash_b9ef623f63eb472",
+    "hash_391591d0": "#hash_b9ef623f63eb472",
+    "postcraft": "one_time_craft",
+    "hash_abd9b2d0": "#hash_b9ef623f63eb472",
     "componentcount": 3,
-    "var_318c150c": "section_wonder_weapon"
+    "hash_318c150c": "section_wonder_weapon"
 }

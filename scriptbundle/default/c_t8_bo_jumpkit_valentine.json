@@ -1,10 +1,10 @@
 {
-    "lootid": "#hash_31ed5ef50482380a",
+    "lootid": "#jumpjack_hearts",
     "wingsuit": "c_t8_bo_wingsuit_valentine",
     "image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_valentine",
     "name": "c_t8_bo_jumpkit_valentine",
     "displayname": "#hash_4becd87bef63d4f8",
     "preview_image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_valentine",
-    "var_4fa85a25": "dfxt_valentine",
+    "hash_4fa85a25": "dfxt_valentine",
     "parachute": "c_t8_bo_parachute_valentine"
 }

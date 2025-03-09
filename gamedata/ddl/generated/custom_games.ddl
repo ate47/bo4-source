@@ -633,7 +633,7 @@ version 86 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -1716,7 +1716,7 @@ version 85 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -2799,7 +2799,7 @@ version 84 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -3882,7 +3882,7 @@ version 83 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -4965,7 +4965,7 @@ version 82 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -6048,7 +6048,7 @@ version 81 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -7131,7 +7131,7 @@ version 80 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -8214,7 +8214,7 @@ version 79 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -9297,7 +9297,7 @@ version 78 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -10380,7 +10380,7 @@ version 77 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -11465,7 +11465,7 @@ version 76 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -12552,7 +12552,7 @@ version 75 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -13639,7 +13639,7 @@ version 74 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -14724,7 +14724,7 @@ version 73 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -15809,7 +15809,7 @@ version 72 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -16890,7 +16890,7 @@ version 71 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -17971,7 +17971,7 @@ version 70 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -19044,7 +19044,7 @@ version 69 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -20110,7 +20110,7 @@ version 68 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -21166,7 +21166,7 @@ version 67 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -22218,7 +22218,7 @@ version 66 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -23272,7 +23272,7 @@ version 65 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -24326,7 +24326,7 @@ version 64 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -25376,7 +25376,7 @@ version 63 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -26422,7 +26422,7 @@ version 62 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -27464,7 +27464,7 @@ version 61 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -28506,7 +28506,7 @@ version 60 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -29548,7 +29548,7 @@ version 59 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -30620,7 +30620,7 @@ version 58 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -31692,7 +31692,7 @@ version 57 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -32768,7 +32768,7 @@ version 56 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -33842,7 +33842,7 @@ version 55 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -34916,7 +34916,7 @@ version 54 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -35980,7 +35980,7 @@ version 53 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -37044,7 +37044,7 @@ version 52 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -38106,7 +38106,7 @@ version 51 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -39170,7 +39170,7 @@ version 50 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -40232,7 +40232,7 @@ version 49 {
         // offset 0xb028, size 0x8
         uint:5 boottime;
         // offset 0xb030, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb038, size 0x8
         uint:7 teamnumlives;
         // offset 0xb040, size 0x8
@@ -41300,7 +41300,7 @@ version 48 {
         // offset 0xb070, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0xb078, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb080, size 0x8
         uint:7 teamnumlives;
         // offset 0xb088, size 0x8
@@ -42376,7 +42376,7 @@ version 47 {
         // offset 0xb070, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0xb078, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb080, size 0x8
         uint:7 teamnumlives;
         // offset 0xb088, size 0x8
@@ -43452,7 +43452,7 @@ version 46 {
         // offset 0xb070, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0xb078, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb080, size 0x8
         uint:7 teamnumlives;
         // offset 0xb088, size 0x8
@@ -44527,7 +44527,7 @@ version 45 {
         // offset 0xb070, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0xb078, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb080, size 0x8
         uint:7 teamnumlives;
         // offset 0xb088, size 0x8
@@ -45600,7 +45600,7 @@ version 44 {
         // offset 0xb070, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0xb078, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb080, size 0x8
         uint:7 teamnumlives;
         // offset 0xb088, size 0x8
@@ -46675,7 +46675,7 @@ version 43 {
         // offset 0xb070, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0xb078, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb080, size 0x8
         uint:7 teamnumlives;
         // offset 0xb088, size 0x8
@@ -47742,7 +47742,7 @@ version 42 {
         // offset 0xb070, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0xb078, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb080, size 0x8
         uint:7 teamnumlives;
         // offset 0xb088, size 0x8
@@ -48153,7 +48153,7 @@ version 42 {
 
     // idx 1 members 4
     enum hash_5446546f71ee6cdf {
-        hash_2e29a4cc7409d939, // 0x0,
+        hair, // 0x0,
         helmet, // 0x1,
         body, // 0x2,
         hash_7d030d1323187739, // 0x3
@@ -48806,7 +48806,7 @@ version 41 {
         // offset 0xb070, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0xb078, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0xb080, size 0x8
         uint:7 teamnumlives;
         // offset 0xb088, size 0x8
@@ -49217,7 +49217,7 @@ version 41 {
 
     // idx 1 members 4
     enum hash_5446546f71ee6cdf {
-        hash_2e29a4cc7409d939, // 0x0,
+        hair, // 0x0,
         helmet, // 0x1,
         body, // 0x2,
         hash_7d030d1323187739, // 0x3

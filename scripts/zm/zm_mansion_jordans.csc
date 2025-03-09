@@ -10,7 +10,7 @@
 #namespace mansion_jordans;
 
 // Namespace mansion_jordans/zm_mansion_jordans
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf8c0623c, Offset: 0xc0
 // Size: 0x164
 function init() {
@@ -23,7 +23,7 @@ function init() {
 }
 
 // Namespace mansion_jordans/zm_mansion_jordans
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa25f171d, Offset: 0x230
 // Size: 0x154
 function function_5869f09a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -40,7 +40,7 @@ function function_5869f09a(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_jordans/zm_mansion_jordans
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xeb6d3c7e, Offset: 0x390
 // Size: 0x5c
 function function_c51132ba(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

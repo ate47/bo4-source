@@ -32,7 +32,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfec6f75d, Offset: 0x3d8
 // Size: 0x244
 function __init__() {
@@ -49,7 +49,7 @@ function __init__() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbd848ed2, Offset: 0x628
 // Size: 0x374
 function function_bad944b5() {
@@ -85,7 +85,7 @@ function function_bad944b5() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe98f933a, Offset: 0x9a8
 // Size: 0x5c
 function __main__() {
@@ -95,7 +95,7 @@ function __main__() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x924d9e91, Offset: 0xa10
 // Size: 0x172
 function on_player_connect() {
@@ -118,7 +118,7 @@ function on_player_connect() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe19921ff, Offset: 0xb90
 // Size: 0xb8
 function check_for_zombie_in_wolf_area() {
@@ -139,7 +139,7 @@ function check_for_zombie_in_wolf_area() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 13, eflags: 0x1 linked
+// Params 13, eflags: 0x0
 // Checksum 0xd5836b0a, Offset: 0xc50
 // Size: 0x336
 function function_d2093ddd(willbekilled, inflictor, attacker, damage, flags, mod, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -180,7 +180,7 @@ function function_d2093ddd(willbekilled, inflictor, attacker, damage, flags, mod
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x539fb0c4, Offset: 0xf90
 // Size: 0x62c
 function function_e40e9d94(n_eating_anim, ai_zombie, e_activator) {
@@ -203,9 +203,9 @@ function function_e40e9d94(n_eating_anim, ai_zombie, e_activator) {
         var_3e4fd9fd = "Eat Left";
         var_5dedf8ea = (0, 85, 0);
     }
-    var_678e573f scene::play(#"hash_7ab2e0d1b8b97d93", "impact", ai_zombie);
-    var_678e573f thread scene::play(#"hash_7ab2e0d1b8b97d93", "rise", ai_zombie);
-    var_66a8d5fc = scene::function_8582657c(#"hash_7ab2e0d1b8b97d93", "rise");
+    var_678e573f scene::play(#"ai_zm_esc_zombie_dreamcatch_rise", "impact", ai_zombie);
+    var_678e573f thread scene::play(#"ai_zm_esc_zombie_dreamcatch_rise", "rise", ai_zombie);
+    var_66a8d5fc = scene::function_8582657c(#"ai_zm_esc_zombie_dreamcatch_rise", "rise");
     if (isdefined(ai_zombie)) {
         ai_zombie clientfield::set("" + #"hash_588871862d19b97d", 1);
     }
@@ -238,8 +238,8 @@ function function_e40e9d94(n_eating_anim, ai_zombie, e_activator) {
         }
         return;
     }
-    var_678e573f thread scene::play(#"hash_7ab2e0d1b8b97d93", "shrink", ai_zombie);
-    var_391fd0d5 = scene::function_8582657c(#"hash_7ab2e0d1b8b97d93", "shrink");
+    var_678e573f thread scene::play(#"ai_zm_esc_zombie_dreamcatch_rise", "shrink", ai_zombie);
+    var_391fd0d5 = scene::function_8582657c(#"ai_zm_esc_zombie_dreamcatch_rise", "shrink");
     var_391fd0d5 /= 2;
     v_pos = var_3e1900e4 gettagorigin("tag_mouth_fx");
     if (!isdefined(v_pos)) {
@@ -266,7 +266,7 @@ function function_e40e9d94(n_eating_anim, ai_zombie, e_activator) {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7f5e317e, Offset: 0x15c8
 // Size: 0x6c
 function function_37937b33() {
@@ -277,7 +277,7 @@ function function_37937b33() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa061f913, Offset: 0x1640
 // Size: 0xf8
 function which_eating_anim() {
@@ -294,7 +294,7 @@ function which_eating_anim() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1270c8bf, Offset: 0x1740
 // Size: 0x2a4
 function soul_catcher_state_manager() {
@@ -327,7 +327,7 @@ function soul_catcher_state_manager() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4c8cc6d4, Offset: 0x19f0
 // Size: 0xe2
 function function_ee929ece() {
@@ -342,7 +342,7 @@ function function_ee929ece() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x108a27e9, Offset: 0x1ae0
 // Size: 0x8c
 function wolf_head_removal(wolf_head_model_string) {
@@ -353,7 +353,7 @@ function wolf_head_removal(wolf_head_model_string) {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2850b6ad, Offset: 0x1b78
 // Size: 0x68
 function soul_catchers_charged() {
@@ -368,7 +368,7 @@ function soul_catchers_charged() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe2b87585, Offset: 0x1be8
 // Size: 0xd4
 function soul_catcher_check() {
@@ -391,7 +391,7 @@ function soul_catcher_check() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xce94ae87, Offset: 0x1cc8
 // Size: 0xd2
 function function_e07f0c65(e_activator) {
@@ -408,7 +408,7 @@ function function_e07f0c65(e_activator) {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc9e5b6cd, Offset: 0x1da8
 // Size: 0x102
 function function_41b1af8c() {
@@ -427,7 +427,7 @@ function function_41b1af8c() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xabd509f, Offset: 0x1eb8
 // Size: 0xd8
 function first_wolf_encounter_vo(e_activator) {
@@ -443,7 +443,7 @@ function first_wolf_encounter_vo(e_activator) {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x211a4fc9, Offset: 0x1f98
 // Size: 0x162
 function private function_74c96a90(e_activator) {
@@ -477,14 +477,14 @@ function private function_74c96a90(e_activator) {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb2cc5d8c, Offset: 0x2108
 // Size: 0x294
 function tomahawk_pickup() {
     level flag::wait_till(#"soul_catchers_charged");
     var_fd22f9df = struct::get("tom_pil");
     mdl_tomahawk = var_fd22f9df.scene_ents[#"prop 2"];
-    mdl_tomahawk waittill(#"hash_72879554ff8d0b60");
+    mdl_tomahawk waittill(#"tomahawk_ready_for_pickup");
     wait 0.5;
     mdl_tomahawk playloopsound(#"amb_tomahawk_swirl");
     s_pos_trigger = struct::get("t_tom_pos", "targetname");
@@ -510,7 +510,7 @@ function tomahawk_pickup() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xee038907, Offset: 0x23a8
 // Size: 0x64
 function function_5fd2c72e() {
@@ -520,7 +520,7 @@ function function_5fd2c72e() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5db2867f, Offset: 0x2418
 // Size: 0xde
 function tomahawk_pickup_trigger() {
@@ -535,7 +535,7 @@ function tomahawk_pickup_trigger() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x94fe4cf9, Offset: 0x2500
 // Size: 0x434
 function function_f0ef3897(e_player) {
@@ -582,7 +582,7 @@ function function_f0ef3897(e_player) {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x37ba4feb, Offset: 0x2940
 // Size: 0xd4
 function function_b5b00d86() {
@@ -600,7 +600,7 @@ function function_b5b00d86() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xadb339ac, Offset: 0x2a20
 // Size: 0x3ec
 function function_6300f001() {

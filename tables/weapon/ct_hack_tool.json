@@ -1,0 +1,13 @@
+{
+    "name": "#ct_hack_tool",
+    "baseWeapon": "#ct_hack_tool",
+    "streamkey": "#hash_3eeb2ac8f6925ac3",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "gadgetreadysoundplayer": "#hash_1f6dbd3ca241f0c6",
+    "tunables1": "#hash_1d942572410",
+    "viewmodel": "#hash_1d931a15a90",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "underwaterExplosionSurfaceFX": []
+}

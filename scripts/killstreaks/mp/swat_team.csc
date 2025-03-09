@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace swat_team/swat_team
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe34d6b35, Offset: 0x258
 // Size: 0x1e4
 function __init__() {
@@ -34,11 +34,11 @@ function __init__() {
 }
 
 // Namespace swat_team/swat_team
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8197dd02, Offset: 0x448
 // Size: 0xac
 function spawned(local_client_num, bundle) {
-    if (self.var_9fde8624 === #"human_lmg") {
+    if (self.subarchetype === #"human_lmg") {
         if (self.team === #"free" && isdefined(level.var_fd6018ca) && level.var_fd6018ca) {
             self killstreak_bundles::spawned(local_client_num, level.var_c80088b7);
             return;
@@ -48,7 +48,7 @@ function spawned(local_client_num, bundle) {
 }
 
 // Namespace swat_team/swat_team
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x72951bdc, Offset: 0x500
 // Size: 0x8c
 function function_266f2abf(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -59,7 +59,7 @@ function function_266f2abf(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace swat_team/swat_team
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa7837985, Offset: 0x598
 // Size: 0x94
 function function_3deaa7d0(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -70,7 +70,7 @@ function function_3deaa7d0(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace swat_team/swat_team
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xcf8c02c6, Offset: 0x638
 // Size: 0x6c
 function function_92ec578c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -80,7 +80,7 @@ function function_92ec578c(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace swat_team/swat_team
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfb1ca420, Offset: 0x6b0
 // Size: 0xa4
 function function_8fa6561f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -94,7 +94,7 @@ function function_8fa6561f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace swat_team/swat_team
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x355fdfe8, Offset: 0x760
 // Size: 0xbc
 function private function_d9dea06b(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {

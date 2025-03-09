@@ -31,7 +31,7 @@
 #namespace zm_mansion_special_rounds;
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x861d59e4, Offset: 0x260
 // Size: 0x32c
 function init() {
@@ -82,7 +82,7 @@ function init() {
 #/
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2859a8c5, Offset: 0x5d8
 // Size: 0x2a
 function function_2ffc8cca(n_max) {
@@ -90,7 +90,7 @@ function function_2ffc8cca(n_max) {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe0beb622, Offset: 0x610
 // Size: 0x9c
 function function_6957c745(str_archetype, n_round, var_b2239dab) {
@@ -104,7 +104,7 @@ function function_6957c745(str_archetype, n_round, var_b2239dab) {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf9d1d39d, Offset: 0x6b8
 // Size: 0x6c
 function function_36c1dcca(n_round, var_b2239dab) {
@@ -125,7 +125,7 @@ function function_3dab3302() {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x15799d76, Offset: 0x768
 // Size: 0x84
 function function_93eab559() {
@@ -186,7 +186,7 @@ function function_ffa01525() {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x17953e9c, Offset: 0x998
 // Size: 0x26a
 function function_e1c262fb(entity) {
@@ -220,7 +220,7 @@ function function_e1c262fb(entity) {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfcbb8ffa, Offset: 0xc10
 // Size: 0x164
 function function_c79d744e(s_spawn_loc) {
@@ -241,7 +241,7 @@ function function_c79d744e(s_spawn_loc) {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfb9cbfe4, Offset: 0xd80
 // Size: 0xc6
 function function_d075d6e9() {
@@ -256,7 +256,7 @@ function function_d075d6e9() {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5869e7a1, Offset: 0xe50
 // Size: 0xae
 function function_2438d55e(s_spawn_loc) {
@@ -273,7 +273,7 @@ function function_2438d55e(s_spawn_loc) {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x66e3d77f, Offset: 0xf08
 // Size: 0xc
 function bat_death(str_notify) {
@@ -281,7 +281,7 @@ function bat_death(str_notify) {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdc7c9835, Offset: 0xf20
 // Size: 0x8a
 function function_18f5f327(s_spawn_loc) {
@@ -298,7 +298,7 @@ function function_18f5f327(s_spawn_loc) {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x95bd1216, Offset: 0xfb8
 // Size: 0x138
 function get_favorite_enemy() {
@@ -339,7 +339,7 @@ function function_27e8f915(s_loc, e_target, b_invert = 0) {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xda44017c, Offset: 0x1180
 // Size: 0x122
 function function_5618c56d(a_locs) {
@@ -385,7 +385,7 @@ function function_38c0c907() {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x424b4ce0, Offset: 0x13c0
 // Size: 0x74
 function p9_wood_lumber_01_1x4_64_01() {
@@ -395,7 +395,7 @@ function p9_wood_lumber_01_1x4_64_01() {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x11dd7ffa, Offset: 0x1440
 // Size: 0x118
 function function_988438a7(sp_spawner = level.var_38f5f109[0], s_spawn, n_round_number) {
@@ -412,7 +412,7 @@ function function_988438a7(sp_spawner = level.var_38f5f109[0], s_spawn, n_round_
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x55936cd8, Offset: 0x1560
 // Size: 0xb0
 function function_f46db405() {
@@ -434,7 +434,7 @@ function function_f46db405() {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8b400d39, Offset: 0x1618
 // Size: 0x300
 function function_50ec1ddf() {
@@ -467,7 +467,7 @@ function function_50ec1ddf() {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb153a722, Offset: 0x1920
 // Size: 0xa2
 function function_e91102ad() {
@@ -480,7 +480,7 @@ function function_e91102ad() {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7bfdeb20, Offset: 0x19d0
 // Size: 0x108
 function function_1a27cc15() {
@@ -496,7 +496,7 @@ function function_1a27cc15() {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x91c140b7, Offset: 0x1ae0
 // Size: 0x2f4
 function function_84c5200d(entity) {
@@ -537,7 +537,7 @@ function function_84c5200d(entity) {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x86fe9a98, Offset: 0x1de0
 // Size: 0x104
 function function_d1371239(var_a9e4d1ee) {
@@ -564,7 +564,7 @@ function function_d1371239(var_a9e4d1ee) {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbb00b0fa, Offset: 0x1ef0
 // Size: 0x6e
 function function_acab3515() {
@@ -578,7 +578,7 @@ function function_acab3515() {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5f185c3f, Offset: 0x1f68
 // Size: 0x142
 function function_bc0facd3() {
@@ -595,7 +595,7 @@ function function_bc0facd3() {
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf800d3ae, Offset: 0x20b8
 // Size: 0x80
 function function_f3ce0f2b(player) {

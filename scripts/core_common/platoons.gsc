@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace platoons/platoons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb2e94a96, Offset: 0xd8
 // Size: 0x15c
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace platoons/platoons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfeed0e9d, Offset: 0x240
 // Size: 0x1a
 function function_382a49e0() {
@@ -33,7 +33,7 @@ function function_382a49e0() {
 }
 
 // Namespace platoons/platoons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd860f112, Offset: 0x268
 // Size: 0x22
 function function_bb1ab64b() {
@@ -41,7 +41,7 @@ function function_bb1ab64b() {
 }
 
 // Namespace platoons/platoons
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xc2a6e14d, Offset: 0x298
 // Size: 0xcc
 function private on_start_gametype() {
@@ -53,7 +53,7 @@ function private on_start_gametype() {
 }
 
 // Namespace platoons/platoons
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x165144c, Offset: 0x370
 // Size: 0x2c
 function function_334c4bec(team, platoon) {
@@ -61,7 +61,7 @@ function function_334c4bec(team, platoon) {
 }
 
 // Namespace platoons/platoons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd9d09d66, Offset: 0x3a8
 // Size: 0x11e
 function function_596bfb16() {

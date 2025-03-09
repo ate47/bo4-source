@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "use_item_spawns",
     "displayname": "#hash_34c0c2357d745c85",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "useItemSpawns",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

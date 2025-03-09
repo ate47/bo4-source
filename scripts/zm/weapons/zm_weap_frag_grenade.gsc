@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace frag_grenade/zm_weap_frag_grenade
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc8c5dfda, Offset: 0xf8
 // Size: 0x64
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace frag_grenade/zm_weap_frag_grenade
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0xfc89659c, Offset: 0x168
 // Size: 0xea
 function function_719b774a(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

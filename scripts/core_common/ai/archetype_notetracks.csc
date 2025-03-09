@@ -14,7 +14,7 @@ function autoexec main() {
 }
 
 // Namespace notetracks/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7ccb7da7, Offset: 0x160
 // Size: 0x84
 function private initializenotetrackhandlers(localclientnum) {
@@ -24,7 +24,7 @@ function private initializenotetrackhandlers(localclientnum) {
 }
 
 // Namespace notetracks/archetype_notetracks
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x3493d56e, Offset: 0x1f0
 // Size: 0x4c
 function private addsurfacenotetrackfxhandler(localclientnum, notetrack, surfacetable) {
@@ -33,7 +33,7 @@ function private addsurfacenotetrackfxhandler(localclientnum, notetrack, surface
 }
 
 // Namespace notetracks/archetype_notetracks
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xddb39af1, Offset: 0x248
 // Size: 0xb0
 function private handlesurfacenotetrackfx(localclientnum, notetrack, surfacetable) {

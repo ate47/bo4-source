@@ -9,15 +9,15 @@
         {
             "minweight": 20,
             "itementry": "armor_shard_item",
-            "var_3f8c08e3": "armor_shard_item",
+            "childitementry_1": "armor_shard_item",
             "maxweight": 20,
             "available": -1
         }
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 2,
-    "var_9b009839": -1,
+    "hash_345eba59": 2,
+    "hash_9b009839": -1,
     "name": "asylum_list_armor_shards",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

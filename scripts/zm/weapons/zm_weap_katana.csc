@@ -11,15 +11,15 @@
 
 // Namespace zm_weap_katana/zm_weap_katana
 // Params 0, eflags: 0x2
-// Checksum 0x3ff355a0, Offset: 0x110
+// Checksum 0x9eff8cac, Offset: 0x110
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zm_weap_katana", &__init__, undefined, undefined);
 }
 
 // Namespace zm_weap_katana/zm_weap_katana
-// Params 0, eflags: 0x1 linked
-// Checksum 0x59eefc55, Offset: 0x158
+// Params 0, eflags: 0x0
+// Checksum 0x21e5b5ac, Offset: 0x158
 // Size: 0x10c
 function __init__() {
     clientfield::register("toplayer", "" + #"hero_katana_vigor_postfx", 1, 1, "counter", &function_d05553c6, 0, 0);
@@ -28,8 +28,8 @@ function __init__() {
 }
 
 // Namespace zm_weap_katana/zm_weap_katana
-// Params 7, eflags: 0x5 linked
-// Checksum 0x57808ed5, Offset: 0x270
+// Params 7, eflags: 0x4
+// Checksum 0x4078eb0b, Offset: 0x270
 // Size: 0x8c
 function private function_d05553c6(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newvalue && !namespace_a6aea2c6::is_active(#"silent_film")) {
@@ -38,8 +38,8 @@ function private function_d05553c6(localclientnum, oldvalue, newvalue, bnewent, 
 }
 
 // Namespace zm_weap_katana/zm_weap_katana
-// Params 7, eflags: 0x1 linked
-// Checksum 0xaa508717, Offset: 0x308
+// Params 7, eflags: 0x0
+// Checksum 0xc6d651fb, Offset: 0x308
 // Size: 0x3b0
 function katana_rush_postfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (!isdefined(self.var_d3d459f)) {
@@ -86,8 +86,8 @@ function katana_rush_postfx(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace zm_weap_katana/zm_weap_katana
-// Params 1, eflags: 0x5 linked
-// Checksum 0xf124441b, Offset: 0x6c0
+// Params 1, eflags: 0x4
+// Checksum 0x51c4d771, Offset: 0x6c0
 // Size: 0xc8
 function private function_66752a96(localclientnum) {
     ai::add_ai_spawn_function(&function_74541167);
@@ -98,8 +98,8 @@ function private function_66752a96(localclientnum) {
 }
 
 // Namespace zm_weap_katana/zm_weap_katana
-// Params 1, eflags: 0x5 linked
-// Checksum 0xebe06a74, Offset: 0x790
+// Params 1, eflags: 0x4
+// Checksum 0xd3124b15, Offset: 0x790
 // Size: 0xa2
 function private function_74541167(localclientnum) {
     if (!isdefined(self.var_1030ad00)) {
@@ -114,8 +114,8 @@ function private function_74541167(localclientnum) {
 }
 
 // Namespace zm_weap_katana/zm_weap_katana
-// Params 1, eflags: 0x5 linked
-// Checksum 0x15b60d55, Offset: 0x840
+// Params 1, eflags: 0x4
+// Checksum 0x112398b7, Offset: 0x840
 // Size: 0x164
 function private function_82ee4d9d(localclientnum) {
     ai::function_932006d1(&function_74541167);
@@ -131,8 +131,8 @@ function private function_82ee4d9d(localclientnum) {
 }
 
 // Namespace zm_weap_katana/zm_weap_katana
-// Params 7, eflags: 0x1 linked
-// Checksum 0x11ad8f31, Offset: 0x9b0
+// Params 7, eflags: 0x0
+// Checksum 0x49367779, Offset: 0x9b0
 // Size: 0x10e
 function katana_rush_sfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {

@@ -14,15 +14,15 @@
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
 // Params 0, eflags: 0x2
-// Checksum 0x1aecaf1e, Offset: 0x778
+// Checksum 0x521b583b, Offset: 0x778
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zm_ai_blight_father", &__init__, undefined, undefined);
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x1 linked
-// Checksum 0x9cf57bef, Offset: 0x7c0
+// Params 0, eflags: 0x0
+// Checksum 0xc365817e, Offset: 0x7c0
 // Size: 0x7a4
 function __init__() {
     level._effect[#"fx8_blightfather_weakspot_sack_amb"] = "zm_ai/fx8_blightfather_weakspot_sack_amb";
@@ -62,8 +62,8 @@ function __init__() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0x7b1e67bc, Offset: 0xf70
+// Params 7, eflags: 0x4
+// Checksum 0xd988657d, Offset: 0xf70
 // Size: 0xdc
 function private blightfatherdeathfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self util::waittill_dobj(localclientnum);
@@ -78,8 +78,8 @@ function private blightfatherdeathfx(localclientnum, oldval, newval, bnewent, bi
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0x835283ea, Offset: 0x1058
+// Params 7, eflags: 0x4
+// Checksum 0x212c0260, Offset: 0x1058
 // Size: 0xbc
 function private function_7d5fa1ae(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self util::waittill_dobj(localclientnum);
@@ -93,8 +93,8 @@ function private function_7d5fa1ae(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0xb70c236c, Offset: 0x1120
+// Params 7, eflags: 0x4
+// Checksum 0xb3eed7e3, Offset: 0x1120
 // Size: 0xbe
 function private function_c6aa29ea(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
@@ -108,8 +108,8 @@ function private function_c6aa29ea(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0xc7497ad3, Offset: 0x11e8
+// Params 7, eflags: 0x4
+// Checksum 0x8f4dbb47, Offset: 0x11e8
 // Size: 0xbe
 function private function_caf74103(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
@@ -123,8 +123,8 @@ function private function_caf74103(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0x85ff7431, Offset: 0x12b0
+// Params 7, eflags: 0x4
+// Checksum 0xe3e11d8, Offset: 0x12b0
 // Size: 0xbe
 function private function_bc64a2a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
@@ -138,8 +138,8 @@ function private function_bc64a2a(localclientnum, oldval, newval, bnewent, binit
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0x12e7799b, Offset: 0x1378
+// Params 7, eflags: 0x4
+// Checksum 0xd9aa49b6, Offset: 0x1378
 // Size: 0xbe
 function private function_c4fff539(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
@@ -153,8 +153,8 @@ function private function_c4fff539(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0x886b91e1, Offset: 0x1440
+// Params 7, eflags: 0x4
+// Checksum 0x7167184f, Offset: 0x1440
 // Size: 0xbe
 function private function_de0a50df(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
@@ -168,8 +168,8 @@ function private function_de0a50df(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0xf7cd5470, Offset: 0x1508
+// Params 7, eflags: 0x4
+// Checksum 0x263cd9e0, Offset: 0x1508
 // Size: 0x1da
 function private function_2c098ccc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     switch (newval) {
@@ -195,8 +195,8 @@ function private function_2c098ccc(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0x8108f2c7, Offset: 0x16f0
+// Params 7, eflags: 0x4
+// Checksum 0xa4c7a93f, Offset: 0x16f0
 // Size: 0x84
 function private tonguegrabpostfx(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newvalue) {
@@ -207,8 +207,8 @@ function private tonguegrabpostfx(localclientnum, oldvalue, newvalue, bnewent, b
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0x748e7450, Offset: 0x1780
+// Params 7, eflags: 0x4
+// Checksum 0x63022f18, Offset: 0x1780
 // Size: 0x114
 function private tonguegrabrumble(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newvalue) {
@@ -226,8 +226,8 @@ function private tonguegrabrumble(localclientnum, oldvalue, newvalue, bnewent, b
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0xfc64adb2, Offset: 0x18a0
+// Params 7, eflags: 0x4
+// Checksum 0xc09b203b, Offset: 0x18a0
 // Size: 0x116
 function private function_59f8f265(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
@@ -245,24 +245,24 @@ function private function_59f8f265(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0x703f61be, Offset: 0x19c0
+// Params 7, eflags: 0x4
+// Checksum 0x24fb5e83, Offset: 0x19c0
 // Size: 0x74
 function private function_67ad42f3(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_maggot_spawn_burst"], self, "tag_sac_fx_le");
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0x6d89bda7, Offset: 0x1a40
+// Params 7, eflags: 0x4
+// Checksum 0x15294879, Offset: 0x1a40
 // Size: 0x74
 function private function_f102952d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_maggot_spawn_burst"], self, "tag_sac_fx_ri");
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0x962875b3, Offset: 0x1ac0
+// Params 7, eflags: 0x4
+// Checksum 0x38fca35b, Offset: 0x1ac0
 // Size: 0xcc
 function private function_192c82f8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self util::waittill_dobj(localclientnum);
@@ -276,8 +276,8 @@ function private function_192c82f8(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0x215a8913, Offset: 0x1b98
+// Params 7, eflags: 0x4
+// Checksum 0xccae7dea, Offset: 0x1b98
 // Size: 0xb4
 function private function_e47c2324(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
@@ -290,8 +290,8 @@ function private function_e47c2324(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0x3c9f886b, Offset: 0x1c58
+// Params 7, eflags: 0x4
+// Checksum 0x13f58145, Offset: 0x1c58
 // Size: 0x11c
 function private function_f02b0934(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     position = self.origin;
@@ -304,16 +304,16 @@ function private function_f02b0934(localclientnum, oldvalue, newvalue, bnewent, 
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0xae08df4a, Offset: 0x1d80
+// Params 7, eflags: 0x4
+// Checksum 0x8c099850, Offset: 0x1d80
 // Size: 0x5c
 function private function_7d5e27f4(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     function_36e4ebd4(localclientnum, "damage_heavy");
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0xdbd76f9d, Offset: 0x1de8
+// Params 7, eflags: 0x4
+// Checksum 0xe1620c32, Offset: 0x1de8
 // Size: 0x74
 function private function_75be2854(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
@@ -322,8 +322,8 @@ function private function_75be2854(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 5, eflags: 0x1 linked
-// Checksum 0x61c612f6, Offset: 0x1e68
+// Params 5, eflags: 0x0
+// Checksum 0xc8cb45a8, Offset: 0x1e68
 // Size: 0x1bc
 function function_958ba8d1(localclientnum, pos, surface, notetrack, bone) {
     e_player = function_5c10bd79(localclientnum);
@@ -354,8 +354,8 @@ function function_958ba8d1(localclientnum, pos, surface, notetrack, bone) {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 7, eflags: 0x5 linked
-// Checksum 0xf28301fe, Offset: 0x2030
+// Params 7, eflags: 0x4
+// Checksum 0xf395c76, Offset: 0x2030
 // Size: 0x13e
 function private function_2d7f68ab(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (!self zm_utility::function_f8796df3(localclientnum)) {
@@ -376,8 +376,8 @@ function private function_2d7f68ab(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x1 linked
-// Checksum 0x3a0f8f94, Offset: 0x2178
+// Params 0, eflags: 0x0
+// Checksum 0x5734876c, Offset: 0x2178
 // Size: 0x8c
 function function_1a4f64a() {
     self notify("6dcd79d7489a1b1");
@@ -391,8 +391,8 @@ function function_1a4f64a() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x1 linked
-// Checksum 0x464cd4a1, Offset: 0x2210
+// Params 0, eflags: 0x0
+// Checksum 0x89956cf7, Offset: 0x2210
 // Size: 0x134
 function function_cf88b888() {
     self notify("77cd1973e51a1a17");
@@ -414,8 +414,8 @@ function function_cf88b888() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x1 linked
-// Checksum 0x6f34ab18, Offset: 0x2350
+// Params 0, eflags: 0x0
+// Checksum 0xe6e79cae, Offset: 0x2350
 // Size: 0x12c
 function function_1ca2497b() {
     self notify("6b4310a91dda8e0b");
@@ -437,8 +437,8 @@ function function_1ca2497b() {
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x1 linked
-// Checksum 0x4eb22026, Offset: 0x2488
+// Params 1, eflags: 0x0
+// Checksum 0x7ba91ad6, Offset: 0x2488
 // Size: 0xfc
 function function_43ec7ca3(str_notify) {
     if (isdefined(self) && str_notify === "death") {

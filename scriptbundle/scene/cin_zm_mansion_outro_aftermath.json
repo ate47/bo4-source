@@ -37,8 +37,8 @@
                         }
                     ],
                     "name": "sh620",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 },
                 {
                     "entry": [
@@ -57,8 +57,8 @@
                         }
                     ],
                     "name": "sh640",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 }
             ],
             "model": "#tag_origin_animate",
@@ -86,16 +86,16 @@
                 },
                 {
                     "name": "sh620",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 },
                 {
                     "name": "sh630"
                 },
                 {
                     "name": "sh640",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 }
             ],
             "model": "#hash_6608b178f5cb8e31",
@@ -123,16 +123,16 @@
                 },
                 {
                     "name": "sh620",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 },
                 {
                     "name": "sh630"
                 },
                 {
                     "name": "sh640",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 }
             ],
             "model": "#hash_7b15dbee7c902d29",
@@ -171,8 +171,8 @@
                         }
                     ],
                     "name": "sh620",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 },
                 {
                     "entry": [
@@ -192,8 +192,8 @@
                     ],
                     "cleanuphide": 1,
                     "name": "sh640",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 }
             ],
             "model": "#hash_68e43aaeda249da8",
@@ -229,16 +229,16 @@
                 },
                 {
                     "name": "sh620",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 },
                 {
                     "name": "sh630"
                 },
                 {
                     "name": "sh640",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 }
             ],
             "model": "#hash_7d35afb61b0951bb",
@@ -266,16 +266,16 @@
                 },
                 {
                     "name": "sh620",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 },
                 {
                     "name": "sh630"
                 },
                 {
                     "name": "sh640",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 }
             ],
             "model": "#hash_2a92f1695394c8c6",
@@ -314,16 +314,16 @@
                         }
                     ],
                     "name": "sh620",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 },
                 {
                     "name": "sh630"
                 },
                 {
                     "name": "sh640",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 }
             ],
             "model": "#hash_67cc2d78b9a203a7",
@@ -357,16 +357,16 @@
                         }
                     ],
                     "name": "sh620",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 },
                 {
                     "name": "sh630"
                 },
                 {
                     "name": "sh640",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 }
             ],
             "model": "#hash_573b25fd98692a9b",
@@ -387,8 +387,8 @@
                 },
                 {
                     "name": "sh620",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 },
                 {
                     "entry": [
@@ -409,8 +409,8 @@
                     ],
                     "cleanuphide": 1,
                     "name": "sh640",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 }
             ],
             "model": "#p8_mov_zm_man_letter_01",
@@ -430,8 +430,8 @@
                 },
                 {
                     "name": "sh620",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 },
                 {
                     "entry": [
@@ -452,8 +452,8 @@
                     ],
                     "cleanuphide": 1,
                     "name": "sh640",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 }
             ],
             "model": "#hash_237b9d2521e28d17",
@@ -473,8 +473,8 @@
                 },
                 {
                     "name": "sh620",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 },
                 {
                     "entry": [
@@ -495,8 +495,8 @@
                     ],
                     "cleanuphide": 1,
                     "name": "sh640",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 }
             ],
             "model": "#hash_237b9e2521e28eca",
@@ -516,8 +516,8 @@
                 },
                 {
                     "name": "sh620",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 },
                 {
                     "entry": [
@@ -538,8 +538,8 @@
                     ],
                     "cleanuphide": 1,
                     "name": "sh640",
-                    "var_39fd697b": "cin_xd_aftermath",
-                    "var_b94164e": "cin_xd_aftermath"
+                    "hash_39fd697b": "cin_xd_aftermath",
+                    "hash_b94164e": "cin_xd_aftermath"
                 }
             ],
             "model": "#hash_237b9f2521e2907d",
@@ -555,8 +555,8 @@
     "name": "cin_zm_mansion_outro_aftermath",
     "dontsync": 1,
     "disablesceneskipping": 1,
-    "var_241c5f3c": 1,
-    "var_a6da2039": "cin_zm_mansion_outro_aftermath",
+    "hash_241c5f3c": 1,
+    "hash_a6da2039": "cin_zm_mansion_outro_aftermath",
     "aligntarget": "tag_align_outro_road",
     "ignorestreamer": 1,
     "team": "any"

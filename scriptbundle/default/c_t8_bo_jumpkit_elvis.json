@@ -1,9 +1,9 @@
 {
-    "lootid": "#hash_6a6ef2844774efba",
+    "lootid": "#jumppack_elvis",
     "wingsuit": "c_t8_bo_wingsuit_elvis",
     "image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_elvis",
     "name": "c_t8_bo_jumpkit_elvis",
     "displayname": "#hash_5ecca61cd820bc94",
-    "var_4fa85a25": "dfxt_elvis",
+    "hash_4fa85a25": "dfxt_elvis",
     "parachute": "c_t8_bo_parachute_elvis"
 }

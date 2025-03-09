@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_aat_kill_o_watt/zm_aat_kill_o_watt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x91893aa4, Offset: 0x1d8
 // Size: 0x194
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace zm_aat_kill_o_watt/zm_aat_kill_o_watt
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd2afbccf, Offset: 0x378
 // Size: 0x196
 function function_846837f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -60,7 +60,7 @@ function function_846837f(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_aat_kill_o_watt/zm_aat_kill_o_watt
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb925b715, Offset: 0x518
 // Size: 0xd4
 function function_d2ca081b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

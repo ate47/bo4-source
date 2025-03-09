@@ -4,7 +4,7 @@
 #namespace zm_orange_fasttravel_flinger;
 
 // Namespace zm_orange_fasttravel_flinger/zm_orange_fasttravel_flinger
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb04c3281, Offset: 0x130
 // Size: 0x144
 function init() {
@@ -17,7 +17,7 @@ function init() {
 }
 
 // Namespace zm_orange_fasttravel_flinger/zm_orange_fasttravel_flinger
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x40270e23, Offset: 0x280
 // Size: 0xbe
 function gear_box_spark_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -32,7 +32,7 @@ function gear_box_spark_fx(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_orange_fasttravel_flinger/zm_orange_fasttravel_flinger
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xccfe278c, Offset: 0x348
 // Size: 0x82
 function flinger_impact_wood_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

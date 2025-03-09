@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_b28d86fd/namespace_b28d86fd
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb3472da, Offset: 0x130
 // Size: 0x5c
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace namespace_b28d86fd/namespace_b28d86fd
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x6f54ae69, Offset: 0x198
 // Size: 0x34c
 function private on_begin() {
@@ -49,7 +49,7 @@ function private on_begin() {
     }
     a_ai = getaiteamarray(level.zombie_team);
     foreach (ai in a_ai) {
-        if (isalive(ai) && (ai.var_6f84b820 === #"miniboss" || ai.var_6f84b820 === #"heavy")) {
+        if (isalive(ai) && (ai.zm_ai_category === #"miniboss" || ai.zm_ai_category === #"heavy")) {
             ai.takedamage = 1;
             ai.allowdeath = 1;
             ai kill();
@@ -62,7 +62,7 @@ function private on_begin() {
 }
 
 // Namespace namespace_b28d86fd/namespace_b28d86fd
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x814d7792, Offset: 0x4f0
 // Size: 0x220
 function private on_end(round_reset) {
@@ -84,7 +84,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace namespace_b28d86fd/namespace_b28d86fd
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcb4d7ac2, Offset: 0x718
 // Size: 0x10c
 function private function_33f0ddd3(s_event) {
@@ -100,7 +100,7 @@ function private function_33f0ddd3(s_event) {
 }
 
 // Namespace namespace_b28d86fd/namespace_b28d86fd
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd3823157, Offset: 0x830
 // Size: 0x32
 function is_active() {
@@ -109,7 +109,7 @@ function is_active() {
 }
 
 // Namespace namespace_b28d86fd/namespace_b28d86fd
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x159bfe38, Offset: 0x870
 // Size: 0xae
 function function_70594057() {

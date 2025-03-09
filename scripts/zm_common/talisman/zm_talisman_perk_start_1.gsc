@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_talisman_perk_start_1/zm_talisman_perk_start_1
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb0cbc9a6, Offset: 0x118
 // Size: 0x2c
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace zm_talisman_perk_start_1/zm_talisman_perk_start_1
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5a4f5694, Offset: 0x150
 // Size: 0x3e
 function activate_talisman() {

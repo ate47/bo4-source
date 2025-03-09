@@ -1,7 +1,7 @@
 #namespace targetting_delay;
 
 // Namespace targetting_delay/targetting_delay
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2143acdd, Offset: 0x68
 // Size: 0x41a
 function function_7e1a12ce(radius) {
@@ -42,7 +42,7 @@ function function_7e1a12ce(radius) {
                     self setpersonalignore(enemy, update_interval);
                 }
                 info.var_d1e06a5f[entnum] = gettime();
-                info.var_2fae95e[entnum] = info.var_2fae95e[entnum] + var_dd3b2438;
+                info.var_2fae95e[entnum] += var_dd3b2438;
                 continue;
             }
             if (isdefined(info.var_d1e06a5f[entnum])) {
@@ -58,7 +58,7 @@ function function_7e1a12ce(radius) {
 }
 
 // Namespace targetting_delay/targetting_delay
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x19cd9b92, Offset: 0x490
 // Size: 0x12e
 function function_1c169b3a(enemy, defaultdelay = 250) {
@@ -80,7 +80,7 @@ function function_1c169b3a(enemy, defaultdelay = 250) {
 }
 
 // Namespace targetting_delay/targetting_delay
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb2733336, Offset: 0x5c8
 // Size: 0x13e
 function function_a4d6d6d8(enemy, var_2770319) {
@@ -102,6 +102,6 @@ function function_a4d6d6d8(enemy, var_2770319) {
     if (!isdefined(info.var_2fae95e[entnum])) {
         info.var_2fae95e[entnum] = 0;
     }
-    info.var_2fae95e[entnum] = info.var_2fae95e[entnum] + var_2770319;
+    info.var_2fae95e[entnum] += var_2770319;
 }
 

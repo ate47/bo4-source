@@ -5,15 +5,15 @@
 
 // Namespace zm_hms_util/zm_hms_util
 // Params 0, eflags: 0x2
-// Checksum 0xc6fab11e, Offset: 0x78
+// Checksum 0x433fb3fc, Offset: 0x78
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zm_hms_util", &__init__, undefined, undefined);
 }
 
 // Namespace zm_hms_util/zm_hms_util
-// Params 0, eflags: 0x1 linked
-// Checksum 0xbd20b477, Offset: 0xc0
+// Params 0, eflags: 0x0
+// Checksum 0xd5987f35, Offset: 0xc0
 // Size: 0x4c
 function __init__() {
     /#
@@ -27,7 +27,7 @@ function __init__() {
 
     // Namespace zm_hms_util/zm_hms_util
     // Params 0, eflags: 0x0
-    // Checksum 0xd91216bd, Offset: 0x118
+    // Checksum 0x9c5070ec, Offset: 0x118
     // Size: 0xa6
     function function_774b42ac() {
         localclientnum = self getlocalclientnumber();

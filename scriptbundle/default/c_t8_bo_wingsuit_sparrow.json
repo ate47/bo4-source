@@ -1,7 +1,7 @@
 {
-    "var_94166112": "c_t8_hero_playermale_wingsuit_sparrow",
+    "hash_94166112": "c_t8_hero_playermale_wingsuit_sparrow",
     "name": "c_t8_bo_wingsuit_sparrow",
     "icon": "loot_ui_icon_jumppacks_wingsuit_sparrow",
     "largeicon": "loot_ui_icon_jumppacks_wingsuit_sparrow_large",
-    "var_5677bd3d": "c_t8_hero_playerfemale_wingsuit_sparrow"
+    "hash_5677bd3d": "c_t8_hero_playerfemale_wingsuit_sparrow"
 }

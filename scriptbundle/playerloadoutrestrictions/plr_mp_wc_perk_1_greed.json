@@ -2,6 +2,6 @@
     "configstringfiletype": "scriptbundle",
     "type": "playerloadoutrestrictions",
     "name": "plr_mp_wc_perk_1_greed",
-    "var_9bb0ceab": "#bonuscard_perk_1_greed",
-    "var_a2ef45f8": 1
+    "hash_9bb0ceab": "#bonuscard_perk_1_greed",
+    "hash_a2ef45f8": 1
 }

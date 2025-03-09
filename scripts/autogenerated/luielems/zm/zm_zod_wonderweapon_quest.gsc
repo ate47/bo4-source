@@ -7,14 +7,14 @@
 // Method(s) 9 Total 16
 class czm_zod_wonderweapon_quest : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
     // Params 2, eflags: 0x0
     // Checksum 0xa75eeb4a, Offset: 0x4d0
     // Size: 0x3c
     function set_decay(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "decay", value);
+        player clientfield::function_9bf78ef8(_uid, "decay", value);
     }
 
     // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
@@ -22,7 +22,7 @@ class czm_zod_wonderweapon_quest : cluielem {
     // Checksum 0xec16543e, Offset: 0x488
     // Size: 0x3c
     function set_purity(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "purity", value);
+        player clientfield::function_9bf78ef8(_uid, "purity", value);
     }
 
     // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
@@ -30,7 +30,7 @@ class czm_zod_wonderweapon_quest : cluielem {
     // Checksum 0x301f9088, Offset: 0x440
     // Size: 0x3c
     function set_plasma(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "plasma", value);
+        player clientfield::function_9bf78ef8(_uid, "plasma", value);
     }
 
     // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
@@ -38,7 +38,7 @@ class czm_zod_wonderweapon_quest : cluielem {
     // Checksum 0xac90d776, Offset: 0x3f8
     // Size: 0x3c
     function set_radiance(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "radiance", value);
+        player clientfield::function_9bf78ef8(_uid, "radiance", value);
     }
 
     // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest

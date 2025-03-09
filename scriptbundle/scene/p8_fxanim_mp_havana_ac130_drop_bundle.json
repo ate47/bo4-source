@@ -1,0 +1,47 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_57e25239522d5660",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#veh_t8_mil_air_transport_mp_dark",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5dc664db9b26fa0d",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#veh_t8_mil_air_transport_mp_dark",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 2"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_havana_ac130_drop_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

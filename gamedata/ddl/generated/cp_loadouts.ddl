@@ -18622,7 +18622,7 @@ version 28 {
 
     // idx 1 members 4
     enum hash_5446546f71ee6cdf {
-        hash_2e29a4cc7409d939, // 0x0,
+        hair, // 0x0,
         helmet, // 0x1,
         body, // 0x2,
         hash_7d030d1323187739, // 0x3
@@ -19088,7 +19088,7 @@ version 27 {
 
     // idx 1 members 4
     enum hash_5446546f71ee6cdf {
-        hash_2e29a4cc7409d939, // 0x0,
+        hair, // 0x0,
         helmet, // 0x1,
         body, // 0x2,
         hash_7d030d1323187739, // 0x3

@@ -1,15 +1,15 @@
 {
-    "var_d58bd0e9": "#hash_39910e3a94963a6b",
-    "var_67b4a761": "#hash_39910e3a94963a6b",
-    "var_2ecceeab": "#hash_29c6ac26743e0639",
+    "hash_d58bd0e9": "#hash_39910e3a94963a6b",
+    "hash_67b4a761": "#hash_39910e3a94963a6b",
+    "hash_2ecceeab": "#hash_29c6ac26743e0639",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "var_16abf654": "#hash_39910e3a94963a6b",
+    "hash_16abf654": "#hash_39910e3a94963a6b",
     "name": "eq_shroud_scoreevents",
-    "var_e1b418c1": "ability",
-    "var_1b8b6771": "#hash_39910e3a94963a6b",
-    "var_3143c814": "#shroud_shutdown",
-    "var_fcd2ff3a": 1,
-    "var_6643c0a0": "#hash_39910e3a94963a6b"
+    "customsettingstype": "ability",
+    "hash_1b8b6771": "#hash_39910e3a94963a6b",
+    "hash_3143c814": "#shroud_shutdown",
+    "hash_fcd2ff3a": 1,
+    "hash_6643c0a0": "#hash_39910e3a94963a6b"
 }

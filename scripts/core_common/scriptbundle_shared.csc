@@ -10,7 +10,7 @@ class cscriptbundleobjectbase {
     var _s;
 
     // Namespace cscriptbundleobjectbase/scriptbundle_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x32a5cf5d, Offset: 0x380
     // Size: 0x18
     function get_ent(localclientnum) {
@@ -18,7 +18,7 @@ class cscriptbundleobjectbase {
     }
 
     // Namespace cscriptbundleobjectbase/scriptbundle_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x6afaab6a, Offset: 0x250
     // Size: 0x128
     function error(condition, str_msg) {
@@ -35,7 +35,7 @@ class cscriptbundleobjectbase {
     }
 
     // Namespace cscriptbundleobjectbase/scriptbundle_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x39078910, Offset: 0x178
     // Size: 0xcc
     function log(str_msg) {
@@ -43,7 +43,7 @@ class cscriptbundleobjectbase {
     }
 
     // Namespace cscriptbundleobjectbase/scriptbundle_shared
-    // Params 4, eflags: 0x1 linked
+    // Params 4, eflags: 0x0
     // Checksum 0x983671e9, Offset: 0xa0
     // Size: 0xca
     function init(s_objdef, o_bundle, e_ent, localclientnum) {
@@ -73,7 +73,7 @@ class cscriptbundlebase {
     var _testing;
 
     // Namespace cscriptbundlebase/scriptbundle_shared
-    // Params 0, eflags: 0x9 linked
+    // Params 0, eflags: 0x8
     // Checksum 0xd109e373, Offset: 0x508
     // Size: 0x1a
     constructor() {
@@ -82,7 +82,7 @@ class cscriptbundlebase {
     }
 
     // Namespace cscriptbundlebase/scriptbundle_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xc345e24e, Offset: 0x718
     // Size: 0x9c
     function error(condition, str_msg) {
@@ -98,7 +98,7 @@ class cscriptbundlebase {
     }
 
     // Namespace cscriptbundlebase/scriptbundle_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x2574f772, Offset: 0x6b8
     // Size: 0x54
     function log(str_msg) {
@@ -106,7 +106,7 @@ class cscriptbundlebase {
     }
 
     // Namespace cscriptbundlebase/scriptbundle_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x68410bc2, Offset: 0x688
     // Size: 0x24
     function remove_object(o_object) {
@@ -114,7 +114,7 @@ class cscriptbundlebase {
     }
 
     // Namespace cscriptbundlebase/scriptbundle_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xfdf7769a, Offset: 0x608
     // Size: 0x76
     function add_object(o_object) {
@@ -127,7 +127,7 @@ class cscriptbundlebase {
     }
 
     // Namespace cscriptbundlebase/scriptbundle_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x51cf9d44, Offset: 0x5f0
     // Size: 0xa
     function is_testing() {
@@ -135,7 +135,7 @@ class cscriptbundlebase {
     }
 
     // Namespace cscriptbundlebase/scriptbundle_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xc9a2ddf2, Offset: 0x5d0
     // Size: 0x12
     function get_objects() {
@@ -143,7 +143,7 @@ class cscriptbundlebase {
     }
 
     // Namespace cscriptbundlebase/scriptbundle_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x10c5f25e, Offset: 0x5b0
     // Size: 0x12
     function get_vm() {
@@ -151,7 +151,7 @@ class cscriptbundlebase {
     }
 
     // Namespace cscriptbundlebase/scriptbundle_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xe95c94e9, Offset: 0x590
     // Size: 0x12
     function get_type() {
@@ -159,7 +159,7 @@ class cscriptbundlebase {
     }
 
     // Namespace cscriptbundlebase/scriptbundle_shared
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0x85e15d4f, Offset: 0x540
     // Size: 0x42
     function init(str_name, s, b_testing) {
@@ -169,7 +169,7 @@ class cscriptbundlebase {
     }
 
     // Namespace cscriptbundlebase/scriptbundle_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x9410c193, Offset: 0x4f0
     // Size: 0xc
     function on_error(e) {
@@ -179,7 +179,7 @@ class cscriptbundlebase {
 }
 
 // Namespace scriptbundle/scriptbundle_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1f5c66d0, Offset: 0xa30
 // Size: 0x16c
 function error_on_screen(str_msg) {
@@ -198,7 +198,7 @@ function error_on_screen(str_msg) {
 }
 
 // Namespace scriptbundle/scriptbundle_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcea829e8, Offset: 0xba8
 // Size: 0x6e
 function _destroy_error_on_screen() {

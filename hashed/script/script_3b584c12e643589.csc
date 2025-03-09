@@ -6,15 +6,15 @@
 
 // Namespace namespace_d0937679/namespace_d0937679
 // Params 0, eflags: 0x2
-// Checksum 0x5f6d72ff, Offset: 0xc8
+// Checksum 0xb6ecbc26, Offset: 0xc8
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"hash_1f56d362760c2c6b", &__init__, undefined, undefined);
 }
 
 // Namespace namespace_d0937679/namespace_d0937679
-// Params 0, eflags: 0x1 linked
-// Checksum 0xc64d1c2b, Offset: 0x110
+// Params 0, eflags: 0x0
+// Checksum 0xcbafd501, Offset: 0x110
 // Size: 0x74
 function __init__() {
     level.var_fdbdcdfd = isdefined(getgametypesetting(#"hash_6fbf57e2af153e5f")) ? getgametypesetting(#"hash_6fbf57e2af153e5f") : 0;
@@ -22,8 +22,8 @@ function __init__() {
 }
 
 // Namespace namespace_d0937679/namespace_d0937679
-// Params 0, eflags: 0x1 linked
-// Checksum 0x4f2c8c1d, Offset: 0x190
+// Params 0, eflags: 0x0
+// Checksum 0xaf74db04, Offset: 0x190
 // Size: 0x202
 function function_61a426a5() {
     debug_pos = getdvarint(#"hash_79ed3a19e0cdd3c5", -1);

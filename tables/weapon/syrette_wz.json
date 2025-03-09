@@ -1,0 +1,16 @@
+{
+    "name": "#syrette_wz",
+    "baseWeapon": "#syrette",
+    "displayname": "#weapon/syrette",
+    "unk70": "#weapon_null",
+    "streamkey": "#hash_2ffb71686fb93c79",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#hash_1d94f3912e0",
+    "viewmodel": "#hash_1d93f05d590",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "image_d40": "#$default",
+    "image_e90": "#$default",
+    "underwaterExplosionSurfaceFX": []
+}

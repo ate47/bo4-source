@@ -612,35 +612,35 @@ version 114 {
 
     // idx 7 members 29
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_8d5bc4a77c74f69, // 0x1,
-        hash_f531a8c2df891cc, // 0x2,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_russman, // 0x1,
+        prt_zm_diego, // 0x2,
         hash_14e91ceb9a7b3eb6, // 0x3,
         hash_1a427f842f175b3c, // 0x4,
-        hash_1aa57ef704f24fa5, // 0x5,
-        hash_1fd4157dcafc6e45, // 0x6,
-        hash_22e6f7e13c3a99ef, // 0x7,
+        prt_zm_dempsey, // 0x5,
+        prt_zm_takeo_whi, // 0x6,
+        prt_zm_nikolai, // 0x7,
         hash_26072a3b34719d22, // 0x8,
-        hash_291943ac9ed00ebc, // 0x9,
-        hash_2bcebdf1bef33311, // 0xa,
-        hash_305f156156d37e34, // 0xb,
-        hash_36bc80636f0fdac4, // 0xc,
-        hash_3c0932fa55ee6e5b, // 0xd,
+        prt_zm_misty, // 0x9,
+        prt_zm_richtofen_ofc, // 0xa,
+        prt_zm_takeo, // 0xb,
+        prt_zm_dempsey_ofc, // 0xc,
+        prt_zm_brigadier, // 0xd,
         hash_3e63362aea484e09, // 0xe,
-        hash_447b3c77b73aa2a9, // 0xf,
-        hash_46b92e1337b43236, // 0x10,
-        hash_4e8f51ec275a4a38, // 0x11,
+        prt_zm_stuhlinger, // 0xf,
+        prt_zm_nikolai_ofc, // 0x10,
+        prt_zm_gunslinger, // 0x11,
         hash_515977e191d13967, // 0x12,
-        hash_59f3598ad57dadd8, // 0x13,
+        prt_zm_richtofen, // 0x13,
         hash_5a715cb0a6e071ae, // 0x14,
         hash_5a906d7137467771, // 0x15,
-        hash_5ebf024e1559c04a, // 0x16,
-        hash_68255d9ce2a09382, // 0x17,
-        hash_6df0037e3f390b15, // 0x18,
-        hash_7180c6cf382f6010, // 0x19,
-        hash_73d71ff1e886bbe9, // 0x1a,
-        hash_78aa6812c38263ba, // 0x1b,
-        hash_7ba62675ab75df69, // 0x1c
+        prt_zm_butler, // 0x16,
+        prt_zm_scarlett, // 0x17,
+        prt_zm_takeo_ofc, // 0x18,
+        prt_zm_bruno, // 0x19,
+        prt_zm_richtofen_whi, // 0x1a,
+        prt_zm_nikolai_whi, // 0x1b,
+        prt_zm_marlton, // 0x1c
     };
 
     // idx 0 members 33 size 0x233d8
@@ -659,7 +659,7 @@ version 114 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -1327,34 +1327,34 @@ version 113 {
 
     // idx 7 members 28
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_8d5bc4a77c74f69, // 0x1,
-        hash_f531a8c2df891cc, // 0x2,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_russman, // 0x1,
+        prt_zm_diego, // 0x2,
         hash_14e91ceb9a7b3eb6, // 0x3,
         hash_1a427f842f175b3c, // 0x4,
-        hash_1aa57ef704f24fa5, // 0x5,
-        hash_1fd4157dcafc6e45, // 0x6,
-        hash_22e6f7e13c3a99ef, // 0x7,
+        prt_zm_dempsey, // 0x5,
+        prt_zm_takeo_whi, // 0x6,
+        prt_zm_nikolai, // 0x7,
         hash_26072a3b34719d22, // 0x8,
-        hash_291943ac9ed00ebc, // 0x9,
-        hash_2bcebdf1bef33311, // 0xa,
-        hash_305f156156d37e34, // 0xb,
-        hash_36bc80636f0fdac4, // 0xc,
-        hash_3c0932fa55ee6e5b, // 0xd,
+        prt_zm_misty, // 0x9,
+        prt_zm_richtofen_ofc, // 0xa,
+        prt_zm_takeo, // 0xb,
+        prt_zm_dempsey_ofc, // 0xc,
+        prt_zm_brigadier, // 0xd,
         hash_3e63362aea484e09, // 0xe,
-        hash_447b3c77b73aa2a9, // 0xf,
-        hash_46b92e1337b43236, // 0x10,
-        hash_4e8f51ec275a4a38, // 0x11,
+        prt_zm_stuhlinger, // 0xf,
+        prt_zm_nikolai_ofc, // 0x10,
+        prt_zm_gunslinger, // 0x11,
         hash_515977e191d13967, // 0x12,
-        hash_59f3598ad57dadd8, // 0x13,
+        prt_zm_richtofen, // 0x13,
         hash_5a906d7137467771, // 0x14,
-        hash_5ebf024e1559c04a, // 0x15,
-        hash_68255d9ce2a09382, // 0x16,
-        hash_6df0037e3f390b15, // 0x17,
-        hash_7180c6cf382f6010, // 0x18,
-        hash_73d71ff1e886bbe9, // 0x19,
-        hash_78aa6812c38263ba, // 0x1a,
-        hash_7ba62675ab75df69, // 0x1b
+        prt_zm_butler, // 0x15,
+        prt_zm_scarlett, // 0x16,
+        prt_zm_takeo_ofc, // 0x17,
+        prt_zm_bruno, // 0x18,
+        prt_zm_richtofen_whi, // 0x19,
+        prt_zm_nikolai_whi, // 0x1a,
+        prt_zm_marlton, // 0x1b
     };
 
     // idx 0 members 33 size 0x233d8
@@ -1373,7 +1373,7 @@ version 113 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -2037,34 +2037,34 @@ version 112 {
 
     // idx 7 members 28
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_8d5bc4a77c74f69, // 0x1,
-        hash_f531a8c2df891cc, // 0x2,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_russman, // 0x1,
+        prt_zm_diego, // 0x2,
         hash_14e91ceb9a7b3eb6, // 0x3,
         hash_1a427f842f175b3c, // 0x4,
-        hash_1aa57ef704f24fa5, // 0x5,
-        hash_1fd4157dcafc6e45, // 0x6,
-        hash_22e6f7e13c3a99ef, // 0x7,
+        prt_zm_dempsey, // 0x5,
+        prt_zm_takeo_whi, // 0x6,
+        prt_zm_nikolai, // 0x7,
         hash_26072a3b34719d22, // 0x8,
-        hash_291943ac9ed00ebc, // 0x9,
-        hash_2bcebdf1bef33311, // 0xa,
-        hash_305f156156d37e34, // 0xb,
-        hash_36bc80636f0fdac4, // 0xc,
-        hash_3c0932fa55ee6e5b, // 0xd,
+        prt_zm_misty, // 0x9,
+        prt_zm_richtofen_ofc, // 0xa,
+        prt_zm_takeo, // 0xb,
+        prt_zm_dempsey_ofc, // 0xc,
+        prt_zm_brigadier, // 0xd,
         hash_3e63362aea484e09, // 0xe,
-        hash_447b3c77b73aa2a9, // 0xf,
-        hash_46b92e1337b43236, // 0x10,
-        hash_4e8f51ec275a4a38, // 0x11,
+        prt_zm_stuhlinger, // 0xf,
+        prt_zm_nikolai_ofc, // 0x10,
+        prt_zm_gunslinger, // 0x11,
         hash_515977e191d13967, // 0x12,
-        hash_59f3598ad57dadd8, // 0x13,
+        prt_zm_richtofen, // 0x13,
         hash_5a906d7137467771, // 0x14,
-        hash_5ebf024e1559c04a, // 0x15,
-        hash_68255d9ce2a09382, // 0x16,
-        hash_6df0037e3f390b15, // 0x17,
-        hash_7180c6cf382f6010, // 0x18,
-        hash_73d71ff1e886bbe9, // 0x19,
-        hash_78aa6812c38263ba, // 0x1a,
-        hash_7ba62675ab75df69, // 0x1b
+        prt_zm_butler, // 0x15,
+        prt_zm_scarlett, // 0x16,
+        prt_zm_takeo_ofc, // 0x17,
+        prt_zm_bruno, // 0x18,
+        prt_zm_richtofen_whi, // 0x19,
+        prt_zm_nikolai_whi, // 0x1a,
+        prt_zm_marlton, // 0x1b
     };
 
     // idx 0 members 33 size 0x22a68
@@ -2083,7 +2083,7 @@ version 112 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -2735,35 +2735,35 @@ version 111 {
 
     // idx 7 members 29
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_8d5bc4a77c74f69, // 0x1,
-        hash_f531a8c2df891cc, // 0x2,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_russman, // 0x1,
+        prt_zm_diego, // 0x2,
         hash_14e91ceb9a7b3eb6, // 0x3,
         hash_1a427f842f175b3c, // 0x4,
-        hash_1aa57ef704f24fa5, // 0x5,
-        hash_1fd4157dcafc6e45, // 0x6,
-        hash_22e6f7e13c3a99ef, // 0x7,
+        prt_zm_dempsey, // 0x5,
+        prt_zm_takeo_whi, // 0x6,
+        prt_zm_nikolai, // 0x7,
         hash_26072a3b34719d22, // 0x8,
-        hash_291943ac9ed00ebc, // 0x9,
-        hash_2bcebdf1bef33311, // 0xa,
-        hash_305f156156d37e34, // 0xb,
-        hash_36bc80636f0fdac4, // 0xc,
-        hash_3c0932fa55ee6e5b, // 0xd,
+        prt_zm_misty, // 0x9,
+        prt_zm_richtofen_ofc, // 0xa,
+        prt_zm_takeo, // 0xb,
+        prt_zm_dempsey_ofc, // 0xc,
+        prt_zm_brigadier, // 0xd,
         hash_3e63362aea484e09, // 0xe,
-        hash_447b3c77b73aa2a9, // 0xf,
-        hash_46b92e1337b43236, // 0x10,
-        hash_4e8f51ec275a4a38, // 0x11,
+        prt_zm_stuhlinger, // 0xf,
+        prt_zm_nikolai_ofc, // 0x10,
+        prt_zm_gunslinger, // 0x11,
         hash_515977e191d13967, // 0x12,
-        hash_59f3598ad57dadd8, // 0x13,
+        prt_zm_richtofen, // 0x13,
         hash_5a715cb0a6e071ae, // 0x14,
         hash_5a906d7137467771, // 0x15,
-        hash_5ebf024e1559c04a, // 0x16,
-        hash_68255d9ce2a09382, // 0x17,
-        hash_6df0037e3f390b15, // 0x18,
-        hash_7180c6cf382f6010, // 0x19,
-        hash_73d71ff1e886bbe9, // 0x1a,
-        hash_78aa6812c38263ba, // 0x1b,
-        hash_7ba62675ab75df69, // 0x1c
+        prt_zm_butler, // 0x16,
+        prt_zm_scarlett, // 0x17,
+        prt_zm_takeo_ofc, // 0x18,
+        prt_zm_bruno, // 0x19,
+        prt_zm_richtofen_whi, // 0x1a,
+        prt_zm_nikolai_whi, // 0x1b,
+        prt_zm_marlton, // 0x1c
     };
 
     // idx 0 members 33 size 0x20e10
@@ -2782,7 +2782,7 @@ version 111 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -3433,35 +3433,35 @@ version 110 {
 
     // idx 7 members 29
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_8d5bc4a77c74f69, // 0x1,
-        hash_f531a8c2df891cc, // 0x2,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_russman, // 0x1,
+        prt_zm_diego, // 0x2,
         hash_14e91ceb9a7b3eb6, // 0x3,
         hash_1a427f842f175b3c, // 0x4,
-        hash_1aa57ef704f24fa5, // 0x5,
-        hash_1fd4157dcafc6e45, // 0x6,
-        hash_22e6f7e13c3a99ef, // 0x7,
+        prt_zm_dempsey, // 0x5,
+        prt_zm_takeo_whi, // 0x6,
+        prt_zm_nikolai, // 0x7,
         hash_26072a3b34719d22, // 0x8,
-        hash_291943ac9ed00ebc, // 0x9,
-        hash_2bcebdf1bef33311, // 0xa,
-        hash_305f156156d37e34, // 0xb,
-        hash_36bc80636f0fdac4, // 0xc,
-        hash_3c0932fa55ee6e5b, // 0xd,
+        prt_zm_misty, // 0x9,
+        prt_zm_richtofen_ofc, // 0xa,
+        prt_zm_takeo, // 0xb,
+        prt_zm_dempsey_ofc, // 0xc,
+        prt_zm_brigadier, // 0xd,
         hash_3e63362aea484e09, // 0xe,
-        hash_447b3c77b73aa2a9, // 0xf,
-        hash_46b92e1337b43236, // 0x10,
-        hash_4e8f51ec275a4a38, // 0x11,
+        prt_zm_stuhlinger, // 0xf,
+        prt_zm_nikolai_ofc, // 0x10,
+        prt_zm_gunslinger, // 0x11,
         hash_515977e191d13967, // 0x12,
-        hash_59f3598ad57dadd8, // 0x13,
+        prt_zm_richtofen, // 0x13,
         hash_5a715cb0a6e071ae, // 0x14,
         hash_5a906d7137467771, // 0x15,
-        hash_5ebf024e1559c04a, // 0x16,
-        hash_68255d9ce2a09382, // 0x17,
-        hash_6df0037e3f390b15, // 0x18,
-        hash_7180c6cf382f6010, // 0x19,
-        hash_73d71ff1e886bbe9, // 0x1a,
-        hash_78aa6812c38263ba, // 0x1b,
-        hash_7ba62675ab75df69, // 0x1c
+        prt_zm_butler, // 0x16,
+        prt_zm_scarlett, // 0x17,
+        prt_zm_takeo_ofc, // 0x18,
+        prt_zm_bruno, // 0x19,
+        prt_zm_richtofen_whi, // 0x1a,
+        prt_zm_nikolai_whi, // 0x1b,
+        prt_zm_marlton, // 0x1c
     };
 
     // idx 0 members 33 size 0x20e10
@@ -3480,7 +3480,7 @@ version 110 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -4131,34 +4131,34 @@ version 109 {
 
     // idx 7 members 28
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_8d5bc4a77c74f69, // 0x1,
-        hash_f531a8c2df891cc, // 0x2,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_russman, // 0x1,
+        prt_zm_diego, // 0x2,
         hash_14e91ceb9a7b3eb6, // 0x3,
         hash_1a427f842f175b3c, // 0x4,
-        hash_1aa57ef704f24fa5, // 0x5,
-        hash_1fd4157dcafc6e45, // 0x6,
-        hash_22e6f7e13c3a99ef, // 0x7,
+        prt_zm_dempsey, // 0x5,
+        prt_zm_takeo_whi, // 0x6,
+        prt_zm_nikolai, // 0x7,
         hash_26072a3b34719d22, // 0x8,
-        hash_291943ac9ed00ebc, // 0x9,
-        hash_2bcebdf1bef33311, // 0xa,
-        hash_305f156156d37e34, // 0xb,
-        hash_36bc80636f0fdac4, // 0xc,
-        hash_3c0932fa55ee6e5b, // 0xd,
+        prt_zm_misty, // 0x9,
+        prt_zm_richtofen_ofc, // 0xa,
+        prt_zm_takeo, // 0xb,
+        prt_zm_dempsey_ofc, // 0xc,
+        prt_zm_brigadier, // 0xd,
         hash_3e63362aea484e09, // 0xe,
-        hash_447b3c77b73aa2a9, // 0xf,
-        hash_46b92e1337b43236, // 0x10,
-        hash_4e8f51ec275a4a38, // 0x11,
+        prt_zm_stuhlinger, // 0xf,
+        prt_zm_nikolai_ofc, // 0x10,
+        prt_zm_gunslinger, // 0x11,
         hash_515977e191d13967, // 0x12,
-        hash_59f3598ad57dadd8, // 0x13,
+        prt_zm_richtofen, // 0x13,
         hash_5a906d7137467771, // 0x14,
-        hash_5ebf024e1559c04a, // 0x15,
-        hash_68255d9ce2a09382, // 0x16,
-        hash_6df0037e3f390b15, // 0x17,
-        hash_7180c6cf382f6010, // 0x18,
-        hash_73d71ff1e886bbe9, // 0x19,
-        hash_78aa6812c38263ba, // 0x1a,
-        hash_7ba62675ab75df69, // 0x1b
+        prt_zm_butler, // 0x15,
+        prt_zm_scarlett, // 0x16,
+        prt_zm_takeo_ofc, // 0x17,
+        prt_zm_bruno, // 0x18,
+        prt_zm_richtofen_whi, // 0x19,
+        prt_zm_nikolai_whi, // 0x1a,
+        prt_zm_marlton, // 0x1b
     };
 
     // idx 0 members 33 size 0x20e10
@@ -4177,7 +4177,7 @@ version 109 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -4828,34 +4828,34 @@ version 108 {
 
     // idx 7 members 28
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_8d5bc4a77c74f69, // 0x1,
-        hash_f531a8c2df891cc, // 0x2,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_russman, // 0x1,
+        prt_zm_diego, // 0x2,
         hash_14e91ceb9a7b3eb6, // 0x3,
         hash_1a427f842f175b3c, // 0x4,
-        hash_1aa57ef704f24fa5, // 0x5,
-        hash_1fd4157dcafc6e45, // 0x6,
-        hash_22e6f7e13c3a99ef, // 0x7,
+        prt_zm_dempsey, // 0x5,
+        prt_zm_takeo_whi, // 0x6,
+        prt_zm_nikolai, // 0x7,
         hash_26072a3b34719d22, // 0x8,
-        hash_291943ac9ed00ebc, // 0x9,
-        hash_2bcebdf1bef33311, // 0xa,
-        hash_305f156156d37e34, // 0xb,
-        hash_36bc80636f0fdac4, // 0xc,
-        hash_3c0932fa55ee6e5b, // 0xd,
+        prt_zm_misty, // 0x9,
+        prt_zm_richtofen_ofc, // 0xa,
+        prt_zm_takeo, // 0xb,
+        prt_zm_dempsey_ofc, // 0xc,
+        prt_zm_brigadier, // 0xd,
         hash_3e63362aea484e09, // 0xe,
-        hash_447b3c77b73aa2a9, // 0xf,
-        hash_46b92e1337b43236, // 0x10,
-        hash_4e8f51ec275a4a38, // 0x11,
+        prt_zm_stuhlinger, // 0xf,
+        prt_zm_nikolai_ofc, // 0x10,
+        prt_zm_gunslinger, // 0x11,
         hash_515977e191d13967, // 0x12,
-        hash_59f3598ad57dadd8, // 0x13,
+        prt_zm_richtofen, // 0x13,
         hash_5a906d7137467771, // 0x14,
-        hash_5ebf024e1559c04a, // 0x15,
-        hash_68255d9ce2a09382, // 0x16,
-        hash_6df0037e3f390b15, // 0x17,
-        hash_7180c6cf382f6010, // 0x18,
-        hash_73d71ff1e886bbe9, // 0x19,
-        hash_78aa6812c38263ba, // 0x1a,
-        hash_7ba62675ab75df69, // 0x1b
+        prt_zm_butler, // 0x15,
+        prt_zm_scarlett, // 0x16,
+        prt_zm_takeo_ofc, // 0x17,
+        prt_zm_bruno, // 0x18,
+        prt_zm_richtofen_whi, // 0x19,
+        prt_zm_nikolai_whi, // 0x1a,
+        prt_zm_marlton, // 0x1b
     };
 
     // idx 0 members 33 size 0x20e10
@@ -4874,7 +4874,7 @@ version 108 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -5517,34 +5517,34 @@ version 107 {
 
     // idx 7 members 28
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_8d5bc4a77c74f69, // 0x1,
-        hash_f531a8c2df891cc, // 0x2,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_russman, // 0x1,
+        prt_zm_diego, // 0x2,
         hash_14e91ceb9a7b3eb6, // 0x3,
         hash_1a427f842f175b3c, // 0x4,
-        hash_1aa57ef704f24fa5, // 0x5,
-        hash_1fd4157dcafc6e45, // 0x6,
-        hash_22e6f7e13c3a99ef, // 0x7,
+        prt_zm_dempsey, // 0x5,
+        prt_zm_takeo_whi, // 0x6,
+        prt_zm_nikolai, // 0x7,
         hash_26072a3b34719d22, // 0x8,
-        hash_291943ac9ed00ebc, // 0x9,
-        hash_2bcebdf1bef33311, // 0xa,
-        hash_305f156156d37e34, // 0xb,
-        hash_36bc80636f0fdac4, // 0xc,
-        hash_3c0932fa55ee6e5b, // 0xd,
+        prt_zm_misty, // 0x9,
+        prt_zm_richtofen_ofc, // 0xa,
+        prt_zm_takeo, // 0xb,
+        prt_zm_dempsey_ofc, // 0xc,
+        prt_zm_brigadier, // 0xd,
         hash_3e63362aea484e09, // 0xe,
-        hash_447b3c77b73aa2a9, // 0xf,
-        hash_46b92e1337b43236, // 0x10,
-        hash_4e8f51ec275a4a38, // 0x11,
+        prt_zm_stuhlinger, // 0xf,
+        prt_zm_nikolai_ofc, // 0x10,
+        prt_zm_gunslinger, // 0x11,
         hash_515977e191d13967, // 0x12,
-        hash_59f3598ad57dadd8, // 0x13,
+        prt_zm_richtofen, // 0x13,
         hash_5a906d7137467771, // 0x14,
-        hash_5ebf024e1559c04a, // 0x15,
-        hash_68255d9ce2a09382, // 0x16,
-        hash_6df0037e3f390b15, // 0x17,
-        hash_7180c6cf382f6010, // 0x18,
-        hash_73d71ff1e886bbe9, // 0x19,
-        hash_78aa6812c38263ba, // 0x1a,
-        hash_7ba62675ab75df69, // 0x1b
+        prt_zm_butler, // 0x15,
+        prt_zm_scarlett, // 0x16,
+        prt_zm_takeo_ofc, // 0x17,
+        prt_zm_bruno, // 0x18,
+        prt_zm_richtofen_whi, // 0x19,
+        prt_zm_nikolai_whi, // 0x1a,
+        prt_zm_marlton, // 0x1b
     };
 
     // idx 0 members 33 size 0x1fb30
@@ -5563,7 +5563,7 @@ version 107 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -6206,30 +6206,30 @@ version 106 {
 
     // idx 7 members 24
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_f531a8c2df891cc, // 0x1,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_diego, // 0x1,
         hash_14e91ceb9a7b3eb6, // 0x2,
         hash_1a427f842f175b3c, // 0x3,
-        hash_1aa57ef704f24fa5, // 0x4,
-        hash_1fd4157dcafc6e45, // 0x5,
-        hash_22e6f7e13c3a99ef, // 0x6,
+        prt_zm_dempsey, // 0x4,
+        prt_zm_takeo_whi, // 0x5,
+        prt_zm_nikolai, // 0x6,
         hash_26072a3b34719d22, // 0x7,
-        hash_2bcebdf1bef33311, // 0x8,
-        hash_305f156156d37e34, // 0x9,
-        hash_36bc80636f0fdac4, // 0xa,
-        hash_3c0932fa55ee6e5b, // 0xb,
+        prt_zm_richtofen_ofc, // 0x8,
+        prt_zm_takeo, // 0x9,
+        prt_zm_dempsey_ofc, // 0xa,
+        prt_zm_brigadier, // 0xb,
         hash_3e63362aea484e09, // 0xc,
-        hash_46b92e1337b43236, // 0xd,
-        hash_4e8f51ec275a4a38, // 0xe,
+        prt_zm_nikolai_ofc, // 0xd,
+        prt_zm_gunslinger, // 0xe,
         hash_515977e191d13967, // 0xf,
-        hash_59f3598ad57dadd8, // 0x10,
+        prt_zm_richtofen, // 0x10,
         hash_5a906d7137467771, // 0x11,
-        hash_5ebf024e1559c04a, // 0x12,
-        hash_68255d9ce2a09382, // 0x13,
-        hash_6df0037e3f390b15, // 0x14,
-        hash_7180c6cf382f6010, // 0x15,
-        hash_73d71ff1e886bbe9, // 0x16,
-        hash_78aa6812c38263ba, // 0x17
+        prt_zm_butler, // 0x12,
+        prt_zm_scarlett, // 0x13,
+        prt_zm_takeo_ofc, // 0x14,
+        prt_zm_bruno, // 0x15,
+        prt_zm_richtofen_whi, // 0x16,
+        prt_zm_nikolai_whi, // 0x17
     };
 
     // idx 0 members 33 size 0x1fb30
@@ -6248,7 +6248,7 @@ version 106 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -6887,30 +6887,30 @@ version 105 {
 
     // idx 7 members 24
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_f531a8c2df891cc, // 0x1,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_diego, // 0x1,
         hash_14e91ceb9a7b3eb6, // 0x2,
         hash_1a427f842f175b3c, // 0x3,
-        hash_1aa57ef704f24fa5, // 0x4,
-        hash_1fd4157dcafc6e45, // 0x5,
-        hash_22e6f7e13c3a99ef, // 0x6,
+        prt_zm_dempsey, // 0x4,
+        prt_zm_takeo_whi, // 0x5,
+        prt_zm_nikolai, // 0x6,
         hash_26072a3b34719d22, // 0x7,
-        hash_2bcebdf1bef33311, // 0x8,
-        hash_305f156156d37e34, // 0x9,
-        hash_36bc80636f0fdac4, // 0xa,
-        hash_3c0932fa55ee6e5b, // 0xb,
+        prt_zm_richtofen_ofc, // 0x8,
+        prt_zm_takeo, // 0x9,
+        prt_zm_dempsey_ofc, // 0xa,
+        prt_zm_brigadier, // 0xb,
         hash_3e63362aea484e09, // 0xc,
-        hash_46b92e1337b43236, // 0xd,
-        hash_4e8f51ec275a4a38, // 0xe,
+        prt_zm_nikolai_ofc, // 0xd,
+        prt_zm_gunslinger, // 0xe,
         hash_515977e191d13967, // 0xf,
-        hash_59f3598ad57dadd8, // 0x10,
+        prt_zm_richtofen, // 0x10,
         hash_5a906d7137467771, // 0x11,
-        hash_5ebf024e1559c04a, // 0x12,
-        hash_68255d9ce2a09382, // 0x13,
-        hash_6df0037e3f390b15, // 0x14,
-        hash_7180c6cf382f6010, // 0x15,
-        hash_73d71ff1e886bbe9, // 0x16,
-        hash_78aa6812c38263ba, // 0x17
+        prt_zm_butler, // 0x12,
+        prt_zm_scarlett, // 0x13,
+        prt_zm_takeo_ofc, // 0x14,
+        prt_zm_bruno, // 0x15,
+        prt_zm_richtofen_whi, // 0x16,
+        prt_zm_nikolai_whi, // 0x17
     };
 
     // idx 0 members 33 size 0x1f1b8
@@ -6929,7 +6929,7 @@ version 105 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -7563,30 +7563,30 @@ version 104 {
 
     // idx 7 members 24
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_f531a8c2df891cc, // 0x1,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_diego, // 0x1,
         hash_14e91ceb9a7b3eb6, // 0x2,
         hash_1a427f842f175b3c, // 0x3,
-        hash_1aa57ef704f24fa5, // 0x4,
-        hash_1fd4157dcafc6e45, // 0x5,
-        hash_22e6f7e13c3a99ef, // 0x6,
+        prt_zm_dempsey, // 0x4,
+        prt_zm_takeo_whi, // 0x5,
+        prt_zm_nikolai, // 0x6,
         hash_26072a3b34719d22, // 0x7,
-        hash_2bcebdf1bef33311, // 0x8,
-        hash_305f156156d37e34, // 0x9,
-        hash_36bc80636f0fdac4, // 0xa,
-        hash_3c0932fa55ee6e5b, // 0xb,
+        prt_zm_richtofen_ofc, // 0x8,
+        prt_zm_takeo, // 0x9,
+        prt_zm_dempsey_ofc, // 0xa,
+        prt_zm_brigadier, // 0xb,
         hash_3e63362aea484e09, // 0xc,
-        hash_46b92e1337b43236, // 0xd,
-        hash_4e8f51ec275a4a38, // 0xe,
+        prt_zm_nikolai_ofc, // 0xd,
+        prt_zm_gunslinger, // 0xe,
         hash_515977e191d13967, // 0xf,
-        hash_59f3598ad57dadd8, // 0x10,
+        prt_zm_richtofen, // 0x10,
         hash_5a906d7137467771, // 0x11,
-        hash_5ebf024e1559c04a, // 0x12,
-        hash_68255d9ce2a09382, // 0x13,
-        hash_6df0037e3f390b15, // 0x14,
-        hash_7180c6cf382f6010, // 0x15,
-        hash_73d71ff1e886bbe9, // 0x16,
-        hash_78aa6812c38263ba, // 0x17
+        prt_zm_butler, // 0x12,
+        prt_zm_scarlett, // 0x13,
+        prt_zm_takeo_ofc, // 0x14,
+        prt_zm_bruno, // 0x15,
+        prt_zm_richtofen_whi, // 0x16,
+        prt_zm_nikolai_whi, // 0x17
     };
 
     // idx 0 members 33 size 0x1e848
@@ -7605,7 +7605,7 @@ version 104 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -8237,30 +8237,30 @@ version 103 {
 
     // idx 7 members 24
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_f531a8c2df891cc, // 0x1,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_diego, // 0x1,
         hash_14e91ceb9a7b3eb6, // 0x2,
         hash_1a427f842f175b3c, // 0x3,
-        hash_1aa57ef704f24fa5, // 0x4,
-        hash_1fd4157dcafc6e45, // 0x5,
-        hash_22e6f7e13c3a99ef, // 0x6,
+        prt_zm_dempsey, // 0x4,
+        prt_zm_takeo_whi, // 0x5,
+        prt_zm_nikolai, // 0x6,
         hash_26072a3b34719d22, // 0x7,
-        hash_2bcebdf1bef33311, // 0x8,
-        hash_305f156156d37e34, // 0x9,
-        hash_36bc80636f0fdac4, // 0xa,
-        hash_3c0932fa55ee6e5b, // 0xb,
+        prt_zm_richtofen_ofc, // 0x8,
+        prt_zm_takeo, // 0x9,
+        prt_zm_dempsey_ofc, // 0xa,
+        prt_zm_brigadier, // 0xb,
         hash_3e63362aea484e09, // 0xc,
-        hash_46b92e1337b43236, // 0xd,
-        hash_4e8f51ec275a4a38, // 0xe,
+        prt_zm_nikolai_ofc, // 0xd,
+        prt_zm_gunslinger, // 0xe,
         hash_515977e191d13967, // 0xf,
-        hash_59f3598ad57dadd8, // 0x10,
+        prt_zm_richtofen, // 0x10,
         hash_5a906d7137467771, // 0x11,
-        hash_5ebf024e1559c04a, // 0x12,
-        hash_68255d9ce2a09382, // 0x13,
-        hash_6df0037e3f390b15, // 0x14,
-        hash_7180c6cf382f6010, // 0x15,
-        hash_73d71ff1e886bbe9, // 0x16,
-        hash_78aa6812c38263ba, // 0x17
+        prt_zm_butler, // 0x12,
+        prt_zm_scarlett, // 0x13,
+        prt_zm_takeo_ofc, // 0x14,
+        prt_zm_bruno, // 0x15,
+        prt_zm_richtofen_whi, // 0x16,
+        prt_zm_nikolai_whi, // 0x17
     };
 
     // idx 0 members 33 size 0x1e848
@@ -8279,7 +8279,7 @@ version 103 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -8910,30 +8910,30 @@ version 102 {
 
     // idx 7 members 24
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_f531a8c2df891cc, // 0x1,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_diego, // 0x1,
         hash_14e91ceb9a7b3eb6, // 0x2,
         hash_1a427f842f175b3c, // 0x3,
-        hash_1aa57ef704f24fa5, // 0x4,
-        hash_1fd4157dcafc6e45, // 0x5,
-        hash_22e6f7e13c3a99ef, // 0x6,
+        prt_zm_dempsey, // 0x4,
+        prt_zm_takeo_whi, // 0x5,
+        prt_zm_nikolai, // 0x6,
         hash_26072a3b34719d22, // 0x7,
-        hash_2bcebdf1bef33311, // 0x8,
-        hash_305f156156d37e34, // 0x9,
-        hash_36bc80636f0fdac4, // 0xa,
-        hash_3c0932fa55ee6e5b, // 0xb,
+        prt_zm_richtofen_ofc, // 0x8,
+        prt_zm_takeo, // 0x9,
+        prt_zm_dempsey_ofc, // 0xa,
+        prt_zm_brigadier, // 0xb,
         hash_3e63362aea484e09, // 0xc,
-        hash_46b92e1337b43236, // 0xd,
-        hash_4e8f51ec275a4a38, // 0xe,
+        prt_zm_nikolai_ofc, // 0xd,
+        prt_zm_gunslinger, // 0xe,
         hash_515977e191d13967, // 0xf,
-        hash_59f3598ad57dadd8, // 0x10,
+        prt_zm_richtofen, // 0x10,
         hash_5a906d7137467771, // 0x11,
-        hash_5ebf024e1559c04a, // 0x12,
-        hash_68255d9ce2a09382, // 0x13,
-        hash_6df0037e3f390b15, // 0x14,
-        hash_7180c6cf382f6010, // 0x15,
-        hash_73d71ff1e886bbe9, // 0x16,
-        hash_78aa6812c38263ba, // 0x17
+        prt_zm_butler, // 0x12,
+        prt_zm_scarlett, // 0x13,
+        prt_zm_takeo_ofc, // 0x14,
+        prt_zm_bruno, // 0x15,
+        prt_zm_richtofen_whi, // 0x16,
+        prt_zm_nikolai_whi, // 0x17
     };
 
     // idx 0 members 33 size 0x1e848
@@ -8952,7 +8952,7 @@ version 102 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -9582,30 +9582,30 @@ version 101 {
 
     // idx 7 members 24
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_f531a8c2df891cc, // 0x1,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_diego, // 0x1,
         hash_14e91ceb9a7b3eb6, // 0x2,
         hash_1a427f842f175b3c, // 0x3,
-        hash_1aa57ef704f24fa5, // 0x4,
-        hash_1fd4157dcafc6e45, // 0x5,
-        hash_22e6f7e13c3a99ef, // 0x6,
+        prt_zm_dempsey, // 0x4,
+        prt_zm_takeo_whi, // 0x5,
+        prt_zm_nikolai, // 0x6,
         hash_26072a3b34719d22, // 0x7,
-        hash_2bcebdf1bef33311, // 0x8,
-        hash_305f156156d37e34, // 0x9,
-        hash_36bc80636f0fdac4, // 0xa,
-        hash_3c0932fa55ee6e5b, // 0xb,
+        prt_zm_richtofen_ofc, // 0x8,
+        prt_zm_takeo, // 0x9,
+        prt_zm_dempsey_ofc, // 0xa,
+        prt_zm_brigadier, // 0xb,
         hash_3e63362aea484e09, // 0xc,
-        hash_46b92e1337b43236, // 0xd,
-        hash_4e8f51ec275a4a38, // 0xe,
+        prt_zm_nikolai_ofc, // 0xd,
+        prt_zm_gunslinger, // 0xe,
         hash_515977e191d13967, // 0xf,
-        hash_59f3598ad57dadd8, // 0x10,
+        prt_zm_richtofen, // 0x10,
         hash_5a906d7137467771, // 0x11,
-        hash_5ebf024e1559c04a, // 0x12,
-        hash_68255d9ce2a09382, // 0x13,
-        hash_6df0037e3f390b15, // 0x14,
-        hash_7180c6cf382f6010, // 0x15,
-        hash_73d71ff1e886bbe9, // 0x16,
-        hash_78aa6812c38263ba, // 0x17
+        prt_zm_butler, // 0x12,
+        prt_zm_scarlett, // 0x13,
+        prt_zm_takeo_ofc, // 0x14,
+        prt_zm_bruno, // 0x15,
+        prt_zm_richtofen_whi, // 0x16,
+        prt_zm_nikolai_whi, // 0x17
     };
 
     // idx 0 members 33 size 0x1e848
@@ -9624,7 +9624,7 @@ version 101 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -10253,30 +10253,30 @@ version 100 {
 
     // idx 7 members 24
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_f531a8c2df891cc, // 0x1,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_diego, // 0x1,
         hash_14e91ceb9a7b3eb6, // 0x2,
         hash_1a427f842f175b3c, // 0x3,
-        hash_1aa57ef704f24fa5, // 0x4,
-        hash_1fd4157dcafc6e45, // 0x5,
-        hash_22e6f7e13c3a99ef, // 0x6,
+        prt_zm_dempsey, // 0x4,
+        prt_zm_takeo_whi, // 0x5,
+        prt_zm_nikolai, // 0x6,
         hash_26072a3b34719d22, // 0x7,
-        hash_2bcebdf1bef33311, // 0x8,
-        hash_305f156156d37e34, // 0x9,
-        hash_36bc80636f0fdac4, // 0xa,
-        hash_3c0932fa55ee6e5b, // 0xb,
+        prt_zm_richtofen_ofc, // 0x8,
+        prt_zm_takeo, // 0x9,
+        prt_zm_dempsey_ofc, // 0xa,
+        prt_zm_brigadier, // 0xb,
         hash_3e63362aea484e09, // 0xc,
-        hash_46b92e1337b43236, // 0xd,
-        hash_4e8f51ec275a4a38, // 0xe,
+        prt_zm_nikolai_ofc, // 0xd,
+        prt_zm_gunslinger, // 0xe,
         hash_515977e191d13967, // 0xf,
-        hash_59f3598ad57dadd8, // 0x10,
+        prt_zm_richtofen, // 0x10,
         hash_5a906d7137467771, // 0x11,
-        hash_5ebf024e1559c04a, // 0x12,
-        hash_68255d9ce2a09382, // 0x13,
-        hash_6df0037e3f390b15, // 0x14,
-        hash_7180c6cf382f6010, // 0x15,
-        hash_73d71ff1e886bbe9, // 0x16,
-        hash_78aa6812c38263ba, // 0x17
+        prt_zm_butler, // 0x12,
+        prt_zm_scarlett, // 0x13,
+        prt_zm_takeo_ofc, // 0x14,
+        prt_zm_bruno, // 0x15,
+        prt_zm_richtofen_whi, // 0x16,
+        prt_zm_nikolai_whi, // 0x17
     };
 
     // idx 0 members 32 size 0x1e840
@@ -10295,7 +10295,7 @@ version 100 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -10938,30 +10938,30 @@ version 99 {
 
     // idx 7 members 24
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_f531a8c2df891cc, // 0x1,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_diego, // 0x1,
         hash_14e91ceb9a7b3eb6, // 0x2,
         hash_1a427f842f175b3c, // 0x3,
-        hash_1aa57ef704f24fa5, // 0x4,
-        hash_1fd4157dcafc6e45, // 0x5,
-        hash_22e6f7e13c3a99ef, // 0x6,
+        prt_zm_dempsey, // 0x4,
+        prt_zm_takeo_whi, // 0x5,
+        prt_zm_nikolai, // 0x6,
         hash_26072a3b34719d22, // 0x7,
-        hash_2bcebdf1bef33311, // 0x8,
-        hash_305f156156d37e34, // 0x9,
-        hash_36bc80636f0fdac4, // 0xa,
-        hash_3c0932fa55ee6e5b, // 0xb,
+        prt_zm_richtofen_ofc, // 0x8,
+        prt_zm_takeo, // 0x9,
+        prt_zm_dempsey_ofc, // 0xa,
+        prt_zm_brigadier, // 0xb,
         hash_3e63362aea484e09, // 0xc,
-        hash_46b92e1337b43236, // 0xd,
-        hash_4e8f51ec275a4a38, // 0xe,
+        prt_zm_nikolai_ofc, // 0xd,
+        prt_zm_gunslinger, // 0xe,
         hash_515977e191d13967, // 0xf,
-        hash_59f3598ad57dadd8, // 0x10,
+        prt_zm_richtofen, // 0x10,
         hash_5a906d7137467771, // 0x11,
-        hash_5ebf024e1559c04a, // 0x12,
-        hash_68255d9ce2a09382, // 0x13,
-        hash_6df0037e3f390b15, // 0x14,
-        hash_7180c6cf382f6010, // 0x15,
-        hash_73d71ff1e886bbe9, // 0x16,
-        hash_78aa6812c38263ba, // 0x17
+        prt_zm_butler, // 0x12,
+        prt_zm_scarlett, // 0x13,
+        prt_zm_takeo_ofc, // 0x14,
+        prt_zm_bruno, // 0x15,
+        prt_zm_richtofen_whi, // 0x16,
+        prt_zm_nikolai_whi, // 0x17
     };
 
     // idx 0 members 33 size 0x20958
@@ -10980,7 +10980,7 @@ version 99 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -11645,30 +11645,30 @@ version 98 {
 
     // idx 7 members 24
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_f531a8c2df891cc, // 0x1,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_diego, // 0x1,
         hash_14e91ceb9a7b3eb6, // 0x2,
         hash_1a427f842f175b3c, // 0x3,
-        hash_1aa57ef704f24fa5, // 0x4,
-        hash_1fd4157dcafc6e45, // 0x5,
-        hash_22e6f7e13c3a99ef, // 0x6,
+        prt_zm_dempsey, // 0x4,
+        prt_zm_takeo_whi, // 0x5,
+        prt_zm_nikolai, // 0x6,
         hash_26072a3b34719d22, // 0x7,
-        hash_2bcebdf1bef33311, // 0x8,
-        hash_305f156156d37e34, // 0x9,
-        hash_36bc80636f0fdac4, // 0xa,
-        hash_3c0932fa55ee6e5b, // 0xb,
+        prt_zm_richtofen_ofc, // 0x8,
+        prt_zm_takeo, // 0x9,
+        prt_zm_dempsey_ofc, // 0xa,
+        prt_zm_brigadier, // 0xb,
         hash_3e63362aea484e09, // 0xc,
-        hash_46b92e1337b43236, // 0xd,
-        hash_4e8f51ec275a4a38, // 0xe,
+        prt_zm_nikolai_ofc, // 0xd,
+        prt_zm_gunslinger, // 0xe,
         hash_515977e191d13967, // 0xf,
-        hash_59f3598ad57dadd8, // 0x10,
+        prt_zm_richtofen, // 0x10,
         hash_5a906d7137467771, // 0x11,
-        hash_5ebf024e1559c04a, // 0x12,
-        hash_68255d9ce2a09382, // 0x13,
-        hash_6df0037e3f390b15, // 0x14,
-        hash_7180c6cf382f6010, // 0x15,
-        hash_73d71ff1e886bbe9, // 0x16,
-        hash_78aa6812c38263ba, // 0x17
+        prt_zm_butler, // 0x12,
+        prt_zm_scarlett, // 0x13,
+        prt_zm_takeo_ofc, // 0x14,
+        prt_zm_bruno, // 0x15,
+        prt_zm_richtofen_whi, // 0x16,
+        prt_zm_nikolai_whi, // 0x17
     };
 
     // idx 0 members 33 size 0x23890
@@ -11687,7 +11687,7 @@ version 98 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -12456,30 +12456,30 @@ version 97 {
 
     // idx 7 members 24
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_f531a8c2df891cc, // 0x1,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_diego, // 0x1,
         hash_14e91ceb9a7b3eb6, // 0x2,
         hash_1a427f842f175b3c, // 0x3,
-        hash_1aa57ef704f24fa5, // 0x4,
-        hash_1fd4157dcafc6e45, // 0x5,
-        hash_22e6f7e13c3a99ef, // 0x6,
+        prt_zm_dempsey, // 0x4,
+        prt_zm_takeo_whi, // 0x5,
+        prt_zm_nikolai, // 0x6,
         hash_26072a3b34719d22, // 0x7,
-        hash_2bcebdf1bef33311, // 0x8,
-        hash_305f156156d37e34, // 0x9,
-        hash_36bc80636f0fdac4, // 0xa,
-        hash_3c0932fa55ee6e5b, // 0xb,
+        prt_zm_richtofen_ofc, // 0x8,
+        prt_zm_takeo, // 0x9,
+        prt_zm_dempsey_ofc, // 0xa,
+        prt_zm_brigadier, // 0xb,
         hash_3e63362aea484e09, // 0xc,
-        hash_46b92e1337b43236, // 0xd,
-        hash_4e8f51ec275a4a38, // 0xe,
+        prt_zm_nikolai_ofc, // 0xd,
+        prt_zm_gunslinger, // 0xe,
         hash_515977e191d13967, // 0xf,
-        hash_59f3598ad57dadd8, // 0x10,
+        prt_zm_richtofen, // 0x10,
         hash_5a906d7137467771, // 0x11,
-        hash_5ebf024e1559c04a, // 0x12,
-        hash_68255d9ce2a09382, // 0x13,
-        hash_6df0037e3f390b15, // 0x14,
-        hash_7180c6cf382f6010, // 0x15,
-        hash_73d71ff1e886bbe9, // 0x16,
-        hash_78aa6812c38263ba, // 0x17
+        prt_zm_butler, // 0x12,
+        prt_zm_scarlett, // 0x13,
+        prt_zm_takeo_ofc, // 0x14,
+        prt_zm_bruno, // 0x15,
+        prt_zm_richtofen_whi, // 0x16,
+        prt_zm_nikolai_whi, // 0x17
     };
 
     // idx 0 members 33 size 0x32e20
@@ -12498,7 +12498,7 @@ version 97 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -13266,30 +13266,30 @@ version 96 {
 
     // idx 7 members 24
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_f531a8c2df891cc, // 0x1,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_diego, // 0x1,
         hash_14e91ceb9a7b3eb6, // 0x2,
         hash_1a427f842f175b3c, // 0x3,
-        hash_1aa57ef704f24fa5, // 0x4,
-        hash_1fd4157dcafc6e45, // 0x5,
-        hash_22e6f7e13c3a99ef, // 0x6,
+        prt_zm_dempsey, // 0x4,
+        prt_zm_takeo_whi, // 0x5,
+        prt_zm_nikolai, // 0x6,
         hash_26072a3b34719d22, // 0x7,
-        hash_2bcebdf1bef33311, // 0x8,
-        hash_305f156156d37e34, // 0x9,
-        hash_36bc80636f0fdac4, // 0xa,
-        hash_3c0932fa55ee6e5b, // 0xb,
+        prt_zm_richtofen_ofc, // 0x8,
+        prt_zm_takeo, // 0x9,
+        prt_zm_dempsey_ofc, // 0xa,
+        prt_zm_brigadier, // 0xb,
         hash_3e63362aea484e09, // 0xc,
-        hash_46b92e1337b43236, // 0xd,
-        hash_4e8f51ec275a4a38, // 0xe,
+        prt_zm_nikolai_ofc, // 0xd,
+        prt_zm_gunslinger, // 0xe,
         hash_515977e191d13967, // 0xf,
-        hash_59f3598ad57dadd8, // 0x10,
+        prt_zm_richtofen, // 0x10,
         hash_5a906d7137467771, // 0x11,
-        hash_5ebf024e1559c04a, // 0x12,
-        hash_68255d9ce2a09382, // 0x13,
-        hash_6df0037e3f390b15, // 0x14,
-        hash_7180c6cf382f6010, // 0x15,
-        hash_73d71ff1e886bbe9, // 0x16,
-        hash_78aa6812c38263ba, // 0x17
+        prt_zm_butler, // 0x12,
+        prt_zm_scarlett, // 0x13,
+        prt_zm_takeo_ofc, // 0x14,
+        prt_zm_bruno, // 0x15,
+        prt_zm_richtofen_whi, // 0x16,
+        prt_zm_nikolai_whi, // 0x17
     };
 
     // idx 0 members 33 size 0x32e20
@@ -13308,7 +13308,7 @@ version 96 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -14072,30 +14072,30 @@ version 95 {
 
     // idx 7 members 24
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_f531a8c2df891cc, // 0x1,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_diego, // 0x1,
         hash_14e91ceb9a7b3eb6, // 0x2,
         hash_1a427f842f175b3c, // 0x3,
-        hash_1aa57ef704f24fa5, // 0x4,
-        hash_1fd4157dcafc6e45, // 0x5,
-        hash_22e6f7e13c3a99ef, // 0x6,
+        prt_zm_dempsey, // 0x4,
+        prt_zm_takeo_whi, // 0x5,
+        prt_zm_nikolai, // 0x6,
         hash_26072a3b34719d22, // 0x7,
-        hash_2bcebdf1bef33311, // 0x8,
-        hash_305f156156d37e34, // 0x9,
-        hash_36bc80636f0fdac4, // 0xa,
-        hash_3c0932fa55ee6e5b, // 0xb,
+        prt_zm_richtofen_ofc, // 0x8,
+        prt_zm_takeo, // 0x9,
+        prt_zm_dempsey_ofc, // 0xa,
+        prt_zm_brigadier, // 0xb,
         hash_3e63362aea484e09, // 0xc,
-        hash_46b92e1337b43236, // 0xd,
-        hash_4e8f51ec275a4a38, // 0xe,
+        prt_zm_nikolai_ofc, // 0xd,
+        prt_zm_gunslinger, // 0xe,
         hash_515977e191d13967, // 0xf,
-        hash_59f3598ad57dadd8, // 0x10,
+        prt_zm_richtofen, // 0x10,
         hash_5a906d7137467771, // 0x11,
-        hash_5ebf024e1559c04a, // 0x12,
-        hash_68255d9ce2a09382, // 0x13,
-        hash_6df0037e3f390b15, // 0x14,
-        hash_7180c6cf382f6010, // 0x15,
-        hash_73d71ff1e886bbe9, // 0x16,
-        hash_78aa6812c38263ba, // 0x17
+        prt_zm_butler, // 0x12,
+        prt_zm_scarlett, // 0x13,
+        prt_zm_takeo_ofc, // 0x14,
+        prt_zm_bruno, // 0x15,
+        prt_zm_richtofen_whi, // 0x16,
+        prt_zm_nikolai_whi, // 0x17
     };
 
     // idx 0 members 33 size 0x324b0
@@ -14114,7 +14114,7 @@ version 95 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -14874,30 +14874,30 @@ version 94 {
 
     // idx 7 members 24
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_f531a8c2df891cc, // 0x1,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_diego, // 0x1,
         hash_14e91ceb9a7b3eb6, // 0x2,
         hash_1a427f842f175b3c, // 0x3,
-        hash_1aa57ef704f24fa5, // 0x4,
-        hash_1fd4157dcafc6e45, // 0x5,
-        hash_22e6f7e13c3a99ef, // 0x6,
+        prt_zm_dempsey, // 0x4,
+        prt_zm_takeo_whi, // 0x5,
+        prt_zm_nikolai, // 0x6,
         hash_26072a3b34719d22, // 0x7,
-        hash_2bcebdf1bef33311, // 0x8,
-        hash_305f156156d37e34, // 0x9,
-        hash_36bc80636f0fdac4, // 0xa,
-        hash_3c0932fa55ee6e5b, // 0xb,
+        prt_zm_richtofen_ofc, // 0x8,
+        prt_zm_takeo, // 0x9,
+        prt_zm_dempsey_ofc, // 0xa,
+        prt_zm_brigadier, // 0xb,
         hash_3e63362aea484e09, // 0xc,
-        hash_46b92e1337b43236, // 0xd,
-        hash_4e8f51ec275a4a38, // 0xe,
+        prt_zm_nikolai_ofc, // 0xd,
+        prt_zm_gunslinger, // 0xe,
         hash_515977e191d13967, // 0xf,
-        hash_59f3598ad57dadd8, // 0x10,
+        prt_zm_richtofen, // 0x10,
         hash_5a906d7137467771, // 0x11,
-        hash_5ebf024e1559c04a, // 0x12,
-        hash_68255d9ce2a09382, // 0x13,
-        hash_6df0037e3f390b15, // 0x14,
-        hash_7180c6cf382f6010, // 0x15,
-        hash_73d71ff1e886bbe9, // 0x16,
-        hash_78aa6812c38263ba, // 0x17
+        prt_zm_butler, // 0x12,
+        prt_zm_scarlett, // 0x13,
+        prt_zm_takeo_ofc, // 0x14,
+        prt_zm_bruno, // 0x15,
+        prt_zm_richtofen_whi, // 0x16,
+        prt_zm_nikolai_whi, // 0x17
     };
 
     // idx 0 members 33 size 0x1b170
@@ -14916,7 +14916,7 @@ version 94 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -15675,30 +15675,30 @@ version 93 {
 
     // idx 7 members 24
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_f531a8c2df891cc, // 0x1,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_diego, // 0x1,
         hash_14e91ceb9a7b3eb6, // 0x2,
         hash_1a427f842f175b3c, // 0x3,
-        hash_1aa57ef704f24fa5, // 0x4,
-        hash_1fd4157dcafc6e45, // 0x5,
-        hash_22e6f7e13c3a99ef, // 0x6,
+        prt_zm_dempsey, // 0x4,
+        prt_zm_takeo_whi, // 0x5,
+        prt_zm_nikolai, // 0x6,
         hash_26072a3b34719d22, // 0x7,
-        hash_2bcebdf1bef33311, // 0x8,
-        hash_305f156156d37e34, // 0x9,
-        hash_36bc80636f0fdac4, // 0xa,
-        hash_3c0932fa55ee6e5b, // 0xb,
+        prt_zm_richtofen_ofc, // 0x8,
+        prt_zm_takeo, // 0x9,
+        prt_zm_dempsey_ofc, // 0xa,
+        prt_zm_brigadier, // 0xb,
         hash_3e63362aea484e09, // 0xc,
-        hash_46b92e1337b43236, // 0xd,
-        hash_4e8f51ec275a4a38, // 0xe,
+        prt_zm_nikolai_ofc, // 0xd,
+        prt_zm_gunslinger, // 0xe,
         hash_515977e191d13967, // 0xf,
-        hash_59f3598ad57dadd8, // 0x10,
+        prt_zm_richtofen, // 0x10,
         hash_5a906d7137467771, // 0x11,
-        hash_5ebf024e1559c04a, // 0x12,
-        hash_68255d9ce2a09382, // 0x13,
-        hash_6df0037e3f390b15, // 0x14,
-        hash_7180c6cf382f6010, // 0x15,
-        hash_73d71ff1e886bbe9, // 0x16,
-        hash_78aa6812c38263ba, // 0x17
+        prt_zm_butler, // 0x12,
+        prt_zm_scarlett, // 0x13,
+        prt_zm_takeo_ofc, // 0x14,
+        prt_zm_bruno, // 0x15,
+        prt_zm_richtofen_whi, // 0x16,
+        prt_zm_nikolai_whi, // 0x17
     };
 
     // idx 0 members 33 size 0x1b170
@@ -15717,7 +15717,7 @@ version 93 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -16475,30 +16475,30 @@ version 92 {
 
     // idx 7 members 24
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_f531a8c2df891cc, // 0x1,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_diego, // 0x1,
         hash_14e91ceb9a7b3eb6, // 0x2,
         hash_1a427f842f175b3c, // 0x3,
-        hash_1aa57ef704f24fa5, // 0x4,
-        hash_1fd4157dcafc6e45, // 0x5,
-        hash_22e6f7e13c3a99ef, // 0x6,
+        prt_zm_dempsey, // 0x4,
+        prt_zm_takeo_whi, // 0x5,
+        prt_zm_nikolai, // 0x6,
         hash_26072a3b34719d22, // 0x7,
-        hash_2bcebdf1bef33311, // 0x8,
-        hash_305f156156d37e34, // 0x9,
-        hash_36bc80636f0fdac4, // 0xa,
-        hash_3c0932fa55ee6e5b, // 0xb,
+        prt_zm_richtofen_ofc, // 0x8,
+        prt_zm_takeo, // 0x9,
+        prt_zm_dempsey_ofc, // 0xa,
+        prt_zm_brigadier, // 0xb,
         hash_3e63362aea484e09, // 0xc,
-        hash_46b92e1337b43236, // 0xd,
-        hash_4e8f51ec275a4a38, // 0xe,
+        prt_zm_nikolai_ofc, // 0xd,
+        prt_zm_gunslinger, // 0xe,
         hash_515977e191d13967, // 0xf,
-        hash_59f3598ad57dadd8, // 0x10,
+        prt_zm_richtofen, // 0x10,
         hash_5a906d7137467771, // 0x11,
-        hash_5ebf024e1559c04a, // 0x12,
-        hash_68255d9ce2a09382, // 0x13,
-        hash_6df0037e3f390b15, // 0x14,
-        hash_7180c6cf382f6010, // 0x15,
-        hash_73d71ff1e886bbe9, // 0x16,
-        hash_78aa6812c38263ba, // 0x17
+        prt_zm_butler, // 0x12,
+        prt_zm_scarlett, // 0x13,
+        prt_zm_takeo_ofc, // 0x14,
+        prt_zm_bruno, // 0x15,
+        prt_zm_richtofen_whi, // 0x16,
+        prt_zm_nikolai_whi, // 0x17
     };
 
     // idx 0 members 33 size 0x1b170
@@ -16517,7 +16517,7 @@ version 92 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -17274,30 +17274,30 @@ version 91 {
 
     // idx 7 members 24
     enum zmcharacters {
-        hash_4cb4663e341a940, // 0x0,
-        hash_f531a8c2df891cc, // 0x1,
+        prt_zm_dempsey_whi, // 0x0,
+        prt_zm_diego, // 0x1,
         hash_14e91ceb9a7b3eb6, // 0x2,
         hash_1a427f842f175b3c, // 0x3,
-        hash_1aa57ef704f24fa5, // 0x4,
-        hash_1fd4157dcafc6e45, // 0x5,
-        hash_22e6f7e13c3a99ef, // 0x6,
+        prt_zm_dempsey, // 0x4,
+        prt_zm_takeo_whi, // 0x5,
+        prt_zm_nikolai, // 0x6,
         hash_26072a3b34719d22, // 0x7,
-        hash_2bcebdf1bef33311, // 0x8,
-        hash_305f156156d37e34, // 0x9,
-        hash_36bc80636f0fdac4, // 0xa,
-        hash_3c0932fa55ee6e5b, // 0xb,
+        prt_zm_richtofen_ofc, // 0x8,
+        prt_zm_takeo, // 0x9,
+        prt_zm_dempsey_ofc, // 0xa,
+        prt_zm_brigadier, // 0xb,
         hash_3e63362aea484e09, // 0xc,
-        hash_46b92e1337b43236, // 0xd,
-        hash_4e8f51ec275a4a38, // 0xe,
+        prt_zm_nikolai_ofc, // 0xd,
+        prt_zm_gunslinger, // 0xe,
         hash_515977e191d13967, // 0xf,
-        hash_59f3598ad57dadd8, // 0x10,
+        prt_zm_richtofen, // 0x10,
         hash_5a906d7137467771, // 0x11,
-        hash_5ebf024e1559c04a, // 0x12,
-        hash_68255d9ce2a09382, // 0x13,
-        hash_6df0037e3f390b15, // 0x14,
-        hash_7180c6cf382f6010, // 0x15,
-        hash_73d71ff1e886bbe9, // 0x16,
-        hash_78aa6812c38263ba, // 0x17
+        prt_zm_butler, // 0x12,
+        prt_zm_scarlett, // 0x13,
+        prt_zm_takeo_ofc, // 0x14,
+        prt_zm_bruno, // 0x15,
+        prt_zm_richtofen_whi, // 0x16,
+        prt_zm_nikolai_whi, // 0x17
     };
 
     // idx 0 members 33 size 0x1b170
@@ -17316,7 +17316,7 @@ version 91 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -18077,26 +18077,26 @@ version 90 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x1b660
@@ -18115,7 +18115,7 @@ version 90 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -18875,26 +18875,26 @@ version 89 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x1b660
@@ -18913,7 +18913,7 @@ version 89 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -19673,26 +19673,26 @@ version 88 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x1b660
@@ -19711,7 +19711,7 @@ version 88 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -20442,26 +20442,26 @@ version 87 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x16ec8
@@ -20480,7 +20480,7 @@ version 87 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -21199,26 +21199,26 @@ version 86 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x15ff0
@@ -21237,7 +21237,7 @@ version 86 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -21953,26 +21953,26 @@ version 85 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x15ff0
@@ -21991,7 +21991,7 @@ version 85 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -22707,26 +22707,26 @@ version 84 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 32 size 0x15ff0
@@ -22745,7 +22745,7 @@ version 84 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -23457,26 +23457,26 @@ version 83 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 31 size 0x15fe8
@@ -23495,7 +23495,7 @@ version 83 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -24197,26 +24197,26 @@ version 82 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 31 size 0x15fe0
@@ -24235,7 +24235,7 @@ version 82 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -24936,26 +24936,26 @@ version 81 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 32 size 0x15fe0
@@ -24974,7 +24974,7 @@ version 81 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -25674,26 +25674,26 @@ version 80 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 32 size 0x15fe0
@@ -25712,7 +25712,7 @@ version 80 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -26411,26 +26411,26 @@ version 79 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 32 size 0x15fe0
@@ -26449,7 +26449,7 @@ version 79 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -27147,26 +27147,26 @@ version 78 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 32 size 0x15fe0
@@ -27185,7 +27185,7 @@ version 78 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -27882,26 +27882,26 @@ version 77 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 32 size 0x15fe0
@@ -27920,7 +27920,7 @@ version 77 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -28616,26 +28616,26 @@ version 76 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 31 size 0x15fd8
@@ -28654,7 +28654,7 @@ version 76 {
     // offset 0x108, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x110, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x130, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x12b0, size 0x40
@@ -29440,26 +29440,26 @@ version 75 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x16700
@@ -29480,7 +29480,7 @@ version 75 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -30275,26 +30275,26 @@ version 74 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x16e70
@@ -30315,7 +30315,7 @@ version 74 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -31110,26 +31110,26 @@ version 73 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x16e70
@@ -31150,7 +31150,7 @@ version 73 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -31945,26 +31945,26 @@ version 72 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x16e70
@@ -31985,7 +31985,7 @@ version 72 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -32768,26 +32768,26 @@ version 71 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x15f98
@@ -32808,7 +32808,7 @@ version 71 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -33590,26 +33590,26 @@ version 70 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x15f98
@@ -33630,7 +33630,7 @@ version 70 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -34404,26 +34404,26 @@ version 69 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 32 size 0x155b0
@@ -34444,7 +34444,7 @@ version 69 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -35215,26 +35215,26 @@ version 68 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x155b0
@@ -35255,7 +35255,7 @@ version 68 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -36022,26 +36022,26 @@ version 67 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x14e48
@@ -36062,7 +36062,7 @@ version 67 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -36828,26 +36828,26 @@ version 66 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x14e48
@@ -36868,7 +36868,7 @@ version 66 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -37613,26 +37613,26 @@ version 65 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x13590
@@ -37653,7 +37653,7 @@ version 65 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -38398,26 +38398,26 @@ version 64 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x13590
@@ -38438,7 +38438,7 @@ version 64 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -39175,26 +39175,26 @@ version 63 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x13590
@@ -39215,7 +39215,7 @@ version 63 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -39951,26 +39951,26 @@ version 62 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 32 size 0x13588
@@ -39991,7 +39991,7 @@ version 62 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -40723,26 +40723,26 @@ version 61 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x13310
@@ -40763,7 +40763,7 @@ version 61 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -41495,26 +41495,26 @@ version 60 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x13098
@@ -41535,7 +41535,7 @@ version 60 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -42265,26 +42265,26 @@ version 59 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x13098
@@ -42305,7 +42305,7 @@ version 59 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -43035,26 +43035,26 @@ version 58 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x13098
@@ -43075,7 +43075,7 @@ version 58 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -43804,26 +43804,26 @@ version 57 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x13098
@@ -43844,7 +43844,7 @@ version 57 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -44561,26 +44561,26 @@ version 56 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x13098
@@ -44601,7 +44601,7 @@ version 56 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -45315,26 +45315,26 @@ version 55 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 32 size 0x13090
@@ -45355,7 +45355,7 @@ version 55 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -46042,26 +46042,26 @@ version 54 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x112e8
@@ -46082,7 +46082,7 @@ version 54 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -46769,26 +46769,26 @@ version 53 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x11070
@@ -46809,7 +46809,7 @@ version 53 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -47487,26 +47487,26 @@ version 52 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 33 size 0x10688
@@ -47527,7 +47527,7 @@ version 52 {
     // offset 0x748, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x750, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x770, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18f0, size 0x40
@@ -48205,26 +48205,26 @@ version 51 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 32 size 0x10668
@@ -48243,7 +48243,7 @@ version 51 {
     // offset 0x728, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x730, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x750, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18d0, size 0x40
@@ -48909,26 +48909,26 @@ version 50 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 32 size 0x10668
@@ -48947,7 +48947,7 @@ version 50 {
     // offset 0x728, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x730, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x750, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18d0, size 0x40
@@ -49614,26 +49614,26 @@ version 49 {
 
     // idx 7 members 20
     enum zmcharacters {
-        hash_f531a8c2df891cc, // 0x0,
+        prt_zm_diego, // 0x0,
         hash_14e91ceb9a7b3eb6, // 0x1,
         hash_1a427f842f175b3c, // 0x2,
-        hash_1aa57ef704f24fa5, // 0x3,
-        hash_22e6f7e13c3a99ef, // 0x4,
+        prt_zm_dempsey, // 0x3,
+        prt_zm_nikolai, // 0x4,
         hash_26072a3b34719d22, // 0x5,
-        hash_2bcebdf1bef33311, // 0x6,
-        hash_305f156156d37e34, // 0x7,
-        hash_36bc80636f0fdac4, // 0x8,
-        hash_3c0932fa55ee6e5b, // 0x9,
+        prt_zm_richtofen_ofc, // 0x6,
+        prt_zm_takeo, // 0x7,
+        prt_zm_dempsey_ofc, // 0x8,
+        prt_zm_brigadier, // 0x9,
         hash_3e63362aea484e09, // 0xa,
-        hash_46b92e1337b43236, // 0xb,
-        hash_4e8f51ec275a4a38, // 0xc,
+        prt_zm_nikolai_ofc, // 0xb,
+        prt_zm_gunslinger, // 0xc,
         hash_515977e191d13967, // 0xd,
-        hash_59f3598ad57dadd8, // 0xe,
+        prt_zm_richtofen, // 0xe,
         hash_5a906d7137467771, // 0xf,
-        hash_5ebf024e1559c04a, // 0x10,
-        hash_68255d9ce2a09382, // 0x11,
-        hash_6df0037e3f390b15, // 0x12,
-        hash_7180c6cf382f6010, // 0x13
+        prt_zm_butler, // 0x10,
+        prt_zm_scarlett, // 0x11,
+        prt_zm_takeo_ofc, // 0x12,
+        prt_zm_bruno, // 0x13
     };
 
     // idx 0 members 32 size 0x10668
@@ -49652,7 +49652,7 @@ version 49 {
     // offset 0x728, size 0x8
     uint:5 gamebookmarkindex;
     // offset 0x730, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x750, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x18d0, size 0x40
@@ -50276,7 +50276,7 @@ version 48 {
         hash_cff2ec7244f14a8, // 0x29,
         bgbs_chewed, // 0x2a,
         catalysts_killed, // 0x2b,
-        hash_dd2dc50d66eb166, // 0x2c,
+        specialty_mod_electriccherry_drank, // 0x2c,
         zm_daily_challenge_start_time, // 0x2d,
         kdratio, // 0x2e,
         perk_mule_kick_kills, // 0x2f,
@@ -50315,7 +50315,7 @@ version 48 {
         total_points, // 0x50,
         hash_1c45a8ee71e29e37, // 0x51,
         leaderboardfailures, // 0x52,
-        hash_1dc1fbd3fd2fe493, // 0x53,
+        specialty_mod_fastreload_drank, // 0x53,
         zm_daily_kills_traps, // 0x54,
         ties, // 0x55,
         zombie_hunter_plasmatic_burst, // 0x56,
@@ -50329,7 +50329,7 @@ version 48 {
         zm_daily_purchase_perks, // 0x5e,
         hash_23d2d5674d304c2d, // 0x5f,
         hash_24ccc77cf1df2b49, // 0x60,
-        hash_254f75482929079b, // 0x61,
+        specialty_mod_berserker_drank, // 0x61,
         bonus_points_team_pickedup, // 0x62,
         hash_27399de28b76c5c6, // 0x63,
         catalyst_transformation_denials, // 0x64,
@@ -50343,7 +50343,7 @@ version 48 {
         shield_charge_pickedup, // 0x6c,
         hash_29bf8d4ddf84dd24, // 0x6d,
         hash_29e6ec48e9101f71, // 0x6e,
-        hash_2a63229e9bf23baa, // 0x6f,
+        specialty_mod_extraammo_drank, // 0x6f,
         specialty_quickrevive_drank, // 0x70,
         revives, // 0x71,
         zspiders_killed, // 0x72,
@@ -50381,7 +50381,7 @@ version 48 {
         hash_3621f03d7659cd81, // 0x92,
         gum_gobbler_burned_out, // 0x93,
         zsentinel_killed, // 0x94,
-        hash_382854bc103fd553, // 0x95,
+        specialty_mod_staminup_drank, // 0x95,
         gum_gobbler_powerups, // 0x96,
         double_points_pickedup, // 0x97,
         zm_daily_kills_mg, // 0x98,
@@ -50397,27 +50397,27 @@ version 48 {
         hash_3b4358ad4b022950, // 0xa2,
         cheat_out_of_playable, // 0xa3,
         hash_3b730e19ee963ab6, // 0xa4,
-        hash_3bd6bf00e8c71a5d, // 0xa5,
+        specialty_mod_shield_drank, // 0xa5,
         specialty_mystery_drank, // 0xa6,
         prison_tomahawk_acquired, // 0xa7,
         prison_fan_trap_used, // 0xa8,
         specialty_camper_drank, // 0xa9,
         zombie_hunter_kill_packapunch, // 0xaa,
-        hash_3d9b732ca303132b, // 0xab,
+        specialty_mod_armorvest_drank, // 0xab,
         bgb_tokens_used, // 0xac,
         hash_3e1a66815798ba48, // 0xad,
         hash_3ebae93ea866519c, // 0xae,
         pack_a_punch_pickedup, // 0xaf,
         hash_3fa2584a22ebf623, // 0xb0,
         island_seed_pickedup, // 0xb1,
-        hash_402bebef02213c02, // 0xb2,
+        specialty_mod_camper_drank, // 0xb2,
         wlratio, // 0xb3,
         zm_daily_earn_5k_with_2x, // 0xb4,
         hash_405387fd6efe78b3, // 0xb5,
         teamkills_nostats, // 0xb6,
         hash_40d2ff74fd37a2ab, // 0xb7,
         score, // 0xb8,
-        hash_41476f0bb1f7c683, // 0xb9,
+        specialty_mod_awareness_drank, // 0xb9,
         survivalist_survive_rounds, // 0xba,
         prison_brutus_killed, // 0xbb,
         survivalist_buy_door, // 0xbc,
@@ -50426,7 +50426,7 @@ version 48 {
         zm_daily_kills_instakill, // 0xbf,
         hash_4402d97ccdae530f, // 0xc0,
         hash_44077c71bca8da4c, // 0xc1,
-        hash_4419d00a9f04f866, // 0xc2,
+        specialty_mod_deadshot_drank, // 0xc2,
         use_magicbox, // 0xc3,
         hash_452e07bec3b77c8e, // 0xc4,
         hash_455678c15cd3bb55, // 0xc5,
@@ -50435,14 +50435,14 @@ version 48 {
         hash_461f4cde5d994295, // 0xc8,
         hash_47646e52fcbb190e, // 0xc9,
         hash_47685630580f6b5f, // 0xca,
-        hash_48288866afddc0d4, // 0xcb,
+        specialty_mod_quickrevive_drank, // 0xcb,
         zdog_rounds_lost, // 0xcc,
         nuke_pickedup, // 0xcd,
         cheat_too_many_weapons, // 0xce,
         rounds_no_damage, // 0xcf,
         planted_buildables_pickedup, // 0xd0,
         hash_4987f029c7312bfb, // 0xd1,
-        hash_49cc8e6486122824, // 0xd2,
+        specialty_mod_doubletap2_drank, // 0xd2,
         teamkills, // 0xd3,
         hash_4a85f88f796e6b0d, // 0xd4,
         hash_4b011cd0269a8502, // 0xd5,
@@ -50487,13 +50487,13 @@ version 48 {
         challenges, // 0xfc,
         specialty_deadshot_drank, // 0xfd,
         bouncingbetty_pickedup, // 0xfe,
-        hash_583ff5f66fd10104, // 0xff,
+        specialty_berserker_drank, // 0xff,
         use_pap, // 0x100,
         catalyst_plasmas_killed, // 0x101,
         hash_5913a206f4ee760c, // 0x102,
         gum_gobbler_anywhere_but_here, // 0x103,
         hash_5a2c6be15132de02, // 0x104,
-        hash_5a42a4d4accf00bf, // 0x105,
+        specialty_mod_additionalprimaryweapon_drank, // 0x105,
         hash_5a65e8030a21c479, // 0x106,
         maxxp, // 0x107,
         insta_kill_pickedup, // 0x108,
@@ -50503,7 +50503,7 @@ version 48 {
         total_shots, // 0x10c,
         survivalist_buy_perk, // 0x10d,
         hash_5c5cab0cce302a01, // 0x10e,
-        hash_5c9c943cd0cffc65, // 0x10f,
+        specialty_mod_cooldown_drank, // 0x10f,
         hash_5d098efca02f7c99, // 0x110,
         towers_acid_trap_built_danu, // 0x111,
         bgb_tokens_gained, // 0x112,
@@ -50572,7 +50572,7 @@ version 48 {
         melee_kills, // 0x151,
         hash_794996196e74a949, // 0x152,
         towers_acid_trap_built_zeus, // 0x153,
-        hash_79d41974c40c126e, // 0x154,
+        specialty_mod_widowswine_drank, // 0x154,
         hash_7a406e363a7db141, // 0x155,
         zm_current_daily_challenge, // 0x156,
         kills, // 0x157,
@@ -50581,7 +50581,7 @@ version 48 {
         extra_lives_pickedup, // 0x15a,
         ammo_purchased, // 0x15b,
         maxed_special_weapon_kills, // 0x15c,
-        hash_7d98fe4413e871a4, // 0x15d,
+        specialty_mod_phdflopper_drank, // 0x15d,
         killed_by_catalyst_corrosive, // 0x15e,
         bouncingbetty_planted, // 0x15f,
         assists, // 0x160,
@@ -50738,7 +50738,7 @@ version 48 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -50834,8 +50834,8 @@ version 48 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -50894,7 +50894,7 @@ version 48 {
     // offset 0x3a088, size 0x20
     int motdversionviewed;
     // offset 0x3a0a8, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x3a0c8, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x3a0d0, size 0xc30
@@ -51558,7 +51558,7 @@ version 47 {
         hash_cff2ec7244f14a8, // 0x27,
         bgbs_chewed, // 0x28,
         catalysts_killed, // 0x29,
-        hash_dd2dc50d66eb166, // 0x2a,
+        specialty_mod_electriccherry_drank, // 0x2a,
         zm_daily_challenge_start_time, // 0x2b,
         kdratio, // 0x2c,
         perk_mule_kick_kills, // 0x2d,
@@ -51594,7 +51594,7 @@ version 47 {
         shields_purchased, // 0x4b,
         total_points, // 0x4c,
         leaderboardfailures, // 0x4d,
-        hash_1dc1fbd3fd2fe493, // 0x4e,
+        specialty_mod_fastreload_drank, // 0x4e,
         zm_daily_kills_traps, // 0x4f,
         ties, // 0x50,
         zombie_hunter_plasmatic_burst, // 0x51,
@@ -51605,7 +51605,7 @@ version 47 {
         paragon_icon_id, // 0x56,
         zm_daily_purchase_perks, // 0x57,
         hash_24ccc77cf1df2b49, // 0x58,
-        hash_254f75482929079b, // 0x59,
+        specialty_mod_berserker_drank, // 0x59,
         bonus_points_team_pickedup, // 0x5a,
         hash_27399de28b76c5c6, // 0x5b,
         catalyst_transformation_denials, // 0x5c,
@@ -51617,7 +51617,7 @@ version 47 {
         codpoints, // 0x62,
         shield_charge_pickedup, // 0x63,
         hash_29e6ec48e9101f71, // 0x64,
-        hash_2a63229e9bf23baa, // 0x65,
+        specialty_mod_extraammo_drank, // 0x65,
         specialty_quickrevive_drank, // 0x66,
         revives, // 0x67,
         zspiders_killed, // 0x68,
@@ -51654,7 +51654,7 @@ version 47 {
         hash_3621f03d7659cd81, // 0x87,
         gum_gobbler_burned_out, // 0x88,
         zsentinel_killed, // 0x89,
-        hash_382854bc103fd553, // 0x8a,
+        specialty_mod_staminup_drank, // 0x8a,
         gum_gobbler_powerups, // 0x8b,
         double_points_pickedup, // 0x8c,
         zm_daily_kills_mg, // 0x8d,
@@ -51670,27 +51670,27 @@ version 47 {
         hash_3b4358ad4b022950, // 0x97,
         cheat_out_of_playable, // 0x98,
         hash_3b730e19ee963ab6, // 0x99,
-        hash_3bd6bf00e8c71a5d, // 0x9a,
+        specialty_mod_shield_drank, // 0x9a,
         specialty_mystery_drank, // 0x9b,
         prison_tomahawk_acquired, // 0x9c,
         prison_fan_trap_used, // 0x9d,
         specialty_camper_drank, // 0x9e,
         zombie_hunter_kill_packapunch, // 0x9f,
-        hash_3d9b732ca303132b, // 0xa0,
+        specialty_mod_armorvest_drank, // 0xa0,
         bgb_tokens_used, // 0xa1,
         hash_3e1a66815798ba48, // 0xa2,
         hash_3ebae93ea866519c, // 0xa3,
         pack_a_punch_pickedup, // 0xa4,
         hash_3fa2584a22ebf623, // 0xa5,
         island_seed_pickedup, // 0xa6,
-        hash_402bebef02213c02, // 0xa7,
+        specialty_mod_camper_drank, // 0xa7,
         wlratio, // 0xa8,
         zm_daily_earn_5k_with_2x, // 0xa9,
         hash_405387fd6efe78b3, // 0xaa,
         teamkills_nostats, // 0xab,
         hash_40d2ff74fd37a2ab, // 0xac,
         score, // 0xad,
-        hash_41476f0bb1f7c683, // 0xae,
+        specialty_mod_awareness_drank, // 0xae,
         survivalist_survive_rounds, // 0xaf,
         prison_brutus_killed, // 0xb0,
         survivalist_buy_door, // 0xb1,
@@ -51698,21 +51698,21 @@ version 47 {
         total_games_played, // 0xb3,
         zm_daily_kills_instakill, // 0xb4,
         hash_44077c71bca8da4c, // 0xb5,
-        hash_4419d00a9f04f866, // 0xb6,
+        specialty_mod_deadshot_drank, // 0xb6,
         use_magicbox, // 0xb7,
         hash_452e07bec3b77c8e, // 0xb8,
         double_pap_kills, // 0xb9,
         hash_461167ab0f3d462a, // 0xba,
         hash_47646e52fcbb190e, // 0xbb,
         hash_47685630580f6b5f, // 0xbc,
-        hash_48288866afddc0d4, // 0xbd,
+        specialty_mod_quickrevive_drank, // 0xbd,
         zdog_rounds_lost, // 0xbe,
         nuke_pickedup, // 0xbf,
         cheat_too_many_weapons, // 0xc0,
         rounds_no_damage, // 0xc1,
         planted_buildables_pickedup, // 0xc2,
         hash_4987f029c7312bfb, // 0xc3,
-        hash_49cc8e6486122824, // 0xc4,
+        specialty_mod_doubletap2_drank, // 0xc4,
         teamkills, // 0xc5,
         hash_4a85f88f796e6b0d, // 0xc6,
         hash_4b011cd0269a8502, // 0xc7,
@@ -51754,13 +51754,13 @@ version 47 {
         challenges, // 0xeb,
         specialty_deadshot_drank, // 0xec,
         bouncingbetty_pickedup, // 0xed,
-        hash_583ff5f66fd10104, // 0xee,
+        specialty_berserker_drank, // 0xee,
         use_pap, // 0xef,
         catalyst_plasmas_killed, // 0xf0,
         hash_5913a206f4ee760c, // 0xf1,
         gum_gobbler_anywhere_but_here, // 0xf2,
         hash_5a2c6be15132de02, // 0xf3,
-        hash_5a42a4d4accf00bf, // 0xf4,
+        specialty_mod_additionalprimaryweapon_drank, // 0xf4,
         maxxp, // 0xf5,
         insta_kill_pickedup, // 0xf6,
         zombie_hunter_kill_headshot, // 0xf7,
@@ -51769,7 +51769,7 @@ version 47 {
         total_shots, // 0xfa,
         survivalist_buy_perk, // 0xfb,
         hash_5c5cab0cce302a01, // 0xfc,
-        hash_5c9c943cd0cffc65, // 0xfd,
+        specialty_mod_cooldown_drank, // 0xfd,
         hash_5d098efca02f7c99, // 0xfe,
         towers_acid_trap_built_danu, // 0xff,
         bgb_tokens_gained, // 0x100,
@@ -51836,7 +51836,7 @@ version 47 {
         melee_kills, // 0x13d,
         hash_794996196e74a949, // 0x13e,
         towers_acid_trap_built_zeus, // 0x13f,
-        hash_79d41974c40c126e, // 0x140,
+        specialty_mod_widowswine_drank, // 0x140,
         hash_7a406e363a7db141, // 0x141,
         zm_current_daily_challenge, // 0x142,
         kills, // 0x143,
@@ -51845,7 +51845,7 @@ version 47 {
         extra_lives_pickedup, // 0x146,
         ammo_purchased, // 0x147,
         maxed_special_weapon_kills, // 0x148,
-        hash_7d98fe4413e871a4, // 0x149,
+        specialty_mod_phdflopper_drank, // 0x149,
         killed_by_catalyst_corrosive, // 0x14a,
         bouncingbetty_planted, // 0x14b,
         assists, // 0x14c,
@@ -52002,7 +52002,7 @@ version 47 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -52098,8 +52098,8 @@ version 47 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -52158,7 +52158,7 @@ version 47 {
     // offset 0x3a088, size 0x20
     int motdversionviewed;
     // offset 0x3a0a8, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x3a0c8, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x3a0d0, size 0xc30
@@ -52822,7 +52822,7 @@ version 46 {
         hash_cff2ec7244f14a8, // 0x27,
         bgbs_chewed, // 0x28,
         catalysts_killed, // 0x29,
-        hash_dd2dc50d66eb166, // 0x2a,
+        specialty_mod_electriccherry_drank, // 0x2a,
         zm_daily_challenge_start_time, // 0x2b,
         kdratio, // 0x2c,
         perk_mule_kick_kills, // 0x2d,
@@ -52858,7 +52858,7 @@ version 46 {
         shields_purchased, // 0x4b,
         total_points, // 0x4c,
         leaderboardfailures, // 0x4d,
-        hash_1dc1fbd3fd2fe493, // 0x4e,
+        specialty_mod_fastreload_drank, // 0x4e,
         zm_daily_kills_traps, // 0x4f,
         ties, // 0x50,
         zombie_hunter_plasmatic_burst, // 0x51,
@@ -52869,7 +52869,7 @@ version 46 {
         paragon_icon_id, // 0x56,
         zm_daily_purchase_perks, // 0x57,
         hash_24ccc77cf1df2b49, // 0x58,
-        hash_254f75482929079b, // 0x59,
+        specialty_mod_berserker_drank, // 0x59,
         bonus_points_team_pickedup, // 0x5a,
         hash_27399de28b76c5c6, // 0x5b,
         catalyst_transformation_denials, // 0x5c,
@@ -52881,7 +52881,7 @@ version 46 {
         codpoints, // 0x62,
         shield_charge_pickedup, // 0x63,
         hash_29e6ec48e9101f71, // 0x64,
-        hash_2a63229e9bf23baa, // 0x65,
+        specialty_mod_extraammo_drank, // 0x65,
         specialty_quickrevive_drank, // 0x66,
         revives, // 0x67,
         zspiders_killed, // 0x68,
@@ -52918,7 +52918,7 @@ version 46 {
         hash_3621f03d7659cd81, // 0x87,
         gum_gobbler_burned_out, // 0x88,
         zsentinel_killed, // 0x89,
-        hash_382854bc103fd553, // 0x8a,
+        specialty_mod_staminup_drank, // 0x8a,
         gum_gobbler_powerups, // 0x8b,
         double_points_pickedup, // 0x8c,
         zm_daily_kills_mg, // 0x8d,
@@ -52934,27 +52934,27 @@ version 46 {
         hash_3b4358ad4b022950, // 0x97,
         cheat_out_of_playable, // 0x98,
         hash_3b730e19ee963ab6, // 0x99,
-        hash_3bd6bf00e8c71a5d, // 0x9a,
+        specialty_mod_shield_drank, // 0x9a,
         specialty_mystery_drank, // 0x9b,
         prison_tomahawk_acquired, // 0x9c,
         prison_fan_trap_used, // 0x9d,
         specialty_camper_drank, // 0x9e,
         zombie_hunter_kill_packapunch, // 0x9f,
-        hash_3d9b732ca303132b, // 0xa0,
+        specialty_mod_armorvest_drank, // 0xa0,
         bgb_tokens_used, // 0xa1,
         hash_3e1a66815798ba48, // 0xa2,
         hash_3ebae93ea866519c, // 0xa3,
         pack_a_punch_pickedup, // 0xa4,
         hash_3fa2584a22ebf623, // 0xa5,
         island_seed_pickedup, // 0xa6,
-        hash_402bebef02213c02, // 0xa7,
+        specialty_mod_camper_drank, // 0xa7,
         wlratio, // 0xa8,
         zm_daily_earn_5k_with_2x, // 0xa9,
         hash_405387fd6efe78b3, // 0xaa,
         teamkills_nostats, // 0xab,
         hash_40d2ff74fd37a2ab, // 0xac,
         score, // 0xad,
-        hash_41476f0bb1f7c683, // 0xae,
+        specialty_mod_awareness_drank, // 0xae,
         survivalist_survive_rounds, // 0xaf,
         prison_brutus_killed, // 0xb0,
         survivalist_buy_door, // 0xb1,
@@ -52962,21 +52962,21 @@ version 46 {
         total_games_played, // 0xb3,
         zm_daily_kills_instakill, // 0xb4,
         hash_44077c71bca8da4c, // 0xb5,
-        hash_4419d00a9f04f866, // 0xb6,
+        specialty_mod_deadshot_drank, // 0xb6,
         use_magicbox, // 0xb7,
         hash_452e07bec3b77c8e, // 0xb8,
         double_pap_kills, // 0xb9,
         hash_461167ab0f3d462a, // 0xba,
         hash_47646e52fcbb190e, // 0xbb,
         hash_47685630580f6b5f, // 0xbc,
-        hash_48288866afddc0d4, // 0xbd,
+        specialty_mod_quickrevive_drank, // 0xbd,
         zdog_rounds_lost, // 0xbe,
         nuke_pickedup, // 0xbf,
         cheat_too_many_weapons, // 0xc0,
         rounds_no_damage, // 0xc1,
         planted_buildables_pickedup, // 0xc2,
         hash_4987f029c7312bfb, // 0xc3,
-        hash_49cc8e6486122824, // 0xc4,
+        specialty_mod_doubletap2_drank, // 0xc4,
         teamkills, // 0xc5,
         hash_4a85f88f796e6b0d, // 0xc6,
         hash_4b011cd0269a8502, // 0xc7,
@@ -53017,13 +53017,13 @@ version 46 {
         challenges, // 0xea,
         specialty_deadshot_drank, // 0xeb,
         bouncingbetty_pickedup, // 0xec,
-        hash_583ff5f66fd10104, // 0xed,
+        specialty_berserker_drank, // 0xed,
         use_pap, // 0xee,
         catalyst_plasmas_killed, // 0xef,
         hash_5913a206f4ee760c, // 0xf0,
         gum_gobbler_anywhere_but_here, // 0xf1,
         hash_5a2c6be15132de02, // 0xf2,
-        hash_5a42a4d4accf00bf, // 0xf3,
+        specialty_mod_additionalprimaryweapon_drank, // 0xf3,
         maxxp, // 0xf4,
         insta_kill_pickedup, // 0xf5,
         zombie_hunter_kill_headshot, // 0xf6,
@@ -53032,7 +53032,7 @@ version 46 {
         total_shots, // 0xf9,
         survivalist_buy_perk, // 0xfa,
         hash_5c5cab0cce302a01, // 0xfb,
-        hash_5c9c943cd0cffc65, // 0xfc,
+        specialty_mod_cooldown_drank, // 0xfc,
         hash_5d098efca02f7c99, // 0xfd,
         towers_acid_trap_built_danu, // 0xfe,
         bgb_tokens_gained, // 0xff,
@@ -53099,7 +53099,7 @@ version 46 {
         melee_kills, // 0x13c,
         hash_794996196e74a949, // 0x13d,
         towers_acid_trap_built_zeus, // 0x13e,
-        hash_79d41974c40c126e, // 0x13f,
+        specialty_mod_widowswine_drank, // 0x13f,
         hash_7a406e363a7db141, // 0x140,
         zm_current_daily_challenge, // 0x141,
         kills, // 0x142,
@@ -53108,7 +53108,7 @@ version 46 {
         extra_lives_pickedup, // 0x145,
         ammo_purchased, // 0x146,
         maxed_special_weapon_kills, // 0x147,
-        hash_7d98fe4413e871a4, // 0x148,
+        specialty_mod_phdflopper_drank, // 0x148,
         killed_by_catalyst_corrosive, // 0x149,
         bouncingbetty_planted, // 0x14a,
         assists, // 0x14b,
@@ -53265,7 +53265,7 @@ version 46 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -53361,8 +53361,8 @@ version 46 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -53421,7 +53421,7 @@ version 46 {
     // offset 0x3a088, size 0x20
     int motdversionviewed;
     // offset 0x3a0a8, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x3a0c8, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x3a0d0, size 0xc30
@@ -54069,7 +54069,7 @@ version 45 {
         hash_cff2ec7244f14a8, // 0x27,
         bgbs_chewed, // 0x28,
         catalysts_killed, // 0x29,
-        hash_dd2dc50d66eb166, // 0x2a,
+        specialty_mod_electriccherry_drank, // 0x2a,
         zm_daily_challenge_start_time, // 0x2b,
         kdratio, // 0x2c,
         perk_mule_kick_kills, // 0x2d,
@@ -54105,7 +54105,7 @@ version 45 {
         shields_purchased, // 0x4b,
         total_points, // 0x4c,
         leaderboardfailures, // 0x4d,
-        hash_1dc1fbd3fd2fe493, // 0x4e,
+        specialty_mod_fastreload_drank, // 0x4e,
         zm_daily_kills_traps, // 0x4f,
         ties, // 0x50,
         zombie_hunter_plasmatic_burst, // 0x51,
@@ -54116,7 +54116,7 @@ version 45 {
         paragon_icon_id, // 0x56,
         zm_daily_purchase_perks, // 0x57,
         hash_24ccc77cf1df2b49, // 0x58,
-        hash_254f75482929079b, // 0x59,
+        specialty_mod_berserker_drank, // 0x59,
         bonus_points_team_pickedup, // 0x5a,
         hash_27399de28b76c5c6, // 0x5b,
         catalyst_transformation_denials, // 0x5c,
@@ -54128,7 +54128,7 @@ version 45 {
         codpoints, // 0x62,
         shield_charge_pickedup, // 0x63,
         hash_29e6ec48e9101f71, // 0x64,
-        hash_2a63229e9bf23baa, // 0x65,
+        specialty_mod_extraammo_drank, // 0x65,
         specialty_quickrevive_drank, // 0x66,
         revives, // 0x67,
         zspiders_killed, // 0x68,
@@ -54165,7 +54165,7 @@ version 45 {
         hash_3621f03d7659cd81, // 0x87,
         gum_gobbler_burned_out, // 0x88,
         zsentinel_killed, // 0x89,
-        hash_382854bc103fd553, // 0x8a,
+        specialty_mod_staminup_drank, // 0x8a,
         gum_gobbler_powerups, // 0x8b,
         double_points_pickedup, // 0x8c,
         zm_daily_kills_mg, // 0x8d,
@@ -54181,27 +54181,27 @@ version 45 {
         hash_3b4358ad4b022950, // 0x97,
         cheat_out_of_playable, // 0x98,
         hash_3b730e19ee963ab6, // 0x99,
-        hash_3bd6bf00e8c71a5d, // 0x9a,
+        specialty_mod_shield_drank, // 0x9a,
         specialty_mystery_drank, // 0x9b,
         prison_tomahawk_acquired, // 0x9c,
         prison_fan_trap_used, // 0x9d,
         specialty_camper_drank, // 0x9e,
         zombie_hunter_kill_packapunch, // 0x9f,
-        hash_3d9b732ca303132b, // 0xa0,
+        specialty_mod_armorvest_drank, // 0xa0,
         bgb_tokens_used, // 0xa1,
         hash_3e1a66815798ba48, // 0xa2,
         hash_3ebae93ea866519c, // 0xa3,
         pack_a_punch_pickedup, // 0xa4,
         hash_3fa2584a22ebf623, // 0xa5,
         island_seed_pickedup, // 0xa6,
-        hash_402bebef02213c02, // 0xa7,
+        specialty_mod_camper_drank, // 0xa7,
         wlratio, // 0xa8,
         zm_daily_earn_5k_with_2x, // 0xa9,
         hash_405387fd6efe78b3, // 0xaa,
         teamkills_nostats, // 0xab,
         hash_40d2ff74fd37a2ab, // 0xac,
         score, // 0xad,
-        hash_41476f0bb1f7c683, // 0xae,
+        specialty_mod_awareness_drank, // 0xae,
         survivalist_survive_rounds, // 0xaf,
         prison_brutus_killed, // 0xb0,
         survivalist_buy_door, // 0xb1,
@@ -54209,21 +54209,21 @@ version 45 {
         total_games_played, // 0xb3,
         zm_daily_kills_instakill, // 0xb4,
         hash_44077c71bca8da4c, // 0xb5,
-        hash_4419d00a9f04f866, // 0xb6,
+        specialty_mod_deadshot_drank, // 0xb6,
         use_magicbox, // 0xb7,
         hash_452e07bec3b77c8e, // 0xb8,
         double_pap_kills, // 0xb9,
         hash_461167ab0f3d462a, // 0xba,
         hash_47646e52fcbb190e, // 0xbb,
         hash_47685630580f6b5f, // 0xbc,
-        hash_48288866afddc0d4, // 0xbd,
+        specialty_mod_quickrevive_drank, // 0xbd,
         zdog_rounds_lost, // 0xbe,
         nuke_pickedup, // 0xbf,
         cheat_too_many_weapons, // 0xc0,
         rounds_no_damage, // 0xc1,
         planted_buildables_pickedup, // 0xc2,
         hash_4987f029c7312bfb, // 0xc3,
-        hash_49cc8e6486122824, // 0xc4,
+        specialty_mod_doubletap2_drank, // 0xc4,
         teamkills, // 0xc5,
         hash_4a85f88f796e6b0d, // 0xc6,
         hash_4b011cd0269a8502, // 0xc7,
@@ -54264,13 +54264,13 @@ version 45 {
         challenges, // 0xea,
         specialty_deadshot_drank, // 0xeb,
         bouncingbetty_pickedup, // 0xec,
-        hash_583ff5f66fd10104, // 0xed,
+        specialty_berserker_drank, // 0xed,
         use_pap, // 0xee,
         catalyst_plasmas_killed, // 0xef,
         hash_5913a206f4ee760c, // 0xf0,
         gum_gobbler_anywhere_but_here, // 0xf1,
         hash_5a2c6be15132de02, // 0xf2,
-        hash_5a42a4d4accf00bf, // 0xf3,
+        specialty_mod_additionalprimaryweapon_drank, // 0xf3,
         maxxp, // 0xf4,
         insta_kill_pickedup, // 0xf5,
         zombie_hunter_kill_headshot, // 0xf6,
@@ -54279,7 +54279,7 @@ version 45 {
         total_shots, // 0xf9,
         survivalist_buy_perk, // 0xfa,
         hash_5c5cab0cce302a01, // 0xfb,
-        hash_5c9c943cd0cffc65, // 0xfc,
+        specialty_mod_cooldown_drank, // 0xfc,
         hash_5d098efca02f7c99, // 0xfd,
         towers_acid_trap_built_danu, // 0xfe,
         bgb_tokens_gained, // 0xff,
@@ -54346,7 +54346,7 @@ version 45 {
         melee_kills, // 0x13c,
         hash_794996196e74a949, // 0x13d,
         towers_acid_trap_built_zeus, // 0x13e,
-        hash_79d41974c40c126e, // 0x13f,
+        specialty_mod_widowswine_drank, // 0x13f,
         hash_7a406e363a7db141, // 0x140,
         zm_current_daily_challenge, // 0x141,
         kills, // 0x142,
@@ -54355,7 +54355,7 @@ version 45 {
         extra_lives_pickedup, // 0x145,
         ammo_purchased, // 0x146,
         maxed_special_weapon_kills, // 0x147,
-        hash_7d98fe4413e871a4, // 0x148,
+        specialty_mod_phdflopper_drank, // 0x148,
         killed_by_catalyst_corrosive, // 0x149,
         bouncingbetty_planted, // 0x14a,
         assists, // 0x14b,
@@ -54512,7 +54512,7 @@ version 45 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -54608,8 +54608,8 @@ version 45 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -54668,7 +54668,7 @@ version 45 {
     // offset 0x3a088, size 0x20
     int motdversionviewed;
     // offset 0x3a0a8, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x3a0c8, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x3a0d0, size 0xc30
@@ -55314,7 +55314,7 @@ version 44 {
         hash_cff2ec7244f14a8, // 0x27,
         bgbs_chewed, // 0x28,
         catalysts_killed, // 0x29,
-        hash_dd2dc50d66eb166, // 0x2a,
+        specialty_mod_electriccherry_drank, // 0x2a,
         zm_daily_challenge_start_time, // 0x2b,
         kdratio, // 0x2c,
         perk_mule_kick_kills, // 0x2d,
@@ -55350,7 +55350,7 @@ version 44 {
         shields_purchased, // 0x4b,
         total_points, // 0x4c,
         leaderboardfailures, // 0x4d,
-        hash_1dc1fbd3fd2fe493, // 0x4e,
+        specialty_mod_fastreload_drank, // 0x4e,
         zm_daily_kills_traps, // 0x4f,
         ties, // 0x50,
         zombie_hunter_plasmatic_burst, // 0x51,
@@ -55361,7 +55361,7 @@ version 44 {
         paragon_icon_id, // 0x56,
         zm_daily_purchase_perks, // 0x57,
         hash_24ccc77cf1df2b49, // 0x58,
-        hash_254f75482929079b, // 0x59,
+        specialty_mod_berserker_drank, // 0x59,
         bonus_points_team_pickedup, // 0x5a,
         hash_27399de28b76c5c6, // 0x5b,
         catalyst_transformation_denials, // 0x5c,
@@ -55373,7 +55373,7 @@ version 44 {
         codpoints, // 0x62,
         shield_charge_pickedup, // 0x63,
         hash_29e6ec48e9101f71, // 0x64,
-        hash_2a63229e9bf23baa, // 0x65,
+        specialty_mod_extraammo_drank, // 0x65,
         specialty_quickrevive_drank, // 0x66,
         revives, // 0x67,
         zspiders_killed, // 0x68,
@@ -55410,7 +55410,7 @@ version 44 {
         hash_3621f03d7659cd81, // 0x87,
         gum_gobbler_burned_out, // 0x88,
         zsentinel_killed, // 0x89,
-        hash_382854bc103fd553, // 0x8a,
+        specialty_mod_staminup_drank, // 0x8a,
         gum_gobbler_powerups, // 0x8b,
         double_points_pickedup, // 0x8c,
         zm_daily_kills_mg, // 0x8d,
@@ -55426,27 +55426,27 @@ version 44 {
         hash_3b4358ad4b022950, // 0x97,
         cheat_out_of_playable, // 0x98,
         hash_3b730e19ee963ab6, // 0x99,
-        hash_3bd6bf00e8c71a5d, // 0x9a,
+        specialty_mod_shield_drank, // 0x9a,
         specialty_mystery_drank, // 0x9b,
         prison_tomahawk_acquired, // 0x9c,
         prison_fan_trap_used, // 0x9d,
         specialty_camper_drank, // 0x9e,
         zombie_hunter_kill_packapunch, // 0x9f,
-        hash_3d9b732ca303132b, // 0xa0,
+        specialty_mod_armorvest_drank, // 0xa0,
         bgb_tokens_used, // 0xa1,
         hash_3e1a66815798ba48, // 0xa2,
         hash_3ebae93ea866519c, // 0xa3,
         pack_a_punch_pickedup, // 0xa4,
         hash_3fa2584a22ebf623, // 0xa5,
         island_seed_pickedup, // 0xa6,
-        hash_402bebef02213c02, // 0xa7,
+        specialty_mod_camper_drank, // 0xa7,
         wlratio, // 0xa8,
         zm_daily_earn_5k_with_2x, // 0xa9,
         hash_405387fd6efe78b3, // 0xaa,
         teamkills_nostats, // 0xab,
         hash_40d2ff74fd37a2ab, // 0xac,
         score, // 0xad,
-        hash_41476f0bb1f7c683, // 0xae,
+        specialty_mod_awareness_drank, // 0xae,
         survivalist_survive_rounds, // 0xaf,
         prison_brutus_killed, // 0xb0,
         survivalist_buy_door, // 0xb1,
@@ -55454,21 +55454,21 @@ version 44 {
         total_games_played, // 0xb3,
         zm_daily_kills_instakill, // 0xb4,
         hash_44077c71bca8da4c, // 0xb5,
-        hash_4419d00a9f04f866, // 0xb6,
+        specialty_mod_deadshot_drank, // 0xb6,
         use_magicbox, // 0xb7,
         hash_452e07bec3b77c8e, // 0xb8,
         double_pap_kills, // 0xb9,
         hash_461167ab0f3d462a, // 0xba,
         hash_47646e52fcbb190e, // 0xbb,
         hash_47685630580f6b5f, // 0xbc,
-        hash_48288866afddc0d4, // 0xbd,
+        specialty_mod_quickrevive_drank, // 0xbd,
         zdog_rounds_lost, // 0xbe,
         nuke_pickedup, // 0xbf,
         cheat_too_many_weapons, // 0xc0,
         rounds_no_damage, // 0xc1,
         planted_buildables_pickedup, // 0xc2,
         hash_4987f029c7312bfb, // 0xc3,
-        hash_49cc8e6486122824, // 0xc4,
+        specialty_mod_doubletap2_drank, // 0xc4,
         teamkills, // 0xc5,
         hash_4a85f88f796e6b0d, // 0xc6,
         hash_4b011cd0269a8502, // 0xc7,
@@ -55509,13 +55509,13 @@ version 44 {
         challenges, // 0xea,
         specialty_deadshot_drank, // 0xeb,
         bouncingbetty_pickedup, // 0xec,
-        hash_583ff5f66fd10104, // 0xed,
+        specialty_berserker_drank, // 0xed,
         use_pap, // 0xee,
         catalyst_plasmas_killed, // 0xef,
         hash_5913a206f4ee760c, // 0xf0,
         gum_gobbler_anywhere_but_here, // 0xf1,
         hash_5a2c6be15132de02, // 0xf2,
-        hash_5a42a4d4accf00bf, // 0xf3,
+        specialty_mod_additionalprimaryweapon_drank, // 0xf3,
         maxxp, // 0xf4,
         insta_kill_pickedup, // 0xf5,
         zombie_hunter_kill_headshot, // 0xf6,
@@ -55524,7 +55524,7 @@ version 44 {
         total_shots, // 0xf9,
         survivalist_buy_perk, // 0xfa,
         hash_5c5cab0cce302a01, // 0xfb,
-        hash_5c9c943cd0cffc65, // 0xfc,
+        specialty_mod_cooldown_drank, // 0xfc,
         hash_5d098efca02f7c99, // 0xfd,
         towers_acid_trap_built_danu, // 0xfe,
         bgb_tokens_gained, // 0xff,
@@ -55591,7 +55591,7 @@ version 44 {
         melee_kills, // 0x13c,
         hash_794996196e74a949, // 0x13d,
         towers_acid_trap_built_zeus, // 0x13e,
-        hash_79d41974c40c126e, // 0x13f,
+        specialty_mod_widowswine_drank, // 0x13f,
         hash_7a406e363a7db141, // 0x140,
         zm_current_daily_challenge, // 0x141,
         kills, // 0x142,
@@ -55600,7 +55600,7 @@ version 44 {
         extra_lives_pickedup, // 0x145,
         ammo_purchased, // 0x146,
         maxed_special_weapon_kills, // 0x147,
-        hash_7d98fe4413e871a4, // 0x148,
+        specialty_mod_phdflopper_drank, // 0x148,
         killed_by_catalyst_corrosive, // 0x149,
         bouncingbetty_planted, // 0x14a,
         assists, // 0x14b,
@@ -55757,7 +55757,7 @@ version 44 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -55853,8 +55853,8 @@ version 44 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -55913,7 +55913,7 @@ version 44 {
     // offset 0x3a088, size 0x20
     int motdversionviewed;
     // offset 0x3a0a8, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x3a0c8, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x3a0d0, size 0xc30
@@ -56549,7 +56549,7 @@ version 43 {
         hash_cff2ec7244f14a8, // 0x27,
         bgbs_chewed, // 0x28,
         catalysts_killed, // 0x29,
-        hash_dd2dc50d66eb166, // 0x2a,
+        specialty_mod_electriccherry_drank, // 0x2a,
         zm_daily_challenge_start_time, // 0x2b,
         kdratio, // 0x2c,
         perk_mule_kick_kills, // 0x2d,
@@ -56585,7 +56585,7 @@ version 43 {
         shields_purchased, // 0x4b,
         total_points, // 0x4c,
         leaderboardfailures, // 0x4d,
-        hash_1dc1fbd3fd2fe493, // 0x4e,
+        specialty_mod_fastreload_drank, // 0x4e,
         zm_daily_kills_traps, // 0x4f,
         ties, // 0x50,
         zombie_hunter_plasmatic_burst, // 0x51,
@@ -56596,7 +56596,7 @@ version 43 {
         paragon_icon_id, // 0x56,
         zm_daily_purchase_perks, // 0x57,
         hash_24ccc77cf1df2b49, // 0x58,
-        hash_254f75482929079b, // 0x59,
+        specialty_mod_berserker_drank, // 0x59,
         bonus_points_team_pickedup, // 0x5a,
         hash_27399de28b76c5c6, // 0x5b,
         catalyst_transformation_denials, // 0x5c,
@@ -56608,7 +56608,7 @@ version 43 {
         codpoints, // 0x62,
         shield_charge_pickedup, // 0x63,
         hash_29e6ec48e9101f71, // 0x64,
-        hash_2a63229e9bf23baa, // 0x65,
+        specialty_mod_extraammo_drank, // 0x65,
         specialty_quickrevive_drank, // 0x66,
         revives, // 0x67,
         zspiders_killed, // 0x68,
@@ -56645,7 +56645,7 @@ version 43 {
         hash_3621f03d7659cd81, // 0x87,
         gum_gobbler_burned_out, // 0x88,
         zsentinel_killed, // 0x89,
-        hash_382854bc103fd553, // 0x8a,
+        specialty_mod_staminup_drank, // 0x8a,
         gum_gobbler_powerups, // 0x8b,
         double_points_pickedup, // 0x8c,
         zm_daily_kills_mg, // 0x8d,
@@ -56661,27 +56661,27 @@ version 43 {
         hash_3b4358ad4b022950, // 0x97,
         cheat_out_of_playable, // 0x98,
         hash_3b730e19ee963ab6, // 0x99,
-        hash_3bd6bf00e8c71a5d, // 0x9a,
+        specialty_mod_shield_drank, // 0x9a,
         specialty_mystery_drank, // 0x9b,
         prison_tomahawk_acquired, // 0x9c,
         prison_fan_trap_used, // 0x9d,
         specialty_camper_drank, // 0x9e,
         zombie_hunter_kill_packapunch, // 0x9f,
-        hash_3d9b732ca303132b, // 0xa0,
+        specialty_mod_armorvest_drank, // 0xa0,
         bgb_tokens_used, // 0xa1,
         hash_3e1a66815798ba48, // 0xa2,
         hash_3ebae93ea866519c, // 0xa3,
         pack_a_punch_pickedup, // 0xa4,
         hash_3fa2584a22ebf623, // 0xa5,
         island_seed_pickedup, // 0xa6,
-        hash_402bebef02213c02, // 0xa7,
+        specialty_mod_camper_drank, // 0xa7,
         wlratio, // 0xa8,
         zm_daily_earn_5k_with_2x, // 0xa9,
         hash_405387fd6efe78b3, // 0xaa,
         teamkills_nostats, // 0xab,
         hash_40d2ff74fd37a2ab, // 0xac,
         score, // 0xad,
-        hash_41476f0bb1f7c683, // 0xae,
+        specialty_mod_awareness_drank, // 0xae,
         survivalist_survive_rounds, // 0xaf,
         prison_brutus_killed, // 0xb0,
         survivalist_buy_door, // 0xb1,
@@ -56689,21 +56689,21 @@ version 43 {
         total_games_played, // 0xb3,
         zm_daily_kills_instakill, // 0xb4,
         hash_44077c71bca8da4c, // 0xb5,
-        hash_4419d00a9f04f866, // 0xb6,
+        specialty_mod_deadshot_drank, // 0xb6,
         use_magicbox, // 0xb7,
         hash_452e07bec3b77c8e, // 0xb8,
         double_pap_kills, // 0xb9,
         hash_461167ab0f3d462a, // 0xba,
         hash_47646e52fcbb190e, // 0xbb,
         hash_47685630580f6b5f, // 0xbc,
-        hash_48288866afddc0d4, // 0xbd,
+        specialty_mod_quickrevive_drank, // 0xbd,
         zdog_rounds_lost, // 0xbe,
         nuke_pickedup, // 0xbf,
         cheat_too_many_weapons, // 0xc0,
         rounds_no_damage, // 0xc1,
         planted_buildables_pickedup, // 0xc2,
         hash_4987f029c7312bfb, // 0xc3,
-        hash_49cc8e6486122824, // 0xc4,
+        specialty_mod_doubletap2_drank, // 0xc4,
         teamkills, // 0xc5,
         hash_4a85f88f796e6b0d, // 0xc6,
         hash_4b011cd0269a8502, // 0xc7,
@@ -56744,13 +56744,13 @@ version 43 {
         challenges, // 0xea,
         specialty_deadshot_drank, // 0xeb,
         bouncingbetty_pickedup, // 0xec,
-        hash_583ff5f66fd10104, // 0xed,
+        specialty_berserker_drank, // 0xed,
         use_pap, // 0xee,
         catalyst_plasmas_killed, // 0xef,
         hash_5913a206f4ee760c, // 0xf0,
         gum_gobbler_anywhere_but_here, // 0xf1,
         hash_5a2c6be15132de02, // 0xf2,
-        hash_5a42a4d4accf00bf, // 0xf3,
+        specialty_mod_additionalprimaryweapon_drank, // 0xf3,
         maxxp, // 0xf4,
         insta_kill_pickedup, // 0xf5,
         zombie_hunter_kill_headshot, // 0xf6,
@@ -56759,7 +56759,7 @@ version 43 {
         total_shots, // 0xf9,
         survivalist_buy_perk, // 0xfa,
         hash_5c5cab0cce302a01, // 0xfb,
-        hash_5c9c943cd0cffc65, // 0xfc,
+        specialty_mod_cooldown_drank, // 0xfc,
         hash_5d098efca02f7c99, // 0xfd,
         towers_acid_trap_built_danu, // 0xfe,
         bgb_tokens_gained, // 0xff,
@@ -56826,7 +56826,7 @@ version 43 {
         melee_kills, // 0x13c,
         hash_794996196e74a949, // 0x13d,
         towers_acid_trap_built_zeus, // 0x13e,
-        hash_79d41974c40c126e, // 0x13f,
+        specialty_mod_widowswine_drank, // 0x13f,
         hash_7a406e363a7db141, // 0x140,
         zm_current_daily_challenge, // 0x141,
         kills, // 0x142,
@@ -56835,7 +56835,7 @@ version 43 {
         extra_lives_pickedup, // 0x145,
         ammo_purchased, // 0x146,
         maxed_special_weapon_kills, // 0x147,
-        hash_7d98fe4413e871a4, // 0x148,
+        specialty_mod_phdflopper_drank, // 0x148,
         killed_by_catalyst_corrosive, // 0x149,
         bouncingbetty_planted, // 0x14a,
         assists, // 0x14b,
@@ -56992,7 +56992,7 @@ version 43 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -57088,8 +57088,8 @@ version 43 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -57148,7 +57148,7 @@ version 43 {
     // offset 0x3a088, size 0x20
     int motdversionviewed;
     // offset 0x3a0a8, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x3a0c8, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x3a0d0, size 0xc30
@@ -57774,7 +57774,7 @@ version 42 {
         hash_cff2ec7244f14a8, // 0x27,
         bgbs_chewed, // 0x28,
         catalysts_killed, // 0x29,
-        hash_dd2dc50d66eb166, // 0x2a,
+        specialty_mod_electriccherry_drank, // 0x2a,
         zm_daily_challenge_start_time, // 0x2b,
         kdratio, // 0x2c,
         perk_mule_kick_kills, // 0x2d,
@@ -57810,7 +57810,7 @@ version 42 {
         shields_purchased, // 0x4b,
         total_points, // 0x4c,
         leaderboardfailures, // 0x4d,
-        hash_1dc1fbd3fd2fe493, // 0x4e,
+        specialty_mod_fastreload_drank, // 0x4e,
         zm_daily_kills_traps, // 0x4f,
         ties, // 0x50,
         zombie_hunter_plasmatic_burst, // 0x51,
@@ -57821,7 +57821,7 @@ version 42 {
         paragon_icon_id, // 0x56,
         zm_daily_purchase_perks, // 0x57,
         hash_24ccc77cf1df2b49, // 0x58,
-        hash_254f75482929079b, // 0x59,
+        specialty_mod_berserker_drank, // 0x59,
         bonus_points_team_pickedup, // 0x5a,
         catalyst_transformation_denials, // 0x5b,
         zombie_hunter_kill_trap, // 0x5c,
@@ -57832,7 +57832,7 @@ version 42 {
         codpoints, // 0x61,
         shield_charge_pickedup, // 0x62,
         hash_29e6ec48e9101f71, // 0x63,
-        hash_2a63229e9bf23baa, // 0x64,
+        specialty_mod_extraammo_drank, // 0x64,
         specialty_quickrevive_drank, // 0x65,
         revives, // 0x66,
         zspiders_killed, // 0x67,
@@ -57869,7 +57869,7 @@ version 42 {
         hash_3621f03d7659cd81, // 0x86,
         gum_gobbler_burned_out, // 0x87,
         zsentinel_killed, // 0x88,
-        hash_382854bc103fd553, // 0x89,
+        specialty_mod_staminup_drank, // 0x89,
         gum_gobbler_powerups, // 0x8a,
         double_points_pickedup, // 0x8b,
         zm_daily_kills_mg, // 0x8c,
@@ -57885,27 +57885,27 @@ version 42 {
         hash_3b4358ad4b022950, // 0x96,
         cheat_out_of_playable, // 0x97,
         hash_3b730e19ee963ab6, // 0x98,
-        hash_3bd6bf00e8c71a5d, // 0x99,
+        specialty_mod_shield_drank, // 0x99,
         specialty_mystery_drank, // 0x9a,
         prison_tomahawk_acquired, // 0x9b,
         prison_fan_trap_used, // 0x9c,
         specialty_camper_drank, // 0x9d,
         zombie_hunter_kill_packapunch, // 0x9e,
-        hash_3d9b732ca303132b, // 0x9f,
+        specialty_mod_armorvest_drank, // 0x9f,
         bgb_tokens_used, // 0xa0,
         hash_3e1a66815798ba48, // 0xa1,
         hash_3ebae93ea866519c, // 0xa2,
         pack_a_punch_pickedup, // 0xa3,
         hash_3fa2584a22ebf623, // 0xa4,
         island_seed_pickedup, // 0xa5,
-        hash_402bebef02213c02, // 0xa6,
+        specialty_mod_camper_drank, // 0xa6,
         wlratio, // 0xa7,
         zm_daily_earn_5k_with_2x, // 0xa8,
         hash_405387fd6efe78b3, // 0xa9,
         teamkills_nostats, // 0xaa,
         hash_40d2ff74fd37a2ab, // 0xab,
         score, // 0xac,
-        hash_41476f0bb1f7c683, // 0xad,
+        specialty_mod_awareness_drank, // 0xad,
         survivalist_survive_rounds, // 0xae,
         prison_brutus_killed, // 0xaf,
         survivalist_buy_door, // 0xb0,
@@ -57913,21 +57913,21 @@ version 42 {
         total_games_played, // 0xb2,
         zm_daily_kills_instakill, // 0xb3,
         hash_44077c71bca8da4c, // 0xb4,
-        hash_4419d00a9f04f866, // 0xb5,
+        specialty_mod_deadshot_drank, // 0xb5,
         use_magicbox, // 0xb6,
         hash_452e07bec3b77c8e, // 0xb7,
         double_pap_kills, // 0xb8,
         hash_461167ab0f3d462a, // 0xb9,
         hash_47646e52fcbb190e, // 0xba,
         hash_47685630580f6b5f, // 0xbb,
-        hash_48288866afddc0d4, // 0xbc,
+        specialty_mod_quickrevive_drank, // 0xbc,
         zdog_rounds_lost, // 0xbd,
         nuke_pickedup, // 0xbe,
         cheat_too_many_weapons, // 0xbf,
         rounds_no_damage, // 0xc0,
         planted_buildables_pickedup, // 0xc1,
         hash_4987f029c7312bfb, // 0xc2,
-        hash_49cc8e6486122824, // 0xc3,
+        specialty_mod_doubletap2_drank, // 0xc3,
         teamkills, // 0xc4,
         hash_4a85f88f796e6b0d, // 0xc5,
         hash_4b011cd0269a8502, // 0xc6,
@@ -57968,13 +57968,13 @@ version 42 {
         challenges, // 0xe9,
         specialty_deadshot_drank, // 0xea,
         bouncingbetty_pickedup, // 0xeb,
-        hash_583ff5f66fd10104, // 0xec,
+        specialty_berserker_drank, // 0xec,
         use_pap, // 0xed,
         catalyst_plasmas_killed, // 0xee,
         hash_5913a206f4ee760c, // 0xef,
         gum_gobbler_anywhere_but_here, // 0xf0,
         hash_5a2c6be15132de02, // 0xf1,
-        hash_5a42a4d4accf00bf, // 0xf2,
+        specialty_mod_additionalprimaryweapon_drank, // 0xf2,
         maxxp, // 0xf3,
         insta_kill_pickedup, // 0xf4,
         zombie_hunter_kill_headshot, // 0xf5,
@@ -57983,7 +57983,7 @@ version 42 {
         total_shots, // 0xf8,
         survivalist_buy_perk, // 0xf9,
         hash_5c5cab0cce302a01, // 0xfa,
-        hash_5c9c943cd0cffc65, // 0xfb,
+        specialty_mod_cooldown_drank, // 0xfb,
         hash_5d098efca02f7c99, // 0xfc,
         towers_acid_trap_built_danu, // 0xfd,
         bgb_tokens_gained, // 0xfe,
@@ -58050,7 +58050,7 @@ version 42 {
         melee_kills, // 0x13b,
         hash_794996196e74a949, // 0x13c,
         towers_acid_trap_built_zeus, // 0x13d,
-        hash_79d41974c40c126e, // 0x13e,
+        specialty_mod_widowswine_drank, // 0x13e,
         hash_7a406e363a7db141, // 0x13f,
         zm_current_daily_challenge, // 0x140,
         kills, // 0x141,
@@ -58059,7 +58059,7 @@ version 42 {
         extra_lives_pickedup, // 0x144,
         ammo_purchased, // 0x145,
         maxed_special_weapon_kills, // 0x146,
-        hash_7d98fe4413e871a4, // 0x147,
+        specialty_mod_phdflopper_drank, // 0x147,
         killed_by_catalyst_corrosive, // 0x148,
         bouncingbetty_planted, // 0x149,
         assists, // 0x14a,
@@ -58216,7 +58216,7 @@ version 42 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -58312,8 +58312,8 @@ version 42 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -58372,7 +58372,7 @@ version 42 {
     // offset 0x3a088, size 0x20
     int motdversionviewed;
     // offset 0x3a0a8, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x3a0c8, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x3a0d0, size 0xc30
@@ -58998,7 +58998,7 @@ version 41 {
         hash_cff2ec7244f14a8, // 0x27,
         bgbs_chewed, // 0x28,
         catalysts_killed, // 0x29,
-        hash_dd2dc50d66eb166, // 0x2a,
+        specialty_mod_electriccherry_drank, // 0x2a,
         zm_daily_challenge_start_time, // 0x2b,
         kdratio, // 0x2c,
         perk_mule_kick_kills, // 0x2d,
@@ -59034,7 +59034,7 @@ version 41 {
         shields_purchased, // 0x4b,
         total_points, // 0x4c,
         leaderboardfailures, // 0x4d,
-        hash_1dc1fbd3fd2fe493, // 0x4e,
+        specialty_mod_fastreload_drank, // 0x4e,
         zm_daily_kills_traps, // 0x4f,
         ties, // 0x50,
         zombie_hunter_plasmatic_burst, // 0x51,
@@ -59045,7 +59045,7 @@ version 41 {
         paragon_icon_id, // 0x56,
         zm_daily_purchase_perks, // 0x57,
         hash_24ccc77cf1df2b49, // 0x58,
-        hash_254f75482929079b, // 0x59,
+        specialty_mod_berserker_drank, // 0x59,
         bonus_points_team_pickedup, // 0x5a,
         catalyst_transformation_denials, // 0x5b,
         zombie_hunter_kill_trap, // 0x5c,
@@ -59056,7 +59056,7 @@ version 41 {
         codpoints, // 0x61,
         shield_charge_pickedup, // 0x62,
         hash_29e6ec48e9101f71, // 0x63,
-        hash_2a63229e9bf23baa, // 0x64,
+        specialty_mod_extraammo_drank, // 0x64,
         specialty_quickrevive_drank, // 0x65,
         revives, // 0x66,
         zspiders_killed, // 0x67,
@@ -59093,7 +59093,7 @@ version 41 {
         hash_3621f03d7659cd81, // 0x86,
         gum_gobbler_burned_out, // 0x87,
         zsentinel_killed, // 0x88,
-        hash_382854bc103fd553, // 0x89,
+        specialty_mod_staminup_drank, // 0x89,
         gum_gobbler_powerups, // 0x8a,
         double_points_pickedup, // 0x8b,
         zm_daily_kills_mg, // 0x8c,
@@ -59109,27 +59109,27 @@ version 41 {
         hash_3b4358ad4b022950, // 0x96,
         cheat_out_of_playable, // 0x97,
         hash_3b730e19ee963ab6, // 0x98,
-        hash_3bd6bf00e8c71a5d, // 0x99,
+        specialty_mod_shield_drank, // 0x99,
         specialty_mystery_drank, // 0x9a,
         prison_tomahawk_acquired, // 0x9b,
         prison_fan_trap_used, // 0x9c,
         specialty_camper_drank, // 0x9d,
         zombie_hunter_kill_packapunch, // 0x9e,
-        hash_3d9b732ca303132b, // 0x9f,
+        specialty_mod_armorvest_drank, // 0x9f,
         bgb_tokens_used, // 0xa0,
         hash_3e1a66815798ba48, // 0xa1,
         hash_3ebae93ea866519c, // 0xa2,
         pack_a_punch_pickedup, // 0xa3,
         hash_3fa2584a22ebf623, // 0xa4,
         island_seed_pickedup, // 0xa5,
-        hash_402bebef02213c02, // 0xa6,
+        specialty_mod_camper_drank, // 0xa6,
         wlratio, // 0xa7,
         zm_daily_earn_5k_with_2x, // 0xa8,
         hash_405387fd6efe78b3, // 0xa9,
         teamkills_nostats, // 0xaa,
         hash_40d2ff74fd37a2ab, // 0xab,
         score, // 0xac,
-        hash_41476f0bb1f7c683, // 0xad,
+        specialty_mod_awareness_drank, // 0xad,
         survivalist_survive_rounds, // 0xae,
         prison_brutus_killed, // 0xaf,
         survivalist_buy_door, // 0xb0,
@@ -59137,21 +59137,21 @@ version 41 {
         total_games_played, // 0xb2,
         zm_daily_kills_instakill, // 0xb3,
         hash_44077c71bca8da4c, // 0xb4,
-        hash_4419d00a9f04f866, // 0xb5,
+        specialty_mod_deadshot_drank, // 0xb5,
         use_magicbox, // 0xb6,
         hash_452e07bec3b77c8e, // 0xb7,
         double_pap_kills, // 0xb8,
         hash_461167ab0f3d462a, // 0xb9,
         hash_47646e52fcbb190e, // 0xba,
         hash_47685630580f6b5f, // 0xbb,
-        hash_48288866afddc0d4, // 0xbc,
+        specialty_mod_quickrevive_drank, // 0xbc,
         zdog_rounds_lost, // 0xbd,
         nuke_pickedup, // 0xbe,
         cheat_too_many_weapons, // 0xbf,
         rounds_no_damage, // 0xc0,
         planted_buildables_pickedup, // 0xc1,
         hash_4987f029c7312bfb, // 0xc2,
-        hash_49cc8e6486122824, // 0xc3,
+        specialty_mod_doubletap2_drank, // 0xc3,
         teamkills, // 0xc4,
         hash_4a85f88f796e6b0d, // 0xc5,
         hash_4b011cd0269a8502, // 0xc6,
@@ -59192,13 +59192,13 @@ version 41 {
         challenges, // 0xe9,
         specialty_deadshot_drank, // 0xea,
         bouncingbetty_pickedup, // 0xeb,
-        hash_583ff5f66fd10104, // 0xec,
+        specialty_berserker_drank, // 0xec,
         use_pap, // 0xed,
         catalyst_plasmas_killed, // 0xee,
         hash_5913a206f4ee760c, // 0xef,
         gum_gobbler_anywhere_but_here, // 0xf0,
         hash_5a2c6be15132de02, // 0xf1,
-        hash_5a42a4d4accf00bf, // 0xf2,
+        specialty_mod_additionalprimaryweapon_drank, // 0xf2,
         maxxp, // 0xf3,
         insta_kill_pickedup, // 0xf4,
         zombie_hunter_kill_headshot, // 0xf5,
@@ -59207,7 +59207,7 @@ version 41 {
         total_shots, // 0xf8,
         survivalist_buy_perk, // 0xf9,
         hash_5c5cab0cce302a01, // 0xfa,
-        hash_5c9c943cd0cffc65, // 0xfb,
+        specialty_mod_cooldown_drank, // 0xfb,
         hash_5d098efca02f7c99, // 0xfc,
         towers_acid_trap_built_danu, // 0xfd,
         bgb_tokens_gained, // 0xfe,
@@ -59274,7 +59274,7 @@ version 41 {
         melee_kills, // 0x13b,
         hash_794996196e74a949, // 0x13c,
         towers_acid_trap_built_zeus, // 0x13d,
-        hash_79d41974c40c126e, // 0x13e,
+        specialty_mod_widowswine_drank, // 0x13e,
         hash_7a406e363a7db141, // 0x13f,
         zm_current_daily_challenge, // 0x140,
         kills, // 0x141,
@@ -59283,7 +59283,7 @@ version 41 {
         extra_lives_pickedup, // 0x144,
         ammo_purchased, // 0x145,
         maxed_special_weapon_kills, // 0x146,
-        hash_7d98fe4413e871a4, // 0x147,
+        specialty_mod_phdflopper_drank, // 0x147,
         killed_by_catalyst_corrosive, // 0x148,
         bouncingbetty_planted, // 0x149,
         assists, // 0x14a,
@@ -59440,7 +59440,7 @@ version 41 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -59536,8 +59536,8 @@ version 41 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -59596,7 +59596,7 @@ version 41 {
     // offset 0x30128, size 0x20
     int motdversionviewed;
     // offset 0x30148, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x30168, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x30170, size 0xc30
@@ -60219,7 +60219,7 @@ version 40 {
         sessionbans, // 0x24,
         bgbs_chewed, // 0x25,
         catalysts_killed, // 0x26,
-        hash_dd2dc50d66eb166, // 0x27,
+        specialty_mod_electriccherry_drank, // 0x27,
         zm_daily_challenge_start_time, // 0x28,
         kdratio, // 0x29,
         perk_mule_kick_kills, // 0x2a,
@@ -60254,7 +60254,7 @@ version 40 {
         shields_purchased, // 0x47,
         total_points, // 0x48,
         leaderboardfailures, // 0x49,
-        hash_1dc1fbd3fd2fe493, // 0x4a,
+        specialty_mod_fastreload_drank, // 0x4a,
         zm_daily_kills_traps, // 0x4b,
         ties, // 0x4c,
         zombie_hunter_plasmatic_burst, // 0x4d,
@@ -60265,7 +60265,7 @@ version 40 {
         paragon_icon_id, // 0x52,
         zm_daily_purchase_perks, // 0x53,
         hash_24ccc77cf1df2b49, // 0x54,
-        hash_254f75482929079b, // 0x55,
+        specialty_mod_berserker_drank, // 0x55,
         bonus_points_team_pickedup, // 0x56,
         hash_27324e3899f19c0f, // 0x57,
         catalyst_transformation_denials, // 0x58,
@@ -60277,7 +60277,7 @@ version 40 {
         codpoints, // 0x5e,
         shield_charge_pickedup, // 0x5f,
         hash_29e6ec48e9101f71, // 0x60,
-        hash_2a63229e9bf23baa, // 0x61,
+        specialty_mod_extraammo_drank, // 0x61,
         specialty_quickrevive_drank, // 0x62,
         revives, // 0x63,
         zspiders_killed, // 0x64,
@@ -60312,7 +60312,7 @@ version 40 {
         hash_3621f03d7659cd81, // 0x81,
         gum_gobbler_burned_out, // 0x82,
         zsentinel_killed, // 0x83,
-        hash_382854bc103fd553, // 0x84,
+        specialty_mod_staminup_drank, // 0x84,
         gum_gobbler_powerups, // 0x85,
         double_points_pickedup, // 0x86,
         zm_daily_kills_mg, // 0x87,
@@ -60325,25 +60325,25 @@ version 40 {
         survivalist_buy_wallbuy, // 0x8e,
         killed_by_blightfather, // 0x8f,
         cheat_out_of_playable, // 0x90,
-        hash_3bd6bf00e8c71a5d, // 0x91,
+        specialty_mod_shield_drank, // 0x91,
         specialty_mystery_drank, // 0x92,
         prison_tomahawk_acquired, // 0x93,
         prison_fan_trap_used, // 0x94,
         specialty_camper_drank, // 0x95,
         zombie_hunter_kill_packapunch, // 0x96,
-        hash_3d9b732ca303132b, // 0x97,
+        specialty_mod_armorvest_drank, // 0x97,
         bgb_tokens_used, // 0x98,
         hash_3e1a66815798ba48, // 0x99,
         hash_3ebae93ea866519c, // 0x9a,
         pack_a_punch_pickedup, // 0x9b,
         hash_3fa2584a22ebf623, // 0x9c,
         island_seed_pickedup, // 0x9d,
-        hash_402bebef02213c02, // 0x9e,
+        specialty_mod_camper_drank, // 0x9e,
         wlratio, // 0x9f,
         zm_daily_earn_5k_with_2x, // 0xa0,
         teamkills_nostats, // 0xa1,
         score, // 0xa2,
-        hash_41476f0bb1f7c683, // 0xa3,
+        specialty_mod_awareness_drank, // 0xa3,
         survivalist_survive_rounds, // 0xa4,
         prison_brutus_killed, // 0xa5,
         survivalist_buy_door, // 0xa6,
@@ -60351,13 +60351,13 @@ version 40 {
         total_games_played, // 0xa8,
         zm_daily_kills_instakill, // 0xa9,
         hash_44077c71bca8da4c, // 0xaa,
-        hash_4419d00a9f04f866, // 0xab,
+        specialty_mod_deadshot_drank, // 0xab,
         use_magicbox, // 0xac,
         hash_452e07bec3b77c8e, // 0xad,
         double_pap_kills, // 0xae,
         hash_461167ab0f3d462a, // 0xaf,
         hash_47646e52fcbb190e, // 0xb0,
-        hash_48288866afddc0d4, // 0xb1,
+        specialty_mod_quickrevive_drank, // 0xb1,
         zdog_rounds_lost, // 0xb2,
         hash_486e85b7fa460f08, // 0xb3,
         nuke_pickedup, // 0xb4,
@@ -60365,7 +60365,7 @@ version 40 {
         rounds_no_damage, // 0xb6,
         planted_buildables_pickedup, // 0xb7,
         hash_4987f029c7312bfb, // 0xb8,
-        hash_49cc8e6486122824, // 0xb9,
+        specialty_mod_doubletap2_drank, // 0xb9,
         teamkills, // 0xba,
         hash_4b011cd0269a8502, // 0xbb,
         zombie_hunter_frostbite, // 0xbc,
@@ -60408,13 +60408,13 @@ version 40 {
         challenges, // 0xe1,
         specialty_deadshot_drank, // 0xe2,
         bouncingbetty_pickedup, // 0xe3,
-        hash_583ff5f66fd10104, // 0xe4,
+        specialty_berserker_drank, // 0xe4,
         use_pap, // 0xe5,
         catalyst_plasmas_killed, // 0xe6,
         hash_5913a206f4ee760c, // 0xe7,
         gum_gobbler_anywhere_but_here, // 0xe8,
         hash_5a2c6be15132de02, // 0xe9,
-        hash_5a42a4d4accf00bf, // 0xea,
+        specialty_mod_additionalprimaryweapon_drank, // 0xea,
         maxxp, // 0xeb,
         insta_kill_pickedup, // 0xec,
         zombie_hunter_kill_headshot, // 0xed,
@@ -60422,7 +60422,7 @@ version 40 {
         total_shots, // 0xef,
         survivalist_buy_perk, // 0xf0,
         hash_5c5cab0cce302a01, // 0xf1,
-        hash_5c9c943cd0cffc65, // 0xf2,
+        specialty_mod_cooldown_drank, // 0xf2,
         hash_5d098efca02f7c99, // 0xf3,
         towers_acid_trap_built_danu, // 0xf4,
         bgb_tokens_gained, // 0xf5,
@@ -60484,14 +60484,14 @@ version 40 {
         melee_kills, // 0x12d,
         hash_794996196e74a949, // 0x12e,
         towers_acid_trap_built_zeus, // 0x12f,
-        hash_79d41974c40c126e, // 0x130,
+        specialty_mod_widowswine_drank, // 0x130,
         zm_current_daily_challenge, // 0x131,
         kills, // 0x132,
         killed_by_catalyst_water, // 0x133,
         extra_lives_pickedup, // 0x134,
         ammo_purchased, // 0x135,
         maxed_special_weapon_kills, // 0x136,
-        hash_7d98fe4413e871a4, // 0x137,
+        specialty_mod_phdflopper_drank, // 0x137,
         killed_by_catalyst_corrosive, // 0x138,
         bouncingbetty_planted, // 0x139,
         assists, // 0x13a,
@@ -60648,7 +60648,7 @@ version 40 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -60744,8 +60744,8 @@ version 40 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -60804,7 +60804,7 @@ version 40 {
     // offset 0x32f68, size 0x20
     int motdversionviewed;
     // offset 0x32f88, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x32fa8, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x32fb0, size 0xc30
@@ -61427,7 +61427,7 @@ version 39 {
         sessionbans, // 0x24,
         bgbs_chewed, // 0x25,
         catalysts_killed, // 0x26,
-        hash_dd2dc50d66eb166, // 0x27,
+        specialty_mod_electriccherry_drank, // 0x27,
         zm_daily_challenge_start_time, // 0x28,
         kdratio, // 0x29,
         perk_mule_kick_kills, // 0x2a,
@@ -61462,7 +61462,7 @@ version 39 {
         shields_purchased, // 0x47,
         total_points, // 0x48,
         leaderboardfailures, // 0x49,
-        hash_1dc1fbd3fd2fe493, // 0x4a,
+        specialty_mod_fastreload_drank, // 0x4a,
         zm_daily_kills_traps, // 0x4b,
         ties, // 0x4c,
         zombie_hunter_plasmatic_burst, // 0x4d,
@@ -61473,7 +61473,7 @@ version 39 {
         paragon_icon_id, // 0x52,
         zm_daily_purchase_perks, // 0x53,
         hash_24ccc77cf1df2b49, // 0x54,
-        hash_254f75482929079b, // 0x55,
+        specialty_mod_berserker_drank, // 0x55,
         bonus_points_team_pickedup, // 0x56,
         hash_27324e3899f19c0f, // 0x57,
         catalyst_transformation_denials, // 0x58,
@@ -61485,7 +61485,7 @@ version 39 {
         codpoints, // 0x5e,
         shield_charge_pickedup, // 0x5f,
         hash_29e6ec48e9101f71, // 0x60,
-        hash_2a63229e9bf23baa, // 0x61,
+        specialty_mod_extraammo_drank, // 0x61,
         specialty_quickrevive_drank, // 0x62,
         revives, // 0x63,
         zspiders_killed, // 0x64,
@@ -61520,7 +61520,7 @@ version 39 {
         hash_3621f03d7659cd81, // 0x81,
         gum_gobbler_burned_out, // 0x82,
         zsentinel_killed, // 0x83,
-        hash_382854bc103fd553, // 0x84,
+        specialty_mod_staminup_drank, // 0x84,
         gum_gobbler_powerups, // 0x85,
         double_points_pickedup, // 0x86,
         zm_daily_kills_mg, // 0x87,
@@ -61533,25 +61533,25 @@ version 39 {
         survivalist_buy_wallbuy, // 0x8e,
         killed_by_blightfather, // 0x8f,
         cheat_out_of_playable, // 0x90,
-        hash_3bd6bf00e8c71a5d, // 0x91,
+        specialty_mod_shield_drank, // 0x91,
         specialty_mystery_drank, // 0x92,
         prison_tomahawk_acquired, // 0x93,
         prison_fan_trap_used, // 0x94,
         specialty_camper_drank, // 0x95,
         zombie_hunter_kill_packapunch, // 0x96,
-        hash_3d9b732ca303132b, // 0x97,
+        specialty_mod_armorvest_drank, // 0x97,
         bgb_tokens_used, // 0x98,
         hash_3e1a66815798ba48, // 0x99,
         hash_3ebae93ea866519c, // 0x9a,
         pack_a_punch_pickedup, // 0x9b,
         hash_3fa2584a22ebf623, // 0x9c,
         island_seed_pickedup, // 0x9d,
-        hash_402bebef02213c02, // 0x9e,
+        specialty_mod_camper_drank, // 0x9e,
         wlratio, // 0x9f,
         zm_daily_earn_5k_with_2x, // 0xa0,
         teamkills_nostats, // 0xa1,
         score, // 0xa2,
-        hash_41476f0bb1f7c683, // 0xa3,
+        specialty_mod_awareness_drank, // 0xa3,
         survivalist_survive_rounds, // 0xa4,
         prison_brutus_killed, // 0xa5,
         survivalist_buy_door, // 0xa6,
@@ -61559,13 +61559,13 @@ version 39 {
         total_games_played, // 0xa8,
         zm_daily_kills_instakill, // 0xa9,
         hash_44077c71bca8da4c, // 0xaa,
-        hash_4419d00a9f04f866, // 0xab,
+        specialty_mod_deadshot_drank, // 0xab,
         use_magicbox, // 0xac,
         hash_452e07bec3b77c8e, // 0xad,
         double_pap_kills, // 0xae,
         hash_461167ab0f3d462a, // 0xaf,
         hash_47646e52fcbb190e, // 0xb0,
-        hash_48288866afddc0d4, // 0xb1,
+        specialty_mod_quickrevive_drank, // 0xb1,
         zdog_rounds_lost, // 0xb2,
         hash_486e85b7fa460f08, // 0xb3,
         nuke_pickedup, // 0xb4,
@@ -61573,7 +61573,7 @@ version 39 {
         rounds_no_damage, // 0xb6,
         planted_buildables_pickedup, // 0xb7,
         hash_4987f029c7312bfb, // 0xb8,
-        hash_49cc8e6486122824, // 0xb9,
+        specialty_mod_doubletap2_drank, // 0xb9,
         teamkills, // 0xba,
         hash_4b011cd0269a8502, // 0xbb,
         zombie_hunter_frostbite, // 0xbc,
@@ -61616,13 +61616,13 @@ version 39 {
         challenges, // 0xe1,
         specialty_deadshot_drank, // 0xe2,
         bouncingbetty_pickedup, // 0xe3,
-        hash_583ff5f66fd10104, // 0xe4,
+        specialty_berserker_drank, // 0xe4,
         use_pap, // 0xe5,
         catalyst_plasmas_killed, // 0xe6,
         hash_5913a206f4ee760c, // 0xe7,
         gum_gobbler_anywhere_but_here, // 0xe8,
         hash_5a2c6be15132de02, // 0xe9,
-        hash_5a42a4d4accf00bf, // 0xea,
+        specialty_mod_additionalprimaryweapon_drank, // 0xea,
         maxxp, // 0xeb,
         insta_kill_pickedup, // 0xec,
         zombie_hunter_kill_headshot, // 0xed,
@@ -61630,7 +61630,7 @@ version 39 {
         total_shots, // 0xef,
         survivalist_buy_perk, // 0xf0,
         hash_5c5cab0cce302a01, // 0xf1,
-        hash_5c9c943cd0cffc65, // 0xf2,
+        specialty_mod_cooldown_drank, // 0xf2,
         hash_5d098efca02f7c99, // 0xf3,
         towers_acid_trap_built_danu, // 0xf4,
         bgb_tokens_gained, // 0xf5,
@@ -61691,14 +61691,14 @@ version 39 {
         melee_kills, // 0x12c,
         hash_794996196e74a949, // 0x12d,
         towers_acid_trap_built_zeus, // 0x12e,
-        hash_79d41974c40c126e, // 0x12f,
+        specialty_mod_widowswine_drank, // 0x12f,
         zm_current_daily_challenge, // 0x130,
         kills, // 0x131,
         killed_by_catalyst_water, // 0x132,
         extra_lives_pickedup, // 0x133,
         ammo_purchased, // 0x134,
         maxed_special_weapon_kills, // 0x135,
-        hash_7d98fe4413e871a4, // 0x136,
+        specialty_mod_phdflopper_drank, // 0x136,
         killed_by_catalyst_corrosive, // 0x137,
         bouncingbetty_planted, // 0x138,
         assists, // 0x139,
@@ -61855,7 +61855,7 @@ version 39 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -61951,8 +61951,8 @@ version 39 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -62011,7 +62011,7 @@ version 39 {
     // offset 0x32f68, size 0x20
     int motdversionviewed;
     // offset 0x32f88, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x32fa8, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x32fb0, size 0xc30
@@ -62634,7 +62634,7 @@ version 38 {
         sessionbans, // 0x24,
         bgbs_chewed, // 0x25,
         catalysts_killed, // 0x26,
-        hash_dd2dc50d66eb166, // 0x27,
+        specialty_mod_electriccherry_drank, // 0x27,
         zm_daily_challenge_start_time, // 0x28,
         kdratio, // 0x29,
         perk_mule_kick_kills, // 0x2a,
@@ -62670,7 +62670,7 @@ version 38 {
         shields_purchased, // 0x48,
         total_points, // 0x49,
         leaderboardfailures, // 0x4a,
-        hash_1dc1fbd3fd2fe493, // 0x4b,
+        specialty_mod_fastreload_drank, // 0x4b,
         zm_daily_kills_traps, // 0x4c,
         ties, // 0x4d,
         hash_1f20f53b7084fdcb, // 0x4e,
@@ -62680,7 +62680,7 @@ version 38 {
         paragon_icon_id, // 0x52,
         zm_daily_purchase_perks, // 0x53,
         hash_24ccc77cf1df2b49, // 0x54,
-        hash_254f75482929079b, // 0x55,
+        specialty_mod_berserker_drank, // 0x55,
         hash_255c8b613c124fd0, // 0x56,
         bonus_points_team_pickedup, // 0x57,
         hash_27324e3899f19c0f, // 0x58,
@@ -62693,7 +62693,7 @@ version 38 {
         codpoints, // 0x5f,
         shield_charge_pickedup, // 0x60,
         hash_29e6ec48e9101f71, // 0x61,
-        hash_2a63229e9bf23baa, // 0x62,
+        specialty_mod_extraammo_drank, // 0x62,
         specialty_quickrevive_drank, // 0x63,
         revives, // 0x64,
         zspiders_killed, // 0x65,
@@ -62729,7 +62729,7 @@ version 38 {
         hash_3621f03d7659cd81, // 0x83,
         gum_gobbler_burned_out, // 0x84,
         zsentinel_killed, // 0x85,
-        hash_382854bc103fd553, // 0x86,
+        specialty_mod_staminup_drank, // 0x86,
         gum_gobbler_powerups, // 0x87,
         double_points_pickedup, // 0x88,
         zm_daily_kills_mg, // 0x89,
@@ -62742,25 +62742,25 @@ version 38 {
         survivalist_buy_wallbuy, // 0x90,
         killed_by_blightfather, // 0x91,
         cheat_out_of_playable, // 0x92,
-        hash_3bd6bf00e8c71a5d, // 0x93,
+        specialty_mod_shield_drank, // 0x93,
         specialty_mystery_drank, // 0x94,
         prison_tomahawk_acquired, // 0x95,
         prison_fan_trap_used, // 0x96,
         specialty_camper_drank, // 0x97,
         zombie_hunter_kill_packapunch, // 0x98,
-        hash_3d9b732ca303132b, // 0x99,
+        specialty_mod_armorvest_drank, // 0x99,
         bgb_tokens_used, // 0x9a,
         hash_3e1a66815798ba48, // 0x9b,
         hash_3ebae93ea866519c, // 0x9c,
         pack_a_punch_pickedup, // 0x9d,
         hash_3fa2584a22ebf623, // 0x9e,
         island_seed_pickedup, // 0x9f,
-        hash_402bebef02213c02, // 0xa0,
+        specialty_mod_camper_drank, // 0xa0,
         wlratio, // 0xa1,
         zm_daily_earn_5k_with_2x, // 0xa2,
         teamkills_nostats, // 0xa3,
         score, // 0xa4,
-        hash_41476f0bb1f7c683, // 0xa5,
+        specialty_mod_awareness_drank, // 0xa5,
         survivalist_survive_rounds, // 0xa6,
         prison_brutus_killed, // 0xa7,
         survivalist_buy_door, // 0xa8,
@@ -62768,13 +62768,13 @@ version 38 {
         total_games_played, // 0xaa,
         zm_daily_kills_instakill, // 0xab,
         hash_44077c71bca8da4c, // 0xac,
-        hash_4419d00a9f04f866, // 0xad,
+        specialty_mod_deadshot_drank, // 0xad,
         use_magicbox, // 0xae,
         hash_452e07bec3b77c8e, // 0xaf,
         double_pap_kills, // 0xb0,
         hash_461167ab0f3d462a, // 0xb1,
         hash_47646e52fcbb190e, // 0xb2,
-        hash_48288866afddc0d4, // 0xb3,
+        specialty_mod_quickrevive_drank, // 0xb3,
         zdog_rounds_lost, // 0xb4,
         hash_486e85b7fa460f08, // 0xb5,
         nuke_pickedup, // 0xb6,
@@ -62782,7 +62782,7 @@ version 38 {
         rounds_no_damage, // 0xb8,
         planted_buildables_pickedup, // 0xb9,
         hash_4987f029c7312bfb, // 0xba,
-        hash_49cc8e6486122824, // 0xbb,
+        specialty_mod_doubletap2_drank, // 0xbb,
         teamkills, // 0xbc,
         hash_4b011cd0269a8502, // 0xbd,
         hash_4bb632268a7ca18c, // 0xbe,
@@ -62824,13 +62824,13 @@ version 38 {
         challenges, // 0xe2,
         specialty_deadshot_drank, // 0xe3,
         bouncingbetty_pickedup, // 0xe4,
-        hash_583ff5f66fd10104, // 0xe5,
+        specialty_berserker_drank, // 0xe5,
         use_pap, // 0xe6,
         catalyst_plasmas_killed, // 0xe7,
         hash_5913a206f4ee760c, // 0xe8,
         gum_gobbler_anywhere_but_here, // 0xe9,
         hash_5a2c6be15132de02, // 0xea,
-        hash_5a42a4d4accf00bf, // 0xeb,
+        specialty_mod_additionalprimaryweapon_drank, // 0xeb,
         maxxp, // 0xec,
         insta_kill_pickedup, // 0xed,
         hash_5ae850ecf14fbefb, // 0xee,
@@ -62839,7 +62839,7 @@ version 38 {
         total_shots, // 0xf1,
         survivalist_buy_perk, // 0xf2,
         hash_5c5cab0cce302a01, // 0xf3,
-        hash_5c9c943cd0cffc65, // 0xf4,
+        specialty_mod_cooldown_drank, // 0xf4,
         hash_5d098efca02f7c99, // 0xf5,
         towers_acid_trap_built_danu, // 0xf6,
         bgb_tokens_gained, // 0xf7,
@@ -62899,14 +62899,14 @@ version 38 {
         melee_kills, // 0x12d,
         hash_794996196e74a949, // 0x12e,
         towers_acid_trap_built_zeus, // 0x12f,
-        hash_79d41974c40c126e, // 0x130,
+        specialty_mod_widowswine_drank, // 0x130,
         zm_current_daily_challenge, // 0x131,
         kills, // 0x132,
         killed_by_catalyst_water, // 0x133,
         extra_lives_pickedup, // 0x134,
         ammo_purchased, // 0x135,
         maxed_special_weapon_kills, // 0x136,
-        hash_7d98fe4413e871a4, // 0x137,
+        specialty_mod_phdflopper_drank, // 0x137,
         killed_by_catalyst_corrosive, // 0x138,
         bouncingbetty_planted, // 0x139,
         assists, // 0x13a,
@@ -63063,7 +63063,7 @@ version 38 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -63159,8 +63159,8 @@ version 38 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -63219,7 +63219,7 @@ version 38 {
     // offset 0x32f68, size 0x20
     int motdversionviewed;
     // offset 0x32f88, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x32fa8, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x32fb0, size 0xc30
@@ -63837,7 +63837,7 @@ version 37 {
         sessionbans, // 0x1f,
         bgbs_chewed, // 0x20,
         catalysts_killed, // 0x21,
-        hash_dd2dc50d66eb166, // 0x22,
+        specialty_mod_electriccherry_drank, // 0x22,
         zm_daily_challenge_start_time, // 0x23,
         kdratio, // 0x24,
         pap_weapon_not_grabbed, // 0x25,
@@ -63867,14 +63867,14 @@ version 37 {
         shields_purchased, // 0x3d,
         total_points, // 0x3e,
         leaderboardfailures, // 0x3f,
-        hash_1dc1fbd3fd2fe493, // 0x40,
+        specialty_mod_fastreload_drank, // 0x40,
         zm_daily_kills_traps, // 0x41,
         ties, // 0x42,
         cur_win_streak, // 0x43,
         killed_by_brutus, // 0x44,
         paragon_icon_id, // 0x45,
         zm_daily_purchase_perks, // 0x46,
-        hash_254f75482929079b, // 0x47,
+        specialty_mod_berserker_drank, // 0x47,
         hash_255c8b613c124fd0, // 0x48,
         bonus_points_team_pickedup, // 0x49,
         hash_27324e3899f19c0f, // 0x4a,
@@ -63886,7 +63886,7 @@ version 37 {
         codpoints, // 0x50,
         shield_charge_pickedup, // 0x51,
         hash_29e6ec48e9101f71, // 0x52,
-        hash_2a63229e9bf23baa, // 0x53,
+        specialty_mod_extraammo_drank, // 0x53,
         specialty_quickrevive_drank, // 0x54,
         revives, // 0x55,
         zspiders_killed, // 0x56,
@@ -63921,7 +63921,7 @@ version 37 {
         gum_gobbler_burned_out, // 0x73,
         zsentinel_killed, // 0x74,
         hash_37d4d7b0788a8cb5, // 0x75,
-        hash_382854bc103fd553, // 0x76,
+        specialty_mod_staminup_drank, // 0x76,
         gum_gobbler_powerups, // 0x77,
         double_points_pickedup, // 0x78,
         zm_daily_kills_mg, // 0x79,
@@ -63933,24 +63933,24 @@ version 37 {
         survivalist_buy_wallbuy, // 0x7f,
         killed_by_blightfather, // 0x80,
         cheat_out_of_playable, // 0x81,
-        hash_3bd6bf00e8c71a5d, // 0x82,
+        specialty_mod_shield_drank, // 0x82,
         specialty_mystery_drank, // 0x83,
         prison_tomahawk_acquired, // 0x84,
         prison_fan_trap_used, // 0x85,
         specialty_camper_drank, // 0x86,
         zombie_hunter_kill_packapunch, // 0x87,
-        hash_3d9b732ca303132b, // 0x88,
+        specialty_mod_armorvest_drank, // 0x88,
         bgb_tokens_used, // 0x89,
         hash_3e1a66815798ba48, // 0x8a,
         pack_a_punch_pickedup, // 0x8b,
         hash_3fa2584a22ebf623, // 0x8c,
         island_seed_pickedup, // 0x8d,
-        hash_402bebef02213c02, // 0x8e,
+        specialty_mod_camper_drank, // 0x8e,
         wlratio, // 0x8f,
         zm_daily_earn_5k_with_2x, // 0x90,
         teamkills_nostats, // 0x91,
         score, // 0x92,
-        hash_41476f0bb1f7c683, // 0x93,
+        specialty_mod_awareness_drank, // 0x93,
         survivalist_survive_rounds, // 0x94,
         prison_brutus_killed, // 0x95,
         survivalist_buy_door, // 0x96,
@@ -63958,16 +63958,16 @@ version 37 {
         total_games_played, // 0x98,
         zm_daily_kills_instakill, // 0x99,
         hash_44077c71bca8da4c, // 0x9a,
-        hash_4419d00a9f04f866, // 0x9b,
+        specialty_mod_deadshot_drank, // 0x9b,
         use_magicbox, // 0x9c,
-        hash_48288866afddc0d4, // 0x9d,
+        specialty_mod_quickrevive_drank, // 0x9d,
         zdog_rounds_lost, // 0x9e,
         hash_486e85b7fa460f08, // 0x9f,
         nuke_pickedup, // 0xa0,
         cheat_too_many_weapons, // 0xa1,
         planted_buildables_pickedup, // 0xa2,
         hash_4987f029c7312bfb, // 0xa3,
-        hash_49cc8e6486122824, // 0xa4,
+        specialty_mod_doubletap2_drank, // 0xa4,
         teamkills, // 0xa5,
         hash_4bb632268a7ca18c, // 0xa6,
         paragon_maxxp, // 0xa7,
@@ -64005,13 +64005,13 @@ version 37 {
         challenges, // 0xc7,
         specialty_deadshot_drank, // 0xc8,
         bouncingbetty_pickedup, // 0xc9,
-        hash_583ff5f66fd10104, // 0xca,
+        specialty_berserker_drank, // 0xca,
         use_pap, // 0xcb,
         catalyst_plasmas_killed, // 0xcc,
         hash_5913a206f4ee760c, // 0xcd,
         gum_gobbler_anywhere_but_here, // 0xce,
         hash_5a2c6be15132de02, // 0xcf,
-        hash_5a42a4d4accf00bf, // 0xd0,
+        specialty_mod_additionalprimaryweapon_drank, // 0xd0,
         maxxp, // 0xd1,
         insta_kill_pickedup, // 0xd2,
         hash_5ae850ecf14fbefb, // 0xd3,
@@ -64020,7 +64020,7 @@ version 37 {
         total_shots, // 0xd6,
         survivalist_buy_perk, // 0xd7,
         hash_5c5cab0cce302a01, // 0xd8,
-        hash_5c9c943cd0cffc65, // 0xd9,
+        specialty_mod_cooldown_drank, // 0xd9,
         towers_acid_trap_built_danu, // 0xda,
         bgb_tokens_gained, // 0xdb,
         zombie_hunter_explosion_multikill, // 0xdc,
@@ -64075,13 +64075,13 @@ version 37 {
         melee_kills, // 0x10d,
         hash_794996196e74a949, // 0x10e,
         towers_acid_trap_built_zeus, // 0x10f,
-        hash_79d41974c40c126e, // 0x110,
+        specialty_mod_widowswine_drank, // 0x110,
         zm_current_daily_challenge, // 0x111,
         kills, // 0x112,
         killed_by_catalyst_water, // 0x113,
         extra_lives_pickedup, // 0x114,
         ammo_purchased, // 0x115,
-        hash_7d98fe4413e871a4, // 0x116,
+        specialty_mod_phdflopper_drank, // 0x116,
         killed_by_catalyst_corrosive, // 0x117,
         bouncingbetty_planted, // 0x118,
         assists, // 0x119,
@@ -64238,7 +64238,7 @@ version 37 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -64316,8 +64316,8 @@ version 37 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -64376,7 +64376,7 @@ version 37 {
     // offset 0x2d928, size 0x20
     int motdversionviewed;
     // offset 0x2d948, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x2d968, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x2d970, size 0xc30
@@ -64984,7 +64984,7 @@ version 36 {
         sessionbans, // 0x1f,
         bgbs_chewed, // 0x20,
         catalysts_killed, // 0x21,
-        hash_dd2dc50d66eb166, // 0x22,
+        specialty_mod_electriccherry_drank, // 0x22,
         zm_daily_challenge_start_time, // 0x23,
         kdratio, // 0x24,
         pap_weapon_not_grabbed, // 0x25,
@@ -65014,14 +65014,14 @@ version 36 {
         shields_purchased, // 0x3d,
         total_points, // 0x3e,
         leaderboardfailures, // 0x3f,
-        hash_1dc1fbd3fd2fe493, // 0x40,
+        specialty_mod_fastreload_drank, // 0x40,
         zm_daily_kills_traps, // 0x41,
         ties, // 0x42,
         cur_win_streak, // 0x43,
         killed_by_brutus, // 0x44,
         paragon_icon_id, // 0x45,
         zm_daily_purchase_perks, // 0x46,
-        hash_254f75482929079b, // 0x47,
+        specialty_mod_berserker_drank, // 0x47,
         hash_255c8b613c124fd0, // 0x48,
         bonus_points_team_pickedup, // 0x49,
         hash_27324e3899f19c0f, // 0x4a,
@@ -65033,7 +65033,7 @@ version 36 {
         codpoints, // 0x50,
         shield_charge_pickedup, // 0x51,
         hash_29e6ec48e9101f71, // 0x52,
-        hash_2a63229e9bf23baa, // 0x53,
+        specialty_mod_extraammo_drank, // 0x53,
         specialty_quickrevive_drank, // 0x54,
         revives, // 0x55,
         zspiders_killed, // 0x56,
@@ -65068,7 +65068,7 @@ version 36 {
         gum_gobbler_burned_out, // 0x73,
         zsentinel_killed, // 0x74,
         hash_37d4d7b0788a8cb5, // 0x75,
-        hash_382854bc103fd553, // 0x76,
+        specialty_mod_staminup_drank, // 0x76,
         gum_gobbler_powerups, // 0x77,
         double_points_pickedup, // 0x78,
         zm_daily_kills_mg, // 0x79,
@@ -65080,24 +65080,24 @@ version 36 {
         survivalist_buy_wallbuy, // 0x7f,
         killed_by_blightfather, // 0x80,
         cheat_out_of_playable, // 0x81,
-        hash_3bd6bf00e8c71a5d, // 0x82,
+        specialty_mod_shield_drank, // 0x82,
         specialty_mystery_drank, // 0x83,
         prison_tomahawk_acquired, // 0x84,
         prison_fan_trap_used, // 0x85,
         specialty_camper_drank, // 0x86,
         zombie_hunter_kill_packapunch, // 0x87,
-        hash_3d9b732ca303132b, // 0x88,
+        specialty_mod_armorvest_drank, // 0x88,
         bgb_tokens_used, // 0x89,
         hash_3e1a66815798ba48, // 0x8a,
         pack_a_punch_pickedup, // 0x8b,
         hash_3fa2584a22ebf623, // 0x8c,
         island_seed_pickedup, // 0x8d,
-        hash_402bebef02213c02, // 0x8e,
+        specialty_mod_camper_drank, // 0x8e,
         wlratio, // 0x8f,
         zm_daily_earn_5k_with_2x, // 0x90,
         teamkills_nostats, // 0x91,
         score, // 0x92,
-        hash_41476f0bb1f7c683, // 0x93,
+        specialty_mod_awareness_drank, // 0x93,
         survivalist_survive_rounds, // 0x94,
         prison_brutus_killed, // 0x95,
         survivalist_buy_door, // 0x96,
@@ -65105,16 +65105,16 @@ version 36 {
         total_games_played, // 0x98,
         zm_daily_kills_instakill, // 0x99,
         hash_44077c71bca8da4c, // 0x9a,
-        hash_4419d00a9f04f866, // 0x9b,
+        specialty_mod_deadshot_drank, // 0x9b,
         use_magicbox, // 0x9c,
-        hash_48288866afddc0d4, // 0x9d,
+        specialty_mod_quickrevive_drank, // 0x9d,
         zdog_rounds_lost, // 0x9e,
         hash_486e85b7fa460f08, // 0x9f,
         nuke_pickedup, // 0xa0,
         cheat_too_many_weapons, // 0xa1,
         planted_buildables_pickedup, // 0xa2,
         hash_4987f029c7312bfb, // 0xa3,
-        hash_49cc8e6486122824, // 0xa4,
+        specialty_mod_doubletap2_drank, // 0xa4,
         teamkills, // 0xa5,
         hash_4bb632268a7ca18c, // 0xa6,
         paragon_maxxp, // 0xa7,
@@ -65152,13 +65152,13 @@ version 36 {
         challenges, // 0xc7,
         specialty_deadshot_drank, // 0xc8,
         bouncingbetty_pickedup, // 0xc9,
-        hash_583ff5f66fd10104, // 0xca,
+        specialty_berserker_drank, // 0xca,
         use_pap, // 0xcb,
         catalyst_plasmas_killed, // 0xcc,
         hash_5913a206f4ee760c, // 0xcd,
         gum_gobbler_anywhere_but_here, // 0xce,
         hash_5a2c6be15132de02, // 0xcf,
-        hash_5a42a4d4accf00bf, // 0xd0,
+        specialty_mod_additionalprimaryweapon_drank, // 0xd0,
         maxxp, // 0xd1,
         insta_kill_pickedup, // 0xd2,
         hash_5ae850ecf14fbefb, // 0xd3,
@@ -65167,7 +65167,7 @@ version 36 {
         total_shots, // 0xd6,
         survivalist_buy_perk, // 0xd7,
         hash_5c5cab0cce302a01, // 0xd8,
-        hash_5c9c943cd0cffc65, // 0xd9,
+        specialty_mod_cooldown_drank, // 0xd9,
         towers_acid_trap_built_danu, // 0xda,
         bgb_tokens_gained, // 0xdb,
         zombie_hunter_explosion_multikill, // 0xdc,
@@ -65222,13 +65222,13 @@ version 36 {
         melee_kills, // 0x10d,
         hash_794996196e74a949, // 0x10e,
         towers_acid_trap_built_zeus, // 0x10f,
-        hash_79d41974c40c126e, // 0x110,
+        specialty_mod_widowswine_drank, // 0x110,
         zm_current_daily_challenge, // 0x111,
         kills, // 0x112,
         killed_by_catalyst_water, // 0x113,
         extra_lives_pickedup, // 0x114,
         ammo_purchased, // 0x115,
-        hash_7d98fe4413e871a4, // 0x116,
+        specialty_mod_phdflopper_drank, // 0x116,
         killed_by_catalyst_corrosive, // 0x117,
         bouncingbetty_planted, // 0x118,
         assists, // 0x119,
@@ -65385,7 +65385,7 @@ version 36 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -65463,8 +65463,8 @@ version 36 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -65523,7 +65523,7 @@ version 36 {
     // offset 0x2d928, size 0x20
     int motdversionviewed;
     // offset 0x2d948, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x2d968, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x2d970, size 0xc30
@@ -66129,7 +66129,7 @@ version 35 {
         sessionbans, // 0x1f,
         bgbs_chewed, // 0x20,
         catalysts_killed, // 0x21,
-        hash_dd2dc50d66eb166, // 0x22,
+        specialty_mod_electriccherry_drank, // 0x22,
         zm_daily_challenge_start_time, // 0x23,
         kdratio, // 0x24,
         pap_weapon_not_grabbed, // 0x25,
@@ -66159,14 +66159,14 @@ version 35 {
         shields_purchased, // 0x3d,
         total_points, // 0x3e,
         leaderboardfailures, // 0x3f,
-        hash_1dc1fbd3fd2fe493, // 0x40,
+        specialty_mod_fastreload_drank, // 0x40,
         zm_daily_kills_traps, // 0x41,
         ties, // 0x42,
         cur_win_streak, // 0x43,
         killed_by_brutus, // 0x44,
         paragon_icon_id, // 0x45,
         zm_daily_purchase_perks, // 0x46,
-        hash_254f75482929079b, // 0x47,
+        specialty_mod_berserker_drank, // 0x47,
         hash_255c8b613c124fd0, // 0x48,
         bonus_points_team_pickedup, // 0x49,
         hash_27324e3899f19c0f, // 0x4a,
@@ -66178,7 +66178,7 @@ version 35 {
         codpoints, // 0x50,
         shield_charge_pickedup, // 0x51,
         hash_29e6ec48e9101f71, // 0x52,
-        hash_2a63229e9bf23baa, // 0x53,
+        specialty_mod_extraammo_drank, // 0x53,
         specialty_quickrevive_drank, // 0x54,
         revives, // 0x55,
         zspiders_killed, // 0x56,
@@ -66213,7 +66213,7 @@ version 35 {
         gum_gobbler_burned_out, // 0x73,
         zsentinel_killed, // 0x74,
         hash_37d4d7b0788a8cb5, // 0x75,
-        hash_382854bc103fd553, // 0x76,
+        specialty_mod_staminup_drank, // 0x76,
         gum_gobbler_powerups, // 0x77,
         double_points_pickedup, // 0x78,
         zm_daily_kills_mg, // 0x79,
@@ -66225,24 +66225,24 @@ version 35 {
         survivalist_buy_wallbuy, // 0x7f,
         killed_by_blightfather, // 0x80,
         cheat_out_of_playable, // 0x81,
-        hash_3bd6bf00e8c71a5d, // 0x82,
+        specialty_mod_shield_drank, // 0x82,
         specialty_mystery_drank, // 0x83,
         prison_tomahawk_acquired, // 0x84,
         prison_fan_trap_used, // 0x85,
         specialty_camper_drank, // 0x86,
         zombie_hunter_kill_packapunch, // 0x87,
-        hash_3d9b732ca303132b, // 0x88,
+        specialty_mod_armorvest_drank, // 0x88,
         bgb_tokens_used, // 0x89,
         hash_3e1a66815798ba48, // 0x8a,
         pack_a_punch_pickedup, // 0x8b,
         hash_3fa2584a22ebf623, // 0x8c,
         island_seed_pickedup, // 0x8d,
-        hash_402bebef02213c02, // 0x8e,
+        specialty_mod_camper_drank, // 0x8e,
         wlratio, // 0x8f,
         zm_daily_earn_5k_with_2x, // 0x90,
         teamkills_nostats, // 0x91,
         score, // 0x92,
-        hash_41476f0bb1f7c683, // 0x93,
+        specialty_mod_awareness_drank, // 0x93,
         survivalist_survive_rounds, // 0x94,
         prison_brutus_killed, // 0x95,
         survivalist_buy_door, // 0x96,
@@ -66250,16 +66250,16 @@ version 35 {
         total_games_played, // 0x98,
         zm_daily_kills_instakill, // 0x99,
         hash_44077c71bca8da4c, // 0x9a,
-        hash_4419d00a9f04f866, // 0x9b,
+        specialty_mod_deadshot_drank, // 0x9b,
         use_magicbox, // 0x9c,
-        hash_48288866afddc0d4, // 0x9d,
+        specialty_mod_quickrevive_drank, // 0x9d,
         zdog_rounds_lost, // 0x9e,
         hash_486e85b7fa460f08, // 0x9f,
         nuke_pickedup, // 0xa0,
         cheat_too_many_weapons, // 0xa1,
         planted_buildables_pickedup, // 0xa2,
         hash_4987f029c7312bfb, // 0xa3,
-        hash_49cc8e6486122824, // 0xa4,
+        specialty_mod_doubletap2_drank, // 0xa4,
         teamkills, // 0xa5,
         hash_4bb632268a7ca18c, // 0xa6,
         paragon_maxxp, // 0xa7,
@@ -66297,13 +66297,13 @@ version 35 {
         challenges, // 0xc7,
         specialty_deadshot_drank, // 0xc8,
         bouncingbetty_pickedup, // 0xc9,
-        hash_583ff5f66fd10104, // 0xca,
+        specialty_berserker_drank, // 0xca,
         use_pap, // 0xcb,
         catalyst_plasmas_killed, // 0xcc,
         hash_5913a206f4ee760c, // 0xcd,
         gum_gobbler_anywhere_but_here, // 0xce,
         hash_5a2c6be15132de02, // 0xcf,
-        hash_5a42a4d4accf00bf, // 0xd0,
+        specialty_mod_additionalprimaryweapon_drank, // 0xd0,
         maxxp, // 0xd1,
         insta_kill_pickedup, // 0xd2,
         hash_5ae850ecf14fbefb, // 0xd3,
@@ -66312,7 +66312,7 @@ version 35 {
         total_shots, // 0xd6,
         survivalist_buy_perk, // 0xd7,
         hash_5c5cab0cce302a01, // 0xd8,
-        hash_5c9c943cd0cffc65, // 0xd9,
+        specialty_mod_cooldown_drank, // 0xd9,
         towers_acid_trap_built_danu, // 0xda,
         bgb_tokens_gained, // 0xdb,
         zombie_hunter_explosion_multikill, // 0xdc,
@@ -66367,13 +66367,13 @@ version 35 {
         melee_kills, // 0x10d,
         hash_794996196e74a949, // 0x10e,
         towers_acid_trap_built_zeus, // 0x10f,
-        hash_79d41974c40c126e, // 0x110,
+        specialty_mod_widowswine_drank, // 0x110,
         zm_current_daily_challenge, // 0x111,
         kills, // 0x112,
         killed_by_catalyst_water, // 0x113,
         extra_lives_pickedup, // 0x114,
         ammo_purchased, // 0x115,
-        hash_7d98fe4413e871a4, // 0x116,
+        specialty_mod_phdflopper_drank, // 0x116,
         killed_by_catalyst_corrosive, // 0x117,
         bouncingbetty_planted, // 0x118,
         assists, // 0x119,
@@ -66530,7 +66530,7 @@ version 35 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -66608,8 +66608,8 @@ version 35 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -66668,7 +66668,7 @@ version 35 {
     // offset 0x2d928, size 0x20
     int motdversionviewed;
     // offset 0x2d948, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x2d968, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x2d970, size 0xc30
@@ -67274,7 +67274,7 @@ version 34 {
         sessionbans, // 0x1f,
         bgbs_chewed, // 0x20,
         catalysts_killed, // 0x21,
-        hash_dd2dc50d66eb166, // 0x22,
+        specialty_mod_electriccherry_drank, // 0x22,
         zm_daily_challenge_start_time, // 0x23,
         kdratio, // 0x24,
         pap_weapon_not_grabbed, // 0x25,
@@ -67304,14 +67304,14 @@ version 34 {
         shields_purchased, // 0x3d,
         total_points, // 0x3e,
         leaderboardfailures, // 0x3f,
-        hash_1dc1fbd3fd2fe493, // 0x40,
+        specialty_mod_fastreload_drank, // 0x40,
         zm_daily_kills_traps, // 0x41,
         ties, // 0x42,
         cur_win_streak, // 0x43,
         killed_by_brutus, // 0x44,
         paragon_icon_id, // 0x45,
         zm_daily_purchase_perks, // 0x46,
-        hash_254f75482929079b, // 0x47,
+        specialty_mod_berserker_drank, // 0x47,
         hash_255c8b613c124fd0, // 0x48,
         bonus_points_team_pickedup, // 0x49,
         hash_27324e3899f19c0f, // 0x4a,
@@ -67323,7 +67323,7 @@ version 34 {
         codpoints, // 0x50,
         shield_charge_pickedup, // 0x51,
         hash_29e6ec48e9101f71, // 0x52,
-        hash_2a63229e9bf23baa, // 0x53,
+        specialty_mod_extraammo_drank, // 0x53,
         specialty_quickrevive_drank, // 0x54,
         revives, // 0x55,
         zspiders_killed, // 0x56,
@@ -67358,7 +67358,7 @@ version 34 {
         gum_gobbler_burned_out, // 0x73,
         zsentinel_killed, // 0x74,
         hash_37d4d7b0788a8cb5, // 0x75,
-        hash_382854bc103fd553, // 0x76,
+        specialty_mod_staminup_drank, // 0x76,
         gum_gobbler_powerups, // 0x77,
         double_points_pickedup, // 0x78,
         zm_daily_kills_mg, // 0x79,
@@ -67370,24 +67370,24 @@ version 34 {
         survivalist_buy_wallbuy, // 0x7f,
         killed_by_blightfather, // 0x80,
         cheat_out_of_playable, // 0x81,
-        hash_3bd6bf00e8c71a5d, // 0x82,
+        specialty_mod_shield_drank, // 0x82,
         specialty_mystery_drank, // 0x83,
         prison_tomahawk_acquired, // 0x84,
         prison_fan_trap_used, // 0x85,
         specialty_camper_drank, // 0x86,
         zombie_hunter_kill_packapunch, // 0x87,
-        hash_3d9b732ca303132b, // 0x88,
+        specialty_mod_armorvest_drank, // 0x88,
         bgb_tokens_used, // 0x89,
         hash_3e1a66815798ba48, // 0x8a,
         pack_a_punch_pickedup, // 0x8b,
         hash_3fa2584a22ebf623, // 0x8c,
         island_seed_pickedup, // 0x8d,
-        hash_402bebef02213c02, // 0x8e,
+        specialty_mod_camper_drank, // 0x8e,
         wlratio, // 0x8f,
         zm_daily_earn_5k_with_2x, // 0x90,
         teamkills_nostats, // 0x91,
         score, // 0x92,
-        hash_41476f0bb1f7c683, // 0x93,
+        specialty_mod_awareness_drank, // 0x93,
         survivalist_survive_rounds, // 0x94,
         prison_brutus_killed, // 0x95,
         survivalist_buy_door, // 0x96,
@@ -67395,16 +67395,16 @@ version 34 {
         total_games_played, // 0x98,
         zm_daily_kills_instakill, // 0x99,
         hash_44077c71bca8da4c, // 0x9a,
-        hash_4419d00a9f04f866, // 0x9b,
+        specialty_mod_deadshot_drank, // 0x9b,
         use_magicbox, // 0x9c,
-        hash_48288866afddc0d4, // 0x9d,
+        specialty_mod_quickrevive_drank, // 0x9d,
         zdog_rounds_lost, // 0x9e,
         hash_486e85b7fa460f08, // 0x9f,
         nuke_pickedup, // 0xa0,
         cheat_too_many_weapons, // 0xa1,
         planted_buildables_pickedup, // 0xa2,
         hash_4987f029c7312bfb, // 0xa3,
-        hash_49cc8e6486122824, // 0xa4,
+        specialty_mod_doubletap2_drank, // 0xa4,
         teamkills, // 0xa5,
         hash_4bb632268a7ca18c, // 0xa6,
         paragon_maxxp, // 0xa7,
@@ -67441,13 +67441,13 @@ version 34 {
         challenges, // 0xc6,
         specialty_deadshot_drank, // 0xc7,
         bouncingbetty_pickedup, // 0xc8,
-        hash_583ff5f66fd10104, // 0xc9,
+        specialty_berserker_drank, // 0xc9,
         use_pap, // 0xca,
         catalyst_plasmas_killed, // 0xcb,
         hash_5913a206f4ee760c, // 0xcc,
         gum_gobbler_anywhere_but_here, // 0xcd,
         hash_5a2c6be15132de02, // 0xce,
-        hash_5a42a4d4accf00bf, // 0xcf,
+        specialty_mod_additionalprimaryweapon_drank, // 0xcf,
         maxxp, // 0xd0,
         insta_kill_pickedup, // 0xd1,
         hash_5ae850ecf14fbefb, // 0xd2,
@@ -67456,7 +67456,7 @@ version 34 {
         total_shots, // 0xd5,
         survivalist_buy_perk, // 0xd6,
         hash_5c5cab0cce302a01, // 0xd7,
-        hash_5c9c943cd0cffc65, // 0xd8,
+        specialty_mod_cooldown_drank, // 0xd8,
         bgb_tokens_gained, // 0xd9,
         zombie_hunter_explosion_multikill, // 0xda,
         cheat_total, // 0xdb,
@@ -67508,13 +67508,13 @@ version 34 {
         dung_pickedup, // 0x109,
         melee_kills, // 0x10a,
         hash_794996196e74a949, // 0x10b,
-        hash_79d41974c40c126e, // 0x10c,
+        specialty_mod_widowswine_drank, // 0x10c,
         zm_current_daily_challenge, // 0x10d,
         kills, // 0x10e,
         killed_by_catalyst_water, // 0x10f,
         extra_lives_pickedup, // 0x110,
         ammo_purchased, // 0x111,
-        hash_7d98fe4413e871a4, // 0x112,
+        specialty_mod_phdflopper_drank, // 0x112,
         killed_by_catalyst_corrosive, // 0x113,
         bouncingbetty_planted, // 0x114,
         assists, // 0x115,
@@ -67671,7 +67671,7 @@ version 34 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -67749,8 +67749,8 @@ version 34 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -67809,7 +67809,7 @@ version 34 {
     // offset 0x2d928, size 0x20
     int motdversionviewed;
     // offset 0x2d948, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x2d968, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x2d970, size 0xc30
@@ -68415,7 +68415,7 @@ version 33 {
         sessionbans, // 0x1f,
         bgbs_chewed, // 0x20,
         catalysts_killed, // 0x21,
-        hash_dd2dc50d66eb166, // 0x22,
+        specialty_mod_electriccherry_drank, // 0x22,
         zm_daily_challenge_start_time, // 0x23,
         kdratio, // 0x24,
         pap_weapon_not_grabbed, // 0x25,
@@ -68445,14 +68445,14 @@ version 33 {
         shields_purchased, // 0x3d,
         total_points, // 0x3e,
         leaderboardfailures, // 0x3f,
-        hash_1dc1fbd3fd2fe493, // 0x40,
+        specialty_mod_fastreload_drank, // 0x40,
         zm_daily_kills_traps, // 0x41,
         ties, // 0x42,
         cur_win_streak, // 0x43,
         killed_by_brutus, // 0x44,
         paragon_icon_id, // 0x45,
         zm_daily_purchase_perks, // 0x46,
-        hash_254f75482929079b, // 0x47,
+        specialty_mod_berserker_drank, // 0x47,
         hash_255c8b613c124fd0, // 0x48,
         bonus_points_team_pickedup, // 0x49,
         hash_27324e3899f19c0f, // 0x4a,
@@ -68464,7 +68464,7 @@ version 33 {
         codpoints, // 0x50,
         shield_charge_pickedup, // 0x51,
         hash_29e6ec48e9101f71, // 0x52,
-        hash_2a63229e9bf23baa, // 0x53,
+        specialty_mod_extraammo_drank, // 0x53,
         specialty_quickrevive_drank, // 0x54,
         revives, // 0x55,
         zspiders_killed, // 0x56,
@@ -68499,7 +68499,7 @@ version 33 {
         gum_gobbler_burned_out, // 0x73,
         zsentinel_killed, // 0x74,
         hash_37d4d7b0788a8cb5, // 0x75,
-        hash_382854bc103fd553, // 0x76,
+        specialty_mod_staminup_drank, // 0x76,
         gum_gobbler_powerups, // 0x77,
         double_points_pickedup, // 0x78,
         zm_daily_kills_mg, // 0x79,
@@ -68511,24 +68511,24 @@ version 33 {
         survivalist_buy_wallbuy, // 0x7f,
         killed_by_blightfather, // 0x80,
         cheat_out_of_playable, // 0x81,
-        hash_3bd6bf00e8c71a5d, // 0x82,
+        specialty_mod_shield_drank, // 0x82,
         specialty_mystery_drank, // 0x83,
         prison_tomahawk_acquired, // 0x84,
         prison_fan_trap_used, // 0x85,
         specialty_camper_drank, // 0x86,
         zombie_hunter_kill_packapunch, // 0x87,
-        hash_3d9b732ca303132b, // 0x88,
+        specialty_mod_armorvest_drank, // 0x88,
         bgb_tokens_used, // 0x89,
         hash_3e1a66815798ba48, // 0x8a,
         pack_a_punch_pickedup, // 0x8b,
         hash_3fa2584a22ebf623, // 0x8c,
         island_seed_pickedup, // 0x8d,
-        hash_402bebef02213c02, // 0x8e,
+        specialty_mod_camper_drank, // 0x8e,
         wlratio, // 0x8f,
         zm_daily_earn_5k_with_2x, // 0x90,
         teamkills_nostats, // 0x91,
         score, // 0x92,
-        hash_41476f0bb1f7c683, // 0x93,
+        specialty_mod_awareness_drank, // 0x93,
         survivalist_survive_rounds, // 0x94,
         prison_brutus_killed, // 0x95,
         survivalist_buy_door, // 0x96,
@@ -68536,16 +68536,16 @@ version 33 {
         total_games_played, // 0x98,
         zm_daily_kills_instakill, // 0x99,
         hash_44077c71bca8da4c, // 0x9a,
-        hash_4419d00a9f04f866, // 0x9b,
+        specialty_mod_deadshot_drank, // 0x9b,
         use_magicbox, // 0x9c,
-        hash_48288866afddc0d4, // 0x9d,
+        specialty_mod_quickrevive_drank, // 0x9d,
         zdog_rounds_lost, // 0x9e,
         hash_486e85b7fa460f08, // 0x9f,
         nuke_pickedup, // 0xa0,
         cheat_too_many_weapons, // 0xa1,
         planted_buildables_pickedup, // 0xa2,
         hash_4987f029c7312bfb, // 0xa3,
-        hash_49cc8e6486122824, // 0xa4,
+        specialty_mod_doubletap2_drank, // 0xa4,
         teamkills, // 0xa5,
         hash_4bb632268a7ca18c, // 0xa6,
         paragon_maxxp, // 0xa7,
@@ -68582,13 +68582,13 @@ version 33 {
         challenges, // 0xc6,
         specialty_deadshot_drank, // 0xc7,
         bouncingbetty_pickedup, // 0xc8,
-        hash_583ff5f66fd10104, // 0xc9,
+        specialty_berserker_drank, // 0xc9,
         use_pap, // 0xca,
         catalyst_plasmas_killed, // 0xcb,
         hash_5913a206f4ee760c, // 0xcc,
         gum_gobbler_anywhere_but_here, // 0xcd,
         hash_5a2c6be15132de02, // 0xce,
-        hash_5a42a4d4accf00bf, // 0xcf,
+        specialty_mod_additionalprimaryweapon_drank, // 0xcf,
         maxxp, // 0xd0,
         insta_kill_pickedup, // 0xd1,
         hash_5ae850ecf14fbefb, // 0xd2,
@@ -68597,7 +68597,7 @@ version 33 {
         total_shots, // 0xd5,
         survivalist_buy_perk, // 0xd6,
         hash_5c5cab0cce302a01, // 0xd7,
-        hash_5c9c943cd0cffc65, // 0xd8,
+        specialty_mod_cooldown_drank, // 0xd8,
         bgb_tokens_gained, // 0xd9,
         zombie_hunter_explosion_multikill, // 0xda,
         cheat_total, // 0xdb,
@@ -68649,13 +68649,13 @@ version 33 {
         dung_pickedup, // 0x109,
         melee_kills, // 0x10a,
         hash_794996196e74a949, // 0x10b,
-        hash_79d41974c40c126e, // 0x10c,
+        specialty_mod_widowswine_drank, // 0x10c,
         zm_current_daily_challenge, // 0x10d,
         kills, // 0x10e,
         killed_by_catalyst_water, // 0x10f,
         extra_lives_pickedup, // 0x110,
         ammo_purchased, // 0x111,
-        hash_7d98fe4413e871a4, // 0x112,
+        specialty_mod_phdflopper_drank, // 0x112,
         killed_by_catalyst_corrosive, // 0x113,
         bouncingbetty_planted, // 0x114,
         assists, // 0x115,
@@ -68812,7 +68812,7 @@ version 33 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -68890,8 +68890,8 @@ version 33 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -68948,7 +68948,7 @@ version 33 {
     // offset 0x23e08, size 0x20
     int motdversionviewed;
     // offset 0x23e28, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x23e48, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x23e50, size 0xc30
@@ -69554,7 +69554,7 @@ version 32 {
         sessionbans, // 0x1f,
         bgbs_chewed, // 0x20,
         catalysts_killed, // 0x21,
-        hash_dd2dc50d66eb166, // 0x22,
+        specialty_mod_electriccherry_drank, // 0x22,
         zm_daily_challenge_start_time, // 0x23,
         kdratio, // 0x24,
         pap_weapon_not_grabbed, // 0x25,
@@ -69584,14 +69584,14 @@ version 32 {
         shields_purchased, // 0x3d,
         total_points, // 0x3e,
         leaderboardfailures, // 0x3f,
-        hash_1dc1fbd3fd2fe493, // 0x40,
+        specialty_mod_fastreload_drank, // 0x40,
         zm_daily_kills_traps, // 0x41,
         ties, // 0x42,
         cur_win_streak, // 0x43,
         killed_by_brutus, // 0x44,
         paragon_icon_id, // 0x45,
         zm_daily_purchase_perks, // 0x46,
-        hash_254f75482929079b, // 0x47,
+        specialty_mod_berserker_drank, // 0x47,
         hash_255c8b613c124fd0, // 0x48,
         bonus_points_team_pickedup, // 0x49,
         hash_27324e3899f19c0f, // 0x4a,
@@ -69603,7 +69603,7 @@ version 32 {
         codpoints, // 0x50,
         shield_charge_pickedup, // 0x51,
         hash_29e6ec48e9101f71, // 0x52,
-        hash_2a63229e9bf23baa, // 0x53,
+        specialty_mod_extraammo_drank, // 0x53,
         specialty_quickrevive_drank, // 0x54,
         revives, // 0x55,
         zspiders_killed, // 0x56,
@@ -69638,7 +69638,7 @@ version 32 {
         gum_gobbler_burned_out, // 0x73,
         zsentinel_killed, // 0x74,
         hash_37d4d7b0788a8cb5, // 0x75,
-        hash_382854bc103fd553, // 0x76,
+        specialty_mod_staminup_drank, // 0x76,
         gum_gobbler_powerups, // 0x77,
         double_points_pickedup, // 0x78,
         zm_daily_kills_mg, // 0x79,
@@ -69650,24 +69650,24 @@ version 32 {
         survivalist_buy_wallbuy, // 0x7f,
         killed_by_blightfather, // 0x80,
         cheat_out_of_playable, // 0x81,
-        hash_3bd6bf00e8c71a5d, // 0x82,
+        specialty_mod_shield_drank, // 0x82,
         specialty_mystery_drank, // 0x83,
         prison_tomahawk_acquired, // 0x84,
         prison_fan_trap_used, // 0x85,
         specialty_camper_drank, // 0x86,
         zombie_hunter_kill_packapunch, // 0x87,
-        hash_3d9b732ca303132b, // 0x88,
+        specialty_mod_armorvest_drank, // 0x88,
         bgb_tokens_used, // 0x89,
         hash_3e1a66815798ba48, // 0x8a,
         pack_a_punch_pickedup, // 0x8b,
         hash_3fa2584a22ebf623, // 0x8c,
         island_seed_pickedup, // 0x8d,
-        hash_402bebef02213c02, // 0x8e,
+        specialty_mod_camper_drank, // 0x8e,
         wlratio, // 0x8f,
         zm_daily_earn_5k_with_2x, // 0x90,
         teamkills_nostats, // 0x91,
         score, // 0x92,
-        hash_41476f0bb1f7c683, // 0x93,
+        specialty_mod_awareness_drank, // 0x93,
         survivalist_survive_rounds, // 0x94,
         prison_brutus_killed, // 0x95,
         survivalist_buy_door, // 0x96,
@@ -69675,16 +69675,16 @@ version 32 {
         total_games_played, // 0x98,
         zm_daily_kills_instakill, // 0x99,
         hash_44077c71bca8da4c, // 0x9a,
-        hash_4419d00a9f04f866, // 0x9b,
+        specialty_mod_deadshot_drank, // 0x9b,
         use_magicbox, // 0x9c,
-        hash_48288866afddc0d4, // 0x9d,
+        specialty_mod_quickrevive_drank, // 0x9d,
         zdog_rounds_lost, // 0x9e,
         hash_486e85b7fa460f08, // 0x9f,
         nuke_pickedup, // 0xa0,
         cheat_too_many_weapons, // 0xa1,
         planted_buildables_pickedup, // 0xa2,
         hash_4987f029c7312bfb, // 0xa3,
-        hash_49cc8e6486122824, // 0xa4,
+        specialty_mod_doubletap2_drank, // 0xa4,
         teamkills, // 0xa5,
         hash_4bb632268a7ca18c, // 0xa6,
         paragon_maxxp, // 0xa7,
@@ -69721,13 +69721,13 @@ version 32 {
         challenges, // 0xc6,
         specialty_deadshot_drank, // 0xc7,
         bouncingbetty_pickedup, // 0xc8,
-        hash_583ff5f66fd10104, // 0xc9,
+        specialty_berserker_drank, // 0xc9,
         use_pap, // 0xca,
         catalyst_plasmas_killed, // 0xcb,
         hash_5913a206f4ee760c, // 0xcc,
         gum_gobbler_anywhere_but_here, // 0xcd,
         hash_5a2c6be15132de02, // 0xce,
-        hash_5a42a4d4accf00bf, // 0xcf,
+        specialty_mod_additionalprimaryweapon_drank, // 0xcf,
         maxxp, // 0xd0,
         insta_kill_pickedup, // 0xd1,
         hash_5ae850ecf14fbefb, // 0xd2,
@@ -69736,7 +69736,7 @@ version 32 {
         total_shots, // 0xd5,
         survivalist_buy_perk, // 0xd6,
         hash_5c5cab0cce302a01, // 0xd7,
-        hash_5c9c943cd0cffc65, // 0xd8,
+        specialty_mod_cooldown_drank, // 0xd8,
         bgb_tokens_gained, // 0xd9,
         zombie_hunter_explosion_multikill, // 0xda,
         cheat_total, // 0xdb,
@@ -69788,13 +69788,13 @@ version 32 {
         dung_pickedup, // 0x109,
         melee_kills, // 0x10a,
         hash_794996196e74a949, // 0x10b,
-        hash_79d41974c40c126e, // 0x10c,
+        specialty_mod_widowswine_drank, // 0x10c,
         zm_current_daily_challenge, // 0x10d,
         kills, // 0x10e,
         killed_by_catalyst_water, // 0x10f,
         extra_lives_pickedup, // 0x110,
         ammo_purchased, // 0x111,
-        hash_7d98fe4413e871a4, // 0x112,
+        specialty_mod_phdflopper_drank, // 0x112,
         killed_by_catalyst_corrosive, // 0x113,
         bouncingbetty_planted, // 0x114,
         assists, // 0x115,
@@ -69951,7 +69951,7 @@ version 32 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -69987,7 +69987,7 @@ version 32 {
         supply, // 0x15,
         stalker2, // 0x16,
         extclip2, // 0x17,
-        hash_19496adf1642b2e0, // 0x18,
+        floatdot, // 0x18,
         steadyaim2, // 0x19,
         hash_19f95db795729dff, // 0x1a,
         tacknife, // 0x1b,
@@ -70037,8 +70037,8 @@ version 32 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -70095,7 +70095,7 @@ version 32 {
     // offset 0x26248, size 0x20
     int motdversionviewed;
     // offset 0x26268, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x26288, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x26290, size 0xc30
@@ -70701,7 +70701,7 @@ version 31 {
         sessionbans, // 0x1f,
         bgbs_chewed, // 0x20,
         catalysts_killed, // 0x21,
-        hash_dd2dc50d66eb166, // 0x22,
+        specialty_mod_electriccherry_drank, // 0x22,
         zm_daily_challenge_start_time, // 0x23,
         kdratio, // 0x24,
         pap_weapon_not_grabbed, // 0x25,
@@ -70731,14 +70731,14 @@ version 31 {
         shields_purchased, // 0x3d,
         total_points, // 0x3e,
         leaderboardfailures, // 0x3f,
-        hash_1dc1fbd3fd2fe493, // 0x40,
+        specialty_mod_fastreload_drank, // 0x40,
         zm_daily_kills_traps, // 0x41,
         ties, // 0x42,
         cur_win_streak, // 0x43,
         killed_by_brutus, // 0x44,
         paragon_icon_id, // 0x45,
         zm_daily_purchase_perks, // 0x46,
-        hash_254f75482929079b, // 0x47,
+        specialty_mod_berserker_drank, // 0x47,
         hash_255c8b613c124fd0, // 0x48,
         bonus_points_team_pickedup, // 0x49,
         hash_27324e3899f19c0f, // 0x4a,
@@ -70750,7 +70750,7 @@ version 31 {
         codpoints, // 0x50,
         shield_charge_pickedup, // 0x51,
         hash_29e6ec48e9101f71, // 0x52,
-        hash_2a63229e9bf23baa, // 0x53,
+        specialty_mod_extraammo_drank, // 0x53,
         specialty_quickrevive_drank, // 0x54,
         revives, // 0x55,
         zspiders_killed, // 0x56,
@@ -70785,7 +70785,7 @@ version 31 {
         gum_gobbler_burned_out, // 0x73,
         zsentinel_killed, // 0x74,
         hash_37d4d7b0788a8cb5, // 0x75,
-        hash_382854bc103fd553, // 0x76,
+        specialty_mod_staminup_drank, // 0x76,
         gum_gobbler_powerups, // 0x77,
         double_points_pickedup, // 0x78,
         zm_daily_kills_mg, // 0x79,
@@ -70797,24 +70797,24 @@ version 31 {
         survivalist_buy_wallbuy, // 0x7f,
         killed_by_blightfather, // 0x80,
         cheat_out_of_playable, // 0x81,
-        hash_3bd6bf00e8c71a5d, // 0x82,
+        specialty_mod_shield_drank, // 0x82,
         specialty_mystery_drank, // 0x83,
         prison_tomahawk_acquired, // 0x84,
         prison_fan_trap_used, // 0x85,
         specialty_camper_drank, // 0x86,
         zombie_hunter_kill_packapunch, // 0x87,
-        hash_3d9b732ca303132b, // 0x88,
+        specialty_mod_armorvest_drank, // 0x88,
         bgb_tokens_used, // 0x89,
         hash_3e1a66815798ba48, // 0x8a,
         pack_a_punch_pickedup, // 0x8b,
         hash_3fa2584a22ebf623, // 0x8c,
         island_seed_pickedup, // 0x8d,
-        hash_402bebef02213c02, // 0x8e,
+        specialty_mod_camper_drank, // 0x8e,
         wlratio, // 0x8f,
         zm_daily_earn_5k_with_2x, // 0x90,
         teamkills_nostats, // 0x91,
         score, // 0x92,
-        hash_41476f0bb1f7c683, // 0x93,
+        specialty_mod_awareness_drank, // 0x93,
         survivalist_survive_rounds, // 0x94,
         prison_brutus_killed, // 0x95,
         survivalist_buy_door, // 0x96,
@@ -70822,16 +70822,16 @@ version 31 {
         total_games_played, // 0x98,
         zm_daily_kills_instakill, // 0x99,
         hash_44077c71bca8da4c, // 0x9a,
-        hash_4419d00a9f04f866, // 0x9b,
+        specialty_mod_deadshot_drank, // 0x9b,
         use_magicbox, // 0x9c,
-        hash_48288866afddc0d4, // 0x9d,
+        specialty_mod_quickrevive_drank, // 0x9d,
         zdog_rounds_lost, // 0x9e,
         hash_486e85b7fa460f08, // 0x9f,
         nuke_pickedup, // 0xa0,
         cheat_too_many_weapons, // 0xa1,
         planted_buildables_pickedup, // 0xa2,
         hash_4987f029c7312bfb, // 0xa3,
-        hash_49cc8e6486122824, // 0xa4,
+        specialty_mod_doubletap2_drank, // 0xa4,
         teamkills, // 0xa5,
         hash_4bb632268a7ca18c, // 0xa6,
         paragon_maxxp, // 0xa7,
@@ -70868,13 +70868,13 @@ version 31 {
         challenges, // 0xc6,
         specialty_deadshot_drank, // 0xc7,
         bouncingbetty_pickedup, // 0xc8,
-        hash_583ff5f66fd10104, // 0xc9,
+        specialty_berserker_drank, // 0xc9,
         use_pap, // 0xca,
         catalyst_plasmas_killed, // 0xcb,
         hash_5913a206f4ee760c, // 0xcc,
         gum_gobbler_anywhere_but_here, // 0xcd,
         hash_5a2c6be15132de02, // 0xce,
-        hash_5a42a4d4accf00bf, // 0xcf,
+        specialty_mod_additionalprimaryweapon_drank, // 0xcf,
         maxxp, // 0xd0,
         insta_kill_pickedup, // 0xd1,
         hash_5ae850ecf14fbefb, // 0xd2,
@@ -70883,7 +70883,7 @@ version 31 {
         total_shots, // 0xd5,
         survivalist_buy_perk, // 0xd6,
         hash_5c5cab0cce302a01, // 0xd7,
-        hash_5c9c943cd0cffc65, // 0xd8,
+        specialty_mod_cooldown_drank, // 0xd8,
         bgb_tokens_gained, // 0xd9,
         zombie_hunter_explosion_multikill, // 0xda,
         cheat_total, // 0xdb,
@@ -70935,13 +70935,13 @@ version 31 {
         dung_pickedup, // 0x109,
         melee_kills, // 0x10a,
         hash_794996196e74a949, // 0x10b,
-        hash_79d41974c40c126e, // 0x10c,
+        specialty_mod_widowswine_drank, // 0x10c,
         zm_current_daily_challenge, // 0x10d,
         kills, // 0x10e,
         killed_by_catalyst_water, // 0x10f,
         extra_lives_pickedup, // 0x110,
         ammo_purchased, // 0x111,
-        hash_7d98fe4413e871a4, // 0x112,
+        specialty_mod_phdflopper_drank, // 0x112,
         killed_by_catalyst_corrosive, // 0x113,
         bouncingbetty_planted, // 0x114,
         assists, // 0x115,
@@ -71094,7 +71094,7 @@ version 31 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -71130,7 +71130,7 @@ version 31 {
         supply, // 0x15,
         stalker2, // 0x16,
         extclip2, // 0x17,
-        hash_19496adf1642b2e0, // 0x18,
+        floatdot, // 0x18,
         steadyaim2, // 0x19,
         hash_19f95db795729dff, // 0x1a,
         tacknife, // 0x1b,
@@ -71180,8 +71180,8 @@ version 31 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -71238,7 +71238,7 @@ version 31 {
     // offset 0x26248, size 0x20
     int motdversionviewed;
     // offset 0x26268, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x26288, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x26290, size 0xc30
@@ -71841,7 +71841,7 @@ version 30 {
         hero_weapon_power_pickedup, // 0x1c,
         sessionbans, // 0x1d,
         bgbs_chewed, // 0x1e,
-        hash_dd2dc50d66eb166, // 0x1f,
+        specialty_mod_electriccherry_drank, // 0x1f,
         zm_daily_challenge_start_time, // 0x20,
         kdratio, // 0x21,
         pap_weapon_not_grabbed, // 0x22,
@@ -71868,13 +71868,13 @@ version 30 {
         zm_daily_purchase_fire_sale_magic_box, // 0x37,
         total_points, // 0x38,
         leaderboardfailures, // 0x39,
-        hash_1dc1fbd3fd2fe493, // 0x3a,
+        specialty_mod_fastreload_drank, // 0x3a,
         zm_daily_kills_traps, // 0x3b,
         ties, // 0x3c,
         cur_win_streak, // 0x3d,
         paragon_icon_id, // 0x3e,
         zm_daily_purchase_perks, // 0x3f,
-        hash_254f75482929079b, // 0x40,
+        specialty_mod_berserker_drank, // 0x40,
         hash_255c8b613c124fd0, // 0x41,
         bonus_points_team_pickedup, // 0x42,
         hash_27324e3899f19c0f, // 0x43,
@@ -71885,7 +71885,7 @@ version 30 {
         codpoints, // 0x48,
         shield_charge_pickedup, // 0x49,
         hash_29e6ec48e9101f71, // 0x4a,
-        hash_2a63229e9bf23baa, // 0x4b,
+        specialty_mod_extraammo_drank, // 0x4b,
         specialty_quickrevive_drank, // 0x4c,
         revives, // 0x4d,
         zspiders_killed, // 0x4e,
@@ -71916,7 +71916,7 @@ version 30 {
         gum_gobbler_burned_out, // 0x67,
         zsentinel_killed, // 0x68,
         hash_37d4d7b0788a8cb5, // 0x69,
-        hash_382854bc103fd553, // 0x6a,
+        specialty_mod_staminup_drank, // 0x6a,
         gum_gobbler_powerups, // 0x6b,
         double_points_pickedup, // 0x6c,
         zm_daily_kills_mg, // 0x6d,
@@ -71927,24 +71927,24 @@ version 30 {
         zm_daily_round_15, // 0x72,
         survivalist_buy_wallbuy, // 0x73,
         cheat_out_of_playable, // 0x74,
-        hash_3bd6bf00e8c71a5d, // 0x75,
+        specialty_mod_shield_drank, // 0x75,
         specialty_mystery_drank, // 0x76,
         prison_tomahawk_acquired, // 0x77,
         prison_fan_trap_used, // 0x78,
         specialty_camper_drank, // 0x79,
         zombie_hunter_kill_packapunch, // 0x7a,
-        hash_3d9b732ca303132b, // 0x7b,
+        specialty_mod_armorvest_drank, // 0x7b,
         bgb_tokens_used, // 0x7c,
         hash_3e1a66815798ba48, // 0x7d,
         pack_a_punch_pickedup, // 0x7e,
         hash_3fa2584a22ebf623, // 0x7f,
         island_seed_pickedup, // 0x80,
-        hash_402bebef02213c02, // 0x81,
+        specialty_mod_camper_drank, // 0x81,
         wlratio, // 0x82,
         zm_daily_earn_5k_with_2x, // 0x83,
         teamkills_nostats, // 0x84,
         score, // 0x85,
-        hash_41476f0bb1f7c683, // 0x86,
+        specialty_mod_awareness_drank, // 0x86,
         survivalist_survive_rounds, // 0x87,
         prison_brutus_killed, // 0x88,
         survivalist_buy_door, // 0x89,
@@ -71952,16 +71952,16 @@ version 30 {
         total_games_played, // 0x8b,
         zm_daily_kills_instakill, // 0x8c,
         hash_44077c71bca8da4c, // 0x8d,
-        hash_4419d00a9f04f866, // 0x8e,
+        specialty_mod_deadshot_drank, // 0x8e,
         use_magicbox, // 0x8f,
-        hash_48288866afddc0d4, // 0x90,
+        specialty_mod_quickrevive_drank, // 0x90,
         zdog_rounds_lost, // 0x91,
         hash_486e85b7fa460f08, // 0x92,
         nuke_pickedup, // 0x93,
         cheat_too_many_weapons, // 0x94,
         planted_buildables_pickedup, // 0x95,
         hash_4987f029c7312bfb, // 0x96,
-        hash_49cc8e6486122824, // 0x97,
+        specialty_mod_doubletap2_drank, // 0x97,
         teamkills, // 0x98,
         hash_4bb632268a7ca18c, // 0x99,
         paragon_maxxp, // 0x9a,
@@ -71995,12 +71995,12 @@ version 30 {
         challenges, // 0xb6,
         specialty_deadshot_drank, // 0xb7,
         bouncingbetty_pickedup, // 0xb8,
-        hash_583ff5f66fd10104, // 0xb9,
+        specialty_berserker_drank, // 0xb9,
         use_pap, // 0xba,
         hash_5913a206f4ee760c, // 0xbb,
         gum_gobbler_anywhere_but_here, // 0xbc,
         hash_5a2c6be15132de02, // 0xbd,
-        hash_5a42a4d4accf00bf, // 0xbe,
+        specialty_mod_additionalprimaryweapon_drank, // 0xbe,
         maxxp, // 0xbf,
         insta_kill_pickedup, // 0xc0,
         hash_5ae850ecf14fbefb, // 0xc1,
@@ -72009,7 +72009,7 @@ version 30 {
         total_shots, // 0xc4,
         survivalist_buy_perk, // 0xc5,
         hash_5c5cab0cce302a01, // 0xc6,
-        hash_5c9c943cd0cffc65, // 0xc7,
+        specialty_mod_cooldown_drank, // 0xc7,
         bgb_tokens_gained, // 0xc8,
         zombie_hunter_explosion_multikill, // 0xc9,
         cheat_total, // 0xca,
@@ -72056,12 +72056,12 @@ version 30 {
         dung_pickedup, // 0xf3,
         melee_kills, // 0xf4,
         hash_794996196e74a949, // 0xf5,
-        hash_79d41974c40c126e, // 0xf6,
+        specialty_mod_widowswine_drank, // 0xf6,
         zm_current_daily_challenge, // 0xf7,
         kills, // 0xf8,
         extra_lives_pickedup, // 0xf9,
         ammo_purchased, // 0xfa,
-        hash_7d98fe4413e871a4, // 0xfb,
+        specialty_mod_phdflopper_drank, // 0xfb,
         bouncingbetty_planted, // 0xfc,
         assists, // 0xfd,
         bouncingbetty_devil_pickedup, // 0xfe,
@@ -72213,7 +72213,7 @@ version 30 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -72249,7 +72249,7 @@ version 30 {
         supply, // 0x15,
         stalker2, // 0x16,
         extclip2, // 0x17,
-        hash_19496adf1642b2e0, // 0x18,
+        floatdot, // 0x18,
         steadyaim2, // 0x19,
         hash_19f95db795729dff, // 0x1a,
         tacknife, // 0x1b,
@@ -72299,8 +72299,8 @@ version 30 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -72357,7 +72357,7 @@ version 30 {
     // offset 0x26248, size 0x20
     int motdversionviewed;
     // offset 0x26268, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x26288, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x26290, size 0xc30
@@ -72946,7 +72946,7 @@ version 29 {
         hero_weapon_power_pickedup, // 0x1c,
         sessionbans, // 0x1d,
         bgbs_chewed, // 0x1e,
-        hash_dd2dc50d66eb166, // 0x1f,
+        specialty_mod_electriccherry_drank, // 0x1f,
         zm_daily_challenge_start_time, // 0x20,
         kdratio, // 0x21,
         pap_weapon_not_grabbed, // 0x22,
@@ -72973,13 +72973,13 @@ version 29 {
         zm_daily_purchase_fire_sale_magic_box, // 0x37,
         total_points, // 0x38,
         leaderboardfailures, // 0x39,
-        hash_1dc1fbd3fd2fe493, // 0x3a,
+        specialty_mod_fastreload_drank, // 0x3a,
         zm_daily_kills_traps, // 0x3b,
         ties, // 0x3c,
         cur_win_streak, // 0x3d,
         paragon_icon_id, // 0x3e,
         zm_daily_purchase_perks, // 0x3f,
-        hash_254f75482929079b, // 0x40,
+        specialty_mod_berserker_drank, // 0x40,
         hash_255c8b613c124fd0, // 0x41,
         bonus_points_team_pickedup, // 0x42,
         hash_27324e3899f19c0f, // 0x43,
@@ -72990,7 +72990,7 @@ version 29 {
         codpoints, // 0x48,
         shield_charge_pickedup, // 0x49,
         hash_29e6ec48e9101f71, // 0x4a,
-        hash_2a63229e9bf23baa, // 0x4b,
+        specialty_mod_extraammo_drank, // 0x4b,
         specialty_quickrevive_drank, // 0x4c,
         revives, // 0x4d,
         zspiders_killed, // 0x4e,
@@ -73021,7 +73021,7 @@ version 29 {
         gum_gobbler_burned_out, // 0x67,
         zsentinel_killed, // 0x68,
         hash_37d4d7b0788a8cb5, // 0x69,
-        hash_382854bc103fd553, // 0x6a,
+        specialty_mod_staminup_drank, // 0x6a,
         gum_gobbler_powerups, // 0x6b,
         double_points_pickedup, // 0x6c,
         zm_daily_kills_mg, // 0x6d,
@@ -73032,24 +73032,24 @@ version 29 {
         zm_daily_round_15, // 0x72,
         survivalist_buy_wallbuy, // 0x73,
         cheat_out_of_playable, // 0x74,
-        hash_3bd6bf00e8c71a5d, // 0x75,
+        specialty_mod_shield_drank, // 0x75,
         specialty_mystery_drank, // 0x76,
         prison_tomahawk_acquired, // 0x77,
         prison_fan_trap_used, // 0x78,
         specialty_camper_drank, // 0x79,
         zombie_hunter_kill_packapunch, // 0x7a,
-        hash_3d9b732ca303132b, // 0x7b,
+        specialty_mod_armorvest_drank, // 0x7b,
         bgb_tokens_used, // 0x7c,
         hash_3e1a66815798ba48, // 0x7d,
         pack_a_punch_pickedup, // 0x7e,
         hash_3fa2584a22ebf623, // 0x7f,
         island_seed_pickedup, // 0x80,
-        hash_402bebef02213c02, // 0x81,
+        specialty_mod_camper_drank, // 0x81,
         wlratio, // 0x82,
         zm_daily_earn_5k_with_2x, // 0x83,
         teamkills_nostats, // 0x84,
         score, // 0x85,
-        hash_41476f0bb1f7c683, // 0x86,
+        specialty_mod_awareness_drank, // 0x86,
         survivalist_survive_rounds, // 0x87,
         prison_brutus_killed, // 0x88,
         survivalist_buy_door, // 0x89,
@@ -73057,16 +73057,16 @@ version 29 {
         total_games_played, // 0x8b,
         zm_daily_kills_instakill, // 0x8c,
         hash_44077c71bca8da4c, // 0x8d,
-        hash_4419d00a9f04f866, // 0x8e,
+        specialty_mod_deadshot_drank, // 0x8e,
         use_magicbox, // 0x8f,
-        hash_48288866afddc0d4, // 0x90,
+        specialty_mod_quickrevive_drank, // 0x90,
         zdog_rounds_lost, // 0x91,
         hash_486e85b7fa460f08, // 0x92,
         nuke_pickedup, // 0x93,
         cheat_too_many_weapons, // 0x94,
         planted_buildables_pickedup, // 0x95,
         hash_4987f029c7312bfb, // 0x96,
-        hash_49cc8e6486122824, // 0x97,
+        specialty_mod_doubletap2_drank, // 0x97,
         teamkills, // 0x98,
         hash_4bb632268a7ca18c, // 0x99,
         paragon_maxxp, // 0x9a,
@@ -73100,12 +73100,12 @@ version 29 {
         challenges, // 0xb6,
         specialty_deadshot_drank, // 0xb7,
         bouncingbetty_pickedup, // 0xb8,
-        hash_583ff5f66fd10104, // 0xb9,
+        specialty_berserker_drank, // 0xb9,
         use_pap, // 0xba,
         hash_5913a206f4ee760c, // 0xbb,
         gum_gobbler_anywhere_but_here, // 0xbc,
         hash_5a2c6be15132de02, // 0xbd,
-        hash_5a42a4d4accf00bf, // 0xbe,
+        specialty_mod_additionalprimaryweapon_drank, // 0xbe,
         maxxp, // 0xbf,
         insta_kill_pickedup, // 0xc0,
         hash_5ae850ecf14fbefb, // 0xc1,
@@ -73114,7 +73114,7 @@ version 29 {
         total_shots, // 0xc4,
         survivalist_buy_perk, // 0xc5,
         hash_5c5cab0cce302a01, // 0xc6,
-        hash_5c9c943cd0cffc65, // 0xc7,
+        specialty_mod_cooldown_drank, // 0xc7,
         bgb_tokens_gained, // 0xc8,
         zombie_hunter_explosion_multikill, // 0xc9,
         cheat_total, // 0xca,
@@ -73161,12 +73161,12 @@ version 29 {
         dung_pickedup, // 0xf3,
         melee_kills, // 0xf4,
         hash_794996196e74a949, // 0xf5,
-        hash_79d41974c40c126e, // 0xf6,
+        specialty_mod_widowswine_drank, // 0xf6,
         zm_current_daily_challenge, // 0xf7,
         kills, // 0xf8,
         extra_lives_pickedup, // 0xf9,
         ammo_purchased, // 0xfa,
-        hash_7d98fe4413e871a4, // 0xfb,
+        specialty_mod_phdflopper_drank, // 0xfb,
         bouncingbetty_planted, // 0xfc,
         assists, // 0xfd,
         bouncingbetty_devil_pickedup, // 0xfe,
@@ -73318,7 +73318,7 @@ version 29 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -73354,7 +73354,7 @@ version 29 {
         supply, // 0x15,
         stalker2, // 0x16,
         extclip2, // 0x17,
-        hash_19496adf1642b2e0, // 0x18,
+        floatdot, // 0x18,
         steadyaim2, // 0x19,
         hash_19f95db795729dff, // 0x1a,
         tacknife, // 0x1b,
@@ -73404,8 +73404,8 @@ version 29 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -73462,7 +73462,7 @@ version 29 {
     // offset 0x26248, size 0x20
     int motdversionviewed;
     // offset 0x26268, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x26288, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x26290, size 0xc30
@@ -74049,7 +74049,7 @@ version 28 {
         hero_weapon_power_pickedup, // 0x1c,
         sessionbans, // 0x1d,
         bgbs_chewed, // 0x1e,
-        hash_dd2dc50d66eb166, // 0x1f,
+        specialty_mod_electriccherry_drank, // 0x1f,
         zm_daily_challenge_start_time, // 0x20,
         kdratio, // 0x21,
         pap_weapon_not_grabbed, // 0x22,
@@ -74076,13 +74076,13 @@ version 28 {
         zm_daily_purchase_fire_sale_magic_box, // 0x37,
         total_points, // 0x38,
         leaderboardfailures, // 0x39,
-        hash_1dc1fbd3fd2fe493, // 0x3a,
+        specialty_mod_fastreload_drank, // 0x3a,
         zm_daily_kills_traps, // 0x3b,
         ties, // 0x3c,
         cur_win_streak, // 0x3d,
         paragon_icon_id, // 0x3e,
         zm_daily_purchase_perks, // 0x3f,
-        hash_254f75482929079b, // 0x40,
+        specialty_mod_berserker_drank, // 0x40,
         hash_255c8b613c124fd0, // 0x41,
         bonus_points_team_pickedup, // 0x42,
         hash_27324e3899f19c0f, // 0x43,
@@ -74093,7 +74093,7 @@ version 28 {
         codpoints, // 0x48,
         shield_charge_pickedup, // 0x49,
         hash_29e6ec48e9101f71, // 0x4a,
-        hash_2a63229e9bf23baa, // 0x4b,
+        specialty_mod_extraammo_drank, // 0x4b,
         specialty_quickrevive_drank, // 0x4c,
         revives, // 0x4d,
         zspiders_killed, // 0x4e,
@@ -74124,7 +74124,7 @@ version 28 {
         gum_gobbler_burned_out, // 0x67,
         zsentinel_killed, // 0x68,
         hash_37d4d7b0788a8cb5, // 0x69,
-        hash_382854bc103fd553, // 0x6a,
+        specialty_mod_staminup_drank, // 0x6a,
         gum_gobbler_powerups, // 0x6b,
         double_points_pickedup, // 0x6c,
         zm_daily_kills_mg, // 0x6d,
@@ -74135,24 +74135,24 @@ version 28 {
         zm_daily_round_15, // 0x72,
         survivalist_buy_wallbuy, // 0x73,
         cheat_out_of_playable, // 0x74,
-        hash_3bd6bf00e8c71a5d, // 0x75,
+        specialty_mod_shield_drank, // 0x75,
         specialty_mystery_drank, // 0x76,
         prison_tomahawk_acquired, // 0x77,
         prison_fan_trap_used, // 0x78,
         specialty_camper_drank, // 0x79,
         zombie_hunter_kill_packapunch, // 0x7a,
-        hash_3d9b732ca303132b, // 0x7b,
+        specialty_mod_armorvest_drank, // 0x7b,
         bgb_tokens_used, // 0x7c,
         hash_3e1a66815798ba48, // 0x7d,
         pack_a_punch_pickedup, // 0x7e,
         hash_3fa2584a22ebf623, // 0x7f,
         island_seed_pickedup, // 0x80,
-        hash_402bebef02213c02, // 0x81,
+        specialty_mod_camper_drank, // 0x81,
         wlratio, // 0x82,
         zm_daily_earn_5k_with_2x, // 0x83,
         teamkills_nostats, // 0x84,
         score, // 0x85,
-        hash_41476f0bb1f7c683, // 0x86,
+        specialty_mod_awareness_drank, // 0x86,
         survivalist_survive_rounds, // 0x87,
         prison_brutus_killed, // 0x88,
         survivalist_buy_door, // 0x89,
@@ -74160,16 +74160,16 @@ version 28 {
         total_games_played, // 0x8b,
         zm_daily_kills_instakill, // 0x8c,
         hash_44077c71bca8da4c, // 0x8d,
-        hash_4419d00a9f04f866, // 0x8e,
+        specialty_mod_deadshot_drank, // 0x8e,
         use_magicbox, // 0x8f,
-        hash_48288866afddc0d4, // 0x90,
+        specialty_mod_quickrevive_drank, // 0x90,
         zdog_rounds_lost, // 0x91,
         hash_486e85b7fa460f08, // 0x92,
         nuke_pickedup, // 0x93,
         cheat_too_many_weapons, // 0x94,
         planted_buildables_pickedup, // 0x95,
         hash_4987f029c7312bfb, // 0x96,
-        hash_49cc8e6486122824, // 0x97,
+        specialty_mod_doubletap2_drank, // 0x97,
         teamkills, // 0x98,
         hash_4bb632268a7ca18c, // 0x99,
         paragon_maxxp, // 0x9a,
@@ -74203,12 +74203,12 @@ version 28 {
         challenges, // 0xb6,
         specialty_deadshot_drank, // 0xb7,
         bouncingbetty_pickedup, // 0xb8,
-        hash_583ff5f66fd10104, // 0xb9,
+        specialty_berserker_drank, // 0xb9,
         use_pap, // 0xba,
         hash_5913a206f4ee760c, // 0xbb,
         gum_gobbler_anywhere_but_here, // 0xbc,
         hash_5a2c6be15132de02, // 0xbd,
-        hash_5a42a4d4accf00bf, // 0xbe,
+        specialty_mod_additionalprimaryweapon_drank, // 0xbe,
         maxxp, // 0xbf,
         insta_kill_pickedup, // 0xc0,
         hash_5ae850ecf14fbefb, // 0xc1,
@@ -74217,7 +74217,7 @@ version 28 {
         total_shots, // 0xc4,
         survivalist_buy_perk, // 0xc5,
         hash_5c5cab0cce302a01, // 0xc6,
-        hash_5c9c943cd0cffc65, // 0xc7,
+        specialty_mod_cooldown_drank, // 0xc7,
         bgb_tokens_gained, // 0xc8,
         zombie_hunter_explosion_multikill, // 0xc9,
         cheat_total, // 0xca,
@@ -74264,12 +74264,12 @@ version 28 {
         dung_pickedup, // 0xf3,
         melee_kills, // 0xf4,
         hash_794996196e74a949, // 0xf5,
-        hash_79d41974c40c126e, // 0xf6,
+        specialty_mod_widowswine_drank, // 0xf6,
         zm_current_daily_challenge, // 0xf7,
         kills, // 0xf8,
         extra_lives_pickedup, // 0xf9,
         ammo_purchased, // 0xfa,
-        hash_7d98fe4413e871a4, // 0xfb,
+        specialty_mod_phdflopper_drank, // 0xfb,
         bouncingbetty_planted, // 0xfc,
         assists, // 0xfd,
         bouncingbetty_devil_pickedup, // 0xfe,
@@ -74421,7 +74421,7 @@ version 28 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -74457,7 +74457,7 @@ version 28 {
         supply, // 0x15,
         stalker2, // 0x16,
         extclip2, // 0x17,
-        hash_19496adf1642b2e0, // 0x18,
+        floatdot, // 0x18,
         steadyaim2, // 0x19,
         hash_19f95db795729dff, // 0x1a,
         tacknife, // 0x1b,
@@ -74507,8 +74507,8 @@ version 28 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -74565,7 +74565,7 @@ version 28 {
     // offset 0x26248, size 0x20
     int motdversionviewed;
     // offset 0x26268, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x26288, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x26290, size 0xc30
@@ -75150,7 +75150,7 @@ version 27 {
         hero_weapon_power_pickedup, // 0x1c,
         sessionbans, // 0x1d,
         bgbs_chewed, // 0x1e,
-        hash_dd2dc50d66eb166, // 0x1f,
+        specialty_mod_electriccherry_drank, // 0x1f,
         zm_daily_challenge_start_time, // 0x20,
         kdratio, // 0x21,
         pap_weapon_not_grabbed, // 0x22,
@@ -75177,13 +75177,13 @@ version 27 {
         zm_daily_purchase_fire_sale_magic_box, // 0x37,
         total_points, // 0x38,
         leaderboardfailures, // 0x39,
-        hash_1dc1fbd3fd2fe493, // 0x3a,
+        specialty_mod_fastreload_drank, // 0x3a,
         zm_daily_kills_traps, // 0x3b,
         ties, // 0x3c,
         cur_win_streak, // 0x3d,
         paragon_icon_id, // 0x3e,
         zm_daily_purchase_perks, // 0x3f,
-        hash_254f75482929079b, // 0x40,
+        specialty_mod_berserker_drank, // 0x40,
         hash_255c8b613c124fd0, // 0x41,
         bonus_points_team_pickedup, // 0x42,
         hash_27324e3899f19c0f, // 0x43,
@@ -75194,7 +75194,7 @@ version 27 {
         codpoints, // 0x48,
         shield_charge_pickedup, // 0x49,
         hash_29e6ec48e9101f71, // 0x4a,
-        hash_2a63229e9bf23baa, // 0x4b,
+        specialty_mod_extraammo_drank, // 0x4b,
         specialty_quickrevive_drank, // 0x4c,
         revives, // 0x4d,
         zspiders_killed, // 0x4e,
@@ -75225,7 +75225,7 @@ version 27 {
         gum_gobbler_burned_out, // 0x67,
         zsentinel_killed, // 0x68,
         hash_37d4d7b0788a8cb5, // 0x69,
-        hash_382854bc103fd553, // 0x6a,
+        specialty_mod_staminup_drank, // 0x6a,
         gum_gobbler_powerups, // 0x6b,
         double_points_pickedup, // 0x6c,
         zm_daily_kills_mg, // 0x6d,
@@ -75236,24 +75236,24 @@ version 27 {
         zm_daily_round_15, // 0x72,
         survivalist_buy_wallbuy, // 0x73,
         cheat_out_of_playable, // 0x74,
-        hash_3bd6bf00e8c71a5d, // 0x75,
+        specialty_mod_shield_drank, // 0x75,
         specialty_mystery_drank, // 0x76,
         prison_tomahawk_acquired, // 0x77,
         prison_fan_trap_used, // 0x78,
         specialty_camper_drank, // 0x79,
         zombie_hunter_kill_packapunch, // 0x7a,
-        hash_3d9b732ca303132b, // 0x7b,
+        specialty_mod_armorvest_drank, // 0x7b,
         bgb_tokens_used, // 0x7c,
         hash_3e1a66815798ba48, // 0x7d,
         pack_a_punch_pickedup, // 0x7e,
         hash_3fa2584a22ebf623, // 0x7f,
         island_seed_pickedup, // 0x80,
-        hash_402bebef02213c02, // 0x81,
+        specialty_mod_camper_drank, // 0x81,
         wlratio, // 0x82,
         zm_daily_earn_5k_with_2x, // 0x83,
         teamkills_nostats, // 0x84,
         score, // 0x85,
-        hash_41476f0bb1f7c683, // 0x86,
+        specialty_mod_awareness_drank, // 0x86,
         survivalist_survive_rounds, // 0x87,
         prison_brutus_killed, // 0x88,
         survivalist_buy_door, // 0x89,
@@ -75261,16 +75261,16 @@ version 27 {
         total_games_played, // 0x8b,
         zm_daily_kills_instakill, // 0x8c,
         hash_44077c71bca8da4c, // 0x8d,
-        hash_4419d00a9f04f866, // 0x8e,
+        specialty_mod_deadshot_drank, // 0x8e,
         use_magicbox, // 0x8f,
-        hash_48288866afddc0d4, // 0x90,
+        specialty_mod_quickrevive_drank, // 0x90,
         zdog_rounds_lost, // 0x91,
         hash_486e85b7fa460f08, // 0x92,
         nuke_pickedup, // 0x93,
         cheat_too_many_weapons, // 0x94,
         planted_buildables_pickedup, // 0x95,
         hash_4987f029c7312bfb, // 0x96,
-        hash_49cc8e6486122824, // 0x97,
+        specialty_mod_doubletap2_drank, // 0x97,
         teamkills, // 0x98,
         hash_4bb632268a7ca18c, // 0x99,
         paragon_maxxp, // 0x9a,
@@ -75304,12 +75304,12 @@ version 27 {
         challenges, // 0xb6,
         specialty_deadshot_drank, // 0xb7,
         bouncingbetty_pickedup, // 0xb8,
-        hash_583ff5f66fd10104, // 0xb9,
+        specialty_berserker_drank, // 0xb9,
         use_pap, // 0xba,
         hash_5913a206f4ee760c, // 0xbb,
         gum_gobbler_anywhere_but_here, // 0xbc,
         hash_5a2c6be15132de02, // 0xbd,
-        hash_5a42a4d4accf00bf, // 0xbe,
+        specialty_mod_additionalprimaryweapon_drank, // 0xbe,
         maxxp, // 0xbf,
         insta_kill_pickedup, // 0xc0,
         hash_5ae850ecf14fbefb, // 0xc1,
@@ -75318,7 +75318,7 @@ version 27 {
         total_shots, // 0xc4,
         survivalist_buy_perk, // 0xc5,
         hash_5c5cab0cce302a01, // 0xc6,
-        hash_5c9c943cd0cffc65, // 0xc7,
+        specialty_mod_cooldown_drank, // 0xc7,
         bgb_tokens_gained, // 0xc8,
         zombie_hunter_explosion_multikill, // 0xc9,
         cheat_total, // 0xca,
@@ -75365,12 +75365,12 @@ version 27 {
         dung_pickedup, // 0xf3,
         melee_kills, // 0xf4,
         hash_794996196e74a949, // 0xf5,
-        hash_79d41974c40c126e, // 0xf6,
+        specialty_mod_widowswine_drank, // 0xf6,
         zm_current_daily_challenge, // 0xf7,
         kills, // 0xf8,
         extra_lives_pickedup, // 0xf9,
         ammo_purchased, // 0xfa,
-        hash_7d98fe4413e871a4, // 0xfb,
+        specialty_mod_phdflopper_drank, // 0xfb,
         bouncingbetty_planted, // 0xfc,
         assists, // 0xfd,
         bouncingbetty_devil_pickedup, // 0xfe,
@@ -75522,7 +75522,7 @@ version 27 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -75558,7 +75558,7 @@ version 27 {
         supply, // 0x15,
         stalker2, // 0x16,
         extclip2, // 0x17,
-        hash_19496adf1642b2e0, // 0x18,
+        floatdot, // 0x18,
         steadyaim2, // 0x19,
         hash_19f95db795729dff, // 0x1a,
         tacknife, // 0x1b,
@@ -75608,8 +75608,8 @@ version 27 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -75666,7 +75666,7 @@ version 27 {
     // offset 0x26248, size 0x20
     int motdversionviewed;
     // offset 0x26268, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x26288, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x26290, size 0xc30
@@ -76251,7 +76251,7 @@ version 26 {
         hero_weapon_power_pickedup, // 0x1c,
         sessionbans, // 0x1d,
         bgbs_chewed, // 0x1e,
-        hash_dd2dc50d66eb166, // 0x1f,
+        specialty_mod_electriccherry_drank, // 0x1f,
         zm_daily_challenge_start_time, // 0x20,
         kdratio, // 0x21,
         pap_weapon_not_grabbed, // 0x22,
@@ -76278,13 +76278,13 @@ version 26 {
         zm_daily_purchase_fire_sale_magic_box, // 0x37,
         total_points, // 0x38,
         leaderboardfailures, // 0x39,
-        hash_1dc1fbd3fd2fe493, // 0x3a,
+        specialty_mod_fastreload_drank, // 0x3a,
         zm_daily_kills_traps, // 0x3b,
         ties, // 0x3c,
         cur_win_streak, // 0x3d,
         paragon_icon_id, // 0x3e,
         zm_daily_purchase_perks, // 0x3f,
-        hash_254f75482929079b, // 0x40,
+        specialty_mod_berserker_drank, // 0x40,
         hash_255c8b613c124fd0, // 0x41,
         bonus_points_team_pickedup, // 0x42,
         hash_27324e3899f19c0f, // 0x43,
@@ -76295,7 +76295,7 @@ version 26 {
         codpoints, // 0x48,
         shield_charge_pickedup, // 0x49,
         hash_29e6ec48e9101f71, // 0x4a,
-        hash_2a63229e9bf23baa, // 0x4b,
+        specialty_mod_extraammo_drank, // 0x4b,
         specialty_quickrevive_drank, // 0x4c,
         revives, // 0x4d,
         zspiders_killed, // 0x4e,
@@ -76326,7 +76326,7 @@ version 26 {
         gum_gobbler_burned_out, // 0x67,
         zsentinel_killed, // 0x68,
         hash_37d4d7b0788a8cb5, // 0x69,
-        hash_382854bc103fd553, // 0x6a,
+        specialty_mod_staminup_drank, // 0x6a,
         gum_gobbler_powerups, // 0x6b,
         double_points_pickedup, // 0x6c,
         zm_daily_kills_mg, // 0x6d,
@@ -76337,24 +76337,24 @@ version 26 {
         zm_daily_round_15, // 0x72,
         survivalist_buy_wallbuy, // 0x73,
         cheat_out_of_playable, // 0x74,
-        hash_3bd6bf00e8c71a5d, // 0x75,
+        specialty_mod_shield_drank, // 0x75,
         specialty_mystery_drank, // 0x76,
         prison_tomahawk_acquired, // 0x77,
         prison_fan_trap_used, // 0x78,
         specialty_camper_drank, // 0x79,
         zombie_hunter_kill_packapunch, // 0x7a,
-        hash_3d9b732ca303132b, // 0x7b,
+        specialty_mod_armorvest_drank, // 0x7b,
         bgb_tokens_used, // 0x7c,
         hash_3e1a66815798ba48, // 0x7d,
         pack_a_punch_pickedup, // 0x7e,
         hash_3fa2584a22ebf623, // 0x7f,
         island_seed_pickedup, // 0x80,
-        hash_402bebef02213c02, // 0x81,
+        specialty_mod_camper_drank, // 0x81,
         wlratio, // 0x82,
         zm_daily_earn_5k_with_2x, // 0x83,
         teamkills_nostats, // 0x84,
         score, // 0x85,
-        hash_41476f0bb1f7c683, // 0x86,
+        specialty_mod_awareness_drank, // 0x86,
         survivalist_survive_rounds, // 0x87,
         prison_brutus_killed, // 0x88,
         survivalist_buy_door, // 0x89,
@@ -76362,16 +76362,16 @@ version 26 {
         total_games_played, // 0x8b,
         zm_daily_kills_instakill, // 0x8c,
         hash_44077c71bca8da4c, // 0x8d,
-        hash_4419d00a9f04f866, // 0x8e,
+        specialty_mod_deadshot_drank, // 0x8e,
         use_magicbox, // 0x8f,
-        hash_48288866afddc0d4, // 0x90,
+        specialty_mod_quickrevive_drank, // 0x90,
         zdog_rounds_lost, // 0x91,
         hash_486e85b7fa460f08, // 0x92,
         nuke_pickedup, // 0x93,
         cheat_too_many_weapons, // 0x94,
         planted_buildables_pickedup, // 0x95,
         hash_4987f029c7312bfb, // 0x96,
-        hash_49cc8e6486122824, // 0x97,
+        specialty_mod_doubletap2_drank, // 0x97,
         teamkills, // 0x98,
         hash_4bb632268a7ca18c, // 0x99,
         paragon_maxxp, // 0x9a,
@@ -76405,12 +76405,12 @@ version 26 {
         challenges, // 0xb6,
         specialty_deadshot_drank, // 0xb7,
         bouncingbetty_pickedup, // 0xb8,
-        hash_583ff5f66fd10104, // 0xb9,
+        specialty_berserker_drank, // 0xb9,
         use_pap, // 0xba,
         hash_5913a206f4ee760c, // 0xbb,
         gum_gobbler_anywhere_but_here, // 0xbc,
         hash_5a2c6be15132de02, // 0xbd,
-        hash_5a42a4d4accf00bf, // 0xbe,
+        specialty_mod_additionalprimaryweapon_drank, // 0xbe,
         maxxp, // 0xbf,
         insta_kill_pickedup, // 0xc0,
         hash_5ae850ecf14fbefb, // 0xc1,
@@ -76419,7 +76419,7 @@ version 26 {
         total_shots, // 0xc4,
         survivalist_buy_perk, // 0xc5,
         hash_5c5cab0cce302a01, // 0xc6,
-        hash_5c9c943cd0cffc65, // 0xc7,
+        specialty_mod_cooldown_drank, // 0xc7,
         bgb_tokens_gained, // 0xc8,
         zombie_hunter_explosion_multikill, // 0xc9,
         cheat_total, // 0xca,
@@ -76466,12 +76466,12 @@ version 26 {
         dung_pickedup, // 0xf3,
         melee_kills, // 0xf4,
         hash_794996196e74a949, // 0xf5,
-        hash_79d41974c40c126e, // 0xf6,
+        specialty_mod_widowswine_drank, // 0xf6,
         zm_current_daily_challenge, // 0xf7,
         kills, // 0xf8,
         extra_lives_pickedup, // 0xf9,
         ammo_purchased, // 0xfa,
-        hash_7d98fe4413e871a4, // 0xfb,
+        specialty_mod_phdflopper_drank, // 0xfb,
         bouncingbetty_planted, // 0xfc,
         assists, // 0xfd,
         bouncingbetty_devil_pickedup, // 0xfe,
@@ -76622,7 +76622,7 @@ version 26 {
         weapon_grenadelauncher, // 0xd,
         weapon_launcher, // 0xe,
         weapon_grenade, // 0xf,
-        hash_5352e5bf9311b021, // 0x10,
+        weapon_projectile, // 0x10,
         weapon_shotgun, // 0x11,
         weapon_lmg, // 0x12,
         weapon_tactical, // 0x13,
@@ -76658,7 +76658,7 @@ version 26 {
         supply, // 0x15,
         stalker2, // 0x16,
         extclip2, // 0x17,
-        hash_19496adf1642b2e0, // 0x18,
+        floatdot, // 0x18,
         steadyaim2, // 0x19,
         hash_19f95db795729dff, // 0x1a,
         tacknife, // 0x1b,
@@ -76708,8 +76708,8 @@ version 26 {
         green, // 0x3,
         left, // 0x4,
         hash_27d748f975c1cca2, // 0x5,
-        hash_3abd10cd4bee218d, // 0x6,
-        hash_3b1a3eb9e4c6e529, // 0x7,
+        animo, // 0x6,
+        rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
         hash_6c90e772edbc8708, // 0xa,
@@ -76766,7 +76766,7 @@ version 26 {
     // offset 0x26248, size 0x20
     int motdversionviewed;
     // offset 0x26268, size 0x20
-    int hash_5626babef5903cfc;
+    int design_version;
     // offset 0x26288, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x26290, size 0xc30

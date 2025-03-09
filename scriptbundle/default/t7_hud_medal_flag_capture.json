@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_flag_capture",
     "backinglarge": "#t7_hud_medal_backing_gamemode_lrg",
     "iconsmall": "#t7_hud_medal_flag_capture",
-    "stringref": "#hash_198ea2937af15476",
+    "stringref": "#medal/flag_capture",
     "iconlarge": "#t7_hud_medal_flag_capture_lrg"
 }

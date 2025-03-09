@@ -25,7 +25,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_powerup_full_ammo/zm_powerup_full_ammo
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8a9622d3, Offset: 0x160
 // Size: 0x84
 function __init__() {
@@ -36,7 +36,7 @@ function __init__() {
 }
 
 // Namespace zm_powerup_full_ammo/zm_powerup_full_ammo
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc33e2117, Offset: 0x1f0
 // Size: 0x8c
 function grab_full_ammo(player) {
@@ -49,7 +49,7 @@ function grab_full_ammo(player) {
 }
 
 // Namespace zm_powerup_full_ammo/zm_powerup_full_ammo
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbff3f14b, Offset: 0x288
 // Size: 0x2c4
 function function_dae1df4d(e_powerup, player) {
@@ -93,7 +93,7 @@ function function_dae1df4d(e_powerup, player) {
 }
 
 // Namespace zm_powerup_full_ammo/zm_powerup_full_ammo
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7bc6851a, Offset: 0x558
 // Size: 0x34c
 function full_ammo_powerup(drop_item, player) {
@@ -141,7 +141,7 @@ function full_ammo_powerup(drop_item, player) {
 }
 
 // Namespace zm_powerup_full_ammo/zm_powerup_full_ammo
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc19910af, Offset: 0x8b0
 // Size: 0x10c
 function function_3ecbd9d(w_weapon) {
@@ -159,7 +159,7 @@ function function_3ecbd9d(w_weapon) {
 }
 
 // Namespace zm_powerup_full_ammo/zm_powerup_full_ammo
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfe8030ea, Offset: 0x9c8
 // Size: 0x94
 function full_ammo_on_hud(drop_item, player_team) {
@@ -171,7 +171,7 @@ function full_ammo_on_hud(drop_item, player_team) {
 }
 
 // Namespace zm_powerup_full_ammo/zm_powerup_full_ammo
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x82267f78, Offset: 0xa68
 // Size: 0x12
 function function_b695b971() {

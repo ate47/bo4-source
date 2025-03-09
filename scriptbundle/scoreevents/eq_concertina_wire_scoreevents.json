@@ -1,11 +1,11 @@
 {
-    "var_2ecceeab": "#concertina_wire_kill",
+    "hash_2ecceeab": "#concertina_wire_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
-    "var_1253685d": "#hash_729785a4c949b972",
+    "hash_1253685d": "#hash_729785a4c949b972",
     "vmtype": "both",
     "name": "eq_concertina_wire_scoreevents",
-    "var_e1b418c1": "ability",
-    "var_3143c814": "#hash_4ccb940ea15047ba",
-    "var_fcd2ff3a": 1
+    "customsettingstype": "ability",
+    "hash_3143c814": "#hash_4ccb940ea15047ba",
+    "hash_fcd2ff3a": 1
 }

@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_upgrade_multiple/zm_trial_upgrade_multiple
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x91bd941, Offset: 0xf0
 // Size: 0x5c
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_upgrade_multiple/zm_trial_upgrade_multiple
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x13a8cfb1, Offset: 0x158
 // Size: 0x248
 function private on_begin(n_count, n_repacks) {
@@ -57,7 +57,7 @@ function private on_begin(n_count, n_repacks) {
 }
 
 // Namespace zm_trial_upgrade_multiple/zm_trial_upgrade_multiple
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa2f7a260, Offset: 0x3a8
 // Size: 0x24e
 function private on_end(round_reset) {
@@ -91,7 +91,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_upgrade_multiple/zm_trial_upgrade_multiple
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xdc24c93f, Offset: 0x600
 // Size: 0x1e6
 function private function_e73fbbf7(var_5ba20db5, var_27f8d634) {
@@ -127,7 +127,7 @@ function private function_e73fbbf7(var_5ba20db5, var_27f8d634) {
 }
 
 // Namespace zm_trial_upgrade_multiple/zm_trial_upgrade_multiple
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2b2196d2, Offset: 0x7f0
 // Size: 0x14e
 function private function_46feb36d(var_5ba20db5, var_27f8d634) {

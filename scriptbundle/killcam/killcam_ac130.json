@@ -5,7 +5,7 @@
     "vmtype": "none",
     "killcamgroundupdist": 25,
     "name": "killcam_ac130",
-    "var_531c4094": "#none",
+    "hash_531c4094": "#none",
     "killcamupdist": 10,
     "killcamwallsidedist": 30,
     "killcamwalloutdist": 10,

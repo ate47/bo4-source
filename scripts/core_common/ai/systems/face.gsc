@@ -37,7 +37,7 @@ function saygenericdialogue(typestring) {
 }
 
 // Namespace face/face
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcaef3e10, Offset: 0x258
 // Size: 0xb4
 function saygenericdialoguewithimportance(typestring, importance) {
@@ -83,7 +83,7 @@ function sayspecificdialogue(facialanim, soundalias, importance, notifystring, w
 }
 
 // Namespace face/face
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb620a197, Offset: 0x408
 // Size: 0x4
 function playidleface() {
@@ -91,7 +91,7 @@ function playidleface() {
 }
 
 // Namespace face/face
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9f881ce9, Offset: 0x418
 // Size: 0x6fe
 function playfacethread(facialanim, str_script_alias, importance, notifystring, waitornot, timetowait, player_or_team) {
@@ -207,7 +207,7 @@ function playfacethread(facialanim, str_script_alias, importance, notifystring, 
 }
 
 // Namespace face/face
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x8d79f8ba, Offset: 0xb20
 // Size: 0xfc
 function _play_sound_to_player_with_notify(soundalias, player_or_team, uniquenotify) {
@@ -228,7 +228,7 @@ function _play_sound_to_player_with_notify(soundalias, player_or_team, uniquenot
 }
 
 // Namespace face/face
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xc3e7d4ed, Offset: 0xc28
 // Size: 0x33c
 function private _temp_dialog(str_line, uniquenotify, b_missing_vo = 0) {

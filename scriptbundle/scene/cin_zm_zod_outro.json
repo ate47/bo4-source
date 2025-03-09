@@ -131,8 +131,8 @@
                     ],
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#tag_origin_animate",
@@ -253,8 +253,8 @@
                     "cleanupdelete": 1,
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_7c1c25fe4c81e4f6",
@@ -375,8 +375,8 @@
                     "cleanupdelete": 1,
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_23c71e93a1c1579e",
@@ -497,8 +497,8 @@
                     "cleanupdelete": 1,
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_2a968d8a80fb5331",
@@ -619,8 +619,8 @@
                     "cleanupdelete": 1,
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_73692afe6c732546",
@@ -687,8 +687,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_1f19e6515d7291a9",
@@ -767,8 +767,8 @@
                     "cleanupdelete": 1,
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_2c79c94dae3e2148",
@@ -853,8 +853,8 @@
                     "cleanupdelete": 1,
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_6608b178f5cb8e31",
@@ -934,8 +934,8 @@
                     "cleanupdelete": 1,
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_15762f5cc05a157e",
@@ -1008,8 +1008,8 @@
                     "cleanupdelete": 1,
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3d29553685c4aca7",
@@ -1088,8 +1088,8 @@
                     "cleanupdelete": 1,
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_28ffb95cd05957d4",
@@ -1162,8 +1162,8 @@
                     "cleanupdelete": 1,
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#p8_zm_zod_lifeboat",
@@ -1236,8 +1236,8 @@
                     "cleanupdelete": 1,
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#p8_zm_zod_lifeboat",
@@ -1310,8 +1310,8 @@
                     "cleanupdelete": 1,
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#p8_zm_zod_lifeboat",
@@ -1378,8 +1378,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_4282390081d2d1c4",
@@ -1453,8 +1453,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_7c0d71ff3815e967",
@@ -1535,8 +1535,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_14d8e61b488e0908",
@@ -1603,8 +1603,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_786513ca784c4812",
@@ -1678,8 +1678,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_786512ca784c465f",
@@ -1753,8 +1753,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_59096e2670dcd00e",
@@ -1828,8 +1828,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_786510ca784c42f9",
@@ -1909,8 +1909,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_7a6f4c2a57c6d43e",
@@ -1986,8 +1986,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_78650fca784c4146",
@@ -2061,8 +2061,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_29a3043c4b370581",
@@ -2130,8 +2130,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_78ff5812b6f44c9e",
@@ -2205,8 +2205,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_51dd3f78e543c653",
@@ -2273,8 +2273,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_59f4a3e25679a7fa",
@@ -2341,8 +2341,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_2cad280cbeceb26d",
@@ -2409,8 +2409,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_70f7ce06d71221d1",
@@ -2477,8 +2477,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_57e57fa51c3077eb",
@@ -2545,8 +2545,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_2c79c94dae3e2148",
@@ -2613,8 +2613,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_6608b178f5cb8e31",
@@ -2681,8 +2681,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_15762f5cc05a157e",
@@ -2755,8 +2755,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_6dc90b440c7d75ad",
@@ -2823,8 +2823,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_6fa88f6af4cb2d3a",
@@ -2884,8 +2884,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_51dd3f78e543c653",
@@ -2952,8 +2952,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#p8_zm_zod_lifeboat",
@@ -3020,8 +3020,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#p8_zm_zod_lifeboat",
@@ -3088,8 +3088,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#p8_zm_zod_lifeboat",
@@ -3162,8 +3162,8 @@
                     "cleanupdelete": 1,
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3809cd50edc844dc",
@@ -3256,8 +3256,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#wpn_t8_zm_pistol_webly_world",
@@ -3324,8 +3324,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#p8_zm_zod_lifeboat",
@@ -3392,8 +3392,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#p8_zm_zod_lifeboat",
@@ -3466,8 +3466,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3c1b917eaa4c8e63",
@@ -3540,8 +3540,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3c1b917eaa4c8e63",
@@ -3608,8 +3608,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3c1b917eaa4c8e63",
@@ -3676,8 +3676,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3c1b917eaa4c8e63",
@@ -3750,8 +3750,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3c1b917eaa4c8e63",
@@ -3819,8 +3819,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3c1b917eaa4c8e63",
@@ -3887,8 +3887,8 @@
                     "cleanupdelete": 1,
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_7bd24d4bdde131c6",
@@ -3961,8 +3961,8 @@
                     "cleanupdelete": 1,
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3809cd50edc844dc",
@@ -4029,8 +4029,8 @@
                     "cleanupdelete": 1,
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#p8_zm_zod_lifeboat_equipment_rope_pile",
@@ -4097,8 +4097,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_59096e2670dcd00e",
@@ -4165,8 +4165,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_29a3043c4b370581",
@@ -4233,8 +4233,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_5ce676306c724b10",
@@ -4301,8 +4301,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3b3fa695c7c9040b",
@@ -4369,8 +4369,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_345c94c4f389e38f",
@@ -4437,8 +4437,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_78ff5812b6f44c9e",
@@ -4504,8 +4504,8 @@
                     ],
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#p8_zm_zod_lifeboat_equipment_oar",
@@ -4571,8 +4571,8 @@
                     ],
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#p8_zm_zod_lifeboat_equipment_oar",
@@ -4638,8 +4638,8 @@
                     ],
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3cb0a46a4923fd26",
@@ -4705,8 +4705,8 @@
                     ],
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#p8_zm_zod_lifeboat_thole_pin",
@@ -4772,8 +4772,8 @@
                     ],
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#p8_zm_zod_lifeboat_steering_crutch",
@@ -4839,8 +4839,8 @@
                     ],
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#p8_zm_zod_lifeboat_steering_crutch",
@@ -4906,8 +4906,8 @@
                     ],
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#p8_zm_zod_lifeboat_equipment_rope_messy",
@@ -4973,8 +4973,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3809cd50edc844dc",
@@ -5040,8 +5040,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3809cd50edc844dc",
@@ -5107,8 +5107,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3809cd50edc844dc",
@@ -5174,8 +5174,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3809cd50edc844dc",
@@ -5241,8 +5241,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3809cd50edc844dc",
@@ -5308,8 +5308,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3809cd50edc844dc",
@@ -5377,8 +5377,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "model": "#hash_3781d68c09ac8d0c",
@@ -5447,8 +5447,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "firstframe": 1,
@@ -5517,8 +5517,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "firstframe": 1,
@@ -5588,8 +5588,8 @@
                 {
                     "name": "shot120",
                     "aligntarget": "tag_align_cinematic_open_sea",
-                    "var_39fd697b": "sbm_sh120_midvista_berg",
-                    "var_b94164e": "sbm_sh120_midvista_berg"
+                    "hash_39fd697b": "sbm_sh120_midvista_berg",
+                    "hash_b94164e": "sbm_sh120_midvista_berg"
                 }
             ],
             "firstframe": 1,
@@ -5606,8 +5606,8 @@
     "name": "cin_zm_zod_outro",
     "dontsync": 1,
     "disablesceneskipping": 1,
-    "var_241c5f3c": 1,
-    "var_a6da2039": "cin_zm_zod_outro",
+    "hash_241c5f3c": 1,
+    "hash_a6da2039": "cin_zm_zod_outro",
     "aligntarget": "tag_align_cinematic_cargo_hold",
     "team": "any"
 }

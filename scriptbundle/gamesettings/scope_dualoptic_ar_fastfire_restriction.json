@@ -3,6 +3,6 @@
     "type": "gamesettings",
     "name": "scope_dualoptic_ar_fastfire_restriction",
     "displayname": "#weapon/ar_fastfire_t8",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "itemRestrictions__ar_fastfire_t8__attachments__dualoptic"
 }

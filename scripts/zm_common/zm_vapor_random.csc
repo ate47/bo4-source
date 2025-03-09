@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_vapor_random/zm_vapor_random
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x19971e06, Offset: 0x148
 // Size: 0x72
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace zm_vapor_random/zm_vapor_random
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb478b3a, Offset: 0x1c8
 // Size: 0xcc
 function random_vapor_altar_available_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

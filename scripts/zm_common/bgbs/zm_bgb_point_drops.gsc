@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_point_drops/zm_bgb_point_drops
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x11e3193a, Offset: 0x108
 // Size: 0xfc
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_point_drops/zm_bgb_point_drops
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x527da651, Offset: 0x210
 // Size: 0x3c
 function activation() {
@@ -38,7 +38,7 @@ function activation() {
 }
 
 // Namespace zm_bgb_point_drops/zm_bgb_point_drops
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x12cd187a, Offset: 0x258
 // Size: 0x40
 function validation() {

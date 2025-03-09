@@ -96,7 +96,7 @@ function set_aoe_fx(local_client_num, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace ability_util/ability_util
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6a09893f, Offset: 0x590
 // Size: 0xd8
 function stop_aoe_fx(local_client_num, clientfield_name, aoe_fx_info) {
@@ -116,7 +116,7 @@ function stop_aoe_fx(local_client_num, clientfield_name, aoe_fx_info) {
 }
 
 // Namespace ability_util/ability_util
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x82137a75, Offset: 0x670
 // Size: 0x396
 function private aoe_fx(local_client_num, clientfield_name, aoe_fx_info) {
@@ -159,7 +159,7 @@ function private aoe_fx(local_client_num, clientfield_name, aoe_fx_info) {
 }
 
 // Namespace ability_util/ability_util
-// Params 6, eflags: 0x5 linked
+// Params 6, eflags: 0x4
 // Checksum 0xc0a3c868, Offset: 0xa10
 // Size: 0x56c
 function private do_aoe_fx(local_client_num, center, yaw_count, pitch, clientfield_name, aoe_fx_info) {

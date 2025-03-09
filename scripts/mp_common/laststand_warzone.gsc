@@ -164,7 +164,7 @@ function function_c7d3aeec(statname, value) {
     if (!isdefined(self.cleanupstats[statname])) {
         self.cleanupstats[statname] = 0;
     }
-    self.cleanupstats[statname] = self.cleanupstats[statname] + value;
+    self.cleanupstats[statname] += value;
     self stats::function_d40764f3(statname, value);
     self stats::function_b7f80d87(statname, value);
     cleanups = 0;
@@ -183,7 +183,7 @@ function function_6f7bff5d(statname, value) {
     if (!isdefined(self.pers[statname])) {
         self.pers[statname] = 0;
     }
-    self.pers[statname] = self.pers[statname] + value;
+    self.pers[statname] += value;
     return self.pers[statname];
 }
 
@@ -236,7 +236,7 @@ function function_263a2944(prompt, var_a1258c6b) {
     if (isdefined(self)) {
         [[ prompt ]]->close(self);
         [[ prompt ]]->set_clientnum(self, int(min(getdvarint(#"com_maxclients", 0), pow(2, 7))) - 1);
-        self notify(prompt.var_47e79fc + "_terminated");
+        self notify(prompt._uid + "_terminated");
     }
 }
 
@@ -246,7 +246,7 @@ function function_263a2944(prompt, var_a1258c6b) {
 // Size: 0xe8
 function function_60cc4433(prompt, var_a1258c6b) {
     if (infection::function_74650d7()) {
-        self endon(prompt.var_47e79fc + "_terminated");
+        self endon(prompt._uid + "_terminated");
         self waittill(#"death");
         if (isdefined(self)) {
             [[ prompt ]]->close(self);
@@ -687,7 +687,7 @@ function laststand_clean_up_on_interrupt(playerbeingrevived) {
     playerbeingrevived waittill(#"disconnect", #"game_ended", #"death");
     if (isdefined(playerbeingrevived)) {
         playerbeingrevived clientfield::set_player_uimodel("hudItems.laststand.beingRevived", 0);
-        playerbeingrevived function_7c685040();
+        playerbeingrevived stopallboasts();
         playerbeingrevived function_516a3bef(1);
     }
     if (isdefined(revivetrigger)) {
@@ -695,7 +695,7 @@ function laststand_clean_up_on_interrupt(playerbeingrevived) {
     }
     if (isdefined(self)) {
         self stoploopsound(1);
-        self function_7c685040();
+        self stopallboasts();
         self function_2907ce7a();
         self revive_give_back_weapons();
         self clientfield::set_player_uimodel("hudItems.laststand.reviveProgress", 0);
@@ -1075,10 +1075,10 @@ function function_356caede(team) {
         var_abdbed5a = level.var_91c33dcb.finishers[bundle_index].("finisherbundle");
         var_d1d9820d = getscriptbundle(var_abdbed5a);
         if (isdefined(var_d1d9820d.("attacker_gesture"))) {
-            finisher function_c6775cf9(var_d1d9820d.("attacker_gesture"));
+            finisher playboast(var_d1d9820d.("attacker_gesture"));
         }
         if (isdefined(var_d1d9820d.("victim_gesture"))) {
-            self function_c6775cf9(var_d1d9820d.("victim_gesture"));
+            self playboast(var_d1d9820d.("victim_gesture"));
         }
         self function_fab0e07e(finisher);
         if (!isdefined(finisher)) {
@@ -1116,10 +1116,10 @@ function function_356caede(team) {
                 } else {
                     self clientfield::set_player_uimodel("hudItems.beingFinished", 0);
                     self function_516a3bef(1);
-                    self function_7c685040();
+                    self stopallboasts();
                 }
             }
-            finisher function_7c685040();
+            finisher stopallboasts();
         }
     }
     return false;

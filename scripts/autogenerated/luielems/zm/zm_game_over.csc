@@ -7,7 +7,7 @@
 class czm_game_over : cluielem {
 
     // Namespace czm_game_over/zm_game_over
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x6c3857f, Offset: 0x460
     // Size: 0x30
     function set_rounds(localclientnum, value) {
@@ -15,7 +15,7 @@ class czm_game_over : cluielem {
     }
 
     // Namespace czm_game_over/zm_game_over
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x5d583da3, Offset: 0x3a8
     // Size: 0xac
     function set_state(localclientnum, state_name) {
@@ -31,7 +31,7 @@ class czm_game_over : cluielem {
     }
 
     // Namespace czm_game_over/zm_game_over
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x71b81b92, Offset: 0x370
     // Size: 0x2c
     function open(localclientnum) {
@@ -39,7 +39,7 @@ class czm_game_over : cluielem {
     }
 
     // Namespace czm_game_over/zm_game_over
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x22e8d048, Offset: 0x308
     // Size: 0x60
     function function_fa582112(localclientnum) {
@@ -49,7 +49,7 @@ class czm_game_over : cluielem {
     }
 
     // Namespace czm_game_over/zm_game_over
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x26d0c695, Offset: 0x2d8
     // Size: 0x24
     function register_clientside(uid) {
@@ -57,7 +57,7 @@ class czm_game_over : cluielem {
     }
 
     // Namespace czm_game_over/zm_game_over
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x36a6d6b2, Offset: 0x250
     // Size: 0x7c
     function setup_clientfields(uid, var_ddbc37b7) {
@@ -69,7 +69,7 @@ class czm_game_over : cluielem {
 }
 
 // Namespace zm_game_over/zm_game_over
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x434d8df, Offset: 0xb8
 // Size: 0x4c
 function register(uid, var_ddbc37b7) {

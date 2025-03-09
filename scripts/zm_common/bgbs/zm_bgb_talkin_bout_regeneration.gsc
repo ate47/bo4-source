@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_talkin_bout_regeneration/zm_bgb_talkin_bout_regeneration
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xda4380b9, Offset: 0x100
 // Size: 0x94
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_talkin_bout_regeneration/zm_bgb_talkin_bout_regeneration
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x840dbdcd, Offset: 0x1a0
 // Size: 0x1c
 function enable() {
@@ -34,7 +34,7 @@ function enable() {
 }
 
 // Namespace zm_bgb_talkin_bout_regeneration/zm_bgb_talkin_bout_regeneration
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb8de61c6, Offset: 0x1c8
 // Size: 0x3c
 function disable() {
@@ -43,7 +43,7 @@ function disable() {
 }
 
 // Namespace zm_bgb_talkin_bout_regeneration/zm_bgb_talkin_bout_regeneration
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xde4c0ea7, Offset: 0x210
 // Size: 0x146
 function function_c0c85fe() {

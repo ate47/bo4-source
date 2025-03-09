@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace demo/demo_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xefed440d, Offset: 0xc8
 // Size: 0x54
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace demo/demo_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xedd7b0d2, Offset: 0x128
 // Size: 0x14
 function private init() {
@@ -31,7 +31,7 @@ function private init() {
 }
 
 // Namespace demo/demo_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x462a067a, Offset: 0x148
 // Size: 0xa4
 function private add_bookmark(bookmark, overrideentitycamera) {
@@ -45,7 +45,7 @@ function private add_bookmark(bookmark, overrideentitycamera) {
 }
 
 // Namespace demo/demo_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x863bcd3, Offset: 0x1f8
 // Size: 0x8c
 function kill_bookmark(var_81538b15, var_f28fb772, einflictor, var_50d1e41a, overrideentitycamera) {
@@ -72,7 +72,7 @@ function event_bookmark(bookmarkname, time, var_81538b15, scoreeventpriority, ev
 }
 
 // Namespace demo/demo_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x16237347, Offset: 0x398
 // Size: 0x7c
 function bookmark(bookmarkname, time, var_81538b15, var_f28fb772, scoreeventpriority) {
@@ -81,7 +81,7 @@ function bookmark(bookmarkname, time, var_81538b15, var_f28fb772, scoreeventprio
 }
 
 // Namespace demo/demo_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x375a8b18, Offset: 0x420
 // Size: 0xcc
 function function_c6ae5fd6(bookmarkname, winningteamindex, losingteamindex) {
@@ -111,7 +111,7 @@ function initactorbookmarkparams(killtimescount, killtimemsec, killtimedelay) {
 }
 
 // Namespace demo/demo_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7aca509b, Offset: 0x560
 // Size: 0x78
 function reset_actor_bookmark_kill_times() {
@@ -161,7 +161,7 @@ function add_actor_bookmark_kill_time() {
 }
 
 // Namespace demo/demo_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb703f966, Offset: 0x700
 // Size: 0x1fc
 function watch_actor_bookmarks() {

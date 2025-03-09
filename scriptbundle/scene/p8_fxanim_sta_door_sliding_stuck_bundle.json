@@ -1,0 +1,28 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2ee18fd5b0b9d9",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_706de21887dd21c8",
+            "type": "prop",
+            "name": "doors"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_sta_door_sliding_stuck_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

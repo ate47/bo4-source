@@ -4,6 +4,6 @@
     "name": "medal_killed_dog",
     "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
     "iconsmall": "#hash_ae5818ba2ac71d5",
-    "stringref": "#hash_597c8b08cfbefe45",
+    "stringref": "#medal/killed_dog",
     "iconlarge": "#hash_ae5818ba2ac71d5"
 }

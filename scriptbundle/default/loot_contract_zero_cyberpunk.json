@@ -3,9 +3,9 @@
     "relateditemname": "#weapon/ar_damage_t8",
     "contracttitle": "#hash_77dce7635423ba68",
     "name": "loot_contract_zero_cyberpunk",
-    "var_4b258f2c": "#hash_3b86a4613844a741",
+    "hash_4b258f2c": "#hash_3b86a4613844a741",
     "contractdescription": "#hash_7e40f1e9f5f5b22",
-    "var_f15e270f": "#white",
-    "var_1c057e8c": "#hash_41a3f668aeccea04",
-    "var_e08fc162": "#hash_7c2edbadf564a94"
+    "hash_f15e270f": "#white",
+    "hash_1c057e8c": "#hash_41a3f668aeccea04",
+    "hash_e08fc162": "#hash_7c2edbadf564a94"
 }

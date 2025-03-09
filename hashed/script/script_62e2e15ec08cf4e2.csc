@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_87e11242/namespace_87e11242
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x362a9190, Offset: 0x178
 // Size: 0xa4
 function init() {
@@ -29,7 +29,7 @@ function init() {
 }
 
 // Namespace namespace_87e11242/namespace_87e11242
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6db12a52, Offset: 0x228
 // Size: 0x92
 function init_fx() {
@@ -39,7 +39,7 @@ function init_fx() {
 }
 
 // Namespace namespace_87e11242/namespace_87e11242
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x67adb172, Offset: 0x2c8
 // Size: 0x164
 function init_clientfields() {
@@ -50,7 +50,7 @@ function init_clientfields() {
 }
 
 // Namespace namespace_87e11242/namespace_87e11242
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x95d18667, Offset: 0x438
 // Size: 0xe4
 function function_eae1fc85(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -65,7 +65,7 @@ function function_eae1fc85(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_87e11242/namespace_87e11242
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa3540d02, Offset: 0x528
 // Size: 0x9c
 function function_85c61737(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -79,7 +79,7 @@ function function_85c61737(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_87e11242/namespace_87e11242
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdb3efca6, Offset: 0x5d0
 // Size: 0x90
 function function_e322771e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -89,7 +89,7 @@ function function_e322771e(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_87e11242/namespace_87e11242
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6400f78, Offset: 0x668
 // Size: 0x5c
 function function_d20d32f2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

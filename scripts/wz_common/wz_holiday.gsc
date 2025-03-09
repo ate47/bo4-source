@@ -24,7 +24,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace wz_holiday/wz_holiday
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf1658058, Offset: 0x208
 // Size: 0x1e8
 function function_af9a5cd8() {
@@ -45,7 +45,7 @@ function function_af9a5cd8() {
 }
 
 // Namespace wz_holiday/wz_holiday
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcd29c471, Offset: 0x3f8
 // Size: 0xe8
 function function_68b9a530() {
@@ -55,20 +55,20 @@ function function_68b9a530() {
     if (!level.var_65f7ae17) {
         dynents = getdynentarray("wz_holiday_props");
         foreach (dynent in dynents) {
-            function_e2a06860(dynent, 1);
+            setdynentstate(dynent, 1);
         }
     }
 }
 
 // Namespace wz_holiday/wz_holiday
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaf1b33ee, Offset: 0x4e8
 // Size: 0x6fc
 function function_c5d0e538() {
     dynents = getdynentarray("wz_holiday_props");
     if (!level.var_65f7ae17) {
         foreach (dynent in dynents) {
-            function_e2a06860(dynent, 1);
+            setdynentstate(dynent, 1);
         }
         hidemiscmodels("wz_holiday_props");
         return;

@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_tundragun/zm_weap_tundragun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbf452352, Offset: 0xf0
 // Size: 0x56
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_tundragun/zm_weap_tundragun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x230c890, Offset: 0x150
 // Size: 0x24
 function __main__() {
@@ -32,7 +32,7 @@ function __main__() {
 }
 
 // Namespace zm_weap_tundragun/zm_weap_tundragun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8ef745f0, Offset: 0x180
 // Size: 0x7c
 function on_weapon_change(s_params) {
@@ -75,7 +75,7 @@ function function_4017174b(localclientnum, w_weapon) {
 }
 
 // Namespace zm_weap_tundragun/zm_weap_tundragun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf7129a1d, Offset: 0x370
 // Size: 0x34
 function function_ac62a2fd(localclientnum) {

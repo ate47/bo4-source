@@ -10,7 +10,7 @@
     "type": "itemspawnentry",
     "hintstring": "#wz/attach_foregrip",
     "angleoffsetz": 90,
-    "var_65b3a12": 1,
+    "hash_65b3a12": 1,
     "name": "foregrip_wz_item",
     "displayname": "#wz/attach_foregrip",
     "icon": "#ui_icon_attachment_grip",

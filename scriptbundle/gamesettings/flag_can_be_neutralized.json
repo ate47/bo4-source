@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "flag_can_be_neutralized",
     "displayname": "#hash_38c692906c5f729a",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "flagCanBeNeutralized",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

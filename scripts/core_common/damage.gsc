@@ -4,7 +4,7 @@
 #namespace damage;
 
 // Namespace damage/damage
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6b18296e, Offset: 0x88
 // Size: 0x3c8
 function friendlyfirecheck(owner, attacker, forcedfriendlyfirerule) {

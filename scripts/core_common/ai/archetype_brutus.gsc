@@ -28,7 +28,7 @@ function autoexec init() {
 #/
 
 // Namespace archetypebrutus/archetype_brutus
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xf6244d97, Offset: 0x118
 // Size: 0x62
 function private function_517fd069() {
@@ -39,7 +39,7 @@ function private function_517fd069() {
 }
 
 // Namespace archetypebrutus/archetype_brutus
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf96f7663, Offset: 0x188
 // Size: 0xc
 function private function_3cdbfffd(entity) {
@@ -47,7 +47,7 @@ function private function_3cdbfffd(entity) {
 }
 
 // Namespace archetypebrutus/archetype_brutus
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x9ef6036d, Offset: 0x1a0
 // Size: 0x2c
 function private function_666b2409(entity) {
@@ -56,7 +56,7 @@ function private function_666b2409(entity) {
 }
 
 // Namespace archetypebrutus/archetype_brutus
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x80f724d1, Offset: 0x1d8
 // Size: 0x4
 function private registerbehaviorscriptfunctions() {
@@ -78,7 +78,7 @@ function private registerbehaviorscriptfunctions() {
 #/
 
 // Namespace archetypebrutus/archetype_brutus
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x4f8b4f1a, Offset: 0x248
 // Size: 0x44
 function function_f8aa76ea(entity, attribute, oldvalue, value) {

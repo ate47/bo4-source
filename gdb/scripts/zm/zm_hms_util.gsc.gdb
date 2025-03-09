@@ -22,7 +22,7 @@ STRING "<dev string:x14a>" 0x2f98
 STRING "<dev string:x38>" 0x294c
 # zm_hms_util::devgui@14
 STRING "<dev string:x4c>" 0x299c
-# zm_hms_util::devgui@3c zm_hms_util::devgui@ec zm_hms_util::function_af49a1e9@38 zm_hms_util::function_af49a1e9@4c zm_hms_util::function_af49a1e9@60
+# zm_hms_util::devgui@3c zm_hms_util::devgui@ec zm_hms_util::log_debug_event@38 zm_hms_util::log_debug_event@4c zm_hms_util::log_debug_event@60
 STRING "<dev string:x9d>" 0x29c4 0x2a74 0x2ae0 0x2af4 0x2b08
 # zm_hms_util::function_df54cbcd@44
 STRING "<dev string:xa0>" 0x2c5c
@@ -45,7 +45,7 @@ DEVBLOCK 0x202
 DEVBLOCK 0x290a
 # zm_hms_util::devgui@a
 DEVBLOCK 0x2992
-# zm_hms_util::function_af49a1e9@2a
+# zm_hms_util::log_debug_event@2a
 DEVBLOCK 0x2ad2
 # zm_hms_util::function_df54cbcd@2
 DEVBLOCK 0x2c1a

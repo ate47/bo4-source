@@ -44,7 +44,7 @@ function event_handler[gametype_start] codecallback_startgametype(eventstruct) {
 }
 
 // Namespace mp_nuketown_4/mp_nuketown_4
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x576798f, Offset: 0x470
 // Size: 0x7c
 function on_localclient_connect(localclientnum) {
@@ -57,7 +57,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace mp_nuketown_4/mp_nuketown_4
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1c72de74, Offset: 0x4f8
 // Size: 0xac
 function function_2372d00(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -71,7 +71,7 @@ function function_2372d00(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace mp_nuketown_4/mp_nuketown_4
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x735e05c4, Offset: 0x5b0
 // Size: 0x4a
 function function_379a5c89(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -79,7 +79,7 @@ function function_379a5c89(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mp_nuketown_4/mp_nuketown_4
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf22295f5, Offset: 0x608
 // Size: 0x44
 function on_gameplay_started(localclientnum) {
@@ -89,7 +89,7 @@ function on_gameplay_started(localclientnum) {
 }
 
 // Namespace mp_nuketown_4/mp_nuketown_4
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x79d8f627, Offset: 0x658
 // Size: 0x6a
 function set_dvar_float_if_unset(dvar, value) {
@@ -100,25 +100,25 @@ function set_dvar_float_if_unset(dvar, value) {
 }
 
 // Namespace mp_nuketown_4/mp_nuketown_4
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe106ae5e, Offset: 0x6d0
 // Size: 0x4a0
 function nuked_population_sign_think(localclientnum) {
-    var_80ac8621 = getent(localclientnum, "counter_tens", "targetname");
-    var_3c0c17f2 = getent(localclientnum, "counter_ones", "targetname");
+    tens_model = getent(localclientnum, "counter_tens", "targetname");
+    ones_model = getent(localclientnum, "counter_ones", "targetname");
     zone = getent(localclientnum, "nuketown_island_zone", "targetname");
     time = set_dvar_float_if_unset("scr_dial_rotate_time", "0.5");
     /#
-        level thread function_102a701c(var_80ac8621, var_3c0c17f2);
+        level thread function_102a701c(tens_model, ones_model);
     #/
     step = 36;
     ones = 0;
     tens = 0;
-    var_80ac8621 rotateroll(step, 0.05);
-    var_3c0c17f2 rotateroll(step, 0.05);
+    tens_model rotateroll(step, 0.05);
+    ones_model rotateroll(step, 0.05);
     for (;;) {
         wait 1;
-        var_c510abcc = 0;
+        dosign = 0;
         mannequins = getentarray(localclientnum, "mannequin", "targetname");
         players = [];
         foreach (player in getplayers(localclientnum)) {
@@ -145,21 +145,21 @@ function nuked_population_sign_think(localclientnum) {
             ones--;
             if (ones < 0) {
                 ones = 9;
-                var_80ac8621 rotateroll(0 - step, time);
+                tens_model rotateroll(0 - step, time);
                 tens--;
             }
-            var_3c0c17f2 rotateroll(0 - step, time);
-            var_3c0c17f2 waittill(#"rotatedone");
+            ones_model rotateroll(0 - step, time);
+            ones_model waittill(#"rotatedone");
         }
         while (level.nuketown_population > dial) {
             ones++;
             if (ones > 9) {
                 ones = 0;
-                var_80ac8621 rotateroll(step, time);
+                tens_model rotateroll(step, time);
                 tens++;
             }
-            var_3c0c17f2 rotateroll(step, time);
-            var_3c0c17f2 waittill(#"rotatedone");
+            ones_model rotateroll(step, time);
+            ones_model waittill(#"rotatedone");
             dial = ones + tens * 10;
         }
     }
@@ -181,7 +181,7 @@ function nuked_population_sign_think(localclientnum) {
 #/
 
 // Namespace mp_nuketown_4/mp_nuketown_4
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfe281b53, Offset: 0xbd0
 // Size: 0xf2
 function dom_flag_base_fx_override(flag, team) {
@@ -211,7 +211,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_nuketown_4/mp_nuketown_4
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6edfa07d, Offset: 0xcd0
 // Size: 0xf2
 function dom_flag_cap_fx_override(flag, team) {
@@ -241,7 +241,7 @@ function dom_flag_cap_fx_override(flag, team) {
 }
 
 // Namespace mp_nuketown_4/mp_nuketown_4
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb8ad7f25, Offset: 0xdd0
 // Size: 0x54
 function function_446c6000() {

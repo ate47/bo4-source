@@ -94,7 +94,7 @@ function function_b741acea() {
     var_2f8a58bb = lerpfloat(0.2, 0.4, var_d90bc041);
     var_8c110732 = randomfloatrange(var_82981c27, var_2f8a58bb);
     var_778b517c = int(var_8c110732 * level.var_bdc8b034[#"zombie"]);
-    level.var_bdc8b034[#"zombie"] = level.var_bdc8b034[#"zombie"] - var_778b517c;
+    level.var_bdc8b034[#"zombie"] -= var_778b517c;
     level.var_bdc8b034[#"zombie_dog"] = int(randomfloatrange(0.2, 0.4) * var_778b517c);
     level.var_bdc8b034[#"nova_crawler"] = var_778b517c - level.var_bdc8b034[#"zombie_dog"];
     arrayremovevalue(level.var_bdc8b034, 0, 1);

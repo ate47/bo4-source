@@ -23,7 +23,7 @@ function autoexec __init() {
 }
 
 // Namespace wz_asylum/wz_asylum
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3ce1b2fa, Offset: 0x220
 // Size: 0x4c
 function __init__() {
@@ -32,7 +32,7 @@ function __init__() {
 }
 
 // Namespace wz_asylum/wz_asylum
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2665d34, Offset: 0x278
 // Size: 0x150
 function function_6e7c4665() {
@@ -40,11 +40,11 @@ function function_6e7c4665() {
         var_8294540 = getdynentarray("asylum_toilet");
         item_world::function_1b11e73c();
         foreach (var_2eb2cfa9 in var_8294540) {
-            function_e2a06860(var_2eb2cfa9, 3);
+            setdynentstate(var_2eb2cfa9, 3);
         }
         item_world::function_4de3ca98();
         foreach (var_2eb2cfa9 in var_8294540) {
-            function_e2a06860(var_2eb2cfa9, 3);
+            setdynentstate(var_2eb2cfa9, 3);
         }
     }
 }

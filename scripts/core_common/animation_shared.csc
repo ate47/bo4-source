@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace animation/animation_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8b029361, Offset: 0x2e8
 // Size: 0xc4
 function __init__() {
@@ -36,7 +36,7 @@ function first_frame(animation, v_origin_or_ent, v_angles_or_tag) {
 }
 
 // Namespace animation/animation_shared
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0x647a1693, Offset: 0x400
 // Size: 0xfa
 function play(animation, v_origin_or_ent, v_angles_or_tag, n_rate = 1, n_blend_in = 0.2, n_blend_out = 0.2, n_lerp, b_link = 0, n_start_time = 0) {
@@ -46,7 +46,7 @@ function play(animation, v_origin_or_ent, v_angles_or_tag, n_rate = 1, n_blend_i
 }
 
 // Namespace animation/animation_shared
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0x9d25c773, Offset: 0x508
 // Size: 0x52c
 function _play(animation, v_origin_or_ent, v_angles_or_tag, n_rate = 1, n_blend_in = 0.2, n_blend_out = 0.2, n_lerp, b_link = 0, n_start_time) {
@@ -108,7 +108,7 @@ function _play(animation, v_origin_or_ent, v_angles_or_tag, n_rate = 1, n_blend_
 }
 
 // Namespace animation/animation_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x23974b15, Offset: 0xa40
 // Size: 0x4c
 function private waittill_end() {
@@ -117,7 +117,7 @@ function private waittill_end() {
 }
 
 // Namespace animation/animation_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8b9c1436, Offset: 0xa98
 // Size: 0x4e
 function _get_align_ent(e_align) {
@@ -158,7 +158,7 @@ function _get_align_pos(v_origin_or_ent = self.origin, v_angles_or_tag = isdefin
 }
 
 // Namespace animation/animation_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xaa186434, Offset: 0xca0
 // Size: 0x16a
 function play_siege(str_anim, str_shot = "default", n_rate = 1, b_loop = 0) {
@@ -177,7 +177,7 @@ function play_siege(str_anim, str_shot = "default", n_rate = 1, b_loop = 0) {
 }
 
 // Namespace animation/animation_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x43ac02ac, Offset: 0xe18
 // Size: 0x7a
 function add_notetrack_func(funcname, func) {
@@ -189,7 +189,7 @@ function add_notetrack_func(funcname, func) {
 }
 
 // Namespace animation/animation_shared
-// Params 3, eflags: 0x21 linked variadic
+// Params 3, eflags: 0x20 variadic
 // Checksum 0xd5ed63f2, Offset: 0xea0
 // Size: 0x118
 function add_global_notetrack_handler(str_note, func, ...) {
@@ -208,7 +208,7 @@ function add_global_notetrack_handler(str_note, func, ...) {
 }
 
 // Namespace animation/animation_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbbb8432c, Offset: 0xfc0
 // Size: 0x2be
 function call_notetrack_handler(str_note) {
@@ -247,7 +247,7 @@ function call_notetrack_handler(str_note) {
 }
 
 // Namespace animation/animation_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x29d62faa, Offset: 0x1288
 // Size: 0x224
 function setup_notetracks() {
@@ -266,7 +266,7 @@ function setup_notetracks() {
 }
 
 // Namespace animation/animation_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xedc9d1d0, Offset: 0x14b8
 // Size: 0xd6
 function handle_notetracks() {
@@ -285,7 +285,7 @@ function handle_notetracks() {
 }
 
 // Namespace animation/animation_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x48d325ae, Offset: 0x1598
 // Size: 0xe2
 function cracks_on(str_type) {
@@ -306,7 +306,7 @@ function cracks_on(str_type) {
 }
 
 // Namespace animation/animation_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x57546519, Offset: 0x1688
 // Size: 0xe2
 function cracks_off(str_type) {
@@ -327,7 +327,7 @@ function cracks_off(str_type) {
 }
 
 // Namespace animation/animation_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5a0bd674, Offset: 0x1778
 // Size: 0x1b2
 function cf_cracks_on(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -350,7 +350,7 @@ function cf_cracks_on(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace animation/animation_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf3c373e7, Offset: 0x1938
 // Size: 0x19a
 function cf_cracks_off(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

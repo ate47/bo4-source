@@ -31,7 +31,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_claymore/zm_weap_claymore
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd5731e47, Offset: 0x1c8
 // Size: 0x172
 function __init__() {
@@ -45,7 +45,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_claymore/zm_weap_claymore
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xafe484a9, Offset: 0x348
 // Size: 0x3e
 function function_4ed6fbd5(v_origin, v_angles, player) {
@@ -56,7 +56,7 @@ function function_4ed6fbd5(v_origin, v_angles, player) {
 }
 
 // Namespace zm_weap_claymore/zm_weap_claymore
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0xd81bb614, Offset: 0x390
 // Size: 0xd2
 function function_84072422(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -66,7 +66,7 @@ function function_84072422(inflictor, attacker, damage, flags, meansofdeath, wea
 }
 
 // Namespace zm_weap_claymore/zm_weap_claymore
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3c55d638, Offset: 0x470
 // Size: 0x1b6
 function createclaymorewatcher(watcher) {
@@ -94,7 +94,7 @@ function createclaymorewatcher(watcher) {
 }
 
 // Namespace zm_weap_claymore/zm_weap_claymore
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xfbdb400b, Offset: 0x630
 // Size: 0x4c
 function proximitydetonate(attacker, weapon, target) {
@@ -103,7 +103,7 @@ function proximitydetonate(attacker, weapon, target) {
 }
 
 // Namespace zm_weap_claymore/zm_weap_claymore
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc34a28ad, Offset: 0x688
 // Size: 0x214
 function function_1479a342(attacker, weapon) {
@@ -130,7 +130,7 @@ function function_1479a342(attacker, weapon) {
 }
 
 // Namespace zm_weap_claymore/zm_weap_claymore
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe04587ac, Offset: 0x8a8
 // Size: 0x44
 function function_62e8a3(n_count_per_network_frame = 1) {
@@ -141,7 +141,7 @@ function function_62e8a3(n_count_per_network_frame = 1) {
 }
 
 // Namespace zm_weap_claymore/zm_weap_claymore
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6f7f2b88, Offset: 0x8f8
 // Size: 0x24
 function function_aeb91d3(player) {
@@ -149,7 +149,7 @@ function function_aeb91d3(player) {
 }
 
 // Namespace zm_weap_claymore/zm_weap_claymore
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcd2908c9, Offset: 0x928
 // Size: 0x2c
 function function_c9893179(watcher, player) {
@@ -217,7 +217,7 @@ function claymore_detonation(e_planter) {
 }
 
 // Namespace zm_weap_claymore/zm_weap_claymore
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xca912d8f, Offset: 0xd38
 // Size: 0x118
 function private should_trigger_claymore(e_mine) {
@@ -235,7 +235,7 @@ function private should_trigger_claymore(e_mine) {
 }
 
 // Namespace zm_weap_claymore/zm_weap_claymore
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x837534ef, Offset: 0xe58
 // Size: 0x74
 function private delete_mines_on_death(player, ent) {
@@ -250,7 +250,7 @@ function private delete_mines_on_death(player, ent) {
 }
 
 // Namespace zm_weap_claymore/zm_weap_claymore
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x14ac1, Offset: 0xed8
 // Size: 0x334
 function function_cbb2f05b(watcher) {

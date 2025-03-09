@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_983e5028/namespace_983e5028
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7102b1ad, Offset: 0xf0
 // Size: 0x5c
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace namespace_983e5028/namespace_983e5028
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x861ef37d, Offset: 0x158
 // Size: 0xc8
 function private on_begin(var_d34d02af) {
@@ -38,7 +38,7 @@ function private on_begin(var_d34d02af) {
 }
 
 // Namespace namespace_983e5028/namespace_983e5028
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc72452a0, Offset: 0x228
 // Size: 0x36
 function private on_end(round_reset) {
@@ -47,7 +47,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace namespace_983e5028/namespace_983e5028
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xbf560cd0, Offset: 0x268
 // Size: 0x7c
 function private on_weapon_fired(params) {
@@ -59,7 +59,7 @@ function private on_weapon_fired(params) {
 }
 
 // Namespace namespace_983e5028/namespace_983e5028
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x15ccba79, Offset: 0x2f0
 // Size: 0x90
 function private function_a5a431f6() {

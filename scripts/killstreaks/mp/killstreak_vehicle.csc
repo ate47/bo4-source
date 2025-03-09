@@ -29,8 +29,8 @@ function init_killstreak(bundle) {
     if (isdefined(bundle.ksvehicle)) {
         vehicle::add_vehicletype_callback(bundle.ksvehicle, &spawned, bundle);
     }
-    if (isdefined(bundle.var_486124e6)) {
-        visionset_mgr::register_overlay_info_style_postfx_bundle(bundle.var_486124e6, 1, 1, bundle.var_486124e6);
+    if (isdefined(bundle.ksvehiclepost)) {
+        visionset_mgr::register_overlay_info_style_postfx_bundle(bundle.ksvehiclepost, 1, 1, bundle.ksvehiclepost);
     }
 }
 

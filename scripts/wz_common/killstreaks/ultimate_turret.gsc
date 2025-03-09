@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2fdf1da5, Offset: 0x260
 // Size: 0x6c
 function __init__() {
@@ -34,7 +34,7 @@ function __init__() {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x89a454bc, Offset: 0x2d8
 // Size: 0x124
 function private on_item_use(params) {
@@ -47,7 +47,7 @@ function private on_item_use(params) {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xedf370d7, Offset: 0x408
 // Size: 0x5f4
 function function_6c288c45(spawnorigin, spawnangles) {
@@ -114,7 +114,7 @@ function function_6c288c45(spawnorigin, spawnangles) {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc5717257, Offset: 0xa08
 // Size: 0x1a8
 function private function_b02e4a26(player) {
@@ -140,7 +140,7 @@ function private function_b02e4a26(player) {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x255b5fb, Offset: 0xbb8
 // Size: 0x5c
 function function_d4f9ecb(duration) {
@@ -164,7 +164,7 @@ function function_1c601b99() {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0x42833144, Offset: 0xc98
 // Size: 0x300
 function onturretdamage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
@@ -189,7 +189,7 @@ function onturretdamage(einflictor, eattacker, idamage, idflags, smeansofdeath, 
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xcc99d64a, Offset: 0xfa0
 // Size: 0x264
 function onturretdeath(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime) {
@@ -218,7 +218,7 @@ function onturretdeath(einflictor, eattacker, idamage, smeansofdeath, weapon, vd
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x117c0dc2, Offset: 0x1210
 // Size: 0x2c
 function is_staircase_up(params) {
@@ -227,7 +227,7 @@ function is_staircase_up(params) {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6db13b97, Offset: 0x1248
 // Size: 0xb4
 function function_9101e29a() {
@@ -247,7 +247,7 @@ function function_9101e29a() {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6f3f5fad, Offset: 0x1308
 // Size: 0x1c
 function get_killstreak_bundle() {
@@ -255,7 +255,7 @@ function get_killstreak_bundle() {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfad406c9, Offset: 0x1330
 // Size: 0xd6
 function is_valid_target(potential_target, friendly_team) {
@@ -275,7 +275,7 @@ function is_valid_target(potential_target, friendly_team) {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x67ca67c7, Offset: 0x1410
 // Size: 0x348
 function function_fefefcc4() {
@@ -321,7 +321,7 @@ function function_fefefcc4() {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7386ec8, Offset: 0x1760
 // Size: 0x102
 function function_9d86d74c(enemy) {
@@ -337,7 +337,7 @@ function function_9d86d74c(enemy) {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9b5a9584, Offset: 0x1870
 // Size: 0x154
 function function_2034705c(bundle) {
@@ -350,7 +350,7 @@ function function_2034705c(bundle) {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1c1a2d87, Offset: 0x19d0
 // Size: 0x8a
 function function_fc58f46f() {
@@ -381,7 +381,7 @@ function get_target_offset(target) {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6a443ff3, Offset: 0x1ad8
 // Size: 0xe74
 function turretscanning() {
@@ -525,7 +525,7 @@ function turretscanning() {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x263aa743, Offset: 0x2958
 // Size: 0x3a
 function turretallowfriendlyfiredamage(einflictor, eattacker, smeansofdeath, weapon) {

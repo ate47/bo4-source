@@ -2,14 +2,14 @@
     "weakpoints": [
         {
             "type": "#weakpoint",
-            "var_51e8b151": "tag_back_ws",
+            "hash_51e8b151": "tag_back_ws",
             "activebydefault": 1,
             "hitradius": 20,
             "health": 0.05
         },
         {
             "type": "#weakpoint",
-            "var_51e8b151": "tag_chest_ws",
+            "hash_51e8b151": "tag_chest_ws",
             "activebydefault": 1,
             "hitradius": 20,
             "health": 0.05
@@ -19,5 +19,5 @@
     "model": "#c_t8_zmb_dlc1_werewolf_fb1",
     "type": "characterweakpointsettings",
     "name": "c_t8_zmb_werewolf_weakpoint_def",
-    "var_96a09826": 2
+    "hash_96a09826": 2
 }

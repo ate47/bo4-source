@@ -8,7 +8,7 @@
 
 // Namespace archetypeblightfather/archetype_blight_father
 // Params 0, eflags: 0x2
-// Checksum 0xede555fe, Offset: 0x90
+// Checksum 0xa333b4df, Offset: 0x90
 // Size: 0x54
 function autoexec main() {
     registerbehaviorscriptfunctions();
@@ -17,8 +17,8 @@ function autoexec main() {
 }
 
 // Namespace archetypeblightfather/archetype_blight_father
-// Params 0, eflags: 0x5 linked
-// Checksum 0x235879c2, Offset: 0xf0
+// Params 0, eflags: 0x4
+// Checksum 0x9fca6d11, Offset: 0xf0
 // Size: 0x4a
 function private function_a27b7fcf() {
     blackboard::createblackboardforentity(self);
@@ -27,8 +27,8 @@ function private function_a27b7fcf() {
 }
 
 // Namespace archetypeblightfather/archetype_blight_father
-// Params 1, eflags: 0x5 linked
-// Checksum 0x96cd0307, Offset: 0x148
+// Params 1, eflags: 0x4
+// Checksum 0xfcc62e12, Offset: 0x148
 // Size: 0xae
 function private function_aefef9ae(entity) {
     entity.__blackboard = undefined;
@@ -41,7 +41,7 @@ function private function_aefef9ae(entity) {
 }
 
 // Namespace archetypeblightfather/archetype_blight_father
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x80f724d1, Offset: 0x200
 // Size: 0x4
 function private registerbehaviorscriptfunctions() {
@@ -50,7 +50,7 @@ function private registerbehaviorscriptfunctions() {
 
 // Namespace archetypeblightfather/archetype_blight_father
 // Params 2, eflags: 0x0
-// Checksum 0x2a8fb14, Offset: 0x210
+// Checksum 0x7fae2821, Offset: 0x210
 // Size: 0xa8
 function spawnblightfather(spawner, location) {
     spawner.script_forcespawn = 1;
@@ -69,15 +69,15 @@ function spawnblightfather(spawner, location) {
 
 // Namespace archetypeblightfather/archetype_blight_father
 // Params 1, eflags: 0x4
-// Checksum 0x1a135272, Offset: 0x2c0
+// Checksum 0xbee31ba2, Offset: 0x2c0
 // Size: 0x24
 function private function_ac921de9(entity) {
     entity melee();
 }
 
 // Namespace archetypeblightfather/archetype_blight_father
-// Params 4, eflags: 0x1 linked
-// Checksum 0x62c880c1, Offset: 0x2f0
+// Params 4, eflags: 0x0
+// Checksum 0xa21bc448, Offset: 0x2f0
 // Size: 0x58
 function function_3e8300e9(entity, attribute, oldvalue, value) {
     if (isdefined(entity.var_80cf70fb)) {
@@ -86,8 +86,8 @@ function function_3e8300e9(entity, attribute, oldvalue, value) {
 }
 
 // Namespace archetypeblightfather/archetype_blight_father
-// Params 4, eflags: 0x1 linked
-// Checksum 0xc200d225, Offset: 0x350
+// Params 4, eflags: 0x0
+// Checksum 0x43660779, Offset: 0x350
 // Size: 0x58
 function function_b95978a7(entity, attribute, oldvalue, value) {
     if (isdefined(entity.var_11a49434)) {

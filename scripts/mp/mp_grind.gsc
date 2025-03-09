@@ -17,7 +17,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_grind/mp_grind
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa9d77fe, Offset: 0x1e8
 // Size: 0x224
 function function_89088577() {
@@ -32,7 +32,7 @@ function function_89088577() {
 }
 
 // Namespace mp_grind/mp_grind
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6238c494, Offset: 0x418
 // Size: 0x9c
 function spawnkilltrigger() {
@@ -43,7 +43,7 @@ function spawnkilltrigger() {
 }
 
 // Namespace mp_grind/mp_grind
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdf76cb91, Offset: 0x4c0
 // Size: 0xa8
 function watchkilltrigger() {

@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace load/load_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4c3e5558, Offset: 0x100
 // Size: 0x9c
 function __init__() {
@@ -47,7 +47,7 @@ function __init__() {
 #/
 
 // Namespace load/load_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2afb7175, Offset: 0x1d8
 // Size: 0xa8
 function apply_mature_filter() {

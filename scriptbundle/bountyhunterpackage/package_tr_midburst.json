@@ -18,18 +18,18 @@
             "attachmentlist": "grip+extclip+uber"
         }
     ],
-    "var_ef921c3c": 1,
+    "hash_ef921c3c": 1,
     "configstringfiletype": "scriptbundle",
     "type": "bountyhunterpackage",
-    "var_85d7cf08": 1,
+    "hash_85d7cf08": 1,
     "refillcost": 250,
     "name": "package_tr_midburst",
     "packagetype": "primary",
     "purchasecost": 1500,
     "startammo": 1,
-    "var_673a16ad": 1,
-    "var_11b09a45": 3,
-    "var_741010b5": 1,
-    "var_782dbf79": 1,
-    "var_767b7337": 1
+    "hash_673a16ad": 1,
+    "hash_11b09a45": 3,
+    "hash_741010b5": 1,
+    "hash_782dbf79": 1,
+    "hash_767b7337": 1
 }

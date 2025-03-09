@@ -38,7 +38,8 @@ function private drawtraversal(traversal, entity, animation, mocompanimblendoutt
     currentposition = traversal.startposition;
     nextposition = currentposition;
     segments = 0;
-    for (segmenttime = 0; segmenttime <= animlength; segmenttime += float(function_60d95f53()) / 1000) {
+    segmenttime = 0;
+    while (segmenttime <= animlength) {
         nexttime = segmenttime + float(function_60d95f53()) / 1000;
         if (nexttime > animlength) {
             nexttime = animlength;
@@ -49,6 +50,7 @@ function private drawtraversal(traversal, entity, animation, mocompanimblendoutt
             recordline(currentposition, nextposition, (1, 0.5, 0), "<dev string:x38>", entity);
         #/
         currentposition = nextposition;
+        segmenttime += float(function_60d95f53()) / 1000;
     }
     /#
         recordsphere(nextposition, 2, (1, 0, 0), "<dev string:x38>", entity);
@@ -94,7 +96,8 @@ function private drawtraversalsection(section, entity, animation, mocompanimblen
     nextposition = currentposition;
     segments = 0;
     deltatoendtotal = (0, 0, 0);
-    for (segmenttime = section.starttime; segmenttime <= section.endtime; segmenttime += float(function_60d95f53()) / 1000) {
+    segmenttime = section.starttime;
+    while (segmenttime <= section.endtime) {
         nexttime = segmenttime + float(function_60d95f53()) / 1000;
         if (nexttime > section.endtime) {
             nexttime = section.endtime;
@@ -117,11 +120,12 @@ function private drawtraversalsection(section, entity, animation, mocompanimblen
             #/
         }
         currentposition = nextposition;
+        segmenttime += float(function_60d95f53()) / 1000;
     }
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 9, eflags: 0x5 linked
+// Params 9, eflags: 0x4
 // Checksum 0x515387df, Offset: 0xe98
 // Size: 0x822
 function private calculatetraveralsection(entity, traversal, animation, starttime, endtime, startposition, endposition, startangles, timescale = 1) {
@@ -210,7 +214,7 @@ function private calculatetraveralsection(entity, traversal, animation, starttim
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x33bf7497, Offset: 0x16c8
 // Size: 0x5a0
 function calculatepivotoriginfromedge(entity, mantlenode, traversalstart) {
@@ -271,7 +275,7 @@ function calculatepivotoriginfromedge(entity, mantlenode, traversalstart) {
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xc90bd6ab, Offset: 0x1c70
 // Size: 0x54
 function function_5f0e6de2(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -279,7 +283,7 @@ function function_5f0e6de2(entity, mocompanim, mocompanimblendouttime, mocompani
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x876929e, Offset: 0x1cd0
 // Size: 0x56c
 function mocomptraversalproceduralinit(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration, timescale = 1) {
@@ -325,7 +329,7 @@ function mocomptraversalproceduralinit(entity, mocompanim, mocompanimblendouttim
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xbda29094, Offset: 0x2248
 // Size: 0x54
 function function_41323d2(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -333,7 +337,7 @@ function function_41323d2(entity, mocompanim, mocompanimblendouttime, mocompanim
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xe3b8cdcb, Offset: 0x22a8
 // Size: 0x93c
 function mocomptraversalproceduralpivotinit(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration, timescale = 1) {
@@ -408,7 +412,7 @@ function mocomptraversalproceduralpivotinit(entity, mocompanim, mocompanimblendo
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x22667918, Offset: 0x2bf0
 // Size: 0x5ac
 function mocomptraversalproceduralpivotupdate(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -469,7 +473,7 @@ function mocomptraversalproceduralpivotupdate(entity, mocompanim, mocompanimblen
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x63c198a7, Offset: 0x31a8
 // Size: 0x13c
 function mocomptraversalproceduralpivotterminate(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -510,7 +514,7 @@ function autoexec initadjusttocoverparams() {
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 19, eflags: 0x5 linked
+// Params 19, eflags: 0x4
 // Checksum 0xdd882367, Offset: 0x3990
 // Size: 0x24a
 function private _addadjusttocover(archetype, node, stance, rot2, rot32, rot3, rot36, rot6, rot69, rot9, rot98, rot8, rot87, rot7, rot47, rot4, rot14, rot1, rot21) {
@@ -544,7 +548,7 @@ function private _addadjusttocover(archetype, node, stance, rot2, rot32, rot3, r
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x986e7389, Offset: 0x3be8
 // Size: 0x3ae
 function private _getadjusttocoverrotation(archetype, node, stance, angletonode) {
@@ -623,7 +627,7 @@ function private debuglocoexplosion(entity) {
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x55365d70, Offset: 0x4110
 // Size: 0xf2
 function private mocompflankstandinit(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -637,7 +641,7 @@ function private mocompflankstandinit(entity, mocompanim, mocompanimblendouttime
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x1a66cf6e, Offset: 0x4210
 // Size: 0xbc
 function private mocomplocoexplosioninit(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -651,7 +655,7 @@ function private mocomplocoexplosioninit(entity, mocompanim, mocompanimblendoutt
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x3342e528, Offset: 0x42d8
 // Size: 0x276
 function private mocompadjusttocoverinit(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -675,7 +679,7 @@ function private mocompadjusttocoverinit(entity, mocompanim, mocompanimblendoutt
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0xc4b59665, Offset: 0x4558
 // Size: 0x354
 function private mocompadjusttocoverupdate(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -705,7 +709,7 @@ function private mocompadjusttocoverupdate(entity, mocompanim, mocompanimblendou
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0xec211fec, Offset: 0x48b8
 // Size: 0x106
 function private mocompadjusttocoverterminate(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -728,7 +732,7 @@ function private mocompadjusttocoverterminate(entity, mocompanim, mocompanimblen
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0xde35fefd, Offset: 0x49c8
 // Size: 0x194
 function private function_82b9d7b7(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -745,7 +749,7 @@ function private function_82b9d7b7(entity, mocompanim, mocompanimblendouttime, m
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x7dd6e6ef, Offset: 0x4b68
 // Size: 0x92
 function function_7ea5e21f(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -757,7 +761,7 @@ function function_7ea5e21f(entity, mocompanim, mocompanimblendouttime, mocompani
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x4866ea0a, Offset: 0x4c08
 // Size: 0xac
 function function_8def77d1(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -768,7 +772,7 @@ function function_8def77d1(entity, mocompanim, mocompanimblendouttime, mocompani
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x208d10df, Offset: 0x4cc0
 // Size: 0x84
 function function_59fe75e2(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -778,7 +782,7 @@ function function_59fe75e2(entity, mocompanim, mocompanimblendouttime, mocompani
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xe7d9a50, Offset: 0x4d50
 // Size: 0x84
 function function_8559a6cd(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -788,7 +792,7 @@ function function_8559a6cd(entity, mocompanim, mocompanimblendouttime, mocompani
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xb2bac101, Offset: 0x4de0
 // Size: 0x74
 function function_4b95cde(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -798,7 +802,7 @@ function function_4b95cde(entity, mocompanim, mocompanimblendouttime, mocompanim
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x1338ec49, Offset: 0x4e60
 // Size: 0xbc
 function private mocompignorepainfaceenemyinit(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -812,7 +816,7 @@ function private mocompignorepainfaceenemyinit(entity, mocompanim, mocompanimble
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x71a458e4, Offset: 0x4f28
 // Size: 0xac
 function private mocompignorepainfaceenemyupdate(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
@@ -824,7 +828,7 @@ function private mocompignorepainfaceenemyupdate(entity, mocompanim, mocompanimb
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x34437d03, Offset: 0x4fe0
 // Size: 0x3a
 function private mocompignorepainfaceenemyterminate(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {

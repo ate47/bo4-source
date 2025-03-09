@@ -7,7 +7,7 @@
 class cinitial_black : cluielem {
 
     // Namespace cinitial_black/initial_black
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x5367638, Offset: 0x258
     // Size: 0x2c
     function open(localclientnum) {
@@ -15,7 +15,7 @@ class cinitial_black : cluielem {
     }
 
     // Namespace cinitial_black/initial_black
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x28a47fc7, Offset: 0x228
     // Size: 0x24
     function function_fa582112(localclientnum) {
@@ -23,7 +23,7 @@ class cinitial_black : cluielem {
     }
 
     // Namespace cinitial_black/initial_black
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x6e533ee2, Offset: 0x1f8
     // Size: 0x24
     function register_clientside(uid) {
@@ -31,7 +31,7 @@ class cinitial_black : cluielem {
     }
 
     // Namespace cinitial_black/initial_black
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xd89208d9, Offset: 0x1c8
     // Size: 0x24
     function setup_clientfields(uid) {
@@ -41,7 +41,7 @@ class cinitial_black : cluielem {
 }
 
 // Namespace initial_black/initial_black
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3295262c, Offset: 0xa0
 // Size: 0x40
 function register(uid) {

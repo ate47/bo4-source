@@ -11,10 +11,10 @@
                     ],
                     "name": "shot 1",
                     "aligntarget": "tag_align_red_boss",
-                    "var_29563fd6": -90,
-                    "var_be60a82b": -50,
-                    "var_922b4fc5": -70,
-                    "var_3e692842": -70
+                    "hash_29563fd6": -90,
+                    "hash_be60a82b": -50,
+                    "hash_922b4fc5": -70,
+                    "hash_3e692842": -70
                 }
             ],
             "model": "#hash_61790877a7f8e580",

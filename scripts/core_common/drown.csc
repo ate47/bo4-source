@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace drown/drown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3fd12256, Offset: 0x118
 // Size: 0xbc
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace drown/drown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5a7a0b71, Offset: 0x1e0
 // Size: 0x53c
 function setup_radius_values() {
@@ -58,7 +58,7 @@ function setup_radius_values() {
 }
 
 // Namespace drown/drown
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5f17167b, Offset: 0x728
 // Size: 0x54
 function player_spawned(localclientnum) {
@@ -70,7 +70,7 @@ function player_spawned(localclientnum) {
 }
 
 // Namespace drown/drown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x25406274, Offset: 0x788
 // Size: 0x3e
 function player_init_drown_values() {
@@ -83,7 +83,7 @@ function player_init_drown_values() {
 }
 
 // Namespace drown/drown
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8e9281a5, Offset: 0x7d0
 // Size: 0x3c
 function player_watch_drown_shutdown(localclientnum) {
@@ -92,7 +92,7 @@ function player_watch_drown_shutdown(localclientnum) {
 }
 
 // Namespace drown/drown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4410ef61, Offset: 0x818
 // Size: 0x7e
 function function_1a9dc208() {
@@ -105,7 +105,7 @@ function function_1a9dc208() {
 }
 
 // Namespace drown/drown
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc9b3ee7e, Offset: 0x8a0
 // Size: 0xaa
 function enable_drown(localclientnum, stage) {
@@ -118,7 +118,7 @@ function enable_drown(localclientnum, stage) {
 }
 
 // Namespace drown/drown
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1634943a, Offset: 0x958
 // Size: 0x24
 function disable_drown(localclientnum) {
@@ -126,7 +126,7 @@ function disable_drown(localclientnum) {
 }
 
 // Namespace drown/drown
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x886d0a11, Offset: 0x988
 // Size: 0x35e
 function player_drown_fx(localclientnum, stage) {
@@ -160,7 +160,7 @@ function player_drown_fx(localclientnum, stage) {
 }
 
 // Namespace drown/drown
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfdda2f56, Offset: 0xcf0
 // Size: 0x1f4
 function player_fade_out_drown_fx(localclientnum) {
@@ -184,7 +184,7 @@ function player_fade_out_drown_fx(localclientnum) {
 }
 
 // Namespace drown/drown
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf74932cf, Offset: 0xef0
 // Size: 0xb4
 function drown_stage_callback(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

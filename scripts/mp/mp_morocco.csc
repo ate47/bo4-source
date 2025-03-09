@@ -23,7 +23,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_morocco/mp_morocco
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4b5abc0a, Offset: 0x278
 // Size: 0xf2
 function dom_flag_base_fx_override(flag, team) {
@@ -53,7 +53,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_morocco/mp_morocco
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8970777a, Offset: 0x378
 // Size: 0xf2
 function dom_flag_cap_fx_override(flag, team) {

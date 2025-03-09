@@ -7,15 +7,15 @@
 
 // Namespace zombie_vortex/zombie_vortex
 // Params 0, eflags: 0x2
-// Checksum 0xb36f33fa, Offset: 0x1e0
+// Checksum 0xf45669a1, Offset: 0x1e0
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"vortex", &__init__, undefined, undefined);
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 0, eflags: 0x1 linked
-// Checksum 0x8824c816, Offset: 0x228
+// Params 0, eflags: 0x0
+// Checksum 0xb8f532c2, Offset: 0x228
 // Size: 0x114
 function __init__() {
     visionset_mgr::register_visionset_info("zm_idgun_vortex" + "_visionset", 1, 30, undefined, "zm_idgun_vortex");
@@ -25,8 +25,8 @@ function __init__() {
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 7, eflags: 0x1 linked
-// Checksum 0x138595f9, Offset: 0x348
+// Params 7, eflags: 0x0
+// Checksum 0xdd896f, Offset: 0x348
 // Size: 0x1dc
 function start_vortex(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self endon(#"death");
@@ -55,8 +55,8 @@ function start_vortex(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 2, eflags: 0x1 linked
-// Checksum 0x6b4a5b90, Offset: 0x530
+// Params 2, eflags: 0x0
+// Checksum 0x1b07d2c2, Offset: 0x530
 // Size: 0x60
 function vortex_shake_and_rumble(localclientnum, v_vortex_origin) {
     self endon(#"vortex_stop");
@@ -67,8 +67,8 @@ function vortex_shake_and_rumble(localclientnum, v_vortex_origin) {
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 7, eflags: 0x1 linked
-// Checksum 0xbaad6b57, Offset: 0x598
+// Params 7, eflags: 0x0
+// Checksum 0x6a6ee0c8, Offset: 0x598
 // Size: 0x8c
 function vision_blur(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
@@ -79,8 +79,8 @@ function vision_blur(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 }
 
 // Namespace zombie_vortex/zombie_vortex
-// Params 5, eflags: 0x1 linked
-// Checksum 0x8dba4a53, Offset: 0x630
+// Params 5, eflags: 0x0
+// Checksum 0x7aba452b, Offset: 0x630
 // Size: 0x224
 function function_2dd3c5bc(localclientnum, vortex_fx_handle, vposition, fx_vortex_explosion, n_vortex_time) {
     e_player = function_5c10bd79(localclientnum);

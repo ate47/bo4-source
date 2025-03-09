@@ -15,10 +15,10 @@
             "model": "#spawner_zm_tiger",
             "type": "actor",
             "name": "actor 1",
-            "var_29563fd6": 90.0714,
-            "var_be60a82b": -112,
-            "var_922b4fc5": -3648.15,
-            "var_3e692842": -14
+            "hash_29563fd6": 90.07141,
+            "hash_be60a82b": -112,
+            "hash_922b4fc5": -3648.15,
+            "hash_3e692842": -14
         }
     ],
     "scenetype": "scene",

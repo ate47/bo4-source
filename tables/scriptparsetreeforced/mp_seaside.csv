@@ -1,0 +1,7 @@
+vm,name
+server,#scripts/core_common/ai/archetype_blight_father_interface.gsc
+server,#scripts/core_common/ai/archetype_blight_father.gsc
+server,#scripts/core_common/ai/archetype_zombie_interface.gsc
+server,#scripts/core_common/ai/zombie.gsc
+client,#scripts/core_common/ai/archetype_blight_father.csc
+client,#scripts/core_common/ai/zombie.csc

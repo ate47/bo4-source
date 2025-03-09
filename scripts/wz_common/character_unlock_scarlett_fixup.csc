@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 // Checksum 0x9df602cb, Offset: 0xc8
 // Size: 0x64
 function __init__() {
-    character_unlock_fixup::register_character_unlock(#"scarlett_unlock", #"hash_6f105a897d64112", #"cu13_item", &function_d95e620c, #"hash_698918780b4406f1");
+    character_unlock_fixup::register_character_unlock(#"scarlett_unlock", #"prt_wz_scarlett", #"cu13_item", &function_d95e620c, #"hash_698918780b4406f1");
 }
 
 // Namespace character_unlock_scarlett_fixup/character_unlock_scarlett_fixup

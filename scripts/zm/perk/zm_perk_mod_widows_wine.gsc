@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_widows_wine/zm_perk_mod_widows_wine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x671e82df, Offset: 0xd8
 // Size: 0x14
 function __init__() {
@@ -20,7 +20,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_widows_wine/zm_perk_mod_widows_wine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x10305236, Offset: 0xf8
 // Size: 0x94
 function enable_widows_wine_perk_for_level() {
@@ -29,7 +29,7 @@ function enable_widows_wine_perk_for_level() {
 }
 
 // Namespace zm_perk_mod_widows_wine/zm_perk_mod_widows_wine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x37650e36, Offset: 0x198
 // Size: 0x10
 function widows_wine_perk_activate() {
@@ -37,7 +37,7 @@ function widows_wine_perk_activate() {
 }
 
 // Namespace zm_perk_mod_widows_wine/zm_perk_mod_widows_wine
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x439b4043, Offset: 0x1b0
 // Size: 0x36
 function widows_wine_perk_lost(b_pause, str_perk, str_result, n_slot) {

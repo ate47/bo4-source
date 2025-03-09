@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace status_effect_slowed/status_effect_slowed
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x712371f0, Offset: 0xd0
 // Size: 0x6c
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace status_effect_slowed/status_effect_slowed
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe6f9bad5, Offset: 0x148
 // Size: 0x9e
 function slowed_apply(var_756fda07, weapon, applicant) {
@@ -38,7 +38,7 @@ function slowed_apply(var_756fda07, weapon, applicant) {
 }
 
 // Namespace status_effect_slowed/status_effect_slowed
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe3af41b7, Offset: 0x1f0
 // Size: 0x5e
 function function_6fe78d40() {

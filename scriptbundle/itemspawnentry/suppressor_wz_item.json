@@ -9,7 +9,7 @@
     "model": "#attach_t8_wz_pickup_suppressor",
     "type": "itemspawnentry",
     "hintstring": "#wz/attach_suppressed",
-    "var_65b3a12": 1,
+    "hash_65b3a12": 1,
     "name": "suppressor_wz_item",
     "displayname": "#wz/attach_suppressed",
     "icon": "#ui_icon_attachment_supressor",

@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe0843e7a, Offset: 0x108
 // Size: 0x64
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x5e5f1c1f, Offset: 0x178
 // Size: 0xb4
 function setplayerburning(duration, interval, damageperinterval, attacker, weapon) {
@@ -33,7 +33,7 @@ function setplayerburning(duration, interval, damageperinterval, attacker, weapo
 }
 
 // Namespace burnplayer/burnplayer
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xc19f31c7, Offset: 0x238
 // Size: 0xc4
 function takingburndamage(eattacker, weapon, smeansofdeath) {
@@ -51,7 +51,7 @@ function takingburndamage(eattacker, weapon, smeansofdeath) {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x40310b31, Offset: 0x308
 // Size: 0x5c
 function watchburnfinished() {
@@ -61,7 +61,7 @@ function watchburnfinished() {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x361396f3, Offset: 0x370
 // Size: 0x66
 function watchburntimer(duration) {
@@ -72,7 +72,7 @@ function watchburntimer(duration) {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xe2a07a4b, Offset: 0x3e0
 // Size: 0xd2
 function watchburndamage(interval, damage, attacker, weapon) {
@@ -89,7 +89,7 @@ function watchburndamage(interval, damage, attacker, weapon) {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x43fffef2, Offset: 0x4c0
 // Size: 0x74
 function watchforwater() {

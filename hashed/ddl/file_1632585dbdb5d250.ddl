@@ -191,7 +191,7 @@ version 35 {
     };
 
     // idx 15 members 6 size 0x108
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x20
         uint xp;
         // offset 0x20, size 0x20
@@ -536,18 +536,18 @@ version 35 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -558,7 +558,7 @@ version 35 {
     // offset 0x6d8, size 0x140
     string(40) hash_3ddb4b48b795bd91;
     // offset 0x818, size 0x318
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0xb30, size 0x8
     byte bo_pass_tier_boost;
     // offset 0xb38, size 0x8
@@ -771,7 +771,7 @@ version 34 {
     };
 
     // idx 15 members 6 size 0x108
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x20
         uint xp;
         // offset 0x20, size 0x20
@@ -1112,18 +1112,18 @@ version 34 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -1134,7 +1134,7 @@ version 34 {
     // offset 0x6d8, size 0x140
     string(40) hash_3ddb4b48b795bd91;
     // offset 0x818, size 0x318
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0xb30, size 0x8
     byte bo_pass_tier_boost;
     // offset 0xb38, size 0x8
@@ -1347,7 +1347,7 @@ version 33 {
     };
 
     // idx 15 members 6 size 0x108
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x20
         uint xp;
         // offset 0x20, size 0x20
@@ -1686,18 +1686,18 @@ version 33 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -1708,7 +1708,7 @@ version 33 {
     // offset 0x6d8, size 0x140
     string(40) hash_3ddb4b48b795bd91;
     // offset 0x818, size 0x318
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0xb30, size 0x8
     byte bo_pass_tier_boost;
     // offset 0xb38, size 0x8
@@ -1919,7 +1919,7 @@ version 32 {
     };
 
     // idx 15 members 6 size 0x108
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x20
         uint xp;
         // offset 0x20, size 0x20
@@ -2254,18 +2254,18 @@ version 32 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -2276,7 +2276,7 @@ version 32 {
     // offset 0x6d8, size 0x140
     string(40) hash_3ddb4b48b795bd91;
     // offset 0x818, size 0x318
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0xb30, size 0x8
     byte bo_pass_tier_boost;
     // offset 0xb38, size 0x8
@@ -2489,7 +2489,7 @@ version 31 {
     };
 
     // idx 15 members 6 size 0x108
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x20
         uint xp;
         // offset 0x20, size 0x20
@@ -2824,18 +2824,18 @@ version 31 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -2844,7 +2844,7 @@ version 31 {
     // offset 0x0, size 0x6d8
     hash_6580ccf5f8a0ef6 dml;
     // offset 0x6d8, size 0x318
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0x9f0, size 0x8
     byte bo_pass_tier_boost;
     // offset 0x9f8, size 0x8
@@ -3057,7 +3057,7 @@ version 30 {
     };
 
     // idx 15 members 6 size 0x108
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x20
         uint xp;
         // offset 0x20, size 0x20
@@ -3390,18 +3390,18 @@ version 30 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -3410,7 +3410,7 @@ version 30 {
     // offset 0x0, size 0x6d8
     hash_6580ccf5f8a0ef6 dml;
     // offset 0x6d8, size 0x318
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0x9f0, size 0x8
     byte bo_pass_tier_boost;
     // offset 0x9f8, size 0x8
@@ -3623,7 +3623,7 @@ version 29 {
     };
 
     // idx 15 members 6 size 0x108
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x20
         uint xp;
         // offset 0x20, size 0x20
@@ -3957,18 +3957,18 @@ version 29 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -3977,7 +3977,7 @@ version 29 {
     // offset 0x0, size 0x6d8
     hash_6580ccf5f8a0ef6 dml;
     // offset 0x6d8, size 0x318
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0x9f0, size 0x8
     byte bo_pass_tier_boost;
     // offset 0x9f8, size 0x8
@@ -4190,7 +4190,7 @@ version 28 {
     };
 
     // idx 15 members 5 size 0xe8
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x20
         uint contractid;
         // offset 0x20, size 0x8
@@ -4522,18 +4522,18 @@ version 28 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -4542,7 +4542,7 @@ version 28 {
     // offset 0x0, size 0x6d8
     hash_6580ccf5f8a0ef6 dml;
     // offset 0x6d8, size 0x2b8
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0x990, size 0x8
     byte bo_pass_tier_boost;
     // offset 0x998, size 0x8
@@ -4755,7 +4755,7 @@ version 27 {
     };
 
     // idx 15 members 5 size 0xe8
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x20
         uint contractid;
         // offset 0x20, size 0x8
@@ -5082,18 +5082,18 @@ version 27 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -5102,7 +5102,7 @@ version 27 {
     // offset 0x0, size 0x6d8
     hash_6580ccf5f8a0ef6 dml;
     // offset 0x6d8, size 0x2b8
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0x990, size 0x8
     byte bo_pass_tier_boost;
     // offset 0x998, size 0x8
@@ -5315,7 +5315,7 @@ version 26 {
     };
 
     // idx 15 members 4 size 0xc8
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x8
         uint:3 contractgamemode;
         // offset 0x8, size 0x40
@@ -5640,18 +5640,18 @@ version 26 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -5660,7 +5660,7 @@ version 26 {
     // offset 0x0, size 0x6d8
     hash_6580ccf5f8a0ef6 dml;
     // offset 0x6d8, size 0x258
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0x930, size 0x8
     byte bo_pass_tier_boost;
     // offset 0x938, size 0x8
@@ -5873,7 +5873,7 @@ version 25 {
     };
 
     // idx 15 members 4 size 0xc8
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x8
         uint:3 contractgamemode;
         // offset 0x8, size 0x40
@@ -6198,18 +6198,18 @@ version 25 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -6218,7 +6218,7 @@ version 25 {
     // offset 0x0, size 0x6d8
     hash_6580ccf5f8a0ef6 dml;
     // offset 0x6d8, size 0x258
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0x930, size 0x8
     byte bo_pass_tier_boost;
     // offset 0x938, size 0x8
@@ -6427,7 +6427,7 @@ version 24 {
     };
 
     // idx 15 members 4 size 0xc8
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x8
         uint:3 contractgamemode;
         // offset 0x8, size 0x40
@@ -6751,18 +6751,18 @@ version 24 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -6771,7 +6771,7 @@ version 24 {
     // offset 0x0, size 0x6d8
     hash_6580ccf5f8a0ef6 dml;
     // offset 0x6d8, size 0x258
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0x930, size 0x8
     byte bo_pass_tier_boost;
     // offset 0x938, size 0x8
@@ -6980,7 +6980,7 @@ version 23 {
     };
 
     // idx 15 members 4 size 0xc8
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x8
         uint:3 contractgamemode;
         // offset 0x8, size 0x40
@@ -7294,18 +7294,18 @@ version 23 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -7314,7 +7314,7 @@ version 23 {
     // offset 0x0, size 0x6d8
     hash_6580ccf5f8a0ef6 dml;
     // offset 0x6d8, size 0x258
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0x930, size 0x8
     byte bo_pass_tier_boost;
     // offset 0x938, size 0x8
@@ -7523,7 +7523,7 @@ version 22 {
     };
 
     // idx 15 members 4 size 0xc8
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x8
         uint:3 contractgamemode;
         // offset 0x8, size 0x40
@@ -7836,18 +7836,18 @@ version 22 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -7856,7 +7856,7 @@ version 22 {
     // offset 0x0, size 0x6d8
     hash_6580ccf5f8a0ef6 dml;
     // offset 0x6d8, size 0x258
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0x930, size 0x8
     byte bo_pass_tier_boost;
     // offset 0x938, size 0x8
@@ -8065,7 +8065,7 @@ version 21 {
     };
 
     // idx 15 members 5 size 0x108
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x40
         xhash hash_6bcde715574b1e8;
         // offset 0x40, size 0x8
@@ -8380,18 +8380,18 @@ version 21 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -8400,7 +8400,7 @@ version 21 {
     // offset 0x0, size 0x6d8
     hash_6580ccf5f8a0ef6 dml;
     // offset 0x6d8, size 0x318
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0x9f0, size 0x8
     byte bo_pass_tier_boost;
     // offset 0x9f8, size 0x8
@@ -8609,7 +8609,7 @@ version 20 {
     };
 
     // idx 15 members 5 size 0x108
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x40
         xhash hash_6bcde715574b1e8;
         // offset 0x40, size 0x8
@@ -8922,18 +8922,18 @@ version 20 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -8942,7 +8942,7 @@ version 20 {
     // offset 0x0, size 0x6d8
     hash_6580ccf5f8a0ef6 dml;
     // offset 0x6d8, size 0x318
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0x9f0, size 0x8
     byte bo_pass_tier_boost;
     // offset 0x9f8, size 0x8
@@ -9151,7 +9151,7 @@ version 19 {
     };
 
     // idx 15 members 5 size 0x108
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x40
         xhash hash_6bcde715574b1e8;
         // offset 0x40, size 0x8
@@ -9462,18 +9462,18 @@ version 19 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -9482,7 +9482,7 @@ version 19 {
     // offset 0x0, size 0x6d8
     hash_6580ccf5f8a0ef6 dml;
     // offset 0x6d8, size 0x318
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0x9f0, size 0x8
     byte bo_pass_tier_boost;
     // offset 0x9f8, size 0x8
@@ -9691,7 +9691,7 @@ version 18 {
     };
 
     // idx 15 members 5 size 0x108
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x40
         xhash hash_6bcde715574b1e8;
         // offset 0x40, size 0x8
@@ -10002,18 +10002,18 @@ version 18 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -10022,7 +10022,7 @@ version 18 {
     // offset 0x0, size 0x6d8
     hash_6580ccf5f8a0ef6 dml;
     // offset 0x6d8, size 0x318
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0x9f0, size 0x8
     hash_54196e9e9860f0be platform;
     // offset 0x9f8, size 0x2c0
@@ -10227,7 +10227,7 @@ version 17 {
     };
 
     // idx 15 members 5 size 0x108
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x40
         xhash hash_6bcde715574b1e8;
         // offset 0x40, size 0x8
@@ -10537,18 +10537,18 @@ version 17 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -10557,7 +10557,7 @@ version 17 {
     // offset 0x0, size 0x6d8
     hash_6580ccf5f8a0ef6 dml;
     // offset 0x6d8, size 0x318
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0x9f0, size 0x8
     hash_54196e9e9860f0be platform;
     // offset 0x9f8, size 0x2c0
@@ -10762,7 +10762,7 @@ version 16 {
     };
 
     // idx 15 members 4 size 0xc8
-    struct hash_21869aff174e9b46 {
+    struct lootcontracts {
         // offset 0x0, size 0x8
         uint:3 contractgamemode;
         // offset 0x8, size 0x40
@@ -11070,18 +11070,18 @@ version 16 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -11090,7 +11090,7 @@ version 16 {
     // offset 0x0, size 0x6d8
     hash_6580ccf5f8a0ef6 dml;
     // offset 0x6d8, size 0x258
-    hash_21869aff174e9b46 loot_contracts[3];
+    lootcontracts loot_contracts[3];
     // offset 0x930, size 0x8
     hash_54196e9e9860f0be platform;
     // offset 0x938, size 0x2c0
@@ -11591,18 +11591,18 @@ version 15 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -12109,18 +12109,18 @@ version 14 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -12626,18 +12626,18 @@ version 13 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -13141,18 +13141,18 @@ version 12 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -13656,20 +13656,20 @@ version 11 {
 
     // idx 6 members 16
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         hash_70fe115fad3f4fa, // 0x2,
         prt_mp_mercenary, // 0x3,
         prt_mp_technomancer, // 0x4,
         prt_mp_engineer, // 0x5,
         hash_3ca96ae1bd7d344f, // 0x6,
-        hash_3d9018ee4053e35c, // 0x7,
+        prt_mp_outrider, // 0x7,
         prt_mp_swatpolice, // 0x8,
-        hash_4a011dffec0dd650, // 0x9,
+        prt_mp_spectre, // 0x9,
         prt_mp_recon, // 0xa,
         prt_mp_battery, // 0xb,
         prt_mp_enforcer, // 0xc,
-        hash_6e7befeff487ba9a, // 0xd,
+        prt_mp_zero, // 0xd,
         prt_mp_trapper, // 0xe,
         prt_mp_firebreak, // 0xf
     };
@@ -14173,18 +14173,18 @@ version 10 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -14687,18 +14687,18 @@ version 9 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -15200,18 +15200,18 @@ version 8 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };
@@ -15707,18 +15707,18 @@ version 7 {
 
     // idx 6 members 14
     enum hash_d17b4e10fa9c28c {
-        hash_5517568f2fb8127, // 0x0,
+        prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
         prt_mp_technomancer, // 0x3,
         prt_mp_engineer, // 0x4,
-        hash_3d9018ee4053e35c, // 0x5,
+        prt_mp_outrider, // 0x5,
         prt_mp_swatpolice, // 0x6,
-        hash_4a011dffec0dd650, // 0x7,
+        prt_mp_spectre, // 0x7,
         prt_mp_recon, // 0x8,
         prt_mp_battery, // 0x9,
         prt_mp_enforcer, // 0xa,
-        hash_6e7befeff487ba9a, // 0xb,
+        prt_mp_zero, // 0xb,
         prt_mp_trapper, // 0xc,
         prt_mp_firebreak, // 0xd
     };

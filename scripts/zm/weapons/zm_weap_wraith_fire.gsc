@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_wraith_fire/zm_weap_wraith_fire
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x54ab3515, Offset: 0x108
 // Size: 0x22c
 function __init__() {
@@ -34,7 +34,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_wraith_fire/zm_weap_wraith_fire
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x21f3c7c4, Offset: 0x340
 // Size: 0x12
 function __main__() {
@@ -42,7 +42,7 @@ function __main__() {
 }
 
 // Namespace zm_weap_wraith_fire/zm_weap_wraith_fire
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x9a285a74, Offset: 0x360
 // Size: 0xd2
 function function_36a0ef3(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -52,7 +52,7 @@ function function_36a0ef3(inflictor, attacker, damage, flags, meansofdeath, weap
 }
 
 // Namespace zm_weap_wraith_fire/zm_weap_wraith_fire
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x65a2c71a, Offset: 0x440
 // Size: 0x11a
 function function_2b4945e4(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

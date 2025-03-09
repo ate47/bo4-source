@@ -91,7 +91,7 @@
                         }
                     ],
                     "name": "arrive",
-                    "var_1c7fbd6b": "#hash_668c798af445fe13"
+                    "shotmodel": "#hash_668c798af445fe13"
                 },
                 {
                     "entry": [
@@ -101,7 +101,7 @@
                         }
                     ],
                     "name": "leave",
-                    "var_1c7fbd6b": "#hash_668c798af445fe13"
+                    "shotmodel": "#hash_668c798af445fe13"
                 },
                 {
                     "entry": [
@@ -110,9 +110,9 @@
                             "entrytype": "anim"
                         }
                     ],
-                    "var_64c0ee5a": "#hash_4458b3c865174731",
+                    "hash_64c0ee5a": "#hash_4458b3c865174731",
                     "name": "crack",
-                    "var_1c7fbd6b": "#hash_597bdc83a7c9e8c"
+                    "shotmodel": "#hash_597bdc83a7c9e8c"
                 },
                 {
                     "entry": [
@@ -122,7 +122,7 @@
                         }
                     ],
                     "name": "crack_leave",
-                    "var_1c7fbd6b": "#hash_4458b3c865174731"
+                    "shotmodel": "#hash_4458b3c865174731"
                 },
                 {
                     "entry": [
@@ -132,7 +132,7 @@
                         }
                     ],
                     "name": "crack_arrive",
-                    "var_1c7fbd6b": "#hash_4458b3c865174731"
+                    "shotmodel": "#hash_4458b3c865174731"
                 },
                 {
                     "entry": [
@@ -141,9 +141,9 @@
                             "entrytype": "anim"
                         }
                     ],
-                    "var_64c0ee5a": "#hash_5d304a67420d3dcc",
+                    "hash_64c0ee5a": "#hash_5d304a67420d3dcc",
                     "name": "break",
-                    "var_1c7fbd6b": "#hash_597bdc83a7c9e8c"
+                    "shotmodel": "#hash_597bdc83a7c9e8c"
                 },
                 {
                     "entry": [
@@ -153,7 +153,7 @@
                         }
                     ],
                     "name": "break_arrive",
-                    "var_1c7fbd6b": "#hash_5d304a67420d3dcc"
+                    "shotmodel": "#hash_5d304a67420d3dcc"
                 },
                 {
                     "entry": [
@@ -163,7 +163,7 @@
                         }
                     ],
                     "name": "break_leave",
-                    "var_1c7fbd6b": "#hash_5d304a67420d3dcc"
+                    "shotmodel": "#hash_5d304a67420d3dcc"
                 },
                 {
                     "entry": [
@@ -173,7 +173,7 @@
                         }
                     ],
                     "name": "death",
-                    "var_1c7fbd6b": "#hash_597bdc83a7c9e8c"
+                    "shotmodel": "#hash_597bdc83a7c9e8c"
                 }
             ],
             "model": "#hash_5cb4b86f5c4d8d96",

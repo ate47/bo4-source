@@ -36,7 +36,7 @@ class cscene : cscriptbundlebase {
     var var_b0ff34ce;
 
     // Namespace cscene/scene_shared
-    // Params 0, eflags: 0x9 linked
+    // Params 0, eflags: 0x8
     // Checksum 0xa6f1c335, Offset: 0x5280
     // Size: 0x3a
     constructor() {
@@ -46,7 +46,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xb30fcd16, Offset: 0x78d0
     // Size: 0x14
     function on_error() {
@@ -54,7 +54,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xc6373601, Offset: 0x77d8
     // Size: 0xf0
     function get_valid_objects() {
@@ -73,7 +73,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x463e7c49, Offset: 0x77a8
     // Size: 0x24
     function function_6a55f153() {
@@ -81,7 +81,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xfc5fd6df, Offset: 0x7768
     // Size: 0x34
     function wait_till_shot_ready() {
@@ -91,7 +91,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xea96ca23, Offset: 0x7718
     // Size: 0x46
     function is_skipping_scene() {
@@ -99,7 +99,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x5973015d, Offset: 0x76e8
     // Size: 0x28
     function is_looping() {
@@ -107,7 +107,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x3d099d63, Offset: 0x76d8
     // Size: 0x8
     function allows_multiple() {
@@ -115,7 +115,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xc14907f2, Offset: 0x7650
     // Size: 0x7a
     function get_align_ent(clientnum) {
@@ -130,7 +130,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xdcd2fd26, Offset: 0x7638
     // Size: 0xa
     function get_root() {
@@ -138,7 +138,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xb2d76d49, Offset: 0x74a8
     // Size: 0x182
     function get_ents() {
@@ -165,7 +165,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x57e34526, Offset: 0x7090
     // Size: 0x40a
     function _call_state_funcs(str_state) {
@@ -213,7 +213,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x135122e7, Offset: 0x6fe8
     // Size: 0x9e
     function has_init_state() {
@@ -228,7 +228,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x42e074bc, Offset: 0x6c90
     // Size: 0x34e
     function stop(b_clear = 0, b_finished = 0) {
@@ -266,7 +266,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xe30369db, Offset: 0x6b48
     // Size: 0x13c
     function get_next_shot() {
@@ -289,7 +289,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xdf32b210, Offset: 0x6b30
     // Size: 0xa
     function function_2ba44cd0() {
@@ -297,7 +297,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xfa272cf, Offset: 0x69b0
     // Size: 0x174
     function function_ea4a6812(str_shot) {
@@ -317,7 +317,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xb689803d, Offset: 0x6890
     // Size: 0x114
     function function_7a1288f1(str_shot) {
@@ -338,7 +338,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xc8ea6287, Offset: 0x6588
     // Size: 0x2fc
     function run_next(str_current_shot) {
@@ -379,7 +379,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x3ee4ffef, Offset: 0x6558
     // Size: 0x24
     function play_endon(var_a27f7ab4) {
@@ -387,7 +387,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 4, eflags: 0x1 linked
+    // Params 4, eflags: 0x0
     // Checksum 0x285c4c7f, Offset: 0x6028
     // Size: 0x524
     function play(str_shot = "play", b_testing = 0, str_mode = "", b_looping = undefined) {
@@ -447,7 +447,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xe4f5a6b2, Offset: 0x5d58
     // Size: 0x2c8
     function function_1013fc5b() {
@@ -475,7 +475,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x47c2f4b, Offset: 0x5d38
     // Size: 0x16
     function get_object_id() {
@@ -484,7 +484,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x1c984faa, Offset: 0x5bf0
     // Size: 0x13c
     function initialize(b_playing = 0) {
@@ -504,7 +504,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x913c37e3, Offset: 0x5a48
     // Size: 0x1a0
     function get_valid_object_defs() {
@@ -527,7 +527,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0xc777889b, Offset: 0x59a0
     // Size: 0xa0
     function assign_ent(o_obj, ent, clientnum) {
@@ -541,7 +541,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 5, eflags: 0x1 linked
+    // Params 5, eflags: 0x0
     // Checksum 0xb2da5f9f, Offset: 0x54d8
     // Size: 0x4bc
     function init(str_scenedef, s_scenedef, e_align, a_ents, b_test_run) {
@@ -587,7 +587,7 @@ class cscene : cscriptbundlebase {
     }
 
     // Namespace cscene/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x27f43e4a, Offset: 0x52e8
     // Size: 0x1e2
     function new_object(str_type) {
@@ -630,7 +630,7 @@ class csceneplayer : cscriptbundleobjectbase, csceneobject {
     var var_55b4f21e;
 
     // Namespace csceneplayer/scene_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xe25cc588, Offset: 0xcc0
     // Size: 0x104
     function wait_for_camera(animation, var_57949b2d = 0) {
@@ -646,7 +646,7 @@ class csceneplayer : cscriptbundleobjectbase, csceneobject {
     }
 
     // Namespace csceneplayer/scene_shared
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0xefe5e5b3, Offset: 0xa08
     // Size: 0x2b0
     function _play_camera_anim(clientnum, animation, n_start_time = 0) {
@@ -675,7 +675,7 @@ class csceneplayer : cscriptbundleobjectbase, csceneobject {
     }
 
     // Namespace csceneplayer/scene_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x9aece918, Offset: 0x990
     // Size: 0x6c
     function _spawn(clientnum, b_hide = 1) {
@@ -684,7 +684,7 @@ class csceneplayer : cscriptbundleobjectbase, csceneobject {
     }
 
     // Namespace csceneplayer/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x57694af9, Offset: 0x8c0
     // Size: 0xc4
     function initialize() {
@@ -721,7 +721,7 @@ class csceneobject : cscriptbundleobjectbase {
     var var_55b4f21e;
 
     // Namespace csceneobject/scene_shared
-    // Params 0, eflags: 0x9 linked
+    // Params 0, eflags: 0x8
     // Checksum 0x89663c2e, Offset: 0x1800
     // Size: 0x42
     constructor() {
@@ -732,7 +732,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xb0d66d7f, Offset: 0x48c8
     // Size: 0xda
     function in_a_different_scene() {
@@ -747,7 +747,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x74c9c19f, Offset: 0x48a0
     // Size: 0x1a
     function is_alive(clientnum) {
@@ -755,7 +755,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x2a1d27e0, Offset: 0x4870
     // Size: 0x22
     function has_init_state(str_scenedef) {
@@ -763,7 +763,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x5203ae1a, Offset: 0x4840
     // Size: 0x24
     function wait_till_shot_ready() {
@@ -771,7 +771,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x314e0ac1, Offset: 0x47b0
     // Size: 0x88
     function function_54266b24() {
@@ -781,7 +781,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x32b9b49e, Offset: 0x4738
     // Size: 0x6c
     function get_align_tag() {
@@ -795,13 +795,13 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xd1d958ea, Offset: 0x4150
     // Size: 0x5de
     function update_alignment(clientnum) {
         m_align = get_align_ent(clientnum);
         m_tag = get_align_tag();
-        var_cd4673f4 = isdefined(_s.var_132e5621) && _s.var_132e5621;
+        var_cd4673f4 = isdefined(_s.preserveangle) && _s.preserveangle;
         var_2dd2901f = (isdefined(_o_scene._s.var_922b4fc5) ? _o_scene._s.var_922b4fc5 : 0, isdefined(_o_scene._s.var_3e692842) ? _o_scene._s.var_3e692842 : 0, isdefined(_o_scene._s.var_be60a82b) ? _o_scene._s.var_be60a82b : 0);
         var_acf1be3a = (isdefined(_o_scene._s.var_16999a5d) ? _o_scene._s.var_16999a5d : 0, isdefined(_o_scene._s.var_29563fd6) ? _o_scene._s.var_29563fd6 : 0, isdefined(_o_scene._s.var_eb00c330) ? _o_scene._s.var_eb00c330 : 0);
         var_24a7cd13 = (isdefined(_s.var_922b4fc5) ? _s.var_922b4fc5 : 0, isdefined(_s.var_3e692842) ? _s.var_3e692842 : 0, isdefined(_s.var_be60a82b) ? _s.var_be60a82b : 0);
@@ -845,7 +845,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 7, eflags: 0x1 linked
+    // Params 7, eflags: 0x0
     // Checksum 0x53717d18, Offset: 0x3e88
     // Size: 0x2ba
     function _play_anim(clientnum, animation, n_rate = 1, n_blend, str_siege_shot, loop, n_start_time) {
@@ -877,7 +877,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xbc10d7a1, Offset: 0x3c68
     // Size: 0x214
     function function_fda037ff(clientnum) {
@@ -907,7 +907,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x2227dc1e, Offset: 0x3ac8
     // Size: 0x196
     function _cleanup(clientnum) {
@@ -929,7 +929,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x8b152391, Offset: 0x38a8
     // Size: 0x214
     function function_4b3d4226(clientnum) {
@@ -959,7 +959,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xb424a8a5, Offset: 0x36e0
     // Size: 0x1ba
     function _prepare(clientnum) {
@@ -981,7 +981,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x3aeef457, Offset: 0x3318
     // Size: 0x3bc
     function _spawn(clientnum, b_hide = 1) {
@@ -1018,7 +1018,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xe6e23fee, Offset: 0x32f8
     // Size: 0x12
     function get_orig_name() {
@@ -1026,7 +1026,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xcd64227a, Offset: 0x32e0
     // Size: 0xa
     function get_name() {
@@ -1034,7 +1034,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xbed0ca52, Offset: 0x3260
     // Size: 0x76
     function _assign_unique_name() {
@@ -1046,7 +1046,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x16748a86, Offset: 0x3248
     // Size: 0xa
     function scene() {
@@ -1054,7 +1054,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x934fa303, Offset: 0x3068
     // Size: 0x1d2
     function get_align_ent(clientnum) {
@@ -1081,7 +1081,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0x779932d5, Offset: 0x2d28
     // Size: 0x334
     function finish_per_client(clientnum, b_clear = 0, b_finished = 0) {
@@ -1116,7 +1116,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xa90f8e0d, Offset: 0x2c20
     // Size: 0xfc
     function finish(b_clear = 0, b_finished = 0) {
@@ -1134,7 +1134,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x3fa10d0, Offset: 0x2af8
     // Size: 0x11c
     function function_ebbbd00d() {
@@ -1161,7 +1161,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x3704994a, Offset: 0x2ab8
     // Size: 0x36
     function function_587971b6() {
@@ -1169,7 +1169,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xb0f378a9, Offset: 0x2a28
     // Size: 0x86
     function function_dd4f74e1(clientnum) {
@@ -1181,7 +1181,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xae65e076, Offset: 0x29d8
     // Size: 0x44
     function function_ee94f77(clientnum) {
@@ -1191,7 +1191,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0xec6a4008, Offset: 0x26b8
     // Size: 0x314
     function play_per_client(clientnum, n_start_time, b_looping = undefined) {
@@ -1231,7 +1231,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0x57e120e5, Offset: 0x24b0
     // Size: 0x1fc
     function play(str_shot = "play", n_start_time, b_looping = undefined) {
@@ -1259,7 +1259,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x600b2005, Offset: 0x2238
     // Size: 0x26c
     function initialize_per_client(clientnum) {
@@ -1288,7 +1288,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x9445df53, Offset: 0x2200
     // Size: 0x30
     function is_skipping_scene() {
@@ -1296,7 +1296,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xacd90a9b, Offset: 0x2198
     // Size: 0x5e
     function run_wait(wait_time) {
@@ -1308,7 +1308,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xfeb224a9, Offset: 0x20d0
     // Size: 0xba
     function function_1263065a(n_shot = 0) {
@@ -1321,7 +1321,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xb794ea6f, Offset: 0x1fb8
     // Size: 0x10a
     function find_entry(n_shot = 0, str_entry_type) {
@@ -1337,7 +1337,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0x1ac1aebf, Offset: 0x1eb0
     // Size: 0xfe
     function get_entry(n_shot = 0, n_entry, str_entry_type) {
@@ -1350,7 +1350,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x95784002, Offset: 0x1e50
     // Size: 0x54
     function function_71b06874(n_shot) {
@@ -1361,7 +1361,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x58381ab5, Offset: 0x1db8
     // Size: 0x90
     function function_730a4c60(str_shot) {
@@ -1374,7 +1374,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x45cae61a, Offset: 0x1d20
     // Size: 0x90
     function get_shot(str_shot) {
@@ -1387,7 +1387,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x9403942e, Offset: 0x19a0
     // Size: 0x374
     function initialize() {
@@ -1425,7 +1425,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x1261ad37, Offset: 0x18d0
     // Size: 0xc6
     function restore_saved_ent(clientnum) {
@@ -1437,7 +1437,7 @@ class csceneobject : cscriptbundleobjectbase {
     }
 
     // Namespace csceneobject/scene_shared
-    // Params 4, eflags: 0x1 linked
+    // Params 4, eflags: 0x0
     // Checksum 0xa797c675, Offset: 0x1870
     // Size: 0x56
     function first_init(s_objdef, o_scene, e_ent, localclientnum) {
@@ -1449,7 +1449,7 @@ class csceneobject : cscriptbundleobjectbase {
 }
 
 // Namespace scene/scene_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xcbdeac87, Offset: 0x6f8
 // Size: 0x11c
 function player_scene_animation_skip(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1467,7 +1467,7 @@ function player_scene_animation_skip(localclientnum, oldval, newval, bnewent, bi
 }
 
 // Namespace scene/scene_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe4829cfb, Offset: 0x820
 // Size: 0x94
 function player_scene_skip_completed(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1477,7 +1477,7 @@ function player_scene_skip_completed(localclientnum, oldval, newval, bnewent, bi
 }
 
 // Namespace scene/scene_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb4916ab3, Offset: 0x80d0
 // Size: 0xba
 function get_existing_ent(clientnum, str_name) {
@@ -1503,7 +1503,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace scene/scene_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb1c9121f, Offset: 0x81e8
 // Size: 0x4a4
 function __init__() {
@@ -1544,7 +1544,7 @@ function __init__() {
 }
 
 // Namespace scene/scene_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa53137f, Offset: 0x8698
 // Size: 0x112
 function player_pbg_bank_scene_system(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1565,7 +1565,7 @@ function player_pbg_bank_scene_system(localclientnum, oldval, newval, bnewent, b
 }
 
 // Namespace scene/scene_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x62309c44, Offset: 0x87b8
 // Size: 0x272
 function in_igc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1619,7 +1619,7 @@ function function_e78401d1(func_igc) {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x68e80371, Offset: 0x8b10
 // Size: 0xac
 function function_f9036ea7(b_enable) {
@@ -1640,7 +1640,7 @@ function function_f9036ea7(b_enable) {
 }
 
 // Namespace scene/scene_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6ec55f28, Offset: 0x8bc8
 // Size: 0xb4
 function postfx_cateye(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1654,7 +1654,7 @@ function postfx_cateye(localclientnum, oldval, newval, bnewent, binitialsnap, fi
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8542ef33, Offset: 0x8c88
 // Size: 0xd2
 function private on_localplayer_shutdown(localclientnum) {
@@ -1674,7 +1674,7 @@ function private on_localplayer_shutdown(localclientnum) {
 }
 
 // Namespace scene/scene_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6eb6fe89, Offset: 0x8d68
 // Size: 0x10f6
 function postfx_igc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1723,21 +1723,28 @@ function postfx_igc(localclientnum, oldval, newval, bnewent, binitialsnap, field
     filter::set_filter_base_frame_transition_boost(self, 5, 1);
     n_hex = 0;
     b_streamer_wait = 1;
-    for (i = 0; i < 2000; i += int(0.016 * 1000)) {
+    i = 0;
+    while (i < 2000) {
         st = float(i) / 1000;
         if (b_streamer_wait && st >= 0.65) {
-            for (n_streamer_time_total = 0; !isstreamerready() && n_streamer_time_total < 5000; n_streamer_time_total += gettime() - n_streamer_time) {
+            n_streamer_time_total = 0;
+            while (!isstreamerready() && n_streamer_time_total < 5000) {
                 n_streamer_time = gettime();
-                for (j = int(0.65 * 1000); j < 1150; j += int(0.016 * 1000)) {
+                j = int(0.65 * 1000);
+                while (j < 1150) {
                     jt = float(j) / 1000;
                     filter::set_filter_frame_transition_heavy_hexagons(self, 5, mapfloat(0.65, 1.15, 0, 1, jt));
                     waitframe(1);
+                    j += int(0.016 * 1000);
                 }
-                for (j = int(1.15 * 1000); j < 650; j -= int(0.016 * 1000)) {
+                j = int(1.15 * 1000);
+                while (j < 650) {
                     jt = float(j) / 1000;
                     filter::set_filter_frame_transition_heavy_hexagons(self, 5, mapfloat(0.65, 1.15, 0, 1, jt));
                     waitframe(1);
+                    j -= int(0.016 * 1000);
                 }
+                n_streamer_time_total += gettime() - n_streamer_time;
             }
             b_streamer_wait = 0;
         }
@@ -1817,6 +1824,7 @@ function postfx_igc(localclientnum, oldval, newval, bnewent, binitialsnap, field
             filter::set_filter_frame_transition_warp(self, 5, -1 * (1 - mapfloat(1.85, 2, 0, 1, st)));
         }
         waitframe(1);
+        i += int(0.016 * 1000);
     }
     filter::disable_filter_base_frame_transition(self, 5);
     filter::disable_filter_sprite_transition(self, 5);
@@ -1827,7 +1835,7 @@ function postfx_igc(localclientnum, oldval, newval, bnewent, binitialsnap, field
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x42846844, Offset: 0x9e68
 // Size: 0x56
 function postfx_igc_zombies(localclientnum) {
@@ -1838,7 +1846,7 @@ function postfx_igc_zombies(localclientnum) {
 }
 
 // Namespace scene/scene_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x65b7497a, Offset: 0x9ec8
 // Size: 0x396
 function postfx_igc_short(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1858,7 +1866,8 @@ function postfx_igc_short(localclientnum, oldval, newval, bnewent, binitialsnap,
     filter::enable_filter_frame_transition(self, 5);
     filter::set_filter_frame_transition_iris(self, 5, 0);
     b_streamer_wait = 1;
-    for (i = 0; i < 850; i += int(0.016 * 1000)) {
+    i = 0;
+    while (i < 850) {
         st = float(i) / 1000;
         if (st <= 0.5) {
             filter::set_filter_frame_transition_iris(self, 5, mapfloat(0, 0.5, 0, 1, st));
@@ -1868,6 +1877,7 @@ function postfx_igc_short(localclientnum, oldval, newval, bnewent, binitialsnap,
             filter::set_filter_frame_transition_iris(self, 5, 0);
         }
         waitframe(1);
+        i += int(0.016 * 1000);
     }
     filter::disable_filter_base_frame_transition(self, 5);
     filter::disable_filter_sprite_transition(self, 5);
@@ -1877,7 +1887,7 @@ function postfx_igc_short(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace scene/scene_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x159eab14, Offset: 0xa268
 // Size: 0x1ca
 function cf_server_sync(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -1912,7 +1922,7 @@ function cf_server_sync(localclientnum, oldval, newval, bnewent, binitialsnap, f
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x54aee2dc, Offset: 0xa440
 // Size: 0x15a
 function remove_invalid_scene_objects(s_scenedef) {
@@ -1936,7 +1946,7 @@ function remove_invalid_scene_objects(s_scenedef) {
 }
 
 // Namespace scene/scene_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbc17192b, Offset: 0xa5a8
 // Size: 0xca
 function function_585fb738(str_scene, var_79fe29db) {
@@ -1955,7 +1965,7 @@ function function_585fb738(str_scene, var_79fe29db) {
 }
 
 // Namespace scene/scene_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2b001936, Offset: 0xa680
 // Size: 0x18
 function is_igc() {
@@ -1963,7 +1973,7 @@ function is_igc() {
 }
 
 // Namespace scene/scene_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa91cc9d4, Offset: 0xa6a0
 // Size: 0x4e0
 function __main__() {
@@ -2022,7 +2032,7 @@ function __main__() {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x637db7cc, Offset: 0xab88
 // Size: 0xbc
 function _trigger_init(trig) {
@@ -2038,7 +2048,7 @@ function _trigger_init(trig) {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1eccec55, Offset: 0xac50
 // Size: 0x108
 function _trigger_play(trig) {
@@ -2056,7 +2066,7 @@ function _trigger_play(trig) {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbff58968, Offset: 0xad60
 // Size: 0x54
 function _trigger_stop(trig) {
@@ -2066,7 +2076,7 @@ function _trigger_stop(trig) {
 }
 
 // Namespace scene/scene_shared
-// Params 4, eflags: 0x21 linked variadic
+// Params 4, eflags: 0x20 variadic
 // Checksum 0xe27ce2d4, Offset: 0xadc0
 // Size: 0x184
 function add_scene_func(str_scenedef, func, var_e21c4c4c = "play", ...) {
@@ -2106,7 +2116,7 @@ function remove_scene_func(str_scenedef, func, var_e21c4c4c = "play") {
 }
 
 // Namespace scene/scene_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x77e4e9e6, Offset: 0xb0e8
 // Size: 0x92
 function private function_c776e5bd(str_scenedef, str_state) {
@@ -2146,7 +2156,7 @@ function spawn(arg1, arg2, arg3, arg4, b_test_run) {
 }
 
 // Namespace scene/scene_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x38c9e4f5, Offset: 0xb308
 // Size: 0x54
 function init(arg1, arg2, arg3, b_test_run) {
@@ -2154,7 +2164,7 @@ function init(arg1, arg2, arg3, b_test_run) {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1eb0311a, Offset: 0xb368
 // Size: 0xa2
 function get_scenedef(str_scenedef) {
@@ -2186,7 +2196,7 @@ function get_scenedefs(str_type = "scene") {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4b16e107, Offset: 0xb570
 // Size: 0x860
 function fixup_scenedef(s_scenedef) {
@@ -2299,7 +2309,7 @@ function fixup_scenedef(s_scenedef) {
 }
 
 // Namespace scene/scene_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xa5bd15f6, Offset: 0xbdd8
 // Size: 0x1e4
 function function_ceb43448(var_5e3936e3, var_651e3856, str_field, var_8e9b7b3d) {
@@ -2329,7 +2339,7 @@ function function_ceb43448(var_5e3936e3, var_651e3856, str_field, var_8e9b7b3d) 
 }
 
 // Namespace scene/scene_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf414106a, Offset: 0xbfc8
 // Size: 0x4a
 function function_de24d5c1(n_shot, str_shot_name) {
@@ -2340,7 +2350,7 @@ function function_de24d5c1(n_shot, str_shot_name) {
 }
 
 // Namespace scene/scene_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xd001ba, Offset: 0xc020
 // Size: 0xf0
 function function_77e159df(var_9b4eba84, str_field, var_8e9b7b3d) {
@@ -2362,7 +2372,7 @@ function function_77e159df(var_9b4eba84, str_field, var_8e9b7b3d) {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x39057ec4, Offset: 0xc118
 // Size: 0x802
 function convert_to_new_format(s_scenedef) {
@@ -2507,7 +2517,7 @@ function function_8d8ec9b5(str_scenedef, a_str_shot_names, s_instance) {
 }
 
 // Namespace scene/scene_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x7d9c4a94, Offset: 0xc9e8
 // Size: 0x330
 function get_all_shot_names(str_scenedef, s_instance, var_8c4d2266 = 0) {
@@ -2557,7 +2567,7 @@ function get_all_shot_names(str_scenedef, s_instance, var_8c4d2266 = 0) {
 }
 
 // Namespace scene/scene_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa7182b39, Offset: 0xcd20
 // Size: 0xbe
 function function_b260bdcc(str_scenedef, str_shot, s_instance) {
@@ -2570,7 +2580,7 @@ function function_b260bdcc(str_scenedef, str_shot, s_instance) {
 }
 
 // Namespace scene/scene_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8105a530, Offset: 0xcde8
 // Size: 0x13c
 function function_c9770402(str_scenedef, s_instance) {
@@ -2594,7 +2604,7 @@ function function_c9770402(str_scenedef, s_instance) {
 }
 
 // Namespace scene/scene_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa009fde9, Offset: 0xcf30
 // Size: 0x1d8
 function _init_instance(str_scenedef = self.scriptbundlename, a_ents, b_test_run = 0) {
@@ -2620,7 +2630,7 @@ function _init_instance(str_scenedef = self.scriptbundlename, a_ents, b_test_run
 }
 
 // Namespace scene/scene_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb1cf6b68, Offset: 0xd110
 // Size: 0x1dc
 function function_6f382548(struct, str_scene_name) {
@@ -2642,7 +2652,7 @@ function function_6f382548(struct, str_scene_name) {
 }
 
 // Namespace scene/scene_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x73fe8973, Offset: 0xd2f8
 // Size: 0x11a
 function function_de6a7579(str_scenedef, str_mode, s_instance) {
@@ -2682,7 +2692,7 @@ function play_from_time(arg1, arg2, arg3, n_time, var_c9d6bbb = 1) {
 }
 
 // Namespace scene/scene_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x7094f2a3, Offset: 0xd4b8
 // Size: 0xb2
 function function_d1abba8b(str_scenedef, str_mode, n_time) {
@@ -2696,7 +2706,7 @@ function function_d1abba8b(str_scenedef, str_mode, n_time) {
 }
 
 // Namespace scene/scene_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4df6b17, Offset: 0xd578
 // Size: 0x1f2
 function function_1eab8670(obj, str_shot) {
@@ -2723,7 +2733,7 @@ function function_1eab8670(obj, str_shot) {
 }
 
 // Namespace scene/scene_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x90e16776, Offset: 0xd778
 // Size: 0x24a
 function function_dde5f483(str_scenedef, n_elapsed_time) {
@@ -2754,7 +2764,7 @@ function function_dde5f483(str_scenedef, n_elapsed_time) {
 }
 
 // Namespace scene/scene_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2be270b3, Offset: 0xd9d0
 // Size: 0x122
 function function_8582657c(var_b9a72490, str_shot) {
@@ -2774,7 +2784,7 @@ function function_8582657c(var_b9a72490, str_shot) {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x93d61814, Offset: 0xdb00
 // Size: 0xe8
 function function_12479eba(str_scenedef) {
@@ -2788,7 +2798,7 @@ function function_12479eba(str_scenedef) {
 }
 
 // Namespace scene/scene_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x2b445064, Offset: 0xdbf0
 // Size: 0xd2
 function function_67e52759(str_scenedef, s_instance, var_8c4d2266, startsearch, var_62e8e2f0) {
@@ -2801,7 +2811,7 @@ function function_67e52759(str_scenedef, s_instance, var_8c4d2266, startsearch, 
 }
 
 // Namespace scene/scene_shared
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xce8587c1, Offset: 0xdcd0
 // Size: 0x47c
 function play(arg1, arg2, arg3, b_test_run = 0, str_mode = "", n_time) {
@@ -2866,7 +2876,7 @@ function play(arg1, arg2, arg3, b_test_run = 0, str_mode = "", n_time) {
 }
 
 // Namespace scene/scene_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xb453ae4b, Offset: 0xe158
 // Size: 0x8c
 function private function_c802b491(s_tracker, str_mode) {
@@ -2877,7 +2887,7 @@ function private function_c802b491(s_tracker, str_mode) {
 }
 
 // Namespace scene/scene_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x22963be0, Offset: 0xe1f0
 // Size: 0xba
 function function_46546b5c(s_tracker, str_scenedef) {
@@ -2895,7 +2905,7 @@ function function_46546b5c(s_tracker, str_scenedef) {
 }
 
 // Namespace scene/scene_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfefcd2fe, Offset: 0xe2b8
 // Size: 0x22c
 function _play_on_self(s_tracker, arg1, arg2, arg3, b_test_run = 0, str_mode = "", n_time) {
@@ -2932,7 +2942,7 @@ function _play_on_self(s_tracker, arg1, arg2, arg3, b_test_run = 0, str_mode = "
 }
 
 // Namespace scene/scene_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe145e3a6, Offset: 0xe4f0
 // Size: 0x3f0
 function _play_instance(s_tracker, str_scenedef = self.scriptbundlename, a_ents, b_test_run, str_shot = "play", str_mode, n_time) {
@@ -3000,7 +3010,7 @@ function _play_instance(s_tracker, str_scenedef = self.scriptbundlename, a_ents,
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xbb53b49e, Offset: 0xe8e8
 // Size: 0x3a
 function private waittill_instance_scene_done(str_scenedef) {
@@ -3009,7 +3019,7 @@ function private waittill_instance_scene_done(str_scenedef) {
 }
 
 // Namespace scene/scene_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xa3c856af, Offset: 0xe930
 // Size: 0x2ac
 function stop(arg1, arg2, arg3, b_cancel, b_no_assert = 0) {
@@ -3051,7 +3061,7 @@ function stop(arg1, arg2, arg3, b_cancel, b_no_assert = 0) {
 }
 
 // Namespace scene/scene_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1fe9fd3e, Offset: 0xebe8
 // Size: 0xfc
 function _stop_instance(b_clear = 0, str_scenedef, b_cancel = 0) {
@@ -3066,7 +3076,7 @@ function _stop_instance(b_clear = 0, str_scenedef, b_cancel = 0) {
 }
 
 // Namespace scene/scene_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x9669456c, Offset: 0xecf0
 // Size: 0x3c
 function cancel(arg1, arg2, arg3) {
@@ -3074,7 +3084,7 @@ function cancel(arg1, arg2, arg3) {
 }
 
 // Namespace scene/scene_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf5f6b25b, Offset: 0xed38
 // Size: 0x24c
 function delete_scene_spawned_ents(localclientnum, arg1) {
@@ -3107,7 +3117,7 @@ function delete_scene_spawned_ents(localclientnum, arg1) {
 }
 
 // Namespace scene/scene_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe28ac930, Offset: 0xef90
 // Size: 0xe8
 function _delete_scene_spawned_ents(localclientnum, str_scene) {
@@ -3135,7 +3145,7 @@ function has_init_state(str_scenedef) {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdce83b75, Offset: 0xf168
 // Size: 0x92
 function _has_init_state(str_scenedef) {
@@ -3167,7 +3177,7 @@ function get_actor_count(str_scenedef) {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd56a337f, Offset: 0xf298
 // Size: 0x22
 function function_7aa3d2c6(str_scenedef) {
@@ -3175,7 +3185,7 @@ function function_7aa3d2c6(str_scenedef) {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x26eb2043, Offset: 0xf2c8
 // Size: 0x22
 function get_player_count(str_scenedef) {
@@ -3183,7 +3193,7 @@ function get_player_count(str_scenedef) {
 }
 
 // Namespace scene/scene_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2bc1ffac, Offset: 0xf2f8
 // Size: 0x10e
 function _get_type_count(str_type, str_scenedef) {
@@ -3200,7 +3210,7 @@ function _get_type_count(str_type, str_scenedef) {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4f1ecb1, Offset: 0xf410
 // Size: 0x4e
 function is_active(str_scenedef) {
@@ -3211,7 +3221,7 @@ function is_active(str_scenedef) {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4458daf5, Offset: 0xf468
 // Size: 0x90
 function is_playing(str_scenedef) {
@@ -3230,7 +3240,7 @@ function is_playing(str_scenedef) {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe667cff5, Offset: 0xf500
 // Size: 0xf8
 function get_active_scenes(str_scenedef) {
@@ -3248,7 +3258,7 @@ function get_active_scenes(str_scenedef) {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xff2e4766, Offset: 0xf600
 // Size: 0x9e
 function get_active_scene(str_scenedef) {
@@ -3274,7 +3284,7 @@ function is_capture_mode() {
 }
 
 // Namespace scene/scene_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xb75efa3, Offset: 0xf718
 // Size: 0x19a
 function _get_scene_instances(str_value, str_key = "targetname", str_scenedef, b_include_inactive = 0) {
@@ -3297,7 +3307,7 @@ function _get_scene_instances(str_value, str_key = "targetname", str_scenedef, b
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x32285a79, Offset: 0xf8c0
 // Size: 0xf8
 function get_inactive_scenes(str_scenedef) {

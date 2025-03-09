@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd226e7c, Offset: 0x468
 // Size: 0x5c
 function __init__() {
@@ -35,7 +35,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x4acf442, Offset: 0x4d0
 // Size: 0x25e
 function private function_d805557c(weapon) {
@@ -72,7 +72,7 @@ function private function_d805557c(weapon) {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1227e7d, Offset: 0x738
 // Size: 0xaa
 function private is_ballistic_knife(weapon) {
@@ -83,7 +83,7 @@ function private is_ballistic_knife(weapon) {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x181beb3d, Offset: 0x7f0
 // Size: 0x18e
 function private is_melee_allowed(weapon) {
@@ -108,7 +108,7 @@ function private is_melee_allowed(weapon) {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x47eb4ef1, Offset: 0x988
 // Size: 0xf0
 function private function_6a8979c9() {
@@ -122,7 +122,7 @@ function private function_6a8979c9() {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xfed9e52f, Offset: 0xa80
 // Size: 0x15c
 function private function_e14e7b75(weapon) {
@@ -145,7 +145,7 @@ function private function_e14e7b75(weapon) {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb3757176, Offset: 0xbe8
 // Size: 0x274
 function private function_10c80e10(eventstruct) {
@@ -179,7 +179,7 @@ function private function_10c80e10(eventstruct) {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xaa5c0ee8, Offset: 0xe68
 // Size: 0x24
 function private function_33f0ddd3(eventstruct) {
@@ -187,7 +187,7 @@ function private function_33f0ddd3(eventstruct) {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xc5937a0a, Offset: 0xe98
 // Size: 0xb6
 function private function_f66032dd() {
@@ -201,7 +201,7 @@ function private function_f66032dd() {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x19d020b0, Offset: 0xf58
 // Size: 0x1778
 function private on_begin(var_e097dc07, var_f5300808) {
@@ -405,7 +405,7 @@ function private on_begin(var_e097dc07, var_f5300808) {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1da54f10, Offset: 0x26d8
 // Size: 0x444
 function private on_end(round_reset) {
@@ -452,7 +452,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8058cf00, Offset: 0x2b28
 // Size: 0x148
 function function_f1dd7bf8(var_9e126e48) {
@@ -477,7 +477,7 @@ function function_f1dd7bf8(var_9e126e48) {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x38228e89, Offset: 0x2c78
 // Size: 0x14c
 function function_f0e03d3(var_f5300808) {
@@ -498,7 +498,7 @@ function function_f0e03d3(var_f5300808) {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x43334085, Offset: 0x2dd0
 // Size: 0x44
 function function_937e218c() {
@@ -509,7 +509,7 @@ function function_937e218c() {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1c7a43cd, Offset: 0x2e20
 // Size: 0x72
 function is_active(var_1eb3fec6 = 0) {
@@ -529,7 +529,7 @@ function function_bb33631e(var_b5d0ea49) {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x6e29eddc, Offset: 0x2f30
 // Size: 0x6c
 function private disable_offhand_weapons() {
@@ -543,7 +543,7 @@ function private disable_offhand_weapons() {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xea2ab4a5, Offset: 0x2fa8
 // Size: 0x16c
 function private function_e20ebcfd() {
@@ -561,7 +561,7 @@ function private function_e20ebcfd() {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x125b26c5, Offset: 0x3120
 // Size: 0x11c
 function private function_f3fdd8f7() {
@@ -578,7 +578,7 @@ function private function_f3fdd8f7() {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8ef1f1ed, Offset: 0x3248
 // Size: 0x20a
 function private monitor_objective(challenge) {
@@ -604,7 +604,7 @@ function private monitor_objective(challenge) {
 }
 
 // Namespace zm_trial_restrict_loadout/zm_trial_restrict_loadout
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4ddf4a6e, Offset: 0x3460
 // Size: 0x104
 function function_5fbf572(weapon, var_2f0cc3aa = 0) {
@@ -614,7 +614,7 @@ function function_5fbf572(weapon, var_2f0cc3aa = 0) {
     if (var_2f0cc3aa && is_active(1) && isdefined(weapon) && is_melee_allowed(weapon)) {
         return true;
     }
-    if (is_active(1) || zm_trial_disable_hero_weapons::is_active() || self function_635f9c02(weapon)) {
+    if (is_active(1) || zm_trial_disable_hero_weapons::is_active() || self isweaponlocked(weapon)) {
         if (isplayer(self)) {
             self zm_trial_util::function_97444b02();
         }

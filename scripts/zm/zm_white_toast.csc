@@ -16,7 +16,7 @@
 #namespace zm_white_toast;
 
 // Namespace zm_white_toast/zm_white_toast
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa207f6c2, Offset: 0x1c0
 // Size: 0x374
 function init_clientfields() {
@@ -33,7 +33,7 @@ function init_clientfields() {
 }
 
 // Namespace zm_white_toast/zm_white_toast
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6698496f, Offset: 0x540
 // Size: 0x182
 function init_fx() {
@@ -48,7 +48,7 @@ function init_fx() {
 }
 
 // Namespace zm_white_toast/zm_white_toast
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa40a28f5, Offset: 0x6d0
 // Size: 0xbc
 function function_2a58f409(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -62,7 +62,7 @@ function function_2a58f409(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_white_toast/zm_white_toast
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3619892, Offset: 0x798
 // Size: 0x84
 function canister_depleted(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -72,7 +72,7 @@ function canister_depleted(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_white_toast/zm_white_toast
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4f0229fe, Offset: 0x828
 // Size: 0xbc
 function discharge_pap(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -86,7 +86,7 @@ function discharge_pap(localclientnum, oldval, newval, bnewent, binitialsnap, fi
 }
 
 // Namespace zm_white_toast/zm_white_toast
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe64fc45b, Offset: 0x8f0
 // Size: 0xbc
 function discharge_perk(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -100,7 +100,7 @@ function discharge_perk(localclientnum, oldval, newval, bnewent, binitialsnap, f
 }
 
 // Namespace zm_white_toast/zm_white_toast
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf70bfdc7, Offset: 0x9b8
 // Size: 0xbc
 function discharge_wallbuy(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

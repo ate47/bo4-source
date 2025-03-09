@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace blade/blade
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6f89ce92, Offset: 0x110
 // Size: 0x84
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace blade/blade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x51baad2d, Offset: 0x1a0
 // Size: 0x8c
 function function_efa90c79(weapon) {
@@ -39,7 +39,7 @@ function function_efa90c79(weapon) {
 }
 
 // Namespace blade/blade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x652859ae, Offset: 0x238
 // Size: 0x42
 function function_d6805ff5(weapon) {
@@ -50,7 +50,7 @@ function function_d6805ff5(weapon) {
 }
 
 // Namespace blade/blade
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4b6a120d, Offset: 0x288
 // Size: 0x1b6
 function function_a1aa3b85(abilityslot, weapon) {
@@ -82,7 +82,7 @@ function function_a1aa3b85(abilityslot, weapon) {
 }
 
 // Namespace blade/blade
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9ca51857, Offset: 0x448
 // Size: 0x5a
 function function_b0105ee8(abilityslot, weapon) {
@@ -94,7 +94,7 @@ function function_b0105ee8(abilityslot, weapon) {
 }
 
 // Namespace blade/blade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4613418c, Offset: 0x4b0
 // Size: 0x136
 function function_c5c8d661(weapon) {

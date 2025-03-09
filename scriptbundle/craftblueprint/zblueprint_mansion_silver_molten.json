@@ -1,15 +1,15 @@
 {
-    "var_4dbc4aee": "#hash_12b2ee41f7902a2d",
+    "hash_4dbc4aee": "#hash_12b2ee41f7902a2d",
     "configstringfiletype": "scriptbundle",
     "result": "weapon#zitem_silver_bullet_part_4_zm",
     "type": "craftblueprint",
-    "var_99577dd3": "weapon#zitem_silver_molten_part_1_zm",
-    "var_670f9944": "weapon#zitem_silver_molten_part_2_zm",
-    "var_2e0a273a": "weapon#zitem_silver_molten_part_3_zm",
+    "component01": "weapon#zitem_silver_molten_part_1_zm",
+    "component02": "weapon#zitem_silver_molten_part_2_zm",
+    "component03": "weapon#zitem_silver_molten_part_3_zm",
     "name": "zblueprint_mansion_silver_molten",
     "displayname": "Silver Molten",
-    "var_46309255": "spawn_as_ingredient",
+    "postcraft": "spawn_as_ingredient",
     "componentcount": 3,
-    "var_d8967a0c": 1,
-    "var_318c150c": "section_quests"
+    "takecomponents": 1,
+    "hash_318c150c": "section_quests"
 }

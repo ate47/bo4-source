@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_wallbuy_count/zm_trial_wallbuy_count
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc69902c8, Offset: 0xe0
 // Size: 0x5c
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_wallbuy_count/zm_trial_wallbuy_count
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd3e63bca, Offset: 0x148
 // Size: 0x134
 function private on_begin(var_b3d469ae) {
@@ -42,7 +42,7 @@ function private on_begin(var_b3d469ae) {
 }
 
 // Namespace zm_trial_wallbuy_count/zm_trial_wallbuy_count
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcf2771c2, Offset: 0x288
 // Size: 0x220
 function private on_end(round_reset) {
@@ -82,7 +82,7 @@ function is_active() {
 }
 
 // Namespace zm_trial_wallbuy_count/zm_trial_wallbuy_count
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xe0dce62b, Offset: 0x4f0
 // Size: 0x1e0
 function private wallbuy_watcher() {

@@ -22,7 +22,7 @@
 #namespace shockrifle;
 
 // Namespace shockrifle/shockrifle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc8820309, Offset: 0x290
 // Size: 0x1cc
 function init_shared() {
@@ -42,7 +42,7 @@ function init_shared() {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2c25fadd, Offset: 0x468
 // Size: 0x44
 function on_player_spawned() {
@@ -51,7 +51,7 @@ function on_player_spawned() {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf28e5533, Offset: 0x4b8
 // Size: 0x26
 function onplayerconnect() {
@@ -61,7 +61,7 @@ function onplayerconnect() {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd78e2dc4, Offset: 0x4e8
 // Size: 0x1c
 function onplayerkilled() {
@@ -69,7 +69,7 @@ function onplayerkilled() {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xc34eda1e, Offset: 0x510
 // Size: 0x5a
 function function_95a892a(attacker, victim, var_3d1ed4bd, attackerweapon, meansofdeath) {
@@ -80,7 +80,7 @@ function function_95a892a(attacker, victim, var_3d1ed4bd, attackerweapon, meanso
 }
 
 // Namespace shockrifle/shockrifle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf20b2dae, Offset: 0x578
 // Size: 0x1be
 function function_c1aa8f6b(watcher) {
@@ -108,7 +108,7 @@ function function_c1aa8f6b(watcher) {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe4a0c5d0, Offset: 0x740
 // Size: 0x64
 function function_a0081b68(ent) {
@@ -119,7 +119,7 @@ function function_a0081b68(ent) {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc1b97891, Offset: 0x7b0
 // Size: 0x25a
 function function_aa6e2f52(watcher, owner) {
@@ -152,7 +152,7 @@ function function_aa6e2f52(watcher, owner) {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9f57478d, Offset: 0xa18
 // Size: 0x5a
 function function_7cc07921(ent) {
@@ -163,7 +163,7 @@ function function_7cc07921(ent) {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x97241eb9, Offset: 0xa80
 // Size: 0x4c
 function function_a6beb598(notifystr) {
@@ -174,7 +174,7 @@ function function_a6beb598(notifystr) {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3c2a1656, Offset: 0xad8
 // Size: 0x22c
 function function_5fff8c45(watcher, hitent) {
@@ -215,7 +215,7 @@ function function_5fff8c45(watcher, hitent) {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9d8e2d53, Offset: 0xd10
 // Size: 0x54
 function function_33020ed7(ent) {
@@ -228,7 +228,7 @@ function function_33020ed7(ent) {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4ab97795, Offset: 0xd70
 // Size: 0x8e
 function function_c23ed15d(ent, shockduration) {
@@ -239,7 +239,7 @@ function function_c23ed15d(ent, shockduration) {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb7630109, Offset: 0xe08
 // Size: 0x70
 function function_a64504d2() {
@@ -254,7 +254,7 @@ function function_a64504d2() {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdb26a2f5, Offset: 0xe80
 // Size: 0x3c
 function deleteobjective(objectiveid) {
@@ -263,7 +263,7 @@ function deleteobjective(objectiveid) {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xff55d770, Offset: 0xec8
 // Size: 0x142
 function function_13c7b967(owner) {
@@ -283,7 +283,7 @@ function function_13c7b967(owner) {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x21aee504, Offset: 0x1018
 // Size: 0x36
 function function_3474c820() {
@@ -295,7 +295,7 @@ function function_3474c820() {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2200a81f, Offset: 0x1058
 // Size: 0xe0
 function function_5439aa67(shockcharge) {
@@ -323,7 +323,7 @@ function watchfordeath() {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x3fdbef8b, Offset: 0x1188
 // Size: 0x56e
 function function_c80bac1f(shockcharge, var_51415470, shockduration) {
@@ -391,7 +391,7 @@ function function_c80bac1f(shockcharge, var_51415470, shockduration) {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6e9cfb93, Offset: 0x1700
 // Size: 0x1c4
 function function_e0141557(ent, var_51415470) {
@@ -411,7 +411,7 @@ function function_e0141557(ent, var_51415470) {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xce148c89, Offset: 0x18d0
 // Size: 0x404
 function function_92eabc2f(ent, var_51415470) {
@@ -458,7 +458,7 @@ function function_92eabc2f(ent, var_51415470) {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xbe14f82a, Offset: 0x1ce0
 // Size: 0xfc
 function function_7ce0a335(attacker, weapon, target) {
@@ -476,7 +476,7 @@ function function_7ce0a335(attacker, weapon, target) {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x36770ae3, Offset: 0x1de8
 // Size: 0x24
 function function_1c34cd1b(object) {
@@ -485,7 +485,7 @@ function function_1c34cd1b(object) {
 }
 
 // Namespace shockrifle/shockrifle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x16371324, Offset: 0x1e18
 // Size: 0x312
 function function_bcc47944(watcher) {

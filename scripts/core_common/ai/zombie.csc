@@ -7,7 +7,7 @@
 
 // Namespace zombie/zombie
 // Params 0, eflags: 0x2
-// Checksum 0xa68abfb0, Offset: 0xd0
+// Checksum 0x9d31221f, Offset: 0xd0
 // Size: 0x124
 function autoexec main() {
     level._effect[#"zombie_special_day_effect"] = #"hash_7a37324c1988abb5";
@@ -21,7 +21,7 @@ function autoexec main() {
 
 // Namespace zombieclientutils/zombie
 // Params 7, eflags: 0x0
-// Checksum 0xcdedfa01, Offset: 0x200
+// Checksum 0x1c5a0805, Offset: 0x200
 // Size: 0x17c
 function zombiehandler(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     entity = self;
@@ -40,7 +40,7 @@ function zombiehandler(localclientnum, oldvalue, newvalue, bnewent, binitialsnap
 
 // Namespace zombieclientutils/zombie
 // Params 3, eflags: 0x4
-// Checksum 0xfbc568ae, Offset: 0x388
+// Checksum 0xd6f4b6b9, Offset: 0x388
 // Size: 0xfa
 function private _gibcallback(localclientnum, entity, gibflag) {
     switch (gibflag) {
@@ -58,7 +58,7 @@ function private _gibcallback(localclientnum, entity, gibflag) {
 
 // Namespace zombieclientutils/zombie
 // Params 7, eflags: 0x0
-// Checksum 0xea329a1b, Offset: 0x490
+// Checksum 0x9bc5e48f, Offset: 0x490
 // Size: 0x104
 function zombiespecialdayeffectshandler(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     entity = self;
@@ -72,7 +72,7 @@ function zombiespecialdayeffectshandler(localclientnum, oldvalue, newvalue, bnew
 
 // Namespace zombieclientutils/zombie
 // Params 1, eflags: 0x0
-// Checksum 0x7d3e8ba9, Offset: 0x5a0
+// Checksum 0x2999122b, Offset: 0x5a0
 // Size: 0x212
 function zombie_override_burn_fx(localclientnum) {
     if (sessionmodeiszombiesgame()) {
@@ -94,7 +94,7 @@ function zombie_override_burn_fx(localclientnum) {
 
 // Namespace zombieclientutils/zombie
 // Params 1, eflags: 0x0
-// Checksum 0xb30c59d2, Offset: 0x7c0
+// Checksum 0xeb5fe6eb, Offset: 0x7c0
 // Size: 0x2c
 function zombiespawnsetup(localclientnum) {
     fxclientutils::playfxbundle(localclientnum, self, self.fxdef);

@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_6fec3d63/namespace_6fec3d63
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x12251084, Offset: 0xc0
 // Size: 0xcc
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace namespace_6fec3d63/namespace_6fec3d63
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x7f0e0e6c, Offset: 0x198
 // Size: 0x140
 function private function_7e4aeb0b() {

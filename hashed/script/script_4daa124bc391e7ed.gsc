@@ -1,7 +1,7 @@
 #namespace namespace_9bcd7d72;
 
 // Namespace namespace_9bcd7d72/namespace_9bcd7d72
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x58c48d5a, Offset: 0x68
 // Size: 0x74
 function function_bdda909b() {

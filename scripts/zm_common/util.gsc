@@ -76,7 +76,7 @@ function brush_throw() {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3f4ea379, Offset: 0x500
 // Size: 0x17e
 function playsoundonplayers(sound, team) {
@@ -294,7 +294,7 @@ function _playlocalsound(soundalias) {
 }
 
 // Namespace util/util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc4f06fd0, Offset: 0x1068
 // Size: 0x8c
 function getotherteam(team) {
@@ -309,7 +309,7 @@ function getotherteam(team) {
 }
 
 // Namespace util/util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd8f79c65, Offset: 0x1100
 // Size: 0x74
 function getteammask(team) {
@@ -320,7 +320,7 @@ function getteammask(team) {
 }
 
 // Namespace util/util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xda2b51c, Offset: 0x1180
 // Size: 0xb0
 function getotherteamsmask(skip_team) {
@@ -419,7 +419,7 @@ function registerroundswitch(minvalue, maxvalue) {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x98ce0799, Offset: 0x1500
 // Size: 0x76
 function registerroundlimit(minvalue, maxvalue) {
@@ -429,7 +429,7 @@ function registerroundlimit(minvalue, maxvalue) {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x802e31a0, Offset: 0x1580
 // Size: 0x76
 function registerroundwinlimit(minvalue, maxvalue) {
@@ -439,7 +439,7 @@ function registerroundwinlimit(minvalue, maxvalue) {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcd75b8e3, Offset: 0x1600
 // Size: 0x76
 function registerscorelimit(minvalue, maxvalue) {
@@ -449,7 +449,7 @@ function registerscorelimit(minvalue, maxvalue) {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x781041fc, Offset: 0x1680
 // Size: 0x76
 function registertimelimit(minvalue, maxvalue) {
@@ -459,7 +459,7 @@ function registertimelimit(minvalue, maxvalue) {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x52c195c7, Offset: 0x1700
 // Size: 0x76
 function registernumlives(minvalue, maxvalue) {
@@ -522,7 +522,7 @@ function domaxdamage(origin, attacker, inflictor, headshot, mod) {
 }
 
 // Namespace util/util
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xc864e37e, Offset: 0x1960
 // Size: 0x2f0
 function get_array_of_closest(org, array, excluders = [], max = array.size, maxdist) {

@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace hud/hud_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x21b52d71, Offset: 0x398
 // Size: 0x64
 function __init__() {
@@ -34,7 +34,7 @@ function __init__() {
 }
 
 // Namespace hud/hud_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf3da61f7, Offset: 0x408
 // Size: 0x2dc
 function init() {
@@ -83,7 +83,7 @@ function init() {
 }
 
 // Namespace hud/hud_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5e6a1c63, Offset: 0x6f0
 // Size: 0x1c
 function on_player_connect() {
@@ -91,7 +91,7 @@ function on_player_connect() {
 }
 
 // Namespace hud/hud_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x718
 // Size: 0x4
 function on_player_spawned() {
@@ -99,7 +99,7 @@ function on_player_spawned() {
 }
 
 // Namespace hud/hud_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x32e99eb6, Offset: 0x728
 // Size: 0x84
 function fade_to_black_for_x_sec(startwait, blackscreenwait, fadeintime, fadeouttime, shadername) {
@@ -111,7 +111,7 @@ function fade_to_black_for_x_sec(startwait, blackscreenwait, fadeintime, fadeout
 }
 
 // Namespace hud/hud_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x42dbbfc7, Offset: 0x7b8
 // Size: 0x24
 function screen_fade_in(fadeintime) {
@@ -119,7 +119,7 @@ function screen_fade_in(fadeintime) {
 }
 
 // Namespace hud/hud_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfc5a815a, Offset: 0x7e8
 // Size: 0x44
 function scavenger_hud_create() {
@@ -129,7 +129,7 @@ function scavenger_hud_create() {
 }
 
 // Namespace hud/hud_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x142bfd46, Offset: 0x838
 // Size: 0x44
 function flash_scavenger_icon() {
@@ -139,7 +139,7 @@ function flash_scavenger_icon() {
 }
 
 // Namespace hud/hud_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x541f7ddb, Offset: 0x888
 // Size: 0x118
 function function_6cf4a466() {
@@ -151,7 +151,7 @@ function function_6cf4a466() {
 }
 
 // Namespace hud/hud_shared
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xb8789f55, Offset: 0x9a8
 // Size: 0x4bc
 function set_team_objective(var_3c9f56bd, var_cc966c56, n_obj_id, n_widget, var_48d81699, b_pvp) {
@@ -213,7 +213,7 @@ function set_team_objective(var_3c9f56bd, var_cc966c56, n_obj_id, n_widget, var_
 }
 
 // Namespace hud/hud_shared
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x12bea198, Offset: 0xe70
 // Size: 0xe8
 function private function_6d6eb1eb(var_776f69c5, var_67af9061, var_cc966c56) {
@@ -230,7 +230,7 @@ function private function_6d6eb1eb(var_776f69c5, var_67af9061, var_cc966c56) {
 }
 
 // Namespace hud/hud_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x32c9234e, Offset: 0xf60
 // Size: 0x78
 function private function_a0c57df5(var_cc966c56) {
@@ -244,7 +244,7 @@ function private function_a0c57df5(var_cc966c56) {
 }
 
 // Namespace hud/hud_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xf4d0e5ea, Offset: 0xfe0
 // Size: 0x54c
 function function_9b9f0fd8(str_identifier, var_cc966c56, b_success = 1, e_player, b_pvp) {
@@ -330,7 +330,7 @@ function function_9b9f0fd8(str_identifier, var_cc966c56, b_success = 1, e_player
 }
 
 // Namespace hud/hud_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xedd2f215, Offset: 0x1538
 // Size: 0x256
 function private function_323820d9(var_fd92dd8f, var_776f69c5) {
@@ -361,7 +361,7 @@ function private function_323820d9(var_fd92dd8f, var_776f69c5) {
 }
 
 // Namespace hud/hud_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xb2c48765, Offset: 0x1798
 // Size: 0x94
 function private function_751f0d79(str_identifier, var_776f69c5) {
@@ -374,7 +374,7 @@ function private function_751f0d79(str_identifier, var_776f69c5) {
 }
 
 // Namespace hud/hud_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x29b594a2, Offset: 0x1838
 // Size: 0x2cc
 function function_69ae81e(var_776f69c5, var_67af9061, s_radiant, var_cc966c56) {
@@ -424,7 +424,7 @@ function function_69ae81e(var_776f69c5, var_67af9061, s_radiant, var_cc966c56) {
 }
 
 // Namespace hud/hud_shared
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x1051fec9, Offset: 0x1b10
 // Size: 0x408
 function private function_da72e57e(var_776f69c5, var_67af9061, var_cc966c56) {
@@ -477,7 +477,7 @@ function private function_da72e57e(var_776f69c5, var_67af9061, var_cc966c56) {
 }
 
 // Namespace hud/hud_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x83dbdf30, Offset: 0x1f20
 // Size: 0x732
 function function_e5ae6379(var_ea5acf75 = #"none", var_f30c60cd = 1) {
@@ -589,7 +589,7 @@ function function_e5ae6379(var_ea5acf75 = #"none", var_f30c60cd = 1) {
 }
 
 // Namespace hud/hud_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdc8c0e1e, Offset: 0x2660
 // Size: 0xb2
 function function_6b2e2adf() {
@@ -602,7 +602,7 @@ function function_6b2e2adf() {
 }
 
 // Namespace hud/hud_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xd08fd71f, Offset: 0x2720
 // Size: 0x148
 function private function_e16f5c1b() {
@@ -632,7 +632,7 @@ function private function_e16f5c1b() {
 }
 
 // Namespace hud/hud_shared
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x933b684, Offset: 0x2870
 // Size: 0x272
 function private function_7d2a6070(var_776f69c5, var_67af9061, var_cc966c56, var_e563ad04) {
@@ -662,7 +662,7 @@ function private function_7d2a6070(var_776f69c5, var_67af9061, var_cc966c56, var
 }
 
 // Namespace hud/hud_shared
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0xc16ad1a5, Offset: 0x2af0
 // Size: 0x2a0
 function private function_4a151e92(var_776f69c5, var_67af9061, var_cc966c56, var_e563ad04) {
@@ -697,7 +697,7 @@ function private function_4a151e92(var_776f69c5, var_67af9061, var_cc966c56, var
 }
 
 // Namespace hud/hud_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xab28662e, Offset: 0x2d98
 // Size: 0x6c
 function private function_4ea80779(var_b60373bf, var_e563ad04) {
@@ -712,7 +712,7 @@ function private function_4ea80779(var_b60373bf, var_e563ad04) {
 }
 
 // Namespace hud/hud_shared
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0xb63adef6, Offset: 0x2e10
 // Size: 0x16e
 function private function_7227b733(var_776f69c5, var_67af9061, s_objective, var_cc966c56, e_player) {
@@ -739,7 +739,7 @@ function private function_7227b733(var_776f69c5, var_67af9061, s_objective, var_
 }
 
 // Namespace hud/hud_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x6b27d5c9, Offset: 0x2f88
 // Size: 0x146
 function private function_11a980cd(var_cc966c56, var_776f69c5) {
@@ -756,7 +756,7 @@ function private function_11a980cd(var_cc966c56, var_776f69c5) {
 }
 
 // Namespace hud/hud_shared
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x71309e48, Offset: 0x30d8
 // Size: 0x1ac
 function private function_24ce2fd1(var_776f69c5, s_objective, var_67af9061, var_cc966c56, e_player) {
@@ -780,7 +780,7 @@ function private function_24ce2fd1(var_776f69c5, s_objective, var_67af9061, var_
 }
 
 // Namespace hud/hud_shared
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0xb5813e13, Offset: 0x3290
 // Size: 0x286
 function private function_faab2ef9(var_776f69c5, var_67af9061, s_objective, a_e_players) {
@@ -815,7 +815,7 @@ function private function_faab2ef9(var_776f69c5, var_67af9061, s_objective, a_e_
 }
 
 // Namespace hud/hud_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x3cd480e0, Offset: 0x3520
 // Size: 0x238
 function private function_f71931ab(e_player, var_cc966c56) {
@@ -847,7 +847,7 @@ function private function_f71931ab(e_player, var_cc966c56) {
 }
 
 // Namespace hud/hud_shared
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x89945567, Offset: 0x3760
 // Size: 0x196
 function private function_a192bfac(a_e_players, var_cc966c56, n_state) {
@@ -870,7 +870,7 @@ function private function_a192bfac(a_e_players, var_cc966c56, n_state) {
 }
 
 // Namespace hud/hud_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x734e34ce, Offset: 0x3900
 // Size: 0x284
 function private function_cbf3f034(s_objective) {
@@ -1002,7 +1002,7 @@ function function_b825bd3d(str_team, var_ba9a7af4 = 1, var_b002585c) {
 }
 
 // Namespace hud/hud_shared
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xbd59695c, Offset: 0x4240
 // Size: 0x134
 function private function_ccc1b91c(var_cc966c56, n_progress, var_f6d0dfa6) {
@@ -1020,7 +1020,7 @@ function private function_ccc1b91c(var_cc966c56, n_progress, var_f6d0dfa6) {
 }
 
 // Namespace hud/hud_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x76e684d7, Offset: 0x4380
 // Size: 0x1e4
 function private function_6609ffc(var_cc966c56, n_progress) {
@@ -1052,7 +1052,7 @@ function private function_6609ffc(var_cc966c56, n_progress) {
 }
 
 // Namespace hud/hud_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x2642180b, Offset: 0x4570
 // Size: 0xc2
 function private function_9d9a1a4c() {
@@ -1169,7 +1169,7 @@ function mission_result(str_winning_team, var_db3d629e = #"hash_6ef5bcff7fb1d1ab
 }
 
 // Namespace hud/hud_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x94dd0df8, Offset: 0x4ea0
 // Size: 0xdc
 function private function_bc4f0b54() {
@@ -1186,7 +1186,7 @@ function private function_bc4f0b54() {
 }
 
 // Namespace hud/hud_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5111532, Offset: 0x4f88
 // Size: 0x1e0
 function function_ba453727() {
@@ -1215,7 +1215,7 @@ function function_ba453727() {
 }
 
 // Namespace hud/hud_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xaa9b2f6b, Offset: 0x5170
 // Size: 0x116
 function objective_result(str_winning_team, var_db3d629e = #"hash_6ef5bcff7fb1d1ab", var_95ee5812 = #"hash_6ef5bcff7fb1d1ab") {
@@ -1321,7 +1321,7 @@ function function_ffebf739(str_team, n_progress, b_additive = 0, var_ed465381 = 
 }
 
 // Namespace hud/hud_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x54baaced, Offset: 0x58c8
 // Size: 0x30c
 function function_21ad06d5(b_active, var_7dfc932e = array(#"axis", #"allies")) {

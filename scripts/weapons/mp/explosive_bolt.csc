@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace explosive_bolt/explosive_bolt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x819cce11, Offset: 0x100
 // Size: 0x64
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace explosive_bolt/explosive_bolt
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x841e1b0b, Offset: 0x170
 // Size: 0x3c
 function spawned(localclientnum) {
@@ -34,7 +34,7 @@ function spawned(localclientnum) {
 }
 
 // Namespace explosive_bolt/explosive_bolt
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4c5f0e3, Offset: 0x1b8
 // Size: 0x132
 function fx_think(localclientnum) {
@@ -52,7 +52,7 @@ function fx_think(localclientnum) {
 }
 
 // Namespace explosive_bolt/explosive_bolt
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3ba37d8d, Offset: 0x2f8
 // Size: 0x4a
 function start_light_fx(localclientnum) {
@@ -60,7 +60,7 @@ function start_light_fx(localclientnum) {
 }
 
 // Namespace explosive_bolt/explosive_bolt
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x34317a36, Offset: 0x350
 // Size: 0x4e
 function stop_light_fx(localclientnum) {
@@ -71,7 +71,7 @@ function stop_light_fx(localclientnum) {
 }
 
 // Namespace explosive_bolt/explosive_bolt
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe5a9c980, Offset: 0x3a8
 // Size: 0xbc
 function fullscreen_fx(localclientnum) {

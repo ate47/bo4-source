@@ -25,7 +25,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_urban/mp_urban
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9d935668, Offset: 0x248
 // Size: 0xf2
 function dom_flag_base_fx_override(flag, team) {
@@ -55,7 +55,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_urban/mp_urban
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2ee73978, Offset: 0x348
 // Size: 0xf2
 function dom_flag_cap_fx_override(flag, team) {
@@ -85,7 +85,7 @@ function dom_flag_cap_fx_override(flag, team) {
 }
 
 // Namespace mp_urban/mp_urban
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x388a2371, Offset: 0x448
 // Size: 0x2c
 function on_localclient_connect(localclientnum) {
@@ -94,7 +94,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace mp_urban/mp_urban
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2a313d5b, Offset: 0x480
 // Size: 0x2c
 function on_gameplay_started(localclientnum) {

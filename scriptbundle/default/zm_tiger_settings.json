@@ -4,21 +4,21 @@
             "spawnlocation": "tiger_location"
         }
     ],
-    "var_10460f1e": 1,
+    "hash_10460f1e": 1,
     "scoreevent": "#kill_tiger",
     "configstringfiletype": "scriptbundle",
-    "var_7a715ab5": 100,
+    "hash_7a715ab5": 100,
     "maxhealth": 5000,
-    "var_fc420d71": 1,
+    "instakilldamagescale": 1,
     "name": "zm_tiger_settings",
     "minhealth": 200,
-    "var_628192b0": 1,
-    "var_250a1683": 100,
-    "var_97b22faa": 1,
+    "weakpointdamagescale": 1,
+    "hash_250a1683": 100,
+    "hash_97b22faa": 1,
     "damagescale": 1,
     "category": "#enhanced",
-    "var_854eebd": 0.5,
+    "hash_854eebd": 0.5,
     "stunduration": 1,
-    "var_6f7331cd": 1,
-    "var_450edb3b": 1
+    "hash_6f7331cd": 1,
+    "animationspeed": 1
 }

@@ -3,7 +3,7 @@
 #namespace math;
 
 // Namespace math/math_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x431f4e47, Offset: 0x88
 // Size: 0x38
 function cointoss(n_chance = 50) {
@@ -11,7 +11,7 @@ function cointoss(n_chance = 50) {
 }
 
 // Namespace math/math_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xc522f238, Offset: 0xc8
 // Size: 0x5c
 function clamp(val, val_min, val_max = val) {
@@ -47,7 +47,7 @@ function lag(desired, curr, k, dt) {
 }
 
 // Namespace math/math_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xabf6f36e, Offset: 0x250
 // Size: 0x70
 function find_box_center(mins, maxs) {
@@ -58,7 +58,7 @@ function find_box_center(mins, maxs) {
 }
 
 // Namespace math/math_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf3f2f6a3, Offset: 0x2c8
 // Size: 0xc2
 function expand_mins(mins, point) {
@@ -75,7 +75,7 @@ function expand_mins(mins, point) {
 }
 
 // Namespace math/math_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb7c65285, Offset: 0x398
 // Size: 0xc2
 function expand_maxs(maxs, point) {
@@ -123,7 +123,7 @@ function angle_dif(oldangle, newangle) {
 }
 
 // Namespace math/math_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb7dbd783, Offset: 0x618
 // Size: 0x24
 function sign(x) {
@@ -131,7 +131,7 @@ function sign(x) {
 }
 
 // Namespace math/math_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1f53a878, Offset: 0x648
 // Size: 0x2e
 function randomsign() {
@@ -139,7 +139,7 @@ function randomsign() {
 }
 
 // Namespace math/math_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x7070d25b, Offset: 0x680
 // Size: 0x36a
 function get_dot_direction(v_point, b_ignore_z, b_normalize, str_direction, b_use_eye) {
@@ -249,7 +249,7 @@ function get_dot_from_eye(v_point, b_ignore_z, b_normalize, str_direction) {
 }
 
 // Namespace math/math_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8033fd63, Offset: 0xc60
 // Size: 0xa8
 function array_average(array) {
@@ -263,7 +263,7 @@ function array_average(array) {
 }
 
 // Namespace math/math_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf75d0ed1, Offset: 0xd10
 // Size: 0x11a
 function array_std_deviation(array, mean) {
@@ -281,7 +281,7 @@ function array_std_deviation(array, mean) {
 }
 
 // Namespace math/math_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xf48b86dc, Offset: 0xe38
 // Size: 0x184
 function random_normal_distribution(mean, std_deviation, lower_bound, upper_bound) {
@@ -307,7 +307,7 @@ function random_normal_distribution(mean, std_deviation, lower_bound, upper_boun
 }
 
 // Namespace math/math_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x631751ba, Offset: 0xfc8
 // Size: 0x13e
 function point_on_sphere_even_distribution(pitchrange, index, numberofpoints) {
@@ -321,7 +321,7 @@ function point_on_sphere_even_distribution(pitchrange, index, numberofpoints) {
 }
 
 // Namespace math/math_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x72e79933, Offset: 0x1110
 // Size: 0x1a8
 function closest_point_on_line(point, linestart, lineend) {
@@ -339,7 +339,7 @@ function closest_point_on_line(point, linestart, lineend) {
 }
 
 // Namespace math/math_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x39c0cd17, Offset: 0x12c0
 // Size: 0xc4
 function function_8dd4c3c5(linestart, lineend, point) {
@@ -378,7 +378,7 @@ function function_d3de8415(var_17a1aca9, var_9522f5ec, var_e5dbc91e, var_815dce6
 }
 
 // Namespace math/math_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x14648352, Offset: 0x1568
 // Size: 0x29c
 function function_f16fbd66(var_17a1aca9, var_9522f5ec, var_e5dbc91e, var_815dce62, clamp) {
@@ -408,7 +408,7 @@ function function_f16fbd66(var_17a1aca9, var_9522f5ec, var_e5dbc91e, var_815dce6
 }
 
 // Namespace math/math_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x18e2ca4b, Offset: 0x1810
 // Size: 0x62
 function get_2d_yaw(start, end) {
@@ -417,7 +417,7 @@ function get_2d_yaw(start, end) {
 }
 
 // Namespace math/math_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x265af2b0, Offset: 0x1880
 // Size: 0xd0
 function vec_to_angles(vector) {
@@ -438,7 +438,7 @@ function vec_to_angles(vector) {
 }
 
 // Namespace math/math_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe5d0bc5e, Offset: 0x1958
 // Size: 0x72
 function pow(base, exp) {
@@ -453,7 +453,7 @@ function pow(base, exp) {
 }
 
 // Namespace math/math_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x393896bf, Offset: 0x19d8
 // Size: 0x76
 function function_b1820790(a, b, c, var_2bff268f) {

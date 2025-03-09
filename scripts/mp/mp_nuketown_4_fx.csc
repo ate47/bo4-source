@@ -4,7 +4,7 @@
 #namespace mp_nuketown_4_fx;
 
 // Namespace mp_nuketown_4_fx/mp_nuketown_4_fx
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5055d953, Offset: 0x88
 // Size: 0xc4
 function main() {

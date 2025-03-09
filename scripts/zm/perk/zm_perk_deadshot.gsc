@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_deadshot/zm_perk_deadshot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xee6df852, Offset: 0x1e0
 // Size: 0x14
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_deadshot/zm_perk_deadshot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x10e40b07, Offset: 0x200
 // Size: 0x22c
 function enable_deadshot_perk_for_level() {
@@ -45,7 +45,7 @@ function enable_deadshot_perk_for_level() {
 }
 
 // Namespace zm_perk_deadshot/zm_perk_deadshot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa86e0d55, Offset: 0x438
 // Size: 0x10e
 function deadshot_precache() {
@@ -61,7 +61,7 @@ function deadshot_precache() {
 }
 
 // Namespace zm_perk_deadshot/zm_perk_deadshot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4553153c, Offset: 0x550
 // Size: 0x34
 function deadshot_register_clientfield() {
@@ -69,7 +69,7 @@ function deadshot_register_clientfield() {
 }
 
 // Namespace zm_perk_deadshot/zm_perk_deadshot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x98b4773d, Offset: 0x590
 // Size: 0xc
 function deadshot_set_clientfield(state) {
@@ -77,7 +77,7 @@ function deadshot_set_clientfield(state) {
 }
 
 // Namespace zm_perk_deadshot/zm_perk_deadshot
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x9669af76, Offset: 0x5a8
 // Size: 0xb6
 function deadshot_perk_machine_setup(use_trigger, perk_machine, bump_trigger, collision) {
@@ -93,7 +93,7 @@ function deadshot_perk_machine_setup(use_trigger, perk_machine, bump_trigger, co
 }
 
 // Namespace zm_perk_deadshot/zm_perk_deadshot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd7ec959c, Offset: 0x668
 // Size: 0x24
 function give_deadshot_perk() {
@@ -101,7 +101,7 @@ function give_deadshot_perk() {
 }
 
 // Namespace zm_perk_deadshot/zm_perk_deadshot
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x4fdb25e1, Offset: 0x698
 // Size: 0x44
 function take_deadshot_perk(b_pause, str_perk, str_result, n_slot) {

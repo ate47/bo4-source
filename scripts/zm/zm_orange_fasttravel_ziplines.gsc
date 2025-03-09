@@ -35,7 +35,7 @@
 #namespace zm_orange_fasttravel_ziplines;
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2ecdc85a, Offset: 0x408
 // Size: 0xa4
 function init() {
@@ -46,7 +46,7 @@ function init() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd711b1d, Offset: 0x4b8
 // Size: 0xaa
 function init_flags() {
@@ -59,7 +59,7 @@ function init_flags() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x88685034, Offset: 0x570
 // Size: 0xfc
 function main() {
@@ -72,7 +72,7 @@ function main() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6bc1a252, Offset: 0x678
 // Size: 0x1b8
 function function_53b616a4() {
@@ -93,7 +93,7 @@ function function_53b616a4() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcb465278, Offset: 0x838
 // Size: 0xce
 function function_6eb4fb79() {
@@ -107,7 +107,7 @@ function function_6eb4fb79() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe6e86102, Offset: 0x910
 // Size: 0x110
 function function_4dc96e66() {
@@ -121,7 +121,7 @@ function function_4dc96e66() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2da6e1ce, Offset: 0xa28
 // Size: 0x112
 function function_13febd4b(e_holder, w_item) {
@@ -141,7 +141,7 @@ function function_13febd4b(e_holder, w_item) {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6be0c8a1, Offset: 0xb48
 // Size: 0x1a
 function on_player_connect() {
@@ -150,7 +150,7 @@ function on_player_connect() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8a34363a, Offset: 0xb70
 // Size: 0x14a
 function function_29c3aabf(e_player) {
@@ -178,7 +178,7 @@ function function_29c3aabf(e_player) {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7bce28fd, Offset: 0xcc8
 // Size: 0x1d2
 function function_2713a96a() {
@@ -209,7 +209,7 @@ function function_2713a96a() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x767df1ab, Offset: 0xea8
 // Size: 0x2bc
 function function_665b4fa6() {
@@ -252,7 +252,7 @@ function function_665b4fa6() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x62e32ce, Offset: 0x1170
 // Size: 0x8a
 function function_e76a1a06() {
@@ -279,7 +279,7 @@ function function_3238e183() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x546ad514, Offset: 0x1248
 // Size: 0x14e
 function function_ca1cdeca() {
@@ -303,7 +303,7 @@ function function_ca1cdeca() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf142a24a, Offset: 0x13a0
 // Size: 0x5c
 function function_9305812e(ai, target) {
@@ -315,7 +315,7 @@ function function_9305812e(ai, target) {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x86a4817a, Offset: 0x1408
 // Size: 0x5c
 function function_95d14d08() {
@@ -324,7 +324,7 @@ function function_95d14d08() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4345f50e, Offset: 0x1470
 // Size: 0x84
 function function_7ee05d66() {
@@ -335,7 +335,7 @@ function function_7ee05d66() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x40448e7, Offset: 0x1500
 // Size: 0x4a
 function function_220a8687() {
@@ -346,7 +346,7 @@ function function_220a8687() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x95c46a08, Offset: 0x1558
 // Size: 0x3da
 function function_e82679f8(e_player) {
@@ -394,7 +394,7 @@ function function_e82679f8(e_player) {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9079362a, Offset: 0x1940
 // Size: 0x2a8
 function function_d41f7e0e() {
@@ -455,7 +455,7 @@ function function_d41f7e0e() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbf6134af, Offset: 0x1bf0
 // Size: 0xb04
 function function_5dbd6a40(s_zipline_use) {
@@ -569,7 +569,7 @@ function function_5dbd6a40(s_zipline_use) {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb30184e2, Offset: 0x2700
 // Size: 0x41c
 function function_fc9707f4(vnd_start, s_zipline_use) {
@@ -645,7 +645,7 @@ function private function_85a2c43b() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5231a653, Offset: 0x2c88
 // Size: 0x76
 function function_b9addb5e(zipline) {
@@ -655,7 +655,7 @@ function function_b9addb5e(zipline) {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x17ccfff5, Offset: 0x2d08
 // Size: 0x12a
 function function_a949ddac() {
@@ -676,7 +676,7 @@ function function_a949ddac() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa12e457a, Offset: 0x2e40
 // Size: 0x174
 function function_994538a5(s_zipline_use) {
@@ -701,7 +701,7 @@ function function_994538a5(s_zipline_use) {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd50cf625, Offset: 0x2fc0
 // Size: 0x36
 function function_a393b77f() {

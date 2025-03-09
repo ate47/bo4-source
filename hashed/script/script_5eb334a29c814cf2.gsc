@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_ca8676a3/namespace_ca8676a3
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd32c139b, Offset: 0x160
 // Size: 0x7e
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace namespace_ca8676a3/namespace_ca8676a3
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1e8
 // Size: 0x4
 function __main__() {
@@ -36,7 +36,7 @@ function __main__() {
 }
 
 // Namespace namespace_ca8676a3/namespace_ca8676a3
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x957bdda7, Offset: 0x1f8
 // Size: 0x9c
 function private function_10c92445() {
@@ -51,7 +51,7 @@ function private function_10c92445() {
 }
 
 // Namespace namespace_ca8676a3/namespace_ca8676a3
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcbe69eda, Offset: 0x2a0
 // Size: 0x34
 function private function_188e5077(angles) {
@@ -59,7 +59,7 @@ function private function_188e5077(angles) {
 }
 
 // Namespace namespace_ca8676a3/namespace_ca8676a3
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7adc5e21, Offset: 0x2e0
 // Size: 0x84
 function function_65ed0370(origin, angles) {
@@ -70,7 +70,7 @@ function function_65ed0370(origin, angles) {
 }
 
 // Namespace namespace_ca8676a3/namespace_ca8676a3
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x36dc1b6a, Offset: 0x370
 // Size: 0x1c6
 function function_f1be5640(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -86,8 +86,8 @@ function function_f1be5640(inflictor, attacker, damage, flags, meansofdeath, wea
             n_base_damage *= var_64cc5e50;
         }
     }
-    if (isdefined(self.var_6f84b820)) {
-        switch (self.var_6f84b820) {
+    if (isdefined(self.zm_ai_category)) {
+        switch (self.zm_ai_category) {
         case #"heavy":
             n_base_damage *= 0.2;
             break;
@@ -105,7 +105,7 @@ function function_f1be5640(inflictor, attacker, damage, flags, meansofdeath, wea
 }
 
 // Namespace namespace_ca8676a3/namespace_ca8676a3
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x5d9fd1d6, Offset: 0x540
 // Size: 0x9c
 function private function_80bc397d() {

@@ -1037,7 +1037,7 @@ function private function_1a99656a(localclientnum, inventoryitem, networkid, ite
         if (isdefined(item.itementry) && item.itementry.itemtype === #"resource") {
             if (function_88da0c8e(localclientnum)) {
                 setuimodelvalue(createuimodel(inventoryitem.itemuimodel, "notAccessible"), 1);
-                description = isdefined(item.itementry.var_3b8219fd) ? item.itementry.var_3b8219fd : description;
+                description = isdefined(item.itementry.descriptionalt) ? item.itementry.descriptionalt : description;
             }
         }
         if (isdefined(item.itementry) && item.itementry.itemtype === #"weapon") {
@@ -2438,8 +2438,8 @@ function function_4f16aa30(localclientnum, itemid) {
 // Size: 0x332
 function function_b1136fc8(localclientnum, item) {
     if (isdefined(item) && isdefined(item.origin) && isdefined(item.itementry)) {
-        if (isdefined(item.itementry.var_36781d9f)) {
-            playsound(localclientnum, item.itementry.var_36781d9f, item.origin);
+        if (isdefined(item.itementry.dropsound)) {
+            playsound(localclientnum, item.itementry.dropsound, item.origin);
             return;
         }
         switch (item.itementry.itemtype) {
@@ -2492,7 +2492,7 @@ function function_31868137(localclientnum, item) {
             playsound(localclientnum, #"hash_62fabedcce13774c", item.origin);
             break;
         case #"ammo":
-            playsound(localclientnum, #"hash_36c9bf9c68a692f6", item.origin);
+            playsound(localclientnum, #"fly_pickup_ammo", item.origin);
             break;
         case #"health":
             playsound(localclientnum, #"hash_7cb9f9cf7068ccee", item.origin);

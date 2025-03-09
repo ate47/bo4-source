@@ -9,7 +9,7 @@
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
 // Params 0, eflags: 0x2
-// Checksum 0x96a45c53, Offset: 0xe8
+// Checksum 0x91c4966c, Offset: 0xe8
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zm_orange_trial_shoot_from_water", &__init__, undefined, undefined);
@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
 // Params 0, eflags: 0x0
-// Checksum 0x565e4c4d, Offset: 0x130
+// Checksum 0x322c3c9, Offset: 0x130
 // Size: 0x5c
 function __init__() {
     if (!zm_trial::is_trial_mode()) {
@@ -28,7 +28,7 @@ function __init__() {
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
 // Params 0, eflags: 0x4
-// Checksum 0x61c237, Offset: 0x198
+// Checksum 0x23e951fb, Offset: 0x198
 // Size: 0xc8
 function private on_begin() {
     str_targetname = "trials_shoot_from_water";
@@ -41,7 +41,7 @@ function private on_begin() {
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
 // Params 1, eflags: 0x4
-// Checksum 0xd804513d, Offset: 0x268
+// Checksum 0xfc59a0bc, Offset: 0x268
 // Size: 0xe2
 function private on_end(round_reset) {
     callback::function_824d206(&function_33f0ddd3);
@@ -55,7 +55,7 @@ function private on_end(round_reset) {
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
 // Params 0, eflags: 0x4
-// Checksum 0x1ba32762, Offset: 0x358
+// Checksum 0xd303da62, Offset: 0x358
 // Size: 0x2f2
 function private function_9e0e99e1() {
     self endon(#"disconnect");
@@ -98,8 +98,8 @@ function private function_9e0e99e1() {
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
 // Params 1, eflags: 0x4
-// Checksum 0x1a808cf7, Offset: 0x658
-// Size: 0x1e0
+// Checksum 0x2ada9956, Offset: 0x658
+// Size: 0x1f8
 function private function_33f0ddd3(s_event) {
     if (s_event.event === "give_weapon" || s_event.event === "give_weapon_alt" || s_event.event == "give_weapon_dual") {
         var_f2b6fe6e = 0;
@@ -108,6 +108,7 @@ function private function_33f0ddd3(s_event) {
             return;
         }
         if (!var_f2b6fe6e) {
+            self zm_trial_util::function_bf710271();
             foreach (weapon in self getweaponslist(1)) {
                 if (zm_loadout::function_2ff6913(weapon) == 1) {
                     self unlockweapon(weapon);

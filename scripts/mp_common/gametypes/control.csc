@@ -309,7 +309,7 @@ function warzone(localclientnum, oldval, newval, bnewent, binitialsnap, fieldnam
     level.current_zone_mask[localclientnum] = newval;
     for (zi = 0; zi < level.zones.size; zi++) {
         if ((oldval & 1 << zi) != (newval & 1 << zi)) {
-            level.current_zone_state_mask[localclientnum] = level.current_zone_state_mask[localclientnum] & ~(3 << zi);
+            level.current_zone_state_mask[localclientnum] &= ~(3 << zi);
         }
     }
     setup_warzone_fx(localclientnum);

@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_phoenix_up/zm_bgb_phoenix_up
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7d5d6d0c, Offset: 0xf8
 // Size: 0x4c
 function __init__() {

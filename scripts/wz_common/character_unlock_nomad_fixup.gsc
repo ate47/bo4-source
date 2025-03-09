@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 // Checksum 0x2e4e9dd2, Offset: 0xc8
 // Size: 0x64
 function __init__() {
-    character_unlock_fixup::register_character_unlock(#"nomad_unlock", #"hash_4b77f84c47802222", #"cu07_item", &function_d95e620c, #"hash_7eb32c4c67ae13fe");
+    character_unlock_fixup::register_character_unlock(#"nomad_unlock", #"prt_wz_trapper", #"cu07_item", &function_d95e620c, #"hash_7eb32c4c67ae13fe");
 }
 
 // Namespace character_unlock_nomad_fixup/character_unlock_nomad_fixup

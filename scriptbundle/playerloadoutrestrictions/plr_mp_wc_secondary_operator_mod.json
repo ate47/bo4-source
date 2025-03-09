@@ -2,6 +2,6 @@
     "configstringfiletype": "scriptbundle",
     "type": "playerloadoutrestrictions",
     "name": "plr_mp_wc_secondary_operator_mod",
-    "var_9bb0ceab": "#bonuscard_secondary_operator_mod",
-    "var_c3fc8c73": 1
+    "hash_9bb0ceab": "#bonuscard_secondary_operator_mod",
+    "hash_c3fc8c73": 1
 }

@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_powerup_full_ammo/zm_powerup_full_ammo
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3407be70, Offset: 0xd8
 // Size: 0x44
 function __init__() {

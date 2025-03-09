@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_ee_motd_plane/wz_ee_motd_plane
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5c26f55c, Offset: 0x140
 // Size: 0x16c
 function __init__() {
@@ -33,7 +33,7 @@ function __init__() {
 }
 
 // Namespace wz_ee_motd_plane/wz_ee_motd_plane
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xacedc74, Offset: 0x2b8
 // Size: 0x13c
 function function_d53a8c5b() {
@@ -54,7 +54,7 @@ function function_d53a8c5b() {
 }
 
 // Namespace wz_ee_motd_plane/wz_ee_motd_plane
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd5b9d5e6, Offset: 0x400
 // Size: 0xcc
 function function_3e59cbbb(goal) {
@@ -70,7 +70,7 @@ function function_3e59cbbb(goal) {
 }
 
 // Namespace wz_ee_motd_plane/wz_ee_motd_plane
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0xe58d2aaf, Offset: 0x4d8
 // Size: 0x12e
 function function_f3dbfe8d(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
@@ -87,7 +87,7 @@ function function_f3dbfe8d(einflictor, eattacker, idamage, idflags, smeansofdeat
 }
 
 // Namespace wz_ee_motd_plane/wz_ee_motd_plane
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfa432509, Offset: 0x610
 // Size: 0x2c2
 function function_9dc0fa01() {

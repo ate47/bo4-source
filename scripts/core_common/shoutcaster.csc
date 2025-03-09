@@ -6,7 +6,7 @@
 #namespace shoutcaster;
 
 // Namespace shoutcaster/shoutcaster
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7054ad35, Offset: 0x1f8
 // Size: 0x22
 function is_shoutcaster(localclientnum) {
@@ -14,7 +14,7 @@ function is_shoutcaster(localclientnum) {
 }
 
 // Namespace shoutcaster/shoutcaster
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbdbb8c2b, Offset: 0x228
 // Size: 0x3c
 function function_2e6e4ee0(localclientnum) {
@@ -22,7 +22,7 @@ function function_2e6e4ee0(localclientnum) {
 }
 
 // Namespace shoutcaster/shoutcaster
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x866cf77e, Offset: 0x270
 // Size: 0x44
 function is_shoutcaster_using_team_identity(localclientnum) {
@@ -30,7 +30,7 @@ function is_shoutcaster_using_team_identity(localclientnum) {
 }
 
 // Namespace shoutcaster/shoutcaster
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x441848b9, Offset: 0x2c0
 // Size: 0x62
 function get_team_color_id(localclientnum, team) {
@@ -41,7 +41,7 @@ function get_team_color_id(localclientnum, team) {
 }
 
 // Namespace shoutcaster/shoutcaster
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf8d168bf, Offset: 0x330
 // Size: 0x56
 function get_team_color_fx(localclientnum, team, script_bundle) {
@@ -76,7 +76,7 @@ function is_friendly(localclientnum) {
 }
 
 // Namespace shoutcaster/shoutcaster
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9c2790be, Offset: 0x4e0
 // Size: 0x3c
 function function_981be10f(local_client_num) {
@@ -85,7 +85,7 @@ function function_981be10f(local_client_num) {
 }
 
 // Namespace shoutcaster/shoutcaster
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xec3409e0, Offset: 0x528
 // Size: 0x410
 function private shoutcaster_monitor_xray_change(local_client_num) {
@@ -135,7 +135,7 @@ function private shoutcaster_monitor_xray_change(local_client_num) {
 }
 
 // Namespace shoutcaster/shoutcaster
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0xcadaedeb, Offset: 0x940
 // Size: 0x428
 function private function_4c4946d4(local_client_num, localplayerteam, var_52fe6881, var_faa7a3fb) {
@@ -184,7 +184,7 @@ function private function_4c4946d4(local_client_num, localplayerteam, var_52fe68
 }
 
 // Namespace shoutcaster/shoutcaster
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x40612b99, Offset: 0xd70
 // Size: 0x38c
 function function_a0b844f1(local_client_num, rob_key, rob) {
@@ -213,7 +213,7 @@ function function_a0b844f1(local_client_num, rob_key, rob) {
 }
 
 // Namespace shoutcaster/shoutcaster
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x60a8b40e, Offset: 0x1108
 // Size: 0x4a
 function private function_7ed4edd3(playername) {
@@ -230,7 +230,7 @@ function private function_7ed4edd3(playername) {
 }
 
 // Namespace shoutcaster/shoutcaster
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x50b84315, Offset: 0x1160
 // Size: 0x5c
 function private function_2b07633f(playername) {
@@ -250,7 +250,7 @@ function private function_2b07633f(playername) {
 }
 
 // Namespace shoutcaster/shoutcaster
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x34194998, Offset: 0x11c8
 // Size: 0x9e
 function function_995e01b6(localclientnum, player) {
@@ -263,7 +263,7 @@ function function_995e01b6(localclientnum, player) {
 }
 
 // Namespace shoutcaster/shoutcaster
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x8bcb674f, Offset: 0x1270
 // Size: 0xa6
 function private function_8e1e7736(localclientnum, player) {
@@ -277,7 +277,7 @@ function private function_8e1e7736(localclientnum, player) {
 }
 
 // Namespace shoutcaster/shoutcaster
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x873f3749, Offset: 0x1320
 // Size: 0x5c
 function private function_35248a94(localclientnum, playername) {
@@ -288,7 +288,7 @@ function private function_35248a94(localclientnum, playername) {
 }
 
 // Namespace shoutcaster/shoutcaster
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x20b7f206, Offset: 0x1388
 // Size: 0x46
 function private function_69b179ea(localclientnum) {
@@ -299,7 +299,7 @@ function private function_69b179ea(localclientnum) {
 }
 
 // Namespace shoutcaster/shoutcaster
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x70c12bc1, Offset: 0x13d8
 // Size: 0x2a8
 function private shoutcaster_monitor_player_pucks(localclientnum) {

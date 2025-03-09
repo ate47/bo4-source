@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_3b8b8298/namespace_3b8b8298
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4f48bdd1, Offset: 0x128
 // Size: 0x34
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace namespace_3b8b8298/namespace_3b8b8298
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x285501c8, Offset: 0x168
 // Size: 0x74
 function private on_localclient_connect(localclientnum) {
@@ -37,7 +37,7 @@ function private on_localclient_connect(localclientnum) {
 }
 
 // Namespace namespace_3b8b8298/namespace_3b8b8298
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2c483cfc, Offset: 0x1e8
 // Size: 0x2cc
 function private function_53d906fd(localclientnum) {
@@ -72,7 +72,7 @@ function private function_53d906fd(localclientnum) {
 }
 
 // Namespace namespace_3b8b8298/namespace_3b8b8298
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x2be431fa, Offset: 0x4c0
 // Size: 0x4ac
 function function_6b5dfd6c(localclientnum, playfx, var_484cae2, id, player) {

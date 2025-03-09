@@ -1,19 +1,19 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "var_826726a": "#hash_6ed6f16e719818bc"
+            "hash_826726a": "#hash_6ed6f16e719818bc"
         },
         {
-            "var_826726a": "#hash_feee6890a6759fe"
+            "hash_826726a": "#hash_feee6890a6759fe"
         }
     ],
     "contracticon": "#hash_5947883ecc75021",
-    "var_d0100eab": 2,
+    "hash_d0100eab": 2,
     "relateditemname": "#hash_feee6890a6759fe",
     "contracttitle": "#hash_6ed6f16e719818bc",
     "name": "loot_contract_crash_cop",
     "contractdescription": "#hash_5d723ae8855383fa",
-    "var_f15e270f": "#white",
-    "var_1c057e8c": "#hash_1acfc0046503e008",
-    "var_e08fc162": "#hash_202b143ac8709224"
+    "hash_f15e270f": "#white",
+    "hash_1c057e8c": "#hash_1acfc0046503e008",
+    "hash_e08fc162": "#hash_202b143ac8709224"
 }

@@ -22,7 +22,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_cairo/mp_cairo
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5baa21b1, Offset: 0x278
 // Size: 0xf2
 function dom_flag_base_fx_override(flag, team) {
@@ -52,7 +52,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_cairo/mp_cairo
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcdbd7603, Offset: 0x378
 // Size: 0xf2
 function dom_flag_cap_fx_override(flag, team) {

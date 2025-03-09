@@ -21,8 +21,8 @@
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 3,
-    "var_9b009839": -1,
+    "hash_345eba59": 3,
+    "hash_9b009839": -1,
     "name": "boxing_gym_list_equipment",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

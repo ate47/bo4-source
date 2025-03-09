@@ -4,12 +4,12 @@
     "value2": "25",
     "value3": "50",
     "value1": "0",
-    "var_dfed6968": "100",
-    "var_71ce0d1f": "5",
+    "value4": "100",
+    "value5": "5",
     "type": "gamesettings",
     "label": "#hash_601d0fe0faebad9f",
     "name": "spawn_health_boost_percent",
     "displayname": "#hash_28b1e5d6ba5ad23",
-    "var_9de86f42": 4,
+    "optionscount": 4,
     "setting": "killPointsInEnemyProtectedZone"
 }

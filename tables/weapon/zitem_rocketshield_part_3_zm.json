@@ -1,0 +1,13 @@
+{
+    "name": "#zitem_rocketshield_part_3_zm",
+    "baseWeapon": "#zitem_rocketshield_part_3",
+    "streamkey": "#hash_39a071f9ba966206",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#hash_1d9884608c8",
+    "viewmodel": "#hash_1d95166ee90",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "image_d40": "#$blacktransparent",
+    "underwaterExplosionSurfaceFX": []
+}

@@ -7,7 +7,7 @@
 #namespace proximity_grenade;
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80b55558, Offset: 0xd0
 // Size: 0x174
 function init_shared() {
@@ -22,7 +22,7 @@ function init_shared() {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2681b617, Offset: 0x250
 // Size: 0x8c
 function proximity_spawned(localclientnum) {
@@ -36,7 +36,7 @@ function proximity_spawned(localclientnum) {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x29b6adfc, Offset: 0x2e8
 // Size: 0x1c0
 function watchforproximityexplosion() {

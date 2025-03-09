@@ -640,11 +640,11 @@ function function_7a1e21a9(attacker, v_origin, min_radius = 50, max_radius = 70,
 // Checksum 0x34275d2f, Offset: 0x3210
 // Size: 0x324
 function function_d92e3c5a(attacker, ai_zone, itemlist) {
-    if (!isdefined(self.var_6a7537d8)) {
-        self.var_6a7537d8 = 1;
+    if (!isdefined(self.itemdropcount)) {
+        self.itemdropcount = 1;
     }
     v_origin = self.origin;
-    items = self namespace_65181344::function_fd87c780(itemlist, self.var_6a7537d8);
+    items = self namespace_65181344::function_fd87c780(itemlist, self.itemdropcount);
     if (!isdefined(self)) {
         return;
     }
@@ -813,7 +813,7 @@ function function_f311bd4c(ai_zone) {
             if (isdefined(self.var_2cee3556)) {
                 var_b25650ab.var_2cee3556 = self.var_2cee3556;
                 foreach (item_list, drop_count in var_b25650ab.var_2cee3556) {
-                    var_b25650ab.var_6a7537d8 = drop_count;
+                    var_b25650ab.itemdropcount = drop_count;
                     var_b25650ab function_d92e3c5a(waitresult.attacker, ai_zone, item_list);
                 }
                 return;

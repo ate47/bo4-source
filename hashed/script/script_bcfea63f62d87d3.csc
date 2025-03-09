@@ -12,7 +12,7 @@ function autoexec main() {
 }
 
 // Namespace namespace_77b8863/namespace_77b8863
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x89e857ee, Offset: 0x1d8
 // Size: 0x19c
 function function_72955447(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

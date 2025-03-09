@@ -13,7 +13,7 @@ class class_d5e9830e {
     var tags;
 
     // Namespace class_d5e9830e/archetype_damage_effects
-    // Params 0, eflags: 0x9 linked
+    // Params 0, eflags: 0x8
     // Checksum 0xab692833, Offset: 0x1260
     // Size: 0x1e
     constructor() {
@@ -33,7 +33,7 @@ function autoexec main() {
 }
 
 // Namespace archetype_damage_effects/archetype_damage_effects
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaa1c2e33, Offset: 0x290
 // Size: 0x94
 function registerclientfields() {
@@ -42,7 +42,7 @@ function registerclientfields() {
 }
 
 // Namespace archetype_damage_effects/archetype_damage_effects
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x30b2e6cf, Offset: 0x330
 // Size: 0xccc
 function loadeffects() {
@@ -106,7 +106,7 @@ function loadeffects() {
 }
 
 // Namespace archetype_damage_effects/archetype_damage_effects
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x8da5e836, Offset: 0x1008
 // Size: 0xdc
 function private _burntag(localclientnum, tag, postfix, prefix) {
@@ -123,7 +123,7 @@ function private _burntag(localclientnum, tag, postfix, prefix) {
 }
 
 // Namespace archetype_damage_effects/archetype_damage_effects
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x378bea25, Offset: 0x10f0
 // Size: 0x166
 function private _burnstage(localclientnum, tagarray, shouldwait, prefix) {
@@ -153,7 +153,7 @@ function private _burnstage(localclientnum, tagarray, shouldwait, prefix) {
 }
 
 // Namespace archetype_damage_effects/archetype_damage_effects
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2c841c00, Offset: 0x1328
 // Size: 0x4ee
 function private _burnbody(localclientnum, prefix) {
@@ -207,7 +207,7 @@ function private _burnbody(localclientnum, prefix) {
 }
 
 // Namespace archetype_damage_effects/archetype_damage_effects
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa9f0d7ea, Offset: 0x1820
 // Size: 0x6c
 function sndstopburnloop(timer) {
@@ -262,7 +262,7 @@ function private _burncorpse(localclientnum) {
 }
 
 // Namespace archetype_damage_effects/archetype_damage_effects
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x5e8fb58, Offset: 0x1c78
 // Size: 0x17a
 function actor_fire_fx(localclientnum, value, burningduration) {
@@ -289,7 +289,7 @@ function actor_fire_fx(localclientnum, value, burningduration) {
 }
 
 // Namespace archetype_damage_effects/archetype_damage_effects
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf4d629a, Offset: 0x1e00
 // Size: 0x5c
 function actor_fire_fx_state(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -297,7 +297,7 @@ function actor_fire_fx_state(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace archetype_damage_effects/archetype_damage_effects
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfa656981, Offset: 0x1e68
 // Size: 0x132
 function actor_char(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -319,7 +319,7 @@ function actor_char(localclientnum, oldval, newval, bnewent, binitialsnap, field
 }
 
 // Namespace archetype_damage_effects/archetype_damage_effects
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc872f977, Offset: 0x1fa8
 // Size: 0x16c
 function actorcharrampto(localclientnum, chardesired) {

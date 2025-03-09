@@ -16,7 +16,7 @@
                 }
             ],
             "description": "#hash_695aefb1afbb4b58",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "description": "#hash_695af2b1afbb5071"
@@ -24,8 +24,8 @@
     ],
     "description": "#hash_76fcfde15697b302",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 2,
-    "var_e8b98a8a": "#hash_11329de6f6804241",
+    "hash_eda4062b": 2,
+    "hash_e8b98a8a": "#hash_11329de6f6804241",
     "model": "#hash_b567efbbedcbcce",
     "type": "itemspawnentry",
     "hintstring": "#hash_6bd8bb04c57868ff",

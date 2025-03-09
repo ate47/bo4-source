@@ -2,17 +2,17 @@
     "weakpoints": [
         {
             "hitloc": "helmet",
-            "var_641ce20e": 1,
+            "hash_641ce20e": 1,
             "type": "#armor",
-            "var_51e8b151": "j_head",
+            "hash_51e8b151": "j_head",
             "activebydefault": 1,
             "health": 0.33
         },
         {
             "hitloc": "head",
-            "var_8223b0cf": 2,
+            "hash_8223b0cf": 2,
             "type": "#weakpoint",
-            "var_51e8b151": "j_head",
+            "hash_51e8b151": "j_head",
             "health": 1
         }
     ],
@@ -20,5 +20,5 @@
     "model": "#c_t8_zmb_dlc0_zombie_marauder_body1",
     "type": "characterweakpointsettings",
     "name": "c_t8_zmb_gladiator_mar_weakpoint_def",
-    "var_96a09826": 2
+    "hash_96a09826": 2
 }

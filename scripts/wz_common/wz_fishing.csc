@@ -5,7 +5,7 @@
 
 // Namespace wz_fishing/wz_fishing
 // Params 0, eflags: 0x2
-// Checksum 0xb418fda8, Offset: 0x140
+// Checksum 0xd3f384b4, Offset: 0x140
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"wz_fishing", &__init__, undefined, undefined);
@@ -20,8 +20,8 @@ function autoexec __init() {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 0, eflags: 0x1 linked
-// Checksum 0x4ad25f55, Offset: 0x198
+// Params 0, eflags: 0x0
+// Checksum 0x138d004d, Offset: 0x198
 // Size: 0xdc
 function __init__() {
     clientfield::register("scriptmover", "fishing_splash", 21000, 1, "int", &fishing_splash, 0, 0);
@@ -30,8 +30,8 @@ function __init__() {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 7, eflags: 0x1 linked
-// Checksum 0x2e754246, Offset: 0x280
+// Params 7, eflags: 0x0
+// Checksum 0xe6bbd6cc, Offset: 0x280
 // Size: 0xcc
 function function_c06a890a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
@@ -43,7 +43,7 @@ function function_c06a890a(localclientnum, oldval, newval, bnewent, binitialsnap
 
 // Namespace wz_fishing/wz_fishing
 // Params 7, eflags: 0x0
-// Checksum 0xd6bac99a, Offset: 0x358
+// Checksum 0x3ab8b1b3, Offset: 0x358
 // Size: 0xcc
 function fishing_buoy_splash(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 0) {
@@ -57,8 +57,8 @@ function fishing_buoy_splash(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 7, eflags: 0x1 linked
-// Checksum 0x70ff32bf, Offset: 0x430
+// Params 7, eflags: 0x0
+// Checksum 0xd0e06a49, Offset: 0x430
 // Size: 0xcc
 function fishing_splash(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 0) {

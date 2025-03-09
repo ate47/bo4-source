@@ -1,0 +1,27 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7560f5e7eba91181",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_27ee1f155f7a8b70",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "final",
+    "type": "scene",
+    "name": "p8_fxanim_mp_offshore_alt_mine_floating_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

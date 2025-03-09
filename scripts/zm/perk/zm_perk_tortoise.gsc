@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb5c8d4c6, Offset: 0x1f0
 // Size: 0x14
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x210
 // Size: 0x4
 function __main__() {
@@ -33,7 +33,7 @@ function __main__() {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x36033fd5, Offset: 0x220
 // Size: 0x23c
 function enable_tortoise_perk_for_level() {
@@ -50,7 +50,7 @@ function enable_tortoise_perk_for_level() {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x468
 // Size: 0x4
 function function_3cc019d7() {
@@ -58,7 +58,7 @@ function function_3cc019d7() {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x522b5a7c, Offset: 0x478
 // Size: 0xbe
 function function_1441654f() {
@@ -69,7 +69,7 @@ function function_1441654f() {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd17d2409, Offset: 0x540
 // Size: 0x34
 function function_2ebeec84() {
@@ -77,7 +77,7 @@ function function_2ebeec84() {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1ac30970, Offset: 0x580
 // Size: 0xc
 function function_9b64bd1b(state) {
@@ -85,7 +85,7 @@ function function_9b64bd1b(state) {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x7e8200bc, Offset: 0x598
 // Size: 0xb6
 function function_c282add5(use_trigger, perk_machine, bump_trigger, collision) {
@@ -101,7 +101,7 @@ function function_c282add5(use_trigger, perk_machine, bump_trigger, collision) {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf6b084e5, Offset: 0x658
 // Size: 0x1a
 function function_f8196ccf() {
@@ -109,7 +109,7 @@ function function_f8196ccf() {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x615f78a7, Offset: 0x680
 // Size: 0x2e
 function function_b754923d(b_pause, str_perk, str_result, n_slot) {
@@ -117,7 +117,7 @@ function function_b754923d(b_pause, str_perk, str_result, n_slot) {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5de31f3f, Offset: 0x6b8
 // Size: 0x330
 function function_81058b09(var_d92ac80e) {
@@ -141,14 +141,14 @@ function function_81058b09(var_d92ac80e) {
         ai.var_cbfc5f6e = 1;
         ai dodamage(1200, v_explosion_origin, self, self, "none", "MOD_EXPLOSIVE", 0, var_d92ac80e);
         if (isalive(ai)) {
-            if (ai.var_6f84b820 === #"heavy" || ai.var_6f84b820 === #"miniboss") {
+            if (ai.zm_ai_category === #"heavy" || ai.zm_ai_category === #"miniboss") {
                 if (!(isdefined(ai.knockdown) && ai.knockdown)) {
                     ai ai::stun();
                 }
             } else {
                 ai zombie_utility::setup_zombie_knockdown(v_explosion_origin);
             }
-        } else if (isdefined(ai) && (ai.var_6f84b820 === #"basic" || ai.var_6f84b820 === #"enhanced")) {
+        } else if (isdefined(ai) && (ai.zm_ai_category === #"basic" || ai.zm_ai_category === #"enhanced")) {
             ai zm_spawner::zombie_explodes_intopieces(0);
         }
         if (isdefined(ai)) {
@@ -159,7 +159,7 @@ function function_81058b09(var_d92ac80e) {
 }
 
 // Namespace zm_perk_tortoise/zm_perk_tortoise
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x804cdd76, Offset: 0x9f0
 // Size: 0x3c
 function explosion_fx() {

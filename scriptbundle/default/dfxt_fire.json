@@ -1,11 +1,11 @@
 {
-    "var_6a36c78c": "j_wrist_le",
-    "var_82aadb9b": "j_knee_le",
+    "hash_6a36c78c": "j_wrist_le",
+    "hash_82aadb9b": "j_knee_le",
     "dropoff": "#hash_42890f4c1689c1d2",
     "contrails": "#hash_5c8c05f6e5c27027",
     "name": "dfxt_fire",
     "icon": "loot_ui_icon_jumppacks_trail_fire_and_fury",
-    "var_ccb00fe4": "j_wrist_ri",
+    "hash_ccb00fe4": "j_wrist_ri",
     "body_trail_3p": "#hash_dc89e2e51732a78",
     "largeicon": "loot_ui_icon_jumppacks_trail_fire_and_fury_large",
     "body_trail": "#hash_dcfaa2e51795d8a"

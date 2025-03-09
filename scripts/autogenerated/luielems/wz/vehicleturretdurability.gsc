@@ -7,18 +7,18 @@
 // Method(s) 6 Total 13
 class cvehicleturretdurability : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cvehicleturretdurability/vehicleturretdurability
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x18948c15, Offset: 0x2d8
     // Size: 0x3c
     function set_bar_percent(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "bar_percent", value);
+        player clientfield::function_9bf78ef8(_uid, "bar_percent", value);
     }
 
     // Namespace cvehicleturretdurability/vehicleturretdurability
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x4c9265f5, Offset: 0x2a8
     // Size: 0x24
     function close(player) {
@@ -26,7 +26,7 @@ class cvehicleturretdurability : cluielem {
     }
 
     // Namespace cvehicleturretdurability/vehicleturretdurability
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x6b8b4a3, Offset: 0x258
     // Size: 0x44
     function open(player, persistent = 0) {
@@ -34,7 +34,7 @@ class cvehicleturretdurability : cluielem {
     }
 
     // Namespace cvehicleturretdurability/vehicleturretdurability
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xfd55ebd, Offset: 0x200
     // Size: 0x4c
     function setup_clientfields(uid) {
@@ -45,7 +45,7 @@ class cvehicleturretdurability : cluielem {
 }
 
 // Namespace vehicleturretdurability/vehicleturretdurability
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x90d76b25, Offset: 0xd8
 // Size: 0x40
 function register(uid) {
@@ -63,7 +63,7 @@ function open(player, persistent = 0) {
 }
 
 // Namespace vehicleturretdurability/vehicleturretdurability
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xda9390a3, Offset: 0x160
 // Size: 0x1c
 function close(player) {
@@ -71,7 +71,7 @@ function close(player) {
 }
 
 // Namespace vehicleturretdurability/vehicleturretdurability
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc64d85ee, Offset: 0x188
 // Size: 0x1a
 function is_open(player) {

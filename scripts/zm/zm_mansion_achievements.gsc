@@ -5,7 +5,7 @@
 #namespace mansion_achievements;
 
 // Namespace mansion_achievements/zm_mansion_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x30682a78, Offset: 0x230
 // Size: 0xc4
 function init() {
@@ -19,25 +19,25 @@ function init() {
 }
 
 // Namespace mansion_achievements/zm_mansion_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5d3af9b7, Offset: 0x300
 // Size: 0x94
 function on_player_connect() {
     self thread function_51328dc2();
     self thread function_783dcd31();
     self thread function_87a4fba4();
-    self thread function_e1ae38eb();
+    self thread bend19_animate_ta();
     self thread function_dd592c16();
     self thread function_18c92a4f();
 }
 
 // Namespace mansion_achievements/zm_mansion_achievements
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x42479c63, Offset: 0x3a0
 // Size: 0xe6
 function on_player_damage(params) {
-    if (isdefined(params.einflictor) && isdefined(params.einflictor.var_9fde8624)) {
-        var_e72cb811 = params.einflictor.var_9fde8624;
+    if (isdefined(params.einflictor) && isdefined(params.einflictor.subarchetype)) {
+        var_e72cb811 = params.einflictor.subarchetype;
     }
     if (isdefined(params.einflictor) && isdefined(params.einflictor.str_current_anim)) {
         str_current_anim = params.einflictor.str_current_anim;
@@ -48,7 +48,7 @@ function on_player_damage(params) {
 }
 
 // Namespace mansion_achievements/zm_mansion_achievements
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa2276ea, Offset: 0x490
 // Size: 0x280
 function on_ai_killed(params) {
@@ -78,7 +78,7 @@ function on_ai_killed(params) {
 }
 
 // Namespace mansion_achievements/zm_mansion_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaf1b0485, Offset: 0x718
 // Size: 0x7c
 function function_51e43f4f() {
@@ -91,7 +91,7 @@ function function_51e43f4f() {
 }
 
 // Namespace mansion_achievements/zm_mansion_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1d77b38c, Offset: 0x7a0
 // Size: 0x94
 function function_783dcd31() {
@@ -105,7 +105,7 @@ function function_783dcd31() {
 }
 
 // Namespace mansion_achievements/zm_mansion_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb1ea89cf, Offset: 0x840
 // Size: 0x94
 function function_87a4fba4() {
@@ -119,7 +119,7 @@ function function_87a4fba4() {
 }
 
 // Namespace mansion_achievements/zm_mansion_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xeea03f78, Offset: 0x8e0
 // Size: 0x94
 function function_51328dc2() {
@@ -133,7 +133,7 @@ function function_51328dc2() {
 }
 
 // Namespace mansion_achievements/zm_mansion_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7f79b755, Offset: 0x980
 // Size: 0x84
 function function_f4b6212() {
@@ -146,7 +146,7 @@ function function_f4b6212() {
 }
 
 // Namespace mansion_achievements/zm_mansion_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x479ccd84, Offset: 0xa10
 // Size: 0x9c
 function function_c91cfd5a() {
@@ -161,7 +161,7 @@ function function_c91cfd5a() {
 }
 
 // Namespace mansion_achievements/zm_mansion_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcf8c0904, Offset: 0xab8
 // Size: 0x164
 function function_a46f4413() {
@@ -186,7 +186,7 @@ function function_a46f4413() {
 }
 
 // Namespace mansion_achievements/zm_mansion_achievements
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc803cfbd, Offset: 0xc28
 // Size: 0x88
 function function_8dc740fa(str_blueprint) {
@@ -201,10 +201,10 @@ function function_8dc740fa(str_blueprint) {
 }
 
 // Namespace mansion_achievements/zm_mansion_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x64218d85, Offset: 0xcb8
 // Size: 0x94
-function function_e1ae38eb() {
+function bend19_animate_ta() {
     level endon(#"end_game");
     self endon(#"disconnect");
     self waittill(#"hash_510f9114e7a6300c");
@@ -215,7 +215,7 @@ function function_e1ae38eb() {
 }
 
 // Namespace mansion_achievements/zm_mansion_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x280bed59, Offset: 0xd58
 // Size: 0x94
 function function_dd592c16() {
@@ -229,7 +229,7 @@ function function_dd592c16() {
 }
 
 // Namespace mansion_achievements/zm_mansion_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5b3cd14c, Offset: 0xdf8
 // Size: 0x94
 function function_18c92a4f() {

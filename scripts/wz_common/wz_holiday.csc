@@ -19,7 +19,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace wz_holiday/wz_holiday
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4a835708, Offset: 0x1c8
 // Size: 0x1e8
 function function_af9a5cd8() {
@@ -40,7 +40,7 @@ function function_af9a5cd8() {
 }
 
 // Namespace wz_holiday/wz_holiday
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x724af990, Offset: 0x3b8
 // Size: 0x5ac
 function function_c5d0e538() {

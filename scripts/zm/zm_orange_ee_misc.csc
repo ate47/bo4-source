@@ -6,7 +6,7 @@
 #namespace zm_orange_ee_misc;
 
 // Namespace zm_orange_ee_misc/zm_orange_ee_misc
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdd20af3f, Offset: 0xc0
 // Size: 0x2c
 function preload() {
@@ -23,7 +23,7 @@ function main() {
 }
 
 // Namespace zm_orange_ee_misc/zm_orange_ee_misc
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x31894aa6, Offset: 0x108
 // Size: 0xb4
 function init_clientfields() {
@@ -32,7 +32,7 @@ function init_clientfields() {
 }
 
 // Namespace zm_orange_ee_misc/zm_orange_ee_misc
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8f529cf6, Offset: 0x1c8
 // Size: 0x8c
 function function_30ed45c9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -43,7 +43,7 @@ function function_30ed45c9(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_orange_ee_misc/zm_orange_ee_misc
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd7cfa717, Offset: 0x260
 // Size: 0x8c
 function function_48a634b7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -54,7 +54,7 @@ function function_48a634b7(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_orange_ee_misc/zm_orange_ee_misc
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5f6e41f0, Offset: 0x2f8
 // Size: 0x8c
 function pareidolia_ee() {

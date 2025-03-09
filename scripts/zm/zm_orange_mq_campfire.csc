@@ -4,7 +4,7 @@
 #namespace zm_orange_mq_campfire;
 
 // Namespace zm_orange_mq_campfire/zm_orange_mq_campfire
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x88
 // Size: 0x4
 function preload() {

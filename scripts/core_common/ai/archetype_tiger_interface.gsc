@@ -4,7 +4,7 @@
 #namespace tigerinterface;
 
 // Namespace tigerinterface/archetype_tiger_interface
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfef8fd4b, Offset: 0x88
 // Size: 0xec
 function registertigerinterfaceattributes() {

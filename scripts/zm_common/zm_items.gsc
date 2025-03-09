@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_items/zm_items
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc46bca95, Offset: 0x148
 // Size: 0xe4
 function __init__() {
@@ -48,7 +48,7 @@ function __init__() {
 }
 
 // Namespace zm_items/zm_items
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbf2b06d7, Offset: 0x238
 // Size: 0x3b0
 function __main__() {
@@ -101,7 +101,7 @@ function __main__() {
 }
 
 // Namespace zm_items/zm_items
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb23acf2b, Offset: 0x5f0
 // Size: 0x32
 function player_on_spawned() {
@@ -114,7 +114,7 @@ function player_on_spawned() {
 }
 
 // Namespace zm_items/zm_items
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x25115baa, Offset: 0x630
 // Size: 0x100
 function function_4d230236(w_item, fn_callback) {
@@ -133,7 +133,7 @@ function function_4d230236(w_item, fn_callback) {
 }
 
 // Namespace zm_items/zm_items
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x6e06e7ad, Offset: 0x738
 // Size: 0x68
 function private function_307756a0() {
@@ -145,7 +145,7 @@ function private function_307756a0() {
 }
 
 // Namespace zm_items/zm_items
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x87b63155, Offset: 0x7a8
 // Size: 0x110
 function private function_b64c32cf(player) {
@@ -161,7 +161,7 @@ function private function_b64c32cf(player) {
 }
 
 // Namespace zm_items/zm_items
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2c1b9b94, Offset: 0x8c0
 // Size: 0x11a
 function player_has(player, w_item) {
@@ -184,7 +184,7 @@ function player_has(player, w_item) {
 }
 
 // Namespace zm_items/zm_items
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x997b4062, Offset: 0x9e8
 // Size: 0x25c
 function player_pick_up(player, w_item) {
@@ -216,7 +216,7 @@ function player_pick_up(player, w_item) {
 }
 
 // Namespace zm_items/zm_items
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x750d7f83, Offset: 0xc50
 // Size: 0x116
 function player_take(player, w_item) {
@@ -240,7 +240,7 @@ function player_take(player, w_item) {
 }
 
 // Namespace zm_items/zm_items
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x755f7953, Offset: 0xd70
 // Size: 0x13a
 function function_ab3bb6bf(holder, w_item) {
@@ -258,7 +258,7 @@ function function_ab3bb6bf(holder, w_item) {
 }
 
 // Namespace zm_items/zm_items
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xbccf4179, Offset: 0xeb8
 // Size: 0x62
 function spawn_item(w_item, v_origin, v_angles, var_f93e465d = 1) {

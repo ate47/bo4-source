@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_ba52581a/namespace_ba52581a
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x93f35d1e, Offset: 0xe0
 // Size: 0x14
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace namespace_ba52581a/namespace_ba52581a
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x564ea0c2, Offset: 0x100
 // Size: 0x5c
 function init_clientfields() {
@@ -29,7 +29,7 @@ function init_clientfields() {
 }
 
 // Namespace namespace_ba52581a/namespace_ba52581a
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf0db7e, Offset: 0x168
 // Size: 0xfc
 function function_f90464da(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

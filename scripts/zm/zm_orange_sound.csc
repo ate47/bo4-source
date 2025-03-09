@@ -5,7 +5,7 @@
 #namespace zm_orange_sound;
 
 // Namespace zm_orange_sound/zm_orange_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x10a2a725, Offset: 0xc0
 // Size: 0x1c
 function main() {
@@ -13,7 +13,7 @@ function main() {
 }
 
 // Namespace zm_orange_sound/zm_orange_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb23241fb, Offset: 0xe8
 // Size: 0x174
 function startzmbspawnersoundloops() {
@@ -45,7 +45,7 @@ function startzmbspawnersoundloops() {
 }
 
 // Namespace zm_orange_sound/zm_orange_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6822661e, Offset: 0x268
 // Size: 0x18a
 function soundloopthink() {

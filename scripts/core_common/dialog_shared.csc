@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x272e127e, Offset: 0x2f0
 // Size: 0x2c4
 function __init__() {
@@ -37,7 +37,7 @@ function __init__() {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfcc20286, Offset: 0x5c0
 // Size: 0x84
 function client_voice_setup(localclientnum) {
@@ -47,7 +47,7 @@ function client_voice_setup(localclientnum) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xd1c62d0c, Offset: 0x650
 // Size: 0x98
 function snipervonotify(localclientnum, notifystring, dialogkey) {
@@ -65,7 +65,7 @@ function snipervonotify(localclientnum, notifystring, dialogkey) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x859898c9, Offset: 0x6f0
 // Size: 0x4a
 function set_boost_number(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -73,7 +73,7 @@ function set_boost_number(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x721ff995, Offset: 0x748
 // Size: 0x14c
 function play_boost_vox(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -94,7 +94,7 @@ function play_boost_vox(localclientnum, oldval, newval, bnewent, binitialsnap, f
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x237922ff, Offset: 0x8a0
 // Size: 0x124
 function play_boost_start_vox(localclientnum) {
@@ -117,7 +117,7 @@ function play_boost_start_vox(localclientnum) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9e540cb7, Offset: 0x9d0
 // Size: 0x6c
 function play_boost_start_response_vox(localclientnum) {
@@ -129,7 +129,7 @@ function play_boost_start_response_vox(localclientnum) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6fb5506e, Offset: 0xa48
 // Size: 0x80
 function dialog_chance(chancekey) {
@@ -143,7 +143,7 @@ function dialog_chance(chancekey) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbfd7db35, Offset: 0xad0
 // Size: 0x124
 function function_ad01601e(characterindex) {
@@ -173,7 +173,7 @@ function get_commander_dialog_alias(commandername, dialogkey) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x44927c66, Offset: 0xc68
 // Size: 0x84
 function get_dialog_bundle_alias(dialogbundle, dialogkey) {
@@ -192,7 +192,7 @@ function get_dialog_bundle_alias(dialogbundle, dialogkey) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x66e5a3b3, Offset: 0xcf8
 // Size: 0x86
 function mpdialog_value(mpdialogkey, defaultvalue) {
@@ -211,7 +211,7 @@ function mpdialog_value(mpdialogkey, defaultvalue) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x19a2f629, Offset: 0xd88
 // Size: 0x112
 function get_player_dialog_alias(dialogkey, meansofdeath = undefined) {
@@ -233,7 +233,7 @@ function get_player_dialog_alias(dialogkey, meansofdeath = undefined) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfc505bb5, Offset: 0xea8
 // Size: 0x14a
 function play_dialog(dialogkey, localclientnum) {
@@ -255,7 +255,7 @@ function play_dialog(dialogkey, localclientnum) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x57295727, Offset: 0x1000
 // Size: 0x4a
 function update_voice_origin(voicebox) {
@@ -269,7 +269,7 @@ function update_voice_origin(voicebox) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7ab4a552, Offset: 0x1058
 // Size: 0x24
 function delete_after(waittime) {

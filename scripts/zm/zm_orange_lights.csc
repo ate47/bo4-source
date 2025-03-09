@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_orange_lights/zm_orange_lights
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x31c3ec71, Offset: 0x2d0
 // Size: 0x2e
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace zm_orange_lights/zm_orange_lights
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1773ba7c, Offset: 0x308
 // Size: 0x1b4
 function init_clientfields() {
@@ -36,7 +36,7 @@ function init_clientfields() {
 }
 
 // Namespace zm_orange_lights/zm_orange_lights
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x56af7c8f, Offset: 0x4c8
 // Size: 0xbc
 function ship_lights_control(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -52,7 +52,7 @@ function ship_lights_control(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace zm_orange_lights/zm_orange_lights
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb984ed03, Offset: 0x590
 // Size: 0xec
 function lighthouse_lights_control(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -70,7 +70,7 @@ function lighthouse_lights_control(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_orange_lights/zm_orange_lights
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x13a987b0, Offset: 0x688
 // Size: 0x11c
 function facility_lights_control(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -90,7 +90,7 @@ function facility_lights_control(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace zm_orange_lights/zm_orange_lights
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa65c3344, Offset: 0x7b0
 // Size: 0xbc
 function infusion_lights_hot(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -106,7 +106,7 @@ function infusion_lights_hot(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace zm_orange_lights/zm_orange_lights
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa66367e5, Offset: 0x878
 // Size: 0xbc
 function infusion_lights_cold(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -122,7 +122,7 @@ function infusion_lights_cold(localclientnum, oldval, newval, bnewent, binitials
 }
 
 // Namespace zm_orange_lights/zm_orange_lights
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe962bb02, Offset: 0x940
 // Size: 0x4c
 function private function_619bb271(string) {
@@ -133,7 +133,7 @@ function private function_619bb271(string) {
 }
 
 // Namespace zm_orange_lights/zm_orange_lights
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4b50b6bb, Offset: 0x998
 // Size: 0xe2
 function orange_deactivate_radiant_exploders_client(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_staminup/zm_perk_mod_staminup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbd988db1, Offset: 0xd8
 // Size: 0x14
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_staminup/zm_perk_mod_staminup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4f306240, Offset: 0xf8
 // Size: 0x74
 function enable_mod_staminup_perk_for_level() {
@@ -32,7 +32,7 @@ function enable_mod_staminup_perk_for_level() {
 }
 
 // Namespace zm_perk_mod_staminup/zm_perk_mod_staminup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x178
 // Size: 0x4
 function function_c24062a0() {
@@ -40,7 +40,7 @@ function function_c24062a0() {
 }
 
 // Namespace zm_perk_mod_staminup/zm_perk_mod_staminup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x188
 // Size: 0x4
 function registermelee_leader_guntookpain() {
@@ -48,7 +48,7 @@ function registermelee_leader_guntookpain() {
 }
 
 // Namespace zm_perk_mod_staminup/zm_perk_mod_staminup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x198
 // Size: 0x4
 function function_170260ee() {

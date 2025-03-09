@@ -9,7 +9,7 @@
     "model": "#attach_t8_wz_pickup_ext_mag",
     "type": "itemspawnentry",
     "hintstring": "#wz/attach_extclip",
-    "var_65b3a12": 1,
+    "hash_65b3a12": 1,
     "name": "extmag_wz_item",
     "displayname": "#wz/attach_extclip",
     "icon": "#ui_icon_attachment_extendedmags",

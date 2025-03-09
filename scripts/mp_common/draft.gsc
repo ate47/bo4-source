@@ -80,8 +80,8 @@ function __init__() {
             var_44dd7e5d = hash(character);
             playerroletemplatecount = getplayerroletemplatecount(currentsessionmode());
             for (i = 0; i < playerroletemplatecount; i++) {
-                var_3c6fd4f7 = function_b14806c6(i, currentsessionmode());
-                if (var_3c6fd4f7 == var_44dd7e5d) {
+                prtname = function_b14806c6(i, currentsessionmode());
+                if (prtname == var_44dd7e5d) {
                     self select_character(i, 1);
                     return;
                 }
@@ -166,9 +166,9 @@ function start_cooldown() {
     assert(isplayer(player));
     player endon(#"disconnect", #"hash_7fa9c275efb510e2");
     cooldowntime = getgametypesetting(#"hash_2b88c6ac064e9c59");
-    var_e5e81b59 = cooldowntime * 1000 + gettime();
-    while (gettime() < var_e5e81b59) {
-        timeleft = (var_e5e81b59 - gettime()) / 1000;
+    cooldownendtime = cooldowntime * 1000 + gettime();
+    while (gettime() < cooldownendtime) {
+        timeleft = (cooldownendtime - gettime()) / 1000;
         player clientfield::set_player_uimodel("PositionDraft.cooldown", int(timeleft));
         player.var_7d68fce3 = timeleft;
         wait 1;
@@ -296,7 +296,7 @@ function function_9f408cf7(oldval, newval) {
 // Size: 0x2c
 function client_ready() {
     player = self;
-    player function_427981d0(1);
+    player setisready(1);
 }
 
 // Namespace draft/draft

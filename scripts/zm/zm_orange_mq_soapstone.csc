@@ -7,7 +7,7 @@
 #namespace zm_orange_mq_soapstone;
 
 // Namespace zm_orange_mq_soapstone/zm_orange_mq_soapstone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x13cd30d3, Offset: 0xc8
 // Size: 0x74
 function preload() {
@@ -25,7 +25,7 @@ function main() {
 }
 
 // Namespace zm_orange_mq_soapstone/zm_orange_mq_soapstone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdc24cf5e, Offset: 0x158
 // Size: 0x4c
 function init_clientfields() {
@@ -33,7 +33,7 @@ function init_clientfields() {
 }
 
 // Namespace zm_orange_mq_soapstone/zm_orange_mq_soapstone
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x768d3fe5, Offset: 0x1b0
 // Size: 0x10a
 function soapstone_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

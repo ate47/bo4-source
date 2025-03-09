@@ -35,7 +35,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x548c0601, Offset: 0x240
 // Size: 0x42a
 function __init__() {
@@ -78,7 +78,7 @@ function on_player_connect() {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x473386f, Offset: 0x6a0
 // Size: 0x88
 function function_3f8da82c() {
@@ -92,7 +92,7 @@ function function_3f8da82c() {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe29c1a31, Offset: 0x730
 // Size: 0x336
 function function_10b4d6ac(weapon) {
@@ -107,7 +107,7 @@ function function_10b4d6ac(weapon) {
     self clientfield::set("charon_flash", 1);
     a_e_targets = function_b04434cf(b_up);
     if (isdefined(a_e_targets)) {
-        if (isdefined(a_e_targets[0]) && a_e_targets[0].var_6f84b820 === #"boss") {
+        if (isdefined(a_e_targets[0]) && a_e_targets[0].zm_ai_category === #"boss") {
             n_proj = 3;
         } else if (!a_e_targets.size || a_e_targets.size === 1 && !isactor(a_e_targets[0])) {
             n_proj = 1;
@@ -138,7 +138,7 @@ function function_10b4d6ac(weapon) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8bc60653, Offset: 0xa70
 // Size: 0x5c4
 function function_b04434cf(b_up) {
@@ -210,7 +210,7 @@ function function_b04434cf(b_up) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x39121f70, Offset: 0x1040
 // Size: 0x2b2
 function is_valid_target(e_target, n_range) {
@@ -243,7 +243,7 @@ function is_valid_target(e_target, n_range) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe3f29370, Offset: 0x1300
 // Size: 0x54
 function set_projectile(n_index) {
@@ -254,7 +254,7 @@ function set_projectile(n_index) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x52fedbb6, Offset: 0x1360
 // Size: 0x88c
 function function_26819e32(e_projectile, ai_zombie, n_damage) {
@@ -314,7 +314,7 @@ function function_26819e32(e_projectile, ai_zombie, n_damage) {
                 e_projectile moveto(v_end, n_time);
             }
             wait n_time - 0.05;
-            if (isdefined(ai_zombie) && ai_zombie.var_6f84b820 === #"boss") {
+            if (isdefined(ai_zombie) && ai_zombie.zm_ai_category === #"boss") {
                 if (isdefined(ai_zombie gettagorigin("j_tail_1"))) {
                     n_hit_dist_sq = 2500;
                 } else {
@@ -371,7 +371,7 @@ function function_26819e32(e_projectile, ai_zombie, n_damage) {
         e_projectile moveto(v_end, 0.05);
         e_projectile waittill(#"movedone");
     }
-    if (isalive(ai_zombie) || isdefined(ai_zombie) && ai_zombie.var_6f84b820 === #"boss") {
+    if (isalive(ai_zombie) || isdefined(ai_zombie) && ai_zombie.zm_ai_category === #"boss") {
         if (isdefined(level.var_2f926dcc)) {
             self thread [[ level.var_2f926dcc ]](ai_zombie, level.w_hand_charon_uncharged);
         } else {
@@ -383,11 +383,11 @@ function function_26819e32(e_projectile, ai_zombie, n_damage) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x89b8156, Offset: 0x1bf8
 // Size: 0x126
 function function_30239376(e_target) {
-    if (isdefined(e_target) && e_target.var_6f84b820 === #"boss") {
+    if (isdefined(e_target) && e_target.zm_ai_category === #"boss") {
         if (isdefined(e_target gettagorigin("j_tail_1"))) {
             v_org = e_target gettagorigin("j_tail_1");
         } else if (isdefined(e_target gettagorigin("j_spine4"))) {
@@ -404,7 +404,7 @@ function function_30239376(e_target) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe5c84d79, Offset: 0x1d28
 // Size: 0x34
 function projectile_timeout() {
@@ -414,7 +414,7 @@ function projectile_timeout() {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xabfbccdc, Offset: 0x1d68
 // Size: 0x484
 function function_dced5aef(e_target, weapon = level.weaponnone, v_to_target, n_damage) {
@@ -423,9 +423,9 @@ function function_dced5aef(e_target, weapon = level.weaponnone, v_to_target, n_d
     if (isactor(e_target) && zm_utility::is_magic_bullet_shield_enabled(e_target)) {
         return;
     }
-    if (isdefined(e_target) && isdefined(e_target.var_6f84b820)) {
+    if (isdefined(e_target) && isdefined(e_target.zm_ai_category)) {
         [[ level.var_844d377c ]]->waitinqueue(e_target);
-        switch (e_target.var_6f84b820) {
+        switch (e_target.zm_ai_category) {
         case #"popcorn":
         case #"basic":
         case #"enhanced":
@@ -474,7 +474,7 @@ function function_dced5aef(e_target, weapon = level.weaponnone, v_to_target, n_d
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2c6c772d, Offset: 0x21f8
 // Size: 0x110
 function function_247597a(b_charged) {
@@ -492,7 +492,7 @@ function function_247597a(b_charged) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe6593cbe, Offset: 0x2310
 // Size: 0x4cc
 function function_dd7bc108(weapon) {
@@ -567,7 +567,7 @@ function function_dd7bc108(weapon) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6a20df68, Offset: 0x27e8
 // Size: 0x104
 function function_39e6dc29(v_end) {
@@ -586,7 +586,7 @@ function function_39e6dc29(v_end) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1fd62cd, Offset: 0x28f8
 // Size: 0x1a4
 function charon_pool(n_damage) {
@@ -619,7 +619,7 @@ function charon_pool(n_damage) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9f4f54e9, Offset: 0x2aa8
 // Size: 0x322
 function function_249b5556(n_damage) {
@@ -633,7 +633,7 @@ function function_249b5556(n_damage) {
                 if (!isalive(ai_zombie)) {
                     continue;
                 }
-                if (!isdefined(ai_zombie.var_6f84b820)) {
+                if (!isdefined(ai_zombie.zm_ai_category)) {
                     continue;
                 }
                 if (isdefined(ai_zombie.var_2e4247bc) && ai_zombie.var_2e4247bc || isdefined(ai_zombie.var_339655cf) && ai_zombie.var_339655cf) {
@@ -648,7 +648,7 @@ function function_249b5556(n_damage) {
                     if (!isdefined(ai_zombie)) {
                         continue;
                     }
-                    switch (ai_zombie.var_6f84b820) {
+                    switch (ai_zombie.zm_ai_category) {
                     case #"popcorn":
                     case #"basic":
                     case #"enhanced":
@@ -676,7 +676,7 @@ function function_249b5556(n_damage) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe9e8115d, Offset: 0x2dd8
 // Size: 0x1ac
 function function_ccd87945(e_player) {
@@ -705,7 +705,7 @@ function function_ccd87945(e_player) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x951d11d1, Offset: 0x2f90
 // Size: 0x434
 function function_31d8c58() {
@@ -756,7 +756,7 @@ function function_31d8c58() {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf02cbe26, Offset: 0x33d0
 // Size: 0x7c
 function function_8a38ce84() {
@@ -773,7 +773,7 @@ function function_8a38ce84() {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2b1411af, Offset: 0x3458
 // Size: 0x2f4
 function function_197896ad(e_target, n_damage) {
@@ -823,7 +823,7 @@ function function_197896ad(e_target, n_damage) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x985a40b, Offset: 0x3758
 // Size: 0x144
 function charon_slow(e_target, n_damage) {
@@ -842,7 +842,7 @@ function charon_slow(e_target, n_damage) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7a44e477, Offset: 0x38a8
 // Size: 0x5a
 function function_da454404() {
@@ -855,7 +855,7 @@ function function_da454404() {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbc70c921, Offset: 0x3910
 // Size: 0x2a
 function function_3874b38f() {
@@ -864,7 +864,7 @@ function function_3874b38f() {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x895452df, Offset: 0x3948
 // Size: 0xb2
 function function_5fc81f0a(e_target) {
@@ -879,7 +879,7 @@ function function_5fc81f0a(e_target) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd3a482e2, Offset: 0x3a08
 // Size: 0x2c
 function function_6d783edd(e_target) {
@@ -887,7 +887,7 @@ function function_6d783edd(e_target) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xccb724e8, Offset: 0x3a40
 // Size: 0xe
 function function_3ebebb9c() {
@@ -895,7 +895,7 @@ function function_3ebebb9c() {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x207ad903, Offset: 0x3a58
 // Size: 0xb2
 function function_25513188(e_target) {
@@ -910,7 +910,7 @@ function function_25513188(e_target) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7df1fe53, Offset: 0x3b18
 // Size: 0x2c
 function function_5760b289(e_target) {
@@ -918,7 +918,7 @@ function function_5760b289(e_target) {
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x92d5060d, Offset: 0x3b50
 // Size: 0xe
 function function_b9a3e6f9() {

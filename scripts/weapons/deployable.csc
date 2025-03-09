@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace deployable/deployable
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6db752e4, Offset: 0x140
 // Size: 0x72
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace deployable/deployable
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x67ca2a1, Offset: 0x1c0
 // Size: 0xaa
 function register_deployable(weapon, var_7ec218c6) {
@@ -54,7 +54,7 @@ function function_3e8d9b27(previs_weapon) {
 }
 
 // Namespace deployable/deployable
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x34c9368d, Offset: 0x310
 // Size: 0x7c
 function function_c1ee2dce(player, localclientnum, weapon) {
@@ -63,7 +63,7 @@ function function_c1ee2dce(player, localclientnum, weapon) {
 }
 
 // Namespace deployable/deployable
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa4a2b0f9, Offset: 0x398
 // Size: 0x1be
 function function_35d1c69f(localclientnum, player, weapon) {
@@ -81,7 +81,7 @@ function function_35d1c69f(localclientnum, player, weapon) {
 }
 
 // Namespace deployable/deployable
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x976f6a51, Offset: 0x560
 // Size: 0x2e0
 function group_mega_round_end_abcd_talking(localclientnum = 0) {

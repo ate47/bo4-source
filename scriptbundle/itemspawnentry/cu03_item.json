@@ -19,7 +19,7 @@
                 }
             ],
             "description": "#hash_4f086cf747d2e26a",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "description": "#hash_4f086df747d2e41d"
@@ -27,8 +27,8 @@
     ],
     "description": "#hash_2693d057d5a0aeaf",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 3,
-    "var_e8b98a8a": "#hash_477163300061f09a",
+    "hash_eda4062b": 3,
+    "hash_e8b98a8a": "#hash_477163300061f09a",
     "model": "#hash_221bc927a6f7912a",
     "type": "itemspawnentry",
     "hintstring": "#hash_225a5cf3f4ceae68",
@@ -38,7 +38,7 @@
     "icon": "#hash_209c5ca19ae67be8",
     "modelscale": 1,
     "rarity": "None",
-    "var_a51bc1f7": "#hash_315b3574789b2f7b",
+    "hash_a51bc1f7": "#hash_315b3574789b2f7b",
     "handler": "#hash_5c844f5c1207159c",
     "rewardname": "#hash_feee6890a6759fe",
     "pickupicon": "#hash_209c5ca19ae67be8",

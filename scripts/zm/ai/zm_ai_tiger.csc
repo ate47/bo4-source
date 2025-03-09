@@ -22,7 +22,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8ca4c4ef, Offset: 0x1b0
 // Size: 0x8c
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf8d6db05, Offset: 0x248
 // Size: 0x74
 function function_6d7e1f79(localclientnum) {
@@ -41,7 +41,7 @@ function function_6d7e1f79(localclientnum) {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdae7dda4, Offset: 0x2c8
 // Size: 0xc4
 function function_76110e92(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -54,7 +54,7 @@ function function_76110e92(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe6224459, Offset: 0x398
 // Size: 0x84
 function function_3be6531a(localclientnum, turned) {
@@ -66,7 +66,7 @@ function function_3be6531a(localclientnum, turned) {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf78bee22, Offset: 0x428
 // Size: 0x104
 function on_entity_shutdown(localclientnum) {

@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace status_effect_shock/status_effect_shock
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x920b6004, Offset: 0xf8
 // Size: 0x6c
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace status_effect_shock/status_effect_shock
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x81d6a959, Offset: 0x170
 // Size: 0x14c
 function shock_apply(var_756fda07, weapon, applicant) {
@@ -43,7 +43,7 @@ function shock_apply(var_756fda07, weapon, applicant) {
 }
 
 // Namespace status_effect_shock/status_effect_shock
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd9996c81, Offset: 0x2c8
 // Size: 0xc4
 function shock_end() {
@@ -60,7 +60,7 @@ function shock_end() {
 }
 
 // Namespace status_effect_shock/status_effect_shock
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x9fda9772, Offset: 0x398
 // Size: 0xd6
 function private shock_rumble_loop(duration) {

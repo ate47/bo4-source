@@ -22,7 +22,7 @@
                 }
             ],
             "description": "#hash_2d479441d5d10b43",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "description": "#hash_2d479941d5d113c2"
@@ -30,8 +30,8 @@
     ],
     "description": "#hash_4a80e30eedb8e675",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 4,
-    "var_e8b98a8a": "#hash_104a9e123cb916f8",
+    "hash_eda4062b": 4,
+    "hash_e8b98a8a": "#hash_104a9e123cb916f8",
     "model": "#p8_wz_cu_handwritten_note",
     "type": "itemspawnentry",
     "hintstring": "#hash_4125cced23f321a2",
@@ -41,7 +41,7 @@
     "icon": "#hash_78a18860c658feba",
     "modelscale": 1,
     "rarity": "None",
-    "var_a51bc1f7": "#hash_6e278f233aa4af71",
+    "hash_a51bc1f7": "#hash_6e278f233aa4af71",
     "handler": "#hash_5c844f5c1207159c",
     "rewardname": "#hash_62bd0375e9e20dab",
     "pickupicon": "#hash_78a18860c658feba",

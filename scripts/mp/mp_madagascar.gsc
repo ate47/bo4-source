@@ -28,7 +28,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_madagascar/mp_madagascar
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf7de3094, Offset: 0x270
 // Size: 0x3c
 function function_2cdcf5c3() {
@@ -38,7 +38,7 @@ function function_2cdcf5c3() {
 }
 
 // Namespace mp_madagascar/mp_madagascar
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x94a76a88, Offset: 0x2b8
 // Size: 0x154
 function on_game_playing() {

@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x72bdf971, Offset: 0x208
 // Size: 0x14
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x228
 // Size: 0x4
 function __main__() {
@@ -35,7 +35,7 @@ function __main__() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xde0053d4, Offset: 0x238
 // Size: 0x29c
 function enable_dying_wish_perk_for_level() {
@@ -54,7 +54,7 @@ function enable_dying_wish_perk_for_level() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x4e0
 // Size: 0x4
 function function_536f842f() {
@@ -62,7 +62,7 @@ function function_536f842f() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6e03a58, Offset: 0x4f0
 // Size: 0x10e
 function function_aa1c61e() {
@@ -78,7 +78,7 @@ function function_aa1c61e() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6abb156, Offset: 0x608
 // Size: 0x44
 function function_bee10d1f() {
@@ -86,7 +86,7 @@ function function_bee10d1f() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4b15037c, Offset: 0x658
 // Size: 0xc
 function function_dbf100ee(state) {
@@ -94,7 +94,7 @@ function function_dbf100ee(state) {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x7a9b208b, Offset: 0x670
 // Size: 0xb6
 function function_32b9bac(use_trigger, perk_machine, bump_trigger, collision) {
@@ -118,7 +118,7 @@ function function_d1c19f4e() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd1bde0c6, Offset: 0x770
 // Size: 0xd2
 function function_2aefd3c4() {
@@ -138,7 +138,7 @@ function function_2aefd3c4() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x62a23b45, Offset: 0x850
 // Size: 0xd6
 function function_f3862b9b(b_pause, str_perk, str_result, n_slot) {
@@ -154,7 +154,7 @@ function function_f3862b9b(b_pause, str_perk, str_result, n_slot) {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 10, eflags: 0x1 linked
+// Params 10, eflags: 0x0
 // Checksum 0x503a9531, Offset: 0x930
 // Size: 0xf0
 function function_a102936(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime) {
@@ -170,7 +170,7 @@ function function_a102936(einflictor, eattacker, idamage, idflags, smeansofdeath
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x67c1a3c6, Offset: 0xa28
 // Size: 0x178
 function function_eeb3bf92(var_1483b30b) {
@@ -191,7 +191,7 @@ function function_eeb3bf92(var_1483b30b) {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x14dddf20, Offset: 0xba8
 // Size: 0x17e
 function function_d752a094() {
@@ -210,7 +210,7 @@ function function_d752a094() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x165e3e7b, Offset: 0xd30
 // Size: 0x104
 function function_2ca96414() {
@@ -225,16 +225,16 @@ function function_2ca96414() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x76d01a40, Offset: 0xe40
 // Size: 0x18e
 function function_ab41c8ab(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
     if (isdefined(attacker.var_eb319d10) && attacker.var_eb319d10 && meansofdeath === "MOD_MELEE") {
         damage *= 6;
-        if (!isdefined(self.var_6f84b820)) {
+        if (!isdefined(self.zm_ai_category)) {
             return damage;
         }
-        switch (self.var_6f84b820) {
+        switch (self.zm_ai_category) {
         case #"popcorn":
         case #"basic":
         case #"enhanced":
@@ -253,7 +253,7 @@ function function_ab41c8ab(inflictor, attacker, damage, flags, meansofdeath, wea
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb8692f0, Offset: 0xfd8
 // Size: 0xcc
 function function_d2bbaa76(var_85dcb56c) {
@@ -268,7 +268,7 @@ function function_d2bbaa76(var_85dcb56c) {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8ad13f34, Offset: 0x10b0
 // Size: 0x160
 function function_7d72c6f9(var_85dcb56c) {
@@ -288,7 +288,7 @@ function function_7d72c6f9(var_85dcb56c) {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x569244f1, Offset: 0x1218
 // Size: 0xdc
 function reset_cooldown() {

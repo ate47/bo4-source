@@ -180,7 +180,7 @@ function updatematchbonusscores(outcome) {
         } else {
             player function_78e7b549(loserscale, "loss", gamelength);
         }
-        player.pers[#"totalmatchbonus"] = player.pers[#"totalmatchbonus"] + player.matchbonus;
+        player.pers[#"totalmatchbonus"] += player.matchbonus;
     }
 }
 
@@ -555,7 +555,7 @@ function function_3172cf59(player, newscore, weapon, mpplayerscore) {
         if (!isdefined(player.pers[#"scoreeventcache"][event])) {
             player.pers[#"scoreeventcache"][event] = 1;
         } else {
-            player.pers[#"scoreeventcache"][event] = player.pers[#"scoreeventcache"][event] + 1;
+            player.pers[#"scoreeventcache"][event] += 1;
         }
     }
     if (scorediff <= 0) {
@@ -631,7 +631,7 @@ function default_onplayerscore(event, player, victim) {
 // Checksum 0xf4421e75, Offset: 0x2868
 // Size: 0x7a
 function function_37d62931(player, amount) {
-    player.pers[#"objectives"] = player.pers[#"objectives"] + amount;
+    player.pers[#"objectives"] += amount;
     player.objectives = player.pers[#"objectives"];
 }
 
@@ -1098,7 +1098,7 @@ function onteamscore(score, team) {
 // Checksum 0xe321562f, Offset: 0x4568
 // Size: 0x18c
 function onteamscore_incrementscore(score, team) {
-    game.stat[#"teamscores"][team] = game.stat[#"teamscores"][team] + score;
+    game.stat[#"teamscores"][team] += score;
     if (game.stat[#"teamscores"][team] < 0) {
         game.stat[#"teamscores"][team] = 0;
     }
@@ -1204,7 +1204,7 @@ function getpersstat(dataname) {
 function incpersstat(dataname, increment, record_stats, includegametype) {
     pixbeginevent(#"incpersstat");
     if (isdefined(self.pers[dataname])) {
-        self.pers[dataname] = self.pers[dataname] + increment;
+        self.pers[dataname] += increment;
     }
     if (isdefined(includegametype) && includegametype) {
         self stats::function_bb7eedf0(dataname, increment);
@@ -1866,7 +1866,7 @@ function function_e7b4c25c(nemesis_name, value, nemesis_rank, var_15574043, neme
     if (!isdefined(self.pers[#"nemesis_tracking"][nemesis_name])) {
         self.pers[#"nemesis_tracking"][nemesis_name] = {#name:nemesis_name, #value:0};
     }
-    self.pers[#"nemesis_tracking"][nemesis_name].value = self.pers[#"nemesis_tracking"][nemesis_name].value + value;
+    self.pers[#"nemesis_tracking"][nemesis_name].value += value;
     var_b5c193c6 = self.pers[#"nemesis_tracking"][self.pers[#"nemesis_name"]];
     if (self.pers[#"nemesis_name"] == "" || !isdefined(var_b5c193c6) || self.pers[#"nemesis_tracking"][nemesis_name].value > var_b5c193c6.value) {
         assert(isdefined(nemesis_name), "<dev string:x81>" + self.name);

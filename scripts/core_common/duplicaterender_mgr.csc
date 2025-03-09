@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x25565447, Offset: 0x340
 // Size: 0x3c6
 function __init__() {
@@ -58,7 +58,7 @@ function on_player_spawned(local_client_num) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 14, eflags: 0x1 linked
+// Params 14, eflags: 0x0
 // Checksum 0x7bf740c5, Offset: 0x790
 // Size: 0x37c
 function set_dr_filter(filterset, name, priority, require_flags, refuse_flags, drtype1, drval1, drcull1, drtype2, drval2, drcull2, drtype3, drval3, drcull3) {
@@ -114,7 +114,7 @@ function set_dr_filter(filterset, name, priority, require_flags, refuse_flags, d
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 13, eflags: 0x1 linked
+// Params 13, eflags: 0x0
 // Checksum 0xed5dfb70, Offset: 0xb18
 // Size: 0xb4
 function set_dr_filter_framebuffer(name, priority, require_flags, refuse_flags, drtype1, drval1, drcull1, drtype2, drval2, drcull2, drtype3, drval3, drcull3) {
@@ -122,7 +122,7 @@ function set_dr_filter_framebuffer(name, priority, require_flags, refuse_flags, 
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 13, eflags: 0x1 linked
+// Params 13, eflags: 0x0
 // Checksum 0xd38985fd, Offset: 0xbd8
 // Size: 0xb4
 function set_dr_filter_framebuffer_duplicate(name, priority, require_flags, refuse_flags, drtype1, drval1, drcull1, drtype2, drval2, drcull2, drtype3, drval3, drcull3) {
@@ -130,7 +130,7 @@ function set_dr_filter_framebuffer_duplicate(name, priority, require_flags, refu
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 13, eflags: 0x1 linked
+// Params 13, eflags: 0x0
 // Checksum 0x5f9aabbc, Offset: 0xc98
 // Size: 0xb4
 function set_dr_filter_offscreen(name, priority, require_flags, refuse_flags, drtype1, drval1, drcull1, drtype2, drval2, drcull2, drtype3, drval3, drcull3) {
@@ -138,7 +138,7 @@ function set_dr_filter_offscreen(name, priority, require_flags, refuse_flags, dr
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc16dd3d6, Offset: 0xd58
 // Size: 0x17e
 function register_filter_materials(filter) {
@@ -169,7 +169,7 @@ function register_filter_materials(filter) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xead80250, Offset: 0xee0
 // Size: 0x5c
 function update_dr_flag(localclientnum, toset, setto = 1) {
@@ -198,7 +198,7 @@ function set_dr_flag_not_array(toset, setto = 1) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x785fded0, Offset: 0x1010
 // Size: 0x170
 function set_dr_flag(toset, setto = 1) {
@@ -224,7 +224,7 @@ function set_dr_flag(toset, setto = 1) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdbc722df, Offset: 0x1188
 // Size: 0x24
 function clear_dr_flag(toclear) {
@@ -232,7 +232,7 @@ function clear_dr_flag(toclear) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1e84ea47, Offset: 0x11b8
 // Size: 0xe4
 function change_dr_flags(localclientnum, toset, toclear) {
@@ -252,7 +252,7 @@ function change_dr_flags(localclientnum, toset, toclear) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3c53229a, Offset: 0x12a8
 // Size: 0x164
 function _update_dr_filters(localclientnum) {
@@ -272,7 +272,7 @@ function _update_dr_filters(localclientnum) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf1ab1c51, Offset: 0x1418
 // Size: 0x24
 function update_dr_filters(localclientnum) {
@@ -280,7 +280,7 @@ function update_dr_filters(localclientnum) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1b434c1f, Offset: 0x1448
 // Size: 0xe6
 function find_dr_filter(filterset = level.drfilters[#"framebuffer"]) {
@@ -296,7 +296,7 @@ function find_dr_filter(filterset = level.drfilters[#"framebuffer"]) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf10f1278, Offset: 0x1538
 // Size: 0xb8
 function can_use_filter(filter) {
@@ -314,7 +314,7 @@ function can_use_filter(filter) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf997b113, Offset: 0x15f8
 // Size: 0x306
 function apply_filter(localclientnum, filter, filterset = "framebuffer") {
@@ -365,7 +365,7 @@ function apply_filter(localclientnum, filter, filterset = "framebuffer") {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa55df227, Offset: 0x1908
 // Size: 0x6c
 function disable_all_filters_on_game_ended() {
@@ -377,7 +377,7 @@ function disable_all_filters_on_game_ended() {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe2da1ec8, Offset: 0x1980
 // Size: 0x34
 function set_item_retrievable(localclientnum, on_off) {
@@ -417,7 +417,7 @@ function set_entity_thermal(localclientnum, on_off) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x83ee9896, Offset: 0x1ac0
 // Size: 0x34
 function set_player_threat_detected(localclientnum, on_off) {
@@ -425,7 +425,7 @@ function set_player_threat_detected(localclientnum, on_off) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcb9120ac, Offset: 0x1b00
 // Size: 0x14
 function set_hacker_tool_hacked(localclientnum, on_off) {
@@ -433,7 +433,7 @@ function set_hacker_tool_hacked(localclientnum, on_off) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2564dd9e, Offset: 0x1b20
 // Size: 0x14
 function set_hacker_tool_hacking(localclientnum, on_off) {
@@ -441,7 +441,7 @@ function set_hacker_tool_hacking(localclientnum, on_off) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x88415731, Offset: 0x1b40
 // Size: 0x14
 function set_hacker_tool_breaching(localclientnum, on_off) {
@@ -463,7 +463,7 @@ function show_friendly_outlines(local_client_num) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe5682aaa, Offset: 0x1bb8
 // Size: 0xbc
 function set_entity_draft_unselected(localclientnum, on_off) {

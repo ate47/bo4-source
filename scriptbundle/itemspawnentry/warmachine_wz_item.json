@@ -16,7 +16,7 @@
                 }
             ],
             "description": "#hash_3ca065480a56ae26",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "description": "#hash_3ca064480a56ac73"
@@ -25,10 +25,10 @@
     "amount": 1,
     "description": "#hash_59b8e8c585b73022",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 2,
-    "var_e8b98a8a": "#hash_212a3bd4984ce7b3",
-    "var_5dc4470b": -6,
-    "var_3e688854": -2,
+    "hash_eda4062b": 2,
+    "hash_e8b98a8a": "#hash_212a3bd4984ce7b3",
+    "hash_5dc4470b": -6,
+    "hash_3e688854": -2,
     "model": "#wpn_t8_hero_war_machine_world",
     "weapon": "weapon#hero_pineapplegun_wz",
     "type": "itemspawnentry",
@@ -39,7 +39,7 @@
     "icon": "#ui_icon_weapon_warmachine_render",
     "modelscale": 1,
     "rarity": "None",
-    "var_a51bc1f7": "#hash_1646adf908196648",
+    "hash_a51bc1f7": "#hash_1646adf908196648",
     "handler": "#hash_50375e5de228e9fc",
     "rewardname": "#hash_759cb09309cf4447",
     "pickupicon": "#ui_icon_weapon_hud_hero_warmachine",

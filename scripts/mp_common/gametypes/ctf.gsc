@@ -157,8 +157,8 @@ function function_b4530b39() {
 function onstartgametype() {
     globallogic_score::resetteamscores();
     if (overtime::is_overtime_round()) {
-        game.ctf_teamscore_cache[#"allies"] = game.ctf_teamscore_cache[#"allies"] + [[ level._getteamscore ]](#"allies");
-        game.ctf_teamscore_cache[#"axis"] = game.ctf_teamscore_cache[#"axis"] + [[ level._getteamscore ]](#"axis");
+        game.ctf_teamscore_cache[#"allies"] += [[ level._getteamscore ]](#"allies");
+        game.ctf_teamscore_cache[#"axis"] += [[ level._getteamscore ]](#"axis");
         if (!isdefined(game.var_8f9c5645)) {
             game.var_8f9c5645[#"allies"] = 0;
             game.var_8f9c5645[#"axis"] = 0;

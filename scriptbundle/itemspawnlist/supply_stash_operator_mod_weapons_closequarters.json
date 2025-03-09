@@ -3,29 +3,29 @@
         {
             "minweight": 100,
             "itementry": "smg_accurate_t8_operator_item",
-            "var_3f8c08e3": "ammo_type_45_item",
+            "childitementry_1": "ammo_type_45_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "pistol_revolver_t8_operator_item",
-            "var_3f8c08e3": "ammo_type_45_item",
+            "childitementry_1": "ammo_type_45_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "smg_fastfire_t8_operator_item",
-            "var_3f8c08e3": "ammo_type_45_item",
+            "childitementry_1": "ammo_type_45_item",
             "maxweight": 100,
             "available": -1
         }
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 3,
-    "var_9b009839": -1,
+    "hash_345eba59": 3,
+    "hash_9b009839": -1,
     "name": "supply_stash_operator_mod_weapons_closequarters",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

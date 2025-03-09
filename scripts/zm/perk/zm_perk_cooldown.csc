@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_cooldown/zm_perk_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x52ea86d0, Offset: 0x148
 // Size: 0x14
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_cooldown/zm_perk_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa94fdf03, Offset: 0x168
 // Size: 0x104
 function enable_cooldown_perk_for_level() {
@@ -33,7 +33,7 @@ function enable_cooldown_perk_for_level() {
 }
 
 // Namespace zm_perk_cooldown/zm_perk_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6ea6ffb8, Offset: 0x278
 // Size: 0x52
 function init_cooldown() {
@@ -43,7 +43,7 @@ function init_cooldown() {
 }
 
 // Namespace zm_perk_cooldown/zm_perk_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x2d8
 // Size: 0x4
 function function_683242be() {
@@ -51,7 +51,7 @@ function function_683242be() {
 }
 
 // Namespace zm_perk_cooldown/zm_perk_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x2e8
 // Size: 0x4
 function function_20945b84() {

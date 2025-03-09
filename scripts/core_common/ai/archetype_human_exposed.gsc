@@ -5,7 +5,7 @@
 
 // Namespace archetype_human_exposed/archetype_human_exposed
 // Params 0, eflags: 0x2
-// Checksum 0x4bec562c, Offset: 0x158
+// Checksum 0x60b8553f, Offset: 0x158
 // Size: 0x2a4
 function autoexec registerbehaviorscriptfunctions() {
     assert(isscriptfunctionptr(&hascloseenemy));
@@ -25,8 +25,8 @@ function autoexec registerbehaviorscriptfunctions() {
 }
 
 // Namespace archetype_human_exposed/archetype_human_exposed
-// Params 1, eflags: 0x5 linked
-// Checksum 0x2eec4e0, Offset: 0x408
+// Params 1, eflags: 0x4
+// Checksum 0x4f210928, Offset: 0x408
 // Size: 0x4c
 function private preparetoreacttoenemy(behaviortreeentity) {
     behaviortreeentity.newenemyreaction = 0;
@@ -35,8 +35,8 @@ function private preparetoreacttoenemy(behaviortreeentity) {
 }
 
 // Namespace archetype_human_exposed/archetype_human_exposed
-// Params 1, eflags: 0x5 linked
-// Checksum 0xfd3d3429, Offset: 0x460
+// Params 1, eflags: 0x4
+// Checksum 0xaa1bc126, Offset: 0x460
 // Size: 0x26
 function private resetreactiontoenemy(behaviortreeentity) {
     behaviortreeentity.newenemyreaction = 0;
@@ -44,8 +44,8 @@ function private resetreactiontoenemy(behaviortreeentity) {
 }
 
 // Namespace archetype_human_exposed/archetype_human_exposed
-// Params 1, eflags: 0x5 linked
-// Checksum 0xdc0bed54, Offset: 0x490
+// Params 1, eflags: 0x4
+// Checksum 0x4bd3cc98, Offset: 0x490
 // Size: 0x54
 function private nocloseenemyservice(behaviortreeentity) {
     if (isdefined(behaviortreeentity.enemy) && aiutility::hascloseenemytomelee(behaviortreeentity)) {
@@ -56,8 +56,8 @@ function private nocloseenemyservice(behaviortreeentity) {
 }
 
 // Namespace archetype_human_exposed/archetype_human_exposed
-// Params 1, eflags: 0x5 linked
-// Checksum 0x2a0b8ad, Offset: 0x4f0
+// Params 1, eflags: 0x4
+// Checksum 0x6639a533, Offset: 0x4f0
 // Size: 0x5a
 function private hascloseenemy(behaviortreeentity) {
     if (!isdefined(behaviortreeentity.enemy)) {
@@ -70,16 +70,16 @@ function private hascloseenemy(behaviortreeentity) {
 }
 
 // Namespace archetype_human_exposed/archetype_human_exposed
-// Params 2, eflags: 0x5 linked
-// Checksum 0xdc559ce2, Offset: 0x558
+// Params 2, eflags: 0x4
+// Checksum 0x4895e2a3, Offset: 0x558
 // Size: 0x4c
 function private setpathmovedelayedrandom(behaviortreeentity, asmstatename) {
     behaviortreeentity pathmode("move delayed", 0, randomfloatrange(1, 3));
 }
 
 // Namespace archetype_human_exposed/archetype_human_exposed
-// Params 2, eflags: 0x5 linked
-// Checksum 0xd835fdff, Offset: 0x5b0
+// Params 2, eflags: 0x4
+// Checksum 0xe027882e, Offset: 0x5b0
 // Size: 0x7c
 function private exposedsetdesiredstancetostand(behaviortreeentity, asmstatename) {
     aiutility::keepclaimnode(behaviortreeentity);
@@ -88,8 +88,8 @@ function private exposedsetdesiredstancetostand(behaviortreeentity, asmstatename
 }
 
 // Namespace archetype_human_exposed/archetype_human_exposed
-// Params 1, eflags: 0x5 linked
-// Checksum 0xbf599fc5, Offset: 0x638
+// Params 1, eflags: 0x4
+// Checksum 0xd742b077, Offset: 0x638
 // Size: 0x2ba
 function private tryreacquireservice(behaviortreeentity) {
     if (!isdefined(behaviortreeentity.reacquire_state)) {

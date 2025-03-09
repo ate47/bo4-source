@@ -10,7 +10,7 @@
                         }
                     ],
                     "damagethreshold": 1,
-                    "var_b3dddfd3": 1,
+                    "hash_b3dddfd3": 1,
                     "name": "init"
                 },
                 {
@@ -21,7 +21,7 @@
                         }
                     ],
                     "damagethreshold": 0.85,
-                    "var_b3dddfd3": 1,
+                    "hash_b3dddfd3": 1,
                     "name": "shatter_slat1"
                 },
                 {
@@ -32,7 +32,7 @@
                         }
                     ],
                     "damagethreshold": 0.7,
-                    "var_b3dddfd3": 1,
+                    "hash_b3dddfd3": 1,
                     "name": "shatter_slat2"
                 },
                 {
@@ -43,7 +43,7 @@
                         }
                     ],
                     "damagethreshold": 0.55,
-                    "var_b3dddfd3": 1,
+                    "hash_b3dddfd3": 1,
                     "name": "shatter_slat3"
                 },
                 {
@@ -54,7 +54,7 @@
                         }
                     ],
                     "damagethreshold": 0.4,
-                    "var_b3dddfd3": 1,
+                    "hash_b3dddfd3": 1,
                     "name": "shatter_slat4"
                 },
                 {
@@ -65,7 +65,7 @@
                         }
                     ],
                     "damagethreshold": 0.25,
-                    "var_b3dddfd3": 1,
+                    "hash_b3dddfd3": 1,
                     "name": "shatter_slat5"
                 },
                 {
@@ -76,7 +76,7 @@
                         }
                     ],
                     "damagethreshold": 0.05,
-                    "var_b3dddfd3": 1,
+                    "hash_b3dddfd3": 1,
                     "name": "shatter_slat6"
                 }
             ],
@@ -84,8 +84,8 @@
             "model": "#hash_1ed35f8de3ef425e",
             "type": "prop",
             "name": "vent",
-            "var_873368a8": 1000,
-            "var_2baad8fc": 1,
+            "hash_873368a8": 1000,
+            "hash_2baad8fc": 1,
             "allowdeath": 1,
             "takedamage": 1
         }

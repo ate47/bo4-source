@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_magicbox_hunt/zm_trial_magicbox_hunt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa95ccb58, Offset: 0xf8
 // Size: 0x5c
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_magicbox_hunt/zm_trial_magicbox_hunt
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa82cd81b, Offset: 0x160
 // Size: 0x114
 function private on_begin(var_dd1a18c9) {
@@ -46,7 +46,7 @@ function private on_begin(var_dd1a18c9) {
 }
 
 // Namespace zm_trial_magicbox_hunt/zm_trial_magicbox_hunt
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcd42b9b8, Offset: 0x280
 // Size: 0xf6
 function private on_end(round_reset) {
@@ -65,7 +65,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_magicbox_hunt/zm_trial_magicbox_hunt
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x4dc837f3, Offset: 0x380
 // Size: 0xd0
 function private function_cfb0f4d() {
@@ -85,7 +85,7 @@ function private function_cfb0f4d() {
 }
 
 // Namespace zm_trial_magicbox_hunt/zm_trial_magicbox_hunt
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x7239c5e2, Offset: 0x458
 // Size: 0x8e
 function private function_a4bcce4e() {
@@ -99,7 +99,7 @@ function private function_a4bcce4e() {
 }
 
 // Namespace zm_trial_magicbox_hunt/zm_trial_magicbox_hunt
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x5aa485b8, Offset: 0x4f0
 // Size: 0x88
 function private function_e8f640a5() {

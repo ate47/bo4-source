@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace player_role/player_role
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9af5cda0, Offset: 0xd8
 // Size: 0x22
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace player_role/player_role
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbafc44c9, Offset: 0x108
 // Size: 0xb2
 function get_category_for_index(characterindex) {
@@ -58,7 +58,7 @@ function function_c1f61ea2() {
 }
 
 // Namespace player_role/player_role
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfa7ea4cf, Offset: 0x2a8
 // Size: 0x156
 function is_valid(index) {
@@ -82,7 +82,7 @@ function is_valid(index) {
 }
 
 // Namespace player_role/player_role
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc2a14d77, Offset: 0x408
 // Size: 0x4a
 function get() {
@@ -91,7 +91,7 @@ function get() {
 }
 
 // Namespace player_role/player_role
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2fc9e381, Offset: 0x460
 // Size: 0x22
 function update_fields() {
@@ -99,7 +99,7 @@ function update_fields() {
 }
 
 // Namespace player_role/player_role
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4b4546f9, Offset: 0x490
 // Size: 0x258
 function set(index, force) {
@@ -133,7 +133,7 @@ function set(index, force) {
 }
 
 // Namespace player_role/player_role
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd4cad58e, Offset: 0x6f0
 // Size: 0x7a
 function clear() {
@@ -145,7 +145,7 @@ function clear() {
 }
 
 // Namespace player_role/player_role
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8dea3814, Offset: 0x778
 // Size: 0x22
 function get_custom_loadout_index(characterindex) {
@@ -153,15 +153,15 @@ function get_custom_loadout_index(characterindex) {
 }
 
 // Namespace player_role/player_role
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6b40b52d, Offset: 0x7a8
 // Size: 0xa6
 function function_97d19493(name) {
     sessionmode = currentsessionmode();
     playerroletemplatecount = getplayerroletemplatecount(sessionmode);
     for (i = 0; i < playerroletemplatecount; i++) {
-        var_3c6fd4f7 = function_b14806c6(i, sessionmode);
-        if (var_3c6fd4f7 == name) {
+        prtname = function_b14806c6(i, sessionmode);
+        if (prtname == name) {
             return i;
         }
     }

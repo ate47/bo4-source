@@ -10,7 +10,7 @@
 
 // Namespace archetypecatalyst/archetype_catalyst
 // Params 0, eflags: 0x2
-// Checksum 0xcd011b8c, Offset: 0xe8
+// Checksum 0xeeadc0b, Offset: 0xe8
 // Size: 0x84
 function autoexec main() {
     registerbehaviorscriptfunctions();
@@ -20,8 +20,8 @@ function autoexec main() {
 }
 
 // Namespace archetypecatalyst/archetype_catalyst
-// Params 0, eflags: 0x5 linked
-// Checksum 0x606ee254, Offset: 0x178
+// Params 0, eflags: 0x4
+// Checksum 0x3bde23e6, Offset: 0x178
 // Size: 0x9c
 function private registerbehaviorscriptfunctions() {
     assert(isscriptfunctionptr(&iscatalyst));
@@ -30,16 +30,16 @@ function private registerbehaviorscriptfunctions() {
 }
 
 // Namespace archetypecatalyst/archetype_catalyst
-// Params 1, eflags: 0x1 linked
-// Checksum 0x53ebff42, Offset: 0x220
+// Params 1, eflags: 0x0
+// Checksum 0xc2c993ac, Offset: 0x220
 // Size: 0x24
 function iscatalyst(entity) {
     return self.archetype === #"catalyst";
 }
 
 // Namespace archetypecatalyst/archetype_catalyst
-// Params 0, eflags: 0x1 linked
-// Checksum 0x4014abfe, Offset: 0x250
+// Params 0, eflags: 0x0
+// Checksum 0x9661c26f, Offset: 0x250
 // Size: 0xc4
 function function_5608540a() {
     self.zombie_move_speed = "walk";
@@ -48,14 +48,14 @@ function function_5608540a() {
     var_9d3ec6f[#"catalyst_electric"] = 3;
     var_9d3ec6f[#"catalyst_plasma"] = 2;
     var_9d3ec6f[#"catalyst_water"] = 4;
-    if (isdefined(self.var_9fde8624) && isdefined(var_9d3ec6f[self.var_9fde8624])) {
-        function_27c82a36(self, var_9d3ec6f[self.var_9fde8624]);
+    if (isdefined(self.subarchetype) && isdefined(var_9d3ec6f[self.subarchetype])) {
+        function_27c82a36(self, var_9d3ec6f[self.subarchetype]);
     }
 }
 
 // Namespace archetypecatalyst/archetype_catalyst
-// Params 0, eflags: 0x5 linked
-// Checksum 0x70a03d56, Offset: 0x320
+// Params 0, eflags: 0x4
+// Checksum 0x5a044faa, Offset: 0x320
 // Size: 0x4a
 function private function_728127b() {
     blackboard::createblackboardforentity(self);
@@ -64,8 +64,8 @@ function private function_728127b() {
 }
 
 // Namespace archetypecatalyst/archetype_catalyst
-// Params 2, eflags: 0x1 linked
-// Checksum 0x5d593feb, Offset: 0x378
+// Params 2, eflags: 0x0
+// Checksum 0xf75a10d3, Offset: 0x378
 // Size: 0x150
 function function_27c82a36(entity, catalyst_type) {
     entity function_b7e4069(catalyst_type);
@@ -86,7 +86,7 @@ function function_27c82a36(entity, catalyst_type) {
 
 // Namespace archetypecatalyst/archetype_catalyst
 // Params 3, eflags: 0x0
-// Checksum 0x1175a55a, Offset: 0x4d0
+// Checksum 0x567ea6ca, Offset: 0x4d0
 // Size: 0xe0
 function function_84c6177b(spawner, catalyst_type, location) {
     spawner.script_forcespawn = 1;
@@ -108,16 +108,16 @@ function function_84c6177b(spawner, catalyst_type, location) {
 }
 
 // Namespace archetypecatalyst/archetype_catalyst
-// Params 1, eflags: 0x5 linked
-// Checksum 0x182d30d8, Offset: 0x5b8
+// Params 1, eflags: 0x4
+// Checksum 0x2609bfc0, Offset: 0x5b8
 // Size: 0x1a
 function private function_b7e4069(catalyst_type) {
     self.catalyst_type = catalyst_type;
 }
 
 // Namespace archetypecatalyst/archetype_catalyst
-// Params 1, eflags: 0x5 linked
-// Checksum 0x85b34e32, Offset: 0x5e0
+// Params 1, eflags: 0x4
+// Checksum 0x1cbc2acd, Offset: 0x5e0
 // Size: 0x2c
 function private function_dc16721f(entity) {
     entity.__blackboard = undefined;
@@ -125,8 +125,8 @@ function private function_dc16721f(entity) {
 }
 
 // Namespace archetypecatalyst/archetype_catalyst
-// Params 2, eflags: 0x1 linked
-// Checksum 0x3bccc733, Offset: 0x618
+// Params 2, eflags: 0x0
+// Checksum 0x83e33a34, Offset: 0x618
 // Size: 0xd4
 function function_8f9b9d24(catalyst_type, func) {
     if (!isdefined(level.var_f6d5bd0c)) {
@@ -143,8 +143,8 @@ function function_8f9b9d24(catalyst_type, func) {
 }
 
 // Namespace archetypecatalyst/archetype_catalyst
-// Params 5, eflags: 0x1 linked
-// Checksum 0xe7aa3cec, Offset: 0x6f8
+// Params 5, eflags: 0x0
+// Checksum 0x2e4b361, Offset: 0x6f8
 // Size: 0x194
 function function_720a0584(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
     entity orientmode("face angle", entity.angles[1]);

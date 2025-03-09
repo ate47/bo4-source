@@ -1,8 +1,8 @@
 {
-    "var_ab1984e9": -1,
+    "hash_ab1984e9": -1,
     "configstringfiletype": "scriptbundle",
     "numprimaryweapons": 1,
     "type": "playerloadoutrestrictions",
     "name": "plr_mp_wc_overkill",
-    "var_9bb0ceab": "#bonuscard_overkill"
+    "hash_9bb0ceab": "#bonuscard_overkill"
 }

@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x31247f50, Offset: 0x300
 // Size: 0x94
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x32b5a5c6, Offset: 0x3a0
 // Size: 0x204
 function __main__() {
@@ -84,7 +84,7 @@ function __main__() {
 #/
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1cca2754, Offset: 0x920
 // Size: 0x1c
 function thundergun_on_player_connect() {
@@ -92,7 +92,7 @@ function thundergun_on_player_connect() {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9cd50703, Offset: 0x948
 // Size: 0x150
 function wait_for_thundergun_fired() {
@@ -124,7 +124,7 @@ function thundergun_network_choke() {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcd7141b6, Offset: 0xb00
 // Size: 0x5c
 function thundergun_fired() {
@@ -134,7 +134,7 @@ function thundergun_fired() {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc5015e85, Offset: 0xb68
 // Size: 0x156
 function thundergun_affect_ais() {
@@ -159,7 +159,7 @@ function thundergun_affect_ais() {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9d2f02e9, Offset: 0xcc8
 // Size: 0x756
 function thundergun_get_enemies_in_range() {
@@ -233,7 +233,7 @@ function thundergun_get_enemies_in_range() {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7dcfb438, Offset: 0x1428
 // Size: 0x390
 function function_742cb66e() {
@@ -267,7 +267,7 @@ function function_742cb66e() {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x33bdabfd, Offset: 0x17c0
 // Size: 0x8c
 function thundergun_debug_print(msg, color) {
@@ -283,7 +283,7 @@ function thundergun_debug_print(msg, color) {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf2f9d413, Offset: 0x1858
 // Size: 0x14c
 function thundergun_fling_zombie(player, fling_vec, index) {
@@ -308,7 +308,7 @@ function thundergun_fling_zombie(player, fling_vec, index) {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa9c46e17, Offset: 0x19b0
 // Size: 0x154
 function zombie_knockdown(player, gib) {
@@ -329,7 +329,7 @@ function zombie_knockdown(player, gib) {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd776e2d8, Offset: 0x1b10
 // Size: 0x25c
 function playthundergunpainanim() {
@@ -369,7 +369,7 @@ function playthundergunpainanim() {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa4ba2236, Offset: 0x1d78
 // Size: 0xcc
 function thundergun_knockdown_zombie(player, gib) {
@@ -385,7 +385,7 @@ function thundergun_knockdown_zombie(player, gib) {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x907e4674, Offset: 0x1e50
 // Size: 0x9c
 function handle_thundergun_pain_notetracks(note) {
@@ -430,7 +430,7 @@ function thundergun_sound_thread() {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x326a1c73, Offset: 0x20d8
 // Size: 0xe4
 function setup_thundergun_vox(player, fling, gib, knockdown) {

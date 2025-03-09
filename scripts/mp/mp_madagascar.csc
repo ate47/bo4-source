@@ -30,7 +30,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_madagascar/mp_madagascar
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5f5a376e, Offset: 0x2f0
 // Size: 0x2c
 function on_localclient_connect(localclientnum) {
@@ -39,7 +39,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace mp_madagascar/mp_madagascar
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x28b92a33, Offset: 0x328
 // Size: 0x2c
 function on_gameplay_started(localclientnum) {
@@ -48,7 +48,7 @@ function on_gameplay_started(localclientnum) {
 }
 
 // Namespace mp_madagascar/mp_madagascar
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2762fb9e, Offset: 0x360
 // Size: 0x9a
 function dom_flag_base_fx_override(flag, team) {
@@ -68,7 +68,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_madagascar/mp_madagascar
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4fa0fdd3, Offset: 0x408
 // Size: 0x9a
 function dom_flag_cap_fx_override(flag, team) {

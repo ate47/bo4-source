@@ -1,19 +1,19 @@
 {
     "descriptionimage": "#hash_b0051468c8fa60d",
     "description": "#hash_75a4de62df5fc44a",
-    "var_60fcfffa": "#menu/on",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 0.01,
+    "hash_60fcfffa": "#menu/on",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 0.01,
     "maxvalue": 1,
     "name": "pc_mouse_sensitivity",
     "displayname": "#hash_3fb4a1191cbaf67a",
     "rangestartvalue": 0.01,
-    "var_d6897f56": 1,
+    "hash_d6897f56": 1,
     "decimalplace": 0.01,
-    "var_66faec87": 100,
+    "hash_66faec87": 100,
     "statname": "m_mouseSensitivity",
-    "var_d4e288e": 15,
-    "var_b7401319": "#menu/off"
+    "hash_d4e288e": 15,
+    "hash_b7401319": "#menu/off"
 }

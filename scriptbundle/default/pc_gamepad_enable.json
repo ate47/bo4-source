@@ -1,18 +1,18 @@
 {
     "descriptionimage": "#hash_7ff90f0bea8ed361",
     "description": "#hash_2168142ea1063b28",
-    "var_60fcfffa": "#hash_549e8c52b9d44b44",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 0.1,
+    "hash_60fcfffa": "#hash_549e8c52b9d44b44",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 0.1,
     "name": "pc_gamepad_enable",
     "displayname": "#hash_6f09fa654126ca60",
     "decimalplace": 0.01,
-    "var_66faec87": 2,
+    "hash_66faec87": 2,
     "statname": "gpad_enabled",
-    "var_82c732a7": 1,
+    "isenableddisabled": 1,
     "minvalue": 1,
-    "var_d4e288e": 1,
-    "var_b7401319": "#hash_3d6c2fd5dd7a1f6d"
+    "hash_d4e288e": 1,
+    "hash_b7401319": "#hash_3d6c2fd5dd7a1f6d"
 }

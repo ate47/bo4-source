@@ -38,12 +38,12 @@
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 12000,
+    "hash_7fb0967b": 12000,
     "type": "itemspawnlist",
-    "var_345eba59": 6,
-    "var_9b009839": 10,
+    "hash_345eba59": 6,
+    "hash_9b009839": 10,
     "name": "supply_stash_cu07",
-    "var_fde72c94": 100,
-    "var_dc91e192": 1,
+    "supplystashweight": 100,
+    "hash_dc91e192": 1,
     "supplystash": 1
 }

@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_beer",
-    "var_ff3063df": "attach_t8_charm_beer",
+    "hash_ff3063df": "attach_t8_charm_beer",
     "image": "ui_icon_weapon_charms_beer",
     "name": "charm_beer",
     "displayname": "#hash_ad02a3326223f35",
     "icon": "ui_icon_weapon_charms_beer",
-    "var_ef5ad2b3": "attach_t8_charm_beer",
+    "hash_ef5ad2b3": "attach_t8_charm_beer",
     "previewimage": "#ui_icon_weapon_charms_beer"
 }

@@ -1,10 +1,10 @@
 {
     "lootid": "#hash_2926fa05e45740e",
-    "var_904b37bc": "#hash_6fb26434e8ac7722",
+    "hash_904b37bc": "#hash_6fb26434e8ac7722",
     "image": "loot04_ui_icon_blackmarket_reserves_death_fx_black_hole",
     "name": "weapondeathfx_blackhole",
     "displayname": "#hash_70b6e3d8673f01ed",
     "icon": "loot04_ui_icon_cac_death_fx_black_hole",
-    "var_eeb78b92": "#hash_7b8fb5908d3b0334",
+    "hash_eeb78b92": "#hash_7b8fb5908d3b0334",
     "previewimage": "#loot04_ui_icon_blackmarket_reserves_death_fx_black_hole"
 }

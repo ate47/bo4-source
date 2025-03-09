@@ -1,8 +1,8 @@
 {
-    "var_2ecceeab": "#attack_chopper_kill",
+    "hash_2ecceeab": "#attack_chopper_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
     "name": "helicopter_comlink_mp_scoreevents",
-    "var_e1b418c1": "ability"
+    "customsettingstype": "ability"
 }

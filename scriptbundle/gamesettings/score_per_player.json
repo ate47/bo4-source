@@ -8,6 +8,6 @@
     "displayname": "#menu/scoring",
     "label1": "#menu/constant",
     "label2": "#menu/player_additive",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "scorePerPlayer"
 }

@@ -4,14 +4,14 @@
     "value2": "1",
     "value3": "2",
     "value1": "0",
-    "var_dfed6968": "3",
+    "value4": "3",
     "type": "gamesettings",
     "name": "shutdown_damage",
     "displayname": "#menu/shutdown_damage",
-    "var_684ccd4c": "#menu/high",
+    "label4": "#menu/high",
     "label1": "#menu/invulnerable",
-    "var_71b6e020": "#menu/normal",
+    "label3": "#menu/normal",
     "label2": "#menu/low",
-    "var_9de86f42": 4,
+    "optionscount": 4,
     "setting": "shutdownDamage"
 }

@@ -9,7 +9,7 @@
     "model": "#attach_t8_wz_pickup_ext_barrel",
     "type": "itemspawnentry",
     "hintstring": "#wz/attach_extbarrel",
-    "var_65b3a12": 1,
+    "hash_65b3a12": 1,
     "name": "extbarrel_wz_item",
     "displayname": "#wz/attach_extbarrel",
     "icon": "#ui_icon_attachment_longbarrel",

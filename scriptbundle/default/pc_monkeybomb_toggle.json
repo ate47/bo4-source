@@ -1,18 +1,18 @@
 {
     "descriptionimage": "#hash_387bd7280f3ff251",
     "description": "#hash_7ed84a1e4376106b",
-    "var_60fcfffa": "#hash_2222dd50e5e35d4",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 0.1,
+    "hash_60fcfffa": "#hash_2222dd50e5e35d4",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 0.1,
     "maxvalue": 1,
     "name": "pc_monkeybomb_toggle",
     "displayname": "#hash_31362e4950201351",
     "decimalplace": 0.01,
-    "var_66faec87": 2,
+    "hash_66faec87": 2,
     "statname": "cymbal_monkey_toggle",
-    "var_82c732a7": 1,
-    "var_d4e288e": 1,
-    "var_b7401319": "#hash_31a2e842c09df09e"
+    "isenableddisabled": 1,
+    "hash_d4e288e": 1,
+    "hash_b7401319": "#hash_31a2e842c09df09e"
 }

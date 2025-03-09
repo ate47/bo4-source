@@ -60,8 +60,8 @@
     "name": "aib_vign_zm_mob_brutus_revealed",
     "dontsync": 1,
     "disablesceneskipping": 1,
-    "var_241c5f3c": 1,
-    "var_a6da2039": "aib_vign_zm_mob_brutus_revealed",
+    "hash_241c5f3c": 1,
+    "hash_a6da2039": "aib_vign_zm_mob_brutus_revealed",
     "aligntarget": "tag_align_escape_wardens_attic",
     "ignorestreamer": 1,
     "team": "any"

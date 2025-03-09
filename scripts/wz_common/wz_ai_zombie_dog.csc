@@ -8,15 +8,15 @@
 
 // Namespace zombie_dog_util/wz_ai_zombie_dog
 // Params 0, eflags: 0x2
-// Checksum 0x2932e601, Offset: 0x120
+// Checksum 0x332ab6b9, Offset: 0x120
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zombie_dog_util", &__init__, undefined, undefined);
 }
 
 // Namespace zombie_dog_util/wz_ai_zombie_dog
-// Params 0, eflags: 0x1 linked
-// Checksum 0x6cca2306, Offset: 0x168
+// Params 0, eflags: 0x0
+// Checksum 0x1b5da035, Offset: 0x168
 // Size: 0xa4
 function __init__() {
     init_dog_fx();
@@ -25,8 +25,8 @@ function __init__() {
 }
 
 // Namespace zombie_dog_util/wz_ai_zombie_dog
-// Params 0, eflags: 0x1 linked
-// Checksum 0x79acf5a6, Offset: 0x218
+// Params 0, eflags: 0x0
+// Checksum 0xe64595f6, Offset: 0x218
 // Size: 0x182
 function init_dog_fx() {
     level._effect[#"dog_eye_glow"] = #"hash_70696527ecb861ae";
@@ -40,8 +40,8 @@ function init_dog_fx() {
 }
 
 // Namespace zombie_dog_util/wz_ai_zombie_dog
-// Params 7, eflags: 0x1 linked
-// Checksum 0xe62c678c, Offset: 0x3a8
+// Params 7, eflags: 0x0
+// Checksum 0x3ebe49a6, Offset: 0x3a8
 // Size: 0x3cc
 function dog_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     util::waittill_dobj(localclientnum);
@@ -72,8 +72,8 @@ function dog_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname
 }
 
 // Namespace zombie_dog_util/wz_ai_zombie_dog
-// Params 7, eflags: 0x1 linked
-// Checksum 0xe1e087cc, Offset: 0x780
+// Params 7, eflags: 0x0
+// Checksum 0xba92f739, Offset: 0x780
 // Size: 0x74
 function dog_spawn_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     util::playfxontag(localclientnum, level._effect[#"lightning_dog_spawn"], self, "j_spine2");

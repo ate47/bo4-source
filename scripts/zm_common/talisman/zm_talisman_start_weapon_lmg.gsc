@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_talisman_start_weapon_lmg/zm_talisman_start_weapon_lmg
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xec76a5d3, Offset: 0x120
 // Size: 0x7c
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace zm_talisman_start_weapon_lmg/zm_talisman_start_weapon_lmg
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x44f59a42, Offset: 0x1a8
 // Size: 0x1a
 function activate_talisman() {

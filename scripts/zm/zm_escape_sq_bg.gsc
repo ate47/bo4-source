@@ -26,7 +26,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_escape_sq_bg/zm_escape_sq_bg
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8d1f97d6, Offset: 0x210
 // Size: 0x52
 function __init__() {
@@ -35,7 +35,7 @@ function __init__() {
 }
 
 // Namespace zm_escape_sq_bg/zm_escape_sq_bg
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7f4cb73e, Offset: 0x270
 // Size: 0x2c
 function __main__() {
@@ -46,7 +46,7 @@ function __main__() {
 }
 
 // Namespace zm_escape_sq_bg/zm_escape_sq_bg
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xca1083c8, Offset: 0x2a8
 // Size: 0x3bc
 function wait_for_initial_conditions() {
@@ -88,7 +88,7 @@ function wait_for_initial_conditions() {
 }
 
 // Namespace zm_escape_sq_bg/zm_escape_sq_bg
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfdb19118, Offset: 0x670
 // Size: 0x168
 function sq_bg_macguffin_think() {
@@ -107,7 +107,7 @@ function sq_bg_macguffin_think() {
 }
 
 // Namespace zm_escape_sq_bg/zm_escape_sq_bg
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7c72e59d, Offset: 0x7e0
 // Size: 0x7c
 function wait_and_hide_sq_bg_macguffin() {
@@ -120,7 +120,7 @@ function wait_and_hide_sq_bg_macguffin() {
 }
 
 // Namespace zm_escape_sq_bg/zm_escape_sq_bg
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa1179b7f, Offset: 0x868
 // Size: 0x210
 function tomahawk_the_macguffin(e_grenade, n_grenade_charge_power) {
@@ -151,7 +151,7 @@ function tomahawk_the_macguffin(e_grenade, n_grenade_charge_power) {
 }
 
 // Namespace zm_escape_sq_bg/zm_escape_sq_bg
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa92ad890, Offset: 0xa80
 // Size: 0xc8
 function give_player_macguffin_upon_receipt(mdl_tomahawk, mdl_skull) {
@@ -167,7 +167,7 @@ function give_player_macguffin_upon_receipt(mdl_tomahawk, mdl_skull) {
 }
 
 // Namespace zm_escape_sq_bg/zm_escape_sq_bg
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x373af8ba, Offset: 0xb50
 // Size: 0x10c
 function check_sq_bg_progress() {
@@ -192,7 +192,7 @@ function check_sq_bg_progress() {
 }
 
 // Namespace zm_escape_sq_bg/zm_escape_sq_bg
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd02440a0, Offset: 0xc68
 // Size: 0x44
 function play_sq_bg_collected_vo() {
@@ -202,7 +202,7 @@ function play_sq_bg_collected_vo() {
 }
 
 // Namespace zm_escape_sq_bg/zm_escape_sq_bg
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x81fad9af, Offset: 0xcb8
 // Size: 0x51c
 function give_sq_bg_reward(var_dd7441ab) {
@@ -242,7 +242,7 @@ function give_sq_bg_reward(var_dd7441ab) {
 }
 
 // Namespace zm_escape_sq_bg/zm_escape_sq_bg
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x7c6c2b0e, Offset: 0x11e0
 // Size: 0x64
 function private function_d61275a7() {
@@ -253,7 +253,7 @@ function private function_d61275a7() {
 }
 
 // Namespace zm_escape_sq_bg/zm_escape_sq_bg
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3dfe838b, Offset: 0x1250
 // Size: 0x6c
 function sq_bg_spawn_rumble() {
@@ -267,7 +267,7 @@ function sq_bg_spawn_rumble() {
 }
 
 // Namespace zm_escape_sq_bg/zm_escape_sq_bg
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc44b85d3, Offset: 0x12c8
 // Size: 0x12c
 function take_old_weapon_and_give_reward() {

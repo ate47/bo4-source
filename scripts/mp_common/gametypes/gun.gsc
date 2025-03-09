@@ -303,7 +303,7 @@ function takeoldweapon(oldweapon) {
 // Size: 0x428
 function givecustomloadout(takeoldweapon = 0) {
     self loadout::init_player(!takeoldweapon);
-    self function_e6f9e3cd();
+    self cleartalents();
     self clearperks();
     perks = self getloadoutperks(0);
     foreach (perk in perks) {

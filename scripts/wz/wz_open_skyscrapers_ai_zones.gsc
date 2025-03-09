@@ -3,7 +3,7 @@
 #namespace wz_open_skyscrapers_ai_zones;
 
 // Namespace wz_open_skyscrapers_ai_zones/wz_open_skyscrapers_ai_zones
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8ade708e, Offset: 0x88
 // Size: 0x858
 function init() {
@@ -25,22 +25,22 @@ function init() {
         level.var_85d43ea3 = #"hash_618248fca82d83a6";
     }
     level.var_6df0d3b6 = &function_6df0d3b6;
-    if (isdefined(level.warzoneblightfatherseverywhere) && level.warzoneblightfatherseverywhere && isdefined(level.var_d33a57a) && level.var_d33a57a) {
+    if (isdefined(level.warzoneblightfatherseverywhere) && level.warzoneblightfatherseverywhere && isdefined(level.warzoneblightfatherenabled) && level.warzoneblightfatherenabled) {
         function_36cc50(#"spawner_wz_blight_father", 1, 1);
-    } else if (isdefined(level.warzonebrutuseverywhere) && level.warzonebrutuseverywhere && isdefined(level.var_6b59ac2c) && level.var_6b59ac2c) {
+    } else if (isdefined(level.warzonebrutuseverywhere) && level.warzonebrutuseverywhere && isdefined(level.warzonebrutusenabled) && level.warzonebrutusenabled) {
         function_36cc50(#"spawner_boct_brutus_wz", 4, 2);
     } else if (isdefined(level.warzonebrutuslargeeverywhere) && level.warzonebrutuslargeeverywhere && isdefined(level.var_4f7f5c18) && level.var_4f7f5c18) {
         function_36cc50(#"spawner_boct_brutus_special_wz", 4, 2);
-    } else if (isdefined(level.warzonehellhoundseverywhere) && level.warzonehellhoundseverywhere && isdefined(level.var_b6e30614) && level.var_b6e30614) {
+    } else if (isdefined(level.warzonehellhoundseverywhere) && level.warzonehellhoundseverywhere && isdefined(level.warzonehellhoundenabled) && level.warzonehellhoundenabled) {
         function_36cc50(#"spawner_boct_zombie_dog_wz", 10, 4);
-    } else if (isdefined(level.warzoneavogadroeverywhere) && level.warzoneavogadroeverywhere && isdefined(level.var_9196aafd) && level.var_9196aafd) {
+    } else if (isdefined(level.warzoneavogadroeverywhere) && level.warzoneavogadroeverywhere && isdefined(level.warzoneavogadroenabled) && level.warzoneavogadroenabled) {
         function_36cc50(#"spawner_boct_avogadro", 4, 2);
     } else if (isdefined(level.warzonezombiesmaxtest) && level.warzonezombiesmaxtest) {
         function_f910ed8a();
     } else if (isdefined(level.warzoneminibosses) && level.warzoneminibosses) {
         function_e938f117();
     } else {
-        level.zoneindex = level.var_3622eea1;
+        level.zoneindex = level.warzonezoneindex;
         level.zone_setups = [];
         level.zone_setups[0] = &function_c41ad9f9;
         level.zone_setups[1] = &function_53f0d046;
@@ -58,7 +58,7 @@ function init() {
 }
 
 // Namespace wz_open_skyscrapers_ai_zones/wz_open_skyscrapers_ai_zones
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfd8c9869, Offset: 0x8e8
 // Size: 0x28c
 function function_6df0d3b6(zone_name) {
@@ -123,7 +123,7 @@ function function_6df0d3b6(zone_name) {
 }
 
 // Namespace wz_open_skyscrapers_ai_zones/wz_open_skyscrapers_ai_zones
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x839d9eb6, Offset: 0xb80
 // Size: 0x3e
 function function_6e9af98a(var_2799920d, var_d6d494ab) {
@@ -134,7 +134,7 @@ function function_6e9af98a(var_2799920d, var_d6d494ab) {
 }
 
 // Namespace wz_open_skyscrapers_ai_zones/wz_open_skyscrapers_ai_zones
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb4df905b, Offset: 0xbc8
 // Size: 0x3e
 function function_bb7cbe85(var_2799920d, var_d6d494ab) {
@@ -145,7 +145,7 @@ function function_bb7cbe85(var_2799920d, var_d6d494ab) {
 }
 
 // Namespace wz_open_skyscrapers_ai_zones/wz_open_skyscrapers_ai_zones
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb979a99, Offset: 0xc10
 // Size: 0x3e
 function function_5f1710a5(var_2799920d, var_d6d494ab) {
@@ -156,7 +156,7 @@ function function_5f1710a5(var_2799920d, var_d6d494ab) {
 }
 
 // Namespace wz_open_skyscrapers_ai_zones/wz_open_skyscrapers_ai_zones
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf9abcf1b, Offset: 0xc58
 // Size: 0x108
 function function_14cf2357() {
@@ -177,7 +177,7 @@ function function_14cf2357() {
 }
 
 // Namespace wz_open_skyscrapers_ai_zones/wz_open_skyscrapers_ai_zones
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd5f92087, Offset: 0xd68
 // Size: 0xfc
 function function_b0b1cbb8(ai_type) {
@@ -187,7 +187,7 @@ function function_b0b1cbb8(ai_type) {
 }
 
 // Namespace wz_open_skyscrapers_ai_zones/wz_open_skyscrapers_ai_zones
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe6673503, Offset: 0xe70
 // Size: 0x884
 function function_c41ad9f9() {
@@ -198,35 +198,35 @@ function function_c41ad9f9() {
         var_ce0426e0 = getdvarvector(#"hash_cbccd885e75d219", (10, 5, 2));
         var_6ba5e275 = getdvarvector(#"hash_cbccd885e75d219", (6, 3, 1));
     }
-    var_ecf3ab7f = var_ce0426e0[0];
-    var_8a0a1dec = var_ce0426e0[1];
+    maxaicount = var_ce0426e0[0];
+    maxalivecount = var_ce0426e0[1];
     var_5b2d986e = var_ce0426e0[2];
-    wz_ai_zonemgr::function_5f0d105a(0, #"asylum", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
-    if (level.var_d33a57a) {
+    wz_ai_zonemgr::function_5f0d105a(0, #"asylum", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
+    if (level.warzoneblightfatherenabled) {
         wz_ai_zonemgr::function_5f0d105a(0, #"cemetary", #"spawner_wz_blight_father", 1, 1, 0);
         wz_ai_zonemgr::function_c3bb62c1(#"cemetary", #"spawner_wz_blight_father", 2);
         wz_ai_zonemgr::function_d6258153(#"cemetary", #"spawner_wz_blight_father", 1);
     } else {
-        wz_ai_zonemgr::function_5f0d105a(0, #"cemetary", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+        wz_ai_zonemgr::function_5f0d105a(0, #"cemetary", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     }
-    wz_ai_zonemgr::function_5f0d105a(0, #"nuketowncrater", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e + 3);
+    wz_ai_zonemgr::function_5f0d105a(0, #"nuketowncrater", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e + 3);
     wz_ai_zonemgr::function_6c75dee3(#"nuketowncrater", level.var_85d43ea3, 1);
-    wz_ai_zonemgr::function_5f0d105a(0, #"nuketownbunker", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
-    wz_ai_zonemgr::function_5f0d105a(0, #"buried", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, #"nuketownbunker", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, #"buried", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     wz_ai_zonemgr::function_6c75dee3(#"buried", level.var_85d43ea3, 1);
     wz_ai_zonemgr::function_2826217a(#"buried", level.var_85d43ea3, 2);
     var_b2ab573e = function_14cf2357();
-    wz_ai_zonemgr::function_5f0d105a(0, var_b2ab573e, level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, var_b2ab573e, level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     wz_ai_zonemgr::function_6c75dee3(var_b2ab573e, level.var_85d43ea3, 1);
-    var_ecf3ab7f = var_6ba5e275[0];
-    var_8a0a1dec = var_6ba5e275[1];
+    maxaicount = var_6ba5e275[0];
+    maxalivecount = var_6ba5e275[1];
     var_5b2d986e = var_6ba5e275[2];
-    wz_ai_zonemgr::function_5f0d105a(1, #"diner", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
-    wz_ai_zonemgr::function_5f0d105a(1, #"boxinggym", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(1, #"diner", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(1, #"boxinggym", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     wz_ai_zonemgr::function_6c75dee3(#"boxinggym", level.var_85d43ea3, 1);
-    wz_ai_zonemgr::function_5f0d105a(1, #"lighthouse", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(1, #"lighthouse", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     wz_ai_zonemgr::function_462b41e2(#"asylum", level.var_85d43ea3, #"hospital_stash", #"hash_ca8b234ad1fea38");
-    if (level.var_d33a57a) {
+    if (level.warzoneblightfatherenabled) {
         wz_ai_zonemgr::function_462b41e2(#"cemetary", #"spawner_wz_blight_father", #"zombie_stash_graveyard", #"zombie_stash_graveyard_quest", #"zombie_stash_graveyard_ee");
     } else {
         wz_ai_zonemgr::function_462b41e2(#"cemetary", level.var_85d43ea3, #"zombie_stash_graveyard", #"zombie_stash_graveyard_quest", #"zombie_stash_graveyard_ee");
@@ -241,7 +241,7 @@ function function_c41ad9f9() {
 }
 
 // Namespace wz_open_skyscrapers_ai_zones/wz_open_skyscrapers_ai_zones
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb1f740, Offset: 0x1700
 // Size: 0x884
 function function_53f0d046() {
@@ -252,35 +252,35 @@ function function_53f0d046() {
         var_ce0426e0 = getdvarvector(#"hash_cbccd885e75d219", (10, 4, 2));
         var_6ba5e275 = getdvarvector(#"hash_cbccd885e75d219", (10, 4, 2));
     }
-    var_ecf3ab7f = var_ce0426e0[0];
-    var_8a0a1dec = var_ce0426e0[1];
+    maxaicount = var_ce0426e0[0];
+    maxalivecount = var_ce0426e0[1];
     var_5b2d986e = var_ce0426e0[2];
-    wz_ai_zonemgr::function_5f0d105a(0, #"boxinggym", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, #"boxinggym", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     wz_ai_zonemgr::function_6c75dee3(#"boxinggym", level.var_85d43ea3, 1);
-    wz_ai_zonemgr::function_5f0d105a(0, #"lighthouse", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
-    wz_ai_zonemgr::function_5f0d105a(0, #"nuketowncrater", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e + 2);
+    wz_ai_zonemgr::function_5f0d105a(0, #"lighthouse", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, #"nuketowncrater", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e + 2);
     wz_ai_zonemgr::function_6c75dee3(#"nuketowncrater", level.var_85d43ea3, 1);
-    wz_ai_zonemgr::function_5f0d105a(0, #"nuketownbunker", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
-    wz_ai_zonemgr::function_5f0d105a(0, #"buried", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, #"nuketownbunker", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, #"buried", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     wz_ai_zonemgr::function_6c75dee3(#"buried", level.var_85d43ea3, 1);
     wz_ai_zonemgr::function_2826217a(#"buried", level.var_85d43ea3, 2);
     var_b2ab573e = function_14cf2357();
-    wz_ai_zonemgr::function_5f0d105a(0, var_b2ab573e, level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, var_b2ab573e, level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     wz_ai_zonemgr::function_6c75dee3(var_b2ab573e, level.var_85d43ea3, 1);
-    var_ecf3ab7f = var_6ba5e275[0];
-    var_8a0a1dec = var_6ba5e275[1];
+    maxaicount = var_6ba5e275[0];
+    maxalivecount = var_6ba5e275[1];
     var_5b2d986e = var_6ba5e275[2];
-    wz_ai_zonemgr::function_5f0d105a(1, #"asylum", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
-    if (level.var_d33a57a) {
+    wz_ai_zonemgr::function_5f0d105a(1, #"asylum", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
+    if (level.warzoneblightfatherenabled) {
         wz_ai_zonemgr::function_5f0d105a(1, #"cemetary", #"spawner_wz_blight_father", 1, 1, 0);
         wz_ai_zonemgr::function_c3bb62c1(#"cemetary", #"spawner_wz_blight_father", 2);
         wz_ai_zonemgr::function_d6258153(#"cemetary", #"spawner_wz_blight_father", 1);
     } else {
-        wz_ai_zonemgr::function_5f0d105a(1, #"cemetary", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+        wz_ai_zonemgr::function_5f0d105a(1, #"cemetary", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     }
-    wz_ai_zonemgr::function_5f0d105a(1, #"diner", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(1, #"diner", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     wz_ai_zonemgr::function_462b41e2(#"asylum", level.var_85d43ea3, #"hospital_stash", #"hash_ca8b234ad1fea38");
-    if (level.var_d33a57a) {
+    if (level.warzoneblightfatherenabled) {
         wz_ai_zonemgr::function_462b41e2(#"cemetary", #"spawner_wz_blight_father", #"zombie_stash_graveyard", #"zombie_stash_graveyard_quest", #"zombie_stash_graveyard_ee");
     } else {
         wz_ai_zonemgr::function_462b41e2(#"cemetary", level.var_85d43ea3, #"zombie_stash_graveyard", #"zombie_stash_graveyard_quest", #"zombie_stash_graveyard_ee");
@@ -295,7 +295,7 @@ function function_53f0d046() {
 }
 
 // Namespace wz_open_skyscrapers_ai_zones/wz_open_skyscrapers_ai_zones
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x63798396, Offset: 0x1f90
 // Size: 0x884
 function function_864a9dec() {
@@ -306,35 +306,35 @@ function function_864a9dec() {
         var_ce0426e0 = getdvarvector(#"hash_cbccd885e75d219", (10, 4, 2));
         var_6ba5e275 = getdvarvector(#"hash_cbccd885e75d219", (10, 4, 2));
     }
-    var_ecf3ab7f = var_ce0426e0[0];
-    var_8a0a1dec = var_ce0426e0[1];
+    maxaicount = var_ce0426e0[0];
+    maxalivecount = var_ce0426e0[1];
     var_5b2d986e = var_ce0426e0[2];
-    wz_ai_zonemgr::function_5f0d105a(0, #"diner", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
-    wz_ai_zonemgr::function_5f0d105a(0, #"lighthouse", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
-    wz_ai_zonemgr::function_5f0d105a(0, #"nuketowncrater", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e + 2);
+    wz_ai_zonemgr::function_5f0d105a(0, #"diner", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, #"lighthouse", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, #"nuketowncrater", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e + 2);
     wz_ai_zonemgr::function_6c75dee3(#"nuketowncrater", level.var_85d43ea3, 1);
-    wz_ai_zonemgr::function_5f0d105a(0, #"nuketownbunker", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
-    wz_ai_zonemgr::function_5f0d105a(0, #"buried", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, #"nuketownbunker", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, #"buried", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     wz_ai_zonemgr::function_6c75dee3(#"buried", level.var_85d43ea3, 1);
     wz_ai_zonemgr::function_2826217a(#"buried", level.var_85d43ea3, 2);
     var_b2ab573e = function_14cf2357();
-    wz_ai_zonemgr::function_5f0d105a(0, var_b2ab573e, level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, var_b2ab573e, level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     wz_ai_zonemgr::function_6c75dee3(var_b2ab573e, level.var_85d43ea3, 1);
-    var_ecf3ab7f = var_6ba5e275[0];
-    var_8a0a1dec = var_6ba5e275[1];
+    maxaicount = var_6ba5e275[0];
+    maxalivecount = var_6ba5e275[1];
     var_5b2d986e = var_6ba5e275[2];
-    wz_ai_zonemgr::function_5f0d105a(1, #"asylum", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
-    if (level.var_d33a57a) {
+    wz_ai_zonemgr::function_5f0d105a(1, #"asylum", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
+    if (level.warzoneblightfatherenabled) {
         wz_ai_zonemgr::function_5f0d105a(1, #"cemetary", #"spawner_wz_blight_father", 1, 1, 0);
         wz_ai_zonemgr::function_c3bb62c1(#"cemetary", #"spawner_wz_blight_father", 2);
         wz_ai_zonemgr::function_d6258153(#"cemetary", #"spawner_wz_blight_father", 1);
     } else {
-        wz_ai_zonemgr::function_5f0d105a(1, #"cemetary", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+        wz_ai_zonemgr::function_5f0d105a(1, #"cemetary", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     }
-    wz_ai_zonemgr::function_5f0d105a(1, #"boxinggym", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(1, #"boxinggym", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     wz_ai_zonemgr::function_6c75dee3(#"boxinggym", level.var_85d43ea3, 1);
     wz_ai_zonemgr::function_462b41e2(#"asylum", level.var_85d43ea3, #"hospital_stash", #"hash_ca8b234ad1fea38");
-    if (level.var_d33a57a) {
+    if (level.warzoneblightfatherenabled) {
         wz_ai_zonemgr::function_462b41e2(#"cemetary", #"spawner_wz_blight_father", #"zombie_stash_graveyard", #"zombie_stash_graveyard_quest", #"zombie_stash_graveyard_ee");
     } else {
         wz_ai_zonemgr::function_462b41e2(#"cemetary", level.var_85d43ea3, #"zombie_stash_graveyard", #"zombie_stash_graveyard_quest", #"zombie_stash_graveyard_ee");
@@ -349,29 +349,29 @@ function function_864a9dec() {
 }
 
 // Namespace wz_open_skyscrapers_ai_zones/wz_open_skyscrapers_ai_zones
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6b457506, Offset: 0x2820
 // Size: 0x5dc
-function function_36cc50(var_8667e69, maxcount, var_8a14a619) {
-    wz_ai_zonemgr::function_5f0d105a(0, #"asylum", var_8667e69, maxcount, var_8a14a619, 0);
+function function_36cc50(var_8667e69, maxcount, maxalive) {
+    wz_ai_zonemgr::function_5f0d105a(0, #"asylum", var_8667e69, maxcount, maxalive, 0);
     wz_ai_zonemgr::function_c3bb62c1(#"asylum", var_8667e69, 2);
-    wz_ai_zonemgr::function_5f0d105a(0, #"cemetary", var_8667e69, maxcount, var_8a14a619, 0);
+    wz_ai_zonemgr::function_5f0d105a(0, #"cemetary", var_8667e69, maxcount, maxalive, 0);
     wz_ai_zonemgr::function_c3bb62c1(#"cemetary", var_8667e69, 2);
-    wz_ai_zonemgr::function_5f0d105a(1, #"diner", var_8667e69, maxcount, var_8a14a619, 0);
+    wz_ai_zonemgr::function_5f0d105a(1, #"diner", var_8667e69, maxcount, maxalive, 0);
     wz_ai_zonemgr::function_c3bb62c1(#"diner", var_8667e69, 2);
-    wz_ai_zonemgr::function_5f0d105a(1, #"boxinggym", var_8667e69, maxcount, var_8a14a619, 0);
+    wz_ai_zonemgr::function_5f0d105a(1, #"boxinggym", var_8667e69, maxcount, maxalive, 0);
     wz_ai_zonemgr::function_c3bb62c1(#"boxinggym", var_8667e69, 2);
     wz_ai_zonemgr::function_6c75dee3(#"boxinggym", var_8667e69, 1);
-    wz_ai_zonemgr::function_5f0d105a(1, #"lighthouse", var_8667e69, maxcount, var_8a14a619, 0);
+    wz_ai_zonemgr::function_5f0d105a(1, #"lighthouse", var_8667e69, maxcount, maxalive, 0);
     wz_ai_zonemgr::function_c3bb62c1(#"lighthouse", var_8667e69, 2);
-    wz_ai_zonemgr::function_5f0d105a(2, #"nuketowncrater", var_8667e69, maxcount, var_8a14a619, 0);
+    wz_ai_zonemgr::function_5f0d105a(2, #"nuketowncrater", var_8667e69, maxcount, maxalive, 0);
     wz_ai_zonemgr::function_c3bb62c1(#"nuketowncrater", var_8667e69, 2);
-    wz_ai_zonemgr::function_5f0d105a(2, #"nuketownbunker", var_8667e69, maxcount, var_8a14a619, 0);
+    wz_ai_zonemgr::function_5f0d105a(2, #"nuketownbunker", var_8667e69, maxcount, maxalive, 0);
     wz_ai_zonemgr::function_c3bb62c1(#"nuketownbunker", var_8667e69, 2);
-    wz_ai_zonemgr::function_5f0d105a(2, #"buried", var_8667e69, maxcount, var_8a14a619, 0);
+    wz_ai_zonemgr::function_5f0d105a(2, #"buried", var_8667e69, maxcount, maxalive, 0);
     wz_ai_zonemgr::function_c3bb62c1(#"buried", var_8667e69, 2);
     var_b2ab573e = function_14cf2357();
-    wz_ai_zonemgr::function_5f0d105a(2, var_b2ab573e, var_8667e69, maxcount, var_8a14a619, 0);
+    wz_ai_zonemgr::function_5f0d105a(2, var_b2ab573e, var_8667e69, maxcount, maxalive, 0);
     wz_ai_zonemgr::function_c3bb62c1(var_b2ab573e, var_8667e69, 2);
     wz_ai_zonemgr::function_462b41e2(#"asylum", var_8667e69, #"hospital_stash", #"hash_ca8b234ad1fea38");
     wz_ai_zonemgr::function_462b41e2(#"cemetary", var_8667e69, #"zombie_stash_graveyard", #"zombie_stash_graveyard_quest", #"zombie_stash_graveyard_ee");
@@ -385,7 +385,7 @@ function function_36cc50(var_8667e69, maxcount, var_8a14a619) {
 }
 
 // Namespace wz_open_skyscrapers_ai_zones/wz_open_skyscrapers_ai_zones
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf8efddda, Offset: 0x2e08
 // Size: 0x63c
 function function_f910ed8a() {
@@ -423,7 +423,7 @@ function function_f910ed8a() {
 }
 
 // Namespace wz_open_skyscrapers_ai_zones/wz_open_skyscrapers_ai_zones
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5a8d479a, Offset: 0x3450
 // Size: 0x99c
 function function_e938f117() {
@@ -434,26 +434,26 @@ function function_e938f117() {
         var_ce0426e0 = getdvarvector(#"hash_cbccd885e75d219", (10, 5, 2));
         var_6ba5e275 = getdvarvector(#"hash_cbccd885e75d219", (6, 3, 1));
     }
-    var_ecf3ab7f = var_ce0426e0[0];
-    var_8a0a1dec = var_ce0426e0[1];
+    maxaicount = var_ce0426e0[0];
+    maxalivecount = var_ce0426e0[1];
     var_5b2d986e = var_ce0426e0[2];
-    wz_ai_zonemgr::function_5f0d105a(0, #"asylum", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
-    wz_ai_zonemgr::function_5f0d105a(0, #"nuketowncrater", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e + 3);
+    wz_ai_zonemgr::function_5f0d105a(0, #"asylum", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, #"nuketowncrater", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e + 3);
     wz_ai_zonemgr::function_6c75dee3(#"nuketowncrater", level.var_85d43ea3, 1);
-    wz_ai_zonemgr::function_5f0d105a(0, #"nuketownbunker", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
-    wz_ai_zonemgr::function_5f0d105a(0, #"buried", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, #"nuketownbunker", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, #"buried", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     wz_ai_zonemgr::function_6c75dee3(#"buried", level.var_85d43ea3, 1);
     wz_ai_zonemgr::function_2826217a(#"buried", level.var_85d43ea3, 2);
     var_b2ab573e = function_14cf2357();
-    wz_ai_zonemgr::function_5f0d105a(0, var_b2ab573e, level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(0, var_b2ab573e, level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     wz_ai_zonemgr::function_6c75dee3(var_b2ab573e, level.var_85d43ea3, 1);
-    var_ecf3ab7f = var_6ba5e275[0];
-    var_8a0a1dec = var_6ba5e275[1];
+    maxaicount = var_6ba5e275[0];
+    maxalivecount = var_6ba5e275[1];
     var_5b2d986e = var_6ba5e275[2];
-    wz_ai_zonemgr::function_5f0d105a(1, #"diner", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
-    wz_ai_zonemgr::function_5f0d105a(1, #"boxinggym", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(1, #"diner", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(1, #"boxinggym", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     wz_ai_zonemgr::function_6c75dee3(#"boxinggym", level.var_85d43ea3, 1);
-    wz_ai_zonemgr::function_5f0d105a(1, #"cemetary", level.var_85d43ea3, var_ecf3ab7f, var_8a0a1dec, var_5b2d986e);
+    wz_ai_zonemgr::function_5f0d105a(1, #"cemetary", level.var_85d43ea3, maxaicount, maxalivecount, var_5b2d986e);
     if (isdefined(level.warzoneadddogs) && level.warzoneadddogs) {
         wz_ai_zonemgr::function_a2ac506b(#"asylum", level.var_85d43ea3, #"spawner_boct_zombie_dog_wz");
         wz_ai_zonemgr::function_a2ac506b(#"nuketowncrater", level.var_85d43ea3, #"spawner_boct_zombie_dog_wz");

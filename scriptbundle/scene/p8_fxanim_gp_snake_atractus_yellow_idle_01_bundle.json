@@ -1,0 +1,41 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_319eb1f3bcbd266e",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7005c2826ef1a0b2",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_132c9791": 1,
+                    "hash_b3dddfd3": 1,
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_1c938b9292d19963",
+            "type": "prop",
+            "name": "prop 1",
+            "hash_873368a8": 100,
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_gp_snake_atractus_yellow_idle_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

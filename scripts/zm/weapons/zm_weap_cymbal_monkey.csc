@@ -8,15 +8,15 @@
 
 // Namespace zm_weap_cymbal_monkey/zm_weap_cymbal_monkey
 // Params 0, eflags: 0x2
-// Checksum 0xcbc24b2c, Offset: 0x110
+// Checksum 0xa4187360, Offset: 0x110
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zm_weap_cymbal_monkey", &__init__, undefined, undefined);
 }
 
 // Namespace zm_weap_cymbal_monkey/zm_weap_cymbal_monkey
-// Params 0, eflags: 0x1 linked
-// Checksum 0x54971771, Offset: 0x158
+// Params 0, eflags: 0x0
+// Checksum 0xbba0171b, Offset: 0x158
 // Size: 0xe0
 function __init__() {
     clientfield::register("scriptmover", "" + #"hash_60a7e5b79e8064a5", 1, 1, "int", &monkey_spawns, 0, 0);
@@ -31,8 +31,8 @@ function __init__() {
 }
 
 // Namespace zm_weap_cymbal_monkey/zm_weap_cymbal_monkey
-// Params 7, eflags: 0x1 linked
-// Checksum 0x1903746a, Offset: 0x240
+// Params 7, eflags: 0x0
+// Checksum 0x5221474c, Offset: 0x240
 // Size: 0xd4
 function monkey_spawns(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {

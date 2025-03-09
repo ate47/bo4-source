@@ -7,7 +7,7 @@
 class czm_laststand_client : cluielem {
 
     // Namespace czm_laststand_client/zm_laststand_client
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xb979d720, Offset: 0x4e8
     // Size: 0x30
     function set_num_downs(localclientnum, value) {
@@ -15,7 +15,7 @@ class czm_laststand_client : cluielem {
     }
 
     // Namespace czm_laststand_client/zm_laststand_client
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x96d0312c, Offset: 0x4b0
     // Size: 0x30
     function set_revive_progress(localclientnum, value) {
@@ -23,7 +23,7 @@ class czm_laststand_client : cluielem {
     }
 
     // Namespace czm_laststand_client/zm_laststand_client
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xc5742d28, Offset: 0x478
     // Size: 0x30
     function set_bleedout_progress(localclientnum, value) {
@@ -31,7 +31,7 @@ class czm_laststand_client : cluielem {
     }
 
     // Namespace czm_laststand_client/zm_laststand_client
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xba92eeb0, Offset: 0x440
     // Size: 0x2c
     function open(localclientnum) {
@@ -39,7 +39,7 @@ class czm_laststand_client : cluielem {
     }
 
     // Namespace czm_laststand_client/zm_laststand_client
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x2a3a5c11, Offset: 0x3b0
     // Size: 0x88
     function function_fa582112(localclientnum) {
@@ -50,7 +50,7 @@ class czm_laststand_client : cluielem {
     }
 
     // Namespace czm_laststand_client/zm_laststand_client
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x3463e936, Offset: 0x380
     // Size: 0x24
     function register_clientside(uid) {
@@ -58,7 +58,7 @@ class czm_laststand_client : cluielem {
     }
 
     // Namespace czm_laststand_client/zm_laststand_client
-    // Params 4, eflags: 0x1 linked
+    // Params 4, eflags: 0x0
     // Checksum 0x8315b949, Offset: 0x2c0
     // Size: 0xb4
     function setup_clientfields(uid, var_a9a4e140, var_e97e7153, var_5db69c99) {
@@ -71,7 +71,7 @@ class czm_laststand_client : cluielem {
 }
 
 // Namespace zm_laststand_client/zm_laststand_client
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x953ee0c1, Offset: 0xe0
 // Size: 0x64
 function register(uid, var_a9a4e140, var_e97e7153, var_5db69c99) {

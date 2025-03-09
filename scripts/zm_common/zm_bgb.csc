@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace bgb/zm_bgb
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xce950ec3, Offset: 0x228
 // Size: 0x252
 function __init__() {
@@ -39,7 +39,7 @@ function __init__() {
 }
 
 // Namespace bgb/zm_bgb
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xd5135ece, Offset: 0x488
 // Size: 0x4c
 function private __main__() {
@@ -51,7 +51,7 @@ function private __main__() {
 }
 
 // Namespace bgb/zm_bgb
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdd39031f, Offset: 0x4e0
 // Size: 0x190
 function force_stream() {
@@ -63,7 +63,7 @@ function force_stream() {
 }
 
 // Namespace bgb/zm_bgb
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xff043b53, Offset: 0x678
 // Size: 0x44
 function private on_player_connect(localclientnum) {
@@ -74,7 +74,7 @@ function private on_player_connect(localclientnum) {
 }
 
 // Namespace bgb/zm_bgb
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcfb7bb83, Offset: 0x6c8
 // Size: 0x4e
 function private bgb_player_init(localclientnum) {
@@ -85,7 +85,7 @@ function private bgb_player_init(localclientnum) {
 }
 
 // Namespace bgb/zm_bgb
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x25f2d12, Offset: 0x720
 // Size: 0x322
 function private bgb_finalize() {
@@ -123,7 +123,7 @@ function private bgb_finalize() {
 }
 
 // Namespace bgb/zm_bgb
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x93d9e479, Offset: 0xa50
 // Size: 0x14e
 function register(name, limit_type) {
@@ -137,7 +137,7 @@ function register(name, limit_type) {
 }
 
 // Namespace bgb/zm_bgb
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2a0b17, Offset: 0xba8
 // Size: 0x19c
 function private function_5e7b3f16(localclientnum, time) {
@@ -172,7 +172,7 @@ function private function_5e7b3f16(localclientnum, time) {
 }
 
 // Namespace bgb/zm_bgb
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x1a792a31, Offset: 0xd50
 // Size: 0x74
 function private function_d9afd5ee(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -181,7 +181,7 @@ function private function_d9afd5ee(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace bgb/zm_bgb
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2c07fbf2, Offset: 0xdd0
 // Size: 0x6a
 function private function_f4763ffe(localclientnum, fx) {
@@ -194,7 +194,7 @@ function private function_f4763ffe(localclientnum, fx) {
 }
 
 // Namespace bgb/zm_bgb
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xd3f149e5, Offset: 0xe48
 // Size: 0x8c
 function private bgb_blow_bubble(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

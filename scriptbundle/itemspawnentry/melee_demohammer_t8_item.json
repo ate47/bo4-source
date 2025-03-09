@@ -5,7 +5,7 @@
     "weapon": "weapon#melee_demohammer_t8_wz",
     "type": "itemspawnentry",
     "angleoffsetz": 180,
-    "var_65b3a12": 6,
+    "hash_65b3a12": 6,
     "name": "melee_demohammer_t8_item",
     "displayname": "#weapon/melee_demohammer_t8",
     "icon": "#ui_icon_weapon_melee_demohammer_render",

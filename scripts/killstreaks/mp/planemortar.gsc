@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace planemortar/planemortar
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcfac2204, Offset: 0x218
 // Size: 0xcc
 function __init__() {
@@ -34,7 +34,7 @@ function __init__() {
 }
 
 // Namespace planemortar/planemortar
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf3ade5ec, Offset: 0x2f0
 // Size: 0xa6
 function function_269fec2() {
@@ -48,7 +48,7 @@ function function_269fec2() {
 }
 
 // Namespace planemortar/planemortar
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5370e8c1, Offset: 0x3a0
 // Size: 0x1c6
 function plane_mortar_bda_dialog() {
@@ -80,7 +80,7 @@ function plane_mortar_bda_dialog() {
 }
 
 // Namespace planemortar/planemortar
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe5610e1a, Offset: 0x570
 // Size: 0x154
 function planeawardscoreevent(attacker, plane) {

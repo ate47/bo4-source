@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf161ddb7, Offset: 0x158
 // Size: 0xe4
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4bfb0ca4, Offset: 0x248
 // Size: 0x12
 function loadeffects() {
@@ -35,7 +35,7 @@ function loadeffects() {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7e073bbb, Offset: 0x268
 // Size: 0xc
 function on_local_client_connect(localclientnum) {
@@ -43,7 +43,7 @@ function on_local_client_connect(localclientnum) {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd0d0ce5, Offset: 0x280
 // Size: 0x6c
 function on_localplayer_spawned(localclientnum) {
@@ -53,7 +53,7 @@ function on_localplayer_spawned(localclientnum) {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5b1856f1, Offset: 0x2f8
 // Size: 0xa4
 function burning_callback(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -67,7 +67,7 @@ function burning_callback(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace burnplayer/burnplayer
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x54bd2557, Offset: 0x3a8
 // Size: 0x8c
 function burning_corpse_callback(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -80,7 +80,7 @@ function burning_corpse_callback(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace burnplayer/burnplayer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1936403e, Offset: 0x440
 // Size: 0x2c
 function set_corpse_burning(localclientnum) {
@@ -88,7 +88,7 @@ function set_corpse_burning(localclientnum) {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7d2e7a42, Offset: 0x478
 // Size: 0x64
 function function_8227cec3(localclientnum) {
@@ -99,7 +99,7 @@ function function_8227cec3(localclientnum) {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x162a21e, Offset: 0x4e8
 // Size: 0x1e
 function function_68a11df6(localclientnum) {
@@ -107,7 +107,7 @@ function function_68a11df6(localclientnum) {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x301dce57, Offset: 0x510
 // Size: 0x74
 function function_a6cb96f(localclientnum) {
@@ -117,7 +117,7 @@ function function_a6cb96f(localclientnum) {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb12ff0a8, Offset: 0x590
 // Size: 0x54
 function function_adae7d84(localclientnum) {
@@ -127,7 +127,7 @@ function function_adae7d84(localclientnum) {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe45b3d6f, Offset: 0x5f0
 // Size: 0x94
 function burn_on_postfx() {
@@ -140,7 +140,7 @@ function burn_on_postfx() {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xb01534f1, Offset: 0x690
 // Size: 0x9c
 function private _burntag(localclientnum, tag, postfix) {
@@ -153,7 +153,7 @@ function private _burntag(localclientnum, tag, postfix) {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x7e246fda, Offset: 0x738
 // Size: 0x1b4
 function private _burntagson(localclientnum, tags, use_tagfxset) {
@@ -180,7 +180,7 @@ function private _burntagson(localclientnum, tags, use_tagfxset) {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x65c83e85, Offset: 0x8f8
 // Size: 0x5c
 function private _burnbody(localclientnum, use_tagfxset = 0) {
@@ -189,7 +189,7 @@ function private _burnbody(localclientnum, use_tagfxset = 0) {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x41882148, Offset: 0x960
 // Size: 0xf0
 function private _burntagswatchend(localclientnum, fxarray, burnsound) {
@@ -205,7 +205,7 @@ function private _burntagswatchend(localclientnum, fxarray, burnsound) {
 }
 
 // Namespace burnplayer/burnplayer
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x7ee5d735, Offset: 0xa58
 // Size: 0xd8
 function private _burntagswatchclear(localclientnum, fxarray, burnsound) {

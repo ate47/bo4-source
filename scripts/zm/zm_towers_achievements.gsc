@@ -11,7 +11,7 @@
 #namespace zm_towers_achievements;
 
 // Namespace zm_towers_achievements/zm_towers_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7939a4f2, Offset: 0x248
 // Size: 0x1a4
 function init() {
@@ -31,7 +31,7 @@ function init() {
 }
 
 // Namespace zm_towers_achievements/zm_towers_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x20bd41e4, Offset: 0x3f8
 // Size: 0x7c
 function function_45057dc4() {
@@ -45,7 +45,7 @@ function function_45057dc4() {
 }
 
 // Namespace zm_towers_achievements/zm_towers_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9ca42380, Offset: 0x480
 // Size: 0xe4
 function function_131495a5() {
@@ -67,7 +67,7 @@ function function_131495a5() {
 }
 
 // Namespace zm_towers_achievements/zm_towers_achievements
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe5bf8a9, Offset: 0x570
 // Size: 0x174
 function function_7b7ba154(s_params) {
@@ -106,7 +106,7 @@ function function_7b7ba154(s_params) {
 }
 
 // Namespace zm_towers_achievements/zm_towers_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x811762db, Offset: 0x6f0
 // Size: 0xec
 function function_9bb7596b() {
@@ -120,7 +120,7 @@ function function_9bb7596b() {
 }
 
 // Namespace zm_towers_achievements/zm_towers_achievements
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x77f9e2e8, Offset: 0x7e8
 // Size: 0x154
 function function_3cbde7f5(s_params) {
@@ -147,7 +147,7 @@ function function_3cbde7f5(s_params) {
 }
 
 // Namespace zm_towers_achievements/zm_towers_achievements
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x95c781ab, Offset: 0x948
 // Size: 0xe0
 function function_5180cfce(s_params) {
@@ -167,7 +167,7 @@ function function_5180cfce(s_params) {
 }
 
 // Namespace zm_towers_achievements/zm_towers_achievements
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x95705af6, Offset: 0xa30
 // Size: 0x13c
 function function_b43c1bad(s_params) {
@@ -191,7 +191,7 @@ function function_b43c1bad(s_params) {
 }
 
 // Namespace zm_towers_achievements/zm_towers_achievements
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x549b488b, Offset: 0xb78
 // Size: 0x13c
 function function_cda4b8ba(e_attacker) {
@@ -213,7 +213,7 @@ function function_cda4b8ba(e_attacker) {
 }
 
 // Namespace zm_towers_achievements/zm_towers_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x499f37da, Offset: 0xcc0
 // Size: 0xac
 function function_a24ba4fc() {
@@ -228,7 +228,7 @@ function function_a24ba4fc() {
 }
 
 // Namespace zm_towers_achievements/zm_towers_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf237f5e3, Offset: 0xd78
 // Size: 0x74
 function function_a87d82d1() {
@@ -239,7 +239,7 @@ function function_a87d82d1() {
 }
 
 // Namespace zm_towers_achievements/zm_towers_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8e90193c, Offset: 0xdf8
 // Size: 0x124
 function function_6fdb733f() {
@@ -263,7 +263,7 @@ function function_6fdb733f() {
 }
 
 // Namespace zm_towers_achievements/zm_towers_achievements
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x41a4cb89, Offset: 0xf28
 // Size: 0x1a8
 function function_cbdb5e70() {

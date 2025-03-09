@@ -5,12 +5,12 @@
     "backtarget": "director_online",
     "maxlocalclientsnetwork": 1,
     "mainmode": 1,
-    "var_d16ccae8": 1,
+    "hash_d16ccae8": 1,
     "isprivate": 1,
     "showteams": 1,
     "menumusic": "lobby_mp",
     "room": "private_lobby_pose",
-    "var_7f60c82f": 6,
+    "hash_7f60c82f": 6,
     "kicker": "#hash_5dd231fd15db7531",
     "maxclients": 6,
     "name": "director_online_mp_pregame",
@@ -19,5 +19,5 @@
     "egamemodes": 2,
     "title": "#hash_27307830087a401",
     "maxlocalclients": 2,
-    "var_38c7a0d1": "showdirectorpregame"
+    "hash_38c7a0d1": "showdirectorpregame"
 }

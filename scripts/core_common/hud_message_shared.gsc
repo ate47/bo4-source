@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace hud_message/hud_message_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf9987a60, Offset: 0xe8
 // Size: 0x44
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace hud_message/hud_message_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2a3c544a, Offset: 0x138
 // Size: 0x24
 function init() {
@@ -30,7 +30,7 @@ function init() {
 }
 
 // Namespace hud_message/hud_message_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf68ff02e, Offset: 0x168
 // Size: 0x1c
 function on_player_connect() {
@@ -53,7 +53,7 @@ function playnotifyloop(duration) {
 }
 
 // Namespace hud_message/hud_message_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x112bc3b5, Offset: 0x230
 // Size: 0x6c
 function lowermessagethink() {
@@ -65,7 +65,7 @@ function lowermessagethink() {
 }
 
 // Namespace hud_message/hud_message_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x193a3cdb, Offset: 0x2a8
 // Size: 0x10c
 function setlowermessage(text, time) {
@@ -83,7 +83,7 @@ function setlowermessage(text, time) {
 }
 
 // Namespace hud_message/hud_message_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x341a01d5, Offset: 0x3c0
 // Size: 0x84
 function clearlowermessage() {
@@ -96,7 +96,7 @@ function clearlowermessage() {
 }
 
 // Namespace hud_message/hud_message_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xe223ce0f, Offset: 0x450
 // Size: 0x74
 function private function_fa47c5af() {

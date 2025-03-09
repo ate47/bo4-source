@@ -4,14 +4,14 @@
     "value2": "1",
     "value3": "2",
     "value1": "0",
-    "var_dfed6968": "3",
+    "value4": "3",
     "type": "gamesettings",
     "name": "zm_pointslosstype",
     "displayname": "#hash_2982088a351381fd",
-    "var_684ccd4c": "#hash_1f0968aad9d63087",
+    "label4": "#hash_1f0968aad9d63087",
     "label1": "#hash_68b65fb510ccd214",
-    "var_71b6e020": "#hash_19680cd9d03c2a1c",
+    "label3": "#hash_19680cd9d03c2a1c",
     "label2": "#hash_24cb168909e0ed9f",
-    "var_9de86f42": 3,
+    "optionscount": 3,
     "setting": "zmPointsLossType"
 }

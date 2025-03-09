@@ -14,7 +14,7 @@
             ],
             "model": "#spawner_zm_catalyst_electric",
             "type": "actor",
-            "var_d318cc2c": 1,
+            "hash_d318cc2c": 1,
             "name": "zombie_spawner_catalyst_electric",
             "allowdeath": 1,
             "takedamage": 1

@@ -7,7 +7,7 @@
 class cluielembar : cluielem {
 
     // Namespace cluielembar/luielembar
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x8347c90d, Offset: 0xa60
     // Size: 0x30
     function set_bar_percent(localclientnum, value) {
@@ -15,7 +15,7 @@ class cluielembar : cluielem {
     }
 
     // Namespace cluielembar/luielembar
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x257ed69e, Offset: 0xa28
     // Size: 0x30
     function set_blue(localclientnum, value) {
@@ -23,7 +23,7 @@ class cluielembar : cluielem {
     }
 
     // Namespace cluielembar/luielembar
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x289a8f28, Offset: 0x9f0
     // Size: 0x30
     function set_green(localclientnum, value) {
@@ -31,7 +31,7 @@ class cluielembar : cluielem {
     }
 
     // Namespace cluielembar/luielembar
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x20c35710, Offset: 0x9b8
     // Size: 0x30
     function set_red(localclientnum, value) {
@@ -39,7 +39,7 @@ class cluielembar : cluielem {
     }
 
     // Namespace cluielembar/luielembar
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xdbe54fe1, Offset: 0x980
     // Size: 0x30
     function set_alpha(localclientnum, value) {
@@ -47,7 +47,7 @@ class cluielembar : cluielem {
     }
 
     // Namespace cluielembar/luielembar
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x469078a5, Offset: 0x948
     // Size: 0x30
     function set_fadeovertime(localclientnum, value) {
@@ -55,7 +55,7 @@ class cluielembar : cluielem {
     }
 
     // Namespace cluielembar/luielembar
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x47084c23, Offset: 0x910
     // Size: 0x30
     function set_height(localclientnum, value) {
@@ -63,7 +63,7 @@ class cluielembar : cluielem {
     }
 
     // Namespace cluielembar/luielembar
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x95fa2214, Offset: 0x8d8
     // Size: 0x30
     function set_width(localclientnum, value) {
@@ -71,7 +71,7 @@ class cluielembar : cluielem {
     }
 
     // Namespace cluielembar/luielembar
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x9639eaa3, Offset: 0x8a0
     // Size: 0x30
     function set_y(localclientnum, value) {
@@ -79,7 +79,7 @@ class cluielembar : cluielem {
     }
 
     // Namespace cluielembar/luielembar
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x8da49e60, Offset: 0x868
     // Size: 0x30
     function set_x(localclientnum, value) {
@@ -87,7 +87,7 @@ class cluielembar : cluielem {
     }
 
     // Namespace cluielembar/luielembar
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x9a6252f5, Offset: 0x830
     // Size: 0x2c
     function open(localclientnum) {
@@ -95,7 +95,7 @@ class cluielembar : cluielem {
     }
 
     // Namespace cluielembar/luielembar
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x42078469, Offset: 0x6c0
     // Size: 0x164
     function function_fa582112(localclientnum) {
@@ -113,7 +113,7 @@ class cluielembar : cluielem {
     }
 
     // Namespace cluielembar/luielembar
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xb6712a86, Offset: 0x690
     // Size: 0x24
     function register_clientside(uid) {
@@ -121,7 +121,7 @@ class cluielembar : cluielem {
     }
 
     // Namespace cluielembar/luielembar
-    // Params 11, eflags: 0x1 linked
+    // Params 11, eflags: 0x0
     // Checksum 0xfa112cf3, Offset: 0x480
     // Size: 0x204
     function setup_clientfields(uid, xcallback, ycallback, widthcallback, heightcallback, fadeovertimecallback, alphacallback, redcallback, greencallback, bluecallback, var_661989d5) {

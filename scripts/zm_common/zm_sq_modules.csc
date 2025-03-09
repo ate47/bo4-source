@@ -5,7 +5,7 @@
 #namespace zm_sq_modules;
 
 // Namespace zm_sq_modules/zm_sq_modules
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0xd893ed7d, Offset: 0x108
 // Size: 0x19c
 function function_d8383812(id, version, script_noteworthy, speed, soul_fx, var_2e845a89, var_925337f4, var_6a1c7649, var_b8d19839 = 0) {
@@ -20,7 +20,7 @@ function function_d8383812(id, version, script_noteworthy, speed, soul_fx, var_2
 }
 
 // Namespace zm_sq_modules/zm_sq_modules
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x460a38ec, Offset: 0x2b0
 // Size: 0x2e4
 function private soul_capture(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

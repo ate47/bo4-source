@@ -65,7 +65,7 @@ function resumetimer() {
 }
 
 // Namespace hostmigration/hostmigration_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7d35bd0f, Offset: 0x350
 // Size: 0x7e
 function locktimer() {
@@ -80,7 +80,7 @@ function locktimer() {
 }
 
 // Namespace hostmigration/hostmigration_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb6197dac, Offset: 0x3d8
 // Size: 0x72
 function matchstarttimerconsole_internal(counttime) {
@@ -91,7 +91,7 @@ function matchstarttimerconsole_internal(counttime) {
 }
 
 // Namespace hostmigration/hostmigration_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x963e25e, Offset: 0x458
 // Size: 0xec
 function matchstarttimerconsole(type, duration) {
@@ -112,7 +112,7 @@ function matchstarttimerconsole(type, duration) {
 }
 
 // Namespace hostmigration/hostmigration_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd2b06b88, Offset: 0x550
 // Size: 0xba
 function hostmigrationwait() {
@@ -128,7 +128,7 @@ function hostmigrationwait() {
 }
 
 // Namespace hostmigration/hostmigration_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5a9bbe20, Offset: 0x618
 // Size: 0x44
 function waittillhostmigrationcountdown() {
@@ -140,7 +140,7 @@ function waittillhostmigrationcountdown() {
 }
 
 // Namespace hostmigration/hostmigration_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2cf2107c, Offset: 0x668
 // Size: 0x20
 function hostmigrationwaitforplayers() {
@@ -149,7 +149,7 @@ function hostmigrationwaitforplayers() {
 }
 
 // Namespace hostmigration/hostmigration_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1f043121, Offset: 0x690
 // Size: 0xe4
 function hostmigrationtimerthink_internal() {
@@ -165,7 +165,7 @@ function hostmigrationtimerthink_internal() {
 }
 
 // Namespace hostmigration/hostmigration_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb681c5fd, Offset: 0x780
 // Size: 0x94
 function hostmigrationtimerthink() {
@@ -179,7 +179,7 @@ function hostmigrationtimerthink() {
 }
 
 // Namespace hostmigration/hostmigration_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xafcd5979, Offset: 0x820
 // Size: 0x44
 function waittillhostmigrationdone() {
@@ -192,7 +192,7 @@ function waittillhostmigrationdone() {
 }
 
 // Namespace hostmigration/hostmigration_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x26acf0f7, Offset: 0x870
 // Size: 0x38
 function waittillhostmigrationstarts(duration) {
@@ -204,7 +204,7 @@ function waittillhostmigrationstarts(duration) {
 }
 
 // Namespace hostmigration/hostmigration_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1018fa09, Offset: 0x8b0
 // Size: 0x13c
 function waitlongdurationwithhostmigrationpause(duration) {
@@ -213,10 +213,12 @@ function waitlongdurationwithhostmigrationpause(duration) {
     }
     assert(duration > 0);
     starttime = gettime();
-    for (endtime = gettime() + int(duration * 1000); gettime() < endtime; endtime += timepassed) {
+    endtime = gettime() + int(duration * 1000);
+    while (gettime() < endtime) {
         waittillhostmigrationstarts(float(endtime - gettime()) / 1000);
         if (isdefined(level.hostmigrationtimer)) {
             timepassed = waittillhostmigrationdone();
+            endtime += timepassed;
         }
     }
     /#
@@ -292,7 +294,7 @@ function waitlongdurationwithgameendtimeupdate(duration) {
 }
 
 // Namespace hostmigration/hostmigration_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5134bc4e, Offset: 0xd00
 // Size: 0xf0
 function migrationawarewait(durationms) {

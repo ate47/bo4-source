@@ -806,7 +806,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                     self.var_93da0d74[weapon]++;
                     if (self.var_93da0d74[weapon] >= 5 && isdefined(self.var_c9062c1c[weapon]) && var_eef88563 == victimentnum && self.var_c9062c1c[weapon][var_eef88563] > 0) {
                         self stats::function_dad108fa(#"killstreak_5_picked_up_weapon", 1);
-                        self.var_93da0d74[weapon] = self.var_93da0d74[weapon] - 5;
+                        self.var_93da0d74[weapon] -= 5;
                         self.var_c9062c1c[weapon][var_eef88563]--;
                     }
                 } else {
@@ -2534,7 +2534,7 @@ function flakjacketprotectedmp() {
     level endon(#"game_ended");
     self notify("5b25fb70ced2b80f");
     self endon("5b25fb70ced2b80f");
-    if (!self function_6c32d092(#"talent_flakjacket")) {
+    if (!self hastalent(#"talent_flakjacket")) {
         return;
     }
     wait 2;

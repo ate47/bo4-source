@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_white_population_control/zm_trial_white_population_control
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x89a3074e, Offset: 0x158
 // Size: 0x5c
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_white_population_control/zm_trial_white_population_control
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x7710a107, Offset: 0x1c0
 // Size: 0x1a4
 function private on_begin(var_80bd7996, var_49d28bc1, var_5b932f42, var_a53dc296, var_60bdad5f) {
@@ -57,7 +57,7 @@ function private on_begin(var_80bd7996, var_49d28bc1, var_5b932f42, var_a53dc296
 }
 
 // Namespace zm_trial_white_population_control/zm_trial_white_population_control
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x828b3ede, Offset: 0x370
 // Size: 0xa4
 function private on_end(round_reset) {
@@ -75,7 +75,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_white_population_control/zm_trial_white_population_control
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x880a0416, Offset: 0x420
 // Size: 0x8c
 function private function_8e69c85() {
@@ -85,7 +85,7 @@ function private function_8e69c85() {
 }
 
 // Namespace zm_trial_white_population_control/zm_trial_white_population_control
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xadc87aea, Offset: 0x4b8
 // Size: 0x154
 function private function_75f0aac6() {
@@ -107,7 +107,7 @@ function private function_75f0aac6() {
 }
 
 // Namespace zm_trial_white_population_control/zm_trial_white_population_control
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x21807611, Offset: 0x618
 // Size: 0x4b0
 function nuked_population_sign_think(n_base = 99) {
@@ -188,7 +188,7 @@ function nuked_population_sign_think(n_base = 99) {
 }
 
 // Namespace zm_trial_white_population_control/zm_trial_white_population_control
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x357286a3, Offset: 0xad0
 // Size: 0x82
 function set_dvar_float_if_unset(dvar, value, reset = 0) {
@@ -199,7 +199,7 @@ function set_dvar_float_if_unset(dvar, value, reset = 0) {
 }
 
 // Namespace zm_trial_white_population_control/zm_trial_white_population_control
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x9c74f139, Offset: 0xb60
 // Size: 0x72
 function private function_a4adaedb() {

@@ -4,8 +4,8 @@
 #namespace zm_item_pickup;
 
 // Namespace zm_item_pickup/zm_item_pickup
-// Params 5, eflags: 0x1 linked
-// Checksum 0x4c379d4c, Offset: 0x80
+// Params 5, eflags: 0x0
+// Checksum 0xe9d3e29f, Offset: 0x80
 // Size: 0x10a
 function create_item_pickup(var_3d455c82, var_4b1985dd, var_b4bbefe4, n_radius = 64, var_c12c30aa = 0) {
     if (zm_utility::is_ee_enabled() || !var_c12c30aa) {
@@ -21,8 +21,8 @@ function create_item_pickup(var_3d455c82, var_4b1985dd, var_b4bbefe4, n_radius =
 }
 
 // Namespace zm_item_pickup/zm_item_pickup
-// Params 0, eflags: 0x5 linked
-// Checksum 0x12db7b32, Offset: 0x198
+// Params 0, eflags: 0x4
+// Checksum 0x73efd32d, Offset: 0x198
 // Size: 0xa8
 function private item_think() {
     self endon(#"death");
@@ -36,8 +36,8 @@ function private item_think() {
 }
 
 // Namespace zm_item_pickup/zm_item_pickup
-// Params 0, eflags: 0x1 linked
-// Checksum 0xd7334151, Offset: 0x248
+// Params 0, eflags: 0x0
+// Checksum 0xe66110e0, Offset: 0x248
 // Size: 0x3c
 function function_d6812b9d() {
     zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
@@ -47,7 +47,7 @@ function function_d6812b9d() {
 
 // Namespace zm_item_pickup/zm_item_pickup
 // Params 2, eflags: 0x0
-// Checksum 0xfa332f41, Offset: 0x290
+// Checksum 0xf7f7eeb5, Offset: 0x290
 // Size: 0xaa
 function item_pickup_init(func_callback, var_c12c30aa = 0) {
     if (var_c12c30aa && !zm_utility::is_ee_enabled()) {
@@ -59,8 +59,8 @@ function item_pickup_init(func_callback, var_c12c30aa = 0) {
 }
 
 // Namespace zm_item_pickup/zm_item_pickup
-// Params 0, eflags: 0x5 linked
-// Checksum 0xbede8f39, Offset: 0x348
+// Params 0, eflags: 0x4
+// Checksum 0x3b9bd7ea, Offset: 0x348
 // Size: 0x13c
 function private function_8769717c() {
     self endon(#"death");

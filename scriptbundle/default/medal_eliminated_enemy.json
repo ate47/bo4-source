@@ -5,6 +5,6 @@
     "name": "medal_eliminated_enemy",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#ui_icon_medal_elimination",
-    "stringref": "#hash_6b0c85a183cac06e",
+    "stringref": "#medal/eliminated_enemy",
     "iconlarge": "#ui_icon_medal_elimination_large"
 }

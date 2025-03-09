@@ -6,7 +6,7 @@ CHECKSUM 0x3fa402cb
 ######################################################
 # mansion_achievements::function_a46f4413@128
 STRING "<dev string:x102>" 0xbe0
-# mansion_achievements::function_e1ae38eb@48
+# mansion_achievements::bend19_animate_ta@48
 STRING "<dev string:x123>" 0xd00
 # mansion_achievements::function_dd592c16@48
 STRING "<dev string:x152>" 0xda0
@@ -41,7 +41,7 @@ DEVBLOCK 0x9c2
 DEVBLOCK 0xa6c
 # mansion_achievements::function_a46f4413@11e
 DEVBLOCK 0xbd6
-# mansion_achievements::function_e1ae38eb@40
+# mansion_achievements::bend19_animate_ta@40
 DEVBLOCK 0xcf8
 # mansion_achievements::function_dd592c16@40
 DEVBLOCK 0xd98

@@ -20,7 +20,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace wz_common_mode_spectre_rising_fixup/wz_common_mode_spectre_rising_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3506393d, Offset: 0xe8
 // Size: 0xf8
 function function_b9962a73() {
@@ -33,7 +33,7 @@ function function_b9962a73() {
 }
 
 // Namespace wz_common_mode_spectre_rising_fixup/wz_common_mode_spectre_rising_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4a634615, Offset: 0x1e8
 // Size: 0x1bc
 function function_63ad593a() {

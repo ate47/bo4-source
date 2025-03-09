@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1368a0c2f0468191",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 10,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#p8_fxanim_gp_vista_hot_air_balloon_near_01_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_gp_vista_hot_air_balloon_near_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

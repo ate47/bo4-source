@@ -1,0 +1,144 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_530e77c572047bf0",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 45,
+                    "spacermax": 55,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_6901548e183ca679",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_553fa02ac174c3b3",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 50,
+                    "spacermax": 55,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_6901548e183ca679",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_300fd841fc4f91fa",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 45,
+                    "spacermax": 55,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_6901548e183ca679",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 3"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4a516311d0c483ad",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 45,
+                    "spacermax": 50,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_6901548e183ca679",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 4"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3a69b520dee54e1c",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 50,
+                    "spacermax": 55,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_6901548e183ca679",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 5"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5374597a07fe611f",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 50,
+                    "spacermax": 55,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_6901548e183ca679",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 6"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5c708adb763ef4b6",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 45,
+                    "spacermax": 50,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_6901548e183ca679",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 7"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_geo_rabbit_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -9,7 +9,7 @@
         {
             "minweight": 50,
             "itementry": "allistairs_folly_t8_item",
-            "var_3f8c08e3": "ammo_type_45_item",
+            "childitementry_1": "ammo_type_45_item",
             "maxweight": 50,
             "available": -1
         },
@@ -34,8 +34,8 @@
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 5,
-    "var_9b009839": -1,
+    "hash_345eba59": 5,
+    "hash_9b009839": -1,
     "name": "zombie_supply_stash_wonder_weapons",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

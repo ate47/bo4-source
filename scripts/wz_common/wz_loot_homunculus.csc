@@ -2,7 +2,7 @@
 
 // Namespace wz_loot_homunculus/event_9673dc9a
 // Params 1, eflags: 0x40
-// Checksum 0xa9b4029, Offset: 0x100
+// Checksum 0x26def0fa, Offset: 0x100
 // Size: 0x1d4
 function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
     dynent = eventstruct.ent;
@@ -30,8 +30,8 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
 }
 
 // Namespace wz_loot_homunculus/wz_loot_homunculus
-// Params 2, eflags: 0x1 linked
-// Checksum 0x3b372847, Offset: 0x2e0
+// Params 2, eflags: 0x0
+// Checksum 0x431cc328, Offset: 0x2e0
 // Size: 0xb4
 function function_5aaf5515(localclientnum, dynent) {
     dynent notify(#"hash_178cf342d49af85f");

@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "p8_fxanim_mp_frenetic_rock_slide_sanim",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1.5,
+                    "name": "shot 1"
+                }
+            ],
+            "issiege": 1,
+            "firstframe": 1,
+            "model": "#hash_735fd39d5c21374a",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_frenetic_rock_slide_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

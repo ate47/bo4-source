@@ -18,14 +18,14 @@ function event_handler[level_init] main(eventstruct) {
     level.cleandepositpoints = array((425, 1058, 136.5), (-1392, -592, 46.75), (1888, -520, 136), (1523, 1860, 136), (-672, 1592, 135));
     level spawnkilltrigger();
     level function_89088577();
-    function_61f478ff();
+    fixspawnpoints();
 }
 
 // Namespace mp_morocco/mp_morocco
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x66ec3b6d, Offset: 0x200
 // Size: 0x142
-function function_61f478ff() {
+function fixspawnpoints() {
     findpoint = (2532.35, 1640.41, 128.125);
     if (!level.teambased) {
         rawspawns = struct::get_array("mp_t8_spawn_point", "targetname");
@@ -44,7 +44,7 @@ function function_61f478ff() {
 }
 
 // Namespace mp_morocco/mp_morocco
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf68d4f18, Offset: 0x350
 // Size: 0x34
 function function_89088577() {
@@ -52,7 +52,7 @@ function function_89088577() {
 }
 
 // Namespace mp_morocco/mp_morocco
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcca046df, Offset: 0x390
 // Size: 0x1bc
 function spawnkilltrigger() {
@@ -71,7 +71,7 @@ function spawnkilltrigger() {
 }
 
 // Namespace mp_morocco/mp_morocco
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x853b187c, Offset: 0x558
 // Size: 0xa8
 function watchkilltrigger() {

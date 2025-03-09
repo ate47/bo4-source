@@ -106,7 +106,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace zm_white/zm_white
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x18251ee8, Offset: 0xe30
 // Size: 0x16a
 function function_b8da6f44() {
@@ -154,7 +154,7 @@ function function_bc7eec87(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_white/zm_white
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc7ec3906, Offset: 0x1260
 // Size: 0x84
 function function_61c6d401(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -166,7 +166,7 @@ function function_61c6d401(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_white/zm_white
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x90fb97b3, Offset: 0x12f0
 // Size: 0x178
 function portal_map_magicbox_lights_init(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
@@ -183,7 +183,7 @@ function portal_map_magicbox_lights_init(localclientnum, oldval, newval, bnewent
 }
 
 // Namespace zm_white/zm_white
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa7f37a0d, Offset: 0x1470
 // Size: 0x94
 function portal_map_start_chest1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
@@ -197,7 +197,7 @@ function portal_map_start_chest1(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace zm_white/zm_white
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x717e491d, Offset: 0x1510
 // Size: 0x94
 function portal_map_start_chest2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
@@ -211,7 +211,7 @@ function portal_map_start_chest2(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace zm_white/zm_white
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x79b97f62, Offset: 0x15b0
 // Size: 0x94
 function portal_map_green_backyard_chest(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
@@ -225,7 +225,7 @@ function portal_map_green_backyard_chest(localclientnum, oldval, newval, bnewent
 }
 
 // Namespace zm_white/zm_white
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xac745e33, Offset: 0x1650
 // Size: 0x94
 function portal_map_yellow_backyard_chest(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
@@ -239,7 +239,7 @@ function portal_map_yellow_backyard_chest(localclientnum, oldval, newval, bnewen
 }
 
 // Namespace zm_white/zm_white
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc451ce38, Offset: 0x16f0
 // Size: 0x94
 function portal_map_bunker1_chest(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
@@ -253,7 +253,7 @@ function portal_map_bunker1_chest(localclientnum, oldval, newval, bnewent, binit
 }
 
 // Namespace zm_white/zm_white
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5316b182, Offset: 0x1790
 // Size: 0x94
 function portal_map_bunker2_chest(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
@@ -267,7 +267,7 @@ function portal_map_bunker2_chest(localclientnum, oldval, newval, bnewent, binit
 }
 
 // Namespace zm_white/zm_white
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x60d2818b, Offset: 0x1830
 // Size: 0x94
 function portal_map_cul_de_sac_chest(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
@@ -281,7 +281,7 @@ function portal_map_cul_de_sac_chest(localclientnum, oldval, newval, bnewent, bi
 }
 
 // Namespace zm_white/zm_white
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xcfee8430, Offset: 0x18d0
 // Size: 0x28c
 function portal_map_fire_sale(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
@@ -308,7 +308,7 @@ function portal_map_fire_sale(localclientnum, oldval, newval, bnewent, binitials
 }
 
 // Namespace zm_white/zm_white
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xca0c8a40, Offset: 0x1b68
 // Size: 0xf0
 function function_d901bcc9(localclientnum, tag) {
@@ -322,7 +322,7 @@ function function_d901bcc9(localclientnum, tag) {
 }
 
 // Namespace zm_white/zm_white
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8d51bd4d, Offset: 0x1c60
 // Size: 0xf0
 function function_86b85486(localclientnum, tag) {
@@ -336,7 +336,7 @@ function function_86b85486(localclientnum, tag) {
 }
 
 // Namespace zm_white/zm_white
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x14cd79d7, Offset: 0x1d58
 // Size: 0x84
 function power_pbg_control(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
@@ -348,7 +348,7 @@ function power_pbg_control(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_white/zm_white
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf923d0ed, Offset: 0x1de8
 // Size: 0x508
 function setup_personality_character_exerts() {

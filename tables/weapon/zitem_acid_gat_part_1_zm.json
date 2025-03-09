@@ -1,0 +1,12 @@
+{
+    "name": "#zitem_acid_gat_part_1_zm",
+    "baseWeapon": "#zitem_acid_gat_part_1",
+    "streamkey": "#hash_181f17ee039c5859",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#hash_1d986e3861c",
+    "viewmodel": "#hash_1d9563013d0",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "underwaterExplosionSurfaceFX": []
+}

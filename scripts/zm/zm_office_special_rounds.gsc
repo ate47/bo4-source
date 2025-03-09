@@ -22,7 +22,7 @@
 #namespace zm_office_special_rounds;
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x18bca6ac, Offset: 0x140
 // Size: 0x334
 function init() {
@@ -60,7 +60,7 @@ function init() {
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe2936abe, Offset: 0x480
 // Size: 0x32
 function function_f3f325cb(var_148cc603) {
@@ -68,7 +68,7 @@ function function_f3f325cb(var_148cc603) {
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa62312fa, Offset: 0x4c0
 // Size: 0x6c
 function function_6f502b52(var_148cc603) {
@@ -79,7 +79,7 @@ function function_6f502b52(var_148cc603) {
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xaa6a3e02, Offset: 0x538
 // Size: 0x8a
 function function_6fa16bd2(b_force_spawn = 0, var_eb3a8721) {
@@ -92,7 +92,7 @@ function function_6fa16bd2(b_force_spawn = 0, var_eb3a8721) {
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x928bcc2f, Offset: 0x5d0
 // Size: 0x49e
 function function_a409c2a7(e_target) {
@@ -164,7 +164,7 @@ function function_a409c2a7(e_target) {
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x689410a3, Offset: 0xa78
 // Size: 0x288
 function function_13f107c4(ai, ent) {
@@ -195,7 +195,7 @@ function function_13f107c4(ai, ent) {
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xac08ceef, Offset: 0xd08
 // Size: 0x29c
 function function_6b3512d() {
@@ -232,7 +232,7 @@ function function_6b3512d() {
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x201bc9e2, Offset: 0xfb0
 // Size: 0xb2
 function function_dd836251() {
@@ -250,7 +250,7 @@ function function_dd836251() {
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x84a871fd, Offset: 0x1070
 // Size: 0x3c
 function crawler_round_spawn() {
@@ -263,7 +263,7 @@ function crawler_round_spawn() {
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa6636e50, Offset: 0x10b8
 // Size: 0x64
 function function_5b22eecf() {
@@ -274,7 +274,7 @@ function function_5b22eecf() {
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xff50c2ed, Offset: 0x1128
 // Size: 0x64
 function function_fe3507a6() {
@@ -288,7 +288,7 @@ function function_fe3507a6() {
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x43a0ec37, Offset: 0x1198
 // Size: 0x3c
 function function_fe02a12f() {
@@ -301,7 +301,7 @@ function function_fe02a12f() {
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4d304977, Offset: 0x11e0
 // Size: 0x64
 function function_2ce54724() {
@@ -313,7 +313,7 @@ function function_2ce54724() {
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5e54c865, Offset: 0x1250
 // Size: 0x64
 function function_9fb978f(s_params) {
@@ -323,7 +323,7 @@ function function_9fb978f(s_params) {
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8516bd6a, Offset: 0x12c0
 // Size: 0x94
 function function_8c040be2(s_params) {

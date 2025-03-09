@@ -23,7 +23,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_zombie_museum/mp_zombie_museum
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x27c1a13d, Offset: 0x280
 // Size: 0xc2
 function dom_flag_base_fx_override(flag, team) {
@@ -48,7 +48,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_zombie_museum/mp_zombie_museum
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb46f0986, Offset: 0x350
 // Size: 0xc2
 function dom_flag_cap_fx_override(flag, team) {

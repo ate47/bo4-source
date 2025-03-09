@@ -5,6 +5,6 @@
     "name": "medal_flag_capture",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_735a3c0aade64e08",
-    "stringref": "#hash_198ea2937af15476",
+    "stringref": "#medal/flag_capture",
     "iconlarge": "#hash_31ee677e6e326184"
 }

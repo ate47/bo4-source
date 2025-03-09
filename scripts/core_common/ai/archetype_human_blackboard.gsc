@@ -4,7 +4,7 @@
 #namespace blackboard;
 
 // Namespace blackboard/archetype_human_blackboard
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x957a3b85, Offset: 0x178
 // Size: 0x36
 function private bb_getarrivaltype() {
@@ -15,7 +15,7 @@ function private bb_getarrivaltype() {
 }
 
 // Namespace blackboard/archetype_human_blackboard
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x342c2bcc, Offset: 0x1b8
 // Size: 0x3a
 function private bb_gettacticalarrivalfacingyaw() {
@@ -23,7 +23,7 @@ function private bb_gettacticalarrivalfacingyaw() {
 }
 
 // Namespace blackboard/archetype_human_blackboard
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x2bb06922, Offset: 0x200
 // Size: 0x1b6
 function private bb_getlocomotionmovementtype() {
@@ -56,7 +56,7 @@ function private bb_getlocomotionmovementtype() {
 }
 
 // Namespace blackboard/archetype_human_blackboard
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x5fe81fd7, Offset: 0x3c0
 // Size: 0x1fa
 function private bb_getcoverflankability() {

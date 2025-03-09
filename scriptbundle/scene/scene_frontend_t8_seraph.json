@@ -129,9 +129,9 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop2",
-            "var_be60a82b": 3.75,
-            "var_922b4fc5": -7,
-            "var_3e692842": -1.5
+            "hash_be60a82b": 3.75,
+            "hash_922b4fc5": -7,
+            "hash_3e692842": -1.5
         },
         {
             "shots": [
@@ -220,9 +220,9 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 1",
-            "var_be60a82b": -7.25,
-            "var_922b4fc5": -73,
-            "var_3e692842": -2.5
+            "hash_be60a82b": -7.25,
+            "hash_922b4fc5": -73,
+            "hash_3e692842": -2.5
         }
     ],
     "scenetype": "scene",

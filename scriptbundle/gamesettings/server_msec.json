@@ -8,6 +8,6 @@
     "displayname": "#menu/server_rate",
     "label1": "#menu/normal",
     "label2": "#menu/fast",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "servermsec"
 }

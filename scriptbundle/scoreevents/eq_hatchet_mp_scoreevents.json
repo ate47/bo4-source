@@ -1,12 +1,12 @@
 {
-    "var_d58bd0e9": "#hash_7ae536aa0669ccdb",
-    "var_67b4a761": "#hash_7ae536aa0669ccdb",
+    "hash_d58bd0e9": "#hash_7ae536aa0669ccdb",
+    "hash_67b4a761": "#hash_7ae536aa0669ccdb",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "var_16abf654": "#hash_7ae536aa0669ccdb",
+    "hash_16abf654": "#hash_7ae536aa0669ccdb",
     "name": "eq_hatchet_mp_scoreevents",
-    "var_e1b418c1": "ability",
-    "var_1b8b6771": "#hash_7ae536aa0669ccdb",
-    "var_6643c0a0": "#hash_7ae536aa0669ccdb"
+    "customsettingstype": "ability",
+    "hash_1b8b6771": "#hash_7ae536aa0669ccdb",
+    "hash_6643c0a0": "#hash_7ae536aa0669ccdb"
 }

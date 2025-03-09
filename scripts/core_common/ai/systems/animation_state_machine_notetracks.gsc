@@ -20,7 +20,7 @@ function private event_handler[runnotetrackhandler] runnotetrackhandler(eventstr
 }
 
 // Namespace animationstatenetwork/animation_state_machine_notetracks
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xc6ddb474, Offset: 0x128
 // Size: 0x8c
 function private handlenotetrack(entity, notetrack) {
@@ -36,7 +36,7 @@ function private handlenotetrack(entity, notetrack) {
 }
 
 // Namespace animationstatenetwork/animation_state_machine_notetracks
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8abf809f, Offset: 0x1c0
 // Size: 0xca
 function registernotetrackhandlerfunction(notetrackname, notetrackfuncptr) {
@@ -47,7 +47,7 @@ function registernotetrackhandlerfunction(notetrackname, notetrackfuncptr) {
 }
 
 // Namespace animationstatenetwork/animation_state_machine_notetracks
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x76200bf7, Offset: 0x298
 // Size: 0x6e
 function registerblackboardnotetrackhandler(notetrackname, blackboardattributename, blackboardvalue) {

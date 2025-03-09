@@ -35,7 +35,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x69a5ade4, Offset: 0x470
 // Size: 0x5c
 function __init__() {
@@ -46,7 +46,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x61bbfdf6, Offset: 0x4d8
 // Size: 0xa4
 function private on_begin(var_6325d314, var_52b8b3a2, n_time) {
@@ -58,7 +58,7 @@ function private on_begin(var_6325d314, var_52b8b3a2, n_time) {
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe9288b6, Offset: 0x588
 // Size: 0x2c
 function private on_end(round_reset) {
@@ -66,7 +66,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xfe562b74, Offset: 0x5c0
 // Size: 0x108
 function private function_353ea592() {
@@ -85,7 +85,7 @@ function private function_353ea592() {
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x4370cc8a, Offset: 0x6d0
 // Size: 0x2fc
 function private function_8318a404() {
@@ -122,7 +122,7 @@ function private function_8318a404() {
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x75527e9d, Offset: 0x9d8
 // Size: 0x5b8
 function private boss_fight() {
@@ -146,9 +146,9 @@ function private boss_fight() {
     level thread function_4d682898();
     level thread function_92e1954c();
     level thread function_1a05e10c(#"hash_4b701378fdc308f", "m_quest", "spear_warn");
-    level thread function_1a05e10c(#"hash_5c38f322b9e6a58d", "m_quest", "missle_warn");
-    level thread function_1a05e10c(#"hash_1a3fb5566689f319", "m_quest", "missle_track");
-    level thread function_1a05e10c(#"hash_1580cd3b2c801f46", "m_quest", "charge_warn");
+    level thread function_1a05e10c(#"boss_ranged_attack_2_start", "m_quest", "missle_warn");
+    level thread function_1a05e10c(#"boss_ranged_attack_2_launched", "m_quest", "missle_track");
+    level thread function_1a05e10c(#"towers_boss_charge", "m_quest", "charge_warn");
     level thread function_1a05e10c(#"towers_boss_ground_attack", "m_quest", "shockwave_warn");
     level thread function_c64fc074();
     level thread function_95785950(125, level.var_49328379, "m_quest", "armor_nag");
@@ -174,7 +174,7 @@ function private boss_fight() {
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xe6de4d8b, Offset: 0xf98
 // Size: 0x184
 function private function_13576d14() {
@@ -195,7 +195,7 @@ function private function_13576d14() {
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xccc9ddfd, Offset: 0x1128
 // Size: 0x1b4
 function private function_33935d5f() {
@@ -222,7 +222,7 @@ function private function_33935d5f() {
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x26220de6, Offset: 0x12e8
 // Size: 0x8a
 function private function_92e1954c() {
@@ -238,7 +238,7 @@ function private function_92e1954c() {
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x2b782397, Offset: 0x1380
 // Size: 0x8a
 function private function_4d682898() {
@@ -254,7 +254,7 @@ function private function_4d682898() {
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xafb527a3, Offset: 0x1418
 // Size: 0x1aa
 function private function_3d487e02() {
@@ -277,7 +277,7 @@ function private function_3d487e02() {
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd1451732, Offset: 0x15d0
 // Size: 0x8a
 function function_f9da4403(s_spawn, phase) {
@@ -289,7 +289,7 @@ function function_f9da4403(s_spawn, phase) {
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xd86a2e1a, Offset: 0x1668
 // Size: 0xf4
 function private function_dd2db3df() {
@@ -309,7 +309,7 @@ function private function_dd2db3df() {
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0xb548e59a, Offset: 0x1768
 // Size: 0xa8
 function private function_95785950(var_c625106d, var_86163b89, n_stage, var_39acfdda) {
@@ -326,7 +326,7 @@ function private function_95785950(var_c625106d, var_86163b89, n_stage, var_39ac
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x509372fa, Offset: 0x1818
 // Size: 0x9c
 function private function_ae1cbf2e() {
@@ -339,7 +339,7 @@ function private function_ae1cbf2e() {
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x788ca10d, Offset: 0x18c0
 // Size: 0x9a
 function private function_1a05e10c(str_notify, var_f13787ad, var_ca8a3a53) {
@@ -352,7 +352,7 @@ function private function_1a05e10c(str_notify, var_f13787ad, var_ca8a3a53) {
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x29f4926c, Offset: 0x1968
 // Size: 0x64
 function private function_c64fc074() {

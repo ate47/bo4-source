@@ -16,7 +16,7 @@ function autoexec main() {
 }
 
 // Namespace shared/shared
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x194268c0, Offset: 0x188
 // Size: 0xa4
 function private _throwstowedweapon(entity, weapon, weaponmodel) {
@@ -47,7 +47,7 @@ function stowweapon(weapon, positionoffset, orientationoffset) {
 }
 
 // Namespace shared/shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1e01fd1, Offset: 0x318
 // Size: 0x3ec
 function placeweaponon(weapon, position) {
@@ -92,7 +92,7 @@ function placeweaponon(weapon, position) {
 }
 
 // Namespace shared/shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf6999dc7, Offset: 0x710
 // Size: 0x6e
 function detachweapon(weapon) {
@@ -101,7 +101,7 @@ function detachweapon(weapon) {
 }
 
 // Namespace shared/shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa7ef733, Offset: 0x788
 // Size: 0x52
 function updatescriptweaponinfoandpos(weapon, position) {
@@ -110,7 +110,7 @@ function updatescriptweaponinfoandpos(weapon, position) {
 }
 
 // Namespace shared/shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7b78e362, Offset: 0x7e8
 // Size: 0xa6
 function detachallweaponmodels() {
@@ -126,7 +126,7 @@ function detachallweaponmodels() {
 }
 
 // Namespace shared/shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5b979ac9, Offset: 0x898
 // Size: 0x126
 function updateattachedweaponmodels() {
@@ -148,7 +148,7 @@ function updateattachedweaponmodels() {
 }
 
 // Namespace shared/shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x23774ff3, Offset: 0x9c8
 // Size: 0xd2
 function gettagforpos(position) {
@@ -170,7 +170,7 @@ function gettagforpos(position) {
 }
 
 // Namespace shared/shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xb61943f9, Offset: 0xaa8
 // Size: 0x216
 function throwweapon(weapon, positiontag, scavenger, deleteweaponafterdropping) {
@@ -201,7 +201,7 @@ function throwweapon(weapon, positiontag, scavenger, deleteweaponafterdropping) 
 }
 
 // Namespace shared/shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x525947a0, Offset: 0xcc8
 // Size: 0x2f4
 function dropaiweapon() {
@@ -297,7 +297,7 @@ function dropallaiweapons() {
 }
 
 // Namespace shared/shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb4abe591, Offset: 0x13b0
 // Size: 0x10
 function player_weapon_drop(weapon) {
@@ -305,7 +305,7 @@ function player_weapon_drop(weapon) {
 }
 
 // Namespace shared/shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xe04f6e2f, Offset: 0x13c8
 // Size: 0x24
 function handlenotetrack(note, flagname, customfunction, var1) {
@@ -313,7 +313,7 @@ function handlenotetrack(note, flagname, customfunction, var1) {
 }
 
 // Namespace shared/shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xddc41154, Offset: 0x13f8
 // Size: 0xa8
 function donotetracks(flagname, customfunction, debugidentifier, var1) {
@@ -331,7 +331,7 @@ function donotetracks(flagname, customfunction, debugidentifier, var1) {
 }
 
 // Namespace shared/shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xd29a6d97, Offset: 0x14a8
 // Size: 0xe0
 function donotetracksintercept(flagname, interceptfunction, debugidentifier) {
@@ -374,7 +374,7 @@ function donotetrackspostcallback(flagname, postfunction) {
 }
 
 // Namespace shared/shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xb22dfe33, Offset: 0x1650
 // Size: 0x54
 function donotetracksforever(flagname, killstring, customfunction, debugidentifier) {
@@ -382,7 +382,7 @@ function donotetracksforever(flagname, killstring, customfunction, debugidentifi
 }
 
 // Namespace shared/shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x165d17ab, Offset: 0x16b0
 // Size: 0x54
 function donotetracksforeverintercept(flagname, killstring, interceptfunction, debugidentifier) {
@@ -390,7 +390,7 @@ function donotetracksforeverintercept(flagname, killstring, interceptfunction, d
 }
 
 // Namespace shared/shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x812df0e6, Offset: 0x1710
 // Size: 0x14e
 function donotetracksforeverproc(notetracksfunc, flagname, killstring, customfunction, debugidentifier) {
@@ -438,7 +438,7 @@ function donotetracksfortimeintercept(time, flagname, interceptfunction, debugid
 }
 
 // Namespace shared/shared
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xff1e620d, Offset: 0x1988
 // Size: 0x62
 function donotetracksfortimeproc(donotetracksforeverfunc, time, flagname, customfunction, debugidentifier, ent) {
@@ -447,7 +447,7 @@ function donotetracksfortimeproc(donotetracksforeverfunc, time, flagname, custom
 }
 
 // Namespace shared/shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xef5b5b23, Offset: 0x19f8
 // Size: 0x26
 function donotetracksfortimeendnotify(time) {

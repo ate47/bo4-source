@@ -10,7 +10,7 @@
                         }
                     ],
                     "damagethreshold": 1,
-                    "var_b3dddfd3": 1,
+                    "hash_b3dddfd3": 1,
                     "devstate": "initial",
                     "name": "init"
                 },
@@ -22,7 +22,7 @@
                         }
                     ],
                     "damagethreshold": 0.85,
-                    "var_b3dddfd3": 1,
+                    "hash_b3dddfd3": 1,
                     "devstate": "initial",
                     "name": "stage1"
                 },
@@ -34,7 +34,7 @@
                         }
                     ],
                     "damagethreshold": 0.7,
-                    "var_b3dddfd3": 1,
+                    "hash_b3dddfd3": 1,
                     "devstate": "initial",
                     "name": "stage2"
                 },
@@ -46,7 +46,7 @@
                         }
                     ],
                     "damagethreshold": 0.55,
-                    "var_b3dddfd3": 1,
+                    "hash_b3dddfd3": 1,
                     "devstate": "initial",
                     "name": "stage3"
                 },
@@ -58,7 +58,7 @@
                         }
                     ],
                     "damagethreshold": 0.4,
-                    "var_b3dddfd3": 1,
+                    "hash_b3dddfd3": 1,
                     "devstate": "initial",
                     "name": "stage4"
                 },
@@ -70,7 +70,7 @@
                         }
                     ],
                     "damagethreshold": 0.25,
-                    "var_b3dddfd3": 1,
+                    "hash_b3dddfd3": 1,
                     "devstate": "initial",
                     "name": "stage5"
                 },
@@ -82,7 +82,7 @@
                         }
                     ],
                     "damagethreshold": 0.05,
-                    "var_b3dddfd3": 1,
+                    "hash_b3dddfd3": 1,
                     "devstate": "initial",
                     "name": "stage6"
                 }
@@ -91,8 +91,8 @@
             "model": "#p8_fxanim_zm_office_glass_barrier",
             "type": "prop",
             "name": "glass",
-            "var_873368a8": 1000,
-            "var_2baad8fc": 1,
+            "hash_873368a8": 1000,
+            "hash_2baad8fc": 1,
             "allowdeath": 1,
             "takedamage": 1
         }

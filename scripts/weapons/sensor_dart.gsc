@@ -285,7 +285,7 @@ function function_4b3bc61d(attacker, weapon, target) {
         attacker challenges::destroyedequipment(weapon);
         self.owner globallogic_score::function_5829abe3(attacker, weapon, self.weapon);
     }
-    if (function_3238d10d(self.origin)) {
+    if (validateorigin(self.origin)) {
         playsoundatposition(#"hash_206452ff3953c686", self.origin);
     }
     if (isdefined(level.var_d2600afc)) {

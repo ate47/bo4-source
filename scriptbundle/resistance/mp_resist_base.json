@@ -1,13 +1,13 @@
 {
     "configstringfiletype": "scriptbundle",
     "type": "resistance",
-    "var_a079a0f6": "none",
-    "var_215422c5": "none",
-    "var_3311c640": "none",
-    "var_45d2ebc2": "none",
-    "var_57618ec7": "none",
-    "var_6aa3b54b": "none",
-    "var_7cedd9df": "none",
-    "var_8e287c54": "none",
+    "hash_a079a0f6": "none",
+    "hash_215422c5": "none",
+    "hash_3311c640": "none",
+    "hash_45d2ebc2": "none",
+    "hash_57618ec7": "none",
+    "hash_6aa3b54b": "none",
+    "hash_7cedd9df": "none",
+    "hash_8e287c54": "none",
     "name": "mp_resist_base"
 }

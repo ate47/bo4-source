@@ -218,7 +218,7 @@
                 setdvar(#"hash_7115842bdfa67a2b", 0);
             }
             if (getdvarint(#"hash_34e9a7fac83d28a6", 0) != 0) {
-                function_ad8cc361();
+                showhealth();
             }
             if (getdvarint(#"hash_7b2608d6176b79f4", 0)) {
                 function_38964c72();
@@ -1047,7 +1047,7 @@
     // Params 0, eflags: 0x0
     // Checksum 0x3e8d76e8, Offset: 0x5af0
     // Size: 0xf0
-    function function_ad8cc361() {
+    function showhealth() {
         if (!isdefined(level.players)) {
             return;
         }

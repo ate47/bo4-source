@@ -9,17 +9,17 @@
     "lobbytype": 1,
     "menumusic": "lobby_zm",
     "room": "zm_online",
-    "var_7f60c82f": 4,
+    "hash_7f60c82f": 4,
     "kicker": "#hash_69818a6a90daf973",
     "isadvertised": 1,
     "maxclients": 4,
     "name": "director_online_zm_public",
     "networkmode": 2,
     "errtarget": "director_online_zm_pregame",
-    "var_ec76767d": 4,
+    "hash_ec76767d": 4,
     "title": "#menu/zombie",
-    "var_f68d7d0": 2,
+    "hash_f68d7d0": 2,
     "isgame": 1,
     "maxlocalclients": 2,
-    "var_38c7a0d1": "showdirectorpublic"
+    "hash_38c7a0d1": "showdirectorpublic"
 }

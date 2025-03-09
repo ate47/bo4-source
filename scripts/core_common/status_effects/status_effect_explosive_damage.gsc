@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace status_effect_explosive_damage/status_effect_explosive_damage
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xea476c41, Offset: 0xe8
 // Size: 0x2c
 function __init__() {

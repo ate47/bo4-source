@@ -4,7 +4,7 @@
 #namespace zm_orange_audiologs;
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd37c4039, Offset: 0xa0
 // Size: 0x84
 function preload() {
@@ -13,7 +13,7 @@ function preload() {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x69b5261f, Offset: 0x130
 // Size: 0xb4
 function function_db7a9c9d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

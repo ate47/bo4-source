@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "allow_map_scripting",
     "displayname": "#hash_6e6c5ecac7443f2f",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "allowMapScripting",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

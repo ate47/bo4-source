@@ -29,13 +29,13 @@ function event_handler[level_init] main(eventstruct) {
     level thread function_d93dd65a();
     level thread function_2301b50d();
     level.cleandepositpoints = array((-419, 1130, 309.5), (-1211, -1304, 469), (-2451, 2588, 285), (993, -96, 361), (-111, 2924, 269));
-    level.var_f3e25805 = &function_c3c859e1;
+    level.var_f3e25805 = &prematch_init;
     level thread function_34fc666e();
     compass::setupminimap("");
 }
 
 // Namespace mp_geothermal/mp_geothermal
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf255d182, Offset: 0x3e0
 // Size: 0x8bc
 function function_89088577() {
@@ -75,7 +75,7 @@ function function_89088577() {
 }
 
 // Namespace mp_geothermal/mp_geothermal
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x39cab4e0, Offset: 0xca8
 // Size: 0x10c
 function function_34fc666e() {
@@ -83,7 +83,7 @@ function function_34fc666e() {
         while (!draft::function_d255fb3e()) {
             waitframe(1);
         }
-        level thread scene::play(#"hash_4ef02c46a17d4830", "Shot 1");
+        level thread scene::play(#"p8_fxanim_mp_geo_heli_attack_bundle", "Shot 1");
         return;
     }
     level flag::wait_till("first_player_spawned");
@@ -92,29 +92,29 @@ function function_34fc666e() {
 }
 
 // Namespace mp_geothermal/mp_geothermal
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x11984569, Offset: 0xdc0
 // Size: 0xdc
-function function_c3c859e1() {
+function prematch_init() {
     array::delete_all(getentarray("sun_block", "targetname"));
     if (util::isfirstround() && getgametypesetting(#"allowmapscripting")) {
         exploder::exploder("fxexp_pipe_explosion");
         util::delay(1, undefined, &exploder::exploder, "fxexp_pipe_explosion_fires");
-        level thread scene::play(#"hash_4ef02c46a17d4830", "Shot 2");
+        level thread scene::play(#"p8_fxanim_mp_geo_heli_attack_bundle", "Shot 2");
     }
 }
 
 // Namespace mp_geothermal/mp_geothermal
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfc45ef9a, Offset: 0xea8
 // Size: 0x5c
 function function_d93dd65a() {
-    var_b50eaae4 = getentarray("player_slide_trig", "targetname");
-    array::thread_all(var_b50eaae4, &callback::on_trigger, &function_a8fc3bf1);
+    slide_trigs = getentarray("player_slide_trig", "targetname");
+    array::thread_all(slide_trigs, &callback::on_trigger, &function_a8fc3bf1);
 }
 
 // Namespace mp_geothermal/mp_geothermal
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x623e8d69, Offset: 0xf10
 // Size: 0x45c
 function function_a8fc3bf1(s_info) {
@@ -170,7 +170,7 @@ function function_a8fc3bf1(s_info) {
 }
 
 // Namespace mp_geothermal/mp_geothermal
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa40d8102, Offset: 0x1378
 // Size: 0xc4
 function function_2301b50d() {
@@ -179,18 +179,18 @@ function function_2301b50d() {
     }
     var_c4d0bdd1 = struct::get_array("geyser_scenes");
     array::thread_all(var_c4d0bdd1, &scene::init);
-    array::thread_all(var_c4d0bdd1, &util::delay, randomfloatrange(5, 15), "geyser_stop", &function_7854a074);
+    array::thread_all(var_c4d0bdd1, &util::delay, randomfloatrange(5, 15), "geyser_stop", &geyser_think);
 }
 
 // Namespace mp_geothermal/mp_geothermal
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x18d06eeb, Offset: 0x1448
 // Size: 0x1e8
-function function_7854a074() {
+function geyser_think() {
     self.scene_ents[#"prop 1"] endon(#"death");
-    self.var_a4b64a04 = getent(self.target, "targetname");
-    self.var_a4b64a04.s_scene = self;
-    self.var_a4b64a04 callback::on_trigger(&function_da3ef83b);
+    self.t_geyser = getent(self.target, "targetname");
+    self.t_geyser.s_scene = self;
+    self.t_geyser callback::on_trigger(&function_da3ef83b);
     while (getdvarint(#"hash_235decda8742ffc6", 1)) {
         /#
             level thread function_a5242577(self, (0, 1, 0));
@@ -213,7 +213,7 @@ function function_7854a074() {
 }
 
 // Namespace mp_geothermal/mp_geothermal
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x25d19e1e, Offset: 0x1638
 // Size: 0x72
 function function_dda9d732() {
@@ -225,7 +225,7 @@ function function_dda9d732() {
 }
 
 // Namespace mp_geothermal/mp_geothermal
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3e94fc4a, Offset: 0x16b8
 // Size: 0x32a
 function function_da3ef83b(s_info) {
@@ -247,14 +247,14 @@ function function_da3ef83b(s_info) {
                 e_player.body launchragdoll((0, 0, randomintrange(145, 165)));
             }
         }
-        if (isdefined(e_player) && !(isdefined(e_player.var_85ceee55) && e_player.var_85ceee55)) {
-            e_player.var_85ceee55 = 1;
+        if (isdefined(e_player) && !(isdefined(e_player.in_geyser) && e_player.in_geyser)) {
+            e_player.in_geyser = 1;
             while (isalive(e_player) && isdefined(self) && e_player istouching(self) && self.s_scene.var_b0902cc0 !== "Shot 1") {
                 waitframe(1);
             }
             if (isdefined(e_player)) {
                 e_player clientfield::set_to_player("toggle_player_steam", 0);
-                e_player.var_85ceee55 = 0;
+                e_player.in_geyser = 0;
             }
         }
     }

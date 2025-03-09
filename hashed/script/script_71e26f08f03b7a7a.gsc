@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_3d2704b3/namespace_3d2704b3
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x118ac00c, Offset: 0xd8
 // Size: 0x6e
 function private __init__() {
@@ -26,7 +26,7 @@ function private __init__() {
 }
 
 // Namespace namespace_3d2704b3/namespace_3d2704b3
-// Params 6, eflags: 0x5 linked
+// Params 6, eflags: 0x4
 // Checksum 0x3ab48519, Offset: 0x150
 // Size: 0x15e
 function private function_2d47ee1e(var_6ed927a6, var_caba78c2, waittime, var_ef5e1b44, vehicledrop = 0, vehicletype = undefined) {
@@ -47,7 +47,7 @@ function private function_2d47ee1e(var_6ed927a6, var_caba78c2, waittime, var_ef5
 }
 
 // Namespace namespace_3d2704b3/namespace_3d2704b3
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe1d3e740, Offset: 0x2b8
 // Size: 0x12c
 function function_f0297225(var_2ab9d3bd, replacementcount, var_3afaa57b) {
@@ -67,7 +67,7 @@ function function_f0297225(var_2ab9d3bd, replacementcount, var_3afaa57b) {
 }
 
 // Namespace namespace_3d2704b3/namespace_3d2704b3
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb62aa31a, Offset: 0x3f0
 // Size: 0x2e
 function function_d0178153(var_2ab9d3bd) {
@@ -75,7 +75,7 @@ function function_d0178153(var_2ab9d3bd) {
 }
 
 // Namespace namespace_3d2704b3/namespace_3d2704b3
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xdf33b052, Offset: 0x428
 // Size: 0x836
 function start(supplydrops = 1, minwaittime = 20, var_fe6b2eab = 20) {
@@ -85,14 +85,14 @@ function start(supplydrops = 1, minwaittime = 20, var_fe6b2eab = 20) {
     level flagsys::wait_till(#"hash_405e46788e83af41");
     if (isarray(minwaittime)) {
         foreach (key, value in minwaittime) {
-            minwaittime[key] = minwaittime[key] * level.deathcircletimescale;
+            minwaittime[key] *= level.deathcircletimescale;
         }
     } else {
         minwaittime *= level.deathcircletimescale;
     }
     if (isarray(var_fe6b2eab)) {
         foreach (key, value in var_fe6b2eab) {
-            var_fe6b2eab[key] = var_fe6b2eab[key] * level.deathcircletimescale;
+            var_fe6b2eab[key] *= level.deathcircletimescale;
         }
     } else {
         var_fe6b2eab /= level.deathcircletimescale;
@@ -189,7 +189,7 @@ function start(supplydrops = 1, minwaittime = 20, var_fe6b2eab = 20) {
 }
 
 // Namespace namespace_3d2704b3/namespace_3d2704b3
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdb19a763, Offset: 0xc68
 // Size: 0xd0
 function start_flare(maxflares = undefined, var_47d17dcb = 0) {
@@ -209,7 +209,7 @@ function start_flare(maxflares = undefined, var_47d17dcb = 0) {
 }
 
 // Namespace namespace_3d2704b3/namespace_3d2704b3
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xcbcb2359, Offset: 0xd40
 // Size: 0x526
 function start_vehicle(vehicletype, supplydrops = 1, minwaittime = 20, var_fe6b2eab = 20) {
@@ -222,14 +222,14 @@ function start_vehicle(vehicletype, supplydrops = 1, minwaittime = 20, var_fe6b2
     level flagsys::wait_till(#"hash_405e46788e83af41");
     if (isarray(minwaittime)) {
         foreach (key, value in minwaittime) {
-            minwaittime[key] = minwaittime[key] * level.deathcircletimescale;
+            minwaittime[key] *= level.deathcircletimescale;
         }
     } else {
         minwaittime *= level.deathcircletimescale;
     }
     if (isarray(var_fe6b2eab)) {
         foreach (key, value in var_fe6b2eab) {
-            var_fe6b2eab[key] = var_fe6b2eab[key] * level.deathcircletimescale;
+            var_fe6b2eab[key] *= level.deathcircletimescale;
         }
     } else {
         var_fe6b2eab /= level.deathcircletimescale;

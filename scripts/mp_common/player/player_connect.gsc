@@ -375,8 +375,8 @@ function private init_character_index() {
             var_6a3f295d = hash(autoselection);
             playerroletemplatecount = getplayerroletemplatecount(currentsessionmode());
             for (i = 0; i < playerroletemplatecount; i++) {
-                var_3c6fd4f7 = function_b14806c6(i, currentsessionmode());
-                if (var_3c6fd4f7 == var_6a3f295d) {
+                prtname = function_b14806c6(i, currentsessionmode());
+                if (prtname == var_6a3f295d) {
                     draft::select_character(i, 1);
                     return;
                 }
@@ -449,7 +449,7 @@ function private init_character_index() {
     if (!draft::is_draft_this_round() && player_role::is_valid(self.pers[#"characterindex"])) {
         player_role::set(self.pers[#"characterindex"]);
     }
-    self function_427981d0(0);
+    self setisready(0);
 }
 
 // Namespace player/player_connect

@@ -3,31 +3,31 @@
         {
             "minweight": 100,
             "itementry": "pistol_standard_t8_item",
-            "var_3f8c08e3": "ammo_type_45_item",
+            "childitementry_1": "ammo_type_45_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "pistol_revolver_t8_item",
-            "var_3f8c08e3": "ammo_type_45_item",
+            "childitementry_1": "ammo_type_45_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
             "itementry": "pistol_burst_t8_item",
-            "var_3f8c08e3": "ammo_type_9mm_item",
+            "childitementry_1": "ammo_type_9mm_item",
             "maxweight": 200,
             "available": -1
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 200,
+    "hash_7fb0967b": 200,
     "type": "itemspawnlist",
-    "var_345eba59": 3,
-    "var_9b009839": -1,
-    "var_dc7ffbef": 1,
+    "hash_345eba59": 3,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
     "name": "guns_pistols",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

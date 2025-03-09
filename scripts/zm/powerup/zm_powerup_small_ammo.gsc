@@ -25,7 +25,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_powerup_small_ammo/zm_powerup_small_ammo
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbb4fbc6e, Offset: 0x168
 // Size: 0x84
 function __init__() {
@@ -36,7 +36,7 @@ function __init__() {
 }
 
 // Namespace zm_powerup_small_ammo/zm_powerup_small_ammo
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9006c652, Offset: 0x1f8
 // Size: 0x6c
 function function_81558cdf(player) {
@@ -48,7 +48,7 @@ function function_81558cdf(player) {
 }
 
 // Namespace zm_powerup_small_ammo/zm_powerup_small_ammo
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe58394fc, Offset: 0x270
 // Size: 0x74
 function function_d7d24283(e_powerup, player) {
@@ -62,7 +62,7 @@ function function_d7d24283(e_powerup, player) {
 }
 
 // Namespace zm_powerup_small_ammo/zm_powerup_small_ammo
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc04a1e8f, Offset: 0x2f0
 // Size: 0x12c
 function function_8be02874(drop_item, player) {
@@ -83,7 +83,7 @@ function function_8be02874(drop_item, player) {
 }
 
 // Namespace zm_powerup_small_ammo/zm_powerup_small_ammo
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x51269df6, Offset: 0x428
 // Size: 0x1e0
 function function_ae7afb91(player) {
@@ -111,7 +111,7 @@ function function_ae7afb91(player) {
 }
 
 // Namespace zm_powerup_small_ammo/zm_powerup_small_ammo
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xaf2e4378, Offset: 0x610
 // Size: 0x5c
 function function_71bf1101(drop_item, player_team) {
@@ -120,7 +120,7 @@ function function_71bf1101(drop_item, player_team) {
 }
 
 // Namespace zm_powerup_small_ammo/zm_powerup_small_ammo
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe7021237, Offset: 0x678
 // Size: 0x206
 function function_7374e868(weapon) {
@@ -165,7 +165,7 @@ function function_7374e868(weapon) {
 }
 
 // Namespace zm_powerup_small_ammo/zm_powerup_small_ammo
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x831a9706, Offset: 0x888
 // Size: 0x214
 function give_clip_of_ammo(w_weapon) {
@@ -199,7 +199,7 @@ function give_clip_of_ammo(w_weapon) {
 }
 
 // Namespace zm_powerup_small_ammo/zm_powerup_small_ammo
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xaec6aa3b, Offset: 0xaa8
 // Size: 0xbc
 function private function_7f7c1226(weapon) {

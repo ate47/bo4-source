@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_white_electric_slide/zm_trial_white_electric_slide
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5e748e1, Offset: 0xd8
 // Size: 0x5c
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_white_electric_slide/zm_trial_white_electric_slide
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0xd7998fec, Offset: 0x140
 // Size: 0x1d0
 function private on_begin(var_b7088c5b, var_5bf91a8, var_d9f1b8f9, var_fc678144) {
@@ -53,7 +53,7 @@ function private on_begin(var_b7088c5b, var_5bf91a8, var_d9f1b8f9, var_fc678144)
 }
 
 // Namespace zm_trial_white_electric_slide/zm_trial_white_electric_slide
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x89a6d9e1, Offset: 0x318
 // Size: 0x1a2
 function private on_end(round_reset) {
@@ -80,7 +80,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_white_electric_slide/zm_trial_white_electric_slide
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xd593e8c9, Offset: 0x4c8
 // Size: 0xd0
 function private function_729edb5f() {

@@ -1,0 +1,59 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5222dd380a1586a9",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_622bcfdb1bfdc39",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "shot 2",
+                    "diewhenfinished": 1
+                }
+            ],
+            "model": "#hash_63670a37809faebb",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6261e772c79c3be7",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "shot 2",
+                    "diewhenfinished": 1
+                }
+            ],
+            "model": "#hash_5af73de91464a602",
+            "type": "prop",
+            "name": "missile"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_sta_helicopter_flyover_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

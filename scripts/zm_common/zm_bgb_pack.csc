@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace bgb_pack/zm_bgb_pack
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb0cb3680, Offset: 0x188
 // Size: 0x1c6
 function __init__() {
@@ -34,7 +34,7 @@ function __init__() {
 }
 
 // Namespace bgb_pack/zm_bgb_pack
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xee02267f, Offset: 0x358
 // Size: 0x26
 function private __main__() {

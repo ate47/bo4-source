@@ -27,8 +27,8 @@
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 4,
-    "var_9b009839": -1,
+    "hash_345eba59": 4,
+    "hash_9b009839": -1,
     "name": "ammo_stash_slot1_dlc1_with_conc",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

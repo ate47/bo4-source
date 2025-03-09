@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace medals/medals_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfc19d224, Offset: 0xc0
 // Size: 0x24
 function __init__() {
@@ -20,7 +20,7 @@ function __init__() {
 }
 
 // Namespace medals/medals_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5a27711b, Offset: 0xf0
 // Size: 0x4c
 function init() {
@@ -31,7 +31,7 @@ function init() {
 }
 
 // Namespace medals/medals_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xacce83cd, Offset: 0x148
 // Size: 0xe
 function on_player_connect() {
@@ -39,7 +39,7 @@ function on_player_connect() {
 }
 
 // Namespace medals/medals_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc32b12a9, Offset: 0x160
 // Size: 0x2e
 function setlastkilledby(attacker, inflictor) {
@@ -75,7 +75,7 @@ function event_handler[player_medal] codecallback_medal(eventstruct) {
 }
 
 // Namespace medals/medals_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x134a4fdf, Offset: 0x250
 // Size: 0x7c
 function function_8570168d() {

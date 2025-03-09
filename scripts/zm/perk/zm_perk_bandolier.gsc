@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_bandolier/zm_perk_bandolier
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3b8762f5, Offset: 0x198
 // Size: 0x14
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_bandolier/zm_perk_bandolier
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd1f47881, Offset: 0x1b8
 // Size: 0x194
 function function_27473e44() {
@@ -35,7 +35,7 @@ function function_27473e44() {
 }
 
 // Namespace zm_perk_bandolier/zm_perk_bandolier
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xacd5566c, Offset: 0x358
 // Size: 0xe6
 function perk_precache() {
@@ -50,7 +50,7 @@ function perk_precache() {
 }
 
 // Namespace zm_perk_bandolier/zm_perk_bandolier
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x448
 // Size: 0x4
 function perk_register_clientfield() {
@@ -58,7 +58,7 @@ function perk_register_clientfield() {
 }
 
 // Namespace zm_perk_bandolier/zm_perk_bandolier
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x93608f67, Offset: 0x458
 // Size: 0xc
 function perk_set_clientfield(state) {
@@ -66,7 +66,7 @@ function perk_set_clientfield(state) {
 }
 
 // Namespace zm_perk_bandolier/zm_perk_bandolier
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x9d0adbf2, Offset: 0x470
 // Size: 0xb6
 function perk_machine_setup(use_trigger, perk_machine, bump_trigger, collision) {
@@ -82,7 +82,7 @@ function perk_machine_setup(use_trigger, perk_machine, bump_trigger, collision) 
 }
 
 // Namespace zm_perk_bandolier/zm_perk_bandolier
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa07e3f9c, Offset: 0x530
 // Size: 0x1c
 function give_perk() {
@@ -90,7 +90,7 @@ function give_perk() {
 }
 
 // Namespace zm_perk_bandolier/zm_perk_bandolier
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xe8e0620, Offset: 0x558
 // Size: 0x3c
 function take_perk(b_pause, str_perk, str_result, n_slot) {
@@ -98,7 +98,7 @@ function take_perk(b_pause, str_perk, str_result, n_slot) {
 }
 
 // Namespace zm_perk_bandolier/zm_perk_bandolier
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x97cb415f, Offset: 0x5a0
 // Size: 0x1e0
 function set_ammo(b_max_ammo = 1) {

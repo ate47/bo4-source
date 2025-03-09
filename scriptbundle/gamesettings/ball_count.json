@@ -4,13 +4,13 @@
     "value2": "2",
     "value3": "3",
     "value1": "1",
-    "var_dfed6968": "4",
-    "var_71ce0d1f": "5",
+    "value4": "4",
+    "value5": "5",
     "type": "gamesettings",
     "label": "#menu/x_balls",
     "name": "ball_count",
     "displayname": "#menu/ball_count",
     "label1": "#menu/1_ball",
-    "var_9de86f42": 5,
+    "optionscount": 5,
     "setting": "ballCount"
 }

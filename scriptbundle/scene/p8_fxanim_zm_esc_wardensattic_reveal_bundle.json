@@ -44,9 +44,9 @@
                             "entrytype": "anim"
                         }
                     ],
-                    "var_64c0ee5a": "#hash_5b7e58a36965d339",
+                    "hash_64c0ee5a": "#hash_5b7e58a36965d339",
                     "name": "main & idle loop out",
-                    "var_1c7fbd6b": "#hash_2965fe8d1a666bd5"
+                    "shotmodel": "#hash_2965fe8d1a666bd5"
                 }
             ],
             "firstframe": 1,
@@ -72,9 +72,9 @@
                             "entrytype": "anim"
                         }
                     ],
-                    "var_64c0ee5a": "#hash_b75edbc7cb84245",
+                    "hash_64c0ee5a": "#hash_b75edbc7cb84245",
                     "name": "main & idle loop out",
-                    "var_1c7fbd6b": "#hash_2f1f59e623562969"
+                    "shotmodel": "#hash_2f1f59e623562969"
                 }
             ],
             "firstframe": 1,
@@ -100,9 +100,9 @@
                             "entrytype": "anim"
                         }
                     ],
-                    "var_64c0ee5a": "#hash_c0be606b929d4b3",
+                    "hash_64c0ee5a": "#hash_c0be606b929d4b3",
                     "name": "main & idle loop out",
-                    "var_1c7fbd6b": "#hash_2d032cdc55a44677"
+                    "shotmodel": "#hash_2d032cdc55a44677"
                 }
             ],
             "firstframe": 1,
@@ -128,9 +128,9 @@
                             "entrytype": "anim"
                         }
                     ],
-                    "var_64c0ee5a": "#hash_52beecfecb853d49",
+                    "hash_64c0ee5a": "#hash_52beecfecb853d49",
                     "name": "main & idle loop out",
-                    "var_1c7fbd6b": "#hash_40072624c6939745"
+                    "shotmodel": "#hash_40072624c6939745"
                 }
             ],
             "firstframe": 1,
@@ -156,9 +156,9 @@
                             "entrytype": "anim"
                         }
                     ],
-                    "var_64c0ee5a": "#hash_7ba9ec5340fc5c30",
+                    "hash_64c0ee5a": "#hash_7ba9ec5340fc5c30",
                     "name": "main & idle loop out",
-                    "var_1c7fbd6b": "#hash_1da8304b99e59614"
+                    "shotmodel": "#hash_1da8304b99e59614"
                 }
             ],
             "firstframe": 1,
@@ -173,6 +173,6 @@
     "type": "scene",
     "name": "p8_fxanim_zm_esc_wardensattic_reveal_bundle",
     "dontsync": 1,
-    "var_241c5f3c": 1,
+    "hash_241c5f3c": 1,
     "team": "any"
 }

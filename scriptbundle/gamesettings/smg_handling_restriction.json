@@ -8,6 +8,6 @@
     "displayname": "#weapon/smg_handling_t8",
     "label1": "#menu/enabled",
     "label2": "#menu/disabled",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "itemRestrictions__smg_handling_t8__restricted"
 }

@@ -1,19 +1,19 @@
 {
     "expander_options": [
         {
-            "var_35e98147": "pc_voice_chat_activation_treshold"
+            "expanderoption": "pc_voice_chat_activation_treshold"
         }
     ],
-    "var_d7c59c8f": "pc_pushtotalk",
-    "var_60fcfffa": "#menu/on",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_d7c59c8f": "pc_pushtotalk",
+    "hash_60fcfffa": "#menu/on",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "pc_expander_pushtotalk",
-    "var_54a43dc2": 1,
-    "var_66faec87": 10,
+    "hash_54a43dc2": 1,
+    "hash_66faec87": 10,
     "statname": "expanderPushToTalk",
-    "var_b7401319": "#menu/off"
+    "hash_b7401319": "#menu/off"
 }

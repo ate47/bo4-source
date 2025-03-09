@@ -7,14 +7,14 @@
 // Method(s) 6 Total 13
 class czm_arcade_keys : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace czm_arcade_keys/zm_arcade_keys
     // Params 2, eflags: 0x0
     // Checksum 0x5c61b4, Offset: 0x2c8
     // Size: 0x3c
     function set_key_count(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "key_count", value);
+        player clientfield::function_9bf78ef8(_uid, "key_count", value);
     }
 
     // Namespace czm_arcade_keys/zm_arcade_keys

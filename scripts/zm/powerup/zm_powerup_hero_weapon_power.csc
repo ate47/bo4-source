@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_powerup_hero_weapon_power/zm_powerup_hero_weapon_power
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6b30e786, Offset: 0xe0
 // Size: 0x34
 function __init__() {

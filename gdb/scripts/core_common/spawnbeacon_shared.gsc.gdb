@@ -19,7 +19,7 @@ DEVBLOCK 0x15f4
 DEVBLOCK 0x163a
 # spawn_beacon::gadget_spawnbeacon_on@12
 DEVBLOCK 0x16ba
-# spawn_beacon::function_a9ff3efb@556
+# spawn_beacon::destroyspawnbeacon@556
 DEVBLOCK 0x2106
 # spawn_beacon::createspawngroupforspawnbeacon@2a
 DEVBLOCK 0x299a

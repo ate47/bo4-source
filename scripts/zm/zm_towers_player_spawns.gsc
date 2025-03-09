@@ -13,7 +13,7 @@
 #namespace zm_towers_player_spawns;
 
 // Namespace zm_towers_player_spawns/zm_towers_player_spawns
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x91a218ee, Offset: 0x2f8
 // Size: 0x6c
 function init() {
@@ -24,7 +24,7 @@ function init() {
 }
 
 // Namespace zm_towers_player_spawns/zm_towers_player_spawns
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xff52d74b, Offset: 0x370
 // Size: 0x4c
 function function_c91644e8() {
@@ -34,7 +34,7 @@ function function_c91644e8() {
 }
 
 // Namespace zm_towers_player_spawns/zm_towers_player_spawns
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa96b2ed5, Offset: 0x3c8
 // Size: 0x524
 function function_e5f05a92() {
@@ -103,7 +103,7 @@ function function_e5f05a92() {
 }
 
 // Namespace zm_towers_player_spawns/zm_towers_player_spawns
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x65f55e99, Offset: 0x8f8
 // Size: 0xd4
 function function_b117d867() {
@@ -117,7 +117,7 @@ function function_b117d867() {
 }
 
 // Namespace zm_towers_player_spawns/zm_towers_player_spawns
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd00a7d5b, Offset: 0x9d8
 // Size: 0x242
 function function_c49fe830() {
@@ -149,7 +149,7 @@ function function_c49fe830() {
 }
 
 // Namespace zm_towers_player_spawns/zm_towers_player_spawns
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2b6963b0, Offset: 0xc28
 // Size: 0x42
 function function_a1379826() {

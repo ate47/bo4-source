@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_hula_girl",
-    "var_ff3063df": "attach_t8_charm_hula_girl_view",
+    "hash_ff3063df": "attach_t8_charm_hula_girl_view",
     "image": "ui_icon_weapon_charms_hula_girl",
     "name": "charm_hula_girl",
     "displayname": "#hash_53b8e98b12d0a65e",
     "icon": "ui_icon_weapon_charms_hula_girl",
-    "var_ef5ad2b3": "attach_t8_charm_hula_girl_view",
+    "hash_ef5ad2b3": "attach_t8_charm_hula_girl_view",
     "previewimage": "#ui_icon_weapon_charms_hula_girl"
 }

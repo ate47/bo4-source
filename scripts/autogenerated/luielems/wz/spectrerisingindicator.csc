@@ -7,7 +7,7 @@
 class cspectrerisingindicator : cluielem {
 
     // Namespace cspectrerisingindicator/spectrerisingindicator
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x31406b6d, Offset: 0x3f0
     // Size: 0x30
     function set_isalive(localclientnum, value) {
@@ -15,7 +15,7 @@ class cspectrerisingindicator : cluielem {
     }
 
     // Namespace cspectrerisingindicator/spectrerisingindicator
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x9fbe7107, Offset: 0x3b8
     // Size: 0x30
     function set_clientnum(localclientnum, value) {
@@ -23,7 +23,7 @@ class cspectrerisingindicator : cluielem {
     }
 
     // Namespace cspectrerisingindicator/spectrerisingindicator
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x20f9d129, Offset: 0x380
     // Size: 0x2c
     function open(localclientnum) {
@@ -31,7 +31,7 @@ class cspectrerisingindicator : cluielem {
     }
 
     // Namespace cspectrerisingindicator/spectrerisingindicator
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x277eb428, Offset: 0x318
     // Size: 0x5c
     function function_fa582112(localclientnum) {
@@ -41,7 +41,7 @@ class cspectrerisingindicator : cluielem {
     }
 
     // Namespace cspectrerisingindicator/spectrerisingindicator
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x1ae94536, Offset: 0x2e8
     // Size: 0x24
     function register_clientside(uid) {
@@ -49,7 +49,7 @@ class cspectrerisingindicator : cluielem {
     }
 
     // Namespace cspectrerisingindicator/spectrerisingindicator
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0x65364c7b, Offset: 0x258
     // Size: 0x84
     function setup_clientfields(uid, var_c05c67e2, var_f25b9f45) {
@@ -61,7 +61,7 @@ class cspectrerisingindicator : cluielem {
 }
 
 // Namespace spectrerisingindicator/spectrerisingindicator
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x213f0b2b, Offset: 0xb8
 // Size: 0x58
 function register(uid, var_c05c67e2, var_f25b9f45) {

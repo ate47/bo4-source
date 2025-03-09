@@ -39,9 +39,9 @@
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 6,
-    "var_9b009839": -1,
+    "hash_345eba59": 6,
+    "hash_9b009839": -1,
     "name": "supply_drop_stash_parent_dlc1_limit_world_high_vaue",
-    "var_fde72c94": 100,
+    "supplystashweight": 100,
     "supplystash": 1
 }

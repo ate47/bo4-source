@@ -65,7 +65,7 @@ function function_32ae304(lefthand) {
 // Checksum 0x470be099, Offset: 0x388
 // Size: 0x74
 function function_bddfddcf(lefthand) {
-    if (self function_a39f313c(lefthand) || self isplayerswimming()) {
+    if (self isweaponready(lefthand) || self isplayerswimming()) {
         return (gettime() > (lefthand ? self.bot.var_af11e334 : self.bot.var_51cee2ad));
     }
     return false;

@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdf5cb38, Offset: 0x218
 // Size: 0xfc
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x39080843, Offset: 0x320
 // Size: 0x15e
 function function_3ade2b96(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -52,7 +52,7 @@ function function_3ade2b96(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8aca9821, Offset: 0x488
 // Size: 0x114
 function seeker_mine_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -71,7 +71,7 @@ function seeker_mine_fx(localclientnum, oldval, newval, bnewent, binitialsnap, f
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa3e23fd3, Offset: 0x5a8
 // Size: 0x5c
 function function_fc90058e(localclientnum, fx) {
@@ -82,7 +82,7 @@ function function_fc90058e(localclientnum, fx) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x40010ff, Offset: 0x610
 // Size: 0x8c
 function on_player_corpse(localclientnum, params) {
@@ -94,7 +94,7 @@ function on_player_corpse(localclientnum, params) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcd6b637d, Offset: 0x6a8
 // Size: 0x9c
 function function_a6451cfe(localclientnum, camfx) {
@@ -106,7 +106,7 @@ function function_a6451cfe(localclientnum, camfx) {
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8ebd56d3, Offset: 0x750
 // Size: 0x3c
 function private spawned(localclientnum) {

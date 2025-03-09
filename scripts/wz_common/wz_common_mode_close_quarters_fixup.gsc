@@ -12,7 +12,7 @@ function autoexec __init__() {
 }
 
 // Namespace wz_common_mode_close_quarters_fixup/wz_common_mode_close_quarters_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xca017c93, Offset: 0x98
 // Size: 0xcac
 function function_c77b33db() {
@@ -45,7 +45,7 @@ function function_c77b33db() {
         wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"attachment_list_good", #"attachment_list_good_closequarters");
         wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"attachment_list_med", #"attachment_list_med_closequarters");
         wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"consumable_list_low", #"consumable_list_low_closequarters");
-        wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"hash_11f313217dbe7186", #"wz_escape_wallbuy_guns_list_closequarters");
+        wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"wz_escape_wallbuy_guns_list", #"wz_escape_wallbuy_guns_list_closequarters");
         if (isdefined(getgametypesetting(#"wzenablewallbuyasylum")) && getgametypesetting(#"wzenablewallbuyasylum") || isdefined(getgametypesetting(#"hash_232750b87390cbff")) && getgametypesetting(#"hash_232750b87390cbff")) {
             wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"wz_open_skyscrapers_wallbuy_guns_list_asylum", #"wz_open_skyscrapers_wallbuy_guns_list_closequarters");
         }

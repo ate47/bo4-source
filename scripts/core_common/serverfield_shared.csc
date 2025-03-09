@@ -1,7 +1,7 @@
 #namespace serverfield;
 
 // Namespace serverfield/serverfield_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x4f160982, Offset: 0x68
 // Size: 0x44
 function register(str_name, n_version, n_bits, str_type) {
@@ -9,7 +9,7 @@ function register(str_name, n_version, n_bits, str_type) {
 }
 
 // Namespace serverfield/serverfield_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb5633523, Offset: 0xb8
 // Size: 0x2c
 function set(str_field_name, n_value) {

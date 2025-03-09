@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace oob/oob
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3448b0b7, Offset: 0x140
 // Size: 0x20c
 function __init__() {
@@ -36,7 +36,7 @@ function __init__() {
 }
 
 // Namespace oob/oob
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x652528f9, Offset: 0x358
 // Size: 0x44
 function on_localplayer_connect(localclientnum) {
@@ -45,7 +45,7 @@ function on_localplayer_connect(localclientnum) {
 }
 
 // Namespace oob/oob
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xde26e0d8, Offset: 0x3a8
 // Size: 0x3c
 function on_localplayer_spawned(localclientnum) {
@@ -54,7 +54,7 @@ function on_localplayer_spawned(localclientnum) {
 }
 
 // Namespace oob/oob
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x14c79715, Offset: 0x3f0
 // Size: 0x3c
 function on_localplayer_shutdown(localclientnum) {
@@ -65,7 +65,7 @@ function on_localplayer_shutdown(localclientnum) {
 }
 
 // Namespace oob/oob
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdbbbe59d, Offset: 0x438
 // Size: 0x5e
 function function_95c61f07(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -77,7 +77,7 @@ function function_95c61f07(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace oob/oob
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5e07fe5a, Offset: 0x4a0
 // Size: 0x43c
 function onoutofboundschange(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -132,7 +132,7 @@ function onoutofboundschange(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace oob/oob
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1d8f71b8, Offset: 0x8e8
 // Size: 0x10e
 function stopoutofboundseffects(localclientnum, localplayer) {
@@ -155,7 +155,7 @@ function stopoutofboundseffects(localclientnum, localplayer) {
 }
 
 // Namespace oob/oob
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4f4cdb7a, Offset: 0xa00
 // Size: 0x4a
 function getoobuimodel(localclientnum) {

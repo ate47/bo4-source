@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_attachments/zm_attachments
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2a0df459, Offset: 0x108
 // Size: 0xbc
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zm_attachments/zm_attachments
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x6e973e11, Offset: 0x1d0
 // Size: 0x1a6
 function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -55,12 +55,12 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
 }
 
 // Namespace zm_attachments/zm_attachments
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x286b9764, Offset: 0x380
 // Size: 0xe4
 function function_9f8d8c38() {
-    if (isdefined(self.var_6f84b820)) {
-        switch (self.var_6f84b820) {
+    if (isdefined(self.zm_ai_category)) {
+        switch (self.zm_ai_category) {
         case #"popcorn":
         case #"basic":
         case #"enhanced":
@@ -80,7 +80,7 @@ function function_9f8d8c38() {
 }
 
 // Namespace zm_attachments/zm_attachments
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x3142bd5, Offset: 0x470
 // Size: 0x1cc
 function dragons_breath(e_attacker, n_damage, weapon) {
@@ -116,7 +116,7 @@ function dragons_breath(e_attacker, n_damage, weapon) {
 }
 
 // Namespace zm_attachments/zm_attachments
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x25d04c42, Offset: 0x648
 // Size: 0x44
 function private function_ddda26e(e_attacker) {
@@ -126,12 +126,12 @@ function private function_ddda26e(e_attacker) {
 }
 
 // Namespace zm_attachments/zm_attachments
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4c2bc472, Offset: 0x698
 // Size: 0xc4
 function function_82bca1c7(e_attacker) {
     if (e_attacker playerads() == 1) {
-        if ((self.var_6f84b820 === #"basic" || self.var_6f84b820 === #"enhanced") && math::cointoss(10) && distancesquared(self.origin, e_attacker.origin) < 40000) {
+        if ((self.zm_ai_category === #"basic" || self.zm_ai_category === #"enhanced") && math::cointoss(10) && distancesquared(self.origin, e_attacker.origin) < 40000) {
             self ai::stun(2);
         }
     }

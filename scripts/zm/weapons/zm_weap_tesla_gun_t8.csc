@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_tesla_gun_t8/zm_weap_tesla_gun_t8
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xacb759a6, Offset: 0xf8
 // Size: 0x1fc
 function __init__() {
@@ -30,7 +30,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_tesla_gun_t8/zm_weap_tesla_gun_t8
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb0ac28f9, Offset: 0x300
 // Size: 0xa4
 function function_4dfaa84c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -44,7 +44,7 @@ function function_4dfaa84c(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_tesla_gun_t8/zm_weap_tesla_gun_t8
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfaaab8f7, Offset: 0x3b0
 // Size: 0x160
 function tesla_fx_rail(localclientnum) {
@@ -65,7 +65,7 @@ function tesla_fx_rail(localclientnum) {
 }
 
 // Namespace zm_weap_tesla_gun_t8/zm_weap_tesla_gun_t8
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf814e4bb, Offset: 0x518
 // Size: 0x320
 function tesla_fx_tube(localclientnum) {
@@ -123,7 +123,7 @@ function tesla_fx_tube(localclientnum) {
 }
 
 // Namespace zm_weap_tesla_gun_t8/zm_weap_tesla_gun_t8
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2b7cf2d2, Offset: 0x840
 // Size: 0x7c
 function clear_tesla_tube_effect(localclientnum) {

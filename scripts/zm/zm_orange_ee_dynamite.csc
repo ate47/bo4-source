@@ -4,7 +4,7 @@
 #namespace zm_orange_ee_dynamite;
 
 // Namespace zm_orange_ee_dynamite/zm_orange_ee_dynamite
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbf37cfdc, Offset: 0xd8
 // Size: 0x1ac
 function init() {
@@ -18,7 +18,7 @@ function init() {
 }
 
 // Namespace zm_orange_ee_dynamite/zm_orange_ee_dynamite
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfdfc0a2c, Offset: 0x290
 // Size: 0x8c
 function play_dynamite_explosion_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -26,7 +26,7 @@ function play_dynamite_explosion_fx(localclientnum, oldval, newval, bnewent, bin
 }
 
 // Namespace zm_orange_ee_dynamite/zm_orange_ee_dynamite
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x47b14ba1, Offset: 0x328
 // Size: 0xba
 function function_ee32b1b8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -40,7 +40,7 @@ function function_ee32b1b8(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_orange_ee_dynamite/zm_orange_ee_dynamite
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb1af7db, Offset: 0x3f0
 // Size: 0x74
 function function_baf2de8d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

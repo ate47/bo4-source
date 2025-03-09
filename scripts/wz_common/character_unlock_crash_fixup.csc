@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 // Checksum 0xe907d8b2, Offset: 0xc8
 // Size: 0x74
 function __init__() {
-    character_unlock_fixup::register_character_unlock(#"crash_unlock", #"hash_7a9842f6bec0e568", #"cu03_item", &function_d95e620c, #"hash_7ccc9c0240fd010e", #"hash_7ccc9b0240fcff5b");
+    character_unlock_fixup::register_character_unlock(#"crash_unlock", #"prt_wz_buffassault", #"cu03_item", &function_d95e620c, #"hash_7ccc9c0240fd010e", #"hash_7ccc9b0240fcff5b");
 }
 
 // Namespace character_unlock_crash_fixup/character_unlock_crash_fixup

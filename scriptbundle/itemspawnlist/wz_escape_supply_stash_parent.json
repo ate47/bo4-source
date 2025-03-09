@@ -32,12 +32,12 @@
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 4000,
+    "hash_7fb0967b": 4000,
     "type": "itemspawnlist",
-    "var_345eba59": 5,
-    "var_9b009839": 10,
+    "hash_345eba59": 5,
+    "hash_9b009839": 10,
     "name": "wz_escape_supply_stash_parent",
-    "var_fde72c94": 100,
-    "var_dc91e192": 1,
+    "supplystashweight": 100,
+    "hash_dc91e192": 1,
     "supplystash": 1
 }

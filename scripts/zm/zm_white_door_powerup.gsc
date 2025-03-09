@@ -11,7 +11,7 @@
 #namespace zm_white_door_powerup;
 
 // Namespace zm_white_door_powerup/zm_white_door_powerup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc1b1b179, Offset: 0x260
 // Size: 0x2c
 function init() {
@@ -20,7 +20,7 @@ function init() {
 }
 
 // Namespace zm_white_door_powerup/zm_white_door_powerup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc724de7d, Offset: 0x298
 // Size: 0x44
 function init_flags() {
@@ -29,7 +29,7 @@ function init_flags() {
 }
 
 // Namespace zm_white_door_powerup/zm_white_door_powerup
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x7b0da623, Offset: 0x2e8
 // Size: 0x13a
 function door_powerup_drop(powerup_name, var_e3a28454, powerup_team, powerup_location) {
@@ -49,7 +49,7 @@ function door_powerup_drop(powerup_name, var_e3a28454, powerup_team, powerup_loc
 }
 
 // Namespace zm_white_door_powerup/zm_white_door_powerup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbe3bcb39, Offset: 0x430
 // Size: 0x300
 function perks_behind_door() {
@@ -85,7 +85,7 @@ function perks_behind_door() {
 }
 
 // Namespace zm_white_door_powerup/zm_white_door_powerup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaea8966a, Offset: 0x738
 // Size: 0x3c
 function powerup_grabbed_watcher() {
@@ -94,7 +94,7 @@ function powerup_grabbed_watcher() {
 }
 
 // Namespace zm_white_door_powerup/zm_white_door_powerup
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xb1f698d5, Offset: 0x780
 // Size: 0x3d4
 function function_94cd396e(powerup_override, powerup_team, powerup_location, powerup_player, shouldplaysound = 1, var_a6d11a96) {

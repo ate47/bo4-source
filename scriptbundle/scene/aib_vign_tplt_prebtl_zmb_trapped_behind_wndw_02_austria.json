@@ -1,0 +1,31 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_afafaa344f6d85f",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_46bda49440c49299",
+            "type": "fakeactor",
+            "name": "actor 1",
+            "allowdeath": 1,
+            "removeweapon": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_tplt_prebtl_zmb_trapped_behind_wndw_02_austria",
+    "dontsync": 1,
+    "hash_29563fd6": 180,
+    "team": "any"
+}

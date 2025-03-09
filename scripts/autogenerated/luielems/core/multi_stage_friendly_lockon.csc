@@ -7,7 +7,7 @@
 class cmulti_stage_friendly_lockon : cluielem {
 
     // Namespace cmulti_stage_friendly_lockon/multi_stage_friendly_lockon
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x78a487ef, Offset: 0x3f0
     // Size: 0x30
     function set_targetstate(localclientnum, value) {
@@ -15,7 +15,7 @@ class cmulti_stage_friendly_lockon : cluielem {
     }
 
     // Namespace cmulti_stage_friendly_lockon/multi_stage_friendly_lockon
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xae2bca6, Offset: 0x3b8
     // Size: 0x30
     function set_entnum(localclientnum, value) {
@@ -23,7 +23,7 @@ class cmulti_stage_friendly_lockon : cluielem {
     }
 
     // Namespace cmulti_stage_friendly_lockon/multi_stage_friendly_lockon
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x371ea463, Offset: 0x380
     // Size: 0x2c
     function open(localclientnum) {
@@ -31,7 +31,7 @@ class cmulti_stage_friendly_lockon : cluielem {
     }
 
     // Namespace cmulti_stage_friendly_lockon/multi_stage_friendly_lockon
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xbece18ad, Offset: 0x318
     // Size: 0x5c
     function function_fa582112(localclientnum) {
@@ -41,7 +41,7 @@ class cmulti_stage_friendly_lockon : cluielem {
     }
 
     // Namespace cmulti_stage_friendly_lockon/multi_stage_friendly_lockon
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x57ea0df2, Offset: 0x2e8
     // Size: 0x24
     function register_clientside(uid) {
@@ -49,7 +49,7 @@ class cmulti_stage_friendly_lockon : cluielem {
     }
 
     // Namespace cmulti_stage_friendly_lockon/multi_stage_friendly_lockon
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0x12d27a01, Offset: 0x258
     // Size: 0x84
     function setup_clientfields(uid, var_5a7b4b38, var_29786c92) {

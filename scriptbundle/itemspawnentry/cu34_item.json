@@ -2,7 +2,7 @@
     "objectives": [
         {
             "description": "#hash_61a31bb1a4811262",
-            "var_7e835304": "#hash_41f134c3e727d877"
+            "hash_7e835304": "#hash_41f134c3e727d877"
         },
         {
             "description": "#hash_61a31ab1a48110af"
@@ -10,8 +10,8 @@
     ],
     "description": "#hash_79ea1d3b807c22d8",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 2,
-    "var_e8b98a8a": "#hash_a9c62116b674997",
+    "hash_eda4062b": 2,
+    "hash_e8b98a8a": "#hash_a9c62116b674997",
     "model": "#p8_wz_cu_respirator",
     "type": "itemspawnentry",
     "hintstring": "#hash_7dbf9926c8866a51",
@@ -21,7 +21,7 @@
     "icon": "#ui_icon_inventory_respirator",
     "modelscale": 1,
     "rarity": "None",
-    "var_a51bc1f7": "#hash_61c7b2c6472fafc6",
+    "hash_a51bc1f7": "#hash_61c7b2c6472fafc6",
     "handler": "#hash_5c844f5c1207159c",
     "rewardname": "#hash_8b67b8f9d9a7f0e",
     "pickupicon": "#ui_icon_inventory_respirator",

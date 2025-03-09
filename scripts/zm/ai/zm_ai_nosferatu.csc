@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3983145c, Offset: 0x218
 // Size: 0x19c
 function __init__() {
@@ -33,7 +33,7 @@ function __init__() {
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x6a878a8a, Offset: 0x3c0
 // Size: 0x6c
 function private function_6b82c26d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -43,7 +43,7 @@ function private function_6b82c26d(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xac7e19c3, Offset: 0x438
 // Size: 0x7e
 function private function_4207e678(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -55,7 +55,7 @@ function private function_4207e678(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe0d17e87, Offset: 0x4c0
 // Size: 0xc8
 function function_3a03717(localclientnum) {
@@ -72,7 +72,7 @@ function function_3a03717(localclientnum) {
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xe9cbdaf1, Offset: 0x590
 // Size: 0xa4
 function private function_a354a47f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -86,7 +86,7 @@ function private function_a354a47f(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xee577042, Offset: 0x640
 // Size: 0x12c
 function private function_5ec9aadb(localclientnum) {
@@ -103,7 +103,7 @@ function private function_5ec9aadb(localclientnum) {
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xfa4fd6ff, Offset: 0x778
 // Size: 0x74
 function private nosferatudamagefx(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -113,7 +113,7 @@ function private nosferatudamagefx(localclientnum, oldvalue, newvalue, bnewent, 
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x639caf5a, Offset: 0x7f8
 // Size: 0x14e
 function function_3468dc45(localclientnum) {
@@ -132,7 +132,7 @@ function function_3468dc45(localclientnum) {
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5ba1fb08, Offset: 0x950
 // Size: 0xc6
 function function_84346679(var_c34665fc) {
@@ -148,7 +148,7 @@ function function_84346679(var_c34665fc) {
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x361133af, Offset: 0xa20
 // Size: 0x8c
 function nosferatu_spawn_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -157,7 +157,7 @@ function nosferatu_spawn_fx(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xac3b1755, Offset: 0xab8
 // Size: 0x14
 function on_entity_shutdown(localclientnum) {

@@ -1,0 +1,23 @@
+{
+    "name": "#hash_23d312e25459b4c9",
+    "baseWeapon": "#hash_23d312e25459b4c9",
+    "streamkey": "#hash_15b41383ed29c8e3",
+    "sound140": "#hash_5e2aeb037633eddf",
+    "sound150": "#hash_5e2aeb037633eddf",
+    "sound180": "#hash_32d8672159d41391",
+    "sound190": "#hash_32d8672159d41391",
+    "sound1c0": "#hash_27a4d0ab98d9af63",
+    "sound1f0": "#hash_27a4d0ab98d9af63",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "sound830": "#hash_36e25fd652fdfac2",
+    "sound840": "#hash_7a5614b91f27d6ca",
+    "tunables1": "#hash_1d94f391fa8",
+    "fx_bc8": "#hash_6d6d720fe18d9609",
+    "fx_bd0": "#hash_6d6d720fe18d9609",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "image_cb0": "#hind_reticle",
+    "rumble_dc0": "#minigun_rumble",
+    "underwaterExplosionSurfaceFX": []
+}

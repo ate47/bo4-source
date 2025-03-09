@@ -7,90 +7,90 @@
 // Method(s) 15 Total 22
 class cluielemtext : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cluielemtext/luielemtext
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x86ad5162, Offset: 0xb68
     // Size: 0x3c
     function set_horizontal_alignment(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "horizontal_alignment", value);
+        player clientfield::function_9bf78ef8(_uid, "horizontal_alignment", value);
     }
 
     // Namespace cluielemtext/luielemtext
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xf3351ec2, Offset: 0xb20
     // Size: 0x3c
     function set_text(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "text", value);
+        player clientfield::function_9bf78ef8(_uid, "text", value);
     }
 
     // Namespace cluielemtext/luielemtext
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x1f70e891, Offset: 0xad8
     // Size: 0x3c
     function set_blue(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "blue", value);
+        player clientfield::function_9bf78ef8(_uid, "blue", value);
     }
 
     // Namespace cluielemtext/luielemtext
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xb2ec60a3, Offset: 0xa90
     // Size: 0x3c
     function set_green(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "green", value);
+        player clientfield::function_9bf78ef8(_uid, "green", value);
     }
 
     // Namespace cluielemtext/luielemtext
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xc851ca97, Offset: 0xa48
     // Size: 0x3c
     function set_red(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "red", value);
+        player clientfield::function_9bf78ef8(_uid, "red", value);
     }
 
     // Namespace cluielemtext/luielemtext
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xa694fd16, Offset: 0xa00
     // Size: 0x3c
     function set_alpha(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "alpha", value);
+        player clientfield::function_9bf78ef8(_uid, "alpha", value);
     }
 
     // Namespace cluielemtext/luielemtext
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x306b53cc, Offset: 0x9b8
     // Size: 0x3c
     function set_fadeovertime(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "fadeOverTime", value);
+        player clientfield::function_9bf78ef8(_uid, "fadeOverTime", value);
     }
 
     // Namespace cluielemtext/luielemtext
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x88d3b37a, Offset: 0x970
     // Size: 0x3c
     function set_height(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "height", value);
+        player clientfield::function_9bf78ef8(_uid, "height", value);
     }
 
     // Namespace cluielemtext/luielemtext
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x1a55e49e, Offset: 0x928
     // Size: 0x3c
     function set_y(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "y", value);
+        player clientfield::function_9bf78ef8(_uid, "y", value);
     }
 
     // Namespace cluielemtext/luielemtext
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xadb407bc, Offset: 0x8e0
     // Size: 0x3c
     function set_x(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "x", value);
+        player clientfield::function_9bf78ef8(_uid, "x", value);
     }
 
     // Namespace cluielemtext/luielemtext
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x8cfd21cc, Offset: 0x8b0
     // Size: 0x24
     function close(player) {
@@ -98,7 +98,7 @@ class cluielemtext : cluielem {
     }
 
     // Namespace cluielemtext/luielemtext
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x4754aad2, Offset: 0x860
     // Size: 0x44
     function open(player, persistent = 0) {
@@ -106,7 +106,7 @@ class cluielemtext : cluielem {
     }
 
     // Namespace cluielemtext/luielemtext
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xf758a3a7, Offset: 0x6a0
     // Size: 0x1b4
     function setup_clientfields(uid) {
@@ -136,7 +136,7 @@ function set_color(player, red, green, blue) {
 }
 
 // Namespace luielemtext/luielemtext
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x96c0e923, Offset: 0x1a0
 // Size: 0x7c
 function fade(player, var_1a92607f, duration = 0) {
@@ -161,7 +161,7 @@ function hide(player, duration = 0) {
 }
 
 // Namespace luielemtext/luielemtext
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3e49abe2, Offset: 0x2c0
 // Size: 0x4c
 function function_e5898fd7(player, var_c6572d9b) {
@@ -169,7 +169,7 @@ function function_e5898fd7(player, var_c6572d9b) {
 }
 
 // Namespace luielemtext/luielemtext
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x23f2a554, Offset: 0x318
 // Size: 0x4c
 function function_58a135d3(player, var_d390c80e) {
@@ -220,7 +220,7 @@ function is_open(player) {
 }
 
 // Namespace luielemtext/luielemtext
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2dc1344f, Offset: 0x4a0
 // Size: 0x28
 function set_x(player, value) {
@@ -228,7 +228,7 @@ function set_x(player, value) {
 }
 
 // Namespace luielemtext/luielemtext
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x58e62611, Offset: 0x4d0
 // Size: 0x28
 function set_y(player, value) {
@@ -244,7 +244,7 @@ function set_height(player, value) {
 }
 
 // Namespace luielemtext/luielemtext
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4f302cbd, Offset: 0x530
 // Size: 0x28
 function set_fadeovertime(player, value) {
@@ -252,7 +252,7 @@ function set_fadeovertime(player, value) {
 }
 
 // Namespace luielemtext/luielemtext
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x37ea2fa8, Offset: 0x560
 // Size: 0x28
 function set_alpha(player, value) {
@@ -260,7 +260,7 @@ function set_alpha(player, value) {
 }
 
 // Namespace luielemtext/luielemtext
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x68f834fb, Offset: 0x590
 // Size: 0x28
 function set_red(player, value) {
@@ -268,7 +268,7 @@ function set_red(player, value) {
 }
 
 // Namespace luielemtext/luielemtext
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6c9486a5, Offset: 0x5c0
 // Size: 0x28
 function set_green(player, value) {
@@ -276,7 +276,7 @@ function set_green(player, value) {
 }
 
 // Namespace luielemtext/luielemtext
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x36e08a6d, Offset: 0x5f0
 // Size: 0x28
 function set_blue(player, value) {

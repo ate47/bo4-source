@@ -3,5 +3,5 @@
     "name": "specialist_healing_enabled",
     "displayname": "#hash_131c7d8c7d2e9b69",
     "setting": "specialistHealingEnabled_allies_1",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

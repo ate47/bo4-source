@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2ebafa7b, Offset: 0x1c8
 // Size: 0x134
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xed4242f, Offset: 0x308
 // Size: 0xbc
 function private function_190ae9a1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -35,7 +35,7 @@ function private function_190ae9a1(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xcb9dfc58, Offset: 0x3d0
 // Size: 0x8c
 function function_87dc06ae(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -48,7 +48,7 @@ function function_87dc06ae(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa6d379d8, Offset: 0x468
 // Size: 0x242
 function function_2d6416dc(localclientnum) {
@@ -85,7 +85,7 @@ function function_2d6416dc(localclientnum) {
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1eab2c20, Offset: 0x6b8
 // Size: 0x7e
 function function_a6907b54(localclientnum) {

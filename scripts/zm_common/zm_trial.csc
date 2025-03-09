@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial/zm_trial
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x596e2587, Offset: 0x128
 // Size: 0x3c
 function __init__() {
@@ -42,7 +42,7 @@ function function_d02ffd(name) {
 }
 
 // Namespace zm_trial/zm_trial
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7b244b22, Offset: 0x208
 // Size: 0x48
 function function_ce2fdd3b(index) {
@@ -53,7 +53,7 @@ function function_ce2fdd3b(index) {
 }
 
 // Namespace zm_trial/zm_trial
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb724b7ce, Offset: 0x258
 // Size: 0x12
 function is_trial_mode() {
@@ -61,7 +61,7 @@ function is_trial_mode() {
 }
 
 // Namespace zm_trial/zm_trial
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe483c3bf, Offset: 0x278
 // Size: 0xbe
 function register_challenge(name, var_c5dd8620, var_bbcdbff5) {
@@ -74,7 +74,7 @@ function register_challenge(name, var_c5dd8620, var_bbcdbff5) {
 }
 
 // Namespace zm_trial/zm_trial
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9626df02, Offset: 0x340
 // Size: 0xb4
 function function_a36e8c38(name) {
@@ -89,7 +89,7 @@ function function_a36e8c38(name) {
 }
 
 // Namespace zm_trial/zm_trial
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xc4f186e3, Offset: 0x400
 // Size: 0x49e
 function private function_4dbf2663() {

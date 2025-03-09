@@ -4,8 +4,8 @@
 #namespace zm_audio_sq;
 
 // Namespace zm_audio_sq/zm_audio_sq
-// Params 0, eflags: 0x1 linked
-// Checksum 0xb7c7cc85, Offset: 0xa0
+// Params 0, eflags: 0x0
+// Checksum 0x6674703f, Offset: 0xa0
 // Size: 0x7a
 function init() {
     clientfield::register("scriptmover", "medallion_fx", 1, 1, "int", &function_6624b679, 0, 0);
@@ -13,8 +13,8 @@ function init() {
 }
 
 // Namespace zm_audio_sq/zm_audio_sq
-// Params 7, eflags: 0x1 linked
-// Checksum 0x627a9753, Offset: 0x128
+// Params 7, eflags: 0x0
+// Checksum 0x3606fccf, Offset: 0x128
 // Size: 0x10c
 function function_6624b679(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {

@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_powerup_nuke/zm_powerup_nuke
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x30a9902d, Offset: 0x108
 // Size: 0xc4
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_powerup_nuke/zm_powerup_nuke
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x799bd9f7, Offset: 0x1d8
 // Size: 0x54
 function zombie_nuked(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

@@ -1,7 +1,7 @@
 {
     "talents": [
         {
-            "talent": "#hash_2d0972cc34c8d313"
+            "talent": "#talent_deadsilence_wz"
         }
     ],
     "amount": 1,
@@ -20,7 +20,7 @@
     "modelscale": 1,
     "rarity": "None",
     "equipsound": "uin_wz_perk_deadsilence",
-    "var_38f854e5": 1,
+    "hash_38f854e5": 1,
     "handler": "#generic_pickup",
     "itemtype": "generic"
 }

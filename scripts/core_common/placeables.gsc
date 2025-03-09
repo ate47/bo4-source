@@ -8,7 +8,7 @@
 #namespace placeables;
 
 // Namespace placeables/placeables
-// Params 20, eflags: 0x1 linked
+// Params 20, eflags: 0x0
 // Checksum 0x253bebb4, Offset: 0x110
 // Size: 0x4e0
 function spawnplaceable(onplacecallback, oncancelcallback, onmovecallback, onshutdowncallback, ondeathcallback, onempcallback, ondamagecallback, var_d0dd7e76, model, validmodel, invalidmodel, spawnsvehicle, pickupstring, timeout, health, empdamage, placehintstring, invalidlocationhintstring, placeimmediately = 0, var_c71994b5 = undefined) {
@@ -70,7 +70,7 @@ function spawnplaceable(onplacecallback, oncancelcallback, onmovecallback, onshu
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb3b98ee8, Offset: 0x5f8
 // Size: 0x104
 function function_e4fd9a4c(placeable) {
@@ -90,7 +90,7 @@ function function_e4fd9a4c(placeable) {
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4c80875e, Offset: 0x708
 // Size: 0x7c
 function function_df4e6283(placeable) {
@@ -154,7 +154,7 @@ function function_f872b831(onplacecallback, oncancelcallback, onmovecallback, on
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdafb13f5, Offset: 0xac8
 // Size: 0x26a
 function function_b7fcffdd(placeable) {
@@ -205,7 +205,7 @@ function updateplacementmodels(model, validmodel, invalidmodel) {
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdb80b05a, Offset: 0xda8
 // Size: 0x174
 function carryplaceable(placeable) {
@@ -228,7 +228,7 @@ function carryplaceable(placeable) {
 }
 
 // Namespace placeables/placeables
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1022f170, Offset: 0xf28
 // Size: 0xf6
 function innoplacementtrigger() {
@@ -254,7 +254,7 @@ function innoplacementtrigger() {
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc358b60c, Offset: 0x1028
 // Size: 0x170
 function waitforplaceabletobebuilt(player) {
@@ -303,7 +303,7 @@ function function_e679057e() {
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x84e1d0a, Offset: 0x11f8
 // Size: 0x75e
 function watchplacement(placeable) {
@@ -408,7 +408,7 @@ function function_613a226a(allow_alt) {
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7e20c740, Offset: 0x1988
 // Size: 0xd8
 function watchcarrycancelevents(placeable) {
@@ -420,7 +420,7 @@ function watchcarrycancelevents(placeable) {
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe91f2a1d, Offset: 0x1a68
 // Size: 0x222
 function function_e222876f(placeable) {
@@ -445,7 +445,7 @@ function function_e222876f(placeable) {
 }
 
 // Namespace placeables/placeables
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x44437446, Offset: 0x1c98
 // Size: 0x8c
 function ontimeout() {
@@ -459,7 +459,7 @@ function ontimeout() {
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9e8e4479, Offset: 0x1d30
 // Size: 0xf0
 function onplace(placeable) {
@@ -479,7 +479,7 @@ function onplace(placeable) {
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x260524e0, Offset: 0x1e28
 // Size: 0xdc
 function onmove(placeable) {
@@ -497,7 +497,7 @@ function onmove(placeable) {
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb688e55c, Offset: 0x1f10
 // Size: 0x5c
 function oncancel(placeable) {
@@ -509,7 +509,7 @@ function oncancel(placeable) {
 }
 
 // Namespace placeables/placeables
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4056f4c6, Offset: 0x1f78
 // Size: 0x60
 function ondeath(attacker, weapon) {
@@ -521,7 +521,7 @@ function ondeath(attacker, weapon) {
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8da7b11e, Offset: 0x1fe0
 // Size: 0x44
 function onemp(attacker) {
@@ -532,7 +532,7 @@ function onemp(attacker) {
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1d1434e3, Offset: 0x2030
 // Size: 0xc0
 function cancelonplayerdisconnect(placeable) {
@@ -545,7 +545,7 @@ function cancelonplayerdisconnect(placeable) {
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc1910e94, Offset: 0x20f8
 // Size: 0x60
 function cancelongameend(placeable) {
@@ -555,7 +555,7 @@ function cancelongameend(placeable) {
 }
 
 // Namespace placeables/placeables
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe6f0f1e2, Offset: 0x2160
 // Size: 0x12c
 function spawnmovetrigger(placeable, player) {
@@ -570,7 +570,7 @@ function spawnmovetrigger(placeable, player) {
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9203c044, Offset: 0x2298
 // Size: 0x8c
 function watchmovetriggershutdown(placeable) {
@@ -580,7 +580,7 @@ function watchmovetriggershutdown(placeable) {
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7d879943, Offset: 0x2330
 // Size: 0x32a
 function watchpickup(player) {
@@ -626,7 +626,7 @@ function watchpickup(player) {
 }
 
 // Namespace placeables/placeables
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x509b9ffc, Offset: 0x2668
 // Size: 0x30
 function forceshutdown() {
@@ -636,7 +636,7 @@ function forceshutdown() {
 }
 
 // Namespace placeables/placeables
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x924be028, Offset: 0x26a0
 // Size: 0xb4
 function watchownergameevents() {
@@ -652,7 +652,7 @@ function watchownergameevents() {
 }
 
 // Namespace placeables/placeables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd9417ea0, Offset: 0x2760
 // Size: 0x3f4
 function shutdownoncancelevent(placeable) {

@@ -5,7 +5,7 @@
 
 // Namespace zombieinterface/archetype_zombie_interface
 // Params 0, eflags: 0x0
-// Checksum 0xe7831023, Offset: 0x88
+// Checksum 0x64a5545d, Offset: 0x88
 // Size: 0x18c
 function registerzombieinterfaceattributes() {
     ai::registermatchedinterface(#"zombie", #"can_juke", 0, array(1, 0));

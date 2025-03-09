@@ -97,7 +97,7 @@ version 32 {
     // offset 0x6f8, size 0x20
     float music_scale;
     // offset 0x718, size 0x20
-    float hash_6223c48b02c476f3;
+    float mouse_filter;
     // offset 0x738, size 0x20
     float hash_c33472150c59327;
     // offset 0x758, size 0x20
@@ -127,7 +127,7 @@ version 32 {
     // offset 0x938, size 0x400
     string(128) voice_input_device;
     // offset 0xd38, size 0x20
-    int hash_3c743995018d880;
+    int shader_warming;
     // offset 0xd58, size 0x20
     int display_gamma;
     // offset 0xd78, size 0xc0

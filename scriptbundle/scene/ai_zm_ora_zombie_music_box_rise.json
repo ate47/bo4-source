@@ -37,7 +37,7 @@
             "type": "actor",
             "delaymovementatend": 1,
             "deletewhenfinished": 1,
-            "var_615b1f16": 1,
+            "usefakeactor": 1,
             "name": "zombie_eaten"
         }
     ],

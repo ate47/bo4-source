@@ -173,9 +173,9 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 2",
-            "var_be60a82b": -10,
-            "var_922b4fc5": -1,
-            "var_3e692842": 4
+            "hash_be60a82b": -10,
+            "hash_922b4fc5": -1,
+            "hash_3e692842": 4
         },
         {
             "shots": [
@@ -220,9 +220,9 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 3",
-            "var_be60a82b": -9,
-            "var_922b4fc5": 9,
-            "var_3e692842": -14
+            "hash_be60a82b": -9,
+            "hash_922b4fc5": 9,
+            "hash_3e692842": -14
         },
         {
             "shots": [
@@ -267,9 +267,9 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 4",
-            "var_be60a82b": -11,
-            "var_922b4fc5": -18,
-            "var_3e692842": 9
+            "hash_be60a82b": -11,
+            "hash_922b4fc5": -18,
+            "hash_3e692842": 9
         },
         {
             "shots": [
@@ -314,9 +314,9 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 7",
-            "var_be60a82b": -8,
-            "var_922b4fc5": 1,
-            "var_3e692842": -25
+            "hash_be60a82b": -8,
+            "hash_922b4fc5": 1,
+            "hash_3e692842": -25
         },
         {
             "shots": [
@@ -361,9 +361,9 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 8",
-            "var_be60a82b": -8,
-            "var_922b4fc5": 22,
-            "var_3e692842": 31
+            "hash_be60a82b": -8,
+            "hash_922b4fc5": 22,
+            "hash_3e692842": 31
         },
         {
             "shots": [
@@ -408,9 +408,9 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 9",
-            "var_be60a82b": -9,
-            "var_922b4fc5": 5,
-            "var_3e692842": -54
+            "hash_be60a82b": -9,
+            "hash_922b4fc5": 5,
+            "hash_3e692842": -54
         },
         {
             "shots": [
@@ -455,9 +455,9 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 11",
-            "var_be60a82b": -11,
-            "var_922b4fc5": -17,
-            "var_3e692842": -84
+            "hash_be60a82b": -11,
+            "hash_922b4fc5": -17,
+            "hash_3e692842": -84
         },
         {
             "shots": [
@@ -502,9 +502,9 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 12",
-            "var_be60a82b": -3,
-            "var_922b4fc5": 44,
-            "var_3e692842": 39
+            "hash_be60a82b": -3,
+            "hash_922b4fc5": 44,
+            "hash_3e692842": 39
         },
         {
             "shots": [
@@ -549,9 +549,9 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 13",
-            "var_be60a82b": -17,
-            "var_922b4fc5": 31,
-            "var_3e692842": 8
+            "hash_be60a82b": -17,
+            "hash_922b4fc5": 31,
+            "hash_3e692842": 8
         },
         {
             "shots": [
@@ -596,9 +596,9 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 14",
-            "var_be60a82b": -1,
-            "var_922b4fc5": -3,
-            "var_3e692842": 61
+            "hash_be60a82b": -1,
+            "hash_922b4fc5": -3,
+            "hash_3e692842": 61
         },
         {
             "shots": [
@@ -643,8 +643,8 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 15",
-            "var_922b4fc5": 49,
-            "var_3e692842": 46
+            "hash_922b4fc5": 49,
+            "hash_3e692842": 46
         },
         {
             "shots": [
@@ -689,9 +689,9 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 16",
-            "var_be60a82b": -6,
-            "var_922b4fc5": 33,
-            "var_3e692842": -22
+            "hash_be60a82b": -6,
+            "hash_922b4fc5": 33,
+            "hash_3e692842": -22
         },
         {
             "shots": [
@@ -736,9 +736,9 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 17",
-            "var_be60a82b": -6,
-            "var_922b4fc5": 15,
-            "var_3e692842": -40
+            "hash_be60a82b": -6,
+            "hash_922b4fc5": 15,
+            "hash_3e692842": -40
         },
         {
             "shots": [

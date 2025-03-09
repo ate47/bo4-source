@@ -14,15 +14,15 @@
 
 // Namespace wz_fishing/wz_fishing
 // Params 0, eflags: 0x2
-// Checksum 0xcb7e7835, Offset: 0x2d8
+// Checksum 0x2ef18989, Offset: 0x2d8
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"wz_fishing", &__init__, undefined, undefined);
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 0, eflags: 0x1 linked
-// Checksum 0x909e9dd, Offset: 0x320
+// Params 0, eflags: 0x0
+// Checksum 0x1df1d05e, Offset: 0x320
 // Size: 0x378
 function __init__() {
     level.var_99ca6467 = (isdefined(getgametypesetting(#"hash_697d65a68cc6c6f1")) ? getgametypesetting(#"hash_697d65a68cc6c6f1") : 0) || (isdefined(getgametypesetting(#"hash_473fee16f796c84e")) ? getgametypesetting(#"hash_473fee16f796c84e") : 0);
@@ -52,55 +52,55 @@ function __init__() {
         return;
     }
     foreach (rock in fishing_rocks) {
-        function_e2a06860(rock, 2);
+        setdynentstate(rock, 2);
     }
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 1, eflags: 0x1 linked
-// Checksum 0xcbf612, Offset: 0x6a0
+// Params 1, eflags: 0x0
+// Checksum 0xde768295, Offset: 0x6a0
 // Size: 0x110
 function function_57232538(s_item) {
     fishing_rocks = getdynentarray("fishing_rock");
     foreach (rock in fishing_rocks) {
         if (isplayer(rock.fisherman) && rock.fisherman == self && isdefined(rock.isfishing) && rock.isfishing) {
-            self function_7c685040();
+            self stopallboasts();
             self function_ed446f40(rock);
         }
     }
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 0, eflags: 0x1 linked
-// Checksum 0x3e48387f, Offset: 0x7b8
+// Params 0, eflags: 0x0
+// Checksum 0xe77fb485, Offset: 0x7b8
 // Size: 0xf8
 function function_7bf61c45() {
     fishing_rocks = getdynentarray("fishing_rock");
     foreach (rock in fishing_rocks) {
         if (rock.isfishing && isplayer(rock.fisherman) && rock.fisherman === self) {
-            self function_7c685040();
+            self stopallboasts();
             self function_ed446f40(rock);
         }
     }
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 0, eflags: 0x1 linked
-// Checksum 0x3315385f, Offset: 0x8b8
+// Params 0, eflags: 0x0
+// Checksum 0x17b3f258, Offset: 0x8b8
 // Size: 0xf8
 function function_e2877ac6() {
     fishing_rocks = getdynentarray("fishing_rock");
     foreach (rock in fishing_rocks) {
         if (rock.isfishing && isplayer(rock.fisherman) && rock.fisherman === self) {
-            self function_7c685040();
+            self stopallboasts();
             self function_ed446f40(rock);
         }
     }
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 0, eflags: 0x1 linked
-// Checksum 0x6c0abf78, Offset: 0x9b8
+// Params 0, eflags: 0x0
+// Checksum 0xfb3647a5, Offset: 0x9b8
 // Size: 0x148
 function function_c0cfa434() {
     level endon(#"game_ended");
@@ -109,27 +109,27 @@ function function_c0cfa434() {
     foreach (rock in fishing_rocks) {
         if (rock.isfishing && isplayer(rock.fisherman)) {
             rock.fisherman notify(#"hash_61bb9580151c93d5");
-            rock.fisherman function_7c685040();
+            rock.fisherman stopallboasts();
             rock.fisherman function_ed446f40(rock);
         }
     }
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 1, eflags: 0x1 linked
-// Checksum 0x38b036a3, Offset: 0xb08
+// Params 1, eflags: 0x0
+// Checksum 0xdaddb8d8, Offset: 0xb08
 // Size: 0x6c
 function function_12747006(boast) {
     if (self util::is_female()) {
-        self function_c6775cf9("f_" + boast);
+        self playboast("f_" + boast);
         return;
     }
-    self function_c6775cf9("m_" + boast);
+    self playboast("m_" + boast);
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 1, eflags: 0x1 linked
-// Checksum 0x5434957c, Offset: 0xb80
+// Params 1, eflags: 0x0
+// Checksum 0xbafc28b2, Offset: 0xb80
 // Size: 0xb6
 function function_e1cd5954(v_origin) {
     self notify("58ed1cc25dba79a1");
@@ -142,8 +142,8 @@ function function_e1cd5954(v_origin) {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 4, eflags: 0x1 linked
-// Checksum 0xdf3130cb, Offset: 0xc40
+// Params 4, eflags: 0x0
+// Checksum 0x44f162fe, Offset: 0xc40
 // Size: 0xe0
 function fake_physicslaunch(start_pos, target_pos, power, var_b37bfb00) {
     self notify("734213b674966fed");
@@ -158,8 +158,8 @@ function fake_physicslaunch(start_pos, target_pos, power, var_b37bfb00) {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 0, eflags: 0x1 linked
-// Checksum 0x69996141, Offset: 0xd28
+// Params 0, eflags: 0x0
+// Checksum 0xc8a0d5f2, Offset: 0xd28
 // Size: 0x6c
 function fishing_buoy_splash() {
     self notify("affb149f13915ab");
@@ -170,8 +170,8 @@ function fishing_buoy_splash() {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 0, eflags: 0x1 linked
-// Checksum 0xe98e7eb0, Offset: 0xda0
+// Params 0, eflags: 0x0
+// Checksum 0xbf873d2f, Offset: 0xda0
 // Size: 0x6c
 function fishing_splash() {
     self notify("23dba81fc67053dc");
@@ -182,8 +182,8 @@ function fishing_splash() {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 3, eflags: 0x1 linked
-// Checksum 0xc47c5db4, Offset: 0xe18
+// Params 3, eflags: 0x0
+// Checksum 0xd3894c71, Offset: 0xe18
 // Size: 0x166
 function function_7a1e21a9(fishing_rock, v_origin, player) {
     self notify("47f64769ffeb67ce");
@@ -206,8 +206,8 @@ function function_7a1e21a9(fishing_rock, v_origin, player) {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 1, eflags: 0x1 linked
-// Checksum 0x78d413ce, Offset: 0xf88
+// Params 1, eflags: 0x0
+// Checksum 0xc8ae2935, Offset: 0xf88
 // Size: 0x13c
 function function_e8c63c15(player) {
     self notify("148aaf4bd55078f9");
@@ -232,8 +232,8 @@ function function_e8c63c15(player) {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 3, eflags: 0x1 linked
-// Checksum 0x29e6b4d2, Offset: 0x10d0
+// Params 3, eflags: 0x0
+// Checksum 0x94fdc4ad, Offset: 0x10d0
 // Size: 0xfc
 function function_4cfd3896(activator, laststate, state) {
     if (isdefined(self.isfishing) && self.isfishing) {
@@ -257,8 +257,8 @@ function function_4cfd3896(activator, laststate, state) {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 1, eflags: 0x1 linked
-// Checksum 0x89c2c13d, Offset: 0x11d8
+// Params 1, eflags: 0x0
+// Checksum 0x6be0713f, Offset: 0x11d8
 // Size: 0xa4
 function function_ee4ce537(dynent) {
     self endon(#"death", #"hash_21d06dbd3684fc31");
@@ -275,8 +275,8 @@ function function_ee4ce537(dynent) {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 1, eflags: 0x1 linked
-// Checksum 0xbc2931d5, Offset: 0x1288
+// Params 1, eflags: 0x0
+// Checksum 0x46c2e70f, Offset: 0x1288
 // Size: 0x394
 function function_6c71782a(dynent) {
     self notify("48d65f5f22c36da2");
@@ -301,7 +301,7 @@ function function_6c71782a(dynent) {
     var_9f816ad8 = vectortoangles(var_9f816ad8);
     self setplayerangles(var_9f816ad8);
     dynent.buoy.origin = self.origin;
-    self function_7c685040();
+    self stopallboasts();
     self function_12747006("fishing_in");
     self clientfield::set_to_player("player_fishing", 1);
     self thread function_ee4ce537(dynent);
@@ -322,8 +322,8 @@ function function_6c71782a(dynent) {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 2, eflags: 0x1 linked
-// Checksum 0x9389ae14, Offset: 0x1628
+// Params 2, eflags: 0x0
+// Checksum 0x33ec8caf, Offset: 0x1628
 // Size: 0x62
 function function_8e8c4fef(time, pos) {
     self notify("230f045151c08d1e");
@@ -334,8 +334,8 @@ function function_8e8c4fef(time, pos) {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 2, eflags: 0x1 linked
-// Checksum 0xbf53a051, Offset: 0x1698
+// Params 2, eflags: 0x0
+// Checksum 0x671b29fa, Offset: 0x1698
 // Size: 0x208
 function function_b828bd39(player, dynent) {
     self notify("1fa6d3899117f2a");
@@ -371,8 +371,8 @@ function function_b828bd39(player, dynent) {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 1, eflags: 0x1 linked
-// Checksum 0x3cde5503, Offset: 0x18a8
+// Params 1, eflags: 0x0
+// Checksum 0xca7af03f, Offset: 0x18a8
 // Size: 0x152
 function function_16e4e507(dynent) {
     self notify("651631a8d4cdd907");
@@ -400,8 +400,8 @@ function function_16e4e507(dynent) {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 1, eflags: 0x1 linked
-// Checksum 0x8ff065d3, Offset: 0x1a08
+// Params 1, eflags: 0x0
+// Checksum 0xf9455dbe, Offset: 0x1a08
 // Size: 0x1a2
 function function_ed446f40(dynent) {
     self notify("694f2b46b5345051");
@@ -427,8 +427,8 @@ function function_ed446f40(dynent) {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 1, eflags: 0x1 linked
-// Checksum 0x21b047d5, Offset: 0x1bb8
+// Params 1, eflags: 0x0
+// Checksum 0xea74dcd5, Offset: 0x1bb8
 // Size: 0x142
 function function_176e516(dynent) {
     self notify("110650c21bf60e88");
@@ -450,8 +450,8 @@ function function_176e516(dynent) {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 1, eflags: 0x1 linked
-// Checksum 0x11063ad4, Offset: 0x1d08
+// Params 1, eflags: 0x0
+// Checksum 0xe4f31dbd, Offset: 0x1d08
 // Size: 0xd8
 function function_54a3ec41(dynent) {
     self notify("28b87437c2b95c62");
@@ -471,8 +471,8 @@ function function_54a3ec41(dynent) {
 }
 
 // Namespace wz_fishing/wz_fishing
-// Params 0, eflags: 0x1 linked
-// Checksum 0x4d4dafe, Offset: 0x1de8
+// Params 0, eflags: 0x0
+// Checksum 0x5a893b1c, Offset: 0x1de8
 // Size: 0x220
 function function_73532e4f() {
     self notify("76a99663ad9702eb");

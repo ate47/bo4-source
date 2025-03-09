@@ -11,7 +11,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_escape_ffotd_alt/wz_escape_alt_ffotd
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x118
 // Size: 0x4
 function __init__() {
@@ -19,7 +19,7 @@ function __init__() {
 }
 
 // Namespace wz_escape_ffotd_alt/wz_escape_alt_ffotd
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x73da96a8, Offset: 0x128
 // Size: 0xec
 function __main__() {

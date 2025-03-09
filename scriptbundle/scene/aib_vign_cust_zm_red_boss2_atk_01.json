@@ -54,7 +54,7 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "pegasus",
-            "var_2baad8fc": 1,
+            "hash_2baad8fc": 1,
             "allowdeath": 1,
             "takedamage": 1
         }

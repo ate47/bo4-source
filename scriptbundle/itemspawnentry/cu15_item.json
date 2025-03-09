@@ -16,7 +16,7 @@
                 }
             ],
             "description": "#hash_670d71867b3adb47",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "description": "#hash_670d72867b3adcfa"
@@ -24,8 +24,8 @@
     ],
     "description": "#hash_2f656344653b5bf",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 2,
-    "var_e8b98a8a": "#hash_5c22594837a0950a",
+    "hash_eda4062b": 2,
+    "hash_e8b98a8a": "#hash_5c22594837a0950a",
     "model": "#p8_wz_cu_bottle",
     "type": "itemspawnentry",
     "hintstring": "#hash_3a1ebd341ba4f3f8",

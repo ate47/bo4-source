@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_aftertaste/zm_bgb_aftertaste
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x190bd021, Offset: 0xd8
 // Size: 0xbc
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_aftertaste/zm_bgb_aftertaste
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6d299f9e, Offset: 0x1a0
 // Size: 0x8a
 function lost_perk_override(perk, var_a83ac70f = undefined, var_6c1b825d = undefined) {
@@ -38,7 +38,7 @@ function lost_perk_override(perk, var_a83ac70f = undefined, var_6c1b825d = undef
 }
 
 // Namespace zm_bgb_aftertaste/zm_bgb_aftertaste
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd4aca51c, Offset: 0x238
 // Size: 0x84
 function event() {

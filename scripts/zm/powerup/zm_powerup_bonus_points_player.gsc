@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_powerup_bonus_points_player/zm_powerup_bonus_points_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3b2fbe99, Offset: 0x170
 // Size: 0xf4
 function __init__() {
@@ -30,7 +30,7 @@ function __init__() {
 }
 
 // Namespace zm_powerup_bonus_points_player/zm_powerup_bonus_points_player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa874c7e5, Offset: 0x270
 // Size: 0x74
 function grab_bonus_points_player(player) {
@@ -42,7 +42,7 @@ function grab_bonus_points_player(player) {
 }
 
 // Namespace zm_powerup_bonus_points_player/zm_powerup_bonus_points_player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x499c95d7, Offset: 0x2f0
 // Size: 0xc4
 function function_ec014d54(player) {
@@ -57,7 +57,7 @@ function function_ec014d54(player) {
 }
 
 // Namespace zm_powerup_bonus_points_player/zm_powerup_bonus_points_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x113d6d0f, Offset: 0x3c0
 // Size: 0x144
 function bonus_points_player_powerup(item, player) {
@@ -79,7 +79,7 @@ function bonus_points_player_powerup(item, player) {
 }
 
 // Namespace zm_powerup_bonus_points_player/zm_powerup_bonus_points_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd39055f9, Offset: 0x510
 // Size: 0x74
 function function_56784293(item, player) {

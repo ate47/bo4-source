@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_zombshell/zm_perk_mod_zombshell
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6c6294f2, Offset: 0xc0
 // Size: 0x74
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_zombshell/zm_perk_mod_zombshell
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x140
 // Size: 0x4
 function function_793d9032() {
@@ -29,7 +29,7 @@ function function_793d9032() {
 }
 
 // Namespace zm_perk_mod_zombshell/zm_perk_mod_zombshell
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x150
 // Size: 0x4
 function function_5eadb2fd() {
@@ -37,7 +37,7 @@ function function_5eadb2fd() {
 }
 
 // Namespace zm_perk_mod_zombshell/zm_perk_mod_zombshell
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x160
 // Size: 0x4
 function function_fbae967f() {

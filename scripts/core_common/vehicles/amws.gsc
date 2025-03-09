@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7724bfdb, Offset: 0x268
 // Size: 0x34
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x65196629, Offset: 0x2a8
 // Size: 0x2fc
 function amws_initialize() {
@@ -74,7 +74,7 @@ function amws_initialize() {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x85c50e09, Offset: 0x5b0
 // Size: 0x2a4
 function defaultrole() {
@@ -98,7 +98,7 @@ function defaultrole() {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x828bb6ea, Offset: 0x860
 // Size: 0xac
 function state_death_update(params) {
@@ -115,7 +115,7 @@ function state_death_update(params) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe2de9006, Offset: 0x918
 // Size: 0x1ca
 function death_suicide_crash(params) {
@@ -136,7 +136,7 @@ function death_suicide_crash(params) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb00c316d, Offset: 0xaf0
 // Size: 0xf0
 function state_driving_update(params) {
@@ -159,7 +159,7 @@ function state_driving_update(params) {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9f5dc668, Offset: 0xbe8
 // Size: 0x106
 function cobra_raise() {
@@ -179,7 +179,7 @@ function cobra_raise() {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaf490180, Offset: 0xcf8
 // Size: 0xb2
 function cobra_retract() {
@@ -197,7 +197,7 @@ function cobra_retract() {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb91ea950, Offset: 0xdb8
 // Size: 0xfc
 function state_emped_update(params) {
@@ -210,7 +210,7 @@ function state_emped_update(params) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb9c378be, Offset: 0xec0
 // Size: 0x44
 function state_stationary_enter(params) {
@@ -220,7 +220,7 @@ function state_stationary_enter(params) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x976c9e0e, Offset: 0xf10
 // Size: 0x4dc
 function state_stationary_update(params) {
@@ -288,7 +288,7 @@ function state_stationary_update(params) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x79b6829d, Offset: 0x13f8
 // Size: 0x24
 function state_stationary_update_wait(wait_time) {
@@ -296,7 +296,7 @@ function state_stationary_update_wait(wait_time) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf21d6b22, Offset: 0x1428
 // Size: 0x64
 function state_stationary_exit(params) {
@@ -307,7 +307,7 @@ function state_stationary_exit(params) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4f55d6e9, Offset: 0x1498
 // Size: 0x24
 function state_combat_enter(params) {
@@ -315,7 +315,7 @@ function state_combat_enter(params) {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7362ab19, Offset: 0x14c8
 // Size: 0x2e
 function is_ai_using_minigun() {
@@ -323,7 +323,7 @@ function is_ai_using_minigun() {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x301cf474, Offset: 0x1500
 // Size: 0x3b0
 function turretfireupdate() {
@@ -377,7 +377,7 @@ function turretfireupdate() {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa1af11da, Offset: 0x18b8
 // Size: 0x7a0
 function state_combat_update(params) {
@@ -486,7 +486,7 @@ function state_combat_update(params) {
 }
 
 // Namespace amws/amws
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9a5b04d8, Offset: 0x2060
 // Size: 0x160
 function function_64609aab(entity, enemy) {
@@ -508,7 +508,7 @@ function function_64609aab(entity, enemy) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5304c34c, Offset: 0x21c8
 // Size: 0xdc
 function aim_and_fire_rocket_launcher(aim_time) {
@@ -524,7 +524,7 @@ function aim_and_fire_rocket_launcher(aim_time) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4910013, Offset: 0x22b0
 // Size: 0x24
 function state_combat_update_wait(wait_time) {
@@ -532,7 +532,7 @@ function state_combat_update_wait(wait_time) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3ef5ad6, Offset: 0x22e0
 // Size: 0x1c4
 function waittill_weapon_lock_or_timeout(wait_time) {
@@ -562,7 +562,7 @@ function waittill_weapon_lock_or_timeout(wait_time) {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcc25ca2, Offset: 0x24b0
 // Size: 0x74
 function wait_evasion_reaction_time() {
@@ -570,7 +570,7 @@ function wait_evasion_reaction_time() {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x834f6613, Offset: 0x2530
 // Size: 0x104
 function firerocketlauncher(enemy) {
@@ -590,7 +590,7 @@ function firerocketlauncher(enemy) {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1f8ce197, Offset: 0x2640
 // Size: 0x306
 function getnextmoveposition_wander() {
@@ -641,7 +641,7 @@ function getnextmoveposition_wander() {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbc0e1905, Offset: 0x2950
 // Size: 0xa22
 function getnextmoveposition_evasive(client_flags) {
@@ -756,7 +756,7 @@ function getnextmoveposition_evasive(client_flags) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x65795b1a, Offset: 0x3380
 // Size: 0xc02
 function getnextmoveposition_tactical(enemy) {
@@ -903,7 +903,7 @@ function getnextmoveposition_tactical(enemy) {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2868d87e, Offset: 0x3f90
 // Size: 0x126
 function path_update_interrupt_by_attacker() {
@@ -927,7 +927,7 @@ function path_update_interrupt_by_attacker() {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5c735f9d, Offset: 0x40c0
 // Size: 0x224
 function path_update_interrupt() {
@@ -968,7 +968,7 @@ function gib(attacker) {
 }
 
 // Namespace amws/amws
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0x8f2dd5fb, Offset: 0x4380
 // Size: 0xd2
 function drone_callback_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {

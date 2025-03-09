@@ -1,15 +1,15 @@
 {
-    "var_d58bd0e9": "#hash_7d4d96c3254a72e9",
-    "var_67b4a761": "#hash_7d4d96c3254a72e9",
-    "var_2ecceeab": "#deployable_cover_kill",
+    "hash_d58bd0e9": "#hash_7d4d96c3254a72e9",
+    "hash_67b4a761": "#hash_7d4d96c3254a72e9",
+    "hash_2ecceeab": "#deployable_cover_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
-    "var_1253685d": "#hash_2a95c5fc91493e59",
+    "hash_1253685d": "#hash_2a95c5fc91493e59",
     "vmtype": "both",
-    "var_16abf654": "#hash_7d4d96c3254a72e9",
+    "hash_16abf654": "#hash_7d4d96c3254a72e9",
     "name": "gadget_smart_cover_scoreevents",
-    "var_e1b418c1": "ability",
-    "var_1b8b6771": "#hash_7d4d96c3254a72e9",
-    "var_3143c814": "#deployable_cover_shutdown",
-    "var_6643c0a0": "#hash_7d4d96c3254a72e9"
+    "customsettingstype": "ability",
+    "hash_1b8b6771": "#hash_7d4d96c3254a72e9",
+    "hash_3143c814": "#deployable_cover_shutdown",
+    "hash_6643c0a0": "#hash_7d4d96c3254a72e9"
 }

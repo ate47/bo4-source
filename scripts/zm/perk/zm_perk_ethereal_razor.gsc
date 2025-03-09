@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x91d0a9e6, Offset: 0x1b0
 // Size: 0x14
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf0a0ed45, Offset: 0x1d0
 // Size: 0x254
 function enable_ethereal_razor_perk_for_level() {
@@ -45,7 +45,7 @@ function enable_ethereal_razor_perk_for_level() {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa08c2a75, Offset: 0x430
 // Size: 0x1c
 function on_spawned() {
@@ -53,7 +53,7 @@ function on_spawned() {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe476b1f, Offset: 0x458
 // Size: 0x10e
 function function_ee114cab() {
@@ -69,7 +69,7 @@ function function_ee114cab() {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd6a427ab, Offset: 0x570
 // Size: 0xc4
 function function_f20b4260() {
@@ -79,7 +79,7 @@ function function_f20b4260() {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3ca09178, Offset: 0x640
 // Size: 0xc
 function function_f3043027(state) {
@@ -87,7 +87,7 @@ function function_f3043027(state) {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xefe8e0c0, Offset: 0x658
 // Size: 0x9c
 function function_c38b0ce4() {
@@ -99,7 +99,7 @@ function function_c38b0ce4() {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x18b87ec7, Offset: 0x700
 // Size: 0x94
 function function_6cedb75c(b_pause, str_perk, str_result, n_slot) {
@@ -110,7 +110,7 @@ function function_6cedb75c(b_pause, str_perk, str_result, n_slot) {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe1cfb5fe, Offset: 0x7a0
 // Size: 0x1a8
 function function_f86e4c3d() {
@@ -135,7 +135,7 @@ function function_f86e4c3d() {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x9d3737d8, Offset: 0x950
 // Size: 0x5bc
 function function_1f7c6bb9(w_melee, var_2b9d3880, var_48e9b3cc, is_lunge = 0) {
@@ -179,7 +179,7 @@ function function_1f7c6bb9(w_melee, var_2b9d3880, var_48e9b3cc, is_lunge = 0) {
             n_total_damage = n_base_damage + w_melee.meleedamage;
         }
         if (is_lunge) {
-            if (self hasperk(#"specialty_mod_etherealrazor") && (e_target.var_6f84b820 === #"basic" || e_target.var_6f84b820 === #"popcorn" || e_target.var_6f84b820 === #"enhanced")) {
+            if (self hasperk(#"specialty_mod_etherealrazor") && (e_target.zm_ai_category === #"basic" || e_target.zm_ai_category === #"popcorn" || e_target.zm_ai_category === #"enhanced")) {
                 n_total_damage = e_target.health + 666;
             } else if (self hasperk(#"specialty_mod_etherealrazor")) {
                 n_total_damage += 4000;
@@ -207,7 +207,7 @@ function function_1f7c6bb9(w_melee, var_2b9d3880, var_48e9b3cc, is_lunge = 0) {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x64a05af, Offset: 0xf18
 // Size: 0x16
 function function_5b0f2cc5() {
@@ -216,7 +216,7 @@ function function_5b0f2cc5() {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2c217614, Offset: 0xf38
 // Size: 0xfc
 function function_fa63958c() {
@@ -233,7 +233,7 @@ function function_fa63958c() {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf7dfc48c, Offset: 0x1040
 // Size: 0xae
 function function_866130c7(w_melee) {
@@ -244,7 +244,7 @@ function function_866130c7(w_melee) {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe3a9be9d, Offset: 0x10f8
 // Size: 0x4a
 function function_da33f286() {
@@ -255,7 +255,7 @@ function function_da33f286() {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa82b937a, Offset: 0x1150
 // Size: 0x152
 function on_ai_killed(s_params) {
@@ -275,7 +275,7 @@ function on_ai_killed(s_params) {
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfb4c52bc, Offset: 0x12b0
 // Size: 0xe2
 function on_ai_damage(s_params) {

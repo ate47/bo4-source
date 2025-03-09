@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace perks/perks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6630d629, Offset: 0x2a8
 // Size: 0x40c
 function __init__() {
@@ -91,7 +91,7 @@ function updatesitrepscan() {
 #/
 
 // Namespace perks/perks
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb5fe8fb7, Offset: 0xb00
 // Size: 0x4a
 function flying_callback(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -99,7 +99,7 @@ function flying_callback(local_client_num, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace perks/perks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc7be1251, Offset: 0xb58
 // Size: 0x12c
 function on_local_client_connect(local_client_num) {
@@ -115,7 +115,7 @@ function on_local_client_connect(local_client_num) {
 }
 
 // Namespace perks/perks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe820a633, Offset: 0xc90
 // Size: 0x26
 function on_localplayer_spawned(local_client_num) {
@@ -125,7 +125,7 @@ function on_localplayer_spawned(local_client_num) {
 }
 
 // Namespace perks/perks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3e5cf87d, Offset: 0xcc0
 // Size: 0x86
 function on_gameplay_started(local_client_num) {
@@ -140,7 +140,7 @@ function on_gameplay_started(local_client_num) {
 }
 
 // Namespace perks/perks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x921aeedd, Offset: 0xd50
 // Size: 0x74
 function function_92725cf9(local_client_num) {
@@ -155,7 +155,7 @@ function function_92725cf9(local_client_num) {
 }
 
 // Namespace perks/perks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x40567d76, Offset: 0xdd0
 // Size: 0x6c
 function on_player_spawned(local_client_num) {
@@ -227,7 +227,7 @@ function get_players(local_client_num) {
 }
 
 // Namespace perks/perks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa1d4fe47, Offset: 0x10d0
 // Size: 0xf6
 function monitor_tracker_existing_players(local_client_num) {
@@ -244,7 +244,7 @@ function monitor_tracker_existing_players(local_client_num) {
 }
 
 // Namespace perks/perks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe6cbabcb, Offset: 0x11d0
 // Size: 0x2a6
 function monitor_tracker_perk_killcam(local_client_num) {
@@ -291,7 +291,7 @@ function monitor_tracker_perk_killcam(local_client_num) {
 }
 
 // Namespace perks/perks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x49a80815, Offset: 0x1480
 // Size: 0x1b6
 function monitor_tracker_perk(local_client_num) {
@@ -325,7 +325,7 @@ function monitor_tracker_perk(local_client_num) {
 }
 
 // Namespace perks/perks
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x272fafa7, Offset: 0x1640
 // Size: 0x7c
 function tracker_playfx(local_client_num, positionandrotationstruct) {
@@ -334,7 +334,7 @@ function tracker_playfx(local_client_num, positionandrotationstruct) {
 }
 
 // Namespace perks/perks
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x52864868, Offset: 0x16c8
 // Size: 0xea
 function killtrackerfx_track(local_client_num, handle) {
@@ -353,7 +353,7 @@ function killtrackerfx_track(local_client_num, handle) {
 }
 
 // Namespace perks/perks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbd31887, Offset: 0x17c0
 // Size: 0x1d0
 function killtrackerfx_on_death(local_client_num) {
@@ -386,7 +386,7 @@ function killtrackerfx_on_death(local_client_num) {
 }
 
 // Namespace perks/perks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf8ce3524, Offset: 0x1998
 // Size: 0x43e
 function gettrackerfxposition(local_client_num) {
@@ -458,7 +458,7 @@ function gettrackerfxposition(local_client_num) {
 }
 
 // Namespace perks/perks
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa9a370e9, Offset: 0x1de0
 // Size: 0x48
 function function_3edf2cf8(dist_sq, var_73491815, var_47435b6f) {
@@ -466,7 +466,7 @@ function function_3edf2cf8(dist_sq, var_73491815, var_47435b6f) {
 }
 
 // Namespace perks/perks
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x96dc593b, Offset: 0x1e30
 // Size: 0xf2
 function function_365c39ef(awareness_action, bundle) {
@@ -490,7 +490,7 @@ function function_365c39ef(awareness_action, bundle) {
 }
 
 // Namespace perks/perks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xae21a7e9, Offset: 0x1f30
 // Size: 0xecc
 function monitor_detectnearbyenemies(local_client_num) {
@@ -705,7 +705,7 @@ function monitor_detectnearbyenemies(local_client_num) {
 }
 
 // Namespace perks/perks
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1fdfb470, Offset: 0x2e08
 // Size: 0x64
 function function_c90f8547(var_8bced359, var_832d6681, delay_time) {
@@ -717,7 +717,7 @@ function function_c90f8547(var_8bced359, var_832d6681, delay_time) {
 }
 
 // Namespace perks/perks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x69240b42, Offset: 0x2e78
 // Size: 0xc2
 function function_c2b5b27c(local_client_num) {

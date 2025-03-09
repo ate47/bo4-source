@@ -3977,8 +3977,8 @@
     "name": "cin_zm_mansion_outro_butler",
     "dontsync": 1,
     "disablesceneskipping": 1,
-    "var_241c5f3c": 1,
-    "var_a6da2039": "cin_zm_mansion_outro_butler",
+    "hash_241c5f3c": 1,
+    "hash_a6da2039": "cin_zm_mansion_outro_butler",
     "aligntarget": "tag_align_billiards",
     "team": "any"
 }

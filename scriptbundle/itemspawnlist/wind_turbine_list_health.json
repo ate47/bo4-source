@@ -8,10 +8,10 @@
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 420,
+    "hash_7fb0967b": 420,
     "type": "itemspawnlist",
-    "var_345eba59": 1,
-    "var_9b009839": -1,
+    "hash_345eba59": 1,
+    "hash_9b009839": -1,
     "name": "wind_turbine_list_health",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

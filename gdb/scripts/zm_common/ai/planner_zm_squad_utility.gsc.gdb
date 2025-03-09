@@ -93,7 +93,7 @@ DEVBLOCK 0x3ef2
 DEVBLOCK 0x488a
 # namespace_ed876ec::function_8f74831a@2
 DEVBLOCK 0x49b2
-# namespace_ed876ec::function_bd34d468@2
+# namespace_ed876ec::debug_zm_wallbuys@2
 DEVBLOCK 0x4a12
 # namespace_ed876ec::function_9259be56@62
 DEVBLOCK 0x4ad2

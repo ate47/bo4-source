@@ -185,7 +185,7 @@ version 49 {
         // offset 0x518, size 0x8
         uint:2 roundstartfriendlyfiretype;
         // offset 0x520, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x528, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x530, size 0x8
@@ -815,7 +815,7 @@ version 48 {
         // offset 0x510, size 0x8
         uint:2 roundstartfriendlyfiretype;
         // offset 0x518, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x520, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x528, size 0x8
@@ -1445,7 +1445,7 @@ version 47 {
         // offset 0x510, size 0x8
         uint:2 roundstartfriendlyfiretype;
         // offset 0x518, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x520, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x528, size 0x8
@@ -2075,7 +2075,7 @@ version 46 {
         // offset 0x510, size 0x8
         uint:2 roundstartfriendlyfiretype;
         // offset 0x518, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x520, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x528, size 0x8
@@ -2701,7 +2701,7 @@ version 45 {
         // offset 0x508, size 0x8
         uint:2 roundstartfriendlyfiretype;
         // offset 0x510, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x518, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x520, size 0x8
@@ -3317,7 +3317,7 @@ version 44 {
         // offset 0x4f8, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x500, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x508, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x510, size 0x8
@@ -3933,7 +3933,7 @@ version 43 {
         // offset 0x4f8, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x500, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x508, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x510, size 0x8
@@ -4547,7 +4547,7 @@ version 42 {
         // offset 0x4f8, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x500, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x508, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x510, size 0x8
@@ -5157,7 +5157,7 @@ version 41 {
         // offset 0x4f8, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x500, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x508, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x510, size 0x8
@@ -5765,7 +5765,7 @@ version 40 {
         // offset 0x4f8, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x500, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x508, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x510, size 0x8
@@ -6365,7 +6365,7 @@ version 39 {
         // offset 0x4e8, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4f0, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4f8, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x500, size 0x8
@@ -6965,7 +6965,7 @@ version 38 {
         // offset 0x4e8, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4f0, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4f8, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x500, size 0x8
@@ -7557,7 +7557,7 @@ version 37 {
         // offset 0x4d8, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4e0, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4e8, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x4f0, size 0x8
@@ -8145,7 +8145,7 @@ version 36 {
         // offset 0x4d8, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4e0, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4e8, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x4f0, size 0x8
@@ -8731,7 +8731,7 @@ version 35 {
         // offset 0x4d0, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4d8, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4e0, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x4e8, size 0x8
@@ -9313,7 +9313,7 @@ version 34 {
         // offset 0x4c8, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4d0, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4d8, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x4e0, size 0x8
@@ -9895,7 +9895,7 @@ version 33 {
         // offset 0x4c8, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4d0, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4d8, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x4e0, size 0x8
@@ -10475,7 +10475,7 @@ version 32 {
         // offset 0x4c0, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4c8, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4d0, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x4d8, size 0x8
@@ -11055,7 +11055,7 @@ version 31 {
         // offset 0x4c0, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4c8, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4d0, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x4d8, size 0x8
@@ -11633,7 +11633,7 @@ version 30 {
         // offset 0x4c0, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4c8, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4d0, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x4d8, size 0x8
@@ -12207,7 +12207,7 @@ version 29 {
         // offset 0x4c0, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4c8, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4d0, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x4d8, size 0x8
@@ -12775,7 +12775,7 @@ version 28 {
         // offset 0x4a8, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4b0, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4b8, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x4c0, size 0x8
@@ -13341,7 +13341,7 @@ version 27 {
         // offset 0x4a8, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4b0, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4b8, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x4c0, size 0x8
@@ -13903,7 +13903,7 @@ version 26 {
         // offset 0x4a0, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4a8, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4b0, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x4b8, size 0x8
@@ -14461,7 +14461,7 @@ version 25 {
         // offset 0x4a0, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4a8, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4b0, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x4b8, size 0x8
@@ -15019,7 +15019,7 @@ version 24 {
         // offset 0x4a0, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4a8, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4b0, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x4b8, size 0x8
@@ -15575,7 +15575,7 @@ version 23 {
         // offset 0x4a0, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4a8, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4b0, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x4b8, size 0x8
@@ -16129,7 +16129,7 @@ version 22 {
         // offset 0x4a0, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x4a8, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x4b0, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x4b8, size 0x8
@@ -16679,7 +16679,7 @@ version 21 {
         // offset 0x400, size 0x8
         fixed<8,2> hash_314c2f7312bde4af;
         // offset 0x408, size 0x8
-        uint:7 hash_49f4e3b6cf493d7e;
+        uint:7 flagdecaytime;
         // offset 0x410, size 0x8
         uint:7 hash_26b08269156ca0e5;
         // offset 0x418, size 0x8

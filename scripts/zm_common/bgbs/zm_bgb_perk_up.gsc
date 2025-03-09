@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_perk_up/zm_bgb_perk_up
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x82699e77, Offset: 0x120
 // Size: 0x74
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_perk_up/zm_bgb_perk_up
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x959e9a0, Offset: 0x1a0
 // Size: 0x76
 function validation() {
@@ -48,7 +48,7 @@ function validation() {
 }
 
 // Namespace zm_bgb_perk_up/zm_bgb_perk_up
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd91da015, Offset: 0x220
 // Size: 0xda
 function activation() {
@@ -67,7 +67,7 @@ function activation() {
 }
 
 // Namespace zm_bgb_perk_up/zm_bgb_perk_up
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2fa8920e, Offset: 0x308
 // Size: 0x6a
 function function_183a26f5() {

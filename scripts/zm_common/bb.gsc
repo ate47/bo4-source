@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace bb/bb
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x40798d8d, Offset: 0xe8
 // Size: 0x14
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace bb/bb
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xee4ae9e7, Offset: 0x108
 // Size: 0x44
 function logdamage(attacker, victim, weapon, damage, damagetype, hitlocation, victimkilled, victimdowned) {
@@ -30,7 +30,7 @@ function logdamage(attacker, victim, weapon, damage, damagetype, hitlocation, vi
 }
 
 // Namespace bb/bb
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x318f46c2, Offset: 0x158
 // Size: 0x14
 function logaispawn(aient, spawner) {
@@ -38,7 +38,7 @@ function logaispawn(aient, spawner) {
 }
 
 // Namespace bb/bb
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe68f87de, Offset: 0x178
 // Size: 0x23c
 function logplayerevent(player, eventname) {
@@ -72,7 +72,7 @@ function logplayerevent(player, eventname) {
 }
 
 // Namespace bb/bb
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x655366ba, Offset: 0x3c0
 // Size: 0x118
 function logroundevent(eventname) {
@@ -86,7 +86,7 @@ function logroundevent(eventname) {
 }
 
 // Namespace bb/bb
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd600a792, Offset: 0x4e0
 // Size: 0x22c
 function logpurchaseevent(player, sellerent, cost, itemname, itemupgraded, itemtype, eventname) {
@@ -114,7 +114,7 @@ function logpurchaseevent(player, sellerent, cost, itemname, itemupgraded, itemt
 }
 
 // Namespace bb/bb
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x553619a, Offset: 0x718
 // Size: 0x218
 function logpowerupevent(powerup, optplayer, eventname) {

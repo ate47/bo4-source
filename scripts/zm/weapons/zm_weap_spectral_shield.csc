@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbb1ebc1b, Offset: 0x350
 // Size: 0x93a
 function __init__() {
@@ -64,7 +64,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0xc98
 // Size: 0x4
 function __main__() {
@@ -72,7 +72,7 @@ function __main__() {
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x62e9f2, Offset: 0xca8
 // Size: 0x4dc
 function afterlife_vision_play(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -134,7 +134,7 @@ function afterlife_vision_play(localclientnum, oldval, newval, bnewent, binitial
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x6ba6b7d0, Offset: 0x1190
 // Size: 0x168
 function private function_85e7adcf(localclientnum) {
@@ -156,7 +156,7 @@ function private function_85e7adcf(localclientnum) {
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf4814573, Offset: 0x1300
 // Size: 0x84
 function afterlife_window(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -168,7 +168,7 @@ function afterlife_window(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc6045def, Offset: 0x1390
 // Size: 0x194
 function afterlife_entity_visibility(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -196,7 +196,7 @@ function afterlife_entity_visibility(localclientnum, oldval, newval, bnewent, bi
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9bd1cf1, Offset: 0x1530
 // Size: 0x64
 function function_f66111c5(localclientnum) {
@@ -206,7 +206,7 @@ function function_f66111c5(localclientnum) {
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x13f54175, Offset: 0x15a0
 // Size: 0x4c
 function function_5681824(localclientnum) {
@@ -215,7 +215,7 @@ function function_5681824(localclientnum) {
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe43d8c64, Offset: 0x15f8
 // Size: 0xf2
 function spectral_blast_death(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -233,7 +233,7 @@ function spectral_blast_death(localclientnum, oldval, newval, bnewent, binitials
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe4fe5c7b, Offset: 0x16f8
 // Size: 0x10e
 function spectral_key_beam_fire(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -254,7 +254,7 @@ function spectral_key_beam_fire(localclientnum, oldval, newval, bnewent, binitia
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb17ee58e, Offset: 0x1810
 // Size: 0x170
 function function_a950c92c(localclientnum) {
@@ -279,7 +279,7 @@ function function_a950c92c(localclientnum) {
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4786d16b, Offset: 0x1988
 // Size: 0x104
 function function_4700b6cd(localclientnum) {
@@ -303,7 +303,7 @@ function function_4700b6cd(localclientnum) {
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xce61e299, Offset: 0x1a98
 // Size: 0xac
 function function_848179f5(localclientnum) {
@@ -319,7 +319,7 @@ function function_848179f5(localclientnum) {
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x67cbfc99, Offset: 0x1b50
 // Size: 0xa4
 function function_64148d8e(localclientnum) {
@@ -336,7 +336,7 @@ function function_64148d8e(localclientnum) {
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb691e5b5, Offset: 0x1c00
 // Size: 0x232
 function function_28291f40(localclientnum, e_target) {
@@ -365,7 +365,7 @@ function function_28291f40(localclientnum, e_target) {
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xaecfe9e1, Offset: 0x1e40
 // Size: 0x450
 function function_f9a03171(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -416,7 +416,7 @@ function function_f9a03171(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb0d94a49, Offset: 0x2298
 // Size: 0x166
 function function_3f83a22f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -445,7 +445,7 @@ function function_3f83a22f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe0f9c8d7, Offset: 0x2408
 // Size: 0xf0
 function private function_5ab769d8(localclientnum) {
@@ -465,7 +465,7 @@ function private function_5ab769d8(localclientnum) {
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd3f9747e, Offset: 0x2500
 // Size: 0x36c
 function function_b570d455(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -514,7 +514,7 @@ function function_b570d455(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x83c433de, Offset: 0x2878
 // Size: 0x1e4
 function function_3dec76cb(localclientnum, e_target, e_attacker, var_19f39a16 = 1) {
@@ -542,7 +542,7 @@ function function_3dec76cb(localclientnum, e_target, e_attacker, var_19f39a16 = 
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x39714a81, Offset: 0x2a68
 // Size: 0x11c
 function function_9c08e4b6(localclientnum, e_target, e_attacker) {
@@ -560,7 +560,7 @@ function function_9c08e4b6(localclientnum, e_target, e_attacker) {
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x37b16e7e, Offset: 0x2b90
 // Size: 0xf6
 function function_5655dc55(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -578,7 +578,7 @@ function function_5655dc55(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf21af113, Offset: 0x2c90
 // Size: 0x416
 function function_36c349d0(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -634,7 +634,7 @@ function function_36c349d0(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3ed35e16, Offset: 0x30b0
 // Size: 0x162
 function function_7203304d(localclientnum) {
@@ -658,7 +658,7 @@ function function_7203304d(localclientnum) {
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xedaedea6, Offset: 0x3220
 // Size: 0x11c
 function function_50119cc1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -677,7 +677,7 @@ function function_50119cc1(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xbf394f2a, Offset: 0x3348
 // Size: 0x2ec
 function function_6b58c030(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -711,7 +711,7 @@ function function_6b58c030(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe5842754, Offset: 0x3640
 // Size: 0xda
 function function_98890cd8(w_current, var_94c10bbd = 0) {
@@ -727,7 +727,7 @@ function function_98890cd8(w_current, var_94c10bbd = 0) {
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2c36f19d, Offset: 0x3728
 // Size: 0x74
 function shield_crafting_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

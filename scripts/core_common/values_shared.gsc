@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace val/values_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4ddc18f9, Offset: 0x248
 // Size: 0x684
 function __init__() {
@@ -66,7 +66,7 @@ function __init__() {
 }
 
 // Namespace val/values_shared
-// Params 5, eflags: 0x21 linked variadic
+// Params 5, eflags: 0x20 variadic
 // Checksum 0x5b2cf81, Offset: 0x8d8
 // Size: 0x15e
 function register(str_name, var_3509ed3e, call_on = "$self", func, ...) {
@@ -88,7 +88,7 @@ function register(str_name, var_3509ed3e, call_on = "$self", func, ...) {
 }
 
 // Namespace val/values_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe7dbddd8, Offset: 0xa40
 // Size: 0x94
 function private assert_registered(str_name) {
@@ -103,7 +103,7 @@ function private assert_registered(str_name) {
 }
 
 // Namespace val/values_shared
-// Params 4, eflags: 0x21 linked variadic
+// Params 4, eflags: 0x20 variadic
 // Checksum 0x9ce9cb4a, Offset: 0xae0
 // Size: 0x86
 function default_func(str_name, call_on, value, ...) {
@@ -116,7 +116,7 @@ function default_func(str_name, call_on, value, ...) {
 }
 
 // Namespace val/values_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1500819e, Offset: 0xb70
 // Size: 0x56
 function default_value(str_name, value) {
@@ -127,7 +127,7 @@ function default_value(str_name, value) {
 }
 
 // Namespace val/values_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa0596f05, Offset: 0xbd0
 // Size: 0x8c
 function set(str_id, str_name, value) {
@@ -152,7 +152,7 @@ function set_for_time(n_time, str_id, str_name, value) {
 }
 
 // Namespace val/values_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc649c637, Offset: 0xce8
 // Size: 0xbc
 function reset(str_id, str_name) {
@@ -167,7 +167,7 @@ function reset(str_id, str_name) {
 }
 
 // Namespace val/values_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf7a497c, Offset: 0xdb0
 // Size: 0x34
 function nuke(str_name) {
@@ -176,7 +176,7 @@ function nuke(str_name) {
 }
 
 // Namespace val/values_shared
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x1419fbff, Offset: 0xdf0
 // Size: 0xbc
 function private _push_value(str_id, str_name, value) {
@@ -191,7 +191,7 @@ function private _push_value(str_id, str_name, value) {
 }
 
 // Namespace val/values_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2c1f3140, Offset: 0xeb8
 // Size: 0x10e
 function private _remove_value(str_id, str_name) {
@@ -216,7 +216,7 @@ function private _remove_value(str_id, str_name) {
 }
 
 // Namespace val/values_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xd30301de, Offset: 0xfd0
 // Size: 0xd8
 function private _set_value(str_name, value) {
@@ -230,7 +230,7 @@ function private _set_value(str_name, value) {
 }
 
 // Namespace val/values_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7f63899b, Offset: 0x10b0
 // Size: 0x104
 function private _set_default(str_name) {
@@ -247,7 +247,7 @@ function private _set_default(str_name) {
 }
 
 // Namespace val/values_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xcd3262cb, Offset: 0x11c0
 // Size: 0x5a
 function private _replace_values(a_args, value) {
@@ -257,7 +257,7 @@ function private _replace_values(a_args, value) {
 }
 
 // Namespace val/values_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x9f56e7ed, Offset: 0x1228
 // Size: 0x7e
 function private set_takedamage(b_value = 1) {
@@ -273,7 +273,7 @@ function private set_takedamage(b_value = 1) {
 }
 
 // Namespace val/values_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x827fa1ed, Offset: 0x12b0
 // Size: 0x34
 function default_takedamage() {
@@ -281,7 +281,7 @@ function default_takedamage() {
 }
 
 // Namespace val/values_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5149c9c3, Offset: 0x12f0
 // Size: 0x34
 function default_allowdeath() {
@@ -300,7 +300,7 @@ function private validate_takedamage() {
 }
 
 // Namespace val/values_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2e1e25a9, Offset: 0x1380
 // Size: 0xcc
 function private set_takeweapons(b_value = 1) {
@@ -322,7 +322,7 @@ function private set_takeweapons(b_value = 1) {
 }
 
 // Namespace val/values_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd28166af, Offset: 0x1458
 // Size: 0x54
 function private set_disableweapons(b_value = 1) {
@@ -334,7 +334,7 @@ function private set_disableweapons(b_value = 1) {
 }
 
 // Namespace val/values_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa195cc5c, Offset: 0x14b8
 // Size: 0x54
 function private set_disableoffhandweapons(b_value = 1) {
@@ -346,7 +346,7 @@ function private set_disableoffhandweapons(b_value = 1) {
 }
 
 // Namespace val/values_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7fce6214, Offset: 0x1518
 // Size: 0x92
 function private set_ignoreme(b_value = 1) {
@@ -366,7 +366,7 @@ function private set_ignoreme(b_value = 1) {
 }
 
 // Namespace val/values_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd4a8e1d3, Offset: 0x15b8
 // Size: 0x42
 function private set_disablegestures(b_value = 1) {
@@ -376,7 +376,7 @@ function private set_disablegestures(b_value = 1) {
 }
 
 // Namespace val/values_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x6f86a78, Offset: 0x1608
 // Size: 0x74
 function private set_hide(b_value = 1) {
@@ -392,7 +392,7 @@ function private set_hide(b_value = 1) {
 }
 
 // Namespace val/values_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x11eb3634, Offset: 0x1688
 // Size: 0x4a
 function private set_health_regen(b_value = 1) {
@@ -404,7 +404,7 @@ function private set_health_regen(b_value = 1) {
 }
 
 // Namespace val/values_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8160cb18, Offset: 0x16e0
 // Size: 0x42
 function private set_disable_health_regen_delay(b_value = 1) {
@@ -416,7 +416,7 @@ function private set_disable_health_regen_delay(b_value = 1) {
 }
 
 // Namespace val/values_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x6f81c590, Offset: 0x1730
 // Size: 0x42
 function private set_ignore_health_regen_delay(b_value = 1) {

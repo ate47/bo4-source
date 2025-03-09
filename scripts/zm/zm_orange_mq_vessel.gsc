@@ -17,7 +17,7 @@
 #namespace zm_orange_mq_vessel;
 
 // Namespace zm_orange_mq_vessel/zm_orange_mq_vessel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x180
 // Size: 0x4
 function preload() {
@@ -25,7 +25,7 @@ function preload() {
 }
 
 // Namespace zm_orange_mq_vessel/zm_orange_mq_vessel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7b107932, Offset: 0x190
 // Size: 0xa16
 function main() {
@@ -110,7 +110,7 @@ function main() {
 }
 
 // Namespace zm_orange_mq_vessel/zm_orange_mq_vessel
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc301ae82, Offset: 0xbb0
 // Size: 0x1d4
 function function_a5254494(var_5ea5c94d) {
@@ -130,7 +130,7 @@ function function_a5254494(var_5ea5c94d) {
 }
 
 // Namespace zm_orange_mq_vessel/zm_orange_mq_vessel
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe78ef3b1, Offset: 0xd90
 // Size: 0x8c
 function function_77e4073b(var_5ea5c94d, ended_early) {
@@ -142,7 +142,7 @@ function function_77e4073b(var_5ea5c94d, ended_early) {
 }
 
 // Namespace zm_orange_mq_vessel/zm_orange_mq_vessel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6173aa0, Offset: 0xe28
 // Size: 0x28c
 function function_ede90521() {
@@ -175,7 +175,7 @@ function function_ede90521() {
 }
 
 // Namespace zm_orange_mq_vessel/zm_orange_mq_vessel
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x4f8c8ef1, Offset: 0x10c0
 // Size: 0x1f4
 function private function_a5fa6428() {
@@ -199,7 +199,7 @@ function private function_a5fa6428() {
 }
 
 // Namespace zm_orange_mq_vessel/zm_orange_mq_vessel
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x37b92f97, Offset: 0x12c0
 // Size: 0x1b4
 function private cover_think() {
@@ -223,7 +223,7 @@ function private cover_think() {
 }
 
 // Namespace zm_orange_mq_vessel/zm_orange_mq_vessel
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x8fdae675, Offset: 0x1480
 // Size: 0x1b4
 function private function_9c223c27() {

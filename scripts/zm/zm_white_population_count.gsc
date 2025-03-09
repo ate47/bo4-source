@@ -4,7 +4,7 @@
 #namespace zm_white_population_count;
 
 // Namespace zm_white_population_count/zm_white_population_count
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfd38c07e, Offset: 0xd8
 // Size: 0x2c
 function init() {
@@ -14,7 +14,7 @@ function init() {
 }
 
 // Namespace zm_white_population_count/zm_white_population_count
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x12d3da4c, Offset: 0x110
 // Size: 0x348
 function nuked_population_sign_think() {
@@ -61,7 +61,7 @@ function nuked_population_sign_think() {
 }
 
 // Namespace zm_white_population_count/zm_white_population_count
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x2cc14aeb, Offset: 0x460
 // Size: 0x82
 function set_dvar_float_if_unset(dvar, value, reset = 0) {

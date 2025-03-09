@@ -1,16 +1,16 @@
 {
     "descriptionimage": "#hash_6f0724cdc277afe9",
     "description": "#hash_7ec03f4b573cb392",
-    "var_60fcfffa": "#menu/off",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#menu/off",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "name": "pc_viewmodel_self_shadow",
     "displayname": "#hash_3db70adc56496902",
-    "var_66faec87": 10,
+    "hash_66faec87": 10,
     "statname": "r_viewmodelSelfShadow",
-    "var_82c732a7": 1,
+    "isenableddisabled": 1,
     "minvalue": 3,
-    "var_b7401319": "#menu/on"
+    "hash_b7401319": "#menu/on"
 }

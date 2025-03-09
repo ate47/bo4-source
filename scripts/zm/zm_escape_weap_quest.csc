@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe9b9898f, Offset: 0x258
 // Size: 0x3d2
 function __init__() {
@@ -41,7 +41,7 @@ function __init__() {
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd9fb8728, Offset: 0x638
 // Size: 0x252
 function function_e4a48a64(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -75,7 +75,7 @@ function function_e4a48a64(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8dcb1735, Offset: 0x898
 // Size: 0xee
 function function_b543a4ed(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -93,7 +93,7 @@ function function_b543a4ed(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd8ef6797, Offset: 0x990
 // Size: 0xa2
 function function_1f632068(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -104,7 +104,7 @@ function function_1f632068(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x85d5e8ca, Offset: 0xa40
 // Size: 0xa2
 function function_63eff42e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -115,7 +115,7 @@ function function_63eff42e(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb81674ad, Offset: 0xaf0
 // Size: 0x13a
 function function_dfe17a5d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -136,7 +136,7 @@ function function_dfe17a5d(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa46cbb8c, Offset: 0xc38
 // Size: 0x122
 function function_724af26a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -155,7 +155,7 @@ function function_724af26a(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc2e3f05b, Offset: 0xd68
 // Size: 0xf2
 function function_1302ffdd(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -170,7 +170,7 @@ function function_1302ffdd(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf5bfbed0, Offset: 0xe68
 // Size: 0xf2
 function function_c17bd665(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

@@ -32,7 +32,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_ai_weeping_angel/zm_ai_weeping_angel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa257ab46, Offset: 0x1d0
 // Size: 0x264
 function __init__() {
@@ -54,7 +54,7 @@ function __init__() {
 }
 
 // Namespace zm_ai_weeping_angel/zm_ai_weeping_angel
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x440
 // Size: 0x4
 function __main__() {
@@ -62,7 +62,7 @@ function __main__() {
 }
 
 // Namespace zm_ai_weeping_angel/zm_ai_weeping_angel
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x818fb390, Offset: 0x450
 // Size: 0x6c
 function private function_d8a99ae2() {
@@ -73,7 +73,7 @@ function private function_d8a99ae2() {
 }
 
 // Namespace zm_ai_weeping_angel/zm_ai_weeping_angel
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x643d13d8, Offset: 0x4c8
 // Size: 0x34
 function private function_487069e4() {
@@ -83,7 +83,7 @@ function private function_487069e4() {
 }
 
 // Namespace zm_ai_weeping_angel/zm_ai_weeping_angel
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0xa452967c, Offset: 0x508
 // Size: 0xac
 function private function_b6824ff0(entity, player, duration, color) {
@@ -103,12 +103,14 @@ function private function_b6824ff0(entity, player, duration, color) {
     // Checksum 0xfd169610, Offset: 0x5c0
     // Size: 0x116
     function private function_e5ffb77c(start, end, duration, color) {
-        for (current_time = duration * 20; current_time > 0; current_time -= 1) {
+        current_time = duration * 20;
+        while (current_time > 0) {
             waitframe(1);
             line(start, end, color, 1, 1);
             sphere(end, 10, color, 1, 0, 8, 1);
             distance = distance(start, end);
             print3d(end + (0, 0, 10), "<dev string:xc8>" + distance, color, 1, 1, 1);
+            current_time -= 1;
         }
     }
 
@@ -126,7 +128,7 @@ function private function_78910888(player) {
 }
 
 // Namespace zm_ai_weeping_angel/zm_ai_weeping_angel
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe6cb9189, Offset: 0x770
 // Size: 0x1ec
 function private function_ad034041(entity) {
@@ -158,7 +160,7 @@ function private function_ad034041(entity) {
 }
 
 // Namespace zm_ai_weeping_angel/zm_ai_weeping_angel
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x423206ad, Offset: 0x968
 // Size: 0x7c
 function private function_f5d43a20(entity) {

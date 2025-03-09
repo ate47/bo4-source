@@ -1,11 +1,11 @@
 {
-    "lootid": "#hash_19584b062f88908d",
+    "lootid": "#jumppack_hide",
     "wingsuit": "c_t8_bo_wingsuit_savage",
     "feature": "loot_season_05",
     "image": "loot05_ui_icon_blackmarket_item_shop_wingsuit_preview_savage",
     "name": "c_t8_bo_jumpkit_savage",
     "displayname": "#hash_228d88341db37905",
-    "var_4fa85a25": "dfxt_savage",
+    "hash_4fa85a25": "dfxt_savage",
     "entitlement": "#hash_377b58d9f38de25f",
     "parachute": "c_t8_bo_parachute_savage"
 }

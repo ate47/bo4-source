@@ -6,7 +6,7 @@
 #namespace namespace_65181344;
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x8ba1d9f1, Offset: 0xc8
 // Size: 0x1c2
 function private function_2c4d3d40() {
@@ -34,7 +34,7 @@ function private function_2c4d3d40() {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xae2d5339, Offset: 0x298
 // Size: 0x326
 function private function_440f0490(itemlistbundle) {
@@ -70,7 +70,7 @@ function private function_440f0490(itemlistbundle) {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x387d9520, Offset: 0x5c8
 // Size: 0xe
 function private function_6a5c090c() {
@@ -78,7 +78,7 @@ function private function_6a5c090c() {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe6084dc7, Offset: 0x5e0
 // Size: 0x21a
 function function_9e9f43cd() {
@@ -102,7 +102,7 @@ function function_9e9f43cd() {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2bca7739, Offset: 0x808
 // Size: 0x1e8
 function function_e88ecf7f() {
@@ -127,7 +127,7 @@ function function_e88ecf7f() {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xab5bf707, Offset: 0x9f8
 // Size: 0x22
 function private function_35461e5f(row, stashitem = 0) {
@@ -143,7 +143,7 @@ function private function_62c0d32d(item_name, stashitem = 0) {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x5c155094, Offset: 0xa58
 // Size: 0x88
 function private function_98013deb(row) {
@@ -158,7 +158,7 @@ function private function_98013deb(row) {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xb29eed62, Offset: 0xae8
 // Size: 0x846
 function private _spawn_item(point, row, stashitem = 0) {
@@ -207,9 +207,9 @@ function private _spawn_item(point, row, stashitem = 0) {
         origin = point.origin;
         angles = point.angles;
         if (numchildren > 0) {
-            if (!isdefined(itementry.var_47f145b4)) {
+            if (!isdefined(itementry.wallbuyitem)) {
                 angles = (0, angleclamp180(origin[0] + origin[1] + origin[2]), 0);
-                forward = anglestoforward(angles) * level.var_69dda516[0];
+                forward = anglestoforward(angles) * level.raw\spanish\sound\vox\scripted\hrt\vox_hr0_attack_grenade_000.SN60.xenon.snd[0];
                 offset = rotatepoint(forward, (0, level.var_cc113617[0], 0));
                 origin += offset;
                 ground_pos = physicstraceex(origin + (0, 0, 24), origin - (0, 0, 96), (0, 0, 0), (0, 0, 0), undefined, 32);
@@ -217,7 +217,7 @@ function private _spawn_item(point, row, stashitem = 0) {
                 normal = ground_pos[#"normal"];
                 angles = function_c1fa62a2(angles, normal);
             }
-        } else if (!isdefined(itementry.var_47f145b4)) {
+        } else if (!isdefined(itementry.wallbuyitem)) {
             angles = combineangles(angles, (0, angleclamp180(origin[0] + origin[1] + origin[2]), 0));
         } else {
             angles = (0, angles[1], 0);
@@ -225,7 +225,7 @@ function private _spawn_item(point, row, stashitem = 0) {
         angles = combineangles(angles, (isdefined(itementry.angleoffsetx) ? itementry.angleoffsetx : 0, isdefined(itementry.angleoffsety) ? itementry.angleoffsety : 0, isdefined(itementry.angleoffsetz) ? itementry.angleoffsetz : 0));
         originoffset = (isdefined(itementry.positionoffsetx) ? itementry.positionoffsetx : 0, isdefined(itementry.positionoffsety) ? itementry.positionoffsety : 0, isdefined(itementry.positionoffsetz) ? itementry.positionoffsetz : 0);
         origin += originoffset;
-        if (numchildren > 0 || isdefined(itementry.var_47f145b4)) {
+        if (numchildren > 0 || isdefined(itementry.wallbuyitem)) {
             point = function_53a81463(origin, angles, point.targetname, item_name);
         } else {
             function_b97dfce0(point.id, origin);
@@ -262,7 +262,7 @@ function private _spawn_item(point, row, stashitem = 0) {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0xfa31c2de, Offset: 0x1338
 // Size: 0x50c
 function private function_f0e5262b(item_name, point, childindex, stashitem = 0, targetname) {
@@ -277,7 +277,7 @@ function private function_f0e5262b(item_name, point, childindex, stashitem = 0, 
         assert(childindex > 0 && childindex <= 5);
         parentangles = (0, point.angles[1], 0);
         degree = level.var_cc113617[childindex];
-        distance = level.var_69dda516[childindex];
+        distance = level.raw\spanish\sound\vox\scripted\hrt\vox_hr0_attack_grenade_000.SN60.xenon.snd[childindex];
         offset = (cos(degree) * distance, sin(degree) * distance, 0);
         offset = rotatepoint(offset, parentangles);
         origin += offset;
@@ -316,7 +316,7 @@ function private function_f0e5262b(item_name, point, childindex, stashitem = 0, 
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x837dca89, Offset: 0x1850
 // Size: 0x5c6
 function private function_ea39d1fa(stash) {
@@ -396,7 +396,7 @@ function private function_ea39d1fa(stash) {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x144bb1ed, Offset: 0x1e20
 // Size: 0x8d0
 function private function_216a69d6(spawnchance, reset) {
@@ -516,19 +516,19 @@ function private function_216a69d6(spawnchance, reset) {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe804151d, Offset: 0x26f8
 // Size: 0x9c
 function private _spawn(reset) {
     if (isdefined(self.itemlistbundle.supplystash) && self.itemlistbundle.supplystash) {
-        self function_216a69d6(isdefined(self.itemlistbundle.var_fde72c94) ? self.itemlistbundle.var_fde72c94 : 100, reset);
+        self function_216a69d6(isdefined(self.itemlistbundle.supplystashweight) ? self.itemlistbundle.supplystashweight : 100, reset);
         return;
     }
     self function_e25c9d12(self.var_8107154f, self.var_8107154f.size);
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xb0feed31, Offset: 0x27a0
 // Size: 0x242
 function private _setup() {
@@ -553,7 +553,7 @@ function private _setup() {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xb1015aa7, Offset: 0x29f0
 // Size: 0x76
 function private _teardown() {
@@ -574,7 +574,7 @@ function private _teardown() {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb1d72f44, Offset: 0x2a70
 // Size: 0x44
 function function_3095d12a() {
@@ -586,7 +586,7 @@ function function_3095d12a() {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x2d915cda, Offset: 0x2ac0
 // Size: 0xa4
 function private function_9db93def() {
@@ -595,7 +595,7 @@ function private function_9db93def() {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x138641cb, Offset: 0x2b70
 // Size: 0x2a
 function private function_6b9be08d() {
@@ -603,7 +603,7 @@ function private function_6b9be08d() {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x95552a27, Offset: 0x2ba8
 // Size: 0x12fc
 function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &var_a1b91de4 = undefined) {
@@ -836,7 +836,7 @@ function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &va
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1f1bbeac, Offset: 0x3eb0
 // Size: 0x4fc
 function private function_c6477714(reset) {
@@ -885,7 +885,7 @@ function private function_c6477714(reset) {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x57dac5cd, Offset: 0x43b8
 // Size: 0x134
 function function_62fdaf9e() {
@@ -908,7 +908,7 @@ function function_62fdaf9e() {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb291292, Offset: 0x44f8
 // Size: 0x54
 function init_spawn_system() {
@@ -919,7 +919,7 @@ function init_spawn_system() {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1724e99d, Offset: 0x4558
 // Size: 0x4c
 function is_enabled() {
@@ -927,7 +927,7 @@ function is_enabled() {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4eca765, Offset: 0x45b0
 // Size: 0x2d2
 function reset_items() {
@@ -941,7 +941,7 @@ function reset_items() {
         origin = point.origin;
         angles = point.angles;
         angles = function_bdd10bae(angles, (isdefined(itementry.angleoffsetx) ? itementry.angleoffsetx : 0, isdefined(itementry.angleoffsety) ? itementry.angleoffsety : 0, isdefined(itementry.angleoffsetz) ? itementry.angleoffsetz : 0));
-        if (!isdefined(itementry.var_47f145b4)) {
+        if (!isdefined(itementry.wallbuyitem)) {
             angles = function_bdd10bae(angles, (0, angleclamp180(origin[0] + origin[1] + origin[2]), 0));
         }
         originoffset = ((isdefined(itementry.positionoffsetx) ? itementry.positionoffsetx : 0) * -1, (isdefined(itementry.positionoffsety) ? itementry.positionoffsety : 0) * -1, (isdefined(itementry.positionoffsetz) ? itementry.positionoffsetz : 0) * -1);
@@ -958,7 +958,7 @@ function reset_items() {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x71479441, Offset: 0x4890
 // Size: 0x3ee
 function function_50a2c746(&var_f38d5b52, reset = 1, var_87e9f374 = 0) {
@@ -1012,7 +1012,7 @@ function function_50a2c746(&var_f38d5b52, reset = 1, var_87e9f374 = 0) {
 }
 
 // Namespace namespace_65181344/namespace_65181344
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb26da390, Offset: 0x4c88
 // Size: 0x6d6
 function setup_groups(reset = 1) {
@@ -1057,7 +1057,7 @@ function setup_groups(reset = 1) {
     level.var_5b2a8d88 = [];
     level.var_cc113617 = [-130, 50, 120, 315, 225, 270];
     level.var_82e94a26 = [1:10, 2:-5, 3:-15, 4:5, 5:0];
-    level.var_69dda516 = [17, 34, 32, 25, 25, 25];
+    level.raw\spanish\sound\vox\scripted\hrt\vox_hr0_attack_grenade_000.SN60.xenon.snd = [17, 34, 32, 25, 25, 25];
     /#
         level.var_136445c0 = 0;
         level.var_d80c35aa = [];

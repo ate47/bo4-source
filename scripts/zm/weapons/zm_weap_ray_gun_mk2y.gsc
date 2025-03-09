@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_ray_gun_mk2y/zm_weap_ray_gun_mk2y
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x54a87f51, Offset: 0x148
 // Size: 0x1dc
 function __init__() {
@@ -30,7 +30,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_ray_gun_mk2y/zm_weap_ray_gun_mk2y
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xafff13f5, Offset: 0x330
 // Size: 0x6e
 function on_weapon_change(s_params) {
@@ -44,7 +44,7 @@ function on_weapon_change(s_params) {
 }
 
 // Namespace zm_weap_ray_gun_mk2y/zm_weap_ray_gun_mk2y
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x63909996, Offset: 0x3a8
 // Size: 0x180
 function function_54922a21() {
@@ -70,7 +70,7 @@ function function_54922a21() {
 }
 
 // Namespace zm_weap_ray_gun_mk2y/zm_weap_ray_gun_mk2y
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xab4ef90d, Offset: 0x530
 // Size: 0x34
 function function_a059fe7f(str_notify) {
@@ -78,7 +78,7 @@ function function_a059fe7f(str_notify) {
 }
 
 // Namespace zm_weap_ray_gun_mk2y/zm_weap_ray_gun_mk2y
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb334dd33, Offset: 0x570
 // Size: 0x3c
 function function_5b0214e(weapon) {
@@ -86,7 +86,7 @@ function function_5b0214e(weapon) {
 }
 
 // Namespace zm_weap_ray_gun_mk2y/zm_weap_ray_gun_mk2y
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf92c6688, Offset: 0x5b8
 // Size: 0xa6
 function function_60365a28(weapon) {
@@ -97,7 +97,7 @@ function function_60365a28(weapon) {
 }
 
 // Namespace zm_weap_ray_gun_mk2y/zm_weap_ray_gun_mk2y
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2b2e9f13, Offset: 0x668
 // Size: 0x34
 function function_8a977b42(weapon) {
@@ -105,7 +105,7 @@ function function_8a977b42(weapon) {
 }
 
 // Namespace zm_weap_ray_gun_mk2y/zm_weap_ray_gun_mk2y
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x374aee79, Offset: 0x6a8
 // Size: 0xdc
 function function_bfbef8cc(weapon) {

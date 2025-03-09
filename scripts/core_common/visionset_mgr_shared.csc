@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf965c028, Offset: 0x1b0
 // Size: 0x254
 function __init__() {
@@ -45,7 +45,7 @@ function __init__() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x9580b369, Offset: 0x410
 // Size: 0xf6
 function register_visionset_info(name, version, lerp_step_count, visionset_from, visionset_to, visionset_type = 0) {
@@ -58,7 +58,7 @@ function register_visionset_info(name, version, lerp_step_count, visionset_from,
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xc6dbf0fd, Offset: 0x510
 // Size: 0x6e
 function register_overlay_info_style_none(name, version, lerp_step_count) {
@@ -145,7 +145,7 @@ function register_overlay_info_style_transported(name, version, lerp_step_count,
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 11, eflags: 0x1 linked
+// Params 11, eflags: 0x0
 // Checksum 0x68993e8b, Offset: 0xa88
 // Size: 0x22e
 function register_overlay_info_style_speed_blur(name, version, lerp_step_count, amount, inner_radius, outer_radius, velocity_should_scale, velocity_scale, blur_in, blur_out, should_offset) {
@@ -164,7 +164,7 @@ function register_overlay_info_style_speed_blur(name, version, lerp_step_count, 
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xe9739b7a, Offset: 0xcc0
 // Size: 0xde
 function register_overlay_info_style_postfx_bundle(name, version, lerp_step_count, bundle, duration) {
@@ -193,7 +193,7 @@ function is_type_currently_default(localclientnum, type) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x1bea0c6a, Offset: 0xe50
 // Size: 0x19e
 function register_type(type, cf_slot_cb, cf_lerp_cb, update_cb) {
@@ -212,7 +212,7 @@ function register_type(type, cf_slot_cb, cf_lerp_cb, update_cb) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x92b8c153, Offset: 0xff8
 // Size: 0x1c
 function finalize_initialization(localclientnum) {
@@ -220,7 +220,7 @@ function finalize_initialization(localclientnum) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaf397be3, Offset: 0x1020
 // Size: 0x8e
 function finalize_clientfields() {
@@ -231,7 +231,7 @@ function finalize_clientfields() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x554895ad, Offset: 0x10b8
 // Size: 0x25c
 function finalize_type_clientfields() {
@@ -256,7 +256,7 @@ function finalize_type_clientfields() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xb20bc27f, Offset: 0x1320
 // Size: 0x170
 function validate_info(type, name, version) {
@@ -280,7 +280,7 @@ function validate_info(type, name, version) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe763b154, Offset: 0x1498
 // Size: 0x9c
 function add_sorted_name_key(type, name) {
@@ -293,7 +293,7 @@ function add_sorted_name_key(type, name) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x2dc2bb87, Offset: 0x1540
 // Size: 0x72
 function add_info(type, name, version, lerp_step_count) {
@@ -305,7 +305,7 @@ function add_info(type, name, version, lerp_step_count) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x42f4a9fa, Offset: 0x15c0
 // Size: 0x152
 function register_info(type, name, version, lerp_step_count) {
@@ -324,7 +324,7 @@ function register_info(type, name, version, lerp_step_count) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xe9f332cd, Offset: 0x1720
 // Size: 0xd8
 function slot_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump, type) {
@@ -337,7 +337,7 @@ function slot_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldnam
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2a8f44f0, Offset: 0x1800
 // Size: 0x74
 function visionset_slot_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -345,7 +345,7 @@ function visionset_slot_cb(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf4ca465d, Offset: 0x1880
 // Size: 0x74
 function overlay_slot_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -353,7 +353,7 @@ function overlay_slot_cb(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x702cc35d, Offset: 0x1900
 // Size: 0xd8
 function lerp_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump, type) {
@@ -366,7 +366,7 @@ function lerp_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldnam
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7cb6b820, Offset: 0x19e0
 // Size: 0x74
 function visionset_lerp_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -374,7 +374,7 @@ function visionset_lerp_cb(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb9bd3911, Offset: 0x1a60
 // Size: 0x74
 function overlay_lerp_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -382,7 +382,7 @@ function overlay_lerp_cb(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6c057d8f, Offset: 0x1ae0
 // Size: 0x48
 function get_info(type, slot) {
@@ -390,7 +390,7 @@ function get_info(type, slot) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf6ce26d7, Offset: 0x1b30
 // Size: 0x50
 function get_state(localclientnum, type) {
@@ -401,7 +401,7 @@ function get_state(localclientnum, type) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x67a5ea48, Offset: 0x1b88
 // Size: 0x3a
 function should_update_state() {
@@ -409,7 +409,7 @@ function should_update_state() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x29365799, Offset: 0x1bd0
 // Size: 0x2e
 function transition_state() {
@@ -419,7 +419,7 @@ function transition_state() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x996c7c22, Offset: 0x1c08
 // Size: 0x1c6
 function init_states(localclientnum) {
@@ -444,7 +444,7 @@ function init_states(localclientnum) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa2527c, Offset: 0x1dd8
 // Size: 0x124
 function demo_jump_monitor() {
@@ -467,7 +467,7 @@ function demo_jump_monitor() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdc99c0d, Offset: 0x1f08
 // Size: 0xc8
 function demo_spectate_monitor() {
@@ -491,7 +491,7 @@ function demo_spectate_monitor() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x671281f, Offset: 0x1fd8
 // Size: 0x1a6
 function monitor() {
@@ -520,7 +520,7 @@ function monitor() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x4547f33f, Offset: 0x2188
 // Size: 0x52
 function killcam_visionset_vehicle_mismatch(visionset_to, visionset_vehicle, vehicletype) {
@@ -533,7 +533,7 @@ function killcam_visionset_vehicle_mismatch(visionset_to, visionset_vehicle, veh
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5db3c301, Offset: 0x21e8
 // Size: 0x3e
 function killcam_visionset_player_mismatch(visionset_to, visionset_vehicle) {
@@ -546,7 +546,7 @@ function killcam_visionset_player_mismatch(visionset_to, visionset_vehicle) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfb6b6fbb, Offset: 0x2230
 // Size: 0x33c
 function visionset_update_cb(localclientnum, type) {
@@ -597,7 +597,7 @@ function visionset_update_cb(localclientnum, type) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x115542ca, Offset: 0x2578
 // Size: 0x174
 function set_poison_overlay(amount) {
@@ -614,7 +614,7 @@ function set_poison_overlay(amount) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x70016d6f, Offset: 0x26f8
 // Size: 0x44
 function clear_poison_overlay() {
@@ -623,7 +623,7 @@ function clear_poison_overlay() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8f625e54, Offset: 0x2748
 // Size: 0xab2
 function overlay_update_cb(localclientnum, type) {

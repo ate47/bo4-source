@@ -1,18 +1,18 @@
 {
     "descriptionimage": "#hash_245954b2187c4133",
     "description": "#menu/brightness_desc",
-    "var_60fcfffa": "#menu/on",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 0.2,
+    "hash_60fcfffa": "#menu/on",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 0.2,
     "maxvalue": 1,
     "name": "pc_scene_brightness",
     "displayname": "#menu/brightness",
     "rangestartvalue": -1,
-    "var_d6897f56": 1,
+    "hash_d6897f56": 1,
     "decimalplace": 0.01,
-    "var_66faec87": 1,
+    "hash_66faec87": 1,
     "statname": "r_sceneBrightness",
-    "var_b7401319": "#menu/off"
+    "hash_b7401319": "#menu/off"
 }

@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_hand_gaia/zm_weap_hand_gaia
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcae74d63, Offset: 0x148
 // Size: 0x27a
 function __init__() {
@@ -33,7 +33,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_hand_gaia/zm_weap_hand_gaia
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9e1e2731, Offset: 0x3d0
 // Size: 0x174
 function gaia_impact_zombie_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -56,7 +56,7 @@ function gaia_impact_zombie_fx(localclientnum, oldval, newval, bnewent, binitial
 }
 
 // Namespace zm_weap_hand_gaia/zm_weap_hand_gaia
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xead6c9e0, Offset: 0x550
 // Size: 0xaa
 function mostmost_mo(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -67,7 +67,7 @@ function mostmost_mo(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 }
 
 // Namespace zm_weap_hand_gaia/zm_weap_hand_gaia
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8a2f45f4, Offset: 0x608
 // Size: 0x21c
 function gaia_impact_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -91,7 +91,7 @@ function gaia_impact_fx(localclientnum, oldval, newval, bnewent, binitialsnap, f
 }
 
 // Namespace zm_weap_hand_gaia/zm_weap_hand_gaia
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x814dbb11, Offset: 0x830
 // Size: 0x74
 function function_10485953(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -99,7 +99,7 @@ function function_10485953(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_hand_gaia/zm_weap_hand_gaia
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdf913c8f, Offset: 0x8b0
 // Size: 0x74
 function function_3672d8a5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

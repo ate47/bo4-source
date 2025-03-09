@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "flag_capture_rate_increase",
     "displayname": "#hash_59c9579a0c4f9800",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "flagCaptureRateIncrease",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

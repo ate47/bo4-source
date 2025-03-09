@@ -36,13 +36,13 @@ function init() {
 // Size: 0x14c
 function init_killstreak(bundle) {
     killstreaks::register_bundle(bundle, &activate_vehicle);
-    killstreaks::allow_assists(bundle.var_d3413870, 1);
+    killstreaks::allow_assists(bundle.kstype, 1);
     remote_weapons::registerremoteweapon(bundle.ksweapon.name, #"", &function_c9aa9ee5, &function_8cb72281, 0);
     vehicle::add_main_callback(bundle.ksvehicle, &init_vehicle);
     deployable::register_deployable(bundle.ksweapon, undefined, undefined);
-    level.killstreaks[bundle.var_d3413870].var_b6c17aab = 1;
-    if (isdefined(bundle.var_486124e6)) {
-        visionset_mgr::register_info("overlay", bundle.var_486124e6, 1, 1, 1, 1);
+    level.killstreaks[bundle.kstype].var_b6c17aab = 1;
+    if (isdefined(bundle.ksvehiclepost)) {
+        visionset_mgr::register_info("overlay", bundle.ksvehiclepost, 1, 1, 1, 1);
     }
 }
 
@@ -239,8 +239,8 @@ function function_c9aa9ee5(vehicle) {
     vehicle thread function_22528515();
     vehicle thread watch_water();
     player vehicle::set_vehicle_drivable_time_starting_now(int(vehicle.var_22a05c26.ksduration));
-    if (isdefined(vehicle.var_22a05c26.var_486124e6)) {
-        visionset_mgr::activate("overlay", vehicle.var_22a05c26.var_486124e6, player, 1, 90000, 1);
+    if (isdefined(vehicle.var_22a05c26.ksvehiclepost)) {
+        visionset_mgr::activate("overlay", vehicle.var_22a05c26.ksvehiclepost, player, 1, 90000, 1);
     }
     if (isbot(self)) {
         if (isdefined(vehicle.killstreaktype) && (vehicle.killstreaktype == "recon_car" || vehicle.killstreaktype == "inventory_recon_car")) {
@@ -269,8 +269,8 @@ function function_8cb72281(vehicle, exitrequestedbyowner) {
         vehicle function_1f46c433();
         vehicle thread audio::sndupdatevehiclecontext(0);
     }
-    if (isdefined(vehicle.var_22a05c26.var_486124e6)) {
-        visionset_mgr::deactivate("overlay", vehicle.var_22a05c26.var_486124e6, vehicle.owner);
+    if (isdefined(vehicle.var_22a05c26.ksvehiclepost)) {
+        visionset_mgr::deactivate("overlay", vehicle.var_22a05c26.ksvehiclepost, vehicle.owner);
     }
     vehicle clientfield::set("vehicletransition", 0);
     function_68a07849(vehicle.var_22a05c26, self.remoteowner);
@@ -347,7 +347,7 @@ function watch_water() {
 function watch_timeout() {
     vehicle = self;
     bundle = vehicle.var_22a05c26;
-    vehicle thread killstreaks::waitfortimeout(bundle.var_d3413870, bundle.ksduration, &function_1f46c433, "shutdown");
+    vehicle thread killstreaks::waitfortimeout(bundle.kstype, bundle.ksduration, &function_1f46c433, "shutdown");
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle
@@ -391,7 +391,7 @@ function watch_shutdown(driver) {
     bundle = vehicle.var_22a05c26;
     vehicle notify(#"remote_weapon_shutdown");
     if (isdefined(vehicle.activatingkillstreak) && vehicle.activatingkillstreak) {
-        killstreakrules::killstreakstop(bundle.var_d3413870, vehicle.originalteam, vehicle.killstreak_id);
+        killstreakrules::killstreakstop(bundle.kstype, vehicle.originalteam, vehicle.killstreak_id);
         vehicle function_1f46c433();
         vehicle delete();
     } else {
@@ -441,7 +441,7 @@ function on_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapo
     }
     if (!isdefined(eattacker) || eattacker != self.owner) {
         bundle = self.var_22a05c26;
-        idamage = killstreaks::ondamageperweapon(bundle.var_d3413870, eattacker, idamage, idflags, smeansofdeath, weapon, self.maxhealth, undefined, self.maxhealth * 0.4, undefined, 0, undefined, 1, 1);
+        idamage = killstreaks::ondamageperweapon(bundle.kstype, eattacker, idamage, idflags, smeansofdeath, weapon, self.maxhealth, undefined, self.maxhealth * 0.4, undefined, 0, undefined, 1, 1);
     }
     if (isdefined(eattacker) && isdefined(eattacker.team) && util::function_fbce7263(eattacker.team, self.team)) {
         if (weapon.isemp) {
@@ -463,7 +463,7 @@ function on_death(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, s
     player endon(#"disconnect", #"joined_team", #"joined_spectators");
     bundle = self.var_22a05c26;
     var_7d4f75e = isdefined(vehicle.var_7d4f75e) ? vehicle.var_7d4f75e : 0;
-    var_a9911aeb = bundle.var_d3413870;
+    var_a9911aeb = bundle.kstype;
     var_a8527b41 = vehicle.originalteam;
     var_ebe66d84 = vehicle.killstreak_id;
     if (!var_7d4f75e) {
@@ -555,8 +555,8 @@ function explode(attacker, weapon) {
                     attacker stats::function_e24eec31(bundle.ksweapon, #"destroyed_controlled_killstreak", 1);
                 }
                 if (!var_3906173b) {
-                    self killstreaks::play_destroyed_dialog_on_owner(bundle.var_d3413870, self.killstreak_id);
-                    attacker battlechatter::function_dd6a6012(bundle.var_d3413870, weapon);
+                    self killstreaks::play_destroyed_dialog_on_owner(bundle.kstype, self.killstreak_id);
+                    attacker battlechatter::function_dd6a6012(bundle.kstype, weapon);
                 }
             }
         }

@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace spawning/spawning
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x850f8db2, Offset: 0x520
 // Size: 0x192
 function init_spawn_system() {
@@ -55,7 +55,7 @@ function init_spawn_system() {
 }
 
 // Namespace spawning/spawning
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaffea0e0, Offset: 0x6c0
 // Size: 0x8c
 function on_player_connecting() {
@@ -67,7 +67,7 @@ function on_player_connecting() {
 }
 
 // Namespace spawning/spawning
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x317395a4, Offset: 0x758
 // Size: 0x78
 function on_player_spawned() {
@@ -81,7 +81,7 @@ function on_player_spawned() {
 }
 
 // Namespace spawning/spawning
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8fa998de, Offset: 0x7d8
 // Size: 0x8c
 function ondeath() {
@@ -93,7 +93,7 @@ function ondeath() {
 }
 
 // Namespace spawning/spawning
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6ec0d91e, Offset: 0x870
 // Size: 0x44
 function on_joined_team(params) {
@@ -103,7 +103,7 @@ function on_joined_team(params) {
 }
 
 // Namespace spawning/spawning
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfe0096f8, Offset: 0x8c0
 // Size: 0xc6
 function ongrenadethrow() {
@@ -119,7 +119,7 @@ function ongrenadethrow() {
 }
 
 // Namespace spawning/spawning
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x370ffa46, Offset: 0x990
 // Size: 0x52
 function get_friendly_team_mask(team) {
@@ -132,7 +132,7 @@ function get_friendly_team_mask(team) {
 }
 
 // Namespace spawning/spawning
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9ca5d964, Offset: 0x9f0
 // Size: 0x52
 function get_enemy_team_mask(team) {
@@ -145,7 +145,7 @@ function get_enemy_team_mask(team) {
 }
 
 // Namespace spawning/spawning
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x55895310, Offset: 0xa50
 // Size: 0x68
 function create_influencer(name, origin, team_mask) {
@@ -155,7 +155,7 @@ function create_influencer(name, origin, team_mask) {
 }
 
 // Namespace spawning/spawning
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x9e97491e, Offset: 0xac0
 // Size: 0x78
 function create_friendly_influencer(name, origin, team) {
@@ -165,7 +165,7 @@ function create_friendly_influencer(name, origin, team) {
 }
 
 // Namespace spawning/spawning
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x75dbb3ea, Offset: 0xb40
 // Size: 0x78
 function create_enemy_influencer(name, origin, team) {
@@ -175,7 +175,7 @@ function create_enemy_influencer(name, origin, team) {
 }
 
 // Namespace spawning/spawning
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe57aae28, Offset: 0xbc0
 // Size: 0x48
 function create_entity_influencer(name, team_mask) {
@@ -202,7 +202,7 @@ function create_entity_enemy_influencer(name) {
 }
 
 // Namespace spawning/spawning
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xac48cc51, Offset: 0xcc0
 // Size: 0x48
 function create_entity_masked_friendly_influencer(name, team_mask) {
@@ -211,7 +211,7 @@ function create_entity_masked_friendly_influencer(name, team_mask) {
 }
 
 // Namespace spawning/spawning
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2f1d9d6a, Offset: 0xd10
 // Size: 0x48
 function create_entity_masked_enemy_influencer(name, team_mask) {
@@ -220,7 +220,7 @@ function create_entity_masked_enemy_influencer(name, team_mask) {
 }
 
 // Namespace spawning/spawning
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdced60e8, Offset: 0xd60
 // Size: 0x254
 function create_player_influencers() {
@@ -272,7 +272,7 @@ function remove_influencers() {
 }
 
 // Namespace spawning/spawning
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf81b189e, Offset: 0x1080
 // Size: 0xdc
 function watch_remove_influencer() {
@@ -287,7 +287,7 @@ function watch_remove_influencer() {
 }
 
 // Namespace spawning/spawning
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x80f70c5, Offset: 0x1168
 // Size: 0x88
 function enable_influencers(enabled) {
@@ -297,7 +297,7 @@ function enable_influencers(enabled) {
 }
 
 // Namespace spawning/spawning
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc64c08c4, Offset: 0x11f8
 // Size: 0x44
 function enable_player_influencers(enabled) {
@@ -308,7 +308,7 @@ function enable_player_influencers(enabled) {
 }
 
 // Namespace spawning/spawning
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x754a2c68, Offset: 0x1248
 // Size: 0x1a8
 function player_influencers_set_team() {
@@ -333,7 +333,7 @@ function player_influencers_set_team() {
 }
 
 // Namespace spawning/spawning
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x99b133d8, Offset: 0x13f8
 // Size: 0x10c
 function create_grenade_influencers(parent_team, weapon, grenade) {
@@ -354,7 +354,7 @@ function create_grenade_influencers(parent_team, weapon, grenade) {
 }
 
 // Namespace spawning/spawning
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x99d68a5, Offset: 0x1510
 // Size: 0x7e
 function create_map_placed_influencers() {
@@ -366,7 +366,7 @@ function create_map_placed_influencers() {
 }
 
 // Namespace spawning/spawning
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2b73364b, Offset: 0x1598
 // Size: 0xa0
 function create_map_placed_influencer(influencer_entity) {
@@ -402,7 +402,7 @@ function updateallspawnpoints() {
 }
 
 // Namespace spawning/spawning
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6779ffe0, Offset: 0x17f8
 // Size: 0x146
 function onspawnplayer_unified(predictedspawn = 0) {
@@ -490,7 +490,7 @@ function get_debug_spawnpoint(player) {
 }
 
 // Namespace spawning/spawning
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xe2e4f90e, Offset: 0x1cf0
 // Size: 0x1b0
 function get_best_spawnpoint(point_team, influencer_team, player, predictedspawn) {
@@ -508,7 +508,7 @@ function get_best_spawnpoint(point_team, influencer_team, player, predictedspawn
 }
 
 // Namespace spawning/spawning
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x35851388, Offset: 0x1ea8
 // Size: 0xca
 function gatherspawnpoints(player_team) {
@@ -546,7 +546,7 @@ function teams_have_enmity(team1, team2) {
 }
 
 // Namespace spawning/spawning
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x79c4a0e3, Offset: 0x2038
 // Size: 0x226
 function remove_unused_spawn_entities() {
@@ -581,7 +581,7 @@ function remove_unused_spawn_entities() {
 }
 
 // Namespace spawning/spawning
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3b3bd5c0, Offset: 0x2268
 // Size: 0x4e
 function delete_all_spawns(spawnpoints) {
@@ -591,7 +591,7 @@ function delete_all_spawns(spawnpoints) {
 }
 
 // Namespace spawning/spawning
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8f8d6070, Offset: 0x22c0
 // Size: 0x6c
 function spawn_point_class_name_being_used(name) {

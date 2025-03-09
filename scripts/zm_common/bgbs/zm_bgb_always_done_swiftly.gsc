@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_always_done_swiftly/zm_bgb_always_done_swiftly
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc9b150d3, Offset: 0x100
 // Size: 0x74
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_always_done_swiftly/zm_bgb_always_done_swiftly
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc48deecc, Offset: 0x180
 // Size: 0x44
 function enable() {
@@ -33,7 +33,7 @@ function enable() {
 }
 
 // Namespace zm_bgb_always_done_swiftly/zm_bgb_always_done_swiftly
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf7c5bb70, Offset: 0x1d0
 // Size: 0x44
 function disable() {

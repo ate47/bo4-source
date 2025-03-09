@@ -7,7 +7,7 @@
 #namespace icepick;
 
 // Namespace icepick/gadget_icepick_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe95909ae, Offset: 0x3c8
 // Size: 0x6c
 function init_shared() {
@@ -24,7 +24,7 @@ function init_shared() {
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x802bcad0, Offset: 0x440
 // Size: 0xda
 function function_b53fa4ba(entity) {
@@ -42,7 +42,7 @@ function function_b53fa4ba(entity) {
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdd7fb740, Offset: 0x528
 // Size: 0x196
 function function_b2755499(weapon, entity) {
@@ -75,7 +75,7 @@ function function_b2755499(weapon, entity) {
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xee6bd5a3, Offset: 0x6c8
 // Size: 0x4c4
 function private registerclientfields() {
@@ -100,7 +100,7 @@ function private registerclientfields() {
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x37ab8d8c, Offset: 0xb98
 // Size: 0x66
 function function_45e26cb2(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -112,7 +112,7 @@ function function_45e26cb2(local_client_num, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x58d4c8d7, Offset: 0xc08
 // Size: 0xfc
 function function_d3c5b110(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -130,7 +130,7 @@ function function_d3c5b110(local_client_num, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x756d6aa2, Offset: 0xd10
 // Size: 0x2ce
 function function_39f69700(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -166,7 +166,7 @@ function function_39f69700(local_client_num, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x850008db, Offset: 0xfe8
 // Size: 0x26c
 function function_ca096bad(model, index, namehash, entnum, category, categoryindex, weapon) {
@@ -189,7 +189,7 @@ function function_ca096bad(model, index, namehash, entnum, category, categoryind
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xabf87136, Offset: 0x1260
 // Size: 0x162
 function function_808efdee(hacker, entity, weapon) {
@@ -215,7 +215,7 @@ function function_808efdee(hacker, entity, weapon) {
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x11d6bae0, Offset: 0x13d0
 // Size: 0xf8
 function function_8d50c205(left, right) {
@@ -228,7 +228,7 @@ function function_8d50c205(left, right) {
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x664225a8, Offset: 0x14d0
 // Size: 0x380
 function function_adceefd(local_client_num, hacker) {
@@ -271,7 +271,7 @@ function function_adceefd(local_client_num, hacker) {
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x3130a27d, Offset: 0x1858
 // Size: 0x10c
 function watchfordeath(local_client_num, entity, index) {
@@ -288,7 +288,7 @@ function watchfordeath(local_client_num, entity, index) {
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x81ab0d84, Offset: 0x1970
 // Size: 0x58c
 function function_9e88e881(local_client_num) {
@@ -343,7 +343,7 @@ function function_9e88e881(local_client_num) {
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2cdf27e, Offset: 0x1f08
 // Size: 0x124
 function function_868adc20(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -363,7 +363,7 @@ function function_868adc20(local_client_num, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf4660742, Offset: 0x2038
 // Size: 0xce
 function icepick_on(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -378,7 +378,7 @@ function icepick_on(local_client_num, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4806162e, Offset: 0x2110
 // Size: 0xf4
 function function_4a82368f(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -397,7 +397,7 @@ function function_4a82368f(local_client_num, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x632f7fd5, Offset: 0x2210
 // Size: 0xf0
 function private function_67b9bc99(player, local_client_num) {
@@ -410,7 +410,7 @@ function private function_67b9bc99(player, local_client_num) {
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x85f0f988, Offset: 0x2308
 // Size: 0x19c
 function function_d96f79be(local_client_num, oldval, newval, bwastimejump) {
@@ -442,7 +442,7 @@ function function_d96f79be(local_client_num, oldval, newval, bwastimejump) {
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x470b181c, Offset: 0x24b0
 // Size: 0x232
 function private function_34aba8d8(local_client_num, targetid, newval) {
@@ -474,7 +474,7 @@ function private function_34aba8d8(local_client_num, targetid, newval) {
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xeba9ae7a, Offset: 0x26f0
 // Size: 0x1a8
 function function_91803954(local_client_num, oldval, newval) {
@@ -510,7 +510,7 @@ function function_91803954(local_client_num, oldval, newval) {
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3a7d9481, Offset: 0x28a0
 // Size: 0x12c
 function function_1238516b(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -531,7 +531,7 @@ function function_1238516b(local_client_num, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace icepick/gadget_icepick_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8cd5640d, Offset: 0x29d8
 // Size: 0x3c
 function function_fd2904cd(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

@@ -25,7 +25,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zombie_tiger_util/ai_tiger_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x61f94a66, Offset: 0x1a0
 // Size: 0xb4
 function __init__() {
@@ -38,7 +38,7 @@ function __init__() {
 }
 
 // Namespace zombie_tiger_util/ai_tiger_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8288f6f7, Offset: 0x260
 // Size: 0x7c
 function __main__() {
@@ -47,7 +47,7 @@ function __main__() {
 }
 
 // Namespace zombie_tiger_util/ai_tiger_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe65fa07, Offset: 0x2e8
 // Size: 0xac
 function function_fe4c8547() {
@@ -61,7 +61,7 @@ function function_fe4c8547() {
 }
 
 // Namespace zombie_tiger_util/ai_tiger_util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1c76925c, Offset: 0x3a0
 // Size: 0x1e8
 function spawn_single(b_force_spawn = 0, var_eb3a8721) {
@@ -94,7 +94,7 @@ function spawn_single(b_force_spawn = 0, var_eb3a8721) {
 }
 
 // Namespace zombie_tiger_util/ai_tiger_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7bec0d6f, Offset: 0x590
 // Size: 0x9a
 function function_66cfd7d() {
@@ -107,7 +107,7 @@ function function_66cfd7d() {
 }
 
 // Namespace zombie_tiger_util/ai_tiger_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa22240bc, Offset: 0x638
 // Size: 0xf8
 function function_cbfb0da4() {
@@ -133,7 +133,7 @@ function function_cbfb0da4() {
 }
 
 // Namespace zombie_tiger_util/ai_tiger_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4779da8c, Offset: 0x738
 // Size: 0xbc
 function function_ba8172ca() {
@@ -148,7 +148,7 @@ function function_ba8172ca() {
 }
 
 // Namespace zombie_tiger_util/ai_tiger_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcb62ab7e, Offset: 0x800
 // Size: 0xd0
 function function_ffa01525() {
@@ -171,7 +171,7 @@ function function_ffa01525() {
 }
 
 // Namespace zombie_tiger_util/ai_tiger_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4fd8c79d, Offset: 0x8d8
 // Size: 0x54
 function function_94c9b195() {
@@ -182,7 +182,7 @@ function function_94c9b195() {
 }
 
 // Namespace zombie_tiger_util/ai_tiger_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa4da1771, Offset: 0x938
 // Size: 0xc2
 function function_235d0eb6(var_dbce0c44) {
@@ -195,7 +195,7 @@ function function_235d0eb6(var_dbce0c44) {
 }
 
 // Namespace zombie_tiger_util/ai_tiger_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4e3b861d, Offset: 0xa08
 // Size: 0x3c
 function round_spawn() {

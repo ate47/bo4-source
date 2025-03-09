@@ -20,7 +20,7 @@
     "modelscale": 1,
     "rarity": "None",
     "equipsound": "uin_wz_perk_paranoia",
-    "var_38f854e5": 1,
+    "hash_38f854e5": 1,
     "handler": "#generic_pickup",
     "itemtype": "generic"
 }

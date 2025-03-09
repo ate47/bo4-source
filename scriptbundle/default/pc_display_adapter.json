@@ -7,15 +7,15 @@
     ],
     "descriptionimage": "#hash_70dc2e854a9bef43",
     "description": "#hash_2d582f809040fce",
-    "var_60fcfffa": "#menu/on",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#menu/on",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "pc_display_adapter",
     "displayname": "#hash_7c0dd842de54f87e",
-    "var_66faec87": 10,
+    "hash_66faec87": 10,
     "statname": "r_forceAdapter",
-    "var_b7401319": "#menu/off"
+    "hash_b7401319": "#menu/off"
 }

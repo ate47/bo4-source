@@ -38,7 +38,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8e21f656, Offset: 0x2d8
 // Size: 0x34
 function __init__() {
@@ -48,7 +48,7 @@ function __init__() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5dfc93ad, Offset: 0x318
 // Size: 0xa4
 function __main__() {
@@ -64,7 +64,7 @@ function __main__() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x462b6829, Offset: 0x3c8
 // Size: 0x98
 function function_60a6c623() {
@@ -75,7 +75,7 @@ function function_60a6c623() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5b10c0c5, Offset: 0x468
 // Size: 0x27c
 function setup_craftfoundry(craftfoundry) {
@@ -83,7 +83,7 @@ function setup_craftfoundry(craftfoundry) {
         if (!(isdefined(craftfoundry.loaded) && craftfoundry.loaded)) {
             craftfoundry.loaded = 1;
             craftfoundry.blueprints = [];
-            switch (craftfoundry.var_2a2adea3) {
+            switch (craftfoundry.blueprintcount) {
             case 8:
                 craftfoundry.blueprints[7] = function_b18074d0(craftfoundry.blueprint08);
             case 7:
@@ -110,7 +110,7 @@ function setup_craftfoundry(craftfoundry) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1dbb003, Offset: 0x6f0
 // Size: 0x248
 function setup_tables() {
@@ -143,7 +143,7 @@ function setup_tables() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8a225b6a, Offset: 0x940
 // Size: 0x96
 function reset_table() {
@@ -155,7 +155,7 @@ function reset_table() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4532f60, Offset: 0x9e0
 // Size: 0x88
 function function_c1552513(name) {
@@ -170,7 +170,7 @@ function function_c1552513(name) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc458eb91, Offset: 0xa70
 // Size: 0x4e8
 function function_b18074d0(name) {
@@ -184,19 +184,19 @@ function function_b18074d0(name) {
             case 8:
                 blueprint.components[7] = get_component(blueprint.var_f4d434cb, blueprint);
             case 7:
-                blueprint.components[6] = get_component(blueprint.var_e71f1961, blueprint);
+                blueprint.components[6] = get_component(blueprint.component07, blueprint);
             case 6:
                 blueprint.components[5] = get_component(blueprint.registerperk_packa_seepainterminate, blueprint);
             case 5:
-                blueprint.components[4] = get_component(blueprint.var_4282502a, blueprint);
+                blueprint.components[4] = get_component(blueprint.component05, blueprint);
             case 4:
-                blueprint.components[3] = get_component(blueprint.var_7b8e4241, blueprint);
+                blueprint.components[3] = get_component(blueprint.component04, blueprint);
             case 3:
-                blueprint.components[2] = get_component(blueprint.var_2e0a273a, blueprint);
+                blueprint.components[2] = get_component(blueprint.component03, blueprint);
             case 2:
-                blueprint.components[1] = get_component(blueprint.var_670f9944, blueprint);
+                blueprint.components[1] = get_component(blueprint.component02, blueprint);
             case 1:
-                blueprint.components[0] = get_component(blueprint.var_99577dd3, blueprint);
+                blueprint.components[0] = get_component(blueprint.component01, blueprint);
                 break;
             }
             blueprint.var_54a97edd = get_component(blueprint.result, blueprint);
@@ -223,7 +223,7 @@ function function_b18074d0(name) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x281804f0, Offset: 0xf60
 // Size: 0x260
 function get_component(component, blueprint) {
@@ -259,7 +259,7 @@ function get_component(component, blueprint) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xc96a13fe, Offset: 0x11c8
 // Size: 0xf0
 function private function_40f32480() {
@@ -273,7 +273,7 @@ function private function_40f32480() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc49f82a7, Offset: 0x12c0
 // Size: 0x5e
 function function_728a82e0(blueprint) {
@@ -285,7 +285,7 @@ function function_728a82e0(blueprint) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4321d4a7, Offset: 0x1328
 // Size: 0xd8
 function function_31d883d7() {
@@ -304,7 +304,7 @@ function function_31d883d7() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x778183e7, Offset: 0x1408
 // Size: 0x1a4
 function function_4165306b(player) {
@@ -335,7 +335,7 @@ function function_4165306b(player) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5c478bd9, Offset: 0x15b8
 // Size: 0x9a
 function function_6d1e4410(player, blueprint) {
@@ -348,7 +348,7 @@ function function_6d1e4410(player, blueprint) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3ff68145, Offset: 0x1660
 // Size: 0xa8
 function function_6f635422(player, blueprint) {
@@ -360,7 +360,7 @@ function function_6f635422(player, blueprint) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe12f4caa, Offset: 0x1710
 // Size: 0x11c
 function function_7a8f3cbd() {
@@ -370,7 +370,7 @@ function function_7a8f3cbd() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb605ee7e, Offset: 0x1838
 // Size: 0xa8
 function function_7362ecc8(player, unitrigger) {
@@ -388,7 +388,7 @@ function function_7362ecc8(player, unitrigger) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xae9af54c, Offset: 0x18e8
 // Size: 0x18
 function function_8962a3bb(player, unitrigger) {
@@ -396,7 +396,7 @@ function function_8962a3bb(player, unitrigger) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x97bc6341, Offset: 0x1908
 // Size: 0x64
 function function_735c3a67(player, unitrigger) {
@@ -408,7 +408,7 @@ function function_735c3a67(player, unitrigger) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xac7522f8, Offset: 0x1978
 // Size: 0x54
 function function_f7dbfdf9(player, unitrigger) {
@@ -419,7 +419,7 @@ function function_f7dbfdf9(player, unitrigger) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb7c71f51, Offset: 0x19d8
 // Size: 0x54
 function function_d95a600f(player, unitrigger) {
@@ -430,7 +430,7 @@ function function_d95a600f(player, unitrigger) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa2d50ed7, Offset: 0x1a38
 // Size: 0x36
 function function_73f3bb03(player, unitrigger) {
@@ -439,7 +439,7 @@ function function_73f3bb03(player, unitrigger) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcdf1d140, Offset: 0x1a78
 // Size: 0x7c
 function function_7bffa1ac(weapon) {
@@ -453,7 +453,7 @@ function function_7bffa1ac(weapon) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xef2d3b6a, Offset: 0x1b00
 // Size: 0x52
 function function_2d53738e(weapon) {
@@ -464,7 +464,7 @@ function function_2d53738e(weapon) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2ffd9d3, Offset: 0x1b60
 // Size: 0x36
 function function_48ce9379(weapon) {
@@ -475,7 +475,7 @@ function function_48ce9379(weapon) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xea09ab22, Offset: 0x1ba0
 // Size: 0x1b8
 function function_126fc77c(player) {
@@ -503,7 +503,7 @@ function function_126fc77c(player) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x976dcc53, Offset: 0x1d60
 // Size: 0x8a8
 function function_f665fde0(trig) {
@@ -622,7 +622,7 @@ function function_f665fde0(trig) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x95225d8c, Offset: 0x2610
 // Size: 0x22c
 function function_987a472(modelname, blueprint) {
@@ -658,7 +658,7 @@ function function_987a472(modelname, blueprint) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x477bd8b2, Offset: 0x2848
 // Size: 0x78
 function private function_356e77bd() {
@@ -671,7 +671,7 @@ function private function_356e77bd() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe4191ae, Offset: 0x28c8
 // Size: 0x108
 function private function_514b8f17(player) {
@@ -692,7 +692,7 @@ function private function_514b8f17(player) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x69041ab7, Offset: 0x29d8
 // Size: 0xb8
 function function_ca244624(var_55426150) {
@@ -706,7 +706,7 @@ function function_ca244624(var_55426150) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x46e35e1a, Offset: 0x2a98
 // Size: 0x1b2
 function function_d1f16587(var_55426150, func) {
@@ -729,7 +729,7 @@ function function_d1f16587(var_55426150, func) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7e3686ea, Offset: 0x2c58
 // Size: 0xec
 function function_86531922(e_holder, w_item) {
@@ -745,7 +745,7 @@ function function_86531922(e_holder, w_item) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5796deb1, Offset: 0x2d50
 // Size: 0x164
 function function_d56724a6(e_holder, w_item) {
@@ -769,7 +769,7 @@ function function_d56724a6(e_holder, w_item) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x8700e8b, Offset: 0x2ec0
 // Size: 0x214
 function private function_475a63eb() {
@@ -785,7 +785,7 @@ function private function_475a63eb() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x39003422, Offset: 0x30e0
 // Size: 0xae
 function private function_e1eeba22(state, var_a3d8c117, var_ea7ebe1f, var_aee03b4c, var_cb2020d8) {
@@ -799,7 +799,7 @@ function private function_e1eeba22(state, var_a3d8c117, var_ea7ebe1f, var_aee03b
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2931311d, Offset: 0x3198
 // Size: 0xdc
 function private function_35f5c90b(state) {
@@ -822,7 +822,7 @@ function private function_35f5c90b(state) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb3deb050, Offset: 0x3280
 // Size: 0x174
 function function_18f2be60(player) {
@@ -852,7 +852,7 @@ function function_18f2be60(player) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8fa00a3e, Offset: 0x3400
 // Size: 0x10c
 function crafting_think() {
@@ -869,7 +869,7 @@ function crafting_think() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x80f724d1, Offset: 0x3518
 // Size: 0x4
 function private function_b03ccfce() {
@@ -877,7 +877,7 @@ function private function_b03ccfce() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xabae9005, Offset: 0x3528
 // Size: 0x1c
 function private function_f189f7f(player) {
@@ -886,7 +886,7 @@ function private function_f189f7f(player) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe88da27c, Offset: 0x3550
 // Size: 0xc
 function private function_5a4c40a2(player) {
@@ -894,7 +894,7 @@ function private function_5a4c40a2(player) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf27584f5, Offset: 0x3568
 // Size: 0x3be
 function private function_8109ae21(player) {
@@ -949,7 +949,7 @@ function private function_8109ae21(player) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe4614690, Offset: 0x3930
 // Size: 0x102
 function private function_d564a5c0(player) {
@@ -981,7 +981,7 @@ function private function_d564a5c0(player) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcbeed9cd, Offset: 0x3a40
 // Size: 0x614
 function private function_f37c4bb5(player) {
@@ -1008,12 +1008,12 @@ function private function_f37c4bb5(player) {
         self.stub.crafted = 1;
         player_crafted = player;
         self.stub.blueprint.completed = 1;
-        if (isdefined(self.stub.blueprint.var_d8967a0c) && self.stub.blueprint.var_d8967a0c) {
+        if (isdefined(self.stub.blueprint.takecomponents) && self.stub.blueprint.takecomponents) {
             function_6f635422(player, self.stub.blueprint);
         }
         level notify(#"blueprint_completed", {#blueprint:self.stub.blueprint, #produced:self.stub.blueprint.var_54a97edd, #player:player});
         player notify(#"blueprint_completed", {#blueprint:self.stub.blueprint, #produced:self.stub.blueprint.var_54a97edd});
-        if (self.stub.blueprint.var_46309255 === "persistent_buy" || self.stub.blueprint.var_46309255 === "buy_once_then_box" || self.stub.blueprint.var_46309255 === "spawn_as_ingredient") {
+        if (self.stub.blueprint.postcraft === "persistent_buy" || self.stub.blueprint.postcraft === "buy_once_then_box" || self.stub.blueprint.postcraft === "spawn_as_ingredient") {
             function_987a472(self.stub.blueprint.var_54a97edd.worldmodel, self.stub.blueprint);
         }
         if (isdefined(player_crafted)) {
@@ -1035,8 +1035,8 @@ function private function_f37c4bb5(player) {
                 e_player zm_stats::increment_challenge_stat(#"shields_built", undefined, 1);
             }
         }
-        if (isdefined(self.stub.blueprint.var_46309255)) {
-            self.stub function_35f5c90b(self.stub.blueprint.var_46309255);
+        if (isdefined(self.stub.blueprint.postcraft)) {
+            self.stub function_35f5c90b(self.stub.blueprint.postcraft);
         }
     }
 }
@@ -1059,7 +1059,7 @@ function function_a187b293(player) {
     self.var_9c8338de = a_s_blueprints.size;
     self.crafted = 1;
     self.blueprint.completed = 1;
-    if (self.blueprint.var_46309255 === "persistent_buy" || self.blueprint.var_46309255 === "buy_once_then_box" || self.blueprint.var_46309255 === "spawn_as_ingredient") {
+    if (self.blueprint.postcraft === "persistent_buy" || self.blueprint.postcraft === "buy_once_then_box" || self.blueprint.postcraft === "spawn_as_ingredient") {
         function_987a472(self.blueprint.var_54a97edd.worldmodel, self.blueprint);
     }
     if (isdefined(self.craftfoundry.callback_funcs)) {
@@ -1067,13 +1067,13 @@ function function_a187b293(player) {
             self thread [[ func ]](player);
         }
     }
-    if (isdefined(self.blueprint.var_46309255)) {
-        self function_35f5c90b(self.blueprint.var_46309255);
+    if (isdefined(self.blueprint.postcraft)) {
+        self function_35f5c90b(self.blueprint.postcraft);
     }
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xceae0cc2, Offset: 0x4268
 // Size: 0x1c
 function private function_578c67bf() {
@@ -1081,7 +1081,7 @@ function private function_578c67bf() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x38f2444a, Offset: 0x4290
 // Size: 0x134
 function private function_3c45b116() {
@@ -1108,7 +1108,7 @@ function private function_3c45b116() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xa920c4cf, Offset: 0x43d0
 // Size: 0x114
 function private function_230f6303() {
@@ -1134,7 +1134,7 @@ function private function_230f6303() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x882e1e19, Offset: 0x44f0
 // Size: 0x464
 function private function_9693e041(player) {
@@ -1190,7 +1190,7 @@ function private function_9693e041(player) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbc258ac3, Offset: 0x4960
 // Size: 0x3c
 function function_c9163c5d(str) {
@@ -1201,7 +1201,7 @@ function function_c9163c5d(str) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd10d50cc, Offset: 0x49a8
 // Size: 0x24a
 function function_ceac3bf9(player, b_repaired = 0) {
@@ -1257,7 +1257,7 @@ function function_ceac3bf9(player, b_repaired = 0) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x8b445692, Offset: 0x4c00
 // Size: 0xce
 function private function_86cab486() {
@@ -1286,7 +1286,7 @@ function private function_86cab486() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x83e33362, Offset: 0x4cd8
 // Size: 0x68
 function function_fccf9f0d() {
@@ -1302,7 +1302,7 @@ function function_fccf9f0d() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x11ede08d, Offset: 0x4d48
 // Size: 0x830
 function private function_df8ce6e2(player) {
@@ -1401,7 +1401,7 @@ function private function_df8ce6e2(player) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x6a63cfa8, Offset: 0x5580
 // Size: 0x46
 function private function_d94efa98() {
@@ -1413,7 +1413,7 @@ function private function_d94efa98() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xd4f952e7, Offset: 0x55d0
 // Size: 0x44
 function private function_6e16f902() {
@@ -1424,7 +1424,7 @@ function private function_6e16f902() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x52b851a7, Offset: 0x5620
 // Size: 0xde
 function private function_15d10d06(player) {
@@ -1442,7 +1442,7 @@ function private function_15d10d06(player) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x6c5fb3b9, Offset: 0x5708
 // Size: 0x274
 function private function_42673a26(player) {

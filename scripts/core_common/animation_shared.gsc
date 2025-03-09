@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace animation/animation_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbdff7af0, Offset: 0x378
 // Size: 0xf4
 function __init__() {
@@ -35,7 +35,7 @@ function __init__() {
 }
 
 // Namespace animation/animation_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe40dc791, Offset: 0x478
 // Size: 0x64
 function reset_player() {
@@ -61,7 +61,7 @@ function last_frame(animation, v_origin_or_ent, v_angles_or_tag) {
 }
 
 // Namespace animation/animation_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc4f90006, Offset: 0x588
 // Size: 0xf4
 function play_siege(str_anim, n_rate = 1) {
@@ -78,7 +78,7 @@ function play_siege(str_anim, n_rate = 1) {
 }
 
 // Namespace animation/animation_shared
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0xdea617b7, Offset: 0x688
 // Size: 0x172
 function play(animation, v_origin_or_ent, v_angles_or_tag, n_rate = 1, n_blend_in = 0.2, n_blend_out = 0.2, n_lerp = 0, n_start_time = 0, b_show_player_firstperson_weapon = 0, b_unlink_after_completed = 1, var_f4b34dc1, paused) {
@@ -93,7 +93,7 @@ function play(animation, v_origin_or_ent, v_angles_or_tag, n_rate = 1, n_blend_i
 }
 
 // Namespace animation/animation_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa324f881, Offset: 0x808
 // Size: 0x5c
 function stop(n_blend = 0.2) {
@@ -132,7 +132,7 @@ function stop(n_blend = 0.2) {
 #/
 
 // Namespace animation/animation_shared
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x5d8a8cdb, Offset: 0xa80
 // Size: 0x7e4
 function _play(animation, v_origin_or_ent, v_angles_or_tag, n_rate, n_blend_in, n_blend_out, n_lerp, n_start_time, b_show_player_firstperson_weapon, b_unlink_after_completed, var_f4b34dc1, paused) {
@@ -238,7 +238,7 @@ function _play(animation, v_origin_or_ent, v_angles_or_tag, n_rate, n_blend_in, 
 }
 
 // Namespace animation/animation_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5aa39617, Offset: 0x1270
 // Size: 0x3e
 function function_2adc2518(str_notify) {
@@ -250,7 +250,7 @@ function function_2adc2518(str_notify) {
 }
 
 // Namespace animation/animation_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xfd988471, Offset: 0x12b8
 // Size: 0x162
 function _blend_out(animation, n_blend, n_rate, n_start_time) {
@@ -268,7 +268,7 @@ function _blend_out(animation, n_blend, n_rate, n_start_time) {
 }
 
 // Namespace animation/animation_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3c02ebe2, Offset: 0x1428
 // Size: 0x4e
 function _get_align_ent(e_align) {
@@ -283,7 +283,7 @@ function _get_align_ent(e_align) {
 }
 
 // Namespace animation/animation_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc8df083d, Offset: 0x1480
 // Size: 0x1a6
 function _get_align_pos(v_origin_or_ent = self.origin, v_angles_or_tag = isdefined(self.angles) ? self.angles : (0, 0, 0)) {
@@ -330,7 +330,7 @@ function teleport(animation, v_origin_or_ent, v_angles_or_tag, time = 0) {
 }
 
 // Namespace animation/animation_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xf2d2980f, Offset: 0x17a0
 // Size: 0xa4
 function reach(animation, v_origin_or_ent, v_angles_or_tag, b_disable_arrivals = 0) {
@@ -341,7 +341,7 @@ function reach(animation, v_origin_or_ent, v_angles_or_tag, b_disable_arrivals =
 }
 
 // Namespace animation/animation_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x6bd20df7, Offset: 0x1850
 // Size: 0x3c6
 function _reach(s_tracker, animation, v_origin_or_ent, v_angles_or_tag, b_disable_arrivals = 0) {
@@ -404,7 +404,7 @@ function _reach(s_tracker, animation, v_origin_or_ent, v_angles_or_tag, b_disabl
 #/
 
 // Namespace animation/animation_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7819536c, Offset: 0x1ce0
 // Size: 0xa2
 function set_death_anim(animation, v_origin_or_ent, v_angles_or_tag, n_rate, n_blend_in, n_blend_out, n_lerp) {
@@ -418,7 +418,7 @@ function set_death_anim(animation, v_origin_or_ent, v_angles_or_tag, n_rate, n_b
 }
 
 // Namespace animation/animation_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5113c9b7, Offset: 0x1d90
 // Size: 0xb4
 function _do_death_anim(animation, v_origin_or_ent, v_angles_or_tag, n_rate, n_blend_in, n_blend_out, n_lerp) {
@@ -430,7 +430,7 @@ function _do_death_anim(animation, v_origin_or_ent, v_angles_or_tag, n_rate, n_b
 }
 
 // Namespace animation/animation_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x466918a4, Offset: 0x1e50
 // Size: 0x54
 function set_player_clamps() {
@@ -440,7 +440,7 @@ function set_player_clamps() {
 }
 
 // Namespace animation/animation_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5ca64e17, Offset: 0x1eb0
 // Size: 0x7a
 function add_notetrack_func(funcname, func) {
@@ -452,7 +452,7 @@ function add_notetrack_func(funcname, func) {
 }
 
 // Namespace animation/animation_shared
-// Params 4, eflags: 0x21 linked variadic
+// Params 4, eflags: 0x20 variadic
 // Checksum 0x2e251bd5, Offset: 0x1f38
 // Size: 0x128
 function add_global_notetrack_handler(str_note, func, pass_notify_params, ...) {
@@ -471,7 +471,7 @@ function add_global_notetrack_handler(str_note, func, pass_notify_params, ...) {
 }
 
 // Namespace animation/animation_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf1e24ee8, Offset: 0x2068
 // Size: 0x118
 function call_notetrack_handler(str_note, param1, param2) {
@@ -490,7 +490,7 @@ function call_notetrack_handler(str_note, param1, param2) {
 }
 
 // Namespace animation/animation_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x27d18359, Offset: 0x2188
 // Size: 0x3ec
 function setup_notetracks() {
@@ -518,7 +518,7 @@ function setup_notetracks() {
 }
 
 // Namespace animation/animation_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfea4d261, Offset: 0x2580
 // Size: 0xce
 function handle_notetracks(animation) {
@@ -537,7 +537,7 @@ function handle_notetracks(animation) {
 }
 
 // Namespace animation/animation_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7871723a, Offset: 0x2658
 // Size: 0xe2
 function cracks_on(str_type) {
@@ -558,7 +558,7 @@ function cracks_on(str_type) {
 }
 
 // Namespace animation/animation_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7210dc84, Offset: 0x2748
 // Size: 0xe2
 function cracks_off(str_type) {
@@ -579,7 +579,7 @@ function cracks_off(str_type) {
 }
 
 // Namespace animation/animation_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6cd093fb, Offset: 0x2838
 // Size: 0x74
 function enable_headlook(b_on = 1) {
@@ -593,7 +593,7 @@ function enable_headlook(b_on = 1) {
 }
 
 // Namespace animation/animation_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xde646d56, Offset: 0x28b8
 // Size: 0x7c
 function enable_headlook_notorso(b_on = 1) {
@@ -607,7 +607,7 @@ function enable_headlook_notorso(b_on = 1) {
 }
 
 // Namespace animation/animation_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3b42315, Offset: 0x2940
 // Size: 0x26
 function is_valid_weapon(weaponobject) {
@@ -615,7 +615,7 @@ function is_valid_weapon(weaponobject) {
 }
 
 // Namespace animation/animation_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb7b6458e, Offset: 0x2970
 // Size: 0x162
 function attach_weapon(weaponobject, tag = "tag_weapon_right") {
@@ -643,7 +643,7 @@ function attach_weapon(weaponobject, tag = "tag_weapon_right") {
 }
 
 // Namespace animation/animation_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf170e8af, Offset: 0x2ae0
 // Size: 0xe2
 function detach_weapon(weaponobject, tag = "tag_weapon_right") {
@@ -662,7 +662,7 @@ function detach_weapon(weaponobject, tag = "tag_weapon_right") {
 }
 
 // Namespace animation/animation_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9472576b, Offset: 0x2bd0
 // Size: 0x154
 function fire_weapon() {
@@ -677,7 +677,7 @@ function fire_weapon() {
 }
 
 // Namespace animation/animation_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6c0a644a, Offset: 0x2d30
 // Size: 0x26c
 function function_eb0aa7cf(n_pulse = 100, bone) {

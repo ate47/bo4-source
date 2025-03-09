@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_cooldown/zm_perk_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7b7a7177, Offset: 0x1c8
 // Size: 0x14
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_cooldown/zm_perk_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1e8
 // Size: 0x4
 function __main__() {
@@ -37,7 +37,7 @@ function __main__() {
 }
 
 // Namespace zm_perk_cooldown/zm_perk_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x20bd7a96, Offset: 0x1f8
 // Size: 0x23c
 function enable_cooldown_perk_for_level() {
@@ -54,7 +54,7 @@ function enable_cooldown_perk_for_level() {
 }
 
 // Namespace zm_perk_cooldown/zm_perk_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x440
 // Size: 0x4
 function init_cooldown() {
@@ -62,7 +62,7 @@ function init_cooldown() {
 }
 
 // Namespace zm_perk_cooldown/zm_perk_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5fc47951, Offset: 0x450
 // Size: 0x10e
 function function_14afd300() {
@@ -78,7 +78,7 @@ function function_14afd300() {
 }
 
 // Namespace zm_perk_cooldown/zm_perk_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x568
 // Size: 0x4
 function function_eaa4f1a1() {
@@ -86,7 +86,7 @@ function function_eaa4f1a1() {
 }
 
 // Namespace zm_perk_cooldown/zm_perk_cooldown
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2d9d8b63, Offset: 0x578
 // Size: 0xc
 function function_bfc02d23(state) {
@@ -94,7 +94,7 @@ function function_bfc02d23(state) {
 }
 
 // Namespace zm_perk_cooldown/zm_perk_cooldown
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xf703117c, Offset: 0x590
 // Size: 0xb6
 function function_cf203b00(use_trigger, perk_machine, bump_trigger, collision) {
@@ -118,7 +118,7 @@ function function_8ba0e035() {
 }
 
 // Namespace zm_perk_cooldown/zm_perk_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x690
 // Size: 0x4
 function function_44cf89d3() {
@@ -126,7 +126,7 @@ function function_44cf89d3() {
 }
 
 // Namespace zm_perk_cooldown/zm_perk_cooldown
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x2a783576, Offset: 0x6a0
 // Size: 0x24
 function function_d0623d8c(b_pause, str_perk, str_result, n_slot) {

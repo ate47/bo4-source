@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "competitive_team_lives",
     "displayname": "#hash_2424c71957fea4fc",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "competitiveTeamLives",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

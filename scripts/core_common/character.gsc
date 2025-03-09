@@ -119,9 +119,11 @@ function get_random_character(amount) {
     if (!isdefined(index)) {
         index = get_least_used_index(prefix, group);
         if (!isdefined(index)) {
+            index = randomint(5000);
         }
     }
-    for (index = randomint(5000); index >= amount; index -= amount) {
+    while (index >= amount) {
+        index -= amount;
     }
     level.character_index_cache[prefix][group][index]++;
     return index;

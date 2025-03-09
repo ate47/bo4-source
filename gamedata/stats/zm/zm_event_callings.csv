@@ -1,8 +1,8 @@
-1,#zm_halloween_2018,1,1500,#kills,#hash_1cccdf3e71b5d14b,1000,#reward_1
-1,#zm_halloween_2018,2,100,#survive_rounds,#hash_6f9cb804872fc35a,2500,#reward_2
-1,#zm_halloween_2018,3,1000,#headshots,#hash_187aad79c5ab44c,5000,#reward_3
-1,#zm_halloween_2018,4,1000,#repacked_kills,#hash_757868a69a92efa7,10000,#reward_4
-2,#zm_winter_2018,1,100,#kills_melee,#hash_7d094b545b332880,1000,#reward_1
-2,#zm_winter_2018,2,20,#boxbuys,#hash_26554bd9ba571ffd,2500,#reward_2
-2,#zm_winter_2018,3,1500,#kills_lmg,#hash_7116f3eec93fa7e1,5000,#reward_3
-2,#zm_winter_2018,4,15,#perks_used,#hash_364f446240a6108d,10000,#reward_4
+1,#zm_halloween_2018,1,1500,#kills,7#hash_1cccdf3e71b5d14b,1000,#reward_1
+1,#zm_halloween_2018,2,100,#survive_rounds,7#hash_6f9cb804872fc35a,2500,#reward_2
+1,#zm_halloween_2018,3,1000,#headshots,7#hash_187aad79c5ab44c,5000,#reward_3
+1,#zm_halloween_2018,4,1000,#repacked_kills,7#hash_757868a69a92efa7,10000,#reward_4
+2,#zm_winter_2018,1,100,#kills_melee,7#hash_7d094b545b332880,1000,#reward_1
+2,#zm_winter_2018,2,20,#boxbuys,7#hash_26554bd9ba571ffd,2500,#reward_2
+2,#zm_winter_2018,3,1500,#kills_lmg,7#hash_7116f3eec93fa7e1,5000,#reward_3
+2,#zm_winter_2018,4,15,#perks_used,7#hash_364f446240a6108d,10000,#reward_4

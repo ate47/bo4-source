@@ -1,0 +1,22 @@
+{
+    "name": "#hash_7ecd376f9782832",
+    "baseWeapon": "#hash_3507beb47a6b634e",
+    "displayname": "#hash_657e961b97734a8f",
+    "unk70": "#gadget_health_regen",
+    "streamkey": "#hash_35d5d6771e0721c4",
+    "sound240": "#hash_447be07e5ef9bfe0",
+    "sound250": "#uin_unavailable_charging",
+    "sound320": "#hash_307304d46846fc74",
+    "sound3b0": "#hash_390aa7d4252c46b5",
+    "sound660": "#uin_unavailable_charging",
+    "tunables1": "#hash_1d94f391be0",
+    "viewmodel": "#hash_1d93f05d590",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [
+        "#hash_2624c86681a513d3"
+    ],
+    "gadgetIconAvailable": "#hash_754ad869787d7ac0",
+    "gadgetIconUnavailable": "#hash_754ad869787d7ac0",
+    "image_d48": "#$blacktransparent",
+    "underwaterExplosionSurfaceFX": []
+}

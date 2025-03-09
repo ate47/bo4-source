@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6825a180, Offset: 0x190
 // Size: 0xec
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7ed781b4, Offset: 0x288
 // Size: 0x182
 function init_dog_fx() {
@@ -42,7 +42,7 @@ function init_dog_fx() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd79da4f5, Offset: 0x418
 // Size: 0x46c
 function dog_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -82,7 +82,7 @@ function dog_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x43f919db, Offset: 0x890
 // Size: 0x74
 function dog_spawn_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -90,7 +90,7 @@ function dog_spawn_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xacaa680, Offset: 0x910
 // Size: 0xd4
 function dog_round_fog_bank(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -104,7 +104,7 @@ function dog_round_fog_bank(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0xa2cfae5f, Offset: 0x9f0
 // Size: 0x198
 function private function_33593a44(localclientnum, var_312d65d1, var_68f7ce2e, n_time = 3) {

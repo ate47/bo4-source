@@ -29,7 +29,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace wz_escape_alt/wz_escape_alt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x48348403, Offset: 0x2a8
 // Size: 0x2c
 function function_e656c6cb() {

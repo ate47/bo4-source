@@ -7,7 +7,7 @@
 class cscavenger_icon : cluielem {
 
     // Namespace cscavenger_icon/scavenger_icon
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xe043b1b9, Offset: 0x320
     // Size: 0x6c
     function increment_pulse(localclientnum) {
@@ -17,7 +17,7 @@ class cscavenger_icon : cluielem {
     }
 
     // Namespace cscavenger_icon/scavenger_icon
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x62dcc94f, Offset: 0x2e8
     // Size: 0x2c
     function open(localclientnum) {
@@ -25,7 +25,7 @@ class cscavenger_icon : cluielem {
     }
 
     // Namespace cscavenger_icon/scavenger_icon
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x8692cda2, Offset: 0x2a0
     // Size: 0x40
     function function_fa582112(localclientnum) {
@@ -34,7 +34,7 @@ class cscavenger_icon : cluielem {
     }
 
     // Namespace cscavenger_icon/scavenger_icon
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x584e9e2c, Offset: 0x270
     // Size: 0x24
     function register_clientside(uid) {
@@ -42,7 +42,7 @@ class cscavenger_icon : cluielem {
     }
 
     // Namespace cscavenger_icon/scavenger_icon
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x28ad2964, Offset: 0x210
     // Size: 0x54
     function setup_clientfields(uid, var_bea2552f) {
@@ -53,7 +53,7 @@ class cscavenger_icon : cluielem {
 }
 
 // Namespace scavenger_icon/scavenger_icon
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb31ccee8, Offset: 0xb0
 // Size: 0x4c
 function register(uid, var_bea2552f) {

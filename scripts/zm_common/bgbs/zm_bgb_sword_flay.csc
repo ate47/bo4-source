@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_sword_flay/zm_bgb_sword_flay
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdf6867d, Offset: 0xd0
 // Size: 0x4c
 function __init__() {

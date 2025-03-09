@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace ambient/ambient
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3fcc32b2, Offset: 0x2d0
 // Size: 0x24
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace ambient/ambient
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc57f8330, Offset: 0x300
 // Size: 0x54
 function on_player_connect(localclientnum) {
@@ -58,7 +58,7 @@ function setup_point_fx(point, fx_id) {
 }
 
 // Namespace ambient/ambient
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x68d786e5, Offset: 0x4a0
 // Size: 0x1b0
 function ambient_flak_think(point) {
@@ -73,11 +73,13 @@ function ambient_flak_think(point) {
     level thread ambient_flak_rotate(point);
     level thread ambient_flak_flash(point, min_burst_time, max_burst_time);
     for (;;) {
-        for (timer = randomfloatrange(min_burst_time, max_burst_time); timer > 0; timer -= 0.2) {
+        timer = randomfloatrange(min_burst_time, max_burst_time);
+        while (timer > 0) {
             point.is_firing = 1;
             playfx(0, level._effect[point.fx_id], point.origin, point.forward, point.up);
             thread sound::play_in_space(0, "wpn_triple25_fire", point.origin);
             wait 0.2;
+            timer -= 0.2;
         }
         point.is_firing = 0;
         wait randomfloatrange(min_delay, max_delay);
@@ -85,7 +87,7 @@ function ambient_flak_think(point) {
 }
 
 // Namespace ambient/ambient
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x88227f33, Offset: 0x658
 // Size: 0x1ee
 function ambient_flak_rotate(point) {
@@ -115,7 +117,7 @@ function ambient_flak_rotate(point) {
 }
 
 // Namespace ambient/ambient
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x3feb6c66, Offset: 0x850
 // Size: 0x1b0
 function ambient_flak_flash(point, min_burst_time, max_burst_time) {
@@ -145,7 +147,7 @@ function ambient_flak_flash(point, min_burst_time, max_burst_time) {
 }
 
 // Namespace ambient/ambient
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa0e7fd47, Offset: 0xa08
 // Size: 0x7b0
 function ambient_fakefire_think(point) {
@@ -302,7 +304,7 @@ function ambient_fakefire_think(point) {
 }
 
 // Namespace ambient/ambient
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd11a7ec9, Offset: 0x11c0
 // Size: 0x64
 function ceiling_fans_init(clientnum) {
@@ -313,7 +315,7 @@ function ceiling_fans_init(clientnum) {
 }
 
 // Namespace ambient/ambient
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xabf8c252, Offset: 0x1230
 // Size: 0x1c6
 function spin_fan() {
@@ -348,7 +350,7 @@ function spin_fan() {
 }
 
 // Namespace ambient/ambient
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xedf61764, Offset: 0x1400
 // Size: 0x3b4
 function clocks_init(clientnum) {
@@ -394,7 +396,7 @@ function clocks_init(clientnum) {
 }
 
 // Namespace ambient/ambient
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc47b3297, Offset: 0x17c0
 // Size: 0x438
 function clock_run(time_values) {
@@ -472,7 +474,7 @@ function clock_run(time_values) {
 }
 
 // Namespace ambient/ambient
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcb58d50d, Offset: 0x1c00
 // Size: 0xbc
 function spin_anemometers(clientnum) {
@@ -487,7 +489,7 @@ function spin_anemometers(clientnum) {
 }
 
 // Namespace ambient/ambient
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd923ea7a, Offset: 0x1cc8
 // Size: 0xae
 function spoon_spin_func() {
@@ -505,7 +507,7 @@ function spoon_spin_func() {
 }
 
 // Namespace ambient/ambient
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x978a7fb4, Offset: 0x1d80
 // Size: 0x146
 function arrow_spin_func() {

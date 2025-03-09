@@ -30,15 +30,15 @@
 
 // Namespace riotshield/zm_weap_riotshield
 // Params 0, eflags: 0x2
-// Checksum 0xa0439153, Offset: 0x240
+// Checksum 0xf84a1f5a, Offset: 0x240
 // Size: 0x44
 function autoexec __init__system__() {
     system::register(#"zm_equip_riotshield", &__init__, &__main__, undefined);
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 0, eflags: 0x1 linked
-// Checksum 0xdc3f0851, Offset: 0x290
+// Params 0, eflags: 0x0
+// Checksum 0x4edbe05c, Offset: 0x290
 // Size: 0x464
 function __init__() {
     if (!isdefined(level.weaponriotshield)) {
@@ -87,16 +87,16 @@ function __init__() {
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 0, eflags: 0x1 linked
-// Checksum 0x6725bef5, Offset: 0x700
+// Params 0, eflags: 0x0
+// Checksum 0x4fdc2821, Offset: 0x700
 // Size: 0x1c
 function __main__() {
     level thread function_d987f765();
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 0, eflags: 0x1 linked
-// Checksum 0x5d16dd14, Offset: 0x728
+// Params 0, eflags: 0x0
+// Checksum 0xb3658857, Offset: 0x728
 // Size: 0x7c
 function on_player_connect() {
     self.player_shield_reset_health = &player_init_shield_health;
@@ -109,8 +109,8 @@ function on_player_connect() {
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 2, eflags: 0x1 linked
-// Checksum 0x8bce4e18, Offset: 0x7b0
+// Params 2, eflags: 0x0
+// Checksum 0xbf616f0a, Offset: 0x7b0
 // Size: 0x270
 function player_init_shield_health(weapon, var_cd9d17e0 = 0) {
     self endon(#"disconnect");
@@ -155,7 +155,7 @@ function player_init_shield_health(weapon, var_cd9d17e0 = 0) {
 
 // Namespace riotshield/zm_weap_riotshield
 // Params 2, eflags: 0x0
-// Checksum 0x74d27707, Offset: 0xa28
+// Checksum 0xfac9bc18, Offset: 0xa28
 // Size: 0x64
 function player_set_shield_health(damage, max_damage) {
     self endon(#"disconnect");
@@ -164,8 +164,8 @@ function player_set_shield_health(damage, max_damage) {
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 0, eflags: 0x1 linked
-// Checksum 0xeed09e22, Offset: 0xa98
+// Params 0, eflags: 0x0
+// Checksum 0xe0c8ff82, Offset: 0xa98
 // Size: 0x1cc
 function function_d987f765() {
     level endon(#"game_ended");
@@ -188,23 +188,23 @@ function function_d987f765() {
 
 // Namespace riotshield/zm_weap_riotshield
 // Params 4, eflags: 0x0
-// Checksum 0x8ae20e5b, Offset: 0xc70
+// Checksum 0x5d0ad36d, Offset: 0xc70
 // Size: 0x24
 function player_shield_absorb_damage(eattacker, idamage, shitloc, smeansofdeath) {
     
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 1, eflags: 0x1 linked
-// Checksum 0xf4bfe4b8, Offset: 0xca0
+// Params 1, eflags: 0x0
+// Checksum 0x225bdc33, Offset: 0xca0
 // Size: 0xc
 function callback_playershielddamageblocked(damage) {
     
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 3, eflags: 0x1 linked
-// Checksum 0x16a34a89, Offset: 0xcb8
+// Params 3, eflags: 0x0
+// Checksum 0x75ed93bc, Offset: 0xcb8
 // Size: 0x128
 function player_shield_facing_attacker(vdir, limit, attacker) {
     orientation = self getplayerangles();
@@ -219,8 +219,8 @@ function player_shield_facing_attacker(vdir, limit, attacker) {
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 10, eflags: 0x1 linked
-// Checksum 0x2b4a5678, Offset: 0xde8
+// Params 10, eflags: 0x0
+// Checksum 0xd42f5c90, Offset: 0xde8
 // Size: 0x192
 function should_shield_absorb_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime) {
     if (isdefined(self.hasriotshield) && self.hasriotshield && isdefined(vdir)) {
@@ -242,8 +242,8 @@ function should_shield_absorb_damage(einflictor, eattacker, idamage, idflags, sm
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 10, eflags: 0x1 linked
-// Checksum 0x6129d0e2, Offset: 0xf88
+// Params 10, eflags: 0x0
+// Checksum 0xf3657099, Offset: 0xf88
 // Size: 0x1aa
 function player_damage_override_callback(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime) {
     friendly_fire = isdefined(eattacker) && eattacker.team === self.team;
@@ -265,8 +265,8 @@ function player_damage_override_callback(einflictor, eattacker, idamage, idflags
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 5, eflags: 0x1 linked
-// Checksum 0xadcec36e, Offset: 0x1140
+// Params 5, eflags: 0x0
+// Checksum 0x6bc66b0, Offset: 0x1140
 // Size: 0x2e4
 function player_damage_shield(idamage, bheld, fromcode = 0, smod = "MOD_UNKNOWN", var_4e0da269 = 1) {
     self endon(#"disconnect");
@@ -315,8 +315,8 @@ function player_damage_shield(idamage, bheld, fromcode = 0, smod = "MOD_UNKNOWN"
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 0, eflags: 0x1 linked
-// Checksum 0x57964854, Offset: 0x1430
+// Params 0, eflags: 0x0
+// Checksum 0xbcfb8e49, Offset: 0x1430
 // Size: 0x32
 function function_d24e0d61() {
     var_41f4ea3c = self.var_9c2026aa + namespace_e38c57c1::function_cbf286b0();
@@ -324,8 +324,8 @@ function function_d24e0d61() {
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 12, eflags: 0x1 linked
-// Checksum 0x979379a1, Offset: 0x1470
+// Params 12, eflags: 0x0
+// Checksum 0x4fc08b98, Offset: 0x1470
 // Size: 0x11c
 function function_4aa5e0c7(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
     if (weapon.isriotshield && meansofdeath != "MOD_MELEE" && meansofdeath != "MOD_IMPACT" && meansofdeath != "MOD_ELECTROCUTED") {
@@ -336,8 +336,8 @@ function function_4aa5e0c7(inflictor, attacker, damage, flags, meansofdeath, wea
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 0, eflags: 0x1 linked
-// Checksum 0xee01beaf, Offset: 0x1598
+// Params 0, eflags: 0x0
+// Checksum 0x6b4574b8, Offset: 0x1598
 // Size: 0xd0
 function player_watch_weapon_change() {
     self endon(#"disconnect");
@@ -354,8 +354,8 @@ function player_watch_weapon_change() {
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 0, eflags: 0x1 linked
-// Checksum 0xb7a83c00, Offset: 0x1670
+// Params 0, eflags: 0x0
+// Checksum 0xeebc249d, Offset: 0x1670
 // Size: 0x74
 function player_watch_shield_melee() {
     self endon(#"disconnect");
@@ -368,8 +368,8 @@ function player_watch_shield_melee() {
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 0, eflags: 0x1 linked
-// Checksum 0x96e676f2, Offset: 0x16f0
+// Params 0, eflags: 0x0
+// Checksum 0x7031151e, Offset: 0x16f0
 // Size: 0x74
 function player_watch_shield_melee_power() {
     self endon(#"disconnect");
@@ -382,8 +382,8 @@ function player_watch_shield_melee_power() {
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 3, eflags: 0x1 linked
-// Checksum 0x5c530a21, Offset: 0x1770
+// Params 3, eflags: 0x0
+// Checksum 0x3d4738d4, Offset: 0x1770
 // Size: 0x11c
 function riotshield_fling_zombie(player, fling_vec, index) {
     if (!isdefined(self) || !isalive(self)) {
@@ -404,8 +404,8 @@ function riotshield_fling_zombie(player, fling_vec, index) {
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 3, eflags: 0x1 linked
-// Checksum 0x814a8b2c, Offset: 0x1898
+// Params 3, eflags: 0x0
+// Checksum 0x4bc4e235, Offset: 0x1898
 // Size: 0x194
 function riotshield_knockdown_zombie(player, gib, weapon) {
     self endon(#"death");
@@ -428,8 +428,8 @@ function riotshield_knockdown_zombie(player, gib, weapon) {
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 6, eflags: 0x1 linked
-// Checksum 0x78ab503b, Offset: 0x1a38
+// Params 6, eflags: 0x0
+// Checksum 0x4d6110e5, Offset: 0x1a38
 // Size: 0xa2e
 function riotshield_get_enemies_in_range(riotshield_knockdown_range, riotshield_gib_range, riotshield_fling_range, var_1c3d89, riotshield_cylinder_radius, riotshield_fling_force_melee) {
     view_pos = self geteye();
@@ -477,7 +477,7 @@ function riotshield_get_enemies_in_range(riotshield_knockdown_range, riotshield_
         }
     #/
     foreach (e_target in a_e_targets) {
-        if (!isalive(e_target) || !isdefined(e_target.var_6f84b820)) {
+        if (!isalive(e_target) || !isdefined(e_target.zm_ai_category)) {
             continue;
         }
         test_origin = e_target getcentroid();
@@ -497,7 +497,7 @@ function riotshield_get_enemies_in_range(riotshield_knockdown_range, riotshield_
         if (0 == e_target damageconetrace(view_pos, self)) {
             continue;
         }
-        switch (e_target.var_6f84b820) {
+        switch (e_target.zm_ai_category) {
         case #"basic":
         case #"enhanced":
             if (test_range_squared < fling_range_squared) {
@@ -563,8 +563,8 @@ function riotshield_get_enemies_in_range(riotshield_knockdown_range, riotshield_
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 7, eflags: 0x1 linked
-// Checksum 0xfa0693bf, Offset: 0x2470
+// Params 7, eflags: 0x0
+// Checksum 0xfaca95f6, Offset: 0x2470
 // Size: 0x434
 function riotshield_melee(weapon, riotshield_knockdown_range, riotshield_gib_range, riotshield_fling_range, var_1c3d89, riotshield_cylinder_radius, riotshield_fling_force_melee) {
     if (!isdefined(level.riotshield_knockdown_enemies)) {
@@ -596,7 +596,7 @@ function riotshield_melee(weapon, riotshield_knockdown_range, riotshield_gib_ran
         shield_damage += zombie_utility::get_zombie_var(#"riotshield_knockdown_damage_shield");
     }
     foreach (ai_enemy in level.var_21ffc192) {
-        switch (ai_enemy.var_6f84b820) {
+        switch (ai_enemy.zm_ai_category) {
         case #"heavy":
         case #"miniboss":
         case #"boss":
@@ -622,8 +622,8 @@ function riotshield_melee(weapon, riotshield_knockdown_range, riotshield_gib_ran
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 0, eflags: 0x1 linked
-// Checksum 0x5741011c, Offset: 0x28b0
+// Params 0, eflags: 0x0
+// Checksum 0xb436d3c0, Offset: 0x28b0
 // Size: 0x1e4
 function updateriotshieldmodel() {
     self endon(#"disconnect");
@@ -659,8 +659,8 @@ function updateriotshieldmodel() {
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 0, eflags: 0x1 linked
-// Checksum 0x473d0a31, Offset: 0x2aa0
+// Params 0, eflags: 0x0
+// Checksum 0x4564e2bd, Offset: 0x2aa0
 // Size: 0x142
 function player_take_riotshield() {
     self notify(#"destroy_riotshield");
@@ -686,8 +686,8 @@ function player_take_riotshield() {
 }
 
 // Namespace riotshield/zm_weap_riotshield
-// Params 0, eflags: 0x1 linked
-// Checksum 0xa99f8d12, Offset: 0x2bf0
+// Params 0, eflags: 0x0
+// Checksum 0x28d6e82, Offset: 0x2bf0
 // Size: 0x192
 function function_a9109d26() {
     self endon(#"death");

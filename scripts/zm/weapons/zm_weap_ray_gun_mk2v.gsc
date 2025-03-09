@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1bad242f, Offset: 0x1b8
 // Size: 0x374
 function __init__() {
@@ -54,7 +54,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfcc5d8f1, Offset: 0x538
 // Size: 0xfc
 function on_weapon_fired(weapon) {
@@ -72,7 +72,7 @@ function on_weapon_fired(weapon) {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x210c27a6, Offset: 0x640
 // Size: 0x54
 function on_ai_killed(s_params) {
@@ -82,7 +82,7 @@ function on_ai_killed(s_params) {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x77ed273d, Offset: 0x6a0
 // Size: 0x3c
 function function_4e923311(weapon) {
@@ -90,7 +90,7 @@ function function_4e923311(weapon) {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x29d08e36, Offset: 0x6e8
 // Size: 0x1c4
 function function_8d93c592(w_curr) {
@@ -107,7 +107,7 @@ function function_8d93c592(w_curr) {
         #/
         if (isdefined(a_trace[#"entity"])) {
             e_last_target = a_trace[#"entity"];
-            if (isdefined(e_last_target.var_6f84b820) && e_last_target.team !== #"allies" || isdefined(e_last_target.male_head)) {
+            if (isdefined(e_last_target.zm_ai_category) && e_last_target.team !== #"allies" || isdefined(e_last_target.male_head)) {
                 self thread function_5c035588(e_last_target, var_1c218ece, w_curr);
             }
         }
@@ -117,7 +117,7 @@ function function_8d93c592(w_curr) {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4364454b, Offset: 0x8b8
 // Size: 0xdc
 function function_f8fdc6ad(w_curr) {
@@ -130,7 +130,7 @@ function function_f8fdc6ad(w_curr) {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcb572edf, Offset: 0x9a0
 // Size: 0x76
 function stop_beam(s_notify) {
@@ -141,7 +141,7 @@ function stop_beam(s_notify) {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x32ef7023, Offset: 0xa20
 // Size: 0x1ca
 function private get_closest_tag(v_pos) {
@@ -176,7 +176,7 @@ function private get_closest_tag(v_pos) {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x64fab0c0, Offset: 0xbf8
 // Size: 0x2ec
 function private function_5c035588(e_target, v_target_pos, w_curr, b_launched = 0, var_9a119ceb = 0) {
@@ -207,7 +207,7 @@ function private function_5c035588(e_target, v_target_pos, w_curr, b_launched = 
         }
         e_target dodamage(n_damage, v_target_pos, self, self, str_hitloc, "MOD_UNKNOWN", 0, w_curr);
     }
-    if (b_launched && (e_target.var_6f84b820 === #"basic" || e_target.var_6f84b820 === #"enhanced")) {
+    if (b_launched && (e_target.zm_ai_category === #"basic" || e_target.zm_ai_category === #"enhanced")) {
         n_random_x = randomfloatrange(-3, 3);
         n_random_y = randomfloatrange(-3, 3);
         v_fling = 200 * vectornormalize(e_target.origin - v_target_pos + (n_random_x, n_random_y, 100));
@@ -216,7 +216,7 @@ function private function_5c035588(e_target, v_target_pos, w_curr, b_launched = 
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x31acd090, Offset: 0xef0
 // Size: 0x8c
 function function_3ac73c92(e_player, b_upgraded) {
@@ -234,7 +234,7 @@ function function_3ac73c92(e_player, b_upgraded) {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf7cb8264, Offset: 0xf88
 // Size: 0x4a
 function function_3821f26e() {
@@ -245,7 +245,7 @@ function function_3821f26e() {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x44d50920, Offset: 0xfe0
 // Size: 0x1e8
 function function_58fb8f5e(e_player, b_upgraded = 0) {
@@ -272,7 +272,7 @@ function function_58fb8f5e(e_player, b_upgraded = 0) {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x98fb1ee7, Offset: 0x11d0
 // Size: 0x84
 function function_2c08b6ac(e_player) {
@@ -287,7 +287,7 @@ function function_2c08b6ac(e_player) {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfcb5e4d4, Offset: 0x1260
 // Size: 0x8c
 function function_57f0555a(e_player) {
@@ -299,7 +299,7 @@ function function_57f0555a(e_player) {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8ef6215c, Offset: 0x12f8
 // Size: 0x4c
 function function_ae5c4e8b() {
@@ -310,7 +310,7 @@ function function_ae5c4e8b() {
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe40011d4, Offset: 0x1350
 // Size: 0x12c
 function function_6f9fb9d7(e_source, e_target) {

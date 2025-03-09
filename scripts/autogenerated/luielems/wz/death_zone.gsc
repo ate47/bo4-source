@@ -7,14 +7,14 @@
 // Method(s) 6 Total 13
 class cdeath_zone : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cdeath_zone/death_zone
     // Params 2, eflags: 0x0
     // Checksum 0xed54badf, Offset: 0x2c8
     // Size: 0x3c
     function set_shutdown_sec(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "shutdown_sec", value);
+        player clientfield::function_9bf78ef8(_uid, "shutdown_sec", value);
     }
 
     // Namespace cdeath_zone/death_zone

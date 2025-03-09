@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace mp_mountain2_scripted/mp_mountain2_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7181033c, Offset: 0x120
 // Size: 0x24
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace mp_mountain2_scripted/mp_mountain2_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7d3b3d93, Offset: 0x150
 // Size: 0x34
 function __main__() {
@@ -36,7 +36,7 @@ function __main__() {
 }
 
 // Namespace mp_mountain2_scripted/mp_mountain2_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6b16757c, Offset: 0x190
 // Size: 0x7c
 function on_game_playing() {
@@ -48,7 +48,7 @@ function on_game_playing() {
 }
 
 // Namespace mp_mountain2_scripted/mp_mountain2_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaf74f6e2, Offset: 0x218
 // Size: 0xdc
 function function_2cdcf5c3() {

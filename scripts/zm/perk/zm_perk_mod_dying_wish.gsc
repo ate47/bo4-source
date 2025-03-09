@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_dying_wish/zm_perk_mod_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x31905e07, Offset: 0xe0
 // Size: 0x14
 function __init__() {
@@ -20,7 +20,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_dying_wish/zm_perk_mod_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x100
 // Size: 0x4
 function __main__() {
@@ -28,7 +28,7 @@ function __main__() {
 }
 
 // Namespace zm_perk_mod_dying_wish/zm_perk_mod_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9d0d1c45, Offset: 0x110
 // Size: 0x94
 function function_7186a3aa() {
@@ -37,7 +37,7 @@ function function_7186a3aa() {
 }
 
 // Namespace zm_perk_mod_dying_wish/zm_perk_mod_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1b0
 // Size: 0x4
 function function_fb91d1a() {
@@ -45,7 +45,7 @@ function function_fb91d1a() {
 }
 
 // Namespace zm_perk_mod_dying_wish/zm_perk_mod_dying_wish
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x7de5da40, Offset: 0x1c0
 // Size: 0x24
 function function_63f21c1e(b_pause, str_perk, str_result, n_slot) {

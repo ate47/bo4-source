@@ -14,7 +14,7 @@ class squad {
     var squadmembers;
 
     // Namespace squad/ai_squads
-    // Params 0, eflags: 0x9 linked
+    // Params 0, eflags: 0x8
     // Checksum 0x9c3729b9, Offset: 0x170
     // Size: 0x26
     constructor() {
@@ -24,7 +24,7 @@ class squad {
     }
 
     // Namespace squad/ai_squads
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xff993b77, Offset: 0x388
     // Size: 0x86
     function think() {
@@ -40,7 +40,7 @@ class squad {
     }
 
     // Namespace squad/ai_squads
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x864d5361, Offset: 0x320
     // Size: 0x5e
     function removeaifromsqaud(ai) {
@@ -53,7 +53,7 @@ class squad {
     }
 
     // Namespace squad/ai_squads
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x55856af, Offset: 0x290
     // Size: 0x86
     function addaitosquad(ai) {
@@ -66,7 +66,7 @@ class squad {
     }
 
     // Namespace squad/ai_squads
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xd12a356b, Offset: 0x278
     // Size: 0xa
     function getmembers() {
@@ -74,7 +74,7 @@ class squad {
     }
 
     // Namespace squad/ai_squads
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xc47f015, Offset: 0x260
     // Size: 0xa
     function getleader() {
@@ -82,7 +82,7 @@ class squad {
     }
 
     // Namespace squad/ai_squads
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xa64e689e, Offset: 0x248
     // Size: 0xa
     function getsquadbreadcrumb() {
@@ -90,7 +90,7 @@ class squad {
     }
 
     // Namespace squad/ai_squads
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xc64824e6, Offset: 0x1a0
     // Size: 0x9e
     function addsquadbreadcrumbs(ai) {
@@ -114,7 +114,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace aisquads/ai_squads
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe67bfc17, Offset: 0xf8
 // Size: 0x6c
 function __init__() {
@@ -124,7 +124,7 @@ function __init__() {
 }
 
 // Namespace aisquads/ai_squads
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7e557816, Offset: 0x608
 // Size: 0x3c
 function private createsquad(squadname) {
@@ -133,7 +133,7 @@ function private createsquad(squadname) {
 }
 
 // Namespace aisquads/ai_squads
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xdf15700b, Offset: 0x650
 // Size: 0x44
 function private removesquad(squadname) {
@@ -143,7 +143,7 @@ function private removesquad(squadname) {
 }
 
 // Namespace aisquads/ai_squads
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd20c7723, Offset: 0x6a0
 // Size: 0x1c
 function private getsquad(squadname) {
@@ -151,7 +151,7 @@ function private getsquad(squadname) {
 }
 
 // Namespace aisquads/ai_squads
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe0e8ddf7, Offset: 0x6c8
 // Size: 0x5c
 function private thinksquad(squadname) {
@@ -166,7 +166,7 @@ function private thinksquad(squadname) {
 }
 
 // Namespace aisquads/ai_squads
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x11a3634c, Offset: 0x730
 // Size: 0x60
 function private squadmemberdeath() {
@@ -177,7 +177,7 @@ function private squadmemberdeath() {
 }
 
 // Namespace aisquads/ai_squads
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xf4938fb4, Offset: 0x798
 // Size: 0x416
 function private squadmemberthink() {
@@ -263,7 +263,7 @@ function isfollowingsquadleader(ai) {
 }
 
 // Namespace aisquads/ai_squads
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x589cde66, Offset: 0xc80
 // Size: 0x66
 function issquadmember(ai) {
@@ -292,7 +292,7 @@ function issquadleader(ai) {
 }
 
 // Namespace aisquads/ai_squads
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2dae9864, Offset: 0xd70
 // Size: 0x56
 function getsquadleader(ai) {

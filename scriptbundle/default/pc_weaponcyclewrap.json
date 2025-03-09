@@ -1,18 +1,18 @@
 {
     "descriptionimage": "#hash_1fa2283fa1a27106",
     "description": "#hash_4a19a26ee633ba6a",
-    "var_60fcfffa": "#menu/off",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#menu/off",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "pc_weaponcyclewrap",
     "displayname": "#hash_c2fe70754ba42da",
     "decimalplace": 1,
-    "var_66faec87": 500,
+    "hash_66faec87": 500,
     "statname": "weapon_cycle_disable_wrap",
-    "var_82c732a7": 1,
-    "var_d4e288e": 100,
-    "var_b7401319": "#menu/on"
+    "isenableddisabled": 1,
+    "hash_d4e288e": 100,
+    "hash_b7401319": "#menu/on"
 }

@@ -3,10 +3,10 @@
     "relateditemname": "#weapon/ar_modular_t8",
     "contracttitle": "#hash_4e6d1f0c88daebf4",
     "name": "loot_contract_kn57_mastercraft",
-    "var_69b5a265": "core_frontend_ar_modular_sig_03",
-    "var_4b258f2c": "#hash_2a235cef5326f65",
+    "hash_69b5a265": "core_frontend_ar_modular_sig_03",
+    "hash_4b258f2c": "#hash_2a235cef5326f65",
     "contractdescription": "#hash_7680bf2bc2219eb1",
-    "var_f15e270f": "#white",
-    "var_1c057e8c": "#hash_43547709e854b7aa",
-    "var_e08fc162": "#hash_38a22173c1eaa7fc"
+    "hash_f15e270f": "#white",
+    "hash_1c057e8c": "#hash_43547709e854b7aa",
+    "hash_e08fc162": "#hash_38a22173c1eaa7fc"
 }

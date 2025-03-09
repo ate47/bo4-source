@@ -6,7 +6,7 @@
     "vmtype": "client",
     "end_effect": "#hash_595ec25b8b3b0e9b",
     "name": "zm_aoe_spear_small",
-    "var_a8609f98": "damage_light",
+    "hash_a8609f98": "damage_light",
     "endrumble": "damage_heavy",
     "earthquakeduration": 2,
     "loop_effect": "#hash_154f7e9ec688102d",

@@ -9,7 +9,7 @@
     "model": "#attach_t8_wz_pickup_fast_mag",
     "type": "itemspawnentry",
     "hintstring": "#wz/attach_fastmag",
-    "var_65b3a12": 1,
+    "hash_65b3a12": 1,
     "name": "fastmag_wz_item",
     "displayname": "#wz/attach_fastmag",
     "icon": "#ui_icon_attachment_fastmags",

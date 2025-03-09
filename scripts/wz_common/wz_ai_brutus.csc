@@ -11,15 +11,15 @@
 
 // Namespace wz_ai_brutus/wz_ai_brutus
 // Params 0, eflags: 0x2
-// Checksum 0x42408c7d, Offset: 0x1c8
+// Checksum 0x41f9d8a1, Offset: 0x1c8
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zm_ai_brutus", &__init__, undefined, undefined);
 }
 
 // Namespace wz_ai_brutus/wz_ai_brutus
-// Params 0, eflags: 0x1 linked
-// Checksum 0x3394dc3f, Offset: 0x210
+// Params 0, eflags: 0x0
+// Checksum 0xf17d9f33, Offset: 0x210
 // Size: 0x13c
 function __init__() {
     clientfield::register("actor", "brutus_shock_attack", 15000, 1, "counter", &brutus_shock_attack_fx, 0, 0);
@@ -30,24 +30,24 @@ function __init__() {
 }
 
 // Namespace wz_ai_brutus/wz_ai_brutus
-// Params 1, eflags: 0x1 linked
-// Checksum 0xdc76e51, Offset: 0x358
+// Params 1, eflags: 0x0
+// Checksum 0x9504acb, Offset: 0x358
 // Size: 0x2c
 function function_c7251e62(localclientnum) {
     self callback::on_shutdown(&on_entity_shutdown);
 }
 
 // Namespace wz_ai_brutus/wz_ai_brutus
-// Params 1, eflags: 0x1 linked
-// Checksum 0xccddc171, Offset: 0x390
+// Params 1, eflags: 0x0
+// Checksum 0x93a55c8b, Offset: 0x390
 // Size: 0xc
 function on_entity_shutdown(localclientnum) {
     
 }
 
 // Namespace wz_ai_brutus/wz_ai_brutus
-// Params 7, eflags: 0x1 linked
-// Checksum 0x2dd74acb, Offset: 0x3a8
+// Params 7, eflags: 0x0
+// Checksum 0xb2d1394a, Offset: 0x3a8
 // Size: 0x10c
 function function_80adaab1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     self util::waittill_dobj(localclientnum);
@@ -66,8 +66,8 @@ function function_80adaab1(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace wz_ai_brutus/wz_ai_brutus
-// Params 7, eflags: 0x1 linked
-// Checksum 0x7fea24bf, Offset: 0x4c0
+// Params 7, eflags: 0x0
+// Checksum 0xc84b35b4, Offset: 0x4c0
 // Size: 0xfc
 function brutus_shock_attack_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     self util::waittill_dobj(localclientnum);
@@ -83,16 +83,16 @@ function brutus_shock_attack_fx(localclientnum, oldval, newval, bnewent, binitia
 }
 
 // Namespace wz_ai_brutus/wz_ai_brutus
-// Params 7, eflags: 0x1 linked
-// Checksum 0x2bbb7f82, Offset: 0x5c8
+// Params 7, eflags: 0x0
+// Checksum 0x260ca21d, Offset: 0x5c8
 // Size: 0x5c
 function brutus_shock_attack_player(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     function_36e4ebd4(localclientnum, "damage_heavy");
 }
 
 // Namespace wz_ai_brutus/wz_ai_brutus
-// Params 5, eflags: 0x1 linked
-// Checksum 0xf6fcdf6a, Offset: 0x630
+// Params 5, eflags: 0x0
+// Checksum 0xff5013aa, Offset: 0x630
 // Size: 0x12e
 function function_6e2a738c(localclientnum, pos, surface, notetrack, bone) {
     a_players = getlocalplayers();

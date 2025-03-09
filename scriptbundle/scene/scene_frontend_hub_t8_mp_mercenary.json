@@ -14,7 +14,7 @@
             ],
             "type": "fakeplayer",
             "name": "specialist_customization",
-            "var_132e5621": 1
+            "preserveangle": 1
         },
         {
             "shots": [

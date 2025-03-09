@@ -25,7 +25,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_defend_area/zm_trial_defend_area
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc73fd716, Offset: 0x170
 // Size: 0x5c
 function __init__() {
@@ -36,7 +36,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_defend_area/zm_trial_defend_area
-// Params 8, eflags: 0x5 linked
+// Params 8, eflags: 0x4
 // Checksum 0x1628ad88, Offset: 0x1d8
 // Size: 0x35c
 function private on_begin(var_7720abf7, var_2d5ebf67, var_530e040f, zone1, zone2, zone3, zone4, zone5) {
@@ -76,7 +76,7 @@ function private on_begin(var_7720abf7, var_2d5ebf67, var_530e040f, zone1, zone2
 }
 
 // Namespace zm_trial_defend_area/zm_trial_defend_area
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x65ab54e2, Offset: 0x540
 // Size: 0xa6
 function function_5a68cb9f() {
@@ -89,7 +89,7 @@ function function_5a68cb9f() {
 }
 
 // Namespace zm_trial_defend_area/zm_trial_defend_area
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2997d0ba, Offset: 0x5f0
 // Size: 0x198
 function private on_end(round_reset) {
@@ -112,7 +112,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_defend_area/zm_trial_defend_area
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x6cba7ff6, Offset: 0x790
 // Size: 0x3c
 function private function_492f4c79() {
@@ -122,7 +122,7 @@ function private function_492f4c79() {
 }
 
 // Namespace zm_trial_defend_area/zm_trial_defend_area
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xc208f400, Offset: 0x7d8
 // Size: 0xac
 function private start_timer(timeout, var_530e040f) {
@@ -135,7 +135,7 @@ function private start_timer(timeout, var_530e040f) {
 }
 
 // Namespace zm_trial_defend_area/zm_trial_defend_area
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x1c4a27e0, Offset: 0x890
 // Size: 0x5c
 function private stop_timer() {
@@ -146,7 +146,7 @@ function private stop_timer() {
 }
 
 // Namespace zm_trial_defend_area/zm_trial_defend_area
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xfbfce0e5, Offset: 0x8f8
 // Size: 0x68
 function private function_2191cc5d() {
@@ -156,7 +156,7 @@ function private function_2191cc5d() {
 }
 
 // Namespace zm_trial_defend_area/zm_trial_defend_area
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x139520ba, Offset: 0x968
 // Size: 0x30e
 function private function_1802ad1e(challenge, var_2d5ebf67, var_530e040f, timeout) {
@@ -191,7 +191,7 @@ function private function_1802ad1e(challenge, var_2d5ebf67, var_530e040f, timeou
 }
 
 // Namespace zm_trial_defend_area/zm_trial_defend_area
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xb776d65, Offset: 0xc80
 // Size: 0x124
 function private zone_watcher(challenge, var_2d5ebf67, var_530e040f) {
@@ -212,7 +212,7 @@ function private zone_watcher(challenge, var_2d5ebf67, var_530e040f) {
 }
 
 // Namespace zm_trial_defend_area/zm_trial_defend_area
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x661304b9, Offset: 0xdb0
 // Size: 0x23e
 function private damage_watcher(var_a4a28ac7) {
@@ -244,7 +244,7 @@ function private damage_watcher(var_a4a28ac7) {
 }
 
 // Namespace zm_trial_defend_area/zm_trial_defend_area
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xda6a4d2a, Offset: 0xff8
 // Size: 0x248
 function private function_ff66b979() {
@@ -270,7 +270,7 @@ function private function_ff66b979() {
 }
 
 // Namespace zm_trial_defend_area/zm_trial_defend_area
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xb397d0c5, Offset: 0x1248
 // Size: 0x368
 function private function_dae80de6() {
@@ -316,7 +316,7 @@ function private function_dae80de6() {
 }
 
 // Namespace zm_trial_defend_area/zm_trial_defend_area
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x981fb889, Offset: 0x15b8
 // Size: 0xbe
 function private function_e1378d07() {
@@ -329,7 +329,7 @@ function private function_e1378d07() {
 }
 
 // Namespace zm_trial_defend_area/zm_trial_defend_area
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xab0e0ddf, Offset: 0x1680
 // Size: 0x32
 function is_active() {

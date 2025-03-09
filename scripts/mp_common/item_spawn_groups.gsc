@@ -5,7 +5,7 @@
 #namespace item_spawn_group;
 
 // Namespace item_spawn_group/item_spawn_groups
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf7994eff, Offset: 0x80
 // Size: 0x8c
 function setup(seedvalue, reset = 1) {

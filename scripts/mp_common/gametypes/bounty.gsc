@@ -248,7 +248,7 @@ function private onspawned() {
 function private function_9b85340e() {
     self endon(#"death", #"disconnect");
     waitframe(1);
-    self function_9659b3b4();
+    self buy_menu_open();
 }
 
 // Namespace bounty/bounty
@@ -349,7 +349,7 @@ function private onplayerrevived(revivee, reviver) {
 // Params 0, eflags: 0x0
 // Checksum 0x528e28a1, Offset: 0x1ee8
 // Size: 0x64
-function function_9659b3b4() {
+function buy_menu_open() {
     assert(isdefined(level.var_968635ea));
     if (!level.var_968635ea bountyhunterbuy::is_open(self)) {
         level.var_968635ea bountyhunterbuy::open(self);
@@ -360,7 +360,7 @@ function function_9659b3b4() {
 // Params 0, eflags: 0x0
 // Checksum 0xaeca2180, Offset: 0x1f58
 // Size: 0x8c
-function function_d764db12() {
+function buy_menu_close() {
     assert(isdefined(level.var_968635ea));
     if (level.var_968635ea bountyhunterbuy::is_open(self)) {
         level.var_968635ea bountyhunterbuy::close(self);
@@ -401,7 +401,7 @@ function private function_c04cc87c() {
         if (!function_8b1a219a()) {
             player freezecontrols(1);
         }
-        player function_9659b3b4();
+        player buy_menu_open();
         player setlowready(1);
     }
     thread globallogic_audio::leader_dialog("bountyBuyStart");
@@ -420,7 +420,7 @@ function private function_c04cc87c() {
         if (timeremaining <= 1) {
             foreach (player in level.players) {
                 player setlowready(0);
-                player function_d764db12();
+                player buy_menu_close();
                 player globallogic_ui::closemenus();
             }
         }
@@ -430,7 +430,7 @@ function private function_c04cc87c() {
     level.var_324e2795 = 0;
     level.purchasephase = 0;
     foreach (player in level.players) {
-        player function_7c685040(1);
+        player stopallboasts(1);
         player [[ level.givecustomloadout ]]();
         player freezecontrols(0);
         player globallogic_audio::set_music_on_player("spawnShort");
@@ -1711,8 +1711,8 @@ function function_3a77006e(amount, reason) {
     if (!isdefined(self.pers[#"money"]) || self laststand_mp::is_cheating()) {
         return;
     }
-    self.pers[#"money"] = self.pers[#"money"] + amount;
-    self.pers[#"money_earned"] = self.pers[#"money_earned"] + amount;
+    self.pers[#"money"] += amount;
+    self.pers[#"money_earned"] += amount;
     [[ level._setplayerscore ]](self, self.pers[#"money_earned"]);
     self clientfield::set_to_player("bountyMoney", self.pers[#"money"]);
     bb::function_95a5b5c2(reason, "", self.team, self.origin, self);
@@ -1774,7 +1774,7 @@ function resume_time() {
             }
             player = level.players[0];
             if (isplayer(player)) {
-                player.pers[#"money"] = player.pers[#"money"] + var_9b37b387;
+                player.pers[#"money"] += var_9b37b387;
                 player clientfield::set_to_player("<dev string:xd2>", player.pers[#"money"]);
             }
             setdvar(#"hash_312d65fd43c7008c", 0);

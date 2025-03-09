@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa480d2f2, Offset: 0x390
 // Size: 0x24
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x11c6758, Offset: 0x3c0
 // Size: 0x29c
 function __main__() {
@@ -59,7 +59,7 @@ function __main__() {
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb79c295d, Offset: 0x668
 // Size: 0x4cc
 function init_clientfields() {
@@ -83,7 +83,7 @@ function init_clientfields() {
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x582ffeb5, Offset: 0xb40
 // Size: 0x1b2
 function init_fx() {
@@ -99,7 +99,7 @@ function init_fx() {
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xef1bde51, Offset: 0xd00
 // Size: 0x7c
 function function_38a241a1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -108,7 +108,7 @@ function function_38a241a1(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3fab7676, Offset: 0xd88
 // Size: 0x2ba
 function function_e4ea441(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -139,7 +139,7 @@ function function_e4ea441(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x229541c1, Offset: 0x1050
 // Size: 0x166
 function portal_ready_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -161,7 +161,7 @@ function portal_ready_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2a30cf7b, Offset: 0x11c0
 // Size: 0x5c
 function play_packa_special_looper(localclientnum) {
@@ -171,7 +171,7 @@ function play_packa_special_looper(localclientnum) {
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x19bec96b, Offset: 0x1228
 // Size: 0xc4
 function delete_war_room_portal_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -186,7 +186,7 @@ function delete_war_room_portal_fx(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x924247ef, Offset: 0x12f8
 // Size: 0x278
 function cage_portal_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -262,7 +262,7 @@ function groom_lake_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fi
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6c415d08, Offset: 0x1880
 // Size: 0xd4
 function crawler_portal_spawn_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -276,7 +276,7 @@ function crawler_portal_spawn_fx(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x171ef12a, Offset: 0x1960
 // Size: 0xec
 function war_room_map_control(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

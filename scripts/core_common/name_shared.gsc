@@ -17,7 +17,7 @@ function setup() {
 }
 
 // Namespace name/name_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5b079f80, Offset: 0x658
 // Size: 0x8a
 function initialize_nationality(str_nationality) {
@@ -32,7 +32,7 @@ function initialize_nationality(str_nationality) {
 }
 
 // Namespace name/name_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x40550f6e, Offset: 0x6f0
 // Size: 0x82
 function add_nationality_names(str_nationality) {
@@ -47,7 +47,7 @@ function add_nationality_names(str_nationality) {
 }
 
 // Namespace name/name_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5574083b, Offset: 0x780
 // Size: 0xc84
 function american_names() {
@@ -154,7 +154,7 @@ function american_names() {
 }
 
 // Namespace name/name_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1bfe7482, Offset: 0x1410
 // Size: 0x40
 function add_name(nationality, thename) {
@@ -162,7 +162,7 @@ function add_name(nationality, thename) {
 }
 
 // Namespace name/name_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc527f55, Offset: 0x1458
 // Size: 0xda
 function randomize_name_list(nationality) {
@@ -176,7 +176,7 @@ function randomize_name_list(nationality) {
 }
 
 // Namespace name/name_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xed9a1a37, Offset: 0x1540
 // Size: 0x336
 function get(override) {
@@ -228,7 +228,7 @@ function get(override) {
 }
 
 // Namespace name/name_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6c5d8b7d, Offset: 0x1880
 // Size: 0x5a
 function get_ai_classname() {
@@ -253,7 +253,7 @@ function add_override_name_func(nationality, func) {
 }
 
 // Namespace name/name_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4ef5214b, Offset: 0x1970
 // Size: 0x41a
 function get_name_for_nationality(nationality) {
@@ -328,7 +328,7 @@ function get_name_for_nationality(nationality) {
 }
 
 // Namespace name/name_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa0fe90b1, Offset: 0x1d98
 // Size: 0x3c
 function is_seal_member(str_classname) {
@@ -339,7 +339,7 @@ function is_seal_member(str_classname) {
 }
 
 // Namespace name/name_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6dda507f, Offset: 0x1de0
 // Size: 0x3c
 function is_navy_member(str_classname) {
@@ -350,7 +350,7 @@ function is_navy_member(str_classname) {
 }
 
 // Namespace name/name_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdfed4c51, Offset: 0x1e28
 // Size: 0x5e
 function is_police_member(str_classname) {
@@ -361,7 +361,7 @@ function is_police_member(str_classname) {
 }
 
 // Namespace name/name_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x24fbfa23, Offset: 0x1e90
 // Size: 0x36
 function is_security_member(str_classname) {
@@ -372,7 +372,7 @@ function is_security_member(str_classname) {
 }
 
 // Namespace name/name_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x333f70a2, Offset: 0x1ed0
 // Size: 0x3c
 function is_special_agent_member(str_classname) {
@@ -383,7 +383,7 @@ function is_special_agent_member(str_classname) {
 }
 
 // Namespace name/name_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x810092ee, Offset: 0x1f18
 // Size: 0x1b2
 function getrankfromname(name) {

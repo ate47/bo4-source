@@ -7,42 +7,42 @@
 // Method(s) 9 Total 16
 class czm_arcade_timer : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace czm_arcade_timer/zm_arcade_timer
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x8bbb9c26, Offset: 0xa88
     // Size: 0x3c
     function set_title(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "title", value);
+        player clientfield::function_9bf78ef8(_uid, "title", value);
     }
 
     // Namespace czm_arcade_timer/zm_arcade_timer
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x34526399, Offset: 0xa40
     // Size: 0x3c
     function set_minutes(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "minutes", value);
+        player clientfield::function_9bf78ef8(_uid, "minutes", value);
     }
 
     // Namespace czm_arcade_timer/zm_arcade_timer
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xcd47130b, Offset: 0x9f8
     // Size: 0x3c
     function set_seconds(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "seconds", value);
+        player clientfield::function_9bf78ef8(_uid, "seconds", value);
     }
 
     // Namespace czm_arcade_timer/zm_arcade_timer
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xbd19b725, Offset: 0x9b0
     // Size: 0x3c
     function set_showzero(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "showzero", value);
+        player clientfield::function_9bf78ef8(_uid, "showzero", value);
     }
 
     // Namespace czm_arcade_timer/zm_arcade_timer
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x872d923b, Offset: 0x980
     // Size: 0x24
     function close(player) {
@@ -50,7 +50,7 @@ class czm_arcade_timer : cluielem {
     }
 
     // Namespace czm_arcade_timer/zm_arcade_timer
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xe8579891, Offset: 0x930
     // Size: 0x44
     function open(player, persistent = 0) {
@@ -58,7 +58,7 @@ class czm_arcade_timer : cluielem {
     }
 
     // Namespace czm_arcade_timer/zm_arcade_timer
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xc65aff21, Offset: 0x860
     // Size: 0xc4
     function setup_clientfields(uid) {
@@ -72,7 +72,7 @@ class czm_arcade_timer : cluielem {
 }
 
 // Namespace zm_arcade_timer/zm_arcade_timer
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa3c38329, Offset: 0xf0
 // Size: 0x134
 function set_timer(player, var_c895e25d, var_b1100790) {
@@ -92,7 +92,7 @@ function set_timer(player, var_c895e25d, var_b1100790) {
 }
 
 // Namespace zm_arcade_timer/zm_arcade_timer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xecb9ee29, Offset: 0x230
 // Size: 0xc0
 function function_e7a1c8a4(str_notify) {
@@ -134,7 +134,7 @@ function function_88df772a(player, var_c895e25d, var_b1100790, var_f0996295 = 0)
 }
 
 // Namespace zm_arcade_timer/zm_arcade_timer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x386de5, Offset: 0x4a0
 // Size: 0x3c
 function function_57490fd5(str_notify) {
@@ -147,7 +147,7 @@ function function_57490fd5(str_notify) {
 }
 
 // Namespace zm_arcade_timer/zm_arcade_timer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd5044ae, Offset: 0x4e8
 // Size: 0x4c
 function function_ecffd525(player) {
@@ -159,7 +159,7 @@ function function_ecffd525(player) {
 }
 
 // Namespace zm_arcade_timer/zm_arcade_timer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa228a17d, Offset: 0x540
 // Size: 0x44
 function open_timer(player) {
@@ -169,7 +169,7 @@ function open_timer(player) {
 }
 
 // Namespace zm_arcade_timer/zm_arcade_timer
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x188a17f1, Offset: 0x590
 // Size: 0x110
 function function_9bab3960(player, b_force_close = 0, var_b1100790) {
@@ -202,7 +202,7 @@ function register(uid) {
 }
 
 // Namespace zm_arcade_timer/zm_arcade_timer
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcb6369ef, Offset: 0x6f0
 // Size: 0x38
 function open(player, persistent = 0) {
@@ -210,7 +210,7 @@ function open(player, persistent = 0) {
 }
 
 // Namespace zm_arcade_timer/zm_arcade_timer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf4887803, Offset: 0x730
 // Size: 0x1c
 function close(player) {
@@ -218,7 +218,7 @@ function close(player) {
 }
 
 // Namespace zm_arcade_timer/zm_arcade_timer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x28d2ac, Offset: 0x758
 // Size: 0x1a
 function is_open(player) {
@@ -226,7 +226,7 @@ function is_open(player) {
 }
 
 // Namespace zm_arcade_timer/zm_arcade_timer
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd29cf038, Offset: 0x780
 // Size: 0x28
 function set_showzero(player, value) {
@@ -234,7 +234,7 @@ function set_showzero(player, value) {
 }
 
 // Namespace zm_arcade_timer/zm_arcade_timer
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3a57678a, Offset: 0x7b0
 // Size: 0x28
 function set_seconds(player, value) {
@@ -242,7 +242,7 @@ function set_seconds(player, value) {
 }
 
 // Namespace zm_arcade_timer/zm_arcade_timer
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x69818f45, Offset: 0x7e0
 // Size: 0x28
 function set_minutes(player, value) {
@@ -250,7 +250,7 @@ function set_minutes(player, value) {
 }
 
 // Namespace zm_arcade_timer/zm_arcade_timer
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd188f9c8, Offset: 0x810
 // Size: 0x28
 function set_title(player, value) {

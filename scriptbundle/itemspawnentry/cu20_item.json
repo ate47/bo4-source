@@ -16,7 +16,7 @@
                 }
             ],
             "description": "#hash_51217c22aa19a294",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "description": "#hash_51217e22aa19a5fa"
@@ -24,8 +24,8 @@
     ],
     "description": "#hash_1877a41463bbaec6",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 2,
-    "var_e8b98a8a": "#hash_6526b26aeddff3c5",
+    "hash_eda4062b": 2,
+    "hash_e8b98a8a": "#hash_6526b26aeddff3c5",
     "model": "#p8_wz_cu_necklace",
     "type": "itemspawnentry",
     "hintstring": "#hash_2e849d595fc7e02b",

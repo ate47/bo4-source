@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace ability_gadgets/ability_gadgets
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe9b31ce4, Offset: 0x140
 // Size: 0xac
 function __init__() {

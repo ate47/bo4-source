@@ -1,14 +1,14 @@
 {
     "description": "#hash_5810c93d4187259d",
-    "var_60fcfffa": "#menu/on",
-    "var_8722393c": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#menu/on",
+    "hash_8722393c": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "connection_meter",
     "displayname": "#menu/connection_meter",
-    "var_66faec87": 10,
+    "hash_66faec87": 10,
     "statname": "showConnectionMeter",
-    "var_82c732a7": 1,
-    "var_b7401319": "#menu/off"
+    "isenableddisabled": 1,
+    "hash_b7401319": "#menu/off"
 }

@@ -10,7 +10,7 @@
     "attachslotbody": 1,
     "type": "itemspawnentry",
     "hintstring": "#hash_11ed4198ea5c24eb",
-    "var_65b3a12": 1,
+    "hash_65b3a12": 1,
     "name": "pistol_grip_wz_item",
     "displayname": "#hash_11ed4198ea5c24eb",
     "icon": "#ui_icon_attachment_pistol_grip",

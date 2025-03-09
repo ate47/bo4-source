@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace blade/blade
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcabbb4b1, Offset: 0x188
 // Size: 0x64
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace blade/blade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4f7d1910, Offset: 0x1f8
 // Size: 0x124
 function on_weapon_change(params) {
@@ -46,7 +46,7 @@ function on_weapon_change(params) {
 }
 
 // Namespace blade/blade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6140fc33, Offset: 0x328
 // Size: 0x64
 function function_c980da51(handle) {
@@ -58,7 +58,7 @@ function function_c980da51(handle) {
 }
 
 // Namespace blade/blade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9292f946, Offset: 0x398
 // Size: 0xf8
 function function_c0c566d4(localclientnum) {
@@ -79,7 +79,7 @@ function function_c0c566d4(localclientnum) {
 }
 
 // Namespace blade/blade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1a915e33, Offset: 0x498
 // Size: 0xbc
 function melee_event(eventstruct) {
@@ -102,7 +102,7 @@ function melee_event(eventstruct) {
 }
 
 // Namespace blade/blade
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x11ee6d84, Offset: 0x560
 // Size: 0x24
 function private function_e79ccfd8(localclientnum) {
@@ -110,7 +110,7 @@ function private function_e79ccfd8(localclientnum) {
 }
 
 // Namespace blade/blade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc3f9fcd9, Offset: 0x590
 // Size: 0x4c
 function stop_postfx(localclientnum) {
@@ -120,7 +120,7 @@ function stop_postfx(localclientnum) {
 }
 
 // Namespace blade/blade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8e552ad9, Offset: 0x5e8
 // Size: 0x1e4
 function play_blood(localclientnum) {
@@ -144,7 +144,7 @@ function play_blood(localclientnum) {
 }
 
 // Namespace blade/blade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb14c49f5, Offset: 0x7d8
 // Size: 0x9c
 function watch_timeout(localclientnum) {
@@ -159,7 +159,7 @@ function watch_timeout(localclientnum) {
 }
 
 // Namespace blade/blade
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x63aa44e8, Offset: 0x880
 // Size: 0x7c
 function function_2789edf8(currenttime, elapsedtime, localclientnum, duration) {

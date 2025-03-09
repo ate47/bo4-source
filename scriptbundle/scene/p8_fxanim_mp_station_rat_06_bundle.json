@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_649f8b6f570f6099",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 14,
+                    "spacermax": 32,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#p8_fxanim_gp_rat_01_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_station_rat_06_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

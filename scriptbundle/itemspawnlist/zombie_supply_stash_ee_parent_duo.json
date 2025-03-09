@@ -3,14 +3,14 @@
         {
             "minweight": 50,
             "itementry": "armor_item_large",
-            "var_3f8c08e3": "armor_item_large",
+            "childitementry_1": "armor_item_large",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
             "itementry": "health_item_large",
-            "var_3f8c08e3": "health_item_large",
+            "childitementry_1": "health_item_large",
             "maxweight": 50,
             "available": 1
         },
@@ -47,16 +47,16 @@
         {
             "minweight": 50,
             "itementry": "resource_item_paint_stack_10",
-            "var_3f8c08e3": "resource_item_paint_stack_10",
+            "childitementry_1": "resource_item_paint_stack_10",
             "maxweight": 50,
             "available": 1
         }
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 8,
-    "var_9b009839": -1,
+    "hash_345eba59": 8,
+    "hash_9b009839": -1,
     "name": "zombie_supply_stash_ee_parent_duo",
-    "var_fde72c94": 100,
+    "supplystashweight": 100,
     "supplystash": 1
 }

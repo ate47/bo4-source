@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace mp_casino_scripted/mp_casino_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf3740068, Offset: 0xc0
 // Size: 0x44
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace mp_casino_scripted/mp_casino_scripted
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe62bf29e, Offset: 0x110
 // Size: 0x24
 function on_gameplay_started(localclientnum) {
@@ -29,7 +29,7 @@ function on_gameplay_started(localclientnum) {
 }
 
 // Namespace mp_casino_scripted/mp_casino_scripted
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa369f310, Offset: 0x140
 // Size: 0x250
 function function_5a9c338e(localclientnum) {
@@ -48,7 +48,7 @@ function function_5a9c338e(localclientnum) {
 }
 
 // Namespace mp_casino_scripted/mp_casino_scripted
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdb84fe40, Offset: 0x398
 // Size: 0x20
 function on_end_game(localclientnum) {

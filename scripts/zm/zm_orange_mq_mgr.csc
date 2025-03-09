@@ -13,7 +13,7 @@
 #namespace zm_orange_mq_mgr;
 
 // Namespace zm_orange_mq_mgr/zm_orange_mq_mgr
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd8ecad75, Offset: 0xd8
 // Size: 0xbc
 function preload() {
@@ -27,7 +27,7 @@ function preload() {
 }
 
 // Namespace zm_orange_mq_mgr/zm_orange_mq_mgr
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x71d1a945, Offset: 0x1a0
 // Size: 0x6c
 function clear_hud(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

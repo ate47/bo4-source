@@ -19,7 +19,7 @@
                 }
             ],
             "description": "#hash_71ee2dd846c953ee",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "description": "#hash_71ee30d846c95907"
@@ -27,8 +27,8 @@
     ],
     "description": "#hash_5803baabdfd40972",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 3,
-    "var_e8b98a8a": "#hash_69ea629874ffc11",
+    "hash_eda4062b": 3,
+    "hash_e8b98a8a": "#hash_69ea629874ffc11",
     "model": "#p8_wz_cu_clothes_tshirt",
     "type": "itemspawnentry",
     "hintstring": "#hash_777414243131336f",

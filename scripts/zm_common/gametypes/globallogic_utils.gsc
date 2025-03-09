@@ -66,7 +66,7 @@ function timeuntilroundend() {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9cfc9827, Offset: 0x328
 // Size: 0x2c
 function gettimeremaining() {
@@ -74,7 +74,7 @@ function gettimeremaining() {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa01c2f7, Offset: 0x360
 // Size: 0x46
 function registerpostroundevent(eventfunc) {
@@ -85,7 +85,7 @@ function registerpostroundevent(eventfunc) {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe7e66fca, Offset: 0x3b0
 // Size: 0x58
 function executepostroundevents() {
@@ -137,7 +137,7 @@ function getvalueinrange(value, minvalue, maxvalue) {
 #/
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf28d881c, Offset: 0x638
 // Size: 0x6a
 function isvalidclass(vclass) {
@@ -184,7 +184,7 @@ function stoptickingsound() {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x10be8ead, Offset: 0x7f0
 // Size: 0xe8
 function gametimer() {
@@ -207,7 +207,7 @@ function gametimer() {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x843b0220, Offset: 0x8e0
 // Size: 0x66
 function gettimepassed() {
@@ -245,7 +245,7 @@ function resumetimer() {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xca695483, Offset: 0x9d8
 // Size: 0x9e
 function getscoreremaining(team) {
@@ -258,7 +258,7 @@ function getscoreremaining(team) {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb1eee434, Offset: 0xa80
 // Size: 0xea
 function getscoreperminute(team) {
@@ -273,7 +273,7 @@ function getscoreperminute(team) {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd3faf349, Offset: 0xb78
 // Size: 0x9a
 function getestimatedtimeuntilscorelimit(team) {
@@ -299,7 +299,7 @@ function rumbler() {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x785f180f, Offset: 0xc70
 // Size: 0x24
 function waitfortimeornotify(time, notifyname) {
@@ -401,7 +401,7 @@ function isexcluded(entity, entitylist) {
 /#
 
     // Namespace globallogic_utils/globallogic_utils
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xf6ffc7d9, Offset: 0xfd0
     // Size: 0xfc
     function logteamwinstring(wintype, winner) {

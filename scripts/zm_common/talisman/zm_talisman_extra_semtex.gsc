@@ -22,7 +22,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_talisman_extra_semtex/zm_talisman_extra_semtex
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8e67164f, Offset: 0x128
 // Size: 0x2c
 function __init__() {
@@ -30,7 +30,7 @@ function __init__() {
 }
 
 // Namespace zm_talisman_extra_semtex/zm_talisman_extra_semtex
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x824682ff, Offset: 0x160
 // Size: 0x54
 function activate_talisman() {
@@ -40,7 +40,7 @@ function activate_talisman() {
 }
 
 // Namespace zm_talisman_extra_semtex/zm_talisman_extra_semtex
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb659defc, Offset: 0x1c0
 // Size: 0xf4
 function function_4d97e9ce() {

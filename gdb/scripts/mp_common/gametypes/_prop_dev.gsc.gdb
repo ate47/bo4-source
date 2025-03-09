@@ -334,7 +334,7 @@ STRING "<dev string:xd1d>" 0x3828 0x3850 0x3a18 0x3a40
 STRING "<dev string:xd26>" 0x3820 0x3a10
 # prop_dev::function_8d3ffd86@1c0 prop_dev::function_cc5afb75@1c0
 STRING "<dev string:xd33>" 0x3848 0x3a38
-# prop_dev::function_2dc5c497@20 prop_dev::function_79d57521@f8 prop_dev::function_79d57521@2b8 prop_dev::function_79d57521@2f8 prop_dev::function_cb8ecc99@1a8 prop_dev::function_cb8ecc99@208 prop_dev::function_cb8ecc99@268 prop_dev::function_cb8ecc99@2c8 prop_dev::function_2b23b2b6@190 prop_dev::function_2b23b2b6@1f0 prop_dev::function_2b23b2b6@250 prop_dev::function_2b23b2b6@2b0 prop_dev::function_f2e19297@280 prop_dev::function_f2e19297@380 prop_dev::function_f2e19297@480 prop_dev::function_f2e19297@580 prop_dev::function_f2e19297@748 prop_dev::function_f2e19297@848 prop_dev::function_f2e19297@948 prop_dev::function_f2e19297@a48 prop_dev::function_ad8cc361@a8 prop_dev::function_34a7562e@d0 prop_dev::showtargets@90
+# prop_dev::function_2dc5c497@20 prop_dev::function_79d57521@f8 prop_dev::function_79d57521@2b8 prop_dev::function_79d57521@2f8 prop_dev::function_cb8ecc99@1a8 prop_dev::function_cb8ecc99@208 prop_dev::function_cb8ecc99@268 prop_dev::function_cb8ecc99@2c8 prop_dev::function_2b23b2b6@190 prop_dev::function_2b23b2b6@1f0 prop_dev::function_2b23b2b6@250 prop_dev::function_2b23b2b6@2b0 prop_dev::function_f2e19297@280 prop_dev::function_f2e19297@380 prop_dev::function_f2e19297@480 prop_dev::function_f2e19297@580 prop_dev::function_f2e19297@748 prop_dev::function_f2e19297@848 prop_dev::function_f2e19297@948 prop_dev::function_f2e19297@a48 prop_dev::showhealth@a8 prop_dev::function_34a7562e@d0 prop_dev::showtargets@90
 STRING "<dev string:xd3f>" 0x3b80 0x4160 0x4320 0x4360 0x4530 0x4590 0x45f0 0x4650 0x48d0 0x4930 0x4990 0x49f0 0x4d60 0x4e60 0x4f60 0x5060 0x5228 0x5328 0x5428 0x5528 0x5b98 0x5cb8 0x6c48
 # prop_dev::function_2dc5c497@34 prop_dev::function_2dc5c497@48 prop_dev::function_2dc5c497@84 prop_dev::function_2dc5c497@9c prop_dev::function_2dc5c497@b8 prop_dev::function_2dc5c497@10c prop_dev::function_2dc5c497@124 prop_dev::function_2dc5c497@140 prop_dev::function_2dc5c497@194 prop_dev::function_2dc5c497@1b8 prop_dev::function_2dc5c497@1fc prop_dev::function_2dc5c497@220
 STRING "<dev string:xd42>" 0x3b94 0x3ba8 0x3be4 0x3bfc 0x3c18 0x3c6c 0x3c84 0x3ca0 0x3cf4 0x3d18 0x3d5c 0x3d80
@@ -469,7 +469,7 @@ DEVBLOCK 0x4772
 DEVBLOCK 0x4b42
 # prop_dev::function_77511c75@4a
 DEVBLOCK 0x576a
-# prop_dev::function_ad8cc361@22
+# prop_dev::showhealth@22
 DEVBLOCK 0x5b12
 # prop_dev::function_34a7562e@3a
 DEVBLOCK 0x5c22
@@ -477,7 +477,7 @@ DEVBLOCK 0x5c22
 DEVBLOCK 0x5d22
 # prop_dev::function_ed0598d@42
 DEVBLOCK 0x5e02
-# prop_dev::function_89b4b4c@82
+# prop_dev::showmodels@82
 DEVBLOCK 0x610a
 # prop_dev::function_1f3923fa@a
 DEVBLOCK 0x62c2

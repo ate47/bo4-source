@@ -1,16 +1,16 @@
 {
     "descriptionimage": "#hash_2fb5b1a183f3796d",
     "description": "#hash_4eb0020ad0cd33c1",
-    "var_60fcfffa": "#hash_4f445f7612232efc",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#hash_4f445f7612232efc",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "name": "pc_fps_draw",
     "displayname": "#hash_1073310ccc05484f",
-    "var_66faec87": 10,
+    "hash_66faec87": 10,
     "statname": "com_show_fps",
-    "var_82c732a7": 1,
+    "isenableddisabled": 1,
     "minvalue": 1,
-    "var_b7401319": "#hash_26907a4c5e0f4d75"
+    "hash_b7401319": "#hash_26907a4c5e0f4d75"
 }

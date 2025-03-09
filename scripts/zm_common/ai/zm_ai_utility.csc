@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_ai_utility/zm_ai_utility
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x377dcecc, Offset: 0xc0
 // Size: 0x24
 function private __init__() {
@@ -20,7 +20,7 @@ function private __init__() {
 }
 
 // Namespace zm_ai_utility/zm_ai_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xfcbdab69, Offset: 0xf0
 // Size: 0xc
 function private function_f3a051c6(localclientnum) {

@@ -29,11 +29,11 @@
                 }
             ],
             "customclassname": "#hash_6c31d516ad144bd3",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#ar_fastfire_t8",
-            "var_aadf0bc9": 1,
-            "var_38f854e5": 6,
+            "hash_aadf0bc9": 1,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_medicalinjectiongun",
             "primarygrenade": "#trophy_system"
         },
@@ -69,11 +69,11 @@
                 }
             ],
             "customclassname": "#hash_6c31d616ad144d86",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#smg_handling_t8",
-            "var_aadf0bc9": 1,
-            "var_38f854e5": 6,
+            "hash_aadf0bc9": 1,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_medicalinjectiongun",
             "primarygrenade": "#eq_slow_grenade"
         },
@@ -106,12 +106,12 @@
                 }
             ],
             "customclassname": "#hash_6c31d716ad144f39",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#ar_accurate_t8",
-            "var_aadf0bc9": 1,
+            "hash_aadf0bc9": 1,
             "secondary": "#pistol_revolver_t8",
-            "var_38f854e5": 6,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_medicalinjectiongun"
         },
         {
@@ -146,12 +146,12 @@
                 }
             ],
             "customclassname": "#hash_6c31d816ad1450ec",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#tr_longburst_t8",
-            "var_aadf0bc9": 1,
+            "hash_aadf0bc9": 1,
             "secondary": "#pistol_revolver_t8",
-            "var_38f854e5": 6,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_medicalinjectiongun"
         },
         {
@@ -189,12 +189,12 @@
                 }
             ],
             "customclassname": "#hash_6c31d916ad14529f",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#sniper_powerbolt_t8",
-            "var_aadf0bc9": 1,
+            "hash_aadf0bc9": 1,
             "secondary": "#pistol_revolver_t8",
-            "var_38f854e5": 6,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_medicalinjectiongun"
         },
         {
@@ -229,12 +229,12 @@
                 }
             ],
             "customclassname": "#hash_6c31da16ad145452",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 4,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 4,
             "primary": "#smg_fastfire_t8",
-            "var_aadf0bc9": 1,
+            "hash_aadf0bc9": 1,
             "secondary": "#launcher_standard_t8",
-            "var_38f854e5": 6,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_medicalinjectiongun"
         }
     ],
@@ -268,11 +268,11 @@
                 }
             ],
             "customclassname": "#class/slot1",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#ar_fastfire_t8",
-            "var_aadf0bc9": 1,
-            "var_38f854e5": 6,
+            "hash_aadf0bc9": 1,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_medicalinjectiongun",
             "primarygrenade": "#trophy_system"
         },
@@ -308,11 +308,11 @@
                 }
             ],
             "customclassname": "#class/slot2",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#smg_handling_t8",
-            "var_aadf0bc9": 1,
-            "var_38f854e5": 6,
+            "hash_aadf0bc9": 1,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_medicalinjectiongun",
             "primarygrenade": "#eq_slow_grenade"
         },
@@ -345,12 +345,12 @@
                 }
             ],
             "customclassname": "#class/slot3",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#ar_accurate_t8",
-            "var_aadf0bc9": 1,
+            "hash_aadf0bc9": 1,
             "secondary": "#pistol_revolver_t8",
-            "var_38f854e5": 6,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_medicalinjectiongun"
         },
         {
@@ -385,12 +385,12 @@
                 }
             ],
             "customclassname": "#class/slot4",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#tr_longburst_t8",
-            "var_aadf0bc9": 1,
+            "hash_aadf0bc9": 1,
             "secondary": "#pistol_revolver_t8",
-            "var_38f854e5": 6,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_medicalinjectiongun"
         },
         {
@@ -428,12 +428,12 @@
                 }
             ],
             "customclassname": "#class/slot5",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#sniper_powerbolt_t8",
-            "var_aadf0bc9": 1,
+            "hash_aadf0bc9": 1,
             "secondary": "#pistol_revolver_t8",
-            "var_38f854e5": 6,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_medicalinjectiongun"
         },
         {
@@ -468,12 +468,12 @@
                 }
             ],
             "customclassname": "#class/slot6",
-            "var_d0c837c7": 3,
-            "var_d73c4f3b": 5,
+            "hash_d0c837c7": 3,
+            "hash_d73c4f3b": 5,
             "primary": "#smg_fastfire_t8",
-            "var_aadf0bc9": 1,
+            "hash_aadf0bc9": 1,
             "secondary": "#launcher_standard_t8",
-            "var_38f854e5": 6,
+            "hash_38f854e5": 6,
             "tacticalgear": "#gear_medicalinjectiongun"
         }
     ],
@@ -488,18 +488,18 @@
             "killstreak": "#helicopter_comlink"
         }
     ],
-    "var_9027ef1e": "#hash_71dab9659ba194f4",
-    "var_68c52059": "#hash_71dab7659ba1918e",
-    "var_b255336c": "#hash_71daba659ba196a7",
-    "var_55e07a90": "#hash_27b5b2b4f08e4dcb",
-    "var_7afec4cc": "#hash_71dabb659ba1985a",
-    "var_326fb3af": "#hash_3de97428b08ef1b3",
-    "var_67931df5": "#hash_3aae961aff62ddf0",
-    "var_fafb44c3": "#hash_71daba659ba196a7",
-    "var_43b5563a": "#hash_41038f141e60fbfc",
+    "hash_9027ef1e": "#hash_71dab9659ba194f4",
+    "hash_68c52059": "#hash_71dab7659ba1918e",
+    "hash_b255336c": "#hash_71daba659ba196a7",
+    "hash_55e07a90": "#hash_27b5b2b4f08e4dcb",
+    "hash_7afec4cc": "#hash_71dabb659ba1985a",
+    "hash_326fb3af": "#hash_3de97428b08ef1b3",
+    "hash_67931df5": "#hash_3aae961aff62ddf0",
+    "hash_fafb44c3": "#hash_71daba659ba196a7",
+    "hash_43b5563a": "#hash_41038f141e60fbfc",
     "name": "mp_arena_default_loadouts",
     "sessionmode": "mp",
-    "var_4f96d17e": 6,
-    "var_57ed547e": 6,
-    "var_ebfaaff3": 3
+    "hash_4f96d17e": 6,
+    "hash_57ed547e": 6,
+    "hash_ebfaaff3": 3
 }

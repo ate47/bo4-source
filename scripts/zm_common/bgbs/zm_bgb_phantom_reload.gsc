@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_phantom_reload/zm_bgb_phantom_reload
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf3880be9, Offset: 0xe0
 // Size: 0x74
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_phantom_reload/zm_bgb_phantom_reload
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3e8b484, Offset: 0x160
 // Size: 0x1c
 function enable() {
@@ -33,7 +33,7 @@ function enable() {
 }
 
 // Namespace zm_bgb_phantom_reload/zm_bgb_phantom_reload
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdb3da149, Offset: 0x188
 // Size: 0x16
 function disable() {
@@ -41,7 +41,7 @@ function disable() {
 }
 
 // Namespace zm_bgb_phantom_reload/zm_bgb_phantom_reload
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x20c66831, Offset: 0x1a8
 // Size: 0xd6
 function function_44514728() {

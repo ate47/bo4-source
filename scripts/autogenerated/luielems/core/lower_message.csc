@@ -7,7 +7,7 @@
 class clower_message : cluielem {
 
     // Namespace clower_message/lower_message
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xbb90478d, Offset: 0x580
     // Size: 0x30
     function set_countdowntimeseconds(localclientnum, value) {
@@ -15,7 +15,7 @@ class clower_message : cluielem {
     }
 
     // Namespace clower_message/lower_message
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xd86f47be, Offset: 0x548
     // Size: 0x30
     function set_message(localclientnum, value) {
@@ -23,7 +23,7 @@ class clower_message : cluielem {
     }
 
     // Namespace clower_message/lower_message
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xd573b218, Offset: 0x458
     // Size: 0xe4
     function set_state(localclientnum, state_name) {
@@ -43,7 +43,7 @@ class clower_message : cluielem {
     }
 
     // Namespace clower_message/lower_message
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x46af73a2, Offset: 0x420
     // Size: 0x2c
     function open(localclientnum) {
@@ -51,7 +51,7 @@ class clower_message : cluielem {
     }
 
     // Namespace clower_message/lower_message
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xfcbb23d0, Offset: 0x390
     // Size: 0x88
     function function_fa582112(localclientnum) {
@@ -62,7 +62,7 @@ class clower_message : cluielem {
     }
 
     // Namespace clower_message/lower_message
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x28c8fc2f, Offset: 0x360
     // Size: 0x24
     function register_clientside(uid) {
@@ -70,7 +70,7 @@ class clower_message : cluielem {
     }
 
     // Namespace clower_message/lower_message
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0x8753d1c6, Offset: 0x2a8
     // Size: 0xac
     function setup_clientfields(uid, var_9af44e2b, var_7a5253d3) {
@@ -83,7 +83,7 @@ class clower_message : cluielem {
 }
 
 // Namespace lower_message/lower_message
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x2fb6d8f, Offset: 0xd8
 // Size: 0x58
 function register(uid, var_9af44e2b, var_7a5253d3) {

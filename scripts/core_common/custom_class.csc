@@ -8,7 +8,7 @@
 #namespace customclass;
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x74ab8e80, Offset: 0x398
 // Size: 0x24
 function localclientconnect(localclientnum) {
@@ -16,7 +16,7 @@ function localclientconnect(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x243f5674, Offset: 0x3c8
 // Size: 0x13c
 function init() {
@@ -42,7 +42,7 @@ function init() {
 }
 
 // Namespace customclass/custom_class
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x54e814ed, Offset: 0x510
 // Size: 0x26
 function refeshweaponposition() {
@@ -50,7 +50,7 @@ function refeshweaponposition() {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1c425bbe, Offset: 0x540
 // Size: 0x84
 function custom_class_init(localclientnum) {
@@ -62,7 +62,7 @@ function custom_class_init(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x404c7473, Offset: 0x5d0
 // Size: 0xf2
 function custom_class_start_threads(localclientnum) {
@@ -79,7 +79,7 @@ function custom_class_start_threads(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4a1341bb, Offset: 0x6d0
 // Size: 0x96
 function handle_cac_customization(localclientnum) {
@@ -95,7 +95,7 @@ function handle_cac_customization(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1e181b27, Offset: 0x770
 // Size: 0x38c
 function custom_class_update(localclientnum) {
@@ -143,7 +143,7 @@ function custom_class_update(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc4a95bc5, Offset: 0xb08
 // Size: 0x84
 function toggle_locked_weapon_shader(localclientnum, is_item_unlocked = 1) {
@@ -158,7 +158,7 @@ function toggle_locked_weapon_shader(localclientnum, is_item_unlocked = 1) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5fc2442b, Offset: 0xb98
 // Size: 0x98
 function is_optic(attachmentname) {
@@ -172,7 +172,7 @@ function is_optic(attachmentname) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcaaaa4d0, Offset: 0xc38
 // Size: 0x314
 function custom_class_attachment_select_focus(localclientnum) {
@@ -218,7 +218,7 @@ function custom_class_attachment_select_focus(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb97e5e1, Offset: 0xf58
 // Size: 0x84
 function function_e057e705(localclientnum) {
@@ -231,7 +231,7 @@ function function_e057e705(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfa7e2ff6, Offset: 0xfe8
 // Size: 0x1e2
 function custom_class_remove(localclientnum) {
@@ -257,7 +257,7 @@ function custom_class_remove(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x410088b9, Offset: 0x11d8
 // Size: 0x172
 function custom_class_closed(localclientnum) {
@@ -280,7 +280,7 @@ function custom_class_closed(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1fea114c, Offset: 0x1358
 // Size: 0x7e
 function spawn_weapon_model(localclientnum, origin, angles) {
@@ -293,7 +293,7 @@ function spawn_weapon_model(localclientnum, origin, angles) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7069b2e3, Offset: 0x13e0
 // Size: 0xbc
 function hide_paintshop_bg(localclientnum) {
@@ -308,7 +308,7 @@ function hide_paintshop_bg(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9c86ee28, Offset: 0x14a8
 // Size: 0x94
 function show_paintshop_bg(localclientnum) {
@@ -320,7 +320,7 @@ function show_paintshop_bg(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe1e29b99, Offset: 0x1548
 // Size: 0x44
 function get_camo_index(localclientnum) {
@@ -331,7 +331,7 @@ function get_camo_index(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x786c1b9b, Offset: 0x1598
 // Size: 0x44
 function get_reticle_index(localclientnum) {
@@ -342,7 +342,7 @@ function get_reticle_index(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcb21cc80, Offset: 0x15e8
 // Size: 0x60
 function function_b843e11a(localclientnum) {
@@ -356,7 +356,7 @@ function function_b843e11a(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x57df784c, Offset: 0x1650
 // Size: 0x44
 function function_442ccfdd(localclientnum) {
@@ -367,7 +367,7 @@ function function_442ccfdd(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3da50f79, Offset: 0x16a0
 // Size: 0x44
 function get_show_emblem(localclientnum) {
@@ -378,7 +378,7 @@ function get_show_emblem(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdd811acb, Offset: 0x16f0
 // Size: 0x44
 function get_show_paintshop(localclientnum) {
@@ -389,7 +389,7 @@ function get_show_paintshop(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x505b0754, Offset: 0x1740
 // Size: 0x72
 function function_162e1121(localclientnum, var_571f2574) {
@@ -403,7 +403,7 @@ function function_162e1121(localclientnum, var_571f2574) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7795a50d, Offset: 0x17c0
 // Size: 0x60
 function function_52145a0d(localclientnum) {
@@ -417,7 +417,7 @@ function function_52145a0d(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x560d026a, Offset: 0x1828
 // Size: 0x1f4
 function function_998e2be7(localclientnum, weapon_options_param) {
@@ -443,7 +443,7 @@ function function_998e2be7(localclientnum, weapon_options_param) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x92483f39, Offset: 0x1a28
 // Size: 0x82
 function get_weapon_options(localclientnum) {
@@ -451,7 +451,7 @@ function get_weapon_options(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa05a4085, Offset: 0x1ab8
 // Size: 0xb2
 function get_lerp_duration(camera) {
@@ -466,7 +466,7 @@ function get_lerp_duration(camera) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4697acbf, Offset: 0x1b78
 // Size: 0x7a
 function function_4675628e(camera) {
@@ -474,7 +474,7 @@ function function_4675628e(camera) {
 }
 
 // Namespace customclass/custom_class
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd48c9f39, Offset: 0x1c00
 // Size: 0x144
 function setup_paintshop_bg(localclientnum, camera) {
@@ -495,7 +495,7 @@ function setup_paintshop_bg(localclientnum, camera) {
 }
 
 // Namespace customclass/custom_class
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xdab51002, Offset: 0x1d50
 // Size: 0x244
 function transition_camera_immediate(localclientnum, weapontype, camera, subxcam, lerpduration, notetrack) {
@@ -523,7 +523,7 @@ function transition_camera_immediate(localclientnum, weapontype, camera, subxcam
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x77df60d5, Offset: 0x1fa0
 // Size: 0x3a
 function wait_preload_weapon(localclientnum) {
@@ -534,7 +534,7 @@ function wait_preload_weapon(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xea7e9aab, Offset: 0x1fe8
 // Size: 0x98
 function preload_weapon_watcher(localclientnum) {
@@ -551,7 +551,7 @@ function preload_weapon_watcher(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xe4cce132, Offset: 0x2088
 // Size: 0x12c
 function preload_weapon_model(localclientnum, newweaponstring, var_f020955, should_update_weapon_options = 1) {
@@ -568,7 +568,7 @@ function preload_weapon_model(localclientnum, newweaponstring, var_f020955, shou
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2f58f787, Offset: 0x21c0
 // Size: 0x7c
 function function_8bf05e82(localclientnum) {
@@ -578,7 +578,7 @@ function function_8bf05e82(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xb4d7f600, Offset: 0x2248
 // Size: 0xb2
 function private function_3e2b5b60(localclientnum, weaponmodel) {
@@ -594,7 +594,7 @@ function private function_3e2b5b60(localclientnum, weaponmodel) {
 }
 
 // Namespace customclass/custom_class
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xac03f1a3, Offset: 0x2308
 // Size: 0x61c
 function update_weapon_script_model(localclientnum, newweaponstring, var_f020955, should_update_weapon_options = 1, is_item_unlocked = 1, xmodel_scale = 1, xmodel_name = #"") {
@@ -659,7 +659,7 @@ function update_weapon_script_model(localclientnum, newweaponstring, var_f020955
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1312f194, Offset: 0x2930
 // Size: 0x3e
 function function_ccfcedeb(localclientnum) {
@@ -670,7 +670,7 @@ function function_ccfcedeb(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 10, eflags: 0x1 linked
+// Params 10, eflags: 0x0
 // Checksum 0xb2bdc1af, Offset: 0x2978
 // Size: 0x16c
 function transition_camera(localclientnum, weapontype, camera, subxcam, initialdelay, lerpduration, notetrack, newweaponstring, var_f020955, should_update_weapon_options = 0) {
@@ -691,7 +691,7 @@ function transition_camera(localclientnum, weapontype, camera, subxcam, initiald
 }
 
 // Namespace customclass/custom_class
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x3106865c, Offset: 0x2af0
 // Size: 0x122
 function get_attachments_intersection(oldweapon, oldattachments, var_6714c3a0) {
@@ -713,7 +713,7 @@ function get_attachments_intersection(oldweapon, oldattachments, var_6714c3a0) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc3d5f551, Offset: 0x2c20
 // Size: 0x118
 function handle_cac_customization_focus(localclientnum) {
@@ -731,7 +731,7 @@ function handle_cac_customization_focus(localclientnum) {
 }
 
 // Namespace customclass/custom_class
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x91c05281, Offset: 0x2d40
 // Size: 0x54
 function handle_cac_customization_closed(localclientnum) {

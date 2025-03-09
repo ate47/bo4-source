@@ -7,7 +7,7 @@
 class ccp_skip_scene_menu : cluielem {
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x6ea23ef9, Offset: 0x5a0
     // Size: 0x30
     function set_sceneskipendtime(localclientnum, value) {
@@ -15,7 +15,7 @@ class ccp_skip_scene_menu : cluielem {
     }
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x53c891d3, Offset: 0x568
     // Size: 0x30
     function set_votedtoskip(localclientnum, value) {
@@ -23,7 +23,7 @@ class ccp_skip_scene_menu : cluielem {
     }
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x75f74e29, Offset: 0x530
     // Size: 0x30
     function set_hostisskipping(localclientnum, value) {
@@ -31,7 +31,7 @@ class ccp_skip_scene_menu : cluielem {
     }
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xf627e7de, Offset: 0x4f8
     // Size: 0x30
     function set_showskipbutton(localclientnum, value) {
@@ -39,7 +39,7 @@ class ccp_skip_scene_menu : cluielem {
     }
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xfebcd382, Offset: 0x4c0
     // Size: 0x2c
     function open(localclientnum) {
@@ -47,7 +47,7 @@ class ccp_skip_scene_menu : cluielem {
     }
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xc0500e7b, Offset: 0x420
     // Size: 0x94
     function function_fa582112(localclientnum) {
@@ -59,7 +59,7 @@ class ccp_skip_scene_menu : cluielem {
     }
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x175a237a, Offset: 0x3f0
     // Size: 0x24
     function register_clientside(uid) {
@@ -67,7 +67,7 @@ class ccp_skip_scene_menu : cluielem {
     }
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
-    // Params 5, eflags: 0x1 linked
+    // Params 5, eflags: 0x0
     // Checksum 0xa8bea594, Offset: 0x300
     // Size: 0xe4
     function setup_clientfields(uid, var_792f3702, var_69bfc3be, var_b2a12719, var_266fe805) {
@@ -81,7 +81,7 @@ class ccp_skip_scene_menu : cluielem {
 }
 
 // Namespace cp_skip_scene_menu/cp_skip_scene_menu
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xe217ba1f, Offset: 0xe8
 // Size: 0x70
 function register(uid, var_792f3702, var_69bfc3be, var_b2a12719, var_266fe805) {

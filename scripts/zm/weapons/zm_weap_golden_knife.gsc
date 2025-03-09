@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_golden_knife/zm_weap_golden_knife
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x3d8a8586, Offset: 0xe0
 // Size: 0x44
 function private __init__() {
@@ -21,7 +21,7 @@ function private __init__() {
 }
 
 // Namespace zm_weap_golden_knife/zm_weap_golden_knife
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x80f724d1, Offset: 0x130
 // Size: 0x4
 function private __main__() {

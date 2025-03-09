@@ -1,0 +1,46 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7ce18b69d571b32a",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_2073a5b32e79df7a",
+            "type": "fakeactor",
+            "name": "fakeactor 1",
+            "allowdeath": 1,
+            "removeweapon": 1,
+            "takedamage": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5b2d27414b51133",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_75df9e3878309511",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_zmuseum_util_closet_vig_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

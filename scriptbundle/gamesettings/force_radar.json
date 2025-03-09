@@ -8,8 +8,8 @@
     "name": "force_radar",
     "displayname": "#hash_2c997f72713632d1",
     "label1": "#menu/normal",
-    "var_71b6e020": "#menu/constant",
+    "label3": "#menu/constant",
     "label2": "#hash_5cd9f6faa0eb4c77",
-    "var_9de86f42": 3,
+    "optionscount": 3,
     "setting": "forceRadar"
 }

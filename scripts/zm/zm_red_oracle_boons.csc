@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_red_oracle_boons/zm_red_oracle_boons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7013dc24, Offset: 0xf0
 // Size: 0xd4
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace zm_red_oracle_boons/zm_red_oracle_boons
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x38d2623f, Offset: 0x1d0
 // Size: 0xf8
 function function_c0d2e1a2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -41,7 +41,7 @@ function function_c0d2e1a2(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_oracle_boons/zm_red_oracle_boons
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x3e7d3119, Offset: 0x2d0
 // Size: 0x5c
 function private function_cd5f9803(localclientnum) {
@@ -52,7 +52,7 @@ function private function_cd5f9803(localclientnum) {
 }
 
 // Namespace zm_red_oracle_boons/zm_red_oracle_boons
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x8886a86c, Offset: 0x338
 // Size: 0x8c
 function private function_e634058b(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {

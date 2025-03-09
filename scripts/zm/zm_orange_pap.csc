@@ -5,7 +5,7 @@
 #namespace zm_orange_pap;
 
 // Namespace zm_orange_pap/zm_orange_pap
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x10d5a108, Offset: 0x138
 // Size: 0x72
 function init() {
@@ -15,7 +15,7 @@ function init() {
 }
 
 // Namespace zm_orange_pap/zm_orange_pap
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x600410d, Offset: 0x1b8
 // Size: 0x94
 function init_clientfields() {
@@ -24,7 +24,7 @@ function init_clientfields() {
 }
 
 // Namespace zm_orange_pap/zm_orange_pap
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x49ad9cb0, Offset: 0x258
 // Size: 0x154
 function function_f65638a4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -40,7 +40,7 @@ function function_f65638a4(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_orange_pap/zm_orange_pap
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x988730e9, Offset: 0x3b8
 // Size: 0x74
 function function_50758ed4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

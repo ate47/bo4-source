@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_ray_gun/zm_weap_ray_gun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfcc94070, Offset: 0xf8
 // Size: 0x244
 function __init__() {
@@ -33,7 +33,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_ray_gun/zm_weap_ray_gun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xea3afdf0, Offset: 0x348
 // Size: 0x3c
 function on_ai_killed(s_params) {
@@ -43,7 +43,7 @@ function on_ai_killed(s_params) {
 }
 
 // Namespace zm_weap_ray_gun/zm_weap_ray_gun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xea5513bc, Offset: 0x390
 // Size: 0x5c
 function ai_disintegrate() {
@@ -54,7 +54,7 @@ function ai_disintegrate() {
 }
 
 // Namespace zm_weap_ray_gun/zm_weap_ray_gun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7d49bcc3, Offset: 0x3f8
 // Size: 0x36
 function is_ray_gun(w_weapon) {
@@ -65,7 +65,7 @@ function is_ray_gun(w_weapon) {
 }
 
 // Namespace zm_weap_ray_gun/zm_weap_ray_gun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x94d382fc, Offset: 0x438
 // Size: 0xe
 function function_215146f5(damage_percent) {

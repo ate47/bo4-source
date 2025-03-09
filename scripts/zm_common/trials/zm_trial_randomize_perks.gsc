@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_randomize_perks/zm_trial_randomize_perks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x106085cd, Offset: 0x100
 // Size: 0x5c
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_randomize_perks/zm_trial_randomize_perks
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x80eba336, Offset: 0x168
 // Size: 0x90
 function private on_begin() {
@@ -39,7 +39,7 @@ function private on_begin() {
 }
 
 // Namespace zm_trial_randomize_perks/zm_trial_randomize_perks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x12b67124, Offset: 0x200
 // Size: 0xbc
 function private on_end(round_reset) {
@@ -50,7 +50,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_randomize_perks/zm_trial_randomize_perks
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x536586f9, Offset: 0x2c8
 // Size: 0x2e4
 function private function_83fa47e8() {
@@ -93,7 +93,7 @@ function private function_83fa47e8() {
 }
 
 // Namespace zm_trial_randomize_perks/zm_trial_randomize_perks
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xad72d7e8, Offset: 0x5b8
 // Size: 0x22c
 function private function_50b92441() {
@@ -123,7 +123,7 @@ function private function_50b92441() {
 }
 
 // Namespace zm_trial_randomize_perks/zm_trial_randomize_perks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x233af2af, Offset: 0x7f0
 // Size: 0x32
 function is_active() {
@@ -132,7 +132,7 @@ function is_active() {
 }
 
 // Namespace zm_trial_randomize_perks/zm_trial_randomize_perks
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xfea2d39d, Offset: 0x830
 // Size: 0x10c
 function private function_3a95c571() {

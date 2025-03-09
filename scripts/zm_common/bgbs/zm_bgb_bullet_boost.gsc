@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_bullet_boost/zm_bgb_bullet_boost
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdf496373, Offset: 0x120
 // Size: 0x94
 function __init__() {
@@ -33,7 +33,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_bullet_boost/zm_bgb_bullet_boost
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x74a8e8e9, Offset: 0x1c0
 // Size: 0xda
 function validation() {
@@ -45,7 +45,7 @@ function validation() {
 }
 
 // Namespace zm_bgb_bullet_boost/zm_bgb_bullet_boost
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x184099a0, Offset: 0x2a8
 // Size: 0xbc
 function activation() {

@@ -136,7 +136,7 @@ function finalizecratecategory(category) {
     for (cratetype = 0; cratetype < cratetypekeys.size; cratetype++) {
         typekey = cratetypekeys[cratetype];
         level.cratetypes[category][typekey].previousweight = level.cratecategoryweights[category];
-        level.cratecategoryweights[category] = level.cratecategoryweights[category] + level.cratetypes[category][typekey].weight;
+        level.cratecategoryweights[category] += level.cratetypes[category][typekey].weight;
         level.cratetypes[category][typekey].weight = level.cratecategoryweights[category];
     }
 }

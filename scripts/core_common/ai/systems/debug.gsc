@@ -192,7 +192,7 @@
                     if (!isdefined(self.debuginfo.states[i].extrainfo)) {
                         self.debuginfo.states[i].extrainfo = "<dev string:x3c>";
                     }
-                    self.debuginfo.states[i].extrainfo = self.debuginfo.states[i].extrainfo + extrainfo + "<dev string:x38>";
+                    self.debuginfo.states[i].extrainfo += extrainfo + "<dev string:x38>";
                     break;
                 }
             }
@@ -204,7 +204,7 @@
             if (!isdefined(self.debuginfo.states[lastindex].extrainfo)) {
                 self.debuginfo.states[lastindex].extrainfo = "<dev string:x3c>";
             }
-            self.debuginfo.states[lastindex].extrainfo = self.debuginfo.states[lastindex].extrainfo + extrainfo + "<dev string:x38>";
+            self.debuginfo.states[lastindex].extrainfo += extrainfo + "<dev string:x38>";
         }
     }
 

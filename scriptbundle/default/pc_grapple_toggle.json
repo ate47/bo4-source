@@ -1,18 +1,18 @@
 {
     "descriptionimage": "#hash_40e6cfd119c2439a",
     "description": "#hash_7930961e4434bcad",
-    "var_60fcfffa": "#hash_767920f11b821061",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 0.1,
+    "hash_60fcfffa": "#hash_767920f11b821061",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 0.1,
     "maxvalue": 1,
     "name": "pc_grapple_toggle",
     "displayname": "#hash_5124e15d1bd0d0bb",
     "decimalplace": 0.01,
-    "var_66faec87": 2,
+    "hash_66faec87": 2,
     "statname": "grapple_autoHold",
-    "var_82c732a7": 1,
-    "var_d4e288e": 1,
-    "var_b7401319": "#hash_5560a344d1e6d003"
+    "isenableddisabled": 1,
+    "hash_d4e288e": 1,
+    "hash_b7401319": "#hash_5560a344d1e6d003"
 }

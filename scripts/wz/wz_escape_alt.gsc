@@ -58,7 +58,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace wz_escape_alt/wz_escape_alt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x50592625, Offset: 0x3a0
 // Size: 0x10e
 function function_d075b84e() {
@@ -80,7 +80,7 @@ function function_d075b84e() {
 }
 
 // Namespace wz_escape_alt/wz_escape_alt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcd7b2000, Offset: 0x4b8
 // Size: 0x1c
 function on_player_spawned() {
@@ -90,7 +90,7 @@ function on_player_spawned() {
 }
 
 // Namespace wz_escape_alt/wz_escape_alt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x421450e0, Offset: 0x4e0
 // Size: 0x46
 function function_28990311() {
@@ -99,7 +99,7 @@ function function_28990311() {
 }
 
 // Namespace wz_escape_alt/wz_escape_alt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2afa6050, Offset: 0x530
 // Size: 0x34
 function function_78d5fb9b() {

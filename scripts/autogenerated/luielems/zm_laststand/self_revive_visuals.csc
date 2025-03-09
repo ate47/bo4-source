@@ -7,7 +7,7 @@
 class cself_revive_visuals : cluielem {
 
     // Namespace cself_revive_visuals/self_revive_visuals
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x4bca128, Offset: 0x420
     // Size: 0x30
     function set_revive_progress(localclientnum, value) {
@@ -15,7 +15,7 @@ class cself_revive_visuals : cluielem {
     }
 
     // Namespace cself_revive_visuals/self_revive_visuals
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x3a66e582, Offset: 0x3e8
     // Size: 0x30
     function set_self_revive_progress_bar_fill(localclientnum, value) {
@@ -23,7 +23,7 @@ class cself_revive_visuals : cluielem {
     }
 
     // Namespace cself_revive_visuals/self_revive_visuals
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xed042215, Offset: 0x3b0
     // Size: 0x2c
     function open(localclientnum) {
@@ -31,7 +31,7 @@ class cself_revive_visuals : cluielem {
     }
 
     // Namespace cself_revive_visuals/self_revive_visuals
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xdbd7f457, Offset: 0x338
     // Size: 0x6c
     function function_fa582112(localclientnum) {
@@ -41,7 +41,7 @@ class cself_revive_visuals : cluielem {
     }
 
     // Namespace cself_revive_visuals/self_revive_visuals
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x6c77a4ad, Offset: 0x308
     // Size: 0x24
     function register_clientside(uid) {
@@ -49,7 +49,7 @@ class cself_revive_visuals : cluielem {
     }
 
     // Namespace cself_revive_visuals/self_revive_visuals
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0xdebc5ce4, Offset: 0x278
     // Size: 0x84
     function setup_clientfields(uid, var_967a63df, var_e97e7153) {
@@ -61,7 +61,7 @@ class cself_revive_visuals : cluielem {
 }
 
 // Namespace self_revive_visuals/self_revive_visuals
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x5f21748c, Offset: 0xd8
 // Size: 0x58
 function register(uid, var_967a63df, var_e97e7153) {

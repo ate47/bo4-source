@@ -7,7 +7,7 @@
 class cvehicleturretoverheat : cluielem {
 
     // Namespace cvehicleturretoverheat/vehicleturretoverheat
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x38f34591, Offset: 0x470
     // Size: 0x30
     function set_bar_percent(localclientnum, value) {
@@ -15,7 +15,7 @@ class cvehicleturretoverheat : cluielem {
     }
 
     // Namespace cvehicleturretoverheat/vehicleturretoverheat
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xb0b459a4, Offset: 0x3b8
     // Size: 0xac
     function set_state(localclientnum, state_name) {
@@ -31,7 +31,7 @@ class cvehicleturretoverheat : cluielem {
     }
 
     // Namespace cvehicleturretoverheat/vehicleturretoverheat
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xab228b31, Offset: 0x380
     // Size: 0x2c
     function open(localclientnum) {
@@ -39,7 +39,7 @@ class cvehicleturretoverheat : cluielem {
     }
 
     // Namespace cvehicleturretoverheat/vehicleturretoverheat
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x21811193, Offset: 0x310
     // Size: 0x68
     function function_fa582112(localclientnum) {
@@ -49,7 +49,7 @@ class cvehicleturretoverheat : cluielem {
     }
 
     // Namespace cvehicleturretoverheat/vehicleturretoverheat
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xa474a7f8, Offset: 0x2e0
     // Size: 0x24
     function register_clientside(uid) {
@@ -57,7 +57,7 @@ class cvehicleturretoverheat : cluielem {
     }
 
     // Namespace cvehicleturretoverheat/vehicleturretoverheat
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xcdcd568a, Offset: 0x258
     // Size: 0x7c
     function setup_clientfields(uid, var_661989d5) {
@@ -69,7 +69,7 @@ class cvehicleturretoverheat : cluielem {
 }
 
 // Namespace vehicleturretoverheat/vehicleturretoverheat
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x262673da, Offset: 0xc0
 // Size: 0x4c
 function register(uid, var_661989d5) {

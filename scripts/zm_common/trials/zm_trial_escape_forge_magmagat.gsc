@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_6c76c1da/zm_trial_escape_forge_magmagat
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8d3c4e98, Offset: 0xe0
 // Size: 0x5c
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace namespace_6c76c1da/zm_trial_escape_forge_magmagat
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xd6a8d76b, Offset: 0x148
 // Size: 0x24
 function private on_begin() {
@@ -36,7 +36,7 @@ function private on_begin() {
 }
 
 // Namespace namespace_6c76c1da/zm_trial_escape_forge_magmagat
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe9e23ec0, Offset: 0x178
 // Size: 0x76
 function private on_end(round_reset) {
@@ -48,7 +48,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace namespace_6c76c1da/zm_trial_escape_forge_magmagat
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x6d8b50c2, Offset: 0x1f8
 // Size: 0x6c
 function private function_a543a954() {

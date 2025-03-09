@@ -16,7 +16,7 @@
 #namespace white_main_quest;
 
 // Namespace white_main_quest/zm_white_main_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x890c94b0, Offset: 0x500
 // Size: 0x31c
 function init_clientfields() {
@@ -34,7 +34,7 @@ function init_clientfields() {
 }
 
 // Namespace white_main_quest/zm_white_main_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xae1b6e3c, Offset: 0x828
 // Size: 0x15a
 function init_fx() {
@@ -49,7 +49,7 @@ function init_fx() {
 }
 
 // Namespace white_main_quest/zm_white_main_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x94ec362, Offset: 0x990
 // Size: 0xac
 function function_a4630e54(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -61,7 +61,7 @@ function function_a4630e54(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace white_main_quest/zm_white_main_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1a74b836, Offset: 0xa48
 // Size: 0xac
 function function_a290f1b0(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -73,7 +73,7 @@ function function_a290f1b0(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace white_main_quest/zm_white_main_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfb176d02, Offset: 0xb00
 // Size: 0xac
 function function_ac3315e5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -85,7 +85,7 @@ function function_ac3315e5(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace white_main_quest/zm_white_main_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9a3b6b50, Offset: 0xbb8
 // Size: 0xac
 function function_4b104fc5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -97,7 +97,7 @@ function function_4b104fc5(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace white_main_quest/zm_white_main_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x637bc217, Offset: 0xc70
 // Size: 0x64
 function clock_interact_feedback(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -107,7 +107,7 @@ function clock_interact_feedback(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace white_main_quest/zm_white_main_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8b15fd17, Offset: 0xce0
 // Size: 0x64
 function server_carry_feedback(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -117,7 +117,7 @@ function server_carry_feedback(localclientnum, oldval, newval, bnewent, binitial
 }
 
 // Namespace white_main_quest/zm_white_main_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x70535099, Offset: 0xd50
 // Size: 0x64
 function server_carry_fail_feedback(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -127,7 +127,7 @@ function server_carry_fail_feedback(localclientnum, oldval, newval, bnewent, bin
 }
 
 // Namespace white_main_quest/zm_white_main_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe562d29b, Offset: 0xdc0
 // Size: 0xae
 function server_carry_audio_feedback(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -154,7 +154,7 @@ function soul_release(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace white_main_quest/zm_white_main_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2e75505c, Offset: 0xf40
 // Size: 0x74
 function function_9bc657a7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -162,7 +162,7 @@ function function_9bc657a7(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace white_main_quest/zm_white_main_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc45b6276, Offset: 0xfc0
 // Size: 0xac
 function registerooze_gate_colcontrolrobotmelee(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -174,7 +174,7 @@ function registerooze_gate_colcontrolrobotmelee(localclientnum, oldval, newval, 
 }
 
 // Namespace white_main_quest/zm_white_main_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf86b80cb, Offset: 0x1078
 // Size: 0x420
 function portal_map_to_nuclear_state(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

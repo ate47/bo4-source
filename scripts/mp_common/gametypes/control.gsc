@@ -1096,7 +1096,7 @@ function private on_zone_capture(sentient) {
         level.usingextratime = 1;
     }
     if (level.capturedzones == 1 && (isdefined(level.bonuslivesforcapturingzone) ? level.bonuslivesforcapturingzone : 0) > 0 && capture_team == game.attackers) {
-        game.lives[game.attackers] = game.lives[game.attackers] + level.bonuslivesforcapturingzone;
+        game.lives[game.attackers] += level.bonuslivesforcapturingzone;
         teamid = "team" + level.teamindex[game.attackers];
         clientfield::set_world_uimodel("hudItems." + teamid + ".livesCount", game.lives[game.attackers]);
     }

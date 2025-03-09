@@ -8,7 +8,7 @@
 #namespace killstreak_hacking;
 
 // Namespace killstreak_hacking/killstreak_hacking
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x71fd34b4, Offset: 0xb8
 // Size: 0x1de
 function enable_hacking(killstreakname, prehackfunction, posthackfunction) {
@@ -41,7 +41,7 @@ function disable_hacking() {
 }
 
 // Namespace killstreak_hacking/killstreak_hacking
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2fb42832, Offset: 0x2c8
 // Size: 0x64
 function hackerfx() {
@@ -52,7 +52,7 @@ function hackerfx() {
 }
 
 // Namespace killstreak_hacking/killstreak_hacking
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6b216818, Offset: 0x338
 // Size: 0x64
 function hackerloopfx() {
@@ -63,7 +63,7 @@ function hackerloopfx() {
 }
 
 // Namespace killstreak_hacking/killstreak_hacking
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x667f80bb, Offset: 0x3a8
 // Size: 0x1bc
 function private _hacked_callback(hacker) {
@@ -104,7 +104,7 @@ function override_hacked_killstreak_reference(killstreakref) {
 }
 
 // Namespace killstreak_hacking/killstreak_hacking
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6240125, Offset: 0x5a8
 // Size: 0x9a
 function get_hacked_timeout_duration_ms() {
@@ -118,7 +118,7 @@ function get_hacked_timeout_duration_ms() {
 }
 
 // Namespace killstreak_hacking/killstreak_hacking
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x45063e6d, Offset: 0x650
 // Size: 0x5a
 function set_vehicle_drivable_time_starting_now(killstreak, duration_ms = -1) {
@@ -129,7 +129,7 @@ function set_vehicle_drivable_time_starting_now(killstreak, duration_ms = -1) {
 }
 
 // Namespace killstreak_hacking/killstreak_hacking
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd5b1eb56, Offset: 0x6b8
 // Size: 0xe4
 function _update_health(hacker) {

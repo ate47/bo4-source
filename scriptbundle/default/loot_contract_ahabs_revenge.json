@@ -3,10 +3,10 @@
     "relateditemname": "#weapon/tr_longburst_t8",
     "contracttitle": "#hash_d8622d38b0078a8",
     "name": "loot_contract_ahabs_revenge",
-    "var_69b5a265": "core_frontend_tr_longburst_ahabs_revenge",
-    "var_4b258f2c": "#hash_7d47d54878e779f",
+    "hash_69b5a265": "core_frontend_tr_longburst_ahabs_revenge",
+    "hash_4b258f2c": "#hash_7d47d54878e779f",
     "contractdescription": "#hash_7680bf2bc2219eb1",
-    "var_f15e270f": "#white",
-    "var_1c057e8c": "#hash_7d77c2620e84744a",
-    "var_e08fc162": "#hash_577eafb8e374dbe7"
+    "hash_f15e270f": "#white",
+    "hash_1c057e8c": "#hash_7d77c2620e84744a",
+    "hash_e08fc162": "#hash_577eafb8e374dbe7"
 }

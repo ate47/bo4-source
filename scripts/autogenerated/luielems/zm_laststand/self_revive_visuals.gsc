@@ -7,26 +7,26 @@
 // Method(s) 7 Total 14
 class cself_revive_visuals : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cself_revive_visuals/self_revive_visuals
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x23eb0acd, Offset: 0x398
     // Size: 0x3c
     function set_revive_progress(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "revive_progress", value);
+        player clientfield::function_9bf78ef8(_uid, "revive_progress", value);
     }
 
     // Namespace cself_revive_visuals/self_revive_visuals
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x33f62f01, Offset: 0x350
     // Size: 0x3c
     function set_self_revive_progress_bar_fill(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "self_revive_progress_bar_fill", value);
+        player clientfield::function_9bf78ef8(_uid, "self_revive_progress_bar_fill", value);
     }
 
     // Namespace cself_revive_visuals/self_revive_visuals
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xbcf2a8d, Offset: 0x320
     // Size: 0x24
     function close(player) {
@@ -34,7 +34,7 @@ class cself_revive_visuals : cluielem {
     }
 
     // Namespace cself_revive_visuals/self_revive_visuals
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x49a803cc, Offset: 0x2d0
     // Size: 0x44
     function open(player, persistent = 0) {
@@ -42,7 +42,7 @@ class cself_revive_visuals : cluielem {
     }
 
     // Namespace cself_revive_visuals/self_revive_visuals
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xa6d220ab, Offset: 0x250
     // Size: 0x74
     function setup_clientfields(uid) {
@@ -54,7 +54,7 @@ class cself_revive_visuals : cluielem {
 }
 
 // Namespace self_revive_visuals/self_revive_visuals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdf881ca3, Offset: 0xf8
 // Size: 0x40
 function register(uid) {
@@ -64,7 +64,7 @@ function register(uid) {
 }
 
 // Namespace self_revive_visuals/self_revive_visuals
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4a4e4b04, Offset: 0x140
 // Size: 0x38
 function open(player, persistent = 0) {
@@ -72,7 +72,7 @@ function open(player, persistent = 0) {
 }
 
 // Namespace self_revive_visuals/self_revive_visuals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x90839abf, Offset: 0x180
 // Size: 0x1c
 function close(player) {
@@ -96,7 +96,7 @@ function set_self_revive_progress_bar_fill(player, value) {
 }
 
 // Namespace self_revive_visuals/self_revive_visuals
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbc271f56, Offset: 0x200
 // Size: 0x28
 function set_revive_progress(player, value) {

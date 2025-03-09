@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_extra_credit/zm_bgb_extra_credit
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9d869b9, Offset: 0x100
 // Size: 0x74
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_extra_credit/zm_bgb_extra_credit
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3345d61f, Offset: 0x180
 // Size: 0x44
 function activation() {
@@ -34,7 +34,7 @@ function activation() {
 }
 
 // Namespace zm_bgb_extra_credit/zm_bgb_extra_credit
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe173578c, Offset: 0x1d0
 // Size: 0xb6
 function function_22f934e6(origin, var_22a4c702) {
@@ -47,7 +47,7 @@ function function_22f934e6(origin, var_22a4c702) {
 }
 
 // Namespace zm_bgb_extra_credit/zm_bgb_extra_credit
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbcaee8d0, Offset: 0x290
 // Size: 0x10
 function function_19e7d278(player) {
@@ -55,7 +55,7 @@ function function_19e7d278(player) {
 }
 
 // Namespace zm_bgb_extra_credit/zm_bgb_extra_credit
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2c9529c2, Offset: 0x2a8
 // Size: 0x1a
 function validation() {

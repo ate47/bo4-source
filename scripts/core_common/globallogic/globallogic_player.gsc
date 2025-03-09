@@ -4,7 +4,7 @@
 #namespace globallogic_player;
 
 // Namespace globallogic_player/globallogic_player
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xf6c49e91, Offset: 0x98
 // Size: 0x832
 function function_c5343206(eattacker, einflictor, idamage, smeansofdeath, weapon) {
@@ -69,10 +69,10 @@ function function_c5343206(eattacker, einflictor, idamage, smeansofdeath, weapon
         var_d72bd991.var_2acdce3e = isdefined(self.var_121392a1) ? arraycopy(self.var_121392a1) : undefined;
         var_d72bd991.var_b535f1ea = self.lastconcussedby;
         var_d72bd991.var_f91a4dd6 = self.recentkillcountsameweapon;
-        if (eattacker function_6c32d092(#"talent_teamlink") && !(var_d72bd991.var_53611a9c === 1) && level.teambased) {
+        if (eattacker hastalent(#"talent_teamlink") && !(var_d72bd991.var_53611a9c === 1) && level.teambased) {
             var_d72bd991.var_ec93e5f2 = function_43084f6c(self);
         }
-        if (eattacker function_6c32d092(#"talent_ghost") && !(var_d72bd991.var_8e35fb71 === 1)) {
+        if (eattacker hastalent(#"talent_ghost") && !(var_d72bd991.var_8e35fb71 === 1)) {
             var_d72bd991.var_efc9cf4d = function_eddea888(eattacker);
         }
         var_98a6bdf5 = eattacker.var_ea1458aa;
@@ -103,7 +103,7 @@ function function_c5343206(eattacker, einflictor, idamage, smeansofdeath, weapon
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x631b32b8, Offset: 0x8d8
 // Size: 0x374
 function function_43084f6c(player) {
@@ -143,7 +143,7 @@ function function_43084f6c(player) {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8f724414, Offset: 0xc58
 // Size: 0x13a
 function function_9f942458(var_6ba44c6, var_fbbdf63c) {
@@ -165,7 +165,7 @@ function function_9f942458(var_6ba44c6, var_fbbdf63c) {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1ac9c44d, Offset: 0xda0
 // Size: 0x19a
 function function_eddea888(player) {
@@ -194,7 +194,7 @@ function function_eddea888(player) {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf7c6b76a, Offset: 0xf48
 // Size: 0x1c6
 function function_ce33e204(player) {
@@ -224,7 +224,7 @@ function function_ce33e204(player) {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xca449268, Offset: 0x1118
 // Size: 0x19e
 function private function_5af0c53c(player) {
@@ -254,7 +254,7 @@ function private function_5af0c53c(player) {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xf00617e7, Offset: 0x12c0
 // Size: 0xc4
 function function_9843a46c(eattacker, einflictor, idamage, smeansofdeath, weapon) {
@@ -272,7 +272,7 @@ function function_9843a46c(eattacker, einflictor, idamage, smeansofdeath, weapon
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x678e44cf, Offset: 0x1390
 // Size: 0x24a
 function trackattackerdamage(eattacker, idamage, smeansofdeath, weapon) {
@@ -318,7 +318,7 @@ function trackattackerdamage(eattacker, idamage, smeansofdeath, weapon) {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xca523910, Offset: 0x15e8
 // Size: 0x32
 function allowedassistweapon(weapon) {
@@ -329,7 +329,7 @@ function allowedassistweapon(weapon) {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x71efa2fd, Offset: 0x1628
 // Size: 0x144
 function giveattackerandinflictorownerassist(eattacker, einflictor, idamage, smeansofdeath, weapon) {
@@ -360,7 +360,7 @@ function giveattackerandinflictorownerassist(eattacker, einflictor, idamage, sme
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe73a8ed4, Offset: 0x1778
 // Size: 0xf2
 function function_efd02c1d(einflictor) {
@@ -385,7 +385,7 @@ function function_efd02c1d(einflictor) {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcff82a35, Offset: 0x1878
 // Size: 0x17e
 function figureoutattacker(eattacker) {

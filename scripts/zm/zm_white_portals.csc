@@ -9,7 +9,7 @@
 #namespace zm_white_portals;
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdc57f79c, Offset: 0x5b8
 // Size: 0x34
 function init() {
@@ -19,7 +19,7 @@ function init() {
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9ac208e2, Offset: 0x5f8
 // Size: 0x29c
 function main() {
@@ -52,7 +52,7 @@ function main() {
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x735aacc8, Offset: 0x8a0
 // Size: 0x94c
 function init_clientfields() {
@@ -92,7 +92,7 @@ function init_clientfields() {
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7c91154e, Offset: 0x11f8
 // Size: 0x242
 function init_fx() {
@@ -111,7 +111,7 @@ function init_fx() {
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xba66d52e, Offset: 0x1448
 // Size: 0x116
 function function_3ad8c656() {
@@ -128,7 +128,7 @@ function function_3ad8c656() {
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x48fb6073, Offset: 0x1568
 // Size: 0x7c
 function function_38a241a1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -137,7 +137,7 @@ function function_38a241a1(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9dfc7a42, Offset: 0x15f0
 // Size: 0x94
 function function_69108708(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -146,7 +146,7 @@ function function_69108708(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdc300939, Offset: 0x1690
 // Size: 0x94
 function function_98cff177(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -155,7 +155,7 @@ function function_98cff177(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4220772b, Offset: 0x1730
 // Size: 0x29a
 function function_e4ea441(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -185,7 +185,7 @@ function function_e4ea441(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x181647f2, Offset: 0x19d8
 // Size: 0x15e
 function portal_ready_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -206,7 +206,7 @@ function portal_ready_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa1b7dfe5, Offset: 0x1b40
 // Size: 0xc4
 function crawler_portal_spawn_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -219,7 +219,7 @@ function crawler_portal_spawn_fx(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x26e63d44, Offset: 0x1c10
 // Size: 0xe0
 function portal_maps_clear_lights(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -233,7 +233,7 @@ function portal_maps_clear_lights(localclientnum, oldval, newval, bnewent, binit
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x74298774, Offset: 0x1cf8
 // Size: 0xe8
 function clear_lights(localclientnum) {
@@ -246,7 +246,7 @@ function clear_lights(localclientnum) {
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x58e14d02, Offset: 0x1de8
 // Size: 0x16c
 function portal_maps_initialize_lights(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -263,7 +263,7 @@ function portal_maps_initialize_lights(localclientnum, oldval, newval, bnewent, 
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8708a374, Offset: 0x1f60
 // Size: 0x94
 function portal_map_indicator_green_house_backyard(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -277,7 +277,7 @@ function portal_map_indicator_green_house_backyard(localclientnum, oldval, newva
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xded00c12, Offset: 0x2000
 // Size: 0x94
 function portal_map_indicator_red_house(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -291,7 +291,7 @@ function portal_map_indicator_red_house(localclientnum, oldval, newval, bnewent,
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3379bd45, Offset: 0x20a0
 // Size: 0x94
 function portal_map_indicator_yellow_house(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -305,7 +305,7 @@ function portal_map_indicator_yellow_house(localclientnum, oldval, newval, bnewe
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe5f0cc4f, Offset: 0x2140
 // Size: 0x94
 function portal_map_indicator_prisoner_holding(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -319,7 +319,7 @@ function portal_map_indicator_prisoner_holding(localclientnum, oldval, newval, b
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x21f07a14, Offset: 0x21e0
 // Size: 0x94
 function portal_map_indicator_street_middle(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -333,7 +333,7 @@ function portal_map_indicator_street_middle(localclientnum, oldval, newval, bnew
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xffc99845, Offset: 0x2280
 // Size: 0x94
 function portal_map_indicator_transfusion_facility(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -347,7 +347,7 @@ function portal_map_indicator_transfusion_facility(localclientnum, oldval, newva
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb75580a2, Offset: 0x2320
 // Size: 0x94
 function portal_map_indicator_diner(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -361,7 +361,7 @@ function portal_map_indicator_diner(localclientnum, oldval, newval, bnewent, bin
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xce151e84, Offset: 0x23c0
 // Size: 0x94
 function portal_map_indicator_beds(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -375,7 +375,7 @@ function portal_map_indicator_beds(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2f282b33, Offset: 0x2460
 // Size: 0x94
 function portal_map_indicator_power(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -389,7 +389,7 @@ function portal_map_indicator_power(localclientnum, oldval, newval, bnewent, bin
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x10427dbc, Offset: 0x2500
 // Size: 0x94
 function portal_map_indicator_storage(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -403,7 +403,7 @@ function portal_map_indicator_storage(localclientnum, oldval, newval, bnewent, b
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x539b2db5, Offset: 0x25a0
 // Size: 0xf8
 function function_af29dda9(localclientnum, tag_label) {
@@ -416,7 +416,7 @@ function function_af29dda9(localclientnum, tag_label) {
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa9fa257d, Offset: 0x26a0
 // Size: 0xf8
 function function_8353316a(localclientnum, tag_label) {
@@ -429,7 +429,7 @@ function function_8353316a(localclientnum, tag_label) {
 }
 
 // Namespace zm_white_portals/zm_white_portals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1a14b06b, Offset: 0x27a0
 // Size: 0x4e
 function get_portals(localclientnum) {

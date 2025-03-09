@@ -10,14 +10,14 @@
         }
     ],
     "description": "#hash_258c1dae0783e647",
-    "var_60fcfffa": "#menu/on",
-    "var_9358ee0a": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#menu/on",
+    "hash_9358ee0a": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "warzone_reload_on_press",
     "displayname": "#hash_5d4618b0110c8110",
-    "var_66faec87": 10,
+    "hash_66faec87": 10,
     "statname": "warzoneReloadOnPress",
-    "var_b7401319": "#menu/off"
+    "hash_b7401319": "#menu/off"
 }

@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_laststand/zm_laststand
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x40d9fb9a, Offset: 0x298
 // Size: 0x214
 function __init__() {
@@ -42,7 +42,7 @@ function __init__() {
 }
 
 // Namespace zm_laststand/zm_laststand
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd8bddb93, Offset: 0x4b8
 // Size: 0xd6
 function wait_and_set_revive_shader_constant() {
@@ -55,7 +55,7 @@ function wait_and_set_revive_shader_constant() {
 }
 
 // Namespace zm_laststand/zm_laststand
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x715b3fe5, Offset: 0x598
 // Size: 0xe4
 function update_bleedout_timer(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -68,7 +68,7 @@ function update_bleedout_timer(localclientnum, oldval, newval, bnewent, binitial
 }
 
 // Namespace zm_laststand/zm_laststand
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x30f9e5b2, Offset: 0x688
 // Size: 0x170
 function function_50d4c00a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -94,7 +94,7 @@ function function_50d4c00a(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_laststand/zm_laststand
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdc99d92d, Offset: 0x800
 // Size: 0x266
 function function_be34e28f(localclientnum, var_d2c301e0) {
@@ -121,7 +121,7 @@ function function_be34e28f(localclientnum, var_d2c301e0) {
 }
 
 // Namespace zm_laststand/zm_laststand
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x85ab02c, Offset: 0xa70
 // Size: 0x44
 function function_ac994c83(var_c34665fc) {

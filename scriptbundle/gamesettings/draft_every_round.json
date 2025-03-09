@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "draft_every_round",
     "displayname": "#hash_3a59d1a4ad560305",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "draftEveryRound",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

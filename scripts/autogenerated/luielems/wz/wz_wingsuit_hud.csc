@@ -7,7 +7,7 @@
 class cwz_wingsuit_hud : cluielem {
 
     // Namespace cwz_wingsuit_hud/wz_wingsuit_hud
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xf45b9762, Offset: 0x258
     // Size: 0x2c
     function open(localclientnum) {
@@ -15,7 +15,7 @@ class cwz_wingsuit_hud : cluielem {
     }
 
     // Namespace cwz_wingsuit_hud/wz_wingsuit_hud
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xa585160e, Offset: 0x228
     // Size: 0x24
     function function_fa582112(localclientnum) {
@@ -23,7 +23,7 @@ class cwz_wingsuit_hud : cluielem {
     }
 
     // Namespace cwz_wingsuit_hud/wz_wingsuit_hud
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x1801df20, Offset: 0x1f8
     // Size: 0x24
     function register_clientside(uid) {
@@ -31,7 +31,7 @@ class cwz_wingsuit_hud : cluielem {
     }
 
     // Namespace cwz_wingsuit_hud/wz_wingsuit_hud
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xa6ef1321, Offset: 0x1c8
     // Size: 0x24
     function setup_clientfields(uid) {
@@ -41,7 +41,7 @@ class cwz_wingsuit_hud : cluielem {
 }
 
 // Namespace wz_wingsuit_hud/wz_wingsuit_hud
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2a21abc4, Offset: 0xa0
 // Size: 0x40
 function register(uid) {

@@ -35,7 +35,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcda09f4d, Offset: 0x368
 // Size: 0x29c
 function __init__() {
@@ -60,7 +60,7 @@ function __init__() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9ee88c84, Offset: 0x610
 // Size: 0xbc
 function dog_enable_rounds(b_ignore_cleanup = 1) {
@@ -76,7 +76,7 @@ function dog_enable_rounds(b_ignore_cleanup = 1) {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x76b2f9bc, Offset: 0x6d8
 // Size: 0x1ac
 function dog_spawner_init() {
@@ -100,7 +100,7 @@ function dog_spawner_init() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x47b279e9, Offset: 0x890
 // Size: 0x5e
 function function_dd162858() {
@@ -114,7 +114,7 @@ function function_dd162858() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x999ff6, Offset: 0x8f8
 // Size: 0x62
 function function_20aadb5e() {
@@ -124,7 +124,7 @@ function function_20aadb5e() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6fc6f890, Offset: 0x968
 // Size: 0xfc
 function waiting_for_next_dog_spawn(count, max) {
@@ -146,7 +146,7 @@ function waiting_for_next_dog_spawn(count, max) {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa101c50c, Offset: 0xa70
 // Size: 0xc
 function function_d544de30() {
@@ -154,7 +154,7 @@ function function_d544de30() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6bfeaf78, Offset: 0xa88
 // Size: 0x64
 function function_ed67c5e7(s_params) {
@@ -164,7 +164,7 @@ function function_ed67c5e7(s_params) {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x52f10ff2, Offset: 0xaf8
 // Size: 0x368
 function dog_spawn_fx(ai, ent) {
@@ -220,7 +220,7 @@ function dog_spawn_factory_logic(favorite_enemy) {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x14976062, Offset: 0xf88
 // Size: 0x96
 function function_81f9083e() {
@@ -232,7 +232,7 @@ function function_81f9083e() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc9e46491, Offset: 0x1028
 // Size: 0x134
 function function_a5abd591() {
@@ -260,7 +260,7 @@ function function_a5abd591() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x170de508, Offset: 0x1168
 // Size: 0x10a
 function get_favorite_enemy() {
@@ -288,7 +288,7 @@ function get_favorite_enemy() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x192dd65f, Offset: 0x1280
 // Size: 0xca
 function dog_health_increase() {
@@ -308,7 +308,7 @@ function dog_health_increase() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfda15081, Offset: 0x1358
 // Size: 0x17c
 function dog_round_tracker(var_634c65f0) {
@@ -331,7 +331,7 @@ function dog_round_tracker(var_634c65f0) {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x12fe1dba, Offset: 0x14e0
 // Size: 0x16c
 function function_246a0760() {
@@ -366,7 +366,7 @@ function function_246a0760() {
 #/
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2cf6d6ae, Offset: 0x16c8
 // Size: 0xec
 function dog_round_start() {
@@ -382,7 +382,7 @@ function dog_round_start() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2aad5430, Offset: 0x17c0
 // Size: 0x24
 function function_c5ab118d() {
@@ -390,7 +390,7 @@ function function_c5ab118d() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x595cfa42, Offset: 0x17f0
 // Size: 0x1cc
 function dog_round_stop(var_d25bbdd5) {
@@ -413,7 +413,7 @@ function dog_round_stop(var_d25bbdd5) {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc067a33d, Offset: 0x19c8
 // Size: 0xac
 function function_5f1ef789(var_d25bbdd5) {
@@ -426,7 +426,7 @@ function function_5f1ef789(var_d25bbdd5) {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x103d20e3, Offset: 0x1a80
 // Size: 0x8c
 function play_dog_round() {
@@ -438,7 +438,7 @@ function play_dog_round() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x85ec1caa, Offset: 0x1b18
 // Size: 0x430
 function dog_init() {
@@ -477,7 +477,7 @@ function dog_init() {
     self.health = int(level.dog_health * health_multiplier);
     self.freezegun_damage = 0;
     self.zombie_move_speed = "sprint";
-    if (self.var_9fde8624 != #"zombie_wolf") {
+    if (self.subarchetype != #"zombie_wolf") {
         self.a.nodeath = 1;
     }
     self zm_score::function_82732ced();
@@ -501,7 +501,7 @@ function dog_init() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe0633be7, Offset: 0x1f50
 // Size: 0x44e
 function dog_death() {
@@ -531,7 +531,7 @@ function dog_death() {
         return;
     }
     self stoploopsound();
-    if (self.var_9fde8624 != #"zombie_wolf" && !(isdefined(self.a.nodeath) && self.a.nodeath)) {
+    if (self.subarchetype != #"zombie_wolf" && !(isdefined(self.a.nodeath) && self.a.nodeath)) {
         trace = groundtrace(self.origin + (0, 0, 10), self.origin - (0, 0, 30), 0, self);
         if (trace[#"fraction"] < 1) {
             pitch = acos(vectordot(trace[#"normal"], (0, 0, 1)));
@@ -540,7 +540,7 @@ function dog_death() {
             }
         }
     }
-    if (self.var_9fde8624 != #"zombie_wolf" && isdefined(self.a.nodeath)) {
+    if (self.subarchetype != #"zombie_wolf" && isdefined(self.a.nodeath)) {
         if (self.var_c39323b5 !== 1) {
             level thread dog_explode_fx(self, self.origin);
             self ghost();
@@ -557,7 +557,7 @@ function dog_death() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xaf13756f, Offset: 0x23a8
 // Size: 0x8c
 function dog_explode_fx(dog, origin) {
@@ -569,7 +569,7 @@ function dog_explode_fx(dog, origin) {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb32458cc, Offset: 0x2440
 // Size: 0xd4
 function zombie_setup_attack_properties_dog() {
@@ -588,7 +588,7 @@ function zombie_setup_attack_properties_dog() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbe367cca, Offset: 0x2520
 // Size: 0x34
 function stop_dog_sound_on_death() {
@@ -599,7 +599,7 @@ function stop_dog_sound_on_death() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9d853873, Offset: 0x2560
 // Size: 0x22c
 function dog_behind_audio() {
@@ -626,7 +626,7 @@ function dog_behind_audio() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5630ad70, Offset: 0x2798
 // Size: 0x206
 function dog_clip_monitor() {
@@ -661,7 +661,7 @@ function dog_clip_monitor() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdd8ae0d0, Offset: 0x29a8
 // Size: 0x120
 function dog_run_think() {
@@ -687,7 +687,7 @@ function dog_run_think() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x68846b40, Offset: 0x2ad0
 // Size: 0xa8
 function dog_stalk_audio() {
@@ -700,7 +700,7 @@ function dog_stalk_audio() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x14582371, Offset: 0x2b80
 // Size: 0x7c
 function dog_thundergun_knockdown(player, gib) {
@@ -710,7 +710,7 @@ function dog_thundergun_knockdown(player, gib) {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xda192a69, Offset: 0x2c08
 // Size: 0xe2
 function function_b168b424(var_dbce0c44) {
@@ -726,7 +726,7 @@ function function_b168b424(var_dbce0c44) {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7f9747c3, Offset: 0x2cf8
 // Size: 0x3c
 function dog_round_spawn() {
@@ -739,7 +739,7 @@ function dog_round_spawn() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd5e55241, Offset: 0x2d40
 // Size: 0x900
 function function_62db7b1c(b_force_spawn = 0, var_eb3a8721) {
@@ -866,7 +866,7 @@ function function_62db7b1c(b_force_spawn = 0, var_eb3a8721) {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc891f5bc, Offset: 0x3648
 // Size: 0x96
 function function_c1faf4d5() {
@@ -879,7 +879,7 @@ function function_c1faf4d5() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x42208ef5, Offset: 0x36e8
 // Size: 0xe2
 function function_71e3c90d() {
@@ -908,7 +908,7 @@ function function_71e3c90d() {
 }
 
 // Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf9fc6f0c, Offset: 0x37d8
 // Size: 0xbc
 function function_bb101706() {

@@ -22,7 +22,7 @@ function autoexec __init() {
 }
 
 // Namespace wz_asylum/wz_asylum
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1c021631, Offset: 0x1b8
 // Size: 0x4c
 function __init__() {
@@ -30,7 +30,7 @@ function __init__() {
 }
 
 // Namespace wz_asylum/wz_asylum
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa74000d9, Offset: 0x210
 // Size: 0x18a
 function toilet_ee_play(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

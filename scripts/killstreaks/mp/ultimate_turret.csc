@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd0532fd2, Offset: 0x108
 // Size: 0x54
 function __init__() {

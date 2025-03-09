@@ -1,7 +1,7 @@
 #namespace zm_orange_fx;
 
 // Namespace zm_orange_fx/zm_orange_fx
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9ae4e2e3, Offset: 0x68
 // Size: 0x62
 function init() {

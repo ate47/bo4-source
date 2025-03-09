@@ -45,7 +45,7 @@ function function_8c7ec52f(einflictor, eattacker, idamage, idflags, smeansofdeat
     params.spartname = spartname;
     params.isurfacetype = isurfacetype;
     params.vsurfacenormal = vsurfacenormal;
-    self callback::callback(#"hash_2e68909d4e4ed889", params);
+    self callback::callback(#"on_scriptmover_damage", params);
     self function_f7f9c3eb(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, iboneindex, imodelindex, spartname, isurfacetype, vsurfacenormal);
 }
 

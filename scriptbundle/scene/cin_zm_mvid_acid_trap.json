@@ -199,6 +199,6 @@
     "type": "scene",
     "name": "cin_zm_mvid_acid_trap",
     "dontsync": 1,
-    "var_a6da2039": "cin_zm_mvid_acid_trap",
+    "hash_a6da2039": "cin_zm_mvid_acid_trap",
     "team": "any"
 }

@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace rcxd/rcxd
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4901ac79, Offset: 0x110
 // Size: 0x2c
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace rcxd/rcxd
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1f7d2c60, Offset: 0x148
 // Size: 0x8c
 function function_91ea9492() {
@@ -37,7 +37,7 @@ function function_91ea9492() {
 }
 
 // Namespace rcxd/rcxd
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfd7a2ea6, Offset: 0x1e0
 // Size: 0x10c
 function defaultrole() {
@@ -51,7 +51,7 @@ function defaultrole() {
 }
 
 // Namespace rcxd/rcxd
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x79cd6361, Offset: 0x2f8
 // Size: 0x19e
 function initsounds() {

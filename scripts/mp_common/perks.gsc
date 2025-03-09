@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace perks/perks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd3be6a05, Offset: 0x138
 // Size: 0x54
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace perks/perks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x60bc9705, Offset: 0x198
 // Size: 0x54
 function on_player_spawned(local_client_num) {
@@ -33,7 +33,7 @@ function on_player_spawned(local_client_num) {
 }
 
 // Namespace perks/perks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd9980413, Offset: 0x1f8
 // Size: 0xb4
 function monitorflight() {
@@ -50,7 +50,7 @@ function monitorflight() {
 }
 
 // Namespace perks/perks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2b5149c8, Offset: 0x2b8
 // Size: 0x5e8
 function monitorgpsjammer() {
@@ -145,7 +145,7 @@ function monitorgpsjammer() {
 }
 
 // Namespace perks/perks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7b49e0e1, Offset: 0x8a8
 // Size: 0x608
 function monitorsengrenjammer() {

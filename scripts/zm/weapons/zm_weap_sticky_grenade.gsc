@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace sticky_grenade/zm_weap_sticky_grenade
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9be6f731, Offset: 0xe0
 // Size: 0x64
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace sticky_grenade/zm_weap_sticky_grenade
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0xa3c0004b, Offset: 0x150
 // Size: 0xea
 function function_140f2522(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

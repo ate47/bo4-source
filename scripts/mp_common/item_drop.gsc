@@ -158,7 +158,7 @@ function private function_44a6883c(&drop_item_id, &drop_items, &drop_count, &dro
                 if (itemname != var_fa38de52) {
                     continue;
                 }
-                drop_count[var_604c3ae6] = drop_count[var_604c3ae6] + drop_count[index];
+                drop_count[var_604c3ae6] += drop_count[index];
                 drop_item_id[index] = -1;
                 drop_items[index] = undefined;
                 drop_count[index] = undefined;
@@ -209,8 +209,8 @@ function private function_44a6883c(&drop_item_id, &drop_items, &drop_count, &dro
                 var_8429965a = maxstacksize - drop_count[var_604c3ae6];
                 excess = int(min(var_8429965a, drop_count[index]));
             }
-            drop_count[var_604c3ae6] = drop_count[var_604c3ae6] + excess;
-            drop_count[index] = drop_count[index] - excess;
+            drop_count[var_604c3ae6] += excess;
+            drop_count[index] -= excess;
             if (drop_count[index] <= 0) {
                 assert(drop_count[index] == 0);
                 drop_item_id[index] = -1;
@@ -938,7 +938,7 @@ function drop_item(weapon = undefined, count = 0, amount = 0, itemid, position, 
     } else {
         dropitem clientfield::set("dynamic_item_drop", 1);
     }
-    dropitem function_46d7f921(dropitem.id);
+    dropitem setitemindex(dropitem.id);
     dropitem notsolid();
     dropitem ghost();
     if (stashitem) {
@@ -949,8 +949,8 @@ function drop_item(weapon = undefined, count = 0, amount = 0, itemid, position, 
     dropitem.amount = amount;
     dropitem.count = count;
     dropitem clientfield::set("dynamic_item_drop_count", int(max(dropitem.count, dropitem.amount)));
-    if (var_ba40b4c1 && isdefined(dropitem.itementry.var_77d2cbb5)) {
-        dropitem setmodel(dropitem.itementry.var_77d2cbb5);
+    if (var_ba40b4c1 && isdefined(dropitem.itementry.dropmodel)) {
+        dropitem setmodel(dropitem.itementry.dropmodel);
     } else if (isdefined(dropitem.itementry.model)) {
         dropitem setmodel(dropitem.itementry.model);
     } else if (isdefined(weapon)) {

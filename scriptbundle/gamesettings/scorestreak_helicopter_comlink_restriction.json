@@ -5,9 +5,9 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "scorestreak_helicopter_comlink_restriction",
-    "displayname": "#hash_6c753e4261a11107",
+    "displayname": "#killstreak/helicopter_comlink",
     "label1": "#menu/enabled",
     "label2": "#menu/disabled",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "itemRestrictions__helicopter_comlink__restricted"
 }

@@ -1,14 +1,14 @@
 {
-    "var_d58bd0e9": "#hash_30c81cbf83c820c2",
-    "var_67b4a761": "#hash_30c81cbf83c820c2",
-    "var_2ecceeab": "#purifier_kill",
+    "hash_d58bd0e9": "#hash_30c81cbf83c820c2",
+    "hash_67b4a761": "#hash_30c81cbf83c820c2",
+    "hash_2ecceeab": "#purifier_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "var_16abf654": "#hash_30c81cbf83c820c2",
+    "hash_16abf654": "#hash_30c81cbf83c820c2",
     "name": "hero_flamethrower_scoreevents",
-    "var_e1b418c1": "ability",
-    "var_1b8b6771": "#hash_30c81cbf83c820c2",
-    "var_3143c814": "#purifier_shutdown",
-    "var_6643c0a0": "#hash_30c81cbf83c820c2"
+    "customsettingstype": "ability",
+    "hash_1b8b6771": "#hash_30c81cbf83c820c2",
+    "hash_3143c814": "#purifier_shutdown",
+    "hash_6643c0a0": "#hash_30c81cbf83c820c2"
 }

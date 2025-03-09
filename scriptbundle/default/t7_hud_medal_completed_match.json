@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_completed_match",
     "backinglarge": "#t7_hud_medal_backing_match_completion_lrg",
     "iconsmall": "#t7_hud_medal_completed_match",
-    "stringref": "#hash_87a8659a829da3c",
+    "stringref": "#medal/completed_match",
     "iconlarge": "#t7_hud_medal_completed_match_lrg"
 }

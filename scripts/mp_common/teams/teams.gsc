@@ -173,7 +173,7 @@ function update_played_time() {
         self stats::function_dad108fa(#"time_played_alive", timealive);
     }
     timealive = int(min(self.timeplayed[#"alive"], level.timeplayedcap));
-    self.pers[#"time_played_alive"] = self.pers[#"time_played_alive"] + timealive;
+    self.pers[#"time_played_alive"] += timealive;
     pixendevent();
     if (gamestate::is_game_over()) {
         return;

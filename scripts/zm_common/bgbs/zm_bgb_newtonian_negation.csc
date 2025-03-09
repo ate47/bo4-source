@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_newtonian_negation/zm_bgb_newtonian_negation
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x56d6119c, Offset: 0x108
 // Size: 0x94
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_newtonian_negation/zm_bgb_newtonian_negation
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdfafc148, Offset: 0x1a8
 // Size: 0xbc
 function function_8622e664(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -40,7 +40,7 @@ function function_8622e664(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_bgb_newtonian_negation/zm_bgb_newtonian_negation
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x518281d8, Offset: 0x270
 // Size: 0x190
 function function_e752a980(localclientnum) {

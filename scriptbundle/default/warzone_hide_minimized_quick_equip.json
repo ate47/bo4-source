@@ -18,14 +18,14 @@
         }
     ],
     "description": "#hash_12136f789688f697",
-    "var_60fcfffa": "#menu/on",
-    "var_9358ee0a": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#menu/on",
+    "hash_9358ee0a": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "warzone_hide_minimized_quick_equip",
     "displayname": "#hash_357dc2b8da52d8a0",
-    "var_66faec87": 10,
+    "hash_66faec87": 10,
     "statname": "warzoneHideMinimizedQuickEquip",
-    "var_b7401319": "#menu/off"
+    "hash_b7401319": "#menu/off"
 }

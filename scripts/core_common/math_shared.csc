@@ -1,7 +1,7 @@
 #namespace math;
 
 // Namespace math/math_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf6960d70, Offset: 0x68
 // Size: 0x4c
 function clamp(val, val_min, val_max) {
@@ -111,7 +111,7 @@ function sign(x) {
 }
 
 // Namespace math/math_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4209ab5e, Offset: 0x598
 // Size: 0x38
 function cointoss(n_chance = 50) {

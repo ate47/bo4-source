@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace ai_tank/ai_tank
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaaa67ea0, Offset: 0xc8
 // Size: 0x14
 function __init__() {

@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace status_effect_blind/status_effect_blind
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x694235fa, Offset: 0xf0
 // Size: 0x6c
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace status_effect_blind/status_effect_blind
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xda9a5e75, Offset: 0x168
 // Size: 0x242
 function blind_apply(var_756fda07, weapon, applicant) {
@@ -59,7 +59,7 @@ function blind_apply(var_756fda07, weapon, applicant) {
 }
 
 // Namespace status_effect_blind/status_effect_blind
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x2232af16, Offset: 0x3b8
 // Size: 0x7e
 function private function_8a261309() {

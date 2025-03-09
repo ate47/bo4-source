@@ -8,15 +8,15 @@
 
 // Namespace archetype_avogadro/archetype_avogadro
 // Params 0, eflags: 0x2
-// Checksum 0xe973f3b0, Offset: 0x160
+// Checksum 0x340907de, Offset: 0x160
 // Size: 0x44
 function autoexec __init__system__() {
     system::register(#"archetype_avogadro", &__init__, &__main__, undefined);
 }
 
 // Namespace archetype_avogadro/archetype_avogadro
-// Params 0, eflags: 0x1 linked
-// Checksum 0xfd4f3f17, Offset: 0x1b0
+// Params 0, eflags: 0x0
+// Checksum 0x9badc01, Offset: 0x1b0
 // Size: 0x13c
 function __init__() {
     clientfield::register("scriptmover", "" + #"avogadro_bolt_fx", 16000, 1, "int", &function_9452b8f1, 0, 0);
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace archetype_avogadro/archetype_avogadro
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x2f8
 // Size: 0x4
 function __main__() {
@@ -34,8 +34,8 @@ function __main__() {
 }
 
 // Namespace archetype_avogadro/archetype_avogadro
-// Params 1, eflags: 0x1 linked
-// Checksum 0xce0c375a, Offset: 0x308
+// Params 1, eflags: 0x0
+// Checksum 0x52e111c6, Offset: 0x308
 // Size: 0x44
 function initavogadro(localclientnum) {
     util::waittill_dobj(localclientnum);
@@ -43,8 +43,8 @@ function initavogadro(localclientnum) {
 }
 
 // Namespace archetype_avogadro/archetype_avogadro
-// Params 1, eflags: 0x1 linked
-// Checksum 0x5b979c3f, Offset: 0x358
+// Params 1, eflags: 0x0
+// Checksum 0x8b4afaeb, Offset: 0x358
 // Size: 0x3c
 function on_entity_shutdown(localclientnum) {
     if (isdefined(self) && isdefined(self.jammer_interface)) {
@@ -53,8 +53,8 @@ function on_entity_shutdown(localclientnum) {
 }
 
 // Namespace archetype_avogadro/archetype_avogadro
-// Params 7, eflags: 0x1 linked
-// Checksum 0xe0a1bfae, Offset: 0x3a0
+// Params 7, eflags: 0x0
+// Checksum 0x9472e539, Offset: 0x3a0
 // Size: 0xce
 function function_9452b8f1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     util::waittill_dobj(localclientnum);
@@ -72,8 +72,8 @@ function function_9452b8f1(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace archetype_avogadro/archetype_avogadro
-// Params 7, eflags: 0x1 linked
-// Checksum 0x47fa1336, Offset: 0x478
+// Params 7, eflags: 0x0
+// Checksum 0x4f108a1d, Offset: 0x478
 // Size: 0xce
 function function_1d2d070c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     util::waittill_dobj(localclientnum);
@@ -91,8 +91,8 @@ function function_1d2d070c(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace archetype_avogadro/archetype_avogadro
-// Params 7, eflags: 0x5 linked
-// Checksum 0x2417bf91, Offset: 0x550
+// Params 7, eflags: 0x4
+// Checksum 0x38d9fa96, Offset: 0x550
 // Size: 0x1da
 function private function_ae4cd3d4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     util::waittill_dobj(localclientnum);

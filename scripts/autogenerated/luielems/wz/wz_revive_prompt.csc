@@ -7,7 +7,7 @@
 class cwz_revive_prompt : cluielem {
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xb7cf891f, Offset: 0x5c0
     // Size: 0x30
     function set_cowardsway(localclientnum, value) {
@@ -15,7 +15,7 @@ class cwz_revive_prompt : cluielem {
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xaee2342, Offset: 0x588
     // Size: 0x30
     function set_reviveprogress(localclientnum, value) {
@@ -23,7 +23,7 @@ class cwz_revive_prompt : cluielem {
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x9481cd05, Offset: 0x550
     // Size: 0x30
     function set_health(localclientnum, value) {
@@ -31,7 +31,7 @@ class cwz_revive_prompt : cluielem {
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x1f3ca30b, Offset: 0x518
     // Size: 0x30
     function set_clientnum(localclientnum, value) {
@@ -39,7 +39,7 @@ class cwz_revive_prompt : cluielem {
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x34c71d1b, Offset: 0x4e0
     // Size: 0x2c
     function open(localclientnum) {
@@ -47,7 +47,7 @@ class cwz_revive_prompt : cluielem {
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x54e50c91, Offset: 0x430
     // Size: 0xa4
     function function_fa582112(localclientnum) {
@@ -59,7 +59,7 @@ class cwz_revive_prompt : cluielem {
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x96dcc47a, Offset: 0x400
     // Size: 0x24
     function register_clientside(uid) {
@@ -67,7 +67,7 @@ class cwz_revive_prompt : cluielem {
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 6, eflags: 0x1 linked
+    // Params 6, eflags: 0x0
     // Checksum 0x6cac4af6, Offset: 0x308
     // Size: 0xec
     function setup_clientfields(uid, var_c05c67e2, healthcallback, var_d65e5a18, var_f228b5fa, var_7cb8f98a) {
@@ -81,7 +81,7 @@ class cwz_revive_prompt : cluielem {
 }
 
 // Namespace wz_revive_prompt/wz_revive_prompt
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xb4a67d89, Offset: 0xe0
 // Size: 0x7c
 function register(uid, var_c05c67e2, healthcallback, var_d65e5a18, var_f228b5fa, var_7cb8f98a) {

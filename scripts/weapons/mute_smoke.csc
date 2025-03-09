@@ -5,7 +5,7 @@
 #namespace mute_smoke;
 
 // Namespace mute_smoke/mute_smoke
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa286f2c2, Offset: 0x148
 // Size: 0x192
 function init_shared() {
@@ -23,7 +23,7 @@ function init_shared() {
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcd58f9ea, Offset: 0x2e8
 // Size: 0x8c
 function function_3e8d9b27(previs_weapon) {
@@ -37,7 +37,7 @@ function function_3e8d9b27(previs_weapon) {
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfa28b887, Offset: 0x380
 // Size: 0x66
 function function_783a1c07(weapon) {
@@ -46,7 +46,7 @@ function function_783a1c07(weapon) {
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x722acec0, Offset: 0x3f0
 // Size: 0xaba
 function function_12e09509(localclientnum = 0) {
@@ -136,18 +136,18 @@ function function_12e09509(localclientnum = 0) {
         velocity = function_711c258(forward, up, previs_weapon);
         grenadeangles = vectortoangles(velocity);
         eye_pos = getlocalclienteyepos(localclientnum);
-        trace1 = function_e6ba3ec9(eye_pos, velocity, 0);
+        trace1 = projectiletrace(eye_pos, velocity, 0);
         var_46e1fb08.origin = trace1[#"position"];
         var_46e1fb08.angles = (angleclamp180(vectortoangles(trace1[#"normal"])[0] + 90), vectortoangles(trace1[#"normal"])[1], 0);
         speed = length(velocity);
         var_2571f440 = grenadeangles + (var_de0fa6f1, var_71c4a0d9, 0);
         var_d2922c1e = vectorscale(anglestoforward(var_2571f440), speed * var_46f48578);
-        trace2 = function_e6ba3ec9(eye_pos, var_d2922c1e, 0);
+        trace2 = projectiletrace(eye_pos, var_d2922c1e, 0);
         var_37b85cb5.origin = trace2[#"position"];
         var_37b85cb5.angles = (angleclamp180(vectortoangles(trace2[#"normal"])[0] + 90), vectortoangles(trace2[#"normal"])[1], 0);
         var_c1917dbc = grenadeangles + (var_99803ce, var_6b0817d7, 0);
         var_c0cb8891 = vectorscale(anglestoforward(var_c1917dbc), speed * var_3300383);
-        trace3 = function_e6ba3ec9(eye_pos, var_c0cb8891, 0);
+        trace3 = projectiletrace(eye_pos, var_c0cb8891, 0);
         var_618fb067.origin = trace3[#"position"];
         var_618fb067.angles = (angleclamp180(vectortoangles(trace3[#"normal"])[0] + 90), vectortoangles(trace3[#"normal"])[1], 0);
     }
@@ -171,7 +171,7 @@ function function_12e09509(localclientnum = 0) {
 #/
 
 // Namespace mute_smoke/mute_smoke
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1716d340, Offset: 0xf68
 // Size: 0x6c
 function function_b2248deb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -179,7 +179,7 @@ function function_b2248deb(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5580c09c, Offset: 0xfe0
 // Size: 0x6c
 function function_baebe8c4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -187,7 +187,7 @@ function function_baebe8c4(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x91dac294, Offset: 0x1058
 // Size: 0x7c
 function function_24dbaaee(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -199,7 +199,7 @@ function function_24dbaaee(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa6396d12, Offset: 0x10e0
 // Size: 0xe4
 function function_7aeda665(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -233,7 +233,7 @@ function function_12d5587e(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x211d683b, Offset: 0x1300
 // Size: 0x198
 function function_a189ab2e(localclientnum, enemy) {
@@ -257,7 +257,7 @@ function function_a189ab2e(localclientnum, enemy) {
 }
 
 // Namespace mute_smoke/mute_smoke
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x33e4056f, Offset: 0x14a0
 // Size: 0x70
 function function_775916af() {

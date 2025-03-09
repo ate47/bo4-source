@@ -7,7 +7,7 @@
     "type": "itemspawnentry",
     "name": "hawk_wz_item",
     "displayname": "#weapon/hawk",
-    "var_36781d9f": "fly_drop_generic",
+    "dropsound": "fly_drop_generic",
     "stackcount": 1,
     "icon": "#ui_icon_equipment_drone_hawk",
     "modelscale": 1,

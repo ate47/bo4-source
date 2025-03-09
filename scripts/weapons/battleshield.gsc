@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace battleshield/battleshield
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5ef3e880, Offset: 0xf0
 // Size: 0xdc
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace battleshield/battleshield
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x971c913f, Offset: 0x1d8
 // Size: 0xf4
 function function_e31bc59d(abilityslot, weapon) {
@@ -47,7 +47,7 @@ function function_e31bc59d(abilityslot, weapon) {
 }
 
 // Namespace battleshield/battleshield
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xefc7823b, Offset: 0x2d8
 // Size: 0x1e
 function linkcable_off_tele(abilityslot, weapon) {

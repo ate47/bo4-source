@@ -18,14 +18,14 @@
         }
     ],
     "description": "#hash_301e310d07093739",
-    "var_60fcfffa": "#menu/on",
-    "var_9358ee0a": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#menu/on",
+    "hash_9358ee0a": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "warzone_hide_kills",
     "displayname": "#hash_79b3c91c52b8bf4e",
-    "var_66faec87": 10,
+    "hash_66faec87": 10,
     "statname": "warzoneHideKills",
-    "var_b7401319": "#menu/off"
+    "hash_b7401319": "#menu/off"
 }

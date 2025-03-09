@@ -15,8 +15,8 @@
             "model": "#hash_cdce6dfe0689960",
             "type": "fakeplayer",
             "name": "inspection_character",
-            "var_f839fa70": "inspection_character",
-            "var_132e5621": 1
+            "exportname": "inspection_character",
+            "preserveangle": 1
         }
     ],
     "scenetype": "scene",

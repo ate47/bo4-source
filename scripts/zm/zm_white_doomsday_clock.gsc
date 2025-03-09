@@ -1,7 +1,7 @@
 #namespace zm_white_doomsday_clock;
 
 // Namespace zm_white_doomsday_clock/zm_white_doomsday_clock
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd9491cf8, Offset: 0xb8
 // Size: 0x1c
 function init() {
@@ -9,7 +9,7 @@ function init() {
 }
 
 // Namespace zm_white_doomsday_clock/zm_white_doomsday_clock
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2a2e0a59, Offset: 0xe0
 // Size: 0x78
 function function_c720fa94() {
@@ -22,7 +22,7 @@ function function_c720fa94() {
 }
 
 // Namespace zm_white_doomsday_clock/zm_white_doomsday_clock
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x39652c57, Offset: 0x160
 // Size: 0x15e
 function update_doomsday_clock(var_e323931b) {

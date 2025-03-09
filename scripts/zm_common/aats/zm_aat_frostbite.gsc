@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_aat_frostbite/zm_aat_frostbite
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4346a532, Offset: 0x1d0
 // Size: 0x164
 function __init__() {
@@ -36,7 +36,7 @@ function __init__() {
 }
 
 // Namespace zm_aat_frostbite/zm_aat_frostbite
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x1111d934, Offset: 0x340
 // Size: 0x104
 function result(death, attacker, mod, weapon) {
@@ -56,7 +56,7 @@ function result(death, attacker, mod, weapon) {
 }
 
 // Namespace zm_aat_frostbite/zm_aat_frostbite
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x50c0d48, Offset: 0x450
 // Size: 0xce
 function private function_a2e05e6(e_attacker) {
@@ -72,7 +72,7 @@ function private function_a2e05e6(e_attacker) {
 }
 
 // Namespace zm_aat_frostbite/zm_aat_frostbite
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xe2e5b37e, Offset: 0x528
 // Size: 0x1c4
 function function_158a3a18(attacker, mod, weapon, var_e1ec1eee = 0) {
@@ -102,7 +102,7 @@ function function_158a3a18(attacker, mod, weapon, var_e1ec1eee = 0) {
 }
 
 // Namespace zm_aat_frostbite/zm_aat_frostbite
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb83d35b2, Offset: 0x6f8
 // Size: 0x116
 function function_dab102b8(e_attacker, weapon) {
@@ -122,7 +122,7 @@ function function_dab102b8(e_attacker, weapon) {
 }
 
 // Namespace zm_aat_frostbite/zm_aat_frostbite
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x421e6b02, Offset: 0x818
 // Size: 0xec
 function function_35d3ac3b(attacker, mod, weapon) {
@@ -139,7 +139,7 @@ function function_35d3ac3b(attacker, mod, weapon) {
 }
 
 // Namespace zm_aat_frostbite/zm_aat_frostbite
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x3e6f324a, Offset: 0x910
 // Size: 0x2a8
 function frostbite_explosion(var_4589e270, var_23255fc5, attacker, mod, weapon) {
@@ -174,7 +174,7 @@ function frostbite_explosion(var_4589e270, var_23255fc5, attacker, mod, weapon) 
 }
 
 // Namespace zm_aat_frostbite/zm_aat_frostbite
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xb329e179, Offset: 0xbc0
 // Size: 0xbc
 function function_11c85ac6(var_23255fc5, e_attacker, weapon) {

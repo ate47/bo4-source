@@ -3,7 +3,7 @@
 #namespace zodt8_sound;
 
 // Namespace zodt8_sound/zm_zodt8_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd26a1f98, Offset: 0x80
 // Size: 0x1e
 function main() {
@@ -11,7 +11,7 @@ function main() {
 }
 
 // Namespace zodt8_sound/zm_zodt8_sound
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x841a21b0, Offset: 0xa8
 // Size: 0xee
 function function_45b0f2f3(str_weapon_name) {

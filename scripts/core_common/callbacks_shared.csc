@@ -11,7 +11,7 @@
 #namespace callback;
 
 // Namespace callback/callbacks_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x8b1836, Offset: 0x120
 // Size: 0x144
 function callback(event, localclientnum, params) {
@@ -40,7 +40,7 @@ function callback(event, localclientnum, params) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6339afd9, Offset: 0x270
 // Size: 0x134
 function entity_callback(event, localclientnum, params) {
@@ -69,7 +69,7 @@ function entity_callback(event, localclientnum, params) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x8514fce4, Offset: 0x3b0
 // Size: 0x17c
 function add_callback(event, func, obj) {
@@ -91,7 +91,7 @@ function add_callback(event, func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x210fc7f1, Offset: 0x538
 // Size: 0x14c
 function add_entity_callback(event, func, obj) {
@@ -110,7 +110,7 @@ function add_entity_callback(event, func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8f33204c, Offset: 0x690
 // Size: 0x44
 function remove_callback_on_death(event, func) {
@@ -119,7 +119,7 @@ function remove_callback_on_death(event, func) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa61d0707, Offset: 0x6e0
 // Size: 0x11c
 function function_52ac9652(event, func, obj) {
@@ -138,7 +138,7 @@ function function_52ac9652(event, func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x57b534d9, Offset: 0x808
 // Size: 0x12c
 function remove_callback(event, func, obj) {
@@ -155,7 +155,7 @@ function remove_callback(event, func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x76dbc21a, Offset: 0x940
 // Size: 0x3c
 function on_localclient_connect(func, obj) {
@@ -163,7 +163,7 @@ function on_localclient_connect(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1570b72e, Offset: 0x988
 // Size: 0x3c
 function on_localclient_shutdown(func, obj) {
@@ -171,7 +171,7 @@ function on_localclient_shutdown(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x122637eb, Offset: 0x9d0
 // Size: 0x3c
 function on_finalize_initialization(func, obj) {
@@ -179,7 +179,7 @@ function on_finalize_initialization(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf1f37c6a, Offset: 0xa18
 // Size: 0x3c
 function on_gameplay_started(func, obj) {
@@ -187,7 +187,7 @@ function on_gameplay_started(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe9fc57d2, Offset: 0xa60
 // Size: 0x3c
 function on_localplayer_spawned(func, obj) {
@@ -203,7 +203,7 @@ function remove_on_localplayer_spawned(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5a900cf2, Offset: 0xaf0
 // Size: 0x3c
 function on_spawned(func, obj) {
@@ -235,7 +235,7 @@ function remove_on_laststand(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5f8b0485, Offset: 0xc10
 // Size: 0x3c
 function on_player_corpse(func, obj) {
@@ -243,7 +243,7 @@ function on_player_corpse(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf396167, Offset: 0xc58
 // Size: 0x3c
 function function_930e5d42(func, obj) {
@@ -251,7 +251,7 @@ function function_930e5d42(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb4149076, Offset: 0xca0
 // Size: 0x3c
 function on_weapon_change(func, obj) {
@@ -267,7 +267,7 @@ function function_6231c19(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xed3915ca, Offset: 0xd30
 // Size: 0x3c
 function function_17381fe(func, obj) {
@@ -291,7 +291,7 @@ function remove_on_deleted(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb2a36636, Offset: 0xe08
 // Size: 0x3c
 function on_shutdown(func, obj) {
@@ -307,7 +307,7 @@ function on_start_gametype(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xba60719a, Offset: 0xe98
 // Size: 0x3c
 function on_end_game(func, obj) {
@@ -323,7 +323,7 @@ function remove_on_end_game(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc3bf41a0, Offset: 0xf28
 // Size: 0x3c
 function on_killcam_begin(func, obj) {
@@ -331,7 +331,7 @@ function on_killcam_begin(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4ac1d2b9, Offset: 0xf70
 // Size: 0x3c
 function on_killcam_end(func, obj) {
@@ -339,7 +339,7 @@ function on_killcam_end(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3f39f469, Offset: 0xfb8
 // Size: 0x3c
 function on_melee(func, obj) {
@@ -371,7 +371,7 @@ function on_trigger_once(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x54d46e4, Offset: 0x10d8
 // Size: 0x3c
 function remove_on_trigger_once(func, obj) {
@@ -892,7 +892,7 @@ function event_handler[collectibles_changed] codecallback_collectibleschanged(ev
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf2510d3, Offset: 0x2598
 // Size: 0x5e
 function add_weapon_type(weapontype, callback) {
@@ -904,7 +904,7 @@ function add_weapon_type(weapontype, callback) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc7e58c5f, Offset: 0x2600
 // Size: 0x66
 function spawned_weapon_type(localclientnum) {
@@ -915,7 +915,7 @@ function spawned_weapon_type(localclientnum) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3890395d, Offset: 0x2670
 // Size: 0x24
 function function_cbfd8fd6(localclientnum) {
@@ -1005,7 +1005,7 @@ function event_handler[scene_stop] codecallback_serverscenestop(eventstruct) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80ec343b, Offset: 0x2af8
 // Size: 0x14a
 function scene_black_screen() {
@@ -1035,7 +1035,7 @@ function event_handler[gadget_visionpulsereveal] codecallback_gadgetvisionpulse_
 }
 
 // Namespace callback/callbacks_shared
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x23795cd3, Offset: 0x2ca8
 // Size: 0x8c
 function private fade_to_black_for_x_sec(startwait, blackscreenwait, fadeintime, fadeouttime, shadername) {

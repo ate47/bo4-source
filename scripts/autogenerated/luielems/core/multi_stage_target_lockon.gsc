@@ -7,26 +7,26 @@
 // Method(s) 7 Total 14
 class cmulti_stage_target_lockon : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cmulti_stage_target_lockon/multi_stage_target_lockon
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x4866878c, Offset: 0x380
     // Size: 0x3c
     function set_targetstate(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "targetState", value);
+        player clientfield::function_9bf78ef8(_uid, "targetState", value);
     }
 
     // Namespace cmulti_stage_target_lockon/multi_stage_target_lockon
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x2ba01ba, Offset: 0x338
     // Size: 0x3c
     function set_entnum(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "entNum", value);
+        player clientfield::function_9bf78ef8(_uid, "entNum", value);
     }
 
     // Namespace cmulti_stage_target_lockon/multi_stage_target_lockon
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xa9385b01, Offset: 0x308
     // Size: 0x24
     function close(player) {
@@ -34,7 +34,7 @@ class cmulti_stage_target_lockon : cluielem {
     }
 
     // Namespace cmulti_stage_target_lockon/multi_stage_target_lockon
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xa4592743, Offset: 0x2b8
     // Size: 0x44
     function open(player, persistent = 0) {
@@ -42,7 +42,7 @@ class cmulti_stage_target_lockon : cluielem {
     }
 
     // Namespace cmulti_stage_target_lockon/multi_stage_target_lockon
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xf53b3506, Offset: 0x238
     // Size: 0x74
     function setup_clientfields(uid) {
@@ -54,7 +54,7 @@ class cmulti_stage_target_lockon : cluielem {
 }
 
 // Namespace multi_stage_target_lockon/multi_stage_target_lockon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xab55f47d, Offset: 0xe0
 // Size: 0x40
 function register(uid) {
@@ -64,7 +64,7 @@ function register(uid) {
 }
 
 // Namespace multi_stage_target_lockon/multi_stage_target_lockon
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9614f25, Offset: 0x128
 // Size: 0x38
 function open(player, persistent = 0) {
@@ -72,7 +72,7 @@ function open(player, persistent = 0) {
 }
 
 // Namespace multi_stage_target_lockon/multi_stage_target_lockon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb4a25293, Offset: 0x168
 // Size: 0x1c
 function close(player) {
@@ -80,7 +80,7 @@ function close(player) {
 }
 
 // Namespace multi_stage_target_lockon/multi_stage_target_lockon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x981c3cdb, Offset: 0x190
 // Size: 0x1a
 function is_open(player) {
@@ -88,7 +88,7 @@ function is_open(player) {
 }
 
 // Namespace multi_stage_target_lockon/multi_stage_target_lockon
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb1a39de0, Offset: 0x1b8
 // Size: 0x28
 function set_entnum(player, value) {
@@ -96,7 +96,7 @@ function set_entnum(player, value) {
 }
 
 // Namespace multi_stage_target_lockon/multi_stage_target_lockon
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xda55d0c1, Offset: 0x1e8
 // Size: 0x28
 function set_targetstate(player, value) {

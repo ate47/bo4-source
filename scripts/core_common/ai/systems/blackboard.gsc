@@ -1,7 +1,7 @@
 #namespace blackboard;
 
 // Namespace blackboard/blackboard
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xc5c6c510, Offset: 0x68
 // Size: 0x134
 function registerblackboardattribute(entity, attributename, defaultattributevalue, getterfunction) {
@@ -24,7 +24,7 @@ function registerblackboardattribute(entity, attributename, defaultattributevalu
 }
 
 // Namespace blackboard/blackboard
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x79de3fa4, Offset: 0x1a8
 // Size: 0xb2
 function getstructblackboardattribute(struct, attributename) {
@@ -38,7 +38,7 @@ function getstructblackboardattribute(struct, attributename) {
 }
 
 // Namespace blackboard/blackboard
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x159819cc, Offset: 0x268
 // Size: 0xe2
 function setstructblackboardattribute(struct, attributename, attributevalue) {
@@ -53,7 +53,7 @@ function setstructblackboardattribute(struct, attributename, attributevalue) {
 }
 
 // Namespace blackboard/blackboard
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x92d887bb, Offset: 0x358
 // Size: 0x7e
 function createblackboardforentity(entity) {
@@ -69,7 +69,7 @@ function createblackboardforentity(entity) {
 }
 
 // Namespace blackboard/blackboard
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x680b7039, Offset: 0x3e0
 // Size: 0xde
 function cloneblackboardfromstruct(struct) {

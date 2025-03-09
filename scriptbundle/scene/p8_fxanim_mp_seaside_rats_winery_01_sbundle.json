@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_391598ff818b1f70",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 25,
+                    "spacermax": 35,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#p8_fxanim_gp_rat_01_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_seaside_rats_winery_01_sbundle",
+    "dontsync": 1,
+    "team": "any"
+}

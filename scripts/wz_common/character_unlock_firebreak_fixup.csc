@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 // Checksum 0x82779e21, Offset: 0xc8
 // Size: 0x64
 function __init__() {
-    character_unlock_fixup::register_character_unlock(#"firebreak_unlock", #"hash_8596bc069593313", #"cu06_item", &function_d95e620c, #"hash_48b3b84fe88578f2");
+    character_unlock_fixup::register_character_unlock(#"firebreak_unlock", #"prt_wz_firebreak", #"cu06_item", &function_d95e620c, #"hash_48b3b84fe88578f2");
 }
 
 // Namespace character_unlock_firebreak_fixup/character_unlock_firebreak_fixup

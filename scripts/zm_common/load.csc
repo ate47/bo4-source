@@ -23,7 +23,7 @@
 #namespace load;
 
 // Namespace load/load
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf5dae872, Offset: 0x140
 // Size: 0x3a
 function levelnotifyhandler(clientnum, state, oldstate) {
@@ -57,7 +57,7 @@ function warnmissilefired(localclientnum, set) {
 }
 
 // Namespace load/load
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2150d358, Offset: 0x1e8
 // Size: 0x11c
 function main() {
@@ -73,7 +73,7 @@ function main() {
 }
 
 // Namespace load/load
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc6cf8ff9, Offset: 0x310
 // Size: 0x4c
 function register_clientfields() {

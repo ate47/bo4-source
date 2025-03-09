@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_wraith_fire/zm_weap_wraith_fire
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x723df54f, Offset: 0x1e8
 // Size: 0xb4
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_wraith_fire/zm_weap_wraith_fire
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xaaa85f44, Offset: 0x2a8
 // Size: 0x1d2
 function function_87bfd935(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -53,7 +53,7 @@ function function_87bfd935(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_wraith_fire/zm_weap_wraith_fire
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xed04a299, Offset: 0x488
 // Size: 0x1a2
 function function_f144789c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -81,7 +81,7 @@ function function_f144789c(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_wraith_fire/zm_weap_wraith_fire
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x302d2ff1, Offset: 0x638
 // Size: 0x1d2
 function private function_8847b8aa(localclientnum) {

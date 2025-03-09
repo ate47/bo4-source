@@ -8,7 +8,7 @@
 #namespace namespace_b45e3f05;
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe92f6a18, Offset: 0x120
 // Size: 0x34
 function init() {
@@ -18,7 +18,7 @@ function init() {
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf582247c, Offset: 0x160
 // Size: 0x4d4
 function init_clientfields() {
@@ -39,7 +39,7 @@ function init_clientfields() {
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x640
 // Size: 0x4
 function init_flags() {
@@ -47,7 +47,7 @@ function init_flags() {
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x66c5e9f4, Offset: 0x650
 // Size: 0x422
 function init_fx() {
@@ -76,7 +76,7 @@ function init_fx() {
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xcc1ed85e, Offset: 0xa80
 // Size: 0x21c
 function function_f99ce12b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -94,7 +94,7 @@ function function_f99ce12b(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6d52483a, Offset: 0xca8
 // Size: 0x8c
 function function_54655580(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -106,7 +106,7 @@ function function_54655580(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe25810e, Offset: 0xd40
 // Size: 0x136
 function function_bfdd6659(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -127,7 +127,7 @@ function function_bfdd6659(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd6789fae, Offset: 0xe80
 // Size: 0xbe
 function function_ae668ae9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -142,7 +142,7 @@ function function_ae668ae9(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4ec0443, Offset: 0xf48
 // Size: 0x21c
 function function_34f5c98(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -164,7 +164,7 @@ function function_34f5c98(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd6e9e126, Offset: 0x1170
 // Size: 0x10c
 function function_5218405b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -177,7 +177,7 @@ function function_5218405b(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xcbcbc956, Offset: 0x1288
 // Size: 0xb2
 function vomit(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -191,7 +191,7 @@ function vomit(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname,
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x663f1ec8, Offset: 0x1348
 // Size: 0xec
 function function_584fb3c8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -204,7 +204,7 @@ function function_584fb3c8(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8e0f98dc, Offset: 0x1440
 // Size: 0xb4
 function function_711366fa(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -215,7 +215,7 @@ function function_711366fa(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xae362973, Offset: 0x1500
 // Size: 0x15c
 function function_eabe4696(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -251,7 +251,7 @@ function function_43425692(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x45a48511, Offset: 0x1798
 // Size: 0x17e
 function safe_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -273,7 +273,7 @@ function safe_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldnam
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x34572e53, Offset: 0x1920
 // Size: 0x2ae
 function flare_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -313,7 +313,7 @@ function flare_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldna
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4588acd3, Offset: 0x1bd8
 // Size: 0x17a
 function function_563778cc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -335,7 +335,7 @@ function function_563778cc(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b45e3f05/zm_zodt8_side_quests
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8d62f8be, Offset: 0x1d60
 // Size: 0x274
 function fireworks_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

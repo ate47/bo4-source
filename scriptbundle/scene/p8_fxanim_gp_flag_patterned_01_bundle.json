@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_defc4da60d1960a",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 5,
+                    "spacermax": 15,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_775101e38cb93b99",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "p8_fxanim_gp_flag_patterned_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

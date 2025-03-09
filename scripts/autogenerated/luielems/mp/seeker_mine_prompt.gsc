@@ -7,14 +7,14 @@
 // Method(s) 7 Total 14
 class cseeker_mine_prompt : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cseeker_mine_prompt/seeker_mine_prompt
     // Params 2, eflags: 0x0
     // Checksum 0xb72d4e15, Offset: 0x380
     // Size: 0x3c
     function set_promptstate(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "promptState", value);
+        player clientfield::function_9bf78ef8(_uid, "promptState", value);
     }
 
     // Namespace cseeker_mine_prompt/seeker_mine_prompt
@@ -22,7 +22,7 @@ class cseeker_mine_prompt : cluielem {
     // Checksum 0x4a765bae, Offset: 0x338
     // Size: 0x3c
     function set_progress(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "progress", value);
+        player clientfield::function_9bf78ef8(_uid, "progress", value);
     }
 
     // Namespace cseeker_mine_prompt/seeker_mine_prompt

@@ -9,7 +9,7 @@
     "model": "#attach_t8_optic_red_dot_world",
     "type": "itemspawnentry",
     "hintstring": "#hash_665191b4ba3b8d8b",
-    "var_65b3a12": 1,
+    "hash_65b3a12": 1,
     "name": "reddot_wz_item",
     "displayname": "#hash_665191b4ba3b8d8b",
     "icon": "#ui_icon_attachment_dualoptic",

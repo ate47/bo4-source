@@ -4,7 +4,7 @@
 #namespace namespace_1063645;
 
 // Namespace namespace_1063645/namespace_fdf9d496
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x652fa2fe, Offset: 0xb0
 // Size: 0xe2
 function init_clientfields() {
@@ -14,7 +14,7 @@ function init_clientfields() {
 }
 
 // Namespace namespace_1063645/namespace_fdf9d496
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x94e8020d, Offset: 0x1a0
 // Size: 0xb4
 function function_10675d52(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -28,7 +28,7 @@ function function_10675d52(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_1063645/namespace_fdf9d496
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf0f19f41, Offset: 0x260
 // Size: 0x134
 function function_c6b07c39(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

@@ -24,7 +24,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_militia/mp_militia
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xaf45c8ad, Offset: 0x1f0
 // Size: 0xc2
 function dom_flag_base_fx_override(flag, team) {
@@ -49,7 +49,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_militia/mp_militia
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x34356d27, Offset: 0x2c0
 // Size: 0xc2
 function dom_flag_cap_fx_override(flag, team) {

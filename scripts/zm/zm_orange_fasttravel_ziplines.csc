@@ -7,7 +7,7 @@
 #namespace zm_orange_fasttravel_ziplines;
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8159a84, Offset: 0xf8
 // Size: 0xdc
 function init() {
@@ -17,7 +17,7 @@ function init() {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xebf78bc8, Offset: 0x1e0
 // Size: 0x74
 function function_f747c7cd(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -29,7 +29,7 @@ function function_f747c7cd(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x91795fb3, Offset: 0x260
 // Size: 0x172
 function private function_97adc67(localclientnum) {
@@ -56,7 +56,7 @@ function private function_97adc67(localclientnum) {
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x54d80eac, Offset: 0x3e0
 // Size: 0x94
 function private function_a0c1af51(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -72,7 +72,7 @@ function private function_a0c1af51(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x281ef3a3, Offset: 0x480
 // Size: 0x154
 function play_blur_post_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

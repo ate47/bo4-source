@@ -1,40 +1,40 @@
 {
     "statsarray": [
         {
-            "var_233a23b6": 1,
+            "hash_233a23b6": 1,
             "stattype": "objectiveekia",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_5d1ab6f5e0227795"
         },
         {
-            "var_233a23b6": 1,
-            "var_82670522": "stats_clear_2_attackers",
+            "hash_233a23b6": 1,
+            "hash_82670522": "stats_clear_2_attackers",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_d83c1772a532421"
         },
         {
-            "var_233a23b6": 1,
-            "var_82670522": "stats_ekia",
+            "hash_233a23b6": 1,
+            "hash_82670522": "stats_ekia",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_2391441b1e8929a5"
         },
         {
-            "var_233a23b6": 1,
-            "var_82670522": "stats_shutdowns",
+            "hash_233a23b6": 1,
+            "hash_82670522": "stats_shutdowns",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_158193577a14c86e"
         },
         {
             "stattype": "objectivetime",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_646cc2b52d248258"
         }
     ],
     "defaultimage": "#ui_icon_hvo_base",
     "cardname": "#hash_1cdf3b97c08c76bd",
     "name": "conqueror_koth_hvo",
-    "var_46a95923": "koth"
+    "associatedgamemode": "koth"
 }

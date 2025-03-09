@@ -27,7 +27,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trap_buy_buttons/zm_mansion_trap_buy_buttons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6586fdbf, Offset: 0x188
 // Size: 0x24
 function __init__() {
@@ -35,7 +35,7 @@ function __init__() {
 }
 
 // Namespace zm_trap_buy_buttons/zm_mansion_trap_buy_buttons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1b8
 // Size: 0x4
 function __main__() {
@@ -43,7 +43,7 @@ function __main__() {
 }
 
 // Namespace zm_trap_buy_buttons/zm_mansion_trap_buy_buttons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe4efec, Offset: 0x1c8
 // Size: 0xbc
 function init() {
@@ -55,7 +55,7 @@ function init() {
 }
 
 // Namespace zm_trap_buy_buttons/zm_mansion_trap_buy_buttons
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7672173c, Offset: 0x290
 // Size: 0x98
 function function_bb013f42(str_id) {
@@ -67,7 +67,7 @@ function function_bb013f42(str_id) {
 }
 
 // Namespace zm_trap_buy_buttons/zm_mansion_trap_buy_buttons
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x20f8da0e, Offset: 0x330
 // Size: 0x98
 function function_75046566(str_id) {
@@ -79,7 +79,7 @@ function function_75046566(str_id) {
 }
 
 // Namespace zm_trap_buy_buttons/zm_mansion_trap_buy_buttons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1f65e01a, Offset: 0x3d0
 // Size: 0xd8
 function function_eac89317() {
@@ -99,7 +99,7 @@ function function_eac89317() {
 }
 
 // Namespace zm_trap_buy_buttons/zm_mansion_trap_buy_buttons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2196f89d, Offset: 0x4b0
 // Size: 0x52
 function function_63be76e0() {
@@ -109,7 +109,7 @@ function function_63be76e0() {
 }
 
 // Namespace zm_trap_buy_buttons/zm_mansion_trap_buy_buttons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7aef87f4, Offset: 0x510
 // Size: 0x2c
 function function_8724b9c4() {
@@ -117,7 +117,7 @@ function function_8724b9c4() {
 }
 
 // Namespace zm_trap_buy_buttons/zm_mansion_trap_buy_buttons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7764448c, Offset: 0x548
 // Size: 0x2c
 function function_a82eb7c1() {

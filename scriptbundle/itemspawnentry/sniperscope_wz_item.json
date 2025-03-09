@@ -9,7 +9,7 @@
     "model": "#wpn_t8_sniper_power_semi_scope_world",
     "type": "itemspawnentry",
     "hintstring": "#hash_1c067a1967345eb9",
-    "var_65b3a12": 1,
+    "hash_65b3a12": 1,
     "name": "sniperscope_wz_item",
     "displayname": "#hash_1c067a1967345eb9",
     "icon": "#ui_icon_attachment_sniper_scope",

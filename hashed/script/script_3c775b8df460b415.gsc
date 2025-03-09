@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_9b24ce43/namespace_9b24ce43
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2bc8bcc1, Offset: 0xf0
 // Size: 0x5c
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace namespace_9b24ce43/namespace_9b24ce43
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xbf1fd746, Offset: 0x158
 // Size: 0x80
 function private on_begin() {
@@ -39,7 +39,7 @@ function private on_begin() {
 }
 
 // Namespace namespace_9b24ce43/namespace_9b24ce43
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x31b048e0, Offset: 0x1e0
 // Size: 0x8c
 function private on_end(round_reset) {
@@ -58,7 +58,7 @@ function is_active() {
 }
 
 // Namespace namespace_9b24ce43/namespace_9b24ce43
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xc63b42db, Offset: 0x2b8
 // Size: 0x2c2
 function private movement_watcher() {

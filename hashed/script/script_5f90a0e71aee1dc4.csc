@@ -3,7 +3,7 @@
 #namespace namespace_bd74bbd2;
 
 // Namespace namespace_bd74bbd2/namespace_bd74bbd2
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x631c83e, Offset: 0x70
 // Size: 0x5c
 function register(id, version, script_noteworthy, soul_fx, var_eb6d060d) {

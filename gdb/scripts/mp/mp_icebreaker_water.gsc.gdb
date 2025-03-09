@@ -14,11 +14,11 @@ STRING "<dev string:x1a0>" 0xad0
 STRING "<dev string:x38>" 0x3b0
 # mp_icebreaker_water::on_trigger@1d0
 STRING "<dev string:x46>" 0x458
-# mp_icebreaker_water::function_394e1244@c0
+# mp_icebreaker_water::start_freezing@c0
 STRING "<dev string:x53>" 0x698
-# mp_icebreaker_water::function_394e1244@14c
+# mp_icebreaker_water::start_freezing@14c
 STRING "<dev string:x5e>" 0x724
-# mp_icebreaker_water::function_394e1244@1b8
+# mp_icebreaker_water::start_freezing@1b8
 STRING "<dev string:x69>" 0x790
 # mp_icebreaker_water::function_553ca6ce@b8
 STRING "<dev string:x7a>" 0x8a8
@@ -41,11 +41,11 @@ DEVBLOCK 0x2a8
 DEVBLOCK 0x380
 # mp_icebreaker_water::on_trigger@1a6
 DEVBLOCK 0x42e
-# mp_icebreaker_water::function_394e1244@90
+# mp_icebreaker_water::start_freezing@90
 DEVBLOCK 0x668
-# mp_icebreaker_water::function_394e1244@f4
+# mp_icebreaker_water::start_freezing@f4
 DEVBLOCK 0x6cc
-# mp_icebreaker_water::function_394e1244@18e
+# mp_icebreaker_water::start_freezing@18e
 DEVBLOCK 0x766
 # mp_icebreaker_water::function_553ca6ce@8c
 DEVBLOCK 0x87c

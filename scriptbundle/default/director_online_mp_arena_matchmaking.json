@@ -5,13 +5,13 @@
     "backtarget": "director_online",
     "maxlocalclientsnetwork": 1,
     "mainmode": 1,
-    "var_d16ccae8": 1,
+    "hash_d16ccae8": 1,
     "isprivate": 1,
     "showteams": 1,
     "lobbytype": 1,
     "menumusic": "lobby_mp",
     "room": "arena_pose",
-    "var_7f60c82f": 10,
+    "hash_7f60c82f": 10,
     "kicker": "#hash_12df6ed539ca406a",
     "isadvertised": 1,
     "maxclients": 10,
@@ -19,9 +19,9 @@
     "networkmode": 2,
     "errtarget": "director_online_mp_arena_pregame",
     "egamemodes": 3,
-    "var_ec76767d": 10,
+    "hash_ec76767d": 10,
     "title": "#hash_44b08b09636ecd9e",
     "isgame": 1,
     "maxlocalclients": 1,
-    "var_38c7a0d1": "showdirectorarena"
+    "hash_38c7a0d1": "showdirectorarena"
 }

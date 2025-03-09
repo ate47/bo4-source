@@ -19,7 +19,7 @@
                 }
             ],
             "description": "#hash_7b68703eea03ccce",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "description": "#hash_7b68713eea03ce81"
@@ -27,8 +27,8 @@
     ],
     "description": "#hash_211dd865e50ededb",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 3,
-    "var_e8b98a8a": "#hash_1f3de3e08b3ad876",
+    "hash_eda4062b": 3,
+    "hash_e8b98a8a": "#hash_1f3de3e08b3ad876",
     "model": "#p8_wz_cu_emperor_letter",
     "type": "itemspawnentry",
     "hintstring": "#hash_685b78d996fab60c",

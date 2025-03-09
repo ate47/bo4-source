@@ -1,0 +1,54 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_77518dccc473c38",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "button_in"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1cade98884f38ef1",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "button_in_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_65803a2a7ce95cc7",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "button_out"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1a08e331ddf87b80",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "button_out_idle"
+                }
+            ],
+            "model": "#hash_23f684900346fa21",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_austria_finger_trap_button_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

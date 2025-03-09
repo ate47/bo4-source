@@ -15,15 +15,15 @@
     ],
     "descriptionimage": "#hash_33e064d86c5548f",
     "description": "#hash_3d6f1ecf7d2ad946",
-    "var_60fcfffa": "#menu/on",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#menu/on",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "pc_texture_filtering",
     "displayname": "#hash_361de4ee1cd3a636",
-    "var_66faec87": 10,
+    "hash_66faec87": 10,
     "statname": "r_texFilterQuality",
-    "var_b7401319": "#menu/off"
+    "hash_b7401319": "#menu/off"
 }

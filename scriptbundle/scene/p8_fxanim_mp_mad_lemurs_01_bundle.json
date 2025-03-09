@@ -1,0 +1,183 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_26bad988dd0db23d",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7e6eee2b2d57c9ec",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "run"
+                }
+            ],
+            "model": "#hash_2a5349bb7a01639f",
+            "type": "prop",
+            "name": "lemurs_path1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_60038bb0136f2a74",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 3,
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_dccedc75168a4c9",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "run",
+                    "blend": 1
+                }
+            ],
+            "model": "#hash_34f9d50e05bed7af",
+            "type": "prop",
+            "name": "lemur1",
+            "aligntargettag": "lemur_link1_jnt",
+            "aligntarget": "lemurs_path1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_60038eb0136f2f8d",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 3,
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_dcceac751689fb0",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "run",
+                    "blend": 1
+                }
+            ],
+            "model": "#hash_34f9d50e05bed7af",
+            "type": "prop",
+            "name": "lemur2",
+            "aligntargettag": "lemur_link2_jnt",
+            "aligntarget": "lemurs_path1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_60038db0136f2dda",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 3,
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_dcceac751689fb0",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "run",
+                    "blend": 1
+                }
+            ],
+            "model": "#hash_34f9d50e05bed7af",
+            "type": "prop",
+            "name": "lemur3",
+            "aligntargettag": "lemur_link3_jnt",
+            "aligntarget": "lemurs_path1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_600388b0136f255b",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 3,
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_dccedc75168a4c9",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "run",
+                    "blend": 1
+                }
+            ],
+            "model": "#hash_34f9d50e05bed7af",
+            "type": "prop",
+            "name": "lemur4",
+            "aligntargettag": "lemur_link4_jnt",
+            "aligntarget": "lemurs_path1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_600387b0136f23a8",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_dcceac751689fb0",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "run"
+                }
+            ],
+            "model": "#hash_34f9d50e05bed7af",
+            "type": "prop",
+            "name": "lemur5",
+            "aligntargettag": "lemur_link5_jnt",
+            "aligntarget": "lemurs_path1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_mad_lemurs_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

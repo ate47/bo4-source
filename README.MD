@@ -12,6 +12,7 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 |-------------------------|-----|-------------------------------------|
 | localize                | 17  | EMPTY                               |
 | weapon                  | 20  | `/tables/weapon/`                   |
+| weapontunables          | 22  | `/tables/weapon/tunables/`          |
 | customizationtable      | 30  | `/tables/customization/`            |
 | rawfile                 | 41  | `/`                                 |
 | stringtable             | 43  | `/`                                 |
@@ -20,6 +21,7 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 | scriptparsetree         | 48  | `/`                                 |
 | scriptparsetreedbg      | 49  | EMPTY                               |
 | scriptparsetreeforced   | 50  | `/tables/scriptparsetreeforced/`    |
+| keyvaluepairs           | 51  | `/tables/keyvaluepairs/`            |
 | typeinfo                | 62  | EMPTY                               |
 | scriptbundle            | 63  | `/scriptbundle/`                    |
 | scriptbundlelist        | 64  | `/scriptbundle/list/`               |
@@ -51,6 +53,7 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 | labelstorelist          | 144 | `/tables/labelstore/list/`          |
 | \<unused\>              | 151 | EMPTY                               |
 | rawstring               | 157 | `/strings.csv`                      |
+| streamkey               | 159 | `/tables/streamkey/`                |
 
 ## Names
 

@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace mp_offshore_alt_player_rain/mp_offshore_alt_player_rain
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb961a2a4, Offset: 0x118
 // Size: 0x4c
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace mp_offshore_alt_player_rain/mp_offshore_alt_player_rain
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x40d4d99f, Offset: 0x170
 // Size: 0xe4
 function toggle_player_rain(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

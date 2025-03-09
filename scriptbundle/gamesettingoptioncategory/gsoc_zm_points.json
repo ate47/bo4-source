@@ -1,8 +1,8 @@
 {
     "configstringfiletype": "scriptbundle",
-    "var_ce9b2d06": "gsol_zm_points",
+    "hash_ce9b2d06": "gsol_zm_points",
     "type": "gamesettingoptioncategory",
     "name": "gsoc_zm_points",
-    "var_dea17465": "#hash_40c3c9f045a1912d",
-    "var_608158f2": "#hash_2d54a818647aac8c"
+    "hash_dea17465": "#hash_40c3c9f045a1912d",
+    "hash_608158f2": "#hash_2d54a818647aac8c"
 }

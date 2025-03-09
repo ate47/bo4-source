@@ -104,7 +104,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace zm_orange/zm_orange
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x22a05eeb, Offset: 0x910
 // Size: 0x152
 function function_b8da6f44() {
@@ -118,7 +118,7 @@ function function_b8da6f44() {
 }
 
 // Namespace zm_orange/zm_orange
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1ffd80, Offset: 0xa70
 // Size: 0x2c
 function function_72f1cddb() {
@@ -126,7 +126,7 @@ function function_72f1cddb() {
 }
 
 // Namespace zm_orange/zm_orange
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4fd2633, Offset: 0xaa8
 // Size: 0x288
 function setup_personality_character_exerts() {
@@ -149,7 +149,7 @@ function setup_personality_character_exerts() {
 }
 
 // Namespace zm_orange/zm_orange
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xda93b0c8, Offset: 0xd38
 // Size: 0x94
 function sndactorunderwater(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

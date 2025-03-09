@@ -62,8 +62,8 @@
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 10,
-    "var_9b009839": -1,
+    "hash_345eba59": 10,
+    "hash_9b009839": -1,
     "name": "train_station_list_items_dlc1",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

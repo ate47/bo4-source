@@ -33,7 +33,7 @@
             ],
             "model": "#spawner_zm_nosferatu",
             "type": "actor",
-            "var_d318cc2c": 1,
+            "hash_d318cc2c": 1,
             "name": "actor 1"
         }
     ],

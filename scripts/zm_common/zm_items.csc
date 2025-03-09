@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_items/zm_items
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x390e7327, Offset: 0x110
 // Size: 0x4c
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace zm_items/zm_items
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe212f465, Offset: 0x168
 // Size: 0x84
 function function_39e7c9dd(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

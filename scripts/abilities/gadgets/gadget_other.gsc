@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace gadget_other/gadget_other
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x61339f15, Offset: 0xc0
 // Size: 0x44
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace gadget_other/gadget_other
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x894702ba, Offset: 0x110
 // Size: 0x22
 function gadget_other_is_inuse(slot) {
@@ -29,7 +29,7 @@ function gadget_other_is_inuse(slot) {
 }
 
 // Namespace gadget_other/gadget_other
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc0117db2, Offset: 0x140
 // Size: 0x22
 function gadget_other_is_flickering(slot) {

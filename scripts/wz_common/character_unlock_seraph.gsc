@@ -153,7 +153,7 @@ function private event_handler[event_cf200f34] function_209450ae(eventstruct) {
     }
     var_bbe521bc = getdynent(#"hash_81ef4f75cff4919");
     if (function_ffdbe8c2(var_bbe521bc) != 1) {
-        function_e2a06860(var_bbe521bc, 1);
+        setdynentstate(var_bbe521bc, 1);
     }
 }
 

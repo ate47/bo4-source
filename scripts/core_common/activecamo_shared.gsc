@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5a1fa4d9, Offset: 0x130
 // Size: 0x5c
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x83b05fd, Offset: 0x198
 // Size: 0xa8
 function on_weapon_change(params) {
@@ -43,7 +43,7 @@ function on_weapon_change(params) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa584310, Offset: 0x248
 // Size: 0x3c
 function on_player_death(params) {
@@ -54,7 +54,7 @@ function on_player_death(params) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcbbe9c30, Offset: 0x290
 // Size: 0x16c
 function function_27779784() {
@@ -71,7 +71,7 @@ function function_27779784() {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x951f8ed1, Offset: 0x408
 // Size: 0xc0
 function on_player_loadout() {
@@ -83,7 +83,7 @@ function on_player_loadout() {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf9996780, Offset: 0x4d0
 // Size: 0x7c
 function function_8d3b94ea(weapon, owned, b_has_weapon) {
@@ -95,7 +95,7 @@ function function_8d3b94ea(weapon, owned, b_has_weapon) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x69276c5e, Offset: 0x558
 // Size: 0x2e4
 function init_activecamo(weapon, activecamoinfo, owned) {
@@ -122,7 +122,7 @@ function init_activecamo(weapon, activecamoinfo, owned) {
         if (!isdefined(activecamo.var_dd54a13b[activecamo.baseweapon].owned)) {
             activecamo.var_dd54a13b[activecamo.baseweapon].owned = 0;
         }
-        activecamo.var_dd54a13b[activecamo.baseweapon].owned = activecamo.var_dd54a13b[activecamo.baseweapon].owned | owned;
+        activecamo.var_dd54a13b[activecamo.baseweapon].owned |= owned;
         self init_stages(activecamo, 0, 0);
         self callback::on_death(&on_player_death);
     }
@@ -152,7 +152,7 @@ function init_activecamo(weapon, activecamoinfo, owned) {
 #/
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd9dd53bb, Offset: 0x968
 // Size: 0x646
 function function_3aa81e0e(activecamoinfo) {
@@ -168,7 +168,7 @@ function function_3aa81e0e(activecamoinfo) {
         info.name = activecamoinfo.name;
         info.isasync = activecamoinfo.isasync;
         info.istiered = activecamoinfo.istiered;
-        info.var_e0b0d8cc = activecamoinfo.var_e0b0d8cc;
+        info.isimpulse = activecamoinfo.isimpulse;
         info.var_ed6f91d5 = activecamoinfo.var_ed6f91d5;
         info.var_bd863267 = activecamoinfo.var_bd863267;
         info.istimer = activecamoinfo.istimer;
@@ -230,7 +230,7 @@ function function_3aa81e0e(activecamoinfo) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x23992060, Offset: 0xfb8
 // Size: 0xfa
 function weapon_get_activecamo(weapon, b_has_weapon = 1) {
@@ -249,7 +249,7 @@ function weapon_get_activecamo(weapon, b_has_weapon = 1) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6f72de30, Offset: 0x10c0
 // Size: 0xba
 function function_37a45562(camoindex, activecamo) {
@@ -262,7 +262,7 @@ function function_37a45562(camoindex, activecamo) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x62065fd2, Offset: 0x1188
 // Size: 0xbb4
 function init_stages(activecamo, var_3a8a1e00, isdeath) {
@@ -384,7 +384,7 @@ function init_stages(activecamo, var_3a8a1e00, isdeath) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa06126ff, Offset: 0x1d48
 // Size: 0x1b2
 function function_c0fa0ecb(weapon) {
@@ -417,7 +417,7 @@ function function_c0fa0ecb(weapon) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x53452cac, Offset: 0x1f08
 // Size: 0x11c
 function function_c1f96c48(weapon) {
@@ -443,7 +443,7 @@ function function_c1f96c48(weapon) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xae3c76b0, Offset: 0x2030
 // Size: 0x17c
 function function_938534a8(permanentstatname) {
@@ -479,7 +479,7 @@ function function_938534a8(permanentstatname) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x61cc4aa1, Offset: 0x21b8
 // Size: 0xdc
 function function_1af985ba(weapon) {
@@ -517,7 +517,7 @@ function function_cd9deb9e(weapon) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa2a232fc, Offset: 0x2388
 // Size: 0x142
 function function_36feaf9e(activecamo, value, weapon) {
@@ -538,7 +538,7 @@ function function_36feaf9e(activecamo, value, weapon) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x630de28d, Offset: 0x24d8
 // Size: 0x914
 function function_896ac347(oweapon, statname, value) {
@@ -601,13 +601,13 @@ function function_896ac347(oweapon, statname, value) {
                                 stage.var_dd54a13b[activecamo.baseweapon].statvalue = self stats::get_stat_global(statname);
                             }
                         } else if (stage.info.statname == statname) {
-                            stage.var_dd54a13b[activecamo.baseweapon].statvalue = stage.var_dd54a13b[activecamo.baseweapon].statvalue + value;
+                            stage.var_dd54a13b[activecamo.baseweapon].statvalue += value;
                         }
                     }
                     var_804a253 = stage.var_dd54a13b[activecamo.baseweapon].statvalue > lastvalue;
                     if (var_804a253) {
                         var_7a414d4a = 1;
-                        if (isdefined(activecamo.info.var_e0b0d8cc) && activecamo.info.var_e0b0d8cc) {
+                        if (isdefined(activecamo.info.isimpulse) && activecamo.info.isimpulse) {
                             var_7cbc8452 = 1;
                             self thread function_a6bcf0e2(activecamo);
                         }
@@ -632,7 +632,7 @@ function function_896ac347(oweapon, statname, value) {
                 if (var_7a414d4a) {
                     var_15838be3 = self function_b9119037(activecamo);
                 }
-                if (!var_15838be3 && var_5c900b6e && !var_7cbc8452 && isdefined(activecamo.var_e0b0d8cc) && activecamo.var_e0b0d8cc) {
+                if (!var_15838be3 && var_5c900b6e && !var_7cbc8452 && isdefined(activecamo.isimpulse) && activecamo.isimpulse) {
                     var_7cbc8452 = 1;
                     self thread function_a6bcf0e2(activecamo);
                 }
@@ -645,7 +645,7 @@ function function_896ac347(oweapon, statname, value) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x41188520, Offset: 0x2df8
 // Size: 0xe8
 function function_94c2605(weapon) {
@@ -669,7 +669,7 @@ function function_94c2605(weapon) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7b04b8bc, Offset: 0x2ee8
 // Size: 0x2c
 function function_a6bcf0e2(activecamo) {
@@ -677,7 +677,7 @@ function function_a6bcf0e2(activecamo) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x491337d3, Offset: 0x2f20
 // Size: 0x84
 function function_f0d83504(activecamo, stage, stagenum) {
@@ -685,7 +685,7 @@ function function_f0d83504(activecamo, stage, stagenum) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6a0dd668, Offset: 0x2fb0
 // Size: 0x1d4
 function function_e44edbd1(activecamo) {
@@ -711,7 +711,7 @@ function function_e44edbd1(activecamo) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7798e920, Offset: 0x3190
 // Size: 0x886
 function function_b9119037(activecamo) {
@@ -824,7 +824,7 @@ function function_b9119037(activecamo) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2063d015, Offset: 0x3a20
 // Size: 0x170
 function set_stage_activecamo(activecamo, stagenum) {
@@ -845,7 +845,7 @@ function set_stage_activecamo(activecamo, stagenum) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x686e8977, Offset: 0x3b98
 // Size: 0x34c
 function function_a80cb651(activecamo, stagenum) {

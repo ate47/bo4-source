@@ -1,8 +1,0 @@
-{
-    "name": "#gsol_zm_power",
-    "assetType": "gamesettingoption",
-    "assets": [
-        "#zm_powerstate",
-        "#zm_powerdoorstate"
-    ]
-}

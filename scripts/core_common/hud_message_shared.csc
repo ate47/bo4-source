@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace hud_message/hud_message_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xad32a78b, Offset: 0xd0
 // Size: 0x26
 function __init__() {

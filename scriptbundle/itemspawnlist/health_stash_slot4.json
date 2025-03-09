@@ -13,8 +13,8 @@
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 2,
-    "var_9b009839": -1,
+    "hash_345eba59": 2,
+    "hash_9b009839": -1,
     "name": "health_stash_slot4",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

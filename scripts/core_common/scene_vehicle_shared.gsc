@@ -12,7 +12,7 @@ class cscenevehicle : csceneobject {
     var var_1f97724a;
 
     // Namespace cscenevehicle/scene_vehicle_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x8bf76591, Offset: 0x398
     // Size: 0xf4
     function function_d09b043() {
@@ -26,7 +26,7 @@ class cscenevehicle : csceneobject {
     }
 
     // Namespace cscenevehicle/scene_vehicle_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x80f724d1, Offset: 0x388
     // Size: 0x4
     function _cleanup() {
@@ -34,7 +34,7 @@ class cscenevehicle : csceneobject {
     }
 
     // Namespace cscenevehicle/scene_vehicle_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xdacda5ce, Offset: 0x368
     // Size: 0x14
     function _prepare() {
@@ -42,7 +42,7 @@ class cscenevehicle : csceneobject {
     }
 
     // Namespace cscenevehicle/scene_vehicle_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x2de968bf, Offset: 0x220
     // Size: 0x13c
     function _set_values(ent = self._e) {
@@ -55,7 +55,7 @@ class cscenevehicle : csceneobject {
     }
 
     // Namespace cscenevehicle/scene_vehicle_shared
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x7c6b206a, Offset: 0x168
     // Size: 0xac
     function _spawn_ent() {

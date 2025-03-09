@@ -1,0 +1,22 @@
+{
+    "itemlist": [
+        {
+            "minweight": 500,
+            "itementry": "wz_escape_dest_new_industries_list_items",
+            "maxweight": 500,
+            "available": -1
+        },
+        {
+            "minweight": 32,
+            "maxweight": 55,
+            "available": -1
+        }
+    ],
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 420,
+    "type": "itemspawnlist",
+    "hash_345eba59": 2,
+    "hash_9b009839": -1,
+    "name": "wz_escape_dest_industries_list_item_default",
+    "supplystashweight": 100
+}

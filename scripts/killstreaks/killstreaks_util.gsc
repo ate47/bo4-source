@@ -4,7 +4,7 @@
 #namespace killstreaks;
 
 // Namespace killstreaks/killstreaks_util
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe83fdc81, Offset: 0x78
 // Size: 0x3f0
 function switch_to_last_non_killstreak_weapon(immediate, awayfromball, gameended) {
@@ -51,7 +51,7 @@ function switch_to_last_non_killstreak_weapon(immediate, awayfromball, gameended
 }
 
 // Namespace killstreaks/killstreaks_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x113b45ce, Offset: 0x470
 // Size: 0x34
 function hasuav(team_or_entnum) {
@@ -62,7 +62,7 @@ function hasuav(team_or_entnum) {
 }
 
 // Namespace killstreaks/killstreaks_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x855ab0aa, Offset: 0x4b0
 // Size: 0x34
 function hassatellite(team_or_entnum) {
@@ -73,7 +73,7 @@ function hassatellite(team_or_entnum) {
 }
 
 // Namespace killstreaks/killstreaks_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x17c684aa, Offset: 0x4f0
 // Size: 0x3c
 function function_f479a2ff(weapon) {
@@ -84,7 +84,7 @@ function function_f479a2ff(weapon) {
 }
 
 // Namespace killstreaks/killstreaks_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x334ead95, Offset: 0x538
 // Size: 0x8c
 function function_e3a30c69(weapon) {
@@ -94,7 +94,7 @@ function function_e3a30c69(weapon) {
 }
 
 // Namespace killstreaks/killstreaks_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb48b45b5, Offset: 0x5d0
 // Size: 0x60
 function is_killstreak_weapon(weapon) {
@@ -108,7 +108,7 @@ function is_killstreak_weapon(weapon) {
 }
 
 // Namespace killstreaks/killstreaks_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4579eae4, Offset: 0x638
 // Size: 0x5a
 function get_killstreak_weapon(killstreak) {
@@ -120,7 +120,7 @@ function get_killstreak_weapon(killstreak) {
 }
 
 // Namespace killstreaks/killstreaks_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xff9ed894, Offset: 0x6a0
 // Size: 0x30
 function is_weapon_associated_with_killstreak(weapon) {

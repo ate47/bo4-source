@@ -1,10 +1,10 @@
 {
-    "var_ac8f613d": "j_head",
+    "hash_ac8f613d": "j_head",
     "configstringfiletype": "scriptbundle",
     "type": "gibcharacterdef",
-    "var_a13e30ab": "#hash_f7ec4b628659c6f",
+    "hash_a13e30ab": "#hash_f7ec4b628659c6f",
     "vmtype": "both",
     "name": "c_default_annhilate_gib_def",
-    "var_d94aaeb4": "#hash_25d71c3a3cd5a62e",
-    "var_86de3f71": "j_spinelower"
+    "hash_d94aaeb4": "#hash_25d71c3a3cd5a62e",
+    "hash_86de3f71": "j_spinelower"
 }

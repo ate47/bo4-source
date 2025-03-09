@@ -1,19 +1,19 @@
 {
     "descriptionimage": "#hash_7ff90f0bea8ed361",
     "description": "#hash_7ed5b3590b6a9a64",
-    "var_60fcfffa": "#hash_68cca6c42c586237",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 0.01,
+    "hash_60fcfffa": "#hash_68cca6c42c586237",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 0.01,
     "maxvalue": 1,
     "name": "pc_gamepad_reload_behavior",
     "displayname": "#hash_5d4618b0110c8110",
     "rangestartvalue": 0.01,
     "decimalplace": 0.01,
-    "var_66faec87": 4,
+    "hash_66faec87": 4,
     "statname": "warzoneReloadOnPress",
-    "var_82c732a7": 1,
-    "var_d4e288e": 1,
-    "var_b7401319": "#hash_3de1b6bd3b4973dd"
+    "isenableddisabled": 1,
+    "hash_d4e288e": 1,
+    "hash_b7401319": "#hash_3de1b6bd3b4973dd"
 }

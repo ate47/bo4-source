@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_5c493a54/namespace_5c493a54
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd56cdb6d, Offset: 0xe8
 // Size: 0x5c
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace namespace_5c493a54/namespace_5c493a54
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x4a2e8eb4, Offset: 0x150
 // Size: 0x108
 function private on_begin(var_2e5ed433, var_1532dab3, var_94d24883) {
@@ -45,7 +45,7 @@ function private on_begin(var_2e5ed433, var_1532dab3, var_94d24883) {
 }
 
 // Namespace namespace_5c493a54/namespace_5c493a54
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc0711c14, Offset: 0x260
 // Size: 0x28
 function private on_end(round_reset) {
@@ -63,7 +63,7 @@ function is_active() {
 }
 
 // Namespace namespace_5c493a54/namespace_5c493a54
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x36039051, Offset: 0x2d0
 // Size: 0x11c
 function private point_watcher(var_1532dab3 = 1, var_94d24883 = 0.9) {

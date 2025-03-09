@@ -30,7 +30,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_elevation/mp_elevation
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8e94f1a9, Offset: 0x370
 // Size: 0x2c
 function on_localclient_connect(localclientnum) {
@@ -39,7 +39,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace mp_elevation/mp_elevation
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdcec3e53, Offset: 0x3a8
 // Size: 0x2c
 function on_gameplay_started(localclientnum) {
@@ -48,7 +48,7 @@ function on_gameplay_started(localclientnum) {
 }
 
 // Namespace mp_elevation/mp_elevation
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbe38b1a6, Offset: 0x3e0
 // Size: 0xf2
 function dom_flag_base_fx_override(flag, team) {
@@ -78,7 +78,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_elevation/mp_elevation
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8cf15989, Offset: 0x4e0
 // Size: 0xf2
 function dom_flag_cap_fx_override(flag, team) {

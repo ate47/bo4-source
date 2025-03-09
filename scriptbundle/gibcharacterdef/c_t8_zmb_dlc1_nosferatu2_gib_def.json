@@ -1,8 +1,8 @@
 {
     "configstringfiletype": "scriptbundle",
     "type": "gibcharacterdef",
-    "var_a13e30ab": "#hash_267219566a35fba8",
+    "hash_a13e30ab": "#hash_267219566a35fba8",
     "vmtype": "both",
     "name": "c_t8_zmb_dlc1_nosferatu2_gib_def",
-    "var_86de3f71": "j_spine4"
+    "hash_86de3f71": "j_spine4"
 }

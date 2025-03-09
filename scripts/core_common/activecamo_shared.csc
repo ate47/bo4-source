@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7fc2f693, Offset: 0x1f0
 // Size: 0x10a
 function __init__() {
@@ -33,7 +33,7 @@ function __init__() {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa014740b, Offset: 0x308
 // Size: 0x1a8
 function on_local_player_spawned(localclientnum) {
@@ -59,7 +59,7 @@ function on_local_player_spawned(localclientnum) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf21ad9e3, Offset: 0x4b8
 // Size: 0xec
 function on_weapon_change(params) {
@@ -75,7 +75,7 @@ function on_weapon_change(params) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x24f86db1, Offset: 0x5b0
 // Size: 0x1fe
 function function_c887f58e() {
@@ -114,7 +114,7 @@ function function_c887f58e() {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x935722c2, Offset: 0x7b8
 // Size: 0x9c
 function on_player_spawned(localclientnum) {
@@ -125,7 +125,7 @@ function on_player_spawned(localclientnum) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf7f5c62d, Offset: 0x860
 // Size: 0x72
 function function_ae141bf2(camoindex) {
@@ -138,7 +138,7 @@ function function_ae141bf2(camoindex) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa45b1c79, Offset: 0x8e0
 // Size: 0x42
 function function_3d96ad48(camooptions) {
@@ -147,7 +147,7 @@ function function_3d96ad48(camooptions) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x93ec818c, Offset: 0x930
 // Size: 0x16e
 function function_451a49f4(localclientnum, activecamoinfo, weapon, stagenum) {
@@ -172,7 +172,7 @@ function function_451a49f4(localclientnum, activecamoinfo, weapon, stagenum) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x3bb1327, Offset: 0xaa8
 // Size: 0x1b4
 function function_130e0542(localclientnum, weapon, camoindex) {
@@ -212,7 +212,7 @@ function function_95f12bac(localclientnum, weapon, weaponoptions) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfdaf1eb3, Offset: 0xd10
 // Size: 0xa4
 function updateactivecamo(localclientnum, eventstruct) {
@@ -222,7 +222,7 @@ function updateactivecamo(localclientnum, eventstruct) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4947d2d4, Offset: 0xdc0
 // Size: 0x7c4
 function update_active_camo(localclientnum, weapon, tagname, stagenum, impulse, var_d71e8c6e, camooptions) {
@@ -325,7 +325,7 @@ function update_active_camo(localclientnum, weapon, tagname, stagenum, impulse, 
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x94f04ae, Offset: 0x1590
 // Size: 0x64
 function player_on_death(params) {
@@ -334,7 +334,7 @@ function player_on_death(params) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4fdba286, Offset: 0x1600
 // Size: 0x76
 function function_3e27a7cb(localclientnum, tagname) {
@@ -346,7 +346,7 @@ function function_3e27a7cb(localclientnum, tagname) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xc0afa3a7, Offset: 0x1680
 // Size: 0x150
 function function_a946fb86(activecamo, stagenum, var_d1460f46) {
@@ -363,7 +363,7 @@ function function_a946fb86(activecamo, stagenum, var_d1460f46) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf828c545, Offset: 0x17d8
 // Size: 0x96
 function function_16d7447b(localclientnum, tagname) {
@@ -380,7 +380,7 @@ function function_16d7447b(localclientnum, tagname) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x37b128dd, Offset: 0x1878
 // Size: 0x154
 function function_c55b3123(stage, tagname, var_eb6a239c, lerptime, var_f023ca7d, var_d71e8c6e) {
@@ -404,7 +404,7 @@ function function_c55b3123(stage, tagname, var_eb6a239c, lerptime, var_f023ca7d,
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xe45e1413, Offset: 0x19d8
 // Size: 0x64c
 function function_42887bfe(stage, tagname, layer, impulse, var_d71e8c6e) {
@@ -477,7 +477,7 @@ function function_42887bfe(stage, tagname, layer, impulse, var_d71e8c6e) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf8431ec3, Offset: 0x2030
 // Size: 0x62e
 function function_3aa81e0e(activecamoinfo) {
@@ -557,7 +557,7 @@ function function_3aa81e0e(activecamoinfo) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc67fce19, Offset: 0x2668
 // Size: 0xde
 function init_activecamo(activecamoinfo) {
@@ -579,7 +579,7 @@ function init_activecamo(activecamoinfo) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x2b1a8c38, Offset: 0x2750
 // Size: 0x460
 function function_374e37a0(localclientnum, weaponmodel, var_3594168e, &var_49daa2f6) {
@@ -621,7 +621,7 @@ function function_374e37a0(localclientnum, weaponmodel, var_3594168e, &var_49daa
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8f69bc3f, Offset: 0x2bb8
 // Size: 0xbc
 function function_cbfd8fd6(localclientnum) {
@@ -694,7 +694,7 @@ function function_6efb762c(localclientnum, camoweapon, weaponoptions) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x31b0917a, Offset: 0x3080
 // Size: 0x94
 function function_b3a0e4f0(localclientnum, activecamoinfo, init_stage) {

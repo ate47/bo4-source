@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_random_teleport/zm_trial_random_teleport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa20bdac9, Offset: 0x108
 // Size: 0x5c
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_random_teleport/zm_trial_random_teleport
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xc55f7553, Offset: 0x170
 // Size: 0xd8
 function private on_begin(n_min_time, n_max_time) {
@@ -40,7 +40,7 @@ function private on_begin(n_min_time, n_max_time) {
 }
 
 // Namespace zm_trial_random_teleport/zm_trial_random_teleport
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x79ecf3c7, Offset: 0x250
 // Size: 0xe0
 function private on_end(round_reset) {
@@ -61,7 +61,7 @@ function is_active() {
 }
 
 // Namespace zm_trial_random_teleport/zm_trial_random_teleport
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x935213f6, Offset: 0x378
 // Size: 0xc8
 function private function_6a04c6e6() {

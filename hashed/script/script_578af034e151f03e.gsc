@@ -1,7 +1,7 @@
 #namespace namespace_6a81d072;
 
 // Namespace namespace_6a81d072/namespace_6a81d072
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x341184d3, Offset: 0x398
 // Size: 0x276
 function init_pentagon_box_screens() {
@@ -23,7 +23,7 @@ function init_pentagon_box_screens() {
 }
 
 // Namespace namespace_6a81d072/namespace_6a81d072
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x70a95389, Offset: 0x618
 // Size: 0x15e
 function function_d531af7d(client_num, state) {
@@ -50,7 +50,7 @@ function function_d531af7d(client_num, state) {
 }
 
 // Namespace namespace_6a81d072/namespace_6a81d072
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd2c2aa99, Offset: 0x780
 // Size: 0xf6
 function function_349aed4a(client_num) {
@@ -69,7 +69,7 @@ function function_349aed4a(client_num) {
 }
 
 // Namespace namespace_6a81d072/namespace_6a81d072
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x85960f2c, Offset: 0x880
 // Size: 0xf0
 function function_ecd6c9b9(model_array, endon_notify) {

@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_attackables/zm_attackables
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9f977d83, Offset: 0x1c8
 // Size: 0x182
 function __init__() {
@@ -45,7 +45,7 @@ function __init__() {
 }
 
 // Namespace zm_attackables/zm_attackables
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x358
 // Size: 0x4
 function __main__() {
@@ -53,7 +53,7 @@ function __main__() {
 }
 
 // Namespace zm_attackables/zm_attackables
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x61c4bda8, Offset: 0x368
 // Size: 0x14a
 function get_attackable() {
@@ -79,7 +79,7 @@ function get_attackable() {
 }
 
 // Namespace zm_attackables/zm_attackables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa982620c, Offset: 0x4c0
 // Size: 0xba
 function get_attackable_slot(entity) {
@@ -95,7 +95,7 @@ function get_attackable_slot(entity) {
 }
 
 // Namespace zm_attackables/zm_attackables
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xe1844804, Offset: 0x588
 // Size: 0xce
 function private clear_slots() {
@@ -122,7 +122,7 @@ function activate() {
 }
 
 // Namespace zm_attackables/zm_attackables
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x217b9038, Offset: 0x6a8
 // Size: 0xe
 function deactivate() {
@@ -130,7 +130,7 @@ function deactivate() {
 }
 
 // Namespace zm_attackables/zm_attackables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x32c03b94, Offset: 0x6c0
 // Size: 0x84
 function do_damage(damage) {
@@ -145,7 +145,7 @@ function do_damage(damage) {
 }
 
 // Namespace zm_attackables/zm_attackables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd4837605, Offset: 0x750
 // Size: 0x94
 function attackable_callback(entity) {

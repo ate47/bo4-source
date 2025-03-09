@@ -1,8 +1,8 @@
 {
-    "var_2ecceeab": "#rcxd_kill",
+    "hash_2ecceeab": "#rcxd_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
     "name": "recon_car_scoreevents",
-    "var_e1b418c1": "ability"
+    "customsettingstype": "ability"
 }

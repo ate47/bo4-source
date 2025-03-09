@@ -8,8 +8,8 @@
 #namespace zm_audio_sq;
 
 // Namespace zm_audio_sq/zm_audio_sq
-// Params 0, eflags: 0x1 linked
-// Checksum 0x33c6b68d, Offset: 0xd8
+// Params 0, eflags: 0x0
+// Checksum 0xe3c30ea8, Offset: 0xd8
 // Size: 0xb4
 function init() {
     clientfield::register("scriptmover", "medallion_fx", 1, 1, "int");
@@ -18,8 +18,8 @@ function init() {
 }
 
 // Namespace zm_audio_sq/zm_audio_sq
-// Params 1, eflags: 0x5 linked
-// Checksum 0x4eda8712, Offset: 0x198
+// Params 1, eflags: 0x4
+// Checksum 0x10ab5fda, Offset: 0x198
 // Size: 0x74
 function private function_fe4dc0ff(var_a276c861) {
     level endon(#"end_game");
@@ -34,8 +34,8 @@ function private function_fe4dc0ff(var_a276c861) {
 }
 
 // Namespace zm_audio_sq/zm_audio_sq
-// Params 2, eflags: 0x5 linked
-// Checksum 0x5262afe2, Offset: 0x218
+// Params 2, eflags: 0x4
+// Checksum 0x765e92e7, Offset: 0x218
 // Size: 0x34
 function private function_3f739fed(var_a276c861, var_19e802fa) {
     if (!var_a276c861) {
@@ -46,8 +46,8 @@ function private function_3f739fed(var_a276c861, var_19e802fa) {
 }
 
 // Namespace zm_audio_sq/zm_audio_sq
-// Params 0, eflags: 0x1 linked
-// Checksum 0xf721f443, Offset: 0x258
+// Params 0, eflags: 0x0
+// Checksum 0x41d4b9d7, Offset: 0x258
 // Size: 0x3c
 function function_9310fe45() {
     level thread zm_audio::sndmusicsystem_stopandflush();
@@ -56,8 +56,8 @@ function function_9310fe45() {
 }
 
 // Namespace zm_audio_sq/zm_audio_sq
-// Params 0, eflags: 0x1 linked
-// Checksum 0x62de5051, Offset: 0x2a0
+// Params 0, eflags: 0x0
+// Checksum 0xb22a1ac, Offset: 0x2a0
 // Size: 0x128
 function function_9e3ff948() {
     var_1a2e422e = 0;
@@ -78,8 +78,8 @@ function function_9e3ff948() {
 }
 
 // Namespace zm_audio_sq/zm_audio_sq
-// Params 0, eflags: 0x1 linked
-// Checksum 0x4cb36b9b, Offset: 0x3d0
+// Params 0, eflags: 0x0
+// Checksum 0x5861525a, Offset: 0x3d0
 // Size: 0x1be
 function function_c0862b9e() {
     self.var_6522085c = util::spawn_model(self.model, self.origin, self.angles);
@@ -107,8 +107,8 @@ function function_c0862b9e() {
 }
 
 // Namespace zm_audio_sq/zm_audio_sq
-// Params 0, eflags: 0x1 linked
-// Checksum 0xacfcb25f, Offset: 0x598
+// Params 0, eflags: 0x0
+// Checksum 0x17f9c667, Offset: 0x598
 // Size: 0xd0
 function music_sq_cleanup() {
     var_2361f0ab = struct::get_array(#"s_music_sq_location", "targetname");

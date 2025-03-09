@@ -13,7 +13,7 @@ function init_shared() {
 }
 
 // Namespace entityheadicons/entityheadicons_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbbf840f2, Offset: 0xc0
 // Size: 0x3e
 function start_gametype() {
@@ -26,7 +26,7 @@ function start_gametype() {
 }
 
 // Namespace entityheadicons/entityheadicons_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1e430ef8, Offset: 0x108
 // Size: 0x204
 function setentityheadicon(team, owner, objective) {
@@ -69,7 +69,7 @@ function setentityheadicon(team, owner, objective) {
 }
 
 // Namespace entityheadicons/entityheadicons_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x4ab53817, Offset: 0x318
 // Size: 0xb2
 function updateentityheadteamobjective(entity, team, objective) {
@@ -81,7 +81,7 @@ function updateentityheadteamobjective(entity, team, objective) {
 }
 
 // Namespace entityheadicons/entityheadicons_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf894fd9b, Offset: 0x3d8
 // Size: 0xa2
 function updateentityheadclientobjective(entity, objective) {
@@ -93,7 +93,7 @@ function updateentityheadclientobjective(entity, objective) {
 }
 
 // Namespace entityheadicons/entityheadicons_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb74da665, Offset: 0x488
 // Size: 0x5c
 function destroyheadiconsondeath() {
@@ -104,7 +104,7 @@ function destroyheadiconsondeath() {
 }
 
 // Namespace entityheadicons/entityheadicons_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xec6faa5d, Offset: 0x4f0
 // Size: 0xa2
 function destroyentityheadicons() {

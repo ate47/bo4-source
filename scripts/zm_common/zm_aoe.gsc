@@ -18,7 +18,7 @@ class areaofeffect {
     var var_be1913ae;
 
     // Namespace areaofeffect/zm_aoe
-    // Params 0, eflags: 0x9 linked
+    // Params 0, eflags: 0x8
     // Checksum 0xb9ae6375, Offset: 0x1c8
     // Size: 0x2a
     constructor() {
@@ -36,7 +36,7 @@ class class_698343df {
     var var_9a08bb02;
 
     // Namespace class_698343df/zm_aoe
-    // Params 0, eflags: 0x9 linked
+    // Params 0, eflags: 0x8
     // Checksum 0xc9ddea3, Offset: 0x2a0
     // Size: 0xe
     constructor() {
@@ -54,7 +54,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x73727cb6, Offset: 0x358
 // Size: 0x84
 function __init__() {
@@ -63,7 +63,7 @@ function __init__() {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xbf51508, Offset: 0x3e8
 // Size: 0x18c
 function private __main__() {
@@ -77,7 +77,7 @@ function private __main__() {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x480fe14e, Offset: 0x580
 // Size: 0x98
 function private function_e969e75(type) {
@@ -90,7 +90,7 @@ function private function_e969e75(type) {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0x903ec8fd, Offset: 0x620
 // Size: 0x1ec
 function function_15dea507(aoeid, type, var_3a11a165, lifetime, var_f2cd3aad, damagemin, damagemax, radius, height) {
@@ -118,7 +118,7 @@ function function_15dea507(aoeid, type, var_3a11a165, lifetime, var_f2cd3aad, da
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x9021b121, Offset: 0x818
 // Size: 0x192
 function function_371b4147(aoeid, type, position, userdata) {
@@ -141,7 +141,7 @@ function function_371b4147(aoeid, type, position, userdata) {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xcd6bee08, Offset: 0x9b8
 // Size: 0xa4
 function private function_668a9b2d(aoe, type) {
@@ -152,7 +152,7 @@ function private function_668a9b2d(aoe, type) {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x14bee4d, Offset: 0xa68
 // Size: 0x104
 function private function_87bbe4fc(type) {
@@ -170,7 +170,7 @@ function private function_87bbe4fc(type) {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xf72f73cc, Offset: 0xb78
 // Size: 0x104
 function private function_fa03204a(aoe, type) {
@@ -185,7 +185,7 @@ function private function_fa03204a(aoe, type) {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc6cd8ca6, Offset: 0xc88
 // Size: 0x24
 function private function_4f0db8cf(entity) {
@@ -194,7 +194,7 @@ function private function_4f0db8cf(entity) {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf7b8040a, Offset: 0xcb8
 // Size: 0x84
 function private function_2c33d107(type) {
@@ -205,7 +205,7 @@ function private function_2c33d107(type) {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xfe9a93ae, Offset: 0xd48
 // Size: 0x23a
 function private function_ccf8f659(aoe, forceend = 0) {
@@ -244,7 +244,7 @@ function private function_ccf8f659(aoe, forceend = 0) {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf3631297, Offset: 0xf90
 // Size: 0x144
 function function_3690781e() {
@@ -260,7 +260,7 @@ function function_3690781e() {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x5d678723, Offset: 0x10e0
 // Size: 0x180
 function private function_e5950b1e(type) {
@@ -279,7 +279,7 @@ function private function_e5950b1e(type) {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa5902905, Offset: 0x1268
 // Size: 0x300
 function private function_bea2e288(type) {
@@ -309,7 +309,7 @@ function private function_bea2e288(type) {
 }
 
 // Namespace zm_aoe/zm_aoe
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x829ac84, Offset: 0x1570
 // Size: 0xa6
 function private function_60bb02f3(type) {

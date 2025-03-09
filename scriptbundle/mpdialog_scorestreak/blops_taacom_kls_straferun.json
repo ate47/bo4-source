@@ -5,7 +5,7 @@
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "blops_taacom_kls_straferun",
-    "var_6f9447b2": "#hash_1ec0240e6986e922",
-    "var_61d32c30": "#hash_1ec0230e6986e76f",
-    "var_b6b855f9": "#hash_1ec0250e6986ead5"
+    "hash_6f9447b2": "#hash_1ec0240e6986e922",
+    "hash_61d32c30": "#hash_1ec0230e6986e76f",
+    "hash_b6b855f9": "#hash_1ec0250e6986ead5"
 }

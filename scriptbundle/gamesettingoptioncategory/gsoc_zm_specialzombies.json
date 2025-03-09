@@ -1,8 +1,8 @@
 {
     "configstringfiletype": "scriptbundle",
-    "var_ce9b2d06": "gsol_zm_specialzombies",
+    "hash_ce9b2d06": "gsol_zm_specialzombies",
     "type": "gamesettingoptioncategory",
     "name": "gsoc_zm_specialzombies",
-    "var_dea17465": "#hash_40c3c9f045a1912d",
-    "var_608158f2": "#hash_7233749e09322c66"
+    "hash_dea17465": "#hash_40c3c9f045a1912d",
+    "hash_608158f2": "#hash_7233749e09322c66"
 }

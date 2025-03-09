@@ -1,0 +1,225 @@
+{
+    "keys": [
+        {
+            "name": "#zm_zodt8_all_stream",
+            "xPakEntry": {
+                "key": 17993518945381212049,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 8192,
+            "keyFlags": 3
+        },
+        {
+            "name": "#hash_7745364a8dee28ce",
+            "xPakEntry": {
+                "key": 16319268685279430074,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 255352960,
+            "keyFlags": 1
+        },
+        {
+            "name": "#hash_4609f92adf04ae91",
+            "xPakEntry": {
+                "key": 16270922992539044963,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 2048,
+            "keyFlags": 3
+        },
+        {
+            "name": "#hash_22ffa428368055ec",
+            "xPakEntry": {
+                "key": 18300419005147411372,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 14317824,
+            "keyFlags": 1
+        },
+        {
+            "name": "#hash_8ae48371764ead4",
+            "xPakEntry": {
+                "key": 16366671478119633009,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 3538944,
+            "keyFlags": 0
+        },
+        {
+            "name": "#hash_8ae49371764ec87",
+            "xPakEntry": {
+                "key": 16366671478119633009,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 3538944,
+            "keyFlags": 0
+        },
+        {
+            "name": "#hash_8ae4a371764ee3a",
+            "xPakEntry": {
+                "key": 16366671478119633009,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 3538944,
+            "keyFlags": 0
+        },
+        {
+            "name": "#hash_8ae4b371764efed",
+            "xPakEntry": {
+                "key": 16366671478119633009,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 3538944,
+            "keyFlags": 0
+        },
+        {
+            "name": "#hash_191ad1ed635957b3",
+            "xPakEntry": {
+                "key": 18272525777506053499,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 138936320,
+            "keyFlags": 0
+        },
+        {
+            "name": "#hash_22eec344b0817588",
+            "xPakEntry": {
+                "key": 18005782379510961466,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 1507328,
+            "keyFlags": 0
+        },
+        {
+            "name": "#hash_23b4dd4f2fc99e0a",
+            "xPakEntry": {
+                "key": 18005782379510961466,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 1507328,
+            "keyFlags": 0
+        },
+        {
+            "name": "#hash_2bf83fed6e78b05d",
+            "xPakEntry": {
+                "key": 18165951652569600016,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 4653056,
+            "keyFlags": 0
+        },
+        {
+            "name": "#hash_3346d6ed7239bff2",
+            "xPakEntry": {
+                "key": 18258118529008774590,
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 55050240,
+            "keyFlags": 0
+        }
+    ]
+}

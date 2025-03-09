@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_reign_drops/zm_bgb_reign_drops
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x97b60822, Offset: 0x230
 // Size: 0x74
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_reign_drops/zm_bgb_reign_drops
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x891fe169, Offset: 0x2b0
 // Size: 0x3a
 function validation() {
@@ -36,7 +36,7 @@ function validation() {
 }
 
 // Namespace zm_bgb_reign_drops/zm_bgb_reign_drops
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb2761e5b, Offset: 0x2f8
 // Size: 0x334
 function activation() {
@@ -73,7 +73,7 @@ function activation() {
 }
 
 // Namespace zm_bgb_reign_drops/zm_bgb_reign_drops
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb9fe92a4, Offset: 0x638
 // Size: 0xa6
 function function_7f3b4877() {
@@ -93,7 +93,7 @@ function function_7f3b4877() {
 }
 
 // Namespace zm_bgb_reign_drops/zm_bgb_reign_drops
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2494229, Offset: 0x6e8
 // Size: 0x2ce
 function function_dfc73f65(n_position) {

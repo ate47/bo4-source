@@ -5,7 +5,7 @@
 #namespace namespace_ca03bbb4;
 
 // Namespace namespace_ca03bbb4/namespace_ca03bbb4
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf64c40b9, Offset: 0xb0
 // Size: 0x144
 function preload() {
@@ -17,7 +17,7 @@ function preload() {
 }
 
 // Namespace namespace_ca03bbb4/namespace_ca03bbb4
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x95daff0, Offset: 0x200
 // Size: 0x7c
 function function_7cd6e78c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

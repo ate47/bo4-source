@@ -1,7 +1,7 @@
 {
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
-    "var_2a2adea3": 1,
+    "blueprintcount": 1,
     "blueprint01": "zblueprint_red_strike",
     "name": "ztable_red_strike",
     "displayname": "Red Strike"

@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_transform/zm_transformation
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdc142a64, Offset: 0x118
 // Size: 0x94
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace zm_transform/zm_transformation
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7043fd0a, Offset: 0x1b8
 // Size: 0x74
 function function_201c2cb7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -31,7 +31,7 @@ function function_201c2cb7(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_transform/zm_transformation
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x225d298c, Offset: 0x238
 // Size: 0x156
 function function_341e5a97(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -52,7 +52,7 @@ function function_341e5a97(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_transform/zm_transformation
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc5c64c4c, Offset: 0x398
 // Size: 0x4c
 function function_8a817bd6(model) {

@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_office_disable_teleporters_elevators/namespace_559511d6
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf32e3d41, Offset: 0xf8
 // Size: 0x5c
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_office_disable_teleporters_elevators/namespace_559511d6
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x9f80c16c, Offset: 0x160
 // Size: 0x34
 function private on_begin() {
@@ -34,7 +34,7 @@ function private on_begin() {
 }
 
 // Namespace zm_trial_office_disable_teleporters_elevators/namespace_559511d6
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb6e1960d, Offset: 0x1a0
 // Size: 0x3c
 function private on_end(round_reset) {
@@ -43,7 +43,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_office_disable_teleporters_elevators/namespace_559511d6
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x762fc8d4, Offset: 0x1e8
 // Size: 0x84
 function private function_3b7e62cf() {
@@ -54,7 +54,7 @@ function private function_3b7e62cf() {
 }
 
 // Namespace zm_trial_office_disable_teleporters_elevators/namespace_559511d6
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xf513335d, Offset: 0x278
 // Size: 0x54
 function private function_98c1b6be() {
@@ -66,7 +66,7 @@ function private function_98c1b6be() {
 }
 
 // Namespace zm_trial_office_disable_teleporters_elevators/namespace_559511d6
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x4e8cf223, Offset: 0x2d8
 // Size: 0x14
 function private function_28dce407() {
@@ -74,7 +74,7 @@ function private function_28dce407() {
 }
 
 // Namespace zm_trial_office_disable_teleporters_elevators/namespace_559511d6
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x58aa33f6, Offset: 0x2f8
 // Size: 0xb4
 function private function_72c09628() {
@@ -87,7 +87,7 @@ function private function_72c09628() {
 }
 
 // Namespace zm_trial_office_disable_teleporters_elevators/namespace_559511d6
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x4dddf11f, Offset: 0x3b8
 // Size: 0x14
 function private function_8209b7a5() {

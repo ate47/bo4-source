@@ -7,26 +7,26 @@
 // Method(s) 7 Total 14
 class cmulti_stage_friendly_lockon : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cmulti_stage_friendly_lockon/multi_stage_friendly_lockon
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x49761082, Offset: 0x380
     // Size: 0x3c
     function set_targetstate(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "targetState", value);
+        player clientfield::function_9bf78ef8(_uid, "targetState", value);
     }
 
     // Namespace cmulti_stage_friendly_lockon/multi_stage_friendly_lockon
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xd3b9cc65, Offset: 0x338
     // Size: 0x3c
     function set_entnum(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "entNum", value);
+        player clientfield::function_9bf78ef8(_uid, "entNum", value);
     }
 
     // Namespace cmulti_stage_friendly_lockon/multi_stage_friendly_lockon
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x6782e11d, Offset: 0x308
     // Size: 0x24
     function close(player) {
@@ -34,7 +34,7 @@ class cmulti_stage_friendly_lockon : cluielem {
     }
 
     // Namespace cmulti_stage_friendly_lockon/multi_stage_friendly_lockon
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x20984371, Offset: 0x2b8
     // Size: 0x44
     function open(player, persistent = 0) {
@@ -42,7 +42,7 @@ class cmulti_stage_friendly_lockon : cluielem {
     }
 
     // Namespace cmulti_stage_friendly_lockon/multi_stage_friendly_lockon
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x1c56b2ed, Offset: 0x238
     // Size: 0x74
     function setup_clientfields(uid) {

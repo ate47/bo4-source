@@ -1,0 +1,41 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_34dcd2b126fb2c0d",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 15,
+                    "spacermax": 30,
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_9fa67b3b6ea3635",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 20,
+                    "spacermax": 30,
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_6da1df0d5a324fb6",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_gridlock_crane_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

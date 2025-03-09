@@ -7,18 +7,18 @@
 // Method(s) 6 Total 13
 class czm_location : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace czm_location/zm_location
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x2828a4d, Offset: 0x2d0
     // Size: 0x3c
     function set_location_name(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "location_name", value);
+        player clientfield::function_9bf78ef8(_uid, "location_name", value);
     }
 
     // Namespace czm_location/zm_location
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xb9850192, Offset: 0x2a0
     // Size: 0x24
     function close(player) {
@@ -26,7 +26,7 @@ class czm_location : cluielem {
     }
 
     // Namespace czm_location/zm_location
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xcb8de962, Offset: 0x250
     // Size: 0x44
     function open(player, persistent = 0) {
@@ -34,7 +34,7 @@ class czm_location : cluielem {
     }
 
     // Namespace czm_location/zm_location
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x8dc2e22c, Offset: 0x1f8
     // Size: 0x4c
     function setup_clientfields(uid) {
@@ -45,7 +45,7 @@ class czm_location : cluielem {
 }
 
 // Namespace zm_location/zm_location
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7c862202, Offset: 0xd0
 // Size: 0x40
 function register(uid) {
@@ -55,7 +55,7 @@ function register(uid) {
 }
 
 // Namespace zm_location/zm_location
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5be47cea, Offset: 0x118
 // Size: 0x38
 function open(player, persistent = 0) {
@@ -63,7 +63,7 @@ function open(player, persistent = 0) {
 }
 
 // Namespace zm_location/zm_location
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x671b2c7c, Offset: 0x158
 // Size: 0x1c
 function close(player) {
@@ -71,7 +71,7 @@ function close(player) {
 }
 
 // Namespace zm_location/zm_location
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcf1407a2, Offset: 0x180
 // Size: 0x1a
 function is_open(player) {
@@ -79,7 +79,7 @@ function is_open(player) {
 }
 
 // Namespace zm_location/zm_location
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8c44b296, Offset: 0x1a8
 // Size: 0x28
 function set_location_name(player, value) {

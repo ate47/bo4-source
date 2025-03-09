@@ -22,7 +22,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_talisman_extra_frag/zm_talisman_extra_frag
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x10d63840, Offset: 0x128
 // Size: 0x2c
 function __init__() {
@@ -30,7 +30,7 @@ function __init__() {
 }
 
 // Namespace zm_talisman_extra_frag/zm_talisman_extra_frag
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6c375951, Offset: 0x160
 // Size: 0x54
 function activate_talisman() {
@@ -40,7 +40,7 @@ function activate_talisman() {
 }
 
 // Namespace zm_talisman_extra_frag/zm_talisman_extra_frag
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x37faf9ae, Offset: 0x1c0
 // Size: 0x124
 function function_fbcc1e50() {

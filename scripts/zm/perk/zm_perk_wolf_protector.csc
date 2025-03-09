@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_wolf_protector/zm_perk_wolf_protector
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb7662fc7, Offset: 0x1d0
 // Size: 0x3c
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_wolf_protector/zm_perk_wolf_protector
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3004a709, Offset: 0x218
 // Size: 0xdc
 function function_27473e44() {
@@ -38,7 +38,7 @@ function function_27473e44() {
 }
 
 // Namespace zm_perk_wolf_protector/zm_perk_wolf_protector
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x48ff17f8, Offset: 0x300
 // Size: 0x92
 function init() {
@@ -48,7 +48,7 @@ function init() {
 }
 
 // Namespace zm_perk_wolf_protector/zm_perk_wolf_protector
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf6688075, Offset: 0x3a0
 // Size: 0x94
 function client_field_func() {
@@ -57,7 +57,7 @@ function client_field_func() {
 }
 
 // Namespace zm_perk_wolf_protector/zm_perk_wolf_protector
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x440
 // Size: 0x4
 function code_callback_func() {
@@ -65,7 +65,7 @@ function code_callback_func() {
 }
 
 // Namespace zm_perk_wolf_protector/zm_perk_wolf_protector
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf8e8577e, Offset: 0x450
 // Size: 0x204
 function wolf_protector_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -89,7 +89,7 @@ function wolf_protector_fx(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_perk_wolf_protector/zm_perk_wolf_protector
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfac4e3e6, Offset: 0x660
 // Size: 0x74
 function wolf_protector_spawn_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

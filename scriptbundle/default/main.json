@@ -11,6 +11,6 @@
     "networkmode": -1,
     "errtarget": "main",
     "egamemodes": 5,
-    "var_38c7a0d1": "showdirectormain",
-    "var_f0c68dbb": 1
+    "hash_38c7a0d1": "showdirectormain",
+    "hash_f0c68dbb": 1
 }

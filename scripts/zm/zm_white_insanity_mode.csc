@@ -4,7 +4,7 @@
 #namespace zm_white_insanity_mode;
 
 // Namespace zm_white_insanity_mode/zm_white_insanity_mode
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1df0c7e6, Offset: 0xb0
 // Size: 0x4c
 function init_clientfields() {
@@ -12,7 +12,7 @@ function init_clientfields() {
 }
 
 // Namespace zm_white_insanity_mode/zm_white_insanity_mode
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbcdaad3d, Offset: 0x108
 // Size: 0x32
 function init_fx() {
@@ -20,7 +20,7 @@ function init_fx() {
 }
 
 // Namespace zm_white_insanity_mode/zm_white_insanity_mode
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf2e2ef24, Offset: 0x148
 // Size: 0x15e
 function function_4b104fc5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

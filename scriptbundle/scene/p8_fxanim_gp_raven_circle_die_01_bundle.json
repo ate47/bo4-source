@@ -1,0 +1,61 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_57363d4780251877",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_302170aa273ab2bd",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_132c9791": 1,
+                    "hash_b3dddfd3": 1,
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#p8_fxanim_gp_raven_01_mod",
+            "type": "prop",
+            "name": "prop 1",
+            "aligntargettag": "raven_attach_01_jnt",
+            "allowdeath": 1,
+            "aligntarget": "raven_attach",
+            "takedamage": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2d3bd3cab93a5da5",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_64e4f262fa992ca4",
+            "type": "prop",
+            "name": "raven_attach"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_gp_raven_circle_die_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

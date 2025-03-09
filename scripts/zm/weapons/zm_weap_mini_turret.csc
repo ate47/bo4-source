@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x77787389, Offset: 0x108
 // Size: 0x4c
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6a5c26b6, Offset: 0x160
 // Size: 0xbc
 function turret_open(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

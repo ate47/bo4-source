@@ -1,7 +1,7 @@
 #namespace behaviorstatemachine;
 
 // Namespace behaviorstatemachine/behavior_state_machine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8a655ff4, Offset: 0x68
 // Size: 0xa2
 function registerbsmscriptapiinternal(functionname, scriptfunction) {

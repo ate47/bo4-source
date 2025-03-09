@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbc9503cf, Offset: 0x190
 // Size: 0xea
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xcdf25bac, Offset: 0x288
 // Size: 0x12c
 function function_f177aa9f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -52,7 +52,7 @@ function function_f177aa9f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x48f49daf, Offset: 0x3c0
 // Size: 0x104
 function function_70565a6d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

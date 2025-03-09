@@ -67,8 +67,8 @@ function rise_dust_fx(clientnum, billow_fx, burst_fx) {
 // Checksum 0xc8815eb2, Offset: 0x670
 // Size: 0x194
 function zombie_eyes_clientfield_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    if (isdefined(self.var_ea20345f)) {
-        self stoprenderoverridebundle(self.var_ea20345f, "j_head");
+    if (isdefined(self.eye_rob)) {
+        self stoprenderoverridebundle(self.eye_rob, "j_head");
     }
     if (isdefined(self.var_3231a850)) {
         stopfx(localclientnum, self.var_3231a850);
@@ -76,15 +76,15 @@ function zombie_eyes_clientfield_cb(localclientnum, oldval, newval, bnewent, bin
     }
     if (newval > 0) {
         if (newval == 2) {
-            self.var_ea20345f = "rob_zm_eyes_blue";
+            self.eye_rob = "rob_zm_eyes_blue";
             var_d40cd873 = "eye_glow_blue";
         } else if (newval == 3) {
-            self.var_ea20345f = "rob_zm_eyes_green";
+            self.eye_rob = "rob_zm_eyes_green";
             var_d40cd873 = "eye_glow_green";
         } else {
-            self.var_ea20345f = "rob_zm_eyes_red";
+            self.eye_rob = "rob_zm_eyes_red";
             var_d40cd873 = "eye_glow";
-            self playrenderoverridebundle(self.var_ea20345f, "j_head");
+            self playrenderoverridebundle(self.eye_rob, "j_head");
         }
         self.var_3231a850 = util::playfxontag(localclientnum, level._effect[var_d40cd873], self, "j_eyeball_le");
         self enableonradar();

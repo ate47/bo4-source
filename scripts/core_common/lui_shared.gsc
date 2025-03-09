@@ -15,80 +15,80 @@
 // Method(s) 10 Total 10
 class cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cluielem/lui_shared
-    // Params 0, eflags: 0x9 linked
+    // Params 0, eflags: 0x8
     // Checksum 0x387822f2, Offset: 0x2a38
     // Size: 0x12
     constructor() {
-        var_47e79fc = "";
+        _uid = "";
     }
 
     // Namespace cluielem/lui_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xa6bae91c, Offset: 0x2c90
     // Size: 0x44
     function close_luielem(player) {
         if (isplayer(player)) {
-            player closeluielem(var_47e79fc);
+            player closeluielem(_uid);
         }
     }
 
     // Namespace cluielem/lui_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x37fc4b61, Offset: 0x2c58
     // Size: 0x2a
     function function_7bfd10e6(player) {
-        return player function_3fc81484(var_47e79fc);
+        return player function_3fc81484(_uid);
     }
 
     // Namespace cluielem/lui_shared
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0xaabd2700, Offset: 0x2c00
     // Size: 0x4c
     function open_luielem(player, menu_name, persistent = 0) {
-        player openluielem(menu_name, var_47e79fc, persistent);
+        player openluielem(menu_name, _uid, persistent);
     }
 
     // Namespace cluielem/lui_shared
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0xd149a308, Offset: 0x2bb8
     // Size: 0x3c
     function function_d6203429(player, field_name, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, field_name, value);
+        player clientfield::function_9bf78ef8(_uid, field_name, value);
     }
 
     // Namespace cluielem/lui_shared
-    // Params 3, eflags: 0x1 linked
+    // Params 3, eflags: 0x0
     // Checksum 0xf0b4c8ed, Offset: 0x2b70
     // Size: 0x3c
     function set_clientfield(player, field_name, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, field_name, value);
+        player clientfield::function_9bf78ef8(_uid, field_name, value);
     }
 
     // Namespace cluielem/lui_shared
-    // Params 4, eflags: 0x1 linked
+    // Params 4, eflags: 0x0
     // Checksum 0xe2ac1eff, Offset: 0x2af0
     // Size: 0x74
     function function_dcb34c80(var_2a0de052, field_name, version, var_59f69872 = 1) {
-        clientfield::register_bgcache("clientuimodel", var_2a0de052, "luielement." + var_47e79fc + "." + field_name, version, var_59f69872);
+        clientfield::register_bgcache("clientuimodel", var_2a0de052, "luielement." + _uid + "." + field_name, version, var_59f69872);
     }
 
     // Namespace cluielem/lui_shared
-    // Params 5, eflags: 0x1 linked
+    // Params 5, eflags: 0x0
     // Checksum 0x1fae6db3, Offset: 0x2a80
     // Size: 0x64
     function add_clientfield(field_name, version, bits, type, var_59f69872 = 1) {
-        clientfield::register_luielem(var_47e79fc, field_name, version, bits, type, var_59f69872);
+        clientfield::register_luielem(_uid, field_name, version, bits, type, var_59f69872);
     }
 
     // Namespace cluielem/lui_shared
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x22dfd7ac, Offset: 0x2a58
     // Size: 0x1a
     function setup_clientfields(uid) {
-        var_47e79fc = uid;
+        _uid = uid;
     }
 
 }
@@ -102,7 +102,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace lui/lui_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7ef7082, Offset: 0x2a0
 // Size: 0x84
 function __init__() {
@@ -112,7 +112,7 @@ function __init__() {
 }
 
 // Namespace lui/lui_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x3cdad5e4, Offset: 0x330
 // Size: 0x66
 function add_luimenu(alias, registerfunc, uid) {
@@ -123,7 +123,7 @@ function add_luimenu(alias, registerfunc, uid) {
 }
 
 // Namespace lui/lui_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x34fd4baf, Offset: 0x3a0
 // Size: 0x1c
 function get_luimenu(alias) {
@@ -131,7 +131,7 @@ function get_luimenu(alias) {
 }
 
 // Namespace lui/lui_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xf6cf65be, Offset: 0x3c8
 // Size: 0xf4
 function private refresh_menu_values() {
@@ -146,7 +146,7 @@ function private refresh_menu_values() {
 }
 
 // Namespace lui/lui_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2f8b83e3, Offset: 0x4c8
 // Size: 0x9c
 function play_animation(menu, str_anim) {
@@ -159,7 +159,7 @@ function play_animation(menu, str_anim) {
 }
 
 // Namespace lui/lui_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xda550a3, Offset: 0x570
 // Size: 0x80
 function set_color(menu, color) {
@@ -171,7 +171,7 @@ function set_color(menu, color) {
 }
 
 // Namespace lui/lui_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa2591322, Offset: 0x5f8
 // Size: 0x94
 function set_value_for_player(str_menu_id, str_variable_id, value) {
@@ -222,7 +222,7 @@ function timer(n_time, str_endon, x = 1080, y = 200, height = 60) {
 }
 
 // Namespace lui/lui_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe28f31dc, Offset: 0x948
 // Size: 0x18c
 function prime_movie(str_movie, b_looping = 0, str_key = #"") {
@@ -253,7 +253,7 @@ function function_2fb8927b(str_team, str_movie, b_looping = 0, str_key = #"") {
 }
 
 // Namespace lui/lui_shared
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0xe4f0399c, Offset: 0xbf0
 // Size: 0x6c
 function private function_67373791(str_team, str_movie, b_looping, str_key) {
@@ -276,7 +276,7 @@ function function_c6d1cb5d(str_team, str_movie, str_type, show_black_screen = 0,
 }
 
 // Namespace lui/lui_shared
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x7cf3f843, Offset: 0xdb8
 // Size: 0x458
 function play_movie(str_movie, str_type, show_black_screen = 0, b_looping = 0, b_skippable = 0, str_key = #"", n_timeout, var_c16d0253 = 1) {
@@ -330,7 +330,7 @@ function play_movie(str_movie, str_type, show_black_screen = 0, b_looping = 0, b
 }
 
 // Namespace lui/lui_shared
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xbb78445e, Offset: 0x1218
 // Size: 0x36e
 function private _play_movie_for_player(str_movie, str_type, show_black_screen, b_looping, b_skippable, str_key, n_timeout) {
@@ -383,7 +383,7 @@ function private _play_movie_for_player(str_movie, str_type, show_black_screen, 
 }
 
 // Namespace lui/lui_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x68b1921, Offset: 0x1590
 // Size: 0x17c
 function private function_6c2457a9(b_disable = 1) {
@@ -470,7 +470,7 @@ function private function_1bc580af() {
 }
 
 // Namespace lui/lui_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3fb251a9, Offset: 0x1bc0
 // Size: 0x18c
 function screen_flash(n_fadein_time, n_hold_time, n_fadeout_time, n_target_alpha = 1, v_color, b_force_close_menu = 0, var_4db66001 = 0) {
@@ -490,7 +490,7 @@ function screen_flash(n_fadein_time, n_hold_time, n_fadeout_time, n_target_alpha
 }
 
 // Namespace lui/lui_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3ab350d4, Offset: 0x1d58
 // Size: 0x13c
 function screen_fade(n_time, n_target_alpha = 1, n_start_alpha = 0, v_color, b_force_close_menu = 0, str_menu_id, var_b675738a) {
@@ -504,7 +504,7 @@ function screen_fade(n_time, n_target_alpha = 1, n_start_alpha = 0, v_color, b_f
 }
 
 // Namespace lui/lui_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x838e6ace, Offset: 0x1ea0
 // Size: 0x52
 function screen_fade_out(n_time, v_color, str_menu_id, var_b675738a) {
@@ -513,7 +513,7 @@ function screen_fade_out(n_time, v_color, str_menu_id, var_b675738a) {
 }
 
 // Namespace lui/lui_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x91765e9a, Offset: 0x1f00
 // Size: 0x52
 function screen_fade_in(n_time, v_color, str_menu_id, var_b675738a) {
@@ -536,7 +536,7 @@ function screen_close_menu() {
 }
 
 // Namespace lui/lui_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x9355ef5d, Offset: 0x2010
 // Size: 0x10c
 function private _screen_close_menu() {
@@ -555,7 +555,7 @@ function private _screen_close_menu() {
 }
 
 // Namespace lui/lui_shared
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xfc52c3bf, Offset: 0x2128
 // Size: 0x5f2
 function private _screen_fade(n_time, n_target_alpha, n_start_alpha, v_color, b_force_close_menu, str_menu_id = "default", var_b675738a = 0) {
@@ -649,7 +649,7 @@ function private _screen_fade(n_time, n_target_alpha, n_start_alpha, v_color, b_
 }
 
 // Namespace lui/lui_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd49cbe3b, Offset: 0x2728
 // Size: 0x4e
 function private _one_screen_fade_per_network_frame(s_menu) {
@@ -679,7 +679,7 @@ function open_generic_script_dialog(title, description) {
 }
 
 // Namespace lui/lui_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfa7505bc, Offset: 0x28f0
 // Size: 0x44
 function function_5ce0a623(str_notify) {

@@ -9,8 +9,8 @@
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 1,
-    "var_9b009839": -1,
+    "hash_345eba59": 1,
+    "hash_9b009839": -1,
     "name": "global_list_outdoor_event_water_balloon",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

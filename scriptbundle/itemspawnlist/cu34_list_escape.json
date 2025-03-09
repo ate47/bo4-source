@@ -1,0 +1,18 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "cu34_item",
+            "maxweight": 1,
+            "available": 1
+        }
+    ],
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 8000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 1,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "cu34_list_escape",
+    "supplystashweight": 100
+}

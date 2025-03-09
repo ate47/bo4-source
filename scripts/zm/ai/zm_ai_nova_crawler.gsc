@@ -27,15 +27,15 @@
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
 // Params 0, eflags: 0x2
-// Checksum 0xad24044f, Offset: 0x278
+// Checksum 0x41433c11, Offset: 0x278
 // Size: 0x44
 function autoexec __init__system__() {
     system::register(#"zm_ai_nova_crawler", &__init__, &__main__, undefined);
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
-// Params 0, eflags: 0x1 linked
-// Checksum 0xb28bdd9a, Offset: 0x2c8
+// Params 0, eflags: 0x0
+// Checksum 0x7db28002, Offset: 0x2c8
 // Size: 0x29c
 function __init__() {
     assert(isscriptfunctionptr(&function_29c22852));
@@ -57,7 +57,7 @@ function __init__() {
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x570
 // Size: 0x4
 function __main__() {
@@ -65,8 +65,8 @@ function __main__() {
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
-// Params 0, eflags: 0x1 linked
-// Checksum 0xdade4718, Offset: 0x580
+// Params 0, eflags: 0x0
+// Checksum 0xaa436d5c, Offset: 0x580
 // Size: 0x1b6
 function function_1d34f2b6() {
     var_626a6a36 = zm_ai_utility::function_8d44707e(1);
@@ -93,8 +93,8 @@ function function_1d34f2b6() {
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
-// Params 0, eflags: 0x5 linked
-// Checksum 0x9b574adc, Offset: 0x740
+// Params 0, eflags: 0x4
+// Checksum 0x88ef688d, Offset: 0x740
 // Size: 0x1c
 function private function_1dc9be26() {
     self thread function_488c1ac2();
@@ -102,7 +102,7 @@ function private function_1dc9be26() {
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
 // Params 1, eflags: 0x4
-// Checksum 0x65e03177, Offset: 0x768
+// Checksum 0xf9ab2584, Offset: 0x768
 // Size: 0x76
 function private function_edb72673(origin) {
     goal_pos = getclosestpointonnavmesh(origin, 200, 24);
@@ -115,8 +115,8 @@ function private function_edb72673(origin) {
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
-// Params 1, eflags: 0x1 linked
-// Checksum 0x94ea9c99, Offset: 0x7e8
+// Params 1, eflags: 0x0
+// Checksum 0xcc1e5d5c, Offset: 0x7e8
 // Size: 0x26e
 function function_29c22852(entity) {
     if (!isdefined(entity.enemy)) {
@@ -154,8 +154,8 @@ function function_29c22852(entity) {
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
-// Params 1, eflags: 0x5 linked
-// Checksum 0x690bc627, Offset: 0xa60
+// Params 1, eflags: 0x4
+// Checksum 0x3c8af241, Offset: 0xa60
 // Size: 0xa0
 function private function_33b29495(entity) {
     var_711090a2 = 0;
@@ -167,8 +167,8 @@ function private function_33b29495(entity) {
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
-// Params 1, eflags: 0x5 linked
-// Checksum 0x97be0d43, Offset: 0xb08
+// Params 1, eflags: 0x4
+// Checksum 0x7a0d10cb, Offset: 0xb08
 // Size: 0x4a
 function private function_27a1a846(entity) {
     var_62d41d8f = 0;
@@ -180,8 +180,8 @@ function private function_27a1a846(entity) {
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
-// Params 1, eflags: 0x5 linked
-// Checksum 0xbd627045, Offset: 0xb60
+// Params 1, eflags: 0x4
+// Checksum 0x3085f77a, Offset: 0xb60
 // Size: 0x96
 function private function_99ac548f(entity) {
     var_75aa8513 = 0;
@@ -195,8 +195,8 @@ function private function_99ac548f(entity) {
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
-// Params 0, eflags: 0x5 linked
-// Checksum 0xcf7a81e5, Offset: 0xc00
+// Params 0, eflags: 0x4
+// Checksum 0x5a4f21b0, Offset: 0xc00
 // Size: 0x64
 function private function_488c1ac2() {
     self endon(#"death");
@@ -205,8 +205,8 @@ function private function_488c1ac2() {
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
-// Params 2, eflags: 0x5 linked
-// Checksum 0xe5b8332f, Offset: 0xc70
+// Params 2, eflags: 0x4
+// Checksum 0x97996592, Offset: 0xc70
 // Size: 0x276
 function private function_d79b3357(entity, origin) {
     playsoundatposition(#"zmb_quad_explo", origin);
@@ -233,12 +233,13 @@ function private function_d79b3357(entity, origin) {
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
-// Params 1, eflags: 0x5 linked
-// Checksum 0xab343e2e, Offset: 0xef0
+// Params 1, eflags: 0x4
+// Checksum 0x8a657e9c, Offset: 0xef0
 // Size: 0x1cc
 function private function_4632879c(entity) {
     effectarea = spawn("trigger_radius", entity.origin, 0, 125, 100);
-    for (gas_time = 0; gas_time <= 7; gas_time += 1) {
+    gas_time = 0;
+    while (gas_time <= 7) {
         players = getplayers();
         for (i = 0; i < players.size; i++) {
             if (players[i] istouching(effectarea)) {
@@ -248,6 +249,7 @@ function private function_4632879c(entity) {
             players[i] clientfield::set_to_player("nova_crawler_gas_cloud_postfx_clientfield", 0);
         }
         wait 1;
+        gas_time += 1;
     }
     players = getplayers();
     for (i = 0; i < players.size; i++) {
@@ -258,8 +260,8 @@ function private function_4632879c(entity) {
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
-// Params 1, eflags: 0x5 linked
-// Checksum 0x5972f0f2, Offset: 0x10c8
+// Params 1, eflags: 0x4
+// Checksum 0x9386a97d, Offset: 0x10c8
 // Size: 0x8c
 function private function_272fa9b5(entity) {
     if (isdefined(self.can_explode) && self.can_explode) {
@@ -272,8 +274,8 @@ function private function_272fa9b5(entity) {
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
-// Params 8, eflags: 0x1 linked
-// Checksum 0x864fd28a, Offset: 0x1160
+// Params 8, eflags: 0x0
+// Checksum 0x926974b5, Offset: 0x1160
 // Size: 0x1a4
 function function_c5b157a6(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime) {
     if (self.archetype == #"nova_crawler") {

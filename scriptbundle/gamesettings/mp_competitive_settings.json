@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "mp_competitive_settings",
     "displayname": "#hash_6c5446ed96e27a4a",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "competitiveSettings",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

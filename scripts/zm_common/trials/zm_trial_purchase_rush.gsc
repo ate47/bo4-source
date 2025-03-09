@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_purchase_rush/zm_trial_purchase_rush
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5e63c76a, Offset: 0xe8
 // Size: 0x5c
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_purchase_rush/zm_trial_purchase_rush
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7c21ee17, Offset: 0x150
 // Size: 0x108
 function private on_begin(n_timer) {
@@ -40,7 +40,7 @@ function private on_begin(n_timer) {
 }
 
 // Namespace zm_trial_purchase_rush/zm_trial_purchase_rush
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb1732b09, Offset: 0x260
 // Size: 0xe0
 function private on_end(round_reset) {
@@ -53,7 +53,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_purchase_rush/zm_trial_purchase_rush
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xfbc2ea30, Offset: 0x348
 // Size: 0x184
 function private function_2e2a518(n_timer, var_f97d1a30) {
@@ -80,7 +80,7 @@ function private function_2e2a518(n_timer, var_f97d1a30) {
 }
 
 // Namespace zm_trial_purchase_rush/zm_trial_purchase_rush
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x5b2c53bf, Offset: 0x4d8
 // Size: 0x5c
 function private on_player_spawned() {
@@ -93,7 +93,7 @@ function private on_player_spawned() {
 }
 
 // Namespace zm_trial_purchase_rush/zm_trial_purchase_rush
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x92f5c193, Offset: 0x540
 // Size: 0xcc
 function private start_timer(timeout, var_f97d1a30) {
@@ -107,7 +107,7 @@ function private start_timer(timeout, var_f97d1a30) {
 }
 
 // Namespace zm_trial_purchase_rush/zm_trial_purchase_rush
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3a613c17, Offset: 0x618
 // Size: 0xc8
 function function_a0f0109f(timeout, var_f97d1a30) {
@@ -126,7 +126,7 @@ function function_a0f0109f(timeout, var_f97d1a30) {
 }
 
 // Namespace zm_trial_purchase_rush/zm_trial_purchase_rush
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xf78ae29e, Offset: 0x6e8
 // Size: 0x76
 function private stop_timer() {
@@ -139,7 +139,7 @@ function private stop_timer() {
 }
 
 // Namespace zm_trial_purchase_rush/zm_trial_purchase_rush
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xc8fca87c, Offset: 0x768
 // Size: 0x198
 function private function_ff66b979() {

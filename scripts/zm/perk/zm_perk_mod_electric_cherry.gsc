@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb0c3de43, Offset: 0x1a0
 // Size: 0x14
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe850ed6d, Offset: 0x1c0
 // Size: 0xd4
 function function_82ad2d27() {
@@ -37,7 +37,7 @@ function function_82ad2d27() {
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x81929265, Offset: 0x2a0
 // Size: 0xec
 function electric_cherry_death_fx() {
@@ -58,7 +58,7 @@ function electric_cherry_death_fx() {
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf4461248, Offset: 0x398
 // Size: 0xdc
 function electric_cherry_shock_fx() {
@@ -77,7 +77,7 @@ function electric_cherry_shock_fx() {
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3792eb6d, Offset: 0x480
 // Size: 0x10e
 function electric_cherry_stun() {
@@ -101,7 +101,7 @@ function electric_cherry_stun() {
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x547b102a, Offset: 0x598
 // Size: 0x13a
 function electric_cherry_reload_attack() {
@@ -125,7 +125,7 @@ function electric_cherry_reload_attack() {
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1464b2fc, Offset: 0x6e0
 // Size: 0xd4
 function check_for_reload_complete(weapon, n_clip_current, n_clip_max) {
@@ -141,7 +141,7 @@ function check_for_reload_complete(weapon, n_clip_current, n_clip_max) {
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x4fd35a39, Offset: 0x7c0
 // Size: 0x1fe
 function function_f6515ba2(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -174,7 +174,7 @@ function function_f6515ba2(inflictor, attacker, damage, flags, meansofdeath, wea
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa07f3206, Offset: 0x9c8
 // Size: 0x8c
 function function_97a7641d(w_current, n_clip_current, n_clip_max) {
@@ -191,7 +191,7 @@ function function_97a7641d(w_current, n_clip_current, n_clip_max) {
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x695b6288, Offset: 0xa60
 // Size: 0x3c
 function function_a2ba8a6c(n_time) {
@@ -202,7 +202,7 @@ function function_a2ba8a6c(n_time) {
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8246d225, Offset: 0xaa8
 // Size: 0x94
 function function_4debd1a8() {
@@ -213,7 +213,7 @@ function function_4debd1a8() {
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x74fb91b4, Offset: 0xb48
 // Size: 0xec
 function function_81622feb() {
@@ -230,7 +230,7 @@ function function_81622feb() {
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1adc3ef5, Offset: 0xc40
 // Size: 0x44
 function function_4b44aa37() {
@@ -239,7 +239,7 @@ function function_4b44aa37() {
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf74d5fe7, Offset: 0xc90
 // Size: 0x190
 function function_857ced89() {
@@ -262,7 +262,7 @@ function function_857ced89() {
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xca13cd5c, Offset: 0xe28
 // Size: 0x64
 function function_b107ce52() {
@@ -276,7 +276,7 @@ function function_b107ce52() {
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x44f40a33, Offset: 0xe98
 // Size: 0xc4
 function function_cfba6046(b_pause, str_perk, str_result, n_slot) {

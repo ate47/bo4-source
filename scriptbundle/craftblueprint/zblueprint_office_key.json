@@ -1,15 +1,15 @@
 {
-    "var_4dbc4aee": "#hash_7a4375969e311723",
+    "hash_4dbc4aee": "#hash_7a4375969e311723",
     "configstringfiletype": "scriptbundle",
     "result": "weapon#pistol_topbreak_t8_zm",
     "type": "craftblueprint",
-    "var_99577dd3": "weapon#hash_6ac23aa2166a90d1",
+    "component01": "weapon#hash_6ac23aa2166a90d1",
     "name": "zblueprint_office_key",
     "displayname": "office_key",
-    "var_391591d0": "#hash_7a4375969e311723",
-    "var_46309255": "one_time_craft",
-    "var_abd9b2d0": "#hash_7a4375969e311723",
+    "hash_391591d0": "#hash_7a4375969e311723",
+    "postcraft": "one_time_craft",
+    "hash_abd9b2d0": "#hash_7a4375969e311723",
     "componentcount": 1,
-    "var_d8967a0c": 1,
-    "var_318c150c": "section_quests"
+    "takecomponents": 1,
+    "hash_318c150c": "section_quests"
 }

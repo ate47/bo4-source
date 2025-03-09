@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "ability_on_respawn",
     "displayname": "#hash_54efa9e34212ece",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "specialistAbilityReadyOnRespawn_allies_1",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

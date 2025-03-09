@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_respin_cycle/zm_bgb_respin_cycle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x66197883, Offset: 0x138
 // Size: 0xb2
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_respin_cycle/zm_bgb_respin_cycle
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x663d63ab, Offset: 0x1f8
 // Size: 0x9c
 function function_d1018763(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

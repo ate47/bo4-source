@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace status_effect_dot/status_effect_dot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbf9246b2, Offset: 0xf8
 // Size: 0x94
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace status_effect_dot/status_effect_dot
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x93fc09bd, Offset: 0x198
 // Size: 0x4a
 function on_dot_splatter(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -29,7 +29,7 @@ function on_dot_splatter(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace status_effect_dot/status_effect_dot
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfd0aabb7, Offset: 0x1f0
 // Size: 0x4a
 function on_dot_no_splatter(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

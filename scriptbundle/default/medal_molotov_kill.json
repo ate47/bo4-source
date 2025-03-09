@@ -1,9 +1,1 @@
-{
-    "backingsmall": "#t7_hud_medal_backing_badassery",
-    "widget": "BadasseryMedal",
-    "name": "medal_molotov_kill",
-    "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
-    "iconsmall": "#t7_hud_medal_flamethrower_kill",
-    "stringref": "#hash_5d65f8d1a012532a",
-    "iconlarge": "#t7_hud_medal_flamethrower_kill_lrg"
-}
+{}

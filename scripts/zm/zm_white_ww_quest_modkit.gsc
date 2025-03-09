@@ -14,7 +14,7 @@
 #namespace zm_white_ww_quest_modkit;
 
 // Namespace zm_white_ww_quest_modkit/zm_white_ww_quest_modkit
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x38a247b0, Offset: 0x380
 // Size: 0x28c
 function init() {
@@ -38,13 +38,13 @@ function init() {
     level flag::init(#"hash_6f791dc137e0b695");
     if (zm_utility::is_standard() || !zm_custom::function_901b751c(#"zmwonderweaponisenabled")) {
         function_456e91dd();
-        zm_crafting::function_ca244624(#"hash_586280338ab7ad11");
+        zm_crafting::function_ca244624(#"ztable_white_ww_modkit");
     }
     start_step_1();
 }
 
 // Namespace zm_white_ww_quest_modkit/zm_white_ww_quest_modkit
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8c8828cb, Offset: 0x618
 // Size: 0x130
 function function_456e91dd() {
@@ -71,16 +71,16 @@ function function_269676a2() {
 }
 
 // Namespace zm_white_ww_quest_modkit/zm_white_ww_quest_modkit
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf585a13a, Offset: 0x7e8
 // Size: 0x54
 function start_step_1() {
-    zm_crafting::function_d1f16587(#"hash_586280338ab7ad11", &modkit_crafted);
+    zm_crafting::function_d1f16587(#"ztable_white_ww_modkit", &modkit_crafted);
     level flag::init(#"ww_modkit_crafted");
 }
 
 // Namespace zm_white_ww_quest_modkit/zm_white_ww_quest_modkit
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf5fbc922, Offset: 0x848
 // Size: 0x94
 function modkit_crafted(e_player) {
@@ -98,12 +98,12 @@ function modkit_crafted(e_player) {
 // Size: 0x74
 function function_1665b086() {
     function_456e91dd();
-    level.var_4fe2f84d[#"hash_586280338ab7ad11"][0] zm_crafting::function_a187b293(getplayers()[0]);
-    zm_crafting::function_ca244624(#"hash_586280338ab7ad11");
+    level.var_4fe2f84d[#"ztable_white_ww_modkit"][0] zm_crafting::function_a187b293(getplayers()[0]);
+    zm_crafting::function_ca244624(#"ztable_white_ww_modkit");
 }
 
 // Namespace zm_white_ww_quest_modkit/zm_white_ww_quest_modkit
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf66e917d, Offset: 0x968
 // Size: 0x9c
 function modkit_init() {
@@ -115,7 +115,7 @@ function modkit_init() {
 }
 
 // Namespace zm_white_ww_quest_modkit/zm_white_ww_quest_modkit
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2cf4a5b9, Offset: 0xa10
 // Size: 0x238
 function modkit_hint(e_player) {
@@ -146,7 +146,7 @@ function modkit_hint(e_player) {
 }
 
 // Namespace zm_white_ww_quest_modkit/zm_white_ww_quest_modkit
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf7399e76, Offset: 0xc50
 // Size: 0xe8
 function modkit_think() {
@@ -161,7 +161,7 @@ function modkit_think() {
 }
 
 // Namespace zm_white_ww_quest_modkit/zm_white_ww_quest_modkit
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb86ba7a4, Offset: 0xd40
 // Size: 0x1ea
 function function_584d6092(e_user) {
@@ -191,7 +191,7 @@ function function_584d6092(e_user) {
 }
 
 // Namespace zm_white_ww_quest_modkit/zm_white_ww_quest_modkit
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa1ed8a1c, Offset: 0xf38
 // Size: 0x1f4
 function function_9dc2db01(var_4bef01e6, str_color) {

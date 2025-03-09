@@ -5,7 +5,7 @@
 #namespace robotinterface;
 
 // Namespace robotinterface/archetype_robot_interface
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xab989be3, Offset: 0x170
 // Size: 0x87c
 function registerrobotinterfaceattributes() {

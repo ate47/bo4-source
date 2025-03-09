@@ -7,7 +7,7 @@
 #namespace namespace_4b68b2b3;
 
 // Namespace namespace_4b68b2b3/namespace_4b68b2b3
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfaf84fc3, Offset: 0x108
 // Size: 0xd4
 function preload() {
@@ -27,7 +27,7 @@ function main() {
 }
 
 // Namespace namespace_4b68b2b3/namespace_4b68b2b3
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x26b8e379, Offset: 0x1f8
 // Size: 0x2bc
 function init_clientfields() {
@@ -41,7 +41,7 @@ function init_clientfields() {
 }
 
 // Namespace namespace_4b68b2b3/namespace_4b68b2b3
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8af0fc12, Offset: 0x4c0
 // Size: 0x82
 function pap_explosion(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -51,7 +51,7 @@ function pap_explosion(localclientnum, oldval, newval, bnewent, binitialsnap, fi
 }
 
 // Namespace namespace_4b68b2b3/namespace_4b68b2b3
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3772da23, Offset: 0x550
 // Size: 0x82
 function pap_fire(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

@@ -9,7 +9,7 @@
 #namespace zm_red_achievement;
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8709dc70, Offset: 0x1f0
 // Size: 0x6c
 function init() {
@@ -19,7 +19,7 @@ function init() {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x87720a06, Offset: 0x268
 // Size: 0xc4
 function function_3aed7ccf() {
@@ -34,7 +34,7 @@ function function_3aed7ccf() {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x6d7fa554, Offset: 0x338
 // Size: 0x7c
 function private function_ec51ce01() {
@@ -49,7 +49,7 @@ function private function_ec51ce01() {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xdc573321, Offset: 0x3c0
 // Size: 0x174
 function private function_653f23be() {
@@ -77,7 +77,7 @@ function private function_653f23be() {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xb0879784, Offset: 0x540
 // Size: 0x12a
 function private function_50e46434() {
@@ -104,7 +104,7 @@ function private function_50e46434() {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xa35b6469, Offset: 0x678
 // Size: 0x11a
 function private function_863d6212() {
@@ -128,7 +128,7 @@ function private function_863d6212() {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x79dca48d, Offset: 0x7a0
 // Size: 0x122
 function private function_103e6827() {
@@ -152,7 +152,7 @@ function private function_103e6827() {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x50005c44, Offset: 0x8d0
 // Size: 0x19a
 function private function_3c39c720() {
@@ -181,7 +181,7 @@ function private function_3c39c720() {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa8a361af, Offset: 0xa78
 // Size: 0x70
 function function_8a595f5(s_params) {
@@ -193,7 +193,7 @@ function function_8a595f5(s_params) {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x20622574, Offset: 0xaf0
 // Size: 0x2c
 function private function_a5f404e2(var_c34665fc) {
@@ -201,7 +201,7 @@ function private function_a5f404e2(var_c34665fc) {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xdb213295, Offset: 0xb28
 // Size: 0x19a
 function private function_74846734() {
@@ -230,7 +230,7 @@ function private function_74846734() {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x77998548, Offset: 0xcd0
 // Size: 0x8c
 function function_c6125761(s_params) {
@@ -242,7 +242,7 @@ function function_c6125761(s_params) {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe38c5d14, Offset: 0xd68
 // Size: 0x2c
 function private function_8828b419(var_c34665fc) {
@@ -250,7 +250,7 @@ function private function_8828b419(var_c34665fc) {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xc6d22785, Offset: 0xda0
 // Size: 0x184
 function private function_84d102f2() {
@@ -279,7 +279,7 @@ function private function_84d102f2() {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x9afeb54d, Offset: 0xf30
 // Size: 0x70
 function private function_9fdcf13f() {
@@ -289,7 +289,7 @@ function private function_9fdcf13f() {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x4ca88980, Offset: 0xfa8
 // Size: 0x1c
 function private function_b3786a8a() {
@@ -297,7 +297,7 @@ function private function_b3786a8a() {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x61adaca5, Offset: 0xfd0
 // Size: 0x18c
 function private function_f31369ae() {
@@ -324,7 +324,7 @@ function private function_f31369ae() {
 }
 
 // Namespace zm_red_achievement/zm_red_achievement
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x980347f5, Offset: 0x1168
 // Size: 0xdc
 function private function_e502ed82() {

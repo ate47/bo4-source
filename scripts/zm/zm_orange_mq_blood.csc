@@ -4,7 +4,7 @@
 #namespace zm_orange_mq_blood;
 
 // Namespace zm_orange_mq_blood/zm_orange_mq_blood
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x667d1e64, Offset: 0xb0
 // Size: 0x27c
 function preload() {
@@ -22,7 +22,7 @@ function preload() {
 }
 
 // Namespace zm_orange_mq_blood/zm_orange_mq_blood
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7eca4be9, Offset: 0x338
 // Size: 0x1c4
 function function_80d2bf71(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -51,7 +51,7 @@ function function_80d2bf71(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_orange_mq_blood/zm_orange_mq_blood
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc9b15800, Offset: 0x508
 // Size: 0x20e
 function function_aae8819(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -82,7 +82,7 @@ function function_aae8819(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_orange_mq_blood/zm_orange_mq_blood
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x85bcf29c, Offset: 0x720
 // Size: 0x2a4
 function function_3a0ab08b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

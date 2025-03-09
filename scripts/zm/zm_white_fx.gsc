@@ -1,7 +1,7 @@
 #namespace zm_white_fx;
 
 // Namespace zm_white_fx/zm_white_fx
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x62c988d1, Offset: 0x68
 // Size: 0x1b2
 function init() {

@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_head_scan/zm_bgb_head_scan
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x88689e1d, Offset: 0xf0
 // Size: 0xa4
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_head_scan/zm_bgb_head_scan
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1a0
 // Size: 0x4
 function enable() {
@@ -36,7 +36,7 @@ function enable() {
 }
 
 // Namespace zm_bgb_head_scan/zm_bgb_head_scan
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1b0
 // Size: 0x4
 function disable() {
@@ -44,18 +44,18 @@ function disable() {
 }
 
 // Namespace zm_bgb_head_scan/zm_bgb_head_scan
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0xe06e9db0, Offset: 0x1c0
 // Size: 0x18e
 function function_ce76fa9f(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
-    if (!isdefined(self.var_6f84b820)) {
+    if (!isdefined(self.zm_ai_category)) {
         return damage;
     }
     switch (shitloc) {
     case #"head":
     case #"helmet":
     case #"neck":
-        switch (self.var_6f84b820) {
+        switch (self.zm_ai_category) {
         case #"popcorn":
         case #"basic":
         case #"enhanced":

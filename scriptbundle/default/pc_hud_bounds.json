@@ -1,16 +1,16 @@
 {
     "descriptionimage": "#hash_45c5bc832f5db0e",
     "description": "#hash_31595ae9dc82ed99",
-    "var_60fcfffa": "#menu/on",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_e0274350": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#menu/on",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_e0274350": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "pc_hud_bounds",
     "displayname": "#hash_4c765f03779d1a07",
     "openmenuname": "StartMenu_Options_Graphics_SafeArea",
-    "var_66faec87": 10,
-    "var_b7401319": "#menu/off"
+    "hash_66faec87": 10,
+    "hash_b7401319": "#menu/off"
 }

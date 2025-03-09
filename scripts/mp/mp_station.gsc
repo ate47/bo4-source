@@ -23,7 +23,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_station/mp_station
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfcdee257, Offset: 0x1f0
 // Size: 0x5c
 function function_2cdcf5c3() {
@@ -36,26 +36,26 @@ function function_2cdcf5c3() {
 }
 
 // Namespace mp_station/mp_station
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc08e2942, Offset: 0x258
 // Size: 0x224
 function on_game_playing() {
     array::delete_all(getentarray("sun_block", "targetname"));
     wait getdvarfloat(#"hash_205d729c5c415715", 0.3);
-    scene::add_scene_func(#"hash_32e1d63da1ac27c1", &function_8efe95d4, "play");
-    scene::add_scene_func(#"hash_415d5821c256de56", &function_8efe95d4, "play");
+    scene::add_scene_func(#"p8_fxanim_sta_runaway_vehicles_bundle", &function_8efe95d4, "play");
+    scene::add_scene_func(#"p8_fxanim_sta_runaway_truck_wall_bundle", &function_8efe95d4, "play");
     if (util::isfirstround()) {
         level util::delay(getdvarfloat(#"hash_187afb4d5f703a4a", 0.2), undefined, &scene::play, "p8_fxanim_sta_helicopter_flyover_bundle", "Shot 2");
-        level util::delay(getdvarfloat(#"hash_395638c05b097129", 0.2), undefined, &scene::play, #"hash_32e1d63da1ac27c1");
-        level util::delay(getdvarfloat(#"hash_395638c05b097129", 0.2), undefined, &scene::play, #"hash_415d5821c256de56");
+        level util::delay(getdvarfloat(#"hash_395638c05b097129", 0.2), undefined, &scene::play, #"p8_fxanim_sta_runaway_vehicles_bundle");
+        level util::delay(getdvarfloat(#"hash_395638c05b097129", 0.2), undefined, &scene::play, #"p8_fxanim_sta_runaway_truck_wall_bundle");
         return;
     }
-    level scene::skipto_end(#"hash_32e1d63da1ac27c1");
-    level scene::skipto_end(#"hash_415d5821c256de56");
+    level scene::skipto_end(#"p8_fxanim_sta_runaway_vehicles_bundle");
+    level scene::skipto_end(#"p8_fxanim_sta_runaway_truck_wall_bundle");
 }
 
 // Namespace mp_station/mp_station
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6565ee48, Offset: 0x488
 // Size: 0x4c
 function function_8efe95d4(a_ents) {

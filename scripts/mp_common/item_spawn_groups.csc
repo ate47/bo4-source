@@ -5,7 +5,7 @@
 #namespace item_spawn_group;
 
 // Namespace item_spawn_group/item_spawn_groups
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xaca18e52, Offset: 0x80
 // Size: 0xa4
 function setup(localclientnum, seedvalue, reset = 1) {

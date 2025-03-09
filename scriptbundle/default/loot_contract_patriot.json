@@ -4,7 +4,7 @@
     "contracttitle": "#weapon/smg_standard_t8",
     "name": "loot_contract_patriot",
     "contractdescription": "#hash_716d36532454c43a",
-    "var_f15e270f": "#white",
-    "var_1c057e8c": "#hash_75e860848ce5d45c",
-    "var_e08fc162": "#hash_5d6d28f28d01fc52"
+    "hash_f15e270f": "#white",
+    "hash_1c057e8c": "#hash_75e860848ce5d45c",
+    "hash_e08fc162": "#hash_5d6d28f28d01fc52"
 }

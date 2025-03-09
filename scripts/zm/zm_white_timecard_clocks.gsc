@@ -3,7 +3,7 @@
 #namespace timecard_control;
 
 // Namespace timecard_control/zm_white_timecard_clocks
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4d7fb0b0, Offset: 0x90
 // Size: 0x23a
 function function_9b62d333(n_hour, n_minute) {
@@ -59,7 +59,7 @@ function function_9b62d333(n_hour, n_minute) {
 }
 
 // Namespace timecard_control/zm_white_timecard_clocks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x68e2ee62, Offset: 0x2d8
 // Size: 0x3e
 function function_64c53556() {
@@ -69,7 +69,7 @@ function function_64c53556() {
 }
 
 // Namespace timecard_control/zm_white_timecard_clocks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3fc02614, Offset: 0x320
 // Size: 0x1c
 function function_fba6efd4() {
@@ -77,7 +77,7 @@ function function_fba6efd4() {
 }
 
 // Namespace timecard_control/zm_white_timecard_clocks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x809a18cb, Offset: 0x348
 // Size: 0x1c
 function function_783891ed() {
@@ -85,7 +85,7 @@ function function_783891ed() {
 }
 
 // Namespace timecard_control/zm_white_timecard_clocks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe90ef784, Offset: 0x370
 // Size: 0x1e6
 function private function_9e6251db(str_speed) {

@@ -1,0 +1,13 @@
+{
+    "name": "#zitem_zhield_zword_part_2_zm",
+    "baseWeapon": "#zitem_zhield_zword_part_2",
+    "streamkey": "#hash_7836d17078ee0775",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#hash_1d986bbd884",
+    "viewmodel": "#hash_1d95159d4b0",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "image_d40": "#$blacktransparent",
+    "underwaterExplosionSurfaceFX": []
+}

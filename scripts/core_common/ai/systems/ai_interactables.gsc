@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace aiinteractables/ai_interactables
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x13a6171d, Offset: 0xe8
 // Size: 0x14c
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace aiinteractables/ai_interactables
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xe80eddcc, Offset: 0x240
 // Size: 0x118
 function private function_2f0f1b62() {
@@ -48,7 +48,7 @@ function private function_2f0f1b62() {
 }
 
 // Namespace aiinteractables/ai_interactables
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x28aad2e1, Offset: 0x360
 // Size: 0xd0
 function function_64d25a18(entity) {
@@ -74,7 +74,7 @@ function function_64d25a18(entity) {
 }
 
 // Namespace aiinteractables/ai_interactables
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x18573ae, Offset: 0x438
 // Size: 0x160
 function private function_b4bc7751(entity) {

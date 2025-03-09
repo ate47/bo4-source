@@ -105,7 +105,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace zm_escape/zm_escape
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc1f046e8, Offset: 0xdc0
 // Size: 0x134
 function rumble_gondola(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -128,7 +128,7 @@ function rumble_gondola(localclientnum, oldval, newval, bnewent, binitialsnap, f
 }
 
 // Namespace zm_escape/zm_escape
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc0b49716, Offset: 0xf00
 // Size: 0xce
 function function_1bccf046(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -146,7 +146,7 @@ function function_1bccf046(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape/zm_escape
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9e601f9a, Offset: 0xfd8
 // Size: 0x84
 function function_eef4ae09(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -155,7 +155,7 @@ function function_eef4ae09(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape/zm_escape
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x53879e99, Offset: 0x1068
 // Size: 0xe4
 function function_a104a4cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -168,7 +168,7 @@ function function_a104a4cb(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape/zm_escape
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7beceaae, Offset: 0x1158
 // Size: 0x60
 function function_516663f8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -191,7 +191,7 @@ function private function_37c86e6e(localclientnum) {
 }
 
 // Namespace zm_escape/zm_escape
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xefbdd6f9, Offset: 0x1238
 // Size: 0x78
 function function_d8b90aba(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -203,7 +203,7 @@ function function_d8b90aba(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape/zm_escape
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x477054f6, Offset: 0x12b8
 // Size: 0x68
 function private function_b2b92c61(localclientnum) {
@@ -215,7 +215,7 @@ function private function_b2b92c61(localclientnum) {
 }
 
 // Namespace zm_escape/zm_escape
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x807cec85, Offset: 0x1328
 // Size: 0x13a
 function function_e6537e9f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -235,7 +235,7 @@ function function_e6537e9f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape/zm_escape
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4d18c533, Offset: 0x1470
 // Size: 0x102
 function function_5e901c8c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -255,7 +255,7 @@ function function_5e901c8c(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_escape/zm_escape
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x70df06ef, Offset: 0x1580
 // Size: 0x7c
 function set_player_pbg_bank(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -267,7 +267,7 @@ function set_player_pbg_bank(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace zm_escape/zm_escape
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x12ece5ef, Offset: 0x1608
 // Size: 0x164
 function startzmbspawnersoundloops() {
@@ -297,7 +297,7 @@ function startzmbspawnersoundloops() {
 }
 
 // Namespace zm_escape/zm_escape
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa4afe521, Offset: 0x1778
 // Size: 0x18a
 function soundloopthink() {
@@ -334,7 +334,7 @@ function soundloopthink() {
 }
 
 // Namespace zm_escape/zm_escape
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdce52c85, Offset: 0x1910
 // Size: 0x288
 function setup_personality_character_exerts() {
@@ -357,7 +357,7 @@ function setup_personality_character_exerts() {
 }
 
 // Namespace zm_escape/zm_escape
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe00e6fe1, Offset: 0x1ba0
 // Size: 0x7a
 function gondola_light(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

@@ -22,7 +22,7 @@ function autoexec init_shared() {
 }
 
 // Namespace archetype_stoker/archetype_stoker
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x80f724d1, Offset: 0x110
 // Size: 0x4
 function private function_3f70d4b7() {
@@ -30,7 +30,7 @@ function private function_3f70d4b7() {
 }
 
 // Namespace archetype_stoker/archetype_stoker
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x5c2278bc, Offset: 0x120
 // Size: 0x4a
 function private function_d30d1f3() {
@@ -40,7 +40,7 @@ function private function_d30d1f3() {
 }
 
 // Namespace archetype_stoker/archetype_stoker
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x417a906f, Offset: 0x178
 // Size: 0x2c
 function private function_236d6de(entity) {
@@ -49,7 +49,7 @@ function private function_236d6de(entity) {
 }
 
 // Namespace archetype_stoker/archetype_stoker
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xd589aedc, Offset: 0x1b0
 // Size: 0x58
 function function_e4ef4e27(entity, attribute, oldvalue, value) {

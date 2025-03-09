@@ -140,7 +140,7 @@ function on_player_spawned() {
                 return;
             }
             self show();
-            self function_c6775cf9("boast_zombie_climbout");
+            self playboast("boast_zombie_climbout");
             self freezecontrolsallowlook(0);
         }
     }

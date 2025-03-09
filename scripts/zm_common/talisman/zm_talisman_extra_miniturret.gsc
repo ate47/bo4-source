@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_talisman_extra_miniturret/zm_talisman_extra_miniturret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6ba77be2, Offset: 0x128
 // Size: 0x2c
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace zm_talisman_extra_miniturret/zm_talisman_extra_miniturret
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xab73aba4, Offset: 0x160
 // Size: 0x12
 function activate_talisman() {

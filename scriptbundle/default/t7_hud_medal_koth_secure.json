@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_koth_secure",
     "backinglarge": "#t7_hud_medal_backing_gamemode_lrg",
     "iconsmall": "#t7_hud_medal_koth_secure",
-    "stringref": "#hash_4c2f2e09e5e76829",
+    "stringref": "#medal/koth_secure",
     "iconlarge": "#t7_hud_medal_koth_secure_lrg"
 }

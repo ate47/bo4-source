@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace contracts/cwl_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xabf36288, Offset: 0x108
 // Size: 0x54
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace contracts/cwl_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x28ba0d70, Offset: 0x168
 // Size: 0x1ac
 function finalize_init() {
@@ -53,7 +53,7 @@ function finalize_init() {
 }
 
 // Namespace contracts/cwl_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2544b69, Offset: 0x320
 // Size: 0x36e
 function function_7364a587() {
@@ -82,7 +82,7 @@ function function_7364a587() {
 }
 
 // Namespace contracts/cwl_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x54fb4c62, Offset: 0x698
 // Size: 0x3c
 function on_player_connect() {
@@ -92,7 +92,7 @@ function on_player_connect() {
 }
 
 // Namespace contracts/cwl_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x71ea6a92, Offset: 0x6e0
 // Size: 0xba
 function can_process_contracts() {
@@ -115,7 +115,7 @@ function can_process_contracts() {
 }
 
 // Namespace contracts/cwl_contracts
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcfd2e476, Offset: 0x7a8
 // Size: 0x12c
 function on_player_score(new_score, delta_score) {
@@ -139,7 +139,7 @@ function on_player_score(new_score, delta_score) {
 }
 
 // Namespace contracts/cwl_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x791c7497, Offset: 0x8e0
 // Size: 0xf4
 function on_ekia(weapon) {
@@ -159,7 +159,7 @@ function on_ekia(weapon) {
 }
 
 // Namespace contracts/cwl_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9f01311, Offset: 0x9e0
 // Size: 0xac
 function on_objective_ekia() {
@@ -175,7 +175,7 @@ function on_objective_ekia() {
 }
 
 // Namespace contracts/cwl_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2ad03354, Offset: 0xa98
 // Size: 0xfc
 function on_damagedone(damagedone) {
@@ -195,7 +195,7 @@ function on_damagedone(damagedone) {
 }
 
 // Namespace contracts/cwl_contracts
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xea5a82d3, Offset: 0xba0
 // Size: 0x5c
 function increment_cwl_contract(var_38280f2f, delta = 1) {
@@ -205,7 +205,7 @@ function increment_cwl_contract(var_38280f2f, delta = 1) {
 }
 
 // Namespace contracts/cwl_contracts
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x71136050, Offset: 0xc08
 // Size: 0x3c4
 function private function_902ef0de(var_38280f2f, delta) {
@@ -250,7 +250,7 @@ function private function_902ef0de(var_38280f2f, delta) {
 }
 
 // Namespace contracts/cwl_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6f169b37, Offset: 0xfd8
 // Size: 0x22
 function function_58b2fea4(slot) {
@@ -258,7 +258,7 @@ function function_58b2fea4(slot) {
 }
 
 // Namespace contracts/cwl_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x93cc4780, Offset: 0x1008
 // Size: 0x1f4
 function function_a4c8ce2a(data) {
@@ -289,7 +289,7 @@ function function_a4c8ce2a(data) {
 }
 
 // Namespace contracts/cwl_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4edb9382, Offset: 0x1208
 // Size: 0xe4
 function contract_win(winner) {

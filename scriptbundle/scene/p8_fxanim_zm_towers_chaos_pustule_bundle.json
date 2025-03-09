@@ -10,7 +10,7 @@
                         }
                     ],
                     "name": "init",
-                    "var_1c7fbd6b": "#hash_6c41b69caac32c4a"
+                    "shotmodel": "#hash_6c41b69caac32c4a"
                 },
                 {
                     "entry": [
@@ -20,7 +20,7 @@
                         }
                     ],
                     "name": "damage01",
-                    "var_1c7fbd6b": "#hash_7a7adcbe561969a2"
+                    "shotmodel": "#hash_7a7adcbe561969a2"
                 },
                 {
                     "entry": [
@@ -30,7 +30,7 @@
                         }
                     ],
                     "name": "damage02",
-                    "var_1c7fbd6b": "#hash_74b948c7d152f457"
+                    "shotmodel": "#hash_74b948c7d152f457"
                 },
                 {
                     "entry": [
@@ -41,7 +41,7 @@
                     ],
                     "cleanupdelete": 1,
                     "name": "damage03",
-                    "var_1c7fbd6b": "#hash_ba602a1891743d4"
+                    "shotmodel": "#hash_ba602a1891743d4"
                 }
             ],
             "model": "#hash_6c41b69caac32c4a",

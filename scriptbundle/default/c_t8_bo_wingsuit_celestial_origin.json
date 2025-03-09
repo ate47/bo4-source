@@ -1,7 +1,7 @@
 {
-    "var_94166112": "c_t8_hero_playermale_wingsuit_celestial_origin",
+    "hash_94166112": "c_t8_hero_playermale_wingsuit_celestial_origin",
     "name": "c_t8_bo_wingsuit_celestial_origin",
     "icon": "loot_ui_icon_jumppacks_wingsuit_celestial",
     "largeicon": "loot_ui_icon_jumppacks_wingsuit_celestial_large",
-    "var_5677bd3d": "c_t8_hero_playerfemale_wingsuit_celestial_origin"
+    "hash_5677bd3d": "c_t8_hero_playerfemale_wingsuit_celestial_origin"
 }

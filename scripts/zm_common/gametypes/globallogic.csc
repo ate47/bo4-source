@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x20c2ff47, Offset: 0x110
 // Size: 0x62
 function __init__() {

@@ -30,7 +30,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x17149f33, Offset: 0x318
 // Size: 0x54c
 function __init__() {
@@ -69,7 +69,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x4a923440, Offset: 0x870
 // Size: 0x280
 function private function_89ec3604() {
@@ -100,7 +100,7 @@ function private function_89ec3604() {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x76e26674, Offset: 0xaf8
 // Size: 0x1fe
 function function_51f76fdb(inflictor, attacker, damage, flags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -122,7 +122,7 @@ function function_51f76fdb(inflictor, attacker, damage, flags, smeansofdeath, we
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x598b49f2, Offset: 0xd00
 // Size: 0xba
 function function_8426ad52(weapon) {
@@ -139,7 +139,7 @@ function function_8426ad52(weapon) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa148b0bc, Offset: 0xdc8
 // Size: 0xa6
 function crossbow_weapon_change(params) {
@@ -152,7 +152,7 @@ function crossbow_weapon_change(params) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7a4ed718, Offset: 0xe78
 // Size: 0x2e8
 function function_7157628d() {
@@ -185,7 +185,7 @@ function function_7157628d() {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x10d48245, Offset: 0x1168
 // Size: 0x34
 function function_a4d47b95(str_notify) {
@@ -193,7 +193,7 @@ function function_a4d47b95(str_notify) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xe55371f4, Offset: 0x11a8
 // Size: 0x92
 function private function_39ffd9fc() {
@@ -209,7 +209,7 @@ function private function_39ffd9fc() {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3dbb6abb, Offset: 0x1248
 // Size: 0x2c
 function function_74106de1() {
@@ -218,7 +218,7 @@ function function_74106de1() {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5815240c, Offset: 0x1280
 // Size: 0x3aa
 function function_615d8c38(params) {
@@ -270,7 +270,7 @@ function function_615d8c38(params) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc4eedc1f, Offset: 0x1638
 // Size: 0x36
 function function_6119da66() {
@@ -281,7 +281,7 @@ function function_6119da66() {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xdd45f972, Offset: 0x1678
 // Size: 0x1dc
 function function_6d8527c2(var_37fa9b04, str_scene, str_shot) {
@@ -307,7 +307,7 @@ function function_6d8527c2(var_37fa9b04, str_scene, str_shot) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xeffac9b1, Offset: 0x1860
 // Size: 0xbe
 function private function_8194ec6(var_5824ff75 = 0) {
@@ -324,7 +324,7 @@ function private function_8194ec6(var_5824ff75 = 0) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb38952a, Offset: 0x1928
 // Size: 0x9ae
 function function_c805f2f9(params) {
@@ -436,7 +436,7 @@ function function_c805f2f9(params) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xba82a2c3, Offset: 0x22e0
 // Size: 0x8c
 function function_8a514a61(v_origin, weapon) {
@@ -451,7 +451,7 @@ function function_8a514a61(v_origin, weapon) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x56200f65, Offset: 0x2378
 // Size: 0xc4
 function function_b261e2a0(n_amount, player, v_origin, params) {
@@ -465,7 +465,7 @@ function function_b261e2a0(n_amount, player, v_origin, params) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x892c17c4, Offset: 0x2448
 // Size: 0x40
 function get_base_crossbow(weapon) {
@@ -476,7 +476,7 @@ function get_base_crossbow(weapon) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xefdc7681, Offset: 0x2490
 // Size: 0x66
 function is_crossbow(weapon) {
@@ -487,7 +487,7 @@ function is_crossbow(weapon) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa21abf36, Offset: 0x2500
 // Size: 0x132
 function is_crossbow_charged(weapon, player) {
@@ -508,7 +508,7 @@ function is_crossbow_charged(weapon, player) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1a03ec7c, Offset: 0x2640
 // Size: 0x3e
 function is_crossbow_upgraded(weapon) {
@@ -519,7 +519,7 @@ function is_crossbow_upgraded(weapon) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x602c34f, Offset: 0x2688
 // Size: 0x748
 function function_e1c4ab06(params) {
@@ -601,7 +601,7 @@ function function_e1c4ab06(params) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbbab2685, Offset: 0x2dd8
 // Size: 0xba
 function function_144a052b(archetype) {
@@ -620,7 +620,7 @@ function function_144a052b(archetype) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb476ec16, Offset: 0x2ea0
 // Size: 0xd4
 function function_9fa5e527(var_ad86fdba = 5) {
@@ -638,7 +638,7 @@ function function_9fa5e527(var_ad86fdba = 5) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xce738de6, Offset: 0x2f80
 // Size: 0xfc
 function function_43f61cad() {
@@ -661,7 +661,7 @@ function function_43f61cad() {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x67cb818f, Offset: 0x3088
 // Size: 0x11e
 function function_e43d1b24() {
@@ -695,7 +695,7 @@ function function_e43d1b24() {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9f57ccda, Offset: 0x31b0
 // Size: 0x3d2
 function function_b3ac0cab(params) {
@@ -781,7 +781,7 @@ function function_b3ac0cab(params) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc760d5a4, Offset: 0x3590
 // Size: 0x2f4
 function function_62d37304(weapon) {
@@ -818,7 +818,7 @@ function function_62d37304(weapon) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x47be5566, Offset: 0x3890
 // Size: 0x5e
 function function_b0477b86(player, mod, shitloc) {
@@ -830,7 +830,7 @@ function function_b0477b86(player, mod, shitloc) {
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xe10ef1e3, Offset: 0x38f8
 // Size: 0x30
 function function_9eed975c(event, mod, hit_location, zombie_team, damage_weapon) {
@@ -838,7 +838,7 @@ function function_9eed975c(event, mod, hit_location, zombie_team, damage_weapon)
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xaa86fc84, Offset: 0x3930
 // Size: 0x30
 function function_9d9c8bc2(event, mod, hit_location, zombie_team, damage_weapon) {

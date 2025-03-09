@@ -18,14 +18,14 @@
         }
     ],
     "description": "#hash_6d45a212046b2873",
-    "var_60fcfffa": "#menu/on",
-    "var_10e01ad5": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#menu/on",
+    "hash_10e01ad5": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "colorblind_mode",
     "displayname": "#hash_2692617b8b2392d9",
-    "var_66faec87": 10,
+    "hash_66faec87": 10,
     "statname": "colorblindMode",
-    "var_b7401319": "#menu/off"
+    "hash_b7401319": "#menu/off"
 }

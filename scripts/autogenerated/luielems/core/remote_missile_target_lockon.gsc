@@ -7,14 +7,14 @@
 // Method(s) 9 Total 16
 class cremote_missile_target_lockon : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cremote_missile_target_lockon/remote_missile_target_lockon
     // Params 2, eflags: 0x0
     // Checksum 0x8b9bb7ed, Offset: 0x4d8
     // Size: 0x3c
     function set_killed(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "killed", value);
+        player clientfield::function_9bf78ef8(_uid, "killed", value);
     }
 
     // Namespace cremote_missile_target_lockon/remote_missile_target_lockon
@@ -22,7 +22,7 @@ class cremote_missile_target_lockon : cluielem {
     // Checksum 0x759e8f5b, Offset: 0x490
     // Size: 0x3c
     function set_ishawktag(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "isHawkTag", value);
+        player clientfield::function_9bf78ef8(_uid, "isHawkTag", value);
     }
 
     // Namespace cremote_missile_target_lockon/remote_missile_target_lockon
@@ -30,7 +30,7 @@ class cremote_missile_target_lockon : cluielem {
     // Checksum 0xf410146f, Offset: 0x448
     // Size: 0x3c
     function set_target_locked(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "target_locked", value);
+        player clientfield::function_9bf78ef8(_uid, "target_locked", value);
     }
 
     // Namespace cremote_missile_target_lockon/remote_missile_target_lockon
@@ -38,7 +38,7 @@ class cremote_missile_target_lockon : cluielem {
     // Checksum 0x4c625cda, Offset: 0x400
     // Size: 0x3c
     function set_clientnum(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "clientnum", value);
+        player clientfield::function_9bf78ef8(_uid, "clientnum", value);
     }
 
     // Namespace cremote_missile_target_lockon/remote_missile_target_lockon

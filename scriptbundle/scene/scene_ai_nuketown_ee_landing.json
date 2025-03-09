@@ -1,0 +1,28 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4c2aa742b1aeb780",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_50fc10775e7233d8",
+            "type": "actor",
+            "name": "actor 1",
+            "hash_922b4fc5": -3
+        }
+    ],
+    "scenetype": "scene",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "scene_ai_nuketown_ee_landing",
+    "dontsync": 1,
+    "team": "any"
+}

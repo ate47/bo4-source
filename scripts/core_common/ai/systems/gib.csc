@@ -16,7 +16,7 @@ function autoexec main() {
 }
 
 // Namespace gibclientutils/gib
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe7027f20, Offset: 0x2f0
 // Size: 0x306
 function private function_3aa023f1(name) {
@@ -61,7 +61,7 @@ function private function_3aa023f1(name) {
 }
 
 // Namespace gibclientutils/gib
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x86ef1cf0, Offset: 0x600
 // Size: 0x366
 function private function_9fe14ca3(entity, gibflag) {
@@ -113,7 +113,7 @@ function private function_9fe14ca3(entity, gibflag) {
 }
 
 // Namespace gibclientutils/gib
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4e90d68, Offset: 0x970
 // Size: 0xba
 function function_c0099e86(entity, gibflag) {
@@ -132,7 +132,7 @@ function function_c0099e86(entity, gibflag) {
 }
 
 // Namespace gibclientutils/gib
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x1d780e81, Offset: 0xa38
 // Size: 0xc8
 function private function_69db754(entity, gibflag) {
@@ -148,7 +148,7 @@ function private function_69db754(entity, gibflag) {
 }
 
 // Namespace gibclientutils/gib
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xbbb1e23, Offset: 0xb08
 // Size: 0x240
 function private _annihilatecorpse() {
@@ -180,7 +180,7 @@ function private _annihilatecorpse() {
 }
 
 // Namespace gibclientutils/gib
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x77c28495, Offset: 0xd50
 // Size: 0x1d6
 function private _clonegibdata(localclientnum, entity, clone) {
@@ -201,7 +201,7 @@ function private _clonegibdata(localclientnum, entity, clone) {
 }
 
 // Namespace gibclientutils/gib
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xc1cc393a, Offset: 0xf30
 // Size: 0x76
 function private _getgibbedstate(localclientnum, entity) {
@@ -214,7 +214,7 @@ function private _getgibbedstate(localclientnum, entity) {
 }
 
 // Namespace gibclientutils/gib
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xf7d34ae0, Offset: 0xfb0
 // Size: 0x15a
 function private _getgibbedlegmodel(localclientnum, entity) {
@@ -232,7 +232,7 @@ function private _getgibbedlegmodel(localclientnum, entity) {
 }
 
 // Namespace gibclientutils/gib
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xde24fdb6, Offset: 0x1118
 // Size: 0xcc
 function private _getgibextramodel(localclientnumm, entity, gibflag) {
@@ -246,7 +246,7 @@ function private _getgibextramodel(localclientnumm, entity, gibflag) {
 }
 
 // Namespace gibclientutils/gib
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x3df54ee8, Offset: 0x11f0
 // Size: 0x15a
 function private _getgibbedtorsomodel(localclientnum, entity) {
@@ -264,7 +264,7 @@ function private _getgibbedtorsomodel(localclientnum, entity) {
 }
 
 // Namespace gibclientutils/gib
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x1db711c0, Offset: 0x1358
 // Size: 0x74
 function private _gibpiecetag(localclientnum, entity, gibflag) {
@@ -278,7 +278,7 @@ function private _gibpiecetag(localclientnum, entity, gibflag) {
 }
 
 // Namespace gibclientutils/gib
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc65f4ddd, Offset: 0x13d8
 // Size: 0x72
 function private function_ba120c50(gibflags) {
@@ -296,7 +296,7 @@ function private function_ba120c50(gibflags) {
 }
 
 // Namespace gibclientutils/gib
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x33af80c1, Offset: 0x1458
 // Size: 0x42e
 function private _gibentity(localclientnum, gibflags, shouldspawngibs) {
@@ -355,7 +355,7 @@ function private _gibentity(localclientnum, gibflags, shouldspawngibs) {
 }
 
 // Namespace gibclientutils/gib
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xc3a6c62, Offset: 0x1890
 // Size: 0x8a
 function private _setgibbed(localclientnum, entity, gibflag) {
@@ -368,7 +368,7 @@ function private _setgibbed(localclientnum, entity, gibflag) {
 }
 
 // Namespace gibclientutils/gib
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xd321f4e, Offset: 0x1928
 // Size: 0x1ac
 function private _gibcliententityinternal(localclientnum, entity, gibflag) {
@@ -395,7 +395,7 @@ function private _gibcliententityinternal(localclientnum, entity, gibflag) {
 }
 
 // Namespace gibclientutils/gib
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x1e21ce29, Offset: 0x1ae0
 // Size: 0x1dc
 function private _gibclientextrainternal(localclientnum, entity, gibflag) {
@@ -425,7 +425,7 @@ function private _gibclientextrainternal(localclientnum, entity, gibflag) {
 }
 
 // Namespace gibclientutils/gib
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xbf43390b, Offset: 0x1cc8
 // Size: 0x1b2
 function private _gibhandler(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -452,7 +452,7 @@ function private _gibhandler(localclientnum, oldvalue, newvalue, bnewent, biniti
 }
 
 // Namespace gibclientutils/gib
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x12173cb7, Offset: 0x1e88
 // Size: 0x34c
 function _gibpiece(localclientnum, entity, gibmodel, gibtag, gibfx, gibdir, gibdirscale, var_bf41adc0) {
@@ -502,7 +502,7 @@ function _gibpiece(localclientnum, entity, gibmodel, gibtag, gibfx, gibdir, gibd
 }
 
 // Namespace gibclientutils/gib
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x70a0c52c, Offset: 0x21e0
 // Size: 0xc4
 function private _handlegibcallbacks(localclientnum, entity, gibflag) {
@@ -514,7 +514,7 @@ function private _handlegibcallbacks(localclientnum, entity, gibflag) {
 }
 
 // Namespace gibclientutils/gib
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa2335ca1, Offset: 0x22b0
 // Size: 0x7c
 function private _handlegibannihilate(localclientnum) {
@@ -525,7 +525,7 @@ function private _handlegibannihilate(localclientnum) {
 }
 
 // Namespace gibclientutils/gib
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcc7f78cf, Offset: 0x2338
 // Size: 0x7c
 function private _handlegibhead(localclientnum) {
@@ -536,7 +536,7 @@ function private _handlegibhead(localclientnum) {
 }
 
 // Namespace gibclientutils/gib
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xdf41fe5c, Offset: 0x23c0
 // Size: 0x7c
 function private _handlegibrightarm(localclientnum) {
@@ -547,7 +547,7 @@ function private _handlegibrightarm(localclientnum) {
 }
 
 // Namespace gibclientutils/gib
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa7949fe5, Offset: 0x2448
 // Size: 0x7c
 function private _handlegibleftarm(localclientnum) {
@@ -558,7 +558,7 @@ function private _handlegibleftarm(localclientnum) {
 }
 
 // Namespace gibclientutils/gib
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xff595c34, Offset: 0x24d0
 // Size: 0x7c
 function private _handlegibrightleg(localclientnum) {
@@ -569,7 +569,7 @@ function private _handlegibrightleg(localclientnum) {
 }
 
 // Namespace gibclientutils/gib
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb40db692, Offset: 0x2558
 // Size: 0x7c
 function private _handlegibleftleg(localclientnum) {
@@ -580,7 +580,7 @@ function private _handlegibleftleg(localclientnum) {
 }
 
 // Namespace gibclientutils/gib
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x3c3641f4, Offset: 0x25e0
 // Size: 0x88
 function private _hasgibdef(entity) {
@@ -588,7 +588,7 @@ function private _hasgibdef(entity) {
 }
 
 // Namespace gibclientutils/gib
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xd2317f83, Offset: 0x2670
 // Size: 0x102
 function _playgibfx(localclientnum, entity, fxfilename, fxtag) {
@@ -607,7 +607,7 @@ function _playgibfx(localclientnum, entity, fxfilename, fxtag) {
 }
 
 // Namespace gibclientutils/gib
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x5a68a21b, Offset: 0x2780
 // Size: 0x44
 function _playgibsound(localclientnum, entity, soundalias) {
@@ -617,7 +617,7 @@ function _playgibsound(localclientnum, entity, soundalias) {
 }
 
 // Namespace gibclientutils/gib
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x922b322, Offset: 0x27d0
 // Size: 0xde
 function addgibcallback(localclientnum, entity, gibflag, callbackfunction) {
@@ -634,7 +634,7 @@ function addgibcallback(localclientnum, entity, gibflag, callbackfunction) {
 }
 
 // Namespace gibclientutils/gib
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2db5eade, Offset: 0x28b8
 // Size: 0x7c
 function cliententgibannihilate(localclientnum, entity) {
@@ -646,7 +646,7 @@ function cliententgibannihilate(localclientnum, entity) {
 }
 
 // Namespace gibclientutils/gib
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf6d35110, Offset: 0x2940
 // Size: 0x34
 function cliententgibhead(localclientnum, entity) {
@@ -654,7 +654,7 @@ function cliententgibhead(localclientnum, entity) {
 }
 
 // Namespace gibclientutils/gib
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb45e9ef4, Offset: 0x2980
 // Size: 0x54
 function cliententgibleftarm(localclientnum, entity) {
@@ -665,7 +665,7 @@ function cliententgibleftarm(localclientnum, entity) {
 }
 
 // Namespace gibclientutils/gib
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2a123c72, Offset: 0x29e0
 // Size: 0x54
 function cliententgibrightarm(localclientnum, entity) {
@@ -676,7 +676,7 @@ function cliententgibrightarm(localclientnum, entity) {
 }
 
 // Namespace gibclientutils/gib
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x54b5280c, Offset: 0x2a40
 // Size: 0x34
 function cliententgibleftleg(localclientnum, entity) {
@@ -684,7 +684,7 @@ function cliententgibleftleg(localclientnum, entity) {
 }
 
 // Namespace gibclientutils/gib
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf366d8dc, Offset: 0x2a80
 // Size: 0x34
 function cliententgibrightleg(localclientnum, entity) {
@@ -725,7 +725,7 @@ function createscriptmodelofentity(localclientnum, entity) {
 }
 
 // Namespace gibclientutils/gib
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x8798f384, Offset: 0x2df8
 // Size: 0x38
 function isgibbed(localclientnum, entity, gibflag) {
@@ -741,7 +741,7 @@ function isundamaged(localclientnum, entity) {
 }
 
 // Namespace gibclientutils/gib
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x38b8c3a9, Offset: 0x2e70
 // Size: 0x66
 function gibentity(localclientnum, gibflags) {

@@ -11,7 +11,7 @@
 #namespace zm_orange_audiologs;
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3fe52fcf, Offset: 0x1a0
 // Size: 0x44
 function preload() {
@@ -19,7 +19,7 @@ function preload() {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbd1e043c, Offset: 0x1f0
 // Size: 0x8c
 function init() {
@@ -34,7 +34,7 @@ function init() {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd22b8eac, Offset: 0x288
 // Size: 0x244
 function init_records() {
@@ -52,7 +52,7 @@ function init_records() {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4ef37f4c, Offset: 0x4d8
 // Size: 0x88
 function pickup_record(e_item, e_player) {
@@ -64,7 +64,7 @@ function pickup_record(e_item, e_player) {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbe327bb, Offset: 0x568
 // Size: 0x18c
 function function_6ad87fb1() {
@@ -84,7 +84,7 @@ function function_6ad87fb1() {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe7631adc, Offset: 0x700
 // Size: 0x40
 function function_4164ac1d(e_player) {
@@ -92,7 +92,7 @@ function function_4164ac1d(e_player) {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x862f04bf, Offset: 0x748
 // Size: 0x48
 function function_aef698f1() {
@@ -104,7 +104,7 @@ function function_aef698f1() {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8e371ca5, Offset: 0x798
 // Size: 0x1dc
 function function_d6fec498() {
@@ -120,7 +120,7 @@ function function_d6fec498() {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb4fe3ea6, Offset: 0x980
 // Size: 0x88
 function pickup_reel(e_item, e_player) {
@@ -132,7 +132,7 @@ function pickup_reel(e_item, e_player) {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x85841818, Offset: 0xa10
 // Size: 0x114
 function doa_streak_udem() {
@@ -150,7 +150,7 @@ function doa_streak_udem() {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x12e12f5d, Offset: 0xb30
 // Size: 0x40
 function function_90b10d7(e_player) {
@@ -158,7 +158,7 @@ function function_90b10d7(e_player) {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5447cb96, Offset: 0xb78
 // Size: 0x48
 function function_62fea2fe() {
@@ -170,7 +170,7 @@ function function_62fea2fe() {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x207e232d, Offset: 0xbc8
 // Size: 0xec
 function function_ecba80df() {
@@ -181,7 +181,7 @@ function function_ecba80df() {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9aaa5468, Offset: 0xcc0
 // Size: 0xec
 function function_4a547e41() {
@@ -197,7 +197,7 @@ function function_4a547e41() {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4e997c16, Offset: 0xdb8
 // Size: 0xe4
 function function_922ff46a() {
@@ -208,7 +208,7 @@ function function_922ff46a() {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x18528f9, Offset: 0xea8
 // Size: 0xdc
 function function_a8be9b98() {
@@ -224,7 +224,7 @@ function function_a8be9b98() {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xae4ecc96, Offset: 0xf90
 // Size: 0xac
 function init_orbs() {
@@ -234,7 +234,7 @@ function init_orbs() {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3ba99c8a, Offset: 0x1048
 // Size: 0x6c
 function setup_orb() {
@@ -245,7 +245,7 @@ function setup_orb() {
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbfba48f3, Offset: 0x10c0
 // Size: 0xcc
 function function_530a6195() {

@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace status_effect_movement_speed/status_effect_movement_speed
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf241d5d2, Offset: 0xd0
 // Size: 0x4c
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace status_effect_movement_speed/status_effect_movement_speed
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x128
 // Size: 0x4
 function function_f7e9c0bb() {

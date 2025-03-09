@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_aat_plasmatic_burst/zm_aat_plasmatic_burst
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9333b00f, Offset: 0x1f0
 // Size: 0x1ba
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace zm_aat_plasmatic_burst/zm_aat_plasmatic_burst
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xca47698b, Offset: 0x3b8
 // Size: 0xdc
 function zm_aat_plasmatic_burst_explosion(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -46,7 +46,7 @@ function zm_aat_plasmatic_burst_explosion(localclientnum, oldval, newval, bnewen
 }
 
 // Namespace zm_aat_plasmatic_burst/zm_aat_plasmatic_burst
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa7022cbf, Offset: 0x4a0
 // Size: 0xbc
 function function_7abfa551(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -63,7 +63,7 @@ function function_7abfa551(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_aat_plasmatic_burst/zm_aat_plasmatic_burst
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd5aeabe4, Offset: 0x568
 // Size: 0xbc
 function function_a98c42a3(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -80,7 +80,7 @@ function function_a98c42a3(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_aat_plasmatic_burst/zm_aat_plasmatic_burst
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xae1b8713, Offset: 0x630
 // Size: 0x9a
 function function_c36aebed(localclientnum, tag) {
@@ -92,7 +92,7 @@ function function_c36aebed(localclientnum, tag) {
 }
 
 // Namespace zm_aat_plasmatic_burst/zm_aat_plasmatic_burst
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x448eaf86, Offset: 0x6d8
 // Size: 0x84
 function function_b4d21494(localclientnum) {

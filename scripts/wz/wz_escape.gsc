@@ -61,7 +61,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace wz_escape/wz_escape
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdb42f95e, Offset: 0x440
 // Size: 0x10e
 function function_d075b84e() {
@@ -83,7 +83,7 @@ function function_d075b84e() {
 }
 
 // Namespace wz_escape/wz_escape
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x53a8b19c, Offset: 0x558
 // Size: 0x1c
 function on_player_spawned() {
@@ -93,7 +93,7 @@ function on_player_spawned() {
 }
 
 // Namespace wz_escape/wz_escape
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf15322c2, Offset: 0x580
 // Size: 0x46
 function function_28990311() {
@@ -102,7 +102,7 @@ function function_28990311() {
 }
 
 // Namespace wz_escape/wz_escape
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5d6fd8de, Offset: 0x5d0
 // Size: 0x34
 function function_78d5fb9b() {
@@ -110,7 +110,7 @@ function function_78d5fb9b() {
 }
 
 // Namespace wz_escape/wz_escape
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x349b66a4, Offset: 0x610
 // Size: 0xca
 function function_74ee36be() {
@@ -129,7 +129,7 @@ function function_74ee36be() {
 }
 
 // Namespace wz_escape/wz_escape
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9b37f5a, Offset: 0x6e8
 // Size: 0x8e
 function function_69e60a10(var_e4204b3) {

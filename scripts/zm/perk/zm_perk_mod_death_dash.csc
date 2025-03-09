@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_death_dash/zm_perk_mod_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x151a0ce1, Offset: 0x168
 // Size: 0x14
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_death_dash/zm_perk_mod_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3a9dc644, Offset: 0x188
 // Size: 0xbc
 function function_27473e44() {
@@ -32,7 +32,7 @@ function function_27473e44() {
 }
 
 // Namespace zm_perk_mod_death_dash/zm_perk_mod_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x250
 // Size: 0x4
 function init() {
@@ -40,7 +40,7 @@ function init() {
 }
 
 // Namespace zm_perk_mod_death_dash/zm_perk_mod_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe7ab1721, Offset: 0x260
 // Size: 0x4c
 function client_field_func() {
@@ -48,7 +48,7 @@ function client_field_func() {
 }
 
 // Namespace zm_perk_mod_death_dash/zm_perk_mod_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x2b8
 // Size: 0x4
 function code_callback_func() {
@@ -56,7 +56,7 @@ function code_callback_func() {
 }
 
 // Namespace zm_perk_mod_death_dash/zm_perk_mod_death_dash
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9fcf479d, Offset: 0x2c8
 // Size: 0x8c
 function play_death_dash_pulse(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

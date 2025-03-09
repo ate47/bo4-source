@@ -36,7 +36,7 @@
     "configstringfiletype": "scriptbundle",
     "model": "#hash_621a555c6c220455",
     "type": "vehicleriders",
-    "var_4301b21d": 1,
+    "hash_4301b21d": 1,
     "vmtype": "both",
     "dropspeed": 350,
     "name": "veh_boct_escort_robot",

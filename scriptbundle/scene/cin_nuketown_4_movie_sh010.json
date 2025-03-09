@@ -1,0 +1,28 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_mp_nuketown_4_movie_sh010",
+                            "entrytype": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#tag_origin_animate",
+            "type": "player",
+            "name": "player 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "cin_nuketown_4_movie_sh010",
+    "dontsync": 1,
+    "aligntarget": "tag_align_nuketown_center",
+    "team": "any"
+}

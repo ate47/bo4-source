@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 // Checksum 0xc279d859, Offset: 0xc8
 // Size: 0x64
 function __init__() {
-    character_unlock_fixup::register_character_unlock(#"battery_unlock", #"hash_7f410b145dce17bd", #"warmachine_wz_item", &function_d95e620c, #"hash_c5713430b8fb888");
+    character_unlock_fixup::register_character_unlock(#"battery_unlock", #"prt_wz_battery", #"warmachine_wz_item", &function_d95e620c, #"hash_c5713430b8fb888");
 }
 
 // Namespace character_unlock_battery_fixup/character_unlock_battery_fixup

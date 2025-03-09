@@ -34,7 +34,7 @@
 #namespace zm_white_trials;
 
 // Namespace zm_white_trials/zm_white_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb8c9f93a, Offset: 0x290
 // Size: 0x328
 function main() {
@@ -83,7 +83,7 @@ function main() {
 }
 
 // Namespace zm_white_trials/zm_white_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9564527c, Offset: 0x5c0
 // Size: 0xd6
 function function_1a2500e5() {
@@ -97,7 +97,7 @@ function function_1a2500e5() {
 }
 
 // Namespace zm_white_trials/zm_white_trials
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8f600eb6, Offset: 0x6a0
 // Size: 0x4c
 function function_c4d44a1b(a_s_respawn_points) {
@@ -107,7 +107,7 @@ function function_c4d44a1b(a_s_respawn_points) {
 }
 
 // Namespace zm_white_trials/zm_white_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x22b001d7, Offset: 0x6f8
 // Size: 0x7c
 function teleport_player() {
@@ -120,7 +120,7 @@ function teleport_player() {
 }
 
 // Namespace zm_white_trials/zm_white_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb140592, Offset: 0x780
 // Size: 0x14c
 function function_439b486f() {
@@ -139,7 +139,7 @@ function function_439b486f() {
 }
 
 // Namespace zm_white_trials/zm_white_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdbace9d7, Offset: 0x8d8
 // Size: 0xf8
 function head_hunter() {
@@ -157,7 +157,7 @@ function head_hunter() {
 }
 
 // Namespace zm_white_trials/zm_white_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdf2cdc7c, Offset: 0x9d8
 // Size: 0x13c
 function function_1bc491ab() {
@@ -174,7 +174,7 @@ function function_1bc491ab() {
 }
 
 // Namespace zm_white_trials/zm_white_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaa65e073, Offset: 0xb20
 // Size: 0x134
 function spawn_boss() {
@@ -192,7 +192,7 @@ function spawn_boss() {
 }
 
 // Namespace zm_white_trials/zm_white_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf9ba92d7, Offset: 0xc60
 // Size: 0x84
 function function_e478fb2a() {
@@ -203,7 +203,7 @@ function function_e478fb2a() {
 }
 
 // Namespace zm_white_trials/zm_white_trials
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x95edbbff, Offset: 0xcf0
 // Size: 0x17c
 function spawn_done(n_threshold) {

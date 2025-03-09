@@ -8,8 +8,8 @@
     "name": "allow_hit_markers",
     "displayname": "#hash_604f112b14b5ad14",
     "label1": "#menu/disabled",
-    "var_71b6e020": "#menu/enabled",
+    "label3": "#menu/enabled",
     "label2": "#hash_24e72113c6573be9",
-    "var_9de86f42": 3,
+    "optionscount": 3,
     "setting": "allowhitmarkers"
 }

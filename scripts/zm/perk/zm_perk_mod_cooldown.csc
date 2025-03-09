@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_cooldown/zm_perk_mod_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3c1936dc, Offset: 0xc8
 // Size: 0x14
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_cooldown/zm_perk_mod_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x709fe9a3, Offset: 0xe8
 // Size: 0x74
 function function_7299c39e() {
@@ -30,7 +30,7 @@ function function_7299c39e() {
 }
 
 // Namespace zm_perk_mod_cooldown/zm_perk_mod_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x168
 // Size: 0x4
 function function_d5042d74() {
@@ -38,7 +38,7 @@ function function_d5042d74() {
 }
 
 // Namespace zm_perk_mod_cooldown/zm_perk_mod_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x178
 // Size: 0x4
 function function_2e843bb7() {
@@ -46,7 +46,7 @@ function function_2e843bb7() {
 }
 
 // Namespace zm_perk_mod_cooldown/zm_perk_mod_cooldown
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x188
 // Size: 0x4
 function function_dbcec7de() {

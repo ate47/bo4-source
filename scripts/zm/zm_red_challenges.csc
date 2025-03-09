@@ -8,7 +8,7 @@
 #namespace zm_red_challenges;
 
 // Namespace zm_red_challenges/zm_red_challenges
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x16dfbb97, Offset: 0x178
 // Size: 0x72e
 function init() {
@@ -49,7 +49,7 @@ function init() {
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd7687222, Offset: 0x8b0
 // Size: 0x392
 function function_de1bffd6(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -97,7 +97,7 @@ function function_de1bffd6(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x45a316c5, Offset: 0xc50
 // Size: 0x342
 function function_9ed71eeb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -141,7 +141,7 @@ function function_9ed71eeb(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd9e6861d, Offset: 0xfa0
 // Size: 0x9c
 function keyline_model(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -156,7 +156,7 @@ function keyline_model(localclientnum, oldval, newval, bnewent, binitialsnap, fi
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x455f4549, Offset: 0x1048
 // Size: 0x74
 function pickup_glow(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -164,7 +164,7 @@ function pickup_glow(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8ec2531c, Offset: 0x10c8
 // Size: 0x82
 function function_75ac8f21(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -176,7 +176,7 @@ function function_75ac8f21(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x42f3055e, Offset: 0x1158
 // Size: 0xc0
 function function_3298ba0(n_index) {
@@ -193,7 +193,7 @@ function function_3298ba0(n_index) {
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5d95ac41, Offset: 0x1220
 // Size: 0xa4
 function function_250bbf4e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -209,7 +209,7 @@ function function_250bbf4e(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb85ba97, Offset: 0x12d0
 // Size: 0xf8
 function cleanup_challenges(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -223,7 +223,7 @@ function cleanup_challenges(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe7f8ae64, Offset: 0x13d0
 // Size: 0x4a
 function function_840d5e0b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -231,7 +231,7 @@ function function_840d5e0b(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa8423505, Offset: 0x1428
 // Size: 0x2c4
 function function_c63a4f32(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -264,7 +264,7 @@ function function_c63a4f32(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x12433902, Offset: 0x16f8
 // Size: 0x148
 function fake_physicslaunch(target_pos, power, var_4862f668) {
@@ -281,7 +281,7 @@ function fake_physicslaunch(target_pos, power, var_4862f668) {
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x22df4e2, Offset: 0x1848
 // Size: 0x8c
 function rob_coals(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -294,7 +294,7 @@ function rob_coals(localclientnum, oldval, newval, bnewent, binitialsnap, fieldn
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x548e279d, Offset: 0x18e0
 // Size: 0x1c8
 function function_4eff20ff() {
@@ -322,7 +322,7 @@ function function_4eff20ff() {
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4fd7db6d, Offset: 0x1ab0
 // Size: 0xd4
 function function_23333a90() {

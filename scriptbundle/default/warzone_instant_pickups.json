@@ -10,15 +10,15 @@
         }
     ],
     "description": "#hash_45be5a05d3a2e9c6",
-    "var_60fcfffa": "#menu/on",
-    "var_8722393c": 1,
-    "var_9358ee0a": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#menu/on",
+    "hash_8722393c": 1,
+    "hash_9358ee0a": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "warzone_instant_pickups",
     "displayname": "#hash_4e6c69a85b1212b",
-    "var_66faec87": 10,
+    "hash_66faec87": 10,
     "statname": "warzoneInstantPickups",
-    "var_b7401319": "#menu/off"
+    "hash_b7401319": "#menu/off"
 }

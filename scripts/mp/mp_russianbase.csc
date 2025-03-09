@@ -29,7 +29,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4086c41f, Offset: 0x368
 // Size: 0xf2
 function dom_flag_base_fx_override(flag, team) {
@@ -59,7 +59,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7fa7ceb9, Offset: 0x468
 // Size: 0xf2
 function dom_flag_cap_fx_override(flag, team) {
@@ -89,7 +89,7 @@ function dom_flag_cap_fx_override(flag, team) {
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdde1fba9, Offset: 0x568
 // Size: 0x2c
 function on_localclient_connect(localclientnum) {
@@ -98,7 +98,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6b0d9acb, Offset: 0x5a0
 // Size: 0x44
 function on_gameplay_started(localclientnum) {
@@ -108,7 +108,7 @@ function on_gameplay_started(localclientnum) {
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x595624b3, Offset: 0x5f0
 // Size: 0x20
 function on_end_game(localclientnum) {
@@ -116,7 +116,7 @@ function on_end_game(localclientnum) {
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7a770956, Offset: 0x618
 // Size: 0x94
 function center_explosion_rope_pulse(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -124,7 +124,7 @@ function center_explosion_rope_pulse(localclientnum, oldval, newval, bnewent, bi
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x32efc7fa, Offset: 0x6b8
 // Size: 0x16c
 function function_bfd25720(localclientnum) {

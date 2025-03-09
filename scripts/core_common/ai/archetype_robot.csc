@@ -25,7 +25,7 @@ function autoexec precache() {
 }
 
 // Namespace archetype_robot/archetype_robot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x88d8f69f, Offset: 0x208
 // Size: 0x174
 function __init__() {
@@ -41,7 +41,7 @@ function __init__() {
 #namespace robotclientutils;
 
 // Namespace robotclientutils/archetype_robot
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x824ce6de, Offset: 0x388
 // Size: 0x1a
 function private robotsoldierspawnsetup(localclientnum) {
@@ -49,7 +49,7 @@ function private robotsoldierspawnsetup(localclientnum) {
 }
 
 // Namespace robotclientutils/archetype_robot
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x23cb0d24, Offset: 0x3b0
 // Size: 0x302
 function private robotlighting(localclientnum, entity, flicker, mindcontrolstate) {
@@ -96,7 +96,7 @@ function private robotlighting(localclientnum, entity, flicker, mindcontrolstate
 }
 
 // Namespace robotclientutils/archetype_robot
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x3d85f3e9, Offset: 0x6c0
 // Size: 0x164
 function private robotlightshandler(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -116,7 +116,7 @@ function private robotlightshandler(localclientnum, oldvalue, newvalue, bnewent,
 }
 
 // Namespace robotclientutils/archetype_robot
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x2d38e85f, Offset: 0x830
 // Size: 0x152
 function private robotemphandler(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -137,7 +137,7 @@ function private robotemphandler(localclientnum, oldvalue, newvalue, bnewent, bi
 }
 
 // Namespace robotclientutils/archetype_robot
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x72848aa9, Offset: 0x990
 // Size: 0x114
 function private robotmindcontrolhandler(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -153,7 +153,7 @@ function private robotmindcontrolhandler(localclientnum, oldvalue, newvalue, bne
 }
 
 // Namespace robotclientutils/archetype_robot
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x87968798, Offset: 0xab0
 // Size: 0x112
 function robotmindcontrolexplosionhandler(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {

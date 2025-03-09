@@ -86,7 +86,7 @@ function private setup_safes() {
 function private function_189f45d2(targetname) {
     safes = getdynentarray(targetname);
     foreach (safe in safes) {
-        function_e2a06860(safe, 1);
+        setdynentstate(safe, 1);
     }
 }
 
@@ -144,7 +144,7 @@ function private function_3387f756(targetname, origin, radius) {
 // Checksum 0x6775eef4, Offset: 0x890
 // Size: 0xbe
 function private activate_safe() {
-    function_e2a06860(self, 0);
+    setdynentstate(self, 0);
     self.var_e7823894 = 1;
     self.canuse = &function_c92a5584;
     self.onbeginuse = &function_97eb71f0;
@@ -159,7 +159,7 @@ function private activate_safe() {
 // Checksum 0xc2acd134, Offset: 0x958
 // Size: 0x1c
 function private hide_safe() {
-    function_e2a06860(self, 2);
+    setdynentstate(self, 2);
 }
 
 // Namespace wz_cash_safe/wz_cash_safe

@@ -1,27 +1,27 @@
 {
     "expander_options": [
         {
-            "var_35e98147": "pc_previousweapon"
+            "expanderoption": "pc_previousweapon"
         },
         {
-            "var_35e98147": "pc_switchprimary"
+            "expanderoption": "pc_switchprimary"
         },
         {
-            "var_35e98147": "pc_switchsecondary"
+            "expanderoption": "pc_switchsecondary"
         }
     ],
-    "var_d7c59c8f": "pc_nextweapon",
-    "var_60fcfffa": "#menu/on",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_389e8bd": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_d7c59c8f": "pc_nextweapon",
+    "hash_60fcfffa": "#menu/on",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_389e8bd": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "pc_expander_switchweapon",
-    "var_54a43dc2": 1,
-    "var_66faec87": 10,
+    "hash_54a43dc2": 1,
+    "hash_66faec87": 10,
     "statname": "expanderSwitchweapon",
-    "var_d4fdc6a0": "+activate",
-    "var_b7401319": "#menu/off"
+    "hash_d4fdc6a0": "+activate",
+    "hash_b7401319": "#menu/off"
 }

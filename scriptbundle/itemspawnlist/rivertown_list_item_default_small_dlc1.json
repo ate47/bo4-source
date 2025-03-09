@@ -13,10 +13,10 @@
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 128,
+    "hash_7fb0967b": 128,
     "type": "itemspawnlist",
-    "var_345eba59": 2,
-    "var_9b009839": -1,
+    "hash_345eba59": 2,
+    "hash_9b009839": -1,
     "name": "rivertown_list_item_default_small_dlc1",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

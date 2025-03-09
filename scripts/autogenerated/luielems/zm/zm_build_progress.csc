@@ -7,7 +7,7 @@
 class czm_build_progress : cluielem {
 
     // Namespace czm_build_progress/zm_build_progress
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x1a68dfc5, Offset: 0x330
     // Size: 0x30
     function set_progress(localclientnum, value) {
@@ -15,7 +15,7 @@ class czm_build_progress : cluielem {
     }
 
     // Namespace czm_build_progress/zm_build_progress
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x4b95ee6b, Offset: 0x2f8
     // Size: 0x2c
     function open(localclientnum) {
@@ -23,7 +23,7 @@ class czm_build_progress : cluielem {
     }
 
     // Namespace czm_build_progress/zm_build_progress
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xdfda8ca4, Offset: 0x2a8
     // Size: 0x48
     function function_fa582112(localclientnum) {
@@ -32,7 +32,7 @@ class czm_build_progress : cluielem {
     }
 
     // Namespace czm_build_progress/zm_build_progress
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xa0f86e98, Offset: 0x278
     // Size: 0x24
     function register_clientside(uid) {
@@ -40,7 +40,7 @@ class czm_build_progress : cluielem {
     }
 
     // Namespace czm_build_progress/zm_build_progress
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x915af0a2, Offset: 0x218
     // Size: 0x54
     function setup_clientfields(uid, progresscallback) {
@@ -51,7 +51,7 @@ class czm_build_progress : cluielem {
 }
 
 // Namespace zm_build_progress/zm_build_progress
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x590cb2c7, Offset: 0xb0
 // Size: 0x4c
 function register(uid, progresscallback) {

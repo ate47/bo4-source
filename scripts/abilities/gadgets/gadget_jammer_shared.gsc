@@ -14,7 +14,7 @@
 #namespace jammer;
 
 // Namespace jammer/gadget_jammer_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5911330, Offset: 0x1f8
 // Size: 0x10c
 function init_shared() {
@@ -32,7 +32,7 @@ function init_shared() {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbab9f447, Offset: 0x310
 // Size: 0x10c
 function setupcallbacks() {
@@ -49,7 +49,7 @@ function setupcallbacks() {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x7177d857, Offset: 0x428
 // Size: 0x124
 function private registerclientfields() {
@@ -62,7 +62,7 @@ function private registerclientfields() {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x25380959, Offset: 0x558
 // Size: 0xa6
 function private function_1a50ce7b(watcher) {
@@ -77,7 +77,7 @@ function private function_1a50ce7b(watcher) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa44d64d, Offset: 0x608
 // Size: 0x2a
 function function_48c30195(entity, shouldignore) {
@@ -87,7 +87,7 @@ function function_48c30195(entity, shouldignore) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x865c8e41, Offset: 0x640
 // Size: 0x1e
 function function_86e3d17a() {
@@ -103,7 +103,7 @@ function register(entity, var_448f97f2) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdeae09b2, Offset: 0x698
 // Size: 0x36
 function function_4e7e56a8(weapon, callbackfunction) {
@@ -111,7 +111,7 @@ function function_4e7e56a8(weapon, callbackfunction) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5b881550, Offset: 0x6d8
 // Size: 0x40
 function function_1c601b99() {
@@ -121,7 +121,7 @@ function function_1c601b99() {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x250e657a, Offset: 0x720
 // Size: 0x24
 function function_fc1bbaef(entity) {
@@ -129,7 +129,7 @@ function function_fc1bbaef(entity) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6b607538, Offset: 0x750
 // Size: 0x6c
 function function_bff5c062(jammer, attackingplayer) {
@@ -140,7 +140,7 @@ function function_bff5c062(jammer, attackingplayer) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x98ae8ce7, Offset: 0x7c8
 // Size: 0x16c
 function on_player_killed(params) {
@@ -164,7 +164,7 @@ function on_player_killed(params) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xefbebad7, Offset: 0x940
 // Size: 0xe
 function onplayerspawned() {
@@ -172,7 +172,7 @@ function onplayerspawned() {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2cef1e7b, Offset: 0x958
 // Size: 0x184
 function private function_7d81a4ff(watcher, player) {
@@ -196,7 +196,7 @@ function private function_7d81a4ff(watcher, player) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x83c063a0, Offset: 0xae8
 // Size: 0x44
 function private function_2572e9cc(attackingplayer, var_fb5e3b16) {
@@ -204,7 +204,7 @@ function private function_2572e9cc(attackingplayer, var_fb5e3b16) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xb637e4e0, Offset: 0xb38
 // Size: 0x254
 function private function_87c540c0(jammer, origin, attackingplayer) {
@@ -213,7 +213,7 @@ function private function_87c540c0(jammer, origin, attackingplayer) {
     var_480b4b92 = 0;
     foreach (entity in entities) {
         if (!function_b16c8865(entity, attackingplayer)) {
-            if (!var_480b4b92 && isplayer(entity) && entity function_6c32d092(#"talent_resistance") && util::function_fbce7263(entity.team, attackingplayer.team)) {
+            if (!var_480b4b92 && isplayer(entity) && entity hastalent(#"talent_resistance") && util::function_fbce7263(entity.team, attackingplayer.team)) {
                 attackingplayer damagefeedback::update(undefined, undefined, "resistance", level.var_578f7c6d.weapon);
                 var_480b4b92 = 1;
             }
@@ -234,7 +234,7 @@ function private function_87c540c0(jammer, origin, attackingplayer) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xa6319e17, Offset: 0xd98
 // Size: 0x2b0
 function private function_e27c41b4(jammer, entity, attackingplayer) {
@@ -270,7 +270,7 @@ function private function_e27c41b4(jammer, entity, attackingplayer) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x3ebafad2, Offset: 0x1050
 // Size: 0x13c
 function private function_b8c5ab9c(jammer, player, attackingplayer) {
@@ -290,7 +290,7 @@ function private function_b8c5ab9c(jammer, player, attackingplayer) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xdc884a8f, Offset: 0x1198
 // Size: 0x184
 function private function_ca8a005e(jammer, gadget, attackingplayer) {
@@ -318,7 +318,7 @@ function private function_ca8a005e(jammer, gadget, attackingplayer) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x24be9608, Offset: 0x1328
 // Size: 0xdc
 function function_4a82368f(entity, owner) {
@@ -336,7 +336,7 @@ function function_4a82368f(entity, owner) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x903448e1, Offset: 0x1410
 // Size: 0x8a
 function function_1c430dad(entity, isjammed) {
@@ -348,7 +348,7 @@ function function_1c430dad(entity, isjammed) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe45529fc, Offset: 0x14a8
 // Size: 0xe4
 function private function_d88f3e48(entity) {
@@ -366,7 +366,7 @@ function private function_d88f3e48(entity) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x99e93aca, Offset: 0x1598
 // Size: 0x64
 function function_6a973411() {
@@ -388,7 +388,7 @@ function function_cc908239(entity) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x49544a56, Offset: 0x1640
 // Size: 0x34
 function function_51a743f8(attacker, weapon, target) {
@@ -396,7 +396,7 @@ function function_51a743f8(attacker, weapon, target) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xab9cda86, Offset: 0x1680
 // Size: 0x24
 function function_b2e496fa(watcher) {
@@ -404,7 +404,7 @@ function function_b2e496fa(watcher) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x94b0d292, Offset: 0x16b0
 // Size: 0x160
 function private function_b16c8865(entity, attackingplayer) {
@@ -420,7 +420,7 @@ function private function_b16c8865(entity, attackingplayer) {
     if (isdefined(entity.team) && !util::function_fbce7263(entity.team, attackingplayer.team)) {
         return false;
     }
-    if (isplayer(entity) && entity function_6c32d092(#"talent_resistance")) {
+    if (isplayer(entity) && entity hastalent(#"talent_resistance")) {
         return false;
     }
     if (isdefined(entity.ignoreemp) ? entity.ignoreemp : 0) {
@@ -430,7 +430,7 @@ function private function_b16c8865(entity, attackingplayer) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x3efc0dca, Offset: 0x1818
 // Size: 0x28
 function private function_7b151daa(player) {
@@ -438,7 +438,7 @@ function private function_7b151daa(player) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6b5c83b1, Offset: 0x1848
 // Size: 0x80
 function function_5f86757d() {
@@ -452,7 +452,7 @@ function function_5f86757d() {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x5e62b47a, Offset: 0x18d0
 // Size: 0xa4
 function private function_3a3a2ea9(jammer) {
@@ -466,7 +466,7 @@ function private function_3a3a2ea9(jammer) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xdabc532b, Offset: 0x1980
 // Size: 0x8c
 function private function_58f8bf08(jammer, attackingplayer, victim) {
@@ -476,7 +476,7 @@ function private function_58f8bf08(jammer, attackingplayer, victim) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x488757ef, Offset: 0x1a18
 // Size: 0x194
 function function_2e6238c0(weapon, owner) {
@@ -515,7 +515,7 @@ function function_2e6238c0(weapon, owner) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9ab68e82, Offset: 0x1bb8
 // Size: 0x194
 function function_2eb0a933(weapon, owner) {

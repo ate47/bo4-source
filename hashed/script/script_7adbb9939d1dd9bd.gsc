@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_8eb9bc0a/namespace_8eb9bc0a
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdb0786a9, Offset: 0x140
 // Size: 0xbc
 function __init__() {
@@ -34,7 +34,7 @@ function __init__() {
 }
 
 // Namespace namespace_8eb9bc0a/namespace_8eb9bc0a
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x125944b0, Offset: 0x208
 // Size: 0x3c4
 function zombie_open_sesame() {
@@ -77,7 +77,7 @@ function zombie_open_sesame() {
 }
 
 // Namespace namespace_8eb9bc0a/namespace_8eb9bc0a
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6235d259, Offset: 0x5d8
 // Size: 0x27a
 function function_97346595() {

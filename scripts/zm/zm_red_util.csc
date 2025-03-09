@@ -4,7 +4,7 @@
 #namespace zm_red_util;
 
 // Namespace zm_red_util/zm_red_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x26c1e05c, Offset: 0xd0
 // Size: 0x7e
 function init() {
@@ -13,7 +13,7 @@ function init() {
 }
 
 // Namespace zm_red_util/zm_red_util
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xd528e481, Offset: 0x158
 // Size: 0x124
 function private function_bb753058(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -34,7 +34,7 @@ function private function_bb753058(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_red_util/zm_red_util
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xabad58f4, Offset: 0x288
 // Size: 0x4a
 function private function_c8b7588d(localclientnum) {

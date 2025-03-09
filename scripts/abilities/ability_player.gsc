@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace ability_player/ability_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x21f63a83, Offset: 0x1d8
 // Size: 0xcc
 function __init__() {
@@ -38,7 +38,7 @@ function __init__() {
 }
 
 // Namespace ability_player/ability_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5f14d1bb, Offset: 0x2b0
 // Size: 0x104
 function on_player_connect() {
@@ -63,7 +63,7 @@ function on_player_connect() {
 }
 
 // Namespace ability_player/ability_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb000ee57, Offset: 0x3c0
 // Size: 0x2ce
 function on_player_spawned() {
@@ -99,7 +99,7 @@ function on_player_spawned() {
 }
 
 // Namespace ability_player/ability_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xddc2ced4, Offset: 0x698
 // Size: 0x1c
 function on_player_disconnect() {
@@ -109,7 +109,7 @@ function on_player_disconnect() {
 }
 
 // Namespace ability_player/ability_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb08c988d, Offset: 0x6c0
 // Size: 0x68
 function is_using_any_gadget() {
@@ -125,7 +125,7 @@ function is_using_any_gadget() {
 }
 
 // Namespace ability_player/ability_player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2d931daf, Offset: 0x730
 // Size: 0x1aa
 function gadgets_save_power(game_ended) {
@@ -153,7 +153,7 @@ function gadgets_save_power(game_ended) {
 }
 
 // Namespace ability_player/ability_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcd936784, Offset: 0x8e8
 // Size: 0x66
 function function_c9b950e3() {
@@ -169,7 +169,7 @@ function function_c9b950e3() {
 }
 
 // Namespace ability_player/ability_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x24d9e723, Offset: 0x958
 // Size: 0x96
 function function_116ec442() {
@@ -188,7 +188,7 @@ function function_116ec442() {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5bbb9620, Offset: 0x9f8
 // Size: 0x7c
 function function_c22f319e(weapon, var_4dd90b81 = 0) {
@@ -198,7 +198,7 @@ function function_c22f319e(weapon, var_4dd90b81 = 0) {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x13bab8fb, Offset: 0xa80
 // Size: 0x1bc
 function function_f2250880(weapon, var_4dd90b81 = 0) {
@@ -230,7 +230,7 @@ function function_f2250880(weapon, var_4dd90b81 = 0) {
 }
 
 // Namespace ability_player/ability_player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2c5b0287, Offset: 0xc48
 // Size: 0xcc
 function function_9c46835d(params) {
@@ -246,7 +246,7 @@ function function_9c46835d(params) {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf06b7935, Offset: 0xd20
 // Size: 0x94
 function function_95218c27(slot, var_4dd90b81 = 0) {
@@ -271,7 +271,7 @@ function function_c2d9d3e1() {
 }
 
 // Namespace ability_player/ability_player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x55ea0bd5, Offset: 0xe08
 // Size: 0x4c
 function function_32e782df(params) {
@@ -285,7 +285,7 @@ function function_32e782df(params) {
 }
 
 // Namespace ability_player/ability_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xebbb8b59, Offset: 0xe60
 // Size: 0xc8
 function on_end_game() {
@@ -310,7 +310,7 @@ function script_set_cclass(cclass, save = 1) {
 }
 
 // Namespace ability_player/ability_player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x145cc765, Offset: 0xf60
 // Size: 0x82
 function register_gadget(type) {
@@ -324,7 +324,7 @@ function register_gadget(type) {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2627f1e8, Offset: 0xff0
 // Size: 0x52
 function register_gadget_should_notify(type, should_notify) {
@@ -335,7 +335,7 @@ function register_gadget_should_notify(type, should_notify) {
 }
 
 // Namespace ability_player/ability_player
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x92eb8e1b, Offset: 0x1050
 // Size: 0x252
 function register_gadget_possession_callbacks(type, on_give, on_take) {
@@ -365,7 +365,7 @@ function register_gadget_possession_callbacks(type, on_give, on_take) {
 }
 
 // Namespace ability_player/ability_player
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6f4c7e0a, Offset: 0x12b0
 // Size: 0x252
 function register_gadget_activation_callbacks(type, turn_on, turn_off) {
@@ -395,7 +395,7 @@ function register_gadget_activation_callbacks(type, turn_on, turn_off) {
 }
 
 // Namespace ability_player/ability_player
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1e25ab41, Offset: 0x1510
 // Size: 0x252
 function function_92292af6(type, deployed_on, deployed_off) {
@@ -425,7 +425,7 @@ function function_92292af6(type, deployed_on, deployed_off) {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2a8612a9, Offset: 0x1770
 // Size: 0x13a
 function register_gadget_flicker_callbacks(type, on_flicker) {
@@ -444,7 +444,7 @@ function register_gadget_flicker_callbacks(type, on_flicker) {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x30386d6d, Offset: 0x18b8
 // Size: 0x13a
 function register_gadget_ready_callbacks(type, ready_func) {
@@ -482,7 +482,7 @@ function register_gadget_primed_callbacks(type, primed_func) {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1f8ac6a1, Offset: 0x1b48
 // Size: 0x52
 function register_gadget_is_inuse_callbacks(type, inuse_func) {
@@ -493,7 +493,7 @@ function register_gadget_is_inuse_callbacks(type, inuse_func) {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe306265d, Offset: 0x1ba8
 // Size: 0x52
 function register_gadget_is_flickering_callbacks(type, flickering_func) {
@@ -540,7 +540,7 @@ function gadget_is_flickering(slot) {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4cfd3653, Offset: 0x1de8
 // Size: 0x28a
 function give_gadget(slot, weapon) {
@@ -579,7 +579,7 @@ function give_gadget(slot, weapon) {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x700016aa, Offset: 0x2080
 // Size: 0x12c
 function take_gadget(slot, weapon) {
@@ -602,7 +602,7 @@ function take_gadget(slot, weapon) {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x672cbfc6, Offset: 0x21b8
 // Size: 0x60c
 function turn_gadget_on(slot, weapon) {
@@ -672,7 +672,7 @@ function turn_gadget_on(slot, weapon) {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf9f8f2d8, Offset: 0x27d0
 // Size: 0x43c
 function turn_gadget_off(slot, weapon) {
@@ -718,7 +718,7 @@ function turn_gadget_off(slot, weapon) {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1be09dc0, Offset: 0x2c18
 // Size: 0x154
 function function_50557027(slot, weapon) {
@@ -742,7 +742,7 @@ function function_50557027(slot, weapon) {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x93f829cd, Offset: 0x2d78
 // Size: 0x13c
 function function_d5260ebe(slot, weapon) {
@@ -765,7 +765,7 @@ function function_d5260ebe(slot, weapon) {
 }
 
 // Namespace ability_player/ability_player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf9391d7d, Offset: 0x2ec0
 // Size: 0x286
 function gadget_checkheroabilitykill(attacker) {
@@ -816,7 +816,7 @@ function gadget_checkheroabilitykill(attacker) {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb9bbd4f2, Offset: 0x3150
 // Size: 0x114
 function gadget_flicker(slot, weapon) {
@@ -837,7 +837,7 @@ function gadget_flicker(slot, weapon) {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x15fac4c0, Offset: 0x3270
 // Size: 0x51c
 function gadget_ready(slot, weapon) {
@@ -897,7 +897,7 @@ function gadget_ready(slot, weapon) {
 }
 
 // Namespace ability_player/ability_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa13d8f50, Offset: 0x3798
 // Size: 0x114
 function gadget_primed(slot, weapon) {
@@ -918,7 +918,7 @@ function gadget_primed(slot, weapon) {
 }
 
 // Namespace ability_player/ability_player
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xce21df03, Offset: 0x38b8
 // Size: 0xfe
 function tutorial_timer(weapon, var_8be5aa55, var_de825ec6) {
@@ -931,7 +931,7 @@ function tutorial_timer(weapon, var_8be5aa55, var_de825ec6) {
 }
 
 // Namespace ability_player/ability_player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6d7830e4, Offset: 0x39c0
 // Size: 0x98
 function tutorial_init(weapon) {
@@ -1003,7 +1003,7 @@ function tutorial_hints(slot, weapon, var_8430d11b, var_6c65cb8d, var_eadf8864, 
 }
 
 // Namespace ability_player/ability_player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4984f208, Offset: 0x3df0
 // Size: 0xcc
 function function_fc4dc54(var_6fcde3b6 = 0) {
@@ -1124,9 +1124,11 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
         root = add_cmd_with_root + "<dev string:x106>" + menu_index + "<dev string:x88>";
         abilities_devgui_add_player_command(root, pid, "<dev string:x10f>", 1, "<dev string:x11c>", "<dev string:x64>");
         abilities_devgui_add_player_command(root, pid, "<dev string:x126>", 2, "<dev string:x139>", "<dev string:x64>");
-        for (power = 0; power <= 1; power += 0.25) {
+        power = 0;
+        while (power <= 1) {
             abilities_devgui_add_player_command(root, pid, "<dev string:x146>" + power, 2, "<dev string:x15d>", "<dev string:x64>" + power);
             abilities_devgui_add_player_command(root, pid, "<dev string:x171>" + power, 2, "<dev string:x186>", "<dev string:x64>" + power);
+            power += 0.25;
         }
         menu_index++;
         return menu_index;

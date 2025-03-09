@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_bullet",
-    "var_ff3063df": "attach_t8_charm_sniper_round_view",
+    "hash_ff3063df": "attach_t8_charm_sniper_round_view",
     "image": "ui_icon_weapon_charms_bullet",
     "name": "charm_sniper_round",
     "displayname": "#hash_5357112528ffcfb9",
     "icon": "ui_icon_weapon_charms_bullet",
-    "var_ef5ad2b3": "attach_t8_charm_sniper_round_view",
+    "hash_ef5ad2b3": "attach_t8_charm_sniper_round_view",
     "previewimage": "#ui_icon_weapon_charms_bullet"
 }

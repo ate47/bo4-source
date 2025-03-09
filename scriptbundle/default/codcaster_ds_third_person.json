@@ -1,13 +1,13 @@
 {
     "description": "#hash_f384a1adc1261e8",
-    "var_60fcfffa": "#menu/on",
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#menu/on",
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "codcaster_ds_third_person",
     "displayname": "#hash_7c272b48ff2b94e8",
-    "var_66faec87": 10,
+    "hash_66faec87": 10,
     "statname": "shoutcaster_ds_thirdperson",
-    "var_82c732a7": 1,
-    "var_b7401319": "#menu/off"
+    "isenableddisabled": 1,
+    "hash_b7401319": "#menu/off"
 }

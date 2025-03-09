@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_tesla_gun_t8/zm_weap_tesla_gun_t8
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4c1ce5ca, Offset: 0x120
 // Size: 0x1cc
 function __init__() {
@@ -34,7 +34,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_tesla_gun_t8/zm_weap_tesla_gun_t8
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x6286cafe, Offset: 0x2f8
 // Size: 0xa0
 function function_5ff12a45(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -43,7 +43,7 @@ function function_5ff12a45(inflictor, attacker, damage, flags, meansofdeath, wea
 }
 
 // Namespace zm_weap_tesla_gun_t8/zm_weap_tesla_gun_t8
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x20e9ebce, Offset: 0x3a0
 // Size: 0xa0
 function function_52d66433(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -52,7 +52,7 @@ function function_52d66433(inflictor, attacker, damage, flags, meansofdeath, wea
 }
 
 // Namespace zm_weap_tesla_gun_t8/zm_weap_tesla_gun_t8
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf11a83a2, Offset: 0x448
 // Size: 0xa4
 function on_weapon_change(s_params) {
@@ -66,7 +66,7 @@ function on_weapon_change(s_params) {
 }
 
 // Namespace zm_weap_tesla_gun_t8/zm_weap_tesla_gun_t8
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x892c1fba, Offset: 0x4f8
 // Size: 0xac
 function function_de59b16a(e_source, str_mod, var_8e05c280) {
@@ -77,7 +77,7 @@ function function_de59b16a(e_source, str_mod, var_8e05c280) {
 }
 
 // Namespace zm_weap_tesla_gun_t8/zm_weap_tesla_gun_t8
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x39a4d06a, Offset: 0x5b0
 // Size: 0x3c
 function is_tesla_gun(w_weapon) {

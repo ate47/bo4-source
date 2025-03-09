@@ -12,7 +12,7 @@ function autoexec __init__() {
 }
 
 // Namespace wz_common_mode_heavy_metal_heroes_fixup/wz_common_mode_heavy_metal_heroes_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9fbed28c, Offset: 0x98
 // Size: 0x6cc
 function function_b35b2850() {

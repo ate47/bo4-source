@@ -1,34 +1,34 @@
 {
     "weakpoints": [
         {
-            "var_8223b0cf": 1.5,
+            "hash_8223b0cf": 1.5,
             "absolutehealth": 1,
             "type": "#weakpoint",
-            "var_910e2f9b": "tag_carriage_ws_ri",
-            "var_51e8b151": "tag_carriage_ws_le",
+            "hash_910e2f9b": "tag_carriage_ws_ri",
+            "hash_51e8b151": "tag_carriage_ws_le",
             "activebydefault": 1,
             "health": 55000
         },
         {
-            "var_8223b0cf": 2.5,
+            "hash_8223b0cf": 2.5,
             "absolutehealth": 1,
             "type": "#weakpoint",
-            "var_51e8b151": "tag_head_ws",
+            "hash_51e8b151": "tag_head_ws",
             "health": 45000
         },
         {
-            "var_8223b0cf": 1.5,
+            "hash_8223b0cf": 1.5,
             "absolutehealth": 1,
             "type": "#weakpoint",
-            "var_51e8b151": "tag_chest_armor_ws",
+            "hash_51e8b151": "tag_chest_armor_ws",
             "activebydefault": 1,
             "health": 45000
         },
         {
-            "var_8223b0cf": 1.5,
+            "hash_8223b0cf": 1.5,
             "absolutehealth": 1,
             "type": "#weakpoint",
-            "var_51e8b151": "tag_body_ws",
+            "hash_51e8b151": "tag_body_ws",
             "health": 60000
         }
     ],
@@ -36,5 +36,5 @@
     "model": "#c_t8_zmb_dlc0_elephant_body1_hb",
     "type": "characterweakpointsettings",
     "name": "c_t8_zmb_dlc0_towers_boss_weakpoint_def",
-    "var_96a09826": 4
+    "hash_96a09826": 4
 }

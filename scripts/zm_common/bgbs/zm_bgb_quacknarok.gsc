@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_quacknarok/zm_bgb_quacknarok
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x56d793a0, Offset: 0x130
 // Size: 0xcc
 function __init__() {
@@ -33,7 +33,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_quacknarok/zm_bgb_quacknarok
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xda01067f, Offset: 0x208
 // Size: 0x18
 function activation() {
@@ -41,7 +41,7 @@ function activation() {
 }
 
 // Namespace zm_bgb_quacknarok/zm_bgb_quacknarok
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x228
 // Size: 0x4
 function deactivation() {
@@ -49,7 +49,7 @@ function deactivation() {
 }
 
 // Namespace zm_bgb_quacknarok/zm_bgb_quacknarok
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe7ce8359, Offset: 0x238
 // Size: 0x10a
 function on_ai_spawned() {
@@ -68,7 +68,7 @@ function on_ai_spawned() {
 }
 
 // Namespace zm_bgb_quacknarok/zm_bgb_quacknarok
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5e9bc96, Offset: 0x350
 // Size: 0x14c
 function actor_death_override(s_data) {
@@ -86,7 +86,7 @@ function actor_death_override(s_data) {
 }
 
 // Namespace zm_bgb_quacknarok/zm_bgb_quacknarok
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x12c69633, Offset: 0x4a8
 // Size: 0x3c
 function function_645efd58() {

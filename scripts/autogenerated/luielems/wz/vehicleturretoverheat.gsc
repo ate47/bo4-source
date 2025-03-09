@@ -7,34 +7,34 @@
 // Method(s) 7 Total 14
 class cvehicleturretoverheat : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cvehicleturretoverheat/vehicleturretoverheat
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x197db59e, Offset: 0x400
     // Size: 0x3c
     function set_bar_percent(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "bar_percent", value);
+        player clientfield::function_9bf78ef8(_uid, "bar_percent", value);
     }
 
     // Namespace cvehicleturretoverheat/vehicleturretoverheat
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x543ec8d6, Offset: 0x338
     // Size: 0xbc
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(_uid, "_state", 0);
             return;
         }
         if (#"overheat" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(_uid, "_state", 1);
             return;
         }
         assertmsg("<dev string:x38>");
     }
 
     // Namespace cvehicleturretoverheat/vehicleturretoverheat
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xa8204b39, Offset: 0x308
     // Size: 0x24
     function close(player) {
@@ -42,7 +42,7 @@ class cvehicleturretoverheat : cluielem {
     }
 
     // Namespace cvehicleturretoverheat/vehicleturretoverheat
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x4aa2925f, Offset: 0x2b8
     // Size: 0x44
     function open(player, persistent = 0) {
@@ -50,7 +50,7 @@ class cvehicleturretoverheat : cluielem {
     }
 
     // Namespace cvehicleturretoverheat/vehicleturretoverheat
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xb83bc254, Offset: 0x238
     // Size: 0x74
     function setup_clientfields(uid) {
@@ -62,7 +62,7 @@ class cvehicleturretoverheat : cluielem {
 }
 
 // Namespace vehicleturretoverheat/vehicleturretoverheat
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x145d78fb, Offset: 0xe0
 // Size: 0x40
 function register(uid) {
@@ -80,7 +80,7 @@ function open(player, persistent = 0) {
 }
 
 // Namespace vehicleturretoverheat/vehicleturretoverheat
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe9530d87, Offset: 0x168
 // Size: 0x1c
 function close(player) {
@@ -88,7 +88,7 @@ function close(player) {
 }
 
 // Namespace vehicleturretoverheat/vehicleturretoverheat
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2ed54047, Offset: 0x190
 // Size: 0x1a
 function is_open(player) {

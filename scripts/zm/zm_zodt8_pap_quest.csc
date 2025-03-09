@@ -24,7 +24,7 @@
 #namespace zodt8_pap_quest;
 
 // Namespace zodt8_pap_quest/zm_zodt8_pap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6b9a6cd3, Offset: 0x328
 // Size: 0x1f4
 function init() {
@@ -39,7 +39,7 @@ function init() {
 }
 
 // Namespace zodt8_pap_quest/zm_zodt8_pap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf24e39dd, Offset: 0x528
 // Size: 0x432
 function pap_chunk_big_rune(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -81,7 +81,7 @@ function pap_chunk_big_rune(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace zodt8_pap_quest/zm_zodt8_pap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6fb42737, Offset: 0x968
 // Size: 0xa4c
 function pap_chunk_small_rune(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -192,7 +192,7 @@ function pap_chunk_small_rune(localclientnum, oldval, newval, bnewent, binitials
 }
 
 // Namespace zodt8_pap_quest/zm_zodt8_pap_quest
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6c58c952, Offset: 0x13c0
 // Size: 0x19a
 function function_a2c01e49(localclientnum, var_705d414e, n_state) {
@@ -227,7 +227,7 @@ function function_a2c01e49(localclientnum, var_705d414e, n_state) {
 }
 
 // Namespace zodt8_pap_quest/zm_zodt8_pap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x28c15984, Offset: 0x1568
 // Size: 0x362
 function pap_machine_rune(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -267,7 +267,7 @@ function pap_machine_rune(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zodt8_pap_quest/zm_zodt8_pap_quest
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x894d304f, Offset: 0x18d8
 // Size: 0x1e2
 function function_c976f028(localclientnum, var_705d414e, n_state) {

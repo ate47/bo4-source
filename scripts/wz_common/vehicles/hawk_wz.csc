@@ -35,7 +35,7 @@ function __init__() {
     for (ti = 0; ti < level.hawk_settings.bundle.var_48e78794; ti++) {
         uifield = remote_missile_target_lockon::register_clientside(hash("remote_missile_target_lockon" + ti));
         level.var_aac98621[ti] = uifield;
-        level.var_8dfa7ed7[uifield.var_47e79fc] = ti;
+        level.var_8dfa7ed7[uifield._uid] = ti;
     }
     clientfield::register("vehicle", "hawk_range", 13000, 1, "int", &function_6701affc, 0, 1);
     vehicle::add_vehicletype_callback("veh_hawk_player_wz", &hawk_spawned);
@@ -412,7 +412,7 @@ function private function_d53feb8c(localclientnum, targets) {
             var_1dcaad7e[var_4ef4e267] = uifield;
         }
         if (isdefined(uifield)) {
-            ti = level.var_8dfa7ed7[uifield.var_47e79fc];
+            ti = level.var_8dfa7ed7[uifield._uid];
             var_5044f28d[ti] = 1;
             self function_25b776e2(localclientnum, ti, var_4ef4e267);
             target_state = 0;

@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_powerup_nuke/zm_powerup_nuke
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbf575be, Offset: 0x1a8
 // Size: 0xfc
 function __init__() {
@@ -33,7 +33,7 @@ function __init__() {
 }
 
 // Namespace zm_powerup_nuke/zm_powerup_nuke
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x79c4ab9a, Offset: 0x2b0
 // Size: 0xb0
 function grab_nuke(player) {
@@ -45,7 +45,7 @@ function grab_nuke(player) {
 }
 
 // Namespace zm_powerup_nuke/zm_powerup_nuke
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xc8f87cb3, Offset: 0x368
 // Size: 0x5e8
 function nuke_powerup(drop_item, player_team, var_264cf1f9) {
@@ -114,7 +114,7 @@ function nuke_powerup(drop_item, player_team, var_264cf1f9) {
 }
 
 // Namespace zm_powerup_nuke/zm_powerup_nuke
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8b6dde0c, Offset: 0x958
 // Size: 0xbc
 function nuke_flash(team) {
@@ -127,7 +127,7 @@ function nuke_flash(team) {
 }
 
 // Namespace zm_powerup_nuke/zm_powerup_nuke
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x170cb8cc, Offset: 0xa20
 // Size: 0x17c
 function nuke_delay_spawning(n_spawn_delay) {
@@ -151,7 +151,7 @@ function nuke_delay_spawning(n_spawn_delay) {
 }
 
 // Namespace zm_powerup_nuke/zm_powerup_nuke
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x516b6068, Offset: 0xba8
 // Size: 0x2c
 function function_406d206b(var_c34665fc) {
@@ -168,7 +168,7 @@ function function_9a79647b(var_8de6cf73) {
 }
 
 // Namespace zm_powerup_nuke/zm_powerup_nuke
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4a7a5c75, Offset: 0xc18
 // Size: 0xa4
 function nuke_damage_func() {

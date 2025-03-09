@@ -13,7 +13,7 @@ function function_ea37c549(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace status_effect_wound/status_effect_wound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0xe8
 // Size: 0x4
 function function_9b4598a4() {
@@ -21,7 +21,7 @@ function function_9b4598a4() {
 }
 
 // Namespace status_effect_wound/status_effect_wound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0xf8
 // Size: 0x4
 function function_94ce9f97() {

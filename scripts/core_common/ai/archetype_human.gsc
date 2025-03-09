@@ -15,7 +15,7 @@
 
 // Namespace archetype_human/archetype_human
 // Params 0, eflags: 0x2
-// Checksum 0x9d9611f4, Offset: 0x398
+// Checksum 0xf709fcf, Offset: 0x398
 // Size: 0xd6
 function autoexec init() {
     spawner::add_archetype_spawn_function(#"human", &archetypehumanblackboardinit);
@@ -28,8 +28,8 @@ function autoexec init() {
 }
 
 // Namespace archetype_human/archetype_human
-// Params 0, eflags: 0x5 linked
-// Checksum 0xa416ee03, Offset: 0x478
+// Params 0, eflags: 0x4
+// Checksum 0x3fdb8d09, Offset: 0x478
 // Size: 0x124
 function private archetypehumaninit() {
     entity = self;
@@ -44,8 +44,8 @@ function private archetypehumaninit() {
 }
 
 // Namespace archetype_human/archetype_human
-// Params 0, eflags: 0x5 linked
-// Checksum 0x6b468f51, Offset: 0x5a8
+// Params 0, eflags: 0x4
+// Checksum 0x3f1a33c1, Offset: 0x5a8
 // Size: 0xcc
 function private archetypehumanblackboardinit() {
     blackboard::createblackboardforentity(self);
@@ -61,8 +61,8 @@ function private archetypehumanblackboardinit() {
 }
 
 // Namespace archetype_human/archetype_human
-// Params 1, eflags: 0x5 linked
-// Checksum 0x86e8587, Offset: 0x680
+// Params 1, eflags: 0x4
+// Checksum 0xd52f46, Offset: 0x680
 // Size: 0xd4
 function private archetypehumanonbehavecallback(entity) {
     if (btapi_isatcovercondition(entity)) {
@@ -75,8 +75,8 @@ function private archetypehumanonbehavecallback(entity) {
 }
 
 // Namespace archetype_human/archetype_human
-// Params 1, eflags: 0x5 linked
-// Checksum 0x87bc7684, Offset: 0x760
+// Params 1, eflags: 0x4
+// Checksum 0x3c52bd29, Offset: 0x760
 // Size: 0x7c
 function private archetypehumanonanimscriptedcallback(entity) {
     entity.__blackboard = undefined;
@@ -86,8 +86,8 @@ function private archetypehumanonanimscriptedcallback(entity) {
 }
 
 // Namespace archetype_human/archetype_human
-// Params 8, eflags: 0x5 linked
-// Checksum 0x7e4a14f5, Offset: 0x7e8
+// Params 8, eflags: 0x4
+// Checksum 0x39afddd1, Offset: 0x7e8
 // Size: 0x300
 function private humangibkilledoverride(inflictor, attacker, damage, meansofdeath, weapon, dir, hitloc, offsettime) {
     entity = self;
@@ -121,7 +121,7 @@ function private humangibkilledoverride(inflictor, attacker, damage, meansofdeat
 
 // Namespace archetype_human/archetype_human
 // Params 4, eflags: 0x4
-// Checksum 0xeab17, Offset: 0xaf0
+// Checksum 0x883e59d6, Offset: 0xaf0
 // Size: 0x9c
 function private trygibbinghead(entity, damage, hitloc, isexplosive) {
     if (isexplosive) {
@@ -134,8 +134,8 @@ function private trygibbinghead(entity, damage, hitloc, isexplosive) {
 }
 
 // Namespace archetype_human/archetype_human
-// Params 4, eflags: 0x5 linked
-// Checksum 0xe347cb99, Offset: 0xb98
+// Params 4, eflags: 0x4
+// Checksum 0x2b3164b5, Offset: 0xb98
 // Size: 0x1cc
 function private trygibbinglimb(entity, damage, hitloc, isexplosive) {
     if (isexplosive) {
@@ -165,8 +165,8 @@ function private trygibbinglimb(entity, damage, hitloc, isexplosive) {
 }
 
 // Namespace archetype_human/archetype_human
-// Params 5, eflags: 0x5 linked
-// Checksum 0x3674ef60, Offset: 0xd70
+// Params 5, eflags: 0x4
+// Checksum 0x6abf2038, Offset: 0xd70
 // Size: 0x1fc
 function private trygibbinglegs(entity, damage, hitloc, isexplosive, attacker) {
     if (isexplosive) {
@@ -198,8 +198,8 @@ function private trygibbinglegs(entity, damage, hitloc, isexplosive, attacker) {
 }
 
 // Namespace archetype_human/archetype_human
-// Params 12, eflags: 0x1 linked
-// Checksum 0xd5950de, Offset: 0xf78
+// Params 12, eflags: 0x0
+// Checksum 0x886cc922, Offset: 0xf78
 // Size: 0x252
 function damageoverride(einflictor, eattacker, idamage, idflags, smeansofdeath, sweapon, vpoint, vdir, shitloc, psoffsettime, boneindex, modelindex) {
     entity = self;
@@ -224,8 +224,8 @@ function damageoverride(einflictor, eattacker, idamage, idflags, smeansofdeath, 
 #namespace humansoldierserverutils;
 
 // Namespace humansoldierserverutils/archetype_human
-// Params 4, eflags: 0x1 linked
-// Checksum 0x90e44136, Offset: 0x11d8
+// Params 4, eflags: 0x0
+// Checksum 0xe38099fc, Offset: 0x11d8
 // Size: 0xa4
 function cqbattributecallback(entity, attribute, oldvalue, value) {
     if (value) {
@@ -240,16 +240,16 @@ function cqbattributecallback(entity, attribute, oldvalue, value) {
 }
 
 // Namespace humansoldierserverutils/archetype_human
-// Params 4, eflags: 0x1 linked
-// Checksum 0x31fc87e1, Offset: 0x1288
+// Params 4, eflags: 0x0
+// Checksum 0x22bcc9de, Offset: 0x1288
 // Size: 0x32
 function forcetacticalwalkcallback(entity, attribute, oldvalue, value) {
     entity.ignorerunandgundist = value;
 }
 
 // Namespace humansoldierserverutils/archetype_human
-// Params 4, eflags: 0x1 linked
-// Checksum 0x9caf953c, Offset: 0x12c8
+// Params 4, eflags: 0x0
+// Checksum 0x78d737f6, Offset: 0x12c8
 // Size: 0x82
 function movemodeattributecallback(entity, attribute, oldvalue, value) {
     entity.ignorepathenemyfightdist = 0;
@@ -263,8 +263,8 @@ function movemodeattributecallback(entity, attribute, oldvalue, value) {
 }
 
 // Namespace humansoldierserverutils/archetype_human
-// Params 4, eflags: 0x1 linked
-// Checksum 0xaa698912, Offset: 0x1358
+// Params 4, eflags: 0x0
+// Checksum 0xcab1e305, Offset: 0x1358
 // Size: 0x64
 function useanimationoverridecallback(entity, attribute, oldvalue, value) {
     if (value) {
@@ -275,8 +275,8 @@ function useanimationoverridecallback(entity, attribute, oldvalue, value) {
 }
 
 // Namespace humansoldierserverutils/archetype_human
-// Params 4, eflags: 0x1 linked
-// Checksum 0x27115908, Offset: 0x13c8
+// Params 4, eflags: 0x0
+// Checksum 0xf35086b4, Offset: 0x13c8
 // Size: 0x4a
 function disablesprintcallback(entity, attribute, oldvalue, value) {
     if (value) {
@@ -287,8 +287,8 @@ function disablesprintcallback(entity, attribute, oldvalue, value) {
 }
 
 // Namespace humansoldierserverutils/archetype_human
-// Params 4, eflags: 0x1 linked
-// Checksum 0xd934b19c, Offset: 0x1420
+// Params 4, eflags: 0x0
+// Checksum 0x91f5b377, Offset: 0x1420
 // Size: 0x4a
 function forcesprintcallback(entity, attribute, oldvalue, value) {
     if (value) {
@@ -299,8 +299,8 @@ function forcesprintcallback(entity, attribute, oldvalue, value) {
 }
 
 // Namespace humansoldierserverutils/archetype_human
-// Params 4, eflags: 0x1 linked
-// Checksum 0x6b648b4b, Offset: 0x1478
+// Params 4, eflags: 0x0
+// Checksum 0x37a24688, Offset: 0x1478
 // Size: 0x202
 function vignettemodecallback(entity, attribute, oldvalue, value) {
     switch (value) {

@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace persistence/persistence_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3ccb8aa6, Offset: 0xe8
 // Size: 0x24
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace persistence/persistence_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9c4bd248, Offset: 0x118
 // Size: 0x4c
 function init() {
@@ -34,7 +34,7 @@ function init() {
 }
 
 // Namespace persistence/persistence_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3ac2acf8, Offset: 0x170
 // Size: 0x1f2
 function initialize_stat_tracking() {
@@ -75,7 +75,7 @@ function initialize_stat_tracking() {
 }
 
 // Namespace persistence/persistence_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x204b76d1, Offset: 0x370
 // Size: 0x74
 function adjust_recent_stats() {
@@ -88,7 +88,7 @@ function adjust_recent_stats() {
 }
 
 // Namespace persistence/persistence_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xced6923f, Offset: 0x3f0
 // Size: 0xe4
 function function_acac764e() {
@@ -105,7 +105,7 @@ function function_acac764e() {
 }
 
 // Namespace persistence/persistence_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xbc876921, Offset: 0x4e0
 // Size: 0xbc
 function get_recent_stat(isglobal, index, statname) {
@@ -120,7 +120,7 @@ function get_recent_stat(isglobal, index, statname) {
 }
 
 // Namespace persistence/persistence_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x5f24855b, Offset: 0x5a8
 // Size: 0x164
 function set_recent_stat(isglobal, index, statname, value) {
@@ -148,7 +148,7 @@ function set_recent_stat(isglobal, index, statname, value) {
 }
 
 // Namespace persistence/persistence_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x567da181, Offset: 0x718
 // Size: 0x10c
 function add_recent_stat(isglobal, index, statname, value) {
@@ -194,7 +194,7 @@ function add_match_history_stat(statname, value) {
 }
 
 // Namespace persistence/persistence_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe60f948, Offset: 0x950
 // Size: 0x324
 function initialize_match_stats() {
@@ -246,7 +246,7 @@ function event_handler[player_challengecomplete] codecallback_challengecomplete(
 }
 
 // Namespace persistence/persistence_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc9b32547, Offset: 0xd30
 // Size: 0x76
 function function_6020a116() {
@@ -263,7 +263,7 @@ function function_6020a116() {
 }
 
 // Namespace persistence/persistence_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa9815a48, Offset: 0xdb0
 // Size: 0x61c
 function challenge_complete(eventstruct) {
@@ -355,7 +355,7 @@ function event_handler[player_gunchallengecomplete] codecallback_gunchallengecom
 }
 
 // Namespace persistence/persistence_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6ea6be66, Offset: 0x1548
 // Size: 0x54
 function upload_stats_soon() {

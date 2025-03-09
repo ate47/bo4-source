@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace raps/raps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa202fc6d, Offset: 0x160
 // Size: 0xa4
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace raps/raps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x54126865, Offset: 0x210
 // Size: 0x84
 function raps_initialize() {
@@ -41,7 +41,7 @@ function raps_initialize() {
 }
 
 // Namespace raps/raps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb9d414b1, Offset: 0x2a0
 // Size: 0x10c
 function defaultrole() {
@@ -55,7 +55,7 @@ function defaultrole() {
 }
 
 // Namespace raps/raps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x896c602c, Offset: 0x3b8
 // Size: 0xc0
 function slow_raps_trigger() {
@@ -71,7 +71,7 @@ function slow_raps_trigger() {
 }
 
 // Namespace raps/raps
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x17bfa55b, Offset: 0x480
 // Size: 0x17e
 function slow_raps(trigger) {
@@ -95,7 +95,7 @@ function slow_raps(trigger) {
 }
 
 // Namespace raps/raps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9bf47030, Offset: 0x608
 // Size: 0x516
 function initsounds() {
@@ -146,7 +146,7 @@ function detonate_damage_monitored(attacker, weapon) {
 }
 
 // Namespace raps/raps
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x92dd17bd, Offset: 0xb68
 // Size: 0x24
 function detonate(attacker) {

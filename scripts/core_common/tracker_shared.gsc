@@ -9,7 +9,7 @@
 #namespace tracker;
 
 // Namespace tracker/tracker_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x78afeb72, Offset: 0xd8
 // Size: 0x8c
 function init_shared() {
@@ -22,7 +22,7 @@ function init_shared() {
 }
 
 // Namespace tracker/tracker_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb0ad8cce, Offset: 0x170
 // Size: 0x34
 function register_clientfields() {
@@ -30,7 +30,7 @@ function register_clientfields() {
 }
 
 // Namespace tracker/tracker_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf667125b, Offset: 0x1b0
 // Size: 0x24
 function onplayerspawned() {
@@ -38,7 +38,7 @@ function onplayerspawned() {
 }
 
 // Namespace tracker/tracker_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdccde482, Offset: 0x1e0
 // Size: 0x186
 function function_c8241070(player, weapon) {
@@ -79,7 +79,7 @@ function function_43084f6c(player) {
 }
 
 // Namespace tracker/tracker_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb40b09ef, Offset: 0x508
 // Size: 0x62
 function function_2c77961d(player) {
@@ -93,7 +93,7 @@ function function_2c77961d(player) {
 }
 
 // Namespace tracker/tracker_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaa6fe56e, Offset: 0x578
 // Size: 0xb0
 function function_796e0334(player) {
@@ -113,7 +113,7 @@ function function_796e0334(player) {
 }
 
 // Namespace tracker/tracker_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3047d9b5, Offset: 0x630
 // Size: 0x1c0
 function function_a7e7bda0() {

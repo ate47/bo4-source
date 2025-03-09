@@ -29,7 +29,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x204b8196, Offset: 0x238
 // Size: 0xae
 function __init__() {
@@ -45,7 +45,7 @@ function __init__() {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x50adc020, Offset: 0x2f0
 // Size: 0x14
 function __main__() {
@@ -233,7 +233,7 @@ function limit(equipment_name, limited) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9d425a1b, Offset: 0x1598
 // Size: 0x15e
 function init_upgrade() {
@@ -251,7 +251,7 @@ function init_upgrade() {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3f2b4d36, Offset: 0x1700
 // Size: 0x5a
 function get_hint(equipment) {
@@ -260,7 +260,7 @@ function get_hint(equipment) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x45c40936, Offset: 0x1768
 // Size: 0x5a
 function get_howto_hint(equipment) {
@@ -278,7 +278,7 @@ function get_icon(equipment) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x56329eba, Offset: 0x1838
 // Size: 0x5a
 function get_notify_strings(equipment) {
@@ -287,7 +287,7 @@ function get_notify_strings(equipment) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x62127ed3, Offset: 0x18a0
 // Size: 0xce
 function add_to_trigger_list(equipment) {
@@ -297,7 +297,7 @@ function add_to_trigger_list(equipment) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x86b68686, Offset: 0x1978
 // Size: 0x1c4
 function equipment_spawn_think() {
@@ -327,7 +327,7 @@ function equipment_spawn_think() {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x23555719, Offset: 0x1b48
 // Size: 0xfe
 function set_equipment_invisibility_to_player(equipment, invisible) {
@@ -346,7 +346,7 @@ function set_equipment_invisibility_to_player(equipment, invisible) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9d6710de, Offset: 0x1c50
 // Size: 0x2d4
 function take(equipment = self get_player_equipment()) {
@@ -392,7 +392,7 @@ function take(equipment = self get_player_equipment()) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x62e43110, Offset: 0x1f30
 // Size: 0x1ee
 function give(equipment) {
@@ -440,7 +440,7 @@ function buy(equipment) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x881bd8bf, Offset: 0x2268
 // Size: 0x21e
 function slot_watcher(equipment) {
@@ -478,7 +478,7 @@ function slot_watcher(equipment) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5f00398e, Offset: 0x2490
 // Size: 0x68
 function is_limited(equipment) {
@@ -493,7 +493,7 @@ function is_limited(equipment) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf70f3f9a, Offset: 0x2500
 // Size: 0xbc
 function limited_in_use(equipment) {
@@ -511,7 +511,7 @@ function limited_in_use(equipment) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x88095b08, Offset: 0x25c8
 // Size: 0x9c
 function setup_limited(equipment) {
@@ -524,7 +524,7 @@ function setup_limited(equipment) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xae1a98ee, Offset: 0x2670
 // Size: 0xc6
 function release_limited_on_taken(equipment) {
@@ -538,7 +538,7 @@ function release_limited_on_taken(equipment) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc4df0da1, Offset: 0x2740
 // Size: 0xd6
 function release_limited_on_disconnect(equipment) {
@@ -554,7 +554,7 @@ function release_limited_on_disconnect(equipment) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x437eaac2, Offset: 0x2820
 // Size: 0x44
 function is_active(equipment) {
@@ -609,7 +609,7 @@ function init_hint_hudelem(x, y, alignx, aligny, fontscale, alpha) {
 #/
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe6213c83, Offset: 0x2a98
 // Size: 0x9c
 function show_hint(equipment) {
@@ -624,7 +624,7 @@ function show_hint(equipment) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xfd7de478, Offset: 0x2b40
 // Size: 0x25c
 function show_hint_text(text, show_for_time = 3.2, font_scale = 1.25, ypos = 220) {
@@ -651,7 +651,7 @@ function show_hint_text(text, show_for_time = 3.2, font_scale = 1.25, ypos = 220
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9d034914, Offset: 0x2da8
 // Size: 0xb8
 function function_57fbff5c(str_notify) {
@@ -663,7 +663,7 @@ function function_57fbff5c(str_notify) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x82a52645, Offset: 0x2e68
 // Size: 0xd6
 function start_ammo(equipment) {
@@ -714,7 +714,7 @@ function register_for_level(weaponname) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2cf65096, Offset: 0x3120
 // Size: 0x3e
 function is_equipment(weapon) {
@@ -725,7 +725,7 @@ function is_equipment(weapon) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5b3a7b91, Offset: 0x3168
 // Size: 0x22
 function is_equipment_that_blocks_purchase(weapon) {
@@ -733,7 +733,7 @@ function is_equipment_that_blocks_purchase(weapon) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9bda1477, Offset: 0x3198
 // Size: 0x38
 function is_player_equipment(weapon) {
@@ -744,7 +744,7 @@ function is_player_equipment(weapon) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x83859315, Offset: 0x31d8
 // Size: 0x88
 function has_deployed_equipment(weapon) {
@@ -760,7 +760,7 @@ function has_deployed_equipment(weapon) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc2ea3664, Offset: 0x3268
 // Size: 0x3c
 function has_player_equipment(weapon) {
@@ -768,7 +768,7 @@ function has_player_equipment(weapon) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8a101a5e, Offset: 0x32b0
 // Size: 0x36
 function get_player_equipment() {
@@ -780,7 +780,7 @@ function get_player_equipment() {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdc210434, Offset: 0x32f0
 // Size: 0x32
 function hacker_active() {
@@ -788,7 +788,7 @@ function hacker_active() {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6a152df5, Offset: 0x3330
 // Size: 0x9a
 function set_player_equipment(weapon) {
@@ -809,7 +809,7 @@ function set_player_equipment(weapon) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf64a1d84, Offset: 0x33d8
 // Size: 0x24
 function init_player_equipment() {
@@ -817,14 +817,14 @@ function init_player_equipment() {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xf6717638, Offset: 0x3408
 // Size: 0xac
 function function_7d948481(n_boss = 0.1, n_miniboss = 0.25, n_heavy = 0.5, n_basic = 1) {
-    if (!isdefined(self.var_6f84b820)) {
+    if (!isdefined(self.zm_ai_category)) {
         return 1;
     }
-    switch (self.var_6f84b820) {
+    switch (self.zm_ai_category) {
     case #"boss":
         return n_boss;
     case #"miniboss":
@@ -837,7 +837,7 @@ function function_7d948481(n_boss = 0.1, n_miniboss = 0.25, n_heavy = 0.5, n_bas
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x10e122f5, Offset: 0x3510
 // Size: 0xc2
 function function_379f6b5d(n_base_damage, var_177ec733 = 1, var_b68e56de = 1, var_694e2cee = 4, var_f14e81ea = 30) {

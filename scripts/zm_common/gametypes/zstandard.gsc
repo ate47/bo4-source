@@ -523,8 +523,8 @@ function function_e0c53cf(params) {
         self.maxhealth = self.health;
         return;
     }
-    if (isalive(self) && isdefined(self.var_6f84b820) && (isplayer(params.eattacker) || isplayer(params.einflictor)) && params.idamage < self.health) {
-        switch (self.var_6f84b820) {
+    if (isalive(self) && isdefined(self.zm_ai_category) && (isplayer(params.eattacker) || isplayer(params.einflictor)) && params.idamage < self.health) {
+        switch (self.zm_ai_category) {
         case #"heavy":
             var_3b210d82 = self.maxhealth * 0.2;
             break;
@@ -578,8 +578,8 @@ function function_c3a8f243(_gen_zipline_traversal) {
 // Size: 0x3b8
 function function_45a520db(params) {
     level.var_e01b92bb++;
-    if (isdefined(self.var_6f84b820)) {
-        switch (self.var_6f84b820) {
+    if (isdefined(self.zm_ai_category)) {
+        switch (self.zm_ai_category) {
         case #"enhanced":
             if (self.archetype === #"catalyst") {
                 var_487ba56d = function_c3a8f243(2);

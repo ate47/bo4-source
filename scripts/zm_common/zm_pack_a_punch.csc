@@ -23,7 +23,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_pack_a_punch/zm_pack_a_punch
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x224997e3, Offset: 0x190
 // Size: 0x154
 function __init__() {
@@ -36,7 +36,7 @@ function __init__() {
 }
 
 // Namespace zm_pack_a_punch/zm_pack_a_punch
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x48839aa7, Offset: 0x2f0
 // Size: 0x5c
 function function_5c574877(params) {
@@ -46,7 +46,7 @@ function function_5c574877(params) {
 }
 
 // Namespace zm_pack_a_punch/zm_pack_a_punch
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x57a6c992, Offset: 0x358
 // Size: 0xc4
 function on_localplayer_spawned(localclientnum) {
@@ -65,7 +65,7 @@ function on_localplayer_spawned(localclientnum) {
 }
 
 // Namespace zm_pack_a_punch/zm_pack_a_punch
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf85c0e1c, Offset: 0x428
 // Size: 0x174
 function pap_force_stream(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -94,7 +94,7 @@ function pap_force_stream(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_pack_a_punch/zm_pack_a_punch
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9cf0ac27, Offset: 0x5a8
 // Size: 0xd4
 function function_2a80c24d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -113,7 +113,7 @@ function function_2a80c24d(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_pack_a_punch/zm_pack_a_punch
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x444d54c0, Offset: 0x688
 // Size: 0x152
 function private function_f74ad2c1(localclientnum, n_piece_index, str_tag) {
@@ -131,7 +131,7 @@ function private function_f74ad2c1(localclientnum, n_piece_index, str_tag) {
 }
 
 // Namespace zm_pack_a_punch/zm_pack_a_punch
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x603d79d7, Offset: 0x7e8
 // Size: 0xd4
 function pap_working_fx_handler(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -150,7 +150,7 @@ function pap_working_fx_handler(localclientnum, oldval, newval, bnewent, binitia
 }
 
 // Namespace zm_pack_a_punch/zm_pack_a_punch
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xd45384fe, Offset: 0x8c8
 // Size: 0x152
 function private pap_play_fx(localclientnum, n_piece_index, str_tag) {

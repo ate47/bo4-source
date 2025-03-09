@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace mp_militia_scripted/mp_militia_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc3bc1f53, Offset: 0xc0
 // Size: 0x44
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace mp_militia_scripted/mp_militia_scripted
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcb54b965, Offset: 0x110
 // Size: 0x2c
 function on_localclient_connect(localclientnum) {
@@ -30,7 +30,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace mp_militia_scripted/mp_militia_scripted
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3ec5fa4f, Offset: 0x148
 // Size: 0x2c
 function on_gameplay_started(localclientnum) {

@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace music_box/zm_equip_music_box
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x56ab8783, Offset: 0x1d8
 // Size: 0x10c
 function __init__() {
@@ -61,7 +61,7 @@ function function_7ee98254(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace music_box/zm_equip_music_box
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x55884b70, Offset: 0x4f0
 // Size: 0xbe
 function music_box_light_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -80,7 +80,7 @@ function music_box_light_fx(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace music_box/zm_equip_music_box
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8ca37175, Offset: 0x5b8
 // Size: 0xd4
 function music_box_teleport(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -96,7 +96,7 @@ function music_box_teleport(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace music_box/zm_equip_music_box
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe1c370d, Offset: 0x698
 // Size: 0xbe
 function function_e722a4fd(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

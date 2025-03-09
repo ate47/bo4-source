@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_white_nukerun/zm_trial_white_nukerun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd4832036, Offset: 0x268
 // Size: 0x74
 function __init__() {
@@ -36,7 +36,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_white_nukerun/zm_trial_white_nukerun
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x967da477, Offset: 0x2e8
 // Size: 0x110
 function private on_begin() {
@@ -52,7 +52,7 @@ function private on_begin() {
 }
 
 // Namespace zm_trial_white_nukerun/zm_trial_white_nukerun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd21c4eb0, Offset: 0x400
 // Size: 0x488
 function nuke_loop() {
@@ -118,7 +118,7 @@ function nuke_loop() {
 }
 
 // Namespace zm_trial_white_nukerun/zm_trial_white_nukerun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x535a816, Offset: 0x890
 // Size: 0x3a0
 function function_fe74909(drop_point) {
@@ -162,7 +162,7 @@ function function_fe74909(drop_point) {
 }
 
 // Namespace zm_trial_white_nukerun/zm_trial_white_nukerun
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8f4f2f3, Offset: 0xc38
 // Size: 0xf8
 function private on_end(round_reset) {
@@ -177,7 +177,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_white_nukerun/zm_trial_white_nukerun
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xed6fe273, Offset: 0xd38
 // Size: 0xb4
 function private function_33f0ddd3(s_event) {

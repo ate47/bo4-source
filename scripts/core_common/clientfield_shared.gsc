@@ -3,7 +3,7 @@
 #namespace clientfield;
 
 // Namespace clientfield/clientfield_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x75baacc0, Offset: 0x98
 // Size: 0x54
 function register(str_pool_name, str_name, n_version, n_bits, str_type) {
@@ -11,7 +11,7 @@ function register(str_pool_name, str_name, n_version, n_bits, str_type) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x47c4a28d, Offset: 0xf8
 // Size: 0x54
 function register_clientuimodel(str_name, n_version, n_bits, str_type, var_59f69872) {
@@ -19,7 +19,7 @@ function register_clientuimodel(str_name, n_version, n_bits, str_type, var_59f69
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xb3abb931, Offset: 0x158
 // Size: 0x74
 function register_luielem(unique_name, field_name, n_version, n_bits, str_type, var_59f69872) {
@@ -27,7 +27,7 @@ function register_luielem(unique_name, field_name, n_version, n_bits, str_type, 
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xc2706ac, Offset: 0x1d8
 // Size: 0x54
 function register_bgcache(poolname, var_b693fec6, uniqueid, version, var_59f69872) {
@@ -35,7 +35,7 @@ function register_bgcache(poolname, var_b693fec6, uniqueid, version, var_59f6987
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x43bdad39, Offset: 0x238
 // Size: 0x84
 function set(str_field_name, n_value) {
@@ -51,7 +51,7 @@ function set(str_field_name, n_value) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf8b41e42, Offset: 0x2c8
 // Size: 0x22
 function can_set(str_field_name, n_value) {
@@ -59,7 +59,7 @@ function can_set(str_field_name, n_value) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8324b1e, Offset: 0x2f8
 // Size: 0x84
 function set_to_player(str_field_name, n_value) {
@@ -70,7 +70,7 @@ function set_to_player(str_field_name, n_value) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x95984f53, Offset: 0x388
 // Size: 0x2c
 function set_player_uimodel(str_field_name, n_value) {
@@ -78,7 +78,7 @@ function set_player_uimodel(str_field_name, n_value) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x5a63c238, Offset: 0x3c0
 // Size: 0x4c
 function function_9bf78ef8(unique_name, str_field_name, n_value) {
@@ -86,7 +86,7 @@ function function_9bf78ef8(unique_name, str_field_name, n_value) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x917a406c, Offset: 0x418
 // Size: 0x44
 function function_bb878fc3(unique_name, str_field_name) {
@@ -94,7 +94,7 @@ function function_bb878fc3(unique_name, str_field_name) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x580a3755, Offset: 0x468
 // Size: 0x22
 function get_player_uimodel(str_field_name) {
@@ -110,7 +110,7 @@ function function_f7ae6994(unique_name, str_field_name) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf98ea7fc, Offset: 0x4e8
 // Size: 0x2c
 function set_world_uimodel(str_field_name, n_value) {
@@ -118,7 +118,7 @@ function set_world_uimodel(str_field_name, n_value) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa85463bb, Offset: 0x520
 // Size: 0x22
 function get_world_uimodel(str_field_name) {
@@ -134,7 +134,7 @@ function increment_world_uimodel(str_field_name) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8d55c4c5, Offset: 0x580
 // Size: 0x2c
 function increment(str_field_name, n_increment_count) {
@@ -142,7 +142,7 @@ function increment(str_field_name, n_increment_count) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xfbea2e95, Offset: 0x5b8
 // Size: 0xde
 function private _increment(str_field_name, n_increment_count = 1) {
@@ -181,7 +181,7 @@ function increment_uimodel(str_field_name, n_increment_count = 1) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd0e04c57, Offset: 0x7b0
 // Size: 0x5e
 function increment_to_player(str_field_name, n_increment_count = 1) {
@@ -191,7 +191,7 @@ function increment_to_player(str_field_name, n_increment_count = 1) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4f448b88, Offset: 0x818
 // Size: 0x44
 function get(str_field_name) {
@@ -202,7 +202,7 @@ function get(str_field_name) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd659b299, Offset: 0x868
 // Size: 0x22
 function get_to_player(field_name) {

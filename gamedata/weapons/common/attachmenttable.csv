@@ -1,288 +1,288 @@
-0,none,none,#hash_11d17195d5833bc4,none,0,#weapon_missing_image,#hash_17ede46111f44fec,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#none
-1,top,optic,#mpui/acog,acog,0,#ui_icon_attachment_recon,#hash_2b8096f4212652cb,#,acog,1,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#acog
-2,gunperk,rig,#hash_5afd03a588cd1c62,adsreload,0,#ui_icon_attachment_adsreloader,#hash_49281fa933339a32,#,adsreload,2,0,adsreload,1,0,0,0,,,false,,#,,#,,,#adsreload
-3,muzzle,rig,#hash_19ab29890f4ebb91,barrelchoke,0,#ui_icon_attachment_chokedbarrel,#hash_13d29462fd0d57ab,#hash_61ae56844fb4ecd3,barrelchoke,3,0,barrelchoke,1,0,0,0,,,false,,#,,#,,,#barrelchoke
-4,gunperk,mod,#mpui/clantag,clantag,0,#cac_mods_clan_tag,#,#,clantag,4,0,clantag custom2 killcounter,0,0,0,0,,,false,,#,,#,,,#clantag
-5,gunperk,rig,#hash_360742434808cf8e,custom1,0,#ui_icon_attachment_rapidfire,#hash_49e88c8053d4f73e,#,custom1,5,0,,1,0,0,0,,,false,,#,,#,,,#custom1
-6,gunperk,mod,#hash_7bf8bcf55e2bd26e,custom2,0,#blacktransparent,#,#,custom2,6,0,clantag custom2 killcounter,0,0,0,0,,,false,,#,,#,,,#custom2
-7,gunperk,rig,#hash_4f23c6ecb321fa19,custom3,0,#ui_icon_attachment_longbarrel,#hash_366888e106b2bbb3,#,custom3,7,0,,1,0,0,0,,,false,,#,,#,,,#custom3
-8,none,none,#hash_11d17195d5833bc4,custom4,0,#weapon_missing_image,#hash_17ede46111f44fec,#,custom4,8,0,,0,0,0,0,,,false,,#,,#,,,#custom4
-9,none,none,#hash_11d17195d5833bc4,custom5,0,#weapon_missing_image,#hash_17ede46111f44fec,#,custom5,9,0,,0,0,0,0,,,false,,#,,#,,,#custom5
-10,rig,rig,#mpui/damage,damage,0,#ui_icon_attachment_highcaliber,#hash_42047aa0e594d7ce,#hash_56074383a6c3b738,damage,10,0,damage dw mk,1,0,0,0,,,false,,#,,#,,,#damage
-11,rig,rig,#mpui/damage2,damage2,0,#ui_icon_attachment_highcaliber2,#hash_c3550301fc75b8c,#hash_2903042e98504cc7,damage2,11,0,damage2,1,0,0,0,,,false,,#,,#,,,#damage2
-12,top,optic,#mpui/dualoptic,dualoptic,0,#ui_icon_attachment_dualoptic,#hash_24029a6ad88b81e2,#,dualoptic,12,0,acog dualoptic dw dynzoom elo gl holo ir is mk mms rangefinder reddot reflex sf tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#dualoptic
-13,bottom,uber,#mpui/dw,dw,0,#ui_icon_attachment_saug_opmod_dual_wield,#mpui/dw_desc,#,dw,13,0,acog damage dualoptic dw dynzoom elo extbarrel fastreload2 fmj gl grip holo ir is mk mms quickdraw rangefinder reddot reflex rf sf stackfire stalker stalker2 steadyaim swayreduc tacknife vzoom,2,0,0,0,,,false,,#,,#,,,#dw
-14,top,optic,#,dynzoom,0,#cac_mods_dynzoom,#,#,dynzoom,14,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#dynzoom
-15,top,optic,#mpui/elo,elo,0,#ui_icon_attachment_float_dot,#hash_25b761f80b963d2d,#,elo,15,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#elo
-16,muzzle,rig,#mpui/extbarrel,extbarrel,0,#ui_icon_attachment_longbarrel,#hash_68fe011060c3cc2a,#,extbarrel,16,0,dw extbarrel mk,1,0,0,0,,,false,,#,,#,,,#extbarrel
-17,muzzle,rig,#mpui/extbarrel2,extbarrel2,0,#ui_icon_attachment_longbarrel2,#hash_60ad70a7e7b392a0,#,extbarrel2,17,0,extbarrel2,1,0,0,0,,,false,,#,,#,,,#extbarrel2
-18,trigger,rig,#mpui/extclip,extclip,0,#ui_icon_attachment_extendedmags,#hash_9b21599b0be92c,#,extclip,18,0,extclip mk,1,0,0,0,,,false,,#,,#,,,#extclip
-19,trigger,rig,#mpui/extclip2,extclip2,0,#ui_icon_attachment_extendedmags2,#hash_4ed6dfbae4e23b52,#,extclip2,19,0,extclip2,1,0,0,0,,,false,,#,,#,,,#extclip2
-20,gunperk,rig,#hash_549d76181177939a,extrapellets,0,#ui_icon_attachment_shotgun_semiauto_pellets,#hash_5f68abd42a1cff2a,#hash_5567d64527c57712,extrapellets,20,0,extrapellets,1,0,0,0,,,false,,#,,#,,,#extrapellets
-21,top,optic,#hash_40dd44e49656068f,fastlockon,0,#ui_icon_attachment_laser,#hash_e6b6ba489f41f01,#,fastlockon,21,0,fastlockon,1,0,0,0,,,false,,#,,#,,,#fastlockon
-22,gunperk,rig,#mpui/fastreload,fastreload,0,#ui_icon_attachment_fastmags,#hash_602e0ff43b44d408,#,fastreload,22,0,fastreload mk,1,0,0,0,,,false,,#,,#,,,#fastreload
-23,gunperk,rig,#mpui/fastreload2,fastreload2,0,#ui_icon_attachment_fastmags2,#hash_2eca6fba714f086,#,fastreload2,23,0,fastreload2 dw,1,0,0,0,,,false,,#,,#,,,#fastreload2
-24,trigger,rig,#mpui/fmj,fmj,0,#ui_icon_attachment_fmj,#hash_9b8af453a6a410,#hash_32f76fa42f85198,fmj,24,0,dw fmj mk,1,0,0,0,,,false,,#,,#,,,#fmj
-25,trigger,rig,#mpui/fmj2,fmj2,0,#ui_icon_attachment_fmj2,#hash_28c8d09a7f7e043e,#hash_387f98b0e40cc796,fmj2,25,0,fmj2,1,0,0,0,,,false,,#,,#,,,#fmj2
-26,bottom,rig,#mpui/gl,gl,0,#hud_grenade_launcher,#mpui/gl_desc,#,gl,26,0,dualoptic dw gl mk sf,1,0,0,0,,,false,,#,,#,,,#gl
-27,bottom,rig,#mpui/grip,grip,0,#ui_icon_attachment_grip,#hash_39aeb41b98bc1671,#,grip,27,0,dw grip mk,1,0,0,0,,,false,,#,,#,,,#grip
-28,bottom,rig,#mpui/grip2,grip2,0,#ui_icon_attachment_grip2,#hash_7705cb8207f499e9,#,grip2,28,0,grip2,1,0,0,0,,,false,,#,,#,,,#grip2
-29,bottom,rig,#mpui/hipgrip,hipgrip,0,#ui_icon_attachment_grip,#hash_45d36cd4b3bb6578,#,hipgrip,29,0,hipgrip,1,0,0,0,,,false,,#,,#,,,#hipgrip
-30,rig,rig,#hash_2c454eb3fec22798,holdbreath,0,#ui_icon_attachment_stablizer,#hash_297bd6fbffa55b80,#,holdbreath,30,0,holdbreath,1,0,0,0,,,false,,#,,#,,,#holdbreath
-31,top,optic,#mpui/holo,holo,0,#ui_icon_attachment_holo,#hash_34f83c239da58b2d,#,holo,31,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#holo
-32,top,optic,#mpui/ir,ir,0,#ui_icon_attachment_thermal,#mpui/ir_desc,#,ir,32,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#ir
-33,top,optic,#mpui/is,is,0,#ui_icon_attachment_iron_sights,#mpui/is_desc,#,is,33,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#is
-34,gunperk,mod,#mpui/killcounter,killcounter,0,#cac_mods_kill_counter,#,#,killcounter,34,0,clantag custom2 killcounter,0,0,0,0,,,false,,#,,#,,,#killcounter
-35,gunperk,rig,#mpui/mixclip,mixclip,0,#ui_icon_attachment_advancedmags,#hash_41675721bd9111d3,#,mixclip,35,0,mixclip,1,0,0,0,,,false,,#,,#,,,#mixclip
-36,bottom,rig,#mpui/mk,mk,0,#cac_mods_trigger_group,#mpui/mk_desc,#,mk,36,0,acog damage dualoptic dw dynzoom elo extbarrel extclip fastreload fmj gl grip holo ir is mk mms quickdraw rangefinder reddot reflex rf sf stackfire stalker steadyaim suppressed swayreduc tacknife vzoom,0,0,0,0,,,false,,#,,#,,,#mk
-37,top,optic,#mpui/mms,mms,0,#ui_icon_attachment_mms,#hash_5cc8a98a1a1af336,#hash_1dffea8c96fdc0fe,mms,37,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#mms
-38,none,none,#mpui/null,null,0,#weapon_missing_image,#hash_17ede46111f44fec,#,,38,0,,0,0,0,0,,,false,,#,,#,,,#null
-39,top,optic,#mpui/pistolscope,pistolscope,0,#ui_icon_attachment_pistolscope,#hash_651a766bae9b7c5c,#,pistolscope,39,0,pistolscope,1,0,0,0,,,false,,#,,#,,,#pistolscope
-40,rig,rig,#mpui/quickdraw,quickdraw,0,#ui_icon_attachment_quickdraw,#hash_464fb4d63791df24,#,quickdraw,40,0,dw mk quickdraw,1,0,0,0,,,false,,#,,#,,,#quickdraw
-41,rig,rig,#mpui/quickdraw2,quickdraw2,0,#ui_icon_attachment_quickdraw2,#hash_7129c2ef942745a,#,quickdraw2,41,0,quickdraw2,1,0,0,0,,,false,,#,,#,,,#quickdraw2
-42,top,optic,#hash_6fe3fbbbbb63092c,rangefinder,0,#cac_mods_rangefinder,#hash_7afac73e4e0688d4,#,rangefinder,42,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex swayreduc tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#rangefinder
-43,top,optic,#mpui/reddot,reddot,0,#ui_icon_attachment_dualoptic,#hash_3ad0e7a1cbad4cb7,#,reddot,43,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#reddot
-44,top,optic,#mpui/reflex,reflex,0,#ui_icon_attachment_reflex,#hash_58f22446fa93e6ab,#,reflex,44,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#reflex
-45,muzzle,rig,#mpui/rf,rf,0,#ui_icon_attachment_rapidfire,#mpui/rf_desc,#,rf,45,0,dw mk rf,1,0,0,0,,,false,,#,,#,,,#rf
-46,bottom,rig,#mpui/sf,sf,0,#cac_mods_trigger_group,#mpui/sf_desc,#,sf,46,0,dualoptic dw gl mk sf,1,0,0,0,,,false,,#,,#,,,#sf
-47,gunperk,rig,#hash_7a4289cde4df7d84,speedreloader,0,#ui_icon_attachment_speedloader,#hash_543fe4ea753b9eac,#,speedreloader,47,0,speedreloader,1,0,0,0,,,false,,#,,#,,,#speedreloader
-48,trigger,rig,#mpui/burst2,stackfire,0,#cac_mods_tribolt,#hash_6443239d452b1e8d,#,stackfire,48,0,dw mk stackfire,1,0,0,0,,,false,,#,,#,,,#stackfire
-49,gunperk,rig,#mpui/stalker,stalker,0,#ui_icon_attachment_stock,#hash_74bcbdc19707392f,#,stalker,49,0,dw mk stalker,1,0,0,0,,,false,,#,,#,,,#stalker
-50,gunperk,rig,#mpui/stalker2,stalker2,0,#ui_icon_attachment_stock2,#hash_72b5e12c9c5b3bf,#,stalker2,50,0,dw stalker2,1,0,0,0,,,false,,#,,#,,,#stalker2
-51,gunperk,rig,#mpui/steadyaim,steadyaim,0,#ui_icon_attachment_laser,#hash_3e4a67b0d74a662a,#,steadyaim,51,0,dw mk steadyaim,1,0,0,0,,,false,,#,,#,,,#steadyaim
-52,gunperk,rig,#mpui/steadyaim2,steadyaim2,0,#ui_icon_attachment_laser2,#hash_5819d3514e6b40a0,#,steadyaim2,52,0,steadyaim2,1,0,0,0,,,false,,#,,#,,,#steadyaim2
-53,gunperk,rig,#mpui/supply,supply,0,#ui_icon_attachment_bandolier,#hash_14ad824a233eedc,#,supply,53,0,supply,1,0,0,0,,,false,,#,,#,,,#supply
-54,rig,rig,#mpui/suppressed,suppressed,0,#ui_icon_attachment_supressor,#hash_175b0c2ccec045a3,#hash_3d7abb3373fab887,suppressed,54,0,mk suppressed,1,0,0,0,,,false,,#,,#,,,#suppressed
-55,rig,rig,#hash_701c5f025eb74ec6,swayreduc,0,#ui_icon_attachment_stablizer,#hash_2c3e9e30064c8db6,#,swayreduc,55,0,dw mk rangefinder swayreduc,1,0,0,0,,,false,,#,,#,,,#swayreduc
-56,gunperk,rig,#hash_3ddb056b79311ade,tacknife,0,#cac_mods_tact_knife,#hash_7e61522bc8bc3dee,#,tacknife,56,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#tacknife
-57,gunperk,uber,#mpui/uber,uber,0,#ui_icon_attachment_smg_accurate_opmod_wildfire,#hash_192620fbfe2bb385,#,uber,57,0,uber,2,0,0,0,,,false,,#,,#,,,#uber
-58,top,optic,#mpui/vzoom,vzoom,0,#cac_mods_var_zoom,#hash_5071aa2f1fc20b4c,#,vzoom,58,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#vzoom
-0,camo,weaponoption,#mpui/none,camo_none,0,#menu_cac_none,#mpui/none,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#camo_none
-1,camo,weaponoption,#hash_768c5aeecc2d7cc4,camo_alfa,0,#hash_711086aed7528885,#hash_4361bc63de0848d3,#,,0,0,,0,0,0,1000,,,false,mp,#,perf,#,,,#camo_alfa
-2,camo,weaponoption,#hash_2d003d6a1240093c,camo_alfa_wz,0,#hash_6eba51005ba9a081,#hash_7664f631b276facc,#,,0,0,,0,0,0,1000,,,false,wz,#,perf,#,,,#camo_alfa_wz
-3,camo,weaponoption,#hash_23184906a849ac54,camo_alfa_zm,0,#hash_542e9a1cf0161ba5,#hash_47e1955bea1fc19,#,,0,0,,0,0,0,1000,,,false,zm,#,perf,#,,,#camo_alfa_zm
-4,camo,weaponoption,#hash_c0c2aecab7c9830,camo_bravo,0,#hash_6330d30074e798f9,#hash_4a324d42cf256472,#,,0,0,,0,0,0,1000,,,false,mp,#,perf,#,,,#camo_bravo
-5,camo,weaponoption,#hash_6aee422878d572b9,camo_bravo_wz,0,#hash_65a3dc74c6c8e0dd,#hash_3292e34998476e76,#,,0,0,,0,0,0,1000,,,false,wz,#,perf,#,,,#camo_bravo_wz
-6,camo,weaponoption,#hash_506621193b404166,camo_bravo_zm,0,#hash_349f397a9a5bb7c1,#hash_11844df90c43c32c,#,,0,0,,0,0,0,1000,,,false,zm,#,perf,#,,,#camo_bravo_zm
-7,camo,weaponoption,#hash_246c7d9118b22299,camo_charlie,0,#hash_5fbf8a233ce27d7b,#hash_1c93858d6991c626,#,,0,0,,0,0,0,1000,,,false,mp,#,perf,#,,,#camo_charlie
-8,camo,weaponoption,#hash_3e42591da1c1538f,camo_charlie_wz,0,#hash_4a0c7c94f04173c7,#hash_639a907fae7467b1,#,,0,0,,0,0,0,1000,,,false,wz,#,perf,#,,,#camo_charlie_wz
-9,camo,weaponoption,#hash_4c2bbe6f91c1ca94,camo_charlie_zm,0,#hash_28661b9ceee03937,#hash_60a2e99cf0e191e1,#,,0,0,,0,0,0,1000,,,false,zm,#,perf,#,,,#camo_charlie_zm
-10,camo,weaponoption,#hash_6a4930978aef6c45,camo_delta,0,#hash_20ee83883ec8d08f,#hash_2b40461a235c9616,#,,0,0,,0,0,0,1000,,,false,mp,#,perf,#,,,#camo_delta
-11,camo,weaponoption,#hash_33f013eacb53964c,camo_delta_wz,0,#hash_be13fc523d74bb3,#hash_2f75827412f48897,#,,0,0,,0,0,0,1000,,,false,wz,#,perf,#,,,#camo_delta_wz
-12,camo,weaponoption,#hash_2aa6fa1848766679,camo_delta_zm,0,#hash_2e9f03f857c34bc3,#hash_44149fa37d4d853f,#,,0,0,,0,0,0,1000,,,false,zm,#,perf,#,,,#camo_delta_zm
-13,camo,weaponoption,#hash_40c47b72c083914,camo_echo,0,#hash_3497e3faea3f47d4,#hash_5b7536f294f156a6,#,,0,0,,0,0,0,1000,,,false,mp,#,perf,#,,,#camo_echo
-14,camo,weaponoption,#hash_5e2c81adb5a5264a,camo_echo_wz,0,#hash_26d4d474451b2e5e,#hash_3e968f73a7d7e44e,#,,0,0,,0,0,0,1000,,,false,wz,#,perf,#,,,#camo_echo_wz
-15,camo,weaponoption,#hash_3ae42f7d6eabab5a,camo_echo_zm,0,#hash_1f46284b7f61debe,#hash_51252660f83e3872,#,,0,0,,0,0,0,1000,,,false,zm,#,perf,#,,,#camo_echo_zm
-16,camo,weaponoption,#hash_4dff11036295b59f,camo_foxtrot,0,#hash_3e84e5f0110025bd,#hash_52de177886494628,#,,2,0,,0,0,0,0,,,false,mp,#,perf,#,,,#camo_foxtrot
-17,camo,weaponoption,#hash_25d3f454e864bb4a,camo_foxtrot_wz,0,#hash_306c399819b0ede9,#hash_3bad41af24cc7ed5,#,,0,0,,0,0,0,0,,,false,wz,#,perf,#,,,#camo_foxtrot_wz
-18,camo,weaponoption,#hash_4d048d939c70cad9,camo_foxtrot_zm,0,#hash_1c905cc4ebf687bd,#hash_5abca820cfab2cd8,#,,2,0,,0,0,0,0,,,false,zm,#,perf,#,,,#camo_foxtrot_zm
-19,camo,weaponoption,#hash_6063cd6ae0f6ce28,camo_golf,0,#hash_4819e41b4d1c1425,#hash_23d45d79e7cc975d,#,,0,0,,0,0,0,0,,,false,mp,#,perf,#,,,#camo_golf
-20,camo,weaponoption,#hash_4973da5ba484b2ae,camo_golf_wz,0,#hash_e9ce32f92c16fe1,#hash_2462544f3066322a,#,,0,0,,0,0,0,0,,,false,wz,#,perf,#,,,#camo_golf_wz
-21,camo,weaponoption,#hash_3640fdfd426ba4b4,camo_golf_zm,0,#hash_5e6789e0c225b105,#hash_7db4187f695ce2a6,#,,0,0,,0,0,0,0,,,false,zm,#,perf,#,,,#camo_golf_zm
-22,camo,weaponoption,#hash_629d187300caa85d,camo_hotel,0,#hash_49a3098b1e1e205b,#hash_5ec68d99caf17930,#,,0,0,,0,0,0,0,,,false,mp,#,perf,#,,,#camo_hotel
-23,camo,weaponoption,#hash_95c5021b448b56,camo_hotel_wz,0,#hash_6c9bcae577ed2167,#hash_502cca55de20d536,#,,0,0,,0,0,0,0,,,false,wz,#,perf,#,,,#camo_hotel_wz
-24,camo,weaponoption,#hash_25fc6c872fa95f5e,camo_hotel_zm,0,#hash_217969e88e8b88d7,#hash_6d832831f5532f00,#,,0,0,,0,0,0,0,,,false,zm,#,perf,#,,,#camo_hotel_zm
-25,camo,weaponoption,#hash_607993fb651c3014,camo_india,0,#hash_28c9a231816028ca,#hash_15b50559752dd744,#,,0,0,,0,0,0,0,,,false,mp,#,perf,#,,,#camo_india
-26,camo,weaponoption,#hash_26adc6b84f143b29,camo_india_wz,0,#hash_a0e84e74ba48844,#hash_25811ef8abc80b1f,#,,0,0,,0,0,0,0,,,false,wz,#,perf,#,,,#camo_india_wz
-27,camo,weaponoption,#hash_78d753143b405d88,camo_india_zm,0,#hash_d381cd35adc66c8,#hash_62503932e1d53a87,#,,0,0,,0,0,0,0,,,false,zm,#,perf,#,,,#camo_india_zm
-28,camo,weaponoption,#hash_5c28147c226eb600,camo_juliett,0,#hash_12fed9984b8ed628,#hash_5c28147c226eb600,#,,0,0,,0,0,0,0,,,false,mp,#,tech,#,,,#camo_juliett
-29,camo,weaponoption,#hash_5f17105e484faba8,camo_juliett_wz,0,#hash_35dc278d139a7c8a,#hash_5f17105e484faba8,#,,0,0,,0,0,0,0,,,false,wz,#,tech,#,,,#camo_juliett_wz
-30,camo,weaponoption,#hash_66d33b296eb64fbc,camo_juliett_zm,0,#hash_35dce0b6d140d15a,#hash_66d33b296eb64fbc,#,,0,0,,0,0,0,0,,,false,zm,#,tech,#,,,#camo_juliett_zm
-31,camo,weaponoption,#hash_7e31505384e0837a,camo_kilo,0,#hash_19150616872a7dbc,#hash_7e31505384e0837a,#,,0,0,,0,0,0,0,,,false,mp,#,tech,#,,,#camo_kilo
-32,camo,weaponoption,#hash_3ca968dee9e5dc02,camo_kilo_wz,0,#hash_57a8cb9b548bfd36,#hash_3ca968dee9e5dc02,#,,0,0,,0,0,0,0,,,false,wz,#,tech,#,,,#camo_kilo_wz
-33,camo,weaponoption,#hash_665fcaf288735f26,camo_kilo_zm,0,#hash_3e19ece7f5633306,#hash_665fcaf288735f26,#,,0,0,,0,0,0,0,,,false,zm,#,tech,#,,,#camo_kilo_zm
-34,camo,weaponoption,#hash_36be4a2f9e325b50,camo_lima,0,#hash_3c9af6890064158,#hash_36be4a2f9e325b50,#,,0,0,,0,0,0,0,,,false,mp,#,tech,#,,,#camo_lima
-35,camo,weaponoption,#hash_2628f8facd7d3398,camo_lima_wz,0,#hash_7794f6fe9510297a,#hash_2628f8facd7d3398,#,,0,0,,0,0,0,0,,,false,wz,#,tech,#,,,#camo_lima_wz
-36,camo,weaponoption,#hash_17783814d047454c,camo_lima_zm,0,#hash_197bbb0a109e986a,#hash_17783814d047454c,#,,0,0,,0,0,0,0,,,false,zm,#,tech,#,,,#camo_lima_zm
-37,camo,weaponoption,#hash_7564cce16f4274f6,camo_mike,0,#hash_7c18fcbdfb3a4d5b,#hash_7564cce16f4274f6,#,,0,0,,0,0,0,0,,,false,mp,#,tech,#,,,#camo_mike
-38,camo,weaponoption,#hash_68aa6bf5db640dde,camo_mike_wz,0,#hash_25aaaa61b9653067,#hash_68aa6bf5db640dde,#,,0,0,,0,0,0,0,,,false,wz,#,tech,#,,,#camo_mike_wz
-39,camo,weaponoption,#hash_58b7aeee47f428da,camo_mike_zm,0,#hash_5a884964d00397d7,#hash_58b7aeee47f428da,#,,0,0,,0,0,0,0,,,false,zm,#,tech,#,,,#camo_mike_zm
-40,camo,weaponoption,#hash_556fbdaebf02d158,camo_november,0,#hash_6043ed4415dbb7b7,#hash_556fbdaebf02d158,#,,0,0,,0,0,0,0,,,false,mp,#,tech,#,,,#camo_november
-41,camo,weaponoption,#hash_4f0d8ebb363015e0,camo_november_wz,0,#hash_e516a93bdf76eb,#hash_4f0d8ebb363015e0,#,,0,0,,0,0,0,0,,,false,wz,#,tech,#,,,#camo_november_wz
-42,camo,weaponoption,#hash_43b0cfc850dbcc04,camo_november_zm,0,#hash_2ba186e8d0518eb,#hash_43b0cfc850dbcc04,#,,0,0,,0,0,0,0,,,false,zm,#,tech,#,,,#camo_november_zm
-43,camo,weaponoption,#hash_13f64b913a8510ce,camo_gold,0,#menu_camo_gold_pattern,#hash_13f64b913a8510ce,#,,0,0,,0,0,0,0,,,false,,#,mstr,#,,,#camo_gold
-44,camo,weaponoption,#hash_4b105b524a93b53d,camo_diamond,0,#menu_camo_diamond_pattern,#hash_4b105b524a93b53d,#,,0,0,,0,0,0,0,,,false,,#,mstr,#,,,#camo_diamond
-45,camo,weaponoption,#hash_2b3d791eb05ec296,camo_darkmatter,0,#menu_camo_darkmatter_pattern,#hash_2b3d791eb05ec296,#,,0,0,,0,0,0,0,,,false,,#,mstr,#,,,#camo_darkmatter
-46,camo,weaponoption,#hash_30f532e9051a3691,camo_active_dlc2_retro_vegas_neon_wrapper,0,#hash_254ba497ff72c798,#hash_30f532e9051a3691,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_stealth_t8,,,#camo_active_dlc2_retro_vegas_neon_wrapper
-47,camo,weaponoption,#hash_2b0fae1c09a3d8a9,camo_active_dlc2_zombie_flick_wrapper,0,#hash_4d5ec8024d178a91,#hash_2b0fae1c09a3d8a9,#,,0,0,,0,0,0,0,,,false,loot,#,active,#tr_longburst_t8,,,#camo_active_dlc2_zombie_flick_wrapper
-48,camo,weaponoption,#hash_1c07c87a45375aaf,camo_active_dlc2_party_rock_wrapper,0,#hash_2fc93a78541b61f2,#hash_1c07c87a45375aaf,#,,0,0,,0,0,0,0,,,false,loot,#,active,#smg_handling_t8,,,#camo_active_dlc2_party_rock_wrapper
-49,camo,weaponoption,#hash_5dc620aa9640e528,camo_active_dlc2_apb_wrapper,0,#hash_4a2071f4b31ea691,#hash_5dc620aa9640e528,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_fastfire_t8,,,#camo_active_dlc2_apb_wrapper
-50,camo,weaponoption,#,camo_loot_placeholder_72,0,#hash_23110fdf868a130c,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#camo_loot_placeholder_72
-51,camo,weaponoption,#,camo_loot_placeholder_73,0,#hash_231110df868a14bf,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#camo_loot_placeholder_73
-52,camo,weaponoption,#hash_3dfd2cf9c5589207,camo_dlc1_cherryblossom,0,#hash_1de963d728da84c1,#hash_3dfd2cf9c5589207,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc1_cherryblossom
-53,camo,weaponoption,#hash_f3011ec9092dca2,camo_dlc1_circuitboard,0,#hash_56e3ceaedeec6738,#hash_f3011ec9092dca2,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc1_circuitboard
-54,camo,weaponoption,#hash_255c9cc584359d0e,camo_dlc1_shimmer,0,#hash_591a633052b253d0,#hash_255c9cc584359d0e,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc1_shimmer
-55,camo,weaponoption,#hash_9340177dbe3be9f,camo_dlc1_roadhouse,0,#hash_562113cb41be1e31,#hash_9340177dbe3be9f,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc1_roadhouse
-56,camo,weaponoption,#hash_77dce7635423ba68,camo_active_dlc1_cyberpunk_wrapper,0,#hash_383e5f2612d0fb78,#hash_77dce7635423ba68,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_damage_t8,,,#camo_active_dlc1_cyberpunk_wrapper
-57,camo,weaponoption,#hash_7fd496c4cf9ec713,camo_active_dlc1_plasma_drive_wrapper,0,#hash_235572ca2598640c,#hash_7fd496c4cf9ec713,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_modular_t8,,,#camo_active_dlc1_plasma_drive_wrapper
-58,camo,weaponoption,#hash_663114aa52ffcb21,camo_active_dlc1_ww2_wrapper,0,#hash_3a3600ecdda33ed1,#hash_663114aa52ffcb21,#,,0,0,,0,0,0,0,,,false,loot,#,active,#shotgun_pump_t8,,,#camo_active_dlc1_ww2_wrapper
-59,camo,weaponoption,#hash_561a6371fe1e6f3a,camo_active_dlc1_vice_wrapper,0,#hash_1164a0045c4e92bc,#hash_561a6371fe1e6f3a,#,,0,0,,0,0,0,0,,,false,loot,#,active,#lmg_spray_t8,,,#camo_active_dlc1_vice_wrapper
-60,camo,weaponoption,#hash_4a6f079813e273c3,camo_active_dlc1_dogfight_wrapper,0,#hash_715e18e76b380a01,#hash_4a6f079813e273c3,#,,0,0,,0,0,0,0,,,false,loot,#,active,#smg_fastfire_t8,,,#camo_active_dlc1_dogfight_wrapper
-61,camo,weaponoption,#hash_24c9561478db5594,camo_active_dlc1_masks_wrapper,0,#hash_7c01798c4f5b1384,#hash_24c9561478db5594,#,,0,0,,0,0,0,0,,,false,loot,#,active,#sniper_quickscope_t8,,,#camo_active_dlc1_masks_wrapper
-62,camo,weaponoption,#hash_1960a6223dd21d1a,camo_active_sig_smg_handling_hunter_base,0,#hash_34a51039d0ba2444,#hash_1960a6223dd21d1a,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#smg_handling_t8,0,2,#camo_active_sig_smg_handling_hunter_base
-63,camo,weaponoption,#hash_452fd06faf792671,camo_active_sig_sniper_powerbolt_viking_base,0,#hash_42607eea4265a233,#hash_452fd06faf792671,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#sniper_powerbolt_t8,0,2,#camo_active_sig_sniper_powerbolt_viking_base
-64,camo,weaponoption,#hash_3041bf105b58c16a,camo_active_sig_ar_stealth_vampire_base,0,#hash_44336a8647573176,#hash_3041bf105b58c16a,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#ar_stealth_t8,0,2,#camo_active_sig_ar_stealth_vampire_base
-65,camo,weaponoption,#hash_7d3e69af1a992cec,camo_active_sig_tr_midburst_bomber_base,0,#hash_6eb24ec3fe1e988f,#hash_7d3e69af1a992cec,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#tr_midburst_t8,0,2,#camo_active_sig_tr_midburst_bomber_base
-66,camo,weaponoption,#hash_11416e3dffba8d50,camo_active_sig_pistol_revolver_cyberpunk_base,0,#hash_39b539d68a61dfa3,#hash_11416e3dffba8d50,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#pistol_revolver_t8,0,2,#camo_active_sig_pistol_revolver_cyberpunk_base
-67,camo,weaponoption,#hash_208eb7d41301aac0,camo_dlc2_benjamins,0,#hash_36ac4a17a0dc3dc5,#hash_208eb7d41301aac0,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc2_benjamins
-68,camo,weaponoption,#hash_3916397fbdb60669,camo_dlc2_street_race,0,#hash_55bf21645e17b059,#hash_3916397fbdb60669,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc2_street_race
-69,camo,weaponoption,#hash_43374b5ab9becdaa,camo_dlc2_blue_up,0,#hash_230a19cbecd211d8,#hash_43374b5ab9becdaa,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc2_blue_up
-70,camo,weaponoption,#hash_6e155a8da74ae1b6,camo_dlc2_smooch,0,#hash_2126542c29ebf182,#hash_6e155a8da74ae1b6,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc2_smooch
-71,camo,weaponoption,#hash_17c0eb37199a2d92,camo_dlc2_full_suite,0,#hash_17a6a4df5c3cfd11,#hash_17c0eb37199a2d92,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc2_full_suite
-72,camo,weaponoption,#hash_6c1e82cce2e2763e,camo_dlc2_donuts,0,#menu_camo_donuts,#hash_6c1e82cce2e2763e,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc2_donuts
-73,camo,weaponoption,#hash_2b27d20d2cfc1069,camo_active_sig_ar_modular_porcelain_base,0,#hash_21a5cbeb4a68faf,#hash_2b27d20d2cfc1069,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#ar_modular_t8,0,2,#camo_active_sig_ar_modular_porcelain_base
-74,camo,weaponoption,#hash_870732dcf823d00,camo_active_sig_shotgun_pump_police_base,0,#hash_1e651ed39e161a2a,#hash_870732dcf823d00,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#shotgun_pump_t8,0,2,#camo_active_sig_shotgun_pump_police_base
-75,camo,weaponoption,#hash_2d85a60f366822d1,camo_active_sig_smg_capacity_spaceshuttle_base,0,#hash_3025fd1219c67099,#hash_2d85a60f366822d1,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#smg_capacity_t8,0,2,#camo_active_sig_smg_capacity_spaceshuttle_base
-76,camo,weaponoption,#hash_74978fc95bfb2bfd,camo_active_sig_tr_powersemi_rustymech_base,0,#hash_47d5e60d25df2fc,#hash_74978fc95bfb2bfd,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#tr_powersemi_t8,0,2,#camo_active_sig_tr_powersemi_rustymech_base
-77,camo,weaponoption,#hash_38698d6863661eb6,camo_active_sig_sniper_fastrechamber_western_base,0,#hash_6a7fe57ffbe35b6f,#hash_38698d6863661eb6,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#sniper_fastrechamber_t8,0,2,#camo_active_sig_sniper_fastrechamber_western_base
-78,camo,weaponoption,#hash_7725a43a5e8755ad,camo_promo_purple,0,#menu_camo_promo_purple_pattern,#hash_7725a43a5e8755ad,#,,0,0,,0,0,0,0,,,false,loot,#hash_2a3075cc426f24e7,lootbase,#,,,#camo_promo_purple
-79,camo,weaponoption,#hash_77f9d83f9e77c0d3,camo_active_dlc3_celestial_wrapper,0,#hash_4da08977b57d6015,#hash_77f9d83f9e77c0d3,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc3_celestial_wrapper
-80,camo,weaponoption,#hash_2cab672fd372f942,camo_active_dlc3_mystic_wrapper,0,#hash_61c8e67fb6c54d98,#hash_2cab672fd372f942,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc3_mystic_wrapper
-81,camo,weaponoption,#hash_ee567911dd1ce83,camo_active_sig_lmg_spray_venom_base,0,#hash_3f56b2bf7232c8fa,#hash_ee567911dd1ce83,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#lmg_spray_t8,0,1,#camo_active_sig_lmg_spray_venom_base
-82,camo,weaponoption,#hash_5be026b2781b8c9,camo_active_sig_pistol_burst_raven_base,0,#hash_27d6e241e67e3b94,#hash_5be026b2781b8c9,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#pistol_burst_t8,0,2,#camo_active_sig_pistol_burst_raven_base
-83,camo,weaponoption,#hash_3824d76b4a721017,camo_active_sig_smg_fastfire_voyage_base,0,#hash_7b03e611756e1016,#hash_3824d76b4a721017,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#smg_fastfire_t8,0,2,#camo_active_sig_smg_fastfire_voyage_base
-84,camo,weaponoption,#hash_e2971bbfafcfe66,camo_active_sig_sniper_powersemi_vietnam_base,0,#hash_44e96a082062886c,#hash_e2971bbfafcfe66,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#sniper_powersemi_t8,0,2,#camo_active_sig_sniper_powersemi_vietnam_base
-85,camo,weaponoption,#hash_d8622d38b0078a8,camo_active_sig_tr_longburst_scrimshaw_base,0,#hash_2869b008a65618bb,#hash_d8622d38b0078a8,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#tr_longburst_t8,0,2,#camo_active_sig_tr_longburst_scrimshaw_base
-86,camo,weaponoption,#hash_14b9981c6e3d2f76,camo_active_dlc3_treasure_wrapper,0,#hash_476c680e6632cc03,#hash_14b9981c6e3d2f76,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc3_treasure_wrapper
-87,camo,weaponoption,#hash_3de8e053a2e6c69b,camo_dlc3_assassin,0,#hash_4cfc3b625071b1cf,#hash_3de8e053a2e6c69b,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc3_assassin
-88,camo,weaponoption,#hash_7a780871028530f5,camo_dlc3_stealth_seal,0,#hash_521668652e6e650c,#hash_7a780871028530f5,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc3_stealth_seal
-89,camo,weaponoption,#hash_54e4fb1367aa3001,camo_dlc3_shark_plaque,0,#hash_7b06317da9e0720d,#hash_54e4fb1367aa3001,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc3_shark_plaque
-90,camo,weaponoption,#hash_714cce81de873f11,camo_dlc3_armor,0,#hash_61189eaa5c0e3d56,#hash_714cce81de873f11,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc3_armor
-91,camo,weaponoption,#hash_560d002c6e40e5df,camo_dlc3_blowfish,0,#hash_7c10fd192409792f,#hash_560d002c6e40e5df,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc3_blowfish
-92,camo,weaponoption,#hash_694b66b1b888e2a8,camo_dlc3_board_shorts,0,#hash_5f38f940fb16ed6e,#hash_694b66b1b888e2a8,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc3_board_shorts
-93,camo,weaponoption,#hash_24a3e0f402bfd000,camo_dlc3_twitch_prime3,0,#menu_camo_promo_sourcherry_pattern,#hash_24a3e0f402bfd000,#,,0,0,,0,0,0,0,,,false,loot,#hash_74ca77fc7779f36,lootbase,#,,,#camo_dlc3_twitch_prime3
-94,camo,weaponoption,#hash_5835ce824db9fc92,camo_dlc3_bacon,0,#hash_29502d03942e009a,#hash_5835ce824db9fc92,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc3_bacon
-95,camo,weaponoption,#hash_3cbdafac7f4a7bd2,camo_active_dlc4_spinal_wrapper,0,#hash_4790b3418074598c,#hash_3cbdafac7f4a7bd2,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc4_spinal_wrapper
-96,camo,weaponoption,#hash_367dd4c3c93edc80,camo_active_dlc4_115_wrapper,0,#hash_3a26df5787c56101,#hash_367dd4c3c93edc80,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc4_115_wrapper
-97,camo,weaponoption,#hash_33105d49e7fd102e,camo_active_dlc4_brains_wrapper,0,#hash_5703a15943fd461b,#hash_33105d49e7fd102e,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc4_brains_wrapper
-98,camo,weaponoption,#hash_4ecfa703971b8aae,camo_dlc4_afterglow,0,#hash_49961a967f8025f6,#hash_4ecfa703971b8aae,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc4_afterglow
-99,camo,weaponoption,#hash_22ec60cd78b8277f,camo_dlc4_astronomy,0,#hash_431e56a4b4a563cb,#hash_22ec60cd78b8277f,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc4_astronomy
-100,camo,weaponoption,#hash_18b7797e532aa1bb,camo_dlc4_goosebumps,0,#hash_3543d441f2a7f0f3,#hash_18b7797e532aa1bb,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc4_goosebumps
-101,camo,weaponoption,#hash_7e6ea41ef4c9afe6,camo_dlc4_paradise,0,#hash_30adeb7263eb8ca8,#hash_7e6ea41ef4c9afe6,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc4_paradise
-102,camo,weaponoption,#hash_25edfec743a2fb28,camo_dlc4_picnic_royale,0,#hash_7d97b1d1ae2be9b1,#hash_25edfec743a2fb28,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc4_picnic_royale
-103,camo,weaponoption,#hash_38a2cf22c48d6c3,camo_dlc4_zombie_maitai,0,#hash_43573a9a2a20800c,#hash_38a2cf22c48d6c3,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc4_zombie_maitai
-104,camo,weaponoption,#hash_50acb81dbe07fbfe,camo_dlc4_smokeblast,0,#hash_711600314b552f7d,#hash_50acb81dbe07fbfe,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc4_smokeblast
-105,camo,weaponoption,#hash_21868d247829d827,camo_dlc4_fearhaze,0,#hash_473966bbe87a8938,#hash_21868d247829d827,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc4_fearhaze
-106,camo,weaponoption,#hash_115f614ac4e9cc5a,camo_dlc4_fractalized,0,#hash_33a1f2a5fd863e86,#hash_115f614ac4e9cc5a,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc4_fractalized
-107,camo,weaponoption,#hash_963e4c4a1430d25,camo_dlc4_trifecta,0,#hash_586dd1fdb2bb3969,#hash_963e4c4a1430d25,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc4_trifecta
-108,camo,weaponoption,#hash_3279150dc6bd1b3b,camo_active_sig_ar_accurate_postapocalyptic_base,0,#hash_2add9bd11cb1516,#hash_3279150dc6bd1b3b,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#ar_accurate_t8,0,3,#camo_active_sig_ar_accurate_postapocalyptic_base
-109,camo,weaponoption,#hash_414ce3af89eedef1,camo_active_sig_smg_fastburst_diy_base,0,#hash_36ed8b10ee5ac7e2,#hash_414ce3af89eedef1,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#smg_fastburst_t8,0,2,#camo_active_sig_smg_fastburst_diy_base
-110,camo,weaponoption,#hash_6e86b49d6d5196af,camo_active_sig_sniper_quickscope_zombies_base,0,#hash_7944a4756d72a294,#hash_6e86b49d6d5196af,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#sniper_quickscope_t8,0,2,#camo_active_sig_sniper_quickscope_zombies_base
-111,camo,weaponoption,#hash_5e6ae4119dda43e0,camo_active_sig_ar_damage_fighter_plane_base,0,#hash_75eae1816eb6e975,#hash_5e6ae4119dda43e0,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#ar_damage_t8,0,2,#camo_active_sig_ar_damage_fighter_plane_base
-112,camo,weaponoption,#hash_2a634db8501d93aa,camo_active_sig_ar_standard_adventure_base,0,#hash_6aff0abd206407e0,#hash_2a634db8501d93aa,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#ar_standard_t8,0,2,#camo_active_sig_ar_standard_adventure_base
-113,camo,weaponoption,#hash_7833cc16d9fa0749,camo_dlc5_citrus,0,#hash_3ac68d796ab6f7a,#hash_7833cc16d9fa0749,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc5_citrus
-114,camo,weaponoption,#hash_71bf3704c3ae5a0e,camo_dlc5_connected,0,#hash_7e6c64d7e83244c1,#hash_71bf3704c3ae5a0e,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc5_connected
-115,camo,weaponoption,#hash_41ed99048f6cb7f0,camo_dlc5_datamine,0,#hash_17c95226b5887b3,#hash_41ed99048f6cb7f0,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc5_datamine
-116,camo,weaponoption,#hash_38702abdee3837d0,camo_dlc5_dinoglyph,0,#hash_5f62a354c009d24f,#hash_38702abdee3837d0,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc5_dinoglyph
-117,camo,weaponoption,#hash_3ee20f103a454178,camo_dlc5_jellymaw,0,#hash_5e24fe009a05884f,#hash_3ee20f103a454178,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc5_jellymaw
-118,camo,weaponoption,#hash_6a9c5353f6e0729,camo_dlc5_scratchnsniff,0,#hash_3e3e8c77d3deadae,#hash_6a9c5353f6e0729,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc5_scratchnsniff
-119,camo,weaponoption,#hash_628b6122d68a8d45,camo_dlc5_america,0,#hash_2a2a7585223fbb2e,#hash_628b6122d68a8d45,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc5_america
-120,camo,weaponoption,#hash_7d4c19fb8173c5ee,camo_dlc5_greengradient,0,#hash_61fcfaf5fe31af0d,#hash_7d4c19fb8173c5ee,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc5_greengradient
-121,camo,weaponoption,#hash_226442eca8affe87,camo_dlc5_seaflake,0,#hash_1a63bb8fcafccb84,#hash_226442eca8affe87,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc5_seaflake
-122,camo,weaponoption,#hash_5acae5f224c146a9,camo_dlc5_speedometer,0,#hash_6656021417392a9f,#hash_5acae5f224c146a9,#,,0,0,,0,0,0,0,,,false,loot,#,lootbase,#,,,#camo_dlc5_speedometer
-123,camo,weaponoption,#hash_166b7f0f8f0d22fc,camo_active_sig_shotgun_fullauto_construction_base,0,#hash_4753dcb9e7df4f7c,#hash_166b7f0f8f0d22fc,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#shotgun_fullauto_t8,,2,#camo_active_sig_shotgun_fullauto_construction_base
-124,camo,weaponoption,#hash_15cf0d46af70291b,camo_active_sig_ar_modular_faberge_base,0,#hash_4670638ba7410d12,#hash_15cf0d46af70291b,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#ar_modular_t8,,3,#camo_active_sig_ar_modular_faberge_base
-125,camo,weaponoption,#hash_2f6eb9c102b831ad,camo_active_sig_smg_accurate_darkunicorn_base,0,#hash_26c6fda4919245ad,#hash_2f6eb9c102b831ad,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#smg_accurate_t8,,3,#camo_active_sig_smg_accurate_darkunicorn_base
-126,camo,weaponoption,#hash_758d93baadbc199d,camo_active_sig_pistol_fullauto_arcade_base,0,#hash_2cb1adec0ad4d836,#hash_758d93baadbc199d,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#pistol_fullauto_t8,,2,#camo_active_sig_pistol_fullauto_arcade_base
-127,camo,weaponoption,#hash_709fb6b7fdde6aa8,camo_active_sig_tr_flechette_rivermonster_base,0,#hash_7336ce7527972d35,#hash_709fb6b7fdde6aa8,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#tr_flechette_t8,,1,#camo_active_sig_tr_flechette_rivermonster_base
-128,camo,weaponoption,#hash_420861c64b6e9e7c,camo_active_sig_lmg_heavy_seventies_van_base,0,#hash_6f7b3306b8fcc0b6,#hash_420861c64b6e9e7c,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#lmg_heavy_t8,,2,#camo_active_sig_lmg_heavy_seventies_van_base
-129,camo,weaponoption,#hash_78b448d799b46550,camo_active_dlc5_fractalflames_wrapper,0,#hash_73f08facdb948c31,#hash_78b448d799b46550,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc5_fractalflames_wrapper
-130,camo,weaponoption,#hash_688a1b241ffb922e,camo_active_dlc5_phased_wrapper,0,#hash_557dc9f0f6e6609b,#hash_688a1b241ffb922e,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc5_phased_wrapper
-131,camo,weaponoption,#hash_3d26eb8dafae98e9,camo_active_dlc5_shattered_wrapper,0,#hash_193a00ab5bacb658,#hash_3d26eb8dafae98e9,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc5_shattered_wrapper
-132,camo,weaponoption,#hash_6c8d7834e1591a50,camo_active_dlc5_solarflare_wrapper,0,#hash_47dcb8941c9f1d91,#hash_6c8d7834e1591a50,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc5_solarflare_wrapper
-133,camo,weaponoption,#hash_28f8d698fe4d79d2,camo_active_dlc5_circle_slice_wrapper,0,#hash_2b1e983ebf8ddb27,#hash_28f8d698fe4d79d2,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc5_circle_slice_wrapper
-134,camo,weaponoption,#hash_4ed6f1ab0cbc899b,camo_active_ar_accurate_base,0,#hash_27239f76052aeeee,#hash_4ed6f1ab0cbc899b,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#ar_accurate_t8,1,2,#camo_active_ar_accurate_base
-135,camo,weaponoption,#hash_627f640830ae263b,camo_active_ar_fastfire_base,0,#hash_7f62020c347ebc7a,#hash_627f640830ae263b,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#ar_fastfire_t8,1,2,#camo_active_ar_fastfire_base
-136,camo,weaponoption,#hash_5d7eb1442a4f213,camo_active_lmg_standard_base,0,#hash_73c131f56df6090a,#hash_5d7eb1442a4f213,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#lmg_standard_t8,1,2,#camo_active_lmg_standard_base
-137,camo,weaponoption,#hash_11cfa6d5f521dede,camo_active_pistol_standard_base,0,#hash_7e2d4e2b53becd35,#hash_11cfa6d5f521dede,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#pistol_standard_t8,1,2,#camo_active_pistol_standard_base
-138,camo,weaponoption,#hash_33c5a3d6ed967788,camo_active_shotgun_semiauto_base,0,#hash_9d5922f0eec6a68,#hash_33c5a3d6ed967788,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#shotgun_semiauto_t8,1,2,#camo_active_shotgun_semiauto_base
-139,camo,weaponoption,#hash_31e9d057a03398bf,camo_active_smg_accurate_base,0,#hash_6dc76cd079e56762,#hash_31e9d057a03398bf,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#smg_accurate_t8,1,2,#camo_active_smg_accurate_base
-140,camo,weaponoption,#hash_4a584bc8c443f246,camo_active_smg_standard_base,0,#hash_24fab485e6118431,#hash_4ed6f1ab0cbc899b,#,,0,0,,0,0,0,0,,,false,loot,#,theme,#smg_standard_t8,1,2,#camo_active_smg_standard_base
-141,camo,weaponoption,#hash_7a899f8fa9163c6e,camo_active_headshot_wrapper,0,#hash_6a37be0146c3beb8,#hash_7a899f8fa9163c6e,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_accurate_t8,,,#camo_active_headshot_wrapper
-142,camo,weaponoption,#hash_29d1b41ee09e09b8,camo_active_kill_counter_wrapper,0,#hash_5b98617f102c9579,#hash_29d1b41ee09e09b8,#,,0,0,,0,0,0,0,,,false,loot,#,active,#lmg_standard_t8,,,#camo_active_kill_counter_wrapper
-143,camo,weaponoption,#hash_75c36a6b651e7775,camo_active_kills_without_dying_wrapper,0,#hash_3c750bd534e8edc,#hash_75c36a6b651e7775,#,,0,0,,0,0,0,0,,,false,loot,#,active,#smg_accurate_t8,,,#camo_active_kills_without_dying_wrapper
-144,camo,weaponoption,#hash_6e2fd7423cbe42b0,camo_active_objective_kills_wrapper,0,#hash_76e3d89bb48912b1,#hash_6e2fd7423cbe42b0,#,,0,0,,0,0,0,0,,,false,loot,#,active,#shotgun_semiauto_t8,,,#camo_active_objective_kills_wrapper
-145,camo,weaponoption,#hash_193c1c010f81e229,camo_active_rapid_kills_wrapper,0,#hash_16a7faee68094ad8,#hash_193c1c010f81e229,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_fastfire_t8,,,#camo_active_rapid_kills_wrapper
-146,camo,weaponoption,#hash_3a294441722f3c4d,camo_active_showstopper_wrapper,0,#hash_66e6a3ccd72a7974,#hash_3a294441722f3c4d,#,,0,0,,0,0,0,0,,,false,loot,#,active,#pistol_standard_t8,,,#camo_active_showstopper_wrapper
-147,camo,weaponoption,#hash_43b319457bc818e,camo_active_take_it_personally_wrapper,0,#hash_3b6cd5a9a934eac4,#hash_43b319457bc818e,#,,0,0,,0,0,0,0,,,false,loot,#,active,#smg_standard_t8,,,#camo_active_take_it_personally_wrapper
-148,camo,weaponoption,#hash_652798c8c39df5b0,camo_active_dlc5_symbiosis_wrapper,0,#hash_2c4bb161a71106b4,#hash_652798c8c39df5b0,#,,0,0,,0,0,0,0,,,false,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc5_symbiosis_wrapper
-149,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_0,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_0
-150,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_1,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_1
-151,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_2,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_2
-152,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_3,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_3
-153,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_4,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_4
-154,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_5,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_5
-155,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_6,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_6
-156,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_7,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_7
-157,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_8,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_8
-158,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_9,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_9
-159,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_10,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_10
-160,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_11,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_11
-161,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_12,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_12
-162,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_13,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_13
-163,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_14,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_14
-164,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_15,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_15
-165,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_16,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_16
-166,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_17,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_17
-167,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_18,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_18
-168,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_19,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_19
-169,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_20,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_20
-170,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_21,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_21
-171,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_22,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_22
-172,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_23,0,#,#,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#reticle_23
-173,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_24,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_24
-174,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_25,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_25
-175,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_26,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_26
-176,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_27,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_27
-177,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_28,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_28
-178,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_29,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_29
-179,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_30,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_30
-180,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_31,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_31
-181,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_32,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_32
-182,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_33,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_33
-183,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_34,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_34
-184,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_35,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_35
-185,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_36,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_36
-186,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_37,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_37
-187,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_38,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_38
-188,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_39,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_39
-189,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_40,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_40
-190,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_41,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_41
-191,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_42,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_42
-192,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_43,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_43
-193,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_44,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_44
-194,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_45,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_45
-195,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_46,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_46
-196,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_47,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_47
-197,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_48,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_48
-198,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_49,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_49
-199,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_50,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_50
-200,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_51,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_51
-201,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_52,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_52
-202,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_53,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_53
-203,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_54,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_54
-204,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_55,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_55
-205,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_56,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_56
-206,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_57,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_57
-207,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_58,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_58
-208,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_59,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_59
-209,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_60,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_60
-210,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_61,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_61
-211,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_62,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_62
-212,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_63,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_63
-213,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_64,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_64
-214,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_65,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_65
-215,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_66,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_66
-216,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_67,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_67
-217,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_68,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_68
-218,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_69,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_69
-219,reticle,weaponoption,#hash_7085044e7b80d5a3,reticle_70,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_70
-220,reticle_color,weaponoption,#hash_39bac218bf0160b1,reticle_color_1,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#reticle_color_1
-221,lens,weaponoption,#,lens_default,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#lens_default
-222,lens,weaponoption,#,lens_red,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#lens_red
-223,lens,weaponoption,#,lens_blue,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#lens_blue
-224,lens,weaponoption,#,lens_green,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#lens_green
-225,lens,weaponoption,#,lens_orange,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#lens_orange
-226,lens,weaponoption,#,lens_yellow,0,#,#,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#lens_yellow
-227,tag,weaponoption,#hash_6370b5a97249c317,tag,0,#,#,#,,0,0,,0,0,1,0,,,false,,#,,#,,,#tag
-228,emblem,weaponoption,#hash_7bbe615a9a441e5f,emblem,0,#,#,#,,0,0,,0,0,2,0,,,false,,#,,#,,,#emblem
+0,none,none,7#hash_11d17195d5833bc4,none,0,#weapon_missing_image,7#hash_17ede46111f44fec,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#none
+1,top,optic,7#mpui/acog,acog,0,#ui_icon_attachment_recon,7#hash_2b8096f4212652cb,7#,acog,1,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,FALSE,,#,,#,,,#acog
+2,gunperk,rig,7#hash_5afd03a588cd1c62,adsreload,0,#ui_icon_attachment_adsreloader,7#hash_49281fa933339a32,7#,adsreload,2,0,adsreload,1,0,0,0,,,FALSE,,#,,#,,,#adsreload
+3,muzzle,rig,7#hash_19ab29890f4ebb91,barrelchoke,0,#ui_icon_attachment_chokedbarrel,7#hash_13d29462fd0d57ab,7#hash_61ae56844fb4ecd3,barrelchoke,3,0,barrelchoke,1,0,0,0,,,FALSE,,#,,#,,,#barrelchoke
+4,gunperk,mod,7#mpui/clantag,clantag,0,#cac_mods_clan_tag,7#,7#,clantag,4,0,clantag custom2 killcounter,0,0,0,0,,,FALSE,,#,,#,,,#clantag
+5,gunperk,rig,7#hash_360742434808cf8e,custom1,0,#ui_icon_attachment_rapidfire,7#hash_49e88c8053d4f73e,7#,custom1,5,0,,1,0,0,0,,,FALSE,,#,,#,,,#custom1
+6,gunperk,mod,7#hash_7bf8bcf55e2bd26e,custom2,0,#blacktransparent,7#,7#,custom2,6,0,clantag custom2 killcounter,0,0,0,0,,,FALSE,,#,,#,,,#custom2
+7,gunperk,rig,7#hash_4f23c6ecb321fa19,custom3,0,#ui_icon_attachment_longbarrel,7#hash_366888e106b2bbb3,7#,custom3,7,0,,1,0,0,0,,,FALSE,,#,,#,,,#custom3
+8,none,none,7#hash_11d17195d5833bc4,custom4,0,#weapon_missing_image,7#hash_17ede46111f44fec,7#,custom4,8,0,,0,0,0,0,,,FALSE,,#,,#,,,#custom4
+9,none,none,7#hash_11d17195d5833bc4,custom5,0,#weapon_missing_image,7#hash_17ede46111f44fec,7#,custom5,9,0,,0,0,0,0,,,FALSE,,#,,#,,,#custom5
+10,rig,rig,7#mpui/damage,damage,0,#ui_icon_attachment_highcaliber,7#hash_42047aa0e594d7ce,7#hash_56074383a6c3b738,damage,10,0,damage dw mk,1,0,0,0,,,FALSE,,#,,#,,,#damage
+11,rig,rig,7#mpui/damage2,damage2,0,#ui_icon_attachment_highcaliber2,7#hash_c3550301fc75b8c,7#hash_2903042e98504cc7,damage2,11,0,damage2,1,0,0,0,,,FALSE,,#,,#,,,#damage2
+12,top,optic,7#mpui/dualoptic,dualoptic,0,#ui_icon_attachment_dualoptic,7#hash_24029a6ad88b81e2,7#,dualoptic,12,0,acog dualoptic dw dynzoom elo gl holo ir is mk mms rangefinder reddot reflex sf tacknife vzoom,1,0,0,0,,,FALSE,,#,,#,,,#dualoptic
+13,bottom,uber,7#mpui/dw,dw,0,#ui_icon_attachment_saug_opmod_dual_wield,7#mpui/dw_desc,7#,dw,13,0,acog damage dualoptic dw dynzoom elo extbarrel fastreload2 fmj gl grip holo ir is mk mms quickdraw rangefinder reddot reflex rf sf stackfire stalker stalker2 steadyaim swayreduc tacknife vzoom,2,0,0,0,,,FALSE,,#,,#,,,#dw
+14,top,optic,7#,dynzoom,0,#cac_mods_dynzoom,7#,7#,dynzoom,14,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,FALSE,,#,,#,,,#dynzoom
+15,top,optic,7#mpui/elo,elo,0,#ui_icon_attachment_float_dot,7#hash_25b761f80b963d2d,7#,elo,15,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,FALSE,,#,,#,,,#elo
+16,muzzle,rig,7#mpui/extbarrel,extbarrel,0,#ui_icon_attachment_longbarrel,7#hash_68fe011060c3cc2a,7#,extbarrel,16,0,dw extbarrel mk,1,0,0,0,,,FALSE,,#,,#,,,#extbarrel
+17,muzzle,rig,7#mpui/extbarrel2,extbarrel2,0,#ui_icon_attachment_longbarrel2,7#hash_60ad70a7e7b392a0,7#,extbarrel2,17,0,extbarrel2,1,0,0,0,,,FALSE,,#,,#,,,#extbarrel2
+18,trigger,rig,7#mpui/extclip,extclip,0,#ui_icon_attachment_extendedmags,7#hash_9b21599b0be92c,7#,extclip,18,0,extclip mk,1,0,0,0,,,FALSE,,#,,#,,,#extclip
+19,trigger,rig,7#mpui/extclip2,extclip2,0,#ui_icon_attachment_extendedmags2,7#hash_4ed6dfbae4e23b52,7#,extclip2,19,0,extclip2,1,0,0,0,,,FALSE,,#,,#,,,#extclip2
+20,gunperk,rig,7#hash_549d76181177939a,extrapellets,0,#ui_icon_attachment_shotgun_semiauto_pellets,7#hash_5f68abd42a1cff2a,7#hash_5567d64527c57712,extrapellets,20,0,extrapellets,1,0,0,0,,,FALSE,,#,,#,,,#extrapellets
+21,top,optic,7#hash_40dd44e49656068f,fastlockon,0,#ui_icon_attachment_laser,7#hash_e6b6ba489f41f01,7#,fastlockon,21,0,fastlockon,1,0,0,0,,,FALSE,,#,,#,,,#fastlockon
+22,gunperk,rig,7#mpui/fastreload,fastreload,0,#ui_icon_attachment_fastmags,7#hash_602e0ff43b44d408,7#,fastreload,22,0,fastreload mk,1,0,0,0,,,FALSE,,#,,#,,,#fastreload
+23,gunperk,rig,7#mpui/fastreload2,fastreload2,0,#ui_icon_attachment_fastmags2,7#hash_2eca6fba714f086,7#,fastreload2,23,0,fastreload2 dw,1,0,0,0,,,FALSE,,#,,#,,,#fastreload2
+24,trigger,rig,7#mpui/fmj,fmj,0,#ui_icon_attachment_fmj,7#hash_9b8af453a6a410,7#hash_32f76fa42f85198,fmj,24,0,dw fmj mk,1,0,0,0,,,FALSE,,#,,#,,,#fmj
+25,trigger,rig,7#mpui/fmj2,fmj2,0,#ui_icon_attachment_fmj2,7#hash_28c8d09a7f7e043e,7#hash_387f98b0e40cc796,fmj2,25,0,fmj2,1,0,0,0,,,FALSE,,#,,#,,,#fmj2
+26,bottom,rig,7#mpui/gl,gl,0,#hud_grenade_launcher,7#mpui/gl_desc,7#,gl,26,0,dualoptic dw gl mk sf,1,0,0,0,,,FALSE,,#,,#,,,#gl
+27,bottom,rig,7#mpui/grip,grip,0,#ui_icon_attachment_grip,7#hash_39aeb41b98bc1671,7#,grip,27,0,dw grip mk,1,0,0,0,,,FALSE,,#,,#,,,#grip
+28,bottom,rig,7#mpui/grip2,grip2,0,#ui_icon_attachment_grip2,7#hash_7705cb8207f499e9,7#,grip2,28,0,grip2,1,0,0,0,,,FALSE,,#,,#,,,#grip2
+29,bottom,rig,7#mpui/hipgrip,hipgrip,0,#ui_icon_attachment_grip,7#hash_45d36cd4b3bb6578,7#,hipgrip,29,0,hipgrip,1,0,0,0,,,FALSE,,#,,#,,,#hipgrip
+30,rig,rig,7#hash_2c454eb3fec22798,holdbreath,0,#ui_icon_attachment_stablizer,7#hash_297bd6fbffa55b80,7#,holdbreath,30,0,holdbreath,1,0,0,0,,,FALSE,,#,,#,,,#holdbreath
+31,top,optic,7#mpui/holo,holo,0,#ui_icon_attachment_holo,7#hash_34f83c239da58b2d,7#,holo,31,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,FALSE,,#,,#,,,#holo
+32,top,optic,7#mpui/ir,ir,0,#ui_icon_attachment_thermal,7#mpui/ir_desc,7#,ir,32,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,FALSE,,#,,#,,,#ir
+33,top,optic,7#mpui/is,is,0,#ui_icon_attachment_iron_sights,7#mpui/is_desc,7#,is,33,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,FALSE,,#,,#,,,#is
+34,gunperk,mod,7#mpui/killcounter,killcounter,0,#cac_mods_kill_counter,7#,7#,killcounter,34,0,clantag custom2 killcounter,0,0,0,0,,,FALSE,,#,,#,,,#killcounter
+35,gunperk,rig,7#mpui/mixclip,mixclip,0,#ui_icon_attachment_advancedmags,7#hash_41675721bd9111d3,7#,mixclip,35,0,mixclip,1,0,0,0,,,FALSE,,#,,#,,,#mixclip
+36,bottom,rig,7#mpui/mk,mk,0,#cac_mods_trigger_group,7#mpui/mk_desc,7#,mk,36,0,acog damage dualoptic dw dynzoom elo extbarrel extclip fastreload fmj gl grip holo ir is mk mms quickdraw rangefinder reddot reflex rf sf stackfire stalker steadyaim suppressed swayreduc tacknife vzoom,0,0,0,0,,,FALSE,,#,,#,,,#mk
+37,top,optic,7#mpui/mms,mms,0,#ui_icon_attachment_mms,7#hash_5cc8a98a1a1af336,7#hash_1dffea8c96fdc0fe,mms,37,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,FALSE,,#,,#,,,#mms
+38,none,none,7#mpui/null,null,0,#weapon_missing_image,7#hash_17ede46111f44fec,7#,,38,0,,0,0,0,0,,,FALSE,,#,,#,,,#null
+39,top,optic,7#mpui/pistolscope,pistolscope,0,#ui_icon_attachment_pistolscope,7#hash_651a766bae9b7c5c,7#,pistolscope,39,0,pistolscope,1,0,0,0,,,FALSE,,#,,#,,,#pistolscope
+40,rig,rig,7#mpui/quickdraw,quickdraw,0,#ui_icon_attachment_quickdraw,7#hash_464fb4d63791df24,7#,quickdraw,40,0,dw mk quickdraw,1,0,0,0,,,FALSE,,#,,#,,,#quickdraw
+41,rig,rig,7#mpui/quickdraw2,quickdraw2,0,#ui_icon_attachment_quickdraw2,7#hash_7129c2ef942745a,7#,quickdraw2,41,0,quickdraw2,1,0,0,0,,,FALSE,,#,,#,,,#quickdraw2
+42,top,optic,7#hash_6fe3fbbbbb63092c,rangefinder,0,#cac_mods_rangefinder,7#hash_7afac73e4e0688d4,7#,rangefinder,42,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex swayreduc tacknife vzoom,1,0,0,0,,,FALSE,,#,,#,,,#rangefinder
+43,top,optic,7#mpui/reddot,reddot,0,#ui_icon_attachment_dualoptic,7#hash_3ad0e7a1cbad4cb7,7#,reddot,43,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,FALSE,,#,,#,,,#reddot
+44,top,optic,7#mpui/reflex,reflex,0,#ui_icon_attachment_reflex,7#hash_58f22446fa93e6ab,7#,reflex,44,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,FALSE,,#,,#,,,#reflex
+45,muzzle,rig,7#mpui/rf,rf,0,#ui_icon_attachment_rapidfire,7#mpui/rf_desc,7#,rf,45,0,dw mk rf,1,0,0,0,,,FALSE,,#,,#,,,#rf
+46,bottom,rig,7#mpui/sf,sf,0,#cac_mods_trigger_group,7#mpui/sf_desc,7#,sf,46,0,dualoptic dw gl mk sf,1,0,0,0,,,FALSE,,#,,#,,,#sf
+47,gunperk,rig,7#hash_7a4289cde4df7d84,speedreloader,0,#ui_icon_attachment_speedloader,7#hash_543fe4ea753b9eac,7#,speedreloader,47,0,speedreloader,1,0,0,0,,,FALSE,,#,,#,,,#speedreloader
+48,trigger,rig,7#mpui/burst2,stackfire,0,#cac_mods_tribolt,7#hash_6443239d452b1e8d,7#,stackfire,48,0,dw mk stackfire,1,0,0,0,,,FALSE,,#,,#,,,#stackfire
+49,gunperk,rig,7#mpui/stalker,stalker,0,#ui_icon_attachment_stock,7#hash_74bcbdc19707392f,7#,stalker,49,0,dw mk stalker,1,0,0,0,,,FALSE,,#,,#,,,#stalker
+50,gunperk,rig,7#mpui/stalker2,stalker2,0,#ui_icon_attachment_stock2,7#hash_72b5e12c9c5b3bf,7#,stalker2,50,0,dw stalker2,1,0,0,0,,,FALSE,,#,,#,,,#stalker2
+51,gunperk,rig,7#mpui/steadyaim,steadyaim,0,#ui_icon_attachment_laser,7#hash_3e4a67b0d74a662a,7#,steadyaim,51,0,dw mk steadyaim,1,0,0,0,,,FALSE,,#,,#,,,#steadyaim
+52,gunperk,rig,7#mpui/steadyaim2,steadyaim2,0,#ui_icon_attachment_laser2,7#hash_5819d3514e6b40a0,7#,steadyaim2,52,0,steadyaim2,1,0,0,0,,,FALSE,,#,,#,,,#steadyaim2
+53,gunperk,rig,7#mpui/supply,supply,0,#ui_icon_attachment_bandolier,7#hash_14ad824a233eedc,7#,supply,53,0,supply,1,0,0,0,,,FALSE,,#,,#,,,#supply
+54,rig,rig,7#mpui/suppressed,suppressed,0,#ui_icon_attachment_supressor,7#hash_175b0c2ccec045a3,7#hash_3d7abb3373fab887,suppressed,54,0,mk suppressed,1,0,0,0,,,FALSE,,#,,#,,,#suppressed
+55,rig,rig,7#hash_701c5f025eb74ec6,swayreduc,0,#ui_icon_attachment_stablizer,7#hash_2c3e9e30064c8db6,7#,swayreduc,55,0,dw mk rangefinder swayreduc,1,0,0,0,,,FALSE,,#,,#,,,#swayreduc
+56,gunperk,rig,7#hash_3ddb056b79311ade,tacknife,0,#cac_mods_tact_knife,7#hash_7e61522bc8bc3dee,7#,tacknife,56,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,FALSE,,#,,#,,,#tacknife
+57,gunperk,uber,7#mpui/uber,uber,0,#ui_icon_attachment_smg_accurate_opmod_wildfire,7#hash_192620fbfe2bb385,7#,uber,57,0,uber,2,0,0,0,,,FALSE,,#,,#,,,#uber
+58,top,optic,7#mpui/vzoom,vzoom,0,#cac_mods_var_zoom,7#hash_5071aa2f1fc20b4c,7#,vzoom,58,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,FALSE,,#,,#,,,#vzoom
+0,camo,weaponoption,7#mpui/none,camo_none,0,#menu_cac_none,7#mpui/none,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#camo_none
+1,camo,weaponoption,7#hash_768c5aeecc2d7cc4,camo_alfa,0,#hash_711086aed7528885,7#hash_4361bc63de0848d3,7#,,0,0,,0,0,0,1000,,,FALSE,mp,#,perf,#,,,#camo_alfa
+2,camo,weaponoption,7#hash_2d003d6a1240093c,camo_alfa_wz,0,#hash_6eba51005ba9a081,7#hash_7664f631b276facc,7#,,0,0,,0,0,0,1000,,,FALSE,wz,#,perf,#,,,#camo_alfa_wz
+3,camo,weaponoption,7#hash_23184906a849ac54,camo_alfa_zm,0,#hash_542e9a1cf0161ba5,7#hash_47e1955bea1fc19,7#,,0,0,,0,0,0,1000,,,FALSE,zm,#,perf,#,,,#camo_alfa_zm
+4,camo,weaponoption,7#hash_c0c2aecab7c9830,camo_bravo,0,#hash_6330d30074e798f9,7#hash_4a324d42cf256472,7#,,0,0,,0,0,0,1000,,,FALSE,mp,#,perf,#,,,#camo_bravo
+5,camo,weaponoption,7#hash_6aee422878d572b9,camo_bravo_wz,0,#hash_65a3dc74c6c8e0dd,7#hash_3292e34998476e76,7#,,0,0,,0,0,0,1000,,,FALSE,wz,#,perf,#,,,#camo_bravo_wz
+6,camo,weaponoption,7#hash_506621193b404166,camo_bravo_zm,0,#hash_349f397a9a5bb7c1,7#hash_11844df90c43c32c,7#,,0,0,,0,0,0,1000,,,FALSE,zm,#,perf,#,,,#camo_bravo_zm
+7,camo,weaponoption,7#hash_246c7d9118b22299,camo_charlie,0,#hash_5fbf8a233ce27d7b,7#hash_1c93858d6991c626,7#,,0,0,,0,0,0,1000,,,FALSE,mp,#,perf,#,,,#camo_charlie
+8,camo,weaponoption,7#hash_3e42591da1c1538f,camo_charlie_wz,0,#hash_4a0c7c94f04173c7,7#hash_639a907fae7467b1,7#,,0,0,,0,0,0,1000,,,FALSE,wz,#,perf,#,,,#camo_charlie_wz
+9,camo,weaponoption,7#hash_4c2bbe6f91c1ca94,camo_charlie_zm,0,#hash_28661b9ceee03937,7#hash_60a2e99cf0e191e1,7#,,0,0,,0,0,0,1000,,,FALSE,zm,#,perf,#,,,#camo_charlie_zm
+10,camo,weaponoption,7#hash_6a4930978aef6c45,camo_delta,0,#hash_20ee83883ec8d08f,7#hash_2b40461a235c9616,7#,,0,0,,0,0,0,1000,,,FALSE,mp,#,perf,#,,,#camo_delta
+11,camo,weaponoption,7#hash_33f013eacb53964c,camo_delta_wz,0,#hash_be13fc523d74bb3,7#hash_2f75827412f48897,7#,,0,0,,0,0,0,1000,,,FALSE,wz,#,perf,#,,,#camo_delta_wz
+12,camo,weaponoption,7#hash_2aa6fa1848766679,camo_delta_zm,0,#hash_2e9f03f857c34bc3,7#hash_44149fa37d4d853f,7#,,0,0,,0,0,0,1000,,,FALSE,zm,#,perf,#,,,#camo_delta_zm
+13,camo,weaponoption,7#hash_40c47b72c083914,camo_echo,0,#hash_3497e3faea3f47d4,7#hash_5b7536f294f156a6,7#,,0,0,,0,0,0,1000,,,FALSE,mp,#,perf,#,,,#camo_echo
+14,camo,weaponoption,7#hash_5e2c81adb5a5264a,camo_echo_wz,0,#hash_26d4d474451b2e5e,7#hash_3e968f73a7d7e44e,7#,,0,0,,0,0,0,1000,,,FALSE,wz,#,perf,#,,,#camo_echo_wz
+15,camo,weaponoption,7#hash_3ae42f7d6eabab5a,camo_echo_zm,0,#hash_1f46284b7f61debe,7#hash_51252660f83e3872,7#,,0,0,,0,0,0,1000,,,FALSE,zm,#,perf,#,,,#camo_echo_zm
+16,camo,weaponoption,7#hash_4dff11036295b59f,camo_foxtrot,0,#hash_3e84e5f0110025bd,7#hash_52de177886494628,7#,,2,0,,0,0,0,0,,,FALSE,mp,#,perf,#,,,#camo_foxtrot
+17,camo,weaponoption,7#hash_25d3f454e864bb4a,camo_foxtrot_wz,0,#hash_306c399819b0ede9,7#hash_3bad41af24cc7ed5,7#,,0,0,,0,0,0,0,,,FALSE,wz,#,perf,#,,,#camo_foxtrot_wz
+18,camo,weaponoption,7#hash_4d048d939c70cad9,camo_foxtrot_zm,0,#hash_1c905cc4ebf687bd,7#hash_5abca820cfab2cd8,7#,,2,0,,0,0,0,0,,,FALSE,zm,#,perf,#,,,#camo_foxtrot_zm
+19,camo,weaponoption,7#hash_6063cd6ae0f6ce28,camo_golf,0,#hash_4819e41b4d1c1425,7#hash_23d45d79e7cc975d,7#,,0,0,,0,0,0,0,,,FALSE,mp,#,perf,#,,,#camo_golf
+20,camo,weaponoption,7#hash_4973da5ba484b2ae,camo_golf_wz,0,#hash_e9ce32f92c16fe1,7#hash_2462544f3066322a,7#,,0,0,,0,0,0,0,,,FALSE,wz,#,perf,#,,,#camo_golf_wz
+21,camo,weaponoption,7#hash_3640fdfd426ba4b4,camo_golf_zm,0,#hash_5e6789e0c225b105,7#hash_7db4187f695ce2a6,7#,,0,0,,0,0,0,0,,,FALSE,zm,#,perf,#,,,#camo_golf_zm
+22,camo,weaponoption,7#hash_629d187300caa85d,camo_hotel,0,#hash_49a3098b1e1e205b,7#hash_5ec68d99caf17930,7#,,0,0,,0,0,0,0,,,FALSE,mp,#,perf,#,,,#camo_hotel
+23,camo,weaponoption,7#hash_95c5021b448b56,camo_hotel_wz,0,#hash_6c9bcae577ed2167,7#hash_502cca55de20d536,7#,,0,0,,0,0,0,0,,,FALSE,wz,#,perf,#,,,#camo_hotel_wz
+24,camo,weaponoption,7#hash_25fc6c872fa95f5e,camo_hotel_zm,0,#hash_217969e88e8b88d7,7#hash_6d832831f5532f00,7#,,0,0,,0,0,0,0,,,FALSE,zm,#,perf,#,,,#camo_hotel_zm
+25,camo,weaponoption,7#hash_607993fb651c3014,camo_india,0,#hash_28c9a231816028ca,7#hash_15b50559752dd744,7#,,0,0,,0,0,0,0,,,FALSE,mp,#,perf,#,,,#camo_india
+26,camo,weaponoption,7#hash_26adc6b84f143b29,camo_india_wz,0,#hash_a0e84e74ba48844,7#hash_25811ef8abc80b1f,7#,,0,0,,0,0,0,0,,,FALSE,wz,#,perf,#,,,#camo_india_wz
+27,camo,weaponoption,7#hash_78d753143b405d88,camo_india_zm,0,#hash_d381cd35adc66c8,7#hash_62503932e1d53a87,7#,,0,0,,0,0,0,0,,,FALSE,zm,#,perf,#,,,#camo_india_zm
+28,camo,weaponoption,7#hash_5c28147c226eb600,camo_juliett,0,#hash_12fed9984b8ed628,7#hash_5c28147c226eb600,7#,,0,0,,0,0,0,0,,,FALSE,mp,#,tech,#,,,#camo_juliett
+29,camo,weaponoption,7#hash_5f17105e484faba8,camo_juliett_wz,0,#hash_35dc278d139a7c8a,7#hash_5f17105e484faba8,7#,,0,0,,0,0,0,0,,,FALSE,wz,#,tech,#,,,#camo_juliett_wz
+30,camo,weaponoption,7#hash_66d33b296eb64fbc,camo_juliett_zm,0,#hash_35dce0b6d140d15a,7#hash_66d33b296eb64fbc,7#,,0,0,,0,0,0,0,,,FALSE,zm,#,tech,#,,,#camo_juliett_zm
+31,camo,weaponoption,7#hash_7e31505384e0837a,camo_kilo,0,#hash_19150616872a7dbc,7#hash_7e31505384e0837a,7#,,0,0,,0,0,0,0,,,FALSE,mp,#,tech,#,,,#camo_kilo
+32,camo,weaponoption,7#hash_3ca968dee9e5dc02,camo_kilo_wz,0,#hash_57a8cb9b548bfd36,7#hash_3ca968dee9e5dc02,7#,,0,0,,0,0,0,0,,,FALSE,wz,#,tech,#,,,#camo_kilo_wz
+33,camo,weaponoption,7#hash_665fcaf288735f26,camo_kilo_zm,0,#hash_3e19ece7f5633306,7#hash_665fcaf288735f26,7#,,0,0,,0,0,0,0,,,FALSE,zm,#,tech,#,,,#camo_kilo_zm
+34,camo,weaponoption,7#hash_36be4a2f9e325b50,camo_lima,0,#hash_3c9af6890064158,7#hash_36be4a2f9e325b50,7#,,0,0,,0,0,0,0,,,FALSE,mp,#,tech,#,,,#camo_lima
+35,camo,weaponoption,7#hash_2628f8facd7d3398,camo_lima_wz,0,#hash_7794f6fe9510297a,7#hash_2628f8facd7d3398,7#,,0,0,,0,0,0,0,,,FALSE,wz,#,tech,#,,,#camo_lima_wz
+36,camo,weaponoption,7#hash_17783814d047454c,camo_lima_zm,0,#hash_197bbb0a109e986a,7#hash_17783814d047454c,7#,,0,0,,0,0,0,0,,,FALSE,zm,#,tech,#,,,#camo_lima_zm
+37,camo,weaponoption,7#hash_7564cce16f4274f6,camo_mike,0,#hash_7c18fcbdfb3a4d5b,7#hash_7564cce16f4274f6,7#,,0,0,,0,0,0,0,,,FALSE,mp,#,tech,#,,,#camo_mike
+38,camo,weaponoption,7#hash_68aa6bf5db640dde,camo_mike_wz,0,#hash_25aaaa61b9653067,7#hash_68aa6bf5db640dde,7#,,0,0,,0,0,0,0,,,FALSE,wz,#,tech,#,,,#camo_mike_wz
+39,camo,weaponoption,7#hash_58b7aeee47f428da,camo_mike_zm,0,#hash_5a884964d00397d7,7#hash_58b7aeee47f428da,7#,,0,0,,0,0,0,0,,,FALSE,zm,#,tech,#,,,#camo_mike_zm
+40,camo,weaponoption,7#hash_556fbdaebf02d158,camo_november,0,#hash_6043ed4415dbb7b7,7#hash_556fbdaebf02d158,7#,,0,0,,0,0,0,0,,,FALSE,mp,#,tech,#,,,#camo_november
+41,camo,weaponoption,7#hash_4f0d8ebb363015e0,camo_november_wz,0,#hash_e516a93bdf76eb,7#hash_4f0d8ebb363015e0,7#,,0,0,,0,0,0,0,,,FALSE,wz,#,tech,#,,,#camo_november_wz
+42,camo,weaponoption,7#hash_43b0cfc850dbcc04,camo_november_zm,0,#hash_2ba186e8d0518eb,7#hash_43b0cfc850dbcc04,7#,,0,0,,0,0,0,0,,,FALSE,zm,#,tech,#,,,#camo_november_zm
+43,camo,weaponoption,7#hash_13f64b913a8510ce,camo_gold,0,#menu_camo_gold_pattern,7#hash_13f64b913a8510ce,7#,,0,0,,0,0,0,0,,,FALSE,,#,mstr,#,,,#camo_gold
+44,camo,weaponoption,7#hash_4b105b524a93b53d,camo_diamond,0,#menu_camo_diamond_pattern,7#hash_4b105b524a93b53d,7#,,0,0,,0,0,0,0,,,FALSE,,#,mstr,#,,,#camo_diamond
+45,camo,weaponoption,7#hash_2b3d791eb05ec296,camo_darkmatter,0,#menu_camo_darkmatter_pattern,7#hash_2b3d791eb05ec296,7#,,0,0,,0,0,0,0,,,FALSE,,#,mstr,#,,,#camo_darkmatter
+46,camo,weaponoption,7#hash_30f532e9051a3691,camo_active_dlc2_retro_vegas_neon_wrapper,0,#hash_254ba497ff72c798,7#hash_30f532e9051a3691,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_stealth_t8,,,#camo_active_dlc2_retro_vegas_neon_wrapper
+47,camo,weaponoption,7#hash_2b0fae1c09a3d8a9,camo_active_dlc2_zombie_flick_wrapper,0,#hash_4d5ec8024d178a91,7#hash_2b0fae1c09a3d8a9,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#tr_longburst_t8,,,#camo_active_dlc2_zombie_flick_wrapper
+48,camo,weaponoption,7#hash_1c07c87a45375aaf,camo_active_dlc2_party_rock_wrapper,0,#hash_2fc93a78541b61f2,7#hash_1c07c87a45375aaf,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#smg_handling_t8,,,#camo_active_dlc2_party_rock_wrapper
+49,camo,weaponoption,7#hash_5dc620aa9640e528,camo_active_dlc2_apb_wrapper,0,#hash_4a2071f4b31ea691,7#hash_5dc620aa9640e528,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_fastfire_t8,,,#camo_active_dlc2_apb_wrapper
+50,camo,weaponoption,7#,camo_loot_placeholder_72,0,#hash_23110fdf868a130c,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#camo_loot_placeholder_72
+51,camo,weaponoption,7#,camo_loot_placeholder_73,0,#hash_231110df868a14bf,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#camo_loot_placeholder_73
+52,camo,weaponoption,7#hash_3dfd2cf9c5589207,camo_dlc1_cherryblossom,0,#hash_1de963d728da84c1,7#hash_3dfd2cf9c5589207,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc1_cherryblossom
+53,camo,weaponoption,7#hash_f3011ec9092dca2,camo_dlc1_circuitboard,0,#hash_56e3ceaedeec6738,7#hash_f3011ec9092dca2,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc1_circuitboard
+54,camo,weaponoption,7#hash_255c9cc584359d0e,camo_dlc1_shimmer,0,#hash_591a633052b253d0,7#hash_255c9cc584359d0e,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc1_shimmer
+55,camo,weaponoption,7#hash_9340177dbe3be9f,camo_dlc1_roadhouse,0,#hash_562113cb41be1e31,7#hash_9340177dbe3be9f,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc1_roadhouse
+56,camo,weaponoption,7#hash_77dce7635423ba68,camo_active_dlc1_cyberpunk_wrapper,0,#hash_383e5f2612d0fb78,7#hash_77dce7635423ba68,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_damage_t8,,,#camo_active_dlc1_cyberpunk_wrapper
+57,camo,weaponoption,7#hash_7fd496c4cf9ec713,camo_active_dlc1_plasma_drive_wrapper,0,#hash_235572ca2598640c,7#hash_7fd496c4cf9ec713,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_modular_t8,,,#camo_active_dlc1_plasma_drive_wrapper
+58,camo,weaponoption,7#hash_663114aa52ffcb21,camo_active_dlc1_ww2_wrapper,0,#hash_3a3600ecdda33ed1,7#hash_663114aa52ffcb21,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#shotgun_pump_t8,,,#camo_active_dlc1_ww2_wrapper
+59,camo,weaponoption,7#hash_561a6371fe1e6f3a,camo_active_dlc1_vice_wrapper,0,#hash_1164a0045c4e92bc,7#hash_561a6371fe1e6f3a,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#lmg_spray_t8,,,#camo_active_dlc1_vice_wrapper
+60,camo,weaponoption,7#hash_4a6f079813e273c3,camo_active_dlc1_dogfight_wrapper,0,#hash_715e18e76b380a01,7#hash_4a6f079813e273c3,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#smg_fastfire_t8,,,#camo_active_dlc1_dogfight_wrapper
+61,camo,weaponoption,7#hash_24c9561478db5594,camo_active_dlc1_masks_wrapper,0,#hash_7c01798c4f5b1384,7#hash_24c9561478db5594,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#sniper_quickscope_t8,,,#camo_active_dlc1_masks_wrapper
+62,camo,weaponoption,7#hash_1960a6223dd21d1a,camo_active_sig_smg_handling_hunter_base,0,#hash_34a51039d0ba2444,7#hash_1960a6223dd21d1a,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#smg_handling_t8,0,2,#camo_active_sig_smg_handling_hunter_base
+63,camo,weaponoption,7#hash_452fd06faf792671,camo_active_sig_sniper_powerbolt_viking_base,0,#hash_42607eea4265a233,7#hash_452fd06faf792671,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#sniper_powerbolt_t8,0,2,#camo_active_sig_sniper_powerbolt_viking_base
+64,camo,weaponoption,7#hash_3041bf105b58c16a,camo_active_sig_ar_stealth_vampire_base,0,#hash_44336a8647573176,7#hash_3041bf105b58c16a,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#ar_stealth_t8,0,2,#camo_active_sig_ar_stealth_vampire_base
+65,camo,weaponoption,7#hash_7d3e69af1a992cec,camo_active_sig_tr_midburst_bomber_base,0,#hash_6eb24ec3fe1e988f,7#hash_7d3e69af1a992cec,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#tr_midburst_t8,0,2,#camo_active_sig_tr_midburst_bomber_base
+66,camo,weaponoption,7#hash_11416e3dffba8d50,camo_active_sig_pistol_revolver_cyberpunk_base,0,#hash_39b539d68a61dfa3,7#hash_11416e3dffba8d50,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#pistol_revolver_t8,0,2,#camo_active_sig_pistol_revolver_cyberpunk_base
+67,camo,weaponoption,7#hash_208eb7d41301aac0,camo_dlc2_benjamins,0,#hash_36ac4a17a0dc3dc5,7#hash_208eb7d41301aac0,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc2_benjamins
+68,camo,weaponoption,7#hash_3916397fbdb60669,camo_dlc2_street_race,0,#hash_55bf21645e17b059,7#hash_3916397fbdb60669,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc2_street_race
+69,camo,weaponoption,7#hash_43374b5ab9becdaa,camo_dlc2_blue_up,0,#hash_230a19cbecd211d8,7#hash_43374b5ab9becdaa,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc2_blue_up
+70,camo,weaponoption,7#hash_6e155a8da74ae1b6,camo_dlc2_smooch,0,#hash_2126542c29ebf182,7#hash_6e155a8da74ae1b6,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc2_smooch
+71,camo,weaponoption,7#hash_17c0eb37199a2d92,camo_dlc2_full_suite,0,#hash_17a6a4df5c3cfd11,7#hash_17c0eb37199a2d92,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc2_full_suite
+72,camo,weaponoption,7#hash_6c1e82cce2e2763e,camo_dlc2_donuts,0,#menu_camo_donuts,7#hash_6c1e82cce2e2763e,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc2_donuts
+73,camo,weaponoption,7#hash_2b27d20d2cfc1069,camo_active_sig_ar_modular_porcelain_base,0,#hash_21a5cbeb4a68faf,7#hash_2b27d20d2cfc1069,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#ar_modular_t8,0,2,#camo_active_sig_ar_modular_porcelain_base
+74,camo,weaponoption,7#hash_870732dcf823d00,camo_active_sig_shotgun_pump_police_base,0,#hash_1e651ed39e161a2a,7#hash_870732dcf823d00,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#shotgun_pump_t8,0,2,#camo_active_sig_shotgun_pump_police_base
+75,camo,weaponoption,7#hash_2d85a60f366822d1,camo_active_sig_smg_capacity_spaceshuttle_base,0,#hash_3025fd1219c67099,7#hash_2d85a60f366822d1,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#smg_capacity_t8,0,2,#camo_active_sig_smg_capacity_spaceshuttle_base
+76,camo,weaponoption,7#hash_74978fc95bfb2bfd,camo_active_sig_tr_powersemi_rustymech_base,0,#hash_47d5e60d25df2fc,7#hash_74978fc95bfb2bfd,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#tr_powersemi_t8,0,2,#camo_active_sig_tr_powersemi_rustymech_base
+77,camo,weaponoption,7#hash_38698d6863661eb6,camo_active_sig_sniper_fastrechamber_western_base,0,#hash_6a7fe57ffbe35b6f,7#hash_38698d6863661eb6,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#sniper_fastrechamber_t8,0,2,#camo_active_sig_sniper_fastrechamber_western_base
+78,camo,weaponoption,7#hash_7725a43a5e8755ad,camo_promo_purple,0,#menu_camo_promo_purple_pattern,7#hash_7725a43a5e8755ad,7#,,0,0,,0,0,0,0,,,FALSE,loot,#hash_2a3075cc426f24e7,lootbase,#,,,#camo_promo_purple
+79,camo,weaponoption,7#hash_77f9d83f9e77c0d3,camo_active_dlc3_celestial_wrapper,0,#hash_4da08977b57d6015,7#hash_77f9d83f9e77c0d3,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc3_celestial_wrapper
+80,camo,weaponoption,7#hash_2cab672fd372f942,camo_active_dlc3_mystic_wrapper,0,#hash_61c8e67fb6c54d98,7#hash_2cab672fd372f942,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc3_mystic_wrapper
+81,camo,weaponoption,7#hash_ee567911dd1ce83,camo_active_sig_lmg_spray_venom_base,0,#hash_3f56b2bf7232c8fa,7#hash_ee567911dd1ce83,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#lmg_spray_t8,0,1,#camo_active_sig_lmg_spray_venom_base
+82,camo,weaponoption,7#hash_5be026b2781b8c9,camo_active_sig_pistol_burst_raven_base,0,#hash_27d6e241e67e3b94,7#hash_5be026b2781b8c9,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#pistol_burst_t8,0,2,#camo_active_sig_pistol_burst_raven_base
+83,camo,weaponoption,7#hash_3824d76b4a721017,camo_active_sig_smg_fastfire_voyage_base,0,#hash_7b03e611756e1016,7#hash_3824d76b4a721017,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#smg_fastfire_t8,0,2,#camo_active_sig_smg_fastfire_voyage_base
+84,camo,weaponoption,7#hash_e2971bbfafcfe66,camo_active_sig_sniper_powersemi_vietnam_base,0,#hash_44e96a082062886c,7#hash_e2971bbfafcfe66,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#sniper_powersemi_t8,0,2,#camo_active_sig_sniper_powersemi_vietnam_base
+85,camo,weaponoption,7#hash_d8622d38b0078a8,camo_active_sig_tr_longburst_scrimshaw_base,0,#hash_2869b008a65618bb,7#hash_d8622d38b0078a8,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#tr_longburst_t8,0,2,#camo_active_sig_tr_longburst_scrimshaw_base
+86,camo,weaponoption,7#hash_14b9981c6e3d2f76,camo_active_dlc3_treasure_wrapper,0,#hash_476c680e6632cc03,7#hash_14b9981c6e3d2f76,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc3_treasure_wrapper
+87,camo,weaponoption,7#hash_3de8e053a2e6c69b,camo_dlc3_assassin,0,#hash_4cfc3b625071b1cf,7#hash_3de8e053a2e6c69b,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc3_assassin
+88,camo,weaponoption,7#hash_7a780871028530f5,camo_dlc3_stealth_seal,0,#hash_521668652e6e650c,7#hash_7a780871028530f5,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc3_stealth_seal
+89,camo,weaponoption,7#hash_54e4fb1367aa3001,camo_dlc3_shark_plaque,0,#hash_7b06317da9e0720d,7#hash_54e4fb1367aa3001,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc3_shark_plaque
+90,camo,weaponoption,7#hash_714cce81de873f11,camo_dlc3_armor,0,#hash_61189eaa5c0e3d56,7#hash_714cce81de873f11,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc3_armor
+91,camo,weaponoption,7#hash_560d002c6e40e5df,camo_dlc3_blowfish,0,#hash_7c10fd192409792f,7#hash_560d002c6e40e5df,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc3_blowfish
+92,camo,weaponoption,7#hash_694b66b1b888e2a8,camo_dlc3_board_shorts,0,#hash_5f38f940fb16ed6e,7#hash_694b66b1b888e2a8,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc3_board_shorts
+93,camo,weaponoption,7#hash_24a3e0f402bfd000,camo_dlc3_twitch_prime3,0,#menu_camo_promo_sourcherry_pattern,7#hash_24a3e0f402bfd000,7#,,0,0,,0,0,0,0,,,FALSE,loot,#hash_74ca77fc7779f36,lootbase,#,,,#camo_dlc3_twitch_prime3
+94,camo,weaponoption,7#hash_5835ce824db9fc92,camo_dlc3_bacon,0,#hash_29502d03942e009a,7#hash_5835ce824db9fc92,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc3_bacon
+95,camo,weaponoption,7#hash_3cbdafac7f4a7bd2,camo_active_dlc4_spinal_wrapper,0,#hash_4790b3418074598c,7#hash_3cbdafac7f4a7bd2,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc4_spinal_wrapper
+96,camo,weaponoption,7#hash_367dd4c3c93edc80,camo_active_dlc4_115_wrapper,0,#hash_3a26df5787c56101,7#hash_367dd4c3c93edc80,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc4_115_wrapper
+97,camo,weaponoption,7#hash_33105d49e7fd102e,camo_active_dlc4_brains_wrapper,0,#hash_5703a15943fd461b,7#hash_33105d49e7fd102e,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc4_brains_wrapper
+98,camo,weaponoption,7#hash_4ecfa703971b8aae,camo_dlc4_afterglow,0,#hash_49961a967f8025f6,7#hash_4ecfa703971b8aae,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_afterglow
+99,camo,weaponoption,7#hash_22ec60cd78b8277f,camo_dlc4_astronomy,0,#hash_431e56a4b4a563cb,7#hash_22ec60cd78b8277f,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_astronomy
+100,camo,weaponoption,7#hash_18b7797e532aa1bb,camo_dlc4_goosebumps,0,#hash_3543d441f2a7f0f3,7#hash_18b7797e532aa1bb,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_goosebumps
+101,camo,weaponoption,7#hash_7e6ea41ef4c9afe6,camo_dlc4_paradise,0,#hash_30adeb7263eb8ca8,7#hash_7e6ea41ef4c9afe6,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_paradise
+102,camo,weaponoption,7#hash_25edfec743a2fb28,camo_dlc4_picnic_royale,0,#hash_7d97b1d1ae2be9b1,7#hash_25edfec743a2fb28,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_picnic_royale
+103,camo,weaponoption,7#hash_38a2cf22c48d6c3,camo_dlc4_zombie_maitai,0,#hash_43573a9a2a20800c,7#hash_38a2cf22c48d6c3,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_zombie_maitai
+104,camo,weaponoption,7#hash_50acb81dbe07fbfe,camo_dlc4_smokeblast,0,#hash_711600314b552f7d,7#hash_50acb81dbe07fbfe,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_smokeblast
+105,camo,weaponoption,7#hash_21868d247829d827,camo_dlc4_fearhaze,0,#hash_473966bbe87a8938,7#hash_21868d247829d827,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_fearhaze
+106,camo,weaponoption,7#hash_115f614ac4e9cc5a,camo_dlc4_fractalized,0,#hash_33a1f2a5fd863e86,7#hash_115f614ac4e9cc5a,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_fractalized
+107,camo,weaponoption,7#hash_963e4c4a1430d25,camo_dlc4_trifecta,0,#hash_586dd1fdb2bb3969,7#hash_963e4c4a1430d25,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_trifecta
+108,camo,weaponoption,7#hash_3279150dc6bd1b3b,camo_active_sig_ar_accurate_postapocalyptic_base,0,#hash_2add9bd11cb1516,7#hash_3279150dc6bd1b3b,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#ar_accurate_t8,0,3,#camo_active_sig_ar_accurate_postapocalyptic_base
+109,camo,weaponoption,7#hash_414ce3af89eedef1,camo_active_sig_smg_fastburst_diy_base,0,#hash_36ed8b10ee5ac7e2,7#hash_414ce3af89eedef1,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#smg_fastburst_t8,0,2,#camo_active_sig_smg_fastburst_diy_base
+110,camo,weaponoption,7#hash_6e86b49d6d5196af,camo_active_sig_sniper_quickscope_zombies_base,0,#hash_7944a4756d72a294,7#hash_6e86b49d6d5196af,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#sniper_quickscope_t8,0,2,#camo_active_sig_sniper_quickscope_zombies_base
+111,camo,weaponoption,7#hash_5e6ae4119dda43e0,camo_active_sig_ar_damage_fighter_plane_base,0,#hash_75eae1816eb6e975,7#hash_5e6ae4119dda43e0,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#ar_damage_t8,0,2,#camo_active_sig_ar_damage_fighter_plane_base
+112,camo,weaponoption,7#hash_2a634db8501d93aa,camo_active_sig_ar_standard_adventure_base,0,#hash_6aff0abd206407e0,7#hash_2a634db8501d93aa,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#ar_standard_t8,0,2,#camo_active_sig_ar_standard_adventure_base
+113,camo,weaponoption,7#hash_7833cc16d9fa0749,camo_dlc5_citrus,0,#hash_3ac68d796ab6f7a,7#hash_7833cc16d9fa0749,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc5_citrus
+114,camo,weaponoption,7#hash_71bf3704c3ae5a0e,camo_dlc5_connected,0,#hash_7e6c64d7e83244c1,7#hash_71bf3704c3ae5a0e,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc5_connected
+115,camo,weaponoption,7#hash_41ed99048f6cb7f0,camo_dlc5_datamine,0,#hash_17c95226b5887b3,7#hash_41ed99048f6cb7f0,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc5_datamine
+116,camo,weaponoption,7#hash_38702abdee3837d0,camo_dlc5_dinoglyph,0,#hash_5f62a354c009d24f,7#hash_38702abdee3837d0,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc5_dinoglyph
+117,camo,weaponoption,7#hash_3ee20f103a454178,camo_dlc5_jellymaw,0,#hash_5e24fe009a05884f,7#hash_3ee20f103a454178,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc5_jellymaw
+118,camo,weaponoption,7#hash_6a9c5353f6e0729,camo_dlc5_scratchnsniff,0,#hash_3e3e8c77d3deadae,7#hash_6a9c5353f6e0729,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc5_scratchnsniff
+119,camo,weaponoption,7#hash_628b6122d68a8d45,camo_dlc5_america,0,#hash_2a2a7585223fbb2e,7#hash_628b6122d68a8d45,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc5_america
+120,camo,weaponoption,7#hash_7d4c19fb8173c5ee,camo_dlc5_greengradient,0,#hash_61fcfaf5fe31af0d,7#hash_7d4c19fb8173c5ee,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc5_greengradient
+121,camo,weaponoption,7#hash_226442eca8affe87,camo_dlc5_seaflake,0,#hash_1a63bb8fcafccb84,7#hash_226442eca8affe87,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc5_seaflake
+122,camo,weaponoption,7#hash_5acae5f224c146a9,camo_dlc5_speedometer,0,#hash_6656021417392a9f,7#hash_5acae5f224c146a9,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc5_speedometer
+123,camo,weaponoption,7#hash_166b7f0f8f0d22fc,camo_active_sig_shotgun_fullauto_construction_base,0,#hash_4753dcb9e7df4f7c,7#hash_166b7f0f8f0d22fc,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#shotgun_fullauto_t8,,2,#camo_active_sig_shotgun_fullauto_construction_base
+124,camo,weaponoption,7#hash_15cf0d46af70291b,camo_active_sig_ar_modular_faberge_base,0,#hash_4670638ba7410d12,7#hash_15cf0d46af70291b,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#ar_modular_t8,,3,#camo_active_sig_ar_modular_faberge_base
+125,camo,weaponoption,7#hash_2f6eb9c102b831ad,camo_active_sig_smg_accurate_darkunicorn_base,0,#hash_26c6fda4919245ad,7#hash_2f6eb9c102b831ad,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#smg_accurate_t8,,3,#camo_active_sig_smg_accurate_darkunicorn_base
+126,camo,weaponoption,7#hash_758d93baadbc199d,camo_active_sig_pistol_fullauto_arcade_base,0,#hash_2cb1adec0ad4d836,7#hash_758d93baadbc199d,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#pistol_fullauto_t8,,2,#camo_active_sig_pistol_fullauto_arcade_base
+127,camo,weaponoption,7#hash_709fb6b7fdde6aa8,camo_active_sig_tr_flechette_rivermonster_base,0,#hash_7336ce7527972d35,7#hash_709fb6b7fdde6aa8,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#tr_flechette_t8,,1,#camo_active_sig_tr_flechette_rivermonster_base
+128,camo,weaponoption,7#hash_420861c64b6e9e7c,camo_active_sig_lmg_heavy_seventies_van_base,0,#hash_6f7b3306b8fcc0b6,7#hash_420861c64b6e9e7c,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#lmg_heavy_t8,,2,#camo_active_sig_lmg_heavy_seventies_van_base
+129,camo,weaponoption,7#hash_78b448d799b46550,camo_active_dlc5_fractalflames_wrapper,0,#hash_73f08facdb948c31,7#hash_78b448d799b46550,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc5_fractalflames_wrapper
+130,camo,weaponoption,7#hash_688a1b241ffb922e,camo_active_dlc5_phased_wrapper,0,#hash_557dc9f0f6e6609b,7#hash_688a1b241ffb922e,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc5_phased_wrapper
+131,camo,weaponoption,7#hash_3d26eb8dafae98e9,camo_active_dlc5_shattered_wrapper,0,#hash_193a00ab5bacb658,7#hash_3d26eb8dafae98e9,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc5_shattered_wrapper
+132,camo,weaponoption,7#hash_6c8d7834e1591a50,camo_active_dlc5_solarflare_wrapper,0,#hash_47dcb8941c9f1d91,7#hash_6c8d7834e1591a50,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc5_solarflare_wrapper
+133,camo,weaponoption,7#hash_28f8d698fe4d79d2,camo_active_dlc5_circle_slice_wrapper,0,#hash_2b1e983ebf8ddb27,7#hash_28f8d698fe4d79d2,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc5_circle_slice_wrapper
+134,camo,weaponoption,7#hash_4ed6f1ab0cbc899b,camo_active_ar_accurate_base,0,#hash_27239f76052aeeee,7#hash_4ed6f1ab0cbc899b,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#ar_accurate_t8,1,2,#camo_active_ar_accurate_base
+135,camo,weaponoption,7#hash_627f640830ae263b,camo_active_ar_fastfire_base,0,#hash_7f62020c347ebc7a,7#hash_627f640830ae263b,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#ar_fastfire_t8,1,2,#camo_active_ar_fastfire_base
+136,camo,weaponoption,7#hash_5d7eb1442a4f213,camo_active_lmg_standard_base,0,#hash_73c131f56df6090a,7#hash_5d7eb1442a4f213,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#lmg_standard_t8,1,2,#camo_active_lmg_standard_base
+137,camo,weaponoption,7#hash_11cfa6d5f521dede,camo_active_pistol_standard_base,0,#hash_7e2d4e2b53becd35,7#hash_11cfa6d5f521dede,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#pistol_standard_t8,1,2,#camo_active_pistol_standard_base
+138,camo,weaponoption,7#hash_33c5a3d6ed967788,camo_active_shotgun_semiauto_base,0,#hash_9d5922f0eec6a68,7#hash_33c5a3d6ed967788,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#shotgun_semiauto_t8,1,2,#camo_active_shotgun_semiauto_base
+139,camo,weaponoption,7#hash_31e9d057a03398bf,camo_active_smg_accurate_base,0,#hash_6dc76cd079e56762,7#hash_31e9d057a03398bf,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#smg_accurate_t8,1,2,#camo_active_smg_accurate_base
+140,camo,weaponoption,7#hash_4a584bc8c443f246,camo_active_smg_standard_base,0,#hash_24fab485e6118431,7#hash_4ed6f1ab0cbc899b,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,theme,#smg_standard_t8,1,2,#camo_active_smg_standard_base
+141,camo,weaponoption,7#hash_7a899f8fa9163c6e,camo_active_headshot_wrapper,0,#hash_6a37be0146c3beb8,7#hash_7a899f8fa9163c6e,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_accurate_t8,,,#camo_active_headshot_wrapper
+142,camo,weaponoption,7#hash_29d1b41ee09e09b8,camo_active_kill_counter_wrapper,0,#hash_5b98617f102c9579,7#hash_29d1b41ee09e09b8,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#lmg_standard_t8,,,#camo_active_kill_counter_wrapper
+143,camo,weaponoption,7#hash_75c36a6b651e7775,camo_active_kills_without_dying_wrapper,0,#hash_3c750bd534e8edc,7#hash_75c36a6b651e7775,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#smg_accurate_t8,,,#camo_active_kills_without_dying_wrapper
+144,camo,weaponoption,7#hash_6e2fd7423cbe42b0,camo_active_objective_kills_wrapper,0,#hash_76e3d89bb48912b1,7#hash_6e2fd7423cbe42b0,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#shotgun_semiauto_t8,,,#camo_active_objective_kills_wrapper
+145,camo,weaponoption,7#hash_193c1c010f81e229,camo_active_rapid_kills_wrapper,0,#hash_16a7faee68094ad8,7#hash_193c1c010f81e229,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_fastfire_t8,,,#camo_active_rapid_kills_wrapper
+146,camo,weaponoption,7#hash_3a294441722f3c4d,camo_active_showstopper_wrapper,0,#hash_66e6a3ccd72a7974,7#hash_3a294441722f3c4d,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#pistol_standard_t8,,,#camo_active_showstopper_wrapper
+147,camo,weaponoption,7#hash_43b319457bc818e,camo_active_take_it_personally_wrapper,0,#hash_3b6cd5a9a934eac4,7#hash_43b319457bc818e,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#smg_standard_t8,,,#camo_active_take_it_personally_wrapper
+148,camo,weaponoption,7#hash_652798c8c39df5b0,camo_active_dlc5_symbiosis_wrapper,0,#hash_2c4bb161a71106b4,7#hash_652798c8c39df5b0,7#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc5_symbiosis_wrapper
+149,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_0,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_0
+150,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_1,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_1
+151,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_2,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_2
+152,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_3,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_3
+153,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_4,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_4
+154,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_5,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_5
+155,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_6,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_6
+156,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_7,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_7
+157,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_8,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_8
+158,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_9,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_9
+159,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_10,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_10
+160,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_11,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_11
+161,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_12,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_12
+162,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_13,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_13
+163,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_14,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_14
+164,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_15,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_15
+165,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_16,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_16
+166,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_17,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_17
+167,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_18,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_18
+168,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_19,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_19
+169,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_20,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_20
+170,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_21,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_21
+171,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_22,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_22
+172,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_23,0,#,7#,7#,,0,0,,0,0,0,1000,,,FALSE,,#,,#,,,#reticle_23
+173,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_24,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_24
+174,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_25,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_25
+175,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_26,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_26
+176,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_27,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_27
+177,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_28,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_28
+178,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_29,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_29
+179,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_30,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_30
+180,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_31,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_31
+181,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_32,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_32
+182,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_33,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_33
+183,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_34,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_34
+184,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_35,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_35
+185,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_36,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_36
+186,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_37,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_37
+187,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_38,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_38
+188,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_39,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_39
+189,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_40,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_40
+190,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_41,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_41
+191,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_42,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_42
+192,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_43,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_43
+193,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_44,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_44
+194,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_45,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_45
+195,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_46,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_46
+196,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_47,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_47
+197,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_48,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_48
+198,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_49,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_49
+199,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_50,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_50
+200,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_51,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_51
+201,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_52,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_52
+202,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_53,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_53
+203,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_54,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_54
+204,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_55,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_55
+205,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_56,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_56
+206,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_57,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_57
+207,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_58,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_58
+208,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_59,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_59
+209,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_60,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_60
+210,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_61,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_61
+211,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_62,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_62
+212,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_63,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_63
+213,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_64,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_64
+214,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_65,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_65
+215,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_66,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_66
+216,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_67,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_67
+217,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_68,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_68
+218,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_69,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_69
+219,reticle,weaponoption,7#hash_7085044e7b80d5a3,reticle_70,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_70
+220,reticle_color,weaponoption,7#hash_39bac218bf0160b1,reticle_color_1,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#reticle_color_1
+221,lens,weaponoption,7#,lens_default,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#lens_default
+222,lens,weaponoption,7#,lens_red,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#lens_red
+223,lens,weaponoption,7#,lens_blue,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#lens_blue
+224,lens,weaponoption,7#,lens_green,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#lens_green
+225,lens,weaponoption,7#,lens_orange,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#lens_orange
+226,lens,weaponoption,7#,lens_yellow,0,#,7#,7#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#lens_yellow
+227,tag,weaponoption,7#hash_6370b5a97249c317,tag,0,#,7#,7#,,0,0,,0,0,1,0,,,FALSE,,#,,#,,,#tag
+228,emblem,weaponoption,7#hash_7bbe615a9a441e5f,emblem,0,#,7#,7#,,0,0,,0,0,2,0,,,FALSE,,#,,#,,,#emblem

@@ -9,7 +9,7 @@
     "model": "#attach_t8_optic_float_dot_world",
     "type": "itemspawnentry",
     "hintstring": "#hash_25c8019a42576b8f",
-    "var_65b3a12": 1,
+    "hash_65b3a12": 1,
     "name": "tritium_wz_item",
     "displayname": "#hash_25c8019a42576b8f",
     "icon": "#ui_icon_attachment_float_dot",

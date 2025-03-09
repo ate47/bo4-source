@@ -22,7 +22,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace recon_car/recon_car
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe0b3a074, Offset: 0x180
 // Size: 0x44
 function __init__() {
@@ -32,7 +32,7 @@ function __init__() {
 }
 
 // Namespace recon_car/recon_car
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdbb1c576, Offset: 0x1d0
 // Size: 0xec
 function init_killstreak() {
@@ -44,7 +44,7 @@ function init_killstreak() {
 }
 
 // Namespace recon_car/recon_car
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2bf02ad8, Offset: 0x2c8
 // Size: 0x22
 function onplayerconnect() {
@@ -52,7 +52,7 @@ function onplayerconnect() {
 }
 
 // Namespace recon_car/recon_car
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x77d0f50b, Offset: 0x2f8
 // Size: 0x74
 function function_d1661ada() {

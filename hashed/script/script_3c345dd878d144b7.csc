@@ -6,7 +6,7 @@
 #namespace namespace_b99141ed;
 
 // Namespace namespace_b99141ed/namespace_5d2bf155
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7ab361f6, Offset: 0xb8
 // Size: 0x5c
 function init_clientfields() {
@@ -14,7 +14,7 @@ function init_clientfields() {
 }
 
 // Namespace namespace_b99141ed/namespace_5d2bf155
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa9bf4e2c, Offset: 0x120
 // Size: 0x8c
 function function_9997d53a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

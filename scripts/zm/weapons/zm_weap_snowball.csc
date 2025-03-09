@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_snowball/zm_weap_snowball
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x785fd05c, Offset: 0x118
 // Size: 0xb4
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_snowball/zm_weap_snowball
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x62ba6596, Offset: 0x1d8
 // Size: 0xa4
 function function_25101093(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -35,7 +35,7 @@ function function_25101093(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_snowball/zm_weap_snowball
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb20ce94f, Offset: 0x288
 // Size: 0xa4
 function function_43d8c5f8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

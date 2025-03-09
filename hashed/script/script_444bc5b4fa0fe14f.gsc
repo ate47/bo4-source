@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_c56530a8/namespace_c56530a8
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xefa28228, Offset: 0xd8
 // Size: 0x5c
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace namespace_c56530a8/namespace_c56530a8
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x6c54c92d, Offset: 0x140
 // Size: 0x2e4
 function private on_begin(var_49d0b42a, var_d2d5c522, var_17d04dfe, var_6a68f1d6) {
@@ -62,7 +62,7 @@ function private on_begin(var_49d0b42a, var_d2d5c522, var_17d04dfe, var_6a68f1d6
 }
 
 // Namespace namespace_c56530a8/namespace_c56530a8
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe95e715e, Offset: 0x430
 // Size: 0xfe
 function private on_end(round_reset) {
@@ -83,7 +83,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace namespace_c56530a8/namespace_c56530a8
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x2419598c, Offset: 0x538
 // Size: 0x80
 function private function_cb35d440() {

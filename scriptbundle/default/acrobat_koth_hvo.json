@@ -1,42 +1,42 @@
 {
     "statsarray": [
         {
-            "var_82670522": "stats_grapple_gun_kill",
+            "hash_82670522": "stats_grapple_gun_kill",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_38747ccbc4b1722a"
         },
         {
             "stattype": "objectiveekia",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_5d1ab6f5e0227795"
         },
         {
-            "var_82670522": "stats_shutdowns",
+            "hash_82670522": "stats_shutdowns",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_158193577a14c86e"
         },
         {
             "stattype": "damagedone",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_5418827f408e5ca2"
         },
         {
-            "var_82670522": "stats_headshot",
+            "hash_82670522": "stats_headshot",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_619e74f99b27b9ae"
         },
         {
             "stattype": "objectivetime",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_646cc2b52d248258"
         }
     ],
-    "var_447510ee": "prt_mp_mercenary",
+    "hash_447510ee": "prt_mp_mercenary",
     "defaultimage": "#ui_icon_hvo_base",
     "cardname": "#hash_392dfe0f9a83371f",
     "name": "acrobat_koth_hvo",
-    "var_46a95923": "koth"
+    "associatedgamemode": "koth"
 }

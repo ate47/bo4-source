@@ -1,10 +1,10 @@
 {
     "lootid": "#hash_3da862048f79db96",
-    "var_904b37bc": "#hash_376e4c8520f9f079",
+    "hash_904b37bc": "#hash_376e4c8520f9f079",
     "image": "loot04_ui_icon_blackmarket_reserves_death_fx_lava",
     "name": "weapondeathfx_lava",
     "displayname": "#hash_256cae539ffe6011",
     "icon": "loot04_ui_icon_cac_death_fx_lava",
-    "var_eeb78b92": "#hash_7b6117d6d90b6b59",
+    "hash_eeb78b92": "#hash_7b6117d6d90b6b59",
     "previewimage": "#loot04_ui_icon_blackmarket_reserves_death_fx_lava"
 }

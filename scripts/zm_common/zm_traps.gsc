@@ -34,7 +34,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9a67f62c, Offset: 0x408
 // Size: 0x5c
 function __init__() {
@@ -47,7 +47,7 @@ function __init__() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf3210b14, Offset: 0x470
 // Size: 0x74
 function init() {
@@ -59,7 +59,7 @@ function init() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfb4a90ed, Offset: 0x4f0
 // Size: 0x74
 function __main__() {
@@ -71,7 +71,7 @@ function __main__() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa2861bd6, Offset: 0x570
 // Size: 0x6ec
 function trap_init() {
@@ -187,7 +187,7 @@ function trap_init() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xadbca405, Offset: 0xc68
 // Size: 0x28e
 function trap_main() {
@@ -222,7 +222,7 @@ function trap_main() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x59a2245b, Offset: 0xf00
 // Size: 0x1cc
 function function_783f63e9(var_1c9c3123 = 1) {
@@ -250,7 +250,7 @@ function function_783f63e9(var_1c9c3123 = 1) {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf88442bc, Offset: 0x10d8
 // Size: 0x148
 function trap_use_think(trap) {
@@ -274,7 +274,7 @@ function trap_use_think(trap) {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2c9baa38, Offset: 0x1228
 // Size: 0xb8
 function trap_purchase(e_player, n_cost) {
@@ -291,7 +291,7 @@ function trap_purchase(e_player, n_cost) {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdee464, Offset: 0x12e8
 // Size: 0x2c4
 function trap_activate(trap, who) {
@@ -331,7 +331,7 @@ function trap_activate(trap, who) {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x51523eb6, Offset: 0x15b8
 // Size: 0x11c
 function private update_trigger_visibility() {
@@ -351,7 +351,7 @@ function private update_trigger_visibility() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb0f02932, Offset: 0x16e0
 // Size: 0x10e
 function trap_lights_red() {
@@ -369,7 +369,7 @@ function trap_lights_red() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2d8e6288, Offset: 0x17f8
 // Size: 0x136
 function trap_lights_green() {
@@ -390,7 +390,7 @@ function trap_lights_green() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x4a687746, Offset: 0x1938
 // Size: 0xe6
 function trap_set_string(string, param1, param2) {
@@ -410,7 +410,7 @@ function trap_set_string(string, param1, param2) {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x96b5c5a5, Offset: 0x1a28
 // Size: 0x1fc
 function trap_move_switches() {
@@ -436,7 +436,7 @@ function trap_move_switches() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa2aca792, Offset: 0x1c30
 // Size: 0xce
 function trap_activate_fire() {
@@ -453,7 +453,7 @@ function trap_activate_fire() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5355520e, Offset: 0x1d08
 // Size: 0x22e
 function trap_activate_rotating() {
@@ -468,11 +468,13 @@ function trap_activate_rotating() {
     }
     wait 5;
     step = 1.5;
-    for (t = 0; t < self._trap_duration; t += step) {
+    t = 0;
+    while (t < self._trap_duration) {
         for (i = 0; i < self._trap_movers.size; i++) {
             self._trap_movers[i] rotateyaw(360, step);
         }
         wait step;
+        t += step;
     }
     for (i = 0; i < self._trap_movers.size; i++) {
         self._trap_movers[i] rotateyaw(360, 5, 0, 4.5);
@@ -485,7 +487,7 @@ function trap_activate_rotating() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1f40
 // Size: 0x4
 function trap_activate_flipper() {
@@ -493,7 +495,7 @@ function trap_activate_flipper() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4870f455, Offset: 0x1f50
 // Size: 0x11c
 function trap_audio_fx(trap) {
@@ -512,7 +514,7 @@ function trap_audio_fx(trap) {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb01a6574, Offset: 0x2078
 // Size: 0x38e
 function trap_damage() {
@@ -568,7 +570,7 @@ function trap_damage() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfead2b70, Offset: 0x2410
 // Size: 0xaa
 function function_783361ed(e_trap) {
@@ -582,7 +584,7 @@ function function_783361ed(e_trap) {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2f2c78e6, Offset: 0x24c8
 // Size: 0x58
 function trig_update(parent) {
@@ -595,7 +597,7 @@ function trig_update(parent) {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6bc3b69c, Offset: 0x2528
 // Size: 0x1a2
 function player_elec_damage(trigger) {
@@ -625,7 +627,7 @@ function player_elec_damage(trigger) {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdda51b7e, Offset: 0x26d8
 // Size: 0x196
 function player_fire_damage() {
@@ -650,7 +652,7 @@ function player_fire_damage() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdd4d9553, Offset: 0x2878
 // Size: 0x4cc
 function zombie_trap_death(e_trap, param) {
@@ -709,7 +711,7 @@ function zombie_trap_death(e_trap, param) {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x36eff0be, Offset: 0x2d50
 // Size: 0x54
 function zombie_flame_watch() {
@@ -735,7 +737,7 @@ function play_elec_vocals() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x206048c6, Offset: 0x2e48
 // Size: 0x324
 function electroctute_death_fx() {
@@ -780,7 +782,7 @@ function electroctute_death_fx() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe369b877, Offset: 0x3178
 // Size: 0x96
 function electrocute_timeout() {
@@ -795,7 +797,7 @@ function electrocute_timeout() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd1c1d2e5, Offset: 0x3218
 // Size: 0x1a4
 function trap_dialog() {
@@ -847,7 +849,7 @@ function get_trap_array(trap_type) {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe26889a8, Offset: 0x3478
 // Size: 0x174
 function trap_disable(var_ccf895cc = #"zombie/trap_locked") {
@@ -872,7 +874,7 @@ function trap_disable(var_ccf895cc = #"zombie/trap_locked") {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8693f90d, Offset: 0x35f8
 // Size: 0x144
 function trap_enable(var_f9afc2b3 = #"hash_23c1c09e94181fdb", var_b8c50025 = #"hash_6e8ef1b690e98e51") {
@@ -890,7 +892,7 @@ function trap_enable(var_f9afc2b3 = #"hash_23c1c09e94181fdb", var_b8c50025 = #"h
 }
 
 // Namespace zm_traps/zm_traps
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8ff2715, Offset: 0x3748
 // Size: 0xd6
 function function_6966417b(var_ccf895cc = #"zombie/trap_locked") {
@@ -902,7 +904,7 @@ function function_6966417b(var_ccf895cc = #"zombie/trap_locked") {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8913546e, Offset: 0x3828
 // Size: 0xf2
 function function_9d0c9706(var_f9afc2b3 = #"hash_23c1c09e94181fdb", var_b8c50025 = #"hash_6e8ef1b690e98e51") {
@@ -914,7 +916,7 @@ function function_9d0c9706(var_f9afc2b3 = #"hash_23c1c09e94181fdb", var_b8c50025
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x665f5053, Offset: 0x3928
 // Size: 0xf2
 function trap_model_type_init() {
@@ -939,7 +941,7 @@ function trap_model_type_init() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2fcfdb60, Offset: 0x3a28
 // Size: 0x24c
 function function_3f401e8d(e_player) {
@@ -972,7 +974,7 @@ function function_3f401e8d(e_player) {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xef16b84d, Offset: 0x3c80
 // Size: 0x5a
 function function_a1812da9() {
@@ -992,7 +994,7 @@ function function_19d61a68() {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe0bcccf9, Offset: 0x3d08
 // Size: 0x54
 function function_da13db45(n_cooldown, e_player) {
@@ -1011,7 +1013,7 @@ function is_trap_registered(a_registered_traps) {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf3a4c88e, Offset: 0x3d90
 // Size: 0xce
 function register_trap_basic_info(str_trap, func_activate, func_audio) {
@@ -1024,7 +1026,7 @@ function register_trap_basic_info(str_trap, func_activate, func_audio) {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe5ec6643, Offset: 0x3e68
 // Size: 0x66
 function _register_undefined_trap(str_trap) {
@@ -1037,7 +1039,7 @@ function _register_undefined_trap(str_trap) {
 }
 
 // Namespace zm_traps/zm_traps
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x624e856e, Offset: 0x3ed8
 // Size: 0x8e
 function register_trap_damage(str_trap, func_player_damage, func_damage) {

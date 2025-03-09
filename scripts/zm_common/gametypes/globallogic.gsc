@@ -49,7 +49,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4b7f67d2, Offset: 0x4a0
 // Size: 0x44
 function __init__() {
@@ -57,7 +57,7 @@ function __init__() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x76196a6b, Offset: 0x4f0
 // Size: 0x8be
 function init() {
@@ -157,7 +157,7 @@ function init() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x771059de, Offset: 0xdb8
 // Size: 0x1ae
 function registerdvars() {
@@ -178,7 +178,7 @@ function registerdvars() {
 }
 
 // Namespace globallogic/globallogic
-// Params 10, eflags: 0x1 linked
+// Params 10, eflags: 0x0
 // Checksum 0x7de50794, Offset: 0xf70
 // Size: 0x54
 function blank(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10) {
@@ -238,7 +238,7 @@ function setupcallbacks() {
 }
 
 // Namespace globallogic/globallogic
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x4968a130, Offset: 0x1408
 // Size: 0x106
 function compareteambygamestat(gamestat, teama, teamb, previous_winner_score) {
@@ -259,7 +259,7 @@ function compareteambygamestat(gamestat, teama, teamb, previous_winner_score) {
 }
 
 // Namespace globallogic/globallogic
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdd392cbb, Offset: 0x1518
 // Size: 0xe0
 function determineteamwinnerbygamestat(gamestat) {
@@ -276,7 +276,7 @@ function determineteamwinnerbygamestat(gamestat) {
 }
 
 // Namespace globallogic/globallogic
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xfeb5e38b, Offset: 0x1600
 // Size: 0xda
 function compareteambyteamscore(teama, teamb, previous_winner_score) {
@@ -318,7 +318,7 @@ function determineteamwinnerbyteamscore() {
 }
 
 // Namespace globallogic/globallogic
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x408af8b0, Offset: 0x17c0
 // Size: 0x1cc
 function forceend(hostsucks = 0) {
@@ -346,7 +346,7 @@ function forceend(hostsucks = 0) {
     } else if (level.splitscreen) {
         endstring = #"mp/ended_game";
     } else {
-        endstring = #"hash_cd63faed592da03";
+        endstring = #"mp/host_ended_game";
     }
     setmatchflag("disableIngameMenu", 1);
     setdvar(#"ui_text_endreason", endstring);
@@ -354,7 +354,7 @@ function forceend(hostsucks = 0) {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb84ec3ee, Offset: 0x1998
 // Size: 0x164
 function killserverpc() {
@@ -378,13 +378,13 @@ function killserverpc() {
     level.forcedend = 1;
     level.hostforcedend = 1;
     level.killserver = 1;
-    endstring = #"hash_cd63faed592da03";
+    endstring = #"mp/host_ended_game";
     println("<dev string:x7f>");
     thread endgame(winner, endstring);
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x64a9105, Offset: 0x1b08
 // Size: 0x88
 function someoneoneachteam() {
@@ -397,7 +397,7 @@ function someoneoneachteam() {
 }
 
 // Namespace globallogic/globallogic
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd76cc7a2, Offset: 0x1b98
 // Size: 0x64
 function checkifteamforfeits(team) {
@@ -411,7 +411,7 @@ function checkifteamforfeits(team) {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x37c0cc24, Offset: 0x1c08
 // Size: 0x9c
 function checkforanyteamforfeit() {
@@ -425,7 +425,7 @@ function checkforanyteamforfeit() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5fc815f1, Offset: 0x1cb0
 // Size: 0x90
 function dospawnqueueupdates() {
@@ -437,7 +437,7 @@ function dospawnqueueupdates() {
 }
 
 // Namespace globallogic/globallogic
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x55782f20, Offset: 0x1d48
 // Size: 0x4c
 function isteamalldead(team) {
@@ -445,7 +445,7 @@ function isteamalldead(team) {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdbb02d72, Offset: 0x1da0
 // Size: 0x8a
 function areallteamsdead() {
@@ -458,7 +458,7 @@ function areallteamsdead() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7b9a977a, Offset: 0x1e38
 // Size: 0x94
 function alldeadteamcount() {
@@ -472,7 +472,7 @@ function alldeadteamcount() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6368f4c, Offset: 0x1ed8
 // Size: 0x1f8
 function dodeadeventupdates() {
@@ -506,7 +506,7 @@ function dodeadeventupdates() {
 }
 
 // Namespace globallogic/globallogic
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbd5d47a5, Offset: 0x20d8
 // Size: 0x58
 function isonlyoneleftaliveonteam(team) {
@@ -514,7 +514,7 @@ function isonlyoneleftaliveonteam(team) {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5dd70034, Offset: 0x2138
 // Size: 0x110
 function doonelefteventupdates() {
@@ -533,7 +533,7 @@ function doonelefteventupdates() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4862b4fe, Offset: 0x2250
 // Size: 0x208
 function updategameevents() {
@@ -580,7 +580,7 @@ function updategameevents() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9ad71d74, Offset: 0x2460
 // Size: 0x14c
 function matchstarttimer() {
@@ -603,7 +603,7 @@ function matchstarttimer() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xebc91704, Offset: 0x25b8
 // Size: 0x1c
 function matchstarttimerskip() {
@@ -611,7 +611,7 @@ function matchstarttimerskip() {
 }
 
 // Namespace globallogic/globallogic
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x89272693, Offset: 0x25e0
 // Size: 0x82
 function notifyteamwavespawn(team, time) {
@@ -623,7 +623,7 @@ function notifyteamwavespawn(team, time) {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcb4c48cf, Offset: 0x2670
 // Size: 0xc2
 function wavespawntimer() {
@@ -638,7 +638,7 @@ function wavespawntimer() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdffb3407, Offset: 0x2740
 // Size: 0xc4
 function hostidledout() {
@@ -655,7 +655,7 @@ function hostidledout() {
 }
 
 // Namespace globallogic/globallogic
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xb194c140, Offset: 0x2810
 // Size: 0x5c
 function incrementmatchcompletionstat(gamemode, playedorhosted, stat) {
@@ -671,7 +671,7 @@ function setmatchcompletionstat(gamemode, playedorhosted, stat) {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1c00e724, Offset: 0x28e0
 // Size: 0xc4
 function getendreasontext() {
@@ -682,7 +682,7 @@ function getendreasontext() {
     }
     if (level.forcedend) {
         if (level.hostforcedend) {
-            return #"hash_cd63faed592da03";
+            return #"mp/host_ended_game";
         } else {
             return #"mp/ended_game";
         }
@@ -703,7 +703,7 @@ function resetoutcomeforallplayers() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfba296a0, Offset: 0x2a28
 // Size: 0x78
 function getgamelength() {
@@ -717,7 +717,7 @@ function getgamelength() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb863b6c9, Offset: 0x2aa8
 // Size: 0x14a
 function gamehistoryplayerquit() {
@@ -740,7 +740,7 @@ function gamehistoryplayerquit() {
 }
 
 // Namespace globallogic/globallogic
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa83698fb, Offset: 0x2c00
 // Size: 0x66
 function function_6c8d7c31(winner) {
@@ -751,7 +751,7 @@ function function_6c8d7c31(winner) {
 }
 
 // Namespace globallogic/globallogic
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5eeb3025, Offset: 0x2c70
 // Size: 0x85c
 function endgame(winner, endreasontext) {
@@ -866,7 +866,7 @@ function endgame(winner, endreasontext) {
 }
 
 // Namespace globallogic/globallogic
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xb9c9e236, Offset: 0x34d8
 // Size: 0xc6
 function bbplayermatchend(gamelength, endreasonstring, gameover) {
@@ -898,7 +898,7 @@ function roundendwait(defaultdelay, matchbonus) {
 }
 
 // Namespace globallogic/globallogic
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf16d2f6d, Offset: 0x3628
 // Size: 0x2c
 function roundenddof(time) {
@@ -906,7 +906,7 @@ function roundenddof(time) {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcfcd6ef4, Offset: 0x3660
 // Size: 0x130
 function checktimelimit() {
@@ -941,7 +941,7 @@ function checktimelimit() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8a207cdf, Offset: 0x3798
 // Size: 0x98
 function allteamsunderscorelimit() {
@@ -954,7 +954,7 @@ function allteamsunderscorelimit() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x679aa6c2, Offset: 0x3838
 // Size: 0xa4
 function checkscorelimit() {
@@ -980,7 +980,7 @@ function checkscorelimit() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6f903cbd, Offset: 0x38e8
 // Size: 0x23a
 function updategametypedvars() {
@@ -1016,7 +1016,7 @@ function updategametypedvars() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4c9644b6, Offset: 0x3b30
 // Size: 0x202
 function removedisconnectedplayerfromplacement() {
@@ -1051,7 +1051,7 @@ function removedisconnectedplayerfromplacement() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x920c8016, Offset: 0x3d40
 // Size: 0x26c
 function updateplacement() {
@@ -1081,7 +1081,7 @@ function updateplacement() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2a79c2dc, Offset: 0x3fb8
 // Size: 0x1be
 function updateteamplacement() {
@@ -1107,7 +1107,7 @@ function updateteamplacement() {
 }
 
 // Namespace globallogic/globallogic
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd25d7657, Offset: 0x4180
 // Size: 0xb0
 function getplacementforplayer(player) {
@@ -1124,7 +1124,7 @@ function getplacementforplayer(player) {
 }
 
 // Namespace globallogic/globallogic
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xece65ab3, Offset: 0x4238
 // Size: 0x1a4
 function sortdeadplayers(team) {
@@ -1147,7 +1147,7 @@ function sortdeadplayers(team) {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xce16cc22, Offset: 0x43e8
 // Size: 0x92
 function totalalivecount() {
@@ -1159,7 +1159,7 @@ function totalalivecount() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xff8d91d, Offset: 0x4488
 // Size: 0x92
 function totalplayerlives() {
@@ -1171,7 +1171,7 @@ function totalplayerlives() {
 }
 
 // Namespace globallogic/globallogic
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x753ba72e, Offset: 0x4528
 // Size: 0xb4
 function initteamvariables(team) {
@@ -1188,7 +1188,7 @@ function initteamvariables(team) {
 }
 
 // Namespace globallogic/globallogic
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8f23a289, Offset: 0x45e8
 // Size: 0xce
 function resetteamvariables(team) {
@@ -1204,7 +1204,7 @@ function resetteamvariables(team) {
 }
 
 // Namespace globallogic/globallogic
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x88160ee9, Offset: 0x46c0
 // Size: 0x3e0
 function updateteamstatus(var_bdfe75a7) {
@@ -1264,7 +1264,7 @@ function updateteamstatus(var_bdfe75a7) {
 }
 
 // Namespace globallogic/globallogic
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3d47a59b, Offset: 0x4aa8
 // Size: 0xb0
 function checkteamscorelimitsoon(team) {
@@ -1306,7 +1306,7 @@ function checkplayerscorelimitsoon() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x499ce3a7, Offset: 0x4c20
 // Size: 0x1cc
 function startgame() {
@@ -1331,7 +1331,7 @@ function startgame() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x4df8
 // Size: 0x4
 function waitforplayers() {
@@ -1339,7 +1339,7 @@ function waitforplayers() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x183fdcde, Offset: 0x4e08
 // Size: 0x192
 function prematchperiod() {
@@ -1365,7 +1365,7 @@ function prematchperiod() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x93bad3f1, Offset: 0x4fa8
 // Size: 0x140
 function graceperiod() {
@@ -1393,7 +1393,7 @@ function graceperiod() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7c7c0ae9, Offset: 0x50f0
 // Size: 0x64
 function watchmatchendingsoon() {
@@ -1403,7 +1403,7 @@ function watchmatchendingsoon() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x5160
 // Size: 0x4
 function assertteamvariables() {
@@ -1411,7 +1411,7 @@ function assertteamvariables() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x20a3d5a2, Offset: 0x5170
 // Size: 0x84
 function anyteamhaswavedelay() {
@@ -1424,7 +1424,7 @@ function anyteamhaswavedelay() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbb85164b, Offset: 0x5200
 // Size: 0x159c
 function callback_startgametype() {
@@ -1457,19 +1457,19 @@ function callback_startgametype() {
         setdvar(#"cg_thirdpersonangle", 354);
         game.strings[#"press_to_spawn"] = #"hash_203ff65a4ee460e6";
         if (level.teambased) {
-            game.strings[#"waiting_for_teams"] = #"hash_150c54160239825";
-            game.strings[#"opponent_forfeiting_in"] = #"hash_52d76ed35e0b625a";
+            game.strings[#"waiting_for_teams"] = #"mp/waiting_for_teams";
+            game.strings[#"opponent_forfeiting_in"] = #"mp/opponent_forfeiting_in";
         } else {
-            game.strings[#"waiting_for_teams"] = #"hash_47c479655d474f31";
-            game.strings[#"opponent_forfeiting_in"] = #"hash_52d76ed35e0b625a";
+            game.strings[#"waiting_for_teams"] = #"mp/waiting_for_players";
+            game.strings[#"opponent_forfeiting_in"] = #"mp/opponent_forfeiting_in";
         }
         game.strings[#"match_starting_in"] = #"hash_18e58cc95db34427";
-        game.strings[#"spawn_next_round"] = #"hash_590100cdca62e7db";
-        game.strings[#"waiting_to_spawn"] = #"hash_44d60a6e6ed2a53c";
+        game.strings[#"spawn_next_round"] = #"mp/spawn_next_round";
+        game.strings[#"waiting_to_spawn"] = #"mp/waiting_to_spawn";
         game.strings[#"waiting_to_spawn_ss"] = #"hash_78bf3a61cf52e257";
         game.strings[#"you_will_spawn"] = #"hash_53c0ba6abce1c0ea";
         game.strings[#"match_starting"] = #"mp/match_starting";
-        game.strings[#"change_class"] = #"hash_181a96fe9c28ada2";
+        game.strings[#"change_class"] = #"mp/change_class_next_spawn";
         game.strings[#"last_stand"] = #"hash_5732d212e4511a00";
         game.strings[#"cowards_way"] = #"hash_268e464278a2f8ff";
         game.strings[#"tie"] = #"mp/match_tie";
@@ -1664,7 +1664,7 @@ function callback_startgametype() {
 #/
 
 // Namespace globallogic/globallogic
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xf1517221, Offset: 0x6800
 // Size: 0x116
 function registerfriendlyfiredelay(dvarstring, defaultvalue, minvalue, maxvalue) {
@@ -1700,7 +1700,7 @@ function checkroundswitch() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x538844ce, Offset: 0x69b8
 // Size: 0x64
 function listenforgameend() {
@@ -1733,7 +1733,7 @@ function getkillstreaks(player) {
 }
 
 // Namespace globallogic/globallogic
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdcf5cb28, Offset: 0x6b58
 // Size: 0x5c
 function updaterankedmatch(winner) {

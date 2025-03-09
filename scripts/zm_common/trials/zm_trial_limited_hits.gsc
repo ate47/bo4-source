@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_limited_hits/zm_trial_limited_hits
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaccb983c, Offset: 0xe0
 // Size: 0x5c
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_limited_hits/zm_trial_limited_hits
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x32e39b0d, Offset: 0x148
 // Size: 0xd4
 function private on_begin(var_85af3be4, var_752d90ad) {
@@ -43,7 +43,7 @@ function private on_begin(var_85af3be4, var_752d90ad) {
 }
 
 // Namespace zm_trial_limited_hits/zm_trial_limited_hits
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe57531a3, Offset: 0x228
 // Size: 0x54
 function private on_end(round_reset) {
@@ -63,7 +63,7 @@ function is_active() {
 }
 
 // Namespace zm_trial_limited_hits/zm_trial_limited_hits
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x880a4432, Offset: 0x2c8
 // Size: 0xa4
 function private on_player_damage(params) {

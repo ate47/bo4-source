@@ -1,12 +1,12 @@
 {
-    "var_cd1b278e": "#menu/look_down",
-    "var_917feb54": "#xenon_stick_turn",
+    "hash_cd1b278e": "#menu/look_down",
+    "hash_917feb54": "#xenon_stick_turn",
     "name": "stick_layout_southpaw",
-    "var_9cb0c5cd": "#xenon_stick_move",
-    "var_c724d0d1": 1,
-    "var_53e7bdc7": "#hash_6190a394a838ade9",
-    "var_92e90c8c": "#hash_27793ef5304e6191",
-    "var_38a7d78b": "#menu/move_back",
-    "var_40dbf9f7": "#menu/look_up",
-    "var_abf9bb85": "#menu/move_forward"
+    "hash_9cb0c5cd": "#xenon_stick_move",
+    "hash_c724d0d1": 1,
+    "hash_53e7bdc7": "#hash_6190a394a838ade9",
+    "hash_92e90c8c": "#hash_27793ef5304e6191",
+    "hash_38a7d78b": "#menu/move_back",
+    "hash_40dbf9f7": "#menu/look_up",
+    "hash_abf9bb85": "#menu/move_forward"
 }

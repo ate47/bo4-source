@@ -1,0 +1,39 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_33da4a04592b213c",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 3,
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_29e7cfebf6efcde3",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 19,
+                    "name": "shot 2"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_1d7778a55ee673f1",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_frenetic_solar_panels_delay_03_idle_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

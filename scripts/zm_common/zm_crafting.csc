@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7aa1e174, Offset: 0x120
 // Size: 0x1e
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xeda5e7a6, Offset: 0x148
 // Size: 0x14
 function __main__() {
@@ -34,7 +34,7 @@ function __main__() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3c4db8b9, Offset: 0x168
 // Size: 0x98
 function function_60a6c623() {
@@ -45,7 +45,7 @@ function function_60a6c623() {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcfcef004, Offset: 0x208
 // Size: 0x262
 function setup_craftfoundry(craftfoundry) {
@@ -53,7 +53,7 @@ function setup_craftfoundry(craftfoundry) {
         if (!(isdefined(craftfoundry.loaded) && craftfoundry.loaded)) {
             craftfoundry.loaded = 1;
             craftfoundry.blueprints = [];
-            switch (craftfoundry.var_2a2adea3) {
+            switch (craftfoundry.blueprintcount) {
             case 8:
                 craftfoundry.blueprints[7] = function_b18074d0(craftfoundry.blueprint08);
             case 7:
@@ -77,7 +77,7 @@ function setup_craftfoundry(craftfoundry) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x27c0d754, Offset: 0x478
 // Size: 0x328
 function function_b18074d0(name) {
@@ -91,19 +91,19 @@ function function_b18074d0(name) {
             case 8:
                 blueprint.components[7] = get_component(blueprint.var_f4d434cb);
             case 7:
-                blueprint.components[6] = get_component(blueprint.var_e71f1961);
+                blueprint.components[6] = get_component(blueprint.component07);
             case 6:
                 blueprint.components[5] = get_component(blueprint.registerperk_packa_seepainterminate);
             case 5:
-                blueprint.components[4] = get_component(blueprint.var_4282502a);
+                blueprint.components[4] = get_component(blueprint.component05);
             case 4:
-                blueprint.components[3] = get_component(blueprint.var_7b8e4241);
+                blueprint.components[3] = get_component(blueprint.component04);
             case 3:
-                blueprint.components[2] = get_component(blueprint.var_2e0a273a);
+                blueprint.components[2] = get_component(blueprint.component03);
             case 2:
-                blueprint.components[1] = get_component(blueprint.var_670f9944);
+                blueprint.components[1] = get_component(blueprint.component02);
             case 1:
-                blueprint.components[0] = get_component(blueprint.var_99577dd3);
+                blueprint.components[0] = get_component(blueprint.component01);
                 break;
             }
             blueprint.var_54a97edd = get_component(blueprint.result);
@@ -119,7 +119,7 @@ function function_b18074d0(name) {
 }
 
 // Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd23d3877, Offset: 0x7a8
 // Size: 0x5c
 function get_component(component) {

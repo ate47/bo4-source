@@ -16,12 +16,12 @@
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 10000,
+    "hash_7fb0967b": 10000,
     "type": "itemspawnlist",
-    "var_345eba59": 3,
+    "hash_345eba59": 3,
     "vehiclespawner": 1,
-    "var_9b009839": -1,
-    "var_dc7ffbef": 1,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
     "name": "open_skyscraper_vehicles_pbr",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

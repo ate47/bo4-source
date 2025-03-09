@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_1d05befd/namespace_1d05befd
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc2eca4c5, Offset: 0x2b0
 // Size: 0x19c
 function __init__() {
@@ -28,16 +28,16 @@ function __init__() {
 }
 
 // Namespace namespace_1d05befd/namespace_1d05befd
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1ae39c85, Offset: 0x458
 // Size: 0x32
 function private function_65089f84(localclientnum) {
-    if (isdefined(self.var_9fde8624) && self.var_9fde8624 == #"zombie_electric") {
+    if (isdefined(self.subarchetype) && self.subarchetype == #"zombie_electric") {
     }
 }
 
 // Namespace namespace_1d05befd/namespace_1d05befd
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x643bb4b, Offset: 0x498
 // Size: 0xce
 function private zombie_electric_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -55,7 +55,7 @@ function private zombie_electric_fx(localclientnum, oldval, newval, bnewent, bin
 }
 
 // Namespace namespace_1d05befd/namespace_1d05befd
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x9f0f1a25, Offset: 0x570
 // Size: 0x9c
 function private function_8f477183(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -66,7 +66,7 @@ function private function_8f477183(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace namespace_1d05befd/namespace_1d05befd
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x187f96bd, Offset: 0x618
 // Size: 0x9c
 function private function_c9f98c07(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -77,7 +77,7 @@ function private function_c9f98c07(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace namespace_1d05befd/namespace_1d05befd
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x94f3792f, Offset: 0x6c0
 // Size: 0x84
 function private function_4d29fadf(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -88,7 +88,7 @@ function private function_4d29fadf(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace namespace_1d05befd/namespace_1d05befd
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x2ecb0b5d, Offset: 0x750
 // Size: 0x1ae
 function private function_93585307(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

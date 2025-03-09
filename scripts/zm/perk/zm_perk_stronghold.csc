@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2c676f2f, Offset: 0x188
 // Size: 0x64
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x169a1dbe, Offset: 0x1f8
 // Size: 0x104
 function enable_stronghold_perk_for_level() {
@@ -38,7 +38,7 @@ function enable_stronghold_perk_for_level() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x308
 // Size: 0x4
 function init_stronghold() {
@@ -46,7 +46,7 @@ function init_stronghold() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x28680403, Offset: 0x318
 // Size: 0x5c
 function function_5a4557ee() {
@@ -54,7 +54,7 @@ function function_5a4557ee() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x380
 // Size: 0x4
 function function_44bd921f() {
@@ -62,7 +62,7 @@ function function_44bd921f() {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf6afb0b8, Offset: 0x390
 // Size: 0x1ee
 function function_2400dd1d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -92,7 +92,7 @@ function function_2400dd1d(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc7619f19, Offset: 0x588
 // Size: 0x2c
 function on_localclient_connect(localclientnum) {
@@ -100,7 +100,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8e3b93b6, Offset: 0x5c0
 // Size: 0xb4
 function on_death(params) {

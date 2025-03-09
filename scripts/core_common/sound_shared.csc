@@ -1,7 +1,7 @@
 #namespace sound;
 
 // Namespace sound/sound_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xd25d581c, Offset: 0x78
 // Size: 0x8c
 function loop_fx_sound(clientnum, alias, origin, ender) {
@@ -14,7 +14,7 @@ function loop_fx_sound(clientnum, alias, origin, ender) {
 }
 
 // Namespace sound/sound_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xed035404, Offset: 0x110
 // Size: 0x3c
 function play_in_space(localclientnum, alias, origin) {
@@ -22,7 +22,7 @@ function play_in_space(localclientnum, alias, origin) {
 }
 
 // Namespace sound/sound_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xad47d65d, Offset: 0x158
 // Size: 0x34
 function loop_delete(ender, sound_entity) {
@@ -31,7 +31,7 @@ function loop_delete(ender, sound_entity) {
 }
 
 // Namespace sound/sound_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf4e54231, Offset: 0x198
 // Size: 0x4c
 function play_on_client(sound_alias) {

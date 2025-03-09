@@ -1,8 +1,0 @@
-{
-    "name": "#gsol_zm_barricades",
-    "assetType": "gamesettingoption",
-    "assets": [
-        "#zm_doorstate",
-        "#zm_barricadestate"
-    ]
-}

@@ -1,42 +1,42 @@
 {
     "statsarray": [
         {
-            "var_82670522": "stats_golden_kill_bonus",
+            "hash_82670522": "stats_golden_kill_bonus",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_7eaa52f441009ba8"
         },
         {
-            "var_82670522": "stats_golden_ammo_bonus",
+            "hash_82670522": "stats_golden_ammo_bonus",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_567343e0121c4f99"
         },
         {
             "stattype": "objectiveekia",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_5d1ab6f5e0227795"
         },
         {
-            "var_82670522": "stats_shutdowns",
+            "hash_82670522": "stats_shutdowns",
             "stattype": "playerstatslist",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_158193577a14c86e"
         },
         {
             "stattype": "damagedone",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_5418827f408e5ca2"
         },
         {
             "stattype": "objectivescore",
-            "var_26568428": 1,
+            "hash_26568428": 1,
             "displaystatname": "#hash_6436546a9ac1c536"
         }
     ],
-    "var_447510ee": "prt_mp_buffassault",
+    "hash_447510ee": "prt_mp_buffassault",
     "defaultimage": "#ui_icon_hvo_base",
     "cardname": "#hash_5fc1b3d77f6606a3",
     "name": "quartermaster_dom_hvo",
-    "var_46a95923": "dom"
+    "associatedgamemode": "dom"
 }

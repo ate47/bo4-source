@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe1e7670d, Offset: 0x130
 // Size: 0xd4
 function __init__() {
@@ -30,7 +30,7 @@ function __init__() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xdc3fa, Offset: 0x210
 // Size: 0x196
 function register_info(type, name, version, priority, lerp_step_count, should_activate_per_player, lerp_thread, ref_count_lerp_thread) {
@@ -47,7 +47,7 @@ function register_info(type, name, version, priority, lerp_step_count, should_ac
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x8be1ec0f, Offset: 0x3b0
 // Size: 0x18e
 function activate(type, name, player, opt_param_1, opt_param_2, opt_param_3) {
@@ -73,7 +73,7 @@ function activate(type, name, player, opt_param_1, opt_param_2, opt_param_3) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x8ab82388, Offset: 0x548
 // Size: 0x138
 function deactivate(type, name, player) {
@@ -96,7 +96,7 @@ function deactivate(type, name, player) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x60030716, Offset: 0x688
 // Size: 0xa2
 function set_state_active(player, lerp) {
@@ -113,7 +113,7 @@ function set_state_active(player, lerp) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x55e5ad57, Offset: 0x738
 // Size: 0x96
 function set_state_inactive(player) {
@@ -215,7 +215,7 @@ function ramp_in_thread_per_player(player, duration) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x82b34222, Offset: 0xc40
 // Size: 0x80
 function ramp_in_out_thread_hold_func() {
@@ -229,7 +229,7 @@ function ramp_in_out_thread_hold_func() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf4f23084, Offset: 0xcc8
 // Size: 0x24c
 function ramp_in_out_thread(ramp_in, full_period, ramp_out) {
@@ -270,7 +270,7 @@ function ramp_in_out_thread(ramp_in, full_period, ramp_out) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x465306b, Offset: 0xf20
 // Size: 0x1c4
 function ramp_in_out_thread_per_player_internal(player, ramp_in, full_period, ramp_out) {
@@ -304,7 +304,7 @@ function ramp_in_out_thread_per_player_internal(player, ramp_in, full_period, ra
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc88f800, Offset: 0x10f0
 // Size: 0x9c
 function ramp_in_out_thread_watch_player_shutdown(player) {
@@ -317,7 +317,7 @@ function ramp_in_out_thread_watch_player_shutdown(player) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x765da885, Offset: 0x1198
 // Size: 0x6c
 function ramp_in_out_thread_per_player_death_shutdown(player, ramp_in, full_period, ramp_out) {
@@ -327,7 +327,7 @@ function ramp_in_out_thread_per_player_death_shutdown(player, ramp_in, full_peri
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xc0dd826f, Offset: 0x1210
 // Size: 0x44
 function ramp_in_out_thread_per_player(player, ramp_in, full_period, ramp_out) {
@@ -335,7 +335,7 @@ function ramp_in_out_thread_per_player(player, ramp_in, full_period, ramp_out) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x37f3c4c1, Offset: 0x1260
 // Size: 0x154
 function register_type(type) {
@@ -352,7 +352,7 @@ function register_type(type) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6b722888, Offset: 0x13c0
 // Size: 0x8e
 function finalize_clientfields() {
@@ -363,7 +363,7 @@ function finalize_clientfields() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6081ab67, Offset: 0x1458
 // Size: 0x23c
 function finalize_type_clientfields() {
@@ -388,7 +388,7 @@ function finalize_type_clientfields() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe3aa3d31, Offset: 0x16a0
 // Size: 0x1e0
 function validate_info(type, name, priority) {
@@ -406,7 +406,7 @@ function validate_info(type, name, priority) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x27e7e24e, Offset: 0x1888
 // Size: 0x9c
 function add_sorted_name_key(type, name) {
@@ -419,7 +419,7 @@ function add_sorted_name_key(type, name) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xb389820e, Offset: 0x1930
 // Size: 0xc4
 function add_sorted_priority_key(type, name, priority) {
@@ -432,7 +432,7 @@ function add_sorted_priority_key(type, name, priority) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xa4cf9ff7, Offset: 0x1a00
 // Size: 0x15a
 function add_info(type, name, version, priority, lerp_step_count, should_activate_per_player, lerp_thread, ref_count_lerp_thread) {
@@ -458,7 +458,7 @@ function add_info(type, name, version, priority, lerp_step_count, should_activat
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1af86982, Offset: 0x1b68
 // Size: 0x1c
 function on_player_connect() {
@@ -466,7 +466,7 @@ function on_player_connect() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x88eb180b, Offset: 0x1b90
 // Size: 0x238
 function player_setup() {
@@ -489,7 +489,7 @@ function player_setup() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x784236bd, Offset: 0x1dd0
 // Size: 0x11c
 function player_shutdown() {
@@ -505,7 +505,7 @@ function player_shutdown() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdbdcf27a, Offset: 0x1ef8
 // Size: 0x188
 function monitor() {
@@ -534,7 +534,7 @@ function monitor() {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x83a128ec, Offset: 0x2088
 // Size: 0xc2
 function get_first_active_name(type_struct) {
@@ -552,7 +552,7 @@ function get_first_active_name(type_struct) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5b7b0d97, Offset: 0x2158
 // Size: 0x10c
 function update_clientfields(player, type_struct) {
@@ -570,7 +570,7 @@ function update_clientfields(player, type_struct) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xa9df945, Offset: 0x2270
 // Size: 0x60
 function lerp_thread_wrapper(func, opt_param_1, opt_param_2, opt_param_3) {
@@ -580,7 +580,7 @@ function lerp_thread_wrapper(func, opt_param_1, opt_param_2, opt_param_3) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xc005aa28, Offset: 0x22d8
 // Size: 0xc6
 function lerp_thread_per_player_wrapper(func, player, opt_param_1, opt_param_2, opt_param_3) {
@@ -595,7 +595,7 @@ function lerp_thread_per_player_wrapper(func, player, opt_param_1, opt_param_2, 
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x3d2825b1, Offset: 0x23a8
 // Size: 0x134
 function activate_per_player(type, name, player, opt_param_1, opt_param_2, opt_param_3) {
@@ -618,7 +618,7 @@ function activate_per_player(type, name, player, opt_param_1, opt_param_2, opt_p
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6401c396, Offset: 0x24e8
 // Size: 0x10e
 function deactivate_per_player(type, name, player) {
@@ -640,7 +640,7 @@ function deactivate_per_player(type, name, player) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x602ccc8b, Offset: 0x2600
 // Size: 0x92
 function calc_ramp_in_lerp(start_time, end_time) {
@@ -653,7 +653,7 @@ function calc_ramp_in_lerp(start_time, end_time) {
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb036ec0d, Offset: 0x26a0
 // Size: 0x92
 function calc_remaining_duration_lerp(start_time, end_time) {

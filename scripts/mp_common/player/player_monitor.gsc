@@ -205,7 +205,7 @@ function private travel_dist() {
             continue;
         }
         distance = distance(self.origin, prevpos);
-        self.pers[#"total_distance_travelled"] = self.pers[#"total_distance_travelled"] + distance;
+        self.pers[#"total_distance_travelled"] += distance;
         if (gamestate::is_state("playing") && distance > 0) {
             if (!self isinvehicle()) {
                 groundent = self getgroundent();
@@ -225,8 +225,8 @@ function private travel_dist() {
             positionptm = self.origin;
             if (distancemoving > minimummovedistance) {
                 self.pers[#"num_speeds_when_moving_entries"]++;
-                self.pers[#"total_speeds_when_moving"] = self.pers[#"total_speeds_when_moving"] + distancemoving / waittime;
-                self.pers[#"time_played_moving"] = self.pers[#"time_played_moving"] + waittime;
+                self.pers[#"total_speeds_when_moving"] += distancemoving / waittime;
+                self.pers[#"time_played_moving"] += waittime;
             }
         }
     }

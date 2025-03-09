@@ -23,7 +23,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace callback/callbacks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4998828d, Offset: 0x128
 // Size: 0x1c
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace callback/callbacks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4a0b0da6, Offset: 0x150
 // Size: 0xf2
 function setup_callbacks() {
@@ -53,7 +53,7 @@ function setup_callbacks() {
 }
 
 // Namespace callback/callbacks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd92281b5, Offset: 0x250
 // Size: 0x19a
 function setdefaultcallbacks() {
@@ -93,7 +93,7 @@ function function_823e7181(func, obj) {
 }
 
 // Namespace callback/callbacks
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc64c7c3e, Offset: 0x488
 // Size: 0x3c
 function function_4b58e5ab(func, obj) {
@@ -109,7 +109,7 @@ function function_66d5d485(func, obj) {
 }
 
 // Namespace callback/callbacks
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x688aa04f, Offset: 0x518
 // Size: 0x3c
 function function_74872db6(func, obj) {
@@ -117,7 +117,7 @@ function function_74872db6(func, obj) {
 }
 
 // Namespace callback/callbacks
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa3b2ed01, Offset: 0x560
 // Size: 0x3c
 function function_50fdac80(func, obj) {
@@ -125,7 +125,7 @@ function function_50fdac80(func, obj) {
 }
 
 // Namespace callback/callbacks
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2d53879d, Offset: 0x5a8
 // Size: 0x3c
 function on_round_end(func, obj) {
@@ -133,7 +133,7 @@ function on_round_end(func, obj) {
 }
 
 // Namespace callback/callbacks
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1aea7de4, Offset: 0x5f0
 // Size: 0x3c
 function remove_on_round_end(func, obj) {

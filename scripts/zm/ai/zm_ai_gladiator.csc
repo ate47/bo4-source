@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xeecc43c5, Offset: 0x218
 // Size: 0x15c
 function __init__() {
@@ -34,7 +34,7 @@ function __init__() {
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x284319b, Offset: 0x380
 // Size: 0x1bc
 function private function_918ce680(localclientnum, pos, surface, notetrack, bone) {
@@ -66,7 +66,7 @@ function private function_918ce680(localclientnum, pos, surface, notetrack, bone
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x1394b3f4, Offset: 0x548
 // Size: 0x8c
 function private function_5dae94f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -75,7 +75,7 @@ function private function_5dae94f(localclientnum, oldval, newval, bnewent, binit
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xf27044f8, Offset: 0x5e0
 // Size: 0xcc
 function private function_f5a07d57(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -89,7 +89,7 @@ function private function_f5a07d57(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xfdc7e784, Offset: 0x6b8
 // Size: 0xb4
 function private function_49fab171(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

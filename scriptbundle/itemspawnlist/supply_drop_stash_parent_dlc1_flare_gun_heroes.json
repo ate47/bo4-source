@@ -45,16 +45,16 @@
         {
             "minweight": 100,
             "itementry": "launcher_standard_operator_t8_item",
-            "var_3f8c08e3": "ammo_type_rocket_double_item",
+            "childitementry_1": "ammo_type_rocket_double_item",
             "maxweight": 100,
             "available": 1
         }
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 8,
-    "var_9b009839": -1,
+    "hash_345eba59": 8,
+    "hash_9b009839": -1,
     "name": "supply_drop_stash_parent_dlc1_flare_gun_heroes",
-    "var_fde72c94": 100,
+    "supplystashweight": 100,
     "supplystash": 1
 }

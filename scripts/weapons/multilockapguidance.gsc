@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace multilockap_guidance/multilockapguidance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6912008, Offset: 0x100
 // Size: 0x4c
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace multilockap_guidance/multilockapguidance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x58143f9b, Offset: 0x158
 // Size: 0x4c
 function on_player_spawned() {
@@ -33,7 +33,7 @@ function on_player_spawned() {
 }
 
 // Namespace multilockap_guidance/multilockapguidance
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf6ae05f7, Offset: 0x1b0
 // Size: 0x23c
 function clearaptarget(weapon, whom) {
@@ -93,7 +93,7 @@ function event_handler[missile_fire] function_bfb94991(eventstruct) {
 }
 
 // Namespace multilockap_guidance/multilockapguidance
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf8b90a9c, Offset: 0x518
 // Size: 0x152
 function on_weapon_change(params) {
@@ -120,7 +120,7 @@ function on_weapon_change(params) {
 }
 
 // Namespace multilockap_guidance/multilockapguidance
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe3088331, Offset: 0x678
 // Size: 0x552
 function aplockloop(weapon) {
@@ -204,7 +204,7 @@ function aplockloop(weapon) {
 }
 
 // Namespace multilockap_guidance/multilockapguidance
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3f5b6fcc, Offset: 0xbd8
 // Size: 0x4ca
 function getbesttarget(weapon) {
@@ -269,7 +269,7 @@ function getbesttarget(weapon) {
 }
 
 // Namespace multilockap_guidance/multilockapguidance
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xba6b1100, Offset: 0x10b0
 // Size: 0x56
 function targetinsertionsortcompare(a, b) {
@@ -283,7 +283,7 @@ function targetinsertionsortcompare(a, b) {
 }
 
 // Namespace multilockap_guidance/multilockapguidance
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcdc365, Offset: 0x1110
 // Size: 0x4a
 function insideapreticlenolock(target) {
@@ -292,7 +292,7 @@ function insideapreticlenolock(target) {
 }
 
 // Namespace multilockap_guidance/multilockapguidance
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb0808c79, Offset: 0x1168
 // Size: 0x4a
 function insideapreticlelocked(target) {
@@ -301,7 +301,7 @@ function insideapreticlelocked(target) {
 }
 
 // Namespace multilockap_guidance/multilockapguidance
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3d7fae3, Offset: 0x11c0
 // Size: 0x6e
 function isstillvalidtarget(weapon, ent) {
@@ -321,7 +321,7 @@ function isstillvalidtarget(weapon, ent) {
 }
 
 // Namespace multilockap_guidance/multilockapguidance
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x8dff43, Offset: 0x1238
 // Size: 0xec
 function seekersound(alias, looping, id) {
@@ -339,7 +339,7 @@ function seekersound(alias, looping, id) {
 }
 
 // Namespace multilockap_guidance/multilockapguidance
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x356f79e6, Offset: 0x1330
 // Size: 0x166
 function locksighttest(target) {

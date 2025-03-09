@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_close_quarters/zm_trial_close_quarters
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3aeecaf, Offset: 0xe0
 // Size: 0x5c
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_close_quarters/zm_trial_close_quarters
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x8b7d35ce, Offset: 0x148
 // Size: 0x24
 function private on_begin() {
@@ -35,7 +35,7 @@ function private on_begin() {
 }
 
 // Namespace zm_trial_close_quarters/zm_trial_close_quarters
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2b527a4c, Offset: 0x178
 // Size: 0x64
 function private on_end(round_reset) {
@@ -54,7 +54,7 @@ function is_active() {
 }
 
 // Namespace zm_trial_close_quarters/zm_trial_close_quarters
-// Params 12, eflags: 0x5 linked
+// Params 12, eflags: 0x4
 // Checksum 0xc61b8f08, Offset: 0x228
 // Size: 0x11a
 function private range_check(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

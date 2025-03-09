@@ -1,8 +1,8 @@
 {
     "configstringfiletype": "scriptbundle",
-    "var_ce9b2d06": "gsol_zm_powerups",
+    "hash_ce9b2d06": "gsol_zm_powerups",
     "type": "gamesettingoptioncategory",
     "name": "gsoc_zm_powerups",
-    "var_dea17465": "#hash_40c3c9f045a1912d",
-    "var_608158f2": "#hash_32a451af7dd31b3a"
+    "hash_dea17465": "#hash_40c3c9f045a1912d",
+    "hash_608158f2": "#hash_32a451af7dd31b3a"
 }

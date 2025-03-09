@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_ai_avogadro/zm_ai_avogadro
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc7b010fd, Offset: 0xd0
 // Size: 0x34
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace zm_ai_avogadro/zm_ai_avogadro
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x66671a8a, Offset: 0x110
 // Size: 0xc
 function private function_1caf705e(localclientnum) {

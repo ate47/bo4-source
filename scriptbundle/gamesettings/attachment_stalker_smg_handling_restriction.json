@@ -3,6 +3,6 @@
     "type": "gamesettings",
     "name": "attachment_stalker_smg_handling_restriction",
     "displayname": "#weapon/smg_handling_t8",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "itemRestrictions__smg_handling_t8__attachments__stalker"
 }

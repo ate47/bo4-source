@@ -9,7 +9,7 @@
                             "stageimage": "#hash_28dfe18aa5794bf3"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#zm_zodt8_dist_kit_1"
                 },
                 {
@@ -19,7 +19,7 @@
                             "stageimage": "#hash_7d9c76d563c5825"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#zm_zodt8_dist_kit_2"
                 },
                 {
@@ -29,7 +29,7 @@
                             "stageimage": "#hash_7bdfc18a438de769"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#zm_zodt8_dist_kit_3"
                 },
                 {
@@ -51,12 +51,12 @@
                             "stageimage": "#hash_210dbe01aa690110"
                         }
                     ],
-                    "var_1d91eeba": 4,
-                    "var_7db3435c": 1,
+                    "hash_1d91eeba": 4,
+                    "hash_7db3435c": 1,
                     "clientfield": "#zm_zodt8_conc_catalyst"
                 }
             ],
-            "var_b048489f": 4
+            "hash_b048489f": 4
         }
     ],
     "shieldpieces": [
@@ -115,14 +115,14 @@
     ],
     "objectivebackground": "#hash_285e9a8a4926a4c1",
     "configstringfiletype": "scriptbundle",
-    "var_aa76b7dd": 10,
+    "hash_aa76b7dd": 10,
     "type": "zminventory",
-    "var_af62a8e8": 3,
+    "hash_af62a8e8": 3,
     "name": "zm_inventory_zodt8",
-    "var_f128673a": "#hash_2028b2c0395c86bf",
-    "var_88c17f11": "#zm_zodt8_sentinel_artifact",
-    "var_c029b82f": 1,
-    "var_846fa8e": "#zm_zodt8_sentinel_trial",
-    "var_250f773d": 2,
-    "var_16fb993f": "#hash_30727aefda60cbd4"
+    "hash_f128673a": "#hash_2028b2c0395c86bf",
+    "hash_88c17f11": "#zm_zodt8_sentinel_artifact",
+    "hash_c029b82f": 1,
+    "hash_846fa8e": "#zm_zodt8_sentinel_trial",
+    "hash_250f773d": 2,
+    "hash_16fb993f": "#hash_30727aefda60cbd4"
 }

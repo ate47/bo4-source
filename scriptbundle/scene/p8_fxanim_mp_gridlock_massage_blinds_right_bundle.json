@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6931172ab7a703bb",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 3,
+                    "spacermax": 5,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_40d43c02189a0696",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_gridlock_massage_blinds_right_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

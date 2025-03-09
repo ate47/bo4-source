@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace nesting_doll_grenade/zm_equip_nesting_doll_grenade
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x99fd494a, Offset: 0x118
 // Size: 0x32c
 function __init__() {
@@ -42,7 +42,7 @@ function __init__() {
 }
 
 // Namespace nesting_doll_grenade/zm_equip_nesting_doll_grenade
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5b963aba, Offset: 0x450
 // Size: 0x6c
 function function_ba2049f5() {
@@ -53,7 +53,7 @@ function function_ba2049f5() {
 }
 
 // Namespace nesting_doll_grenade/zm_equip_nesting_doll_grenade
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x7ddce58a, Offset: 0x4c8
 // Size: 0xea
 function function_23cf8077(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -66,7 +66,7 @@ function function_23cf8077(inflictor, attacker, damage, flags, meansofdeath, wea
 }
 
 // Namespace nesting_doll_grenade/zm_equip_nesting_doll_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6b767185, Offset: 0x5c0
 // Size: 0x44
 function on_grenade_fired(s_params) {
@@ -76,7 +76,7 @@ function on_grenade_fired(s_params) {
 }
 
 // Namespace nesting_doll_grenade/zm_equip_nesting_doll_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa17b4ae, Offset: 0x610
 // Size: 0x184
 function function_a1b7b263(e_player) {
@@ -99,7 +99,7 @@ function function_a1b7b263(e_player) {
 }
 
 // Namespace nesting_doll_grenade/zm_equip_nesting_doll_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xada58355, Offset: 0x7a0
 // Size: 0x74
 function get_launch_velocity(var_4da5977e) {
@@ -109,7 +109,7 @@ function get_launch_velocity(var_4da5977e) {
 }
 
 // Namespace nesting_doll_grenade/zm_equip_nesting_doll_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x52720ef6, Offset: 0x820
 // Size: 0x2a
 function is_nesting_doll_grenade(w_grenade) {

@@ -7,7 +7,7 @@
 class czm_trial_weapon_locked : cluielem {
 
     // Namespace czm_trial_weapon_locked/zm_trial_weapon_locked
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x526a0cd, Offset: 0x320
     // Size: 0x6c
     function function_1e74977(localclientnum) {
@@ -17,7 +17,7 @@ class czm_trial_weapon_locked : cluielem {
     }
 
     // Namespace czm_trial_weapon_locked/zm_trial_weapon_locked
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x1b4521df, Offset: 0x2e8
     // Size: 0x2c
     function open(localclientnum) {
@@ -25,7 +25,7 @@ class czm_trial_weapon_locked : cluielem {
     }
 
     // Namespace czm_trial_weapon_locked/zm_trial_weapon_locked
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x70e2304, Offset: 0x2a0
     // Size: 0x40
     function function_fa582112(localclientnum) {
@@ -34,7 +34,7 @@ class czm_trial_weapon_locked : cluielem {
     }
 
     // Namespace czm_trial_weapon_locked/zm_trial_weapon_locked
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xbe497453, Offset: 0x270
     // Size: 0x24
     function register_clientside(uid) {
@@ -42,7 +42,7 @@ class czm_trial_weapon_locked : cluielem {
     }
 
     // Namespace czm_trial_weapon_locked/zm_trial_weapon_locked
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x56ae2337, Offset: 0x210
     // Size: 0x54
     function setup_clientfields(uid, var_18c795d0) {
@@ -63,7 +63,7 @@ function register(uid, var_18c795d0) {
 }
 
 // Namespace zm_trial_weapon_locked/zm_trial_weapon_locked
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x96becb73, Offset: 0x108
 // Size: 0x40
 function register_clientside(uid) {
@@ -73,7 +73,7 @@ function register_clientside(uid) {
 }
 
 // Namespace zm_trial_weapon_locked/zm_trial_weapon_locked
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x68a9790a, Offset: 0x150
 // Size: 0x1c
 function open(player) {
@@ -89,7 +89,7 @@ function close(player) {
 }
 
 // Namespace zm_trial_weapon_locked/zm_trial_weapon_locked
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe0b7306d, Offset: 0x1a0
 // Size: 0x1a
 function is_open(localclientnum) {
@@ -97,7 +97,7 @@ function is_open(localclientnum) {
 }
 
 // Namespace zm_trial_weapon_locked/zm_trial_weapon_locked
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8da03ccc, Offset: 0x1c8
 // Size: 0x1c
 function function_1e74977(localclientnum) {

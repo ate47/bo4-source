@@ -404,10 +404,10 @@
     "name": "scene_frontend_t8_helicopter",
     "dontsync": 1,
     "aligntarget": "tag_align_frozen",
-    "var_16999a5d": -1,
-    "var_eb00c330": -26,
+    "hash_16999a5d": -1,
+    "hash_eb00c330": -26,
     "team": "any",
-    "var_be60a82b": 29,
-    "var_922b4fc5": 1,
-    "var_3e692842": -35
+    "hash_be60a82b": 29,
+    "hash_922b4fc5": 1,
+    "hash_3e692842": -35
 }

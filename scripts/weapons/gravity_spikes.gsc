@@ -6,7 +6,7 @@
 #namespace gravity_spikes;
 
 // Namespace gravity_spikes/gravity_spikes
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1d90fafa, Offset: 0x98
 // Size: 0x3c
 function init_shared() {
@@ -15,7 +15,7 @@ function init_shared() {
 }
 
 // Namespace gravity_spikes/gravity_spikes
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x28675e50, Offset: 0xe0
 // Size: 0x14
 function function_aaef50a() {
@@ -23,7 +23,7 @@ function function_aaef50a() {
 }
 
 // Namespace gravity_spikes/gravity_spikes
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd1234cad, Offset: 0x100
 // Size: 0xb0
 function function_263a039() {

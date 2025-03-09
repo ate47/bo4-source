@@ -1,8 +1,0 @@
-{
-    "name": "#gsol_zm_equipment",
-    "assetType": "gamesettingoption",
-    "assets": [
-        "#zm_equipment",
-        "#zm_equipcharge"
-    ]
-}

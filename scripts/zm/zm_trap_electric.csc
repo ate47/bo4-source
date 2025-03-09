@@ -8,15 +8,15 @@
 
 // Namespace zm_trap_electric/zm_trap_electric
 // Params 0, eflags: 0x2
-// Checksum 0xc79c188c, Offset: 0x118
+// Checksum 0xad5e1497, Offset: 0x118
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zm_trap_electric", &__init__, undefined, undefined);
 }
 
 // Namespace zm_trap_electric/zm_trap_electric
-// Params 0, eflags: 0x1 linked
-// Checksum 0x55f8272b, Offset: 0x160
+// Params 0, eflags: 0x0
+// Checksum 0xeed551e7, Offset: 0x160
 // Size: 0x172
 function __init__() {
     a_traps = struct::get_array("trap_electric", "targetname");
@@ -29,8 +29,8 @@ function __init__() {
 }
 
 // Namespace zm_trap_electric/zm_trap_electric
-// Params 7, eflags: 0x1 linked
-// Checksum 0x743b8674, Offset: 0x2e0
+// Params 7, eflags: 0x0
+// Checksum 0xa36a2ef9, Offset: 0x2e0
 // Size: 0x8c
 function trap_fx_monitor(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     exploder_name = "trap_electric_" + fieldname;
@@ -42,8 +42,8 @@ function trap_fx_monitor(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace zm_trap_electric/zm_trap_electric
-// Params 7, eflags: 0x1 linked
-// Checksum 0xf1227c65, Offset: 0x378
+// Params 7, eflags: 0x0
+// Checksum 0x10c0498e, Offset: 0x378
 // Size: 0x1fe
 function electrocute_ai(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {

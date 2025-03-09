@@ -12,7 +12,7 @@ function autoexec __init__() {
 }
 
 // Namespace wz_open_skyscrapers_fixup/wz_open_skyscrapers_fixup
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x80f724d1, Offset: 0xa0
 // Size: 0x4
 function private function_4305a789() {
@@ -20,7 +20,7 @@ function private function_4305a789() {
 }
 
 // Namespace wz_open_skyscrapers_fixup/wz_open_skyscrapers_fixup
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x20f82f51, Offset: 0xb0
 // Size: 0xdc
 function private function_c94723bd() {

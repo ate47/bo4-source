@@ -1,7 +1,7 @@
 #namespace mp_silo_sound;
 
 // Namespace mp_silo_sound/mp_silo_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x44c5a69b, Offset: 0x68
 // Size: 0x34
 function main() {
@@ -10,7 +10,7 @@ function main() {
 }
 
 // Namespace mp_silo_sound/mp_silo_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x62576f82, Offset: 0xa8
 // Size: 0x58
 function function_10156cf8() {
@@ -21,7 +21,7 @@ function function_10156cf8() {
 }
 
 // Namespace mp_silo_sound/mp_silo_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbcb46dab, Offset: 0x108
 // Size: 0x88
 function function_448f6f5d() {

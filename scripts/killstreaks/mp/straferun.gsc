@@ -30,7 +30,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb6eb0548, Offset: 0x490
 // Size: 0x314
 function __init__() {
@@ -71,7 +71,7 @@ function __init__() {
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2c208604, Offset: 0x7b0
 // Size: 0x48
 function function_3675de8b() {
@@ -81,7 +81,7 @@ function function_3675de8b() {
 }
 
 // Namespace straferun/straferun
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x30033b0, Offset: 0x800
 // Size: 0x6c
 function function_bff5c062(var_c4b91241, attackingplayer) {
@@ -90,7 +90,7 @@ function function_bff5c062(var_c4b91241, attackingplayer) {
 }
 
 // Namespace straferun/straferun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4349ad1d, Offset: 0x878
 // Size: 0x6e0
 function usekillstreakstraferun(hardpointtype) {
@@ -159,7 +159,7 @@ function usekillstreakstraferun(hardpointtype) {
 }
 
 // Namespace straferun/straferun
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0x5e114a44, Offset: 0xf60
 // Size: 0x102
 function function_16abaea4(inflictor, attacker, damage, idflags, meansofdeath, weapon, point, dir, hitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
@@ -172,7 +172,7 @@ function function_16abaea4(inflictor, attacker, damage, idflags, meansofdeath, w
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe5b8c3a1, Offset: 0x1070
 // Size: 0x326
 function function_c24cc26a() {
@@ -249,7 +249,7 @@ function playcontrail() {
 }
 
 // Namespace straferun/straferun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb5bbd72d, Offset: 0x1418
 // Size: 0x8e
 function cleanupondeath(team) {
@@ -263,7 +263,7 @@ function cleanupondeath(team) {
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe802bdd7, Offset: 0x14b0
 // Size: 0x2e2
 function watchdamage() {
@@ -309,7 +309,7 @@ function watchdamage() {
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x903c8b61, Offset: 0x17a0
 // Size: 0x156
 function watchforotherkillstreaks() {
@@ -340,7 +340,7 @@ function watchforotherkillstreaks() {
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xafca5eeb, Offset: 0x1900
 // Size: 0x5e
 function watchforkills() {
@@ -353,7 +353,7 @@ function watchforkills() {
 }
 
 // Namespace straferun/straferun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x87490d5b, Offset: 0x1968
 // Size: 0x62
 function watchforownerexit(owner) {
@@ -374,7 +374,7 @@ function addstraferunkill() {
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x22863223, Offset: 0x1a08
 // Size: 0x2c0
 function dostraferuns() {
@@ -425,7 +425,7 @@ function dostraferuns() {
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa107572e, Offset: 0x1cd0
 // Size: 0x90
 function function_d4896942() {
@@ -439,7 +439,7 @@ function function_d4896942() {
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xacf10232, Offset: 0x1d68
 // Size: 0x38c
 function startstrafe() {
@@ -488,7 +488,7 @@ function firststrafe() {
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xda15b011, Offset: 0x2110
 // Size: 0x3a2
 function firerockets() {
@@ -539,7 +539,7 @@ function firerockets() {
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xde970ad9, Offset: 0x24c0
 // Size: 0x1c8
 function stopstrafe() {
@@ -572,7 +572,7 @@ function stopstrafe() {
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xff608a, Offset: 0x2690
 // Size: 0x64
 function shouldleavemap() {
@@ -589,7 +589,7 @@ function shouldleavemap() {
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb38751e6, Offset: 0x2700
 // Size: 0x114
 function leavemap() {
@@ -611,7 +611,7 @@ function leavemap() {
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5ece48c, Offset: 0x2820
 // Size: 0x104
 function explode() {
@@ -633,7 +633,7 @@ function explode() {
 }
 
 // Namespace straferun/straferun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x46787e13, Offset: 0x2930
 // Size: 0xa6
 function cantargetentity(entity) {
@@ -648,7 +648,7 @@ function cantargetentity(entity) {
 }
 
 // Namespace straferun/straferun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe9767664, Offset: 0x29e0
 // Size: 0x202
 function cantargetplayer(player) {
@@ -688,7 +688,7 @@ function cantargetplayer(player) {
 }
 
 // Namespace straferun/straferun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbff68864, Offset: 0x2bf0
 // Size: 0x8a
 function cantargetactor(actor) {
@@ -708,7 +708,7 @@ function cantargetactor(actor) {
 }
 
 // Namespace straferun/straferun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2f8c821a, Offset: 0x2c88
 // Size: 0x98
 function targetinfrontofplane(target) {
@@ -722,7 +722,7 @@ function targetinfrontofplane(target) {
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x90f696b1, Offset: 0x2d28
 // Size: 0x158
 function getvalidtargets() {
@@ -744,7 +744,7 @@ function getvalidtargets() {
 }
 
 // Namespace straferun/straferun
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfbb483fd, Offset: 0x2e88
 // Size: 0xb2
 function deadrecontargetorigin(rocket_start, target) {
@@ -757,7 +757,7 @@ function deadrecontargetorigin(rocket_start, target) {
 }
 
 // Namespace straferun/straferun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x96d6367e, Offset: 0x2f48
 // Size: 0x138
 function shellshockplayers(origin) {
@@ -781,7 +781,7 @@ function shellshockplayers(origin) {
 }
 
 // Namespace straferun/straferun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa69c615c, Offset: 0x3088
 // Size: 0xd2
 function straferunshellshock(straferun) {
@@ -797,7 +797,7 @@ function straferunshellshock(straferun) {
 }
 
 // Namespace straferun/straferun
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x47b57d18, Offset: 0x3168
 // Size: 0xac
 function createkillcams(numkillcams, numrockets) {
@@ -811,7 +811,7 @@ function createkillcams(numkillcams, numrockets) {
 }
 
 // Namespace straferun/straferun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc42ca020, Offset: 0x3220
 // Size: 0x8e
 function resetkillcams(time) {
@@ -825,7 +825,7 @@ function resetkillcams(time) {
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf6f4b8d7, Offset: 0x32b8
 // Size: 0x5e
 function unlinkkillcams() {
@@ -835,7 +835,7 @@ function unlinkkillcams() {
 }
 
 // Namespace straferun/straferun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4e8da510, Offset: 0x3320
 // Size: 0x50
 function createkillcament() {
@@ -859,7 +859,7 @@ function resetkillcament(parent) {
 }
 
 // Namespace straferun/straferun
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9eb81f10, Offset: 0x3498
 // Size: 0x13c
 function resetrocketkillcament(parent, rocketindex) {
@@ -883,7 +883,7 @@ function deletewhenparentdies(parent) {
 }
 
 // Namespace straferun/straferun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6cdde1fb, Offset: 0x3628
 // Size: 0x5c
 function unlinkwhenparentdies(parent) {
@@ -893,7 +893,7 @@ function unlinkwhenparentdies(parent) {
 }
 
 // Namespace straferun/straferun
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x55408940, Offset: 0x3690
 // Size: 0x1c4
 function attachkillcamtorocket(killcament, selectedtarget, targetorigin) {
@@ -912,7 +912,7 @@ function attachkillcamtorocket(killcament, selectedtarget, targetorigin) {
 }
 
 // Namespace straferun/straferun
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf889ea9c, Offset: 0x3860
 // Size: 0x118
 function unlinkwhenclose(selectedtarget, targetorigin, plane) {

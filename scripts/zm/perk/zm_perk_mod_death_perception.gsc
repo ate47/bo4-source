@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_death_perception/zm_perk_mod_death_perception
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd33aa273, Offset: 0xe0
 // Size: 0x14
 function __init__() {
@@ -20,7 +20,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_death_perception/zm_perk_mod_death_perception
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x100
 // Size: 0x4
 function __main__() {
@@ -28,7 +28,7 @@ function __main__() {
 }
 
 // Namespace zm_perk_mod_death_perception/zm_perk_mod_death_perception
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9987a196, Offset: 0x110
 // Size: 0x94
 function function_bc420db4() {
@@ -37,7 +37,7 @@ function function_bc420db4() {
 }
 
 // Namespace zm_perk_mod_death_perception/zm_perk_mod_death_perception
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1b0
 // Size: 0x4
 function function_422ccf78() {
@@ -45,7 +45,7 @@ function function_422ccf78() {
 }
 
 // Namespace zm_perk_mod_death_perception/zm_perk_mod_death_perception
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x3e7718ad, Offset: 0x1c0
 // Size: 0x24
 function function_f8f0703b(b_pause, str_perk, str_result, n_slot) {

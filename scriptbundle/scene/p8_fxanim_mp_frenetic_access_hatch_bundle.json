@@ -1,0 +1,39 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_64180204df9be025",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 30,
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_73c9eed460aef8ff",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 30,
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#p8_fxanim_mp_frenetic_access_hatch_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "configstringfiletype": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_frenetic_access_hatch_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

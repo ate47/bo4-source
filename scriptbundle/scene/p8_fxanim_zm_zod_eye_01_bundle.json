@@ -91,7 +91,7 @@
                         }
                     ],
                     "name": "arrive",
-                    "var_1c7fbd6b": "#hash_62c5fda17bfdac4d"
+                    "shotmodel": "#hash_62c5fda17bfdac4d"
                 },
                 {
                     "entry": [
@@ -101,7 +101,7 @@
                         }
                     ],
                     "name": "leave",
-                    "var_1c7fbd6b": "#hash_62c5fda17bfdac4d"
+                    "shotmodel": "#hash_62c5fda17bfdac4d"
                 },
                 {
                     "entry": [
@@ -110,9 +110,9 @@
                             "entrytype": "anim"
                         }
                     ],
-                    "var_64c0ee5a": "#hash_472c07eec6e91873",
+                    "hash_64c0ee5a": "#hash_472c07eec6e91873",
                     "name": "crack",
-                    "var_1c7fbd6b": "#hash_678aaf8e37498e9a"
+                    "shotmodel": "#hash_678aaf8e37498e9a"
                 },
                 {
                     "entry": [
@@ -122,7 +122,7 @@
                         }
                     ],
                     "name": "crack_leave",
-                    "var_1c7fbd6b": "#hash_472c07eec6e91873"
+                    "shotmodel": "#hash_472c07eec6e91873"
                 },
                 {
                     "entry": [
@@ -132,7 +132,7 @@
                         }
                     ],
                     "name": "crack_arrive",
-                    "var_1c7fbd6b": "#hash_472c07eec6e91873"
+                    "shotmodel": "#hash_472c07eec6e91873"
                 },
                 {
                     "entry": [
@@ -141,9 +141,9 @@
                             "entrytype": "anim"
                         }
                     ],
-                    "var_64c0ee5a": "#hash_6171eeb75fd1389a",
+                    "hash_64c0ee5a": "#hash_6171eeb75fd1389a",
                     "name": "break",
-                    "var_1c7fbd6b": "#hash_678aaf8e37498e9a"
+                    "shotmodel": "#hash_678aaf8e37498e9a"
                 },
                 {
                     "entry": [
@@ -153,7 +153,7 @@
                         }
                     ],
                     "name": "break_leave",
-                    "var_1c7fbd6b": "#hash_6171eeb75fd1389a"
+                    "shotmodel": "#hash_6171eeb75fd1389a"
                 },
                 {
                     "entry": [
@@ -163,7 +163,7 @@
                         }
                     ],
                     "name": "break_arrive",
-                    "var_1c7fbd6b": "#hash_6171eeb75fd1389a"
+                    "shotmodel": "#hash_6171eeb75fd1389a"
                 }
             ],
             "model": "#hash_678aaf8e37498e9a",

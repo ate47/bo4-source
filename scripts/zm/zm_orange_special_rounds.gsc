@@ -17,7 +17,7 @@
 #namespace zm_orange_special_rounds;
 
 // Namespace zm_orange_special_rounds/zm_orange_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8380c992, Offset: 0x168
 // Size: 0x294
 function main() {
@@ -44,7 +44,7 @@ function main() {
 }
 
 // Namespace zm_orange_special_rounds/zm_orange_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x83fc5fae, Offset: 0x408
 // Size: 0x6c
 function function_2eb8970d() {
@@ -55,7 +55,7 @@ function function_2eb8970d() {
 }
 
 // Namespace zm_orange_special_rounds/zm_orange_special_rounds
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4e6f91ce, Offset: 0x480
 // Size: 0xe2
 function function_5df3e3dd(var_dbce0c44) {
@@ -71,7 +71,7 @@ function function_5df3e3dd(var_dbce0c44) {
 }
 
 // Namespace zm_orange_special_rounds/zm_orange_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd2c23d8d, Offset: 0x570
 // Size: 0x32
 function function_c6959cf1() {
@@ -80,7 +80,7 @@ function function_c6959cf1() {
 }
 
 // Namespace zm_orange_special_rounds/zm_orange_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd630dead, Offset: 0x5b0
 // Size: 0xc8
 function function_27695a82() {
@@ -94,7 +94,7 @@ function function_27695a82() {
 }
 
 // Namespace zm_orange_special_rounds/zm_orange_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbc0ce845, Offset: 0x680
 // Size: 0x54
 function function_c7e59327() {
@@ -109,7 +109,7 @@ function function_c7e59327() {
 }
 
 // Namespace zm_orange_special_rounds/zm_orange_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x243f0d3a, Offset: 0x6e0
 // Size: 0x2e
 function function_82e6d4e0() {
@@ -121,11 +121,11 @@ function function_82e6d4e0() {
 }
 
 // Namespace zm_orange_special_rounds/zm_orange_special_rounds
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xda23ca49, Offset: 0x718
 // Size: 0x2a8
 function function_a2f2a9a3() {
-    if (self.var_9fde8624 !== #"zombie_electric") {
+    if (self.subarchetype !== #"zombie_electric") {
         return false;
     }
     a_s_spawn_locs = level.zm_loc_types[#"zombie_location"];

@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "score_reset_on_death",
     "displayname": "#hash_199f1ece5f588e4",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "scoreResetOnDeath",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

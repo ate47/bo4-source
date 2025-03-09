@@ -22,7 +22,7 @@ class robotphalanx {
     var tier3robots_;
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 0, eflags: 0x9 linked
+    // Params 0, eflags: 0x8
     // Checksum 0x4fc4c550, Offset: 0x16b8
     // Size: 0x56
     constructor() {
@@ -36,7 +36,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x47144607, Offset: 0x1d50
     // Size: 0xee
     function scatterphalanx() {
@@ -56,7 +56,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x8a9fce1e, Offset: 0x1cf8
     // Size: 0x4c
     function resumefire() {
@@ -66,7 +66,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xc1aa3fed, Offset: 0x1bd8
     // Size: 0x114
     function resumeadvance() {
@@ -82,7 +82,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 8, eflags: 0x1 linked
+    // Params 8, eflags: 0x0
     // Checksum 0x31ade7c8, Offset: 0x18c0
     // Size: 0x30c
     function initialize(phalanxtype, origin, destination, breakingpoint, maxtiersize = 10, tieronespawner = undefined, tiertwospawner = undefined, tierthreespawner = undefined) {
@@ -108,7 +108,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0x444f84a0, Offset: 0x1860
     // Size: 0x54
     function haltadvance() {
@@ -120,7 +120,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 0, eflags: 0x1 linked
+    // Params 0, eflags: 0x0
     // Checksum 0xd2d527df, Offset: 0x1808
     // Size: 0x4c
     function haltfire() {
@@ -130,7 +130,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 0, eflags: 0x5 linked
+    // Params 0, eflags: 0x4
     // Checksum 0xcfc6d9e, Offset: 0x1728
     // Size: 0xd4
     function private _updatephalanx() {
@@ -149,7 +149,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 1, eflags: 0x5 linked
+    // Params 1, eflags: 0x4
     // Checksum 0xf8ab2132, Offset: 0x1688
     // Size: 0x28
     function private _updatephalanxthread(phalanx) {
@@ -159,7 +159,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 2, eflags: 0x5 linked
+    // Params 2, eflags: 0x4
     // Checksum 0x217ac43d, Offset: 0x15e0
     // Size: 0xa0
     function private _rotatevec(vector, angle) {
@@ -167,7 +167,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 1, eflags: 0x5 linked
+    // Params 1, eflags: 0x4
     // Checksum 0xcb6b4ee6, Offset: 0x1530
     // Size: 0xa8
     function private _resumefirerobots(robots) {
@@ -178,7 +178,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 1, eflags: 0x5 linked
+    // Params 1, eflags: 0x4
     // Checksum 0x9e4b7894, Offset: 0x14c8
     // Size: 0x5c
     function private _resumefire(robot) {
@@ -188,7 +188,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 1, eflags: 0x5 linked
+    // Params 1, eflags: 0x4
     // Checksum 0x8f893952, Offset: 0x1408
     // Size: 0xb8
     function private _releaserobots(robots) {
@@ -200,7 +200,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 1, eflags: 0x5 linked
+    // Params 1, eflags: 0x4
     // Checksum 0x90d3c8c4, Offset: 0x12b0
     // Size: 0x14c
     function private _releaserobot(robot) {
@@ -219,7 +219,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 1, eflags: 0x5 linked
+    // Params 1, eflags: 0x4
     // Checksum 0x2b7d6a, Offset: 0x11f8
     // Size: 0xb0
     function private _prunedead(robots) {
@@ -233,7 +233,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 5, eflags: 0x5 linked
+    // Params 5, eflags: 0x4
     // Checksum 0xc4408e52, Offset: 0x1000
     // Size: 0x1f0
     function private _movephalanxtier(robots, phalanxtype, tier, destination, forward) {
@@ -251,7 +251,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 1, eflags: 0x5 linked
+    // Params 1, eflags: 0x4
     // Checksum 0x1be9282b, Offset: 0xf10
     // Size: 0xe4
     function private _initializerobot(robot) {
@@ -264,7 +264,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 1, eflags: 0x5 linked
+    // Params 1, eflags: 0x4
     // Checksum 0xeffcb851, Offset: 0xe28
     // Size: 0xe0
     function private _haltfire(robots) {
@@ -277,7 +277,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 1, eflags: 0x5 linked
+    // Params 1, eflags: 0x4
     // Checksum 0xf9f0e0bd, Offset: 0xcf8
     // Size: 0x128
     function private _haltadvance(robots) {
@@ -292,7 +292,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 1, eflags: 0x5 linked
+    // Params 1, eflags: 0x4
     // Checksum 0x1fe66706, Offset: 0xc38
     // Size: 0xb4
     function private _getphalanxspawner(tier) {
@@ -303,7 +303,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 2, eflags: 0x5 linked
+    // Params 2, eflags: 0x4
     // Checksum 0x88cc2ad, Offset: 0x680
     // Size: 0x5ac
     function private _getphalanxpositions(phalanxtype, tier) {
@@ -376,7 +376,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 12, eflags: 0x5 linked
+    // Params 12, eflags: 0x4
     // Checksum 0x64c8212e, Offset: 0x4d0
     // Size: 0x1a8
     function private _dampenexplosivedamage(inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
@@ -395,7 +395,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 6, eflags: 0x5 linked
+    // Params 6, eflags: 0x4
     // Checksum 0x36f4747a, Offset: 0x2a0
     // Size: 0x224
     function private _createphalanxtier(phalanxtype, tier, phalanxposition, forward, maxtiersize, spawner = undefined) {
@@ -425,7 +425,7 @@ class robotphalanx {
     }
 
     // Namespace robotphalanx/robot_phalanx
-    // Params 2, eflags: 0x5 linked
+    // Params 2, eflags: 0x4
     // Checksum 0xe241323b, Offset: 0x1c0
     // Size: 0xd8
     function private _assignphalanxstance(robots, stance) {

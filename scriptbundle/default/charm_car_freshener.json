@@ -1,9 +1,9 @@
 {
     "lootid": "#charm_car_freshener",
-    "var_ff3063df": "attach_t8_charm_pine_tree_view",
+    "hash_ff3063df": "attach_t8_charm_pine_tree_view",
     "image": "ui_icon_weapon_charms_pine_tree",
     "name": "charm_car_freshener",
     "icon": "ui_icon_weapon_charms_pine_tree",
-    "var_ef5ad2b3": "attach_t8_charm_pine_tree_view",
+    "hash_ef5ad2b3": "attach_t8_charm_pine_tree_view",
     "previewimage": "#ui_icon_weapon_charms_pine_tree"
 }

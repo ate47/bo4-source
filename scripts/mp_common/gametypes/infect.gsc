@@ -349,7 +349,7 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
             scoreevents::processscoreevent("infected_infect_3_enemies", attacker, self, weapon);
         }
         if (isdefined(attacker.pers[#"infects"])) {
-            attacker.pers[#"infects"] = attacker.pers[#"infects"] + 1;
+            attacker.pers[#"infects"] += 1;
             attacker.infects = attacker.pers[#"infects"];
         }
         [[ level.var_37d62931 ]](attacker, 1);

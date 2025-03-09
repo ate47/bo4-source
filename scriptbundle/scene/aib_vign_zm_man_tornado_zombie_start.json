@@ -15,7 +15,7 @@
             "nospawn": 1,
             "model": "#spawner_zm_zombie",
             "type": "actor",
-            "var_d318cc2c": 1,
+            "hash_d318cc2c": 1,
             "name": "actor 1",
             "allowdeath": 1,
             "takedamage": 1

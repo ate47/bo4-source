@@ -1,0 +1,21 @@
+{
+    "name": "#spknifeork_wz",
+    "baseWeapon": "#spknifeork",
+    "displayname": "#warzone/spknifeork_t8",
+    "unk70": "#spknifeork",
+    "streamkey": "#hash_4803a05f2beb3e05",
+    "tunables1": "#hash_1d94f3914c8",
+    "attachments": "#hash_1d937490500",
+    "attachmentUniques": "#hash_1d936fd1020",
+    "viewmodel": "#hash_1d93ecc16b0",
+    "sharedWeaponSounds_c08": "#hash_6693ab541a2e19f1",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "image_d40": "#hash_c108be71180ba4de",
+    "rumble_dc0": "#defaultweapon_melee",
+    "rumble_dd8": "#defaultweapon_melee",
+    "image_e90": "#hash_e89ae2007187dd24",
+    "underwaterExplosionSurfaceFX": [],
+    "fx_f60": "#hash_4f4f7d3d49485130",
+    "fx_f68": "#hash_4f4f7d3d49485130"
+}

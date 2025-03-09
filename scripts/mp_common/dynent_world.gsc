@@ -328,7 +328,7 @@ function use_dynent(dynent, activator) {
             succeeded = dynent thread [[ dynent.onuse ]](activator, stateindex, var_9bdcfcd8);
         }
         if (!isdefined(succeeded) || succeeded == 1) {
-            function_e2a06860(dynent, var_9bdcfcd8);
+            setdynentstate(dynent, var_9bdcfcd8);
         }
         return (isdefined(bundle.var_a852a7dd) ? bundle.var_a852a7dd : 0);
     }
@@ -399,7 +399,7 @@ function private event_handler[event_9e981c4] function_ff8b3908(eventstruct) {
     if (isdefined(bundle) && isdefined(bundle.dynentstates)) {
         stateindex = isdefined(bundle.destroyed) ? bundle.destroyed : var_1a5e0c43 ? isdefined(bundle.vehicledestroyed) ? bundle.vehicledestroyed : 0 : 0;
         if (isdefined(bundle.dynentstates[stateindex])) {
-            function_e2a06860(dynent, stateindex);
+            setdynentstate(dynent, stateindex);
         }
     }
 }
@@ -439,7 +439,7 @@ function event_handler[event_cf200f34] function_209450ae(eventstruct) {
             args = strtok(dvarstr, "<dev string:x11e>");
             switch (args[0]) {
             case #"reset":
-                function_3ca3c6e4();
+                resetdynents();
                 break;
             }
         }

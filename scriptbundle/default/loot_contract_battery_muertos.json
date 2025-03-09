@@ -1,19 +1,19 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "var_826726a": "#hash_744b57572cb09059"
+            "hash_826726a": "#hash_744b57572cb09059"
         },
         {
-            "var_826726a": "#hash_759cb09309cf4447"
+            "hash_826726a": "#hash_759cb09309cf4447"
         }
     ],
     "contracticon": "#hash_604e79e9445d653",
-    "var_d0100eab": 2,
+    "hash_d0100eab": 2,
     "relateditemname": "#hash_759cb09309cf4447",
     "contracttitle": "#hash_744b57572cb09059",
     "name": "loot_contract_battery_muertos",
     "contractdescription": "#hash_25105a1e4c1d1e63",
-    "var_f15e270f": "#white",
-    "var_1c057e8c": "#hash_2934433a976bcc3c",
-    "var_e08fc162": "#hash_1228188324cf56e"
+    "hash_f15e270f": "#white",
+    "hash_1c057e8c": "#hash_2934433a976bcc3c",
+    "hash_e08fc162": "#hash_1228188324cf56e"
 }

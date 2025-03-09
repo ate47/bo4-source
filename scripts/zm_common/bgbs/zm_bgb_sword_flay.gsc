@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_sword_flay/zm_bgb_sword_flay
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf36034d9, Offset: 0xe8
 // Size: 0xd4
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_sword_flay/zm_bgb_sword_flay
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1c8
 // Size: 0x4
 function enable() {
@@ -34,7 +34,7 @@ function enable() {
 }
 
 // Namespace zm_bgb_sword_flay/zm_bgb_sword_flay
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1d8
 // Size: 0x4
 function disable() {
@@ -42,13 +42,13 @@ function disable() {
 }
 
 // Namespace zm_bgb_sword_flay/zm_bgb_sword_flay
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x48a60f12, Offset: 0x1e8
 // Size: 0x12e
 function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
     if (meansofdeath === "MOD_MELEE" && weapon != level.weaponnone) {
         if (isalive(self)) {
-            switch (self.var_6f84b820) {
+            switch (self.zm_ai_category) {
             case #"popcorn":
             case #"basic":
             case #"enhanced":
@@ -64,7 +64,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
 }
 
 // Namespace zm_bgb_sword_flay/zm_bgb_sword_flay
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0x5988b8c7, Offset: 0x320
 // Size: 0xa0
 function vehicle_damage_override(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {

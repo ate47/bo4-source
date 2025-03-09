@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace ability_gadgets/ability_gadgets
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x321175b6, Offset: 0x1a8
 // Size: 0xd4
 function __init__() {
@@ -42,7 +42,7 @@ function __init__() {
 #/
 
 // Namespace ability_gadgets/ability_gadgets
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x308
 // Size: 0x4
 function on_player_connect() {
@@ -50,7 +50,7 @@ function on_player_connect() {
 }
 
 // Namespace ability_gadgets/ability_gadgets
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3b9b083b, Offset: 0x318
 // Size: 0x44
 function setflickering(slot, length = 0) {
@@ -58,7 +58,7 @@ function setflickering(slot, length = 0) {
 }
 
 // Namespace ability_gadgets/ability_gadgets
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x368
 // Size: 0x4
 function on_player_spawned() {

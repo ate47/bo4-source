@@ -4,7 +4,7 @@
 #namespace zm_server_throttle;
 
 // Namespace zm_server_throttle/zm_server_throttle
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xed168661, Offset: 0x78
 // Size: 0x84
 function server_choke_init(id, max) {
@@ -18,7 +18,7 @@ function server_choke_init(id, max) {
 }
 
 // Namespace zm_server_throttle/zm_server_throttle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xefe4b8eb, Offset: 0x108
 // Size: 0x32
 function server_choke_thread(id) {
@@ -29,7 +29,7 @@ function server_choke_thread(id) {
 }
 
 // Namespace zm_server_throttle/zm_server_throttle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x16538c5a, Offset: 0x148
 // Size: 0x2e
 function server_choke_safe(id) {
@@ -37,7 +37,7 @@ function server_choke_safe(id) {
 }
 
 // Namespace zm_server_throttle/zm_server_throttle
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xf8511a7, Offset: 0x180
 // Size: 0xf8
 function server_choke_action(id, choke_action, arg1, arg2, arg3) {
@@ -70,7 +70,7 @@ function server_entity_valid(entity) {
 }
 
 // Namespace zm_server_throttle/zm_server_throttle
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa043ad12, Offset: 0x2a8
 // Size: 0x7c
 function server_safe_init(id, max) {
@@ -81,7 +81,7 @@ function server_safe_init(id, max) {
 }
 
 // Namespace zm_server_throttle/zm_server_throttle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7353cf1, Offset: 0x330
 // Size: 0x22
 function _server_safe_ground_trace(pos) {
@@ -89,7 +89,7 @@ function _server_safe_ground_trace(pos) {
 }
 
 // Namespace zm_server_throttle/zm_server_throttle
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xc9034f98, Offset: 0x360
 // Size: 0x52
 function server_safe_ground_trace(id, max, origin) {
@@ -98,7 +98,7 @@ function server_safe_ground_trace(id, max, origin) {
 }
 
 // Namespace zm_server_throttle/zm_server_throttle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1e98323f, Offset: 0x3c0
 // Size: 0x22
 function _server_safe_ground_trace_ignore_water(pos) {

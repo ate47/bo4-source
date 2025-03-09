@@ -1,8 +1,8 @@
 {
-    "var_2ecceeab": "#dart_kill",
+    "hash_2ecceeab": "#dart_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
     "name": "dart_scoreevents",
-    "var_e1b418c1": "ability"
+    "customsettingstype": "ability"
 }

@@ -1,0 +1,32 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "p8_fxanim_mp_silo_rocks_fall_02_sanim",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 48,
+                    "spacermax": 68,
+                    "name": "shot 1"
+                }
+            ],
+            "issiege": 1,
+            "model": "#hash_69b5e1a1fae92393",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "p8_fxanim_mp_silo_rocks_fall_02_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

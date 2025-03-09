@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace remotemissile/remotemissile
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x51836ae5, Offset: 0x120
 // Size: 0x5e
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace remotemissile/remotemissile
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdd628092, Offset: 0x188
 // Size: 0x54
 function function_5951cb24(killstreak_id, team) {
@@ -35,7 +35,7 @@ function function_5951cb24(killstreak_id, team) {
 }
 
 // Namespace remotemissile/remotemissile
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xce6714d2, Offset: 0x1e8
 // Size: 0x180
 function function_dab39bb8(rocket) {
@@ -60,7 +60,7 @@ function function_dab39bb8(rocket) {
 }
 
 // Namespace remotemissile/remotemissile
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2e21287b, Offset: 0x370
 // Size: 0x34
 function function_feddd85a(attacker, weapon) {

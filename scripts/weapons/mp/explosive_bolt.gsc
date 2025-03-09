@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace explosive_bolt/explosive_bolt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe292d4ca, Offset: 0xd0
 // Size: 0x24
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace explosive_bolt/explosive_bolt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x360d7726, Offset: 0x100
 // Size: 0x1c
 function on_player_spawned() {
@@ -30,7 +30,7 @@ function on_player_spawned() {
 }
 
 // Namespace explosive_bolt/explosive_bolt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8ffce5a9, Offset: 0x128
 // Size: 0x160
 function begin_other_grenade_tracking() {

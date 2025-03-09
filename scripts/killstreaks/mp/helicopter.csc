@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace helicopter/helicopter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x24c2a919, Offset: 0x548
 // Size: 0x5fc
 function __init__() {
@@ -51,7 +51,7 @@ function __init__() {
 }
 
 // Namespace helicopter/helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd82ad147, Offset: 0xb50
 // Size: 0xa6
 function on_player_spawned(localclientnum) {
@@ -68,7 +68,7 @@ function on_player_spawned(localclientnum) {
 }
 
 // Namespace helicopter/helicopter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb348d290, Offset: 0xc00
 // Size: 0x15c
 function active_camo_changed(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -88,7 +88,7 @@ function active_camo_changed(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace helicopter/helicopter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x30f430a4, Offset: 0xd68
 // Size: 0x2b4
 function doreveal(local_client_num, direction) {
@@ -132,7 +132,7 @@ function doreveal(local_client_num, direction) {
 }
 
 // Namespace helicopter/helicopter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfb02ba5d, Offset: 0x1028
 // Size: 0x3c
 function heli_comlink_bootup_anim(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -140,7 +140,7 @@ function heli_comlink_bootup_anim(localclientnum, oldval, newval, bnewent, binit
 }
 
 // Namespace helicopter/helicopter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3ff29442, Offset: 0x1070
 // Size: 0x3c
 function supplydrop_care_package_state(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -148,7 +148,7 @@ function supplydrop_care_package_state(localclientnum, oldval, newval, bnewent, 
 }
 
 // Namespace helicopter/helicopter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4692ebf1, Offset: 0x10b8
 // Size: 0x3c
 function supplydrop_ai_tank_state(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -156,7 +156,7 @@ function supplydrop_ai_tank_state(localclientnum, oldval, newval, bnewent, binit
 }
 
 // Namespace helicopter/helicopter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe6c563e, Offset: 0x1100
 // Size: 0x7c
 function warnmissilelocking(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -167,7 +167,7 @@ function warnmissilelocking(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace helicopter/helicopter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xba146189, Offset: 0x1188
 // Size: 0x7c
 function warnmissilelocked(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -178,7 +178,7 @@ function warnmissilelocked(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace helicopter/helicopter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x11423a0b, Offset: 0x1210
 // Size: 0x7c
 function warnmissilefired(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -189,7 +189,7 @@ function warnmissilefired(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace helicopter/helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x12675920, Offset: 0x1298
 // Size: 0x156
 function heli_deletefx(localclientnum) {
@@ -220,7 +220,7 @@ function heli_deletefx(localclientnum) {
 }
 
 // Namespace helicopter/helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x16234b3b, Offset: 0x13f8
 // Size: 0x36a
 function startfx(localclientnum) {
@@ -303,7 +303,7 @@ function trail_fx(localclientnum, trail_fx, trail_tag) {
 }
 
 // Namespace helicopter/helicopter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xebd412ab, Offset: 0x18b8
 // Size: 0x54
 function heli_comlink_lights_on_after_wait(localclientnum, wait_time) {
@@ -314,7 +314,7 @@ function heli_comlink_lights_on_after_wait(localclientnum, wait_time) {
 }
 
 // Namespace helicopter/helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7e6b55a8, Offset: 0x1918
 // Size: 0x1ee
 function heli_comlink_lights_on(localclientnum) {
@@ -333,7 +333,7 @@ function heli_comlink_lights_on(localclientnum) {
 }
 
 // Namespace helicopter/helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x53cdf064, Offset: 0x1b10
 // Size: 0x96
 function heli_comlink_lights_off(localclientnum) {
@@ -349,7 +349,7 @@ function heli_comlink_lights_off(localclientnum) {
 }
 
 // Namespace helicopter/helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x39d03028, Offset: 0x1bb0
 // Size: 0x12c
 function updatemarkerthread(localclientnum) {
@@ -366,7 +366,7 @@ function updatemarkerthread(localclientnum) {
 }
 
 // Namespace helicopter/helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x42f34afc, Offset: 0x1ce8
 // Size: 0x10a
 function stopcrateeffects(localclientnum) {
@@ -390,7 +390,7 @@ function stopcrateeffects(localclientnum) {
 }
 
 // Namespace helicopter/helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1be44996, Offset: 0x1e00
 // Size: 0x74
 function cleanupthrustersthread(localclientnum) {
@@ -402,7 +402,7 @@ function cleanupthrustersthread(localclientnum) {
 }
 
 // Namespace helicopter/helicopter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x10ecb709, Offset: 0x1e80
 // Size: 0x1d4
 function setsupplydropthrustersstate(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -423,7 +423,7 @@ function setsupplydropthrustersstate(localclientnum, oldval, newval, bnewent, bi
 }
 
 // Namespace helicopter/helicopter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5dd90b47, Offset: 0x2060
 // Size: 0x1d4
 function setaitankhrustersstate(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

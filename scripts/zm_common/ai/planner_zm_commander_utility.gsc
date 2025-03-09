@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 #namespace namespace_526571f4;
 
 // Namespace namespace_526571f4/planner_zm_commander_utility
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x7079ea14, Offset: 0x150
 // Size: 0x154
 function private __init__() {
@@ -34,7 +34,7 @@ function private __init__() {
 }
 
 // Namespace namespace_526571f4/planner_zm_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7ef8bae2, Offset: 0x2b0
 // Size: 0x1ac
 function private function_ea95685(commander) {
@@ -58,7 +58,7 @@ function private function_ea95685(commander) {
 }
 
 // Namespace namespace_526571f4/planner_zm_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1678d242, Offset: 0x468
 // Size: 0x324
 function private function_80c4721f(commander) {
@@ -101,7 +101,7 @@ function private function_80c4721f(commander) {
 }
 
 // Namespace namespace_526571f4/planner_zm_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x128c936d, Offset: 0x798
 // Size: 0x1fc
 function private function_73588006(commander) {
@@ -129,7 +129,7 @@ function private function_73588006(commander) {
 }
 
 // Namespace namespace_526571f4/planner_zm_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x9a63da32, Offset: 0x9a0
 // Size: 0x1ac
 function private function_ccdf2c6f(commander) {
@@ -155,7 +155,7 @@ function private function_ccdf2c6f(commander) {
 }
 
 // Namespace namespace_526571f4/planner_zm_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xdcde691c, Offset: 0xb58
 // Size: 0x1cc
 function private function_48fcded4(commander) {
@@ -180,7 +180,7 @@ function private function_48fcded4(commander) {
 }
 
 // Namespace namespace_526571f4/planner_zm_commander_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8673e97e, Offset: 0xd30
 // Size: 0x2fc
 function private function_873b1369(commander) {
@@ -215,7 +215,7 @@ function private function_873b1369(commander) {
 }
 
 // Namespace namespace_526571f4/planner_zm_commander_utility
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xb1098e6c, Offset: 0x1038
 // Size: 0x9a
 function private function_cb29a211(commander, squad, constants) {

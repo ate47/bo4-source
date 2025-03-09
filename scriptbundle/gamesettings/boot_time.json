@@ -4,14 +4,14 @@
     "value2": "5",
     "value3": "10",
     "value1": "0",
-    "var_7c9022a3": "30",
-    "var_dfed6968": "15",
-    "var_71ce0d1f": "20",
+    "value6": "30",
+    "value4": "15",
+    "value5": "20",
     "type": "gamesettings",
     "label": "#menu/x_seconds",
     "name": "boot_time",
     "displayname": "#hash_1e55de5752addb5",
     "label1": "#menu/disabled",
-    "var_9de86f42": 6,
+    "optionscount": 6,
     "setting": "bootTime"
 }

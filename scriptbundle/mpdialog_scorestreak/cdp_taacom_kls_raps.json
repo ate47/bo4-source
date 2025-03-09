@@ -3,9 +3,9 @@
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "cdp_taacom_kls_raps",
-    "var_6f9447b2": "#hash_6beeccf963d1ff13",
-    "var_61d32c30": "#hash_6beecbf963d1fd60",
-    "var_506f8969": "#hash_6beecef963d20279",
-    "var_b6b855f9": "#hash_6beecdf963d200c6",
+    "hash_6f9447b2": "#hash_6beeccf963d1ff13",
+    "hash_61d32c30": "#hash_6beecbf963d1fd60",
+    "hash_506f8969": "#hash_6beecef963d20279",
+    "hash_b6b855f9": "#hash_6beecdf963d200c6",
     "hacked": "#hash_3dc631caeafb8f4"
 }

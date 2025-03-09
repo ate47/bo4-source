@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_wall_to_wall_clearance/zm_bgb_wall_to_wall_clearance
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8ad24e46, Offset: 0xd0
 // Size: 0x4c
 function __init__() {

@@ -14,7 +14,7 @@
 #namespace zm_talisman;
 
 // Namespace zm_talisman/zm_talisman
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2ded06b8, Offset: 0x100
 // Size: 0x44
 function init() {
@@ -23,7 +23,7 @@ function init() {
 }
 
 // Namespace zm_talisman/zm_talisman
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf3ecaa86, Offset: 0x150
 // Size: 0x2ec
 function on_player_connect() {
@@ -61,7 +61,7 @@ function on_player_connect() {
 }
 
 // Namespace zm_talisman/zm_talisman
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfeb53dd2, Offset: 0x448
 // Size: 0x142
 function on_player_disconnect() {
@@ -82,7 +82,7 @@ function on_player_disconnect() {
 }
 
 // Namespace zm_talisman/zm_talisman
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x203e3ee, Offset: 0x598
 // Size: 0xf2
 function register_talisman(str_talisman, activate_talisman) {
@@ -99,7 +99,7 @@ function register_talisman(str_talisman, activate_talisman) {
 }
 
 // Namespace zm_talisman/zm_talisman
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x13f1ec65, Offset: 0x698
 // Size: 0xfc
 function private function_954b9083(str_talisman) {

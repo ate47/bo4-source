@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa81afc2f, Offset: 0xd00
 // Size: 0xb3a
 function __init__() {
@@ -112,7 +112,7 @@ function flush_dialog() {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf45dfbe9, Offset: 0x18d0
 // Size: 0x3e
 function flush_dialog_on_player() {
@@ -124,7 +124,7 @@ function flush_dialog_on_player() {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4447c10, Offset: 0x1918
 // Size: 0x84
 function get_dialog_bundle_alias(dialogbundle, dialogkey) {
@@ -143,7 +143,7 @@ function get_dialog_bundle_alias(dialogbundle, dialogkey) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x36e700db, Offset: 0x19a8
 // Size: 0x3c
 function pick_boost_number() {
@@ -152,7 +152,7 @@ function pick_boost_number() {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2896da77, Offset: 0x19f0
 // Size: 0xdc
 function on_joined_team(params) {
@@ -172,7 +172,7 @@ function on_joined_team(params) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb0695c35, Offset: 0x1ad8
 // Size: 0x46
 function set_blops_dialog() {
@@ -181,7 +181,7 @@ function set_blops_dialog() {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x322e87c4, Offset: 0x1b28
 // Size: 0x46
 function set_cdp_dialog() {
@@ -190,7 +190,7 @@ function set_cdp_dialog() {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x51a5ac2c, Offset: 0x1b78
 // Size: 0xe4
 function on_player_spawned() {
@@ -215,7 +215,7 @@ function on_player_spawned() {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x621cc427, Offset: 0x1c68
 // Size: 0x80
 function dialog_chance(chancekey) {
@@ -229,7 +229,7 @@ function dialog_chance(chancekey) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe1671bdf, Offset: 0x1cf0
 // Size: 0x86
 function mpdialog_value(mpdialogkey, defaultvalue) {
@@ -248,7 +248,7 @@ function mpdialog_value(mpdialogkey, defaultvalue) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe79c65f8, Offset: 0x1d80
 // Size: 0x232
 function water_vox() {
@@ -287,7 +287,7 @@ function water_vox() {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x60f7a11a, Offset: 0x1fc0
 // Size: 0x144
 function taking_fire_vox(params) {
@@ -351,7 +351,7 @@ function on_player_near_explodable(object, type) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9cdca887, Offset: 0x22f0
 // Size: 0x2c6
 function enemy_threat() {
@@ -444,7 +444,7 @@ function player_killed(attacker, killstreaktype) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x5ba3695a, Offset: 0x2988
 // Size: 0xd4
 function heavyweaponkilllogic(attacker, weapon, victim) {
@@ -472,7 +472,7 @@ function playkillbattlechatter(attacker, weapon, victim, einflictor) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xfd72bcef, Offset: 0x2b08
 // Size: 0x3c4
 function say_kill_battle_chatter(attacker, weapon, victim, inflictor) {
@@ -549,7 +549,7 @@ function event_handler[grenade_fire] function_54ca82b9(eventstruct) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x63de6ccd, Offset: 0x3200
 // Size: 0x192
 function incoming_projectile_alert(thrower, projectile, dialogkey, waittime) {
@@ -597,7 +597,7 @@ function event_handler[grenade_stuck] function_2ad593d8(eventstruct) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb9504a40, Offset: 0x3468
 // Size: 0x35c
 function heavy_weapon_success_reaction() {
@@ -638,7 +638,7 @@ function heavy_weapon_success_reaction() {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe7a79fa4, Offset: 0x37d0
 // Size: 0x254
 function play_promotion_reaction() {
@@ -691,7 +691,7 @@ function play_laststand_vox() {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xefabca5a, Offset: 0x3ac0
 // Size: 0x5c
 function function_78c16252() {
@@ -715,7 +715,7 @@ function play_death_vox(body, attacker, weapon, meansofdeath) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb7e5619e, Offset: 0x3bc0
 // Size: 0x152
 function get_death_vox(weapon, meansofdeath) {
@@ -749,7 +749,7 @@ function get_death_vox(weapon, meansofdeath) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb38628e3, Offset: 0x3d20
 // Size: 0x5c
 function play_killstreak_threat(killstreaktype) {
@@ -760,7 +760,7 @@ function play_killstreak_threat(killstreaktype) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xe9e4870c, Offset: 0x3d88
 // Size: 0xac
 function wait_play_dialog(waittime, dialogkey, dialogflags, dialogbuffer, enemy, endnotify) {
@@ -776,7 +776,7 @@ function wait_play_dialog(waittime, dialogkey, dialogflags, dialogbuffer, enemy,
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xc8f5618, Offset: 0x3e40
 // Size: 0x4d4
 function play_dialog(dialogkey, dialogflags, dialogbuffer, enemy) {
@@ -862,7 +862,7 @@ function play_dialog(dialogkey, dialogflags, dialogbuffer, enemy) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x808303d4, Offset: 0x4320
 // Size: 0x92
 function wait_dialog_buffer(dialogbuffer) {
@@ -877,7 +877,7 @@ function wait_dialog_buffer(dialogbuffer) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x11bcf1c5, Offset: 0x43c0
 // Size: 0x42
 function stop_dialog() {
@@ -896,7 +896,7 @@ function wait_playback_time(soundalias) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xafea31b, Offset: 0x4428
 // Size: 0x9a
 function get_player_dialog_alias(dialogkey) {
@@ -915,7 +915,7 @@ function get_player_dialog_alias(dialogkey) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x5a03aede, Offset: 0x44d0
 // Size: 0xe8
 function count_keys(&keycounts, bundle, dialogkey) {
@@ -933,7 +933,7 @@ function count_keys(&keycounts, bundle, dialogkey) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7105eb9e, Offset: 0x45c0
 // Size: 0xcc
 function get_random_key(dialogkey) {
@@ -952,7 +952,7 @@ function get_random_key(dialogkey) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8db9a83, Offset: 0x4698
 // Size: 0x58c
 function play_gadget_ready(weapon, userflip = 0) {
@@ -1065,7 +1065,7 @@ function play_gadget_ready(weapon, userflip = 0) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcb0fca6a, Offset: 0x4c30
 // Size: 0x294
 function play_gadget_activate(weapon) {
@@ -1130,7 +1130,7 @@ function play_gadget_activate(weapon) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x8558efe8, Offset: 0x4ed0
 // Size: 0x2d4
 function play_gadget_success(weapon, waitkey, victim) {
@@ -1198,7 +1198,7 @@ function play_gadget_success(weapon, waitkey, victim) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x30a19ee8, Offset: 0x51b0
 // Size: 0xbc
 function play_gadget_off(weapon) {
@@ -1221,7 +1221,7 @@ function play_gadget_off(weapon) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd4c55a9a, Offset: 0x5278
 // Size: 0x44
 function play_throw_hatchet() {
@@ -1229,7 +1229,7 @@ function play_throw_hatchet() {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9623b0c6, Offset: 0x52c8
 // Size: 0x192
 function get_enemy_players() {
@@ -1254,7 +1254,7 @@ function get_enemy_players() {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7d28fff6, Offset: 0x5468
 // Size: 0xe8
 function get_friendly_players() {
@@ -1270,7 +1270,7 @@ function get_friendly_players() {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x691e6883, Offset: 0x5558
 // Size: 0x100
 function can_play_dialog(teamonly) {
@@ -1284,7 +1284,7 @@ function can_play_dialog(teamonly) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x45cb4281, Offset: 0x5660
 // Size: 0xe6
 function get_closest_player_enemy(origin = self.origin, teamonly) {
@@ -1300,7 +1300,7 @@ function get_closest_player_enemy(origin = self.origin, teamonly) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb1d42472, Offset: 0x5750
 // Size: 0xf2
 function get_closest_player_ally(teamonly) {
@@ -1319,7 +1319,7 @@ function get_closest_player_ally(teamonly) {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc42951, Offset: 0x5850
 // Size: 0x202
 function check_boost_start_conversation() {
@@ -1353,7 +1353,7 @@ function check_boost_start_conversation() {
 }
 
 // Namespace dialog_shared/dialog_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5c7118f2, Offset: 0x5a60
 // Size: 0x72
 function pick_boost_players(player1, player2) {

@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_crawl_space/zm_bgb_crawl_space
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd7d0fa96, Offset: 0xe0
 // Size: 0x64
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_crawl_space/zm_bgb_crawl_space
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbb617b33, Offset: 0x150
 // Size: 0x116
 function activation() {

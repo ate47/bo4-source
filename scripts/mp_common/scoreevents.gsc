@@ -659,7 +659,7 @@ function scoreeventplayerkill(data, time) {
                 }
             }
             killdistance = distance(victim.origin, attackerorigin);
-            attacker.pers[#"kill_distances"] = attacker.pers[#"kill_distances"] + killdistance;
+            attacker.pers[#"kill_distances"] += killdistance;
             attacker.pers[#"num_kill_distance_entries"]++;
         }
         if (isalive(attacker)) {

@@ -5,7 +5,7 @@
 #namespace zm_red_trap_boiling_bath;
 
 // Namespace zm_red_trap_boiling_bath/zm_red_trap_boiling_bath
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa9c84429, Offset: 0xd8
 // Size: 0x10a
 function init() {
@@ -17,7 +17,7 @@ function init() {
 }
 
 // Namespace zm_red_trap_boiling_bath/zm_red_trap_boiling_bath
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb5577b31, Offset: 0x1f0
 // Size: 0x22e
 function boiling_trap_death_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_armor/zm_armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2c64099d, Offset: 0x120
 // Size: 0x24
 function __init__() {
@@ -32,7 +32,7 @@ function __init__() {
 }
 
 // Namespace zm_armor/zm_armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x812b01da, Offset: 0x150
 // Size: 0x1c
 function on_connect() {
@@ -40,7 +40,7 @@ function on_connect() {
 }
 
 // Namespace zm_armor/zm_armor
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3286ef6e, Offset: 0x178
 // Size: 0xa6
 function register(var_7c8fcded, is_permanent = 1) {
@@ -53,7 +53,7 @@ function register(var_7c8fcded, is_permanent = 1) {
 }
 
 // Namespace zm_armor/zm_armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa84b8bb8, Offset: 0x228
 // Size: 0x136
 function function_49f4b6ee() {
@@ -72,7 +72,7 @@ function function_49f4b6ee() {
 }
 
 // Namespace zm_armor/zm_armor
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xd4ae85d9, Offset: 0x368
 // Size: 0x13e
 function add(var_7c8fcded, var_3ed63752, var_28066539, var_df7ee5d1 = #"hash_2082da6662372184") {
@@ -98,7 +98,7 @@ function add(var_7c8fcded, var_3ed63752, var_28066539, var_df7ee5d1 = #"hash_208
 }
 
 // Namespace zm_armor/zm_armor
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdeacff90, Offset: 0x4b0
 // Size: 0x1de
 function remove(var_7c8fcded, var_2cd89ceb = 0) {
@@ -120,7 +120,7 @@ function remove(var_7c8fcded, var_2cd89ceb = 0) {
 }
 
 // Namespace zm_armor/zm_armor
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc77d5107, Offset: 0x698
 // Size: 0x30
 function get(var_7c8fcded) {
@@ -131,7 +131,7 @@ function get(var_7c8fcded) {
 }
 
 // Namespace zm_armor/zm_armor
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x637fce26, Offset: 0x6d0
 // Size: 0x312
 function damage(n_damage, mod_type, e_attacker) {

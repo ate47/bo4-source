@@ -1,16 +1,16 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "var_826726a": "#hash_2af17aa72622530e"
+            "hash_826726a": "#hash_2af17aa72622530e"
         }
     ],
     "contracticon": "#hash_75b70f886208c197",
-    "var_d0100eab": 1,
+    "hash_d0100eab": 1,
     "relateditemname": "#hash_725b1719bd56b4ec",
     "contracttitle": "#hash_2af17aa72622530e",
     "name": "loot_contract_nomad_heist",
     "contractdescription": "#hash_51bda135eb8aef9",
-    "var_f15e270f": "#white",
-    "var_1c057e8c": "#hash_6c2a5b0dda1c2f0f",
-    "var_e08fc162": "#hash_1ae09465bfc47eb2"
+    "hash_f15e270f": "#white",
+    "hash_1c057e8c": "#hash_6c2a5b0dda1c2f0f",
+    "hash_e08fc162": "#hash_1ae09465bfc47eb2"
 }

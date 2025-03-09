@@ -1,16 +1,16 @@
 {
     "descriptionimage": "#hash_601d7f93185dd79f",
     "description": "#hash_19d57118562471a7",
-    "var_60fcfffa": "#menu/on",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_6bb94572": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#menu/on",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_6bb94572": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "pc_sprint_hold",
     "displayname": "#hash_7472c10d9025829d",
-    "var_66faec87": 10,
-    "var_d4fdc6a0": "+hold_sprint",
-    "var_b7401319": "#menu/off"
+    "hash_66faec87": 10,
+    "hash_d4fdc6a0": "+hold_sprint",
+    "hash_b7401319": "#menu/off"
 }

@@ -8,8 +8,8 @@
     "name": "robot_speed",
     "displayname": "#menu/robot_speed",
     "label1": "#menu/slow",
-    "var_71b6e020": "#menu/fast",
+    "label3": "#menu/fast",
     "label2": "#menu/normal",
-    "var_9de86f42": 3,
+    "optionscount": 3,
     "setting": "robotSpeed"
 }

@@ -1,15 +1,15 @@
 {
-    "var_d58bd0e9": "#hash_7c62ccd07521550f",
-    "var_67b4a761": "#hash_7c62ccd07521550f",
-    "var_2ecceeab": "#molotov_kill",
+    "hash_d58bd0e9": "#hash_7c62ccd07521550f",
+    "hash_67b4a761": "#hash_7c62ccd07521550f",
+    "hash_2ecceeab": "#molotov_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
-    "var_1253685d": "#molotov_burn",
+    "hash_1253685d": "#molotov_burn",
     "vmtype": "both",
-    "var_16abf654": "#hash_7c62ccd07521550f",
+    "hash_16abf654": "#hash_7c62ccd07521550f",
     "name": "dot_molotov_scoreevents",
-    "var_e1b418c1": "status effect",
-    "var_1b8b6771": "#hash_7c62ccd07521550f",
-    "var_170b3630": "#hash_4edb96d5817acc7b",
-    "var_6643c0a0": "#hash_7c62ccd07521550f"
+    "customsettingstype": "status effect",
+    "hash_1b8b6771": "#hash_7c62ccd07521550f",
+    "hash_170b3630": "#hash_4edb96d5817acc7b",
+    "hash_6643c0a0": "#hash_7c62ccd07521550f"
 }

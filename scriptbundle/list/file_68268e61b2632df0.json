@@ -1,9 +1,0 @@
-{
-    "name": "#hash_68268e61b2632df0",
-    "assetType": "gamesettingoption",
-    "assets": [
-        "#draft_enabled",
-        "#draft_time",
-        "#draft_required_clients"
-    ]
-}

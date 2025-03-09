@@ -10,7 +10,7 @@
     "type": "itemspawnentry",
     "hintstring": "#wz/attach_stock",
     "attachslotstock": 1,
-    "var_65b3a12": 1,
+    "hash_65b3a12": 1,
     "name": "stock_wz_item",
     "displayname": "#wz/attach_stock",
     "icon": "#ui_icon_attachment_stock",

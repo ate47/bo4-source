@@ -34,7 +34,7 @@ function autoexec main() {
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x78f66cab, Offset: 0x408
 // Size: 0x3d4
 function registeraivsaimeleebehaviorfunctions() {
@@ -59,7 +59,7 @@ function registeraivsaimeleebehaviorfunctions() {
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe4455b2b, Offset: 0x7e8
 // Size: 0x5e
 function haspotentalaivsaimeleeenemy(behaviortreeentity) {
@@ -76,7 +76,7 @@ function haspotentalaivsaimeleeenemy(behaviortreeentity) {
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfaca1ff0, Offset: 0x850
 // Size: 0x5e
 function iscloseenoughforaivsaimelee(behaviortreeentity) {
@@ -93,7 +93,7 @@ function iscloseenoughforaivsaimelee(behaviortreeentity) {
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xde6c1d06, Offset: 0x8b8
 // Size: 0xb2
 function private shouldaquiremutexonenemyforaivsaimelee(behaviortreeentity) {
@@ -113,7 +113,7 @@ function private shouldaquiremutexonenemyforaivsaimelee(behaviortreeentity) {
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xedd52403, Offset: 0x978
 // Size: 0xb5c
 function private hasaivsaienemy(behaviortreeentity) {
@@ -257,7 +257,7 @@ function private hasaivsaienemy(behaviortreeentity) {
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x6f901994, Offset: 0x14e0
 // Size: 0x4a
 function private decideinitiator(behaviortreeentity) {
@@ -271,7 +271,7 @@ function private decideinitiator(behaviortreeentity) {
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd04018a6, Offset: 0x1538
 // Size: 0x34
 function private isinitiator(behaviortreeentity) {
@@ -282,7 +282,7 @@ function private isinitiator(behaviortreeentity) {
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x34802736, Offset: 0x1578
 // Size: 0x3b4
 function private hascloseaivsaienemy(behaviortreeentity) {
@@ -318,7 +318,7 @@ function private hascloseaivsaienemy(behaviortreeentity) {
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x9ce4f0b4, Offset: 0x1938
 // Size: 0x504
 function private chooseaivsaimeleeanimations(behaviortreeentity) {
@@ -377,7 +377,7 @@ function private chooseaivsaimeleeanimations(behaviortreeentity) {
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe765e98a, Offset: 0x1e48
 // Size: 0xee
 function private choosearchetypevariant(entity) {
@@ -394,7 +394,7 @@ function private choosearchetypevariant(entity) {
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x65722ebf, Offset: 0x1f40
 // Size: 0xfc
 function private aivsaimeleebundleexists(behaviortreeentity, attacker_variant, defender_variant) {
@@ -411,7 +411,7 @@ function private aivsaimeleebundleexists(behaviortreeentity, attacker_variant, d
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x29cfc9b5, Offset: 0x2048
 // Size: 0xf8
 function aivsaimeleeinitialize(behaviortreeentity, asmstatename) {
@@ -431,7 +431,7 @@ function aivsaimeleeinitialize(behaviortreeentity, asmstatename) {
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x22d063d, Offset: 0x2148
 // Size: 0x61c
 function playscriptedmeleeanimations() {
@@ -487,7 +487,7 @@ function playscriptedmeleeanimations() {
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xbeecd631, Offset: 0x2770
 // Size: 0x12e
 function private chooseaivsaimeleefrontflipanimations(behaviortreeentity, animbundle) {
@@ -507,7 +507,7 @@ function private chooseaivsaimeleefrontflipanimations(behaviortreeentity, animbu
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2c1aabca, Offset: 0x28a8
 // Size: 0x126
 function private chooseaivsaimeleefrontwrestleanimations(behaviortreeentity, animbundle) {
@@ -527,7 +527,7 @@ function private chooseaivsaimeleefrontwrestleanimations(behaviortreeentity, ani
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x6012562e, Offset: 0x29d8
 // Size: 0x12e
 function private chooseaivsaimeleebackanimations(behaviortreeentity, animbundle) {
@@ -547,7 +547,7 @@ function private chooseaivsaimeleebackanimations(behaviortreeentity, animbundle)
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xe7fe2a88, Offset: 0x2b10
 // Size: 0x12e
 function private chooseaivsaimeleerightanimations(behaviortreeentity, animbundle) {
@@ -567,7 +567,7 @@ function private chooseaivsaimeleerightanimations(behaviortreeentity, animbundle
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x263cf0ca, Offset: 0x2c48
 // Size: 0x12e
 function private chooseaivsaimeleeleftanimations(behaviortreeentity, animbundle) {
@@ -587,7 +587,7 @@ function private chooseaivsaimeleeleftanimations(behaviortreeentity, animbundle)
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x44d1c64e, Offset: 0x2d80
 // Size: 0xec
 function private debug_chosenmeleeanimations(behaviortreeentity) {
@@ -600,7 +600,7 @@ function private debug_chosenmeleeanimations(behaviortreeentity) {
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x851856f4, Offset: 0x2e78
 // Size: 0x94
 function handledeath(animationname, attacker) {
@@ -613,7 +613,7 @@ function handledeath(animationname, attacker) {
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbd7c125b, Offset: 0x2f18
 // Size: 0x29c
 function processinterrupteddeath() {
@@ -659,7 +659,7 @@ function processinterrupteddeath() {
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xeb9295b7, Offset: 0x31c0
 // Size: 0x8c
 function killwrapper(attacker) {

@@ -56,22 +56,22 @@ function event_handler[level_init] main(eventstruct) {
     target8 = getent("alleyTarget_Cover", "targetname");
     phys8 = getent("phys_alleyTarget_Cover", "targetname");
     phys8 linkto(target8);
-    var_37b018e6 = getent("mantle_alleyTarget_Cover", "targetname");
-    var_37b018e6 linkto(target8);
+    mantle8 = getent("mantle_alleyTarget_Cover", "targetname");
+    mantle8 linkto(target8);
     col8 = getent("col_alleyTarget_Cover", "targetname");
     col8 linkto(target8);
     target9 = getent("alleyTarget_Path", "targetname");
     phys9 = getent("phys_alleyTarget_Path", "targetname");
     phys9 linkto(target9);
-    var_8f08c796 = getent("mantle_alleyTarget_Path", "targetname");
-    var_8f08c796 linkto(target9);
+    mantle9 = getent("mantle_alleyTarget_Path", "targetname");
+    mantle9 linkto(target9);
     col9 = getent("col_alleyTarget_Path", "targetname");
     col9 linkto(target9);
     target10 = getent("centerTarget_Sandbags", "targetname");
     phys10 = getent("phys_centerTarget_Sandbags", "targetname");
     phys10 linkto(target10);
-    var_14f08938 = getent("mantle_centerTarget_Sandbags", "targetname");
-    var_14f08938 linkto(target10);
+    mantle10 = getent("mantle_centerTarget_Sandbags", "targetname");
+    mantle10 linkto(target10);
     col10 = getent("col_centerTarget_Sandbags", "targetname");
     col10 linkto(target10);
     target11 = getent("towerTarget_Front", "targetname");
@@ -187,7 +187,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_firingrange2_alt/mp_firingrange2_alt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf0810c00, Offset: 0x1bc8
 // Size: 0x54
 function spawnkilltrigger() {
@@ -196,7 +196,7 @@ function spawnkilltrigger() {
 }
 
 // Namespace mp_firingrange2_alt/mp_firingrange2_alt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xafde1ec1, Offset: 0x1c28
 // Size: 0xa8
 function watchkilltrigger() {
@@ -209,7 +209,7 @@ function watchkilltrigger() {
 }
 
 // Namespace mp_firingrange2_alt/mp_firingrange2_alt
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x15f1d631, Offset: 0x1cd8
 // Size: 0xd0
 function vectoangles(vector) {
@@ -230,7 +230,7 @@ function vectoangles(vector) {
 }
 
 // Namespace mp_firingrange2_alt/mp_firingrange2_alt
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb20a6040, Offset: 0x1db0
 // Size: 0x170
 function triggercheck(target) {
@@ -253,7 +253,7 @@ function triggercheck(target) {
 }
 
 // Namespace mp_firingrange2_alt/mp_firingrange2_alt
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6cfa8941, Offset: 0x1f28
 // Size: 0x40e
 function damagetarget(dir) {
@@ -306,7 +306,7 @@ function damagetarget(dir) {
 }
 
 // Namespace mp_firingrange2_alt/mp_firingrange2_alt
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x551a8d63, Offset: 0x2340
 // Size: 0xa0
 function damagetargetlights(speaker, alias, exploderhandle) {
@@ -321,7 +321,7 @@ function damagetargetlights(speaker, alias, exploderhandle) {
 }
 
 // Namespace mp_firingrange2_alt/mp_firingrange2_alt
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x40efbf51, Offset: 0x23e8
 // Size: 0x308
 function movetarget(dir, dis, speed) {
@@ -374,7 +374,7 @@ function movetarget(dir, dis, speed) {
 }
 
 // Namespace mp_firingrange2_alt/mp_firingrange2_alt
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x14e9b162, Offset: 0x26f8
 // Size: 0x50e
 function rotatetarget(dir, deg, speed, pausetime) {
@@ -438,7 +438,7 @@ function rotatetarget(dir, deg, speed, pausetime) {
 }
 
 // Namespace mp_firingrange2_alt/mp_firingrange2_alt
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5c78c5ad, Offset: 0x2c10
 // Size: 0x62
 function get2dyaw(start, end) {

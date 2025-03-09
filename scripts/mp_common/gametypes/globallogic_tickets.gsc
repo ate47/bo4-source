@@ -144,7 +144,7 @@ function set_tickets(team, tickets) {
 // Size: 0xac
 function earn_tickets(team, tickets) {
     original_total = game.stat[#"tickets"][team];
-    game.stat[#"tickets"][team] = game.stat[#"tickets"][team] + tickets;
+    game.stat[#"tickets"][team] += tickets;
     clamp_tickets(team);
     notify_tickets_updated(team, original_total);
 }
@@ -155,7 +155,7 @@ function earn_tickets(team, tickets) {
 // Size: 0xac
 function lose_tickets(team, tickets) {
     original_total = game.stat[#"tickets"][team];
-    game.stat[#"tickets"][team] = game.stat[#"tickets"][team] - tickets;
+    game.stat[#"tickets"][team] -= tickets;
     clamp_tickets(team);
     notify_tickets_updated(team, original_total);
 }

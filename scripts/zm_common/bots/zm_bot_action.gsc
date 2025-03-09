@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x108
 // Size: 0x4
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x49fa6893, Offset: 0x118
 // Size: 0x94
 function __main__() {
@@ -35,7 +35,7 @@ function __main__() {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe0fe932e, Offset: 0x1b8
 // Size: 0x234
 function register_actions() {
@@ -49,7 +49,7 @@ function register_actions() {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x123850e, Offset: 0x3f8
 // Size: 0x17c
 function register_weapons() {
@@ -68,7 +68,7 @@ function register_weapons() {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x580
 // Size: 0x4
 function function_25f1e3c1() {
@@ -76,7 +76,7 @@ function function_25f1e3c1() {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x590
 // Size: 0x4
 function function_c31a5c42() {
@@ -188,7 +188,7 @@ function function_ef04e9cc(actionparams) {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x82d396a0, Offset: 0xb78
 // Size: 0x352
 function function_aa4daa54(actionparams) {
@@ -238,7 +238,7 @@ function function_aa4daa54(actionparams) {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe2f4e5db, Offset: 0xed8
 // Size: 0x3e
 function zombie_auto_revive(actionparams) {
@@ -249,7 +249,7 @@ function zombie_auto_revive(actionparams) {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1402dba9, Offset: 0xf20
 // Size: 0xc2
 function function_f4707540(actionparams) {
@@ -268,7 +268,7 @@ function function_f4707540(actionparams) {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5481a9b6, Offset: 0xff0
 // Size: 0x3ca
 function function_ae19f70f(actionparams) {
@@ -346,7 +346,7 @@ function function_99428ae2(actionparams) {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x23d637f2, Offset: 0x14a0
 // Size: 0xc6
 function private function_f59547eb(trigger) {
@@ -357,7 +357,7 @@ function private function_f59547eb(trigger) {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x87de6fc6, Offset: 0x1570
 // Size: 0x84
 function function_2c6e5988(actionparams) {
@@ -369,7 +369,7 @@ function function_2c6e5988(actionparams) {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe2bf386c, Offset: 0x1600
 // Size: 0x142
 function function_d41104ab(interact) {
@@ -392,7 +392,7 @@ function function_d41104ab(interact) {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcd67ed86, Offset: 0x1750
 // Size: 0x3ca
 function function_b4d8b7d6(actionparams) {
@@ -458,7 +458,7 @@ function function_b4d8b7d6(actionparams) {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb0f5bd1f, Offset: 0x1b28
 // Size: 0xa4
 function function_3c22de9a(actionparams) {
@@ -474,7 +474,7 @@ function function_3c22de9a(actionparams) {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3be96fa, Offset: 0x1bd8
 // Size: 0x2aa
 function zombie_scan_for_threats(actionparams) {
@@ -507,7 +507,7 @@ function zombie_scan_for_threats(actionparams) {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf22812be, Offset: 0x1e90
 // Size: 0x206
 function zombie_reload_weapon(actionparams) {
@@ -540,7 +540,7 @@ function zombie_reload_weapon(actionparams) {
 }
 
 // Namespace zm_bot_action/zm_bot_action
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3f6e1ad4, Offset: 0x20a0
 // Size: 0x722
 function function_296516b4(actionparams) {

@@ -172,15 +172,15 @@
     // Params 2, eflags: 0x0
     // Checksum 0xeb90334b, Offset: 0x918
     // Size: 0xb4
-    function function_c7dd7a17(archetype, var_9fde8624) {
-        if (!isdefined(var_9fde8624)) {
-            var_9fde8624 = "<dev string:x38>";
+    function function_c7dd7a17(archetype, subarchetype) {
+        if (!isdefined(subarchetype)) {
+            subarchetype = "<dev string:x38>";
         }
         displayname = archetype;
-        if (isdefined(var_9fde8624) && var_9fde8624 != "<dev string:x38>") {
-            displayname = displayname + "<dev string:xe6>" + var_9fde8624;
+        if (isdefined(subarchetype) && subarchetype != "<dev string:x38>") {
+            displayname = displayname + "<dev string:xe6>" + subarchetype;
         }
-        adddebugcommand("<dev string:xea>" + displayname + "<dev string:x112>" + archetype + "<dev string:xe6>" + var_9fde8624 + "<dev string:x13c>");
+        adddebugcommand("<dev string:xea>" + displayname + "<dev string:x112>" + archetype + "<dev string:xe6>" + subarchetype + "<dev string:x13c>");
     }
 
     // Namespace zm_devgui/zm_devgui
@@ -200,11 +200,11 @@
             ai_info = strtok(ai_info, "<dev string:xe6>");
             aitype = ai_info[0];
             if (ai_info.size > 1) {
-                var_9fde8624 = ai_info[1];
+                subarchetype = ai_info[1];
             }
             spawners = getspawnerarray();
             foreach (spawner in spawners) {
-                if (isdefined(spawner.archetype) && spawner.archetype == aitype && (!isdefined(var_9fde8624) || isdefined(spawner.var_9fde8624) && spawner.var_9fde8624 == var_9fde8624)) {
+                if (isdefined(spawner.archetype) && spawner.archetype == aitype && (!isdefined(subarchetype) || isdefined(spawner.subarchetype) && spawner.subarchetype == subarchetype)) {
                     ai_spawner = spawner;
                     break;
                 }

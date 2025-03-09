@@ -29,7 +29,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb9862c60, Offset: 0x1a0
 // Size: 0x12c
 function __init__() {
@@ -48,7 +48,7 @@ function __init__() {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x2d8
 // Size: 0x4
 function __main__() {
@@ -56,7 +56,7 @@ function __main__() {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x710542d1, Offset: 0x2e8
 // Size: 0x144
 function private function_d5ccdca1() {
@@ -69,7 +69,7 @@ function private function_d5ccdca1() {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xce093700, Offset: 0x438
 // Size: 0x572
 function private function_10687511(entity) {
@@ -148,7 +148,7 @@ function private function_10687511(entity) {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xb17c44f6, Offset: 0x9b8
 // Size: 0x224
 function private function_4703be8a() {
@@ -187,7 +187,7 @@ function private function_4703be8a() {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x988f071d, Offset: 0xbe8
 // Size: 0x1a
 function private function_8d4da9d6() {
@@ -198,7 +198,7 @@ function private function_8d4da9d6() {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9df33898, Offset: 0xc10
 // Size: 0x1aa
 function function_cd6f239() {
@@ -218,7 +218,7 @@ function function_cd6f239() {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6e9da1d1, Offset: 0xdc8
 // Size: 0x76
 function function_8709c761(entity) {
@@ -235,7 +235,7 @@ function function_8709c761(entity) {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x16f8f8ae, Offset: 0xe48
 // Size: 0x16e
 function function_6c513e36(entity) {
@@ -262,7 +262,7 @@ function function_6c513e36(entity) {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x46c50cfd, Offset: 0xfc0
 // Size: 0x23a
 function tiger_init() {
@@ -303,7 +303,7 @@ function tiger_init() {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5a50845e, Offset: 0x1208
 // Size: 0x54
 function on_tiger_killed(params) {
@@ -312,7 +312,7 @@ function on_tiger_killed(params) {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 10, eflags: 0x1 linked
+// Params 10, eflags: 0x0
 // Checksum 0x165414b1, Offset: 0x1268
 // Size: 0xe8
 function function_9808e44f(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime) {
@@ -325,7 +325,7 @@ function function_9808e44f(einflictor, eattacker, idamage, idflags, smeansofdeat
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x30ebe2c6, Offset: 0x1358
 // Size: 0xa2
 function function_8fc19416(notetrack) {
@@ -340,7 +340,7 @@ function function_8fc19416(notetrack) {
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x72ade929, Offset: 0x1408
 // Size: 0x138
 function get_favorite_enemy() {

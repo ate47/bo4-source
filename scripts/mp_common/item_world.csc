@@ -341,7 +341,7 @@ function private function_78bf134c(localclientnum, clientdata, networkid, model,
         } else if (itementry.itemtype == #"cash") {
             renderbundle = #"hash_5fbd33a25f74ddf0";
         }
-        if (isdefined(itementry.var_47f145b4) && itementry.var_47f145b4) {
+        if (isdefined(itementry.wallbuyitem) && itementry.wallbuyitem) {
             renderbundle = #"hash_52f7937d76fafca0";
         }
     } else {
@@ -613,12 +613,12 @@ function private function_78a9fd5f(point) {
     if (!isdefined(level.var_8c615e33)) {
         level.var_8c615e33 = [];
     }
-    if (!isstruct(point) && isdefined(point.type == #"scriptmover") && isdefined(point.itementry.var_77d2cbb5) && point getentitynumber() < 1024) {
+    if (!isstruct(point) && isdefined(point.type == #"scriptmover") && isdefined(point.itementry.dropmodel) && point getentitynumber() < 1024) {
         if (isdefined(point.itementry.weapon) && point.itementry.weapon.name == #"waterballoon") {
             var_af7d7388 = array(#"hash_7306b72d120049f8", #"hash_27ae7cb403d5365b", #"hash_6add258ae958d31c", #"hash_6eb8f7ceb4627d9f", #"hash_228bf15c70137b61", #"hash_10c0ee53a36783e9");
             return var_af7d7388[randomintrange(0, var_af7d7388.size)];
         }
-        return point.itementry.var_77d2cbb5;
+        return point.itementry.dropmodel;
     }
     if (!isdefined(level.var_8c615e33[point.itementry.name])) {
         if (isdefined(point.itementry.model) && point.itementry.model != "") {
@@ -1889,7 +1889,7 @@ function play_spawn_fx(localclientnum, networkid) {
             item = level.item_spawn_drops[networkid];
         }
     }
-    if (!isdefined(item) || !isdefined(item.itementry) || !isdefined(item.itementry.var_86d1fc36)) {
+    if (!isdefined(item) || !isdefined(item.itementry) || !isdefined(item.itementry.worldspawnfx)) {
         return;
     }
     itementry = item.itementry;
@@ -1897,7 +1897,7 @@ function play_spawn_fx(localclientnum, networkid) {
     angles = function_118d052e(item);
     forward = anglestoforward(angles);
     up = anglestoup(angles);
-    playfx(localclientnum, itementry.var_86d1fc36, item.origin + originoffset, forward, up);
+    playfx(localclientnum, itementry.worldspawnfx, item.origin + originoffset, forward, up);
 }
 
 // Namespace item_world/item_world

@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x12daa382, Offset: 0x1f8
 // Size: 0x10c
 function __init__() {
@@ -34,7 +34,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2bb01dca, Offset: 0x310
 // Size: 0xbc
 function enable() {
@@ -48,7 +48,7 @@ function enable() {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x3d8
 // Size: 0x4
 function disable() {
@@ -56,7 +56,7 @@ function disable() {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x91ee9f85, Offset: 0x3e8
 // Size: 0x96
 function function_68acd38e() {
@@ -68,7 +68,7 @@ function function_68acd38e() {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x600332be, Offset: 0x488
 // Size: 0x1e0
 function revive_override() {
@@ -92,7 +92,7 @@ function revive_override() {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x15093e18, Offset: 0x670
 // Size: 0x1c
 function on_connect() {
@@ -100,7 +100,7 @@ function on_connect() {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaa5b91a8, Offset: 0x698
 // Size: 0xb6
 function function_fa0a1b19() {
@@ -117,7 +117,7 @@ function function_fa0a1b19() {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5431db9f, Offset: 0x758
 // Size: 0x220
 function function_d5c9a81(e_revivee) {
@@ -158,7 +158,7 @@ function function_d5c9a81(e_revivee) {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x88650878, Offset: 0x980
 // Size: 0x66
 function lost_perk_override(perk, var_a83ac70f = undefined, var_6c1b825d = undefined) {
@@ -167,7 +167,7 @@ function lost_perk_override(perk, var_a83ac70f = undefined, var_6c1b825d = undef
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1d5f205a, Offset: 0x9f0
 // Size: 0x112
 function function_db295169(e_player) {
@@ -185,7 +185,7 @@ function function_db295169(e_player) {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3e7a200b, Offset: 0xb10
 // Size: 0x11c
 function function_b7269898(e_player, str_notify) {
@@ -209,7 +209,7 @@ function function_b7269898(e_player, str_notify) {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x38af864, Offset: 0xc38
 // Size: 0x9c
 function function_991be229(e_player, str_notify) {
@@ -222,7 +222,7 @@ function function_991be229(e_player, str_notify) {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x50fa2e27, Offset: 0xce0
 // Size: 0x8c
 function function_3895d86(e_player, str_notify) {
@@ -234,7 +234,7 @@ function function_3895d86(e_player, str_notify) {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x77e74644, Offset: 0xd78
 // Size: 0x3a
 function function_cbaf1f69(e_player) {
@@ -243,7 +243,7 @@ function function_cbaf1f69(e_player) {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7281e85c, Offset: 0xdc0
 // Size: 0x64
 function function_51e0947e() {
@@ -256,7 +256,7 @@ function function_51e0947e() {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x73d0bc81, Offset: 0xe30
 // Size: 0x3c
 function function_68790c5a() {
@@ -267,7 +267,7 @@ function function_68790c5a() {
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3b4a2956, Offset: 0xe78
 // Size: 0xa4
 function function_765e5d1c() {

@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_talkin_bout_regeneration/zm_bgb_talkin_bout_regeneration
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd7b84afa, Offset: 0xd0
 // Size: 0x4c
 function __init__() {

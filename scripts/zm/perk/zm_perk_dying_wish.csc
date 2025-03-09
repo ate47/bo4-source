@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x178ed801, Offset: 0x190
 // Size: 0x14
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb278afb5, Offset: 0x1b0
 // Size: 0x174
 function enable_dying_wish_perk_for_level() {
@@ -40,7 +40,7 @@ function enable_dying_wish_perk_for_level() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x330
 // Size: 0x4
 function function_536f842f() {
@@ -48,7 +48,7 @@ function function_536f842f() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4282c662, Offset: 0x340
 // Size: 0x5c
 function function_6e5c87d() {
@@ -56,7 +56,7 @@ function function_6e5c87d() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x3a8
 // Size: 0x4
 function function_36db14fb() {
@@ -64,7 +64,7 @@ function function_36db14fb() {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc1a7270a, Offset: 0x3b8
 // Size: 0x4c
 function on_spawned(localclientnum) {
@@ -74,7 +74,7 @@ function on_spawned(localclientnum) {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x13e88ddd, Offset: 0x410
 // Size: 0x206
 function private function_bd2b1ccb(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -106,7 +106,7 @@ function private function_bd2b1ccb(localclientnum, oldvalue, newvalue, bnewent, 
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x49d9c2de, Offset: 0x620
 // Size: 0x2c
 function on_localclient_connect(localclientnum) {
@@ -114,7 +114,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8c190eaa, Offset: 0x658
 // Size: 0x84
 function on_death(params) {

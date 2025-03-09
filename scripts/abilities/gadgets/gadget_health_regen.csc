@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3daf790b, Offset: 0x148
 // Size: 0xbc
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9cf9b43, Offset: 0x210
 // Size: 0x144
 function function_31f57700(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

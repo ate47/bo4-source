@@ -16,7 +16,7 @@
                 }
             ],
             "description": "#hash_2ab30ae80d7cd215",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "teamsizedescriptions": [
@@ -34,7 +34,7 @@
                 }
             ],
             "description": "#hash_4175bed334f4b2f2",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "description": "#hash_2ab308e80d7cceaf"
@@ -43,8 +43,8 @@
     "amount": 1,
     "description": "#hash_6d0c15c50ea1e609",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 3,
-    "var_e8b98a8a": "#hash_31b5340e9a1b398c",
+    "hash_eda4062b": 3,
+    "hash_e8b98a8a": "#hash_31b5340e9a1b398c",
     "weapon": "weapon#hero_annihilator_wz",
     "type": "itemspawnentry",
     "unlockableitemref": "#hash_3fd5bb2354a7541d",
@@ -54,7 +54,7 @@
     "icon": "#ui_icon_weapon_annihilator_render",
     "modelscale": 1,
     "rarity": "None",
-    "var_a51bc1f7": "#hash_1b38cf5bb8542cbd",
+    "hash_a51bc1f7": "#hash_1b38cf5bb8542cbd",
     "handler": "#hash_50375e5de228e9fc",
     "rewardname": "#hash_3b87d7eb92a261aa",
     "pickupicon": "#ui_icon_weapon_hud_hero_annihilator",

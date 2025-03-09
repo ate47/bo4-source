@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_322c7dcf7de76b7c",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 5,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#p8_fxanim_gp_fish_skeleton_01_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_gp_fish_skeleton_01_s2_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -7,7 +7,7 @@
 #namespace zm_orange_freeze_trap;
 
 // Namespace zm_orange_freeze_trap/zm_orange_freeze_trap
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x337a0caf, Offset: 0x150
 // Size: 0x1e4
 function init() {
@@ -23,7 +23,7 @@ function init() {
 }
 
 // Namespace zm_orange_freeze_trap/zm_orange_freeze_trap
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xbe19f89c, Offset: 0x340
 // Size: 0x1ac
 function freeze_trap_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -46,7 +46,7 @@ function freeze_trap_fx(localclientnum, oldval, newval, bnewent, binitialsnap, f
 }
 
 // Namespace zm_orange_freeze_trap/zm_orange_freeze_trap
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x185b0ffc, Offset: 0x4f8
 // Size: 0xee
 function freeze_trap_death_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -62,7 +62,7 @@ function freeze_trap_death_fx(localclientnum, oldval, newval, bnewent, binitials
 }
 
 // Namespace zm_orange_freeze_trap/zm_orange_freeze_trap
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5e78a0a5, Offset: 0x5f0
 // Size: 0x286
 function player_freeze_trap_post_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -99,7 +99,7 @@ function player_freeze_trap_post_fx(localclientnum, oldval, newval, bnewent, bin
 }
 
 // Namespace zm_orange_freeze_trap/zm_orange_freeze_trap
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xea3a06e1, Offset: 0x880
 // Size: 0xbc
 function function_4443ecea(localclientnum) {
@@ -116,7 +116,7 @@ function function_4443ecea(localclientnum) {
 }
 
 // Namespace zm_orange_freeze_trap/zm_orange_freeze_trap
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4a705ef4, Offset: 0x948
 // Size: 0x144
 function function_b487d98d(str_notify) {

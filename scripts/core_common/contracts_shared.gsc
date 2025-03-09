@@ -7,7 +7,7 @@
 
 // Namespace contracts/contracts_shared
 // Params 0, eflags: 0x2
-// Checksum 0x722c7da6, Offset: 0x98
+// Checksum 0x70a48f56, Offset: 0x98
 // Size: 0x2c
 function autoexec __init__system__() {
     system::register(#"contracts_shared", undefined, undefined, undefined);
@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 
 // Namespace contracts/contracts_shared
 // Params 0, eflags: 0x0
-// Checksum 0x4e26401c, Offset: 0xd0
+// Checksum 0xb77bf8af, Offset: 0xd0
 // Size: 0x3e
 function init_player_contract_events() {
     if (!isdefined(level.player_contract_events)) {
@@ -28,7 +28,7 @@ function init_player_contract_events() {
 
 // Namespace contracts/contracts_shared
 // Params 3, eflags: 0x0
-// Checksum 0x84f1626b, Offset: 0x118
+// Checksum 0xec03448b, Offset: 0x118
 // Size: 0x106
 function register_player_contract_event(event_name, event_func, max_param_count = 0) {
     if (!isdefined(level.player_contract_events[event_name])) {
@@ -42,7 +42,7 @@ function register_player_contract_event(event_name, event_func, max_param_count 
 
 // Namespace contracts/contracts_shared
 // Params 4, eflags: 0x0
-// Checksum 0xadb05671, Offset: 0x228
+// Checksum 0xd85c9c3e, Offset: 0x228
 // Size: 0x32a
 function player_contract_event(event_name, param1 = undefined, param2 = undefined, param3 = undefined) {
     if (!isdefined(level.player_contract_events[event_name])) {
@@ -84,15 +84,15 @@ function player_contract_event(event_name, param1 = undefined, param2 = undefine
 
 // Namespace contracts/contracts_shared
 // Params 2, eflags: 0x0
-// Checksum 0xf6d94bf0, Offset: 0x560
+// Checksum 0xb8a0fcf2, Offset: 0x560
 // Size: 0x3a
 function get_contract_stat(slot, stat_name) {
     return self stats::get_stat(#"contracts", slot, stat_name);
 }
 
 // Namespace contracts/contracts_shared
-// Params 1, eflags: 0x1 linked
-// Checksum 0x5d7b97ad, Offset: 0x5a8
+// Params 1, eflags: 0x0
+// Checksum 0x7e52e851, Offset: 0x5a8
 // Size: 0x22a
 function function_d17bcd3c(slot) {
     player = self;
@@ -116,8 +116,8 @@ function function_d17bcd3c(slot) {
 }
 
 // Namespace contracts/contracts_shared
-// Params 1, eflags: 0x1 linked
-// Checksum 0x7bf3b56d, Offset: 0x7e0
+// Params 1, eflags: 0x0
+// Checksum 0x9b7360c, Offset: 0x7e0
 // Size: 0xf6
 function function_de4ff5a(slot) {
     player = self;
@@ -132,7 +132,7 @@ function function_de4ff5a(slot) {
 
 // Namespace contracts/contracts_shared
 // Params 2, eflags: 0x0
-// Checksum 0x6a7f10cf, Offset: 0x8e0
+// Checksum 0x65cd4fab, Offset: 0x8e0
 // Size: 0x25e
 function setup_player_contracts(max_contract_slots, var_1b3f5772) {
     player = self;
@@ -174,8 +174,8 @@ function setup_player_contracts(max_contract_slots, var_1b3f5772) {
 }
 
 // Namespace contracts/contracts_shared
-// Params 1, eflags: 0x1 linked
-// Checksum 0x6a8fd87d, Offset: 0xb48
+// Params 1, eflags: 0x0
+// Checksum 0xff40b7b2, Offset: 0xb48
 // Size: 0x84
 function is_contract_active(var_38280f2f) {
     if (!isdefined(var_38280f2f)) {
@@ -194,8 +194,8 @@ function is_contract_active(var_38280f2f) {
 }
 
 // Namespace contracts/contracts_shared
-// Params 2, eflags: 0x1 linked
-// Checksum 0x75d277a5, Offset: 0xbd8
+// Params 2, eflags: 0x0
+// Checksum 0xd8c90982, Offset: 0xbd8
 // Size: 0x58
 function increment_contract(var_38280f2f, delta = 1) {
     if (self is_contract_active(var_38280f2f)) {
@@ -207,7 +207,7 @@ function increment_contract(var_38280f2f, delta = 1) {
 
     // Namespace contracts/contracts_shared
     // Params 1, eflags: 0x0
-    // Checksum 0xf3a94782, Offset: 0xc38
+    // Checksum 0xefbfd675, Offset: 0xc38
     // Size: 0x10c
     function function_5e1c4d33(var_5ceb23d0) {
         player = self;
@@ -231,7 +231,7 @@ function increment_contract(var_38280f2f, delta = 1) {
 
     // Namespace contracts/contracts_shared
     // Params 2, eflags: 0x0
-    // Checksum 0x6436268d, Offset: 0xd50
+    // Checksum 0x307f32d5, Offset: 0xd50
     // Size: 0xec
     function function_e07e542b(var_1d89ece6, var_300afbc8) {
         level thread watch_contract_debug(var_300afbc8);
@@ -244,7 +244,7 @@ function increment_contract(var_38280f2f, delta = 1) {
 
     // Namespace contracts/contracts_shared
     // Params 1, eflags: 0x0
-    // Checksum 0x1498e015, Offset: 0xe48
+    // Checksum 0x9dcd1575, Offset: 0xe48
     // Size: 0x12c
     function function_a781ee84(var_1d89ece6) {
         var_78a6fb52 = var_1d89ece6 + "<dev string:x109>";
@@ -259,7 +259,7 @@ function increment_contract(var_38280f2f, delta = 1) {
 
     // Namespace contracts/contracts_shared
     // Params 1, eflags: 0x0
-    // Checksum 0x19553d4, Offset: 0xf80
+    // Checksum 0xc8c4e1b3, Offset: 0xf80
     // Size: 0x84
     function watch_contract_debug(var_300afbc8) {
         level notify(#"watch_contract_debug_singleton");
@@ -277,7 +277,7 @@ function increment_contract(var_38280f2f, delta = 1) {
 
     // Namespace contracts/contracts_shared
     // Params 0, eflags: 0x0
-    // Checksum 0xc6f5c5ed, Offset: 0x1010
+    // Checksum 0x4acb1dc1, Offset: 0x1010
     // Size: 0x554
     function function_33bab9aa() {
         if (getdvarint(#"hash_7c0db43f4c0bff69", 0) > 0) {
@@ -348,7 +348,7 @@ function increment_contract(var_38280f2f, delta = 1) {
 
 // Namespace contracts/contracts_shared
 // Params 0, eflags: 0x0
-// Checksum 0x6f48547b, Offset: 0x1570
+// Checksum 0x9b7a1123, Offset: 0x1570
 // Size: 0x330
 function function_d589391f() {
     wait 1;
@@ -420,7 +420,7 @@ function function_d589391f() {
 
 // Namespace contracts/contracts_shared
 // Params 0, eflags: 0x0
-// Checksum 0x3fbf8f73, Offset: 0x18a8
+// Checksum 0xcad9cc20, Offset: 0x18a8
 // Size: 0x90
 function function_d3fba20e() {
     players = getplayers();
@@ -430,8 +430,8 @@ function function_d3fba20e() {
 }
 
 // Namespace contracts/contracts_shared
-// Params 0, eflags: 0x1 linked
-// Checksum 0x9a1fb33d, Offset: 0x1940
+// Params 0, eflags: 0x0
+// Checksum 0x54896836, Offset: 0x1940
 // Size: 0x5e6
 function function_78083139() {
     player = self;
@@ -524,8 +524,8 @@ function function_78083139() {
 }
 
 // Namespace contracts/contracts_shared
-// Params 5, eflags: 0x1 linked
-// Checksum 0xf34148a8, Offset: 0x1f30
+// Params 5, eflags: 0x0
+// Checksum 0xf5b74031, Offset: 0x1f30
 // Size: 0xbc
 function function_d8c98325(var_38280f2f, delta, flags, var_4b67585c, var_2de8a050) {
     player = self;
@@ -536,8 +536,8 @@ function function_d8c98325(var_38280f2f, delta, flags, var_4b67585c, var_2de8a05
 }
 
 // Namespace contracts/contracts_shared
-// Params 1, eflags: 0x1 linked
-// Checksum 0xe6381d67, Offset: 0x1ff8
+// Params 1, eflags: 0x0
+// Checksum 0x31afc7b5, Offset: 0x1ff8
 // Size: 0x16c
 function function_507247e8(var_9224acc) {
     player = self;

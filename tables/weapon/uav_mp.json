@@ -1,0 +1,23 @@
+{
+    "name": "#uav_mp",
+    "baseWeapon": "#uav",
+    "displayname": "#killstreak/uav",
+    "unk70": "#uav",
+    "streamkey": "#hash_2a4cae6bfd7a680d",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "sound660": "#uin_unavailable_charging",
+    "projexplosionsound": "#hash_20cda79cd396562",
+    "tunables1": "#hash_1d942572410",
+    "viewmodel": "#hash_1d9324230f0",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "gadgetIconAvailable": "#ui_icon_scorestreaks_uav_light",
+    "gadgetIconUnavailable": "#ui_icon_scorestreaks_uav_dark",
+    "image_d40": "#hash_441bbf49f2cfbaef",
+    "image_d48": "#hash_441bbf49f2cfbaef",
+    "image_e90": "#hash_441bbf49f2cfbaef",
+    "crateObjective": "#uav_waypoint",
+    "underwaterExplosionSurfaceFX": [],
+    "image_1048": "#hash_107a04dbd9c0043a"
+}

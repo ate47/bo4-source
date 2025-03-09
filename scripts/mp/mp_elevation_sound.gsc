@@ -1,7 +1,7 @@
 #namespace mp_elevation_sound;
 
 // Namespace mp_elevation_sound/mp_elevation_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd792eade, Offset: 0x90
 // Size: 0x1c
 function main() {
@@ -9,7 +9,7 @@ function main() {
 }
 
 // Namespace mp_elevation_sound/mp_elevation_sound
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe930556a, Offset: 0xb8
 // Size: 0xa8
 function function_14f3a3c2() {

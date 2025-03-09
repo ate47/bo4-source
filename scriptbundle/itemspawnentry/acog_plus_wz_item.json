@@ -9,7 +9,7 @@
     "model": "#attach_t8_wz_pickup_hybrid_optic",
     "type": "itemspawnentry",
     "hintstring": "#hash_75910f89d3c7bccc",
-    "var_65b3a12": 1,
+    "hash_65b3a12": 1,
     "name": "acog_plus_wz_item",
     "displayname": "#hash_75910f89d3c7bccc",
     "icon": "#hash_b68d2a74e183b4",

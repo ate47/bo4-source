@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xffdc4fa4, Offset: 0x2b0
 // Size: 0x4c
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6b9d004, Offset: 0x308
 // Size: 0x3c
 function on_vehicle_damage(var_bff7298b) {
@@ -38,7 +38,7 @@ function on_vehicle_damage(var_bff7298b) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x68c5f32b, Offset: 0x350
 // Size: 0x7f8
 function main() {
@@ -189,7 +189,7 @@ function main() {
 #/
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa9bfe057, Offset: 0xbb0
 // Size: 0x2a
 function do_scripted_crash() {
@@ -197,7 +197,7 @@ function do_scripted_crash() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4566de8, Offset: 0xbe8
 // Size: 0x54
 function play_death_audio() {
@@ -212,7 +212,7 @@ function play_death_audio() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x51738115, Offset: 0xc48
 // Size: 0xb4
 function play_spinning_plane_sound() {
@@ -226,7 +226,7 @@ function play_spinning_plane_sound() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf8766070, Offset: 0xd08
 // Size: 0x124
 function set_death_model(smodel, fdelay) {
@@ -257,7 +257,7 @@ function set_death_model(smodel, fdelay) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2edb4893, Offset: 0xe38
 // Size: 0x84
 function aircraft_crash(point, dir) {
@@ -275,7 +275,7 @@ function aircraft_crash(point, dir) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x895d4203, Offset: 0xec8
 // Size: 0x7c
 function helicopter_crash(point, dir) {
@@ -293,7 +293,7 @@ function helicopter_crash(point, dir) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5bac4e0a, Offset: 0xf50
 // Size: 0x3e6
 function helicopter_crash_movement(point, dir) {
@@ -354,7 +354,7 @@ function helicopter_crash_movement(point, dir) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x899d126b, Offset: 0x1340
 // Size: 0xb8
 function helicopter_crash_accel() {
@@ -369,7 +369,7 @@ function helicopter_crash_accel() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa9464db4, Offset: 0x1400
 // Size: 0x35e
 function helicopter_crash_rotation(point, dir) {
@@ -410,7 +410,7 @@ function helicopter_crash_rotation(point, dir) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf40e4cdc, Offset: 0x1768
 // Size: 0x5d8
 function helicopter_crash_zone_accel(dir) {
@@ -495,7 +495,7 @@ function helicopter_collision() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2cadd31f, Offset: 0x1e48
 // Size: 0xdc
 function play_crashing_loop() {
@@ -509,7 +509,7 @@ function play_crashing_loop() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8b75b57f, Offset: 0x1f30
 // Size: 0xa4
 function helicopter_explode(delete_me) {
@@ -525,7 +525,7 @@ function helicopter_explode(delete_me) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7d777574, Offset: 0x1fe0
 // Size: 0x56e
 function aircraft_crash_move(point, dir) {
@@ -595,7 +595,7 @@ function aircraft_crash_move(point, dir) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc3fab43e, Offset: 0x2558
 // Size: 0x7c
 function delay_set_gravity(delay) {
@@ -647,7 +647,7 @@ function helicopter_crash_move(point, dir) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1be02e1e, Offset: 0x2940
 // Size: 0x6c
 function boat_crash(point, dir) {
@@ -664,7 +664,7 @@ function boat_crash(point, dir) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xca657a17, Offset: 0x29b8
 // Size: 0x2b6
 function boat_crash_movement(point, dir) {
@@ -697,7 +697,7 @@ function boat_crash_movement(point, dir) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x89f438f3, Offset: 0x2c78
 // Size: 0x6e
 function boat_crash_monitor(point, dir, crash_time) {
@@ -709,7 +709,7 @@ function boat_crash_monitor(point, dir, crash_time) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaea45fc3, Offset: 0x2cf0
 // Size: 0x19c
 function crash_stop() {
@@ -735,7 +735,7 @@ function crash_stop() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x94d5f216, Offset: 0x2e98
 // Size: 0x15c
 function crash_collision_test() {
@@ -758,7 +758,7 @@ function crash_collision_test() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb4ff33bc, Offset: 0x3000
 // Size: 0x34
 function wait_and_explode() {
@@ -768,7 +768,7 @@ function wait_and_explode() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2cd6371f, Offset: 0x3040
 // Size: 0x1ac
 function crash_path_check(node) {
@@ -811,7 +811,7 @@ function death_firesound(sound) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc93a0b2a, Offset: 0x3270
 // Size: 0x6c
 function death_fx() {
@@ -827,7 +827,7 @@ function death_fx() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x33188b4, Offset: 0x32e8
 // Size: 0xa4
 function death_make_badplace(type) {
@@ -845,7 +845,7 @@ function death_make_badplace(type) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1dff14ad, Offset: 0x3398
 // Size: 0x1cc
 function death_jolt(type, point, dir) {
@@ -869,7 +869,7 @@ function death_jolt(type, point, dir) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80452786, Offset: 0x3570
 // Size: 0x1e
 function deathrollon() {
@@ -879,7 +879,7 @@ function deathrollon() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4721b7e2, Offset: 0x3598
 // Size: 0x1e
 function deathrolloff() {
@@ -903,7 +903,7 @@ function loop_fx_on_vehicle_tag(effect, looptime, tag) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x662bb99e, Offset: 0x3678
 // Size: 0x12a
 function deathfx_ent() {
@@ -925,7 +925,7 @@ function deathfx_ent() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8ef0fff9, Offset: 0x37b0
 // Size: 0x124
 function death_cleanup_level_variables() {
@@ -949,7 +949,7 @@ function death_cleanup_level_variables() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1cea58d3, Offset: 0x38e0
 // Size: 0x92
 function death_cleanup_riders() {
@@ -966,7 +966,7 @@ function death_cleanup_riders() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x75e25d76, Offset: 0x3980
 // Size: 0x15c
 function death_radius_damage(meansofdamage = "MOD_EXPLOSIVE", attacker, weapon) {
@@ -989,7 +989,7 @@ function death_radius_damage(meansofdamage = "MOD_EXPLOSIVE", attacker, weapon) 
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc088f644, Offset: 0x3ae8
 // Size: 0x324
 function death_update_crash(point, dir) {
@@ -1053,7 +1053,7 @@ function death_update_crash(point, dir) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x60c4c1e8, Offset: 0x3e18
 // Size: 0x3f6
 function ground_vehicle_crash() {
@@ -1105,7 +1105,7 @@ function ground_vehicle_crash() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfe8bbc91, Offset: 0x4218
 // Size: 0xf4
 function get_switch_node(nd_crash_path) {
@@ -1127,7 +1127,7 @@ function get_switch_node(nd_crash_path) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x610828b0, Offset: 0x4318
 // Size: 0x1be
 function watch_for_crash_detour_scene(nd_crash_path) {
@@ -1161,7 +1161,7 @@ function watch_for_crash_detour_scene(nd_crash_path) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xea694623, Offset: 0x44e0
 // Size: 0x70
 function vehicle_stopped_on_crashpath() {
@@ -1175,7 +1175,7 @@ function vehicle_stopped_on_crashpath() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3d39ec92, Offset: 0x4558
 // Size: 0xb0
 function is_crash_detour_nearby() {
@@ -1189,7 +1189,7 @@ function is_crash_detour_nearby() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc5db724d, Offset: 0x4610
 // Size: 0x1ce
 function monitor_ground_vehicle_crash_collision() {
@@ -1217,7 +1217,7 @@ function monitor_ground_vehicle_crash_collision() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x14ecdbde, Offset: 0x47e8
 // Size: 0xd0
 function ground_predicted_collision() {
@@ -1233,7 +1233,7 @@ function ground_predicted_collision() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd394d4fa, Offset: 0x48c0
 // Size: 0x8c
 function ground_vehicle_explode(b_delete_me = 0) {
@@ -1247,7 +1247,7 @@ function ground_vehicle_explode(b_delete_me = 0) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3dd7c40c, Offset: 0x4958
 // Size: 0x1a0
 function waittill_crash_done_or_stopped() {
@@ -1283,7 +1283,7 @@ function waittill_crash_done_or_stopped() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc4e13fa0, Offset: 0x4b00
 // Size: 0x176
 function vehicle_damage_filter_damage_watcher(driver, heavy_damage_threshold) {
@@ -1309,7 +1309,7 @@ function vehicle_damage_filter_damage_watcher(driver, heavy_damage_threshold) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9fa1ca7a, Offset: 0x4c80
 // Size: 0x42
 function vehicle_damage_filter_exit_watcher(driver) {
@@ -1345,7 +1345,7 @@ function vehicle_damage_filter(vision_set, heavy_damage_threshold, filterid = 0,
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbec1fbce, Offset: 0x4e68
 // Size: 0x1a4
 function flipping_shooting_death(attacker, hitdir) {
@@ -1377,7 +1377,7 @@ function flipping_shooting_death(attacker, hitdir) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1c91fdd6, Offset: 0x5018
 // Size: 0x26c
 function plane_crash() {
@@ -1405,7 +1405,7 @@ function plane_crash() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x40101140, Offset: 0x5290
 // Size: 0x234
 function barrel_rolling_crash() {
@@ -1430,7 +1430,7 @@ function barrel_rolling_crash() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x322a1eaa, Offset: 0x54d0
 // Size: 0x2f4
 function random_crash(hitdir) {
@@ -1461,7 +1461,7 @@ function random_crash(hitdir) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8f1b186a, Offset: 0x57d0
 // Size: 0x21e
 function set_movement_and_accel(new_vel, ang_vel) {
@@ -1492,7 +1492,7 @@ function set_movement_and_accel(new_vel, ang_vel) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbe95fa72, Offset: 0x59f8
 // Size: 0x1c2
 function flipping_shooting_crash_movement(attacker, hitdir) {
@@ -1525,7 +1525,7 @@ function flipping_shooting_crash_movement(attacker, hitdir) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x880f3dca, Offset: 0x5bc8
 // Size: 0xbc
 function flipping_shooting_dmg_snd() {
@@ -1539,7 +1539,7 @@ function flipping_shooting_dmg_snd() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x40ec9542, Offset: 0x5c90
 // Size: 0x306
 function flipping_shooting_crash_accel() {
@@ -1583,7 +1583,7 @@ function flipping_shooting_crash_accel() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x95f7ac1c, Offset: 0x5fa0
 // Size: 0x8c
 function death_fire_loop_audio() {
@@ -1595,7 +1595,7 @@ function death_fire_loop_audio() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x10278adb, Offset: 0x6038
 // Size: 0x34
 function freewhensafe(time = 4) {
@@ -1603,7 +1603,7 @@ function freewhensafe(time = 4) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfbd49a3e, Offset: 0x6078
 // Size: 0x3c
 function deletewhensafe(time = 4) {
@@ -1611,7 +1611,7 @@ function deletewhensafe(time = 4) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbfd3a22e, Offset: 0x60c0
 // Size: 0x152
 function delayedremove_thread(time, shoulddelete) {
@@ -1641,7 +1641,7 @@ function delayedremove_thread(time, shoulddelete) {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xec0675e6, Offset: 0x6220
 // Size: 0x34
 function cleanup() {
@@ -1654,7 +1654,7 @@ function cleanup() {
 }
 
 // Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdbcddf2, Offset: 0x6260
 // Size: 0xa4
 function corpse_explode_fx() {

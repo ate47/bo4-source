@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_red_tribute/zm_trial_red_tribute
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5923cc, Offset: 0x110
 // Size: 0x5c
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_red_tribute/zm_trial_red_tribute
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x20a007ba, Offset: 0x178
 // Size: 0xec
 function private on_begin() {
@@ -43,7 +43,7 @@ function private on_begin() {
 }
 
 // Namespace zm_trial_red_tribute/zm_trial_red_tribute
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1786b205, Offset: 0x270
 // Size: 0x1ec
 function private on_end(round_reset) {
@@ -74,7 +74,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_red_tribute/zm_trial_red_tribute
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x751a87de, Offset: 0x468
 // Size: 0x23a
 function private function_29bcf2f8() {
@@ -109,7 +109,7 @@ function private function_29bcf2f8() {
 }
 
 // Namespace zm_trial_red_tribute/zm_trial_red_tribute
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x58e1a5e3, Offset: 0x6b0
 // Size: 0x128
 function private function_6fa5c86() {
@@ -132,7 +132,7 @@ function private function_6fa5c86() {
 }
 
 // Namespace zm_trial_red_tribute/zm_trial_red_tribute
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x799e343d, Offset: 0x7e0
 // Size: 0x1c
 function on_ai_spawned() {
@@ -140,7 +140,7 @@ function on_ai_spawned() {
 }
 
 // Namespace zm_trial_red_tribute/zm_trial_red_tribute
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xd641d94, Offset: 0x808
 // Size: 0x84
 function private track_spawns() {
@@ -156,7 +156,7 @@ function private track_spawns() {
 }
 
 // Namespace zm_trial_red_tribute/zm_trial_red_tribute
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xab61fe27, Offset: 0x898
 // Size: 0x30
 function on_ai_killed(params) {
@@ -166,7 +166,7 @@ function on_ai_killed(params) {
 }
 
 // Namespace zm_trial_red_tribute/zm_trial_red_tribute
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2fe25f04, Offset: 0x8d0
 // Size: 0x32
 function is_active() {

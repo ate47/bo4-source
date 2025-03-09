@@ -4,14 +4,14 @@
     "value2": "10",
     "value3": "5",
     "value1": "0",
-    "var_dfed6968": "2",
+    "value4": "2",
     "type": "gamesettings",
     "name": "player_health_regen_time",
     "displayname": "#menu/health_regeneration",
-    "var_684ccd4c": "#menu/fast",
+    "label4": "#menu/fast",
     "label1": "#menu/disabled",
-    "var_71b6e020": "#menu/normal",
+    "label3": "#menu/normal",
     "label2": "#menu/slow",
-    "var_9de86f42": 4,
+    "optionscount": 4,
     "setting": "playerHealthRegenTime"
 }

@@ -3,7 +3,7 @@
     "relateditemname": "#weapon/pistol_standard_t8",
     "contracttitle": "#weapon/pistol_standard_t8",
     "name": "loot_contract_divinity",
-    "var_4b258f2c": "#hash_24df94f20f8b9a2d",
+    "hash_4b258f2c": "#hash_24df94f20f8b9a2d",
     "contractdescription": "#weapon/pistol_standard_t8",
-    "var_f15e270f": "#white"
+    "hash_f15e270f": "#white"
 }

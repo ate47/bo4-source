@@ -14,7 +14,7 @@
 #namespace mansion_storage;
 
 // Namespace mansion_storage/zm_mansion_storage
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x89ee0360, Offset: 0x368
 // Size: 0x372
 function init() {
@@ -33,7 +33,7 @@ function init() {
 }
 
 // Namespace mansion_storage/zm_mansion_storage
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf317cebb, Offset: 0x6e8
 // Size: 0x74
 function function_438d8674(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -41,7 +41,7 @@ function function_438d8674(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_storage/zm_mansion_storage
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x12dedf1c, Offset: 0x768
 // Size: 0x7a
 function function_3e37bb63(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -49,7 +49,7 @@ function function_3e37bb63(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_storage/zm_mansion_storage
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xae520a7b, Offset: 0x7f0
 // Size: 0xb4
 function function_5e130882(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -61,7 +61,7 @@ function function_5e130882(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_storage/zm_mansion_storage
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe2e2489f, Offset: 0x8b0
 // Size: 0x54
 function start_billiards(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -71,7 +71,7 @@ function start_billiards(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace mansion_storage/zm_mansion_storage
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7306fee3, Offset: 0x910
 // Size: 0x1d0
 function billiards_setup() {
@@ -86,7 +86,7 @@ function billiards_setup() {
 }
 
 // Namespace mansion_storage/zm_mansion_storage
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf62e4954, Offset: 0xae8
 // Size: 0x192
 function function_eb218e8d() {
@@ -135,7 +135,7 @@ function function_eb218e8d() {
 #/
 
 // Namespace mansion_storage/zm_mansion_storage
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2a3b53b0, Offset: 0xe30
 // Size: 0x1fc
 function function_68e49445(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -163,7 +163,7 @@ function function_68e49445(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_storage/zm_mansion_storage
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8ae6bd61, Offset: 0x1038
 // Size: 0x7c
 function function_2dbadedf(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -175,7 +175,7 @@ function function_2dbadedf(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_storage/zm_mansion_storage
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf2d8510, Offset: 0x10c0
 // Size: 0xfc
 function function_954a27a2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

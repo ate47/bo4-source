@@ -1,8 +1,8 @@
 {
-    "var_2ecceeab": "#hash_63d3e067b2237e3f",
+    "hash_2ecceeab": "#hash_63d3e067b2237e3f",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
     "name": "artillery_barrage_scoreevents",
-    "var_e1b418c1": "ability"
+    "customsettingstype": "ability"
 }

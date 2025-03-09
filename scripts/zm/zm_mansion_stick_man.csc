@@ -7,7 +7,7 @@
 #namespace namespace_b6ca3ccc;
 
 // Namespace namespace_b6ca3ccc/zm_mansion_stick_man
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa8f0a5fe, Offset: 0x128
 // Size: 0x3b2
 function init_clientfields() {
@@ -27,7 +27,7 @@ function init_clientfields() {
 }
 
 // Namespace namespace_b6ca3ccc/zm_mansion_stick_man
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x834303d7, Offset: 0x4e8
 // Size: 0x7c
 function function_a7012457(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -37,7 +37,7 @@ function function_a7012457(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b6ca3ccc/zm_mansion_stick_man
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd453ff67, Offset: 0x570
 // Size: 0x8c
 function function_f6c7ad1b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -49,7 +49,7 @@ function function_f6c7ad1b(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b6ca3ccc/zm_mansion_stick_man
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x599bd8a, Offset: 0x608
 // Size: 0xaa
 function function_664898b6(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -62,7 +62,7 @@ function function_664898b6(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b6ca3ccc/zm_mansion_stick_man
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2cfbed70, Offset: 0x6c0
 // Size: 0x312
 function function_959fcbff(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -101,7 +101,7 @@ function function_959fcbff(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b6ca3ccc/zm_mansion_stick_man
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xffbe2f6d, Offset: 0x9e0
 // Size: 0x1d6
 function function_a5f32c8f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -130,7 +130,7 @@ function function_a5f32c8f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b6ca3ccc/zm_mansion_stick_man
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdffdf0ba, Offset: 0xbc0
 // Size: 0x146
 function function_f568352e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -151,7 +151,7 @@ function function_f568352e(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b6ca3ccc/zm_mansion_stick_man
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x14b0b781, Offset: 0xd10
 // Size: 0x4de
 function function_d61c8c59(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -214,7 +214,7 @@ function function_d61c8c59(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b6ca3ccc/zm_mansion_stick_man
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x65638026, Offset: 0x11f8
 // Size: 0x114
 function function_3c4642b1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -234,7 +234,7 @@ function function_3c4642b1(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_b6ca3ccc/zm_mansion_stick_man
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd0b2aa4d, Offset: 0x1318
 // Size: 0x5c
 function function_443d6ae(localclientnum) {

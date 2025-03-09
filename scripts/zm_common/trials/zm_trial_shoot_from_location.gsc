@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_shoot_from_location/zm_trial_shoot_from_location
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfaccded7, Offset: 0x158
 // Size: 0x5c
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_shoot_from_location/zm_trial_shoot_from_location
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x628ed64e, Offset: 0x1c0
 // Size: 0x248
 function private on_begin() {
@@ -51,7 +51,7 @@ function private on_begin() {
 }
 
 // Namespace zm_trial_shoot_from_location/zm_trial_shoot_from_location
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x57685273, Offset: 0x410
 // Size: 0x202
 function private on_end(round_reset) {
@@ -73,7 +73,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_shoot_from_location/zm_trial_shoot_from_location
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x271fc3f, Offset: 0x620
 // Size: 0x146
 function private function_3658663() {
@@ -100,7 +100,7 @@ function private function_3658663() {
 }
 
 // Namespace zm_trial_shoot_from_location/zm_trial_shoot_from_location
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xfbd008c1, Offset: 0x770
 // Size: 0x10c
 function private function_33f0ddd3(s_event) {

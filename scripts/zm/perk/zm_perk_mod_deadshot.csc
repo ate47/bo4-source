@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_deadshot/zm_perk_mod_deadshot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcd04866a, Offset: 0xe0
 // Size: 0x14
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_deadshot/zm_perk_mod_deadshot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4ebed977, Offset: 0x100
 // Size: 0x74
 function enable_mod_deadshot_perk_for_level() {
@@ -33,7 +33,7 @@ function enable_mod_deadshot_perk_for_level() {
 }
 
 // Namespace zm_perk_mod_deadshot/zm_perk_mod_deadshot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x180
 // Size: 0x4
 function function_85402de1() {
@@ -41,7 +41,7 @@ function function_85402de1() {
 }
 
 // Namespace zm_perk_mod_deadshot/zm_perk_mod_deadshot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x190
 // Size: 0x4
 function function_7252aedc() {
@@ -49,7 +49,7 @@ function function_7252aedc() {
 }
 
 // Namespace zm_perk_mod_deadshot/zm_perk_mod_deadshot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1a0
 // Size: 0x4
 function function_8357e1f3() {

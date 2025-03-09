@@ -12,7 +12,7 @@
                     "name": "inspection_weapon_full"
                 }
             ],
-            "var_9de1f44c": 1,
+            "hash_9de1f44c": 1,
             "model": "#wpn_t8_ar_accurate_prop_animate",
             "type": "prop",
             "name": "customized_inspection_weapon",

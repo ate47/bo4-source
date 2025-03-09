@@ -23,15 +23,15 @@ function event_handler[level_init] main(eventstruct) {
     load::main();
     compass::setupminimap("");
     level.cleandepositpoints = array((1011, 348, -34), (-1483.5, 1484.5, 147), (-1001, -1220, 12), (1469.5, -815, -1), (222, -313, -11.5));
-    level.var_f3e25805 = &function_c3c859e1;
-    level thread function_4dd23d6e();
+    level.var_f3e25805 = &prematch_init;
+    level thread init_crane();
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfd3c3a04, Offset: 0x3c0
 // Size: 0x196
-function function_c3c859e1() {
+function prematch_init() {
     array::delete_all(getentarray("sun_block", "targetname"));
     if (getgametypesetting(#"allowmapscripting")) {
         level thread init_train();
@@ -41,9 +41,9 @@ function function_c3c859e1() {
                 crane notify(#"draftend");
             }
             exploder::exploder("fxexp_glass_shatter");
-            var_236af60c = getent("center_event_eploder_trig", "targetname");
-            if (isdefined(var_236af60c)) {
-                var_236af60c callback::on_trigger(&function_ef8c8edc);
+            t_explode = getent("center_event_eploder_trig", "targetname");
+            if (isdefined(t_explode)) {
+                t_explode callback::on_trigger(&function_ef8c8edc);
             }
             level util::delay(10, "game_ended", &trigger::use, "center_event_eploder_trig", "targetname", undefined, 0);
             return;
@@ -52,25 +52,25 @@ function function_c3c859e1() {
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8860fd74, Offset: 0x560
 // Size: 0x138
 function init_train() {
     level endon(#"game_ended");
-    level scene::add_scene_func(#"hash_520d4c0a17bb9b12", &function_3761a1bc, "init");
-    level scene::add_scene_func(#"hash_520d4c0a17bb9b12", &function_f55fb854, "play");
-    level scene::add_scene_func(#"hash_520d4c0a17bb9b12", &function_53b49689, "done");
-    level scene::init(#"hash_520d4c0a17bb9b12");
+    level scene::add_scene_func(#"p8_fxanim_mp_wmd_train_bundle", &function_3761a1bc, "init");
+    level scene::add_scene_func(#"p8_fxanim_mp_wmd_train_bundle", &function_f55fb854, "play");
+    level scene::add_scene_func(#"p8_fxanim_mp_wmd_train_bundle", &function_53b49689, "done");
+    level scene::init(#"p8_fxanim_mp_wmd_train_bundle");
     while (true) {
         if (math::cointoss()) {
-            level scene::play(#"hash_520d4c0a17bb9b12");
+            level scene::play(#"p8_fxanim_mp_wmd_train_bundle");
         }
         wait randomintrange(100, 130);
     }
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe155e37d, Offset: 0x6a0
 // Size: 0x6c
 function function_3761a1bc(a_ents) {
@@ -80,7 +80,7 @@ function function_3761a1bc(a_ents) {
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb2bf4ad1, Offset: 0x718
 // Size: 0x44
 function function_f55fb854(a_ents) {
@@ -90,7 +90,7 @@ function function_f55fb854(a_ents) {
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x462ca24f, Offset: 0x768
 // Size: 0x52
 function function_53b49689(a_ents) {
@@ -101,10 +101,10 @@ function function_53b49689(a_ents) {
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xec92088d, Offset: 0x7c8
 // Size: 0x580
-function function_4dd23d6e() {
+function init_crane() {
     level endon(#"game_ended");
     exploder::exploder("fxexp_gantry_off");
     crane = getent("linear_crane_moveable", "targetname");
@@ -156,7 +156,7 @@ function function_4dd23d6e() {
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1072d5c1, Offset: 0xd50
 // Size: 0x304
 function function_80c5243b(e_activator) {
@@ -183,11 +183,11 @@ function function_80c5243b(e_activator) {
     crane playsound("evt_gantry_start");
     wait 3.35;
     if (b_kill) {
-        crane.kill_trig.var_2563dc55 = 1;
+        crane.kill_trig.do_crush = 1;
     }
     wait 0.65;
     crane.veh_kill.do_kill = 0;
-    crane.kill_trig.var_2563dc55 = 0;
+    crane.kill_trig.do_crush = 0;
     crane function_e0954c11();
     exploder::stop_exploder("fxexp_gantry_off");
     exploder::exploder("fxexp_gantry_on");
@@ -199,12 +199,12 @@ function function_80c5243b(e_activator) {
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1029167a, Offset: 0x1060
 // Size: 0xe4
 function function_147c1726(s_info) {
     e_player = s_info.activator;
-    if (isalive(e_player) && isdefined(self.var_2563dc55) && self.var_2563dc55) {
+    if (isalive(e_player) && isdefined(self.do_crush) && self.do_crush) {
         e_player dodamage(e_player.maxhealth, e_player.origin, undefined, undefined, "none", "MOD_EXPLOSIVE");
         if (isdefined(e_player.body)) {
             e_player.body startragdoll();
@@ -214,7 +214,7 @@ function function_147c1726(s_info) {
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb4f89bcb, Offset: 0x1150
 // Size: 0x84
 function function_51905d68(s_info) {
@@ -225,7 +225,7 @@ function function_51905d68(s_info) {
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa69961e8, Offset: 0x11e0
 // Size: 0x80
 function function_670cd4a3() {
@@ -240,14 +240,14 @@ function function_670cd4a3() {
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x32ef42c8, Offset: 0x1268
 // Size: 0xb0
 function function_e0954c11() {
-    if (!isdefined(self.var_7c9174d1)) {
+    if (!isdefined(self.stuck_items)) {
         return;
     }
-    foreach (var_221be278 in self.var_7c9174d1) {
+    foreach (var_221be278 in self.stuck_items) {
         if (!isdefined(var_221be278)) {
             continue;
         }
@@ -256,7 +256,7 @@ function function_e0954c11() {
 }
 
 // Namespace mp_russianbase/mp_russianbase
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xeb27108d, Offset: 0x1320
 // Size: 0x104
 function function_ef8c8edc(s_info) {

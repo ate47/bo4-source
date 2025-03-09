@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace hawk_mp/hawk
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x93dc7979, Offset: 0x240
 // Size: 0x244
 function __init__() {
@@ -40,7 +40,7 @@ function __init__() {
 }
 
 // Namespace hawk_mp/hawk
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8de05fd1, Offset: 0x490
 // Size: 0x3c
 function private hawk_spawned(localclientnum) {
@@ -49,7 +49,7 @@ function private hawk_spawned(localclientnum) {
 }
 
 // Namespace hawk_mp/hawk
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xdda19f3b, Offset: 0x4d8
 // Size: 0x17c
 function private function_23a9e4af(localclientnum) {
@@ -71,7 +71,7 @@ function private function_23a9e4af(localclientnum) {
 }
 
 // Namespace hawk_mp/hawk
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x42f437d0, Offset: 0x660
 // Size: 0x7c
 function function_70a07f6f(localclientnum, newval, fieldname) {
@@ -83,7 +83,7 @@ function function_70a07f6f(localclientnum, newval, fieldname) {
 }
 
 // Namespace hawk_mp/hawk
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x32adfed7, Offset: 0x6e8
 // Size: 0x96
 function function_e656f88a(localclientnum, newval, fieldname) {
@@ -97,7 +97,7 @@ function function_e656f88a(localclientnum, newval, fieldname) {
 }
 
 // Namespace hawk_mp/hawk
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3a91369e, Offset: 0x788
 // Size: 0x44
 function function_fbdbb841(localclientnum, vehicle) {
@@ -108,7 +108,7 @@ function function_fbdbb841(localclientnum, vehicle) {
 }
 
 // Namespace hawk_mp/hawk
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfb3fb64f, Offset: 0x7d8
 // Size: 0x44
 function function_1ed9ef6a(localclientnum, vehicle) {
@@ -119,7 +119,7 @@ function function_1ed9ef6a(localclientnum, vehicle) {
 }
 
 // Namespace hawk_mp/hawk
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2ade28b3, Offset: 0x828
 // Size: 0x44
 function function_500d3fa7(localclientnum, vehicle) {
@@ -130,7 +130,7 @@ function function_500d3fa7(localclientnum, vehicle) {
 }
 
 // Namespace hawk_mp/hawk
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdd96dba9, Offset: 0x878
 // Size: 0x44
 function function_fc1227ca(localclientnum, vehicle) {
@@ -141,7 +141,7 @@ function function_fc1227ca(localclientnum, vehicle) {
 }
 
 // Namespace hawk_mp/hawk
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe52066da, Offset: 0x8c8
 // Size: 0xb4
 function on_local_player_spawned(localclientnum) {
@@ -154,7 +154,7 @@ function on_local_player_spawned(localclientnum) {
 }
 
 // Namespace hawk_mp/hawk
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x39b211fc, Offset: 0x988
 // Size: 0x104
 function function_6701affc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -173,7 +173,7 @@ function function_6701affc(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace hawk_mp/hawk
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5485ae82, Offset: 0xa98
 // Size: 0xe4
 function function_775073e(localclientnum) {
@@ -190,7 +190,7 @@ function function_775073e(localclientnum) {
 }
 
 // Namespace hawk_mp/hawk
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc2ff78d7, Offset: 0xb88
 // Size: 0xec
 function function_6367489e(localclientnum) {
@@ -207,7 +207,7 @@ function function_6367489e(localclientnum) {
 }
 
 // Namespace hawk_mp/hawk
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x67ecc746, Offset: 0xc80
 // Size: 0xec
 function function_3759fcf(localclientnum, var_c5e2f09a) {
@@ -224,7 +224,7 @@ function function_3759fcf(localclientnum, var_c5e2f09a) {
 }
 
 // Namespace hawk_mp/hawk
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5c48ae2f, Offset: 0xd78
 // Size: 0x15c
 function function_2e07be71(localclientnum) {
@@ -243,7 +243,7 @@ function function_2e07be71(localclientnum) {
 }
 
 // Namespace hawk_mp/hawk
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xea7b787b, Offset: 0xee0
 // Size: 0x8ee
 function function_5a1bf101(localclientnum) {
@@ -356,7 +356,7 @@ function function_5a1bf101(localclientnum) {
 }
 
 // Namespace hawk_mp/hawk
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x39122974, Offset: 0x17d8
 // Size: 0x5e
 function function_86f17acc(controllermodel, &var_1f3cc5f9) {

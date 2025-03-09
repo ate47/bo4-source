@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x63ff1933, Offset: 0x258
 // Size: 0x64
 function __init__() {
@@ -35,7 +35,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1ce91dbe, Offset: 0x2c8
 // Size: 0x1cc
 function function_27473e44() {
@@ -50,7 +50,7 @@ function function_27473e44() {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc92c557, Offset: 0x4a0
 // Size: 0x154
 function register_clientfield() {
@@ -64,7 +64,7 @@ function register_clientfield() {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9b369365, Offset: 0x600
 // Size: 0xc
 function set_clientfield(state) {
@@ -72,7 +72,7 @@ function set_clientfield(state) {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xff1b1cef, Offset: 0x618
 // Size: 0x10c
 function give_perk() {
@@ -93,7 +93,7 @@ function give_perk() {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xd101a344, Offset: 0x730
 // Size: 0x4c
 function take_perk(b_pause, str_perk, str_result, n_slot) {
@@ -102,7 +102,7 @@ function take_perk(b_pause, str_perk, str_result, n_slot) {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x16f0fd0a, Offset: 0x788
 // Size: 0x88
 function private function_3b2d1c3e() {
@@ -117,7 +117,7 @@ function private function_3b2d1c3e() {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xe9dcd23b, Offset: 0x818
 // Size: 0x46e
 function private function_607b1eb0() {
@@ -174,7 +174,7 @@ function private function_607b1eb0() {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x3d8a8aa9, Offset: 0xc90
 // Size: 0xa4
 function private function_3d5b29a6() {
@@ -186,7 +186,7 @@ function private function_3d5b29a6() {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x3b326820, Offset: 0xd40
 // Size: 0x90
 function private function_f3d1b75c() {
@@ -202,7 +202,7 @@ function private function_f3d1b75c() {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc5c87da2, Offset: 0xdd8
 // Size: 0x1b4
 function function_b1d12202() {
@@ -223,7 +223,7 @@ function function_b1d12202() {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5cb28a32, Offset: 0xf98
 // Size: 0x26a
 function function_aeda9580(var_8e317f6c) {
@@ -259,7 +259,7 @@ function function_aeda9580(var_8e317f6c) {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb91b6b92, Offset: 0x1210
 // Size: 0x9e
 function function_d5fc01cc() {
@@ -273,7 +273,7 @@ function function_d5fc01cc() {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa0ccd87c, Offset: 0x12b8
 // Size: 0x1ea
 function function_749be7c5() {
@@ -287,7 +287,7 @@ function function_749be7c5() {
             if (!isalive(ai_zombie) || isdefined(ai_zombie.marked_for_death) && ai_zombie.marked_for_death) {
                 continue;
             }
-            if (!isdefined(ai_zombie.var_6f84b820)) {
+            if (!isdefined(ai_zombie.zm_ai_category)) {
                 continue;
             }
             if (!(isdefined(ai_zombie.var_48a548c1) && ai_zombie.var_48a548c1)) {
@@ -299,7 +299,7 @@ function function_749be7c5() {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x38419368, Offset: 0x14b0
 // Size: 0x3de
 function function_c1c51837(e_player) {
@@ -309,7 +309,7 @@ function function_c1c51837(e_player) {
     self namespace_9ff9f642::burn(#"perk_death_dash", e_player, undefined, undefined);
     self.var_b364c165 = 1;
     e_player.var_d675d730.n_kill_count++;
-    if (self.var_6f84b820 == #"basic" || self.var_6f84b820 == #"popcorn" || self.var_6f84b820 == #"enhanced") {
+    if (self.zm_ai_category == #"basic" || self.zm_ai_category == #"popcorn" || self.zm_ai_category == #"enhanced") {
         if (self.no_gib !== 1) {
             var_d3876bb9 = [&gibserverutils::gibhead, &gibserverutils::gibleftarm, &gibserverutils::gibleftleg, &gibserverutils::giblegs, &gibserverutils::gibrightarm, &gibserverutils::gibrightleg, &gibserverutils::annihilate];
             var_d3876bb9 = array::randomize(var_d3876bb9);
@@ -327,7 +327,7 @@ function function_c1c51837(e_player) {
         self dodamage(self.health + 666, e_player.origin, e_player, undefined, undefined, "MOD_BURNED", 0, level.weaponnone);
     } else {
         n_damage = 1700;
-        switch (self.var_6f84b820) {
+        switch (self.zm_ai_category) {
         case #"heavy":
             n_damage = 0.2 * self.maxhealth;
             break;
@@ -344,7 +344,7 @@ function function_c1c51837(e_player) {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1b7b4958, Offset: 0x1898
 // Size: 0xfc
 function function_38139f98() {
@@ -359,7 +359,7 @@ function function_38139f98() {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa56d028e, Offset: 0x19a0
 // Size: 0xe4
 function function_1dbd75d3(var_85dcb56c) {
@@ -374,7 +374,7 @@ function function_1dbd75d3(var_85dcb56c) {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x13581673, Offset: 0x1a90
 // Size: 0x1a0
 function function_7d72c6f9(var_85dcb56c) {
@@ -394,7 +394,7 @@ function function_7d72c6f9(var_85dcb56c) {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x14eb5e19, Offset: 0x1c38
 // Size: 0x10c
 function reset_cooldown() {
@@ -412,7 +412,7 @@ function reset_cooldown() {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xa0264094, Offset: 0x1d50
 // Size: 0x90
 function private function_69153101() {
@@ -435,7 +435,7 @@ function private function_69153101() {
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
-// Params 10, eflags: 0x1 linked
+// Params 10, eflags: 0x0
 // Checksum 0xe4452747, Offset: 0x1de8
 // Size: 0x13e
 function function_4492525b(einflictor, eattacker, idamage, idflags, smeansofdeath, sweapon, vpoint, vdir, shitloc, psoffsettime) {

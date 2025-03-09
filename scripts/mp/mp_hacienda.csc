@@ -26,7 +26,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_hacienda/mp_hacienda
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7fd7b691, Offset: 0x2c8
 // Size: 0xf2
 function dom_flag_base_fx_override(flag, team) {
@@ -56,7 +56,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_hacienda/mp_hacienda
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2c03e388, Offset: 0x3c8
 // Size: 0xf2
 function dom_flag_cap_fx_override(flag, team) {
@@ -86,7 +86,7 @@ function dom_flag_cap_fx_override(flag, team) {
 }
 
 // Namespace mp_hacienda/mp_hacienda
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcfc39461, Offset: 0x4c8
 // Size: 0x2c
 function on_localclient_connect(localclientnum) {
@@ -95,7 +95,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace mp_hacienda/mp_hacienda
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd38970d3, Offset: 0x500
 // Size: 0x2c
 function on_gameplay_started(localclientnum) {

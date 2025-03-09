@@ -7,8 +7,8 @@
     "displayname": "#hash_7e3df9b665464b2f",
     "label1": "#menu/auto",
     "label2": "#menu/interactive",
-    "var_9de86f42": 2,
-    "var_4c593dfd": "#hash_475fe078c6f8dff7",
-    "var_35fb1141": "#hash_4eaa3053ce374044",
+    "optionscount": 2,
+    "hinttext2": "#hash_475fe078c6f8dff7",
+    "hinttext1": "#hash_4eaa3053ce374044",
     "setting": "rebootPlayers"
 }

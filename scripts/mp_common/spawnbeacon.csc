@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5503a62c, Offset: 0xc8
 // Size: 0x14
 function __init__() {

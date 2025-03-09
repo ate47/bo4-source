@@ -62,17 +62,17 @@ function rise_dust_fx(clientnum, billow_fx, burst_fx) {
 // Checksum 0xdbb1f0fb, Offset: 0x4b0
 // Size: 0x134
 function zombie_eyes_clientfield_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    if (isdefined(self.var_ea20345f)) {
-        self stoprenderoverridebundle(self.var_ea20345f, "j_head");
+    if (isdefined(self.eye_rob)) {
+        self stoprenderoverridebundle(self.eye_rob, "j_head");
     }
     if (isdefined(self.var_3231a850)) {
         stopfx(localclientnum, self.var_3231a850);
         self.var_3231a850 = undefined;
     }
     if (newval) {
-        self.var_ea20345f = "rob_zm_eyes_red";
+        self.eye_rob = "rob_zm_eyes_red";
         var_d40cd873 = "eye_glow";
-        self playrenderoverridebundle(self.var_ea20345f, "j_head");
+        self playrenderoverridebundle(self.eye_rob, "j_head");
         self.var_3231a850 = util::playfxontag(localclientnum, level._effect[var_d40cd873], self, "j_eyeball_le");
         self enableonradar();
     }

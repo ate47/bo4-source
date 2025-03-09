@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "draft_enabled",
     "displayname": "#menu/draft_enabled",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "draftEnabled",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

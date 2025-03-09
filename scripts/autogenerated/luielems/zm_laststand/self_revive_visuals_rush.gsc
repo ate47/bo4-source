@@ -7,14 +7,14 @@
 // Method(s) 6 Total 13
 class cself_revive_visuals_rush : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cself_revive_visuals_rush/self_revive_visuals_rush
     // Params 2, eflags: 0x0
     // Checksum 0x21211ea8, Offset: 0x2d8
     // Size: 0x3c
     function set_revive_time(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "revive_time", value);
+        player clientfield::function_9bf78ef8(_uid, "revive_time", value);
     }
 
     // Namespace cself_revive_visuals_rush/self_revive_visuals_rush

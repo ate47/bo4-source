@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_widows_wine/zm_perk_mod_widows_wine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x20ef3ec7, Offset: 0xc8
 // Size: 0x74
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_widows_wine/zm_perk_mod_widows_wine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x148
 // Size: 0x4
 function function_eb36b57e() {
@@ -30,7 +30,7 @@ function function_eb36b57e() {
 }
 
 // Namespace zm_perk_mod_widows_wine/zm_perk_mod_widows_wine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x158
 // Size: 0x4
 function function_905840b3() {
@@ -38,7 +38,7 @@ function function_905840b3() {
 }
 
 // Namespace zm_perk_mod_widows_wine/zm_perk_mod_widows_wine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x168
 // Size: 0x4
 function function_a3102f04() {

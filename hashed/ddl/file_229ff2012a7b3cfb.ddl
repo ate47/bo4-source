@@ -47,7 +47,7 @@ version 8 {
     // offset 0x40, size 0x1f8
     telemetry_header telemetry;
     // offset 0x238, size 0x40
-    uint64 hash_140091b3af0b1ed2;
+    uint64 new_mask;
     // offset 0x278, size 0xc0
     client_header client;
 }

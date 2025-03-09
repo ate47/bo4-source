@@ -34,7 +34,7 @@
 #namespace globallogic_player;
 
 // Namespace globallogic_player/globallogic_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd41a50ff, Offset: 0x2e8
 // Size: 0x84
 function freezeplayerforroundend() {
@@ -45,7 +45,7 @@ function freezeplayerforroundend() {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xabcb0276, Offset: 0x378
 // Size: 0x10c4
 function callback_playerconnect() {
@@ -254,7 +254,7 @@ function callback_playerconnect() {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf7475461, Offset: 0x1448
 // Size: 0x284
 function spectate_player_watcher() {
@@ -298,7 +298,7 @@ function spectate_player_watcher() {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x21cbbbd, Offset: 0x16d8
 // Size: 0xd0
 function callback_playermigrated() {
@@ -314,7 +314,7 @@ function callback_playermigrated() {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x92f06310, Offset: 0x17b0
 // Size: 0x20
 function inform_clientvm_of_migration() {
@@ -323,7 +323,7 @@ function inform_clientvm_of_migration() {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4ab1ff4d, Offset: 0x17d8
 // Size: 0x82
 function arraytostring(inputarray) {
@@ -338,7 +338,7 @@ function arraytostring(inputarray) {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe2148a6d, Offset: 0x1868
 // Size: 0x6f4
 function function_7314957c(player, result) {
@@ -404,7 +404,7 @@ function function_7314957c(player, result) {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1d692e04, Offset: 0x1f68
 // Size: 0x524
 function callback_playerdisconnect() {
@@ -465,7 +465,7 @@ function callback_playerdisconnect() {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x15d14d95, Offset: 0x2498
 // Size: 0xc4
 function callback_playermelee(eattacker, idamage, weapon, vorigin, vdir, boneindex, shieldhit, frombehind) {
@@ -479,7 +479,7 @@ function callback_playermelee(eattacker, idamage, weapon, vorigin, vdir, boneind
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1ff14ba0, Offset: 0x2568
 // Size: 0x256
 function choosenextbestnemesis() {
@@ -514,7 +514,7 @@ function choosenextbestnemesis() {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xace4ae45, Offset: 0x27c8
 // Size: 0x5c
 function notifyconnecting() {
@@ -526,7 +526,7 @@ function notifyconnecting() {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x79ec5b85, Offset: 0x2830
 // Size: 0xa0
 function recordactiveplayersendgamematchrecordstats() {
@@ -537,7 +537,7 @@ function recordactiveplayersendgamematchrecordstats() {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa3ba54d8, Offset: 0x28d8
 // Size: 0x1e
 function figureoutfriendlyfire(victim, attacker) {
@@ -545,7 +545,7 @@ function figureoutfriendlyfire(victim, attacker) {
 }
 
 // Namespace globallogic_player/globallogic_player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x18fdcca6, Offset: 0x2900
 // Size: 0x2e
 function function_b2873ebe() {

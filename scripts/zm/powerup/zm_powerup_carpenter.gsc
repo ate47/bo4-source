@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_powerup_carpenter/zm_powerup_carpenter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1438953e, Offset: 0x1b8
 // Size: 0x84
 function __init__() {
@@ -32,7 +32,7 @@ function __init__() {
 }
 
 // Namespace zm_powerup_carpenter/zm_powerup_carpenter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb765c1ae, Offset: 0x248
 // Size: 0xd0
 function grab_carpenter(e_player) {
@@ -71,7 +71,7 @@ function get_closest_window_repair(windows, origin) {
 }
 
 // Namespace zm_powerup_carpenter/zm_powerup_carpenter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdacdd13f, Offset: 0x448
 // Size: 0x4fa
 function start_carpenter(var_264cf1f9, var_ea1d8f06 = 1) {
@@ -146,7 +146,7 @@ function start_carpenter(var_264cf1f9, var_ea1d8f06 = 1) {
 }
 
 // Namespace zm_powerup_carpenter/zm_powerup_carpenter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xeebf7b2a, Offset: 0x950
 // Size: 0x14c
 function get_near_boards(windows) {
@@ -174,7 +174,7 @@ function get_near_boards(windows) {
 }
 
 // Namespace zm_powerup_carpenter/zm_powerup_carpenter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x51892c31, Offset: 0xaa8
 // Size: 0x14c
 function get_far_boards(windows) {
@@ -202,7 +202,7 @@ function get_far_boards(windows) {
 }
 
 // Namespace zm_powerup_carpenter/zm_powerup_carpenter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfa8616e0, Offset: 0xc00
 // Size: 0x24e
 function repair_far_boards(barriers) {
@@ -238,7 +238,7 @@ function repair_far_boards(barriers) {
 }
 
 // Namespace zm_powerup_carpenter/zm_powerup_carpenter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa25afc7e, Offset: 0xe58
 // Size: 0x48
 function func_should_drop_carpenter() {
@@ -249,7 +249,7 @@ function func_should_drop_carpenter() {
 }
 
 // Namespace zm_powerup_carpenter/zm_powerup_carpenter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf326a706, Offset: 0xea8
 // Size: 0x8a
 function get_num_window_destroyed() {

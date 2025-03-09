@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_quick_revive/zm_perk_mod_quick_revive
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x25ae13bd, Offset: 0x100
 // Size: 0x14
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_quick_revive/zm_perk_mod_quick_revive
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x86245dc3, Offset: 0x120
 // Size: 0xb4
 function enable_quick_revive_perk_for_level() {
@@ -34,7 +34,7 @@ function enable_quick_revive_perk_for_level() {
 }
 
 // Namespace zm_perk_mod_quick_revive/zm_perk_mod_quick_revive
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2cb2ca71, Offset: 0x1e0
 // Size: 0x1c
 function give_perk() {
@@ -42,7 +42,7 @@ function give_perk() {
 }
 
 // Namespace zm_perk_mod_quick_revive/zm_perk_mod_quick_revive
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x7c91d7e6, Offset: 0x208
 // Size: 0x74
 function take_perk(b_pause, str_perk, str_result, n_slot) {
@@ -53,7 +53,7 @@ function take_perk(b_pause, str_perk, str_result, n_slot) {
 }
 
 // Namespace zm_perk_mod_quick_revive/zm_perk_mod_quick_revive
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5deaa7f9, Offset: 0x288
 // Size: 0xc4
 function on_revived(s_params) {
@@ -69,7 +69,7 @@ function on_revived(s_params) {
 }
 
 // Namespace zm_perk_mod_quick_revive/zm_perk_mod_quick_revive
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc5e1739f, Offset: 0x358
 // Size: 0x8e
 function monitor_health_regen() {
@@ -85,7 +85,7 @@ function monitor_health_regen() {
 }
 
 // Namespace zm_perk_mod_quick_revive/zm_perk_mod_quick_revive
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc59cae18, Offset: 0x3f0
 // Size: 0xcc
 function function_118be9d8() {

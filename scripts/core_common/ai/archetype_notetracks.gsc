@@ -46,7 +46,7 @@ function autoexec registerdefaultnotetrackhandlerfunctions() {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x3e4d3297, Offset: 0x818
 // Size: 0x64
 function private notetrackanimmovementstop(entity) {
@@ -56,7 +56,7 @@ function private notetrackanimmovementstop(entity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa8ac4f65, Offset: 0x888
 // Size: 0x5c
 function private notetrackstaircasestep1(entity) {
@@ -66,7 +66,7 @@ function private notetrackstaircasestep1(entity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x704a9fbc, Offset: 0x8f0
 // Size: 0x64
 function private notetrackstaircasestep2(entity) {
@@ -76,7 +76,7 @@ function private notetrackstaircasestep2(entity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb80adabb, Offset: 0x960
 // Size: 0xf4
 function private notetrackdropguninternal(entity) {
@@ -95,7 +95,7 @@ function private notetrackdropguninternal(entity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8f3f8dee, Offset: 0xa60
 // Size: 0x62
 function private notetrackattachknife(entity) {
@@ -106,7 +106,7 @@ function private notetrackattachknife(entity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb795c619, Offset: 0xad0
 // Size: 0x62
 function private notetrackdetachknife(entity) {
@@ -117,7 +117,7 @@ function private notetrackdetachknife(entity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcd9dd06f, Offset: 0xb40
 // Size: 0x24
 function private notetrackhideweapon(entity) {
@@ -125,7 +125,7 @@ function private notetrackhideweapon(entity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x955c6e73, Offset: 0xb70
 // Size: 0x24
 function private notetrackshowweapon(entity) {
@@ -133,7 +133,7 @@ function private notetrackshowweapon(entity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x18993492, Offset: 0xba0
 // Size: 0x24
 function private notetrackhideai(entity) {
@@ -141,7 +141,7 @@ function private notetrackhideai(entity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2c7378c9, Offset: 0xbd0
 // Size: 0x24
 function private notetrackshowai(entity) {
@@ -149,7 +149,7 @@ function private notetrackshowai(entity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x515a52c4, Offset: 0xc00
 // Size: 0xac
 function private notetrackstartragdoll(entity) {
@@ -164,7 +164,7 @@ function private notetrackstartragdoll(entity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x958b0975, Offset: 0xcb8
 // Size: 0x4c
 function _delayedragdoll(entity) {
@@ -175,7 +175,7 @@ function _delayedragdoll(entity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xed1ae924, Offset: 0xd10
 // Size: 0x4c
 function notetrackstartragdollnodeath(entity) {
@@ -186,7 +186,7 @@ function notetrackstartragdollnodeath(entity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb09a64df, Offset: 0xd68
 // Size: 0x148
 function private notetrackfirebullet(animationentity) {
@@ -207,7 +207,7 @@ function private notetrackfirebullet(animationentity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x6adfe170, Offset: 0xeb8
 // Size: 0x24
 function private notetrackdropgun(animationentity) {
@@ -215,7 +215,7 @@ function private notetrackdropgun(animationentity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x86b49cef, Offset: 0xee8
 // Size: 0x24
 function private notetrackdropshield(animationentity) {
@@ -223,7 +223,7 @@ function private notetrackdropshield(animationentity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x55f32b60, Offset: 0xf18
 // Size: 0xc4
 function private notetrackgrenadethrow(animationentity) {
@@ -241,7 +241,7 @@ function private notetrackgrenadethrow(animationentity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd5dc8e65, Offset: 0xfe8
 // Size: 0x6c
 function private notetrackmeleeunsync(animationentity) {
@@ -253,7 +253,7 @@ function private notetrackmeleeunsync(animationentity) {
 }
 
 // Namespace animationstatenetwork/archetype_notetracks
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x37c65a0f, Offset: 0x1060
 // Size: 0x4c
 function private notetrackgibdisable(animationentity) {

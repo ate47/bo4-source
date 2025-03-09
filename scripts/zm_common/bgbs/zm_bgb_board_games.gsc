@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_board_games/zm_bgb_board_games
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x99f2830e, Offset: 0x160
 // Size: 0x74
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_board_games/zm_bgb_board_games
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8d654f86, Offset: 0x1e0
 // Size: 0x1c
 function enable() {
@@ -36,7 +36,7 @@ function enable() {
 }
 
 // Namespace zm_bgb_board_games/zm_bgb_board_games
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x208
 // Size: 0x4
 function disable() {
@@ -44,7 +44,7 @@ function disable() {
 }
 
 // Namespace zm_bgb_board_games/zm_bgb_board_games
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe920dd05, Offset: 0x218
 // Size: 0xa8
 function function_202a3d22() {
@@ -58,7 +58,7 @@ function function_202a3d22() {
 }
 
 // Namespace zm_bgb_board_games/zm_bgb_board_games
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x29b9cf47, Offset: 0x2c8
 // Size: 0x32c
 function function_c2342058(s_window) {

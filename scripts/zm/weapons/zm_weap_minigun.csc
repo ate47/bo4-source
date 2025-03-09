@@ -10,15 +10,15 @@
 
 // Namespace zm_weap_minigun/zm_weap_minigun
 // Params 0, eflags: 0x2
-// Checksum 0x24aed5f9, Offset: 0x168
+// Checksum 0x6849191c, Offset: 0x168
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zm_weap_minigun", &__init__, undefined, undefined);
 }
 
 // Namespace zm_weap_minigun/zm_weap_minigun
-// Params 0, eflags: 0x1 linked
-// Checksum 0x13b656fa, Offset: 0x1b0
+// Params 0, eflags: 0x0
+// Checksum 0x995b59cb, Offset: 0x1b0
 // Size: 0x182
 function __init__() {
     clientfield::register("toplayer", "hero_minigun_vigor_postfx", 1, 1, "counter", &function_d05553c6, 0, 0);
@@ -30,8 +30,8 @@ function __init__() {
 }
 
 // Namespace zm_weap_minigun/zm_weap_minigun
-// Params 7, eflags: 0x5 linked
-// Checksum 0x83c638af, Offset: 0x340
+// Params 7, eflags: 0x4
+// Checksum 0xb27dedcd, Offset: 0x340
 // Size: 0x8c
 function private function_d05553c6(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newvalue && !namespace_a6aea2c6::is_active(#"silent_film")) {
@@ -40,8 +40,8 @@ function private function_d05553c6(localclientnum, oldvalue, newvalue, bnewent, 
 }
 
 // Namespace zm_weap_minigun/zm_weap_minigun
-// Params 7, eflags: 0x5 linked
-// Checksum 0xc767dc94, Offset: 0x3d8
+// Params 7, eflags: 0x4
+// Checksum 0xa8159661, Offset: 0x3d8
 // Size: 0x84
 function private minigun_nuke_rob(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newvalue == 1) {
@@ -52,8 +52,8 @@ function private minigun_nuke_rob(localclientnum, oldvalue, newvalue, bnewent, b
 }
 
 // Namespace zm_weap_minigun/zm_weap_minigun
-// Params 7, eflags: 0x5 linked
-// Checksum 0x9738f114, Offset: 0x468
+// Params 7, eflags: 0x4
+// Checksum 0xf32203f5, Offset: 0x468
 // Size: 0xe4
 function private minigun_nuke_rumble(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     self playrumbleonentity(localclientnum, "damage_heavy");
@@ -68,8 +68,8 @@ function private minigun_nuke_rumble(localclientnum, oldvalue, newvalue, bnewent
 }
 
 // Namespace zm_weap_minigun/zm_weap_minigun
-// Params 7, eflags: 0x1 linked
-// Checksum 0x4cb9f937, Offset: 0x558
+// Params 7, eflags: 0x0
+// Checksum 0x675873f1, Offset: 0x558
 // Size: 0x102
 function minigun_launcher_muzzle_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (isdefined(self.var_83a410ad)) {

@@ -1,8 +1,8 @@
 {
     "configstringfiletype": "scriptbundle",
-    "var_ce9b2d06": "gsol_zm_elixirs",
+    "hash_ce9b2d06": "gsol_zm_elixirs",
     "type": "gamesettingoptioncategory",
     "name": "gsoc_zm_elixirs",
-    "var_dea17465": "#hash_40c3c9f045a1912d",
-    "var_608158f2": "#hash_19875581b4f83433"
+    "hash_dea17465": "#hash_40c3c9f045a1912d",
+    "hash_608158f2": "#hash_19875581b4f83433"
 }

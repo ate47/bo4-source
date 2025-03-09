@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_hud/zm_hud
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbe41d796, Offset: 0x108
 // Size: 0x1c
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace zm_hud/zm_hud
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x130
 // Size: 0x4
 function __main__() {

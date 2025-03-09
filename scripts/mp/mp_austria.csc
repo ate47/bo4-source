@@ -23,7 +23,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_austria/mp_austria
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9cdb50e, Offset: 0x298
 // Size: 0xf2
 function dom_flag_base_fx_override(flag, team) {
@@ -53,7 +53,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_austria/mp_austria
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5e551760, Offset: 0x398
 // Size: 0xf2
 function dom_flag_cap_fx_override(flag, team) {

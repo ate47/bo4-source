@@ -31,25 +31,25 @@ function event_handler[level_init] main(eventstruct) {
     load::main();
     compass::setupminimap("");
     level.cleandepositpoints = array((235.75, 1731.25, 190.5), (249.75, -1743.25, 190.5), (2128, 0, 65), (-128, -704, 191), (936, 552, 193));
-    level thread function_309ff24f();
+    level thread rotate_fans();
     level thread function_2cdcf5c3();
 }
 
 // Namespace mp_frenetic/mp_frenetic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7b8448c, Offset: 0x3d8
 // Size: 0x76
-function function_309ff24f() {
-    var_e4a890f8 = getentarray("rotate_model", "targetname");
-    if (isdefined(var_e4a890f8)) {
-        for (i = 0; i < var_e4a890f8.size; i++) {
-            var_e4a890f8[i] thread rotate();
+function rotate_fans() {
+    rotate_obj = getentarray("rotate_model", "targetname");
+    if (isdefined(rotate_obj)) {
+        for (i = 0; i < rotate_obj.size; i++) {
+            rotate_obj[i] thread rotate();
         }
     }
 }
 
 // Namespace mp_frenetic/mp_frenetic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3c8312af, Offset: 0x458
 // Size: 0xe2
 function rotate() {
@@ -69,7 +69,7 @@ function rotate() {
 }
 
 // Namespace mp_frenetic/mp_frenetic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x33b973ab, Offset: 0x548
 // Size: 0x20c
 function on_game_playing() {
@@ -94,7 +94,7 @@ function on_game_playing() {
 }
 
 // Namespace mp_frenetic/mp_frenetic
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4258386, Offset: 0x760
 // Size: 0xcc
 function function_dd64960c(a_ents) {
@@ -106,7 +106,7 @@ function function_dd64960c(a_ents) {
 }
 
 // Namespace mp_frenetic/mp_frenetic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa6cea347, Offset: 0x838
 // Size: 0x2cc
 function function_2cdcf5c3() {

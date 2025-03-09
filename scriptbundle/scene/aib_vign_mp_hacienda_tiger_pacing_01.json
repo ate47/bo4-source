@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2fb7b387aa78e51b",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_361eb19abe5a4bc8",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "configstringfiletype": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "aib_vign_mp_hacienda_tiger_pacing_01",
+    "dontsync": 1,
+    "aligntarget": "tag_align_tiger_pit",
+    "team": "any"
+}

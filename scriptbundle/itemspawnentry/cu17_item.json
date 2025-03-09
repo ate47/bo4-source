@@ -16,7 +16,7 @@
                 }
             ],
             "description": "#hash_4fe0bd6557dd8287",
-            "var_57b131bd": 3
+            "hash_57b131bd": 3
         },
         {
             "description": "#hash_4fe0be6557dd843a"
@@ -24,8 +24,8 @@
     ],
     "description": "#hash_11be8c19506c207f",
     "configstringfiletype": "scriptbundle",
-    "var_eda4062b": 2,
-    "var_e8b98a8a": "#hash_1e0fbee575b0e9ca",
+    "hash_eda4062b": 2,
+    "hash_e8b98a8a": "#hash_1e0fbee575b0e9ca",
     "model": "#p8_wz_cu_blood_vials",
     "type": "itemspawnentry",
     "hintstring": "#hash_1f8c8912f5654bb8",

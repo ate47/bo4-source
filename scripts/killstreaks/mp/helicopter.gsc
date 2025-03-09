@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace helicopter/helicopter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x13595cc9, Offset: 0x180
 // Size: 0x84
 function __init__() {
@@ -32,7 +32,7 @@ function __init__() {
 }
 
 // Namespace helicopter/helicopter
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1f994110, Offset: 0x210
 // Size: 0x15c
 function function_6af968ce(attacker, weapon, mod) {
@@ -51,7 +51,7 @@ function function_6af968ce(attacker, weapon, mod) {
 }
 
 // Namespace helicopter/helicopter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8c18a058, Offset: 0x378
 // Size: 0x44
 function function_34f03cda(hardpointtype) {
@@ -61,7 +61,7 @@ function function_34f03cda(hardpointtype) {
 }
 
 // Namespace helicopter/helicopter
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x485e95df, Offset: 0x3c8
 // Size: 0x180
 function function_4d5e1035(attacker, weapon, type, weapon_damage, event, playercontrolled, hardpointtype) {
@@ -85,7 +85,7 @@ function function_4d5e1035(attacker, weapon, type, weapon_damage, event, playerc
 }
 
 // Namespace helicopter/helicopter
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0x1a7b7abb, Offset: 0x550
 // Size: 0x136
 function function_d45a1f8d(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {

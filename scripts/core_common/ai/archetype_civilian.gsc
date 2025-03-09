@@ -27,7 +27,7 @@ function autoexec main() {
 #namespace archetypecivilian;
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4a23957c, Offset: 0x3e8
 // Size: 0x7cc
 function registerbehaviorscriptfunctions() {
@@ -106,7 +106,7 @@ function private function_686ab596() {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x9aee720c, Offset: 0xde8
 // Size: 0x4a
 function private civilianblackboardinit() {
@@ -116,7 +116,7 @@ function private civilianblackboardinit() {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x2828501b, Offset: 0xe40
 // Size: 0x6c
 function function_49d80e54(civilian, attribute, oldvalue, value) {
@@ -125,7 +125,7 @@ function function_49d80e54(civilian, attribute, oldvalue, value) {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x66fe35bc, Offset: 0xeb8
 // Size: 0xda
 function private civilianinit() {
@@ -139,7 +139,7 @@ function private civilianinit() {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x20eb2bbb, Offset: 0xfa0
 // Size: 0x2c
 function private civilianonanimscriptedcallback(entity) {
@@ -148,7 +148,7 @@ function private civilianonanimscriptedcallback(entity) {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2acc7cc8, Offset: 0xfd8
 // Size: 0xa6
 function private function_ebea502e(entity) {
@@ -162,7 +162,7 @@ function private function_ebea502e(entity) {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf652606e, Offset: 0x1088
 // Size: 0x42c
 function private rioterchoosepositionservice(entity) {
@@ -224,7 +224,7 @@ function private rioterchoosepositionservice(entity) {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7fc8fbae, Offset: 0x14c0
 // Size: 0x122
 function private civilianpanicescapechooseposition(entity) {
@@ -246,7 +246,7 @@ function private civilianpanicescapechooseposition(entity) {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2bfc3290, Offset: 0x15f0
 // Size: 0x43c
 function private civilianwanderservice(entity) {
@@ -307,7 +307,7 @@ function private civilianwanderservice(entity) {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x25229b37, Offset: 0x1a38
 // Size: 0x3fc
 function private civilianfollowservice(entity) {
@@ -362,7 +362,7 @@ function private civilianfollowservice(entity) {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xb1079006, Offset: 0x1e40
 // Size: 0x58
 function private civilianmoveactioninitialize(entity, asmstatename) {
@@ -372,7 +372,7 @@ function private civilianmoveactioninitialize(entity, asmstatename) {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x79dad227, Offset: 0x1ea0
 // Size: 0x68
 function private civilianmoveactionfinalize(entity, asmstatename) {
@@ -383,7 +383,7 @@ function private civilianmoveactionfinalize(entity, asmstatename) {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xae6917cf, Offset: 0x1f10
 // Size: 0x34
 function private civilianispanicked(entity) {
@@ -391,7 +391,7 @@ function private civilianispanicked(entity) {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x4dedc785, Offset: 0x1f50
 // Size: 0x22
 function private function_e27d2a1b() {
@@ -399,7 +399,7 @@ function private function_e27d2a1b() {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf885d8bc, Offset: 0x1f80
 // Size: 0x36
 function private civilianarrivalallowed(entity) {
@@ -410,7 +410,7 @@ function private civilianarrivalallowed(entity) {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x20f720f, Offset: 0x1fc0
 // Size: 0x40
 function private civilianareturnsallowed(entity) {
@@ -421,7 +421,7 @@ function private civilianareturnsallowed(entity) {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x12bf3473, Offset: 0x2008
 // Size: 0x40
 function civilianisrioter(entity) {
@@ -432,7 +432,7 @@ function civilianisrioter(entity) {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x372237da, Offset: 0x2050
 // Size: 0x586
 function civiliancanthrowmolotovgrenade(behaviortreeentity, throwifpossible = 0) {
@@ -496,7 +496,7 @@ function civiliancanthrowmolotovgrenade(behaviortreeentity, throwifpossible = 0)
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb498d46e, Offset: 0x25e0
 // Size: 0x16a
 function private civilianpreparetothrowgrenade(behaviortreeentity) {
@@ -516,7 +516,7 @@ function private civilianpreparetothrowgrenade(behaviortreeentity) {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x10ddecd9, Offset: 0x2758
 // Size: 0x20c
 function private civiliancleanuptothrowgrenade(behaviortreeentity) {
@@ -539,7 +539,7 @@ function private civiliancleanuptothrowgrenade(behaviortreeentity) {
 }
 
 // Namespace archetypecivilian/archetype_civilian
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xbc4e7368, Offset: 0x2970
 // Size: 0x2e6
 function private rioterreaquireservice(entity) {

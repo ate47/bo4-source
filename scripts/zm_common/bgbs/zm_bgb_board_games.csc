@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_board_games/zm_bgb_board_games
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5a72b93e, Offset: 0xd0
 // Size: 0x4c
 function __init__() {

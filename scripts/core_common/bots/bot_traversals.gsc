@@ -5,7 +5,7 @@
 #namespace bot;
 
 // Namespace bot/bot_traversals
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x6a27ef3c, Offset: 0xf0
 // Size: 0x254
 function callback_botentereduseredge(startnode, endnode, mantlenode, startpos, endpos, mantlepos) {
@@ -53,7 +53,7 @@ function cancel() {
 }
 
 // Namespace bot/bot_traversals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9c1d251d, Offset: 0x370
 // Size: 0xbc
 function fallback_traversal(endpos) {
@@ -65,7 +65,7 @@ function fallback_traversal(endpos) {
 }
 
 // Namespace bot/bot_traversals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcaee8b3a, Offset: 0x438
 // Size: 0xc4
 function function_c3452ef9(params) {
@@ -84,7 +84,7 @@ function function_c3452ef9(params) {
 }
 
 // Namespace bot/bot_traversals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4a8a7855, Offset: 0x508
 // Size: 0x41c
 function volume_traversal(params) {
@@ -146,7 +146,7 @@ function volume_traversal(params) {
 }
 
 // Namespace bot/bot_traversals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc6a08843, Offset: 0x930
 // Size: 0x5c
 function release_control(notifyhash) {
@@ -159,7 +159,7 @@ function release_control(notifyhash) {
 }
 
 // Namespace bot/bot_traversals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf9d9bd6b, Offset: 0x998
 // Size: 0xdc
 function traversal_timeout(params) {
@@ -176,7 +176,7 @@ function traversal_timeout(params) {
 }
 
 // Namespace bot/bot_traversals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5ea6fb39, Offset: 0xa80
 // Size: 0x374
 function analyze(params) {
@@ -206,7 +206,7 @@ function analyze(params) {
 }
 
 // Namespace bot/bot_traversals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x18bcc96f, Offset: 0xe00
 // Size: 0xbc
 function function_51cbae24(params) {
@@ -222,7 +222,7 @@ function function_51cbae24(params) {
 }
 
 // Namespace bot/bot_traversals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x638308e2, Offset: 0xec8
 // Size: 0xc4
 function mantle_traversal(params) {
@@ -276,7 +276,7 @@ function jump_traversal(params) {
 }
 
 // Namespace bot/bot_traversals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x411f12b2, Offset: 0x1230
 // Size: 0xb4
 function fall_traversal(endpos) {
@@ -291,7 +291,7 @@ function fall_traversal(endpos) {
 }
 
 // Namespace bot/bot_traversals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa46815c6, Offset: 0x12f0
 // Size: 0x132
 function walk_traversal(params) {
@@ -312,7 +312,7 @@ function walk_traversal(params) {
 }
 
 // Namespace bot/bot_traversals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xeb8e9e2f, Offset: 0x1430
 // Size: 0x50
 function function_fc004e60(params) {
@@ -323,7 +323,7 @@ function function_fc004e60(params) {
 }
 
 // Namespace bot/bot_traversals
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x24d19001, Offset: 0x1488
 // Size: 0xaa
 function teleport(endpos, reason) {
@@ -338,7 +338,7 @@ function teleport(endpos, reason) {
 }
 
 // Namespace bot/bot_traversals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x94b7af26, Offset: 0x1540
 // Size: 0xe2
 function mantle(mantlepos) {
@@ -355,7 +355,7 @@ function mantle(mantlepos) {
 }
 
 // Namespace bot/bot_traversals
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x8c91a923, Offset: 0x1630
 // Size: 0x172
 function edge_approach(edgepos, normal, dist = 0) {
@@ -377,7 +377,7 @@ function edge_approach(edgepos, normal, dist = 0) {
 }
 
 // Namespace bot/bot_traversals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd3b6286d, Offset: 0x17b0
 // Size: 0xa2
 function jump(var_75f5c2cb) {
@@ -392,7 +392,7 @@ function jump(var_75f5c2cb) {
 }
 
 // Namespace bot/bot_traversals
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xee5814e2, Offset: 0x1860
 // Size: 0xa0
 function fall() {

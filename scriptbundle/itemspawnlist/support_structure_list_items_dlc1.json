@@ -62,10 +62,10 @@
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 512,
+    "hash_7fb0967b": 512,
     "type": "itemspawnlist",
-    "var_345eba59": 10,
-    "var_9b009839": -1,
+    "hash_345eba59": 10,
+    "hash_9b009839": -1,
     "name": "support_structure_list_items_dlc1",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

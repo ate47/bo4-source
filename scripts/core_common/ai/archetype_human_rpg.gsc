@@ -8,7 +8,7 @@
 
 // Namespace archetype_human_rpg/archetype_human_rpg
 // Params 0, eflags: 0x2
-// Checksum 0x620ffa3f, Offset: 0x98
+// Checksum 0x48767c17, Offset: 0x98
 // Size: 0x84
 function autoexec main() {
     spawner::add_archetype_spawn_function(#"human_rpg", &humanrpgbehavior::archetypehumanrpgblackboardinit);
@@ -20,7 +20,7 @@ function autoexec main() {
 #namespace humanrpgbehavior;
 
 // Namespace humanrpgbehavior/archetype_human_rpg
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x128
 // Size: 0x4
 function registerbehaviorscriptfunctions() {
@@ -28,8 +28,8 @@ function registerbehaviorscriptfunctions() {
 }
 
 // Namespace humanrpgbehavior/archetype_human_rpg
-// Params 0, eflags: 0x5 linked
-// Checksum 0x6093fe80, Offset: 0x138
+// Params 0, eflags: 0x4
+// Checksum 0xe6d4962a, Offset: 0x138
 // Size: 0x6c
 function private archetypehumanrpgblackboardinit() {
     entity = self;
@@ -40,8 +40,8 @@ function private archetypehumanrpgblackboardinit() {
 }
 
 // Namespace humanrpgbehavior/archetype_human_rpg
-// Params 1, eflags: 0x5 linked
-// Checksum 0xbc3e5977, Offset: 0x1b0
+// Params 1, eflags: 0x4
+// Checksum 0x4633ee61, Offset: 0x1b0
 // Size: 0x2c
 function private archetypehumanrpgonanimscriptedcallback(entity) {
     entity.__blackboard = undefined;
@@ -49,11 +49,11 @@ function private archetypehumanrpgonanimscriptedcallback(entity) {
 }
 
 // Namespace humanrpgbehavior/archetype_human_rpg
-// Params 0, eflags: 0x5 linked
-// Checksum 0x3a20299d, Offset: 0x1e8
+// Params 0, eflags: 0x4
+// Checksum 0x5ab0dc9e, Offset: 0x1e8
 // Size: 0x94
 function private function_daf99f58() {
-    if (self.var_9fde8624 === #"human_rpg") {
+    if (self.subarchetype === #"human_rpg") {
         self.var_b3aacd00 = getweapon(#"hash_3b5610f58856b4ea");
         self.var_2fcec084 = getweapon(#"hash_1d8ec79043d16eb");
         self.var_b999a026 = 0;
@@ -62,8 +62,8 @@ function private function_daf99f58() {
 }
 
 // Namespace humanrpgbehavior/archetype_human_rpg
-// Params 0, eflags: 0x5 linked
-// Checksum 0xbff8079e, Offset: 0x288
+// Params 0, eflags: 0x4
+// Checksum 0xf8bb3f77, Offset: 0x288
 // Size: 0x218
 function private function_567e5a33() {
     self endon(#"death");

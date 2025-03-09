@@ -414,8 +414,10 @@ function clear_killstreaks() {
                 player takeweapon(killstreakweapon);
             }
         }
-        for (i = 0; i < 4; i += 1) {
+        i = 0;
+        while (i < 4) {
             player function_b181bcbd(i);
+            i += 1;
         }
     }
     player.killstreak = [];
@@ -586,8 +588,8 @@ function private give_talents() {
             var_ebdddedf.namehash = #"hash_5c9c79c25b74b7bb";
         }
         var_b3ed76f5 = function_c84c77d8(var_ebdddedf.loadoutslot);
-        if (var_b3ed76f5 && !self function_6c32d092(var_ebdddedf.namehash)) {
-            self function_b5feff95(var_ebdddedf.namehash);
+        if (var_b3ed76f5 && !self hastalent(var_ebdddedf.namehash)) {
+            self addtalent(var_ebdddedf.namehash);
         }
     }
     pixendevent();
@@ -1073,7 +1075,7 @@ function private function_8e961216(slot, previous_weapon) {
         var_46119dfa = self getloadoutitem(self.class_num, "primarygrenadecount");
         primaryoffhandcount = var_46119dfa ? 2 : 1;
         if (isdefined(self.pers[#"primarygrenadecount"]) && self.pers[#"primarygrenadecount"] < primaryoffhandcount && isdefined(self.pers[#"held_gadgets_power"]) && isdefined(self.pers[#"held_gadgets_power"][primaryoffhand])) {
-            self.pers[#"held_gadgets_power"][primaryoffhand] = self.pers[#"held_gadgets_power"][primaryoffhand] * self.pers[#"primarygrenadecount"] / primaryoffhandcount;
+            self.pers[#"held_gadgets_power"][primaryoffhand] *= self.pers[#"primarygrenadecount"] / primaryoffhandcount;
         }
         self.pers[#"primarygrenadecount"] = primaryoffhandcount;
     }
@@ -1326,7 +1328,7 @@ function give_loadout(team, weaponclass) {
             overallocation = allocationspent > level.maxallocation;
             self function_8aa3ff4e();
             if (var_c8f2f688) {
-                self function_e6f9e3cd();
+                self cleartalents();
                 give_talents();
             }
             give_perks();

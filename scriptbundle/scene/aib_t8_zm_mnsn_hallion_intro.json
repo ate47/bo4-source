@@ -10,7 +10,7 @@
                         }
                     ],
                     "name": "shot 1",
-                    "var_b94164e": "scriptbrush_boss_intro"
+                    "hash_b94164e": "scriptbrush_boss_intro"
                 },
                 {
                     "entry": [
@@ -38,7 +38,7 @@
                         }
                     ],
                     "name": "shot 4",
-                    "var_39fd697b": "scriptbrush_boss_intro"
+                    "hash_39fd697b": "scriptbrush_boss_intro"
                 }
             ],
             "model": "#tag_origin_animate",
@@ -56,7 +56,7 @@
                         }
                     ],
                     "name": "shot 1",
-                    "var_b94164e": "scriptbrush_boss_intro"
+                    "hash_b94164e": "scriptbrush_boss_intro"
                 },
                 {
                     "entry": [
@@ -84,7 +84,7 @@
                         }
                     ],
                     "name": "shot 4",
-                    "var_39fd697b": "scriptbrush_boss_intro"
+                    "hash_39fd697b": "scriptbrush_boss_intro"
                 }
             ],
             "model": "#hash_3df2c3496c6a62fd",

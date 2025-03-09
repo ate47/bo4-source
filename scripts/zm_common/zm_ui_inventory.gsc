@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_ui_inventory/zm_ui_inventory
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1ea63bf7, Offset: 0x138
 // Size: 0x168
 function __init__() {
@@ -35,7 +35,7 @@ function __init__() {
 }
 
 // Namespace zm_ui_inventory/zm_ui_inventory
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x117c19a9, Offset: 0x2a8
 // Size: 0x1c
 function private onconnect() {
@@ -43,7 +43,7 @@ function private onconnect() {
 }
 
 // Namespace zm_ui_inventory/zm_ui_inventory
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x121d6f49, Offset: 0x2d0
 // Size: 0x82
 function private function_13ad9a60() {
@@ -58,7 +58,7 @@ function private function_13ad9a60() {
 }
 
 // Namespace zm_ui_inventory/zm_ui_inventory
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x22b9a766, Offset: 0x360
 // Size: 0xe4
 function function_7df6bb60(fieldname, value, player) {

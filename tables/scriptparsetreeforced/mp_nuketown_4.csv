@@ -1,0 +1,7 @@
+vm,name
+server,#scripts/core_common/ai/archetype_mannequin_interface.gsc
+server,#scripts/core_common/ai/archetype_zombie_interface.gsc
+server,#scripts/core_common/ai/zombie.gsc
+server,#scripts/core_common/ai/archetype_mannequin.gsc
+client,#scripts/core_common/ai/zombie.csc
+client,#scripts/core_common/ai/archetype_mannequin.csc

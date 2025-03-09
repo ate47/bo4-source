@@ -1,0 +1,34 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "lmg_double_t8_wallbuy_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "lmg_standard_t8_wallbuy_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "lmg_spray_t8_wallbuy_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "lmg_heavy_t8_wallbuy_item",
+            "maxweight": 1,
+            "available": -1
+        }
+    ],
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 4,
+    "hash_9b009839": -1,
+    "name": "wz_escape_wallbuy_guns_lmg",
+    "supplystashweight": 100
+}

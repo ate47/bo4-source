@@ -69,8 +69,8 @@
             "firstframe": 1,
             "model": "#spawner_zm_zombie",
             "type": "actor",
-            "var_f9a5853f": 1,
-            "var_615b1f16": 1,
+            "hash_f9a5853f": 1,
+            "usefakeactor": 1,
             "name": "zombie_eaten"
         },
         {

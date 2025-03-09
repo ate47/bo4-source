@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_ethereal_razor/zm_perk_mod_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x45ebea44, Offset: 0xe0
 // Size: 0x14
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_ethereal_razor/zm_perk_mod_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe62debf6, Offset: 0x100
 // Size: 0x94
 function enable_ethereal_razor_perk_for_level() {
@@ -30,7 +30,7 @@ function enable_ethereal_razor_perk_for_level() {
 }
 
 // Namespace zm_perk_mod_ethereal_razor/zm_perk_mod_ethereal_razor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1a0
 // Size: 0x4
 function function_5b26f1e3() {
@@ -38,7 +38,7 @@ function function_5b26f1e3() {
 }
 
 // Namespace zm_perk_mod_ethereal_razor/zm_perk_mod_ethereal_razor
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x71902700, Offset: 0x1b0
 // Size: 0x24
 function function_98c3f271(b_pause, str_perk, str_result, n_slot) {

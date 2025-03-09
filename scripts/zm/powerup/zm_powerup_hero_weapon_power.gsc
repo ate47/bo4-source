@@ -25,7 +25,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_powerup_hero_weapon_power/zm_powerup_hero_weapon_power
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe9750827, Offset: 0x158
 // Size: 0x84
 function __init__() {
@@ -36,7 +36,7 @@ function __init__() {
 }
 
 // Namespace zm_powerup_hero_weapon_power/zm_powerup_hero_weapon_power
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x43a91667, Offset: 0x1e8
 // Size: 0xe
 function function_7e51ac0f() {
@@ -44,7 +44,7 @@ function function_7e51ac0f() {
 }
 
 // Namespace zm_powerup_hero_weapon_power/zm_powerup_hero_weapon_power
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb7f1552f, Offset: 0x200
 // Size: 0xd4
 function hero_weapon_power(e_player) {
@@ -61,7 +61,7 @@ function hero_weapon_power(e_player) {
 }
 
 // Namespace zm_powerup_hero_weapon_power/zm_powerup_hero_weapon_power
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xfa9a513b, Offset: 0x2e0
 // Size: 0x42
 function private function_5792ec16() {

@@ -13,7 +13,7 @@
 #/
 
 // Namespace plannerblackboard/planner_blackboard
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3308c3ba, Offset: 0xb8
 // Size: 0x42
 function clearundostack(blackboard) {
@@ -22,7 +22,7 @@ function clearundostack(blackboard) {
 }
 
 // Namespace plannerblackboard/planner_blackboard
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1b56ba85, Offset: 0x108
 // Size: 0x80
 function create(&blackboardvalues) {
@@ -35,7 +35,7 @@ function create(&blackboardvalues) {
 }
 
 // Namespace plannerblackboard/planner_blackboard
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8f27e276, Offset: 0x190
 // Size: 0xf8
 function getattribute(blackboard, attribute) {
@@ -50,7 +50,7 @@ function getattribute(blackboard, attribute) {
 }
 
 // Namespace plannerblackboard/planner_blackboard
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7c8cae92, Offset: 0x290
 // Size: 0x70
 function getundostacksize(blackboard) {
@@ -60,7 +60,7 @@ function getundostacksize(blackboard) {
 }
 
 // Namespace plannerblackboard/planner_blackboard
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x810511cb, Offset: 0x308
 // Size: 0x2ba
 function setattribute(blackboard, attribute, value, readonly = 0) {
@@ -87,7 +87,7 @@ function setattribute(blackboard, attribute, value, readonly = 0) {
 }
 
 // Namespace plannerblackboard/planner_blackboard
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4c0c0d2f, Offset: 0x5d0
 // Size: 0x1e
 function setreadmode(blackboard) {
@@ -95,7 +95,7 @@ function setreadmode(blackboard) {
 }
 
 // Namespace plannerblackboard/planner_blackboard
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x36137579, Offset: 0x5f8
 // Size: 0x1e
 function setreadwritemode(blackboard) {
@@ -103,7 +103,7 @@ function setreadwritemode(blackboard) {
 }
 
 // Namespace plannerblackboard/planner_blackboard
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x222613fb, Offset: 0x620
 // Size: 0x15e
 function undo(blackboard, stackindex) {

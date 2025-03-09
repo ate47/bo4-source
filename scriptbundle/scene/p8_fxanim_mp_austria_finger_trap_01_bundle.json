@@ -1,0 +1,151 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2da80ceff811e1d3",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_aeb39c6ef0cc35a",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "up_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_47cd9470a5f0fb82",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "finger_down"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_49a6845d809c3663",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "down_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_565d45af97759519",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "finger_up"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_58b5a38d5099a412",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_348e4f35e01f44c3",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "name": "up_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_348e4f35e01f44c3",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "finger_down"
+                },
+                {
+                    "name": "down_idle"
+                },
+                {
+                    "name": "finger_up"
+                }
+            ],
+            "model": "#hash_736b9a72dfb3cbe",
+            "type": "prop",
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_74aa2d9fc0497aeb",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_70fe43db61b8083",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "up_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_74aa2d9fc0497aeb",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "finger_down"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_599b7f937135ba6e",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "down_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_23804d049498c498",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "finger_up"
+                }
+            ],
+            "disabled": 1,
+            "model": "#hash_23f684900346fa21",
+            "type": "prop",
+            "name": "prop 3"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_austria_finger_trap_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x22657a4a, Offset: 0x168
 // Size: 0x194
 function __init__() {
@@ -34,7 +34,7 @@ function __init__() {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9f13064b, Offset: 0x308
 // Size: 0x44
 function on_status_effect(var_756fda07) {
@@ -44,7 +44,7 @@ function on_status_effect(var_756fda07) {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x93021940, Offset: 0x358
 // Size: 0x1c
 function on_buff() {
@@ -52,7 +52,7 @@ function on_buff() {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe3e84814, Offset: 0x380
 // Size: 0x8c
 function gadget_health_regen_on_give(slot, weapon) {
@@ -67,7 +67,7 @@ function gadget_health_regen_on_give(slot, weapon) {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9b9fd1dd, Offset: 0x418
 // Size: 0x34
 function gadget_health_regen_on_take(slot, weapon) {
@@ -76,7 +76,7 @@ function gadget_health_regen_on_take(slot, weapon) {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7e56149a, Offset: 0x458
 // Size: 0x1c
 function on_player_spawned() {
@@ -84,7 +84,7 @@ function on_player_spawned() {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd2ffd10c, Offset: 0x480
 // Size: 0x78
 function function_ddfdddb1() {
@@ -97,18 +97,18 @@ function function_ddfdddb1() {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf3cf12bd, Offset: 0x500
 // Size: 0x24
-function function_1e02d458() {
+function heal_start() {
     self clientfield::set_player_uimodel("hudItems.healingActive", 1);
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5b320b25, Offset: 0x530
 // Size: 0xe4
-function function_7993d50e() {
+function heal_end() {
     if (!isdefined(self) || !isdefined(self.heal)) {
         return;
     }
@@ -124,7 +124,7 @@ function function_7993d50e() {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd527478f, Offset: 0x620
 // Size: 0xd4
 function function_34daf34a(slot, weapon) {
@@ -140,7 +140,7 @@ function function_34daf34a(slot, weapon) {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe2771450, Offset: 0x700
 // Size: 0x158
 function function_bc0ce7d5(slot, weapon) {
@@ -162,7 +162,7 @@ function function_bc0ce7d5(slot, weapon) {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7267d3b2, Offset: 0x860
 // Size: 0x5a
 function function_941ed5d6() {
@@ -175,7 +175,7 @@ function function_941ed5d6() {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcc2a95e9, Offset: 0x8c8
 // Size: 0x4c
 function gadget_health_regen_on(slot, weapon) {
@@ -187,7 +187,7 @@ function gadget_health_regen_on(slot, weapon) {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7f2d88fa, Offset: 0x920
 // Size: 0x106
 function gadget_health_regen_off(slot, weapon) {
@@ -210,7 +210,7 @@ function gadget_health_regen_off(slot, weapon) {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x286200b4, Offset: 0xa30
 // Size: 0xec
 function enable_healing_after_wait(slot, weapon, wait_time, var_5818bd22, player) {
@@ -224,14 +224,14 @@ function enable_healing_after_wait(slot, weapon, wait_time, var_5818bd22, player
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x59fce749, Offset: 0xb28
 // Size: 0x41c
 function enable_healing(slot, weapon, player) {
     if (self gadgetsdisabled()) {
         return;
     }
-    self function_1e02d458();
+    self heal_start();
     if (isdefined(weapon) && weapon.maxheal) {
         self player::function_9080887a(weapon.maxheal);
     } else {
@@ -288,7 +288,7 @@ function enable_healing(slot, weapon, player) {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xae28cd3c, Offset: 0xf50
 // Size: 0x7c
 function function_d91a057d(slot = ability_util::gadget_slot_for_type(23)) {
@@ -296,12 +296,12 @@ function function_d91a057d(slot = ability_util::gadget_slot_for_type(23)) {
         self function_820a63e9(slot, 0);
     }
     if (is_healing()) {
-        self function_7993d50e();
+        self heal_end();
     }
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8cc2ad99, Offset: 0xfd8
 // Size: 0x42
 function is_healing() {
@@ -309,7 +309,7 @@ function is_healing() {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xba7028b6, Offset: 0x1028
 // Size: 0xec
 function function_4e449209() {
@@ -330,7 +330,7 @@ function function_4e449209() {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x42d67df3, Offset: 0x1120
 // Size: 0xd4
 function on_player_damage(params) {
@@ -350,7 +350,7 @@ function on_player_damage(params) {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdc70ab5a, Offset: 0x1200
 // Size: 0x34
 function function_aba28004() {
@@ -361,7 +361,7 @@ function function_aba28004() {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x1dcca095, Offset: 0x1240
 // Size: 0x34
 function private function_18e0320b() {
@@ -371,7 +371,7 @@ function private function_18e0320b() {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7fba8ce9, Offset: 0x1280
 // Size: 0x52
 function private function_dafd9cd(attacker) {
@@ -385,7 +385,7 @@ function private function_dafd9cd(attacker) {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe580aaa2, Offset: 0x12e0
 // Size: 0x4a
 function function_831bf182() {
@@ -397,7 +397,7 @@ function function_831bf182() {
 }
 
 // Namespace gadget_health_regen/gadget_health_regen
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2c6dc656, Offset: 0x1338
 // Size: 0x3c
 function power_off() {

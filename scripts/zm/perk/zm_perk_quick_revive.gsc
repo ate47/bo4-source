@@ -23,7 +23,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_quick_revive/zm_perk_quick_revive
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x74469f86, Offset: 0x250
 // Size: 0x14
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_quick_revive/zm_perk_quick_revive
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9b7d07, Offset: 0x270
 // Size: 0x25c
 function enable_quick_revive_perk_for_level() {
@@ -49,7 +49,7 @@ function enable_quick_revive_perk_for_level() {
 }
 
 // Namespace zm_perk_quick_revive/zm_perk_quick_revive
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd1c8c5f7, Offset: 0x4d8
 // Size: 0x10e
 function quick_revive_precache() {
@@ -65,7 +65,7 @@ function quick_revive_precache() {
 }
 
 // Namespace zm_perk_quick_revive/zm_perk_quick_revive
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x5f0
 // Size: 0x4
 function quick_revive_register_clientfield() {
@@ -73,7 +73,7 @@ function quick_revive_register_clientfield() {
 }
 
 // Namespace zm_perk_quick_revive/zm_perk_quick_revive
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfc75ff99, Offset: 0x600
 // Size: 0xc
 function quick_revive_set_clientfield(state) {
@@ -81,7 +81,7 @@ function quick_revive_set_clientfield(state) {
 }
 
 // Namespace zm_perk_quick_revive/zm_perk_quick_revive
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x17b7c704, Offset: 0x618
 // Size: 0xb6
 function quick_revive_perk_machine_setup(use_trigger, perk_machine, bump_trigger, collision) {
@@ -97,7 +97,7 @@ function quick_revive_perk_machine_setup(use_trigger, perk_machine, bump_trigger
 }
 
 // Namespace zm_perk_quick_revive/zm_perk_quick_revive
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x485fa99a, Offset: 0x6d8
 // Size: 0x5c2
 function turn_revive_on() {
@@ -271,7 +271,7 @@ function update_quickrevive_power_state(poweron) {
 }
 
 // Namespace zm_perk_quick_revive/zm_perk_quick_revive
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x13b0
 // Size: 0x4
 function give_quick_revive_perk() {
@@ -279,7 +279,7 @@ function give_quick_revive_perk() {
 }
 
 // Namespace zm_perk_quick_revive/zm_perk_quick_revive
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x5d7cb0ea, Offset: 0x13c0
 // Size: 0x24
 function take_quick_revive_perk(b_pause, str_perk, str_result, n_slot) {

@@ -123,7 +123,7 @@ function minigun_powerup_last_stand() {
 function minigun_countdown(ent_player, str_weapon_time) {
     while (ent_player.zombie_vars[str_weapon_time] > 0) {
         waitframe(1);
-        ent_player.zombie_vars[str_weapon_time] = ent_player.zombie_vars[str_weapon_time] - 0.05;
+        ent_player.zombie_vars[str_weapon_time] -= 0.05;
     }
 }
 

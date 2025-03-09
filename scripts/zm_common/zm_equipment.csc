@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8d440130, Offset: 0x118
 // Size: 0x9c
 function __init__() {
@@ -36,7 +36,7 @@ function add_equip_activated_callback_override(model, func) {
 }
 
 // Namespace zm_equipment/zm_equipment
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x89a5b2a0, Offset: 0x1f8
 // Size: 0x132
 function equipment_activated_clientfield_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_powerup_fire_sale/zm_powerup_fire_sale
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x15aa3cad, Offset: 0xe8
 // Size: 0x4c
 function __init__() {

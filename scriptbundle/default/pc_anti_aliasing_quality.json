@@ -27,15 +27,15 @@
     ],
     "descriptionimage": "#hash_5f4939397058d88f",
     "description": "#hash_1d3f43e6840026f5",
-    "var_60fcfffa": "#menu/on",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 1,
+    "hash_60fcfffa": "#menu/on",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "pc_anti_aliasing_quality",
     "displayname": "#hash_6a74ab205f18e323",
-    "var_66faec87": 10,
+    "hash_66faec87": 10,
     "statname": "r_aaTechnique",
-    "var_b7401319": "#menu/off"
+    "hash_b7401319": "#menu/off"
 }

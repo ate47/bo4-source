@@ -1,7 +1,7 @@
 {
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
-    "var_2a2adea3": 1,
+    "blueprintcount": 1,
     "blueprint01": "zblueprint_zod_tricannon_upgrade",
     "name": "ztable_tricannon_upgrade",
     "displayname": "Distillation Kit"

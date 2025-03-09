@@ -16,10 +16,10 @@
             ],
             "model": "#hash_69216447876b9e29",
             "type": "prop",
-            "var_a1c5c678": 1,
+            "hash_a1c5c678": 1,
             "deletewhenfinished": 1,
             "name": "prop 1",
-            "var_873368a8": 10,
+            "hash_873368a8": 10,
             "allowdeath": 1,
             "takedamage": 1
         }

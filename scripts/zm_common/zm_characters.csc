@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_characters/zm_characters
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdbced7ac, Offset: 0xee0
 // Size: 0x1e
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace zm_characters/zm_characters
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x20dc8385, Offset: 0xf08
 // Size: 0x1982
 function setup_personality_character_exerts() {

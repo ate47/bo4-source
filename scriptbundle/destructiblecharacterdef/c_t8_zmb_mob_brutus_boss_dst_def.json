@@ -4,19 +4,19 @@
             "hittag": "tag_weapon_right"
         }
     ],
-    "var_ce6ea3fa": "#c_t8_zmb_mob_brutus_boss_baton",
-    "var_aa7fbf8b": "j_helmet",
-    "var_20a1cc0c": -1,
+    "hash_ce6ea3fa": "#c_t8_zmb_mob_brutus_boss_baton",
+    "hash_aa7fbf8b": "j_helmet",
+    "hash_20a1cc0c": -1,
     "configstringfiletype": "scriptbundle",
-    "var_c83371f4": "#hash_5187f9f275e94c64",
+    "hash_c83371f4": "#hash_5187f9f275e94c64",
     "type": "destructiblecharacterdef",
-    "var_9fdd055b": "tag_weapon_right",
-    "var_cb768102": "helmet",
+    "hash_9fdd055b": "tag_weapon_right",
+    "hash_cb768102": "helmet",
     "vmtype": "both",
     "name": "c_t8_zmb_mob_brutus_boss_dst_def",
-    "var_4d756ec6": "#c_t8_zmb_mob_brutus_boss_baton",
-    "var_55d2a6b2": 1,
+    "hash_4d756ec6": "#c_t8_zmb_mob_brutus_boss_baton",
+    "hash_55d2a6b2": 1,
     "piececount": 2,
-    "var_19e4a0d": "#hash_5187f9f275e94c64",
-    "var_56d63213": "tag_weapon_right"
+    "hash_19e4a0d": "#hash_5187f9f275e94c64",
+    "hash_56d63213": "tag_weapon_right"
 }

@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "neutral_zone",
     "displayname": "#menu/neutral_zone",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "neutralZone",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

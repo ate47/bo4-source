@@ -6,7 +6,7 @@
 #namespace array;
 
 // Namespace array/array_shared
-// Params 4, eflags: 0x21 linked variadic
+// Params 4, eflags: 0x20 variadic
 // Checksum 0xb31550f, Offset: 0xa0
 // Size: 0x196
 function filter(&array, b_keep_keys, func_filter, ...) {
@@ -33,7 +33,7 @@ function filter(&array, b_keep_keys, func_filter, ...) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1fa12f72, Offset: 0x240
 // Size: 0x30
 function remove_undefined(&array, b_keep_keys) {
@@ -42,7 +42,7 @@ function remove_undefined(&array, b_keep_keys) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x205f7e32, Offset: 0x278
 // Size: 0x30
 function remove_dead(&array, b_keep_keys) {
@@ -51,7 +51,7 @@ function remove_dead(&array, b_keep_keys) {
 }
 
 // Namespace array/array_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x239bfd92, Offset: 0x2b0
 // Size: 0x42
 function filter_classname(&array, b_keep_keys, str_classname) {
@@ -86,7 +86,7 @@ function get_touching(a_ents, e_volume) {
 }
 
 // Namespace array/array_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x52b36cb3, Offset: 0x448
 // Size: 0xda
 function remove_index(array, index, b_keep_keys) {
@@ -105,7 +105,7 @@ function remove_index(array, index, b_keep_keys) {
 }
 
 // Namespace array/array_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1064d1ac, Offset: 0x530
 // Size: 0xf0
 function delete_all(&array) {
@@ -137,7 +137,7 @@ function notify_all(&array, str_notify) {
 }
 
 // Namespace array/array_shared
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xdfc5d02b, Offset: 0x6b0
 // Size: 0x164
 function thread_all(&entities, func, arg1, arg2, arg3, arg4, arg5, arg6) {
@@ -153,7 +153,7 @@ function thread_all(&entities, func, arg1, arg2, arg3, arg4, arg5, arg6) {
 }
 
 // Namespace array/array_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x13adb818, Offset: 0x820
 // Size: 0x154
 function thread_all_ents(&entities, func, arg1, arg2, arg3, arg4, arg5) {
@@ -169,7 +169,7 @@ function thread_all_ents(&entities, func, arg1, arg2, arg3, arg4, arg5) {
 }
 
 // Namespace array/array_shared
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x90d8e743, Offset: 0x980
 // Size: 0x164
 function run_all(&entities, func, arg1, arg2, arg3, arg4, arg5, arg6) {
@@ -185,7 +185,7 @@ function run_all(&entities, func, arg1, arg2, arg3, arg4, arg5, arg6) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x939cac6, Offset: 0xaf0
 // Size: 0xd8
 function exclude(array, array_exclude) {
@@ -201,7 +201,7 @@ function exclude(array, array_exclude) {
 }
 
 // Namespace array/array_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x4f95c0de, Offset: 0xbd0
 // Size: 0x6c
 function add(&array, item, allow_dupes = 1) {
@@ -213,7 +213,7 @@ function add(&array, item, allow_dupes = 1) {
 }
 
 // Namespace array/array_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xd7082f47, Offset: 0xc48
 // Size: 0x132
 function add_sorted(&array, item, allow_dupes = 1, func_compare, var_e19f0739 = 0) {
@@ -230,7 +230,7 @@ function add_sorted(&array, item, allow_dupes = 1, func_compare, var_e19f0739 = 
 }
 
 // Namespace array/array_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xeac8226f, Offset: 0xd88
 // Size: 0x154
 function wait_till(&array, notifies, n_timeout) {
@@ -276,7 +276,7 @@ function wait_till_match(&array, str_notify, str_match, n_timeout) {
 }
 
 // Namespace array/array_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x70053971, Offset: 0x1088
 // Size: 0x54
 function _waitlogic_match(s_tracker, str_notify, str_match) {
@@ -286,7 +286,7 @@ function _waitlogic_match(s_tracker, str_notify, str_match) {
 }
 
 // Namespace array/array_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1f3fa023, Offset: 0x10e8
 // Size: 0x34
 function _waitlogic_death(s_tracker) {
@@ -295,7 +295,7 @@ function _waitlogic_death(s_tracker) {
 }
 
 // Namespace array/array_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbe6dac65, Offset: 0x1128
 // Size: 0x40
 function update_waitlogic_tracker(s_tracker) {
@@ -384,7 +384,7 @@ function flag_wait_clear(&array, str_flag) {
 }
 
 // Namespace array/array_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xfc080866, Offset: 0x1510
 // Size: 0xf6
 function flagsys_wait_clear(&array, str_flag, n_timeout) {
@@ -403,7 +403,7 @@ function flagsys_wait_clear(&array, str_flag, n_timeout) {
 }
 
 // Namespace array/array_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x508b2ee9, Offset: 0x1610
 // Size: 0x154
 function wait_any(array, msg, n_timeout) {
@@ -423,7 +423,7 @@ function wait_any(array, msg, n_timeout) {
 }
 
 // Namespace array/array_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x4d81a85d, Offset: 0x1770
 // Size: 0x80
 function _waitlogic2(s_tracker, ent, msg) {
@@ -450,7 +450,7 @@ function flag_wait_any(array, str_flag) {
 }
 
 // Namespace array/array_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8382772b, Offset: 0x18c8
 // Size: 0x58
 function random(array) {
@@ -461,7 +461,7 @@ function random(array) {
 }
 
 // Namespace array/array_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf367dc79, Offset: 0x1928
 // Size: 0x90
 function randomize(array) {
@@ -475,7 +475,7 @@ function randomize(array) {
 }
 
 // Namespace array/array_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc741a087, Offset: 0x19c0
 // Size: 0x64
 function reverse(array) {
@@ -493,8 +493,10 @@ function reverse(array) {
 function slice(&array, var_12692bcf = 0, var_d88b3814 = 2147483647, n_increment = 1) {
     var_d88b3814 = min(var_d88b3814, array.size - 1);
     a_ret = [];
-    for (i = var_12692bcf; i <= var_d88b3814; i += n_increment) {
+    i = var_12692bcf;
+    while (i <= var_d88b3814) {
         a_ret[a_ret.size] = array[i];
+        i += n_increment;
     }
     return a_ret;
 }
@@ -514,7 +516,7 @@ function remove_keys(array) {
 }
 
 // Namespace array/array_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xddb14f09, Offset: 0x1ba8
 // Size: 0xa8
 function swap(&array, index1, index2) {
@@ -526,7 +528,7 @@ function swap(&array, index1, index2) {
 }
 
 // Namespace array/array_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x8e423a42, Offset: 0x1c58
 // Size: 0xa2
 function pop(&array, index, b_keep_keys = 1) {
@@ -543,7 +545,7 @@ function pop(&array, index, b_keep_keys = 1) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa1b5b90, Offset: 0x1d08
 // Size: 0x62
 function pop_front(&array, b_keep_keys = 1) {
@@ -552,7 +554,7 @@ function pop_front(&array, b_keep_keys = 1) {
 }
 
 // Namespace array/array_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x4da63223, Offset: 0x1d78
 // Size: 0x54
 function push(&array, val, index = array.size + 1) {
@@ -568,7 +570,7 @@ function push_front(&array, val) {
 }
 
 // Namespace array/array_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x30964933, Offset: 0x1e18
 // Size: 0x9c
 function replace(array, value, replacement) {
@@ -581,7 +583,7 @@ function replace(array, value, replacement) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xab2a24e, Offset: 0x1ec0
 // Size: 0x1e
 function private function_80fe1cb6(a, b) {
@@ -589,7 +591,7 @@ function private function_80fe1cb6(a, b) {
 }
 
 // Namespace array/array_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa1e67d4c, Offset: 0x1ee8
 // Size: 0x7c
 function find(&array, ent, func_compare = &function_80fe1cb6) {
@@ -653,7 +655,7 @@ function alphabetize(&array) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xad92b592, Offset: 0x2180
 // Size: 0x42
 function sort_by_value(&array, b_lowest_first = 0) {
@@ -669,7 +671,7 @@ function sort_by_script_int(&a_ents, b_lowest_first = 0) {
 }
 
 // Namespace array/array_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x19a0e515, Offset: 0x2220
 // Size: 0x1ba
 function merge_sort(&current_list, func_sort, param) {
@@ -703,7 +705,7 @@ function merge_sort(&current_list, func_sort, param) {
 }
 
 // Namespace array/array_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xe1e9013e, Offset: 0x23e8
 // Size: 0x17e
 function merge(left, right, func_sort, param) {
@@ -735,7 +737,7 @@ function merge(left, right, func_sort, param) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7d374cd4, Offset: 0x2570
 // Size: 0x196
 function bubble_sort(&array, sort_func) {
@@ -799,7 +801,7 @@ function wait_till_touching(&a_ents, e_volume) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc011e840, Offset: 0x28f8
 // Size: 0x92
 function is_touching(&a_ents, e_volume) {
@@ -812,7 +814,7 @@ function is_touching(&a_ents, e_volume) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd0b9c1ad, Offset: 0x2998
 // Size: 0xae
 function contains(array_or_val, value) {
@@ -828,7 +830,7 @@ function contains(array_or_val, value) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc51ab170, Offset: 0x2a50
 // Size: 0xde
 function function_460f3c24(array1, array2) {
@@ -847,7 +849,7 @@ function function_460f3c24(array1, array2) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x84d34495, Offset: 0x2b38
 // Size: 0x60
 function quick_sort(&array, compare_func) {
@@ -857,7 +859,7 @@ function quick_sort(&array, compare_func) {
 }
 
 // Namespace array/array_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x226db47b, Offset: 0x2ba0
 // Size: 0x14c
 function quick_sort_mid(&array, start, end, compare_func) {
@@ -882,7 +884,7 @@ function quick_sort_mid(&array, start, end, compare_func) {
 }
 
 // Namespace array/array_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x9467495d, Offset: 0x2cf8
 // Size: 0x50
 function _compare_value(val1, val2, b_lowest_first = 1) {
@@ -901,7 +903,7 @@ function function_5b554cb6(val1, val2) {
 }
 
 // Namespace array/array_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x23f891f4, Offset: 0x2d78
 // Size: 0x6e
 function _compare_script_int(e1, e2, b_lowest_first = 1) {
@@ -928,7 +930,7 @@ function _filter_dead(val) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd9969207, Offset: 0x2e38
 // Size: 0x44
 function _filter_classname(val, arg) {
@@ -936,7 +938,7 @@ function _filter_classname(val, arg) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4847eba3, Offset: 0x2e88
 // Size: 0x46
 function function_e01a747e(val, arg) {

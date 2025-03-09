@@ -6,7 +6,7 @@
     "type": "itemspawnentry",
     "hintstring": "#hash_29cb4e88079890ea",
     "angleoffsetz": 90,
-    "var_6b5d0aaa": 1,
+    "hash_6b5d0aaa": 1,
     "name": "resource_item_loot_locker_key",
     "displayname": "#hash_29cb4e88079890ea",
     "stashicon": "#hash_63945ff9f02670f2",

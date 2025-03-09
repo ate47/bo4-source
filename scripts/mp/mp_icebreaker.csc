@@ -30,7 +30,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_icebreaker/mp_icebreaker
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x966f973a, Offset: 0x2c8
 // Size: 0xf2
 function dom_flag_base_fx_override(flag, team) {
@@ -60,7 +60,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_icebreaker/mp_icebreaker
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xce185b62, Offset: 0x3c8
 // Size: 0xf2
 function dom_flag_cap_fx_override(flag, team) {

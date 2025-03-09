@@ -4,7 +4,7 @@
 #namespace ability_util;
 
 // Namespace ability_util/ability_util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x644e615e, Offset: 0x90
 // Size: 0x58
 function gadget_is_type(slot, type) {
@@ -15,7 +15,7 @@ function gadget_is_type(slot, type) {
 }
 
 // Namespace ability_util/ability_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x49e5a1d2, Offset: 0xf0
 // Size: 0x6e
 function gadget_slot_for_type(type) {
@@ -30,7 +30,7 @@ function gadget_slot_for_type(type) {
 }
 
 // Namespace ability_util/ability_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3f9bbd70, Offset: 0x168
 // Size: 0x1a
 function gadget_combat_efficiency_enabled() {
@@ -41,7 +41,7 @@ function gadget_combat_efficiency_enabled() {
 }
 
 // Namespace ability_util/ability_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1b8df94a, Offset: 0x190
 // Size: 0xb2
 function function_43cda488() {
@@ -78,7 +78,7 @@ function function_f71ec759(&suppliers, var_5ce08260) {
 }
 
 // Namespace ability_util/ability_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcab9dbae, Offset: 0x358
 // Size: 0x8c
 function gadget_combat_efficiency_power_drain(score) {
@@ -139,7 +139,7 @@ function gadget_power_reset(gadgetweapon) {
 }
 
 // Namespace ability_util/ability_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x835630b1, Offset: 0x610
 // Size: 0xd6
 function gadget_power_full(gadgetweapon) {
@@ -158,7 +158,7 @@ function gadget_power_full(gadgetweapon) {
 }
 
 // Namespace ability_util/ability_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1fe95b, Offset: 0x6f0
 // Size: 0xae
 function function_1a38f0b0(gadgetweapon) {
@@ -175,7 +175,7 @@ function function_1a38f0b0(gadgetweapon) {
 }
 
 // Namespace ability_util/ability_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc7ab4dfe, Offset: 0x7a8
 // Size: 0xe6
 function function_e8aa75b8(gadgetweapon) {
@@ -281,7 +281,7 @@ function function_791aef0d() {
 }
 
 // Namespace ability_util/ability_util
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x5852e3c6, Offset: 0xbf8
 // Size: 0x6d4
 function gadget_reset(gadgetweapon, changedclass, roundbased, firstround, changedspecialist) {
@@ -336,7 +336,7 @@ function gadget_reset(gadgetweapon, changedclass, roundbased, firstround, change
 }
 
 // Namespace ability_util/ability_util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x97236c59, Offset: 0x12d8
 // Size: 0x1a
 function gadget_power_armor_on() {
@@ -344,7 +344,7 @@ function gadget_power_armor_on() {
 }
 
 // Namespace ability_util/ability_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x883dff4e, Offset: 0x1300
 // Size: 0x6e
 function gadget_is_active(gadgettype) {
@@ -447,7 +447,7 @@ function aoe_trace_entity(entity, origin, trace_z_offset) {
 }
 
 // Namespace ability_util/ability_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x24620649, Offset: 0x1820
 // Size: 0x4a
 function is_hero_weapon(gadgetweapon) {

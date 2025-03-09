@@ -4,14 +4,14 @@
     "value2": "1",
     "value3": "2",
     "value1": "0",
-    "var_dfed6968": "3",
+    "value4": "3",
     "type": "gamesettings",
     "name": "zm_elixirshieldsup",
     "displayname": "#hash_65ac41c57b82a941",
-    "var_684ccd4c": "#hash_1f0968aad9d63087",
+    "label4": "#hash_1f0968aad9d63087",
     "label1": "#hash_68b65fb510ccd214",
-    "var_71b6e020": "#hash_68b65fb510ccd214",
+    "label3": "#hash_68b65fb510ccd214",
     "label2": "#hash_1ac823ffd3e68662",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "zmElixirShieldsUp"
 }

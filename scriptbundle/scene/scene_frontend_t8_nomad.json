@@ -261,9 +261,9 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 3",
-            "var_be60a82b": 44,
-            "var_922b4fc5": -104,
-            "var_3e692842": 49
+            "hash_be60a82b": 44,
+            "hash_922b4fc5": -104,
+            "hash_3e692842": 49
         },
         {
             "shots": [
@@ -308,12 +308,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 4",
-            "var_16999a5d": 2,
-            "var_29563fd6": 22,
-            "var_eb00c330": 36,
-            "var_be60a82b": 24,
-            "var_922b4fc5": -101,
-            "var_3e692842": 73
+            "hash_16999a5d": 2,
+            "hash_29563fd6": 22,
+            "hash_eb00c330": 36,
+            "hash_be60a82b": 24,
+            "hash_922b4fc5": -101,
+            "hash_3e692842": 73
         },
         {
             "shots": [
@@ -358,12 +358,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 5",
-            "var_16999a5d": 22,
-            "var_29563fd6": -12,
-            "var_eb00c330": 14,
-            "var_be60a82b": 18,
-            "var_922b4fc5": -62,
-            "var_3e692842": 86
+            "hash_16999a5d": 22,
+            "hash_29563fd6": -12,
+            "hash_eb00c330": 14,
+            "hash_be60a82b": 18,
+            "hash_922b4fc5": -62,
+            "hash_3e692842": 86
         },
         {
             "shots": [
@@ -408,12 +408,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 6",
-            "var_16999a5d": 10,
-            "var_29563fd6": -38,
-            "var_eb00c330": -19,
-            "var_be60a82b": -2,
-            "var_922b4fc5": -46,
-            "var_3e692842": 121
+            "hash_16999a5d": 10,
+            "hash_29563fd6": -38,
+            "hash_eb00c330": -19,
+            "hash_be60a82b": -2,
+            "hash_922b4fc5": -46,
+            "hash_3e692842": 121
         },
         {
             "shots": [
@@ -458,12 +458,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 9",
-            "var_16999a5d": -7,
-            "var_29563fd6": -42,
-            "var_eb00c330": -18,
-            "var_be60a82b": 25,
-            "var_922b4fc5": -73,
-            "var_3e692842": -36
+            "hash_16999a5d": -7,
+            "hash_29563fd6": -42,
+            "hash_eb00c330": -18,
+            "hash_be60a82b": 25,
+            "hash_922b4fc5": -73,
+            "hash_3e692842": -36
         },
         {
             "shots": [
@@ -508,12 +508,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 10",
-            "var_16999a5d": -1,
-            "var_29563fd6": -44,
-            "var_eb00c330": 3,
-            "var_be60a82b": 38,
-            "var_922b4fc5": -104,
-            "var_3e692842": -20
+            "hash_16999a5d": -1,
+            "hash_29563fd6": -44,
+            "hash_eb00c330": 3,
+            "hash_be60a82b": 38,
+            "hash_922b4fc5": -104,
+            "hash_3e692842": -20
         },
         {
             "shots": [
@@ -558,12 +558,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 11",
-            "var_16999a5d": -12,
-            "var_29563fd6": -29,
-            "var_eb00c330": 15,
-            "var_be60a82b": 39,
-            "var_922b4fc5": -150,
-            "var_3e692842": 19
+            "hash_16999a5d": -12,
+            "hash_29563fd6": -29,
+            "hash_eb00c330": 15,
+            "hash_be60a82b": 39,
+            "hash_922b4fc5": -150,
+            "hash_3e692842": 19
         },
         {
             "shots": [
@@ -608,12 +608,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 13",
-            "var_16999a5d": -3,
-            "var_29563fd6": -8,
-            "var_eb00c330": -16,
-            "var_be60a82b": 20,
-            "var_922b4fc5": -300,
-            "var_3e692842": 207
+            "hash_16999a5d": -3,
+            "hash_29563fd6": -8,
+            "hash_eb00c330": -16,
+            "hash_be60a82b": 20,
+            "hash_922b4fc5": -300,
+            "hash_3e692842": 207
         },
         {
             "shots": [
@@ -658,12 +658,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 14",
-            "var_16999a5d": -1,
-            "var_29563fd6": -44,
-            "var_eb00c330": 3,
-            "var_be60a82b": 24,
-            "var_922b4fc5": -94,
-            "var_3e692842": 121
+            "hash_16999a5d": -1,
+            "hash_29563fd6": -44,
+            "hash_eb00c330": 3,
+            "hash_be60a82b": 24,
+            "hash_922b4fc5": -94,
+            "hash_3e692842": 121
         },
         {
             "shots": [
@@ -708,12 +708,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 7",
-            "var_16999a5d": 20,
-            "var_29563fd6": 59,
-            "var_eb00c330": -23,
-            "var_be60a82b": -10,
-            "var_922b4fc5": 33,
-            "var_3e692842": -49
+            "hash_16999a5d": 20,
+            "hash_29563fd6": 59,
+            "hash_eb00c330": -23,
+            "hash_be60a82b": -10,
+            "hash_922b4fc5": 33,
+            "hash_3e692842": -49
         },
         {
             "shots": [
@@ -758,12 +758,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 8",
-            "var_16999a5d": -9,
-            "var_29563fd6": 102,
-            "var_eb00c330": -7,
-            "var_be60a82b": 98,
-            "var_922b4fc5": -253,
-            "var_3e692842": -350
+            "hash_16999a5d": -9,
+            "hash_29563fd6": 102,
+            "hash_eb00c330": -7,
+            "hash_be60a82b": 98,
+            "hash_922b4fc5": -253,
+            "hash_3e692842": -350
         },
         {
             "shots": [
@@ -808,12 +808,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 12",
-            "var_16999a5d": -12,
-            "var_29563fd6": -44,
-            "var_eb00c330": -26,
-            "var_be60a82b": 40,
-            "var_922b4fc5": -116,
-            "var_3e692842": 17
+            "hash_16999a5d": -12,
+            "hash_29563fd6": -44,
+            "hash_eb00c330": -26,
+            "hash_be60a82b": 40,
+            "hash_922b4fc5": -116,
+            "hash_3e692842": 17
         },
         {
             "shots": [
@@ -858,11 +858,11 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 15",
-            "var_16999a5d": -17,
-            "var_29563fd6": -44,
-            "var_be60a82b": 40,
-            "var_922b4fc5": -97,
-            "var_3e692842": -161
+            "hash_16999a5d": -17,
+            "hash_29563fd6": -44,
+            "hash_be60a82b": 40,
+            "hash_922b4fc5": -97,
+            "hash_3e692842": -161
         },
         {
             "shots": [
@@ -907,11 +907,11 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 16",
-            "var_16999a5d": -17,
-            "var_29563fd6": -44,
-            "var_be60a82b": 43,
-            "var_922b4fc5": -111,
-            "var_3e692842": -88
+            "hash_16999a5d": -17,
+            "hash_29563fd6": -44,
+            "hash_be60a82b": 43,
+            "hash_922b4fc5": -111,
+            "hash_3e692842": -88
         },
         {
             "shots": [
@@ -956,11 +956,11 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 17",
-            "var_16999a5d": -25,
-            "var_29563fd6": -44,
-            "var_be60a82b": 27,
-            "var_922b4fc5": 125,
-            "var_3e692842": -106
+            "hash_16999a5d": -25,
+            "hash_29563fd6": -44,
+            "hash_be60a82b": 27,
+            "hash_922b4fc5": 125,
+            "hash_3e692842": -106
         },
         {
             "shots": [
@@ -1005,12 +1005,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 18",
-            "var_16999a5d": -38,
-            "var_29563fd6": -44,
-            "var_eb00c330": -9,
-            "var_be60a82b": 32,
-            "var_922b4fc5": 25,
-            "var_3e692842": -150
+            "hash_16999a5d": -38,
+            "hash_29563fd6": -44,
+            "hash_eb00c330": -9,
+            "hash_be60a82b": 32,
+            "hash_922b4fc5": 25,
+            "hash_3e692842": -150
         },
         {
             "shots": [
@@ -1055,12 +1055,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 19",
-            "var_16999a5d": -25,
-            "var_29563fd6": -44,
-            "var_eb00c330": -17,
-            "var_be60a82b": 39,
-            "var_922b4fc5": -7,
-            "var_3e692842": -191
+            "hash_16999a5d": -25,
+            "hash_29563fd6": -44,
+            "hash_eb00c330": -17,
+            "hash_be60a82b": 39,
+            "hash_922b4fc5": -7,
+            "hash_3e692842": -191
         },
         {
             "shots": [
@@ -1105,12 +1105,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 20",
-            "var_16999a5d": -25,
-            "var_29563fd6": -44,
-            "var_eb00c330": -17,
-            "var_be60a82b": 29,
-            "var_922b4fc5": 89,
-            "var_3e692842": -139
+            "hash_16999a5d": -25,
+            "hash_29563fd6": -44,
+            "hash_eb00c330": -17,
+            "hash_be60a82b": 29,
+            "hash_922b4fc5": 89,
+            "hash_3e692842": -139
         },
         {
             "shots": [
@@ -1155,12 +1155,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 21",
-            "var_16999a5d": 10,
-            "var_29563fd6": -38,
-            "var_eb00c330": -19,
-            "var_be60a82b": 3,
-            "var_922b4fc5": -108,
-            "var_3e692842": 117
+            "hash_16999a5d": 10,
+            "hash_29563fd6": -38,
+            "hash_eb00c330": -19,
+            "hash_be60a82b": 3,
+            "hash_922b4fc5": -108,
+            "hash_3e692842": 117
         },
         {
             "shots": [
@@ -1205,12 +1205,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 22",
-            "var_16999a5d": 10,
-            "var_29563fd6": -38,
-            "var_eb00c330": -19,
-            "var_be60a82b": -2,
-            "var_922b4fc5": -46,
-            "var_3e692842": 121
+            "hash_16999a5d": 10,
+            "hash_29563fd6": -38,
+            "hash_eb00c330": -19,
+            "hash_be60a82b": -2,
+            "hash_922b4fc5": -46,
+            "hash_3e692842": 121
         },
         {
             "shots": [
@@ -1255,12 +1255,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 23",
-            "var_16999a5d": 10,
-            "var_29563fd6": -38,
-            "var_eb00c330": -19,
-            "var_be60a82b": 33,
-            "var_922b4fc5": -83,
-            "var_3e692842": 10
+            "hash_16999a5d": 10,
+            "hash_29563fd6": -38,
+            "hash_eb00c330": -19,
+            "hash_be60a82b": 33,
+            "hash_922b4fc5": -83,
+            "hash_3e692842": 10
         },
         {
             "shots": [
@@ -1305,11 +1305,11 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 24",
-            "var_29563fd6": -8,
-            "var_eb00c330": -1,
-            "var_be60a82b": 11,
-            "var_922b4fc5": 250,
-            "var_3e692842": -300
+            "hash_29563fd6": -8,
+            "hash_eb00c330": -1,
+            "hash_be60a82b": 11,
+            "hash_922b4fc5": 250,
+            "hash_3e692842": -300
         },
         {
             "shots": [
@@ -1354,11 +1354,11 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 25",
-            "var_16999a5d": -8,
-            "var_29563fd6": -85,
-            "var_be60a82b": 19,
-            "var_922b4fc5": 80,
-            "var_3e692842": -90
+            "hash_16999a5d": -8,
+            "hash_29563fd6": -85,
+            "hash_be60a82b": 19,
+            "hash_922b4fc5": 80,
+            "hash_3e692842": -90
         },
         {
             "shots": [
@@ -1403,12 +1403,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 26",
-            "var_16999a5d": -23,
-            "var_29563fd6": -38,
-            "var_eb00c330": -19,
-            "var_be60a82b": 9,
-            "var_922b4fc5": -80,
-            "var_3e692842": 17
+            "hash_16999a5d": -23,
+            "hash_29563fd6": -38,
+            "hash_eb00c330": -19,
+            "hash_be60a82b": 9,
+            "hash_922b4fc5": -80,
+            "hash_3e692842": 17
         },
         {
             "shots": [
@@ -1453,12 +1453,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 27",
-            "var_16999a5d": -23,
-            "var_29563fd6": -38,
-            "var_eb00c330": -19,
-            "var_be60a82b": 9,
-            "var_922b4fc5": -76,
-            "var_3e692842": -32
+            "hash_16999a5d": -23,
+            "hash_29563fd6": -38,
+            "hash_eb00c330": -19,
+            "hash_be60a82b": 9,
+            "hash_922b4fc5": -76,
+            "hash_3e692842": -32
         },
         {
             "shots": [
@@ -1503,12 +1503,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 28",
-            "var_16999a5d": -23,
-            "var_29563fd6": -38,
-            "var_eb00c330": -19,
-            "var_be60a82b": 15,
-            "var_922b4fc5": -101,
-            "var_3e692842": 38
+            "hash_16999a5d": -23,
+            "hash_29563fd6": -38,
+            "hash_eb00c330": -19,
+            "hash_be60a82b": 15,
+            "hash_922b4fc5": -101,
+            "hash_3e692842": 38
         },
         {
             "shots": [
@@ -1553,12 +1553,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 29",
-            "var_16999a5d": 24,
-            "var_29563fd6": -38,
-            "var_eb00c330": -17,
-            "var_be60a82b": 33,
-            "var_922b4fc5": -100,
-            "var_3e692842": -113
+            "hash_16999a5d": 24,
+            "hash_29563fd6": -38,
+            "hash_eb00c330": -17,
+            "hash_be60a82b": 33,
+            "hash_922b4fc5": -100,
+            "hash_3e692842": -113
         },
         {
             "shots": [
@@ -1603,12 +1603,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 30",
-            "var_16999a5d": 24,
-            "var_29563fd6": -38,
-            "var_eb00c330": -17,
-            "var_be60a82b": 33,
-            "var_922b4fc5": -78,
-            "var_3e692842": -161
+            "hash_16999a5d": 24,
+            "hash_29563fd6": -38,
+            "hash_eb00c330": -17,
+            "hash_be60a82b": 33,
+            "hash_922b4fc5": -78,
+            "hash_3e692842": -161
         },
         {
             "shots": [
@@ -1653,12 +1653,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 31",
-            "var_16999a5d": 24,
-            "var_29563fd6": -38,
-            "var_eb00c330": -17,
-            "var_be60a82b": -8,
-            "var_922b4fc5": -52,
-            "var_3e692842": 81
+            "hash_16999a5d": 24,
+            "hash_29563fd6": -38,
+            "hash_eb00c330": -17,
+            "hash_be60a82b": -8,
+            "hash_922b4fc5": -52,
+            "hash_3e692842": 81
         },
         {
             "shots": [
@@ -1703,12 +1703,12 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 32",
-            "var_16999a5d": 24,
-            "var_29563fd6": -38,
-            "var_eb00c330": -17,
-            "var_be60a82b": -8,
-            "var_922b4fc5": -52,
-            "var_3e692842": 81
+            "hash_16999a5d": 24,
+            "hash_29563fd6": -38,
+            "hash_eb00c330": -17,
+            "hash_be60a82b": -8,
+            "hash_922b4fc5": -52,
+            "hash_3e692842": 81
         }
     ],
     "scenetype": "scene",

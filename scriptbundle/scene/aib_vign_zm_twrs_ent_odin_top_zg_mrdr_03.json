@@ -15,7 +15,7 @@
             "firstframe": 1,
             "model": "#spawner_zm_gladiator_marauder",
             "type": "actor",
-            "var_d318cc2c": 1,
+            "hash_d318cc2c": 1,
             "name": "prop 1",
             "attackme": 1,
             "allowdeath": 1,

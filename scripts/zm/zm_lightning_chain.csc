@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace lightning_chain/zm_lightning_chain
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6d91d929, Offset: 0x178
 // Size: 0x124
 function init() {
@@ -26,7 +26,7 @@ function init() {
 }
 
 // Namespace lightning_chain/zm_lightning_chain
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe583984e, Offset: 0x2a8
 // Size: 0x1ce
 function lc_shock_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -61,7 +61,7 @@ function lc_shock_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 }
 
 // Namespace lightning_chain/zm_lightning_chain
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x40aec4e6, Offset: 0x480
 // Size: 0x16c
 function lc_play_death_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

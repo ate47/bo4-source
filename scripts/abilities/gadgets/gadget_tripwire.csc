@@ -308,7 +308,7 @@ function update_previs(localclientnum) {
     up = anglestoup(facing_angles);
     velocity = function_711c258(forward, up, level.tripwireweapon);
     eye_pos = getlocalclienteyepos(localclientnum);
-    trace1 = function_e6ba3ec9(eye_pos, velocity, 0, level.tripwireweapon, level.var_41427f32);
+    trace1 = projectiletrace(eye_pos, velocity, 0, level.tripwireweapon, level.var_41427f32);
     level.tripwire.localclients[localclientnum].model.origin = trace1[#"position"];
     level.tripwire.localclients[localclientnum].model.angles = (angleclamp180(vectortoangles(trace1[#"normal"])[0] + 90), vectortoangles(trace1[#"normal"])[1], 0);
     level.tripwire.localclients[localclientnum].model.hitent = trace1[#"entity"];

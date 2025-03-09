@@ -91,7 +91,7 @@ function private function_1e845317() {
     if (self isinvehicle()) {
         return false;
     }
-    if (!function_3238d10d(self.origin)) {
+    if (!validateorigin(self.origin)) {
         return false;
     }
     return true;

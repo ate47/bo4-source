@@ -35,7 +35,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_urban/mp_urban
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x3a0
 // Size: 0x4
 function precache() {
@@ -43,7 +43,7 @@ function precache() {
 }
 
 // Namespace mp_urban/mp_urban
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf26a307, Offset: 0x3b0
 // Size: 0x54
 function spawnkilltrigger() {
@@ -52,7 +52,7 @@ function spawnkilltrigger() {
 }
 
 // Namespace mp_urban/mp_urban
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2d5bf2ad, Offset: 0x410
 // Size: 0xa8
 function watchkilltrigger() {
@@ -65,7 +65,7 @@ function watchkilltrigger() {
 }
 
 // Namespace mp_urban/mp_urban
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x84821b37, Offset: 0x4c0
 // Size: 0x1bc
 function on_game_playing() {
@@ -86,13 +86,13 @@ function on_game_playing() {
         }
         if (util::isfirstround()) {
             level thread scene::play(#"p8_fxanim_mp_urban_flyover_bundle");
-            level thread scene::play(#"hash_1da98e3e2894904d");
+            level thread scene::play(#"p8_fxanim_mp_urban_flyover_antenna_bundle");
         }
     }
 }
 
 // Namespace mp_urban/mp_urban
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x361219f5, Offset: 0x688
 // Size: 0x112
 function on_end_game() {
@@ -113,7 +113,7 @@ function on_end_game() {
 }
 
 // Namespace mp_urban/mp_urban
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb8bc790a, Offset: 0x7a8
 // Size: 0x14c
 function function_2cdcf5c3() {
@@ -126,13 +126,13 @@ function function_2cdcf5c3() {
             return;
         }
         level thread scene::skipto_end(#"p8_fxanim_mp_urban_flyover_bundle");
-        level thread scene::skipto_end(#"hash_1da98e3e2894904d");
+        level thread scene::skipto_end(#"p8_fxanim_mp_urban_flyover_antenna_bundle");
         level thread scene::play(#"p8_fxanim_mp_urban_remote_tank_walk_test_bundle", "Shot 2");
     }
 }
 
 // Namespace mp_urban/mp_urban
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc25dc022, Offset: 0x900
 // Size: 0x54
 function function_50059d86() {
@@ -141,7 +141,7 @@ function function_50059d86() {
 }
 
 // Namespace mp_urban/mp_urban
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3205441, Offset: 0x960
 // Size: 0xb0
 function function_d611b306() {
@@ -161,7 +161,7 @@ function function_d611b306() {
 }
 
 // Namespace mp_urban/mp_urban
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaf027eb, Offset: 0xa18
 // Size: 0x156
 function function_50dfa3c0() {
@@ -181,7 +181,7 @@ function function_50dfa3c0() {
 }
 
 // Namespace mp_urban/mp_urban
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7bd13073, Offset: 0xb78
 // Size: 0xae
 function function_c7fff230() {

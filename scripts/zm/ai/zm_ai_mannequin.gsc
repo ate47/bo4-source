@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_ai_mannequin/zm_ai_mannequin
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x49d19151, Offset: 0xd0
 // Size: 0x5c
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace zm_ai_mannequin/zm_ai_mannequin
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x138
 // Size: 0x4
 function __main__() {
@@ -32,11 +32,11 @@ function __main__() {
 }
 
 // Namespace zm_ai_mannequin/zm_ai_mannequin
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xd593bed8, Offset: 0x148
 // Size: 0x36
 function private function_c381536b() {
-    if (isdefined(self.var_9fde8624) && self.var_9fde8624 == #"mannequin") {
+    if (isdefined(self.subarchetype) && self.subarchetype == #"mannequin") {
         self.var_80d367d8 = 1;
     }
 }

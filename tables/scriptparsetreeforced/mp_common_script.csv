@@ -1,0 +1,11 @@
+vm,name
+server,#scripts/mp_common/ai/planner_mp_dom_squad.gsc
+server,#scripts/mp_common/ai/planner_mp_commander_utility.gsc
+server,#scripts/mp_common/ai/planner_mp_squad_utility.gsc
+server,#scripts/mp_common/ai/planner_mp_control_commander.gsc
+server,#scripts/mp_common/ai/planner_mp_control_squad.gsc
+server,#scripts/mp_common/ai/planner_mp_dom_commander.gsc
+server,#scripts/mp_common/ai/planner_mp_koth_squad.gsc
+server,#scripts/mp_common/ai/planner_mp_koth_commander.gsc
+server,#scripts/mp_common/ai/planner_mp_sd_squad.gsc
+server,#scripts/mp_common/ai/planner_mp_sd_commander.gsc

@@ -7,7 +7,7 @@
 #namespace teleport;
 
 // Namespace teleport/teleport_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x7185f304, Offset: 0xe8
 // Size: 0x320
 function team(kvp, var_dad37549, var_b095575e = 0) {
@@ -46,7 +46,7 @@ function team(kvp, var_dad37549, var_b095575e = 0) {
 }
 
 // Namespace teleport/teleport_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x8ada59ba, Offset: 0x410
 // Size: 0x178
 function player(e_player, kvp, var_dad37549, var_b095575e = 0) {
@@ -67,7 +67,7 @@ function player(e_player, kvp, var_dad37549, var_b095575e = 0) {
 }
 
 // Namespace teleport/teleport_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x265aaef1, Offset: 0x590
 // Size: 0x180
 function hero(ai_hero, kvp, var_dad37549) {
@@ -88,7 +88,7 @@ function hero(ai_hero, kvp, var_dad37549) {
 }
 
 // Namespace teleport/teleport_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfc61c87e, Offset: 0x718
 // Size: 0xb6
 function function_ff8a7a3(kvp) {
@@ -99,7 +99,7 @@ function function_ff8a7a3(kvp) {
 }
 
 // Namespace teleport/teleport_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x75988e72, Offset: 0x7d8
 // Size: 0x86
 function private function_1d2a3300() {
@@ -114,7 +114,7 @@ function private function_1d2a3300() {
 }
 
 // Namespace teleport/teleport_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x60d8b39f, Offset: 0x868
 // Size: 0x13c
 function private function_e6615993(kvp, var_dad37549) {
@@ -142,7 +142,7 @@ function private function_e6615993(kvp, var_dad37549) {
 }
 
 // Namespace teleport/teleport_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x6345b43, Offset: 0x9b0
 // Size: 0x2d4
 function private function_166effac(kvp, var_dad37549) {
@@ -188,7 +188,7 @@ function private function_166effac(kvp, var_dad37549) {
 }
 
 // Namespace teleport/teleport_shared
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x9df6f8d8, Offset: 0xc90
 // Size: 0x22e
 function private function_29305761(s_teleport, var_dad37549, var_b095575e = 0) {
@@ -225,7 +225,7 @@ function private function_29305761(s_teleport, var_dad37549, var_b095575e = 0) {
 }
 
 // Namespace teleport/teleport_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x41c9a797, Offset: 0xec8
 // Size: 0x116
 function function_df1911b9(s_teleport, var_dad37549) {

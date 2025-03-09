@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "allow_gestures_camera_rotate",
     "displayname": "#menu/gesture_camera",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "boastAllowCam",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "equipment_on_respawn",
     "displayname": "#hash_4942d8d68906cfe8",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "specialistEquipmentReadyOnRespawn_allies_1",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace mp_offshore_alt_player_rain/mp_offshore_alt_player_rain
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4386c6cd, Offset: 0x128
 // Size: 0x54
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace mp_offshore_alt_player_rain/mp_offshore_alt_player_rain
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x50245bfa, Offset: 0x188
 // Size: 0x14
 function __main__() {
@@ -31,7 +31,7 @@ function __main__() {
 }
 
 // Namespace mp_offshore_alt_player_rain/mp_offshore_alt_player_rain
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdbd08e11, Offset: 0x1a8
 // Size: 0x1c
 function on_game_playing() {
@@ -39,7 +39,7 @@ function on_game_playing() {
 }
 
 // Namespace mp_offshore_alt_player_rain/mp_offshore_alt_player_rain
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x12edd09, Offset: 0x1d0
 // Size: 0x2e
 function function_182d285c() {
@@ -47,7 +47,7 @@ function function_182d285c() {
 }
 
 // Namespace mp_offshore_alt_player_rain/mp_offshore_alt_player_rain
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1af1fca5, Offset: 0x208
 // Size: 0x14c
 function function_5d400be9() {
@@ -70,7 +70,7 @@ function function_5d400be9() {
 }
 
 // Namespace mp_offshore_alt_player_rain/mp_offshore_alt_player_rain
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcc78596d, Offset: 0x360
 // Size: 0x7c
 function function_4235c686(player) {
@@ -82,7 +82,7 @@ function function_4235c686(player) {
 }
 
 // Namespace mp_offshore_alt_player_rain/mp_offshore_alt_player_rain
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8902e8d7, Offset: 0x3e8
 // Size: 0x10c
 function function_325b468a(player) {

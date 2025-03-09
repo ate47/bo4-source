@@ -1,18 +1,18 @@
 {
     "descriptionimage": "#hash_2fb5b1a183f3796d",
     "description": "#hash_7b6642205daddee2",
-    "var_60fcfffa": "#hash_4f445f7612232efc",
-    "var_10e01ad5": 1,
-    "var_7d936886": 1,
-    "var_86a04811": 1,
-    "var_43a952c1": 0.1,
+    "hash_60fcfffa": "#hash_4f445f7612232efc",
+    "hash_10e01ad5": 1,
+    "hash_7d936886": 1,
+    "hash_86a04811": 1,
+    "hash_43a952c1": 0.1,
     "name": "pc_display_temperature",
     "displayname": "#hash_17afb4602c684872",
     "decimalplace": 0.01,
-    "var_66faec87": 2,
+    "hash_66faec87": 2,
     "statname": "com_show_gpu_temperature",
-    "var_82c732a7": 1,
+    "isenableddisabled": 1,
     "minvalue": 1,
-    "var_d4e288e": 1,
-    "var_b7401319": "#hash_26907a4c5e0f4d75"
+    "hash_d4e288e": 1,
+    "hash_b7401319": "#hash_26907a4c5e0f4d75"
 }

@@ -13,7 +13,7 @@
 #namespace namespace_a8113e97;
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcca9c678, Offset: 0x250
 // Size: 0x62a
 function init_clientfields() {
@@ -42,7 +42,7 @@ function init_clientfields() {
 }
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8a8ad572, Offset: 0x888
 // Size: 0x74
 function function_a0d4ae11(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -52,7 +52,7 @@ function function_a0d4ae11(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xba6d7409, Offset: 0x908
 // Size: 0x64
 function mansion_mq_rumble(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -62,7 +62,7 @@ function mansion_mq_rumble(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xac3f6516, Offset: 0x978
 // Size: 0x1b4
 function crystal_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -91,7 +91,7 @@ function crystal_fx(localclientnum, oldval, newval, bnewent, binitialsnap, field
 }
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3feca2d, Offset: 0xb38
 // Size: 0xee
 function function_6628d887(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -107,7 +107,7 @@ function function_6628d887(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc6980eb4, Offset: 0xc30
 // Size: 0x7c
 function function_dea9fad1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -117,7 +117,7 @@ function function_dea9fad1(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc07c3eb9, Offset: 0xcb8
 // Size: 0xdc
 function function_b75c6b4f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -132,7 +132,7 @@ function function_b75c6b4f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd80d7592, Offset: 0xda0
 // Size: 0x194
 function red_ray(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -156,7 +156,7 @@ function red_ray(localclientnum, oldval, newval, bnewent, binitialsnap, fieldnam
 }
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x43288d90, Offset: 0xf40
 // Size: 0x194
 function green_ray(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -180,7 +180,7 @@ function green_ray(localclientnum, oldval, newval, bnewent, binitialsnap, fieldn
 }
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5078cd4c, Offset: 0x10e0
 // Size: 0x194
 function blue_ray(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -204,7 +204,7 @@ function blue_ray(localclientnum, oldval, newval, bnewent, binitialsnap, fieldna
 }
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1beca2b6, Offset: 0x1280
 // Size: 0x312
 function ley_lines(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -243,7 +243,7 @@ function ley_lines(localclientnum, oldval, newval, bnewent, binitialsnap, fieldn
 }
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x58c5950b, Offset: 0x15a0
 // Size: 0x604
 function function_81f056fe(localclientnum, newval, var_db37a1f6) {
@@ -311,7 +311,7 @@ function function_81f056fe(localclientnum, newval, var_db37a1f6) {
 }
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xeb7bac6c, Offset: 0x1bb0
 // Size: 0x84
 function function_bca55d4e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -323,7 +323,7 @@ function function_bca55d4e(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa8005704, Offset: 0x1c40
 // Size: 0x206
 function power_beam(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -352,7 +352,7 @@ function power_beam(localclientnum, oldval, newval, bnewent, binitialsnap, field
 }
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb6b91e32, Offset: 0x1e50
 // Size: 0x1ec
 function function_bdecc239(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

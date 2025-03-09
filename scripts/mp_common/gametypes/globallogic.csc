@@ -227,7 +227,7 @@ function fireflykillcam(local_client_num, oldval, newval, bnewent, binitialsnap,
     if (function_1cbf351b(local_client_num)) {
         return;
     }
-    if (newval && !self function_6c32d092(local_client_num, #"talent_resistance")) {
+    if (newval && !self hastalent(local_client_num, #"talent_resistance")) {
         self function_36b630a3(0);
         return;
     }

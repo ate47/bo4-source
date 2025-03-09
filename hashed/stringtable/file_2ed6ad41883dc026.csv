@@ -1,0 +1,6 @@
+#bowie_knife_story_1,#,FALSE,3000,#bowie,#,0,FALSE,FALSE,FALSE,FALSE,FALSE,0,0,FALSE,FALSE,melee,FALSE,FALSE,0
+#cymbal_monkey,#,FALSE,250,#homunculus,#,250,FALSE,FALSE,TRUE,FALSE,FALSE,0,0,FALSE,FALSE,equipment,FALSE,FALSE,0
+#zhield_riot_dw,#,FALSE,1500,#shield,#,0,FALSE,FALSE,FALSE,FALSE,FALSE,0,0,FALSE,FALSE,shield,FALSE,FALSE,0
+#ww_freezegun_t8,#ww_freezegun_t8_upgraded,FALSE,500,#wonder,#,0,FALSE,FALSE,TRUE,FALSE,TRUE,1,0,FALSE,TRUE,special,FALSE,TRUE,0
+#ray_gun,#ray_gun_upgraded,FALSE,10000,#raygun,#,0,FALSE,FALSE,TRUE,FALSE,FALSE,0,0,FALSE,TRUE,special,FALSE,TRUE,0
+#ray_gun_mk2,#ray_gun_mk2_upgraded,FALSE,10000,#raygun,#,0,FALSE,FALSE,TRUE,FALSE,TRUE,1,0,FALSE,TRUE,special,FALSE,TRUE,0

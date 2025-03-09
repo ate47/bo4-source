@@ -110,7 +110,7 @@ function spawn_hawk(itemid) {
     if (trace[#"fraction"] < 1) {
         spawnpos = self.origin + (0, 0, 45);
     }
-    if (!function_3238d10d(spawnpos)) {
+    if (!validateorigin(spawnpos)) {
         self.hawk = undefined;
         return;
     }

@@ -7,7 +7,7 @@
 class czm_red_challenges_hud : cluielem {
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x75587eca, Offset: 0xa10
     // Size: 0x30
     function set_challengefailing(localclientnum, value) {
@@ -15,7 +15,7 @@ class czm_red_challenges_hud : cluielem {
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xcb869cf8, Offset: 0x9d8
     // Size: 0x30
     function set_rewardhidden(localclientnum, value) {
@@ -23,7 +23,7 @@ class czm_red_challenges_hud : cluielem {
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x20e0b5b4, Offset: 0x9a0
     // Size: 0x30
     function set_tributeavailable(localclientnum, value) {
@@ -31,7 +31,7 @@ class czm_red_challenges_hud : cluielem {
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x329e8760, Offset: 0x928
     // Size: 0x6c
     function increment_progress(localclientnum) {
@@ -41,7 +41,7 @@ class czm_red_challenges_hud : cluielem {
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xa29d17e0, Offset: 0x8f0
     // Size: 0x30
     function set_binlocation(localclientnum, value) {
@@ -49,7 +49,7 @@ class czm_red_challenges_hud : cluielem {
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xad417280, Offset: 0x8b8
     // Size: 0x30
     function set_bottomtext(localclientnum, value) {
@@ -57,7 +57,7 @@ class czm_red_challenges_hud : cluielem {
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x6ec53cab, Offset: 0x880
     // Size: 0x30
     function set_challengetext(localclientnum, value) {
@@ -65,7 +65,7 @@ class czm_red_challenges_hud : cluielem {
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xa6dfe837, Offset: 0x758
     // Size: 0x11c
     function set_state(localclientnum, state_name) {
@@ -89,7 +89,7 @@ class czm_red_challenges_hud : cluielem {
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x4d3404e4, Offset: 0x720
     // Size: 0x2c
     function open(localclientnum) {
@@ -97,7 +97,7 @@ class czm_red_challenges_hud : cluielem {
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x94fd5f54, Offset: 0x5f8
     // Size: 0x120
     function function_fa582112(localclientnum) {
@@ -113,7 +113,7 @@ class czm_red_challenges_hud : cluielem {
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xc5962bd7, Offset: 0x5c8
     // Size: 0x24
     function register_clientside(uid) {
@@ -121,7 +121,7 @@ class czm_red_challenges_hud : cluielem {
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
-    // Params 8, eflags: 0x1 linked
+    // Params 8, eflags: 0x0
     // Checksum 0x9efdb812, Offset: 0x420
     // Size: 0x19c
     function setup_clientfields(uid, var_be2ad4d, var_a7896263, var_4866daed, progresscallback, var_5d7491df, var_26df3d64, var_90359ec7) {
@@ -139,7 +139,7 @@ class czm_red_challenges_hud : cluielem {
 }
 
 // Namespace zm_red_challenges_hud/zm_red_challenges_hud
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x2b9f7578, Offset: 0x128
 // Size: 0x94
 function register(uid, var_be2ad4d, var_a7896263, var_4866daed, progresscallback, var_5d7491df, var_26df3d64, var_90359ec7) {

@@ -7,34 +7,34 @@
 // Method(s) 7 Total 14
 class czm_game_over : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace czm_game_over/zm_game_over
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x6b7ab323, Offset: 0x3f0
     // Size: 0x3c
     function set_rounds(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "rounds", value);
+        player clientfield::function_9bf78ef8(_uid, "rounds", value);
     }
 
     // Namespace czm_game_over/zm_game_over
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xdc920510, Offset: 0x328
     // Size: 0xbc
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(_uid, "_state", 0);
             return;
         }
         if (#"gatewayopened" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(_uid, "_state", 1);
             return;
         }
         assertmsg("<dev string:x38>");
     }
 
     // Namespace czm_game_over/zm_game_over
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xef2701e9, Offset: 0x2f8
     // Size: 0x24
     function close(player) {
@@ -42,7 +42,7 @@ class czm_game_over : cluielem {
     }
 
     // Namespace czm_game_over/zm_game_over
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x2c474e6d, Offset: 0x2a8
     // Size: 0x44
     function open(player, persistent = 0) {
@@ -50,7 +50,7 @@ class czm_game_over : cluielem {
     }
 
     // Namespace czm_game_over/zm_game_over
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x4c70e9af, Offset: 0x228
     // Size: 0x74
     function setup_clientfields(uid) {
@@ -62,7 +62,7 @@ class czm_game_over : cluielem {
 }
 
 // Namespace zm_game_over/zm_game_over
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8240444f, Offset: 0xd0
 // Size: 0x40
 function register(uid) {
@@ -72,7 +72,7 @@ function register(uid) {
 }
 
 // Namespace zm_game_over/zm_game_over
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5149b9b, Offset: 0x118
 // Size: 0x38
 function open(player, persistent = 0) {
@@ -80,7 +80,7 @@ function open(player, persistent = 0) {
 }
 
 // Namespace zm_game_over/zm_game_over
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdf8e2a55, Offset: 0x158
 // Size: 0x1c
 function close(player) {
@@ -88,7 +88,7 @@ function close(player) {
 }
 
 // Namespace zm_game_over/zm_game_over
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa507035b, Offset: 0x180
 // Size: 0x1a
 function is_open(player) {
@@ -104,7 +104,7 @@ function set_state(player, state_name) {
 }
 
 // Namespace zm_game_over/zm_game_over
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf8a9f347, Offset: 0x1d8
 // Size: 0x28
 function set_rounds(player, value) {

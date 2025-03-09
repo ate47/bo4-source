@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_disable_bgbs/zm_trial_disable_bgbs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb69c50b9, Offset: 0xd0
 // Size: 0x5c
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_disable_bgbs/zm_trial_disable_bgbs
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xdf601257, Offset: 0x138
 // Size: 0xc8
 function private on_begin() {
@@ -38,7 +38,7 @@ function private on_begin() {
 }
 
 // Namespace zm_trial_disable_bgbs/zm_trial_disable_bgbs
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x58f40ddb, Offset: 0x208
 // Size: 0xc0
 function private on_end(round_reset) {
@@ -50,7 +50,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_disable_bgbs/zm_trial_disable_bgbs
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x225d45fd, Offset: 0x2d0
 // Size: 0x32
 function is_active() {

@@ -170,14 +170,14 @@
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 12000,
+    "hash_7fb0967b": 12000,
     "type": "itemspawnlist",
     "lootlocker": 1,
-    "var_345eba59": 28,
-    "var_9b009839": 32,
+    "hash_345eba59": 28,
+    "hash_9b009839": 32,
     "name": "loot_locker_parent",
     "displayname": "#wz/blackjackstash",
-    "var_fde72c94": 100,
-    "var_dc91e192": 1,
+    "supplystashweight": 100,
+    "hash_dc91e192": 1,
     "supplystash": 1
 }

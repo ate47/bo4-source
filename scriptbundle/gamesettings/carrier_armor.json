@@ -4,14 +4,14 @@
     "value2": "100",
     "value3": "200",
     "value1": "0",
-    "var_dfed6968": "50",
+    "value4": "50",
     "type": "gamesettings",
     "name": "carrier_armor",
     "displayname": "#menu/carrier_armor",
-    "var_684ccd4c": "#menu/half",
+    "label4": "#menu/half",
     "label1": "#menu/disabled",
-    "var_71b6e020": "#menu/double",
+    "label3": "#menu/double",
     "label2": "#menu/normal",
-    "var_9de86f42": 4,
+    "optionscount": 4,
     "setting": "carrierArmor"
 }

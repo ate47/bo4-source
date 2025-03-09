@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace music/music_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd7a7a6ee, Offset: 0xd0
 // Size: 0x64
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace music/music_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6ecd3cf2, Offset: 0x140
 // Size: 0x64
 function musiccmdhandler(clientnum, state, oldstate) {

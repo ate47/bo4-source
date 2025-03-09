@@ -27,7 +27,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_silo/mp_silo
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xeef66a63, Offset: 0x360
 // Size: 0xf2
 function dom_flag_base_fx_override(flag, team) {
@@ -57,7 +57,7 @@ function dom_flag_base_fx_override(flag, team) {
 }
 
 // Namespace mp_silo/mp_silo
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc36bbf44, Offset: 0x460
 // Size: 0xf2
 function dom_flag_cap_fx_override(flag, team) {
@@ -87,7 +87,7 @@ function dom_flag_cap_fx_override(flag, team) {
 }
 
 // Namespace mp_silo/mp_silo
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x772dd0ba, Offset: 0x560
 // Size: 0x2c
 function on_localclient_connect(localclientnum) {
@@ -96,7 +96,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace mp_silo/mp_silo
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3e11ec86, Offset: 0x598
 // Size: 0x2c
 function on_gameplay_started(localclientnum) {
@@ -105,7 +105,7 @@ function on_gameplay_started(localclientnum) {
 }
 
 // Namespace mp_silo/mp_silo
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xaaa55240, Offset: 0x5d0
 // Size: 0xf8
 function helo_spawn_flavor_rope_pulse(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

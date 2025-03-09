@@ -16,10 +16,10 @@
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 1",
-            "var_29563fd6": 4.79904,
-            "var_be60a82b": 356,
-            "var_922b4fc5": -2244.01,
-            "var_3e692842": 786.335
+            "hash_29563fd6": 4.799042,
+            "hash_be60a82b": 356,
+            "hash_922b4fc5": -2244.014,
+            "hash_3e692842": 786.33466
         }
     ],
     "scenetype": "scene",

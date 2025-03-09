@@ -7,7 +7,7 @@
 #namespace gadget_radiation_field;
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x66a49a8f, Offset: 0x290
 // Size: 0x190
 function init_shared() {
@@ -25,7 +25,7 @@ function init_shared() {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf6c0d771, Offset: 0x428
 // Size: 0x436
 function self_destruct_start(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -97,7 +97,7 @@ function self_destruct_start(localclientnum, oldval, newval, bnewent, binitialsn
 #/
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x4079e529, Offset: 0x910
 // Size: 0x9c
 function function_e9e14905(localclientnum, sound, islocal) {
@@ -112,7 +112,7 @@ function function_e9e14905(localclientnum, sound, islocal) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x579e9d73, Offset: 0x9b8
 // Size: 0x216
 function self_destruct_end(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -145,7 +145,7 @@ function self_destruct_end(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf003d35b, Offset: 0xbd8
 // Size: 0x320
 function function_671d7ad5(localclientnum, attacker_entnum) {
@@ -191,7 +191,7 @@ function function_671d7ad5(localclientnum, attacker_entnum) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfe715f6c, Offset: 0xf00
 // Size: 0x1ec
 function function_be4b3e9a(localclientnum) {
@@ -223,7 +223,7 @@ function function_be4b3e9a(localclientnum) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9bdc044b, Offset: 0x10f8
 // Size: 0x6c
 function function_790443a8(localclientnum) {
@@ -233,7 +233,7 @@ function function_790443a8(localclientnum) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7e352cf7, Offset: 0x1170
 // Size: 0x84
 function function_ed4a5949() {
@@ -246,7 +246,7 @@ function function_ed4a5949() {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc16b8213, Offset: 0x1200
 // Size: 0x1d8
 function function_7bf69748(localclientnum) {
@@ -281,7 +281,7 @@ function function_7bf69748(localclientnum) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbd5598ab, Offset: 0x13e0
 // Size: 0x74
 function function_2e24ef27(owner) {
@@ -298,7 +298,7 @@ function function_2e24ef27(owner) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf5cf9206, Offset: 0x1460
 // Size: 0x374
 function function_a225797d(localclientnum, var_7e4d34a7, phase2) {
@@ -334,7 +334,7 @@ function function_a225797d(localclientnum, var_7e4d34a7, phase2) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x32384891, Offset: 0x17e0
 // Size: 0x5c
 function cleanup_fx(localclientnum, fx) {
@@ -345,7 +345,7 @@ function cleanup_fx(localclientnum, fx) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf64ec8fe, Offset: 0x1848
 // Size: 0x42c
 function function_e6cf396d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -405,7 +405,7 @@ function function_e6cf396d(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe2991021, Offset: 0x1c80
 // Size: 0x184
 function function_6a1db576(localclientnum, var_7e4d34a7, var_3880aff8) {
@@ -433,7 +433,7 @@ function function_6a1db576(localclientnum, var_7e4d34a7, var_3880aff8) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9f502171, Offset: 0x1e10
 // Size: 0x8c
 function function_3caac9e(localclientnum) {
@@ -446,7 +446,7 @@ function function_3caac9e(localclientnum) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6d8cb025, Offset: 0x1ea8
 // Size: 0x29e
 function function_95252d1f(localclientnum, var_7e4d34a7, script_mover) {

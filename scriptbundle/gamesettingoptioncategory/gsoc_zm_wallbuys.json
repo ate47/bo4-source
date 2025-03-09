@@ -1,8 +1,8 @@
 {
     "configstringfiletype": "scriptbundle",
-    "var_ce9b2d06": "gsol_zm_wallbuys",
+    "hash_ce9b2d06": "gsol_zm_wallbuys",
     "type": "gamesettingoptioncategory",
     "name": "gsoc_zm_wallbuys",
-    "var_dea17465": "#hash_40c3c9f045a1912d",
-    "var_608158f2": "#hash_5b2ed16b84370ce7"
+    "hash_dea17465": "#hash_40c3c9f045a1912d",
+    "hash_608158f2": "#hash_5b2ed16b84370ce7"
 }

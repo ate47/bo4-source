@@ -9,7 +9,7 @@
     "model": "#attach_t8_optic_reflex_world",
     "type": "itemspawnentry",
     "hintstring": "#hash_3b4f78132d7e832c",
-    "var_65b3a12": 1,
+    "hash_65b3a12": 1,
     "name": "reflex_wz_item",
     "displayname": "#hash_3b4f78132d7e832c",
     "icon": "#ui_icon_attachment_reflex",

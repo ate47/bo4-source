@@ -1,11 +1,11 @@
 {
-    "var_6a36c78c": "j_wrist_le",
-    "var_82aadb9b": "j_knee_le",
+    "hash_6a36c78c": "j_wrist_le",
+    "hash_82aadb9b": "j_knee_le",
     "dropoff": "#hash_782daa4ba7c20bcd",
     "contrails": "#hash_1b3dcabdc51e167c",
     "name": "dfxt_wraith",
     "icon": "loot_ui_icon_jumppacks_trail_wraith",
-    "var_ccb00fe4": "j_wrist_ri",
+    "hash_ccb00fe4": "j_wrist_ri",
     "body_trail_3p": "#hash_41625edfe255d6e5",
     "largeicon": "loot_ui_icon_jumppacks_trail_wraith_large",
     "body_trail": "#hash_41696adfe25c09f7"

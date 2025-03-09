@@ -5,7 +5,7 @@
     "weapon": "weapon#ww_random_ray_gun1_wz",
     "type": "itemspawnentry",
     "angleoffsetz": 90,
-    "var_65b3a12": 6,
+    "hash_65b3a12": 6,
     "name": "allistairs_folly_t8_item",
     "displayname": "#hash_4e413fbdde10b051",
     "icon": "#hash_7546155c51fc54a",

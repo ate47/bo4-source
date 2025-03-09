@@ -5,7 +5,7 @@
     "weapon": "weapon#hash_56c80303c0a5a587",
     "type": "itemspawnentry",
     "angleoffsetz": 35,
-    "var_65b3a12": 6,
+    "hash_65b3a12": 6,
     "name": "ww_winters_fury_t8_item",
     "displayname": "#weapon/freezegun",
     "icon": "#hash_419aa17c2e3e1d16",

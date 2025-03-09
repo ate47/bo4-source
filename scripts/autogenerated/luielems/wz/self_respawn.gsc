@@ -7,18 +7,18 @@
 // Method(s) 6 Total 13
 class cself_respawn : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cself_respawn/self_respawn
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xc0d82e, Offset: 0x2c8
     // Size: 0x3c
     function set_percent(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "percent", value);
+        player clientfield::function_9bf78ef8(_uid, "percent", value);
     }
 
     // Namespace cself_respawn/self_respawn
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x53b71be3, Offset: 0x298
     // Size: 0x24
     function close(player) {
@@ -26,7 +26,7 @@ class cself_respawn : cluielem {
     }
 
     // Namespace cself_respawn/self_respawn
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x65556246, Offset: 0x248
     // Size: 0x44
     function open(player, persistent = 0) {
@@ -34,7 +34,7 @@ class cself_respawn : cluielem {
     }
 
     // Namespace cself_respawn/self_respawn
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x144fe2df, Offset: 0x1f0
     // Size: 0x4c
     function setup_clientfields(uid) {

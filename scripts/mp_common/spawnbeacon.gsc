@@ -26,7 +26,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcebb3ff2, Offset: 0x208
 // Size: 0x214
 function __init__() {
@@ -48,7 +48,7 @@ function __init__() {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x62d4df2b, Offset: 0x428
 // Size: 0x9c
 function function_ece8f018(attacker, victim, weapon, attackerweapon, meansofdeath) {
@@ -62,7 +62,7 @@ function function_ece8f018(attacker, victim, weapon, attackerweapon, meansofdeat
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x55a5e3fd, Offset: 0x4d0
 // Size: 0xe4
 function function_3e8ff788(attacker, victim, var_f5db414c, killtime, weapon, spawnbeaconweapon) {
@@ -75,7 +75,7 @@ function function_3e8ff788(attacker, victim, var_f5db414c, killtime, weapon, spa
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x1a1460c5, Offset: 0x5c0
 // Size: 0xcc
 function function_cdeb9089(attacker, victim, spawnbeaconweapon, var_fb972b2b) {
@@ -88,7 +88,7 @@ function function_cdeb9089(attacker, victim, spawnbeaconweapon, var_fb972b2b) {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x5504ec48, Offset: 0x698
 // Size: 0xdc
 function function_5bfd1343(attacker, var_f231d134, killtime, capturedobjective, spawnbeaconweapon) {
@@ -101,7 +101,7 @@ function function_5bfd1343(attacker, var_f231d134, killtime, capturedobjective, 
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1ec84204, Offset: 0x780
 // Size: 0xc4
 function function_1f5ed165() {
@@ -127,17 +127,17 @@ function removeprotectedzone(zone) {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xfbf29bcb, Offset: 0x8d0
 // Size: 0xce
 function private setupspawnlists() {
-    for (spawnlistidx = 0; spawnlistidx < (isdefined(level.spawnbeaconsettings.settingsbundle.var_369f0da) ? level.spawnbeaconsettings.settingsbundle.var_369f0da : 0); spawnlistidx++) {
+    for (spawnlistidx = 0; spawnlistidx < (isdefined(level.spawnbeaconsettings.settingsbundle.spawnlistcount) ? level.spawnbeaconsettings.settingsbundle.spawnlistcount : 0); spawnlistidx++) {
         array::add(level.spawnbeaconsettings.availablespawnlists, (isdefined(level.spawnbeaconsettings.settingsbundle.var_7609eee) ? level.spawnbeaconsettings.settingsbundle.var_7609eee : "") + spawnlistidx);
     }
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x1ad6c80d, Offset: 0x9a8
 // Size: 0x204
 function private function_50e42513() {
@@ -157,7 +157,7 @@ function private function_50e42513() {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5eb0a8cf, Offset: 0xbb8
 // Size: 0x86
 function function_b42580a6() {
@@ -170,7 +170,7 @@ function function_b42580a6() {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x57a5ba10, Offset: 0xc48
 // Size: 0x51c
 function playerspawnedfromspawnbeacon(spawnbeacon, var_d8f817bc) {
@@ -225,7 +225,7 @@ function playerspawnedfromspawnbeacon(spawnbeacon, var_d8f817bc) {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb644a41b, Offset: 0x1170
 // Size: 0x194
 function function_fa81d248(attacker, weapon) {
@@ -249,7 +249,7 @@ function function_fa81d248(attacker, weapon) {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x987c5e1, Offset: 0x1310
 // Size: 0x352
 function function_b74804ba(origin, angles, player, var_c7a191d5, var_813ea9e) {
@@ -278,7 +278,7 @@ function function_b74804ba(origin, angles, player, var_c7a191d5, var_813ea9e) {
             }
             distsqr = distancesquared(origin, var_4d511d74[i].origin);
             if (distsqr <= testdistance) {
-                player sethintstring(level.spawnbeaconsettings.settingsbundle.var_c2aa4ca6);
+                player sethintstring(level.spawnbeaconsettings.settingsbundle.cannotbuild);
                 return false;
             }
         }
@@ -287,7 +287,7 @@ function function_b74804ba(origin, angles, player, var_c7a191d5, var_813ea9e) {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1d5755bf, Offset: 0x1670
 // Size: 0x3da
 function private function_4ddddf03(placedspawnbeacon) {
@@ -328,7 +328,7 @@ function private function_94dcc72e(&spawnlist, spawnbeacon) {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x319a310a, Offset: 0x1b60
 // Size: 0x302
 function function_6c529d0b(beacon, objective, team, var_d1653c48, hinttext, onusefunc, var_24c69a69, var_6a89b347) {
@@ -353,7 +353,7 @@ function function_6c529d0b(beacon, objective, team, var_d1653c48, hinttext, onus
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x428439ae, Offset: 0x1e70
 // Size: 0x422
 function private function_e67b6bd(player) {
@@ -386,15 +386,15 @@ function private function_e67b6bd(player) {
     spawnbeacon.owner disableoffhandweapons();
     spawnbeacon.owner setblockweaponpickup(heldweapon, 1);
     spawnbeacon.owner disableoffhandspecial();
-    if (isdefined(level.spawnbeaconsettings.settingsbundle.var_34127883)) {
-        player playsound(level.spawnbeaconsettings.settingsbundle.var_34127883);
+    if (isdefined(level.spawnbeaconsettings.settingsbundle.pickupaudio)) {
+        player playsound(level.spawnbeaconsettings.settingsbundle.pickupaudio);
     }
     spawnbeacon.owner.var_c4a4cb7d = self;
     spawnbeacon.var_ca3a0f16 = 1;
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb993c09c, Offset: 0x22a0
 // Size: 0x5ac
 function function_f989dc0a(watcher, owner) {
@@ -453,7 +453,7 @@ function function_f989dc0a(watcher, owner) {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8cc3d7c9, Offset: 0x2858
 // Size: 0x5a
 function function_d80ff6a7(watcher) {
@@ -464,7 +464,7 @@ function function_d80ff6a7(watcher) {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xba9ccb10, Offset: 0x28c0
 // Size: 0x5c
 function private function_ebac785e(player) {
@@ -474,7 +474,7 @@ function private function_ebac785e(player) {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd0480729, Offset: 0x2928
 // Size: 0x24
 function private function_4f5f518a(player) {
@@ -482,7 +482,7 @@ function private function_4f5f518a(player) {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe5bacb18, Offset: 0x2958
 // Size: 0xbe
 function private function_70ca26fc(player) {
@@ -494,7 +494,7 @@ function private function_70ca26fc(player) {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe059c1e1, Offset: 0x2a20
 // Size: 0xac
 function private function_741d9675(player) {
@@ -502,13 +502,13 @@ function private function_741d9675(player) {
     spawnbeacon.var_b08a3652 = 1;
     spawnbeacon.var_846acfcf = player;
     spawnbeacon thread destroyspawnbeacon(1);
-    if (isdefined(level.spawnbeaconsettings.settingsbundle.var_34127883)) {
-        player playsound(level.spawnbeaconsettings.settingsbundle.var_34127883);
+    if (isdefined(level.spawnbeaconsettings.settingsbundle.pickupaudio)) {
+        player playsound(level.spawnbeaconsettings.settingsbundle.pickupaudio);
     }
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x93d162ee, Offset: 0x2ad8
 // Size: 0xe4
 function private function_d77d0cbb(team, player, result) {
@@ -524,7 +524,7 @@ function private function_d77d0cbb(team, player, result) {
 }
 
 // Namespace spawn_beacon/spawnbeacon
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xbc886de7, Offset: 0x2bc8
 // Size: 0x364
 function function_9aafb7bb(origin, angles, player) {
@@ -555,7 +555,7 @@ function function_9aafb7bb(origin, angles, player) {
             }
             distsqr = distancesquared(origin, beacon.origin);
             if (distsqr <= testdistance) {
-                player sethintstring(level.spawnbeaconsettings.settingsbundle.var_c2aa4ca6);
+                player sethintstring(level.spawnbeaconsettings.settingsbundle.cannotbuild);
                 return false;
             }
         }

@@ -30,7 +30,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace mp_seaside_alt/mp_seaside_alt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1e8
 // Size: 0x4
 function precache() {
@@ -38,7 +38,7 @@ function precache() {
 }
 
 // Namespace mp_seaside_alt/mp_seaside_alt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x18dc1c56, Offset: 0x1f8
 // Size: 0xb4
 function on_game_playing() {
@@ -52,7 +52,7 @@ function on_game_playing() {
 }
 
 // Namespace mp_seaside_alt/mp_seaside_alt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd1697204, Offset: 0x2b8
 // Size: 0xa4
 function function_2cdcf5c3() {

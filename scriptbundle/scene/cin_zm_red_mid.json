@@ -473,8 +473,8 @@
     "name": "cin_zm_red_mid",
     "dontsync": 1,
     "disablesceneskipping": 1,
-    "var_241c5f3c": 1,
-    "var_a6da2039": "cin_zm_red_mid",
+    "hash_241c5f3c": 1,
+    "hash_a6da2039": "cin_zm_red_mid",
     "aligntarget": "tag_align_red_acheron_room",
     "ignorestreamer": 1,
     "team": "any"

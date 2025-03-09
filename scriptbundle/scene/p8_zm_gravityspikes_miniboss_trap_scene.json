@@ -28,7 +28,7 @@
             ],
             "model": "#$default_aitype",
             "type": "actor",
-            "var_d318cc2c": 1,
+            "hash_d318cc2c": 1,
             "name": "mini_boss",
             "allowdeath": 1,
             "takedamage": 1

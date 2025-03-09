@@ -4,7 +4,7 @@
     "type": "gamesettings",
     "name": "hardcore_mode",
     "displayname": "#menu/rules_hardcore",
-    "var_9de86f42": 2,
+    "optionscount": 2,
     "setting": "hardcoreMode",
-    "var_82c732a7": 1
+    "isenableddisabled": 1
 }

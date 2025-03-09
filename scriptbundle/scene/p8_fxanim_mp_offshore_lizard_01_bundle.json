@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_258313f38b3544f1",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 30,
+                    "spacermax": 45,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_4f8163200abd7c6e",
+            "type": "prop",
+            "name": "prop 2"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_offshore_lizard_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -3,7 +3,7 @@
 #namespace sound;
 
 // Namespace sound/sound_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6717a610, Offset: 0xa0
 // Size: 0x94
 function loop_fx_sound(alias, origin, ender) {
@@ -17,7 +17,7 @@ function loop_fx_sound(alias, origin, ender) {
 }
 
 // Namespace sound/sound_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x82f719f8, Offset: 0x140
 // Size: 0x4c
 function loop_delete(ender, ent) {
@@ -27,7 +27,7 @@ function loop_delete(ender, ent) {
 }
 
 // Namespace sound/sound_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x9e5649d0, Offset: 0x198
 // Size: 0xc4
 function play_in_space(alias, origin, master) {
@@ -44,7 +44,7 @@ function play_in_space(alias, origin, master) {
 }
 
 // Namespace sound/sound_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x3014f258, Offset: 0x268
 // Size: 0x154
 function loop_on_tag(alias, tag, bstopsoundondeath) {
@@ -70,7 +70,7 @@ function loop_on_tag(alias, tag, bstopsoundondeath) {
 }
 
 // Namespace sound/sound_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe7f6addb, Offset: 0x3c8
 // Size: 0x19c
 function play_on_tag(alias, tag, ends_on_death) {
@@ -105,7 +105,7 @@ function play_on_entity(alias) {
 }
 
 // Namespace sound/sound_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa5b9f5d, Offset: 0x5a0
 // Size: 0x34
 function wait_for_sounddone_or_death(org) {
@@ -162,7 +162,7 @@ function loop_in_space(alias, origin, ender) {
 }
 
 // Namespace sound/sound_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x16912007, Offset: 0x830
 // Size: 0x5c
 function delete_on_death_wait(ent, sounddone) {
@@ -174,7 +174,7 @@ function delete_on_death_wait(ent, sounddone) {
 }
 
 // Namespace sound/sound_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xef994a01, Offset: 0x898
 // Size: 0x17e
 function play_on_players(sound, team) {

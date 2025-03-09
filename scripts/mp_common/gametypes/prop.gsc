@@ -1950,8 +1950,8 @@ function function_12388dcc() {
     var_16710857 = globallogic_defaults::default_gettimelimit() * 60 * 1000;
     timepassed = globallogic_utils::gettimepassed();
     var_b058d557 = int(min(var_16710857, timepassed));
-    game.propsurvivaltime[game.defenders] = game.propsurvivaltime[game.defenders] + var_b058d557;
-    game.hunterkilltime[game.attackers] = game.hunterkilltime[game.attackers] + var_b058d557;
+    game.propsurvivaltime[game.defenders] += var_b058d557;
+    game.hunterkilltime[game.attackers] += var_b058d557;
 }
 
 // Namespace prop/prop
@@ -2596,7 +2596,7 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, sweapon, v
     if (victim util::isprop()) {
         function_1e0cc068(3);
         attackerteam = util::getotherteam(victim.team);
-        game.propscore[attackerteam] = game.propscore[attackerteam] + 1;
+        game.propscore[attackerteam] += 1;
     }
 }
 

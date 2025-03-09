@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_burned_out/zm_bgb_burned_out
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4c1dbf2b, Offset: 0x198
 // Size: 0x164
 function __init__() {
@@ -32,7 +32,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_burned_out/zm_bgb_burned_out
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf73b4fc2, Offset: 0x308
 // Size: 0x180
 function event() {
@@ -59,7 +59,7 @@ function event() {
 }
 
 // Namespace zm_bgb_burned_out/zm_bgb_burned_out
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x22f8524d, Offset: 0x490
 // Size: 0x3c6
 function result() {
@@ -72,7 +72,7 @@ function result() {
     dist_sq = 128 * 128;
     var_7694ea6b = [];
     for (i = 0; i < zombies.size; i++) {
-        if (zombies[i].var_6f84b820 !== #"basic" && zombies[i].var_6f84b820 !== #"popcorn" && zombies[i].var_6f84b820 !== #"enhanced") {
+        if (zombies[i].zm_ai_category !== #"basic" && zombies[i].zm_ai_category !== #"popcorn" && zombies[i].zm_ai_category !== #"enhanced") {
             continue;
         }
         if (isdefined(zombies[i].ignore_nuke) && zombies[i].ignore_nuke) {

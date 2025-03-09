@@ -7,7 +7,7 @@
 class czm_location : cluielem {
 
     // Namespace czm_location/zm_location
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0xc2786a25, Offset: 0x340
     // Size: 0x30
     function set_location_name(localclientnum, value) {
@@ -15,7 +15,7 @@ class czm_location : cluielem {
     }
 
     // Namespace czm_location/zm_location
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x7f36afbe, Offset: 0x308
     // Size: 0x2c
     function open(localclientnum) {
@@ -23,7 +23,7 @@ class czm_location : cluielem {
     }
 
     // Namespace czm_location/zm_location
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xbdb01b95, Offset: 0x2b0
     // Size: 0x4c
     function function_fa582112(localclientnum) {
@@ -32,7 +32,7 @@ class czm_location : cluielem {
     }
 
     // Namespace czm_location/zm_location
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xd11d3009, Offset: 0x280
     // Size: 0x24
     function register_clientside(uid) {
@@ -40,7 +40,7 @@ class czm_location : cluielem {
     }
 
     // Namespace czm_location/zm_location
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x27606f78, Offset: 0x220
     // Size: 0x54
     function setup_clientfields(uid, var_5c0f4d11) {
@@ -51,7 +51,7 @@ class czm_location : cluielem {
 }
 
 // Namespace zm_location/zm_location
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe89a82ea, Offset: 0xb8
 // Size: 0x4c
 function register(uid, var_5c0f4d11) {

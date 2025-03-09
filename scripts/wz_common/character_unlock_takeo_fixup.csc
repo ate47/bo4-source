@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 // Checksum 0xcb4c477c, Offset: 0xc8
 // Size: 0x74
 function __init__() {
-    character_unlock_fixup::register_character_unlock(#"takeo_unlock", #"hash_36157750ed7c6584", #"cu18_item", &function_d95e620c, #"hash_56b5eb94fb75cbed", #"hash_56b5e894fb75c6d4");
+    character_unlock_fixup::register_character_unlock(#"takeo_unlock", #"prt_wz_takeo", #"cu18_item", &function_d95e620c, #"hash_56b5eb94fb75cbed", #"hash_56b5e894fb75c6d4");
 }
 
 // Namespace character_unlock_takeo_fixup/character_unlock_takeo_fixup

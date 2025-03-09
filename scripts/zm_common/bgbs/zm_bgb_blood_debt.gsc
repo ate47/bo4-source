@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_blood_debt/zm_bgb_blood_debt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x674b0ee8, Offset: 0xf0
 // Size: 0x94
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_blood_debt/zm_bgb_blood_debt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbce77de8, Offset: 0x190
 // Size: 0xa6
 function enable() {
@@ -42,7 +42,7 @@ function enable() {
 }
 
 // Namespace zm_bgb_blood_debt/zm_bgb_blood_debt
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x448d6d6e, Offset: 0x240
 // Size: 0x16
 function disable() {
@@ -51,7 +51,7 @@ function disable() {
 }
 
 // Namespace zm_bgb_blood_debt/zm_bgb_blood_debt
-// Params 10, eflags: 0x1 linked
+// Params 10, eflags: 0x0
 // Checksum 0x1c0afc22, Offset: 0x260
 // Size: 0x196
 function function_4b163259(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime) {
@@ -83,7 +83,7 @@ function function_4b163259(einflictor, eattacker, idamage, idflags, smeansofdeat
 }
 
 // Namespace zm_bgb_blood_debt/zm_bgb_blood_debt
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2c2f73c4, Offset: 0x400
 // Size: 0x5a
 function function_c5d307a1(n_cost) {

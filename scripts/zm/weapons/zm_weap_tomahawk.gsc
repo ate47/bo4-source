@@ -26,7 +26,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x37beec0f, Offset: 0x2b8
 // Size: 0x332
 function __init__() {
@@ -51,7 +51,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x5f8
 // Size: 0x4
 function __main__() {
@@ -59,7 +59,7 @@ function __main__() {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe6356102, Offset: 0x608
 // Size: 0x44
 function tomahawk_on_player_connect() {
@@ -69,7 +69,7 @@ function tomahawk_on_player_connect() {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x37d030c0, Offset: 0x658
 // Size: 0x21e
 function private watch_for_tomahawk_throw() {
@@ -102,7 +102,7 @@ function private watch_for_tomahawk_throw() {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x5348c734, Offset: 0x880
 // Size: 0x14c
 function private function_932e24b(w_weapon) {
@@ -124,7 +124,7 @@ function private function_932e24b(w_weapon) {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x3d023803, Offset: 0x9d8
 // Size: 0x142
 function private watch_for_tomahawk_charge() {
@@ -146,7 +146,7 @@ function private watch_for_tomahawk_charge() {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1c27cd1, Offset: 0xb28
 // Size: 0x17a
 function private play_charge_fx(w_grenade) {
@@ -176,7 +176,7 @@ function private play_charge_fx(w_grenade) {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1841a79b, Offset: 0xcb0
 // Size: 0xb0
 function private function_9310fcc0(w_grenade) {
@@ -190,7 +190,7 @@ function private function_9310fcc0(w_grenade) {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb268e54a, Offset: 0xd68
 // Size: 0x12e
 function private get_grenade_charge_power(player) {
@@ -217,7 +217,7 @@ function private get_grenade_charge_power(player) {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x9597ec0e, Offset: 0xea0
 // Size: 0x774
 function private tomahawk_thrown(e_grenade) {
@@ -319,7 +319,7 @@ function private tomahawk_thrown(e_grenade) {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x4cde8390, Offset: 0x1620
 // Size: 0x50
 function private check_for_time_out(e_grenade) {
@@ -330,7 +330,7 @@ function private check_for_time_out(e_grenade) {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x324d4ec9, Offset: 0x1678
 // Size: 0x64c
 function private tomahawk_ricochet_attack(var_65f2e452, e_grenade, var_bc201c9e, e_ignore) {
@@ -411,7 +411,7 @@ function private tomahawk_ricochet_attack(var_65f2e452, e_grenade, var_bc201c9e,
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xf4de7e7a, Offset: 0x1cd0
 // Size: 0x284
 function private function_d81951f5(mdl_tomahawk, var_65f2e452) {
@@ -438,7 +438,7 @@ function private function_d81951f5(mdl_tomahawk, var_65f2e452) {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x3109d833, Offset: 0x1f60
 // Size: 0x21c
 function private function_e865484a(mdl_tomahawk, a_ai_zombie, var_65f2e452) {
@@ -470,7 +470,7 @@ function private function_e865484a(mdl_tomahawk, a_ai_zombie, var_65f2e452) {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x5bead4f1, Offset: 0x2188
 // Size: 0x24c
 function private function_c7ddedb2(mdl_tomahawk, ai_zombie, var_bfed4a7 = 0.25) {
@@ -498,7 +498,7 @@ function private function_c7ddedb2(mdl_tomahawk, ai_zombie, var_bfed4a7 = 0.25) 
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x16c08ab4, Offset: 0x23e0
 // Size: 0x42e
 function tomahawk_return_player(mdl_tomahawk, var_65f2e452, n_move_speed = 1600) {
@@ -554,7 +554,7 @@ function tomahawk_return_player(mdl_tomahawk, var_65f2e452, n_move_speed = 1600)
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x38c3e8c1, Offset: 0x2818
 // Size: 0x11c
 function private function_e2c00ed6(mdl_tomahawk, n_move_speed, n_total_time) {
@@ -573,7 +573,7 @@ function private function_e2c00ed6(mdl_tomahawk, n_move_speed, n_total_time) {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc4e0ec39, Offset: 0x2940
 // Size: 0x10c
 function private function_723cb8bd(mdl_tomahawk) {
@@ -591,7 +591,7 @@ function private function_723cb8bd(mdl_tomahawk) {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x21374de3, Offset: 0x2a58
 // Size: 0x166
 function tomahawk_spawn(grenade_origin, charged) {
@@ -612,7 +612,7 @@ function tomahawk_spawn(grenade_origin, charged) {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xd5fb8c5d, Offset: 0x2bc8
 // Size: 0x50
 function private tomahawk_spin() {
@@ -624,7 +624,7 @@ function private tomahawk_spin() {
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xefb10034, Offset: 0x2c20
 // Size: 0x132
 function private calculate_tomahawk_damage(ai_target_zombie, n_tomahawk_power, tomahawk) {
@@ -643,7 +643,7 @@ function private calculate_tomahawk_damage(ai_target_zombie, n_tomahawk_power, t
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0xb0d79f5c, Offset: 0x2d60
 // Size: 0xca
 function function_c34db78(einflictor, eattacker, idamage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -654,7 +654,7 @@ function function_c34db78(einflictor, eattacker, idamage, flags, meansofdeath, w
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x64e8349e, Offset: 0x2e38
 // Size: 0xca
 function private tomahawk_rumble(var_b2e05bae) {

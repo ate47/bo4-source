@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_blockers/zm_blockers
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7cf5d0a, Offset: 0x300
 // Size: 0x37c
 function __init__() {
@@ -50,7 +50,7 @@ function __main__() {
 }
 
 // Namespace zm_blockers/zm_blockers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2114bb0f, Offset: 0x698
 // Size: 0x74
 function doorbuy_ambient_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -58,7 +58,7 @@ function doorbuy_ambient_fx(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace zm_blockers/zm_blockers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x84f2ed75, Offset: 0x718
 // Size: 0x74
 function debrisbuy_ambient_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -66,7 +66,7 @@ function debrisbuy_ambient_fx(localclientnum, oldval, newval, bnewent, binitials
 }
 
 // Namespace zm_blockers/zm_blockers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc49f6197, Offset: 0x798
 // Size: 0x74
 function power_door_ambient_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -74,7 +74,7 @@ function power_door_ambient_fx(localclientnum, oldval, newval, bnewent, binitial
 }
 
 // Namespace zm_blockers/zm_blockers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x44ce7336, Offset: 0x818
 // Size: 0x74
 function power_debris_ambient_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -82,7 +82,7 @@ function power_debris_ambient_fx(localclientnum, oldval, newval, bnewent, biniti
 }
 
 // Namespace zm_blockers/zm_blockers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x249c637d, Offset: 0x898
 // Size: 0x7c
 function doorbuy_bought_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -90,7 +90,7 @@ function doorbuy_bought_fx(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_blockers/zm_blockers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9af791f5, Offset: 0x920
 // Size: 0x7c
 function debrisbuy_bought_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -98,7 +98,7 @@ function debrisbuy_bought_fx(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace zm_blockers/zm_blockers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x54263d74, Offset: 0x9a8
 // Size: 0x7c
 function power_door_bought_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -106,7 +106,7 @@ function power_door_bought_fx(localclientnum, oldval, newval, bnewent, binitials
 }
 
 // Namespace zm_blockers/zm_blockers
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa2cf6955, Offset: 0xa30
 // Size: 0x7c
 function power_debris_bought_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -114,7 +114,7 @@ function power_debris_bought_fx(localclientnum, oldval, newval, bnewent, binitia
 }
 
 // Namespace zm_blockers/zm_blockers
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x9b4d0984, Offset: 0xab8
 // Size: 0xe4
 function function_aa07bb71(str_fx_name, var_bd367366, var_6142f944, n_new_val) {
@@ -133,7 +133,7 @@ function function_aa07bb71(str_fx_name, var_bd367366, var_6142f944, n_new_val) {
 }
 
 // Namespace zm_blockers/zm_blockers
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xe099edfa, Offset: 0xba8
 // Size: 0xec
 function function_e6eed4fe(str_fx_name, var_d34b6d2b, var_6142f944, n_new_val) {

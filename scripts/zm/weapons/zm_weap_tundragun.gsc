@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_tundragun/zm_weap_tundragun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4cc6789b, Offset: 0xd8
 // Size: 0x56
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_tundragun/zm_weap_tundragun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1fe7bb9d, Offset: 0x138
 // Size: 0x64
 function __main__() {
@@ -32,11 +32,11 @@ function __main__() {
 }
 
 // Namespace zm_weap_tundragun/zm_weap_tundragun
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x54aaf5bd, Offset: 0x1a8
 // Size: 0xba
 function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
-    if (self.var_6f84b820 === #"basic" || self.var_6f84b820 === #"popcorn") {
+    if (self.zm_ai_category === #"basic" || self.zm_ai_category === #"popcorn") {
         self.water_damage = 1;
         return (self.health + 666);
     }

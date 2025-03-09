@@ -87,6 +87,6 @@
     "type": "scene",
     "name": "cin_zm_mvid_onfire",
     "dontsync": 1,
-    "var_a6da2039": "cin_zm_mvid_onfire",
+    "hash_a6da2039": "cin_zm_mvid_onfire",
     "team": "any"
 }

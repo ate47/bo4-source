@@ -524,7 +524,7 @@ function private function_35c26e09(supplystash) {
             break;
         }
     }
-    function_e2a06860(supplystash, 0);
+    setdynentstate(supplystash, 0);
     return true;
 }
 
@@ -1114,7 +1114,7 @@ function function_a54d07e6(item, activator) {
             state = function_ffdbe8c2(stashes[0]);
             if (state == 0) {
                 function_b516210b(isdefined(stashes[0].var_15d44120) ? stashes[0].var_15d44120 : stashes[0].model, stashes[0].origin, activator);
-                function_e2a06860(stashes[0], 1);
+                setdynentstate(stashes[0], 1);
                 params = {#activator:activator, #state:state};
                 stashes[0] callback::callback(#"on_stash_open", params);
             } else if (state == 1) {
@@ -1139,10 +1139,10 @@ function function_a54d07e6(item, activator) {
                 }
                 if (isdefined(stashes[0].lootlocker) && stashes[0].lootlocker && activator !== level) {
                     function_35c26e09(stashes[0]);
-                    function_e2a06860(stashes[0], 0);
+                    setdynentstate(stashes[0], 0);
                     return;
                 }
-                function_e2a06860(stashes[0], 2);
+                setdynentstate(stashes[0], 2);
                 stashes[0] notify(#"hash_4c78fc894646853d");
             }
         }
@@ -1426,7 +1426,7 @@ function consume_item(item) {
     } else {
         if (isdefined(item)) {
             function_54ca5536(item.id, gettime());
-            if (isdefined(item.itementry) && isdefined(item.itementry.var_47f145b4) && item.itementry.var_47f145b4) {
+            if (isdefined(item.itementry) && isdefined(item.itementry.wallbuyitem) && item.itementry.wallbuyitem) {
                 respawnitem = spawnstruct();
                 respawnitem.id = item.id;
                 respawnitem.hidetime = gettime();
@@ -1448,7 +1448,7 @@ function consume_item(item) {
     }
     if (isentity(item)) {
         item clientfield::set("dynamic_item_drop", 2);
-        item function_46d7f921(32767);
+        item setitemindex(32767);
         item ghost();
         util::wait_network_frame(2);
         if (!isdefined(item)) {
@@ -1765,7 +1765,7 @@ function function_8eee98dd(supplystash) {
         resetitem = level flagsys::get(#"item_world_reset");
         function_bfc28859(3, item.id, resetitem);
     }
-    function_e2a06860(supplystash, 0);
+    setdynentstate(supplystash, 0);
 }
 
 // Namespace item_world/item_world
@@ -1809,7 +1809,7 @@ function function_160294c7(supplystash) {
             consume_item(item);
         }
     }
-    function_e2a06860(supplystash, 3);
+    setdynentstate(supplystash, 3);
 }
 
 // Namespace item_world/item_world

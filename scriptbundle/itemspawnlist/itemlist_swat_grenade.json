@@ -8,14 +8,14 @@
         },
         {
             "itementry": "swat_grenade_wz_item",
-            "var_3f8c08e3": "swat_grenade_wz_item",
+            "childitementry_1": "swat_grenade_wz_item",
             "available": -1
         }
     ],
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "var_345eba59": 2,
-    "var_9b009839": -1,
+    "hash_345eba59": 2,
+    "hash_9b009839": -1,
     "name": "itemlist_swat_grenade",
-    "var_fde72c94": 100
+    "supplystashweight": 100
 }

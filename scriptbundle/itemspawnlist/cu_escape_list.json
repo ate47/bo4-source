@@ -1,0 +1,42 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "cu11_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "cu12_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "cu14_item",
+            "childitementry_2": "acid_bomb_wz_item",
+            "childitementry_1": "wraithfire_wz_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "cu28_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "cu31_item",
+            "maxweight": 1,
+            "available": -1
+        }
+    ],
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 5,
+    "hash_9b009839": -1,
+    "name": "cu_escape_list",
+    "supplystashweight": 100
+}

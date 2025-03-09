@@ -3,47 +3,47 @@
         {
             "minweight": 100,
             "itementry": "sniper_mini14_t8_item",
-            "var_8261a18": "ammo_type_556_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_2": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
             "itementry": "shotgun_fullauto_t8_item",
-            "var_3f8c08e3": "ammo_type_12ga_item",
+            "childitementry_1": "ammo_type_12ga_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
             "itementry": "smg_folding_t8_item",
-            "var_3f8c08e3": "ammo_type_9mm_item",
+            "childitementry_1": "ammo_type_9mm_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
             "itementry": "pistol_fullauto_t8_item",
-            "var_3f8c08e3": "ammo_type_45_item",
+            "childitementry_1": "ammo_type_45_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 1,
             "itementry": "lmg_stealth_t8_item",
-            "var_8261a18": "ammo_type_556_item",
-            "var_3f8c08e3": "ammo_type_556_item",
+            "childitementry_2": "ammo_type_556_item",
+            "childitementry_1": "ammo_type_556_item",
             "maxweight": 1
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "var_7fb0967b": 4000,
+    "hash_7fb0967b": 4000,
     "type": "itemspawnlist",
-    "var_345eba59": 5,
-    "var_9b009839": -1,
+    "hash_345eba59": 5,
+    "hash_9b009839": -1,
     "name": "blackjack_ammo_stash_guns",
     "displayname": "#hash_552e95261f2d04be",
-    "var_fde72c94": 100,
+    "supplystashweight": 100,
     "supplystash": 1
 }

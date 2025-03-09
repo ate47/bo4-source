@@ -7,46 +7,46 @@
 // Method(s) 8 Total 15
 class clower_message : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace clower_message/lower_message
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x6a3610b0, Offset: 0x4f0
     // Size: 0x3c
     function set_countdowntimeseconds(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "countdownTimeSeconds", value);
+        player clientfield::function_9bf78ef8(_uid, "countdownTimeSeconds", value);
     }
 
     // Namespace clower_message/lower_message
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x951a891a, Offset: 0x4a8
     // Size: 0x3c
     function set_message(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "message", value);
+        player clientfield::function_9bf78ef8(_uid, "message", value);
     }
 
     // Namespace clower_message/lower_message
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x6f3ddf00, Offset: 0x3a0
     // Size: 0xfc
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(_uid, "_state", 0);
             return;
         }
         if (#"visible" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(_uid, "_state", 1);
             return;
         }
         if (#"hash_45bfcb1cd8c9b50a" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 2);
+            player clientfield::function_9bf78ef8(_uid, "_state", 2);
             return;
         }
         assertmsg("<dev string:x38>");
     }
 
     // Namespace clower_message/lower_message
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x722e2add, Offset: 0x370
     // Size: 0x24
     function close(player) {
@@ -54,7 +54,7 @@ class clower_message : cluielem {
     }
 
     // Namespace clower_message/lower_message
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x31f200ab, Offset: 0x320
     // Size: 0x44
     function open(player, persistent = 0) {
@@ -62,7 +62,7 @@ class clower_message : cluielem {
     }
 
     // Namespace clower_message/lower_message
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x9a44ba3e, Offset: 0x278
     // Size: 0x9c
     function setup_clientfields(uid) {
@@ -75,7 +75,7 @@ class clower_message : cluielem {
 }
 
 // Namespace lower_message/lower_message
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcff5f4a4, Offset: 0xf0
 // Size: 0x40
 function register(uid) {
@@ -85,7 +85,7 @@ function register(uid) {
 }
 
 // Namespace lower_message/lower_message
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x29bcbf1e, Offset: 0x138
 // Size: 0x38
 function open(player, persistent = 0) {
@@ -101,7 +101,7 @@ function close(player) {
 }
 
 // Namespace lower_message/lower_message
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x865d29b7, Offset: 0x1a0
 // Size: 0x1a
 function is_open(player) {
@@ -109,7 +109,7 @@ function is_open(player) {
 }
 
 // Namespace lower_message/lower_message
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6a1be3ea, Offset: 0x1c8
 // Size: 0x28
 function set_state(player, state_name) {
@@ -117,7 +117,7 @@ function set_state(player, state_name) {
 }
 
 // Namespace lower_message/lower_message
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf2ddf70c, Offset: 0x1f8
 // Size: 0x28
 function set_message(player, value) {
@@ -125,7 +125,7 @@ function set_message(player, value) {
 }
 
 // Namespace lower_message/lower_message
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdabcd213, Offset: 0x228
 // Size: 0x28
 function set_countdowntimeseconds(player, value) {

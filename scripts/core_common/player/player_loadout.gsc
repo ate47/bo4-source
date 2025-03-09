@@ -3,7 +3,7 @@
 #namespace loadout;
 
 // Namespace loadout/player_loadout
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x91265c61, Offset: 0xc0
 // Size: 0x30
 function function_87bcb1b() {
@@ -14,7 +14,7 @@ function function_87bcb1b() {
 }
 
 // Namespace loadout/player_loadout
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc7f26fe4, Offset: 0xf8
 // Size: 0x10c
 function function_c67222df() {
@@ -30,7 +30,7 @@ function function_c67222df() {
 }
 
 // Namespace loadout/player_loadout
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5bd37f3b, Offset: 0x210
 // Size: 0x92
 function init_loadout_slot(slot_index) {
@@ -38,7 +38,7 @@ function init_loadout_slot(slot_index) {
 }
 
 // Namespace loadout/player_loadout
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa6e3de2b, Offset: 0x2b0
 // Size: 0x50
 function get_loadout_slot(slot_index) {
@@ -62,7 +62,7 @@ function function_8435f729(weapon) {
 }
 
 // Namespace loadout/player_loadout
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x89e54df2, Offset: 0x3b0
 // Size: 0xc0
 function find_loadout_slot(weapon) {
@@ -77,7 +77,7 @@ function find_loadout_slot(weapon) {
 }
 
 // Namespace loadout/player_loadout
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8cc3078a, Offset: 0x478
 // Size: 0xb6
 function function_18a77b37(slot_index) {
@@ -89,7 +89,7 @@ function function_18a77b37(slot_index) {
 }
 
 // Namespace loadout/player_loadout
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x88afce81, Offset: 0x538
 // Size: 0xbe
 function function_442539(slot_index, weapon) {

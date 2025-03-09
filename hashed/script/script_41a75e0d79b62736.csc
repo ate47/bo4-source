@@ -4,7 +4,7 @@
 #namespace namespace_f2050961;
 
 // Namespace namespace_f2050961/namespace_f2050961
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2ae49d26, Offset: 0x90
 // Size: 0x5c
 function init() {
@@ -12,7 +12,7 @@ function init() {
 }
 
 // Namespace namespace_f2050961/namespace_f2050961
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xebbda42e, Offset: 0xf8
 // Size: 0x154
 function function_be33348b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

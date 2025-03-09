@@ -14,7 +14,7 @@
 #namespace trophy_system;
 
 // Namespace trophy_system/trophy_system
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7d760e55, Offset: 0x1a8
 // Size: 0x11c
 function init_shared() {
@@ -31,7 +31,7 @@ function init_shared() {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2293f296, Offset: 0x2d0
 // Size: 0xa0
 function function_1c601b99() {
@@ -44,7 +44,7 @@ function function_1c601b99() {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x63927001, Offset: 0x378
 // Size: 0x1a8
 function function_bff5c062(trophysystem, attackingplayer) {
@@ -70,7 +70,7 @@ function function_bff5c062(trophysystem, attackingplayer) {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb9704709, Offset: 0x528
 // Size: 0x1a
 function function_720ddf7f(func) {
@@ -78,7 +78,7 @@ function function_720ddf7f(func) {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd87f53ed, Offset: 0x550
 // Size: 0x64
 function register() {
@@ -87,7 +87,7 @@ function register() {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa1c63d6f, Offset: 0x5c0
 // Size: 0x9c
 function on_player_killed(s_params) {
@@ -102,7 +102,7 @@ function on_player_killed(s_params) {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2f96521e, Offset: 0x668
 // Size: 0x166
 function createtrophysystemwatcher(watcher) {
@@ -126,7 +126,7 @@ function createtrophysystemwatcher(watcher) {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x45f02f7a, Offset: 0x7d8
 // Size: 0x5e
 function trophysystemstopped() {
@@ -137,7 +137,7 @@ function trophysystemstopped() {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x74abf906, Offset: 0x840
 // Size: 0x324
 function ontrophysystemspawn(watcher, player) {
@@ -176,7 +176,7 @@ function ontrophysystemspawn(watcher, player) {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x591a8839, Offset: 0xb70
 // Size: 0x34
 function setreconmodeldeployed() {
@@ -186,7 +186,7 @@ function setreconmodeldeployed() {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4176eaf7, Offset: 0xbb0
 // Size: 0x4c
 function trophywatchhack() {
@@ -196,7 +196,7 @@ function trophywatchhack() {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5d53b53d, Offset: 0xc08
 // Size: 0x24
 function function_5a4f1e1e(player) {
@@ -204,7 +204,7 @@ function function_5a4f1e1e(player) {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe8ab216, Offset: 0xc38
 // Size: 0x15c
 function ontrophysystemsmashed(attacker, callback_data) {
@@ -225,7 +225,7 @@ function ontrophysystemsmashed(attacker, callback_data) {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x741a7128, Offset: 0xda0
 // Size: 0x46a
 function trophyactive(owner) {
@@ -311,7 +311,7 @@ function trophyactive(owner) {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb5462279, Offset: 0x1218
 // Size: 0x1dc
 function projectileexplode(projectile, trophy) {
@@ -336,7 +336,7 @@ function projectileexplode(projectile, trophy) {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9f3af1de, Offset: 0x1400
 // Size: 0x54
 function _the_root_zurich_spawners(gameobject, trophy) {
@@ -344,7 +344,7 @@ function _the_root_zurich_spawners(gameobject, trophy) {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf0a3a221, Offset: 0x1460
 // Size: 0x6ac
 function function_3170d645(projectile, trophy) {
@@ -433,7 +433,7 @@ function trophydestroytacinsert(tacinsert, trophy) {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x29db310e, Offset: 0x1c68
 // Size: 0x144
 function trophysystemdetonate(attacker, weapon, target) {
@@ -452,7 +452,7 @@ function trophysystemdetonate(attacker, weapon, target) {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x18d6cf20, Offset: 0x1db8
 // Size: 0x33a
 function watchtrophysystemdamage(watcher) {
@@ -502,7 +502,7 @@ function watchtrophysystemdamage(watcher) {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x88568a97, Offset: 0x2100
 // Size: 0x24
 function ammo_scavenger(weapon) {
@@ -510,7 +510,7 @@ function ammo_scavenger(weapon) {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd1ca8726, Offset: 0x2130
 // Size: 0x16
 function ammo_reset() {
@@ -519,7 +519,7 @@ function ammo_reset() {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa250a1f2, Offset: 0x2150
 // Size: 0x86
 function ammo_get(weapon) {
@@ -536,7 +536,7 @@ function ammo_get(weapon) {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3c6e07de, Offset: 0x21e0
 // Size: 0x4a
 function ammo_weapon_pickup(ammo) {
@@ -551,7 +551,7 @@ function ammo_weapon_pickup(ammo) {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb4ee70e5, Offset: 0x2238
 // Size: 0x24
 function ammo_weapon_hacked(ammo) {

@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace status_effect_suppress/status_effect_suppress
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf1d684a7, Offset: 0x100
 // Size: 0xc4
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace status_effect_suppress/status_effect_suppress
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xce994c02, Offset: 0x1d0
 // Size: 0x1c
 function suppress_apply(var_756fda07, weapon, applicant) {
@@ -34,7 +34,7 @@ function suppress_apply(var_756fda07, weapon, applicant) {
 }
 
 // Namespace status_effect_suppress/status_effect_suppress
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1f8
 // Size: 0x4
 function registersamanthas_bundle() {
@@ -42,7 +42,7 @@ function registersamanthas_bundle() {
 }
 
 // Namespace status_effect_suppress/status_effect_suppress
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x13e065f1, Offset: 0x208
 // Size: 0x2b6
 function private function_aa232314(oldval, newval) {
@@ -92,7 +92,7 @@ function private function_aa232314(oldval, newval) {
 }
 
 // Namespace status_effect_suppress/status_effect_suppress
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x9b99650a, Offset: 0x4c8
 // Size: 0xe
 function private onplayerspawned() {

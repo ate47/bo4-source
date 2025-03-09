@@ -5,6 +5,6 @@
     "name": "medal_first_kill",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#ui_icon_medal_firstkill",
-    "stringref": "#hash_1d32ea9b430553ba",
+    "stringref": "#medal/first_kill",
     "iconlarge": "#ui_icon_medal_firstkill_large"
 }

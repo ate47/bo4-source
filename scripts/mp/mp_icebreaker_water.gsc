@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace mp_icebreaker_water/mp_icebreaker_water
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7c791d3f, Offset: 0x140
 // Size: 0x54
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace mp_icebreaker_water/mp_icebreaker_water
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3991944f, Offset: 0x1a0
 // Size: 0x54
 function __main__() {
@@ -37,7 +37,7 @@ function __main__() {
 }
 
 // Namespace mp_icebreaker_water/mp_icebreaker_water
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4818a6c4, Offset: 0x200
 // Size: 0xe
 function on_player_spawned() {
@@ -45,7 +45,7 @@ function on_player_spawned() {
 }
 
 // Namespace mp_icebreaker_water/mp_icebreaker_water
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3cdcb049, Offset: 0x218
 // Size: 0x64
 function function_3b37c448() {
@@ -54,7 +54,7 @@ function function_3b37c448() {
 }
 
 // Namespace mp_icebreaker_water/mp_icebreaker_water
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x17d2979a, Offset: 0x288
 // Size: 0x224
 function on_trigger(s_info) {
@@ -70,7 +70,7 @@ function on_trigger(s_info) {
         #/
         e_player.var_6754f1c5 = 1;
         e_player clientfield::increment_to_player("toggle_player_freezing_water");
-        level thread function_394e1244(e_player);
+        level thread start_freezing(e_player);
         while (level function_aa962363(e_player)) {
             waitframe(1);
         }
@@ -88,12 +88,12 @@ function on_trigger(s_info) {
 }
 
 // Namespace mp_icebreaker_water/mp_icebreaker_water
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x816fa59b, Offset: 0x4b8
 // Size: 0x116
 function function_aa962363(e_player) {
-    foreach (var_22697f26 in level.var_a6f19c15) {
-        if (isalive(e_player) && isdefined(var_22697f26) && e_player istouching(var_22697f26) && getwaterheight(e_player.origin) - e_player.origin[2] >= getdvarint(#"hash_65893d2be0da2532", 30)) {
+    foreach (t_water in level.var_a6f19c15) {
+        if (isalive(e_player) && isdefined(t_water) && e_player istouching(t_water) && getwaterheight(e_player.origin) - e_player.origin[2] >= getdvarint(#"hash_65893d2be0da2532", 30)) {
             return true;
         }
     }
@@ -101,10 +101,10 @@ function function_aa962363(e_player) {
 }
 
 // Namespace mp_icebreaker_water/mp_icebreaker_water
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf7c90ed4, Offset: 0x5d8
 // Size: 0x20e
-function function_394e1244(e_player) {
+function start_freezing(e_player) {
     while (isalive(e_player) && e_player.var_6754f1c5 && e_player.var_653ea26 < 1) {
         e_player.var_653ea26 += 0.1;
         if (e_player.var_653ea26 > 1) {
@@ -135,7 +135,7 @@ function function_394e1244(e_player) {
 }
 
 // Namespace mp_icebreaker_water/mp_icebreaker_water
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5f97d695, Offset: 0x7f0
 // Size: 0x15c
 function function_553ca6ce(e_player) {

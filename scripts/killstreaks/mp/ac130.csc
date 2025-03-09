@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace ac130/ac130
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x610248af, Offset: 0x200
 // Size: 0x144
 function __init__() {
@@ -30,7 +30,7 @@ function __init__() {
 }
 
 // Namespace ac130/ac130
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x67988b5, Offset: 0x350
 // Size: 0xcc
 function on_localclient_connect(localclientnum) {
@@ -40,7 +40,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace ac130/ac130
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7d08796e, Offset: 0x428
 // Size: 0x94
 function function_17381fe(localclientnum) {
@@ -53,7 +53,7 @@ function function_17381fe(localclientnum) {
 }
 
 // Namespace ac130/ac130
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2d64b504, Offset: 0x4c8
 // Size: 0x144
 function function_555656fe(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -81,7 +81,7 @@ function function_555656fe(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace ac130/ac130
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8b1a15b1, Offset: 0x618
 // Size: 0x10a
 function function_db40057d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

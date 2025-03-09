@@ -12,21 +12,21 @@
             "hittag": "j_helmet"
         }
     ],
-    "var_ce6ea3fa": "#c_t8_zmb_dlc2_skeleton_helmet",
-    "var_aa7fbf8b": "tag_weapon_right",
-    "var_20a1cc0c": 0.1,
-    "var_5e937f7f": 1,
+    "hash_ce6ea3fa": "#c_t8_zmb_dlc2_skeleton_helmet",
+    "hash_aa7fbf8b": "tag_weapon_right",
+    "hash_20a1cc0c": 0.1,
+    "hash_5e937f7f": 1,
     "configstringfiletype": "scriptbundle",
-    "var_c83371f4": "#c_t8_zmb_dlc2_skeleton_spear",
+    "hash_c83371f4": "#c_t8_zmb_dlc2_skeleton_spear",
     "type": "destructiblecharacterdef",
-    "var_9fdd055b": "j_head",
+    "hash_9fdd055b": "j_head",
     "vmtype": "both",
-    "var_446db2da": "tag_weapon_right",
+    "hash_446db2da": "tag_weapon_right",
     "name": "c_t8_zmb_dlc2_skeleton_spear_dst_def",
-    "var_4d756ec6": "#c_t8_zmb_dlc2_skeleton_helmet",
-    "var_125aa24f": 1,
-    "var_55d2a6b2": 2,
+    "hash_4d756ec6": "#c_t8_zmb_dlc2_skeleton_helmet",
+    "hash_125aa24f": 1,
+    "hash_55d2a6b2": 2,
     "piececount": 2,
-    "var_19e4a0d": "#c_t8_zmb_dlc2_skeleton_spear",
-    "var_56d63213": "j_head"
+    "hash_19e4a0d": "#c_t8_zmb_dlc2_skeleton_spear",
+    "hash_56d63213": "j_head"
 }

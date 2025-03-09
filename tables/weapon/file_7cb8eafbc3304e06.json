@@ -1,0 +1,32 @@
+{
+    "name": "#hash_7cb8eafbc3304e06",
+    "baseWeapon": "#null_offhand_primary",
+    "displayname": "#hash_324148041f3cf49d",
+    "streamkey": "#hash_2d999fa10c900b50",
+    "firesound": "#hash_69acb760c1a05692",
+    "firesoundplayer": "#hash_69acb760c1a05692",
+    "sound250": "#uin_unavailable_charging",
+    "projexplosionsound": "#wpn_grenade_explode",
+    "tunables1": "#hash_1d94f3912e0",
+    "xcam_8e8": "#hash_e602e473c324fc07",
+    "viewmodel": "#hash_1d93f03f030",
+    "sharedWeaponSounds_c08": "#equipment",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "gadgetIconAvailable": "#blacktransparent",
+    "gadgetIconUnavailable": "#blacktransparent",
+    "image_cb0": "#hash_f69fd7de2314b29a",
+    "image_cb8": "#hash_d5357e9eeff99b74",
+    "image_d40": "#blacktransparent",
+    "image_d48": "#blacktransparent",
+    "rumble_de8": "#grenade_rumble",
+    "image_e90": "#blacktransparent",
+    "image_eb0": "#hash_f42a313fee6ce09a",
+    "projectilemodel": "#wpn_t7_grenade_frag_projectile",
+    "fx_f00": "#hash_80e7395fb42d35f6",
+    "underwaterExplosionSurfaceFX": [
+        "#hash_5f190015ac9ded95",
+        "#hash_1206d75150c2464e",
+        "#hash_260fafe2e7ced71c"
+    ]
+}

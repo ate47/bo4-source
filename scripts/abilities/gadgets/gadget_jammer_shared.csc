@@ -6,7 +6,7 @@
 #namespace jammer;
 
 // Namespace jammer/gadget_jammer_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3f5dfa74, Offset: 0x128
 // Size: 0x8c
 function init_shared() {
@@ -21,7 +21,7 @@ function init_shared() {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x663fcb41, Offset: 0x1c0
 // Size: 0x1b4
 function private registerclientfields() {
@@ -34,7 +34,7 @@ function private registerclientfields() {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xac22788, Offset: 0x380
 // Size: 0xa4
 function jammeractive(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -47,7 +47,7 @@ function jammeractive(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x14f38c95, Offset: 0x430
 // Size: 0x180
 function function_43a5b68a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -73,7 +73,7 @@ function function_43a5b68a(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xcf00d11b, Offset: 0x5b8
 // Size: 0x1ae
 function player_isjammed(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -102,7 +102,7 @@ function player_isjammed(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x66aa00f8, Offset: 0x770
 // Size: 0x7c
 function function_e9e14905(localclientnum) {
@@ -114,7 +114,7 @@ function function_e9e14905(localclientnum) {
 }
 
 // Namespace jammer/gadget_jammer_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x43eb2d01, Offset: 0x7f8
 // Size: 0x9c
 function function_4a82368f(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

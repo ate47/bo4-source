@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace namespace_8a476bc7/namespace_8a476bc7
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa7a77724, Offset: 0xd8
 // Size: 0x5c
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace namespace_8a476bc7/namespace_8a476bc7
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x80f724d1, Offset: 0x140
 // Size: 0x4
 function private on_begin() {
@@ -34,7 +34,7 @@ function private on_begin() {
 }
 
 // Namespace namespace_8a476bc7/namespace_8a476bc7
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xde4b9aea, Offset: 0x150
 // Size: 0x144
 function private on_end(round_reset) {

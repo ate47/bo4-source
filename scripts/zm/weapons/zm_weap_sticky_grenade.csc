@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace sticky_grenade/zm_weap_sticky_grenade
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x425605af, Offset: 0xf0
 // Size: 0x32
 function __main__() {
@@ -22,7 +22,7 @@ function __main__() {
 }
 
 // Namespace sticky_grenade/zm_weap_sticky_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xce8d4ad6, Offset: 0x130
 // Size: 0x3c
 function spawned(localclientnum) {
@@ -33,7 +33,7 @@ function spawned(localclientnum) {
 }
 
 // Namespace sticky_grenade/zm_weap_sticky_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x25c6241, Offset: 0x178
 // Size: 0x132
 function fx_think(localclientnum) {
@@ -51,7 +51,7 @@ function fx_think(localclientnum) {
 }
 
 // Namespace sticky_grenade/zm_weap_sticky_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x54299ba3, Offset: 0x2b8
 // Size: 0x4a
 function start_light_fx(localclientnum) {
@@ -59,7 +59,7 @@ function start_light_fx(localclientnum) {
 }
 
 // Namespace sticky_grenade/zm_weap_sticky_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x18536842, Offset: 0x310
 // Size: 0x4e
 function stop_light_fx(localclientnum) {
@@ -70,7 +70,7 @@ function stop_light_fx(localclientnum) {
 }
 
 // Namespace sticky_grenade/zm_weap_sticky_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc81d2770, Offset: 0x368
 // Size: 0xc4
 function fullscreen_fx(localclientnum) {

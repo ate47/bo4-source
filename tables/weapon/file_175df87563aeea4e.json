@@ -1,0 +1,16 @@
+{
+    "name": "#hash_175df87563aeea4e",
+    "baseWeapon": "#dog_ai_defaultmelee",
+    "streamkey": "#hash_717013a19dda6a84",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "hitsound": "#hash_644a18cd873e501d",
+    "tunables1": "#hash_1d94257227c",
+    "sharedWeaponSounds_c08": "#dog_melee",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "image_e90": "#hash_18fbb14a21b0fd15",
+    "image_e98": "#hash_18fbb14a21b0fd15",
+    "underwaterExplosionSurfaceFX": [],
+    "var_2e4a8800": "#ability_dog_mp_scoreevents"
+}

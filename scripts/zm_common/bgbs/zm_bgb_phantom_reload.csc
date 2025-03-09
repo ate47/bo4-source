@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_phantom_reload/zm_bgb_phantom_reload
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4c1266de, Offset: 0xd0
 // Size: 0x4c
 function __init__() {

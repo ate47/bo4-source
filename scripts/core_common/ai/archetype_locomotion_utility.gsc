@@ -111,7 +111,7 @@ function autoexec registerbehaviorscriptfunctions() {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x51db5d78, Offset: 0x16d0
 // Size: 0x90
 function private locomotionisonstairs(behaviortreeentity) {
@@ -125,7 +125,7 @@ function private locomotionisonstairs(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x694f31ad, Offset: 0x1768
 // Size: 0x150
 function private locomotionshouldskipstairs(behaviortreeentity) {
@@ -149,7 +149,7 @@ function private locomotionshouldskipstairs(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xfbd44fea, Offset: 0x18c0
 // Size: 0x19c
 function private locomotionshouldlooponstairs(behaviortreeentity) {
@@ -179,7 +179,7 @@ function private locomotionshouldlooponstairs(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x22a422f0, Offset: 0x1a68
 // Size: 0x3a0
 function private locomotionstairsstart(behaviortreeentity) {
@@ -245,7 +245,7 @@ function private locomotionstairloopstart(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc39986c1, Offset: 0x1e80
 // Size: 0x4c
 function private locomotionstairsend(behaviortreeentity) {
@@ -254,7 +254,7 @@ function private locomotionstairsend(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x68ed932b, Offset: 0x1ed8
 // Size: 0x44
 function private locomotionpainbehaviorcondition(entity) {
@@ -262,7 +262,7 @@ function private locomotionpainbehaviorcondition(entity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8e5c9b0d, Offset: 0x1f28
 // Size: 0x24
 function clearpathfromscript(behaviortreeentity) {
@@ -270,7 +270,7 @@ function clearpathfromscript(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x4035587, Offset: 0x1f58
 // Size: 0x6c
 function private noncombatlocomotioncondition(behaviortreeentity) {
@@ -304,7 +304,7 @@ function private combatlocomotioncondition(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x691c16b, Offset: 0x2040
 // Size: 0x5c
 function private setdesiredstanceformovement(behaviortreeentity) {
@@ -314,7 +314,7 @@ function private setdesiredstanceformovement(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xbe7e677d, Offset: 0x20a8
 // Size: 0x7c
 function private locomotionshouldtraverse(behaviortreeentity) {
@@ -329,7 +329,7 @@ function private locomotionshouldtraverse(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x36855df2, Offset: 0x2130
 // Size: 0xa4
 function private locomotionshouldparametrictraverse(entity) {
@@ -345,7 +345,7 @@ function private locomotionshouldparametrictraverse(entity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2c577854, Offset: 0x21e0
 // Size: 0x7c
 function private function_5ef5b35a(behaviortreeentity) {
@@ -360,7 +360,7 @@ function private function_5ef5b35a(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xac045dc6, Offset: 0x2268
 // Size: 0xa4
 function private function_8a8c5d44(entity) {
@@ -376,7 +376,7 @@ function private function_8a8c5d44(entity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb892d16d, Offset: 0x2318
 // Size: 0x68
 function private traversesetup(behaviortreeentity) {
@@ -386,7 +386,7 @@ function private traversesetup(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7dcfa62e, Offset: 0x2388
 // Size: 0x210
 function traverseactionstart(behaviortreeentity, asmstatename) {
@@ -411,7 +411,7 @@ function traverseactionstart(behaviortreeentity, asmstatename) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7d3da67, Offset: 0x25a0
 // Size: 0x96
 function wpn_debug_bot_joinleave(behaviortreeentity, asmstatename) {
@@ -425,7 +425,7 @@ function wpn_debug_bot_joinleave(behaviortreeentity, asmstatename) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x9c7cbe99, Offset: 0x2640
 // Size: 0x1a
 function private disablerepath(entity) {
@@ -433,7 +433,7 @@ function private disablerepath(entity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x3024bb5e, Offset: 0x2668
 // Size: 0x1a
 function private enablerepath(entity) {
@@ -441,7 +441,7 @@ function private enablerepath(entity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb9312f44, Offset: 0x2690
 // Size: 0x2e
 function shouldstartarrivalcondition(behaviortreeentity) {
@@ -452,7 +452,7 @@ function shouldstartarrivalcondition(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3b19f646, Offset: 0x26c8
 // Size: 0x58
 function cleararrivalpos(behaviortreeentity) {
@@ -463,7 +463,7 @@ function cleararrivalpos(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa196adb1, Offset: 0x2728
 // Size: 0x48
 function delaymovement(entity) {
@@ -472,7 +472,7 @@ function delaymovement(entity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf29be643, Offset: 0x2778
 // Size: 0x50
 function private shouldadjuststanceattacticalwalk(behaviortreeentity) {
@@ -484,7 +484,7 @@ function private shouldadjuststanceattacticalwalk(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb44cf945, Offset: 0x27d0
 // Size: 0x60
 function private adjuststancetofaceenemyinitialize(behaviortreeentity) {
@@ -495,7 +495,7 @@ function private adjuststancetofaceenemyinitialize(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x5734c22d, Offset: 0x2838
 // Size: 0x34
 function private adjuststancetofaceenemyterminate(behaviortreeentity) {
@@ -503,7 +503,7 @@ function private adjuststancetofaceenemyterminate(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1f0e4168, Offset: 0x2878
 // Size: 0xa0
 function private tacticalwalkactionstart(behaviortreeentity) {
@@ -516,7 +516,7 @@ function private tacticalwalkactionstart(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x85737082, Offset: 0x2920
 // Size: 0x134
 function private validjukedirection(entity, entitynavmeshposition, forwardoffset, lateraloffset) {
@@ -534,7 +534,7 @@ function private validjukedirection(entity, entitynavmeshposition, forwardoffset
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x46f5fa11, Offset: 0x2a60
 // Size: 0x2d4
 function calculatejukedirection(entity, entityradius, jukedistance) {
@@ -576,7 +576,7 @@ function calculatejukedirection(entity, entityradius, jukedistance) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8634e656, Offset: 0x2d40
 // Size: 0x82
 function private calculatedefaultjukedirection(entity) {
@@ -592,7 +592,7 @@ function private calculatedefaultjukedirection(entity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2cc1c9ab, Offset: 0x2dd0
 // Size: 0xbc
 function canjuke(entity) {
@@ -607,7 +607,7 @@ function canjuke(entity) {
 }
 
 // Namespace aiutility/archetype_locomotion_utility
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf354215, Offset: 0x2e98
 // Size: 0x4c
 function choosejukedirection(entity) {

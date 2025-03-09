@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7f1f1c33, Offset: 0x3b0
 // Size: 0x184
 function __init__() {
@@ -35,7 +35,7 @@ function __init__() {
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8fbfd520, Offset: 0x540
 // Size: 0x4c
 function stoker_spawn_init(localclientnum) {
@@ -44,7 +44,7 @@ function stoker_spawn_init(localclientnum) {
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3a4be8e1, Offset: 0x598
 // Size: 0x2c
 function on_entity_shutdown(localclientnum) {
@@ -54,7 +54,7 @@ function on_entity_shutdown(localclientnum) {
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x681d2513, Offset: 0x5d0
 // Size: 0x9c
 function private crit_spot_reveal(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -65,7 +65,7 @@ function private crit_spot_reveal(localclientnum, oldvalue, newvalue, bnewent, b
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xb0eb3b3f, Offset: 0x678
 // Size: 0x3da
 function private stoker_fx_start(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -118,7 +118,7 @@ function private stoker_fx_start(localclientnum, oldvalue, newvalue, bnewent, bi
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x3a071ee5, Offset: 0xa60
 // Size: 0x342
 function private stoker_fx_stop(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -175,7 +175,7 @@ function private stoker_fx_stop(localclientnum, oldvalue, newvalue, bnewent, bin
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xbcb4a544, Offset: 0xdb0
 // Size: 0x17a
 function stoker_death_explosion(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -198,7 +198,7 @@ function stoker_death_explosion(localclientnum, oldvalue, newvalue, bnewent, bin
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd5c893bb, Offset: 0xf38
 // Size: 0x4ae
 function private function_d58cd2d5(localclientnum) {
@@ -255,7 +255,7 @@ function private function_d58cd2d5(localclientnum) {
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd322f1e6, Offset: 0x13f0
 // Size: 0x4c
 function private function_a88c80a3(model) {

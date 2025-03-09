@@ -59,7 +59,7 @@ function function_e963e37d() {
 // Size: 0x8c
 function function_dd4bf8ac(num) {
     if (self.pers[#"pickup_health"] < level.var_99a34951) {
-        self.pers[#"pickup_health"] = self.pers[#"pickup_health"] + num;
+        self.pers[#"pickup_health"] += num;
         self function_2bcfabea();
         return true;
     }

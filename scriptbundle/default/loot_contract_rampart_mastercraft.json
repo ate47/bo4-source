@@ -3,10 +3,10 @@
     "relateditemname": "#weapon/ar_damage_t8",
     "contracttitle": "#menu/contract_afterburner",
     "name": "loot_contract_rampart_mastercraft",
-    "var_69b5a265": "core_frontend_ar_damage_sig_02",
-    "var_4b258f2c": "#hash_360085279a89449d",
+    "hash_69b5a265": "core_frontend_ar_damage_sig_02",
+    "hash_4b258f2c": "#hash_360085279a89449d",
     "contractdescription": "#hash_7680bf2bc2219eb1",
-    "var_f15e270f": "#white",
-    "var_1c057e8c": "#loot07_ui_icon_blackmarket_itemshop_afterburner",
-    "var_e08fc162": "#hash_1a112bef02ef0efc"
+    "hash_f15e270f": "#white",
+    "hash_1c057e8c": "#loot07_ui_icon_blackmarket_itemshop_afterburner",
+    "hash_e08fc162": "#hash_1a112bef02ef0efc"
 }

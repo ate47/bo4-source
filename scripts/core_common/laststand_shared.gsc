@@ -4,7 +4,7 @@
 #namespace laststand;
 
 // Namespace laststand/laststand_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd3ba837, Offset: 0x78
 // Size: 0x18
 function player_is_in_laststand() {
@@ -12,7 +12,7 @@ function player_is_in_laststand() {
 }
 
 // Namespace laststand/laststand_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe5694f8c, Offset: 0x98
 // Size: 0x7a
 function player_num_in_laststand() {

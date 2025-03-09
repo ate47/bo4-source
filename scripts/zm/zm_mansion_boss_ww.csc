@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7358344f, Offset: 0x1b8
 // Size: 0x24
 function __init__() {
@@ -33,7 +33,7 @@ function __init__() {
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xafa924b0, Offset: 0x1e8
 // Size: 0x2fc
 function init_clientfields() {
@@ -49,7 +49,7 @@ function init_clientfields() {
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3c7d5b7c, Offset: 0x4f0
 // Size: 0x182
 function init_fx() {
@@ -64,7 +64,7 @@ function init_fx() {
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd6e9a896, Offset: 0x680
 // Size: 0x5c
 function function_6e123c7b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -72,7 +72,7 @@ function function_6e123c7b(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x654a1bae, Offset: 0x6e8
 // Size: 0x104
 function function_a346a156(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -90,7 +90,7 @@ function function_a346a156(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb1e18a5d, Offset: 0x7f8
 // Size: 0xb4
 function function_72efa790(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -106,7 +106,7 @@ function function_72efa790(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x28bca168, Offset: 0x8b8
 // Size: 0x11e
 function function_f389e70d(localclientnum) {
@@ -128,7 +128,7 @@ function function_f389e70d(localclientnum) {
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6d3b7f75, Offset: 0x9e0
 // Size: 0xa4
 function function_931bac5a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -140,7 +140,7 @@ function function_931bac5a(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc938e6fa, Offset: 0xa90
 // Size: 0x38a
 function function_1d15a456(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -169,7 +169,7 @@ function function_1d15a456(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x10171374, Offset: 0xe28
 // Size: 0x15c
 function function_444660d9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -197,7 +197,7 @@ function function_444660d9(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xff02dc54, Offset: 0xf90
 // Size: 0xc6
 function function_abea158a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -212,7 +212,7 @@ function function_abea158a(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6a83682e, Offset: 0x1060
 // Size: 0xc6
 function function_b5901c02(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -227,7 +227,7 @@ function function_b5901c02(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xafa813c4, Offset: 0x1130
 // Size: 0xac
 function function_2a48bf1c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

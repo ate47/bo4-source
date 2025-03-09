@@ -13,7 +13,7 @@
                             "stageimage": "#hash_5a5e52848e6328d3"
                         }
                     ],
-                    "var_1d91eeba": 2,
+                    "hash_1d91eeba": 2,
                     "clientfield": "#hash_46e7cf2b7aa7c22"
                 },
                 {
@@ -27,11 +27,11 @@
                             "stageimage": "#hash_17884640cc79cbb5"
                         }
                     ],
-                    "var_1d91eeba": 2,
+                    "hash_1d91eeba": 2,
                     "clientfield": "#hash_d3e328bb2670edf"
                 }
             ],
-            "var_b048489f": 2
+            "hash_b048489f": 2
         }
     ],
     "shieldpieces": [
@@ -59,7 +59,7 @@
                                     "stageimage": "#hash_210536e4be42ef04"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#hash_3250b2a811943f26"
                         },
                         {
@@ -68,7 +68,7 @@
                                     "stageimage": "#hash_70109bca5336af3f"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#hash_3250b1a811943d73"
                         },
                         {
@@ -77,14 +77,14 @@
                                     "stageimage": "#hash_7fd21984ebe5983d"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#hash_3250b0a811943bc0"
                         }
                     ],
                     "list_items": 3
                 }
             ],
-            "var_516217cd": 1,
+            "hash_516217cd": 1,
             "name": "trap parts"
         }
     ],
@@ -202,7 +202,7 @@
                     "stageimage": "#hash_41d9193b20e08f2e"
                 }
             ],
-            "var_1d91eeba": 3,
+            "hash_1d91eeba": 3,
             "clientfield": "#hash_4fce42c559430ff9"
         },
         {
@@ -217,7 +217,7 @@
                     "stageimage": "#hash_41d9193b20e08f2e"
                 }
             ],
-            "var_1d91eeba": 3,
+            "hash_1d91eeba": 3,
             "clientfield": "#hash_61f69ed4cbd8f2f5"
         },
         {
@@ -232,7 +232,7 @@
                     "stageimage": "#hash_453f84c3b5e6660f"
                 }
             ],
-            "var_1d91eeba": 3,
+            "hash_1d91eeba": 3,
             "clientfield": "#hash_6257a73f22800e57"
         },
         {
@@ -247,23 +247,23 @@
                     "stageimage": "#hash_78d40d61b260bc05"
                 }
             ],
-            "var_1d91eeba": 3,
+            "hash_1d91eeba": 3,
             "clientfield": "#hash_5114ed99a6bad03b"
         }
     ],
     "objectivebackground": "#hash_7caa43a24c715df",
-    "var_5a90928f": "#zm_towers_challenges",
+    "hash_5a90928f": "#zm_towers_challenges",
     "configstringfiletype": "scriptbundle",
-    "var_aa76b7dd": 6,
-    "var_6fa1ca44": 1,
+    "hash_aa76b7dd": 6,
+    "hash_6fa1ca44": 1,
     "type": "zminventory",
-    "var_af62a8e8": 3,
+    "hash_af62a8e8": 3,
     "name": "zm_inventory_towers",
-    "var_f128673a": "#hash_2028b2c0395c86bf",
-    "var_a05daa90": 4,
-    "var_c029b82f": 1,
-    "var_846fa8e": "#zm_towers_objective_progress",
-    "var_f22d6ad5": 16,
-    "var_f7d932ea": "#zm_towers_challenges_progress",
-    "var_16fb993f": "#hash_30727aefda60cbd4"
+    "hash_f128673a": "#hash_2028b2c0395c86bf",
+    "hash_a05daa90": 4,
+    "hash_c029b82f": 1,
+    "hash_846fa8e": "#zm_towers_objective_progress",
+    "hash_f22d6ad5": 16,
+    "hash_f7d932ea": "#zm_towers_challenges_progress",
+    "hash_16fb993f": "#hash_30727aefda60cbd4"
 }

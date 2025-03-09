@@ -20,7 +20,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace wz_jukebox/wz_jukebox
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8445301b, Offset: 0x178
 // Size: 0x1a0
 function function_2bf3c36e() {
@@ -42,7 +42,7 @@ function function_2bf3c36e() {
 }
 
 // Namespace wz_jukebox/wz_jukebox
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x4500372, Offset: 0x320
 // Size: 0x64
 function function_1f3a1c47(activator, laststate, state) {
@@ -75,20 +75,20 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
 }
 
 // Namespace wz_jukebox/wz_jukebox
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf1d3a7e8, Offset: 0x488
 // Size: 0x24
 function function_d143760c() {
     wait 2;
-    function_e2a06860(self, 2);
+    setdynentstate(self, 2);
 }
 
 // Namespace wz_jukebox/wz_jukebox
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa12f714f, Offset: 0x4b8
 // Size: 0x24
 function function_b55a0a4() {
     wait 2;
-    function_e2a06860(self, 1);
+    setdynentstate(self, 1);
 }
 

@@ -1,0 +1,21 @@
+{
+    "name": "#hash_7be411e83fb08e05",
+    "baseWeapon": "#killstreak_ai_tank",
+    "displayname": "#hash_780c03071ddf119d",
+    "unk70": "#hash_6b54c7c007c1f34d",
+    "streamkey": "#hash_2b86cdd80b130c3d",
+    "sound660": "#uin_unavailable_charging",
+    "projexplosionsound": "#hash_20cda79cd396562",
+    "tunables1": "#hash_1d942572410",
+    "viewmodel": "#hash_1d931a15a90",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "gadgetIconAvailable": "#hash_c696dec8ff46471c",
+    "gadgetIconUnavailable": "#hash_b9152d10a5259af4",
+    "image_e90": "#hash_fa04720fdc28b728",
+    "crateObjective": "#hash_3c7c319783c8522",
+    "underwaterExplosionSurfaceFX": [],
+    "var_96850284": "#jammer_tankrobot",
+    "var_2e4a8800": "#remote_missile_scoreevents",
+    "image_1048": "#hash_4ea518bb165feed6"
+}

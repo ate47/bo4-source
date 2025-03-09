@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trial_mansion_billiards/zm_trial_mansion_billiards
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2d12d7de, Offset: 0xe8
 // Size: 0x5c
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace zm_trial_mansion_billiards/zm_trial_mansion_billiards
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x44092883, Offset: 0x150
 // Size: 0x1c
 function private on_begin() {
@@ -36,7 +36,7 @@ function private on_begin() {
 }
 
 // Namespace zm_trial_mansion_billiards/zm_trial_mansion_billiards
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x60519e41, Offset: 0x178
 // Size: 0x7c
 function private on_end(round_reset) {
@@ -48,7 +48,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_trial_mansion_billiards/zm_trial_mansion_billiards
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x2ea5ae66, Offset: 0x200
 // Size: 0x9c
 function private function_b7bc0616() {
@@ -62,7 +62,7 @@ function private function_b7bc0616() {
 }
 
 // Namespace zm_trial_mansion_billiards/zm_trial_mansion_billiards
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xf46d3f03, Offset: 0x2a8
 // Size: 0xfc
 function private function_f5ad51bd() {
@@ -78,7 +78,7 @@ function private function_f5ad51bd() {
 }
 
 // Namespace zm_trial_mansion_billiards/zm_trial_mansion_billiards
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xc10baf82, Offset: 0x3b0
 // Size: 0xe2
 function private enable_newtonian_negation() {

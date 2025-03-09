@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 // Checksum 0x122ec45f, Offset: 0xc8
 // Size: 0x74
 function __init__() {
-    character_unlock_fixup::register_character_unlock(#"mason_unlock", #"hash_72350169be9133ae", #"cu19_item", &function_d95e620c, #"hash_7334970069e5e147", #"hash_7334980069e5e2fa");
+    character_unlock_fixup::register_character_unlock(#"mason_unlock", #"prt_wz_mason", #"cu19_item", &function_d95e620c, #"hash_7334970069e5e147", #"hash_7334980069e5e2fa");
 }
 
 // Namespace character_unlock_mason_fixup/character_unlock_mason_fixup

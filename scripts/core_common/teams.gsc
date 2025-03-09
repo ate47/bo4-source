@@ -1,7 +1,7 @@
 #namespace teams;
 
 // Namespace teams/teams
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1b930823, Offset: 0x68
 // Size: 0x14c
 function function_dc7eaabd(assignment) {
@@ -25,7 +25,7 @@ function function_dc7eaabd(assignment) {
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3730f504, Offset: 0x1c0
 // Size: 0x11a
 function function_3d288f14() {
@@ -54,7 +54,7 @@ function function_3d288f14() {
 }
 
 // Namespace teams/teams
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5827011, Offset: 0x2e8
 // Size: 0x42
 function is_team_empty(team) {
@@ -66,7 +66,7 @@ function is_team_empty(team) {
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x166658c5, Offset: 0x338
 // Size: 0xea
 function function_959bac94() {

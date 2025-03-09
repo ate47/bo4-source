@@ -14,7 +14,7 @@
 #namespace gadget_radiation_field;
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x79e691eb, Offset: 0x328
 // Size: 0x174
 function init_shared() {
@@ -32,7 +32,7 @@ function init_shared() {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf550e862, Offset: 0x4a8
 // Size: 0x11c
 function on_ready(slot, weapon) {
@@ -50,7 +50,7 @@ function on_ready(slot, weapon) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1c138f01, Offset: 0x5d0
 // Size: 0x1a
 function function_6ca75924(func) {
@@ -58,7 +58,7 @@ function function_6ca75924(func) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3bc97212, Offset: 0x5f8
 // Size: 0x184
 function on_player_spawned() {
@@ -86,7 +86,7 @@ function on_player_spawned() {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 11, eflags: 0x1 linked
+// Params 11, eflags: 0x0
 // Checksum 0x7cbe171d, Offset: 0x788
 // Size: 0x156
 function player_damage_override(einflictor, eattacker, idamage, idflags, mod, weapon, vpoint, vdir, shitloc, modelindex, psoffsettime) {
@@ -104,7 +104,7 @@ function player_damage_override(einflictor, eattacker, idamage, idflags, mod, we
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6bc897d4, Offset: 0x8e8
 // Size: 0x358
 function sndonoverride_eye_() {
@@ -162,7 +162,7 @@ function sndonoverride_eye_() {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4542300, Offset: 0xc48
 // Size: 0x44
 function vecscale(vec, scalar) {
@@ -170,7 +170,7 @@ function vecscale(vec, scalar) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9ef92bef, Offset: 0xc98
 // Size: 0x14c
 function on_player_killed(s_params) {
@@ -189,7 +189,7 @@ function on_player_killed(s_params) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8f5b6bbf, Offset: 0xdf0
 // Size: 0x4b4
 function function_1503c832(weapon) {
@@ -233,7 +233,7 @@ function function_1503c832(weapon) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x99469bf6, Offset: 0x12b0
 // Size: 0x5e
 function state_watch(state_id, time) {
@@ -246,7 +246,7 @@ function state_watch(state_id, time) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x77b56826, Offset: 0x1318
 // Size: 0x122
 function function_c5a2e918() {
@@ -271,7 +271,7 @@ function function_408b42b4(val, arg) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2f833e75, Offset: 0x1488
 // Size: 0x7c
 function function_7e96addd(var_4411cc03, player) {
@@ -286,7 +286,7 @@ function function_7e96addd(var_4411cc03, player) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 11, eflags: 0x1 linked
+// Params 11, eflags: 0x0
 // Checksum 0xdbb003aa, Offset: 0x1510
 // Size: 0x1036
 function damage_state(state_id, weapon, min_radius, max_radius, min_height, max_height, duration, var_32900164, loop_sound, var_d68ee2ab, killcament) {
@@ -474,26 +474,26 @@ function damage_state(state_id, weapon, min_radius, max_radius, min_height, max_
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x23091270, Offset: 0x2550
 // Size: 0x2cc
 function function_a1cc4c59(weapon, killcament) {
     player = self;
     player endon(#"radiation_shutdown", #"disconnect");
     player.var_5350f794 = undefined;
-    damage_state(1, weapon, level.radiationfield_bundle.var_4d16c61f, level.radiationfield_bundle.var_9c3a936e, level.radiationfield_bundle.var_de0396ad, level.radiationfield_bundle.var_c5085bcb, level.radiationfield_bundle.baseduration, level.radiationfield_bundle.var_1acd89e2, level.radiationfield_bundle.var_e5a95fca, undefined, killcament);
-    damage_state(2, weapon, level.radiationfield_bundle.var_9c3a936e, level.radiationfield_bundle.var_2b4199b5, level.radiationfield_bundle.var_c5085bcb, level.radiationfield_bundle.midheight, level.radiationfield_bundle.var_500496c9, level.radiationfield_bundle.var_1acd89e2, level.radiationfield_bundle.var_e5a95fca, undefined, killcament);
+    damage_state(1, weapon, level.radiationfield_bundle.var_4d16c61f, level.radiationfield_bundle.var_9c3a936e, level.radiationfield_bundle.baseheightmin, level.radiationfield_bundle.baseheightmax, level.radiationfield_bundle.baseduration, level.radiationfield_bundle.var_1acd89e2, level.radiationfield_bundle.var_e5a95fca, undefined, killcament);
+    damage_state(2, weapon, level.radiationfield_bundle.var_9c3a936e, level.radiationfield_bundle.var_2b4199b5, level.radiationfield_bundle.baseheightmax, level.radiationfield_bundle.midheight, level.radiationfield_bundle.var_500496c9, level.radiationfield_bundle.var_1acd89e2, level.radiationfield_bundle.var_e5a95fca, undefined, killcament);
     player playlocalsound(#"hash_352529c7ca9f6143");
     player hide_player();
     player.var_d44d1214 clientfield::set("self_destruct_start", 1);
     player function_6b83f6a9(1);
     player function_ad7b9f4a("RAISEWEAPON", weapon, 0, 0, 1, 0);
-    damage_state(3, weapon, level.radiationfield_bundle.var_2b4199b5, level.radiationfield_bundle.var_cbe3d2b8, level.radiationfield_bundle.midheight, level.radiationfield_bundle.var_39410f07, level.radiationfield_bundle.finalduration, level.radiationfield_bundle.var_3ef39bc5, level.radiationfield_bundle.var_d0e0a088, level.radiationfield_bundle.var_8d1e6357, killcament);
+    damage_state(3, weapon, level.radiationfield_bundle.var_2b4199b5, level.radiationfield_bundle.var_cbe3d2b8, level.radiationfield_bundle.midheight, level.radiationfield_bundle.finalheight, level.radiationfield_bundle.finalduration, level.radiationfield_bundle.var_3ef39bc5, level.radiationfield_bundle.var_d0e0a088, level.radiationfield_bundle.var_8d1e6357, killcament);
     player function_c5a2e918();
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf0192a97, Offset: 0x2828
 // Size: 0xa2
 function function_3cbab338(var_fb096220) {
@@ -508,7 +508,7 @@ function function_3cbab338(var_fb096220) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x79e7ffe7, Offset: 0x28d8
 // Size: 0x17c
 function function_579fff1b() {
@@ -530,7 +530,7 @@ function function_579fff1b() {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3b2a49cd, Offset: 0x2a60
 // Size: 0x54
 function waitanddelete(time) {
@@ -541,7 +541,7 @@ function waitanddelete(time) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5321ab29, Offset: 0x2ac0
 // Size: 0x392
 function shutdown(var_fb096220) {
@@ -595,7 +595,7 @@ function shutdown(var_fb096220) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2e98be73, Offset: 0x2e60
 // Size: 0x22
 function hide_player() {
@@ -604,7 +604,7 @@ function hide_player() {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf1d51897, Offset: 0x2e90
 // Size: 0x4e
 function function_91e05fa7() {
@@ -615,7 +615,7 @@ function function_91e05fa7() {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc75f3498, Offset: 0x2ee8
 // Size: 0x184
 function gadget_on(slot, weapon) {
@@ -644,7 +644,7 @@ function gadget_on(slot, weapon) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x14c77055, Offset: 0x3078
 // Size: 0x3c
 function gadget_off(slot, weapon) {
@@ -653,7 +653,7 @@ function gadget_off(slot, weapon) {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x47192cad, Offset: 0x30c0
 // Size: 0xc
 function function_831bf182() {
@@ -672,7 +672,7 @@ function get_power() {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x67bc91f5, Offset: 0x3120
 // Size: 0x4c
 function deactivate_gadget() {

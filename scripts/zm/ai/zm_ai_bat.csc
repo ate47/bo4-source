@@ -23,7 +23,7 @@ function autoexec main() {
 }
 
 // Namespace bat/zm_ai_bat
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x6f7a6d59, Offset: 0x1b0
 // Size: 0xb4
 function private function_9b3fe343(localclientnum) {
@@ -36,7 +36,7 @@ function private function_9b3fe343(localclientnum) {
 }
 
 // Namespace bat/zm_ai_bat
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xccfda227, Offset: 0x270
 // Size: 0xdc
 function battransformfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

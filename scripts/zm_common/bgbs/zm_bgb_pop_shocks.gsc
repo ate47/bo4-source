@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_pop_shocks/zm_bgb_pop_shocks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc87d4dc8, Offset: 0x138
 // Size: 0xec
 function __init__() {
@@ -33,7 +33,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_pop_shocks/zm_bgb_pop_shocks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc75a02f5, Offset: 0x230
 // Size: 0x60
 function event() {
@@ -45,7 +45,7 @@ function event() {
 }
 
 // Namespace zm_bgb_pop_shocks/zm_bgb_pop_shocks
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0xb760c441, Offset: 0x298
 // Size: 0xd0
 function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -56,7 +56,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
 }
 
 // Namespace zm_bgb_pop_shocks/zm_bgb_pop_shocks
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0x9671f601, Offset: 0x370
 // Size: 0xc8
 function vehicle_damage_override(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
@@ -67,7 +67,7 @@ function vehicle_damage_override(einflictor, eattacker, idamage, idflags, smeans
 }
 
 // Namespace zm_bgb_pop_shocks/zm_bgb_pop_shocks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x96dcae, Offset: 0x440
 // Size: 0x1a8
 function function_40383770(target) {
@@ -92,7 +92,7 @@ function function_40383770(target) {
 }
 
 // Namespace zm_bgb_pop_shocks/zm_bgb_pop_shocks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x554ade41, Offset: 0x5f0
 // Size: 0x15a
 function electrocute_actor(ai) {
@@ -100,7 +100,7 @@ function electrocute_actor(ai) {
     if (!isdefined(ai) || !isalive(ai)) {
         return;
     }
-    if (!isdefined(ai.var_6f84b820)) {
+    if (!isdefined(ai.zm_ai_category)) {
         return;
     }
     bhtnactionstartevent(ai, "electrocute");
@@ -111,7 +111,7 @@ function electrocute_actor(ai) {
     create_lightning_params();
     ai.tesla_death = 0;
     ai thread arc_damage_init(self);
-    switch (ai.var_6f84b820) {
+    switch (ai.zm_ai_category) {
     case #"popcorn":
     case #"basic":
     case #"enhanced":
@@ -121,7 +121,7 @@ function electrocute_actor(ai) {
 }
 
 // Namespace zm_bgb_pop_shocks/zm_bgb_pop_shocks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x16c74e98, Offset: 0x758
 // Size: 0x62
 function create_lightning_params() {
@@ -132,7 +132,7 @@ function create_lightning_params() {
 }
 
 // Namespace zm_bgb_pop_shocks/zm_bgb_pop_shocks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xee100cc6, Offset: 0x7c8
 // Size: 0x5c
 function arc_damage_init(player) {
@@ -144,7 +144,7 @@ function arc_damage_init(player) {
 }
 
 // Namespace zm_bgb_pop_shocks/zm_bgb_pop_shocks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8c53c5d7, Offset: 0x830
 // Size: 0x1c4
 function tesla_death(player) {
@@ -163,7 +163,7 @@ function tesla_death(player) {
 }
 
 // Namespace zm_bgb_pop_shocks/zm_bgb_pop_shocks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8c171e23, Offset: 0xa00
 // Size: 0x144
 function function_f724a242(random_gibs) {

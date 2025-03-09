@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_ai_ghost/zm_ai_ghost
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbf2f079c, Offset: 0xc8
 // Size: 0x34
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace zm_ai_ghost/zm_ai_ghost
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7a0585e, Offset: 0x108
 // Size: 0x24
 function private function_e7d2a256(localclientnum) {
@@ -29,7 +29,7 @@ function private function_e7d2a256(localclientnum) {
 }
 
 // Namespace zm_ai_ghost/zm_ai_ghost
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x678fb026, Offset: 0x138
 // Size: 0x106
 function private function_20705e4c(localclientnum) {

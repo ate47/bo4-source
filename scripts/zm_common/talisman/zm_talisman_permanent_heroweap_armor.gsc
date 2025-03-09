@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_talisman_permanent_heroweap_armor/zm_talisman_permanent_heroweap_armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb8a0a5c, Offset: 0x120
 // Size: 0x2c
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zm_talisman_permanent_heroweap_armor/zm_talisman_permanent_heroweap_armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1b67f77, Offset: 0x158
 // Size: 0x12
 function activate_talisman() {

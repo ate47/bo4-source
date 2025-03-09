@@ -5,7 +5,7 @@
     "weapon": "weapon#hash_5908bed1355cbb74",
     "type": "itemspawnentry",
     "angleoffsetz": 35,
-    "var_65b3a12": 6,
+    "hash_65b3a12": 6,
     "name": "ww_crossbow_impaler_t8_item",
     "icon": "#hash_51176b2ff9f4113e",
     "modelscale": 1,

@@ -6,7 +6,7 @@ CHECKSUM 0x19445b11
 ######################################################
 # globallogic_ui::menuautoassign@184
 STRING "<dev string:x38>" 0x74c
-# globallogic_ui::function_9ed118fe@40
+# globallogic_ui::menuspecialist@40
 STRING "<dev string:x3b>" 0x1aa0
 ######################################################
 ####################  DEV BLOCKS  ####################
@@ -25,5 +25,5 @@ DEVBLOCK 0xa12
 DEVBLOCK 0xb8e
 # globallogic_ui::showmainmenuforteam@a
 DEVBLOCK 0xe62
-# globallogic_ui::function_9ed118fe@36
+# globallogic_ui::menuspecialist@36
 DEVBLOCK 0x1a96

@@ -1,0 +1,24 @@
+{
+    "name": "#hash_4ac5cafd859880e6",
+    "baseWeapon": "#pickup_health_regen",
+    "displayname": "#hash_5b5fd29ea88516ff",
+    "unk70": "#gadget_health_regen",
+    "streamkey": "#hash_2d89dc4ea4c9f31c",
+    "sound240": "#hash_447be07e5ef9bfe0",
+    "sound250": "#uin_unavailable_charging",
+    "sound320": "#hash_307304d46846fc74",
+    "sound3b0": "#hash_390aa7d4252c46b5",
+    "gadgetreadysoundplayer": "#hash_1215b3e8d1be983b",
+    "sound660": "#uin_unavailable_charging",
+    "tunables1": "#hash_1d9425726ec",
+    "viewmodel": "#hash_1d939495e90",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [
+        "#hash_2624c86681a513d3"
+    ],
+    "gadgetIconAvailable": "#uie_hud_common_core_icon_heal",
+    "gadgetIconUnavailable": "#uie_hud_common_core_icon_heal_dark",
+    "image_cb8": "#hash_ca8bad72d298364b",
+    "image_d48": "#$blacktransparent",
+    "underwaterExplosionSurfaceFX": []
+}

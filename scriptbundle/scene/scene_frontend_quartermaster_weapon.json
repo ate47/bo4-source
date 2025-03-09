@@ -10,7 +10,7 @@
                         }
                     ],
                     "name": "edit",
-                    "var_ffc10b65": "quartermaster_weapon"
+                    "hash_ffc10b65": "quartermaster_weapon"
                 }
             ],
             "model": "#tag_origin",

@@ -119,7 +119,7 @@ function update_previs(localclientnum, invalid) {
             trace1 = bullettrace(trace1[#"position"], trace1[#"position"] + (0, 0, -1000), 0, player, 1);
         }
     } else {
-        trace1 = function_e6ba3ec9(eye_pos, velocity, 0, weapon);
+        trace1 = projectiletrace(eye_pos, velocity, 0, weapon);
     }
     level.var_9c4cdb79[localclientnum].origin = trace1[#"position"] + vectorscale(trace1[#"normal"], 7);
     level.var_9c4cdb79[localclientnum].angles = (0, vectortoangles(forward)[1] + 90, 0);

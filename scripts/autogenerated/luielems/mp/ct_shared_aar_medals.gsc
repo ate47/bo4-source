@@ -7,14 +7,14 @@
 // Method(s) 9 Total 16
 class cct_shared_aar_medals : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals
     // Params 2, eflags: 0x0
     // Checksum 0x4e966a6d, Offset: 0x638
     // Size: 0x3c
     function set_medalbronzethreshold(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "medalBronzeThreshold", value);
+        player clientfield::function_9bf78ef8(_uid, "medalBronzeThreshold", value);
     }
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals
@@ -22,7 +22,7 @@ class cct_shared_aar_medals : cluielem {
     // Checksum 0x28684ab2, Offset: 0x5f0
     // Size: 0x3c
     function set_medalsilverthreshold(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "medalSilverThreshold", value);
+        player clientfield::function_9bf78ef8(_uid, "medalSilverThreshold", value);
     }
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals
@@ -30,7 +30,7 @@ class cct_shared_aar_medals : cluielem {
     // Checksum 0x1ace2c05, Offset: 0x5a8
     // Size: 0x3c
     function set_medalgoldthreshold(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "medalGoldThreshold", value);
+        player clientfield::function_9bf78ef8(_uid, "medalGoldThreshold", value);
     }
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals
@@ -39,23 +39,23 @@ class cct_shared_aar_medals : cluielem {
     // Size: 0x17c
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(_uid, "_state", 0);
             return;
         }
         if (#"medal_gold" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(_uid, "_state", 1);
             return;
         }
         if (#"medal_silver" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 2);
+            player clientfield::function_9bf78ef8(_uid, "_state", 2);
             return;
         }
         if (#"medal_bronze" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 3);
+            player clientfield::function_9bf78ef8(_uid, "_state", 3);
             return;
         }
         if (#"medal_none" == state_name) {
-            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 4);
+            player clientfield::function_9bf78ef8(_uid, "_state", 4);
             return;
         }
         assertmsg("<dev string:x38>");

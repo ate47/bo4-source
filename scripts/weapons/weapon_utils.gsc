@@ -1,7 +1,7 @@
 #namespace weapon_utils;
 
 // Namespace weapon_utils/weapon_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4a1ad897, Offset: 0x128
 // Size: 0x1e
 function ispistol(weapon) {
@@ -9,7 +9,7 @@ function ispistol(weapon) {
 }
 
 // Namespace weapon_utils/weapon_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf83614a9, Offset: 0x150
 // Size: 0x28
 function isflashorstunweapon(weapon) {
@@ -17,7 +17,7 @@ function isflashorstunweapon(weapon) {
 }
 
 // Namespace weapon_utils/weapon_utils
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x618b7ebe, Offset: 0x180
 // Size: 0x50
 function isflashorstundamage(weapon, meansofdeath) {
@@ -25,7 +25,7 @@ function isflashorstundamage(weapon, meansofdeath) {
 }
 
 // Namespace weapon_utils/weapon_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb1ad4896, Offset: 0x1d8
 // Size: 0x3e
 function ismeleemod(mod) {
@@ -33,7 +33,7 @@ function ismeleemod(mod) {
 }
 
 // Namespace weapon_utils/weapon_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x675da21, Offset: 0x220
 // Size: 0x74
 function isexplosivedamage(meansofdeath) {
@@ -49,7 +49,7 @@ function isexplosivedamage(meansofdeath) {
 }
 
 // Namespace weapon_utils/weapon_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9b79c00f, Offset: 0x2a0
 // Size: 0x3e
 function ispunch(weapon) {
@@ -73,7 +73,7 @@ function isnonbarehandsmelee(weapon) {
 }
 
 // Namespace weapon_utils/weapon_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x36e94f65, Offset: 0x388
 // Size: 0x3e
 function isbulletdamage(meansofdeath) {
@@ -81,7 +81,7 @@ function isbulletdamage(meansofdeath) {
 }
 
 // Namespace weapon_utils/weapon_utils
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe8cccb66, Offset: 0x3d0
 // Size: 0x78
 function isfiredamage(weapon, meansofdeath) {

@@ -23,7 +23,7 @@ class class_358332cc {
     var var_dad0959b;
 
     // Namespace class_358332cc/vehicleriders_shared
-    // Params 0, eflags: 0x9 linked
+    // Params 0, eflags: 0x8
     // Checksum 0x96b9ab5e, Offset: 0xa00
     // Size: 0x4a
     constructor() {
@@ -48,7 +48,7 @@ function autoexec init() {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x4b46cf70, Offset: 0x278
 // Size: 0x270
 function private function_d64f1d30() {
@@ -75,7 +75,7 @@ function private function_d64f1d30() {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc606949f, Offset: 0x4f0
 // Size: 0x4c
 function function_196797c9(vehicle) {
@@ -87,7 +87,7 @@ function function_196797c9(vehicle) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb25143c, Offset: 0x548
 // Size: 0xc
 function private function_810a3de5(vehicle) {
@@ -95,7 +95,7 @@ function private function_810a3de5(vehicle) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe5a923dc, Offset: 0x560
 // Size: 0xf0
 function private function_41cf7b1d(vehicle) {
@@ -112,7 +112,7 @@ function private function_41cf7b1d(vehicle) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x664c819, Offset: 0x658
 // Size: 0xe6
 function private function_f7ce77b(vehicle) {
@@ -129,7 +129,7 @@ function private function_f7ce77b(vehicle) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7f9b887e, Offset: 0x748
 // Size: 0xe6
 function private function_2453a4a2(vehicle) {
@@ -146,7 +146,7 @@ function private function_2453a4a2(vehicle) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2569e966, Offset: 0x838
 // Size: 0xfa
 function private function_72b503cc(vehicle) {
@@ -164,7 +164,7 @@ function private function_72b503cc(vehicle) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x309b2800, Offset: 0x940
 // Size: 0xb6
 function function_999240f5(vehicle) {
@@ -181,7 +181,7 @@ function function_999240f5(vehicle) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xa960864c, Offset: 0xaf8
 // Size: 0x448
 function private on_vehicle_spawned() {
@@ -247,7 +247,7 @@ function private on_vehicle_spawned() {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x82c65603, Offset: 0xf48
 // Size: 0xe6
 function private function_e1008fbd(vehicle) {
@@ -263,7 +263,7 @@ function private function_e1008fbd(vehicle) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xf720f08a, Offset: 0x1038
 // Size: 0xa4
 function private function_2cec1af6(vehicle, seat) {
@@ -285,7 +285,7 @@ function private function_2e28cc0(vehicle, seat) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x64b69c6a, Offset: 0x1198
 // Size: 0x6a
 function get_human_bundle(assertifneeded = 1) {
@@ -296,7 +296,7 @@ function get_human_bundle(assertifneeded = 1) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb0ba09fa, Offset: 0x1210
 // Size: 0x6a
 function get_robot_bundle(assertifneeded = 1) {
@@ -307,7 +307,7 @@ function get_robot_bundle(assertifneeded = 1) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xee3cb2dd, Offset: 0x1288
 // Size: 0x6a
 function get_warlord_bundle(assertifneeded = 1) {
@@ -318,7 +318,7 @@ function get_warlord_bundle(assertifneeded = 1) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x89ed7695, Offset: 0x1300
 // Size: 0x142
 function private function_e84837df(ai, vehicle) {
@@ -336,7 +336,7 @@ function private function_e84837df(ai, vehicle) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1ddeae75, Offset: 0x1450
 // Size: 0xee
 function function_b9342b7d(ai, vehicle, seat) {
@@ -351,7 +351,7 @@ function function_b9342b7d(ai, vehicle, seat) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x9dbbae75, Offset: 0x1548
 // Size: 0x26c
 function private init_rider(ai, vehicle, seat) {
@@ -438,7 +438,7 @@ function fill_riders(a_ai, vehicle, seat) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x43ec07a3, Offset: 0x1c58
 // Size: 0x322
 function unload(seat) {
@@ -489,7 +489,7 @@ function unload(seat) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb176b39a, Offset: 0x1f88
 // Size: 0x1d4
 function private function_114d7bd3(vehicle) {
@@ -512,7 +512,7 @@ function private function_114d7bd3(vehicle) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa1b7ceca, Offset: 0x2168
 // Size: 0x1d4
 function private function_b56639f2(vehicle) {
@@ -535,7 +535,7 @@ function private function_b56639f2(vehicle) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x76edbf39, Offset: 0x2348
 // Size: 0x1d4
 function private function_2ef91b74(vehicle) {
@@ -558,7 +558,7 @@ function private function_2ef91b74(vehicle) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1a61a6f6, Offset: 0x2528
 // Size: 0x374
 function private function_2ca26543(vehicle) {
@@ -604,7 +604,7 @@ function private function_2ca26543(vehicle) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x4a16ee5d, Offset: 0x28a8
 // Size: 0x458
 function get_out(vehicle, ai, seat) {
@@ -663,7 +663,7 @@ function get_out(vehicle, ai, seat) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe3348436, Offset: 0x2d08
 // Size: 0x13c
 function exit_ground(ai) {
@@ -681,7 +681,7 @@ function exit_ground(ai) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2930376e, Offset: 0x2e50
 // Size: 0xf8
 function remove_riders_after_wait(vehicle, a_riders_to_remove) {
@@ -695,7 +695,7 @@ function remove_riders_after_wait(vehicle, a_riders_to_remove) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x4e3d7b8d, Offset: 0x2f50
 // Size: 0x6c
 function private handle_falling_death() {
@@ -708,7 +708,7 @@ function private handle_falling_death() {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x60afad7e, Offset: 0x2fc8
 // Size: 0xc8
 function ragdoll_dead_exit_rider(ai) {
@@ -723,7 +723,7 @@ function ragdoll_dead_exit_rider(ai) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x1ecb034, Offset: 0x3098
 // Size: 0x180
 function private forward_euler_integration(e_move, v_target_landing, n_initial_speed) {
@@ -751,7 +751,7 @@ function private forward_euler_integration(e_move, v_target_landing, n_initial_s
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb1dd1608, Offset: 0x3220
 // Size: 0x540
 function exit_variable(ai) {
@@ -798,7 +798,7 @@ function exit_variable(ai) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfe9cd87e, Offset: 0x3768
 // Size: 0x68
 function exit_high_loop_anim(e_parent) {
@@ -809,7 +809,7 @@ function exit_high_loop_anim(e_parent) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x503ea0dd, Offset: 0x37d8
 // Size: 0xea
 function get_height(e_ignore = self) {
@@ -821,7 +821,7 @@ function get_height(e_ignore = self) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x52de5ff1, Offset: 0x38d0
 // Size: 0x6d8
 function get_in(ai, vehicle, seat, var_7c3e4d44 = 1) {
@@ -908,7 +908,7 @@ function get_in(ai, vehicle, seat, var_7c3e4d44 = 1) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x1b3b09f2, Offset: 0x3fb0
 // Size: 0xd4
 function private handle_rider_death(ai, vehicle) {
@@ -922,7 +922,7 @@ function private handle_rider_death(ai, vehicle) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb51ab4b4, Offset: 0x4090
 // Size: 0xec
 function private function_15dbe5e9(params) {
@@ -933,7 +933,7 @@ function private function_15dbe5e9(params) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x9bf25c82, Offset: 0x4188
 // Size: 0xa8
 function private on_vehicle_killed() {
@@ -949,7 +949,7 @@ function private on_vehicle_killed() {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xabc1a7b4, Offset: 0x4238
 // Size: 0x17c
 function kill_rider(entity) {
@@ -974,7 +974,7 @@ function kill_rider(entity) {
 }
 
 // Namespace vehicle/vehicleriders_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x65934efd, Offset: 0x43c0
 // Size: 0x2c
 function delete_rider_asap(entity) {

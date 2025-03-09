@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_dividend_yield/zm_bgb_dividend_yield
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf0d592a0, Offset: 0x168
 // Size: 0x12c
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_dividend_yield/zm_bgb_dividend_yield
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x77b94f1, Offset: 0x2a0
 // Size: 0x8c
 function enable() {
@@ -39,7 +39,7 @@ function enable() {
 }
 
 // Namespace zm_bgb_dividend_yield/zm_bgb_dividend_yield
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x338
 // Size: 0x4
 function disable() {
@@ -47,7 +47,7 @@ function disable() {
 }
 
 // Namespace zm_bgb_dividend_yield/zm_bgb_dividend_yield
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xac899938, Offset: 0x348
 // Size: 0xa6
 function function_5cf91552() {
@@ -59,7 +59,7 @@ function function_5cf91552() {
 }
 
 // Namespace zm_bgb_dividend_yield/zm_bgb_dividend_yield
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xb80b9d48, Offset: 0x3f8
 // Size: 0x218
 function add_to_player_score_override(n_points, str_awarded_by, zm_scr_spawner_location_distance) {
@@ -96,7 +96,7 @@ function add_to_player_score_override(n_points, str_awarded_by, zm_scr_spawner_l
 }
 
 // Namespace zm_bgb_dividend_yield/zm_bgb_dividend_yield
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xeffbab32, Offset: 0x618
 // Size: 0xdc
 function function_db295169(e_player) {
@@ -113,7 +113,7 @@ function function_db295169(e_player) {
 }
 
 // Namespace zm_bgb_dividend_yield/zm_bgb_dividend_yield
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x960e4deb, Offset: 0x700
 // Size: 0x3a
 function function_cbaf1f69(e_player) {
@@ -122,7 +122,7 @@ function function_cbaf1f69(e_player) {
 }
 
 // Namespace zm_bgb_dividend_yield/zm_bgb_dividend_yield
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x244b3d99, Offset: 0x748
 // Size: 0x6c
 function function_51e0947e() {
@@ -135,7 +135,7 @@ function function_51e0947e() {
 }
 
 // Namespace zm_bgb_dividend_yield/zm_bgb_dividend_yield
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf9786af0, Offset: 0x7c0
 // Size: 0x4c
 function function_68790c5a() {

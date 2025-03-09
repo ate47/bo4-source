@@ -13,7 +13,7 @@
     function function_9f47471() {
         level flag::wait_till("<dev string:x38>");
         zm_devgui::add_custom_devgui_callback(&function_6cbc14bb);
-        if (!isdefined(level.var_314051a1)) {
+        if (!isdefined(level.callingsbundle)) {
             return;
         }
         var_94237d8 = array(#"hash_20deab97abbf7b12", #"hash_764a5fc3ba8820d2", #"hash_647ebc7d24425fee", #"tcmgoal");

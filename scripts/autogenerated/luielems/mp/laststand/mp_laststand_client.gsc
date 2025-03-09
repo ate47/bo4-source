@@ -7,14 +7,14 @@
 // Method(s) 7 Total 14
 class cmp_laststand_client : cluielem {
 
-    var var_47e79fc;
+    var _uid;
 
     // Namespace cmp_laststand_client/mp_laststand_client
     // Params 2, eflags: 0x0
     // Checksum 0xe2284b3d, Offset: 0x388
     // Size: 0x3c
     function set_revive_progress(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "revive_progress", value);
+        player clientfield::function_9bf78ef8(_uid, "revive_progress", value);
     }
 
     // Namespace cmp_laststand_client/mp_laststand_client
@@ -22,7 +22,7 @@ class cmp_laststand_client : cluielem {
     // Checksum 0xb6bd7814, Offset: 0x340
     // Size: 0x3c
     function set_bleedout_progress(player, value) {
-        player clientfield::function_9bf78ef8(var_47e79fc, "bleedout_progress", value);
+        player clientfield::function_9bf78ef8(_uid, "bleedout_progress", value);
     }
 
     // Namespace cmp_laststand_client/mp_laststand_client

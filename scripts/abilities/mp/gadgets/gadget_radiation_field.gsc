@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcfaa3683, Offset: 0xe8
 // Size: 0x34
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5bac26ab, Offset: 0x128
 // Size: 0x3c
 function function_4a9c8bba(var_d90c942a) {

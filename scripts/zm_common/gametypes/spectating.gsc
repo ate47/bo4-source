@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace spectating/spectating
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2dcf9c03, Offset: 0xf8
 // Size: 0x24
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace spectating/spectating
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x62ef05af, Offset: 0x128
 // Size: 0xac
 function main() {
@@ -32,7 +32,7 @@ function main() {
 }
 
 // Namespace spectating/spectating
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc7d7e727, Offset: 0x1e0
 // Size: 0x64
 function on_player_connecting() {
@@ -42,7 +42,7 @@ function on_player_connecting() {
 }
 
 // Namespace spectating/spectating
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x854c6884, Offset: 0x250
 // Size: 0x2c
 function on_player_spawned() {
@@ -51,7 +51,7 @@ function on_player_spawned() {
 }
 
 // Namespace spectating/spectating
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaf98a67, Offset: 0x288
 // Size: 0x34
 function on_joined_team(params) {
@@ -60,7 +60,7 @@ function on_joined_team(params) {
 }
 
 // Namespace spectating/spectating
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1230ccc9, Offset: 0x2c8
 // Size: 0x34
 function on_joined_spectate(params) {
@@ -80,7 +80,7 @@ function updatespectatesettings() {
 }
 
 // Namespace spectating/spectating
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6a0be8ce, Offset: 0x378
 // Size: 0xca
 function getsplitscreenteam() {
@@ -103,7 +103,7 @@ function getsplitscreenteam() {
 }
 
 // Namespace spectating/spectating
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x278d5889, Offset: 0x450
 // Size: 0xb8
 function otherlocalplayerstillalive() {
@@ -125,7 +125,7 @@ function otherlocalplayerstillalive() {
 }
 
 // Namespace spectating/spectating
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xacdd95b1, Offset: 0x510
 // Size: 0x88
 function allowspectateallteams(allow) {
@@ -135,7 +135,7 @@ function allowspectateallteams(allow) {
 }
 
 // Namespace spectating/spectating
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcee31c25, Offset: 0x5a0
 // Size: 0xa8
 function allowspectateallteamsexceptteam(skip_team, allow) {
@@ -148,7 +148,7 @@ function allowspectateallteamsexceptteam(skip_team, allow) {
 }
 
 // Namespace spectating/spectating
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf2cb8ab5, Offset: 0x650
 // Size: 0x54c
 function setspectatepermissions() {
@@ -218,7 +218,7 @@ function setspectatepermissions() {
 }
 
 // Namespace spectating/spectating
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe106ddaf, Offset: 0xba8
 // Size: 0xde
 function setspectatepermissionsformachine() {

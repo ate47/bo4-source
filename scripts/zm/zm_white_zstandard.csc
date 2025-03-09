@@ -4,7 +4,7 @@
 #namespace zm_white_zstandard;
 
 // Namespace zm_white_zstandard/zm_white_zstandard
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3bd1bf7f, Offset: 0x2b0
 // Size: 0x64
 function main() {
@@ -13,7 +13,7 @@ function main() {
 }
 
 // Namespace zm_white_zstandard/zm_white_zstandard
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa52dbe1d, Offset: 0x320
 // Size: 0x296
 function function_ee816885() {
@@ -44,7 +44,7 @@ function function_ee816885() {
 }
 
 // Namespace zm_white_zstandard/zm_white_zstandard
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xbe1a7b15, Offset: 0x5c0
 // Size: 0x64
 function portal_maps_init(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -54,7 +54,7 @@ function portal_maps_init(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_white_zstandard/zm_white_zstandard
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdeaf8f43, Offset: 0x630
 // Size: 0x250
 function function_87155ea1(localclientnum) {

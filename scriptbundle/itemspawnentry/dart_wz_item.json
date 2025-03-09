@@ -7,7 +7,7 @@
     "hintstring": "#hash_6e2e947dd4be6283",
     "name": "dart_wz_item",
     "displayname": "#killstreak/dart",
-    "var_36781d9f": "fly_drop_generic",
+    "dropsound": "fly_drop_generic",
     "stackcount": 1,
     "icon": "#hash_53941d02c995271b",
     "modelscale": 0.8,

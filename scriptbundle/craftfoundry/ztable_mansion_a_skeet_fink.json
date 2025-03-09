@@ -1,7 +1,7 @@
 {
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
-    "var_2a2adea3": 1,
+    "blueprintcount": 1,
     "blueprint01": "zblueprint_mansion_a_skeet_fink",
     "name": "ztable_mansion_a_skeet_fink",
     "displayname": "A Skeet Fink"

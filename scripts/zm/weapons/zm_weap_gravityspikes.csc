@@ -12,15 +12,15 @@
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
 // Params 0, eflags: 0x2
-// Checksum 0x56090c3a, Offset: 0x2f8
+// Checksum 0xc68e1774, Offset: 0x2f8
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"zm_weap_gravityspikes", &__init__, undefined, undefined);
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x1 linked
-// Checksum 0x5a692f25, Offset: 0x340
+// Params 0, eflags: 0x0
+// Checksum 0x70c96d6b, Offset: 0x340
 // Size: 0x312
 function __init__() {
     register_clientfields();
@@ -43,8 +43,8 @@ function __init__() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 0, eflags: 0x1 linked
-// Checksum 0xea1d32a9, Offset: 0x660
+// Params 0, eflags: 0x0
+// Checksum 0xc0e73d13, Offset: 0x660
 // Size: 0x43c
 function register_clientfields() {
     clientfield::register("actor", "gravity_slam_down", 1, 1, "int", &gravity_slam_down, 0, 0);
@@ -65,8 +65,8 @@ function register_clientfields() {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 7, eflags: 0x1 linked
-// Checksum 0x16a9a3bf, Offset: 0xaa8
+// Params 7, eflags: 0x0
+// Checksum 0xcec4efb4, Offset: 0xaa8
 // Size: 0x64
 function gravity_slam_down(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
@@ -75,8 +75,8 @@ function gravity_slam_down(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 7, eflags: 0x1 linked
-// Checksum 0x31e74ef, Offset: 0xb18
+// Params 7, eflags: 0x0
+// Checksum 0xb099b613, Offset: 0xb18
 // Size: 0xcc
 function gravity_slam_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
@@ -89,16 +89,16 @@ function gravity_slam_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 7, eflags: 0x1 linked
-// Checksum 0x8f39ed11, Offset: 0xbf0
+// Params 7, eflags: 0x0
+// Checksum 0x8a7c7c63, Offset: 0xbf0
 // Size: 0x6c
 function gravity_slam_player_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     playfxoncamera(localclientnum, level._effect[#"gravityspikes_slam_1p"]);
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 7, eflags: 0x1 linked
-// Checksum 0xb349c465, Offset: 0xc68
+// Params 7, eflags: 0x0
+// Checksum 0x51b3fc4, Offset: 0xc68
 // Size: 0x31c
 function gravity_trap_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
@@ -141,8 +141,8 @@ function gravity_trap_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 7, eflags: 0x1 linked
-// Checksum 0x6b60adff, Offset: 0xf90
+// Params 7, eflags: 0x0
+// Checksum 0x10330701, Offset: 0xf90
 // Size: 0xb4
 function gravity_trap_spike_spark(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
@@ -155,8 +155,8 @@ function gravity_trap_spike_spark(localclientnum, oldval, newval, bnewent, binit
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 7, eflags: 0x1 linked
-// Checksum 0x3e354a9d, Offset: 0x1050
+// Params 7, eflags: 0x0
+// Checksum 0x243a38e2, Offset: 0x1050
 // Size: 0xc6
 function gravity_trap_location(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
@@ -170,8 +170,8 @@ function gravity_trap_location(localclientnum, oldval, newval, bnewent, binitial
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x5 linked
-// Checksum 0x5c32576b, Offset: 0x1120
+// Params 1, eflags: 0x4
+// Checksum 0x5d6fdaff, Offset: 0x1120
 // Size: 0x68
 function private gravity_trap_rumble(localclientnum) {
     self endon(#"vortex_stop", #"death");
@@ -182,16 +182,16 @@ function private gravity_trap_rumble(localclientnum) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 7, eflags: 0x1 linked
-// Checksum 0xe9757dd3, Offset: 0x1190
+// Params 7, eflags: 0x0
+// Checksum 0x483ef372, Offset: 0x1190
 // Size: 0x74
 function gravity_trap_destroy(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     playfx(localclientnum, level._effect[#"gravityspikes_destroy"], self.origin);
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 7, eflags: 0x1 linked
-// Checksum 0x936d230c, Offset: 0x1210
+// Params 7, eflags: 0x0
+// Checksum 0x212e3025, Offset: 0x1210
 // Size: 0x64
 function ragdoll_impact_watch_start(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
@@ -200,8 +200,8 @@ function ragdoll_impact_watch_start(localclientnum, oldval, newval, bnewent, bin
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 1, eflags: 0x1 linked
-// Checksum 0x147af9c0, Offset: 0x1280
+// Params 1, eflags: 0x0
+// Checksum 0xebc831f0, Offset: 0x1280
 // Size: 0x212
 function ragdoll_impact_watch(localclientnum) {
     self.v_start_pos = self.origin;
@@ -239,8 +239,8 @@ function ragdoll_impact_watch(localclientnum) {
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 7, eflags: 0x1 linked
-// Checksum 0x881d3c58, Offset: 0x14a0
+// Params 7, eflags: 0x0
+// Checksum 0x4ea54bbb, Offset: 0x14a0
 // Size: 0x114
 function play_sparky_beam_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
@@ -261,8 +261,8 @@ function play_sparky_beam_fx(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 7, eflags: 0x1 linked
-// Checksum 0xa617d6ed, Offset: 0x15c0
+// Params 7, eflags: 0x0
+// Checksum 0x2c16a0a5, Offset: 0x15c0
 // Size: 0x236
 function sparky_zombie_fx_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
@@ -295,8 +295,8 @@ function sparky_zombie_fx_cb(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 7, eflags: 0x1 linked
-// Checksum 0x95b83595, Offset: 0x1800
+// Params 7, eflags: 0x0
+// Checksum 0x5fc3eb05, Offset: 0x1800
 // Size: 0xfe
 function sparky_zombie_trail_fx_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
@@ -314,7 +314,7 @@ function sparky_zombie_trail_fx_cb(localclientnum, oldval, newval, bnewent, bini
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
 // Params 7, eflags: 0x0
-// Checksum 0x885052b, Offset: 0x1908
+// Checksum 0x4575f900, Offset: 0x1908
 // Size: 0x8c
 function gravity_spike_zombie_explode(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self util::waittill_dobj(localclientnum);
@@ -322,8 +322,8 @@ function gravity_spike_zombie_explode(localclientnum, oldval, newval, bnewent, b
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 7, eflags: 0x1 linked
-// Checksum 0x724c00d9, Offset: 0x19a0
+// Params 7, eflags: 0x0
+// Checksum 0x81084730, Offset: 0x19a0
 // Size: 0x430
 function gravity_shock_wave_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self endon(#"death");
@@ -375,8 +375,8 @@ function gravity_shock_wave_fx(localclientnum, oldval, newval, bnewent, binitial
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 7, eflags: 0x5 linked
-// Checksum 0x2c54c001, Offset: 0x1dd8
+// Params 7, eflags: 0x4
+// Checksum 0x74532a4e, Offset: 0x1dd8
 // Size: 0x8c
 function private function_d05553c6(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newvalue && !namespace_a6aea2c6::is_active(#"silent_film")) {
@@ -385,8 +385,8 @@ function private function_d05553c6(localclientnum, oldvalue, newvalue, bnewent, 
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
-// Params 7, eflags: 0x1 linked
-// Checksum 0x8bbaf362, Offset: 0x1e70
+// Params 7, eflags: 0x0
+// Checksum 0xa6e15a3, Offset: 0x1e70
 // Size: 0x1a6
 function gravity_aoe_impact_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (isdefined(self.var_a1e2affa)) {

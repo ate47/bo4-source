@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x327dc83, Offset: 0x120
 // Size: 0xac
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4f7abf5c, Offset: 0x1d8
 // Size: 0x24
 function __main__() {
@@ -32,7 +32,7 @@ function __main__() {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x78a470b5, Offset: 0x208
 // Size: 0x7c
 function on_weapon_change(s_params) {
@@ -54,7 +54,7 @@ function thundergun_fx_fire(localclientnum) {
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x536a22e2, Offset: 0x2d0
 // Size: 0xac
 function private function_5059c81b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

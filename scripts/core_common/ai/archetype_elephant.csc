@@ -23,7 +23,7 @@ function autoexec init() {
 }
 
 // Namespace archetype_elephant/archetype_elephant
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x99ee33ae, Offset: 0x548
 // Size: 0x2c
 function private function_4c731a08(localclientnum) {
@@ -31,7 +31,7 @@ function private function_4c731a08(localclientnum) {
 }
 
 // Namespace archetype_elephant/archetype_elephant
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf2e1927, Offset: 0x580
 // Size: 0xe4
 function function_624041b1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -49,7 +49,7 @@ function function_624041b1(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace archetype_elephant/archetype_elephant
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd14e19e7, Offset: 0x670
 // Size: 0xac
 function function_e1fb79d0(var_99c2529a, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -62,7 +62,7 @@ function function_e1fb79d0(var_99c2529a, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace archetype_elephant/archetype_elephant
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb86e2b5c, Offset: 0x728
 // Size: 0x84
 function function_e3038292(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -74,7 +74,7 @@ function function_e3038292(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace archetype_elephant/archetype_elephant
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xf1140204, Offset: 0x7b8
 // Size: 0xa4
 function function_5f5f6a25(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -88,7 +88,7 @@ function function_5f5f6a25(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace archetype_elephant/archetype_elephant
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5631649, Offset: 0x868
 // Size: 0xa4
 function function_1308296f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -102,7 +102,7 @@ function function_1308296f(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace archetype_elephant/archetype_elephant
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd15a338c, Offset: 0x918
 // Size: 0x18c
 function function_4d07056d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -122,7 +122,7 @@ function function_4d07056d(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace archetype_elephant/archetype_elephant
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9aa739d0, Offset: 0xab0
 // Size: 0xd4
 function function_58e13aab(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -133,7 +133,7 @@ function function_58e13aab(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace archetype_elephant/archetype_elephant
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x10763c38, Offset: 0xb90
 // Size: 0x134
 function function_fe0bb012(localclientnum, pos, surface, notetrack, bone) {
@@ -151,7 +151,7 @@ function function_fe0bb012(localclientnum, pos, surface, notetrack, bone) {
 }
 
 // Namespace archetype_elephant/archetype_elephant
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1db59892, Offset: 0xcd0
 // Size: 0x94
 function sndtowersbossarmor(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {

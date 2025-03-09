@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace mp_jungle2_scripted/mp_jungle2_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf7f71b86, Offset: 0x150
 // Size: 0x54
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace mp_jungle2_scripted/mp_jungle2_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdb13c2c, Offset: 0x1b0
 // Size: 0x2c
 function __main__() {
@@ -37,7 +37,7 @@ function __main__() {
 }
 
 // Namespace mp_jungle2_scripted/mp_jungle2_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x25147826, Offset: 0x1e8
 // Size: 0x178
 function on_game_playing() {
@@ -56,7 +56,7 @@ function on_game_playing() {
 }
 
 // Namespace mp_jungle2_scripted/mp_jungle2_scripted
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xacb8bb70, Offset: 0x368
 // Size: 0x220
 function function_2cdcf5c3() {
@@ -81,7 +81,7 @@ function function_2cdcf5c3() {
 }
 
 // Namespace mp_jungle2_scripted/mp_jungle2_scripted
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x549dbe99, Offset: 0x590
 // Size: 0xa8
 function function_69a9563e(a_ents) {

@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_backstabber_kill",
     "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
     "iconsmall": "#t7_hud_medal_backstabber_kill",
-    "stringref": "#hash_f3d007a75b74aec",
+    "stringref": "#medal/backstabber_kill",
     "iconlarge": "#t7_hud_medal_backstabber_kill_lrg"
 }

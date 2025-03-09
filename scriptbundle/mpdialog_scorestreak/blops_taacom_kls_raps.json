@@ -3,9 +3,9 @@
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "blops_taacom_kls_raps",
-    "var_6f9447b2": "#hash_7307b4d6d6ae18ee",
-    "var_61d32c30": "#hash_7307b5d6d6ae1aa1",
-    "var_506f8969": "#hash_7307b2d6d6ae1588",
-    "var_b6b855f9": "#hash_7307b3d6d6ae173b",
+    "hash_6f9447b2": "#hash_7307b4d6d6ae18ee",
+    "hash_61d32c30": "#hash_7307b5d6d6ae1aa1",
+    "hash_506f8969": "#hash_7307b2d6d6ae1588",
+    "hash_b6b855f9": "#hash_7307b3d6d6ae173b",
     "hacked": "#hash_4c2f4bbc731af8c1"
 }

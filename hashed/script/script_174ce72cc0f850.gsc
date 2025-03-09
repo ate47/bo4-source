@@ -7,7 +7,7 @@
 #namespace namespace_bd74bbd2;
 
 // Namespace namespace_bd74bbd2/namespace_bd74bbd2
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x944ade8b, Offset: 0xb8
 // Size: 0x116
 function register(id, version, script_noteworthy, var_92f252fd, var_af245552) {
@@ -21,7 +21,7 @@ function register(id, version, script_noteworthy, var_92f252fd, var_af245552) {
 }
 
 // Namespace namespace_bd74bbd2/namespace_bd74bbd2
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7d6bd70c, Offset: 0x1d8
 // Size: 0xa4
 function start(id) {
@@ -35,7 +35,7 @@ function start(id) {
 }
 
 // Namespace namespace_bd74bbd2/namespace_bd74bbd2
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x85982695, Offset: 0x288
 // Size: 0x98
 function end(id) {
@@ -48,7 +48,7 @@ function end(id) {
 }
 
 // Namespace namespace_bd74bbd2/namespace_bd74bbd2
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xde189d4f, Offset: 0x328
 // Size: 0xf0
 function private is_soul_capture(var_88206a50, ent) {
@@ -69,7 +69,7 @@ function private is_soul_capture(var_88206a50, ent) {
 }
 
 // Namespace namespace_bd74bbd2/namespace_bd74bbd2
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x99a80de, Offset: 0x420
 // Size: 0xd8
 function private soul_captured(var_f0e6c7a2, ent) {
@@ -91,7 +91,7 @@ function private soul_captured(var_f0e6c7a2, ent) {
 }
 
 // Namespace namespace_bd74bbd2/namespace_bd74bbd2
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x2b8f053b, Offset: 0x500
 // Size: 0x7c
 function private function_fab8c488() {
@@ -104,7 +104,7 @@ function private function_fab8c488() {
 }
 
 // Namespace namespace_bd74bbd2/namespace_bd74bbd2
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xd9f028a6, Offset: 0x588
 // Size: 0x74
 function private player_enter_watcher() {
@@ -117,7 +117,7 @@ function private player_enter_watcher() {
 }
 
 // Namespace namespace_bd74bbd2/namespace_bd74bbd2
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x8e642d1b, Offset: 0x608
 // Size: 0x7c
 function private function_b1e6482f() {

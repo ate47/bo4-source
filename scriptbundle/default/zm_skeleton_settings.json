@@ -1,16 +1,16 @@
 {
-    "var_10460f1e": 1,
-    "var_fc268a04": 3,
+    "hash_10460f1e": 1,
+    "hash_fc268a04": 3,
     "configstringfiletype": "scriptbundle",
     "maxhealth": 5000,
-    "var_fc420d71": 1,
+    "instakilldamagescale": 1,
     "name": "zm_skeleton_settings",
     "minhealth": 200,
-    "var_628192b0": 1,
-    "var_250a1683": 100,
-    "var_97b22faa": 1,
+    "weakpointdamagescale": 1,
+    "hash_250a1683": 100,
+    "hash_97b22faa": 1,
     "damagescale": 1,
     "category": "#enhanced",
     "stunduration": 4,
-    "var_450edb3b": 1
+    "animationspeed": 1
 }

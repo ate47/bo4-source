@@ -6,7 +6,7 @@
 #namespace zm_orange_ice_slide;
 
 // Namespace zm_orange_ice_slide/zm_orange_ice_slide
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x17e3742c, Offset: 0xd8
 // Size: 0x5a
 function init() {
@@ -16,7 +16,7 @@ function init() {
 }
 
 // Namespace zm_orange_ice_slide/zm_orange_ice_slide
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x90b60430, Offset: 0x140
 // Size: 0x384
 function function_a8fc3bf1(s_info) {
@@ -66,7 +66,7 @@ function function_a8fc3bf1(s_info) {
 }
 
 // Namespace zm_orange_ice_slide/zm_orange_ice_slide
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3d4e93b, Offset: 0x4d0
 // Size: 0x5c
 function function_9565c969() {

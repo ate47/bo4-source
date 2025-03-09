@@ -19,7 +19,7 @@
 #namespace zm_office_elevators;
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x24ea316c, Offset: 0x7f0
 // Size: 0x594
 function init() {
@@ -81,7 +81,7 @@ function init() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb7602317, Offset: 0xd90
 // Size: 0x1e6
 function function_3d4e24ea() {
@@ -100,7 +100,7 @@ function function_3d4e24ea() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x69d73ad3, Offset: 0xf80
 // Size: 0x7c0
 function registergondola_moving_watcher() {
@@ -153,7 +153,7 @@ function registergondola_moving_watcher() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8011dcc8, Offset: 0x1748
 // Size: 0x42c
 function function_d23ea9aa() {
@@ -198,7 +198,7 @@ function function_d23ea9aa() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd8e13f00, Offset: 0x1b80
 // Size: 0x1d0
 function function_db4ac61a() {
@@ -217,7 +217,7 @@ function function_db4ac61a() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x81ac8e86, Offset: 0x1d58
 // Size: 0x1d0
 function function_cfd40975() {
@@ -236,7 +236,7 @@ function function_cfd40975() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb208f9c0, Offset: 0x1f30
 // Size: 0x1d0
 function function_5e62aa83() {
@@ -255,7 +255,7 @@ function function_5e62aa83() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x455da406, Offset: 0x2108
 // Size: 0x1d0
 function function_4cf5b4dd() {
@@ -274,7 +274,7 @@ function function_4cf5b4dd() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xac87e2af, Offset: 0x22e0
 // Size: 0x1d0
 function function_1352fc3c() {
@@ -293,7 +293,7 @@ function function_1352fc3c() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe22c4ad7, Offset: 0x24b8
 // Size: 0x1d0
 function function_d5410733() {
@@ -312,7 +312,7 @@ function function_d5410733() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3dfe375e, Offset: 0x2690
 // Size: 0x86
 function init_call_boxes() {
@@ -323,7 +323,7 @@ function init_call_boxes() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb4f9122b, Offset: 0x2720
 // Size: 0x2a8
 function call_box_think(elevator) {
@@ -363,7 +363,7 @@ function call_box_think(elevator) {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9959a403, Offset: 0x29d0
 // Size: 0xea
 function is_elevator_clear(elevator) {
@@ -382,7 +382,7 @@ function is_elevator_clear(elevator) {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4ce15a8c, Offset: 0x2ac8
 // Size: 0xb6
 function block_elev_doors_internal(block, suffix) {
@@ -399,7 +399,7 @@ function block_elev_doors_internal(block, suffix) {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x314d544, Offset: 0x2b88
 // Size: 0x4c
 function block_elev_doors(block) {
@@ -408,7 +408,7 @@ function block_elev_doors(block) {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x426731a8, Offset: 0x2be0
 // Size: 0x54
 function init_buy() {
@@ -417,7 +417,7 @@ function init_buy() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe1695c8d, Offset: 0x2c40
 // Size: 0x410
 function elevator_buy_think(elevator) {
@@ -469,7 +469,7 @@ function elevator_buy_think(elevator) {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x54bc4192, Offset: 0x3058
 // Size: 0x26
 function can_buy_elevator() {
@@ -480,7 +480,7 @@ function can_buy_elevator() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd86ec0df, Offset: 0x3088
 // Size: 0x86
 function disable_callboxes() {
@@ -491,7 +491,7 @@ function disable_callboxes() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xced3e85b, Offset: 0x3118
 // Size: 0x94
 function disable_elevator_buys() {
@@ -502,7 +502,7 @@ function disable_elevator_buys() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4ddaf449, Offset: 0x31b8
 // Size: 0x9c
 function enable_elevator_buys() {
@@ -513,7 +513,7 @@ function enable_elevator_buys() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x14454277, Offset: 0x3260
 // Size: 0x12e
 function enable_callboxes() {
@@ -533,7 +533,7 @@ function enable_callboxes() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdab105f1, Offset: 0x3398
 // Size: 0x640
 function elevator_move_to(elevator) {
@@ -612,7 +612,7 @@ function elevator_move_to(elevator) {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xedba6e49, Offset: 0x39e0
 // Size: 0x266
 function zombie_elevator_closets(going_up) {
@@ -644,7 +644,7 @@ function zombie_elevator_closets(going_up) {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x91749d17, Offset: 0x3c50
 // Size: 0xb8
 function elevator_closet_cleanup() {
@@ -660,7 +660,7 @@ function elevator_closet_cleanup() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfc3b062e, Offset: 0x3d10
 // Size: 0xfc
 function elev_clean_up_corpses() {
@@ -677,7 +677,7 @@ function elev_clean_up_corpses() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcf95d4da, Offset: 0x3e18
 // Size: 0x4c
 function elev_remove_corpses() {
@@ -686,7 +686,7 @@ function elev_remove_corpses() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x64ecbc3, Offset: 0x3e70
 // Size: 0x232
 function init_elevator1_doors() {
@@ -711,7 +711,7 @@ function init_elevator1_doors() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x510e9362, Offset: 0x40b0
 // Size: 0x1ba
 function init_elevator2_doors() {
@@ -732,7 +732,7 @@ function init_elevator2_doors() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x486d1b16, Offset: 0x4278
 // Size: 0x56c
 function close_elev_doors() {
@@ -797,7 +797,7 @@ function close_elev_doors() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x32c46526, Offset: 0x47f0
 // Size: 0x7ec
 function open_elev_doors() {
@@ -883,7 +883,7 @@ function open_elev_doors() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x22b872c1, Offset: 0x4fe8
 // Size: 0xb6
 function relink_elev_doors(pos, elev, linked) {
@@ -900,7 +900,7 @@ function relink_elev_doors(pos, elev, linked) {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8489203f, Offset: 0x50a8
 // Size: 0x174
 function redirect_zombies(destination) {
@@ -945,7 +945,7 @@ function unlock_players() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x68625a87, Offset: 0x5360
 // Size: 0x140
 function elevator1_3d_audio() {
@@ -963,7 +963,7 @@ function elevator1_3d_audio() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x26bd163, Offset: 0x54a8
 // Size: 0x118
 function elevator2_3d_audio() {
@@ -980,7 +980,7 @@ function elevator2_3d_audio() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4d39e7e0, Offset: 0x55c8
 // Size: 0x130
 function function_eee9c340(var_73803951) {
@@ -1002,7 +1002,7 @@ function function_eee9c340(var_73803951) {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd98f182a, Offset: 0x5700
 // Size: 0x5ec
 function function_dec13a5b() {
@@ -1063,7 +1063,7 @@ function function_dec13a5b() {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x53c5db9, Offset: 0x5cf8
 // Size: 0xd0
 function private function_da48c149(s_pos) {
@@ -1081,7 +1081,7 @@ function private function_da48c149(s_pos) {
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9b76a638, Offset: 0x5dd0
 // Size: 0x578
 function function_1576e092() {

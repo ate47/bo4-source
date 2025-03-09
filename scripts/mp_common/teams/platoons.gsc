@@ -130,7 +130,7 @@ function count_players() {
         if (!isdefined(level.platoons[platoon])) {
             continue;
         }
-        player_counts[platoon] = player_counts[platoon] + var_6a39bbbd[team];
+        player_counts[platoon] += var_6a39bbbd[team];
     }
     return player_counts;
 }

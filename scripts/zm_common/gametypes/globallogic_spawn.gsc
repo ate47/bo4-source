@@ -34,7 +34,7 @@ function autoexec init() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x429a8669, Offset: 0x238
 // Size: 0xd0
 function timeuntilspawn(includeteamkilldelay) {
@@ -58,7 +58,7 @@ function timeuntilspawn(includeteamkilldelay) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd875c12e, Offset: 0x310
 // Size: 0x84
 function allteamshaveexisted() {
@@ -71,7 +71,7 @@ function allteamshaveexisted() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x362d765e, Offset: 0x3a0
 // Size: 0x17a
 function mayspawn() {
@@ -102,7 +102,7 @@ function mayspawn() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x20eae81, Offset: 0x528
 // Size: 0x124
 function timeuntilwavespawn(minimumwait) {
@@ -122,7 +122,7 @@ function timeuntilwavespawn(minimumwait) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x768931f4, Offset: 0x658
 // Size: 0x46
 function stoppoisoningandflareonspawn() {
@@ -134,7 +134,7 @@ function stoppoisoningandflareonspawn() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x75cb4a86, Offset: 0x6a8
 // Size: 0xdc
 function spawnplayerprediction() {
@@ -150,7 +150,7 @@ function spawnplayerprediction() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x52e9ec69, Offset: 0x790
 // Size: 0xac
 function giveloadoutlevelspecific(team, _class) {
@@ -164,7 +164,7 @@ function giveloadoutlevelspecific(team, _class) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x74d9aa53, Offset: 0x848
 // Size: 0x28
 function givestartloadout() {
@@ -174,7 +174,7 @@ function givestartloadout() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9dfb83ee, Offset: 0x878
 // Size: 0x56c
 function spawnplayer() {
@@ -252,7 +252,7 @@ function spawnplayer() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaa8af5dc, Offset: 0xdf0
 // Size: 0x184
 function _spawnplayer() {
@@ -274,7 +274,7 @@ function _spawnplayer() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x33eaa204, Offset: 0xf80
 // Size: 0x4c
 function spawnspectator(origin, angles) {
@@ -284,7 +284,7 @@ function spawnspectator(origin, angles) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc981a4d6, Offset: 0xfd8
 // Size: 0x2c
 function respawn_asspectator(origin, angles) {
@@ -292,7 +292,7 @@ function respawn_asspectator(origin, angles) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xee49e4ad, Offset: 0x1010
 // Size: 0x144
 function in_spawnspectator(origin, angles) {
@@ -318,7 +318,7 @@ function in_spawnspectator(origin, angles) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1829fa8a, Offset: 0x1160
 // Size: 0x52
 function spectatorthirdpersonness() {
@@ -351,7 +351,7 @@ function forcespawn(time) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x172194d2, Offset: 0x12d0
 // Size: 0x64
 function kickifdontspawn() {
@@ -367,7 +367,7 @@ function kickifdontspawn() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3d26e4e5, Offset: 0x1340
 // Size: 0x1d4
 function kickifidontspawninternal() {
@@ -399,7 +399,7 @@ function kickifidontspawninternal() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1e44ef5a, Offset: 0x1520
 // Size: 0x34
 function kickwait(waittime) {
@@ -429,7 +429,7 @@ function spawninterroundintermission() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x23c80a69, Offset: 0x1678
 // Size: 0x244
 function spawnintermission(usedefaultcallback) {
@@ -448,8 +448,10 @@ function spawnintermission(usedefaultcallback) {
                 self playlocalsound(#"mus_contract_complete");
             }
             self closeingamemenu();
-            for (waittime = 4; waittime; waittime -= 0.25) {
+            waittime = 4;
+            while (waittime) {
                 wait 0.25;
+                waittime -= 0.25;
             }
         }
     }
@@ -470,7 +472,7 @@ function spawnintermission(usedefaultcallback) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3aa73825, Offset: 0x18c8
 // Size: 0xb4
 function spawnqueuedclientonteam(team) {
@@ -515,7 +517,7 @@ function spawnqueuedclient(dead_player_team, killer) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5645f5e7, Offset: 0x1ac0
 // Size: 0xc6
 function allteamsnearscorelimit() {
@@ -534,7 +536,7 @@ function allteamsnearscorelimit() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x193a50c5, Offset: 0x1b90
 // Size: 0x6e
 function shouldshowrespawnmessage() {
@@ -554,7 +556,7 @@ function shouldshowrespawnmessage() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe00ef763, Offset: 0x1c08
 // Size: 0x2c
 function default_spawnmessage() {
@@ -562,7 +564,7 @@ function default_spawnmessage() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1ef6c33d, Offset: 0x1c40
 // Size: 0x28
 function showspawnmessage() {
@@ -572,7 +574,7 @@ function showspawnmessage() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x94e9ac5c, Offset: 0x1c70
 // Size: 0x194
 function spawnclient(timealreadypassed) {
@@ -601,7 +603,7 @@ function spawnclient(timealreadypassed) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x45310b8c, Offset: 0x1e10
 // Size: 0x3ac
 function waitandspawnclient(timealreadypassed) {
@@ -662,7 +664,7 @@ function waitandspawnclient(timealreadypassed) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x46867c97, Offset: 0x21c8
 // Size: 0x54
 function waitrespawnorsafespawnbutton() {

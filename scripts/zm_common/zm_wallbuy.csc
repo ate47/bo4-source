@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7284d37c, Offset: 0x270
 // Size: 0x154
 function __init__() {
@@ -35,7 +35,7 @@ function __init__() {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf8d9598f, Offset: 0x3d0
 // Size: 0x28
 function __main__() {
@@ -45,7 +45,7 @@ function __main__() {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x539edf87, Offset: 0x400
 // Size: 0x85c
 function init() {
@@ -114,7 +114,7 @@ function init() {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd9acd2c2, Offset: 0xc68
 // Size: 0xfe
 function is_wallbuy(w_to_check) {
@@ -136,7 +136,7 @@ function is_wallbuy(w_to_check) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xadfa9cfe, Offset: 0xd70
 // Size: 0x1b4
 function wallbuy_player_connect(localclientnum) {
@@ -157,7 +157,7 @@ function wallbuy_player_connect(localclientnum) {
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe4a0e8f0, Offset: 0xf30
 // Size: 0x46a
 function wallbuy_callback(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -213,7 +213,7 @@ function wallbuy_callback(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xeb69dd7f, Offset: 0x13a8
 // Size: 0x470
 function wallbuy_callback_idx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -270,7 +270,7 @@ function wallbuy_callback_idx(localclientnum, oldval, newval, bnewent, binitials
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x25496b14, Offset: 0x1820
 // Size: 0x14a
 function function_51f5fb94(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -294,7 +294,7 @@ function function_51f5fb94(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdeb08af3, Offset: 0x1978
 // Size: 0x7c
 function function_5ed44212(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

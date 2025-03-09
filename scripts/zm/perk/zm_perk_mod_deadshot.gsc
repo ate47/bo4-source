@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_deadshot/zm_perk_mod_deadshot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x87a721ca, Offset: 0x108
 // Size: 0x42
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_deadshot/zm_perk_mod_deadshot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x48f35e10, Offset: 0x158
 // Size: 0xe4
 function enable_mod_deadshot_perk_for_level() {
@@ -39,7 +39,7 @@ function enable_mod_deadshot_perk_for_level() {
 }
 
 // Namespace zm_perk_mod_deadshot/zm_perk_mod_deadshot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbd911eb8, Offset: 0x248
 // Size: 0x44
 function function_f93c5f09() {
@@ -48,7 +48,7 @@ function function_f93c5f09() {
 }
 
 // Namespace zm_perk_mod_deadshot/zm_perk_mod_deadshot
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x490dae90, Offset: 0x298
 // Size: 0x74
 function function_ce99709d(b_pause, str_perk, str_result, n_slot) {
@@ -57,7 +57,7 @@ function function_ce99709d(b_pause, str_perk, str_result, n_slot) {
 }
 
 // Namespace zm_perk_mod_deadshot/zm_perk_mod_deadshot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb8cf56f8, Offset: 0x318
 // Size: 0x15c
 function on_ai_killed(params) {
@@ -79,7 +79,7 @@ function on_ai_killed(params) {
 }
 
 // Namespace zm_perk_mod_deadshot/zm_perk_mod_deadshot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9e73f300, Offset: 0x480
 // Size: 0x3c
 function reset_counter() {
@@ -88,7 +88,7 @@ function reset_counter() {
 }
 
 // Namespace zm_perk_mod_deadshot/zm_perk_mod_deadshot
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0xeb5e5fb0, Offset: 0x4c8
 // Size: 0x15e
 function function_36228265(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

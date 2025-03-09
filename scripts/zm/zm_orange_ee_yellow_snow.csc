@@ -7,7 +7,7 @@
 #namespace zm_orange_ee_yellow_snow;
 
 // Namespace zm_orange_ee_yellow_snow/zm_orange_ee_yellow_snow
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4e753469, Offset: 0x1c0
 // Size: 0x11c
 function preload() {
@@ -30,7 +30,7 @@ function main() {
 }
 
 // Namespace zm_orange_ee_yellow_snow/zm_orange_ee_yellow_snow
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x515bbbee, Offset: 0x2f8
 // Size: 0x214
 function init_clientfields() {
@@ -43,7 +43,7 @@ function init_clientfields() {
 }
 
 // Namespace zm_orange_ee_yellow_snow/zm_orange_ee_yellow_snow
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfb900e4b, Offset: 0x518
 // Size: 0x82
 function campfire_flames(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -53,7 +53,7 @@ function campfire_flames(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace zm_orange_ee_yellow_snow/zm_orange_ee_yellow_snow
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x122bc02a, Offset: 0x5a8
 // Size: 0x82
 function snowpile_swap(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
@@ -63,7 +63,7 @@ function snowpile_swap(localclientnum, oldval, newval, bnewent, binitialsnap, fi
 }
 
 // Namespace zm_orange_ee_yellow_snow/zm_orange_ee_yellow_snow
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6145674e, Offset: 0x638
 // Size: 0xbe
 function spleen_carry_sound(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {

@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_shopping_free/zm_bgb_shopping_free
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbcc58e7f, Offset: 0xf0
 // Size: 0x4c
 function __init__() {

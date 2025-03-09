@@ -9,7 +9,7 @@
                             "stageimage": "#hash_1c0d6bb0f4df3632"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#hash_3761eadf006d52eb"
                 },
                 {
@@ -23,11 +23,11 @@
                             "stageimage": "#hash_611756199e43489c"
                         }
                     ],
-                    "var_1d91eeba": 2,
+                    "hash_1d91eeba": 2,
                     "clientfield": "#ww_p1_2"
                 }
             ],
-            "var_b048489f": 2
+            "hash_b048489f": 2
         },
         {
             "components": [
@@ -38,7 +38,7 @@
                             "stageimage": "#hash_1c0d6ab0f4df347f"
                         }
                     ],
-                    "var_1d91eeba": 1,
+                    "hash_1d91eeba": 1,
                     "clientfield": "#hash_3eb09fdf042e957a"
                 },
                 {
@@ -52,7 +52,7 @@
                             "stageimage": "#hash_611756199e43489c"
                         }
                     ],
-                    "var_1d91eeba": 2,
+                    "hash_1d91eeba": 2,
                     "clientfield": "#ww_p2_2"
                 },
                 {
@@ -78,61 +78,61 @@
                             "stageimage": "#hash_611756199e43489c"
                         }
                     ],
-                    "var_1d91eeba": 5,
+                    "hash_1d91eeba": 5,
                     "clientfield": "#ww_p2_3"
                 }
             ],
-            "var_b048489f": 3
+            "hash_b048489f": 3
         }
     ],
     "objnonlinearprogitems": [
         {
-            "var_f128673a": "#hash_2d022ee774661c5b",
-            "var_846fa8e": "#hash_7b006d4a8b2137ef"
+            "hash_f128673a": "#hash_2d022ee774661c5b",
+            "hash_846fa8e": "#hash_7b006d4a8b2137ef"
         },
         {
-            "var_f128673a": "#hash_2d052ae774684b66",
-            "var_846fa8e": "#hash_7b006e4a8b2139a2"
+            "hash_f128673a": "#hash_2d052ae774684b66",
+            "hash_846fa8e": "#hash_7b006e4a8b2139a2"
         },
         {
-            "var_f128673a": "#hash_2d052be774684d19",
-            "var_846fa8e": "#hash_7b006f4a8b213b55"
+            "hash_f128673a": "#hash_2d052be774684d19",
+            "hash_846fa8e": "#hash_7b006f4a8b213b55"
         },
         {
-            "var_f128673a": "#hash_2d0529e7746849b3",
-            "var_846fa8e": "#hash_7b00684a8b212f70"
+            "hash_f128673a": "#hash_2d0529e7746849b3",
+            "hash_846fa8e": "#hash_7b00684a8b212f70"
         },
         {
-            "var_f128673a": "#hash_2d0226e774660ec3",
-            "var_846fa8e": "#hash_7b00694a8b213123"
+            "hash_f128673a": "#hash_2d0226e774660ec3",
+            "hash_846fa8e": "#hash_7b00694a8b213123"
         },
         {
-            "var_f128673a": "#hash_2d0227e774661076",
-            "var_846fa8e": "#hash_7b006a4a8b2132d6"
+            "hash_f128673a": "#hash_2d0227e774661076",
+            "hash_846fa8e": "#hash_7b006a4a8b2132d6"
         },
         {
-            "var_f128673a": "#hash_2d0228e774661229",
-            "var_846fa8e": "#hash_7b006b4a8b213489"
+            "hash_f128673a": "#hash_2d0228e774661229",
+            "hash_846fa8e": "#hash_7b006b4a8b213489"
         },
         {
-            "var_f128673a": "#hash_2d0229e7746613dc",
-            "var_846fa8e": "#hash_7b00744a8b2143d4"
+            "hash_f128673a": "#hash_2d0229e7746613dc",
+            "hash_846fa8e": "#hash_7b00744a8b2143d4"
         },
         {
-            "var_f128673a": "#hash_2d022ae77466158f",
-            "var_846fa8e": "#hash_7b00754a8b214587"
+            "hash_f128673a": "#hash_2d022ae77466158f",
+            "hash_846fa8e": "#hash_7b00754a8b214587"
         },
         {
-            "var_f128673a": "#hash_2d022be774661742",
-            "var_846fa8e": "#hash_22f194aa6971efed"
+            "hash_f128673a": "#hash_2d022be774661742",
+            "hash_846fa8e": "#hash_22f194aa6971efed"
         },
         {
-            "var_f128673a": "#hash_2d022ce7746618f5",
-            "var_846fa8e": "#hash_22f193aa6971ee3a"
+            "hash_f128673a": "#hash_2d022ce7746618f5",
+            "hash_846fa8e": "#hash_22f193aa6971ee3a"
         },
         {
-            "var_f128673a": "#hash_2d022de774661aa8",
-            "var_846fa8e": "#hash_22f192aa6971ec87"
+            "hash_f128673a": "#hash_2d022de774661aa8",
+            "hash_846fa8e": "#hash_22f192aa6971ec87"
         }
     ],
     "shieldpieces": [
@@ -163,7 +163,7 @@
                                     "stageimage": "#hash_2df9cb99442095c0"
                                 }
                             ],
-                            "var_1d91eeba": 2,
+                            "hash_1d91eeba": 2,
                             "clientfield": "#hash_379a0cb8e272c259"
                         },
                         {
@@ -175,7 +175,7 @@
                                     "stageimage": "#hash_2df9cb99442095c0"
                                 }
                             ],
-                            "var_1d91eeba": 2,
+                            "hash_1d91eeba": 2,
                             "clientfield": "#hash_379a09b8e272bd40"
                         },
                         {
@@ -187,14 +187,14 @@
                                     "stageimage": "#hash_2df9cb99442095c0"
                                 }
                             ],
-                            "var_1d91eeba": 2,
+                            "hash_1d91eeba": 2,
                             "clientfield": "#hash_379a0ab8e272bef3"
                         }
                     ],
                     "list_items": 3
                 }
             ],
-            "var_516217cd": 1,
+            "hash_516217cd": 1,
             "name": "trap plasma"
         },
         {
@@ -207,7 +207,7 @@
                                     "stageimage": "#hash_5312df75db1e29b0"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#hash_247c6c73bebc1022"
                         },
                         {
@@ -216,7 +216,7 @@
                                     "stageimage": "#hash_4fc60e1de97db607"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#hash_247c6b73bebc0e6f"
                         },
                         {
@@ -225,7 +225,7 @@
                                     "stageimage": "#hash_6d65ab9978d0050a"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#hash_247c6a73bebc0cbc"
                         }
                     ],
@@ -239,16 +239,16 @@
                                     "stageimage": "#hash_4ef6939ca6e195b7"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#hash_4cfdc97536e8c1ad"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "var_516217cd": 2,
+            "hash_516217cd": 2,
             "name": "special ammo",
-            "var_a0ebe517": "#hash_26da6ef83af4ba62"
+            "hash_a0ebe517": "#hash_26da6ef83af4ba62"
         },
         {
             "phases": [
@@ -260,7 +260,7 @@
                                     "stageimage": "#hash_18b24a1d1fe6d1d8"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#hash_7965886c1a11312f"
                         },
                         {
@@ -269,7 +269,7 @@
                                     "stageimage": "#hash_6fba75d0f0f2f3f3"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#hash_7965896c1a1132e2"
                         },
                         {
@@ -278,14 +278,14 @@
                                     "stageimage": "#hash_189190832979e91"
                                 }
                             ],
-                            "var_1d91eeba": 1,
+                            "hash_1d91eeba": 1,
                             "clientfield": "#hash_79658a6c1a113495"
                         }
                     ],
                     "list_items": 3
                 }
             ],
-            "var_516217cd": 1,
+            "hash_516217cd": 1,
             "name": "special ammo ingredients"
         }
     ],
@@ -301,7 +301,7 @@
                     "stageimage": "#hash_463f9a495f91e933"
                 }
             ],
-            "var_1d91eeba": 1,
+            "hash_1d91eeba": 1,
             "clientfield": "#pap_1"
         },
         {
@@ -310,7 +310,7 @@
                     "stageimage": "#hash_278b89d5eb019d7c"
                 }
             ],
-            "var_1d91eeba": 1,
+            "hash_1d91eeba": 1,
             "clientfield": "#pap_2"
         },
         {
@@ -319,21 +319,21 @@
                     "stageimage": "#hash_6744628401cf6fba"
                 }
             ],
-            "var_1d91eeba": 1,
+            "hash_1d91eeba": 1,
             "clientfield": "#pap_3"
         }
     ],
     "objectivebackground": "#hash_3f90f155c7e4e6d2",
-    "var_b79de608": 12,
+    "hash_b79de608": 12,
     "configstringfiletype": "scriptbundle",
-    "var_aa76b7dd": 1,
-    "var_6fa1ca44": 3,
+    "hash_aa76b7dd": 1,
+    "hash_6fa1ca44": 3,
     "type": "zminventory",
-    "var_af62a8e8": 3,
-    "var_b10f2611": "#ww_phase",
+    "hash_af62a8e8": 3,
+    "hash_b10f2611": "#ww_phase",
     "name": "zm_inventory_mansion",
-    "var_88c17f11": "#sentinel_artifact",
-    "var_a05daa90": 3,
-    "var_c029b82f": 2,
-    "var_38b9613": 1
+    "hash_88c17f11": "#sentinel_artifact",
+    "hash_a05daa90": 3,
+    "hash_c029b82f": 2,
+    "hash_38b9613": 1
 }

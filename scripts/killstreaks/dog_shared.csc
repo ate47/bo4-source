@@ -7,7 +7,7 @@
 #namespace dog;
 
 // Namespace dog/dog_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x86530503, Offset: 0x128
 // Size: 0x15c
 function init_shared() {
@@ -22,7 +22,7 @@ function init_shared() {
 }
 
 // Namespace dog/dog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb032979f, Offset: 0x290
 // Size: 0x24
 function function_b0f3bc1f(localclientnum) {
@@ -30,7 +30,7 @@ function function_b0f3bc1f(localclientnum) {
 }
 
 // Namespace dog/dog_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa589f3eb, Offset: 0x2c0
 // Size: 0x74
 function watchdeath(localclientnum) {
@@ -41,7 +41,7 @@ function watchdeath(localclientnum) {
 }
 
 // Namespace dog/dog_shared
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xa14ff6e5, Offset: 0x340
 // Size: 0xbc
 function private function_654bd68b(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -53,7 +53,7 @@ function private function_654bd68b(localclientnum, oldvalue, newvalue, bnewent, 
 }
 
 // Namespace dog/dog_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4ed86f94, Offset: 0x408
 // Size: 0x104
 function function_14740469(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -69,7 +69,7 @@ function function_14740469(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace dog/dog_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x25353510, Offset: 0x518
 // Size: 0xcc
 function function_e464e22b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

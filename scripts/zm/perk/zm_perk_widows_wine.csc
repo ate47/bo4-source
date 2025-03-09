@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_widows_wine/zm_perk_widows_wine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcf0a3acf, Offset: 0x288
 // Size: 0x104
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_widows_wine/zm_perk_widows_wine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9b216fec, Offset: 0x398
 // Size: 0xc2
 function init_widows_wine() {
@@ -40,7 +40,7 @@ function init_widows_wine() {
 }
 
 // Namespace zm_perk_widows_wine/zm_perk_widows_wine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80a35824, Offset: 0x468
 // Size: 0x124
 function widows_wine_client_field_func() {
@@ -51,7 +51,7 @@ function widows_wine_client_field_func() {
 }
 
 // Namespace zm_perk_widows_wine/zm_perk_widows_wine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x598
 // Size: 0x4
 function widows_wine_code_callback_func() {
@@ -59,7 +59,7 @@ function widows_wine_code_callback_func() {
 }
 
 // Namespace zm_perk_widows_wine/zm_perk_widows_wine
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb7a720cc, Offset: 0x5a8
 // Size: 0x1bc
 function function_fd02d096(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -90,7 +90,7 @@ function function_fd02d096(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace zm_perk_widows_wine/zm_perk_widows_wine
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x743752b3, Offset: 0x770
 // Size: 0x11c
 function widows_wine_explosion(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -105,7 +105,7 @@ function widows_wine_explosion(localclientnum, oldval, newval, bnewent, binitial
 }
 
 // Namespace zm_perk_widows_wine/zm_perk_widows_wine
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x99cf6ad7, Offset: 0x898
 // Size: 0x278
 function function_c6366dbe(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

@@ -19,15 +19,15 @@ function autoexec __init__system__() {
 }
 
 // Namespace trigger/trigger_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd04db0d3, Offset: 0x280
 // Size: 0x24
 function __init__() {
-    callback::function_27d9ab8(&trigger_think);
+    callback::on_trigger_spawned(&trigger_think);
 }
 
 // Namespace trigger/trigger_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x5956069, Offset: 0x2b0
 // Size: 0xd4
 function add_handler(var_60ffbed2, func_handler, func_init, var_114fa26c = 1) {
@@ -46,7 +46,7 @@ function add_handler(var_60ffbed2, func_handler, func_init, var_114fa26c = 1) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa45c4a5f, Offset: 0x390
 // Size: 0x5c
 function init_flags(str_kvp) {
@@ -56,7 +56,7 @@ function init_flags(str_kvp) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xeb99c1b8, Offset: 0x3f8
 // Size: 0x2c4
 function trigger_think() {
@@ -93,7 +93,7 @@ function function_1792c799(flags) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf418e3e9, Offset: 0x720
 // Size: 0x1c2
 function get_trigger_look_target() {
@@ -124,7 +124,7 @@ function get_trigger_look_target() {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8caf312d, Offset: 0x8f0
 // Size: 0x228
 function look_trigger(trigger) {
@@ -155,7 +155,7 @@ function look_trigger(trigger) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9839497d, Offset: 0xb20
 // Size: 0x110
 function trigger_spawner(s_info) {
@@ -173,7 +173,7 @@ function trigger_spawner(s_info) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa50c90f, Offset: 0xc38
 // Size: 0x5c
 function trigger_spawner_spawn() {
@@ -184,7 +184,7 @@ function trigger_spawner_spawn() {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x84f95d06, Offset: 0xca0
 // Size: 0xc4
 function trigger_notify(s_info) {
@@ -198,7 +198,7 @@ function trigger_notify(s_info) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x90d26588, Offset: 0xd70
 // Size: 0x82
 function function_ac2f203a(str_flag) {
@@ -214,7 +214,7 @@ function function_ac2f203a(str_flag) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x62f4960a, Offset: 0xe00
 // Size: 0xa0
 function flag_set_trigger() {
@@ -225,7 +225,7 @@ function flag_set_trigger() {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x132bf4b9, Offset: 0xea8
 // Size: 0xa8
 function flag_clear_trigger(s_info) {
@@ -236,7 +236,7 @@ function flag_clear_trigger(s_info) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x827b1f05, Offset: 0xf58
 // Size: 0x11a
 function add_tokens_to_trigger_flags(tokens) {
@@ -291,7 +291,7 @@ function friendly_respawn_clear(trigger) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x31333c7, Offset: 0x1290
 // Size: 0x1a8
 function script_flag_set_touching(trigger) {
@@ -330,7 +330,7 @@ function script_flag_set_touching(trigger) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x95a6dade, Offset: 0x1440
 // Size: 0x42
 function _detect_touched() {
@@ -356,7 +356,7 @@ function trigger_delete_on_touch(trigger) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe45d6f4, Offset: 0x1510
 // Size: 0xa4
 function trigger_once(s_info) {
@@ -373,7 +373,7 @@ function trigger_once(s_info) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x21 linked variadic
+// Params 1, eflags: 0x20 variadic
 // Checksum 0xe3f74422, Offset: 0x15c0
 // Size: 0xf2
 function get_all(...) {
@@ -394,7 +394,7 @@ function get_all(...) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x21 linked variadic
+// Params 1, eflags: 0x20 variadic
 // Checksum 0x2a5ceadc, Offset: 0x16c0
 // Size: 0x72
 function is_trigger_of_type(...) {
@@ -407,7 +407,7 @@ function is_trigger_of_type(...) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xda7201dd, Offset: 0x1740
 // Size: 0x1b8
 function wait_till(str_name, str_key = "targetname", e_entity, b_assert = 1) {
@@ -434,7 +434,7 @@ function wait_till(str_name, str_key = "targetname", e_entity, b_assert = 1) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa0b28ce4, Offset: 0x1900
 // Size: 0x27e
 function _trigger_wait(e_entity) {
@@ -492,7 +492,7 @@ function _trigger_wait(e_entity) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x43ee9c06, Offset: 0x1b88
 // Size: 0x90
 function _trigger_wait_think(s_tracker, e_entity) {
@@ -503,7 +503,7 @@ function _trigger_wait_think(s_tracker, e_entity) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x643f321c, Offset: 0x1c20
 // Size: 0x17c
 function use(str_name, str_key = "targetname", ent = getplayers()[0], b_assert = 1) {
@@ -532,7 +532,7 @@ function use(str_name, str_key = "targetname", ent = getplayers()[0], b_assert =
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbdb9ffa3, Offset: 0x1da8
 // Size: 0x9c
 function set_flag_permissions(msg) {
@@ -544,7 +544,7 @@ function set_flag_permissions(msg) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6d30f197, Offset: 0x1e50
 // Size: 0x26c
 function update_based_on_flags() {
@@ -594,7 +594,7 @@ function update_based_on_flags() {
 }
 
 // Namespace trigger/trigger_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7c7694de, Offset: 0x20c8
 // Size: 0x66
 function is_look_trigger() {
@@ -602,7 +602,7 @@ function is_look_trigger() {
 }
 
 // Namespace trigger/trigger_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3ddeef39, Offset: 0x2138
 // Size: 0x4c
 function is_trigger_once() {
@@ -610,7 +610,7 @@ function is_trigger_once() {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x21 linked variadic
+// Params 1, eflags: 0x20 variadic
 // Checksum 0x696c5e08, Offset: 0x2190
 // Size: 0x1b2
 function wait_till_any(...) {
@@ -643,7 +643,7 @@ function wait_for_either(str_targetname1, str_targetname2) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xceaaabf1, Offset: 0x2398
 // Size: 0x5e
 function _ent_waits_for_trigger(trigger) {
@@ -697,7 +697,7 @@ function multiple_waits(str_trigger_name, str_trigger_notify) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7f85b482, Offset: 0x2648
 // Size: 0x34
 function multiple_wait(str_trigger_notify) {
@@ -707,7 +707,7 @@ function multiple_wait(str_trigger_notify) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0x26a3a9f, Offset: 0x2688
 // Size: 0x84
 function add_function(trigger, str_remove_on, func, param_1, param_2, param_3, param_4, param_5, param_6) {
@@ -715,7 +715,7 @@ function add_function(trigger, str_remove_on, func, param_1, param_2, param_3, p
 }
 
 // Namespace trigger/trigger_shared
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0xb5b270af, Offset: 0x2718
 // Size: 0x108
 function _do_trigger_function(trigger, str_remove_on, func, param_1, param_2, param_3, param_4, param_5, param_6) {
@@ -735,7 +735,7 @@ function _do_trigger_function(trigger, str_remove_on, func, param_1, param_2, pa
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd9e37531, Offset: 0x2828
 // Size: 0x170
 function kill_spawner_trigger(s_info) {
@@ -752,7 +752,7 @@ function kill_spawner_trigger(s_info) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x561d8177, Offset: 0x29a0
 // Size: 0xa8
 function trigger_group(s_info) {
@@ -792,7 +792,7 @@ function function_thread(ent, on_enter_payload, on_exit_payload) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x67cdde08, Offset: 0x2b78
 // Size: 0x4c
 function ent_already_in(var_d35ff8d8) {
@@ -809,7 +809,7 @@ function ent_already_in(var_d35ff8d8) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xaeeb2cca, Offset: 0x2bd0
 // Size: 0x4a
 function add_to_ent(ent, var_d35ff8d8) {
@@ -820,7 +820,7 @@ function add_to_ent(ent, var_d35ff8d8) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa798f046, Offset: 0x2c28
 // Size: 0x56
 function remove_from_ent(ent, var_d35ff8d8) {
@@ -867,7 +867,7 @@ function run(func, ...) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x5b72f454, Offset: 0x2e18
 // Size: 0x44
 function function_996dfbe2(s_info, ent, func, a_args) {

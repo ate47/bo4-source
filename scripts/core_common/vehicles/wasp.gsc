@@ -195,11 +195,13 @@ function state_emped_update(params) {
     self.abnormal_status.emped = 0;
     self vehicle::toggle_emp_fx(0);
     self vehicle_ai::emp_startup_fx();
-    for (bootup_timer = 1.6; bootup_timer > 0; bootup_timer -= 0.8) {
+    bootup_timer = 1.6;
+    while (bootup_timer > 0) {
         self vehicle::lights_on();
         wait 0.4;
         self vehicle::lights_off();
         wait 0.4;
+        bootup_timer -= 0.8;
     }
     self vehicle::lights_on();
     if (isdefined(self.position_before_fall)) {

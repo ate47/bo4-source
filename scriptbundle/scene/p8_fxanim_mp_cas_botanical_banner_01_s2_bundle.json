@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_9d5b38dbbc9eae",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "spacermin": 5,
+                    "spacermax": 15,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#p8_fxanim_mp_cas_botanical_banner_01_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "p8_fxanim_mp_cas_botanical_banner_01_s2_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

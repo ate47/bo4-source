@@ -25,7 +25,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x4f3c053, Offset: 0x1a8
 // Size: 0x2c
 function private __main__() {
@@ -35,7 +35,7 @@ function private __main__() {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xba56334f, Offset: 0x1e0
 // Size: 0x7a
 function private init_internal() {
@@ -107,7 +107,7 @@ function add_planted_callback(fn_planted_cb, wpn_name) {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x271502cd, Offset: 0x510
 // Size: 0x8e
 function private run_planted_callbacks(e_planter) {
@@ -117,7 +117,7 @@ function private run_planted_callbacks(e_planter) {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x44db5b08, Offset: 0x5a8
 // Size: 0x3e
 function private safe_to_plant() {
@@ -128,7 +128,7 @@ function private safe_to_plant() {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x1c5ffc79, Offset: 0x5f0
 // Size: 0x2c
 function private wait_and_detonate() {
@@ -137,7 +137,7 @@ function private wait_and_detonate() {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcecb6554, Offset: 0x628
 // Size: 0x1a0
 function private mine_watch(wpn_type) {
@@ -165,7 +165,7 @@ function private mine_watch(wpn_type) {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2738e70d, Offset: 0x7d0
 // Size: 0x3e
 function is_true_placeable_mine(mine_name) {
@@ -179,7 +179,7 @@ function is_true_placeable_mine(mine_name) {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1bc25c54, Offset: 0x818
 // Size: 0x15a
 function setup_for_player(wpn_type, ui_model = "hudItems.showDpadRight") {
@@ -206,7 +206,7 @@ function setup_for_player(wpn_type, ui_model = "hudItems.showDpadRight") {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x23422f85, Offset: 0x980
 // Size: 0x30
 function disable_prompt_for_player(wpn_type) {
@@ -214,7 +214,7 @@ function disable_prompt_for_player(wpn_type) {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5ddbb7f4, Offset: 0x9b8
 // Size: 0x88
 function disable_all_prompts_for_player() {
@@ -224,7 +224,7 @@ function disable_all_prompts_for_player() {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xd47a5526, Offset: 0xa48
 // Size: 0x27c
 function private pickup_placeable_mine() {
@@ -264,7 +264,7 @@ function private pickup_placeable_mine() {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x56865eb2, Offset: 0xcd0
 // Size: 0x44
 function private pickup_placeable_mine_trigger_listener(trigger, player) {
@@ -273,7 +273,7 @@ function private pickup_placeable_mine_trigger_listener(trigger, player) {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x48b8adaf, Offset: 0xd20
 // Size: 0xb8
 function private pickup_placeable_mine_trigger_listener_enable(trigger, player) {
@@ -289,7 +289,7 @@ function private pickup_placeable_mine_trigger_listener_enable(trigger, player) 
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x1bd9d4af, Offset: 0xde0
 // Size: 0xa8
 function private pickup_placeable_mine_trigger_listener_disable(trigger, player) {
@@ -305,7 +305,7 @@ function private pickup_placeable_mine_trigger_listener_disable(trigger, player)
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xf9c42bb4, Offset: 0xe90
 // Size: 0x1f4
 function private placeable_mine_damage() {
@@ -345,7 +345,7 @@ function private placeable_mine_damage() {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x74e46135, Offset: 0x1090
 // Size: 0x16
 function private reset_satchel_explode_this_frame() {
@@ -354,7 +354,7 @@ function private reset_satchel_explode_this_frame() {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x15b7d092, Offset: 0x10b0
 // Size: 0x212
 function private replenish_after_rounds() {
@@ -394,7 +394,7 @@ function setup_watchers() {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xec300f23, Offset: 0x1398
 // Size: 0xb2
 function zm_red_challenges_hud_wear(watcher) {
@@ -409,7 +409,7 @@ function zm_red_challenges_hud_wear(watcher) {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xf28bec34, Offset: 0x1458
 // Size: 0x54
 function private on_spawn_retrieve_trigger(watcher, player) {
@@ -420,7 +420,7 @@ function private on_spawn_retrieve_trigger(watcher, player) {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xaf6da5e4, Offset: 0x14b8
 // Size: 0x26
 function private adjust_trigger_origin(origin) {
@@ -429,7 +429,7 @@ function private adjust_trigger_origin(origin) {
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xe50b4f45, Offset: 0x14e8
 // Size: 0xbc
 function private placeable_mine_detonate(attacker, weapon, target) {

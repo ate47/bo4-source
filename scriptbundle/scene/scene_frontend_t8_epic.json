@@ -10,14 +10,14 @@
                         }
                     ],
                     "name": "play",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 }
             ],
             "model": "#tag_origin",
             "type": "sharedplayer",
             "name": "cam",
             "aligntarget": "tag_align_frozen",
-            "var_29563fd6": 90
+            "hash_29563fd6": 90
         },
         {
             "shots": [
@@ -29,7 +29,7 @@
                         }
                     ],
                     "name": "play",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 }
             ],
             "type": "fakeplayer",
@@ -45,7 +45,7 @@
                         }
                     ],
                     "name": "play",
-                    "var_b94164e": "core_frontend_ruin"
+                    "hash_b94164e": "core_frontend_ruin"
                 }
             ],
             "model": "#wpn_t8_ar_accurate_prop_animate",

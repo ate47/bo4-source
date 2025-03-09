@@ -1,4 +1,3 @@
-#using script_3267610dfd12104c;
 #using script_34e49e82e2f499e1;
 #using script_5f3e7d348fbc5283;
 #using script_71e26f08f03b7a7a;
@@ -17,6 +16,7 @@
 #using scripts\mp_common\item_world;
 #using scripts\mp_common\load;
 #using scripts\wz\wz_open_skyscrapers_ai_zones;
+#using scripts\wz\wz_open_skyscrapers_death_circle;
 #using scripts\wz\wz_open_skyscrapers_ffotd;
 #using scripts\wz\wz_open_skyscrapers_fx;
 #using scripts\wz\wz_open_skyscrapers_sound;
@@ -74,7 +74,7 @@ function event_handler[level_init] main(eventstruct) {
 }
 
 // Namespace wz_open_skyscrapers/wz_open_skyscrapers
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x64945dcf, Offset: 0x4c0
 // Size: 0x64
 function on_player_spawned() {
@@ -93,7 +93,7 @@ function on_player_spawned() {
 }
 
 // Namespace wz_open_skyscrapers/wz_open_skyscrapers
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7ccc7e02, Offset: 0x530
 // Size: 0x4c
 function on_vehicle_spawned() {
@@ -109,7 +109,7 @@ function on_vehicle_spawned() {
 }
 
 // Namespace wz_open_skyscrapers/wz_open_skyscrapers
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3e4f81e0, Offset: 0x588
 // Size: 0x24
 function on_finalize_initialization() {
@@ -118,7 +118,7 @@ function on_finalize_initialization() {
 }
 
 // Namespace wz_open_skyscrapers/wz_open_skyscrapers
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x961f835e, Offset: 0x5b8
 // Size: 0x148
 function private function_5725bc63() {
@@ -134,7 +134,7 @@ function private function_5725bc63() {
 }
 
 // Namespace wz_open_skyscrapers/wz_open_skyscrapers
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb477a6e4, Offset: 0x708
 // Size: 0x100
 function function_7276b578() {
@@ -150,7 +150,7 @@ function function_7276b578() {
 }
 
 // Namespace wz_open_skyscrapers/wz_open_skyscrapers
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbcd46130, Offset: 0x810
 // Size: 0x110
 function function_2560f130() {
@@ -1411,7 +1411,7 @@ function function_2560f130() {
         thread function_61e22785(tracepoint, 0, var_1e9ad3cb[0], color);
         for (i = 1; i < var_1e9ad3cb.size; i++) {
             if (mp == 0) {
-                var_eb5812b5[i - 1] = var_eb5812b5[i - 1] * 1.5;
+                var_eb5812b5[i - 1] *= 1.5;
             }
             thread function_61e22785(tracepoint, var_eb5812b5[i - 1], var_1e9ad3cb[i], color);
         }

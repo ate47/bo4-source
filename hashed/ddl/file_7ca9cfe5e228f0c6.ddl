@@ -57,7 +57,7 @@ version 9 {
     // offset 0x480, size 0xc0
     string(24) raisestance;
     // offset 0x540, size 0xc0
-    string(24) hash_584e6d5b02f4e693;
+    string(24) handbrake;
     // offset 0x600, size 0xc0
     string(24) calloutwheel;
     // offset 0x6c0, size 0xc0
@@ -109,7 +109,7 @@ version 9 {
     // offset 0x1880, size 0xc0
     string(24) weapswitchprimary;
     // offset 0x1940, size 0xc0
-    string(24) hash_787a34d300ed84e3;
+    string(24) raisestancejump;
     // offset 0x1a00, size 0xc0
     string(24) togglebreath;
     // offset 0x1ac0, size 0xc0
@@ -139,7 +139,7 @@ version 9 {
     // offset 0x23c0, size 0xc0
     string(24) quickcallout;
     // offset 0x2480, size 0xc0
-    string(24) hash_65a1a52171bbaea2;
+    string(24) vehicleboost;
     // offset 0x2540, size 0xc0
     string(24) scorestreak1;
     // offset 0x2600, size 0xc0
@@ -201,7 +201,7 @@ version 9 {
     // offset 0x3b00, size 0xc0
     string(24) weapswitchsecondary;
     // offset 0x3bc0, size 0xc0
-    string(24) hash_66ebea547ebac41;
+    string(24) armorrepair;
     // offset 0x3c80, size 0xc0
     string(24) lookup;
     // offset 0x3d40, size 0xc0
@@ -243,7 +243,7 @@ version 9 {
     // offset 0x4ac0, size 0xc0
     string(24) toggleinventoryzm;
     // offset 0x4b80, size 0xc0
-    string(24) hash_ed18aed621a69a7;
+    string(24) vehiclealtcontrol;
     // offset 0x4c40, size 0xc0
     string(24) hold_sprint;
     // offset 0x4d00, size 0xc0
@@ -257,7 +257,7 @@ version 9 {
     // offset 0x5000, size 0xc0
     string(24) quickcycle_equipment;
     // offset 0x50c0, size 0xc0
-    string(24) hash_647be2427b894c00;
+    string(24) movedown;
     // offset 0x5180, size 0xc0
     string(24) moveleft;
     // offset 0x5240, size 0xc0

@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace audio/audio_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbf147ca9, Offset: 0x258
 // Size: 0xb4
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace audio/audio_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x44a85536, Offset: 0x318
 // Size: 0x2d4
 function register_clientfields() {
@@ -50,7 +50,7 @@ function register_clientfields() {
 }
 
 // Namespace audio/audio_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xde3b0638, Offset: 0x5f8
 // Size: 0x9c
 function sndchyronwatcher() {
@@ -65,7 +65,7 @@ function sndchyronwatcher() {
 }
 
 // Namespace audio/audio_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1c9200a5, Offset: 0x6a0
 // Size: 0xa4
 function sndresetsoundsettings() {
@@ -79,7 +79,7 @@ function sndresetsoundsettings() {
 }
 
 // Namespace audio/audio_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa6c2c673, Offset: 0x750
 // Size: 0x64
 function on_player_connect() {
@@ -88,7 +88,7 @@ function on_player_connect() {
 }
 
 // Namespace audio/audio_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x79e6a167, Offset: 0x7c0
 // Size: 0x3c
 function on_player_killed() {
@@ -98,7 +98,7 @@ function on_player_killed() {
 }
 
 // Namespace audio/audio_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb7ff852d, Offset: 0x808
 // Size: 0x54
 function vehiclespawncontext() {
@@ -108,7 +108,7 @@ function vehiclespawncontext() {
 }
 
 // Namespace audio/audio_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3d2761d6, Offset: 0x868
 // Size: 0x84
 function sndupdatevehiclecontext(added) {
@@ -127,7 +127,7 @@ function sndupdatevehiclecontext(added) {
 }
 
 // Namespace audio/audio_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x608a763c, Offset: 0x8f8
 // Size: 0xba
 function playtargetmissilesound(alias, looping) {
@@ -145,7 +145,7 @@ function playtargetmissilesound(alias, looping) {
 }
 
 // Namespace audio/audio_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1a6dd9ab, Offset: 0x9c0
 // Size: 0xd6
 function on_missile_lock(params) {
@@ -158,7 +158,7 @@ function on_missile_lock(params) {
 }
 
 // Namespace audio/audio_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb5c679ff, Offset: 0xaa0
 // Size: 0x10c
 function function_c25f7d1(params) {
@@ -172,7 +172,7 @@ function function_c25f7d1(params) {
 }
 
 // Namespace audio/audio_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf33037a6, Offset: 0xbb8
 // Size: 0x24
 function unlockfrontendmusic(unlockname, allplayers = 1) {
@@ -180,7 +180,7 @@ function unlockfrontendmusic(unlockname, allplayers = 1) {
 }
 
 // Namespace audio/audio_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xb907eebb, Offset: 0xbe8
 // Size: 0x52c
 function function_30d4f8c4(attacker, smeansofdeath, weapon) {
@@ -283,7 +283,7 @@ function function_30d4f8c4(attacker, smeansofdeath, weapon) {
 }
 
 // Namespace audio/audio_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9ebc7d9c, Offset: 0x1120
 // Size: 0xb2
 function function_641cec60(weapon) {

@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace blood/blood
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb1e5e87, Offset: 0x3c8
 // Size: 0x6e
 function __postload_init__() {
@@ -24,7 +24,7 @@ function __postload_init__() {
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1afc697a, Offset: 0x440
 // Size: 0x2c
 function getsplatter(localclientnum) {
@@ -32,7 +32,7 @@ function getsplatter(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc9a9dfc, Offset: 0x478
 // Size: 0x24
 function private localclient_connect(localclientnum) {
@@ -40,7 +40,7 @@ function private localclient_connect(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x5b124e9, Offset: 0x4a8
 // Size: 0x224
 function private function_e79ccfd8(localclientnum) {
@@ -77,7 +77,7 @@ function private function_e79ccfd8(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x3f1f7aa1, Offset: 0x6d8
 // Size: 0xb4
 function private setcontrollerlightbarcolorpulsing(localclientnum, color, pulserate) {
@@ -91,7 +91,7 @@ function private setcontrollerlightbarcolorpulsing(localclientnum, color, pulser
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd33ae92f, Offset: 0x798
 // Size: 0x174
 function private update_lightbar(localclientnum) {
@@ -117,7 +117,7 @@ function private update_lightbar(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2b9571d8, Offset: 0x918
 // Size: 0x3c
 function private enter_critical_health(localclientnum) {
@@ -126,7 +126,7 @@ function private enter_critical_health(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc3552a42, Offset: 0x960
 // Size: 0x158
 function private play_critical_health_rumble(localclientnum) {
@@ -151,7 +151,7 @@ function private play_critical_health_rumble(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf3d5eefb, Offset: 0xac0
 // Size: 0x84
 function private play_breath(localclientnum) {
@@ -162,7 +162,7 @@ function private play_breath(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x38c7200, Offset: 0xb50
 // Size: 0x64
 function private watch_end_breath(localclientnum) {
@@ -171,7 +171,7 @@ function private watch_end_breath(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x84050d10, Offset: 0xbc0
 // Size: 0x7c
 function private stop_breath(localclientnum) {
@@ -185,7 +185,7 @@ function private stop_breath(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa4900770, Offset: 0xc48
 // Size: 0xde
 function private wait_game_ended(localclientnum) {
@@ -206,7 +206,7 @@ function private wait_game_ended(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xef60fb98, Offset: 0xd30
 // Size: 0x74
 function private function_8e228a1d(localclientnum, damage) {
@@ -217,7 +217,7 @@ function private function_8e228a1d(localclientnum, damage) {
 }
 
 // Namespace blood/blood
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x8d1d4309, Offset: 0xdb0
 // Size: 0x1bc
 function private function_f192f00b(localclientnum, rob) {
@@ -235,7 +235,7 @@ function private function_f192f00b(localclientnum, rob) {
 }
 
 // Namespace blood/blood
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x59cf729d, Offset: 0xf78
 // Size: 0xb4
 function ramprobsetting(localclientnum, from, to, ramptime, key) {
@@ -247,7 +247,7 @@ function ramprobsetting(localclientnum, from, to, ramptime, key) {
 }
 
 // Namespace blood/blood
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xea4e65d7, Offset: 0x1038
 // Size: 0xac
 function function_1126eb8c(currenttime, elapsedtime, localclientnum, duration, stagefrom, stageto, key, rob) {
@@ -257,7 +257,7 @@ function function_1126eb8c(currenttime, elapsedtime, localclientnum, duration, s
 }
 
 // Namespace blood/blood
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x97b6bb98, Offset: 0x10f0
 // Size: 0x274
 function function_672c739(localclientnum, shockrifle) {
@@ -282,7 +282,7 @@ function function_672c739(localclientnum, shockrifle) {
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x3cfebd8d, Offset: 0x1370
 // Size: 0x68
 function private function_27d3ba05(localclientnum) {
@@ -296,7 +296,7 @@ function private function_27d3ba05(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x57ba12db, Offset: 0x13e0
 // Size: 0xcc
 function private function_47d0632f(localclientnum, damage, death, dot, shockrifle) {
@@ -310,7 +310,7 @@ function private function_47d0632f(localclientnum, damage, death, dot, shockrifl
 }
 
 // Namespace blood/blood
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x5ce886aa, Offset: 0x14b8
 // Size: 0xf4
 function private update_damage_effects(localclientnum, damage, death) {
@@ -326,7 +326,7 @@ function private update_damage_effects(localclientnum, damage, death) {
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7ad42c89, Offset: 0x15b8
 // Size: 0x30a
 function private player_splatter(localclientnum) {
@@ -367,7 +367,7 @@ function private player_splatter(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x873f049a, Offset: 0x18d0
 // Size: 0xae
 function private function_b51756a0(localclientnum, splatter, damage) {
@@ -384,7 +384,7 @@ function private function_b51756a0(localclientnum, splatter, damage) {
 }
 
 // Namespace blood/blood
-// Params 6, eflags: 0x5 linked
+// Params 6, eflags: 0x4
 // Checksum 0x4ae7d80b, Offset: 0x1988
 // Size: 0x45c
 function private splatter_postfx(localclientnum, player, damage, var_cd141ca2, death, dot) {
@@ -430,7 +430,7 @@ function private splatter_postfx(localclientnum, player, damage, var_cd141ca2, d
 }
 
 // Namespace blood/blood
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xbb9d0368, Offset: 0x1df0
 // Size: 0xac
 function rampvalue(localclientnum, stagefrom, stageto, ramptime, var_cd141ca2, key) {
@@ -440,7 +440,7 @@ function rampvalue(localclientnum, stagefrom, stageto, ramptime, var_cd141ca2, k
 }
 
 // Namespace blood/blood
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x6d9481c2, Offset: 0x1ea8
 // Size: 0x134
 function function_441ef0ca(currenttime, elapsedtime, localclientnum, duration, stagefrom, stageto, var_cd141ca2, key) {
@@ -457,11 +457,11 @@ function function_441ef0ca(currenttime, elapsedtime, localclientnum, duration, s
 }
 
 // Namespace blood/blood
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x7dc19567, Offset: 0x1fe8
 // Size: 0x8a
 function private player_base_health() {
-    if (!self function_700ca4f5()) {
+    if (!self hasplayerrole()) {
         return 150;
     }
     basehealth = self getplayerspawnhealth();
@@ -473,11 +473,11 @@ function private player_base_health() {
 }
 
 // Namespace blood/blood
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x5da76a88, Offset: 0x2080
 // Size: 0x13a
 function private function_55d01d42() {
-    assert(self function_700ca4f5());
+    assert(self hasplayerrole());
     character_index = self getcharacterbodytype();
     fields = getcharacterfields(character_index, currentsessionmode());
     if (isdefined(fields) && (isdefined(fields.digitalblood) ? fields.digitalblood : 0)) {
@@ -495,7 +495,7 @@ function private function_55d01d42() {
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x9366cb2a, Offset: 0x21c8
 // Size: 0x39e
 function private function_87544c4a(localclientnum) {
@@ -545,7 +545,7 @@ function private function_87544c4a(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x951ad627, Offset: 0x2570
 // Size: 0x23c
 function private function_8d8880(localclientnum) {
@@ -572,7 +572,7 @@ function private function_8d8880(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x3b572832, Offset: 0x27b8
 // Size: 0x44
 function private function_493a8fbc(localclientnum) {
@@ -581,7 +581,7 @@ function private function_493a8fbc(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x7b5fb020, Offset: 0x2808
 // Size: 0x6e
 function private function_1cf17bbc(localclientnum, new_blood_stage, prior_blood_stage) {
@@ -594,7 +594,7 @@ function private function_1cf17bbc(localclientnum, new_blood_stage, prior_blood_
 }
 
 // Namespace blood/blood
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x566227a2, Offset: 0x2880
 // Size: 0x1be
 function private function_e91b92e2(localclientnum, new_blood_stage, prior_blood_stage) {
@@ -623,7 +623,7 @@ function private function_e91b92e2(localclientnum, new_blood_stage, prior_blood_
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7dee7657, Offset: 0x2a48
 // Size: 0x140
 function private function_56419db8(stage) {
@@ -636,7 +636,7 @@ function private function_56419db8(stage) {
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x702332f1, Offset: 0x2b90
 // Size: 0x7e
 function private play_new_stage_rumble(localclientnum) {
@@ -648,7 +648,7 @@ function private play_new_stage_rumble(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xeae075f2, Offset: 0x2c18
 // Size: 0x4c
 function private function_5a719e5(localclientnum, new_blood_stage, prior_blood_stage) {
@@ -660,7 +660,7 @@ function private function_5a719e5(localclientnum, new_blood_stage, prior_blood_s
 }
 
 // Namespace blood/blood
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xf3ed631, Offset: 0x2c70
 // Size: 0x4ea
 function private function_9a8dc0ec(localclientnum, playerhealth, forceupdate) {
@@ -704,7 +704,7 @@ function private function_9a8dc0ec(localclientnum, playerhealth, forceupdate) {
 }
 
 // Namespace blood/blood
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x9fea6990, Offset: 0x3168
 // Size: 0xc4
 function function_c0cdd1f2(localclientnum, stagefrom, stageto, ramptime, key, postfx) {
@@ -716,7 +716,7 @@ function function_c0cdd1f2(localclientnum, stagefrom, stageto, ramptime, key, po
 }
 
 // Namespace blood/blood
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x3b52704e, Offset: 0x3238
 // Size: 0xbc
 function function_b0298a0(currenttime, elapsedtime, localclientnum, duration, stagefrom, stageto, key, postfx) {
@@ -728,7 +728,7 @@ function function_b0298a0(currenttime, elapsedtime, localclientnum, duration, st
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xba6e6118, Offset: 0x3300
 // Size: 0x6c
 function private function_70299400(localclientnum) {
@@ -742,7 +742,7 @@ function private function_70299400(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x68d5ec15, Offset: 0x3378
 // Size: 0x1ac
 function private function_436ee4c2(localclientnum, pstfx_blood) {
@@ -773,7 +773,7 @@ function private function_436ee4c2(localclientnum, pstfx_blood) {
 }
 
 // Namespace blood/blood
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x203fda68, Offset: 0x3530
 // Size: 0x172a
 function private function_dd830dee() {
@@ -940,7 +940,7 @@ function private function_dd830dee() {
 }
 
 // Namespace blood/blood
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x171e7a0, Offset: 0x4c68
 // Size: 0x9e
 function private function_162fe6ec(localclientnum) {
@@ -954,7 +954,7 @@ function private function_162fe6ec(localclientnum) {
 }
 
 // Namespace blood/blood
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x41fcb9ae, Offset: 0x4d10
 // Size: 0xb62
 function private function_b0e51f43() {
@@ -1026,7 +1026,7 @@ function private function_b0e51f43() {
 }
 
 // Namespace blood/blood
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x17d898ca, Offset: 0x5880
 // Size: 0x1ba2
 function private function_f50652a9() {

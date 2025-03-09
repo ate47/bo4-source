@@ -5,7 +5,7 @@
 #namespace killstreak_bundles;
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcfec28f8, Offset: 0x80
 // Size: 0x12c
 function spawned(local_client_num, bundle) {
@@ -27,7 +27,7 @@ function spawned(local_client_num, bundle) {
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1ece7746, Offset: 0x1b8
 // Size: 0xa
 function function_48e9536e() {

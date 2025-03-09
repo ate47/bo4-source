@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_aat_plasmatic_burst/zm_aat_plasmatic_burst
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4397d909, Offset: 0x198
 // Size: 0x154
 function __init__() {
@@ -34,7 +34,7 @@ function __init__() {
 }
 
 // Namespace zm_aat_plasmatic_burst/zm_aat_plasmatic_burst
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xb9b7dcb2, Offset: 0x2f8
 // Size: 0x3c
 function result(death, attacker, mod, weapon) {
@@ -42,7 +42,7 @@ function result(death, attacker, mod, weapon) {
 }
 
 // Namespace zm_aat_plasmatic_burst/zm_aat_plasmatic_burst
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa5dab14f, Offset: 0x340
 // Size: 0x3b8
 function function_988b8f91(e_attacker, w_weapon) {
@@ -85,7 +85,7 @@ function function_988b8f91(e_attacker, w_weapon) {
 }
 
 // Namespace zm_aat_plasmatic_burst/zm_aat_plasmatic_burst
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x36df57ce, Offset: 0x700
 // Size: 0x19c
 function function_cd252d6e(e_attacker, w_weapon) {
@@ -112,7 +112,7 @@ function function_cd252d6e(e_attacker, w_weapon) {
 }
 
 // Namespace zm_aat_plasmatic_burst/zm_aat_plasmatic_burst
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1d74224a, Offset: 0x8a8
 // Size: 0x174
 function zombie_death_gib(e_attacker, w_weapon) {

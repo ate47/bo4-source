@@ -24,7 +24,7 @@ function autoexec function_d776b402() {
 }
 
 // Namespace zm_custom/zm_customgame
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe0d14266, Offset: 0x290
 // Size: 0x27e
 function function_772f66bd(localclientnum) {
@@ -75,7 +75,7 @@ function function_772f66bd(localclientnum) {
 }
 
 // Namespace zm_custom/zm_customgame
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3ad4de21, Offset: 0x518
 // Size: 0xd2
 function function_e49dbc72() {
@@ -92,7 +92,7 @@ function function_e49dbc72() {
 }
 
 // Namespace zm_custom/zm_customgame
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x6cceff6b, Offset: 0x5f8
 // Size: 0x44
 function private function_ecc5a0b9(local_client_num, player, damage) {
@@ -103,7 +103,7 @@ function private function_ecc5a0b9(local_client_num, player, damage) {
 }
 
 // Namespace zm_custom/zm_customgame
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdfa6b531, Offset: 0x648
 // Size: 0x70
 function function_901b751c(var_c9db62d5) {

@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace swat_team/overwatch_helicopter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4ba91646, Offset: 0x138
 // Size: 0x5c
 function __init__() {
@@ -38,11 +38,11 @@ function function_555b0649(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace swat_team/overwatch_helicopter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xea53117e, Offset: 0x208
 // Size: 0x4c
 function spawned(local_client_num, bundle) {
-    if (self.var_9fde8624 === #"human_sniper") {
+    if (self.subarchetype === #"human_sniper") {
         self killstreak_bundles::spawned(local_client_num, bundle);
     }
 }

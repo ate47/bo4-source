@@ -1,7 +1,7 @@
 #namespace map;
 
 // Namespace map/map
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x849ae33a, Offset: 0x68
 // Size: 0x14
 function init() {
@@ -9,7 +9,7 @@ function init() {
 }
 
 // Namespace map/map
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x91f6b334, Offset: 0x88
 // Size: 0x6e
 function get_script_bundle() {

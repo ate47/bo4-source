@@ -7,7 +7,7 @@
 class cdebug_center_screen : cluielem {
 
     // Namespace cdebug_center_screen/debug_center_screen
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x8610fef8, Offset: 0x258
     // Size: 0x2c
     function open(localclientnum) {
@@ -15,7 +15,7 @@ class cdebug_center_screen : cluielem {
     }
 
     // Namespace cdebug_center_screen/debug_center_screen
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x9616bdb7, Offset: 0x228
     // Size: 0x24
     function function_fa582112(localclientnum) {
@@ -23,7 +23,7 @@ class cdebug_center_screen : cluielem {
     }
 
     // Namespace cdebug_center_screen/debug_center_screen
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xb49b3905, Offset: 0x1f8
     // Size: 0x24
     function register_clientside(uid) {
@@ -31,7 +31,7 @@ class cdebug_center_screen : cluielem {
     }
 
     // Namespace cdebug_center_screen/debug_center_screen
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x83f875fe, Offset: 0x1c8
     // Size: 0x24
     function setup_clientfields(uid) {
@@ -41,7 +41,7 @@ class cdebug_center_screen : cluielem {
 }
 
 // Namespace debug_center_screen/debug_center_screen
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xeb27f52c, Offset: 0xa0
 // Size: 0x40
 function register(uid) {

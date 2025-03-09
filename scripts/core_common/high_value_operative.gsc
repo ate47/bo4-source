@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace hvo/high_value_operative
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1b2de092, Offset: 0xe8
 // Size: 0x44
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace hvo/high_value_operative
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc69e6e77, Offset: 0x138
 // Size: 0x61a
 function function_2ce5cb7e() {
@@ -40,7 +40,7 @@ function function_2ce5cb7e() {
             if (!isdefined(hvo) || !isdefined(hvo.statsarray) || !isarray(hvo.statsarray)) {
                 continue;
             }
-            if (isdefined(hvo.var_46a95923) && hvo.var_46a95923 != "none" && hvo.var_46a95923 != level.gametype) {
+            if (isdefined(hvo.associatedgamemode) && hvo.associatedgamemode != "none" && hvo.associatedgamemode != level.gametype) {
                 continue;
             }
             foreach (stat in hvo.statsarray) {
@@ -80,7 +80,7 @@ function function_2ce5cb7e() {
 }
 
 // Namespace hvo/high_value_operative
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5ceab0f4, Offset: 0x760
 // Size: 0x60e
 function function_59d3154f() {
@@ -104,7 +104,7 @@ function function_59d3154f() {
         if (isdefined(hvo.var_447510ee) && hvo.var_447510ee != var_aa1fbd8c) {
             continue;
         }
-        if (isdefined(hvo.var_46a95923) && hvo.var_46a95923 != "none" && hvo.var_46a95923 != level.gametype) {
+        if (isdefined(hvo.associatedgamemode) && hvo.associatedgamemode != "none" && hvo.associatedgamemode != level.gametype) {
             continue;
         }
         foreach (stat in hvo.statsarray) {
@@ -145,7 +145,7 @@ function function_59d3154f() {
 }
 
 // Namespace hvo/high_value_operative
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xedbaf382, Offset: 0xd78
 // Size: 0xcd8
 function function_323c6715() {
@@ -163,7 +163,7 @@ function function_323c6715() {
         if (!isdefined(hvo) || !isdefined(hvo.statsarray) || !isarray(hvo.statsarray)) {
             continue;
         }
-        if (isdefined(hvo.var_46a95923) && hvo.var_46a95923 != "none" && hvo.var_46a95923 != level.gametype) {
+        if (isdefined(hvo.associatedgamemode) && hvo.associatedgamemode != "none" && hvo.associatedgamemode != level.gametype) {
             continue;
         }
         foreach (player in players) {
@@ -254,7 +254,7 @@ function function_323c6715() {
 }
 
 // Namespace hvo/high_value_operative
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xee3071ae, Offset: 0x1a58
 // Size: 0x1a4
 function private function_cd851b02(stat, var_9b4eeccc, ddl) {
@@ -271,7 +271,7 @@ function private function_cd851b02(stat, var_9b4eeccc, ddl) {
 }
 
 // Namespace hvo/high_value_operative
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x91d36eee, Offset: 0x1c08
 // Size: 0x14e
 function private function_d0c02a50(stat, var_aa1fbd8c, ddl) {
@@ -279,12 +279,12 @@ function private function_d0c02a50(stat, var_aa1fbd8c, ddl) {
         self.pers[#"hvo"][var_aa1fbd8c][stat.var_82670522] = 0;
     }
     var_6fda3763 = self stats::get_stat(ddl, stat.var_82670522, #"statvalue");
-    self.pers[#"hvo"][var_aa1fbd8c][stat.var_82670522] = self.pers[#"hvo"][var_aa1fbd8c][stat.var_82670522] + var_6fda3763 - self.pers[#"hvo"][#"current"][stat.var_82670522];
+    self.pers[#"hvo"][var_aa1fbd8c][stat.var_82670522] += var_6fda3763 - self.pers[#"hvo"][#"current"][stat.var_82670522];
     return var_6fda3763;
 }
 
 // Namespace hvo/high_value_operative
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x14d816f5, Offset: 0x1d60
 // Size: 0x13c
 function private function_1fa30a47(stat, currentscore, var_9b4eeccc) {
@@ -298,19 +298,19 @@ function private function_1fa30a47(stat, currentscore, var_9b4eeccc) {
 }
 
 // Namespace hvo/high_value_operative
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x6edb0836, Offset: 0x1ea8
 // Size: 0x116
 function private function_b535c32e(stat, score, var_aa1fbd8c) {
     if (!isdefined(self.pers[#"hvo"][var_aa1fbd8c][stat.stattype])) {
         self.pers[#"hvo"][var_aa1fbd8c][stat.stattype] = 0;
     }
-    self.pers[#"hvo"][var_aa1fbd8c][stat.stattype] = self.pers[#"hvo"][var_aa1fbd8c][stat.stattype] + score - self.pers[#"hvo"][#"current"][stat.stattype];
+    self.pers[#"hvo"][var_aa1fbd8c][stat.stattype] += score - self.pers[#"hvo"][#"current"][stat.stattype];
     return score;
 }
 
 // Namespace hvo/high_value_operative
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x1e5128fd, Offset: 0x1fc8
 // Size: 0xe2
 function private function_be94d98b(stat, score, var_aa1fbd8c) {

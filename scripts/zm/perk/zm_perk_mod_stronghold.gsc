@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_perk_mod_stronghold/zm_perk_mod_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1209dc81, Offset: 0xf8
 // Size: 0x14
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace zm_perk_mod_stronghold/zm_perk_mod_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x118
 // Size: 0x4
 function __main__() {
@@ -31,7 +31,7 @@ function __main__() {
 }
 
 // Namespace zm_perk_mod_stronghold/zm_perk_mod_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbe4ebff9, Offset: 0x128
 // Size: 0x94
 function function_8afdc221() {
@@ -40,7 +40,7 @@ function function_8afdc221() {
 }
 
 // Namespace zm_perk_mod_stronghold/zm_perk_mod_stronghold
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4ccf5211, Offset: 0x1c8
 // Size: 0x24
 function function_1076eef9() {
@@ -48,7 +48,7 @@ function function_1076eef9() {
 }
 
 // Namespace zm_perk_mod_stronghold/zm_perk_mod_stronghold
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xb14d15b0, Offset: 0x1f8
 // Size: 0x44
 function function_20b5dc19(b_pause, str_perk, str_result, n_slot) {
@@ -56,7 +56,7 @@ function function_20b5dc19(b_pause, str_perk, str_result, n_slot) {
 }
 
 // Namespace zm_perk_mod_stronghold/zm_perk_mod_stronghold
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8a1837cb, Offset: 0x248
 // Size: 0xe4
 function function_1c4f9c3f(s_params) {

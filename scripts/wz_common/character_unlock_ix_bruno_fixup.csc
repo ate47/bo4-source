@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 // Checksum 0x8d1bfdc1, Offset: 0xc8
 // Size: 0x64
 function __init__() {
-    character_unlock_fixup::register_character_unlock(#"ix_bruno_unlock", #"hash_677a722d85cbd06", #"cu28_item", &function_d95e620c, #"hash_1493c49bbdfb17ad");
+    character_unlock_fixup::register_character_unlock(#"ix_bruno_unlock", #"prt_wz_bruno_dlc0", #"cu28_item", &function_d95e620c, #"hash_1493c49bbdfb17ad");
 }
 
 // Namespace character_unlock_ix_bruno_fixup/character_unlock_ix_bruno_fixup

@@ -26,7 +26,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_orange_trial_lighthouse_beam/zm_orange_trial_lighthouse_beam
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbb6b959e, Offset: 0x218
 // Size: 0x5c
 function __init__() {
@@ -37,7 +37,7 @@ function __init__() {
 }
 
 // Namespace zm_orange_trial_lighthouse_beam/zm_orange_trial_lighthouse_beam
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x98be9a42, Offset: 0x280
 // Size: 0xe0
 function private on_begin() {
@@ -51,7 +51,7 @@ function private on_begin() {
 }
 
 // Namespace zm_orange_trial_lighthouse_beam/zm_orange_trial_lighthouse_beam
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2ac6bc5a, Offset: 0x368
 // Size: 0x12c
 function private on_end(round_reset) {
@@ -68,7 +68,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_orange_trial_lighthouse_beam/zm_orange_trial_lighthouse_beam
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x68ca260f, Offset: 0x4a0
 // Size: 0x394
 function private setup_lighthouse() {
@@ -118,7 +118,7 @@ function private setup_lighthouse() {
 }
 
 // Namespace zm_orange_trial_lighthouse_beam/zm_orange_trial_lighthouse_beam
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x59d30458, Offset: 0x840
 // Size: 0x2dc
 function function_dbad2f5a() {
@@ -146,7 +146,7 @@ function function_dbad2f5a() {
 }
 
 // Namespace zm_orange_trial_lighthouse_beam/zm_orange_trial_lighthouse_beam
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x4808db5c, Offset: 0xb28
 // Size: 0x96
 function private function_b502c51(nd_start) {
@@ -160,7 +160,7 @@ function private function_b502c51(nd_start) {
 }
 
 // Namespace zm_orange_trial_lighthouse_beam/zm_orange_trial_lighthouse_beam
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2e265467, Offset: 0xbc8
 // Size: 0x13a
 function function_f223e16f(round_reset) {
@@ -184,7 +184,7 @@ function function_f223e16f(round_reset) {
 }
 
 // Namespace zm_orange_trial_lighthouse_beam/zm_orange_trial_lighthouse_beam
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xf302a899, Offset: 0xd10
 // Size: 0x10e
 function private function_1e902f3b() {
@@ -209,7 +209,7 @@ function private function_1e902f3b() {
 }
 
 // Namespace zm_orange_trial_lighthouse_beam/zm_orange_trial_lighthouse_beam
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x85955ade, Offset: 0xe28
 // Size: 0x58
 function function_91f0d131() {
@@ -221,7 +221,7 @@ function function_91f0d131() {
 }
 
 // Namespace zm_orange_trial_lighthouse_beam/zm_orange_trial_lighthouse_beam
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x3cc6df86, Offset: 0xe88
 // Size: 0xa4
 function private function_33f0ddd3(s_event) {

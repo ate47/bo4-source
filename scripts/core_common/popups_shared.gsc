@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace popups/popups_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3d5d368c, Offset: 0xf0
 // Size: 0x24
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace popups/popups_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfcaa3e7c, Offset: 0x120
 // Size: 0x1ec
 function init() {
@@ -55,7 +55,7 @@ function init() {
 }
 
 // Namespace popups/popups_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc42636dc, Offset: 0x318
 // Size: 0x62
 function on_player_connect() {
@@ -514,7 +514,7 @@ function on_player_connect() {
 #/
 
 // Namespace popups/popups_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb9366c52, Offset: 0x25a0
 // Size: 0x84
 function displaykillstreakteammessagetoall(killstreak, player) {
@@ -529,7 +529,7 @@ function displaykillstreakteammessagetoall(killstreak, player) {
 }
 
 // Namespace popups/popups_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x49075a05, Offset: 0x2630
 // Size: 0x84
 function displaykillstreakhackedteammessagetoall(killstreak, player) {
@@ -544,7 +544,7 @@ function displaykillstreakhackedteammessagetoall(killstreak, player) {
 }
 
 // Namespace popups/popups_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x35504952, Offset: 0x26c0
 // Size: 0x36
 function shoulddisplayteammessages() {
@@ -555,7 +555,7 @@ function shoulddisplayteammessages() {
 }
 
 // Namespace popups/popups_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x353f4578, Offset: 0x2700
 // Size: 0x34
 function function_eb9328f3() {
@@ -564,7 +564,7 @@ function function_eb9328f3() {
 }
 
 // Namespace popups/popups_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7cc544d4, Offset: 0x2740
 // Size: 0x136
 function displayteammessagetoall(message, player) {
@@ -588,7 +588,7 @@ function displayteammessagetoall(message, player) {
 }
 
 // Namespace popups/popups_shared
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xd5c1db8f, Offset: 0x2880
 // Size: 0x20e
 function displayteammessagetoteam(message, player, team, optionalarg, var_3d4cfe83, var_cf88c427 = 0) {
@@ -619,7 +619,7 @@ function displayteammessagetoteam(message, player, team, optionalarg, var_3d4cfe
 }
 
 // Namespace popups/popups_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x185d3dd1, Offset: 0x2a98
 // Size: 0x2c
 function on_team_message() {
@@ -630,7 +630,7 @@ function on_team_message() {
 }
 
 // Namespace popups/popups_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc7b1537d, Offset: 0x2ad0
 // Size: 0x1c8
 function function_921657e4() {

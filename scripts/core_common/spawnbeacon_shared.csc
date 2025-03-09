@@ -4,7 +4,7 @@
 #namespace spawn_beacon;
 
 // Namespace spawn_beacon/spawnbeacon_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x81ee5c1, Offset: 0x110
 // Size: 0x14
 function init_shared() {
@@ -12,7 +12,7 @@ function init_shared() {
 }
 
 // Namespace spawn_beacon/spawnbeacon_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x57ac8500, Offset: 0x130
 // Size: 0x84
 function setupclientfields() {
@@ -21,7 +21,7 @@ function setupclientfields() {
 }
 
 // Namespace spawn_beacon/spawnbeacon_shared
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xa230f625, Offset: 0x1c0
 // Size: 0xe4
 function private spawnbeacon_placed(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

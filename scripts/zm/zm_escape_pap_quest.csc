@@ -5,7 +5,7 @@
 #namespace pap_quest;
 
 // Namespace pap_quest/zm_escape_pap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5d826ed8, Offset: 0x120
 // Size: 0x64
 function init() {
@@ -15,7 +15,7 @@ function init() {
 }
 
 // Namespace pap_quest/zm_escape_pap_quest
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd66cb6c2, Offset: 0x190
 // Size: 0xb4
 function init_clientfield() {
@@ -24,7 +24,7 @@ function init_clientfield() {
 }
 
 // Namespace pap_quest/zm_escape_pap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd77ccbdc, Offset: 0x250
 // Size: 0xcc
 function lightning_near_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -38,7 +38,7 @@ function lightning_near_fx(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace pap_quest/zm_escape_pap_quest
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7ccfc09e, Offset: 0x328
 // Size: 0xec
 function function_5cb90582(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_quacknarok/zm_bgb_quacknarok
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2cb98a72, Offset: 0xf0
 // Size: 0x4c
 function __init__() {

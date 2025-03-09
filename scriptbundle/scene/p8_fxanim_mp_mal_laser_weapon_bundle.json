@@ -1,0 +1,55 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_55ae5572388e745",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_143704b69479b56e",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_27abe444d68a4c17",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3e5e15f321ab04da",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "name": "recharge"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_3dcbcbefc25c4290",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_mal_laser_weapon_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -12,7 +12,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_bgb_kill_joy/zm_bgb_kill_joy
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9dcd3860, Offset: 0xe8
 // Size: 0x74
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace zm_bgb_kill_joy/zm_bgb_kill_joy
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1c5a78ce, Offset: 0x168
 // Size: 0x24
 function activation() {
@@ -31,7 +31,7 @@ function activation() {
 }
 
 // Namespace zm_bgb_kill_joy/zm_bgb_kill_joy
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xad6b77e3, Offset: 0x198
 // Size: 0x1a
 function validation() {

@@ -144,7 +144,7 @@ function private function_7c52f40() {
 function private function_95a6fbef() {
     self.maxhealth = 900;
     self.health = self.maxhealth;
-    namespace_81245006::initweakpoints(self, #"hash_4b85d1f08e4e34cb");
+    namespace_81245006::initweakpoints(self, #"c_t8_wz_blightfather_weakpoint_def");
     self show();
     self showallparts();
 }
@@ -721,7 +721,7 @@ function function_422fdfd4(entity, attacker, weapon, var_5457dc44, hitloc, point
     if (!var_30362eca) {
         var_b1c1c5cf = isdefined(var_c6cc6205) ? var_c6cc6205 : entity ai::function_9139c839().damagescale;
     } else if (var_30362eca) {
-        var_b1c1c5cf = isdefined(var_fff93f95) ? var_fff93f95 : entity ai::function_9139c839().var_628192b0;
+        var_b1c1c5cf = isdefined(var_fff93f95) ? var_fff93f95 : entity ai::function_9139c839().weakpointdamagescale;
     }
     return {#damage_scale:var_b1c1c5cf, #var_84ed9a13:var_84ed9a13, #registerzombie_bgb_used_reinforce:registerzombie_bgb_used_reinforce};
 }

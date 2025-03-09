@@ -5,7 +5,7 @@
 #namespace hacker_tool;
 
 // Namespace hacker_tool/hacker_tool
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x41d44814, Offset: 0x110
 // Size: 0x94
 function init_shared() {
@@ -17,7 +17,7 @@ function init_shared() {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1346e05f, Offset: 0x1b0
 // Size: 0x10c
 function on_localplayer_spawned(localclientnum) {
@@ -40,7 +40,7 @@ function on_localplayer_spawned(localclientnum) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6b24bcd1, Offset: 0x2c8
 // Size: 0x444
 function player_hacking(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -87,7 +87,7 @@ function player_hacking(localclientnum, oldval, newval, bnewent, binitialsnap, f
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb636748b, Offset: 0x718
 // Size: 0xbc
 function watchhackspeed(localclientnum, isbreachingfirewall) {
@@ -106,7 +106,7 @@ function watchhackspeed(localclientnum, isbreachingfirewall) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf45d6e4f, Offset: 0x7e0
 // Size: 0x450
 function watchtargethack(localclientnum, player, isbreachingfirewall) {
@@ -164,7 +164,7 @@ function watchtargethack(localclientnum, player, isbreachingfirewall) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe9514677, Offset: 0xc38
 // Size: 0xbc
 function watchhackerplayershutdown(localclientnum, hackerplayer, targetent) {
@@ -180,7 +180,7 @@ function watchhackerplayershutdown(localclientnum, hackerplayer, targetent) {
 }
 
 // Namespace hacker_tool/hacker_tool
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x771d65bf, Offset: 0xd00
 // Size: 0xe8
 function watchforemp(localclientnum) {

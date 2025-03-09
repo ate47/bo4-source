@@ -12,7 +12,7 @@
 #namespace globallogic_defaults;
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4c029395, Offset: 0x138
 // Size: 0x3a
 function getwinningteamfromloser(losing_team) {
@@ -23,7 +23,7 @@ function getwinningteamfromloser(losing_team) {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xad9fa983, Offset: 0x180
 // Size: 0x2ec
 function default_onforfeit(team) {
@@ -62,7 +62,7 @@ function default_onforfeit(team) {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x738dacb2, Offset: 0x478
 // Size: 0x1bc
 function default_ondeadevent(team) {
@@ -86,7 +86,7 @@ function default_ondeadevent(team) {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc45be514, Offset: 0x640
 // Size: 0xc
 function default_onalivecountchange(team) {
@@ -94,7 +94,7 @@ function default_onalivecountchange(team) {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x69c3262a, Offset: 0x658
 // Size: 0x10
 function default_onroundendgame(winner) {
@@ -102,7 +102,7 @@ function default_onroundendgame(winner) {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbcfe80d8, Offset: 0x670
 // Size: 0x162
 function default_ononeleftevent(team) {
@@ -129,7 +129,7 @@ function default_ononeleftevent(team) {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4d890536, Offset: 0x7e0
 // Size: 0x12c
 function default_ontimelimit() {
@@ -152,7 +152,7 @@ function default_ontimelimit() {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x200c021a, Offset: 0x918
 // Size: 0x148
 function default_onscorelimit() {
@@ -179,7 +179,7 @@ function default_onscorelimit() {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf2f76a16, Offset: 0xa68
 // Size: 0xf4
 function default_onspawnspectator(origin, angles) {
@@ -195,7 +195,7 @@ function default_onspawnspectator(origin, angles) {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5097ef2e, Offset: 0xb68
 // Size: 0xb4
 function default_onspawnintermission() {
@@ -212,7 +212,7 @@ function default_onspawnintermission() {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x82f90cab, Offset: 0xc28
 // Size: 0x42
 function default_gettimelimit() {

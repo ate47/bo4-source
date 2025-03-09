@@ -194,7 +194,7 @@ function challenge_kills(data) {
                 heroweaponmask = get_hero_weapon_mask(attacker, weapon);
                 newheroweaponmask = heroweaponmask | currentheroweaponmask;
                 if (newheroweaponmask != currentheroweaponmask) {
-                    player.pers[#"blackjack_unique_specialist_kills"] = player.pers[#"blackjack_unique_specialist_kills"] + 1;
+                    player.pers[#"blackjack_unique_specialist_kills"] += 1;
                     player.pers[#"blackjack_unique_weapon_mask"] = newheroweaponmask;
                 }
                 player check_blackjack_challenge();

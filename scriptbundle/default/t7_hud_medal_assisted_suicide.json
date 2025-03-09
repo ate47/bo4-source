@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_assisted_suicide",
     "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
     "iconsmall": "#t7_hud_medal_assisted_suicide",
-    "stringref": "#hash_152dd22061c30c98",
+    "stringref": "#medal/assisted_suicide",
     "iconlarge": "#t7_hud_medal_assisted_suicide_lrg"
 }

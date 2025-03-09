@@ -7,7 +7,7 @@
 class cinsertion_passenger_count : cluielem {
 
     // Namespace cinsertion_passenger_count/insertion_passenger_count
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x2966892c, Offset: 0x320
     // Size: 0x30
     function set_count(localclientnum, value) {
@@ -15,7 +15,7 @@ class cinsertion_passenger_count : cluielem {
     }
 
     // Namespace cinsertion_passenger_count/insertion_passenger_count
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x515377c3, Offset: 0x2e8
     // Size: 0x2c
     function open(localclientnum) {
@@ -23,7 +23,7 @@ class cinsertion_passenger_count : cluielem {
     }
 
     // Namespace cinsertion_passenger_count/insertion_passenger_count
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0xffe3b3db, Offset: 0x2a0
     // Size: 0x40
     function function_fa582112(localclientnum) {
@@ -32,7 +32,7 @@ class cinsertion_passenger_count : cluielem {
     }
 
     // Namespace cinsertion_passenger_count/insertion_passenger_count
-    // Params 1, eflags: 0x1 linked
+    // Params 1, eflags: 0x0
     // Checksum 0x2a2cfaaf, Offset: 0x270
     // Size: 0x24
     function register_clientside(uid) {
@@ -40,7 +40,7 @@ class cinsertion_passenger_count : cluielem {
     }
 
     // Namespace cinsertion_passenger_count/insertion_passenger_count
-    // Params 2, eflags: 0x1 linked
+    // Params 2, eflags: 0x0
     // Checksum 0x75b74d01, Offset: 0x210
     // Size: 0x54
     function setup_clientfields(uid, var_fbcc4763) {
@@ -51,7 +51,7 @@ class cinsertion_passenger_count : cluielem {
 }
 
 // Namespace insertion_passenger_count/insertion_passenger_count
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x17db45a3, Offset: 0xa8
 // Size: 0x4c
 function register(uid, var_fbcc4763) {

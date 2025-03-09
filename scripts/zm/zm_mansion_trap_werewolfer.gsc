@@ -36,7 +36,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_trap_werewolfer/zm_mansion_trap_werewolfer
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf6159c7a, Offset: 0x298
 // Size: 0x14c
 function __init__() {
@@ -55,7 +55,7 @@ function __init__() {
 }
 
 // Namespace zm_trap_werewolfer/zm_mansion_trap_werewolfer
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaceb6748, Offset: 0x3f0
 // Size: 0xa4
 function __main__() {
@@ -68,7 +68,7 @@ function __main__() {
 }
 
 // Namespace zm_trap_werewolfer/zm_mansion_trap_werewolfer
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb4374097, Offset: 0x4a0
 // Size: 0x28c
 function function_670dda89() {
@@ -101,7 +101,7 @@ function function_670dda89() {
 }
 
 // Namespace zm_trap_werewolfer/zm_mansion_trap_werewolfer
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf1f6c815, Offset: 0x738
 // Size: 0x13c
 function function_408fcb87() {
@@ -117,7 +117,7 @@ function function_408fcb87() {
 }
 
 // Namespace zm_trap_werewolfer/zm_mansion_trap_werewolfer
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x483fedcd, Offset: 0x880
 // Size: 0xf8
 function function_38b44aab() {
@@ -131,7 +131,7 @@ function function_38b44aab() {
 }
 
 // Namespace zm_trap_werewolfer/zm_mansion_trap_werewolfer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbab7483c, Offset: 0x980
 // Size: 0x84
 function function_436d9a24(t_damage) {
@@ -143,12 +143,12 @@ function function_436d9a24(t_damage) {
 }
 
 // Namespace zm_trap_werewolfer/zm_mansion_trap_werewolfer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7fe5958a, Offset: 0xa10
 // Size: 0x3fa
 function ai_damage(e_trap) {
     self endon(#"death");
-    if (self.var_9fde8624 === #"catalyst_electric") {
+    if (self.subarchetype === #"catalyst_electric") {
         return;
     }
     if (self.team === #"allies") {
@@ -201,7 +201,7 @@ function ai_damage(e_trap) {
 }
 
 // Namespace zm_trap_werewolfer/zm_mansion_trap_werewolfer
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x42d20a1b, Offset: 0xe18
 // Size: 0x16c
 function function_a3059f6(e_trap) {
