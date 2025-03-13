@@ -1,0 +1,6 @@
+type,name
+image,#ui_icon_weapon_hud_melee_bowie_bloody
+image,#ui_icon_weapon_hud_melee_zombie_arm
+image,#ui_icon_weapon_melee_zombie_arm_render
+image,#ui_icon_weapon_melee_bowie_bloody_render
+keyvaluepairs,#hash_11a9426192bd9013

@@ -1,0 +1,182 @@
+{
+    "name": "#spawner_bo3_robot_grunt_assault_mp",
+    "animTree": "spawner_bo3_robot_grunt_assault_mp",
+    "category": "none",
+    "fireMode": "fullauto",
+    "team": "TEAM_AXIS",
+    "species": "#human",
+    "archeType": "#robot",
+    "scoreType": "#none",
+    "movementType": "#robot",
+    "spawnInfluencers": [
+        "#none",
+        "#none"
+    ],
+    "compassIcon": "#hash_255f7340aecb8573",
+    "typeSuffix": "_robotsoldier",
+    "spawnerType": "vox_robot",
+    "tag1": "j_neck",
+    "tag2": "j_chest_door",
+    "primaryWeapons": [
+        "#hash_4e81ab43a74f9f59"
+    ],
+    "character": [
+        "#hash_81ecaa5cc48e9c0"
+    ],
+    "sideArm": "#pistol_standard_mp",
+    "grenadeWeapon": "#frag_grenade_mp",
+    "aimTable": "#soldier_aim",
+    "footstepTable": "#botfootstep",
+    "footstepScriptCallback": false,
+    "footstepFXTable1": "#player_footstep",
+    "footstepFXTable2": "#player_footstep",
+    "behaviorTree": "#hash_3be2ef217e1d8f91",
+    "animStateMachine": "#hash_6a927ee9529d0c5a",
+    "animSelectorTable": "#hash_6a9267e9529ce545",
+    "traversalExtents": "#default_traversal_extents",
+    "aiFxBundle": "#c_54i_robot_grunt_fx_table",
+    "ignoresDamageHitLocations": false,
+    "ignoreVortices": false,
+    "usesCovernodes": true,
+    "accurateFire": true,
+    "aggressiveMode": false,
+    "hero": false,
+    "matureGib": false,
+    "restrictedGib": false,
+    "allowFriendlyFire": false,
+    "fixedNode": false,
+    "isPacifist": false,
+    "threatIgnoreVehicles": false,
+    "proceduralTraversals": true,
+    "canFlank": true,
+    "burstCountMin": 6,
+    "burstCountMax": 6,
+    "fireIntervalmin": 100,
+    "fireIntervalmax": 100,
+    "physRadius": 15,
+    "physHeight": 72,
+    "pathEnemyFightDist": 1,
+    "runAndGunDist": 36,
+    "faceEnemyDist": 180,
+    "coverNodeSearchInterval": 9000,
+    "newThreatDelay": 250,
+    "newPainDelay": 5000,
+    "defaultGoalRadius": 2048,
+    "sightDist": 8192,
+    "painTolerance": 5000,
+    "animMappingTableDefault": 0,
+    "engageMinDist": 0,
+    "engageMinFalloffDist": 0,
+    "engageMaxDist": 2000,
+    "engageMaxFalloffDist": 2000,
+    "shootAngleThreshold": 35,
+    "closeShootAngleThreshold": 45,
+    "closeShootAngleDistance": 120,
+    "favorTraversalFactor": 0.5,
+    "favorSpecialTraversalFactor": 0.5,
+    "flankingScoreScale": 5,
+    "flankingAngle": 70,
+    "coverCrouch": {
+        "xOffset": 0,
+        "yOffset": -15,
+        "yawOffset": 0
+    },
+    "coverExposed": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "coverLeft": {
+        "xOffset": 0,
+        "yOffset": -15,
+        "yawOffset": 0
+    },
+    "coverPillar": {
+        "xOffset": 0,
+        "yOffset": -15,
+        "yawOffset": 0
+    },
+    "coverRight": {
+        "xOffset": 0,
+        "yOffset": -15,
+        "yawOffset": 0
+    },
+    "coverStand": {
+        "xOffset": 0,
+        "yOffset": -15,
+        "yawOffset": 0
+    },
+    "steering": [
+        {
+            "turnRate": 220,
+            "maxTurnRateAngle": 35,
+            "sensorSize": 300,
+            "collisionPenalty": 4,
+            "dodgingPenalty": 0.4,
+            "penetrationPenalty": 0,
+            "sidednessChangingPenalty": 0,
+            "velocityHysteresis": 0.01
+        },
+        {
+            "turnRate": 110,
+            "maxTurnRateAngle": 180,
+            "sensorSize": 300,
+            "collisionPenalty": 4,
+            "dodgingPenalty": 0.4,
+            "penetrationPenalty": 0,
+            "sidednessChangingPenalty": 0,
+            "velocityHysteresis": 0.01
+        },
+        {
+            "turnRate": 220,
+            "maxTurnRateAngle": 35,
+            "sensorSize": 300,
+            "collisionPenalty": 1,
+            "dodgingPenalty": 1,
+            "penetrationPenalty": 0,
+            "sidednessChangingPenalty": 1,
+            "velocityHysteresis": 0.1
+        }
+    ],
+    "demoLockOn": {
+        "highlightDistance": 100,
+        "views": [
+            {
+                "heightOffset": 8,
+                "pitchMin": 0,
+                "pitchMax": 60
+            },
+            {
+                "heightOffset": 8,
+                "pitchMin": 0,
+                "pitchMax": 60
+            }
+        ]
+    },
+    "frontQuadrantDegrees": 170,
+    "backQuadrantDegrees": 170,
+    "leftQuadrantDegrees": 20,
+    "rightQuadrantDegrees": 20,
+    "thresholds": [
+        {
+            "forwardDot": 0.70710677,
+            "sideDot": -0.70710677
+        },
+        {
+            "forwardDot": 0.087155804,
+            "sideDot": -0.08715577
+        },
+        {
+            "forwardDot": 0.17364822,
+            "sideDot": -0.1736482
+        },
+        {
+            "forwardDot": 0.17364822,
+            "sideDot": -0.1736482
+        },
+        {
+            "forwardDot": 0.087155804,
+            "sideDot": -0.08715577
+        }
+    ]
+}

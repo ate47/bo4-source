@@ -1,0 +1,15 @@
+type,name
+xmodel,#p7_gib_chunk_flesh_01
+xmodel,#p7_gib_chunk_flesh_03
+xmodel,#p7_gib_chunk_bone_03
+xmodel,#p7_gib_chunk_meat_01
+xmodel,#p7_gib_chunk_meat_02
+xmodel,#p7_gib_chunk_meat_03
+xmodelmesh,#hash_ed0e5ff109f50f2d
+material,#hash_e7597e14886d4aed
+techset,#hash_dc620bec3ab6c90d
+image,#$identitynormalmap
+image,#$white_reveal
+image,#hash_b317746176dd0633
+image,#$blacktransparent_color
+keyvaluepairs,#hash_173ae6652c987fcc

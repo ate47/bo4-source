@@ -1,0 +1,177 @@
+{
+    "name": "#spawner_zm_towers_boss_2",
+    "animTree": "spawner_zm_towers_boss_2",
+    "category": "none",
+    "fireMode": "fullauto",
+    "team": "TEAM_AXIS",
+    "species": "#human",
+    "archeType": "#elephant",
+    "scoreType": "#none",
+    "movementType": "#zombie",
+    "spawnInfluencers": [
+        "#none",
+        "#none"
+    ],
+    "typeSuffix": "_zombie",
+    "spawnerType": "hellephant",
+    "character": [
+        "#hash_70118a35bf16629d"
+    ],
+    "meleeWeapon": "#hash_479f8de44d618b68",
+    "aimTable": "#soldier_aim",
+    "footstepTable": "#hash_2d541633bdb100af",
+    "footstepScriptCallback": true,
+    "footstepFXTable1": "#zm_elephant_footstep",
+    "footstepFXTable2": "#zm_elephant_footstep",
+    "behaviorTree": "#elephant.ai_bt",
+    "animStateMachine": "#hash_591ec6b3f523a474",
+    "animSelectorTable": "#elephant.ai_ast",
+    "traversalExtents": "#default_traversal_extents_zm",
+    "aiFxBundle": "#fxb8_zm_char_towers_boss",
+    "aiNotetrackBoneMappingBundle": "#towers_boss_footstep_notetrack_bones",
+    "aiSettingsBundle": "#zm_towers_boss_settings",
+    "ignoresDamageHitLocations": false,
+    "ignoreVortices": false,
+    "usesCovernodes": true,
+    "accurateFire": false,
+    "aggressiveMode": false,
+    "hero": false,
+    "matureGib": false,
+    "restrictedGib": true,
+    "allowFriendlyFire": false,
+    "fixedNode": true,
+    "isPacifist": false,
+    "threatIgnoreVehicles": false,
+    "proceduralTraversals": false,
+    "canFlank": false,
+    "burstCountMin": 3,
+    "burstCountMax": 6,
+    "fireIntervalmin": 100,
+    "fireIntervalmax": 100,
+    "physRadius": 140,
+    "physHeight": 350,
+    "pathEnemyFightDist": 192,
+    "runAndGunDist": 192,
+    "faceEnemyDist": 512,
+    "coverNodeSearchInterval": 2000,
+    "newThreatDelay": 500,
+    "newPainDelay": 875,
+    "defaultGoalRadius": 100,
+    "sightDist": 8192,
+    "painTolerance": 0,
+    "animMappingTableDefault": 0,
+    "engageMinDist": 256,
+    "engageMinFalloffDist": 0,
+    "engageMaxDist": 768,
+    "engageMaxFalloffDist": 1024,
+    "shootAngleThreshold": 5,
+    "closeShootAngleThreshold": 15,
+    "closeShootAngleDistance": 120,
+    "favorTraversalFactor": 1,
+    "favorSpecialTraversalFactor": 1,
+    "flankingScoreScale": 1,
+    "flankingAngle": 70,
+    "coverCrouch": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "coverExposed": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "coverLeft": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "coverPillar": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "coverRight": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "coverStand": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "steering": [
+        {
+            "turnRate": 90,
+            "maxTurnRateAngle": 20,
+            "sensorSize": 400,
+            "collisionPenalty": 0,
+            "dodgingPenalty": 0,
+            "penetrationPenalty": 0,
+            "sidednessChangingPenalty": 2,
+            "velocityHysteresis": 2
+        },
+        {
+            "turnRate": 220,
+            "maxTurnRateAngle": 35,
+            "sensorSize": 300,
+            "collisionPenalty": 3,
+            "dodgingPenalty": 0.7,
+            "penetrationPenalty": 0,
+            "sidednessChangingPenalty": 1,
+            "velocityHysteresis": 0.1
+        },
+        {
+            "turnRate": 220,
+            "maxTurnRateAngle": 35,
+            "sensorSize": 300,
+            "collisionPenalty": 3,
+            "dodgingPenalty": 0.7,
+            "penetrationPenalty": 0,
+            "sidednessChangingPenalty": 1,
+            "velocityHysteresis": 0.1
+        }
+    ],
+    "demoLockOn": {
+        "highlightDistance": 100,
+        "views": [
+            {
+                "heightOffset": 8,
+                "pitchMin": 0,
+                "pitchMax": 60
+            },
+            {
+                "heightOffset": 8,
+                "pitchMin": 0,
+                "pitchMax": 60
+            }
+        ]
+    },
+    "frontQuadrantDegrees": 90,
+    "backQuadrantDegrees": 90,
+    "leftQuadrantDegrees": 90,
+    "rightQuadrantDegrees": 90,
+    "thresholds": [
+        {
+            "forwardDot": 0.70710677,
+            "sideDot": -0.70710677
+        },
+        {
+            "forwardDot": 0.70710677,
+            "sideDot": -0.70710677
+        },
+        {
+            "forwardDot": 0.70710677,
+            "sideDot": -0.70710677
+        },
+        {
+            "forwardDot": 0.70710677,
+            "sideDot": -0.70710677
+        },
+        {
+            "forwardDot": 0.70710677,
+            "sideDot": -0.70710677
+        }
+    ]
+}

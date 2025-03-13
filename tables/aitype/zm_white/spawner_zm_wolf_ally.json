@@ -1,0 +1,151 @@
+{
+    "name": "#spawner_zm_wolf_ally",
+    "category": "none",
+    "fireMode": "fullauto",
+    "team": "TEAM_FREE",
+    "footstepScriptCallback": false,
+    "ignoresDamageHitLocations": false,
+    "ignoreVortices": false,
+    "usesCovernodes": false,
+    "accurateFire": false,
+    "aggressiveMode": false,
+    "hero": false,
+    "matureGib": false,
+    "restrictedGib": false,
+    "allowFriendlyFire": false,
+    "fixedNode": false,
+    "isPacifist": false,
+    "threatIgnoreVehicles": false,
+    "proceduralTraversals": false,
+    "canFlank": false,
+    "burstCountMin": 0,
+    "burstCountMax": 0,
+    "fireIntervalmin": 0,
+    "fireIntervalmax": 0,
+    "physRadius": 0,
+    "physHeight": 0,
+    "pathEnemyFightDist": 0,
+    "runAndGunDist": 0,
+    "faceEnemyDist": 0,
+    "coverNodeSearchInterval": 0,
+    "newThreatDelay": 0,
+    "newPainDelay": 0,
+    "defaultGoalRadius": 0,
+    "sightDist": 0,
+    "painTolerance": 0,
+    "animMappingTableDefault": 0,
+    "engageMinDist": 0,
+    "engageMinFalloffDist": 0,
+    "engageMaxDist": 0,
+    "engageMaxFalloffDist": 0,
+    "shootAngleThreshold": 0,
+    "closeShootAngleThreshold": 0,
+    "closeShootAngleDistance": 0,
+    "favorTraversalFactor": 0,
+    "favorSpecialTraversalFactor": 0,
+    "flankingScoreScale": 0,
+    "flankingAngle": 0,
+    "coverCrouch": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "coverExposed": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "coverLeft": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "coverPillar": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "coverRight": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "coverStand": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "steering": [
+        {
+            "turnRate": 0,
+            "maxTurnRateAngle": 0,
+            "sensorSize": 0,
+            "collisionPenalty": 0,
+            "dodgingPenalty": 0,
+            "penetrationPenalty": 0,
+            "sidednessChangingPenalty": 0,
+            "velocityHysteresis": 0
+        },
+        {
+            "turnRate": 0,
+            "maxTurnRateAngle": 0,
+            "sensorSize": 0,
+            "collisionPenalty": 0,
+            "dodgingPenalty": 0,
+            "penetrationPenalty": 0,
+            "sidednessChangingPenalty": 0,
+            "velocityHysteresis": 0
+        },
+        {
+            "turnRate": 0,
+            "maxTurnRateAngle": 0,
+            "sensorSize": 0,
+            "collisionPenalty": 0,
+            "dodgingPenalty": 0,
+            "penetrationPenalty": 0,
+            "sidednessChangingPenalty": 0,
+            "velocityHysteresis": 0
+        }
+    ],
+    "demoLockOn": {
+        "highlightDistance": 0,
+        "views": [
+            {
+                "heightOffset": 0,
+                "pitchMin": 0,
+                "pitchMax": 0
+            },
+            {
+                "heightOffset": 0,
+                "pitchMin": 0,
+                "pitchMax": 0
+            }
+        ]
+    },
+    "frontQuadrantDegrees": 0,
+    "backQuadrantDegrees": 0,
+    "leftQuadrantDegrees": 0,
+    "rightQuadrantDegrees": 0,
+    "thresholds": [
+        {
+            "forwardDot": 0,
+            "sideDot": 0
+        },
+        {
+            "forwardDot": 0,
+            "sideDot": 0
+        },
+        {
+            "forwardDot": 0,
+            "sideDot": 0
+        },
+        {
+            "forwardDot": 0,
+            "sideDot": 0
+        },
+        {
+            "forwardDot": 0,
+            "sideDot": 0
+        }
+    ]
+}

@@ -1,0 +1,176 @@
+{
+    "name": "#spawner_zm_crimson_nosferatu",
+    "animTree": "spawner_zm_crimson_nosferatu",
+    "category": "none",
+    "fireMode": "fullauto",
+    "team": "TEAM_AXIS",
+    "species": "#human",
+    "archeType": "#nosferatu",
+    "scoreType": "#crimson_nosferatu",
+    "movementType": "#nosferatu",
+    "spawnInfluencers": [
+        "#none",
+        "#none"
+    ],
+    "typeSuffix": "_zombie",
+    "spawnerType": "nosferatu",
+    "character": [
+        "#hash_7a91e4b8c0c435ad"
+    ],
+    "meleeWeapon": "#hash_2ab63008299706dc",
+    "aimTable": "#soldier_aim",
+    "footstepTable": "#hash_78c774673e4b1875",
+    "footstepScriptCallback": false,
+    "footstepFXTable1": "#zm_nos_footstep",
+    "footstepFXTable2": "#zm_nos_footstep",
+    "behaviorTree": "#zm_nosferatu.ai_bt",
+    "animStateMachine": "#hash_6c96a60c01ba1c9c",
+    "animSelectorTable": "#hash_6c969f0c01ba10b7",
+    "traversalExtents": "#default_traversal_extents_zm",
+    "aiFxBundle": "#fxb8_zm_char_nos",
+    "aiSettingsBundle": "#zm_crimson_nosferatu_settings",
+    "ignoresDamageHitLocations": false,
+    "ignoreVortices": false,
+    "usesCovernodes": false,
+    "accurateFire": false,
+    "aggressiveMode": false,
+    "hero": false,
+    "matureGib": true,
+    "restrictedGib": false,
+    "allowFriendlyFire": false,
+    "fixedNode": false,
+    "isPacifist": false,
+    "threatIgnoreVehicles": false,
+    "proceduralTraversals": false,
+    "canFlank": false,
+    "burstCountMin": 3,
+    "burstCountMax": 6,
+    "fireIntervalmin": 100,
+    "fireIntervalmax": 100,
+    "physRadius": 15,
+    "physHeight": 72,
+    "pathEnemyFightDist": 64,
+    "runAndGunDist": 192,
+    "faceEnemyDist": 512,
+    "coverNodeSearchInterval": 2000,
+    "newThreatDelay": 500,
+    "newPainDelay": 875,
+    "defaultGoalRadius": 32,
+    "sightDist": 8192,
+    "painTolerance": 0,
+    "animMappingTableDefault": 1,
+    "engageMinDist": 250,
+    "engageMinFalloffDist": 0,
+    "engageMaxDist": 700,
+    "engageMaxFalloffDist": 1000,
+    "shootAngleThreshold": 5,
+    "closeShootAngleThreshold": 15,
+    "closeShootAngleDistance": 120,
+    "favorTraversalFactor": 1,
+    "favorSpecialTraversalFactor": 1,
+    "flankingScoreScale": 1,
+    "flankingAngle": 70,
+    "coverCrouch": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "coverExposed": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "coverLeft": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "coverPillar": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "coverRight": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "coverStand": {
+        "xOffset": 0,
+        "yOffset": 0,
+        "yawOffset": 0
+    },
+    "steering": [
+        {
+            "turnRate": 220,
+            "maxTurnRateAngle": 35,
+            "sensorSize": 300,
+            "collisionPenalty": 1,
+            "dodgingPenalty": 0.7,
+            "penetrationPenalty": 0,
+            "sidednessChangingPenalty": 1,
+            "velocityHysteresis": 0.1
+        },
+        {
+            "turnRate": 220,
+            "maxTurnRateAngle": 35,
+            "sensorSize": 300,
+            "collisionPenalty": 1,
+            "dodgingPenalty": 0.7,
+            "penetrationPenalty": 0,
+            "sidednessChangingPenalty": 1,
+            "velocityHysteresis": 0.1
+        },
+        {
+            "turnRate": 220,
+            "maxTurnRateAngle": 35,
+            "sensorSize": 300,
+            "collisionPenalty": 1,
+            "dodgingPenalty": 0.7,
+            "penetrationPenalty": 0,
+            "sidednessChangingPenalty": 1,
+            "velocityHysteresis": 0.1
+        }
+    ],
+    "demoLockOn": {
+        "highlightDistance": 100,
+        "views": [
+            {
+                "heightOffset": 8,
+                "pitchMin": 0,
+                "pitchMax": 60
+            },
+            {
+                "heightOffset": 8,
+                "pitchMin": 0,
+                "pitchMax": 60
+            }
+        ]
+    },
+    "frontQuadrantDegrees": 90,
+    "backQuadrantDegrees": 90,
+    "leftQuadrantDegrees": 90,
+    "rightQuadrantDegrees": 90,
+    "thresholds": [
+        {
+            "forwardDot": 0.70710677,
+            "sideDot": -0.70710677
+        },
+        {
+            "forwardDot": 0.70710677,
+            "sideDot": -0.70710677
+        },
+        {
+            "forwardDot": 0.70710677,
+            "sideDot": -0.70710677
+        },
+        {
+            "forwardDot": 0.70710677,
+            "sideDot": -0.70710677
+        },
+        {
+            "forwardDot": 0.70710677,
+            "sideDot": -0.70710677
+        }
+    ]
+}
