@@ -12,7 +12,7 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 |-------------------------|-----|-------------------------------------|
 | localize                | 17  | EMPTY                               |
 | weapon                  | 20  | `/tables/weapon/`                   |
-| weapontunables          | 22  | `/tables/weapon/tunables/`          |
+| weapontunables          | 22  | `/tables/weapontunables/`           |
 | customizationtable      | 30  | `/tables/customization/`            |
 | aitype                  | 38  | `/tables/aitype/[origin]/`          |
 | rawfile                 | 41  | `/`                                 |
