@@ -4,12 +4,12 @@
     "streamkey": "#hash_76d94ebabff17512",
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
-    "tunables1": "#hash_1d94f391334",
+    "tunables1": "#hash_3937be65bef4d3f3",
     "sharedWeaponSounds_c08": "#hash_74b924daa49aba34",
     "tagFXSetFirstPerson": [],
     "tagFXSetThirdPerson": [],
-    "image_e90": "#hash_b1303031f125c90b",
-    "image_e98": "#hash_b1303031f125c90b",
-    "image_ea0": "#hash_b1303031f125c90b",
+    "image_e90": "#ui_icon_meansofdeath_zombie_melee",
+    "image_e98": "#ui_icon_meansofdeath_zombie_melee",
+    "image_ea0": "#ui_icon_meansofdeath_zombie_melee",
     "underwaterExplosionSurfaceFX": []
 }

@@ -8,16 +8,16 @@
     "sound250": "#hash_242aa17124751841",
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#hash_20cda79cd396562",
-    "tunables1": "#hash_1d942572410",
-    "viewmodel": "#hash_1d9324230f0",
+    "tunables1": "#inventory_uav_tunables_mp",
+    "viewmodel": "#hash_20b1e74db80",
     "tagFXSetFirstPerson": [],
     "tagFXSetThirdPerson": [],
     "gadgetIconAvailable": "#ui_icon_scorestreaks_uav_light",
     "gadgetIconUnavailable": "#ui_icon_scorestreaks_uav_dark",
-    "image_d40": "#hash_441bbf49f2cfbaef",
-    "image_d48": "#hash_441bbf49f2cfbaef",
-    "image_e90": "#hash_441bbf49f2cfbaef",
+    "image_d40": "#t7_hud_ks_drone_uav",
+    "image_d48": "#t7_hud_ks_drone_uav",
+    "image_e90": "#t7_hud_ks_drone_uav",
     "crateObjective": "#uav_waypoint",
     "underwaterExplosionSurfaceFX": [],
-    "image_1048": "#hash_107a04dbd9c0043a"
+    "image_1048": "#ui_icon_scorestreaks_uav_hud"
 }

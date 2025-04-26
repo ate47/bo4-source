@@ -9,14 +9,14 @@
     "sound5e0": "#hash_4253003d2bb1b0d4",
     "sound5f0": "#hash_31c027f12257eb41",
     "sound840": "#hash_5046feb2bf6ac103",
-    "tunables1": "#hash_1d94f39114c",
-    "tunables2": "#hash_1d94f39114c",
+    "tunables1": "#hash_4d99e87d702b5328",
+    "tunables2": "#hash_4d99e87d702b5328",
     "tagFXSetFirstPerson": [],
     "tagFXSetThirdPerson": [],
     "image_d40": "#t7_hud_ks_drone_attack_menu",
     "laser_e38": "#hash_682a1af52cd6e2f1",
     "laser_e40": "#hash_682a1af52cd6e2f1",
-    "image_e90": "#hash_a8554ffc3af37ec4",
+    "image_e90": "#ui_icon_obit_drone_swarm",
     "underwaterExplosionSurfaceFX": [],
     "var_2e4a8800": "#drone_squadron_scoreevents"
 }

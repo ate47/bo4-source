@@ -5,14 +5,14 @@
     "streamkey": "#hash_119633f87dc16b14",
     "sound660": "#uin_unavailable_charging",
     "sound740": "#hash_7fcc9f73649d03f7",
-    "tunables1": "#hash_1d986bbd6e8",
-    "viewmodel": "#hash_1d9551938f0",
+    "tunables1": "#hash_1a0cc82812603d7d",
+    "viewmodel": "#hash_20afab3ec00",
     "sharedWeaponSounds_c08": "#hash_7ed5a8a63848a4a8",
     "tagFXSetFirstPerson": [],
     "tagFXSetThirdPerson": [],
-    "image_cb8": "#hash_d5357e9eeff99b74",
+    "image_cb8": "#reticle_side_round",
     "image_d40": "#hash_b8d988b1e53e3509",
     "rumble_dc0": "#defaultweapon_fire",
-    "image_e90": "#hash_21aa0f018b3d584c",
+    "image_e90": "#t7_icon_weapon_hero_reaper_kf",
     "underwaterExplosionSurfaceFX": []
 }

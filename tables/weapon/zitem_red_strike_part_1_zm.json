@@ -4,8 +4,8 @@
     "streamkey": "#hash_65b0c7999085f4d1",
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
-    "tunables1": "#hash_1d9879b3574",
-    "viewmodel": "#hash_1d95635c190",
+    "tunables1": "#zitem_red_strike_part_1_tunables_zm",
+    "viewmodel": "#hash_20af734c6a0",
     "tagFXSetFirstPerson": [],
     "tagFXSetThirdPerson": [],
     "underwaterExplosionSurfaceFX": []

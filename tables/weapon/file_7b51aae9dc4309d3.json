@@ -8,8 +8,8 @@
     "sound250": "#hash_242aa17124751841",
     "sound830": "#hash_655f3fad0f979924",
     "sound840": "#hash_7a5614b91f27d6ca",
-    "tunables1": "#hash_1da24e27638",
-    "tunables2": "#hash_1da24e27638",
+    "tunables1": "#hash_414c33459cb72646",
+    "tunables2": "#hash_414c33459cb72646",
     "fx_bc8": "#hash_6d27931954af2ff1",
     "fx_bd0": "#hash_6d27931954af2ff1",
     "tagFXSetFirstPerson": [],
@@ -18,9 +18,9 @@
     "fx_c88": "#hash_45028d18ddb1757a",
     "fx_c90": "#hash_45028d18ddb1757a",
     "fx_c98": "#hash_45028d18ddb1757a",
-    "image_d40": "#hash_ee9af9a1aaea5a7a",
+    "image_d40": "#hud_icon_minigun",
     "rumble_dc0": "#defaultweapon_fire",
-    "image_e90": "#hash_ee9af9a1aaea5a7a",
+    "image_e90": "#hud_icon_minigun",
     "underwaterExplosionSurfaceFX": [],
     "scriptbundle_1010": "#player_turret_zodiac_driver_anims"
 }

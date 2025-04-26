@@ -18,8 +18,8 @@
     "sound6a0": "#hash_69eacee998a8c394",
     "sound6b0": "#hash_46f65991d88004fb",
     "sound6c0": "#hash_338ad154957db5e0",
-    "tunables1": "#hash_1d94c281bb0",
-    "viewmodel": "#hash_1d93f7acad0",
+    "tunables1": "#minigun_tunables_zm",
+    "viewmodel": "#hash_20afeee0870",
     "fx_bc8": "#hash_166903d1957005a4",
     "fx_bd0": "#weapon/fx_muz_md_rifle_3p",
     "sharedWeaponSounds_c08": "#rifle",
@@ -30,9 +30,9 @@
     "fx_c90": "#hash_58b227559fe0083",
     "fx_c98": "#hash_58b227559fe0083",
     "image_cb0": "#reticle_minigun",
-    "image_d40": "#hash_6e9af9a1aaea5a7a",
-    "image_d48": "#hash_6e9af9a1aaea5a7a",
+    "image_d40": "#hud_icon_minigun",
+    "image_d48": "#hud_icon_minigun",
     "rumble_dc0": "#heavygun_fire",
-    "image_e90": "#hash_5a8005db99370143",
+    "image_e90": "#hud_obit_minigun",
     "underwaterExplosionSurfaceFX": []
 }

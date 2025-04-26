@@ -15,7 +15,7 @@
     "sound5e0": "#hash_4253003d2bb1b0d4",
     "sound5f0": "#hash_31c027f12257eb41",
     "sound840": "#hash_5046feb2bf6ac103",
-    "tunables1": "#hash_1d94f39114c",
+    "tunables1": "#hash_155005b8da61015",
     "fx_bc8": "#hash_1bb8a7ab880ee534",
     "fx_bd0": "#hash_1bbe93ab88132ee6",
     "tagFXSetFirstPerson": [],
@@ -28,7 +28,7 @@
     "rumble_dc0": "#hash_71b767f810fb1593",
     "laser_e38": "#hash_682a1af52cd6e2f1",
     "laser_e40": "#hash_682a1af52cd6e2f1",
-    "image_e90": "#hash_a8554ffc3af37ec4",
+    "image_e90": "#ui_icon_obit_drone_swarm",
     "underwaterExplosionSurfaceFX": [],
     "var_2e4a8800": "#drone_squadron_scoreevents"
 }

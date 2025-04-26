@@ -6,10 +6,10 @@
     "streamkey": "#hash_7eb3dc5c8019c5c2",
     "sound800": "#hash_5fd68d0455a0b8",
     "sound810": "#hash_5fd68d0455a0b8",
-    "tunables1": "#hash_1d942572410",
-    "attachments": "#hash_1d93a315710",
-    "attachmentUniques": "#hash_1d9322ffa00",
-    "viewmodel": "#hash_1d939496150",
+    "tunables1": "#hash_2edfb7494b062e41",
+    "attachments": "#hash_20aa80ce4d0",
+    "attachmentUniques": "#hash_20b1d38f380",
+    "viewmodel": "#hash_20aad8ec1f0",
     "fx_be0": "#hash_496068abb95ab99e",
     "fx_be8": "#hash_3259aa4abd8d4b2a",
     "sharedWeaponSounds_c08": "#bowie",
@@ -17,6 +17,6 @@
     "tagFXSetThirdPerson": [],
     "image_d40": "#ui_icon_weapon_hud_melee_bowie",
     "rumble_dc0": "#defaultweapon_melee",
-    "image_e90": "#hash_e89ae2007187dd24",
+    "image_e90": "#ui_icon_obit_melee_bowie",
     "underwaterExplosionSurfaceFX": []
 }

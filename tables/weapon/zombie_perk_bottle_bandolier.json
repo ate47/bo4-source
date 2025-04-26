@@ -7,8 +7,8 @@
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
     "sound4e0": "#hash_7de02f3f0a5f070b",
-    "tunables1": "#hash_1d94c2815f8",
-    "viewmodel": "#hash_1d93b60f2d0",
+    "tunables1": "#zombie_perk_bottle_bandolier_tunables",
+    "viewmodel": "#hash_20afad89a80",
     "tagFXSetFirstPerson": [],
     "tagFXSetThirdPerson": [],
     "underwaterExplosionSurfaceFX": []

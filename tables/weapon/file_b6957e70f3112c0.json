@@ -19,12 +19,12 @@
     "sound6a0": "#hash_cd10cf435c82deb",
     "sound6b0": "#hash_75cf8c2f6fe9dfc6",
     "sound6c0": "#hash_709eeb2fb5e974eb",
-    "tunables1": "#hash_1d94257227c",
+    "tunables1": "#hash_78fe40ec87f5c7b",
     "fx_bc8": "#hash_7fb42895177789b2",
     "fx_bd0": "#hash_7fae1c95177309a0",
     "tagFXSetFirstPerson": [],
     "tagFXSetThirdPerson": [],
     "rumble_dc0": "#smg_fire",
-    "image_e90": "#hash_6458371b528ef743",
+    "image_e90": "#t7_hud_obit_drone_amws",
     "underwaterExplosionSurfaceFX": []
 }

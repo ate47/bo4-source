@@ -5,11 +5,11 @@
     "streamkey": "#hash_412f61d317bf1ce1",
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
-    "tunables1": "#hash_1d94f3912e0",
-    "viewmodel": "#hash_1d93f03f030",
+    "tunables1": "#scavenger_item_tunables_wz",
+    "viewmodel": "#hash_20afae529c0",
     "model_a80": "#viewmodel_hands_no_model",
     "tagFXSetFirstPerson": [],
     "tagFXSetThirdPerson": [],
-    "image_cb0": "#hash_f69fd7de2314b29a",
+    "image_cb0": "#reticle_center_cross",
     "underwaterExplosionSurfaceFX": []
 }

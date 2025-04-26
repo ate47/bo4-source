@@ -16,14 +16,14 @@
     "sound6a0": "#hash_cd10cf435c82deb",
     "sound6b0": "#hash_75cf8c2f6fe9dfc6",
     "sound6c0": "#hash_709eeb2fb5e974eb",
-    "tunables1": "#hash_1d942572410",
+    "tunables1": "#hash_23a0de0cd67f2599",
     "fx_bc8": "#hash_73a87e3df18a3241",
     "fx_bd0": "#hash_164c32da69bb27cc",
     "tagFXSetFirstPerson": [],
     "tagFXSetThirdPerson": [],
-    "image_d40": "#hash_4cef7c410d207886",
+    "image_d40": "#t7_hud_ks_gunship",
     "rumble_dc0": "#heavygun_fire",
-    "image_e90": "#hash_31a8b1a04ebb5bd4",
+    "image_e90": "#t7_hud_obit_gunship",
     "underwaterExplosionSurfaceFX": [],
     "var_2e4a8800": "#helicopter_gunner_scoreevents"
 }

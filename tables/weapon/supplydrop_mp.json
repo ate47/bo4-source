@@ -8,17 +8,17 @@
     "firesoundplayer": "#hash_69acb760c1a05692",
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
-    "tunables1": "#hash_1d942572410",
-    "viewmodel": "#hash_1d9488df2e0",
+    "tunables1": "#supplydrop_tunables_mp",
+    "viewmodel": "#hash_20b1d780d00",
     "tagFXSetFirstPerson": [],
     "tagFXSetThirdPerson": [],
     "gadgetIconAvailable": "#hash_ca0a84ada9340d4e",
     "gadgetIconUnavailable": "#hash_c9bd0ccc00c293b6",
-    "image_cb0": "#hash_f69fd7de2314b29a",
-    "image_d40": "#hash_7b471ff30effdd92",
+    "image_cb0": "#reticle_center_cross",
+    "image_d40": "#t7_hud_ks_carepackage_widget",
     "image_e90": "#hud_obit_crate",
     "projectilemodel": "#wpn_t7_grenade_supply_projectile",
     "underwaterExplosionSurfaceFX": [],
     "var_26f68e75": "#hash_db7f23cdb5b214b",
-    "image_1048": "#hash_7b471ff30effdd92"
+    "image_1048": "#t7_hud_ks_carepackage_widget"
 }

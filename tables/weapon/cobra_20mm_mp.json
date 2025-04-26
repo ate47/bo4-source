@@ -1,0 +1,16 @@
+{
+    "name": "#cobra_20mm_mp",
+    "baseWeapon": "#cobra_20mm",
+    "unk70": "#killstreak_helicopter_player_firstperson",
+    "streamkey": "#hash_63a3f5e359a652a5",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#cobra_20mm_tunables_mp",
+    "fx_bc8": "#hash_33a8bb774ab61c17",
+    "fx_bd0": "#hash_33a8bb774ab61c17",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "image_cb0": "#reticle_center_cross",
+    "image_e90": "#hud_obit_huey",
+    "underwaterExplosionSurfaceFX": []
+}

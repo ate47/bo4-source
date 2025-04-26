@@ -5,8 +5,8 @@
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
     "gadgetreadysoundplayer": "#hash_1f6dbd3ca241f0c6",
-    "tunables1": "#hash_1d942572410",
-    "viewmodel": "#hash_1d931a15a90",
+    "tunables1": "#killstreak_remote_tunables",
+    "viewmodel": "#hash_20ae3337510",
     "tagFXSetFirstPerson": [],
     "tagFXSetThirdPerson": [],
     "underwaterExplosionSurfaceFX": []

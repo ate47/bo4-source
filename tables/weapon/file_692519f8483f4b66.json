@@ -7,13 +7,13 @@
     "gadgetreadysoundplayer": "#hash_352bace6d0a86454",
     "sound5a0": "#dst_equipment_destroy",
     "sound5b0": "#dst_equipment_destroy",
-    "tunables1": "#hash_1d942572410",
-    "viewmodel": "#hash_1d931a15a90",
+    "tunables1": "#hash_63d33fd992e64f35",
+    "viewmodel": "#hash_20ae3337510",
     "tagFXSetFirstPerson": [],
     "tagFXSetThirdPerson": [],
     "gadgetIconAvailable": "#ui_icon_scorestreaks_drone_recon_light",
     "gadgetIconUnavailable": "#ui_icon_scorestreaks_drone_recon_dark",
-    "image_d40": "#hash_b60b5eb84a25bc33",
+    "image_d40": "#ui_icon_scorestreaks_rcxd",
     "image_d48": "#hash_f138d614b0002cd8",
     "image_e90": "#hash_95fc9c7df21711ab",
     "crateObjective": "#rcbomb_waypoint",
@@ -23,5 +23,5 @@
     "var_26f68e75": "#icepick_rcxd",
     "shrapnelsettings": "#shrapnel_mini_turret",
     "var_2e4a8800": "#recon_car_scoreevents",
-    "image_1048": "#hash_b60b5eb84a25bc33"
+    "image_1048": "#ui_icon_scorestreaks_rcxd"
 }

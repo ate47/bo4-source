@@ -15,8 +15,8 @@
     "sound600": "#hash_5cb2134f89e238dd",
     "sound610": "#hash_81ea4f68a87be88",
     "sound740": "#hero_sword_pistol_lv3_mp",
-    "tunables1": "#hash_1d93f4f37f0",
-    "viewmodel": "#hash_1d938213ed0",
+    "tunables1": "#hero_sword_pistol_lh_lv3_tunables_zm",
+    "viewmodel": "#hash_20b1e2d42c0",
     "fx_bc8": "#hash_3745fe271b24f336",
     "fx_bd0": "#hash_1a6d98c0350f4c0",
     "viewPersistentEffectSet": "#hash_3b1d8c05ba9f946d",
@@ -24,8 +24,8 @@
     "tagFXSetFirstPerson": [],
     "tagFXSetThirdPerson": [],
     "image_cb0": "#reticle_flechette",
-    "image_d40": "#hash_70feb65512cfbb92",
+    "image_d40": "#t7_icon_weapon_pistol_shotgun_pu",
     "rumble_dc0": "#shotgun_fire",
-    "image_e90": "#hash_7153b3551317f678",
+    "image_e90": "#t7_icon_weapon_pistol_shotgun_kf",
     "underwaterExplosionSurfaceFX": []
 }

@@ -1,0 +1,13 @@
+{
+    "name": "#zitem_chaos_lvl3_part_3_zm",
+    "baseWeapon": "#zitem_chaos_lvl3_part_3",
+    "streamkey": "#hash_47889009b9206123",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "var_8a03df2b": "#hash_5a3404e11325a1e9",
+    "tunables1": "#zitem_chaos_lvl3_part_3_tunables_zm",
+    "viewmodel": "#hash_20af6816a50",
+    "tagFXSetFirstPerson": [],
+    "tagFXSetThirdPerson": [],
+    "underwaterExplosionSurfaceFX": []
+}

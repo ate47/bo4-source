@@ -13,8 +13,8 @@
     "sound660": "#uin_unavailable_charging",
     "sound800": "#hash_5d8b6dc75a094136",
     "sound810": "#hash_5d8b6dc75a094136",
-    "tunables1": "#hash_1d9968719a0",
-    "viewmodel": "#hash_1d937d758e0",
+    "tunables1": "#hash_126552b24c70cc56",
+    "viewmodel": "#hash_20b1d433820",
     "fx_bc8": "#hash_589558fcb970ee47",
     "fx_bd0": "#hash_588f4cfcb96c6e35",
     "fx_bd8": "#hash_44dba22da4f666da",
@@ -27,10 +27,10 @@
     "fx_c88": "#hash_4b144677a622ffb3",
     "fx_c90": "#hash_4b144677a622ffb3",
     "fx_c98": "#hash_4b144677a622ffb3",
-    "image_d40": "#hash_e706cc01ebda9a2d",
+    "image_d40": "#ui_icon_weapon_hud_scythe",
     "image_d48": "#hash_9151f5aa76ee4c3f",
     "rumble_dc0": "#hash_343ebed0d19bf830",
-    "image_e90": "#hash_d371d82ecae3add3",
+    "image_e90": "#ui_icon_obit_scythe",
     "underwaterExplosionSurfaceFX": [],
     "var_2e4a8800": "#sig_lmg_scoreevents"
 }

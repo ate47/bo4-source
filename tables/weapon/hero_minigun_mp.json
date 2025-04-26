@@ -22,8 +22,8 @@
     "sound6c0": "#hash_1e69091865bbdbb8",
     "sound800": "#hash_5d8b6dc75a094136",
     "sound810": "#hash_5d8b6dc75a094136",
-    "tunables1": "#hash_1d942572410",
-    "viewmodel": "#hash_1d9123cd7e0",
+    "tunables1": "#hero_minigun_tunables_mp",
+    "viewmodel": "#hash_20b1eab6ab0",
     "fx_bc8": "#hash_6f4c0d9be8ebb8aa",
     "fx_bd0": "#weapon/fx_muz_md_rifle_3p",
     "sharedWeaponSounds_c08": "#rifle",
@@ -35,11 +35,11 @@
     "fx_c88": "#hash_58b227559fe0083",
     "fx_c90": "#hash_58b227559fe0083",
     "fx_c98": "#hash_58b227559fe0083",
-    "image_cb0": "#hash_196f7a967616c741",
-    "image_d40": "#hash_218c22018b247b06",
-    "image_d48": "#hash_21aa0f018b3d584c",
+    "image_cb0": "#t7_hud_reticle_mp_hero_scythe",
+    "image_d40": "#t7_icon_weapon_hero_reaper_pu",
+    "image_d48": "#t7_icon_weapon_hero_reaper_kf",
     "rumble_dc0": "#heavygun_fire",
-    "image_e90": "#hash_21aa0f018b3d584c",
+    "image_e90": "#t7_icon_weapon_hero_reaper_kf",
     "underwaterExplosionSurfaceFX": [],
-    "image_1048": "#hash_21aa0f018b3d584c"
+    "image_1048": "#t7_icon_weapon_hero_reaper_kf"
 }

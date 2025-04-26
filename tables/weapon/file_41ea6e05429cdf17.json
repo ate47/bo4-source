@@ -14,16 +14,16 @@
     "sound660": "#hash_18db0eaca2c8d866",
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
-    "tunables1": "#hash_1d9425726ec",
-    "viewmodel": "#hash_1d939494f70",
+    "tunables1": "#hash_f2cb8f7e35a1906",
+    "viewmodel": "#hash_20aad8ece50",
     "tagFXSetFirstPerson": [],
     "tagFXSetThirdPerson": [
         "#hash_11312c69928795ab"
     ],
     "gadgetIconAvailable": "#t7_hud_mp_ability_hero_ironskin_available",
     "gadgetIconUnavailable": "#t7_hud_mp_ability_hero_ironskin_unavailable",
-    "image_cb8": "#hash_ca8bad72d298364b",
-    "image_d48": "#hash_4f8b4648ba62d0ab",
+    "image_cb8": "#reticle_side_small",
+    "image_d48": "#t7_hud_gadget_ironskin",
     "rumble_dc0": "#assault_fire",
     "underwaterExplosionSurfaceFX": []
 }
