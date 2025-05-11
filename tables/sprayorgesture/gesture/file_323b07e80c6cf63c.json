@@ -1,0 +1,12 @@
+{
+    "name": "#hash_323b07e80c6cf63c",
+    "type": "#gesture",
+    "gesture": "#boast_gone_fishing",
+    "gesture2": "#boast_gone_fishing_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_1a501c3360781dbc",
+        "icon": "image#hash_22b0f8a1ce4bcfa6",
+        "isdefault": 0
+    }
+}

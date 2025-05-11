@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_shared_shuffle_dance",
+    "type": "#gesture",
+    "gesture": "#hash_11c1a42bcb66c384",
+    "gesture2": "#hash_6fd2fc18861e6577",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_3ecf71c085b7d9ee",
+        "icon": "image#ui_icon_emotes_s3_shuffle",
+        "isdefault": 0
+    }
+}

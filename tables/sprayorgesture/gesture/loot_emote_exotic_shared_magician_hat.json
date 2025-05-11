@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_magician_hat",
+    "type": "#gesture",
+    "gesture": "#hash_2def13995ec179a0",
+    "gesture2": "#hash_7e3bed760746f403",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_27274d3b46474774",
+        "icon": "image#hash_1712765d9878801e",
+        "isdefault": 0
+    }
+}

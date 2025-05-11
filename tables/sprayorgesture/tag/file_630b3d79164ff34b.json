@@ -1,0 +1,11 @@
+{
+    "name": "#hash_630b3d79164ff34b",
+    "type": "#tag",
+    "material": "#hash_4edfb9263e00b80f",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_143efc7eae27514e",
+        "icon": "image#loot_ui_icon_tags_barbarians_03",
+        "isdefault": 0
+    }
+}

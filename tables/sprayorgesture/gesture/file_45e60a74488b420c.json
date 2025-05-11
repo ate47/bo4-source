@@ -1,0 +1,12 @@
+{
+    "name": "#hash_45e60a74488b420c",
+    "type": "#gesture",
+    "gesture": "#hash_1338de06000f7f4a",
+    "gesture2": "#hash_136c0300482074e5",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_20e6277701e1ccbd",
+        "icon": "image#ui_icon_emotes_s3_leprechaun",
+        "isdefault": 0
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_shared_tai_chi",
+    "type": "#gesture",
+    "gesture": "#hash_13b9d6198db94fc2",
+    "gesture2": "#hash_78263690dc9d289d",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_6bdaeccc59f2a007",
+        "icon": "image#hash_5115d0a652ed5785",
+        "isdefault": 0
+    }
+}

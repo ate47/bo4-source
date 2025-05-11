@@ -1,0 +1,13 @@
+{
+    "name": "#hash_68d20818aefa0975",
+    "type": "#gesture",
+    "gesture": "#boast_salute",
+    "gesture2": "#hash_109b072479b515f8",
+    "bundle": {
+        "type": "#gesture",
+        "entitlement": "#hash_16d83fd17a87c96b",
+        "title": "localized18#hash_21a66cb94b3e4449",
+        "icon": "image#ui_icon_emotes_salute",
+        "isdefault": 0
+    }
+}

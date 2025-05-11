@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_graffitiskulls_02",
+    "type": "#tag",
+    "material": "#hash_7a0f2f7929d8b66b",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_38541eab072dc81b",
+        "icon": "image#hash_20362c440e59f334",
+        "isdefault": 0
+    }
+}

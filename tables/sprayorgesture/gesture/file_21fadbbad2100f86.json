@@ -1,0 +1,12 @@
+{
+    "name": "#hash_21fadbbad2100f86",
+    "type": "#gesture",
+    "gesture": "#boast_yawn",
+    "gesture2": "#hash_6e51b8a4f2b0d0ff",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_37660cac05c569eb",
+        "icon": "image#ui_icon_emotes_s3_yawn",
+        "isdefault": 0
+    }
+}

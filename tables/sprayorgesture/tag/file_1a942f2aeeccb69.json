@@ -1,0 +1,11 @@
+{
+    "name": "#hash_1a942f2aeeccb69",
+    "type": "#tag",
+    "material": "#hash_31160695feb93bd",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_5477c518b90ef2c5",
+        "icon": "image#loot_ui_icon_tags_halloweenevent_werewolf",
+        "isdefault": 0
+    }
+}

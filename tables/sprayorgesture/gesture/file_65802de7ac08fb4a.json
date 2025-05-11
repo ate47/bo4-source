@@ -1,0 +1,12 @@
+{
+    "name": "#hash_65802de7ac08fb4a",
+    "type": "#gesture",
+    "gesture": "#hash_1a041e2cec56927b",
+    "gesture2": "#hash_3d7bfc265d531324",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_104a300be1885e2b",
+        "icon": "image#ui_icon_emotes_beachball",
+        "isdefault": 0
+    }
+}

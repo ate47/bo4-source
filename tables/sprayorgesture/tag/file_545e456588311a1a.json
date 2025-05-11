@@ -1,0 +1,11 @@
+{
+    "name": "#hash_545e456588311a1a",
+    "type": "#tag",
+    "material": "#hash_7e233c1bd4be209e",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_246bf48e69ed789",
+        "icon": "image#loot_ui_icon_tags_dinohunters_04",
+        "isdefault": 0
+    }
+}

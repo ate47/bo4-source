@@ -1,0 +1,12 @@
+{
+    "name": "#hash_5e721055d1e3132c",
+    "type": "#gesture",
+    "gesture": "#hash_6ebcd29813050e9b",
+    "gesture2": "#hash_686e623e31860b84",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_54120e2f275f8d91",
+        "icon": "image#ui_icon_emotes_s3_police_megaphone",
+        "isdefault": 0
+    }
+}

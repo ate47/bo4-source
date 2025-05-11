@@ -1,0 +1,35 @@
+{
+    "name": "#loot_emote_exotic_shared_stabby_banana",
+    "type": "#gesture",
+    "gesture": "#hash_709d7ea5194126ca",
+    "gesture2": "#hash_4bddf52ab1c25465",
+    "sub": [
+        {
+            "gesture": "#hash_7715c92aca367512",
+            "gesture2": "#hash_40f46e122dc91a35",
+            "roles": [
+                "#prt_mp_enforcer",
+                "#hash_17c02481305f0e24",
+                "#prt_mp_firebreak",
+                "#hash_8596bc069593313",
+                "#hash_42e7a274de12337e",
+                "#hash_7beba0d40d750e10",
+                "#hash_6c8d991db6f42c4a",
+                "#hash_57d9e98fa3f08f76",
+                "#hash_203a1dcc75cf8c53",
+                "#hash_76ccdd2bfc985ae8",
+                "#hash_1ee2659e8dff07d8",
+                "#hash_4a011dffec0dd650",
+                "#hash_5517568f2fb8127",
+                "#hash_76cce42bfc9866cd",
+                "#hash_76cce42bfc9866cd"
+            ]
+        }
+    ],
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_632a6cca7d90db56",
+        "icon": "image#hash_2f824aff92b96eed",
+        "isdefault": 0
+    }
+}

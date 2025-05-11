@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_shared_give_up",
+    "type": "#gesture",
+    "gesture": "#hash_23f854fba7aff1a6",
+    "gesture2": "#hash_18461d2fce932db1",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_2e4d3e24fffb77d0",
+        "icon": "image#hash_96d19147f2796ef",
+        "isdefault": 0
+    }
+}

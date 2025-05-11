@@ -1,0 +1,34 @@
+{
+    "name": "#hash_696872ccb589330e",
+    "type": "#gesture",
+    "gesture": "#hash_4cf4b39a11c4877d",
+    "gesture2": "#hash_1f21b2750e203c16",
+    "sub": [
+        {
+            "gesture": "#hash_5c9aca75312f2b6d",
+            "gesture2": "#hash_6d6d045448c4d2e6",
+            "roles": [
+                "#prt_mp_firebreak",
+                "#hash_8596bc069593313",
+                "#prt_mp_enforcer",
+                "#hash_17c02481305f0e24",
+                "#hash_42e7a274de12337e",
+                "#hash_7beba0d40d750e10",
+                "#hash_6c8d991db6f42c4a",
+                "#hash_57d9e98fa3f08f76",
+                "#hash_203a1dcc75cf8c53",
+                "#hash_76ccdd2bfc985ae8",
+                "#hash_1ee2659e8dff07d8",
+                "#hash_4a011dffec0dd650",
+                "#hash_5517568f2fb8127",
+                "#hash_76cce42bfc9866cd"
+            ]
+        }
+    ],
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_7873bfca75e799a3",
+        "icon": "image#hash_198ed1985ad6af49",
+        "isdefault": 0
+    }
+}

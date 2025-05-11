@@ -1,0 +1,12 @@
+{
+    "name": "#hash_6ed891a49a479e12",
+    "type": "#gesture",
+    "gesture": "#hash_7608bcdfbb3684b0",
+    "gesture2": "#hash_75d347a0b1487533",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_36fea65af0a7fa92",
+        "icon": "image#ui_icon_emotes_bookofhell",
+        "isdefault": 0
+    }
+}

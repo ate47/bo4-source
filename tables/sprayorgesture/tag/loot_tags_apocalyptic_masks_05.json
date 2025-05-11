@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_apocalyptic_masks_05",
+    "type": "#tag",
+    "material": "#hash_2b1b55c4281db591",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_65989e36da04c9f4",
+        "icon": "image#hash_1360c464d854898",
+        "isdefault": 0
+    }
+}

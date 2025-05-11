@@ -1,0 +1,12 @@
+{
+    "name": "#hash_18722a5abcde77e7",
+    "type": "#gesture",
+    "gesture": "#hash_75ef8444e50d8765",
+    "gesture2": "#hash_19010b47e0f5351e",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_381121ab0dea523a",
+        "icon": "image#ui_icon_emotes_jugglesoccreball",
+        "isdefault": 0
+    }
+}

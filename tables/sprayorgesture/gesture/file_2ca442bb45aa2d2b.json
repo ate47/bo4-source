@@ -1,0 +1,12 @@
+{
+    "name": "#hash_2ca442bb45aa2d2b",
+    "type": "#gesture",
+    "gesture": "#boast_homunculus",
+    "gesture2": "#hash_2fd846116ecac791",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_116964e0cb5f5a7f",
+        "icon": "image#ui_icon_emotes_homunculus",
+        "isdefault": 0
+    }
+}

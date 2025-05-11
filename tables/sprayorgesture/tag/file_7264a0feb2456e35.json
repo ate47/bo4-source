@@ -1,0 +1,12 @@
+{
+    "name": "#hash_7264a0feb2456e35",
+    "type": "#tag",
+    "material": "#hash_68c57245a99fe4b2",
+    "bundle": {
+        "type": "#tag",
+        "entitlement": "#blackops_pack",
+        "title": "localized18#hash_47110103bbe21b5a",
+        "icon": "image#hash_6b4e2bb2c7534249",
+        "isdefault": 0
+    }
+}

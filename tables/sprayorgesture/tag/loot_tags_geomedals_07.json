@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_geomedals_07",
+    "type": "#tag",
+    "material": "#hash_6b044f0b02dfbb8b",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_47765e86f6ac3071",
+        "icon": "image#hash_37d36bfd4f74140a",
+        "isdefault": 0
+    }
+}

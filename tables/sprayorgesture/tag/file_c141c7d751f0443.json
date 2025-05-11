@@ -1,0 +1,12 @@
+{
+    "name": "#hash_c141c7d751f0443",
+    "type": "#tag",
+    "material": "#hash_4cc2887435b9bd3c",
+    "bundle": {
+        "type": "#tag",
+        "entitlement": "#hash_289cf2f06422b2aa",
+        "title": "localized18#tags/bib",
+        "icon": "image#hash_5ad095b276451dcd",
+        "isdefault": 0
+    }
+}

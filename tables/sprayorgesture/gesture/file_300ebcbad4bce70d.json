@@ -1,0 +1,13 @@
+{
+    "name": "#hash_300ebcbad4bce70d",
+    "type": "#gesture",
+    "gesture": "#hash_3084931092e10317",
+    "gesture2": "#hash_2ad8052fcde67620",
+    "bundle": {
+        "type": "#gesture",
+        "entitlement": "#blackops_pack",
+        "title": "localized18#hash_5edb09f3ccf07741",
+        "icon": "image#hash_165de405caa0a10",
+        "isdefault": 0
+    }
+}

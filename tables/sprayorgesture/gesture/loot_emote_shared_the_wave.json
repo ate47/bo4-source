@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_shared_the_wave",
+    "type": "#gesture",
+    "gesture": "#hash_736750d5622fe2a6",
+    "gesture2": "#hash_3bcc7eb4b06aeb1",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_4a09846877d124a8",
+        "icon": "image#hash_7a0eedf6cc3de36b",
+        "isdefault": 0
+    }
+}

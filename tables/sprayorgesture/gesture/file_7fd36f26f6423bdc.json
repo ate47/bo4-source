@@ -1,0 +1,12 @@
+{
+    "name": "#hash_7fd36f26f6423bdc",
+    "type": "#gesture",
+    "gesture": "#hash_1832a9d83509c276",
+    "gesture2": "#hash_24d116f0d3fe7861",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_73e2687468d65a89",
+        "icon": "image#hash_420c481cf38101ed",
+        "isdefault": 0
+    }
+}

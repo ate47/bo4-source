@@ -1,0 +1,11 @@
+{
+    "name": "#hash_78ae86c11d64760a",
+    "type": "#tag",
+    "material": "#hash_67de803947a217ee",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_5477c118b90eebf9",
+        "icon": "image#loot_ui_icon_tags_halloweenevent_monster_1",
+        "isdefault": 0
+    }
+}

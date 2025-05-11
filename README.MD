@@ -55,6 +55,8 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 | \<unused\>              | 151 | EMPTY                               |
 | rawstring               | 157 | `/strings.csv`                      |
 | streamkey               | 159 | `/tables/streamkey/`                |
+| sprayorgestureitem      | 165 | `/tables/sprayorgesture/`           |
+| sprayorgesturelist      | 166 | `/tables/sprayorgesture/list/`      |
 
 ## Names
 
