@@ -3,13 +3,13 @@
     "configstringfiletype": "scriptbundle",
     "hash_702e93ea": "j_spine4",
     "type": "fxcharacterdef",
-    "hash_70f592cb": "#hash_6b7912c3c5da87e2",
+    "hash_70f592cb": "fx#hash_6b7912c3c5da87e2",
     "vmtype": "client",
     "name": "fxd8_zm_char_cata_water_body",
     "hash_a0d91763": "j_elbow_le",
-    "hash_320e9190": "#hash_5eb45bff0d4ecf49",
-    "hash_c7a3c7dd": "#hash_6ce60bc4b64e793",
-    "hash_bae031ea": "#zm_ai/fx8_cata_water_aura",
+    "hash_320e9190": "fx#hash_5eb45bff0d4ecf49",
+    "hash_c7a3c7dd": "fx#hash_6ce60bc4b64e793",
+    "hash_bae031ea": "fx#zm_ai/fx8_cata_water_aura",
     "hash_edb57500": "j_shoulder_ri",
     "hash_434f4b19": "j_head"
 }

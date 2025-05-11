@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_42797a13dd5343cf",
+    "hinttext": "localized17#hash_42797a13dd5343cf",
     "configstringfiletype": "scriptbundle",
     "value8": "3",
     "value9": "4",
@@ -17,12 +17,16 @@
     "value15": "10",
     "value14": "9",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "touch_return",
-    "displayname": "#menu/touch_return",
-    "label4": "#menu/1_second",
-    "label1": "#menu/disabled",
-    "label2": "#menu/instant",
+    "displayname": "localized17#menu/touch_return",
+    "label4": "localized17#menu/1_second",
+    "label1": "localized17#menu/disabled",
+    "label2": "localized17#menu/instant",
+    "hash_54e336e4": 0,
     "optionscount": 15,
-    "setting": "defuseTime"
+    "hash_765cfd09": 0,
+    "setting": "defuseTime",
+    "isenableddisabled": 0
 }

@@ -1,24 +1,24 @@
 {
     "rewardlist": [
         {
-            "reward": "zm_winter_2018_reward_1",
-            "task": "closeandpersonal_task_holiday"
+            "reward": "scriptbundle&zm_winter_2018_reward_1",
+            "task": "scriptbundle&closeandpersonal_task_holiday"
         },
         {
-            "reward": "zm_winter_2018_reward_2",
-            "task": "itsamystery_task_holiday"
+            "reward": "scriptbundle&zm_winter_2018_reward_2",
+            "task": "scriptbundle&itsamystery_task_holiday"
         },
         {
-            "reward": "zm_winter_2018_reward_3",
-            "task": "lightmachineguns_task_holiday"
+            "reward": "scriptbundle&zm_winter_2018_reward_3",
+            "task": "scriptbundle&lightmachineguns_task_holiday"
         },
         {
-            "reward": "zm_winter_2018_reward_4",
-            "task": "perkaholic_task_holiday"
+            "reward": "scriptbundle&zm_winter_2018_reward_4",
+            "task": "scriptbundle&perkaholic_task_holiday"
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "eventname": "#hash_27c1bc18206b6529",
+    "eventname": "localized17#hash_27c1bc18206b6529",
     "name": "zm_winter_2018",
-    "hash_febf6e03": "#hash_4f62f7bfba747109"
+    "hash_febf6e03": "localized17#hash_4f62f7bfba747109"
 }

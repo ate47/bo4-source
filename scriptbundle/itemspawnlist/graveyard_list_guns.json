@@ -2,75 +2,79 @@
     "itemlist": [
         {
             "minweight": 180,
-            "itementry": "guns_pistols",
+            "itementry": "scriptbundle&guns_pistols",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 180,
-            "itementry": "guns_shotguns",
+            "itementry": "scriptbundle&guns_shotguns",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 260,
-            "itementry": "guns_smgs",
+            "itementry": "scriptbundle&guns_smgs",
             "maxweight": 270,
             "available": -1
         },
         {
             "minweight": 190,
-            "itementry": "guns_ars",
+            "itementry": "scriptbundle&guns_ars",
             "maxweight": 230,
             "available": -1
         },
         {
             "minweight": 55,
-            "itementry": "guns_trs",
+            "itementry": "scriptbundle&guns_trs",
             "maxweight": 60,
             "available": -1
         },
         {
             "minweight": 20,
-            "itementry": "guns_lmgs",
+            "itementry": "scriptbundle&guns_lmgs",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 20,
-            "itementry": "guns_snipers",
+            "itementry": "scriptbundle&guns_snipers",
             "maxweight": 23,
             "available": -1
         },
         {
             "minweight": 10,
-            "itementry": "guns_launchers",
+            "itementry": "scriptbundle&guns_launchers",
             "maxweight": 23,
             "available": -1
         },
         {
             "minweight": 10,
-            "itementry": "guns_gold_parent",
+            "itementry": "scriptbundle&guns_gold_parent",
             "maxweight": 15,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "guns_zombie",
+            "itementry": "scriptbundle&guns_zombie",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 55,
-            "itementry": "melee_weapons",
+            "itementry": "scriptbundle&melee_weapons",
             "maxweight": 60,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 11,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "graveyard_list_guns",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

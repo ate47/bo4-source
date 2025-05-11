@@ -2,7 +2,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
     "blueprintcount": 1,
-    "blueprint01": "zblueprint_mansion_ww_lvl2",
+    "blueprint01": "scriptbundle&zblueprint_mansion_ww_lvl2",
     "name": "ztable_mansion_ww_lvl2",
     "displayname": "Wonder Weapon 2"
 }

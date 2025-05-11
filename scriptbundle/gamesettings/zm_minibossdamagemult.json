@@ -1,17 +1,21 @@
 {
-    "hinttext": "#hash_41c4c8b7cc14c8f8",
+    "hinttext": "localized17#hash_41c4c8b7cc14c8f8",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
     "value1": "0",
     "value4": "3",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "zm_minibossdamagemult",
-    "displayname": "#hash_2736823c3970cd3d",
-    "label4": "#hash_1f0968aad9d63087",
-    "label1": "#hash_8547de6ff2e6e2a",
-    "label3": "#hash_3d70f0da8afd383a",
-    "label2": "#hash_4bf59e78dfb9da30",
+    "displayname": "localized17#hash_2736823c3970cd3d",
+    "label4": "localized17#hash_1f0968aad9d63087",
+    "label1": "localized17#hash_8547de6ff2e6e2a",
+    "label3": "localized17#hash_3d70f0da8afd383a",
+    "label2": "localized17#hash_4bf59e78dfb9da30",
+    "hash_54e336e4": 0,
     "optionscount": 3,
-    "setting": "zmMiniBossDamageMult"
+    "hash_765cfd09": 0,
+    "setting": "zmMiniBossDamageMult",
+    "isenableddisabled": 0
 }

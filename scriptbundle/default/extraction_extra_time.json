@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_115f8dbde6bc1711",
+    "hinttext": "localized17#hash_115f8dbde6bc1711",
     "value8": "60",
     "value9": "4000",
     "value2": "1",
@@ -19,10 +19,14 @@
     "value16": "3500",
     "value19": "5000",
     "value18": "4500",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "extraction_extra_time",
-    "displayname": "#hash_e736b19f6814b3f",
-    "label2": "#menu/1_second",
+    "displayname": "localized17#hash_e736b19f6814b3f",
+    "label2": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
     "optionscount": 8,
-    "setting": "bountyDepositExtraTime"
+    "hash_765cfd09": 0,
+    "setting": "bountyDepositExtraTime",
+    "isenableddisabled": 0
 }

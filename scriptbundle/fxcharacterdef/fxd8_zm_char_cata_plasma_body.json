@@ -3,13 +3,13 @@
     "configstringfiletype": "scriptbundle",
     "hash_702e93ea": "j_elbow_ri",
     "type": "fxcharacterdef",
-    "hash_70f592cb": "#hash_6960c898cb52ba10",
+    "hash_70f592cb": "fx#hash_6960c898cb52ba10",
     "vmtype": "client",
     "name": "fxd8_zm_char_cata_plasma_body",
     "hash_a0d91763": "j_spine4",
-    "hash_320e9190": "#hash_1b9a5e0c33750abe",
-    "hash_c7a3c7dd": "#hash_28415d2eb0d4074b",
-    "hash_bae031ea": "#hash_6931b098cb2b2086",
+    "hash_320e9190": "fx#hash_1b9a5e0c33750abe",
+    "hash_c7a3c7dd": "fx#hash_28415d2eb0d4074b",
+    "hash_bae031ea": "fx#hash_6931b098cb2b2086",
     "hash_edb57500": "j_elbow_le",
     "hash_434f4b19": "j_head"
 }

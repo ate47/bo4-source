@@ -1,10 +1,10 @@
 {
-    "description": "#hash_36e5f6f857739886",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_36e5f6f857739886",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_swarm_shutdown",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_destroy_swarm",
-    "stringref": "#medal/swarm_shutdown",
-    "iconlarge": "#ui_icon_medal_destroy_swarm_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_destroy_swarm",
+    "stringref": "localized17#medal/swarm_shutdown",
+    "iconlarge": "image#ui_icon_medal_destroy_swarm_large"
 }

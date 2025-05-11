@@ -1,13 +1,17 @@
 {
-    "descriptionimage": "#ui_icon_perk_skulker_large",
+    "descriptionimage": "image#ui_icon_perk_skulker_large",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "perk_skulker_restriction",
-    "displayname": "#talent/skulker",
-    "label1": "#menu/enabled",
-    "label2": "#menu/disabled",
+    "displayname": "localized17#talent/skulker",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "itemRestrictions__talent_skulker__restricted"
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__talent_skulker__restricted",
+    "isenableddisabled": 0
 }

@@ -1,45 +1,81 @@
 {
     "objectives": [
         {
-            "description": "#hash_762126cda5e8f436"
+            "description": "localized17#hash_762126cda5e8f436"
         },
         {
             "teamsizedescriptions": [
                 {
-                    "description": "#hash_1c8487524f1f587b",
+                    "description": "localized17#hash_1c8487524f1f587b",
                     "teamsize": 1
                 },
                 {
-                    "description": "#hash_747054018b2d44d0",
+                    "description": "localized17#hash_747054018b2d44d0",
                     "teamsize": 2
                 },
                 {
-                    "description": "#hash_7b859841234ac56b",
+                    "description": "localized17#hash_7b859841234ac56b",
                     "teamsize": 4
                 }
             ],
-            "description": "#hash_762125cda5e8f283",
+            "description": "localized17#hash_762125cda5e8f283",
             "hash_57b131bd": 3
         },
         {
-            "description": "#hash_762124cda5e8f0d0"
+            "description": "localized17#hash_762124cda5e8f0d0"
         }
     ],
-    "description": "#hash_13d8fcc067f4d014",
+    "amount": 0,
+    "hash_99c0cb08": 0,
+    "duration": 0,
+    "description": "localized17#hash_13d8fcc067f4d014",
+    "hash_f2902d7b": 0,
+    "hash_a3aa1ca2": 0,
+    "armorshards": 0,
     "configstringfiletype": "scriptbundle",
     "hash_eda4062b": 3,
-    "hash_e8b98a8a": "#hash_31ed753676e47763",
-    "model": "#p8_wz_cu_coin_fortune_bag_full",
+    "hash_e8b98a8a": "localized17#hash_31ed753676e47763",
+    "hash_22c3ab38": 0,
+    "hash_54a3b4ca": 0,
+    "hash_5dc4470b": 0,
+    "hash_3e688854": 0,
+    "model": "model#p8_wz_cu_coin_fortune_bag_full",
+    "hash_2ee21ae6": 0,
     "type": "itemspawnentry",
-    "hintstring": "#hash_3704dc2854dba865",
+    "hintstring": "localized18#hash_3704dc2854dba865",
+    "hash_7a80f06e": 0,
     "unlockableitemref": "#wz_character_recon",
+    "hash_d1f348db": 0,
+    "hash_cc1bbd2c": 0,
+    "hash_ae6581c0": 0,
+    "angleoffsetz": 0,
+    "angleoffsety": 0,
+    "angleoffsetx": 0,
+    "hash_702943a1": 0,
+    "hash_48907470": 0,
+    "hash_22d128f2": 0,
     "name": "cu04_item",
-    "displayname": "#hash_3704dc2854dba865",
-    "icon": "#hash_2deb30f85fdbd34d",
+    "displayname": "localized17#hash_3704dc2854dba865",
+    "hash_99edb6a3": 0,
+    "icon": "image#hash_2deb30f85fdbd34d",
+    "explosivedamagescale": 0,
+    "casttime": 0,
     "modelscale": 2,
     "rarity": "None",
-    "hash_a51bc1f7": "#hash_7205d4effffcffca",
+    "hash_c690c73d": 0,
+    "hash_a51bc1f7": "localized17#hash_7205d4effffcffca",
+    "hash_8a122876": 0,
+    "hash_7c4c8ceb": 0,
+    "hash_ee67711f": 0,
     "handler": "#hash_5c844f5c1207159c",
-    "rewardname": "#hash_6ce34ffbb3998db9",
+    "armortier": 0,
+    "rewardname": "localized17#hash_6ce34ffbb3998db9",
+    "hash_8c9a7dc8": 0,
+    "hash_15b88fde": 0,
+    "hash_7a51d937": 0,
+    "positionoffsety": 0,
+    "positionoffsetx": 0,
+    "positionoffsetz": 0,
+    "hash_9f307988": 0,
     "itemtype": "quest"
 }

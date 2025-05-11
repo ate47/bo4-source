@@ -1,6 +1,6 @@
 {
-    "hash_6c274f86": "#loot04_ui_icon_blackmarket_itemshop_bundle_bacon",
-    "nametext": "#hash_67482b250cb6e063",
+    "hash_6c274f86": "image#loot04_ui_icon_blackmarket_itemshop_bundle_bacon",
+    "nametext": "localized17#hash_67482b250cb6e063",
     "name": "bacon_weapon_camo_bundle_shop",
-    "desctext": "#hash_7382211b29b0b735"
+    "desctext": "localized17#hash_7382211b29b0b735"
 }

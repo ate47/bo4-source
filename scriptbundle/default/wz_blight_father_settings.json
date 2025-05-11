@@ -1,13 +1,16 @@
 {
     "powerupdroplist": [
         {
-            "dropid": "#full_ammo"
+            "dropid": "#full_ammo",
+            "dropchance": 0
         },
         {
-            "dropid": "#fire_sale"
+            "dropid": "#fire_sale",
+            "dropchance": 0
         },
         {
-            "dropid": "#nuke"
+            "dropid": "#nuke",
+            "dropchance": 0
         }
     ],
     "weapondamagescaleoverrides": [

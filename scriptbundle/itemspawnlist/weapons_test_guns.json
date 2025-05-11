@@ -2,187 +2,190 @@
     "itemlist": [
         {
             "minweight": 100,
-            "itementry": "tr_flechette_t8_item",
-            "childitementry_1": "ammo_type_762_item",
+            "itementry": "scriptbundle&tr_flechette_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "lmg_stealth_t8_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&lmg_stealth_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "ar_peacekeeper_t8_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&ar_peacekeeper_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "hawk_wz_item",
+            "itementry": "scriptbundle&hawk_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 50,
-            "itementry": "health_item_squad",
-            "childitementry_1": "health_item_squad",
+            "itementry": "scriptbundle&health_item_squad",
+            "childitementry_1": "scriptbundle&health_item_squad",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "ww_winters_fury_t8_item",
+            "itementry": "scriptbundle&ww_winters_fury_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "ww_crossbow_impaler_t8_item",
+            "itementry": "scriptbundle&ww_crossbow_impaler_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "ray_gun_mk2x_t8_item",
+            "itementry": "scriptbundle&ray_gun_mk2x_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "ray_gun_mk2y_t8_item",
+            "itementry": "scriptbundle&ray_gun_mk2y_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "ray_gun_mk2z_t8_item",
+            "itementry": "scriptbundle&ray_gun_mk2z_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "melee_spork_t8_item",
+            "itementry": "scriptbundle&melee_spork_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "special_crossbow_t8_item",
+            "itementry": "scriptbundle&special_crossbow_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "allistairs_folly_t8_item",
+            "itementry": "scriptbundle&allistairs_folly_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "death_of_orion_t8_item",
+            "itementry": "scriptbundle&death_of_orion_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "melee_stopsign_t8_item",
+            "itementry": "scriptbundle&melee_stopsign_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "tomahawk_t8_wz_item",
+            "itementry": "scriptbundle&tomahawk_t8_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 50,
-            "itementry": "homunculus_wz_item",
+            "itementry": "scriptbundle&homunculus_wz_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
-            "itementry": "melee_zombiearm_t8_item",
+            "itementry": "scriptbundle&melee_zombiearm_t8_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "shotgun_precision_t8_item",
+            "itementry": "scriptbundle&shotgun_precision_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "tr_damageburst_t8_item",
+            "itementry": "scriptbundle&tr_damageburst_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "sniper_damagesemi_t8_item",
+            "itementry": "scriptbundle&sniper_damagesemi_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 50,
-            "itementry": "perk_item_bloody_tracker",
+            "itementry": "scriptbundle&perk_item_bloody_tracker",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "ar_an94_t8_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&ar_an94_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "ar_doublebarrel_t8_item",
-            "childitementry_1": "ammo_type_762_item",
+            "itementry": "scriptbundle&ar_doublebarrel_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "smg_minigun_t8_item",
-            "childitementry_1": "ammo_type_9mm_item",
+            "itementry": "scriptbundle&smg_minigun_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_9mm_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "smg_vmp_t8_item",
-            "childitementry_1": "ammo_type_9mm_item",
+            "itementry": "scriptbundle&smg_vmp_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_9mm_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 50,
-            "itementry": "melee_actionfigure_t8_item",
+            "itementry": "scriptbundle&melee_actionfigure_t8_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
-            "itementry": "melee_amuletfist_t8_item",
+            "itementry": "scriptbundle&melee_amuletfist_t8_item",
             "maxweight": 50,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 200,
     "type": "itemspawnlist",
     "hash_345eba59": 28,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
     "hash_dc7ffbef": 1,
     "name": "weapons_test_guns",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

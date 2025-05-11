@@ -2,57 +2,61 @@
     "itemlist": [
         {
             "minweight": 10,
-            "itementry": "ammo_type_9mm_item",
+            "itementry": "scriptbundle&ammo_type_9mm_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "itementry": "ammo_type_45_item",
+            "itementry": "scriptbundle&ammo_type_45_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "itementry": "ammo_type_556_item",
+            "itementry": "scriptbundle&ammo_type_556_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "itementry": "ammo_type_762_item",
+            "itementry": "scriptbundle&ammo_type_762_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "itementry": "ammo_type_338_item",
+            "itementry": "scriptbundle&ammo_type_338_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "itementry": "ammo_type_12ga_item",
+            "itementry": "scriptbundle&ammo_type_12ga_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "itementry": "ammo_type_50cal_item",
+            "itementry": "scriptbundle&ammo_type_50cal_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 4,
-            "itementry": "ammo_type_rocket_item",
+            "itementry": "scriptbundle&ammo_type_rocket_item",
             "maxweight": 4,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 8,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "zombie_itemlist_ammo_list",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

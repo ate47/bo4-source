@@ -1,10 +1,10 @@
 {
-    "description": "#hash_2cff14ba9df89d5a",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_2cff14ba9df89d5a",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_after_switching_weapons",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_hot_swap",
-    "stringref": "#hash_1757a9e5e0d0a56a",
-    "iconlarge": "#ui_icon_medal_hot_swap_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_hot_swap",
+    "stringref": "localized17#hash_1757a9e5e0d0a56a",
+    "iconlarge": "image#ui_icon_medal_hot_swap_large"
 }

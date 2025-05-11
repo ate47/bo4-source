@@ -1,10 +1,10 @@
 {
-    "description": "#hash_1c60b0c841c505fb",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_1c60b0c841c505fb",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_lightning_strike_kill",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_5f4defe89662034a",
-    "stringref": "#hash_3d6884b374316b01",
-    "iconlarge": "#ui_icon_medal_plane_mortor_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_5f4defe89662034a",
+    "stringref": "localized17#hash_3d6884b374316b01",
+    "iconlarge": "image#ui_icon_medal_plane_mortor_large"
 }

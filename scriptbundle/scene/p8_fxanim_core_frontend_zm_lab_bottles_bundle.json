@@ -5,125 +5,369 @@
                 {
                     "entry": [
                         {
-                            "anim": "#p8_fxanim_core_frontend_zm_lab_bottle_arm_01_anim",
+                            "anim": "anim4#p8_fxanim_core_frontend_zm_lab_bottle_arm_01_anim",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "#hash_4983812e5cc3f6c1",
+                            "anim": "anim4#hash_4983812e5cc3f6c1",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "enter"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "enter",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_e9844522176a36f",
+                            "anim": "anim4#hash_e9844522176a36f",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "exit"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "exit",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_4983812e5cc3f6c1",
+                            "anim": "anim4#hash_4983812e5cc3f6c1",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "skip_to_idle"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "skip_to_idle",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 }
             ],
+            "hash_5829ce6b": 0,
+            "hash_69db1665": 0,
+            "skipdeathanim": 0,
+            "hash_9de1f44c": 0,
+            "lerptime": 0,
             "firstframe": 1,
-            "model": "#p8_fxanim_core_frontend_zm_lab_bottle_arm_01_mod",
+            "model": "model#p8_fxanim_core_frontend_zm_lab_bottle_arm_01_mod",
             "type": "prop",
-            "name": "bottle1"
+            "hash_a1c5c678": 0,
+            "usefakeactor": 0,
+            "name": "bottle1",
+            "hash_2baad8fc": 0,
+            "hash_69aabff2": 0,
+            "hash_16999a5d": 0,
+            "hash_29563fd6": 0,
+            "hash_eb00c330": 0,
+            "cameratweenout": 0,
+            "hash_be60a82b": 0,
+            "hash_922b4fc5": 0,
+            "hash_3e692842": 0,
+            "preserveangle": 0,
+            "cameratween": 0
         },
         {
             "shots": [
                 {
                     "entry": [
                         {
-                            "anim": "#p8_fxanim_core_frontend_zm_lab_bottle_arm_02_anim",
+                            "anim": "anim4#p8_fxanim_core_frontend_zm_lab_bottle_arm_02_anim",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "#hash_720d30de839de8fc",
+                            "anim": "anim4#hash_720d30de839de8fc",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "enter"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "enter",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_f0de3d6818caab6",
+                            "anim": "anim4#hash_f0de3d6818caab6",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "exit"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "exit",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_720d30de839de8fc",
+                            "anim": "anim4#hash_720d30de839de8fc",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "skip_to_idle"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "skip_to_idle",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 }
             ],
+            "hash_5829ce6b": 0,
+            "hash_69db1665": 0,
+            "skipdeathanim": 0,
+            "hash_9de1f44c": 0,
+            "lerptime": 0,
             "firstframe": 1,
-            "model": "#p8_fxanim_core_frontend_zm_lab_bottle_arm_02_mod",
+            "model": "model#p8_fxanim_core_frontend_zm_lab_bottle_arm_02_mod",
             "type": "prop",
-            "name": "bottle2"
+            "hash_a1c5c678": 0,
+            "usefakeactor": 0,
+            "name": "bottle2",
+            "hash_2baad8fc": 0,
+            "hash_69aabff2": 0,
+            "hash_16999a5d": 0,
+            "hash_29563fd6": 0,
+            "hash_eb00c330": 0,
+            "cameratweenout": 0,
+            "hash_be60a82b": 0,
+            "hash_922b4fc5": 0,
+            "hash_3e692842": 0,
+            "preserveangle": 0,
+            "cameratween": 0
         },
         {
             "shots": [
                 {
                     "entry": [
                         {
-                            "anim": "#p8_fxanim_core_frontend_zm_lab_bottle_arm_03_anim",
+                            "anim": "anim4#p8_fxanim_core_frontend_zm_lab_bottle_arm_03_anim",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "#hash_7c9f3a2a36404293",
+                            "anim": "anim4#hash_7c9f3a2a36404293",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "enter"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "enter",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_797440f6c61c3bf1",
+                            "anim": "anim4#hash_797440f6c61c3bf1",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "exit"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "exit",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_7c9f3a2a36404293",
+                            "anim": "anim4#hash_7c9f3a2a36404293",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "skip_to_idle"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "skip_to_idle",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 }
             ],
+            "hash_5829ce6b": 0,
+            "hash_69db1665": 0,
+            "skipdeathanim": 0,
+            "hash_9de1f44c": 0,
+            "lerptime": 0,
             "firstframe": 1,
-            "model": "#p8_fxanim_core_frontend_zm_lab_bottle_arm_03_mod",
+            "model": "model#p8_fxanim_core_frontend_zm_lab_bottle_arm_03_mod",
             "type": "prop",
-            "name": "bottle3"
+            "hash_a1c5c678": 0,
+            "usefakeactor": 0,
+            "name": "bottle3",
+            "hash_2baad8fc": 0,
+            "hash_69aabff2": 0,
+            "hash_16999a5d": 0,
+            "hash_29563fd6": 0,
+            "hash_eb00c330": 0,
+            "cameratweenout": 0,
+            "hash_be60a82b": 0,
+            "hash_922b4fc5": 0,
+            "hash_3e692842": 0,
+            "preserveangle": 0,
+            "cameratween": 0
         }
     ],
+    "hash_e3b54868": 0,
     "scenetype": "fxanim",
+    "hash_6a17a93d": 0,
     "configstringfiletype": "scriptbundle",
+    "looping": 0,
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "client",
     "name": "p8_fxanim_core_frontend_zm_lab_bottles_bundle",
     "dontsync": 1,
-    "team": "any"
+    "hash_241c5f3c": 0,
+    "hash_16999a5d": 0,
+    "hash_29563fd6": 0,
+    "hash_eb00c330": 0,
+    "team": "any",
+    "hash_be60a82b": 0,
+    "hash_922b4fc5": 0,
+    "hash_3e692842": 0
 }

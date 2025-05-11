@@ -1,8 +1,12 @@
 {
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "attachment_killcounter_launcher_standard_restriction",
-    "displayname": "#weapon/launcher_standard_t8",
+    "displayname": "localized17#weapon/launcher_standard_t8",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "itemRestrictions__launcher_standard_t8__attachments__killcounter"
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__launcher_standard_t8__attachments__killcounter",
+    "isenableddisabled": 0
 }

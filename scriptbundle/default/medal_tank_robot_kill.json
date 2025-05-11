@@ -1,10 +1,10 @@
 {
-    "description": "#hash_49deb59c674f22b1",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_49deb59c674f22b1",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_tank_robot_kill",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_mantis_kill",
-    "stringref": "#hash_d745e530f9ad21f",
-    "iconlarge": "#ui_icon_medal_mantis_kill_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_mantis_kill",
+    "stringref": "localized17#hash_d745e530f9ad21f",
+    "iconlarge": "image#ui_icon_medal_mantis_kill_large"
 }

@@ -1,7 +1,7 @@
 {
     "configstringfiletype": "scriptbundle",
     "type": "turretanims",
-    "centerstraightanim": "#hash_275d2e272722ca22",
+    "centerstraightanim": "anim5#hash_275d2e272722ca22",
     "vmtype": "none",
     "name": "wingsuitanims",
     "aimpitchangleu": 40,

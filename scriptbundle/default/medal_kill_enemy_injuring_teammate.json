@@ -1,10 +1,10 @@
 {
-    "description": "#hash_1e88210ed61666c0",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_1e88210ed61666c0",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_injuring_teammate",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_savior",
-    "stringref": "#hash_5544574dbc352ad8",
-    "iconlarge": "#ui_icon_medal_savior_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_savior",
+    "stringref": "localized17#hash_5544574dbc352ad8",
+    "iconlarge": "image#ui_icon_medal_savior_large"
 }

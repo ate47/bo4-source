@@ -1,7 +1,7 @@
 {
-    "detailsicon": "#hash_36263423bc867f64",
-    "hash_6c274f86": "#hash_664355c9b1b878a5",
-    "nametext": "#mpui/nomad_zombie",
+    "detailsicon": "image#hash_36263423bc867f64",
+    "hash_6c274f86": "image#hash_664355c9b1b878a5",
+    "nametext": "localized17#mpui/nomad_zombie",
     "name": "outfit_zombie_epic1_nomad_bundle_shop",
-    "desctext": "#hash_5f4873c01a82c93b"
+    "desctext": "localized17#hash_5f4873c01a82c93b"
 }

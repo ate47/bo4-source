@@ -2,51 +2,55 @@
     "itemlist": [
         {
             "minweight": 8,
-            "itementry": "concertina_wire_wz_item",
+            "itementry": "scriptbundle&concertina_wire_wz_item",
             "maxweight": 8,
             "available": 1
         },
         {
             "minweight": 8,
-            "itementry": "barricade_wz_item",
+            "itementry": "scriptbundle&barricade_wz_item",
             "maxweight": 8,
             "available": 1
         },
         {
             "minweight": 8,
-            "itementry": "cluster_semtex_wz_item",
+            "itementry": "scriptbundle&cluster_semtex_wz_item",
             "maxweight": 8,
             "available": 1
         },
         {
             "minweight": 8,
-            "itementry": "frag_grenade_wz_item",
+            "itementry": "scriptbundle&frag_grenade_wz_item",
             "maxweight": 8,
             "available": 1
         },
         {
             "minweight": 8,
-            "itementry": "molotov_wz_item",
+            "itementry": "scriptbundle&molotov_wz_item",
             "maxweight": 8,
             "available": 1
         },
         {
             "minweight": 8,
-            "itementry": "wraithfire_wz_item",
+            "itementry": "scriptbundle&wraithfire_wz_item",
             "maxweight": 8,
             "available": 1
         },
         {
             "minweight": 8,
-            "itementry": "trip_wire_wz_item",
+            "itementry": "scriptbundle&trip_wire_wz_item",
             "maxweight": 8,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 7,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "zombie_equipment_itemlist_pandemic",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

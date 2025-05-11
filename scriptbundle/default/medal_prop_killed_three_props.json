@@ -1,10 +1,10 @@
 {
-    "description": "#hash_af099911929d02e",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_af099911929d02e",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_prop_killed_three_props",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_34ba4c3bc5606ae0",
-    "stringref": "#hash_7260423a69811e1e",
-    "iconlarge": "#hash_30b8fb8a74a101c"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_34ba4c3bc5606ae0",
+    "stringref": "localized17#hash_7260423a69811e1e",
+    "iconlarge": "image#hash_30b8fb8a74a101c"
 }

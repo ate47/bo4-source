@@ -8,44 +8,69 @@
     ],
     "options": [
         {
-            "label": "#hash_774df961990d1bcf",
+            "label": "localized17#hash_774df961990d1bcf",
             "value": "0"
         },
         {
-            "label": "#hash_774df861990d1a1c",
+            "label": "localized17#hash_774df861990d1a1c",
             "value": "0.36"
         },
         {
-            "label": "#hash_774dfb61990d1f35",
+            "label": "localized17#hash_774dfb61990d1f35",
             "value": "0.71"
         },
         {
-            "label": "#hash_774dfa61990d1d82",
+            "label": "localized17#hash_774dfa61990d1d82",
             "value": "1.07"
         },
         {
-            "label": "#hash_774df561990d1503",
+            "label": "localized17#hash_774df561990d1503",
             "value": "1.33"
         },
         {
-            "label": "#hash_774df461990d1350",
+            "label": "localized17#hash_774df461990d1350",
             "value": "1.78"
         }
     ],
-    "descriptionimage": "#hash_b0051468c8fa60d",
-    "description": "#hash_6dc71248d00be956",
-    "hash_60fcfffa": "#hash_7cdc6df793f97d8c",
+    "hash_dfedf08e": 0,
+    "descriptionimage": "image#hash_b0051468c8fa60d",
+    "categoryindex": 0,
+    "description": "localized17#hash_6dc71248d00be956",
+    "hash_60fcfffa": "localized17#hash_7cdc6df793f97d8c",
     "hash_10e01ad5": 1,
+    "iscategory": 0,
+    "hash_71620d66": 0,
+    "hash_213a0b12": 0,
+    "hash_8722393c": 0,
+    "hash_799f4f7": 0,
     "hash_7d936886": 1,
+    "hash_6bb94572": 0,
+    "hash_2284d52": 0,
+    "hash_389e8bd": 0,
+    "hash_5352657b": 0,
+    "hash_9358ee0a": 0,
+    "hash_558c32d5": 0,
+    "hash_77c0bdd6": 0,
+    "hash_e0274350": 0,
     "hash_86a04811": 1,
     "hash_43a952c1": 0.01,
     "maxvalue": 1,
     "name": "pc_monitor_distance_sensitivity_coefficient",
-    "displayname": "#hash_3abe0ef5ed72cd26",
+    "displayname": "localized17#hash_3abe0ef5ed72cd26",
+    "rangestartvalue": 0,
+    "isdisabled": 0,
     "hash_d6897f56": 1,
+    "hash_1da8087e": 0,
     "decimalplace": 0.01,
+    "hash_54a43dc2": 0,
     "hash_66faec87": 5,
     "statname": "m_mouseADSSensitivityCoef",
+    "hash_1f28ad4a": 0,
+    "isenableddisabled": 0,
+    "hash_6155d2c8": 0,
+    "minvalue": 0,
     "hash_d4e288e": 1.33,
-    "hash_b7401319": "#hash_4cb3e74e686b536d"
+    "bindindex": 0,
+    "hash_f2ad4b49": 0,
+    "hash_b7401319": "localized17#hash_4cb3e74e686b536d"
 }

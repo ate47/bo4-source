@@ -1,5 +1,5 @@
 {
-    "hinttext": "#menu/health_hint",
+    "hinttext": "localized17#menu/health_hint",
     "configstringfiletype": "scriptbundle",
     "value8": "65",
     "value9": "70",
@@ -29,9 +29,13 @@
     "value19": "130",
     "value18": "125",
     "type": "gamesettings",
-    "label": "#hash_759cd69097c29b30",
+    "label": "localized17#hash_759cd69097c29b30",
+    "hash_5a6dee5a": 0,
     "name": "player_max_health",
-    "displayname": "#hash_627b49b0b4b92d57",
+    "displayname": "localized17#hash_627b49b0b4b92d57",
+    "hash_54e336e4": 0,
     "optionscount": 27,
-    "setting": "playerMaxHealth"
+    "hash_765cfd09": 0,
+    "setting": "playerMaxHealth",
+    "isenableddisabled": 0
 }

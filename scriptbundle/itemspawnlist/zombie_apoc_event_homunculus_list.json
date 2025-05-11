@@ -2,39 +2,43 @@
     "itemlist": [
         {
             "minweight": 1,
-            "itementry": "zombie_supply_stash_wonder_weapons",
+            "itementry": "scriptbundle&zombie_supply_stash_wonder_weapons",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "health_item_large",
+            "itementry": "scriptbundle&health_item_large",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "armor_shard_item",
+            "itementry": "scriptbundle&armor_shard_item",
             "maxweight": 1,
             "available": 3
         },
         {
             "minweight": 1,
-            "itementry": "tr_leveraction_t8_item",
+            "itementry": "scriptbundle&tr_leveraction_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "homunculus_wz_item",
+            "itementry": "scriptbundle&homunculus_wz_item",
             "maxweight": 1,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 5,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "zombie_apoc_event_homunculus_list",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

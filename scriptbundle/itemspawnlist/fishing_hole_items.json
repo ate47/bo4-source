@@ -2,63 +2,67 @@
     "itemlist": [
         {
             "minweight": 999,
-            "itementry": "health_item_small",
+            "itementry": "scriptbundle&health_item_small",
             "maxweight": 999,
             "available": -1
         },
         {
             "minweight": 999,
-            "itementry": "resource_item_paint",
+            "itementry": "scriptbundle&resource_item_paint",
             "maxweight": 999,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "resource_item_paint_stack_10",
+            "itementry": "scriptbundle&resource_item_paint_stack_10",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 500,
-            "itementry": "ammo_type_9mm_item",
+            "itementry": "scriptbundle&ammo_type_9mm_item",
             "maxweight": 500,
             "available": -1
         },
         {
             "minweight": 500,
-            "itementry": "tr_leveraction_t8_item",
+            "itementry": "scriptbundle&tr_leveraction_t8_item",
             "maxweight": 500,
             "available": -1
         },
         {
             "minweight": 500,
-            "itementry": "wz_ball",
+            "itementry": "scriptbundle&wz_ball",
             "maxweight": 500,
             "available": -1
         },
         {
             "minweight": 500,
-            "itementry": "hatchet_wz_item",
+            "itementry": "scriptbundle&hatchet_wz_item",
             "maxweight": 500,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "zombie_supply_stash_raygun_mk_variants",
+            "itementry": "scriptbundle&zombie_supply_stash_raygun_mk_variants",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 1,
-            "itementry": "armor_item_large",
+            "itementry": "scriptbundle&armor_item_large",
             "maxweight": 1,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 9,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "fishing_hole_items",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

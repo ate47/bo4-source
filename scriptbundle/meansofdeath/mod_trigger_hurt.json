@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_trigger_hurt",
-    "displayname": "#hash_2b01f6e0ab206ffd",
-    "icon": "#ui_icon_meansofdeath_suicide",
-    "iconlarge": "#ui_icon_meansofdeath_suicide_xl"
+    "displayname": "localized17#hash_2b01f6e0ab206ffd",
+    "icon": "image#ui_icon_meansofdeath_suicide",
+    "iconlarge": "image#ui_icon_meansofdeath_suicide_xl"
 }

@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#t7_hud_medal_backing_specialist_killjoy",
+    "backingsmall": "image#t7_hud_medal_backing_specialist_killjoy",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_kill_enemy_that_pulsed_you",
-    "backinglarge": "#t7_hud_medal_backing_specialist_killjoy_lrg",
-    "iconsmall": "#t7_hud_medal_kill_enemy_that_pulsed_you",
-    "stringref": "#hash_78c3093a38bc1b6c",
-    "iconlarge": "#t7_hud_medal_kill_enemy_that_pulsed_you_lrg"
+    "backinglarge": "image#t7_hud_medal_backing_specialist_killjoy_lrg",
+    "iconsmall": "image#t7_hud_medal_kill_enemy_that_pulsed_you",
+    "stringref": "localized17#hash_78c3093a38bc1b6c",
+    "iconlarge": "image#t7_hud_medal_kill_enemy_that_pulsed_you_lrg"
 }

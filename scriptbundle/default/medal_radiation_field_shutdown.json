@@ -1,10 +1,10 @@
 {
-    "description": "#hash_55e4ea7556327336",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_55e4ea7556327336",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_radiation_field_shutdown",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_3445612bb71a4857",
-    "stringref": "#hash_5e744a5c05680b46",
-    "iconlarge": "#hash_421a9fc370f756a7"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_3445612bb71a4857",
+    "stringref": "localized17#hash_5e744a5c05680b46",
+    "iconlarge": "image#hash_421a9fc370f756a7"
 }

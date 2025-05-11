@@ -1,10 +1,10 @@
 {
-    "contracticon": "#hash_6e6f283d9a09cf56",
-    "contracttitle": "#hash_62cffc9e930fd359",
+    "contracticon": "image#hash_6e6f283d9a09cf56",
+    "contracttitle": "localized17#hash_62cffc9e930fd359",
     "name": "loot_contract_afterglow",
-    "hash_4b258f2c": "#hash_170ce4ca33f53d1e",
-    "contractdescription": "#hash_5757dd7c7f262f49",
+    "hash_4b258f2c": "image#hash_170ce4ca33f53d1e",
+    "contractdescription": "localized17#hash_5757dd7c7f262f49",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#loot07_ui_icon_blackmarket_itemshop_afterglow",
-    "hash_e08fc162": "#hash_56f7044c4efd19f3"
+    "hash_1c057e8c": "image#loot07_ui_icon_blackmarket_itemshop_afterglow",
+    "hash_e08fc162": "localized17#hash_56f7044c4efd19f3"
 }

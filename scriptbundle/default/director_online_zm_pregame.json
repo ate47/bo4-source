@@ -1,4 +1,5 @@
 {
+    "hasmigration": 0,
     "lobbymode": 1,
     "id": 2304,
     "settingscount": 1,
@@ -8,16 +9,20 @@
     "hash_d16ccae8": 1,
     "isprivate": 1,
     "showteams": 1,
+    "lobbytype": 0,
     "menumusic": "lobby_zm",
     "room": "zombie",
     "hash_7f60c82f": 4,
-    "kicker": "#hash_5dd231fd15db7531",
+    "kicker": "localized17#hash_5dd231fd15db7531",
+    "isadvertised": 0,
     "maxclients": 4,
     "name": "director_online_zm_pregame",
     "networkmode": 2,
     "errtarget": "director_online_zm_pregame",
     "egamemodes": 2,
-    "title": "#hash_27307830087a401",
+    "hash_ec76767d": 0,
+    "title": "localized17#hash_27307830087a401",
     "hash_f68d7d0": 2,
+    "isgame": 0,
     "maxlocalclients": 2
 }

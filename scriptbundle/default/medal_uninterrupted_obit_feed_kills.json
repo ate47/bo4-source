@@ -1,10 +1,10 @@
 {
-    "description": "#hash_5125ef30cf31d1c",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_5125ef30cf31d1c",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_uninterrupted_obit_feed_kills",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_quadfeed",
-    "stringref": "#hash_1019a96721546d54",
-    "iconlarge": "#ui_icon_medal_quadfeed_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_quadfeed",
+    "stringref": "localized17#hash_1019a96721546d54",
+    "iconlarge": "image#ui_icon_medal_quadfeed_large"
 }

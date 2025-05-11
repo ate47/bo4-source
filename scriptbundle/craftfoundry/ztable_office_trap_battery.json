@@ -2,7 +2,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
     "blueprintcount": 1,
-    "blueprint01": "zblueprint_office_trap_battery",
+    "blueprint01": "scriptbundle&zblueprint_office_trap_battery",
     "name": "ztable_office_trap_battery",
     "displayname": "office_trap_battery"
 }

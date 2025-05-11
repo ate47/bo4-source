@@ -1,24 +1,24 @@
 {
     "objects": [
         {
-            "mainanim": "#hash_780b50c0a9393f1d",
-            "model": "#p8_fxanim_wz_parachute_supplydrop_tank_mod",
+            "mainanim": "anim4#hash_780b50c0a9393f1d",
+            "model": "model#p8_fxanim_wz_parachute_supplydrop_tank_mod",
             "type": "prop",
             "vmtype": "server",
             "name": "p8_fxanim_wz_parachute_supplydrop_tank_open_idle_scriptbundle_prop_1",
             "team": "any"
         },
         {
-            "mainanim": "#hash_77322c90462ba8c",
-            "model": "#c_t7_ally_fb",
+            "mainanim": "anim4#hash_77322c90462ba8c",
+            "model": "model#c_t7_ally_fb",
             "type": "prop",
             "vmtype": "server",
             "name": "p8_fxanim_wz_parachute_supplydrop_tank_open_idle_scriptbundle_prop_2",
             "team": "any"
         },
         {
-            "mainanim": "#hash_ac2d4936b932903",
-            "model": "#c_t7_ally_fb",
+            "mainanim": "anim4#hash_ac2d4936b932903",
+            "model": "model#c_t7_ally_fb",
             "type": "prop",
             "vmtype": "server",
             "name": "p8_fxanim_wz_parachute_supplydrop_tank_open_idle_scriptbundle_prop_3",

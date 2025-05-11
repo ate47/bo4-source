@@ -4,39 +4,39 @@
             "hash_82670522": "stats_attack_dog_kill",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_1fe5d2c0d81b6bb9"
+            "displaystatname": "localized17#hash_1fe5d2c0d81b6bb9"
         },
         {
             "stattype": "objectiveekia",
             "hash_26568428": 1,
-            "displaystatname": "#hash_5d1ab6f5e0227795"
+            "displaystatname": "localized17#hash_5d1ab6f5e0227795"
         },
         {
             "hash_82670522": "stats_shutdowns",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_158193577a14c86e"
+            "displaystatname": "localized17#hash_158193577a14c86e"
         },
         {
             "stattype": "damagedone",
             "hash_26568428": 1,
-            "displaystatname": "#hash_5418827f408e5ca2"
+            "displaystatname": "localized17#hash_5418827f408e5ca2"
         },
         {
             "hash_82670522": "stats_headshot",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_619e74f99b27b9ae"
+            "displaystatname": "localized17#hash_619e74f99b27b9ae"
         },
         {
             "stattype": "objectivescore",
             "hash_26568428": 1,
-            "displaystatname": "#hash_6abbd7a88ee593ed"
+            "displaystatname": "localized17#hash_6abbd7a88ee593ed"
         }
     ],
     "hash_447510ee": "prt_mp_trapper",
-    "defaultimage": "#ui_icon_hvo_base",
-    "cardname": "#hash_c86ddc5fcfcbced",
+    "defaultimage": "image#ui_icon_hvo_base",
+    "cardname": "localized17#hash_c86ddc5fcfcbced",
     "name": "pack_hunter_sd_hvo",
     "associatedgamemode": "sd"
 }

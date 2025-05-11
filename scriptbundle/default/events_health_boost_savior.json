@@ -1,8 +1,8 @@
 {
-    "backingsmall": "#hash_66e5ce08c5c7b0cf",
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
     "widget": "BadasseryMedal",
     "name": "events_health_boost_savior",
-    "backinglarge": "#hash_66e5ce08c5c7b0cf",
-    "iconsmall": "#hash_5811ad68c867dbfc",
-    "iconlarge": "#hash_5811ad68c867dbfc"
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_5811ad68c867dbfc",
+    "iconlarge": "image#hash_5811ad68c867dbfc"
 }

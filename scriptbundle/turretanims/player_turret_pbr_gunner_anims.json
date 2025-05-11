@@ -1,11 +1,11 @@
 {
     "configstringfiletype": "scriptbundle",
     "type": "turretanims",
-    "centerstraightanim": "#hash_52f3bc9c66a5699b",
+    "centerstraightanim": "anim5#hash_52f3bc9c66a5699b",
     "vmtype": "none",
-    "centerdownanim": "#hash_2e26512f6cab3851",
+    "centerdownanim": "anim5#hash_2e26512f6cab3851",
     "name": "player_turret_pbr_gunner_anims",
-    "centerupanim": "#hash_63ac8f702a297744",
+    "centerupanim": "anim5#hash_63ac8f702a297744",
     "aimpitchangleu": 33,
     "aimpitchangled": 55
 }

@@ -1,38 +1,38 @@
 {
     "1": [
         {
-            "altarimage": "#ui_menu_zombies_cac_altar_danu_active",
-            "altarname": "#zombie/danu"
+            "altarimage": "image#ui_menu_zombies_cac_altar_danu_active",
+            "altarname": "localized17#zombie/danu"
         },
         {
-            "altarimage": "#ui_menu_zombies_cac_altar_ra_active",
-            "altarname": "#zombie/ra"
+            "altarimage": "image#ui_menu_zombies_cac_altar_ra_active",
+            "altarname": "localized17#zombie/ra"
         },
         {
-            "altarimage": "#uie_ui_menu_zombies_cac_altar_zeus_active",
-            "altarname": "#zombie/zeus"
+            "altarimage": "image#uie_ui_menu_zombies_cac_altar_zeus_active",
+            "altarname": "localized17#zombie/zeus"
         },
         {
-            "altarimage": "#ui_menu_zombies_cac_altar_odin_active",
-            "altarname": "#zombie/odin"
+            "altarimage": "image#ui_menu_zombies_cac_altar_odin_active",
+            "altarname": "localized17#zombie/odin"
         }
     ],
     "0": [
         {
-            "altarimage": "#uie_ui_menu_zombies_cac_altar_brew_active",
-            "altarname": "#zombie/brew"
+            "altarimage": "image#uie_ui_menu_zombies_cac_altar_brew_active",
+            "altarname": "localized17#zombie/brew"
         },
         {
-            "altarimage": "#uie_ui_menu_zombies_cac_altar_cola_active",
-            "altarname": "#zombie/cola"
+            "altarimage": "image#uie_ui_menu_zombies_cac_altar_cola_active",
+            "altarname": "localized17#zombie/cola"
         },
         {
-            "altarimage": "#uie_ui_menu_zombies_cac_altar_soda_active",
-            "altarname": "#zombie/soda"
+            "altarimage": "image#uie_ui_menu_zombies_cac_altar_soda_active",
+            "altarname": "localized17#zombie/soda"
         },
         {
-            "altarimage": "#uie_ui_menu_zombies_cac_altar_tonic_active",
-            "altarname": "#zombie/tonic"
+            "altarimage": "image#uie_ui_menu_zombies_cac_altar_tonic_active",
+            "altarname": "localized17#zombie/tonic"
         }
     ],
     "configstringfiletype": "scriptbundle",

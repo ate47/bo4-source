@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_2b0c3265afb0727c",
+    "hinttext": "localized17#hash_2b0c3265afb0727c",
     "configstringfiletype": "scriptbundle",
     "value8": "75",
     "value9": "100",
@@ -21,11 +21,14 @@
     "value19": "1000",
     "value18": "750",
     "type": "gamesettings",
-    "label": "#menu/x_points",
+    "label": "localized17#menu/x_points",
     "hash_5a6dee5a": 1,
     "name": "round_score_limit_dom",
-    "displayname": "#hash_1498e581616dccc0",
-    "label1": "#menu/unlimited",
+    "displayname": "localized17#hash_1498e581616dccc0",
+    "label1": "localized17#menu/unlimited",
+    "hash_54e336e4": 0,
     "optionscount": 19,
-    "setting": "scoreLimit"
+    "hash_765cfd09": 0,
+    "setting": "scoreLimit",
+    "isenableddisabled": 0
 }

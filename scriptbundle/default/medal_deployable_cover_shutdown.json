@@ -1,10 +1,10 @@
 {
-    "description": "#hash_683fefa64057a047",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_683fefa64057a047",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_deployable_cover_shutdown",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_338689caa4ebd21b",
-    "stringref": "#hash_559472617f4a4dfd",
-    "iconlarge": "#hash_3faed2a10f32b1bb"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_338689caa4ebd21b",
+    "stringref": "localized17#hash_559472617f4a4dfd",
+    "iconlarge": "image#hash_3faed2a10f32b1bb"
 }

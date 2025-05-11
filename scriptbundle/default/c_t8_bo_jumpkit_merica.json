@@ -1,10 +1,10 @@
 {
     "lootid": "#jumppack_american_flag",
-    "wingsuit": "c_t8_bo_wingsuit_merica",
+    "wingsuit": "scriptbundle&c_t8_bo_wingsuit_merica",
     "image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_preview_merica",
     "name": "c_t8_bo_jumpkit_merica",
-    "displayname": "#hash_e5f3773b06cdfea",
+    "displayname": "localized17#hash_e5f3773b06cdfea",
     "preview_image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_merica",
-    "hash_4fa85a25": "dfxt_merica",
-    "parachute": "c_t8_bo_parachute_merica"
+    "hash_4fa85a25": "scriptbundle&dfxt_merica",
+    "parachute": "scriptbundle&c_t8_bo_parachute_merica"
 }

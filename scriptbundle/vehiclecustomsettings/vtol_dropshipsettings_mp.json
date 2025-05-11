@@ -1,36 +1,39 @@
 {
     "lightgroups_1_slots": [
         {
-            "fx": "#hash_34be810b7f57d6f",
+            "fx": "fx#hash_34be810b7f57d6f",
             "tag": "tag_fx_engine_left_front"
         },
         {
-            "fx": "#hash_34be810b7f57d6f",
+            "fx": "fx#hash_34be810b7f57d6f",
             "tag": "tag_fx_engine_left_back"
         },
         {
-            "fx": "#hash_34be810b7f57d6f",
+            "fx": "fx#hash_34be810b7f57d6f",
             "tag": "tag_fx_engine_right_front"
         },
         {
-            "fx": "#hash_34be810b7f57d6f",
+            "fx": "fx#hash_34be810b7f57d6f",
             "tag": "tag_fx_engine_right_back"
         }
     ],
     "lightgroups_2_slots": [
         {
-            "fx": "#hash_fbef72a1d601e87",
+            "fx": "fx#hash_fbef72a1d601e87",
             "tag": "tag_origin"
         }
     ],
     "hash_77c7a074": 400,
     "hash_efc15586": 10,
     "hash_e1d36c37": 300,
+    "hash_6754976b": 0,
     "turret_fire_burst_max": 5,
     "hash_2c69a255": 5,
     "hash_93360fe": 10,
+    "hash_22b9bee1": 0,
     "forwardjukeengagementheightmax": 300,
     "damagestate_lv1_ratio": 0.75,
+    "hash_95ebe8e0": 0,
     "hash_2ade16ee": 450,
     "hash_c15b13ab": 500,
     "hash_9cdbf8c1": 1000,
@@ -62,6 +65,7 @@
     "near_goal_notify_dist": 80,
     "engagementheightmax": 300,
     "hash_23061240": 40,
+    "hash_74701269": 0,
     "name": "vtol_dropshipsettings_mp",
     "hash_e7260470": 65,
     "rocketcooldown": 5,

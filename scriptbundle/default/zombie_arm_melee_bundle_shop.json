@@ -1,7 +1,7 @@
 {
-    "detailsicon": "#hash_5745e3ccb75e947a",
-    "hash_6c274f86": "#hash_3e151c4c116d8895",
-    "nametext": "#weapon/melee_zombiearm_t8",
+    "detailsicon": "image#hash_5745e3ccb75e947a",
+    "hash_6c274f86": "image#hash_3e151c4c116d8895",
+    "nametext": "localized17#weapon/melee_zombiearm_t8",
     "name": "zombie_arm_melee_bundle_shop",
-    "desctext": "#hash_220b06c5f6cb1c57"
+    "desctext": "localized17#hash_220b06c5f6cb1c57"
 }

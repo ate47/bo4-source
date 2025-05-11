@@ -1,10 +1,10 @@
 {
-    "description": "#hash_6f47e5d6235e2efe",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_6f47e5d6235e2efe",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_grapple_gun_multikill_x2_summary",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_3dfe535fd2c8f01d",
-    "stringref": "#hash_10d6cf489450cb46",
-    "iconlarge": "#ui_icon_medal_cominginhot_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_3dfe535fd2c8f01d",
+    "stringref": "localized17#hash_10d6cf489450cb46",
+    "iconlarge": "image#ui_icon_medal_cominginhot_large"
 }

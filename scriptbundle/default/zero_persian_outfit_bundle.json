@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_7876c2a29f75cfd4",
-    "popupimage": "#hash_30946045ed7b76c0",
-    "nametext": "#hash_6ed3516ab9485d19",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_7876c2a29f75cfd4",
+    "popupimage": "image#hash_30946045ed7b76c0",
+    "nametext": "localized17#hash_6ed3516ab9485d19",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "zero_persian_outfit_bundle",
-    "desctext": "#hash_429d2858d98904b3",
-    "previewimage": "#hash_6f17c6cf04fed45d",
-    "reserveimage": "#hash_a20511057a195dc"
+    "desctext": "localized17#hash_429d2858d98904b3",
+    "previewimage": "image#hash_6f17c6cf04fed45d",
+    "reserveimage": "image#hash_a20511057a195dc"
 }

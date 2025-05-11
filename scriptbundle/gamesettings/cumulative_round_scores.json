@@ -3,12 +3,16 @@
     "value2": "0",
     "value1": "1",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "cumulative_round_scores",
-    "displayname": "#menu/win_rule",
-    "label1": "#hash_1aba847ac9288fac",
-    "label2": "#menu/round_wins",
+    "displayname": "localized17#menu/win_rule",
+    "label1": "localized17#hash_1aba847ac9288fac",
+    "label2": "localized17#menu/round_wins",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "hinttext2": "#hash_1b667eb8b6270fa7",
-    "hinttext1": "#hash_11e698e464030e8e",
-    "setting": "cumulativeRoundScores"
+    "hinttext2": "localized17#hash_1b667eb8b6270fa7",
+    "hinttext1": "localized17#hash_11e698e464030e8e",
+    "hash_765cfd09": 0,
+    "setting": "cumulativeRoundScores",
+    "isenableddisabled": 0
 }

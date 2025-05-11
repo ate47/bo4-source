@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_salty_shaker",
-    "hash_ff3063df": "attach_t8_charm_salty_shaker_view",
+    "hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_saltshaker",
     "name": "charm_salty_shaker",
-    "displayname": "#hash_287050938b1b305f",
+    "displayname": "localized17#hash_287050938b1b305f",
     "icon": "ui_icon_weapon_charms_saltshaker",
-    "hash_ef5ad2b3": "attach_t8_charm_salty_shaker_view",
-    "previewimage": "#ui_icon_weapon_charms_saltshaker"
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_saltshaker"
 }

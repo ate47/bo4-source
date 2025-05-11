@@ -1,92 +1,92 @@
 {
     "objects": [
         {
-            "exithighloopanim": "#ai_crew_crobot_vtolrider_highdrop_loop",
+            "exithighloopanim": "anim4#ai_crew_crobot_vtolrider_highdrop_loop",
             "aligntag": "tag_origin",
-            "rideanim": "#ai_crew_crobot_vtolrider_idle_left",
+            "rideanim": "anim4#ai_crew_crobot_vtolrider_idle_left",
             "position": "driver",
-            "exithighlandanim": "#ai_crew_crobot_vtolrider_highdrop_land",
-            "exithighanim": "#ai_crew_crobot_vtolrider_highdrop_intro_left"
+            "exithighlandanim": "anim4#ai_crew_crobot_vtolrider_highdrop_land",
+            "exithighanim": "anim4#ai_crew_crobot_vtolrider_highdrop_intro_left"
         },
         {
             "aligntag": "tag_rider1",
-            "rideanim": "#ai_crew_vtol_captain_idle",
+            "rideanim": "anim4#ai_crew_vtol_captain_idle",
             "position": "passenger1"
         },
         {
-            "exithighloopanim": "#ai_crew_vtol_1_norope_drop_loop",
+            "exithighloopanim": "anim4#ai_crew_vtol_1_norope_drop_loop",
             "aligntag": "tag_origin",
-            "rideanim": "#ai_crew_vtol_1_norope_idle",
+            "rideanim": "anim4#ai_crew_vtol_1_norope_idle",
             "position": "crew1",
-            "exithighlandanim": "#ai_crew_vtol_1_norope_drop_landing",
-            "exithighanim": "#ai_crew_vtol_1_norope_drop_intro"
+            "exithighlandanim": "anim4#ai_crew_vtol_1_norope_drop_landing",
+            "exithighanim": "anim4#ai_crew_vtol_1_norope_drop_intro"
         },
         {
-            "exithighloopanim": "#ai_crew_vtol_2_norope_drop_loop",
-            "vehicleexitanim": "#v_crew_vtol_hatch_back_open",
+            "exithighloopanim": "anim4#ai_crew_vtol_2_norope_drop_loop",
+            "vehicleexitanim": "anim4#v_crew_vtol_hatch_back_open",
             "aligntag": "tag_rider1",
-            "rideanim": "#ai_crew_vtol_2_norope_idle",
+            "rideanim": "anim4#ai_crew_vtol_2_norope_idle",
             "position": "crew2",
-            "exithighlandanim": "#ai_crew_vtol_2_norope_drop_landing",
-            "exithighanim": "#ai_crew_vtol_2_norope_drop_intro"
+            "exithighlandanim": "anim4#ai_crew_vtol_2_norope_drop_landing",
+            "exithighanim": "anim4#ai_crew_vtol_2_norope_drop_intro"
         },
         {
-            "exithighloopanim": "#ai_crew_vtol_3_norope_drop_loop",
-            "vehicleexitanim": "#v_crew_vtol_hatch_back_open",
+            "exithighloopanim": "anim4#ai_crew_vtol_3_norope_drop_loop",
+            "vehicleexitanim": "anim4#v_crew_vtol_hatch_back_open",
             "aligntag": "tag_rider1",
-            "rideanim": "#ai_crew_vtol_3_norope_idle",
+            "rideanim": "anim4#ai_crew_vtol_3_norope_idle",
             "position": "crew3",
-            "exithighlandanim": "#ai_crew_vtol_3_norope_drop_landing",
-            "exithighanim": "#ai_crew_vtol_3_norope_drop_intro"
+            "exithighlandanim": "anim4#ai_crew_vtol_3_norope_drop_landing",
+            "exithighanim": "anim4#ai_crew_vtol_3_norope_drop_intro"
         },
         {
-            "exithighloopanim": "#ai_crew_vtol_4_norope_drop_loop",
-            "vehicleexitanim": "#v_crew_vtol_hatch_back_open",
+            "exithighloopanim": "anim4#ai_crew_vtol_4_norope_drop_loop",
+            "vehicleexitanim": "anim4#v_crew_vtol_hatch_back_open",
             "aligntag": "tag_rider1",
-            "rideanim": "#ai_crew_vtol_4_norope_idle",
+            "rideanim": "anim4#ai_crew_vtol_4_norope_idle",
             "position": "crew4",
-            "exithighlandanim": "#ai_crew_vtol_4_norope_drop_landing",
-            "exithighanim": "#ai_crew_vtol_4_norope_drop_intro"
+            "exithighlandanim": "anim4#ai_crew_vtol_4_norope_drop_landing",
+            "exithighanim": "anim4#ai_crew_vtol_4_norope_drop_intro"
         },
         {
-            "exithighloopanim": "#ai_crew_vtol_5_norope_drop_loop",
-            "vehicleexitanim": "#v_crew_vtol_hatch_left_open",
+            "exithighloopanim": "anim4#ai_crew_vtol_5_norope_drop_loop",
+            "vehicleexitanim": "anim4#v_crew_vtol_hatch_left_open",
             "aligntag": "tag_rider1",
-            "rideanim": "#ai_crew_vtol_5_norope_idle",
+            "rideanim": "anim4#ai_crew_vtol_5_norope_idle",
             "position": "crew5",
-            "exithighlandanim": "#ai_crew_vtol_5_norope_drop_landing",
-            "exithighanim": "#ai_crew_vtol_5_norope_drop_intro"
+            "exithighlandanim": "anim4#ai_crew_vtol_5_norope_drop_landing",
+            "exithighanim": "anim4#ai_crew_vtol_5_norope_drop_intro"
         },
         {
-            "exithighloopanim": "#ai_crew_vtol_6_norope_drop_loop",
-            "vehicleexitanim": "#v_crew_vtol_hatch_left_open",
+            "exithighloopanim": "anim4#ai_crew_vtol_6_norope_drop_loop",
+            "vehicleexitanim": "anim4#v_crew_vtol_hatch_left_open",
             "aligntag": "tag_rider1",
-            "rideanim": "#ai_crew_vtol_6_norope_idle",
+            "rideanim": "anim4#ai_crew_vtol_6_norope_idle",
             "position": "crew6",
-            "exithighlandanim": "#ai_crew_vtol_6_norope_drop_landing",
-            "exithighanim": "#ai_crew_vtol_6_norope_drop_intro"
+            "exithighlandanim": "anim4#ai_crew_vtol_6_norope_drop_landing",
+            "exithighanim": "anim4#ai_crew_vtol_6_norope_drop_intro"
         },
         {
-            "exithighloopanim": "#ai_crew_vtol_7_norope_drop_loop",
-            "vehicleexitanim": "#v_crew_vtol_hatch_right_open",
+            "exithighloopanim": "anim4#ai_crew_vtol_7_norope_drop_loop",
+            "vehicleexitanim": "anim4#v_crew_vtol_hatch_right_open",
             "aligntag": "tag_rider1",
-            "rideanim": "#ai_crew_vtol_7_norope_idle",
+            "rideanim": "anim4#ai_crew_vtol_7_norope_idle",
             "position": "crew7",
-            "exithighlandanim": "#ai_crew_vtol_7_norope_drop_landing",
-            "exithighanim": "#ai_crew_vtol_7_norope_drop_intro"
+            "exithighlandanim": "anim4#ai_crew_vtol_7_norope_drop_landing",
+            "exithighanim": "anim4#ai_crew_vtol_7_norope_drop_intro"
         },
         {
-            "exithighloopanim": "#ai_crew_vtol_8_norope_drop_loop",
-            "vehicleexitanim": "#v_crew_vtol_hatch_right_open",
+            "exithighloopanim": "anim4#ai_crew_vtol_8_norope_drop_loop",
+            "vehicleexitanim": "anim4#v_crew_vtol_hatch_right_open",
             "aligntag": "tag_rider1",
-            "rideanim": "#ai_crew_vtol_8_norope_idle",
+            "rideanim": "anim4#ai_crew_vtol_8_norope_idle",
             "position": "crew8",
-            "exithighlandanim": "#ai_crew_vtol_8_norope_drop_landing",
-            "exithighanim": "#ai_crew_vtol_8_norope_drop_intro"
+            "exithighlandanim": "anim4#ai_crew_vtol_8_norope_drop_landing",
+            "exithighanim": "anim4#ai_crew_vtol_8_norope_drop_intro"
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "model": "#veh_t7_mil_vtol_dropship_troopcarrier",
+    "model": "model#veh_t7_mil_vtol_dropship_troopcarrier",
     "type": "vehicleriders",
     "vmtype": "both",
     "dropspeed": 350,

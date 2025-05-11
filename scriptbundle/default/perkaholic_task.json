@@ -1,9 +1,9 @@
 {
     "callingtask": "#perks_used",
     "configstringfiletype": "scriptbundle",
-    "image": "#ui_icon_zm_calling_tasks_perksused",
+    "image": "image#ui_icon_zm_calling_tasks_perksused",
     "dailytarget": 15,
     "name": "perkaholic_task",
-    "taskname": "#hash_1d74d59fd76455f2",
-    "descsimple": "#hash_c2c06eaefd0067d"
+    "taskname": "localized17#hash_1d74d59fd76455f2",
+    "descsimple": "localized17#hash_c2c06eaefd0067d"
 }

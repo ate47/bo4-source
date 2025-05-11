@@ -1,8 +1,8 @@
 {
-    "backingsmall": "#hash_66e5ce08c5c7b0cf",
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
     "widget": "BadasseryMedal",
     "name": "events_spawn_beacon_objective_defense",
-    "backinglarge": "#hash_66e5ce08c5c7b0cf",
-    "iconsmall": "#hash_2f8853f57a4bee70",
-    "iconlarge": "#hash_2f8853f57a4bee70"
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_2f8853f57a4bee70",
+    "iconlarge": "image#hash_2f8853f57a4bee70"
 }

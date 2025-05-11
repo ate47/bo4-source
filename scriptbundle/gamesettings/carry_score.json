@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_51853e4ec026a005",
+    "hinttext": "localized17#hash_51853e4ec026a005",
     "configstringfiletype": "scriptbundle",
     "value8": "8",
     "value9": "9",
@@ -11,10 +11,14 @@
     "value4": "4",
     "value5": "5",
     "type": "gamesettings",
-    "label": "#menu/x_points",
+    "label": "localized17#menu/x_points",
+    "hash_5a6dee5a": 0,
     "name": "carry_score",
-    "displayname": "#menu/carry_score",
-    "label1": "#menu/1_point",
+    "displayname": "localized17#menu/carry_score",
+    "label1": "localized17#menu/1_point",
+    "hash_54e336e4": 0,
     "optionscount": 9,
-    "setting": "carryScore"
+    "hash_765cfd09": 0,
+    "setting": "carryScore",
+    "isenableddisabled": 0
 }

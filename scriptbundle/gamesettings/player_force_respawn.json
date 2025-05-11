@@ -1,10 +1,13 @@
 {
-    "hinttext": "#hash_974ecb9b3fef83b",
+    "hinttext": "localized17#hash_974ecb9b3fef83b",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "player_force_respawn",
-    "displayname": "#menu/force_respawn",
+    "displayname": "localized17#menu/force_respawn",
+    "hash_54e336e4": 0,
     "optionscount": 2,
+    "hash_765cfd09": 0,
     "setting": "playerForceRespawn",
     "isenableddisabled": 1
 }

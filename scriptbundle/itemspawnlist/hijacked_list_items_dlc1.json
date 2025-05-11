@@ -2,69 +2,73 @@
     "itemlist": [
         {
             "minweight": 300,
-            "itementry": "hijacked_list_guns_dlc1",
+            "itementry": "scriptbundle&hijacked_list_guns_dlc1",
             "maxweight": 320,
             "available": -1
         },
         {
             "minweight": 250,
-            "itementry": "hijacked_list_health",
+            "itementry": "scriptbundle&hijacked_list_health",
             "maxweight": 300,
             "available": -1
         },
         {
             "minweight": 150,
-            "itementry": "hijacked_list_equipment",
+            "itementry": "scriptbundle&hijacked_list_equipment",
             "maxweight": 240,
             "available": -1
         },
         {
             "minweight": 33,
-            "itementry": "hijacked_list_gear",
+            "itementry": "scriptbundle&hijacked_list_gear",
             "maxweight": 58,
             "available": -1
         },
         {
             "minweight": 105,
-            "itementry": "hijacked_list_consumable",
+            "itementry": "scriptbundle&hijacked_list_consumable",
             "maxweight": 180,
             "available": -1
         },
         {
             "minweight": 200,
-            "itementry": "hijacked_list_attachment",
+            "itementry": "scriptbundle&hijacked_list_attachment",
             "maxweight": 300,
             "available": -1
         },
         {
             "minweight": 200,
-            "itementry": "hijacked_list_ammo",
+            "itementry": "scriptbundle&hijacked_list_ammo",
             "maxweight": 250,
             "available": -1
         },
         {
             "minweight": 35,
-            "itementry": "storage_list",
+            "itementry": "scriptbundle&storage_list",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 45,
-            "itementry": "world_base_event_parent",
+            "itementry": "scriptbundle&world_base_event_parent",
             "maxweight": 65,
             "available": -1
         },
         {
             "minweight": 70,
-            "itementry": "hijacked_list_armor_shards",
+            "itementry": "scriptbundle&hijacked_list_armor_shards",
             "maxweight": 70,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 10,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "hijacked_list_items_dlc1",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

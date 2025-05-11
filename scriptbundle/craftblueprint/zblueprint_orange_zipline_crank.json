@@ -1,7 +1,10 @@
 {
+    "hash_11928e3b": 0,
     "configstringfiletype": "scriptbundle",
     "result": "weapon#pistol_topbreak_t8_zm",
     "type": "craftblueprint",
+    "hash_3c809ce0": 0,
+    "hash_e414062": 0,
     "component01": "weapon#zitem_orange_zipline_crank_part_1_zm",
     "component02": "weapon#zitem_orange_zipline_crank_part_2_zm",
     "name": "zblueprint_orange_zipline_crank",

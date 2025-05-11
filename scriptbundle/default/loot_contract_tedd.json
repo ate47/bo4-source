@@ -1,10 +1,10 @@
 {
-    "contracticon": "#hash_798c142e53c24b87",
-    "contracttitle": "#menu/contract_tedd",
+    "contracticon": "image#hash_798c142e53c24b87",
+    "contracttitle": "localized17#menu/contract_tedd",
     "name": "loot_contract_tedd",
-    "hash_4b258f2c": "#hash_3327bf2f86887aa7",
-    "contractdescription": "#menu/blackout_character",
+    "hash_4b258f2c": "image#hash_3327bf2f86887aa7",
+    "contractdescription": "localized17#menu/blackout_character",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#loot07_ui_icon_blackmarket_itemshop_bundle_tedd",
-    "hash_e08fc162": "#hash_5086f3c5ddd389df"
+    "hash_1c057e8c": "image#loot07_ui_icon_blackmarket_itemshop_bundle_tedd",
+    "hash_e08fc162": "localized17#hash_5086f3c5ddd389df"
 }

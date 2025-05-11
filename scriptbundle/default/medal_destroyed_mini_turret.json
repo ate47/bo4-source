@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#t7_hud_medal_backing_badassery",
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
     "widget": "BadasseryMedal",
     "name": "medal_destroyed_mini_turret",
-    "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
-    "iconsmall": "#hash_2761483e9905dab0",
-    "stringref": "#hash_6c23128c1e224199",
-    "iconlarge": "#hash_2761483e9905dab0"
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#hash_2761483e9905dab0",
+    "stringref": "localized17#hash_6c23128c1e224199",
+    "iconlarge": "image#hash_2761483e9905dab0"
 }

@@ -5,598 +5,1907 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_5c36001d9a2d55b8",
+                            "anim": "anim4#hash_5c36001d9a2d55b8",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "start_drop"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "start_drop",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_1db5028f40b6af6b",
+                            "anim": "anim4#hash_1db5028f40b6af6b",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "shot 1"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_5d45e35a7a2a6fb0",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 2"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_63dd72cad618cd64",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 3"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_4bf09825e20f9dd5",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 4"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_6d78de6d8ab1f1d0",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 5"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_e5f578e6ba16b1c",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 6"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_4dd0691f0c74fd9c",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 7"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_56db1c082bd72897",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 8"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_3161d52a48db0828",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 9"
-                }
-            ],
-            "model": "#hash_6fcb2057e46026bf",
-            "type": "prop",
-            "name": "prop 1"
-        },
-        {
-            "shots": [
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_4ae492211fb70998",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "start_drop"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_3059a3a5a93393fb",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 1"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_59e516fddedc3fff",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 2"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_500b236738329d56",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 3"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_4ae492211fb70998",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 4"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_4ae492211fb70998",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 5"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_4ae492211fb70998",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 6"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_4ae492211fb70998",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 7"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_4ae492211fb70998",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 8"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_4ae492211fb70998",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 9"
-                }
-            ],
-            "model": "#hash_d58919dd771c9cd",
-            "type": "prop",
-            "name": "prop 2"
-        },
-        {
-            "shots": [
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_65cf11ff386ea763",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "start_drop"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_65cf11ff386ea763",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 1"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_65cf11ff386ea763",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 2"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_4baf13860ae093f0",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 3"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_db394bb460f1682",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 4"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_7596cc851b2a1a3f",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 5"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_65cf11ff386ea763",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 6"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_65cf11ff386ea763",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 7"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_65cf11ff386ea763",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 8"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_65cf11ff386ea763",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 9"
-                }
-            ],
-            "model": "#hash_d58919dd771c9cd",
-            "type": "prop",
-            "name": "prop 3"
-        },
-        {
-            "shots": [
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_1265254d22673172",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "start_drop"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_1265254d22673172",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 1"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_1265254d22673172",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 2"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_1265254d22673172",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 3"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_1265254d22673172",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 4"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_9e770afedb263a9",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 5"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_1a3bc54e8d535871",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 6"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_4895cc6a54e7f068",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 7"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_1265254d22673172",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 8"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_1265254d22673172",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 9"
-                }
-            ],
-            "model": "#hash_d58919dd771c9cd",
-            "type": "prop",
-            "name": "prop 4"
-        },
-        {
-            "shots": [
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_66841b5329ad5f2b",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "start_drop"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_66841b5329ad5f2b",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 1"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_66841b5329ad5f2b",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 2"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_66841b5329ad5f2b",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 3"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_66841b5329ad5f2b",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 4"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_66841b5329ad5f2b",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 5"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_66841b5329ad5f2b",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 6"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_143979dd6a01458",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 7"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_1387027f630a92aa",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 8"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_54be6d00db1124e7",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "shot 9"
-                }
-            ],
-            "model": "#hash_d58919dd771c9cd",
-            "type": "prop",
-            "name": "prop 5"
-        },
-        {
-            "shots": [
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_7e00dcd14a8b332e",
-                            "entrytype": "anim"
-                        }
-                    ],
-                    "name": "start_drop"
-                },
-                {
-                    "entry": [
-                        {
-                            "anim": "#hash_3a7add35f0ed6f21",
-                            "entrytype": "anim"
-                        }
-                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
                     "name": "shot 1",
-                    "blend": 0.5
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_75e2042c27d444c2",
+                            "anim": "anim4#hash_5d45e35a7a2a6fb0",
                             "entrytype": "anim"
                         }
                     ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
                     "name": "shot 2",
-                    "blend": 0.5
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_aee6014ea7df9de",
+                            "anim": "anim4#hash_63dd72cad618cd64",
                             "entrytype": "anim"
                         }
                     ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
                     "name": "shot 3",
-                    "blend": 0.5
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_38031bd6e99fc59b",
+                            "anim": "anim4#hash_4bf09825e20f9dd5",
                             "entrytype": "anim"
                         }
                     ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
                     "name": "shot 4",
-                    "blend": 0.5
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_2e86452423853b9e",
+                            "anim": "anim4#hash_6d78de6d8ab1f1d0",
                             "entrytype": "anim"
                         }
                     ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
                     "name": "shot 5",
-                    "blend": 0.5
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_7bf80ca0ce934196",
+                            "anim": "anim4#hash_e5f578e6ba16b1c",
                             "entrytype": "anim"
                         }
                     ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
                     "name": "shot 6",
-                    "blend": 0.5
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_2f71a65bed4ed8de",
+                            "anim": "anim4#hash_4dd0691f0c74fd9c",
                             "entrytype": "anim"
                         }
                     ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
                     "name": "shot 7",
-                    "blend": 0.5
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_1fc2688dd837518d",
+                            "anim": "anim4#hash_56db1c082bd72897",
                             "entrytype": "anim"
                         }
                     ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
                     "name": "shot 8",
-                    "blend": 0.5
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_5087400ea98e2026",
+                            "anim": "anim4#hash_3161d52a48db0828",
                             "entrytype": "anim"
                         }
                     ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
                     "name": "shot 9",
-                    "blend": 0.5
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 }
             ],
-            "model": "#hash_6a046a4a15a7648a",
+            "hash_5829ce6b": 0,
+            "hash_69db1665": 0,
+            "skipdeathanim": 0,
+            "hash_9de1f44c": 0,
+            "lerptime": 0,
+            "model": "model#hash_6fcb2057e46026bf",
             "type": "prop",
-            "name": "prop 6"
+            "hash_a1c5c678": 0,
+            "usefakeactor": 0,
+            "name": "prop 1",
+            "hash_2baad8fc": 0,
+            "hash_69aabff2": 0,
+            "hash_16999a5d": 0,
+            "hash_29563fd6": 0,
+            "hash_eb00c330": 0,
+            "cameratweenout": 0,
+            "hash_be60a82b": 0,
+            "hash_922b4fc5": 0,
+            "hash_3e692842": 0,
+            "preserveangle": 0,
+            "cameratween": 0
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_4ae492211fb70998",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "start_drop",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_3059a3a5a93393fb",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 1",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_59e516fddedc3fff",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 2",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_500b236738329d56",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 3",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_4ae492211fb70998",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 4",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_4ae492211fb70998",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 5",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_4ae492211fb70998",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 6",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_4ae492211fb70998",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 7",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_4ae492211fb70998",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 8",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_4ae492211fb70998",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 9",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                }
+            ],
+            "hash_5829ce6b": 0,
+            "hash_69db1665": 0,
+            "skipdeathanim": 0,
+            "hash_9de1f44c": 0,
+            "lerptime": 0,
+            "model": "model#hash_d58919dd771c9cd",
+            "type": "prop",
+            "hash_a1c5c678": 0,
+            "usefakeactor": 0,
+            "name": "prop 2",
+            "hash_2baad8fc": 0,
+            "hash_69aabff2": 0,
+            "hash_16999a5d": 0,
+            "hash_29563fd6": 0,
+            "hash_eb00c330": 0,
+            "cameratweenout": 0,
+            "hash_be60a82b": 0,
+            "hash_922b4fc5": 0,
+            "hash_3e692842": 0,
+            "preserveangle": 0,
+            "cameratween": 0
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_65cf11ff386ea763",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "start_drop",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_65cf11ff386ea763",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 1",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_65cf11ff386ea763",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 2",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_4baf13860ae093f0",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 3",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_db394bb460f1682",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 4",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_7596cc851b2a1a3f",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 5",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_65cf11ff386ea763",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 6",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_65cf11ff386ea763",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 7",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_65cf11ff386ea763",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 8",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_65cf11ff386ea763",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 9",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                }
+            ],
+            "hash_5829ce6b": 0,
+            "hash_69db1665": 0,
+            "skipdeathanim": 0,
+            "hash_9de1f44c": 0,
+            "lerptime": 0,
+            "model": "model#hash_d58919dd771c9cd",
+            "type": "prop",
+            "hash_a1c5c678": 0,
+            "usefakeactor": 0,
+            "name": "prop 3",
+            "hash_2baad8fc": 0,
+            "hash_69aabff2": 0,
+            "hash_16999a5d": 0,
+            "hash_29563fd6": 0,
+            "hash_eb00c330": 0,
+            "cameratweenout": 0,
+            "hash_be60a82b": 0,
+            "hash_922b4fc5": 0,
+            "hash_3e692842": 0,
+            "preserveangle": 0,
+            "cameratween": 0
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_1265254d22673172",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "start_drop",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_1265254d22673172",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 1",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_1265254d22673172",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 2",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_1265254d22673172",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 3",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_1265254d22673172",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 4",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_9e770afedb263a9",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 5",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_1a3bc54e8d535871",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 6",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_4895cc6a54e7f068",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 7",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_1265254d22673172",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 8",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_1265254d22673172",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 9",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                }
+            ],
+            "hash_5829ce6b": 0,
+            "hash_69db1665": 0,
+            "skipdeathanim": 0,
+            "hash_9de1f44c": 0,
+            "lerptime": 0,
+            "model": "model#hash_d58919dd771c9cd",
+            "type": "prop",
+            "hash_a1c5c678": 0,
+            "usefakeactor": 0,
+            "name": "prop 4",
+            "hash_2baad8fc": 0,
+            "hash_69aabff2": 0,
+            "hash_16999a5d": 0,
+            "hash_29563fd6": 0,
+            "hash_eb00c330": 0,
+            "cameratweenout": 0,
+            "hash_be60a82b": 0,
+            "hash_922b4fc5": 0,
+            "hash_3e692842": 0,
+            "preserveangle": 0,
+            "cameratween": 0
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_66841b5329ad5f2b",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "start_drop",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_66841b5329ad5f2b",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 1",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_66841b5329ad5f2b",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 2",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_66841b5329ad5f2b",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 3",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_66841b5329ad5f2b",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 4",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_66841b5329ad5f2b",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 5",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_66841b5329ad5f2b",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 6",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_143979dd6a01458",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 7",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_1387027f630a92aa",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 8",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_54be6d00db1124e7",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 9",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                }
+            ],
+            "hash_5829ce6b": 0,
+            "hash_69db1665": 0,
+            "skipdeathanim": 0,
+            "hash_9de1f44c": 0,
+            "lerptime": 0,
+            "model": "model#hash_d58919dd771c9cd",
+            "type": "prop",
+            "hash_a1c5c678": 0,
+            "usefakeactor": 0,
+            "name": "prop 5",
+            "hash_2baad8fc": 0,
+            "hash_69aabff2": 0,
+            "hash_16999a5d": 0,
+            "hash_29563fd6": 0,
+            "hash_eb00c330": 0,
+            "cameratweenout": 0,
+            "hash_be60a82b": 0,
+            "hash_922b4fc5": 0,
+            "hash_3e692842": 0,
+            "preserveangle": 0,
+            "cameratween": 0
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_7e00dcd14a8b332e",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "start_drop",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_3a7add35f0ed6f21",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 1",
+                    "hash_3ee70278": 0,
+                    "blend": 0.5,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_75e2042c27d444c2",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 2",
+                    "hash_3ee70278": 0,
+                    "blend": 0.5,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_aee6014ea7df9de",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 3",
+                    "hash_3ee70278": 0,
+                    "blend": 0.5,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_38031bd6e99fc59b",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 4",
+                    "hash_3ee70278": 0,
+                    "blend": 0.5,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_2e86452423853b9e",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 5",
+                    "hash_3ee70278": 0,
+                    "blend": 0.5,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_7bf80ca0ce934196",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 6",
+                    "hash_3ee70278": 0,
+                    "blend": 0.5,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_2f71a65bed4ed8de",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 7",
+                    "hash_3ee70278": 0,
+                    "blend": 0.5,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_1fc2688dd837518d",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 8",
+                    "hash_3ee70278": 0,
+                    "blend": 0.5,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "anim4#hash_5087400ea98e2026",
+                            "entrytype": "anim"
+                        }
+                    ],
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "shot 9",
+                    "hash_3ee70278": 0,
+                    "blend": 0.5,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
+                }
+            ],
+            "hash_5829ce6b": 0,
+            "hash_69db1665": 0,
+            "skipdeathanim": 0,
+            "hash_9de1f44c": 0,
+            "lerptime": 0,
+            "model": "model#hash_6a046a4a15a7648a",
+            "type": "prop",
+            "hash_a1c5c678": 0,
+            "usefakeactor": 0,
+            "name": "prop 6",
+            "hash_2baad8fc": 0,
+            "hash_69aabff2": 0,
+            "hash_16999a5d": 0,
+            "hash_29563fd6": 0,
+            "hash_eb00c330": 0,
+            "cameratweenout": 0,
+            "hash_be60a82b": 0,
+            "hash_922b4fc5": 0,
+            "hash_3e692842": 0,
+            "preserveangle": 0,
+            "cameratween": 0
         }
     ],
+    "hash_e3b54868": 0,
     "scenetype": "fxanim",
+    "hash_6a17a93d": 0,
     "configstringfiletype": "scriptbundle",
+    "looping": 0,
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_mp_urban_remote_tank_armor_test_bundle",
     "dontsync": 1,
-    "team": "any"
+    "hash_241c5f3c": 0,
+    "hash_16999a5d": 0,
+    "hash_29563fd6": 0,
+    "hash_eb00c330": 0,
+    "team": "any",
+    "hash_be60a82b": 0,
+    "hash_922b4fc5": 0,
+    "hash_3e692842": 0
 }

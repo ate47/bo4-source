@@ -1,17 +1,17 @@
 {
-    "rightdownanim": "#hash_73037cce619be91d",
-    "leftdownanim": "#hash_6512803abf68c34b",
+    "rightdownanim": "anim5#hash_73037cce619be91d",
+    "leftdownanim": "anim5#hash_6512803abf68c34b",
     "configstringfiletype": "scriptbundle",
-    "leftstraightanim": "#hash_56ef56416cba139f",
-    "leftupanim": "#hash_5df179335f12710a",
+    "leftstraightanim": "anim5#hash_56ef56416cba139f",
+    "leftupanim": "anim5#hash_5df179335f12710a",
     "type": "turretanims",
-    "centerstraightanim": "#hash_1fb170c7d4767574",
+    "centerstraightanim": "anim5#hash_1fb170c7d4767574",
     "vmtype": "none",
-    "centerdownanim": "#hash_6813fc723cfb0c12",
+    "centerdownanim": "anim5#hash_6813fc723cfb0c12",
     "name": "player_turret_fav_gunner_anims",
-    "centerupanim": "#hash_48ea889c89240857",
-    "rightupanim": "#hash_6091ac3a4389e408",
+    "centerupanim": "anim5#hash_48ea889c89240857",
+    "rightupanim": "anim5#hash_6091ac3a4389e408",
     "aimpitchangleu": 31,
     "aimpitchangled": 55,
-    "rightstraightanim": "#hash_7d97d7c4eb81cdb5"
+    "rightstraightanim": "anim5#hash_7d97d7c4eb81cdb5"
 }

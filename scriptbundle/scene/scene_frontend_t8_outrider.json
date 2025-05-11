@@ -5,161 +5,517 @@
                 {
                     "entry": [
                         {
-                            "cameraswitcher": "ui_scene_cam_outrider_play",
+                            "cameraswitcher": "xcam&ui_scene_cam_outrider_play",
                             "entrytype": "cameraswitcher"
                         }
                     ],
-                    "name": "play1"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "play1",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "cameraswitcher": "ui_scene_cam_outrider_play2",
+                            "cameraswitcher": "xcam&ui_scene_cam_outrider_play2",
                             "entrytype": "cameraswitcher"
                         }
                     ],
-                    "name": "play2"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "play2",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "cameraswitcher": "ui_scene_cam_outrider_play5",
+                            "cameraswitcher": "xcam&ui_scene_cam_outrider_play5",
                             "entrytype": "cameraswitcher"
                         }
                     ],
-                    "name": "play5"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "play5",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "cameraswitcher": "ui_scene_cam_outrider_play3",
+                            "cameraswitcher": "xcam&ui_scene_cam_outrider_play3",
                             "entrytype": "cameraswitcher"
                         }
                     ],
-                    "name": "play3"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "play3",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "cameraswitcher": "ui_scene_cam_outrider_play4",
+                            "cameraswitcher": "xcam&ui_scene_cam_outrider_play4",
                             "entrytype": "cameraswitcher"
                         }
                     ],
-                    "name": "play4"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "play4",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 }
             ],
-            "model": "#tag_origin",
+            "hash_5829ce6b": 0,
+            "hash_69db1665": 0,
+            "skipdeathanim": 0,
+            "hash_9de1f44c": 0,
+            "lerptime": 0,
+            "model": "model#tag_origin",
             "type": "sharedplayer",
+            "hash_a1c5c678": 0,
+            "usefakeactor": 0,
             "name": "cam",
-            "aligntarget": "tag_align_frozen_outrider"
+            "hash_2baad8fc": 0,
+            "hash_69aabff2": 0,
+            "aligntarget": "tag_align_frozen_outrider",
+            "hash_16999a5d": 0,
+            "hash_29563fd6": 0,
+            "hash_eb00c330": 0,
+            "cameratweenout": 0,
+            "hash_be60a82b": 0,
+            "hash_922b4fc5": 0,
+            "hash_3e692842": 0,
+            "preserveangle": 0,
+            "cameratween": 0
         },
         {
             "shots": [
                 {
                     "entry": [
                         {
-                            "anim": "#hash_208e1ee2328db885",
+                            "anim": "anim5#hash_208e1ee2328db885",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "play1"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "play1",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_208e1ee2328db885",
+                            "anim": "anim5#hash_208e1ee2328db885",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "play2"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "play2",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_208e1ee2328db885",
+                            "anim": "anim5#hash_208e1ee2328db885",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "play5"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "play5",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_208e1ee2328db885",
+                            "anim": "anim5#hash_208e1ee2328db885",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "play3"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "play3",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_208e1ee2328db885",
+                            "anim": "anim5#hash_208e1ee2328db885",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "play4"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "play4",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 }
             ],
-            "model": "#hash_91762ea068fcc6b",
+            "hash_5829ce6b": 0,
+            "hash_69db1665": 0,
+            "skipdeathanim": 0,
+            "hash_9de1f44c": 0,
+            "lerptime": 0,
+            "model": "character#hash_91762ea068fcc6b",
             "type": "fakeplayer",
-            "name": "frozen_moment_character"
+            "hash_a1c5c678": 0,
+            "usefakeactor": 0,
+            "name": "frozen_moment_character",
+            "hash_2baad8fc": 0,
+            "hash_69aabff2": 0,
+            "hash_16999a5d": 0,
+            "hash_29563fd6": 0,
+            "hash_eb00c330": 0,
+            "cameratweenout": 0,
+            "hash_be60a82b": 0,
+            "hash_922b4fc5": 0,
+            "hash_3e692842": 0,
+            "preserveangle": 0,
+            "cameratween": 0
         },
         {
             "shots": [
                 {
                     "entry": [
                         {
-                            "anim": "#hash_1d93dee1c0fc5e2d",
+                            "anim": "anim4#hash_1d93dee1c0fc5e2d",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "play1"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "play1",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_1d93dee1c0fc5e2d",
+                            "anim": "anim4#hash_1d93dee1c0fc5e2d",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "play2"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "play2",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_1d93dee1c0fc5e2d",
+                            "anim": "anim4#hash_1d93dee1c0fc5e2d",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "play5"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "play5",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_1d93dee1c0fc5e2d",
+                            "anim": "anim4#hash_1d93dee1c0fc5e2d",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "play3"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "play3",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_1d93dee1c0fc5e2d",
+                            "anim": "anim4#hash_1d93dee1c0fc5e2d",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "play4"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "play4",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 }
             ],
-            "model": "#wpn_t8_sig_bow_frontend_prop",
+            "hash_5829ce6b": 0,
+            "hash_69db1665": 0,
+            "skipdeathanim": 0,
+            "hash_9de1f44c": 0,
+            "lerptime": 0,
+            "model": "model#wpn_t8_sig_bow_frontend_prop",
             "type": "prop",
+            "hash_a1c5c678": 0,
             "deletewhenfinished": 1,
-            "name": "prop 1"
+            "usefakeactor": 0,
+            "name": "prop 1",
+            "hash_2baad8fc": 0,
+            "hash_69aabff2": 0,
+            "hash_16999a5d": 0,
+            "hash_29563fd6": 0,
+            "hash_eb00c330": 0,
+            "cameratweenout": 0,
+            "hash_be60a82b": 0,
+            "hash_922b4fc5": 0,
+            "hash_3e692842": 0,
+            "preserveangle": 0,
+            "cameratween": 0
         }
     ],
+    "hash_e3b54868": 0,
     "scenetype": "scene",
+    "hash_6a17a93d": 0,
     "configstringfiletype": "scriptbundle",
     "looping": 1,
     "devstate": "placeholder",
@@ -167,6 +523,13 @@
     "vmtype": "client",
     "name": "scene_frontend_t8_outrider",
     "dontsync": 1,
+    "hash_241c5f3c": 0,
     "aligntarget": "tag_align_frozen_outrider",
-    "team": "any"
+    "hash_16999a5d": 0,
+    "hash_29563fd6": 0,
+    "hash_eb00c330": 0,
+    "team": "any",
+    "hash_be60a82b": 0,
+    "hash_922b4fc5": 0,
+    "hash_3e692842": 0
 }

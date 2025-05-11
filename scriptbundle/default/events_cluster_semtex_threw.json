@@ -1,8 +1,8 @@
 {
-    "backingsmall": "#hash_66e5ce08c5c7b0cf",
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
     "widget": "BadasseryMedal",
     "name": "events_cluster_semtex_threw",
-    "backinglarge": "#hash_66e5ce08c5c7b0cf",
-    "iconsmall": "#hash_308d7b53ad12375a",
-    "iconlarge": "#hash_308d7b53ad12375a"
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_308d7b53ad12375a",
+    "iconlarge": "image#hash_308d7b53ad12375a"
 }

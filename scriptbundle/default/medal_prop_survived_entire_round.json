@@ -1,10 +1,10 @@
 {
-    "description": "#hash_248db402c17a189e",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_248db402c17a189e",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_prop_survived_entire_round",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_711beb1d24c5e034",
-    "stringref": "#hash_756ac89b3d7374ae",
-    "iconlarge": "#hash_d23088e0784d7a0"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_711beb1d24c5e034",
+    "stringref": "localized17#hash_756ac89b3d7374ae",
+    "iconlarge": "image#hash_d23088e0784d7a0"
 }

@@ -1,10 +1,10 @@
 {
-    "description": "#hash_4d5a80044c22cb50",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_4d5a80044c22cb50",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_infected_survivor",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_contagious",
-    "stringref": "#medal/infected_survivor",
-    "iconlarge": "#ui_icon_medal_contagious_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_contagious",
+    "stringref": "localized17#medal/infected_survivor",
+    "iconlarge": "image#ui_icon_medal_contagious_large"
 }

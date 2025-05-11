@@ -1,10 +1,10 @@
 {
-    "description": "#hash_4c7b1813b263ef75",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_4c7b1813b263ef75",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_overwatch_helicopter_kill",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_overwatch",
-    "stringref": "#hash_2751696dc90020a3",
-    "iconlarge": "#ui_icon_medal_overwatch_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_overwatch",
+    "stringref": "localized17#hash_2751696dc90020a3",
+    "iconlarge": "image#ui_icon_medal_overwatch_large"
 }

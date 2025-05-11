@@ -5,6 +5,7 @@
     "reconcallout": "#hash_618eb1aa07042b4e",
     "hash_63dc7b96": "#hash_49645b1456c17fca",
     "name": "sgc_flanking_tdm",
+    "hash_24d23b21": 0,
     "crashcallout": "#hash_4826e1f10a9a80b4",
     "hash_afc5e0c1": "#hash_25ccdc2d2e306977",
     "reapercallout": "#hash_3f36f04f803e7893",
@@ -12,12 +13,13 @@
     "batterycallout": "#hash_77a8cf5ffee70f0",
     "nomadcallout": "#hash_2b3d25bf99dd68ac",
     "firebreakcallout": "#hash_7e7af9e30624d4df",
+    "hash_1c9900c6": 0,
     "outridercallout": "#hash_41e7c8f0f802bde5",
-    "title": "#hash_6101245aedfeb933",
+    "title": "localized18#hash_6101245aedfeb933",
     "zerocallout": "#hash_dbf9edffea6f095",
     "ruincallout": "#hash_1d11b635b09b5d9d",
     "gametype": "#hash_17106b9f4a1a8355",
-    "gestablecallout": "gestable_command_flanking",
+    "gestablecallout": "gesture_table&gestable_command_flanking",
     "prophetcallout": "#hash_7a9abd8c0c934678",
     "spectrecallout": "#hash_165665186231a09e"
 }

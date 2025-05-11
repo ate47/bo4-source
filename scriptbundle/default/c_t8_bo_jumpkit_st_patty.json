@@ -1,9 +1,9 @@
 {
     "lootid": "#hash_335cc14081c09745",
-    "wingsuit": "c_t8_bo_wingsuit_st_patty",
+    "wingsuit": "scriptbundle&c_t8_bo_wingsuit_st_patty",
     "image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_st_patty",
     "name": "c_t8_bo_jumpkit_st_patty",
-    "displayname": "#hash_30be9e5a3b565a2d",
-    "hash_4fa85a25": "dfxt_st_patty",
-    "parachute": "c_t8_bo_parachute_st_patty"
+    "displayname": "localized17#hash_30be9e5a3b565a2d",
+    "hash_4fa85a25": "scriptbundle&dfxt_st_patty",
+    "parachute": "scriptbundle&c_t8_bo_parachute_st_patty"
 }

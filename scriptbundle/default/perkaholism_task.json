@@ -1,8 +1,8 @@
 {
     "callingtask": "#perks_activated",
     "configstringfiletype": "scriptbundle",
-    "image": "#personalize_t7_hud_mp_weapon_hero_chemgun",
+    "image": "image#personalize_t7_hud_mp_weapon_hero_chemgun",
     "name": "perkaholism_task",
-    "taskname": "#hash_5801d6992b6896bf",
-    "descsimple": "#hash_3546c0001f9140d6"
+    "taskname": "localized17#hash_5801d6992b6896bf",
+    "descsimple": "localized17#hash_3546c0001f9140d6"
 }

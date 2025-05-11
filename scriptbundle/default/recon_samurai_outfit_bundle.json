@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_4c15e7c9a2834d7e",
-    "popupimage": "#hash_33c07d775e94a",
-    "nametext": "#hash_76229a8dc4b8e9f8",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_4c15e7c9a2834d7e",
+    "popupimage": "image#hash_33c07d775e94a",
+    "nametext": "localized17#hash_76229a8dc4b8e9f8",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "recon_samurai_outfit_bundle",
-    "desctext": "#hash_2af9d8aa11349620",
-    "previewimage": "#hash_56b190c620319683",
-    "reserveimage": "#hash_1f065a72f884e80a"
+    "desctext": "localized17#hash_2af9d8aa11349620",
+    "previewimage": "image#hash_56b190c620319683",
+    "reserveimage": "image#hash_1f065a72f884e80a"
 }

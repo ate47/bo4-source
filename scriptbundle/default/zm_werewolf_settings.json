@@ -1,20 +1,25 @@
 {
     "powerupdroplist": [
         {
-            "dropid": "#full_ammo"
+            "dropid": "#full_ammo",
+            "dropchance": 0
         },
         {
-            "dropid": "#fire_sale"
+            "dropid": "#fire_sale",
+            "dropchance": 0
         },
         {
-            "dropid": "#nuke"
+            "dropid": "#nuke",
+            "dropchance": 0
         }
     ],
     "weapondamagescaleoverrides": [
         {
             "hash_fe55d685": "#ww_crossbow_impaler_t8_zm",
+            "instakilldamagescale": 0,
             "weaponid": "#ww_crossbow_impaler_t8",
             "weakpointdamagescale": 16,
+            "hash_97b22faa": 0,
             "damagescale": 8
         }
     ],

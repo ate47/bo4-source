@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_62d651be226fe641",
+    "hinttext": "localized17#hash_62d651be226fe641",
     "configstringfiletype": "scriptbundle",
     "value8": "7",
     "value9": "8",
@@ -31,10 +31,14 @@
     "value19": "50",
     "value18": "45",
     "type": "gamesettings",
-    "label": "#menu/x_lives",
+    "label": "localized17#menu/x_lives",
+    "hash_5a6dee5a": 0,
     "name": "bonus_lives_for_capturing_zone",
-    "displayname": "#hash_24641316dd8113cf",
-    "label2": "#menu/1_life",
+    "displayname": "localized17#hash_24641316dd8113cf",
+    "label2": "localized17#menu/1_life",
+    "hash_54e336e4": 0,
     "optionscount": 29,
-    "setting": "bonusLivesForCapturingZone"
+    "hash_765cfd09": 0,
+    "setting": "bonusLivesForCapturingZone",
+    "isenableddisabled": 0
 }

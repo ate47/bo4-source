@@ -2,67 +2,70 @@
     "itemlist": [
         {
             "minweight": 200,
-            "itementry": "ar_accurate_t8_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&ar_accurate_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 200,
-            "itementry": "ar_fastfire_t8_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&ar_fastfire_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 200,
-            "itementry": "ar_damage_t8_item",
-            "childitementry_1": "ammo_type_762_item",
+            "itementry": "scriptbundle&ar_damage_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 200,
-            "itementry": "ar_stealth_t8_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&ar_stealth_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 150,
-            "itementry": "ar_modular_t8_item",
-            "childitementry_1": "ammo_type_762_item",
+            "itementry": "scriptbundle&ar_modular_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
             "maxweight": 150,
             "available": -1
         },
         {
             "minweight": 150,
-            "itementry": "ar_standard_t8_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&ar_standard_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 150,
             "available": -1
         },
         {
             "minweight": 150,
-            "itementry": "ar_galil_t8_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&ar_galil_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 150,
             "available": -1
         },
         {
             "minweight": 150,
-            "itementry": "ar_standard_t8_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&ar_standard_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 150,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 200,
     "type": "itemspawnlist",
     "hash_345eba59": 8,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
     "hash_dc7ffbef": 1,
     "name": "guns_ars_dlc1",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

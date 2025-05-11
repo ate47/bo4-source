@@ -2,12 +2,13 @@
     "itemlist": [
         {
             "minweight": 80,
-            "itementry": "health_item_small",
+            "itementry": "scriptbundle&health_item_small",
             "maxweight": 80,
             "available": -1
         },
         {
-            "itementry": "perk_item_outlander",
+            "minweight": 0,
+            "itementry": "scriptbundle&perk_item_outlander",
             "maxweight": 10,
             "available": -1
         },
@@ -17,10 +18,14 @@
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 3,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "health_stash_slot3",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

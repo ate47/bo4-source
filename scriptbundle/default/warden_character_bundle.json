@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_6a54a630c0f1df2f",
-    "popupimage": "#hash_6eca9d581b5e1891",
-    "nametext": "#hash_6965fbc06cefbb07",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_6a54a630c0f1df2f",
+    "popupimage": "image#hash_6eca9d581b5e1891",
+    "nametext": "localized17#hash_6965fbc06cefbb07",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "warden_character_bundle",
-    "desctext": "#hash_2d53acada1213099",
-    "previewimage": "#hash_62641d4a1de46e1c",
-    "reserveimage": "#hash_ab234872557f547"
+    "desctext": "localized17#hash_2d53acada1213099",
+    "previewimage": "image#hash_62641d4a1de46e1c",
+    "reserveimage": "image#hash_ab234872557f547"
 }

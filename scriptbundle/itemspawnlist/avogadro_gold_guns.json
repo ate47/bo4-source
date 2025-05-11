@@ -2,90 +2,97 @@
     "itemlist": [
         {
             "minweight": 1,
-            "itementry": "sniper_fastrechamber_t8_gold_item",
-            "childitementry_1": "ammo_type_338_item",
+            "itementry": "scriptbundle&sniper_fastrechamber_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_338_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "sniper_quickscope_t8_gold_item",
-            "childitementry_1": "ammo_type_338_item",
+            "itementry": "scriptbundle&sniper_quickscope_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_338_item",
             "maxweight": 1,
             "available": 3
         },
         {
             "minweight": 1,
-            "itementry": "sniper_powerbolt_t8_gold_item",
-            "childitementry_1": "ammo_type_50cal_item",
+            "itementry": "scriptbundle&sniper_powerbolt_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_50cal_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "sniper_powersemi_t8_gold_item",
-            "childitementry_1": "ammo_type_338_item",
+            "itementry": "scriptbundle&sniper_powersemi_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_338_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "ar_modular_t8_gold_item",
-            "childitementry_1": "ammo_type_762_item",
+            "itementry": "scriptbundle&ar_modular_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "ar_stealth_t8_gold_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&ar_stealth_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "ar_fastfire_t8_gold_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&ar_fastfire_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "ar_accurate_t8_gold_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&ar_accurate_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "ar_damage_t8_gold_item",
-            "childitementry_1": "ammo_type_762_item",
+            "itementry": "scriptbundle&ar_damage_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "tr_longburst_t8_gold_item",
-            "childitementry_1": "ammo_type_556_item",
-            "maxweight": 1
+            "itementry": "scriptbundle&tr_longburst_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 1,
+            "available": 0
         },
         {
             "minweight": 1,
-            "itementry": "tr_midburst_t8_gold_item",
-            "childitementry_1": "ammo_type_556_item",
-            "maxweight": 1
+            "itementry": "scriptbundle&tr_midburst_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 1,
+            "available": 0
         },
         {
             "minweight": 1,
-            "itementry": "tr_powersemi_t8_gold_item",
-            "childitementry_1": "ammo_type_762_item",
-            "maxweight": 1
+            "itementry": "scriptbundle&tr_powersemi_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
+            "maxweight": 1,
+            "available": 0
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 12,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "avogadro_gold_guns",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

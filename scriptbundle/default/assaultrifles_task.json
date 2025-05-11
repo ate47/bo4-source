@@ -1,9 +1,9 @@
 {
     "callingtask": "#kills_ar",
     "configstringfiletype": "scriptbundle",
-    "image": "#ui_icon_zm_callings_assaultrifle",
+    "image": "image#ui_icon_zm_callings_assaultrifle",
     "dailytarget": 750,
     "name": "assaultrifles_task",
-    "taskname": "#hash_16ea5e9adde003c8",
-    "descsimple": "#hash_3c8307d3eba2468b"
+    "taskname": "localized17#hash_16ea5e9adde003c8",
+    "descsimple": "localized17#hash_3c8307d3eba2468b"
 }

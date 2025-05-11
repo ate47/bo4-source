@@ -1,10 +1,10 @@
 {
     "lootid": "#hash_29a9bd2389b3c356",
-    "hash_904b37bc": "#hash_33427ef35e3515b5",
+    "hash_904b37bc": "impact_fx_table#hash_33427ef35e3515b5",
     "image": "loot04_ui_icon_blackmarket_reserves_death_fx_numbers",
     "name": "weapondeathfx_raven",
-    "displayname": "#hash_ebd88797aaa2574",
+    "displayname": "localized17#hash_ebd88797aaa2574",
     "icon": "loot04_ui_icon_cac_death_fx_numbers",
-    "hash_eeb78b92": "#hash_696b011f5349704d",
-    "previewimage": "#loot04_ui_icon_blackmarket_reserves_death_fx_numbers"
+    "hash_eeb78b92": "impact_fx_table#hash_696b011f5349704d",
+    "previewimage": "image#loot04_ui_icon_blackmarket_reserves_death_fx_numbers"
 }

@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_14eb6148b6ad06eb",
+    "hinttext": "localized17#hash_14eb6148b6ad06eb",
     "configstringfiletype": "scriptbundle",
     "value8": "7",
     "value9": "8",
@@ -20,11 +20,15 @@
     "value16": "30",
     "value18": "60",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "round_start_killstreak_delay",
-    "displayname": "#menu/killstreak_delay",
-    "label1": "#menu/disabled",
-    "label2": "#menu/1_second",
+    "displayname": "localized17#menu/killstreak_delay",
+    "label1": "localized17#menu/disabled",
+    "label2": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
     "optionscount": 18,
-    "setting": "roundStartKillstreakDelay"
+    "hash_765cfd09": 0,
+    "setting": "roundStartKillstreakDelay",
+    "isenableddisabled": 0
 }

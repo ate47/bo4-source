@@ -1,10 +1,10 @@
 {
-    "description": "#hash_123d7ef9a41bdc3d",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_123d7ef9a41bdc3d",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_swat_team_killjoy",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_1885a2e2348db249",
-    "stringref": "#hash_58cc33958e8b2eeb",
-    "iconlarge": "#hash_2f822aa05429936d"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_1885a2e2348db249",
+    "stringref": "localized17#hash_58cc33958e8b2eeb",
+    "iconlarge": "image#hash_2f822aa05429936d"
 }

@@ -1,13 +1,17 @@
 {
-    "descriptionimage": "#ui_icon_scorestreaks_care_package",
+    "descriptionimage": "image#ui_icon_scorestreaks_care_package",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "scorestreak_supplydrop_restriction",
-    "displayname": "#weapon/supply_drop",
-    "label1": "#menu/enabled",
-    "label2": "#menu/disabled",
+    "displayname": "localized17#weapon/supply_drop",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "itemRestrictions__supplydrop_marker__restricted"
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__supplydrop_marker__restricted",
+    "isenableddisabled": 0
 }

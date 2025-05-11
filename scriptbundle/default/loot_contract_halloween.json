@@ -1,7 +1,7 @@
 {
-    "contracticon": "#hash_b521f544d700aba",
-    "contracttitle": "#hash_4ca7e4fd0a242b70",
+    "contracticon": "image#hash_b521f544d700aba",
+    "contracttitle": "localized17#hash_4ca7e4fd0a242b70",
     "name": "loot_contract_halloween",
-    "contractdescription": "#hash_26398479d44ca227",
+    "contractdescription": "localized17#hash_26398479d44ca227",
     "hash_f15e270f": "#white"
 }

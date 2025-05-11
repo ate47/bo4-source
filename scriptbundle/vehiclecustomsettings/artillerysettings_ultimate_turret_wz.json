@@ -1,28 +1,31 @@
 {
     "lightgroups_1_slots": [
         {
-            "fx": "#hash_7aba2f333cd1bff9",
+            "fx": "fx#hash_7aba2f333cd1bff9",
             "tag": "tag_laser"
         },
         {
-            "fx": "#hash_7aba2f333cd1bff9",
+            "fx": "fx#hash_7aba2f333cd1bff9",
             "tag": "tag_laser"
         }
     ],
     "lightgroups_2_slots": [
         {
-            "fx": "#hash_678ac7747906c1ae",
+            "fx": "fx#hash_678ac7747906c1ae",
             "tag": "tag_camera_cable"
         }
     ],
     "hash_77c7a074": 400,
     "hash_efc15586": 10,
     "hash_e1d36c37": 300,
+    "hash_6754976b": 0,
     "turret_fire_burst_max": 5,
     "hash_2c69a255": 5,
     "hash_93360fe": 10,
+    "hash_22b9bee1": 0,
     "forwardjukeengagementheightmax": 300,
     "damagestate_lv1_ratio": 0.75,
+    "hash_95ebe8e0": 0,
     "hash_2ade16ee": 450,
     "hash_c15b13ab": 500,
     "hash_9cdbf8c1": 1000,
@@ -37,7 +40,7 @@
     "hash_c5e4c9ab": 200,
     "defaultmovespeed": 5,
     "type": "vehiclecustomsettings",
-    "hash_3bd38bbc": "#hash_1c6ca6244dff4edf",
+    "hash_3bd38bbc": "fx#hash_1c6ca6244dff4edf",
     "max_move_dist": 100,
     "laseron": 1,
     "empdowntime": 5,
@@ -59,6 +62,7 @@
     "near_goal_notify_dist": 80,
     "engagementheightmax": 300,
     "hash_23061240": 40,
+    "hash_74701269": 0,
     "name": "artillerysettings_ultimate_turret_wz",
     "hash_e7260470": 65,
     "rocketcooldown": 5,

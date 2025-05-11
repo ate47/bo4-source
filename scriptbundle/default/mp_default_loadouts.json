@@ -34,7 +34,7 @@
                     "bonuscard": "#bonuscard_primary_gunfighter"
                 }
             ],
-            "customclassname": "#hash_73bf78bd8d8db95d",
+            "customclassname": "localized17#hash_73bf78bd8d8db95d",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#smg_capacity_t8",
@@ -73,7 +73,7 @@
                     "bonuscard": "#bonuscard_perk_1_greed"
                 }
             ],
-            "customclassname": "#hash_6338674bdead3158",
+            "customclassname": "localized17#hash_6338674bdead3158",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#ar_modular_t8",
@@ -113,7 +113,7 @@
                     "attachment": "fmj2"
                 }
             ],
-            "customclassname": "#hash_76fba834032b8fb7",
+            "customclassname": "localized17#hash_76fba834032b8fb7",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#lmg_standard_t8",
@@ -153,7 +153,7 @@
                     "bonuscard": "#bonuscard_primary_operator_mod"
                 }
             ],
-            "customclassname": "#hash_13262c0a18d54ad0",
+            "customclassname": "localized17#hash_13262c0a18d54ad0",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#tr_longburst_t8",
@@ -198,7 +198,7 @@
                     "bonuscard": "#bonuscard_overkill"
                 }
             ],
-            "customclassname": "#hash_554a0a19e3773c1a",
+            "customclassname": "localized17#hash_554a0a19e3773c1a",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#sniper_quickscope_t8",
@@ -246,7 +246,7 @@
                     "bonuscard": "#bonuscard_underkill"
                 }
             ],
-            "customclassname": "#hash_639f992affc7299e",
+            "customclassname": "localized17#hash_639f992affc7299e",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 3,
             "primary": "#pistol_revolver_t8",
@@ -270,7 +270,7 @@
                     "talent": "#talent_ghost"
                 }
             ],
-            "customclassname": "#class/slot1",
+            "customclassname": "localized17#class/slot1",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#smg_standard_t8",
@@ -290,7 +290,7 @@
                     "talent": "#talent_teamlink"
                 }
             ],
-            "customclassname": "#class/slot2",
+            "customclassname": "localized17#class/slot2",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#ar_accurate_t8",
@@ -310,7 +310,7 @@
                     "talent": "#talent_teamlink"
                 }
             ],
-            "customclassname": "#class/slot3",
+            "customclassname": "localized17#class/slot3",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#lmg_standard_t8",
@@ -330,7 +330,7 @@
                     "talent": "#talent_ghost"
                 }
             ],
-            "customclassname": "#class/slot4",
+            "customclassname": "localized17#class/slot4",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#tr_powersemi_t8",
@@ -350,7 +350,7 @@
                     "talent": "#talent_ghost"
                 }
             ],
-            "customclassname": "#class/slot5",
+            "customclassname": "localized17#class/slot5",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#sniper_powerbolt_t8",
@@ -370,7 +370,7 @@
                     "talent": "#talent_teamlink"
                 }
             ],
-            "customclassname": "#class/slot6",
+            "customclassname": "localized17#class/slot6",
             "primary": "#ar_accurate_t8",
             "secondary": "#shotgun_pump_t8",
             "hash_38f854e5": 3,

@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#t7_hud_medal_backing_gamemode",
+    "backingsmall": "image#t7_hud_medal_backing_gamemode",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_neutral_b_secured",
-    "backinglarge": "#t7_hud_medal_backing_gamemode_lrg",
-    "iconsmall": "#t7_hud_medal_neutral_b_secured",
-    "stringref": "#hash_3b1a804dd8abc869",
-    "iconlarge": "#t7_hud_medal_neutral_b_secured_lrg"
+    "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
+    "iconsmall": "image#t7_hud_medal_neutral_b_secured",
+    "stringref": "localized17#hash_3b1a804dd8abc869",
+    "iconlarge": "image#t7_hud_medal_neutral_b_secured_lrg"
 }

@@ -1,9 +1,9 @@
 {
-    "popupimage": "#hash_379167a282a093c5",
-    "nametext": "#hash_1717ff140f30014c",
-    "categorytext": "#mpui/bm_bribe",
+    "popupimage": "image#hash_379167a282a093c5",
+    "nametext": "localized17#hash_1717ff140f30014c",
+    "categorytext": "localized17#mpui/bm_bribe",
     "name": "no_dupe_crate",
-    "stackimage": "#hash_7aea57ba30cd6491",
-    "desctext": "#hash_25039894ff5be6b4",
-    "previewimage": "#hash_7aea57ba30cd6491"
+    "stackimage": "image#hash_7aea57ba30cd6491",
+    "desctext": "localized17#hash_25039894ff5be6b4",
+    "previewimage": "image#hash_7aea57ba30cd6491"
 }

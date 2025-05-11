@@ -1,10 +1,10 @@
 {
-    "description": "#hash_664081b09fd5b1d",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_664081b09fd5b1d",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_hawk_tag_multikill_x2",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_mp_hawk_multikill",
-    "stringref": "#hash_26bac3a97643b80b",
-    "iconlarge": "#ui_icon_mp_hawk_multikill_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_mp_hawk_multikill",
+    "stringref": "localized17#hash_26bac3a97643b80b",
+    "iconlarge": "image#ui_icon_mp_hawk_multikill_large"
 }

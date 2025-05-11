@@ -2,55 +2,55 @@
     "itemlist": [
         {
             "minweight": 50,
-            "itementry": "suppressor_wz_item",
+            "itementry": "scriptbundle&suppressor_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "sniperscope_wz_item",
+            "itementry": "scriptbundle&sniperscope_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "reddot_wz_item",
+            "itementry": "scriptbundle&reddot_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "stock_wz_item",
+            "itementry": "scriptbundle&stock_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "extbarrel_wz_item",
+            "itementry": "scriptbundle&extbarrel_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "advmag_wz_item",
+            "itementry": "scriptbundle&advmag_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "acog_wz_item",
+            "itementry": "scriptbundle&acog_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "fastmag_wz_item",
+            "itementry": "scriptbundle&fastmag_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "reflex_wz_item",
+            "itementry": "scriptbundle&reflex_wz_item",
             "maxweight": 50,
             "available": 1
         },
@@ -60,12 +60,16 @@
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 12000,
     "type": "itemspawnlist",
     "hash_345eba59": 10,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "supply_stash_slot5_heavymetal",
     "supplystashweight": 100,
+    "hash_dc91e192": 0,
     "supplystash": 1
 }

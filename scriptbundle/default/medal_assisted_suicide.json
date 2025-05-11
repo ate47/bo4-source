@@ -1,10 +1,10 @@
 {
-    "description": "#hash_2bd019fc52cfea80",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_2bd019fc52cfea80",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_assisted_suicide",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_assisted_suicide",
-    "stringref": "#medal/assisted_suicide",
-    "iconlarge": "#ui_icon_medal_assisted_suicide_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_assisted_suicide",
+    "stringref": "localized17#medal/assisted_suicide",
+    "iconlarge": "image#ui_icon_medal_assisted_suicide_large"
 }

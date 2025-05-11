@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_14f28c79e92221d7",
-    "popupimage": "#hash_7bb903d74d7bd079",
-    "nametext": "#menu/bundle_nikolai",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_14f28c79e92221d7",
+    "popupimage": "image#hash_7bb903d74d7bd079",
+    "nametext": "localized17#menu/bundle_nikolai",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "nikolai_bundle",
-    "desctext": "#hash_33bf922743377e89",
-    "previewimage": "#hash_61f0670517f627e4",
-    "reserveimage": "#hash_235526a2100e0ef"
+    "desctext": "localized17#hash_33bf922743377e89",
+    "previewimage": "image#hash_61f0670517f627e4",
+    "reserveimage": "image#hash_235526a2100e0ef"
 }

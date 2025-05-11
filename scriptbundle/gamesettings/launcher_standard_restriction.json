@@ -1,13 +1,17 @@
 {
-    "descriptionimage": "#ui_icon_weapon_launcher_standard_render_xl",
+    "descriptionimage": "image#ui_icon_weapon_launcher_standard_render_xl",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "launcher_standard_restriction",
-    "displayname": "#weapon/launcher_standard_t8",
-    "label1": "#menu/enabled",
-    "label2": "#menu/disabled",
+    "displayname": "localized17#weapon/launcher_standard_t8",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "itemRestrictions__launcher_standard_t8__restricted"
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__launcher_standard_t8__restricted",
+    "isenableddisabled": 0
 }

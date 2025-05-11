@@ -5,194 +5,522 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_2f6068458aadda28",
+                            "anim": "anim4#hash_2f6068458aadda28",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "init"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "init",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_7baade5a5da5d98a",
+                            "anim": "anim4#hash_7baade5a5da5d98a",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "start_goop"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "start_goop",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_1f4b9fdc57f5abad",
+                            "anim": "anim4#hash_1f4b9fdc57f5abad",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "gauge_00"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "gauge_00",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_12e485fd64de991c",
+                            "anim": "anim4#hash_12e485fd64de991c",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "#hash_1f4b9edc57f5a9fa",
+                            "anim": "anim4#hash_1f4b9edc57f5a9fa",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "gauge_01"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "gauge_01",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_12e488fd64de9e35",
+                            "anim": "anim4#hash_12e488fd64de9e35",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "#hash_1f4b9ddc57f5a847",
+                            "anim": "anim4#hash_1f4b9ddc57f5a847",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "gauge_02"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "gauge_02",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_12e487fd64de9c82",
+                            "anim": "anim4#hash_12e487fd64de9c82",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "#hash_1f4b9cdc57f5a694",
+                            "anim": "anim4#hash_1f4b9cdc57f5a694",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "gauge_03"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "gauge_03",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_12e482fd64de9403",
+                            "anim": "anim4#hash_12e482fd64de9403",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "#hash_1f4b9bdc57f5a4e1",
+                            "anim": "anim4#hash_1f4b9bdc57f5a4e1",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "gauge_04"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "gauge_04",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_12e481fd64de9250",
+                            "anim": "anim4#hash_12e481fd64de9250",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "#hash_1f4b9adc57f5a32e",
+                            "anim": "anim4#hash_1f4b9adc57f5a32e",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "gauge_05"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "gauge_05",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_12e484fd64de9769",
+                            "anim": "anim4#hash_12e484fd64de9769",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "#hash_1f4b99dc57f5a17b",
+                            "anim": "anim4#hash_1f4b99dc57f5a17b",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "gauge_06"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "gauge_06",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_12e483fd64de95b6",
+                            "anim": "anim4#hash_12e483fd64de95b6",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "#hash_1f4b98dc57f59fc8",
+                            "anim": "anim4#hash_1f4b98dc57f59fc8",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "gauge_07"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "gauge_07",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_12e48efd64dea867",
+                            "anim": "anim4#hash_12e48efd64dea867",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "#hash_1f4b97dc57f59e15",
+                            "anim": "anim4#hash_1f4b97dc57f59e15",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "gauge_08"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "gauge_08",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_12e48dfd64dea6b4",
+                            "anim": "anim4#hash_12e48dfd64dea6b4",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "#hash_1f4b96dc57f59c62",
+                            "anim": "anim4#hash_1f4b96dc57f59c62",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "gauge_09"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "gauge_09",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_12e100fd64db8146",
+                            "anim": "anim4#hash_12e100fd64db8146",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "#hash_1f4819dc57f29224",
+                            "anim": "anim4#hash_1f4819dc57f29224",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "gauge_10"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "gauge_10",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_3834620a3194b6fa",
+                            "anim": "anim4#hash_3834620a3194b6fa",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "#hash_1f4b9fdc57f5abad",
+                            "anim": "anim4#hash_1f4b9fdc57f5abad",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "regoop"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "regoop",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 },
                 {
                     "entry": [
                         {
-                            "anim": "#hash_5aa93b9e6344725f",
+                            "anim": "anim4#hash_5aa93b9e6344725f",
                             "entrytype": "anim"
                         }
                     ],
-                    "name": "stopped"
+                    "hash_ab59a015": 0,
+                    "damagethreshold": 0,
+                    "hash_67f013e3": 0,
+                    "hidestowedweapon": 0,
+                    "hash_441cbab8": 0,
+                    "spacermin": 0,
+                    "spacermax": 0,
+                    "hash_751fe16b": 0,
+                    "name": "stopped",
+                    "hash_3ee70278": 0,
+                    "blend": 0,
+                    "hash_1a95895f": 0,
+                    "hash_16999a5d": 0,
+                    "hash_29563fd6": 0,
+                    "hash_eb00c330": 0,
+                    "cameratweenout": 0,
+                    "diewhenfinished": 0,
+                    "hash_be60a82b": 0,
+                    "hash_922b4fc5": 0,
+                    "hash_3e692842": 0,
+                    "cameratween": 0
                 }
             ],
-            "model": "#hash_34e42dfa52b23249",
+            "hash_5829ce6b": 0,
+            "hash_69db1665": 0,
+            "skipdeathanim": 0,
+            "hash_9de1f44c": 0,
+            "lerptime": 0,
+            "model": "model#hash_34e42dfa52b23249",
             "type": "prop",
+            "hash_a1c5c678": 0,
+            "usefakeactor": 0,
             "name": "gas_vent_machine",
-            "hash_873368a8": 100
+            "hash_873368a8": 100,
+            "hash_2baad8fc": 0,
+            "hash_69aabff2": 0,
+            "hash_16999a5d": 0,
+            "hash_29563fd6": 0,
+            "hash_eb00c330": 0,
+            "cameratweenout": 0,
+            "hash_be60a82b": 0,
+            "hash_922b4fc5": 0,
+            "hash_3e692842": 0,
+            "preserveangle": 0,
+            "cameratween": 0
         }
     ],
+    "hash_e3b54868": 0,
     "scenetype": "fxanim",
+    "hash_6a17a93d": 0,
     "configstringfiletype": "scriptbundle",
+    "looping": 0,
     "devstate": "placeholder",
     "type": "scene",
     "name": "t8_zm_white_gas_vent_machine_bundle",
     "dontsync": 1,
-    "team": "any"
+    "hash_241c5f3c": 0,
+    "hash_16999a5d": 0,
+    "hash_29563fd6": 0,
+    "hash_eb00c330": 0,
+    "team": "any",
+    "hash_be60a82b": 0,
+    "hash_922b4fc5": 0,
+    "hash_3e692842": 0
 }

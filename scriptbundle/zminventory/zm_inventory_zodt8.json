@@ -6,49 +6,52 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_28dfe18aa5794bf3"
+                            "stageimage": "image#hash_28dfe18aa5794bf3"
                         }
                     ],
                     "hash_1d91eeba": 1,
+                    "hash_7db3435c": 0,
                     "clientfield": "#zm_zodt8_dist_kit_1"
                 },
                 {
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_7d9c76d563c5825"
+                            "stageimage": "image#hash_7d9c76d563c5825"
                         }
                     ],
                     "hash_1d91eeba": 1,
+                    "hash_7db3435c": 0,
                     "clientfield": "#zm_zodt8_dist_kit_2"
                 },
                 {
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_7bdfc18a438de769"
+                            "stageimage": "image#hash_7bdfc18a438de769"
                         }
                     ],
                     "hash_1d91eeba": 1,
+                    "hash_7db3435c": 0,
                     "clientfield": "#zm_zodt8_dist_kit_3"
                 },
                 {
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_5237e40d023e1d0"
+                            "stageimage": "image#hash_5237e40d023e1d0"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_2d90ebad95da6d25"
+                            "stageimage": "image#hash_2d90ebad95da6d25"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_4b95dd123c1ea0d"
+                            "stageimage": "image#hash_4b95dd123c1ea0d"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_210dbe01aa690110"
+                            "stageimage": "image#hash_210dbe01aa690110"
                         }
                     ],
                     "hash_1d91eeba": 4,
@@ -61,68 +64,74 @@
     ],
     "shieldpieces": [
         {
-            "pieceimage": "#hash_bf20e4b3a86d1b5",
+            "hash_7db3435c": 0,
+            "pieceimage": "image#hash_bf20e4b3a86d1b5",
             "clientfield": "#shield_2"
         },
         {
-            "pieceimage": "#hash_bf20d4b3a86d002",
+            "hash_7db3435c": 0,
+            "pieceimage": "image#hash_bf20d4b3a86d002",
             "clientfield": "#shield_3"
         },
         {
-            "pieceimage": "#hash_bf20c4b3a86ce4f",
+            "hash_7db3435c": 0,
+            "pieceimage": "image#hash_bf20c4b3a86ce4f",
             "clientfield": "#shield_1"
         }
     ],
     "objprogitems": [
         {
-            "description": "#hash_4ba6bddb362745d9"
+            "description": "localized17#hash_4ba6bddb362745d9"
         },
         {
-            "description": "#hash_4574396eada01122"
+            "description": "localized17#hash_4574396eada01122"
         },
         {
-            "description": "#hash_4574386eada00f6f"
+            "description": "localized17#hash_4574386eada00f6f"
         },
         {
-            "description": "#hash_4574376eada00dbc"
+            "description": "localized17#hash_4574376eada00dbc"
         },
         {
-            "description": "#hash_4574366eada00c09"
+            "description": "localized17#hash_4574366eada00c09"
         },
         {
-            "description": "#hash_4574356eada00a56"
+            "description": "localized17#hash_4574356eada00a56"
         },
         {
-            "description": "#hash_4574346eada008a3"
+            "description": "localized17#hash_4574346eada008a3"
         },
         {
-            "description": "#hash_4574336eada006f0"
+            "description": "localized17#hash_4574336eada006f0"
         },
         {
-            "description": "#hash_4574426eada0206d"
+            "description": "localized17#hash_4574426eada0206d"
         },
         {
-            "description": "#hash_4574416eada01eba"
+            "description": "localized17#hash_4574416eada01eba"
         }
     ],
     "sentinelstages": [
         {
-            "stageimage": "#hash_285e9a8a4926a4c1"
+            "stageimage": "image#hash_285e9a8a4926a4c1"
         },
         {
-            "stageimage": "#hash_13839a0b3777440"
+            "stageimage": "image#hash_13839a0b3777440"
         }
     ],
-    "objectivebackground": "#hash_285e9a8a4926a4c1",
+    "objectivebackground": "image#hash_285e9a8a4926a4c1",
     "configstringfiletype": "scriptbundle",
     "hash_aa76b7dd": 10,
+    "hash_3e38620e": 0,
     "type": "zminventory",
     "hash_af62a8e8": 3,
     "name": "zm_inventory_zodt8",
-    "hash_f128673a": "#hash_2028b2c0395c86bf",
+    "hash_f128673a": "image#hash_2028b2c0395c86bf",
     "hash_88c17f11": "#zm_zodt8_sentinel_artifact",
     "hash_c029b82f": 1,
     "hash_846fa8e": "#zm_zodt8_sentinel_trial",
+    "hash_f3d39d90": 0,
     "hash_250f773d": 2,
-    "hash_16fb993f": "#hash_30727aefda60cbd4"
+    "hash_38b9613": 0,
+    "hash_16fb993f": "image#hash_30727aefda60cbd4"
 }

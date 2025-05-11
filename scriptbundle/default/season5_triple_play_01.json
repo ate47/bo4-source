@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_7072e7ad2d9c9d7d",
-    "popupimage": "#hash_2cc9d0c5a5421370",
-    "nametext": "#hash_1cba159f28b3f3b8",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_7072e7ad2d9c9d7d",
+    "popupimage": "image#hash_2cc9d0c5a5421370",
+    "nametext": "localized17#hash_1cba159f28b3f3b8",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "season5_triple_play_01",
-    "desctext": "#hash_136dd34adadb91db",
-    "previewimage": "#hash_40335170dd1e3e9b",
-    "reserveimage": "#hash_1950d171e4f910f9"
+    "desctext": "localized17#hash_136dd34adadb91db",
+    "previewimage": "image#hash_40335170dd1e3e9b",
+    "reserveimage": "image#hash_1950d171e4f910f9"
 }

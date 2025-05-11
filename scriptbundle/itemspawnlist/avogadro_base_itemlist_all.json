@@ -2,87 +2,91 @@
     "itemlist": [
         {
             "minweight": 1,
-            "itementry": "avogadro_gold_guns",
+            "itementry": "scriptbundle&avogadro_gold_guns",
             "maxweight": 1,
             "available": 3
         },
         {
             "minweight": 1,
-            "itementry": "melee_bowie_t8_item",
+            "itementry": "scriptbundle&melee_bowie_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "armor_item_large",
+            "itementry": "scriptbundle&armor_item_large",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "health_item_medium",
+            "itementry": "scriptbundle&health_item_medium",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "health_item_medium",
+            "itementry": "scriptbundle&health_item_medium",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "health_item_medium",
+            "itementry": "scriptbundle&health_item_medium",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "health_item_medium",
+            "itementry": "scriptbundle&health_item_medium",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "health_item_medium",
+            "itementry": "scriptbundle&health_item_medium",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "health_item_large",
+            "itementry": "scriptbundle&health_item_large",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "health_item_large",
+            "itementry": "scriptbundle&health_item_large",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "health_item_large",
+            "itementry": "scriptbundle&health_item_large",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "zombie_supply_stash_wonder_weapons",
+            "itementry": "scriptbundle&zombie_supply_stash_wonder_weapons",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "perk_item_bloody_tracker",
+            "itementry": "scriptbundle&perk_item_bloody_tracker",
             "maxweight": 1,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 13,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "avogadro_base_itemlist_all",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

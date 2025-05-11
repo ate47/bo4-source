@@ -4,11 +4,11 @@
     "earthquakescale": 0.9,
     "effectradius": 350,
     "vmtype": "client",
-    "end_effect": "#hash_5968b25b8b4347f0",
+    "end_effect": "fx#hash_5968b25b8b4347f0",
     "name": "zm_aoe_spear_big",
-    "hash_a8609f98": "damage_light",
-    "endrumble": "damage_heavy",
+    "hash_a8609f98": "rumble&damage_light",
+    "endrumble": "rumble&damage_heavy",
     "earthquakeduration": 2,
-    "loop_effect": "#hash_153e7a9ec679962e",
-    "startrumble": "damage_heavy"
+    "loop_effect": "fx#hash_153e7a9ec679962e",
+    "startrumble": "rumble&damage_heavy"
 }

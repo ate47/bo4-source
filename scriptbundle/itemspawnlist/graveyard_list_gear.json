@@ -2,27 +2,31 @@
     "itemlist": [
         {
             "minweight": 3,
-            "itementry": "gear_list_good",
+            "itementry": "scriptbundle&gear_list_good",
             "maxweight": 7,
             "available": -1
         },
         {
             "minweight": 20,
-            "itementry": "gear_list_med",
+            "itementry": "scriptbundle&gear_list_med",
             "maxweight": 20,
             "available": -1
         },
         {
             "minweight": 55,
-            "itementry": "gear_list_low",
+            "itementry": "scriptbundle&gear_list_low",
             "maxweight": 55,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 3,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "graveyard_list_gear",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

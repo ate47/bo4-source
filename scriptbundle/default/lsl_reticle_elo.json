@@ -1,25 +1,25 @@
 {
     "entries": [
         {
-            "value": "#hash_e2901ae816688ff"
+            "value": "localized17#hash_e2901ae816688ff"
         },
         {
-            "value": "#hash_e2900ae8166874c"
+            "value": "localized17#hash_e2900ae8166874c"
         },
         {
-            "value": "#hash_e2903ae81668c65"
+            "value": "localized17#hash_e2903ae81668c65"
         },
         {
-            "value": "#hash_e2902ae81668ab2"
+            "value": "localized17#hash_e2902ae81668ab2"
         },
         {
-            "value": "#hash_e28fdae81668233"
+            "value": "localized17#hash_e28fdae81668233"
         },
         {
-            "value": "#hash_e28fcae81668080"
+            "value": "localized17#hash_e28fcae81668080"
         },
         {
-            "value": "#hash_e28ffae81668599"
+            "value": "localized17#hash_e28ffae81668599"
         }
     ],
     "name": "lsl_reticle_elo"

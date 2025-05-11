@@ -1,9 +1,11 @@
 {
-    "hinttext": "#hash_7d22e5d1f3edacec",
+    "hinttext": "localized17#hash_7d22e5d1f3edacec",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "voip_killers_hear_victim",
-    "displayname": "#hash_14a9695ab64cef1c",
+    "displayname": "localized17#hash_14a9695ab64cef1c",
+    "hash_54e336e4": 0,
     "optionscount": 2,
     "hash_765cfd09": 1,
     "setting": "voipKillersHearVictim",

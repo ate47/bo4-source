@@ -2,24 +2,28 @@
     "itemlist": [
         {
             "minweight": 100,
-            "itementry": "resource_item_paint_stack_10",
+            "itementry": "scriptbundle&resource_item_paint_stack_10",
             "maxweight": 100,
             "available": 3
         },
         {
             "minweight": 100,
-            "itementry": "melee_coinbag_t8_item",
+            "itementry": "scriptbundle&melee_coinbag_t8_item",
             "maxweight": 100,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 12000,
     "type": "itemspawnlist",
     "hash_345eba59": 2,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "spring_event_pot_of_gold_list",
-    "displayname": "#wz/blackjackstash",
+    "displayname": "localized18#wz/blackjackstash",
     "supplystashweight": 100,
+    "hash_dc91e192": 0,
     "supplystash": 1
 }

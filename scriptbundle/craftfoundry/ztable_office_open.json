@@ -2,8 +2,8 @@
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
     "blueprintcount": 2,
-    "blueprint01": "zblueprint_shield_zhield_riot",
-    "blueprint02": "zblueprint_office_teleporter_modifier",
+    "blueprint01": "scriptbundle&zblueprint_shield_zhield_riot",
+    "blueprint02": "scriptbundle&zblueprint_office_teleporter_modifier",
     "name": "ztable_office_open",
     "displayname": "Open Table"
 }

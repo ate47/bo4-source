@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_2c1636afe6397a8",
+    "hinttext": "localized17#hash_2c1636afe6397a8",
     "configstringfiletype": "scriptbundle",
     "value8": "5.5",
     "value9": "6",
@@ -19,10 +19,14 @@
     "value17": "10",
     "value16": "9.5",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "plant_time",
-    "displayname": "#menu/plant_time",
-    "label1": "#menu/1_second",
+    "displayname": "localized17#menu/plant_time",
+    "label1": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
     "optionscount": 17,
-    "setting": "plantTime"
+    "hash_765cfd09": 0,
+    "setting": "plantTime",
+    "isenableddisabled": 0
 }

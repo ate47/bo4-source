@@ -1,7 +1,7 @@
 {
-    "detailsicon": "#hash_24caa7867c84aec7",
-    "hash_6c274f86": "#hash_6f49439bc209345e",
-    "nametext": "#menu/bundle_titan",
+    "detailsicon": "image#hash_24caa7867c84aec7",
+    "hash_6c274f86": "image#hash_6f49439bc209345e",
+    "nametext": "localized17#menu/bundle_titan",
     "name": "loot_lmg_standard_sig_01_sunset_bundle_shop",
-    "desctext": "#hash_4dbd8a1edff189df"
+    "desctext": "localized17#hash_4dbd8a1edff189df"
 }

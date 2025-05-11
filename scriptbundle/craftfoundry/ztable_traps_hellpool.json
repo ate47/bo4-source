@@ -2,7 +2,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
     "blueprintcount": 1,
-    "blueprint01": "zblueprint_trap_hellpools",
+    "blueprint01": "scriptbundle&zblueprint_trap_hellpools",
     "name": "ztable_traps_hellpool",
     "displayname": "Hellpool"
 }

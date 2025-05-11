@@ -1,30 +1,30 @@
 {
     "lightgroups_1_slots": [
         {
-            "fx": "#hash_45212649bf4162b3",
+            "fx": "fx#hash_45212649bf4162b3",
             "tag": "tag_fx_light_01"
         },
         {
-            "fx": "#hash_45212649bf4162b3",
+            "fx": "fx#hash_45212649bf4162b3",
             "tag": "tag_fx_light_02"
         },
         {
-            "fx": "#hash_45212649bf4162b3",
+            "fx": "fx#hash_45212649bf4162b3",
             "tag": "tag_fx_light_03"
         },
         {
-            "fx": "#hash_45212649bf4162b3",
+            "fx": "fx#hash_45212649bf4162b3",
             "tag": "tag_fx_light_04"
         }
     ],
     "lightgroups_2_slots": [
         {
-            "fx": "#hash_76a3233f902c9512"
+            "fx": "fx#hash_76a3233f902c9512"
         }
     ],
     "lightgroups_4_slots": [
         {
-            "fx": "#hash_7646d17c17a06b98",
+            "fx": "fx#hash_7646d17c17a06b98",
             "tag": "tag_fx_light_01"
         }
     ],
@@ -35,8 +35,10 @@
     "turret_fire_burst_max": 5,
     "hash_2c69a255": 5,
     "hash_93360fe": 10,
+    "hash_22b9bee1": 0,
     "forwardjukeengagementheightmax": 300,
     "damagestate_lv1_ratio": 0.75,
+    "hash_95ebe8e0": 0,
     "hash_2ade16ee": 450,
     "hash_c15b13ab": 500,
     "hash_9cdbf8c1": 1000,
@@ -51,9 +53,9 @@
     "hash_c5e4c9ab": 200,
     "defaultmovespeed": 80,
     "type": "vehiclecustomsettings",
-    "hash_3bd38bbc": "#hash_76dab94eddb569d",
+    "hash_3bd38bbc": "fx#hash_76dab94eddb569d",
     "max_move_dist": 100,
-    "hash_b5c8e89a": "#hash_269887532d45d784",
+    "hash_b5c8e89a": "fx#hash_269887532d45d784",
     "empdowntime": 10,
     "all_knowing": 1,
     "hash_745d947e": 350,
@@ -72,13 +74,14 @@
     "damagestate_lv3_numslots": 1,
     "engagementheightmax": 300,
     "hash_23061240": 40,
+    "hash_74701269": 0,
     "name": "police_pbr_boat_bundle_settings",
     "hash_e7260470": 65,
     "rocketcooldown": 5,
     "targeting_radius": 200,
     "meleedist": 50,
     "damage_radius": 150,
-    "vehicle_turret": "#hash_6bc8b54e11120c4c",
+    "vehicle_turret": "fx#hash_6bc8b54e11120c4c",
     "jump_height": 40,
     "miniguncooldown": 5,
     "scanning_speedscale": 0.01,

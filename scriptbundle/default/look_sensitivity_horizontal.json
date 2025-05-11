@@ -1,73 +1,99 @@
 {
     "options": [
         {
-            "label": "#hash_26c50207596b46e6",
+            "label": "localized17#hash_26c50207596b46e6",
             "value": "0.4"
         },
         {
-            "label": "#hash_753e1b44a3b75161",
+            "label": "localized17#hash_753e1b44a3b75161",
             "value": "0.6"
         },
         {
-            "label": "#hash_56e52fc07ccb3464",
+            "label": "localized17#hash_56e52fc07ccb3464",
             "value": "0.8"
         },
         {
-            "label": "#hash_a6b61f01403e770",
+            "label": "localized17#hash_a6b61f01403e770",
             "value": "1.0"
         },
         {
-            "label": "#hash_56e52dc07ccb30fe",
+            "label": "localized17#hash_56e52dc07ccb30fe",
             "value": "1.2"
         },
         {
-            "label": "#hash_56e52cc07ccb2f4b",
+            "label": "localized17#hash_56e52cc07ccb2f4b",
             "value": "1.4"
         },
         {
-            "label": "#hash_56e52bc07ccb2d98",
+            "label": "localized17#hash_56e52bc07ccb2d98",
             "value": "1.6"
         },
         {
-            "label": "#hash_75959ded37137625",
+            "label": "localized17#hash_75959ded37137625",
             "value": "1.8"
         },
         {
-            "label": "#hash_56e529c07ccb2a32",
+            "label": "localized17#hash_56e529c07ccb2a32",
             "value": "2.0"
         },
         {
-            "label": "#hash_72ab84140d501dce",
+            "label": "localized17#hash_72ab84140d501dce",
             "value": "2.25"
         },
         {
-            "label": "#hash_5fd99285f8b522b8",
+            "label": "localized17#hash_5fd99285f8b522b8",
             "value": "2.5"
         },
         {
-            "label": "#hash_72ab82140d501a68",
+            "label": "localized17#hash_72ab82140d501a68",
             "value": "3.0"
         },
         {
-            "label": "#hash_72ab83140d501c1b",
+            "label": "localized17#hash_72ab83140d501c1b",
             "value": "3.5"
         },
         {
-            "label": "#hash_2a345fb6f6a947d3",
+            "label": "localized17#hash_2a345fb6f6a947d3",
             "value": "4.0"
         }
     ],
     "hash_dfedf08e": 3,
-    "description": "#hash_55a19606c6a222eb",
-    "hash_60fcfffa": "#menu/on",
+    "categoryindex": 0,
+    "description": "localized17#hash_55a19606c6a222eb",
+    "hash_60fcfffa": "localized17#menu/on",
     "hash_10e01ad5": 1,
+    "iscategory": 0,
+    "hash_71620d66": 0,
+    "hash_213a0b12": 0,
+    "hash_8722393c": 0,
+    "hash_799f4f7": 0,
+    "hash_6bb94572": 0,
     "hash_2284d52": 1,
+    "hash_389e8bd": 0,
+    "hash_5352657b": 0,
+    "hash_9358ee0a": 0,
+    "hash_558c32d5": 0,
+    "hash_77c0bdd6": 0,
+    "hash_e0274350": 0,
     "hash_86a04811": 1,
     "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "look_sensitivity_horizontal",
-    "displayname": "#hash_5709c7d645efef69",
+    "displayname": "localized17#hash_5709c7d645efef69",
+    "rangestartvalue": 0,
+    "isdisabled": 0,
+    "hash_d6897f56": 0,
+    "hash_1da8087e": 0,
+    "decimalplace": 0,
+    "hash_54a43dc2": 0,
     "hash_66faec87": 10,
     "statname": "input_viewSensitivityHorizontal",
-    "hash_b7401319": "#menu/off"
+    "hash_1f28ad4a": 0,
+    "isenableddisabled": 0,
+    "hash_6155d2c8": 0,
+    "minvalue": 0,
+    "hash_d4e288e": 0,
+    "bindindex": 0,
+    "hash_f2ad4b49": 0,
+    "hash_b7401319": "localized17#menu/off"
 }

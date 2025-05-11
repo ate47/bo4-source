@@ -1,10 +1,10 @@
 {
-    "description": "#hash_6c18fff2b6b47d12",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_6c18fff2b6b47d12",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_golden_ammo_multikill",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_2dc9df5ff1f19c0c",
-    "stringref": "#hash_6fdbaa724f43d324",
-    "iconlarge": "#ui_icon_medal_equipment_multikill_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_2dc9df5ff1f19c0c",
+    "stringref": "localized17#hash_6fdbaa724f43d324",
+    "iconlarge": "image#ui_icon_medal_equipment_multikill_large"
 }

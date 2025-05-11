@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_5c13f0fdda4f410b",
+    "hinttext": "localized17#hash_5c13f0fdda4f410b",
     "configstringfiletype": "scriptbundle",
     "value8": "3.5",
     "value9": "4",
@@ -13,12 +13,16 @@
     "value11": "5",
     "value10": "4.5",
     "type": "gamesettings",
-    "label": "#menu/x_minutes",
+    "label": "localized17#menu/x_minutes",
+    "hash_5a6dee5a": 0,
     "name": "extra_time",
-    "displayname": "#menu/extra_time",
-    "label1": "#menu/disabled",
-    "label3": "#menu/1_minute",
-    "label2": "#menu/30_seconds",
+    "displayname": "localized17#menu/extra_time",
+    "label1": "localized17#menu/disabled",
+    "label3": "localized17#menu/1_minute",
+    "label2": "localized17#menu/30_seconds",
+    "hash_54e336e4": 0,
     "optionscount": 11,
-    "setting": "extraTime"
+    "hash_765cfd09": 0,
+    "setting": "extraTime",
+    "isenableddisabled": 0
 }

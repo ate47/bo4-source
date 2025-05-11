@@ -2,19 +2,22 @@
     "itemlist": [
         {
             "minweight": 1,
-            "itementry": "vehicle_list_suv_wz",
+            "itementry": "scriptbundle&vehicle_list_suv_wz",
             "maxweight": 1,
             "available": 23
         },
         {
             "minweight": 1,
-            "maxweight": 1
+            "maxweight": 1,
+            "available": 0
         },
         {
             "minweight": 1,
-            "maxweight": 1
+            "maxweight": 1,
+            "available": 0
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 12000,
     "type": "itemspawnlist",
@@ -23,5 +26,6 @@
     "hash_9b009839": -1,
     "hash_dc7ffbef": 1,
     "name": "open_skyscraper_vehicles_suv_medium",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

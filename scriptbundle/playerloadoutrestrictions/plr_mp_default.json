@@ -3,10 +3,12 @@
     "hash_934131b6": 3,
     "configstringfiletype": "scriptbundle",
     "numprimaryweapons": 1,
+    "hash_882b6b71": 0,
     "type": "playerloadoutrestrictions",
     "hash_355c3581": 3,
     "name": "plr_mp_default",
     "hash_25a22f4": 1,
     "hash_cd3db98c": 1,
-    "hash_a2ef45f8": 1
+    "hash_a2ef45f8": 1,
+    "hash_c3fc8c73": 0
 }

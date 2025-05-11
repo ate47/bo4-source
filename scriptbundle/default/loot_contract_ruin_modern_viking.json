@@ -1,16 +1,16 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "#hash_2644cc8d6e0f3c69"
+            "hash_826726a": "localized17#hash_2644cc8d6e0f3c69"
         }
     ],
-    "contracticon": "#hash_3df484a208e77e2b",
+    "contracticon": "image#hash_3df484a208e77e2b",
     "hash_d0100eab": 1,
-    "relateditemname": "#hash_318a13787fd10f6a",
-    "contracttitle": "#hash_2644cc8d6e0f3c69",
+    "relateditemname": "localized17#hash_318a13787fd10f6a",
+    "contracttitle": "localized17#hash_2644cc8d6e0f3c69",
     "name": "loot_contract_ruin_modern_viking",
-    "contractdescription": "#hash_5f3abaf73890048b",
+    "contractdescription": "localized17#hash_5f3abaf73890048b",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_7b6abf0a2fda66db",
-    "hash_e08fc162": "#hash_7e38c55c1dbd99da"
+    "hash_1c057e8c": "image#hash_7b6abf0a2fda66db",
+    "hash_e08fc162": "localized17#hash_7e38c55c1dbd99da"
 }

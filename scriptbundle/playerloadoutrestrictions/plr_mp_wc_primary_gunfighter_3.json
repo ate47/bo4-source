@@ -1,7 +1,15 @@
 {
+    "hash_ab1984e9": 0,
+    "hash_934131b6": 0,
     "configstringfiletype": "scriptbundle",
+    "numprimaryweapons": 0,
+    "hash_882b6b71": 0,
     "type": "playerloadoutrestrictions",
     "hash_355c3581": 1,
     "name": "plr_mp_wc_primary_gunfighter_3",
-    "hash_9bb0ceab": "#bonuscard_primary_gunfighter_3"
+    "hash_9bb0ceab": "#bonuscard_primary_gunfighter_3",
+    "hash_25a22f4": 0,
+    "hash_cd3db98c": 0,
+    "hash_a2ef45f8": 0,
+    "hash_c3fc8c73": 0
 }

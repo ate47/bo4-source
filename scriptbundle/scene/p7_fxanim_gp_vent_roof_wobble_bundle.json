@@ -1,8 +1,8 @@
 {
     "objects": [
         {
-            "mainanim": "#hash_5f3b673a5bd19b71",
-            "model": "#hash_576a80d2cd959d92",
+            "mainanim": "anim4#p7_fxanim_gp_vent_roof_wobble_anim",
+            "model": "model#p7_fxanim_gp_vent_roof_mod",
             "type": "prop",
             "vmtype": "server",
             "name": "vent_roof_wobble",

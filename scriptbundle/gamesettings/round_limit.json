@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_6326c9f7d8d192db",
+    "hinttext": "localized17#hash_6326c9f7d8d192db",
     "configstringfiletype": "scriptbundle",
     "value8": "7",
     "value9": "8",
@@ -12,12 +12,15 @@
     "value5": "4",
     "value10": "9",
     "type": "gamesettings",
-    "label": "#menu/x_rounds",
+    "label": "localized17#menu/x_rounds",
     "hash_5a6dee5a": 1,
     "name": "round_limit",
-    "displayname": "#hash_c3e6eece99d208c",
-    "label1": "#menu/unlimited",
-    "label2": "#menu/1_round",
+    "displayname": "localized17#hash_c3e6eece99d208c",
+    "label1": "localized17#menu/unlimited",
+    "label2": "localized17#menu/1_round",
+    "hash_54e336e4": 0,
     "optionscount": 10,
-    "setting": "roundLimit"
+    "hash_765cfd09": 0,
+    "setting": "roundLimit",
+    "isenableddisabled": 0
 }

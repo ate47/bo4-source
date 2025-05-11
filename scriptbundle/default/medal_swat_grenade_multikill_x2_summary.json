@@ -1,10 +1,10 @@
 {
-    "description": "#hash_42a4f3bd69a2d58c",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_42a4f3bd69a2d58c",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_swat_grenade_multikill_x2_summary",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_lightsout",
-    "stringref": "#hash_38e52794596fe800",
-    "iconlarge": "#ui_icon_medal_lightsout_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_lightsout",
+    "stringref": "localized17#hash_38e52794596fe800",
+    "iconlarge": "image#ui_icon_medal_lightsout_large"
 }

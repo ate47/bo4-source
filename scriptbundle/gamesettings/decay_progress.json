@@ -1,10 +1,13 @@
 {
-    "hinttext": "#hash_4fb2bae6171ab98d",
+    "hinttext": "localized17#hash_4fb2bae6171ab98d",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "decay_progress",
-    "displayname": "#menu/decay_progress",
+    "displayname": "localized17#menu/decay_progress",
+    "hash_54e336e4": 0,
     "optionscount": 2,
+    "hash_765cfd09": 0,
     "setting": "decayProgress",
     "isenableddisabled": 1
 }

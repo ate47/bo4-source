@@ -2,7 +2,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
     "blueprintcount": 1,
-    "blueprint01": "zblueprint_shield_dual_wield",
+    "blueprint01": "scriptbundle&zblueprint_shield_dual_wield",
     "name": "ztable_shield_dual_wield",
     "displayname": "Rocketshield"
 }

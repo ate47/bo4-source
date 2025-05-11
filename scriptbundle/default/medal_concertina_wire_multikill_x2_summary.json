@@ -1,10 +1,10 @@
 {
-    "description": "#hash_239d68bcebb09934",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_239d68bcebb09934",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_concertina_wire_multikill_x2_summary",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_caught",
-    "stringref": "#hash_6b1470d79554f6a8",
-    "iconlarge": "#ui_icon_medal_caught_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_caught",
+    "stringref": "localized17#hash_6b1470d79554f6a8",
+    "iconlarge": "image#ui_icon_medal_caught_large"
 }

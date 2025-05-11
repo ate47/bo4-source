@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_85e395f91eba464",
+    "hinttext": "localized17#hash_85e395f91eba464",
     "configstringfiletype": "scriptbundle",
     "value8": "5",
     "value9": "6",
@@ -22,11 +22,15 @@
     "value19": "20",
     "value18": "15",
     "type": "gamesettings",
-    "label": "#menu/x_minutes",
+    "label": "localized17#menu/x_minutes",
+    "hash_5a6dee5a": 0,
     "name": "overtime_time_limit",
-    "displayname": "#hash_1699f1f263b30c4f",
-    "label1": "#menu/unlimited",
-    "label2": "#menu/1_minute",
+    "displayname": "localized17#hash_1699f1f263b30c4f",
+    "label1": "localized17#menu/unlimited",
+    "label2": "localized17#menu/1_minute",
+    "hash_54e336e4": 0,
     "optionscount": 20,
-    "setting": "OvertimetimeLimit"
+    "hash_765cfd09": 0,
+    "setting": "OvertimetimeLimit",
+    "isenableddisabled": 0
 }

@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_670bf9b5b78f2e09",
+    "hinttext": "localized17#hash_670bf9b5b78f2e09",
     "value8": "700",
     "value9": "800",
     "value2": "100",
@@ -19,9 +19,13 @@
     "value16": "3500",
     "value19": "5000",
     "value18": "4500",
-    "label": "#menu/x_money",
+    "label": "localized17#menu/x_money",
+    "hash_5a6dee5a": 0,
     "name": "starting_cash",
-    "displayname": "#menu/starting_cash",
+    "displayname": "localized17#menu/starting_cash",
+    "hash_54e336e4": 0,
     "optionscount": 19,
-    "setting": "bountyStartMoney"
+    "hash_765cfd09": 0,
+    "setting": "bountyStartMoney",
+    "isenableddisabled": 0
 }

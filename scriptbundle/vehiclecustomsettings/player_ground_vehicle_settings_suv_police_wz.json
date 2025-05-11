@@ -1,19 +1,19 @@
 {
     "lightgroups_1_slots": [
         {
-            "fx": "#hash_50a61619bcec4f70",
+            "fx": "fx#hash_50a61619bcec4f70",
             "tag": "tag_fx_headlight_right"
         },
         {
-            "fx": "#hash_3da864c07497c3bf",
+            "fx": "fx#hash_3da864c07497c3bf",
             "tag": "tag_fx_headlight_left"
         },
         {
-            "fx": "#hash_3da864c07497c3bf",
+            "fx": "fx#hash_3da864c07497c3bf",
             "tag": "tag_fx_headlight_left"
         },
         {
-            "fx": "#hash_50a61619bcec4f70",
+            "fx": "fx#hash_50a61619bcec4f70",
             "tag": "tag_fx_headlight_right"
         }
     ],
@@ -24,47 +24,47 @@
     ],
     "lightgroups_4_slots": [
         {
-            "fx": "#hash_68206d4e986cad4a",
+            "fx": "fx#hash_68206d4e986cad4a",
             "tag": "tag_fx_siren_light"
         },
         {
-            "fx": "#hash_1eb991456bf63972",
+            "fx": "fx#hash_1eb991456bf63972",
             "tag": "tag_fx_tail_light_left"
         },
         {
-            "fx": "#hash_2f3556d1b2f280bf",
+            "fx": "fx#hash_2f3556d1b2f280bf",
             "tag": "tag_fx_tail_light_right"
         },
         {
-            "fx": "#hash_7fb904dcd88ed77b",
+            "fx": "fx#hash_7fb904dcd88ed77b",
             "tag": "tag_fx_iff_front_left"
         },
         {
-            "fx": "#hash_1c7b9be42d7c1fc4",
+            "fx": "fx#hash_1c7b9be42d7c1fc4",
             "tag": "tag_fx_iff_front_right"
         },
         {
-            "fx": "#hash_16d7f65ef8cd6ca5",
+            "fx": "fx#hash_16d7f65ef8cd6ca5",
             "tag": "tag_fx_headlight_left"
         },
         {
-            "fx": "#hash_8282b96fa220dbe",
+            "fx": "fx#hash_8282b96fa220dbe",
             "tag": "tag_fx_headlight_right"
         },
         {
-            "fx": "#hash_68206d4e986cad4a",
+            "fx": "fx#hash_68206d4e986cad4a",
             "tag": "tag_fx_siren_light"
         },
         {
-            "fx": "#hash_499d366532c51cc7",
+            "fx": "fx#hash_499d366532c51cc7",
             "tag": "tag_fx_tail_light_middle"
         },
         {
-            "fx": "#hash_1ffe6a14b1cd4cd0",
+            "fx": "fx#hash_1ffe6a14b1cd4cd0",
             "tag": "tag_fx_reverse_light_left"
         },
         {
-            "fx": "#hash_41f35473270e08a5",
+            "fx": "fx#hash_41f35473270e08a5",
             "tag": "tag_fx_reverse_light_right"
         }
     ],
@@ -75,8 +75,10 @@
     "turret_fire_burst_max": 5,
     "hash_2c69a255": 5,
     "hash_93360fe": 10,
+    "hash_22b9bee1": 0,
     "forwardjukeengagementheightmax": 300,
     "damagestate_lv1_ratio": 0.5,
+    "hash_95ebe8e0": 0,
     "hash_2ade16ee": 450,
     "hash_c15b13ab": 500,
     "hash_9cdbf8c1": 1000,
@@ -93,9 +95,9 @@
     "hash_c5e4c9ab": 200,
     "defaultmovespeed": 5,
     "type": "vehiclecustomsettings",
-    "hash_a03cd491": "#hash_47505c727cefc38d",
-    "hash_4d8e2f31": "#hash_2b12a17c9a15ff37",
-    "hash_3bd38bbc": "#hash_6a9d1c94dcbbecbf",
+    "hash_a03cd491": "fx#hash_47505c727cefc38d",
+    "hash_4d8e2f31": "fx#hash_2b12a17c9a15ff37",
+    "hash_3bd38bbc": "fx#hash_6a9d1c94dcbbecbf",
     "max_move_dist": 100,
     "empdowntime": 10,
     "all_knowing": 1,
@@ -116,6 +118,7 @@
     "damagestate_lv3_numslots": 1,
     "engagementheightmax": 300,
     "hash_23061240": 40,
+    "hash_74701269": 0,
     "name": "player_ground_vehicle_settings_suv_police_wz",
     "hash_e7260470": 65,
     "damagestate_lv1_numslots": 1,

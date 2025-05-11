@@ -1,61 +1,87 @@
 {
     "options": [
         {
-            "label": "#hash_6e59ceea84ef61f9",
+            "label": "localized17#hash_6e59ceea84ef61f9",
             "value": "-1.0"
         },
         {
-            "label": "#hash_71f95b7fe2c0e882",
+            "label": "localized17#hash_71f95b7fe2c0e882",
             "value": "-0.8"
         },
         {
-            "label": "#hash_71f5d57fe2bdcef9",
+            "label": "localized17#hash_71f5d57fe2bdcef9",
             "value": "-0.6"
         },
         {
-            "label": "#hash_71f24f7fe2bab570",
+            "label": "localized17#hash_71f24f7fe2bab570",
             "value": "-0.4"
         },
         {
-            "label": "#hash_720a597fe2cf584f",
+            "label": "localized17#hash_720a597fe2cf584f",
             "value": "-0.2"
         },
         {
-            "label": "#hash_7206d37fe2cc3ec6",
+            "label": "localized17#hash_7206d37fe2cc3ec6",
             "value": "0.0"
         },
         {
-            "label": "#hash_72036d7fe2c95b9d",
+            "label": "localized17#hash_72036d7fe2c95b9d",
             "value": "0.2"
         },
         {
-            "label": "#hash_71ffe77fe2c64214",
+            "label": "localized17#hash_71ffe77fe2c64214",
             "value": "0.4"
         },
         {
-            "label": "#hash_7217d17fe2daae93",
+            "label": "localized17#hash_7217d17fe2daae93",
             "value": "0.6"
         },
         {
-            "label": "#hash_72146b7fe2d7cb6a",
+            "label": "localized17#hash_72146b7fe2d7cb6a",
             "value": "0.8"
         },
         {
-            "label": "#hash_6b9f2c4e4dcb6676",
+            "label": "localized17#hash_6b9f2c4e4dcb6676",
             "value": "1.0"
         }
     ],
     "hash_dfedf08e": 5,
-    "description": "#menu/brightness_desc",
-    "hash_60fcfffa": "#menu/on",
+    "categoryindex": 0,
+    "description": "localized17#menu/brightness_desc",
+    "hash_60fcfffa": "localized17#menu/on",
     "hash_10e01ad5": 1,
+    "iscategory": 0,
+    "hash_71620d66": 0,
+    "hash_213a0b12": 0,
+    "hash_8722393c": 0,
+    "hash_799f4f7": 0,
+    "hash_6bb94572": 0,
+    "hash_2284d52": 0,
+    "hash_389e8bd": 0,
+    "hash_5352657b": 0,
+    "hash_9358ee0a": 0,
+    "hash_558c32d5": 0,
+    "hash_77c0bdd6": 0,
+    "hash_e0274350": 0,
     "hash_86a04811": 1,
     "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "scene_brightness",
-    "displayname": "#menu/brightness",
+    "displayname": "localized17#menu/brightness",
+    "rangestartvalue": 0,
+    "isdisabled": 0,
+    "hash_d6897f56": 0,
+    "hash_1da8087e": 0,
+    "decimalplace": 0,
+    "hash_54a43dc2": 0,
     "hash_66faec87": 10,
     "statname": "r_sceneBrightness",
     "hash_1f28ad4a": 1,
-    "hash_b7401319": "#menu/off"
+    "isenableddisabled": 0,
+    "hash_6155d2c8": 0,
+    "minvalue": 0,
+    "hash_d4e288e": 0,
+    "bindindex": 0,
+    "hash_f2ad4b49": 0,
+    "hash_b7401319": "localized17#menu/off"
 }

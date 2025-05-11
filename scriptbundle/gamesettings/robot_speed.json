@@ -1,15 +1,19 @@
 {
-    "hinttext": "#hash_3f0154d243e0ce27",
+    "hinttext": "localized17#hash_3f0154d243e0ce27",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
     "value1": "0",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "robot_speed",
-    "displayname": "#menu/robot_speed",
-    "label1": "#menu/slow",
-    "label3": "#menu/fast",
-    "label2": "#menu/normal",
+    "displayname": "localized17#menu/robot_speed",
+    "label1": "localized17#menu/slow",
+    "label3": "localized17#menu/fast",
+    "label2": "localized17#menu/normal",
+    "hash_54e336e4": 0,
     "optionscount": 3,
-    "setting": "robotSpeed"
+    "hash_765cfd09": 0,
+    "setting": "robotSpeed",
+    "isenableddisabled": 0
 }

@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_falling",
-    "displayname": "#ui/mod_falling",
-    "icon": "#ui_icon_meansofdeath_falling",
-    "iconlarge": "#ui_icon_meansofdeath_falling_xl"
+    "displayname": "localized17#ui/mod_falling",
+    "icon": "image#ui_icon_meansofdeath_falling",
+    "iconlarge": "image#ui_icon_meansofdeath_falling_xl"
 }

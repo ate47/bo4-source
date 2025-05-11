@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#t7_hud_medal_backing_specialist_killjoy",
+    "backingsmall": "image#t7_hud_medal_backing_specialist_killjoy",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_end_enemy_shooting_annihilator",
-    "backinglarge": "#t7_hud_medal_backing_specialist_killjoy_lrg",
-    "iconsmall": "#t7_hud_medal_end_enemy_shooting_annihilator",
-    "stringref": "#hash_72bd2a46e831d177",
-    "iconlarge": "#t7_hud_medal_end_enemy_shooting_annihilator_lrg"
+    "backinglarge": "image#t7_hud_medal_backing_specialist_killjoy_lrg",
+    "iconsmall": "image#t7_hud_medal_end_enemy_shooting_annihilator",
+    "stringref": "localized17#hash_72bd2a46e831d177",
+    "iconlarge": "image#t7_hud_medal_end_enemy_shooting_annihilator_lrg"
 }

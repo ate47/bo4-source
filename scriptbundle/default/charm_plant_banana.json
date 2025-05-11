@@ -1,6 +1,6 @@
 {
-    "hash_ff3063df": "attach_t8_charm_plant_banana_view",
+    "hash_ff3063df": "model#",
     "name": "charm_plant_banana",
-    "displayname": "#menu/default",
-    "hash_ef5ad2b3": "attach_t8_charm_plant_banana_view"
+    "displayname": "localized17#menu/default",
+    "hash_ef5ad2b3": "model#"
 }

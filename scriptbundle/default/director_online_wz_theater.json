@@ -1,4 +1,5 @@
 {
+    "hasmigration": 0,
     "lobbymode": 2,
     "id": 2402,
     "backtarget": "director_online",
@@ -7,17 +8,20 @@
     "hash_d16ccae8": 1,
     "isprivate": 1,
     "showteams": 1,
+    "lobbytype": 0,
     "menumusic": "lobby_wz",
     "room": "mp_theater",
     "hash_7f60c82f": 1,
-    "kicker": "#hash_4af936327eca036",
+    "kicker": "localized17#hash_4af936327eca036",
+    "isadvertised": 0,
     "maxclients": 1,
     "name": "director_online_wz_theater",
     "networkmode": 2,
     "errtarget": "director_online_wz_theater",
     "egamemodes": 4,
     "hash_ec76767d": 8,
-    "title": "#hash_74c78b93031d0f44",
+    "title": "localized17#hash_74c78b93031d0f44",
     "hash_f68d7d0": 2,
+    "isgame": 0,
     "maxlocalclients": 1
 }

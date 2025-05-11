@@ -1,9 +1,9 @@
 {
     "lootid": "#hash_4d68aec202c036c7",
-    "wingsuit": "c_t8_bo_wingsuit_twitch_2",
+    "wingsuit": "scriptbundle&c_t8_bo_wingsuit_twitch_2",
     "name": "c_t8_bo_jumpkit_twitch_2",
-    "displayname": "#hash_2ffc839e9510484f",
-    "hash_4fa85a25": "dfxt_twitch_01",
+    "displayname": "localized17#hash_2ffc839e9510484f",
+    "hash_4fa85a25": "scriptbundle&dfxt_twitch_01",
     "entitlement": "#hash_62f6851583c61d1f",
-    "parachute": "c_t8_bo_parachute_twitch_2"
+    "parachute": "scriptbundle&c_t8_bo_parachute_twitch_2"
 }

@@ -1,8 +1,15 @@
 {
     "hash_ab1984e9": -1,
+    "hash_934131b6": 0,
     "configstringfiletype": "scriptbundle",
     "numprimaryweapons": 1,
+    "hash_882b6b71": 0,
     "type": "playerloadoutrestrictions",
+    "hash_355c3581": 0,
     "name": "plr_mp_wc_overkill",
-    "hash_9bb0ceab": "#bonuscard_overkill"
+    "hash_9bb0ceab": "#bonuscard_overkill",
+    "hash_25a22f4": 0,
+    "hash_cd3db98c": 0,
+    "hash_a2ef45f8": 0,
+    "hash_c3fc8c73": 0
 }

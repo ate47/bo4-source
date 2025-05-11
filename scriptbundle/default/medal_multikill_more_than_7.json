@@ -1,10 +1,10 @@
 {
-    "description": "#hash_10b73001c5aa1666",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_10b73001c5aa1666",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_multikill_more_than_7",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_killchain",
-    "stringref": "#hash_469c901e2c179c96",
-    "iconlarge": "#ui_icon_medal_killchain_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_killchain",
+    "stringref": "localized17#hash_469c901e2c179c96",
+    "iconlarge": "image#ui_icon_medal_killchain_large"
 }

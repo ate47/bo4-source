@@ -2,24 +2,29 @@
     "itemlist": [
         {
             "minweight": 1,
-            "itementry": "suv_police_wz_vehicle",
+            "itementry": "scriptbundle&suv_police_wz_vehicle",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "maxweight": 1
+            "maxweight": 1,
+            "available": 0
         },
         {
             "minweight": 1,
-            "maxweight": 1
+            "maxweight": 1,
+            "available": 0
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 3,
     "vehiclespawner": 1,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "open_skyscraper_vehicles_suv_clearing_police",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

@@ -1,13 +1,17 @@
 {
-    "descriptionimage": "#hash_43cc731fc2352ada",
+    "descriptionimage": "image#hash_43cc731fc2352ada",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "equipment_concertinawire_restriction",
-    "displayname": "#hash_27ca9e9ddb30522a",
-    "label1": "#menu/enabled",
-    "label2": "#menu/disabled",
+    "displayname": "localized17#hash_27ca9e9ddb30522a",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "itemRestrictions__eq_concertina_wire__restricted"
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__eq_concertina_wire__restricted",
+    "isenableddisabled": 0
 }

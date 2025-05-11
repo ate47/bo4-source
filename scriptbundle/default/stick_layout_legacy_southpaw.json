@@ -1,12 +1,12 @@
 {
-    "hash_cd1b278e": "#menu/look_down",
-    "hash_917feb54": "#xenon_stick_move_look",
+    "hash_cd1b278e": "localized17#menu/look_down",
+    "hash_917feb54": "image#xenon_stick_move_look",
     "name": "stick_layout_legacy_southpaw",
-    "hash_9cb0c5cd": "#xenon_stick_move_turn",
-    "hash_c724d0d1": 3,
-    "hash_53e7bdc7": "#hash_27793ef5304e6191",
-    "hash_92e90c8c": "#hash_6190a394a838ade9",
-    "hash_38a7d78b": "#menu/move_back",
-    "hash_40dbf9f7": "#menu/look_up",
-    "hash_abf9bb85": "#menu/move_forward"
+    "hash_9cb0c5cd": "image#xenon_stick_move_turn",
+    "hash_c724d0d1": "button:3",
+    "hash_53e7bdc7": "localized17#hash_27793ef5304e6191",
+    "hash_92e90c8c": "localized17#hash_6190a394a838ade9",
+    "hash_38a7d78b": "localized17#menu/move_back",
+    "hash_40dbf9f7": "localized17#menu/look_up",
+    "hash_abf9bb85": "localized17#menu/move_forward"
 }

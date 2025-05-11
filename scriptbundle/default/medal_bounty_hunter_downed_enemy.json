@@ -1,10 +1,10 @@
 {
-    "description": "#hash_3ae1a04fe017e734",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_3ae1a04fe017e734",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_bounty_hunter_downed_enemy",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_a5ed5970eb3881b",
-    "stringref": "#hash_4ef84acee777a6cc",
-    "iconlarge": "#hash_49eed175696e37bb"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_a5ed5970eb3881b",
+    "stringref": "localized17#hash_4ef84acee777a6cc",
+    "iconlarge": "image#hash_49eed175696e37bb"
 }

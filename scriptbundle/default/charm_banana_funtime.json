@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_banana_funtime",
-    "hash_ff3063df": "attach_t8_charm_banana_funtime_view",
+    "hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_banana_funtime",
     "name": "charm_banana_funtime",
-    "displayname": "#hash_41495f710720276d",
+    "displayname": "localized17#hash_41495f710720276d",
     "icon": "ui_icon_weapon_charms_banana_funtime",
-    "hash_ef5ad2b3": "attach_t8_charm_banana_funtime_view",
-    "previewimage": "#ui_icon_weapon_charms_banana_funtime"
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_banana_funtime"
 }

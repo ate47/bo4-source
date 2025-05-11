@@ -1,10 +1,13 @@
 {
-    "hinttext": "#hash_333f1ab0a230894e",
+    "hinttext": "localized17#hash_333f1ab0a230894e",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "escalation_enabled",
-    "displayname": "#hash_5456c7b94cf88f3a",
+    "displayname": "localized17#hash_5456c7b94cf88f3a",
+    "hash_54e336e4": 0,
     "optionscount": 2,
+    "hash_765cfd09": 0,
     "setting": "escalationEnabled",
     "isenableddisabled": 1
 }

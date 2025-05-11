@@ -2,6 +2,7 @@
     "objects": [
         {
             "vmtype": "server",
+            "mainblend": 0,
             "team": "any"
         },
         {
@@ -128,7 +129,7 @@
         }
     ],
     "scenetype": "scene",
-    "cameraswitcher": "ui_cam_match_intro_seaside_allies",
+    "cameraswitcher": "xcam&ui_cam_match_intro_seaside_allies",
     "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",

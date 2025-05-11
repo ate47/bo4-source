@@ -1,10 +1,10 @@
 {
-    "description": "#hash_1b389bf7c8349fac",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_1b389bf7c8349fac",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_attack_chopper_killjoy",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_destroy_chopper",
-    "stringref": "#hash_8a8dbf01d39c884",
-    "iconlarge": "#ui_icon_medal_destroy_chopper_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_destroy_chopper",
+    "stringref": "localized17#hash_8a8dbf01d39c884",
+    "iconlarge": "image#ui_icon_medal_destroy_chopper_large"
 }

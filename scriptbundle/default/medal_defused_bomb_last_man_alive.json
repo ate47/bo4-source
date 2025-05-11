@@ -1,10 +1,10 @@
 {
-    "description": "#hash_13103d4e9f5d34a",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_13103d4e9f5d34a",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_defused_bomb_last_man_alive",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_clutch",
-    "stringref": "#hash_4bf2f1bd7cba5b7a",
-    "iconlarge": "#ui_icon_medal_clutch_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_clutch",
+    "stringref": "localized17#hash_4bf2f1bd7cba5b7a",
+    "iconlarge": "image#ui_icon_medal_clutch_large"
 }

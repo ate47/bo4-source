@@ -1,10 +1,10 @@
 {
-    "description": "#hash_7998ccf5f7363ab9",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_7998ccf5f7363ab9",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_with_fists",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_knockout",
-    "stringref": "#hash_3ebca51d940be3e7",
-    "iconlarge": "#ui_icon_medal_knockout_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_knockout",
+    "stringref": "localized17#hash_3ebca51d940be3e7",
+    "iconlarge": "image#ui_icon_medal_knockout_large"
 }

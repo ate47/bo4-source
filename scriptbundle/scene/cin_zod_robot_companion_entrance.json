@@ -1,11 +1,12 @@
 {
     "objects": [
         {
-            "mainanim": "#ai_robot_cmpn_spawn_drop",
-            "model": "#c_zom_zod_robot_protector_fb",
+            "mainanim": "anim4#ai_robot_cmpn_spawn_drop",
+            "model": "model#c_zom_zod_robot_protector_fb",
             "type": "actor",
             "vmtype": "server",
             "name": "companion_spawner",
+            "mainblend": 0,
             "team": "any"
         },
         {

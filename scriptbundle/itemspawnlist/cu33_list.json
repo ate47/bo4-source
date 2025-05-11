@@ -2,17 +2,20 @@
     "itemlist": [
         {
             "minweight": 1,
-            "itementry": "cu33_item",
+            "itementry": "scriptbundle&cu33_item",
             "maxweight": 1,
             "available": 8
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 8000,
     "type": "itemspawnlist",
     "hash_345eba59": 1,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
     "hash_dc7ffbef": 1,
     "name": "cu33_list",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

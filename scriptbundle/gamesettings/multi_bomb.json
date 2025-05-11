@@ -1,10 +1,13 @@
 {
-    "hinttext": "#hash_2503ccd90a0b0697",
+    "hinttext": "localized17#hash_2503ccd90a0b0697",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "multi_bomb",
-    "displayname": "#menu/multi_bomb",
+    "displayname": "localized17#menu/multi_bomb",
+    "hash_54e336e4": 0,
     "optionscount": 2,
+    "hash_765cfd09": 0,
     "setting": "multiBomb",
     "isenableddisabled": 1
 }

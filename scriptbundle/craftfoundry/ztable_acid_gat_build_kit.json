@@ -2,7 +2,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
     "blueprintcount": 1,
-    "blueprint01": "zblueprint_acid_gat_build_kit",
+    "blueprint01": "scriptbundle&zblueprint_acid_gat_build_kit",
     "name": "ztable_acid_gat_build_kit",
     "displayname": "Acid Gat Build Kit"
 }

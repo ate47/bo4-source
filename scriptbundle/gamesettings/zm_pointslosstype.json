@@ -1,17 +1,21 @@
 {
-    "hinttext": "#hash_8bfbc24e8aebc47",
+    "hinttext": "localized17#hash_8bfbc24e8aebc47",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
     "value1": "0",
     "value4": "3",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "zm_pointslosstype",
-    "displayname": "#hash_2982088a351381fd",
-    "label4": "#hash_1f0968aad9d63087",
-    "label1": "#hash_68b65fb510ccd214",
-    "label3": "#hash_19680cd9d03c2a1c",
-    "label2": "#hash_24cb168909e0ed9f",
+    "displayname": "localized17#hash_2982088a351381fd",
+    "label4": "localized17#hash_1f0968aad9d63087",
+    "label1": "localized17#hash_68b65fb510ccd214",
+    "label3": "localized17#hash_19680cd9d03c2a1c",
+    "label2": "localized17#hash_24cb168909e0ed9f",
+    "hash_54e336e4": 0,
     "optionscount": 3,
-    "setting": "zmPointsLossType"
+    "hash_765cfd09": 0,
+    "setting": "zmPointsLossType",
+    "isenableddisabled": 0
 }

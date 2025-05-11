@@ -1,65 +1,91 @@
 {
     "options": [
         {
-            "label": "#hash_50e118f6ac243148",
+            "label": "localized17#hash_50e118f6ac243148",
             "value": "0.25"
         },
         {
-            "label": "#hash_50e119f6ac2432fb",
+            "label": "localized17#hash_50e119f6ac2432fb",
             "value": "0.5"
         },
         {
-            "label": "#hash_50e11af6ac2434ae",
+            "label": "localized17#hash_50e11af6ac2434ae",
             "value": "0.75"
         },
         {
-            "label": "#hash_50e11bf6ac243661",
+            "label": "localized17#hash_50e11bf6ac243661",
             "value": "1.0"
         },
         {
-            "label": "#hash_50e11cf6ac243814",
+            "label": "localized17#hash_50e11cf6ac243814",
             "value": "1.25"
         },
         {
-            "label": "#hash_50e11df6ac2439c7",
+            "label": "localized17#hash_50e11df6ac2439c7",
             "value": "1.5"
         },
         {
-            "label": "#hash_50e11ef6ac243b7a",
+            "label": "localized17#hash_50e11ef6ac243b7a",
             "value": "1.75"
         },
         {
-            "label": "#hash_50e11ff6ac243d2d",
+            "label": "localized17#hash_50e11ff6ac243d2d",
             "value": "2"
         },
         {
-            "label": "#hash_50e110f6ac2423b0",
+            "label": "localized17#hash_50e110f6ac2423b0",
             "value": "2.5"
         },
         {
-            "label": "#hash_50e111f6ac242563",
+            "label": "localized17#hash_50e111f6ac242563",
             "value": "3"
         },
         {
-            "label": "#hash_50e49ef6ac274ad1",
+            "label": "localized17#hash_50e49ef6ac274ad1",
             "value": "3.5"
         },
         {
-            "label": "#hash_50e49df6ac27491e",
+            "label": "localized17#hash_50e49df6ac27491e",
             "value": "4"
         }
     ],
     "hash_dfedf08e": 3,
-    "description": "#hash_1bb965f406eb282a",
-    "hash_60fcfffa": "#menu/on",
+    "categoryindex": 0,
+    "description": "localized17#hash_1bb965f406eb282a",
+    "hash_60fcfffa": "localized17#menu/on",
     "hash_10e01ad5": 1,
+    "iscategory": 0,
+    "hash_71620d66": 0,
+    "hash_213a0b12": 0,
+    "hash_8722393c": 0,
+    "hash_799f4f7": 0,
+    "hash_6bb94572": 0,
     "hash_2284d52": 1,
+    "hash_389e8bd": 0,
+    "hash_5352657b": 0,
+    "hash_9358ee0a": 0,
+    "hash_558c32d5": 0,
+    "hash_77c0bdd6": 0,
+    "hash_e0274350": 0,
     "hash_86a04811": 1,
     "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "look_sensitivity_ads_scalar",
-    "displayname": "#hash_7ac47c2c7e5c969a",
+    "displayname": "localized17#hash_7ac47c2c7e5c969a",
+    "rangestartvalue": 0,
+    "isdisabled": 0,
+    "hash_d6897f56": 0,
+    "hash_1da8087e": 0,
+    "decimalplace": 0,
+    "hash_54a43dc2": 0,
     "hash_66faec87": 10,
     "statname": "input_viewSensitivityADSScalar",
-    "hash_b7401319": "#menu/off"
+    "hash_1f28ad4a": 0,
+    "isenableddisabled": 0,
+    "hash_6155d2c8": 0,
+    "minvalue": 0,
+    "hash_d4e288e": 0,
+    "bindindex": 0,
+    "hash_f2ad4b49": 0,
+    "hash_b7401319": "localized17#menu/off"
 }

@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_7358ed6e03ad885a",
+    "hinttext": "localized17#hash_7358ed6e03ad885a",
     "configstringfiletype": "scriptbundle",
     "value8": "10",
     "value9": "11",
@@ -17,9 +17,13 @@
     "value15": "17",
     "value14": "16",
     "type": "gamesettings",
-    "label": "#menu/noloc",
+    "label": "localized17#menu/noloc",
+    "hash_5a6dee5a": 0,
     "name": "max_allocation",
-    "displayname": "#hash_32505d342756c5c6",
+    "displayname": "localized17#hash_32505d342756c5c6",
+    "hash_54e336e4": 0,
     "optionscount": 15,
-    "setting": "maxAllocation"
+    "hash_765cfd09": 0,
+    "setting": "maxAllocation",
+    "isenableddisabled": 0
 }

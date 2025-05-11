@@ -1,6 +1,6 @@
 {
-    "hash_4050486a": "#hash_2a941f3e7eaeef08",
-    "hash_4dbc4aee": "#hash_4585580f3e752083",
+    "hash_4050486a": "localized18#hash_2a941f3e7eaeef08",
+    "hash_4dbc4aee": "localized18#hash_4585580f3e752083",
     "configstringfiletype": "scriptbundle",
     "result": "weapon#ww_blundergat_acid_t8_zm",
     "type": "craftblueprint",
@@ -11,9 +11,9 @@
     "name": "zblueprint_acid_gat_build_kit",
     "displayname": "Acid Gat Kit",
     "mdlblueprint": "p8_zm_esc_acid_gat_blue_print_01",
-    "hash_391591d0": "#hash_525ed846dd9b3e0e",
+    "hash_391591d0": "localized18#hash_525ed846dd9b3e0e",
     "postcraft": "one_time_craft",
-    "hash_abd9b2d0": "#hash_525ed846dd9b3e0e",
+    "hash_abd9b2d0": "localized18#hash_525ed846dd9b3e0e",
     "componentcount": 3,
     "hash_c028dcfe": 1,
     "hash_318c150c": "section_wonder_weapon"

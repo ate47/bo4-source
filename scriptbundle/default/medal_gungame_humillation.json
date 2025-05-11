@@ -1,10 +1,10 @@
 {
-    "description": "#hash_369770b1782521d6",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_369770b1782521d6",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_gungame_humillation",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_329a95480dd93927",
-    "stringref": "#hash_ad9069b5f91daa6",
-    "iconlarge": "#hash_3c35b846b5c83bf7"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_329a95480dd93927",
+    "stringref": "localized17#hash_ad9069b5f91daa6",
+    "iconlarge": "image#hash_3c35b846b5c83bf7"
 }

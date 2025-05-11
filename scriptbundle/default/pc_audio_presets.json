@@ -1,40 +1,65 @@
 {
     "options": [
         {
-            "label": "#hash_44ed2f15dc531d8a",
+            "label": "localized17#hash_44ed2f15dc531d8a",
             "value": "0"
         },
         {
-            "label": "#hash_5708af0ee54a8cf4",
+            "label": "localized17#hash_5708af0ee54a8cf4",
             "value": "1"
         },
         {
-            "label": "#menu/high_boost",
+            "label": "localized17#menu/high_boost",
             "value": "2"
         },
         {
-            "label": "#hash_284f1b7483c3c597",
+            "label": "localized17#hash_284f1b7483c3c597",
             "value": "3"
         },
         {
-            "label": "#hash_401a5e3ea16f6e84",
+            "label": "localized17#hash_401a5e3ea16f6e84",
             "value": "4"
         }
     ],
-    "descriptionimage": "#hash_79fda6795137590",
-    "description": "#hash_378e4796c5ff3f38",
-    "hash_60fcfffa": "#hash_14d7072b1be4a4c",
+    "hash_dfedf08e": 0,
+    "descriptionimage": "image#hash_79fda6795137590",
+    "categoryindex": 0,
+    "description": "localized17#hash_378e4796c5ff3f38",
+    "hash_60fcfffa": "localized17#hash_14d7072b1be4a4c",
     "hash_10e01ad5": 1,
+    "iscategory": 0,
+    "hash_71620d66": 0,
+    "hash_213a0b12": 0,
+    "hash_8722393c": 0,
+    "hash_799f4f7": 0,
     "hash_7d936886": 1,
+    "hash_6bb94572": 0,
+    "hash_2284d52": 0,
+    "hash_389e8bd": 0,
     "hash_5352657b": 1,
+    "hash_9358ee0a": 0,
+    "hash_558c32d5": 0,
+    "hash_77c0bdd6": 0,
+    "hash_e0274350": 0,
     "hash_86a04811": 1,
     "hash_43a952c1": 0.1,
     "maxvalue": 1,
     "name": "pc_audio_presets",
-    "displayname": "#menu/audio_presets",
+    "displayname": "localized17#menu/audio_presets",
+    "rangestartvalue": 0,
+    "isdisabled": 0,
+    "hash_d6897f56": 0,
+    "hash_1da8087e": 0,
     "decimalplace": 0.01,
+    "hash_54a43dc2": 0,
     "hash_66faec87": 1,
     "statname": "snd_menu_presets",
+    "hash_1f28ad4a": 0,
+    "isenableddisabled": 0,
+    "hash_6155d2c8": 0,
+    "minvalue": 0,
     "hash_d4e288e": 1,
-    "hash_b7401319": "#hash_661e43062ca9239f"
+    "bindindex": 0,
+    "hash_f2ad4b49": 0,
+    "hash_b7401319": "localized17#hash_661e43062ca9239f"
 }

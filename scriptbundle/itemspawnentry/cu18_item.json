@@ -1,46 +1,81 @@
 {
     "objectives": [
         {
-            "description": "#hash_7b686f3eea03cb1b"
+            "description": "localized17#hash_7b686f3eea03cb1b"
         },
         {
             "teamsizedescriptions": [
                 {
-                    "description": "#hash_2486995ff1df34d4",
+                    "description": "localized17#hash_2486995ff1df34d4",
                     "teamsize": 1
                 },
                 {
-                    "description": "#hash_c5a6e85a211b7ed",
+                    "description": "localized17#hash_c5a6e85a211b7ed",
                     "teamsize": 2
                 },
                 {
-                    "description": "#hash_6a30f871330c4184",
+                    "description": "localized17#hash_6a30f871330c4184",
                     "teamsize": 4
                 }
             ],
-            "description": "#hash_7b68703eea03ccce",
+            "description": "localized17#hash_7b68703eea03ccce",
             "hash_57b131bd": 3
         },
         {
-            "description": "#hash_7b68713eea03ce81"
+            "description": "localized17#hash_7b68713eea03ce81"
         }
     ],
-    "description": "#hash_211dd865e50ededb",
+    "amount": 0,
+    "hash_99c0cb08": 0,
+    "duration": 0,
+    "description": "localized17#hash_211dd865e50ededb",
+    "hash_f2902d7b": 0,
+    "hash_a3aa1ca2": 0,
+    "armorshards": 0,
     "configstringfiletype": "scriptbundle",
     "hash_eda4062b": 3,
-    "hash_e8b98a8a": "#hash_1f3de3e08b3ad876",
-    "model": "#p8_wz_cu_emperor_letter",
+    "hash_e8b98a8a": "localized17#hash_1f3de3e08b3ad876",
+    "hash_22c3ab38": 0,
+    "hash_54a3b4ca": 0,
+    "hash_5dc4470b": 0,
+    "hash_3e688854": 0,
+    "model": "model#p8_wz_cu_emperor_letter",
+    "hash_2ee21ae6": 0,
     "type": "itemspawnentry",
-    "hintstring": "#hash_685b78d996fab60c",
+    "hintstring": "localized18#hash_685b78d996fab60c",
+    "hash_7a80f06e": 0,
     "unlockableitemref": "#wz_character_takeo",
+    "hash_d1f348db": 0,
+    "hash_cc1bbd2c": 0,
+    "hash_ae6581c0": 0,
+    "angleoffsetz": 0,
+    "angleoffsety": 0,
+    "angleoffsetx": 0,
+    "hash_702943a1": 0,
+    "hash_48907470": 0,
+    "hash_22d128f2": 0,
     "name": "cu18_item",
-    "displayname": "#hash_685b78d996fab60c",
-    "icon": "#hash_459b44cdbca0e2e2",
+    "displayname": "localized17#hash_685b78d996fab60c",
+    "hash_99edb6a3": 0,
+    "icon": "image#hash_459b44cdbca0e2e2",
+    "explosivedamagescale": 0,
+    "casttime": 0,
     "modelscale": 1,
     "rarity": "None",
+    "hash_c690c73d": 0,
+    "hash_8a122876": 0,
+    "hash_7c4c8ceb": 0,
+    "hash_ee67711f": 0,
     "handler": "#hash_5c844f5c1207159c",
-    "rewardname": "#zombie/takeo",
-    "pickupicon": "#hash_459b44cdbca0e2e2",
+    "armortier": 0,
+    "rewardname": "localized17#zombie/takeo",
+    "pickupicon": "image#hash_459b44cdbca0e2e2",
+    "hash_8c9a7dc8": 0,
+    "hash_15b88fde": 0,
+    "hash_7a51d937": 0,
+    "positionoffsety": 0,
+    "positionoffsetx": 0,
     "positionoffsetz": 0.75,
+    "hash_9f307988": 0,
     "itemtype": "quest"
 }

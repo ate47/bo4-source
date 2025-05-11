@@ -4,39 +4,39 @@
             "hash_82670522": "stats_radiation_field_kill",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_5e65bf8482917876"
+            "displaystatname": "localized17#hash_5e65bf8482917876"
         },
         {
             "hash_82670522": "stats_radiation_field_radiating_enemy",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_289242637f7dc89f"
+            "displaystatname": "localized17#hash_289242637f7dc89f"
         },
         {
             "hash_82670522": "stats_radiation_field_assist",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_7dc96d4edd4706a3"
+            "displaystatname": "localized17#hash_7dc96d4edd4706a3"
         },
         {
             "stattype": "objectiveekia",
             "hash_26568428": 1,
-            "displaystatname": "#hash_5d1ab6f5e0227795"
+            "displaystatname": "localized17#hash_5d1ab6f5e0227795"
         },
         {
             "stattype": "damagedone",
             "hash_26568428": 1,
-            "displaystatname": "#hash_5418827f408e5ca2"
+            "displaystatname": "localized17#hash_5418827f408e5ca2"
         },
         {
             "stattype": "objectivescore",
             "hash_26568428": 1,
-            "displaystatname": "#hash_4d3552e327f94ecf"
+            "displaystatname": "localized17#hash_4d3552e327f94ecf"
         }
     ],
     "hash_447510ee": "prt_mp_firebreak",
-    "defaultimage": "#ui_icon_hvo_base",
-    "cardname": "#hash_250d4ce416d76d06",
+    "defaultimage": "image#ui_icon_hvo_base",
+    "cardname": "localized17#hash_250d4ce416d76d06",
     "name": "contaminator_control_hvo",
     "associatedgamemode": "control"
 }

@@ -6,30 +6,33 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_a4f2def438bc162"
+                            "stageimage": "image#hash_a4f2def438bc162"
                         }
                     ],
                     "hash_1d91eeba": 1,
+                    "hash_7db3435c": 0,
                     "clientfield": "#hash_40b098e265f3e592"
                 },
                 {
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_1d52114c56c1b808"
+                            "stageimage": "image#hash_1d52114c56c1b808"
                         }
                     ],
                     "hash_1d91eeba": 1,
+                    "hash_7db3435c": 0,
                     "clientfield": "#hash_40b097e265f3e3df"
                 },
                 {
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_5f4dc252b5774dd5"
+                            "stageimage": "image#hash_5f4dc252b5774dd5"
                         }
                     ],
                     "hash_1d91eeba": 1,
+                    "hash_7db3435c": 0,
                     "clientfield": "#hash_40b096e265f3e22c"
                 }
             ],
@@ -38,60 +41,66 @@
     ],
     "shieldpieces": [
         {
-            "pieceimage": "#hash_59dbf83a8853a547",
+            "hash_7db3435c": 0,
+            "pieceimage": "image#hash_59dbf83a8853a547",
             "clientfield": "#hash_66f5a1e5c9a28e30"
         },
         {
-            "pieceimage": "#hash_7ecdca2dfb9523e8",
+            "hash_7db3435c": 0,
+            "pieceimage": "image#hash_7ecdca2dfb9523e8",
             "clientfield": "#hash_66f5a4e5c9a29349"
         },
         {
-            "pieceimage": "#hash_463a54ad71577205",
+            "hash_7db3435c": 0,
+            "pieceimage": "image#hash_463a54ad71577205",
             "clientfield": "#hash_66f5a2e5c9a28fe3"
         }
     ],
     "objprogitems": [
         {
-            "description": "#hash_50434c3138a47519",
-            "image": "#hash_20d64680ee7731d8"
+            "description": "localized17#hash_50434c3138a47519",
+            "image": "image#hash_20d64680ee7731d8"
         },
         {
-            "description": "#hash_644ff64d0df8a59",
-            "image": "#hash_20d64680ee7731d8"
+            "description": "localized17#hash_644ff64d0df8a59",
+            "image": "image#hash_20d64680ee7731d8"
         },
         {
-            "description": "#hash_644fc64d0df8540",
-            "image": "#hash_20d64980ee7736f1"
+            "description": "localized17#hash_644fc64d0df8540",
+            "image": "image#hash_20d64980ee7736f1"
         },
         {
-            "description": "#hash_644fd64d0df86f3",
-            "image": "#hash_20d64880ee77353e"
+            "description": "localized17#hash_644fd64d0df86f3",
+            "image": "image#hash_20d64880ee77353e"
         },
         {
-            "description": "#hash_6450264d0df8f72",
-            "image": "#hash_20d64b80ee773a57"
+            "description": "localized17#hash_6450264d0df8f72",
+            "image": "image#hash_20d64b80ee773a57"
         },
         {
-            "description": "#hash_6450364d0df9125",
-            "image": "#hash_20d64a80ee7738a4"
+            "description": "localized17#hash_6450364d0df9125",
+            "image": "image#hash_20d64a80ee7738a4"
         },
         {
-            "description": "#hash_6450064d0df8c0c",
-            "image": "#hash_20d64d80ee773dbd"
+            "description": "localized17#hash_6450064d0df8c0c",
+            "image": "image#hash_20d64d80ee773dbd"
         },
         {
-            "description": "#hash_6450164d0df8dbf",
-            "image": "#hash_20d64c80ee773c0a"
+            "description": "localized17#hash_6450164d0df8dbf",
+            "image": "image#hash_20d64c80ee773c0a"
         }
     ],
-    "objectivebackground": "#hash_718abef0eea9a942",
+    "objectivebackground": "image#hash_718abef0eea9a942",
     "configstringfiletype": "scriptbundle",
     "hash_aa76b7dd": 8,
+    "hash_3e38620e": 0,
     "type": "zminventory",
     "hash_af62a8e8": 3,
     "name": "zm_inventory_escape",
-    "hash_f128673a": "#hash_2028b2c0395c86bf",
+    "hash_f128673a": "image#hash_2028b2c0395c86bf",
     "hash_c029b82f": 1,
     "hash_846fa8e": "#zm_escape_paschal",
-    "hash_16fb993f": "#hash_30727aefda60cbd4"
+    "hash_f3d39d90": 0,
+    "hash_38b9613": 0,
+    "hash_16fb993f": "image#hash_30727aefda60cbd4"
 }

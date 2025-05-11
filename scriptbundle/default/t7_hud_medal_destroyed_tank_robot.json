@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#t7_hud_medal_backing_scorestreak_killjoy",
+    "backingsmall": "image#t7_hud_medal_backing_scorestreak_killjoy",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_destroyed_tank_robot",
-    "backinglarge": "#t7_hud_medal_backing_scorestreak_killjoy_lrg",
-    "iconsmall": "#t7_hud_medal_destroyed_aitank",
-    "stringref": "#hash_3ec5b746ee2cfc96",
-    "iconlarge": "#t7_hud_medal_destroyed_aitank_lrg"
+    "backinglarge": "image#t7_hud_medal_backing_scorestreak_killjoy_lrg",
+    "iconsmall": "image#t7_hud_medal_destroyed_aitank",
+    "stringref": "localized17#hash_3ec5b746ee2cfc96",
+    "iconlarge": "image#t7_hud_medal_destroyed_aitank_lrg"
 }

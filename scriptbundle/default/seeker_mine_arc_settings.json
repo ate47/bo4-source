@@ -1,8 +1,8 @@
 {
     "fx_tag": "j_spineupper",
-    "hash_e179fff4": "shock_seeker_secondary",
-    "hash_41000980": "shock_seeker_primary",
-    "chain": "#hash_4f56d4d19d13e31c",
+    "hash_e179fff4": "status_effect&shock_seeker_secondary",
+    "hash_41000980": "status_effect&shock_seeker_primary",
+    "chain": "fx#hash_4f56d4d19d13e31c",
     "max_range": 320,
     "hash_8ceb67db": "j_spineupper",
     "fx_delay": 250,

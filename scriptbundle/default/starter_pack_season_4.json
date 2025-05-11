@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_9b2502cb538f7e9",
-    "popupimage": "#hash_97293a661abc564",
-    "nametext": "#hash_553b98e1b4229966",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_9b2502cb538f7e9",
+    "popupimage": "image#hash_97293a661abc564",
+    "nametext": "localized17#hash_553b98e1b4229966",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "starter_pack_season_4",
-    "desctext": "#hash_2751d8cf6b36fc96",
-    "previewimage": "#hash_30a2fc2ca9c0ef1a",
-    "reserveimage": "#hash_661819c77427bf65"
+    "desctext": "localized17#hash_2751d8cf6b36fc96",
+    "previewimage": "image#hash_30a2fc2ca9c0ef1a",
+    "reserveimage": "image#hash_661819c77427bf65"
 }

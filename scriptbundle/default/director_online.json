@@ -1,4 +1,5 @@
 {
+    "hasmigration": 0,
     "lobbymode": -1,
     "id": 2010,
     "backtarget": "main",
@@ -6,14 +7,19 @@
     "mainmode": -1,
     "hash_d16ccae8": 1,
     "isprivate": 1,
+    "showteams": 0,
+    "lobbytype": 0,
     "menumusic": "titlescreen",
     "room": "mode_select",
     "hash_7f60c82f": 4,
+    "isadvertised": 0,
     "maxclients": 6,
     "name": "director_online",
     "networkmode": 2,
     "errtarget": "director_online",
     "egamemodes": 2,
+    "hash_ec76767d": 0,
     "hash_f68d7d0": 2,
+    "isgame": 0,
     "maxlocalclients": 2
 }

@@ -1,43 +1,43 @@
 {
     "imagearray": [
         {
-            "image": "#ui_icon_hvo_sharpshooter_ajax",
+            "image": "image#ui_icon_hvo_sharpshooter_ajax",
             "specialist": "#hash_641d42086962443d"
         },
         {
-            "image": "#ui_icon_hvo_sharpshooter_battery",
+            "image": "image#ui_icon_hvo_sharpshooter_battery",
             "specialist": "#hash_25d901b2845affb5"
         },
         {
-            "image": "#ui_icon_hvo_sharpshooter_crash",
+            "image": "image#ui_icon_hvo_sharpshooter_crash",
             "specialist": "#hash_271546989f2b39c0"
         },
         {
-            "image": "#ui_icon_hvo_sharpshooter_firebreak",
+            "image": "image#ui_icon_hvo_sharpshooter_firebreak",
             "specialist": "#hash_17c8471ad085983b"
         },
         {
-            "image": "#ui_icon_hvo_sharpshooter_nomad",
+            "image": "image#ui_icon_hvo_sharpshooter_nomad",
             "specialist": "#hash_bac19a8a93f750a"
         },
         {
-            "image": "#ui_icon_hvo_sharpshooter_prophet",
+            "image": "image#ui_icon_hvo_sharpshooter_prophet",
             "specialist": "#hash_74a7b1f09eb77129"
         },
         {
-            "image": "#ui_icon_hvo_sharpshooter_recon",
+            "image": "image#ui_icon_hvo_sharpshooter_recon",
             "specialist": "#hash_265a8bfe9e6a3a8f"
         },
         {
-            "image": "#ui_icon_hvo_sharpshooter_ruin",
+            "image": "image#ui_icon_hvo_sharpshooter_ruin",
             "specialist": "#hash_215efce6af8d9a10"
         },
         {
-            "image": "#ui_icon_hvo_sharpshooter_seraph",
+            "image": "image#ui_icon_hvo_sharpshooter_seraph",
             "specialist": "#hash_35abb557417d97bc"
         },
         {
-            "image": "#ui_icon_hvo_sharpshooter_torque",
+            "image": "image#ui_icon_hvo_sharpshooter_torque",
             "specialist": "#hash_34c5e1c04823489d"
         }
     ],
@@ -47,39 +47,39 @@
             "hash_82670522": "stats_headshot",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_619e74f99b27b9ae"
+            "displaystatname": "localized17#hash_619e74f99b27b9ae"
         },
         {
             "hash_233a23b6": 1,
             "hash_82670522": "stats_kill_enemy_one_bullet",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_368e2354e16e7ffb"
+            "displaystatname": "localized17#hash_368e2354e16e7ffb"
         },
         {
             "hash_233a23b6": 1,
             "hash_82670522": "stats_kill_enemies_one_bullet",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_4735fd772cb73794"
+            "displaystatname": "localized17#hash_4735fd772cb73794"
         },
         {
             "hash_233a23b6": 1,
             "hash_82670522": "stats_ekia",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_2391441b1e8929a5"
+            "displaystatname": "localized17#hash_2391441b1e8929a5"
         },
         {
             "hash_233a23b6": 1,
             "hash_82670522": "stats_shutdowns",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_158193577a14c86e"
+            "displaystatname": "localized17#hash_158193577a14c86e"
         }
     ],
-    "defaultimage": "#ui_icon_hvo_base",
-    "cardname": "#hash_7833035cc421c727",
+    "defaultimage": "image#ui_icon_hvo_base",
+    "cardname": "localized17#hash_7833035cc421c727",
     "name": "sharpshooter_hvo",
     "associatedgamemode": "none"
 }

@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_598fe127f7f26042",
+    "hinttext": "localized17#hash_598fe127f7f26042",
     "configstringfiletype": "scriptbundle",
     "value8": "7",
     "value9": "8",
@@ -16,11 +16,15 @@
     "value12": "15",
     "value14": "25",
     "type": "gamesettings",
-    "label": "#menu/x_lives",
+    "label": "localized17#menu/x_lives",
+    "hash_5a6dee5a": 0,
     "name": "player_num_lives",
-    "displayname": "#hash_6b02b19b36d9315e",
-    "label1": "#menu/unlimited",
-    "label2": "#menu/1_life",
+    "displayname": "localized17#hash_6b02b19b36d9315e",
+    "label1": "localized17#menu/unlimited",
+    "label2": "localized17#menu/1_life",
+    "hash_54e336e4": 0,
     "optionscount": 14,
-    "setting": "playerNumLives"
+    "hash_765cfd09": 0,
+    "setting": "playerNumLives",
+    "isenableddisabled": 0
 }

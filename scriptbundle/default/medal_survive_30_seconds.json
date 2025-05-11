@@ -1,10 +1,10 @@
 {
-    "description": "#hash_26a42fe5cdf3ed61",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_26a42fe5cdf3ed61",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_survive_30_seconds",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_survivalist",
-    "stringref": "#hash_cdffc24370cbaf",
-    "iconlarge": "#ui_icon_medal_survivalist_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_survivalist",
+    "stringref": "localized17#hash_cdffc24370cbaf",
+    "iconlarge": "image#ui_icon_medal_survivalist_large"
 }

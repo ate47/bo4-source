@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_53883c077d485f61",
+    "hinttext": "localized17#hash_53883c077d485f61",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
@@ -9,10 +9,14 @@
     "value4": "3",
     "value5": "4",
     "type": "gamesettings",
-    "label": "#hash_7021c4e2ce918331",
+    "label": "localized17#hash_7021c4e2ce918331",
+    "hash_5a6dee5a": 0,
     "name": "kill_points_in_enemy_protected_zone",
-    "displayname": "#hash_67db3b0ca9fc1a77",
-    "label2": "#menu/1_point",
+    "displayname": "localized17#hash_67db3b0ca9fc1a77",
+    "label2": "localized17#menu/1_point",
+    "hash_54e336e4": 0,
     "optionscount": 7,
-    "setting": "killPointsInEnemyProtectedZone"
+    "hash_765cfd09": 0,
+    "setting": "killPointsInEnemyProtectedZone",
+    "isenableddisabled": 0
 }

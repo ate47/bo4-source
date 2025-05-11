@@ -1,9 +1,9 @@
 {
     "callingtask": "#hash_5d3dce1c38a95835",
     "configstringfiletype": "scriptbundle",
-    "image": "#zm_calling_tasks_killspacked",
+    "image": "image#zm_calling_tasks_killspacked",
     "dailytarget": 750,
     "name": "punchdrunk_task",
-    "taskname": "#hash_a039acee4cc3d2a",
-    "descsimple": "#hash_513a42e4c780bc85"
+    "taskname": "localized17#hash_a039acee4cc3d2a",
+    "descsimple": "localized17#hash_513a42e4c780bc85"
 }

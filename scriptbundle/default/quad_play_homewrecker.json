@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_6a1e6f11de040188",
-    "popupimage": "#hash_6f48c307dd60dc34",
-    "nametext": "#hash_1cba159f28b3f3b8",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_6a1e6f11de040188",
+    "popupimage": "image#hash_6f48c307dd60dc34",
+    "nametext": "localized17#hash_1cba159f28b3f3b8",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "quad_play_homewrecker",
-    "desctext": "#hash_28671ab56ad9b144",
-    "previewimage": "#hash_2072be6e9adfae51",
-    "reserveimage": "#hash_1a08a41b4ceba2e0"
+    "desctext": "localized17#hash_28671ab56ad9b144",
+    "previewimage": "image#hash_2072be6e9adfae51",
+    "reserveimage": "image#hash_1a08a41b4ceba2e0"
 }

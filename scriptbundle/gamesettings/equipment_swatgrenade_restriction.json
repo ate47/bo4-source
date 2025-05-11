@@ -1,13 +1,17 @@
 {
-    "descriptionimage": "#ui_icon_equipment_eq_swat_grenade_default",
+    "descriptionimage": "image#ui_icon_equipment_eq_swat_grenade_default",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "equipment_swatgrenade_restriction",
-    "displayname": "#hash_6c7cf85b494507e4",
-    "label1": "#menu/enabled",
-    "label2": "#menu/disabled",
+    "displayname": "localized17#hash_6c7cf85b494507e4",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "itemRestrictions__eq_swat_grenade__restricted"
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__eq_swat_grenade__restricted",
+    "isenableddisabled": 0
 }

@@ -2,47 +2,48 @@
     "itemlist": [
         {
             "minweight": 6,
-            "itementry": "muscle_car_wz_vehicle_black",
+            "itementry": "scriptbundle&muscle_car_wz_vehicle_black",
             "maxweight": 6,
             "available": -1
         },
         {
             "minweight": 6,
-            "itementry": "muscle_car_wz_vehicle_blue",
+            "itementry": "scriptbundle&muscle_car_wz_vehicle_blue",
             "maxweight": 6,
             "available": -1
         },
         {
             "minweight": 6,
-            "itementry": "muscle_car_wz_vehicle_green",
+            "itementry": "scriptbundle&muscle_car_wz_vehicle_green",
             "maxweight": 6,
             "available": -1
         },
         {
             "minweight": 6,
-            "itementry": "muscle_car_wz_vehicle_orange",
+            "itementry": "scriptbundle&muscle_car_wz_vehicle_orange",
             "maxweight": 6,
             "available": -1
         },
         {
             "minweight": 6,
-            "itementry": "muscle_car_wz_vehicle_red",
+            "itementry": "scriptbundle&muscle_car_wz_vehicle_red",
             "maxweight": 6,
             "available": -1
         },
         {
             "minweight": 6,
-            "itementry": "muscle_car_wz_vehicle_white",
+            "itementry": "scriptbundle&muscle_car_wz_vehicle_white",
             "maxweight": 6,
             "available": -1
         },
         {
             "minweight": 6,
-            "itementry": "muscle_car_wz_vehicle_yellow",
+            "itementry": "scriptbundle&muscle_car_wz_vehicle_yellow",
             "maxweight": 6,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 4000,
     "type": "itemspawnlist",
@@ -51,5 +52,6 @@
     "hash_9b009839": -1,
     "hash_dc7ffbef": 1,
     "name": "vehicle_list_muscle_car_wz",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

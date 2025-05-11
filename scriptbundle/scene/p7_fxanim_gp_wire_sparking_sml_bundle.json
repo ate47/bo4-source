@@ -1,83 +1,110 @@
 {
     "objects": [
         {
-            "mainanim": "#p7_fxanim_gp_wire_sparking_sml_anim",
+            "mainanim": "anim4#p7_fxanim_gp_wire_sparking_sml_anim",
             "mainshot": "default",
-            "model": "#p7_fxanim_gp_wire_sparking_sml_mod",
+            "lerptime": 0,
+            "model": "model#p7_fxanim_gp_wire_sparking_sml_mod",
             "hash_40c3501": "default",
             "type": "prop",
             "vmtype": "server",
             "maindelaymax": 10,
             "name": "wire_sparking_sml",
-            "team": "any"
+            "team": "any",
+            "cameratween": 0
         },
         {
             "mainshot": "default",
+            "lerptime": 0,
             "hash_40c3501": "default",
             "type": "prop",
             "vmtype": "server",
+            "mainblend": 0,
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "mainshot": "default",
+            "lerptime": 0,
             "hash_40c3501": "default",
             "type": "prop",
             "vmtype": "server",
+            "mainblend": 0,
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "mainshot": "default",
+            "lerptime": 0,
             "hash_40c3501": "default",
             "type": "prop",
             "vmtype": "server",
+            "mainblend": 0,
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "mainshot": "default",
+            "lerptime": 0,
             "hash_40c3501": "default",
             "type": "prop",
             "vmtype": "server",
+            "mainblend": 0,
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "mainshot": "default",
+            "lerptime": 0,
             "hash_40c3501": "default",
             "type": "prop",
             "vmtype": "server",
+            "mainblend": 0,
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "mainshot": "default",
+            "lerptime": 0,
             "hash_40c3501": "default",
             "type": "prop",
             "vmtype": "server",
+            "mainblend": 0,
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "mainshot": "default",
+            "lerptime": 0,
             "hash_40c3501": "default",
             "type": "prop",
             "vmtype": "server",
+            "mainblend": 0,
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "mainshot": "default",
+            "lerptime": 0,
             "hash_40c3501": "default",
             "type": "prop",
             "vmtype": "server",
+            "mainblend": 0,
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -90,14 +117,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -110,14 +140,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -130,14 +163,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -150,14 +186,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -170,14 +209,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -190,14 +232,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -210,14 +255,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -230,14 +278,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -250,14 +301,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -270,14 +324,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -290,14 +347,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -310,14 +370,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -330,14 +393,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -350,14 +416,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -370,14 +439,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -390,14 +462,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -410,14 +485,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -430,14 +508,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -450,14 +531,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -470,14 +554,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -490,14 +577,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -510,14 +600,17 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         },
         {
             "hash_72f39e9e": "default",
             "mainshot": "default",
+            "lerptime": 0,
             "hash_5b52a4b": "default",
             "hash_40c3501": "default",
             "type": "prop",
@@ -530,10 +623,12 @@
             "runsceneondmg2": "none",
             "hash_8c0032b8": "default",
             "hash_e181ac76": "default",
+            "mainblend": 0,
             "hash_c36dd51a": "default",
             "hash_d4e9f5c2": "default",
             "team": "any",
-            "takedamage": 1
+            "takedamage": 1,
+            "cameratween": 0
         }
     ],
     "scenetype": "fxanim",

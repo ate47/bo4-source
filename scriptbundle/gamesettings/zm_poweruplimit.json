@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_6581215cd4ba8ab7",
+    "hinttext": "localized17#hash_6581215cd4ba8ab7",
     "configstringfiletype": "scriptbundle",
     "value8": "8",
     "value9": "9",
@@ -52,10 +52,14 @@
     "hash_a9a65d66": "44",
     "hash_7ec30f98": "49",
     "type": "gamesettings",
-    "label": "#hash_39bb51c85ad0ecf3",
+    "label": "localized17#hash_39bb51c85ad0ecf3",
+    "hash_5a6dee5a": 0,
     "name": "zm_poweruplimit",
-    "displayname": "#hash_33b2b7cb13ea7c8d",
-    "label1": "#hash_77c37df294784025",
+    "displayname": "localized17#hash_33b2b7cb13ea7c8d",
+    "label1": "localized17#hash_77c37df294784025",
+    "hash_54e336e4": 0,
     "optionscount": 20,
-    "setting": "zmPowerupsLimitRound"
+    "hash_765cfd09": 0,
+    "setting": "zmPowerupsLimitRound",
+    "isenableddisabled": 0
 }

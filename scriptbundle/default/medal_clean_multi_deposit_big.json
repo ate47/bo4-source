@@ -1,10 +1,10 @@
 {
-    "description": "#hash_6e1346fa965951f0",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_6e1346fa965951f0",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_clean_multi_deposit_big",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_jackpot",
-    "stringref": "#hash_93f0e2c070d25a8",
-    "iconlarge": "#ui_icon_medal_jackpot_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_jackpot",
+    "stringref": "localized17#hash_93f0e2c070d25a8",
+    "iconlarge": "image#ui_icon_medal_jackpot_large"
 }

@@ -1,12 +1,12 @@
 {
-    "contracticon": "#hash_399fb04f8e46e58d",
-    "relateditemname": "#weapon/smg_accurate_t8",
-    "contracttitle": "#hash_191028e9a3510d26",
+    "contracticon": "image#hash_399fb04f8e46e58d",
+    "relateditemname": "localized17#weapon/smg_accurate_t8",
+    "contracttitle": "localized17#hash_191028e9a3510d26",
     "name": "loot_contract_gks_mastercraft_presunset",
     "hash_69b5a265": "core_frontend_smg_accurate_sig_03",
-    "hash_4b258f2c": "#hash_67e60b774e979b10",
-    "contractdescription": "#hash_7680bf2bc2219eb1",
+    "hash_4b258f2c": "image#hash_67e60b774e979b10",
+    "contractdescription": "localized17#hash_7680bf2bc2219eb1",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_50935c779809768b",
-    "hash_e08fc162": "#hash_584ccaaff0d53c2a"
+    "hash_1c057e8c": "image#hash_50935c779809768b",
+    "hash_e08fc162": "localized17#hash_584ccaaff0d53c2a"
 }

@@ -1,4 +1,5 @@
 {
+    "hasmigration": 0,
     "lobbymode": 4,
     "id": 2207,
     "backtarget": "director_online",
@@ -7,16 +8,20 @@
     "hash_d16ccae8": 1,
     "isprivate": 1,
     "showteams": 1,
+    "lobbytype": 0,
     "menumusic": "lobby_mp",
     "room": "inspect_specialist",
     "hash_7f60c82f": 1,
-    "kicker": "#hash_51f548d4609d9566",
+    "kicker": "localized17#hash_51f548d4609d9566",
+    "isadvertised": 0,
     "maxclients": 1,
     "name": "director_online_mp_training",
     "networkmode": 2,
     "errtarget": "director_online_mp_training",
     "egamemodes": 1,
     "hash_ec76767d": 5,
-    "title": "#hash_51f548d4609d9566",
+    "title": "localized17#hash_51f548d4609d9566",
+    "hash_f68d7d0": 0,
+    "isgame": 0,
     "maxlocalclients": 1
 }

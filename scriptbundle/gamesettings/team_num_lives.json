@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_29f367a550812fbe",
+    "hinttext": "localized17#hash_29f367a550812fbe",
     "configstringfiletype": "scriptbundle",
     "value8": "7",
     "value9": "8",
@@ -31,11 +31,15 @@
     "value19": "50",
     "value18": "45",
     "type": "gamesettings",
-    "label": "#menu/x_lives",
+    "label": "localized17#menu/x_lives",
+    "hash_5a6dee5a": 0,
     "name": "team_num_lives",
-    "displayname": "#hash_2fbdf16561a46aca",
-    "label1": "#menu/unlimited",
-    "label2": "#menu/1_life",
+    "displayname": "localized17#hash_2fbdf16561a46aca",
+    "label1": "localized17#menu/unlimited",
+    "label2": "localized17#menu/1_life",
+    "hash_54e336e4": 0,
     "optionscount": 29,
-    "setting": "teamNumLives"
+    "hash_765cfd09": 0,
+    "setting": "teamNumLives",
+    "isenableddisabled": 0
 }

@@ -1,10 +1,10 @@
 {
-    "contracticon": "#hash_1dc4de8214c726c4",
-    "contracttitle": "#menu/contract_stuhlinger",
+    "contracticon": "image#hash_1dc4de8214c726c4",
+    "contracttitle": "localized17#menu/contract_stuhlinger",
     "name": "loot_contract_stuhlinger_presunset",
-    "hash_4b258f2c": "#hash_7776aaa5ddfb70ab",
-    "contractdescription": "#menu/blackout_character",
+    "hash_4b258f2c": "image#hash_7776aaa5ddfb70ab",
+    "contractdescription": "localized17#menu/blackout_character",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_4622bd2c1902785a",
-    "hash_e08fc162": "#hash_74d15b181fda49b9"
+    "hash_1c057e8c": "image#hash_4622bd2c1902785a",
+    "hash_e08fc162": "localized17#hash_74d15b181fda49b9"
 }

@@ -1,10 +1,13 @@
 {
-    "hinttext": "#hash_4dd5840d0e651299",
+    "hinttext": "localized17#hash_4dd5840d0e651299",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "allow_spectating",
-    "displayname": "#hash_45f5231a48fb4bf",
+    "displayname": "localized17#hash_45f5231a48fb4bf",
+    "hash_54e336e4": 0,
     "optionscount": 2,
+    "hash_765cfd09": 0,
     "setting": "allowSpectating",
     "isenableddisabled": 1
 }

@@ -2,52 +2,55 @@
     "itemlist": [
         {
             "minweight": 50,
-            "itementry": "supply_stash_slot1_dlc1_limit_high_world_value",
+            "itementry": "scriptbundle&supply_stash_slot1_dlc1_limit_high_world_value",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "supply_stash_slot2_dlc1_limit_world_high_value",
+            "itementry": "scriptbundle&supply_stash_slot2_dlc1_limit_world_high_value",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "supply_stash_slot3_dlc1_limit_world_high_value",
+            "itementry": "scriptbundle&supply_stash_slot3_dlc1_limit_world_high_value",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "itementry": "supply_stash_slot4_dlc1_with_conc",
+            "itementry": "scriptbundle&supply_stash_slot4_dlc1_with_conc",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "itementry": "supply_stash_slot5_dlc1",
+            "itementry": "scriptbundle&supply_stash_slot5_dlc1",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "itementry": "supply_stash_operator_mod_weapons",
+            "itementry": "scriptbundle&supply_stash_operator_mod_weapons",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "supply_stash_slot_limit_world_high_value",
+            "itementry": "scriptbundle&supply_stash_slot_limit_world_high_value",
             "maxweight": 50,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 12000,
     "type": "itemspawnlist",
     "hash_345eba59": 7,
+    "vehiclespawner": 0,
     "hash_9b009839": 20,
+    "hash_dc7ffbef": 0,
     "name": "supply_stash_parent_dlc1_limit_world_high_value",
     "supplystashweight": 100,
     "hash_dc91e192": 1,

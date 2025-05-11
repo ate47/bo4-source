@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_52854a2a04be7b7f",
+    "hinttext": "localized17#hash_52854a2a04be7b7f",
     "configstringfiletype": "scriptbundle",
     "value8": "30",
     "value9": "60",
@@ -11,11 +11,15 @@
     "value4": "7.5",
     "value5": "10",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "destroy_time",
-    "displayname": "#menu/destroy_time",
-    "label9": "#menu/1_minute",
-    "label1": "#menu/1_second",
+    "displayname": "localized17#menu/destroy_time",
+    "label9": "localized17#menu/1_minute",
+    "label1": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
     "optionscount": 9,
-    "setting": "destroyTime"
+    "hash_765cfd09": 0,
+    "setting": "destroyTime",
+    "isenableddisabled": 0
 }

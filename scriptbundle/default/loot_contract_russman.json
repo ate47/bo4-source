@@ -1,10 +1,10 @@
 {
-    "contracticon": "#hash_7b2533b26d187ea5",
-    "contracttitle": "#menu/contract_russman",
+    "contracticon": "image#hash_7b2533b26d187ea5",
+    "contracttitle": "localized17#menu/contract_russman",
     "name": "loot_contract_russman",
-    "hash_4b258f2c": "#hash_2fa699f5d0b9948c",
-    "contractdescription": "#menu/blackout_character",
+    "hash_4b258f2c": "image#hash_2fa699f5d0b9948c",
+    "contractdescription": "localized17#menu/blackout_character",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#loot07_ui_icon_blackmarket_itemshop_russman",
-    "hash_e08fc162": "#hash_40e92fc140b5e991"
+    "hash_1c057e8c": "image#loot07_ui_icon_blackmarket_itemshop_russman",
+    "hash_e08fc162": "localized17#hash_40e92fc140b5e991"
 }

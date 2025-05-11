@@ -1,10 +1,10 @@
 {
     "lootid": "#hash_3075688a5007f00",
-    "hash_ff3063df": "attach_t8_charm_duck_base_view",
+    "hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_duck_base",
     "name": "charm_duck",
-    "displayname": "#hash_1c6bb00d1953309e",
+    "displayname": "localized17#hash_1c6bb00d1953309e",
     "icon": "ui_icon_weapon_charms_duck_base",
-    "hash_ef5ad2b3": "attach_t8_charm_duck_base_view",
-    "previewimage": "#ui_icon_weapon_charms_duck_base"
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_duck_base"
 }

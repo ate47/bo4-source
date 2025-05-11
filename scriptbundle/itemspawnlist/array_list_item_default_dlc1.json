@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 500,
-            "itementry": "array_list_items_dlc1",
+            "itementry": "scriptbundle&array_list_items_dlc1",
             "maxweight": 500,
             "available": -1
         },
@@ -12,11 +12,15 @@
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 128,
     "type": "itemspawnlist",
     "hash_345eba59": 2,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "array_list_item_default_dlc1",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

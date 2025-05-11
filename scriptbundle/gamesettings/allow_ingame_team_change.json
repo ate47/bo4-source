@@ -1,10 +1,13 @@
 {
-    "hinttext": "#hash_79c3bf2f98460dd5",
+    "hinttext": "localized17#hash_79c3bf2f98460dd5",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "allow_ingame_team_change",
-    "displayname": "#hash_7754d21fe47a195b",
+    "displayname": "localized17#hash_7754d21fe47a195b",
+    "hash_54e336e4": 0,
     "optionscount": 2,
+    "hash_765cfd09": 0,
     "setting": "allowInGameTeamChange",
     "isenableddisabled": 1
 }

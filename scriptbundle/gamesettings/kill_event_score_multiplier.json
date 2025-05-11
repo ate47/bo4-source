@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_9160409056ed145",
+    "hinttext": "localized17#hash_9160409056ed145",
     "configstringfiletype": "scriptbundle",
     "value8": "4.5",
     "value9": "5",
@@ -11,9 +11,13 @@
     "value4": "2.5",
     "value5": "3",
     "type": "gamesettings",
-    "label": "#menu/noloc",
+    "label": "localized17#menu/noloc",
+    "hash_5a6dee5a": 0,
     "name": "kill_event_score_multiplier",
-    "displayname": "#menu/score_multiplier",
+    "displayname": "localized17#menu/score_multiplier",
+    "hash_54e336e4": 0,
     "optionscount": 9,
-    "setting": "killEventScoreMultiplier"
+    "hash_765cfd09": 0,
+    "setting": "killEventScoreMultiplier",
+    "isenableddisabled": 0
 }

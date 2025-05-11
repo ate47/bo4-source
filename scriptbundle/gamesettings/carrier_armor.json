@@ -1,17 +1,21 @@
 {
-    "hinttext": "#hash_687449d390bc2d93",
+    "hinttext": "localized17#hash_687449d390bc2d93",
     "configstringfiletype": "scriptbundle",
     "value2": "100",
     "value3": "200",
     "value1": "0",
     "value4": "50",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "carrier_armor",
-    "displayname": "#menu/carrier_armor",
-    "label4": "#menu/half",
-    "label1": "#menu/disabled",
-    "label3": "#menu/double",
-    "label2": "#menu/normal",
+    "displayname": "localized17#menu/carrier_armor",
+    "label4": "localized17#menu/half",
+    "label1": "localized17#menu/disabled",
+    "label3": "localized17#menu/double",
+    "label2": "localized17#menu/normal",
+    "hash_54e336e4": 0,
     "optionscount": 4,
-    "setting": "carrierArmor"
+    "hash_765cfd09": 0,
+    "setting": "carrierArmor",
+    "isenableddisabled": 0
 }

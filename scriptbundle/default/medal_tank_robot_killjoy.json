@@ -1,10 +1,10 @@
 {
-    "description": "#hash_1ad2499a4dae3666",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_1ad2499a4dae3666",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_tank_robot_killjoy",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_destroy_mantis",
-    "stringref": "#hash_3ec5b746ee2cfc96",
-    "iconlarge": "#ui_icon_medal_destroy_mantis_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_destroy_mantis",
+    "stringref": "localized17#hash_3ec5b746ee2cfc96",
+    "iconlarge": "image#ui_icon_medal_destroy_mantis_large"
 }

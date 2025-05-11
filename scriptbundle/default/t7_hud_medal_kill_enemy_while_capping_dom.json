@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#t7_hud_medal_backing_gamemode",
+    "backingsmall": "image#t7_hud_medal_backing_gamemode",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_kill_enemy_while_capping_dom",
-    "backinglarge": "#t7_hud_medal_backing_gamemode_lrg",
-    "iconsmall": "#t7_hud_medal_kill_enemy_while_capping_dom",
-    "stringref": "#hash_74c273f18b5b72a7",
-    "iconlarge": "#t7_hud_medal_kill_enemy_while_capping_dom_lrg"
+    "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
+    "iconsmall": "image#t7_hud_medal_kill_enemy_while_capping_dom",
+    "stringref": "localized17#hash_74c273f18b5b72a7",
+    "iconlarge": "image#t7_hud_medal_kill_enemy_while_capping_dom_lrg"
 }

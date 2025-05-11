@@ -1,10 +1,10 @@
 {
-    "description": "#hash_7334249088c111a6",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_7334249088c111a6",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_care_package_killjoy",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_no_tip",
-    "stringref": "#hash_307e48b70e2108d6",
-    "iconlarge": "#ui_icon_medal_no_tip_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_no_tip",
+    "stringref": "localized17#hash_307e48b70e2108d6",
+    "iconlarge": "image#ui_icon_medal_no_tip_large"
 }

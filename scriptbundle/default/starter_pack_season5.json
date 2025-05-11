@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_fad8466e5874fd4",
-    "popupimage": "#hash_1c8756afa4400233",
-    "nametext": "#hash_24e6737bf70259b3",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_fad8466e5874fd4",
+    "popupimage": "image#hash_1c8756afa4400233",
+    "nametext": "localized17#hash_24e6737bf70259b3",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "starter_pack_season5",
-    "desctext": "#hash_65154c912bf5d5a5",
-    "previewimage": "#hash_6a8126a123f05fa0",
-    "reserveimage": "#hash_215712d49db315dc"
+    "desctext": "localized17#hash_65154c912bf5d5a5",
+    "previewimage": "image#hash_6a8126a123f05fa0",
+    "reserveimage": "image#hash_215712d49db315dc"
 }

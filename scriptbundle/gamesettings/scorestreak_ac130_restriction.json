@@ -1,13 +1,17 @@
 {
-    "descriptionimage": "#hash_3f1d0885a2d991c3",
+    "descriptionimage": "image#hash_3f1d0885a2d991c3",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "scorestreak_ac130_restriction",
-    "displayname": "#killstreak/ac130",
-    "label1": "#menu/enabled",
-    "label2": "#menu/disabled",
+    "displayname": "localized17#killstreak/ac130",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "itemRestrictions__ac130__restricted"
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ac130__restricted",
+    "isenableddisabled": 0
 }

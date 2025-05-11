@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_2c8cf00fd9f3ebc3",
-    "popupimage": "#hash_222a7e46f9eefadc",
-    "nametext": "#hash_3832ed7c6a055720",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_2c8cf00fd9f3ebc3",
+    "popupimage": "image#hash_222a7e46f9eefadc",
+    "nametext": "localized17#hash_3832ed7c6a055720",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "prophet_deserteagle_outfit_bundle",
-    "desctext": "#hash_1a5ddd0cc6e6d5e8",
-    "previewimage": "#hash_6ef32b8f20039199",
-    "reserveimage": "#hash_6c115d8432fe058b"
+    "desctext": "localized17#hash_1a5ddd0cc6e6d5e8",
+    "previewimage": "image#hash_6ef32b8f20039199",
+    "reserveimage": "image#hash_6c115d8432fe058b"
 }

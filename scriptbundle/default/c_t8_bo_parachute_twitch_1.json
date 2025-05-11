@@ -3,5 +3,5 @@
     "parachute": "weapon#parachute_wz",
     "icon": "loot_ui_icon_jumppacks_parachute_twitch_1",
     "largeicon": "loot_ui_icon_jumppacks_parachute_twitch_1_large",
-    "parachutelit": "wpn_t8_bo_parachute_world_twitch_1"
+    "parachutelit": "model#"
 }

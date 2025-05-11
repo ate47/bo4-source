@@ -1,12 +1,12 @@
 {
     "objects": [
         {
-            "mainanim": "#o_spikes_stand_plant",
-            "model": "#wpn_zmb_dlc1_talon_spikes_prop",
+            "mainanim": "anim4#o_spikes_stand_plant",
+            "model": "model#wpn_zmb_dlc1_talon_spikes_prop",
             "type": "prop",
             "vmtype": "server",
             "name": "mdl_gravity_trap_spikes",
-            "endanimloop": "#o_spikes_planted_idle",
+            "endanimloop": "anim4#o_spikes_planted_idle",
             "team": "any",
             "takedamage": 1
         },

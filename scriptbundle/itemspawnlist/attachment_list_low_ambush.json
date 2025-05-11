@@ -2,63 +2,67 @@
     "itemlist": [
         {
             "minweight": 100,
-            "itementry": "pistol_grip_wz_item",
+            "itementry": "scriptbundle&pistol_grip_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "foregrip_wz_item",
+            "itementry": "scriptbundle&foregrip_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 80,
-            "itementry": "extmag_wz_item",
+            "itementry": "scriptbundle&extmag_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 80,
-            "itementry": "fastmag_wz_item",
+            "itementry": "scriptbundle&fastmag_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "acog_wz_item",
+            "itementry": "scriptbundle&acog_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "reddot_wz_item",
+            "itementry": "scriptbundle&reddot_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "laser_sight_wz_item",
+            "itementry": "scriptbundle&laser_sight_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "stock_wz_item",
+            "itementry": "scriptbundle&stock_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "extbarrel_wz_item",
+            "itementry": "scriptbundle&extbarrel_wz_item",
             "maxweight": 100,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 9,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "attachment_list_low_ambush",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

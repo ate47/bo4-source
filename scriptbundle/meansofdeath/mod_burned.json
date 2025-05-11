@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_burned",
-    "displayname": "#ui/mod_burned",
-    "icon": "#ui_icon_meansofdeath_burned",
-    "iconlarge": "#ui_icon_meansofdeath_burned_xl"
+    "displayname": "localized17#ui/mod_burned",
+    "icon": "image#ui_icon_meansofdeath_burned",
+    "iconlarge": "image#ui_icon_meansofdeath_burned_xl"
 }

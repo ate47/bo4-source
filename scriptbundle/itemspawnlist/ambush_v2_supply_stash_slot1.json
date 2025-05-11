@@ -2,44 +2,48 @@
     "itemlist": [
         {
             "minweight": 50,
-            "itementry": "sniper_fastrechamber_t8_gold_item",
-            "childitementry_1": "ammo_type_338_item",
+            "itementry": "scriptbundle&sniper_fastrechamber_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_338_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "sniper_powerbolt_t8_gold_item",
-            "childitementry_1": "ammo_type_50cal_item",
+            "itementry": "scriptbundle&sniper_powerbolt_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_50cal_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "sniper_quickscope_t8_gold_item",
-            "childitementry_1": "ammo_type_338_item",
+            "itementry": "scriptbundle&sniper_quickscope_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_338_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "health_item_large",
+            "itementry": "scriptbundle&health_item_large",
             "maxweight": 60,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "armor_item_medium",
+            "itementry": "scriptbundle&armor_item_medium",
             "maxweight": 60,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 12000,
     "type": "itemspawnlist",
     "hash_345eba59": 5,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "ambush_v2_supply_stash_slot1",
     "supplystashweight": 100,
+    "hash_dc91e192": 0,
     "supplystash": 1
 }

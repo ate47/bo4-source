@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_1773c92e581bf4cd",
+    "hinttext": "localized17#hash_1773c92e581bf4cd",
     "configstringfiletype": "scriptbundle",
     "value2": "25",
     "value3": "50",
@@ -7,9 +7,13 @@
     "value4": "100",
     "value5": "5",
     "type": "gamesettings",
-    "label": "#hash_601d0fe0faebad9f",
+    "label": "localized17#hash_601d0fe0faebad9f",
+    "hash_5a6dee5a": 0,
     "name": "spawn_health_boost_percent",
-    "displayname": "#hash_28b1e5d6ba5ad23",
+    "displayname": "localized17#hash_28b1e5d6ba5ad23",
+    "hash_54e336e4": 0,
     "optionscount": 4,
-    "setting": "killPointsInEnemyProtectedZone"
+    "hash_765cfd09": 0,
+    "setting": "killPointsInEnemyProtectedZone",
+    "isenableddisabled": 0
 }

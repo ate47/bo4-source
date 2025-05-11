@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_15ce9ac6d61b640b",
-    "popupimage": "#hash_51a2ef7f4f52386d",
-    "nametext": "#hash_20c5774d8fe1faa4",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_15ce9ac6d61b640b",
+    "popupimage": "image#hash_51a2ef7f4f52386d",
+    "nametext": "localized17#hash_20c5774d8fe1faa4",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "ajax_assassin_outfit_bundle",
-    "desctext": "#hash_91e004ca409480c",
-    "previewimage": "#hash_42e16039af0d6278",
-    "reserveimage": "#hash_47de49373a264a93"
+    "desctext": "localized17#hash_91e004ca409480c",
+    "previewimage": "image#hash_42e16039af0d6278",
+    "reserveimage": "image#hash_47de49373a264a93"
 }

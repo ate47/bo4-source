@@ -1,10 +1,10 @@
 {
     "lootid": "#jumppack_heist",
-    "wingsuit": "c_t8_bo_wingsuit_heist",
+    "wingsuit": "scriptbundle&c_t8_bo_wingsuit_heist",
     "image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_preview_benjamins",
     "name": "c_t8_bo_jumpkit_heist",
-    "displayname": "#hash_330bf8ad247252f2",
+    "displayname": "localized17#hash_330bf8ad247252f2",
     "preview_image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_benjamins",
-    "hash_4fa85a25": "dfxt_heist",
-    "parachute": "c_t8_bo_parachute_heist"
+    "hash_4fa85a25": "scriptbundle&dfxt_heist",
+    "parachute": "scriptbundle&c_t8_bo_parachute_heist"
 }

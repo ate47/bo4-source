@@ -1,7 +1,7 @@
 {
     "configstringfiletype": "scriptbundle",
-    "desc": "#hash_9644cccc981e86f",
-    "image": "#loot02_ui_icon_outfit_holidays_extra_warpaint_naughtyornice_stanton",
+    "desc": "localized17#hash_9644cccc981e86f",
+    "image": "image#loot02_ui_icon_outfit_holidays_extra_warpaint_naughtyornice_stanton",
     "stat": "#reward_1",
     "name": "zm_winter_2018_reward_1"
 }

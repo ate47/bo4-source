@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#t7_hud_medal_backing_badassery",
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_kill_enemy_who_killed_teammate",
-    "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
-    "iconsmall": "#t7_hud_medal_kill_enemy_who_killed_teammate",
-    "stringref": "#hash_12aa23dad71fcef0",
-    "iconlarge": "#t7_hud_medal_kill_enemy_who_killed_teammate_lrg"
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#t7_hud_medal_kill_enemy_who_killed_teammate",
+    "stringref": "localized17#hash_12aa23dad71fcef0",
+    "iconlarge": "image#t7_hud_medal_kill_enemy_who_killed_teammate_lrg"
 }

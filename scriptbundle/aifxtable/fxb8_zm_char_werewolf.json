@@ -1,10 +1,10 @@
 {
-    "surfacefxtable_vtollanding": "#hash_1cc16e61f7f6ee88",
+    "surfacefxtable_vtollanding": "surface_fx_table#hash_1cc16e61f7f6ee88",
     "configstringfiletype": "scriptbundle",
     "type": "aifxtable",
     "vmtype": "client",
-    "surfacefxtable_footstep": "#zm_werewolf_footstep",
+    "surfacefxtable_footstep": "surface_fx_table#zm_werewolf_footstep",
     "name": "fxb8_zm_char_werewolf",
-    "surfacefxtable_landing": "#hash_3ea9c255df90466e",
-    "surfacefxtable_jumping": "#hash_3ea9c255df90466e"
+    "surfacefxtable_landing": "surface_fx_table#hash_3ea9c255df90466e",
+    "surfacefxtable_jumping": "surface_fx_table#hash_3ea9c255df90466e"
 }

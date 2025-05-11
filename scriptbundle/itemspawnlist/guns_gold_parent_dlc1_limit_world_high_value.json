@@ -2,51 +2,56 @@
     "itemlist": [
         {
             "minweight": 100,
-            "itementry": "guns_pistols_dlc1",
-            "maxweight": 200
+            "itementry": "scriptbundle&guns_pistols_dlc1",
+            "maxweight": 200,
+            "available": 0
         },
         {
             "minweight": 100,
-            "itementry": "guns_shotguns_dlc1",
-            "maxweight": 200
+            "itementry": "scriptbundle&guns_shotguns_dlc1",
+            "maxweight": 200,
+            "available": 0
         },
         {
             "minweight": 100,
-            "itementry": "guns_smgs_dlc1",
+            "itementry": "scriptbundle&guns_smgs_dlc1",
             "maxweight": 200,
             "available": 2
         },
         {
             "minweight": 100,
-            "itementry": "guns_ars_dlc1",
+            "itementry": "scriptbundle&guns_ars_dlc1",
             "maxweight": 200,
             "available": 2
         },
         {
             "minweight": 100,
-            "itementry": "guns_trs_dlc1",
+            "itementry": "scriptbundle&guns_trs_dlc1",
             "maxweight": 150,
             "available": 2
         },
         {
             "minweight": 100,
-            "itementry": "guns_lmgs_dlc1",
+            "itementry": "scriptbundle&guns_lmgs_dlc1",
             "maxweight": 150,
             "available": 2
         },
         {
             "minweight": 100,
-            "itementry": "guns_snipers_dlc1",
+            "itementry": "scriptbundle&guns_snipers_dlc1",
             "maxweight": 150,
             "available": 2
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 200,
     "type": "itemspawnlist",
     "hash_345eba59": 7,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
     "hash_dc7ffbef": 1,
     "name": "guns_gold_parent_dlc1_limit_world_high_value",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

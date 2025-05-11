@@ -1,9 +1,9 @@
 {
     "callingtask": "#zearned",
     "configstringfiletype": "scriptbundle",
-    "image": "#ui_icon_zm_calling_tasks_zearned",
+    "image": "image#ui_icon_zm_calling_tasks_zearned",
     "dailytarget": 100000,
     "name": "moneyhungry_task",
-    "taskname": "#hash_4c04ae20fe407db3",
-    "descsimple": "#hash_237437962058e06a"
+    "taskname": "localized17#hash_4c04ae20fe407db3",
+    "descsimple": "localized17#hash_237437962058e06a"
 }

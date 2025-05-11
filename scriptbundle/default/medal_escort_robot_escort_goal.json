@@ -1,10 +1,10 @@
 {
-    "description": "#hash_130789bbdcb75ae9",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_130789bbdcb75ae9",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_escort_robot_escort_goal",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_delivered",
-    "stringref": "#hash_3a5593cfafc966b7",
-    "iconlarge": "#ui_icon_medal_delivered_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_delivered",
+    "stringref": "localized17#hash_3a5593cfafc966b7",
+    "iconlarge": "image#ui_icon_medal_delivered_large"
 }

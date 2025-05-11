@@ -1,7 +1,7 @@
 {
-    "detailsicon": "#hash_50fb6dc43abdb622",
-    "hash_6c274f86": "#hash_21d979751787bcd1",
-    "nametext": "#weapon/melee_slaybell_t8",
+    "detailsicon": "image#hash_50fb6dc43abdb622",
+    "hash_6c274f86": "image#hash_21d979751787bcd1",
+    "nametext": "localized17#weapon/melee_slaybell_t8",
     "name": "melee_slaybell_sunset_bundle_shop",
-    "desctext": "#hash_e0e97d07450bff8"
+    "desctext": "localized17#hash_e0e97d07450bff8"
 }

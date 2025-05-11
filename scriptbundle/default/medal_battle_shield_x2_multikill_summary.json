@@ -1,10 +1,10 @@
 {
-    "description": "#hash_1c0e26dc9e7946a6",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_1c0e26dc9e7946a6",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_battle_shield_x2_multikill_summary",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_bully",
-    "stringref": "#hash_229a2cd86e196349",
-    "iconlarge": "#ui_icon_medal_bully_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_bully",
+    "stringref": "localized17#hash_229a2cd86e196349",
+    "iconlarge": "image#ui_icon_medal_bully_large"
 }

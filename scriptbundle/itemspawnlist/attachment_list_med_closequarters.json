@@ -2,33 +2,37 @@
     "itemlist": [
         {
             "minweight": 100,
-            "itementry": "extmag_wz_item",
+            "itementry": "scriptbundle&extmag_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "laser_sight_wz_item",
+            "itementry": "scriptbundle&laser_sight_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "extbarrel_wz_item",
+            "itementry": "scriptbundle&extbarrel_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "stock_wz_item",
+            "itementry": "scriptbundle&stock_wz_item",
             "maxweight": 100,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 4,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "attachment_list_med_closequarters",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

@@ -1,10 +1,10 @@
 {
-    "description": "#hash_39cca45fb49cf761",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_39cca45fb49cf761",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_overwatch_helicopter_killjoy",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_destroy_overwatch",
-    "stringref": "#hash_60d06b641dfcb9af",
-    "iconlarge": "#ui_icon_medal_destroy_overwatch_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_destroy_overwatch",
+    "stringref": "localized17#hash_60d06b641dfcb9af",
+    "iconlarge": "image#ui_icon_medal_destroy_overwatch_large"
 }

@@ -1,10 +1,10 @@
 {
-    "description": "#hash_341aa7641da2900a",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_341aa7641da2900a",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_traversal_kill",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_low_blow",
-    "stringref": "#medal/traversal_kill",
-    "iconlarge": "#ui_icon_medal_low_blow_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_low_blow",
+    "stringref": "localized17#medal/traversal_kill",
+    "iconlarge": "image#ui_icon_medal_low_blow_large"
 }

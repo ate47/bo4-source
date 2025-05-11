@@ -1,10 +1,10 @@
 {
-    "description": "#hash_1b33432b27872435",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_1b33432b27872435",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_war_captured_zone",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_lockdown",
-    "stringref": "#hash_77a66516e263cf63",
-    "iconlarge": "#ui_icon_medal_lockdown_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_lockdown",
+    "stringref": "localized17#hash_77a66516e263cf63",
+    "iconlarge": "image#ui_icon_medal_lockdown_large"
 }

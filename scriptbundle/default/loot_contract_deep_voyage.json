@@ -1,12 +1,12 @@
 {
-    "contracticon": "#hash_2bb99a52c1022e",
-    "relateditemname": "#weapon/smg_fastfire_t8",
-    "contracttitle": "#hash_3824d76b4a721017",
+    "contracticon": "image#hash_2bb99a52c1022e",
+    "relateditemname": "localized17#weapon/smg_fastfire_t8",
+    "contracttitle": "localized17#hash_3824d76b4a721017",
     "name": "loot_contract_deep_voyage",
     "hash_69b5a265": "core_frontend_smg_fastfire_deep_voyage",
-    "hash_4b258f2c": "#hash_2127aae7139504a7",
-    "contractdescription": "#hash_7680bf2bc2219eb1",
+    "hash_4b258f2c": "image#hash_2127aae7139504a7",
+    "contractdescription": "localized17#hash_7680bf2bc2219eb1",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_631267d72e41ae8e",
-    "hash_e08fc162": "#hash_7d8a86decfd51e90"
+    "hash_1c057e8c": "image#hash_631267d72e41ae8e",
+    "hash_e08fc162": "localized17#hash_7d8a86decfd51e90"
 }

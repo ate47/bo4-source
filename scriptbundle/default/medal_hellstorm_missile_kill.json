@@ -1,10 +1,10 @@
 {
-    "description": "#hash_225fdf7a7d34258f",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_225fdf7a7d34258f",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_hellstorm_missile_kill",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_raining_death",
-    "stringref": "#hash_11982b3936ad0ec5",
-    "iconlarge": "#ui_icon_medal_raining_death_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_raining_death",
+    "stringref": "localized17#hash_11982b3936ad0ec5",
+    "iconlarge": "image#ui_icon_medal_raining_death_large"
 }

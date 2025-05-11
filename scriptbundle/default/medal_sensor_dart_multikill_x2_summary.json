@@ -1,10 +1,10 @@
 {
-    "description": "#hash_189abd2f63a1cb02",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_189abd2f63a1cb02",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_sensor_dart_multikill_x2_summary",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_82f17770433f1e1",
-    "stringref": "#hash_7f75eb30514e5382",
-    "iconlarge": "#ui_icon_medal_litandhit_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_82f17770433f1e1",
+    "stringref": "localized17#hash_7f75eb30514e5382",
+    "iconlarge": "image#ui_icon_medal_litandhit_large"
 }

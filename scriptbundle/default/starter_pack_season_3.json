@@ -1,9 +1,9 @@
 {
-    "buttonimage": "#hash_5498db371ca661c2",
-    "popupimage": "#ui_menu_blackmarket_starterpack_large_01",
-    "nametext": "#hash_58fea0d1b9638539",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_5498db371ca661c2",
+    "popupimage": "image#ui_menu_blackmarket_starterpack_large_01",
+    "nametext": "localized17#hash_58fea0d1b9638539",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "starter_pack_season_3",
-    "desctext": "#hash_14c04588ecaecf13",
-    "previewimage": "#ui_menu_blackmarket_starterpack_preview_01"
+    "desctext": "localized17#hash_14c04588ecaecf13",
+    "previewimage": "image#ui_menu_blackmarket_starterpack_preview_01"
 }

@@ -2,15 +2,19 @@
     "itemlist": [
         {
             "minweight": 100,
-            "itementry": "zombie_itemlist_pandemic",
+            "itementry": "scriptbundle&zombie_itemlist_pandemic",
             "maxweight": 100,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 1,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "zombie_infected_itemlist",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

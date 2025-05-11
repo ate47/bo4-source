@@ -4,6 +4,6 @@
     "type": "killcam",
     "vmtype": "none",
     "name": "killcam_rocket",
-    "hash_531c4094": "#explosive fast",
+    "hash_531c4094": "localized17#explosive fast",
     "killcamupdist": 100
 }

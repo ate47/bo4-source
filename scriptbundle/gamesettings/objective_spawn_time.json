@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_5a29440d8bb78582",
+    "hinttext": "localized17#hash_5a29440d8bb78582",
     "configstringfiletype": "scriptbundle",
     "value2": "5",
     "value3": "10",
@@ -9,11 +9,15 @@
     "value4": "15",
     "value5": "30",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "objective_spawn_time",
-    "displayname": "#hash_192e572fd2ceea9e",
-    "label7": "#menu/1_minute",
-    "label1": "#menu/disabled",
+    "displayname": "localized17#hash_192e572fd2ceea9e",
+    "label7": "localized17#menu/1_minute",
+    "label1": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
     "optionscount": 7,
-    "setting": "objectiveSpawnTime"
+    "hash_765cfd09": 0,
+    "setting": "objectiveSpawnTime",
+    "isenableddisabled": 0
 }

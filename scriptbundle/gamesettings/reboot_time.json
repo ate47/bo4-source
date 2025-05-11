@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_56178529aa26e7ea",
+    "hinttext": "localized17#hash_56178529aa26e7ea",
     "configstringfiletype": "scriptbundle",
     "value8": "8",
     "value9": "9",
@@ -18,10 +18,14 @@
     "value14": "30",
     "value16": "60",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "reboot_time",
-    "displayname": "#hash_1c65ea6a88934af6",
-    "label1": "#menu/1_second",
+    "displayname": "localized17#hash_1c65ea6a88934af6",
+    "label1": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
     "optionscount": 16,
-    "setting": "rebootTime"
+    "hash_765cfd09": 0,
+    "setting": "rebootTime",
+    "isenableddisabled": 0
 }

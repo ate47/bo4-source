@@ -1,11 +1,11 @@
 {
     "hash_aa7fbf8b": "j_head",
     "configstringfiletype": "scriptbundle",
-    "hash_c83371f4": "#c_t8_zmb_2ndclass_female_hat3",
+    "hash_c83371f4": "model#c_t8_zmb_2ndclass_female_hat3",
     "type": "destructiblecharacterdef",
     "hash_cb768102": "helmet",
     "vmtype": "both",
     "name": "c_t8_zmb_2ndclass_female2_hat3_dst_def",
     "piececount": 1,
-    "hash_19e4a0d": "#c_t8_zmb_2ndclass_female_hat3"
+    "hash_19e4a0d": "model#c_t8_zmb_2ndclass_female_hat3"
 }

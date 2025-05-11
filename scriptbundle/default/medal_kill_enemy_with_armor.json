@@ -1,10 +1,10 @@
 {
-    "description": "#hash_1866450e4bd79121",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_1866450e4bd79121",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_with_armor",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_shattered",
-    "stringref": "#hash_60f897ed013c816f",
-    "iconlarge": "#ui_icon_medal_shattered_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_shattered",
+    "stringref": "localized17#hash_60f897ed013c816f",
+    "iconlarge": "image#ui_icon_medal_shattered_large"
 }

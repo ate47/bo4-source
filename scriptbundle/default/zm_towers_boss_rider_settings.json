@@ -1,4 +1,5 @@
 {
+    "hash_10460f1e": 0,
     "configstringfiletype": "scriptbundle",
     "maxhealth": 100,
     "instakilldamagescale": 1,
@@ -9,5 +10,7 @@
     "hash_97b22faa": 1,
     "damagescale": 0.1,
     "category": "#boss",
+    "hash_854eebd": 0,
+    "stunduration": 0,
     "animationspeed": 1
 }

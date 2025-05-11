@@ -2,99 +2,103 @@
     "itemlist": [
         {
             "minweight": 100,
-            "itementry": "itemlist_frag",
+            "itementry": "scriptbundle&itemlist_frag",
             "maxweight": 125,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "itemlist_concussion",
+            "itementry": "scriptbundle&itemlist_concussion",
             "maxweight": 125,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "sensor_dart_wz_item",
+            "itementry": "scriptbundle&sensor_dart_wz_item",
             "maxweight": 125,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "hatchet_wz_item",
+            "itementry": "scriptbundle&hatchet_wz_item",
             "maxweight": 125,
             "available": -1
         },
         {
             "minweight": 60,
-            "itementry": "itemlist_molotov",
+            "itementry": "scriptbundle&itemlist_molotov",
             "maxweight": 70,
             "available": -1
         },
         {
             "minweight": 60,
-            "itementry": "concertina_wire_wz_item",
+            "itementry": "scriptbundle&concertina_wire_wz_item",
             "maxweight": 70,
             "available": -1
         },
         {
             "minweight": 40,
-            "itementry": "itemlist_cluster_semtex",
+            "itementry": "scriptbundle&itemlist_cluster_semtex",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 40,
-            "itementry": "itemlist_swat_grenade",
+            "itementry": "scriptbundle&itemlist_swat_grenade",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 40,
-            "itementry": "trip_wire_wz_item",
+            "itementry": "scriptbundle&trip_wire_wz_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 60,
-            "itementry": "barricade_wz_item",
+            "itementry": "scriptbundle&barricade_wz_item",
             "maxweight": 70,
             "available": -1
         },
         {
             "minweight": 60,
-            "itementry": "trophy_system_wz_item",
+            "itementry": "scriptbundle&trophy_system_wz_item",
             "maxweight": 70,
             "available": -1
         },
         {
             "minweight": 60,
-            "itementry": "grapple_wz_item",
+            "itementry": "scriptbundle&grapple_wz_item",
             "maxweight": 70,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "itemlist_cymbol_monkey",
+            "itementry": "scriptbundle&itemlist_cymbol_monkey",
             "maxweight": 125,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "itemlist_smoke_grenade",
+            "itementry": "scriptbundle&itemlist_smoke_grenade",
             "maxweight": 125,
             "available": -1
         },
         {
             "minweight": 40,
-            "itementry": "recon_car_wz_item",
+            "itementry": "scriptbundle&recon_car_wz_item",
             "maxweight": 50,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 15,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "floor_list_equipment",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

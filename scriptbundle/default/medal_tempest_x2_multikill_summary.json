@@ -1,10 +1,10 @@
 {
-    "description": "#hash_25af78c1d864167e",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_25af78c1d864167e",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_tempest_x2_multikill_summary",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_tempest",
-    "stringref": "#hash_39bbf62370c9fac6",
-    "iconlarge": "#ui_icon_medal_tempest_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_tempest",
+    "stringref": "localized17#hash_39bbf62370c9fac6",
+    "iconlarge": "image#ui_icon_medal_tempest_large"
 }

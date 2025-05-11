@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_4b0abb0dd42faa2c",
+    "hinttext": "localized17#hash_4b0abb0dd42faa2c",
     "value8": "2500",
     "value9": "4000",
     "value2": "300",
@@ -19,9 +19,13 @@
     "value16": "3500",
     "value19": "5000",
     "value18": "4500",
-    "label": "#menu/x_money",
+    "label": "localized17#menu/x_money",
+    "hash_5a6dee5a": 0,
     "name": "bag_money",
-    "displayname": "#menu/bag_money",
+    "displayname": "localized17#menu/bag_money",
+    "hash_54e336e4": 0,
     "optionscount": 10,
-    "setting": "bountyBagOMoneyMoney"
+    "hash_765cfd09": 0,
+    "setting": "bountyBagOMoneyMoney",
+    "isenableddisabled": 0
 }

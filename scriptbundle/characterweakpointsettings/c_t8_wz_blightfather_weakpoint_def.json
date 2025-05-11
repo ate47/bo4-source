@@ -1,6 +1,7 @@
 {
     "weakpoints": [
         {
+            "hash_8223b0cf": 0,
             "type": "#weakpoint",
             "hash_910e2f9b": "j_head",
             "hash_51e8b151": "tag_mouth_weakspot",
@@ -9,6 +10,7 @@
             "health": 0.3
         },
         {
+            "hash_8223b0cf": 0,
             "type": "#weakpoint",
             "hash_51e8b151": "tag_elbow_weakspot_le",
             "activebydefault": 1,
@@ -16,6 +18,7 @@
             "health": 0.06
         },
         {
+            "hash_8223b0cf": 0,
             "type": "#weakpoint",
             "hash_51e8b151": "tag_elbow_weakspot_ri",
             "activebydefault": 1,
@@ -23,6 +26,7 @@
             "health": 0.06
         },
         {
+            "hash_8223b0cf": 0,
             "type": "#weakpoint",
             "hash_51e8b151": "tag_eggsack_weakspot_le",
             "activebydefault": 1,
@@ -30,6 +34,7 @@
             "health": 0.35
         },
         {
+            "hash_8223b0cf": 0,
             "type": "#weakpoint",
             "hash_51e8b151": "tag_eggsack_weakspot_ri",
             "activebydefault": 1,
@@ -38,7 +43,7 @@
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "model": "#c_t8_zmb_blightfather_body1",
+    "model": "model#c_t8_zmb_blightfather_body1",
     "type": "characterweakpointsettings",
     "name": "c_t8_wz_blightfather_weakpoint_def",
     "hash_96a09826": 5

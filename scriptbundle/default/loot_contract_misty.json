@@ -1,9 +1,9 @@
 {
-    "contracticon": "#hash_2f98c463a02c871c",
-    "contracttitle": "#menu/contract_misty",
+    "contracticon": "image#hash_2f98c463a02c871c",
+    "contracttitle": "localized17#menu/contract_misty",
     "name": "loot_contract_misty",
-    "contractdescription": "#menu/blackout_character",
+    "contractdescription": "localized17#menu/blackout_character",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_77b7303027d05e92",
-    "hash_e08fc162": "#hash_490d8ac5a53902e6"
+    "hash_1c057e8c": "image#hash_77b7303027d05e92",
+    "hash_e08fc162": "localized17#hash_490d8ac5a53902e6"
 }

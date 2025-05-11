@@ -13,9 +13,13 @@
     "value10": "10",
     "value12": "12",
     "type": "gamesettings",
-    "label": "#menu/noloc",
+    "label": "localized17#menu/noloc",
+    "hash_5a6dee5a": 0,
     "name": "max_players",
-    "displayname": "#menu/max_players",
+    "displayname": "localized17#menu/max_players",
+    "hash_54e336e4": 0,
     "optionscount": 12,
-    "setting": "maxPlayers"
+    "hash_765cfd09": 0,
+    "setting": "maxPlayers",
+    "isenableddisabled": 0
 }

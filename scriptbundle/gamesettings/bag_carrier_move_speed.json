@@ -1,15 +1,19 @@
 {
-    "hinttext": "#hash_5f5ce5309b90aae8",
+    "hinttext": "localized17#hash_5f5ce5309b90aae8",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "1.5",
     "value1": ".5",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "bag_carrier_move_speed",
-    "displayname": "#hash_750072f6ce79be20",
-    "label1": "#menu/slow",
-    "label3": "#menu/fast",
-    "label2": "#menu/normal",
+    "displayname": "localized17#hash_750072f6ce79be20",
+    "label1": "localized17#menu/slow",
+    "label3": "localized17#menu/fast",
+    "label2": "localized17#menu/normal",
+    "hash_54e336e4": 0,
     "optionscount": 3,
-    "setting": "bountyBagOMoneyMoveScale"
+    "hash_765cfd09": 0,
+    "setting": "bountyBagOMoneyMoveScale",
+    "isenableddisabled": 0
 }

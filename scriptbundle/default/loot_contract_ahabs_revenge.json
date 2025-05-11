@@ -1,12 +1,12 @@
 {
-    "contracticon": "#hash_1e59303d6c27796a",
-    "relateditemname": "#weapon/tr_longburst_t8",
-    "contracttitle": "#hash_d8622d38b0078a8",
+    "contracticon": "image#hash_1e59303d6c27796a",
+    "relateditemname": "localized17#weapon/tr_longburst_t8",
+    "contracttitle": "localized17#hash_d8622d38b0078a8",
     "name": "loot_contract_ahabs_revenge",
     "hash_69b5a265": "core_frontend_tr_longburst_ahabs_revenge",
-    "hash_4b258f2c": "#hash_7d47d54878e779f",
-    "contractdescription": "#hash_7680bf2bc2219eb1",
+    "hash_4b258f2c": "image#hash_7d47d54878e779f",
+    "contractdescription": "localized17#hash_7680bf2bc2219eb1",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_7d77c2620e84744a",
-    "hash_e08fc162": "#hash_577eafb8e374dbe7"
+    "hash_1c057e8c": "image#hash_7d77c2620e84744a",
+    "hash_e08fc162": "localized17#hash_577eafb8e374dbe7"
 }

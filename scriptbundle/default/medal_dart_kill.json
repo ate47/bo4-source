@@ -1,10 +1,10 @@
 {
-    "description": "#hash_67406e07507ea337",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_67406e07507ea337",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_dart_kill",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_jetfighter",
-    "stringref": "#medal/dart_kill",
-    "iconlarge": "#ui_icon_medal_jetfighter_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_jetfighter",
+    "stringref": "localized17#medal/dart_kill",
+    "iconlarge": "image#ui_icon_medal_jetfighter_large"
 }

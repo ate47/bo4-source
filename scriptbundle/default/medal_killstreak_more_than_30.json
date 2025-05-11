@@ -1,10 +1,10 @@
 {
-    "description": "#hash_6f636012a1ddc3ff",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_6f636012a1ddc3ff",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_killstreak_more_than_30",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_unstoppable",
-    "stringref": "#hash_4239595ba030e555",
-    "iconlarge": "#ui_icon_medal_unstoppable_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_unstoppable",
+    "stringref": "localized17#hash_4239595ba030e555",
+    "iconlarge": "image#ui_icon_medal_unstoppable_large"
 }

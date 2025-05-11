@@ -93,6 +93,7 @@
     "pitchacceleration": 10,
     "hash_b9f05fc": 0.5,
     "hash_c850085f": 1,
+    "movingads": 0,
     "hash_d5bf8f0d": 0.85,
     "hash_25664dde": 1000,
     "pitchsensitivity": 1,
@@ -111,12 +112,15 @@
     "maxsightdist": 8192,
     "fov": 179,
     "adsdot": 0.85,
+    "pacifist": 0,
     "maxrange": 2500,
     "hash_2b02e26a": 15,
     "hash_b392418": 0.1,
     "hash_f58a14bd": 0.8,
     "hash_69610dbe": 25,
+    "pathenemyfightdist": 0,
     "hash_5eaa9e02": 1,
     "hash_bc0b2a06": 1.1,
-    "accuracy": 1
+    "accuracy": 1,
+    "hash_d1fb2f1a": 0
 }

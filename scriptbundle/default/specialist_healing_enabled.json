@@ -1,7 +1,11 @@
 {
-    "hinttext": "#hash_18f16f68238e8aaf",
+    "hinttext": "localized17#hash_18f16f68238e8aaf",
+    "hash_5a6dee5a": 0,
     "name": "specialist_healing_enabled",
-    "displayname": "#hash_131c7d8c7d2e9b69",
+    "displayname": "localized17#hash_131c7d8c7d2e9b69",
+    "hash_54e336e4": 0,
+    "optionscount": 0,
+    "hash_765cfd09": 0,
     "setting": "specialistHealingEnabled_allies_1",
     "isenableddisabled": 1
 }

@@ -1,11 +1,11 @@
 {
-    "hash_2d50617": "#pb_death_base_pose",
+    "hash_2d50617": "anim5#pb_death_base_pose",
     "configstringfiletype": "scriptbundle",
     "type": "ragdollsettings",
-    "hash_4790d8dd": "#ai_robot_base_stn_exposed_dth_pose",
-    "hash_91d279ad": "#ai_wrlrd_stn_combat_dth_pose",
+    "hash_4790d8dd": "anim4#ai_robot_base_stn_exposed_dth_pose",
+    "hash_91d279ad": "anim4#ai_wrlrd_stn_combat_dth_pose",
     "name": "ragdollsettings",
-    "humanidleanim": "#ai_base_rifle_stn_exposed_dth_pose",
-    "hash_6c83cd47": "#ai_fem_rifle_stn_exposed_dth_pose",
-    "hash_2cea3cec": "#ai_zombie_base_dth_pose"
+    "humanidleanim": "anim4#ai_base_rifle_stn_exposed_dth_pose",
+    "hash_6c83cd47": "anim4#ai_fem_rifle_stn_exposed_dth_pose",
+    "hash_2cea3cec": "anim4#ai_zombie_base_dth_pose"
 }

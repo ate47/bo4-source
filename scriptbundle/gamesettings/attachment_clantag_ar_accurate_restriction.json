@@ -1,8 +1,12 @@
 {
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "attachment_clantag_ar_accurate_restriction",
-    "displayname": "#weapon/ar_accurate_t8",
+    "displayname": "localized17#weapon/ar_accurate_t8",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "itemRestrictions__ar_accurate_t8__attachments__clantag"
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ar_accurate_t8__attachments__clantag",
+    "isenableddisabled": 0
 }

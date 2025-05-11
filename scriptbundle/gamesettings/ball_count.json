@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_4b5d46ad6d4fb1d2",
+    "hinttext": "localized17#hash_4b5d46ad6d4fb1d2",
     "configstringfiletype": "scriptbundle",
     "value2": "2",
     "value3": "3",
@@ -7,10 +7,14 @@
     "value4": "4",
     "value5": "5",
     "type": "gamesettings",
-    "label": "#menu/x_balls",
+    "label": "localized17#menu/x_balls",
+    "hash_5a6dee5a": 0,
     "name": "ball_count",
-    "displayname": "#menu/ball_count",
-    "label1": "#menu/1_ball",
+    "displayname": "localized17#menu/ball_count",
+    "label1": "localized17#menu/1_ball",
+    "hash_54e336e4": 0,
     "optionscount": 5,
-    "setting": "ballCount"
+    "hash_765cfd09": 0,
+    "setting": "ballCount",
+    "isenableddisabled": 0
 }

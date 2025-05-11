@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_1b2646160d590579",
-    "popupimage": "#hash_50bef717c0f65e8b",
-    "nametext": "#hash_45b9e4f14e46dd88",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_1b2646160d590579",
+    "popupimage": "image#hash_50bef717c0f65e8b",
+    "nametext": "localized17#hash_45b9e4f14e46dd88",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "torque_assassin_outfit_bundle",
-    "desctext": "#hash_7a70770460a95090",
-    "previewimage": "#hash_65f5ece37aad600a",
-    "reserveimage": "#hash_79dd884fe215d6f5"
+    "desctext": "localized17#hash_7a70770460a95090",
+    "previewimage": "image#hash_65f5ece37aad600a",
+    "reserveimage": "image#hash_79dd884fe215d6f5"
 }

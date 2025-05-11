@@ -1,7 +1,7 @@
 {
-    "detailsicon": "#hash_5ede1bf6dc49daae",
-    "hash_6c274f86": "#hash_524c0034254092bb",
-    "nametext": "#weapon/melee_cutlass_t8",
+    "detailsicon": "image#hash_5ede1bf6dc49daae",
+    "hash_6c274f86": "image#hash_524c0034254092bb",
+    "nametext": "localized17#weapon/melee_cutlass_t8",
     "name": "melee_risingtide_sunset_bundle_shop",
-    "desctext": "#hash_15835a1c86d35a2b"
+    "desctext": "localized17#hash_15835a1c86d35a2b"
 }

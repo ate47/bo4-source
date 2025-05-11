@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_a7c1cc07efaca9d",
+    "hinttext": "localized17#hash_a7c1cc07efaca9d",
     "configstringfiletype": "scriptbundle",
     "value8": "15",
     "value9": "20",
@@ -14,11 +14,15 @@
     "value10": "25",
     "value12": "45",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "auto_decay",
-    "displayname": "#hash_d973c9b6c2792d3",
-    "label1": "#menu/disabled",
-    "label2": "#menu/1_second",
+    "displayname": "localized17#hash_d973c9b6c2792d3",
+    "label1": "localized17#menu/disabled",
+    "label2": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
     "optionscount": 12,
-    "setting": "autoDecayTime"
+    "hash_765cfd09": 0,
+    "setting": "autoDecayTime",
+    "isenableddisabled": 0
 }

@@ -1,17 +1,21 @@
 {
-    "hinttext": "#hash_6e0ddede3d792366",
+    "hinttext": "localized17#hash_6e0ddede3d792366",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
     "value1": "0",
     "value4": "3",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "zm_minibossfrequency",
-    "displayname": "#hash_5a4c1293b8b75b5f",
-    "label4": "#hash_6aa28260a8fffe8",
-    "label1": "#hash_8547de6ff2e6e2a",
-    "label3": "#hash_3d70f0da8afd383a",
-    "label2": "#hash_4bf59e78dfb9da30",
+    "displayname": "localized17#hash_5a4c1293b8b75b5f",
+    "label4": "localized17#hash_6aa28260a8fffe8",
+    "label1": "localized17#hash_8547de6ff2e6e2a",
+    "label3": "localized17#hash_3d70f0da8afd383a",
+    "label2": "localized17#hash_4bf59e78dfb9da30",
+    "hash_54e336e4": 0,
     "optionscount": 4,
-    "setting": "zmMinibossSpawnFreq"
+    "hash_765cfd09": 0,
+    "setting": "zmMinibossSpawnFreq",
+    "isenableddisabled": 0
 }

@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_73d2e1890582a7f2",
+    "hinttext": "localized17#hash_73d2e1890582a7f2",
     "configstringfiletype": "scriptbundle",
     "value8": "25",
     "value2": "1",
@@ -10,10 +10,14 @@
     "value4": "3",
     "value5": "4",
     "type": "gamesettings",
-    "label": "#menu/x_points",
+    "label": "localized17#menu/x_points",
+    "hash_5a6dee5a": 0,
     "name": "points_per_secondary_kill",
-    "displayname": "#hash_2b466d22afb38cee",
-    "label2": "#menu/1_point",
+    "displayname": "localized17#hash_2b466d22afb38cee",
+    "label2": "localized17#menu/1_point",
+    "hash_54e336e4": 0,
     "optionscount": 8,
-    "setting": "pointsPerSecondaryKill"
+    "hash_765cfd09": 0,
+    "setting": "pointsPerSecondaryKill",
+    "isenableddisabled": 0
 }

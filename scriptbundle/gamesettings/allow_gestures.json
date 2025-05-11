@@ -1,10 +1,13 @@
 {
-    "hinttext": "#hash_68f88f19e8f572bf",
+    "hinttext": "localized17#hash_68f88f19e8f572bf",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "allow_gestures",
-    "displayname": "#menu/allow_gestures",
+    "displayname": "localized17#menu/allow_gestures",
+    "hash_54e336e4": 0,
     "optionscount": 2,
+    "hash_765cfd09": 0,
     "setting": "boastEnabled",
     "isenableddisabled": 1
 }

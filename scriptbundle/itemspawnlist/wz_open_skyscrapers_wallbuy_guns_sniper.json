@@ -2,33 +2,37 @@
     "itemlist": [
         {
             "minweight": 1,
-            "itementry": "sniper_fastrechamber_t8_wallbuy_item",
+            "itementry": "scriptbundle&sniper_fastrechamber_t8_wallbuy_item",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "itementry": "sniper_powerbolt_t8_wallbuy_item",
+            "itementry": "scriptbundle&sniper_powerbolt_t8_wallbuy_item",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "itementry": "sniper_quickscope_t8_wallbuy_item",
+            "itementry": "scriptbundle&sniper_quickscope_t8_wallbuy_item",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "itementry": "sniper_powersemi_t8_wallbuy_item",
+            "itementry": "scriptbundle&sniper_powersemi_t8_wallbuy_item",
             "maxweight": 1,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 4,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "wz_open_skyscrapers_wallbuy_guns_sniper",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

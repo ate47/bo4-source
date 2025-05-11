@@ -1,16 +1,16 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "#hash_338ac2c6c906b7f2"
+            "hash_826726a": "localized17#hash_338ac2c6c906b7f2"
         }
     ],
-    "contracticon": "#hash_240e71d0a2b0b9ca",
+    "contracticon": "image#hash_240e71d0a2b0b9ca",
     "hash_d0100eab": 1,
-    "relateditemname": "#hash_3b87d7eb92a261aa",
-    "contracttitle": "#hash_338ac2c6c906b7f2",
+    "relateditemname": "localized17#hash_3b87d7eb92a261aa",
+    "contracttitle": "localized17#hash_338ac2c6c906b7f2",
     "name": "loot_contract_seraph_splinter",
-    "contractdescription": "#hash_40a2ff4afd63b73",
+    "contractdescription": "localized17#hash_40a2ff4afd63b73",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_7bb3da148644c778",
-    "hash_e08fc162": "#hash_68fd7eb321aa416d"
+    "hash_1c057e8c": "image#hash_7bb3da148644c778",
+    "hash_e08fc162": "localized17#hash_68fd7eb321aa416d"
 }

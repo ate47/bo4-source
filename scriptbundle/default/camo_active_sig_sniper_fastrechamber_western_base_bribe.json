@@ -1,11 +1,11 @@
 {
-    "hash_c7bd8867": "#hash_44a39e95faef0a4c",
-    "popupimage": "#hash_5867d6ad0e7df1ab",
-    "hash_5162d01b": "#hash_5867d6ad0e7df1ab",
-    "nametext": "#hash_38698d6863661eb6",
-    "categorytext": "#mpui/bm_bribe",
+    "hash_c7bd8867": "localized17#hash_44a39e95faef0a4c",
+    "popupimage": "image#hash_5867d6ad0e7df1ab",
+    "hash_5162d01b": "image#hash_5867d6ad0e7df1ab",
+    "nametext": "localized17#hash_38698d6863661eb6",
+    "categorytext": "localized17#mpui/bm_bribe",
     "name": "camo_active_sig_sniper_fastrechamber_western_base_bribe",
-    "desctext": "#hash_286785b1d3472c6",
-    "hash_e35e7c74": "#weapon/sniper_fastrechamber_t8",
-    "hash_c1acffb6": "#hash_38698d6863661eb6"
+    "desctext": "localized17#hash_286785b1d3472c6",
+    "hash_e35e7c74": "localized17#weapon/sniper_fastrechamber_t8",
+    "hash_c1acffb6": "localized17#hash_38698d6863661eb6"
 }

@@ -1,39 +1,39 @@
 {
     "imagearray": [
         {
-            "image": "#ui_icon_hvo_mvp_battery",
+            "image": "image#ui_icon_hvo_mvp_battery",
             "specialist": "#hash_25d901b2845affb5"
         },
         {
-            "image": "#ui_icon_hvo_mvp_ajax",
+            "image": "image#ui_icon_hvo_mvp_ajax",
             "specialist": "#hash_641d42086962443d"
         },
         {
-            "image": "#ui_icon_hvo_mvp_crash",
+            "image": "image#ui_icon_hvo_mvp_crash",
             "specialist": "#hash_271546989f2b39c0"
         },
         {
-            "image": "#ui_icon_hvo_mvp_firebreak",
+            "image": "image#ui_icon_hvo_mvp_firebreak",
             "specialist": "#hash_17c8471ad085983b"
         },
         {
-            "image": "#ui_icon_hvo_mvp_nomad",
+            "image": "image#ui_icon_hvo_mvp_nomad",
             "specialist": "#hash_bac19a8a93f750a"
         },
         {
-            "image": "#ui_icon_hvo_mvp_prophet",
+            "image": "image#ui_icon_hvo_mvp_prophet",
             "specialist": "#hash_74a7b1f09eb77129"
         },
         {
-            "image": "#ui_icon_hvo_mvp_recon",
+            "image": "image#ui_icon_hvo_mvp_recon",
             "specialist": "#hash_265a8bfe9e6a3a8f"
         },
         {
-            "image": "#ui_icon_hvo_mvp_seraph",
+            "image": "image#ui_icon_hvo_mvp_seraph",
             "specialist": "#hash_35abb557417d97bc"
         },
         {
-            "image": "#ui_icon_hvo_mvp_torque",
+            "image": "image#ui_icon_hvo_mvp_torque",
             "specialist": "#hash_34c5e1c04823489d"
         }
     ],
@@ -43,36 +43,36 @@
             "hash_82670522": "stats_ekia",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_2391441b1e8929a5"
+            "displaystatname": "localized17#hash_2391441b1e8929a5"
         },
         {
             "hash_233a23b6": 1,
             "stattype": "objectiveekia",
             "hash_26568428": 1,
-            "displaystatname": "#hash_5d1ab6f5e0227795"
+            "displaystatname": "localized17#hash_5d1ab6f5e0227795"
         },
         {
             "hash_233a23b6": 1,
             "stattype": "damagedone",
             "hash_26568428": 1,
-            "displaystatname": "#hash_7d5bfb6a433e4d37"
+            "displaystatname": "localized17#hash_7d5bfb6a433e4d37"
         },
         {
             "hash_233a23b6": 1,
             "hash_82670522": "stats_shutdowns",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_158193577a14c86e"
+            "displaystatname": "localized17#hash_158193577a14c86e"
         },
         {
             "hash_233a23b6": 1,
             "stattype": "objectivetime",
             "hash_26568428": 1,
-            "displaystatname": "#hash_646cc2b52d248258"
+            "displaystatname": "localized17#hash_646cc2b52d248258"
         }
     ],
-    "defaultimage": "#ui_icon_hvo_base",
-    "cardname": "#hash_70404868e22c0030",
+    "defaultimage": "image#ui_icon_hvo_base",
+    "cardname": "localized17#hash_70404868e22c0030",
     "name": "mvp_koth_hvo",
     "associatedgamemode": "koth"
 }

@@ -1,12 +1,12 @@
 {
-    "hash_284bb15c": "#hash_646862bef4948b72",
-    "hash_bde2a7a": "#hash_7ce495b03d022f7b",
-    "hash_c6fc3ef": "#hash_646862bef4948b72",
-    "hash_51c1ff70": "#menu/community_goal",
-    "nametext": "#weapon/ar_galil_t8",
-    "categorytext": "#menu/community_contract",
+    "hash_284bb15c": "localized17#hash_646862bef4948b72",
+    "hash_bde2a7a": "localized17#hash_7ce495b03d022f7b",
+    "hash_c6fc3ef": "localized17#hash_646862bef4948b72",
+    "hash_51c1ff70": "localized17#menu/community_goal",
+    "nametext": "localized17#weapon/ar_galil_t8",
+    "categorytext": "localized17#menu/community_contract",
     "name": "community_galil_achievement",
-    "desctext": "#hash_4297cab466591ff5",
-    "hash_8dc3b89b": "#ui_icon_weapon_ar_galil_render_xl",
-    "reserveimage": "#hash_3489edbc14fb1ab8"
+    "desctext": "localized17#hash_4297cab466591ff5",
+    "hash_8dc3b89b": "image#ui_icon_weapon_ar_galil_render_xl",
+    "reserveimage": "image#hash_3489edbc14fb1ab8"
 }

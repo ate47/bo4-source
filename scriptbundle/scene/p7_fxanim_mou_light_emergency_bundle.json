@@ -1,8 +1,8 @@
 {
     "objects": [
         {
-            "mainanim": "#hash_20ae6d3601fcb685",
-            "model": "#p7_fxanim_mou_light_emergency_mod",
+            "mainanim": "anim4#hash_20ae6d3601fcb685",
+            "model": "model#p7_fxanim_mou_light_emergency_mod",
             "type": "prop",
             "vmtype": "server",
             "maindelaymax": 26,

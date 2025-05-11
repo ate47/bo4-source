@@ -1,12 +1,12 @@
 {
-    "contracticon": "#hash_122aa7239d32261e",
-    "relateditemname": "#weapon/smg_handling_t8",
-    "contracttitle": "#hash_1c07c87a45375aaf",
+    "contracticon": "image#hash_122aa7239d32261e",
+    "relateditemname": "localized17#weapon/smg_handling_t8",
+    "contracttitle": "localized17#hash_1c07c87a45375aaf",
     "name": "loot_contract_spinal_trap",
     "hash_69b5a265": "core_frontend_smg_handling_party_rock",
-    "hash_4b258f2c": "#hash_2f384027de380f64",
-    "contractdescription": "#hash_7e40f1e9f5f5b22",
+    "hash_4b258f2c": "image#hash_2f384027de380f64",
+    "contractdescription": "localized17#hash_7e40f1e9f5f5b22",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_2f384027de380f64",
-    "hash_e08fc162": "#hash_3dab7c3f83b698e0"
+    "hash_1c057e8c": "image#hash_2f384027de380f64",
+    "hash_e08fc162": "localized17#hash_3dab7c3f83b698e0"
 }

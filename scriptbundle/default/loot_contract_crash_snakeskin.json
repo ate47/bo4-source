@@ -1,19 +1,19 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "#hash_726c3e54092e5e04"
+            "hash_826726a": "localized17#hash_726c3e54092e5e04"
         },
         {
-            "hash_826726a": "#hash_feee6890a6759fe"
+            "hash_826726a": "localized17#hash_feee6890a6759fe"
         }
     ],
-    "contracticon": "#hash_61e2184d0656316",
+    "contracticon": "image#hash_61e2184d0656316",
     "hash_d0100eab": 2,
-    "relateditemname": "#hash_feee6890a6759fe",
-    "contracttitle": "#hash_726c3e54092e5e04",
+    "relateditemname": "localized17#hash_feee6890a6759fe",
+    "contracttitle": "localized17#hash_726c3e54092e5e04",
     "name": "loot_contract_crash_snakeskin",
-    "contractdescription": "#hash_88f3d374c07d9de",
+    "contractdescription": "localized17#hash_88f3d374c07d9de",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_67ed572b48f8ba7c",
-    "hash_e08fc162": "#hash_5a76a11108391b97"
+    "hash_1c057e8c": "image#hash_67ed572b48f8ba7c",
+    "hash_e08fc162": "localized17#hash_5a76a11108391b97"
 }

@@ -1,7 +1,11 @@
 {
-    "hinttext": "#menu/announcer_hint",
+    "hinttext": "localized17#menu/announcer_hint",
+    "hash_5a6dee5a": 0,
     "name": "allow_announcer",
-    "displayname": "#menu/announcer",
+    "displayname": "localized17#menu/announcer",
+    "hash_54e336e4": 0,
+    "optionscount": 0,
+    "hash_765cfd09": 0,
     "setting": "allowAnnouncer",
     "isenableddisabled": 1
 }

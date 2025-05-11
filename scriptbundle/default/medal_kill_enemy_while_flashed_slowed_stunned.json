@@ -1,10 +1,10 @@
 {
-    "description": "#hash_2b3f1bc86d0ec917",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_2b3f1bc86d0ec917",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_while_flashed_slowed_stunned",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_blindfire",
-    "stringref": "#hash_ceece76ced211ad",
-    "iconlarge": "#ui_icon_medal_blindfire_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_blindfire",
+    "stringref": "localized17#hash_ceece76ced211ad",
+    "iconlarge": "image#ui_icon_medal_blindfire_large"
 }

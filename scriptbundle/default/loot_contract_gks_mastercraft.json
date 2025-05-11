@@ -1,12 +1,12 @@
 {
-    "contracticon": "#hash_7c1a53d4c9e0cac3",
-    "relateditemname": "#weapon/smg_accurate_t8",
-    "contracttitle": "#hash_191028e9a3510d26",
+    "contracticon": "image#hash_7c1a53d4c9e0cac3",
+    "relateditemname": "localized17#weapon/smg_accurate_t8",
+    "contracttitle": "localized17#hash_191028e9a3510d26",
     "name": "loot_contract_gks_mastercraft",
     "hash_69b5a265": "core_frontend_smg_accurate_sig_03",
-    "hash_4b258f2c": "#hash_7bf8357f6235ef2a",
-    "contractdescription": "#hash_7680bf2bc2219eb1",
+    "hash_4b258f2c": "image#hash_7bf8357f6235ef2a",
+    "contractdescription": "localized17#hash_7680bf2bc2219eb1",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_3a642a4a25c27195",
-    "hash_e08fc162": "#hash_517f29abeb7ea956"
+    "hash_1c057e8c": "image#hash_3a642a4a25c27195",
+    "hash_e08fc162": "localized17#hash_517f29abeb7ea956"
 }

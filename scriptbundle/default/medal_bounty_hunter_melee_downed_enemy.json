@@ -1,10 +1,10 @@
 {
-    "description": "#hash_2ed622b3e97d3bc3",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_2ed622b3e97d3bc3",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_bounty_hunter_melee_downed_enemy",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_aggression",
-    "stringref": "#hash_71cb511ab36ba14c",
-    "iconlarge": "#ui_icon_medal_aggression_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_aggression",
+    "stringref": "localized17#hash_71cb511ab36ba14c",
+    "iconlarge": "image#ui_icon_medal_aggression_large"
 }

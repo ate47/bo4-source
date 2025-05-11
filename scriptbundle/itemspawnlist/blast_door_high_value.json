@@ -2,27 +2,31 @@
     "itemlist": [
         {
             "minweight": 1,
-            "itementry": "floor_list_sniper",
+            "itementry": "scriptbundle&floor_list_sniper",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "armor_item_large",
+            "itementry": "scriptbundle&armor_item_large",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "backpack_item",
+            "itementry": "scriptbundle&backpack_item",
             "maxweight": 1,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 3,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "blast_door_high_value",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

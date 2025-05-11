@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_547ba4a8f6ed2830",
-    "popupimage": "#hash_17c6b1c62e3535dc",
-    "nametext": "#hash_14c20b3a0525b2f1",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_547ba4a8f6ed2830",
+    "popupimage": "image#hash_17c6b1c62e3535dc",
+    "nametext": "localized17#hash_14c20b3a0525b2f1",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "firebreak_dragonslayer_outfit_bundle",
-    "desctext": "#hash_762f942cc3415e4b",
-    "previewimage": "#hash_4bb0fbeead125499",
-    "reserveimage": "#hash_73f141fd900570c8"
+    "desctext": "localized17#hash_762f942cc3415e4b",
+    "previewimage": "image#hash_4bb0fbeead125499",
+    "reserveimage": "image#hash_73f141fd900570c8"
 }

@@ -148,12 +148,15 @@
     "maxsightdist": 8192,
     "fov": 180,
     "adsdot": 0.8,
+    "pacifist": 0,
     "maxrange": 8192,
     "hash_2b02e26a": 20,
     "hash_b392418": 0.1,
     "hash_f58a14bd": 0.8,
     "hash_69610dbe": 25,
+    "pathenemyfightdist": 0,
     "hash_5eaa9e02": 1,
     "hash_bc0b2a06": 2,
-    "accuracy": 1
+    "accuracy": 1,
+    "hash_d1fb2f1a": 0
 }

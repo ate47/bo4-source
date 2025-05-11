@@ -1,6 +1,6 @@
 {
     "configstringfiletype": "scriptbundle",
-    "model": "#c_t8_zmb_blightfather_body1",
+    "model": "model#c_t8_zmb_blightfather_body1",
     "type": "ainotetrackbonemapping",
     "footstep_left_forward": "j_palm_le",
     "footstep_right_back": "j_ball_ri",

@@ -1,10 +1,10 @@
 {
-    "description": "#hash_641cb0760dc3146e",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_641cb0760dc3146e",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_killed_enemy_while_carrying_flag",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_denied",
-    "stringref": "#hash_3c7dadd64b7f725e",
-    "iconlarge": "#hash_27a971d64fd423d1"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_denied",
+    "stringref": "localized17#hash_3c7dadd64b7f725e",
+    "iconlarge": "image#hash_27a971d64fd423d1"
 }

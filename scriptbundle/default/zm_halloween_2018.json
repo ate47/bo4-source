@@ -1,24 +1,24 @@
 {
     "rewardlist": [
         {
-            "reward": "zm_halloween_2018_reward_1",
-            "task": "zombiekiller_task"
+            "reward": "scriptbundle&zm_halloween_2018_reward_1",
+            "task": "scriptbundle&zombiekiller_task"
         },
         {
-            "reward": "zm_halloween_2018_reward_2",
-            "task": "survivor_task"
+            "reward": "scriptbundle&zm_halloween_2018_reward_2",
+            "task": "scriptbundle&survivor_task"
         },
         {
-            "reward": "zm_halloween_2018_reward_3",
-            "task": "headhunter_task"
+            "reward": "scriptbundle&zm_halloween_2018_reward_3",
+            "task": "scriptbundle&headhunter_task"
         },
         {
-            "reward": "zm_halloween_2018_reward_4",
-            "task": "packingheat_task"
+            "reward": "scriptbundle&zm_halloween_2018_reward_4",
+            "task": "scriptbundle&packingheat_task"
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "eventname": "#hash_655aa46bbfd449b1",
+    "eventname": "localized17#hash_655aa46bbfd449b1",
     "name": "zm_halloween_2018",
-    "hash_febf6e03": "#hash_42cb8a52a85047c1"
+    "hash_febf6e03": "localized17#hash_42cb8a52a85047c1"
 }

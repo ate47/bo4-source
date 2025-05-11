@@ -1,8 +1,8 @@
 {
-    "backingsmall": "#$white",
+    "backingsmall": "image#$white",
     "widget": "BadasseryMedal",
     "name": "events_battle_command_command_combo",
-    "backinglarge": "#$white",
-    "iconsmall": "#$white",
-    "iconlarge": "#$white"
+    "backinglarge": "image#$white",
+    "iconsmall": "image#$white",
+    "iconlarge": "image#$white"
 }

@@ -2,12 +2,14 @@
     "deathcirclelist": [
         {
             "hash_bb9f7c3f": 60,
+            "hash_95437170": 0,
             "hash_24ae2e27": 90,
             "hash_50d5787c": 120,
             "circledelay": 120,
             "hash_1dfb1051": 60,
             "hash_96584cff": 30,
             "circledamage": 2,
+            "hash_a3841ae2": 0,
             "hash_5a8689a9": 1,
             "circleradius": 19000,
             "hash_112f6f50": 1000,
@@ -67,9 +69,12 @@
             "hash_85589312": 30
         }
     ],
+    "hash_672f2d98": 0,
     "configstringfiletype": "scriptbundle",
     "type": "deathcircle",
     "name": "wz_escape_death_circles_default",
+    "hash_8d8aa969": 0,
+    "hash_904b645e": 0,
     "hash_7a60538a": 4,
     "hash_64232072": 60,
     "hash_6c870a00": 10,

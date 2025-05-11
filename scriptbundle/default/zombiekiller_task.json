@@ -1,9 +1,9 @@
 {
     "callingtask": "#kills",
     "configstringfiletype": "scriptbundle",
-    "image": "#zm_calling_tasks_xkills",
+    "image": "image#zm_calling_tasks_xkills",
     "dailytarget": 1200,
     "name": "zombiekiller_task",
-    "taskname": "#hash_1cccdf3e71b5d14b",
-    "descsimple": "#hash_191dbcd862da37d2"
+    "taskname": "localized17#hash_1cccdf3e71b5d14b",
+    "descsimple": "localized17#hash_191dbcd862da37d2"
 }

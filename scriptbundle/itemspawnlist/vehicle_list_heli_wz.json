@@ -2,29 +2,30 @@
     "itemlist": [
         {
             "minweight": 1,
-            "itementry": "helicopter_light_wz_vehicle_tan",
+            "itementry": "scriptbundle&helicopter_light_wz_vehicle_tan",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "itementry": "helicopter_light_wz_vehicle_grey",
+            "itementry": "scriptbundle&helicopter_light_wz_vehicle_grey",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "itementry": "helicopter_light_wz_vehicle_dark",
+            "itementry": "scriptbundle&helicopter_light_wz_vehicle_dark",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "itementry": "helicopter_light_wz_vehicle_black",
+            "itementry": "scriptbundle&helicopter_light_wz_vehicle_black",
             "maxweight": 1,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 4000,
     "type": "itemspawnlist",
@@ -33,5 +34,6 @@
     "hash_9b009839": -1,
     "hash_dc7ffbef": 1,
     "name": "vehicle_list_heli_wz",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

@@ -28,7 +28,7 @@
                     "bonuscard": "#bonuscard_primary_gunfighter"
                 }
             ],
-            "customclassname": "#hash_6c31d516ad144bd3",
+            "customclassname": "localized17#hash_6c31d516ad144bd3",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#ar_fastfire_t8",
@@ -68,7 +68,7 @@
                     "bonuscard": "#bonuscard_primary_gunfighter"
                 }
             ],
-            "customclassname": "#hash_6c31d616ad144d86",
+            "customclassname": "localized17#hash_6c31d616ad144d86",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#smg_handling_t8",
@@ -105,7 +105,7 @@
                     "bonuscard": "#bonuscard_primary_gunfighter"
                 }
             ],
-            "customclassname": "#hash_6c31d716ad144f39",
+            "customclassname": "localized17#hash_6c31d716ad144f39",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#ar_accurate_t8",
@@ -145,7 +145,7 @@
                     "bonuscard": "#bonuscard_primary_gunfighter"
                 }
             ],
-            "customclassname": "#hash_6c31d816ad1450ec",
+            "customclassname": "localized17#hash_6c31d816ad1450ec",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#tr_longburst_t8",
@@ -188,7 +188,7 @@
                     "bonuscard": "#bonuscard_perk_2_greed"
                 }
             ],
-            "customclassname": "#hash_6c31d916ad14529f",
+            "customclassname": "localized17#hash_6c31d916ad14529f",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#sniper_powerbolt_t8",
@@ -228,7 +228,7 @@
                     "bonuscard": "#bonuscard_primary_gunfighter"
                 }
             ],
-            "customclassname": "#hash_6c31da16ad145452",
+            "customclassname": "localized17#hash_6c31da16ad145452",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 4,
             "primary": "#smg_fastfire_t8",
@@ -267,7 +267,7 @@
                     "bonuscard": "#bonuscard_primary_gunfighter"
                 }
             ],
-            "customclassname": "#class/slot1",
+            "customclassname": "localized17#class/slot1",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#ar_fastfire_t8",
@@ -307,7 +307,7 @@
                     "bonuscard": "#bonuscard_primary_gunfighter"
                 }
             ],
-            "customclassname": "#class/slot2",
+            "customclassname": "localized17#class/slot2",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#smg_handling_t8",
@@ -344,7 +344,7 @@
                     "bonuscard": "#bonuscard_primary_gunfighter"
                 }
             ],
-            "customclassname": "#class/slot3",
+            "customclassname": "localized17#class/slot3",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#ar_accurate_t8",
@@ -384,7 +384,7 @@
                     "bonuscard": "#bonuscard_primary_gunfighter"
                 }
             ],
-            "customclassname": "#class/slot4",
+            "customclassname": "localized17#class/slot4",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#tr_longburst_t8",
@@ -427,7 +427,7 @@
                     "bonuscard": "#bonuscard_perk_2_greed"
                 }
             ],
-            "customclassname": "#class/slot5",
+            "customclassname": "localized17#class/slot5",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#sniper_powerbolt_t8",
@@ -467,7 +467,7 @@
                     "bonuscard": "#bonuscard_primary_gunfighter"
                 }
             ],
-            "customclassname": "#class/slot6",
+            "customclassname": "localized17#class/slot6",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#smg_fastfire_t8",

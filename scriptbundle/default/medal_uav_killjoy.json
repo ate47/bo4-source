@@ -1,10 +1,10 @@
 {
-    "description": "#hash_27a8f58e40ca902a",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_27a8f58e40ca902a",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_uav_killjoy",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_fly_swatter",
-    "stringref": "#medal/uav_killjoy",
-    "iconlarge": "#ui_icon_medal_fly_swatter_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_fly_swatter",
+    "stringref": "localized17#medal/uav_killjoy",
+    "iconlarge": "image#ui_icon_medal_fly_swatter_large"
 }

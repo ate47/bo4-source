@@ -2,9 +2,9 @@
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
     "blueprintcount": 3,
-    "blueprint01": "zblueprint_office_key",
-    "blueprint02": "zblueprint_office_audio_reels",
-    "blueprint03": "zblueprint_office_punch_cards",
+    "blueprint01": "scriptbundle&zblueprint_office_key",
+    "blueprint02": "scriptbundle&zblueprint_office_audio_reels",
+    "blueprint03": "scriptbundle&zblueprint_office_punch_cards",
     "name": "ztable_office_items",
     "displayname": "office_items"
 }

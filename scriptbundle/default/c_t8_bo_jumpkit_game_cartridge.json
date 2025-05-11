@@ -1,10 +1,10 @@
 {
     "lootid": "#c_t8_bo_jumpkit_game_cartridge",
-    "wingsuit": "c_t8_bo_wingsuit_game_cartridge",
+    "wingsuit": "scriptbundle&c_t8_bo_wingsuit_game_cartridge",
     "image": "loot04_ui_icon_blackmarket_item_shop_wingsuit_preview_game_cartridge",
     "name": "c_t8_bo_jumpkit_game_cartridge",
-    "displayname": "#hash_db41d831b55c4a6",
+    "displayname": "localized17#hash_db41d831b55c4a6",
     "preview_image": "loot04_ui_icon_blackmarket_item_shop_wingsuit_game_cartridge",
-    "hash_4fa85a25": "dfxt_game_cartridge",
-    "parachute": "c_t8_bo_parachute_game_cartridge"
+    "hash_4fa85a25": "scriptbundle&dfxt_game_cartridge",
+    "parachute": "scriptbundle&c_t8_bo_parachute_game_cartridge"
 }

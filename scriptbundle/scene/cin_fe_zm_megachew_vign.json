@@ -1,19 +1,47 @@
 {
     "objects": [
         {
-            "model": "#tag_origin_animate",
+            "hash_5829ce6b": 0,
+            "hash_69db1665": 0,
+            "skipdeathanim": 0,
+            "hash_9de1f44c": 0,
+            "lerptime": 0,
+            "model": "model#tag_origin_animate",
             "type": "prop",
+            "hash_a1c5c678": 0,
             "deletewhenfinished": 1,
-            "name": "tag_origin_animate"
+            "usefakeactor": 0,
+            "name": "tag_origin_animate",
+            "hash_2baad8fc": 0,
+            "hash_69aabff2": 0,
+            "hash_16999a5d": 0,
+            "hash_29563fd6": 0,
+            "hash_eb00c330": 0,
+            "cameratweenout": 0,
+            "hash_be60a82b": 0,
+            "hash_922b4fc5": 0,
+            "hash_3e692842": 0,
+            "preserveangle": 0,
+            "cameratween": 0
         }
     ],
+    "hash_e3b54868": 0,
     "scenetype": "scene",
+    "hash_6a17a93d": 0,
     "configstringfiletype": "scriptbundle",
+    "looping": 0,
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "client",
     "name": "cin_fe_zm_megachew_vign",
     "dontsync": 1,
+    "hash_241c5f3c": 0,
     "aligntarget": "zm_gum_position",
-    "team": "any"
+    "hash_16999a5d": 0,
+    "hash_29563fd6": 0,
+    "hash_eb00c330": 0,
+    "team": "any",
+    "hash_be60a82b": 0,
+    "hash_922b4fc5": 0,
+    "hash_3e692842": 0
 }

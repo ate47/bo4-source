@@ -1,8 +1,12 @@
 {
-    "hash_4dbc4aee": "#hash_12b2ee41f7902a2d",
+    "hash_4dbc4aee": "localized18#hash_12b2ee41f7902a2d",
+    "hash_11928e3b": 0,
     "configstringfiletype": "scriptbundle",
     "result": "weapon#zitem_silver_bullet_part_4_zm",
     "type": "craftblueprint",
+    "hash_3c809ce0": 0,
+    "hash_e414062": 0,
+    "hash_2206e7ed": 0,
     "component01": "weapon#zitem_silver_molten_part_1_zm",
     "component02": "weapon#zitem_silver_molten_part_2_zm",
     "component03": "weapon#zitem_silver_molten_part_3_zm",

@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_405eb64d37d34300",
+    "hinttext": "localized17#hash_405eb64d37d34300",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
@@ -8,13 +8,17 @@
     "value4": "3",
     "value5": "4",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "zm_healthdrain",
-    "displayname": "#hash_7c9ee92d1f597a18",
-    "label5": "#hash_4137b6b6187e7239",
-    "label4": "#hash_2ee9ac05a3167882",
-    "label1": "#hash_68b65fb510ccd214",
-    "label3": "#hash_1ba60b6389d20648",
-    "label2": "#hash_54a83205d1ca87f6",
+    "displayname": "localized17#hash_7c9ee92d1f597a18",
+    "label5": "localized17#hash_4137b6b6187e7239",
+    "label4": "localized17#hash_2ee9ac05a3167882",
+    "label1": "localized17#hash_68b65fb510ccd214",
+    "label3": "localized17#hash_1ba60b6389d20648",
+    "label2": "localized17#hash_54a83205d1ca87f6",
+    "hash_54e336e4": 0,
     "optionscount": 4,
-    "setting": "zmHealthDrain"
+    "hash_765cfd09": 0,
+    "setting": "zmHealthDrain",
+    "isenableddisabled": 0
 }

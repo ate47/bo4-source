@@ -1,15 +1,19 @@
 {
-    "hinttext": "#hash_1227ad58b0a24094",
+    "hinttext": "localized17#hash_1227ad58b0a24094",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
     "value1": "0",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "allow_hit_markers",
-    "displayname": "#hash_604f112b14b5ad14",
-    "label1": "#menu/disabled",
-    "label3": "#menu/enabled",
-    "label2": "#hash_24e72113c6573be9",
+    "displayname": "localized17#hash_604f112b14b5ad14",
+    "label1": "localized17#menu/disabled",
+    "label3": "localized17#menu/enabled",
+    "label2": "localized17#hash_24e72113c6573be9",
+    "hash_54e336e4": 0,
     "optionscount": 3,
-    "setting": "allowhitmarkers"
+    "hash_765cfd09": 0,
+    "setting": "allowhitmarkers",
+    "isenableddisabled": 0
 }

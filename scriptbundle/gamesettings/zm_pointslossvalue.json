@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_6664a16f499861e2",
+    "hinttext": "localized17#hash_6664a16f499861e2",
     "hash_2632eb24": "10000",
     "configstringfiletype": "scriptbundle",
     "value8": "800",
@@ -102,10 +102,13 @@
     "hash_216254dc": "5300",
     "hash_3094f341": "5200",
     "type": "gamesettings",
-    "label": "#hash_6ddfdbc62371ad01",
+    "label": "localized17#hash_6ddfdbc62371ad01",
+    "hash_5a6dee5a": 0,
     "name": "zm_pointslossvalue",
-    "displayname": "#hash_35a4f697d2d1a972",
+    "displayname": "localized17#hash_35a4f697d2d1a972",
     "hash_54e336e4": 1,
     "optionscount": 100,
-    "setting": "zmPointsLossValue"
+    "hash_765cfd09": 0,
+    "setting": "zmPointsLossValue",
+    "isenableddisabled": 0
 }

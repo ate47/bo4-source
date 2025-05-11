@@ -57,7 +57,7 @@
                     "bubblegumbuff": "#zm_bgb_always_done_swiftly"
                 }
             ],
-            "customclassname": "#hash_ee3630f4388a62d",
+            "customclassname": "localized17#hash_ee3630f4388a62d",
             "primarygrenade_2": "#eq_frag_grenade",
             "herogadget_2": "#hero_scepter_lv1",
             "hash_45424319": "#pistol_topbreak_t8",
@@ -65,7 +65,7 @@
             "hash_6be35a7a": 4,
             "startweapon": "#pistol_topbreak_t8",
             "hash_a2df9d5d": 4,
-            "hash_5f547a4f": "#hash_4f8d84604b888008",
+            "hash_5f547a4f": "localized17#hash_4f8d84604b888008",
             "hash_4a73ec43": 4,
             "primarygrenade": "#eq_frag_grenade",
             "herogadget": "#hero_minigun_t8_lv1"
@@ -127,7 +127,7 @@
                     "bubblegumbuff": "#zm_bgb_always_done_swiftly"
                 }
             ],
-            "customclassname": "#hash_dab575d92d936e8",
+            "customclassname": "localized17#hash_dab575d92d936e8",
             "primarygrenade_2": "#eq_frag_grenade",
             "herogadget_2": "#hero_hammer_lv1",
             "hash_45424319": "#pistol_topbreak_t8",
@@ -135,7 +135,7 @@
             "hash_6be35a7a": 4,
             "startweapon": "#pistol_topbreak_t8",
             "hash_a2df9d5d": 4,
-            "hash_5f547a4f": "#hash_1f47de964c1c4c4c",
+            "hash_5f547a4f": "localized17#hash_1f47de964c1c4c4c",
             "hash_4a73ec43": 4,
             "primarygrenade": "#eq_frag_grenade",
             "herogadget": "#hero_katana_t8_lv1"
@@ -197,7 +197,7 @@
                     "bubblegumbuff": "#zm_bgb_equip_mint"
                 }
             ],
-            "customclassname": "#hash_2d00d882ae82161d",
+            "customclassname": "localized17#hash_2d00d882ae82161d",
             "primarygrenade_2": "#eq_frag_grenade",
             "herogadget_2": "#hero_chakram_lv1",
             "hash_45424319": "#pistol_topbreak_t8",
@@ -205,7 +205,7 @@
             "hash_6be35a7a": 4,
             "startweapon": "#pistol_topbreak_t8",
             "hash_a2df9d5d": 4,
-            "hash_5f547a4f": "#hash_983224dbda3747f",
+            "hash_5f547a4f": "localized17#hash_983224dbda3747f",
             "hash_4a73ec43": 4,
             "primarygrenade": "#eq_frag_grenade",
             "herogadget": "#hero_gravityspikes_t8_lv1"
@@ -267,7 +267,7 @@
                     "bubblegumbuff": "#zm_bgb_always_done_swiftly"
                 }
             ],
-            "customclassname": "#hash_886f2b39a507f7c",
+            "customclassname": "localized17#hash_886f2b39a507f7c",
             "primarygrenade_2": "#eq_frag_grenade",
             "herogadget_2": "#hero_sword_pistol_lv1",
             "hash_45424319": "#pistol_topbreak_t8",
@@ -275,7 +275,7 @@
             "hash_6be35a7a": 4,
             "startweapon": "#pistol_topbreak_t8",
             "hash_a2df9d5d": 4,
-            "hash_5f547a4f": "#hash_a81f6d7e4b4fe27",
+            "hash_5f547a4f": "localized17#hash_a81f6d7e4b4fe27",
             "hash_4a73ec43": 4,
             "primarygrenade": "#eq_frag_grenade",
             "herogadget": "#hero_flamethrower_t8_lv1"
@@ -337,7 +337,7 @@
                     "bubblegumbuff": "#zm_bgb_temporal_gift"
                 }
             ],
-            "customclassname": "#hash_38fa62ae2a4db339",
+            "customclassname": "localized17#hash_38fa62ae2a4db339",
             "primarygrenade_2": "#claymore",
             "herogadget_2": "#hero_hammer_lv1",
             "hash_45424319": "#tr_leveraction_t8",
@@ -345,7 +345,7 @@
             "hash_6be35a7a": 4,
             "startweapon": "#pistol_burst_t8",
             "hash_a2df9d5d": 4,
-            "hash_5f547a4f": "#hash_3ebc51ebd36d60b9",
+            "hash_5f547a4f": "localized17#hash_3ebc51ebd36d60b9",
             "hash_4a73ec43": 4,
             "primarygrenade": "#claymore",
             "herogadget": "#hero_gravityspikes_t8_lv1"
@@ -407,7 +407,7 @@
                     "bubblegumbuff": "#zm_bgb_newtonian_negation"
                 }
             ],
-            "customclassname": "#hash_77d86e3587212d8d",
+            "customclassname": "localized17#hash_77d86e3587212d8d",
             "primarygrenade_2": "#eq_wraith_fire",
             "herogadget_2": "#hero_chakram_lv1",
             "hash_45424319": "#pistol_burst_t8",
@@ -415,7 +415,7 @@
             "hash_6be35a7a": 4,
             "startweapon": "#pistol_burst_t8",
             "hash_a2df9d5d": 4,
-            "hash_5f547a4f": "#hash_78d8dbc2e189765f",
+            "hash_5f547a4f": "localized17#hash_78d8dbc2e189765f",
             "hash_4a73ec43": 4,
             "primarygrenade": "#eq_wraith_fire",
             "herogadget": "#hero_flamethrower_t8_lv1"

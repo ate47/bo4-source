@@ -1,8 +1,8 @@
 {
     "objects": [
         {
-            "mainanim": "#hash_2de9020c72665e3c",
-            "model": "#c_t7_ally_fb",
+            "mainanim": "anim5#hash_2de9020c72665e3c",
+            "model": "model#c_t7_ally_fb",
             "type": "fakeplayer",
             "vmtype": "server",
             "name": "bot",

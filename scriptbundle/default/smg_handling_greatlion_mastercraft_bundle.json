@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_66270c67521155c4",
-    "popupimage": "#hash_523c106e58339e30",
-    "nametext": "#hash_61632f5639cfa1f0",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_66270c67521155c4",
+    "popupimage": "image#hash_523c106e58339e30",
+    "nametext": "localized17#hash_61632f5639cfa1f0",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "smg_handling_greatlion_mastercraft_bundle",
-    "desctext": "#hash_271265d6fddb5558",
-    "previewimage": "#hash_1001c055245c6fed",
-    "reserveimage": "#hash_237f99e0f741dd4c"
+    "desctext": "localized17#hash_271265d6fddb5558",
+    "previewimage": "image#hash_1001c055245c6fed",
+    "reserveimage": "image#hash_237f99e0f741dd4c"
 }

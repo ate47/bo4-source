@@ -12,21 +12,21 @@
             "hittag": "j_helmet"
         }
     ],
-    "hash_ce6ea3fa": "#c_t8_zmb_dlc2_skeleton_helmet",
+    "hash_ce6ea3fa": "model#c_t8_zmb_dlc2_skeleton_helmet",
     "hash_aa7fbf8b": "tag_weapon_right",
     "hash_20a1cc0c": 0.1,
     "hash_5e937f7f": 1,
     "configstringfiletype": "scriptbundle",
-    "hash_c83371f4": "#c_t8_zmb_dlc2_skeleton_spear",
+    "hash_c83371f4": "model#c_t8_zmb_dlc2_skeleton_spear",
     "type": "destructiblecharacterdef",
     "hash_9fdd055b": "j_head",
     "vmtype": "both",
     "hash_446db2da": "tag_weapon_right",
     "name": "c_t8_zmb_dlc2_skeleton_helmet_spear_dst_def",
-    "hash_4d756ec6": "#c_t8_zmb_dlc2_skeleton_helmet",
+    "hash_4d756ec6": "model#c_t8_zmb_dlc2_skeleton_helmet",
     "hash_125aa24f": 1,
     "hash_55d2a6b2": 2,
     "piececount": 2,
-    "hash_19e4a0d": "#p8_mov_zm_gla_weapon_spear_01",
+    "hash_19e4a0d": "model#p8_mov_zm_gla_weapon_spear_01",
     "hash_56d63213": "j_head"
 }

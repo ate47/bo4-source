@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_207ec99f03be660f",
+    "hinttext": "localized17#hash_207ec99f03be660f",
     "configstringfiletype": "scriptbundle",
     "value8": "45",
     "value9": "60",
@@ -14,13 +14,17 @@
     "value10": "90",
     "value12": "150",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "bomb_timer",
-    "displayname": "#menu/bomb_timer",
-    "label9": "#menu/1_minute",
+    "displayname": "localized17#menu/bomb_timer",
+    "label9": "localized17#menu/1_minute",
+    "hash_54e336e4": 0,
     "optionscount": 12,
-    "label10": "#hash_5dbd9f48fce80488",
-    "label11": "#menu/2_minutes",
-    "label12": "#hash_71034403a0922b19",
-    "setting": "bombTimer"
+    "label10": "localized17#hash_5dbd9f48fce80488",
+    "label11": "localized17#menu/2_minutes",
+    "label12": "localized17#hash_71034403a0922b19",
+    "hash_765cfd09": 0,
+    "setting": "bombTimer",
+    "isenableddisabled": 0
 }

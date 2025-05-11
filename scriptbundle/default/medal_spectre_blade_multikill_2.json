@@ -1,10 +1,10 @@
 {
-    "description": "#hash_76acfae8a597f2f7",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_76acfae8a597f2f7",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_spectre_blade_multikill_2",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_whirlwind",
-    "stringref": "#hash_4bac34c02176b4cd",
-    "iconlarge": "#hash_5b9ecfca39afa410"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_whirlwind",
+    "stringref": "localized17#hash_4bac34c02176b4cd",
+    "iconlarge": "image#hash_5b9ecfca39afa410"
 }

@@ -1,13 +1,17 @@
 {
-    "descriptionimage": "#ui_icon_attachment_suppressivebarrel",
+    "descriptionimage": "image#ui_icon_attachment_suppressivebarrel",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "operator_oppressor_restriction",
-    "displayname": "#hash_5b72cee708252959",
-    "label1": "#menu/disabled",
-    "label2": "#menu/enabled",
+    "displayname": "localized17#hash_5b72cee708252959",
+    "label1": "localized17#menu/disabled",
+    "label2": "localized17#menu/enabled",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "itemRestrictions__lmg_standard_t8__attachments__uber"
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__lmg_standard_t8__attachments__uber",
+    "isenableddisabled": 0
 }

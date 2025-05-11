@@ -1,11 +1,11 @@
 {
     "configstringfiletype": "scriptbundle",
     "type": "turretanims",
-    "hash_9323d5c1": "#hash_764fa926bc5e5d11",
-    "centerstraightanim": "#hash_6b8648706933ad67",
+    "hash_9323d5c1": "anim5#hash_764fa926bc5e5d11",
+    "centerstraightanim": "anim5#hash_6b8648706933ad67",
     "vmtype": "none",
     "name": "player_helicopter_pilot",
     "aimpitchangleu": 90,
     "aimpitchangled": 90,
-    "hash_9b47c071": "#hash_764fa926bc5e5d11"
+    "hash_9b47c071": "anim5#hash_764fa926bc5e5d11"
 }

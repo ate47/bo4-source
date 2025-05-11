@@ -2,17 +2,18 @@
     "itemlist": [
         {
             "minweight": 1,
-            "itementry": "helicopter_light_wz_vehicle_police",
+            "itementry": "scriptbundle&helicopter_light_wz_vehicle_police",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 3,
-            "itementry": "helicopter_attack_wz_vehicle_heroes",
+            "itementry": "scriptbundle&helicopter_attack_wz_vehicle_heroes",
             "maxweight": 3,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 4000,
     "type": "itemspawnlist",
@@ -21,5 +22,6 @@
     "hash_9b009839": -1,
     "hash_dc7ffbef": 1,
     "name": "vehicle_list_police_attack_heli_wz",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

@@ -3,6 +3,7 @@
         {
             "hitloc": "helmet",
             "hash_641ce20e": 1,
+            "hash_8223b0cf": 0,
             "type": "#armor",
             "hash_51e8b151": "j_head",
             "activebydefault": 1,
@@ -35,7 +36,7 @@
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "model": "#c_t8_zmb_dlc2_gegenees_fb1",
+    "model": "model#c_t8_zmb_dlc2_gegenees_fb1",
     "type": "characterweakpointsettings",
     "name": "c_t8_zmb_gegenees_weakpoint_def",
     "hash_96a09826": 4

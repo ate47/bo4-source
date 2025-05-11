@@ -2,39 +2,43 @@
     "itemlist": [
         {
             "minweight": 100,
-            "itementry": "sniperscope_wz_item",
+            "itementry": "scriptbundle&sniperscope_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "acog_plus_wz_item",
+            "itementry": "scriptbundle&acog_plus_wz_item",
             "maxweight": 150,
             "available": -1
         },
         {
             "minweight": 90,
-            "itementry": "fastmag_wz_item",
+            "itementry": "scriptbundle&fastmag_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 90,
-            "itementry": "extmag_wz_item",
+            "itementry": "scriptbundle&extmag_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 90,
-            "itementry": "stock_wz_item",
+            "itementry": "scriptbundle&stock_wz_item",
             "maxweight": 100,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 5,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "attachment_list_med_ambush",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

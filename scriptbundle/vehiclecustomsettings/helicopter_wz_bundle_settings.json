@@ -1,50 +1,53 @@
 {
     "lightgroups_3_slots": [
         {
-            "fx": "#hash_721990bf03bf0871",
+            "fx": "fx#hash_721990bf03bf0871",
             "tag": "tag_body"
         }
     ],
     "lightgroups_4_slots": [
         {
-            "fx": "#hash_461e71ea94d3f253",
+            "fx": "fx#hash_461e71ea94d3f253",
             "tag": "tag_body"
         }
     ],
     "malfunction_effects": [
         {
-            "fatal": "#hash_4470dad4063cfa2b",
-            "warning": "#hash_4470dcd4063cfd91",
+            "fatal": "fx#hash_4470dad4063cfa2b",
+            "warning": "fx#hash_4470dcd4063cfd91",
             "hash_2f451e59": "tag_fx_console_malfunction_02",
             "tag_warning": "tag_fx_console_malfunction_02",
             "hash_ceeccc7a": "tag_fx_console_malfunction_02",
             "hash_454a4e08": "tag_fx_console_malfunction_02",
-            "active": "#hash_4470d9d4063cf878",
-            "transition": "#hash_25c1e3b03689a0aa"
+            "active": "fx#hash_4470d9d4063cf878",
+            "transition": "fx#hash_25c1e3b03689a0aa"
         },
         {
-            "fatal": "#hash_64d440b1450e7466",
-            "warning": "#hash_64d43fb1450e72b3",
+            "fatal": "fx#hash_64d440b1450e7466",
+            "warning": "fx#hash_64d43fb1450e72b3",
             "hash_2f451e59": "tag_body",
             "tag_warning": "tag_body",
             "hash_ceeccc7a": "tag_body",
             "hash_454a4e08": "tag_body",
-            "active": "#hash_64d440b1450e7466",
-            "transition": "#hash_6ad36dd4e650a170"
+            "active": "fx#hash_64d440b1450e7466",
+            "transition": "fx#hash_6ad36dd4e650a170"
         }
     ],
     "hash_77c7a074": 400,
-    "hash_22107604": "#hash_3fb86fc1d47bba1",
-    "hash_2dcf8d82": "#veh_t8_mil_helicopter_light_debris_skids",
-    "hash_9476dad3": "#veh_t8_mil_helicopter_light_debris_fastrope_bar",
-    "hash_a244f66f": "#veh_t8_mil_helicopter_light_debris_tail",
+    "hash_22107604": "model#hash_3fb86fc1d47bba1",
+    "hash_2dcf8d82": "model#veh_t8_mil_helicopter_light_debris_skids",
+    "hash_9476dad3": "model#veh_t8_mil_helicopter_light_debris_fastrope_bar",
+    "hash_a244f66f": "model#veh_t8_mil_helicopter_light_debris_tail",
     "hash_efc15586": 10,
     "hash_e1d36c37": 300,
+    "hash_6754976b": 0,
     "turret_fire_burst_max": 5,
     "hash_2c69a255": 5,
     "hash_93360fe": 10,
+    "hash_22b9bee1": 0,
     "forwardjukeengagementheightmax": 300,
     "damagestate_lv1_ratio": 0.75,
+    "hash_95ebe8e0": 0,
     "hash_2ade16ee": 450,
     "hash_c15b13ab": 500,
     "hash_9cdbf8c1": 1000,
@@ -68,9 +71,9 @@
     "hash_c5e4c9ab": 200,
     "defaultmovespeed": 5,
     "type": "vehiclecustomsettings",
-    "hash_a03cd491": "#hash_4ecb7eec753ad761",
-    "hash_4d8e2f31": "#hash_4ecb7eec753ad761",
-    "hash_3bd38bbc": "#hash_679cb2457e735297",
+    "hash_a03cd491": "fx#hash_4ecb7eec753ad761",
+    "hash_4d8e2f31": "fx#hash_4ecb7eec753ad761",
+    "hash_3bd38bbc": "fx#hash_679cb2457e735297",
     "max_move_dist": 100,
     "empdowntime": 10,
     "all_knowing": 1,
@@ -95,13 +98,14 @@
     "engagementheightmax": 300,
     "hash_d7c02937": 2,
     "hash_23061240": 40,
+    "hash_74701269": 0,
     "name": "helicopter_wz_bundle_settings",
     "hash_e7260470": 65,
     "rocketcooldown": 5,
     "targeting_radius": 200,
     "meleedist": 50,
     "damage_radius": 150,
-    "vehicle_turret": "#hash_10dd6da6249fb08d",
+    "vehicle_turret": "fx#hash_10dd6da6249fb08d",
     "jump_height": 40,
     "miniguncooldown": 5,
     "scanning_speedscale": 0.01,
@@ -119,8 +123,8 @@
     "damagestate_lv3_ratio": 0.75,
     "hash_7454f5d3": 5,
     "hash_c694bbbf": 90,
-    "hash_e5257188": "#hash_19552c99c91d8b0f",
-    "hash_d666d40b": "#hash_733be8b9b4c33b0f",
+    "hash_e5257188": "fx#hash_19552c99c91d8b0f",
+    "hash_d666d40b": "fx#hash_733be8b9b4c33b0f",
     "gunner_turret_on_target_range": 5,
     "hash_efbfa41e": 1000,
     "hash_e0c78652": 10,

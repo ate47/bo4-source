@@ -1,10 +1,13 @@
 {
-    "hinttext": "#menu/headshotsonly_hint",
+    "hinttext": "localized17#menu/headshotsonly_hint",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "only_headshots",
-    "displayname": "#menu/headshotsonly",
+    "displayname": "localized17#menu/headshotsonly",
+    "hash_54e336e4": 0,
     "optionscount": 2,
+    "hash_765cfd09": 0,
     "setting": "onlyHeadshots",
     "isenableddisabled": 1
 }

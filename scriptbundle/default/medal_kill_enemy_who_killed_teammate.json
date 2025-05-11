@@ -1,10 +1,10 @@
 {
-    "description": "#hash_498cf1f9e97ebc58",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_498cf1f9e97ebc58",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_who_killed_teammate",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_avenger",
-    "stringref": "#hash_12aa23dad71fcef0",
-    "iconlarge": "#ui_icon_medal_avenger_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_avenger",
+    "stringref": "localized17#hash_12aa23dad71fcef0",
+    "iconlarge": "image#ui_icon_medal_avenger_large"
 }

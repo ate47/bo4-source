@@ -2,8 +2,8 @@
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
     "blueprintcount": 2,
-    "blueprint01": "zblueprint_shield_spectral_shield",
-    "blueprint02": "zblueprint_acid_gat_build_kit",
+    "blueprint01": "scriptbundle&zblueprint_shield_spectral_shield",
+    "blueprint02": "scriptbundle&zblueprint_acid_gat_build_kit",
     "name": "ztable_escape_open",
     "displayname": "Open Table"
 }

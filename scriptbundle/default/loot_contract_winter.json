@@ -1,7 +1,7 @@
 {
-    "contracticon": "#hash_589d5b6fc130d79e",
-    "contracttitle": "#hash_754695d357c8c6a8",
+    "contracticon": "image#hash_589d5b6fc130d79e",
+    "contracttitle": "localized17#hash_754695d357c8c6a8",
     "name": "loot_contract_winter",
-    "contractdescription": "#hash_37378f3ec4b1cef",
+    "contractdescription": "localized17#hash_37378f3ec4b1cef",
     "hash_f15e270f": "#white"
 }

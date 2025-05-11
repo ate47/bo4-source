@@ -1,9 +1,9 @@
 {
     "callingtask": "#boxbuys",
     "configstringfiletype": "scriptbundle",
-    "image": "#ui_icon_zm_calling_tasks_boxbuys",
+    "image": "image#ui_icon_zm_calling_tasks_boxbuys",
     "dailytarget": 10,
     "name": "itsamystery_task",
-    "taskname": "#hash_31c5d6e2319fd7e2",
-    "descsimple": "#hash_5637b3827f75d90d"
+    "taskname": "localized17#hash_31c5d6e2319fd7e2",
+    "descsimple": "localized17#hash_5637b3827f75d90d"
 }

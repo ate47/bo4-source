@@ -3,9 +3,11 @@
         {
             "hitloc": "helmet",
             "hash_641ce20e": 1,
+            "hash_8223b0cf": 0,
             "type": "#armor",
             "hash_51e8b151": "j_head",
             "activebydefault": 1,
+            "hitradius": 0,
             "health": 0.33
         },
         {
@@ -13,11 +15,12 @@
             "hash_8223b0cf": 2,
             "type": "#weakpoint",
             "hash_51e8b151": "j_head",
+            "hitradius": 0,
             "health": 1
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "model": "#c_t8_zmb_dlc0_zombie_marauder_body1",
+    "model": "model#c_t8_zmb_dlc0_zombie_marauder_body1",
     "type": "characterweakpointsettings",
     "name": "c_t8_zmb_gladiator_mar_weakpoint_def",
     "hash_96a09826": 2

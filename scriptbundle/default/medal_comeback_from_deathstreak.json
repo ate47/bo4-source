@@ -1,10 +1,10 @@
 {
-    "description": "#hash_2d1c11d44f3bee4",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_2d1c11d44f3bee4",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_comeback_from_deathstreak",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_comeback",
-    "stringref": "#hash_35293042f677ef9c",
-    "iconlarge": "#ui_icon_medal_comeback_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_comeback",
+    "stringref": "localized17#hash_35293042f677ef9c",
+    "iconlarge": "image#ui_icon_medal_comeback_large"
 }

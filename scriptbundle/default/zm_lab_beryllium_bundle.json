@@ -1,12 +1,18 @@
 {
     "globstate": 1,
+    "numplasma": 0,
+    "hash_92340672": 0,
+    "skuid": 0,
+    "hash_b889f476": 0,
     "droptype": 5,
     "plasmaprice": 15,
-    "descriptiontext": "#hash_4edbd3eae0792c47",
+    "descriptiontext": "localized17#hash_4edbd3eae0792c47",
+    "hash_51a0da4c": 0,
     "name": "zm_lab_beryllium_bundle",
-    "popupname": "#hash_4fec214b9d27310",
+    "popupname": "localized17#hash_4fec214b9d27310",
     "hash_619ae0f2": 1,
-    "descriptiontitle": "#hash_4fec214b9d27310",
-    "hash_40cee9c0": "#ui_icon_laboratory_aboffer1",
+    "maxquantity": 0,
+    "descriptiontitle": "localized17#hash_4fec214b9d27310",
+    "hash_40cee9c0": "image#ui_icon_laboratory_aboffer1",
     "hash_e8a9006": "white"
 }

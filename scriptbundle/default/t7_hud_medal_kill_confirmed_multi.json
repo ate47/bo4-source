@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#t7_hud_medal_backing_gamemode",
+    "backingsmall": "image#t7_hud_medal_backing_gamemode",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_kill_confirmed_multi",
-    "backinglarge": "#t7_hud_medal_backing_gamemode_lrg",
-    "iconsmall": "#t7_hud_medal_kill_confirmed_multi",
-    "stringref": "#hash_424c37933e7c0d2d",
-    "iconlarge": "#t7_hud_medal_kill_confirmed_multi_lrg"
+    "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
+    "iconsmall": "image#t7_hud_medal_kill_confirmed_multi",
+    "stringref": "localized17#hash_424c37933e7c0d2d",
+    "iconlarge": "image#t7_hud_medal_kill_confirmed_multi_lrg"
 }

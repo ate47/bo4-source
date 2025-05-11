@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_55599379d7113c97",
+    "hinttext": "localized17#hash_55599379d7113c97",
     "configstringfiletype": "scriptbundle",
     "value8": "6",
     "value9": "7",
@@ -18,11 +18,15 @@
     "value14": "15",
     "value16": "30",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "player_respawn_delay",
-    "displayname": "#menu/respawn_delay",
-    "label1": "#menu/disabled",
-    "label2": "#menu/1_second",
+    "displayname": "localized17#menu/respawn_delay",
+    "label1": "localized17#menu/disabled",
+    "label2": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
     "optionscount": 16,
-    "setting": "playerRespawnDelay"
+    "hash_765cfd09": 0,
+    "setting": "playerRespawnDelay",
+    "isenableddisabled": 0
 }

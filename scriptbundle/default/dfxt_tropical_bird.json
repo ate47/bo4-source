@@ -1,12 +1,12 @@
 {
     "hash_6a36c78c": "j_wrist_le",
     "hash_82aadb9b": "j_knee_le",
-    "dropoff": "#hash_185c51cd686a71a",
-    "contrails": "#hash_4ad1bd0c49f76d8f",
+    "dropoff": "fx#hash_185c51cd686a71a",
+    "contrails": "fx#hash_4ad1bd0c49f76d8f",
     "name": "dfxt_tropical_bird",
     "icon": "loot_ui_icon_jumppacks_trail_tropbird",
     "hash_ccb00fe4": "j_wrist_ri",
-    "body_trail_3p": "#hash_5764c6bad6f97536",
+    "body_trail_3p": "fx#hash_5764c6bad6f97536",
     "largeicon": "loot_ui_icon_jumppacks_trail_tropbird_large",
-    "body_trail": "#hash_575ddabad6f37884"
+    "body_trail": "fx#hash_575ddabad6f37884"
 }

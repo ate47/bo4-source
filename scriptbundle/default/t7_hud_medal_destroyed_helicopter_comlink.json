@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#t7_hud_medal_backing_scorestreak_killjoy",
+    "backingsmall": "image#t7_hud_medal_backing_scorestreak_killjoy",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_destroyed_helicopter_comlink",
-    "backinglarge": "#t7_hud_medal_backing_scorestreak_killjoy_lrg",
-    "iconsmall": "#t7_hud_medal_destroyed_helicopter_comlink",
-    "stringref": "#hash_7c2dd7f198cf61c3",
-    "iconlarge": "#t7_hud_medal_destroyed_helicopter_comlink_lrg"
+    "backinglarge": "image#t7_hud_medal_backing_scorestreak_killjoy_lrg",
+    "iconsmall": "image#t7_hud_medal_destroyed_helicopter_comlink",
+    "stringref": "localized17#hash_7c2dd7f198cf61c3",
+    "iconlarge": "image#t7_hud_medal_destroyed_helicopter_comlink_lrg"
 }

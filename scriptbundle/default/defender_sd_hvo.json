@@ -3,39 +3,39 @@
         {
             "stattype": "razorwireekia",
             "hash_26568428": 1,
-            "displaystatname": "#hash_7565d615dd97fcba"
+            "displaystatname": "localized17#hash_7565d615dd97fcba"
         },
         {
             "hash_82670522": "stats_concertina_wire_assist",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_859d852bd8a3077"
+            "displaystatname": "localized17#hash_859d852bd8a3077"
         },
         {
             "stattype": "objectiveekia",
             "hash_26568428": 1,
-            "displaystatname": "#hash_5d1ab6f5e0227795"
+            "displaystatname": "localized17#hash_5d1ab6f5e0227795"
         },
         {
             "hash_82670522": "stats_shutdowns",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_158193577a14c86e"
+            "displaystatname": "localized17#hash_158193577a14c86e"
         },
         {
             "stattype": "damagedone",
             "hash_26568428": 1,
-            "displaystatname": "#hash_5418827f408e5ca2"
+            "displaystatname": "localized17#hash_5418827f408e5ca2"
         },
         {
             "stattype": "objectivescore",
             "hash_26568428": 1,
-            "displaystatname": "#hash_6abbd7a88ee593ed"
+            "displaystatname": "localized17#hash_6abbd7a88ee593ed"
         }
     ],
     "hash_447510ee": "prt_mp_engineer",
-    "defaultimage": "#ui_icon_hvo_base",
-    "cardname": "#hash_2bd4c0cd12b925b8",
+    "defaultimage": "image#ui_icon_hvo_base",
+    "cardname": "localized17#hash_2bd4c0cd12b925b8",
     "name": "defender_sd_hvo",
     "associatedgamemode": "sd"
 }

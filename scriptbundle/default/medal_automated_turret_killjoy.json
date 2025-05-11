@@ -1,10 +1,10 @@
 {
-    "description": "#hash_2a2d36fac8b221c7",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_2a2d36fac8b221c7",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_automated_turret_killjoy",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_scrapped",
-    "stringref": "#hash_2b464a8f2e8be7d",
-    "iconlarge": "#ui_icon_medal_scrapped_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_scrapped",
+    "stringref": "localized17#hash_2b464a8f2e8be7d",
+    "iconlarge": "image#ui_icon_medal_scrapped_large"
 }

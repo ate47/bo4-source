@@ -1,10 +1,10 @@
 {
-    "contracticon": "#hash_4e42e406cfc7a799",
-    "contracttitle": "#menu/contract_sergei",
+    "contracticon": "image#hash_4e42e406cfc7a799",
+    "contracttitle": "localized17#menu/contract_sergei",
     "name": "loot_contract_sergei",
-    "hash_4b258f2c": "#hash_3dec00291768759a",
-    "contractdescription": "#menu/blackout_character",
+    "hash_4b258f2c": "image#hash_3dec00291768759a",
+    "contractdescription": "localized17#menu/blackout_character",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#loot04_ui_icon_blackmarket_itemshop_sergei",
-    "hash_e08fc162": "#hash_6f0047e7d05c13bd"
+    "hash_1c057e8c": "image#loot04_ui_icon_blackmarket_itemshop_sergei",
+    "hash_e08fc162": "localized17#hash_6f0047e7d05c13bd"
 }

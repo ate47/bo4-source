@@ -1,10 +1,10 @@
 {
     "lootid": "#jumppack_chinese_new_year",
-    "wingsuit": "c_t8_bo_wingsuit_chinese",
+    "wingsuit": "scriptbundle&c_t8_bo_wingsuit_chinese",
     "image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_preview_china_wind",
     "name": "c_t8_bo_jumpkit_chinese",
-    "displayname": "#hash_3497309f932530e0",
+    "displayname": "localized17#hash_3497309f932530e0",
     "preview_image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_china_wind",
-    "hash_4fa85a25": "dfxt_chinese",
-    "parachute": "c_t8_bo_parachute_chinese"
+    "hash_4fa85a25": "scriptbundle&dfxt_chinese",
+    "parachute": "scriptbundle&c_t8_bo_parachute_chinese"
 }

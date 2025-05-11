@@ -2,7 +2,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
     "blueprintcount": 1,
-    "blueprint01": "zblueprint_shield_zhield_zpear",
+    "blueprint01": "scriptbundle&zblueprint_shield_zhield_zpear",
     "name": "ztable_shield_zhield_zpear",
     "displayname": "Spear and Shield"
 }

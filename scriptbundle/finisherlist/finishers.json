@@ -1,22 +1,22 @@
 {
     "finishers": [
         {
-            "finisherbundle": "finisher_default"
+            "finisherbundle": "scriptbundle&finisher_default"
         },
         {
-            "finisherbundle": "finisher_stomp"
+            "finisherbundle": "scriptbundle&finisher_stomp"
         },
         {
-            "finisherbundle": "finisher_elbow"
+            "finisherbundle": "scriptbundle&finisher_elbow"
         },
         {
-            "finisherbundle": "finisher_knee_to_face"
+            "finisherbundle": "scriptbundle&finisher_knee_to_face"
         },
         {
-            "finisherbundle": "finisher_groin_kick"
+            "finisherbundle": "scriptbundle&finisher_groin_kick"
         },
         {
-            "finisherbundle": "finisher_spectre"
+            "finisherbundle": "scriptbundle&finisher_spectre"
         }
     ],
     "configstringfiletype": "scriptbundle",

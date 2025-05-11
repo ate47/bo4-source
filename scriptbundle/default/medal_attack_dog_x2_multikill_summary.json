@@ -1,10 +1,10 @@
 {
-    "description": "#hash_3d4fe5387b7a7a1d",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_3d4fe5387b7a7a1d",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_attack_dog_x2_multikill_summary",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_75ca2ec7852e7795",
-    "stringref": "#hash_12cb9f1737e6b11",
-    "iconlarge": "#ui_icon_medal_k9_unit_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_75ca2ec7852e7795",
+    "stringref": "localized17#hash_12cb9f1737e6b11",
+    "iconlarge": "image#ui_icon_medal_k9_unit_large"
 }

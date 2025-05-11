@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#t7_hud_medal_backing_badassery",
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_uninterrupted_obit_feed_kills",
-    "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
-    "iconsmall": "#t7_hud_medal_uninterrupted_obit_feed_kills",
-    "stringref": "#hash_1019a96721546d54",
-    "iconlarge": "#t7_hud_medal_uninterrupted_obit_feed_kills_lrg"
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#t7_hud_medal_uninterrupted_obit_feed_kills",
+    "stringref": "localized17#hash_1019a96721546d54",
+    "iconlarge": "image#t7_hud_medal_uninterrupted_obit_feed_kills_lrg"
 }

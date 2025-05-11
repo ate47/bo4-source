@@ -1,17 +1,21 @@
 {
-    "hinttext": "#hash_3a31cd91e211534d",
+    "hinttext": "localized17#hash_3a31cd91e211534d",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
     "value1": "0",
     "value4": "3",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "zm_zombiespeedmax",
-    "displayname": "#hash_6c541560aa49249b",
-    "label4": "#hash_54e697206a538c5a",
-    "label1": "#hash_1107c2f1d575b902",
-    "label3": "#hash_71dff9ad88d96fdb",
-    "label2": "#hash_5bef4cb552cde0e0",
+    "displayname": "localized17#hash_6c541560aa49249b",
+    "label4": "localized17#hash_54e697206a538c5a",
+    "label1": "localized17#hash_1107c2f1d575b902",
+    "label3": "localized17#hash_71dff9ad88d96fdb",
+    "label2": "localized17#hash_5bef4cb552cde0e0",
+    "hash_54e336e4": 0,
     "optionscount": 4,
-    "setting": "zmZombieMaxSpeed"
+    "hash_765cfd09": 0,
+    "setting": "zmZombieMaxSpeed",
+    "isenableddisabled": 0
 }

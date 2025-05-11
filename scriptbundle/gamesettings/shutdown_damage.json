@@ -1,17 +1,21 @@
 {
-    "hinttext": "#hash_13f5be8fba144e5",
+    "hinttext": "localized17#hash_13f5be8fba144e5",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
     "value1": "0",
     "value4": "3",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "shutdown_damage",
-    "displayname": "#menu/shutdown_damage",
-    "label4": "#menu/high",
-    "label1": "#menu/invulnerable",
-    "label3": "#menu/normal",
-    "label2": "#menu/low",
+    "displayname": "localized17#menu/shutdown_damage",
+    "label4": "localized17#menu/high",
+    "label1": "localized17#menu/invulnerable",
+    "label3": "localized17#menu/normal",
+    "label2": "localized17#menu/low",
+    "hash_54e336e4": 0,
     "optionscount": 4,
-    "setting": "shutdownDamage"
+    "hash_765cfd09": 0,
+    "setting": "shutdownDamage",
+    "isenableddisabled": 0
 }

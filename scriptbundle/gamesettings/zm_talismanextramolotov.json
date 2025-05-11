@@ -1,17 +1,21 @@
 {
-    "hinttext": "#hash_25f041a9a4a192fc",
+    "hinttext": "localized17#hash_25f041a9a4a192fc",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
     "value1": "0",
     "value4": "3",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "zm_talismanextramolotov",
-    "displayname": "#hash_15ee60ff2c5f5508",
-    "label4": "#hash_1f0968aad9d63087",
-    "label1": "#hash_68b65fb510ccd214",
-    "label3": "#hash_68b65fb510ccd214",
-    "label2": "#hash_1ac823ffd3e68662",
+    "displayname": "localized17#hash_15ee60ff2c5f5508",
+    "label4": "localized17#hash_1f0968aad9d63087",
+    "label1": "localized17#hash_68b65fb510ccd214",
+    "label3": "localized17#hash_68b65fb510ccd214",
+    "label2": "localized17#hash_1ac823ffd3e68662",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "zmTalismanExtraMolotov"
+    "hash_765cfd09": 0,
+    "setting": "zmTalismanExtraMolotov",
+    "isenableddisabled": 0
 }

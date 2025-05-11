@@ -3,8 +3,8 @@
     "defaultgametype": "control",
     "abbreviation": "mp",
     "name": "sessionmode_mp",
-    "selectdescription": "#hash_3c258636dc6383e7",
-    "displayname": "#menu/multiplayer",
+    "selectdescription": "localized17#menu/multiplayer_desc",
+    "displayname": "localized17#menu/multiplayer",
     "defaultmap": "mp_seaside",
     "hash_fba50b79": "control_cwl"
 }

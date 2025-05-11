@@ -1,19 +1,19 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "#hash_4f3d3e5e7b6182ef"
+            "hash_826726a": "localized17#hash_4f3d3e5e7b6182ef"
         },
         {
-            "hash_826726a": "#hash_725b1719bd56b4ec"
+            "hash_826726a": "localized17#hash_725b1719bd56b4ec"
         }
     ],
-    "contracticon": "#hash_5058f75abc7e8c41",
+    "contracticon": "image#hash_5058f75abc7e8c41",
     "hash_d0100eab": 2,
-    "relateditemname": "#hash_725b1719bd56b4ec",
-    "contracttitle": "#hash_4f3d3e5e7b6182ef",
+    "relateditemname": "localized17#hash_725b1719bd56b4ec",
+    "contracttitle": "localized17#hash_4f3d3e5e7b6182ef",
     "name": "loot_contract_nomad_muertos",
-    "contractdescription": "#hash_25105a1e4c1d1e63",
+    "contractdescription": "localized17#hash_25105a1e4c1d1e63",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_65626f95894681ce",
-    "hash_e08fc162": "#hash_1228188324cf56e"
+    "hash_1c057e8c": "image#hash_65626f95894681ce",
+    "hash_e08fc162": "localized17#hash_1228188324cf56e"
 }

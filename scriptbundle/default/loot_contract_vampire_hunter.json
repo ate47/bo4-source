@@ -1,9 +1,9 @@
 {
-    "contracticon": "#hash_4d0d3e52fedf9a80",
-    "relateditemname": "#weapon/pistol_standard_t8",
-    "contracttitle": "#weapon/pistol_standard_t8",
+    "contracticon": "image#hash_4d0d3e52fedf9a80",
+    "relateditemname": "localized17#weapon/pistol_standard_t8",
+    "contracttitle": "localized17#weapon/pistol_standard_t8",
     "name": "loot_contract_vampire_hunter",
-    "contractdescription": "#weapon/pistol_standard_t8",
+    "contractdescription": "localized17#weapon/pistol_standard_t8",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_125e8118af1ad83e"
+    "hash_1c057e8c": "image#hash_125e8118af1ad83e"
 }

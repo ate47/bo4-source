@@ -1,10 +1,10 @@
 {
-    "description": "#hash_6527c5c8c5c7119a",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_6527c5c8c5c7119a",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_gungame_regicide",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_gungame_regicide",
-    "stringref": "#hash_272bc65953e06aaa",
-    "iconlarge": "#ui_icon_medal_gungame_regicide_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_gungame_regicide",
+    "stringref": "localized17#hash_272bc65953e06aaa",
+    "iconlarge": "image#ui_icon_medal_gungame_regicide_large"
 }

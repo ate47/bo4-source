@@ -2,37 +2,41 @@
     "itemlist": [
         {
             "minweight": 200,
-            "itementry": "pistol_fullauto_t8_item",
-            "childitementry_1": "ammo_type_45_item",
+            "itementry": "scriptbundle&pistol_fullauto_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_45_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 150,
-            "itementry": "shotgun_fullauto_t8_item",
-            "childitementry_1": "ammo_type_12ga_item",
+            "itementry": "scriptbundle&shotgun_fullauto_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_12ga_item",
             "maxweight": 150,
             "available": -1
         },
         {
             "minweight": 150,
-            "itementry": "smg_folding_t8_item",
-            "childitementry_1": "ammo_type_9mm_item",
+            "itementry": "scriptbundle&smg_folding_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_9mm_item",
             "maxweight": 150,
             "available": -1
         },
         {
             "minweight": 70,
-            "itementry": "sniper_mini14_t8_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&sniper_mini14_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 70,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 4,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "firing_range_list_guns_event",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

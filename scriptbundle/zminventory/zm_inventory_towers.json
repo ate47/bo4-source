@@ -6,28 +6,30 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_422774b6767f9cf6"
+                            "stageimage": "image#hash_422774b6767f9cf6"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_5a5e52848e6328d3"
+                            "stageimage": "image#hash_5a5e52848e6328d3"
                         }
                     ],
                     "hash_1d91eeba": 2,
+                    "hash_7db3435c": 0,
                     "clientfield": "#hash_46e7cf2b7aa7c22"
                 },
                 {
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_1b3e3da163198e8f"
+                            "stageimage": "image#hash_1b3e3da163198e8f"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_17884640cc79cbb5"
+                            "stageimage": "image#hash_17884640cc79cbb5"
                         }
                     ],
                     "hash_1d91eeba": 2,
+                    "hash_7db3435c": 0,
                     "clientfield": "#hash_d3e328bb2670edf"
                 }
             ],
@@ -36,15 +38,18 @@
     ],
     "shieldpieces": [
         {
-            "pieceimage": "#hash_79d9d85eebdb2b66",
+            "hash_7db3435c": 0,
+            "pieceimage": "image#hash_79d9d85eebdb2b66",
             "clientfield": "#hash_92a0fdeb0b5ec56"
         },
         {
-            "pieceimage": "#hash_34a98cabb57ff31f",
+            "hash_7db3435c": 0,
+            "pieceimage": "image#hash_34a98cabb57ff31f",
             "clientfield": "#hash_92a0edeb0b5eaa3"
         },
         {
-            "pieceimage": "#hash_19e0a200ef5cbde3",
+            "hash_7db3435c": 0,
+            "pieceimage": "image#hash_19e0a200ef5cbde3",
             "clientfield": "#hash_92a10deb0b5ee09"
         }
     ],
@@ -56,34 +61,38 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "#hash_210536e4be42ef04"
+                                    "stageimage": "image#hash_210536e4be42ef04"
                                 }
                             ],
                             "hash_1d91eeba": 1,
+                            "hash_7db3435c": 0,
                             "clientfield": "#hash_3250b2a811943f26"
                         },
                         {
                             "stages": [
                                 {
-                                    "stageimage": "#hash_70109bca5336af3f"
+                                    "stageimage": "image#hash_70109bca5336af3f"
                                 }
                             ],
                             "hash_1d91eeba": 1,
+                            "hash_7db3435c": 0,
                             "clientfield": "#hash_3250b1a811943d73"
                         },
                         {
                             "stages": [
                                 {
-                                    "stageimage": "#hash_7fd21984ebe5983d"
+                                    "stageimage": "image#hash_7fd21984ebe5983d"
                                 }
                             ],
                             "hash_1d91eeba": 1,
+                            "hash_7db3435c": 0,
                             "clientfield": "#hash_3250b0a811943bc0"
                         }
                     ],
                     "list_items": 3
                 }
             ],
+            "hash_7db3435c": 0,
             "hash_516217cd": 1,
             "name": "trap parts"
         }
@@ -91,179 +100,187 @@
     "challenges": [
         {
             "numneeded": 6,
-            "challengedesc": "#hash_3edd4a623fc74bce",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_3edd4a623fc74bce",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 10,
-            "challengedesc": "#hash_6ae8481555edd32",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_6ae8481555edd32",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 13,
-            "challengedesc": "#hash_1e2dbe377100a39f",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_1e2dbe377100a39f",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 5,
-            "challengedesc": "#hash_3b7574758a2049ce",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_3b7574758a2049ce",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 1,
-            "challengedesc": "#hash_d63a7885e762aa5",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_d63a7885e762aa5",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 9,
-            "challengedesc": "#hash_6e8e6d2639901410",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_6e8e6d2639901410",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 5,
-            "challengedesc": "#hash_633d7079a7b20701",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_633d7079a7b20701",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 3,
-            "challengedesc": "#hash_4758a78b4732480d",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_4758a78b4732480d",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 1,
-            "challengedesc": "#hash_40d3b427f5fcc414",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_40d3b427f5fcc414",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
-            "challengedesc": "#hash_246e66cb1b63cbdf",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
-        },
-        {
-            "numneeded": 9,
-            "challengedesc": "#hash_7d4bd5aa38a4f41b",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "numneeded": 0,
+            "challengedesc": "localized17#hash_246e66cb1b63cbdf",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 9,
-            "challengedesc": "#hash_1e6964fc2922d01a",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_7d4bd5aa38a4f41b",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 9,
-            "challengedesc": "#hash_6cace1c666f1a9b1",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_1e6964fc2922d01a",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
+        },
+        {
+            "numneeded": 9,
+            "challengedesc": "localized17#hash_6cace1c666f1a9b1",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 1,
-            "challengedesc": "#hash_74af66549232171",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_74af66549232171",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 1,
-            "challengedesc": "#hash_4741e74c4ca6f8ce",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_4741e74c4ca6f8ce",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 20,
-            "challengedesc": "#hash_7bbf2a5487ffe0c",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_7bbf2a5487ffe0c",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         }
     ],
     "objprogitems": [
         {
-            "description": "#hash_40388b79ccbf74d3"
+            "description": "localized17#hash_40388b79ccbf74d3"
         },
         {
-            "description": "#hash_40388c79ccbf7686"
+            "description": "localized17#hash_40388c79ccbf7686"
         },
         {
-            "description": "#hash_40388d79ccbf7839"
+            "description": "localized17#hash_40388d79ccbf7839"
         },
         {
-            "description": "#hash_40388e79ccbf79ec"
+            "description": "localized17#hash_40388e79ccbf79ec"
         },
         {
-            "description": "#hash_40388f79ccbf7b9f"
+            "description": "localized17#hash_40388f79ccbf7b9f"
         },
         {
-            "description": "#hash_40389079ccbf7d52"
+            "description": "localized17#hash_40389079ccbf7d52"
         }
     ],
     "packapunchitems": [
         {
             "stages": [
                 {
-                    "stageimage": "#hash_5edd1c366f3b5d99"
+                    "stageimage": "image#hash_5edd1c366f3b5d99"
                 },
                 {
-                    "stageimage": "#hash_6417bdc40a7cf000"
+                    "stageimage": "image#hash_6417bdc40a7cf000"
                 },
                 {
-                    "stageimage": "#hash_41d9193b20e08f2e"
+                    "stageimage": "image#hash_41d9193b20e08f2e"
                 }
             ],
             "hash_1d91eeba": 3,
+            "hash_7db3435c": 0,
             "clientfield": "#hash_4fce42c559430ff9"
         },
         {
             "stages": [
                 {
-                    "stageimage": "#hash_5edd1c366f3b5d99"
+                    "stageimage": "image#hash_5edd1c366f3b5d99"
                 },
                 {
-                    "stageimage": "#hash_6417bdc40a7cf000"
+                    "stageimage": "image#hash_6417bdc40a7cf000"
                 },
                 {
-                    "stageimage": "#hash_41d9193b20e08f2e"
+                    "stageimage": "image#hash_41d9193b20e08f2e"
                 }
             ],
             "hash_1d91eeba": 3,
+            "hash_7db3435c": 0,
             "clientfield": "#hash_61f69ed4cbd8f2f5"
         },
         {
             "stages": [
                 {
-                    "stageimage": "#hash_74edeec8dbe74202"
+                    "stageimage": "image#hash_74edeec8dbe74202"
                 },
                 {
-                    "stageimage": "#hash_7e2a17d0e7b8bcbf"
+                    "stageimage": "image#hash_7e2a17d0e7b8bcbf"
                 },
                 {
-                    "stageimage": "#hash_453f84c3b5e6660f"
+                    "stageimage": "image#hash_453f84c3b5e6660f"
                 }
             ],
             "hash_1d91eeba": 3,
+            "hash_7db3435c": 0,
             "clientfield": "#hash_6257a73f22800e57"
         },
         {
             "stages": [
                 {
-                    "stageimage": "#hash_3bd4dd11278c2664"
+                    "stageimage": "image#hash_3bd4dd11278c2664"
                 },
                 {
-                    "stageimage": "#hash_166543cc70e067e5"
+                    "stageimage": "image#hash_166543cc70e067e5"
                 },
                 {
-                    "stageimage": "#hash_78d40d61b260bc05"
+                    "stageimage": "image#hash_78d40d61b260bc05"
                 }
             ],
             "hash_1d91eeba": 3,
+            "hash_7db3435c": 0,
             "clientfield": "#hash_5114ed99a6bad03b"
         }
     ],
-    "objectivebackground": "#hash_7caa43a24c715df",
+    "objectivebackground": "image#hash_7caa43a24c715df",
     "hash_5a90928f": "#zm_towers_challenges",
     "configstringfiletype": "scriptbundle",
     "hash_aa76b7dd": 6,
+    "hash_3e38620e": 0,
     "hash_6fa1ca44": 1,
     "type": "zminventory",
     "hash_af62a8e8": 3,
     "name": "zm_inventory_towers",
-    "hash_f128673a": "#hash_2028b2c0395c86bf",
+    "hash_f128673a": "image#hash_2028b2c0395c86bf",
     "hash_a05daa90": 4,
     "hash_c029b82f": 1,
     "hash_846fa8e": "#zm_towers_objective_progress",
     "hash_f22d6ad5": 16,
     "hash_f7d932ea": "#zm_towers_challenges_progress",
-    "hash_16fb993f": "#hash_30727aefda60cbd4"
+    "hash_f3d39d90": 0,
+    "hash_38b9613": 0,
+    "hash_16fb993f": "image#hash_30727aefda60cbd4"
 }

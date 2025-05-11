@@ -1,11 +1,11 @@
 {
     "hash_aa7fbf8b": "j_head",
     "configstringfiletype": "scriptbundle",
-    "hash_c83371f4": "#hash_60ad2ee917b58f6d",
+    "hash_c83371f4": "model#hash_60ad2ee917b58f6d",
     "type": "destructiblecharacterdef",
     "hash_cb768102": "helmet",
     "vmtype": "both",
     "name": "c_t8_zmb_dlc1_zombie_3rdclass_female_dst_def",
     "piececount": 1,
-    "hash_19e4a0d": "#hash_60ad2ee917b58f6d"
+    "hash_19e4a0d": "model#hash_60ad2ee917b58f6d"
 }

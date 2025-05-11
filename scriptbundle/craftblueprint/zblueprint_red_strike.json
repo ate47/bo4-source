@@ -1,5 +1,5 @@
 {
-    "hash_4dbc4aee": "#hash_6c7060c02cfbede4",
+    "hash_4dbc4aee": "localized18#hash_6c7060c02cfbede4",
     "configstringfiletype": "scriptbundle",
     "result": "weapon#thunderstorm_zm",
     "type": "craftblueprint",
@@ -9,9 +9,9 @@
     "component03": "weapon#zitem_red_strike_part_3_zm",
     "name": "zblueprint_red_strike",
     "displayname": "ID Gun",
-    "hash_391591d0": "#hash_791a26a14b97f770",
+    "hash_391591d0": "localized18#hash_791a26a14b97f770",
     "postcraft": "buy_once_then_box",
-    "hash_abd9b2d0": "#hash_791a26a14b97f770",
+    "hash_abd9b2d0": "localized18#hash_791a26a14b97f770",
     "componentcount": 3,
     "hash_c028dcfe": 1,
     "hash_318c150c": "section_quests"

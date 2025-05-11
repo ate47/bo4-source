@@ -2,38 +2,43 @@
     "itemlist": [
         {
             "minweight": 100,
-            "itementry": "perk_item_deadsilence",
+            "itementry": "scriptbundle&perk_item_deadsilence",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "perk_item_stimulant",
-            "maxweight": 100
+            "itementry": "scriptbundle&perk_item_stimulant",
+            "maxweight": 100,
+            "available": 0
         },
         {
             "minweight": 100,
-            "itementry": "perk_item_lightweight",
+            "itementry": "scriptbundle&perk_item_lightweight",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "perk_item_engineer",
+            "itementry": "scriptbundle&perk_item_engineer",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "perk_item_paranoia",
+            "itementry": "scriptbundle&perk_item_paranoia",
             "maxweight": 100,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 5,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "consumable_list_good_ambush",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

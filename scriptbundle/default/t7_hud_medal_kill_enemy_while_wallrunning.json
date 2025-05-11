@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#t7_hud_medal_backing_badassery",
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_kill_enemy_while_wallrunning",
-    "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
-    "iconsmall": "#t7_hud_medal_kill_enemy_while_wallrunning",
-    "stringref": "#hash_5233808ff7f69a34",
-    "iconlarge": "#t7_hud_medal_kill_enemy_while_wallrunning_lrg"
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#t7_hud_medal_kill_enemy_while_wallrunning",
+    "stringref": "localized17#hash_5233808ff7f69a34",
+    "iconlarge": "image#t7_hud_medal_kill_enemy_while_wallrunning_lrg"
 }

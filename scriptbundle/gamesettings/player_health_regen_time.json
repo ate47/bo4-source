@@ -1,17 +1,21 @@
 {
-    "hinttext": "#hash_1973f5fe4e7daebb",
+    "hinttext": "localized17#hash_1973f5fe4e7daebb",
     "configstringfiletype": "scriptbundle",
     "value2": "10",
     "value3": "5",
     "value1": "0",
     "value4": "2",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "player_health_regen_time",
-    "displayname": "#menu/health_regeneration",
-    "label4": "#menu/fast",
-    "label1": "#menu/disabled",
-    "label3": "#menu/normal",
-    "label2": "#menu/slow",
+    "displayname": "localized17#menu/health_regeneration",
+    "label4": "localized17#menu/fast",
+    "label1": "localized17#menu/disabled",
+    "label3": "localized17#menu/normal",
+    "label2": "localized17#menu/slow",
+    "hash_54e336e4": 0,
     "optionscount": 4,
-    "setting": "playerHealthRegenTime"
+    "hash_765cfd09": 0,
+    "setting": "playerHealthRegenTime",
+    "isenableddisabled": 0
 }

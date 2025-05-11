@@ -1,10 +1,13 @@
 {
-    "hinttext": "#menu/battlechatter_hint",
+    "hinttext": "localized17#menu/battlechatter_hint",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "allow_battle_chatter",
-    "displayname": "#menu/battlechatter",
+    "displayname": "localized17#menu/battlechatter",
+    "hash_54e336e4": 0,
     "optionscount": 2,
+    "hash_765cfd09": 0,
     "setting": "allowBattleChatter",
     "isenableddisabled": 1
 }

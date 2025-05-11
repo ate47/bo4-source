@@ -2,29 +2,32 @@
     "itemlist": [
         {
             "minweight": 200,
-            "itementry": "ammo_type_338_item",
+            "itementry": "scriptbundle&ammo_type_338_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 200,
-            "itementry": "ammo_type_50cal_item",
+            "itementry": "scriptbundle&ammo_type_50cal_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 20,
-            "itementry": "ammo_type_rocket_item",
+            "itementry": "scriptbundle&ammo_type_rocket_item",
             "maxweight": 30,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 300,
     "type": "itemspawnlist",
     "hash_345eba59": 3,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
     "hash_dc7ffbef": 1,
     "name": "ammo_list_good",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

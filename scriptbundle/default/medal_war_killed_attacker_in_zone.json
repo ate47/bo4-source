@@ -1,10 +1,10 @@
 {
-    "description": "#hash_5c9b4c827997f9ba",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_5c9b4c827997f9ba",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_war_killed_attacker_in_zone",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_bounced",
-    "stringref": "#hash_36a5452d90dd0e0a",
-    "iconlarge": "#ui_icon_medal_bounced_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_bounced",
+    "stringref": "localized17#hash_36a5452d90dd0e0a",
+    "iconlarge": "image#ui_icon_medal_bounced_large"
 }

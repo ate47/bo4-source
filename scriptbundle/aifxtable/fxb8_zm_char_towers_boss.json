@@ -2,7 +2,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "aifxtable",
     "vmtype": "client",
-    "surfacefxtable_footstep": "#zm_elephant_footstep",
+    "surfacefxtable_footstep": "surface_fx_table#zm_elephant_footstep",
     "name": "fxb8_zm_char_towers_boss",
-    "hash_306eaa3a": "#zm_elephant_footstep"
+    "hash_306eaa3a": "surface_fx_table#zm_elephant_footstep"
 }

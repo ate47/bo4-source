@@ -2,28 +2,32 @@
     "itemlist": [
         {
             "minweight": 50,
-            "itementry": "zombie_supply_stash_wonder_weapons",
+            "itementry": "scriptbundle&zombie_supply_stash_wonder_weapons",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "zombie_supply_stash_guns_gold_or_purple",
+            "itementry": "scriptbundle&zombie_supply_stash_guns_gold_or_purple",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "supply_stash_zombie_items",
+            "itementry": "scriptbundle&supply_stash_zombie_items",
             "maxweight": 50,
             "available": 3
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 3,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "zombie_supply_stash_parent",
     "supplystashweight": 100,
+    "hash_dc91e192": 0,
     "supplystash": 1
 }

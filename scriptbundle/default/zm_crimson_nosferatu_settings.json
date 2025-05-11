@@ -2,7 +2,10 @@
     "weapondamagescaleoverrides": [
         {
             "hash_fe55d685": "#ww_crossbow_impaler_t8_zm",
+            "instakilldamagescale": 0,
             "weaponid": "#ww_crossbow_impaler_t8",
+            "weakpointdamagescale": 0,
+            "hash_97b22faa": 0,
             "damagescale": 1.5
         }
     ],
@@ -23,6 +26,7 @@
     "hash_52a41524": 5,
     "damagescale": 0.5,
     "category": "#enhanced",
+    "hash_854eebd": 0,
     "hash_e7ee9898": 1,
     "stunduration": 2,
     "hash_3b66f582": 20,

@@ -1,10 +1,10 @@
 {
-    "description": "#hash_724392a7e9625b54",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_724392a7e9625b54",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_hellstorm_missile_killjoy",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_intercepted",
-    "stringref": "#hash_5507c01821fb34ac",
-    "iconlarge": "#ui_icon_medal_intercepted_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_intercepted",
+    "stringref": "localized17#hash_5507c01821fb34ac",
+    "iconlarge": "image#ui_icon_medal_intercepted_large"
 }

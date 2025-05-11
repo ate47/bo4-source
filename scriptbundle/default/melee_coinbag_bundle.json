@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_5dd26f2b473a5ac",
-    "popupimage": "#hash_679037d7f3dd0238",
-    "nametext": "#hash_4525e140496dab4",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_5dd26f2b473a5ac",
+    "popupimage": "image#hash_679037d7f3dd0238",
+    "nametext": "localized17#hash_4525e140496dab4",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "melee_coinbag_bundle",
-    "desctext": "#hash_7fb289bcdbfc28bc",
-    "previewimage": "#hash_424ddba60dab7875",
-    "reserveimage": "#hash_38b0d56c15e504f4"
+    "desctext": "localized17#hash_7fb289bcdbfc28bc",
+    "previewimage": "image#hash_424ddba60dab7875",
+    "reserveimage": "image#hash_38b0d56c15e504f4"
 }

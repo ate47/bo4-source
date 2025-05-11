@@ -4,39 +4,39 @@
             "hash_82670522": "stats_deployable_cover_kill",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_f16f29c7e6f1c19"
+            "displaystatname": "localized17#hash_f16f29c7e6f1c19"
         },
         {
             "hash_82670522": "stats_hpm_suppress",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_785366bfc4a5f74f"
+            "displaystatname": "localized17#hash_785366bfc4a5f74f"
         },
         {
             "hash_82670522": "stats_deployable_cover_assist",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_73d3def88fa5cf5d"
+            "displaystatname": "localized17#hash_73d3def88fa5cf5d"
         },
         {
             "stattype": "objectiveekia",
             "hash_26568428": 1,
-            "displaystatname": "#hash_5d1ab6f5e0227795"
+            "displaystatname": "localized17#hash_5d1ab6f5e0227795"
         },
         {
             "stattype": "damagedone",
             "hash_26568428": 1,
-            "displaystatname": "#hash_5418827f408e5ca2"
+            "displaystatname": "localized17#hash_5418827f408e5ca2"
         },
         {
             "stattype": "objectivetime",
             "hash_26568428": 1,
-            "displaystatname": "#hash_646cc2b52d248258"
+            "displaystatname": "localized17#hash_646cc2b52d248258"
         }
     ],
     "hash_447510ee": "prt_mp_engineer",
-    "defaultimage": "#ui_icon_hvo_base",
-    "cardname": "#hash_6c3a2112468353be",
+    "defaultimage": "image#ui_icon_hvo_base",
+    "cardname": "localized17#hash_6c3a2112468353be",
     "name": "architect_koth_hvo",
     "associatedgamemode": "koth"
 }

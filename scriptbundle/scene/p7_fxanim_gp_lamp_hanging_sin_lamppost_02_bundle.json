@@ -1,11 +1,13 @@
 {
     "objects": [
         {
-            "mainanim": "#hash_3cd99272f989874c",
-            "model": "#hash_649c6e8eec5986b6",
+            "mainanim": "anim4#p7_fxanim_gp_lamp_hanging_sin_lamppost_02_idle_anim",
+            "model": "model#p7_fxanim_gp_lamp_hanging_sin_lamppost_02_mod",
             "type": "prop",
             "vmtype": "server",
             "name": "sin_idle_lamp_02",
+            "initdelaymin": 0,
+            "initdelaymax": 0,
             "spawnoninit": 1,
             "team": "any"
         },

@@ -3,6 +3,7 @@
         {
             "hitloc": "helmet",
             "hash_641ce20e": 1,
+            "hash_8223b0cf": 0,
             "type": "#armor",
             "hash_51e8b151": "j_head",
             "activebydefault": 1,
@@ -20,6 +21,7 @@
         {
             "hitloc": "left_arm_upper",
             "hash_641ce20e": 1,
+            "hash_8223b0cf": 0,
             "type": "#armor",
             "hash_910e2f9b": "j_clavicle_le",
             "hash_51e8b151": "tag_pauldron_le",
@@ -30,6 +32,7 @@
         {
             "hitloc": "right_arm_upper",
             "hash_641ce20e": 1,
+            "hash_8223b0cf": 0,
             "type": "#armor",
             "hash_910e2f9b": "j_clavicle_ri",
             "hash_51e8b151": "tag_pauldron_ri",
@@ -57,7 +60,7 @@
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "model": "#c_t8_zmb_dlc0_zombie_gladiator_body1",
+    "model": "model#c_t8_zmb_dlc0_zombie_gladiator_body1",
     "type": "characterweakpointsettings",
     "name": "c_t8_zmb_gladiator_dst_weakpoint_def",
     "hash_96a09826": 6

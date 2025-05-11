@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_melee_assassinate",
-    "displayname": "#hash_7de533f7739da407",
-    "icon": "#ui_icon_meansofdeath_assassinate",
-    "iconlarge": "#ui_icon_meansofdeath_assassinate_xl"
+    "displayname": "localized17#hash_7de533f7739da407",
+    "icon": "image#ui_icon_meansofdeath_assassinate",
+    "iconlarge": "image#ui_icon_meansofdeath_assassinate_xl"
 }

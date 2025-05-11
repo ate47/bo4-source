@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#t7_hud_medal_backing_gamemode",
+    "backingsmall": "image#t7_hud_medal_backing_gamemode",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_killed_enemy_while_carrying_flag",
-    "backinglarge": "#t7_hud_medal_backing_gamemode_lrg",
-    "iconsmall": "#t7_hud_medal_killed_enemy_while_carrying_flag",
-    "stringref": "#hash_3c7dadd64b7f725e",
-    "iconlarge": "#t7_hud_medal_killed_enemy_while_carrying_flag_lrg"
+    "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
+    "iconsmall": "image#t7_hud_medal_killed_enemy_while_carrying_flag",
+    "stringref": "localized17#hash_3c7dadd64b7f725e",
+    "iconlarge": "image#t7_hud_medal_killed_enemy_while_carrying_flag_lrg"
 }

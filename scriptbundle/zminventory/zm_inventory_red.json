@@ -6,31 +6,31 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_1f6009e1b61f8658"
+                            "stageimage": "image#hash_1f6009e1b61f8658"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_37ebb980b386ee09"
+                            "stageimage": "image#hash_37ebb980b386ee09"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_49179f414f2e7847"
+                            "stageimage": "image#hash_49179f414f2e7847"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_4917a0414f2e79fa"
+                            "stageimage": "image#hash_4917a0414f2e79fa"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_4917a1414f2e7bad"
+                            "stageimage": "image#hash_4917a1414f2e7bad"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_aef1c2b3c74dc0c"
+                            "stageimage": "image#hash_aef1c2b3c74dc0c"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_5f4b4f97846b7f25"
+                            "stageimage": "image#hash_5f4b4f97846b7f25"
                         }
                     ],
                     "hash_1d91eeba": 7,
@@ -46,31 +46,31 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_1f6009e1b61f8658"
+                            "stageimage": "image#hash_1f6009e1b61f8658"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_51e70d5edd1d114"
+                            "stageimage": "image#hash_51e70d5edd1d114"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_17fb65d1ba59d6c8"
+                            "stageimage": "image#hash_17fb65d1ba59d6c8"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_17fb68d1ba59dbe1"
+                            "stageimage": "image#hash_17fb68d1ba59dbe1"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_17fb67d1ba59da2e"
+                            "stageimage": "image#hash_17fb67d1ba59da2e"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_64bc36f173e3f15d"
+                            "stageimage": "image#hash_64bc36f173e3f15d"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_59c2ed300fddf610"
+                            "stageimage": "image#hash_59c2ed300fddf610"
                         }
                     ],
                     "hash_1d91eeba": 7,
@@ -86,31 +86,31 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_1f6009e1b61f8658"
+                            "stageimage": "image#hash_1f6009e1b61f8658"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_fd3fbbd751c6d63"
+                            "stageimage": "image#hash_fd3fbbd751c6d63"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_3348f9af7de16449"
+                            "stageimage": "image#hash_3348f9af7de16449"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_3348f6af7de15f30"
+                            "stageimage": "image#hash_3348f6af7de15f30"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_3348f7af7de160e3"
+                            "stageimage": "image#hash_3348f7af7de160e3"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_370dde2b6085ef0a"
+                            "stageimage": "image#hash_370dde2b6085ef0a"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_407e14bb68ac4c37"
+                            "stageimage": "image#hash_407e14bb68ac4c37"
                         }
                     ],
                     "hash_1d91eeba": 7,
@@ -126,31 +126,31 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_1f6009e1b61f8658"
+                            "stageimage": "image#hash_1f6009e1b61f8658"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_4ae28eba6abe7e40"
+                            "stageimage": "image#hash_4ae28eba6abe7e40"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_44bab7e2d20a849c"
+                            "stageimage": "image#hash_44bab7e2d20a849c"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_44babae2d20a89b5"
+                            "stageimage": "image#hash_44babae2d20a89b5"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_44bab9e2d20a8802"
+                            "stageimage": "image#hash_44bab9e2d20a8802"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_6a81330369ce9c69"
+                            "stageimage": "image#hash_6a81330369ce9c69"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "#hash_5cc2455478e41944"
+                            "stageimage": "image#hash_5cc2455478e41944"
                         }
                     ],
                     "hash_1d91eeba": 7,
@@ -163,15 +163,18 @@
     ],
     "shieldpieces": [
         {
-            "pieceimage": "#ui_icon_inventory_zm_red_shield_part_cover",
+            "hash_7db3435c": 0,
+            "pieceimage": "image#ui_icon_inventory_zm_red_shield_part_cover",
             "clientfield": "#hash_5ec82cf18a254c3c"
         },
         {
-            "pieceimage": "#ui_icon_inventory_zm_red_shield_part_spear",
+            "hash_7db3435c": 0,
+            "pieceimage": "image#ui_icon_inventory_zm_red_shield_part_spear",
             "clientfield": "#hash_5ec82ff18a255155"
         },
         {
-            "pieceimage": "#ui_icon_inventory_zm_red_shield_part_strap",
+            "hash_7db3435c": 0,
+            "pieceimage": "image#ui_icon_inventory_zm_red_shield_part_strap",
             "clientfield": "#hash_5ec82ef18a254fa2"
         }
     ],
@@ -183,16 +186,18 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "#hash_55a6cd7acee99708"
+                                    "stageimage": "image#hash_55a6cd7acee99708"
                                 }
                             ],
                             "hash_1d91eeba": 1,
+                            "hash_7db3435c": 0,
                             "clientfield": "#hash_3b7a4acbf51a22e8"
                         }
                     ],
                     "list_items": 1
                 }
             ],
+            "hash_7db3435c": 0,
             "hash_516217cd": 1,
             "name": "zm_red_pegasus_bridle"
         },
@@ -203,65 +208,69 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "#hash_2988969d6dd647c7"
+                                    "stageimage": "image#hash_2988969d6dd647c7"
                                 }
                             ],
                             "hash_1d91eeba": 1,
+                            "hash_7db3435c": 0,
                             "clientfield": "#hash_770d4d2226eb79"
                         },
                         {
                             "stages": [
                                 {
-                                    "stageimage": "#hash_2a6dacc1020dc171"
+                                    "stageimage": "image#hash_2a6dacc1020dc171"
                                 }
                             ],
                             "hash_1d91eeba": 1,
+                            "hash_7db3435c": 0,
                             "clientfield": "#hash_770a4d2226e660"
                         },
                         {
                             "stages": [
                                 {
-                                    "stageimage": "#hash_2c03ecce64b3185d"
+                                    "stageimage": "image#hash_2c03ecce64b3185d"
                                 }
                             ],
                             "hash_1d91eeba": 1,
+                            "hash_7db3435c": 0,
                             "clientfield": "#hash_770b4d2226e813"
                         }
                     ],
                     "list_items": 3
                 }
             ],
+            "hash_7db3435c": 0,
             "hash_516217cd": 1,
             "name": "zm_red_pegasus_parts"
         }
     ],
     "objprogitems": [
         {
-            "description": "#hash_7122a0a7b75addd9"
+            "description": "localized17#hash_7122a0a7b75addd9"
         },
         {
-            "description": "#hash_71229fa7b75adc26"
+            "description": "localized17#hash_71229fa7b75adc26"
         },
         {
-            "description": "#hash_7122a2a7b75ae13f"
+            "description": "localized17#hash_7122a2a7b75ae13f"
         },
         {
-            "description": "#hash_7122a1a7b75adf8c"
+            "description": "localized17#hash_7122a1a7b75adf8c"
         },
         {
-            "description": "#hash_7122a4a7b75ae4a5"
+            "description": "localized17#hash_7122a4a7b75ae4a5"
         },
         {
-            "description": "#hash_7122a3a7b75ae2f2"
+            "description": "localized17#hash_7122a3a7b75ae2f2"
         },
         {
-            "description": "#hash_7122a5a7b75ae658"
+            "description": "localized17#hash_7122a5a7b75ae658"
         },
         {
-            "description": "#hash_7122a5a7b75ae658"
+            "description": "localized17#hash_7122a5a7b75ae658"
         }
     ],
-    "objectivebackground": "#ui_icon_inventory_zm_red_artifact_sentinel",
+    "objectivebackground": "image#ui_icon_inventory_zm_red_artifact_sentinel",
     "configstringfiletype": "scriptbundle",
     "hash_aa76b7dd": 8,
     "hash_3e38620e": 1,
@@ -270,9 +279,11 @@
     "hash_af62a8e8": 3,
     "hash_b10f2611": "#hash_28d79c40f29ecc43",
     "name": "zm_inventory_red",
-    "hash_f128673a": "#hash_2028b2c0395c86bf",
+    "hash_f128673a": "image#hash_2028b2c0395c86bf",
     "hash_88c17f11": "#sentinel_artifact",
     "hash_c029b82f": 4,
     "hash_846fa8e": "#zm_red_objective_progress",
-    "hash_16fb993f": "#hash_30727aefda60cbd4"
+    "hash_f3d39d90": 0,
+    "hash_38b9613": 0,
+    "hash_16fb993f": "image#hash_30727aefda60cbd4"
 }

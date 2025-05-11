@@ -1,9 +1,9 @@
 {
     "callingtask": "#kills_special_weapons",
     "configstringfiletype": "scriptbundle",
-    "image": "#ui_icon_zm_calling_tasks_specialweapon",
+    "image": "image#ui_icon_zm_calling_tasks_specialweapon",
     "dailytarget": 150,
     "name": "arcaneaggression_task",
-    "taskname": "#hash_2c359fa6ec8bd26e",
-    "descsimple": "#hash_2d0d19f4017e5609"
+    "taskname": "localized17#hash_2c359fa6ec8bd26e",
+    "descsimple": "localized17#hash_2d0d19f4017e5609"
 }

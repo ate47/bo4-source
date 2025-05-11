@@ -1,9 +1,9 @@
 {
     "callingtask": "#hash_26d8f2fa0846a614",
     "configstringfiletype": "scriptbundle",
-    "image": "#ui_icon_zm_callings_tacticalrifle",
+    "image": "image#ui_icon_zm_callings_tacticalrifle",
     "dailytarget": 750,
     "name": "tacticalrifles_task",
-    "taskname": "#hash_151a1264ca159432",
-    "descsimple": "#hash_792642fd140871bd"
+    "taskname": "localized17#hash_151a1264ca159432",
+    "descsimple": "localized17#hash_792642fd140871bd"
 }

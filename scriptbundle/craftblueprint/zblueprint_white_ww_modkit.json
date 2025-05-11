@@ -1,8 +1,11 @@
 {
-    "hash_4dbc4aee": "#hash_8976407f64add4b",
+    "hash_4dbc4aee": "localized18#hash_8976407f64add4b",
+    "hash_11928e3b": 0,
     "configstringfiletype": "scriptbundle",
     "result": "weapon#pistol_topbreak_t8_zm",
     "type": "craftblueprint",
+    "hash_3c809ce0": 0,
+    "hash_e414062": 0,
     "component01": "weapon#zitem_white_ww_modkit_part_1_zm",
     "component02": "weapon#zitem_white_ww_modkit_part_2_zm",
     "component03": "weapon#zitem_white_ww_modkit_part_3_zm",

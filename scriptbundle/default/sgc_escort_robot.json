@@ -1,7 +1,7 @@
 {
     "hash_f3279c55": "#hash_5fac4fb372a50691",
     "hash_cf76a9bd": "#hash_29d1c7d436abd2e5",
-    "titlealt": "#hash_7ba5cee192e14a3c",
+    "titlealt": "localized18#hash_7ba5cee192e14a3c",
     "hash_e995b5b2": "#hash_78731ec14475439d",
     "hash_aa265686": "#hash_137713ef840719b",
     "hash_259b6a31": "#hash_2c54426fd72900ac",
@@ -10,14 +10,16 @@
     "hash_b9953afb": "#hash_41cf7371625d2807",
     "hash_c4f44015": "#hash_5eec105865aa83",
     "hash_3b7efe03": "#hash_2b5a8181f3ba3a36",
-    "hash_17d07d2d": "gestable_command_defending",
+    "hash_17d07d2d": "gesture_table&gestable_command_defending",
     "hash_211d2d38": "#hash_51e9f012972ed977",
     "name": "sgc_escort_robot",
+    "hash_24d23b21": 0,
     "hash_a5004222": "#hash_795d553d80217b9d",
     "hash_ca5f991e": "#hash_685a31abbb796dfa",
+    "hash_1c9900c6": 0,
     "hash_f09797b3": "#hash_b94fdee213737fc",
-    "title": "#hash_5a56cba3ed5be5a4",
+    "title": "localized18#hash_5a56cba3ed5be5a4",
     "hash_80407c8f": "#hash_6e10e8aa8ffacd39",
-    "gestablecallout": "gestable_command_attacking",
+    "gestablecallout": "gesture_table&gestable_command_attacking",
     "objective": "escort_robot"
 }

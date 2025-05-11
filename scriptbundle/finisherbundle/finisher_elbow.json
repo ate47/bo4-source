@@ -1,7 +1,7 @@
 {
     "configstringfiletype": "scriptbundle",
     "type": "finisherbundle",
-    "victim_gesture": "#hash_2ae3c9ea533e5394",
+    "victim_gesture": "gesture#hash_2ae3c9ea533e5394",
     "name": "finisher_elbow",
-    "attacker_gesture": "#hash_71b81418139484af"
+    "attacker_gesture": "gesture#hash_71b81418139484af"
 }

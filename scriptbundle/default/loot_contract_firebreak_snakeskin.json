@@ -1,19 +1,19 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "#hash_605969a737686528"
+            "hash_826726a": "localized17#hash_605969a737686528"
         },
         {
-            "hash_826726a": "#hash_5b4889e3a720c949"
+            "hash_826726a": "localized17#hash_5b4889e3a720c949"
         }
     ],
-    "contracticon": "#hash_299b05b8fd65032",
+    "contracticon": "image#hash_299b05b8fd65032",
     "hash_d0100eab": 2,
-    "relateditemname": "#hash_5b4889e3a720c949",
-    "contracttitle": "#hash_605969a737686528",
+    "relateditemname": "localized17#hash_5b4889e3a720c949",
+    "contracttitle": "localized17#hash_605969a737686528",
     "name": "loot_contract_firebreak_snakeskin",
-    "contractdescription": "#hash_88f3d374c07d9de",
+    "contractdescription": "localized17#hash_88f3d374c07d9de",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_10c8afa4d0bfa620",
-    "hash_e08fc162": "#hash_338c5acca44862e1"
+    "hash_1c057e8c": "image#hash_10c8afa4d0bfa620",
+    "hash_e08fc162": "localized17#hash_338c5acca44862e1"
 }

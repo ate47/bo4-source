@@ -2,12 +2,14 @@
     "deathcirclelist": [
         {
             "hash_bb9f7c3f": 60,
+            "hash_95437170": 0,
             "hash_24ae2e27": 510,
             "hash_50d5787c": 320,
             "circledelay": 105,
             "hash_1dfb1051": 120,
             "hash_96584cff": 60,
             "circledamage": 8,
+            "hash_a3841ae2": 0,
             "hash_5a8689a9": 1,
             "circleradius": 90000,
             "hash_112f6f50": -4254,
@@ -20,6 +22,7 @@
             "hash_95437170": 115055,
             "hash_24ae2e27": 290,
             "hash_50d5787c": 90,
+            "circledelay": 0,
             "hash_1dfb1051": 10,
             "hash_96584cff": 10,
             "circledamage": 25,
@@ -32,9 +35,11 @@
             "hash_85589312": 15
         }
     ],
+    "hash_672f2d98": 0,
     "configstringfiletype": "scriptbundle",
     "type": "deathcircle",
     "name": "wz_open_skyscraper_death_circles_one_circle",
+    "hash_8d8aa969": 0,
     "hash_904b645e": 600,
     "hash_7a60538a": 2,
     "hash_64232072": 12,

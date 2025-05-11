@@ -1,40 +1,40 @@
 {
     "objects": [
         {
-            "exithighloopanim": "#ai_crew_escortrobot_vtolrider_highdrop_loop",
+            "exithighloopanim": "anim4#ai_crew_escortrobot_vtolrider_highdrop_loop",
             "aligntag": "tag_attach_cargo_hook",
-            "rideanim": "#ai_crew_escortrobot_vtolrider_idle_left",
+            "rideanim": "anim4#ai_crew_escortrobot_vtolrider_idle_left",
             "position": "driver",
-            "exithighlandanim": "#ai_crew_escortrobot_vtolrider_highdrop_land",
-            "exithighanim": "#ai_crew_escortrobot_vtolrider_highdrop_intro_left"
+            "exithighlandanim": "anim4#ai_crew_escortrobot_vtolrider_highdrop_land",
+            "exithighanim": "anim4#ai_crew_escortrobot_vtolrider_highdrop_intro_left"
         },
         {
-            "exithighanim": "#hash_58f3e6afc17957a5"
+            "exithighanim": "anim4#hash_58f3e6afc17957a5"
         },
         {
-            "exithighanim": "#hash_43e17a5e3392f278"
+            "exithighanim": "anim4#hash_43e17a5e3392f278"
         },
         {
-            "exithighanim": "#hash_f64dc458399f55f"
+            "exithighanim": "anim4#hash_f64dc458399f55f"
         },
         {
-            "exithighanim": "#hash_1bb9ba5a94757d2a"
+            "exithighanim": "anim4#hash_1bb9ba5a94757d2a"
         },
         {
-            "exithighanim": "#hash_37f1a6f045ffd429"
+            "exithighanim": "anim4#hash_37f1a6f045ffd429"
         },
         {
-            "exithighanim": "#hash_2cd15b05049c6ac"
+            "exithighanim": "anim4#hash_2cd15b05049c6ac"
         },
         {
-            "exithighanim": "#hash_3d6bb8e8fa94e833"
+            "exithighanim": "anim4#hash_3d6bb8e8fa94e833"
         },
         {
-            "exithighanim": "#hash_24e0629f30d0185e"
+            "exithighanim": "anim4#hash_24e0629f30d0185e"
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "model": "#hash_621a555c6c220455",
+    "model": "model#hash_621a555c6c220455",
     "type": "vehicleriders",
     "hash_4301b21d": 1,
     "vmtype": "both",

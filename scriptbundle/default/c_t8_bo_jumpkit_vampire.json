@@ -1,11 +1,11 @@
 {
     "lootid": "#hash_2d7fd399807024e8",
-    "wingsuit": "c_t8_bo_wingsuit_vampire",
+    "wingsuit": "scriptbundle&c_t8_bo_wingsuit_vampire",
     "feature": "loot_season_05_mid",
     "image": "loot_05_ui_icon_blackmarket_reserves_jumppack_vampire",
     "name": "c_t8_bo_jumpkit_vampire",
-    "displayname": "#hash_70203737a19f4e10",
+    "displayname": "localized17#hash_70203737a19f4e10",
     "preview_image": "loot_05_ui_icon_blackmarket_reserves_jumppack_vampire",
-    "hash_4fa85a25": "dfxt_bat",
-    "parachute": "c_t8_bo_parachute_vampire"
+    "hash_4fa85a25": "scriptbundle&dfxt_bat",
+    "parachute": "scriptbundle&c_t8_bo_parachute_vampire"
 }

@@ -3,12 +3,16 @@
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "reboot_players",
-    "displayname": "#hash_7e3df9b665464b2f",
-    "label1": "#menu/auto",
-    "label2": "#menu/interactive",
+    "displayname": "localized17#hash_7e3df9b665464b2f",
+    "label1": "localized17#menu/auto",
+    "label2": "localized17#menu/interactive",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "hinttext2": "#hash_475fe078c6f8dff7",
-    "hinttext1": "#hash_4eaa3053ce374044",
-    "setting": "rebootPlayers"
+    "hinttext2": "localized17#hash_475fe078c6f8dff7",
+    "hinttext1": "localized17#hash_4eaa3053ce374044",
+    "hash_765cfd09": 0,
+    "setting": "rebootPlayers",
+    "isenableddisabled": 0
 }

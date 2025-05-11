@@ -1,10 +1,10 @@
 {
-    "description": "#hash_50131cf10fd1e0f",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_50131cf10fd1e0f",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_killstreak_10",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_merciless",
-    "stringref": "#medal/killstreak_10",
-    "iconlarge": "#ui_icon_medal_merciless_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_merciless",
+    "stringref": "localized17#medal/killstreak_10",
+    "iconlarge": "image#ui_icon_medal_merciless_large"
 }

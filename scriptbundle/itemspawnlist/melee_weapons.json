@@ -2,17 +2,20 @@
     "itemlist": [
         {
             "minweight": 10,
-            "itementry": "melee_bowie_t8_item",
+            "itementry": "scriptbundle&melee_bowie_t8_item",
             "maxweight": 10,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 200,
     "type": "itemspawnlist",
     "hash_345eba59": 1,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
     "hash_dc7ffbef": 1,
     "name": "melee_weapons",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

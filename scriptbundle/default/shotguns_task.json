@@ -1,9 +1,9 @@
 {
     "callingtask": "#kills_shotguns",
     "configstringfiletype": "scriptbundle",
-    "image": "#ui_icon_zm_calling_tasks_shotgun",
+    "image": "image#ui_icon_zm_calling_tasks_shotgun",
     "dailytarget": 750,
     "name": "shotguns_task",
-    "taskname": "#hash_6eef3b21ce8a0e1",
-    "descsimple": "#hash_6b9a45a8fa35a4c0"
+    "taskname": "localized17#hash_6eef3b21ce8a0e1",
+    "descsimple": "localized17#hash_6b9a45a8fa35a4c0"
 }

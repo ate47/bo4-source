@@ -1,10 +1,10 @@
 {
-    "description": "#hash_27af8dba5252c84e",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_27af8dba5252c84e",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_revenge_kill",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_revenge",
-    "stringref": "#medal/revenge_kill",
-    "iconlarge": "#ui_icon_medal_revenge_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_revenge",
+    "stringref": "localized17#medal/revenge_kill",
+    "iconlarge": "image#ui_icon_medal_revenge_large"
 }

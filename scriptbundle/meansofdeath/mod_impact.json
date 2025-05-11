@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_impact",
-    "displayname": "#ui/mod_impact",
-    "icon": "#ui_icon_meansofdeath_impact",
-    "iconlarge": "#ui_icon_meansofdeath_impact_xl"
+    "displayname": "localized17#ui/mod_impact",
+    "icon": "image#ui_icon_meansofdeath_impact",
+    "iconlarge": "image#ui_icon_meansofdeath_impact_xl"
 }

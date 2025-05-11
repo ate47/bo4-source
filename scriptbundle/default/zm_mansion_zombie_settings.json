@@ -2,91 +2,91 @@
     "zombiesplitmdls": [
         {
             "hash_a3c9023c": "#hash_78baa4d4147112bd",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_3rdclass_male_body1_split"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_78baa1d414710da4",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_3rdclass_male_body1_split"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_6af7a6d08eaeb24f",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_1stclass_female_body1_split_skin4"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_6af7a5d08eaeb09c",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_1stclass_female_body1_split_skin5"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_6af7a8d08eaeb5b5",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_1stclass_female_body1_split_skin6"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_6af7a4d08eaeaee9",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_1stclass_female_body1_split_skin2"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_6af7a3d08eaead36",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_1stclass_female_body1_split_skin3"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_3e26cea28b672c67",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_1stclass_female_body1_split"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_258748a9a82b9f42",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_1stclass_male_body1_split"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_6d9dd6835be9fc34",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_1stclass_male_body1_split_skin2"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_6d9dd7835be9fde7",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_1stclass_male_body1_split_skin3"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#c_t8_zmb_1stclass_male_body2",
-            "hash_cdf1f53d": "c_t8_zmb_1stclass_male_body2_split"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_258746a9a82b9bdc",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_1stclass_male_body3_split"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_489c37537c67c8eb",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_2ndclass_female_body1_split"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_489c38537c67ca9e",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_2ndclass_female_body2_split"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#c_t8_zmb_2ndclass_female_body3",
-            "hash_cdf1f53d": "c_t8_zmb_2ndclass_female_body3_split"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_5553c11a4ef29610",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_3rdclass_female_body1_split"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_5553c41a4ef29b29",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_3rdclass_female_body2_split"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_5553c31a4ef29976",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_3rdclass_female_body3_split"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_78baa2d414710f57",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_3rdclass_male_body3_split"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_742aecfa250e4039",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_3rdclass_male_body3_split_skin2"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#hash_742aebfa250e3e86",
-            "hash_cdf1f53d": "c_t8_zmb_dlc1_zombie_3rdclass_male_body3_split_skin3"
+            "hash_cdf1f53d": "model#"
         }
     ],
     "hash_9c0ebe1e": 5000,
@@ -124,6 +124,7 @@
     "hash_97b22faa": 1,
     "damagescale": 1,
     "category": "#basic",
+    "hash_854eebd": 0,
     "hash_c9e47b3f": 250,
     "hash_febbf56f": 96,
     "hash_57140ac3": 150,

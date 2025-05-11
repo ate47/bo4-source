@@ -1,10 +1,10 @@
 {
-    "description": "#hash_352641b3e6fc8426",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_352641b3e6fc8426",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_bounce_hatchet_kill",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_bank_shot",
-    "stringref": "#hash_464d5921c59d1456",
-    "iconlarge": "#ui_icon_medal_bank_shot_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_bank_shot",
+    "stringref": "localized17#hash_464d5921c59d1456",
+    "iconlarge": "image#ui_icon_medal_bank_shot_large"
 }

@@ -1,7 +1,7 @@
 {
-    "detailsicon": "#hash_48b2e8cb354e1de6",
-    "hash_6c274f86": "#loot04_ui_icon_blackmarket_itemshop_bundle_rising_tide",
-    "nametext": "#hash_5039c1ba686cccaa",
+    "detailsicon": "image#hash_48b2e8cb354e1de6",
+    "hash_6c274f86": "image#loot04_ui_icon_blackmarket_itemshop_bundle_rising_tide",
+    "nametext": "localized17#hash_5039c1ba686cccaa",
     "name": "rising_tide_melee_bundle_shop",
-    "desctext": "#hash_7f92260216a4f79a"
+    "desctext": "localized17#hash_7f92260216a4f79a"
 }

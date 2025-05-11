@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_70be162711e7f31f",
+    "hinttext": "localized17#hash_70be162711e7f31f",
     "configstringfiletype": "scriptbundle",
     "value8": "4",
     "value9": "5",
@@ -16,11 +16,15 @@
     "value12": "8",
     "value14": "10",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "capture_time_ctf",
-    "displayname": "#menu/pickup_time",
-    "label1": "#menu/instant",
-    "label3": "#menu/1_second",
+    "displayname": "localized17#menu/pickup_time",
+    "label1": "localized17#menu/instant",
+    "label3": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
     "optionscount": 14,
-    "setting": "captureTime"
+    "hash_765cfd09": 0,
+    "setting": "captureTime",
+    "isenableddisabled": 0
 }

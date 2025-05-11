@@ -2,40 +2,43 @@
     "itemlist": [
         {
             "minweight": 50,
-            "itementry": "weapons_test_supply_stash_slot1",
+            "itementry": "scriptbundle&weapons_test_supply_stash_slot1",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "weapons_test_supply_stash_slot2",
+            "itementry": "scriptbundle&weapons_test_supply_stash_slot2",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "weapons_test_supply_stash_slot3",
+            "itementry": "scriptbundle&weapons_test_supply_stash_slot3",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "itementry": "weapons_test_supply_stash_slot4",
+            "itementry": "scriptbundle&weapons_test_supply_stash_slot4",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "itementry": "weapons_test_supply_stash_slot5",
+            "itementry": "scriptbundle&weapons_test_supply_stash_slot5",
             "maxweight": 50,
             "available": 2
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 12000,
     "type": "itemspawnlist",
     "hash_345eba59": 5,
+    "vehiclespawner": 0,
     "hash_9b009839": 10,
+    "hash_dc7ffbef": 0,
     "name": "weapons_test_supply_stash_parent",
     "supplystashweight": 100,
     "hash_dc91e192": 1,

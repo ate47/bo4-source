@@ -1,10 +1,10 @@
 {
-    "description": "#hash_7d34842eab0abe4",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_7d34842eab0abe4",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_multikill_3",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_triplekill",
-    "stringref": "#medal/multikill_3",
-    "iconlarge": "#ui_icon_medal_triplekill_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_triplekill",
+    "stringref": "localized17#medal/multikill_3",
+    "iconlarge": "image#ui_icon_medal_triplekill_large"
 }

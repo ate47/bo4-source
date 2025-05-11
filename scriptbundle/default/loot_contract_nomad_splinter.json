@@ -1,16 +1,16 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "#hash_338ac2c6c906b7f2"
+            "hash_826726a": "localized17#hash_338ac2c6c906b7f2"
         }
     ],
-    "contracticon": "#hash_5bc2f47ba444360c",
+    "contracticon": "image#hash_5bc2f47ba444360c",
     "hash_d0100eab": 1,
-    "relateditemname": "#hash_725b1719bd56b4ec",
-    "contracttitle": "#hash_338ac2c6c906b7f2",
+    "relateditemname": "localized17#hash_725b1719bd56b4ec",
+    "contracttitle": "localized17#hash_338ac2c6c906b7f2",
     "name": "loot_contract_nomad_splinter",
-    "contractdescription": "#hash_40a2ff4afd63b73",
+    "contractdescription": "localized17#hash_40a2ff4afd63b73",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_7cb73ccb446d8da2",
-    "hash_e08fc162": "#hash_68fd7eb321aa416d"
+    "hash_1c057e8c": "image#hash_7cb73ccb446d8da2",
+    "hash_e08fc162": "localized17#hash_68fd7eb321aa416d"
 }

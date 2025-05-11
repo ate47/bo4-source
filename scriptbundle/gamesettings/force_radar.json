@@ -1,15 +1,19 @@
 {
-    "hinttext": "#hash_6302d1893f001487",
+    "hinttext": "localized17#hash_6302d1893f001487",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
     "value1": "0",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "force_radar",
-    "displayname": "#hash_2c997f72713632d1",
-    "label1": "#menu/normal",
-    "label3": "#menu/constant",
-    "label2": "#hash_5cd9f6faa0eb4c77",
+    "displayname": "localized17#hash_2c997f72713632d1",
+    "label1": "localized17#menu/normal",
+    "label3": "localized17#menu/constant",
+    "label2": "localized17#hash_5cd9f6faa0eb4c77",
+    "hash_54e336e4": 0,
     "optionscount": 3,
-    "setting": "forceRadar"
+    "hash_765cfd09": 0,
+    "setting": "forceRadar",
+    "isenableddisabled": 0
 }

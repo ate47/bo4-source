@@ -1,11 +1,11 @@
 {
     "hash_aa7fbf8b": "j_head",
     "configstringfiletype": "scriptbundle",
-    "hash_c83371f4": "#hash_4ac68b331086ba82",
+    "hash_c83371f4": "model#hash_4ac68b331086ba82",
     "type": "destructiblecharacterdef",
     "hash_cb768102": "helmet",
     "vmtype": "both",
     "name": "c_t8_zmb_1stclass_male2_dst_def",
     "piececount": 1,
-    "hash_19e4a0d": "#hash_4ac68b331086ba82"
+    "hash_19e4a0d": "model#hash_4ac68b331086ba82"
 }

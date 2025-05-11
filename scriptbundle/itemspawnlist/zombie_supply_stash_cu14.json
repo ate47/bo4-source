@@ -2,34 +2,38 @@
     "itemlist": [
         {
             "minweight": 1,
-            "itementry": "cu14_item",
+            "itementry": "scriptbundle&cu14_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "wraithfire_wz_item",
+            "itementry": "scriptbundle&wraithfire_wz_item",
             "maxweight": 1,
             "available": 2
         },
         {
             "minweight": 1,
-            "itementry": "acid_bomb_wz_item",
+            "itementry": "scriptbundle&acid_bomb_wz_item",
             "maxweight": 1,
             "available": 2
         },
         {
             "minweight": 1,
-            "itementry": "supply_stash_gold_guns",
+            "itementry": "scriptbundle&supply_stash_gold_guns",
             "maxweight": 1,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 4,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "zombie_supply_stash_cu14",
     "supplystashweight": 100,
+    "hash_dc91e192": 0,
     "supplystash": 1
 }

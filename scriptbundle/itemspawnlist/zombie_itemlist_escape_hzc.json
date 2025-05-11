@@ -2,21 +2,25 @@
     "itemlist": [
         {
             "minweight": 95,
-            "itementry": "zombie_itemlist_hzc",
+            "itementry": "scriptbundle&zombie_itemlist_hzc",
             "maxweight": 95,
             "available": 1
         },
         {
             "minweight": 5,
-            "itementry": "cu_escape_list",
+            "itementry": "scriptbundle&cu_escape_list",
             "maxweight": 5,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 2,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "zombie_itemlist_escape_hzc",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

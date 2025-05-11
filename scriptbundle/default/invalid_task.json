@@ -1,8 +1,8 @@
 {
     "callingtask": "#invalid",
     "configstringfiletype": "scriptbundle",
-    "image": "#personalize_t7_hud_mp_weapon_hero_chemgun",
+    "image": "image#personalize_t7_hud_mp_weapon_hero_chemgun",
     "name": "invalid_task",
-    "taskname": "#hash_526fcc5b87e9beb9",
-    "descsimple": "#hash_38fffddab31096c8"
+    "taskname": "localized17#hash_526fcc5b87e9beb9",
+    "descsimple": "localized17#hash_38fffddab31096c8"
 }

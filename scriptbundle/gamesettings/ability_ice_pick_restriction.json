@@ -1,13 +1,17 @@
 {
-    "descriptionimage": "#ui_icon_hero_ice_pick",
+    "descriptionimage": "image#ui_icon_hero_ice_pick",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "ability_ice_pick_restriction",
-    "displayname": "#weapon/hero_icepick",
-    "label1": "#menu/enabled",
-    "label2": "#menu/disabled",
+    "displayname": "localized17#weapon/hero_icepick",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "itemRestrictions__gadget_icepick__restricted"
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__gadget_icepick__restricted",
+    "isenableddisabled": 0
 }

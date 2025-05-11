@@ -1,10 +1,10 @@
 {
-    "hash_c7bd8867": "#hash_2703f9fb7e481f6d",
-    "popupimage": "#ui_icon_weapon_special_ballistic_knife_render",
-    "hash_5162d01b": "#ui_icon_weapon_special_ballistic_knife_render",
-    "nametext": "#hash_73f926dd393ef4df",
-    "categorytext": "#mpui/bm_bribe",
+    "hash_c7bd8867": "localized17#hash_2703f9fb7e481f6d",
+    "popupimage": "image#ui_icon_weapon_special_ballistic_knife_render",
+    "hash_5162d01b": "image#ui_icon_weapon_special_ballistic_knife_render",
+    "nametext": "localized17#hash_73f926dd393ef4df",
+    "categorytext": "localized17#mpui/bm_bribe",
     "name": "special_ballisticknife_t8_dw_bribe",
-    "desctext": "#hash_10ebd950ef251971",
-    "hash_c1acffb6": "#hash_73f926dd393ef4df"
+    "desctext": "localized17#hash_10ebd950ef251971",
+    "hash_c1acffb6": "localized17#hash_73f926dd393ef4df"
 }

@@ -2,21 +2,25 @@
     "itemlist": [
         {
             "minweight": 300,
-            "itementry": "health_item_medium",
+            "itementry": "scriptbundle&health_item_medium",
             "maxweight": 400,
             "available": -1
         },
         {
             "minweight": 300,
-            "itementry": "health_item_large",
+            "itementry": "scriptbundle&health_item_large",
             "maxweight": 400,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 2,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "supply_stash_zombie_health",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

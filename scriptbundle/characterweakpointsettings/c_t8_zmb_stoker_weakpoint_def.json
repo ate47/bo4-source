@@ -3,6 +3,7 @@
         {
             "hitloc": "right_arm_upper",
             "hash_641ce20e": 1,
+            "hash_8223b0cf": 0,
             "type": "#armor",
             "hash_51e8b151": "j_clavicle_ri",
             "activebydefault": 1,
@@ -12,6 +13,7 @@
         {
             "hitloc": "left_arm_upper",
             "hash_641ce20e": 1,
+            "hash_8223b0cf": 0,
             "type": "#armor",
             "hash_51e8b151": "j_clavicle_le",
             "activebydefault": 1,
@@ -21,6 +23,7 @@
         {
             "hitloc": "head",
             "hash_641ce20e": 1,
+            "hash_8223b0cf": 0,
             "type": "#armor",
             "hash_51e8b151": "j_head",
             "activebydefault": 1,
@@ -30,6 +33,7 @@
         {
             "hitloc": "left_arm_lower",
             "hash_641ce20e": 1,
+            "hash_8223b0cf": 0,
             "type": "#armor",
             "activebydefault": 1,
             "hitradius": 12,
@@ -37,6 +41,7 @@
         },
         {
             "hitloc": "left_arm_upper",
+            "hash_8223b0cf": 0,
             "type": "#weakpoint",
             "hash_51e8b151": "j_clavicle_le",
             "hitradius": 12,
@@ -44,6 +49,7 @@
         },
         {
             "hitloc": "right_arm_upper",
+            "hash_8223b0cf": 0,
             "type": "#weakpoint",
             "hash_51e8b151": "j_clavicle_ri",
             "hitradius": 12,
@@ -51,6 +57,7 @@
         },
         {
             "hitloc": "head",
+            "hash_8223b0cf": 0,
             "type": "#weakpoint",
             "hash_51e8b151": "j_head",
             "hitradius": 10,
@@ -58,7 +65,7 @@
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "model": "#c_t8_zmb_titanic_stoker_body1",
+    "model": "model#c_t8_zmb_titanic_stoker_body1",
     "type": "characterweakpointsettings",
     "name": "c_t8_zmb_stoker_weakpoint_def",
     "hash_96a09826": 7

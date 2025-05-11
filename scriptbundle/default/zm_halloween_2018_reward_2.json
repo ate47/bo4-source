@@ -1,7 +1,7 @@
 {
     "configstringfiletype": "scriptbundle",
-    "desc": "#hash_44b70b29ed32922a",
-    "image": "#loot_ui_icon_outfit_halloween_extra_warpaint_gargoyle_scarlett",
+    "desc": "localized17#hash_44b70b29ed32922a",
+    "image": "image#loot_ui_icon_outfit_halloween_extra_warpaint_gargoyle_scarlett",
     "stat": "#reward_2",
     "name": "zm_halloween_2018_reward_2"
 }

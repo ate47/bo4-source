@@ -1,11 +1,11 @@
 {
-    "hash_c7bd8867": "#hash_44a39e95faef0a4c",
-    "popupimage": "#ui_icon_weapon_camo_active_sig_pistol_revolver_cyberpunk",
-    "hash_5162d01b": "#ui_icon_weapon_camo_active_sig_pistol_revolver_cyberpunk",
-    "nametext": "#hash_11416e3dffba8d50",
-    "categorytext": "#mpui/bm_bribe",
+    "hash_c7bd8867": "localized17#hash_44a39e95faef0a4c",
+    "popupimage": "image#ui_icon_weapon_camo_active_sig_pistol_revolver_cyberpunk",
+    "hash_5162d01b": "image#ui_icon_weapon_camo_active_sig_pistol_revolver_cyberpunk",
+    "nametext": "localized17#hash_11416e3dffba8d50",
+    "categorytext": "localized17#mpui/bm_bribe",
     "name": "camo_active_sig_pistol_revolver_cyberpunk_base_bribe",
-    "desctext": "#hash_5dd7b58187a21578",
-    "hash_e35e7c74": "#weapon/pistol_revolver_t8",
-    "hash_c1acffb6": "#hash_11416e3dffba8d50"
+    "desctext": "localized17#hash_5dd7b58187a21578",
+    "hash_e35e7c74": "localized17#weapon/pistol_revolver_t8",
+    "hash_c1acffb6": "localized17#hash_11416e3dffba8d50"
 }

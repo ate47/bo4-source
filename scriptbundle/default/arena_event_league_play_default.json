@@ -25,6 +25,7 @@
     ],
     "matchquitpenalty": [
         {
+            "hash_193f434b": 0,
             "hash_2ec63ef8": 5
         },
         {
@@ -46,5 +47,6 @@
     "hash_504c84f8": 50,
     "hash_e6467560": 200,
     "hash_e69785eb": 3,
+    "hash_7cd9bea8": 0,
     "hash_76b4e29": 50
 }

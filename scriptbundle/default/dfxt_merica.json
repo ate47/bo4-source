@@ -1,12 +1,12 @@
 {
     "hash_6a36c78c": "j_wrist_le",
     "hash_82aadb9b": "j_knee_le",
-    "dropoff": "#hash_4102d4e891e10a65",
-    "contrails": "#hash_7dd33e1e520740fe",
+    "dropoff": "fx#hash_4102d4e891e10a65",
+    "contrails": "fx#hash_7dd33e1e520740fe",
     "name": "dfxt_merica",
     "icon": "loot_ui_icon_jumppacks_trail_merica",
     "hash_ccb00fe4": "j_wrist_ri",
-    "body_trail_3p": "#hash_377a98b19440173f",
+    "body_trail_3p": "fx#hash_377a98b19440173f",
     "largeicon": "loot_ui_icon_jumppacks_trail_merica",
-    "body_trail": "#hash_3773acb1943a1a8d"
+    "body_trail": "fx#hash_3773acb1943a1a8d"
 }

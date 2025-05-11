@@ -2,6 +2,6 @@
     "configstringfiletype": "scriptbundle",
     "type": "quote",
     "name": "quote_incoming_fire_right_of_way",
-    "quote": "#hash_3f06dd80043e6c95",
-    "author": "#hash_4e55371bb0e6c43f"
+    "quote": "localized17#hash_3f06dd80043e6c95",
+    "author": "localized17#hash_4e55371bb0e6c43f"
 }

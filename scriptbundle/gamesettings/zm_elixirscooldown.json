@@ -1,17 +1,21 @@
 {
-    "hinttext": "#hash_489247d407c3036c",
+    "hinttext": "localized17#hash_489247d407c3036c",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
     "value1": "0",
     "value4": "3",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "zm_elixirscooldown",
-    "displayname": "#hash_15a9f5b96e4a5244",
-    "label4": "#hash_1f0968aad9d63087",
-    "label1": "#hash_51aa03eea5a0dd76",
-    "label3": "#hash_1413f5dcb3e0f537",
-    "label2": "#hash_7e5de0c85e3519f0",
+    "displayname": "localized17#hash_15a9f5b96e4a5244",
+    "label4": "localized17#hash_1f0968aad9d63087",
+    "label1": "localized17#hash_51aa03eea5a0dd76",
+    "label3": "localized17#hash_1413f5dcb3e0f537",
+    "label2": "localized17#hash_7e5de0c85e3519f0",
+    "hash_54e336e4": 0,
     "optionscount": 3,
-    "setting": "zmElixirsCooldown"
+    "hash_765cfd09": 0,
+    "setting": "zmElixirsCooldown",
+    "isenableddisabled": 0
 }

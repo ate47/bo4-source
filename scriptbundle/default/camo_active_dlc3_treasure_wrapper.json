@@ -1,5 +1,5 @@
 {
-    "detailsicon": "#loot_04_ui_icon_blackmarket_stream_camo_active_treasure",
-    "hash_6c274f86": "#hash_20d0127b706b68c0",
+    "detailsicon": "image#loot_04_ui_icon_blackmarket_stream_camo_active_treasure",
+    "hash_6c274f86": "image#hash_20d0127b706b68c0",
     "name": "camo_active_dlc3_treasure_wrapper"
 }

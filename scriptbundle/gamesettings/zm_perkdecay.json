@@ -1,16 +1,20 @@
 {
-    "hinttext": "#hash_6c3c4e80f608bfa3",
+    "hinttext": "localized17#hash_6c3c4e80f608bfa3",
     "configstringfiletype": "scriptbundle",
     "value2": "2",
     "value3": "2",
     "value1": "1",
     "value4": "3",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "zm_perkdecay",
-    "displayname": "#hash_2d2b224c277f96a9",
-    "label4": "#hash_1f0968aad9d63087",
-    "label1": "#hash_4bf59e78dfb9da30",
-    "label2": "#hash_6b4ecdd9d19ad73c",
+    "displayname": "localized17#hash_2d2b224c277f96a9",
+    "label4": "localized17#hash_1f0968aad9d63087",
+    "label1": "localized17#hash_4bf59e78dfb9da30",
+    "label2": "localized17#hash_6b4ecdd9d19ad73c",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "zmPerkDecay"
+    "hash_765cfd09": 0,
+    "setting": "zmPerkDecay",
+    "isenableddisabled": 0
 }

@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_76cdf6423a9e3328",
+    "hinttext": "localized17#hash_76cdf6423a9e3328",
     "configstringfiletype": "scriptbundle",
     "value8": "25",
     "value2": "1",
@@ -10,10 +10,14 @@
     "value4": "3",
     "value5": "4",
     "type": "gamesettings",
-    "label": "#menu/x_points",
+    "label": "localized17#menu/x_points",
+    "hash_5a6dee5a": 0,
     "name": "team_score_per_kill",
-    "displayname": "#hash_7861bc7c0d1b9228",
-    "label2": "#menu/1_point",
+    "displayname": "localized17#hash_7861bc7c0d1b9228",
+    "label2": "localized17#menu/1_point",
+    "hash_54e336e4": 0,
     "optionscount": 8,
-    "setting": "teamScorePerKill"
+    "hash_765cfd09": 0,
+    "setting": "teamScorePerKill",
+    "isenableddisabled": 0
 }

@@ -1,13 +1,18 @@
 {
+    "globstate": 0,
     "numplasma": 150,
     "hash_92340672": 500,
     "skuid": 500057,
     "hash_b889f476": 150,
-    "bannertitle": "#hash_5777fc84adc979bb",
-    "descriptiontext": "#hash_2de28046a9c398c",
+    "bannertitle": "localized17#hash_5777fc84adc979bb",
+    "droptype": 0,
+    "plasmaprice": 0,
+    "descriptiontext": "localized17#hash_2de28046a9c398c",
     "hash_51a0da4c": 1,
     "name": "zm_lab_150np_discount",
-    "popupname": "#hash_4a7502a86996bd46",
-    "descriptiontitle": "#hash_339befde77b1050d",
-    "hash_40cee9c0": "#ui_icon_laboratory_nebulium_offer_medium"
+    "popupname": "localized17#hash_4a7502a86996bd46",
+    "hash_619ae0f2": 0,
+    "maxquantity": 0,
+    "descriptiontitle": "localized17#hash_339befde77b1050d",
+    "hash_40cee9c0": "image#ui_icon_laboratory_nebulium_offer_medium"
 }

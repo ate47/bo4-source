@@ -3,59 +3,93 @@
         {
             "teamsizedescriptions": [
                 {
-                    "description": "#hash_1f5091f592b63363",
+                    "description": "localized17#hash_1f5091f592b63363",
                     "teamsize": 1
                 },
                 {
-                    "description": "#hash_9bce5a2bfdc5970",
+                    "description": "localized17#hash_9bce5a2bfdc5970",
                     "teamsize": 2
                 },
                 {
-                    "description": "#hash_5bb56d2da8ca648b",
+                    "description": "localized17#hash_5bb56d2da8ca648b",
                     "teamsize": 4
                 }
             ],
-            "description": "#hash_1f5091f592b63363",
+            "description": "localized17#hash_1f5091f592b63363",
             "hash_57b131bd": 3
         },
         {
             "teamsizedescriptions": [
                 {
-                    "description": "#hash_567b107b1cfdbb2c",
+                    "description": "localized17#hash_567b107b1cfdbb2c",
                     "teamsize": 1
                 },
                 {
-                    "description": "#hash_19abedbf61eb06d5",
+                    "description": "localized17#hash_19abedbf61eb06d5",
                     "teamsize": 2
                 },
                 {
-                    "description": "#hash_3adc2f8d48c2cccc",
+                    "description": "localized17#hash_3adc2f8d48c2cccc",
                     "teamsize": 4
                 }
             ],
-            "description": "#hash_1f5092f592b63516",
+            "description": "localized17#hash_1f5092f592b63516",
             "hash_57b131bd": 3
         },
         {
-            "description": "#hash_1f5093f592b636c9"
+            "description": "localized17#hash_1f5093f592b636c9"
         }
     ],
-    "description": "#hash_7fbe67060c64d1e3",
+    "amount": 0,
+    "hash_99c0cb08": 0,
+    "duration": 0,
+    "description": "localized17#hash_7fbe67060c64d1e3",
+    "hash_f2902d7b": 0,
+    "hash_a3aa1ca2": 0,
+    "armorshards": 0,
     "configstringfiletype": "scriptbundle",
     "hash_eda4062b": 3,
-    "hash_e8b98a8a": "#hash_5deb16df644e7e5e",
-    "model": "#p8_wz_cu_hat_wool",
+    "hash_e8b98a8a": "localized17#hash_5deb16df644e7e5e",
+    "hash_22c3ab38": 0,
+    "hash_54a3b4ca": 0,
+    "hash_5dc4470b": 0,
+    "hash_3e688854": 0,
+    "model": "model#p8_wz_cu_hat_wool",
+    "hash_2ee21ae6": 0,
     "type": "itemspawnentry",
-    "hintstring": "#hash_99fc2e66d019964",
+    "hintstring": "localized18#hash_99fc2e66d019964",
+    "hash_7a80f06e": 0,
     "unlockableitemref": "#wz_character_reznov",
+    "hash_d1f348db": 0,
+    "hash_cc1bbd2c": 0,
+    "hash_ae6581c0": 0,
+    "angleoffsetz": 0,
+    "angleoffsety": 0,
     "angleoffsetx": 10,
+    "hash_702943a1": 0,
+    "hash_48907470": 0,
+    "hash_22d128f2": 0,
     "name": "cu21_item",
-    "displayname": "#hash_99fc2e66d019964",
-    "icon": "#hash_54e0cd232527b698",
+    "displayname": "localized17#hash_99fc2e66d019964",
+    "hash_99edb6a3": 0,
+    "icon": "image#hash_54e0cd232527b698",
+    "explosivedamagescale": 0,
+    "casttime": 0,
     "modelscale": 1,
     "rarity": "None",
+    "hash_c690c73d": 0,
+    "hash_8a122876": 0,
+    "hash_7c4c8ceb": 0,
+    "hash_ee67711f": 0,
     "handler": "#hash_5c844f5c1207159c",
-    "rewardname": "#hash_244ee9beaa552ff7",
+    "armortier": 0,
+    "rewardname": "localized17#hash_244ee9beaa552ff7",
+    "hash_8c9a7dc8": 0,
+    "hash_15b88fde": 0,
+    "hash_7a51d937": 0,
+    "positionoffsety": 0,
+    "positionoffsetx": 0,
     "positionoffsetz": -1,
+    "hash_9f307988": 0,
     "itemtype": "quest"
 }

@@ -2,32 +2,35 @@
     "itemlist": [
         {
             "minweight": 100,
-            "itementry": "lmg_standard_t8_gold_item",
-            "childitementry_1": "ammo_type_762_item",
+            "itementry": "scriptbundle&lmg_standard_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "lmg_spray_t8_gold_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&lmg_spray_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "lmg_heavy_t8_gold_item",
-            "childitementry_1": "ammo_type_50cal_item",
+            "itementry": "scriptbundle&lmg_heavy_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_50cal_item",
             "maxweight": 200,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 200,
     "type": "itemspawnlist",
     "hash_345eba59": 3,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
     "hash_dc7ffbef": 1,
     "name": "guns_gold_lmgs",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

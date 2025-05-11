@@ -1,10 +1,13 @@
 {
-    "hinttext": "#hash_650a622aefd1ec25",
+    "hinttext": "localized17#hash_650a622aefd1ec25",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "use_emblem_instead_of_faction_icon",
-    "displayname": "#hash_333fb7ac95179b0b",
+    "displayname": "localized17#hash_333fb7ac95179b0b",
+    "hash_54e336e4": 0,
     "optionscount": 2,
+    "hash_765cfd09": 0,
     "setting": "useEmblemInsteadOfFactionIcon",
     "isenableddisabled": 1
 }

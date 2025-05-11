@@ -1,8 +1,8 @@
 {
     "hash_fb8bfacd": 2,
-    "hash_11f91d6a": "#hash_2668aeeec5bed896",
+    "hash_11f91d6a": "image#hash_2668aeeec5bed896",
     "configstringfiletype": "scriptbundle",
-    "hash_5d66bb63": "#hash_426758cb22a6aa7f",
+    "hash_5d66bb63": "localized17#hash_426758cb22a6aa7f",
     "type": "resistance",
     "hash_a079a0f6": "none",
     "hash_215422c5": "stagger",
@@ -12,6 +12,6 @@
     "hash_6aa3b54b": "none",
     "hash_7cedd9df": "none",
     "hash_8e287c54": "none",
-    "hash_3cf30434": "#hash_7ca07ba7e2400b51",
+    "hash_3cf30434": "localized17#hash_7ca07ba7e2400b51",
     "name": "mp_resist_shellshock"
 }

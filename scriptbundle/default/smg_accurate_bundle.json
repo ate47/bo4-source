@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_57bb8b054d84459a",
-    "popupimage": "#hash_22b02633b7037b96",
-    "nametext": "#hash_60adf9df17b1db3",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_57bb8b054d84459a",
+    "popupimage": "image#hash_22b02633b7037b96",
+    "nametext": "localized17#hash_60adf9df17b1db3",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "smg_accurate_bundle",
-    "desctext": "#hash_399b7f2e5c3f210c",
-    "previewimage": "#hash_465e481e9240452f",
-    "reserveimage": "#hash_3bdcec958753a256"
+    "desctext": "localized17#hash_399b7f2e5c3f210c",
+    "previewimage": "image#hash_465e481e9240452f",
+    "reserveimage": "image#hash_3bdcec958753a256"
 }

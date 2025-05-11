@@ -1,10 +1,13 @@
 {
-    "hinttext": "#hash_2431022add6604b1",
+    "hinttext": "localized17#hash_2431022add6604b1",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "allow_play_of_the_match",
-    "displayname": "#hash_76e31bacaceb01a7",
+    "displayname": "localized17#hash_76e31bacaceb01a7",
+    "hash_54e336e4": 0,
     "optionscount": 2,
+    "hash_765cfd09": 0,
     "setting": "allowPlayOfTheMatch",
     "isenableddisabled": 1
 }

@@ -1,17 +1,21 @@
 {
-    "hinttext": "#hash_7e8098493922e69f",
+    "hinttext": "localized17#hash_7e8098493922e69f",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
     "value1": "0",
     "value4": "3",
     "type": "gamesettings",
-    "label": "#hash_4bf59e78dfb9da30",
+    "label": "localized17#hash_4bf59e78dfb9da30",
+    "hash_5a6dee5a": 0,
     "name": "zm_doorstate",
-    "displayname": "#hash_c8cbcf5089e3cb5",
-    "label1": "#hash_3b41c280ca439dd1",
-    "label3": "#hash_7ebc76ab224b7dcb",
-    "label2": "#hash_4bf59e78dfb9da30",
+    "displayname": "localized17#hash_c8cbcf5089e3cb5",
+    "label1": "localized17#hash_3b41c280ca439dd1",
+    "label3": "localized17#hash_7ebc76ab224b7dcb",
+    "label2": "localized17#hash_4bf59e78dfb9da30",
+    "hash_54e336e4": 0,
     "optionscount": 3,
-    "setting": "zmDoorState"
+    "hash_765cfd09": 0,
+    "setting": "zmDoorState",
+    "isenableddisabled": 0
 }

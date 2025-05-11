@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 500,
-            "itementry": "wz_escape_outside_list_items",
+            "itementry": "scriptbundle&wz_escape_outside_list_items",
             "maxweight": 500,
             "available": -1
         },
@@ -12,11 +12,15 @@
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 420,
     "type": "itemspawnlist",
     "hash_345eba59": 2,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "wz_escape_outside_list_item_default",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

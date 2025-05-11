@@ -1,44 +1,80 @@
 {
     "objectives": [
         {
-            "description": "#hash_71ee2ed846c955a1"
+            "description": "localized17#hash_71ee2ed846c955a1"
         },
         {
             "teamsizedescriptions": [
                 {
-                    "description": "#hash_203d8d5eb73dbc34",
+                    "description": "localized17#hash_203d8d5eb73dbc34",
                     "teamsize": 1
                 },
                 {
-                    "description": "#hash_48b03bcf3187a2cd",
+                    "description": "localized17#hash_48b03bcf3187a2cd",
                     "teamsize": 2
                 },
                 {
-                    "description": "#hash_3c6bec6b106a6ae4",
+                    "description": "localized17#hash_3c6bec6b106a6ae4",
                     "teamsize": 4
                 }
             ],
-            "description": "#hash_71ee2dd846c953ee",
+            "description": "localized17#hash_71ee2dd846c953ee",
             "hash_57b131bd": 3
         },
         {
-            "description": "#hash_71ee30d846c95907"
+            "description": "localized17#hash_71ee30d846c95907"
         }
     ],
-    "description": "#hash_5803baabdfd40972",
+    "amount": 0,
+    "hash_99c0cb08": 0,
+    "duration": 0,
+    "description": "localized17#hash_5803baabdfd40972",
+    "hash_f2902d7b": 0,
+    "hash_a3aa1ca2": 0,
+    "armorshards": 0,
     "configstringfiletype": "scriptbundle",
     "hash_eda4062b": 3,
-    "hash_e8b98a8a": "#hash_69ea629874ffc11",
-    "model": "#p8_wz_cu_clothes_tshirt",
+    "hash_e8b98a8a": "localized17#hash_69ea629874ffc11",
+    "hash_22c3ab38": 0,
+    "hash_54a3b4ca": 0,
+    "hash_5dc4470b": 0,
+    "hash_3e688854": 0,
+    "model": "model#p8_wz_cu_clothes_tshirt",
+    "hash_2ee21ae6": 0,
     "type": "itemspawnentry",
-    "hintstring": "#hash_777414243131336f",
+    "hintstring": "localized18#hash_777414243131336f",
+    "hash_7a80f06e": 0,
     "unlockableitemref": "#wz_character_mason",
+    "hash_d1f348db": 0,
+    "hash_cc1bbd2c": 0,
+    "hash_ae6581c0": 0,
+    "angleoffsetz": 0,
+    "angleoffsety": 0,
+    "angleoffsetx": 0,
+    "hash_702943a1": 0,
+    "hash_48907470": 0,
+    "hash_22d128f2": 0,
     "name": "cu19_item",
-    "displayname": "#hash_777414243131336f",
-    "icon": "#hash_6a9711e31201d8a",
+    "displayname": "localized17#hash_777414243131336f",
+    "hash_99edb6a3": 0,
+    "icon": "image#hash_6a9711e31201d8a",
+    "explosivedamagescale": 0,
+    "casttime": 0,
     "modelscale": 1,
     "rarity": "None",
+    "hash_c690c73d": 0,
+    "hash_8a122876": 0,
+    "hash_7c4c8ceb": 0,
+    "hash_ee67711f": 0,
     "handler": "#hash_5c844f5c1207159c",
-    "rewardname": "#hash_7fc535d42eb00c97",
+    "armortier": 0,
+    "rewardname": "localized17#hash_7fc535d42eb00c97",
+    "hash_8c9a7dc8": 0,
+    "hash_15b88fde": 0,
+    "hash_7a51d937": 0,
+    "positionoffsety": 0,
+    "positionoffsetx": 0,
+    "positionoffsetz": 0,
+    "hash_9f307988": 0,
     "itemtype": "quest"
 }

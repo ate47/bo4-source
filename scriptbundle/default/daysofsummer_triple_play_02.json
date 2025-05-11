@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_189ba7728bd30896",
-    "popupimage": "#hash_30f114e4477d4482",
-    "nametext": "#hash_1cba159f28b3f3b8",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_189ba7728bd30896",
+    "popupimage": "image#hash_30f114e4477d4482",
+    "nametext": "localized17#hash_1cba159f28b3f3b8",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "daysofsummer_triple_play_02",
-    "desctext": "#hash_566372a546f56451",
-    "previewimage": "#hash_5e1d6b632be97afb",
-    "reserveimage": "#hash_72dd21725d1ef922"
+    "desctext": "localized17#hash_566372a546f56451",
+    "previewimage": "image#hash_5e1d6b632be97afb",
+    "reserveimage": "image#hash_72dd21725d1ef922"
 }

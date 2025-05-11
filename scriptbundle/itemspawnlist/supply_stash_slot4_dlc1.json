@@ -2,43 +2,43 @@
     "itemlist": [
         {
             "minweight": 50,
-            "itementry": "grapple_wz_item",
+            "itementry": "scriptbundle&grapple_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "barricade_wz_item",
+            "itementry": "scriptbundle&barricade_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "cluster_semtex_wz_item",
+            "itementry": "scriptbundle&cluster_semtex_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "trophy_system_wz_item",
+            "itementry": "scriptbundle&trophy_system_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "health_item_medium",
+            "itementry": "scriptbundle&health_item_medium",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "perk_item_awareness",
+            "itementry": "scriptbundle&perk_item_awareness",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "ammo_type_50cal_item",
+            "itementry": "scriptbundle&ammo_type_50cal_item",
             "maxweight": 50,
             "available": 1
         },
@@ -48,12 +48,16 @@
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 12000,
     "type": "itemspawnlist",
     "hash_345eba59": 8,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "supply_stash_slot4_dlc1",
     "supplystashweight": 100,
+    "hash_dc91e192": 0,
     "supplystash": 1
 }

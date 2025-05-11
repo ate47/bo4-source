@@ -1,10 +1,10 @@
 {
-    "description": "#hash_710b871aeeb97e0f",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_710b871aeeb97e0f",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_automated_turret_kill",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_crackdown",
-    "stringref": "#hash_151f86906c597c45",
-    "iconlarge": "#ui_icon_medal_crackdown_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_crackdown",
+    "stringref": "localized17#hash_151f86906c597c45",
+    "iconlarge": "image#ui_icon_medal_crackdown_large"
 }

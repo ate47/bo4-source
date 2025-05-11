@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#t7_hud_medal_backing_badassery",
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
     "widget": "BadasseryMedal",
     "name": "medal_killed_dog",
-    "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
-    "iconsmall": "#hash_ae5818ba2ac71d5",
-    "stringref": "#medal/killed_dog",
-    "iconlarge": "#hash_ae5818ba2ac71d5"
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#hash_ae5818ba2ac71d5",
+    "stringref": "localized17#medal/killed_dog",
+    "iconlarge": "image#hash_ae5818ba2ac71d5"
 }

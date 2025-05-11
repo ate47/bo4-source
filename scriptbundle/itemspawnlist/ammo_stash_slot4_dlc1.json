@@ -2,27 +2,31 @@
     "itemlist": [
         {
             "minweight": 200,
-            "itementry": "melee_weapons",
+            "itementry": "scriptbundle&melee_weapons",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "suppressor_wz_item",
+            "itementry": "scriptbundle&suppressor_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "sniperscope_wz_item",
+            "itementry": "scriptbundle&sniperscope_wz_item",
             "maxweight": 100,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 3,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "ammo_stash_slot4_dlc1",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

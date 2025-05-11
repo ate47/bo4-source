@@ -1,10 +1,10 @@
 {
-    "description": "#hash_1a6e6c1b4ed95f57",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_1a6e6c1b4ed95f57",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_clean_kill_enemy_carrying_tacos",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_tearjerker",
-    "stringref": "#hash_67085d01ec79d0ed",
-    "iconlarge": "#ui_icon_medal_tearjerker_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_tearjerker",
+    "stringref": "localized17#hash_67085d01ec79d0ed",
+    "iconlarge": "image#ui_icon_medal_tearjerker_large"
 }

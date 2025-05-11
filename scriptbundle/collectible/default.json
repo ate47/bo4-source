@@ -1,7 +1,7 @@
 {
-    "slotsize": 0,
+    "slotsize": "button:0",
     "configstringfiletype": "scriptbundle",
-    "uimodel": "tag_origin",
+    "uimodel": "model#",
     "type": "collectible",
     "vmtype": "client",
     "name": "default"

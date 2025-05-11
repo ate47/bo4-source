@@ -2,36 +2,40 @@
     "itemlist": [
         {
             "minweight": 1,
-            "itementry": "health_stash_slot1",
+            "itementry": "scriptbundle&health_stash_slot1",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "health_stash_slot2",
+            "itementry": "scriptbundle&health_stash_slot2",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "health_stash_slot3",
+            "itementry": "scriptbundle&health_stash_slot3",
             "maxweight": 1,
             "available": 3
         },
         {
             "minweight": 1,
-            "itementry": "health_stash_slot4",
+            "itementry": "scriptbundle&health_stash_slot4",
             "maxweight": 1,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 4000,
     "type": "itemspawnlist",
     "hash_345eba59": 4,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "health_stash_parent",
-    "displayname": "#wz/medical_stash",
+    "displayname": "localized18#wz/medical_stash",
     "supplystashweight": 100,
+    "hash_dc91e192": 0,
     "supplystash": 1
 }

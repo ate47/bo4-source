@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_133aa3cc475090b",
+    "hinttext": "localized17#hash_133aa3cc475090b",
     "configstringfiletype": "scriptbundle",
     "value8": "6",
     "value9": "7",
@@ -19,11 +19,15 @@
     "value17": "60",
     "value16": "50",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "incremental_spawn_delay",
-    "displayname": "#hash_364632ebb6269a05",
-    "label1": "#menu/disabled",
-    "label2": "#menu/1_second",
+    "displayname": "localized17#hash_364632ebb6269a05",
+    "label1": "localized17#menu/disabled",
+    "label2": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
     "optionscount": 17,
-    "setting": "incrementalSpawnDelay"
+    "hash_765cfd09": 0,
+    "setting": "incrementalSpawnDelay",
+    "isenableddisabled": 0
 }

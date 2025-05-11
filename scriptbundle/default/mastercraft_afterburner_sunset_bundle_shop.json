@@ -1,7 +1,7 @@
 {
-    "detailsicon": "#hash_360085279a89449d",
-    "hash_6c274f86": "#loot07_ui_icon_blackmarket_itemshop_afterburner",
-    "nametext": "#hash_5e6ae4119dda43e0",
+    "detailsicon": "image#hash_360085279a89449d",
+    "hash_6c274f86": "image#loot07_ui_icon_blackmarket_itemshop_afterburner",
+    "nametext": "localized17#hash_5e6ae4119dda43e0",
     "name": "mastercraft_afterburner_sunset_bundle_shop",
-    "desctext": "#hash_32d4b25228c51a89"
+    "desctext": "localized17#hash_32d4b25228c51a89"
 }

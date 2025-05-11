@@ -6,11 +6,11 @@
     "effectradius": 350,
     "vmtype": "client",
     "name": "zm_aoe_strafe_storm",
-    "hash_a8609f98": "damage_light",
+    "hash_a8609f98": "rumble&damage_light",
     "hash_e41627fe": "zmb_pegasus_aoe_start",
-    "endrumble": "damage_heavy",
+    "endrumble": "rumble&damage_heavy",
     "hash_1ee49376": "zmb_pegasus_aoe_lp",
     "earthquakeduration": 1.5,
-    "loop_effect": "#hash_3284d7debb01c2e9",
-    "startrumble": "damage_heavy"
+    "loop_effect": "fx#hash_3284d7debb01c2e9",
+    "startrumble": "rumble&damage_heavy"
 }

@@ -1,12 +1,12 @@
 {
     "hash_6a36c78c": "j_wrist_le",
     "hash_82aadb9b": "j_knee_le",
-    "dropoff": "#hash_7d4b958c8cccd02e",
-    "contrails": "#hash_6d7d2d5ac1f3c473",
+    "dropoff": "fx#hash_7d4b958c8cccd02e",
+    "contrails": "fx#hash_6d7d2d5ac1f3c473",
     "name": "dfxt_pirate",
     "icon": "loot_ui_icon_jumppacks_trail_pirate",
     "hash_ccb00fe4": "j_wrist_ri",
-    "body_trail_3p": "#hash_5e83c5fc7f70a88a",
+    "body_trail_3p": "fx#hash_5e83c5fc7f70a88a",
     "largeicon": "loot_ui_icon_jumppacks_trail_pirate_large",
-    "body_trail": "#hash_5e7cb9fc7f6a7578"
+    "body_trail": "fx#hash_5e7cb9fc7f6a7578"
 }

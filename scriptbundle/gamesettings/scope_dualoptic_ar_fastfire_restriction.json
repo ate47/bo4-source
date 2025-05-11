@@ -1,8 +1,12 @@
 {
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "scope_dualoptic_ar_fastfire_restriction",
-    "displayname": "#weapon/ar_fastfire_t8",
+    "displayname": "localized17#weapon/ar_fastfire_t8",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "itemRestrictions__ar_fastfire_t8__attachments__dualoptic"
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ar_fastfire_t8__attachments__dualoptic",
+    "isenableddisabled": 0
 }

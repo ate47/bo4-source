@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_78977db591b5d861",
+    "hinttext": "localized17#hash_78977db591b5d861",
     "hash_2632eb24": "99",
     "configstringfiletype": "scriptbundle",
     "value8": "7",
@@ -102,12 +102,15 @@
     "hash_216254dc": "52",
     "hash_3094f341": "51",
     "type": "gamesettings",
-    "label": "#hash_17b576a053be6a01",
+    "label": "localized17#hash_17b576a053be6a01",
+    "hash_5a6dee5a": 0,
     "name": "zm_selfrevivecount",
-    "displayname": "#hash_44de55c260cda4af",
-    "label1": "#hash_68b65fb510ccd214",
-    "label2": "#hash_7c6e91fd7515eeff",
+    "displayname": "localized17#hash_44de55c260cda4af",
+    "label1": "localized17#hash_68b65fb510ccd214",
+    "label2": "localized17#hash_7c6e91fd7515eeff",
     "hash_54e336e4": 1,
     "optionscount": 100,
-    "setting": "zmSelfReviveAmount"
+    "hash_765cfd09": 0,
+    "setting": "zmSelfReviveAmount",
+    "isenableddisabled": 0
 }

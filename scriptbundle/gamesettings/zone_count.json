@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_72e585c5b6dd6261",
+    "hinttext": "localized17#hash_72e585c5b6dd6261",
     "configstringfiletype": "scriptbundle",
     "value2": "2",
     "value3": "3",
@@ -7,10 +7,14 @@
     "value4": "4",
     "value5": "5",
     "type": "gamesettings",
-    "label": "#menu/x_zones",
+    "label": "localized17#menu/x_zones",
+    "hash_5a6dee5a": 0,
     "name": "zone_count",
-    "displayname": "#menu/multi_zone",
-    "label1": "#menu/1_zone",
+    "displayname": "localized17#menu/multi_zone",
+    "label1": "localized17#menu/1_zone",
+    "hash_54e336e4": 0,
     "optionscount": 5,
-    "setting": "zoneCount"
+    "hash_765cfd09": 0,
+    "setting": "zoneCount",
+    "isenableddisabled": 0
 }

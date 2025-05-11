@@ -2,40 +2,44 @@
     "itemlist": [
         {
             "minweight": 50,
-            "itementry": "death_of_orion_t8_item",
+            "itementry": "scriptbundle&death_of_orion_t8_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
-            "itementry": "allistairs_folly_t8_item",
-            "childitementry_1": "ammo_type_45_item",
+            "itementry": "scriptbundle&allistairs_folly_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_45_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
-            "itementry": "zombie_supply_stash_raygun_mk_variants",
+            "itementry": "scriptbundle&zombie_supply_stash_raygun_mk_variants",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
-            "itementry": "ww_crossbow_impaler_t8_item",
+            "itementry": "scriptbundle&ww_crossbow_impaler_t8_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
-            "itementry": "ww_winters_fury_t8_item",
+            "itementry": "scriptbundle&ww_winters_fury_t8_item",
             "maxweight": 50,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 5,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "zombie_supply_stash_wonder_weapons",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

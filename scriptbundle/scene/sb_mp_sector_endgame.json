@@ -1,11 +1,12 @@
 {
     "objects": [
         {
-            "mainanim": "#pb_rifle_endgame_1stplace_idle",
-            "model": "#c_t7_mp_warrior_mpc_fb1_skin1",
+            "mainanim": "anim5#pb_rifle_endgame_1stplace_idle",
+            "model": "model#c_t7_mp_warrior_mpc_fb1_skin1",
             "type": "actor",
             "vmtype": "server",
             "name": "topplayer1",
+            "mainblend": 0,
             "team": "any",
             "takedamage": 1
         },
@@ -13,6 +14,7 @@
             "type": "actor",
             "vmtype": "server",
             "name": "topplayer2",
+            "mainblend": 0,
             "team": "any",
             "takedamage": 1
         },
@@ -20,6 +22,7 @@
             "type": "actor",
             "vmtype": "server",
             "name": "topplayer3",
+            "mainblend": 0,
             "team": "any",
             "takedamage": 1
         },
@@ -141,7 +144,7 @@
         }
     ],
     "scenetype": "scene",
-    "cameraswitcher": "ui_cam_endgame_mp_sector",
+    "cameraswitcher": "xcam&ui_cam_endgame_mp_sector",
     "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",

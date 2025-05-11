@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_3bb1cf340f5d0726",
-    "popupimage": "#hash_18c848bd8e5b3912",
-    "nametext": "#hash_6030a439ce848337",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_3bb1cf340f5d0726",
+    "popupimage": "image#hash_18c848bd8e5b3912",
+    "nametext": "localized17#hash_6030a439ce848337",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "daysofsummer_vacation_bundle",
-    "desctext": "#hash_2143d92784606069",
-    "previewimage": "#hash_17b294cc9a5a3bab",
-    "reserveimage": "#hash_44fd08437f46f9b2"
+    "desctext": "localized17#hash_2143d92784606069",
+    "previewimage": "image#hash_17b294cc9a5a3bab",
+    "reserveimage": "image#hash_44fd08437f46f9b2"
 }

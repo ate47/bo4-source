@@ -2,11 +2,11 @@
     "zombiesplitmdls": [
         {
             "hash_a3c9023c": "#c_t8_zmb_3rdclass_male_body1",
-            "hash_cdf1f53d": "c_t8_zmb_3rdclass_male_body1_split"
+            "hash_cdf1f53d": "model#"
         },
         {
             "hash_a3c9023c": "#c_t8_zmb_3rdclass_male_body2",
-            "hash_cdf1f53d": "c_t8_zmb_3rdclass_male_body2_split"
+            "hash_cdf1f53d": "model#"
         }
     ],
     "hash_9c0ebe1e": 5000,
@@ -14,6 +14,7 @@
     "hash_984d7701": 4000,
     "hash_58ac6ec4": 5000,
     "hash_f3af70e6": 128,
+    "hash_10460f1e": 0,
     "hash_145b14e6": 200,
     "hash_1803b87d": 72,
     "hash_a20f8eb8": 1,
@@ -43,6 +44,7 @@
     "hash_97b22faa": 1,
     "damagescale": 1,
     "category": "#miniboss",
+    "hash_854eebd": 0,
     "hash_c9e47b3f": 250,
     "hash_febbf56f": 96,
     "hash_57140ac3": 150,

@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_5a8914dda1da4091",
+    "hinttext": "localized17#hash_5a8914dda1da4091",
     "configstringfiletype": "scriptbundle",
     "value2": "5",
     "value3": "10",
@@ -9,10 +9,14 @@
     "value4": "15",
     "value5": "30",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "idle_flag_reset_time_ball",
-    "displayname": "#hash_1122d81521503c7",
-    "label1": "#menu/instant",
+    "displayname": "localized17#hash_1122d81521503c7",
+    "label1": "localized17#menu/instant",
+    "hash_54e336e4": 0,
     "optionscount": 7,
-    "setting": "idleFlagResetTime"
+    "hash_765cfd09": 0,
+    "setting": "idleFlagResetTime",
+    "isenableddisabled": 0
 }

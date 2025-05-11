@@ -1,10 +1,10 @@
 {
-    "description": "#hash_65fcf5f9b4a0688a",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_65fcf5f9b4a0688a",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_first_kill",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_firstkill",
-    "stringref": "#medal/first_kill",
-    "iconlarge": "#ui_icon_medal_firstkill_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_firstkill",
+    "stringref": "localized17#medal/first_kill",
+    "iconlarge": "image#ui_icon_medal_firstkill_large"
 }

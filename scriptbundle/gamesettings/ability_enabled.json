@@ -1,10 +1,13 @@
 {
-    "hinttext": "#hash_61a4dbc3e9d98238",
+    "hinttext": "localized17#hash_61a4dbc3e9d98238",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "ability_enabled",
-    "displayname": "#menu/special_weaponry",
+    "displayname": "localized17#menu/special_weaponry",
+    "hash_54e336e4": 0,
     "optionscount": 2,
+    "hash_765cfd09": 0,
     "setting": "specialistAbilityEnabled_allies_1",
     "isenableddisabled": 1
 }

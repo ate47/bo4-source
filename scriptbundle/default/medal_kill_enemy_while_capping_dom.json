@@ -1,10 +1,10 @@
 {
-    "description": "#hash_30471aadcb893f9c",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_30471aadcb893f9c",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_while_capping_dom",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_assault",
-    "stringref": "#hash_74c273f18b5b72a7",
-    "iconlarge": "#ui_icon_medal_assault_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_assault",
+    "stringref": "localized17#hash_74c273f18b5b72a7",
+    "iconlarge": "image#ui_icon_medal_assault_large"
 }

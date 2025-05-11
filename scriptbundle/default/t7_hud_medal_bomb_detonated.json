@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#t7_hud_medal_backing_gamemode",
+    "backingsmall": "image#t7_hud_medal_backing_gamemode",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_bomb_detonated",
-    "backinglarge": "#t7_hud_medal_backing_gamemode_lrg",
-    "iconsmall": "#t7_hud_medal_bomb_detonated",
-    "stringref": "#medal/bomb_detonated",
-    "iconlarge": "#t7_hud_medal_bomb_detonated_lrg"
+    "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
+    "iconsmall": "image#t7_hud_medal_bomb_detonated",
+    "stringref": "localized17#medal/bomb_detonated",
+    "iconlarge": "image#t7_hud_medal_bomb_detonated_lrg"
 }

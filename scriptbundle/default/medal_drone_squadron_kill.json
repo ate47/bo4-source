@@ -1,10 +1,10 @@
 {
-    "description": "#hash_78392c3aa3ed4d48",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_78392c3aa3ed4d48",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_drone_squadron_kill",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_covering_fire",
-    "stringref": "#hash_49f4e1856c1ea2c0",
-    "iconlarge": "#ui_icon_medal_covering_fire_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_covering_fire",
+    "stringref": "localized17#hash_49f4e1856c1ea2c0",
+    "iconlarge": "image#ui_icon_medal_covering_fire_large"
 }

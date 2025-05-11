@@ -1,19 +1,19 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "#hash_783c95cdd7c55a32"
+            "hash_826726a": "localized17#hash_783c95cdd7c55a32"
         },
         {
-            "hash_826726a": "#hash_318a13787fd10f6a"
+            "hash_826726a": "localized17#hash_318a13787fd10f6a"
         }
     ],
-    "contracticon": "#hash_535c9df807fae5b5",
+    "contracticon": "image#hash_535c9df807fae5b5",
     "hash_d0100eab": 2,
-    "relateditemname": "#hash_318a13787fd10f6a",
-    "contracttitle": "#hash_783c95cdd7c55a32",
+    "relateditemname": "localized17#hash_318a13787fd10f6a",
+    "contracttitle": "localized17#hash_783c95cdd7c55a32",
     "name": "loot_contract_ruin_muertos",
-    "contractdescription": "#hash_25105a1e4c1d1e63",
+    "contractdescription": "localized17#hash_25105a1e4c1d1e63",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_29c6ae37780c1bce",
-    "hash_e08fc162": "#hash_1228188324cf56e"
+    "hash_1c057e8c": "image#hash_29c6ae37780c1bce",
+    "hash_e08fc162": "localized17#hash_1228188324cf56e"
 }

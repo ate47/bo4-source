@@ -3,189 +3,220 @@
         {
             "survey_buttons": [
                 {
-                    "description": "#hash_31667f42e23cb874"
+                    "description": "localized17#hash_31667f42e23cb874"
                 },
                 {
-                    "description": "#hash_31668242e23cbd8d"
+                    "description": "localized17#hash_31668242e23cbd8d"
                 },
                 {
-                    "description": "#hash_31668142e23cbbda"
+                    "description": "localized17#hash_31668142e23cbbda"
                 }
             ],
-            "description": "#hash_47cde512453830c5",
+            "description": "localized17#hash_47cde512453830c5",
+            "hash_80ddf16e": 0,
             "surveychance": 0.005,
-            "title": "#hash_1871a9be264ce732"
+            "devonly": 0,
+            "randomizebuttonorder": 0,
+            "title": "localized17#hash_1871a9be264ce732",
+            "hash_33ba47f0": 0,
+            "enabled": 0
         }
     ],
     "wz_postmatch_surveys": [
         {
             "survey_buttons": [
                 {
-                    "description": "#hash_31667f42e23cb874"
+                    "description": "localized17#hash_31667f42e23cb874"
                 },
                 {
-                    "description": "#hash_31668242e23cbd8d"
+                    "description": "localized17#hash_31668242e23cbd8d"
                 },
                 {
-                    "description": "#hash_31668142e23cbbda"
+                    "description": "localized17#hash_31668142e23cbbda"
                 }
             ],
-            "description": "#hash_47cde512453830c5",
+            "description": "localized17#hash_47cde512453830c5",
+            "hash_80ddf16e": 0,
             "surveychance": 0.005,
-            "title": "#hash_1871a9be264ce732"
+            "devonly": 0,
+            "randomizebuttonorder": 0,
+            "title": "localized17#hash_1871a9be264ce732",
+            "hash_33ba47f0": 0,
+            "enabled": 0
         }
     ],
     "mp_intro_surveys": [
         {
             "survey_buttons": [
                 {
-                    "description": "#hash_a2ffe30bbb062d5"
+                    "description": "localized17#hash_a2ffe30bbb062d5"
                 },
                 {
-                    "description": "#hash_a2ffb30bbb05dbc"
+                    "description": "localized17#hash_a2ffb30bbb05dbc"
                 },
                 {
-                    "description": "#hash_a2ffc30bbb05f6f"
+                    "description": "localized17#hash_a2ffc30bbb05f6f"
                 },
                 {
-                    "description": "#hash_a2ff930bbb05a56"
+                    "description": "localized17#hash_a2ff930bbb05a56"
                 },
                 {
-                    "description": "#hash_a2ffa30bbb05c09"
+                    "description": "localized17#hash_a2ffa30bbb05c09"
                 },
                 {
-                    "description": "#hash_a2ff730bbb056f0"
+                    "description": "localized17#hash_a2ff730bbb056f0"
                 }
             ],
-            "description": "#hash_58e24cd38cd1d20d",
+            "description": "localized17#hash_58e24cd38cd1d20d",
+            "hash_80ddf16e": 0,
             "surveychance": 1,
             "devonly": 1,
             "randomizebuttonorder": 1,
-            "title": "#hash_7130895060cfded6"
+            "title": "localized17#hash_7130895060cfded6",
+            "hash_33ba47f0": 0,
+            "enabled": 0
         }
     ],
     "arena_postmatch_surveys": [
         {
             "survey_buttons": [
                 {
-                    "description": "#hash_31667f42e23cb874"
+                    "description": "localized17#hash_31667f42e23cb874"
                 },
                 {
-                    "description": "#hash_31668242e23cbd8d"
+                    "description": "localized17#hash_31668242e23cbd8d"
                 },
                 {
-                    "description": "#hash_31668142e23cbbda"
+                    "description": "localized17#hash_31668142e23cbbda"
                 }
             ],
-            "description": "#hash_47cde512453830c5",
+            "description": "localized17#hash_47cde512453830c5",
+            "hash_80ddf16e": 0,
             "surveychance": 0.005,
-            "title": "#hash_1871a9be264ce732"
+            "devonly": 0,
+            "randomizebuttonorder": 0,
+            "title": "localized17#hash_1871a9be264ce732",
+            "hash_33ba47f0": 0,
+            "enabled": 0
         }
     ],
     "mp_postmatch_surveys": [
         {
             "survey_buttons": [
                 {
-                    "description": "#hash_31667f42e23cb874"
+                    "description": "localized17#hash_31667f42e23cb874"
                 },
                 {
-                    "description": "#hash_31668242e23cbd8d"
+                    "description": "localized17#hash_31668242e23cbd8d"
                 },
                 {
-                    "description": "#hash_31668142e23cbbda"
+                    "description": "localized17#hash_31668142e23cbbda"
                 }
             ],
-            "description": "#hash_47cde512453830c5",
+            "description": "localized17#hash_47cde512453830c5",
+            "hash_80ddf16e": 0,
             "surveychance": 0.005,
-            "title": "#hash_1871a9be264ce732",
-            "hash_33ba47f0": 501
+            "devonly": 0,
+            "randomizebuttonorder": 0,
+            "title": "localized17#hash_1871a9be264ce732",
+            "hash_33ba47f0": 501,
+            "enabled": 0
         }
     ],
     "zm_intro_surveys": [
         {
             "survey_buttons": [
                 {
-                    "description": "#hash_a2ffe30bbb062d5"
+                    "description": "localized17#hash_a2ffe30bbb062d5"
                 },
                 {
-                    "description": "#hash_a2ffb30bbb05dbc"
+                    "description": "localized17#hash_a2ffb30bbb05dbc"
                 },
                 {
-                    "description": "#hash_a2ffc30bbb05f6f"
+                    "description": "localized17#hash_a2ffc30bbb05f6f"
                 },
                 {
-                    "description": "#hash_a2ff930bbb05a56"
+                    "description": "localized17#hash_a2ff930bbb05a56"
                 },
                 {
-                    "description": "#hash_a2ffa30bbb05c09"
+                    "description": "localized17#hash_a2ffa30bbb05c09"
                 },
                 {
-                    "description": "#hash_a2ff730bbb056f0"
+                    "description": "localized17#hash_a2ff730bbb056f0"
                 }
             ],
-            "description": "#hash_a77d3d06eb40a65",
+            "description": "localized17#hash_a77d3d06eb40a65",
+            "hash_80ddf16e": 0,
             "surveychance": 1,
             "devonly": 1,
             "randomizebuttonorder": 1,
-            "title": "#hash_380a0eaf6220607e"
+            "title": "localized17#hash_380a0eaf6220607e",
+            "hash_33ba47f0": 0,
+            "enabled": 0
         }
     ],
     "arena_intro_surveys": [
         {
             "survey_buttons": [
                 {
-                    "description": "#hash_a2ffe30bbb062d5"
+                    "description": "localized17#hash_a2ffe30bbb062d5"
                 },
                 {
-                    "description": "#hash_a2ffb30bbb05dbc"
+                    "description": "localized17#hash_a2ffb30bbb05dbc"
                 },
                 {
-                    "description": "#hash_a2ffc30bbb05f6f"
+                    "description": "localized17#hash_a2ffc30bbb05f6f"
                 },
                 {
-                    "description": "#hash_a2ff930bbb05a56"
+                    "description": "localized17#hash_a2ff930bbb05a56"
                 },
                 {
-                    "description": "#hash_a2ffa30bbb05c09"
+                    "description": "localized17#hash_a2ffa30bbb05c09"
                 },
                 {
-                    "description": "#hash_a2ff730bbb056f0"
+                    "description": "localized17#hash_a2ff730bbb056f0"
                 }
             ],
-            "description": "#hash_2a88bdf212b6ff6d",
+            "description": "localized17#hash_2a88bdf212b6ff6d",
+            "hash_80ddf16e": 0,
             "surveychance": 1,
             "devonly": 1,
             "randomizebuttonorder": 1,
-            "title": "#hash_7de72c11a18dc504"
+            "title": "localized17#hash_7de72c11a18dc504",
+            "hash_33ba47f0": 0,
+            "enabled": 0
         }
     ],
     "wz_intro_surveys": [
         {
             "survey_buttons": [
                 {
-                    "description": "#hash_a2ffe30bbb062d5"
+                    "description": "localized17#hash_a2ffe30bbb062d5"
                 },
                 {
-                    "description": "#hash_a2ffb30bbb05dbc"
+                    "description": "localized17#hash_a2ffb30bbb05dbc"
                 },
                 {
-                    "description": "#hash_a2ffc30bbb05f6f"
+                    "description": "localized17#hash_a2ffc30bbb05f6f"
                 },
                 {
-                    "description": "#hash_a2ff930bbb05a56"
+                    "description": "localized17#hash_a2ff930bbb05a56"
                 },
                 {
-                    "description": "#hash_a2ffa30bbb05c09"
+                    "description": "localized17#hash_a2ffa30bbb05c09"
                 },
                 {
-                    "description": "#hash_a2ff730bbb056f0"
+                    "description": "localized17#hash_a2ff730bbb056f0"
                 }
             ],
-            "description": "#hash_4218a1d3b7a25bc9",
+            "description": "localized17#hash_4218a1d3b7a25bc9",
+            "hash_80ddf16e": 0,
             "surveychance": 1,
             "devonly": 1,
             "randomizebuttonorder": 1,
-            "title": "#hash_4b5964d0ada3421e"
+            "title": "localized17#hash_4b5964d0ada3421e",
+            "hash_33ba47f0": 0,
+            "enabled": 0
         }
     ],
     "name": "survey_list"

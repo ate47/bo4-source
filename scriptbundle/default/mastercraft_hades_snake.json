@@ -1,6 +1,6 @@
 {
-    "hash_6c274f86": "#loot04_ui_icon_blackmarket_itemshop_bundle_venom",
-    "nametext": "#hash_ee567911dd1ce83",
+    "hash_6c274f86": "image#loot04_ui_icon_blackmarket_itemshop_bundle_venom",
+    "nametext": "localized17#hash_ee567911dd1ce83",
     "name": "mastercraft_hades_snake",
-    "desctext": "#hash_347854080522fbb1"
+    "desctext": "localized17#hash_347854080522fbb1"
 }

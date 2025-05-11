@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_6257839640ebbf4f",
+    "hinttext": "localized17#hash_6257839640ebbf4f",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
@@ -8,14 +8,18 @@
     "value4": "3",
     "value5": "4",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "draft_required_clients",
-    "displayname": "#hash_4be2f986e87cb449",
-    "label5": "#menu/noloc",
-    "label4": "#menu/noloc",
-    "label6": "#menu/noloc",
-    "label1": "#menu/none",
-    "label3": "#menu/noloc",
-    "label2": "#menu/noloc",
+    "displayname": "localized17#hash_4be2f986e87cb449",
+    "label5": "localized17#menu/noloc",
+    "label4": "localized17#menu/noloc",
+    "label6": "localized17#menu/noloc",
+    "label1": "localized17#menu/none",
+    "label3": "localized17#menu/noloc",
+    "label2": "localized17#menu/noloc",
+    "hash_54e336e4": 0,
     "optionscount": 6,
-    "setting": "draftRequiredClients"
+    "hash_765cfd09": 0,
+    "setting": "draftRequiredClients",
+    "isenableddisabled": 0
 }

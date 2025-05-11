@@ -2,41 +2,45 @@
     "itemlist": [
         {
             "minweight": 1,
-            "itementry": "cu11_item",
+            "itementry": "scriptbundle&cu11_item",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "itementry": "cu12_item",
+            "itementry": "scriptbundle&cu12_item",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "itementry": "cu14_item",
-            "childitementry_2": "acid_bomb_wz_item",
-            "childitementry_1": "wraithfire_wz_item",
+            "itementry": "scriptbundle&cu14_item",
+            "childitementry_2": "scriptbundle&acid_bomb_wz_item",
+            "childitementry_1": "scriptbundle&wraithfire_wz_item",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "itementry": "cu28_item",
+            "itementry": "scriptbundle&cu28_item",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "itementry": "cu31_item",
+            "itementry": "scriptbundle&cu31_item",
             "maxweight": 1,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 5,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "cu_escape_list",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

@@ -2,73 +2,77 @@
     "itemlist": [
         {
             "minweight": 100,
-            "itementry": "sig_blade_wz_item",
+            "itementry": "scriptbundle&sig_blade_wz_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "itementry": "armor_item_large",
+            "itementry": "scriptbundle&armor_item_large",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "itementry": "health_item_large",
+            "itementry": "scriptbundle&health_item_large",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "itementry": "perk_item_awareness",
+            "itementry": "scriptbundle&perk_item_awareness",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "itementry": "perk_item_deadsilence",
+            "itementry": "scriptbundle&perk_item_deadsilence",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "itementry": "perk_item_paranoia",
+            "itementry": "scriptbundle&perk_item_paranoia",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "itementry": "perk_item_lightweight",
+            "itementry": "scriptbundle&perk_item_lightweight",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "itementry": "spectre_grenade_wz_item",
-            "childitementry_1": "spectre_grenade_wz_item",
+            "itementry": "scriptbundle&spectre_grenade_wz_item",
+            "childitementry_1": "scriptbundle&spectre_grenade_wz_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "itementry": "sensor_dart_wz_item",
+            "itementry": "scriptbundle&sensor_dart_wz_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "itementry": "backpack_item",
+            "itementry": "scriptbundle&backpack_item",
             "maxweight": 100,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 10000,
     "type": "itemspawnlist",
     "hash_345eba59": 10,
+    "vehiclespawner": 0,
     "hash_9b009839": 25,
+    "hash_dc7ffbef": 0,
     "name": "spectre_rising_stash",
-    "displayname": "#hash_681bd8b7110c31a4",
+    "displayname": "localized18#hash_681bd8b7110c31a4",
     "supplystashweight": 100,
+    "hash_dc91e192": 0,
     "supplystash": 1
 }

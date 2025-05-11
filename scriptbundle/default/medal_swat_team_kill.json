@@ -1,10 +1,10 @@
 {
-    "description": "#hash_7f7000a62268f541",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_7f7000a62268f541",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_swat_team_kill",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_strike_team",
-    "stringref": "#hash_344572f2f68178cf",
-    "iconlarge": "#ui_icon_medal_strike_team_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_strike_team",
+    "stringref": "localized17#hash_344572f2f68178cf",
+    "iconlarge": "image#ui_icon_medal_strike_team_large"
 }

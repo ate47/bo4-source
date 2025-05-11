@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_grenade",
-    "hash_ff3063df": "attach_t8_charm_frag_view",
+    "hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_grenade",
     "name": "charm_grenade",
-    "displayname": "#hash_1fbb95fc21a2e733",
+    "displayname": "localized17#hash_1fbb95fc21a2e733",
     "icon": "ui_icon_weapon_charms_grenade",
-    "hash_ef5ad2b3": "attach_t8_charm_frag_view",
-    "previewimage": "#ui_icon_weapon_charms_grenade"
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_grenade"
 }

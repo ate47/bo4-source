@@ -1,10 +1,10 @@
 {
-    "description": "#hash_1fa37e01de1bc9e6",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_1fa37e01de1bc9e6",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_final_survivor",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_clean_bill",
-    "stringref": "#medal/final_survivor",
-    "iconlarge": "#ui_icon_medal_clean_bill_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_clean_bill",
+    "stringref": "localized17#medal/final_survivor",
+    "iconlarge": "image#ui_icon_medal_clean_bill_large"
 }

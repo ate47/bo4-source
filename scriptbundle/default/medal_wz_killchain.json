@@ -1,10 +1,10 @@
 {
-    "description": "#hash_23dfd063bcc7ee7a",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_23dfd063bcc7ee7a",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_wz_killchain",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_14d2f96dacd0bc1d",
-    "stringref": "#hash_380b16611c950bca",
-    "iconlarge": "#hash_3ec328ce7df39021"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_14d2f96dacd0bc1d",
+    "stringref": "localized17#hash_380b16611c950bca",
+    "iconlarge": "image#hash_3ec328ce7df39021"
 }

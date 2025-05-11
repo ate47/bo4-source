@@ -2,65 +2,69 @@
     "itemlist": [
         {
             "minweight": 10,
-            "itementry": "molotov_wz_item",
+            "itementry": "scriptbundle&molotov_wz_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "itementry": "frag_grenade_wz_item",
+            "itementry": "scriptbundle&frag_grenade_wz_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "itementry": "cymbal_monkey_wz_item",
+            "itementry": "scriptbundle&cymbal_monkey_wz_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "itementry": "tr_leveraction_t8_item",
-            "childitementry_1": "ammo_type_762_double_item",
+            "itementry": "scriptbundle&tr_leveraction_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_double_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "itementry": "lmg_double_t8_item",
-            "childitementry_1": "ammo_type_762_double_item",
+            "itementry": "scriptbundle&lmg_double_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_double_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "itementry": "health_item_medium",
+            "itementry": "scriptbundle&health_item_medium",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 5,
-            "itementry": "perk_item_deadsilence",
+            "itementry": "scriptbundle&perk_item_deadsilence",
             "maxweight": 5,
             "available": 1
         },
         {
             "minweight": 3,
-            "itementry": "health_item_large",
+            "itementry": "scriptbundle&health_item_large",
             "maxweight": 3,
             "available": 1
         },
         {
             "minweight": 10,
-            "itementry": "melee_bowie_t8_item",
+            "itementry": "scriptbundle&melee_bowie_t8_item",
             "maxweight": 10,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 9,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "zombie_itemlist_hzc",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

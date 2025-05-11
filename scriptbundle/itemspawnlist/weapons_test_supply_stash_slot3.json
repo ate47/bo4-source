@@ -2,41 +2,45 @@
     "itemlist": [
         {
             "minweight": 50,
-            "itementry": "ultimate_turret_wz_item",
+            "itementry": "scriptbundle&ultimate_turret_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "dart_wz_item",
+            "itementry": "scriptbundle&dart_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "health_item_large",
+            "itementry": "scriptbundle&health_item_large",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "backpack_item",
+            "itementry": "scriptbundle&backpack_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "sensor_dart_wz_item",
+            "itementry": "scriptbundle&sensor_dart_wz_item",
             "maxweight": 50,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 12000,
     "type": "itemspawnlist",
     "hash_345eba59": 5,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "weapons_test_supply_stash_slot3",
     "supplystashweight": 100,
+    "hash_dc91e192": 0,
     "supplystash": 1
 }

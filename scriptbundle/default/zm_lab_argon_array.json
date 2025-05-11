@@ -1,12 +1,18 @@
 {
     "globstate": 4,
+    "numplasma": 0,
+    "hash_92340672": 0,
+    "skuid": 0,
+    "hash_b889f476": 0,
     "droptype": 3,
     "plasmaprice": 45,
-    "descriptiontext": "#hash_75e88e81607d820e",
+    "descriptiontext": "localized17#hash_75e88e81607d820e",
+    "hash_51a0da4c": 0,
     "name": "zm_lab_argon_array",
-    "popupname": "#hash_32302fcc0a9cb1be",
+    "popupname": "localized17#hash_32302fcc0a9cb1be",
     "hash_619ae0f2": 1,
-    "descriptiontitle": "#hash_32302fcc0a9cb1be",
-    "hash_40cee9c0": "#ui_icon_laboratory_offer2",
+    "maxquantity": 0,
+    "descriptiontitle": "localized17#hash_32302fcc0a9cb1be",
+    "hash_40cee9c0": "image#ui_icon_laboratory_offer2",
     "hash_e8a9006": "blue"
 }

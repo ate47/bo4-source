@@ -1,6 +1,6 @@
 {
     "configstringfiletype": "scriptbundle",
-    "model": "#c_t8_zmb_dlc0_elephant_body1",
+    "model": "model#c_t8_zmb_dlc0_elephant_body1",
     "type": "ainotetrackbonemapping",
     "footstep_left_forward": "j_fingers_le",
     "footstep_right_back": "j_ball_ri",

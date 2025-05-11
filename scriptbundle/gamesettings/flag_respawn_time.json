@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_4516f1021fe33ffa",
+    "hinttext": "localized17#hash_4516f1021fe33ffa",
     "configstringfiletype": "scriptbundle",
     "value8": "50",
     "value9": "60",
@@ -11,10 +11,14 @@
     "value4": "15",
     "value5": "20",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "flag_respawn_time",
-    "displayname": "#hash_2ff274a94db73526",
-    "label1": "#menu/1_second",
+    "displayname": "localized17#hash_2ff274a94db73526",
+    "label1": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
     "optionscount": 9,
-    "setting": "flagRespawnTime"
+    "hash_765cfd09": 0,
+    "setting": "flagRespawnTime",
+    "isenableddisabled": 0
 }

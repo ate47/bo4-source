@@ -1,19 +1,19 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "#hash_675870e0366d7a76"
+            "hash_826726a": "localized17#hash_675870e0366d7a76"
         },
         {
-            "hash_826726a": "#hash_62bd0375e9e20dab"
+            "hash_826726a": "localized17#hash_62bd0375e9e20dab"
         }
     ],
-    "contracticon": "#hash_118898fc6ac8037d",
+    "contracticon": "image#hash_118898fc6ac8037d",
     "hash_d0100eab": 2,
-    "relateditemname": "#hash_62bd0375e9e20dab",
-    "contracttitle": "#hash_675870e0366d7a76",
+    "relateditemname": "localized17#hash_62bd0375e9e20dab",
+    "contracttitle": "localized17#hash_675870e0366d7a76",
     "name": "loot_contract_torque_muertos",
-    "contractdescription": "#hash_25105a1e4c1d1e63",
+    "contractdescription": "localized17#hash_25105a1e4c1d1e63",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_2f73f0d2dd7e330",
-    "hash_e08fc162": "#hash_1228188324cf56e"
+    "hash_1c057e8c": "image#hash_2f73f0d2dd7e330",
+    "hash_e08fc162": "localized17#hash_1228188324cf56e"
 }

@@ -1,10 +1,10 @@
 {
-    "description": "#hash_63e1070726e0043a",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_63e1070726e0043a",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_who_has_high_score",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_kingslayer",
-    "stringref": "#hash_69ee745ef231a18a",
-    "iconlarge": "#ui_icon_medal_kingslayer_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_kingslayer",
+    "stringref": "localized17#hash_69ee745ef231a18a",
+    "iconlarge": "image#ui_icon_medal_kingslayer_large"
 }

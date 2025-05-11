@@ -1,13 +1,17 @@
 {
-    "descriptionimage": "#ui_icon_wildcard_greed01_large",
+    "descriptionimage": "image#ui_icon_wildcard_greed01_large",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "wc_perk1greed_restriction",
-    "displayname": "#hash_4cc8e260c8a0094d",
-    "label1": "#menu/enabled",
-    "label2": "#menu/disabled",
+    "displayname": "localized17#hash_4cc8e260c8a0094d",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "itemRestrictions__bonuscard_perk_1_greed__restricted"
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__bonuscard_perk_1_greed__restricted",
+    "isenableddisabled": 0
 }

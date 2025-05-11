@@ -1,5 +1,5 @@
 {
-    "defaultimage": "#ui_icon_hvo_base",
+    "defaultimage": "image#ui_icon_hvo_base",
     "name": "basic_hvo",
     "associatedgamemode": "none"
 }

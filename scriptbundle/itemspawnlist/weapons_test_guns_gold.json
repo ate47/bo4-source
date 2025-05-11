@@ -2,25 +2,28 @@
     "itemlist": [
         {
             "minweight": 100,
-            "itementry": "lmg_stealth_t8_gold_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&lmg_stealth_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "ar_peacekeeper_t8_gold_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&ar_peacekeeper_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 100,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 200,
     "type": "itemspawnlist",
     "hash_345eba59": 2,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
     "hash_dc7ffbef": 1,
     "name": "weapons_test_guns_gold",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

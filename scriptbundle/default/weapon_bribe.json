@@ -1,9 +1,9 @@
 {
-    "buttonimage": "#hash_4d0d3e52fedf9a80",
-    "popupimage": "#hash_4ed843ea722d2d8e",
-    "nametext": "#hash_2d4c12b9de76a7",
-    "categorytext": "#mpui/bm_bribe",
+    "buttonimage": "image#hash_4d0d3e52fedf9a80",
+    "popupimage": "image#hash_4ed843ea722d2d8e",
+    "nametext": "localized17#hash_2d4c12b9de76a7",
+    "categorytext": "localized17#mpui/bm_bribe",
     "name": "weapon_bribe",
-    "desctext": "#hash_58a641a0ebf0c979",
-    "previewimage": "#ui_icon_blackmarket_stream_bribe_crate"
+    "desctext": "localized17#hash_58a641a0ebf0c979",
+    "previewimage": "image#ui_icon_blackmarket_stream_bribe_crate"
 }

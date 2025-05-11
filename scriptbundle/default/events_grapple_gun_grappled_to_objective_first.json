@@ -1,8 +1,8 @@
 {
-    "backingsmall": "#hash_66e5ce08c5c7b0cf",
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
     "widget": "BadasseryMedal",
     "name": "events_grapple_gun_grappled_to_objective_first",
-    "backinglarge": "#hash_66e5ce08c5c7b0cf",
-    "iconsmall": "#hash_76e7d0f6d24c3240",
-    "iconlarge": "#hash_76e7d0f6d24c3240"
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_76e7d0f6d24c3240",
+    "iconlarge": "image#hash_76e7d0f6d24c3240"
 }

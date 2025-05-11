@@ -1,7 +1,7 @@
 {
-    "detailsicon": "#hash_2b9891672da8068f",
-    "hash_6c274f86": "#hash_2afb58350cc3ba2e",
-    "nametext": "#mpui/reaper_zombie",
+    "detailsicon": "image#hash_2b9891672da8068f",
+    "hash_6c274f86": "image#hash_2afb58350cc3ba2e",
+    "nametext": "localized17#mpui/reaper_zombie",
     "name": "outfit_zombie_epic1_reaper_bundle_shop",
-    "desctext": "#hash_7f28cb19ccc52d25"
+    "desctext": "localized17#hash_7f28cb19ccc52d25"
 }

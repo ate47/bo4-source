@@ -2,63 +2,67 @@
     "itemlist": [
         {
             "minweight": 375,
-            "itementry": "global_list_guns_small_dlc1",
+            "itementry": "scriptbundle&global_list_guns_small_dlc1",
             "maxweight": 375,
             "available": -1
         },
         {
             "minweight": 400,
-            "itementry": "rivertown_list_health",
+            "itementry": "scriptbundle&rivertown_list_health",
             "maxweight": 400,
             "available": -1
         },
         {
             "minweight": 150,
-            "itementry": "rivertown_list_equipment",
+            "itementry": "scriptbundle&rivertown_list_equipment",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 115,
-            "itementry": "rivertown_list_gear",
+            "itementry": "scriptbundle&rivertown_list_gear",
             "maxweight": 115,
             "available": -1
         },
         {
             "minweight": 180,
-            "itementry": "rivertown_list_consumable",
+            "itementry": "scriptbundle&rivertown_list_consumable",
             "maxweight": 180,
             "available": -1
         },
         {
             "minweight": 270,
-            "itementry": "rivertown_list_attachment",
+            "itementry": "scriptbundle&rivertown_list_attachment",
             "maxweight": 270,
             "available": -1
         },
         {
             "minweight": 300,
-            "itementry": "rivertown_list_ammo",
+            "itementry": "scriptbundle&rivertown_list_ammo",
             "maxweight": 300,
             "available": -1
         },
         {
             "minweight": 60,
-            "itementry": "storage_list",
+            "itementry": "scriptbundle&storage_list",
             "maxweight": 60,
             "available": -1
         },
         {
             "minweight": 70,
-            "itementry": "rivertown_list_armor_shards",
+            "itementry": "scriptbundle&rivertown_list_armor_shards",
             "maxweight": 70,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 9,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "rivertown_list_items_small_dlc1",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

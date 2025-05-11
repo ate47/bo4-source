@@ -1,8 +1,8 @@
 {
-    "backingsmall": "#hash_66e5ce08c5c7b0cf",
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
     "widget": "BadasseryMedal",
     "name": "events_automated_turret_fire",
-    "backinglarge": "#hash_66e5ce08c5c7b0cf",
-    "iconsmall": "#hash_60b83bf1c47c746c",
-    "iconlarge": "#hash_60b83bf1c47c746c"
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_60b83bf1c47c746c",
+    "iconlarge": "image#hash_60b83bf1c47c746c"
 }

@@ -2,25 +2,30 @@
     "itemlist": [
         {
             "minweight": 1,
-            "itementry": "vehicle_list_arav_wz",
+            "itementry": "scriptbundle&vehicle_list_arav_wz",
             "maxweight": 1,
             "available": 2
         },
         {
             "minweight": 1,
-            "maxweight": 1
+            "maxweight": 1,
+            "available": 0
         },
         {
             "minweight": 1,
-            "maxweight": 1
+            "maxweight": 1,
+            "available": 0
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 20000,
     "type": "itemspawnlist",
     "hash_345eba59": 3,
     "vehiclespawner": 1,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "open_skyscraper_vehicles_arav",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

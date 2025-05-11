@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_20ddea8d32763d46",
+    "hinttext": "localized17#hash_20ddea8d32763d46",
     "configstringfiletype": "scriptbundle",
     "value8": "30",
     "value2": "2.5",
@@ -10,10 +10,14 @@
     "value4": "7.5",
     "value5": "10",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "wave_respawn_delay",
-    "displayname": "#hash_4b9dd26fcf02fe2",
-    "label1": "#menu/disabled",
+    "displayname": "localized17#hash_4b9dd26fcf02fe2",
+    "label1": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
     "optionscount": 8,
-    "setting": "waveRespawnDelay"
+    "hash_765cfd09": 0,
+    "setting": "waveRespawnDelay",
+    "isenableddisabled": 0
 }

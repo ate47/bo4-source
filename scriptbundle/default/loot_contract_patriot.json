@@ -1,10 +1,10 @@
 {
-    "contracticon": "#hash_5fe891860576d0b6",
-    "relateditemname": "#weapon/smg_standard_t8",
-    "contracttitle": "#weapon/smg_standard_t8",
+    "contracticon": "image#hash_5fe891860576d0b6",
+    "relateditemname": "localized17#weapon/smg_standard_t8",
+    "contracttitle": "localized17#weapon/smg_standard_t8",
     "name": "loot_contract_patriot",
-    "contractdescription": "#hash_716d36532454c43a",
+    "contractdescription": "localized17#hash_716d36532454c43a",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_75e860848ce5d45c",
-    "hash_e08fc162": "#hash_5d6d28f28d01fc52"
+    "hash_1c057e8c": "image#hash_75e860848ce5d45c",
+    "hash_e08fc162": "localized17#hash_5d6d28f28d01fc52"
 }

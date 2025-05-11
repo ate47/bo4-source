@@ -2,67 +2,70 @@
     "itemlist": [
         {
             "minweight": 1,
-            "itementry": "sniper_locus_t8_item",
+            "itementry": "scriptbundle&sniper_locus_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "melee_club_t8_item",
+            "itementry": "scriptbundle&melee_club_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "melee_cutlass_t8_item",
+            "itementry": "scriptbundle&melee_cutlass_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "melee_demohammer_t8_item",
+            "itementry": "scriptbundle&melee_demohammer_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "melee_coinbag_t8_item",
+            "itementry": "scriptbundle&melee_coinbag_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "melee_secretsanta_t8_item",
+            "itementry": "scriptbundle&melee_secretsanta_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "melee_slaybell_t8_item",
+            "itementry": "scriptbundle&melee_slaybell_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "melee_stopsign_t8_item",
+            "itementry": "scriptbundle&melee_stopsign_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "itementry": "melee_zombiearm_t8_item",
+            "itementry": "scriptbundle&melee_zombiearm_t8_item",
             "maxweight": 1,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 12000,
     "type": "itemspawnlist",
     "lootlocker": 1,
     "hash_345eba59": 9,
+    "vehiclespawner": 0,
     "hash_9b009839": 32,
+    "hash_dc7ffbef": 0,
     "name": "loot_locker_parent_ambush",
-    "displayname": "#wz/blackjackstash",
+    "displayname": "localized18#wz/blackjackstash",
     "supplystashweight": 100,
     "hash_dc91e192": 1,
     "supplystash": 1

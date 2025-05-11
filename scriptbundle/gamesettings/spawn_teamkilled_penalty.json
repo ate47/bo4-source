@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_72ec981694372297",
+    "hinttext": "localized17#hash_72ec981694372297",
     "configstringfiletype": "scriptbundle",
     "value8": "7",
     "value9": "8",
@@ -19,11 +19,15 @@
     "value17": "20",
     "value16": "18",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "spawn_teamkilled_penalty",
-    "displayname": "#hash_5f26a3f604835a41",
-    "label1": "#menu/disabled",
-    "label2": "#menu/1_second",
+    "displayname": "localized17#hash_5f26a3f604835a41",
+    "label1": "localized17#menu/disabled",
+    "label2": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
     "optionscount": 17,
-    "setting": "spawnteamkilledpenalty"
+    "hash_765cfd09": 0,
+    "setting": "spawnteamkilledpenalty",
+    "isenableddisabled": 0
 }

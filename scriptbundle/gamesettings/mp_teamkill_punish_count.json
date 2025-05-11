@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_48a2e0ada81791cb",
+    "hinttext": "localized17#hash_48a2e0ada81791cb",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
@@ -7,11 +7,15 @@
     "value4": "3",
     "value5": "4",
     "type": "gamesettings",
-    "label": "#menu/x_kills",
+    "label": "localized17#menu/x_kills",
+    "hash_5a6dee5a": 0,
     "name": "mp_teamkill_punish_count",
-    "displayname": "#menu/teamkill_kick",
-    "label1": "#menu/disabled",
-    "label2": "#menu/1_kill",
+    "displayname": "localized17#menu/teamkill_kick",
+    "label1": "localized17#menu/disabled",
+    "label2": "localized17#menu/1_kill",
+    "hash_54e336e4": 0,
     "optionscount": 5,
-    "setting": "specialistTeamKillsAllowed_allies_1"
+    "hash_765cfd09": 0,
+    "setting": "specialistTeamKillsAllowed_allies_1",
+    "isenableddisabled": 0
 }

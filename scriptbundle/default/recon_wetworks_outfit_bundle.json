@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_690d72e144ceeeac",
-    "popupimage": "#hash_4dea3e373efa0d38",
-    "nametext": "#hash_2c90250580654022",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_690d72e144ceeeac",
+    "popupimage": "image#hash_4dea3e373efa0d38",
+    "nametext": "localized17#hash_2c90250580654022",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "recon_wetworks_outfit_bundle",
-    "desctext": "#hash_6d182448bc5f99f2",
-    "previewimage": "#hash_6e771ee9b1048b75",
-    "reserveimage": "#hash_1be1215aa6404df4"
+    "desctext": "localized17#hash_6d182448bc5f99f2",
+    "previewimage": "image#hash_6e771ee9b1048b75",
+    "reserveimage": "image#hash_1be1215aa6404df4"
 }

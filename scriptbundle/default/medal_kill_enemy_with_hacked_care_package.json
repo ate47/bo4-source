@@ -1,10 +1,10 @@
 {
-    "description": "#hash_437d4083b8a97189",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_437d4083b8a97189",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_with_hacked_care_package",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_bait_taken",
-    "stringref": "#hash_3656f6c5d1342997",
-    "iconlarge": "#ui_icon_medal_bait_taken_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_bait_taken",
+    "stringref": "localized17#hash_3656f6c5d1342997",
+    "iconlarge": "image#ui_icon_medal_bait_taken_large"
 }

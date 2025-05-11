@@ -1,16 +1,20 @@
 {
-    "hinttext": "#hash_703a2deebaf948fb",
+    "hinttext": "localized17#hash_703a2deebaf948fb",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
     "value1": "0",
     "type": "gamesettings",
-    "label": "#hash_1ba60b6389d20648",
+    "label": "localized17#hash_1ba60b6389d20648",
+    "hash_5a6dee5a": 0,
     "name": "zm_specweapcharge",
-    "displayname": "#hash_556736ffab760c01",
-    "label1": "#hash_51aa03eea5a0dd76",
-    "label3": "#hash_1413f5dcb3e0f537",
-    "label2": "#hash_7e5de0c85e3519f0",
+    "displayname": "localized17#hash_556736ffab760c01",
+    "label1": "localized17#hash_51aa03eea5a0dd76",
+    "label3": "localized17#hash_1413f5dcb3e0f537",
+    "label2": "localized17#hash_7e5de0c85e3519f0",
+    "hash_54e336e4": 0,
     "optionscount": 3,
-    "setting": "zmSpecWeaponChargeRate"
+    "hash_765cfd09": 0,
+    "setting": "zmSpecWeaponChargeRate",
+    "isenableddisabled": 0
 }

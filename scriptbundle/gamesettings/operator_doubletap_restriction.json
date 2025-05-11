@@ -1,13 +1,17 @@
 {
-    "descriptionimage": "#ui_icon_attachment_2roundburst",
+    "descriptionimage": "image#ui_icon_attachment_2roundburst",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "operator_doubletap_restriction",
-    "displayname": "#hash_7f2988d02ebdf4ad",
-    "label1": "#menu/enabled",
-    "label2": "#menu/disabled",
+    "displayname": "localized17#hash_7f2988d02ebdf4ad",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "itemRestrictions__tr_powersemi_t8__attachments__uber"
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__tr_powersemi_t8__attachments__uber",
+    "isenableddisabled": 0
 }

@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_145f40477c3e19d",
+    "hinttext": "localized17#hash_145f40477c3e19d",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
@@ -8,13 +8,17 @@
     "value4": "3",
     "value5": "4",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "zm_healthregenrate",
-    "displayname": "#hash_204db400388a9f8b",
-    "label5": "#hash_4137b6b6187e7239",
-    "label4": "#hash_58d704c861150b81",
-    "label1": "#hash_6b4ecdd9d19ad73c",
-    "label3": "#hash_1ba60b6389d20648",
-    "label2": "#hash_7055d21eae0da1ef",
+    "displayname": "localized17#hash_204db400388a9f8b",
+    "label5": "localized17#hash_4137b6b6187e7239",
+    "label4": "localized17#hash_58d704c861150b81",
+    "label1": "localized17#hash_6b4ecdd9d19ad73c",
+    "label3": "localized17#hash_1ba60b6389d20648",
+    "label2": "localized17#hash_7055d21eae0da1ef",
+    "hash_54e336e4": 0,
     "optionscount": 5,
-    "setting": "zmHealthRegenRate"
+    "hash_765cfd09": 0,
+    "setting": "zmHealthRegenRate",
+    "isenableddisabled": 0
 }

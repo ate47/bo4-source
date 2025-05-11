@@ -1,9 +1,9 @@
 {
-    "contracticon": "#hash_397de39ba6e31753",
-    "contracttitle": "#menu/contract_richtofen",
+    "contracticon": "image#hash_397de39ba6e31753",
+    "contracttitle": "localized17#menu/contract_richtofen",
     "name": "loot_contract_richtofen",
-    "contractdescription": "#menu/blackout_character",
+    "contractdescription": "localized17#menu/blackout_character",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_327a4adce2d60323",
-    "hash_e08fc162": "#hash_621dc92c959f9a02"
+    "hash_1c057e8c": "image#hash_327a4adce2d60323",
+    "hash_e08fc162": "localized17#hash_621dc92c959f9a02"
 }

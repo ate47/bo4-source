@@ -1,5 +1,5 @@
 {
-    "hinttext": "#menu/setbacks_hint",
+    "hinttext": "localized17#menu/setbacks_hint",
     "configstringfiletype": "scriptbundle",
     "value8": "7",
     "value9": "8",
@@ -13,10 +13,14 @@
     "value11": "10",
     "value10": "9",
     "type": "gamesettings",
-    "label": "#menu/x_weapons",
+    "label": "localized17#menu/x_weapons",
+    "hash_5a6dee5a": 0,
     "name": "setbacks",
-    "displayname": "#menu/setbacks",
-    "label2": "#menu/x_weapon",
+    "displayname": "localized17#menu/setbacks",
+    "label2": "localized17#menu/x_weapon",
+    "hash_54e336e4": 0,
     "optionscount": 11,
-    "setting": "setbacks"
+    "hash_765cfd09": 0,
+    "setting": "setbacks",
+    "isenableddisabled": 0
 }

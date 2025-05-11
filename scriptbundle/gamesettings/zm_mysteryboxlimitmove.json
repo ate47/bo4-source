@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_28d1f015ae890f48",
+    "hinttext": "localized17#hash_28d1f015ae890f48",
     "configstringfiletype": "scriptbundle",
     "value8": "7",
     "value9": "8",
@@ -52,11 +52,15 @@
     "hash_a9a65d66": "45",
     "hash_7ec30f98": "50",
     "type": "gamesettings",
-    "label": "#hash_1c007412dfa8ef16",
+    "label": "localized17#hash_1c007412dfa8ef16",
+    "hash_5a6dee5a": 0,
     "name": "zm_mysteryboxlimitmove",
-    "displayname": "#hash_5165c17d26ce78c0",
-    "label1": "#hash_4bf59e78dfb9da30",
-    "label2": "#hash_14367c59efc08f6e",
+    "displayname": "localized17#hash_5165c17d26ce78c0",
+    "label1": "localized17#hash_4bf59e78dfb9da30",
+    "label2": "localized17#hash_14367c59efc08f6e",
+    "hash_54e336e4": 0,
     "optionscount": 11,
-    "setting": "zmMysteryBoxLimitMove"
+    "hash_765cfd09": 0,
+    "setting": "zmMysteryBoxLimitMove",
+    "isenableddisabled": 0
 }

@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_4cbd10791149a91d",
+    "hinttext": "localized17#hash_4cbd10791149a91d",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
@@ -9,9 +9,13 @@
     "value4": "3",
     "value5": "4",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "spawn_health_boost_time",
-    "displayname": "#hash_747d9334adc84253",
+    "displayname": "localized17#hash_747d9334adc84253",
+    "hash_54e336e4": 0,
     "optionscount": 7,
-    "setting": "killPointsInEnemyProtectedZone"
+    "hash_765cfd09": 0,
+    "setting": "killPointsInEnemyProtectedZone",
+    "isenableddisabled": 0
 }

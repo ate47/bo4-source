@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_donut_horn",
-    "hash_ff3063df": "attach_t8_charm_donut_horn_view",
+    "hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_donut_horn",
     "name": "charm_donut_horn",
-    "displayname": "#hash_21e2e1448715d60a",
+    "displayname": "localized17#hash_21e2e1448715d60a",
     "icon": "ui_icon_weapon_charms_donut_horn",
-    "hash_ef5ad2b3": "attach_t8_charm_donut_horn_view",
-    "previewimage": "#ui_icon_weapon_charms_donut_horn"
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_donut_horn"
 }

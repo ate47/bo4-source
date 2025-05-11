@@ -3,19 +3,19 @@
         {
             "icons": [
                 {
-                    "categoryicon": "#hash_29ec4c8d09e45746"
+                    "categoryicon": "image#hash_29ec4c8d09e45746"
                 },
                 {
-                    "categoryicon": "#hash_29ec4c8d09e45746"
+                    "categoryicon": "image#hash_29ec4c8d09e45746"
                 },
                 {
-                    "categoryicon": "#hash_2a37648d0a246b88"
+                    "categoryicon": "image#hash_2a37648d0a246b88"
                 },
                 {
-                    "categoryicon": "#hash_2a12498d0a05216a"
+                    "categoryicon": "image#hash_2a12498d0a05216a"
                 },
                 {
-                    "categoryicon": "#hash_2a375a8d0a245a8a"
+                    "categoryicon": "image#hash_2a375a8d0a245a8a"
                 }
             ],
             "categoryname": "#play"
@@ -23,10 +23,10 @@
         {
             "icons": [
                 {
-                    "categoryicon": "#hash_2f564387625b802"
+                    "categoryicon": "image#hash_2f564387625b802"
                 },
                 {
-                    "categoryicon": "#hash_745a121174bf46e2"
+                    "categoryicon": "image#hash_745a121174bf46e2"
                 }
             ],
             "categoryname": "#combat"
@@ -34,10 +34,10 @@
         {
             "icons": [
                 {
-                    "categoryicon": "#hash_2a06d8f351902716"
+                    "categoryicon": "image#hash_2a06d8f351902716"
                 },
                 {
-                    "categoryicon": "#hash_38b2b1613b63fede"
+                    "categoryicon": "image#hash_38b2b1613b63fede"
                 }
             ],
             "categoryname": "#equipment"
@@ -45,10 +45,10 @@
         {
             "icons": [
                 {
-                    "categoryicon": "#hash_5ccb7f967c47f2e7"
+                    "categoryicon": "image#hash_5ccb7f967c47f2e7"
                 },
                 {
-                    "categoryicon": "#hash_3cc0505716edeaf5"
+                    "categoryicon": "image#hash_3cc0505716edeaf5"
                 }
             ],
             "categoryname": "#scorestreak"
@@ -56,10 +56,10 @@
         {
             "icons": [
                 {
-                    "categoryicon": "#hash_7052669fc2e9c361"
+                    "categoryicon": "image#hash_7052669fc2e9c361"
                 },
                 {
-                    "categoryicon": "#hash_657aa4d267d09453"
+                    "categoryicon": "image#hash_657aa4d267d09453"
                 }
             ],
             "categoryname": "#objective"
@@ -67,10 +67,10 @@
         {
             "icons": [
                 {
-                    "categoryicon": "#hash_5d5c2be5de75ea08"
+                    "categoryicon": "image#hash_5d5c2be5de75ea08"
                 },
                 {
-                    "categoryicon": "#hash_329b5502840506c"
+                    "categoryicon": "image#hash_329b5502840506c"
                 }
             ],
             "categoryname": "#specialist"
@@ -78,10 +78,10 @@
         {
             "icons": [
                 {
-                    "categoryicon": "#hash_1ab8019de1534d28"
+                    "categoryicon": "image#hash_1ab8019de1534d28"
                 },
                 {
-                    "categoryicon": "#hash_6234adb7edef38cc"
+                    "categoryicon": "image#hash_6234adb7edef38cc"
                 }
             ],
             "categoryname": "#victory"
@@ -89,10 +89,10 @@
         {
             "icons": [
                 {
-                    "categoryicon": "#hash_544cd3704007970f"
+                    "categoryicon": "image#hash_544cd3704007970f"
                 },
                 {
-                    "categoryicon": "#hash_42dfe9676f3b09ed"
+                    "categoryicon": "image#hash_42dfe9676f3b09ed"
                 }
             ],
             "categoryname": "#exploration"
@@ -100,10 +100,10 @@
         {
             "icons": [
                 {
-                    "categoryicon": "#hash_7052669fc2e9c361"
+                    "categoryicon": "image#hash_7052669fc2e9c361"
                 },
                 {
-                    "categoryicon": "#hash_657aa4d267d09453"
+                    "categoryicon": "image#hash_657aa4d267d09453"
                 }
             ],
             "categoryname": "#milestone"
@@ -111,10 +111,10 @@
         {
             "icons": [
                 {
-                    "categoryicon": "#hash_3b7407a43279da8d"
+                    "categoryicon": "image#hash_3b7407a43279da8d"
                 },
                 {
-                    "categoryicon": "#hash_6ce6ab845d3edfd7"
+                    "categoryicon": "image#hash_6ce6ab845d3edfd7"
                 }
             ],
             "categoryname": "#support"

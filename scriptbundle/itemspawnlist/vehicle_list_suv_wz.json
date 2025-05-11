@@ -2,35 +2,36 @@
     "itemlist": [
         {
             "minweight": 1,
-            "itementry": "suv_wz_vehicle_black",
+            "itementry": "scriptbundle&suv_wz_vehicle_black",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "itementry": "suv_wz_vehicle_grey",
+            "itementry": "scriptbundle&suv_wz_vehicle_grey",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "itementry": "suv_wz_vehicle_met_grey",
+            "itementry": "scriptbundle&suv_wz_vehicle_met_grey",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "itementry": "suv_wz_vehicle_white",
+            "itementry": "scriptbundle&suv_wz_vehicle_white",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "itementry": "suv_wz_vehicle_private_security",
+            "itementry": "scriptbundle&suv_wz_vehicle_private_security",
             "maxweight": 1,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 4000,
     "type": "itemspawnlist",
@@ -39,5 +40,6 @@
     "hash_9b009839": -1,
     "hash_dc7ffbef": 1,
     "name": "vehicle_list_suv_wz",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

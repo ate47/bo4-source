@@ -2,45 +2,49 @@
     "itemlist": [
         {
             "minweight": 100,
-            "itementry": "perk_item_awareness",
+            "itementry": "scriptbundle&perk_item_awareness",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "perk_item_looter",
+            "itementry": "scriptbundle&perk_item_looter",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "perk_item_squadlink",
+            "itementry": "scriptbundle&perk_item_squadlink",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "perk_item_reinforced",
+            "itementry": "scriptbundle&perk_item_reinforced",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "perk_item_awareness",
+            "itementry": "scriptbundle&perk_item_awareness",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "perk_item_drifter",
+            "itementry": "scriptbundle&perk_item_drifter",
             "maxweight": 200,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 6,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "consumable_list_med_ambush",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

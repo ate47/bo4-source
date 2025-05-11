@@ -1,10 +1,13 @@
 {
-    "hinttext": "#hash_522459fccf029430",
+    "hinttext": "localized17#hash_522459fccf029430",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "equipment_on_respawn",
-    "displayname": "#hash_4942d8d68906cfe8",
+    "displayname": "localized17#hash_4942d8d68906cfe8",
+    "hash_54e336e4": 0,
     "optionscount": 2,
+    "hash_765cfd09": 0,
     "setting": "specialistEquipmentReadyOnRespawn_allies_1",
     "isenableddisabled": 1
 }

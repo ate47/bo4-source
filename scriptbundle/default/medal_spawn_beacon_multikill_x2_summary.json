@@ -1,10 +1,10 @@
 {
-    "description": "#hash_77c83037dcf4c1a6",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_77c83037dcf4c1a6",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_spawn_beacon_multikill_x2_summary",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_155d9827f68f59ef",
-    "stringref": "#hash_3e29d59cc30b914e",
-    "iconlarge": "#hash_8d998f28ba67fff"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_155d9827f68f59ef",
+    "stringref": "localized17#hash_3e29d59cc30b914e",
+    "iconlarge": "image#hash_8d998f28ba67fff"
 }

@@ -1,10 +1,10 @@
 {
-    "description": "#hash_6354495f973953ec",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_6354495f973953ec",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_gunship_kill",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_dead_from_above",
-    "stringref": "#medal/gunship_kill",
-    "iconlarge": "#ui_icon_medal_dead_from_above_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_dead_from_above",
+    "stringref": "localized17#medal/gunship_kill",
+    "iconlarge": "image#ui_icon_medal_dead_from_above_large"
 }

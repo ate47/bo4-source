@@ -2,38 +2,42 @@
     "itemlist": [
         {
             "minweight": 100,
-            "itementry": "tr_midburst_t8_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&tr_midburst_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "tr_longburst_t8_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&tr_longburst_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 50,
-            "itementry": "tr_powersemi_t8_item",
-            "childitementry_1": "ammo_type_762_item",
+            "itementry": "scriptbundle&tr_powersemi_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 50,
-            "itementry": "sniper_mini14_t8_item",
-            "childitementry_1": "ammo_type_556_item",
-            "maxweight": 100
+            "itementry": "scriptbundle&sniper_mini14_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 100,
+            "available": 0
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 200,
     "type": "itemspawnlist",
     "hash_345eba59": 4,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
     "hash_dc7ffbef": 1,
     "name": "guns_trs_dlc1",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

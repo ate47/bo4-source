@@ -1,10 +1,10 @@
 {
     "lootid": "#hash_59ebb3e88c72c85d",
-    "wingsuit": "c_t8_bo_wingsuit_raven",
+    "wingsuit": "scriptbundle&c_t8_bo_wingsuit_raven",
     "feature": "loot_season_05",
     "name": "c_t8_bo_jumpkit_raven",
-    "displayname": "#hash_312562fbade6a775",
-    "hash_4fa85a25": "dfxt_raven",
+    "displayname": "localized17#hash_312562fbade6a775",
+    "hash_4fa85a25": "scriptbundle&dfxt_raven",
     "entitlement": "#hash_5bd04e15802702be",
-    "parachute": "c_t8_bo_parachute_raven"
+    "parachute": "scriptbundle&c_t8_bo_parachute_raven"
 }

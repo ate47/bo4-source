@@ -2,48 +2,52 @@
     "itemlist": [
         {
             "minweight": 100,
-            "itementry": "ammo_stash_slot1_dlc1",
+            "itementry": "scriptbundle&ammo_stash_slot1_dlc1",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "itementry": "ammo_stash_slot2_dlc1",
+            "itementry": "scriptbundle&ammo_stash_slot2_dlc1",
             "maxweight": 100,
             "available": 3
         },
         {
             "minweight": 100,
-            "itementry": "ammo_stash_slot3_dlc1",
+            "itementry": "scriptbundle&ammo_stash_slot3_dlc1",
             "maxweight": 100,
             "available": 3
         },
         {
             "minweight": 100,
-            "itementry": "ammo_stash_slot4_dlc1",
+            "itementry": "scriptbundle&ammo_stash_slot4_dlc1",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "itementry": "ammo_stash_slot5_dlc1",
+            "itementry": "scriptbundle&ammo_stash_slot5_dlc1",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "itementry": "cash_item_500",
+            "itementry": "scriptbundle&cash_item_500",
             "maxweight": 100,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 4000,
     "type": "itemspawnlist",
     "hash_345eba59": 6,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "ammo_stash_parent_dlc1_cash",
-    "displayname": "#wz/equipment_stash",
+    "displayname": "localized18#wz/equipment_stash",
     "supplystashweight": 100,
+    "hash_dc91e192": 0,
     "supplystash": 1
 }

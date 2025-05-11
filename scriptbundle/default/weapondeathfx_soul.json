@@ -1,10 +1,10 @@
 {
     "lootid": "#hash_35e46ac90b8ef16c",
-    "hash_904b37bc": "#hash_1015aa1aabedede0",
+    "hash_904b37bc": "impact_fx_table#hash_1015aa1aabedede0",
     "image": "loot04_ui_icon_blackmarket_reserves_death_fx_soul_thief",
     "name": "weapondeathfx_soul",
-    "displayname": "#hash_5676ad5b41266b43",
+    "displayname": "localized17#hash_5676ad5b41266b43",
     "icon": "loot04_ui_icon_cac_death_fx_soul_thief",
-    "hash_eeb78b92": "#hash_4792ad40fd06069e",
-    "previewimage": "#loot04_ui_icon_blackmarket_reserves_death_fx_soul_thief"
+    "hash_eeb78b92": "impact_fx_table#hash_4792ad40fd06069e",
+    "previewimage": "image#loot04_ui_icon_blackmarket_reserves_death_fx_soul_thief"
 }

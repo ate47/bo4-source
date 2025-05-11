@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_535c44899f4e6af2",
+    "hinttext": "localized17#hash_535c44899f4e6af2",
     "configstringfiletype": "scriptbundle",
     "value2": "15",
     "value3": "30",
@@ -8,14 +8,18 @@
     "value4": "45",
     "value5": "60",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "draft_time",
-    "displayname": "#menu/draft_time",
-    "label5": "#menu/x_seconds",
-    "label4": "#menu/x_seconds",
-    "label6": "#menu/x_seconds",
-    "label1": "#menu/x_seconds",
-    "label3": "#menu/x_seconds",
-    "label2": "#menu/x_seconds",
+    "displayname": "localized17#menu/draft_time",
+    "label5": "localized17#menu/x_seconds",
+    "label4": "localized17#menu/x_seconds",
+    "label6": "localized17#menu/x_seconds",
+    "label1": "localized17#menu/x_seconds",
+    "label3": "localized17#menu/x_seconds",
+    "label2": "localized17#menu/x_seconds",
+    "hash_54e336e4": 0,
     "optionscount": 6,
-    "setting": "draftTime"
+    "hash_765cfd09": 0,
+    "setting": "draftTime",
+    "isenableddisabled": 0
 }

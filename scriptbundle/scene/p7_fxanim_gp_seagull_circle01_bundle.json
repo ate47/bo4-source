@@ -1,9 +1,9 @@
 {
     "objects": [
         {
-            "mainanim": "#hash_2d0fd9f2c51ac6b0",
+            "mainanim": "anim4#hash_2d0fd9f2c51ac6b0",
             "firstframe": 1,
-            "model": "#hash_56842436f7ba26f0",
+            "model": "model#aml_gen_seagull_flying_01",
             "type": "prop",
             "vmtype": "server",
             "maindelaymax": 6,

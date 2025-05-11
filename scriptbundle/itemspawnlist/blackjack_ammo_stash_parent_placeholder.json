@@ -6,12 +6,16 @@
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 4000,
     "type": "itemspawnlist",
     "hash_345eba59": 1,
+    "vehiclespawner": 0,
+    "hash_dc7ffbef": 0,
     "name": "blackjack_ammo_stash_parent_placeholder",
-    "displayname": "#hash_552e95261f2d04be",
+    "displayname": "localized18#hash_552e95261f2d04be",
     "supplystashweight": 100,
+    "hash_dc91e192": 0,
     "supplystash": 1
 }

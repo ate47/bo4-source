@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_crab",
-    "hash_ff3063df": "attach_t8_charm_crab_view",
+    "hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_crab",
     "name": "charm_crab",
-    "displayname": "#hash_6d998b276b7959d5",
+    "displayname": "localized17#hash_6d998b276b7959d5",
     "icon": "ui_icon_weapon_charms_crab",
-    "hash_ef5ad2b3": "attach_t8_charm_crab_view",
-    "previewimage": "#ui_icon_weapon_charms_crab"
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_crab"
 }

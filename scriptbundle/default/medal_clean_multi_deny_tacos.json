@@ -1,10 +1,10 @@
 {
-    "description": "#hash_2f359d30d4a3f48e",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_2f359d30d4a3f48e",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_clean_multi_deny_tacos",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_allgone",
-    "stringref": "#hash_5e6ac7d0baf1bd3e",
-    "iconlarge": "#ui_icon_medal_allgone_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_allgone",
+    "stringref": "localized17#hash_5e6ac7d0baf1bd3e",
+    "iconlarge": "image#ui_icon_medal_allgone_large"
 }

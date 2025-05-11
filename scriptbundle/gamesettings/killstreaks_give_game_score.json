@@ -1,10 +1,13 @@
 {
-    "hinttext": "#hash_1a1bb142b2aaa0eb",
+    "hinttext": "localized17#hash_1a1bb142b2aaa0eb",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "killstreaks_give_game_score",
-    "displayname": "#hash_229999258e9176a5",
+    "displayname": "localized17#hash_229999258e9176a5",
+    "hash_54e336e4": 0,
     "optionscount": 2,
+    "hash_765cfd09": 0,
     "setting": "killstreaksGiveGameScore",
     "isenableddisabled": 1
 }

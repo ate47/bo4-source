@@ -1,15 +1,18 @@
 {
     "shieldpieces": [
         {
-            "pieceimage": "#hash_57735262a5266d93",
+            "hash_7db3435c": 0,
+            "pieceimage": "image#hash_57735262a5266d93",
             "clientfield": "#shield_3"
         },
         {
-            "pieceimage": "#hash_57735462a52670f9",
+            "hash_7db3435c": 0,
+            "pieceimage": "image#hash_57735462a52670f9",
             "clientfield": "#shield_1"
         },
         {
-            "pieceimage": "#hash_57735162a5266be0",
+            "hash_7db3435c": 0,
+            "pieceimage": "image#hash_57735162a5266be0",
             "clientfield": "#shield_2"
         }
     ],
@@ -21,10 +24,11 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "#hash_4b1901f1dfc5158a"
+                                    "stageimage": "image#hash_4b1901f1dfc5158a"
                                 }
                             ],
                             "hash_1d91eeba": 1,
+                            "hash_7db3435c": 0,
                             "clientfield": "#hash_56af1bf88e729603"
                         }
                     ],
@@ -35,16 +39,18 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "#hash_5ef0b8da29c42486"
+                                    "stageimage": "image#hash_5ef0b8da29c42486"
                                 }
                             ],
                             "hash_1d91eeba": 1,
+                            "hash_7db3435c": 0,
                             "clientfield": "#hash_2695edd24ddf6e7b"
                         }
                     ],
                     "list_items": 1
                 }
             ],
+            "hash_7db3435c": 0,
             "hash_516217cd": 2,
             "name": "trap_part_1",
             "hash_a0ebe517": "#hash_48c5bcc6c9fab9d6"
@@ -56,10 +62,11 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "#hash_4b1901f1dfc5158a"
+                                    "stageimage": "image#hash_4b1901f1dfc5158a"
                                 }
                             ],
                             "hash_1d91eeba": 1,
+                            "hash_7db3435c": 0,
                             "clientfield": "#hash_639cad37c167bf8e"
                         }
                     ],
@@ -70,16 +77,18 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "#hash_5ef0b8da29c42486"
+                                    "stageimage": "image#hash_5ef0b8da29c42486"
                                 }
                             ],
                             "hash_1d91eeba": 1,
+                            "hash_7db3435c": 0,
                             "clientfield": "#hash_4a5aa2652a3ee760"
                         }
                     ],
                     "list_items": 1
                 }
             ],
+            "hash_7db3435c": 0,
             "hash_516217cd": 2,
             "name": "trap_part_2",
             "hash_a0ebe517": "#hash_7d940511ce9f0341"
@@ -88,67 +97,73 @@
     "challenges": [
         {
             "numneeded": 2,
-            "challengedesc": "#hash_5b0cf8d1c923df11",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_5b0cf8d1c923df11",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 4,
-            "challengedesc": "#hash_5b0cf5d1c923d9f8",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_5b0cf5d1c923d9f8",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 6,
-            "challengedesc": "#hash_5b0cf6d1c923dbab",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_5b0cf6d1c923dbab",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 8,
-            "challengedesc": "#hash_5b0cfbd1c923e42a",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_5b0cfbd1c923e42a",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 10,
-            "challengedesc": "#hash_5b0cfcd1c923e5dd",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
+            "challengedesc": "localized17#hash_5b0cfcd1c923e5dd",
+            "challengeimage": "image#t7_icons_challenges_mp_darkops"
         }
     ],
     "packapunchitems": [
         {
             "stages": [
                 {
-                    "stageimage": "#hash_73dc667901a5a4dd"
+                    "stageimage": "image#hash_73dc667901a5a4dd"
                 }
             ],
             "hash_1d91eeba": 1,
+            "hash_7db3435c": 0,
             "clientfield": "#hash_6608231515ad6e93"
         },
         {
             "stages": [
                 {
-                    "stageimage": "#hash_70ad7a9e5372134f"
+                    "stageimage": "image#hash_70ad7a9e5372134f"
                 }
             ],
             "hash_1d91eeba": 1,
+            "hash_7db3435c": 0,
             "clientfield": "#hash_6608241515ad7046"
         },
         {
             "stages": [
                 {
-                    "stageimage": "#hash_17ed6d25067fba24"
+                    "stageimage": "image#hash_17ed6d25067fba24"
                 }
             ],
             "hash_1d91eeba": 1,
+            "hash_7db3435c": 0,
             "clientfield": "#hash_6608251515ad71f9"
         }
     ],
     "hash_5a90928f": "#hash_7ed874a0ecdefd90",
     "configstringfiletype": "scriptbundle",
     "hash_aa76b7dd": 1,
+    "hash_3e38620e": 0,
     "hash_6fa1ca44": 2,
     "type": "zminventory",
     "hash_af62a8e8": 3,
     "name": "zm_inventory_office",
     "hash_a05daa90": 3,
     "hash_f22d6ad5": 5,
-    "hash_f7d932ea": "#hash_518608853a37856e"
+    "hash_f7d932ea": "#hash_518608853a37856e",
+    "hash_f3d39d90": 0,
+    "hash_38b9613": 0
 }

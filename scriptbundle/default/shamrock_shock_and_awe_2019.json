@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_5986f5700bd23c6",
-    "popupimage": "#hash_b5152f43fd65862",
-    "nametext": "#hash_3c3daa7993ced02",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_5986f5700bd23c6",
+    "popupimage": "image#hash_b5152f43fd65862",
+    "nametext": "localized17#hash_3c3daa7993ced02",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "shamrock_shock_and_awe_2019",
-    "desctext": "#hash_6528fd38cc10bf92",
-    "previewimage": "#hash_1b8d576bd3ea244f",
-    "reserveimage": "#hash_4048d1252c591a68"
+    "desctext": "localized17#hash_6528fd38cc10bf92",
+    "previewimage": "image#hash_1b8d576bd3ea244f",
+    "reserveimage": "image#hash_4048d1252c591a68"
 }

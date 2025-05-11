@@ -1,13 +1,13 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "#hash_17eb0d40b45d38c6"
+            "hash_826726a": "localized17#hash_17eb0d40b45d38c6"
         }
     ],
     "hash_d0100eab": 1,
-    "relateditemname": "#hash_725b1719bd56b4ec",
-    "contracttitle": "#hash_17eb0d40b45d38c6",
+    "relateditemname": "localized17#hash_725b1719bd56b4ec",
+    "contracttitle": "localized17#hash_17eb0d40b45d38c6",
     "name": "loot_contract_nomad_hunter",
     "hash_f15e270f": "#white",
-    "hash_e08fc162": "#hash_40534ffb27a37ede"
+    "hash_e08fc162": "localized17#hash_40534ffb27a37ede"
 }

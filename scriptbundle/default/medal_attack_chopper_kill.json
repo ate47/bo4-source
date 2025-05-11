@@ -1,10 +1,10 @@
 {
-    "description": "#hash_328927f8324bc052",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_328927f8324bc052",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_attack_chopper_kill",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_2f66cef7039f272",
-    "stringref": "#hash_17e991ecc40a75c2",
-    "iconlarge": "#ui_icon_medal_attack_chopper_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_2f66cef7039f272",
+    "stringref": "localized17#hash_17e991ecc40a75c2",
+    "iconlarge": "image#ui_icon_medal_attack_chopper_large"
 }

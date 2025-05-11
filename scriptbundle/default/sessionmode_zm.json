@@ -2,7 +2,7 @@
     "defaultgametype": "zclassic",
     "abbreviation": "zm",
     "name": "sessionmode_zm",
-    "selectdescription": "#menu/zombies_desc",
-    "displayname": "#menu/zombies",
+    "selectdescription": "localized17#menu/zombies_desc",
+    "displayname": "localized17#menu/zombies",
     "defaultmap": "zm_zodt8"
 }

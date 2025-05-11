@@ -1,13 +1,17 @@
 {
-    "descriptionimage": "#ui_icon_attachment_pistol_revolver_opmod_skullsplitter",
+    "descriptionimage": "image#ui_icon_attachment_pistol_revolver_opmod_skullsplitter",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "operator_skullsplitter_restriction",
-    "displayname": "#hash_4d3a1668908d875f",
-    "label1": "#menu/enabled",
-    "label2": "#menu/disabled",
+    "displayname": "localized17#hash_4d3a1668908d875f",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "itemRestrictions__pistol_revolver_t8__attachments__uber"
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__pistol_revolver_t8__attachments__uber",
+    "isenableddisabled": 0
 }

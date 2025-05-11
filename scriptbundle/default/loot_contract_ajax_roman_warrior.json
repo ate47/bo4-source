@@ -1,16 +1,16 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "#hash_55ea2d0c95af597a"
+            "hash_826726a": "localized17#hash_55ea2d0c95af597a"
         }
     ],
-    "contracticon": "#hash_72f383625e61304f",
+    "contracticon": "image#hash_72f383625e61304f",
     "hash_d0100eab": 1,
-    "relateditemname": "#hash_57252f16d6cf4edb",
-    "contracttitle": "#hash_55ea2d0c95af597a",
+    "relateditemname": "localized17#hash_57252f16d6cf4edb",
+    "contracttitle": "localized17#hash_55ea2d0c95af597a",
     "name": "loot_contract_ajax_roman_warrior",
-    "contractdescription": "#hash_546a942e348c5da2",
+    "contractdescription": "localized17#hash_546a942e348c5da2",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_38bac0dcfaeeacd7",
-    "hash_e08fc162": "#hash_4b71cb37b34176"
+    "hash_1c057e8c": "image#hash_38bac0dcfaeeacd7",
+    "hash_e08fc162": "localized17#hash_4b71cb37b34176"
 }

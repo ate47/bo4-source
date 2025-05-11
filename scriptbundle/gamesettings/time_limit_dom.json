@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_531e326169ecb1f2",
+    "hinttext": "localized17#hash_531e326169ecb1f2",
     "configstringfiletype": "scriptbundle",
     "value8": "5",
     "value9": "6",
@@ -22,12 +22,15 @@
     "value19": "20",
     "value18": "15",
     "type": "gamesettings",
-    "label": "#menu/x_minutes",
+    "label": "localized17#menu/x_minutes",
     "hash_5a6dee5a": 1,
     "name": "time_limit_dom",
-    "displayname": "#hash_62c13100f00ec8ed",
-    "label1": "#menu/unlimited",
-    "label2": "#menu/1_minute",
+    "displayname": "localized17#hash_62c13100f00ec8ed",
+    "label1": "localized17#menu/unlimited",
+    "label2": "localized17#menu/1_minute",
+    "hash_54e336e4": 0,
     "optionscount": 20,
-    "setting": "timeLimit"
+    "hash_765cfd09": 0,
+    "setting": "timeLimit",
+    "isenableddisabled": 0
 }

@@ -2,51 +2,55 @@
     "itemlist": [
         {
             "minweight": 50,
-            "itementry": "wz_open_skyscrapers_wallbuy_guns_ar",
+            "itementry": "scriptbundle&wz_open_skyscrapers_wallbuy_guns_ar",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "wz_open_skyscrapers_wallbuy_guns_smg",
+            "itementry": "scriptbundle&wz_open_skyscrapers_wallbuy_guns_smg",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "wz_open_skyscrapers_wallbuy_guns_shotgun",
+            "itementry": "scriptbundle&wz_open_skyscrapers_wallbuy_guns_shotgun",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 25,
-            "itementry": "wz_open_skyscrapers_wallbuy_guns_tr",
+            "itementry": "scriptbundle&wz_open_skyscrapers_wallbuy_guns_tr",
             "maxweight": 25,
             "available": -1
         },
         {
             "minweight": 25,
-            "itementry": "wz_open_skyscrapers_wallbuy_guns_lmg",
+            "itementry": "scriptbundle&wz_open_skyscrapers_wallbuy_guns_lmg",
             "maxweight": 25,
             "available": -1
         },
         {
             "minweight": 25,
-            "itementry": "wz_open_skyscrapers_wallbuy_guns_sniper",
+            "itementry": "scriptbundle&wz_open_skyscrapers_wallbuy_guns_sniper",
             "maxweight": 25,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "wz_open_skyscrapers_wallbuy_guns_zombie",
+            "itementry": "scriptbundle&wz_open_skyscrapers_wallbuy_guns_zombie",
             "maxweight": 100,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 7,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "wz_open_skyscrapers_wallbuy_guns_list_ghosttown",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

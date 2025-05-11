@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_f002cdf07617118",
+    "hinttext": "localized17#hash_f002cdf07617118",
     "configstringfiletype": "scriptbundle",
     "value8": "350",
     "value9": "400",
@@ -52,11 +52,14 @@
     "hash_a9a65d66": "2200",
     "hash_7ec30f98": "2450",
     "type": "gamesettings",
-    "label": "#hash_3b934748f35c962b",
+    "label": "localized17#hash_3b934748f35c962b",
+    "hash_5a6dee5a": 0,
     "name": "zm_killcap",
-    "displayname": "#hash_6159996f2c00efb0",
-    "label1": "#hash_68b65fb510ccd214",
+    "displayname": "localized17#hash_6159996f2c00efb0",
+    "label1": "localized17#hash_68b65fb510ccd214",
     "hash_54e336e4": 1,
     "optionscount": 50,
-    "setting": "zmKillCap"
+    "hash_765cfd09": 0,
+    "setting": "zmKillCap",
+    "isenableddisabled": 0
 }

@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#t7_hud_medal_backing_badassery",
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_kill_enemy_after_death",
-    "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
-    "iconsmall": "#t7_hud_medal_kill_enemy_after_death",
-    "stringref": "#hash_359f779a3e5e50aa",
-    "iconlarge": "#t7_hud_medal_kill_enemy_after_death_lrg"
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#t7_hud_medal_kill_enemy_after_death",
+    "stringref": "localized17#hash_359f779a3e5e50aa",
+    "iconlarge": "image#t7_hud_medal_kill_enemy_after_death_lrg"
 }

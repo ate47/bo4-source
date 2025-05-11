@@ -1,10 +1,13 @@
 {
-    "hinttext": "#hash_6fd671b6a85c8e50",
+    "hinttext": "localized17#hash_6fd671b6a85c8e50",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "silent_plant",
-    "displayname": "#menu/silent_plant",
+    "displayname": "localized17#menu/silent_plant",
+    "hash_54e336e4": 0,
     "optionscount": 2,
+    "hash_765cfd09": 0,
     "setting": "silentPlant",
     "isenableddisabled": 1
 }

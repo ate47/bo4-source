@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_oni_mask",
-    "hash_ff3063df": "attach_t8_charm_oni_mask_view",
+    "hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_oni_mask",
     "name": "charm_oni_mask",
-    "displayname": "#hash_514145cea5410b00",
+    "displayname": "localized17#hash_514145cea5410b00",
     "icon": "ui_icon_weapon_charms_oni_mask",
-    "hash_ef5ad2b3": "attach_t8_charm_oni_mask_view",
-    "previewimage": "#ui_icon_weapon_charms_oni_mask"
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_oni_mask"
 }

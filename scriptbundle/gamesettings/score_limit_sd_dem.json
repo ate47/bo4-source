@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_44e51a1ffd6f3c9c",
+    "hinttext": "localized17#hash_44e51a1ffd6f3c9c",
     "configstringfiletype": "scriptbundle",
     "value8": "8",
     "value9": "9",
@@ -14,10 +14,14 @@
     "value10": "10",
     "value12": "24",
     "type": "gamesettings",
-    "label": "#menu/x_rounds",
+    "label": "localized17#menu/x_rounds",
+    "hash_5a6dee5a": 0,
     "name": "score_limit_sd_dem",
-    "displayname": "#hash_647bbaec62cf62ac",
-    "label1": "#menu/unlimited",
+    "displayname": "localized17#hash_647bbaec62cf62ac",
+    "label1": "localized17#menu/unlimited",
+    "hash_54e336e4": 0,
     "optionscount": 12,
-    "setting": "scoreLimit"
+    "hash_765cfd09": 0,
+    "setting": "scoreLimit",
+    "isenableddisabled": 0
 }

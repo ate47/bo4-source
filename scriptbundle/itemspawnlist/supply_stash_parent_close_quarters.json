@@ -2,46 +2,49 @@
     "itemlist": [
         {
             "minweight": 50,
-            "itementry": "supply_stash_slot1_closequarters",
+            "itementry": "scriptbundle&supply_stash_slot1_closequarters",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "supply_stash_slot2_closequarters",
+            "itementry": "scriptbundle&supply_stash_slot2_closequarters",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "supply_stash_slot3_closequarters",
+            "itementry": "scriptbundle&supply_stash_slot3_closequarters",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "itementry": "supply_stash_slot4_closequarters",
+            "itementry": "scriptbundle&supply_stash_slot4_closequarters",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "itementry": "supply_stash_slot5_closequarters",
+            "itementry": "scriptbundle&supply_stash_slot5_closequarters",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "itementry": "supply_stash_operator_mod_weapons_closequarters",
+            "itementry": "scriptbundle&supply_stash_operator_mod_weapons_closequarters",
             "maxweight": 50,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 12000,
     "type": "itemspawnlist",
     "hash_345eba59": 6,
+    "vehiclespawner": 0,
     "hash_9b009839": 10,
+    "hash_dc7ffbef": 0,
     "name": "supply_stash_parent_close_quarters",
     "supplystashweight": 100,
     "hash_dc91e192": 1,

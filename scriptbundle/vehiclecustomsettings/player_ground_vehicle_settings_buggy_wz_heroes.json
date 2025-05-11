@@ -1,33 +1,36 @@
 {
     "lightgroups_1_slots": [
         {
-            "fx": "#hash_77e6518b91fa9e98",
+            "fx": "fx#hash_77e6518b91fa9e98",
             "tag": "tag_fx_iff_front"
         },
         {
-            "fx": "#hash_498ebacebd9189a8",
+            "fx": "fx#hash_498ebacebd9189a8",
             "tag": "tag_fx_headlight_right"
         },
         {
-            "fx": "#hash_18fac6ebd202c081",
+            "fx": "fx#hash_18fac6ebd202c081",
             "tag": "tag_fx_headlight_left_inner"
         }
     ],
     "lightgroups_3_slots": [
         {
-            "fx": "#hash_72d2f6db990057e7",
+            "fx": "fx#hash_72d2f6db990057e7",
             "tag": "tag_camera"
         }
     ],
     "hash_77c7a074": 400,
     "hash_efc15586": 10,
     "hash_e1d36c37": 300,
+    "hash_6754976b": 0,
     "turret_fire_burst_max": 5,
     "hash_2c69a255": 5,
     "damagestate_lv3_tag1": "tag_body_animate",
     "hash_93360fe": 10,
+    "hash_22b9bee1": 0,
     "forwardjukeengagementheightmax": 300,
     "damagestate_lv1_ratio": 0.75,
+    "hash_95ebe8e0": 0,
     "hash_2ade16ee": 450,
     "hash_c15b13ab": 500,
     "hash_9cdbf8c1": 1000,
@@ -38,17 +41,17 @@
     "damagestate_lv1_tag1": "tag_body_animate",
     "vehicletype": "none",
     "max_duration": 30,
-    "damagestate_lv1_fx1": "#hash_491f5bd2678c3c0b",
+    "damagestate_lv1_fx1": "fx#hash_491f5bd2678c3c0b",
     "lightgroups_2_slots": 3,
     "damagestate_lv4_ratio": 0.75,
     "damagestate_lv2_ratio": 0.5,
     "hash_c5e4c9ab": 200,
     "defaultmovespeed": 37,
     "type": "vehiclecustomsettings",
-    "hash_205154b8": "#hash_47505c727cefc38d",
-    "hash_a03cd491": "#hash_4ecb7eec753ad761",
-    "hash_4d8e2f31": "#hash_4ecb7eec753ad761",
-    "hash_3bd38bbc": "#hash_18d16e81732db747",
+    "hash_205154b8": "fx#hash_47505c727cefc38d",
+    "hash_a03cd491": "fx#hash_4ecb7eec753ad761",
+    "hash_4d8e2f31": "fx#hash_4ecb7eec753ad761",
+    "hash_3bd38bbc": "fx#hash_18d16e81732db747",
     "max_move_dist": 100,
     "empdowntime": 10,
     "all_knowing": 1,
@@ -76,7 +79,7 @@
     "targeting_radius": 200,
     "meleedist": 50,
     "damage_radius": 150,
-    "vehicle_turret": "#hash_10dd6da6249fb08d",
+    "vehicle_turret": "fx#hash_10dd6da6249fb08d",
     "jump_height": 40,
     "miniguncooldown": 5,
     "scanning_speedscale": 0.01,
@@ -95,12 +98,12 @@
     "damagestate_lv3_sound": "veh_dmg_health_drop",
     "hash_3285f09a": 1000,
     "damagestate_lv3_ratio": 0.25,
-    "damagestate_lv3_fx1": "#hash_491f5dd2678c3f71",
+    "damagestate_lv3_fx1": "fx#hash_491f5dd2678c3f71",
     "hash_7454f5d3": 5,
     "damagestate_lv2_sound": "veh_dmg_health_drop",
     "hash_c694bbbf": 90,
     "hash_33fed96b": 2,
-    "damagestate_lv2_fx1": "#hash_491f5cd2678c3dbe",
+    "damagestate_lv2_fx1": "fx#hash_491f5cd2678c3dbe",
     "gunner_turret_on_target_range": 5,
     "hash_efbfa41e": 1000,
     "hash_e0c78652": 10,

@@ -2,31 +2,35 @@
     "itemlist": [
         {
             "minweight": 500,
-            "itementry": "health_item_small",
+            "itementry": "scriptbundle&health_item_small",
             "maxweight": 500,
             "available": -1
         },
         {
             "minweight": 400,
-            "itementry": "health_item_small",
-            "childitementry_1": "health_item_small",
+            "itementry": "scriptbundle&health_item_small",
+            "childitementry_1": "scriptbundle&health_item_small",
             "maxweight": 400,
             "available": -1
         },
         {
             "minweight": 100,
-            "itementry": "health_item_small",
-            "childitementry_2": "health_item_small",
-            "childitementry_1": "health_item_small",
+            "itementry": "scriptbundle&health_item_small",
+            "childitementry_2": "scriptbundle&health_item_small",
+            "childitementry_1": "scriptbundle&health_item_small",
             "maxweight": 100,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 200,
     "type": "itemspawnlist",
     "hash_345eba59": 3,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "health_list_low",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

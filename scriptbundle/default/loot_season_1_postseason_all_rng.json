@@ -1,8 +1,8 @@
 {
-    "contracticon": "#hash_16f8b4a8b0da9df5",
-    "hash_cb6692ec": "#ui_icon_blackmarket_lockskull_256",
+    "contracticon": "image#hash_16f8b4a8b0da9df5",
+    "hash_cb6692ec": "image#ui_icon_blackmarket_lockskull_256",
     "name": "loot_season_1_postseason_all_rng",
-    "bannerimage": "#hash_2fc620e4c5d0b7a9",
+    "bannerimage": "image#hash_2fc620e4c5d0b7a9",
     "hash_f15e270f": "#white",
-    "hash_1c057e8c": "#hash_7049321b7939a00d"
+    "hash_1c057e8c": "image#hash_7049321b7939a00d"
 }

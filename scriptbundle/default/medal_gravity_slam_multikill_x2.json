@@ -1,10 +1,10 @@
 {
-    "description": "#hash_3a1e617f1d018e94",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_3a1e617f1d018e94",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_gravity_slam_multikill_x2",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_24c51cea243dfa9f",
-    "stringref": "#hash_632c82c8c8b73ac8",
-    "iconlarge": "#ui_icon_medal_blast_radius_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_24c51cea243dfa9f",
+    "stringref": "localized17#hash_632c82c8c8b73ac8",
+    "iconlarge": "image#ui_icon_medal_blast_radius_large"
 }

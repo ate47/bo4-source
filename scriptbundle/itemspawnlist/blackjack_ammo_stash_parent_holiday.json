@@ -2,24 +2,28 @@
     "itemlist": [
         {
             "minweight": 100,
-            "itementry": "melee_secretsanta_t8_item",
+            "itementry": "scriptbundle&melee_secretsanta_t8_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "itementry": "melee_slaybell_t8_item",
+            "itementry": "scriptbundle&melee_slaybell_t8_item",
             "maxweight": 100,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 4000,
     "type": "itemspawnlist",
     "hash_345eba59": 2,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "blackjack_ammo_stash_parent_holiday",
-    "displayname": "#hash_552e95261f2d04be",
+    "displayname": "localized18#hash_552e95261f2d04be",
     "supplystashweight": 100,
+    "hash_dc91e192": 0,
     "supplystash": 1
 }

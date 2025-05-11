@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_169052a0dcd126e2",
+    "hinttext": "localized17#hash_169052a0dcd126e2",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
@@ -7,11 +7,15 @@
     "value4": "3",
     "value5": "4",
     "type": "gamesettings",
-    "label": "#hash_6e36be7afbe498e7",
+    "label": "localized17#hash_6e36be7afbe498e7",
+    "hash_5a6dee5a": 0,
     "name": "round_switch",
-    "displayname": "#menu/round_switch",
-    "label1": "#menu/disabled",
-    "label2": "#menu/every_round",
+    "displayname": "localized17#menu/round_switch",
+    "label1": "localized17#menu/disabled",
+    "label2": "localized17#menu/every_round",
+    "hash_54e336e4": 0,
     "optionscount": 5,
-    "setting": "roundSwitch"
+    "hash_765cfd09": 0,
+    "setting": "roundSwitch",
+    "isenableddisabled": 0
 }

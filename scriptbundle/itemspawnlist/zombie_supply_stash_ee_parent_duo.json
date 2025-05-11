@@ -2,61 +2,65 @@
     "itemlist": [
         {
             "minweight": 50,
-            "itementry": "armor_item_large",
-            "childitementry_1": "armor_item_large",
+            "itementry": "scriptbundle&armor_item_large",
+            "childitementry_1": "scriptbundle&armor_item_large",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "health_item_large",
-            "childitementry_1": "health_item_large",
+            "itementry": "scriptbundle&health_item_large",
+            "childitementry_1": "scriptbundle&health_item_large",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "blundergat_wz_item",
+            "itementry": "scriptbundle&blundergat_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "ray_gun_mk2_t8_item",
+            "itementry": "scriptbundle&ray_gun_mk2_t8_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "supply_stash_gold_guns",
+            "itementry": "scriptbundle&supply_stash_gold_guns",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "supply_stash_gold_guns",
+            "itementry": "scriptbundle&supply_stash_gold_guns",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "melee_bloody_bowie_t8_item",
+            "itementry": "scriptbundle&melee_bloody_bowie_t8_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "resource_item_paint_stack_10",
-            "childitementry_1": "resource_item_paint_stack_10",
+            "itementry": "scriptbundle&resource_item_paint_stack_10",
+            "childitementry_1": "scriptbundle&resource_item_paint_stack_10",
             "maxweight": 50,
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 8,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "zombie_supply_stash_ee_parent_duo",
     "supplystashweight": 100,
+    "hash_dc91e192": 0,
     "supplystash": 1
 }

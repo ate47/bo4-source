@@ -1,10 +1,10 @@
 {
-    "buttonimage": "#hash_2f95e432c508b0a5",
-    "popupimage": "#hash_68dedf07fb47c8b7",
-    "nametext": "#hash_e60183a6d481a4b",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#hash_2f95e432c508b0a5",
+    "popupimage": "image#hash_68dedf07fb47c8b7",
+    "nametext": "localized17#hash_e60183a6d481a4b",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "battery_assassin_outfit_bundle",
-    "desctext": "#hash_77cf65d9bb189c5d",
-    "previewimage": "#hash_58c8a869499c3846",
-    "reserveimage": "#hash_75fa2fff89336d01"
+    "desctext": "localized17#hash_77cf65d9bb189c5d",
+    "previewimage": "image#hash_58c8a869499c3846",
+    "reserveimage": "image#hash_75fa2fff89336d01"
 }

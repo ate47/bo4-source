@@ -2,44 +2,44 @@
     "itemlist": [
         {
             "minweight": 50,
-            "itementry": "launcher_standard_t8_item",
-            "childitementry_1": "ammo_type_rocket_double_item",
+            "itementry": "scriptbundle&launcher_standard_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_rocket_double_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "perk_item_deadsilence",
+            "itementry": "scriptbundle&perk_item_deadsilence",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "perk_item_lightweight",
+            "itementry": "scriptbundle&perk_item_lightweight",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "health_item_large",
+            "itementry": "scriptbundle&health_item_large",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "backpack_item",
+            "itementry": "scriptbundle&backpack_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "sensor_dart_wz_item",
+            "itementry": "scriptbundle&sensor_dart_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "itementry": "perk_item_looter",
+            "itementry": "scriptbundle&perk_item_looter",
             "maxweight": 50,
             "available": 1
         },
@@ -49,12 +49,16 @@
             "available": 1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "hash_7fb0967b": 12000,
     "type": "itemspawnlist",
     "hash_345eba59": 8,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "supply_drop_slot3_heavy_metal_heroes",
     "supplystashweight": 100,
+    "hash_dc91e192": 0,
     "supplystash": 1
 }

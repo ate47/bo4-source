@@ -7,6 +7,7 @@
             "hash_910e2f9b": "tag_carriage_ws_ri",
             "hash_51e8b151": "tag_carriage_ws_le",
             "activebydefault": 1,
+            "hitradius": 0,
             "health": 55000
         },
         {
@@ -14,6 +15,7 @@
             "absolutehealth": 1,
             "type": "#weakpoint",
             "hash_51e8b151": "tag_head_ws",
+            "hitradius": 0,
             "health": 45000
         },
         {
@@ -22,6 +24,7 @@
             "type": "#weakpoint",
             "hash_51e8b151": "tag_chest_armor_ws",
             "activebydefault": 1,
+            "hitradius": 0,
             "health": 45000
         },
         {
@@ -29,11 +32,12 @@
             "absolutehealth": 1,
             "type": "#weakpoint",
             "hash_51e8b151": "tag_body_ws",
+            "hitradius": 0,
             "health": 60000
         }
     ],
     "configstringfiletype": "scriptbundle",
-    "model": "#c_t8_zmb_dlc0_elephant_body1_hb",
+    "model": "model#c_t8_zmb_dlc0_elephant_body1_hb",
     "type": "characterweakpointsettings",
     "name": "c_t8_zmb_dlc0_towers_boss_weakpoint_def",
     "hash_96a09826": 4

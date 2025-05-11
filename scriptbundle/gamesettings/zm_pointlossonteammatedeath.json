@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_1d655ba806ee50ac",
+    "hinttext": "localized17#hash_1d655ba806ee50ac",
     "hash_2632eb24": "99",
     "configstringfiletype": "scriptbundle",
     "value8": "7",
@@ -102,11 +102,14 @@
     "hash_216254dc": "52",
     "hash_3094f341": "51",
     "type": "gamesettings",
-    "label": "#hash_139c2b8c591b06cf",
+    "label": "localized17#hash_139c2b8c591b06cf",
+    "hash_5a6dee5a": 0,
     "name": "zm_pointlossonteammatedeath",
-    "displayname": "#hash_5704a047cdd7a384",
-    "label1": "#hash_68b65fb510ccd214",
+    "displayname": "localized17#hash_5704a047cdd7a384",
+    "label1": "localized17#hash_68b65fb510ccd214",
     "hash_54e336e4": 1,
     "optionscount": 100,
-    "setting": "zmPointLossOnTeammateDeath"
+    "hash_765cfd09": 0,
+    "setting": "zmPointLossOnTeammateDeath",
+    "isenableddisabled": 0
 }

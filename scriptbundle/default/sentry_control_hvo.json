@@ -4,39 +4,39 @@
             "hash_82670522": "stats_sensor_dart_kill",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_7218f266fb215186"
+            "displaystatname": "localized17#hash_7218f266fb215186"
         },
         {
             "hash_82670522": "stats_sensor_dart_assist",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_3a4cd5ce3f62740"
+            "displaystatname": "localized17#hash_3a4cd5ce3f62740"
         },
         {
             "stattype": "objectiveekia",
             "hash_26568428": 1,
-            "displaystatname": "#hash_5d1ab6f5e0227795"
+            "displaystatname": "localized17#hash_5d1ab6f5e0227795"
         },
         {
             "hash_82670522": "stats_shutdowns",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_158193577a14c86e"
+            "displaystatname": "localized17#hash_158193577a14c86e"
         },
         {
             "stattype": "damagedone",
             "hash_26568428": 1,
-            "displaystatname": "#hash_5418827f408e5ca2"
+            "displaystatname": "localized17#hash_5418827f408e5ca2"
         },
         {
             "stattype": "objectivescore",
             "hash_26568428": 1,
-            "displaystatname": "#hash_4d3552e327f94ecf"
+            "displaystatname": "localized17#hash_4d3552e327f94ecf"
         }
     ],
     "hash_447510ee": "prt_mp_recon",
-    "defaultimage": "#ui_icon_hvo_base",
-    "cardname": "#hash_576108e4d270388",
+    "defaultimage": "image#ui_icon_hvo_base",
+    "cardname": "localized17#hash_576108e4d270388",
     "name": "sentry_control_hvo",
     "associatedgamemode": "control"
 }

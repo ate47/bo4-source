@@ -1,9 +1,9 @@
 {
     "callingtask": "#kills_lmg",
     "configstringfiletype": "scriptbundle",
-    "image": "#ui_icon_zm_calling_tasks_lmg",
+    "image": "image#ui_icon_zm_calling_tasks_lmg",
     "dailytarget": 750,
     "name": "lightmachineguns_task_holiday",
-    "taskname": "#hash_7116f3eec93fa7e1",
-    "descsimple": "#hash_36fb3075fb836d51"
+    "taskname": "localized17#hash_7116f3eec93fa7e1",
+    "descsimple": "localized17#hash_36fb3075fb836d51"
 }

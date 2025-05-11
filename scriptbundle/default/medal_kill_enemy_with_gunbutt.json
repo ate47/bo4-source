@@ -1,10 +1,10 @@
 {
-    "description": "#hash_739822965f61da31",
-    "backingsmall": "#$whitetransparent",
+    "description": "localized17#hash_739822965f61da31",
+    "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_with_gunbutt",
-    "backinglarge": "#$whitetransparent",
-    "iconsmall": "#ui_icon_medal_nose_breaker",
-    "stringref": "#hash_40a1141097eb149f",
-    "iconlarge": "#ui_icon_medal_nose_breaker_large"
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_nose_breaker",
+    "stringref": "localized17#hash_40a1141097eb149f",
+    "iconlarge": "image#ui_icon_medal_nose_breaker_large"
 }

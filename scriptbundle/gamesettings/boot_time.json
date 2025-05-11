@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_4ce625197219ba1b",
+    "hinttext": "localized17#hash_4ce625197219ba1b",
     "configstringfiletype": "scriptbundle",
     "value2": "5",
     "value3": "10",
@@ -8,10 +8,14 @@
     "value4": "15",
     "value5": "20",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "boot_time",
-    "displayname": "#hash_1e55de5752addb5",
-    "label1": "#menu/disabled",
+    "displayname": "localized17#hash_1e55de5752addb5",
+    "label1": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
     "optionscount": 6,
-    "setting": "bootTime"
+    "hash_765cfd09": 0,
+    "setting": "bootTime",
+    "isenableddisabled": 0
 }

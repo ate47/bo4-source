@@ -1,15 +1,19 @@
 {
-    "hinttext": "#hash_648515a45ab021",
+    "hinttext": "localized17#hash_648515a45ab021",
     "configstringfiletype": "scriptbundle",
     "value2": "2",
     "value3": "3",
     "value1": "1",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "carrier_move_speed",
-    "displayname": "#hash_5a1a636f26849a37",
-    "label1": "#menu/slow",
-    "label3": "#menu/fast",
-    "label2": "#menu/normal",
+    "displayname": "localized17#hash_5a1a636f26849a37",
+    "label1": "localized17#menu/slow",
+    "label3": "localized17#menu/fast",
+    "label2": "localized17#menu/normal",
+    "hash_54e336e4": 0,
     "optionscount": 3,
-    "setting": "carrierMoveSpeed"
+    "hash_765cfd09": 0,
+    "setting": "carrierMoveSpeed",
+    "isenableddisabled": 0
 }

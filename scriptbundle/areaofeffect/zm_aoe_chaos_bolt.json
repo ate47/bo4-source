@@ -5,9 +5,9 @@
     "effectradius": 350,
     "vmtype": "client",
     "name": "zm_aoe_chaos_bolt",
-    "hash_a8609f98": "damage_light",
-    "endrumble": "damage_heavy",
+    "hash_a8609f98": "rumble&damage_light",
+    "endrumble": "rumble&damage_heavy",
     "earthquakeduration": 2,
-    "loop_effect": "#hash_120056d3027a73cb",
-    "startrumble": "damage_heavy"
+    "loop_effect": "fx#hash_120056d3027a73cb",
+    "startrumble": "rumble&damage_heavy"
 }

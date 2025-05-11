@@ -1,12 +1,12 @@
 {
-    "popupimage": "#hash_2bb02b5c9a2df4cf",
-    "nametext": "#hash_7d7687106254cfde",
-    "categorytext": "#mpui/bm_bribe",
+    "popupimage": "image#hash_2bb02b5c9a2df4cf",
+    "nametext": "localized17#hash_7d7687106254cfde",
+    "categorytext": "localized17#mpui/bm_bribe",
     "name": "bribe_menu_asset",
-    "stackimage": "#ui_icon_blackmarket_reserves_weapon_bribe",
-    "desctext": "#hash_14b6dedc2c899de5",
-    "hash_e35e7c74": "#weapon/ar_modular_t8",
-    "hash_76dc8b88": "#hash_2bb02b5c9a2df4cf",
-    "previewimage": "#ui_icon_blackmarket_reserves_weapon_bribe",
-    "hash_c1acffb6": "#hash_2b27d20d2cfc1069"
+    "stackimage": "image#ui_icon_blackmarket_reserves_weapon_bribe",
+    "desctext": "localized17#hash_14b6dedc2c899de5",
+    "hash_e35e7c74": "localized17#weapon/ar_modular_t8",
+    "hash_76dc8b88": "image#hash_2bb02b5c9a2df4cf",
+    "previewimage": "image#ui_icon_blackmarket_reserves_weapon_bribe",
+    "hash_c1acffb6": "localized17#hash_2b27d20d2cfc1069"
 }

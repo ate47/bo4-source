@@ -1,12 +1,12 @@
 {
-    "door_animated_close_bundle": "p8_fxanim_sta_garage_door_bundle_close",
+    "door_animated_close_bundle": "scriptbundle&p8_fxanim_sta_garage_door_bundle_close",
     "door_closes": 1,
     "hash_7415e1eb": 5,
     "door_unlock_method": "default",
-    "hash_66bbc6d6": "1.0",
+    "hash_66bbc6d6": "scriptbundle&1.0",
     "configstringfiletype": "scriptbundle",
-    "hash_bbbdcca7": "1.0",
-    "model": "#hash_3e80e67a0e8e13c5",
+    "hash_bbbdcca7": "scriptbundle&1.0",
+    "model": "model#p8_fxanim_sta_garage_door",
     "type": "doors",
     "door_connect_paths": 1,
     "vmtype": "server",
@@ -21,5 +21,5 @@
     "door_open_time": 0.5,
     "door_trigger_radius": 80,
     "door_stop_sound": "evt_garage_close_small",
-    "door_animated_open_bundle": "p8_fxanim_sta_garage_door_bundle_open"
+    "door_animated_open_bundle": "scriptbundle&p8_fxanim_sta_garage_door_bundle_open"
 }

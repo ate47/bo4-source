@@ -1,56 +1,81 @@
 {
     "options": [
         {
-            "label": "#menu/default",
+            "label": "localized17#menu/default",
             "value": "0"
         },
         {
-            "label": "#menu/tactical",
+            "label": "localized17#menu/tactical",
             "value": "1"
         },
         {
-            "label": "#menu/lefty",
+            "label": "localized17#menu/lefty",
             "value": "2"
         },
         {
-            "label": "#menu/nomad",
+            "label": "localized17#menu/nomad",
             "value": "3"
         },
         {
-            "label": "#menu/charlie",
+            "label": "localized17#menu/charlie",
             "value": "4"
         },
         {
-            "label": "#menu/gunslinger",
+            "label": "localized17#menu/gunslinger",
             "value": "5"
         },
         {
-            "label": "#hash_1e31a517d89f8d8b",
+            "label": "localized17#hash_1e31a517d89f8d8b",
             "value": "6"
         },
         {
-            "label": "#hash_528bdecc81455bad",
+            "label": "localized17#hash_528bdecc81455bad",
             "value": "7"
         },
         {
-            "label": "#hash_186146d66336a088",
+            "label": "localized17#hash_186146d66336a088",
             "value": "8"
         }
     ],
-    "descriptionimage": "#hash_7ff90f0bea8ed361",
-    "description": "#hash_32cdf1ef7d930fe7",
-    "hash_60fcfffa": "#hash_2222dd50e5e35d4",
+    "hash_dfedf08e": 0,
+    "descriptionimage": "image#hash_7ff90f0bea8ed361",
+    "categoryindex": 0,
+    "description": "localized17#hash_32cdf1ef7d930fe7",
+    "hash_60fcfffa": "localized17#hash_2222dd50e5e35d4",
     "hash_10e01ad5": 1,
+    "iscategory": 0,
+    "hash_71620d66": 0,
+    "hash_213a0b12": 0,
+    "hash_8722393c": 0,
+    "hash_799f4f7": 0,
     "hash_7d936886": 1,
+    "hash_6bb94572": 0,
+    "hash_2284d52": 0,
+    "hash_389e8bd": 0,
     "hash_5352657b": 1,
+    "hash_9358ee0a": 0,
+    "hash_558c32d5": 0,
+    "hash_77c0bdd6": 0,
+    "hash_e0274350": 0,
     "hash_86a04811": 1,
     "hash_43a952c1": 0.1,
     "maxvalue": 1,
     "name": "pc_gamepad_button_layout",
-    "displayname": "#hash_12bfdb718870afdd",
+    "displayname": "localized17#hash_12bfdb718870afdd",
+    "rangestartvalue": 0,
+    "isdisabled": 0,
+    "hash_d6897f56": 0,
+    "hash_1da8087e": 0,
     "decimalplace": 0.01,
+    "hash_54a43dc2": 0,
     "hash_66faec87": 2,
     "statname": "gpad_buttonsConfig",
+    "hash_1f28ad4a": 0,
+    "isenableddisabled": 0,
+    "hash_6155d2c8": 0,
+    "minvalue": 0,
     "hash_d4e288e": 1,
-    "hash_b7401319": "#hash_31a2e842c09df09e"
+    "bindindex": 0,
+    "hash_f2ad4b49": 0,
+    "hash_b7401319": "localized17#hash_31a2e842c09df09e"
 }

@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#t7_hud_medal_backing_badassery",
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_assisted_suicide",
-    "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
-    "iconsmall": "#t7_hud_medal_assisted_suicide",
-    "stringref": "#medal/assisted_suicide",
-    "iconlarge": "#t7_hud_medal_assisted_suicide_lrg"
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#t7_hud_medal_assisted_suicide",
+    "stringref": "localized17#medal/assisted_suicide",
+    "iconlarge": "image#t7_hud_medal_assisted_suicide_lrg"
 }

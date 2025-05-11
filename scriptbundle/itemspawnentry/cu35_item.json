@@ -1,47 +1,83 @@
 {
     "objectives": [
         {
-            "description": "#hash_4cf8f0ada77bd8ba",
+            "description": "localized17#hash_4cf8f0ada77bd8ba",
             "hash_7e835304": "#kills_early"
         },
         {
             "teamsizedescriptions": [
                 {
-                    "description": "#hash_6d66150f48016807",
+                    "description": "localized17#hash_6d66150f48016807",
                     "teamsize": 1
                 },
                 {
-                    "description": "#hash_265f4d17e05c7e84",
+                    "description": "localized17#hash_265f4d17e05c7e84",
                     "teamsize": 2
                 },
                 {
-                    "description": "#hash_4c4b35fe1c14756f",
+                    "description": "localized17#hash_4c4b35fe1c14756f",
                     "teamsize": 4
                 }
             ],
-            "description": "#hash_4c4b35fe1c14756f",
+            "description": "localized17#hash_4c4b35fe1c14756f",
             "hash_57b131bd": 3
         },
         {
-            "description": "#hash_4cf8eeada77bd554"
+            "description": "localized17#hash_4cf8eeada77bd554"
         }
     ],
-    "description": "#hash_5a3f81fc92b74930",
+    "amount": 0,
+    "hash_99c0cb08": 0,
+    "duration": 0,
+    "description": "localized17#hash_5a3f81fc92b74930",
+    "hash_f2902d7b": 0,
+    "hash_a3aa1ca2": 0,
+    "armorshards": 0,
     "configstringfiletype": "scriptbundle",
     "hash_eda4062b": 3,
-    "hash_e8b98a8a": "#hash_534664d42d57a56f",
-    "model": "#hash_2bce8292eb632293",
+    "hash_e8b98a8a": "localized17#hash_534664d42d57a56f",
+    "hash_22c3ab38": 0,
+    "hash_54a3b4ca": 0,
+    "hash_5dc4470b": 0,
+    "hash_3e688854": 0,
+    "model": "model#hash_2bce8292eb632293",
+    "hash_2ee21ae6": 0,
     "type": "itemspawnentry",
-    "hintstring": "#hash_6b8f87d007d03e59",
+    "hintstring": "localized18#hash_6b8f87d007d03e59",
+    "hash_7a80f06e": 0,
     "unlockableitemref": "#wz_character_reaper",
+    "hash_d1f348db": 0,
+    "hash_cc1bbd2c": 0,
+    "hash_ae6581c0": 0,
+    "angleoffsetz": 0,
+    "angleoffsety": 0,
+    "angleoffsetx": 0,
+    "hash_702943a1": 0,
+    "hash_48907470": 0,
+    "hash_22d128f2": 0,
     "name": "cu35_item",
-    "displayname": "#hash_6b8f87d007d03e59",
-    "icon": "#hash_1bd93a98da71618b",
+    "displayname": "localized17#hash_6b8f87d007d03e59",
+    "hash_99edb6a3": 0,
+    "icon": "image#hash_1bd93a98da71618b",
+    "explosivedamagescale": 0,
+    "casttime": 0,
     "modelscale": 1,
     "rarity": "None",
-    "hash_a51bc1f7": "#hash_61378a301a27787e",
+    "hash_c690c73d": 0,
+    "hash_a51bc1f7": "localized17#hash_61378a301a27787e",
+    "hash_8a122876": 0,
+    "hash_7c4c8ceb": 0,
+    "hash_ee67711f": 0,
     "handler": "#hash_5c844f5c1207159c",
-    "rewardname": "#hash_7b43a0c37a409a85",
-    "pickupicon": "#hash_1bd93a98da71618b",
+    "armortier": 0,
+    "rewardname": "localized17#hash_7b43a0c37a409a85",
+    "pickupicon": "image#hash_1bd93a98da71618b",
+    "hash_8c9a7dc8": 0,
+    "hash_15b88fde": 0,
+    "hash_7a51d937": 0,
+    "positionoffsety": 0,
+    "positionoffsetx": 0,
+    "positionoffsetz": 0,
+    "hash_9f307988": 0,
     "itemtype": "quest"
 }

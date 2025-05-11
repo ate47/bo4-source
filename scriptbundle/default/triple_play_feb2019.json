@@ -1,9 +1,9 @@
 {
-    "buttonimage": "#uie_ui_menu_blackmarket_triple_play_frame_01",
-    "popupimage": "#hash_2e0f7461fb53785d",
-    "nametext": "#hash_1cba159f28b3f3b8",
-    "categorytext": "#hash_30951b5b7749b8df",
+    "buttonimage": "image#uie_ui_menu_blackmarket_triple_play_frame_01",
+    "popupimage": "image#hash_2e0f7461fb53785d",
+    "nametext": "localized17#hash_1cba159f28b3f3b8",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "triple_play_feb2019",
-    "desctext": "#hash_35340a3b679e069e",
-    "previewimage": "#ui_icon_blackmarket_contracts_preview_triple_play_01"
+    "desctext": "localized17#hash_35340a3b679e069e",
+    "previewimage": "image#ui_icon_blackmarket_contracts_preview_triple_play_01"
 }

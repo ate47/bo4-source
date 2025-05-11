@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_22e13d1d5a0f4c37",
+    "hinttext": "localized17#hash_22e13d1d5a0f4c37",
     "configstringfiletype": "scriptbundle",
     "value8": "30",
     "value9": "45",
@@ -14,10 +14,14 @@
     "value10": "60",
     "value12": "120",
     "type": "gamesettings",
-    "label": "#menu/x_seconds",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
     "name": "capture_time",
-    "displayname": "#menu/capture_time",
-    "label1": "#menu/1_second",
+    "displayname": "localized17#menu/capture_time",
+    "label1": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
     "optionscount": 12,
-    "setting": "captureTime"
+    "hash_765cfd09": 0,
+    "setting": "captureTime",
+    "isenableddisabled": 0
 }

@@ -4,39 +4,39 @@
             "hash_82670522": "stats_cluster_semtex_kill",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_2081ec2c640adfa7"
+            "displaystatname": "localized17#hash_2081ec2c640adfa7"
         },
         {
             "hash_82670522": "stats_destructions",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_6e9b6273deed6aee"
+            "displaystatname": "localized17#hash_6e9b6273deed6aee"
         },
         {
             "stattype": "objectiveekia",
             "hash_26568428": 1,
-            "displaystatname": "#hash_5d1ab6f5e0227795"
+            "displaystatname": "localized17#hash_5d1ab6f5e0227795"
         },
         {
             "hash_82670522": "stats_shutdowns",
             "stattype": "playerstatslist",
             "hash_26568428": 1,
-            "displaystatname": "#hash_158193577a14c86e"
+            "displaystatname": "localized17#hash_158193577a14c86e"
         },
         {
             "stattype": "damagedone",
             "hash_26568428": 1,
-            "displaystatname": "#hash_5418827f408e5ca2"
+            "displaystatname": "localized17#hash_5418827f408e5ca2"
         },
         {
             "stattype": "objectivetime",
             "hash_26568428": 1,
-            "displaystatname": "#hash_646cc2b52d248258"
+            "displaystatname": "localized17#hash_646cc2b52d248258"
         }
     ],
     "hash_447510ee": "prt_mp_battery",
-    "defaultimage": "#ui_icon_hvo_base",
-    "cardname": "#hash_60a46bec57f49d08",
+    "defaultimage": "image#ui_icon_hvo_base",
+    "cardname": "localized17#hash_60a46bec57f49d08",
     "name": "grenadier_koth_hvo",
     "associatedgamemode": "koth"
 }

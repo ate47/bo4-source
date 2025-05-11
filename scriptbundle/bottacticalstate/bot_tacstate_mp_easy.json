@@ -58,6 +58,7 @@
             "name": "#scan_for_threats"
         }
     ],
+    "hash_6ef48dfa": 0,
     "hash_a78526b8": "j_spineupper",
     "hash_48aa05a1": 400,
     "hash_1f5429aa": 200,
@@ -77,6 +78,7 @@
     "pitchacceleration": 7.5,
     "hash_b9f05fc": 0.6,
     "hash_c850085f": 1.2,
+    "movingads": 0,
     "hash_d5bf8f0d": 0.85,
     "hash_25664dde": 1000,
     "pitchsensitivity": 0.6,
@@ -89,17 +91,21 @@
     "name": "bot_tacstate_mp_easy",
     "hash_82aa37d8": 4500,
     "meleechance": 0.05,
+    "headshotchance": 0,
     "highlyawareradius": 64,
     "perfectaim": 1,
     "maxsightdist": 16384,
     "fov": 120,
     "adsdot": 0.8,
+    "pacifist": 0,
     "maxrange": 5000,
     "hash_2b02e26a": 10,
     "hash_b392418": 0.1,
     "hash_f58a14bd": 0.8,
     "hash_69610dbe": 20,
+    "pathenemyfightdist": 0,
     "hash_5eaa9e02": 1,
     "hash_bc0b2a06": 3,
-    "accuracy": 1
+    "accuracy": 1,
+    "hash_d1fb2f1a": 0
 }

@@ -2,23 +2,27 @@
     "itemlist": [
         {
             "minweight": 200,
-            "itementry": "tr_longburst_t8_item",
-            "childitementry_1": "ammo_type_556_item",
+            "itementry": "scriptbundle&tr_longburst_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
             "maxweight": 300,
             "available": -1
         },
         {
             "minweight": 200,
-            "itementry": "tr_powersemi_t8_item",
-            "childitementry_1": "ammo_type_762_item",
+            "itementry": "scriptbundle&tr_powersemi_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
             "maxweight": 300,
             "available": -1
         }
     ],
+    "hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
     "hash_345eba59": 2,
+    "vehiclespawner": 0,
     "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
     "name": "floor_list_tr",
-    "supplystashweight": 100
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
 }

@@ -1,8 +1,8 @@
 {
-    "popupimage": "#ui_icon_blackmarket_reserves_case_large",
-    "nametext": "#hash_d004f2913090a",
-    "categorytext": "#hash_d004f2913090a",
+    "popupimage": "image#ui_icon_blackmarket_reserves_case_large",
+    "nametext": "localized17#hash_d004f2913090a",
+    "categorytext": "localized17#hash_d004f2913090a",
     "name": "case",
-    "desctext": "#hash_4a5115be25660aba",
-    "previewimage": "#ui_icon_blackmarket_reserves_case_small"
+    "desctext": "localized17#hash_4a5115be25660aba",
+    "previewimage": "image#ui_icon_blackmarket_reserves_case_small"
 }

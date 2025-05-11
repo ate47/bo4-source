@@ -1,8 +1,8 @@
 {
     "objects": [
         {
-            "mainanim": "#ai_zm_dlc1_zombie_talonspike_loop",
-            "model": "#hash_9a82e835c65908e",
+            "mainanim": "anim4#ai_zm_dlc1_zombie_talonspike_loop",
+            "model": "model#hash_9a82e835c65908e",
             "type": "actor",
             "vmtype": "server",
             "name": "zombie",

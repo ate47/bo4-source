@@ -1,10 +1,10 @@
 {
     "lootid": "#hash_3c404d5b5f400ae8",
-    "hash_904b37bc": "#hash_5118540eadec391b",
+    "hash_904b37bc": "impact_fx_table#hash_5118540eadec391b",
     "image": "loot04_ui_icon_blackmarket_reserves_death_fx_anime",
     "name": "weapondeathfx_anime",
-    "displayname": "#hash_1da627ad12738759",
+    "displayname": "localized17#hash_1da627ad12738759",
     "icon": "loot04_ui_icon_cac_death_fx_anime",
-    "hash_eeb78b92": "#hash_3536c97d31da908f",
-    "previewimage": "#hash_2729ff672b4a4de3"
+    "hash_eeb78b92": "impact_fx_table#hash_3536c97d31da908f",
+    "previewimage": "image#hash_2729ff672b4a4de3"
 }

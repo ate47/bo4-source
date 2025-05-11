@@ -1,13 +1,17 @@
 {
-    "descriptionimage": "#hash_4883826ef2edae50",
+    "descriptionimage": "image#hash_4883826ef2edae50",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",
+    "hash_5a6dee5a": 0,
     "name": "scorestreak_remote_missile_restriction",
-    "displayname": "#killstreak/remote_missile",
-    "label1": "#menu/enabled",
-    "label2": "#menu/disabled",
+    "displayname": "localized17#killstreak/remote_missile",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
     "optionscount": 2,
-    "setting": "itemRestrictions__remote_missile__restricted"
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__remote_missile__restricted",
+    "isenableddisabled": 0
 }

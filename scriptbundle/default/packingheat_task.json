@@ -1,8 +1,8 @@
 {
     "callingtask": "#repacked_kills",
     "configstringfiletype": "scriptbundle",
-    "image": "#zm_calling_tasks_killsrepacked",
+    "image": "image#zm_calling_tasks_killsrepacked",
     "name": "packingheat_task",
-    "taskname": "#hash_757868a69a92efa7",
-    "descsimple": "#hash_bd4929f227caa4e"
+    "taskname": "localized17#hash_757868a69a92efa7",
+    "descsimple": "localized17#hash_bd4929f227caa4e"
 }

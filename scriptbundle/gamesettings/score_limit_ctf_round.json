@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_5bd8c7de74bf69b5",
+    "hinttext": "localized17#hash_5bd8c7de74bf69b5",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "3",
@@ -9,11 +9,15 @@
     "value4": "5",
     "value5": "10",
     "type": "gamesettings",
-    "label": "#menu/x_flags",
+    "label": "localized17#menu/x_flags",
+    "hash_5a6dee5a": 0,
     "name": "score_limit_ctf_round",
-    "displayname": "#menu/capture_limit",
-    "label1": "#menu/unlimited",
-    "label2": "#menu/1_flag",
+    "displayname": "localized17#menu/capture_limit",
+    "label1": "localized17#menu/unlimited",
+    "label2": "localized17#menu/1_flag",
+    "hash_54e336e4": 0,
     "optionscount": 7,
-    "setting": "scoreLimit"
+    "hash_765cfd09": 0,
+    "setting": "scoreLimit",
+    "isenableddisabled": 0
 }
