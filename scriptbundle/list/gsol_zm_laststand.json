@@ -1,0 +1,11 @@
+{
+    "name": "#gsol_zm_laststand",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_laststandduration",
+        "#gamesettings/#zm_laststandcount",
+        "#gamesettings/#zm_selfrevivecount",
+        "#gamesettings/#zm_retainweapons",
+        "#gamesettings/#zm_perkdecay"
+    ]
+}

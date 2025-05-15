@@ -1,0 +1,31 @@
+{
+    "name": "#meansofdeathlist",
+    "type": "meansofdeath",
+    "bundles": [
+        "#meansofdeath/#mod_unknown",
+        "#meansofdeath/#mod_crush",
+        "#meansofdeath/#mod_falling",
+        "#meansofdeath/#mod_head_shot",
+        "#meansofdeath/#mod_hit_by_object",
+        "#meansofdeath/#mod_impact",
+        "#meansofdeath/#mod_melee",
+        "#meansofdeath/#mod_melee_assassinate",
+        "#meansofdeath/#mod_melee_weapon_butt",
+        "#meansofdeath/#mod_suicide",
+        "#meansofdeath/#mod_death_circle",
+        "#meansofdeath/#mod_explosive",
+        "#meansofdeath/#mod_aat",
+        "#meansofdeath/#mod_burned",
+        "#meansofdeath/#mod_dot",
+        "#meansofdeath/#mod_dot_self",
+        "#meansofdeath/#mod_drown",
+        "#meansofdeath/#mod_electrocuted",
+        "#meansofdeath/#mod_gas",
+        "#meansofdeath/#mod_meta",
+        "#meansofdeath/#mod_post_game",
+        "#meansofdeath/#mod_telefrag",
+        "#meansofdeath/#mod_trigger_hurt",
+        "#meansofdeath/#mod_downed",
+        "#meansofdeath/#mod_bled_out"
+    ]
+}

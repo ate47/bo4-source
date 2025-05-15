@@ -1,0 +1,8 @@
+{
+    "name": "#hash_7d70f9460a59270f",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#scope_pistolscope_pistol_revolver_restriction",
+        "#gamesettings/#scope_pistolscope_smg_fastburst_restriction"
+    ]
+}

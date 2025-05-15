@@ -1,0 +1,10 @@
+{
+    "name": "#hash_4370b20c0081d744",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#scope_is_sniper_fastrechamber_restriction",
+        "#gamesettings/#scope_is_sniper_powerbolt_restriction",
+        "#gamesettings/#scope_is_sniper_powersemi_restriction",
+        "#gamesettings/#scope_is_sniper_quickscope_restriction"
+    ]
+}

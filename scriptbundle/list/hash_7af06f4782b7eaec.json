@@ -1,0 +1,14 @@
+{
+    "name": "#hash_7af06f4782b7eaec",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#pistol_standard_restriction",
+        "#gamesettings/#pistol_burst_restriction",
+        "#gamesettings/#pistol_revolver_restriction",
+        "#gamesettings/#shotgun_pump_restriction",
+        "#gamesettings/#shotgun_semiauto_restriction",
+        "#gamesettings/#launcher_standard_restriction",
+        "#gamesettings/#knife_loadout_restriction",
+        "#gamesettings/#melee_secretsanta_restriction"
+    ]
+}

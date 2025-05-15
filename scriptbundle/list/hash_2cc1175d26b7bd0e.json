@@ -1,0 +1,20 @@
+{
+    "name": "#hash_2cc1175d26b7bd0e",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_stalker_ar_fastfire_restriction",
+        "#gamesettings/#attachment_stalker_ar_modular_restriction",
+        "#gamesettings/#attachment_stalker_ar_standard_restriction",
+        "#gamesettings/#attachment_stalker_ar_stealth_restriction",
+        "#gamesettings/#attachment_stalker_lmg_standard_restriction",
+        "#gamesettings/#attachment_stalker_pistol_fullauto_restriction",
+        "#gamesettings/#attachment_stalker_pistol_revolver_restriction",
+        "#gamesettings/#attachment_stalker_shotgun_pump_restriction",
+        "#gamesettings/#attachment_stalker_smg_fastfire_restriction",
+        "#gamesettings/#attachment_stalker_smg_handling_restriction",
+        "#gamesettings/#attachment_stalker_smg_standard_restriction",
+        "#gamesettings/#attachment_stalker_sniper_fastrechamber_restriction",
+        "#gamesettings/#attachment_stalker_sniper_quickscope_restriction",
+        "#gamesettings/#attachment_stalker_tr_midburst_restriction"
+    ]
+}

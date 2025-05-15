@@ -1,0 +1,15 @@
+{
+    "name": "#gsol_zm_general",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_startround",
+        "#gamesettings/#zm_roundcap",
+        "#gamesettings/#zm_timecap",
+        "#gamesettings/#zm_showtimer",
+        "#gamesettings/#zm_killcap",
+        "#gamesettings/#zm_specialrounds",
+        "#gamesettings/#zm_trapsenabled",
+        "#gamesettings/#zm_allowstartingweapon",
+        "#gamesettings/#zm_headshots"
+    ]
+}

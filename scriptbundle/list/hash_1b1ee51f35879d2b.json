@@ -1,0 +1,22 @@
+{
+    "name": "#hash_1b1ee51f35879d2b",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_quickdraw_ar_accurate_restriction",
+        "#gamesettings/#attachment_quickdraw_ar_fastfire_restriction",
+        "#gamesettings/#attachment_quickdraw_ar_modular_restriction",
+        "#gamesettings/#attachment_quickdraw_ar_standard_restriction",
+        "#gamesettings/#attachment_quickdraw_lmg_heavy_restriction",
+        "#gamesettings/#attachment_quickdraw_lmg_standard_restriction",
+        "#gamesettings/#attachment_quickdraw_pistol_revolver_restriction",
+        "#gamesettings/#attachment_quickdraw_pistol_standard_restriction",
+        "#gamesettings/#attachment_quickdraw_shotgun_pump_restriction",
+        "#gamesettings/#attachment_quickdraw_smg_accurate_restriction",
+        "#gamesettings/#attachment_quickdraw_smg_fastfire_restriction",
+        "#gamesettings/#attachment_quickdraw_smg_handling_restriction",
+        "#gamesettings/#attachment_quickdraw_sniper_fastrechamber_restriction",
+        "#gamesettings/#attachment_quickdraw_sniper_quickscope_restriction",
+        "#gamesettings/#attachment_quickdraw_tr_longburst_restriction",
+        "#gamesettings/#attachment_quickdraw_tr_midburst_restriction"
+    ]
+}

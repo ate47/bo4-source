@@ -1,0 +1,8 @@
+{
+    "name": "#hash_5097be4943b698b6",
+    "type": "gamesettingoptioncategory",
+    "bundles": [
+        "#gamesettingoptioncategory/#gsoc_zm_basiczombies",
+        "#gamesettingoptioncategory/#gsoc_zm_specialzombies"
+    ]
+}

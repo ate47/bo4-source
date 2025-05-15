@@ -1,0 +1,17 @@
+{
+    "name": "#hash_28f26a8657ee4a50",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_rf_ar_modular_restriction",
+        "#gamesettings/#attachment_rf_ar_stealth_restriction",
+        "#gamesettings/#attachment_rf_lmg_heavy_restriction",
+        "#gamesettings/#attachment_rf_lmg_spray_restriction",
+        "#gamesettings/#attachment_rf_pistol_burst_restriction",
+        "#gamesettings/#attachment_rf_pistol_fullauto_restriction",
+        "#gamesettings/#attachment_rf_shotgun_pump_restriction",
+        "#gamesettings/#attachment_rf_smg_capacity_restriction",
+        "#gamesettings/#attachment_rf_smg_fastburst_restriction",
+        "#gamesettings/#attachment_rf_smg_standard_restriction",
+        "#gamesettings/#attachment_rf_sniper_fastrechamber_restriction"
+    ]
+}

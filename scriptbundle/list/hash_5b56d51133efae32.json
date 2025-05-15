@@ -1,0 +1,16 @@
+{
+    "name": "#hash_5b56d51133efae32",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#allow_ingame_team_change",
+        "#gamesettings/#allow_spectating",
+        "#gamesettings/#disable_third_person_spectating",
+        "#gamesettings/#allow_map_scripting",
+        "#gamesettings/#voip_killers_hear_victim",
+        "#gamesettings/#allow_battle_chatter",
+        "#allow_announcer",
+        "#gamesettings/#allow_play_of_the_match",
+        "#gamesettings/#allow_gestures",
+        "#gamesettings/#allow_gestures_camera_rotate"
+    ]
+}

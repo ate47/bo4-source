@@ -1,0 +1,7 @@
+{
+    "name": "#gsol_zm_wallbuys",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_wallbuys"
+    ]
+}

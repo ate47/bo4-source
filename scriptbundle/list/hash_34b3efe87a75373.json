@@ -1,0 +1,12 @@
+{
+    "name": "#hash_34b3efe87a75373",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#smg_accurate_restriction",
+        "#gamesettings/#smg_capacity_restriction",
+        "#gamesettings/#smg_fastburst_restriction",
+        "#gamesettings/#smg_fastfire_restriction",
+        "#gamesettings/#smg_handling_restriction",
+        "#gamesettings/#smg_standard_restriction"
+    ]
+}

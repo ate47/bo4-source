@@ -1,0 +1,17 @@
+{
+    "name": "#hash_19ed388e75adb17e",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#equipment_swatgrenade_restriction",
+        "#gamesettings/#equipment_sextemcluster_restriction",
+        "#gamesettings/#equipment_supplypod_restriction",
+        "#gamesettings/#equipment_reactorcore_restriction",
+        "#gamesettings/#equipment_tripwire_restriction",
+        "#gamesettings/#equipment_seekermine_restriction",
+        "#gamesettings/#equipment_sensordart_restriction",
+        "#gamesettings/#equipment_grapple_restriction",
+        "#gamesettings/#equipment_spawnbeacon_restriction",
+        "#gamesettings/#equipment_concertinawire_restriction",
+        "#gamesettings/#equipment_empgrenade_restriction"
+    ]
+}

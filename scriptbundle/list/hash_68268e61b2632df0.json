@@ -1,0 +1,9 @@
+{
+    "name": "#hash_68268e61b2632df0",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#draft_enabled",
+        "#gamesettings/#draft_time",
+        "#gamesettings/#draft_required_clients"
+    ]
+}

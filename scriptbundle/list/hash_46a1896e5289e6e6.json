@@ -1,0 +1,19 @@
+{
+    "name": "#hash_46a1896e5289e6e6",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#scope_acog_ar_accurate_restriction",
+        "#gamesettings/#scope_acog_ar_damage_restriction",
+        "#gamesettings/#scope_acog_ar_modular_restriction",
+        "#gamesettings/#scope_acog_ar_stealth_restriction",
+        "#gamesettings/#scope_acog_lmg_heavy_restriction",
+        "#gamesettings/#scope_acog_lmg_standard_restriction",
+        "#gamesettings/#scope_acog_smg_accurate_restriction",
+        "#gamesettings/#scope_acog_sniper_fastrechamber_restriction",
+        "#gamesettings/#scope_acog_sniper_powerbolt_restriction",
+        "#gamesettings/#scope_acog_sniper_quickscope_restriction",
+        "#gamesettings/#scope_acog_tr_longburst_restriction",
+        "#gamesettings/#scope_acog_tr_midburst_restriction",
+        "#gamesettings/#scope_acog_tr_powersemi_restriction"
+    ]
+}

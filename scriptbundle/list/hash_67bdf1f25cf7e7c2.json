@@ -1,0 +1,9 @@
+{
+    "name": "#hash_67bdf1f25cf7e7c2",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#lmg_heavy_restriction",
+        "#gamesettings/#lmg_spray_restriction",
+        "#gamesettings/#lmg_standard_restriction"
+    ]
+}

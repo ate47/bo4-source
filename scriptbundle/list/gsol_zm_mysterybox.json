@@ -1,0 +1,10 @@
+{
+    "name": "#gsol_zm_mysterybox",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_mysteryboxstate",
+        "#gamesettings/#zm_mysteryboxlimitmove",
+        "#gamesettings/#zm_mysteryboxlimit",
+        "#gamesettings/#zm_mysteryboxlimitrnd"
+    ]
+}

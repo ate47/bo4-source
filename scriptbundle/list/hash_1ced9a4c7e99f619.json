@@ -1,0 +1,12 @@
+{
+    "name": "#hash_1ced9a4c7e99f619",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_fmj2_ar_damage_restriction",
+        "#gamesettings/#attachment_fmj2_lmg_standard_restriction",
+        "#gamesettings/#attachment_fmj2_pistol_standard_restriction",
+        "#gamesettings/#attachment_fmj2_smg_capacity_restriction",
+        "#gamesettings/#attachment_fmj2_sniper_powerbolt_restriction",
+        "#gamesettings/#attachment_fmj2_tr_powersemi_restriction"
+    ]
+}

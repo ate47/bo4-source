@@ -1,0 +1,19 @@
+{
+    "name": "#hash_673d46d3e61c81e0",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#scope_elo_ar_fastfire_restriction",
+        "#gamesettings/#scope_elo_ar_modular_restriction",
+        "#gamesettings/#scope_elo_ar_stealth_restriction",
+        "#gamesettings/#scope_elo_lmg_spray_restriction",
+        "#gamesettings/#scope_elo_pistol_burst_restriction",
+        "#gamesettings/#scope_elo_shotgun_pump_restriction",
+        "#gamesettings/#scope_elo_smg_capacity_restriction",
+        "#gamesettings/#scope_elo_smg_fastburst_restriction",
+        "#gamesettings/#scope_elo_smg_fastfire_restriction",
+        "#gamesettings/#scope_elo_smg_handling_restriction",
+        "#gamesettings/#scope_elo_smg_standard_restriction",
+        "#gamesettings/#scope_elo_sniper_quickscope_restriction",
+        "#gamesettings/#scope_elo_tr_midburst_restriction"
+    ]
+}

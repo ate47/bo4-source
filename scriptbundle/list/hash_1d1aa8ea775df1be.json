@@ -1,0 +1,27 @@
+{
+    "name": "#hash_1d1aa8ea775df1be",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#operator_uber_restriction",
+        "#gamesettings/#operator_adsreload_restriction",
+        "#gamesettings/#operator_barrelchoke_restriction",
+        "#gamesettings/#operator_dw_restriction",
+        "#gamesettings/#operator_echofire_restriction",
+        "#gamesettings/#operator_bayonet_restriction",
+        "#gamesettings/#operator_fatbarrel_restriction",
+        "#gamesettings/#operator_crossbar_restriction",
+        "#gamesettings/#operator_oppressor_restriction",
+        "#gamesettings/#operator_skullsplitter_restriction",
+        "#gamesettings/#operator_stiletto_restriction",
+        "#gamesettings/#operator_dragonbreath_restriction",
+        "#gamesettings/#operator_strobelight_restriction",
+        "#gamesettings/#operator_quadshot_restriction",
+        "#gamesettings/#operator_beltfeed_restriction",
+        "#gamesettings/#operator_wildfire_restriction",
+        "#gamesettings/#operator_boltcylinder_restriction",
+        "#gamesettings/#operator_strelok_restriction",
+        "#gamesettings/#operator_pentaburst_restriction",
+        "#gamesettings/#operator_repeater_restriction",
+        "#gamesettings/#operator_doubletap_restriction"
+    ]
+}

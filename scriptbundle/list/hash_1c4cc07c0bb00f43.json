@@ -1,0 +1,19 @@
+{
+    "name": "#hash_1c4cc07c0bb00f43",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_fastreload_ar_damage_restriction",
+        "#gamesettings/#attachment_fastreload_ar_fastfire_restriction",
+        "#gamesettings/#attachment_fastreload_ar_standard_restriction",
+        "#gamesettings/#attachment_fastreload_ar_stealth_restriction",
+        "#gamesettings/#attachment_fastreload_launcher_standard_restriction",
+        "#gamesettings/#attachment_fastreload_lmg_heavy_restriction",
+        "#gamesettings/#attachment_fastreload_pistol_fullauto_restriction",
+        "#gamesettings/#attachment_fastreload_shotgun_pump_restriction",
+        "#gamesettings/#attachment_fastreload_smg_fastburst_restriction",
+        "#gamesettings/#attachment_fastreload_smg_fastfire_restriction",
+        "#gamesettings/#attachment_fastreload_smg_handling_restriction",
+        "#gamesettings/#attachment_fastreload_sniper_quickscope_restriction",
+        "#gamesettings/#attachment_fastreload_tr_powersemi_restriction"
+    ]
+}

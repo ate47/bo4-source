@@ -1,0 +1,12 @@
+{
+    "name": "#hash_76fb5372632dfe7",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#ar_accurate_restriction",
+        "#gamesettings/#ar_damage_restriction",
+        "#gamesettings/#ar_fastfire_restriction",
+        "#gamesettings/#ar_modular_restriction",
+        "#gamesettings/#ar_standard_restriction",
+        "#gamesettings/#ar_stealth_restriction"
+    ]
+}

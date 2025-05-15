@@ -1,0 +1,10 @@
+{
+    "name": "#hash_732effd14f3041b5",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_stabilizer_pistol_revolver_restriction",
+        "#gamesettings/#attachment_stabilizer_sniper_fastrechamber_restriction",
+        "#gamesettings/#attachment_stabilizer_sniper_powerbolt_restriction",
+        "#gamesettings/#attachment_stabilizer_sniper_powersemi_restriction"
+    ]
+}

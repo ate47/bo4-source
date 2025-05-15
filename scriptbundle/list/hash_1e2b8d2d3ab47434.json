@@ -1,0 +1,14 @@
+{
+    "name": "#hash_1e2b8d2d3ab47434",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#player_num_lives",
+        "#gamesettings/#player_respawn_delay",
+        "#gamesettings/#player_force_respawn",
+        "#gamesettings/#wave_respawn_delay",
+        "#gamesettings/#spawn_suicide_penalty",
+        "#gamesettings/#spawn_teamkilled_penalty",
+        "#gamesettings/#spawn_select",
+        "#gamesettings/#team_num_lives"
+    ]
+}

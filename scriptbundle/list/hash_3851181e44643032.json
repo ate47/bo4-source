@@ -1,0 +1,11 @@
+{
+    "name": "#hash_3851181e44643032",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#equipment_trophysystem_restriction",
+        "#gamesettings/#equipment_combataxe_restriction",
+        "#gamesettings/#equipment_fraggrenade_restriction",
+        "#gamesettings/#equipment_molotov_restriction",
+        "#gamesettings/#equipment_concussion_restriction"
+    ]
+}

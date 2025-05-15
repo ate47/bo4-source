@@ -1,0 +1,22 @@
+{
+    "name": "#hash_a8f031f7c7b2ed8",
+    "type": "weapondeathfx",
+    "bundles": [
+        "#weapondeathfx_default",
+        "#weapondeathfx_money",
+        "#weapondeathfx_fireworks",
+        "#weapondeathfx_confetti",
+        "#weapondeathfx_rainbow",
+        "#weapondeathfx_soul",
+        "#weapondeathfx_stuffing",
+        "#weapondeathfx_raven",
+        "#weapondeathfx_blackhole",
+        "#weapondeathfx_lava",
+        "#weapondeathfx_water",
+        "#weapondeathfx_anime",
+        "#weapondeathfx_comic",
+        "#weapondeathfx_electric",
+        "#weapondeathfx_ice",
+        "#weapondeathfx_nature"
+    ]
+}

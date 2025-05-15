@@ -1,0 +1,29 @@
+{
+    "name": "#hash_5872caa86a2cbb62",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#scope_reflex_ar_accurate_restriction",
+        "#gamesettings/#scope_reflex_ar_damage_restriction",
+        "#gamesettings/#scope_reflex_ar_fastfire_restriction",
+        "#gamesettings/#scope_reflex_ar_modular_restriction",
+        "#gamesettings/#scope_reflex_ar_standard_restriction",
+        "#gamesettings/#scope_reflex_ar_stealth_restriction",
+        "#gamesettings/#scope_reflex_lmg_heavy_restriction",
+        "#gamesettings/#scope_reflex_lmg_spray_restriction",
+        "#gamesettings/#scope_reflex_lmg_standard_restriction",
+        "#gamesettings/#scope_reflex_pistol_burst_restriction",
+        "#gamesettings/#scope_reflex_pistol_fullauto_restriction",
+        "#gamesettings/#scope_reflex_pistol_standard_restriction",
+        "#gamesettings/#scope_reflex_shotgun_semiauto_restriction",
+        "#gamesettings/#scope_reflex_smg_accurate_restriction",
+        "#gamesettings/#scope_reflex_smg_capacity_restriction",
+        "#gamesettings/#scope_reflex_smg_fastburst_restriction",
+        "#gamesettings/#scope_reflex_smg_fastfire_restriction",
+        "#gamesettings/#scope_reflex_smg_handling_restriction",
+        "#gamesettings/#scope_reflex_smg_standard_restriction",
+        "#gamesettings/#scope_reflex_sniper_fastrechamber_restriction",
+        "#gamesettings/#scope_reflex_tr_longburst_restriction",
+        "#gamesettings/#scope_reflex_tr_midburst_restriction",
+        "#gamesettings/#scope_reflex_tr_powersemi_restriction"
+    ]
+}

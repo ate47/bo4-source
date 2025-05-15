@@ -1,0 +1,8 @@
+{
+    "name": "#hash_341f5dbfef6844a6",
+    "type": "lobbymenu",
+    "bundles": [
+        "#director_online",
+        "#director_online_theater"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "#hash_3853570f56380ca9",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_damage_ar_damage_restriction",
+        "#gamesettings/#attachment_damage_ar_standard_restriction",
+        "#gamesettings/#attachment_damage_ar_stealth_restriction",
+        "#gamesettings/#attachment_damage_launcher_standard_restriction",
+        "#gamesettings/#attachment_damage_lmg_heavy_restriction",
+        "#gamesettings/#attachment_damage_pistol_fullauto_restriction",
+        "#gamesettings/#attachment_damage_pistol_revolver_restriction",
+        "#gamesettings/#attachment_damage_smg_fastburst_restriction",
+        "#gamesettings/#attachment_damage_smg_standard_restriction",
+        "#gamesettings/#attachment_damage_sniper_fastrechamber_restriction",
+        "#gamesettings/#attachment_damage_sniper_powerbolt_restriction",
+        "#gamesettings/#attachment_damage_sniper_powersemi_restriction",
+        "#gamesettings/#attachment_damage_sniper_quickscope_restriction",
+        "#gamesettings/#attachment_damage_tr_longburst_restriction",
+        "#gamesettings/#attachment_damage_tr_powersemi_restriction"
+    ]
+}

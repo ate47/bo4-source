@@ -1,0 +1,8 @@
+{
+    "name": "#hash_736329a7175cedfa",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#disable_cac",
+        "#gamesettings/#max_allocation"
+    ]
+}

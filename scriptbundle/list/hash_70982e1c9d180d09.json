@@ -1,0 +1,14 @@
+{
+    "name": "#hash_70982e1c9d180d09",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#prematch_period",
+        "#gamesettings/#preround_period",
+        "#gamesettings/#force_radar",
+        "#gamesettings/#round_start_explosive_delay",
+        "#gamesettings/#allow_killcam",
+        "#gamesettings/#round_start_killstreak_delay",
+        "#gamesettings/#kill_event_score_multiplier",
+        "#gamesettings/#fow_reveal_enabled"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "#hash_4d8830abbbd692d3",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_steadyaim2_ar_fastfire_restriction",
+        "#gamesettings/#attachment_steadyaim2_lmg_spray_restriction",
+        "#gamesettings/#attachment_steadyaim2_pistol_burst_restriction",
+        "#gamesettings/#attachment_steadyaim2_shotgun_semiauto_restriction",
+        "#gamesettings/#attachment_steadyaim2_smg_fastfire_restriction",
+        "#gamesettings/#attachment_steadyaim2_sniper_quickscope_restriction",
+        "#gamesettings/#attachment_steadyaim2_tr_midburst_restriction"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "#hash_7aaf36052a208e4d",
+    "type": "playersettingoption",
+    "bundles": [
+        "#codcaster_ds_overhead_name_allies",
+        "#codcaster_ds_overhead_name_enemies",
+        "#codcaster_ds_overhead_health_allies",
+        "#codcaster_ds_overhead_health_enemies"
+    ]
+}

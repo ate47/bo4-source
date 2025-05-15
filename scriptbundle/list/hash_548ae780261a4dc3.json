@@ -1,0 +1,11 @@
+{
+    "name": "#hash_548ae780261a4dc3",
+    "type": "gamesettingoptioncategory",
+    "bundles": [
+        "#gamesettingoptioncategory/#gsoc_zm_standardweapons",
+        "#gamesettingoptioncategory/#gsoc_zm_specialweapons",
+        "#gamesettingoptioncategory/#gsoc_zm_wonderweapons",
+        "#gamesettingoptioncategory/#gsoc_zm_equipment",
+        "#gamesettingoptioncategory/#gsoc_zm_shield"
+    ]
+}

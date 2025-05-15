@@ -1,0 +1,18 @@
+{
+    "name": "#hash_74a28a895c252dd4",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_grip_ar_accurate_restriction",
+        "#gamesettings/#attachment_grip_ar_damage_restriction",
+        "#gamesettings/#attachment_grip_ar_modular_restriction",
+        "#gamesettings/#attachment_grip_lmg_heavy_restriction",
+        "#gamesettings/#attachment_grip_pistol_burst_restriction",
+        "#gamesettings/#attachment_grip_pistol_fullauto_restriction",
+        "#gamesettings/#attachment_grip_smg_accurate_restriction",
+        "#gamesettings/#attachment_grip_smg_capacity_restriction",
+        "#gamesettings/#attachment_grip_smg_handling_restriction",
+        "#gamesettings/#attachment_grip_sniper_fastrechamber_restriction",
+        "#gamesettings/#attachment_grip_sniper_powersemi_restriction",
+        "#gamesettings/#attachment_grip_tr_midburst_restriction"
+    ]
+}

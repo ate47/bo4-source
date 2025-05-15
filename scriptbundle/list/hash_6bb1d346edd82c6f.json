@@ -1,0 +1,11 @@
+{
+    "name": "#hash_6bb1d346edd82c6f",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#wc_underkill_restriction",
+        "#gamesettings/#wc_secondarygunfighter1_restriction",
+        "#gamesettings/#wc_secondarygunfighter2_restriction",
+        "#gamesettings/#wc_secondarygunfighter3_restriction",
+        "#gamesettings/#wc_secondaryoperatormod_restriction"
+    ]
+}

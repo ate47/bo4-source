@@ -1,0 +1,8 @@
+{
+    "name": "#gsol_zm_barricades",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_doorstate",
+        "#gamesettings/#zm_barricadestate"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "name": "#hash_2037960375278ef0",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#scope_holo_ar_accurate_restriction",
+        "#gamesettings/#scope_holo_ar_damage_restriction",
+        "#gamesettings/#scope_holo_ar_fastfire_restriction",
+        "#gamesettings/#scope_holo_ar_modular_restriction",
+        "#gamesettings/#scope_holo_ar_standard_restriction",
+        "#gamesettings/#scope_holo_lmg_heavy_restriction",
+        "#gamesettings/#scope_holo_lmg_spray_restriction",
+        "#gamesettings/#scope_holo_lmg_standard_restriction",
+        "#gamesettings/#scope_holo_smg_capacity_restriction",
+        "#gamesettings/#scope_holo_smg_fastburst_restriction",
+        "#gamesettings/#scope_holo_smg_fastfire_restriction",
+        "#gamesettings/#scope_holo_smg_handling_restriction",
+        "#gamesettings/#scope_holo_smg_standard_restriction",
+        "#gamesettings/#scope_holo_sniper_powerbolt_restriction",
+        "#gamesettings/#scope_holo_sniper_powersemi_restriction",
+        "#gamesettings/#scope_holo_tr_longburst_restriction",
+        "#gamesettings/#scope_holo_tr_midburst_restriction",
+        "#gamesettings/#scope_holo_tr_powersemi_restriction"
+    ]
+}

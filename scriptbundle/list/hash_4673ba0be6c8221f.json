@@ -1,0 +1,18 @@
+{
+    "name": "#hash_4673ba0be6c8221f",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_extclip_ar_modular_restriction",
+        "#gamesettings/#attachment_extclip_ar_standard_restriction",
+        "#gamesettings/#attachment_extclip_lmg_heavy_restriction",
+        "#gamesettings/#attachment_extclip_lmg_standard_restriction",
+        "#gamesettings/#attachment_extclip_pistol_burst_restriction",
+        "#gamesettings/#attachment_extclip_pistol_standard_restriction",
+        "#gamesettings/#attachment_extclip_shotgun_semiauto_restriction",
+        "#gamesettings/#attachment_extclip_smg_accurate_restriction",
+        "#gamesettings/#attachment_extclip_smg_capacity_restriction",
+        "#gamesettings/#attachment_extclip_smg_fastfire_restriction",
+        "#gamesettings/#attachment_extclip_sniper_powersemi_restriction",
+        "#gamesettings/#attachment_extclip_tr_midburst_restriction"
+    ]
+}

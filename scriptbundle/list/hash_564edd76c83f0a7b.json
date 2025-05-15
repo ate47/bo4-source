@@ -1,0 +1,8 @@
+{
+    "name": "#hash_564edd76c83f0a7b",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_speedreloader_pistol_revolver_restriction",
+        "#gamesettings/#attachment_speedreloader_shotgun_pump_restriction"
+    ]
+}

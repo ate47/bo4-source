@@ -1,0 +1,10 @@
+{
+    "name": "#hash_7ca7d90a41c4a251",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_extclip2_lmg_standard_restriction",
+        "#gamesettings/#attachment_extclip2_pistol_burst_restriction",
+        "#gamesettings/#attachment_extclip2_shotgun_semiauto_restriction",
+        "#gamesettings/#attachment_extclip2_sniper_powersemi_restriction"
+    ]
+}

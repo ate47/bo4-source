@@ -1,0 +1,21 @@
+{
+    "name": "#hash_7f49631bb8925fd9",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#scorestreak_ac130_restriction",
+        "#gamesettings/#scorestreak_ai_tank_marker_restriction",
+        "#gamesettings/#scorestreak_counteruav_restriction",
+        "#gamesettings/#scorestreak_dart_restriction",
+        "#gamesettings/#scorestreak_drone_squadron_restriction",
+        "#gamesettings/#scorestreak_helicopter_comlink_restriction",
+        "#gamesettings/#scorestreak_overwatch_snipers_restriction",
+        "#gamesettings/#scorestreak_planemortar_restriction",
+        "#gamesettings/#scorestreak_recon_car_restriction",
+        "#gamesettings/#scorestreak_remote_missile_restriction",
+        "#gamesettings/#scorestreak_straferun_restriction",
+        "#gamesettings/#scorestreak_strike_team_restriction",
+        "#gamesettings/#scorestreak_supplydrop_restriction",
+        "#gamesettings/#scorestreak_uav_restriction",
+        "#gamesettings/#scorestreak_ultimate_turret_restriction"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "name": "#hash_30157c260765cc9b",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#mp_player_max_health",
+        "#specialist_healing_enabled",
+        "#gamesettings/#heal_speed",
+        "#gamesettings/#mp_friendly_fire_type",
+        "#gamesettings/#mp_teamkill_punish_count",
+        "#gamesettings/#mp_only_headshots",
+        "#gamesettings/#allow_hit_markers",
+        "#gamesettings/#mp_competitive_settings"
+    ]
+}

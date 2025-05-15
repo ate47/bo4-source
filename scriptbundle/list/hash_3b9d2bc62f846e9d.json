@@ -1,0 +1,18 @@
+{
+    "name": "#hash_3b9d2bc62f846e9d",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#scope_dualoptic_ar_accurate_restriction",
+        "#gamesettings/#scope_dualoptic_ar_damage_restriction",
+        "#gamesettings/#scope_dualoptic_ar_fastfire_restriction",
+        "#gamesettings/#scope_dualoptic_lmg_heavy_restriction",
+        "#gamesettings/#scope_dualoptic_lmg_spray_restriction",
+        "#gamesettings/#scope_dualoptic_lmg_standard_restriction",
+        "#gamesettings/#scope_dualoptic_smg_accurate_restriction",
+        "#gamesettings/#scope_dualoptic_smg_fastfire_restriction",
+        "#gamesettings/#scope_dualoptic_sniper_powerbolt_restriction",
+        "#gamesettings/#scope_dualoptic_sniper_powersemi_restriction",
+        "#gamesettings/#scope_dualoptic_tr_longburst_restriction",
+        "#gamesettings/#scope_dualoptic_tr_powersemi_restriction"
+    ]
+}

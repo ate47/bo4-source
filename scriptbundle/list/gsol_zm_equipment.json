@@ -1,0 +1,8 @@
+{
+    "name": "#gsol_zm_equipment",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_equipment",
+        "#gamesettings/#zm_equipcharge"
+    ]
+}

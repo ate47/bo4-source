@@ -1,0 +1,9 @@
+{
+    "name": "#hash_4ebdf9662ac3257b",
+    "type": "gamesettingoptioncategory",
+    "bundles": [
+        "#gamesettingoptioncategory/#gsoc_zm_health",
+        "#gamesettingoptioncategory/#gsoc_zm_points",
+        "#gamesettingoptioncategory/#gsoc_zm_laststand"
+    ]
+}

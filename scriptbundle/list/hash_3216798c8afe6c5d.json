@@ -1,0 +1,12 @@
+{
+    "name": "#hash_3216798c8afe6c5d",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#wc_perk1gluttony_restriction",
+        "#gamesettings/#wc_perk1greed_restriction",
+        "#gamesettings/#wc_perk2gluttony_restriction",
+        "#gamesettings/#wc_perk2greed_restriction",
+        "#gamesettings/#wc_perk3gluttony_restriction",
+        "#gamesettings/#wc_perk3greed_restriction"
+    ]
+}

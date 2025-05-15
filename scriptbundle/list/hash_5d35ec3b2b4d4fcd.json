@@ -1,0 +1,10 @@
+{
+    "name": "#hash_5d35ec3b2b4d4fcd",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#perk_scavenger_restriction",
+        "#gamesettings/#perk_engineer_restriction",
+        "#gamesettings/#perk_flakjacket_restriction",
+        "#gamesettings/#perk_resistance_restriction"
+    ]
+}

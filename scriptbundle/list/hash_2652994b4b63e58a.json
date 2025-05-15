@@ -1,0 +1,13 @@
+{
+    "name": "#hash_2652994b4b63e58a",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_mixclip_ar_modular_restriction",
+        "#gamesettings/#attachment_mixclip_lmg_spray_restriction",
+        "#gamesettings/#attachment_mixclip_pistol_fullauto_restriction",
+        "#gamesettings/#attachment_mixclip_smg_fastburst_restriction",
+        "#gamesettings/#attachment_mixclip_smg_standard_restriction",
+        "#gamesettings/#attachment_mixclip_sniper_fastrechamber_restriction",
+        "#gamesettings/#attachment_mixclip_tr_longburst_restriction"
+    ]
+}

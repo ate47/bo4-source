@@ -1,0 +1,17 @@
+{
+    "name": "#hash_696b18e6f5fc6c9",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#ability_sig_buckler_dw_restriction",
+        "#gamesettings/#ability_smart_cover_restriction",
+        "#gamesettings/#ability_annihilator_restriction",
+        "#gamesettings/#ability_flamethrower_restriction",
+        "#gamesettings/#ability_pineapplegun_restriction",
+        "#gamesettings/#ability_lightninggun_restriction",
+        "#gamesettings/#ability_dog_restriction",
+        "#gamesettings/#ability_gravityslam_restriction",
+        "#gamesettings/#ability_cleanse_restriction",
+        "#gamesettings/#ability_vision_pulse_restriction",
+        "#gamesettings/#ability_ice_pick_restriction"
+    ]
+}

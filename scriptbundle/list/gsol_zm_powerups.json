@@ -1,0 +1,18 @@
+{
+    "name": "#gsol_zm_powerups",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_powerups",
+        "#gamesettings/#zm_powerupfrequency",
+        "#gamesettings/#zm_powerupsislimited",
+        "#gamesettings/#zm_poweruplimit",
+        "#gamesettings/#zm_powerups2x",
+        "#gamesettings/#zm_powerupscarpenter",
+        "#gamesettings/#zm_powerupschaos",
+        "#gamesettings/#zm_powerupsfiresale",
+        "#gamesettings/#zm_powerupsinsta",
+        "#gamesettings/#zm_powerupsmaxammo",
+        "#gamesettings/#zm_powerupsnuke",
+        "#gamesettings/#zm_powerupsspecweap"
+    ]
+}

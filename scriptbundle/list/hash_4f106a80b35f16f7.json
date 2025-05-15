@@ -1,0 +1,21 @@
+{
+    "name": "#hash_4f106a80b35f16f7",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_fmj_ar_accurate_restriction",
+        "#gamesettings/#attachment_fmj_ar_damage_restriction",
+        "#gamesettings/#attachment_fmj_ar_standard_restriction",
+        "#gamesettings/#attachment_fmj_lmg_spray_restriction",
+        "#gamesettings/#attachment_fmj_lmg_standard_restriction",
+        "#gamesettings/#attachment_fmj_pistol_fullauto_restriction",
+        "#gamesettings/#attachment_fmj_pistol_standard_restriction",
+        "#gamesettings/#attachment_fmj_smg_capacity_restriction",
+        "#gamesettings/#attachment_fmj_smg_fastfire_restriction",
+        "#gamesettings/#attachment_fmj_smg_standard_restriction",
+        "#gamesettings/#attachment_fmj_sniper_powerbolt_restriction",
+        "#gamesettings/#attachment_fmj_sniper_powersemi_restriction",
+        "#gamesettings/#attachment_fmj_sniper_quickscope_restriction",
+        "#gamesettings/#attachment_fmj_tr_longburst_restriction",
+        "#gamesettings/#attachment_fmj_tr_powersemi_restriction"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "#gsol_zm_health",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_healthstarting",
+        "#gamesettings/#zm_healthregendelay",
+        "#gamesettings/#zm_healthregenrate",
+        "#gamesettings/#zm_healthonkill",
+        "#gamesettings/#zm_healthdrain",
+        "#gamesettings/#zm_friendly_fire_type"
+    ]
+}

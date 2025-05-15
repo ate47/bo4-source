@@ -1,0 +1,8 @@
+{
+    "name": "#gsol_zm_power",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_powerstate",
+        "#gamesettings/#zm_powerdoorstate"
+    ]
+}

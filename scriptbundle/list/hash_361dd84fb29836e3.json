@@ -1,0 +1,11 @@
+{
+    "name": "#hash_361dd84fb29836e3",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#wc_overkill_restriction",
+        "#gamesettings/#wc_primarygunfighter1_restriction",
+        "#gamesettings/#wc_primarygunfighter2_restriction",
+        "#gamesettings/#wc_primarygunfighter3_restriction",
+        "#gamesettings/#wc_primaryoperatormod_restriction"
+    ]
+}

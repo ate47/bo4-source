@@ -1,0 +1,12 @@
+{
+    "name": "#gsol_zm_basiczombies",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_crawlerstate",
+        "#gamesettings/#zm_zombiespread",
+        "#gamesettings/#zm_zombiespeedmin",
+        "#gamesettings/#zm_zombiespeedmax",
+        "#gamesettings/#zm_zombiedamagemult",
+        "#gamesettings/#zm_zombiehealthmult"
+    ]
+}

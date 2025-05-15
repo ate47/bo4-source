@@ -1,0 +1,9 @@
+{
+    "name": "#hash_14f88ea6bb5e695c",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_grip2_ar_accurate_restriction",
+        "#gamesettings/#attachment_grip2_smg_accurate_restriction",
+        "#gamesettings/#attachment_grip2_sniper_powersemi_restriction"
+    ]
+}

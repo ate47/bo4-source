@@ -1,0 +1,10 @@
+{
+    "name": "#hash_3df45cfa77e25457",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#perk_ghost_restriction",
+        "#gamesettings/#perk_teamlink_restriction",
+        "#gamesettings/#perk_deadsilence_restriction",
+        "#gamesettings/#perk_tracker_restriction"
+    ]
+}

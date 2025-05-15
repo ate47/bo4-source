@@ -1,0 +1,9 @@
+{
+    "name": "#hash_5f60c6e3a4bba05f",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_hipgrip_lmg_spray_restriction",
+        "#gamesettings/#attachment_hipgrip_shotgun_semiauto_restriction",
+        "#gamesettings/#attachment_hipgrip_smg_fastburst_restriction"
+    ]
+}

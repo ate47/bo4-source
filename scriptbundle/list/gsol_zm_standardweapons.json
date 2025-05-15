@@ -1,0 +1,14 @@
+{
+    "name": "#gsol_zm_standardweapons",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_weapshotgun",
+        "#gamesettings/#zm_weapsmg",
+        "#gamesettings/#zm_weapar",
+        "#gamesettings/#zm_weaptr",
+        "#gamesettings/#zm_weaplmg",
+        "#gamesettings/#zm_weapsniper",
+        "#gamesettings/#zm_weapknife",
+        "#gamesettings/#zm_weapmelee"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "name": "#gsol_zm_packapunch",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_pack",
+        "#gamesettings/#zm_superpack"
+    ]
+}

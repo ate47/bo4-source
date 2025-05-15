@@ -1,0 +1,14 @@
+{
+    "name": "#gsol_zm_points",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_pointsfixed",
+        "#gamesettings/#zm_pointsstarting",
+        "#gamesettings/#zm_pointslosstype",
+        "#gamesettings/#zm_pointslosspercent",
+        "#gamesettings/#zm_pointslossvalue",
+        "#gamesettings/#zm_pointlossondown",
+        "#gamesettings/#zm_pointlossondeath",
+        "#gamesettings/#zm_pointlossonteammatedeath"
+    ]
+}

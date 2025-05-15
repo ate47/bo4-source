@@ -1,0 +1,8 @@
+{
+    "name": "#hash_752765527da9a64d",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_fastreload2_ar_fastfire_restriction",
+        "#gamesettings/#attachment_fastreload2_smg_handling_restriction"
+    ]
+}

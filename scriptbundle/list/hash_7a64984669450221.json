@@ -1,0 +1,21 @@
+{
+    "name": "#hash_7a64984669450221",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_steadyaim_ar_accurate_restriction",
+        "#gamesettings/#attachment_steadyaim_ar_fastfire_restriction",
+        "#gamesettings/#attachment_steadyaim_ar_modular_restriction",
+        "#gamesettings/#attachment_steadyaim_lmg_spray_restriction",
+        "#gamesettings/#attachment_steadyaim_pistol_burst_restriction",
+        "#gamesettings/#attachment_steadyaim_pistol_standard_restriction",
+        "#gamesettings/#attachment_steadyaim_shotgun_semiauto_restriction",
+        "#gamesettings/#attachment_steadyaim_smg_capacity_restriction",
+        "#gamesettings/#attachment_steadyaim_smg_fastburst_restriction",
+        "#gamesettings/#attachment_steadyaim_smg_fastfire_restriction",
+        "#gamesettings/#attachment_steadyaim_smg_standard_restriction",
+        "#gamesettings/#attachment_steadyaim_sniper_powersemi_restriction",
+        "#gamesettings/#attachment_steadyaim_sniper_quickscope_restriction",
+        "#gamesettings/#attachment_steadyaim_tr_midburst_restriction",
+        "#gamesettings/#attachment_steadyaim_tr_powersemi_restriction"
+    ]
+}

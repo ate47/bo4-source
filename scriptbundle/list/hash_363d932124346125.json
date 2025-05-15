@@ -1,0 +1,9 @@
+{
+    "name": "#hash_363d932124346125",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_quickdraw2_ar_fastfire_restriction",
+        "#gamesettings/#attachment_quickdraw2_sniper_quickscope_restriction",
+        "#gamesettings/#attachment_quickdraw2_tr_longburst_restriction"
+    ]
+}

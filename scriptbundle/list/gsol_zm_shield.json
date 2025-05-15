@@ -1,0 +1,9 @@
+{
+    "name": "#gsol_zm_shield",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_shield",
+        "#gamesettings/#zm_shielddurability",
+        "#gamesettings/#zm_craftingkeyline"
+    ]
+}

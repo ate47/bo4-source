@@ -1,0 +1,22 @@
+{
+    "name": "#gsol_zm_specialzombies",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_heavystate",
+        "#gamesettings/#zm_heavyfrequency",
+        "#gamesettings/#zm_heavydamagemult",
+        "#gamesettings/#zm_heavyhealthmult",
+        "#gamesettings/#zm_minibossstate",
+        "#gamesettings/#zm_minibossfrequency",
+        "#gamesettings/#zm_minibossdamagemult",
+        "#gamesettings/#zm_minibosshealthmult",
+        "#gamesettings/#zm_popcornstate",
+        "#gamesettings/#zm_popcornspawnfreq",
+        "#gamesettings/#zm_popcorndamagemult",
+        "#gamesettings/#zm_popcornhealthmult",
+        "#gamesettings/#zm_enhancedstate",
+        "#gamesettings/#zm_enhancedfrequency",
+        "#gamesettings/#zm_enhanceddamagemult",
+        "#gamesettings/#zm_enhancedhealthmult"
+    ]
+}

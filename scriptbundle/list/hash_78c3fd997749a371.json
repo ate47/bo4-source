@@ -1,0 +1,9 @@
+{
+    "name": "#hash_78c3fd997749a371",
+    "type": "playersettingoption",
+    "bundles": [
+        "#codcaster_ls_equipment",
+        "#codcaster_ls_perks",
+        "#codcaster_ls_wildcards"
+    ]
+}
