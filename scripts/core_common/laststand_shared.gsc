@@ -4,122 +4,150 @@
 #namespace laststand;
 
 // Namespace laststand/laststand_shared
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xd3ba837, Offset: 0x78
-// Size: 0x18
-function player_is_in_laststand() {
-    return isdefined(self.laststand) && self.laststand;
+// Size: 0x18, Type: bool
+function player_is_in_laststand()
+{
+    return isdefined( self.laststand ) && self.laststand;
 }
 
 // Namespace laststand/laststand_shared
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xe5694f8c, Offset: 0x98
 // Size: 0x7a
-function player_num_in_laststand() {
+function player_num_in_laststand()
+{
     num = 0;
     players = getplayers();
-    for (i = 0; i < players.size; i++) {
-        if (players[i] player_is_in_laststand()) {
+    
+    for ( i = 0; i < players.size ; i++ )
+    {
+        if ( players[ i ] player_is_in_laststand() )
+        {
             num++;
         }
     }
+    
     return num;
 }
 
 // Namespace laststand/laststand_shared
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xe288864f, Offset: 0x120
-// Size: 0x26
-function player_all_players_in_laststand() {
+// Size: 0x26, Type: bool
+function player_all_players_in_laststand()
+{
     return player_num_in_laststand() == getplayers().size;
 }
 
 // Namespace laststand/laststand_shared
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xce93723e, Offset: 0x150
-// Size: 0x16
-function player_any_player_in_laststand() {
+// Size: 0x16, Type: bool
+function player_any_player_in_laststand()
+{
     return player_num_in_laststand() > 0;
 }
 
 // Namespace laststand/laststand_shared
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x164ba657, Offset: 0x170
-// Size: 0x130
-function is_facing(facee, requireddot = 0.9) {
+// Size: 0x130, Type: bool
+function is_facing( facee, requireddot = 0.9 )
+{
     orientation = self getplayerangles();
-    forwardvec = anglestoforward(orientation);
-    forwardvec2d = (forwardvec[0], forwardvec[1], 0);
-    unitforwardvec2d = vectornormalize(forwardvec2d);
+    forwardvec = anglestoforward( orientation );
+    forwardvec2d = ( forwardvec[ 0 ], forwardvec[ 1 ], 0 );
+    unitforwardvec2d = vectornormalize( forwardvec2d );
     tofaceevec = facee.origin - self.origin;
-    tofaceevec2d = (tofaceevec[0], tofaceevec[1], 0);
-    unittofaceevec2d = vectornormalize(tofaceevec2d);
-    dotproduct = vectordot(unitforwardvec2d, unittofaceevec2d);
+    tofaceevec2d = ( tofaceevec[ 0 ], tofaceevec[ 1 ], 0 );
+    unittofaceevec2d = vectornormalize( tofaceevec2d );
+    dotproduct = vectordot( unitforwardvec2d, unittofaceevec2d );
     return dotproduct > requireddot;
 }
 
 // Namespace laststand/laststand_shared
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x7fd113b2, Offset: 0x2a8
 // Size: 0x94
-function revive_hud_create() {
-    assert(isdefined(level.revive_hud));
-    if (!level.revive_hud revive_hud::is_open(self)) {
-        level.revive_hud revive_hud::open(self);
-        waitframe(1);
-        if (isdefined(self)) {
-            level.revive_hud revive_hud::set_fadetime(self, 0);
+function revive_hud_create()
+{
+    assert( isdefined( level.revive_hud ) );
+    
+    if ( !level.revive_hud revive_hud::is_open( self ) )
+    {
+        level.revive_hud revive_hud::open( self );
+        waitframe( 1 );
+        
+        if ( isdefined( self ) )
+        {
+            level.revive_hud revive_hud::set_fadetime( self, 0 );
         }
     }
 }
 
 // Namespace laststand/laststand_shared
-// Params 3, eflags: 0x0
+// Params 3
 // Checksum 0xcdd2fe90, Offset: 0x348
 // Size: 0x13c
-function revive_hud_show_n_fade(text, time, player = undefined) {
-    if (!(isdefined(level.var_dc60105c) && level.var_dc60105c) && isdefined(level.revive_hud) && level.revive_hud revive_hud::is_open(self)) {
-        level.revive_hud revive_hud::set_fadetime(self, 0);
+function revive_hud_show_n_fade( text, time, player = undefined )
+{
+    if ( !( isdefined( level.var_dc60105c ) && level.var_dc60105c ) && isdefined( level.revive_hud ) && level.revive_hud revive_hud::is_open( self ) )
+    {
+        level.revive_hud revive_hud::set_fadetime( self, 0 );
         util::wait_network_frame();
-        if (!isdefined(self)) {
+        
+        if ( !isdefined( self ) )
+        {
             return;
         }
-        level.revive_hud revive_hud::set_text(self, text);
-        if (isdefined(player)) {
-            level.revive_hud revive_hud::set_clientnum(self, player getentitynumber());
+        
+        level.revive_hud revive_hud::set_text( self, text );
+        
+        if ( isdefined( player ) )
+        {
+            level.revive_hud revive_hud::set_clientnum( self, player getentitynumber() );
         }
-        level.revive_hud revive_hud::set_fadetime(self, int(time * 10));
+        
+        level.revive_hud revive_hud::set_fadetime( self, int( time * 10 ) );
     }
 }
 
 /#
 
     // Namespace laststand/laststand_shared
-    // Params 3, eflags: 0x0
+    // Params 3
     // Checksum 0xc54311b4, Offset: 0x490
-    // Size: 0x23e
-    function drawcylinder(pos, rad, height) {
+    // Size: 0x23e, Type: dev
+    function drawcylinder( pos, rad, height )
+    {
         currad = rad;
         curheight = height;
-        for (r = 0; r < 20; r++) {
+        
+        for ( r = 0; r < 20 ; r++ )
+        {
             theta = r / 20 * 360;
-            theta2 = (r + 1) / 20 * 360;
-            line(pos + (cos(theta) * currad, sin(theta) * currad, 0), pos + (cos(theta2) * currad, sin(theta2) * currad, 0));
-            line(pos + (cos(theta) * currad, sin(theta) * currad, curheight), pos + (cos(theta2) * currad, sin(theta2) * currad, curheight));
-            line(pos + (cos(theta) * currad, sin(theta) * currad, 0), pos + (cos(theta) * currad, sin(theta) * currad, curheight));
+            theta2 = ( r + 1 ) / 20 * 360;
+            line( pos + ( cos( theta ) * currad, sin( theta ) * currad, 0 ), pos + ( cos( theta2 ) * currad, sin( theta2 ) * currad, 0 ) );
+            line( pos + ( cos( theta ) * currad, sin( theta ) * currad, curheight ), pos + ( cos( theta2 ) * currad, sin( theta2 ) * currad, curheight ) );
+            line( pos + ( cos( theta ) * currad, sin( theta ) * currad, 0 ), pos + ( cos( theta ) * currad, sin( theta ) * currad, curheight ) );
         }
     }
 
 #/
 
 // Namespace laststand/laststand_shared
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x65cf9ede, Offset: 0x6d8
 // Size: 0x74
-function function_d4c9e1b5() {
-    self endon(#"player_revived", #"player_suicide", #"bled_out");
-    self waittill(#"disconnect");
-    if (isdefined(self.revivetrigger)) {
+function function_d4c9e1b5()
+{
+    self endon( #"player_revived", #"player_suicide", #"bled_out" );
+    self waittill( #"disconnect" );
+    
+    if ( isdefined( self.revivetrigger ) )
+    {
         self.revivetrigger delete();
     }
 }

@@ -4,7 +4,8 @@
 
 // Namespace scene
 // Method(s) 2 Total 104
-class cscenemodel : csceneobject {
+class cscenemodel : csceneobject
+{
 
 }
 

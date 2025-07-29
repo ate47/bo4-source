@@ -10,8 +10,10 @@
 // Params 1, eflags: 0x40
 // Checksum 0x8e8c7348, Offset: 0x90
 // Size: 0x34
-function event_handler[gametype_init] main(eventstruct) {
-    if (util::function_8570168d()) {
+function event_handler[gametype_init] main( eventstruct )
+{
+    if ( util::function_8570168d() )
+    {
         ct_tutorial_skirmish::init();
     }
 }

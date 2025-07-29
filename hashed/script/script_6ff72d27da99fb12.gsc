@@ -13,32 +13,39 @@
 // Params 0, eflags: 0x2
 // Checksum 0x99dbd862, Offset: 0xb8
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"hash_71a1297844fdf28e", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"hash_71a1297844fdf28e", &__init__, undefined, undefined );
 }
 
 // Namespace namespace_8cefe82f/namespace_8cefe82f
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xfa16044d, Offset: 0x100
 // Size: 0x5c
-function __init__() {
-    if (!zm_trial::is_trial_mode()) {
+function __init__()
+{
+    if ( !zm_trial::is_trial_mode() )
+    {
         return;
     }
-    zm_trial::register_challenge(#"hash_163077e21e01f4a7", &on_begin, &on_end);
+    
+    zm_trial::register_challenge( #"hash_163077e21e01f4a7", &on_begin, &on_end );
 }
 
 // Namespace namespace_8cefe82f/namespace_8cefe82f
 // Params 1, eflags: 0x4
 // Checksum 0x4746ca81, Offset: 0x168
 // Size: 0x108
-function private on_begin(n_timer) {
-    n_timer = zm_trial::function_5769f26a(n_timer);
+function private on_begin( n_timer )
+{
+    n_timer = zm_trial::function_5769f26a( n_timer );
     level.var_f7236c66 = n_timer;
-    callback::on_spawned(&on_player_spawned);
-    callback::add_callback(#"on_host_migration_end", &function_ff66b979);
-    foreach (player in getplayers()) {
-        player thread function_7650d9fb(n_timer);
+    callback::on_spawned( &on_player_spawned );
+    callback::add_callback( #"on_host_migration_end", &function_ff66b979 );
+    
+    foreach ( player in getplayers() )
+    {
+        player thread function_7650d9fb( n_timer );
     }
 }
 
@@ -46,11 +53,14 @@ function private on_begin(n_timer) {
 // Params 1, eflags: 0x4
 // Checksum 0x66a38bc7, Offset: 0x278
 // Size: 0xe0
-function private on_end(round_reset) {
+function private on_end( round_reset )
+{
     level.var_f7236c66 = undefined;
-    callback::remove_on_spawned(&on_player_spawned);
-    callback::remove_callback(#"on_host_migration_end", &function_ff66b979);
-    foreach (player in getplayers()) {
+    callback::remove_on_spawned( &on_player_spawned );
+    callback::remove_callback( #"on_host_migration_end", &function_ff66b979 );
+    
+    foreach ( player in getplayers() )
+    {
         player stop_timer();
     }
 }
@@ -59,26 +69,36 @@ function private on_end(round_reset) {
 // Params 2, eflags: 0x4
 // Checksum 0xefb76364, Offset: 0x360
 // Size: 0x188
-function private function_7650d9fb(n_timer, var_f97d1a30) {
-    self endon(#"disconnect");
-    level endon(#"hash_7646638df88a3656", #"hash_6223843ef1e3c6de", #"host_migration_begin");
-    if (!(isdefined(var_f97d1a30) && var_f97d1a30)) {
+function private function_7650d9fb( n_timer, var_f97d1a30 )
+{
+    self endon( #"disconnect" );
+    level endon( #"hash_7646638df88a3656", #"hash_6223843ef1e3c6de", #"host_migration_begin" );
+    
+    if ( !( isdefined( var_f97d1a30 ) && var_f97d1a30 ) )
+    {
         wait 12;
     }
-    while (true) {
-        while (!isalive(self)) {
-            self waittill(#"spawned");
+    
+    while ( true )
+    {
+        while ( !isalive( self ) )
+        {
+            self waittill( #"spawned" );
             wait 2;
         }
-        self start_timer(n_timer, var_f97d1a30);
-        s_waitresult = self waittilltimeout(n_timer, #"fasttravel_bought");
+        
+        self start_timer( n_timer, var_f97d1a30 );
+        s_waitresult = self waittilltimeout( n_timer, #"fasttravel_bought" );
         self stop_timer();
-        if (s_waitresult._notify == "timeout") {
-            zm_trial::fail(#"hash_4e619a0715198f72", array(self));
-            level notify(#"hash_6223843ef1e3c6de");
+        
+        if ( s_waitresult._notify == "timeout" )
+        {
+            zm_trial::fail( #"hash_4e619a0715198f72", array( self ) );
+            level notify( #"hash_6223843ef1e3c6de" );
             return;
         }
-        s_waitresult = self waittill(#"fasttravel_finished");
+        
+        s_waitresult = self waittill( #"fasttravel_finished" );
     }
 }
 
@@ -86,12 +106,15 @@ function private function_7650d9fb(n_timer, var_f97d1a30) {
 // Params 0, eflags: 0x4
 // Checksum 0xcd9a58b8, Offset: 0x4f0
 // Size: 0x5c
-function private on_player_spawned() {
-    self endon(#"disconnect");
-    level endon(#"host_migration_begin");
+function private on_player_spawned()
+{
+    self endon( #"disconnect" );
+    level endon( #"host_migration_begin" );
     wait 2;
-    if (isdefined(self.n_time_remaining)) {
-        self start_timer(self.n_time_remaining);
+    
+    if ( isdefined( self.n_time_remaining ) )
+    {
+        self start_timer( self.n_time_remaining );
     }
 }
 
@@ -99,30 +122,39 @@ function private on_player_spawned() {
 // Params 2, eflags: 0x4
 // Checksum 0x830c81dd, Offset: 0x558
 // Size: 0xcc
-function private start_timer(timeout, var_f97d1a30) {
-    if (!level.var_f995ece6 zm_trial_timer::is_open(self)) {
-        level.var_f995ece6 zm_trial_timer::open(self);
-        level.var_f995ece6 zm_trial_timer::set_timer_text(self, #"hash_459951bdd5145bf0");
-        level.var_f995ece6 zm_trial_timer::set_under_round_rules(self, 1);
-        self zm_trial_util::start_timer(timeout);
-        self thread function_a0f0109f(timeout, var_f97d1a30);
+function private start_timer( timeout, var_f97d1a30 )
+{
+    if ( !level.var_f995ece6 zm_trial_timer::is_open( self ) )
+    {
+        level.var_f995ece6 zm_trial_timer::open( self );
+        level.var_f995ece6 zm_trial_timer::set_timer_text( self, #"hash_459951bdd5145bf0" );
+        level.var_f995ece6 zm_trial_timer::set_under_round_rules( self, 1 );
+        self zm_trial_util::start_timer( timeout );
+        self thread function_a0f0109f( timeout, var_f97d1a30 );
     }
 }
 
 // Namespace namespace_8cefe82f/namespace_8cefe82f
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0xa83c3a10, Offset: 0x630
 // Size: 0xc8
-function function_a0f0109f(timeout, var_f97d1a30) {
-    if (isdefined(self.n_time_remaining) && !(isdefined(var_f97d1a30) && var_f97d1a30)) {
+function function_a0f0109f( timeout, var_f97d1a30 )
+{
+    if ( isdefined( self.n_time_remaining ) && !( isdefined( var_f97d1a30 ) && var_f97d1a30 ) )
+    {
         return;
     }
-    self endon(#"disconnect", #"hash_2a79adac1fd03c09");
-    level endon(#"hash_7646638df88a3656", #"end_game", #"host_migration_begin");
-    if (!isdefined(self.n_time_remaining)) {
+    
+    self endon( #"disconnect", #"hash_2a79adac1fd03c09" );
+    level endon( #"hash_7646638df88a3656", #"end_game", #"host_migration_begin" );
+    
+    if ( !isdefined( self.n_time_remaining ) )
+    {
         self.n_time_remaining = timeout;
     }
-    while (self.n_time_remaining > 0) {
+    
+    while ( self.n_time_remaining > 0 )
+    {
         wait 1;
         self.n_time_remaining--;
     }
@@ -132,12 +164,15 @@ function function_a0f0109f(timeout, var_f97d1a30) {
 // Params 0, eflags: 0x4
 // Checksum 0xd695cabf, Offset: 0x700
 // Size: 0x76
-function private stop_timer() {
-    if (level.var_f995ece6 zm_trial_timer::is_open(self)) {
-        level.var_f995ece6 zm_trial_timer::close(self);
+function private stop_timer()
+{
+    if ( level.var_f995ece6 zm_trial_timer::is_open( self ) )
+    {
+        level.var_f995ece6 zm_trial_timer::close( self );
         self zm_trial_util::stop_timer();
     }
-    self notify(#"hash_2a79adac1fd03c09");
+    
+    self notify( #"hash_2a79adac1fd03c09" );
     self.n_time_remaining = undefined;
 }
 
@@ -145,17 +180,24 @@ function private stop_timer() {
 // Params 0, eflags: 0x4
 // Checksum 0x495198e3, Offset: 0x780
 // Size: 0x198
-function private function_ff66b979() {
-    level endon(#"end_round", #"host_migration_begin");
-    foreach (player in getplayers()) {
-        if (level.var_f995ece6 zm_trial_timer::is_open(player)) {
-            level.var_f995ece6 zm_trial_timer::close(player);
+function private function_ff66b979()
+{
+    level endon( #"end_round", #"host_migration_begin" );
+    
+    foreach ( player in getplayers() )
+    {
+        if ( level.var_f995ece6 zm_trial_timer::is_open( player ) )
+        {
+            level.var_f995ece6 zm_trial_timer::close( player );
             player zm_trial_util::stop_timer();
         }
     }
+    
     wait 5;
-    foreach (player in getplayers()) {
-        player thread function_7650d9fb(isdefined(player.n_time_remaining) ? player.n_time_remaining : level.var_f7236c66, 1);
+    
+    foreach ( player in getplayers() )
+    {
+        player thread function_7650d9fb( isdefined( player.n_time_remaining ) ? player.n_time_remaining : level.var_f7236c66, 1 );
     }
 }
 

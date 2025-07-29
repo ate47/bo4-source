@@ -11,95 +11,126 @@
 // Params 1, eflags: 0x40
 // Checksum 0x3de4491e, Offset: 0x1a8
 // Size: 0x114
-function event_handler[level_init] main(eventstruct) {
+function event_handler[level_init] main( eventstruct )
+{
     level.draftxcam = #"ui_cam_draft_common";
     level.var_482af62e = #"hash_12263e5d70551bf9";
-    callback::on_localclient_connect(&on_localclient_connect);
-    callback::on_gameplay_started(&on_gameplay_started);
+    callback::on_localclient_connect( &on_localclient_connect );
+    callback::on_gameplay_started( &on_gameplay_started );
     mp_hacienda_alt_fx::main();
     mp_hacienda_alt_sound::main();
     load::main();
     level.domflagbasefxoverride = &dom_flag_base_fx_override;
     level.domflagcapfxoverride = &dom_flag_cap_fx_override;
-    level thread scene::play(#"aib_vign_mp_hacienda_tiger_pacing_01");
-    util::waitforclient(0);
+    level thread scene::play( #"aib_vign_mp_hacienda_tiger_pacing_01" );
+    util::waitforclient( 0 );
 }
 
 // Namespace mp_hacienda_alt/mp_hacienda_alt
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0xe993c38d, Offset: 0x2c8
 // Size: 0xf2
-function dom_flag_base_fx_override(flag, team) {
-    switch (flag.name) {
-    case #"a":
-        if (team == #"neutral") {
-            return "ui/fx_dom_marker_neutral_r90";
-        } else {
-            return "ui/fx_dom_marker_team_r90";
-        }
-        break;
-    case #"b":
-        if (team == #"neutral") {
-            return "ui/fx_dom_marker_neutral_r250";
-        } else {
-            return "ui/fx_dom_marker_team_r250";
-        }
-        break;
-    case #"c":
-        if (team == #"neutral") {
-            return "ui/fx_dom_marker_neutral_r90";
-        } else {
-            return "ui/fx_dom_marker_team_r90";
-        }
-        break;
+function dom_flag_base_fx_override( flag, team )
+{
+    switch ( flag.name )
+    {
+        case #"a":
+            if ( team == #"neutral" )
+            {
+                return "ui/fx_dom_marker_neutral_r90";
+            }
+            else
+            {
+                return "ui/fx_dom_marker_team_r90";
+            }
+            
+            break;
+        case #"b":
+            if ( team == #"neutral" )
+            {
+                return "ui/fx_dom_marker_neutral_r250";
+            }
+            else
+            {
+                return "ui/fx_dom_marker_team_r250";
+            }
+            
+            break;
+        case #"c":
+            if ( team == #"neutral" )
+            {
+                return "ui/fx_dom_marker_neutral_r90";
+            }
+            else
+            {
+                return "ui/fx_dom_marker_team_r90";
+            }
+            
+            break;
     }
 }
 
 // Namespace mp_hacienda_alt/mp_hacienda_alt
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x75d89849, Offset: 0x3c8
 // Size: 0xf2
-function dom_flag_cap_fx_override(flag, team) {
-    switch (flag.name) {
-    case #"a":
-        if (team == #"neutral") {
-            return "ui/fx_dom_cap_indicator_neutral_r90";
-        } else {
-            return "ui/fx_dom_cap_indicator_team_r90";
-        }
-        break;
-    case #"b":
-        if (team == #"neutral") {
-            return "ui/fx_dom_cap_indicator_neutral_r250";
-        } else {
-            return "ui/fx_dom_cap_indicator_team_r250";
-        }
-        break;
-    case #"c":
-        if (team == #"neutral") {
-            return "ui/fx_dom_cap_indicator_neutral_r90";
-        } else {
-            return "ui/fx_dom_cap_indicator_team_r90";
-        }
-        break;
+function dom_flag_cap_fx_override( flag, team )
+{
+    switch ( flag.name )
+    {
+        case #"a":
+            if ( team == #"neutral" )
+            {
+                return "ui/fx_dom_cap_indicator_neutral_r90";
+            }
+            else
+            {
+                return "ui/fx_dom_cap_indicator_team_r90";
+            }
+            
+            break;
+        case #"b":
+            if ( team == #"neutral" )
+            {
+                return "ui/fx_dom_cap_indicator_neutral_r250";
+            }
+            else
+            {
+                return "ui/fx_dom_cap_indicator_team_r250";
+            }
+            
+            break;
+        case #"c":
+            if ( team == #"neutral" )
+            {
+                return "ui/fx_dom_cap_indicator_neutral_r90";
+            }
+            else
+            {
+                return "ui/fx_dom_cap_indicator_team_r90";
+            }
+            
+            break;
     }
 }
 
 // Namespace mp_hacienda_alt/mp_hacienda_alt
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x9fb03e80, Offset: 0x4c8
 // Size: 0x2c
-function on_localclient_connect(localclientnum) {
-    waitframe(1);
-    setpbgactivebank(localclientnum, 8);
+function on_localclient_connect( localclientnum )
+{
+    waitframe( 1 );
+    setpbgactivebank( localclientnum, 8 );
 }
 
 // Namespace mp_hacienda_alt/mp_hacienda_alt
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x7991f4df, Offset: 0x500
 // Size: 0x2c
-function on_gameplay_started(localclientnum) {
-    waitframe(1);
-    setpbgactivebank(localclientnum, 1);
+function on_gameplay_started( localclientnum )
+{
+    waitframe( 1 );
+    setpbgactivebank( localclientnum, 1 );
 }
 

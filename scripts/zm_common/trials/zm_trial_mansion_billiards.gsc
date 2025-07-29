@@ -12,26 +12,31 @@
 // Params 0, eflags: 0x2
 // Checksum 0xb40910a, Offset: 0xa0
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"zm_trial_mansion_billiards", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"zm_trial_mansion_billiards", &__init__, undefined, undefined );
 }
 
 // Namespace zm_trial_mansion_billiards/zm_trial_mansion_billiards
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x2d12d7de, Offset: 0xe8
 // Size: 0x5c
-function __init__() {
-    if (!zm_trial::is_trial_mode()) {
+function __init__()
+{
+    if ( !zm_trial::is_trial_mode() )
+    {
         return;
     }
-    zm_trial::register_challenge(#"mansion_billiards", &on_begin, &on_end);
+    
+    zm_trial::register_challenge( #"mansion_billiards", &on_begin, &on_end );
 }
 
 // Namespace zm_trial_mansion_billiards/zm_trial_mansion_billiards
 // Params 0, eflags: 0x4
 // Checksum 0x44092883, Offset: 0x150
 // Size: 0x1c
-function private on_begin() {
+function private on_begin()
+{
     level thread function_b7bc0616();
 }
 
@@ -39,11 +44,15 @@ function private on_begin() {
 // Params 1, eflags: 0x4
 // Checksum 0x60519e41, Offset: 0x178
 // Size: 0x7c
-function private on_end(round_reset) {
+function private on_end( round_reset )
+{
     zm_trial_util::function_f3dbeda7();
-    if (!round_reset && !level flag::get(#"hash_4207012c64662b4d")) {
-        zm_trial::fail(#"hash_2c061f4e3509c0f4");
+    
+    if ( !round_reset && !level flag::get( #"hash_4207012c64662b4d" ) )
+    {
+        zm_trial::fail( #"hash_2c061f4e3509c0f4" );
     }
+    
     enable_newtonian_negation();
 }
 
@@ -51,13 +60,14 @@ function private on_end(round_reset) {
 // Params 0, eflags: 0x4
 // Checksum 0x2ea5ae66, Offset: 0x200
 // Size: 0x9c
-function private function_b7bc0616() {
-    level endon(#"hash_7646638df88a3656", #"end_game");
-    zm_trial_util::function_7d32b7d0(0);
+function private function_b7bc0616()
+{
+    level endon( #"hash_7646638df88a3656", #"end_game" );
+    zm_trial_util::function_7d32b7d0( 0 );
     function_f5ad51bd();
-    level flag::wait_till(#"hash_4207012c64662b4d");
-    waitframe(1);
-    zm_trial_util::function_7d32b7d0(1);
+    level flag::wait_till( #"hash_4207012c64662b4d" );
+    waitframe( 1 );
+    zm_trial_util::function_7d32b7d0( 1 );
     enable_newtonian_negation();
 }
 
@@ -65,31 +75,41 @@ function private function_b7bc0616() {
 // Params 0, eflags: 0x4
 // Checksum 0xf46d3f03, Offset: 0x2a8
 // Size: 0xfc
-function private function_f5ad51bd() {
-    foreach (player in getplayers()) {
-        if (player bgb::is_enabled(#"zm_bgb_newtonian_negation")) {
+function private function_f5ad51bd()
+{
+    foreach ( player in getplayers() )
+    {
+        if ( player bgb::is_enabled( #"zm_bgb_newtonian_negation" ) )
+        {
             player.var_30ee603f = 1;
             player.var_4b0fb2fb = 1;
         }
-        player bgb_pack::function_59004002(#"zm_bgb_newtonian_negation", 1);
+        
+        player bgb_pack::function_59004002( #"zm_bgb_newtonian_negation", 1 );
     }
+    
     level.var_6bbb45f9 = 1;
-    zm_bgb_newtonian_negation::function_8622e664(0);
+    zm_bgb_newtonian_negation::function_8622e664( 0 );
 }
 
 // Namespace zm_trial_mansion_billiards/zm_trial_mansion_billiards
 // Params 0, eflags: 0x4
 // Checksum 0xc10baf82, Offset: 0x3b0
 // Size: 0xe2
-function private enable_newtonian_negation() {
-    foreach (player in getplayers()) {
-        if (isdefined(player.var_30ee603f) && player.var_30ee603f) {
-            zm_bgb_newtonian_negation::function_8622e664(1);
+function private enable_newtonian_negation()
+{
+    foreach ( player in getplayers() )
+    {
+        if ( isdefined( player.var_30ee603f ) && player.var_30ee603f )
+        {
+            zm_bgb_newtonian_negation::function_8622e664( 1 );
             player.var_30ee603f = undefined;
             player.var_4b0fb2fb = undefined;
         }
-        player bgb_pack::function_59004002(#"zm_bgb_newtonian_negation", 0);
+        
+        player bgb_pack::function_59004002( #"zm_bgb_newtonian_negation", 0 );
     }
+    
     level.var_6bbb45f9 = undefined;
 }
 

@@ -5,17 +5,23 @@
 #namespace item_spawn_group;
 
 // Namespace item_spawn_group/item_spawn_groups
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0xf7994eff, Offset: 0x80
 // Size: 0x8c
-function setup(seedvalue, reset = 1) {
-    if (!namespace_65181344::is_enabled()) {
+function setup( seedvalue, reset = 1 )
+{
+    if ( !namespace_65181344::is_enabled() )
+    {
         return;
     }
-    function_1f4464c0(seedvalue);
-    if (reset) {
-        level callback::callback(#"hash_11bd48298bde44a4", undefined);
+    
+    function_1f4464c0( seedvalue );
+    
+    if ( reset )
+    {
+        level callback::callback( #"hash_11bd48298bde44a4", undefined );
     }
-    namespace_65181344::setup_groups(reset);
+    
+    namespace_65181344::setup_groups( reset );
 }
 

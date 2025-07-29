@@ -14,23 +14,26 @@
 // Params 0, eflags: 0x2
 // Checksum 0x63df5807, Offset: 0xd0
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"zm_talisman_perk_reducecost_1", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"zm_talisman_perk_reducecost_1", &__init__, undefined, undefined );
 }
 
 // Namespace zm_talisman_perk_reducecost_1/zm_talisman_perk_reducecost_1
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x6fa2d233, Offset: 0x118
 // Size: 0x2c
-function __init__() {
-    zm_talisman::register_talisman("talisman_perk_reducecost_1", &activate_talisman);
+function __init__()
+{
+    zm_talisman::register_talisman( "talisman_perk_reducecost_1", &activate_talisman );
 }
 
 // Namespace zm_talisman_perk_reducecost_1/zm_talisman_perk_reducecost_1
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x298a813a, Offset: 0x150
 // Size: 0x12
-function activate_talisman() {
+function activate_talisman()
+{
     self.talisman_perk_reducecost_1 = 1000;
 }
 

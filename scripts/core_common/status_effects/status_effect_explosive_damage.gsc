@@ -9,15 +9,17 @@
 // Params 0, eflags: 0x2
 // Checksum 0x1c499757, Offset: 0xa0
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"status_effect_explosive_damage", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"status_effect_explosive_damage", &__init__, undefined, undefined );
 }
 
 // Namespace status_effect_explosive_damage/status_effect_explosive_damage
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xea476c41, Offset: 0xe8
 // Size: 0x2c
-function __init__() {
-    status_effect::function_6f4eaf88(getstatuseffect("explosive_damage"));
+function __init__()
+{
+    status_effect::function_6f4eaf88( getstatuseffect( "explosive_damage" ) );
 }
 

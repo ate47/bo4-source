@@ -12,46 +12,50 @@
 // Params 0, eflags: 0x2
 // Checksum 0x1b6e5bf6, Offset: 0xa0
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"planner_zm_generic_commander", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"planner_zm_generic_commander", &__init__, undefined, undefined );
 }
 
 // Namespace namespace_42cba673/planner_zm_generic_commander
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x420d61, Offset: 0xe8
 // Size: 0x1c
-function __init__() {
+function __init__()
+{
     level thread createcommander();
 }
 
 // Namespace namespace_42cba673/planner_zm_generic_commander
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xdd1a2186, Offset: 0x110
 // Size: 0x3a
-function createcommanderplanner(team) {
-    planner = plannerutility::createplannerfromasset(#"zm_commander.ai_htn");
+function createcommanderplanner( team )
+{
+    planner = plannerutility::createplannerfromasset( #"zm_commander.ai_htn" );
     return planner;
 }
 
 // Namespace namespace_42cba673/planner_zm_generic_commander
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x50c2ef89, Offset: 0x158
 // Size: 0x20c
-function createcommander() {
+function createcommander()
+{
     team = #"allies";
-    commander = plannercommanderutility::createcommander(team, createcommanderplanner(team), createsquadplanner(team));
-    plannergenericcommander::commanderdaemons(commander);
-    plannercommanderutility::adddaemon(commander, #"daemonzmaltars");
-    plannercommanderutility::adddaemon(commander, #"daemonzmblockers");
-    plannercommanderutility::adddaemon(commander, #"daemonzmchests");
-    plannercommanderutility::adddaemon(commander, #"daemonzmpowerups");
-    plannercommanderutility::adddaemon(commander, #"daemonzmswitches");
-    plannercommanderutility::adddaemon(commander, #"daemonzmwallbuys");
-    plannercommanderutility::addsquadevaluator(commander, #"commanderscorebotpresence");
-    plannercommanderutility::addsquadevaluator(commander, #"commanderscoreescortpathing");
-    plannercommanderutility::addsquadevaluator(commander, #"commanderscoreforcegoal");
-    plannercommanderutility::addsquadevaluator(commander, #"commanderscoreteam");
-    plannercommanderutility::addsquadevaluator(commander, #"commanderscoreviableescort");
-    plannercommanderutility::addsquadevaluator(commander, #"commanderscoreage", [#"maxage":6000]);
+    commander = plannercommanderutility::createcommander( team, createcommanderplanner( team ), createsquadplanner( team ) );
+    plannergenericcommander::commanderdaemons( commander );
+    plannercommanderutility::adddaemon( commander, #"daemonzmaltars" );
+    plannercommanderutility::adddaemon( commander, #"daemonzmblockers" );
+    plannercommanderutility::adddaemon( commander, #"daemonzmchests" );
+    plannercommanderutility::adddaemon( commander, #"daemonzmpowerups" );
+    plannercommanderutility::adddaemon( commander, #"daemonzmswitches" );
+    plannercommanderutility::adddaemon( commander, #"daemonzmwallbuys" );
+    plannercommanderutility::addsquadevaluator( commander, #"commanderscorebotpresence" );
+    plannercommanderutility::addsquadevaluator( commander, #"commanderscoreescortpathing" );
+    plannercommanderutility::addsquadevaluator( commander, #"commanderscoreforcegoal" );
+    plannercommanderutility::addsquadevaluator( commander, #"commanderscoreteam" );
+    plannercommanderutility::addsquadevaluator( commander, #"commanderscoreviableescort" );
+    plannercommanderutility::addsquadevaluator( commander, #"commanderscoreage", [ #"maxage":6000 ] );
 }
 

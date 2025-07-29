@@ -5,10 +5,11 @@
 #namespace tracker;
 
 // Namespace tracker/tracker_shared
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x5f665aa7, Offset: 0xb8
 // Size: 0x14
-function init_shared() {
+function init_shared()
+{
     registerclientfields();
 }
 
@@ -16,7 +17,8 @@ function init_shared() {
 // Params 0, eflags: 0x4
 // Checksum 0x3dfb760d, Offset: 0xd8
 // Size: 0x3c
-function private registerclientfields() {
-    clientfield::register("clientuimodel", "huditems.isExposedOnMinimap", 1, 1, "int", undefined, 0, 0);
+function private registerclientfields()
+{
+    clientfield::register( "clientuimodel", "huditems.isExposedOnMinimap", 1, 1, "int", undefined, 0, 0 );
 }
 

@@ -10,7 +10,8 @@
 // Params 1, eflags: 0x40
 // Checksum 0xa32a24c8, Offset: 0xb8
 // Size: 0xbe
-function event_handler[gametype_init] main(eventstruct) {
+function event_handler[gametype_init] main( eventstruct )
+{
     zm_gametype::main();
     level.disableclassselection = 1;
     level.onprecachegametype = &onprecachegametype;
@@ -22,34 +23,40 @@ function event_handler[gametype_init] main(eventstruct) {
 }
 
 // Namespace ztutorial/ztutorial
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x31de652, Offset: 0x180
 // Size: 0x1e
-function onprecachegametype() {
+function onprecachegametype()
+{
     level.canplayersuicide = &zm_gametype::canplayersuicide;
 }
 
 // Namespace ztutorial/ztutorial
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xfc2ec3d8, Offset: 0x1a8
 // Size: 0x154
-function onstartgametype() {
-    level.spawnmins = (0, 0, 0);
-    level.spawnmaxs = (0, 0, 0);
-    structs = struct::get_array("player_respawn_point", "targetname");
-    foreach (struct in structs) {
-        level.spawnmins = math::expand_mins(level.spawnmins, struct.origin);
-        level.spawnmaxs = math::expand_maxs(level.spawnmaxs, struct.origin);
+function onstartgametype()
+{
+    level.spawnmins = ( 0, 0, 0 );
+    level.spawnmaxs = ( 0, 0, 0 );
+    structs = struct::get_array( "player_respawn_point", "targetname" );
+    
+    foreach ( struct in structs )
+    {
+        level.spawnmins = math::expand_mins( level.spawnmins, struct.origin );
+        level.spawnmaxs = math::expand_maxs( level.spawnmaxs, struct.origin );
     }
-    level.mapcenter = math::find_box_center(level.spawnmins, level.spawnmaxs);
-    setmapcenter(level.mapcenter);
+    
+    level.mapcenter = math::find_box_center( level.spawnmins, level.spawnmaxs );
+    setmapcenter( level.mapcenter );
 }
 
 // Namespace ztutorial/ztutorial
-// Params 9, eflags: 0x0
+// Params 9
 // Checksum 0x281c8424, Offset: 0x308
 // Size: 0x4c
-function function_1b27b9d0(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, delayoverride) {
+function function_1b27b9d0( einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, delayoverride )
+{
     
 }
 

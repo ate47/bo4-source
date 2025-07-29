@@ -20,393 +20,509 @@
 // Params 1, eflags: 0x40
 // Checksum 0x81b96873, Offset: 0x548
 // Size: 0x854
-function event_handler[gametype_init] main(eventstruct) {
-    insertion_passenger_count::register("insertionPassengerElem");
-    deathcirclerespawn = getgametypesetting(#"deathcirclerespawn");
-    clientfield::register("worlduimodel", "hudItems.warzone.collapseTimerState", 1, 2, "int", undefined, 0, 0);
-    clientfield::register("worlduimodel", "hudItems.warzone.collapseProgress", 1, 7, "float", undefined, 0, 0);
-    clientfield::register("worlduimodel", "hudItems.warzone.reinsertionPassengerCount", 1, 7, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.distanceFromDeathCircle", 1, 7, "float", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.alivePlayerCount", 1, 7, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.alivePlayerCountEnemy", 1, 7, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.aliveTeammateCount", 1, 7, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.spectatorsCount", 1, 7, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.playerKills", 1, 7, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.playerCleanUps", 1, 7, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "presence.modeparam", 1, 7, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.hasBackpack", 1, 1, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.armorType", 1, 2, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.streamerLoadFraction", 1, 5, "float", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.wzLoadFinished", 1, 1, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.showReinsertionPassengerCount", 1, 1, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.playerLivesRemaining", 15000, 3, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.playerCanRedeploy", 15000, 1, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.playerOnInfectedPlatoon", 21000, 1, "int", undefined, 0, 0);
-    clientfield::register("allplayers", "eliminator_screen", 1, 1, "int", &function_2985ca96, 0, 0);
-    clientfield::register("toplayer", "realtime_multiplay", 1, 1, "int", &function_a1b40aa4, 0, 0);
-    clientfield::register("worlduimodel", "hudItems.warzone.collapse", 11000, 21, "int", undefined, 0, 0);
-    clientfield::register("worlduimodel", "hudItems.warzone.waveRespawnTimer", 15000, 21, "int", undefined, 0, 0);
-    clientfield::register("worlduimodel", "hudItems.warzone.collapseIndex", 1, 3, "int", undefined, 0, 0);
-    clientfield::register("worlduimodel", "hudItems.warzone.collapseCount", 1, 3, "int", undefined, 0, 0);
-    clientfield::register("worlduimodel", "hudItems.warzone.reinsertionIndex", 1, 3, "int", undefined, 0, 0);
-    callback::on_localplayer_spawned(&on_player_spawned);
-    callback::on_killcam_begin(&on_killcam_begin);
-    callback::on_killcam_end(&on_killcam_end);
-    callback::on_localclient_connect(&on_localclient_connect);
+function event_handler[gametype_init] main( eventstruct )
+{
+    insertion_passenger_count::register( "insertionPassengerElem" );
+    deathcirclerespawn = getgametypesetting( #"deathcirclerespawn" );
+    clientfield::register( "worlduimodel", "hudItems.warzone.collapseTimerState", 1, 2, "int", undefined, 0, 0 );
+    clientfield::register( "worlduimodel", "hudItems.warzone.collapseProgress", 1, 7, "float", undefined, 0, 0 );
+    clientfield::register( "worlduimodel", "hudItems.warzone.reinsertionPassengerCount", 1, 7, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.distanceFromDeathCircle", 1, 7, "float", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.alivePlayerCount", 1, 7, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.alivePlayerCountEnemy", 1, 7, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.aliveTeammateCount", 1, 7, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.spectatorsCount", 1, 7, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.playerKills", 1, 7, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.playerCleanUps", 1, 7, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "presence.modeparam", 1, 7, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.hasBackpack", 1, 1, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.armorType", 1, 2, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.streamerLoadFraction", 1, 5, "float", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.wzLoadFinished", 1, 1, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.showReinsertionPassengerCount", 1, 1, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.playerLivesRemaining", 15000, 3, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.playerCanRedeploy", 15000, 1, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.playerOnInfectedPlatoon", 21000, 1, "int", undefined, 0, 0 );
+    clientfield::register( "allplayers", "eliminator_screen", 1, 1, "int", &function_2985ca96, 0, 0 );
+    clientfield::register( "toplayer", "realtime_multiplay", 1, 1, "int", &function_a1b40aa4, 0, 0 );
+    clientfield::register( "worlduimodel", "hudItems.warzone.collapse", 11000, 21, "int", undefined, 0, 0 );
+    clientfield::register( "worlduimodel", "hudItems.warzone.waveRespawnTimer", 15000, 21, "int", undefined, 0, 0 );
+    clientfield::register( "worlduimodel", "hudItems.warzone.collapseIndex", 1, 3, "int", undefined, 0, 0 );
+    clientfield::register( "worlduimodel", "hudItems.warzone.collapseCount", 1, 3, "int", undefined, 0, 0 );
+    clientfield::register( "worlduimodel", "hudItems.warzone.reinsertionIndex", 1, 3, "int", undefined, 0, 0 );
+    callback::on_localplayer_spawned( &on_player_spawned );
+    callback::on_killcam_begin( &on_killcam_begin );
+    callback::on_killcam_end( &on_killcam_end );
+    callback::on_localclient_connect( &on_localclient_connect );
     level.var_a5ec5f1a = [];
-    for (i = 0; i < getmaxlocalclients(); i++) {
-        level.var_a5ec5f1a[i] = [];
+    
+    for ( i = 0; i < getmaxlocalclients() ; i++ )
+    {
+        level.var_a5ec5f1a[ i ] = [];
     }
+    
     level thread function_7be1ea25();
     level thread function_783be487();
-    callback::on_gameplay_started(&start_warzone);
+    callback::on_gameplay_started( &start_warzone );
     level function_b522ef5c();
     function_41f9de03();
     function_f6b076db();
-    if (isdefined(getgametypesetting(#"hash_3a73deb0ca8c9aea")) && getgametypesetting(#"hash_3a73deb0ca8c9aea")) {
-        setdvar(#"cg_drawcrosshair", 0);
+    
+    if ( isdefined( getgametypesetting( #"hash_3a73deb0ca8c9aea" ) ) && getgametypesetting( #"hash_3a73deb0ca8c9aea" ) )
+    {
+        setdvar( #"cg_drawcrosshair", 0 );
     }
-    if (isdefined(getgametypesetting(#"hash_7532afe3ef8b4332")) && getgametypesetting(#"hash_7532afe3ef8b4332")) {
-        setdvar(#"hash_2d5b0d6d4ce995d7", 0);
+    
+    if ( isdefined( getgametypesetting( #"hash_7532afe3ef8b4332" ) ) && getgametypesetting( #"hash_7532afe3ef8b4332" ) )
+    {
+        setdvar( #"hash_2d5b0d6d4ce995d7", 0 );
     }
 }
 
 // Namespace warzone/warzone
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x111113c2, Offset: 0xda8
 // Size: 0x94
-function start_warzone(localclientnum) {
+function start_warzone( localclientnum )
+{
     function_d547b972();
     function_65469e2e();
-    if (isdefined(getgametypesetting(#"hash_6cc7b012775d9662")) && getgametypesetting(#"hash_6cc7b012775d9662")) {
-        level thread function_3dadedf8(localclientnum);
+    
+    if ( isdefined( getgametypesetting( #"hash_6cc7b012775d9662" ) ) && getgametypesetting( #"hash_6cc7b012775d9662" ) )
+    {
+        level thread function_3dadedf8( localclientnum );
     }
 }
 
 // Namespace warzone/warzone
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x73742a87, Offset: 0xe48
 // Size: 0x340
-function function_7be1ea25() {
-    level endon(#"disconnect");
-    while (true) {
-        waitresult = level waittill(#"teammate_waypoint_placed");
+function function_7be1ea25()
+{
+    level endon( #"disconnect" );
+    
+    while ( true )
+    {
+        waitresult = level waittill( #"teammate_waypoint_placed" );
         localclientnum = waitresult.localclientnum;
-        obj_id = util::getnextobjid(localclientnum);
-        clientobjid = level.var_a5ec5f1a[localclientnum][waitresult.clientnum];
-        if (isdefined(clientobjid)) {
-            objective_delete(localclientnum, clientobjid);
-            util::releaseobjid(localclientnum, clientobjid);
+        obj_id = util::getnextobjid( localclientnum );
+        clientobjid = level.var_a5ec5f1a[ localclientnum ][ waitresult.clientnum ];
+        
+        if ( isdefined( clientobjid ) )
+        {
+            objective_delete( localclientnum, clientobjid );
+            util::releaseobjid( localclientnum, clientobjid );
         }
-        level.var_a5ec5f1a[localclientnum][waitresult.clientnum] = obj_id;
-        if (!(isdefined(getgametypesetting(#"hash_76c2c603f164eb31")) && getgametypesetting(#"hash_76c2c603f164eb31")) || !(isdefined(level.localplayers[localclientnum].infiltrating) && level.localplayers[localclientnum].infiltrating)) {
-            objective_add(localclientnum, obj_id, "active", #"teammate_waypoint", (waitresult.xcoord, waitresult.ycoord, 0), #"none", waitresult.clientnum);
-        } else {
+        
+        level.var_a5ec5f1a[ localclientnum ][ waitresult.clientnum ] = obj_id;
+        
+        if ( !( isdefined( getgametypesetting( #"hash_76c2c603f164eb31" ) ) && getgametypesetting( #"hash_76c2c603f164eb31" ) ) || !( isdefined( level.localplayers[ localclientnum ].infiltrating ) && level.localplayers[ localclientnum ].infiltrating ) )
+        {
+            objective_add( localclientnum, obj_id, "active", #"teammate_waypoint", ( waitresult.xcoord, waitresult.ycoord, 0 ), #"none", waitresult.clientnum );
+        }
+        else
+        {
             x = waitresult.xcoord;
             y = waitresult.ycoord;
             var_bfd46ccc = 2147483647;
             var_cfa5f67b = -2147483647;
-            trace = bullettrace((x, y, var_bfd46ccc), (x, y, var_cfa5f67b), 0, self, 1);
-            position = trace[#"position"];
-            objective_add(localclientnum, obj_id, "active", #"hash_4d290db83b852838", position, #"none", waitresult.clientnum);
-            level thread function_97d0a8af(localclientnum, obj_id, x, y, waitresult.clientnum);
+            trace = bullettrace( ( x, y, var_bfd46ccc ), ( x, y, var_cfa5f67b ), 0, self, 1 );
+            position = trace[ #"position" ];
+            objective_add( localclientnum, obj_id, "active", #"hash_4d290db83b852838", position, #"none", waitresult.clientnum );
+            level thread function_97d0a8af( localclientnum, obj_id, x, y, waitresult.clientnum );
         }
-        function_2e625a75(localclientnum, obj_id, 1);
+        
+        function_2e625a75( localclientnum, obj_id, 1 );
     }
 }
 
 // Namespace warzone/warzone
-// Params 5, eflags: 0x0
+// Params 5
 // Checksum 0x4586c866, Offset: 0x1190
 // Size: 0xec
-function function_97d0a8af(local_client_num, obj_id, x, y, clientnum) {
-    self notify("68f151c5b262427f");
-    self endon("68f151c5b262427f");
-    while (isdefined(level.localplayers[local_client_num].infiltrating) && level.localplayers[local_client_num].infiltrating) {
+function function_97d0a8af( local_client_num, obj_id, x, y, clientnum )
+{
+    self notify( "68f151c5b262427f" );
+    self endon( "68f151c5b262427f" );
+    
+    while ( isdefined( level.localplayers[ local_client_num ].infiltrating ) && level.localplayers[ local_client_num ].infiltrating )
+    {
         wait 0.1;
     }
-    objective_delete(local_client_num, obj_id);
-    objective_add(local_client_num, obj_id, "active", #"teammate_waypoint", (x, y, 0), #"none", clientnum);
+    
+    objective_delete( local_client_num, obj_id );
+    objective_add( local_client_num, obj_id, "active", #"teammate_waypoint", ( x, y, 0 ), #"none", clientnum );
 }
 
 // Namespace warzone/warzone
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x346a7fa4, Offset: 0x1288
 // Size: 0xfe
-function function_783be487() {
-    level endon(#"disconnect");
-    while (true) {
-        waitresult = level waittill(#"teammate_waypoint_removed");
+function function_783be487()
+{
+    level endon( #"disconnect" );
+    
+    while ( true )
+    {
+        waitresult = level waittill( #"teammate_waypoint_removed" );
         localclientnum = waitresult.localclientnum;
-        localplayer = function_5c10bd79(localclientnum);
-        clientobjid = level.var_a5ec5f1a[localclientnum][waitresult.clientnum];
-        if (isdefined(clientobjid)) {
-            objective_delete(localclientnum, clientobjid);
-            util::releaseobjid(localclientnum, clientobjid);
-            level.var_a5ec5f1a[localclientnum][waitresult.clientnum] = undefined;
+        localplayer = function_5c10bd79( localclientnum );
+        clientobjid = level.var_a5ec5f1a[ localclientnum ][ waitresult.clientnum ];
+        
+        if ( isdefined( clientobjid ) )
+        {
+            objective_delete( localclientnum, clientobjid );
+            util::releaseobjid( localclientnum, clientobjid );
+            level.var_a5ec5f1a[ localclientnum ][ waitresult.clientnum ] = undefined;
         }
     }
 }
 
 // Namespace warzone/warzone
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x952d3fac, Offset: 0x1390
 // Size: 0x2e4
-function function_41f9de03() {
+function function_41f9de03()
+{
     localclientnum = 0;
     mapbundle = map::get_script_bundle();
     var_4e59607a = [];
-    if (isdefined(mapbundle) && isdefined(mapbundle.destinationlabellist)) {
-        foreach (destinationlabel in mapbundle.destinationlabellist) {
-            var_4e59607a[destinationlabel.targetname] = destinationlabel.displayname;
+    
+    if ( isdefined( mapbundle ) && isdefined( mapbundle.destinationlabellist ) )
+    {
+        foreach ( destinationlabel in mapbundle.destinationlabellist )
+        {
+            var_4e59607a[ destinationlabel.targetname ] = destinationlabel.displayname;
         }
     }
-    foreach (struct in level.struct) {
-        if (isdefined(struct.targetname) && isdefined(var_4e59607a[struct.targetname])) {
-            function_4b8a09b(localclientnum, var_4e59607a[struct.targetname], struct.origin);
-            var_4e59607a[struct.targetname] = undefined;
+    
+    foreach ( struct in level.struct )
+    {
+        if ( isdefined( struct.targetname ) && isdefined( var_4e59607a[ struct.targetname ] ) )
+        {
+            function_4b8a09b( localclientnum, var_4e59607a[ struct.targetname ], struct.origin );
+            var_4e59607a[ struct.targetname ] = undefined;
         }
-        if (struct.classname === "script_struct") {
+        
+        if ( struct.classname === "script_struct" )
+        {
             struct.classname = undefined;
         }
     }
+    
     /#
-        foreach (destname in var_4e59607a) {
-            level.var_909020d0 = (isdefined(level.var_909020d0) ? level.var_909020d0 : 0) + 1;
-            level.var_a1222bd2 = (isdefined(level.var_a1222bd2) ? level.var_a1222bd2 : "<dev string:x38>") + destinationlabel.targetname + "<dev string:x3b>";
+        foreach ( destname in var_4e59607a )
+        {
+            level.var_909020d0 = ( isdefined( level.var_909020d0 ) ? level.var_909020d0 : 0 ) + 1;
+            level.var_a1222bd2 = ( isdefined( level.var_a1222bd2 ) ? level.var_a1222bd2 : "<dev string:x38>" ) + destinationlabel.targetname + "<dev string:x3b>";
         }
-        if (isdefined(level.var_909020d0)) {
-            println(level.var_909020d0 + "<dev string:x40>" + level.var_a1222bd2);
+        
+        if ( isdefined( level.var_909020d0 ) )
+        {
+            println( level.var_909020d0 + "<dev string:x40>" + level.var_a1222bd2 );
         }
     #/
 }
 
 // Namespace warzone/warzone
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x30385fdd, Offset: 0x1680
 // Size: 0x8c
-function on_localclient_connect(localclientnum) {
-    if (isdefined(getgametypesetting(#"hash_418adedc5cf0a538")) && getgametypesetting(#"hash_418adedc5cf0a538")) {
-        player = function_27673a7(localclientnum);
-        player thread function_7e3a43c3(localclientnum);
+function on_localclient_connect( localclientnum )
+{
+    if ( isdefined( getgametypesetting( #"hash_418adedc5cf0a538" ) ) && getgametypesetting( #"hash_418adedc5cf0a538" ) )
+    {
+        player = function_27673a7( localclientnum );
+        player thread function_7e3a43c3( localclientnum );
     }
 }
 
 // Namespace warzone/warzone
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x7533c111, Offset: 0x1718
 // Size: 0x114
-function on_player_spawned(localclientnum) {
-    if (!self function_da43934d()) {
+function on_player_spawned( localclientnum )
+{
+    if ( !self function_da43934d() )
+    {
         return;
     }
-    function_2dba6c5(localclientnum, function_8978c19(localclientnum));
-    forcestreamxmodel(#"hash_23c676424ced3f27", 4, 0);
-    forcestreamxmodel(#"hash_153258d8addb7554", 4, 0);
-    forcestreamxmodel(#"hash_6d6a1262dc74e606", 5, 0);
-    forcestreamxmodel(#"hash_299eb2a348408676", 5, 0);
+    
+    function_2dba6c5( localclientnum, function_8978c19( localclientnum ) );
+    forcestreamxmodel( #"hash_23c676424ced3f27", 4, 0 );
+    forcestreamxmodel( #"hash_153258d8addb7554", 4, 0 );
+    forcestreamxmodel( #"hash_6d6a1262dc74e606", 5, 0 );
+    forcestreamxmodel( #"hash_299eb2a348408676", 5, 0 );
     thread function_a1aaf8c0();
-    self thread function_f8c70ad7(localclientnum);
+    self thread function_f8c70ad7( localclientnum );
 }
 
 // Namespace warzone/warzone
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x73370d5e, Offset: 0x1838
 // Size: 0x24
-function function_c6878ba5() {
-    setdvar(#"hash_254c50d45dcf475", 0);
+function function_c6878ba5()
+{
+    setdvar( #"hash_254c50d45dcf475", 0 );
 }
 
 // Namespace warzone/warzone
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x29709a80, Offset: 0x1868
 // Size: 0x54
-function function_f6b076db() {
-    setdvar(#"hash_254c50d45dcf475", 300);
-    setdvar(#"hash_51508fd2e827ae4", 1500);
+function function_f6b076db()
+{
+    setdvar( #"hash_254c50d45dcf475", 300 );
+    setdvar( #"hash_51508fd2e827ae4", 1500 );
 }
 
 // Namespace warzone/warzone
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xfc47173b, Offset: 0x18c8
 // Size: 0x1c
-function on_killcam_begin(params) {
+function on_killcam_begin( params )
+{
     function_c6878ba5();
 }
 
 // Namespace warzone/warzone
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x48133783, Offset: 0x18f0
 // Size: 0x1c
-function on_killcam_end(params) {
+function on_killcam_end( params )
+{
     function_f6b076db();
 }
 
 // Namespace warzone/warzone
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xe24f15ad, Offset: 0x1918
 // Size: 0x2c0
-function function_f8c70ad7(localclientnum) {
-    self endoncallback(&function_e8d2d8c5, #"death");
-    self endon(#"disconnect");
-    assert(!isdefined(self.var_408847b6));
-    if (isdefined(self.var_408847b6)) {
+function function_f8c70ad7( localclientnum )
+{
+    self endoncallback( &function_e8d2d8c5, #"death" );
+    self endon( #"disconnect" );
+    assert( !isdefined( self.var_408847b6 ) );
+    
+    if ( isdefined( self.var_408847b6 ) )
+    {
         self function_e8d2d8c5();
     }
-    self.var_408847b6 = spawn(0, (0, 0, 0), "script_origin");
-    if (!isdefined(self.var_408847b6)) {
+    
+    self.var_408847b6 = spawn( 0, ( 0, 0, 0 ), "script_origin" );
+    
+    if ( !isdefined( self.var_408847b6 ) )
+    {
         return;
     }
+    
     var_408847b6 = self.var_408847b6;
-    var_408847b6.var_41266084 = var_408847b6 playloopsound("amb_height_looper_mountain_fnt");
-    var_408847b6.var_2f3960f5 = var_408847b6 playloopsound("amb_height_looper_mountain_bck");
-    setsoundvolumerate(var_408847b6.var_41266084, 1);
-    setsoundvolumerate(var_408847b6.var_2f3960f5, 1);
+    var_408847b6.var_41266084 = var_408847b6 playloopsound( "amb_height_looper_mountain_fnt" );
+    var_408847b6.var_2f3960f5 = var_408847b6 playloopsound( "amb_height_looper_mountain_bck" );
+    setsoundvolumerate( var_408847b6.var_41266084, 1 );
+    setsoundvolumerate( var_408847b6.var_2f3960f5, 1 );
     var_d15c9ee7 = 0;
-    while (true) {
-        var_ebe45f6a = self.origin[2];
-        if (abs(var_ebe45f6a - var_d15c9ee7) > 50) {
+    
+    while ( true )
+    {
+        var_ebe45f6a = self.origin[ 2 ];
+        
+        if ( abs( var_ebe45f6a - var_d15c9ee7 ) > 50 )
+        {
             var_d15c9ee7 = var_ebe45f6a;
-            if (var_ebe45f6a <= 3000) {
-                setsoundvolume(var_408847b6.var_41266084, 0);
-                setsoundvolume(var_408847b6.var_2f3960f5, 0);
-            } else if (var_ebe45f6a <= 7500) {
-                var_f9d98743 = (var_ebe45f6a - 3000) / 4500;
-                setsoundvolume(var_408847b6.var_41266084, var_f9d98743);
-                setsoundvolume(var_408847b6.var_2f3960f5, var_f9d98743);
-            } else {
-                setsoundvolume(var_408847b6.var_41266084, 1);
-                setsoundvolume(var_408847b6.var_2f3960f5, 1);
+            
+            if ( var_ebe45f6a <= 3000 )
+            {
+                setsoundvolume( var_408847b6.var_41266084, 0 );
+                setsoundvolume( var_408847b6.var_2f3960f5, 0 );
+            }
+            else if ( var_ebe45f6a <= 7500 )
+            {
+                var_f9d98743 = ( var_ebe45f6a - 3000 ) / 4500;
+                setsoundvolume( var_408847b6.var_41266084, var_f9d98743 );
+                setsoundvolume( var_408847b6.var_2f3960f5, var_f9d98743 );
+            }
+            else
+            {
+                setsoundvolume( var_408847b6.var_41266084, 1 );
+                setsoundvolume( var_408847b6.var_2f3960f5, 1 );
             }
         }
+        
         wait 0.25;
     }
 }
 
 // Namespace warzone/warzone
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xdd0de4fb, Offset: 0x1be0
 // Size: 0x46
-function function_e8d2d8c5(notifyhash) {
-    if (isdefined(self) && isdefined(self.var_408847b6)) {
+function function_e8d2d8c5( notifyhash )
+{
+    if ( isdefined( self ) && isdefined( self.var_408847b6 ) )
+    {
         self.var_408847b6 delete();
         self.var_408847b6 = undefined;
     }
 }
 
 // Namespace warzone/warzone
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0xc9311b11, Offset: 0x1c30
 // Size: 0x164
-function function_2dba6c5(localclientnum, var_be9954a5) {
-    if (!isdefined(level.controllercolor)) {
+function function_2dba6c5( localclientnum, var_be9954a5 )
+{
+    if ( !isdefined( level.controllercolor ) )
+    {
         level.controllercolor = [];
     }
-    switch (var_be9954a5) {
-    case 0:
-        level.controllercolor[localclientnum] = (1, 0.5, 0);
-        break;
-    case 1:
-        level.controllercolor[localclientnum] = (0, 0, 1);
-        break;
-    case 2:
-        level.controllercolor[localclientnum] = (0, 1, 0);
-        break;
-    case 3:
-        level.controllercolor[localclientnum] = (1, 0, 1);
-        break;
-    default:
-        break;
+    
+    switch ( var_be9954a5 )
+    {
+        case 0:
+            level.controllercolor[ localclientnum ] = ( 1, 0.5, 0 );
+            break;
+        case 1:
+            level.controllercolor[ localclientnum ] = ( 0, 0, 1 );
+            break;
+        case 2:
+            level.controllercolor[ localclientnum ] = ( 0, 1, 0 );
+            break;
+        case 3:
+            level.controllercolor[ localclientnum ] = ( 1, 0, 1 );
+            break;
+        default:
+            break;
     }
-    if (isdefined(level.controllercolor[localclientnum])) {
-        setcontrollerlightbarcolor(localclientnum, level.controllercolor[localclientnum]);
+    
+    if ( isdefined( level.controllercolor[ localclientnum ] ) )
+    {
+        setcontrollerlightbarcolor( localclientnum, level.controllercolor[ localclientnum ] );
         return;
     }
-    setcontrollerlightbarcolor(localclientnum);
+    
+    setcontrollerlightbarcolor( localclientnum );
 }
 
 // Namespace warzone/warzone
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x9844698e, Offset: 0x1da0
 // Size: 0x78
-function function_a1aaf8c0() {
-    self notify("15d660e19319a47");
-    self endon("15d660e19319a47");
-    while (isdefined(self)) {
-        waitresult = level waittill(#"hash_5af34d08eac79f88");
-        function_2dba6c5(waitresult.localclientnum, waitresult.teammateindex);
+function function_a1aaf8c0()
+{
+    self notify( "15d660e19319a47" );
+    self endon( "15d660e19319a47" );
+    
+    while ( isdefined( self ) )
+    {
+        waitresult = level waittill( #"hash_5af34d08eac79f88" );
+        function_2dba6c5( waitresult.localclientnum, waitresult.teammateindex );
     }
 }
 
 // Namespace warzone/warzone
-// Params 7, eflags: 0x0
+// Params 7
 // Checksum 0x869b373d, Offset: 0x1e20
 // Size: 0x4e
-function function_2985ca96(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    if (newval == 1) {
+function function_2985ca96( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+{
+    if ( newval == 1 )
+    {
     }
 }
 
 // Namespace warzone/warzone
-// Params 7, eflags: 0x0
+// Params 7
 // Checksum 0x8eb86708, Offset: 0x1e78
 // Size: 0xfc
-function function_a1b40aa4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    player = function_27673a7(localclientnum);
-    if (player != self) {
+function function_a1b40aa4( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+{
+    player = function_27673a7( localclientnum );
+    
+    if ( player != self )
+    {
         return;
     }
-    if (bwastimejump) {
+    
+    if ( bwastimejump )
+    {
         return;
     }
-    if (!isplayer(player) || !isalive(player)) {
-        function_3f258626(localclientnum);
+    
+    if ( !isplayer( player ) || !isalive( player ) )
+    {
+        function_3f258626( localclientnum );
         return;
     }
-    if (newval == 1) {
-        function_9e9a0604(localclientnum);
+    
+    if ( newval == 1 )
+    {
+        function_9e9a0604( localclientnum );
         return;
     }
-    function_3f258626(localclientnum);
+    
+    function_3f258626( localclientnum );
 }
 
 // Namespace warzone/warzone
 // Params 1, eflags: 0x4
 // Checksum 0x9c832cf8, Offset: 0x1f80
 // Size: 0x304
-function private function_3dadedf8(localclientnum) {
-    while (true) {
-        origin = getlocalclientpos(localclientnum);
-        players = getplayers(localclientnum);
-        players = arraysortclosest(players, origin, undefined, 0, 6000);
+function private function_3dadedf8( localclientnum )
+{
+    while ( true )
+    {
+        origin = getlocalclientpos( localclientnum );
+        players = getplayers( localclientnum );
+        players = arraysortclosest( players, origin, undefined, 0, 6000 );
         bleeding = 0;
-        foreach (player in players) {
-            if (!player hasdobj(localclientnum)) {
+        
+        foreach ( player in players )
+        {
+            if ( !player hasdobj( localclientnum ) )
+            {
                 continue;
             }
-            if (!(isdefined(player.var_374045a0) && player.var_374045a0)) {
-                if (player ishidden() || player isinfreefall() || player function_9a0edd92()) {
+            
+            if ( !( isdefined( player.var_374045a0 ) && player.var_374045a0 ) )
+            {
+                if ( player ishidden() || player isinfreefall() || player function_9a0edd92() )
+                {
                     continue;
                 }
             }
+            
             player.var_374045a0 = 1;
-            if (player getlocalclientnumber() === localclientnum) {
-                setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.bleedingOverTime"), 1);
+            
+            if ( player getlocalclientnumber() === localclientnum )
+            {
+                setuimodelvalue( createuimodel( getuimodelforcontroller( localclientnum ), "hudItems.bleedingOverTime" ), 1 );
             }
-            if (bleeding >= 10 || !isalive(player)) {
-                if (isarray(player.var_88b0c4c3)) {
-                    foreach (handle in player.var_88b0c4c3) {
-                        stopfx(localclientnum, handle);
+            
+            if ( bleeding >= 10 || !isalive( player ) )
+            {
+                if ( isarray( player.var_88b0c4c3 ) )
+                {
+                    foreach ( handle in player.var_88b0c4c3 )
+                    {
+                        stopfx( localclientnum, handle );
                     }
+                    
                     player.var_88b0c4c3 = undefined;
                 }
+                
                 continue;
             }
+            
             bleeding++;
-            if (!isdefined(player.var_88b0c4c3)) {
-                player.var_88b0c4c3 = playtagfxset(localclientnum, "status_effect_bloody_tracker", player);
+            
+            if ( !isdefined( player.var_88b0c4c3 ) )
+            {
+                player.var_88b0c4c3 = playtagfxset( localclientnum, "status_effect_bloody_tracker", player );
             }
         }
+        
         players = undefined;
         wait 0.2;
     }
@@ -416,19 +532,27 @@ function private function_3dadedf8(localclientnum) {
 // Params 1, eflags: 0x4
 // Checksum 0x80fdefa4, Offset: 0x2290
 // Size: 0xae
-function private function_7e3a43c3(localclientnum) {
-    self notify("2dfbcba8182d1332");
-    self endon("2dfbcba8182d1332");
-    while (true) {
-        currentplayer = function_5c10bd79(localclientnum);
-        if (!isdefined(currentplayer)) {
-            waitframe(1);
+function private function_7e3a43c3( localclientnum )
+{
+    self notify( "2dfbcba8182d1332" );
+    self endon( "2dfbcba8182d1332" );
+    
+    while ( true )
+    {
+        currentplayer = function_5c10bd79( localclientnum );
+        
+        if ( !isdefined( currentplayer ) )
+        {
+            waitframe( 1 );
             continue;
         }
-        if (!currentplayer postfx::function_556665f2(#"hash_13defe66b6177d0b")) {
-            currentplayer postfx::playpostfxbundle(#"hash_13defe66b6177d0b");
+        
+        if ( !currentplayer postfx::function_556665f2( #"hash_13defe66b6177d0b" ) )
+        {
+            currentplayer postfx::playpostfxbundle( #"hash_13defe66b6177d0b" );
         }
-        waitframe(1);
+        
+        waitframe( 1 );
     }
 }
 
@@ -436,10 +560,13 @@ function private function_7e3a43c3(localclientnum) {
 // Params 0, eflags: 0x4
 // Checksum 0xaa30a1a, Offset: 0x2348
 // Size: 0x46
-function private function_b522ef5c() {
-    s_hijacked = struct::get("map_dest_hijacked");
-    if (isdefined(s_hijacked)) {
-        s_hijacked.origin = (22966, 46926, 1270);
+function private function_b522ef5c()
+{
+    s_hijacked = struct::get( "map_dest_hijacked" );
+    
+    if ( isdefined( s_hijacked ) )
+    {
+        s_hijacked.origin = ( 22966, 46926, 1270 );
     }
 }
 

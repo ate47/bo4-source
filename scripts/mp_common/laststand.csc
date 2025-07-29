@@ -11,102 +11,128 @@
 // Params 0, eflags: 0x2
 // Checksum 0xafdb1cf4, Offset: 0x288
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"laststand", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"laststand", &__init__, undefined, undefined );
 }
 
 // Namespace laststand/laststand
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xc7aa274f, Offset: 0x2d0
 // Size: 0x23c
-function __init__() {
-    revive_hud::register("revive_hud");
-    mp_revive_prompt::register("mp_revive_prompt_1");
-    mp_revive_prompt::register("mp_revive_prompt_2");
-    mp_revive_prompt::register("mp_revive_prompt_3");
-    mp_revive_prompt::register("mp_revive_prompt_4");
-    clientfield::register("clientuimodel", "hudItems.laststand.progress", 1, 5, "float", &laststand_postfx, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.laststand.beingRevived", 1, 1, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.laststand.revivingClientNum", 1, 7, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "hudItems.laststand.reviveProgress", 1, 5, "float", undefined, 0, 0);
-    clientfield::register("clientuimodel", "EnemyTeamLastLivesData.numPlayersDowned", 1, 3, "int", undefined, 0, 0);
-    clientfield::register("clientuimodel", "PlayerTeamLastLivesData.numPlayersDowned", 1, 3, "int", undefined, 0, 0);
-    clientfield::register("allplayers", "laststand_bleed", 1, 1, "int", &laststand_bleed, 0, 0);
+function __init__()
+{
+    revive_hud::register( "revive_hud" );
+    mp_revive_prompt::register( "mp_revive_prompt_1" );
+    mp_revive_prompt::register( "mp_revive_prompt_2" );
+    mp_revive_prompt::register( "mp_revive_prompt_3" );
+    mp_revive_prompt::register( "mp_revive_prompt_4" );
+    clientfield::register( "clientuimodel", "hudItems.laststand.progress", 1, 5, "float", &laststand_postfx, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.laststand.beingRevived", 1, 1, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.laststand.revivingClientNum", 1, 7, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "hudItems.laststand.reviveProgress", 1, 5, "float", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "EnemyTeamLastLivesData.numPlayersDowned", 1, 3, "int", undefined, 0, 0 );
+    clientfield::register( "clientuimodel", "PlayerTeamLastLivesData.numPlayersDowned", 1, 3, "int", undefined, 0, 0 );
+    clientfield::register( "allplayers", "laststand_bleed", 1, 1, "int", &laststand_bleed, 0, 0 );
     level thread wait_and_set_revive_shader_constant();
 }
 
 // Namespace laststand/laststand
-// Params 7, eflags: 0x0
+// Params 7
 // Checksum 0x5304e534, Offset: 0x518
 // Size: 0x1cc
-function laststand_postfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    player = function_5c10bd79(localclientnum);
-    if (newval) {
-        if (!self postfx::function_556665f2("pstfx_drowning")) {
-            self postfx::playpostfxbundle("pstfx_drowning");
+function laststand_postfx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+{
+    player = function_5c10bd79( localclientnum );
+    
+    if ( newval )
+    {
+        if ( !self postfx::function_556665f2( "pstfx_drowning" ) )
+        {
+            self postfx::playpostfxbundle( "pstfx_drowning" );
             value = 0.99;
-            self postfx::function_c8b5f318("pstfx_drowning", #"outer radius", value);
-            self postfx::function_c8b5f318("pstfx_drowning", #"inner radius", value - 0.3);
-            self postfx::function_c8b5f318("pstfx_drowning", #"opacity", 1);
+            self postfx::function_c8b5f318( "pstfx_drowning", #"outer radius", value );
+            self postfx::function_c8b5f318( "pstfx_drowning", #"inner radius", value - 0.3 );
+            self postfx::function_c8b5f318( "pstfx_drowning", #"opacity", 1 );
         }
-        if (newval > 0.5) {
-            if (oldval == 0) {
+        
+        if ( newval > 0.5 )
+        {
+            if ( oldval == 0 )
+            {
                 oldval = newval;
                 newval = oldval - 0.05;
             }
-            player thread function_8960f852(oldval, newval);
+            
+            player thread function_8960f852( oldval, newval );
         }
+        
         return;
     }
-    if (self postfx::function_556665f2("pstfx_drowning")) {
-        postfx::stoppostfxbundle("pstfx_drowning");
+    
+    if ( self postfx::function_556665f2( "pstfx_drowning" ) )
+    {
+        postfx::stoppostfxbundle( "pstfx_drowning" );
     }
 }
 
 // Namespace laststand/laststand
-// Params 7, eflags: 0x0
+// Params 7
 // Checksum 0x9f92e6a6, Offset: 0x6f0
 // Size: 0xfe
-function laststand_bleed(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    self endon(#"death", #"hash_7698972484f247e8");
-    if (newval != oldval && newval) {
-        self util::waittill_dobj(localclientnum);
-        self.var_63796ff0 = function_239993de(localclientnum, "player/fx8_plyr_blood_drip_last_stand", self, "j_spine4");
+function laststand_bleed( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+{
+    self endon( #"death", #"hash_7698972484f247e8" );
+    
+    if ( newval != oldval && newval )
+    {
+        self util::waittill_dobj( localclientnum );
+        self.var_63796ff0 = function_239993de( localclientnum, "player/fx8_plyr_blood_drip_last_stand", self, "j_spine4" );
         return;
     }
-    if (isdefined(self.var_63796ff0)) {
-        stopfx(localclientnum, self.var_63796ff0);
+    
+    if ( isdefined( self.var_63796ff0 ) )
+    {
+        stopfx( localclientnum, self.var_63796ff0 );
     }
-    self notify(#"hash_7698972484f247e8");
+    
+    self notify( #"hash_7698972484f247e8" );
 }
 
 // Namespace laststand/laststand
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x4433bf29, Offset: 0x7f8
 // Size: 0xe8
-function function_8960f852(oldval, newval) {
-    self endon(#"death");
+function function_8960f852( oldval, newval )
+{
+    self endon( #"death" );
     duration = 1;
-    while (duration > 0) {
-        value = oldval - (oldval - newval) * (1 - duration);
+    
+    while ( duration > 0 )
+    {
+        value = oldval - ( oldval - newval ) * ( 1 - duration );
         duration -= 0.1;
-        self postfx::function_c8b5f318("pstfx_drowning", #"outer radius", value);
-        self postfx::function_c8b5f318("pstfx_drowning", #"inner radius", value - 0.8);
+        self postfx::function_c8b5f318( "pstfx_drowning", #"outer radius", value );
+        self postfx::function_c8b5f318( "pstfx_drowning", #"inner radius", value - 0.8 );
         wait 0.1;
     }
 }
 
 // Namespace laststand/laststand
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xf6fd96a6, Offset: 0x8e8
 // Size: 0xd0
-function wait_and_set_revive_shader_constant() {
-    while (true) {
-        waitresult = level waittill(#"notetrack");
+function wait_and_set_revive_shader_constant()
+{
+    while ( true )
+    {
+        waitresult = level waittill( #"notetrack" );
         localclientnum = waitresult.localclientnum;
-        if (waitresult.notetrack == "revive_shader_constant") {
-            player = function_5c10bd79(localclientnum);
-            player mapshaderconstant(localclientnum, 0, "scriptVector2", 0, 1, 0, getservertime(localclientnum) / 1000);
+        
+        if ( waitresult.notetrack == "revive_shader_constant" )
+        {
+            player = function_5c10bd79( localclientnum );
+            player mapshaderconstant( localclientnum, 0, "scriptVector2", 0, 1, 0, getservertime( localclientnum ) / 1000 );
         }
     }
 }

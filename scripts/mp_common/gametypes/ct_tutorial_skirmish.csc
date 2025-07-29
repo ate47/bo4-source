@@ -8,19 +8,21 @@
 #namespace ct_tutorial_skirmish;
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x3842b028, Offset: 0xb0
 // Size: 0x3c
-function init() {
-    full_screen_movie::register("full_screen_movie");
-    callback::on_localplayer_spawned(&on_localplayer_spawned);
+function init()
+{
+    full_screen_movie::register( "full_screen_movie" );
+    callback::on_localplayer_spawned( &on_localplayer_spawned );
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xcb5f3ece, Offset: 0xf8
 // Size: 0x24
-function on_localplayer_spawned() {
+function on_localplayer_spawned()
+{
     e_player = self;
     e_player releasebuttons();
 }

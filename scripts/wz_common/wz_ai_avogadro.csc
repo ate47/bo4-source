@@ -10,23 +10,26 @@
 // Params 0, eflags: 0x2
 // Checksum 0xcafd8a41, Offset: 0x90
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"wz_ai_avogadro", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"wz_ai_avogadro", &__init__, undefined, undefined );
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x2d6c20a2, Offset: 0xd8
 // Size: 0x34
-function __init__() {
-    ai::add_archetype_spawn_function(#"avogadro", &function_1caf705e);
+function __init__()
+{
+    ai::add_archetype_spawn_function( #"avogadro", &function_1caf705e );
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
 // Params 1, eflags: 0x4
 // Checksum 0x228b01e3, Offset: 0x118
 // Size: 0xc
-function private function_1caf705e(localclientnum) {
+function private function_1caf705e( localclientnum )
+{
     
 }
 

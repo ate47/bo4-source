@@ -40,32 +40,35 @@
 // Params 0, eflags: 0x2
 // Checksum 0x8616fa34, Offset: 0x570
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"zm_gametype", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"zm_gametype", &__init__, undefined, undefined );
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x7b4a9dcc, Offset: 0x5b8
 // Size: 0x24
-function __init__() {
-    callback::on_connecting(&menu_onplayerconnect);
+function __init__()
+{
+    callback::on_connecting( &menu_onplayerconnect );
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x4d1cbaa1, Offset: 0x5e8
 // Size: 0x65c
-function main() {
+function main()
+{
     globallogic::init();
     globallogic_setupdefault_zombiecallbacks();
     menu_init();
-    util::registerroundlimit(1, 1);
-    util::registertimelimit(0, 0);
-    util::registerscorelimit(0, 0);
-    util::registerroundwinlimit(0, 0);
-    util::registernumlives(1, 1);
-    globallogic::registerfriendlyfiredelay(level.gametype, 15, 0, 1440);
+    util::registerroundlimit( 1, 1 );
+    util::registertimelimit( 0, 0 );
+    util::registerscorelimit( 0, 0 );
+    util::registerroundwinlimit( 0, 0 );
+    util::registernumlives( 1, 1 );
+    globallogic::registerfriendlyfiredelay( level.gametype, 15, 0, 1440 );
     level.takelivesondeath = 1;
     level.teambased = 1;
     level.disablemomentum = 1;
@@ -83,8 +86,8 @@ function main() {
     level.dontshowendreason = 1;
     level.forceallallies = 1;
     level.allow_teamchange = 0;
-    setdvar(#"scr_disable_team_selection", 1);
-    setdvar(#"scr_disable_weapondrop", 1);
+    setdvar( #"scr_disable_team_selection", 1 );
+    setdvar( #"scr_disable_weapondrop", 1 );
     level.onstartgametype = &onstartgametype;
     level.onspawnplayer = &globallogic::blank;
     level.onspawnplayerunified = &onspawnplayerunified;
@@ -96,43 +99,53 @@ function main() {
     game._team2_num = 0;
     map_name = level.script;
     mode = util::get_game_type();
-    if ((!isdefined(mode) || mode == "") && isdefined(level.default_game_mode)) {
+    
+    if ( ( !isdefined( mode ) || mode == "" ) && isdefined( level.default_game_mode ) )
+    {
         mode = level.default_game_mode;
     }
-    zm_utility::set_gamemode_var_once("mode", mode);
-    if (!isdefined(game.side_selection)) {
+    
+    zm_utility::set_gamemode_var_once( "mode", mode );
+    
+    if ( !isdefined( game.side_selection ) )
+    {
         game.side_selection = 1;
     }
+    
     location = level.default_start_location;
-    zm_utility::set_gamemode_var_once("location", location);
-    zm_utility::set_gamemode_var_once("randomize_mode", getdvarint(#"zm_rand_mode", 0));
-    zm_utility::set_gamemode_var_once("randomize_location", getdvarint(#"zm_rand_loc", 0));
-    zm_utility::set_gamemode_var_once("team_1_score", 0);
-    zm_utility::set_gamemode_var_once("team_2_score", 0);
-    zm_utility::set_gamemode_var_once("current_round", 0);
-    zm_utility::set_gamemode_var_once("rules_read", 0);
-    if (!isdefined(game.switchedsides)) {
+    zm_utility::set_gamemode_var_once( "location", location );
+    zm_utility::set_gamemode_var_once( "randomize_mode", getdvarint( #"zm_rand_mode", 0 ) );
+    zm_utility::set_gamemode_var_once( "randomize_location", getdvarint( #"zm_rand_loc", 0 ) );
+    zm_utility::set_gamemode_var_once( "team_1_score", 0 );
+    zm_utility::set_gamemode_var_once( "team_2_score", 0 );
+    zm_utility::set_gamemode_var_once( "current_round", 0 );
+    zm_utility::set_gamemode_var_once( "rules_read", 0 );
+    
+    if ( !isdefined( game.switchedsides ) )
+    {
         game.switchedsides = 0;
     }
+    
     gametype = util::get_game_type();
-    game.dialog[#"gametype"] = gametype + "_start";
-    game.dialog[#"gametype_hardcore"] = gametype + "_start";
-    game.dialog[#"offense_obj"] = "generic_boost";
-    game.dialog[#"defense_obj"] = "generic_boost";
-    zm_utility::set_gamemode_var("pre_init_zombie_spawn_func", undefined);
-    zm_utility::set_gamemode_var("post_init_zombie_spawn_func", undefined);
-    zm_utility::set_gamemode_var("match_end_notify", undefined);
-    zm_utility::set_gamemode_var("match_end_func", undefined);
+    game.dialog[ #"gametype" ] = gametype + "_start";
+    game.dialog[ #"gametype_hardcore" ] = gametype + "_start";
+    game.dialog[ #"offense_obj" ] = "generic_boost";
+    game.dialog[ #"defense_obj" ] = "generic_boost";
+    zm_utility::set_gamemode_var( "pre_init_zombie_spawn_func", undefined );
+    zm_utility::set_gamemode_var( "post_init_zombie_spawn_func", undefined );
+    zm_utility::set_gamemode_var( "match_end_notify", undefined );
+    zm_utility::set_gamemode_var( "match_end_func", undefined );
     bundle = function_302bd0b9();
-    setvisiblescoreboardcolumns(bundle.scoreboard_1, bundle.scoreboard_2, bundle.scoreboard_3, bundle.scoreboard_4, bundle.scoreboard_5, bundle.var_d4259e74, bundle.var_54dd9ff6, bundle.var_5ee7b40a);
-    callback::on_connect(&onplayerconnect_check_for_hotjoin);
+    setvisiblescoreboardcolumns( bundle.scoreboard_1, bundle.scoreboard_2, bundle.scoreboard_3, bundle.scoreboard_4, bundle.scoreboard_5, bundle.var_d4259e74, bundle.var_54dd9ff6, bundle.var_5ee7b40a );
+    callback::on_connect( &onplayerconnect_check_for_hotjoin );
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xaa7cfe42, Offset: 0xc50
 // Size: 0x4c6
-function globallogic_setupdefault_zombiecallbacks() {
+function globallogic_setupdefault_zombiecallbacks()
+{
     level.spawnplayer = &globallogic_spawn::spawnplayer;
     level.spawnplayerprediction = &globallogic_spawn::spawnplayerprediction;
     level.spawnclient = &globallogic_spawn::spawnclient;
@@ -187,618 +200,819 @@ function globallogic_setupdefault_zombiecallbacks() {
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x2b87279f, Offset: 0x1120
 // Size: 0x5e
-function do_game_mode_shellshock() {
-    self endon(#"disconnect");
+function do_game_mode_shellshock()
+{
+    self endon( #"disconnect" );
     self._being_shellshocked = 1;
-    self shellshock(#"grief_stab_zm", 0.75);
+    self shellshock( #"grief_stab_zm", 0.75 );
     wait 0.75;
     self._being_shellshocked = 0;
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x692f26b0, Offset: 0x1188
-// Size: 0x6
-function canplayersuicide() {
+// Size: 0x6, Type: bool
+function canplayersuicide()
+{
     return false;
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x350360cd, Offset: 0x1198
 // Size: 0x5c
-function onplayerdisconnect() {
-    if (isdefined(level.var_7b27c856)) {
-        level [[ level.var_7b27c856 ]](self);
+function onplayerdisconnect()
+{
+    if ( isdefined( level.var_7b27c856 ) )
+    {
+        level [[ level.var_7b27c856 ]]( self );
     }
+    
     self zm_laststand::add_weighted_down();
-    level zm_player::function_8ef51109(self);
+    level zm_player::function_8ef51109( self );
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x2dfd5e5a, Offset: 0x1200
 // Size: 0x2c
-function ondeadevent(team) {
-    thread globallogic::endgame(level.zombie_team, "");
+function ondeadevent( team )
+{
+    thread globallogic::endgame( level.zombie_team, "" );
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x28421372, Offset: 0x1238
 // Size: 0xd4
-function onspawnintermission() {
+function onspawnintermission()
+{
     spawnpointname = "info_intermission";
-    spawnpoints = getentarray(spawnpointname, "classname");
-    if (spawnpoints.size < 1) {
-        println("<dev string:x38>" + spawnpointname + "<dev string:x3e>");
+    spawnpoints = getentarray( spawnpointname, "classname" );
+    
+    if ( spawnpoints.size < 1 )
+    {
+        println( "<dev string:x38>" + spawnpointname + "<dev string:x3e>" );
         return;
     }
-    spawnpoint = spawnpoints[randomint(spawnpoints.size)];
-    if (isdefined(spawnpoint)) {
-        self spawn(spawnpoint.origin, spawnpoint.angles);
+    
+    spawnpoint = spawnpoints[ randomint( spawnpoints.size ) ];
+    
+    if ( isdefined( spawnpoint ) )
+    {
+        self spawn( spawnpoint.origin, spawnpoint.angles );
     }
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x24c8f322, Offset: 0x1318
 // Size: 0x14
-function onspawnspectator(origin, angles) {
+function onspawnspectator( origin, angles )
+{
     
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x1382081, Offset: 0x1338
 // Size: 0x76
-function mayspawn() {
-    if (isdefined(level.custommayspawnlogic)) {
+function mayspawn()
+{
+    if ( isdefined( level.custommayspawnlogic ) )
+    {
         return self [[ level.custommayspawnlogic ]]();
     }
-    if (self.pers[#"lives"] == 0) {
-        level notify(#"player_eliminated");
-        self notify(#"player_eliminated");
+    
+    if ( self.pers[ #"lives" ] == 0 )
+    {
+        level notify( #"player_eliminated" );
+        self notify( #"player_eliminated" );
         return 0;
     }
+    
     return 1;
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xc87f17cc, Offset: 0x13b8
 // Size: 0x17c
-function onstartgametype() {
-    setclientnamemode("auto_change");
-    level.spawnmins = (0, 0, 0);
-    level.spawnmaxs = (0, 0, 0);
-    structs = struct::get_array("player_respawn_point", "targetname");
-    foreach (struct in structs) {
-        level.spawnmins = math::expand_mins(level.spawnmins, struct.origin);
-        level.spawnmaxs = math::expand_maxs(level.spawnmaxs, struct.origin);
+function onstartgametype()
+{
+    setclientnamemode( "auto_change" );
+    level.spawnmins = ( 0, 0, 0 );
+    level.spawnmaxs = ( 0, 0, 0 );
+    structs = struct::get_array( "player_respawn_point", "targetname" );
+    
+    foreach ( struct in structs )
+    {
+        level.spawnmins = math::expand_mins( level.spawnmins, struct.origin );
+        level.spawnmaxs = math::expand_maxs( level.spawnmaxs, struct.origin );
     }
-    level.mapcenter = math::find_box_center(level.spawnmins, level.spawnmaxs);
-    setmapcenter(level.mapcenter);
+    
+    level.mapcenter = math::find_box_center( level.spawnmins, level.spawnmaxs );
+    setmapcenter( level.mapcenter );
     spawning::create_map_placed_influencers();
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xe79d60c6, Offset: 0x1540
 // Size: 0x1c
-function onspawnplayerunified() {
-    onspawnplayer(0);
+function onspawnplayerunified()
+{
+    onspawnplayer( 0 );
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x6f2ade15, Offset: 0x1568
 // Size: 0x2ea
-function onfindvalidspawnpoint() {
-    println("<dev string:x54>");
-    if (level flag::get("begin_spawning")) {
-        spawnpoint = zm_player::check_for_valid_spawn_near_team(self, 1);
+function onfindvalidspawnpoint()
+{
+    println( "<dev string:x54>" );
+    
+    if ( level flag::get( "begin_spawning" ) )
+    {
+        spawnpoint = zm_player::check_for_valid_spawn_near_team( self, 1 );
+        
         /#
-            if (!isdefined(spawnpoint)) {
-                println("<dev string:x72>");
+            if ( !isdefined( spawnpoint ) )
+            {
+                println( "<dev string:x72>" );
             }
         #/
     }
-    if (!isdefined(spawnpoint)) {
+    
+    if ( !isdefined( spawnpoint ) )
+    {
         match_string = "";
         location = level.scr_zm_map_start_location;
-        if ((location == "default" || location == "") && isdefined(level.default_start_location)) {
+        
+        if ( ( location == "default" || location == "" ) && isdefined( level.default_start_location ) )
+        {
             location = level.default_start_location;
         }
+        
         match_string = level.scr_zm_ui_gametype + "_" + location;
         spawnpoints = [];
-        structs = struct::get_array("initial_spawn", "script_noteworthy");
-        if (isdefined(structs)) {
-            foreach (struct in structs) {
-                if (isdefined(struct.script_string)) {
-                    tokens = strtok(struct.script_string, " ");
-                    foreach (token in tokens) {
-                        if (token == match_string) {
-                            spawnpoints[spawnpoints.size] = struct;
+        structs = struct::get_array( "initial_spawn", "script_noteworthy" );
+        
+        if ( isdefined( structs ) )
+        {
+            foreach ( struct in structs )
+            {
+                if ( isdefined( struct.script_string ) )
+                {
+                    tokens = strtok( struct.script_string, " " );
+                    
+                    foreach ( token in tokens )
+                    {
+                        if ( token == match_string )
+                        {
+                            spawnpoints[ spawnpoints.size ] = struct;
                         }
                     }
                 }
             }
         }
-        if (!isdefined(spawnpoints) || spawnpoints.size == 0) {
-            spawnpoints = struct::get_array("initial_spawn_points", "targetname");
+        
+        if ( !isdefined( spawnpoints ) || spawnpoints.size == 0 )
+        {
+            spawnpoints = struct::get_array( "initial_spawn_points", "targetname" );
         }
-        assert(isdefined(spawnpoints), "<dev string:xc6>");
-        spawnpoint = zm_player::getfreespawnpoint(spawnpoints, self);
+        
+        assert( isdefined( spawnpoints ), "<dev string:xc6>" );
+        spawnpoint = zm_player::getfreespawnpoint( spawnpoints, self );
     }
+    
     return spawnpoint;
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xa8afde18, Offset: 0x1860
 // Size: 0x3fc
-function onspawnplayer(predictedspawn = 0) {
-    pixbeginevent(#"hash_45a46111e3862b44");
+function onspawnplayer( predictedspawn = 0 )
+{
+    pixbeginevent( #"hash_45a46111e3862b44" );
     self.usingobj = undefined;
     self.is_zombie = 0;
-    zm_player::updateplayernum(self);
-    if (isdefined(level.custom_spawnplayer) && isdefined(self.player_initialized) && self.player_initialized) {
+    zm_player::updateplayernum( self );
+    
+    if ( isdefined( level.custom_spawnplayer ) && isdefined( self.player_initialized ) && self.player_initialized )
+    {
         self [[ level.custom_spawnplayer ]]();
         return;
     }
-    if (isdefined(level.customspawnlogic)) {
-        println("<dev string:xed>");
-        spawnpoint = self [[ level.customspawnlogic ]](predictedspawn);
-        if (predictedspawn) {
+    
+    if ( isdefined( level.customspawnlogic ) )
+    {
+        println( "<dev string:xed>" );
+        spawnpoint = self [[ level.customspawnlogic ]]( predictedspawn );
+        
+        if ( predictedspawn )
+        {
             return;
-        }
-    } else {
-        println("<dev string:x54>");
-        spawnpoint = self onfindvalidspawnpoint();
-        if (predictedspawn) {
-            self predictspawnpoint(spawnpoint.origin, spawnpoint.angles);
-            return;
-        } else {
-            self spawn(spawnpoint.origin, spawnpoint.angles, "zsurvival");
         }
     }
+    else
+    {
+        println( "<dev string:x54>" );
+        spawnpoint = self onfindvalidspawnpoint();
+        
+        if ( predictedspawn )
+        {
+            self predictspawnpoint( spawnpoint.origin, spawnpoint.angles );
+            return;
+        }
+        else
+        {
+            self spawn( spawnpoint.origin, spawnpoint.angles, "zsurvival" );
+        }
+    }
+    
     self.entity_num = self getentitynumber();
     self thread zm_player::onplayerspawned();
     self thread zm_player::player_revive_monitor();
-    self val::set(#"onspawnplayer", "freezecontrols");
-    self val::set(#"onspawnplayer", "disablegadgets");
+    self val::set( #"onspawnplayer", "freezecontrols" );
+    self val::set( #"onspawnplayer", "disablegadgets" );
     self.spectator_respawn = spawnpoint;
-    self.score = self globallogic_score::getpersstat(#"score");
-    self.pers[#"participation"] = 0;
+    self.score = self globallogic_score::getpersstat( #"score" );
+    self.pers[ #"participation" ] = 0;
+    
     /#
-        if (getdvarint(#"zombie_cheat", 0) >= 1) {
+        if ( getdvarint( #"zombie_cheat", 0 ) >= 1 )
+        {
             self.score = 100000;
         }
     #/
+    
     self.score_total = self.score;
     self.old_score = self.score;
     self.player_initialized = 0;
     self.zombification_time = 0;
     self thread zm_blockers::rebuild_barrier_reward_reset();
-    if (!(isdefined(level.host_ended_game) && level.host_ended_game)) {
-        self val::reset(#"onspawnplayer", "freezecontrols");
-        self val::reset(#"onspawnplayer", "disablegadgets");
+    
+    if ( !( isdefined( level.host_ended_game ) && level.host_ended_game ) )
+    {
+        self val::reset( #"onspawnplayer", "freezecontrols" );
+        self val::reset( #"onspawnplayer", "disablegadgets" );
         self enableweapons();
     }
-    if (isdefined(level.var_ce6bb796)) {
+    
+    if ( isdefined( level.var_ce6bb796 ) )
+    {
         spawn_in_spectate = [[ level.var_ce6bb796 ]]();
-        if (spawn_in_spectate) {
-            self util::delay(0.05, undefined, &zm_player::spawnspectator);
+        
+        if ( spawn_in_spectate )
+        {
+            self util::delay( 0.05, undefined, &zm_player::spawnspectator );
         }
     }
+    
     pixendevent();
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x3ab18d7, Offset: 0x1c68
 // Size: 0x1f8
-function get_player_spawns_for_gametype() {
+function get_player_spawns_for_gametype()
+{
     a_s_player_spawns = [];
-    a_structs = struct::get_array("player_respawn_point", "targetname");
-    foreach (struct in a_structs) {
-        if (isdefined(struct.script_string)) {
-            var_61fc7c84 = strtok(struct.script_string, " ");
-            foreach (var_5d975b01 in var_61fc7c84) {
-                if (var_5d975b01 == level.scr_zm_ui_gametype) {
-                    if (!isdefined(a_s_player_spawns)) {
+    a_structs = struct::get_array( "player_respawn_point", "targetname" );
+    
+    foreach ( struct in a_structs )
+    {
+        if ( isdefined( struct.script_string ) )
+        {
+            var_61fc7c84 = strtok( struct.script_string, " " );
+            
+            foreach ( var_5d975b01 in var_61fc7c84 )
+            {
+                if ( var_5d975b01 == level.scr_zm_ui_gametype )
+                {
+                    if ( !isdefined( a_s_player_spawns ) )
+                    {
                         a_s_player_spawns = [];
-                    } else if (!isarray(a_s_player_spawns)) {
-                        a_s_player_spawns = array(a_s_player_spawns);
                     }
-                    a_s_player_spawns[a_s_player_spawns.size] = struct;
+                    else if ( !isarray( a_s_player_spawns ) )
+                    {
+                        a_s_player_spawns = array( a_s_player_spawns );
+                    }
+                    
+                    a_s_player_spawns[ a_s_player_spawns.size ] = struct;
                 }
             }
+            
             continue;
         }
-        if (!isdefined(a_s_player_spawns)) {
+        
+        if ( !isdefined( a_s_player_spawns ) )
+        {
             a_s_player_spawns = [];
-        } else if (!isarray(a_s_player_spawns)) {
-            a_s_player_spawns = array(a_s_player_spawns);
         }
-        a_s_player_spawns[a_s_player_spawns.size] = struct;
+        else if ( !isarray( a_s_player_spawns ) )
+        {
+            a_s_player_spawns = array( a_s_player_spawns );
+        }
+        
+        a_s_player_spawns[ a_s_player_spawns.size ] = struct;
     }
+    
     return a_s_player_spawns;
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x28bf25bb, Offset: 0x1e68
 // Size: 0xc
-function onendgame(winningteam) {
+function onendgame( winningteam )
+{
     
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xdb55306a, Offset: 0x1e80
 // Size: 0x102
-function onroundendgame(roundwinner) {
-    if (game.stat[#"roundswon"][#"allies"] == game.stat[#"roundswon"][#"axis"]) {
+function onroundendgame( roundwinner )
+{
+    if ( game.stat[ #"roundswon" ][ #"allies" ] == game.stat[ #"roundswon" ][ #"axis" ] )
+    {
         winner = "tie";
-    } else if (game.stat[#"roundswon"][#"axis"] > game.stat[#"roundswon"][#"allies"]) {
+    }
+    else if ( game.stat[ #"roundswon" ][ #"axis" ] > game.stat[ #"roundswon" ][ #"allies" ] )
+    {
         winner = #"axis";
-    } else {
+    }
+    else
+    {
         winner = #"allies";
     }
+    
     return winner;
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x4104b066, Offset: 0x1f90
 // Size: 0x26a
-function menu_init() {
+function menu_init()
+{
     game.menu = [];
-    game.menu[#"menu_team"] = "ChangeTeam";
-    game.menu[#"menu_changeclass_allies"] = "ChooseClass_InGame";
-    game.menu[#"menu_initteam_allies"] = "initteam_marines";
-    game.menu[#"menu_changeclass_axis"] = "ChooseClass_InGame";
-    game.menu[#"menu_initteam_axis"] = "initteam_opfor";
-    game.menu[#"menu_class"] = "class";
-    game.menu[#"menu_start_menu"] = "StartMenu_Main";
-    game.menu[#"menu_changeclass"] = "ChooseClass_InGame";
-    game.menu[#"menu_changeclass_offline"] = "ChooseClass_InGame";
-    game.menu[#"menu_changeclass_custom"] = "changeclass_custom";
-    game.menu[#"menu_draft"] = "PositionDraft";
-    game.menu[#"menu_controls"] = "ingame_controls";
-    game.menu[#"menu_options"] = "ingame_options";
-    game.menu[#"menu_leavegame"] = "popup_leavegame";
-    game.menu[#"menu_restartgamepopup"] = "T7Hud_zm_factory";
+    game.menu[ #"menu_team" ] = "ChangeTeam";
+    game.menu[ #"menu_changeclass_allies" ] = "ChooseClass_InGame";
+    game.menu[ #"menu_initteam_allies" ] = "initteam_marines";
+    game.menu[ #"menu_changeclass_axis" ] = "ChooseClass_InGame";
+    game.menu[ #"menu_initteam_axis" ] = "initteam_opfor";
+    game.menu[ #"menu_class" ] = "class";
+    game.menu[ #"menu_start_menu" ] = "StartMenu_Main";
+    game.menu[ #"menu_changeclass" ] = "ChooseClass_InGame";
+    game.menu[ #"menu_changeclass_offline" ] = "ChooseClass_InGame";
+    game.menu[ #"menu_changeclass_custom" ] = "changeclass_custom";
+    game.menu[ #"menu_draft" ] = "PositionDraft";
+    game.menu[ #"menu_controls" ] = "ingame_controls";
+    game.menu[ #"menu_options" ] = "ingame_options";
+    game.menu[ #"menu_leavegame" ] = "popup_leavegame";
+    game.menu[ #"menu_restartgamepopup" ] = "T7Hud_zm_factory";
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xfc7d1264, Offset: 0x2208
 // Size: 0x1c
-function menu_onplayerconnect() {
+function menu_onplayerconnect()
+{
     self thread menu_onmenuresponse();
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x6c84fdb, Offset: 0x2230
 // Size: 0x4c
-function zm_map_restart() {
-    self endon(#"disconnect");
-    while (!function_65f7de49()) {
-        waitframe(1);
+function zm_map_restart()
+{
+    self endon( #"disconnect" );
+    
+    while ( !function_65f7de49() )
+    {
+        waitframe( 1 );
     }
-    map_restart(1);
+    
+    map_restart( 1 );
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x21ddafd7, Offset: 0x2288
 // Size: 0x89c
-function menu_onmenuresponse() {
-    self endon(#"disconnect");
-    for (;;) {
-        waitresult = self waittill(#"menuresponse");
+function menu_onmenuresponse()
+{
+    self endon( #"disconnect" );
+    
+    for ( ;; )
+    {
+        waitresult = self waittill( #"menuresponse" );
         menu = waitresult.menu;
         response = waitresult.response;
         intval = waitresult.intpayload;
-        if (response == "back") {
+        
+        if ( response == "back" )
+        {
             self closeingamemenu();
-            if (level.console) {
-                if (menu == game.menu[#"menu_changeclass"] || menu == game.menu_changeclass_offline || menu == game.menu[#"menu_team"] || menu == game.menu[#"menu_controls"]) {
-                    if (self.pers[#"team"] == #"allies") {
-                        self openmenu(game.menu[#"menu_start_menu"]);
+            
+            if ( level.console )
+            {
+                if ( menu == game.menu[ #"menu_changeclass" ] || menu == game.menu_changeclass_offline || menu == game.menu[ #"menu_team" ] || menu == game.menu[ #"menu_controls" ] )
+                {
+                    if ( self.pers[ #"team" ] == #"allies" )
+                    {
+                        self openmenu( game.menu[ #"menu_start_menu" ] );
                     }
-                    if (self.pers[#"team"] == #"axis") {
-                        self openmenu(game.menu[#"menu_start_menu"]);
+                    
+                    if ( self.pers[ #"team" ] == #"axis" )
+                    {
+                        self openmenu( game.menu[ #"menu_start_menu" ] );
                     }
                 }
             }
+            
             continue;
         }
-        if (response == "changeteam" && level.allow_teamchange) {
+        
+        if ( response == "changeteam" && level.allow_teamchange )
+        {
             self closeingamemenu();
-            self openmenu(game.menu[#"menu_team"]);
+            self openmenu( game.menu[ #"menu_team" ] );
         }
-        if (response == "changeclass_marines") {
+        
+        if ( response == "changeclass_marines" )
+        {
             self closeingamemenu();
-            self openmenu(game.menu[#"menu_changeclass_allies"]);
+            self openmenu( game.menu[ #"menu_changeclass_allies" ] );
             continue;
         }
-        if (response == "changeclass_opfor") {
+        
+        if ( response == "changeclass_opfor" )
+        {
             self closeingamemenu();
-            self openmenu(game.menu[#"menu_changeclass_axis"]);
+            self openmenu( game.menu[ #"menu_changeclass_axis" ] );
             continue;
         }
-        if (response == "changeclass_custom") {
+        
+        if ( response == "changeclass_custom" )
+        {
             self closeingamemenu();
-            self openmenu(game.menu[#"menu_changeclass_custom"]);
+            self openmenu( game.menu[ #"menu_changeclass_custom" ] );
             continue;
         }
-        if (response == "changeclass_marines_splitscreen") {
-            self openmenu("changeclass_marines_splitscreen");
+        
+        if ( response == "changeclass_marines_splitscreen" )
+        {
+            self openmenu( "changeclass_marines_splitscreen" );
         }
-        if (response == "changeclass_opfor_splitscreen") {
-            self openmenu("changeclass_opfor_splitscreen");
+        
+        if ( response == "changeclass_opfor_splitscreen" )
+        {
+            self openmenu( "changeclass_opfor_splitscreen" );
         }
-        if (response == "endgame") {
-            if (self issplitscreen()) {
+        
+        if ( response == "endgame" )
+        {
+            if ( self issplitscreen() )
+            {
                 level.skipvote = 1;
-                if (!(isdefined(level.gameended) && level.gameended)) {
+                
+                if ( !( isdefined( level.gameended ) && level.gameended ) )
+                {
                     self zm_laststand::add_weighted_down();
-                    self zm_stats::increment_client_stat("deaths");
-                    self zm_stats::increment_player_stat("deaths");
+                    self zm_stats::increment_client_stat( "deaths" );
+                    self zm_stats::increment_player_stat( "deaths" );
                     level.host_ended_game = 1;
-                    foreach (player in getplayers()) {
-                        player val::set(#"game_end", "freezecontrols");
-                        player val::set(#"game_end", "disablegadgets");
+                    
+                    foreach ( player in getplayers() )
+                    {
+                        player val::set( #"game_end", "freezecontrols" );
+                        player val::set( #"game_end", "disablegadgets" );
                     }
-                    level notify(#"end_game");
+                    
+                    level notify( #"end_game" );
                 }
             }
+            
             continue;
         }
-        if (response == "killserverpc") {
+        
+        if ( response == "killserverpc" )
+        {
             level thread globallogic::killserverpc();
             continue;
         }
-        if (response == "endround") {
-            if (!(isdefined(level.gameended) && level.gameended)) {
+        
+        if ( response == "endround" )
+        {
+            if ( !( isdefined( level.gameended ) && level.gameended ) )
+            {
                 self globallogic::gamehistoryplayerquit();
                 self zm_laststand::add_weighted_down();
                 self closeingamemenu();
                 level.host_ended_game = 1;
-                foreach (player in getplayers()) {
-                    player val::set(#"game_end", "freezecontrols");
-                    player val::set(#"game_end", "disablegadgets");
+                
+                foreach ( player in getplayers() )
+                {
+                    player val::set( #"game_end", "freezecontrols" );
+                    player val::set( #"game_end", "disablegadgets" );
                 }
-                level notify(#"end_game");
-            } else {
-                self closeingamemenu();
-                self iprintln(#"mp/host_endgame_response");
+                
+                level notify( #"end_game" );
             }
+            else
+            {
+                self closeingamemenu();
+                self iprintln( #"mp/host_endgame_response" );
+            }
+            
             continue;
         }
-        if (response == "autocontrol") {
+        
+        if ( response == "autocontrol" )
+        {
             self [[ level.autocontrolplayer ]]();
             continue;
         }
-        if (menu == game.menu[#"menu_team"] && level.allow_teamchange) {
-            switch (response) {
-            case #"allies":
-                self [[ level.allies ]]();
-                break;
-            case #"axis":
-                self [[ level.teammenu ]](response);
-                break;
-            case #"autoassign":
-                self [[ level.autoassign ]](1);
-                break;
-            case #"spectator":
-                self [[ level.spectator ]]();
-                break;
+        
+        if ( menu == game.menu[ #"menu_team" ] && level.allow_teamchange )
+        {
+            switch ( response )
+            {
+                case #"allies":
+                    self [[ level.allies ]]();
+                    break;
+                case #"axis":
+                    self [[ level.teammenu ]]( response );
+                    break;
+                case #"autoassign":
+                    self [[ level.autoassign ]]( 1 );
+                    break;
+                case #"spectator":
+                    self [[ level.spectator ]]();
+                    break;
             }
+            
             continue;
         }
-        if (menu == game.menu[#"menu_changeclass"] || menu == game.menu[#"menu_changeclass_offline"] || menu == game.menu[#"menu_changeclass_custom"]) {
+        
+        if ( menu == game.menu[ #"menu_changeclass" ] || menu == game.menu[ #"menu_changeclass_offline" ] || menu == game.menu[ #"menu_changeclass_custom" ] )
+        {
             self closeingamemenu();
             self.selectedclass = 1;
-            self [[ level.curclass ]](response);
+            self [[ level.curclass ]]( response );
         }
     }
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xc379403a, Offset: 0x2b30
 // Size: 0x1ee
-function menuallieszombies() {
-    if (!level.console && !level.allow_teamchange && isdefined(self.hasdonecombat) && self.hasdonecombat) {
+function menuallieszombies()
+{
+    if ( !level.console && !level.allow_teamchange && isdefined( self.hasdonecombat ) && self.hasdonecombat )
+    {
         return;
     }
-    if (self.pers[#"team"] != #"allies") {
-        if (level.ingraceperiod && (!isdefined(self.hasdonecombat) || !self.hasdonecombat)) {
+    
+    if ( self.pers[ #"team" ] != #"allies" )
+    {
+        if ( level.ingraceperiod && ( !isdefined( self.hasdonecombat ) || !self.hasdonecombat ) )
+        {
             self.hasspawned = 0;
         }
-        if (self.sessionstate == "playing") {
+        
+        if ( self.sessionstate == "playing" )
+        {
             self.switching_teams = 1;
             self.joining_team = #"allies";
-            self.leaving_team = self.pers[#"team"];
+            self.leaving_team = self.pers[ #"team" ];
             self suicide();
         }
-        self.pers[#"team"] = #"allies";
+        
+        self.pers[ #"team" ] = #"allies";
         self.team = #"allies";
-        self.pers[#"class"] = undefined;
+        self.pers[ #"class" ] = undefined;
         self.curclass = undefined;
-        self.pers[#"weapon"] = undefined;
-        self.pers[#"savedmodel"] = undefined;
+        self.pers[ #"weapon" ] = undefined;
+        self.pers[ #"savedmodel" ] = undefined;
         self.sessionteam = #"allies";
-        self player::function_466d8a4b(0);
-        self notify(#"end_respawn");
+        self player::function_466d8a4b( 0 );
+        self notify( #"end_respawn" );
     }
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xc370c84, Offset: 0x2d28
 // Size: 0x34
-function custom_spawn_init_func() {
-    array::thread_all(level.zombie_spawners, &spawner::add_spawn_function, level._zombies_round_spawn_failsafe);
+function custom_spawn_init_func()
+{
+    array::thread_all( level.zombie_spawners, &spawner::add_spawn_function, level._zombies_round_spawn_failsafe );
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x82939358, Offset: 0x2d68
 // Size: 0x5c
-function init() {
-    level flag::init("pregame");
-    level flag::set("pregame");
+function init()
+{
+    level flag::init( "pregame" );
+    level flag::set( "pregame" );
     level thread onplayerconnect();
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x7529fc39, Offset: 0x2dd0
 // Size: 0x78
-function onplayerconnect() {
-    for (;;) {
-        waitresult = level waittill(#"connected");
+function onplayerconnect()
+{
+    for ( ;; )
+    {
+        waitresult = level waittill( #"connected" );
         waitresult.player thread onplayerspawned();
-        if (isdefined(level.var_2742b26e)) {
+        
+        if ( isdefined( level.var_2742b26e ) )
+        {
             waitresult.player [[ level.var_2742b26e ]]();
         }
     }
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x1737c68, Offset: 0x2e50
 // Size: 0x23c
-function onplayerspawned() {
-    level endon(#"end_game");
-    self endon(#"disconnect");
-    for (;;) {
-        self util::waittill_either("spawned_player", "fake_spawned_player");
-        if (isdefined(level.match_is_ending) && level.match_is_ending) {
+function onplayerspawned()
+{
+    level endon( #"end_game" );
+    self endon( #"disconnect" );
+    
+    for ( ;; )
+    {
+        self util::waittill_either( "spawned_player", "fake_spawned_player" );
+        
+        if ( isdefined( level.match_is_ending ) && level.match_is_ending )
+        {
             return;
         }
-        if (self laststand::player_is_in_laststand()) {
-            self thread zm_laststand::auto_revive(self);
+        
+        if ( self laststand::player_is_in_laststand() )
+        {
+            self thread zm_laststand::auto_revive( self );
         }
-        if (isdefined(level.var_3129849c)) {
+        
+        if ( isdefined( level.var_3129849c ) )
+        {
             self [[ level.var_3129849c ]]();
         }
-        self setstance("stand");
+        
+        self setstance( "stand" );
         self.zmbdialogqueue = [];
         self.zmbdialogactive = 0;
         self.zmbdialoggroups = [];
         self.zmbdialoggroup = "";
         self takeallweapons();
-        self giveweapon(level.weaponbasemelee);
-        if (isdefined(level.onplayerspawned_restore_previous_weapons) && isdefined(level.isresetting_grief) && level.isresetting_grief) {
+        self giveweapon( level.weaponbasemelee );
+        
+        if ( isdefined( level.onplayerspawned_restore_previous_weapons ) && isdefined( level.isresetting_grief ) && level.isresetting_grief )
+        {
             weapons_restored = self [[ level.onplayerspawned_restore_previous_weapons ]]();
         }
-        if (!(isdefined(weapons_restored) && weapons_restored)) {
-            self zm_loadout::give_start_weapon(1);
+        
+        if ( !( isdefined( weapons_restored ) && weapons_restored ) )
+        {
+            self zm_loadout::give_start_weapon( 1 );
         }
+        
         weapons_restored = 0;
-        if (isdefined(level._team_loadout)) {
-            self giveweapon(level._team_loadout);
-            self switchtoweapon(level._team_loadout);
+        
+        if ( isdefined( level._team_loadout ) )
+        {
+            self giveweapon( level._team_loadout );
+            self switchtoweapon( level._team_loadout );
         }
-        if (isdefined(level.var_3c7ec322)) {
+        
+        if ( isdefined( level.var_3c7ec322 ) )
+        {
             self [[ level.var_3c7ec322 ]]();
         }
     }
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xcd1a8fee, Offset: 0x3098
 // Size: 0x84
-function onplayerconnect_check_for_hotjoin() {
+function onplayerconnect_check_for_hotjoin()
+{
     /#
-        if (getdvarint(#"zm_instajoin", 0) > 0) {
+        if ( getdvarint( #"zm_instajoin", 0 ) > 0 )
+        {
             return;
         }
     #/
-    if (level flag::get("start_zombie_round_logic") && !(isdefined(level.var_e52901a5) && level.var_e52901a5)) {
+    
+    if ( level flag::get( "start_zombie_round_logic" ) && !( isdefined( level.var_e52901a5 ) && level.var_e52901a5 ) )
+    {
         self thread player_hotjoin();
     }
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x46d25b50, Offset: 0x3128
 // Size: 0x2a4
-function player_hotjoin() {
-    self endon(#"disconnect");
+function player_hotjoin()
+{
+    self endon( #"disconnect" );
     self.rebuild_barrier_reward = 1;
     self.is_hotjoining = 1;
-    val::set(#"initial_black", "hide");
-    val::set(#"initial_black", "takedamage", 0);
-    val::set(#"initial_black", "ignoreme");
-    val::set(#"initial_black", "freezecontrols");
+    val::set( #"initial_black", "hide" );
+    val::set( #"initial_black", "takedamage", 0 );
+    val::set( #"initial_black", "ignoreme" );
+    val::set( #"initial_black", "freezecontrols" );
     wait 0.5;
     self zm_player::spawnspectator();
-    music::setmusicstate("none");
+    music::setmusicstate( "none" );
     self.is_hotjoining = 0;
     self.is_hotjoin = 1;
-    if (isdefined(level.intermission) && level.intermission || isdefined(level.host_ended_game) && level.host_ended_game) {
-        self setclientthirdperson(0);
+    
+    if ( isdefined( level.intermission ) && level.intermission || isdefined( level.host_ended_game ) && level.host_ended_game )
+    {
+        self setclientthirdperson( 0 );
         self resetfov();
         self.health = 100;
         self thread [[ level.custom_intermission ]]();
     }
-    self util::streamer_wait(undefined, 0, 30);
-    if (isdefined(level.var_58d27156)) {
+    
+    self util::streamer_wait( undefined, 0, 30 );
+    
+    if ( isdefined( level.var_58d27156 ) )
+    {
         wait level.var_58d27156;
     }
+    
     initialblackend();
-    val::reset(#"initial_black", "hide");
-    val::reset(#"initial_black", "takedamage");
-    val::reset(#"initial_black", "freezecontrols");
-    val::reset(#"initial_black", "ignoreme");
+    val::reset( #"initial_black", "hide" );
+    val::reset( #"initial_black", "takedamage" );
+    val::reset( #"initial_black", "freezecontrols" );
+    val::reset( #"initial_black", "ignoreme" );
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xd2172077, Offset: 0x33d8
 // Size: 0x3c
-function initialblackend() {
-    initial_black = lui::get_luimenu("InitialBlack");
-    initial_black initial_black::close(self);
+function initialblackend()
+{
+    initial_black = lui::get_luimenu( "InitialBlack" );
+    initial_black initial_black::close( self );
 }
 
 // Namespace zm_gametype/zm_gametype
 // Params 1, eflags: 0x4
 // Checksum 0xb1689725, Offset: 0x3420
 // Size: 0x20
-function private function_788fb510(value) {
-    if (!isdefined(value)) {
+function private function_788fb510( value )
+{
+    if ( !isdefined( value ) )
+    {
         return "";
     }
+    
     return value;
 }
 
 // Namespace zm_gametype/zm_gametype
-// Params 8, eflags: 0x0
+// Params 8
 // Checksum 0x3f9b6887, Offset: 0x3448
 // Size: 0x134
-function setvisiblescoreboardcolumns(col1, col2, col3, col4, col5, col6, col7, col8) {
-    col1 = function_788fb510(col1);
-    col2 = function_788fb510(col2);
-    col3 = function_788fb510(col3);
-    col4 = function_788fb510(col4);
-    col5 = function_788fb510(col5);
-    col6 = function_788fb510(col6);
-    col7 = function_788fb510(col7);
-    col8 = function_788fb510(col8);
-    setscoreboardcolumns(col1, col2, col3, col4, col5, col6, col7, col8);
+function setvisiblescoreboardcolumns( col1, col2, col3, col4, col5, col6, col7, col8 )
+{
+    col1 = function_788fb510( col1 );
+    col2 = function_788fb510( col2 );
+    col3 = function_788fb510( col3 );
+    col4 = function_788fb510( col4 );
+    col5 = function_788fb510( col5 );
+    col6 = function_788fb510( col6 );
+    col7 = function_788fb510( col7 );
+    col8 = function_788fb510( col8 );
+    setscoreboardcolumns( col1, col2, col3, col4, col5, col6, col7, col8 );
 }
 

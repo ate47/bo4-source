@@ -11,7 +11,8 @@
 // Params 1, eflags: 0x40
 // Checksum 0x55eb4a51, Offset: 0x98
 // Size: 0x24
-function event_handler[gametype_init] main(eventstruct) {
-    ztcm::main(eventstruct);
+function event_handler[gametype_init] main( eventstruct )
+{
+    ztcm::main( eventstruct );
 }
 

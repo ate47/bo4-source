@@ -11,20 +11,22 @@
 #namespace globallogic_actor;
 
 // Namespace globallogic_actor/globallogic_actor
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x49fb347c, Offset: 0xb0
 // Size: 0x3c
-function callback_actorspawned(spawner) {
-    self thread spawner::spawn_think(spawner);
-    bb::logaispawn(self, spawner);
+function callback_actorspawned( spawner )
+{
+    self thread spawner::spawn_think( spawner );
+    bb::logaispawn( self, spawner );
 }
 
 // Namespace globallogic_actor/globallogic_actor
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x4180384f, Offset: 0xf8
 // Size: 0x3c
-function callback_actorcloned(original) {
-    destructserverutils::copydestructstate(original, self);
-    gibserverutils::copygibstate(original, self);
+function callback_actorcloned( original )
+{
+    destructserverutils::copydestructstate( original, self );
+    gibserverutils::copygibstate( original, self );
 }
 

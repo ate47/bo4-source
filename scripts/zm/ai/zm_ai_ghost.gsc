@@ -52,35 +52,39 @@
 // Params 0, eflags: 0x2
 // Checksum 0x34afb20d, Offset: 0x248
 // Size: 0x44
-function autoexec __init__system__() {
-    system::register(#"zm_ai_ghost", &__init__, &__main__, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"zm_ai_ghost", &__init__, &__main__, undefined );
 }
 
 // Namespace zm_ai_ghost/zm_ai_ghost
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x93985552, Offset: 0x298
 // Size: 0x74
-function __init__() {
-    spawner::add_archetype_spawn_function(#"ghost", &function_cc3e52ff);
-    spawner::add_archetype_spawn_function(#"ghost", &function_fe6a9772);
+function __init__()
+{
+    spawner::add_archetype_spawn_function( #"ghost", &function_cc3e52ff );
+    spawner::add_archetype_spawn_function( #"ghost", &function_fe6a9772 );
     zm_ai_ghost_interface::function_fd76c3b();
 }
 
 // Namespace zm_ai_ghost/zm_ai_ghost
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x80f724d1, Offset: 0x318
 // Size: 0x4
-function __main__() {
+function __main__()
+{
     
 }
 
 // Namespace zm_ai_ghost/zm_ai_ghost
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x47a8fd4f, Offset: 0x328
 // Size: 0x4a
-function function_cc3e52ff() {
-    blackboard::createblackboardforentity(self);
-    ai::createinterfaceforentity(self);
+function function_cc3e52ff()
+{
+    blackboard::createblackboardforentity( self );
+    ai::createinterfaceforentity( self );
     self.___archetypeonanimscriptedcallback = &function_f093c843;
 }
 
@@ -88,7 +92,8 @@ function function_cc3e52ff() {
 // Params 1, eflags: 0x4
 // Checksum 0xd353f921, Offset: 0x380
 // Size: 0x2c
-function private function_f093c843(entity) {
+function private function_f093c843( entity )
+{
     entity.__blackboard = undefined;
     entity function_cc3e52ff();
 }
@@ -97,33 +102,43 @@ function private function_f093c843(entity) {
 // Params 0, eflags: 0x4
 // Checksum 0x141d032e, Offset: 0x3b8
 // Size: 0x122
-function private function_fe6a9772() {
-    self setblackboardattribute("_locomotion_speed", "locomotion_speed_walk");
-    if (!isdefined(self.zombie_arms_position)) {
-        if (randomint(2) == 0) {
+function private function_fe6a9772()
+{
+    self setblackboardattribute( "_locomotion_speed", "locomotion_speed_walk" );
+    
+    if ( !isdefined( self.zombie_arms_position ) )
+    {
+        if ( randomint( 2 ) == 0 )
+        {
             self.zombie_arms_position = "up";
-        } else {
+        }
+        else
+        {
             self.zombie_arms_position = "down";
         }
     }
+    
     self.zombie_move_speed = "walk";
-    self.variant_type = randomint(level.zm_variant_type_max[self.zombie_move_speed][self.zombie_arms_position]);
+    self.variant_type = randomint( level.zm_variant_type_max[ self.zombie_move_speed ][ self.zombie_arms_position ] );
     self.zombie_think_done = 1;
-    self setavoidancemask("avoid none");
-    self collidewithactors(0);
-    self setplayercollision(0);
+    self setavoidancemask( "avoid none" );
+    self collidewithactors( 0 );
+    self setplayercollision( 0 );
     self.var_ccefa6dd = 1;
 }
 
 // Namespace zm_ai_ghost/zm_ai_ghost
-// Params 4, eflags: 0x0
+// Params 4
 // Checksum 0x7eb0b731, Offset: 0x4e8
 // Size: 0x7c
-function function_cea6c2e0(entity, attribute, oldvalue, value) {
-    if (value === 1) {
-        entity setblackboardattribute("_locomotion_speed", "locomotion_speed_run");
+function function_cea6c2e0( entity, attribute, oldvalue, value )
+{
+    if ( value === 1 )
+    {
+        entity setblackboardattribute( "_locomotion_speed", "locomotion_speed_run" );
         return;
     }
-    entity setblackboardattribute("_locomotion_speed", "locomotion_speed_walk");
+    
+    entity setblackboardattribute( "_locomotion_speed", "locomotion_speed_walk" );
 }
 

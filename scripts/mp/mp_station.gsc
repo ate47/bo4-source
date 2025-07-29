@@ -14,54 +14,65 @@
 // Params 1, eflags: 0x40
 // Checksum 0x99a722fb, Offset: 0x118
 // Size: 0xcc
-function event_handler[level_init] main(eventstruct) {
+function event_handler[level_init] main( eventstruct )
+{
     load::main();
-    compass::setupminimap("");
-    level.cleandepositpoints = array((-144, -1706, 176), (-2652, 782, -23), (1496, -624, 200), (-1518, -1132, -16), (1992, 496, 32));
-    callback::on_game_playing(&on_game_playing);
+    compass::setupminimap( "" );
+    level.cleandepositpoints = array( ( -144, -1706, 176 ), ( -2652, 782, -23 ), ( 1496, -624, 200 ), ( -1518, -1132, -16 ), ( 1992, 496, 32 ) );
+    callback::on_game_playing( &on_game_playing );
     level thread function_2cdcf5c3();
 }
 
 // Namespace mp_station/mp_station
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xfcdee257, Offset: 0x1f0
 // Size: 0x5c
-function function_2cdcf5c3() {
-    if (util::isfirstround()) {
-        while (!draft::function_d255fb3e()) {
-            waitframe(1);
+function function_2cdcf5c3()
+{
+    if ( util::isfirstround() )
+    {
+        while ( !draft::function_d255fb3e() )
+        {
+            waitframe( 1 );
         }
-        level thread scene::play("p8_fxanim_sta_helicopter_flyover_bundle", "Shot 1");
+        
+        level thread scene::play( "p8_fxanim_sta_helicopter_flyover_bundle", "Shot 1" );
     }
 }
 
 // Namespace mp_station/mp_station
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xc08e2942, Offset: 0x258
 // Size: 0x224
-function on_game_playing() {
-    array::delete_all(getentarray("sun_block", "targetname"));
-    wait getdvarfloat(#"hash_205d729c5c415715", 0.3);
-    scene::add_scene_func(#"p8_fxanim_sta_runaway_vehicles_bundle", &function_8efe95d4, "play");
-    scene::add_scene_func(#"p8_fxanim_sta_runaway_truck_wall_bundle", &function_8efe95d4, "play");
-    if (util::isfirstround()) {
-        level util::delay(getdvarfloat(#"hash_187afb4d5f703a4a", 0.2), undefined, &scene::play, "p8_fxanim_sta_helicopter_flyover_bundle", "Shot 2");
-        level util::delay(getdvarfloat(#"hash_395638c05b097129", 0.2), undefined, &scene::play, #"p8_fxanim_sta_runaway_vehicles_bundle");
-        level util::delay(getdvarfloat(#"hash_395638c05b097129", 0.2), undefined, &scene::play, #"p8_fxanim_sta_runaway_truck_wall_bundle");
+function on_game_playing()
+{
+    array::delete_all( getentarray( "sun_block", "targetname" ) );
+    wait getdvarfloat( #"hash_205d729c5c415715", 0.3 );
+    scene::add_scene_func( #"p8_fxanim_sta_runaway_vehicles_bundle", &function_8efe95d4, "play" );
+    scene::add_scene_func( #"p8_fxanim_sta_runaway_truck_wall_bundle", &function_8efe95d4, "play" );
+    
+    if ( util::isfirstround() )
+    {
+        level util::delay( getdvarfloat( #"hash_187afb4d5f703a4a", 0.2 ), undefined, &scene::play, "p8_fxanim_sta_helicopter_flyover_bundle", "Shot 2" );
+        level util::delay( getdvarfloat( #"hash_395638c05b097129", 0.2 ), undefined, &scene::play, #"p8_fxanim_sta_runaway_vehicles_bundle" );
+        level util::delay( getdvarfloat( #"hash_395638c05b097129", 0.2 ), undefined, &scene::play, #"p8_fxanim_sta_runaway_truck_wall_bundle" );
         return;
     }
-    level scene::skipto_end(#"p8_fxanim_sta_runaway_vehicles_bundle");
-    level scene::skipto_end(#"p8_fxanim_sta_runaway_truck_wall_bundle");
+    
+    level scene::skipto_end( #"p8_fxanim_sta_runaway_vehicles_bundle" );
+    level scene::skipto_end( #"p8_fxanim_sta_runaway_truck_wall_bundle" );
 }
 
 // Namespace mp_station/mp_station
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x6565ee48, Offset: 0x488
 // Size: 0x4c
-function function_8efe95d4(a_ents) {
-    if (isdefined(a_ents)) {
-        array::wait_any(a_ents, "death");
-        array::delete_all(a_ents);
+function function_8efe95d4( a_ents )
+{
+    if ( isdefined( a_ents ) )
+    {
+        array::wait_any( a_ents, "death" );
+        array::delete_all( a_ents );
     }
 }
 

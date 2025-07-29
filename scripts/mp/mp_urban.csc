@@ -10,95 +10,126 @@
 // Params 1, eflags: 0x40
 // Checksum 0xc02ce97a, Offset: 0x138
 // Size: 0x106
-function event_handler[level_init] main(eventstruct) {
+function event_handler[level_init] main( eventstruct )
+{
     level.draftxcam = #"ui_cam_draft_common";
     level.var_482af62e = #"hash_12263e5d70551bf9";
-    callback::on_localclient_connect(&on_localclient_connect);
-    callback::on_gameplay_started(&on_gameplay_started);
+    callback::on_localclient_connect( &on_localclient_connect );
+    callback::on_gameplay_started( &on_gameplay_started );
     mp_urban_fx::main();
     mp_urban_sound::main();
     load::main();
     level.domflagbasefxoverride = &dom_flag_base_fx_override;
     level.domflagcapfxoverride = &dom_flag_cap_fx_override;
-    util::waitforclient(0);
+    util::waitforclient( 0 );
     level.endgamexcamname = "ui_cam_endgame_mp_common";
 }
 
 // Namespace mp_urban/mp_urban
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x9d935668, Offset: 0x248
 // Size: 0xf2
-function dom_flag_base_fx_override(flag, team) {
-    switch (flag.name) {
-    case #"a":
-        if (team == #"neutral") {
-            return "ui/fx_dom_marker_neutral_r120";
-        } else {
-            return "ui/fx_dom_marker_team_r120";
-        }
-        break;
-    case #"b":
-        if (team == #"neutral") {
-            return "ui/fx_dom_marker_neutral_r120";
-        } else {
-            return "ui/fx_dom_marker_team_r120";
-        }
-        break;
-    case #"c":
-        if (team == #"neutral") {
-            return "ui/fx_dom_marker_neutral_r120";
-        } else {
-            return "ui/fx_dom_marker_team_r120";
-        }
-        break;
+function dom_flag_base_fx_override( flag, team )
+{
+    switch ( flag.name )
+    {
+        case #"a":
+            if ( team == #"neutral" )
+            {
+                return "ui/fx_dom_marker_neutral_r120";
+            }
+            else
+            {
+                return "ui/fx_dom_marker_team_r120";
+            }
+            
+            break;
+        case #"b":
+            if ( team == #"neutral" )
+            {
+                return "ui/fx_dom_marker_neutral_r120";
+            }
+            else
+            {
+                return "ui/fx_dom_marker_team_r120";
+            }
+            
+            break;
+        case #"c":
+            if ( team == #"neutral" )
+            {
+                return "ui/fx_dom_marker_neutral_r120";
+            }
+            else
+            {
+                return "ui/fx_dom_marker_team_r120";
+            }
+            
+            break;
     }
 }
 
 // Namespace mp_urban/mp_urban
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x2ee73978, Offset: 0x348
 // Size: 0xf2
-function dom_flag_cap_fx_override(flag, team) {
-    switch (flag.name) {
-    case #"a":
-        if (team == #"neutral") {
-            return "ui/fx_dom_cap_indicator_neutral_r120";
-        } else {
-            return "ui/fx_dom_cap_indicator_team_r120";
-        }
-        break;
-    case #"b":
-        if (team == #"neutral") {
-            return "ui/fx_dom_cap_indicator_neutral_r120";
-        } else {
-            return "ui/fx_dom_cap_indicator_team_r120";
-        }
-        break;
-    case #"c":
-        if (team == #"neutral") {
-            return "ui/fx_dom_cap_indicator_neutral_r120";
-        } else {
-            return "ui/fx_dom_cap_indicator_team_r120";
-        }
-        break;
+function dom_flag_cap_fx_override( flag, team )
+{
+    switch ( flag.name )
+    {
+        case #"a":
+            if ( team == #"neutral" )
+            {
+                return "ui/fx_dom_cap_indicator_neutral_r120";
+            }
+            else
+            {
+                return "ui/fx_dom_cap_indicator_team_r120";
+            }
+            
+            break;
+        case #"b":
+            if ( team == #"neutral" )
+            {
+                return "ui/fx_dom_cap_indicator_neutral_r120";
+            }
+            else
+            {
+                return "ui/fx_dom_cap_indicator_team_r120";
+            }
+            
+            break;
+        case #"c":
+            if ( team == #"neutral" )
+            {
+                return "ui/fx_dom_cap_indicator_neutral_r120";
+            }
+            else
+            {
+                return "ui/fx_dom_cap_indicator_team_r120";
+            }
+            
+            break;
     }
 }
 
 // Namespace mp_urban/mp_urban
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x388a2371, Offset: 0x448
 // Size: 0x2c
-function on_localclient_connect(localclientnum) {
-    waitframe(1);
-    setpbgactivebank(localclientnum, 8);
+function on_localclient_connect( localclientnum )
+{
+    waitframe( 1 );
+    setpbgactivebank( localclientnum, 8 );
 }
 
 // Namespace mp_urban/mp_urban
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x2a313d5b, Offset: 0x480
 // Size: 0x2c
-function on_gameplay_started(localclientnum) {
-    waitframe(1);
-    setpbgactivebank(localclientnum, 1);
+function on_gameplay_started( localclientnum )
+{
+    waitframe( 1 );
+    setpbgactivebank( localclientnum, 1 );
 }
 

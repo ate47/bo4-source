@@ -9,15 +9,17 @@
 // Params 0, eflags: 0x2
 // Checksum 0x1cd8fec3, Offset: 0xd8
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"swat", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"swat", &__init__, undefined, undefined );
 }
 
 // Namespace wz_ai_swat/wz_ai_swat
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x647d64fc, Offset: 0x120
 // Size: 0x14
-function __init__() {
+function __init__()
+{
     registerbehaviorscriptfunctions();
 }
 
@@ -25,48 +27,54 @@ function __init__() {
 // Params 0, eflags: 0x4
 // Checksum 0x49209e03, Offset: 0x140
 // Size: 0x244
-function private registerbehaviorscriptfunctions() {
-    assert(isscriptfunctionptr(&function_e3151f98));
-    behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_62335a0608a02309", &function_e3151f98);
-    assert(isscriptfunctionptr(&function_e5f59cf0));
-    behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_4a938922d1af0c4d", &function_e5f59cf0);
-    assert(isscriptfunctionptr(&function_3c677dcd));
-    behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_4cc583c8bb841d4c", &function_3c677dcd);
-    assert(isscriptfunctionptr(&function_994477c0));
-    behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_3861dc092e2bcf88", &function_994477c0);
-    assert(isscriptfunctionptr(&function_fb9f1f3b));
-    behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_48334fe2b83169f2", &function_fb9f1f3b);
-    animationstatenetwork::registeranimationmocomp("mocomp_swat_team_pain", &function_6edff1e1, undefined, &function_8acd749d);
+function private registerbehaviorscriptfunctions()
+{
+    assert( isscriptfunctionptr( &function_e3151f98 ) );
+    behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_62335a0608a02309", &function_e3151f98 );
+    assert( isscriptfunctionptr( &function_e5f59cf0 ) );
+    behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_4a938922d1af0c4d", &function_e5f59cf0 );
+    assert( isscriptfunctionptr( &function_3c677dcd ) );
+    behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_4cc583c8bb841d4c", &function_3c677dcd );
+    assert( isscriptfunctionptr( &function_994477c0 ) );
+    behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_3861dc092e2bcf88", &function_994477c0 );
+    assert( isscriptfunctionptr( &function_fb9f1f3b ) );
+    behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_48334fe2b83169f2", &function_fb9f1f3b );
+    animationstatenetwork::registeranimationmocomp( "mocomp_swat_team_pain", &function_6edff1e1, undefined, &function_8acd749d );
 }
 
 // Namespace wz_ai_swat/wz_ai_swat
-// Params 5, eflags: 0x0
+// Params 5
 // Checksum 0x2b63b8d3, Offset: 0x390
 // Size: 0xa2
-function function_6edff1e1(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
-    entity orientmode("face angle", self.angles[1]);
-    entity animmode("zonly_physics", 1);
-    entity pathmode("dont move");
+function function_6edff1e1( entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration )
+{
+    entity orientmode( "face angle", self.angles[ 1 ] );
+    entity animmode( "zonly_physics", 1 );
+    entity pathmode( "dont move" );
     entity.blockingpain = 1;
 }
 
 // Namespace wz_ai_swat/wz_ai_swat
-// Params 5, eflags: 0x0
+// Params 5
 // Checksum 0xf7f62cd2, Offset: 0x440
 // Size: 0x5a
-function function_8acd749d(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
-    entity pathmode("move allowed");
+function function_8acd749d( entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration )
+{
+    entity pathmode( "move allowed" );
     entity.blockingpain = 0;
 }
 
 // Namespace wz_ai_swat/wz_ai_swat
 // Params 1, eflags: 0x4
 // Checksum 0x1e134a79, Offset: 0x4a8
-// Size: 0x30
-function private function_e3151f98(entity) {
-    if (entity.subarchetype === #"human_swat_gunner") {
+// Size: 0x30, Type: bool
+function private function_e3151f98( entity )
+{
+    if ( entity.subarchetype === #"human_swat_gunner" )
+    {
         return true;
     }
+    
     return false;
 }
 
@@ -74,36 +82,43 @@ function private function_e3151f98(entity) {
 // Params 1, eflags: 0x4
 // Checksum 0xaaa95774, Offset: 0x4e0
 // Size: 0x24
-function private function_e5f59cf0(entity) {
+function private function_e5f59cf0( entity )
+{
     entity unlink();
 }
 
 // Namespace wz_ai_swat/wz_ai_swat
 // Params 1, eflags: 0x4
 // Checksum 0xa574f710, Offset: 0x510
-// Size: 0x76
-function private function_3c677dcd(entity) {
-    if (isdefined(entity.enemy)) {
-        if (util::within_fov(entity.origin, entity.angles, entity.enemy.origin, cos(90))) {
+// Size: 0x76, Type: bool
+function private function_3c677dcd( entity )
+{
+    if ( isdefined( entity.enemy ) )
+    {
+        if ( util::within_fov( entity.origin, entity.angles, entity.enemy.origin, cos( 90 ) ) )
+        {
             return true;
         }
     }
+    
     return false;
 }
 
 // Namespace wz_ai_swat/wz_ai_swat
 // Params 1, eflags: 0x4
 // Checksum 0x997fcd0f, Offset: 0x590
-// Size: 0xe
-function private function_994477c0(entity) {
+// Size: 0xe, Type: bool
+function private function_994477c0( entity )
+{
     return false;
 }
 
 // Namespace wz_ai_swat/wz_ai_swat
 // Params 1, eflags: 0x4
 // Checksum 0x3c96c04a, Offset: 0x5a8
-// Size: 0xe
-function private function_fb9f1f3b(entity) {
+// Size: 0xe, Type: bool
+function private function_fb9f1f3b( entity )
+{
     return false;
 }
 

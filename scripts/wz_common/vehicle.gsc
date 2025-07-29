@@ -24,47 +24,50 @@
 // Params 0, eflags: 0x2
 // Checksum 0x99c1ca19, Offset: 0x7d8
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"wz_vehicle", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"wz_vehicle", &__init__, undefined, undefined );
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x2a682ffe, Offset: 0x820
 // Size: 0x4c4
-function __init__() {
-    level.var_9c103fe0 = ["player_atv", "cargo_truck_wz", "helicopter_light", "tactical_raft_wz", "player_fav", "pbr_boat_wz", "helicopter_utility", "player_suv", "player_muscle", "player_tank", "player_motorcycle"];
-    vehicle::add_main_callback("player_atv", &function_500291c4);
-    vehicle::add_main_callback("cargo_truck_wz", &function_8278ed00);
-    vehicle::add_main_callback("helicopter_light", &function_b1d54776);
-    vehicle::add_main_callback("helicopter_utility", &function_8fb65b2a);
-    vehicle::add_main_callback("tactical_raft_wz", &function_6b617752);
-    vehicle::add_main_callback("player_fav", &function_bd3b5229);
-    vehicle::add_main_callback("pbr_boat_wz", &function_cc0af45d);
-    vehicle::add_main_callback("player_suv", &function_79500af5);
-    vehicle::add_main_callback("player_muscle", &function_fb9c790a);
-    vehicle::add_main_callback("player_tank", &function_c0f1d81b);
-    vehicle::add_main_callback("player_motorcycle", &function_cb575bc3);
-    callback::on_vehicle_damage(&on_vehicle_damage);
-    callback::on_player_damage(&on_player_damage);
-    callback::on_player_killed_with_params(&on_player_killed);
-    callback::on_end_game(&on_end_game);
-    callback::on_vehicle_spawned(&vehicle_spawned);
-    clientfield::register("scriptmover", "deathfx", 1, 1, "int");
-    clientfield::register("vehicle", "overheat_fx", 9000, 1, "int");
-    clientfield::register("vehicle", "replacer_fx", 1, 1, "int");
-    clientfield::register("toplayer", "toggle_vehicle_sensor", 1, 1, "int");
-    clientfield::register("scriptmover", "tank_deathfx", 22000, 1, "int");
+function __init__()
+{
+    level.var_9c103fe0 = [ "player_atv", "cargo_truck_wz", "helicopter_light", "tactical_raft_wz", "player_fav", "pbr_boat_wz", "helicopter_utility", "player_suv", "player_muscle", "player_tank", "player_motorcycle" ];
+    vehicle::add_main_callback( "player_atv", &function_500291c4 );
+    vehicle::add_main_callback( "cargo_truck_wz", &function_8278ed00 );
+    vehicle::add_main_callback( "helicopter_light", &function_b1d54776 );
+    vehicle::add_main_callback( "helicopter_utility", &function_8fb65b2a );
+    vehicle::add_main_callback( "tactical_raft_wz", &function_6b617752 );
+    vehicle::add_main_callback( "player_fav", &function_bd3b5229 );
+    vehicle::add_main_callback( "pbr_boat_wz", &function_cc0af45d );
+    vehicle::add_main_callback( "player_suv", &function_79500af5 );
+    vehicle::add_main_callback( "player_muscle", &function_fb9c790a );
+    vehicle::add_main_callback( "player_tank", &function_c0f1d81b );
+    vehicle::add_main_callback( "player_motorcycle", &function_cb575bc3 );
+    callback::on_vehicle_damage( &on_vehicle_damage );
+    callback::on_player_damage( &on_player_damage );
+    callback::on_player_killed_with_params( &on_player_killed );
+    callback::on_end_game( &on_end_game );
+    callback::on_vehicle_spawned( &vehicle_spawned );
+    clientfield::register( "scriptmover", "deathfx", 1, 1, "int" );
+    clientfield::register( "vehicle", "overheat_fx", 9000, 1, "int" );
+    clientfield::register( "vehicle", "replacer_fx", 1, 1, "int" );
+    clientfield::register( "toplayer", "toggle_vehicle_sensor", 1, 1, "int" );
+    clientfield::register( "scriptmover", "tank_deathfx", 22000, 1, "int" );
     level thread function_69c9e9a0();
     level.var_cd8f416a = [];
     level.var_63e0085 = 0;
-    level.var_e5010085 = vehicleturretoverheat::register("vehicleTurretOverheat");
-    level.var_b5add14a = vehicleturretdurability::register("vehicleTurretDurability");
+    level.var_e5010085 = vehicleturretoverheat::register( "vehicleTurretOverheat" );
+    level.var_b5add14a = vehicleturretdurability::register( "vehicleTurretDurability" );
     level.var_2513e40c = &function_2513e40c;
     level.is_staircase_up = &is_staircase_up;
     level.var_7c6454 = 1;
     level.var_80d8731e = 0;
     level.var_6ed50229 = 10;
+    
     /#
         level thread _setup_devgui();
     #/
@@ -75,37 +78,46 @@ function __init__() {
     // Namespace wz_vehicle/vehicle
     // Params 0, eflags: 0x4
     // Checksum 0x189c24ee, Offset: 0xcf0
-    // Size: 0x8e
-    function private function_eaba72c9() {
-        self notify("<dev string:x38>");
-        self endon("<dev string:x38>");
-        while (true) {
-            if (getdvarint(#"wz_delete_vehicles", 0) > 0) {
+    // Size: 0x8e, Type: dev
+    function private function_eaba72c9()
+    {
+        self notify( "<dev string:x38>" );
+        self endon( "<dev string:x38>" );
+        
+        while ( true )
+        {
+            if ( getdvarint( #"wz_delete_vehicles", 0 ) > 0 )
+            {
                 function_40fc185b();
-                setdvar(#"wz_delete_vehicles", 0);
+                setdvar( #"wz_delete_vehicles", 0 );
             }
-            waitframe(1);
+            
+            waitframe( 1 );
         }
     }
 
     // Namespace wz_vehicle/vehicle
     // Params 0, eflags: 0x4
     // Checksum 0xb3ca057d, Offset: 0xd88
-    // Size: 0x20
-    function private function_40fc185b() {
-        level notify(#"hash_724a3976e45a71e2");
+    // Size: 0x20, Type: dev
+    function private function_40fc185b()
+    {
+        level notify( #"hash_724a3976e45a71e2" );
     }
 
     // Namespace wz_vehicle/vehicle
     // Params 0, eflags: 0x4
     // Checksum 0xf31bae50, Offset: 0xdb0
-    // Size: 0x84
-    function private _setup_devgui() {
-        while (!canadddebugcommand()) {
-            waitframe(1);
+    // Size: 0x84, Type: dev
+    function private _setup_devgui()
+    {
+        while ( !canadddebugcommand() )
+        {
+            waitframe( 1 );
         }
+        
         mapname = util::get_map_name();
-        adddebugcommand("<dev string:x4b>" + mapname + "<dev string:x5b>");
+        adddebugcommand( "<dev string:x4b>" + mapname + "<dev string:x5b>" );
         level thread function_eaba72c9();
     }
 
@@ -115,24 +127,33 @@ function __init__() {
 // Params 1, eflags: 0x4
 // Checksum 0xaa42b934, Offset: 0xe40
 // Size: 0x18c
-function private function_4c6bcfe2(var_b42f0937 = 0) {
-    level.var_cd8f416a[level.var_cd8f416a.size] = self;
-    if (isdefined(self.scriptbundlesettings)) {
-        self.settings = struct::get_script_bundle("vehiclecustomsettings", self.scriptbundlesettings);
+function private function_4c6bcfe2( var_b42f0937 = 0 )
+{
+    level.var_cd8f416a[ level.var_cd8f416a.size ] = self;
+    
+    if ( isdefined( self.scriptbundlesettings ) )
+    {
+        self.settings = struct::get_script_bundle( "vehiclecustomsettings", self.scriptbundlesettings );
     }
+    
     self.var_ffdf490c = 1;
     self.script_disconnectpaths = 0;
     self.do_scripted_crash = 0;
     self.var_92043a49 = 1;
     self.var_97f1b32a = 1;
-    target_set(self, (0, 0, 0));
-    self callback::function_d8abfc3d(#"hash_1a32e0fdeb70a76b", &function_c25f7d1);
-    if (isdefined(self.settings) && isdefined(self.settings.var_6754976b) && self.settings.var_6754976b) {
-        self callback::function_d8abfc3d(#"hash_6e388f6a0df7bdac", &function_ef44d420);
+    target_set( self, ( 0, 0, 0 ) );
+    self callback::function_d8abfc3d( #"hash_1a32e0fdeb70a76b", &function_c25f7d1 );
+    
+    if ( isdefined( self.settings ) && isdefined( self.settings.var_6754976b ) && self.settings.var_6754976b )
+    {
+        self callback::function_d8abfc3d( #"hash_6e388f6a0df7bdac", &function_ef44d420 );
     }
-    if (var_b42f0937) {
+    
+    if ( var_b42f0937 )
+    {
         self function_bc79899e();
     }
+    
     self thread function_e63726f6();
 }
 
@@ -140,13 +161,15 @@ function private function_4c6bcfe2(var_b42f0937 = 0) {
 // Params 0, eflags: 0x4
 // Checksum 0x3b888a98, Offset: 0xfd8
 // Size: 0x5c
-function private vehicle_spawned() {
+function private vehicle_spawned()
+{
     self.trackingindex = level.var_80d8731e;
     level.var_80d8731e++;
     self.emped = 0;
     self.vehkilloccupantsondeath = 1;
+    
     /#
-        self thread deletemeonnotify(level, "<dev string:x9a>");
+        self thread deletemeonnotify( level, "<dev string:x9a>" );
     #/
 }
 
@@ -154,33 +177,40 @@ function private vehicle_spawned() {
 // Params 0, eflags: 0x4
 // Checksum 0x54275e17, Offset: 0x1040
 // Size: 0xc2
-function private function_bc79899e() {
-    self vehicle_ai::init_state_machine_for_role("default");
-    self vehicle_ai::add_interrupt_connection("driving", "off", "exit_vehicle", &vehicle_ai::function_6664e3af);
-    self vehicle_ai::add_interrupt_connection("driving", "off", "emped_vehicle", &vehicle_ai::function_6664e3af);
-    self vehicle_ai::get_state_callbacks("driving").enter_func = &function_25b9a9b;
+function private function_bc79899e()
+{
+    self vehicle_ai::init_state_machine_for_role( "default" );
+    self vehicle_ai::add_interrupt_connection( "driving", "off", "exit_vehicle", &vehicle_ai::function_6664e3af );
+    self vehicle_ai::add_interrupt_connection( "driving", "off", "emped_vehicle", &vehicle_ai::function_6664e3af );
+    self vehicle_ai::get_state_callbacks( "driving" ).enter_func = &function_25b9a9b;
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0xdd33b738, Offset: 0x1110
 // Size: 0x54
-function private function_7ae07b7() {
-    if (self vehicle_ai::has_state("off")) {
-        vehicle_ai::startinitialstate("off");
+function private function_7ae07b7()
+{
+    if ( self vehicle_ai::has_state( "off" ) )
+    {
+        vehicle_ai::startinitialstate( "off" );
         return;
     }
+    
     self function_ed173e0b();
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0x8c319fbe, Offset: 0x1170
-// Size: 0x36
-function private function_e95a0595() {
-    if (self.scriptvehicletype == "helicopter_light" || self.scriptvehicletype == "helicopter_utility") {
+// Size: 0x36, Type: bool
+function private function_e95a0595()
+{
+    if ( self.scriptvehicletype == "helicopter_light" || self.scriptvehicletype == "helicopter_utility" )
+    {
         return false;
     }
+    
     return true;
 }
 
@@ -188,35 +218,46 @@ function private function_e95a0595() {
 // Params 1, eflags: 0x4
 // Checksum 0x809c8470, Offset: 0x11b0
 // Size: 0x64
-function private function_25b9a9b(params) {
+function private function_25b9a9b( params )
+{
     params.var_c2e048f9 = 1;
-    if (isdefined(self.emped) && self.emped || isdefined(self.isjammed) && self.isjammed) {
+    
+    if ( isdefined( self.emped ) && self.emped || isdefined( self.isjammed ) && self.isjammed )
+    {
         return;
     }
-    self vehicle_ai::defaultstate_driving_enter(params);
+    
+    self vehicle_ai::defaultstate_driving_enter( params );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0x4b02629f, Offset: 0x1220
 // Size: 0x122
-function private turn_on() {
-    if (isdefined(self.emped) && self.emped || isdefined(self.isjammed) && self.isjammed) {
-        if (isairborne(self)) {
+function private turn_on()
+{
+    if ( isdefined( self.emped ) && self.emped || isdefined( self.isjammed ) && self.isjammed )
+    {
+        if ( isairborne( self ) )
+        {
             self takeplayercontrol();
         }
+        
         return;
     }
-    if (isdefined(self.state_machines)) {
+    
+    if ( isdefined( self.state_machines ) )
+    {
         return;
     }
+    
     var_9cd704a7 = spawnstruct();
     var_9cd704a7.var_da88902a = 1;
-    self vehicle_ai::defaultstate_off_exit(var_9cd704a7);
+    self vehicle_ai::defaultstate_off_exit( var_9cd704a7 );
     var_a56c96d1 = spawnstruct();
     var_a56c96d1.var_c2e048f9 = 1;
     var_a56c96d1.turn_off = &turn_off;
-    self vehicle_ai::defaultstate_driving_enter(var_a56c96d1);
+    self vehicle_ai::defaultstate_driving_enter( var_a56c96d1 );
     self.var_52e23e90 = 1;
 }
 
@@ -224,34 +265,42 @@ function private turn_on() {
 // Params 0, eflags: 0x4
 // Checksum 0xa887b32a, Offset: 0x1350
 // Size: 0x236
-function private turn_off() {
-    if (isdefined(self.state_machines)) {
+function private turn_off()
+{
+    if ( isdefined( self.state_machines ) )
+    {
         return;
     }
-    if (isdefined(self.var_52e23e90) && self.var_52e23e90) {
+    
+    if ( isdefined( self.var_52e23e90 ) && self.var_52e23e90 )
+    {
         self vehicle::function_7f0bbde3();
     }
+    
     self vehicle_ai::defaultstate_driving_exit();
-    self vehicle::toggle_tread_fx(0);
-    self vehicle::toggle_exhaust_fx(0);
-    self vehicle::toggle_sounds(0);
-    self vehicle::function_bbc1d940(0);
+    self vehicle::toggle_tread_fx( 0 );
+    self vehicle::toggle_exhaust_fx( 0 );
+    self vehicle::toggle_sounds( 0 );
+    self vehicle::function_bbc1d940( 0 );
     self disableaimassist();
     params = spawnstruct();
     params.var_c1273f91 = 1;
-    params.laseron = islaseron(self);
+    params.laseron = islaseron( self );
     self vehicle::lights_off();
-    self vehicle::toggle_lights_group(1, 0);
-    self vehicle::toggle_lights_group(2, 0);
-    self vehicle::toggle_lights_group(3, 0);
-    self vehicle::toggle_lights_group(4, 0);
-    self vehicle::toggle_force_driver_taillights(0);
+    self vehicle::toggle_lights_group( 1, 0 );
+    self vehicle::toggle_lights_group( 2, 0 );
+    self vehicle::toggle_lights_group( 3, 0 );
+    self vehicle::toggle_lights_group( 4, 0 );
+    self vehicle::toggle_force_driver_taillights( 0 );
     self vehicle_ai::turnoffallambientanims();
-    if (isairborne(self)) {
-        self setphysacceleration((0, 0, -300));
+    
+    if ( isairborne( self ) )
+    {
+        self setphysacceleration( ( 0, 0, -300 ) );
         self thread vehicle_ai::level_out_for_landing();
-        self setrotorspeed(0);
+        self setrotorspeed( 0 );
     }
+    
     self.var_52e23e90 = undefined;
 }
 
@@ -259,66 +308,88 @@ function private turn_off() {
 // Params 0, eflags: 0x4
 // Checksum 0x8b422559, Offset: 0x1590
 // Size: 0x44
-function private function_ed173e0b() {
-    if (isdefined(self.state_machines)) {
+function private function_ed173e0b()
+{
+    if ( isdefined( self.state_machines ) )
+    {
         return;
     }
+    
     var_9cd704a7 = spawnstruct();
-    self vehicle_ai::defaultstate_off_enter(var_9cd704a7);
+    self vehicle_ai::defaultstate_off_enter( var_9cd704a7 );
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x5d5b3994, Offset: 0x15e0
 // Size: 0x4c
-function function_b8c069cc(notifyhash) {
-    if (notifyhash == #"emped_vehicle") {
-        if (isdefined(self) && isdefined(level.var_fc1bbaef)) {
-            [[ level.var_fc1bbaef ]](self);
+function function_b8c069cc( notifyhash )
+{
+    if ( notifyhash == #"emped_vehicle" )
+    {
+        if ( isdefined( self ) && isdefined( level.var_fc1bbaef ) )
+        {
+            [[ level.var_fc1bbaef ]]( self );
         }
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x3ded215, Offset: 0x1638
 // Size: 0x1ac
-function is_staircase_up(attackingplayer = undefined, jammer = undefined) {
-    if (!isvehicle(self)) {
+function is_staircase_up( attackingplayer = undefined, jammer = undefined )
+{
+    if ( !isvehicle( self ) )
+    {
         return;
     }
-    self notify(#"emped_vehicle");
-    self endon(#"emped_vehicle", #"death");
+    
+    self notify( #"emped_vehicle" );
+    self endon( #"emped_vehicle", #"death" );
     params = spawnstruct();
     emp_duration = 30;
-    if (isdefined(level.var_578f7c6d.customsettings.var_3bd9b483)) {
+    
+    if ( isdefined( level.var_578f7c6d.customsettings.var_3bd9b483 ) )
+    {
         emp_duration = level.var_578f7c6d.customsettings.var_3bd9b483;
     }
+    
     params.param0 = emp_duration;
     params.param1 = attackingplayer;
     params.param2 = jammer;
-    if (isplayer(attackingplayer)) {
-        level callback::callback(#"vehicle_emped", {#attacker:attackingplayer, #vehicle:self});
+    
+    if ( isplayer( attackingplayer ) )
+    {
+        level callback::callback( #"vehicle_emped", { #attacker:attackingplayer, #vehicle:self } );
     }
-    if (isdefined(self.is_staircase_up)) {
-        self [[ self.is_staircase_up ]](params);
+    
+    if ( isdefined( self.is_staircase_up ) )
+    {
+        self [[ self.is_staircase_up ]]( params );
         return;
     }
-    self function_c9620f20(params);
+    
+    self function_c9620f20( params );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0x850176e3, Offset: 0x17f0
-// Size: 0x42
-function private function_d69d0773() {
-    if (!isdefined(self.var_d6a1af09)) {
+// Size: 0x42, Type: bool
+function private function_d69d0773()
+{
+    if ( !isdefined( self.var_d6a1af09 ) )
+    {
         self.var_d6a1af09 = 0;
     }
-    if (gettime() - self.var_d6a1af09 >= 250) {
+    
+    if ( gettime() - self.var_d6a1af09 >= 250 )
+    {
         self.var_d6a1af09 = gettime();
         return true;
     }
+    
     return false;
 }
 
@@ -326,161 +397,212 @@ function private function_d69d0773() {
 // Params 1, eflags: 0x4
 // Checksum 0xadfc8e92, Offset: 0x1840
 // Size: 0xa74
-function private on_vehicle_collision(params) {
-    if (!function_d69d0773()) {
+function private on_vehicle_collision( params )
+{
+    if ( !function_d69d0773() )
+    {
         return;
     }
-    switch (self.scriptvehicletype) {
-    case #"player_atv":
-        var_1fdf316c = getdvarfloat(#"hash_3c9cb797fd1a7f8b", 30);
-        var_a7796a79 = getdvarfloat(#"hash_67059652c5fc1945", 60);
-        mindamage = getdvarfloat(#"hash_1f5d38cc94106adf", 50);
-        maxdamage = getdvarfloat(#"hash_66a67ad27c3cd339", 200);
-        var_1831f049 = 1;
-        var_a1805d6e = 0.7;
-        break;
-    case #"cargo_truck_wz":
-        var_1fdf316c = getdvarfloat(#"hash_4bbc02727c5ebc00", 30);
-        var_a7796a79 = getdvarfloat(#"hash_7d04949e6e62380e", 60);
-        mindamage = getdvarfloat(#"hash_52512d74a3eaae58", 30);
-        maxdamage = getdvarfloat(#"hash_5702452fcb66d0de", 150);
-        var_1831f049 = 2;
-        var_a1805d6e = 0.9;
-        break;
-    case #"player_fav":
-        var_1fdf316c = getdvarfloat(#"hash_21e0e2bc88bf5eee", 30);
-        var_a7796a79 = getdvarfloat(#"hash_7584662ee854d540", 60);
-        mindamage = getdvarfloat(#"hash_435111f252ea9cfe", 40);
-        maxdamage = getdvarfloat(#"hash_3a9f03cd0d3c6a98", 175);
-        var_1831f049 = 2;
-        var_a1805d6e = 0.9;
-        break;
-    case #"player_muscle":
-        var_1fdf316c = getdvarfloat(#"hash_46ffe025ec0e29a3", 30);
-        var_a7796a79 = getdvarfloat(#"hash_1cf739db893af58d", 60);
-        mindamage = getdvarfloat(#"hash_75a62632d4824747", 40);
-        maxdamage = getdvarfloat(#"hash_46431eb054c6591", 175);
-        var_1831f049 = 2;
-        var_a1805d6e = 0.9;
-        break;
-    case #"player_suv":
-        var_1fdf316c = getdvarfloat(#"hash_31bcf3ba672e011a", 30);
-        var_a7796a79 = getdvarfloat(#"hash_6205883210ae5f44", 60);
-        mindamage = getdvarfloat(#"hash_299248d6a8cd7aba", 40);
-        maxdamage = getdvarfloat(#"hash_64fad23d050b27dc", 175);
-        var_1831f049 = 2;
-        var_a1805d6e = 0.9;
-        break;
-    case #"player_tank":
-        var_1fdf316c = getdvarfloat(#"hash_c5ad19a486bd60a", 30);
-        var_a7796a79 = getdvarfloat(#"hash_4f511bbff314c254", 60);
-        mindamage = getdvarfloat(#"hash_11000a506eed148a", 0);
-        maxdamage = getdvarfloat(#"hash_35d85e4c7595b48c", 0);
-        var_1831f049 = 2;
-        var_a1805d6e = 0.9;
-        break;
-    case #"player_motorcycle":
-        var_1fdf316c = getdvarfloat(#"hash_2b5bc92dcb8ebcf9", 30);
-        var_a7796a79 = getdvarfloat(#"hash_201167604d4407b7", 60);
-        mindamage = getdvarfloat(#"hash_1ff8cff709af67d", 20);
-        maxdamage = getdvarfloat(#"hash_6c1be10e4f16becb", 100);
-        var_1831f049 = 2;
-        var_a1805d6e = 0.9;
-        break;
-    default:
-        var_1fdf316c = 30;
-        var_a7796a79 = 60;
-        mindamage = 50;
-        maxdamage = 250;
-        var_1831f049 = 1;
-        var_a1805d6e = 0.9;
-        break;
+    
+    switch ( self.scriptvehicletype )
+    {
+        case #"player_atv":
+            var_1fdf316c = getdvarfloat( #"hash_3c9cb797fd1a7f8b", 30 );
+            var_a7796a79 = getdvarfloat( #"hash_67059652c5fc1945", 60 );
+            mindamage = getdvarfloat( #"hash_1f5d38cc94106adf", 50 );
+            maxdamage = getdvarfloat( #"hash_66a67ad27c3cd339", 200 );
+            var_1831f049 = 1;
+            var_a1805d6e = 0.7;
+            break;
+        case #"cargo_truck_wz":
+            var_1fdf316c = getdvarfloat( #"hash_4bbc02727c5ebc00", 30 );
+            var_a7796a79 = getdvarfloat( #"hash_7d04949e6e62380e", 60 );
+            mindamage = getdvarfloat( #"hash_52512d74a3eaae58", 30 );
+            maxdamage = getdvarfloat( #"hash_5702452fcb66d0de", 150 );
+            var_1831f049 = 2;
+            var_a1805d6e = 0.9;
+            break;
+        case #"player_fav":
+            var_1fdf316c = getdvarfloat( #"hash_21e0e2bc88bf5eee", 30 );
+            var_a7796a79 = getdvarfloat( #"hash_7584662ee854d540", 60 );
+            mindamage = getdvarfloat( #"hash_435111f252ea9cfe", 40 );
+            maxdamage = getdvarfloat( #"hash_3a9f03cd0d3c6a98", 175 );
+            var_1831f049 = 2;
+            var_a1805d6e = 0.9;
+            break;
+        case #"player_muscle":
+            var_1fdf316c = getdvarfloat( #"hash_46ffe025ec0e29a3", 30 );
+            var_a7796a79 = getdvarfloat( #"hash_1cf739db893af58d", 60 );
+            mindamage = getdvarfloat( #"hash_75a62632d4824747", 40 );
+            maxdamage = getdvarfloat( #"hash_46431eb054c6591", 175 );
+            var_1831f049 = 2;
+            var_a1805d6e = 0.9;
+            break;
+        case #"player_suv":
+            var_1fdf316c = getdvarfloat( #"hash_31bcf3ba672e011a", 30 );
+            var_a7796a79 = getdvarfloat( #"hash_6205883210ae5f44", 60 );
+            mindamage = getdvarfloat( #"hash_299248d6a8cd7aba", 40 );
+            maxdamage = getdvarfloat( #"hash_64fad23d050b27dc", 175 );
+            var_1831f049 = 2;
+            var_a1805d6e = 0.9;
+            break;
+        case #"player_tank":
+            var_1fdf316c = getdvarfloat( #"hash_c5ad19a486bd60a", 30 );
+            var_a7796a79 = getdvarfloat( #"hash_4f511bbff314c254", 60 );
+            mindamage = getdvarfloat( #"hash_11000a506eed148a", 0 );
+            maxdamage = getdvarfloat( #"hash_35d85e4c7595b48c", 0 );
+            var_1831f049 = 2;
+            var_a1805d6e = 0.9;
+            break;
+        case #"player_motorcycle":
+            var_1fdf316c = getdvarfloat( #"hash_2b5bc92dcb8ebcf9", 30 );
+            var_a7796a79 = getdvarfloat( #"hash_201167604d4407b7", 60 );
+            mindamage = getdvarfloat( #"hash_1ff8cff709af67d", 20 );
+            maxdamage = getdvarfloat( #"hash_6c1be10e4f16becb", 100 );
+            var_1831f049 = 2;
+            var_a1805d6e = 0.9;
+            break;
+        default:
+            var_1fdf316c = 30;
+            var_a7796a79 = 60;
+            mindamage = 50;
+            maxdamage = 250;
+            var_1831f049 = 1;
+            var_a1805d6e = 0.9;
+            break;
     }
-    if (isdefined(params) && isdefined(params.entity) && params.entity.scriptvehicletype === "player_tank") {
+    
+    if ( isdefined( params ) && isdefined( params.entity ) && params.entity.scriptvehicletype === "player_tank" )
+    {
         tank = params.entity;
-        if (isdefined(tank)) {
-            driver = tank getseatoccupant(0);
-            if (isdefined(driver)) {
-                if (!isdefined(tank.var_9be5a571)) {
+        
+        if ( isdefined( tank ) )
+        {
+            driver = tank getseatoccupant( 0 );
+            
+            if ( isdefined( driver ) )
+            {
+                if ( !isdefined( tank.var_9be5a571 ) )
+                {
                     tank.var_9be5a571 = [];
                 }
-                if (isvehicle(self) && isarray(tank.var_9be5a571) && isalive(self) && self.scriptvehicletype !== "player_tank" && !isinarray(tank.var_9be5a571, self)) {
-                    if (!isdefined(tank.var_9be5a571)) {
+                
+                if ( isvehicle( self ) && isarray( tank.var_9be5a571 ) && isalive( self ) && self.scriptvehicletype !== "player_tank" && !isinarray( tank.var_9be5a571, self ) )
+                {
+                    if ( !isdefined( tank.var_9be5a571 ) )
+                    {
                         tank.var_9be5a571 = [];
-                    } else if (!isarray(tank.var_9be5a571)) {
-                        tank.var_9be5a571 = array(tank.var_9be5a571);
                     }
-                    tank.var_9be5a571[tank.var_9be5a571.size] = self;
+                    else if ( !isarray( tank.var_9be5a571 ) )
+                    {
+                        tank.var_9be5a571 = array( tank.var_9be5a571 );
+                    }
+                    
+                    tank.var_9be5a571[ tank.var_9be5a571.size ] = self;
                 }
             }
         }
     }
+    
     var_2ad7f33b = params.intensity;
-    if (isdefined(var_2ad7f33b) && var_2ad7f33b > var_1fdf316c) {
-        applydamage = mapfloat(var_1fdf316c, var_a7796a79, mindamage, maxdamage, var_2ad7f33b);
-        if (isdefined(params.normal) && params.normal[2] < -0.5) {
-            impactdot = vectordot(anglestoup(self.angles), -1 * params.normal);
-            if (impactdot > var_a1805d6e) {
+    
+    if ( isdefined( var_2ad7f33b ) && var_2ad7f33b > var_1fdf316c )
+    {
+        applydamage = mapfloat( var_1fdf316c, var_a7796a79, mindamage, maxdamage, var_2ad7f33b );
+        
+        if ( isdefined( params.normal ) && params.normal[ 2 ] < -0.5 )
+        {
+            impactdot = vectordot( anglestoup( self.angles ), -1 * params.normal );
+            
+            if ( impactdot > var_a1805d6e )
+            {
                 applydamage *= 0.1;
             }
         }
-        if (isdefined(params.entity) && isvehicle(params.entity)) {
+        
+        if ( isdefined( params.entity ) && isvehicle( params.entity ) )
+        {
             riders = params.entity getvehoccupants();
-            if (isdefined(riders) && isdefined(riders[0])) {
-                attacker = riders[0];
-            } else {
+            
+            if ( isdefined( riders ) && isdefined( riders[ 0 ] ) )
+            {
+                attacker = riders[ 0 ];
+            }
+            else
+            {
                 attacker = self;
             }
         }
-        self dodamage(applydamage, self.origin, attacker);
+        
+        self dodamage( applydamage, self.origin, attacker );
     }
-    if (isdefined(params.entity) && issentient(params.entity)) {
-        if (isdefined(var_2ad7f33b) && var_2ad7f33b > 12) {
-            applydamage = mapfloat(12, 50, 50, 1000, var_2ad7f33b);
-            params.entity dodamage(applydamage * var_1831f049, self.origin, self);
+    
+    if ( isdefined( params.entity ) && issentient( params.entity ) )
+    {
+        if ( isdefined( var_2ad7f33b ) && var_2ad7f33b > 12 )
+        {
+            applydamage = mapfloat( 12, 50, 50, 1000, var_2ad7f33b );
+            params.entity dodamage( applydamage * var_1831f049, self.origin, self );
         }
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x1aebff0f, Offset: 0x22c0
 // Size: 0x1e8
-function function_53f7a11f(player) {
-    self notify("7c6b83f347bc4585");
-    self endon("7c6b83f347bc4585");
-    self endon(#"death");
-    player endon(#"death", #"exit_vehicle", #"change_seat");
+function function_53f7a11f( player )
+{
+    self notify( "7c6b83f347bc4585" );
+    self endon( "7c6b83f347bc4585" );
+    self endon( #"death" );
+    player endon( #"death", #"exit_vehicle", #"change_seat" );
     var_41f2c809 = 0;
-    while (true) {
-        for (i = 0; i < self.var_9be5a571.size; i++) {
-            vehicle = self.var_9be5a571[i];
-            if (isdefined(vehicle) && isvehicle(vehicle)) {
-                dist = distance2dsquared(self.origin, vehicle.origin);
-                if (dist >= 64000) {
-                    arrayremovevalue(self.var_9be5a571, vehicle);
+    
+    while ( true )
+    {
+        for ( i = 0; i < self.var_9be5a571.size ; i++ )
+        {
+            vehicle = self.var_9be5a571[ i ];
+            
+            if ( isdefined( vehicle ) && isvehicle( vehicle ) )
+            {
+                dist = distance2dsquared( self.origin, vehicle.origin );
+                
+                if ( dist >= 64000 )
+                {
+                    arrayremovevalue( self.var_9be5a571, vehicle );
                     continue;
                 }
-                z_dist = self.origin[2] - vehicle.origin[2];
-                if (z_dist > 0 && dist <= 9000) {
-                    if (isalive(vehicle)) {
-                        vehicle dodamage(vehicle.health, self.origin, self);
+                
+                z_dist = self.origin[ 2 ] - vehicle.origin[ 2 ];
+                
+                if ( z_dist > 0 && dist <= 9000 )
+                {
+                    if ( isalive( vehicle ) )
+                    {
+                        vehicle dodamage( vehicle.health, self.origin, self );
                     }
-                    arrayremovevalue(self.var_9be5a571, vehicle);
+                    
+                    arrayremovevalue( self.var_9be5a571, vehicle );
                 }
             }
         }
-        waitframe(1);
+        
+        waitframe( 1 );
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x5526f6b, Offset: 0x24b0
 // Size: 0xba
-function on_player_corpse() {
-    foreach (player in getplayers()) {
-        if (isdefined(player.var_2e8665de) && player.var_2e8665de && self === player.body) {
+function on_player_corpse()
+{
+    foreach ( player in getplayers() )
+    {
+        if ( isdefined( player.var_2e8665de ) && player.var_2e8665de && self === player.body )
+        {
             self hide();
             return;
         }
@@ -488,24 +610,33 @@ function on_player_corpse() {
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x79967a5f, Offset: 0x2578
 // Size: 0x188
-function function_69c9e9a0() {
-    level endon(#"game_ended");
-    while (true) {
-        waitresult = level waittill(#"hash_4aced1739d6627a2");
+function function_69c9e9a0()
+{
+    level endon( #"game_ended" );
+    
+    while ( true )
+    {
+        waitresult = level waittill( #"hash_4aced1739d6627a2" );
         vehicle = waitresult.vehicle;
-        if (!isvehicle(vehicle)) {
+        
+        if ( !isvehicle( vehicle ) )
+        {
             continue;
         }
-        callback::on_player_corpse(&on_player_corpse);
+        
+        callback::on_player_corpse( &on_player_corpse );
         occupants = vehicle getvehoccupants();
-        foreach (occupant in occupants) {
+        
+        foreach ( occupant in occupants )
+        {
             occupant unlink();
             occupant.var_2e8665de = 1;
-            occupant dodamage(occupant.health * 100, occupant.origin);
+            occupant dodamage( occupant.health * 100, occupant.origin );
         }
+        
         vehicle delete();
     }
 }
@@ -514,24 +645,34 @@ function function_69c9e9a0() {
 // Params 1, eflags: 0x4
 // Checksum 0x25f642c9, Offset: 0x2708
 // Size: 0x254
-function private function_7ed26e27(vehicle) {
+function private function_7ed26e27( vehicle )
+{
     vehiclespeed = vehicle getspeedmph();
-    if (vehiclespeed >= getdvarfloat(#"hash_3be3de0273ba927c", 30)) {
-        trace = groundtrace(self.origin + (0, 0, 10), self.origin - (0, 0, 235), 0, self, 0, 0);
-        if (trace[#"fraction"] == 1 || trace[#"surfacetype"] === "water") {
+    
+    if ( vehiclespeed >= getdvarfloat( #"hash_3be3de0273ba927c", 30 ) )
+    {
+        trace = groundtrace( self.origin + ( 0, 0, 10 ), self.origin - ( 0, 0, 235 ), 0, self, 0, 0 );
+        
+        if ( trace[ #"fraction" ] == 1 || trace[ #"surfacetype" ] === "water" )
+        {
             return;
         }
-        var_1fdf316c = getdvarfloat(#"hash_3be3de0273ba927c", 30);
-        var_a7796a79 = getdvarfloat(#"hash_142bd8fcb96c015e", 90);
-        mindamage = getdvarfloat(#"hash_2fa8ec57d76f1cac", 20);
-        maxdamage = getdvarfloat(#"hash_544adad8efeb58b2", 110);
-        var_160753fb = mapfloat(var_1fdf316c, var_a7796a79, mindamage, maxdamage, vehiclespeed);
-        if (var_160753fb > self.health) {
-            if (var_160753fb / 2 < self.health) {
+        
+        var_1fdf316c = getdvarfloat( #"hash_3be3de0273ba927c", 30 );
+        var_a7796a79 = getdvarfloat( #"hash_142bd8fcb96c015e", 90 );
+        mindamage = getdvarfloat( #"hash_2fa8ec57d76f1cac", 20 );
+        maxdamage = getdvarfloat( #"hash_544adad8efeb58b2", 110 );
+        var_160753fb = mapfloat( var_1fdf316c, var_a7796a79, mindamage, maxdamage, vehiclespeed );
+        
+        if ( var_160753fb > self.health )
+        {
+            if ( var_160753fb / 2 < self.health )
+            {
                 var_160753fb = self.health - 1;
             }
         }
-        self dodamage(var_160753fb, self.origin, undefined, undefined, undefined, "MOD_FALLING");
+        
+        self dodamage( var_160753fb, self.origin, undefined, undefined, undefined, "MOD_FALLING" );
     }
 }
 
@@ -539,189 +680,268 @@ function private function_7ed26e27(vehicle) {
 // Params 0, eflags: 0x4
 // Checksum 0x1f8bf107, Offset: 0x2968
 // Size: 0x17c
-function private function_e63726f6() {
-    self endon(#"death");
-    while (true) {
-        self waittill(#"hash_57887008fa0fd8ad");
+function private function_e63726f6()
+{
+    self endon( #"death" );
+    
+    while ( true )
+    {
+        self waittill( #"veh_submerged" );
         wait 0.75;
-        if (self function_2c2c30e0()) {
+        
+        if ( self function_2c2c30e0() )
+        {
             break;
         }
     }
+    
     occupants = self getvehoccupants();
-    if (isdefined(occupants) && occupants.size) {
-        for (i = 0; i < occupants.size; i++) {
-            seat = self getoccupantseat(occupants[i]);
-            if (isdefined(seat)) {
-                self usevehicle(occupants[i], seat);
+    
+    if ( isdefined( occupants ) && occupants.size )
+    {
+        for ( i = 0; i < occupants.size ; i++ )
+        {
+            seat = self getoccupantseat( occupants[ i ] );
+            
+            if ( isdefined( seat ) )
+            {
+                self usevehicle( occupants[ i ], seat );
             }
         }
     }
+    
     self makevehicleunusable();
     self.takedamage = 0;
     self.var_e8ec304d = 1;
-    self clientfield::set("stopallfx", 1);
-    self clientfield::set("flickerlights", 1);
+    self clientfield::set( "stopallfx", 1 );
+    self clientfield::set( "flickerlights", 1 );
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xfbac594, Offset: 0x2af0
 // Size: 0x25e
-function function_3054737a(vehicle) {
-    if (game.state == "pregame" || !isplayer(self) || self isremotecontrolling() || isdefined(vehicle.session)) {
+function function_3054737a( vehicle )
+{
+    if ( game.state == "pregame" || !isplayer( self ) || self isremotecontrolling() || isdefined( vehicle.session ) )
+    {
         return;
     }
-    vehicle.session = {#vehicle:vehicle.vehicletype, #var_2dbaf8ca:vehicle.origin[0], #var_1ff15d37:vehicle.origin[1], #var_16f7d5d0:vehicle.origin[0], #var_4ba3155:vehicle.origin[1], #var_c87538d9:vehicle.trackingindex, #start_time:gettime(), #end_time:0, #start_health:vehicle.health, #end_health:vehicle.health, #first_player:int(self getxuid(1)), #var_efe98761:1, #var_309ad81f:0, #var_5ba0df6e:0, #var_770fd50d:0, #var_33f48e5a:0, #var_ecd1fe60:0, #vehicle_kills:0, #var_ffb0c509:0, #var_45bf3627:0, #raw\russian\sound\vox\scripted\isa\vox_isa_encourage_lost_01.SN65.xenon.snd:0, #passenger_kills:0};
+    
+    vehicle.session = { #vehicle:vehicle.vehicletype, #var_2dbaf8ca:vehicle.origin[ 0 ], #var_1ff15d37:vehicle.origin[ 1 ], #var_16f7d5d0:vehicle.origin[ 0 ], #var_4ba3155:vehicle.origin[ 1 ], #var_c87538d9:vehicle.trackingindex, #start_time:gettime(), #end_time:0, #start_health:vehicle.health, #end_health:vehicle.health, #first_player:int( self getxuid( 1 ) ), #var_efe98761:1, #var_309ad81f:0, #var_5ba0df6e:0, #var_770fd50d:0, #var_33f48e5a:0, #var_ecd1fe60:0, #vehicle_kills:0, #var_ffb0c509:0, #var_45bf3627:0, #raw\russian\sound\vox\scripted\isa\vox_isa_encourage_lost_01.SN65.xenon.snd:0, #passenger_kills:0 };
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xe3a340a9, Offset: 0x2d58
 // Size: 0x116
-function function_2d00376(vehicle) {
-    if (game.state == "pregame") {
+function function_2d00376( vehicle )
+{
+    if ( game.state == "pregame" )
+    {
         return;
     }
-    if (isdefined(vehicle.session)) {
+    
+    if ( isdefined( vehicle.session ) )
+    {
         vehicle.session.end_time = function_f8d53445();
-        vehicle.session.end_health = int(max(0, vehicle.health));
-        vehicle.session.var_16f7d5d0 = vehicle.origin[0];
-        vehicle.session.var_4ba3155 = vehicle.origin[1];
-        function_92d1707f(#"hash_4fd470ea26ade803", vehicle.session);
+        vehicle.session.end_health = int( max( 0, vehicle.health ) );
+        vehicle.session.var_16f7d5d0 = vehicle.origin[ 0 ];
+        vehicle.session.var_4ba3155 = vehicle.origin[ 1 ];
+        function_92d1707f( #"hash_4fd470ea26ade803", vehicle.session );
         vehicle.session = undefined;
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x8bb1b81c, Offset: 0x2e78
 // Size: 0x80c
-function on_vehicle_damage(params) {
+function on_vehicle_damage( params )
+{
     vehicle = self;
-    if (isdefined(vehicle.session)) {
-        if (isdefined(params.eattacker) && isdefined(params.eattacker.isplayervehicle) && params.eattacker.isplayervehicle) {
+    
+    if ( isdefined( vehicle.session ) )
+    {
+        if ( isdefined( params.eattacker ) && isdefined( params.eattacker.isplayervehicle ) && params.eattacker.isplayervehicle )
+        {
             var_364c1a03 = params.eattacker;
-            if (var_364c1a03 == vehicle) {
+            
+            if ( var_364c1a03 == vehicle )
+            {
                 vehicle.session.var_309ad81f += params.idamage;
                 return;
-            } else if (isdefined(var_364c1a03.session)) {
+            }
+            else if ( isdefined( var_364c1a03.session ) )
+            {
                 var_364c1a03.session.var_ecd1fe60 += params.idamage;
                 vehicle.session.var_770fd50d += params.idamage;
                 return;
             }
         }
+        
         vehicle.session.var_5ba0df6e += params.idamage;
     }
-    if (isdefined(params) && isplayer(params.eattacker) && isdefined(params.idamage)) {
-        params.eattacker stats::function_d40764f3(#"vehicle_damage", int(params.idamage));
+    
+    if ( isdefined( params ) && isplayer( params.eattacker ) && isdefined( params.idamage ) )
+    {
+        params.eattacker stats::function_d40764f3( #"vehicle_damage", int( params.idamage ) );
         occupants = vehicle getvehoccupants();
-        if (isdefined(occupants) && occupants.size > 0) {
-            params.eattacker stats::function_d40764f3(#"vehicle_damage_occupied", int(params.idamage));
+        
+        if ( isdefined( occupants ) && occupants.size > 0 )
+        {
+            params.eattacker stats::function_d40764f3( #"vehicle_damage_occupied", int( params.idamage ) );
         }
     }
-    if (isdefined(params) && isdefined(params.smeansofdeath)) {
+    
+    if ( isdefined( params ) && isdefined( params.smeansofdeath ) )
+    {
         occupants = vehicle getvehoccupants();
-        if (isdefined(occupants) && occupants.size > 0) {
-            foreach (occupant in occupants) {
-                switch (params.smeansofdeath) {
-                case #"mod_projectile":
-                    self playsoundtoplayer(#"hash_4cf0470b5276e61a", occupant);
-                    break;
-                case #"mod_rifle_bullet":
-                case #"mod_pistol_bullet":
-                    self playsoundtoplayer(#"prj_bullet_impact_player_vehicle", occupant);
-                    break;
+        
+        if ( isdefined( occupants ) && occupants.size > 0 )
+        {
+            foreach ( occupant in occupants )
+            {
+                switch ( params.smeansofdeath )
+                {
+                    case #"mod_projectile":
+                        self playsoundtoplayer( #"hash_4cf0470b5276e61a", occupant );
+                        break;
+                    case #"mod_rifle_bullet":
+                    case #"mod_pistol_bullet":
+                        self playsoundtoplayer( #"prj_bullet_impact_player_vehicle", occupant );
+                        break;
                 }
             }
         }
     }
-    if (isdefined(getgametypesetting(#"hash_464afa49c60793b7")) ? getgametypesetting(#"hash_464afa49c60793b7") : 0) {
-        if (vehicle.scriptvehicletype == "player_fav") {
-            if (isdefined(params) && isdefined(params.smeansofdeath)) {
-                if (params.partname === #"tag_gunner_turret1" || params.partname === #"tag_gunner_barrel1") {
-                    var_b522a590 = isdefined(getgametypesetting(#"hash_3e111be61438fd22")) ? getgametypesetting(#"hash_3e111be61438fd22") : 1;
-                    var_204c6da4 = isdefined(getgametypesetting(#"hash_5ba752e23e79af9d")) ? getgametypesetting(#"hash_5ba752e23e79af9d") : 5;
-                    var_ebe816eb = isdefined(getgametypesetting(#"hash_36c2eeb3865325f2")) ? getgametypesetting(#"hash_36c2eeb3865325f2") : 0.25;
-                    if (isdefined(vehicle.var_96c0f900[1])) {
-                        var_251a3d58 = function_41cb03eb(1);
+    
+    if ( isdefined( getgametypesetting( #"hash_464afa49c60793b7" ) ) ? getgametypesetting( #"hash_464afa49c60793b7" ) : 0 )
+    {
+        if ( vehicle.scriptvehicletype == "player_fav" )
+        {
+            if ( isdefined( params ) && isdefined( params.smeansofdeath ) )
+            {
+                if ( params.partname === #"tag_gunner_turret1" || params.partname === #"tag_gunner_barrel1" )
+                {
+                    var_b522a590 = isdefined( getgametypesetting( #"hash_3e111be61438fd22" ) ) ? getgametypesetting( #"hash_3e111be61438fd22" ) : 1;
+                    var_204c6da4 = isdefined( getgametypesetting( #"hash_5ba752e23e79af9d" ) ) ? getgametypesetting( #"hash_5ba752e23e79af9d" ) : 5;
+                    var_ebe816eb = isdefined( getgametypesetting( #"hash_36c2eeb3865325f2" ) ) ? getgametypesetting( #"hash_36c2eeb3865325f2" ) : 0.25;
+                    
+                    if ( isdefined( vehicle.var_96c0f900[ 1 ] ) )
+                    {
+                        var_251a3d58 = function_41cb03eb( 1 );
                         damageparts = [];
-                        if (!isdefined(damageparts)) {
+                        
+                        if ( !isdefined( damageparts ) )
+                        {
                             damageparts = [];
-                        } else if (!isarray(damageparts)) {
-                            damageparts = array(damageparts);
                         }
-                        damageparts[damageparts.size] = var_251a3d58;
-                        switch (params.smeansofdeath) {
-                        case #"mod_projectile":
-                            damage = params.idamage / var_204c6da4;
-                            if (damage < 0) {
-                                damage = 0;
-                            } else if (damage > 100 * var_ebe816eb) {
-                                damage = 100 * var_ebe816eb;
-                            }
-                            vehicle.var_96c0f900[1] -= damage;
-                            vehicle function_902cf00a(damageparts, int(damage));
-                            break;
-                        case #"mod_rifle_bullet":
-                        case #"mod_pistol_bullet":
-                            vehicle.var_96c0f900[1] -= params.idamage / var_b522a590;
-                            vehicle function_902cf00a(damageparts, int(params.idamage / var_b522a590));
-                            break;
+                        else if ( !isarray( damageparts ) )
+                        {
+                            damageparts = array( damageparts );
                         }
-                        if (vehicle.var_96c0f900[1] < 0) {
-                            vehicle.var_96c0f900[1] = 0;
+                        
+                        damageparts[ damageparts.size ] = var_251a3d58;
+                        
+                        switch ( params.smeansofdeath )
+                        {
+                            case #"mod_projectile":
+                                damage = params.idamage / var_204c6da4;
+                                
+                                if ( damage < 0 )
+                                {
+                                    damage = 0;
+                                }
+                                else if ( damage > 100 * var_ebe816eb )
+                                {
+                                    damage = 100 * var_ebe816eb;
+                                }
+                                
+                                vehicle.var_96c0f900[ 1 ] -= damage;
+                                vehicle function_902cf00a( damageparts, int( damage ) );
+                                break;
+                            case #"mod_rifle_bullet":
+                            case #"mod_pistol_bullet":
+                                vehicle.var_96c0f900[ 1 ] -= params.idamage / var_b522a590;
+                                vehicle function_902cf00a( damageparts, int( params.idamage / var_b522a590 ) );
+                                break;
+                        }
+                        
+                        if ( vehicle.var_96c0f900[ 1 ] < 0 )
+                        {
+                            vehicle.var_96c0f900[ 1 ] = 0;
                         }
                     }
                 }
             }
         }
     }
-    vehicle vehicle_ai::update_damage_fx_level(params.idamage);
+    
+    vehicle vehicle_ai::update_damage_fx_level( params.idamage );
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xbc4f3bb5, Offset: 0x3690
 // Size: 0x2e2
-function on_player_damage(params) {
+function on_player_damage( params )
+{
     victim = self;
     attacker = params.eattacker;
-    if (isdefined(victim) && isdefined(victim.usingvehicle) && victim.usingvehicle) {
+    
+    if ( isdefined( victim ) && isdefined( victim.usingvehicle ) && victim.usingvehicle )
+    {
         vehicle = victim getvehicleoccupied();
-        if (isdefined(vehicle) && isdefined(vehicle.session)) {
+        
+        if ( isdefined( vehicle ) && isdefined( vehicle.session ) )
+        {
             vehicle.session.var_ffb0c509 += params.idamage;
         }
     }
-    if (isdefined(attacker) && isdefined(attacker.usingvehicle) && attacker.usingvehicle && isplayer(attacker)) {
+    
+    if ( isdefined( attacker ) && isdefined( attacker.usingvehicle ) && attacker.usingvehicle && isplayer( attacker ) )
+    {
         vehicle = attacker getvehicleoccupied();
-        if (isdefined(vehicle)) {
-            if (params.smeansofdeath == "MOD_CRUSH") {
-                if (isdefined(vehicle.session)) {
+        
+        if ( isdefined( vehicle ) )
+        {
+            if ( params.smeansofdeath == "MOD_CRUSH" )
+            {
+                if ( isdefined( vehicle.session ) )
+                {
                     vehicle.session.var_33f48e5a += params.idamage;
                 }
-                if (isdefined(victim)) {
-                    victim playsound("veh_body_impact_flesh");
+                
+                if ( isdefined( victim ) )
+                {
+                    victim playsound( "veh_body_impact_flesh" );
                 }
-                if (isdefined(vehicle.scriptvehicletype)) {
-                    switch (vehicle.scriptvehicletype) {
-                    case #"player_atv":
-                        vehicle playsound("veh_atv_wall_imp");
-                        break;
-                    case #"cargo_truck_wz":
-                        vehicle playsound("veh_truck_wall_imp");
-                        break;
-                    case #"helicopter_light":
-                        vehicle playsound("veh_heli_wall_imp");
-                        break;
-                    case #"tactical_raft_wz":
-                        vehicle playsound("veh_zodiac_wall_imp");
-                        break;
+                
+                if ( isdefined( vehicle.scriptvehicletype ) )
+                {
+                    switch ( vehicle.scriptvehicletype )
+                    {
+                        case #"player_atv":
+                            vehicle playsound( "veh_atv_wall_imp" );
+                            break;
+                        case #"cargo_truck_wz":
+                            vehicle playsound( "veh_truck_wall_imp" );
+                            break;
+                        case #"helicopter_light":
+                            vehicle playsound( "veh_heli_wall_imp" );
+                            break;
+                        case #"tactical_raft_wz":
+                            vehicle playsound( "veh_zodiac_wall_imp" );
+                            break;
                     }
                 }
+                
                 return;
             }
-            if (isdefined(vehicle.session)) {
+            
+            if ( isdefined( vehicle.session ) )
+            {
                 vehicle.session.var_45bf3627 += params.idamage;
             }
         }
@@ -729,103 +949,136 @@ function on_player_damage(params) {
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xa547b1c1, Offset: 0x3980
 // Size: 0x140
-function on_player_killed(params) {
+function on_player_killed( params )
+{
     victim = self;
     attacker = params.eattacker;
-    if (isdefined(victim.usingvehicle) && victim.usingvehicle) {
+    
+    if ( isdefined( victim.usingvehicle ) && victim.usingvehicle )
+    {
         vehicle = victim getvehicleoccupied();
-        if (isdefined(vehicle) && isdefined(vehicle.session)) {
+        
+        if ( isdefined( vehicle ) && isdefined( vehicle.session ) )
+        {
             vehicle.session.raw\russian\sound\vox\scripted\isa\vox_isa_encourage_lost_01.SN65.xenon.snd++;
         }
     }
-    if (isdefined(attacker.usingvehicle) && attacker.usingvehicle) {
+    
+    if ( isdefined( attacker.usingvehicle ) && attacker.usingvehicle )
+    {
         vehicle = attacker getvehicleoccupied();
-        if (isdefined(vehicle) && isdefined(vehicle.session)) {
-            if (params.smeansofdeath == "MOD_CRUSH") {
+        
+        if ( isdefined( vehicle ) && isdefined( vehicle.session ) )
+        {
+            if ( params.smeansofdeath == "MOD_CRUSH" )
+            {
                 vehicle.session.vehicle_kills++;
                 return;
             }
+            
             vehicle.session.passenger_kills++;
         }
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xd1a67e8a, Offset: 0x3ac8
 // Size: 0x66
-function on_end_game(params) {
+function on_end_game( params )
+{
     vehicles = getvehiclearray();
-    for (i = 0; i < vehicles.size; i++) {
-        function_2d00376(vehicles[i]);
+    
+    for ( i = 0; i < vehicles.size ; i++ )
+    {
+        function_2d00376( vehicles[ i ] );
     }
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0x1971652f, Offset: 0x3b38
-// Size: 0x1c
-function private function_df786031() {
-    return isdefined(self.locking_on) && self.locking_on > 0;
+// Size: 0x1c, Type: bool
+function private function_df786031()
+{
+    return isdefined( self.locking_on ) && self.locking_on > 0;
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0xbefe616, Offset: 0x3b60
-// Size: 0x1c
-function private function_ea4291d3() {
-    return isdefined(self.locked_on) && self.locked_on > 0;
+// Size: 0x1c, Type: bool
+function private function_ea4291d3()
+{
+    return isdefined( self.locked_on ) && self.locked_on > 0;
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 1, eflags: 0x4
 // Checksum 0xc0695a97, Offset: 0x3b88
 // Size: 0x14e
-function private function_b3caeebc(player) {
-    self endon(#"death");
-    player endon(#"exit_vehicle", #"death");
-    while (true) {
-        if (self function_ea4291d3()) {
-            player clientfield::set_player_uimodel("vehicle.missileLock", 2);
-            self playsoundtoplayer(#"hash_445c9fb1793c4259", player);
+function private function_b3caeebc( player )
+{
+    self endon( #"death" );
+    player endon( #"exit_vehicle", #"death" );
+    
+    while ( true )
+    {
+        if ( self function_ea4291d3() )
+        {
+            player clientfield::set_player_uimodel( "vehicle.missileLock", 2 );
+            self playsoundtoplayer( #"hash_445c9fb1793c4259", player );
             wait 0.25;
             continue;
         }
-        if (self function_df786031()) {
-            player clientfield::set_player_uimodel("vehicle.missileLock", 1);
-            self playsoundtoplayer(#"hash_107b6827696673cb", player);
+        
+        if ( self function_df786031() )
+        {
+            player clientfield::set_player_uimodel( "vehicle.missileLock", 1 );
+            self playsoundtoplayer( #"hash_107b6827696673cb", player );
             wait 0.25;
             continue;
         }
-        player clientfield::set_player_uimodel("vehicle.missileLock", 0);
-        self waittill(#"locking on");
+        
+        player clientfield::set_player_uimodel( "vehicle.missileLock", 0 );
+        self waittill( #"locking on" );
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x2a265458, Offset: 0x3ce0
 // Size: 0x1d0
-function function_c25f7d1(params) {
-    self endon(#"death");
+function function_c25f7d1( params )
+{
+    self endon( #"death" );
     occupants = self getvehoccupants();
-    foreach (occupant in occupants) {
-        if (!isplayer(occupant)) {
+    
+    foreach ( occupant in occupants )
+    {
+        if ( !isplayer( occupant ) )
+        {
             continue;
         }
-        occupant clientfield::set_player_uimodel("vehicle.incomingMissile", 1);
-        occupant thread function_6aa73a2a(params.projectile, self);
+        
+        occupant clientfield::set_player_uimodel( "vehicle.incomingMissile", 1 );
+        occupant thread function_6aa73a2a( params.projectile, self );
     }
-    params.projectile waittill(#"projectile_impact_explode", #"death");
+    
+    params.projectile waittill( #"projectile_impact_explode", #"death" );
     occupants = self getvehoccupants();
-    foreach (occupant in occupants) {
-        if (!isplayer(occupant)) {
+    
+    foreach ( occupant in occupants )
+    {
+        if ( !isplayer( occupant ) )
+        {
             continue;
         }
-        occupant clientfield::set_player_uimodel("vehicle.incomingMissile", 0);
+        
+        occupant clientfield::set_player_uimodel( "vehicle.incomingMissile", 0 );
     }
 }
 
@@ -833,135 +1086,198 @@ function function_c25f7d1(params) {
 // Params 2, eflags: 0x4
 // Checksum 0xc364b579, Offset: 0x3eb8
 // Size: 0x190
-function private function_6aa73a2a(missile, vehicle) {
-    self endon(#"death", #"exit_vehicle");
-    missile endon(#"death");
-    vehicle endon(#"death");
+function private function_6aa73a2a( missile, vehicle )
+{
+    self endon( #"death", #"exit_vehicle" );
+    missile endon( #"death" );
+    vehicle endon( #"death" );
     range = 8000 - 10;
     dist = undefined;
-    while (true) {
+    
+    while ( true )
+    {
         old_dist = dist;
-        dist = distance(missile.origin, self.origin);
-        var_38fa5914 = isdefined(old_dist) && dist < old_dist;
-        if (var_38fa5914) {
-            vehicle playsoundtoplayer(#"uin_ac130_alarm_missile_incoming", self);
+        dist = distance( missile.origin, self.origin );
+        var_38fa5914 = isdefined( old_dist ) && dist < old_dist;
+        
+        if ( var_38fa5914 )
+        {
+            vehicle playsoundtoplayer( #"uin_ac130_alarm_missile_incoming", self );
         }
-        normalizeddist = (dist - 10) / range;
-        beep_interval = lerpfloat(0.05, 0.2, normalizeddist);
+        
+        normalizeddist = ( dist - 10 ) / range;
+        beep_interval = lerpfloat( 0.05, 0.2, normalizeddist );
         wait beep_interval;
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x774feec3, Offset: 0x4050
-// Size: 0x5a
-function function_adc0649a() {
-    assert(isvehicle(self));
-    return isdefined(self.emped) && self.emped || isdefined(self.isjammed) && self.isjammed;
+// Size: 0x5a, Type: bool
+function function_adc0649a()
+{
+    assert( isvehicle( self ) );
+    return isdefined( self.emped ) && self.emped || isdefined( self.isjammed ) && self.isjammed;
 }
 
 // Namespace wz_vehicle/enter_vehicle
 // Params 1, eflags: 0x40
 // Checksum 0xb8e70cb0, Offset: 0x40b8
 // Size: 0x3dc
-function event_handler[enter_vehicle] codecallback_vehicleenter(eventstruct) {
-    if (!isplayer(self)) {
+function event_handler[enter_vehicle] codecallback_vehicleenter( eventstruct )
+{
+    if ( !isplayer( self ) )
+    {
         return;
     }
+    
     vehicle = eventstruct.vehicle;
     seatindex = eventstruct.seat_index;
-    if (!isdefined(vehicle.scriptvehicletype)) {
+    
+    if ( !isdefined( vehicle.scriptvehicletype ) )
+    {
         return;
     }
-    if (!isinarray(level.var_9c103fe0, vehicle.scriptvehicletype)) {
+    
+    if ( !isinarray( level.var_9c103fe0, vehicle.scriptvehicletype ) )
+    {
         return;
     }
+    
     vehicle.last_enter = gettime();
-    if (isdefined(vehicle.isphysicsvehicle) && vehicle.isphysicsvehicle) {
-        vehicle setbrake(0);
+    
+    if ( isdefined( vehicle.isphysicsvehicle ) && vehicle.isphysicsvehicle )
+    {
+        vehicle setbrake( 0 );
     }
-    self clientfield::set_player_uimodel("vehicle.vehicleAttackMode", 0);
-    if (isdefined(vehicle.on_player_enter)) {
-        vehicle thread [[ vehicle.on_player_enter ]](self, eventstruct);
+    
+    self clientfield::set_player_uimodel( "vehicle.vehicleAttackMode", 0 );
+    
+    if ( isdefined( vehicle.on_player_enter ) )
+    {
+        vehicle thread [[ vehicle.on_player_enter ]]( self, eventstruct );
     }
-    if (isdefined(level.var_8819644a)) {
-        for (i = 0; i < level.var_8819644a.size; i++) {
-            if (isdefined(level.var_8819644a[i].vehicle) && level.var_8819644a[i].vehicle == vehicle) {
-                level.var_8819644a[i].used = 1;
+    
+    if ( isdefined( level.var_8819644a ) )
+    {
+        for ( i = 0; i < level.var_8819644a.size ; i++ )
+        {
+            if ( isdefined( level.var_8819644a[ i ].vehicle ) && level.var_8819644a[ i ].vehicle == vehicle )
+            {
+                level.var_8819644a[ i ].used = 1;
             }
         }
     }
-    if (!isdefined(vehicle.session)) {
-        function_3054737a(vehicle);
-    } else {
+    
+    if ( !isdefined( vehicle.session ) )
+    {
+        function_3054737a( vehicle );
+    }
+    else
+    {
         occupants = vehicle getvehoccupants();
-        vehicle.session.var_efe98761 = int(max(vehicle.session.var_efe98761, occupants.size));
+        vehicle.session.var_efe98761 = int( max( vehicle.session.var_efe98761, occupants.size ) );
     }
-    if (seatindex === 0) {
+    
+    if ( seatindex === 0 )
+    {
         vehicle turn_on();
-        wz_progression::on_vehicle_enter(vehicle, self, seatindex);
-        wz_contracts::on_vehicle_enter(vehicle, self, seatindex);
+        wz_progression::on_vehicle_enter( vehicle, self, seatindex );
+        wz_contracts::on_vehicle_enter( vehicle, self, seatindex );
     }
-    if (isdefined(vehicle.settings) && isdefined(vehicle.settings.var_6754976b) && vehicle.settings.var_6754976b) {
-        if (seatindex === 0) {
-            if (isdefined(vehicle.var_304cf9da) && vehicle.var_304cf9da) {
-                vehicle vehicle::function_bbc1d940(1);
+    
+    if ( isdefined( vehicle.settings ) && isdefined( vehicle.settings.var_6754976b ) && vehicle.settings.var_6754976b )
+    {
+        if ( seatindex === 0 )
+        {
+            if ( isdefined( vehicle.var_304cf9da ) && vehicle.var_304cf9da )
+            {
+                vehicle vehicle::function_bbc1d940( 1 );
             }
         }
-        var_1861e0b1 = vehicle clientfield::get("toggle_horn_sound");
-        if (isdefined(var_1861e0b1) && var_1861e0b1) {
-            self clientfield::set_to_player("toggle_vehicle_sensor", 1);
+        
+        var_1861e0b1 = vehicle clientfield::get( "toggle_horn_sound" );
+        
+        if ( isdefined( var_1861e0b1 ) && var_1861e0b1 )
+        {
+            self clientfield::set_to_player( "toggle_vehicle_sensor", 1 );
         }
     }
+    
     isemped = vehicle function_adc0649a();
-    vehicle function_388973e4(isemped);
-    vehicle thread function_b3caeebc(self);
+    vehicle function_388973e4( isemped );
+    vehicle thread function_b3caeebc( self );
 }
 
 // Namespace wz_vehicle/exit_vehicle
 // Params 1, eflags: 0x40
 // Checksum 0x616456cd, Offset: 0x44a0
 // Size: 0x29c
-function event_handler[exit_vehicle] codecallback_vehicleexit(eventstruct) {
-    if (!isplayer(self)) {
+function event_handler[exit_vehicle] codecallback_vehicleexit( eventstruct )
+{
+    if ( !isplayer( self ) )
+    {
         return;
     }
+    
     vehicle = eventstruct.vehicle;
     seatindex = eventstruct.seat_index;
-    if (!isdefined(vehicle)) {
+    
+    if ( !isdefined( vehicle ) )
+    {
         return;
     }
-    if (!isinarray(level.var_9c103fe0, vehicle.scriptvehicletype)) {
+    
+    if ( !isinarray( level.var_9c103fe0, vehicle.scriptvehicletype ) )
+    {
         return;
     }
+    
     vehicle.var_8e382c5f = gettime();
     a_occupants = vehicle getvehoccupants();
-    if (a_occupants.size == 0) {
-        function_2d00376(vehicle);
+    
+    if ( a_occupants.size == 0 )
+    {
+        function_2d00376( vehicle );
     }
-    self function_7ed26e27(vehicle);
-    self clientfield::set_player_uimodel("vehicle.incomingMissile", 0);
-    self clientfield::set_player_uimodel("vehicle.missileLock", 0);
-    if (isdefined(vehicle.on_player_exit)) {
-        vehicle thread [[ vehicle.on_player_exit ]](self, eventstruct);
+    
+    self function_7ed26e27( vehicle );
+    self clientfield::set_player_uimodel( "vehicle.incomingMissile", 0 );
+    self clientfield::set_player_uimodel( "vehicle.missileLock", 0 );
+    
+    if ( isdefined( vehicle.on_player_exit ) )
+    {
+        vehicle thread [[ vehicle.on_player_exit ]]( self, eventstruct );
     }
-    if (isdefined(vehicle.settings) && isdefined(vehicle.settings.var_6754976b) && vehicle.settings.var_6754976b) {
-        self clientfield::set_to_player("toggle_vehicle_sensor", 0);
+    
+    if ( isdefined( vehicle.settings ) && isdefined( vehicle.settings.var_6754976b ) && vehicle.settings.var_6754976b )
+    {
+        self clientfield::set_to_player( "toggle_vehicle_sensor", 0 );
     }
-    if (vehicle function_ea4291d3()) {
-        wz_progression::on_exit_locked_on_vehicle(self);
+    
+    if ( vehicle function_ea4291d3() )
+    {
+        wz_progression::on_exit_locked_on_vehicle( self );
     }
-    if (seatindex !== 0) {
+    
+    if ( seatindex !== 0 )
+    {
         return;
     }
+    
     vehicle function_6a65d095();
-    if (isdefined(vehicle.var_97f1b32a) && vehicle.var_97f1b32a) {
+    
+    if ( isdefined( vehicle.var_97f1b32a ) && vehicle.var_97f1b32a )
+    {
         vehicle.var_735382e = self;
         vehicle.var_a816f2cd = gettime();
     }
+    
     vehicle turn_off();
-    if (isdefined(vehicle.var_ffdf490c) && vehicle.var_ffdf490c) {
+    
+    if ( isdefined( vehicle.var_ffdf490c ) && vehicle.var_ffdf490c )
+    {
         vehicle thread function_ffdf490c();
     }
 }
@@ -970,13 +1286,18 @@ function event_handler[exit_vehicle] codecallback_vehicleexit(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x71a94add, Offset: 0x4748
 // Size: 0x6c
-function event_handler[event_363c2131] function_3a4d53f8(eventstruct) {
-    if (!isplayer(self)) {
+function event_handler[event_363c2131] function_3a4d53f8( eventstruct )
+{
+    if ( !isplayer( self ) )
+    {
         return;
     }
+    
     vehicle = eventstruct.vehicle;
-    if (isdefined(vehicle.var_bc0ac71f)) {
-        vehicle thread [[ vehicle.var_bc0ac71f ]](self, eventstruct);
+    
+    if ( isdefined( vehicle.var_bc0ac71f ) )
+    {
+        vehicle thread [[ vehicle.var_bc0ac71f ]]( self, eventstruct );
     }
 }
 
@@ -984,82 +1305,128 @@ function event_handler[event_363c2131] function_3a4d53f8(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x8969fab5, Offset: 0x47c0
 // Size: 0x4cc
-function event_handler[change_seat] function_2aa4e6cf(eventstruct) {
-    if (!isplayer(self)) {
+function event_handler[change_seat] function_2aa4e6cf( eventstruct )
+{
+    if ( !isplayer( self ) )
+    {
         return;
     }
+    
     vehicle = eventstruct.vehicle;
     seatindex = eventstruct.seat_index;
     oldseatindex = eventstruct.old_seat_index;
-    if (!isinarray(level.var_9c103fe0, vehicle.scriptvehicletype)) {
+    
+    if ( !isinarray( level.var_9c103fe0, vehicle.scriptvehicletype ) )
+    {
         return;
     }
-    if (oldseatindex === 0) {
-        if (vehicle vehicle_ai::function_6664e3af() && vehicle function_e95a0595()) {
-            if (vehicle vehicle_ai::has_state("off")) {
-                vehicle vehicle_ai::set_state("off");
-            } else {
+    
+    if ( oldseatindex === 0 )
+    {
+        if ( vehicle vehicle_ai::function_6664e3af() && vehicle function_e95a0595() )
+        {
+            if ( vehicle vehicle_ai::has_state( "off" ) )
+            {
+                vehicle vehicle_ai::set_state( "off" );
+            }
+            else
+            {
                 vehicle turn_off();
             }
-            if (isdefined(vehicle.var_ffdf490c) && vehicle.var_ffdf490c) {
+            
+            if ( isdefined( vehicle.var_ffdf490c ) && vehicle.var_ffdf490c )
+            {
                 vehicle thread function_ffdf490c();
             }
-            if (isdefined(vehicle.var_97f1b32a) && vehicle.var_97f1b32a) {
+            
+            if ( isdefined( vehicle.var_97f1b32a ) && vehicle.var_97f1b32a )
+            {
                 vehicle.var_735382e = self;
                 vehicle.var_a816f2cd = gettime();
             }
-            if (isdefined(vehicle.var_4b0fd2dc) && vehicle.var_4b0fd2dc) {
+            
+            if ( isdefined( vehicle.var_4b0fd2dc ) && vehicle.var_4b0fd2dc )
+            {
                 vehicle function_6a65d095();
             }
-            vehicle notify(#"hash_2d45f3f009f1b3b3");
+            
+            vehicle notify( #"hash_2d45f3f009f1b3b3" );
         }
-    } else if (seatindex === 0) {
-        if (vehicle vehicle_ai::function_329f45a4() && !(isdefined(self.var_d271cf82) && self.var_d271cf82)) {
-            if (vehicle vehicle_ai::has_state("landed") && vehicle vehicle_ai::get_current_state() === "off") {
-                vehicle vehicle_ai::set_state("landed");
-            } else if (vehicle vehicle_ai::has_state("recovery") && vehicle vehicle_ai::get_current_state() === "spiral") {
-                vehicle vehicle_ai::set_state("recovery");
-            } else if (vehicle vehicle_ai::has_state("driving")) {
-                vehicle vehicle_ai::set_state("driving");
-            } else {
+    }
+    else if ( seatindex === 0 )
+    {
+        if ( vehicle vehicle_ai::function_329f45a4() && !( isdefined( self.var_d271cf82 ) && self.var_d271cf82 ) )
+        {
+            if ( vehicle vehicle_ai::has_state( "landed" ) && vehicle vehicle_ai::get_current_state() === "off" )
+            {
+                vehicle vehicle_ai::set_state( "landed" );
+            }
+            else if ( vehicle vehicle_ai::has_state( "recovery" ) && vehicle vehicle_ai::get_current_state() === "spiral" )
+            {
+                vehicle vehicle_ai::set_state( "recovery" );
+            }
+            else if ( vehicle vehicle_ai::has_state( "driving" ) )
+            {
+                vehicle vehicle_ai::set_state( "driving" );
+            }
+            else
+            {
                 vehicle turn_on();
             }
-            if (isdefined(vehicle.settings) && isdefined(vehicle.settings.var_6754976b) && vehicle.settings.var_6754976b) {
-                if (isdefined(vehicle.var_304cf9da) && vehicle.var_304cf9da) {
-                    vehicle vehicle::function_bbc1d940(1);
+            
+            if ( isdefined( vehicle.settings ) && isdefined( vehicle.settings.var_6754976b ) && vehicle.settings.var_6754976b )
+            {
+                if ( isdefined( vehicle.var_304cf9da ) && vehicle.var_304cf9da )
+                {
+                    vehicle vehicle::function_bbc1d940( 1 );
                 }
-                var_1861e0b1 = vehicle clientfield::get("toggle_horn_sound");
-                if (isdefined(var_1861e0b1) && var_1861e0b1) {
-                    self clientfield::set_to_player("toggle_vehicle_sensor", 1);
+                
+                var_1861e0b1 = vehicle clientfield::get( "toggle_horn_sound" );
+                
+                if ( isdefined( var_1861e0b1 ) && var_1861e0b1 )
+                {
+                    self clientfield::set_to_player( "toggle_vehicle_sensor", 1 );
                 }
             }
-        } else {
+        }
+        else
+        {
             vehicle takeplayercontrol();
         }
-        wz_progression::on_vehicle_enter(vehicle, self, seatindex);
-        wz_contracts::on_vehicle_enter(vehicle, self, seatindex);
+        
+        wz_progression::on_vehicle_enter( vehicle, self, seatindex );
+        wz_contracts::on_vehicle_enter( vehicle, self, seatindex );
     }
-    if (isdefined(vehicle.var_643db19d)) {
-        vehicle thread [[ vehicle.var_643db19d ]](self, eventstruct);
+    
+    if ( isdefined( vehicle.var_643db19d ) )
+    {
+        vehicle thread [[ vehicle.var_643db19d ]]( self, eventstruct );
     }
+    
     isemped = vehicle function_adc0649a();
-    vehicle function_388973e4(isemped);
+    vehicle function_388973e4( isemped );
 }
 
 // Namespace wz_vehicle/event_44d3f985
 // Params 1, eflags: 0x40
 // Checksum 0x67ba7a40, Offset: 0x4c98
 // Size: 0xbc
-function event_handler[event_44d3f985] function_2d7f6e48(eventstruct) {
-    if (!isplayer(self)) {
+function event_handler[event_44d3f985] function_2d7f6e48( eventstruct )
+{
+    if ( !isplayer( self ) )
+    {
         return;
     }
-    if (isdefined(eventstruct.seat_index) && eventstruct.seat_index >= 5 && eventstruct.seat_index <= 9) {
-        if (eventstruct.var_e3e139f === 1) {
-            self clientfield::set_player_uimodel("vehicle.vehicleAttackMode", 1);
+    
+    if ( isdefined( eventstruct.seat_index ) && eventstruct.seat_index >= 5 && eventstruct.seat_index <= 9 )
+    {
+        if ( eventstruct.var_e3e139f === 1 )
+        {
+            self clientfield::set_player_uimodel( "vehicle.vehicleAttackMode", 1 );
             return;
         }
-        self clientfield::set_player_uimodel("vehicle.vehicleAttackMode", 0);
+        
+        self clientfield::set_player_uimodel( "vehicle.vehicleAttackMode", 0 );
     }
 }
 
@@ -1067,48 +1434,68 @@ function event_handler[event_44d3f985] function_2d7f6e48(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xdc61560c, Offset: 0x4d60
 // Size: 0x15c
-function event_handler[event_99100cb2] function_22d9386e(eventstruct) {
+function event_handler[event_99100cb2] function_22d9386e( eventstruct )
+{
     occupants = self getvehoccupants();
-    if (isdefined(occupants) && occupants.size) {
-        for (i = 0; i < occupants.size; i++) {
-            seat = self getoccupantseat(occupants[i]);
-            if (isdefined(seat)) {
-                self usevehicle(occupants[i], seat);
+    
+    if ( isdefined( occupants ) && occupants.size )
+    {
+        for ( i = 0; i < occupants.size ; i++ )
+        {
+            seat = self getoccupantseat( occupants[ i ] );
+            
+            if ( isdefined( seat ) )
+            {
+                self usevehicle( occupants[ i ], seat );
             }
         }
     }
+    
     self makevehicleunusable();
-    waterheight = getwaterheight(self.origin, 100, -10000);
-    if (waterheight != -131072 && self.origin[2] < waterheight) {
+    waterheight = getwaterheight( self.origin, 100, -10000 );
+    
+    if ( waterheight != -131072 && self.origin[ 2 ] < waterheight )
+    {
         self.health = 5;
         return;
     }
-    self dodamage(self.health - 5, self.origin);
+    
+    self dodamage( self.health - 5, self.origin );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 1, eflags: 0x4
 // Checksum 0x4a18712e, Offset: 0x4ec8
 // Size: 0x1b0
-function private function_ef44d420(params) {
-    self vehicle::toggle_lights_group(1, !params.var_d8ceeba3);
-    self vehicle::toggle_lights_group(2, !params.var_d8ceeba3);
-    self vehicle::toggle_lights_group(3, !params.var_d8ceeba3);
-    self vehicle::toggle_lights_group(4, params.var_d8ceeba3);
+function private function_ef44d420( params )
+{
+    self vehicle::toggle_lights_group( 1, !params.var_d8ceeba3 );
+    self vehicle::toggle_lights_group( 2, !params.var_d8ceeba3 );
+    self vehicle::toggle_lights_group( 3, !params.var_d8ceeba3 );
+    self vehicle::toggle_lights_group( 4, params.var_d8ceeba3 );
     occupants = self getvehoccupants();
-    if (isdefined(occupants)) {
-        foreach (occupant in occupants) {
-            if (!isplayer(occupant)) {
+    
+    if ( isdefined( occupants ) )
+    {
+        foreach ( occupant in occupants )
+        {
+            if ( !isplayer( occupant ) )
+            {
                 continue;
             }
-            if (isdefined(occupant function_bee2bbc7()) && occupant function_bee2bbc7()) {
+            
+            if ( isdefined( occupant function_bee2bbc7() ) && occupant function_bee2bbc7() )
+            {
                 continue;
             }
-            if (params.var_d8ceeba3) {
-                occupant clientfield::set_to_player("toggle_vehicle_sensor", 1);
+            
+            if ( params.var_d8ceeba3 )
+            {
+                occupant clientfield::set_to_player( "toggle_vehicle_sensor", 1 );
                 continue;
             }
-            occupant clientfield::set_to_player("toggle_vehicle_sensor", 0);
+            
+            occupant clientfield::set_to_player( "toggle_vehicle_sensor", 0 );
         }
     }
 }
@@ -1117,13 +1504,18 @@ function private function_ef44d420(params) {
 // Params 1, eflags: 0x4
 // Checksum 0xfd97ef19, Offset: 0x5080
 // Size: 0x8c
-function private function_f6bb77f1(params) {
-    driver = self getseatoccupant(0);
-    if (isdefined(driver) && isplayer(driver)) {
-        if (params.var_d8ceeba3) {
-            self function_ee42a973(driver);
+function private function_f6bb77f1( params )
+{
+    driver = self getseatoccupant( 0 );
+    
+    if ( isdefined( driver ) && isplayer( driver ) )
+    {
+        if ( params.var_d8ceeba3 )
+        {
+            self function_ee42a973( driver );
             return;
         }
+        
         self function_6a65d095();
     }
 }
@@ -1132,40 +1524,59 @@ function private function_f6bb77f1(params) {
 // Params 0, eflags: 0x4
 // Checksum 0x77efa055, Offset: 0x5118
 // Size: 0xa4
-function private function_ffdf490c() {
-    if (!isdefined(self) || self.health < 1) {
+function private function_ffdf490c()
+{
+    if ( !isdefined( self ) || self.health < 1 )
+    {
         return;
     }
-    self endon(#"death");
+    
+    self endon( #"death" );
     util::wait_network_frame();
-    for (group = 1; group < 4; group++) {
-        self vehicle::toggle_lights_group(group, 1);
+    
+    for ( group = 1; group < 4 ; group++ )
+    {
+        self vehicle::toggle_lights_group( group, 1 );
     }
-    self vehicle::toggle_force_driver_taillights(1);
+    
+    self vehicle::toggle_force_driver_taillights( 1 );
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 3, eflags: 0x0
+// Params 3
 // Checksum 0x4900d098, Offset: 0x51c8
 // Size: 0x166
-function function_5bce3f3a(vehicle, seat_index, var_ddd294e3) {
-    self endon(#"death", #"disconnect", #"exit_vehicle", #"change_seat");
-    vehicle endon(#"death");
-    while (true) {
-        heatvalue = vehicle getturretheatvalue(seat_index);
+function function_5bce3f3a( vehicle, seat_index, var_ddd294e3 )
+{
+    self endon( #"death", #"disconnect", #"exit_vehicle", #"change_seat" );
+    vehicle endon( #"death" );
+    
+    while ( true )
+    {
+        heatvalue = vehicle getturretheatvalue( seat_index );
         var_62e4ee3 = heatvalue / 100;
-        if (var_62e4ee3 < 0) {
+        
+        if ( var_62e4ee3 < 0 )
+        {
             var_62e4ee3 = 0;
-        } else if (var_62e4ee3 > 1) {
+        }
+        else if ( var_62e4ee3 > 1 )
+        {
             var_62e4ee3 = 1;
         }
-        var_24139930 = vehicle isvehicleturretoverheating(seat_index);
-        if (var_24139930) {
-            vehicle clientfield::set("overheat_fx", 1);
-        } else {
-            vehicle clientfield::set("overheat_fx", 0);
+        
+        var_24139930 = vehicle isvehicleturretoverheating( seat_index );
+        
+        if ( var_24139930 )
+        {
+            vehicle clientfield::set( "overheat_fx", 1 );
         }
-        waitframe(1);
+        else
+        {
+            vehicle clientfield::set( "overheat_fx", 0 );
+        }
+        
+        waitframe( 1 );
     }
 }
 
@@ -1173,54 +1584,74 @@ function function_5bce3f3a(vehicle, seat_index, var_ddd294e3) {
 // Params 1, eflags: 0x4
 // Checksum 0xe97efb14, Offset: 0x5338
 // Size: 0x42
-function private function_41cb03eb(seat_index) {
-    switch (seat_index) {
-    case 0:
-        return "tag_turret";
-    case 1:
-        return "tag_gunner_turret1";
-    case 2:
-        return "tag_gunner_turret2";
-    case 3:
-        return "tag_gunner_turret3";
-    case 4:
-        return "tag_gunner_turret4";
-    default:
-        return undefined;
+function private function_41cb03eb( seat_index )
+{
+    switch ( seat_index )
+    {
+        case 0:
+            return "tag_turret";
+        case 1:
+            return "tag_gunner_turret1";
+        case 2:
+            return "tag_gunner_turret2";
+        case 3:
+            return "tag_gunner_turret3";
+        case 4:
+            return "tag_gunner_turret4";
+        default:
+            return undefined;
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 3, eflags: 0x0
+// Params 3
 // Checksum 0xf6b0581e, Offset: 0x53f0
 // Size: 0x25c
-function update_turret_fire(vehicle, seat_index, var_c269692d) {
-    self endon(#"death", #"disconnect", #"exit_vehicle", #"change_seat");
-    vehicle endon(#"death");
-    if (vehicle.var_96c0f900[seat_index] == 0) {
-        vehicle disablegunnerfiring(seat_index - 1, 1);
+function update_turret_fire( vehicle, seat_index, var_c269692d )
+{
+    self endon( #"death", #"disconnect", #"exit_vehicle", #"change_seat" );
+    vehicle endon( #"death" );
+    
+    if ( vehicle.var_96c0f900[ seat_index ] == 0 )
+    {
+        vehicle disablegunnerfiring( seat_index - 1, 1 );
         return;
     }
-    while (true) {
-        params = vehicle waittill(#"gunner_weapon_fired");
-        if (params.gunner_index === seat_index) {
-            vehicle.var_96c0f900[seat_index] -= var_c269692d;
-            var_251a3d58 = function_41cb03eb(seat_index);
-            if (isdefined(var_251a3d58)) {
+    
+    while ( true )
+    {
+        params = vehicle waittill( #"gunner_weapon_fired" );
+        
+        if ( params.gunner_index === seat_index )
+        {
+            vehicle.var_96c0f900[ seat_index ] -= var_c269692d;
+            var_251a3d58 = function_41cb03eb( seat_index );
+            
+            if ( isdefined( var_251a3d58 ) )
+            {
                 damageparts = [];
-                if (!isdefined(damageparts)) {
+                
+                if ( !isdefined( damageparts ) )
+                {
                     damageparts = [];
-                } else if (!isarray(damageparts)) {
-                    damageparts = array(damageparts);
                 }
-                damageparts[damageparts.size] = var_251a3d58;
-                vehicle function_902cf00a(damageparts, int(var_c269692d));
+                else if ( !isarray( damageparts ) )
+                {
+                    damageparts = array( damageparts );
+                }
+                
+                damageparts[ damageparts.size ] = var_251a3d58;
+                vehicle function_902cf00a( damageparts, int( var_c269692d ) );
             }
-            if (vehicle.var_96c0f900[seat_index] < 0) {
-                vehicle.var_96c0f900[seat_index] = 0;
+            
+            if ( vehicle.var_96c0f900[ seat_index ] < 0 )
+            {
+                vehicle.var_96c0f900[ seat_index ] = 0;
             }
-            if (vehicle.var_96c0f900[seat_index] == 0) {
-                vehicle disablegunnerfiring(seat_index - 1, 1);
+            
+            if ( vehicle.var_96c0f900[ seat_index ] == 0 )
+            {
+                vehicle disablegunnerfiring( seat_index - 1, 1 );
                 break;
             }
         }
@@ -1228,26 +1659,33 @@ function update_turret_fire(vehicle, seat_index, var_c269692d) {
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xebc8d503, Offset: 0x5658
 // Size: 0x66
-function function_388973e4(disable) {
-    self disabledriverfiring(disable);
-    for (gunnerindex = 0; gunnerindex < 4; gunnerindex++) {
-        self disablegunnerfiring(gunnerindex, disable);
+function function_388973e4( disable )
+{
+    self disabledriverfiring( disable );
+    
+    for ( gunnerindex = 0; gunnerindex < 4 ; gunnerindex++ )
+    {
+        self disablegunnerfiring( gunnerindex, disable );
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x219ce504, Offset: 0x56c8
 // Size: 0x84
-function function_6adf512b() {
-    if (level.var_e5010085 vehicleturretoverheat::is_open(self)) {
-        level.var_e5010085 vehicleturretoverheat::close(self);
+function function_6adf512b()
+{
+    if ( level.var_e5010085 vehicleturretoverheat::is_open( self ) )
+    {
+        level.var_e5010085 vehicleturretoverheat::close( self );
     }
-    if (level.var_b5add14a vehicleturretdurability::is_open(self)) {
-        level.var_b5add14a vehicleturretdurability::close(self);
+    
+    if ( level.var_b5add14a vehicleturretdurability::is_open( self ) )
+    {
+        level.var_b5add14a vehicleturretdurability::close( self );
     }
 }
 
@@ -1255,75 +1693,89 @@ function function_6adf512b() {
 // Params 0, eflags: 0x4
 // Checksum 0x63c7710e, Offset: 0x5758
 // Size: 0xa4
-function private function_500291c4() {
-    self disabledriverfiring(1);
-    self disablegunnerfiring(0, 1);
+function private function_500291c4()
+{
+    self disabledriverfiring( 1 );
+    self disablegunnerfiring( 0, 1 );
     self function_4c6bcfe2();
     self function_7ae07b7();
-    self callback::on_vehicle_collision(&on_vehicle_collision);
+    self callback::on_vehicle_collision( &on_vehicle_collision );
     self.disconnectpathdetail = 0;
-    self function_d733412a(1);
+    self function_d733412a( 1 );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0x31402166, Offset: 0x5808
 // Size: 0x106
-function private function_bd3b5229() {
-    self disabledriverfiring(1);
+function private function_bd3b5229()
+{
+    self disabledriverfiring( 1 );
     self function_4c6bcfe2();
-    self setmovingplatformenabled(1, 0);
+    self setmovingplatformenabled( 1, 0 );
     self.on_player_enter = &function_1d4618ca;
     self.on_player_exit = &function_c4c18caf;
     self.var_643db19d = &function_79f2b4cf;
     self function_7ae07b7();
-    self callback::on_vehicle_collision(&on_vehicle_collision);
+    self callback::on_vehicle_collision( &on_vehicle_collision );
     self.disconnectpathdetail = 0;
-    self function_d733412a(1);
+    self function_d733412a( 1 );
     self.var_96c0f900 = [];
-    self.var_96c0f900[1] = 1000;
+    self.var_96c0f900[ 1 ] = 1000;
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x2474fdee, Offset: 0x5918
 // Size: 0x84
-function function_1d4618ca(player, eventstruct) {
-    if (!isdefined(player)) {
+function function_1d4618ca( player, eventstruct )
+{
+    if ( !isdefined( player ) )
+    {
         return;
     }
-    if (eventstruct.seat_index === 1) {
-        player thread function_5bce3f3a(self, 1, 1000);
-        player thread update_turret_fire(self, 1, 1);
+    
+    if ( eventstruct.seat_index === 1 )
+    {
+        player thread function_5bce3f3a( self, 1, 1000 );
+        player thread update_turret_fire( self, 1, 1 );
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0xbf13e629, Offset: 0x59a8
 // Size: 0x54
-function function_c4c18caf(player, eventstruct) {
-    if (!isdefined(player)) {
+function function_c4c18caf( player, eventstruct )
+{
+    if ( !isdefined( player ) )
+    {
         return;
     }
-    self clientfield::set("overheat_fx", 0);
+    
+    self clientfield::set( "overheat_fx", 0 );
     player function_6adf512b();
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x76ecda6a, Offset: 0x5a08
 // Size: 0xbc
-function function_79f2b4cf(player, eventstruct) {
-    if (!isdefined(player)) {
+function function_79f2b4cf( player, eventstruct )
+{
+    if ( !isdefined( player ) )
+    {
         return;
     }
-    if (eventstruct.seat_index === 1) {
-        player thread function_5bce3f3a(self, 1, 1000);
-        player thread update_turret_fire(self, 1, 1);
+    
+    if ( eventstruct.seat_index === 1 )
+    {
+        player thread function_5bce3f3a( self, 1, 1000 );
+        player thread update_turret_fire( self, 1, 1 );
         return;
     }
-    self clientfield::set("overheat_fx", 0);
+    
+    self clientfield::set( "overheat_fx", 0 );
     player function_6adf512b();
 }
 
@@ -1331,14 +1783,15 @@ function function_79f2b4cf(player, eventstruct) {
 // Params 0, eflags: 0x4
 // Checksum 0xd86a530f, Offset: 0x5ad0
 // Size: 0xbc
-function private function_8278ed00() {
-    self disabledriverfiring(1);
-    self setmovingplatformenabled(1, 0);
+function private function_8278ed00()
+{
+    self disabledriverfiring( 1 );
+    self setmovingplatformenabled( 1, 0 );
     self function_4c6bcfe2();
     self function_7ae07b7();
-    self callback::on_vehicle_collision(&on_vehicle_collision);
+    self callback::on_vehicle_collision( &on_vehicle_collision );
     self.disconnectpathdetail = 0;
-    self function_d733412a(1);
+    self function_d733412a( 1 );
     self thread function_2ec624a6();
 }
 
@@ -1346,13 +1799,18 @@ function private function_8278ed00() {
 // Params 0, eflags: 0x4
 // Checksum 0xe3d39e72, Offset: 0x5b98
 // Size: 0xa0
-function private function_2ec624a6() {
-    self endon(#"death");
-    while (true) {
-        waitresult = self waittill(#"enter_vehicle");
-        playfxontag("vehicle/fx8_exhaust_truck_cargo_startup_os", self, "tag_fx_exhaust");
-        if (isdefined(waitresult.player)) {
-            waitresult.player playrumbleonentity("jet_rumble");
+function private function_2ec624a6()
+{
+    self endon( #"death" );
+    
+    while ( true )
+    {
+        waitresult = self waittill( #"enter_vehicle" );
+        playfxontag( "vehicle/fx8_exhaust_truck_cargo_startup_os", self, "tag_fx_exhaust" );
+        
+        if ( isdefined( waitresult.player ) )
+        {
+            waitresult.player playrumbleonentity( "jet_rumble" );
         }
     }
 }
@@ -1361,77 +1819,98 @@ function private function_2ec624a6() {
 // Params 0, eflags: 0x4
 // Checksum 0xc3d98efd, Offset: 0x5c40
 // Size: 0x84
-function private function_8778ecd1() {
-    self disabledriverfiring(1);
-    self setmovingplatformenabled(1, 0);
+function private function_8778ecd1()
+{
+    self disabledriverfiring( 1 );
+    self setmovingplatformenabled( 1, 0 );
     self function_4c6bcfe2();
     self function_7ae07b7();
-    self callback::on_vehicle_collision(&on_vehicle_collision);
+    self callback::on_vehicle_collision( &on_vehicle_collision );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0x8295eaf6, Offset: 0x5cd0
 // Size: 0x6c
-function private function_5527f9ea() {
-    self disabledriverfiring(1);
+function private function_5527f9ea()
+{
+    self disabledriverfiring( 1 );
     self function_4c6bcfe2();
     self function_7ae07b7();
-    self callback::on_vehicle_collision(&on_vehicle_collision);
+    self callback::on_vehicle_collision( &on_vehicle_collision );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0xd708efe0, Offset: 0x5d48
 // Size: 0xb4
-function private function_79500af5() {
-    self setmovingplatformenabled(1, 0);
+function private function_79500af5()
+{
+    self setmovingplatformenabled( 1, 0 );
     self.on_player_enter = &function_1592c29e;
     self.on_player_exit = &function_67e1a636;
     self function_4c6bcfe2();
     self function_7ae07b7();
-    self callback::on_vehicle_collision(&on_vehicle_collision);
+    self callback::on_vehicle_collision( &on_vehicle_collision );
     self.disconnectpathdetail = 0;
-    self function_d733412a(1);
+    self function_d733412a( 1 );
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x1f3d2d61, Offset: 0x5e08
 // Size: 0xb4
-function function_1592c29e(player, eventstruct) {
-    if (!isdefined(player)) {
+function function_1592c29e( player, eventstruct )
+{
+    if ( !isdefined( player ) )
+    {
         return;
     }
-    if (!isdefined(eventstruct.vehicle)) {
+    
+    if ( !isdefined( eventstruct.vehicle ) )
+    {
         return;
     }
-    if (validateorigin(eventstruct.vehicle.origin)) {
-        playsoundatposition(#"hash_7a0942da55ff521d", eventstruct.vehicle.origin);
+    
+    if ( validateorigin( eventstruct.vehicle.origin ) )
+    {
+        playsoundatposition( #"hash_7a0942da55ff521d", eventstruct.vehicle.origin );
     }
-    eventstruct.vehicle vehicle::toggle_control_bone_group(1, 1);
+    
+    eventstruct.vehicle vehicle::toggle_control_bone_group( 1, 1 );
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0xd60300af, Offset: 0x5ec8
 // Size: 0x10c
-function function_67e1a636(player, eventstruct) {
-    if (!isdefined(player)) {
+function function_67e1a636( player, eventstruct )
+{
+    if ( !isdefined( player ) )
+    {
         return;
     }
-    if (!isdefined(eventstruct.vehicle)) {
+    
+    if ( !isdefined( eventstruct.vehicle ) )
+    {
         return;
     }
-    if (!isalive(eventstruct.vehicle)) {
+    
+    if ( !isalive( eventstruct.vehicle ) )
+    {
         return;
     }
+    
     occupants = eventstruct.vehicle getvehoccupants();
-    if (!isdefined(occupants) || occupants.size == 0) {
-        if (validateorigin(eventstruct.vehicle.origin)) {
-            playsoundatposition(#"hash_7a0942da55ff521d", eventstruct.vehicle.origin);
+    
+    if ( !isdefined( occupants ) || occupants.size == 0 )
+    {
+        if ( validateorigin( eventstruct.vehicle.origin ) )
+        {
+            playsoundatposition( #"hash_7a0942da55ff521d", eventstruct.vehicle.origin );
         }
-        eventstruct.vehicle vehicle::toggle_control_bone_group(1, 0);
+        
+        eventstruct.vehicle vehicle::toggle_control_bone_group( 1, 0 );
     }
 }
 
@@ -1439,53 +1918,68 @@ function function_67e1a636(player, eventstruct) {
 // Params 0, eflags: 0x4
 // Checksum 0x2a4e47af, Offset: 0x5fe0
 // Size: 0xb4
-function private function_fb9c790a() {
-    self setmovingplatformenabled(1, 0);
+function private function_fb9c790a()
+{
+    self setmovingplatformenabled( 1, 0 );
     self function_4c6bcfe2();
     self.on_player_enter = &function_b0a62896;
     self.var_643db19d = &function_d949f006;
     self function_7ae07b7();
-    self callback::on_vehicle_collision(&on_vehicle_collision);
+    self callback::on_vehicle_collision( &on_vehicle_collision );
     self.disconnectpathdetail = 0;
-    self function_d733412a(1);
+    self function_d733412a( 1 );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 2, eflags: 0x4
 // Checksum 0x6ad771dc, Offset: 0x60a0
 // Size: 0x2c
-function private function_b0a62896(player, eventstruct) {
-    self function_da0c353b(player, eventstruct);
+function private function_b0a62896( player, eventstruct )
+{
+    self function_da0c353b( player, eventstruct );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 2, eflags: 0x4
 // Checksum 0x35a7a028, Offset: 0x60d8
 // Size: 0x2c
-function private function_d949f006(player, eventstruct) {
-    self function_da0c353b(player, eventstruct);
+function private function_d949f006( player, eventstruct )
+{
+    self function_da0c353b( player, eventstruct );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 2, eflags: 0x4
 // Checksum 0x9942d387, Offset: 0x6110
 // Size: 0x132
-function private function_da0c353b(player, eventstruct) {
-    if (!isdefined(player)) {
+function private function_da0c353b( player, eventstruct )
+{
+    if ( !isdefined( player ) )
+    {
         return;
     }
-    if (!isalive(self)) {
+    
+    if ( !isalive( self ) )
+    {
         return;
     }
-    if (eventstruct.seat_index === 0) {
-        if (isdefined(getgametypesetting(#"hash_7695bdd7b20cdda")) ? getgametypesetting(#"hash_7695bdd7b20cdda") : 0) {
-            if (isdefined(self.var_8d120ff) && self.var_8d120ff) {
+    
+    if ( eventstruct.seat_index === 0 )
+    {
+        if ( isdefined( getgametypesetting( #"hash_7695bdd7b20cdda" ) ) ? getgametypesetting( #"hash_7695bdd7b20cdda" ) : 0 )
+        {
+            if ( isdefined( self.var_8d120ff ) && self.var_8d120ff )
+            {
                 return;
             }
-            characterassetname = getcharacterassetname(player getcharacterbodytype(), currentsessionmode());
-            if (characterassetname !== #"hash_15db91b18278dea9") {
+            
+            characterassetname = getcharacterassetname( player getcharacterbodytype(), currentsessionmode() );
+            
+            if ( characterassetname !== #"hash_15db91b18278dea9" )
+            {
                 return;
             }
+            
             self thread function_782a6e87();
             self.var_8d120ff = 1;
         }
@@ -1496,16 +1990,19 @@ function private function_da0c353b(player, eventstruct) {
 // Params 0, eflags: 0x4
 // Checksum 0x918a0cbb, Offset: 0x6250
 // Size: 0xc4
-function private function_782a6e87() {
-    self endon(#"death");
+function private function_782a6e87()
+{
+    self endon( #"death" );
     oldhealth = self.health;
-    self setvehicletype("veh_muscle_car_convertible_player_wz_replacer");
+    self setvehicletype( "veh_muscle_car_convertible_player_wz_replacer" );
     util::wait_network_frame();
-    self setdestructibledef(#"hash_896eebec81ec647");
+    self setdestructibledef( #"hash_896eebec81ec647" );
     util::wait_network_frame();
     damage = self.healthdefault - oldhealth;
-    if (damage > 0) {
-        self dodamage(damage, self.origin);
+    
+    if ( damage > 0 )
+    {
+        self dodamage( damage, self.origin );
     }
 }
 
@@ -1513,60 +2010,74 @@ function private function_782a6e87() {
 // Params 0, eflags: 0x4
 // Checksum 0xe0975ac5, Offset: 0x6320
 // Size: 0x102
-function private function_c0f1d81b() {
+function private function_c0f1d81b()
+{
     self function_4c6bcfe2();
-    self setmovingplatformenabled(1, 0);
-    self callback::function_d8abfc3d(#"on_vehicle_killed", &function_4366bf50);
+    self setmovingplatformenabled( 1, 0 );
+    self callback::function_d8abfc3d( #"on_vehicle_killed", &function_4366bf50 );
     self function_7ae07b7();
-    self callback::on_vehicle_collision(&on_vehicle_collision);
+    self callback::on_vehicle_collision( &on_vehicle_collision );
     self.disconnectpathdetail = 0;
-    self function_d733412a(1);
+    self function_d733412a( 1 );
     self.on_player_enter = &function_96f5d31b;
     self.on_player_exit = &function_cd8db309;
     self.var_f81da9d6 = &function_b8458486;
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xb70b3915, Offset: 0x6430
 // Size: 0x1a4
-function function_4366bf50(params) {
-    deathmodel = spawn("script_model", self.origin + (0, 0, 150));
-    deathmodel setmodel(#"hash_4c315b7f2185c393");
+function function_4366bf50( params )
+{
+    deathmodel = spawn( "script_model", self.origin + ( 0, 0, 150 ) );
+    deathmodel setmodel( #"hash_4c315b7f2185c393" );
     deathmodel.angles = self.angles;
-    if (!isdefined(level.var_82eb1dab)) {
+    
+    if ( !isdefined( level.var_82eb1dab ) )
+    {
         level.var_82eb1dab = [];
     }
-    if (!isdefined(level.var_82eb1dab)) {
+    
+    if ( !isdefined( level.var_82eb1dab ) )
+    {
         level.var_82eb1dab = [];
-    } else if (!isarray(level.var_82eb1dab)) {
-        level.var_82eb1dab = array(level.var_82eb1dab);
     }
-    level.var_82eb1dab[level.var_82eb1dab.size] = deathmodel;
-    var_b65967e = randomintrange(-10, 10);
-    up_force = randomintrange(15, 25);
-    deathmodel physicslaunch((0, var_b65967e, 0), (0, 0, up_force));
-    deathmodel clientfield::set("tank_deathfx", 1);
+    else if ( !isarray( level.var_82eb1dab ) )
+    {
+        level.var_82eb1dab = array( level.var_82eb1dab );
+    }
+    
+    level.var_82eb1dab[ level.var_82eb1dab.size ] = deathmodel;
+    left_offset = randomintrange( -10, 10 );
+    up_force = randomintrange( 15, 25 );
+    deathmodel physicslaunch( ( 0, left_offset, 0 ), ( 0, 0, up_force ) );
+    deathmodel clientfield::set( "tank_deathfx", 1 );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 2, eflags: 0x4
 // Checksum 0xe511f5a1, Offset: 0x65e0
 // Size: 0x54
-function private function_96f5d31b(player, eventstruct) {
-    if (eventstruct.seat_index === 0) {
-        self function_11397df9(player);
+function private function_96f5d31b( player, eventstruct )
+{
+    if ( eventstruct.seat_index === 0 )
+    {
+        self function_11397df9( player );
     }
-    self thread function_2014e301(player);
+    
+    self thread function_2014e301( player );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 2, eflags: 0x4
 // Checksum 0x6964ab5e, Offset: 0x6640
 // Size: 0x3c
-function private function_cd8db309(player, eventstruct) {
-    if (eventstruct.seat_index === 0) {
-        self function_eba4498a(player);
+function private function_cd8db309( player, eventstruct )
+{
+    if ( eventstruct.seat_index === 0 )
+    {
+        self function_eba4498a( player );
     }
 }
 
@@ -1574,62 +2085,76 @@ function private function_cd8db309(player, eventstruct) {
 // Params 2, eflags: 0x4
 // Checksum 0x68a631e1, Offset: 0x6688
 // Size: 0x54
-function private function_b8458486(player, eventstruct) {
-    if (eventstruct.seat_index === 0) {
-        self function_11397df9(player);
+function private function_b8458486( player, eventstruct )
+{
+    if ( eventstruct.seat_index === 0 )
+    {
+        self function_11397df9( player );
         return;
     }
-    self function_eba4498a(player);
+    
+    self function_eba4498a( player );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 1, eflags: 0x4
 // Checksum 0xa3835970, Offset: 0x66e8
 // Size: 0x120
-function private function_2014e301(player) {
-    player endon(#"hash_27646c99772610b4", #"exit_vehicle", #"disconnect", #"death", #"game_ended");
-    self endon(#"death");
-    while (true) {
-        self waittill(#"weapon_fired");
-        tankweapon = self seatgetweapon(0);
-        var_610cfafc = int(tankweapon.reloadtime * 1000);
-        player setvehicleweaponwaitduration(var_610cfafc);
-        player setvehicleweaponwaitendtime(gettime() + var_610cfafc);
+function private function_2014e301( player )
+{
+    player endon( #"hash_27646c99772610b4", #"exit_vehicle", #"disconnect", #"death", #"game_ended" );
+    self endon( #"death" );
+    
+    while ( true )
+    {
+        self waittill( #"weapon_fired" );
+        tankweapon = self seatgetweapon( 0 );
+        var_610cfafc = int( tankweapon.reloadtime * 1000 );
+        player setvehicleweaponwaitduration( var_610cfafc );
+        player setvehicleweaponwaitendtime( gettime() + var_610cfafc );
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x30432c2d, Offset: 0x6810
 // Size: 0x6c
-function function_11397df9(player) {
-    if (!isdefined(self.var_9be5a571)) {
+function function_11397df9( player )
+{
+    if ( !isdefined( self.var_9be5a571 ) )
+    {
         self.var_9be5a571 = [];
     }
+    
     self.overridevehicledamage = &function_eed77231;
     player.overrideplayerdamage = &function_7daf5af2;
-    self thread function_53f7a11f(player);
+    self thread function_53f7a11f( player );
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xeb068b6a, Offset: 0x6888
 // Size: 0x38
-function function_eba4498a(player) {
+function function_eba4498a( player )
+{
     self.overridevehicledamage = undefined;
     player.overrideplayerdamage = undefined;
-    player notify(#"hash_27646c99772610b4");
+    player notify( #"hash_27646c99772610b4" );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 15, eflags: 0x4
 // Checksum 0x8153cd76, Offset: 0x68c8
 // Size: 0xe4
-function private function_eed77231(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
+function private function_eed77231( einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal )
+{
     damage = idamage;
-    if (isdefined(eattacker) && eattacker.scriptvehicletype === "player_tank" && isvehicle(einflictor) && smeansofdeath === "MOD_EXPLOSIVE") {
+    
+    if ( isdefined( eattacker ) && eattacker.scriptvehicletype === "player_tank" && isvehicle( einflictor ) && smeansofdeath === "MOD_EXPLOSIVE" )
+    {
         damage = 0;
     }
+    
     return damage;
 }
 
@@ -1637,15 +2162,21 @@ function private function_eed77231(einflictor, eattacker, idamage, idflags, smea
 // Params 15, eflags: 0x4
 // Checksum 0x73cdc4b5, Offset: 0x69b8
 // Size: 0x108
-function private function_7daf5af2(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
+function private function_7daf5af2( einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal )
+{
     damage = idamage;
     vehicle = self getvehicleoccupied();
-    if (!isvehicle(vehicle) || !isalive(vehicle)) {
+    
+    if ( !isvehicle( vehicle ) || !isalive( vehicle ) )
+    {
         return damage;
     }
-    if (smeansofdeath === "MOD_DEATH_CIRCLE") {
+    
+    if ( smeansofdeath === "MOD_DEATH_CIRCLE" )
+    {
         return damage;
     }
+    
     damage = 0;
     return damage;
 }
@@ -1654,27 +2185,30 @@ function private function_7daf5af2(einflictor, eattacker, idamage, idflags, smea
 // Params 0, eflags: 0x4
 // Checksum 0xdb451be6, Offset: 0x6ac8
 // Size: 0x104
-function private function_cb575bc3() {
-    self disabledriverfiring(1);
-    self disablegunnerfiring(0, 1);
+function private function_cb575bc3()
+{
+    self disabledriverfiring( 1 );
+    self disablegunnerfiring( 0, 1 );
     self function_4c6bcfe2();
     self function_7ae07b7();
-    self callback::on_vehicle_collision(&on_vehicle_collision);
+    self callback::on_vehicle_collision( &on_vehicle_collision );
     self.var_bc0ac71f = &function_dde4cb6e;
     self.on_player_enter = &function_d0a9a026;
     self.on_player_exit = &function_e1f72671;
     self.var_643db19d = &function_a73c417;
     self.disconnectpathdetail = 0;
-    self function_d733412a(1);
+    self function_d733412a( 1 );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 1, eflags: 0x4
 // Checksum 0xb27c5f53, Offset: 0x6bd8
 // Size: 0x4c
-function private function_66eae288(player) {
-    if (isalive(self)) {
-        self showpart("tag_handlebars", "", 1);
+function private function_66eae288( player )
+{
+    if ( isalive( self ) )
+    {
+        self showpart( "tag_handlebars", "", 1 );
     }
 }
 
@@ -1682,9 +2216,11 @@ function private function_66eae288(player) {
 // Params 1, eflags: 0x4
 // Checksum 0xd537d964, Offset: 0x6c30
 // Size: 0x4c
-function private function_9157fb4f(player) {
-    if (isalive(self)) {
-        self hidepart("tag_handlebars", "", 1);
+function private function_9157fb4f( player )
+{
+    if ( isalive( self ) )
+    {
+        self hidepart( "tag_handlebars", "", 1 );
     }
 }
 
@@ -1692,10 +2228,12 @@ function private function_9157fb4f(player) {
 // Params 2, eflags: 0x4
 // Checksum 0xdf61b17f, Offset: 0x6c88
 // Size: 0x64
-function private function_e1f72671(player, eventstruct) {
-    if (eventstruct.seat_index === 0) {
-        eventstruct.vehicle vehicle::toggle_control_bone_group(1, 0);
-        self function_66eae288(player);
+function private function_e1f72671( player, eventstruct )
+{
+    if ( eventstruct.seat_index === 0 )
+    {
+        eventstruct.vehicle vehicle::toggle_control_bone_group( 1, 0 );
+        self function_66eae288( player );
     }
 }
 
@@ -1703,24 +2241,29 @@ function private function_e1f72671(player, eventstruct) {
 // Params 2, eflags: 0x4
 // Checksum 0x1038bcc1, Offset: 0x6cf8
 // Size: 0xa4
-function private function_a73c417(player, eventstruct) {
-    if (eventstruct.seat_index === 0) {
-        eventstruct.vehicle vehicle::toggle_control_bone_group(1, 1);
-        self function_9157fb4f(player);
+function private function_a73c417( player, eventstruct )
+{
+    if ( eventstruct.seat_index === 0 )
+    {
+        eventstruct.vehicle vehicle::toggle_control_bone_group( 1, 1 );
+        self function_9157fb4f( player );
         return;
     }
-    eventstruct.vehicle vehicle::toggle_control_bone_group(1, 0);
-    self function_66eae288(player);
+    
+    eventstruct.vehicle vehicle::toggle_control_bone_group( 1, 0 );
+    self function_66eae288( player );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 2, eflags: 0x4
 // Checksum 0xc4e6e9f3, Offset: 0x6da8
 // Size: 0x64
-function private function_d0a9a026(player, eventstruct) {
-    if (eventstruct.seat_index === 0) {
-        eventstruct.vehicle vehicle::toggle_control_bone_group(1, 1);
-        self function_9157fb4f(player);
+function private function_d0a9a026( player, eventstruct )
+{
+    if ( eventstruct.seat_index === 0 )
+    {
+        eventstruct.vehicle vehicle::toggle_control_bone_group( 1, 1 );
+        self function_9157fb4f( player );
     }
 }
 
@@ -1728,19 +2271,21 @@ function private function_d0a9a026(player, eventstruct) {
 // Params 2, eflags: 0x4
 // Checksum 0x64d6f6a4, Offset: 0x6e18
 // Size: 0x44
-function private function_dde4cb6e(player, eventstruct) {
-    self function_66eae288(player);
-    self function_9157fb4f(player);
+function private function_dde4cb6e( player, eventstruct )
+{
+    self function_66eae288( player );
+    self function_9157fb4f( player );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0x6ad28d69, Offset: 0x6e68
 // Size: 0xae
-function private function_6b617752() {
+function private function_6b617752()
+{
     self function_4c6bcfe2();
-    self disabledriverfiring(1);
-    self setmovingplatformenabled(1, 0);
+    self disabledriverfiring( 1 );
+    self setmovingplatformenabled( 1, 0 );
     self.on_player_enter = &function_a5838bb7;
     self.on_player_exit = &function_6d4de854;
     self.var_bc0ac71f = &function_a41bd019;
@@ -1752,21 +2297,27 @@ function private function_6b617752() {
 // Params 1, eflags: 0x4
 // Checksum 0x1c7ce8b5, Offset: 0x6f20
 // Size: 0x74
-function private function_c0c61ba1(player) {
-    if (isalive(self)) {
-        self showpart("tag_motor_steer_animate", "", 1);
+function private function_c0c61ba1( player )
+{
+    if ( isalive( self ) )
+    {
+        self showpart( "tag_motor_steer_animate", "", 1 );
     }
-    player detach("veh_t8_mil_boat_tactical_raft_outboard_motor_attach", "TAG_WEAPON_LEFT");
+    
+    player detach( "veh_t8_mil_boat_tactical_raft_outboard_motor_attach", "TAG_WEAPON_LEFT" );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 1, eflags: 0x4
 // Checksum 0xdcab03b9, Offset: 0x6fa0
 // Size: 0x74
-function private function_e81bb047(player) {
-    player attach("veh_t8_mil_boat_tactical_raft_outboard_motor_attach", "TAG_WEAPON_LEFT");
-    if (isalive(self)) {
-        self hidepart("tag_motor_steer_animate", "", 1);
+function private function_e81bb047( player )
+{
+    player attach( "veh_t8_mil_boat_tactical_raft_outboard_motor_attach", "TAG_WEAPON_LEFT" );
+    
+    if ( isalive( self ) )
+    {
+        self hidepart( "tag_motor_steer_animate", "", 1 );
     }
 }
 
@@ -1774,16 +2325,18 @@ function private function_e81bb047(player) {
 // Params 2, eflags: 0x4
 // Checksum 0xaee4986c, Offset: 0x7020
 // Size: 0x2c
-function private function_6d4de854(player, eventstruct) {
-    self function_c0c61ba1(player);
+function private function_6d4de854( player, eventstruct )
+{
+    self function_c0c61ba1( player );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 2, eflags: 0x4
 // Checksum 0x80ff2de2, Offset: 0x7058
 // Size: 0x44
-function private function_a5838bb7(player, eventstruct) {
-    self function_e81bb047(player);
+function private function_a5838bb7( player, eventstruct )
+{
+    self function_e81bb047( player );
     self thread function_e8e41bbb();
 }
 
@@ -1791,38 +2344,51 @@ function private function_a5838bb7(player, eventstruct) {
 // Params 2, eflags: 0x4
 // Checksum 0x6753b52e, Offset: 0x70a8
 // Size: 0x44
-function private function_a41bd019(player, eventstruct) {
-    self function_c0c61ba1(player);
-    self function_e81bb047(player);
+function private function_a41bd019( player, eventstruct )
+{
+    self function_c0c61ba1( player );
+    self function_e81bb047( player );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0x799133a2, Offset: 0x70f8
 // Size: 0x20a
-function private function_17949e01() {
-    self notify("3372ab565790b66e");
-    self endon("3372ab565790b66e");
-    self endon(#"death");
-    mag = getdvarfloat(#"hash_2612e4b1db15d42e", 150);
-    height = getdvarfloat(#"hash_57e0d780126c4f57", 100);
+function private function_17949e01()
+{
+    self notify( "3372ab565790b66e" );
+    self endon( "3372ab565790b66e" );
+    self endon( #"death" );
+    mag = getdvarfloat( #"hash_2612e4b1db15d42e", 150 );
+    height = getdvarfloat( #"hash_57e0d780126c4f57", 100 );
     var_80831eb5 = 0;
-    while (true) {
-        self waittill(#"beached");
-        while (true) {
-            waitresult = self waittill(#"touch", #"unbeached");
-            if (waitresult._notify == #"touch" && isdefined(waitresult.pm_flags)) {
+    
+    while ( true )
+    {
+        self waittill( #"beached" );
+        
+        while ( true )
+        {
+            waitresult = self waittill( #"touch", #"unbeached" );
+            
+            if ( waitresult._notify == #"touch" && isdefined( waitresult.pm_flags ) )
+            {
                 time = gettime();
-                if (time > var_80831eb5 && waitresult.pm_flags & 128) {
-                    force = anglestoforward(waitresult.entity getplayerangles());
+                
+                if ( time > var_80831eb5 && waitresult.pm_flags & 128 )
+                {
+                    force = anglestoforward( waitresult.entity getplayerangles() );
                     force *= mag;
-                    force += (0, 0, height);
-                    self launchvehicle(force, self.origin);
+                    force += ( 0, 0, height );
+                    self launchvehicle( force, self.origin );
                     var_80831eb5 = time + 1500;
                 }
+                
                 continue;
             }
-            if (!self function_7548ecb2()) {
+            
+            if ( !self function_7548ecb2() )
+            {
                 break;
             }
         }
@@ -1833,12 +2399,16 @@ function private function_17949e01() {
 // Params 2, eflags: 0x4
 // Checksum 0x1d068f01, Offset: 0x7310
 // Size: 0x54
-function private deletemeonnotify(enttowatch, note) {
-    self endon(#"death");
-    if (!isdefined(enttowatch)) {
+function private deletemeonnotify( enttowatch, note )
+{
+    self endon( #"death" );
+    
+    if ( !isdefined( enttowatch ) )
+    {
         return;
     }
-    enttowatch waittill(note);
+    
+    enttowatch waittill( note );
     self delete();
 }
 
@@ -1846,54 +2416,81 @@ function private deletemeonnotify(enttowatch, note) {
 // Params 0, eflags: 0x4
 // Checksum 0xef0949ed, Offset: 0x7370
 // Size: 0x396
-function private function_e8e41bbb() {
-    self notify("356ff15b8c3dad3d");
-    self endon("356ff15b8c3dad3d");
-    self endon(#"death");
+function private function_e8e41bbb()
+{
+    self notify( "356ff15b8c3dad3d" );
+    self endon( "356ff15b8c3dad3d" );
+    self endon( #"death" );
     self.var_221879dc = 0;
-    if (isdefined(self.settings) && isdefined(self.settings.var_95ebe8e0) && self.settings.var_95ebe8e0) {
+    
+    if ( isdefined( self.settings ) && isdefined( self.settings.var_95ebe8e0 ) && self.settings.var_95ebe8e0 )
+    {
         self thread function_17949e01();
     }
+    
     fxorg = undefined;
-    while (true) {
-        speed = length(self getvelocity());
-        if (self function_7548ecb2() && speed < 5) {
-            if (!self.var_221879dc) {
-                driver = self getseatoccupant(0);
-                if (isplayer(driver)) {
-                    self usevehicle(driver, 0);
+    
+    while ( true )
+    {
+        speed = length( self getvelocity() );
+        
+        if ( self function_7548ecb2() && speed < 5 )
+        {
+            if ( !self.var_221879dc )
+            {
+                driver = self getseatoccupant( 0 );
+                
+                if ( isplayer( driver ) )
+                {
+                    self usevehicle( driver, 0 );
                 }
-                if (isdefined(self.settings)) {
-                    if (isdefined(self.settings.var_b5c8e89a) && isdefined(self.settings.var_95861ca4)) {
-                        if (isdefined(fxorg)) {
+                
+                if ( isdefined( self.settings ) )
+                {
+                    if ( isdefined( self.settings.var_b5c8e89a ) && isdefined( self.settings.var_95861ca4 ) )
+                    {
+                        if ( isdefined( fxorg ) )
+                        {
                             fxorg delete();
                         }
-                        fxorg = spawn("script_model", self gettagorigin(self.settings.var_95861ca4));
+                        
+                        fxorg = spawn( "script_model", self gettagorigin( self.settings.var_95861ca4 ) );
                         fxorg.targetname = "vehicle_beach_fx";
-                        if (isdefined(fxorg)) {
-                            fxorg setmodel(#"tag_origin");
+                        
+                        if ( isdefined( fxorg ) )
+                        {
+                            fxorg setmodel( #"tag_origin" );
                             fxorg enablelinkto();
-                            fxorg linkto(self, self.settings.var_95861ca4, (0, 0, 0), (0, 0, 0));
-                            playfxontag(self.settings.var_b5c8e89a, fxorg, "tag_origin");
-                            fxorg thread deletemeonnotify(self, "death");
+                            fxorg linkto( self, self.settings.var_95861ca4, ( 0, 0, 0 ), ( 0, 0, 0 ) );
+                            playfxontag( self.settings.var_b5c8e89a, fxorg, "tag_origin" );
+                            fxorg thread deletemeonnotify( self, "death" );
                         }
                     }
-                    if (isdefined(self.settings.var_a8fa65d7)) {
-                        self playsound(self.settings.var_a8fa65d7);
+                    
+                    if ( isdefined( self.settings.var_a8fa65d7 ) )
+                    {
+                        self playsound( self.settings.var_a8fa65d7 );
                     }
                 }
+                
                 self.var_221879dc = 1;
-                self notify(#"beached");
+                self notify( #"beached" );
             }
-        } else if (self.var_221879dc && !self function_7548ecb2()) {
+        }
+        else if ( self.var_221879dc && !self function_7548ecb2() )
+        {
             self.var_221879dc = 0;
-            if (isdefined(fxorg)) {
+            
+            if ( isdefined( fxorg ) )
+            {
                 fxorg delete();
             }
-            self notify(#"unbeached");
+            
+            self notify( #"unbeached" );
             wait 5;
         }
-        waitframe(1);
+        
+        waitframe( 1 );
     }
 }
 
@@ -1901,57 +2498,71 @@ function private function_e8e41bbb() {
 // Params 0, eflags: 0x4
 // Checksum 0xba1f7db6, Offset: 0x7710
 // Size: 0xc6
-function private function_cc0af45d() {
+function private function_cc0af45d()
+{
     self function_4c6bcfe2();
-    self disabledriverfiring(1);
-    self setmovingplatformenabled(1, 0);
+    self disabledriverfiring( 1 );
+    self setmovingplatformenabled( 1, 0 );
     self.on_player_enter = &function_b65217f6;
     self.on_player_exit = &function_674b9c5b;
     self.var_643db19d = &function_f2626e5f;
     self function_7ae07b7();
     self.var_96c0f900 = [];
-    self.var_96c0f900[1] = 1000;
+    self.var_96c0f900[ 1 ] = 1000;
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x34464824, Offset: 0x77e0
 // Size: 0x9c
-function function_b65217f6(player, eventstruct) {
-    if (!isdefined(player)) {
+function function_b65217f6( player, eventstruct )
+{
+    if ( !isdefined( player ) )
+    {
         return;
     }
-    if (eventstruct.seat_index === 1) {
-        player thread function_5bce3f3a(self, 1, 1000);
-        player thread update_turret_fire(self, 1, 1);
+    
+    if ( eventstruct.seat_index === 1 )
+    {
+        player thread function_5bce3f3a( self, 1, 1000 );
+        player thread update_turret_fire( self, 1, 1 );
     }
+    
     self thread function_e8e41bbb();
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x8d6a09e9, Offset: 0x7888
 // Size: 0x34
-function function_674b9c5b(player, eventstruct) {
-    if (!isdefined(player)) {
+function function_674b9c5b( player, eventstruct )
+{
+    if ( !isdefined( player ) )
+    {
         return;
     }
+    
     player function_6adf512b();
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x7d39e8d6, Offset: 0x78c8
 // Size: 0x9c
-function function_f2626e5f(player, eventstruct) {
-    if (!isdefined(player)) {
+function function_f2626e5f( player, eventstruct )
+{
+    if ( !isdefined( player ) )
+    {
         return;
     }
-    if (eventstruct.seat_index === 1) {
-        player thread function_5bce3f3a(self, 1, 1000);
-        player thread update_turret_fire(self, 1, 1);
+    
+    if ( eventstruct.seat_index === 1 )
+    {
+        player thread function_5bce3f3a( self, 1, 1000 );
+        player thread update_turret_fire( self, 1, 1 );
         return;
     }
+    
     player function_6adf512b();
 }
 
@@ -1959,37 +2570,41 @@ function function_f2626e5f(player, eventstruct) {
 // Params 0, eflags: 0x4
 // Checksum 0xacd3bc39, Offset: 0x7970
 // Size: 0x4a2
-function private function_b1d54776() {
-    self disabledriverfiring(1);
+function private function_b1d54776()
+{
+    self disabledriverfiring( 1 );
     self.death_type = "gibbed";
     self.var_18a9fdc = &function_32607cfc;
-    self function_4c6bcfe2(1);
-    self.var_96c0f900[2] = 1000;
-    self.var_96c0f900[1] = 1000;
-    if (!isdefined(self) || function_3132f113(self)) {
+    self function_4c6bcfe2( 1 );
+    self.var_96c0f900[ 2 ] = 1000;
+    self.var_96c0f900[ 1 ] = 1000;
+    
+    if ( !isdefined( self ) || function_3132f113( self ) )
+    {
         return;
     }
+    
     self.var_643db19d = &function_d7bcab1f;
     self.on_player_enter = &function_5520bbcc;
     self.on_player_exit = &function_564c9e78;
-    self vehicle_ai::get_state_callbacks("off").enter_func = &function_92270eeb;
-    self vehicle_ai::get_state_callbacks("off").exit_func = &function_365e033d;
-    self vehicle_ai::get_state_callbacks("death").update_func = &function_4b5646b1;
-    self vehicle_ai::add_state("spiral", &function_1f014f43, &function_2e3fb54c, &function_aaa84ac);
-    self vehicle_ai::add_state("recovery", &function_d344c3f, &function_e291246d, &function_ad15f5e8);
-    self vehicle_ai::add_state("water_landing", &function_976267bc, &function_eadfd579, &function_e13c4d09);
-    self vehicle_ai::add_state("landing", &function_200c3bd0, &function_3a7426cf, &function_3b1d3bf1);
-    self vehicle_ai::add_state("landed", &function_d39845f, &function_b705c816, &function_7db28345);
-    self vehicle_ai::function_b94a7666("driving", "exit_vehicle");
-    self vehicle_ai::function_b94a7666("off", "enter_vehicle");
-    self vehicle_ai::add_interrupt_connection("landing", "driving", "enter_vehicle", &vehicle_ai::function_329f45a4);
-    self vehicle_ai::add_interrupt_connection("off", "landed", "enter_vehicle", &vehicle_ai::function_329f45a4);
-    self vehicle_ai::add_interrupt_connection("off", "landed", "heli_emp_done", &vehicle_ai::function_329f45a4);
-    self vehicle_ai::add_interrupt_connection("landed", "off", "exit_vehicle", &function_a1fd6110);
+    self vehicle_ai::get_state_callbacks( "off" ).enter_func = &function_92270eeb;
+    self vehicle_ai::get_state_callbacks( "off" ).exit_func = &function_365e033d;
+    self vehicle_ai::get_state_callbacks( "death" ).update_func = &function_4b5646b1;
+    self vehicle_ai::add_state( "spiral", &function_1f014f43, &function_2e3fb54c, &function_aaa84ac );
+    self vehicle_ai::add_state( "recovery", &function_d344c3f, &function_e291246d, &function_ad15f5e8 );
+    self vehicle_ai::add_state( "water_landing", &function_976267bc, &function_eadfd579, &function_e13c4d09 );
+    self vehicle_ai::add_state( "landing", &function_200c3bd0, &function_3a7426cf, &function_3b1d3bf1 );
+    self vehicle_ai::add_state( "landed", &function_d39845f, &function_b705c816, &function_7db28345 );
+    self vehicle_ai::function_b94a7666( "driving", "exit_vehicle" );
+    self vehicle_ai::function_b94a7666( "off", "enter_vehicle" );
+    self vehicle_ai::add_interrupt_connection( "landing", "driving", "enter_vehicle", &vehicle_ai::function_329f45a4 );
+    self vehicle_ai::add_interrupt_connection( "off", "landed", "enter_vehicle", &vehicle_ai::function_329f45a4 );
+    self vehicle_ai::add_interrupt_connection( "off", "landed", "heli_emp_done", &vehicle_ai::function_329f45a4 );
+    self vehicle_ai::add_interrupt_connection( "landed", "off", "exit_vehicle", &function_a1fd6110 );
     self function_7ae07b7();
     self thread function_b0dd571a();
     self thread function_638d1ade();
-    self callback::on_vehicle_collision(&function_4885ce1);
+    self callback::on_vehicle_collision( &function_4885ce1 );
     self.is_staircase_up = &function_4e74bed7;
 }
 
@@ -1997,77 +2612,100 @@ function private function_b1d54776() {
 // Params 0, eflags: 0x4
 // Checksum 0xae664f24, Offset: 0x7e20
 // Size: 0x492
-function private function_8fb65b2a() {
+function private function_8fb65b2a()
+{
     self.death_type = "gibbed";
     self.var_18a9fdc = &function_32607cfc;
     self.var_96c0f900 = [];
-    self.var_96c0f900[1] = 1000;
-    self.var_96c0f900[2] = 1000;
-    self function_4c6bcfe2(1);
-    if (!isdefined(self) || function_3132f113(self)) {
+    self.var_96c0f900[ 1 ] = 1000;
+    self.var_96c0f900[ 2 ] = 1000;
+    self function_4c6bcfe2( 1 );
+    
+    if ( !isdefined( self ) || function_3132f113( self ) )
+    {
         return;
     }
+    
     self.var_643db19d = &function_e2d16bde;
     self.on_player_enter = &function_1b957284;
     self.on_player_exit = &function_a7401191;
-    self vehicle_ai::get_state_callbacks("off").enter_func = &function_92270eeb;
-    self vehicle_ai::get_state_callbacks("off").exit_func = &function_365e033d;
-    self vehicle_ai::get_state_callbacks("death").update_func = &function_4b5646b1;
-    self vehicle_ai::add_state("spiral", &function_1f014f43, &function_2e3fb54c, &function_aaa84ac);
-    self vehicle_ai::add_state("recovery", &function_d344c3f, &function_e291246d, &function_ad15f5e8);
-    self vehicle_ai::add_state("water_landing", &function_976267bc, &function_eadfd579, &function_e13c4d09);
-    self vehicle_ai::add_state("landing", &function_200c3bd0, &function_3a7426cf, &function_3b1d3bf1);
-    self vehicle_ai::add_state("landed", &function_d39845f, &function_b705c816, &function_7db28345);
-    self vehicle_ai::function_b94a7666("driving", "exit_vehicle");
-    self vehicle_ai::function_b94a7666("off", "enter_vehicle");
-    self vehicle_ai::add_interrupt_connection("landing", "driving", "enter_vehicle", &vehicle_ai::function_329f45a4);
-    self vehicle_ai::add_interrupt_connection("off", "landed", "enter_vehicle", &vehicle_ai::function_329f45a4);
-    self vehicle_ai::add_interrupt_connection("off", "landed", "heli_emp_done", &vehicle_ai::function_329f45a4);
-    self vehicle_ai::add_interrupt_connection("landed", "off", "exit_vehicle", &function_a1fd6110);
+    self vehicle_ai::get_state_callbacks( "off" ).enter_func = &function_92270eeb;
+    self vehicle_ai::get_state_callbacks( "off" ).exit_func = &function_365e033d;
+    self vehicle_ai::get_state_callbacks( "death" ).update_func = &function_4b5646b1;
+    self vehicle_ai::add_state( "spiral", &function_1f014f43, &function_2e3fb54c, &function_aaa84ac );
+    self vehicle_ai::add_state( "recovery", &function_d344c3f, &function_e291246d, &function_ad15f5e8 );
+    self vehicle_ai::add_state( "water_landing", &function_976267bc, &function_eadfd579, &function_e13c4d09 );
+    self vehicle_ai::add_state( "landing", &function_200c3bd0, &function_3a7426cf, &function_3b1d3bf1 );
+    self vehicle_ai::add_state( "landed", &function_d39845f, &function_b705c816, &function_7db28345 );
+    self vehicle_ai::function_b94a7666( "driving", "exit_vehicle" );
+    self vehicle_ai::function_b94a7666( "off", "enter_vehicle" );
+    self vehicle_ai::add_interrupt_connection( "landing", "driving", "enter_vehicle", &vehicle_ai::function_329f45a4 );
+    self vehicle_ai::add_interrupt_connection( "off", "landed", "enter_vehicle", &vehicle_ai::function_329f45a4 );
+    self vehicle_ai::add_interrupt_connection( "off", "landed", "heli_emp_done", &vehicle_ai::function_329f45a4 );
+    self vehicle_ai::add_interrupt_connection( "landed", "off", "exit_vehicle", &function_a1fd6110 );
     self function_7ae07b7();
     self thread function_b0dd571a();
     self thread function_638d1ade();
-    self callback::on_vehicle_collision(&function_4885ce1);
+    self callback::on_vehicle_collision( &function_4885ce1 );
     self.is_staircase_up = &function_4e74bed7;
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 4, eflags: 0x4
 // Checksum 0x4a6aa329, Offset: 0x82c0
-// Size: 0x44
-function private function_a1fd6110(current_state, to_state, connection, params) {
-    return !vehicle_ai::function_329f45a4(current_state, to_state, connection, params);
+// Size: 0x44, Type: bool
+function private function_a1fd6110( current_state, to_state, connection, params )
+{
+    return !vehicle_ai::function_329f45a4( current_state, to_state, connection, params );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0x1c8af075, Offset: 0x8310
 // Size: 0x1ba
-function private function_b0dd571a() {
-    self endon(#"death");
-    self waittill(#"enter_vehicle");
-    offset = getdvarint(#"hash_626d3139a5fd29ca", -70);
-    while (true) {
-        waterheight = getwaterheight(self.origin, 100, -10000);
-        if (waterheight != -131072) {
-            var_19dbcac7 = self.origin[2] + offset - waterheight;
-            if (var_19dbcac7 <= 0) {
-                if (self getspeedmph() > 40) {
-                    self dodamage(self.health, self.origin, undefined, undefined, "", "MOD_IMPACT");
-                } else {
-                    self vehicle_ai::set_state("water_landing");
+function private function_b0dd571a()
+{
+    self endon( #"death" );
+    self waittill( #"enter_vehicle" );
+    offset = getdvarint( #"hash_626d3139a5fd29ca", -70 );
+    
+    while ( true )
+    {
+        waterheight = getwaterheight( self.origin, 100, -10000 );
+        
+        if ( waterheight != -131072 )
+        {
+            var_19dbcac7 = self.origin[ 2 ] + offset - waterheight;
+            
+            if ( var_19dbcac7 <= 0 )
+            {
+                if ( self getspeedmph() > 40 )
+                {
+                    self dodamage( self.health, self.origin, undefined, undefined, "", "MOD_IMPACT" );
+                }
+                else
+                {
+                    self vehicle_ai::set_state( "water_landing" );
                 }
             }
-            if (var_19dbcac7 < 1000) {
+            
+            if ( var_19dbcac7 < 1000 )
+            {
                 wait 0.25;
-            } else if (var_19dbcac7 < 2000) {
+            }
+            else if ( var_19dbcac7 < 2000 )
+            {
                 wait 1;
-            } else {
-                time = math::clamp(int(var_19dbcac7 / 1000), 1, 5);
+            }
+            else
+            {
+                time = math::clamp( int( var_19dbcac7 / 1000 ), 1, 5 );
                 wait time;
             }
+            
             continue;
         }
+        
         wait 2;
     }
 }
@@ -2076,38 +2714,59 @@ function private function_b0dd571a() {
 // Params 0, eflags: 0x4
 // Checksum 0x9cfc8d9c, Offset: 0x84d8
 // Size: 0x264
-function private function_638d1ade() {
-    self endon(#"death", #"hash_41dbbf5434aab9e0");
-    while (true) {
-        if (isdefined(level.deathcircle) && isdefined(level.deathcircleindex)) {
+function private function_638d1ade()
+{
+    self endon( #"death", #"hash_41dbbf5434aab9e0" );
+    
+    while ( true )
+    {
+        if ( isdefined( level.deathcircle ) && isdefined( level.deathcircleindex ) )
+        {
             radius = level.deathcircle.radius;
-            var_b4ed4ca = distance2dsquared(self.origin, level.deathcircle.origin) - radius * radius;
-            if (var_b4ed4ca > 0 || radius <= 4298) {
-                if (radius <= 4298) {
+            var_b4ed4ca = distance2dsquared( self.origin, level.deathcircle.origin ) - radius * radius;
+            
+            if ( var_b4ed4ca > 0 || radius <= 4298 )
+            {
+                if ( radius <= 4298 )
+                {
                     self.var_1ba362d5 = 1;
                     state = self vehicle_ai::get_current_state();
-                    if (state === "off" || state === "landed") {
+                    
+                    if ( state === "off" || state === "landed" )
+                    {
                         self function_41a269b3();
                     }
                 }
-                if (!isdefined(self.var_8382289e)) {
+                
+                if ( !isdefined( self.var_8382289e ) )
+                {
                     self function_b8c2b27d();
                 }
-            } else if (isdefined(self.origin[2]) && self.origin[2] >= 12000) {
+            }
+            else if ( isdefined( self.origin[ 2 ] ) && self.origin[ 2 ] >= 12000 )
+            {
                 self.var_1ba362d5 = 1;
                 state = self vehicle_ai::get_current_state();
-                if (state === "off" || state === "landed") {
+                
+                if ( state === "off" || state === "landed" )
+                {
                     self function_41a269b3();
                 }
-                if (!isdefined(self.var_8382289e)) {
+                
+                if ( !isdefined( self.var_8382289e ) )
+                {
                     self function_b8c2b27d();
                 }
-            } else if (isdefined(self.var_8382289e) && !(isdefined(self.var_1ba362d5) && self.var_1ba362d5)) {
+            }
+            else if ( isdefined( self.var_8382289e ) && !( isdefined( self.var_1ba362d5 ) && self.var_1ba362d5 ) )
+            {
                 self function_f11207a9();
             }
+            
             wait 0.1;
             continue;
         }
+        
         wait 1;
     }
 }
@@ -2116,10 +2775,11 @@ function private function_638d1ade() {
 // Params 0, eflags: 0x4
 // Checksum 0xc23e35b1, Offset: 0x8748
 // Size: 0x7c
-function private function_b8c2b27d() {
-    self function_56ee2902(1);
-    self clientfield::set("update_malfunction", 1);
-    self clientfield::set("flickerlights", 2);
+function private function_b8c2b27d()
+{
+    self function_56ee2902( 1 );
+    self clientfield::set( "update_malfunction", 1 );
+    self clientfield::set( "flickerlights", 2 );
     self.var_8382289e = gettime();
     self thread function_f46dd7b0();
 }
@@ -2128,72 +2788,91 @@ function private function_b8c2b27d() {
 // Params 0, eflags: 0x4
 // Checksum 0xe147030e, Offset: 0x87d0
 // Size: 0x4c
-function private function_f11207a9() {
-    self endon(#"death");
+function private function_f11207a9()
+{
+    self endon( #"death" );
     self.var_8382289e = undefined;
-    self notify(#"cancel_malfunction");
-    self function_260f32b3(1);
+    self notify( #"cancel_malfunction" );
+    self function_260f32b3( 1 );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0x990ef6f0, Offset: 0x8828
 // Size: 0xfc
-function private function_dae7aaf3() {
+function private function_dae7aaf3()
+{
     self takeplayercontrol();
-    self clientfield::set("update_malfunction", 2);
-    self thread function_82224f4b(1600);
-    self setrotorspeed(0.7);
-    if (self vehicle_ai::get_current_state() === "landed") {
+    self clientfield::set( "update_malfunction", 2 );
+    self thread function_82224f4b( 1600 );
+    self setrotorspeed( 0.7 );
+    
+    if ( self vehicle_ai::get_current_state() === "landed" )
+    {
         self.var_b3e4af16 = 1;
     }
-    self clientfield::set("flickerlights", 3);
+    
+    self clientfield::set( "flickerlights", 3 );
     self function_a98ae5fe();
-    self function_56ee2902(2);
+    self function_56ee2902( 2 );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 1, eflags: 0x4
 // Checksum 0xbceaf0c5, Offset: 0x8930
 // Size: 0x1b4
-function private function_260f32b3(exit = 0) {
-    self notify(#"cancel_acceleration");
-    if (!(isdefined(self.emped) && self.emped) && !(isdefined(self.jammed) && self.jammed)) {
-        if (self vehicle_ai::get_current_state() === "landed") {
+function private function_260f32b3( exit = 0 )
+{
+    self notify( #"cancel_acceleration" );
+    
+    if ( !( isdefined( self.emped ) && self.emped ) && !( isdefined( self.jammed ) && self.jammed ) )
+    {
+        if ( self vehicle_ai::get_current_state() === "landed" )
+        {
             self.var_b3e4af16 = undefined;
-        } else {
+        }
+        else
+        {
             self returnplayercontrol();
         }
-        if (self vehicle_ai::function_329f45a4()) {
-            self setrotorspeed(1);
+        
+        if ( self vehicle_ai::function_329f45a4() )
+        {
+            self setrotorspeed( 1 );
         }
     }
-    if (exit) {
-        self function_56ee2902(0);
-        self clientfield::set("update_malfunction", 0);
-        self clientfield::set("flickerlights", 3);
+    
+    if ( exit )
+    {
+        self function_56ee2902( 0 );
+        self clientfield::set( "update_malfunction", 0 );
+        self clientfield::set( "flickerlights", 3 );
         self function_2418736c();
         return;
     }
-    self function_56ee2902(1);
-    self clientfield::set("update_malfunction", 1);
-    self clientfield::set("flickerlights", 2);
+    
+    self function_56ee2902( 1 );
+    self clientfield::set( "update_malfunction", 1 );
+    self clientfield::set( "flickerlights", 2 );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0x1bb65760, Offset: 0x8af0
 // Size: 0x120
-function private function_8bb6a990() {
-    self endon(#"death", #"cancel_malfunction", #"hash_3c7ae83e462fe4e2", #"pilot_exit", #"hash_41dbbf5434aab9e0");
+function private function_8bb6a990()
+{
+    self endon( #"death", #"cancel_malfunction", #"hash_3c7ae83e462fe4e2", #"pilot_exit", #"hash_41dbbf5434aab9e0" );
     wait 5;
-    self clientfield::set("flickerlights", 2);
-    while (true) {
+    self clientfield::set( "flickerlights", 2 );
+    
+    while ( true )
+    {
         self function_dae7aaf3();
-        wait randomfloatrange(1, 3);
+        wait randomfloatrange( 1, 3 );
         self function_260f32b3();
-        self clientfield::set("flickerlights", 2);
-        wait randomfloatrange(3, 10);
+        self clientfield::set( "flickerlights", 2 );
+        wait randomfloatrange( 3, 10 );
     }
 }
 
@@ -2201,67 +2880,91 @@ function private function_8bb6a990() {
 // Params 0, eflags: 0x4
 // Checksum 0xadc9d9f1, Offset: 0x8c18
 // Size: 0x21c
-function private function_f46dd7b0() {
-    self notify("7568179a9adfe70f");
-    self endon("7568179a9adfe70f");
-    self endon(#"death", #"cancel_malfunction", #"hash_41dbbf5434aab9e0");
-    if (vehicle_ai::function_329f45a4()) {
+function private function_f46dd7b0()
+{
+    self notify( "7568179a9adfe70f" );
+    self endon( "7568179a9adfe70f" );
+    self endon( #"death", #"cancel_malfunction", #"hash_41dbbf5434aab9e0" );
+    
+    if ( vehicle_ai::function_329f45a4() )
+    {
         self thread function_8bb6a990();
-    } else {
-        self waittill(#"pilot_enter");
     }
+    else
+    {
+        self waittill( #"pilot_enter" );
+    }
+    
     shutdowntime = gettime() + 30000;
-    while (true) {
-        if (gettime() < shutdowntime) {
+    
+    while ( true )
+    {
+        if ( gettime() < shutdowntime )
+        {
             wait 0.5;
             continue;
         }
+        
         self function_a98ae5fe();
         state = self vehicle_ai::get_current_state();
-        if (state === "off") {
+        
+        if ( state === "off" )
+        {
             self function_41a269b3();
-        } else if (state === "landed") {
+        }
+        else if ( state === "landed" )
+        {
             params = spawnstruct();
             params.makeunusable = 1;
-            self vehicle_ai::set_state("off", params);
-        } else {
+            self vehicle_ai::set_state( "off", params );
+        }
+        else
+        {
             self.var_4e76046a = 1;
             self.var_d271cf82 = 1;
-            self function_56ee2902(2);
+            self function_56ee2902( 2 );
             params = spawnstruct();
-            params.var_52c5850b = 60;
-            self vehicle_ai::set_state("spiral", params);
+            params.maxtilt = 60;
+            self vehicle_ai::set_state( "spiral", params );
         }
-        self notify(#"hash_41dbbf5434aab9e0");
+        
+        self notify( #"hash_41dbbf5434aab9e0" );
         return;
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x59cc227e, Offset: 0x8e40
 // Size: 0xb8
-function function_56ee2902(state) {
-    foreach (occupant in self getvehoccupants()) {
-        if (!isplayer(occupant)) {
+function function_56ee2902( state )
+{
+    foreach ( occupant in self getvehoccupants() )
+    {
+        if ( !isplayer( occupant ) )
+        {
             continue;
         }
-        occupant clientfield::set_player_uimodel("vehicle.malfunction", state);
+        
+        occupant clientfield::set_player_uimodel( "vehicle.malfunction", state );
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x4edff30b, Offset: 0x8f00
 // Size: 0xd6
-function function_82224f4b(scale) {
-    self notify("43958cae29e09bf1");
-    self endon("43958cae29e09bf1");
-    self endon(#"death", #"cancel_malfunction", #"cancel_acceleration", #"hash_41dbbf5434aab9e0");
-    while (true) {
-        accel = anglestoup(self.angles) * scale;
-        self setphysacceleration((accel[0], accel[1], -200));
-        waitframe(1);
+function function_82224f4b( scale )
+{
+    self notify( "43958cae29e09bf1" );
+    self endon( "43958cae29e09bf1" );
+    self endon( #"death", #"cancel_malfunction", #"cancel_acceleration", #"hash_41dbbf5434aab9e0" );
+    
+    while ( true )
+    {
+        accel = anglestoup( self.angles ) * scale;
+        self setphysacceleration( ( accel[ 0 ], accel[ 1 ], -200 ) );
+        waitframe( 1 );
     }
 }
 
@@ -2269,13 +2972,18 @@ function function_82224f4b(scale) {
 // Params 0, eflags: 0x4
 // Checksum 0x630108af, Offset: 0x8fe0
 // Size: 0x7e
-function private function_2418736c() {
+function private function_2418736c()
+{
     groups = 3;
-    if (self vehicle_ai::function_329f45a4()) {
+    
+    if ( self vehicle_ai::function_329f45a4() )
+    {
         groups = 4;
     }
-    for (group = 1; group <= groups; group++) {
-        self vehicle::toggle_lights_group(group, 1);
+    
+    for ( group = 1; group <= groups ; group++ )
+    {
+        self vehicle::toggle_lights_group( group, 1 );
     }
 }
 
@@ -2283,10 +2991,13 @@ function private function_2418736c() {
 // Params 0, eflags: 0x4
 // Checksum 0x5822e6a4, Offset: 0x9068
 // Size: 0x66
-function private function_a98ae5fe() {
-    self clientfield::set("flickerlights", 3);
-    for (group = 1; group <= 4; group++) {
-        self vehicle::toggle_lights_group(group, 0);
+function private function_a98ae5fe()
+{
+    self clientfield::set( "flickerlights", 3 );
+    
+    for ( group = 1; group <= 4 ; group++ )
+    {
+        self vehicle::toggle_lights_group( group, 0 );
     }
 }
 
@@ -2294,30 +3005,41 @@ function private function_a98ae5fe() {
 // Params 2, eflags: 0x4
 // Checksum 0xe5257c2d, Offset: 0x90d8
 // Size: 0x8c
-function private function_2ba6be18(player, eventstruct) {
+function private function_2ba6be18( player, eventstruct )
+{
     seatindex = eventstruct.seat_index;
-    if (seatindex === 0) {
-        self function_b985a0f1(player);
+    
+    if ( seatindex === 0 )
+    {
+        self function_b985a0f1( player );
     }
-    if (isdefined(self.var_8382289e)) {
-        self function_56ee2902(1);
+    
+    if ( isdefined( self.var_8382289e ) )
+    {
+        self function_56ee2902( 1 );
     }
-    player setsunshadowsplitdistance(6000);
+    
+    player setsunshadowsplitdistance( 6000 );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 2, eflags: 0x4
 // Checksum 0xbb82e73d, Offset: 0x9170
 // Size: 0x8c
-function private function_3af01392(player, eventstruct) {
+function private function_3af01392( player, eventstruct )
+{
     seatindex = eventstruct.seat_index;
     oldseatindex = eventstruct.old_seat_index;
-    if (oldseatindex === 0) {
-        self function_2205f6bf(player);
+    
+    if ( oldseatindex === 0 )
+    {
+        self function_2205f6bf( player );
         return;
     }
-    if (seatindex === 0) {
-        self function_b985a0f1(player);
+    
+    if ( seatindex === 0 )
+    {
+        self function_b985a0f1( player );
     }
 }
 
@@ -2325,78 +3047,100 @@ function private function_3af01392(player, eventstruct) {
 // Params 2, eflags: 0x4
 // Checksum 0xf7d92986, Offset: 0x9208
 // Size: 0x84
-function private function_ff490dad(player, eventstruct) {
+function private function_ff490dad( player, eventstruct )
+{
     seatindex = eventstruct.seat_index;
-    if (seatindex === 0) {
-        self function_2205f6bf(player);
+    
+    if ( seatindex === 0 )
+    {
+        self function_2205f6bf( player );
     }
-    player clientfield::set_player_uimodel("vehicle.malfunction", 0);
-    player setsunshadowsplitdistance(0);
+    
+    player clientfield::set_player_uimodel( "vehicle.malfunction", 0 );
+    player setsunshadowsplitdistance( 0 );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 1, eflags: 0x4
 // Checksum 0xc327bf6f, Offset: 0x9298
 // Size: 0x6c
-function private function_b985a0f1(player) {
-    self notify(#"pilot_enter");
-    self setheliheightcap(1);
-    if (isdefined(self.var_8382289e)) {
+function private function_b985a0f1( player )
+{
+    self notify( #"pilot_enter" );
+    self setheliheightcap( 1 );
+    
+    if ( isdefined( self.var_8382289e ) )
+    {
         self thread function_8bb6a990();
     }
-    self thread function_ab36338c(player);
+    
+    self thread function_ab36338c( player );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 1, eflags: 0x4
 // Checksum 0x598fdfdb, Offset: 0x9310
 // Size: 0xac
-function private function_2205f6bf(player) {
+function private function_2205f6bf( player )
+{
     state = self vehicle_ai::get_current_state();
-    self notify(#"hash_3c7ae83e462fe4e2");
-    self notify(#"pilot_exit");
-    if (state === "landed" || state === "off") {
+    self notify( #"hash_3c7ae83e462fe4e2" );
+    self notify( #"pilot_exit" );
+    
+    if ( state === "landed" || state === "off" )
+    {
         return;
     }
-    if (state === "spiral") {
+    
+    if ( state === "spiral" )
+    {
         self.var_4e76046a = 1;
         return;
     }
+    
     self function_d929b41();
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x7513f531, Offset: 0x93c8
 // Size: 0xb4
-function function_5520bbcc(player, eventstruct) {
-    self function_2ba6be18(player, eventstruct);
-    if (eventstruct.seat_index === 2 || eventstruct.seat_index === 1) {
-        player thread function_5bce3f3a(self, eventstruct.seat_index, 1000);
-        player thread update_turret_fire(self, eventstruct.seat_index, 1);
+function function_5520bbcc( player, eventstruct )
+{
+    self function_2ba6be18( player, eventstruct );
+    
+    if ( eventstruct.seat_index === 2 || eventstruct.seat_index === 1 )
+    {
+        player thread function_5bce3f3a( self, eventstruct.seat_index, 1000 );
+        player thread update_turret_fire( self, eventstruct.seat_index, 1 );
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x9135d826, Offset: 0x9488
 // Size: 0x44
-function function_564c9e78(player, eventstruct) {
-    self function_ff490dad(player, eventstruct);
+function function_564c9e78( player, eventstruct )
+{
+    self function_ff490dad( player, eventstruct );
     player function_6adf512b();
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x420a382b, Offset: 0x94d8
 // Size: 0xcc
-function function_d7bcab1f(player, eventstruct) {
-    self function_3af01392(player, eventstruct);
-    if (eventstruct.seat_index === 2 || eventstruct.seat_index === 1) {
-        player thread function_5bce3f3a(self, eventstruct.seat_index, 1000);
-        player thread update_turret_fire(self, eventstruct.seat_index, 1);
+function function_d7bcab1f( player, eventstruct )
+{
+    self function_3af01392( player, eventstruct );
+    
+    if ( eventstruct.seat_index === 2 || eventstruct.seat_index === 1 )
+    {
+        player thread function_5bce3f3a( self, eventstruct.seat_index, 1000 );
+        player thread update_turret_fire( self, eventstruct.seat_index, 1 );
         return;
     }
+    
     player function_6adf512b();
 }
 
@@ -2404,11 +3148,14 @@ function function_d7bcab1f(player, eventstruct) {
 // Params 2, eflags: 0x4
 // Checksum 0x57eb2772, Offset: 0x95b0
 // Size: 0xb4
-function private function_1b957284(player, eventstruct) {
-    self function_2ba6be18(player, eventstruct);
-    if (eventstruct.seat_index === 1 || eventstruct.seat_index === 2) {
-        player thread function_5bce3f3a(self, eventstruct.seat_index, 1000);
-        player thread update_turret_fire(self, eventstruct.seat_index, 1);
+function private function_1b957284( player, eventstruct )
+{
+    self function_2ba6be18( player, eventstruct );
+    
+    if ( eventstruct.seat_index === 1 || eventstruct.seat_index === 2 )
+    {
+        player thread function_5bce3f3a( self, eventstruct.seat_index, 1000 );
+        player thread update_turret_fire( self, eventstruct.seat_index, 1 );
     }
 }
 
@@ -2416,8 +3163,9 @@ function private function_1b957284(player, eventstruct) {
 // Params 2, eflags: 0x4
 // Checksum 0x7f869b7e, Offset: 0x9670
 // Size: 0x44
-function private function_a7401191(player, eventstruct) {
-    self function_ff490dad(player, eventstruct);
+function private function_a7401191( player, eventstruct )
+{
+    self function_ff490dad( player, eventstruct );
     player function_6adf512b();
 }
 
@@ -2425,13 +3173,17 @@ function private function_a7401191(player, eventstruct) {
 // Params 2, eflags: 0x4
 // Checksum 0x460b0b08, Offset: 0x96c0
 // Size: 0xcc
-function private function_e2d16bde(player, eventstruct) {
-    self function_3af01392(player, eventstruct);
-    if (eventstruct.seat_index === 1 || eventstruct.seat_index === 2) {
-        player thread function_5bce3f3a(self, eventstruct.seat_index, 1000);
-        player thread update_turret_fire(self, eventstruct.seat_index, 1);
+function private function_e2d16bde( player, eventstruct )
+{
+    self function_3af01392( player, eventstruct );
+    
+    if ( eventstruct.seat_index === 1 || eventstruct.seat_index === 2 )
+    {
+        player thread function_5bce3f3a( self, eventstruct.seat_index, 1000 );
+        player thread update_turret_fire( self, eventstruct.seat_index, 1 );
         return;
     }
+    
     player function_6adf512b();
 }
 
@@ -2439,53 +3191,64 @@ function private function_e2d16bde(player, eventstruct) {
 // Params 1, eflags: 0x4
 // Checksum 0x95f2b2c5, Offset: 0x9798
 // Size: 0x74
-function private function_ab36338c(player) {
-    self endon(#"death");
-    player endon(#"exit_vehicle", #"change_seat");
-    player waittill(#"disconnect");
-    self function_2205f6bf(player);
+function private function_ab36338c( player )
+{
+    self endon( #"death" );
+    player endon( #"exit_vehicle", #"change_seat" );
+    player waittill( #"disconnect" );
+    self function_2205f6bf( player );
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 3, eflags: 0x0
+// Params 3
 // Checksum 0x39e3e501, Offset: 0x9818
 // Size: 0x2b4
-function function_6c8cff7e(normal, origin = self.origin, offset = 0) {
-    self notify("4d0917ba596af416");
-    self endon("4d0917ba596af416");
-    self endon(#"death", #"hash_7f30c56005fe2b32");
-    if (!isdefined(normal)) {
+function function_6c8cff7e( normal, origin = self.origin, offset = 0 )
+{
+    self notify( "4d0917ba596af416" );
+    self endon( "4d0917ba596af416" );
+    self endon( #"death", #"hash_7f30c56005fe2b32" );
+    
+    if ( !isdefined( normal ) )
+    {
         return 0;
     }
-    if (isdefined(self.rotatemover)) {
+    
+    if ( isdefined( self.rotatemover ) )
+    {
         self.rotatemover delete();
         self.rotatemover = undefined;
     }
-    self.rotatemover = spawn("script_model", origin);
+    
+    self.rotatemover = spawn( "script_model", origin );
     self.rotatemover.targetname = "heli_rotatemover";
-    if (isdefined(self.rotatemover)) {
-        self.rotatemover thread deletemeonnotify(self, "death");
+    
+    if ( isdefined( self.rotatemover ) )
+    {
+        self.rotatemover thread deletemeonnotify( self, "death" );
         self.rotatemover.angles = self.angles;
-        targetangles = function_c1fa62a2(self.rotatemover.angles, normal);
-        self linkto(self.rotatemover);
-        self.rotatemover rotateto(targetangles, 0.5, 0, 0.5);
-        self.rotatemover moveto(origin + (0, 0, offset), 0.5, 0, 0.5);
-        self.rotatemover waittill(#"rotatedone");
+        targetangles = function_c1fa62a2( self.rotatemover.angles, normal );
+        self linkto( self.rotatemover );
+        self.rotatemover rotateto( targetangles, 0.5, 0, 0.5 );
+        self.rotatemover moveto( origin + ( 0, 0, offset ), 0.5, 0, 0.5 );
+        self.rotatemover waittill( #"rotatedone" );
         self.rotatemover delete();
         self.rotatemover = undefined;
     }
-    self setvehvelocity((0, 0, 0));
-    self setangularvelocity((0, 0, 0));
-    self setphysacceleration((0, 0, 0));
-    self sethoverparams(0);
-    self setgoal(self.origin, 1, 0);
+    
+    self setvehvelocity( ( 0, 0, 0 ) );
+    self setangularvelocity( ( 0, 0, 0 ) );
+    self setphysacceleration( ( 0, 0, 0 ) );
+    self sethoverparams( 0 );
+    self setgoal( self.origin, 1, 0 );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0x45edf05d, Offset: 0x9ad8
 // Size: 0x2a
-function private function_f4d358df() {
+function private function_f4d358df()
+{
     self.var_c1764af8 = 0;
     self.var_4dab0a63 = 0;
     self.var_67136cb0 = undefined;
@@ -2496,43 +3259,54 @@ function private function_f4d358df() {
 // Params 0, eflags: 0x4
 // Checksum 0x84d32843, Offset: 0x9b10
 // Size: 0x194
-function private function_d929b41() {
+function private function_d929b41()
+{
     self.var_4dab0a63 = 0;
     speed = self getspeedmph();
-    heighttrace = physicstrace(self.origin, self.origin - (0, 0, 1536), (0, 0, 0), (0, 0, 0), self, 2);
-    if (speed < 15 && heighttrace[#"fraction"] < 0.260417) {
+    heighttrace = physicstrace( self.origin, self.origin - ( 0, 0, 1536 ), ( 0, 0, 0 ), ( 0, 0, 0 ), self, 2 );
+    
+    if ( speed < 15 && heighttrace[ #"fraction" ] < 0.260417 )
+    {
         self.var_4dab0a63 = 1;
         self.var_c1764af8 = 1;
-        self vehicle_ai::set_state("landing");
+        self vehicle_ai::set_state( "landing" );
         return;
     }
-    if (speed < 80 && heighttrace[#"fraction"] < 1) {
+    
+    if ( speed < 80 && heighttrace[ #"fraction" ] < 1 )
+    {
         self.var_c1764af8 = 1;
         params = spawnstruct();
         params.var_6249a386 = 1;
-        self vehicle_ai::set_state("spiral", params);
+        self vehicle_ai::set_state( "spiral", params );
         return;
     }
+    
     self.var_4e76046a = 1;
-    self vehicle_ai::set_state("spiral");
+    self vehicle_ai::set_state( "spiral" );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0x730854ae, Offset: 0x9cb0
 // Size: 0x10c
-function private function_3b841f4() {
-    heighttrace = physicstrace(self.origin, self.origin - (0, 0, 1536), (0, 0, 0), (0, 0, 0), self, 2);
-    if (heighttrace[#"fraction"] >= 1) {
+function private function_3b841f4()
+{
+    heighttrace = physicstrace( self.origin, self.origin - ( 0, 0, 1536 ), ( 0, 0, 0 ), ( 0, 0, 0 ), self, 2 );
+    
+    if ( heighttrace[ #"fraction" ] >= 1 )
+    {
         self.var_4e76046a = 1;
-        self vehicle_ai::set_state("spiral");
+        self vehicle_ai::set_state( "spiral" );
         return;
     }
-    if (heighttrace[#"fraction"] > 0.260417) {
+    
+    if ( heighttrace[ #"fraction" ] > 0.260417 )
+    {
         self.var_c1764af8 = 1;
         params = spawnstruct();
         params.var_6249a386 = 1;
-        self vehicle_ai::set_state("spiral", params);
+        self vehicle_ai::set_state( "spiral", params );
     }
 }
 
@@ -2540,25 +3314,31 @@ function private function_3b841f4() {
 // Params 1, eflags: 0x4
 // Checksum 0xd3967d65, Offset: 0x9dc8
 // Size: 0x1dc
-function private function_92270eeb(params) {
-    self setvehvelocity((0, 0, 0));
-    self setangularvelocity((0, 0, 0));
-    self setphysacceleration((0, 0, 0));
-    self sethoverparams(0);
-    self setgoal(self.origin, 1, 0);
-    self setrotorspeed(0);
-    if (isdefined(params.makeunusable) && params.makeunusable || isdefined(self.var_1ba362d5) && self.var_1ba362d5) {
+function private function_92270eeb( params )
+{
+    self setvehvelocity( ( 0, 0, 0 ) );
+    self setangularvelocity( ( 0, 0, 0 ) );
+    self setphysacceleration( ( 0, 0, 0 ) );
+    self sethoverparams( 0 );
+    self setgoal( self.origin, 1, 0 );
+    self setrotorspeed( 0 );
+    
+    if ( isdefined( params.makeunusable ) && params.makeunusable || isdefined( self.var_1ba362d5 ) && self.var_1ba362d5 )
+    {
         self function_41a269b3();
     }
-    self vehicle::toggle_tread_fx(0);
-    self vehicle::toggle_exhaust_fx(0);
-    self vehicle::toggle_sounds(0);
-    self vehicle::function_bbc1d940(0);
+    
+    self vehicle::toggle_tread_fx( 0 );
+    self vehicle::toggle_exhaust_fx( 0 );
+    self vehicle::toggle_sounds( 0 );
+    self vehicle::function_bbc1d940( 0 );
     self disableaimassist();
     vehicle_ai::turnoffallambientanims();
     vehicle_ai::clearalllookingandtargeting();
     vehicle_ai::clearallmovement();
-    if (!(isdefined(params.isinitialstate) && params.isinitialstate)) {
+    
+    if ( !( isdefined( params.isinitialstate ) && params.isinitialstate ) )
+    {
         self vehicle::function_7f0bbde3();
     }
 }
@@ -2567,24 +3347,30 @@ function private function_92270eeb(params) {
 // Params 1, eflags: 0x4
 // Checksum 0x1ac84098, Offset: 0x9fb0
 // Size: 0x164
-function private function_365e033d(params) {
+function private function_365e033d( params )
+{
     params.var_32a85fa1 = 2;
     params.var_1751c737 = 1;
     params.var_da88902a = 1;
     params.var_30a04b16 = 1;
-    self vehicle::toggle_tread_fx(1);
-    self vehicle::toggle_exhaust_fx(1);
-    self thread vehicle::function_fa4236af(params);
+    self vehicle::toggle_tread_fx( 1 );
+    self vehicle::toggle_exhaust_fx( 1 );
+    self thread vehicle::function_fa4236af( params );
     self enableaimassist();
-    self setphysacceleration((0, 0, 0));
+    self setphysacceleration( ( 0, 0, 0 ) );
     self thread vehicle_ai::nudge_collision();
-    self setrotorspeed(1);
-    if (isdefined(level.enable_thermal)) {
-        if (self vehicle_ai::get_next_state() !== "death") {
+    self setrotorspeed( 1 );
+    
+    if ( isdefined( level.enable_thermal ) )
+    {
+        if ( self vehicle_ai::get_next_state() !== "death" )
+        {
             [[ level.enable_thermal ]]();
         }
     }
-    if (!(isdefined(self.nolights) && self.nolights)) {
+    
+    if ( !( isdefined( self.nolights ) && self.nolights ) )
+    {
         self vehicle::lights_on();
     }
 }
@@ -2593,372 +3379,500 @@ function private function_365e033d(params) {
 // Params 1, eflags: 0x4
 // Checksum 0x963e3f0c, Offset: 0xa120
 // Size: 0x2b4
-function private function_4b5646b1(params) {
-    self endon(#"death");
-    if (isdefined(level.vehicle_destructer_cb)) {
-        [[ level.vehicle_destructer_cb ]](self);
+function private function_4b5646b1( params )
+{
+    self endon( #"death" );
+    
+    if ( isdefined( level.vehicle_destructer_cb ) )
+    {
+        [[ level.vehicle_destructer_cb ]]( self );
     }
+    
     self vehicle_death::death_fx();
-    self thread vehicle_death::death_radius_damage("MOD_EXPLOSIVE", params.attacker);
+    self thread vehicle_death::death_radius_damage( "MOD_EXPLOSIVE", params.attacker );
     self vehicle::do_death_dynents();
     self notsolid();
     self ghost();
-    if (isdefined(self.deathmodel) && !(isdefined(getgametypesetting(#"wzheavymetalheroes")) && getgametypesetting(#"wzheavymetalheroes"))) {
-        if (!isdefined(level.var_82eb1dab)) {
+    
+    if ( isdefined( self.deathmodel ) && !( isdefined( getgametypesetting( #"wzheavymetalheroes" ) ) && getgametypesetting( #"wzheavymetalheroes" ) ) )
+    {
+        if ( !isdefined( level.var_82eb1dab ) )
+        {
             level.var_82eb1dab = [];
         }
+        
         util::wait_network_frame();
-        deathmodel = spawn("script_model", self.origin);
+        deathmodel = spawn( "script_model", self.origin );
         deathmodel.targetname = "heli_deathmodel";
-        deathmodel setmodel(self.deathmodel);
+        deathmodel setmodel( self.deathmodel );
         deathmodel.angles = self.angles;
-        deathmodel physicslaunch((0, 0, 0), self getvelocity() * 0.8);
-        deathmodel clientfield::set("deathfx", 1);
-        if (!isdefined(level.var_82eb1dab)) {
+        deathmodel physicslaunch( ( 0, 0, 0 ), self getvelocity() * 0.8 );
+        deathmodel clientfield::set( "deathfx", 1 );
+        
+        if ( !isdefined( level.var_82eb1dab ) )
+        {
             level.var_82eb1dab = [];
-        } else if (!isarray(level.var_82eb1dab)) {
-            level.var_82eb1dab = array(level.var_82eb1dab);
         }
-        level.var_82eb1dab[level.var_82eb1dab.size] = deathmodel;
+        else if ( !isarray( level.var_82eb1dab ) )
+        {
+            level.var_82eb1dab = array( level.var_82eb1dab );
+        }
+        
+        level.var_82eb1dab[ level.var_82eb1dab.size ] = deathmodel;
     }
+    
     vehicle_death::deletewhensafe();
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x9f3bd4c3, Offset: 0xa3e0
 // Size: 0x10c
-function function_976267bc(params) {
+function function_976267bc( params )
+{
     self takeplayercontrol();
-    self setphysacceleration((0, 0, -100));
-    self setvehvelocity((0, 0, 0));
-    self setangularvelocity((0, 0, 0));
+    self setphysacceleration( ( 0, 0, -100 ) );
+    self setvehvelocity( ( 0, 0, 0 ) );
+    self setangularvelocity( ( 0, 0, 0 ) );
     self.var_4e76046a = 0;
     self function_41a269b3();
     self.takedamage = 0;
-    self setrotorspeed(0);
-    self clientfield::set("stopallfx", 1);
-    self clientfield::set("flickerlights", 1);
-    self vehicle::toggle_sounds(0);
+    self setrotorspeed( 0 );
+    self clientfield::set( "stopallfx", 1 );
+    self clientfield::set( "flickerlights", 1 );
+    self vehicle::toggle_sounds( 0 );
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xbed69a67, Offset: 0xa4f8
 // Size: 0xc
-function function_eadfd579(params) {
+function function_eadfd579( params )
+{
     
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x19ce59b4, Offset: 0xa510
 // Size: 0xc
-function function_e13c4d09(params) {
+function function_e13c4d09( params )
+{
     
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xededab77, Offset: 0xa528
 // Size: 0xa4
-function function_1f014f43(params) {
-    if (!isdefined(params.rotorspeed)) {
+function function_1f014f43( params )
+{
+    if ( !isdefined( params.rotorspeed ) )
+    {
         params.rotorspeed = 0.7;
     }
+    
     occupants = self getvehoccupants();
-    if (occupants.size == 0) {
-        params.var_52c5850b = 60;
+    
+    if ( occupants.size == 0 )
+    {
+        params.maxtilt = 60;
     }
-    self setrotorspeed(params.rotorspeed);
+    
+    self setrotorspeed( params.rotorspeed );
     self takeplayercontrol();
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x43a379b6, Offset: 0xa5d8
 // Size: 0x376
-function function_2e3fb54c(params) {
-    self endon(#"change_state", #"death");
-    if (!isdefined(params.var_52c5850b)) {
-        params.var_52c5850b = 25;
+function function_2e3fb54c( params )
+{
+    self endon( #"change_state", #"death" );
+    
+    if ( !isdefined( params.maxtilt ) )
+    {
+        params.maxtilt = 25;
     }
-    if (isdefined(params.var_6249a386) && params.var_6249a386) {
+    
+    if ( isdefined( params.var_6249a386 ) && params.var_6249a386 )
+    {
         params.nopitch = 1;
         params.var_96a3f4c7 = 1;
     }
-    targetyaw = randomintrange(50, 150);
-    if (targetyaw % 2 == 0) {
+    
+    targetyaw = randomintrange( 50, 150 );
+    
+    if ( targetyaw % 2 == 0 )
+    {
         targetyaw *= -1;
     }
+    
     pitch = 0;
     roll = 0;
     yaw = 0;
-    if (!(isdefined(params.var_96a3f4c7) && params.var_96a3f4c7)) {
-        roll = targetyaw * -1 * randomfloatrange(0.125, 0.25);
+    
+    if ( !( isdefined( params.var_96a3f4c7 ) && params.var_96a3f4c7 ) )
+    {
+        roll = targetyaw * -1 * randomfloatrange( 0.125, 0.25 );
     }
-    if (!(isdefined(params.nopitch) && params.nopitch)) {
-        pitch = abs(targetyaw) * randomfloatrange(0.075, 0.15);
+    
+    if ( !( isdefined( params.nopitch ) && params.nopitch ) )
+    {
+        pitch = abs( targetyaw ) * randomfloatrange( 0.075, 0.15 );
     }
+    
     starttime = gettime();
-    while (true) {
-        if (abs(yaw) < abs(targetyaw)) {
-            yaw = lerpfloat(0, targetyaw, (gettime() - starttime) / 3000);
+    
+    while ( true )
+    {
+        if ( abs( yaw ) < abs( targetyaw ) )
+        {
+            yaw = lerpfloat( 0, targetyaw, ( gettime() - starttime ) / 3000 );
         }
-        if ((pitch || roll) && asin(anglestoup(self.angles)[2]) < 90 - params.var_52c5850b) {
+        
+        if ( ( pitch || roll ) && asin( anglestoup( self.angles )[ 2 ] ) < 90 - params.maxtilt )
+        {
             pitch = 0;
             roll = 0;
         }
-        self setangularvelocity((pitch, yaw, roll));
-        up = anglestoup(self.angles);
+        
+        self setangularvelocity( ( pitch, yaw, roll ) );
+        up = anglestoup( self.angles );
         accel = 1200;
-        if (params.var_52c5850b < 45) {
+        
+        if ( params.maxtilt < 45 )
+        {
             accel = 1600;
         }
-        self setphysacceleration((up[0] * accel, up[1] * accel, -386 * max(0.4, 1.2 - up[2])));
-        waitframe(1);
+        
+        self setphysacceleration( ( up[ 0 ] * accel, up[ 1 ] * accel, -386 * max( 0.4, 1.2 - up[ 2 ] ) ) );
+        waitframe( 1 );
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xc33af2c8, Offset: 0xa958
 // Size: 0xc
-function function_aaa84ac(params) {
+function function_aaa84ac( params )
+{
     
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xc59c62f7, Offset: 0xa970
 // Size: 0x44
-function function_d344c3f(params) {
-    self setrotorspeed(1);
+function function_d344c3f( params )
+{
+    self setrotorspeed( 1 );
     self takeplayercontrol();
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x6e23b61a, Offset: 0xa9c0
 // Size: 0x162
-function function_e291246d(params) {
-    self endon(#"death", #"change_state");
-    while (true) {
-        pilot = self getseatoccupant(0);
-        if (!isdefined(pilot)) {
-            self vehicle_ai::set_state("spiral");
+function function_e291246d( params )
+{
+    self endon( #"death", #"change_state" );
+    
+    while ( true )
+    {
+        pilot = self getseatoccupant( 0 );
+        
+        if ( !isdefined( pilot ) )
+        {
+            self vehicle_ai::set_state( "spiral" );
             break;
         }
+        
         move = pilot getnormalizedmovement();
-        if (pilot vehiclemoveupbuttonpressed() || isdefined(move) && (abs(move[0]) > 0.2 || abs(move[1]) > 0.2)) {
+        
+        if ( pilot vehiclemoveupbuttonpressed() || isdefined( move ) && ( abs( move[ 0 ] ) > 0.2 || abs( move[ 1 ] ) > 0.2 ) )
+        {
             self.var_4e76046a = undefined;
             self returnplayercontrol();
-            self vehicle_ai::set_state("driving");
+            self vehicle_ai::set_state( "driving" );
             break;
         }
-        waitframe(1);
+        
+        waitframe( 1 );
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xb5a8f2f0, Offset: 0xab30
 // Size: 0xc
-function function_ad15f5e8(params) {
+function function_ad15f5e8( params )
+{
     
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x10fb2021, Offset: 0xab48
 // Size: 0x74
-function function_200c3bd0(params) {
-    self setvehvelocity((0, 0, 0));
-    self setangularvelocity((0, 0, 0));
-    self setphysacceleration((0, 0, -386));
-    self setheliheightcap(1);
+function function_200c3bd0( params )
+{
+    self setvehvelocity( ( 0, 0, 0 ) );
+    self setangularvelocity( ( 0, 0, 0 ) );
+    self setphysacceleration( ( 0, 0, -386 ) );
+    self setheliheightcap( 1 );
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x7a8b3a2b, Offset: 0xabc8
 // Size: 0xe8
-function function_3a7426cf(params) {
-    self endon(#"change_state", #"death");
+function function_3a7426cf( params )
+{
+    self endon( #"change_state", #"death" );
     damagetime = gettime() + 15000;
-    while (true) {
+    
+    while ( true )
+    {
         wait 0.25;
-        if (self function_479389f3()) {
-            self vehicle_ai::set_state("landed");
+        
+        if ( self function_479389f3() )
+        {
+            self vehicle_ai::set_state( "landed" );
             return;
-        } else {
+        }
+        else
+        {
             function_3b841f4();
         }
-        if (gettime() > damagetime) {
-            self dodamage(250, self.origin, undefined, undefined, "", "MOD_IMPACT");
+        
+        if ( gettime() > damagetime )
+        {
+            self dodamage( 250, self.origin, undefined, undefined, "", "MOD_IMPACT" );
         }
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x109f4843, Offset: 0xacb8
 // Size: 0xc
-function function_3b1d3bf1(params) {
+function function_3b1d3bf1( params )
+{
     
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xdb9b30a2, Offset: 0xacd0
 // Size: 0xdc
-function function_d39845f(params) {
+function function_d39845f( params )
+{
     self takeplayercontrol();
-    self setvehvelocity((0, 0, 0));
-    self setangularvelocity((0, 0, 0));
-    self setphysacceleration((0, 0, 0));
-    self sethoverparams(0);
-    self setgoal(self.origin, 1, 0);
-    self thread function_6c8cff7e(self.var_67136cb0, self.helilandingorigin, self.var_6fac6f50);
+    self setvehvelocity( ( 0, 0, 0 ) );
+    self setangularvelocity( ( 0, 0, 0 ) );
+    self setphysacceleration( ( 0, 0, 0 ) );
+    self sethoverparams( 0 );
+    self setgoal( self.origin, 1, 0 );
+    self thread function_6c8cff7e( self.var_67136cb0, self.helilandingorigin, self.var_6fac6f50 );
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xe02080d0, Offset: 0xadb8
 // Size: 0x2a2
-function function_b705c816(params) {
-    self endon(#"death", #"state_changed");
-    if (!isdefined(params)) {
+function function_b705c816( params )
+{
+    self endon( #"death", #"state_changed" );
+    
+    if ( !isdefined( params ) )
+    {
         params = spawnstruct();
     }
-    if (isdefined(self.emped) && self.emped || isdefined(self.jammed) && self.jammed) {
+    
+    if ( isdefined( self.emped ) && self.emped || isdefined( self.jammed ) && self.jammed )
+    {
         params.var_c1273f91 = 1;
-        self vehicle_ai::set_state("off", params);
+        self vehicle_ai::set_state( "off", params );
         return;
     }
-    if (self vehicle_ai::get_previous_state() === "off") {
+    
+    if ( self vehicle_ai::get_previous_state() === "off" )
+    {
         wait 2;
     }
-    while (true) {
-        if (isdefined(self.emped) && self.emped || isdefined(self.jammed) && self.jammed) {
+    
+    while ( true )
+    {
+        if ( isdefined( self.emped ) && self.emped || isdefined( self.jammed ) && self.jammed )
+        {
             params.var_c1273f91 = 1;
-            self vehicle_ai::set_state("off", params);
+            self vehicle_ai::set_state( "off", params );
             break;
         }
-        if (isdefined(self.var_b3e4af16) && self.var_b3e4af16) {
-            waitframe(1);
+        
+        if ( isdefined( self.var_b3e4af16 ) && self.var_b3e4af16 )
+        {
+            waitframe( 1 );
             continue;
         }
-        player = self getseatoccupant(0);
-        if (!isdefined(player)) {
+        
+        player = self getseatoccupant( 0 );
+        
+        if ( !isdefined( player ) )
+        {
             params.no_falling = 1;
             params.var_c1273f91 = 1;
-            self vehicle_ai::set_state("off", params);
+            self vehicle_ai::set_state( "off", params );
             break;
         }
+        
         move = player getnormalizedmovement();
-        if (player vehiclemoveupbuttonpressed() || isdefined(move) && (abs(move[0]) > 0.2 || abs(move[1]) > 0.2)) {
-            self vehicle_ai::set_state("driving");
+        
+        if ( player vehiclemoveupbuttonpressed() || isdefined( move ) && ( abs( move[ 0 ] ) > 0.2 || abs( move[ 1 ] ) > 0.2 ) )
+        {
+            self vehicle_ai::set_state( "driving" );
             break;
         }
-        waitframe(1);
+        
+        waitframe( 1 );
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xc0cbb9ee, Offset: 0xb068
 // Size: 0xa4
-function function_7db28345(params) {
-    if (vehicle_ai::function_329f45a4()) {
-        self notify(#"hash_7f30c56005fe2b32");
+function function_7db28345( params )
+{
+    if ( vehicle_ai::function_329f45a4() )
+    {
+        self notify( #"hash_7f30c56005fe2b32" );
         self returnplayercontrol();
-        if (isdefined(self.rotatemover)) {
+        
+        if ( isdefined( self.rotatemover ) )
+        {
             self.rotatemover delete();
             self.rotatemover = undefined;
         }
     }
+    
     self function_f4d358df();
-    self setheliheightcap(1);
+    self setheliheightcap( 1 );
 }
 
 // Namespace wz_vehicle/vehicle
 // Params 0, eflags: 0x4
 // Checksum 0xd124ab1a, Offset: 0xb118
-// Size: 0x68e
-function private function_479389f3() {
+// Size: 0x68e, Type: bool
+function private function_479389f3()
+{
     height = self.height;
-    assert(isdefined(self.radius));
-    assert(isdefined(self.height));
+    assert( isdefined( self.radius ) );
+    assert( isdefined( self.height ) );
     var_33a206d0 = [];
-    var_33a206d0[#"leftrear"] = self gettagorigin("tag_ground_contact_left_rear");
-    var_33a206d0[#"leftmiddle"] = self gettagorigin("tag_ground_contact_left_middle");
-    var_33a206d0[#"leftfront"] = self gettagorigin("tag_ground_contact_left_front");
+    var_33a206d0[ #"leftrear" ] = self gettagorigin( "tag_ground_contact_left_rear" );
+    var_33a206d0[ #"leftmiddle" ] = self gettagorigin( "tag_ground_contact_left_middle" );
+    var_33a206d0[ #"leftfront" ] = self gettagorigin( "tag_ground_contact_left_front" );
     var_8fc02d3b = [];
-    var_8fc02d3b[#"rightrear"] = self gettagorigin("tag_ground_contact_right_rear");
-    var_8fc02d3b[#"rightmiddle"] = self gettagorigin("tag_ground_contact_right_middle");
-    var_8fc02d3b[#"rightfront"] = self gettagorigin("tag_ground_contact_right_front");
+    var_8fc02d3b[ #"rightrear" ] = self gettagorigin( "tag_ground_contact_right_rear" );
+    var_8fc02d3b[ #"rightmiddle" ] = self gettagorigin( "tag_ground_contact_right_middle" );
+    var_8fc02d3b[ #"rightfront" ] = self gettagorigin( "tag_ground_contact_right_front" );
     var_df47b913 = [];
-    foreach (tag, origin in var_33a206d0) {
-        if (!isdefined(origin)) {
+    
+    foreach ( tag, origin in var_33a206d0 )
+    {
+        if ( !isdefined( origin ) )
+        {
             return false;
         }
-        var_df47b913[tag] = physicstrace(origin + (0, 0, 25), origin - (0, 0, 75), (0, 0, 0), (0, 0, 0), self, 2);
+        
+        var_df47b913[ tag ] = physicstrace( origin + ( 0, 0, 25 ), origin - ( 0, 0, 75 ), ( 0, 0, 0 ), ( 0, 0, 0 ), self, 2 );
     }
+    
     var_dc8469e2 = [];
-    foreach (tag, origin in var_8fc02d3b) {
-        if (!isdefined(origin)) {
+    
+    foreach ( tag, origin in var_8fc02d3b )
+    {
+        if ( !isdefined( origin ) )
+        {
             return false;
         }
-        var_dc8469e2[tag] = physicstrace(origin + (0, 0, 25), origin - (0, 0, 75), (0, 0, 0), (0, 0, 0), self, 2);
+        
+        var_dc8469e2[ tag ] = physicstrace( origin + ( 0, 0, 25 ), origin - ( 0, 0, 75 ), ( 0, 0, 0 ), ( 0, 0, 0 ), self, 2 );
     }
+    
     var_d643c4fc = 0;
     var_e10b67f7 = [];
-    var_b0e8278f = (0, 0, 0);
-    avgnormal = (0, 0, 0);
+    var_b0e8278f = ( 0, 0, 0 );
+    avgnormal = ( 0, 0, 0 );
     var_4c962569 = 0;
-    foreach (tag, trace in var_df47b913) {
-        if (isdefined(trace[#"entity"])) {
+    
+    foreach ( tag, trace in var_df47b913 )
+    {
+        if ( isdefined( trace[ #"entity" ] ) )
+        {
             var_d643c4fc = 1;
             continue;
         }
-        if (trace[#"fraction"] < 1) {
-            var_b0e8278f += var_33a206d0[tag];
-            var_4c962569 += trace[#"position"][2] - var_33a206d0[tag][2];
-            avgnormal += trace[#"normal"];
-            var_e10b67f7[tag] = trace;
+        
+        if ( trace[ #"fraction" ] < 1 )
+        {
+            var_b0e8278f += var_33a206d0[ tag ];
+            var_4c962569 += trace[ #"position" ][ 2 ] - var_33a206d0[ tag ][ 2 ];
+            avgnormal += trace[ #"normal" ];
+            var_e10b67f7[ tag ] = trace;
         }
     }
+    
     var_d3532cfe = [];
-    foreach (tag, trace in var_dc8469e2) {
-        if (isdefined(trace[#"entity"])) {
+    
+    foreach ( tag, trace in var_dc8469e2 )
+    {
+        if ( isdefined( trace[ #"entity" ] ) )
+        {
             var_d643c4fc = 1;
             continue;
         }
-        if (trace[#"fraction"] < 1) {
-            var_b0e8278f += var_8fc02d3b[tag];
-            var_4c962569 += trace[#"position"][2] - var_8fc02d3b[tag][2];
-            avgnormal += trace[#"normal"];
-            var_d3532cfe[tag] = trace;
+        
+        if ( trace[ #"fraction" ] < 1 )
+        {
+            var_b0e8278f += var_8fc02d3b[ tag ];
+            var_4c962569 += trace[ #"position" ][ 2 ] - var_8fc02d3b[ tag ][ 2 ];
+            avgnormal += trace[ #"normal" ];
+            var_d3532cfe[ tag ] = trace;
         }
     }
-    if (var_e10b67f7.size > 0 || var_d3532cfe.size > 0) {
+    
+    if ( var_e10b67f7.size > 0 || var_d3532cfe.size > 0 )
+    {
         avgnormal /= var_d3532cfe.size + var_e10b67f7.size;
         self.var_eb4e4182 = avgnormal;
     }
-    if (avgnormal[2] < 0.94) {
+    
+    if ( avgnormal[ 2 ] < 0.94 )
+    {
         return false;
     }
-    if (var_e10b67f7.size == 0 || var_d3532cfe.size == 0 || var_d3532cfe.size + var_e10b67f7.size < 3) {
+    
+    if ( var_e10b67f7.size == 0 || var_d3532cfe.size == 0 || var_d3532cfe.size + var_e10b67f7.size < 3 )
+    {
         return false;
     }
-    if (var_d643c4fc) {
+    
+    if ( var_d643c4fc )
+    {
         return false;
     }
+    
     var_4c962569 /= var_d3532cfe.size + var_e10b67f7.size + 1;
-    if (var_4c962569 > 20) {
+    
+    if ( var_4c962569 > 20 )
+    {
         return false;
     }
+    
     var_b0e8278f /= var_d3532cfe.size + var_e10b67f7.size;
     self.helilandingorigin = var_b0e8278f;
     self.var_6fac6f50 = var_4c962569;
@@ -2970,371 +3884,545 @@ function private function_479389f3() {
 // Params 1, eflags: 0x4
 // Checksum 0x5447b3a3, Offset: 0xb7b0
 // Size: 0x64c
-function private function_4885ce1(params) {
-    if (params.stype === "player") {
+function private function_4885ce1( params )
+{
+    if ( params.stype === "player" )
+    {
         return;
     }
-    if (isdefined(params.entity) && isvehicle(params.entity) && params.entity function_dcef0ba1(0) && !params.entity isvehicleseatoccupied(0)) {
-        force = vectornormalize(params.entity.origin - self.origin) * 1.2;
-        params.entity launchvehicle(force);
+    
+    if ( isdefined( params.entity ) && isvehicle( params.entity ) && params.entity function_dcef0ba1( 0 ) && !params.entity isvehicleseatoccupied( 0 ) )
+    {
+        force = vectornormalize( params.entity.origin - self.origin ) * 1.2;
+        params.entity launchvehicle( force );
     }
-    if (isdefined(self.var_4e76046a) && self.var_4e76046a) {
-        self dodamage(self.health, self.origin, undefined, undefined, "", "MOD_IMPACT");
+    
+    if ( isdefined( self.var_4e76046a ) && self.var_4e76046a )
+    {
+        self dodamage( self.health, self.origin, undefined, undefined, "", "MOD_IMPACT" );
         return;
     }
-    if (!(isdefined(self.var_4dab0a63) && self.var_4dab0a63)) {
-        if (self.scriptvehicletype == "helicopter_utility") {
+    
+    if ( !( isdefined( self.var_4dab0a63 ) && self.var_4dab0a63 ) )
+    {
+        if ( self.scriptvehicletype == "helicopter_utility" )
+        {
             var_1fdf316c = 25;
             var_a7796a79 = 100;
             mindamage = 150;
             maxdamage = 5000;
         }
-        var_1fdf316c = getdvarfloat(#"hash_54a2c2e9555f2e5e", 35);
-        var_a7796a79 = getdvarfloat(#"hash_70c1f7e69c442750", 140);
-        mindamage = getdvarfloat(#"hash_42dae76d8ea47a8e", 75);
-        maxdamage = getdvarfloat(#"hash_55d628640db7ed48", 3000);
+        
+        var_1fdf316c = getdvarfloat( #"hash_54a2c2e9555f2e5e", 35 );
+        var_a7796a79 = getdvarfloat( #"hash_70c1f7e69c442750", 140 );
+        mindamage = getdvarfloat( #"hash_42dae76d8ea47a8e", 75 );
+        maxdamage = getdvarfloat( #"hash_55d628640db7ed48", 3000 );
         speed = self getspeedmph();
-        if (isdefined(params.entity) && isvehicle(params.entity)) {
+        
+        if ( isdefined( params.entity ) && isvehicle( params.entity ) )
+        {
             var_b219fafb = params.entity getspeedmph();
-            if (var_b219fafb > speed) {
+            
+            if ( var_b219fafb > speed )
+            {
                 speed = var_b219fafb;
             }
         }
-        if (speed > var_1fdf316c) {
-            applydamage = mapfloat(var_1fdf316c, var_a7796a79, mindamage, maxdamage, speed);
+        
+        if ( speed > var_1fdf316c )
+        {
+            applydamage = mapfloat( var_1fdf316c, var_a7796a79, mindamage, maxdamage, speed );
             normal = params.normal;
             sourceposition = self.origin - 100 * normal;
-            if (isdefined(params.entity) && isvehicle(params.entity)) {
+            
+            if ( isdefined( params.entity ) && isvehicle( params.entity ) )
+            {
                 riders = params.entity getvehoccupants();
-                if (isdefined(riders) && isdefined(riders[0])) {
-                    attacker = riders[0];
+                
+                if ( isdefined( riders ) && isdefined( riders[ 0 ] ) )
+                {
+                    attacker = riders[ 0 ];
                 }
             }
-            self dodamage(applydamage, sourceposition, attacker);
+            
+            self dodamage( applydamage, sourceposition, attacker );
         }
     }
+    
     state = self vehicle_ai::get_current_state();
-    if (state === "driving") {
-        player = self getseatoccupant(0);
-        if (!isdefined(player) || !player vehiclemovedownbuttonpressed()) {
+    
+    if ( state === "driving" )
+    {
+        player = self getseatoccupant( 0 );
+        
+        if ( !isdefined( player ) || !player vehiclemovedownbuttonpressed() )
+        {
             return;
         }
+        
         move = player getnormalizedmovement();
-        if (isdefined(move) && (abs(move[0]) > 0.2 || abs(move[1]) > 0.2)) {
+        
+        if ( isdefined( move ) && ( abs( move[ 0 ] ) > 0.2 || abs( move[ 1 ] ) > 0.2 ) )
+        {
             return;
         }
-        if (isdefined(params.entity)) {
+        
+        if ( isdefined( params.entity ) )
+        {
             return;
         }
-        if (self function_479389f3()) {
-            self vehicle_ai::set_state("landed", params);
-        } else {
-            player clientfield::set_player_uimodel("vehicle.invalidLanding", 1);
+        
+        if ( self function_479389f3() )
+        {
+            self vehicle_ai::set_state( "landed", params );
         }
+        else
+        {
+            player clientfield::set_player_uimodel( "vehicle.invalidLanding", 1 );
+        }
+        
         return;
     }
-    if (state === "landing" || state === "spiral") {
+    
+    if ( state === "landing" || state === "spiral" )
+    {
         self function_479389f3();
-        if (isdefined(self.var_67136cb0)) {
-            self vehicle_ai::set_state("landed");
+        
+        if ( isdefined( self.var_67136cb0 ) )
+        {
+            self vehicle_ai::set_state( "landed" );
             return;
         }
-        if (isdefined(self.var_eb4e4182)) {
-            if (self vehicle_ai::get_current_state() === "spiral") {
-                self vehicle_ai::set_state("landing");
+        
+        if ( isdefined( self.var_eb4e4182 ) )
+        {
+            if ( self vehicle_ai::get_current_state() === "spiral" )
+            {
+                self vehicle_ai::set_state( "landing" );
             }
+            
             self function_9dd58750();
         }
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x2f8ec609, Offset: 0xbe08
 // Size: 0xac
-function function_9dd58750() {
-    if (!isdefined(self.var_eb4e4182)) {
+function function_9dd58750()
+{
+    if ( !isdefined( self.var_eb4e4182 ) )
+    {
         return;
     }
-    if (self.var_eb4e4182[2] < 0.99) {
-        verticalspeed = self getvelocity()[2];
-        slidemove = (self.var_eb4e4182[0] * 300, self.var_eb4e4182[1] * 300, verticalspeed);
-    } else {
-        slidemove = (1, 0, 0) * 300;
+    
+    if ( self.var_eb4e4182[ 2 ] < 0.99 )
+    {
+        verticalspeed = self getvelocity()[ 2 ];
+        slidemove = ( self.var_eb4e4182[ 0 ] * 300, self.var_eb4e4182[ 1 ] * 300, verticalspeed );
     }
-    self setvehvelocity(slidemove);
+    else
+    {
+        slidemove = ( 1, 0, 0 ) * 300;
+    }
+    
+    self setvehvelocity( slidemove );
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 3, eflags: 0x0
+// Params 3
 // Checksum 0x39af08d6, Offset: 0xbec0
-// Size: 0xc6
-function function_2513e40c(vehicle, player, seatindex) {
-    if (player infection::is_infected()) {
+// Size: 0xc6, Type: bool
+function function_2513e40c( vehicle, player, seatindex )
+{
+    if ( player infection::is_infected() )
+    {
         return false;
     }
-    if (player item_world::function_8e0d14c1(1)) {
+    
+    if ( player item_world::function_8e0d14c1( 1 ) )
+    {
         return false;
     }
-    if (vehicle.vehicleclass === "boat") {
-        if (vehicle function_7548ecb2() && isdefined(vehicle.var_221879dc) && vehicle.var_221879dc) {
-            if (seatindex === 0) {
+    
+    if ( vehicle.vehicleclass === "boat" )
+    {
+        if ( vehicle function_7548ecb2() && isdefined( vehicle.var_221879dc ) && vehicle.var_221879dc )
+        {
+            if ( seatindex === 0 )
+            {
                 return false;
             }
         }
     }
+    
     return true;
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xeb8e19fb, Offset: 0xbf90
 // Size: 0xd4
-function function_41a269b3() {
+function function_41a269b3()
+{
     occupants = self getvehoccupants();
-    if (isdefined(occupants) && occupants.size) {
-        for (i = 0; i < occupants.size; i++) {
-            if (isdefined(occupants[i])) {
-                seatidx = self getoccupantseat(occupants[i]);
-                if (isdefined(seatidx)) {
-                    self usevehicle(occupants[i], seatidx);
+    
+    if ( isdefined( occupants ) && occupants.size )
+    {
+        for ( i = 0; i < occupants.size ; i++ )
+        {
+            if ( isdefined( occupants[ i ] ) )
+            {
+                seatidx = self getoccupantseat( occupants[ i ] );
+                
+                if ( isdefined( seatidx ) )
+                {
+                    self usevehicle( occupants[ i ], seatidx );
                 }
             }
         }
     }
+    
     self makevehicleunusable();
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x74bfbb2c, Offset: 0xc070
-// Size: 0x128
-function function_32607cfc(vehicle) {
-    if (isdefined(vehicle) && isdefined(vehicle.settings) && isdefined(vehicle.settings.var_6754976b) && vehicle.settings.var_6754976b) {
+// Size: 0x128, Type: bool
+function function_32607cfc( vehicle )
+{
+    if ( isdefined( vehicle ) && isdefined( vehicle.settings ) && isdefined( vehicle.settings.var_6754976b ) && vehicle.settings.var_6754976b )
+    {
         return true;
     }
+    
     /#
-        if (getdvarint(#"hash_6a34a21ac687e5ce", 0)) {
+        if ( getdvarint( #"hash_6a34a21ac687e5ce", 0 ) )
+        {
             return true;
         }
     #/
-    if (isdefined(getgametypesetting(#"wzheavymetalheroes")) && getgametypesetting(#"wzheavymetalheroes")) {
+    
+    if ( isdefined( getgametypesetting( #"wzheavymetalheroes" ) ) && getgametypesetting( #"wzheavymetalheroes" ) )
+    {
         return true;
     }
-    distancetraveled = self stats::get_stat_global(#"distance_traveled_vehicle_air");
-    if (!isdefined(distancetraveled)) {
+    
+    distancetraveled = self stats::get_stat_global( #"distance_traveled_vehicle_air" );
+    
+    if ( !isdefined( distancetraveled ) )
+    {
         return false;
     }
+    
     return distancetraveled >= 1647360;
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x4bf55dd, Offset: 0xc1a0
 // Size: 0x186
-function heli_emp_done(params) {
-    if (isdefined(self)) {
-        if (isdefined(level.var_fc1bbaef)) {
-            [[ level.var_fc1bbaef ]](self);
+function heli_emp_done( params )
+{
+    if ( isdefined( self ) )
+    {
+        if ( isdefined( level.var_fc1bbaef ) )
+        {
+            [[ level.var_fc1bbaef ]]( self );
         }
+        
         self.abnormal_status.emped = 0;
         self.var_b3e4af16 = undefined;
-        self clientfield::set("flickerlights", 3);
+        self clientfield::set( "flickerlights", 3 );
         self function_2418736c();
-        self vehicle::toggle_emp_fx(0);
+        self vehicle::toggle_emp_fx( 0 );
         self vehicle_ai::emp_startup_fx();
-        self function_388973e4(0);
-        if (vehicle_ai::function_329f45a4()) {
+        self function_388973e4( 0 );
+        
+        if ( vehicle_ai::function_329f45a4() )
+        {
             currentstate = self vehicle_ai::get_current_state();
-            if (currentstate === "spiral") {
-                if (self vehicle_ai::has_state("recovery")) {
-                    self vehicle_ai::set_state("recovery");
+            
+            if ( currentstate === "spiral" )
+            {
+                if ( self vehicle_ai::has_state( "recovery" ) )
+                {
+                    self vehicle_ai::set_state( "recovery" );
                 }
             }
-        } else {
-            self vehicle_ai::set_state("off");
         }
-        self notify(#"heli_emp_done");
+        else
+        {
+            self vehicle_ai::set_state( "off" );
+        }
+        
+        self notify( #"heli_emp_done" );
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xe325fc0f, Offset: 0xc330
 // Size: 0x2cc
-function function_4e74bed7(params) {
+function function_4e74bed7( params )
+{
     self function_a98ae5fe();
-    self vehicle::toggle_emp_fx(1);
+    self vehicle::toggle_emp_fx( 1 );
     self takeplayercontrol();
     self.var_b3e4af16 = 1;
     currentstate = self vehicle_ai::get_current_state();
-    if (currentstate === "off") {
-    } else {
-        if (currentstate === "landed") {
-        } else if (currentstate === "spiral") {
+    
+    if ( currentstate === "off" )
+    {
+    }
+    else
+    {
+        if ( currentstate === "landed" )
+        {
+        }
+        else if ( currentstate === "spiral" )
+        {
             self.var_4e76046a = 1;
-        } else {
+        }
+        else
+        {
             self function_d929b41();
         }
-        self playsound(#"hash_d6643b88d0186ae");
+        
+        self playsound( #"hash_d6643b88d0186ae" );
     }
-    self function_388973e4(1);
-    if (!isdefined(self.abnormal_status)) {
+    
+    self function_388973e4( 1 );
+    
+    if ( !isdefined( self.abnormal_status ) )
+    {
         self.abnormal_status = spawnstruct();
     }
+    
     self.abnormal_status.emped = 1;
     self.abnormal_status.attacker = params.param1;
     self.abnormal_status.inflictor = params.param2;
-    self vehicle::function_bbc1d940(0);
-    if (isdefined(self.settings) && isdefined(self.settings.var_6754976b) && self.settings.var_6754976b) {
+    self vehicle::function_bbc1d940( 0 );
+    
+    if ( isdefined( self.settings ) && isdefined( self.settings.var_6754976b ) && self.settings.var_6754976b )
+    {
         params.var_d8ceeba3 = 0;
-        self function_ef44d420(params);
+        self function_ef44d420( params );
     }
+    
     time = params.param0;
-    assert(isdefined(time));
-    util::cooldown("emped_timer", time);
-    while (!util::iscooldownready("emped_timer") && isalive(self)) {
-        timeleft = max(util::getcooldownleft("emped_timer"), 0.5);
+    assert( isdefined( time ) );
+    util::cooldown( "emped_timer", time );
+    
+    while ( !util::iscooldownready( "emped_timer" ) && isalive( self ) )
+    {
+        timeleft = max( util::getcooldownleft( "emped_timer" ), 0.5 );
         wait timeleft;
     }
-    self heli_emp_done(params);
+    
+    self heli_emp_done( params );
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x6e0ec70d, Offset: 0xc608
 // Size: 0xfc
-function function_9e6e374a(params) {
-    if (isdefined(self)) {
-        if (isdefined(level.var_fc1bbaef)) {
-            [[ level.var_fc1bbaef ]](self);
+function function_9e6e374a( params )
+{
+    if ( isdefined( self ) )
+    {
+        if ( isdefined( level.var_fc1bbaef ) )
+        {
+            [[ level.var_fc1bbaef ]]( self );
         }
-        self clientfield::set("stunned", 0);
+        
+        self clientfield::set( "stunned", 0 );
         self vehicle_ai::emp_startup_fx();
-        self vehicle::toggle_emp_fx(0);
-        if (isdefined(level.var_fc1bbaef)) {
-            [[ level.var_fc1bbaef ]](self);
+        self vehicle::toggle_emp_fx( 0 );
+        
+        if ( isdefined( level.var_fc1bbaef ) )
+        {
+            [[ level.var_fc1bbaef ]]( self );
         }
+        
         self.abnormal_status.emped = 0;
-        if (vehicle_ai::function_329f45a4()) {
+        
+        if ( vehicle_ai::function_329f45a4() )
+        {
             self turn_on();
         }
-        self function_388973e4(0);
+        
+        self function_388973e4( 0 );
     }
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x46aaa579, Offset: 0xc710
 // Size: 0x294
-function function_c9620f20(params) {
-    self vehicle::toggle_emp_fx(1);
-    self vehicle::function_bbc1d940(0);
-    self vehicle::toggle_sounds(0);
-    if (isdefined(self.var_52e23e90) && self.var_52e23e90) {
+function function_c9620f20( params )
+{
+    self vehicle::toggle_emp_fx( 1 );
+    self vehicle::function_bbc1d940( 0 );
+    self vehicle::toggle_sounds( 0 );
+    
+    if ( isdefined( self.var_52e23e90 ) && self.var_52e23e90 )
+    {
         self vehicle::function_7f0bbde3();
-        self playsound(#"hash_d6643b88d0186ae");
+        self playsound( #"hash_d6643b88d0186ae" );
     }
-    self function_388973e4(1);
+    
+    self function_388973e4( 1 );
     self.var_52e23e90 = undefined;
-    if (isdefined(self.settings) && isdefined(self.settings.var_6754976b) && self.settings.var_6754976b) {
+    
+    if ( isdefined( self.settings ) && isdefined( self.settings.var_6754976b ) && self.settings.var_6754976b )
+    {
         params.var_d8ceeba3 = 0;
-        self function_ef44d420(params);
+        self function_ef44d420( params );
     }
-    if (!isdefined(self.abnormal_status)) {
+    
+    if ( !isdefined( self.abnormal_status ) )
+    {
         self.abnormal_status = spawnstruct();
     }
-    self clientfield::set("stunned", 1);
+    
+    self clientfield::set( "stunned", 1 );
     self.abnormal_status.emped = 1;
     self.abnormal_status.attacker = params.param1;
     self.abnormal_status.inflictor = params.param2;
     time = params.param0;
-    assert(isdefined(time));
-    util::cooldown("emped_timer", time);
-    while (!util::iscooldownready("emped_timer") && isalive(self)) {
-        timeleft = max(util::getcooldownleft("emped_timer"), 0.5);
+    assert( isdefined( time ) );
+    util::cooldown( "emped_timer", time );
+    
+    while ( !util::iscooldownready( "emped_timer" ) && isalive( self ) )
+    {
+        timeleft = max( util::getcooldownleft( "emped_timer" ), 0.5 );
         wait timeleft;
     }
-    self function_9e6e374a(params);
+    
+    self function_9e6e374a( params );
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x6cad60ec, Offset: 0xc9b0
 // Size: 0x7c
-function function_ee42a973(player) {
+function function_ee42a973( player )
+{
     self.var_4b0fd2dc = 1;
-    self thread function_33a25ecf(player);
-    self playsound(#"wpn_trophy_deploy_start");
-    self playloopsound(#"wpn_trophy_spin", 0.25);
+    self thread function_33a25ecf( player );
+    self playsound( #"wpn_trophy_deploy_start" );
+    self playloopsound( #"wpn_trophy_spin", 0.25 );
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xad066a24, Offset: 0xca38
 // Size: 0x37a
-function function_33a25ecf(owner) {
-    owner endon(#"disconnect");
-    self endon(#"death", #"hash_23b61069705a7782");
-    while (true) {
-        if (!isdefined(self)) {
+function function_33a25ecf( owner )
+{
+    owner endon( #"disconnect" );
+    self endon( #"death", #"hash_23b61069705a7782" );
+    
+    while ( true )
+    {
+        if ( !isdefined( self ) )
+        {
             return;
         }
-        if (level.missileentities.size < 1) {
-            waitframe(1);
+        
+        if ( level.missileentities.size < 1 )
+        {
+            waitframe( 1 );
             continue;
         }
-        waitframe(1);
-        missileents = owner getentitiesinrange(level.missileentities, 512, self.origin);
-        for (index = 0; index < missileents.size; index++) {
-            if (!isdefined(self)) {
+        
+        waitframe( 1 );
+        missileents = owner getentitiesinrange( level.missileentities, 512, self.origin );
+        
+        for ( index = 0; index < missileents.size ; index++ )
+        {
+            if ( !isdefined( self ) )
+            {
                 return;
             }
-            grenade = missileents[index];
-            if (!isdefined(grenade)) {
+            
+            grenade = missileents[ index ];
+            
+            if ( !isdefined( grenade ) )
+            {
                 continue;
             }
-            if (grenade == self) {
+            
+            if ( grenade == self )
+            {
                 continue;
             }
-            if (!grenade.weapon.destroyablebytrophysystem) {
+            
+            if ( !grenade.weapon.destroyablebytrophysystem )
+            {
                 continue;
             }
-            if (grenade.destroyablebytrophysystem === 0) {
+            
+            if ( grenade.destroyablebytrophysystem === 0 )
+            {
                 continue;
             }
-            switch (grenade.model) {
-            case #"t6_wpn_grenade_supply_projectile":
-                continue;
+            
+            switch ( grenade.model )
+            {
+                case #"t6_wpn_grenade_supply_projectile":
+                    continue;
             }
-            if (!isdefined(grenade.owner)) {
-                grenade.owner = getmissileowner(grenade);
+            
+            if ( !isdefined( grenade.owner ) )
+            {
+                grenade.owner = getmissileowner( grenade );
             }
-            if (isdefined(grenade.owner)) {
-                if (level.teambased) {
-                    if (!grenade.owner util::isenemyteam(owner.team)) {
+            
+            if ( isdefined( grenade.owner ) )
+            {
+                if ( level.teambased )
+                {
+                    if ( !grenade.owner util::isenemyteam( owner.team ) )
+                    {
                         continue;
                     }
-                } else if (grenade.owner == owner) {
+                }
+                else if ( grenade.owner == owner )
+                {
                     continue;
                 }
-                if (bullettracepassed(grenade.origin, self.origin + (0, 0, 29), 0, self, grenade, 0, 1)) {
-                    grenade notify(#"death");
-                    if (isdefined(level.var_ccfcde75)) {
-                        owner [[ level.var_ccfcde75 ]](self, grenade);
+                
+                if ( bullettracepassed( grenade.origin, self.origin + ( 0, 0, 29 ), 0, self, grenade, 0, 1 ) )
+                {
+                    grenade notify( #"death" );
+                    
+                    if ( isdefined( level.var_ccfcde75 ) )
+                    {
+                        owner [[ level.var_ccfcde75 ]]( self, grenade );
                     }
+                    
                     fxfwd = grenade.origin - self.origin;
-                    if (fxfwd == (0, 0, 0)) {
-                        fxfwd = (1, 0, 0);
+                    
+                    if ( fxfwd == ( 0, 0, 0 ) )
+                    {
+                        fxfwd = ( 1, 0, 0 );
                     }
-                    fxup = anglestoup(self.angles);
-                    if (fxup == (0, 0, 0)) {
-                        fxup = (0, 0, 1);
+                    
+                    fxup = anglestoup( self.angles );
+                    
+                    if ( fxup == ( 0, 0, 0 ) )
+                    {
+                        fxup = ( 0, 0, 1 );
                     }
-                    playfx("weapon/fx_trophy_flash", self.origin + (0, 0, 15), fxfwd, fxup);
-                    owner thread projectile_explode(grenade);
+                    
+                    playfx( "weapon/fx_trophy_flash", self.origin + ( 0, 0, 15 ), fxfwd, fxup );
+                    owner thread projectile_explode( grenade );
                     index--;
-                    self playsound(#"wpn_trophy_alert");
+                    self playsound( #"wpn_trophy_alert" );
                 }
             }
         }
@@ -3342,24 +4430,27 @@ function function_33a25ecf(owner) {
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x21b06af8, Offset: 0xcdc0
 // Size: 0x6c
-function projectile_explode(projectile) {
-    self endon(#"death");
+function projectile_explode( projectile )
+{
+    self endon( #"death" );
     projposition = projectile.origin;
-    playfx("weapon/fx_trophy_detonation", projposition);
+    playfx( "weapon/fx_trophy_detonation", projposition );
     projectile delete();
 }
 
 // Namespace wz_vehicle/vehicle
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x535bdfe5, Offset: 0xce38
 // Size: 0x56
-function function_6a65d095() {
-    if (isdefined(self.var_4b0fd2dc) && self.var_4b0fd2dc) {
-        self notify(#"hash_23b61069705a7782");
-        self stoploopsound(0.25);
+function function_6a65d095()
+{
+    if ( isdefined( self.var_4b0fd2dc ) && self.var_4b0fd2dc )
+    {
+        self notify( #"hash_23b61069705a7782" );
+        self stoploopsound( 0.25 );
         self.var_4b0fd2dc = undefined;
     }
 }
@@ -3367,31 +4458,37 @@ function function_6a65d095() {
 /#
 
     // Namespace wz_vehicle/vehicle
-    // Params 0, eflags: 0x0
+    // Params 0
     // Checksum 0xc7efdbc4, Offset: 0xce98
-    // Size: 0x328
-    function function_4ead318d() {
-        self endon(#"death");
+    // Size: 0x328, Type: dev
+    function function_4ead318d()
+    {
+        self endon( #"death" );
         height = self.height;
-        assert(isdefined(self.radius));
-        assert(isdefined(self.height));
-        while (true) {
-            waitframe(1);
-            leftrear = self gettagorigin("<dev string:xb0>");
-            leftmiddle = self gettagorigin("<dev string:xcf>");
-            leftfront = self gettagorigin("<dev string:xf0>");
-            rightrear = self gettagorigin("<dev string:x110>");
-            rightmiddle = self gettagorigin("<dev string:x130>");
-            rightfront = self gettagorigin("<dev string:x152>");
-            if (!isdefined(leftrear)) {
+        assert( isdefined( self.radius ) );
+        assert( isdefined( self.height ) );
+        
+        while ( true )
+        {
+            waitframe( 1 );
+            leftrear = self gettagorigin( "<dev string:xb0>" );
+            leftmiddle = self gettagorigin( "<dev string:xcf>" );
+            leftfront = self gettagorigin( "<dev string:xf0>" );
+            rightrear = self gettagorigin( "<dev string:x110>" );
+            rightmiddle = self gettagorigin( "<dev string:x130>" );
+            rightfront = self gettagorigin( "<dev string:x152>" );
+            
+            if ( !isdefined( leftrear ) )
+            {
                 break;
             }
-            line(leftrear + (0, 0, 25), leftrear - (0, 0, 75), (1, 1, 0), 1);
-            line(leftmiddle + (0, 0, 25), leftmiddle - (0, 0, 75), (1, 1, 0), 1);
-            line(leftfront + (0, 0, 25), leftfront - (0, 0, 75), (1, 1, 0), 1);
-            line(rightrear + (0, 0, 25), rightrear - (0, 0, 75), (1, 1, 0), 1);
-            line(rightmiddle + (0, 0, 25), rightmiddle - (0, 0, 75), (1, 1, 0), 1);
-            line(rightfront + (0, 0, 25), rightfront - (0, 0, 75), (1, 1, 0), 1);
+            
+            line( leftrear + ( 0, 0, 25 ), leftrear - ( 0, 0, 75 ), ( 1, 1, 0 ), 1 );
+            line( leftmiddle + ( 0, 0, 25 ), leftmiddle - ( 0, 0, 75 ), ( 1, 1, 0 ), 1 );
+            line( leftfront + ( 0, 0, 25 ), leftfront - ( 0, 0, 75 ), ( 1, 1, 0 ), 1 );
+            line( rightrear + ( 0, 0, 25 ), rightrear - ( 0, 0, 75 ), ( 1, 1, 0 ), 1 );
+            line( rightmiddle + ( 0, 0, 25 ), rightmiddle - ( 0, 0, 75 ), ( 1, 1, 0 ), 1 );
+            line( rightfront + ( 0, 0, 25 ), rightfront - ( 0, 0, 75 ), ( 1, 1, 0 ), 1 );
         }
     }
 

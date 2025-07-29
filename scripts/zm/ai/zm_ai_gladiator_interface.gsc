@@ -4,12 +4,13 @@
 #namespace zm_ai_gladiator_interface;
 
 // Namespace zm_ai_gladiator_interface/zm_ai_gladiator_interface
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x8e01950c, Offset: 0x78
 // Size: 0xd4
-function registergladiatorinterfaceattributes() {
-    ai::registermatchedinterface(#"gladiator", #"run", 0, array(1, 0));
-    ai::registermatchedinterface(#"gladiator", #"axe_throw", 1, array(1, 0));
-    ai::registernumericinterface(#"gladiator", #"damage_multiplier", 1, 0, 100);
+function registergladiatorinterfaceattributes()
+{
+    ai::registermatchedinterface( #"gladiator", #"run", 0, array( 1, 0 ) );
+    ai::registermatchedinterface( #"gladiator", #"axe_throw", 1, array( 1, 0 ) );
+    ai::registernumericinterface( #"gladiator", #"damage_multiplier", 1, 0, 100 );
 }
 

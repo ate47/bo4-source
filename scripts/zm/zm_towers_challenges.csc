@@ -10,40 +10,48 @@
 // Params 0, eflags: 0x2
 // Checksum 0xfbcdf57e, Offset: 0xa8
 // Size: 0x44
-function autoexec __init__system__() {
-    system::register(#"zm_towers_challenges", &__init__, &__main__, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"zm_towers_challenges", &__init__, &__main__, undefined );
 }
 
 // Namespace zm_towers_challenges/zm_towers_challenges
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x5756de63, Offset: 0xf8
 // Size: 0x5c
-function __init__() {
-    clientfield::register("world", "" + #"hash_2e38cc453c5ecb9c", 16000, 2, "int", &function_a45824f, 0, 0);
+function __init__()
+{
+    clientfield::register( "world", "" + #"hash_2e38cc453c5ecb9c", 16000, 2, "int", &function_a45824f, 0, 0 );
 }
 
 // Namespace zm_towers_challenges/zm_towers_challenges
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x80f724d1, Offset: 0x160
 // Size: 0x4
-function __main__() {
+function __main__()
+{
     
 }
 
 // Namespace zm_towers_challenges/zm_towers_challenges
-// Params 7, eflags: 0x0
+// Params 7
 // Checksum 0x84a7fd41, Offset: 0x170
 // Size: 0xe4
-function function_a45824f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    if (newval == 1) {
-        forcestreamxmodel(#"wpn_t8_pistol_standard_world");
+function function_a45824f( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+{
+    if ( newval == 1 )
+    {
+        forcestreamxmodel( #"wpn_t8_pistol_standard_world" );
         return;
     }
-    if (newval == 2) {
-        forcestreamxmodel(#"wpn_t8_wpn_lmg_hades_world");
+    
+    if ( newval == 2 )
+    {
+        forcestreamxmodel( #"wpn_t8_wpn_lmg_hades_world" );
         return;
     }
-    stopforcestreamingxmodel(#"wpn_t8_pistol_standard_world");
-    stopforcestreamingxmodel(#"wpn_t8_wpn_lmg_hades_world");
+    
+    stopforcestreamingxmodel( #"wpn_t8_pistol_standard_world" );
+    stopforcestreamingxmodel( #"wpn_t8_wpn_lmg_hades_world" );
 }
 

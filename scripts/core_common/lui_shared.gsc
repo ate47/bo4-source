@@ -13,7 +13,8 @@
 
 // Namespace lui
 // Method(s) 10 Total 10
-class cluielem {
+class cluielem
+{
 
     var _uid;
 
@@ -21,73 +22,83 @@ class cluielem {
     // Params 0, eflags: 0x8
     // Checksum 0x387822f2, Offset: 0x2a38
     // Size: 0x12
-    constructor() {
+    constructor()
+    {
         _uid = "";
     }
 
     // Namespace cluielem/lui_shared
-    // Params 1, eflags: 0x0
+    // Params 1
     // Checksum 0xa6bae91c, Offset: 0x2c90
     // Size: 0x44
-    function close_luielem(player) {
-        if (isplayer(player)) {
-            player closeluielem(_uid);
+    function close_luielem( player )
+    {
+        if ( isplayer( player ) )
+        {
+            player closeluielem( _uid );
         }
     }
 
     // Namespace cluielem/lui_shared
-    // Params 1, eflags: 0x0
+    // Params 1
     // Checksum 0x37fc4b61, Offset: 0x2c58
     // Size: 0x2a
-    function function_7bfd10e6(player) {
-        return player function_3fc81484(_uid);
+    function function_7bfd10e6( player )
+    {
+        return player function_3fc81484( _uid );
     }
 
     // Namespace cluielem/lui_shared
-    // Params 3, eflags: 0x0
+    // Params 3
     // Checksum 0xaabd2700, Offset: 0x2c00
     // Size: 0x4c
-    function open_luielem(player, menu_name, persistent = 0) {
-        player openluielem(menu_name, _uid, persistent);
+    function open_luielem( player, menu_name, persistent = 0 )
+    {
+        player openluielem( menu_name, _uid, persistent );
     }
 
     // Namespace cluielem/lui_shared
-    // Params 3, eflags: 0x0
+    // Params 3
     // Checksum 0xd149a308, Offset: 0x2bb8
     // Size: 0x3c
-    function function_d6203429(player, field_name, value) {
-        player clientfield::function_9bf78ef8(_uid, field_name, value);
+    function function_d6203429( player, field_name, value )
+    {
+        player clientfield::function_9bf78ef8( _uid, field_name, value );
     }
 
     // Namespace cluielem/lui_shared
-    // Params 3, eflags: 0x0
+    // Params 3
     // Checksum 0xf0b4c8ed, Offset: 0x2b70
     // Size: 0x3c
-    function set_clientfield(player, field_name, value) {
-        player clientfield::function_9bf78ef8(_uid, field_name, value);
+    function set_clientfield( player, field_name, value )
+    {
+        player clientfield::function_9bf78ef8( _uid, field_name, value );
     }
 
     // Namespace cluielem/lui_shared
-    // Params 4, eflags: 0x0
+    // Params 4
     // Checksum 0xe2ac1eff, Offset: 0x2af0
     // Size: 0x74
-    function function_dcb34c80(var_2a0de052, field_name, version, var_59f69872 = 1) {
-        clientfield::register_bgcache("clientuimodel", var_2a0de052, "luielement." + _uid + "." + field_name, version, var_59f69872);
+    function function_dcb34c80( var_2a0de052, field_name, version, var_59f69872 = 1 )
+    {
+        clientfield::register_bgcache( "clientuimodel", var_2a0de052, "luielement." + _uid + "." + field_name, version, var_59f69872 );
     }
 
     // Namespace cluielem/lui_shared
-    // Params 5, eflags: 0x0
+    // Params 5
     // Checksum 0x1fae6db3, Offset: 0x2a80
     // Size: 0x64
-    function add_clientfield(field_name, version, bits, type, var_59f69872 = 1) {
-        clientfield::register_luielem(_uid, field_name, version, bits, type, var_59f69872);
+    function add_clientfield( field_name, version, bits, type, var_59f69872 = 1 )
+    {
+        clientfield::register_luielem( _uid, field_name, version, bits, type, var_59f69872 );
     }
 
     // Namespace cluielem/lui_shared
-    // Params 1, eflags: 0x0
+    // Params 1
     // Checksum 0x22dfd7ac, Offset: 0x2a58
     // Size: 0x1a
-    function setup_clientfields(uid) {
+    function setup_clientfields( uid )
+    {
         _uid = uid;
     }
 
@@ -97,158 +108,206 @@ class cluielem {
 // Params 0, eflags: 0x2
 // Checksum 0x291f4a5e, Offset: 0x258
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"lui_shared", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"lui_shared", &__init__, undefined, undefined );
 }
 
 // Namespace lui/lui_shared
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x7ef7082, Offset: 0x2a0
 // Size: 0x84
-function __init__() {
-    callback::on_spawned(&refresh_menu_values);
-    add_luimenu("FullScreenBlack", &full_screen_black::register, "full_screen_black");
-    add_luimenu("InitialBlack", &initial_black::register, "initial_black");
+function __init__()
+{
+    callback::on_spawned( &refresh_menu_values );
+    add_luimenu( "FullScreenBlack", &full_screen_black::register, "full_screen_black" );
+    add_luimenu( "InitialBlack", &initial_black::register, "initial_black" );
 }
 
 // Namespace lui/lui_shared
-// Params 3, eflags: 0x0
+// Params 3
 // Checksum 0x3cdad5e4, Offset: 0x330
 // Size: 0x66
-function add_luimenu(alias, registerfunc, uid) {
-    if (!isdefined(level.luimenus)) {
+function add_luimenu( alias, registerfunc, uid )
+{
+    if ( !isdefined( level.luimenus ) )
+    {
         level.luimenus = array();
     }
-    level.luimenus[alias] = [[ registerfunc ]](uid);
+    
+    level.luimenus[ alias ] = [[ registerfunc ]]( uid );
 }
 
 // Namespace lui/lui_shared
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x34fd4baf, Offset: 0x3a0
 // Size: 0x1c
-function get_luimenu(alias) {
-    return level.luimenus[alias];
+function get_luimenu( alias )
+{
+    return level.luimenus[ alias ];
 }
 
 // Namespace lui/lui_shared
 // Params 0, eflags: 0x4
 // Checksum 0xf6cf65be, Offset: 0x3c8
 // Size: 0xf4
-function private refresh_menu_values() {
-    if (!isdefined(level.lui_script_globals)) {
+function private refresh_menu_values()
+{
+    if ( !isdefined( level.lui_script_globals ) )
+    {
         return;
     }
-    foreach (k, v in level.lui_script_globals) {
-        foreach (k2, v2 in v) {
-            self set_value_for_player(k, k2, v2);
+    
+    foreach ( k, v in level.lui_script_globals )
+    {
+        foreach ( k2, v2 in v )
+        {
+            self set_value_for_player( k, k2, v2 );
         }
     }
 }
 
 // Namespace lui/lui_shared
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x2f8b83e3, Offset: 0x4c8
 // Size: 0x9c
-function play_animation(menu, str_anim) {
-    str_curr_anim = self getluimenudata(menu, "current_animation");
+function play_animation( menu, str_anim )
+{
+    str_curr_anim = self getluimenudata( menu, "current_animation" );
     str_new_anim = str_anim;
-    if (isdefined(str_curr_anim) && str_curr_anim == str_anim) {
+    
+    if ( isdefined( str_curr_anim ) && str_curr_anim == str_anim )
+    {
         str_new_anim = "";
     }
-    self setluimenudata(menu, #"current_animation", str_new_anim);
+    
+    self setluimenudata( menu, #"current_animation", str_new_anim );
 }
 
 // Namespace lui/lui_shared
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0xda550a3, Offset: 0x570
 // Size: 0x80
-function set_color(menu, color) {
-    if (!isint(menu)) {
-        [[ menu ]]->set_red(self, color[0]);
-        [[ menu ]]->set_green(self, color[1]);
-        [[ menu ]]->set_blue(self, color[2]);
+function set_color( menu, color )
+{
+    if ( !isint( menu ) )
+    {
+        [[ menu ]]->set_red( self, color[ 0 ] );
+        [[ menu ]]->set_green( self, color[ 1 ] );
+        [[ menu ]]->set_blue( self, color[ 2 ] );
     }
 }
 
 // Namespace lui/lui_shared
-// Params 3, eflags: 0x0
+// Params 3
 // Checksum 0xa2591322, Offset: 0x5f8
 // Size: 0x94
-function set_value_for_player(str_menu_id, str_variable_id, value) {
-    if (!isdefined(self.lui_script_menus)) {
+function set_value_for_player( str_menu_id, str_variable_id, value )
+{
+    if ( !isdefined( self.lui_script_menus ) )
+    {
         self.lui_script_menus = [];
     }
-    if (!isdefined(self.lui_script_menus[str_menu_id])) {
-        self.lui_script_menus[str_menu_id] = self openluimenu(str_menu_id);
+    
+    if ( !isdefined( self.lui_script_menus[ str_menu_id ] ) )
+    {
+        self.lui_script_menus[ str_menu_id ] = self openluimenu( str_menu_id );
     }
-    self setluimenudata(self.lui_script_menus[str_menu_id], str_variable_id, value);
+    
+    self setluimenudata( self.lui_script_menus[ str_menu_id ], str_variable_id, value );
 }
 
 // Namespace lui/lui_shared
-// Params 3, eflags: 0x0
+// Params 3
 // Checksum 0xb2dc56b0, Offset: 0x698
 // Size: 0x118
-function set_global(str_menu_id, str_variable_id, value) {
-    if (!isdefined(level.lui_script_globals)) {
+function set_global( str_menu_id, str_variable_id, value )
+{
+    if ( !isdefined( level.lui_script_globals ) )
+    {
         level.lui_script_globals = [];
     }
-    if (!isdefined(level.lui_script_globals[str_menu_id])) {
-        level.lui_script_globals[str_menu_id] = [];
+    
+    if ( !isdefined( level.lui_script_globals[ str_menu_id ] ) )
+    {
+        level.lui_script_globals[ str_menu_id ] = [];
     }
-    level.lui_script_globals[str_menu_id][str_variable_id] = value;
-    if (isdefined(level.players)) {
-        foreach (player in level.players) {
-            player set_value_for_player(str_menu_id, str_variable_id, value);
+    
+    level.lui_script_globals[ str_menu_id ][ str_variable_id ] = value;
+    
+    if ( isdefined( level.players ) )
+    {
+        foreach ( player in level.players )
+        {
+            player set_value_for_player( str_menu_id, str_variable_id, value );
         }
     }
 }
 
 // Namespace lui/lui_shared
-// Params 5, eflags: 0x0
+// Params 5
 // Checksum 0x1222c8a3, Offset: 0x7b8
 // Size: 0x184
-function timer(n_time, str_endon, x = 1080, y = 200, height = 60) {
-    lui = self openluimenu("HudElementTimer");
-    self setluimenudata(lui, #"x", x);
-    self setluimenudata(lui, #"y", y);
-    self setluimenudata(lui, #"height", height);
-    self setluimenudata(lui, #"time", gettime() + int(n_time * 1000));
-    if (isdefined(str_endon)) {
-        self waittilltimeout(n_time, str_endon);
-    } else {
+function timer( n_time, str_endon, x = 1080, y = 200, height = 60 )
+{
+    lui = self openluimenu( "HudElementTimer" );
+    self setluimenudata( lui, #"x", x );
+    self setluimenudata( lui, #"y", y );
+    self setluimenudata( lui, #"height", height );
+    self setluimenudata( lui, #"time", gettime() + int( n_time * 1000 ) );
+    
+    if ( isdefined( str_endon ) )
+    {
+        self waittilltimeout( n_time, str_endon );
+    }
+    else
+    {
         wait n_time;
     }
-    self closeluimenu(lui);
+    
+    self closeluimenu( lui );
 }
 
 // Namespace lui/lui_shared
-// Params 3, eflags: 0x0
+// Params 3
 // Checksum 0xe28f31dc, Offset: 0x948
 // Size: 0x18c
-function prime_movie(str_movie, b_looping = 0, str_key = #"") {
-    if (isarray(self)) {
-        foreach (player in self) {
-            player primemovie(str_movie, b_looping, str_key);
+function prime_movie( str_movie, b_looping = 0, str_key = #"" )
+{
+    if ( isarray( self ) )
+    {
+        foreach ( player in self )
+        {
+            player primemovie( str_movie, b_looping, str_key );
         }
+        
         return;
     }
-    if (self == level) {
-        foreach (player in level.players) {
-            player primemovie(str_movie, b_looping, str_key);
+    
+    if ( self == level )
+    {
+        foreach ( player in level.players )
+        {
+            player primemovie( str_movie, b_looping, str_key );
         }
+        
         return;
     }
-    self primemovie(str_movie, b_looping, str_key);
+    
+    self primemovie( str_movie, b_looping, str_key );
 }
 
 // Namespace lui/lui_shared
-// Params 4, eflags: 0x0
+// Params 4
 // Checksum 0xf0019f7b, Offset: 0xae0
 // Size: 0x108
-function function_2fb8927b(str_team, str_movie, b_looping = 0, str_key = #"") {
-    callback::on_connect(&function_67373791, undefined, str_team, str_movie, b_looping, str_key);
-    foreach (player in util::get_human_players(str_team)) {
-        player prime_movie(str_movie);
+function function_2fb8927b( str_team, str_movie, b_looping = 0, str_key = #"" )
+{
+    callback::on_connect( &function_67373791, undefined, str_team, str_movie, b_looping, str_key );
+    
+    foreach ( player in util::get_human_players( str_team ) )
+    {
+        player prime_movie( str_movie );
     }
 }
 
@@ -256,126 +315,186 @@ function function_2fb8927b(str_team, str_movie, b_looping = 0, str_key = #"") {
 // Params 4, eflags: 0x4
 // Checksum 0xe4f0399c, Offset: 0xbf0
 // Size: 0x6c
-function private function_67373791(str_team, str_movie, b_looping, str_key) {
-    if (util::is_on_side(str_team)) {
-        if (util::function_8e89351(self)) {
-            prime_movie(str_movie);
+function private function_67373791( str_team, str_movie, b_looping, str_key )
+{
+    if ( util::is_on_side( str_team ) )
+    {
+        if ( util::function_8e89351( self ) )
+        {
+            prime_movie( str_movie );
         }
     }
 }
 
 // Namespace lui/lui_shared
-// Params 8, eflags: 0x0
+// Params 8
 // Checksum 0x6f8117db, Offset: 0xc68
 // Size: 0x148
-function function_c6d1cb5d(str_team, str_movie, str_type, show_black_screen = 0, b_looping = 0, b_skippable = 0, str_key = #"", n_timeout) {
-    callback::remove_on_connect(&function_67373791);
-    foreach (player in util::get_human_players(str_team)) {
-        player thread play_movie(str_movie, str_type, show_black_screen, b_looping, b_skippable, str_key, n_timeout);
+function function_c6d1cb5d( str_team, str_movie, str_type, show_black_screen = 0, b_looping = 0, b_skippable = 0, str_key = #"", n_timeout )
+{
+    callback::remove_on_connect( &function_67373791 );
+    
+    foreach ( player in util::get_human_players( str_team ) )
+    {
+        player thread play_movie( str_movie, str_type, show_black_screen, b_looping, b_skippable, str_key, n_timeout );
     }
 }
 
 // Namespace lui/lui_shared
-// Params 8, eflags: 0x0
+// Params 8
 // Checksum 0x7cf3f843, Offset: 0xdb8
 // Size: 0x458
-function play_movie(str_movie, str_type, show_black_screen = 0, b_looping = 0, b_skippable = 0, str_key = #"", n_timeout, var_c16d0253 = 1) {
-    if (str_type === "fullscreen" || str_type === "fullscreen_additive") {
+function play_movie( str_movie, str_type, show_black_screen = 0, b_looping = 0, b_skippable = 0, str_key = #"", n_timeout, var_c16d0253 = 1 )
+{
+    if ( str_type === "fullscreen" || str_type === "fullscreen_additive" )
+    {
         b_hide_hud = 1;
     }
-    if (isarray(self)) {
+    
+    if ( isarray( self ) )
+    {
         a_players = self;
-    } else if (self == level) {
+    }
+    else if ( self == level )
+    {
         a_players = level.players;
     }
-    if (isarray(a_players)) {
+    
+    if ( isarray( a_players ) )
+    {
         var_7e05b6e9 = [];
-        foreach (player in a_players) {
-            if (isbot(player) || var_c16d0253 && player issplitscreen()) {
-                array::add(var_7e05b6e9, player);
+        
+        foreach ( player in a_players )
+        {
+            if ( isbot( player ) || var_c16d0253 && player issplitscreen() )
+            {
+                array::add( var_7e05b6e9, player );
             }
         }
-        foreach (bot in var_7e05b6e9) {
-            arrayremovevalue(a_players, bot);
+        
+        foreach ( bot in var_7e05b6e9 )
+        {
+            arrayremovevalue( a_players, bot );
         }
-        foreach (player in a_players) {
-            if (isdefined(b_hide_hud)) {
-                player thread function_6c2457a9(1);
+        
+        foreach ( player in a_players )
+        {
+            if ( isdefined( b_hide_hud ) )
+            {
+                player thread function_6c2457a9( 1 );
             }
-            player thread _play_movie_for_player(str_movie, str_type, show_black_screen, b_looping, b_skippable, str_key, n_timeout);
+            
+            player thread _play_movie_for_player( str_movie, str_type, show_black_screen, b_looping, b_skippable, str_key, n_timeout );
         }
-        if (a_players.size) {
-            array::wait_till(a_players, "movie_done", n_timeout);
-        } else {
-            waitframe(1);
+        
+        if ( a_players.size )
+        {
+            array::wait_till( a_players, "movie_done", n_timeout );
         }
-        if (isdefined(b_hide_hud)) {
-            foreach (player in a_players) {
-                if (!isdefined(player)) {
+        else
+        {
+            waitframe( 1 );
+        }
+        
+        if ( isdefined( b_hide_hud ) )
+        {
+            foreach ( player in a_players )
+            {
+                if ( !isdefined( player ) )
+                {
                     continue;
                 }
-                player thread function_6c2457a9(0);
+                
+                player thread function_6c2457a9( 0 );
             }
         }
-    } else {
-        if (isdefined(b_hide_hud)) {
-            self thread function_6c2457a9(1);
+    }
+    else
+    {
+        if ( isdefined( b_hide_hud ) )
+        {
+            self thread function_6c2457a9( 1 );
         }
-        _play_movie_for_player(str_movie, str_type, 0, b_looping, b_skippable, str_key, n_timeout);
-        if (isdefined(b_hide_hud) && isdefined(self)) {
-            self thread function_6c2457a9(0);
+        
+        _play_movie_for_player( str_movie, str_type, 0, b_looping, b_skippable, str_key, n_timeout );
+        
+        if ( isdefined( b_hide_hud ) && isdefined( self ) )
+        {
+            self thread function_6c2457a9( 0 );
         }
     }
-    level notify(#"movie_done", {#type:str_type});
+    
+    level notify( #"movie_done", { #type:str_type } );
 }
 
 // Namespace lui/lui_shared
 // Params 7, eflags: 0x4
 // Checksum 0xbb78445e, Offset: 0x1218
 // Size: 0x36e
-function private _play_movie_for_player(str_movie, str_type, show_black_screen, b_looping, b_skippable, str_key, n_timeout) {
-    self endon(#"disconnect");
+function private _play_movie_for_player( str_movie, str_type, show_black_screen, b_looping, b_skippable, str_key, n_timeout )
+{
+    self endon( #"disconnect" );
     str_menu = undefined;
-    switch (str_type) {
-    case #"fullscreen_additive":
-    case #"fullscreen":
-        str_menu = "full_screen_movie";
-        break;
-    default:
-        assertmsg("<dev string:x38>" + str_type + "<dev string:x4f>");
-        break;
+    
+    switch ( str_type )
+    {
+        case #"fullscreen_additive":
+        case #"fullscreen":
+            str_menu = "full_screen_movie";
+            break;
+        default:
+            assertmsg( "<dev string:x38>" + str_type + "<dev string:x4f>" );
+            break;
     }
-    if (str_type == "pip") {
-        self playsoundtoplayer(#"uin_pip_open", self);
+    
+    if ( str_type == "pip" )
+    {
+        self playsoundtoplayer( #"uin_pip_open", self );
     }
-    lui_menu = get_luimenu(str_menu);
-    [[ lui_menu ]]->open(self);
-    if (isdefined(lui_menu)) {
-        [[ lui_menu ]]->set_moviename(self, str_movie);
-        [[ lui_menu ]]->set_moviekey(self, str_key);
-        [[ lui_menu ]]->set_showblackscreen(self, show_black_screen);
-        [[ lui_menu ]]->set_looping(self, b_looping);
-        [[ lui_menu ]]->registerplayer_callout_traversal(self, b_skippable);
-        [[ lui_menu ]]->set_additive(self, 0);
-        if (issubstr(str_type, "additive")) {
-            [[ lui_menu ]]->set_additive(self, 1);
+    
+    lui_menu = get_luimenu( str_menu );
+    [[ lui_menu ]]->open( self );
+    
+    if ( isdefined( lui_menu ) )
+    {
+        [[ lui_menu ]]->set_moviename( self, str_movie );
+        [[ lui_menu ]]->set_moviekey( self, str_key );
+        [[ lui_menu ]]->set_showblackscreen( self, show_black_screen );
+        [[ lui_menu ]]->set_looping( self, b_looping );
+        [[ lui_menu ]]->registerplayer_callout_traversal( self, b_skippable );
+        [[ lui_menu ]]->set_additive( self, 0 );
+        
+        if ( issubstr( str_type, "additive" ) )
+        {
+            [[ lui_menu ]]->set_additive( self, 1 );
         }
-        while (true) {
+        
+        while ( true )
+        {
             n_start_time = gettime();
-            if (isdefined(n_timeout)) {
-                waitresult = self waittilltimeout(n_timeout, #"menuresponse");
-            } else {
-                waitresult = self waittill(#"menuresponse");
+            
+            if ( isdefined( n_timeout ) )
+            {
+                waitresult = self waittilltimeout( n_timeout, #"menuresponse" );
             }
-            n_total_time = float(gettime() - n_start_time) / 1000;
+            else
+            {
+                waitresult = self waittill( #"menuresponse" );
+            }
+            
+            n_total_time = float( gettime() - n_start_time ) / 1000;
             menu = waitresult.menu;
             response = waitresult.response;
-            if (waitresult._notify == "timeout" || menu === hash(str_menu) && response === #"finished_movie_playback") {
-                if (str_type == "pip") {
-                    self playsoundtoplayer(#"uin_pip_close", self);
+            
+            if ( waitresult._notify == "timeout" || menu === hash( str_menu ) && response === #"finished_movie_playback" )
+            {
+                if ( str_type == "pip" )
+                {
+                    self playsoundtoplayer( #"uin_pip_close", self );
                 }
-                [[ lui_menu ]]->close(self);
-                self notify(#"movie_done");
+                
+                [[ lui_menu ]]->close( self );
+                self notify( #"movie_done" );
                 break;
             }
         }
@@ -386,83 +505,115 @@ function private _play_movie_for_player(str_movie, str_type, show_black_screen, 
 // Params 1, eflags: 0x4
 // Checksum 0x68b1921, Offset: 0x1590
 // Size: 0x17c
-function private function_6c2457a9(b_disable = 1) {
-    if (b_disable) {
-        self flagsys::set(#"playing_movie_hide_hud");
-        self val::set(#"play_movie", "show_hud", 0);
-        self val::set(#"play_movie", "takedamage", 0);
-        self scene::set_igc_active(1);
+function private function_6c2457a9( b_disable = 1 )
+{
+    if ( b_disable )
+    {
+        self flagsys::set( #"playing_movie_hide_hud" );
+        self val::set( #"play_movie", "show_hud", 0 );
+        self val::set( #"play_movie", "takedamage", 0 );
+        self scene::set_igc_active( 1 );
         self thread scene::scene_disable_player_stuff();
-        self notify(#"delete_weapon_objects");
+        self notify( #"delete_weapon_objects" );
         return;
     }
-    self flagsys::clear(#"playing_movie_hide_hud");
-    self val::reset(#"play_movie", "show_hud");
-    self val::reset(#"play_movie", "takedamage");
-    self scene::set_igc_active(0);
+    
+    self flagsys::clear( #"playing_movie_hide_hud" );
+    self val::reset( #"play_movie", "show_hud" );
+    self val::reset( #"play_movie", "takedamage" );
+    self scene::set_igc_active( 0 );
     self thread scene::scene_enable_player_stuff();
 }
 
 // Namespace lui/lui_shared
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x4f2cd00f, Offset: 0x1718
 // Size: 0x318
-function play_outro_movie(show_black_screen = 1) {
+function play_outro_movie( show_black_screen = 1 )
+{
     outro_movie = getmapoutromovie();
-    if (!isdefined(outro_movie) || outro_movie == #"") {
+    
+    if ( !isdefined( outro_movie ) || outro_movie == #"" )
+    {
         return;
     }
-    if (isarray(self)) {
+    
+    if ( isarray( self ) )
+    {
         a_players = self;
-    } else if (self == level) {
+    }
+    else if ( self == level )
+    {
         a_players = level.players;
     }
-    level flagsys::set("playing_outro_movie");
-    if (isarray(a_players)) {
-        foreach (player in a_players) {
-            player flagsys::set("playing_movie_hide_hud");
-            player val::set(#"play_movie", "show_hud", 0);
+    
+    level flagsys::set( "playing_outro_movie" );
+    
+    if ( isarray( a_players ) )
+    {
+        foreach ( player in a_players )
+        {
+            player flagsys::set( "playing_movie_hide_hud" );
+            player val::set( #"play_movie", "show_hud", 0 );
         }
-        array::wait_till(a_players, "movie_done");
-        foreach (player in a_players) {
-            player flagsys::clear("playing_movie_hide_hud");
-            player val::reset(#"play_movie", "show_hud");
-        }
-    } else {
-        self flagsys::set("playing_movie_hide_hud");
-        self val::set(#"play_movie", "show_hud", 0);
-        if (isdefined(self)) {
-            self flagsys::clear("playing_movie_hide_hud");
-            self val::reset(#"play_movie", "show_hud");
+        
+        array::wait_till( a_players, "movie_done" );
+        
+        foreach ( player in a_players )
+        {
+            player flagsys::clear( "playing_movie_hide_hud" );
+            player val::reset( #"play_movie", "show_hud" );
         }
     }
-    level flagsys::clear("playing_outro_movie");
-    level notify(#"movie_done", {#type:"outro"});
+    else
+    {
+        self flagsys::set( "playing_movie_hide_hud" );
+        self val::set( #"play_movie", "show_hud", 0 );
+        
+        if ( isdefined( self ) )
+        {
+            self flagsys::clear( "playing_movie_hide_hud" );
+            self val::reset( #"play_movie", "show_hud" );
+        }
+    }
+    
+    level flagsys::clear( "playing_outro_movie" );
+    level notify( #"movie_done", { #type:"outro" } );
 }
 
 // Namespace lui/lui_shared
 // Params 0, eflags: 0x4
 // Checksum 0xb94396a0, Offset: 0x1a38
 // Size: 0x17c
-function private function_1bc580af() {
-    lui_menu = get_luimenu("full_screen_movie");
-    [[ lui_menu ]]->open(self);
-    if (isdefined(lui_menu)) {
-        [[ lui_menu ]]->set_playoutromovie(self, 1);
-        [[ lui_menu ]]->set_showblackscreen(self, 1);
-        while (true) {
-            waitresult = self waittill(#"menuresponse");
+function private function_1bc580af()
+{
+    lui_menu = get_luimenu( "full_screen_movie" );
+    [[ lui_menu ]]->open( self );
+    
+    if ( isdefined( lui_menu ) )
+    {
+        [[ lui_menu ]]->set_playoutromovie( self, 1 );
+        [[ lui_menu ]]->set_showblackscreen( self, 1 );
+        
+        while ( true )
+        {
+            waitresult = self waittill( #"menuresponse" );
             menu = waitresult.menu;
             response = waitresult.response;
             value = waitresult.value;
-            if (menu === #"full_screen_movie") {
-                if (response === #"finished_movie_playback") {
-                    [[ lui_menu ]]->close(self);
-                    self notify(#"movie_done");
+            
+            if ( menu === #"full_screen_movie" )
+            {
+                if ( response === #"finished_movie_playback" )
+                {
+                    [[ lui_menu ]]->close( self );
+                    self notify( #"movie_done" );
                     break;
                 }
-                if (response === #"skippable" && isdefined(value)) {
-                    [[ lui_menu ]]->registerplayer_callout_traversal(self, value);
+                
+                if ( response === #"skippable" && isdefined( value ) )
+                {
+                    [[ lui_menu ]]->registerplayer_callout_traversal( self, value );
                 }
             }
         }
@@ -470,68 +621,88 @@ function private function_1bc580af() {
 }
 
 // Namespace lui/lui_shared
-// Params 7, eflags: 0x0
+// Params 7
 // Checksum 0x3fb251a9, Offset: 0x1bc0
 // Size: 0x18c
-function screen_flash(n_fadein_time, n_hold_time, n_fadeout_time, n_target_alpha = 1, v_color, b_force_close_menu = 0, var_4db66001 = 0) {
-    if (self == level) {
-        foreach (player in level.players) {
-            player thread screen_flash(n_fadein_time, n_hold_time, n_fadeout_time, n_target_alpha, v_color, b_force_close_menu, var_4db66001);
+function screen_flash( n_fadein_time, n_hold_time, n_fadeout_time, n_target_alpha = 1, v_color, b_force_close_menu = 0, var_4db66001 = 0 )
+{
+    if ( self == level )
+    {
+        foreach ( player in level.players )
+        {
+            player thread screen_flash( n_fadein_time, n_hold_time, n_fadeout_time, n_target_alpha, v_color, b_force_close_menu, var_4db66001 );
         }
+        
         return;
     }
-    self endon(#"disconnect");
-    if (var_4db66001 && self scene::is_igc_active()) {
+    
+    self endon( #"disconnect" );
+    
+    if ( var_4db66001 && self scene::is_igc_active() )
+    {
         return;
     }
-    self _screen_fade(n_fadein_time, n_target_alpha, 0, v_color, b_force_close_menu);
+    
+    self _screen_fade( n_fadein_time, n_target_alpha, 0, v_color, b_force_close_menu );
     wait n_hold_time;
-    self _screen_fade(n_fadeout_time, 0, n_target_alpha, v_color, b_force_close_menu);
+    self _screen_fade( n_fadeout_time, 0, n_target_alpha, v_color, b_force_close_menu );
 }
 
 // Namespace lui/lui_shared
-// Params 7, eflags: 0x0
+// Params 7
 // Checksum 0x3ab350d4, Offset: 0x1d58
 // Size: 0x13c
-function screen_fade(n_time, n_target_alpha = 1, n_start_alpha = 0, v_color, b_force_close_menu = 0, str_menu_id, var_b675738a) {
-    if (self == level) {
-        foreach (player in level.players) {
-            player thread _screen_fade(n_time, n_target_alpha, n_start_alpha, v_color, b_force_close_menu, str_menu_id, var_b675738a);
+function screen_fade( n_time, n_target_alpha = 1, n_start_alpha = 0, v_color, b_force_close_menu = 0, str_menu_id, var_b675738a )
+{
+    if ( self == level )
+    {
+        foreach ( player in level.players )
+        {
+            player thread _screen_fade( n_time, n_target_alpha, n_start_alpha, v_color, b_force_close_menu, str_menu_id, var_b675738a );
         }
+        
         return;
     }
-    self thread _screen_fade(n_time, n_target_alpha, n_start_alpha, v_color, b_force_close_menu, str_menu_id, var_b675738a);
+    
+    self thread _screen_fade( n_time, n_target_alpha, n_start_alpha, v_color, b_force_close_menu, str_menu_id, var_b675738a );
 }
 
 // Namespace lui/lui_shared
-// Params 4, eflags: 0x0
+// Params 4
 // Checksum 0x838e6ace, Offset: 0x1ea0
 // Size: 0x52
-function screen_fade_out(n_time, v_color, str_menu_id, var_b675738a) {
-    screen_fade(n_time, 1, 0, v_color, 0, str_menu_id, var_b675738a);
+function screen_fade_out( n_time, v_color, str_menu_id, var_b675738a )
+{
+    screen_fade( n_time, 1, 0, v_color, 0, str_menu_id, var_b675738a );
     wait n_time;
 }
 
 // Namespace lui/lui_shared
-// Params 4, eflags: 0x0
+// Params 4
 // Checksum 0x91765e9a, Offset: 0x1f00
 // Size: 0x52
-function screen_fade_in(n_time, v_color, str_menu_id, var_b675738a) {
-    screen_fade(n_time, 0, 1, v_color, 1, str_menu_id, var_b675738a);
+function screen_fade_in( n_time, v_color, str_menu_id, var_b675738a )
+{
+    screen_fade( n_time, 0, 1, v_color, 1, str_menu_id, var_b675738a );
     wait n_time;
 }
 
 // Namespace lui/lui_shared
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xbfdedea, Offset: 0x1f60
 // Size: 0xa4
-function screen_close_menu() {
-    if (self == level) {
-        foreach (player in level.players) {
+function screen_close_menu()
+{
+    if ( self == level )
+    {
+        foreach ( player in level.players )
+        {
             player thread _screen_close_menu();
         }
+        
         return;
     }
+    
     self thread _screen_close_menu();
 }
 
@@ -539,17 +710,25 @@ function screen_close_menu() {
 // Params 0, eflags: 0x4
 // Checksum 0x9355ef5d, Offset: 0x2010
 // Size: 0x10c
-function private _screen_close_menu() {
-    self notify(#"_screen_fade");
-    self endon(#"_screen_fade", #"disconnect");
-    if (isdefined(self.screen_fade_menus)) {
-        foreach (str_menu_id, lui_menu in self.screen_fade_menus) {
-            if (isint(lui_menu.lui_menu)) {
-                self closeluimenu(lui_menu.lui_menu);
-            } else {
-                [[ lui_menu.lui_menu ]]->close(self);
+function private _screen_close_menu()
+{
+    self notify( #"_screen_fade" );
+    self endon( #"_screen_fade", #"disconnect" );
+    
+    if ( isdefined( self.screen_fade_menus ) )
+    {
+        foreach ( str_menu_id, lui_menu in self.screen_fade_menus )
+        {
+            if ( isint( lui_menu.lui_menu ) )
+            {
+                self closeluimenu( lui_menu.lui_menu );
             }
-            self.screen_fade_menus[str_menu_id] = undefined;
+            else
+            {
+                [[ lui_menu.lui_menu ]]->close( self );
+            }
+            
+            self.screen_fade_menus[ str_menu_id ] = undefined;
         }
     }
 }
@@ -558,91 +737,137 @@ function private _screen_close_menu() {
 // Params 7, eflags: 0x4
 // Checksum 0xfc52c3bf, Offset: 0x2128
 // Size: 0x5f2
-function private _screen_fade(n_time, n_target_alpha, n_start_alpha, v_color, b_force_close_menu, str_menu_id = "default", var_b675738a = 0) {
-    self notify("_screen_fade_" + str_menu_id);
-    self endon("_screen_fade_" + str_menu_id, #"disconnect");
-    if (!isdefined(self.screen_fade_menus)) {
+function private _screen_fade( n_time, n_target_alpha, n_start_alpha, v_color, b_force_close_menu, str_menu_id = "default", var_b675738a = 0 )
+{
+    self notify( "_screen_fade_" + str_menu_id );
+    self endon( "_screen_fade_" + str_menu_id, #"disconnect" );
+    
+    if ( !isdefined( self.screen_fade_menus ) )
+    {
         self.screen_fade_menus = [];
     }
-    if (!isdefined(level.screen_fade_network_frame)) {
+    
+    if ( !isdefined( level.screen_fade_network_frame ) )
+    {
         level.screen_fade_network_frame = 0;
     }
-    if (!isdefined(v_color)) {
-        v_color = (0, 0, 0);
+    
+    if ( !isdefined( v_color ) )
+    {
+        v_color = ( 0, 0, 0 );
     }
-    n_time_ms = int(int(n_time * 1000));
+    
+    n_time_ms = int( int( n_time * 1000 ) );
     str_menu = "FullScreenBlack";
-    if (isstring(v_color)) {
-        switch (v_color) {
-        case #"black":
-            v_color = (0, 0, 0);
-            break;
-        case #"white":
-            v_color = (1, 1, 1);
-            break;
+    
+    if ( isstring( v_color ) )
+    {
+        switch ( v_color )
+        {
+            case #"black":
+                v_color = ( 0, 0, 0 );
+                break;
+            case #"white":
+                v_color = ( 1, 1, 1 );
+                break;
         }
     }
+    
     lui_menu = 0;
-    if (isdefined(self.screen_fade_menus[str_menu_id])) {
-        s_menu = self.screen_fade_menus[str_menu_id];
+    
+    if ( isdefined( self.screen_fade_menus[ str_menu_id ] ) )
+    {
+        s_menu = self.screen_fade_menus[ str_menu_id ];
         lui_menu = s_menu.lui_menu;
-        _one_screen_fade_per_network_frame(s_menu);
-        n_start_alpha = lerpfloat(s_menu.n_start_alpha, s_menu.n_target_alpha, gettime() - s_menu.n_start_time);
-    } else {
-        if (isdefined(get_luimenu(str_menu))) {
-            lui_menu = get_luimenu(str_menu);
-            [[ lui_menu ]]->open(self);
-        } else {
-            lui_menu = self openluimenu(str_menu);
+        _one_screen_fade_per_network_frame( s_menu );
+        n_start_alpha = lerpfloat( s_menu.n_start_alpha, s_menu.n_target_alpha, gettime() - s_menu.n_start_time );
+    }
+    else
+    {
+        if ( isdefined( get_luimenu( str_menu ) ) )
+        {
+            lui_menu = get_luimenu( str_menu );
+            [[ lui_menu ]]->open( self );
         }
-        self.screen_fade_menus[str_menu_id] = spawnstruct();
-        self.screen_fade_menus[str_menu_id].lui_menu = lui_menu;
+        else
+        {
+            lui_menu = self openluimenu( str_menu );
+        }
+        
+        self.screen_fade_menus[ str_menu_id ] = spawnstruct();
+        self.screen_fade_menus[ str_menu_id ].lui_menu = lui_menu;
     }
-    self.screen_fade_menus[str_menu_id].n_start_alpha = n_start_alpha;
-    self.screen_fade_menus[str_menu_id].n_target_alpha = n_target_alpha;
-    self.screen_fade_menus[str_menu_id].n_target_time = n_time_ms;
-    self.screen_fade_menus[str_menu_id].n_start_time = gettime();
-    self set_color(lui_menu, v_color);
+    
+    self.screen_fade_menus[ str_menu_id ].n_start_alpha = n_start_alpha;
+    self.screen_fade_menus[ str_menu_id ].n_target_alpha = n_target_alpha;
+    self.screen_fade_menus[ str_menu_id ].n_target_time = n_time_ms;
+    self.screen_fade_menus[ str_menu_id ].n_start_time = gettime();
+    self set_color( lui_menu, v_color );
     drawhud = var_b675738a ? 1 : 0;
-    if (isint(lui_menu)) {
-        self setluimenudata(lui_menu, #"startalpha", n_start_alpha);
-        self setluimenudata(lui_menu, #"endalpha", n_target_alpha);
-        self setluimenudata(lui_menu, #"fadeovertime", n_time_ms);
-        self setluimenudata(lui_menu, #"drawhud", drawhud);
-    } else {
-        [[ lui_menu ]]->set_startalpha(self, n_start_alpha);
-        [[ lui_menu ]]->set_endalpha(self, n_target_alpha);
-        [[ lui_menu ]]->set_fadeovertime(self, n_time_ms);
-        [[ lui_menu ]]->set_drawhud(self, drawhud);
+    
+    if ( isint( lui_menu ) )
+    {
+        self setluimenudata( lui_menu, #"startalpha", n_start_alpha );
+        self setluimenudata( lui_menu, #"endalpha", n_target_alpha );
+        self setluimenudata( lui_menu, #"fadeovertime", n_time_ms );
+        self setluimenudata( lui_menu, #"drawhud", drawhud );
     }
+    else
+    {
+        [[ lui_menu ]]->set_startalpha( self, n_start_alpha );
+        [[ lui_menu ]]->set_endalpha( self, n_target_alpha );
+        [[ lui_menu ]]->set_fadeovertime( self, n_time_ms );
+        [[ lui_menu ]]->set_drawhud( self, drawhud );
+    }
+    
     /#
-        if (!isdefined(level.n_fade_debug_time)) {
+        if ( !isdefined( level.n_fade_debug_time ) )
+        {
             level.n_fade_debug_time = 0;
         }
+        
         n_debug_time = gettime();
-        if (n_debug_time - level.n_fade_debug_time > 5000) {
-            printtoprightln("<dev string:x54>");
+        
+        if ( n_debug_time - level.n_fade_debug_time > 5000 )
+        {
+            printtoprightln( "<dev string:x54>" );
         }
+        
         level.n_fade_debug_time = n_debug_time;
     #/
-    if (n_time > 0) {
+    
+    if ( n_time > 0 )
+    {
         wait n_time;
     }
-    if (isint(lui_menu)) {
-        self setluimenudata(lui_menu, #"fadeovertime", 0);
-    } else {
-        [[ lui_menu ]]->set_fadeovertime(self, 0);
+    
+    if ( isint( lui_menu ) )
+    {
+        self setluimenudata( lui_menu, #"fadeovertime", 0 );
     }
-    if (isdefined(self.screen_fade_menus) && (b_force_close_menu || n_target_alpha == 0)) {
-        if (isdefined(self.screen_fade_menus[str_menu_id])) {
-            if (isint(lui_menu)) {
-                self closeluimenu(self.screen_fade_menus[str_menu_id].lui_menu);
-            } else {
-                [[ lui_menu ]]->close(self);
+    else
+    {
+        [[ lui_menu ]]->set_fadeovertime( self, 0 );
+    }
+    
+    if ( isdefined( self.screen_fade_menus ) && ( b_force_close_menu || n_target_alpha == 0 ) )
+    {
+        if ( isdefined( self.screen_fade_menus[ str_menu_id ] ) )
+        {
+            if ( isint( lui_menu ) )
+            {
+                self closeluimenu( self.screen_fade_menus[ str_menu_id ].lui_menu );
+            }
+            else
+            {
+                [[ lui_menu ]]->close( self );
             }
         }
-        self.screen_fade_menus[str_menu_id] = undefined;
-        if (!self.screen_fade_menus.size) {
+        
+        self.screen_fade_menus[ str_menu_id ] = undefined;
+        
+        if ( !self.screen_fade_menus.size )
+        {
             self.screen_fade_menus = undefined;
         }
     }
@@ -652,64 +877,81 @@ function private _screen_fade(n_time, n_target_alpha, n_start_alpha, v_color, b_
 // Params 1, eflags: 0x4
 // Checksum 0xd49cbe3b, Offset: 0x2728
 // Size: 0x4e
-function private _one_screen_fade_per_network_frame(s_menu) {
-    while (s_menu.screen_fade_network_frame === level.network_frame) {
+function private _one_screen_fade_per_network_frame( s_menu )
+{
+    while ( s_menu.screen_fade_network_frame === level.network_frame )
+    {
         util::wait_network_frame();
     }
+    
     s_menu.screen_fade_network_frame = level.network_frame;
 }
 
 // Namespace lui/lui_shared
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x2f90ea8b, Offset: 0x2780
 // Size: 0x166
-function open_generic_script_dialog(title, description) {
-    self endoncallback(&function_5ce0a623, #"close_generic_script_dialog", #"disconnect");
-    dialog = self openluimenu("ScriptMessageDialog_Compact");
-    self setluimenudata(dialog, #"title", title);
-    self setluimenudata(dialog, #"description", description);
+function open_generic_script_dialog( title, description )
+{
+    self endoncallback( &function_5ce0a623, #"close_generic_script_dialog", #"disconnect" );
+    dialog = self openluimenu( "ScriptMessageDialog_Compact" );
+    self setluimenudata( dialog, #"title", title );
+    self setluimenudata( dialog, #"description", description );
     self.var_520fb18c = dialog;
-    do {
-        waitresult = self waittill(#"menuresponse");
+    
+    do
+    {
+        waitresult = self waittill( #"menuresponse" );
         menu = waitresult.menu;
         response = waitresult.response;
-    } while (menu != "ScriptMessageDialog_Compact" || response != "close");
-    self closeluimenu(dialog);
+    }
+    while ( menu != "ScriptMessageDialog_Compact" || response != "close" );
+    
+    self closeluimenu( dialog );
     self.var_520fb18c = undefined;
 }
 
 // Namespace lui/lui_shared
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xfa7505bc, Offset: 0x28f0
 // Size: 0x44
-function function_5ce0a623(str_notify) {
-    if (str_notify == "close_generic_script_dialog") {
-        if (isdefined(self.var_520fb18c)) {
-            self closeluimenu(self.var_520fb18c);
+function function_5ce0a623( str_notify )
+{
+    if ( str_notify == "close_generic_script_dialog" )
+    {
+        if ( isdefined( self.var_520fb18c ) )
+        {
+            self closeluimenu( self.var_520fb18c );
         }
     }
 }
 
 // Namespace lui/lui_shared
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x3be807f7, Offset: 0x2940
 // Size: 0x16
-function close_generic_script_dialog() {
-    self notify(#"close_generic_script_dialog");
+function close_generic_script_dialog()
+{
+    self notify( #"close_generic_script_dialog" );
 }
 
 // Namespace lui/lui_shared
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x3c661cda, Offset: 0x2960
 // Size: 0xcc
-function open_script_dialog(dialog_name) {
-    self endon(#"disconnect");
-    dialog = self openluimenu(dialog_name);
-    do {
-        waitresult = self waittill(#"menuresponse");
+function open_script_dialog( dialog_name )
+{
+    self endon( #"disconnect" );
+    dialog = self openluimenu( dialog_name );
+    
+    do
+    {
+        waitresult = self waittill( #"menuresponse" );
         menu = waitresult.menu;
         response = waitresult.response;
-    } while (menu != dialog_name || response != "close");
-    self closeluimenu(dialog);
+    }
+    while ( menu != dialog_name || response != "close" );
+    
+    self closeluimenu( dialog );
 }
 

@@ -20,43 +20,50 @@
 // Params 0, eflags: 0x2
 // Checksum 0xb3f9e0cb, Offset: 0xe8
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"callback", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"callback", &__init__, undefined, undefined );
 }
 
 // Namespace callback/callbacks
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x6a37f4a0, Offset: 0x130
 // Size: 0x14
-function __init__() {
+function __init__()
+{
     set_default_callbacks();
 }
 
 // Namespace callback/callbacks
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x67dba939, Offset: 0x150
 // Size: 0x6c
-function on_prematch_end(func, obj) {
-    if (self == level) {
-        add_callback(#"prematch_end", func, obj);
+function on_prematch_end( func, obj )
+{
+    if ( self == level )
+    {
+        add_callback( #"prematch_end", func, obj );
         return;
     }
-    function_d8abfc3d(#"prematch_end", func, obj);
+    
+    function_d8abfc3d( #"prematch_end", func, obj );
 }
 
 // Namespace callback/callbacks
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x79c8a58c, Offset: 0x1c8
 // Size: 0x3c
-function on_changed_specialist(func, obj) {
-    add_callback(#"changed_specialist", func, obj);
+function on_changed_specialist( func, obj )
+{
+    add_callback( #"changed_specialist", func, obj );
 }
 
 // Namespace callback/callbacks
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xc8e2adec, Offset: 0x210
 // Size: 0x302
-function set_default_callbacks() {
+function set_default_callbacks()
+{
     level.callbackstartgametype = &globallogic::callback_startgametype;
     level.callbackplayerconnect = &player::callback_playerconnect;
     level.callbackplayerdisconnect = &player::callback_playerdisconnect;

@@ -12,100 +12,143 @@
 // Params 0, eflags: 0x2
 // Checksum 0xaf93a916, Offset: 0x148
 // Size: 0x44
-function autoexec __init__system__() {
-    system::register(#"zm_bgb_burned_out", &__init__, undefined, #"bgb");
+function autoexec __init__system__()
+{
+    system::register( #"zm_bgb_burned_out", &__init__, undefined, #"bgb" );
 }
 
 // Namespace zm_bgb_burned_out/zm_bgb_burned_out
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x4c1dbf2b, Offset: 0x198
 // Size: 0x164
-function __init__() {
-    if (!(isdefined(level.bgb_in_use) && level.bgb_in_use)) {
+function __init__()
+{
+    if ( !( isdefined( level.bgb_in_use ) && level.bgb_in_use ) )
+    {
         return;
     }
-    bgb::register(#"zm_bgb_burned_out", "event", &event, undefined, undefined, undefined);
-    clientfield::register("toplayer", "zm_bgb_burned_out" + "_1p" + "toplayer", 1, 1, "counter");
-    clientfield::register("allplayers", "zm_bgb_burned_out" + "_3p" + "_allplayers", 1, 1, "counter");
-    clientfield::register("actor", "zm_bgb_burned_out" + "_fire_torso" + "_actor", 1, 1, "counter");
-    clientfield::register("vehicle", "zm_bgb_burned_out" + "_fire_torso" + "_vehicle", 1, 1, "counter");
+    
+    bgb::register( #"zm_bgb_burned_out", "event", &event, undefined, undefined, undefined );
+    clientfield::register( "toplayer", "zm_bgb_burned_out" + "_1p" + "toplayer", 1, 1, "counter" );
+    clientfield::register( "allplayers", "zm_bgb_burned_out" + "_3p" + "_allplayers", 1, 1, "counter" );
+    clientfield::register( "actor", "zm_bgb_burned_out" + "_fire_torso" + "_actor", 1, 1, "counter" );
+    clientfield::register( "vehicle", "zm_bgb_burned_out" + "_fire_torso" + "_vehicle", 1, 1, "counter" );
 }
 
 // Namespace zm_bgb_burned_out/zm_bgb_burned_out
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xf73b4fc2, Offset: 0x308
 // Size: 0x180
-function event() {
-    self endon(#"disconnect", #"bgb_update");
+function event()
+{
+    self endon( #"disconnect", #"bgb_update" );
     var_3c24cb96 = 0;
-    self thread bgb::set_timer(3, 3);
-    for (;;) {
-        waitresult = self waittill(#"damage", #"damage_armor");
+    self thread bgb::set_timer( 3, 3 );
+    
+    for ( ;; )
+    {
+        waitresult = self waittill( #"damage", #"damage_armor" );
         type = waitresult.mod;
         attacker = waitresult.attacker;
-        if ("MOD_MELEE" != type || !isai(attacker)) {
+        
+        if ( "MOD_MELEE" != type || !isai( attacker ) )
+        {
             continue;
         }
+        
         self thread result();
-        self playsound(#"zmb_bgb_powerup_burnedout");
+        self playsound( #"zmb_bgb_powerup_burnedout" );
         var_3c24cb96++;
-        self thread bgb::set_timer(3 - var_3c24cb96, 3);
+        self thread bgb::set_timer( 3 - var_3c24cb96, 3 );
         self bgb::do_one_shot_use();
-        if (3 <= var_3c24cb96) {
+        
+        if ( 3 <= var_3c24cb96 )
+        {
             return;
         }
+        
         wait 1.5;
     }
 }
 
 // Namespace zm_bgb_burned_out/zm_bgb_burned_out
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x22f8524d, Offset: 0x490
 // Size: 0x3c6
-function result() {
-    self clientfield::increment_to_player("zm_bgb_burned_out" + "_1p" + "toplayer");
-    self clientfield::increment("zm_bgb_burned_out" + "_3p" + "_allplayers");
-    zombies = array::get_all_closest(self.origin, getaiteamarray(level.zombie_team), undefined, undefined, 128);
-    if (!isdefined(zombies)) {
+function result()
+{
+    self clientfield::increment_to_player( "zm_bgb_burned_out" + "_1p" + "toplayer" );
+    self clientfield::increment( "zm_bgb_burned_out" + "_3p" + "_allplayers" );
+    zombies = array::get_all_closest( self.origin, getaiteamarray( level.zombie_team ), undefined, undefined, 128 );
+    
+    if ( !isdefined( zombies ) )
+    {
         return;
     }
+    
     dist_sq = 128 * 128;
     var_7694ea6b = [];
-    for (i = 0; i < zombies.size; i++) {
-        if (zombies[i].zm_ai_category !== #"basic" && zombies[i].zm_ai_category !== #"popcorn" && zombies[i].zm_ai_category !== #"enhanced") {
+    
+    for ( i = 0; i < zombies.size ; i++ )
+    {
+        if ( zombies[ i ].zm_ai_category !== #"basic" && zombies[ i ].zm_ai_category !== #"popcorn" && zombies[ i ].zm_ai_category !== #"enhanced" )
+        {
             continue;
         }
-        if (isdefined(zombies[i].ignore_nuke) && zombies[i].ignore_nuke) {
+        
+        if ( isdefined( zombies[ i ].ignore_nuke ) && zombies[ i ].ignore_nuke )
+        {
             continue;
         }
-        if (isdefined(zombies[i].marked_for_death) && zombies[i].marked_for_death) {
+        
+        if ( isdefined( zombies[ i ].marked_for_death ) && zombies[ i ].marked_for_death )
+        {
             continue;
         }
-        if (zm_utility::is_magic_bullet_shield_enabled(zombies[i])) {
+        
+        if ( zm_utility::is_magic_bullet_shield_enabled( zombies[ i ] ) )
+        {
             continue;
         }
-        zombies[i].marked_for_death = 1;
-        if (!isalive(zombies[i])) {
+        
+        zombies[ i ].marked_for_death = 1;
+        
+        if ( !isalive( zombies[ i ] ) )
+        {
             continue;
         }
-        if (isvehicle(zombies[i])) {
-            zombies[i] clientfield::increment("zm_bgb_burned_out" + "_fire_torso" + "_vehicle");
-        } else {
-            zombies[i] clientfield::increment("zm_bgb_burned_out" + "_fire_torso" + "_actor");
+        
+        if ( isvehicle( zombies[ i ] ) )
+        {
+            zombies[ i ] clientfield::increment( "zm_bgb_burned_out" + "_fire_torso" + "_vehicle" );
         }
-        var_7694ea6b[var_7694ea6b.size] = zombies[i];
+        else
+        {
+            zombies[ i ] clientfield::increment( "zm_bgb_burned_out" + "_fire_torso" + "_actor" );
+        }
+        
+        var_7694ea6b[ var_7694ea6b.size ] = zombies[ i ];
     }
-    for (i = 0; i < var_7694ea6b.size; i++) {
+    
+    for ( i = 0; i < var_7694ea6b.size ; i++ )
+    {
         util::wait_network_frame();
-        if (!isdefined(var_7694ea6b[i])) {
+        
+        if ( !isdefined( var_7694ea6b[ i ] ) )
+        {
             continue;
         }
-        if (zm_utility::is_magic_bullet_shield_enabled(var_7694ea6b[i])) {
+        
+        if ( zm_utility::is_magic_bullet_shield_enabled( var_7694ea6b[ i ] ) )
+        {
             continue;
         }
-        var_7694ea6b[i] dodamage(var_7694ea6b[i].health + 666, var_7694ea6b[i].origin, self, undefined, undefined, "MOD_BURNED", 0, level.weapondefault);
-        if (isdefined(self)) {
-            self zm_stats::increment_challenge_stat(#"gum_gobbler_burned_out");
+        
+        var_7694ea6b[ i ] dodamage( var_7694ea6b[ i ].health + 666, var_7694ea6b[ i ].origin, self, undefined, undefined, "MOD_BURNED", 0, level.weapondefault );
+        
+        if ( isdefined( self ) )
+        {
+            self zm_stats::increment_challenge_stat( #"gum_gobbler_burned_out" );
         }
     }
 }

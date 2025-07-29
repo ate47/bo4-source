@@ -1,10 +1,11 @@
 #namespace novacrawlerinterface;
 
 // Namespace novacrawlerinterface/archetype_nova_crawler_interface
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x80f724d1, Offset: 0x68
 // Size: 0x4
-function registernovacrawlerinterfaceattributes() {
+function registernovacrawlerinterfaceattributes()
+{
     
 }
 

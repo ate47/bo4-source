@@ -9,7 +9,8 @@
 // Params 1, eflags: 0x40
 // Checksum 0x47f0fe04, Offset: 0x130
 // Size: 0xce
-function event_handler[level_init] main(eventstruct) {
+function event_handler[level_init] main( eventstruct )
+{
     level.draftxcam = #"ui_cam_draft_common";
     level.var_482af62e = #"hash_12263e5d70551bf9";
     mp_offshore_fx::main();
@@ -17,75 +18,97 @@ function event_handler[level_init] main(eventstruct) {
     load::main();
     level.domflagbasefxoverride = &dom_flag_base_fx_override;
     level.domflagcapfxoverride = &dom_flag_cap_fx_override;
-    util::waitforclient(0);
+    util::waitforclient( 0 );
     level.endgamexcamname = "ui_cam_endgame_mp_common";
 }
 
 // Namespace mp_offshore/mp_offshore
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0xf4446a6, Offset: 0x208
 // Size: 0xc2
-function dom_flag_base_fx_override(flag, team) {
-    switch (flag.name) {
-    case #"a":
-        if (team == #"neutral") {
-            return "ui/fx_dom_marker_neutral_r120";
-        } else {
-            return "ui/fx_dom_marker_team_r120";
-        }
-        break;
-    case #"b":
-        break;
-    case #"c":
-        if (team == #"neutral") {
-            return "ui/fx_dom_marker_neutral_r120";
-        } else {
-            return "ui/fx_dom_marker_team_r120";
-        }
-        break;
+function dom_flag_base_fx_override( flag, team )
+{
+    switch ( flag.name )
+    {
+        case #"a":
+            if ( team == #"neutral" )
+            {
+                return "ui/fx_dom_marker_neutral_r120";
+            }
+            else
+            {
+                return "ui/fx_dom_marker_team_r120";
+            }
+            
+            break;
+        case #"b":
+            break;
+        case #"c":
+            if ( team == #"neutral" )
+            {
+                return "ui/fx_dom_marker_neutral_r120";
+            }
+            else
+            {
+                return "ui/fx_dom_marker_team_r120";
+            }
+            
+            break;
     }
 }
 
 // Namespace mp_offshore/mp_offshore
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x605b82a1, Offset: 0x2d8
 // Size: 0xc2
-function dom_flag_cap_fx_override(flag, team) {
-    switch (flag.name) {
-    case #"a":
-        if (team == #"neutral") {
-            return "ui/fx_dom_cap_indicator_neutral_r120";
-        } else {
-            return "ui/fx_dom_cap_indicator_team_r120";
-        }
-        break;
-    case #"b":
-        break;
-    case #"c":
-        if (team == #"neutral") {
-            return "ui/fx_dom_cap_indicator_neutral_r120";
-        } else {
-            return "ui/fx_dom_cap_indicator_team_r120";
-        }
-        break;
+function dom_flag_cap_fx_override( flag, team )
+{
+    switch ( flag.name )
+    {
+        case #"a":
+            if ( team == #"neutral" )
+            {
+                return "ui/fx_dom_cap_indicator_neutral_r120";
+            }
+            else
+            {
+                return "ui/fx_dom_cap_indicator_team_r120";
+            }
+            
+            break;
+        case #"b":
+            break;
+        case #"c":
+            if ( team == #"neutral" )
+            {
+                return "ui/fx_dom_cap_indicator_neutral_r120";
+            }
+            else
+            {
+                return "ui/fx_dom_cap_indicator_team_r120";
+            }
+            
+            break;
     }
 }
 
 // Namespace mp_offshore/mp_offshore
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x7ab633c9, Offset: 0x3a8
 // Size: 0x2c
-function on_localclient_connect(localclientnum) {
-    waitframe(1);
-    setpbgactivebank(localclientnum, 8);
+function on_localclient_connect( localclientnum )
+{
+    waitframe( 1 );
+    setpbgactivebank( localclientnum, 8 );
 }
 
 // Namespace mp_offshore/mp_offshore
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xdfc9f897, Offset: 0x3e0
 // Size: 0x2c
-function on_gameplay_started(localclientnum) {
-    waitframe(1);
-    setpbgactivebank(localclientnum, 1);
+function on_gameplay_started( localclientnum )
+{
+    waitframe( 1 );
+    setpbgactivebank( localclientnum, 1 );
 }
 

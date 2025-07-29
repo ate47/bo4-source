@@ -36,238 +36,298 @@
 // Params 1, eflags: 0x40
 // Checksum 0xbd4959f0, Offset: 0x3b8
 // Size: 0x32c
-function event_handler[gametype_init] main(eventstruct) {
+function event_handler[gametype_init] main( eventstruct )
+{
     ct_core::function_46e95cc7();
-    level.wpn_hack = getweapon(#"ct_hack_tool");
-    level.hardpoint_bar = luielembar_ct::register("hardpoint_bar");
-    callback::on_ai_killed(&function_41ce2473);
-    ct_utils::function_6046a5e3(#"ar_damage_t8", array("fmj", "fmj2", "extbarrel"));
-    ct_utils::function_c3e647e2(#"pistol_standard_t8");
+    level.wpn_hack = getweapon( #"ct_hack_tool" );
+    level.hardpoint_bar = luielembar_ct::register( "hardpoint_bar" );
+    callback::on_ai_killed( &function_41ce2473 );
+    ct_utils::function_6046a5e3( #"ar_damage_t8", array( "fmj", "fmj2", "extbarrel" ) );
+    ct_utils::function_c3e647e2( #"pistol_standard_t8" );
     level.var_39c7b92c = 1;
-    level.select_character = ct_utils::get_roleindex(#"prt_mp_engineer");
+    level.select_character = ct_utils::get_roleindex( #"prt_mp_engineer" );
     level.var_820c5561 = "TORQUE";
-    ct_utils::function_be3a76b7(level.var_820c5561);
-    level.var_f4bbd9a8[#"fail_objective_killed"] = #"hash_36b8141cc58566bd";
+    ct_utils::function_be3a76b7( level.var_820c5561 );
+    level.var_f4bbd9a8[ #"fail_objective_killed" ] = #"hash_36b8141cc58566bd";
     level.debugbots = 0;
     ct_core::function_fa03fc55();
-    clientfield::register("allplayers", "danger_pstfx", 1, 1, "counter");
+    clientfield::register( "allplayers", "danger_pstfx", 1, 1, "counter" );
     level.var_4c2ecc6f = &function_6db6572b;
     level.var_c01b7f8b = &function_ba542258;
     level.var_49240db3 = &function_b89106ad;
     level.var_8b9d690e = &function_cf3224fe;
     level.onspawnplayer = &function_7c4ef26b;
-    player::function_cf3aa03d(&function_9d65db70);
+    player::function_cf3aa03d( &function_9d65db70 );
     level.var_cdb8ae2c = &ct_utils::function_a8da260c;
     level.resurrect_override_spawn = &ct_utils::function_78469779;
     level.var_e31c5d7a = &ct_bots::function_e31c5d7a;
-    callback::on_game_playing(&ct_core::function_1e84c767);
-    globallogic_spawn::addsupportedspawnpointtype("ct");
-    level flag::init("vip_in_checkpoint_action");
-    level flag::init("combat_training_started");
+    callback::on_game_playing( &ct_core::function_1e84c767 );
+    globallogic_spawn::addsupportedspawnpointtype( "ct" );
+    level flag::init( "vip_in_checkpoint_action" );
+    level flag::init( "combat_training_started" );
 }
 
 // Namespace ct_torque/ct_torque
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x229ca8cf, Offset: 0x6f0
 // Size: 0xf4
-function function_7c4ef26b(predictedspawn) {
+function function_7c4ef26b( predictedspawn )
+{
     self thread ct_core::function_d2845186();
-    spawning::onspawnplayer(predictedspawn);
-    if (level.ctdifficulty == 0) {
+    spawning::onspawnplayer( predictedspawn );
+    
+    if ( level.ctdifficulty == 0 )
+    {
         self ct_torque_tutorial::function_c9ff0dce();
         return;
     }
+    
     self function_4852f39d();
-    if (isbot(self)) {
-        if (isdefined(level.var_e31c5d7a)) {
+    
+    if ( isbot( self ) )
+    {
+        if ( isdefined( level.var_e31c5d7a ) )
+        {
             self [[ level.var_e31c5d7a ]]();
         }
+        
         return;
     }
-    if (level flag::get("vip_in_checkpoint_action")) {
+    
+    if ( level flag::get( "vip_in_checkpoint_action" ) )
+    {
         self thread function_67a32c1c();
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x5d2cd569, Offset: 0x7f0
 // Size: 0x15c
-function function_4852f39d() {
-    self ct_bots::function_26d45f32(1, 0);
-    if (!isbot(self)) {
-        var_5713d1df = getweapon(#"ar_accurate_t8");
-        var_9f2dffdc = getweapon(#"pistol_standard_t8");
-        self giveweapon(var_9f2dffdc);
-        self giveweapon(var_5713d1df);
-        self switchtoweapon(var_5713d1df);
-        self setspawnweapon(var_5713d1df);
+function function_4852f39d()
+{
+    self ct_bots::function_26d45f32( 1, 0 );
+    
+    if ( !isbot( self ) )
+    {
+        var_5713d1df = getweapon( #"ar_accurate_t8" );
+        var_9f2dffdc = getweapon( #"pistol_standard_t8" );
+        self giveweapon( var_9f2dffdc );
+        self giveweapon( var_5713d1df );
+        self switchtoweapon( var_5713d1df );
+        self setspawnweapon( var_5713d1df );
         return;
     }
-    var_2b7ee98e = getweapon(#"lmg_standard_t8");
-    self giveweapon(var_2b7ee98e);
-    self switchtoweapon(var_2b7ee98e);
-    self setspawnweapon(var_2b7ee98e);
+    
+    var_2b7ee98e = getweapon( #"lmg_standard_t8" );
+    self giveweapon( var_2b7ee98e );
+    self switchtoweapon( var_2b7ee98e );
+    self setspawnweapon( var_2b7ee98e );
 }
 
 // Namespace ct_torque/ct_torque
-// Params 9, eflags: 0x0
+// Params 9
 // Checksum 0xf452a3f4, Offset: 0x958
 // Size: 0x20c
-function function_9d65db70(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {
-    if (level.ctdifficulty == 0) {
-        if (!isbot(self)) {
+function function_9d65db70( einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration )
+{
+    if ( level.ctdifficulty == 0 )
+    {
+        if ( !isbot( self ) )
+        {
             self thread function_beca73db();
         }
-        self ct_torque_tutorial::function_72ba0df6(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration);
+        
+        self ct_torque_tutorial::function_72ba0df6( einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration );
         return;
     }
-    if (self.team == #"allies") {
+    
+    if ( self.team == #"allies" )
+    {
         self.var_6b6241ac = self.last_valid_position;
         self.var_45cac770 = self.angles;
-        if (self === level.ai_vip) {
-            level.ai_vip clientfield::set("set_vip", 0);
-            self flag::clear("vip_checkpoint_goto");
-            self flag::clear("vip_checkpoint_action");
-            level flag::set("ct_fail_objective_killed");
-            level notify(#"combattraining_logic_finished", {#success:0});
+        
+        if ( self === level.ai_vip )
+        {
+            level.ai_vip clientfield::set( "set_vip", 0 );
+            self flag::clear( "vip_checkpoint_goto" );
+            self flag::clear( "vip_checkpoint_action" );
+            level flag::set( "ct_fail_objective_killed" );
+            level notify( #"combattraining_logic_finished", { #success:0 } );
             return;
         }
-        if (!isbot(self)) {
-            self ct_utils::function_ee4639dd(10);
+        
+        if ( !isbot( self ) )
+        {
+            self ct_utils::function_ee4639dd( 10 );
             self thread function_beca73db();
         }
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x3d3275, Offset: 0xb70
 // Size: 0x284
-function function_6db6572b() {
+function function_6db6572b()
+{
     level thread function_a6b6f492();
-    if (level.ctdifficulty == 0) {
+    
+    if ( level.ctdifficulty == 0 )
+    {
         level thread ct_torque_tutorial::init();
         return;
     }
+    
     level.var_d013d2e3 = level.onsmartcoverplaced;
     level.onsmartcoverplaced = &on_smartcover_placed;
     level.var_edb3a8a3 = [];
-    level.var_edb3a8a3[#"smartcover"] = [];
-    level.var_edb3a8a3[#"smartcover"][#"back"] = function_c4632a02();
-    level.var_edb3a8a3[#"smartcover"][#"front"] = function_c4632a02();
+    level.var_edb3a8a3[ #"smartcover" ] = [];
+    level.var_edb3a8a3[ #"smartcover" ][ #"back" ] = function_c4632a02();
+    level.var_edb3a8a3[ #"smartcover" ][ #"front" ] = function_c4632a02();
     level.var_bb9429c2 = level.onconcertinawireplaced;
     level.onconcertinawireplaced = &on_concertinawire_placed;
-    level.var_edb3a8a3[#"concertinawire"] = [];
-    level.var_edb3a8a3[#"concertinawire"][#"back"] = function_c4632a02();
-    level.var_edb3a8a3[#"concertinawire"][#"front"] = function_c4632a02();
+    level.var_edb3a8a3[ #"concertinawire" ] = [];
+    level.var_edb3a8a3[ #"concertinawire" ][ #"back" ] = function_c4632a02();
+    level.var_edb3a8a3[ #"concertinawire" ][ #"front" ] = function_c4632a02();
     level.zombielevelspecifictargetcallback = &function_8d5cfdef;
     function_507767aa();
     function_5a72abb2();
-    level.var_f682cf14 = util::spawn_model("tag_origin", (0, 0, 0), (0, 0, 0));
+    level.var_f682cf14 = util::spawn_model( "tag_origin", ( 0, 0, 0 ), ( 0, 0, 0 ) );
+    
     /#
         level thread function_d69c54a8();
     #/
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x7af4014c, Offset: 0xe00
 // Size: 0x5a
-function function_c4632a02() {
-    var_553008b4 = util::spawn_model("tag_origin");
+function function_c4632a02()
+{
+    var_553008b4 = util::spawn_model( "tag_origin" );
     var_553008b4.targetname = "zombie_bait";
     var_553008b4.team = #"allies";
     return var_553008b4;
 }
 
 // Namespace ct_torque/ct_torque
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x16b5490e, Offset: 0xe68
 // Size: 0x13e
-function function_ba542258(mode) {
+function function_ba542258( mode )
+{
     ct_utils::function_4f9718b6();
-    if (isdefined(level.var_1ecfe3a2)) {
+    
+    if ( isdefined( level.var_1ecfe3a2 ) )
+    {
         self.var_71a70093 = level.var_1ecfe3a2;
     }
+    
     self thread ct_gadgets::function_19181566();
     self loadout::function_cdb86a18();
-    if (level.ctdifficulty == 0) {
+    
+    if ( level.ctdifficulty == 0 )
+    {
         ct_torque_tutorial::setup();
         return;
     }
+    
     var_27875ecd = 420000;
-    self thread function_9270ab93(0, var_27875ecd);
-    if (!isdefined(level.a_ai_zombies)) {
+    self thread function_9270ab93( 0, var_27875ecd );
+    
+    if ( !isdefined( level.a_ai_zombies ) )
+    {
         level.a_ai_zombies = [];
     }
-    level flag::wait_till("bot_init_complete");
+    
+    level flag::wait_till( "bot_init_complete" );
     level thread function_3e213427();
-    level flag::clear("vip_in_checkpoint_action");
+    level flag::clear( "vip_in_checkpoint_action" );
     self.var_64c65ec5 = 0;
 }
 
 // Namespace ct_torque/ct_torque
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x7dfa0847, Offset: 0xfb0
 // Size: 0xd0
-function function_b89106ad(gamedifficulty) {
-    level endon(#"combattraining_logic_finished");
-    level notify(#"hash_2a473e02881ca991");
+function function_b89106ad( gamedifficulty )
+{
+    level endon( #"combattraining_logic_finished" );
+    level notify( #"hash_2a473e02881ca991" );
     level.usingscorestreaks = 0;
     level.disablescoreevents = 1;
     level.disablemomentum = 1;
-    if (level.ctdifficulty == 0) {
+    
+    if ( level.ctdifficulty == 0 )
+    {
         ct_torque_tutorial::function_9b9525e9();
-    } else {
+    }
+    else
+    {
         j_fore_le_01();
     }
-    level notify(#"combattraining_logic_finished", {#success:1});
+    
+    level notify( #"combattraining_logic_finished", { #success:1 } );
 }
 
 // Namespace ct_torque/ct_torque
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x6346ad82, Offset: 0x1088
 // Size: 0x29e
-function function_cf3224fe(b_success) {
+function function_cf3224fe( b_success )
+{
     e_player = ct_utils::get_player();
     e_player thread ct_utils::function_c2a10fc();
     e_player function_beca73db();
     e_player ct_utils::function_a7d0e0f3();
-    if (level.ctdifficulty !== 0) {
+    
+    if ( level.ctdifficulty !== 0 )
+    {
         var_cd803a6b = gettime() - level.var_ebad4ea8;
-        level flag::clear("vip_in_checkpoint_action");
+        level flag::clear( "vip_in_checkpoint_action" );
         e_player function_143ffb68();
-        level.ai_vip flag::clear("vip_checkpoint_goto");
-        level.ai_vip flag::clear("vip_checkpoint_action");
+        level.ai_vip flag::clear( "vip_checkpoint_goto" );
+        level.ai_vip flag::clear( "vip_checkpoint_action" );
         level.ai_vip.waypoint_defend ct_utils::function_f9ed304d();
         level.ai_vip.var_ebc76246 ct_utils::function_f9ed304d();
         level.ai_vip = undefined;
-        foreach (var_94dda6f in level.var_ac03813) {
-            if (isdefined(var_94dda6f.waypoint)) {
-                var_94dda6f.waypoint gameobjects::set_visible_team("none");
+        
+        foreach ( var_94dda6f in level.var_ac03813 )
+        {
+            if ( isdefined( var_94dda6f.waypoint ) )
+            {
+                var_94dda6f.waypoint gameobjects::set_visible_team( "none" );
             }
         }
-        foreach (ai_zombie in level.a_ai_zombies) {
-            if (isdefined(ai_zombie)) {
+        
+        foreach ( ai_zombie in level.a_ai_zombies )
+        {
+            if ( isdefined( ai_zombie ) )
+            {
                 ai_zombie.waypoint ct_utils::function_f9ed304d();
                 ai_zombie delete();
             }
         }
-    } else {
+    }
+    else
+    {
         var_cd803a6b = gettime();
     }
+    
     return var_cd803a6b;
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x89eac617, Offset: 0x1330
 // Size: 0x8c
-function function_d9f6b173() {
-    self endon(#"death");
+function function_d9f6b173()
+{
+    self endon( #"death" );
     self.var_1574ae06 = 1;
-    e_player = getplayers()[0];
+    e_player = getplayers()[ 0 ];
     self.var_9a79d89d = e_player.origin;
     self.var_5ab7c19c = e_player.angles;
     self.var_bab91f2 = 500;
@@ -275,852 +335,1094 @@ function function_d9f6b173() {
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x6ec362a2, Offset: 0x13c8
 // Size: 0x6c
-function function_507767aa() {
-    level.var_7617703a = spawning::get_spawnpoint_array("mp_t8_spawn_point");
-    for (i = 0; i < level.var_7617703a.size; i++) {
-        level.var_7617703a[i].spawncount = 0;
+function function_507767aa()
+{
+    level.var_7617703a = spawning::get_spawnpoint_array( "mp_t8_spawn_point" );
+    
+    for ( i = 0; i < level.var_7617703a.size ; i++ )
+    {
+        level.var_7617703a[ i ].spawncount = 0;
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 7, eflags: 0x0
+// Params 7
 // Checksum 0x51720529, Offset: 0x1440
 // Size: 0x486
-function spawn_zombies(e_target, n_count, var_6448415b = 0, a_spawns, var_d0e99522 = 1, var_c69d025b = 50, var_68863e93 = 1) {
-    level endon(#"combattraining_logic_finished");
-    if (!isdefined(a_spawns)) {
+function spawn_zombies( e_target, n_count, var_6448415b = 0, a_spawns, var_d0e99522 = 1, var_c69d025b = 50, var_68863e93 = 1 )
+{
+    level endon( #"combattraining_logic_finished" );
+    
+    if ( !isdefined( a_spawns ) )
+    {
         a_spawns = level.var_7617703a;
     }
-    if (!isdefined(level.a_ai_zombies)) {
+    
+    if ( !isdefined( level.a_ai_zombies ) )
+    {
         level.a_ai_zombies = [];
     }
-    if (var_6448415b == 1) {
-        var_2e0b13ad = arraycopy(arraysortclosest(a_spawns, e_target.origin));
-    } else {
-        var_2e0b13ad = arraycopy(a_spawns);
+    
+    if ( var_6448415b == 1 )
+    {
+        var_2e0b13ad = arraycopy( arraysortclosest( a_spawns, e_target.origin ) );
     }
-    if (n_count > var_2e0b13ad.size) {
+    else
+    {
+        var_2e0b13ad = arraycopy( a_spawns );
+    }
+    
+    if ( n_count > var_2e0b13ad.size )
+    {
         n_count = var_2e0b13ad.size;
     }
+    
     i = 0;
-    while (i < n_count && var_2e0b13ad.size > 0) {
-        if (var_6448415b == 0) {
-            nd_spawn = array::random(var_2e0b13ad);
-        } else if (var_6448415b == 1) {
-            nd_spawn = var_2e0b13ad[0];
+    
+    while ( i < n_count && var_2e0b13ad.size > 0 )
+    {
+        if ( var_6448415b == 0 )
+        {
+            nd_spawn = array::random( var_2e0b13ad );
         }
+        else if ( var_6448415b == 1 )
+        {
+            nd_spawn = var_2e0b13ad[ 0 ];
+        }
+        
         zombie = undefined;
-        level.var_f682cf14.origin = nd_spawn.origin + (0, 0, 32);
-        if (!var_d0e99522 || isplayer(e_target) && e_target function_80d68e4d(level.var_f682cf14, 0.6, 1)) {
-            zombie = spawnactor("spawner_boct_zombie_mp", nd_spawn.origin, nd_spawn.angles, "zombie", 0, var_68863e93);
+        level.var_f682cf14.origin = nd_spawn.origin + ( 0, 0, 32 );
+        
+        if ( !var_d0e99522 || isplayer( e_target ) && e_target function_80d68e4d( level.var_f682cf14, 0.6, 1 ) )
+        {
+            zombie = spawnactor( "spawner_boct_zombie_mp", nd_spawn.origin, nd_spawn.angles, "zombie", 0, var_68863e93 );
+            
             /#
-                if (!(isdefined(var_68863e93) && var_68863e93)) {
-                    iprintlnbold("<dev string:x38>");
+                if ( !( isdefined( var_68863e93 ) && var_68863e93 ) )
+                {
+                    iprintlnbold( "<dev string:x38>" );
                 }
             #/
         }
-        if (isalive(zombie)) {
-            zombie setteam(#"axis");
+        
+        if ( isalive( zombie ) )
+        {
+            zombie setteam( #"axis" );
             zombie.nd_spawn = nd_spawn;
             zombie.highlyawareradius = 800;
             zombie thread ct_utils::function_6c45e814();
-            zombie.waypoint = zombie ct_utils::create_waypoint(#"hash_4b08047cf5e74f2e", zombie.origin, zombie.angles, #"axis", #"axis", 0, undefined);
-            zombie.waypoint gameobjects::set_visible_team(#"any");
+            zombie.waypoint = zombie ct_utils::create_waypoint( #"hash_4b08047cf5e74f2e", zombie.origin, zombie.angles, #"axis", #"axis", 0, undefined );
+            zombie.waypoint gameobjects::set_visible_team( #"any" );
             zombie thread function_f243b54e();
-            if (var_c69d025b > 0) {
-                n_rand = randomint(100);
-                if (n_rand < var_c69d025b / 2) {
-                    zombie zombie_utility::set_zombie_run_cycle("sprint");
-                } else if (n_rand < var_c69d025b) {
-                    zombie zombie_utility::set_zombie_run_cycle("run");
+            
+            if ( var_c69d025b > 0 )
+            {
+                n_rand = randomint( 100 );
+                
+                if ( n_rand < var_c69d025b / 2 )
+                {
+                    zombie zombie_utility::set_zombie_run_cycle( "sprint" );
+                }
+                else if ( n_rand < var_c69d025b )
+                {
+                    zombie zombie_utility::set_zombie_run_cycle( "run" );
                 }
             }
-            level.a_ai_zombies[level.a_ai_zombies.size] = zombie;
+            
+            level.a_ai_zombies[ level.a_ai_zombies.size ] = zombie;
             i++;
         }
-        arrayremovevalue(var_2e0b13ad, nd_spawn);
-        waitframe(1);
+        
+        arrayremovevalue( var_2e0b13ad, nd_spawn );
+        waitframe( 1 );
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0xdcd35808, Offset: 0x18d0
 // Size: 0x23c
-function function_f7cf3a9b(n_count, var_6448415b = 1) {
-    level endon(#"combattraining_logic_finished");
-    a_trigs = getentarray("map_zone", "script_noteworthy");
+function function_f7cf3a9b( n_count, var_6448415b = 1 )
+{
+    level endon( #"combattraining_logic_finished" );
+    a_trigs = getentarray( "map_zone", "script_noteworthy" );
     var_7d691124 = undefined;
-    foreach (trig in a_trigs) {
-        if (self istouching(trig)) {
+    
+    foreach ( trig in a_trigs )
+    {
+        if ( self istouching( trig ) )
+        {
             var_7d691124 = trig;
             break;
         }
     }
-    if (isdefined(var_7d691124)) {
+    
+    if ( isdefined( var_7d691124 ) )
+    {
         var_3e8bb57d = undefined;
-        if (isdefined(var_7d691124.target)) {
-            var_3e8bb57d = getent(var_7d691124.target, "targetname");
+        
+        if ( isdefined( var_7d691124.target ) )
+        {
+            var_3e8bb57d = getent( var_7d691124.target, "targetname" );
         }
-        if (!isdefined(var_3e8bb57d)) {
+        
+        if ( !isdefined( var_3e8bb57d ) )
+        {
             var_3e8bb57d = var_7d691124;
         }
+        
         var_3ab239ed = [];
-        foreach (spawnpoint in level.var_7617703a) {
+        
+        foreach ( spawnpoint in level.var_7617703a )
+        {
             level.var_f682cf14.origin = spawnpoint.origin;
-            if (level.var_f682cf14 istouching(var_3e8bb57d)) {
-                var_3ab239ed[var_3ab239ed.size] = spawnpoint;
+            
+            if ( level.var_f682cf14 istouching( var_3e8bb57d ) )
+            {
+                var_3ab239ed[ var_3ab239ed.size ] = spawnpoint;
             }
         }
-        spawn_zombies(self, n_count, var_6448415b, var_3ab239ed, 1);
+        
+        spawn_zombies( self, n_count, var_6448415b, var_3ab239ed, 1 );
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 6, eflags: 0x0
+// Params 6
 // Checksum 0x4bb0202d, Offset: 0x1b18
 // Size: 0x1ac
-function function_944278fd(n_count, var_6448415b = 0, var_29a34c68 = 1000, var_719f528b = 2000, var_c69d025b, var_68863e93 = 1) {
-    level endon(#"combattraining_logic_finished");
+function function_944278fd( n_count, var_6448415b = 0, var_29a34c68 = 1000, var_719f528b = 2000, var_c69d025b, var_68863e93 = 1 )
+{
+    level endon( #"combattraining_logic_finished" );
     var_b4595860 = var_29a34c68 * var_29a34c68;
     var_b8f62dbd = var_719f528b * var_719f528b;
     var_37fa3d92 = [];
-    foreach (var_7b9b45ce in level.var_7617703a) {
-        n_dist_sq = distancesquared(self.origin, var_7b9b45ce.origin);
-        if (var_b4595860 <= n_dist_sq && n_dist_sq <= var_b8f62dbd) {
-            var_37fa3d92[var_37fa3d92.size] = var_7b9b45ce;
+    
+    foreach ( var_7b9b45ce in level.var_7617703a )
+    {
+        n_dist_sq = distancesquared( self.origin, var_7b9b45ce.origin );
+        
+        if ( var_b4595860 <= n_dist_sq && n_dist_sq <= var_b8f62dbd )
+        {
+            var_37fa3d92[ var_37fa3d92.size ] = var_7b9b45ce;
         }
     }
-    spawn_zombies(self, n_count, var_6448415b, var_37fa3d92, 1, var_c69d025b, var_68863e93);
+    
+    spawn_zombies( self, n_count, var_6448415b, var_37fa3d92, 1, var_c69d025b, var_68863e93 );
 }
 
 // Namespace ct_torque/ct_torque
-// Params 6, eflags: 0x0
+// Params 6
 // Checksum 0xff2a798b, Offset: 0x1cd0
 // Size: 0x18e
-function function_db21e968(var_36778522, var_6448415b = 0, var_29a34c68 = 800, var_719f528b = 1600, var_c69d025b = 50, var_677d04ac = 1) {
-    level endon(#"combattraining_logic_finished");
-    self notify(#"hash_3bd66153d302d5e3");
-    waitframe(1);
-    self endon(#"hash_3bd66153d302d5e3", #"death");
+function function_db21e968( var_36778522, var_6448415b = 0, var_29a34c68 = 800, var_719f528b = 1600, var_c69d025b = 50, var_677d04ac = 1 )
+{
+    level endon( #"combattraining_logic_finished" );
+    self notify( #"hash_3bd66153d302d5e3" );
+    waitframe( 1 );
+    self endon( #"hash_3bd66153d302d5e3", #"death" );
     e_player = ct_utils::get_player();
-    while (true) {
-        self function_27bf93d(var_719f528b + 50, 1);
-        if (var_36778522 > level.a_ai_zombies.size) {
+    
+    while ( true )
+    {
+        self function_27bf93d( var_719f528b + 50, 1 );
+        
+        if ( var_36778522 > level.a_ai_zombies.size )
+        {
             n_count = var_36778522 - level.a_ai_zombies.size;
-            self function_944278fd(n_count, var_6448415b, var_29a34c68, var_719f528b, var_c69d025b, 1);
+            self function_944278fd( n_count, var_6448415b, var_29a34c68, var_719f528b, var_c69d025b, 1 );
         }
+        
         wait var_677d04ac;
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x26a3e27d, Offset: 0x1e68
 // Size: 0x1a4
-function function_27bf93d(var_93b6a23b = 2000, var_844ac87e = 1) {
+function function_27bf93d( var_93b6a23b = 2000, var_844ac87e = 1 )
+{
     var_b0daf0fd = var_93b6a23b * var_93b6a23b;
     e_player = ct_utils::get_player();
-    foreach (ai_zombie in level.a_ai_zombies) {
-        if (isalive(ai_zombie)) {
-            var_5f1f169b = distance2dsquared(self.origin, ai_zombie.origin);
-            if (var_5f1f169b >= var_b0daf0fd && (!var_844ac87e || e_player function_80d68e4d(ai_zombie, 0.7, 1))) {
+    
+    foreach ( ai_zombie in level.a_ai_zombies )
+    {
+        if ( isalive( ai_zombie ) )
+        {
+            var_5f1f169b = distance2dsquared( self.origin, ai_zombie.origin );
+            
+            if ( var_5f1f169b >= var_b0daf0fd && ( !var_844ac87e || e_player function_80d68e4d( ai_zombie, 0.7, 1 ) ) )
+            {
                 ai_zombie.waypoint ct_utils::function_f9ed304d();
                 ai_zombie delete();
             }
         }
     }
-    function_1eaaceab(level.a_ai_zombies);
+    
+    function_1eaaceab( level.a_ai_zombies );
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x5a37d727, Offset: 0x2018
 // Size: 0x298
-function j_fore_le_01() {
-    level endoncallback(&function_76a85acc, #"combattraining_logic_finished");
-    level notify(#"hash_b368182103cc73");
-    ct_utils::function_6d7f4ec6(45);
+function j_fore_le_01()
+{
+    level endoncallback( &function_76a85acc, #"combattraining_logic_finished" );
+    level notify( #"hash_b368182103cc73" );
+    ct_utils::function_6d7f4ec6( 45 );
     e_player = ct_utils::get_player();
     level thread checkpoints_think();
-    level.ai_vip thread function_db21e968(12, 1, 1000, 1500, 0, 2);
-    e_player thread function_db21e968(12, 1, 1000, 1500, 0, 2);
-    e_player function_5a57b177(1);
-    level.ai_vip thread function_db21e968(10, 1, 1000, 1500, 25, 1.5);
-    e_player thread function_db21e968(10, 1, 800, 1500, 50, 1.5);
-    e_player function_5a57b177(2);
-    level.ai_vip thread function_db21e968(8, 1, 800, 1500, 50, 1);
-    e_player thread function_db21e968(10, 1, 800, 1500, 50, 1);
-    e_player function_5a57b177(3);
-    level.ai_vip thread function_db21e968(8, 1, 800, 1500, 50, 1);
-    e_player thread function_db21e968(10, 1, 800, 1500, 75, 1);
-    level waittill(#"hash_2158824660e02fa2");
-    level notify(#"combattraining_logic_finished", {#success:1});
+    level.ai_vip thread function_db21e968( 12, 1, 1000, 1500, 0, 2 );
+    e_player thread function_db21e968( 12, 1, 1000, 1500, 0, 2 );
+    e_player function_5a57b177( 1 );
+    level.ai_vip thread function_db21e968( 10, 1, 1000, 1500, 25, 1.5 );
+    e_player thread function_db21e968( 10, 1, 800, 1500, 50, 1.5 );
+    e_player function_5a57b177( 2 );
+    level.ai_vip thread function_db21e968( 8, 1, 800, 1500, 50, 1 );
+    e_player thread function_db21e968( 10, 1, 800, 1500, 50, 1 );
+    e_player function_5a57b177( 3 );
+    level.ai_vip thread function_db21e968( 8, 1, 800, 1500, 50, 1 );
+    e_player thread function_db21e968( 10, 1, 800, 1500, 75, 1 );
+    level waittill( #"hash_2158824660e02fa2" );
+    level notify( #"combattraining_logic_finished", { #success:1 } );
 }
 
 // Namespace ct_torque/ct_torque
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x98dd34a5, Offset: 0x22b8
 // Size: 0x2c
-function function_76a85acc(_hash) {
+function function_76a85acc( _hash )
+{
     /#
-        iprintlnbold("<dev string:x4f>");
+        iprintlnbold( "<dev string:x4f>" );
     #/
 }
 
 // Namespace ct_torque/ct_torque
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x40572e89, Offset: 0x22f0
 // Size: 0x15c
-function function_5a57b177(var_f1de62b9) {
-    level endon(#"combattraining_logic_finished");
-    level waittill(#"checkpoint_completed");
-    self notify(#"hash_3bd66153d302d5e3");
-    level.ai_vip notify(#"hash_3bd66153d302d5e3");
-    if (isdefined(var_f1de62b9)) {
-        nd_next = getnode(level.var_ac03813[var_f1de62b9].target, "targetname");
-        do {
-            var_5d199101 = level.ai_vip canpath(level.ai_vip.origin, nd_next.origin);
-            if (!(isdefined(var_5d199101) && var_5d199101)) {
-                self thread ct_utils::function_329f9ba6(#"hash_12b8870765d411f6", 3, "red", 0);
+function function_5a57b177( var_f1de62b9 )
+{
+    level endon( #"combattraining_logic_finished" );
+    level waittill( #"checkpoint_completed" );
+    self notify( #"hash_3bd66153d302d5e3" );
+    level.ai_vip notify( #"hash_3bd66153d302d5e3" );
+    
+    if ( isdefined( var_f1de62b9 ) )
+    {
+        nd_next = getnode( level.var_ac03813[ var_f1de62b9 ].target, "targetname" );
+        
+        do
+        {
+            var_5d199101 = level.ai_vip canpath( level.ai_vip.origin, nd_next.origin );
+            
+            if ( !( isdefined( var_5d199101 ) && var_5d199101 ) )
+            {
+                self thread ct_utils::function_329f9ba6( #"hash_12b8870765d411f6", 3, "red", 0 );
             }
+            
             wait 1;
-        } while (!(isdefined(var_5d199101) && var_5d199101));
+        }
+        while ( !( isdefined( var_5d199101 ) && var_5d199101 ) );
+        
         /#
-            iprintlnbold("<dev string:x69>");
+            iprintlnbold( "<dev string:x69>" );
         #/
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xdd7de33d, Offset: 0x2458
 // Size: 0x140
-function function_5a72abb2() {
-    level.var_ac03813 = getentarray("checkpoint", "script_noteworthy");
-    level.var_ac03813 = array::sort_by_script_int(level.var_ac03813, 1);
-    foreach (var_94dda6f in level.var_ac03813) {
-        var_94dda6f.waypoint = ct_utils::create_waypoint(#"hash_3fc4cf91a22dada9", var_94dda6f.origin, (0, 0, 0), #"allies", #"allies", 0, undefined);
-        var_94dda6f.waypoint gameobjects::set_visible_team("none");
+function function_5a72abb2()
+{
+    level.var_ac03813 = getentarray( "checkpoint", "script_noteworthy" );
+    level.var_ac03813 = array::sort_by_script_int( level.var_ac03813, 1 );
+    
+    foreach ( var_94dda6f in level.var_ac03813 )
+    {
+        var_94dda6f.waypoint = ct_utils::create_waypoint( #"hash_3fc4cf91a22dada9", var_94dda6f.origin, ( 0, 0, 0 ), #"allies", #"allies", 0, undefined );
+        var_94dda6f.waypoint gameobjects::set_visible_team( "none" );
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xd6750bdc, Offset: 0x25a0
 // Size: 0x178
-function checkpoints_think() {
-    level endon(#"combattraining_logic_finished");
+function checkpoints_think()
+{
+    level endon( #"combattraining_logic_finished" );
     e_player = ct_utils::get_player();
-    foreach (var_94dda6f in level.var_ac03813) {
-        var_94dda6f.waypoint thread gameobjects::set_visible_team("none");
+    
+    foreach ( var_94dda6f in level.var_ac03813 )
+    {
+        var_94dda6f.waypoint thread gameobjects::set_visible_team( "none" );
     }
-    level flag::clear("vip_in_checkpoint_action");
-    e_player thread ct_utils::function_329f9ba6(#"hash_507f4def98eb2378", 7, "grey", 1);
-    for (i = 0; i < level.var_ac03813.size; i++) {
-        e_player function_96d0afea(i);
-        level notify(#"checkpoint_completed");
+    
+    level flag::clear( "vip_in_checkpoint_action" );
+    e_player thread ct_utils::function_329f9ba6( #"hash_507f4def98eb2378", 7, "grey", 1 );
+    
+    for ( i = 0; i < level.var_ac03813.size ; i++ )
+    {
+        e_player function_96d0afea( i );
+        level notify( #"checkpoint_completed" );
     }
-    level notify(#"hash_2158824660e02fa2");
+    
+    level notify( #"hash_2158824660e02fa2" );
 }
 
 // Namespace ct_torque/ct_torque
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0xd9bc487b, Offset: 0x2720
 // Size: 0x50c
-function function_96d0afea(var_e8ee1cd1, var_c8e04bda = 0) {
-    level endon(#"combattraining_logic_finished");
-    level.var_94dda6f = level.var_ac03813[var_e8ee1cd1];
-    level.var_94dda6f.waypoint gameobjects::set_visible_team("any");
-    level clientfield::set("area_arrows", level.var_94dda6f.script_int);
-    self thread ct_utils::function_61c3d59c(#"hash_1e6dbca449a65f9", undefined);
-    nd_guard = getnode(level.var_94dda6f.target, "targetname");
-    nd_guard thread function_944278fd(8, 1, 300, 800, 0, 1);
-    level.var_94dda6f waittill(#"trigger");
+function function_96d0afea( var_e8ee1cd1, var_c8e04bda = 0 )
+{
+    level endon( #"combattraining_logic_finished" );
+    level.var_94dda6f = level.var_ac03813[ var_e8ee1cd1 ];
+    level.var_94dda6f.waypoint gameobjects::set_visible_team( "any" );
+    level clientfield::set( "area_arrows", level.var_94dda6f.script_int );
+    self thread ct_utils::function_61c3d59c( #"hash_1e6dbca449a65f9", undefined );
+    nd_guard = getnode( level.var_94dda6f.target, "targetname" );
+    nd_guard thread function_944278fd( 8, 1, 300, 800, 0, 1 );
+    level.var_94dda6f waittill( #"trigger" );
     b_secured = 0;
-    self thread ct_utils::function_329f9ba6(#"hash_528794fbc2dce8d4", 7, "grey", 1);
-    self thread ct_utils::function_61c3d59c(#"hash_64646dd1e309ce97", undefined);
-    while (!b_secured) {
+    self thread ct_utils::function_329f9ba6( #"hash_528794fbc2dce8d4", 7, "grey", 1 );
+    self thread ct_utils::function_61c3d59c( #"hash_64646dd1e309ce97", undefined );
+    
+    while ( !b_secured )
+    {
         var_656eb4ea = 0;
-        foreach (zombie in level.a_ai_zombies) {
-            if (isalive(zombie) && zombie istouching(level.var_94dda6f)) {
+        
+        foreach ( zombie in level.a_ai_zombies )
+        {
+            if ( isalive( zombie ) && zombie istouching( level.var_94dda6f ) )
+            {
                 var_656eb4ea++;
             }
         }
+        
         b_secured = var_656eb4ea <= var_c8e04bda;
         wait 0.1;
     }
-    level.ai_vip flag::set("vip_checkpoint_action");
-    level.ai_vip waittill(#"hash_2a9770290dc54226");
-    level.var_94dda6f.waypoint gameobjects::set_visible_team("none");
-    self thread ct_utils::function_329f9ba6(#"hash_bf1fced95009e6f", 7, "grey", 1);
-    self thread ct_utils::function_61c3d59c(#"hash_59c59e0f5283ed5", undefined);
-    self notify(#"hash_3bd66153d302d5e3");
-    level.ai_vip notify(#"hash_3bd66153d302d5e3");
+    
+    level.ai_vip flag::set( "vip_checkpoint_action" );
+    level.ai_vip waittill( #"hash_2a9770290dc54226" );
+    level.var_94dda6f.waypoint gameobjects::set_visible_team( "none" );
+    self thread ct_utils::function_329f9ba6( #"hash_bf1fced95009e6f", 7, "grey", 1 );
+    self thread ct_utils::function_61c3d59c( #"hash_59c59e0f5283ed5", undefined );
+    self notify( #"hash_3bd66153d302d5e3" );
+    level.ai_vip notify( #"hash_3bd66153d302d5e3" );
     wait 2;
-    a_parms = function_e4e6f295(var_e8ee1cd1);
-    self thread function_db21e968(a_parms[#"hash_26e3f994cd3be7ad"], 0, a_parms[#"hash_6ac476a653e52b43"], a_parms[#"hash_79c09420f2a9d1b5"], a_parms[#"hash_c89b29b1052eb3a"], a_parms[#"hash_65d515c48dec9a90"]);
-    level.ai_vip thread function_db21e968(a_parms[#"hash_666d68ff5ab5708b"], 0, a_parms[#"hash_1b654f4b57692315"], a_parms[#"hash_26f2c8d3a06033f3"], a_parms[#"hash_53a6b6a30b8be9ae"], a_parms[#"hash_4afa2b23e812aa80"]);
-    self thread function_2444772e(30);
-    level waittill(#"sabotage_done");
+    a_parms = function_e4e6f295( var_e8ee1cd1 );
+    self thread function_db21e968( a_parms[ #"hash_26e3f994cd3be7ad" ], 0, a_parms[ #"hash_6ac476a653e52b43" ], a_parms[ #"hash_79c09420f2a9d1b5" ], a_parms[ #"hash_c89b29b1052eb3a" ], a_parms[ #"hash_65d515c48dec9a90" ] );
+    level.ai_vip thread function_db21e968( a_parms[ #"hash_666d68ff5ab5708b" ], 0, a_parms[ #"hash_1b654f4b57692315" ], a_parms[ #"hash_26f2c8d3a06033f3" ], a_parms[ #"hash_53a6b6a30b8be9ae" ], a_parms[ #"hash_4afa2b23e812aa80" ] );
+    self thread function_2444772e( 30 );
+    level waittill( #"sabotage_done" );
     self thread function_beca73db();
-    if (level.var_ac03813.size - 1 > var_e8ee1cd1) {
-        self thread ct_utils::function_329f9ba6(#"hash_494852129a3c431c", 7, "grey", 1);
-        self thread ct_utils::function_61c3d59c(#"hash_1e6dbca449a65f9", undefined);
+    
+    if ( level.var_ac03813.size - 1 > var_e8ee1cd1 )
+    {
+        self thread ct_utils::function_329f9ba6( #"hash_494852129a3c431c", 7, "grey", 1 );
+        self thread ct_utils::function_61c3d59c( #"hash_1e6dbca449a65f9", undefined );
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xed02ea63, Offset: 0x2c38
 // Size: 0x366
-function function_e4e6f295(n_difficulty) {
-    if (n_difficulty > 4) {
+function function_e4e6f295( n_difficulty )
+{
+    if ( n_difficulty > 4 )
+    {
         n_difficulty = 4;
     }
-    var_81f1eb5e = array(6, 9, 9, 10, 10);
-    var_8b6d0a97 = array(750, 750, 750, 750, 750);
-    var_4d52eb53 = array(1500, 1500, 1500, 1500, 1500);
-    var_fabb2516 = array(0, 50, 50, 60, 90);
-    var_ee09c06e = array(1.5, 1.25, 1, 1, 0.8);
-    var_c17eeb05 = array(10, 12, 14, 16, 18);
-    var_2b736d3f = array(750, 750, 750, 750, 750);
-    var_c3cf4425 = array(1500, 1500, 1500, 1500, 1500);
-    var_1377e036 = array(0, 50, 50, 60, 90);
-    var_ff9426c0 = array(1.5, 1.25, 1, 1, 0.8);
+    
+    var_81f1eb5e = array( 6, 9, 9, 10, 10 );
+    var_8b6d0a97 = array( 750, 750, 750, 750, 750 );
+    var_4d52eb53 = array( 1500, 1500, 1500, 1500, 1500 );
+    var_fabb2516 = array( 0, 50, 50, 60, 90 );
+    var_ee09c06e = array( 1.5, 1.25, 1, 1, 0.8 );
+    var_c17eeb05 = array( 10, 12, 14, 16, 18 );
+    var_2b736d3f = array( 750, 750, 750, 750, 750 );
+    var_c3cf4425 = array( 1500, 1500, 1500, 1500, 1500 );
+    var_1377e036 = array( 0, 50, 50, 60, 90 );
+    var_ff9426c0 = array( 1.5, 1.25, 1, 1, 0.8 );
     var_9ae27512 = [];
-    var_9ae27512[#"hash_26e3f994cd3be7ad"] = var_81f1eb5e[n_difficulty];
-    var_9ae27512[#"hash_6ac476a653e52b43"] = var_8b6d0a97[n_difficulty];
-    var_9ae27512[#"hash_79c09420f2a9d1b5"] = var_4d52eb53[n_difficulty];
-    var_9ae27512[#"hash_c89b29b1052eb3a"] = var_fabb2516[n_difficulty];
-    var_9ae27512[#"hash_65d515c48dec9a90"] = var_ee09c06e[n_difficulty];
-    var_9ae27512[#"hash_666d68ff5ab5708b"] = var_c17eeb05[n_difficulty];
-    var_9ae27512[#"hash_1b654f4b57692315"] = var_2b736d3f[n_difficulty];
-    var_9ae27512[#"hash_26f2c8d3a06033f3"] = var_c3cf4425[n_difficulty];
-    var_9ae27512[#"hash_53a6b6a30b8be9ae"] = var_1377e036[n_difficulty];
-    var_9ae27512[#"hash_4afa2b23e812aa80"] = var_ff9426c0[n_difficulty];
+    var_9ae27512[ #"hash_26e3f994cd3be7ad" ] = var_81f1eb5e[ n_difficulty ];
+    var_9ae27512[ #"hash_6ac476a653e52b43" ] = var_8b6d0a97[ n_difficulty ];
+    var_9ae27512[ #"hash_79c09420f2a9d1b5" ] = var_4d52eb53[ n_difficulty ];
+    var_9ae27512[ #"hash_c89b29b1052eb3a" ] = var_fabb2516[ n_difficulty ];
+    var_9ae27512[ #"hash_65d515c48dec9a90" ] = var_ee09c06e[ n_difficulty ];
+    var_9ae27512[ #"hash_666d68ff5ab5708b" ] = var_c17eeb05[ n_difficulty ];
+    var_9ae27512[ #"hash_1b654f4b57692315" ] = var_2b736d3f[ n_difficulty ];
+    var_9ae27512[ #"hash_26f2c8d3a06033f3" ] = var_c3cf4425[ n_difficulty ];
+    var_9ae27512[ #"hash_53a6b6a30b8be9ae" ] = var_1377e036[ n_difficulty ];
+    var_9ae27512[ #"hash_4afa2b23e812aa80" ] = var_ff9426c0[ n_difficulty ];
     return var_9ae27512;
 }
 
 // Namespace ct_torque/ct_torque
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0xb919e7c4, Offset: 0x2fa8
 // Size: 0x1c4
-function function_2444772e(n_time, var_94629f1a = 50) {
-    level endon(#"combattraining_logic_finished");
-    level flag::set("vip_in_checkpoint_action");
+function function_2444772e( n_time, var_94629f1a = 50 )
+{
+    level endon( #"combattraining_logic_finished" );
+    level flag::set( "vip_in_checkpoint_action" );
     var_4089242a = var_94629f1a;
     var_386b47e6 = 1 / var_94629f1a;
     var_6f0549ed = n_time / var_94629f1a;
     level.var_33682199 = var_386b47e6;
-    self thread ct_utils::function_b42ce622(#"sabotagedata");
+    self thread ct_utils::function_b42ce622( #"sabotagedata" );
     self thread function_67a32c1c();
-    while (var_4089242a > 0) {
+    
+    while ( var_4089242a > 0 )
+    {
         level.var_33682199 += var_386b47e6;
         var_4089242a--;
         wait var_6f0549ed;
     }
-    self ct_utils::function_c314f6b1(45);
-    self thread ct_utils::function_b42ce622(#"hash_7185fe2194047325");
+    
+    self ct_utils::function_c314f6b1( 45 );
+    self thread ct_utils::function_b42ce622( #"hash_7185fe2194047325" );
     level thread ct_utils::function_bfa522d1();
-    level.ai_vip flag::clear("vip_checkpoint_action");
-    level notify(#"sabotage_done");
+    level.ai_vip flag::clear( "vip_checkpoint_action" );
+    level notify( #"sabotage_done" );
     wait 3;
     self function_143ffb68();
-    level flag::clear("vip_in_checkpoint_action");
+    level flag::clear( "vip_in_checkpoint_action" );
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x42196a30, Offset: 0x3178
 // Size: 0x256
-function function_67a32c1c() {
-    self endoncallback(&function_143ffb68, #"death", #"hash_5e6ba56e4f1f7c75");
-    level endoncallback(&function_143ffb68, #"combattraining_logic_finished");
+function function_67a32c1c()
+{
+    self endoncallback( &function_143ffb68, #"death", #"hash_5e6ba56e4f1f7c75" );
+    level endoncallback( &function_143ffb68, #"combattraining_logic_finished" );
     level.xpos = 140;
     level.ypos = 560;
     level.width = 50;
     level.height = 4;
-    if (isdefined(level.var_a3911420) && level.var_a3911420) {
-        level.hardpoint_bar luielembar_ct::close(self);
-        waitframe(1);
+    
+    if ( isdefined( level.var_a3911420 ) && level.var_a3911420 )
+    {
+        level.hardpoint_bar luielembar_ct::close( self );
+        waitframe( 1 );
         level.var_a3911420 = 0;
     }
-    self ct_utils::function_7b70bd74(level.hardpoint_bar, level.xpos, level.ypos, level.width, level.height);
-    level.hardpoint_bar luielembar_ct::set_color(self, 0, 1, 0);
+    
+    self ct_utils::function_7b70bd74( level.hardpoint_bar, level.xpos, level.ypos, level.width, level.height );
+    level.hardpoint_bar luielembar_ct::set_color( self, 0, 1, 0 );
     level.var_a3911420 = 1;
     level.hardpoint_bar.user = self;
-    while (true) {
-        level.hardpoint_bar luielembar_ct::set_bar_percent(self, level.var_33682199);
-        level.hardpoint_bar luielembar_ct::function_e5898fd7(self, level.xpos);
-        level.hardpoint_bar luielembar_ct::function_58a135d3(self, level.ypos);
-        level.hardpoint_bar luielembar_ct::set_width(self, level.width);
-        level.hardpoint_bar luielembar_ct::set_height(self, level.height);
-        waitframe(1);
+    
+    while ( true )
+    {
+        level.hardpoint_bar luielembar_ct::set_bar_percent( self, level.var_33682199 );
+        level.hardpoint_bar luielembar_ct::function_e5898fd7( self, level.xpos );
+        level.hardpoint_bar luielembar_ct::function_58a135d3( self, level.ypos );
+        level.hardpoint_bar luielembar_ct::set_width( self, level.width );
+        level.hardpoint_bar luielembar_ct::set_height( self, level.height );
+        waitframe( 1 );
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xea7aa08c, Offset: 0x33d8
 // Size: 0x98
-function function_143ffb68(_hash) {
-    if (isdefined(level.var_a3911420) && level.var_a3911420) {
+function function_143ffb68( _hash )
+{
+    if ( isdefined( level.var_a3911420 ) && level.var_a3911420 )
+    {
         level.hardpoint_bar.user ct_utils::function_25bd62bc();
-        level.hardpoint_bar luielembar_ct::close(level.hardpoint_bar.user);
+        level.hardpoint_bar luielembar_ct::close( level.hardpoint_bar.user );
         level.var_a3911420 = 0;
         level.hardpoint_bar.user = undefined;
-        waitframe(1);
+        waitframe( 1 );
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x17a8a6bc, Offset: 0x3478
 // Size: 0x160
-function function_c7f49476() {
-    while (!level.gameended) {
+function function_c7f49476()
+{
+    while ( !level.gameended )
+    {
         var_4bd02b0a = self actionslotonebuttonpressed();
         var_1d904e8f = self actionslottwobuttonpressed();
         var_275f622d = self actionslotthreebuttonpressed();
         var_92c138ef = self actionslotfourbuttonpressed();
-        while (!var_4bd02b0a && !var_1d904e8f && !var_275f622d && !var_92c138ef) {
-            waitframe(1);
+        
+        while ( !var_4bd02b0a && !var_1d904e8f && !var_275f622d && !var_92c138ef )
+        {
+            waitframe( 1 );
         }
-        if (var_4bd02b0a) {
+        
+        if ( var_4bd02b0a )
+        {
             level thread function_6fc5325c();
         }
-        if (var_275f622d) {
+        
+        if ( var_275f622d )
+        {
             level thread function_5f4dc2fe();
         }
-        if (var_1d904e8f) {
-            level thread spawn_zombies(10, 1);
+        
+        if ( var_1d904e8f )
+        {
+            level thread spawn_zombies( 10, 1 );
         }
-        if (var_92c138ef) {
-            level thread spawn_zombies(10, 0);
+        
+        if ( var_92c138ef )
+        {
+            level thread spawn_zombies( 10, 0 );
         }
+        
         wait 0.1;
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x27ad0350, Offset: 0x35e0
 // Size: 0x2fc
-function function_3e213427() {
+function function_3e213427()
+{
     level.ai_vip = function_4c551667();
-    level.ai_vip clientfield::set("set_vip", 2);
+    level.ai_vip clientfield::set( "set_vip", 2 );
     level.ai_vip function_4852f39d();
     level.ai_vip.var_38b6161f = 1;
-    level.ai_vip.waypoint_defend = level.ai_vip ct_utils::create_waypoint(#"hash_1a511b2e1cdb8c7f", level.ai_vip.origin, level.ai_vip.angles, #"allies", undefined, 0, undefined);
-    level.ai_vip.waypoint_defend gameobjects::set_visible_team("none");
-    level.ai_vip.var_ebc76246 = level.ai_vip ct_utils::create_waypoint(#"hash_69b9c95819486ff3", level.ai_vip.origin, level.ai_vip.angles, #"allies", undefined, 0, undefined);
-    level.ai_vip.var_ebc76246 gameobjects::set_visible_team("any");
-    level.ai_vip clientfield::set("set_vip", 2);
+    level.ai_vip.waypoint_defend = level.ai_vip ct_utils::create_waypoint( #"hash_1a511b2e1cdb8c7f", level.ai_vip.origin, level.ai_vip.angles, #"allies", undefined, 0, undefined );
+    level.ai_vip.waypoint_defend gameobjects::set_visible_team( "none" );
+    level.ai_vip.var_ebc76246 = level.ai_vip ct_utils::create_waypoint( #"hash_69b9c95819486ff3", level.ai_vip.origin, level.ai_vip.angles, #"allies", undefined, 0, undefined );
+    level.ai_vip.var_ebc76246 gameobjects::set_visible_team( "any" );
+    level.ai_vip clientfield::set( "set_vip", 2 );
     level.ai_vip.health = 250;
-    if (!level.ai_vip flag::exists("vip_stop")) {
-        level.ai_vip flag::init("vip_stop");
+    
+    if ( !level.ai_vip flag::exists( "vip_stop" ) )
+    {
+        level.ai_vip flag::init( "vip_stop" );
     }
-    if (!level.ai_vip flag::exists("vip_checkpoint_goto")) {
-        level.ai_vip flag::init("vip_checkpoint_goto");
+    
+    if ( !level.ai_vip flag::exists( "vip_checkpoint_goto" ) )
+    {
+        level.ai_vip flag::init( "vip_checkpoint_goto" );
     }
-    if (!level.ai_vip flag::exists("vip_checkpoint_action")) {
-        level.ai_vip flag::init("vip_checkpoint_action");
+    
+    if ( !level.ai_vip flag::exists( "vip_checkpoint_action" ) )
+    {
+        level.ai_vip flag::init( "vip_checkpoint_action" );
     }
-    level.ai_vip flag::clear("vip_stop");
-    level.ai_vip flag::clear("vip_checkpoint_action");
+    
+    level.ai_vip flag::clear( "vip_stop" );
+    level.ai_vip flag::clear( "vip_checkpoint_action" );
     level.ai_vip thread function_dc3d207e();
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xecd01ae1, Offset: 0x38e8
 // Size: 0x64
-function function_6fc5325c() {
-    if (isalive(level.ai_vip) && level.ai_vip flag::exists("vip_stop")) {
-        level.ai_vip flag::set("vip_stop");
+function function_6fc5325c()
+{
+    if ( isalive( level.ai_vip ) && level.ai_vip flag::exists( "vip_stop" ) )
+    {
+        level.ai_vip flag::set( "vip_stop" );
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xe669dcc2, Offset: 0x3958
 // Size: 0x64
-function function_5f4dc2fe() {
-    if (isalive(level.ai_vip) && level.ai_vip flag::exists("vip_stop")) {
-        level.ai_vip flag::clear("vip_stop");
+function function_5f4dc2fe()
+{
+    if ( isalive( level.ai_vip ) && level.ai_vip flag::exists( "vip_stop" ) )
+    {
+        level.ai_vip flag::clear( "vip_stop" );
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x7c8ad845, Offset: 0x39c8
 // Size: 0xfe
-function function_dc3d207e() {
-    self endon(#"death");
+function function_dc3d207e()
+{
+    self endon( #"death" );
     self thread function_f7f67b2c();
     self thread function_5ddc2e1a();
-    while (true) {
-        if (self flag::get("vip_stop")) {
-            self setgoal(self.origin, 1);
-        } else if (self flag::get("vip_checkpoint_action")) {
-            if (self.var_10a6d7df !== 6 && self.var_ef59b90 !== 6) {
+    
+    while ( true )
+    {
+        if ( self flag::get( "vip_stop" ) )
+        {
+            self setgoal( self.origin, 1 );
+        }
+        else if ( self flag::get( "vip_checkpoint_action" ) )
+        {
+            if ( self.var_10a6d7df !== 6 && self.var_ef59b90 !== 6 )
+            {
                 self.var_ef59b90 = 6;
                 self thread vip_checkpoint_action();
             }
         }
-        waitframe(1);
+        
+        waitframe( 1 );
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xe3fdf301, Offset: 0x3ad0
 // Size: 0xc6
-function function_f7f67b2c() {
-    self endon(#"death");
-    level endon(#"combattraining_logic_finished");
+function function_f7f67b2c()
+{
+    self endon( #"death" );
+    level endon( #"combattraining_logic_finished" );
     e_player = ct_utils::get_player();
-    while (true) {
-        s_notify = self waittill(#"damage");
+    
+    while ( true )
+    {
+        s_notify = self waittill( #"damage" );
         e_player thread function_c633f931();
-        e_player ct_utils::function_329f9ba6(#"hash_63ee17cf7d761911", 3, "red", 2);
-        waitframe(1);
+        e_player ct_utils::function_329f9ba6( #"hash_63ee17cf7d761911", 3, "red", 2 );
+        waitframe( 1 );
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x45716ee3, Offset: 0x3ba0
 // Size: 0x1ae
-function function_5ddc2e1a() {
-    self endon(#"death");
-    level endon(#"combattraining_logic_finished");
+function function_5ddc2e1a()
+{
+    self endon( #"death" );
+    level endon( #"combattraining_logic_finished" );
     e_player = ct_utils::get_player();
-    while (true) {
-        if (!self flag::get("vip_checkpoint_action")) {
-            if (!self canpath(self.origin, e_player.origin)) {
+    
+    while ( true )
+    {
+        if ( !self flag::get( "vip_checkpoint_action" ) )
+        {
+            if ( !self canpath( self.origin, e_player.origin ) )
+            {
                 wait 1.5;
-                if (!self canpath(self.origin, e_player.origin)) {
-                    e_player ct_utils::function_329f9ba6(#"hash_62b4e5d5bbeb380", 3, "red", 1);
+                
+                if ( !self canpath( self.origin, e_player.origin ) )
+                {
+                    e_player ct_utils::function_329f9ba6( #"hash_62b4e5d5bbeb380", 3, "red", 1 );
                 }
             }
-        } else if (self flag::get("vip_checkpoint_goto") && !self canpath(self.origin, self.var_33b6732b)) {
+        }
+        else if ( self flag::get( "vip_checkpoint_goto" ) && !self canpath( self.origin, self.var_33b6732b ) )
+        {
             wait 1.5;
-            if (!self canpath(self.origin, self.var_33b6732b)) {
-                e_player ct_utils::function_329f9ba6(#"hash_12b8870765d411f6", 3, "red", 1);
+            
+            if ( !self canpath( self.origin, self.var_33b6732b ) )
+            {
+                e_player ct_utils::function_329f9ba6( #"hash_12b8870765d411f6", 3, "red", 1 );
             }
         }
+        
         wait 1;
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x8a8465f9, Offset: 0x3d58
 // Size: 0x8a
-function function_c633f931() {
-    level.ai_vip endon(#"death");
-    self endon(#"death");
-    if (!(isdefined(self.var_64c65ec5) && self.var_64c65ec5)) {
+function function_c633f931()
+{
+    level.ai_vip endon( #"death" );
+    self endon( #"death" );
+    
+    if ( !( isdefined( self.var_64c65ec5 ) && self.var_64c65ec5 ) )
+    {
         self.var_64c65ec5 = 1;
-        self clientfield::increment("danger_pstfx");
+        self clientfield::increment( "danger_pstfx" );
         wait 1;
-        waitframe(1);
+        waitframe( 1 );
         self.var_64c65ec5 = 0;
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x2c2a894c, Offset: 0x3df0
 // Size: 0x314
-function vip_checkpoint_action() {
-    self endon(#"death");
-    self.waypoint_defend gameobjects::set_visible_team("any");
-    self.var_ebc76246 gameobjects::set_visible_team("none");
-    self.var_d8f38f = getnode(level.var_94dda6f.target, "targetname");
-    self.var_33b6732b = getclosestpointonnavmesh(self.var_d8f38f.origin);
-    self setgoal(self.var_33b6732b, 1, 1);
-    self flag::set("vip_checkpoint_goto");
-    self waittill(#"goal");
-    self flag::clear("vip_checkpoint_goto");
-    self notify(#"hash_2a9770290dc54226");
-    self setgoal(self.origin, 1, 1);
-    self thread ct_utils::function_77111f4b(self.var_d8f38f);
+function vip_checkpoint_action()
+{
+    self endon( #"death" );
+    self.waypoint_defend gameobjects::set_visible_team( "any" );
+    self.var_ebc76246 gameobjects::set_visible_team( "none" );
+    self.var_d8f38f = getnode( level.var_94dda6f.target, "targetname" );
+    self.var_33b6732b = getclosestpointonnavmesh( self.var_d8f38f.origin );
+    self setgoal( self.var_33b6732b, 1, 1 );
+    self flag::set( "vip_checkpoint_goto" );
+    self waittill( #"goal" );
+    self flag::clear( "vip_checkpoint_goto" );
+    self notify( #"hash_2a9770290dc54226" );
+    self setgoal( self.origin, 1, 1 );
+    self thread ct_utils::function_77111f4b( self.var_d8f38f );
     self ct_bots::function_26d45f32();
-    while (self flag::get("vip_checkpoint_action")) {
+    
+    while ( self flag::get( "vip_checkpoint_action" ) )
+    {
         /#
             a_wpns = self getweaponslist();
         #/
+        
         wpn_current = self getcurrentweapon();
-        if (wpn_current != level.wpn_hack) {
-            if (!level.ai_vip hasweapon(level.wpn_hack)) {
-                level.ai_vip giveweapon(level.wpn_hack);
-                level.ai_vip switchtoweapon(level.wpn_hack, 1);
+        
+        if ( wpn_current != level.wpn_hack )
+        {
+            if ( !level.ai_vip hasweapon( level.wpn_hack ) )
+            {
+                level.ai_vip giveweapon( level.wpn_hack );
+                level.ai_vip switchtoweapon( level.wpn_hack, 1 );
             }
-            level.ai_vip takeweapon(wpn_current);
+            
+            level.ai_vip takeweapon( wpn_current );
         }
+        
         wait 2;
     }
-    self notify(#"hash_527a7582f808ac9a");
+    
+    self notify( #"hash_527a7582f808ac9a" );
     self.var_ef59b90 = 3;
     self function_4852f39d();
-    self.waypoint_defend gameobjects::set_visible_team("none");
-    self.var_ebc76246 gameobjects::set_visible_team("any");
+    self.waypoint_defend gameobjects::set_visible_team( "none" );
+    self.var_ebc76246 gameobjects::set_visible_team( "any" );
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xf90006d4, Offset: 0x4110
 // Size: 0x3c
-function function_7af8c620() {
+function function_7af8c620()
+{
     self ct_bots::function_26d45f32();
-    self giveweapon(level.wpn_hack);
+    self giveweapon( level.wpn_hack );
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xa12e19e5, Offset: 0x4158
 // Size: 0x1e4
-function function_4c551667() {
+function function_4c551667()
+{
     entities = bot::get_bots();
-    s_vip = struct::get("s_vip", "targetname");
+    s_vip = struct::get( "s_vip", "targetname" );
     var_e8d6f89 = 0;
-    foreach (entity in entities) {
-        if (!isdefined(entity.bot)) {
+    
+    foreach ( entity in entities )
+    {
+        if ( !isdefined( entity.bot ) )
+        {
             continue;
         }
-        if (isdefined(entity.isinuse) && entity.isinuse) {
+        
+        if ( isdefined( entity.isinuse ) && entity.isinuse )
+        {
             continue;
         }
-        entity ct_bots::function_3895c193("allies");
+        
+        entity ct_bots::function_3895c193( "allies" );
         entity.prevstate = 3;
         entity.var_ef59b90 = 3;
         entity.resurrect_not_allowed_by = undefined;
-        entity setorigin(s_vip.origin);
-        entity setplayerangles(s_vip.angles);
+        entity setorigin( s_vip.origin );
+        entity setplayerangles( s_vip.angles );
         entity.disablespawning = 1;
         entity.var_6722b63 = 0;
         entity.b_revived = 0;
         entity show();
-        entity bot::function_678e7c0(level.var_6e246fb7);
+        entity bot::function_678e7c0( level.var_6e246fb7 );
         entity.var_81c43c = level.var_6e246fb7;
         return entity;
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x9cef8d4f, Offset: 0x4348
 // Size: 0x138
-function spawn_robot(str_team = #"allies", var_3b640040 = "walk") {
-    s_vip = struct::get("s_vip", "targetname");
-    robot = spawnactor("spawner_bo3_robot_grunt_assault_mp", s_vip.origin, s_vip.angles, "ai_vip", 1);
-    robot ai::set_behavior_attribute("rogue_control_speed", var_3b640040);
-    robot val::set(#"escort_robot", "ignoreall", 1);
-    robot setteam(str_team);
-    aiutility::clearaioverridedamagecallbacks(robot);
+function spawn_robot( str_team = #"allies", var_3b640040 = "walk" )
+{
+    s_vip = struct::get( "s_vip", "targetname" );
+    robot = spawnactor( "spawner_bo3_robot_grunt_assault_mp", s_vip.origin, s_vip.angles, "ai_vip", 1 );
+    robot ai::set_behavior_attribute( "rogue_control_speed", var_3b640040 );
+    robot val::set( #"escort_robot", "ignoreall", 1 );
+    robot setteam( str_team );
+    aiutility::clearaioverridedamagecallbacks( robot );
     return robot;
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x4829106a, Offset: 0x4488
 // Size: 0x122
-function function_91c380a() {
-    self endoncallback(&function_b47c8ec8, #"death");
-    level waittill(#"hash_b368182103cc73");
-    for (var_1d6b3936 = getnode("nd_vip_start_path", "targetname"); isdefined(var_1d6b3936.target); var_1d6b3936 = getnode(var_1d6b3936.target, "targetname")) {
+function function_91c380a()
+{
+    self endoncallback( &function_b47c8ec8, #"death" );
+    level waittill( #"hash_b368182103cc73" );
+    
+    for ( var_1d6b3936 = getnode( "nd_vip_start_path", "targetname" ); isdefined( var_1d6b3936.target ) ; var_1d6b3936 = getnode( var_1d6b3936.target, "targetname" ) )
+    {
         self.var_1d6b3936 = var_1d6b3936;
-        self setgoal(var_1d6b3936, 1, 1);
-        self waittill(#"goal");
+        self setgoal( var_1d6b3936, 1, 1 );
+        self waittill( #"goal" );
         wait 3;
     }
-    self setgoal(var_1d6b3936, 1, 1);
-    self waittill(#"goal");
+    
+    self setgoal( var_1d6b3936, 1, 1 );
+    self waittill( #"goal" );
 }
 
 // Namespace ct_torque/ct_torque
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xcfba3cfc, Offset: 0x45b8
 // Size: 0x2c
-function function_b47c8ec8(_hash) {
+function function_b47c8ec8( _hash )
+{
     /#
-        iprintlnbold("<dev string:x8b>");
+        iprintlnbold( "<dev string:x8b>" );
     #/
 }
 
 // Namespace ct_torque/ct_torque
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xb74d2ba, Offset: 0x45f0
 // Size: 0x12c
-function function_41ce2473(parms) {
-    if (self.archetype === "zombie") {
+function function_41ce2473( parms )
+{
+    if ( self.archetype === "zombie" )
+    {
         waypoint = self.waypoint;
         waypoint ct_utils::function_f9ed304d();
-        var_605bef7f = getweapon(#"ability_smart_cover");
+        var_605bef7f = getweapon( #"ability_smart_cover" );
         e_player = ct_utils::get_player();
-        if (parms.eattacker === e_player) {
-            if (parms.weapon === var_605bef7f) {
-                e_player ct_utils::function_d471f8fa(2);
-            } else {
-                e_player ct_utils::function_d471f8fa(1);
+        
+        if ( parms.eattacker === e_player )
+        {
+            if ( parms.weapon === var_605bef7f )
+            {
+                e_player ct_utils::function_d471f8fa( 2 );
+            }
+            else
+            {
+                e_player ct_utils::function_d471f8fa( 1 );
             }
         }
-        arrayremovevalue(level.a_ai_zombies, self, 0);
-        function_1eaaceab(level.a_ai_zombies);
+        
+        arrayremovevalue( level.a_ai_zombies, self, 0 );
+        function_1eaaceab( level.a_ai_zombies );
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x44c57c8f, Offset: 0x4728
 // Size: 0x34
-function function_beca73db() {
+function function_beca73db()
+{
     self smart_cover::function_b11be5dc();
     self concertina_wire::function_42b34d5a();
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x3f34df5a, Offset: 0x4768
 // Size: 0x9c
-function function_bbd158ad() {
+function function_bbd158ad()
+{
     player = self;
-    var_9d063af9 = player gadgetgetslot(level.smartcoversettings.smartcoverweapon);
-    player gadgetdeactivate(var_9d063af9, level.smartcoversettings.smartcoverweapon);
-    player function_48e08b4(var_9d063af9, level.smartcoversettings.smartcoverweapon);
+    var_9d063af9 = player gadgetgetslot( level.smartcoversettings.smartcoverweapon );
+    player gadgetdeactivate( var_9d063af9, level.smartcoversettings.smartcoverweapon );
+    player function_48e08b4( var_9d063af9, level.smartcoversettings.smartcoverweapon );
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x80f724d1, Offset: 0x4810
 // Size: 0x4
-function function_27bedeed() {
+function function_27bedeed()
+{
     
 }
 
 // Namespace ct_torque/ct_torque
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0xb6a41654, Offset: 0x4820
 // Size: 0x21c
-function function_9270ab93(var_db89c655, var_27875ecd) {
+function function_9270ab93( var_db89c655, var_27875ecd )
+{
     var_e7cc5e43 = [];
-    var_e7cc5e43[#"mp_frenetic"][1] = 240000;
-    var_e7cc5e43[#"mp_frenetic"][2] = 180000;
-    var_e7cc5e43[#"mp_frenetic"][3] = 120000;
-    var_e7cc5e43[#"mp_offshore"][1] = 240000;
-    var_e7cc5e43[#"mp_offshore"][2] = 180000;
-    var_e7cc5e43[#"mp_offshore"][3] = 120000;
-    var_e7cc5e43[#"mp_seaside"][1] = 240000;
-    var_e7cc5e43[#"mp_seaside"][2] = 180000;
-    var_e7cc5e43[#"mp_seaside"][3] = 120000;
-    var_e7cc5e43[#"mp_silo"][1] = 240000;
-    var_e7cc5e43[#"mp_silo"][2] = 180000;
-    var_e7cc5e43[#"mp_silo"][3] = 120000;
-    str_map = hash(getrootmapname());
-    ct_utils::function_7a21ac57(0, var_27875ecd, var_e7cc5e43[str_map][1], var_e7cc5e43[str_map][2], var_e7cc5e43[str_map][3]);
+    var_e7cc5e43[ #"mp_frenetic" ][ 1 ] = 240000;
+    var_e7cc5e43[ #"mp_frenetic" ][ 2 ] = 180000;
+    var_e7cc5e43[ #"mp_frenetic" ][ 3 ] = 120000;
+    var_e7cc5e43[ #"mp_offshore" ][ 1 ] = 240000;
+    var_e7cc5e43[ #"mp_offshore" ][ 2 ] = 180000;
+    var_e7cc5e43[ #"mp_offshore" ][ 3 ] = 120000;
+    var_e7cc5e43[ #"mp_seaside" ][ 1 ] = 240000;
+    var_e7cc5e43[ #"mp_seaside" ][ 2 ] = 180000;
+    var_e7cc5e43[ #"mp_seaside" ][ 3 ] = 120000;
+    var_e7cc5e43[ #"mp_silo" ][ 1 ] = 240000;
+    var_e7cc5e43[ #"mp_silo" ][ 2 ] = 180000;
+    var_e7cc5e43[ #"mp_silo" ][ 3 ] = 120000;
+    str_map = hash( getrootmapname() );
+    ct_utils::function_7a21ac57( 0, var_27875ecd, var_e7cc5e43[ str_map ][ 1 ], var_e7cc5e43[ str_map ][ 2 ], var_e7cc5e43[ str_map ][ 3 ] );
 }
 
 // Namespace ct_torque/ct_torque
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x2e2ecaaf, Offset: 0x4a48
 // Size: 0xc4
-function on_smartcover_placed(newcover) {
-    if (isdefined(level.var_d013d2e3)) {
-        self [[ level.var_d013d2e3 ]](newcover);
+function on_smartcover_placed( newcover )
+{
+    if ( isdefined( level.var_d013d2e3 ) )
+    {
+        self [[ level.var_d013d2e3 ]]( newcover );
     }
-    if (isdefined(self.smartcover) && isdefined(self.smartcover.var_58e8b64d)) {
-        self notify(#"smartcover_placed");
-        function_1eaaceab(self.smartcover.var_58e8b64d);
+    
+    if ( isdefined( self.smartcover ) && isdefined( self.smartcover.var_58e8b64d ) )
+    {
+        self notify( #"smartcover_placed" );
+        function_1eaaceab( self.smartcover.var_58e8b64d );
     }
-    if (level.ctdifficulty !== 0) {
-        self thread function_46250f2d(newcover.smartcover, #"smartcover");
+    
+    if ( level.ctdifficulty !== 0 )
+    {
+        self thread function_46250f2d( newcover.smartcover, #"smartcover" );
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x6767a08a, Offset: 0x4b18
 // Size: 0xc4
-function on_concertinawire_placed(newcover) {
-    if (isdefined(level.var_bb9429c2)) {
-        self [[ level.var_bb9429c2 ]](newcover);
+function on_concertinawire_placed( newcover )
+{
+    if ( isdefined( level.var_bb9429c2 ) )
+    {
+        self [[ level.var_bb9429c2 ]]( newcover );
     }
-    if (isdefined(self.concertinawire) && isdefined(self.concertinawire.var_a3aac76c)) {
-        self notify(#"razorwire_placed");
-        function_1eaaceab(self.concertinawire.var_a3aac76c);
+    
+    if ( isdefined( self.concertinawire ) && isdefined( self.concertinawire.var_a3aac76c ) )
+    {
+        self notify( #"razorwire_placed" );
+        function_1eaaceab( self.concertinawire.var_a3aac76c );
     }
-    if (level.ctdifficulty !== 0) {
-        self thread function_46250f2d(newcover.concertinawire, #"concertinawire");
+    
+    if ( level.ctdifficulty !== 0 )
+    {
+        self thread function_46250f2d( newcover.concertinawire, #"concertinawire" );
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x76bb88a9, Offset: 0x4be8
 // Size: 0x2b6
-function function_46250f2d(var_de22a8df, var_d14634d6) {
-    self endon(#"disconnect");
+function function_46250f2d( var_de22a8df, var_d14634d6 )
+{
+    self endon( #"disconnect" );
     var_55c5726a = [];
-    v_fwd = anglestoforward(var_de22a8df.angles) * 48;
+    v_fwd = anglestoforward( var_de22a8df.angles ) * 48;
     var_bba9bc4a = var_de22a8df.origin + v_fwd;
-    var_59d22f74 = getclosestpointonnavmesh(var_bba9bc4a, 32);
-    if (isdefined(var_59d22f74)) {
-        var_55c5726a[#"front"] = function_c5afff95(var_59d22f74, var_de22a8df.angles, var_d14634d6, #"front");
-    } else {
-        var_55c5726a[#"front"] = function_c5afff95(var_bba9bc4a, var_de22a8df.angles, var_d14634d6, #"front");
+    var_59d22f74 = getclosestpointonnavmesh( var_bba9bc4a, 32 );
+    
+    if ( isdefined( var_59d22f74 ) )
+    {
+        var_55c5726a[ #"front" ] = function_c5afff95( var_59d22f74, var_de22a8df.angles, var_d14634d6, #"front" );
     }
+    else
+    {
+        var_55c5726a[ #"front" ] = function_c5afff95( var_bba9bc4a, var_de22a8df.angles, var_d14634d6, #"front" );
+    }
+    
     var_bba9bc4a = var_de22a8df.origin - v_fwd;
-    var_59d22f74 = getclosestpointonnavmesh(var_bba9bc4a, 32);
-    if (isdefined(var_59d22f74)) {
-        var_55c5726a[#"back"] = function_c5afff95(var_59d22f74, var_de22a8df.angles, var_d14634d6, #"back");
-    } else {
-        var_55c5726a[#"back"] = function_c5afff95(var_bba9bc4a, var_de22a8df.angles, var_d14634d6, #"back");
+    var_59d22f74 = getclosestpointonnavmesh( var_bba9bc4a, 32 );
+    
+    if ( isdefined( var_59d22f74 ) )
+    {
+        var_55c5726a[ #"back" ] = function_c5afff95( var_59d22f74, var_de22a8df.angles, var_d14634d6, #"back" );
     }
+    else
+    {
+        var_55c5726a[ #"back" ] = function_c5afff95( var_bba9bc4a, var_de22a8df.angles, var_d14634d6, #"back" );
+    }
+    
     var_de22a8df.var_55c5726a = var_55c5726a;
-    var_de22a8df waittill(#"death");
+    var_de22a8df waittill( #"death" );
     var_55c5726a = [];
-    foreach (ai_zombie in level.a_ai_zombies) {
-        if (isalive(ai_zombie)) {
+    
+    foreach ( ai_zombie in level.a_ai_zombies )
+    {
+        if ( isalive( ai_zombie ) )
+        {
             ai_zombie.var_a4b4d1cb = 0;
         }
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 4, eflags: 0x0
+// Params 4
 // Checksum 0xbc41a53f, Offset: 0x4ea8
 // Size: 0x7a
-function function_c5afff95(v_origin, v_angles = (0, 0, 0), var_d14634d6, var_cd8500b3) {
-    var_553008b4 = level.var_edb3a8a3[var_d14634d6][var_cd8500b3];
+function function_c5afff95( v_origin, v_angles = ( 0, 0, 0 ), var_d14634d6, var_cd8500b3 )
+{
+    var_553008b4 = level.var_edb3a8a3[ var_d14634d6 ][ var_cd8500b3 ];
     var_553008b4.origin = v_origin;
     var_553008b4.angles = v_angles;
     return var_553008b4;
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xb6701863, Offset: 0x4f30
 // Size: 0x4ae
-function function_8d5cfdef() {
+function function_8d5cfdef()
+{
     e_player = ct_utils::get_player();
-    if (!(isdefined(self.var_de87c3ae) && self.var_de87c3ae) && !(isdefined(self.var_a4b4d1cb) && self.var_a4b4d1cb)) {
+    
+    if ( !( isdefined( self.var_de87c3ae ) && self.var_de87c3ae ) && !( isdefined( self.var_a4b4d1cb ) && self.var_a4b4d1cb ) )
+    {
         var_a3e53b82 = undefined;
         var_20e43fcf = [];
-        if (isdefined(e_player.smartcover) && isdefined(e_player.smartcover.var_58e8b64d) && e_player.smartcover.var_58e8b64d.size > 0) {
-            foreach (coverobj in e_player.smartcover.var_58e8b64d) {
-                if (isdefined(coverobj) && coverobj.health > 0) {
-                    foreach (var_553008b4 in coverobj.var_55c5726a) {
-                        if (isdefined(var_553008b4)) {
-                            var_337e484e = self canpath(self.origin, var_553008b4.origin);
-                            if (var_337e484e) {
+        
+        if ( isdefined( e_player.smartcover ) && isdefined( e_player.smartcover.var_58e8b64d ) && e_player.smartcover.var_58e8b64d.size > 0 )
+        {
+            foreach ( coverobj in e_player.smartcover.var_58e8b64d )
+            {
+                if ( isdefined( coverobj ) && coverobj.health > 0 )
+                {
+                    foreach ( var_553008b4 in coverobj.var_55c5726a )
+                    {
+                        if ( isdefined( var_553008b4 ) )
+                        {
+                            var_337e484e = self canpath( self.origin, var_553008b4.origin );
+                            
+                            if ( var_337e484e )
+                            {
                                 var_a3e53b82 = var_553008b4;
-                                var_20e43fcf[var_20e43fcf.size] = var_553008b4;
+                                var_20e43fcf[ var_20e43fcf.size ] = var_553008b4;
                                 break;
                             }
                         }
@@ -1128,39 +1430,60 @@ function function_8d5cfdef() {
                 }
             }
         }
-        if (isdefined(e_player.concertinawire) && isdefined(e_player.concertinawire.var_a3aac76c) && e_player.concertinawire.var_a3aac76c.size > 0) {
-            foreach (coverobj in e_player.concertinawire.var_a3aac76c) {
-                if (isdefined(coverobj) && coverobj.health > 0) {
-                    foreach (var_553008b4 in coverobj.var_55c5726a) {
-                        if (isdefined(var_553008b4)) {
-                            var_337e484e = self canpath(self.origin, var_553008b4.origin);
-                            if (var_337e484e) {
-                                var_20e43fcf[var_20e43fcf.size] = var_553008b4;
+        
+        if ( isdefined( e_player.concertinawire ) && isdefined( e_player.concertinawire.var_a3aac76c ) && e_player.concertinawire.var_a3aac76c.size > 0 )
+        {
+            foreach ( coverobj in e_player.concertinawire.var_a3aac76c )
+            {
+                if ( isdefined( coverobj ) && coverobj.health > 0 )
+                {
+                    foreach ( var_553008b4 in coverobj.var_55c5726a )
+                    {
+                        if ( isdefined( var_553008b4 ) )
+                        {
+                            var_337e484e = self canpath( self.origin, var_553008b4.origin );
+                            
+                            if ( var_337e484e )
+                            {
+                                var_20e43fcf[ var_20e43fcf.size ] = var_553008b4;
                             }
                         }
                     }
                 }
             }
         }
-        if (var_20e43fcf.size > 0) {
-            if (isdefined(var_a3e53b82) && distance2dsquared(level.ai_vip.origin, var_a3e53b82.origin) <= 640000) {
+        
+        if ( var_20e43fcf.size > 0 )
+        {
+            if ( isdefined( var_a3e53b82 ) && distance2dsquared( level.ai_vip.origin, var_a3e53b82.origin ) <= 640000 )
+            {
                 self.var_553008b4 = var_a3e53b82;
-            } else {
-                self.var_553008b4 = arraygetclosest(level.ai_vip.origin, var_20e43fcf);
             }
+            else
+            {
+                self.var_553008b4 = arraygetclosest( level.ai_vip.origin, var_20e43fcf );
+            }
+            
             self.var_a4b4d1cb = 1;
             return self.var_553008b4;
-        } else {
+        }
+        else
+        {
             self.var_a4b4d1cb = 0;
             self.var_553008b4 = undefined;
             return undefined;
         }
+        
         return;
     }
-    if (!(isdefined(self.var_de87c3ae) && self.var_de87c3ae) && isdefined(self.var_a4b4d1cb) && self.var_a4b4d1cb) {
+    
+    if ( !( isdefined( self.var_de87c3ae ) && self.var_de87c3ae ) && isdefined( self.var_a4b4d1cb ) && self.var_a4b4d1cb )
+    {
         return self.var_553008b4;
     }
-    if (!(isdefined(self.var_de87c3ae) && self.var_de87c3ae)) {
+    
+    if ( !( isdefined( self.var_de87c3ae ) && self.var_de87c3ae ) )
+    {
         self.var_553008b4 = undefined;
         self.var_95198c44 = 0;
         return undefined;
@@ -1168,228 +1491,284 @@ function function_8d5cfdef() {
 }
 
 // Namespace ct_torque/ct_torque
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x1c463749, Offset: 0x53e8
 // Size: 0x128
-function function_dc8ed534(var_47fd81d) {
-    foreach (coverobj in var_47fd81d) {
-        if (isdefined(coverobj) && coverobj.health > 0) {
-            foreach (var_553008b4 in coverobj.var_55c5726a) {
-                if (isdefined(var_553008b4) && self canpath(self.origin, var_553008b4.origin)) {
+function function_dc8ed534( var_47fd81d )
+{
+    foreach ( coverobj in var_47fd81d )
+    {
+        if ( isdefined( coverobj ) && coverobj.health > 0 )
+        {
+            foreach ( var_553008b4 in coverobj.var_55c5726a )
+            {
+                if ( isdefined( var_553008b4 ) && self canpath( self.origin, var_553008b4.origin ) )
+                {
                     return var_553008b4;
                 }
             }
         }
     }
+    
     return undefined;
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xfc89dd5c, Offset: 0x5518
 // Size: 0x208
-function function_f243b54e() {
-    self endon(#"death");
+function function_f243b54e()
+{
+    self endon( #"death" );
     e_player = ct_utils::get_player();
     self.var_553008b4 = undefined;
     var_ec90b5ea = 4096;
-    while (true) {
-        var_e4dd1a2e = self canpath(self.origin, e_player.origin);
-        var_13621637 = self canpath(self.origin, level.ai_vip.origin);
-        if (isdefined(self.enemy)) {
-            var_115a042a = self canpath(self.origin, self.enemy.origin);
-        } else {
+    
+    while ( true )
+    {
+        var_e4dd1a2e = self canpath( self.origin, e_player.origin );
+        var_13621637 = self canpath( self.origin, level.ai_vip.origin );
+        
+        if ( isdefined( self.enemy ) )
+        {
+            var_115a042a = self canpath( self.origin, self.enemy.origin );
+        }
+        else
+        {
             var_115a042a = 0;
         }
+        
         self.var_de87c3ae = var_e4dd1a2e || var_13621637 || var_115a042a;
-        if (var_13621637) {
-            if (self.zombie_move_speed !== "walk" && distance2dsquared(self.origin, level.ai_vip.origin) <= var_ec90b5ea) {
+        
+        if ( var_13621637 )
+        {
+            if ( self.zombie_move_speed !== "walk" && distance2dsquared( self.origin, level.ai_vip.origin ) <= var_ec90b5ea )
+            {
                 self.var_4d3692b7 = self.zombie_move_speed;
-                self zombie_utility::set_zombie_run_cycle("walk");
-            } else if (isdefined(self.var_4d3692b7)) {
-                self zombie_utility::set_zombie_run_cycle(self.var_4d3692b7);
+                self zombie_utility::set_zombie_run_cycle( "walk" );
+            }
+            else if ( isdefined( self.var_4d3692b7 ) )
+            {
+                self zombie_utility::set_zombie_run_cycle( self.var_4d3692b7 );
             }
         }
-        wait randomfloatrange(0.5, 1.5);
+        
+        wait randomfloatrange( 0.5, 1.5 );
     }
 }
 
 // Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x44dd29f1, Offset: 0x5728
 // Size: 0x294
-function function_a6b6f492() {
-    level thread scene::init(#"p8_fxanim_mp_frenetic_flyaway_tarp_bundle");
-    level thread scene::init(#"p8_fxanim_mp_frenetic_solar_panels_bundle");
-    level thread scene::init(#"p8_fxanim_mp_frenetic_solar_panels_delay_01_bundle");
-    level thread scene::init(#"p8_fxanim_mp_frenetic_solar_panels_delay_02_bundle");
-    level thread scene::init(#"p8_fxanim_mp_frenetic_solar_panels_delay_03_bundle");
-    level thread scene::init(#"p8_fxanim_mp_frenetic_vines_01_bundle");
-    level thread scene::init(#"p8_fxanim_mp_frenetic_vines_02_bundle");
-    level thread scene::init(#"p8_fxanim_mp_frenetic_vines_03_bundle");
-    level thread scene::init(#"p8_fxanim_mp_frenetic_rock_slide_bundle");
-    level waittill(#"desc_countdown_start");
-    level scene::add_scene_func(#"p8_fxanim_mp_frenetic_flyaway_tarp_bundle", &function_dd64960c, "play");
-    level thread scene::play(#"p8_fxanim_mp_frenetic_solar_panels_bundle");
-    level thread scene::play(#"p8_fxanim_mp_frenetic_solar_panels_delay_01_bundle");
-    level thread scene::play(#"p8_fxanim_mp_frenetic_solar_panels_delay_02_bundle");
-    level thread scene::play(#"p8_fxanim_mp_frenetic_solar_panels_delay_03_bundle");
-    level thread scene::play(#"p8_fxanim_mp_frenetic_vines_01_bundle");
-    level thread scene::play(#"p8_fxanim_mp_frenetic_vines_02_bundle");
-    level thread scene::play(#"p8_fxanim_mp_frenetic_vines_03_bundle");
-    level thread scene::play(#"p8_fxanim_mp_frenetic_rock_slide_bundle");
-    level thread scene::play(#"p8_fxanim_mp_frenetic_flyaway_tarp_bundle");
+function function_a6b6f492()
+{
+    level thread scene::init( #"p8_fxanim_mp_frenetic_flyaway_tarp_bundle" );
+    level thread scene::init( #"p8_fxanim_mp_frenetic_solar_panels_bundle" );
+    level thread scene::init( #"p8_fxanim_mp_frenetic_solar_panels_delay_01_bundle" );
+    level thread scene::init( #"p8_fxanim_mp_frenetic_solar_panels_delay_02_bundle" );
+    level thread scene::init( #"p8_fxanim_mp_frenetic_solar_panels_delay_03_bundle" );
+    level thread scene::init( #"p8_fxanim_mp_frenetic_vines_01_bundle" );
+    level thread scene::init( #"p8_fxanim_mp_frenetic_vines_02_bundle" );
+    level thread scene::init( #"p8_fxanim_mp_frenetic_vines_03_bundle" );
+    level thread scene::init( #"p8_fxanim_mp_frenetic_rock_slide_bundle" );
+    level waittill( #"desc_countdown_start" );
+    level scene::add_scene_func( #"p8_fxanim_mp_frenetic_flyaway_tarp_bundle", &function_dd64960c, "play" );
+    level thread scene::play( #"p8_fxanim_mp_frenetic_solar_panels_bundle" );
+    level thread scene::play( #"p8_fxanim_mp_frenetic_solar_panels_delay_01_bundle" );
+    level thread scene::play( #"p8_fxanim_mp_frenetic_solar_panels_delay_02_bundle" );
+    level thread scene::play( #"p8_fxanim_mp_frenetic_solar_panels_delay_03_bundle" );
+    level thread scene::play( #"p8_fxanim_mp_frenetic_vines_01_bundle" );
+    level thread scene::play( #"p8_fxanim_mp_frenetic_vines_02_bundle" );
+    level thread scene::play( #"p8_fxanim_mp_frenetic_vines_03_bundle" );
+    level thread scene::play( #"p8_fxanim_mp_frenetic_rock_slide_bundle" );
+    level thread scene::play( #"p8_fxanim_mp_frenetic_flyaway_tarp_bundle" );
 }
 
 // Namespace ct_torque/ct_torque
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x2349fc0, Offset: 0x59c8
 // Size: 0xcc
-function function_dd64960c(a_ents) {
-    if (isdefined(a_ents[#"prop 1"])) {
-        var_7425591a = a_ents[#"prop 1"] gettagorigin("tarp_06_jnt") + (0, 0, -8);
-        a_ents[#"prop 1"] waittill(#"physics_pulse", #"death");
-        physicsexplosionsphere(var_7425591a, 1024, 1, 1);
+function function_dd64960c( a_ents )
+{
+    if ( isdefined( a_ents[ #"prop 1" ] ) )
+    {
+        var_7425591a = a_ents[ #"prop 1" ] gettagorigin( "tarp_06_jnt" ) + ( 0, 0, -8 );
+        a_ents[ #"prop 1" ] waittill( #"physics_pulse", #"death" );
+        physicsexplosionsphere( var_7425591a, 1024, 1, 1 );
     }
 }
 
 /#
 
     // Namespace ct_torque/ct_torque
-    // Params 0, eflags: 0x0
+    // Params 0
     // Checksum 0x33fdf0eb, Offset: 0x5aa0
-    // Size: 0x988
-    function function_d69c54a8() {
+    // Size: 0x988, Type: dev
+    function function_d69c54a8()
+    {
         sessionmode = currentsessionmode();
-        setdvar(#"hash_2bdefa89fdfb0546", "<dev string:x97>");
-        level flag::init("<dev string:x9a>");
-        if (sessionmode != 4) {
-            adddebugcommand("<dev string:xb1>");
-            adddebugcommand("<dev string:x115>");
-            adddebugcommand("<dev string:x17b>");
-            adddebugcommand("<dev string:x1dd>");
-            adddebugcommand("<dev string:x241>");
-            adddebugcommand("<dev string:x2a7>");
-            adddebugcommand("<dev string:x30f>");
-            adddebugcommand("<dev string:x36b>");
-            adddebugcommand("<dev string:x3cb>");
-            adddebugcommand("<dev string:x42d>");
-            adddebugcommand("<dev string:x4ab>");
-            adddebugcommand("<dev string:x527>");
-            adddebugcommand("<dev string:x5a5>");
-            adddebugcommand("<dev string:x621>");
-            adddebugcommand("<dev string:x6a9>");
-            adddebugcommand("<dev string:x731>");
-            adddebugcommand("<dev string:x7aa>");
-            adddebugcommand("<dev string:x823>");
-            adddebugcommand("<dev string:x8a0>");
-            adddebugcommand("<dev string:x913>");
-            adddebugcommand("<dev string:x986>");
+        setdvar( #"hash_2bdefa89fdfb0546", "<dev string:x97>" );
+        level flag::init( "<dev string:x9a>" );
+        
+        if ( sessionmode != 4 )
+        {
+            adddebugcommand( "<dev string:xb1>" );
+            adddebugcommand( "<dev string:x115>" );
+            adddebugcommand( "<dev string:x17b>" );
+            adddebugcommand( "<dev string:x1dd>" );
+            adddebugcommand( "<dev string:x241>" );
+            adddebugcommand( "<dev string:x2a7>" );
+            adddebugcommand( "<dev string:x30f>" );
+            adddebugcommand( "<dev string:x36b>" );
+            adddebugcommand( "<dev string:x3cb>" );
+            adddebugcommand( "<dev string:x42d>" );
+            adddebugcommand( "<dev string:x4ab>" );
+            adddebugcommand( "<dev string:x527>" );
+            adddebugcommand( "<dev string:x5a5>" );
+            adddebugcommand( "<dev string:x621>" );
+            adddebugcommand( "<dev string:x6a9>" );
+            adddebugcommand( "<dev string:x731>" );
+            adddebugcommand( "<dev string:x7aa>" );
+            adddebugcommand( "<dev string:x823>" );
+            adddebugcommand( "<dev string:x8a0>" );
+            adddebugcommand( "<dev string:x913>" );
+            adddebugcommand( "<dev string:x986>" );
         }
-        while (true) {
+        
+        while ( true )
+        {
             wait 0.25;
-            cmd = getdvarstring(#"hash_2bdefa89fdfb0546", "<dev string:x97>");
-            if (cmd == "<dev string:x97>") {
+            cmd = getdvarstring( #"hash_2bdefa89fdfb0546", "<dev string:x97>" );
+            
+            if ( cmd == "<dev string:x97>" )
+            {
                 continue;
             }
+            
             e_player = ct_utils::get_player();
-            switch (cmd) {
-            case #"hash_1ce8d5f5a390a03e":
-                if (isalive(level.ai_vip)) {
-                    level.ai_vip.magic_bullet_shield val::set("<dev string:x9fd>", "<dev string:xa0f>", 1);
-                }
-                break;
-            case #"hash_3028b864eea95c40":
-                if (isalive(level.ai_vip)) {
-                    level.ai_vip.magic_bullet_shield val::reset("<dev string:x9fd>", "<dev string:xa0f>");
-                }
-                break;
-            case #"hash_2a604c8957a7a557":
-                if (isalive(level.ai_vip)) {
-                    level.ai_vip.magic_bullet_shield val::set("<dev string:xa1b>", "<dev string:xa2c>", 1);
-                }
-                break;
-            case #"hash_292c4e5ff1c705bb":
-                if (isalive(level.ai_vip)) {
-                    level.ai_vip.magic_bullet_shield val::reset("<dev string:xa1b>", "<dev string:xa2c>");
-                }
-                break;
-            case #"hash_12348115d7e7bfac":
-                if (isalive(level.ai_vip)) {
-                    level.ai_vip.magic_bullet_shield = 1;
-                }
-                break;
-            case #"hash_5712121ddee190c6":
-                if (isalive(level.ai_vip)) {
-                    level.ai_vip.magic_bullet_shield = 0;
-                }
-                break;
-            case #"hash_5ec503eac0f129d9":
-                if (isalive(level.ai_vip)) {
-                    function_6fc5325c();
-                }
-                break;
-            case #"hash_2000f929025eaeae":
-                if (isdefined(level.ai_vip.var_1d6b3936)) {
-                    function_5f4dc2fe();
-                }
-                break;
-            case #"zombies_kill_all":
-                if (isdefined(level.a_ai_zombies) && level.a_ai_zombies.size > 0) {
-                    while (level.a_ai_zombies.size > 0) {
-                        ai_zombie = level.a_ai_zombies[0];
-                        if (isalive(ai_zombie)) {
-                            ai_zombie kill();
-                        }
-                        function_1eaaceab(level.a_ai_zombies, 0);
-                        wait 0.1;
+            
+            switch ( cmd )
+            {
+                case #"hash_1ce8d5f5a390a03e":
+                    if ( isalive( level.ai_vip ) )
+                    {
+                        level.ai_vip.magic_bullet_shield val::set( "<dev string:x9fd>", "<dev string:xa0f>", 1 );
                     }
-                }
-                break;
-            case #"hash_22419681259c1f7e":
-                e_player thread function_f7cf3a9b(10, 1);
-                break;
-            case #"hash_50fe7f44449540a4":
-                e_player thread function_f7cf3a9b(10, 0);
-                break;
-            case #"hash_5d55e8e48b20f80d":
-                ct_utils::get_player() thread function_f7cf3a9b(20, 1);
-                break;
-            case #"hash_4e6e57e708e66599":
-                ct_utils::get_player() thread function_f7cf3a9b(20, 0);
-                break;
-            case #"hash_584d089de37eb272":
-                e_player thread function_944278fd(10, 1, 1000, 2000);
-                break;
-            case #"hash_584a029de37c7269":
-                e_player thread function_944278fd(20, 1, 1000, 2000);
-                break;
-            case #"hash_2789437bec32487c":
-                e_player thread function_db21e968(10, 1);
-                break;
-            case #"hash_2793557bec3abb97":
-                e_player thread function_db21e968(20, 1);
-                break;
-            case #"hash_5892e5a92d7dc8cd":
-                e_player notify(#"hash_3bd66153d302d5e3");
-                break;
-            case #"hash_3849a968028039ac":
-                level.ai_vip thread function_db21e968(10, 1);
-                break;
-            case #"hash_3853bb680288acc7":
-                level.ai_vip thread function_db21e968(20, 1);
-                break;
-            case #"hash_4e4dc106db86a01d":
-                level.ai_vip notify(#"hash_3bd66153d302d5e3");
-                break;
-            case #"hash_2f5364716bda85ac":
-                level thread spawn_zombies(ct_utils::get_player(), 10, 1);
-                break;
-            case #"hash_6ab57ee2387c029f":
-                level thread spawn_zombies(ct_utils::get_player(), 20, 1);
-                break;
+                    
+                    break;
+                case #"hash_3028b864eea95c40":
+                    if ( isalive( level.ai_vip ) )
+                    {
+                        level.ai_vip.magic_bullet_shield val::reset( "<dev string:x9fd>", "<dev string:xa0f>" );
+                    }
+                    
+                    break;
+                case #"hash_2a604c8957a7a557":
+                    if ( isalive( level.ai_vip ) )
+                    {
+                        level.ai_vip.magic_bullet_shield val::set( "<dev string:xa1b>", "<dev string:xa2c>", 1 );
+                    }
+                    
+                    break;
+                case #"hash_292c4e5ff1c705bb":
+                    if ( isalive( level.ai_vip ) )
+                    {
+                        level.ai_vip.magic_bullet_shield val::reset( "<dev string:xa1b>", "<dev string:xa2c>" );
+                    }
+                    
+                    break;
+                case #"hash_12348115d7e7bfac":
+                    if ( isalive( level.ai_vip ) )
+                    {
+                        level.ai_vip.magic_bullet_shield = 1;
+                    }
+                    
+                    break;
+                case #"hash_5712121ddee190c6":
+                    if ( isalive( level.ai_vip ) )
+                    {
+                        level.ai_vip.magic_bullet_shield = 0;
+                    }
+                    
+                    break;
+                case #"hash_5ec503eac0f129d9":
+                    if ( isalive( level.ai_vip ) )
+                    {
+                        function_6fc5325c();
+                    }
+                    
+                    break;
+                case #"hash_2000f929025eaeae":
+                    if ( isdefined( level.ai_vip.var_1d6b3936 ) )
+                    {
+                        function_5f4dc2fe();
+                    }
+                    
+                    break;
+                case #"zombies_kill_all":
+                    if ( isdefined( level.a_ai_zombies ) && level.a_ai_zombies.size > 0 )
+                    {
+                        while ( level.a_ai_zombies.size > 0 )
+                        {
+                            ai_zombie = level.a_ai_zombies[ 0 ];
+                            
+                            if ( isalive( ai_zombie ) )
+                            {
+                                ai_zombie kill();
+                            }
+                            
+                            function_1eaaceab( level.a_ai_zombies, 0 );
+                            wait 0.1;
+                        }
+                    }
+                    
+                    break;
+                case #"hash_22419681259c1f7e":
+                    e_player thread function_f7cf3a9b( 10, 1 );
+                    break;
+                case #"hash_50fe7f44449540a4":
+                    e_player thread function_f7cf3a9b( 10, 0 );
+                    break;
+                case #"hash_5d55e8e48b20f80d":
+                    ct_utils::get_player() thread function_f7cf3a9b( 20, 1 );
+                    break;
+                case #"hash_4e6e57e708e66599":
+                    ct_utils::get_player() thread function_f7cf3a9b( 20, 0 );
+                    break;
+                case #"hash_584d089de37eb272":
+                    e_player thread function_944278fd( 10, 1, 1000, 2000 );
+                    break;
+                case #"hash_584a029de37c7269":
+                    e_player thread function_944278fd( 20, 1, 1000, 2000 );
+                    break;
+                case #"hash_2789437bec32487c":
+                    e_player thread function_db21e968( 10, 1 );
+                    break;
+                case #"hash_2793557bec3abb97":
+                    e_player thread function_db21e968( 20, 1 );
+                    break;
+                case #"hash_5892e5a92d7dc8cd":
+                    e_player notify( #"hash_3bd66153d302d5e3" );
+                    break;
+                case #"hash_3849a968028039ac":
+                    level.ai_vip thread function_db21e968( 10, 1 );
+                    break;
+                case #"hash_3853bb680288acc7":
+                    level.ai_vip thread function_db21e968( 20, 1 );
+                    break;
+                case #"hash_4e4dc106db86a01d":
+                    level.ai_vip notify( #"hash_3bd66153d302d5e3" );
+                    break;
+                case #"hash_2f5364716bda85ac":
+                    level thread spawn_zombies( ct_utils::get_player(), 10, 1 );
+                    break;
+                case #"hash_6ab57ee2387c029f":
+                    level thread spawn_zombies( ct_utils::get_player(), 20, 1 );
+                    break;
             }
-            setdvar(#"hash_2bdefa89fdfb0546", "<dev string:x97>");
+            
+            setdvar( #"hash_2bdefa89fdfb0546", "<dev string:x97>" );
         }
     }
 

@@ -30,30 +30,35 @@
 // Params 0, eflags: 0x2
 // Checksum 0xcabcd533, Offset: 0x428
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"zm_trial_towers_boss", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"zm_trial_towers_boss", &__init__, undefined, undefined );
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x69a5ade4, Offset: 0x470
 // Size: 0x5c
-function __init__() {
-    if (!zm_trial::is_trial_mode()) {
+function __init__()
+{
+    if ( !zm_trial::is_trial_mode() )
+    {
         return;
     }
-    zm_trial::register_challenge(#"towers_boss", &on_begin, &on_end);
+    
+    zm_trial::register_challenge( #"towers_boss", &on_begin, &on_end );
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
 // Params 3, eflags: 0x4
 // Checksum 0x61bbfdf6, Offset: 0x4d8
 // Size: 0xa4
-function private on_begin(var_6325d314, var_52b8b3a2, n_time) {
-    level flag::clear(#"spawn_zombies");
-    callback::on_spawned(&zm_towers_main_quest::function_d4e923e7);
+function private on_begin( var_6325d314, var_52b8b3a2, n_time )
+{
+    level flag::clear( #"spawn_zombies" );
+    callback::on_spawned( &zm_towers_main_quest::function_d4e923e7 );
     wait 10;
-    level thread scene::play(#"p8_fxanim_zm_towers_boss_arena_gate_raise_bundle", "Shot 3");
+    level thread scene::play( #"p8_fxanim_zm_towers_boss_arena_gate_raise_bundle", "Shot 3" );
     level thread function_353ea592();
 }
 
@@ -61,63 +66,79 @@ function private on_begin(var_6325d314, var_52b8b3a2, n_time) {
 // Params 1, eflags: 0x4
 // Checksum 0xe9288b6, Offset: 0x588
 // Size: 0x2c
-function private on_end(round_reset) {
-    callback::remove_on_spawned(&zm_towers_main_quest::function_d4e923e7);
+function private on_end( round_reset )
+{
+    callback::remove_on_spawned( &zm_towers_main_quest::function_d4e923e7 );
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
 // Params 0, eflags: 0x4
 // Checksum 0xfe562b74, Offset: 0x5c0
 // Size: 0x108
-function private function_353ea592() {
-    self notify("6fdbe26c6aeb036");
-    self endon("6fdbe26c6aeb036");
-    level endon(#"end_of_round");
+function private function_353ea592()
+{
+    self notify( "6fdbe26c6aeb036" );
+    self endon( "6fdbe26c6aeb036" );
+    level endon( #"end_of_round" );
     level thread function_8318a404();
-    level waittill(#"elephant_death");
-    level flag::clear(#"infinite_round_spawning");
-    level flag::clear(#"pause_round_timeout");
+    level waittill( #"elephant_death" );
+    level flag::clear( #"infinite_round_spawning" );
+    level flag::clear( #"pause_round_timeout" );
     level.zombie_total = 0;
-    level thread zm_utility::function_9ad5aeb1(0, 1, 1, 0);
+    level thread zm_utility::function_9ad5aeb1( 0, 1, 1, 0 );
     wait 5;
-    level notify(#"kill_round");
-    level notify(#"kill_round_wait");
+    level notify( #"kill_round" );
+    level notify( #"kill_round_wait" );
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
 // Params 0, eflags: 0x4
 // Checksum 0x4370cc8a, Offset: 0x6d0
 // Size: 0x2fc
-function private function_8318a404() {
-    self notify("3eafbccd965262a6");
-    self endon("3eafbccd965262a6");
-    level endon(#"end_of_round");
-    zm_zonemgr::enable_zone("zone_boss_battle");
-    setclearanceceiling(142);
-    level.boss_entry_tower_remains = getent("boss_entry_tower_remains", "targetname");
-    if (isdefined(level.boss_entry_tower_remains)) {
+function private function_8318a404()
+{
+    self notify( "3eafbccd965262a6" );
+    self endon( "3eafbccd965262a6" );
+    level endon( #"end_of_round" );
+    zm_zonemgr::enable_zone( "zone_boss_battle" );
+    setclearanceceiling( 142 );
+    level.boss_entry_tower_remains = getent( "boss_entry_tower_remains", "targetname" );
+    
+    if ( isdefined( level.boss_entry_tower_remains ) )
+    {
         level.boss_entry_tower_remains hide();
     }
-    entrance_tower_collision = getent("entrance_tower_collision", "targetname");
-    if (isdefined(entrance_tower_collision)) {
+    
+    entrance_tower_collision = getent( "entrance_tower_collision", "targetname" );
+    
+    if ( isdefined( entrance_tower_collision ) )
+    {
         entrance_tower_collision disconnectpaths();
     }
-    level scene::init("boss_battle_tempo", "targetname");
+    
+    level scene::init( "boss_battle_tempo", "targetname" );
     a_corpses = getcorpsearray();
-    foreach (corpse in a_corpses) {
-        if (isactorcorpse(corpse)) {
+    
+    foreach ( corpse in a_corpses )
+    {
+        if ( isactorcorpse( corpse ) )
+        {
             corpse delete();
         }
     }
-    level thread lui::screen_flash(0.5, 2, 1, 1, (1, 1, 1));
-    level thread zm_utility::function_9ad5aeb1(0, 1, 1, 0);
+    
+    level thread lui::screen_flash( 0.5, 2, 1, 1, ( 1, 1, 1 ) );
+    level thread zm_utility::function_9ad5aeb1( 0, 1, 1, 0 );
     wait 1;
-    var_ff91be3a = struct::get_array("s_zm_towers_port_to_boss", "targetname");
+    var_ff91be3a = struct::get_array( "s_zm_towers_port_to_boss", "targetname" );
     var_a10268d3 = getplayers();
-    for (i = 0; i < var_a10268d3.size; i++) {
-        var_a10268d3[i] setorigin(var_ff91be3a[i].origin);
-        var_a10268d3[i] setplayerangles(var_ff91be3a[i].angles);
+    
+    for ( i = 0; i < var_a10268d3.size ; i++ )
+    {
+        var_a10268d3[ i ] setorigin( var_ff91be3a[ i ].origin );
+        var_a10268d3[ i ] setplayerangles( var_ff91be3a[ i ].angles );
     }
+    
     level thread boss_fight();
 }
 
@@ -125,72 +146,87 @@ function private function_8318a404() {
 // Params 0, eflags: 0x4
 // Checksum 0x75527e9d, Offset: 0x9d8
 // Size: 0x5b8
-function private boss_fight() {
-    self notify("4b6131952d06894a");
-    self endon("4b6131952d06894a");
+function private boss_fight()
+{
+    self notify( "4b6131952d06894a" );
+    self endon( "4b6131952d06894a" );
     wait 5;
-    zm_towers_crowd::function_5c1184e(0);
-    zm_towers_crowd::function_aec5ec5a(1);
+    zm_towers_crowd::function_5c1184e( 0 );
+    zm_towers_crowd::function_aec5ec5a( 1 );
     level.var_9a992b09 = 1;
-    array::thread_all(level.players, &zm_towers_crowd::function_51ea46f3, 0, 1);
-    foreach (player in level.players) {
-        player clientfield::set_to_player("snd_crowd_react", 11);
+    array::thread_all( level.players, &zm_towers_crowd::function_51ea46f3, 0, 1 );
+    
+    foreach ( player in level.players )
+    {
+        player clientfield::set_to_player( "snd_crowd_react", 11 );
     }
-    zm_bgb_anywhere_but_here::function_886fce8f(0);
-    if (!(isdefined(level.var_27d781ea) && level.var_27d781ea)) {
+    
+    zm_bgb_anywhere_but_here::function_886fce8f( 0 );
+    
+    if ( !( isdefined( level.var_27d781ea ) && level.var_27d781ea ) )
+    {
         level thread function_13576d14();
     }
-    level clientfield::set("crowd_react_boss", 0);
-    var_47312393 = struct::get(#"towers_boss_location_1", "script_noteworthy");
-    sp_spawner = getent("zombie_towers_boss_spawner", "script_noteworthy");
+    
+    level clientfield::set( "crowd_react_boss", 0 );
+    var_47312393 = struct::get( #"towers_boss_location_1", "script_noteworthy" );
+    sp_spawner = getent( "zombie_towers_boss_spawner", "script_noteworthy" );
     level thread function_4d682898();
     level thread function_92e1954c();
-    level thread function_1a05e10c(#"hash_4b701378fdc308f", "m_quest", "spear_warn");
-    level thread function_1a05e10c(#"boss_ranged_attack_2_start", "m_quest", "missle_warn");
-    level thread function_1a05e10c(#"boss_ranged_attack_2_launched", "m_quest", "missle_track");
-    level thread function_1a05e10c(#"towers_boss_charge", "m_quest", "charge_warn");
-    level thread function_1a05e10c(#"towers_boss_ground_attack", "m_quest", "shockwave_warn");
+    level thread function_1a05e10c( #"hash_4b701378fdc308f", "m_quest", "spear_warn" );
+    level thread function_1a05e10c( #"boss_ranged_attack_2_start", "m_quest", "missle_warn" );
+    level thread function_1a05e10c( #"boss_ranged_attack_2_launched", "m_quest", "missle_track" );
+    level thread function_1a05e10c( #"towers_boss_charge", "m_quest", "charge_warn" );
+    level thread function_1a05e10c( #"towers_boss_ground_attack", "m_quest", "shockwave_warn" );
     level thread function_c64fc074();
-    level thread function_95785950(125, level.var_49328379, "m_quest", "armor_nag");
-    level thread function_95785950(187, level.var_8b66546e, "m_quest", "basket_nag");
-    level thread function_95785950(211, level.var_49328379, "m_quest", "heart_nag");
-    array::thread_all(level.players, &function_3d487e02);
-    e_elephant = spawner::simple_spawn_single(sp_spawner, &function_f9da4403, var_47312393, #"hash_266f53fb994e6120");
-    while (!isdefined(e_elephant.ai.riders) || e_elephant.ai.riders.size < 2) {
+    level thread function_95785950( 125, level.var_49328379, "m_quest", "armor_nag" );
+    level thread function_95785950( 187, level.var_8b66546e, "m_quest", "basket_nag" );
+    level thread function_95785950( 211, level.var_49328379, "m_quest", "heart_nag" );
+    array::thread_all( level.players, &function_3d487e02 );
+    e_elephant = spawner::simple_spawn_single( sp_spawner, &function_f9da4403, var_47312393, #"hash_266f53fb994e6120" );
+    
+    while ( !isdefined( e_elephant.ai.riders ) || e_elephant.ai.riders.size < 2 )
+    {
         wait 0.1;
     }
-    level util::delay(2, undefined, &clientfield::set, "crowd_react_boss", 1);
+    
+    level util::delay( 2, undefined, &clientfield::set, "crowd_react_boss", 1 );
     level.var_27d781ea = 1;
     level.var_3395fcab = 1;
-    animation::add_global_notetrack_handler("tower_contact", &function_dd2db3df, 0);
-    scene::play(#"aib_vign_cust_zm_twrs_ent_hllpht_00", array(e_elephant));
-    e_elephant notify(#"entrace_done");
+    animation::add_global_notetrack_handler( "tower_contact", &function_dd2db3df, 0 );
+    scene::play( #"aib_vign_cust_zm_twrs_ent_hllpht_00", array( e_elephant ) );
+    e_elephant notify( #"entrace_done" );
     level thread function_ae1cbf2e();
-    level flag::set(#"spawn_zombies");
-    level flag::set(#"infinite_round_spawning");
-    level flag::set(#"pause_round_timeout");
-    e_elephant waittill(#"death");
-    level notify(#"elephant_death");
+    level flag::set( #"spawn_zombies" );
+    level flag::set( #"infinite_round_spawning" );
+    level flag::set( #"pause_round_timeout" );
+    e_elephant waittill( #"death" );
+    level notify( #"elephant_death" );
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
 // Params 0, eflags: 0x4
 // Checksum 0xe6de4d8b, Offset: 0xf98
 // Size: 0x184
-function private function_13576d14() {
-    var_bfd0a84a = getentarray("towers_boss_tower_trigger", "targetname");
+function private function_13576d14()
+{
+    var_bfd0a84a = getentarray( "towers_boss_tower_trigger", "targetname" );
     var_6848389e = 0;
     var_a406cb50 = 40;
-    foreach (var_e220a902 in var_bfd0a84a) {
+    
+    foreach ( var_e220a902 in var_bfd0a84a )
+    {
         var_e220a902 thread function_33935d5f();
+        
         /#
-            recordent(var_e220a902);
+            recordent( var_e220a902 );
         #/
+        
         var_d7267ad9 = "towers_boss_tower_badplace_" + var_6848389e;
         var_e220a902.badplace_name = var_d7267ad9;
-        badplace_box(var_d7267ad9, 0, groundtrace(var_e220a902.origin + (0, 0, 8), var_e220a902.origin + (0, 0, -100000), 0, var_e220a902)[#"position"], var_a406cb50, "all");
+        badplace_box( var_d7267ad9, 0, groundtrace( var_e220a902.origin + ( 0, 0, 8 ), var_e220a902.origin + ( 0, 0, -100000 ), 0, var_e220a902 )[ #"position" ], var_a406cb50, "all" );
         var_6848389e++;
-        waitframe(1);
+        waitframe( 1 );
     }
 }
 
@@ -198,24 +234,34 @@ function private function_13576d14() {
 // Params 0, eflags: 0x4
 // Checksum 0xccc9ddfd, Offset: 0x1128
 // Size: 0x1b4
-function private function_33935d5f() {
-    self notify("51b1374f19c0864a");
-    self endon("51b1374f19c0864a");
+function private function_33935d5f()
+{
+    self notify( "51b1374f19c0864a" );
+    self endon( "51b1374f19c0864a" );
     self.b_exploded = 0;
-    e_clip = getent(self.target, "targetname");
-    while (!self.b_exploded) {
-        waitresult = self waittill(#"trigger", #"tower_boss_scripted_trigger_tower");
-        shouldexplode = isdefined(waitresult.activator) && isdefined(waitresult.activator.archetype) && waitresult.activator.archetype === #"elephant";
-        if (shouldexplode || waitresult._notify == "tower_boss_scripted_trigger_tower") {
-            if (isdefined(e_clip)) {
+    e_clip = getent( self.target, "targetname" );
+    
+    while ( !self.b_exploded )
+    {
+        waitresult = self waittill( #"trigger", #"tower_boss_scripted_trigger_tower" );
+        shouldexplode = isdefined( waitresult.activator ) && isdefined( waitresult.activator.archetype ) && waitresult.activator.archetype === #"elephant";
+        
+        if ( shouldexplode || waitresult._notify == "tower_boss_scripted_trigger_tower" )
+        {
+            if ( isdefined( e_clip ) )
+            {
                 e_clip delete();
             }
-            fx_tower = struct::get(self.target, "targetname");
+            
+            fx_tower = struct::get( self.target, "targetname" );
             fx_tower scene::play();
             self.b_exploded = 1;
-            if (isdefined(self.badplace_name)) {
-                badplace_delete(self.badplace_name);
+            
+            if ( isdefined( self.badplace_name ) )
+            {
+                badplace_delete( self.badplace_name );
             }
+            
             break;
         }
     }
@@ -225,12 +271,15 @@ function private function_33935d5f() {
 // Params 0, eflags: 0x4
 // Checksum 0x26220de6, Offset: 0x12e8
 // Size: 0x8a
-function private function_92e1954c() {
-    self notify("602480c649d8e17f");
-    self endon("602480c649d8e17f");
-    level endon(#"end_game", #"boss_battle_done");
-    while (true) {
-        level waittill(#"hash_3aa3137f1bf70773");
+function private function_92e1954c()
+{
+    self notify( "602480c649d8e17f" );
+    self endon( "602480c649d8e17f" );
+    level endon( #"end_game", #"boss_battle_done" );
+    
+    while ( true )
+    {
+        level waittill( #"hash_3aa3137f1bf70773" );
         level.var_49328379 = 1;
         wait 30;
         level.var_49328379 = 0;
@@ -241,12 +290,15 @@ function private function_92e1954c() {
 // Params 0, eflags: 0x4
 // Checksum 0x2b782397, Offset: 0x1380
 // Size: 0x8a
-function private function_4d682898() {
-    self notify("1d04cafdc26414eb");
-    self endon("1d04cafdc26414eb");
-    level endon(#"end_game", #"boss_battle_done");
-    while (true) {
-        level waittill(#"basket_hit");
+function private function_4d682898()
+{
+    self notify( "1d04cafdc26414eb" );
+    self endon( "1d04cafdc26414eb" );
+    level endon( #"end_game", #"boss_battle_done" );
+    
+    while ( true )
+    {
+        level waittill( #"basket_hit" );
         level.var_8b66546e = 1;
         wait 30;
         level.var_8b66546e = 0;
@@ -257,33 +309,41 @@ function private function_4d682898() {
 // Params 0, eflags: 0x4
 // Checksum 0xafb527a3, Offset: 0x1418
 // Size: 0x1aa
-function private function_3d487e02() {
-    self notify("72b45c7bc8c76fc3");
-    self endon("72b45c7bc8c76fc3");
-    level endon(#"end_game", #"boss_battle_done");
-    self endon(#"disconnect");
+function private function_3d487e02()
+{
+    self notify( "72b45c7bc8c76fc3" );
+    self endon( "72b45c7bc8c76fc3" );
+    level endon( #"end_game", #"boss_battle_done" );
+    self endon( #"disconnect" );
     b_success = 0;
-    params = getstatuseffect(#"hash_12a64221f4d27f9b");
-    weapon = getweapon(#"eq_molotov");
-    while (true) {
-        waitresult = self waittill(#"aoe_damage");
-        if (waitresult.str_source == "zm_aoe_spear" || waitresult.str_source == "zm_aoe_spear_small" || waitresult.str_source == "zm_aoe_spear_big") {
-            self status_effect::status_effect_apply(params, weapon, undefined, 0, 3000, undefined, waitresult.origin);
-            if (!(isdefined(b_success) && b_success)) {
-                b_success = self zm_audio::create_and_play_dialog(#"m_quest", #"spear_warn");
+    params = getstatuseffect( #"hash_12a64221f4d27f9b" );
+    weapon = getweapon( #"eq_molotov" );
+    
+    while ( true )
+    {
+        waitresult = self waittill( #"aoe_damage" );
+        
+        if ( waitresult.str_source == "zm_aoe_spear" || waitresult.str_source == "zm_aoe_spear_small" || waitresult.str_source == "zm_aoe_spear_big" )
+        {
+            self status_effect::status_effect_apply( params, weapon, undefined, 0, 3000, undefined, waitresult.origin );
+            
+            if ( !( isdefined( b_success ) && b_success ) )
+            {
+                b_success = self zm_audio::create_and_play_dialog( #"m_quest", #"spear_warn" );
             }
         }
     }
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0xd1451732, Offset: 0x15d0
 // Size: 0x8a
-function function_f9da4403(s_spawn, phase) {
-    self endon(#"death");
+function function_f9da4403( s_spawn, phase )
+{
+    self endon( #"death" );
     self.ai.phase = phase;
-    self forceteleport(s_spawn.origin, s_spawn.angles);
+    self forceteleport( s_spawn.origin, s_spawn.angles );
     level.e_elephant = self;
     self.instakill_func = &zm_powerups::function_16c2586a;
 }
@@ -292,17 +352,24 @@ function function_f9da4403(s_spawn, phase) {
 // Params 0, eflags: 0x4
 // Checksum 0xd86a2e1a, Offset: 0x1668
 // Size: 0xf4
-function private function_dd2db3df() {
-    tower = struct::get("entrance_tower", "targetname");
-    entrance_tower_collision = getent("entrance_tower_collision", "targetname");
-    if (isdefined(entrance_tower_collision)) {
+function private function_dd2db3df()
+{
+    tower = struct::get( "entrance_tower", "targetname" );
+    entrance_tower_collision = getent( "entrance_tower_collision", "targetname" );
+    
+    if ( isdefined( entrance_tower_collision ) )
+    {
         entrance_tower_collision connectpaths();
         entrance_tower_collision delete();
     }
-    if (isdefined(tower)) {
+    
+    if ( isdefined( tower ) )
+    {
         tower thread scene::play();
-        wait scene::function_12479eba(#"p8_fxanim_zm_towers_boss_arena_tower_entrance_bundle");
-        if (isdefined(level.boss_entry_tower_remains)) {
+        wait scene::function_12479eba( #"p8_fxanim_zm_towers_boss_arena_tower_entrance_bundle" );
+        
+        if ( isdefined( level.boss_entry_tower_remains ) )
+        {
             level.boss_entry_tower_remains show();
         }
     }
@@ -312,16 +379,22 @@ function private function_dd2db3df() {
 // Params 4, eflags: 0x4
 // Checksum 0xb548e59a, Offset: 0x1768
 // Size: 0xa8
-function private function_95785950(var_c625106d, var_86163b89, n_stage, var_39acfdda) {
-    self notify("683195b7da79b6b9");
-    self endon("683195b7da79b6b9");
-    level endon(#"end_game", #"boss_battle_done");
-    while (true) {
+function private function_95785950( var_c625106d, var_86163b89, n_stage, var_39acfdda )
+{
+    self notify( "683195b7da79b6b9" );
+    self endon( "683195b7da79b6b9" );
+    level endon( #"end_game", #"boss_battle_done" );
+    
+    while ( true )
+    {
         wait var_c625106d;
-        if (isdefined(var_86163b89) && var_86163b89) {
+        
+        if ( isdefined( var_86163b89 ) && var_86163b89 )
+        {
             continue;
         }
-        zm_audio::function_bca32e49("m_quest", var_39acfdda);
+        
+        zm_audio::function_bca32e49( "m_quest", var_39acfdda );
     }
 }
 
@@ -329,25 +402,29 @@ function private function_95785950(var_c625106d, var_86163b89, n_stage, var_39ac
 // Params 0, eflags: 0x4
 // Checksum 0x509372fa, Offset: 0x1818
 // Size: 0x9c
-function private function_ae1cbf2e() {
-    self notify("6a1dc39ab115329");
-    self endon("6a1dc39ab115329");
-    level zm_audio::sndannouncerplayvox(#"hash_c8182d04e7f43c9");
-    level zm_audio::function_bca32e49("m_quest", "fury_arrive");
+function private function_ae1cbf2e()
+{
+    self notify( "6a1dc39ab115329" );
+    self endon( "6a1dc39ab115329" );
+    level zm_audio::sndannouncerplayvox( #"hash_c8182d04e7f43c9" );
+    level zm_audio::function_bca32e49( "m_quest", "fury_arrive" );
     zm_vo::function_3c173d37();
-    zm_vo::function_7e4562d7(#"hash_1a458ffc30e9306d");
+    zm_vo::function_7e4562d7( #"hash_1a458ffc30e9306d" );
 }
 
 // Namespace zm_trial_towers_boss/zm_trial_towers_boss
 // Params 3, eflags: 0x4
 // Checksum 0x788ca10d, Offset: 0x18c0
 // Size: 0x9a
-function private function_1a05e10c(str_notify, var_f13787ad, var_ca8a3a53) {
-    self notify("588886ce796505cd");
-    self endon("588886ce796505cd");
-    level endon(#"end_game", #"boss_battle_done");
-    for (b_success = 0; !b_success; b_success = zm_audio::function_bca32e49(var_f13787ad, var_ca8a3a53)) {
-        level waittill(str_notify);
+function private function_1a05e10c( str_notify, var_f13787ad, var_ca8a3a53 )
+{
+    self notify( "588886ce796505cd" );
+    self endon( "588886ce796505cd" );
+    level endon( #"end_game", #"boss_battle_done" );
+    
+    for ( b_success = 0; !b_success ; b_success = zm_audio::function_bca32e49( var_f13787ad, var_ca8a3a53 ) )
+    {
+        level waittill( str_notify );
     }
 }
 
@@ -355,11 +432,12 @@ function private function_1a05e10c(str_notify, var_f13787ad, var_ca8a3a53) {
 // Params 0, eflags: 0x4
 // Checksum 0x29f4926c, Offset: 0x1968
 // Size: 0x64
-function private function_c64fc074() {
-    self notify("7d5d5c98ec5ee437");
-    self endon("7d5d5c98ec5ee437");
-    level waittill(#"hash_634700dd42db02d8");
+function private function_c64fc074()
+{
+    self notify( "7d5d5c98ec5ee437" );
+    self endon( "7d5d5c98ec5ee437" );
+    level waittill( #"hash_634700dd42db02d8" );
     zm_vo::function_3c173d37();
-    zm_vo::function_7e4562d7(#"hash_6e1019732c1a9fc4");
+    zm_vo::function_7e4562d7( #"hash_6e1019732c1a9fc4" );
 }
 

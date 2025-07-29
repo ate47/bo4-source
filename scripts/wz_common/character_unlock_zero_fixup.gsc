@@ -7,24 +7,27 @@
 // Params 0, eflags: 0x2
 // Checksum 0xda4790f4, Offset: 0x78
 // Size: 0x44
-function autoexec __init__system__() {
-    system::register(#"character_unlock_zero_fixup", &__init__, undefined, #"character_unlock_fixup");
+function autoexec __init__system__()
+{
+    system::register( #"character_unlock_zero_fixup", &__init__, undefined, #"character_unlock_fixup" );
 }
 
 // Namespace character_unlock_zero_fixup/character_unlock_zero_fixup
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x2a6960d6, Offset: 0xc8
 // Size: 0x64
-function __init__() {
-    character_unlock_fixup::register_character_unlock(#"zero_unlock", #"prt_wz_zero", #"cu32_item", &function_d95e620c, #"hash_178b421c5b67b4d5");
+function __init__()
+{
+    character_unlock_fixup::register_character_unlock( #"zero_unlock", #"hash_303d7717027a0f92", #"cu32_item", &function_d95e620c, #"hash_178b421c5b67b4d5" );
 }
 
 // Namespace character_unlock_zero_fixup/character_unlock_zero_fixup
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x9db4b94a, Offset: 0x138
 // Size: 0xb2
-function function_d95e620c() {
-    var_a703ffba = (isdefined(getgametypesetting(#"hash_50b1121aee76a7e4")) ? getgametypesetting(#"hash_50b1121aee76a7e4") : 0) && (isdefined(getgametypesetting(#"hash_19c58d35b2ea8d15")) ? getgametypesetting(#"hash_19c58d35b2ea8d15") : 0);
+function function_d95e620c()
+{
+    var_a703ffba = ( isdefined( getgametypesetting( #"hash_50b1121aee76a7e4" ) ) ? getgametypesetting( #"hash_50b1121aee76a7e4" ) : 0 ) && ( isdefined( getgametypesetting( #"hash_19c58d35b2ea8d15" ) ) ? getgametypesetting( #"hash_19c58d35b2ea8d15" ) : 0 );
     return var_a703ffba;
 }
 

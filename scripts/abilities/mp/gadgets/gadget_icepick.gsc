@@ -12,16 +12,18 @@
 // Params 0, eflags: 0x2
 // Checksum 0x66052e9b, Offset: 0xa0
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"gadget_icepick", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"gadget_icepick", &__init__, undefined, undefined );
 }
 
 // Namespace icepick/gadget_icepick
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x3d30dc65, Offset: 0xe8
 // Size: 0x34
-function __init__() {
+function __init__()
+{
     init_shared();
-    callback::on_changed_specialist(&onspecialistchange);
+    callback::on_changed_specialist( &onspecialistchange );
 }
 

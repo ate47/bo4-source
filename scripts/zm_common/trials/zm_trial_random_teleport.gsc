@@ -12,29 +12,36 @@
 // Params 0, eflags: 0x2
 // Checksum 0xdeb6308b, Offset: 0xc0
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"zm_trial_random_teleport", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"zm_trial_random_teleport", &__init__, undefined, undefined );
 }
 
 // Namespace zm_trial_random_teleport/zm_trial_random_teleport
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xa20bdac9, Offset: 0x108
 // Size: 0x5c
-function __init__() {
-    if (!zm_trial::is_trial_mode()) {
+function __init__()
+{
+    if ( !zm_trial::is_trial_mode() )
+    {
         return;
     }
-    zm_trial::register_challenge(#"random_teleport", &on_begin, &on_end);
+    
+    zm_trial::register_challenge( #"random_teleport", &on_begin, &on_end );
 }
 
 // Namespace zm_trial_random_teleport/zm_trial_random_teleport
 // Params 2, eflags: 0x4
 // Checksum 0xc55f7553, Offset: 0x170
 // Size: 0xd8
-function private on_begin(n_min_time, n_max_time) {
-    level.var_935c100a = zm_trial::function_5769f26a(n_min_time);
-    level.var_33146b2e = zm_trial::function_5769f26a(n_max_time);
-    foreach (player in getplayers()) {
+function private on_begin( n_min_time, n_max_time )
+{
+    level.var_935c100a = zm_trial::function_5769f26a( n_min_time );
+    level.var_33146b2e = zm_trial::function_5769f26a( n_max_time );
+    
+    foreach ( player in getplayers() )
+    {
         player thread function_6a04c6e6();
     }
 }
@@ -43,37 +50,48 @@ function private on_begin(n_min_time, n_max_time) {
 // Params 1, eflags: 0x4
 // Checksum 0x79ecf3c7, Offset: 0x250
 // Size: 0xe0
-function private on_end(round_reset) {
-    level notify(#"hash_34f9cf7500b33c6b");
-    foreach (player in getplayers()) {
-        player val::reset(#"hash_7d2b25df35ca5b3", "freezecontrols");
-        player val::reset(#"hash_7d2b25df35ca5b3", "ignoreme");
+function private on_end( round_reset )
+{
+    level notify( #"hash_34f9cf7500b33c6b" );
+    
+    foreach ( player in getplayers() )
+    {
+        player val::reset( #"bgb_anywhere_but_here", "freezecontrols" );
+        player val::reset( #"bgb_anywhere_but_here", "ignoreme" );
     }
 }
 
 // Namespace zm_trial_random_teleport/zm_trial_random_teleport
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xb3efdf1b, Offset: 0x338
-// Size: 0x32
-function is_active() {
-    challenge = zm_trial::function_a36e8c38(#"random_teleport");
-    return isdefined(challenge);
+// Size: 0x32, Type: bool
+function is_active()
+{
+    challenge = zm_trial::function_a36e8c38( #"random_teleport" );
+    return isdefined( challenge );
 }
 
 // Namespace zm_trial_random_teleport/zm_trial_random_teleport
 // Params 0, eflags: 0x4
 // Checksum 0x935213f6, Offset: 0x378
 // Size: 0xc8
-function private function_6a04c6e6() {
-    self endon(#"disconnect");
-    level endon(#"hash_34f9cf7500b33c6b", #"end_game");
-    while (true) {
-        wait randomfloatrange(level.var_935c100a, level.var_33146b2e);
-        if (isalive(self)) {
-            if (self isusingoffhand()) {
+function private function_6a04c6e6()
+{
+    self endon( #"disconnect" );
+    level endon( #"hash_34f9cf7500b33c6b", #"end_game" );
+    
+    while ( true )
+    {
+        wait randomfloatrange( level.var_935c100a, level.var_33146b2e );
+        
+        if ( isalive( self ) )
+        {
+            if ( self isusingoffhand() )
+            {
                 self forceoffhandend();
             }
-            self zm_bgb_anywhere_but_here::activation(0);
+            
+            self zm_bgb_anywhere_but_here::activation( 0 );
         }
     }
 }

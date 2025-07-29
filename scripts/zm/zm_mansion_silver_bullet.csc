@@ -14,10 +14,11 @@
 #namespace mansion_silver_bullet;
 
 // Namespace mansion_silver_bullet/zm_mansion_silver_bullet
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x80f724d1, Offset: 0xc8
 // Size: 0x4
-function init() {
+function init()
+{
     
 }
 

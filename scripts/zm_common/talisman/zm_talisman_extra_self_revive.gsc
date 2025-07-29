@@ -15,23 +15,26 @@
 // Params 0, eflags: 0x2
 // Checksum 0x423dbc12, Offset: 0xd8
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"zm_talisman_extra_self_revive", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"zm_talisman_extra_self_revive", &__init__, undefined, undefined );
 }
 
 // Namespace zm_talisman_extra_self_revive/zm_talisman_extra_self_revive
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xb039978c, Offset: 0x120
 // Size: 0x2c
-function __init__() {
-    zm_talisman::register_talisman("talisman_extra_self_revive", &activate_talisman);
+function __init__()
+{
+    zm_talisman::register_talisman( "talisman_extra_self_revive", &activate_talisman );
 }
 
 // Namespace zm_talisman_extra_self_revive/zm_talisman_extra_self_revive
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xa4a6cfd, Offset: 0x158
 // Size: 0x1c
-function activate_talisman() {
-    self zm_laststand::function_3a00302e(1);
+function activate_talisman()
+{
+    self zm_laststand::function_3a00302e( 1 );
 }
 

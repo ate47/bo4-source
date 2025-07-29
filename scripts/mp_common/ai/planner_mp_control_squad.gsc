@@ -7,11 +7,12 @@
 #namespace plannermpcontrolsquad;
 
 // Namespace plannermpcontrolsquad/planner_mp_control_squad
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x10555cf7, Offset: 0xb0
 // Size: 0x32
-function createsquadplanner(team) {
-    planner = plannerutility::createplannerfromasset("mp_control_squad.ai_htn");
+function createsquadplanner( team )
+{
+    planner = plannerutility::createplannerfromasset( "mp_control_squad.ai_htn" );
     return planner;
 }
 

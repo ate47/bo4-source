@@ -5,10 +5,11 @@
 #namespace trapd;
 
 // Namespace trapd/trapd
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x103e0633, Offset: 0xa0
 // Size: 0x19a
-function function_ae7e49da(watcher) {
+function function_ae7e49da( watcher )
+{
     watcher.watchforfire = 1;
     watcher.activatesound = #"wpn_claymore_alert";
     watcher.hackable = 0;
@@ -19,7 +20,7 @@ function function_ae7e49da(watcher) {
     watcher.ignoredirection = undefined;
     watcher.immediatedetonation = 1;
     watcher.immunespecialty = "specialty_immunetriggerbetty";
-    watcher.detectiondot = cos(70);
+    watcher.detectiondot = cos( 70 );
     watcher.detectionmindist = 20;
     watcher.detectiongraceperiod = 0.6;
     watcher.stuntime = 3;
@@ -33,10 +34,11 @@ function function_ae7e49da(watcher) {
 }
 
 // Namespace trapd/trapd
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0x22cd3769, Offset: 0x248
 // Size: 0x17a
-function function_1daa29fc(watcher) {
+function function_1daa29fc( watcher )
+{
     watcher.watchforfire = 1;
     watcher.activatesound = #"wpn_claymore_alert";
     watcher.hackable = 0;
@@ -60,10 +62,11 @@ function function_1daa29fc(watcher) {
 }
 
 // Namespace trapd/trapd
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xa29ab1de, Offset: 0x3d0
 // Size: 0x17a
-function function_d8d3b49b(watcher) {
+function function_d8d3b49b( watcher )
+{
     watcher.watchforfire = 1;
     watcher.activatesound = #"wpn_claymore_alert";
     watcher.hackable = 0;
@@ -87,10 +90,11 @@ function function_d8d3b49b(watcher) {
 }
 
 // Namespace trapd/trapd
-// Params 1, eflags: 0x0
+// Params 1
 // Checksum 0xfb1bb619, Offset: 0x558
 // Size: 0x17a
-function function_518130e(watcher) {
+function function_518130e( watcher )
+{
     watcher.watchforfire = 1;
     watcher.activatesound = #"wpn_claymore_alert";
     watcher.hackable = 0;
@@ -114,12 +118,13 @@ function function_518130e(watcher) {
 }
 
 // Namespace trapd/trapd
-// Params 3, eflags: 0x0
+// Params 3
 // Checksum 0xe0ecc0e2, Offset: 0x6e0
 // Size: 0xcc
-function function_367f94ba(attacker, weapon, target) {
+function function_367f94ba( attacker, weapon, target )
+{
     self.killcament.starttime = gettime();
-    self molotov::function_462c8632(self.owner, self.origin, (0, 0, 1), (0, 0, -400), self.killcament, weapon, self.team, getscriptbundle(self.weapon.customsettings));
+    self molotov::function_462c8632( self.owner, self.origin, ( 0, 0, 1 ), ( 0, 0, -400 ), self.killcament, weapon, self.team, getscriptbundle( self.weapon.customsettings ) );
     self hide();
     wait 10;
     self delete();

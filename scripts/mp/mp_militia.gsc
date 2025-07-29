@@ -13,11 +13,12 @@
 // Params 1, eflags: 0x40
 // Checksum 0x92078107, Offset: 0xb0
 // Size: 0xbc
-function event_handler[level_init] main(eventstruct) {
+function event_handler[level_init] main( eventstruct )
+{
     mp_militia_fx::main();
     mp_militia_sound::main();
     load::main();
-    level.cleandepositpoints = array((0, 0, -122), (2344, -64, 9.5), (-1464, -2040, 157), (-940, 488, 4), (186.5, -1688, 65));
-    compass::setupminimap("");
+    level.cleandepositpoints = array( ( 0, 0, -122 ), ( 2344, -64, 9.5 ), ( -1464, -2040, 157 ), ( -940, 488, 4 ), ( 186.5, -1688, 65 ) );
+    compass::setupminimap( "" );
 }
 

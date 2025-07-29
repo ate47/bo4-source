@@ -12,105 +12,136 @@
 // Params 0, eflags: 0x2
 // Checksum 0x8ce2587f, Offset: 0x1d0
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"seeker_mine_mp", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"seeker_mine_mp", &__init__, undefined, undefined );
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0xdf5cb38, Offset: 0x218
 // Size: 0xfc
-function __init__() {
-    vehicle::add_vehicletype_callback("veh_seeker_mine_mp", &spawned);
-    clientfield::register("allplayers", "seeker_mine_shock", 1, 2, "int", &function_3ade2b96, 0, 0);
-    clientfield::register("scriptmover", "seeker_mine_fx", 1, 2, "int", &seeker_mine_fx, 0, 0);
-    level.seeker_mine_prompt = seeker_mine_prompt::register("seeker_mine_prompt");
-    callback::on_player_corpse(&on_player_corpse);
+function __init__()
+{
+    vehicle::add_vehicletype_callback( "veh_seeker_mine_mp", &spawned );
+    clientfield::register( "allplayers", "seeker_mine_shock", 1, 2, "int", &function_3ade2b96, 0, 0 );
+    clientfield::register( "scriptmover", "seeker_mine_fx", 1, 2, "int", &seeker_mine_fx, 0, 0 );
+    level.seeker_mine_prompt = seeker_mine_prompt::register( "seeker_mine_prompt" );
+    callback::on_player_corpse( &on_player_corpse );
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 7, eflags: 0x0
+// Params 7
 // Checksum 0x39080843, Offset: 0x320
 // Size: 0x15e
-function function_3ade2b96(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    if (newval == 1) {
+function function_3ade2b96( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+{
+    if ( newval == 1 )
+    {
         self.var_3ade2b96 = 1;
-        if (self function_21c0fa55()) {
-            setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.playerIsShocked"), 1);
+        
+        if ( self function_21c0fa55() )
+        {
+            setuimodelvalue( createuimodel( getuimodelforcontroller( localclientnum ), "hudItems.playerIsShocked" ), 1 );
         }
+        
         return;
     }
-    if (newval == 2) {
-        if (self function_21c0fa55() && function_d17ae3cc(localclientnum)) {
-            camfx = playfxoncamera(localclientnum, "player/fx8_plyr_pstfx_paralyze_screen");
-            self thread function_a6451cfe(localclientnum, camfx);
+    
+    if ( newval == 2 )
+    {
+        if ( self function_21c0fa55() && function_d17ae3cc( localclientnum ) )
+        {
+            camfx = playfxoncamera( localclientnum, "player/fx8_plyr_pstfx_paralyze_screen" );
+            self thread function_a6451cfe( localclientnum, camfx );
         }
+        
         return;
     }
+    
     self.var_3ade2b96 = 0;
-    self notify(#"hash_43f06be9944cddc1");
+    self notify( #"hash_43f06be9944cddc1" );
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 7, eflags: 0x0
+// Params 7
 // Checksum 0x8aca9821, Offset: 0x488
 // Size: 0x114
-function seeker_mine_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    if (newval > 0) {
-        if (isdefined(self.seeker_fx)) {
-            stopfx(localclientnum, self.seeker_fx);
-            self notify(#"hash_6b4bac2b8c2122ef");
+function seeker_mine_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+{
+    if ( newval > 0 )
+    {
+        if ( isdefined( self.seeker_fx ) )
+        {
+            stopfx( localclientnum, self.seeker_fx );
+            self notify( #"hash_6b4bac2b8c2122ef" );
         }
-        if (newval == 1) {
-            self.seeker_fx = util::playfxontag(localclientnum, "player/fx8_plyr_shocked_stage1_3p", self, "tag_origin");
-        } else {
-            self.seeker_fx = util::playfxontag(localclientnum, "player/fx8_plyr_shocked_stage2_3p", self, "tag_origin");
+        
+        if ( newval == 1 )
+        {
+            self.seeker_fx = util::playfxontag( localclientnum, "player/fx8_plyr_shocked_stage1_3p", self, "tag_origin" );
         }
-        self thread function_fc90058e(localclientnum, self.seeker_fx);
+        else
+        {
+            self.seeker_fx = util::playfxontag( localclientnum, "player/fx8_plyr_shocked_stage2_3p", self, "tag_origin" );
+        }
+        
+        self thread function_fc90058e( localclientnum, self.seeker_fx );
     }
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0xa3e23fd3, Offset: 0x5a8
 // Size: 0x5c
-function function_fc90058e(localclientnum, fx) {
-    self waittill(#"death", #"hash_6b4bac2b8c2122ef");
-    if (isdefined(fx)) {
-        stopfx(localclientnum, fx);
+function function_fc90058e( localclientnum, fx )
+{
+    self waittill( #"death", #"hash_6b4bac2b8c2122ef" );
+    
+    if ( isdefined( fx ) )
+    {
+        stopfx( localclientnum, fx );
     }
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0x40010ff, Offset: 0x610
 // Size: 0x8c
-function on_player_corpse(localclientnum, params) {
-    self endon(#"death");
-    if (isdefined(params.player.var_3ade2b96) && params.player.var_3ade2b96) {
-        self util::waittill_dobj(localclientnum);
-        playtagfxset(localclientnum, "weapon_hero_seeker_drone_death", self);
+function on_player_corpse( localclientnum, params )
+{
+    self endon( #"death" );
+    
+    if ( isdefined( params.player.var_3ade2b96 ) && params.player.var_3ade2b96 )
+    {
+        self util::waittill_dobj( localclientnum );
+        playtagfxset( localclientnum, "weapon_hero_seeker_drone_death", self );
     }
 }
 
 // Namespace seeker_mine_mp/seeker_mine
-// Params 2, eflags: 0x0
+// Params 2
 // Checksum 0xcd6b637d, Offset: 0x6a8
 // Size: 0x9c
-function function_a6451cfe(localclientnum, camfx) {
-    self waittill(#"death", #"hash_43f06be9944cddc1");
-    if (isdefined(camfx)) {
-        stopfx(localclientnum, camfx);
+function function_a6451cfe( localclientnum, camfx )
+{
+    self waittill( #"death", #"hash_43f06be9944cddc1" );
+    
+    if ( isdefined( camfx ) )
+    {
+        stopfx( localclientnum, camfx );
     }
-    setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.playerIsShocked"), 0);
+    
+    setuimodelvalue( createuimodel( getuimodelforcontroller( localclientnum ), "hudItems.playerIsShocked" ), 0 );
 }
 
 // Namespace seeker_mine_mp/seeker_mine
 // Params 1, eflags: 0x4
 // Checksum 0x8ebd56d3, Offset: 0x750
 // Size: 0x3c
-function private spawned(localclientnum) {
-    self function_811196d1(1);
-    self seeker_mine::spawned(localclientnum);
+function private spawned( localclientnum )
+{
+    self function_811196d1( 1 );
+    self seeker_mine::spawned( localclientnum );
 }
 

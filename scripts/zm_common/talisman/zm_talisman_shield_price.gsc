@@ -14,23 +14,26 @@
 // Params 0, eflags: 0x2
 // Checksum 0x1fac61cf, Offset: 0xc8
 // Size: 0x3c
-function autoexec __init__system__() {
-    system::register(#"zm_talisman_shield_price", &__init__, undefined, undefined);
+function autoexec __init__system__()
+{
+    system::register( #"zm_talisman_shield_price", &__init__, undefined, undefined );
 }
 
 // Namespace zm_talisman_shield_price/zm_talisman_shield_price
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x97c9c639, Offset: 0x110
 // Size: 0x2c
-function __init__() {
-    zm_talisman::register_talisman("talisman_shield_price", &activate_talisman);
+function __init__()
+{
+    zm_talisman::register_talisman( "talisman_shield_price", &activate_talisman );
 }
 
 // Namespace zm_talisman_shield_price/zm_talisman_shield_price
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x7c72daed, Offset: 0x148
 // Size: 0x12
-function activate_talisman() {
+function activate_talisman()
+{
     self.talisman_shield_price = 500;
 }
 

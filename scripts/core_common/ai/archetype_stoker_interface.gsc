@@ -4,10 +4,11 @@
 #namespace stokerinterface;
 
 // Namespace stokerinterface/archetype_stoker_interface
-// Params 0, eflags: 0x0
+// Params 0
 // Checksum 0x99c5edd9, Offset: 0x88
 // Size: 0x6c
-function registerstokerinterfaceattributes() {
-    ai::registermatchedinterface(#"stoker", #"gravity", "normal", array("low", "normal"), &archetype_stoker::function_e4ef4e27);
+function registerstokerinterfaceattributes()
+{
+    ai::registermatchedinterface( #"stoker", #"gravity", "normal", array( "low", "normal" ), &archetype_stoker::function_e4ef4e27 );
 }
 
