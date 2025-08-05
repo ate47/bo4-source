@@ -1,0 +1,19 @@
+{
+    "name": "#dart_waypoint",
+    "hAlign": "LEFT",
+    "vAlign": "TOP",
+    "waypointOffset": "0, 0, 0",
+    "waypointShowDistance": false,
+    "waypointHideArrow": false,
+    "waypointClamp": false,
+    "waypointFadeWhenTargeted": false,
+    "waypointFadeWhenInCombat": false,
+    "waypointShowDistanceWhenFar": false,
+    "waypointShowDistanceWhenFarDist": 0,
+    "waypointForceOffscreenStyle": false,
+    "waypointHideWhenNotVisible": false,
+    "shouldCullDistance": false,
+    "cullDistance": 0,
+    "hasLowAmmoState": false,
+    "bundle": {}
+}
