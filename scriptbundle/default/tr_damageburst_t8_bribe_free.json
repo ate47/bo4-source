@@ -1,0 +1,10 @@
+{
+    "hash_2703f9fb7e481f6d:hash_c7bd8867": "localized17#hash_2703f9fb7e481f6d",
+    "popupimage": "image#ui_icon_weapon_tr_damageburst_render",
+    "ui_icon_weapon_tr_damageburst_render": "image#ui_icon_weapon_tr_damageburst_render",
+    "nametext": "localized17#weapon/tr_damageburst_t8",
+    "categorytext": "localized17#mpui/bm_bribe",
+    "name": "tr_damageburst_t8_bribe_free",
+    "desctext": "localized17#hash_63b35c0d79a22e51",
+    "weapon/tr_damageburst_t8": "localized17#weapon/tr_damageburst_t8"
+}

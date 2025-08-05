@@ -932,7 +932,7 @@
 #triple_play_feb2019,#loot_ar_fastfire_sig_01,#signature_weapon,#,#,#,#,#,#ultra,#,#ar_fastfire_t8,FALSE
 #triple_play_feb2019,#outfit_warrior_epic2_zero,#palette,#zero,#hash_4ae753fd800cb78a,#hash_4ae753fd800cb78a,#hash_4dd0c84087a30258,#,#epic,#,#,FALSE
 #triple_play_feb2019,#tiers_10,#tiers,#,#,#,#,#,#,#,#,FALSE
-#weaponcamo_cherryblossom_bundle,#camo_dlc1_cherryblossom,#weapon_camo,#,#,#,#,#,#legendary,#,#ar_accurate_t8,FALSE
+#weaponcamo_cherryblossom_bundle,#camo_dlc1_cherryblossom,#weapon_camo,#,#,#,#,#,#legendary,#,#ar_accurate_t8,TRUE
 #weaponcamo_cherryblossom_bundle,#reticle_reflex_8,#reticle,#,#,#,#,#,#legendary,#reflex,#,FALSE
 #weaponcamo_cherryblossom_bundle,#reticle_acog_8,#reticle,#,#,#,#,#,#legendary,#acog,#,FALSE
 #gesture_fishmictoast_bundle,#hash_323b07e80c6cf63c,#gesture,#,#,#,#,#,#legendary,#,#,FALSE
@@ -953,7 +953,7 @@
 #hash_17b59aef50002a57,#loot_ui_icon_stickers_pixel_warriors_5_large,#sticker,#,#,#,#,#hash_614f8c3cb81886b,#common,#,#,FALSE
 #weaponcamo_rocketbox_bundle,#loot_emote_shared_nobody_just_saw_that,#gesture,#,#,#,#,#,#rare,#,#,FALSE
 #weaponcamo_rocketbox_bundle,#outfit_global_warpaint_bundle_rorschach,#hash_248b82a2276a1caf,#,#,#,#,#,#rare,#,#,FALSE
-#weaponcamo_rocketbox_bundle,#camo_dlc1_roadhouse,#weapon_camo,#,#,#,#,#,#rare,#,#ar_accurate_t8,FALSE
+#weaponcamo_rocketbox_bundle,#camo_dlc1_roadhouse,#weapon_camo,#,#,#,#,#,#rare,#,#ar_accurate_t8,TRUE
 #shamrock_shock_and_awe_2019,#hash_47d1994484a8e0db,#crate,#,#,#,#,#,#,#,#,FALSE
 #shamrock_shock_and_awe_2019,#hash_3b21d549ba47f39b,#gesture,#,#,#,#,#,#legendary,#,#,FALSE
 #shamrock_shock_and_awe_2019,#hash_6b61a55b4a345d9c,#hash_248b82a2276a1caf,#,#,#,#,#,#rare,#,#,FALSE
@@ -979,7 +979,7 @@
 #ar_accurate_bundle,#camo_active_headshot_wrapper,#reactive_camo,#,#,#,#,#,#epic,#,#ar_accurate_t8,FALSE
 #quad_play_homewrecker,#melee_demohammer_t8,#melee_weapon,#,#,#,#,#,#ultra,#,#melee_demohammer_t8,TRUE
 #quad_play_homewrecker,#weapon_bribe,#bribe,#,#,#,#,#,#,#,#,FALSE
-#quad_play_homewrecker,#cases_10,#case,#,#,#,#,#,#,#,#,FALSE
+#quad_play_homewrecker,#cases_10,#Case,#,#,#,#,#,#,#,#,FALSE
 #quad_play_homewrecker,#tiers_10,#tiers,#,#,#,#,#,#,#,#,FALSE
 #gesture_dance_bundle,#hash_125eef808a4c7454,#gesture,#,#,#,#,#,#rare,#,#,FALSE
 #gesture_dance_bundle,#hash_7d8f1b96e9c6157c,#gesture,#,#,#,#,#,#rare,#,#,FALSE
@@ -1509,5 +1509,5 @@
 #hash_47df4aad46308f9d,#hash_687bf62dbf432123,#no_dupe_crate,#,#,#,#,#,#,#,#,FALSE
 #hash_1e3f62527c62ab35,#loot_smg_standard_sig_01,#mk2,#,#,#,#,#,#ultra,#,#smg_standard_t8,FALSE
 #hash_1e3f62527c62ab35,#loot_smg_standard_sig_01,#signature_weapon,#,#,#,#,#,#ultra,#,#smg_standard_t8,TRUE
-#hash_1e3f62527c62ab35,#hash_939f09c1eed3f30,#reactive_camo,#,#,#,#,#,#epic,#,#smg_standard_t8,FALSE
+#hash_1e3f62527c62ab35,#camo_active_take_it_personally_wrapper,#reactive_camo,#,#,#,#,#,#epic,#,#smg_standard_t8,FALSE
 #hash_1e3f62527c62ab35,#hash_687bf62dbf432123,#no_dupe_crate,#,#,#,#,#,#,#,#,FALSE

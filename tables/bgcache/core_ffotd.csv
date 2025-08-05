@@ -1,0 +1,6 @@
+type,name
+model,#p7_mou_clock_wall_hour_hand
+model,#p7_mou_clock_wall_minute_hand
+model,#p7_mou_clock_wall_second_hand
+model,#p7_mou_clock_wall
+model,#p8_screen_tactical_artic_01

@@ -6,6 +6,7 @@
 #using scripts\zm\zm_orange_util;
 #using scripts\zm_common\callbacks;
 #using scripts\zm_common\zm;
+#using scripts\zm_common\zm_customgame;
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_zonemgr;
 
@@ -13,13 +14,18 @@
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0x40f7f106, Offset: 0x468
-// Size: 0x13c
+// Checksum 0x237f9229, Offset: 0x470
+// Size: 0x164
 function init()
 {
     level function_e12fb431();
     level function_2b6fe83b();
-    level third_fallen_soldiers_robots_decon_room_cleared();
+    
+    if ( zm_custom::function_901b751c( #"zmpowerdoorstate" ) != 2 )
+    {
+        level third_fallen_soldiers_robots_decon_room_cleared();
+    }
+    
     callback::on_connect( &on_player_connect );
     callback::on_ai_killed( &function_4ff2cfd9 );
     level flag::init( #"hash_6046825f3ec27c48" );
@@ -33,17 +39,21 @@ function init()
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0x623d51e5, Offset: 0x5b0
-// Size: 0x34
+// Checksum 0x3d2a91a6, Offset: 0x5e0
+// Size: 0x5c
 function main()
 {
-    level thread function_63522769();
+    if ( zm_custom::function_901b751c( #"zmpowerdoorstate" ) != 2 )
+    {
+        level thread function_63522769();
+    }
+    
     level thread function_b0e59abe();
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0x934e37f9, Offset: 0x5f0
+// Checksum 0x2a975ab1, Offset: 0x648
 // Size: 0x8c
 function on_player_connect()
 {
@@ -59,7 +69,7 @@ function on_player_connect()
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0x78dfb5b1, Offset: 0x688
+// Checksum 0x682f2bf, Offset: 0x6e0
 // Size: 0x64
 function function_ea67bd7c()
 {
@@ -74,7 +84,7 @@ function function_ea67bd7c()
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0x176df8da, Offset: 0x6f8
+// Checksum 0xa66804d6, Offset: 0x750
 // Size: 0xa0
 function function_e12fb431()
 {
@@ -88,7 +98,7 @@ function function_e12fb431()
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0x5cb23ed1, Offset: 0x7a0
+// Checksum 0xb92b8514, Offset: 0x7f8
 // Size: 0xbc
 function function_e86e864b()
 {
@@ -105,12 +115,12 @@ function function_e86e864b()
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0x996a0e24, Offset: 0x868
+// Checksum 0x3423ba78, Offset: 0x8c0
 // Size: 0x130
 function function_790e5d6()
 {
-    self notify( "6bc3c02292831de5" );
-    self endon( "6bc3c02292831de5" );
+    self notify( "137e016f39e5002f" );
+    self endon( "137e016f39e5002f" );
     self endon( #"death" );
     self endon( #"disconnect" );
     self endon( #"bells_failed" );
@@ -143,12 +153,12 @@ function function_790e5d6()
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0x77c61653, Offset: 0x9a0
+// Checksum 0x95093534, Offset: 0x9f8
 // Size: 0x84
 function function_a0367a9()
 {
-    self notify( "2893aeee5972a277" );
-    self endon( "2893aeee5972a277" );
+    self notify( "277601283555658b" );
+    self endon( "277601283555658b" );
     self endon( #"death" );
     self endon( #"disconnect" );
     self endon( #"bells_complete" );
@@ -160,7 +170,7 @@ function function_a0367a9()
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 1
-// Checksum 0x1b95b1f5, Offset: 0xa30
+// Checksum 0x1a27ce2c, Offset: 0xa88
 // Size: 0x64
 function function_c28621d7( s_params )
 {
@@ -172,7 +182,7 @@ function function_c28621d7( s_params )
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 1
-// Checksum 0x20a32bf, Offset: 0xaa0
+// Checksum 0x32be140d, Offset: 0xaf8
 // Size: 0x112
 function function_b9f47977( e_zombie )
 {
@@ -197,7 +207,7 @@ function function_b9f47977( e_zombie )
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0x5e62aebb, Offset: 0xbc0
+// Checksum 0x5915ac14, Offset: 0xc18
 // Size: 0x2c
 function function_e140ff5c()
 {
@@ -211,7 +221,7 @@ function function_e140ff5c()
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 1
-// Checksum 0x29916329, Offset: 0xbf8
+// Checksum 0xac38764, Offset: 0xc50
 // Size: 0x14c
 function function_4ff2cfd9( s_result )
 {
@@ -234,7 +244,7 @@ function function_4ff2cfd9( s_result )
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0xee78c529, Offset: 0xd50
+// Checksum 0x1165e200, Offset: 0xda8
 // Size: 0x6c
 function function_6c88da5b()
 {
@@ -252,7 +262,7 @@ function function_6c88da5b()
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0x63315c1e, Offset: 0xdc8
+// Checksum 0x5e4d5841, Offset: 0xe20
 // Size: 0x154
 function function_3202188()
 {
@@ -290,7 +300,7 @@ function function_3202188()
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0xf8d12137, Offset: 0xf28
+// Checksum 0x6eb62088, Offset: 0xf80
 // Size: 0x7c
 function function_b0e59abe()
 {
@@ -308,7 +318,7 @@ function function_b0e59abe()
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0xee3aa11d, Offset: 0xfb0
+// Checksum 0x3213e359, Offset: 0x1008
 // Size: 0x1206
 function third_fallen_soldiers_robots_decon_room_cleared()
 {
@@ -696,7 +706,7 @@ function third_fallen_soldiers_robots_decon_room_cleared()
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0x7ddbb66b, Offset: 0x21c0
+// Checksum 0xd1c340b6, Offset: 0x2218
 // Size: 0x12c
 function function_63522769()
 {
@@ -715,7 +725,7 @@ function function_63522769()
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0xa2d1db0f, Offset: 0x22f8
+// Checksum 0x123f4cb5, Offset: 0x2350
 // Size: 0x150
 function function_c7b3bfea()
 {
@@ -753,7 +763,7 @@ function function_c7b3bfea()
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 1
-// Checksum 0x1ed5a6ce, Offset: 0x2450
+// Checksum 0x399bac95, Offset: 0x24a8
 // Size: 0x3a
 function function_5b264d4d( s_result )
 {
@@ -765,7 +775,7 @@ function function_5b264d4d( s_result )
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0xc0c80f14, Offset: 0x2498
+// Checksum 0xa18d5976, Offset: 0x24f0
 // Size: 0x52
 function function_3d9f4eef()
 {
@@ -781,7 +791,7 @@ function function_3d9f4eef()
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0xdb655d8c, Offset: 0x24f8
+// Checksum 0x10a0dc8a, Offset: 0x2550
 // Size: 0x64
 function function_2b6fe83b()
 {
@@ -792,7 +802,7 @@ function function_2b6fe83b()
 
 // Namespace zm_orange_trophies/zm_orange_trophies
 // Params 0
-// Checksum 0x4ad62357, Offset: 0x2568
+// Checksum 0xd0e8bbb2, Offset: 0x25c0
 // Size: 0x158
 function function_82947e72()
 {

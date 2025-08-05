@@ -218,7 +218,7 @@
 163,camo,#hash_5599bf6b64406c6b,#none,#none,1,#none,,#
 164,camo,#hash_5599c46b644074ea,#none,#none,1,#none,,#
 165,camo,#hash_5599c56b6440769d,#none,#none,1,#none,,#
-166,camo,#hash_939f09c1eed3f30,#activecamoinfo_t8_take_it_personally,#activecamoinfo_t8_take_it_personally_zm,1,#activecamoinfo_t8_take_it_personally_wz,,#hash_5bbcc9716511b01f
+166,camo,#hash_939f09c1eed3f30,#activecamoinfo_t8_take_it_personally,#activecamoinfo_t8_take_it_personally_zm,1,#activecamoinfo_t8_take_it_personally_wz,,#
 167,camo,#hash_66ea94561947b40d,#activecamoinfo_t8_showstopper,#activecamoinfo_t8_showstopper_zm,1,#activecamoinfo_t8_showstopper_wz,,#
 168,camo,#hash_1f3b04a45daf0a05,#activecamoinfo_t8_headshot,#activecamoinfo_t8_headshot_zm,1,#activecamoinfo_t8_headshot_wz,,#ui_icon_blackmarket_promos_ar_accurate_active_stream
 169,camo,#hash_6bfb1fd9ff38ae98,#activecamoinfo_t8_headshot,#activecamoinfo_t8_headshot_zm,1,#activecamoinfo_t8_headshot_wz,,#ui_icon_blackmarket_promos_ar_accurate_active_stream
@@ -235,7 +235,7 @@
 180,camo,#hash_6a201ff17590566d,#activecamoinfo_t8_ar_accurate,#activecamoinfo_t8_ar_accurate_zm,1,#activecamoinfo_t8_ar_accurate_wz,,#
 181,camo,#hash_34c56819e194dd8,#activecamoinfo_t8_kill_counter,#activecamoinfo_t8_kill_counter_zm,1,#activecamoinfo_t8_kill_counter_wz,,#ui_icon_blackmarket_promos_lmg_standard_camo_active_stream
 182,camo,#hash_34c59819e1952f1,#activecamoinfo_t8_kill_counter,#activecamoinfo_t8_kill_counter_zm,1,#activecamoinfo_t8_kill_counter_wz,,#ui_icon_blackmarket_promos_lmg_standard_camo_active_stream
-183,camo,#camo_active_take_it_personally_wrapper,#activecamoinfo_t8_take_it_personally,#activecamoinfo_t8_take_it_personally_zm,1,#activecamoinfo_t8_take_it_personally_wz,,#
+183,camo,#camo_active_take_it_personally_wrapper,#activecamoinfo_t8_take_it_personally,#activecamoinfo_t8_take_it_personally_zm,1,#activecamoinfo_t8_take_it_personally_wz,,#hash_5bbcc9716511b01f
 184,camo,#hash_3df0451d05fb1920,#activecamoinfo_t8_showstopper,#activecamoinfo_t8_showstopper_zm,1,#activecamoinfo_t8_showstopper_wz,,#
 185,camo,#hash_3df0461d05fb1ad3,#activecamoinfo_t8_showstopper,#activecamoinfo_t8_showstopper_zm,1,#activecamoinfo_t8_showstopper_wz,,#
 186,camo,#hash_6bfb20d9ff38b04b,#activecamoinfo_t8_headshot,#activecamoinfo_t8_headshot_zm,1,#activecamoinfo_t8_headshot_wz,,#ui_icon_blackmarket_promos_ar_accurate_active_stream
@@ -386,7 +386,7 @@
 331,camo,#hash_653827a525b9342b,#activecamoinfo_t8_gold_classic,#none,1,#none,,#
 332,camo,#hash_4d1c235479f5f229,#activecamoinfo_t8_diamond_classic,#none,1,#none,,#
 333,camo,#hash_7dc816851dae7fec,#activecamoinfo_t8_darkmatter_classic_red,#none,1,#none,,#
-334,camo,#hash_4983eb84df2e8b95,#activecamoinfo_t8_darkmatter_classic_dark,#none,1,#none,,#hash_2f63c44c8601c3c4
+334,camo,#hash_4983eb84df2e8b95,#activecamoinfo_t8_darkmatter_classic_dark,#none,1,#none,,#	
 335,camo,#hash_2bdcc1eabcbc6e80,#activecamoinfo_t8_sig_sniper_fastrechamber_western,#activecamoinfo_t8_sig_sniper_fastrechamber_western_zm,1,#activecamoinfo_t8_sig_sniper_fastrechamber_western_wz,,#
 336,camo,#camo_active_sig_smg_fastburst_diy_base,#activecamoinfo_t8_sig_smg_fastburst_diy,#activecamoinfo_t8_sig_smg_fastburst_diy_zm,1,#activecamoinfo_t8_sig_smg_fastburst_diy_wz,,#
 337,camo,#camo_active_sig_ar_standard_adventure_base,#activecamoinfo_t8_sig_ar_standard_adventure,#activecamoinfo_t8_sig_ar_standard_adventure_zm,1,#activecamoinfo_t8_sig_ar_standard_adventure_wz,,#

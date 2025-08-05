@@ -1,0 +1,10 @@
+{
+    "hash_2703f9fb7e481f6d:hash_c7bd8867": "localized17#hash_2703f9fb7e481f6d",
+    "popupimage": "image#ui_icon_weapon_smg_minigun_render",
+    "ui_icon_weapon_smg_minigun_render": "image#ui_icon_weapon_smg_minigun_render",
+    "nametext": "localized17#weapon/smg_minigun_t8",
+    "categorytext": "localized17#mpui/bm_bribe",
+    "name": "smg_minigun_t8_bribe_free",
+    "desctext": "localized17#hash_4b9655a6c68b3118",
+    "weapon/smg_minigun_t8": "localized17#weapon/smg_minigun_t8"
+}

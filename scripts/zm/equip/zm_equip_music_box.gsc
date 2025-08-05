@@ -14,7 +14,7 @@
 
 // Namespace music_box/zm_equip_music_box
 // Params 0, eflags: 0x2
-// Checksum 0x910cedcd, Offset: 0x188
+// Checksum 0xba50a0d2, Offset: 0x188
 // Size: 0x3c
 function autoexec __init__system__()
 {
@@ -23,7 +23,7 @@ function autoexec __init__system__()
 
 // Namespace music_box/zm_equip_music_box
 // Params 0
-// Checksum 0x8298bbc3, Offset: 0x1d0
+// Checksum 0xc772539c, Offset: 0x1d0
 // Size: 0x1ce
 function __init__()
 {
@@ -47,7 +47,7 @@ function __init__()
 
 // Namespace music_box/zm_equip_music_box
 // Params 1
-// Checksum 0xab485c6a, Offset: 0x3a8
+// Checksum 0x4c17517a, Offset: 0x3a8
 // Size: 0x1cc
 function on_grenade_fired( s_params )
 {
@@ -75,7 +75,7 @@ function on_grenade_fired( s_params )
 
 // Namespace music_box/zm_equip_music_box
 // Params 2
-// Checksum 0x6175c0cc, Offset: 0x580
+// Checksum 0x89b9129e, Offset: 0x580
 // Size: 0x91c
 function function_9d9bff80( var_2fe3186e, attacker )
 {
@@ -182,7 +182,7 @@ function function_9d9bff80( var_2fe3186e, attacker )
 
 // Namespace music_box/zm_equip_music_box
 // Params 0
-// Checksum 0x8ac6f033, Offset: 0xea8
+// Checksum 0xcc4aaae5, Offset: 0xea8
 // Size: 0x84
 function function_6b8c9160()
 {
@@ -198,7 +198,7 @@ function function_6b8c9160()
 
 // Namespace music_box/zm_equip_music_box
 // Params 1
-// Checksum 0x7e671cc2, Offset: 0xf38
+// Checksum 0x19be8fcc, Offset: 0xf38
 // Size: 0x90, Type: bool
 function function_3adb94b4( e_zombie )
 {
@@ -217,8 +217,8 @@ function function_3adb94b4( e_zombie )
 
 // Namespace music_box/zm_equip_music_box
 // Params 1, eflags: 0x4
-// Checksum 0xb7031012, Offset: 0xfd0
-// Size: 0xb8
+// Checksum 0x97defdf, Offset: 0xfd0
+// Size: 0xbe
 function private function_3710157f( e_zombie )
 {
     level endon( #"end_game" );
@@ -235,13 +235,14 @@ function private function_3710157f( e_zombie )
             }
             
             self scene::play( #"ai_zm_ora_zombie_music_box_rise", "rise", e_zombie );
+            waitframe( 1 );
         }
     }
 }
 
 // Namespace music_box/zm_equip_music_box
 // Params 1
-// Checksum 0xcef9735a, Offset: 0x1090
+// Checksum 0x48bd6d4a, Offset: 0x1098
 // Size: 0x3c
 function function_da6a44df( s_result )
 {
@@ -253,7 +254,7 @@ function function_da6a44df( s_result )
 
 // Namespace music_box/zm_equip_music_box
 // Params 0
-// Checksum 0x1142c4c1, Offset: 0x10d8
+// Checksum 0x832140c8, Offset: 0x10e0
 // Size: 0x64
 function function_4ada560e()
 {
@@ -271,7 +272,7 @@ function function_4ada560e()
 
 // Namespace music_box/zm_equip_music_box
 // Params 1
-// Checksum 0xf1be5b93, Offset: 0x1148
+// Checksum 0x81b7f9b2, Offset: 0x1150
 // Size: 0x12c, Type: bool
 function _second_compass_map_mp_ruins( e_owner )
 {
@@ -301,7 +302,7 @@ function _second_compass_map_mp_ruins( e_owner )
 
 // Namespace music_box/zm_equip_music_box
 // Params 0
-// Checksum 0x97de8904, Offset: 0x1280
+// Checksum 0x3f5d659, Offset: 0x1288
 // Size: 0x194
 function function_9a83be2b()
 {
@@ -326,7 +327,7 @@ function function_9a83be2b()
 
 // Namespace music_box/zm_equip_music_box
 // Params 1
-// Checksum 0x4a391841, Offset: 0x1420
+// Checksum 0xe0cefc1f, Offset: 0x1428
 // Size: 0x2e
 function function_cdb0d1e( e_zombie )
 {

@@ -8,11 +8,174 @@
 
 // Namespace mp_mountain2/level_init
 // Params 1, eflags: 0x40
-// Checksum 0xc9f9b9f7, Offset: 0x148
-// Size: 0x206
+// Checksum 0x9d84c9ca, Offset: 0x158
+// Size: 0xafe
 function event_handler[level_init] main( eventstruct )
 {
     load::main();
+    screen = spawn( "script_model", ( 2794, -860, 397 ) );
+    
+    if ( isdefined( screen ) )
+    {
+        screen setmodel( #"p8_screen_tactical_artic_01" );
+        screen.angles = ( 0, 360, 0 );
+    }
+    
+    paris = spawn( "script_model", ( 2880, -579, 401 ) );
+    
+    if ( isdefined( paris ) )
+    {
+        paris setmodel( #"p7_mou_clock_wall" );
+    }
+    
+    parishour = spawn( "script_model", ( 2880, -580, 412.75 ) );
+    
+    if ( isdefined( parishour ) )
+    {
+        parishour setmodel( #"p7_mou_clock_wall_hour_hand" );
+        parishour.angles = ( 270, 0, 0 );
+    }
+    
+    var_371a2ab2 = spawn( "script_model", ( 2880, -580, 412.75 ) );
+    
+    if ( isdefined( var_371a2ab2 ) )
+    {
+        var_371a2ab2 setmodel( #"p7_mou_clock_wall_minute_hand" );
+        var_371a2ab2.angles = ( 60.0807, 180, 180 );
+    }
+    
+    var_fffeb20c = spawn( "script_model", ( 2880, -580, 412.75 ) );
+    
+    if ( isdefined( var_fffeb20c ) )
+    {
+        var_fffeb20c setmodel( #"p7_mou_clock_wall_second_hand" );
+        var_fffeb20c.angles = ( 300.14, 180, 180 );
+    }
+    
+    moscow = spawn( "script_model", ( 2912, -579, 401 ) );
+    
+    if ( isdefined( moscow ) )
+    {
+        moscow setmodel( #"p7_mou_clock_wall" );
+    }
+    
+    moscowhour = spawn( "script_model", ( 2912, -580, 412.75 ) );
+    
+    if ( isdefined( moscowhour ) )
+    {
+        moscowhour setmodel( #"p7_mou_clock_wall_hour_hand" );
+        moscowhour.angles = ( 329.372, 0, 0 );
+    }
+    
+    var_baff123c = spawn( "script_model", ( 2912, -580, 412.75 ) );
+    
+    if ( isdefined( var_baff123c ) )
+    {
+        var_baff123c setmodel( #"p7_mou_clock_wall_minute_hand" );
+        var_baff123c.angles = ( 29.6108, 359.999, -0.000344339 );
+    }
+    
+    var_514f5b9e = spawn( "script_model", ( 2912, -580, 412.75 ) );
+    
+    if ( isdefined( var_514f5b9e ) )
+    {
+        var_514f5b9e setmodel( #"p7_mou_clock_wall_second_hand" );
+        var_514f5b9e.angles = ( 29.9897, 179.999, -180 );
+    }
+    
+    tokyo = spawn( "script_model", ( 2944, -579, 401 ) );
+    
+    if ( isdefined( tokyo ) )
+    {
+        tokyo setmodel( #"p7_mou_clock_wall" );
+    }
+    
+    var_2a4a4014 = spawn( "script_model", ( 2944, -580, 412.75 ) );
+    
+    if ( isdefined( var_2a4a4014 ) )
+    {
+        var_2a4a4014 setmodel( #"p7_mou_clock_wall_hour_hand" );
+        var_2a4a4014.angles = ( 270, 0, 0 );
+    }
+    
+    var_4bdd4662 = spawn( "script_model", ( 2944, -580, 412.75 ) );
+    
+    if ( isdefined( var_4bdd4662 ) )
+    {
+        var_4bdd4662 setmodel( #"p7_mou_clock_wall_minute_hand" );
+        var_4bdd4662.angles = ( 29.6108, 359.999, -0.000344339 );
+    }
+    
+    var_342d094f = spawn( "script_model", ( 2944, -580, 412.75 ) );
+    
+    if ( isdefined( var_342d094f ) )
+    {
+        var_342d094f setmodel( #"p7_mou_clock_wall_second_hand" );
+        var_342d094f.angles = ( 60.0097, 179.999, -180 );
+    }
+    
+    newyork = spawn( "script_model", ( 2976, -579, 401 ) );
+    
+    if ( isdefined( newyork ) )
+    {
+        newyork setmodel( #"p7_mou_clock_wall" );
+    }
+    
+    var_242acc4f = spawn( "script_model", ( 2976, -580, 412.75 ) );
+    
+    if ( isdefined( var_242acc4f ) )
+    {
+        var_242acc4f setmodel( #"p7_mou_clock_wall_hour_hand" );
+        var_242acc4f.angles = ( 29.7827, 180, -180 );
+    }
+    
+    var_46519b3f = spawn( "script_model", ( 2976, -580, 412.75 ) );
+    
+    if ( isdefined( var_46519b3f ) )
+    {
+        var_46519b3f setmodel( #"p7_mou_clock_wall_minute_hand" );
+        var_46519b3f.angles = ( 300.197, 180.003, 179.996 );
+    }
+    
+    var_d2742cd4 = spawn( "script_model", ( 2976, -580, 412.75 ) );
+    
+    if ( isdefined( var_d2742cd4 ) )
+    {
+        var_d2742cd4 setmodel( #"p7_mou_clock_wall_second_hand" );
+        var_d2742cd4.angles = ( 360, 179.999, -179.999 );
+    }
+    
+    london = spawn( "script_model", ( 3008, -579, 401 ) );
+    
+    if ( isdefined( london ) )
+    {
+        london setmodel( #"p7_mou_clock_wall" );
+    }
+    
+    londonhour = spawn( "script_model", ( 3008, -580, 412.75 ) );
+    
+    if ( isdefined( londonhour ) )
+    {
+        londonhour setmodel( #"p7_mou_clock_wall_hour_hand" );
+        londonhour.angles = ( 329.47, 180, 180 );
+    }
+    
+    var_31916926 = spawn( "script_model", ( 3008, -580, 412.75 ) );
+    
+    if ( isdefined( var_31916926 ) )
+    {
+        var_31916926 setmodel( #"p7_mou_clock_wall_minute_hand" );
+        var_31916926.angles = ( 29.8036, 359.997, -0.00414518 );
+    }
+    
+    var_263824e8 = spawn( "script_model", ( 3008, -580, 412.75 ) );
+    
+    if ( isdefined( var_263824e8 ) )
+    {
+        var_263824e8 setmodel( #"p7_mou_clock_wall_second_hand" );
+        var_263824e8.angles = ( 59.6511, 0.00129378, 0.000693975 );
+    }
+    
     compass::setupminimap( "" );
     level.cleandepositpoints = array( ( 1860, -140, 127 ), ( 3004, -168, 326 ), ( 4008, -888, 327 ), ( 3270, -1960, 464 ), ( 3875, -1580, 327.75 ) );
     spawncollision( "collision_clip_wall_128x128x10", "collider", ( 2171, -475, 392 ), ( 0, 0, 0 ) );
@@ -31,7 +194,7 @@ function event_handler[level_init] main( eventstruct )
 
 // Namespace mp_mountain2/mp_mountain2
 // Params 0
-// Checksum 0x76817d5d, Offset: 0x358
+// Checksum 0xd7c63b02, Offset: 0xc60
 // Size: 0x1d6
 function gondola_sway()
 {
@@ -54,7 +217,7 @@ function gondola_sway()
 
 // Namespace mp_mountain2/mp_mountain2
 // Params 0
-// Checksum 0x679beb05, Offset: 0x538
+// Checksum 0x74cd07ef, Offset: 0xe40
 // Size: 0x1dc
 function glass_exploder_init()
 {
@@ -97,7 +260,7 @@ function glass_exploder_init()
 
 // Namespace mp_mountain2/mp_mountain2
 // Params 0
-// Checksum 0xf741e4ff, Offset: 0x720
+// Checksum 0xfc827c8, Offset: 0x1028
 // Size: 0xba
 function glass_group_exploder_think()
 {
@@ -124,7 +287,7 @@ function glass_group_exploder_think()
 
 // Namespace mp_mountain2/mp_mountain2
 // Params 1
-// Checksum 0xa880e8d6, Offset: 0x7e8
+// Checksum 0x952dc657, Offset: 0x10f0
 // Size: 0x188
 function glass_exploder_think( exploders )
 {

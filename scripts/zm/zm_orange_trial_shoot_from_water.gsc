@@ -9,7 +9,7 @@
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
 // Params 0, eflags: 0x2
-// Checksum 0x91c4966c, Offset: 0xe8
+// Checksum 0x8476ed18, Offset: 0xe8
 // Size: 0x3c
 function autoexec __init__system__()
 {
@@ -18,7 +18,7 @@ function autoexec __init__system__()
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
 // Params 0
-// Checksum 0x322c3c9, Offset: 0x130
+// Checksum 0x4f80b1bf, Offset: 0x130
 // Size: 0x5c
 function __init__()
 {
@@ -32,7 +32,7 @@ function __init__()
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
 // Params 0, eflags: 0x4
-// Checksum 0x23e951fb, Offset: 0x198
+// Checksum 0x176e1326, Offset: 0x198
 // Size: 0xc8
 function private on_begin()
 {
@@ -48,7 +48,7 @@ function private on_begin()
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
 // Params 1, eflags: 0x4
-// Checksum 0xfc59a0bc, Offset: 0x268
+// Checksum 0x426c24ed, Offset: 0x268
 // Size: 0xe2
 function private on_end( round_reset )
 {
@@ -66,7 +66,7 @@ function private on_end( round_reset )
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
 // Params 0, eflags: 0x4
-// Checksum 0xd303da62, Offset: 0x358
+// Checksum 0xf2983a14, Offset: 0x358
 // Size: 0x2f2
 function private function_9e0e99e1()
 {
@@ -133,8 +133,8 @@ function private function_9e0e99e1()
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
 // Params 1, eflags: 0x4
-// Checksum 0x2ada9956, Offset: 0x658
-// Size: 0x1f8
+// Checksum 0xe43d1d6e, Offset: 0x658
+// Size: 0x1e0
 function private function_33f0ddd3( s_event )
 {
     if ( s_event.event === "give_weapon" || s_event.event === "give_weapon_alt" || s_event.event == "give_weapon_dual" )
@@ -149,8 +149,6 @@ function private function_33f0ddd3( s_event )
         
         if ( !var_f2b6fe6e )
         {
-            self zm_trial_util::function_bf710271();
-            
             foreach ( weapon in self getweaponslist( 1 ) )
             {
                 if ( zm_loadout::function_2ff6913( weapon ) == 1 )

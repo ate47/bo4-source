@@ -45,7 +45,7 @@
 
 // Namespace zm_orange_trials/zm_orange_trials
 // Params 0
-// Checksum 0x34608d4c, Offset: 0x248
+// Checksum 0xc90997b4, Offset: 0x248
 // Size: 0xde
 function preload()
 {
@@ -58,8 +58,8 @@ function preload()
 
 // Namespace zm_orange_trials/zm_orange_trials
 // Params 0
-// Checksum 0x5c701c7a, Offset: 0x330
-// Size: 0x84c
+// Checksum 0xa5686edf, Offset: 0x330
+// Size: 0x83c
 function main()
 {
     level endon( #"end_game" );
@@ -141,7 +141,6 @@ function main()
             level clientfield::set( "" + #"lava_control", 0 );
             level clientfield::set( "" + #"hash_5e69ee96304ec40b", 0 );
             level.var_71435e8 = 0;
-            array::thread_all( level.var_35e33dbe, &zm_orange_mq_hell::function_a8fd16d0 );
             level flag::clear( #"hash_198bc172b5af7f25" );
             level flag::clear( #"hash_69a9d00e65ee6c40" );
         }
@@ -154,7 +153,7 @@ function main()
         {
             if ( player.var_7dc2d507 === 1 )
             {
-                wait 0.5;
+                waitframe( 2 );
                 player notify( #"hash_53bfad7081c69dee" );
                 player.var_7dc2d507 = 0;
                 player zm_orange_water::function_46c3bbf7();
@@ -174,13 +173,15 @@ function main()
                 waitframe( 2 );
                 player thread zm_orange_water::function_ea0c7ed8();
             }
+            
+            player allowmelee( 1 );
         }
     }
 }
 
 // Namespace zm_orange_trials/zm_orange_trials
 // Params 1
-// Checksum 0xc225fad5, Offset: 0xb88
+// Checksum 0xeb49efd8, Offset: 0xb78
 // Size: 0x17c
 function function_ff59ba7a( is_game_over )
 {
@@ -203,8 +204,8 @@ function function_ff59ba7a( is_game_over )
 
 // Namespace zm_orange_trials/zm_orange_trials
 // Params 0
-// Checksum 0xbf3ee421, Offset: 0xd10
-// Size: 0x53c
+// Checksum 0xa935f14c, Offset: 0xd00
+// Size: 0x794
 function function_b4bd25ef()
 {
     switch ( level.round_number )
@@ -214,8 +215,16 @@ function function_b4bd25ef()
             {
                 self enableoffhandspecial();
                 self enableoffhandweapons();
-                w_current = self getcurrentweapon();
-                self unlockweapon( w_current );
+                
+                foreach ( weapon in self getweaponslist( 1 ) )
+                {
+                    self unlockweapon( weapon );
+                    
+                    if ( weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone )
+                    {
+                        self unlockweapon( weapon.dualwieldweapon );
+                    }
+                }
             }
             
             break;
@@ -223,11 +232,18 @@ function function_b4bd25ef()
             if ( isdefined( level.var_526d919 ) )
             {
                 self zm_trial_restrict_loadout::function_f0e03d3( 0 );
-                w_current = self getcurrentweapon();
                 
-                if ( isdefined( level.var_526d919[ w_current.name ] ) )
+                foreach ( weapon in self getweaponslist( 1 ) )
                 {
-                    self unlockweapon( w_current );
+                    if ( isdefined( level.var_526d919[ weapon.name ] ) )
+                    {
+                        self unlockweapon( weapon );
+                        
+                        if ( weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone )
+                        {
+                            self unlockweapon( weapon.dualwieldweapon );
+                        }
+                    }
                 }
             }
             
@@ -236,11 +252,18 @@ function function_b4bd25ef()
             if ( isdefined( level.var_526d919 ) )
             {
                 self zm_trial_restrict_loadout::function_f0e03d3( 0 );
-                w_current = self getcurrentweapon();
                 
-                if ( isdefined( level.var_526d919[ w_current.name ] ) )
+                foreach ( weapon in self getweaponslist( 1 ) )
                 {
-                    self unlockweapon( w_current );
+                    if ( isdefined( level.var_526d919[ weapon.name ] ) )
+                    {
+                        self unlockweapon( weapon );
+                        
+                        if ( weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone )
+                        {
+                            self unlockweapon( weapon.dualwieldweapon );
+                        }
+                    }
                 }
             }
             
@@ -281,11 +304,18 @@ function function_b4bd25ef()
             if ( isdefined( level.var_526d919 ) )
             {
                 self zm_trial_restrict_loadout::function_f0e03d3( 0 );
-                w_current = self getcurrentweapon();
                 
-                if ( isdefined( level.var_526d919[ w_current.name ] ) )
+                foreach ( weapon in self getweaponslist( 1 ) )
                 {
-                    self unlockweapon( w_current );
+                    if ( isdefined( level.var_526d919[ weapon.name ] ) )
+                    {
+                        self unlockweapon( weapon );
+                        
+                        if ( weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone )
+                        {
+                            self unlockweapon( weapon.dualwieldweapon );
+                        }
+                    }
                 }
             }
             
@@ -313,8 +343,8 @@ function function_b4bd25ef()
 
 // Namespace zm_orange_trials/zm_orange_trials
 // Params 0
-// Checksum 0xa387c890, Offset: 0x1258
-// Size: 0x2ac
+// Checksum 0xb68d98bd, Offset: 0x14a0
+// Size: 0x2d4
 function function_ff0b7907()
 {
     level clientfield::set( "" + #"hash_72b5b0359ca48427", 1 );
@@ -336,7 +366,13 @@ function function_ff0b7907()
         }
         
         level.var_71435e8 = 1;
-        array::thread_all( level.var_35e33dbe, &zm_orange_mq_hell::function_a8fd16d0 );
+        
+        if ( level.var_43c25ad2 !== 1 )
+        {
+            array::thread_all( level.var_35e33dbe, &zm_orange_mq_hell::function_a8fd16d0 );
+            level.var_43c25ad2 = 1;
+        }
+        
         level flag::set( #"hash_198bc172b5af7f25" );
         level flag::set( #"hash_69a9d00e65ee6c40" );
     }
@@ -346,7 +382,7 @@ function function_ff0b7907()
 
 // Namespace zm_orange_trials/zm_orange_trials
 // Params 0
-// Checksum 0xea5b4026, Offset: 0x1510
+// Checksum 0x48137b6, Offset: 0x1780
 // Size: 0x1bc
 function function_7206d28()
 {
@@ -378,7 +414,7 @@ function function_7206d28()
 
 // Namespace zm_orange_trials/zm_orange_trials
 // Params 0
-// Checksum 0xd95e1a6c, Offset: 0x16d8
+// Checksum 0x99663822, Offset: 0x1948
 // Size: 0x66
 function function_b93ad88d()
 {
@@ -390,7 +426,7 @@ function function_b93ad88d()
 
 // Namespace zm_orange_trials/zm_orange_trials
 // Params 0
-// Checksum 0xc3996829, Offset: 0x1748
+// Checksum 0x6a7602ca, Offset: 0x19b8
 // Size: 0x7c
 function function_53a1ecb9()
 {
@@ -406,12 +442,12 @@ function function_53a1ecb9()
 
 // Namespace zm_orange_trials/zm_orange_trials
 // Params 0
-// Checksum 0x1d793d71, Offset: 0x17d0
-// Size: 0x224
+// Checksum 0x66047ced, Offset: 0x1a40
+// Size: 0x23c
 function blood_buff()
 {
-    self notify( "1519ab94737ffc14" );
-    self endon( "1519ab94737ffc14" );
+    self notify( "6c9578c1610db2cd" );
+    self endon( "6c9578c1610db2cd" );
     self val::set( #"bludy", "takedamage", 0 );
     self val::set( #"bludy", "allowdeath", 0 );
     level.e_bludy = self;
@@ -426,39 +462,48 @@ function blood_buff()
     self.instakill_func = &zm_powerups::function_16c2586a;
     wait 0.5;
     
-    if ( isdefined( self ) && isalive( self ) )
+    while ( !isdefined( self ) || isdefined( self ) && !isalive( self ) )
     {
-        self thread function_8532d13f();
-        self zombie_utility::set_zombie_run_cycle( "run" );
-        level waittill( #"hash_7646638df88a3656" );
-        self val::reset( #"bludy", "takedamage" );
-        self val::reset( #"bludy", "allowdeath" );
-        
-        if ( isdefined( self ) )
-        {
-            level.var_4adebdfc unlink();
-            level.var_4adebdfc.origin = level.var_63a35083[ 0 ].origin;
-            self zombie_utility::zombie_head_gib();
-        }
+        waitframe( 1 );
+    }
+    
+    self thread function_8532d13f();
+    self zombie_utility::set_zombie_run_cycle( "run" );
+    level waittill( #"hash_7646638df88a3656" );
+    self val::reset( #"bludy", "takedamage" );
+    self val::reset( #"bludy", "allowdeath" );
+    
+    if ( isdefined( self ) )
+    {
+        level.var_4adebdfc unlink();
+        level.var_4adebdfc.origin = level.var_63a35083[ 0 ].origin;
+        self zombie_utility::zombie_head_gib();
     }
 }
 
 // Namespace zm_orange_trials/zm_orange_trials
 // Params 0
-// Checksum 0x5cde8ca, Offset: 0x1a00
-// Size: 0x7c
+// Checksum 0xd61dd7c1, Offset: 0x1c88
+// Size: 0xfc
 function function_8532d13f()
 {
     self endon( #"death" );
+    
+    if ( isdefined( level.var_4adebdfc ) )
+    {
+        level.var_4adebdfc clientfield::set( "" + #"hash_10906b9ce905bda8", 0 );
+    }
+    
     wait 3;
     origin = self gettagorigin( "j_spine4" );
     level.var_4adebdfc.origin = origin;
     level.var_4adebdfc linkto( self, "j_spine4" );
+    level.var_4adebdfc clientfield::set( "" + #"hash_10906b9ce905bda8", level.var_9e3c632e );
 }
 
 // Namespace zm_orange_trials/zm_orange_trials
 // Params 10, eflags: 0x4
-// Checksum 0x8572e649, Offset: 0x1a88
+// Checksum 0xfd3eba9d, Offset: 0x1d90
 // Size: 0xb8
 function private function_dcebc908( einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime )
 {
