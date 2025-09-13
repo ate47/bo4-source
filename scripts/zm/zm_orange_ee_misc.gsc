@@ -409,7 +409,7 @@ function function_8b0417eb()
 // Params 1
 // Checksum 0x7c55c29e, Offset: 0x1930
 // Size: 0x4c
-function function_9e857126( params )
+function function_9e857126( Params )
 {
     if ( zombie_utility::get_current_zombie_count() == 1 && level.zombie_total == 0 )
     {

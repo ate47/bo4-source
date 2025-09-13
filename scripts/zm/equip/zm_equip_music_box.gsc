@@ -63,7 +63,7 @@ function on_grenade_fired( s_params )
         e_grenade.weapon = s_params.weapon;
         s_waitresult = s_params.projectile waittill( #"stationary" );
         
-        if ( e_grenade _second_compass_map_mp_ruins( self ) )
+        if ( e_grenade in_bounds( self ) )
         {
             e_grenade thread function_9d9bff80( s_waitresult.position, self );
             return;
@@ -174,7 +174,7 @@ function function_9d9bff80( var_2fe3186e, attacker )
     
     e_sam playsound( "vox_musicbox_end_sama_" + randomint( 3 ) );
     wait 1.5;
-    e_sam thread scene::stop();
+    e_sam thread scene::Stop();
     e_sam delete();
     self.var_1a61db89 delete();
     level thread function_6b8c9160();
@@ -265,7 +265,7 @@ function function_4ada560e()
     
     if ( isdefined( self.e_floater ) )
     {
-        self.e_floater thread scene::stop();
+        self.e_floater thread scene::Stop();
         self.e_floater delete();
     }
 }
@@ -274,7 +274,7 @@ function function_4ada560e()
 // Params 1
 // Checksum 0x81b7f9b2, Offset: 0x1150
 // Size: 0x12c, Type: bool
-function _second_compass_map_mp_ruins( e_owner )
+function in_bounds( e_owner )
 {
     if ( ispointonnavmesh( self.origin, 60 ) )
     {

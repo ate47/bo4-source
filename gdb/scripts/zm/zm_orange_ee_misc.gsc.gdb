@@ -1,6 +1,6 @@
 NAME scripts\zm\zm_orange_ee_misc.gsc
 VERSION 0
-CHECKSUM 0x881b9cad
+CHECKSUM 0xf82e90fe
 ######################################################
 ####################  DEV STRINGS  ###################
 ######################################################
@@ -30,4 +30,4 @@ DEVBLOCK 0x2a3a
 # zm_orange_ee_misc::function_6ad0e23f@196
 DEVBLOCK 0x2abe
 # zm_orange_ee_misc::edge_watcher@134
-DEVBLOCK 0x3574
+DEVBLOCK 0x358c
