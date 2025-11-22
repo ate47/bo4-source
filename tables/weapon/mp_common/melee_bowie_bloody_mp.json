@@ -1,0 +1,54 @@
+{
+    "name": "#melee_bowie_bloody_mp",
+    "baseWeapon": "#melee_bowie_bloody",
+    "displayname": "#weapon/bowie",
+    "xhash_70": "#melee_bowie",
+    "streamkey": "#hash_7eb3dc5c8019c5c2",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "scrstr_118c": "tag_fx",
+    "scrstr_1190": "tag_fx",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_weapon_right",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "grenadeweapon": 0,
+    "dualwieldweapon": 0,
+    "dualWieldWeaponIndex": 0,
+    "altWeaponIndex": 0,
+    "itemIndex": 0,
+    "#hash_5b73038c": 1,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "MULTIPLAYER",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "#hash_965cc0b3": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "sound800": "#hash_5fd68d0455a0b8",
+    "sound810": "#hash_5fd68d0455a0b8",
+    "tunables1": "#hash_2edfb7494b062e41",
+    "attachments": [
+        "#defaultattachment"
+    ],
+    "attachmentUniques": [
+        "#hash_25964a446ed086e8"
+    ],
+    "sharedWeaponSounds": "#bowie",
+    "viewmodel": [
+        "#wpn_t8_knife_bowie_bloody_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_knife_bowie_bloody_world"
+    ],
+    "inventoryIconZm": "#ui_icon_weapon_hud_melee_bowie",
+    "image_e90": "#ui_icon_obit_melee_bowie",
+    "fireRumble": "#defaultweapon_melee",
+    "fx_be0": "#hash_496068abb95ab99e",
+    "fx_be8": "#hash_3259aa4abd8d4b2a",
+    "normalImpactFX": "#hash_a5f3e55b8e1070ab"
+}

@@ -1,0 +1,52 @@
+{
+    "name": "#remote_missile_mp",
+    "baseWeapon": "#remote_missile",
+    "displayname": "#killstreak/remote_missile",
+    "xhash_70": "#remote_missile",
+    "streamkey": "#hash_19decfe68dc0e9ae",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_inhand",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "grenadeweapon": 0,
+    "dualwieldweapon": 0,
+    "dualWieldWeaponIndex": 0,
+    "altWeaponIndex": 0,
+    "itemIndex": 0,
+    "#hash_5b73038c": 1,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "MULTIPLAYER",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "#hash_965cc0b3": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "gadgetreadysoundplayer": "#hash_1f6dbd3ca241f0c6",
+    "sound660": "#uin_unavailable_charging",
+    "projexplosionsound": "#hash_20cda79cd396562",
+    "tunables1": "#remote_missile_tunables_mp",
+    "crateObjective": "#hash_a2a7bf19aeaae",
+    "customsettings": "#remote_missile_settings",
+    "#hash_2e4a8800": "#remote_missile_scoreevents",
+    "#hash_22082a57": "#hash_5d10f8f9ff090e5b",
+    "viewmodel": [
+        "#wpn_t8_eqp_datapad_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_eqp_datapad_world"
+    ],
+    "stowedmodel": [
+        "#hash_1e46d2b849120cd9"
+    ],
+    "gadgetIconAvailable": "#hash_82e2072e0fbe561a",
+    "gadgetIconUnavailable": "#hash_f750b9a28afe7a8a",
+    "hudIcon": "#hash_66c15c373534b3b6",
+    "image_e90": "#hash_c3227bb78b459396",
+    "image_1048": "#hash_66c15c373534b3b6"
+}

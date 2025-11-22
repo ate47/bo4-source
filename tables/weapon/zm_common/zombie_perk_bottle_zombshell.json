@@ -1,0 +1,40 @@
+{
+    "name": "#zombie_perk_bottle_zombshell",
+    "baseWeapon": "#zombie_perk_bottle_zombshell",
+    "streamkey": "#hash_7a6baae8e4133426",
+    "worldModelTagRight": "tag_accessory_left",
+    "worldModelTagLeft": "tag_accessory_right",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_left",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "grenadeweapon": 0,
+    "dualwieldweapon": 0,
+    "dualWieldWeaponIndex": 0,
+    "altWeaponIndex": 0,
+    "itemIndex": 0,
+    "#hash_5b73038c": 1,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "unknown",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "#hash_965cc0b3": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "soundb0": "#hash_321e0616ad37f67d",
+    "firesound": "#hash_2058b0dbb3d49daa",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "sound4e0": "#hash_7de02f3f0a5f070b",
+    "tunables1": "#zombie_perk_bottle_zombshell_tunables",
+    "viewmodel": [
+        "#wpn_t8_zm_perk_bottle_zombshell_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_zm_perk_bottle_zombshell_world"
+    ]
+}

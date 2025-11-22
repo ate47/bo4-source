@@ -1,0 +1,89 @@
+{
+    "name": "#launcher_standard_t8_upgraded_zm",
+    "baseWeapon": "#launcher_standard_t8_upgraded",
+    "displayname": "#zmweapon/launcher_standard_t8_upgraded",
+    "xhash_60": "#hash_108196ba6d0a0fed",
+    "xhash_70": "#launcher_standard_t8",
+    "luigiReticleWidget": "rocketLauncherReticle",
+    "streamkey": "#hash_6764ede9aced78db",
+    "scrstr_8c8": [
+        "tag_clan_tag",
+        "tag_camo_darkmatter",
+        "tag_camo_diamond"
+    ],
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "grenadeweapon": 0,
+    "dualwieldweapon": 0,
+    "dualWieldWeaponIndex": 0,
+    "altWeaponIndex": 0,
+    "itemIndex": 0,
+    "#hash_5b73038c": 1,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "#hash_965cc0b3": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "sound90": "#hash_540a563c135f722f",
+    "sounda0": "#hash_5fd3d93f612e7109",
+    "firesound": "#hash_17e0c3ff6bf8993f",
+    "firesoundplayer": "#hash_5b276531f25d74b6",
+    "sound240": "#hash_fc4ca27d80d6d52",
+    "sound250": "#hash_4232e127f42d7cf7",
+    "sound270": "#hash_4382ea72adea8a5c",
+    "projexplosionsound": "#hash_347fbe348869aaa7",
+    "sound7f0": "#hash_a077f74dbdf984a",
+    "sound800": "#hash_54f28bb508a46096",
+    "sound810": "#hash_54f28bb508a46096",
+    "tunables1": "#launcher_standard_t8_upgraded_tunables_zm",
+    "weaponCamo": "#hash_beec52c828eb87b1",
+    "cacWeaponXCam": "#hash_840f5f7f4e5c7096",
+    "cacAttachmentsXCam": "#hash_840f5f7f4e5c7096",
+    "weaponIconXCam": "#hash_f313e3dffba7aa5e",
+    "attachments": [
+        "#defaultattachment"
+    ],
+    "attachmentUniques": [
+        "#hash_8b9d7526cd644a9c"
+    ],
+    "sharedWeaponSounds": "#launcher",
+    "model_d28": "#wpn_t8_launcher_standard_projectile_world",
+    "projectilemodel": "#wpn_t8_launcher_standard_projectile_world",
+    "viewmodel": [
+        "#wpn_t8_launcher_standard_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_launcher_standard_world"
+    ],
+    "stowedmodel": [
+        "#wpn_t8_launcher_standard_stow"
+    ],
+    "reticleCenter": "#reticle_flechette",
+    "inventoryIconZm": "#hash_9d0d28f15663c717",
+    "image_e90": "#ui_icon_obit_launcher_standard",
+    "fireRumble": "#launcher_fire",
+    "rumble_de8": "#barrel_explosion",
+    "rumble_e20": "#hash_b22cc8a226215312",
+    "fx_bc8": "#hash_79488270250f22ac",
+    "fx_bd0": "#hash_14152603ec1a5072",
+    "fx_f00": "#hash_8fc5556d48651b9e",
+    "underwaterExplosionSurfaceFX": [
+        "#hash_fb70232b2892e045",
+        "#hash_c15b461b7420c6d2",
+        "#hash_bb3f97cf646813ac"
+    ],
+    "normalImpactFX": "#rocket_explosion",
+    "bounceImpactFX": "#rocket_bounce",
+    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
+    "bounceImpactSounds": "#grenade_bounce"
+}

@@ -1,0 +1,62 @@
+{
+    "name": "#gadget_supplypod_mp",
+    "baseWeapon": "#gadget_supplypod",
+    "displayname": "#hash_337772a447c34221",
+    "xhash_70": "#gadget_supplypod",
+    "streamkey": "#hash_56d659bfcbcd56e6",
+    "scrstr_8c8": [
+        "tag_equipment_hero"
+    ],
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_inhand",
+    "scrstr_11a4": "tag_inhand",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "grenadeweapon": 0,
+    "dualwieldweapon": 0,
+    "dualWieldWeaponIndex": 0,
+    "altWeaponIndex": 0,
+    "itemIndex": 0,
+    "#hash_5b73038c": 1,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "MULTIPLAYER",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "#hash_965cc0b3": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "sound340": "#hash_288eaf34743aaef9",
+    "sound3d0": "#hash_168b6c3469d54320",
+    "gadgetreadysoundplayer": "#hash_2affe4004bc12701",
+    "sound660": "#uin_unavailable_charging",
+    "sound850": "#wpn_t8_eqp_supply_pod_projectile_view",
+    "tunables1": "#gadget_supplypod_tunables_mp",
+    "cacWeaponXCam": "#hash_43c01b226d7cebb",
+    "sharedWeaponSounds": "#equipment",
+    "#hash_2e4a8800": "#gadget_supplypod_mp_scoreevents",
+    "#hash_22082a57": "#wpn_t8_eqp_supply_pod_prop",
+    "projectilemodel": "#wpn_t8_eqp_supply_pod_projectile_view",
+    "viewmodel": [
+        "#wpn_t8_eqp_supply_pod_view"
+    ],
+    "frontendmodel": [
+        "#wpn_t8_eqp_supply_pod_prop_cac"
+    ],
+    "worldModel": [
+        "#wpn_t8_eqp_supply_pod_world"
+    ],
+    "gadgetIconAvailable": "#ui_icon_ability_disruptor",
+    "gadgetIconUnavailable": "#ui_icon_ability_disruptor_dark",
+    "inventoryIconZm": "#ui_icon_ability_spawnbeacon_dark",
+    "hudIcon": "#ui_icon_ability_spawnbeacon",
+    "image_e90": "#ui_icon_ability_spawnbeacon",
+    "image_1048": "#ui_icon_ability_spawnbeacon",
+    "beam_e88": "#supplypod_beam",
+    "#hash_96850284": "#jammer_supplypod",
+    "#hash_26f68e75": "#icepick_supplypod"
+}

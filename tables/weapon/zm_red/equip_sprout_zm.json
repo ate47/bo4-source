@@ -1,0 +1,39 @@
+{
+    "name": "#equip_sprout_zm",
+    "baseWeapon": "#equip_sprout",
+    "displayname": "#hash_547c99b87a663c09",
+    "streamkey": "#hash_663fdd725fcd3de3",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "grenadeweapon": 0,
+    "dualwieldweapon": 0,
+    "dualWieldWeaponIndex": 0,
+    "altWeaponIndex": 0,
+    "itemIndex": 0,
+    "#hash_5b73038c": 1,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "#hash_965cc0b3": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "tunables1": "#equip_sprout_tunables_zm",
+    "viewmodel": [
+        "#p8_zm_red_gaia_bush_01_sprout_01_weapon"
+    ],
+    "worldModel": [
+        "#p8_zm_red_gaia_bush_01_sprout_01_weapon"
+    ],
+    "image_1048": "#$default",
+    "viewPersistentEffectSet": "#hash_9ecd3aae8c316fc",
+    "worldPersistentEffectSet": "#hash_9f3dfaae8c94a0e"
+}

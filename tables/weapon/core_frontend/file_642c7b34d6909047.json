@@ -1,0 +1,62 @@
+{
+    "name": "#hash_642c7b34d6909047",
+    "baseWeapon": "#hash_7ab3f9a730359659",
+    "displayname": "#hash_67021e2872781bfa",
+    "xhash_70": "#gadget_spawnbeacon",
+    "streamkey": "#hash_36ef51f7f054dd93",
+    "scrstr_8c8": [
+        "tag_equipment_hero"
+    ],
+    "scrstr_8d0": [
+        "tag_equipment_hero"
+    ],
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_inhand",
+    "scrstr_11a4": "tag_inhand",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "grenadeweapon": 0,
+    "dualwieldweapon": 0,
+    "dualWieldWeaponIndex": 0,
+    "altWeaponIndex": 0,
+    "itemIndex": 0,
+    "#hash_5b73038c": 1,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "MULTIPLAYER",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "#hash_965cc0b3": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "sound340": "#hash_5fc0829d11f0fee1",
+    "sound3d0": "#hash_5a3eaf9d57abe7e8",
+    "gadgetreadysoundplayer": "#hash_9ef965e78ebe5a4",
+    "sound660": "#uin_unavailable_charging",
+    "tunables1": "#hash_45fb92ce4f554e56",
+    "cacWeaponXCam": "#hash_56ac2651a5923b2a",
+    "sharedWeaponSounds": "#equipment",
+    "#hash_2e4a8800": "#gadget_spawnbeacon_scoreevents",
+    "#hash_22082a57": "#wpn_t8_eqp_spawnbeacon_world",
+    "viewmodel": [
+        "#wpn_t8_eqp_spawnbeacon_view"
+    ],
+    "frontendmodel": [
+        "#wpn_t8_eqp_spawnbeacon_prop_cac"
+    ],
+    "worldModel": [
+        "#wpn_t8_eqp_spawnbeacon_world"
+    ],
+    "gadgetIconAvailable": "#ui_icon_ability_spawnbeacon",
+    "gadgetIconUnavailable": "#ui_icon_ability_spawnbeacon_dark",
+    "inventoryIconZm": "#ui_icon_ability_spawnbeacon_dark",
+    "hudIcon": "#ui_icon_ability_spawnbeacon",
+    "image_e90": "#ui_icon_ability_spawnbeacon",
+    "image_1048": "#ui_icon_ability_spawnbeacon",
+    "#hash_96850284": "#hash_3e56b37b08bd36ab",
+    "#hash_26f68e75": "#hash_3c2f38a1f9ed99df"
+}

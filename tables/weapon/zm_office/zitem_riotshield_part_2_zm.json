@@ -1,0 +1,39 @@
+{
+    "name": "#zitem_riotshield_part_2_zm",
+    "baseWeapon": "#zitem_riotshield_part_2",
+    "streamkey": "#hash_1ead9a2a070cce1b",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_inhand",
+    "scrstr_11a4": "tag_inhand",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "grenadeweapon": 0,
+    "dualwieldweapon": 0,
+    "dualWieldWeaponIndex": 0,
+    "altWeaponIndex": 0,
+    "itemIndex": 0,
+    "#hash_5b73038c": 1,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "#hash_965cc0b3": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "gadgetreadysoundplayer": "#pickup",
+    "tunables1": "#zitem_riotshield_part_2_tunables_zm",
+    "viewmodel": [
+        "#viewmodel_default"
+    ],
+    "worldModel": [
+        "#hash_262a3a0a4889265a"
+    ],
+    "inventoryIconZm": "#$blacktransparent"
+}

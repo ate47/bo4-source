@@ -1,0 +1,39 @@
+{
+    "name": "#zitem_spectral_shield_part_2_zm",
+    "baseWeapon": "#zitem_spectral_shield_part_2",
+    "streamkey": "#hash_12b9ab5e5571493c",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_inhand",
+    "scrstr_11a4": "tag_inhand",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "grenadeweapon": 0,
+    "dualwieldweapon": 0,
+    "dualWieldWeaponIndex": 0,
+    "altWeaponIndex": 0,
+    "itemIndex": 0,
+    "#hash_5b73038c": 1,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "#hash_965cc0b3": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "gadgetreadysoundplayer": "#hash_132010159e8da970",
+    "tunables1": "#zitem_spectral_shield_part_2_tunables_zm",
+    "viewmodel": [
+        "#viewmodel_default"
+    ],
+    "worldModel": [
+        "#tag_origin"
+    ],
+    "inventoryIconZm": "#$blacktransparent"
+}

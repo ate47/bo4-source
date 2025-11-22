@@ -1,0 +1,43 @@
+{
+    "name": "#knife_zm",
+    "baseWeapon": "#knife",
+    "streamkey": "#hash_17df943ccb46c1b0",
+    "worldModelTagRight": "tag_weapon_left",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_left",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "grenadeweapon": 0,
+    "dualwieldweapon": 0,
+    "dualWieldWeaponIndex": 0,
+    "altWeaponIndex": 0,
+    "itemIndex": 0,
+    "#hash_5b73038c": 1,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "#hash_965cc0b3": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#knife_tunables_zm",
+    "weaponCamo": "#hash_22e1dbed63df6a94",
+    "sharedWeaponSounds": "#knife",
+    "viewmodel": [
+        "#wpn_t8_zm_knife_01_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_zm_knife_01_world"
+    ],
+    "meleeImpactRumble": "#defaultweapon_melee",
+    "fx_f60": "#hash_4f4f7d3d49485130",
+    "fx_f68": "#hash_4f4f7d3d49485130",
+    "normalImpactFX": "#hash_a5f3e55b8e1070ab"
+}

@@ -1,0 +1,41 @@
+{
+    "name": "#riotshield_zm",
+    "baseWeapon": "#riotshield",
+    "displayname": "#zmweapon/riotshield",
+    "xhash_70": "#riotshield",
+    "streamkey": "#hash_669ead0f78d0df04",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_left",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 1000,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "grenadeweapon": 0,
+    "dualwieldweapon": 0,
+    "dualWieldWeaponIndex": 0,
+    "altWeaponIndex": 0,
+    "itemIndex": 0,
+    "#hash_5b73038c": 1,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "#hash_965cc0b3": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "sound800": "#hash_9db90f9293a22a4",
+    "sound810": "#hash_9db90f9293a22a4",
+    "tunables1": "#riotshield_tunables_zm",
+    "sharedWeaponSounds": "#rocketshield",
+    "viewmodel": [
+        "#hash_3ebb082a36ccc8d2"
+    ],
+    "worldModel": [
+        "#wpn_t7_shield_riot_world"
+    ],
+    "fireRumble": "#defaultweapon_fire"
+}

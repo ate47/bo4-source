@@ -1,0 +1,61 @@
+{
+    "name": "#melee_coinbag_t8_wz",
+    "baseWeapon": "#melee_coinbag_t8",
+    "displayname": "#weapon/melee_coinbag_t8",
+    "xhash_70": "#melee_coinbag_t8",
+    "streamkey": "#hash_3431258164cadca8",
+    "scrstr_8c8": [
+        "tag_clan_tag",
+        "tag_camo_darkmatter",
+        "tag_camo_diamond"
+    ],
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_weapon_right",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "grenadeweapon": 0,
+    "dualwieldweapon": 0,
+    "dualWieldWeaponIndex": 0,
+    "altWeaponIndex": 0,
+    "itemIndex": 0,
+    "#hash_5b73038c": 1,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "WARZONE",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "#hash_965cc0b3": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "sound800": "#hash_5fd68d0455a0b8",
+    "sound810": "#hash_5fd68d0455a0b8",
+    "tunables1": "#hash_7253b070f6449421",
+    "weaponCamo": "#hash_6c507b47ff1e6627",
+    "cacWeaponXCam": "#hash_49ac0e33c10b7b98",
+    "cacAttachmentsXCam": "#hash_49ac0e33c10b7b98",
+    "weaponIconXCam": "#hash_a2953940aa14190",
+    "attachments": [
+        "#defaultattachment"
+    ],
+    "attachmentUniques": [
+        "#hash_54c30f0c585f9fb6"
+    ],
+    "sharedWeaponSounds": "#coinbag",
+    "viewmodel": [
+        "#wpn_t8_loot_melee_coinbag_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_loot_melee_coinbag_world"
+    ],
+    "inventoryIcon": "#loot_03_ui_icon_blackmarket_stream_melee_coinbag",
+    "inventoryIconZm": "#ui_icon_weapon_hud_melee_coinbag",
+    "hudIcon": "#ui_icon_weapon_hud_combat_knife",
+    "image_e90": "#ui_icon_meansofdeath_melee_coinbag",
+    "fireRumble": "#defaultweapon_melee",
+    "normalImpactFX": "#hash_c8b0c166d826bb7"
+}
