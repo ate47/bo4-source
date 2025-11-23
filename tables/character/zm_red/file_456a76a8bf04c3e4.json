@@ -1,0 +1,10 @@
+{
+    "name": "#hash_456a76a8bf04c3e4",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 9,
+    "bodyImpactType": 9,
+    "destructibleDef": "#c_t8_zmb_dlc2_skeleton_helmet_spear_dst_def",
+    "fxDef": "#fxd8_zm_char_spartoi_body",
+    "body": "#c_t8_zmb_dlc2_skeleton_fb"
+}

@@ -1,0 +1,10 @@
+{
+    "name": "#hash_64b521b97ee8cab",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "gibDef": "#c_t8_zmb_dlc1_nosferatu1_gib_def",
+    "ragdollDef": "#nosferatu",
+    "body": "#c_t8_zmb_dlc1_nosferatu_humanoid_fb1"
+}

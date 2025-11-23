@@ -1,0 +1,21 @@
+{
+    "name": "#c_t8_zmb_dlc1_zombie_1stclass_female1_skin3",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "destructibleDef": "#c_t8_zmb_dlc1_zombie_1stclass_female_dst_def",
+    "gibDef": "#c_t8_zmb_1stclass_female_gib_def",
+    "fxDef": "#fxd8_zm_char_zombie_base_body",
+    "body": "#hash_6af7a3d08eaead36",
+    "head": "#hash_20935ba030c38750",
+    "hat": "#hash_2a5ce0ecde1ae7e4",
+    "damagedTorso_Clean": "#hash_33b8ffd9d2b44d89",
+    "damagedTorso_RightArmGone": "#hash_6fd5ad5b26fa78d2",
+    "damagedTorso_LeftArmGone": "#hash_7dbc28ee17c0fb38",
+    "damagedTorso_HeadGone": "#hash_3c6ec2529e635c11",
+    "damagedLegs_Clean": "#hash_76f643cedb8e4a88",
+    "damagedLegs_RightLegGone": "#hash_40ce1006a24883b0",
+    "damagedLegs_LeftLegGone": "#hash_436baf1211a0a5d6",
+    "damagedLegs_NoLegs": "#hash_4e10fbb7f1a3e3b"
+}

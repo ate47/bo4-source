@@ -1,0 +1,18 @@
+{
+    "name": "#hash_44b38f849094dde1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "gibDef": "#c_t8_zmb_whi_ranged_quadcrawler_gib_def",
+    "body": "#hash_15285868e6495dfe",
+    "head": "#hash_6e68993462879514",
+    "damagedTorso_Clean": "#hash_5718454ca9e58ebb",
+    "damagedTorso_RightArmGone": "#hash_2eb1fc808b904595",
+    "damagedTorso_LeftArmGone": "#hash_2490b3d1c2fcc7b3",
+    "damagedTorso_HeadGone": "#hash_47fa195cd4f5f2b4",
+    "damagedLegs_Clean": "#hash_2c6b49b676231230",
+    "damagedLegs_RightLegGone": "#hash_5319d5a15840b32a",
+    "damagedLegs_LeftLegGone": "#hash_6690aef20a9c6534",
+    "damagedLegs_NoLegs": "#hash_7184f1978931500f"
+}

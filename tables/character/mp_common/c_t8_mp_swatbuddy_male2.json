@@ -1,0 +1,9 @@
+{
+    "name": "#c_t8_mp_swatbuddy_male2",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#hash_7c838716b2827a6",
+    "head": "#hash_1635cc4b40fe5c7b"
+}

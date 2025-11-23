@@ -1,0 +1,10 @@
+{
+    "name": "#hash_4741c11750ad3c8",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "destructibleDef": "#c_t8_zmb_dlc2_gegenees1_dst_def",
+    "ragdollDef": "#gegenees",
+    "body": "#c_t8_zmb_dlc2_gegenees_fb1"
+}

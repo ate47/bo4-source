@@ -1,0 +1,8 @@
+{
+    "name": "#c_zom_der_hellhound",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "body": "#c_zom_der_hellhound_fb"
+}

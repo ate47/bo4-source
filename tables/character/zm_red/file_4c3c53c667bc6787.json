@@ -1,0 +1,10 @@
+{
+    "name": "#hash_4c3c53c667bc6787",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "fxDef": "#fxd8_zm_char_werewolf_body",
+    "ragdollDef": "#werewolf",
+    "body": "#hash_51705235210610ab"
+}

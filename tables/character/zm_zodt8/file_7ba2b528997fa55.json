@@ -1,0 +1,19 @@
+{
+    "name": "#hash_7ba2b528997fa55",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "gibDef": "#c_t8_zmb_crew_sailor_gib_def",
+    "fxDef": "#fxd8_zm_char_zombie_base_body",
+    "body": "#c_t8_zmb_crew_sailor_body2",
+    "headAlias": "#hash_e12e15b05a54b6c5",
+    "damagedTorso_Clean": "#hash_7b4ef1b4440dadca",
+    "damagedTorso_RightArmGone": "#hash_595a0ff8dfb65001",
+    "damagedTorso_LeftArmGone": "#hash_d86ca56117d5d67",
+    "damagedTorso_HeadGone": "#hash_52a3da708dda5700",
+    "damagedLegs_Clean": "#hash_f49827617300934",
+    "damagedLegs_RightLegGone": "#hash_3590a2ebe815b5e6",
+    "damagedLegs_LeftLegGone": "#hash_565733dd4690b938",
+    "damagedLegs_NoLegs": "#hash_32cd0b991c16bea3"
+}

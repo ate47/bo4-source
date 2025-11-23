@@ -1,0 +1,7 @@
+{
+    "name": "#$default_character",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1
+}

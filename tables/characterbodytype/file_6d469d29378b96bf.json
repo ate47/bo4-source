@@ -1,0 +1,63 @@
+{
+    "name": "#hash_6d469d29378b96bf",
+    "displayName": "#hash_7ffcf2faa2bbc340",
+    "mpDialog": "#blackjack_bo4",
+    "playerSoundsTable": "#hash_21fe3f79b5e4c2d6",
+    "playerFXTable": "#hash_471b500cc678f872",
+    "image_68": "#ui_icon_specialist_portrait_hud_blackjack",
+    "positionDraftPortrait": "#ui_icon_specialist_portrait_draft_blackjack",
+    "lootUiIcon": "#loot_04_ui_icon_blackmarket_reserves_blackjack",
+    "characterFootsteps": "#hash_4ee42a3145f1fe3d",
+    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
+    "characterFootstepsNPC": "#hash_3008da66d91b8ad7",
+    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
+    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "bundle": {
+        "lobbyScenes": [
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_male_team_0"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_male_team_1"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_male_team_2"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_male_team_3"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_male_team_4"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_male_team_5"
+            }
+        ],
+        "hash_be6ea125": "scriptbundle&scene_frontend_t8_wz_male_unlock",
+        "digitalblood": 0,
+        "hash_67e06199": 0,
+        "hash_bb70c379": "scriptbundle&scene_frontend_t8_male_customization",
+        "hash_819846c7": 1,
+        "iscompanion": 0,
+        "fullname": "localized17#hash_7ffcf2faa2bbc340",
+        "hash_5331abe0": 0,
+        "baseteam": "enum:2",
+        "hash_c6376b99": 0,
+        "hash_8d924963": 0,
+        "hash_e97eda81": 0,
+        "mpdialog": "scriptbundle&blackjack_bo4",
+        "hash_8df0287c": 0,
+        "hash_49a55967": 0,
+        "hash_8ef1b43f": 0,
+        "hash_148d6d91": 0,
+        "requireddvar": "#hash_527bed2403ab02cb",
+        "hash_5c403974": 14,
+        "hash_2081b2ed": "scriptbundle&scene_frontend_inspection_male",
+        "hash_ac7bddbe": 0,
+        "hash_7ea4277b": 0,
+        "hash_4c65efc8": "scriptbundle&scene_frontend_t8_helicopter",
+        "hash_1b216715": 0,
+        "hash_abe565b3": 0,
+        "hash_9c1be670": 0
+    }
+}

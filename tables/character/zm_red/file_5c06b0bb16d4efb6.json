@@ -1,0 +1,11 @@
+{
+    "name": "#hash_5c06b0bb16d4efb6",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "fxDef": "#fxd8_zm_char_werewolf_body",
+    "ragdollDef": "#werewolf",
+    "body": "#c_t8_zmb_dlc2_perseus_fb1",
+    "head": "#c_t8_zmb_dlc2_perseus_sword1"
+}

@@ -1,0 +1,10 @@
+{
+    "name": "#hash_52ff559d497ecf9",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "ragdollDef": "#mp_dog",
+    "body": "#c_t8_mp_spe_nomad_dog_body1",
+    "head": "#c_t8_mp_spe_nomad_dog_head1_frontend"
+}

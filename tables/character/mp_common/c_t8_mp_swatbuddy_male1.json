@@ -1,0 +1,9 @@
+{
+    "name": "#c_t8_mp_swatbuddy_male1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_mp_swatbuddy_male_body1_tan",
+    "head": "#c_t8_mp_swatbuddy_male_head1_tan"
+}

@@ -1,0 +1,10 @@
+{
+    "name": "#c_t8_zmb_dlc1_werewolf1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "fxDef": "#fxd8_zm_char_werewolf_body",
+    "ragdollDef": "#werewolf",
+    "body": "#c_t8_zmb_dlc1_werewolf_fb1"
+}

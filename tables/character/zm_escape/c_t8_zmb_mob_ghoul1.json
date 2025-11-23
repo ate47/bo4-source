@@ -1,0 +1,9 @@
+{
+    "name": "#c_t8_zmb_mob_ghoul1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "fxDef": "#fxd8_zm_char_ghost_body",
+    "body": "#c_t8_zmb_mob_ghoul_body1"
+}

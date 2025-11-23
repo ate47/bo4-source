@@ -1,0 +1,11 @@
+{
+    "name": "#hash_7d386db97cc99867",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "destructibleDef": "#c_t8_zmb_mob_brutus_boss_dst_def",
+    "body": "#c_t8_zmb_mob_brutus_boss_body",
+    "head": "#c_t8_zmb_mob_brutus_boss_head",
+    "hat": "#hash_5187f9f275e94c64"
+}

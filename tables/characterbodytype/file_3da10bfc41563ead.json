@@ -1,0 +1,141 @@
+{
+    "name": "#hash_3da10bfc41563ead",
+    "displayName": "#hash_759cb09309cf4447",
+    "mpDialog": "#battery",
+    "playerSoundsTable": "#hash_8b6c2bcaaa94ab4",
+    "playerFXTable": "#hash_471b500cc678f872",
+    "image_50": "#personalize_t7_hud_mp_weapon_hero_pineapplegun_available",
+    "image_58": "#t7_mp_loadingportrait_weapon_battery",
+    "image_60": "#t7_mp_loadingportrait_ability_battery",
+    "image_68": "#hash_a9ce1be52022269b",
+    "image_70": "#hash_a9ce1be52022269b",
+    "image_78": "#hash_a9ce1be52022269b",
+    "image_80": "#hash_a9ce1be52022269b",
+    "image_88": "#hash_a9ce1be52022269b",
+    "positionDraftPortrait": "#ui_icon_specialist_portrait_draft_battery",
+    "dogtagFriendly": "#hash_2b2d8e231fe176a1",
+    "dogTagEnemy": "#hash_38504bb508f6c76",
+    "tagFxSet": "#hash_7e13fc73a6e05d8e",
+    "characterFootsteps": "#hash_4ee42a3145f1fe3d",
+    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
+    "characterFootstepsNPC": "#hash_3008da66d91b8ad7",
+    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
+    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "bundle": {
+        "arenaLobbyScenes": [
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_fem_team_0"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_fem_team_1"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_fem_team_2"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_fem_team_3"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_fem_team_4"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_fem_team_5"
+            }
+        ],
+        "heroicScenes": [
+            {
+                "scene": "scriptbundle&battery_end_game_scene"
+            }
+        ],
+        "lobbyScenes": [
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_fem_team_0"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_fem_team_1"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_fem_team_2"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_fem_team_3"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_fem_team_4"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_fem_team_5"
+            }
+        ],
+        "heroicPoses": [
+            {
+                "scene": "scriptbundle&battery_end_game_pose"
+            }
+        ],
+        "hash_b85069c": "t7_mp_notification_weapon_battery",
+        "bio": "localized17#hash_1671990559be23ae",
+        "hash_be6ea125": "scriptbundle&scene_frontend_t8_wz_fem_unlock",
+        "weaponschema": "localized17#hash_10feba446966a537",
+        "biofull": "localized17#hash_3ba7454f3fae4c4b",
+        "digitalblood": 0,
+        "ui_menu_specialist_hud_poster_frame_locked": "image#ui_menu_specialist_hud_poster_frame_locked",
+        "hash_67e06199": 0,
+        "intromovie": "<unk19>:ct_tutobattery_loadingmovie",
+        "ctmap": "mp_offshore",
+        "hash_bb70c379": "scriptbundle&scene_frontend_t8_fem_customization",
+        "hash_819846c7": 0,
+        "iscompanion": 0,
+        "fullname": "localized17#hash_759cb09309cf4447",
+        "hash_5331abe0": 0,
+        "hash_7963c96532109686:hash_f1f952cc": "localized17#hash_7963c96532109686",
+        "hash_e9b3b4c7": "dom",
+        "baseteam": "enum:2",
+        "realname": "localized17#hash_e3d633dd7e8c7bd",
+        "hubscene": "scriptbundle&scene_frontend_hub_t8_mp_battery",
+        "hash_19c3670e6b936e74:hash_df4c987": "image#hash_19c3670e6b936e74",
+        "hash_55f31ab6": "<unk19>:ct_skirmishoutro_battery",
+        "hash_2855e8fe94593c64:hash_9cb75220": "localized17#hash_2855e8fe94593c64",
+        "hash_c6376b99": 0,
+        "hash_8d924963": 0,
+        "mpui/ekia": "localized17#mpui/ekia",
+        "hash_e97eda81": 0,
+        "mpdialog": "scriptbundle&battery",
+        "hash_8df0287c": 0,
+        "hash_6a6d76a8": "dom",
+        "hash_a19fcbe8": "dom",
+        "hash_1f4bad30e1eccbb5:hash_54f4a8a8": "image#hash_1f4bad30e1eccbb5",
+        "hash_2f46cd598b4e32b2:hash_837988ce": "image#hash_2f46cd598b4e32b2",
+        "hash_7ef1a2f829426dee:hash_a38fcede": "image#hash_7ef1a2f829426dee",
+        "hash_49a55967": 1,
+        "hash_8ef1b43f": 0,
+        "hash_148d6d91": 1,
+        "biopreview": "localized17#hash_3e8a0cb01da50ec6",
+        "hash_2fbda94183eb612:hash_c83058bc": "image#hash_2fbda94183eb612",
+        "hash_bce604f2": "mp_offshore",
+        "dob": "localized17#hash_3d3d083bf1cd39ef",
+        "hash_be8a5804": "mp_battery_equipment",
+        "hash_5c403974": 14,
+        "mpui/ekia": "localized17#mpui/ekia",
+        "hash_6b928faf": "mp_battery_weapon",
+        "hash_230b5a2c43542c2:hash_662d70e1": "image#hash_230b5a2c43542c2",
+        "hash_c42060d": "mp_offshore",
+        "fullbodyexplosion": "fx#hash_7e4a861318714ac9",
+        "hash_2081b2ed": "scriptbundle&scene_frontend_inspection_fem",
+        "hash_ac7bddbe": 0,
+        "nationality": "localized17#hash_307e6e8b3b60de99",
+        "bioheader": "localized17#hash_278d3311308a79b2",
+        "hash_a360a89c": "dom",
+        "ctgametype": "ct_battery",
+        "hash_7ea4277b": 0,
+        "branding": "image#hash_60cf1fd2b1e998ba",
+        "hash_2e84063c": "mp_battery_weapon",
+        "hash_22b55286": "mp_battery_equipment",
+        "hash_3ab3c1e3": "mp_offshore",
+        "hash_361dcb2fe8b26482:hash_4747b9c": "localized17#hash_361dcb2fe8b26482",
+        "hash_4c65efc8": "scriptbundle&scene_frontend_t8_helicopter_fem",
+        "hash_1b216715": 0,
+        "hash_abe565b3": 0,
+        "hash_203d75bb": "mp_offshore",
+        "hash_9c1be670": 0
+    }
+}

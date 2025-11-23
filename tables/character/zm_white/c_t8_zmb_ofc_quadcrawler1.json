@@ -1,0 +1,18 @@
+{
+    "name": "#c_t8_zmb_ofc_quadcrawler1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "gibDef": "#c_t8_zmb_ofc_quadcrawler_gib_def",
+    "body": "#c_t8_zmb_ofc_quadcrawler_body",
+    "head": "#c_t8_zmb_ofc_quadcrawler_head",
+    "damagedTorso_Clean": "#c_t8_zmb_ofc_quadcrawler_g_upclean",
+    "damagedTorso_RightArmGone": "#c_t8_zmb_ofc_quadcrawler_g_rarmoff",
+    "damagedTorso_LeftArmGone": "#c_t8_zmb_ofc_quadcrawler_g_larmoff",
+    "damagedTorso_HeadGone": "#c_t8_zmb_ofc_quadcrawler_g_behead",
+    "damagedLegs_Clean": "#c_t8_zmb_ofc_quadcrawler_g_lowclean",
+    "damagedLegs_RightLegGone": "#c_t8_zmb_ofc_quadcrawler_g_rlegoff",
+    "damagedLegs_LeftLegGone": "#c_t8_zmb_ofc_quadcrawler_g_llegoff",
+    "damagedLegs_NoLegs": "#c_t8_zmb_ofc_quadcrawler_g_blegsoff"
+}

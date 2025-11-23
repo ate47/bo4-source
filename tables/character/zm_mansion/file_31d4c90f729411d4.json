@@ -1,0 +1,19 @@
+{
+    "name": "#hash_31d4c90f729411d4",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "gibDef": "#c_t8_zmb_2ndclass_female1_gib_def",
+    "fxDef": "#fxd8_zm_char_zombie_base_body",
+    "body": "#hash_489c38537c67ca9e",
+    "headAlias": "#hash_675d196ace257446",
+    "damagedTorso_Clean": "#hash_33fc5a4ea9658835",
+    "damagedTorso_RightArmGone": "#hash_ba3d76c7656baf6",
+    "damagedTorso_LeftArmGone": "#hash_60196b11a9db500c",
+    "damagedTorso_HeadGone": "#hash_55735badbdc1b98d",
+    "damagedLegs_Clean": "#hash_3055105057ef2eae",
+    "damagedLegs_RightLegGone": "#hash_2208d04aea106ed0",
+    "damagedLegs_LeftLegGone": "#hash_55bfc4e18851bf4e",
+    "damagedLegs_NoLegs": "#hash_11293b4b641d1095"
+}

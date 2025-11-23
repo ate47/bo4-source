@@ -1,0 +1,20 @@
+{
+    "name": "#c_t8_mp_zombie_male3_helmet1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "destructibleDef": "#c_t8_mp_zombie_male_helmet1_dst_def",
+    "gibDef": "#c_t8_mp_zombie_male_gib_def",
+    "body": "#hash_207529d7919b05da",
+    "headAlias": "#hash_3de5f2abcf868ff",
+    "hat": "#hash_4bf91904816587b",
+    "damagedTorso_Clean": "#hash_7eaea0b73ee6a769",
+    "damagedTorso_RightArmGone": "#hash_6cac344bef0af67a",
+    "damagedTorso_LeftArmGone": "#hash_5d720a39d6af34d8",
+    "damagedTorso_HeadGone": "#hash_73fa1aad11e3c532",
+    "damagedLegs_Clean": "#hash_103e1da989fc7f3a",
+    "damagedLegs_RightLegGone": "#hash_1a4efc110e52a724",
+    "damagedLegs_LeftLegGone": "#hash_2a3b9c2da9c6777a",
+    "damagedLegs_NoLegs": "#hash_65c07eb4b902a161"
+}

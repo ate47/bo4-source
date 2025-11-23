@@ -1,0 +1,12 @@
+{
+    "name": "#c_t8_zmb_dlc0_zombie_marauder1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "destructibleDef": "#c_t8_zmb_dlc0_zombie_marauder1_dst_def",
+    "gibDef": "#c_default_annhilate_gib_def",
+    "ragdollDef": "#gladiator",
+    "body": "#c_t8_zmb_dlc0_zombie_marauder_body1",
+    "gear": "#c_t8_zmb_dlc0_zombie_marauder_cestus1"
+}

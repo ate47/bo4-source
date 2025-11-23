@@ -1,0 +1,10 @@
+{
+    "name": "#hash_4da6374ac52ab325",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 5,
+    "bodyImpactType": 6,
+    "ragdollDef": "#defaultragdoll",
+    "body": "#c_t8_mp_spe_reaper_body1",
+    "head": "#c_t8_mp_spe_reaper_head1"
+}

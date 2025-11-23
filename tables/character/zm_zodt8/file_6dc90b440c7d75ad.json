@@ -1,0 +1,9 @@
+{
+    "name": "#hash_6dc90b440c7d75ad",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#hash_6a905f227281a5c4",
+    "head": "#hash_17f36df34ac7b40e"
+}

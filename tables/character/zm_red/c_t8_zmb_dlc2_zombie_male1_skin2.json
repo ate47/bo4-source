@@ -1,0 +1,19 @@
+{
+    "name": "#c_t8_zmb_dlc2_zombie_male1_skin2",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "gibDef": "#c_t8_zmb_dlc0_zombie_male1_gib_def",
+    "fxDef": "#fxd8_zm_char_zombie_base_body",
+    "body": "#c_t8_zmb_dlc2_zombie_male_body1_skin2",
+    "headAlias": "#hash_3e8b51671f06b5d0",
+    "damagedTorso_Clean": "#c_t8_zmb_dlc2_zombie_male_body1_g_upclean_skin2",
+    "damagedTorso_RightArmGone": "#c_t8_zmb_dlc2_zombie_male_body1_g_rarmoff_skin2",
+    "damagedTorso_LeftArmGone": "#c_t8_zmb_dlc2_zombie_male_body1_g_larmoff_skin2",
+    "damagedTorso_HeadGone": "#hash_102c6f5c451cf6fb",
+    "damagedLegs_Clean": "#c_t8_zmb_dlc2_zombie_male_body1_g_lowclean_skin2",
+    "damagedLegs_RightLegGone": "#c_t8_zmb_dlc2_zombie_male_body1_g_rlegoff_skin2",
+    "damagedLegs_LeftLegGone": "#c_t8_zmb_dlc2_zombie_male_body1_g_llegoff_skin2",
+    "damagedLegs_NoLegs": "#c_t8_zmb_dlc2_zombie_male_body1_g_blegsoff_skin2"
+}

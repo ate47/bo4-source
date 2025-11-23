@@ -15,6 +15,7 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 | weapontunables          | 22  | `/tables/weapontunables/`           |
 | customizationtable      | 30  | `/tables/customization/`            |
 | aitype                  | 38  | `/tables/aitype/[origin]/`          |
+| character               | 39  | `/tables/character/[origin]/`       |
 | rawfile                 | 41  | `/`                                 |
 | stringtable             | 43  | `/`                                 |
 | structuredtable         | 44  | `/`                                 |
@@ -36,6 +37,7 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 | luadebug                | 104 | EMPTY                               |
 | playerrolecategory      | 109 | `/tables/playerrolecategory/`       |
 | playerrolecategorytable | 110 | `/tables/playerrolecategory/table/` |
+| characterbodytype       | 111 | `/tables/characterbodytype/`        |
 | gametypetable           | 113 | `/tables/gametype/`                 |
 | unlockableitem          | 116 | `/tables/unlockableitem/`           |
 | unlockableitemtable     | 117 | `/tables/unlockableitem/table/`     |

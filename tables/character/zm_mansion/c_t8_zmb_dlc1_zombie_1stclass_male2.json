@@ -1,0 +1,19 @@
+{
+    "name": "#c_t8_zmb_dlc1_zombie_1stclass_male2",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "gibDef": "#c_t8_zmb_3rdclass_male_gib_def",
+    "fxDef": "#fxd8_zm_char_zombie_base_body",
+    "body": "#c_t8_zmb_1stclass_male_body2",
+    "headAlias": "#hash_e12e15b05a54b6c5",
+    "damagedTorso_Clean": "#hash_75d1abb3d9c30d38",
+    "damagedTorso_RightArmGone": "#hash_74a6ea63ecf3826b",
+    "damagedTorso_LeftArmGone": "#hash_3459703c571f7b1d",
+    "damagedTorso_HeadGone": "#hash_2db339ef8f4eaf73",
+    "damagedLegs_Clean": "#hash_60a2ecc33d280a0d",
+    "damagedLegs_RightLegGone": "#hash_5f05e6eee9bac545",
+    "damagedLegs_LeftLegGone": "#hash_28de01aa7e2af3ff",
+    "damagedLegs_NoLegs": "#hash_67273b526db7471e"
+}

@@ -1,0 +1,141 @@
+{
+    "name": "#hash_17c8471ad085983b",
+    "displayName": "#hash_5b4889e3a720c949",
+    "mpDialog": "#firebreak",
+    "playerSoundsTable": "#hash_3c7e06b3ea20b1e4",
+    "playerFXTable": "#hash_133d2326a92c76be",
+    "image_50": "#personalize_t7_hud_mp_weapon_hero_flamethrower_available",
+    "image_58": "#t7_mp_loadingportrait_weapon_firebreak",
+    "image_60": "#t7_mp_loadingportrait_ability_firebreak",
+    "image_68": "#hash_8a10c1d8611f27ad",
+    "image_70": "#hash_8a10c1d8611f27ad",
+    "image_78": "#hash_8a10c1d8611f27ad",
+    "image_80": "#hash_8a10c1d8611f27ad",
+    "image_88": "#hash_8a10c1d8611f27ad",
+    "positionDraftPortrait": "#ui_icon_specialist_portrait_draft_firebreak",
+    "dogtagFriendly": "#hash_4b77b871246789e7",
+    "dogTagEnemy": "#hash_7e9b68cddcd40c54",
+    "tagFxSet": "#hash_627fc94b25472814",
+    "characterFootsteps": "#hash_575d0804dbd6d74c",
+    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
+    "characterFootstepsNPC": "#hash_7e7def848c935e84",
+    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
+    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "bundle": {
+        "arenaLobbyScenes": [
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_0"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_1"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_2"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_3"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_4"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_5"
+            }
+        ],
+        "heroicScenes": [
+            {
+                "scene": "scriptbundle&firebreak_end_game_scene"
+            }
+        ],
+        "lobbyScenes": [
+            {
+                "scene": "scriptbundle&scene_frontend_t8_mp_male_team_0"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_mp_male_team_1"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_mp_male_team_2"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_mp_male_team_3"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_mp_male_team_4"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_mp_male_team_5"
+            }
+        ],
+        "heroicPoses": [
+            {
+                "scene": "scriptbundle&firebreak_end_game_pose"
+            }
+        ],
+        "hash_b85069c": "t7_mp_notification_weapon_firebreak",
+        "bio": "localized17#hash_79c04fb2e32b0ccc",
+        "hash_be6ea125": "scriptbundle&scene_frontend_t8_wz_male_unlock",
+        "weaponschema": "localized17#hash_6ce2d2d0433b2f99",
+        "biofull": "localized17#hash_533780d4270ca05d",
+        "digitalblood": 0,
+        "ui_menu_specialist_hud_poster_frame_locked": "image#ui_menu_specialist_hud_poster_frame_locked",
+        "hash_67e06199": 0,
+        "intromovie": "<unk19>:ct_tutofirebreak_loadingmovie",
+        "ctmap": "mp_offshore",
+        "hash_bb70c379": "scriptbundle&scene_frontend_t8_male_customization",
+        "hash_819846c7": 0,
+        "iscompanion": 0,
+        "fullname": "localized17#hash_5b4889e3a720c949",
+        "hash_5331abe0": 0,
+        "hash_251330f71941b5a4:hash_f1f952cc": "localized17#hash_251330f71941b5a4",
+        "hash_e9b3b4c7": "koth",
+        "baseteam": "enum:2",
+        "realname": "localized17#hash_136345e001af6313",
+        "hubscene": "scriptbundle&scene_frontend_hub_t8_mp_firebreak",
+        "hash_666dd2233a6aa4de:hash_df4c987": "image#hash_666dd2233a6aa4de",
+        "hash_55f31ab6": "<unk19>:ct_skirmishoutro_firebreak",
+        "hash_57bf03ad30db364e:hash_9cb75220": "localized17#hash_57bf03ad30db364e",
+        "hash_c6376b99": 0,
+        "hash_8d924963": 0,
+        "hash_7942deec3b5c0824:hash_cff52e6": "localized17#hash_7942deec3b5c0824",
+        "hash_e97eda81": 0,
+        "mpdialog": "scriptbundle&firebreak",
+        "hash_8df0287c": 0,
+        "hash_6a6d76a8": "koth",
+        "hash_a19fcbe8": "koth",
+        "ui_icon_ct_preview_ct_tutofirebreak_loadingmovie": "image#ui_icon_ct_preview_ct_tutofirebreak_loadingmovie",
+        "ui_icon_ct_preview_ct_skirmishoutro_firebreak": "image#ui_icon_ct_preview_ct_skirmishoutro_firebreak",
+        "hash_23255bd54ecfbbc:hash_a38fcede": "image#hash_23255bd54ecfbbc",
+        "hash_49a55967": 1,
+        "hash_8ef1b43f": 0,
+        "hash_148d6d91": 1,
+        "biopreview": "localized17#hash_6471fbe367207ce4",
+        "hash_67f02a7ed7773304:hash_c83058bc": "image#hash_67f02a7ed7773304",
+        "hash_bce604f2": "mp_offshore",
+        "dob": "localized17#hash_58cfa58aed4f6b81",
+        "hash_be8a5804": "mp_firebreak_equipment",
+        "hash_5c403974": 4,
+        "mpui/ekia": "localized17#mpui/ekia",
+        "hash_6b928faf": "mp_firebreak_weapon",
+        "hash_4c9c1c7f5e9d2ac8:hash_662d70e1": "image#hash_4c9c1c7f5e9d2ac8",
+        "hash_c42060d": "mp_offshore",
+        "fullbodyexplosion": "fx#hash_7e4a861318714ac9",
+        "hash_2081b2ed": "scriptbundle&scene_frontend_inspection_male",
+        "hash_ac7bddbe": 0,
+        "nationality": "localized17#hash_1673867f6138538f",
+        "bioheader": "localized17#hash_44b48cb82a40409c",
+        "hash_a360a89c": "koth",
+        "ctgametype": "ct_firebreak",
+        "hash_7ea4277b": 0,
+        "branding": "image#hash_32a2c721b3aef5c8",
+        "hash_2e84063c": "mp_firebreak_weapon",
+        "hash_22b55286": "mp_firebreak_equipment",
+        "hash_3ab3c1e3": "mp_offshore",
+        "hash_3a08f8d6796dec18:hash_4747b9c": "localized17#hash_3a08f8d6796dec18",
+        "hash_4c65efc8": "scriptbundle&scene_frontend_t8_firebreak",
+        "hash_1b216715": 0,
+        "hash_abe565b3": 0,
+        "hash_203d75bb": "mp_offshore",
+        "hash_9c1be670": 0
+    }
+}

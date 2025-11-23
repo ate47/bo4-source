@@ -1,0 +1,9 @@
+{
+    "name": "#hash_678c9a5a803404bb",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "fxDef": "#fxd8_zm_char_ghost_body",
+    "body": "#c_t8_zmb_mob_ghoul_body3_rob"
+}

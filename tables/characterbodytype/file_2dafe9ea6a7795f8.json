@@ -1,0 +1,141 @@
+{
+    "name": "#hash_2dafe9ea6a7795f8",
+    "displayName": "#hash_feee6890a6759fe",
+    "mpDialog": "#buffassault",
+    "playerSoundsTable": "#hash_21fe3f79b5e4c2d6",
+    "playerFXTable": "#hash_471b500cc678f872",
+    "image_50": "#personalize_t7_hud_mp_weapon_hero_chemgun_available",
+    "image_58": "#t7_mp_loadingportrait_weapon_nomad",
+    "image_60": "#t7_mp_loadingportrait_ability_nomad",
+    "image_68": "#hash_fd145431372289ac",
+    "image_70": "#hash_fd145431372289ac",
+    "image_78": "#hash_fd145431372289ac",
+    "image_80": "#hash_fd145431372289ac",
+    "image_88": "#hash_fd145431372289ac",
+    "positionDraftPortrait": "#ui_icon_specialist_portrait_draft_crash",
+    "dogtagFriendly": "#hash_69f0f18339ea342f",
+    "dogTagEnemy": "#hash_3226f184b0cdfbc0",
+    "tagFxSet": "#hash_36539a4d01ec9535",
+    "characterFootsteps": "#hash_4ee42a3145f1fe3d",
+    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
+    "characterFootstepsNPC": "#hash_3008da66d91b8ad7",
+    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
+    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "bundle": {
+        "arenaLobbyScenes": [
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_0"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_1"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_2"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_3"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_4"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_5"
+            }
+        ],
+        "heroicScenes": [
+            {
+                "scene": "scriptbundle&crash_end_game_scene"
+            }
+        ],
+        "lobbyScenes": [
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_male_team_0"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_male_team_1"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_male_team_2"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_male_team_3"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_male_team_4"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_wz_male_team_5"
+            }
+        ],
+        "heroicPoses": [
+            {
+                "scene": "scriptbundle&crash_end_game_pose"
+            }
+        ],
+        "hash_b85069c": "t7_mp_notification_weapon_nomad",
+        "bio": "localized17#hash_34c196ce3d0a7583",
+        "hash_be6ea125": "scriptbundle&scene_frontend_t8_wz_male_unlock",
+        "weaponschema": "localized17#hash_6b70c50c8f533ed6",
+        "biofull": "localized17#hash_3a8ea4f2af590045",
+        "digitalblood": 0,
+        "ui_menu_specialist_hud_poster_frame_locked": "image#ui_menu_specialist_hud_poster_frame_locked",
+        "hash_67e06199": 0,
+        "intromovie": "<unk19>:ct_tutocrash_loadingmovie",
+        "ctmap": "mp_gridlock",
+        "hash_bb70c379": "scriptbundle&scene_frontend_t8_male_customization",
+        "hash_819846c7": 0,
+        "iscompanion": 0,
+        "fullname": "localized17#hash_feee6890a6759fe",
+        "hash_5331abe0": 0,
+        "hash_727c9de8057d6d50:hash_f1f952cc": "localized17#hash_727c9de8057d6d50",
+        "hash_e9b3b4c7": "conf",
+        "baseteam": "enum:2",
+        "realname": "localized17#hash_794af19d38243a13",
+        "hubscene": "scriptbundle&scene_frontend_hub_t8_mp_buffassault",
+        "hash_1d0978b27cf85f52:hash_df4c987": "image#hash_1d0978b27cf85f52",
+        "hash_55f31ab6": "<unk19>:ct_skirmishoutro_crash",
+        "hash_1a181fa1ac4e9142:hash_9cb75220": "localized17#hash_1a181fa1ac4e9142",
+        "hash_c6376b99": 0,
+        "hash_8d924963": 0,
+        "hash_ba7b3f5adf6a69:hash_cff52e6": "localized17#hash_ba7b3f5adf6a69",
+        "hash_e97eda81": 0,
+        "mpdialog": "scriptbundle&buffassault",
+        "hash_8df0287c": 0,
+        "hash_6a6d76a8": "conf",
+        "hash_a19fcbe8": "conf",
+        "hash_68166d774826e4bf:hash_54f4a8a8": "image#hash_68166d774826e4bf",
+        "hash_60f295a4d0299f84:hash_837988ce": "image#hash_60f295a4d0299f84",
+        "hash_13c8510fddec2938:hash_a38fcede": "image#hash_13c8510fddec2938",
+        "hash_49a55967": 1,
+        "hash_8ef1b43f": 0,
+        "hash_148d6d91": 1,
+        "biopreview": "localized17#hash_786f7ff710556590",
+        "hash_4253959bde2f749c:hash_c83058bc": "image#hash_4253959bde2f749c",
+        "hash_bce604f2": "mp_gridlock",
+        "dob": "localized17#hash_1489abc44c6551",
+        "hash_be8a5804": "mp_crash_equipment",
+        "hash_5c403974": 14,
+        "hash_746ff887bb7447f6:hash_900e3f74": "localized17#hash_746ff887bb7447f6",
+        "hash_6b928faf": "mp_crash_weapon",
+        "hash_a177479f1e2bac0:hash_662d70e1": "image#hash_a177479f1e2bac0",
+        "hash_c42060d": "mp_gridlock",
+        "fullbodyexplosion": "fx#hash_7e4a861318714ac9",
+        "hash_2081b2ed": "scriptbundle&scene_frontend_inspection_male",
+        "hash_ac7bddbe": 0,
+        "nationality": "localized17#hash_4d2421f7ec86b2c7",
+        "bioheader": "localized17#hash_601f72a3327b5651",
+        "hash_a360a89c": "conf",
+        "ctgametype": "ct_crash",
+        "hash_7ea4277b": 0,
+        "branding": "image#hash_32c2310cf567912c",
+        "hash_2e84063c": "mp_crash_weapon",
+        "hash_22b55286": "mp_crash_equipment",
+        "hash_3ab3c1e3": "mp_gridlock",
+        "hash_47f8021b2a550dd:hash_4747b9c": "localized17#hash_47f8021b2a550dd",
+        "hash_4c65efc8": "scriptbundle&scene_frontend_t8_helicopter",
+        "hash_1b216715": 0,
+        "hash_abe565b3": 0,
+        "hash_203d75bb": "mp_gridlock",
+        "hash_9c1be670": 0
+    }
+}

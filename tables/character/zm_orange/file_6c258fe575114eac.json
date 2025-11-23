@@ -1,0 +1,20 @@
+{
+    "name": "#hash_6c258fe575114eac",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "gibDef": "#c_zom_der_zombie_hat_gib_def",
+    "body": "#c_zom_der_zombie_body2",
+    "headAlias": "#hash_dc752693fd01913",
+    "hat": "#c_zom_der_zombie_helmet1",
+    "damagedTorso_Clean": "#c_zom_der_zombie_body2_g_upclean",
+    "damagedTorso_RightArmGone": "#c_zom_der_zombie_body2_g_rarmoff",
+    "damagedTorso_LeftArmGone": "#c_zom_der_zombie_body2_g_larmoff",
+    "damagedTorso_GutsGone": "#c_zom_der_zombie_body2_g_upclean",
+    "damagedTorso_HeadGone": "#c_zom_der_zombie_body2_g_behead",
+    "damagedLegs_Clean": "#c_zom_der_zombie_body2_g_lowclean",
+    "damagedLegs_RightLegGone": "#c_zom_der_zombie_body2_g_rlegoff",
+    "damagedLegs_LeftLegGone": "#c_zom_der_zombie_body2_g_llegoff",
+    "damagedLegs_NoLegs": "#c_zom_der_zombie_body2_g_blegsoff"
+}

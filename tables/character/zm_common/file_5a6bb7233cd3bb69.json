@@ -1,0 +1,9 @@
+{
+    "name": "#hash_5a6bb7233cd3bb69",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "ragdollDef": "#hellhound",
+    "body": "#c_gen_direwolf_fb"
+}

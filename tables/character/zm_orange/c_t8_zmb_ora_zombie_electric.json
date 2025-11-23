@@ -1,0 +1,18 @@
+{
+    "name": "#c_t8_zmb_ora_zombie_electric",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "gibDef": "#c_t8_zmb_ora_zombie_electric_gib_def",
+    "body": "#hash_5f1bcd0df7f562ba",
+    "head": "#hash_18f366619b686d90",
+    "damagedTorso_Clean": "#hash_726f590d95151310",
+    "damagedTorso_RightArmGone": "#hash_1527c82738d9ff63",
+    "damagedTorso_LeftArmGone": "#hash_2419061f1736d6e5",
+    "damagedTorso_HeadGone": "#hash_4fbf73c8d7d9ada8",
+    "damagedLegs_Clean": "#hash_590667a2ca8f4415",
+    "damagedLegs_RightLegGone": "#hash_38a211f9901a7afd",
+    "damagedLegs_LeftLegGone": "#hash_4bb8cdc6e1e9ce87",
+    "damagedLegs_NoLegs": "#hash_469a106d92e4ab06"
+}
