@@ -1,6 +1,6 @@
 # Black Ops 4 Source
 
-Dump of some parts of BO4 using [Atian Call of Duty Tools](https://github.com/ate47/atian-cod-tools), please create an issue on the tools directory if you find a strange decompiled code.
+Black Ops 4 dump using [Atian Call of Duty Tools](https://github.com/ate47/atian-cod-tools).
 
 ![logo](logo.png)
 
@@ -60,25 +60,3 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 | streamkey               | 159 | `/tables/streamkey/`                |
 | sprayorgestureitem      | 165 | `/tables/sprayorgesture/`           |
 | sprayorgesturelist      | 166 | `/tables/sprayorgesture/list/`      |
-
-## Names
-
-All the dumped files in the path `/` are using the correct name, if a file name is unknown, the file is put in the `hashed/[pool]` directory. (where `[pool]` is the file origin)
-
-## CSV extraction
-
-Most of the CSV are extracted without the header, you can have some known or guessed header in the [CSV_HEADER.MD](CSV_HEADER.MD) file.
-
-- cells starting with a `#` are hashed. an empty cell with a `#` are empty hashed cells
-- cells starting with a `?` are from unknown types.
-
-## Hashes
-
-Thanks to these people for the hashes.
-
-- Serious and the others from the [t8-src](https://github.com/shiversoftdev/t8-src) repository.
-- Scobalula and the others from the [Greyhound package index](https://github.com/Scobalula/GreyhoundPackageIndex) repository.
-- Richkiller, we wish him all the best where he can be.
-- Jek47
-- Luisete2105 (Congrat for the matryoshkas)
-- All the others I forgot to mention.
