@@ -1,0 +1,14 @@
+hash_ed0e5ff109f50f2d
+hash_dc620bec3ab6c90d
+$identitynormalmap
+$white_reveal
+$gray_32_one_channel
+$blacktransparent_color
+jpsafe_mp_offshore_alt
+mc/global_invisible
+p7_gib_chunk_flesh_01
+p7_gib_chunk_flesh_03
+p7_gib_chunk_bone_03
+p7_gib_chunk_meat_01
+p7_gib_chunk_meat_02
+p7_gib_chunk_meat_03
