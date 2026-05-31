@@ -1,0 +1,358 @@
+{
+    "name": "#hash_70f091f235f97bf9",
+    "ddlDef": "#hash_54561ea133bcfcb9",
+    "unk18": 0,
+    "unk19": 1,
+    "unk1a": 0,
+    "unk1b": 0,
+    "unk1c": 1,
+    "rate": 1,
+    "fields": [
+        {
+            "name": "#hash_157a5bbb9becf257",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_4110ed2df03bbae",
+                "members": [
+                    {
+                        "name": "#hash_10843082d188230c",
+                        "scrName": "#hash_1335aeb7",
+                        "type": "BOOL"
+                    },
+                    {
+                        "name": "#latency",
+                        "scrName": "#latency",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#hash_3155d04edc797a1a",
+                        "scrName": "#hash_ba7eb0ec",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#data_size",
+                        "scrName": "#data_size",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hash_52521ecd1275d391",
+                        "scrName": "#hash_ea8ac676",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_5424ed280cfa4b36",
+                        "scrName": "#hash_d8fbec79",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#bandwidth_up",
+                        "scrName": "#bandwidth_up",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hash_68d55c52aa13f7b4",
+                        "scrName": "#hash_703a43ff",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hash_70259f4fbb3f7a05",
+                        "scrName": "#hash_6afabc5",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hash_7663f2e4bf3b7a23",
+                        "scrName": "#hash_dc894d39",
+                        "type": "UINT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#telemetry",
+            "arraySize": 0,
+            "members": {
+                "name": "#telemetry_header",
+                "members": [
+                    {
+                        "name": "#game_session_id",
+                        "scrName": "#hash_50f7aa03",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#action_type",
+                        "scrName": "#action_type",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#title_id",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#build_version",
+                        "scrName": "#build_version",
+                        "type": "STRING",
+                        "len": 32
+                    },
+                    {
+                        "name": "#platform",
+                        "scrName": "#platform",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#source_version",
+                        "scrName": "#source_version",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_56a1b6d783aa7a25",
+                        "scrName": "#hash_ee3228f8",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#changelist_number",
+                        "scrName": "#changelist_number",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#hash_20b0f8c6f632e6ff",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_e34a94c0792bab1",
+                "members": [
+                    {
+                        "name": "#nat_type",
+                        "scrName": "#nat_type",
+                        "type": "UINT8"
+                    },
+                    {
+                        "name": "#hash_4b5ffc955581a19e",
+                        "scrName": "#hash_8d6f1e24",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_78725a00fca985de",
+                        "scrName": "#hash_207bd54f",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#hash_7eeb3b0b30e2921a",
+                        "scrName": "#hash_7d4e5670",
+                        "type": "UINT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#header",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_6a65101a136eab93",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#user_id",
+                        "type": "UINT64",
+                        "s111u20": true
+                    },
+                    {
+                        "name": "#lobby_id",
+                        "scrName": "#lobby_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#title_id",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hash_426fb7404d1fbf32",
+                        "scrName": "#hash_86d5a83c",
+                        "type": "INT64"
+                    },
+                    {
+                        "name": "#hash_6bdd7ebe59310aa2",
+                        "scrName": "#hash_b8bfa824",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#hash_4323e09d2452778a",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_614dd0ece0bfbd27",
+                "members": [
+                    {
+                        "name": "#result",
+                        "scrName": "#result",
+                        "type": "UINT8"
+                    },
+                    {
+                        "name": "#duration_ms",
+                        "scrName": "#duration_ms",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hash_5fcf5a02824b74de",
+                        "scrName": "#hash_e298af72",
+                        "type": "UINT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#client",
+            "arraySize": 0,
+            "members": {
+                "name": "#client_header",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#user_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#user_session_id",
+                        "scrName": "#hash_e004f74d",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#uno_id",
+                        "scrName": "#uno_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#hash_51c7d25da657076a",
+            "arraySize": 8,
+            "members": {
+                "name": "#hash_c5a2a1d52b4736a",
+                "members": [
+                    {
+                        "name": "#hash_1a03a43c6642e4d6",
+                        "scrName": "#hash_d74784cd",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_585f73b9a8dbaec2",
+                        "scrName": "#hash_21c90bb",
+                        "type": "UINT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#hash_56264bcd868c21cc",
+            "arraySize": 16,
+            "members": {
+                "name": "#hash_fb47795e5d8f8d",
+                "members": [
+                    {
+                        "name": "#hash_e60a2bc44d9370a",
+                        "scrName": "#hash_fb896dd4",
+                        "type": "FLOAT"
+                    }
+                ]
+            }
+        }
+    ],
+    "unk60": [
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_855c9a40dc060cf",
+                "s3u10": "#hash_2",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    0
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_775a1eb90e25df27",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    0,
+                    5,
+                    4
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 0.02,
+            "s3u8": {
+                "s31u0": "#hash_5509b91edf99f9a4",
+                "s3u10": "#hash_6",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    2,
+                    3,
+                    9
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_415a3e8b41b48599",
+                "s3u10": "#hash_4",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_a",
+                "unk28": [
+                    2,
+                    3,
+                    5
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_68cc9f8f64640d09",
+                "s3u10": "#hash_7",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2,
+                    3
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_7b52e3919e2a5b79",
+                "s3u10": "#hash_9",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2
+                ]
+            }
+        }
+    ]
+}

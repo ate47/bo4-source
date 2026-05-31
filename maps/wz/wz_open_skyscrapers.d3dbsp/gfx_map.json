@@ -1,0 +1,23 @@
+{
+    "name": "#maps/wz/wz_open_skyscrapers.d3dbsp",
+    "baseName": "wz_open_skyscrapers",
+    "mins": "-2664277.2 -1214332.1 -59181.434",
+    "maxs": "3097745.8 3620106 157385.61",
+    "checksum": 0,
+    "streamerworld": "#hash_4d0edc9083364586",
+    "lighting": "#maps/wz/wz_open_skyscrapers.d3dbsp",
+    "lutMaterial": "#lut_wz_skyscrapers_summer",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_wz_open_skyscraper_summer",
+        "#img_trim_lut_wz_open_skyscraper_summer",
+        "#img_trim_lut_wz_open_skyscraper_summer",
+        "#img_trim_lut_wz_open_skyscraper_summer"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 6,
+        "cookieArray": "#*cookie_array"
+    }
+}

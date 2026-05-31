@@ -15,15 +15,18 @@
     "typeSuffix": "none",
     "spawnerType": "tiger",
     "character": [
-        "#hash_361eb19abe5a4bc8"
+        "#c_t8_zmb_dlc0_tiger1"
     ],
-    "meleeWeapon": "#hash_1783057563ce1ca2",
+    "animMappingTables": [
+        "#hash_33fdf2f467f642a3"
+    ],
+    "meleeWeapon": "#dog_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
     "footstepTable": "#tigerfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#zm_tiger.ai_bt",
+    "behaviorTree": "#hash_3407dbf467fe7013",
     "animStateMachine": "#hash_4ebfbf4ca76d94f0",
     "animSelectorTable": "#hash_4ebfb84ca76d890b",
     "traversalExtents": "#default_traversal_extents_zm",

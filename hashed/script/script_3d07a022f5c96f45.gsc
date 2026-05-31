@@ -115,7 +115,7 @@ function is_active( var_a75461b4 )
     
     if ( isdefined( var_a75461b4 ) )
     {
-        if ( isdefined( s_challenge ) && isarray( level.var_692c062e ) && isinarray( level.var_692c062e, var_a75461b4 ) )
+        if ( isdefined( s_challenge ) && isarray( level.a_w_allowed ) && isinarray( level.a_w_allowed, var_a75461b4 ) )
         {
             return true;
         }

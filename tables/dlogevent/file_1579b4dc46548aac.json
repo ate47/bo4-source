@@ -1,0 +1,392 @@
+{
+    "name": "#hash_1579b4dc46548aac",
+    "unk28": "#hash_3305444d3ac52f10",
+    "ddlDef": "#hash_22fe2d7b302dc280",
+    "unk18": 0,
+    "unk19": 1,
+    "unk1a": 1,
+    "unk1b": 0,
+    "unk1c": 0,
+    "rate": 1,
+    "fields": [
+        {
+            "name": "#telemetry",
+            "arraySize": 0,
+            "members": {
+                "name": "#telemetry_header",
+                "members": [
+                    {
+                        "name": "#game_session_id",
+                        "scrName": "#hash_50f7aa03",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#action_type",
+                        "scrName": "#action_type",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#title_id",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#build_version",
+                        "scrName": "#build_version",
+                        "type": "STRING",
+                        "len": 32
+                    },
+                    {
+                        "name": "#platform",
+                        "scrName": "#platform",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#source_version",
+                        "scrName": "#source_version",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_56a1b6d783aa7a25",
+                        "scrName": "#hash_ee3228f8",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#changelist_number",
+                        "scrName": "#changelist_number",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#match",
+            "arraySize": 0,
+            "members": {
+                "name": "#match_header",
+                "members": [
+                    {
+                        "name": "#lobby_id",
+                        "scrName": "#lobby_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#hash_c05315ddb26eb93",
+                        "scrName": "#hash_f81804cf",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#match_id",
+                        "scrName": "#match_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#client",
+            "arraySize": 0,
+            "members": {
+                "name": "#client_header",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#user_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#user_session_id",
+                        "scrName": "#hash_e004f74d",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#uno_id",
+                        "scrName": "#uno_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        }
+    ],
+    "members": [
+        {
+            "name": "#totalshots",
+            "scrName": "#totalshots",
+            "type": "INT32"
+        },
+        {
+            "name": "#shotshit",
+            "scrName": "#shotshit",
+            "type": "INT32"
+        },
+        {
+            "name": "#spawnid",
+            "scrName": "#spawnid",
+            "type": "INT32",
+            "len": 48
+        },
+        {
+            "name": "#playertime",
+            "scrName": "#playertime",
+            "type": "INT32"
+        },
+        {
+            "name": "#rankxp",
+            "scrName": "#rankxp",
+            "type": "INT32"
+        },
+        {
+            "name": "#kd",
+            "scrName": "#kd",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#username",
+            "scrName": "#username",
+            "type": "STRING",
+            "len": 48
+        },
+        {
+            "name": "#wallrun_time",
+            "scrName": "#wallrun_time",
+            "type": "INT32"
+        },
+        {
+            "name": "#bestkillstreak",
+            "scrName": "#bestkillstreak",
+            "type": "INT32"
+        },
+        {
+            "name": "#grenadesused",
+            "scrName": "#grenadesused",
+            "type": "INT32"
+        },
+        {
+            "name": "#currentweapon",
+            "scrName": "#currentweapon",
+            "type": "XHASH"
+        },
+        {
+            "name": "#dj_time",
+            "scrName": "#dj_time",
+            "type": "INT32"
+        },
+        {
+            "name": "#primaryloadoutweapon",
+            "scrName": "#primaryloadoutweapon",
+            "type": "XHASH"
+        },
+        {
+            "name": "#hash_3b10bf5cc604677d",
+            "scrName": "#hash_8e7c5842",
+            "type": "STRING",
+            "len": 128
+        },
+        {
+            "name": "#score",
+            "scrName": "#score",
+            "type": "INT32"
+        },
+        {
+            "name": "#wallrun_dist",
+            "scrName": "#hash_eeb75a04",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#sprint_dist",
+            "scrName": "#hash_f38de5a4",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#dim1",
+            "scrName": "#hash_c1e9a7",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#dim0",
+            "scrName": "#hash_ee83c52b",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#sprint_count",
+            "scrName": "#hash_5983424f",
+            "type": "INT32"
+        },
+        {
+            "name": "#dj_count",
+            "scrName": "#hash_5f11b3b0",
+            "type": "INT32"
+        },
+        {
+            "name": "#collectibles",
+            "scrName": "#collectibles",
+            "type": "STRING",
+            "len": 64
+        },
+        {
+            "name": "#deaths",
+            "scrName": "#deaths",
+            "type": "INT32"
+        },
+        {
+            "name": "#wallrun_count",
+            "scrName": "#hash_c595ee7d",
+            "type": "INT32"
+        },
+        {
+            "name": "#dj_dist",
+            "scrName": "#dj_dist",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#gametime",
+            "scrName": "#gametime",
+            "type": "INT32"
+        },
+        {
+            "name": "#meleekills",
+            "scrName": "#meleekills",
+            "type": "INT32"
+        },
+        {
+            "name": "#incaps",
+            "scrName": "#incaps",
+            "type": "INT32"
+        },
+        {
+            "name": "#rank",
+            "scrName": "#rank",
+            "type": "INT32"
+        },
+        {
+            "name": "#headshots",
+            "scrName": "#headshots",
+            "type": "INT32"
+        },
+        {
+            "name": "#sprint_time",
+            "scrName": "#sprint_time",
+            "type": "INT32"
+        },
+        {
+            "name": "#accuracy",
+            "scrName": "#accuracy",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#kills",
+            "scrName": "#kills",
+            "type": "INT32"
+        },
+        {
+            "name": "#assists",
+            "scrName": "#assists",
+            "type": "INT32"
+        }
+    ],
+    "unk60": [
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_855c9a40dc060cf",
+                "s3u10": "#hash_2",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    0
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_775a1eb90e25df27",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    0,
+                    5,
+                    4
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_290c784cb9dce798",
+                "s3u10": "#hash_6",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_f0",
+                "unk28": [
+                    2,
+                    3,
+                    9
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_415a3e8b41b48599",
+                "s3u10": "#hash_4",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_a",
+                "unk28": [
+                    2,
+                    3,
+                    5
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_68cc9f8f64640d09",
+                "s3u10": "#hash_7",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2,
+                    3
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_7b52e3919e2a5b79",
+                "s3u10": "#hash_9",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_9e7f226bd2c2c2c",
+                "s3u10": "#hash_8",
+                "s3u18": "#hash_400",
+                "unk28": [
+                    8
+                ]
+            }
+        }
+    ]
+}

@@ -13,7 +13,7 @@
 function event_handler[level_init] main( eventstruct )
 {
     level.draftxcam = #"ui_cam_draft_common";
-    level.var_482af62e = #"hash_12263e5d70551bf9";
+    level.var_482af62e = #"ui_cam_draft_common_zoom";
     mp_offshore_alt_fx::main();
     mp_offshore_alt_sound::main();
     load::main();

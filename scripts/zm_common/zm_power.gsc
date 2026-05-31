@@ -1114,7 +1114,7 @@ function turn_power_on_and_open_doors( power_zone )
     
     foreach ( player in level.players )
     {
-        player zm_stats::forced_attachment( "boas_power_turnedon" );
+        player zm_stats::function_8f10788e( "boas_power_turnedon" );
     }
     
     if ( zm_custom::function_901b751c( #"zmpowerdoorstate" ) != 0 )

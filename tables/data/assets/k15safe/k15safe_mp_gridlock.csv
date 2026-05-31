@@ -1,0 +1,10 @@
+type,name
+techset,#hash_52391377bc2aba11
+image,d#$white_gloss
+image,d#i_t8_decal_blood_puddle_floor_01_c
+image,#i_t8_decal_blood_puddle_floor_01_r
+image,d#$white_reveal
+image,d#$gray_32_one_channel
+keyvaluepairs,#k15safe_mp_gridlock
+material,#hash_165777bf0b5a81b0
+material,#hash_2907b19e1a44c529

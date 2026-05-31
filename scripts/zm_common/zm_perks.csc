@@ -26,12 +26,12 @@ function init()
     
     if ( level.var_c3e5c4cd == 2 )
     {
-        level._effect[ #"hash_223e3f9bde46f5b4" ] = #"hash_1678d9a47030413d";
-        level._effect[ #"hash_10e42380c1009ee9" ] = #"hash_6ecd7d04b43d3fde";
-        level._effect[ #"hash_110d9fbfd034c819" ] = #"hash_3060d78224e9c44e";
-        level._effect[ #"hash_6e4e902b59a22662" ] = #"hash_3bb50572a528b187";
-        level._effect[ #"hash_26247c4bfd6fed73" ] = #"hash_57eb5602b41fa4db";
-        level._effect[ #"hash_46334db9e3c76275" ] = #"hash_3a24f6e29267c4d7";
+        level._effect[ #"danu_ledge_fx" ] = #"hash_1678d9a47030413d";
+        level._effect[ #"ra_ledge_fx" ] = #"hash_6ecd7d04b43d3fde";
+        level._effect[ #"zeus_ledge_fx" ] = #"hash_3060d78224e9c44e";
+        level._effect[ #"odin_ledge_fx" ] = #"hash_3bb50572a528b187";
+        level._effect[ #"purchased_ledge_fx" ] = #"hash_57eb5602b41fa4db";
+        level._effect[ #"zeus_bird_fx" ] = #"hash_3a24f6e29267c4d7";
     }
     
     level._effect[ #"altar_icon_ambient_fx" ] = #"hash_2c9a36103f6cc1e9";
@@ -123,7 +123,7 @@ function perks_register_clientfield()
     
     if ( level.var_c3e5c4cd == 2 )
     {
-        clientfield::register( "world", "" + #"hash_46334db9e3c76275", 1, 1, "int", &function_9b4bc8e7, 0, 0 );
+        clientfield::register( "world", "" + #"zeus_bird_fx", 1, 1, "int", &function_9b4bc8e7, 0, 0 );
         clientfield::register( "scriptmover", "" + #"hash_50eb488e58f66198", 1, 1, "int", &function_52c149b2, 0, 0 );
         clientfield::register( "allplayers", "" + #"hash_222c3403d2641ea6", 1, 3, "int", &function_ab7cd429, 0, 0 );
         clientfield::register( "toplayer", "" + #"hash_17283692696da23b", 1, 1, "counter", &function_ccbdf992, 0, 0 );
@@ -378,25 +378,25 @@ function function_bb184fed( localclientnum, oldval, newval, bnewent, binitialsna
             case #"p8_fxanim_zm_vapor_altar_danu_mod":
             case #"p8_fxanim_zm_perk_vending_brew_mod":
                 n_slot = 0;
-                var_fe826f11 = level._effect[ #"hash_223e3f9bde46f5b4" ];
+                var_fe826f11 = level._effect[ #"danu_ledge_fx" ];
                 var_7ad76c54 = 3;
                 break;
             case #"p8_fxanim_zm_red_vapor_altar_ra_mod":
             case #"p8_fxanim_zm_vapor_altar_ra_mod":
             case #"p8_fxanim_zm_perk_vending_cola_mod":
                 n_slot = 1;
-                var_fe826f11 = level._effect[ #"hash_10e42380c1009ee9" ];
+                var_fe826f11 = level._effect[ #"ra_ledge_fx" ];
                 var_7ad76c54 = 5;
                 break;
             case #"p8_fxanim_zm_vapor_altar_zeus_mod":
             case #"p8_fxanim_zm_perk_vending_soda_mod":
                 n_slot = 2;
-                var_fe826f11 = level._effect[ #"hash_110d9fbfd034c819" ];
+                var_fe826f11 = level._effect[ #"zeus_ledge_fx" ];
                 break;
             case #"p8_fxanim_zm_perk_vending_tonic_mod":
             case #"p8_fxanim_zm_vapor_altar_odin_mod":
                 n_slot = 3;
-                var_fe826f11 = level._effect[ #"hash_6e4e902b59a22662" ];
+                var_fe826f11 = level._effect[ #"odin_ledge_fx" ];
                 var_7ad76c54 = 2;
                 break;
             default:
@@ -478,21 +478,21 @@ function function_35ba0b0e( localclientnum, n_slot )
     self endon( #"death" );
     self zm_loadout::function_622d8349( localclientnum );
     n_perk = n_slot + 1;
-    var_3e311473 = self zm_loadout::get_loadout_item( localclientnum, "specialty" + n_perk );
+    n_perk_index = self zm_loadout::get_loadout_item( localclientnum, "specialty" + n_perk );
     
     /#
         if ( !isdemoplaying() && !( isdefined( level.b_game_ended ) && level.b_game_ended ) )
         {
-            assert( isdefined( var_3e311473 ), "<dev string:x79>" );
+            assert( isdefined( n_perk_index ), "<dev string:x79>" );
         }
     #/
     
-    if ( !isdefined( var_3e311473 ) )
+    if ( !isdefined( n_perk_index ) )
     {
         return;
     }
     
-    s_perk = getunlockableiteminfofromindex( var_3e311473, 3 );
+    s_perk = getunlockableiteminfofromindex( n_perk_index, 3 );
     
     if ( !isdefined( s_perk ) || !isdefined( s_perk.specialties ) || !isdefined( s_perk.specialties[ 0 ] ) )
     {
@@ -670,7 +670,7 @@ function function_bde5bc78( localclientnum, var_fe0b737a, newval, oldval )
         }
         else
         {
-            self.mdl_altar.var_be82764e = level._effect[ #"hash_26247c4bfd6fed73" ];
+            self.mdl_altar.var_be82764e = level._effect[ #"purchased_ledge_fx" ];
             self.mdl_altar function_5b123b68( localclientnum, 1, 1 );
         }
     }
@@ -784,7 +784,7 @@ function function_9b4bc8e7( localclientnum, oldval, newval, bnewent, binitialsna
             level.var_aaf8da70 = getent( localclientnum, "zeus_bird_head", "targetname" );
         }
         
-        util::playfxontag( localclientnum, level._effect[ #"hash_46334db9e3c76275" ], level.var_aaf8da70, "bird_follow_jnt" );
+        util::playfxontag( localclientnum, level._effect[ #"zeus_bird_fx" ], level.var_aaf8da70, "bird_follow_jnt" );
         level.var_aaf8da70 thread function_6a0a572d( localclientnum );
     }
 }

@@ -200,11 +200,11 @@
         
         foreach ( item_hash, boasts in var_fca60300 )
         {
-            item_root = player_devgui_base + function_9e72a96( item_hash ) + "<dev string:x294>";
+            item_root = player_devgui_base + hashtostring( item_hash ) + "<dev string:x294>";
             
             foreach ( boast in boasts )
             {
-                util::add_devgui( item_root + function_9e72a96( boast ), "<dev string:x274>" + "<dev string:x27b>" + "<dev string:x20a>" + function_9e72a96( boast ) );
+                util::add_devgui( item_root + hashtostring( boast ), "<dev string:x274>" + "<dev string:x27b>" + "<dev string:x20a>" + hashtostring( boast ) );
             }
             
             waitframe( 1 );
@@ -1348,7 +1348,7 @@
             {
                 if ( isdefined( action[ #"job_type" ] ) )
                 {
-                    keystring = function_9e72a96( key );
+                    keystring = hashtostring( key );
                     util::add_devgui( path + "<dev string:x8eb>" + keystring[ 0 ] + "<dev string:x294>" + keystring, cmd + action[ #"row" ] );
                     
                     if ( isdefined( action[ #"hash_401b1493e5188252" ] ) && action[ #"hash_401b1493e5188252" ] == #"ender" )

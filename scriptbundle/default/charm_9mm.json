@@ -1,11 +1,11 @@
 {
-    "lootid": "#hash_652641dab6cbb097",
-    "hash_ff3063df": "model#",
+    "lootid": "#charm_9mm_bullet",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_9mmbullet",
     "name": "charm_9mm",
     "displayname": "localized17#hash_384689e7ec38687c",
     "entitlement": "#hash_377b58d9f38de25f",
     "icon": "ui_icon_weapon_charms_9mmbullet",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_9mmbullet"
 }

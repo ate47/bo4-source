@@ -300,9 +300,9 @@ function zombie_spawn_init()
         self.sword_kill_power = 2;
     }
     
-    if ( isdefined( level.var_9c55db3 ) )
+    if ( isdefined( level.achievement_monitor_func ) )
     {
-        self [[ level.var_9c55db3 ]]();
+        self [[ level.achievement_monitor_func ]]();
     }
     
     if ( isdefined( zm_utility::get_gamemode_var( "post_init_zombie_spawn_func" ) ) )
@@ -1361,9 +1361,9 @@ function zombie_death_animscript( einflictor, attacker, idamage, smeansofdeath, 
         return false;
     }
     
-    if ( isdefined( level.var_5250bbfe ) )
+    if ( isdefined( level.zombie_death_animscript_override ) )
     {
-        self [[ level.var_5250bbfe ]]();
+        self [[ level.zombie_death_animscript_override ]]();
     }
     
     self.grenadeammo = 0;
@@ -1697,7 +1697,7 @@ function zombie_death_event( zombie )
                 attacker zm_stats::function_2726a7c2( "headshots" );
                 attacker zm_stats::function_3468f864( "headshots" );
                 attacker zm_stats::increment_challenge_stat( #"zombie_hunter_kill_headshot" );
-                attacker zm_stats::forced_attachment( "boas_headshots" );
+                attacker zm_stats::function_8f10788e( "boas_headshots" );
                 attacker zm_stats::registerchand_grow_( "headshots" );
                 attacker thread activecamo::function_896ac347( zombie.damageweapon, #"headshots", 1 );
                 attacker zm_camos::function_432cf6d( zombie.damageweapon );
@@ -1713,7 +1713,7 @@ function zombie_death_event( zombie )
             attacker zm_stats::increment_client_stat( "melee_kills" );
             attacker zm_stats::increment_player_stat( "melee_kills" );
             attacker notify( #"melee_kill" );
-            attacker zm_stats::forced_attachment( "boas_melee_kills" );
+            attacker zm_stats::function_8f10788e( "boas_melee_kills" );
             println( "<dev string:x186>" );
         }
         
@@ -1725,7 +1725,7 @@ function zombie_death_event( zombie )
         attacker zm_stats::function_3468f864( "kills" );
         attacker zm_stats::function_f1a1191d( "kills" );
         attacker zm_stats::function_2726a7c2( "kills" );
-        attacker zm_stats::forced_attachment( "boas_kills" );
+        attacker zm_stats::function_8f10788e( "boas_kills" );
         attacker zm_stats::registerchand_grow_( "kills" );
         
         if ( isdefined( zombie ) && isdefined( zombie.damageweapon ) )
@@ -2413,9 +2413,9 @@ function do_zombie_rise( spot )
     {
         self animscripted( "rise_anim", self.origin, spot.angles, custom_riseanim, "normal" );
     }
-    else if ( isdefined( level.var_6129f460 ) )
+    else if ( isdefined( level.custom_rise_func ) )
     {
-        self [[ level.var_6129f460 ]]( spot );
+        self [[ level.custom_rise_func ]]( spot );
     }
     else
     {

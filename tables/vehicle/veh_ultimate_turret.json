@@ -1,0 +1,46 @@
+{
+    "name": "#veh_ultimate_turret",
+    "type": "artillery",
+    "scriptVehicleType": "sentry_turret",
+    "scoreType": "none",
+    "archeType": "#turret",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "deathFx": "#hash_24886715795bf94d",
+    "deathFxTag": "tag_turret",
+    "lightFx": [
+        "#hash_7aba2f333cd1bff9",
+        "#hash_678ac7747906c1ae"
+    ],
+    "lightFxTag": [
+        "tag_laser",
+        "tag_camera_cable"
+    ],
+    "unk11f4": [
+        "tag_rotor_fl",
+        "tag_rotor_fr",
+        "tag_rotor_rl",
+        "tag_rotor_rr"
+    ],
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "futzName": "#hash_45fb162abe4d4c98",
+    "model": "#hash_64066a0a9d23649b",
+    "deathModel": "#hash_63c86e0a9cee0a49",
+    "soundDef": "#veh_drn_qrdrone_mp",
+    "compassIconMaterial": "#compass_turret_white",
+    "destructibleDef": "#hash_76cd9bb6ff13c1e5",
+    "steerAxisName": "AXIS_RSTICK",
+    "gasAxisName": "AXIS_LSTICK",
+    "attackButtonName": "BUTTON_RTRIG",
+    "boostButtonName": "BUTTON_LTRIG",
+    "unk1608": "BUTTON_RSHLDR",
+    "unk1618": "BUTTON_LSHLDR",
+    "bundle": {
+        "healthpoolsize": 650,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 2
+    }
+}

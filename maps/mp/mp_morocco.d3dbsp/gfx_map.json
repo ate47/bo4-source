@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_morocco.d3dbsp",
+    "baseName": "mp_morocco",
+    "mins": "-130377.375 -92448.19 -9690.038",
+    "maxs": "130055.164 57478.4 16132.584",
+    "checksum": 0,
+    "streamerworld": "#hash_788b6874cc83d73d",
+    "lighting": "#maps/mp/mp_morocco.d3dbsp",
+    "lutMaterial": "#lut_mp_morocco",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_morocco",
+        "#img_trim_lut_mp_morocco",
+        "#img_trim_lut_mp_morocco",
+        "#img_trim_lut_mp_morocco"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 3,
+        "cookieArray": "#*cookie_array"
+    }
+}

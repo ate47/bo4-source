@@ -2,8 +2,9 @@
     "name": "#hero_pineapplegun_mp",
     "baseWeapon": "#hero_pineapplegun",
     "displayname": "#weapon/hero_pineapplegun",
-    "xhash_70": "#hero_pineapplegun",
-    "streamkey": "#hash_13a35a23219d4d8c",
+    "weapon70": "#hero_pineapplegun",
+    "weapon880": "#hero_pineapple_grenade_mp",
+    "soundbank": "#hero_pineapplegun_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -12,21 +13,36 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "MULTIPLAYER",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.2517 1",
+            "0.5006 1",
+            "1 0.0507"
+        ],
+        [
+            "0 1",
+            "0.2517 1",
+            "0.5006 1",
+            "1 0.0507"
+        ]
+    ],
     "sound90": "#hash_30811ca009af27a4",
     "firesound": "#hash_c0e87a12dcdbe86",
     "firesoundplayer": "#hash_376e6a170e877ab",
@@ -37,10 +53,9 @@
     "sound7d0": "#hash_a5579115a16f4fb",
     "sound800": "#hash_54f28bb508a46096",
     "sound810": "#hash_54f28bb508a46096",
-    "sound880": "#hero_pineapple_grenade_mp",
     "tunables1": "#hash_42a656ae245549bb",
     "tunables2": "#hash_42a656ae245549bb",
-    "cacWeaponXCam": "#hash_293c8d81f42b5363",
+    "cacWeaponXCam": "#ui_cam_cac_hero_pineapplegun",
     "attachments": [
         "#defaultattachment"
     ],
@@ -48,6 +63,22 @@
         "#hash_79d82bea595d6b0c"
     ],
     "sharedWeaponSounds": "#rifle",
+    "statusEffects": [
+        {
+            "effect": "#hash_a608bf886a137e8e",
+            "statusEffects:unk8": "[ll0x0=1f400000064][f0x0=1.4013e-43][f0x4=7.00649e-43] 64 00 00 00 f4 01 00 00",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        }
+    ],
     "#hash_2e4a8800": "#hero_pineapplegun_scoreevents",
     "projectilemodel": "#wpn_t8_hero_war_machine_projectile",
     "viewmodel": [
@@ -74,7 +105,7 @@
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],
-    "normalImpactFX": "#hash_219f0df6a19c4ac4",
-    "normalImpactSounds": "#hash_243498ac40a58702",
-    "bounceImpactSounds": "#hash_6bde0439d1eb051d"
+    "normalImpactFX": "#hero_pineapple_explosion",
+    "normalImpactSounds": "#grenade_pineapple_explode_material",
+    "bounceImpactSounds": "#grenade_pineapple_bounce"
 }

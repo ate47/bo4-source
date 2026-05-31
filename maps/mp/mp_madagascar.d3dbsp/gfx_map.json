@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_madagascar.d3dbsp",
+    "baseName": "mp_madagascar",
+    "mins": "-22655.127 -46389.297 -1389.2399",
+    "maxs": "45418.15 38734.508 2078.355",
+    "checksum": 0,
+    "streamerworld": "#hash_60e94917c358bcc5",
+    "lighting": "#maps/mp/mp_madagascar.d3dbsp",
+    "lutMaterial": "#lut_mp_madagascar",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_madagascar",
+        "#img_trim_lut_mp_madagascar",
+        "#img_trim_lut_mp_madagascar",
+        "#img_trim_lut_mp_madagascar"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 2,
+        "cookieArray": "#*cookie_array"
+    }
+}

@@ -398,7 +398,7 @@ class class_7da27482
     // Namespace namespace_7da27482/character_customization
     // Params 4, eflags: 0x4
     // Checksum 0xce41bb6a, Offset: 0x3df0
-    // Size: 0x12a, Type: bool
+    // Size: 0x12a
     function private function_2e77aae4( localclientnum, weaponmodel, camooptions, var_49daa2f6 )
     {
         stage = getactivecamostage( camooptions );
@@ -407,7 +407,7 @@ class class_7da27482
         
         if ( !isdefined( activecamoinfo ) )
         {
-            return false;
+            return 0;
         }
         
         var_ddcdb079 = array( 166, 167, 168, 170, 171, 172, 173 );

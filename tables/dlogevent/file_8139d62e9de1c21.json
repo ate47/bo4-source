@@ -1,0 +1,698 @@
+{
+    "name": "#hash_8139d62e9de1c21",
+    "ddlDef": "#gamedata/ddl/generated/dlog_event_performance.ddl",
+    "unk18": 0,
+    "unk19": 1,
+    "unk1a": 1,
+    "unk1b": 0,
+    "unk1c": 1,
+    "rate": 1,
+    "fields": [
+        {
+            "name": "#ui",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_4bc2231ce039ad50",
+                "members": [
+                    {
+                        "name": "#std",
+                        "scrName": "#std",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#min",
+                        "scrName": "#min",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#max",
+                        "scrName": "#max",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#avg",
+                        "scrName": "#avg",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#stream_terrain",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_3ea575a2be6523f8",
+                "members": [
+                    {
+                        "name": "#generic",
+                        "scrName": "#generic",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#image",
+                        "scrName": "#image",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#mesh",
+                        "scrName": "#mesh",
+                        "type": "FLOAT"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#stream_env",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_3ea575a2be6523f8",
+                "members": [
+                    {
+                        "name": "#generic",
+                        "scrName": "#generic",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#image",
+                        "scrName": "#image",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#mesh",
+                        "scrName": "#mesh",
+                        "type": "FLOAT"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#telemetry",
+            "arraySize": 0,
+            "members": {
+                "name": "#telemetry_header",
+                "members": [
+                    {
+                        "name": "#game_session_id",
+                        "scrName": "#hash_50f7aa03",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#action_type",
+                        "scrName": "#action_type",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#title_id",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#build_version",
+                        "scrName": "#build_version",
+                        "type": "STRING",
+                        "len": 32
+                    },
+                    {
+                        "name": "#platform",
+                        "scrName": "#platform",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#source_version",
+                        "scrName": "#source_version",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_56a1b6d783aa7a25",
+                        "scrName": "#hash_ee3228f8",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#changelist_number",
+                        "scrName": "#changelist_number",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#clientdraw",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_4bc2231ce039ad50",
+                "members": [
+                    {
+                        "name": "#std",
+                        "scrName": "#std",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#min",
+                        "scrName": "#min",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#max",
+                        "scrName": "#max",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#avg",
+                        "scrName": "#avg",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#stream_characters",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_3ea575a2be6523f8",
+                "members": [
+                    {
+                        "name": "#generic",
+                        "scrName": "#generic",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#image",
+                        "scrName": "#image",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#mesh",
+                        "scrName": "#mesh",
+                        "type": "FLOAT"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#stream_vehicles",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_3ea575a2be6523f8",
+                "members": [
+                    {
+                        "name": "#generic",
+                        "scrName": "#generic",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#image",
+                        "scrName": "#image",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#mesh",
+                        "scrName": "#mesh",
+                        "type": "FLOAT"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#match",
+            "arraySize": 0,
+            "members": {
+                "name": "#match_header",
+                "members": [
+                    {
+                        "name": "#lobby_id",
+                        "scrName": "#lobby_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#hash_c05315ddb26eb93",
+                        "scrName": "#hash_f81804cf",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#match_id",
+                        "scrName": "#match_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#client",
+            "arraySize": 0,
+            "members": {
+                "name": "#client_header",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#user_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#user_session_id",
+                        "scrName": "#hash_e004f74d",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#uno_id",
+                        "scrName": "#uno_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#stream_light",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_3ea575a2be6523f8",
+                "members": [
+                    {
+                        "name": "#generic",
+                        "scrName": "#generic",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#image",
+                        "scrName": "#image",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#mesh",
+                        "scrName": "#mesh",
+                        "type": "FLOAT"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#stream_weapons",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_3ea575a2be6523f8",
+                "members": [
+                    {
+                        "name": "#generic",
+                        "scrName": "#generic",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#image",
+                        "scrName": "#image",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#mesh",
+                        "scrName": "#mesh",
+                        "type": "FLOAT"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#frame",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_4bc2231ce039ad50",
+                "members": [
+                    {
+                        "name": "#std",
+                        "scrName": "#std",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#min",
+                        "scrName": "#min",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#max",
+                        "scrName": "#max",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#avg",
+                        "scrName": "#avg",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#clientupdate",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_4bc2231ce039ad50",
+                "members": [
+                    {
+                        "name": "#std",
+                        "scrName": "#std",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#min",
+                        "scrName": "#min",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#max",
+                        "scrName": "#max",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#avg",
+                        "scrName": "#avg",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#stream_none",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_3ea575a2be6523f8",
+                "members": [
+                    {
+                        "name": "#generic",
+                        "scrName": "#generic",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#image",
+                        "scrName": "#image",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#mesh",
+                        "scrName": "#mesh",
+                        "type": "FLOAT"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#stream_anim",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_3ea575a2be6523f8",
+                "members": [
+                    {
+                        "name": "#generic",
+                        "scrName": "#generic",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#image",
+                        "scrName": "#image",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#mesh",
+                        "scrName": "#mesh",
+                        "type": "FLOAT"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#camera",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_5e4dc4e07696d328",
+                "members": [
+                    {
+                        "name": "#y",
+                        "scrName": "#y",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#x",
+                        "scrName": "#x",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#z",
+                        "scrName": "#z",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#stream_audio",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_3ea575a2be6523f8",
+                "members": [
+                    {
+                        "name": "#generic",
+                        "scrName": "#generic",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#image",
+                        "scrName": "#image",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#mesh",
+                        "scrName": "#mesh",
+                        "type": "FLOAT"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#gpuframe",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_4bc2231ce039ad50",
+                "members": [
+                    {
+                        "name": "#std",
+                        "scrName": "#std",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#min",
+                        "scrName": "#min",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#max",
+                        "scrName": "#max",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#avg",
+                        "scrName": "#avg",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#stream_fx",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_3ea575a2be6523f8",
+                "members": [
+                    {
+                        "name": "#generic",
+                        "scrName": "#generic",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#image",
+                        "scrName": "#image",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#mesh",
+                        "scrName": "#mesh",
+                        "type": "FLOAT"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#stream_ui",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_3ea575a2be6523f8",
+                "members": [
+                    {
+                        "name": "#generic",
+                        "scrName": "#generic",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#image",
+                        "scrName": "#image",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#mesh",
+                        "scrName": "#mesh",
+                        "type": "FLOAT"
+                    }
+                ]
+            }
+        }
+    ],
+    "members": [
+        {
+            "name": "#streamer_forced",
+            "scrName": "#hash_4a74466a",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#hash_b8a5310b16895f8",
+            "scrName": "#hash_dafe17b4",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#hash_320012f3ddbd42e1",
+            "scrName": "#hash_4372fe29",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#hash_41c61675e9a0b2d1",
+            "scrName": "#hash_c83e48bf",
+            "type": "INT32"
+        },
+        {
+            "name": "#is_alive",
+            "scrName": "#is_alive",
+            "type": "BOOL"
+        },
+        {
+            "name": "#streamer_image_quality",
+            "scrName": "#hash_53e9ab74",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#in_vehicle",
+            "scrName": "#in_vehicle",
+            "type": "BOOL"
+        },
+        {
+            "name": "#hash_6535fe3e4fdf1dab",
+            "scrName": "#hash_e4049955",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_694ebf1c86e2b370",
+            "scrName": "#hash_1f3b3d36",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#player_count",
+            "scrName": "#player_count",
+            "type": "UINT32"
+        },
+        {
+            "name": "#streamer_waste",
+            "scrName": "#hash_8702a494",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#streamer_reads",
+            "scrName": "#hash_3bbaf8ee",
+            "type": "INT32"
+        }
+    ],
+    "unk60": [
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_855c9a40dc060cf",
+                "s3u10": "#hash_2",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    0
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_2fd213c01f787f8d",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_f0",
+                "unk28": [
+                    0,
+                    5,
+                    4
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 0.01,
+            "s3u8": {
+                "s31u0": "#hash_290c784cb9dce798",
+                "s3u10": "#hash_6",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_f0",
+                "unk28": [
+                    2,
+                    3,
+                    9
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_415a3e8b41b48599",
+                "s3u10": "#hash_4",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_a",
+                "unk28": [
+                    2,
+                    3,
+                    5
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_68cc9f8f64640d09",
+                "s3u10": "#hash_7",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2,
+                    3
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_7b52e3919e2a5b79",
+                "s3u10": "#hash_9",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2
+                ]
+            }
+        }
+    ]
+}

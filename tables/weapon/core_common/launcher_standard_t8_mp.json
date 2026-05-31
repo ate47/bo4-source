@@ -2,9 +2,9 @@
     "name": "#launcher_standard_t8_mp",
     "baseWeapon": "#launcher_standard_t8",
     "displayname": "#weapon/launcher_standard_t8",
-    "xhash_70": "#launcher_standard_t8",
+    "weapon70": "#launcher_standard_t8",
     "luigiReticleWidget": "rocketLauncherReticle",
-    "streamkey": "#hash_15e7263c4b968372",
+    "soundbank": "#launcher_standard_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -18,21 +18,36 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "MULTIPLAYER",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.2517 1",
+            "0.5006 1",
+            "1 0.0507"
+        ],
+        [
+            "0 1",
+            "0.2517 1",
+            "0.5006 1",
+            "1 0.0507"
+        ]
+    ],
     "sound90": "#hash_540a563c135f722f",
     "sounda0": "#hash_5fd3d93f612e7109",
     "firesound": "#hash_4c62b2b1277d44c9",
@@ -40,15 +55,15 @@
     "sound240": "#hash_fc4ca27d80d6d52",
     "sound250": "#hash_4232e127f42d7cf7",
     "sound270": "#hash_4382ea72adea8a5c",
-    "projexplosionsound": "#hash_347fbe348869aaa7",
+    "projexplosionsound": "#wpn_rocket_explode",
     "sound7f0": "#hash_a077f74dbdf984a",
     "sound800": "#hash_54f28bb508a46096",
     "sound810": "#hash_54f28bb508a46096",
     "tunables1": "#launcher_standard_t8_tunables_mp",
     "weaponCamo": "#hash_3eec52c828eb87b1",
-    "cacWeaponXCam": "#hash_40f5f7f4e5c7096",
-    "cacAttachmentsXCam": "#hash_40f5f7f4e5c7096",
-    "weaponIconXCam": "#hash_7313e3dffba7aa5e",
+    "cacWeaponXCam": "#ui_cam_cac_launcher_standard",
+    "cacAttachmentsXCam": "#ui_cam_cac_launcher_standard",
+    "weaponIconXCam": "#ui_cam_icon_launcher_standard",
     "attachments": [
         "#defaultattachment"
     ],
@@ -56,6 +71,23 @@
         "#hash_b9d7526cd644a9c"
     ],
     "sharedWeaponSounds": "#launcher",
+    "statusEffects": [
+        {
+            "effect": "#hash_2608bf886a137e8e",
+            "statusEffects:unk8": "[ll0x0=25800000064][f0x0=1.4013e-43][f0x4=8.40779e-43] 64 00 00 00 58 02 00 00",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f",
+            "statusEffects:unk18": "[32h0x4=][ll0x0=294][f0x0=9.24857e-43][f0x4=0] 94 02 00 00 00 00 00 00"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        }
+    ],
     "model_d28": "#wpn_t8_launcher_standard_projectile_world",
     "projectilemodel": "#wpn_t8_launcher_standard_projectile_world",
     "viewmodel": [
@@ -83,6 +115,6 @@
     ],
     "normalImpactFX": "#rocket_explosion",
     "bounceImpactFX": "#rocket_bounce",
-    "normalImpactSounds": "#hash_68e0a97bbbf0b555",
+    "normalImpactSounds": "#grenade_explode_material",
     "bounceImpactSounds": "#grenade_bounce"
 }

@@ -47,9 +47,9 @@ function function_fb0bd6b9( localclientnum )
     }
     
     nixie_tube_cage.canuse = 0;
-    var_679f0ee5 = struct::get_array( "nixie_tubes", "script_noteworthy" );
+    a_s_nixie_tubes = struct::get_array( "nixie_tubes", "script_noteworthy" );
     
-    foreach ( s_tube in var_679f0ee5 )
+    foreach ( s_tube in a_s_nixie_tubes )
     {
         var_790990d7 = util::spawn_model( localclientnum, #"p8_zm_esc_nixie_tubes", s_tube.origin, s_tube.angles );
         var_8f21b4af = util::spawn_model( localclientnum, #"p8_zm_esc_nixie_tubes_on", s_tube.origin, s_tube.angles );

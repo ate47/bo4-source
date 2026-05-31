@@ -35,8 +35,8 @@ function __init__()
 // Size: 0x64
 function enable()
 {
-    zm_wallbuy::function_c047c228( &function_84832f40 );
-    zm_wallbuy::function_33023da5( &function_84832f40 );
+    zm_wallbuy::function_c047c228( &override_wallbuy_cost );
+    zm_wallbuy::function_33023da5( &override_wallbuy_cost );
     zm_wallbuy::function_48f914bd( &override_ammo_cost );
 }
 
@@ -46,8 +46,8 @@ function enable()
 // Size: 0x64
 function disable()
 {
-    zm_wallbuy::function_a6889c( &function_84832f40 );
-    zm_wallbuy::function_782e8955( &function_84832f40 );
+    zm_wallbuy::function_a6889c( &override_wallbuy_cost );
+    zm_wallbuy::function_782e8955( &override_wallbuy_cost );
     zm_wallbuy::function_99911dae( &override_ammo_cost );
 }
 
@@ -69,7 +69,7 @@ function validation()
 // Params 2
 // Checksum 0x3f0f46fb, Offset: 0x290
 // Size: 0x18
-function function_84832f40( w_wallbuy, var_2b6f3563 )
+function override_wallbuy_cost( w_wallbuy, t_wallbuy )
 {
     return 10;
 }

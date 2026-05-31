@@ -373,7 +373,7 @@
                     }
                     
                     circle( print_origin, 30, color );
-                    print3d( print_origin, function_9e72a96( var_375627f0 ), color, 1, 0.5 );
+                    print3d( print_origin, hashtostring( var_375627f0 ), color, 1, 0.5 );
                     print3d( print_origin + ( 0, 0, -10 ), "<dev string:x578>" + zone_path.cost, color, 1, 0.5 );
                     
                     if ( isdefined( zone_path.to_zone ) )
@@ -410,7 +410,7 @@
                             print_origin = zone.volumes[ 0 ].origin;
                         }
                         
-                        print3d( print_origin, function_9e72a96( zone_name ), ( 1, 0, 0 ), 1, 0.5 );
+                        print3d( print_origin, hashtostring( zone_name ), ( 1, 0, 0 ), 1, 0.5 );
                         circle( print_origin, 30, ( 1, 0, 0 ) );
                         circle( print_origin, 35, ( 1, 0, 0 ) );
                         circle( print_origin, 40, ( 1, 0, 0 ) );
@@ -731,8 +731,8 @@
                 
                 if ( isdefined( self.archetype ) )
                 {
-                    println( "<dev string:x7db>" + function_9e72a96( self.archetype ) + "<dev string:x7eb>" + spawn_point_origin_backup + "<dev string:x80c>" + spawn_point.targetname );
-                    iprintlnbold( "<dev string:x7db>" + function_9e72a96( self.archetype ) + "<dev string:x7eb>" + spawn_point_origin_backup + "<dev string:x80c>" + spawn_point.targetname );
+                    println( "<dev string:x7db>" + hashtostring( self.archetype ) + "<dev string:x7eb>" + spawn_point_origin_backup + "<dev string:x80c>" + spawn_point.targetname );
+                    iprintlnbold( "<dev string:x7db>" + hashtostring( self.archetype ) + "<dev string:x7eb>" + spawn_point_origin_backup + "<dev string:x80c>" + spawn_point.targetname );
                 }
                 else
                 {
@@ -780,8 +780,8 @@
                         
                         if ( isdefined( self.archetype ) )
                         {
-                            println( "<dev string:x85b>" + function_9e72a96( self.archetype ) + "<dev string:x7eb>" + new_spawn_point_origin + "<dev string:x86a>" + spawn_point.targetname );
-                            iprintlnbold( "<dev string:x7db>" + function_9e72a96( self.archetype ) + "<dev string:x7eb>" + new_spawn_point_origin + "<dev string:x86a>" + spawn_point.targetname );
+                            println( "<dev string:x85b>" + hashtostring( self.archetype ) + "<dev string:x7eb>" + new_spawn_point_origin + "<dev string:x86a>" + spawn_point.targetname );
+                            iprintlnbold( "<dev string:x7db>" + hashtostring( self.archetype ) + "<dev string:x7eb>" + new_spawn_point_origin + "<dev string:x86a>" + spawn_point.targetname );
                         }
                         else
                         {
@@ -831,7 +831,7 @@
         
         if ( isdefined( archetype ) )
         {
-            archetype = function_9e72a96( archetype );
+            archetype = hashtostring( archetype );
         }
         
         while ( true )
@@ -990,14 +990,14 @@
         if ( status == 2 )
         {
             circle( print_origin, 30, ( 0, 1, 0 ) );
-            print3d( print_origin, function_9e72a96( name ), ( 0, 1, 0 ), 1, 0.5 );
+            print3d( print_origin, hashtostring( name ), ( 0, 1, 0 ), 1, 0.5 );
             return;
         }
         
         if ( status == 1 )
         {
             circle( print_origin, 30, ( 0, 0, 1 ) );
-            print3d( print_origin, function_9e72a96( name ), ( 0, 0, 1 ), 1, 0.5 );
+            print3d( print_origin, hashtostring( name ), ( 0, 0, 1 ), 1, 0.5 );
             
             if ( isdefined( current_zone.nodes[ 0 ] ) )
             {
@@ -1009,12 +1009,12 @@
                 print_origin = current_zone.volumes[ 0 ].origin;
             }
             
-            print3d( print_origin + ( 0, 20, offset * -1 ), function_9e72a96( name ), ( 0, 0, 1 ), 1, 0.5 );
+            print3d( print_origin + ( 0, 20, offset * -1 ), hashtostring( name ), ( 0, 0, 1 ), 1, 0.5 );
             return;
         }
         
         circle( print_origin, 30, ( 1, 0, 0 ) );
-        print3d( print_origin, function_9e72a96( name ), ( 1, 0, 0 ), 1, 0.5 );
+        print3d( print_origin, hashtostring( name ), ( 1, 0, 0 ), 1, 0.5 );
     }
 
     // Namespace zm_devgui/zm_devgui
@@ -1300,7 +1300,7 @@
     // Size: 0x22c, Type: dev
     function zombie_devgui_weapon_give( weapon_name )
     {
-        split = strtok( function_9e72a96( weapon_name ), "<dev string:x9f0>" );
+        split = strtok( hashtostring( weapon_name ), "<dev string:x9f0>" );
         
         switch ( split.size )
         {
@@ -1355,26 +1355,26 @@
         self notify( #"hash_7c6363440c125d8b" );
         self endon( #"disconnect", #"hash_7c6363440c125d8b" );
         
-        if ( !isdefined( self.var_8d5839f4 ) )
+        if ( !isdefined( self.a_w_devgui ) )
         {
-            self.var_8d5839f4 = [];
+            self.a_w_devgui = [];
         }
-        else if ( !isarray( self.var_8d5839f4 ) )
+        else if ( !isarray( self.a_w_devgui ) )
         {
-            self.var_8d5839f4 = array( self.var_8d5839f4 );
+            self.a_w_devgui = array( self.a_w_devgui );
         }
         
-        self.var_8d5839f4[ self.var_8d5839f4.size ] = weapon;
+        self.a_w_devgui[ self.a_w_devgui.size ] = weapon;
         
         while ( true )
         {
             self waittill( #"weapon_change_complete" );
             
-            foreach ( weapon in arraycopy( self.var_8d5839f4 ) )
+            foreach ( weapon in arraycopy( self.a_w_devgui ) )
             {
                 if ( !self hasweapon( weapon ) )
                 {
-                    arrayremovevalue( self.var_8d5839f4, weapon );
+                    arrayremovevalue( self.a_w_devgui, weapon );
                 }
             }
         }
@@ -2484,7 +2484,7 @@
                 case #"hash_27a8af524430a8e1":
                     function_986a2585();
                     break;
-                case #"hash_5995af694f312813":
+                case #"cycle_death_fx":
                     function_faf7abce();
                     break;
                 case 0:
@@ -3315,9 +3315,9 @@
             self takeweapon( self zm_loadout::get_player_tactical_grenade() );
         }
         
-        if ( isdefined( level.var_5076c574 ) )
+        if ( isdefined( level.zombiemode_devgui_black_hole_bomb_give ) )
         {
-            self [[ level.var_5076c574 ]]();
+            self [[ level.zombiemode_devgui_black_hole_bomb_give ]]();
             
             while ( true )
             {
@@ -3346,9 +3346,9 @@
             self takeweapon( self zm_loadout::get_player_tactical_grenade() );
         }
         
-        if ( isdefined( level.var_3079bbd7 ) )
+        if ( isdefined( level.zombiemode_devgui_quantum_bomb_give ) )
         {
-            self [[ level.var_3079bbd7 ]]();
+            self [[ level.zombiemode_devgui_quantum_bomb_give ]]();
             
             while ( true )
             {
@@ -3377,9 +3377,9 @@
             self takeweapon( self zm_loadout::get_player_tactical_grenade() );
         }
         
-        if ( isdefined( level.var_42cebfa6 ) )
+        if ( isdefined( level.zombiemode_devgui_nesting_dolls_give ) )
         {
-            self [[ level.var_42cebfa6 ]]();
+            self [[ level.zombiemode_devgui_nesting_dolls_give ]]();
             
             while ( true )
             {
@@ -3408,9 +3408,9 @@
             self takeweapon( self zm_loadout::get_player_tactical_grenade() );
         }
         
-        if ( isdefined( level.var_153af402 ) )
+        if ( isdefined( level.zombiemode_devgui_emp_bomb_give ) )
         {
-            self [[ level.var_153af402 ]]();
+            self [[ level.zombiemode_devgui_emp_bomb_give ]]();
             
             while ( true )
             {
@@ -3892,9 +3892,9 @@
     // Size: 0x34, Type: dev
     function zombie_devgui_monkey_round()
     {
-        if ( isdefined( level.var_141b0a3a ) )
+        if ( isdefined( level.next_monkey_round ) )
         {
-            zombie_devgui_goto_round( level.var_141b0a3a );
+            zombie_devgui_goto_round( level.next_monkey_round );
         }
     }
 
@@ -3904,9 +3904,9 @@
     // Size: 0x34, Type: dev
     function zombie_devgui_thief_round()
     {
-        if ( isdefined( level.var_3a35aed4 ) )
+        if ( isdefined( level.next_thief_round ) )
         {
-            zombie_devgui_goto_round( level.var_3a35aed4 );
+            zombie_devgui_goto_round( level.next_thief_round );
         }
     }
 
@@ -3916,12 +3916,12 @@
     // Size: 0xec, Type: dev
     function zombie_devgui_dog_round( num_dogs )
     {
-        if ( !isdefined( level.var_57c1626e ) || !level.var_57c1626e )
+        if ( !isdefined( level.dogs_enabled ) || !level.dogs_enabled )
         {
             return;
         }
         
-        if ( !isdefined( level.var_a3f67fc2 ) || !level.var_a3f67fc2 )
+        if ( !isdefined( level.dog_rounds_enabled ) || !level.dog_rounds_enabled )
         {
             return;
         }
@@ -4518,9 +4518,9 @@
     // Size: 0x28, Type: dev
     function zombie_devgui_director_easy()
     {
-        if ( isdefined( level.var_e5cb87fe ) )
+        if ( isdefined( level.director_devgui_health ) )
         {
-            [[ level.var_e5cb87fe ]]();
+            [[ level.director_devgui_health ]]();
         }
     }
 
@@ -5759,8 +5759,8 @@
             
             for ( i = 0; i < num ; i++ )
             {
-                cmdarg = function_9e72a96( key ) + "<dev string:x547>" + i;
-                util::add_devgui( path + function_9e72a96( key ) + "<dev string:x132c>" + i, cmd + cmdarg );
+                cmdarg = hashtostring( key ) + "<dev string:x547>" + i;
+                util::add_devgui( path + hashtostring( key ) + "<dev string:x132c>" + i, cmd + cmdarg );
             }
         }
         
@@ -5821,11 +5821,11 @@
                     
                     if ( isdefined( key.targetname ) )
                     {
-                        str_type = function_9e72a96( key.targetname );
+                        str_type = hashtostring( key.targetname );
                     }
                     else if ( isdefined( key.model ) )
                     {
-                        str_type = function_9e72a96( key.model );
+                        str_type = hashtostring( key.model );
                     }
                     else
                     {

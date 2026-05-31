@@ -48,7 +48,7 @@ function function_e62e184a()
     s_trap._trap_type = "freeze";
     s_trap.e_volume = getent( s_trap.target, "targetname" );
     s_trap.e_volume._trap_type = "freeze";
-    s_trap.var_28ea1870 = struct::get_array( s_trap.target3, "targetname" );
+    s_trap.a_s_trap_fx = struct::get_array( s_trap.target3, "targetname" );
     s_trap.a_s_buttons = struct::get_array( s_trap.target2, "targetname" );
     s_trap.a_e_lights = getentarray( s_trap.target4, "targetname" );
     s_trap.a_s_panels = struct::get_array( s_trap.target5, "targetname" );
@@ -271,9 +271,9 @@ function function_92f341d0( e_activator, e_volume )
 // Params 1
 // Checksum 0xfef5a0ad, Offset: 0x1130
 // Size: 0x4c
-function freeze_trap_fx( var_9d9f02b4 )
+function freeze_trap_fx( b_is_on )
 {
-    if ( var_9d9f02b4 )
+    if ( b_is_on )
     {
         exploder::exploder( "fxexp_frost_trap" );
         return;

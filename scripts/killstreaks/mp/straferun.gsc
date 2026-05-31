@@ -60,7 +60,7 @@ function __init__()
     level.straferunrockettags[ 2 ] = "tag_attach_hardpoint_2";
     level.straferunrockettags[ 3 ] = "tag_attach_hardpoint_8";
     level.straferuncontrailfx = "_t7/killstreaks/fx_wh_contrail";
-    level.var_346e1cce = "killstreaks/fx_wh_chaff_trail";
+    level.straferunchafffx = "killstreaks/fx_wh_chaff_trail";
     level.straferunexplodefx = "destruct/fx8_atk_chppr_exp";
     level.straferunexplodesound = "evt_helicopter_midair_exp";
     level.straferunshellshock = "straferun";

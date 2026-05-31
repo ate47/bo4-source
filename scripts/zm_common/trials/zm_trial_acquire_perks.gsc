@@ -35,7 +35,7 @@ function __init__()
 // Size: 0xd0
 function private on_begin( perk_count )
 {
-    assert( isdefined( level.var_b8be892e ) );
+    assert( isdefined( level.a_str_vapors ) );
     self.var_851a4ca6 = zm_trial::function_5769f26a( perk_count );
     
     foreach ( player in getplayers() )
@@ -57,7 +57,7 @@ function private on_end( round_reset )
     
     if ( !round_reset )
     {
-        assert( isdefined( level.var_b8be892e ) );
+        assert( isdefined( level.a_str_vapors ) );
         var_57807cdc = [];
         
         foreach ( player in getplayers() )
@@ -96,9 +96,9 @@ function private function_c9934172()
     {
         self.var_a53b9221 = 0;
         
-        foreach ( var_83225a27 in level.var_b8be892e )
+        foreach ( str_vapor in level.a_str_vapors )
         {
-            if ( self hasperk( var_83225a27 ) )
+            if ( self hasperk( str_vapor ) )
             {
                 self.var_a53b9221++;
             }

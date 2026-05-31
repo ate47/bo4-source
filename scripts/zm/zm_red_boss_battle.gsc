@@ -58,7 +58,7 @@
 // Size: 0xdec
 function init()
 {
-    clientfield::register( "missile", "" + #"hash_64910f94ebb8d66a", 16000, 2, "int" );
+    clientfield::register( "missile", "" + #"chaos_bolt_fx", 16000, 2, "int" );
     clientfield::register( "scriptmover", "" + #"pegasus_emerge", 16000, 1, "counter" );
     clientfield::register( "scriptmover", "" + #"pegasus_storm", 16000, 1, "int" );
     clientfield::register( "allplayers", "" + #"hash_73e309ffb25bf63d", 16000, 1, "int" );
@@ -130,7 +130,7 @@ function init()
     level.s_boss_battle.var_5dc26e42 = 0;
     level.s_boss_battle.var_7fc7f236 = 15000;
     level.s_boss_battle.var_5db6ed5f = getweapon( "perseus_bolt_projectile" );
-    level.s_boss_battle.var_86d9f46c = getstatuseffect( #"hash_19533caf858a9f3b" );
+    level.s_boss_battle.var_86d9f46c = getstatuseffect( #"shock_zm_trap" );
     level.s_boss_battle.var_b42f3b39 = getstatuseffect( #"hash_12a64221f4d27f9b" );
     
     /#
@@ -633,11 +633,11 @@ function chaos_bolt_thrower( e_target )
         
         if ( level.s_boss_battle.n_stage > 1 )
         {
-            projectile clientfield::set( "" + #"hash_64910f94ebb8d66a", 2 );
+            projectile clientfield::set( "" + #"chaos_bolt_fx", 2 );
         }
         else
         {
-            projectile clientfield::set( "" + #"hash_64910f94ebb8d66a", 1 );
+            projectile clientfield::set( "" + #"chaos_bolt_fx", 1 );
         }
         
         b_annihilator = 0;
@@ -645,7 +645,7 @@ function chaos_bolt_thrower( e_target )
     else
     {
         projectile = magicbullet( level.s_boss_battle.var_5db6ed5f, var_5f07628, v_target_pos, e_perseus );
-        projectile clientfield::set( "" + #"hash_64910f94ebb8d66a", 3 );
+        projectile clientfield::set( "" + #"chaos_bolt_fx", 3 );
         b_annihilator = 1;
     }
     
@@ -2174,7 +2174,7 @@ function function_2a866d1a( a_ents )
         v_target_loc = e_perseus.origin + v_direction;
         launchvelocity = vectornormalize( v_target_loc - e_perseus.origin ) * 800;
         projectile = e_perseus magicmissile( level.s_boss_battle.var_5db6ed5f, v_target_loc + ( 16, 0, 54 ), launchvelocity );
-        projectile clientfield::set( "" + #"hash_64910f94ebb8d66a", 3 );
+        projectile clientfield::set( "" + #"chaos_bolt_fx", 3 );
     }
 }
 
@@ -2942,7 +2942,7 @@ function function_6401a80e()
                     n_char_index = self zm_characters::function_d35e4c92();
                     str_vo_alias = "vox_plateau_jump_plr_" + n_char_index;
                     a_variants = zm_audio::get_valid_lines( str_vo_alias );
-                    self.var_2790fd8b thread zm_vo::vo_say( array::random( a_variants ), 0, 1, 9999 );
+                    self.vh_rail thread zm_vo::vo_say( array::random( a_variants ), 0, 1, 9999 );
                     self.var_362f68d6 = randomintrangeinclusive( 4, 8 );
                 }
                 else
@@ -3255,7 +3255,7 @@ function cleanup_zombie()
             foreach ( n_index, e_player in util::get_active_players( #"allies" ) )
             {
                 n_y_pos = 480 + 18.7 * n_index;
-                str_hero_weapon = function_9e72a96( e_player.var_b708af7b );
+                str_hero_weapon = hashtostring( e_player.var_b708af7b );
                 
                 if ( !isdefined( level.s_boss_battle.var_5015427 ) )
                 {

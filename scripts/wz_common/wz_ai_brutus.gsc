@@ -408,7 +408,7 @@ function private function_85e8940a( entity )
     
     var_aa6baab8 = entity ai::function_9139c839().var_1709a39;
     players = getplayers( #"all", entity.origin, var_aa6baab8 );
-    shock_status_effect = getstatuseffect( #"hash_19533caf858a9f3b" );
+    shock_status_effect = getstatuseffect( #"shock_zm_trap" );
     entity clientfield::increment( "brutus_shock_attack", 1 );
     
     foreach ( player in players )

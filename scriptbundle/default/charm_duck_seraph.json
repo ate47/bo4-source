@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_duck_seraph",
-    "hash_ff3063df": "model#",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_duck_seraph",
     "name": "charm_duck_seraph",
     "displayname": "localized17#hash_5d6a837091f6ae5a",
     "icon": "ui_icon_weapon_charms_duck_seraph",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_duck_seraph"
 }

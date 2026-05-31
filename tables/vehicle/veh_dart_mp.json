@@ -1,0 +1,87 @@
+{
+    "name": "#veh_dart_mp",
+    "type": "plane",
+    "scoreType": "none",
+    "var_409bdb86": "veh_dart_mp_pc",
+    "cameraTag": "tag_driver_camera",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "exhaustFx": "#hash_50e269dfa9bb6a69",
+    "exhaustFxTag1": "tag_fx_thruster",
+    "deathFx": "#hash_2ab8bcf86391b223",
+    "deathFxTag": "tag_body_animate",
+    "deathFxSound": "#hash_36798f1cfbcaec95",
+    "lightFx": [
+        "#hash_8862d9565589bb9"
+    ],
+    "lightFxTag": [
+        "tag_laser"
+    ],
+    "driverHideTag": "tag_body_animate",
+    "unk11f4": [
+        "tag_rotor_fl",
+        "tag_rotor_fr",
+        "tag_rotor_rl",
+        "tag_rotor_rr"
+    ],
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#hash_181fe85848ab066",
+    "deathModel": "#veh_t8_mil_drone_dart",
+    "enemyModel": "#hash_7daeb58f525049fe",
+    "soundDef": "#veh_drn_dart_mp",
+    "compassIconMaterial": "#compass_hk",
+    "steerAxisName": "AXIS_RSTICK",
+    "reverseBrakeButtonName": "BUTTON_LTRIG",
+    "attackButtonName": "BUTTON_RTRIG",
+    "boostButtonName": "BUTTON_LSTICK",
+    "unk1608": "BUTTON_RSHLDR",
+    "bundle": {
+        "huds": [
+            {
+                "bindings": [
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_b1a03f2448a49d9",
+                        "buttondirection": "left",
+                        "prompt": "+speed_throw"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_5dba026ffa1d58cd",
+                        "buttondirection": "left",
+                        "prompt": "+lookstick"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_5627dec5036bc76c",
+                        "buttondirection": "left",
+                        "prompt": "+vehicleattack"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_79d336e3dd657b0a",
+                        "buttondirection": "left",
+                        "prompt": "+breath_sprint"
+                    }
+                ],
+                "hash_16b4c5c47fcf7794:hash_56985ec1": 0,
+                "hideweaponinfo": 0,
+                "hash_3a63348c09d91b8d:hash_24c083a4": 0,
+                "vehiclehud": "VHUD_Dart",
+                "tintcolor": "0.815686 0.752941 0.505882 1",
+                "hudcondition": "IsAttackMode"
+            }
+        ],
+        "healthpoolsize": 650,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 2
+    }
+}

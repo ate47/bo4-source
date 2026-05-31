@@ -34,8 +34,8 @@ function init()
         return;
     }
     
-    clientfield::register( "scriptmover", "" + #"hash_74fc30de57a0657a", 16000, 3, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_21f5fab6a3d22093", 16000, 3, "int" );
+    clientfield::register( "scriptmover", "" + #"apollo_bowl_fx", 16000, 3, "int" );
+    clientfield::register( "scriptmover", "" + #"tribute_flame_fx", 16000, 3, "int" );
     clientfield::register( "scriptmover", "" + #"keyline_model", 16000, 1, "int" );
     clientfield::register( "scriptmover", "" + #"pickup_glow", 16000, 1, "int" );
     clientfield::register( "scriptmover", "" + #"hash_8b48433c3fe40e4", 16000, 3, "int" );
@@ -240,7 +240,7 @@ function player_death_watcher( a_params )
     
     if ( isdefined( s_bowl ) && isdefined( s_bowl.var_9d32404 ) )
     {
-        s_bowl.var_9d32404 clientfield::set( "" + #"hash_21f5fab6a3d22093", 0 );
+        s_bowl.var_9d32404 clientfield::set( "" + #"tribute_flame_fx", 0 );
     }
 }
 
@@ -1522,11 +1522,11 @@ function function_5ee56208( var_5acfb6d )
     
     while ( true )
     {
-        var_bdf9e3c2 = zm_zonemgr::get_zone_from_position( self.origin );
+        str_current_zone = zm_zonemgr::get_zone_from_position( self.origin );
         
-        if ( isdefined( var_bdf9e3c2 ) )
+        if ( isdefined( str_current_zone ) )
         {
-            var_72192bfa = zm_red_zones::function_27028b8e( var_bdf9e3c2 );
+            var_72192bfa = zm_red_zones::function_27028b8e( str_current_zone );
             
             if ( isdefined( var_72192bfa ) )
             {
@@ -1842,7 +1842,7 @@ function function_304fb042()
     {
         level clientfield::set( "" + #"cleanup_challenges", 1 );
         level.var_483180c5 clientfield::set( "" + #"rob_coals", 0 );
-        level.var_d5ba7324 clientfield::set( "" + #"hash_74fc30de57a0657a", 0 );
+        level.var_d5ba7324 clientfield::set( "" + #"apollo_bowl_fx", 0 );
         
         foreach ( player in getplayers() )
         {
@@ -1852,7 +1852,7 @@ function function_304fb042()
             
             if ( isdefined( s_bowl ) && isdefined( s_bowl.var_9d32404 ) )
             {
-                s_bowl.var_9d32404 clientfield::set( "" + #"hash_21f5fab6a3d22093", 0 );
+                s_bowl.var_9d32404 clientfield::set( "" + #"tribute_flame_fx", 0 );
             }
         }
         

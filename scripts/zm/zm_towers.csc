@@ -133,7 +133,7 @@ function event_handler[level_init] main( eventstruct )
     level._effect[ #"bloodspurt" ] = #"zombie/fx_bul_flesh_neck_spurt_zmb";
     level._effect[ #"animscript_gib_fx" ] = #"zombie/fx_blood_torso_explo_zmb";
     level._effect[ #"animscript_gibtrail_fx" ] = #"blood/fx_blood_gib_limb_trail";
-    level._effect[ #"hash_73172b799c18404e" ] = #"hash_7d94f7b4389cad84";
+    level._effect[ #"hash_73172b799c18404e" ] = #"zombie/fx_teleport_flashback_zmb";
     level._effect[ #"entry_gate_dust" ] = #"hash_43b2eaf6037de947";
     level._effect[ #"special_round_smoke" ] = #"hash_7f90f442be248933";
     level._effect[ #"hash_2a49b738100ad198" ] = #"hash_573f4333a69a2e97";
@@ -264,11 +264,11 @@ function pickup_dung( localclientnum, oldval, newval, bnewent, binitialsnap, fie
 {
     if ( newval )
     {
-        self postfx::playpostfxbundle( #"hash_2ee8588651571cb" );
+        self postfx::playpostfxbundle( #"pstfx_zm_dung" );
         return;
     }
     
-    self postfx::stoppostfxbundle( #"hash_2ee8588651571cb" );
+    self postfx::stoppostfxbundle( #"pstfx_zm_dung" );
     
     if ( isdefined( self.var_eb695935 ) )
     {
@@ -817,16 +817,16 @@ function crowd_react( localclientnum, oldval, newval, bnewent, binitialsnap, fie
             switch ( newval )
             {
                 case 0:
-                    var_eafa8a1a = "seated";
+                    str_transition = "seated";
                     break;
                 case 1:
-                    var_eafa8a1a = "seated_to_angry";
+                    str_transition = "seated_to_angry";
                     break;
                 case 2:
-                    var_eafa8a1a = "seated_to_neutral";
+                    str_transition = "seated_to_neutral";
                     break;
                 case 3:
-                    var_eafa8a1a = "seated_to_cheer";
+                    str_transition = "seated_to_cheer";
                     break;
             }
             
@@ -835,16 +835,16 @@ function crowd_react( localclientnum, oldval, newval, bnewent, binitialsnap, fie
             switch ( newval )
             {
                 case 0:
-                    var_eafa8a1a = "angry_to_seated";
+                    str_transition = "angry_to_seated";
                     break;
                 case 1:
-                    var_eafa8a1a = "angry";
+                    str_transition = "angry";
                     break;
                 case 2:
-                    var_eafa8a1a = "angry_to_neutral";
+                    str_transition = "angry_to_neutral";
                     break;
                 case 3:
-                    var_eafa8a1a = "angry_to_cheer";
+                    str_transition = "angry_to_cheer";
                     break;
             }
             
@@ -853,16 +853,16 @@ function crowd_react( localclientnum, oldval, newval, bnewent, binitialsnap, fie
             switch ( newval )
             {
                 case 0:
-                    var_eafa8a1a = "neutral_to_seated";
+                    str_transition = "neutral_to_seated";
                     break;
                 case 1:
-                    var_eafa8a1a = "neutral_to_angry";
+                    str_transition = "neutral_to_angry";
                     break;
                 case 2:
-                    var_eafa8a1a = "neutral";
+                    str_transition = "neutral";
                     break;
                 case 3:
-                    var_eafa8a1a = "neutral_to_cheer";
+                    str_transition = "neutral_to_cheer";
                     break;
             }
             
@@ -871,16 +871,16 @@ function crowd_react( localclientnum, oldval, newval, bnewent, binitialsnap, fie
             switch ( newval )
             {
                 case 0:
-                    var_eafa8a1a = "cheer_to_seated";
+                    str_transition = "cheer_to_seated";
                     break;
                 case 1:
-                    var_eafa8a1a = "cheer_to_angry";
+                    str_transition = "cheer_to_angry";
                     break;
                 case 2:
-                    var_eafa8a1a = "cheer_to_neutral";
+                    str_transition = "cheer_to_neutral";
                     break;
                 case 3:
-                    var_eafa8a1a = "cheer";
+                    str_transition = "cheer";
                     break;
             }
             
@@ -893,11 +893,11 @@ function crowd_react( localclientnum, oldval, newval, bnewent, binitialsnap, fie
     {
         if ( str_group == "siege_crowds_grp27" )
         {
-            level thread function_1e3bd96a( str_group, var_eafa8a1a );
+            level thread function_1e3bd96a( str_group, str_transition );
         }
         else
         {
-            level thread function_628c5b1f( str_group, var_eafa8a1a );
+            level thread function_628c5b1f( str_group, str_transition );
         }
         
         function_1bb8e9c4();
@@ -908,12 +908,12 @@ function crowd_react( localclientnum, oldval, newval, bnewent, binitialsnap, fie
 // Params 3
 // Checksum 0x1d345ccd, Offset: 0x5990
 // Size: 0xfec
-function function_628c5b1f( str_group, var_eafa8a1a, var_55a37c48 )
+function function_628c5b1f( str_group, str_transition, var_55a37c48 )
 {
-    assert( isdefined( var_eafa8a1a ), "<dev string:x38>" );
+    assert( isdefined( str_transition ), "<dev string:x38>" );
     var_55a37c48 = isdefined( var_55a37c48 ) ? var_55a37c48 : randomfloatrange( 0.75, 1 );
     
-    switch ( var_eafa8a1a )
+    switch ( str_transition )
     {
         case #"seated_to_angry":
             smodelanimcmd( str_group, "unpause", "set_anim", array::random( array( #"ch_vign_tplt_prebtl_zm_crowd_seatd_to_stand_angry_01_civ_1" ) ), "set_playback_speed", var_55a37c48 );
@@ -992,12 +992,12 @@ function function_628c5b1f( str_group, var_eafa8a1a, var_55a37c48 )
 // Params 3
 // Checksum 0x370f30, Offset: 0x6988
 // Size: 0xbca
-function function_1e3bd96a( str_group, var_eafa8a1a, var_55a37c48 )
+function function_1e3bd96a( str_group, str_transition, var_55a37c48 )
 {
-    assert( isdefined( var_eafa8a1a ), "<dev string:x7c>" );
+    assert( isdefined( str_transition ), "<dev string:x7c>" );
     var_55a37c48 = isdefined( var_55a37c48 ) ? var_55a37c48 : randomfloatrange( 0.75, 1 );
     
-    switch ( var_eafa8a1a )
+    switch ( str_transition )
     {
         case #"seated_to_angry":
             smodelanimcmd( str_group, "unpause", "set_anim", array::random( array( #"grp27_ch_vign_tplt_prebtl_zm_crowd_seatd_to_stand_angry_1" ) ), "set_playback_speed", var_55a37c48 );

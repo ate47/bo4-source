@@ -1,0 +1,24 @@
+{
+    "name": "#maps/core/core_frontend.d3dbsp",
+    "baseName": "core_frontend",
+    "mins": "-4531.6855 -9679.96 -1121.563",
+    "maxs": "5518.55 7055.5444 4627.4707",
+    "checksum": 0,
+    "streamerworld": "#hash_4dedde2cfbe73441",
+    "lighting": "#maps/core/core_frontend.d3dbsp",
+    "lutMaterial": "#lut_frontend",
+    "lutMaterialALT": "#luts_t7_zmc_frontend",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_frontend",
+        "#img_trim_lut_frontend",
+        "#img_trim_lut_frontend",
+        "#img_trim_lut_frontend"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 23,
+        "cookieArray": "#*cookie_array"
+    }
+}

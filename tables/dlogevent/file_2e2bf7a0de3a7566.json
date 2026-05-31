@@ -1,0 +1,769 @@
+{
+    "name": "#hash_2e2bf7a0de3a7566",
+    "unk28": "#fpstool_samples",
+    "ddlDef": "#hash_6f386212fa31310a",
+    "unk18": 0,
+    "unk19": 1,
+    "unk1a": 1,
+    "unk1b": 0,
+    "unk1c": 0,
+    "rate": 1,
+    "fields": [
+        {
+            "name": "#telemetry",
+            "arraySize": 0,
+            "members": {
+                "name": "#telemetry_header",
+                "members": [
+                    {
+                        "name": "#game_session_id",
+                        "scrName": "#hash_50f7aa03",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#action_type",
+                        "scrName": "#action_type",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#title_id",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#build_version",
+                        "scrName": "#build_version",
+                        "type": "STRING",
+                        "len": 32
+                    },
+                    {
+                        "name": "#platform",
+                        "scrName": "#platform",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#source_version",
+                        "scrName": "#source_version",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_56a1b6d783aa7a25",
+                        "scrName": "#hash_ee3228f8",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#changelist_number",
+                        "scrName": "#changelist_number",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#match",
+            "arraySize": 0,
+            "members": {
+                "name": "#match_header",
+                "members": [
+                    {
+                        "name": "#lobby_id",
+                        "scrName": "#lobby_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#hash_c05315ddb26eb93",
+                        "scrName": "#hash_f81804cf",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#match_id",
+                        "scrName": "#match_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#client",
+            "arraySize": 0,
+            "members": {
+                "name": "#client_header",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#user_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#user_session_id",
+                        "scrName": "#hash_e004f74d",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#uno_id",
+                        "scrName": "#uno_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        }
+    ],
+    "members": [
+        {
+            "name": "#light_cull_us",
+            "scrName": "#light_cull_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_3e4ef5c97a00536",
+            "scrName": "#hash_9922d877",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_633a5d0864db2db",
+            "scrName": "#hash_ff187fc8",
+            "type": "INT32"
+        },
+        {
+            "name": "#num_players",
+            "scrName": "#num_players",
+            "type": "INT32"
+        },
+        {
+            "name": "#omni_us",
+            "scrName": "#omni_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#res_x",
+            "scrName": "#res_x",
+            "type": "INT32"
+        },
+        {
+            "name": "#res_y",
+            "scrName": "#res_y",
+            "type": "INT32"
+        },
+        {
+            "name": "#gbuffer_ent_tris",
+            "scrName": "#gbuffer_ent_tris",
+            "type": "INT32"
+        },
+        {
+            "name": "#prepass_prims",
+            "scrName": "#prepass_prims",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_128197788f1faf30",
+            "scrName": "#hash_54a89070",
+            "type": "INT32"
+        },
+        {
+            "name": "#umbra_work",
+            "scrName": "#umbra_work",
+            "type": "INT32"
+        },
+        {
+            "name": "#gbuffer_ent_us",
+            "scrName": "#gbuffer_ent_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_140eebac2db85c70",
+            "scrName": "#hash_d2bf8015",
+            "type": "INT32"
+        },
+        {
+            "name": "#spot_us",
+            "scrName": "#spot_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#spot_shadows",
+            "scrName": "#hash_708b7e76",
+            "type": "INT32"
+        },
+        {
+            "name": "#gbuffer_us",
+            "scrName": "#gbuffer_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_18f81647069f3ecc",
+            "scrName": "#hash_623a7e4c",
+            "type": "INT32"
+        },
+        {
+            "name": "#sun_prims",
+            "scrName": "#sun_prims",
+            "type": "INT32"
+        },
+        {
+            "name": "#postfx_us",
+            "scrName": "#postfx_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_1b4c57d449e4521f",
+            "scrName": "#hash_7ecb0b76",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_1ce4da326bbab5e8",
+            "scrName": "#hash_7435c0df",
+            "type": "INT32"
+        },
+        {
+            "name": "#spot_prims",
+            "scrName": "#spot_prims",
+            "type": "INT32"
+        },
+        {
+            "name": "#omni_vis",
+            "scrName": "#omni_vis",
+            "type": "INT32"
+        },
+        {
+            "name": "#oit_apply_us",
+            "scrName": "#oit_apply_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#gbuffer_decal_us",
+            "scrName": "#gbuffer_decal_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#umbra_time",
+            "scrName": "#umbra_time",
+            "type": "INT32"
+        },
+        {
+            "name": "#omni_shadows",
+            "scrName": "#hash_d559d135",
+            "type": "INT32"
+        },
+        {
+            "name": "#spot_vis",
+            "scrName": "#spot_vis",
+            "type": "INT32"
+        },
+        {
+            "name": "#r_draw_lit",
+            "scrName": "#r_draw_lit",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_28d2a05d88a0d700",
+            "scrName": "#hash_3d852944",
+            "type": "INT32"
+        },
+        {
+            "name": "#sss_blur_us",
+            "scrName": "#sss_blur_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_2b26423944fd8c18",
+            "scrName": "#hash_b2503886",
+            "type": "INT32"
+        },
+        {
+            "name": "#fx_draw",
+            "scrName": "#fx_draw",
+            "type": "INT32"
+        },
+        {
+            "name": "#r_sceneents",
+            "scrName": "#r_sceneents",
+            "type": "INT32"
+        },
+        {
+            "name": "#prims",
+            "scrName": "#prims",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_2fe48e82bcbfe70a",
+            "scrName": "#hash_33137251",
+            "type": "INT32"
+        },
+        {
+            "name": "#gbuffer_decal_tris",
+            "scrName": "#gbuffer_decal_tris",
+            "type": "INT32"
+        },
+        {
+            "name": "#heading",
+            "scrName": "#heading",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_316878e795d258e6",
+            "scrName": "#hash_5a3267a1",
+            "type": "INT32"
+        },
+        {
+            "name": "#oit_tris",
+            "scrName": "#oit_tris",
+            "type": "INT32"
+        },
+        {
+            "name": "#compute_sprites",
+            "scrName": "#compute_sprites",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_343d1f95fb411155",
+            "scrName": "#hash_ed330c8b",
+            "type": "INT32"
+        },
+        {
+            "name": "#sun_tris",
+            "scrName": "#sun_tris",
+            "type": "INT32"
+        },
+        {
+            "name": "#prepass_tris",
+            "scrName": "#prepass_tris",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_37c8818eff41553d",
+            "scrName": "#hash_39114aab",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_3877ff2ec0c3726a",
+            "scrName": "#hash_1f2359a5",
+            "type": "INT32"
+        },
+        {
+            "name": "#static_models",
+            "scrName": "#hash_ff0308b",
+            "type": "INT32"
+        },
+        {
+            "name": "#budget_lighting_us",
+            "scrName": "#hash_fc9d0260",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_3ab6d1745e2b7e90",
+            "scrName": "#hash_4ba2caf3",
+            "type": "INT32"
+        },
+        {
+            "name": "#note",
+            "scrName": "#note",
+            "type": "STRING",
+            "len": 256
+        },
+        {
+            "name": "#hash_3ce5cfa8c7fb3c2b",
+            "scrName": "#hash_810297a5",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_3d77cd928bcbf989",
+            "scrName": "#hash_748be5db",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_3dde17604d35e8f6",
+            "scrName": "#hash_8aa285f",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_3eb9b2bad5a4824e",
+            "scrName": "#hash_a1164358",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_40138199e1f36fb3",
+            "scrName": "#hash_d934deb0",
+            "type": "INT32"
+        },
+        {
+            "name": "#r_draw_depth",
+            "scrName": "#r_draw_depth",
+            "type": "INT32"
+        },
+        {
+            "name": "#sun_us",
+            "scrName": "#sun_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_411d2563b3718ec7",
+            "scrName": "#hash_d8ab4ee1",
+            "type": "INT32"
+        },
+        {
+            "name": "#gbuffer_ent_prims",
+            "scrName": "#gbuffer_ent_prims",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_4350a21ab86316a0",
+            "scrName": "#hash_6067c5bb",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_44c564263d01daef",
+            "scrName": "#hash_e89b1c2",
+            "type": "INT32"
+        },
+        {
+            "name": "#emissive_us",
+            "scrName": "#emissive_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_46fac4fb33c48479",
+            "scrName": "#hash_f3e9d73e",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_48015bf58d08e2f8",
+            "scrName": "#hash_5de16dcf",
+            "type": "INT32"
+        },
+        {
+            "name": "#gpu_us",
+            "scrName": "#gpu_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#r_add",
+            "scrName": "#r_add",
+            "type": "INT32"
+        },
+        {
+            "name": "#spot_tris",
+            "scrName": "#spot_tris",
+            "type": "INT32"
+        },
+        {
+            "name": "#r_add_spot",
+            "scrName": "#r_add_spot",
+            "type": "INT32"
+        },
+        {
+            "name": "#pos_z",
+            "scrName": "#pos_z",
+            "type": "INT32"
+        },
+        {
+            "name": "#pos_x",
+            "scrName": "#pos_x",
+            "type": "INT32"
+        },
+        {
+            "name": "#pos_y",
+            "scrName": "#pos_y",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_4c6268a110003ace",
+            "scrName": "#hash_730a9c0",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_4d1666c58d7cded2",
+            "scrName": "#hash_132094d8",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_4f1a9574545864a7",
+            "scrName": "#hash_26c8c244",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_5010b6ad6d989cb0",
+            "scrName": "#hash_d97e147",
+            "type": "INT32"
+        },
+        {
+            "name": "#pitch",
+            "scrName": "#pitch",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_53ce5582cb1ef0d9",
+            "scrName": "#hash_9027bba4",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_543c86390c71d4e5",
+            "scrName": "#hash_8e509296",
+            "type": "INT32"
+        },
+        {
+            "name": "#prepass_us",
+            "scrName": "#prepass_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#r_dpvs",
+            "scrName": "#r_dpvs",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_58797c0cf11d0fe0",
+            "scrName": "#hash_66d81a20",
+            "type": "INT32"
+        },
+        {
+            "name": "#sonar_us",
+            "scrName": "#sonar_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#tris",
+            "scrName": "#tris",
+            "type": "INT32"
+        },
+        {
+            "name": "#gbuffer_tris",
+            "scrName": "#gbuffer_tris",
+            "type": "INT32"
+        },
+        {
+            "name": "#fx_prims",
+            "scrName": "#fx_prims",
+            "type": "INT32"
+        },
+        {
+            "name": "#lit_us",
+            "scrName": "#lit_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_63a28cae4ed60f27",
+            "scrName": "#hash_1163642d",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_643bdb1bb050ea50",
+            "scrName": "#hash_7020db46",
+            "type": "INT32"
+        },
+        {
+            "name": "#oit_prims",
+            "scrName": "#oit_prims",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_68ffafe7e480d3ae",
+            "scrName": "#hash_29d36c20",
+            "type": "INT32"
+        },
+        {
+            "name": "#probes_vis",
+            "scrName": "#hash_f03284d4",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_6ace4575d3599cbf",
+            "scrName": "#hash_87bb3503",
+            "type": "INT32"
+        },
+        {
+            "name": "#gbuffer_decal_prims",
+            "scrName": "#gbuffer_decal_prims",
+            "type": "INT32"
+        },
+        {
+            "name": "#budget_ui_us",
+            "scrName": "#hash_7f43644b",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_6c98e0d8c2869ef1",
+            "scrName": "#hash_9900add3",
+            "type": "INT32"
+        },
+        {
+            "name": "#oit_draw_us",
+            "scrName": "#oit_draw_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_6d4ff87574778d15",
+            "scrName": "#hash_877710e8",
+            "type": "INT32"
+        },
+        {
+            "name": "#volume_us",
+            "scrName": "#volume_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#fx_tris",
+            "scrName": "#fx_tris",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_6f0f73b0e722f7f0",
+            "scrName": "#hash_96251ea5",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_6f63d386e78df2d9",
+            "scrName": "#hash_10f59cf2",
+            "type": "BOOL"
+        },
+        {
+            "name": "#deferred_us",
+            "scrName": "#deferred_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#frame_us",
+            "scrName": "#frame_us",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_6fd93d17cdb0ae1d",
+            "scrName": "#hash_f28ef12b",
+            "type": "INT32"
+        },
+        {
+            "name": "#grass_compute_us",
+            "scrName": "#hash_c2d40831",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_7aba43e3e27f0c31",
+            "scrName": "#hash_94a803c6",
+            "type": "INT32"
+        },
+        {
+            "name": "#omni_tris",
+            "scrName": "#hash_631964f5",
+            "type": "INT32"
+        },
+        {
+            "name": "#gbuffer_prims",
+            "scrName": "#gbuffer_prims",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_7ed0f0a69ff8404d",
+            "scrName": "#hash_39d9d1ff",
+            "type": "INT32"
+        },
+        {
+            "name": "#lights_vis",
+            "scrName": "#lights_vis",
+            "type": "INT32"
+        }
+    ],
+    "unk60": [
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_855c9a40dc060cf",
+                "s3u10": "#hash_2",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    0
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_775a1eb90e25df27",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    0,
+                    5,
+                    4
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_5509b91edf99f9a4",
+                "s3u10": "#hash_6",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    2,
+                    3,
+                    9
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_415a3e8b41b48599",
+                "s3u10": "#hash_4",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_a",
+                "unk28": [
+                    2,
+                    3,
+                    5
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_68cc9f8f64640d09",
+                "s3u10": "#hash_7",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2,
+                    3
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_7b52e3919e2a5b79",
+                "s3u10": "#hash_9",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_9e7f226bd2c2c2c",
+                "s3u10": "#hash_8",
+                "s3u18": "#hash_400",
+                "unk28": [
+                    8
+                ]
+            }
+        }
+    ]
+}

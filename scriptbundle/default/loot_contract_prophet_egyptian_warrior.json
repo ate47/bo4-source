@@ -1,13 +1,13 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "localized17#hash_e2a0e51a0bbeb49"
+            "hash_619e25922b4aedcf:hash_826726a": "localized17#hash_e2a0e51a0bbeb49"
         }
     ],
-    "hash_d0100eab": 1,
+    "hash_202e3311080f8de3:hash_d0100eab": 1,
     "relateditemname": "localized17#hash_3e7ad7302d10e6af",
     "contracttitle": "localized17#hash_e2a0e51a0bbeb49",
     "name": "loot_contract_prophet_egyptian_warrior",
-    "hash_f15e270f": "#white",
-    "hash_e08fc162": "localized17#hash_40534ffb27a37ede"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_40534ffb27a37ede"
 }

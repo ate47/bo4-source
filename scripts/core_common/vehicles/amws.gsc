@@ -209,8 +209,8 @@ function cobra_raise()
         playfxontag( self.settings.cobra_fx_1, self, self.settings.cobra_tag_1 );
     }
     
-    self asmrequestsubstate( #"hash_3e3fc20d5fcbf6e0" );
-    self vehicle_ai::waittill_asm_complete( #"hash_3e3fc20d5fcbf6e0", 4 );
+    self asmrequestsubstate( #"cobra@stationary" );
+    self vehicle_ai::waittill_asm_complete( #"cobra@stationary", 4 );
     self laseron();
     
     if ( isdefined( self.var_9b4a5686 ) && self.var_9b4a5686 )

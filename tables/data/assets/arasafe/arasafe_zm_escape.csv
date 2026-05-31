@@ -1,0 +1,13 @@
+type,name
+xmodelmesh,#hash_6e575c76c8701a85
+techset,d#hash_33832cd9511a3ad
+techset,d#hash_d66e0567f8fb677
+image,d#i_t8_micro_noise_02_c
+image,#i_mtl_p8_zm_esc_comicbook_drawing_n
+image,d#$gray_32_one_channel
+image,d#$default
+keyvaluepairs,#arasafe_zm_escape
+material,#mc/mtl_p8_zm_esc_comicbook_drawing_backface
+material,d#$default
+material,#hash_32cf14deff203a23
+xmodel,#p8_zm_esc_comicbook_drawing

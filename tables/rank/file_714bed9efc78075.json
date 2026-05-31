@@ -3,14 +3,13 @@
     "shortNameRef": "#hash_7bc6d314ed721455",
     "fullNameRef": "#hash_7c493fec470a479c",
     "ingameNameRef": "#hash_3986707cb56dd192",
-    "iconName": "#hash_75cef5a2fc359123",
-    "iconNameLarge": "#hash_bf7ded20e557483",
     "level": 33,
     "minXp": 482000,
     "maxXp": 511200,
+    "icon": "#ui_icon_rank_mp_level33",
+    "iconLarge": "#ui_icon_rank_mp_level33_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#dart"
         }
     ]

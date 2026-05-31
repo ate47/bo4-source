@@ -1,5 +1,34 @@
 {
-    "name": "#clan_emblem",
     "nameStr": "clan_emblem",
-    "ddl": "#gamedata/ddl/generated/emblem.ddl"
+    "name": "#clan_emblem",
+    "ddlPath": "#gamedata/ddl/generated/emblem.ddl",
+    "files": [
+        {
+            "fileName": "clan_emblem"
+        },
+        {
+            "fileName": "clan_emblem_1"
+        },
+        {
+            "fileName": "clan_emblem_2"
+        },
+        {
+            "fileName": "clan_emblem_3"
+        },
+        {
+            "fileName": "clan_emblem_4"
+        },
+        {
+            "fileName": "clan_emblem_5"
+        },
+        {
+            "fileName": "clan_emblem_6"
+        }
+    ],
+    "size": 2048,
+    "readOnLogin": false,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": true
 }

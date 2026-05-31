@@ -93,19 +93,19 @@ function __main__()
         var_7b5d3a70 = level.var_a5689564;
     }
     
-    var_1d1bbd52 = struct::get_array( "fasttravel_trigger", "targetname" );
+    a_s_fasttravel_locs = struct::get_array( "fasttravel_trigger", "targetname" );
     
-    foreach ( s_loc in var_1d1bbd52 )
+    foreach ( s_loc in a_s_fasttravel_locs )
     {
         level thread [[ var_7b5d3a70 ]]( s_loc );
     }
     
     callback::on_connect( &function_cdbbf1ee );
-    level.var_f410ef3b = [];
+    level.a_b_ziplines = [];
     
     for ( i = 0; i < 4 ; i++ )
     {
-        level.var_f410ef3b[ i ] = 0;
+        level.a_b_ziplines[ i ] = 0;
     }
     
     var_a3101e2f = getentarray( "fasttravel_dropout", "targetname" );
@@ -221,11 +221,11 @@ function function_5c18a7f4( player )
     
     if ( isdefined( level.var_e9737821 ) )
     {
-        var_235457fd = self [[ level.var_e9737821 ]]( player, self.stub.var_8d5d092c );
+        b_can_use = self [[ level.var_e9737821 ]]( player, self.stub.var_8d5d092c );
     }
     else
     {
-        var_235457fd = self function_c52e8ba( player, self.stub.var_8d5d092c );
+        b_can_use = self function_c52e8ba( player, self.stub.var_8d5d092c );
     }
     
     if ( !( isdefined( player.var_9c7b96ed[ self.stub.var_8d5d092c ] ) && player.var_9c7b96ed[ self.stub.var_8d5d092c ] ) )
@@ -260,7 +260,7 @@ function function_5c18a7f4( player )
         }
     }
     
-    return var_235457fd;
+    return b_can_use;
 }
 
 // Namespace zm_fasttravel/zm_fasttravel
@@ -468,8 +468,8 @@ function function_b9c7ccbb( var_12230d08, var_829a20a8 = 0 )
     level endon( #"end_game" );
     self endon( #"death" );
     n_index = get_player_index( self );
-    var_f80635c = var_12230d08.script_string;
-    self.var_388ee880 = var_f80635c;
+    str_start_loc = var_12230d08.script_string;
+    self.var_388ee880 = str_start_loc;
     self.var_3011d31c = 0;
     var_4500bf3f = var_12230d08.script_noteworthy;
     var_8d5d092c = var_12230d08.var_8d5d092c;
@@ -480,13 +480,13 @@ function function_b9c7ccbb( var_12230d08, var_829a20a8 = 0 )
         case #"traverse":
             if ( var_829a20a8 )
             {
-                if ( var_f80635c === "dropout" )
+                if ( str_start_loc === "dropout" )
                 {
                     n_idx = self.var_85c91ccc;
                 }
                 else
                 {
-                    n_idx = function_de173abb( var_f80635c );
+                    n_idx = function_de173abb( str_start_loc );
                     
                     if ( !isdefined( n_idx ) )
                     {
@@ -496,14 +496,14 @@ function function_b9c7ccbb( var_12230d08, var_829a20a8 = 0 )
                     self.var_85c91ccc = n_idx;
                 }
                 
-                nd_path_start = getvehiclenode( "fasttravel_" + var_f80635c + "_start_" + n_idx, "targetname" );
-                var_384528 = getvehiclenode( "fasttravel_" + var_f80635c + "_zipline_end_" + n_idx, "targetname" );
-                str_notify = "fasttravel_" + var_f80635c + "_zipline_end_" + n_idx;
+                nd_path_start = getvehiclenode( "fasttravel_" + str_start_loc + "_start_" + n_idx, "targetname" );
+                var_384528 = getvehiclenode( "fasttravel_" + str_start_loc + "_zipline_end_" + n_idx, "targetname" );
+                str_notify = "fasttravel_" + str_start_loc + "_zipline_end_" + n_idx;
             }
             else
             {
-                nd_path_start = getvehiclenode( "fasttravel_" + var_f80635c + "_start", "targetname" );
-                str_notify = var_f80635c + "_end";
+                nd_path_start = getvehiclenode( "fasttravel_" + str_start_loc + "_start", "targetname" );
+                str_notify = str_start_loc + "_end";
             }
             
             var_5314bd63 = getent( "veh_fasttravel_cam", "targetname" );
@@ -511,7 +511,7 @@ function function_b9c7ccbb( var_12230d08, var_829a20a8 = 0 )
             break;
         case #"flinger":
         case #"teleport":
-            n_idx = function_de173abb( var_f80635c );
+            n_idx = function_de173abb( str_start_loc );
             
             if ( !isdefined( n_idx ) )
             {
@@ -519,7 +519,7 @@ function function_b9c7ccbb( var_12230d08, var_829a20a8 = 0 )
             }
             
             self.var_85c91ccc = n_idx;
-            str_notify = "fasttravel_" + var_f80635c + "_end_" + n_idx;
+            str_notify = "fasttravel_" + str_start_loc + "_end_" + n_idx;
             self function_66d020b0( undefined, undefined, undefined, str_notify, undefined, var_12230d08, undefined, undefined );
             break;
     }
@@ -528,12 +528,12 @@ function function_b9c7ccbb( var_12230d08, var_829a20a8 = 0 )
     {
         if ( self.var_3011d31c )
         {
-            var_6a4c362c = function_7a74dbfd( var_f80635c + "_dropdown_end_" );
+            var_6a4c362c = function_7a74dbfd( str_start_loc + "_dropdown_end_" );
             var_f0bbde5 = self function_d4fbc062( var_6a4c362c );
         }
         else
         {
-            var_6a4c362c = function_7a74dbfd( var_f80635c + "_end_" );
+            var_6a4c362c = function_7a74dbfd( str_start_loc + "_end_" );
             var_f0bbde5 = self function_d4fbc062( var_6a4c362c );
         }
     }
@@ -644,15 +644,15 @@ function function_f86439bc()
 // Size: 0x9c
 function function_de173abb( str_loc )
 {
-    var_33c06362 = level.var_f410ef3b.size;
+    var_33c06362 = level.a_b_ziplines.size;
     
     for ( i = 0; i < var_33c06362 ; i++ )
     {
         n_idx = randomint( var_33c06362 );
         
-        if ( level.var_f410ef3b[ n_idx ] == 0 )
+        if ( level.a_b_ziplines[ n_idx ] == 0 )
         {
-            level.var_f410ef3b[ n_idx ] = 1;
+            level.a_b_ziplines[ n_idx ] = 1;
             return n_idx;
         }
     }
@@ -836,7 +836,7 @@ function function_66d020b0( var_5314bd63, nd_path_start, var_384528, str_notify,
     
     if ( isdefined( self.var_85c91ccc ) )
     {
-        level.var_f410ef3b[ self.var_85c91ccc ] = 0;
+        level.a_b_ziplines[ self.var_85c91ccc ] = 0;
     }
     
     if ( isdefined( str_notify ) )
@@ -952,9 +952,9 @@ function fasttravel_spline( var_5314bd63, nd_path_start, var_384528 )
     
     while ( true )
     {
-        self.var_2790fd8b = spawner::simple_spawn_single( var_5314bd63 );
+        self.vh_rail = spawner::simple_spawn_single( var_5314bd63 );
         
-        if ( isdefined( self.var_2790fd8b ) )
+        if ( isdefined( self.vh_rail ) )
         {
             break;
         }
@@ -962,31 +962,31 @@ function fasttravel_spline( var_5314bd63, nd_path_start, var_384528 )
         waitframe( 1 );
     }
     
-    self.var_2790fd8b val::set( "fasttravel_spline", "takedamage", 0 );
-    self.var_2790fd8b val::set( "fasttravel_spline", "allowdeath", 0 );
-    self.var_2790fd8b setignorepauseworld( 1 );
+    self.vh_rail val::set( "fasttravel_spline", "takedamage", 0 );
+    self.vh_rail val::set( "fasttravel_spline", "allowdeath", 0 );
+    self.vh_rail setignorepauseworld( 1 );
     
     if ( isdefined( level.var_a38d293a ) )
     {
-        self.var_2790fd8b setacceleration( level.var_a38d293a );
+        self.vh_rail setacceleration( level.var_a38d293a );
     }
     else
     {
-        self.var_2790fd8b setacceleration( 40 );
+        self.vh_rail setacceleration( 40 );
     }
     
     if ( isdefined( level.var_ce0f67cf ) )
     {
-        self.var_2790fd8b setspeed( level.var_ce0f67cf );
+        self.vh_rail setspeed( level.var_ce0f67cf );
     }
     else
     {
-        self.var_2790fd8b setspeed( 55 );
+        self.vh_rail setspeed( 55 );
     }
     
-    self.var_2790fd8b setturningability( 0.03 );
-    self.var_2790fd8b.origin = nd_path_start.origin;
-    self.var_2790fd8b.angles = nd_path_start.angles;
+    self.vh_rail setturningability( 0.03 );
+    self.vh_rail.origin = nd_path_start.origin;
+    self.vh_rail.angles = nd_path_start.angles;
     self dontinterpolate();
     self setorigin( nd_path_start.origin );
     
@@ -995,25 +995,25 @@ function fasttravel_spline( var_5314bd63, nd_path_start, var_384528 )
         self setplayerangles( nd_path_start.angles );
     }
     
-    self.var_2790fd8b.e_parent = self;
+    self.vh_rail.e_parent = self;
     
     if ( isdefined( level.var_dfd49265 ) && level.var_dfd49265 )
     {
-        self playerlinktodelta( self.var_2790fd8b, undefined, 0.5, 0, 0, 0, 0 );
+        self playerlinktodelta( self.vh_rail, undefined, 0.5, 0, 0, 0, 0 );
     }
     else if ( isdefined( level.var_9d19ea6d ) && level.var_9d19ea6d )
     {
-        self playerlinktodelta( self.var_2790fd8b, undefined, 0.5, 180, 180, 180, 180, 1, 0 );
+        self playerlinktodelta( self.vh_rail, undefined, 0.5, 180, 180, 180, 180, 1, 0 );
     }
     else
     {
-        self playerlinktodelta( self.var_2790fd8b, undefined, 0.5, 30, 30, 15, 30 );
+        self playerlinktodelta( self.vh_rail, undefined, 0.5, 30, 30, 15, 30 );
     }
     
     self val::reset( #"fasttravel", "freezecontrols" );
     self allowcrouch( 0 );
     self allowprone( 0 );
-    self.var_2790fd8b vehicle::get_on_path( nd_path_start );
+    self.vh_rail vehicle::get_on_path( nd_path_start );
     util::wait_network_frame();
     self clientfield::set( "fasttravel_rail_fx", 1 );
     self clientfield::set_to_player( "player_chaos_light_rail_fx", 1 );
@@ -1157,7 +1157,7 @@ function function_5165d69()
             continue;
         }
         
-        if ( !isdefined( player.var_2790fd8b ) )
+        if ( !isdefined( player.vh_rail ) )
         {
             assert( 0, "<dev string:x215>" );
             continue;
@@ -1166,17 +1166,17 @@ function function_5165d69()
         player endon( #"death" );
         player.var_3011d31c = 1;
         player notify( #"switch_rail" );
-        player.var_2790fd8b vehicle::detach_path();
-        player.var_2790fd8b vehicle::get_on_path( var_616025ba );
+        player.vh_rail vehicle::detach_path();
+        player.vh_rail vehicle::get_on_path( var_616025ba );
         player clientfield::set( "fasttravel_rail_fx", 2 );
-        player.var_2790fd8b vehicle::go_path();
+        player.vh_rail vehicle::go_path();
         player notify( #"fasttravel_over" );
         player unlink();
         wait 0.3;
         
-        if ( isdefined( player.var_2790fd8b ) )
+        if ( isdefined( player.vh_rail ) )
         {
-            player.var_2790fd8b delete();
+            player.vh_rail delete();
         }
     }
 }
@@ -1191,9 +1191,9 @@ function function_1ab837f6()
     level waittill( #"all_players_spawned" );
     level flag::wait_till( level.var_5bfd847e );
     level clientfield::set( "fasttravel_exploder", 1 );
-    var_1d1bbd52 = struct::get_array( "fasttravel_trigger", "targetname" );
+    a_s_fasttravel_locs = struct::get_array( "fasttravel_trigger", "targetname" );
     
-    foreach ( s_loc in var_1d1bbd52 )
+    foreach ( s_loc in a_s_fasttravel_locs )
     {
         if ( isdefined( s_loc.unitrigger_stub.delay ) )
         {
@@ -1211,26 +1211,26 @@ function function_ab80021( var_384528 )
     level endon( #"end_game" );
     self endon( #"disconnect", #"switch_rail" );
     
-    if ( isdefined( self.var_2790fd8b ) )
+    if ( isdefined( self.vh_rail ) )
     {
-        self.var_2790fd8b vehicle::go_path();
+        self.vh_rail vehicle::go_path();
     }
     
     if ( isdefined( var_384528 ) )
     {
-        if ( isdefined( self.var_2790fd8b ) )
+        if ( isdefined( self.vh_rail ) )
         {
-            self.var_2790fd8b.origin = var_384528.origin;
+            self.vh_rail.origin = var_384528.origin;
         }
         
         self dontinterpolate();
         self setorigin( var_384528.origin );
         self setplayerangles( var_384528.angles );
         
-        if ( isdefined( self.var_2790fd8b ) )
+        if ( isdefined( self.vh_rail ) )
         {
-            self.var_2790fd8b vehicle::get_on_path( var_384528 );
-            self.var_2790fd8b vehicle::go_path();
+            self.vh_rail vehicle::get_on_path( var_384528 );
+            self.vh_rail vehicle::go_path();
         }
     }
     
@@ -1238,9 +1238,9 @@ function function_ab80021( var_384528 )
     self unlink();
     wait 0.3;
     
-    if ( isdefined( self.var_2790fd8b ) )
+    if ( isdefined( self.vh_rail ) )
     {
-        self.var_2790fd8b delete();
+        self.vh_rail delete();
     }
 }
 

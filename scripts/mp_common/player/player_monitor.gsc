@@ -116,7 +116,7 @@ function private function_43e771ee( reason )
         if ( self.var_3dc66299.shots > 0 || timeused >= 2000 )
         {
             longesthitdist = 0;
-            currentlifeindex = self match_record::get_player_stat( #"hash_ec4aea1a8bbd82" );
+            currentlifeindex = self match_record::get_player_stat( #"current_life_index" );
             
             if ( isdefined( currentlifeindex ) )
             {
@@ -132,7 +132,7 @@ function private function_43e771ee( reason )
             }
             
             var_27047881 = int( timeused / 1000 );
-            attachments = bb::function_285f8efd( self.var_3dc66299.currentweapon );
+            attachments = bb::getattachmentsforweapon( self.var_3dc66299.currentweapon );
             reticle = hash( self getweaponoptic( self.var_3dc66299.currentweapon ) );
             var_178db383 = spawnstruct();
             var_178db383.shots = self.var_3dc66299.shots;

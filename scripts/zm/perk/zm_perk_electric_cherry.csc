@@ -43,8 +43,8 @@ function init_electric_cherry()
     clientfield::register( "vehicle", "tesla_death_fx_veh", 1, 1, "int", &tesla_death_fx_callback, 0, 0 );
     clientfield::register( "actor", "tesla_shock_eyes_fx", 1, 1, "int", &tesla_shock_eyes_fx_callback, 0, 0 );
     clientfield::register( "vehicle", "tesla_shock_eyes_fx_veh", 1, 1, "int", &tesla_shock_eyes_fx_callback, 0, 0 );
-    level._effect[ #"electric_cherry_explode" ] = #"hash_413a313438a3a4e1";
-    level._effect[ #"electric_cherry_trail" ] = #"hash_58c2d7d24c0d61a7";
+    level._effect[ #"electric_cherry_explode" ] = #"dlc1/castle/fx_castle_electric_cherry_down";
+    level._effect[ #"electric_cherry_trail" ] = #"dlc1/castle/fx_castle_electric_cherry_trail";
     level._effect[ #"tesla_death_cherry" ] = #"zombie/fx_tesla_shock_zmb";
     level._effect[ #"tesla_shock_eyes_cherry" ] = #"zombie/fx_tesla_shock_eyes_zmb";
     level._effect[ #"tesla_shock_cherry" ] = #"zombie/fx_bmode_shock_os_zod_zmb";

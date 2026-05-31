@@ -344,7 +344,7 @@ function assign_lowest_unused_character_index()
 // Size: 0x214
 function givecustomcharacters()
 {
-    if ( isdefined( level.var_fa7525e8 ) && [[ level.var_fa7525e8 ]]( "c_zom_farmgirl_viewhands" ) )
+    if ( isdefined( level.hotjoin_player_setup ) && [[ level.hotjoin_player_setup ]]( "c_zom_farmgirl_viewhands" ) )
     {
         return;
     }

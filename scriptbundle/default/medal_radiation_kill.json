@@ -1,1 +1,9 @@
-{}
+{
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
+    "widget": "BadasseryMedal",
+    "name": "medal_radiation_kill",
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#t7_hud_medal_heatwave_kill",
+    "stringref": "localized17#medal/radiation_kill",
+    "iconlarge": "image#t7_hud_medal_heatwave_kill_lrg"
+}

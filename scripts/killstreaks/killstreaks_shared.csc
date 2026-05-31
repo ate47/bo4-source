@@ -267,7 +267,7 @@ function function_17381fe( localclientnum )
     {
         foreach ( player in getplayers( localclientnum ) )
         {
-            if ( isdefined( player ) && !function_3132f113( player ) )
+            if ( isdefined( player ) && !isremovedentity( player ) )
             {
                 player renderoverridebundle::function_f4eab437( localclientnum, 0, #"hash_2c6fce4151016478" );
             }

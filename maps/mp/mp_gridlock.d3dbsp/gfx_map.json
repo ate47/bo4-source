@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_gridlock.d3dbsp",
+    "baseName": "mp_gridlock",
+    "mins": "-98303.984 -69408 -2930",
+    "maxs": "67456 73216 6099.5005",
+    "checksum": 0,
+    "streamerworld": "#hash_6d1e6a8df6a682e8",
+    "lighting": "#maps/mp/mp_gridlock.d3dbsp",
+    "lutMaterial": "#lut_mp_gridlock",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_gridlock",
+        "#img_trim_lut_mp_gridlock",
+        "#img_trim_lut_mp_gridlock",
+        "#img_trim_lut_mp_gridlock"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 10,
+        "cookieArray": "#*cookie_array"
+    }
+}

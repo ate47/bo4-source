@@ -72,9 +72,9 @@ function enable_widows_wine_perk_for_level()
 // Size: 0x106
 function widows_wine_precache()
 {
-    if ( isdefined( level.var_ea6a217f ) )
+    if ( isdefined( level.widows_wine_precache_override_func ) )
     {
-        [[ level.var_ea6a217f ]]();
+        [[ level.widows_wine_precache_override_func ]]();
         return;
     }
     

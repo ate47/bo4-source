@@ -15,7 +15,10 @@
     "typeSuffix": "_zombie",
     "spawnerType": "hrider",
     "character": [
-        "#hash_11f91bc319e519f1"
+        "#c_t8_zmb_dlc0_zombie_destroyer1"
+    ],
+    "animMappingTables": [
+        "#hash_1630b099a97e7f8c"
     ],
     "meleeWeapon": "#gladiator_melee",
     "aimTable": "#soldier_aim",

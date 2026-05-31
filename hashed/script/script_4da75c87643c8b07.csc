@@ -47,9 +47,9 @@ function event_handler[event_9673dc9a] function_3981d015( eventstruct )
 // Size: 0x11a
 function function_feb37b9f( color )
 {
-    var_807d6589 = struct::get_array( "blast_door_light", "targetname" );
+    light_structs = struct::get_array( "blast_door_light", "targetname" );
     
-    foreach ( s_light in var_807d6589 )
+    foreach ( s_light in light_structs )
     {
         light_pos = s_light.origin;
         

@@ -27,12 +27,12 @@ function __init__()
 // Namespace mp_bot_position/mp_bot_position
 // Params 2
 // Checksum 0x4a5ddb5d, Offset: 0x168
-// Size: 0x3a, Type: bool
+// Size: 0x3a
 function function_eef95251( params, tacbundle )
 {
     if ( !isdefined( self.enemy ) )
     {
-        return false;
+        return 0;
     }
     
     return bot_position::function_d0cf287b( params, tacbundle );
@@ -41,12 +41,12 @@ function function_eef95251( params, tacbundle )
 // Namespace mp_bot_position/mp_bot_position
 // Params 2
 // Checksum 0x6abdfee6, Offset: 0x1b0
-// Size: 0x3a, Type: bool
+// Size: 0x3a
 function function_eecaf17c( params, tacbundle )
 {
     if ( isdefined( self.enemy ) )
     {
-        return false;
+        return 0;
     }
     
     return bot_position::function_d0cf287b( params, tacbundle );

@@ -198,9 +198,9 @@ function function_80a146c1( player, weapon )
         return;
     }
     
-    if ( isdefined( self.var_9c1f60e8 ) )
+    if ( isdefined( self.riotshield_fling_func ) )
     {
-        self [[ self.var_9c1f60e8 ]]( player );
+        self [[ self.riotshield_fling_func ]]( player );
         return;
     }
     

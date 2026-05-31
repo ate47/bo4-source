@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_maldives.d3dbsp",
+    "baseName": "mp_maldives",
+    "mins": "-786432 -786432 -1636.6337",
+    "maxs": "786432 786432 16590.873",
+    "checksum": 0,
+    "streamerworld": "#hash_76c75b135b39d26e",
+    "lighting": "#maps/mp/mp_maldives.d3dbsp",
+    "lutMaterial": "#lut_mp_maldives",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_maldives",
+        "#img_trim_lut_mp_maldives",
+        "#img_trim_lut_mp_maldives",
+        "#img_trim_lut_mp_maldives"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 5,
+        "cookieArray": "#*cookie_array"
+    }
+}

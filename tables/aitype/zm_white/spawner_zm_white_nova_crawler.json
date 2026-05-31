@@ -17,7 +17,10 @@
     "character": [
         "#hash_44b38f849094dde1"
     ],
-    "meleeWeapon": "#hash_479f8de44d618b68",
+    "animMappingTables": [
+        "#hash_1448cef0ccfeb2d3"
+    ],
+    "meleeWeapon": "#zombie_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
     "footstepTable": "#hash_3368aeee6dad5cf",
     "footstepScriptCallback": false,

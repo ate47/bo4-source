@@ -1,0 +1,13 @@
+{
+    "name": "#hash_13bd0843cbe9ff2b",
+    "desc": "#hash_7a326b2ce15b2df9",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "unk68:unk10": true,
+            "model": "#c_t8_mp_spe_ruin_superhero_head1",
+            "unk68:unk50": 1
+        }
+    ]
+}

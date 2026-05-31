@@ -1,16 +1,13 @@
 {
     "name": "#zm_rank_19",
-    "shortNameRef": "#",
     "fullNameRef": "#hash_6e30bade84131267",
-    "ingameNameRef": "#",
-    "iconName": "#hash_102e5bb185b6277",
-    "iconNameLarge": "#hash_5c90908441a69287",
     "level": 19,
     "minXp": 153800,
     "maxXp": 170000,
+    "icon": "#ui_icon_rank_zm_level19",
+    "iconLarge": "#ui_icon_rank_zm_level19_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#zm_bgb_now_you_see_me"
         }
     ]

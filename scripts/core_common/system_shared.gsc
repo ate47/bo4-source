@@ -10,7 +10,7 @@ function register( str_name, func_preinit, func_postinit, reqs )
 {
     if ( isdefined( level.system_funcs ) && isdefined( level.system_funcs[ str_name ] ) )
     {
-        assert( level.system_funcs[ str_name ].ignore, "<dev string:x38>" + function_9e72a96( str_name ) + "<dev string:x43>" );
+        assert( level.system_funcs[ str_name ].ignore, "<dev string:x38>" + hashtostring( str_name ) + "<dev string:x43>" );
         return;
     }
     
@@ -72,7 +72,7 @@ function function_5095b2c6( func )
             return;
         }
         
-        assert( isdefined( level.system_funcs[ func.reqs ] ), "<dev string:xf8>" + ( ishash( func.reqs ) ? function_9e72a96( func.reqs ) : func.reqs ) + "<dev string:x120>" );
+        assert( isdefined( level.system_funcs[ func.reqs ] ), "<dev string:xf8>" + ( ishash( func.reqs ) ? hashtostring( func.reqs ) : func.reqs ) + "<dev string:x120>" );
         thread exec_post_system( level.system_funcs[ func.reqs ] );
     }
 }
@@ -135,7 +135,7 @@ function function_8dfa23e0( func )
             return;
         }
         
-        assert( isdefined( level.system_funcs[ func.reqs ] ), "<dev string:xf8>" + ( ishash( func.reqs ) ? function_9e72a96( func.reqs ) : func.reqs ) + "<dev string:x120>" );
+        assert( isdefined( level.system_funcs[ func.reqs ] ), "<dev string:xf8>" + ( ishash( func.reqs ) ? hashtostring( func.reqs ) : func.reqs ) + "<dev string:x120>" );
         thread exec_pre_system( level.system_funcs[ func.reqs ] );
     }
 }

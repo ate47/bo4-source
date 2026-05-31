@@ -3,112 +3,112 @@
         {
             "bannerlist": [
                 {
-                    "hash_7f879ab0": "image#$blacktransparent",
-                    "hash_366df414": "image#$blacktransparent",
+                    "hash_4d851989ee1bdf5d:hash_7f879ab0": "image#$blacktransparent",
+                    "hash_4ff83716b23ea712:hash_366df414": "image#$blacktransparent",
                     "maxplacement": 5
                 },
                 {
-                    "hash_7f879ab0": "image#$blacktransparent",
-                    "hash_366df414": "image#$blacktransparent",
+                    "hash_4d851989ee1bdf5d:hash_7f879ab0": "image#$blacktransparent",
+                    "hash_4ff83716b23ea712:hash_366df414": "image#$blacktransparent",
                     "maxplacement": 10
                 },
                 {
-                    "hash_7f879ab0": "image#$blacktransparent",
-                    "hash_366df414": "image#$blacktransparent",
+                    "hash_4d851989ee1bdf5d:hash_7f879ab0": "image#$blacktransparent",
+                    "hash_4ff83716b23ea712:hash_366df414": "image#$blacktransparent",
                     "maxplacement": 50
                 }
             ],
-            "hash_7197b13a": 1e-04,
-            "hash_70ef0949": "localized17#hash_2f88d8b975b0f42a",
-            "hash_9219d804": "image#$blacktransparent"
+            "maxskillrating": 1e-04,
+            "hash_57118de1be688883:hash_70ef0949": "localized17#hash_2f88d8b975b0f42a",
+            "skilldivisiongem": "image#$blacktransparent"
         },
         {
             "bannerlist": [
                 {
-                    "hash_7f879ab0": "image#ui_icon_mp_league_advanced_gold_large",
-                    "hash_366df414": "image#ui_icon_mp_league_advanced_gold",
+                    "hash_4d851989ee1bdf5d:hash_7f879ab0": "image#ui_icon_mp_league_advanced_gold_large",
+                    "hash_4ff83716b23ea712:hash_366df414": "image#ui_icon_mp_league_advanced_gold",
                     "maxplacement": 5
                 },
                 {
-                    "hash_7f879ab0": "image#ui_icon_mp_league_advanced_silver_large",
-                    "hash_366df414": "image#ui_icon_mp_league_advanced_silver",
+                    "hash_4d851989ee1bdf5d:hash_7f879ab0": "image#ui_icon_mp_league_advanced_silver_large",
+                    "hash_4ff83716b23ea712:hash_366df414": "image#ui_icon_mp_league_advanced_silver",
                     "maxplacement": 10
                 },
                 {
-                    "hash_7f879ab0": "image#ui_icon_mp_league_advanced_bronze_large",
-                    "hash_366df414": "image#ui_icon_mp_league_advanced_bronze",
+                    "hash_4d851989ee1bdf5d:hash_7f879ab0": "image#ui_icon_mp_league_advanced_bronze_large",
+                    "hash_4ff83716b23ea712:hash_366df414": "image#ui_icon_mp_league_advanced_bronze",
                     "maxplacement": 50
                 }
             ],
-            "hash_7197b13a": 0.08,
-            "hash_70ef0949": "localized17#hash_2f88d9b975b0f5dd",
-            "hash_9219d804": "image#ui_icon_mp_league_gem_advanced"
+            "maxskillrating": 0.08,
+            "hash_57118de1be688883:hash_70ef0949": "localized17#hash_2f88d9b975b0f5dd",
+            "skilldivisiongem": "image#ui_icon_mp_league_gem_advanced"
         },
         {
             "bannerlist": [
                 {
-                    "hash_7f879ab0": "image#ui_icon_mp_league_expert_gold_large",
-                    "hash_366df414": "image#ui_icon_mp_league_expert_gold",
+                    "hash_4d851989ee1bdf5d:hash_7f879ab0": "image#ui_icon_mp_league_expert_gold_large",
+                    "hash_4ff83716b23ea712:hash_366df414": "image#ui_icon_mp_league_expert_gold",
                     "maxplacement": 5
                 },
                 {
-                    "hash_7f879ab0": "image#ui_icon_mp_league_expert_silver_large",
-                    "hash_366df414": "image#ui_icon_mp_league_expert_silver",
+                    "hash_4d851989ee1bdf5d:hash_7f879ab0": "image#ui_icon_mp_league_expert_silver_large",
+                    "hash_4ff83716b23ea712:hash_366df414": "image#ui_icon_mp_league_expert_silver",
                     "maxplacement": 10
                 },
                 {
-                    "hash_7f879ab0": "image#ui_icon_mp_league_expert_bronze_large",
-                    "hash_366df414": "image#ui_icon_mp_league_expert_bronze",
+                    "hash_4d851989ee1bdf5d:hash_7f879ab0": "image#ui_icon_mp_league_expert_bronze_large",
+                    "hash_4ff83716b23ea712:hash_366df414": "image#ui_icon_mp_league_expert_bronze",
                     "maxplacement": 50
                 }
             ],
-            "hash_7197b13a": 0.2,
-            "hash_70ef0949": "localized17#hash_2f88d2b975b0e9f8",
-            "hash_9219d804": "image#ui_icon_mp_league_gem_expert"
+            "maxskillrating": 0.2,
+            "hash_57118de1be688883:hash_70ef0949": "localized17#hash_2f88d2b975b0e9f8",
+            "skilldivisiongem": "image#ui_icon_mp_league_gem_expert"
         },
         {
             "bannerlist": [
                 {
-                    "hash_7f879ab0": "image#ui_icon_mp_league_elite_gold_large",
-                    "hash_366df414": "image#ui_icon_mp_league_elite_gold",
+                    "hash_4d851989ee1bdf5d:hash_7f879ab0": "image#ui_icon_mp_league_elite_gold_large",
+                    "hash_4ff83716b23ea712:hash_366df414": "image#ui_icon_mp_league_elite_gold",
                     "maxplacement": 5
                 },
                 {
-                    "hash_7f879ab0": "image#ui_icon_mp_league_elite_silver_large",
-                    "hash_366df414": "image#ui_icon_mp_league_elite_silver",
+                    "hash_4d851989ee1bdf5d:hash_7f879ab0": "image#ui_icon_mp_league_elite_silver_large",
+                    "hash_4ff83716b23ea712:hash_366df414": "image#ui_icon_mp_league_elite_silver",
                     "maxplacement": 10
                 },
                 {
-                    "hash_7f879ab0": "image#ui_icon_mp_league_elite_bronze_large",
-                    "hash_366df414": "image#ui_icon_mp_league_elite_bronze",
+                    "hash_4d851989ee1bdf5d:hash_7f879ab0": "image#ui_icon_mp_league_elite_bronze_large",
+                    "hash_4ff83716b23ea712:hash_366df414": "image#ui_icon_mp_league_elite_bronze",
                     "maxplacement": 50
                 }
             ],
-            "hash_7197b13a": 0.4,
-            "hash_70ef0949": "localized17#hash_2f88d3b975b0ebab",
-            "hash_9219d804": "image#ui_icon_mp_league_gem_elite"
+            "maxskillrating": 0.4,
+            "hash_57118de1be688883:hash_70ef0949": "localized17#hash_2f88d3b975b0ebab",
+            "skilldivisiongem": "image#ui_icon_mp_league_gem_elite"
         },
         {
             "bannerlist": [
                 {
-                    "hash_7f879ab0": "image#ui_icon_mp_league_master_gold_large",
-                    "hash_366df414": "image#ui_icon_mp_league_master_gold",
+                    "hash_4d851989ee1bdf5d:hash_7f879ab0": "image#ui_icon_mp_league_master_gold_large",
+                    "hash_4ff83716b23ea712:hash_366df414": "image#ui_icon_mp_league_master_gold",
                     "maxplacement": 5
                 },
                 {
-                    "hash_7f879ab0": "image#ui_icon_mp_league_master_silver_large",
-                    "hash_366df414": "image#ui_icon_mp_league_master_silver",
+                    "hash_4d851989ee1bdf5d:hash_7f879ab0": "image#ui_icon_mp_league_master_silver_large",
+                    "hash_4ff83716b23ea712:hash_366df414": "image#ui_icon_mp_league_master_silver",
                     "maxplacement": 10
                 },
                 {
-                    "hash_7f879ab0": "image#ui_icon_mp_league_master_bronze_large",
-                    "hash_366df414": "image#ui_icon_mp_league_master_bronze",
+                    "hash_4d851989ee1bdf5d:hash_7f879ab0": "image#ui_icon_mp_league_master_bronze_large",
+                    "hash_4ff83716b23ea712:hash_366df414": "image#ui_icon_mp_league_master_bronze",
                     "maxplacement": 50
                 }
             ],
-            "hash_7197b13a": 1,
-            "hash_70ef0949": "localized17#hash_2f88d4b975b0ed5e",
-            "hash_9219d804": "image#ui_icon_mp_league_gem_master"
+            "maxskillrating": 1,
+            "hash_57118de1be688883:hash_70ef0949": "localized17#hash_2f88d4b975b0ed5e",
+            "skilldivisiongem": "image#ui_icon_mp_league_gem_master"
         }
     ],
     "name": "arena_league_play_skill_divisions_default"

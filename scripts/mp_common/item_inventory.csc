@@ -831,7 +831,7 @@ function private function_96ce9058( localclientnum, var_6c2b2289, inventoryitem,
     
     if ( isdefined( item.itementry.unlockableitemref ) )
     {
-        var_1ce96a13 = array( 0, 0, 0, 0, 0 );
+        cachedvalues = array( 0, 0, 0, 0, 0 );
         
         while ( true )
         {
@@ -843,9 +843,9 @@ function private function_96ce9058( localclientnum, var_6c2b2289, inventoryitem,
                 {
                     value = stats::get_stat_global( localclientnum, item.itementry.objectives[ i ].var_7e835304 );
                     
-                    if ( isdefined( value ) && value != var_1ce96a13[ i ] )
+                    if ( isdefined( value ) && value != cachedvalues[ i ] )
                     {
-                        var_1ce96a13[ i ] = value;
+                        cachedvalues[ i ] = value;
                         function_39b663b7( localclientnum, inventoryitem, item );
                     }
                 }
@@ -1442,7 +1442,7 @@ function private function_1a99656a( localclientnum, inventoryitem, networkid, it
         setuimodelvalue( createuimodel( inventoryitem.itemuimodel, "armorMax" ), armormax );
         description = isdefined( item.itementry.description ) ? item.itementry.description : #"";
         
-        if ( getdvar( #"hash_4a5fd7d94cfc9dfd", 0 ) == 1 )
+        if ( getdvar( #"wz_mp_character_unlocks_outfits", 0 ) == 1 )
         {
             if ( isdefined( item.itementry.unlockableitemref ) )
             {
@@ -1753,7 +1753,7 @@ function private function_442857e2( localclientnum, itementry )
         return;
     }
     
-    var_6962e967 = 0;
+    isequipped = 0;
     
     if ( itementry.itemtype == #"attachment" )
     {
@@ -1772,7 +1772,7 @@ function private function_442857e2( localclientnum, itementry )
                 
                 if ( inventoryitem.networkid != 32767 && item_inventory_util::function_73593286( itementry, inventoryitem.itementry ) )
                 {
-                    var_6962e967 = 1;
+                    isequipped = 1;
                     break;
                 }
             }
@@ -1790,7 +1790,7 @@ function private function_442857e2( localclientnum, itementry )
             
             if ( inventoryitem.networkid != 32767 && item_inventory_util::function_73593286( itementry, inventoryitem.itementry ) )
             {
-                var_6962e967 = 1;
+                isequipped = 1;
                 break;
             }
         }
@@ -1815,7 +1815,7 @@ function private function_442857e2( localclientnum, itementry )
                 continue;
             }
             
-            if ( var_6962e967 || var_6d4bb070 || isdefined( inventoryitem.endtime ) )
+            if ( isequipped || var_6d4bb070 || isdefined( inventoryitem.endtime ) )
             {
                 setuimodelvalue( createuimodel( inventoryitem.itemuimodel, "quickEquip" ), 0 );
                 inventoryitem.quickequip = 0;
@@ -3553,7 +3553,7 @@ function function_31868137( localclientnum, item )
                 playsound( localclientnum, #"fly_pickup_generic", item.origin );
                 break;
             case #"armor":
-                playsound( localclientnum, #"hash_2d8e1c5a5387840f", item.origin );
+                playsound( localclientnum, #"fly_pickup_armor", item.origin );
                 break;
             case #"backpack":
                 playsound( localclientnum, #"hash_69949bb7db9ef21e", item.origin );

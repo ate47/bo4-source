@@ -15,15 +15,18 @@
     "typeSuffix": "_zombie",
     "spawnerType": "quad",
     "character": [
-        "#hash_2f54b2203de88815"
+        "#c_t8_zmb_ofc_quadcrawler1"
     ],
-    "meleeWeapon": "#hash_479f8de44d618b68",
+    "animMappingTables": [
+        "#hash_1448cef0ccfeb2d3"
+    ],
+    "meleeWeapon": "#zombie_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
     "footstepTable": "#hash_3368aeee6dad5cf",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#zm_nova_crawler.ai_bt",
+    "behaviorTree": "#hash_1452d7f0cd0716a3",
     "animStateMachine": "#hash_76d03d2c55202ee0",
     "animSelectorTable": "#hash_76d0562c5520595b",
     "traversalExtents": "#default_traversal_extents_zm",

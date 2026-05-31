@@ -15,15 +15,18 @@
     "typeSuffix": "_zombie",
     "spawnerType": "zombie",
     "character": [
-        "#hash_54a5cc01102e5520"
+        "#c_t8_c_zom_avagadro"
     ],
-    "meleeWeapon": "#hash_2189643e0691e777",
+    "animMappingTables": [
+        "#hash_267bde230ac028d"
+    ],
+    "meleeWeapon": "#avogadro_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
     "footstepTable": "#zombfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#zm_avogadro.ai_bt",
+    "behaviorTree": "#hash_264b6e230a9c0d1",
     "animStateMachine": "#hash_41e4ab58b3f26c9a",
     "animSelectorTable": "#hash_41e49458b3f24585",
     "traversalExtents": "#default_traversal_extents_zm",

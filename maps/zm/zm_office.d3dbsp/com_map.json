@@ -1,0 +1,2525 @@
+{
+    "name": "#maps/zm/zm_office.d3dbsp",
+    "isInUse": true,
+    "primaryLights": 967,
+    "lightExploders": [
+        {
+            "lightExploderName": "#hash_4960a70860c7eb0",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 849,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 850,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 851,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 852,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 853,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 854,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 887,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 909,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 912,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 914,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_4999070860f9839",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 824,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 827,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 828,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 829,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 847,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 848,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 897,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 898,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 907,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 908,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 913,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 916,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 918,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_49d16708612b1c2",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 888,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 889,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 890,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 891,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 892,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 893,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 894,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 895,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 896,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 899,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 900,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 913,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 914,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 915,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_4a01c708614f1cb",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 855,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 856,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 857,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 858,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 859,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 910,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 911,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 913,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_4a3a27086180b54",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 860,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 861,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 862,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 863,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 864,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 865,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 866,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 867,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 868,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 869,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 913,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_4aa8e70861e0806",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 831,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 876,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 877,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 878,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 879,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 880,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 881,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 882,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 913,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 914,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 919,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 920,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 921,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_4ae14708621218f",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 830,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 870,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 871,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 872,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 873,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 874,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 875,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 914,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7e82a34bd609aa9",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 200,
+                    "fadeOut": 300,
+                    "primaryLightIndex": 904,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#fxexp_script_power_on",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 2,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 6,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 20,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 21,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 58,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 60,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 61,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 62,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 63,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 64,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 68,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 71,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 72,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 73,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 84,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 85,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 86,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 87,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 88,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 89,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 90,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 114,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 115,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 116,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 117,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 118,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 119,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 120,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 121,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 122,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 123,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 126,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 132,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 143,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 170,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 171,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 172,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 173,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 174,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 175,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 176,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 177,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 178,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 179,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 180,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 181,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 182,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 183,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 184,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 185,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_179bc7fd5af0acb9",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 917,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 918,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_17b66d13141708f3",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 965,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 966,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_1849fb98672609b8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 60,
+                    "fadeIn": 0,
+                    "fadeOut": 100,
+                    "primaryLightIndex": 956,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 957,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 60,
+                    "fadeIn": 0,
+                    "fadeOut": 100,
+                    "primaryLightIndex": 958,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 60,
+                    "fadeIn": 0,
+                    "fadeOut": 100,
+                    "primaryLightIndex": 959,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 960,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 961,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 962,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 963,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 100,
+                    "fadeIn": 0,
+                    "fadeOut": 100,
+                    "primaryLightIndex": 964,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#fxexp_script_projector_on",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 392,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 393,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#fxexp_script_boardroom_flicker",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 127,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 129,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_2514f988921776a8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 913,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 914,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#fxexp_script_power_off",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 59,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 65,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 66,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 67,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 129,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 130,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 144,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 145,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 146,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 147,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 148,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 149,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 290,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 443,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_326f5d8d5cd4ac01",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 100,
+                    "fadeOut": 200,
+                    "primaryLightIndex": 903,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#fxexp_script_flicker_dim",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 581,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 588,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_484cafa03eb2ed67",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 948,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 949,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 950,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 951,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 60,
+                    "fadeIn": 0,
+                    "fadeOut": 100,
+                    "primaryLightIndex": 952,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 953,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 954,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 100,
+                    "fadeIn": 0,
+                    "fadeOut": 100,
+                    "primaryLightIndex": 955,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_5dac867d11f017b0",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 200,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 901,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 200,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 902,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 913,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#fxexp_script_projector_off",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 250,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 261,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#fxexp_script_flicker_always",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 589,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 590,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_782075b742621656",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 60,
+                    "fadeIn": 0,
+                    "fadeOut": 100,
+                    "primaryLightIndex": 937,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 60,
+                    "fadeIn": 0,
+                    "fadeOut": 100,
+                    "primaryLightIndex": 938,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 939,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 940,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 941,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 100,
+                    "fadeIn": 0,
+                    "fadeOut": 100,
+                    "primaryLightIndex": 942,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 943,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 60,
+                    "fadeIn": 0,
+                    "fadeOut": 100,
+                    "primaryLightIndex": 944,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 945,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 946,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 100,
+                    "fadeIn": 0,
+                    "fadeOut": 100,
+                    "primaryLightIndex": 947,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7b696cb84d307f95",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 60,
+                    "fadeIn": 0,
+                    "fadeOut": 100,
+                    "primaryLightIndex": 932,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 100,
+                    "fadeIn": 0,
+                    "fadeOut": 100,
+                    "primaryLightIndex": 933,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 934,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 150,
+                    "primaryLightIndex": 935,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 100,
+                    "fadeIn": 0,
+                    "fadeOut": 100,
+                    "primaryLightIndex": 936,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7bdb71708115d9d8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 825,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 826,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 846,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 884,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 885,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 886,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 917,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 918,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#lgtexp_xd_sh070",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 843,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 844,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 883,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 906,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 918,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7be27d70811c0cea",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 832,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 833,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 834,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 835,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 836,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 837,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 917,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 918,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7be5e370811ef013",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 838,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 839,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 840,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 841,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 842,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 905,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 917,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 918,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7be969708122099c",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 820,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 821,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 822,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 823,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 917,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 918,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7bec6f70812449a5",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 813,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 814,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 815,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 816,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 817,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 818,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 819,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 917,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 922,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7bf37b70812a7cb7",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 807,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 810,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 811,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 812,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 845,
+                    "reversed": false
+                }
+            ]
+        }
+    ],
+    "probeExploders": [
+        {
+            "lightExploderName": "#fxexp_script_power_off",
+            "triggerData": [
+                {
+                    "probeID": 126,
+                    "volumeID": 1,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": true
+                },
+                {
+                    "probeID": 127,
+                    "volumeID": 1,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": true
+                },
+                {
+                    "probeID": 125,
+                    "volumeID": 1,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#fxexp_script_power_on",
+            "triggerData": [
+                {
+                    "probeID": 131,
+                    "volumeID": 1,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 128,
+                    "volumeID": 1,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 130,
+                    "volumeID": 1,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 129,
+                    "volumeID": 1,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_696008e1164e095",
+            "triggerData": [
+                {
+                    "probeID": 21,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7bf37b70812a7cb7",
+            "triggerData": [
+                {
+                    "probeID": 20,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7be27d70811c0cea",
+            "triggerData": [
+                {
+                    "probeID": 18,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7be5e370811ef013",
+            "triggerData": [
+                {
+                    "probeID": 19,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 21,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#lgtexp_xd_sh070",
+            "triggerData": [
+                {
+                    "probeID": 18,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 21,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_4999070860f9839",
+            "triggerData": [
+                {
+                    "probeID": 21,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 17,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_4960a70860c7eb0",
+            "triggerData": [
+                {
+                    "probeID": 16,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_4a01c708614f1cb",
+            "triggerData": [
+                {
+                    "probeID": 21,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 15,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_4a3a27086180b54",
+            "triggerData": [
+                {
+                    "probeID": 21,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_4aa8e70861e0806",
+            "triggerData": [
+                {
+                    "probeID": 14,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        }
+    ],
+    "sunVolumeProbeCount": [
+        21,
+        131,
+        1
+    ],
+    "probeGuids": [
+        1157492527,
+        2446102268,
+        1382031316,
+        2583279608,
+        2169971359,
+        3134943043,
+        3021599449,
+        2477755712,
+        2017554570,
+        679771597,
+        2463015565,
+        3836899772,
+        3270582970,
+        2475828177,
+        3234832275,
+        2308096456,
+        2359350270,
+        1200689978,
+        2397028316,
+        328535327,
+        542536034,
+        3312549037,
+        3992876972,
+        1158621876,
+        1015624609,
+        1886407737,
+        3164110613,
+        613735592,
+        3185506006,
+        3611306720,
+        2291114054,
+        3571586506,
+        2089549819,
+        3619777412,
+        2685755255,
+        820055772,
+        338482255,
+        2629056127,
+        4293758905,
+        3527435841,
+        423952157,
+        132145267,
+        783502540,
+        760467239,
+        1094925491,
+        2252610314,
+        882363785,
+        3621774362,
+        2483837944,
+        1700953207,
+        3564575301,
+        1888928307,
+        3699977123,
+        935612756,
+        3887902407,
+        2989422255,
+        1686949701,
+        550970781,
+        687032026,
+        3964064867,
+        1721375955,
+        2445482182,
+        1812177339,
+        2107126713,
+        3326848278,
+        3743278181,
+        2767002209,
+        925721182,
+        3880848352,
+        3825897429,
+        110089037,
+        3460795815,
+        4217035748,
+        1643159988,
+        485997130,
+        1429453949,
+        2591835996,
+        3728494614,
+        1183370926,
+        1839945365,
+        1035247703,
+        2017186345,
+        506304155,
+        300184981,
+        643813796,
+        562491037,
+        2203040656,
+        1010079364,
+        1178123503,
+        2379337417,
+        513276564,
+        4178189817,
+        3790555134,
+        1491143756,
+        1025640688,
+        4061046604,
+        99026955,
+        1270759944,
+        4193619410,
+        1355250204,
+        59806356,
+        2371694845,
+        3283089669,
+        525257965,
+        2067159389,
+        131540377,
+        2787510949,
+        4217753896,
+        588482120,
+        3664568528,
+        1822501881,
+        4290906587,
+        1183349840,
+        3059171289,
+        1473403819,
+        1816251090,
+        264578716,
+        3037878187,
+        2538571653,
+        2192166471,
+        2282130648,
+        1857440515,
+        2781817109,
+        2039645392,
+        1794651901,
+        4160870363,
+        4182974972,
+        3129316774,
+        2890172351,
+        1389021436,
+        3894107512,
+        3731705798,
+        631423375,
+        300546232,
+        3738674773,
+        3409203816,
+        3611073687,
+        1496623467,
+        3955370597,
+        1913539382,
+        1511670851,
+        2947368800,
+        3120664908,
+        129170706,
+        93970841,
+        1953069440,
+        181966168,
+        3873193069,
+        210644565,
+        1188071607,
+        2245487568,
+        3753233085,
+        0
+    ]
+}

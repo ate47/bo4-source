@@ -212,7 +212,7 @@
             {
                 foreach ( player in level.players )
                 {
-                    if ( player prop::function_84793f03() )
+                    if ( player prop::ishunter() )
                     {
                         var_94dbbfd9 = getdvarint( #"hash_618be616410fad95", 0 );
                         player.var_8df5658d = !( isdefined( player.var_8df5658d ) && player.var_8df5658d );
@@ -418,9 +418,9 @@
     // Params 5
     // Checksum 0x91301f3f, Offset: 0x1c00
     // Size: 0x88, Type: dev
-    function function_9cd2eb63( color, label, value, text, var_e1fb743e )
+    function function_9cd2eb63( color, label, value, text, textpc )
     {
-        hudelem = prop_controls::addupperrighthudelem( label, value, text, var_e1fb743e );
+        hudelem = prop_controls::addupperrighthudelem( label, value, text, textpc );
         hudelem.alpha = 0.5;
         hudelem.color = color;
         return hudelem;
@@ -998,27 +998,27 @@
     // Params 2
     // Checksum 0xf31e84ec, Offset: 0x4068
     // Size: 0x314, Type: dev
-    function function_79d57521( file, var_7723a9cd )
+    function function_79d57521( file, filename_base )
     {
-        var_7e52c89c = var_7723a9cd + "<dev string:xd6e>";
-        var_44c49e4e = var_7723a9cd + "<dev string:xd75>";
-        var_473e8b8d = var_7723a9cd + "<dev string:xd7c>";
-        var_ca180226 = level.script + "<dev string:xd84>";
+        var_7e52c89c = filename_base + "<dev string:xd6e>";
+        filename_header = filename_base + "<dev string:xd75>";
+        var_473e8b8d = filename_base + "<dev string:xd7c>";
+        filename_zone = level.script + "<dev string:xd84>";
         var_19494914 = level.script + "<dev string:xd8c>";
-        var_155d523d = "<dev string:xd93>";
+        dir_zone = "<dev string:xd93>";
         var_7770e500 = "<dev string:xdae>";
         var_d6ade535 = "<dev string:xdcc>";
         fprintln( file, "<dev string:xdf2>" );
         fprintln( file, "<dev string:xd3f>" );
         fprintln( file, "<dev string:xe9a>" );
         fprintln( file, "<dev string:xea4>" + var_7e52c89c + "<dev string:xebd>" );
-        fprintln( file, "<dev string:xed1>" + var_44c49e4e + "<dev string:xebd>" );
-        fprintln( file, "<dev string:xeea>" + var_473e8b8d + "<dev string:xeff>" + var_155d523d );
+        fprintln( file, "<dev string:xed1>" + filename_header + "<dev string:xebd>" );
+        fprintln( file, "<dev string:xeea>" + var_473e8b8d + "<dev string:xeff>" + dir_zone );
         fprintln( file, "<dev string:xf06>" + var_7e52c89c + "<dev string:xeff>" + var_d6ade535 );
-        fprintln( file, "<dev string:xf1b>" + var_44c49e4e + "<dev string:xeff>" + var_7770e500 );
+        fprintln( file, "<dev string:xf1b>" + filename_header + "<dev string:xeff>" + var_7770e500 );
         fprintln( file, "<dev string:xf30>" );
-        fprintln( file, "<dev string:xf53>" + var_ca180226 + "<dev string:xf70>" + var_7723a9cd );
-        fprintln( file, "<dev string:xf7d>" + var_19494914 + "<dev string:xf9a>" + var_44c49e4e + "<dev string:xfb2>" );
+        fprintln( file, "<dev string:xf53>" + filename_zone + "<dev string:xf70>" + filename_base );
+        fprintln( file, "<dev string:xf7d>" + var_19494914 + "<dev string:xf9a>" + filename_header + "<dev string:xfb2>" );
         fprintln( file, "<dev string:xd3f>" );
         fprintln( file, "<dev string:xfb6>" );
         fprintln( file, "<dev string:xd3f>" );
@@ -1041,8 +1041,8 @@
             platform = "<dev string:xff5>";
         }
         
-        var_7723a9cd = level.script + "<dev string:xfff>";
-        var_7e52c89c = var_7723a9cd + "<dev string:xd6e>";
+        filename_base = level.script + "<dev string:xfff>";
+        var_7e52c89c = filename_base + "<dev string:xd6e>";
         var_b522696f = "<dev string:x1005>" + platform + "<dev string:x100d>";
         var_d6ade535 = "<dev string:xdcc>";
         file = openfile( var_7e52c89c, "<dev string:x101c>" );
@@ -1054,7 +1054,7 @@
             return;
         }
         
-        function_79d57521( file, var_7723a9cd );
+        function_79d57521( file, filename_base );
         fprintln( file, "<dev string:x1048>" );
         function_62b9b9ac( file, "<dev string:xc42>" );
         fprintln( file, "<dev string:xd3f>" );
@@ -1091,8 +1091,8 @@
             platform = "<dev string:xff5>";
         }
         
-        var_7723a9cd = level.script + "<dev string:xfff>";
-        var_7e52c89c = var_7723a9cd + "<dev string:xd75>";
+        filename_base = level.script + "<dev string:xfff>";
+        var_7e52c89c = filename_base + "<dev string:xd75>";
         var_b522696f = "<dev string:x1005>" + platform + "<dev string:x100d>";
         var_d6ade535 = "<dev string:xdae>";
         file = openfile( var_7e52c89c, "<dev string:x101c>" );
@@ -1140,14 +1140,14 @@
             platform = "<dev string:xff5>";
         }
         
-        var_7723a9cd = level.script + "<dev string:xfff>";
-        var_7e52c89c = var_7723a9cd + "<dev string:xd6e>";
-        var_44c49e4e = var_7723a9cd + "<dev string:xd75>";
-        var_473e8b8d = var_7723a9cd + "<dev string:xd7c>";
-        var_ca180226 = level.script + "<dev string:xd84>";
+        filename_base = level.script + "<dev string:xfff>";
+        var_7e52c89c = filename_base + "<dev string:xd6e>";
+        filename_header = filename_base + "<dev string:xd75>";
+        var_473e8b8d = filename_base + "<dev string:xd7c>";
+        filename_zone = level.script + "<dev string:xd84>";
         var_19494914 = level.script + "<dev string:xd8c>";
         var_b522696f = "<dev string:x1005>" + platform + "<dev string:x100d>";
-        var_155d523d = "<dev string:xd93>";
+        dir_zone = "<dev string:xd93>";
         var_7770e500 = "<dev string:xdae>";
         var_d6ade535 = "<dev string:xdcc>";
         file = openfile( var_7e52c89c, "<dev string:x101c>" );
@@ -1159,7 +1159,7 @@
             return;
         }
         
-        function_79d57521( file, var_7723a9cd );
+        function_79d57521( file, filename_base );
         fprintln( file, "<dev string:x1048>" );
         fprintln( file, "<dev string:x1118>" );
         fprintln( file, "<dev string:x1118>" );
@@ -1194,12 +1194,12 @@
         fprintln( file, "<dev string:x1180>" );
         fprintln( file, "<dev string:x1180>" );
         closefile( file );
-        file = openfile( var_44c49e4e, "<dev string:x101c>" );
+        file = openfile( filename_header, "<dev string:x101c>" );
         
         if ( file == -1 )
         {
-            iprintlnbold( "<dev string:x1024>" + var_b522696f + var_44c49e4e + "<dev string:x1039>" );
-            println( "<dev string:x1024>" + var_b522696f + var_44c49e4e + "<dev string:x1039>" );
+            iprintlnbold( "<dev string:x1024>" + var_b522696f + filename_header + "<dev string:x1039>" );
+            println( "<dev string:x1024>" + var_b522696f + filename_header + "<dev string:x1039>" );
             return;
         }
         
@@ -1247,7 +1247,7 @@
         }
         
         fprintln( file, "<dev string:x11bc>" + var_7e52c89c );
-        fprintln( file, "<dev string:x11de>" + var_44c49e4e );
+        fprintln( file, "<dev string:x11de>" + filename_header );
         closefile( file );
         iprintlnbold( "<dev string:x11f4>" + var_b522696f );
         println( "<dev string:x11f4>" + var_b522696f );

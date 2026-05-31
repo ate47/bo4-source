@@ -17,14 +17,14 @@
     "value14": "25",
     "type": "gamesettings",
     "label": "localized17#menu/x_lives",
-    "hash_5a6dee5a": 0,
+    "hash_3d268f562204a4fb:hash_5a6dee5a": 0,
     "name": "player_num_lives",
     "displayname": "localized17#hash_6b02b19b36d9315e",
     "label1": "localized17#menu/unlimited",
     "label2": "localized17#menu/1_life",
-    "hash_54e336e4": 0,
+    "hash_4dd5060aa2f3ff5f:hash_54e336e4": 0,
     "optionscount": 14,
-    "hash_765cfd09": 0,
+    "hash_70853ef08fe1e46d:hash_765cfd09": 0,
     "setting": "playerNumLives",
     "isenableddisabled": 0
 }

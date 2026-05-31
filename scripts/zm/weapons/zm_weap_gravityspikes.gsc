@@ -216,7 +216,7 @@ function private function_e0537f19( w_gravityspikes )
     self endon( #"disconnect" );
     n_slot = self gadgetgetslot( w_gravityspikes );
     
-    if ( self function_36dfc05f( n_slot ) )
+    if ( self gadgetisdeployed( n_slot ) )
     {
         for ( var_966dad48 = self gadgetpowerget( n_slot ); var_966dad48 > 0 ; var_966dad48 = self gadgetpowerget( n_slot ) )
         {
@@ -893,7 +893,7 @@ function function_d5c9a81( e_revivee )
         return false;
     }
     
-    if ( isdefined( level.var_1461fd14 ) && ![[ level.var_1461fd14 ]]( e_revivee ) )
+    if ( isdefined( level.can_revive_game_module ) && ![[ level.can_revive_game_module ]]( e_revivee ) )
     {
         return false;
     }
@@ -1252,9 +1252,9 @@ function private gravityspikes_target_filtering( ai_enemy )
 {
     b_callback_result = 1;
     
-    if ( isdefined( level.var_722474af ) )
+    if ( isdefined( level.gravityspikes_target_filter_callback ) )
     {
-        b_callback_result = [[ level.var_722474af ]]( ai_enemy );
+        b_callback_result = [[ level.gravityspikes_target_filter_callback ]]( ai_enemy );
     }
     
     return b_callback_result;

@@ -1,19 +1,19 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "localized17#hash_74949c76508e944f"
+            "hash_619e25922b4aedcf:hash_826726a": "localized17#hash_74949c76508e944f"
         },
         {
-            "hash_826726a": "localized17#hash_5b4889e3a720c949"
+            "hash_619e25922b4aedcf:hash_826726a": "localized17#heroes/firebreak"
         }
     ],
     "contracticon": "image#hash_643448de997d0d2e",
-    "hash_d0100eab": 2,
-    "relateditemname": "localized17#hash_5b4889e3a720c949",
+    "hash_202e3311080f8de3:hash_d0100eab": 2,
+    "relateditemname": "localized17#heroes/firebreak",
     "contracttitle": "localized17#hash_74949c76508e944f",
     "name": "loot_contract_firebreak_muertos",
     "contractdescription": "localized17#hash_25105a1e4c1d1e63",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_69164c20fbcba78d",
-    "hash_e08fc162": "localized17#hash_1228188324cf56e"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_69164c20fbcba78d",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_1228188324cf56e"
 }

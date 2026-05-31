@@ -29,7 +29,7 @@ function __init__()
         return;
     }
     
-    zm_trial::register_challenge( #"hash_163077e21e01f4a7", &on_begin, &on_end );
+    zm_trial::register_challenge( #"fast_travel_rush", &on_begin, &on_end );
 }
 
 // Namespace namespace_8cefe82f/namespace_8cefe82f

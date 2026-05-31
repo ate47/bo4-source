@@ -494,7 +494,7 @@ function function_fe69176c()
     array::delete_all( var_7f952cba );
     zm_crafting::function_ca244624( #"zblueprint_mansion_silver_bullet" );
     zm_crafting::function_ca244624( #"zblueprint_mansion_silver_molten" );
-    level.var_4fe2f84d[ #"zblueprint_mansion_silver_molten" ][ 0 ].var_95f72816 = 1;
-    level.var_4fe2f84d[ #"zblueprint_mansion_silver_bullet" ][ 0 ].var_95f72816 = 1;
+    level.a_t_crafting[ #"zblueprint_mansion_silver_molten" ][ 0 ].var_95f72816 = 1;
+    level.a_t_crafting[ #"zblueprint_mansion_silver_bullet" ][ 0 ].var_95f72816 = 1;
 }
 

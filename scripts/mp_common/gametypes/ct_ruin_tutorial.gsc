@@ -399,7 +399,7 @@ function function_bc194310()
             level notify( #"start_grapple_fail_collision" );
             level notify( #"start_grapple_fail_door_collision" );
             level thread ct_vo::function_831e0584( array( #"vox_tvoi_tutor_ruin_slide_3_miss_nag" ) );
-            var_d21ccff6 = 1;
+            b_respawn_player = 1;
             n_start_time = gettime() / 1000;
             
             while ( true )
@@ -414,7 +414,7 @@ function function_bc194310()
                         
                         if ( isalive( e_player ) )
                         {
-                            var_d21ccff6 = 0;
+                            b_respawn_player = 0;
                             break;
                         }
                         
@@ -435,7 +435,7 @@ function function_bc194310()
             
             ct_utils::function_a61ebb46( function_8b1a219a() ? #"hash_4e50694e1653efaf" : #"hash_71cd040e856d2d69" );
             
-            if ( var_d21ccff6 )
+            if ( b_respawn_player )
             {
                 ct_utils::function_79957328();
             }
@@ -1791,7 +1791,7 @@ function function_1f212110( params )
         event = #"ekia";
         eventindex = level.scoreinfo[ event ][ #"row" ];
         var_6a98b865 = eattacker.momentum;
-        eattacker globallogic_score::giveplayermomentumnotification( var_595e41ee, #"hash_480234a872bd64ac", undefined, 0, weapon, 0, eventindex, event, undefined );
+        eattacker globallogic_score::giveplayermomentumnotification( var_595e41ee, #"score/blank", undefined, 0, weapon, 0, eventindex, event, undefined );
         
         if ( eattacker.momentum >= cost * 0.6 && var_6a98b865 < cost * 0.6 )
         {

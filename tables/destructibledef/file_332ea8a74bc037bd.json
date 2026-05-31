@@ -1,0 +1,71 @@
+{
+    "name": "#hash_332ea8a74bc037bd",
+    "model": "#p8_box_electric_commercial_sml_01_allstates",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_d0"
+                },
+                {
+                    "unk28": "tag_d1"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_19116863caaeadfe",
+            "physConstraints": "#hash_70a6d613e88f47d6",
+            "unk268": 100,
+            "hideBones": [
+                28,
+                29
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_door_d0"
+                },
+                {
+                    "physPreset": "#metal_pan",
+                    "unk28": "tag_door_d1"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 0,
+            "subtargetID": 0,
+            "parentDamagePercent": 1,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_19116963caaeafb1",
+            "physConstraints": "#hash_445f85f6173ee164",
+            "unk268": 100,
+            "hideBones": [
+                24,
+                26
+            ]
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 {
     "detailsicon": "image#hash_3327bf2f86887aa7",
-    "hash_6c274f86": "image#loot07_ui_icon_blackmarket_itemshop_bundle_tedd",
+    "shopicon": "image#loot07_ui_icon_blackmarket_itemshop_bundle_tedd",
     "nametext": "localized17#menu/contract_tedd",
     "name": "loot_character_tedd_sunset_bundle_shop",
     "desctext": "localized17#hash_77e06ce609d9272a"

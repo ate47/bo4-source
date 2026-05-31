@@ -718,9 +718,9 @@ function private function_72cf5db2()
                 {
                     self playsound( #"zmb_perks_packa_deny" );
                     
-                    if ( isdefined( level.pack_a_punch.var_25a37ed7 ) )
+                    if ( isdefined( level.pack_a_punch.custom_deny_func ) )
                     {
-                        player [[ level.pack_a_punch.var_25a37ed7 ]]();
+                        player [[ level.pack_a_punch.custom_deny_func ]]();
                     }
                     else
                     {
@@ -856,7 +856,7 @@ function private function_222c0292( current_weapon, packa_rollers, pap_machine, 
     potm::bookmark( #"zm_player_use_packapunch", gettime(), self );
     self zm_stats::increment_client_stat( "use_pap" );
     self zm_stats::increment_player_stat( "use_pap" );
-    self zm_stats::forced_attachment( "boas_use_pap" );
+    self zm_stats::function_8f10788e( "boas_use_pap" );
     
     if ( !( isdefined( level.var_e4e8d300 ) && level.var_e4e8d300 ) )
     {
@@ -963,7 +963,7 @@ function private third_person_weapon_upgrade( current_weapon, current_weaponopti
     var_1eca29de = self getbuildkitweapon( upgrade_weapon );
     
     /#
-        if ( isdefined( self.var_8d5839f4 ) && isinarray( self.var_8d5839f4, current_weapon ) && current_weapon.attachments.size )
+        if ( isdefined( self.a_w_devgui ) && isinarray( self.a_w_devgui, current_weapon ) && current_weapon.attachments.size )
         {
             var_d85decd8 = current_weapon;
             var_1eca29de = upgrade_weapon;
@@ -1087,16 +1087,16 @@ function private wait_for_player_to_take( player, weapon, packa_timer, var_a8643
                 /#
                     if ( isdefined( pap_machine.unitrigger_stub.var_16aa21d4 ) && pap_machine.unitrigger_stub.var_16aa21d4 )
                     {
-                        if ( !isdefined( player.var_8d5839f4 ) )
+                        if ( !isdefined( player.a_w_devgui ) )
                         {
-                            player.var_8d5839f4 = [];
+                            player.a_w_devgui = [];
                         }
-                        else if ( !isarray( player.var_8d5839f4 ) )
+                        else if ( !isarray( player.a_w_devgui ) )
                         {
-                            player.var_8d5839f4 = array( player.var_8d5839f4 );
+                            player.a_w_devgui = array( player.a_w_devgui );
                         }
                         
-                        player.var_8d5839f4[ player.var_8d5839f4.size ] = upgrade_weapon;
+                        player.a_w_devgui[ player.a_w_devgui.size ] = upgrade_weapon;
                     }
                 #/
                 
@@ -1242,7 +1242,7 @@ function private wait_for_timeout( weapon, packa_timer, player, var_a86430cb, va
         
         player zm_stats::increment_client_stat( "pap_weapon_not_grabbed" );
         player zm_stats::increment_player_stat( "pap_weapon_not_grabbed" );
-        player zm_stats::forced_attachment( "boas_pap_weapon_not_grabbed" );
+        player zm_stats::function_8f10788e( "boas_pap_weapon_not_grabbed" );
         weaponidx = undefined;
         
         if ( isdefined( weapon ) )
@@ -1578,9 +1578,9 @@ function private process_pap_zbarrier_state( state )
             self.state = "hidden";
             break;
         default:
-            if ( isdefined( level.var_c6c65322 ) )
+            if ( isdefined( level.custom_pap_state_handler ) )
             {
-                self [[ level.var_c6c65322 ]]( state );
+                self [[ level.custom_pap_state_handler ]]( state );
             }
             
             break;

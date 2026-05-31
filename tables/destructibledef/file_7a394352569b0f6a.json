@@ -1,0 +1,73 @@
+{
+    "name": "#hash_7a394352569b0f6a",
+    "model": "#p8_fxanim_gp_fan_electric_table_allstates_mod",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "physPreset": "#hash_365d9cdb35f2959c",
+                    "unk28": "cage_d0_jnt"
+                },
+                {
+                    "unk28": "cage_d1_jnt"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 1,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_f09492e10d257",
+            "unk268": 100,
+            "hideBones": [
+                26,
+                27
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "fan_d0_jnt"
+                },
+                {
+                    "physPreset": "#hash_365d9cdb35f2959c",
+                    "unk28": "fan_d1_jnt"
+                },
+                {
+                    "unk28": "fan_d2_jnt"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_f08492e10d0a4",
+            "unk268": 100,
+            "hideBones": [
+                22,
+                23,
+                24
+            ]
+        }
+    ]
+}

@@ -653,7 +653,7 @@ function function_d7b5082e()
 {
     if ( isdefined( self.pers[ #"totalmatchbonus" ] ) )
     {
-        self luinotifyevent( #"hash_9dfc8d44ea4547e", 1, self.pers[ #"totalmatchbonus" ] );
+        self luinotifyevent( #"match_bonus_notify", 1, self.pers[ #"totalmatchbonus" ] );
     }
 }
 

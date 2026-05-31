@@ -42,7 +42,7 @@ function __init__()
     
     level flag::init( #"music_box_first_use" );
     level thread callback::on_ai_killed( &function_da6a44df );
-    level.var_722474af = &function_cdb0d1e;
+    level.gravityspikes_target_filter_callback = &function_cdb0d1e;
 }
 
 // Namespace music_box/zm_equip_music_box
@@ -57,13 +57,13 @@ function on_grenade_fired( s_params )
         level endon( #"end_game" );
         e_grenade = s_params.projectile;
         e_grenade ghost();
-        e_grenade.var_1a61db89 = util::spawn_model( e_grenade.model, e_grenade.origin, ( 0, self.angles[ 1 ] - 75, 0 ) );
-        e_grenade.var_1a61db89 linkto( e_grenade );
-        e_grenade.var_1a61db89 clientfield::set( "" + #"music_box_light_fx", 1 );
+        e_grenade.mdl_music_box = util::spawn_model( e_grenade.model, e_grenade.origin, ( 0, self.angles[ 1 ] - 75, 0 ) );
+        e_grenade.mdl_music_box linkto( e_grenade );
+        e_grenade.mdl_music_box clientfield::set( "" + #"music_box_light_fx", 1 );
         e_grenade.weapon = s_params.weapon;
         s_waitresult = s_params.projectile waittill( #"stationary" );
         
-        if ( e_grenade in_bounds( self ) )
+        if ( e_grenade _second_compass_map_mp_ruins( self ) )
         {
             e_grenade thread function_9d9bff80( s_waitresult.position, self );
             return;
@@ -84,7 +84,7 @@ function function_9d9bff80( var_2fe3186e, attacker )
     var_b7fc8c3e = var_2fe3186e + ( 0, 0, 64 );
     self playsound( "vox_musicbox_start_sama_" + randomint( 3 ) );
     wait 1;
-    e_sam = util::spawn_model( "p8_zm_music_box_samantha_trap", self.var_1a61db89.origin, ( 0, self.angles[ 1 ] + 180, 0 ) );
+    e_sam = util::spawn_model( "p8_zm_music_box_samantha_trap", self.mdl_music_box.origin, ( 0, self.angles[ 1 ] + 180, 0 ) );
     a_zombies = getaiteamarray( level.zombie_team );
     a_zombies = arraysortclosest( a_zombies, var_2fe3186e, 25, 0, 350 );
     a_zombies = array::filter( a_zombies, 0, &function_3adb94b4 );
@@ -117,8 +117,8 @@ function function_9d9bff80( var_2fe3186e, attacker )
     
     e_sam thread scene::play( #"p8_zm_ora_music_box_bundle", "one_shot", e_sam );
     wait 0.5;
-    self.var_1a61db89 hide();
-    self.var_1a61db89 clientfield::set( "" + #"music_box_light_fx", 0 );
+    self.mdl_music_box hide();
+    self.mdl_music_box clientfield::set( "" + #"music_box_light_fx", 0 );
     wait 1;
     
     foreach ( e_zombie in a_zombies )
@@ -174,9 +174,9 @@ function function_9d9bff80( var_2fe3186e, attacker )
     
     e_sam playsound( "vox_musicbox_end_sama_" + randomint( 3 ) );
     wait 1.5;
-    e_sam thread scene::Stop();
+    e_sam thread scene::stop();
     e_sam delete();
-    self.var_1a61db89 delete();
+    self.mdl_music_box delete();
     level thread function_6b8c9160();
 }
 
@@ -265,7 +265,7 @@ function function_4ada560e()
     
     if ( isdefined( self.e_floater ) )
     {
-        self.e_floater thread scene::Stop();
+        self.e_floater thread scene::stop();
         self.e_floater delete();
     }
 }
@@ -274,7 +274,7 @@ function function_4ada560e()
 // Params 1
 // Checksum 0x81b7f9b2, Offset: 0x1150
 // Size: 0x12c, Type: bool
-function in_bounds( e_owner )
+function _second_compass_map_mp_ruins( e_owner )
 {
     if ( ispointonnavmesh( self.origin, 60 ) )
     {
@@ -292,7 +292,7 @@ function in_bounds( e_owner )
         if ( var_3fb36683 )
         {
             self.origin = v_valid_point;
-            self.var_1a61db89 clientfield::set( "" + #"hash_60a7e5b79e8064a5", 1 );
+            self.mdl_music_box clientfield::set( "" + #"hash_60a7e5b79e8064a5", 1 );
             return true;
         }
     }
@@ -316,12 +316,12 @@ function function_9a83be2b()
         }
     }
     
-    playfxontag( level._effect[ #"grenade_samantha_steal" ], self.var_1a61db89, "tag_origin" );
-    self.var_1a61db89 unlink();
-    self.var_1a61db89 movez( 60, 1, 0.25, 0.25 );
-    self.var_1a61db89 vibrate( ( 0, 0, 0 ), 1.5, 2.5, 1 );
-    self.var_1a61db89 waittill( #"movedone" );
-    self.var_1a61db89 delete();
+    playfxontag( level._effect[ #"grenade_samantha_steal" ], self.mdl_music_box, "tag_origin" );
+    self.mdl_music_box unlink();
+    self.mdl_music_box movez( 60, 1, 0.25, 0.25 );
+    self.mdl_music_box vibrate( ( 0, 0, 0 ), 1.5, 2.5, 1 );
+    self.mdl_music_box waittill( #"movedone" );
+    self.mdl_music_box delete();
     self delete();
 }
 

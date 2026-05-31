@@ -1,5 +1,16 @@
 {
-    "name": "#wz_stats_online",
     "nameStr": "wz_stats_online",
-    "ddl": "#gamedata/ddl/generated/wz_stats.ddl"
+    "name": "#wz_stats_online",
+    "ddlPath": "#gamedata/ddl/generated/wz_stats.ddl",
+    "files": [
+        {
+            "fileName": "wz_stats_online"
+        }
+    ],
+    "size": 125000,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

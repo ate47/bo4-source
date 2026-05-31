@@ -2491,9 +2491,9 @@ function givelastonteamwarning()
 // Params 2
 // Checksum 0x541307cf, Offset: 0x8088
 // Size: 0x44
-function function_c4aeb146( var_efb758a8, calloutplayer )
+function function_c4aeb146( calloutmessage, calloutplayer )
 {
-    luinotifyevent( #"player_callout", 2, var_efb758a8, calloutplayer.entnum );
+    luinotifyevent( #"player_callout", 2, calloutmessage, calloutplayer.entnum );
 }
 
 // Namespace prop/prop
@@ -2769,7 +2769,7 @@ function function_58c3eef7()
 function stillalivexp()
 {
     level endon( #"game_ended" );
-    level.var_b06adc58[ #"kill" ][ #"value" ] = 300;
+    level.xpeventinfo[ #"kill" ][ #"value" ] = 300;
     level waittill( #"props_hide_over" );
     
     while ( true )
@@ -2893,7 +2893,7 @@ function function_d1f10992( idflags, shitloc, weapon, friendlyfire, attackerishi
         return true;
     }
     
-    if ( self function_84793f03() )
+    if ( self ishunter() )
     {
         if ( weapon === level.phsettings.var_86fda1fd )
         {
@@ -3417,7 +3417,7 @@ function onplayerkilled( einflictor, attacker, idamage, smeansofdeath, sweapon, 
             continue;
         }
         
-        if ( player != attacker && player function_84793f03() && victim.team == game.defenders )
+        if ( player != attacker && player ishunter() && victim.team == game.defenders )
         {
             scoreevents::processscoreevent( "prop_killed", player, victim );
         }
@@ -3777,7 +3777,7 @@ function disablespawningforplayer()
         return false;
     }
     
-    if ( self function_84793f03() )
+    if ( self ishunter() )
     {
         return false;
     }
@@ -3793,7 +3793,7 @@ function disablespawningforplayer()
 // Params 0
 // Checksum 0x11d3cc63, Offset: 0xb4b8
 // Size: 0x22, Type: bool
-function function_84793f03()
+function ishunter()
 {
     return isdefined( self.team ) && self.team == game.attackers;
 }
@@ -3971,7 +3971,7 @@ function function_e60dbbee( time )
     self.var_5f355eed = 0;
     self.var_5e8990b6 = 0;
     
-    if ( level.var_1103f74e.var_1455c6df && self function_84793f03() && time > 8 )
+    if ( level.var_1103f74e.var_1455c6df && self ishunter() && time > 8 )
     {
         waittillframeend();
         
@@ -4434,7 +4434,7 @@ function movetarget()
     
     foreach ( player in level.players )
     {
-        if ( player function_84793f03() )
+        if ( player ishunter() )
         {
             fxent showtoplayer( player );
         }

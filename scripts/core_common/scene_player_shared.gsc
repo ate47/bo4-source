@@ -101,7 +101,7 @@ class csceneplayer : csceneobject
                 level.hud_scene_dev_info1.y = 400;
                 level.hud_scene_dev_info1.fontscale = 1.3;
                 level.hud_scene_dev_info1.color = ( 0.439216, 0.501961, 0.564706 );
-                level.hud_scene_dev_info1 settext( "<dev string:x136>" + toupper( function_9e72a96( _o_scene._str_name ) ) );
+                level.hud_scene_dev_info1 settext( "<dev string:x136>" + toupper( hashtostring( _o_scene._str_name ) ) );
                 
                 if ( !isdefined( level.hud_scene_dev_info2 ) )
                 {
@@ -114,7 +114,7 @@ class csceneplayer : csceneobject
                 level.hud_scene_dev_info2.y = 420;
                 level.hud_scene_dev_info2.fontscale = 1.3;
                 level.hud_scene_dev_info2.color = ( 0.439216, 0.501961, 0.564706 );
-                level.hud_scene_dev_info2 settext( "<dev string:x140>" + function_9e72a96( _str_shot ) );
+                level.hud_scene_dev_info2 settext( "<dev string:x140>" + hashtostring( _str_shot ) );
                 
                 if ( !isdefined( level.hud_scene_dev_info3 ) )
                 {
@@ -128,7 +128,7 @@ class csceneplayer : csceneobject
                 level.hud_scene_dev_info3.fontscale = 1.3;
                 level.hud_scene_dev_info3.color = ( 0.439216, 0.501961, 0.564706 );
                 var_208dd9f0 = isdefined( var_55b4f21e.devstate ) ? var_55b4f21e.devstate : _o_scene._s.devstate;
-                level.hud_scene_dev_info3 settext( "<dev string:x149>" + function_9e72a96( var_208dd9f0 ) );
+                level.hud_scene_dev_info3 settext( "<dev string:x149>" + hashtostring( var_208dd9f0 ) );
                 return;
             }
             
@@ -426,7 +426,7 @@ class csceneplayer : csceneobject
         #/
         
         player notify( #"hash_7ba9e3058f933eb" );
-        player.var_c3a79d20 = undefined;
+        player.disable_last_stand = undefined;
         player.scene_set_visible_time = level.time;
         player setvisibletoall();
         player val::reset( #"scene", "hide" );
@@ -1006,7 +1006,7 @@ class csceneplayer : csceneobject
         player.player_anim_clamp_left = isdefined( player.player_anim_clamp_left ) ? player.player_anim_clamp_left : 75;
         player.player_anim_clamp_top = isdefined( player.player_anim_clamp_top ) ? player.player_anim_clamp_top : 180;
         player.player_anim_clamp_bottom = isdefined( player.player_anim_clamp_bottom ) ? player.player_anim_clamp_bottom : 60;
-        player.var_c3a79d20 = 1;
+        player.disable_last_stand = 1;
         thread function_bd3a7030( player, var_ec50a0d3.var_9532f6db );
         _str_current_anim = csceneobject::get_animation_name( _str_shot );
         
@@ -1158,8 +1158,8 @@ class csceneplayer : csceneobject
                 
                 if ( isanimlooping( var_efc540b6 ) )
                 {
-                    var_912e843b = util::spawn_player_clone( player, var_efc540b6, csceneobject::get_align_ent(), 1 );
-                    var_912e843b setinvisibletoplayer( player );
+                    e_player_clone = util::spawn_player_clone( player, var_efc540b6, csceneobject::get_align_ent(), 1 );
+                    e_player_clone setinvisibletoplayer( player );
                     player setinvisibletoall();
                 }
                 
@@ -1180,9 +1180,9 @@ class csceneplayer : csceneobject
                     e_player_link delete();
                 }
                 
-                if ( isdefined( var_912e843b ) )
+                if ( isdefined( e_player_clone ) )
                 {
-                    var_912e843b delete();
+                    e_player_clone delete();
                 }
                 
                 player setvisibletoall();

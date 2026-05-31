@@ -19,13 +19,13 @@
     "value16": "60",
     "type": "gamesettings",
     "label": "localized17#menu/x_seconds",
-    "hash_5a6dee5a": 0,
+    "hash_3d268f562204a4fb:hash_5a6dee5a": 0,
     "name": "reboot_time",
     "displayname": "localized17#hash_1c65ea6a88934af6",
     "label1": "localized17#menu/1_second",
-    "hash_54e336e4": 0,
+    "hash_4dd5060aa2f3ff5f:hash_54e336e4": 0,
     "optionscount": 16,
-    "hash_765cfd09": 0,
+    "hash_70853ef08fe1e46d:hash_765cfd09": 0,
     "setting": "rebootTime",
     "isenableddisabled": 0
 }

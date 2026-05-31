@@ -1,11 +1,11 @@
 {
     "lootid": "#charm_paintshop",
-    "hash_ff3063df": "model#",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "description": "localized17#hash_66dc68e47cc7d3d",
     "image": "ui_icon_weapon_charms_paintshop",
     "name": "charm_paintshop",
     "displayname": "localized17#hash_384ef4aac7eeab4e",
     "icon": "ui_icon_weapon_charms_paintshop",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_paintshop"
 }

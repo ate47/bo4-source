@@ -528,7 +528,7 @@ function function_bf5c4d90()
     self thread function_861806d6();
     var_728787a3 = self.var_9a79d89d;
     var_7b01722c = self.var_5ab7c19c;
-    var_24d6686a = self.var_bab91f2;
+    n_old_radius = self.var_bab91f2;
     self.var_9a79d89d = level.var_4d47c040;
     self.var_5ab7c19c = self.angles;
     self.var_bab91f2 = 64;
@@ -551,7 +551,7 @@ function function_bf5c4d90()
             {
                 self.var_9a79d89d = var_728787a3;
                 self.var_5ab7c19c = var_7b01722c;
-                self.var_bab91f2 = var_24d6686a;
+                self.var_bab91f2 = n_old_radius;
                 level.var_cbcb0078 = 0;
                 self.var_e6828594 = undefined;
                 self.var_8c70bcba = 1;
@@ -719,8 +719,8 @@ function function_1a67c935()
 {
     if ( !isdefined( level.var_7c65ae0d ) )
     {
-        var_7716dee7 = "seraph_guard_node_" + level.var_115bb554 + 1;
-        level.var_7c65ae0d = getnodearray( var_7716dee7, "targetname" );
+        str_node_name = "seraph_guard_node_" + level.var_115bb554 + 1;
+        level.var_7c65ae0d = getnodearray( str_node_name, "targetname" );
         level.var_7c65ae0d = array::randomize( level.var_7c65ae0d );
         level.var_96c21c85 = 0;
     }

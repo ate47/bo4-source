@@ -12,7 +12,7 @@
 // Size: 0x426
 function init()
 {
-    clientfield::register( "missile", "" + #"hash_64910f94ebb8d66a", 16000, 2, "int", &function_6e3ecc82, 0, 0 );
+    clientfield::register( "missile", "" + #"chaos_bolt_fx", 16000, 2, "int", &function_6e3ecc82, 0, 0 );
     clientfield::register( "scriptmover", "" + #"pegasus_emerge", 16000, 1, "counter", &pegasus_emerge, 0, 0 );
     clientfield::register( "scriptmover", "" + #"pegasus_storm", 16000, 1, "int", &function_272aa016, 0, 0 );
     clientfield::register( "allplayers", "" + #"hash_73e309ffb25bf63d", 16000, 1, "int", &function_a27b945a, 0, 0 );
@@ -158,7 +158,7 @@ function function_37d1ee2e( localclientnum, oldval, newval, bnewent, binitialsna
         return;
     }
     
-    self notify( #"hash_5531647ca0352039" );
+    self notify( #"stop_arc_fx" );
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
@@ -167,7 +167,7 @@ function function_37d1ee2e( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x278
 function private function_e9aa9e80( localclientnum )
 {
-    self endon( #"death", #"hash_5531647ca0352039" );
+    self endon( #"death", #"stop_arc_fx" );
     
     while ( !isdefined( level.var_76234ae5[ localclientnum ] ) )
     {
@@ -218,7 +218,7 @@ function private function_e9aa9e80( localclientnum )
 // Size: 0x96
 function private function_954b9602( localclientnum )
 {
-    self waittill( #"death", #"hash_5531647ca0352039" );
+    self waittill( #"death", #"stop_arc_fx" );
     
     if ( isdefined( self.fx_arc ) )
     {

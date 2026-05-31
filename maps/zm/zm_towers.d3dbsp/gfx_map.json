@@ -1,0 +1,23 @@
+{
+    "name": "#maps/zm/zm_towers.d3dbsp",
+    "baseName": "zm_towers",
+    "mins": "-6379.8145 -3046.3198 -3465.5337",
+    "maxs": "5950.5 2910.0312 2518.444",
+    "checksum": 0,
+    "streamerworld": "#hash_43477b80ccb6e9ff",
+    "lighting": "#maps/zm/zm_towers.d3dbsp",
+    "lutMaterial": "#lut_zm_towers",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_zm_towers",
+        "#img_trim_lut_zm_towers",
+        "#img_trim_lut_zm_towers",
+        "#img_trim_lut_zm_towers"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 15,
+        "cookieArray": "#*cookie_array"
+    }
+}

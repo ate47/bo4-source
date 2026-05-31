@@ -9,9 +9,9 @@
                             "stageimage": "image#hash_1c0d6bb0f4df3632"
                         }
                     ],
-                    "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
-                    "clientfield": "#hash_3761eadf006d52eb"
+                    "list_stages": 1,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
+                    "clientfield": "#ww_p1_1"
                 },
                 {
                     "stages": [
@@ -24,12 +24,12 @@
                             "stageimage": "image#hash_611756199e43489c"
                         }
                     ],
-                    "hash_1d91eeba": 2,
-                    "hash_7db3435c": 0,
+                    "list_stages": 2,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                     "clientfield": "#ww_p1_2"
                 }
             ],
-            "hash_b048489f": 2
+            "list_components": 2
         },
         {
             "components": [
@@ -40,9 +40,9 @@
                             "stageimage": "image#hash_1c0d6ab0f4df347f"
                         }
                     ],
-                    "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
-                    "clientfield": "#hash_3eb09fdf042e957a"
+                    "list_stages": 1,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
+                    "clientfield": "#ww_p2_1"
                 },
                 {
                     "stages": [
@@ -55,8 +55,8 @@
                             "stageimage": "image#hash_611756199e43489c"
                         }
                     ],
-                    "hash_1d91eeba": 2,
-                    "hash_7db3435c": 0,
+                    "list_stages": 2,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                     "clientfield": "#ww_p2_2"
                 },
                 {
@@ -82,77 +82,77 @@
                             "stageimage": "image#hash_611756199e43489c"
                         }
                     ],
-                    "hash_1d91eeba": 5,
-                    "hash_7db3435c": 0,
+                    "list_stages": 5,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                     "clientfield": "#ww_p2_3"
                 }
             ],
-            "hash_b048489f": 3
+            "list_components": 3
         }
     ],
     "objnonlinearprogitems": [
         {
-            "hash_f128673a": "image#hash_2d022ee774661c5b",
-            "hash_846fa8e": "#hash_7b006d4a8b2137ef"
+            "hash_46ae6385a01aa163:hash_f128673a": "image#hash_2d022ee774661c5b",
+            "hash_5964032c6ccd2477:hash_846fa8e": "#zm_mansion_prog_1"
         },
         {
-            "hash_f128673a": "image#hash_2d052ae774684b66",
-            "hash_846fa8e": "#hash_7b006e4a8b2139a2"
+            "hash_46ae6385a01aa163:hash_f128673a": "image#hash_2d052ae774684b66",
+            "hash_5964032c6ccd2477:hash_846fa8e": "#zm_mansion_prog_2"
         },
         {
-            "hash_f128673a": "image#hash_2d052be774684d19",
-            "hash_846fa8e": "#hash_7b006f4a8b213b55"
+            "hash_46ae6385a01aa163:hash_f128673a": "image#hash_2d052be774684d19",
+            "hash_5964032c6ccd2477:hash_846fa8e": "#zm_mansion_prog_3"
         },
         {
-            "hash_f128673a": "image#hash_2d0529e7746849b3",
-            "hash_846fa8e": "#hash_7b00684a8b212f70"
+            "hash_46ae6385a01aa163:hash_f128673a": "image#hash_2d0529e7746849b3",
+            "hash_5964032c6ccd2477:hash_846fa8e": "#zm_mansion_prog_4"
         },
         {
-            "hash_f128673a": "image#hash_2d0226e774660ec3",
-            "hash_846fa8e": "#hash_7b00694a8b213123"
+            "hash_46ae6385a01aa163:hash_f128673a": "image#hash_2d0226e774660ec3",
+            "hash_5964032c6ccd2477:hash_846fa8e": "#zm_mansion_prog_5"
         },
         {
-            "hash_f128673a": "image#hash_2d0227e774661076",
-            "hash_846fa8e": "#hash_7b006a4a8b2132d6"
+            "hash_46ae6385a01aa163:hash_f128673a": "image#hash_2d0227e774661076",
+            "hash_5964032c6ccd2477:hash_846fa8e": "#zm_mansion_prog_6"
         },
         {
-            "hash_f128673a": "image#hash_2d0228e774661229",
-            "hash_846fa8e": "#hash_7b006b4a8b213489"
+            "hash_46ae6385a01aa163:hash_f128673a": "image#hash_2d0228e774661229",
+            "hash_5964032c6ccd2477:hash_846fa8e": "#zm_mansion_prog_7"
         },
         {
-            "hash_f128673a": "image#hash_2d0229e7746613dc",
-            "hash_846fa8e": "#hash_7b00744a8b2143d4"
+            "hash_46ae6385a01aa163:hash_f128673a": "image#hash_2d0229e7746613dc",
+            "hash_5964032c6ccd2477:hash_846fa8e": "#zm_mansion_prog_8"
         },
         {
-            "hash_f128673a": "image#hash_2d022ae77466158f",
-            "hash_846fa8e": "#hash_7b00754a8b214587"
+            "hash_46ae6385a01aa163:hash_f128673a": "image#hash_2d022ae77466158f",
+            "hash_5964032c6ccd2477:hash_846fa8e": "#zm_mansion_prog_9"
         },
         {
-            "hash_f128673a": "image#hash_2d022be774661742",
-            "hash_846fa8e": "#hash_22f194aa6971efed"
+            "hash_46ae6385a01aa163:hash_f128673a": "image#hash_2d022be774661742",
+            "hash_5964032c6ccd2477:hash_846fa8e": "#zm_mansion_prog_10"
         },
         {
-            "hash_f128673a": "image#hash_2d022ce7746618f5",
-            "hash_846fa8e": "#hash_22f193aa6971ee3a"
+            "hash_46ae6385a01aa163:hash_f128673a": "image#hash_2d022ce7746618f5",
+            "hash_5964032c6ccd2477:hash_846fa8e": "#zm_mansion_prog_11"
         },
         {
-            "hash_f128673a": "image#hash_2d022de774661aa8",
-            "hash_846fa8e": "#hash_22f192aa6971ec87"
+            "hash_46ae6385a01aa163:hash_f128673a": "image#hash_2d022de774661aa8",
+            "hash_5964032c6ccd2477:hash_846fa8e": "#zm_mansion_prog_12"
         }
     ],
     "shieldpieces": [
         {
-            "hash_7db3435c": 0,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "pieceimage": "image#hash_bf20c4b3a86ce4f",
             "clientfield": "#shield_1"
         },
         {
-            "hash_7db3435c": 0,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "pieceimage": "image#hash_bf20d4b3a86d002",
             "clientfield": "#shield_3"
         },
         {
-            "hash_7db3435c": 0,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "pieceimage": "image#hash_bf20e4b3a86d1b5",
             "clientfield": "#shield_2"
         }
@@ -171,8 +171,8 @@
                                     "stageimage": "image#hash_2df9cb99442095c0"
                                 }
                             ],
-                            "hash_1d91eeba": 2,
-                            "hash_7db3435c": 0,
+                            "list_stages": 2,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                             "clientfield": "#hash_379a0cb8e272c259"
                         },
                         {
@@ -184,8 +184,8 @@
                                     "stageimage": "image#hash_2df9cb99442095c0"
                                 }
                             ],
-                            "hash_1d91eeba": 2,
-                            "hash_7db3435c": 0,
+                            "list_stages": 2,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                             "clientfield": "#hash_379a09b8e272bd40"
                         },
                         {
@@ -197,16 +197,16 @@
                                     "stageimage": "image#hash_2df9cb99442095c0"
                                 }
                             ],
-                            "hash_1d91eeba": 2,
-                            "hash_7db3435c": 0,
+                            "list_stages": 2,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                             "clientfield": "#hash_379a0ab8e272bef3"
                         }
                     ],
                     "list_items": 3
                 }
             ],
-            "hash_7db3435c": 0,
-            "hash_516217cd": 1,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
+            "list_phases": 1,
             "name": "trap plasma"
         },
         {
@@ -219,8 +219,8 @@
                                     "stageimage": "image#hash_5312df75db1e29b0"
                                 }
                             ],
-                            "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "list_stages": 1,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                             "clientfield": "#hash_247c6c73bebc1022"
                         },
                         {
@@ -229,8 +229,8 @@
                                     "stageimage": "image#hash_4fc60e1de97db607"
                                 }
                             ],
-                            "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "list_stages": 1,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                             "clientfield": "#hash_247c6b73bebc0e6f"
                         },
                         {
@@ -239,8 +239,8 @@
                                     "stageimage": "image#hash_6d65ab9978d0050a"
                                 }
                             ],
-                            "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "list_stages": 1,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                             "clientfield": "#hash_247c6a73bebc0cbc"
                         }
                     ],
@@ -254,18 +254,18 @@
                                     "stageimage": "image#hash_4ef6939ca6e195b7"
                                 }
                             ],
-                            "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "list_stages": 1,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                             "clientfield": "#hash_4cfdc97536e8c1ad"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "hash_7db3435c": 0,
-            "hash_516217cd": 2,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
+            "list_phases": 2,
             "name": "special ammo",
-            "hash_a0ebe517": "#hash_26da6ef83af4ba62"
+            "hash_629ce50b0115bfc1:hash_a0ebe517": "#hash_26da6ef83af4ba62"
         },
         {
             "phases": [
@@ -277,8 +277,8 @@
                                     "stageimage": "image#hash_18b24a1d1fe6d1d8"
                                 }
                             ],
-                            "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "list_stages": 1,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                             "clientfield": "#hash_7965886c1a11312f"
                         },
                         {
@@ -287,8 +287,8 @@
                                     "stageimage": "image#hash_6fba75d0f0f2f3f3"
                                 }
                             ],
-                            "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "list_stages": 1,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                             "clientfield": "#hash_7965896c1a1132e2"
                         },
                         {
@@ -297,16 +297,16 @@
                                     "stageimage": "image#hash_189190832979e91"
                                 }
                             ],
-                            "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "list_stages": 1,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                             "clientfield": "#hash_79658a6c1a113495"
                         }
                     ],
                     "list_items": 3
                 }
             ],
-            "hash_7db3435c": 0,
-            "hash_516217cd": 1,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
+            "list_phases": 1,
             "name": "special ammo ingredients"
         }
     ],
@@ -322,8 +322,8 @@
                     "stageimage": "image#hash_463f9a495f91e933"
                 }
             ],
-            "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "list_stages": 1,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "clientfield": "#pap_1"
         },
         {
@@ -332,8 +332,8 @@
                     "stageimage": "image#hash_278b89d5eb019d7c"
                 }
             ],
-            "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "list_stages": 1,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "clientfield": "#pap_2"
         },
         {
@@ -342,24 +342,24 @@
                     "stageimage": "image#hash_6744628401cf6fba"
                 }
             ],
-            "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "list_stages": 1,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "clientfield": "#pap_3"
         }
     ],
     "objectivebackground": "image#hash_3f90f155c7e4e6d2",
-    "hash_b79de608": 12,
+    "hash_e8d706937d44455:hash_b79de608": 12,
     "configstringfiletype": "scriptbundle",
-    "hash_aa76b7dd": 1,
-    "hash_3e38620e": 0,
-    "hash_6fa1ca44": 3,
+    "hash_18f4a9668000591d:hash_aa76b7dd": 1,
+    "hash_1dd088b99b7444ff:hash_3e38620e": 0,
+    "list_quests": 3,
     "type": "zminventory",
-    "hash_af62a8e8": 3,
-    "hash_b10f2611": "#ww_phase",
+    "list_shieldpieces": 3,
+    "hash_3f9ea9d3b1ed0e8f:hash_b10f2611": "#ww_phase",
     "name": "zm_inventory_mansion",
-    "hash_88c17f11": "#sentinel_artifact",
-    "hash_a05daa90": 3,
-    "hash_c029b82f": 2,
-    "hash_f3d39d90": 0,
-    "hash_38b9613": 1
+    "hash_4a28bffb41f0ab0a:hash_88c17f11": "#sentinel_artifact",
+    "hash_4cc5530197ae7206:hash_a05daa90": 3,
+    "hash_55c625aa7c011e55:hash_c029b82f": 2,
+    "hash_65b46d8804cb3bba:hash_f3d39d90": 0,
+    "hash_6ef84b6e3c25015d:hash_38b9613": 1
 }

@@ -18,7 +18,7 @@ function autoexec __init__system__()
 // Size: 0x74
 function __init__()
 {
-    character_unlock_fixup::register_character_unlock( #"prophet_unlock", #"hash_62361c68e083d401", #"cu10_item", &function_d95e620c, #"hash_63b7bd67a959fc47", #"hash_63b7be67a959fdfa" );
+    character_unlock_fixup::register_character_unlock( #"prophet_unlock", #"prt_wz_technomancer", #"cu10_item", &function_d95e620c, #"hash_63b7bd67a959fc47", #"hash_63b7be67a959fdfa" );
 }
 
 // Namespace character_unlock_prophet_fixup/character_unlock_prophet_fixup

@@ -409,7 +409,7 @@ function function_c52e8ba( player, var_8d5d092c )
     
     if ( level flag::get( #"disable_fast_travel" ) )
     {
-        self.hint_string[ n_player_index ] = #"hash_91829275c00db24";
+        self.hint_string[ n_player_index ] = #"zmarcade/fasttravel_disabled";
     }
     else if ( !( isdefined( player zombie_utility::is_player_valid( player ) ) && player zombie_utility::is_player_valid( player ) ) )
     {
@@ -451,7 +451,7 @@ function function_c52e8ba( player, var_8d5d092c )
     }
     else
     {
-        self.hint_string[ n_player_index ] = #"hash_204ec88c63b3436b";
+        self.hint_string[ n_player_index ] = #"zmarcade/fasttravel";
         b_result = 1;
     }
     

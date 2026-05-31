@@ -482,7 +482,7 @@ function function_69e60a10( var_e4204b3 )
                             
                             if ( var_4b82457c < 512 )
                             {
-                                print3d( point.origin, function_9e72a96( point.targetname ), v_color, 1, 0.4, 8 );
+                                print3d( point.origin, hashtostring( point.targetname ), v_color, 1, 0.4, 8 );
                                 
                                 if ( var_4b82457c < 256 && level.players[ 0 ] util::is_player_looking_at( point.origin, 0.87, 0 ) )
                                 {
@@ -703,13 +703,13 @@ function function_69e60a10( var_e4204b3 )
                     
                     if ( var_91d1913b <= 768 )
                     {
-                        print3d( dynent.origin + ( 0, 0, 18 ), function_9e72a96( dynent.var_15d44120 ), ( 1, 0.5, 0 ), 0.9, 0.5, 10 );
+                        print3d( dynent.origin + ( 0, 0, 18 ), hashtostring( dynent.var_15d44120 ), ( 1, 0.5, 0 ), 0.9, 0.5, 10 );
                     }
                 }
                 
                 if ( isdefined( dynent.targetname ) && var_91d1913b <= 768 )
                 {
-                    print3d( dynent.origin + ( 0, 0, 8 ), function_9e72a96( dynent.targetname ), ( 1, 0.5, 0 ), 0.9, 0.5, 10 );
+                    print3d( dynent.origin + ( 0, 0, 8 ), hashtostring( dynent.targetname ), ( 1, 0.5, 0 ), 0.9, 0.5, 10 );
                 }
             }
         }
@@ -778,14 +778,14 @@ function function_69e60a10( var_e4204b3 )
                 furthest = spawns[ spawns.size - 1 ];
                 radius = distance2d( influencer.origin, furthest.origin );
                 circle( influencer.origin, radius, ( 1, 0.752941, 0.796078 ), 0, 1, 12 );
-                print3d( influencer.origin + ( 0, 0, 0 ), function_9e72a96( influencer.target ), ( 1, 0.752941, 0.796078 ), 0.9, 4, 12 );
+                print3d( influencer.origin + ( 0, 0, 0 ), hashtostring( influencer.target ), ( 1, 0.752941, 0.796078 ), 0.9, 4, 12 );
                 print3d( influencer.origin + ( 0, 0, 96 ), spawns.size, ( 1, 0.752941, 0.796078 ), 0.9, 4, 12 );
                 
                 foreach ( spawn in spawns )
                 {
                     line( influencer.origin, spawn.origin, ( 1, 0.752941, 0.796078 ), 1, 0, 12 );
                     sphere( spawn.origin, 10, ( 1, 0.752941, 0.796078 ), 1, 0, 4, 12 );
-                    print3d( spawn.origin + ( 0, 0, 12 ), function_9e72a96( spawn.targetname ), ( 1, 0.752941, 0.796078 ), 0.9, 0.5, 12 );
+                    print3d( spawn.origin + ( 0, 0, 12 ), hashtostring( spawn.targetname ), ( 1, 0.752941, 0.796078 ), 0.9, 0.5, 12 );
                 }
                 
                 total_spawns += spawns.size;
@@ -817,25 +817,25 @@ function function_69e60a10( var_e4204b3 )
             level.var_6eef6733 = [];
         }
         
-        if ( !isdefined( level.var_6eef6733[ function_9e72a96( self.vehicletype ) ] ) )
+        if ( !isdefined( level.var_6eef6733[ hashtostring( self.vehicletype ) ] ) )
         {
-            level.var_6eef6733[ function_9e72a96( self.vehicletype ) ] = [];
+            level.var_6eef6733[ hashtostring( self.vehicletype ) ] = [];
         }
         
-        if ( !isdefined( level.var_6eef6733[ function_9e72a96( self.vehicletype ) ] ) )
+        if ( !isdefined( level.var_6eef6733[ hashtostring( self.vehicletype ) ] ) )
         {
-            level.var_6eef6733[ function_9e72a96( self.vehicletype ) ] = [];
+            level.var_6eef6733[ hashtostring( self.vehicletype ) ] = [];
         }
-        else if ( !isarray( level.var_6eef6733[ function_9e72a96( self.vehicletype ) ] ) )
+        else if ( !isarray( level.var_6eef6733[ hashtostring( self.vehicletype ) ] ) )
         {
-            level.var_6eef6733[ function_9e72a96( self.vehicletype ) ] = array( level.var_6eef6733[ function_9e72a96( self.vehicletype ) ] );
+            level.var_6eef6733[ hashtostring( self.vehicletype ) ] = array( level.var_6eef6733[ hashtostring( self.vehicletype ) ] );
         }
         
-        level.var_6eef6733[ function_9e72a96( self.vehicletype ) ][ level.var_6eef6733[ function_9e72a96( self.vehicletype ) ].size ] = self;
+        level.var_6eef6733[ hashtostring( self.vehicletype ) ][ level.var_6eef6733[ hashtostring( self.vehicletype ) ].size ] = self;
         v_spawn_pos = self.origin;
         level thread function_f567f0cd();
         level flag::wait_till( "<dev string:xea>" );
-        str_type = function_9e72a96( self.vehicletype );
+        str_type = hashtostring( self.vehicletype );
         v_color = self function_b2775b52();
         
         while ( getdvarint( #"hash_57a9b32c8a8503f1", 0 ) )
@@ -891,7 +891,7 @@ function function_69e60a10( var_e4204b3 )
                 {
                     if ( isvehicle( var_3ed342fe ) && isdefined( var_f0ffe8b2 ) && isdefined( var_f0ffe8b2[ 0 ] ) && isdefined( var_f0ffe8b2[ 0 ].vehicletype ) )
                     {
-                        debug2dtext( ( 810, var_bd9acc19, 0 ), function_9e72a96( var_f0ffe8b2[ 0 ].vehicletype ) + "<dev string:x243>" + var_f0ffe8b2.size, var_3ed342fe function_b2775b52() );
+                        debug2dtext( ( 810, var_bd9acc19, 0 ), hashtostring( var_f0ffe8b2[ 0 ].vehicletype ) + "<dev string:x243>" + var_f0ffe8b2.size, var_3ed342fe function_b2775b52() );
                         break;
                     }
                 }
@@ -1040,7 +1040,7 @@ function function_69e60a10( var_e4204b3 )
                 if ( var_91d1913b > 768 )
                 {
                     v_color = function_df930125( point.targetname );
-                    str_type = function_9e72a96( point.targetname );
+                    str_type = hashtostring( point.targetname );
                     sphere( point.origin, n_radius, v_color );
                     
                     if ( var_91d1913b < 2048 )

@@ -27,7 +27,7 @@ function __init__()
     }
     
     bgb::register( #"zm_bgb_in_plain_sight", "activated", 1, undefined, undefined, undefined, &activation );
-    bgb::function_72469efe( #"zm_bgb_in_plain_sight", 1 );
+    bgb::register_invulnerable_during_activation( #"zm_bgb_in_plain_sight", 1 );
     bgb::function_8a5d8cfb( #"zm_bgb_in_plain_sight", 1 );
     bgb::function_57eb02e( #"zm_bgb_in_plain_sight" );
     

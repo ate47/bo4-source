@@ -1,0 +1,23 @@
+{
+    "name": "#maps/zm/zm_orange.d3dbsp",
+    "baseName": "zm_orange",
+    "mins": "-130816 -132480 -2446.82",
+    "maxs": "131328.5 129666 8369.211",
+    "checksum": 0,
+    "streamerworld": "#hash_1d2401eafb01ea37",
+    "lighting": "#maps/zm/zm_orange.d3dbsp",
+    "lutMaterial": "#mtl_lut_zm_orange",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_zm_orange",
+        "#img_trim_lut_zm_orange",
+        "#img_trim_lut_zm_orange",
+        "#img_trim_lut_zm_orange"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 34,
+        "cookieArray": "#*cookie_array"
+    }
+}

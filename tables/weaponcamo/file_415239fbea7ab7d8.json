@@ -1,0 +1,491 @@
+{
+    "name": "#hash_415239fbea7ab7d8",
+    "camoMaterials": [
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_p8_zm_elixir_icon_base"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_5b2780990f64b347",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "rotation": 0,
+                            "normalBlend": 0,
+                            "glossBlend": 0,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_p8_zm_elixir_icon_base"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_42101860dbc208e",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "rotation": 0,
+                            "normalBlend": 0,
+                            "glossBlend": 0,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                },
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_p8_zm_elixir_icon_base"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_42101860dbc208e",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "rotation": 0,
+                            "normalBlend": 0,
+                            "glossBlend": 0,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_p8_zm_elixir_icon_base"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_e8a5d987b0c2598",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "rotation": 0,
+                            "normalBlend": 0,
+                            "glossBlend": 0,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_p8_zm_elixir_icon_base"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_78cf6fa4d785fed5",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "rotation": 0,
+                            "normalBlend": 0,
+                            "glossBlend": 0,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_p8_zm_elixir_icon_base"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_72aa1ad1001fc490",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "rotation": 0,
+                            "normalBlend": 0,
+                            "glossBlend": 0,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_p8_zm_elixir_icon_base"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_581080abf76e1a87",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "rotation": 0,
+                            "normalBlend": 0,
+                            "glossBlend": 0,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_p8_zm_elixir_icon_base"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_452916a5222fb4c3",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "rotation": 0,
+                            "normalBlend": 0,
+                            "glossBlend": 0,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_p8_zm_elixir_icon_base"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_6b26451dc3d7bd33",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "rotation": 0,
+                            "normalBlend": 0,
+                            "glossBlend": 0,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_p8_zm_elixir_icon_base"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_1cc92496222233bc",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "rotation": 0,
+                            "normalBlend": 0,
+                            "glossBlend": 0,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_p8_zm_elixir_icon_base"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_32bea5269d58cf24",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "rotation": 0,
+                            "normalBlend": 0,
+                            "glossBlend": 0,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_p8_zm_elixir_icon_base"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_3d8ce62d35845ae3",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "rotation": 0,
+                            "normalBlend": 0,
+                            "glossBlend": 0,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_p8_zm_elixir_icon_base"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_1a44f76c891c75d",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "rotation": 0,
+                            "normalBlend": 0,
+                            "glossBlend": 0,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_p8_zm_elixir_icon_base"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_2ad2a96360462f00",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "rotation": 0,
+                            "normalBlend": 0,
+                            "glossBlend": 0,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

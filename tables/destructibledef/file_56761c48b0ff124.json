@@ -1,0 +1,298 @@
+{
+    "name": "#hash_56761c48b0ff124",
+    "model": "#hash_4c6e8afb892e122a",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "name": "#hash_21d849eee4d897a",
+                    "unk28": "tag_origin"
+                },
+                {
+                    "name": "#hash_4d024c686b015e3d",
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_43bf524e685597e1",
+            "unk268": 3000,
+            "hideBones": [
+                31,
+                71,
+                86,
+                120
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_windshield_glass_lower_left_d0"
+                },
+                {
+                    "unk28": "tag_windshield_glass_lower_left_d1"
+                },
+                {
+                    "unk28": "tag_windshield_glass_lower_left_d2"
+                },
+                {
+                    "unk28": "tag_windshield_glass_lower_left_d3"
+                },
+                {
+                    "unk28": "tag_windshield_glass_lower_left_d4"
+                },
+                {
+                    "unk28": "tag_windshield_glass_lower_left_d5"
+                },
+                {
+                    "unk28": "tag_windshield_glass_lower_left_d5"
+                }
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_43bf514e6855962e",
+            "unk268": 500,
+            "hideBones": [
+                50,
+                112,
+                113,
+                114,
+                115,
+                116
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_windshield_glass_lower_right_d0"
+                },
+                {
+                    "unk28": "tag_windshield_glass_lower_right_d1"
+                },
+                {
+                    "unk28": "tag_windshield_glass_lower_right_d2"
+                },
+                {
+                    "unk28": "tag_windshield_glass_lower_right_d3"
+                },
+                {
+                    "unk28": "tag_windshield_glass_lower_right_d4"
+                },
+                {
+                    "unk28": "tag_windshield_glass_lower_right_d5"
+                },
+                {
+                    "unk28": "tag_windshield_glass_lower_right_d5"
+                }
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_43bf504e6855947b",
+            "unk268": 500,
+            "hideBones": [
+                49,
+                107,
+                108,
+                109,
+                110,
+                111
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_windshield_glass_upper_left_d0"
+                },
+                {
+                    "unk28": "tag_windshield_glass_upper_left_d1"
+                },
+                {
+                    "unk28": "tag_windshield_glass_upper_left_d2"
+                },
+                {
+                    "unk28": "tag_windshield_glass_upper_left_d3"
+                },
+                {
+                    "unk28": "tag_windshield_glass_upper_left_d4"
+                },
+                {
+                    "unk28": "tag_windshield_glass_upper_left_d5"
+                },
+                {
+                    "unk28": "tag_windshield_glass_upper_left_d5"
+                }
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_43bf4f4e685592c8",
+            "unk268": 500,
+            "hideBones": [
+                46,
+                96,
+                97,
+                98,
+                99,
+                100
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_windshield_glass_upper_right_d0"
+                },
+                {
+                    "unk28": "tag_windshield_glass_upper_right_d1"
+                },
+                {
+                    "unk28": "tag_windshield_glass_upper_right_d2"
+                },
+                {
+                    "unk28": "tag_windshield_glass_upper_right_d3"
+                },
+                {
+                    "unk28": "tag_windshield_glass_upper_right_d4"
+                },
+                {
+                    "unk28": "tag_windshield_glass_upper_right_d5"
+                },
+                {
+                    "unk28": "tag_windshield_glass_upper_right_d5"
+                }
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_43bf564e68559ead",
+            "unk268": 500,
+            "hideBones": [
+                45,
+                155,
+                156,
+                157,
+                158,
+                159
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_windshield_glass_top_left_d0"
+                },
+                {
+                    "unk28": "tag_windshield_glass_top_left_d1"
+                },
+                {
+                    "unk28": "tag_windshield_glass_top_left_d2"
+                },
+                {
+                    "unk28": "tag_windshield_glass_top_left_d3"
+                },
+                {
+                    "unk28": "tag_windshield_glass_top_left_d3"
+                },
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_43bf554e68559cfa",
+            "unk268": 500,
+            "hideBones": [
+                48,
+                104,
+                105,
+                106
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_windshield_glass_top_right_d0"
+                },
+                {
+                    "unk28": "tag_windshield_glass_top_right_d1"
+                },
+                {
+                    "unk28": "tag_windshield_glass_top_right_d2"
+                },
+                {
+                    "unk28": "tag_windshield_glass_top_right_d3"
+                },
+                {
+                    "unk28": "tag_windshield_glass_top_right_d3"
+                },
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_43bf544e68559b47",
+            "unk268": 500,
+            "hideBones": [
+                47,
+                101,
+                102,
+                103
+            ]
+        }
+    ]
+}

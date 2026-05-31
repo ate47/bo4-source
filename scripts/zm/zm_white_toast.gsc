@@ -737,7 +737,7 @@ function apd_lockdown()
         }
     }
     
-    foreach ( a_s_crafting in level.var_4fe2f84d )
+    foreach ( a_s_crafting in level.a_t_crafting )
     {
         foreach ( s_crafting in a_s_crafting )
         {
@@ -849,7 +849,7 @@ function function_641f4ec( var_ae5725a9, lockdown_trigger_func, unlock_cost, cli
     if ( client_fx === "discharge_perk" )
     {
         self zm_perks::function_a30c73b9( "off" );
-        self.var_3468124.mdl_altar clientfield::set( client_fx, 1 );
+        self.s_vapor_altar.mdl_altar clientfield::set( client_fx, 1 );
     }
     else if ( client_fx === "discharge_pap" )
     {
@@ -890,7 +890,7 @@ function function_cf62f3c7()
         if ( self.client_fx === "discharge_perk" )
         {
             self zm_perks::function_a30c73b9( "off" );
-            self.var_3468124.mdl_altar clientfield::set( self.client_fx, 0 );
+            self.s_vapor_altar.mdl_altar clientfield::set( self.client_fx, 0 );
         }
         else if ( self.client_fx === "discharge_pap" )
         {
@@ -1020,7 +1020,7 @@ function function_297251d8()
 // Size: 0x7c
 function shock_player( n_damage = 50 )
 {
-    shock_status_effect = getstatuseffect( #"hash_19533caf858a9f3b" );
+    shock_status_effect = getstatuseffect( #"shock_zm_trap" );
     self thread player_elec_damage( n_damage );
     self status_effect::status_effect_apply( shock_status_effect, undefined, self, 0 );
 }

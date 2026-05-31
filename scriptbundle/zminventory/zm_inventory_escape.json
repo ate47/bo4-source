@@ -9,8 +9,8 @@
                             "stageimage": "image#hash_a4f2def438bc162"
                         }
                     ],
-                    "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "list_stages": 1,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                     "clientfield": "#hash_40b098e265f3e592"
                 },
                 {
@@ -20,8 +20,8 @@
                             "stageimage": "image#hash_1d52114c56c1b808"
                         }
                     ],
-                    "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "list_stages": 1,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                     "clientfield": "#hash_40b097e265f3e3df"
                 },
                 {
@@ -31,27 +31,27 @@
                             "stageimage": "image#hash_5f4dc252b5774dd5"
                         }
                     ],
-                    "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "list_stages": 1,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                     "clientfield": "#hash_40b096e265f3e22c"
                 }
             ],
-            "hash_b048489f": 3
+            "list_components": 3
         }
     ],
     "shieldpieces": [
         {
-            "hash_7db3435c": 0,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "pieceimage": "image#hash_59dbf83a8853a547",
             "clientfield": "#hash_66f5a1e5c9a28e30"
         },
         {
-            "hash_7db3435c": 0,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "pieceimage": "image#hash_7ecdca2dfb9523e8",
             "clientfield": "#hash_66f5a4e5c9a29349"
         },
         {
-            "hash_7db3435c": 0,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "pieceimage": "image#hash_463a54ad71577205",
             "clientfield": "#hash_66f5a2e5c9a28fe3"
         }
@@ -92,15 +92,15 @@
     ],
     "objectivebackground": "image#hash_718abef0eea9a942",
     "configstringfiletype": "scriptbundle",
-    "hash_aa76b7dd": 8,
-    "hash_3e38620e": 0,
+    "hash_18f4a9668000591d:hash_aa76b7dd": 8,
+    "hash_1dd088b99b7444ff:hash_3e38620e": 0,
     "type": "zminventory",
-    "hash_af62a8e8": 3,
+    "list_shieldpieces": 3,
     "name": "zm_inventory_escape",
-    "hash_f128673a": "image#hash_2028b2c0395c86bf",
-    "hash_c029b82f": 1,
-    "hash_846fa8e": "#zm_escape_paschal",
-    "hash_f3d39d90": 0,
-    "hash_38b9613": 0,
-    "hash_16fb993f": "image#hash_30727aefda60cbd4"
+    "hash_46ae6385a01aa163:hash_f128673a": "image#hash_2028b2c0395c86bf",
+    "hash_55c625aa7c011e55:hash_c029b82f": 1,
+    "hash_5964032c6ccd2477:hash_846fa8e": "#zm_escape_paschal",
+    "hash_65b46d8804cb3bba:hash_f3d39d90": 0,
+    "hash_6ef84b6e3c25015d:hash_38b9613": 0,
+    "hash_7563aee2ccae246c:hash_16fb993f": "image#hash_30727aefda60cbd4"
 }

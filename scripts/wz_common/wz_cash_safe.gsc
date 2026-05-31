@@ -187,7 +187,7 @@ function private activate_safe()
 {
     setdynentstate( self, 0 );
     self.var_e7823894 = 1;
-    self.canuse = &function_c92a5584;
+    self.canuse = &iidz;
     self.onbeginuse = &function_97eb71f0;
     self.var_263c4ded = &function_3d49217f;
     self.onuse = &function_7c5a1e82;
@@ -208,7 +208,7 @@ function private hide_safe()
 // Params 1, eflags: 0x4
 // Checksum 0xaf1a90b9, Offset: 0x980
 // Size: 0x132, Type: bool
-function private function_c92a5584( activator )
+function private iidz( activator )
 {
     if ( !isdefined( activator ) || !isstruct( activator.inventory ) || !isarray( activator.inventory.items ) )
     {

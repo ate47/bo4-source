@@ -29,7 +29,7 @@ function init_clientfields()
     clientfield::register( "allplayers", "" + #"shield_fire", 8000, 1, "int", &function_da63d789, 0, 0 );
     clientfield::register( "scriptmover", "" + #"triad_beam", 8000, getminbitcountfornum( 3 ), "int", &triad_beam, 0, 0 );
     clientfield::register( "scriptmover", "" + #"wisp_fx", 8000, 2, "int", &function_41640257, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_2108935a0c33f89a", 8000, getminbitcountfornum( 3 ), "int", &function_b24b4025, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"knight_sigil_fx", 8000, getminbitcountfornum( 3 ), "int", &function_b24b4025, 0, 0 );
     zm_sq_modules::function_d8383812( #"soul_capture_kp1", 8000, #"kp_1", 400, level._effect[ #"kp_projectile" ], level._effect[ #"hash_27063b90fbaa52" ], undefined, undefined, 1 );
     zm_sq_modules::function_d8383812( #"soul_capture_kp2", 8000, #"kp_2", 400, level._effect[ #"kp_projectile" ], level._effect[ #"hash_27063b90fbaa52" ], undefined, undefined, 1 );
     zm_sq_modules::function_d8383812( #"soul_capture_kp3", 8000, #"kp_3", 400, level._effect[ #"kp_projectile" ], level._effect[ #"hash_27063b90fbaa52" ], undefined, undefined, 1 );
@@ -69,7 +69,7 @@ function function_da63d789( localclientnum, oldval, newval, bnewent, binitialsna
             }
             else
             {
-                self endon( #"hash_4df59fed1b90332a" );
+                self endon( #"kill_blue_fire_fx" );
                 var_77e629d2 = undefined;
                 var_6ab87412 = undefined;
                 fx_blue_fire = undefined;
@@ -130,7 +130,7 @@ function function_da63d789( localclientnum, oldval, newval, bnewent, binitialsna
         self playsound( localclientnum, #"hash_4c0f6dc77900b94a" );
     }
     
-    self notify( #"hash_4df59fed1b90332a" );
+    self notify( #"kill_blue_fire_fx" );
 }
 
 // Namespace mansion_triad/zm_mansion_triad
@@ -141,7 +141,7 @@ function function_da5e1d54( localclientnum, fx_blue_fire )
 {
     self notify( "100e93786f2c9d8d" );
     self endon( "100e93786f2c9d8d" );
-    self waittill( #"hash_4df59fed1b90332a", #"death" );
+    self waittill( #"kill_blue_fire_fx", #"death" );
     
     if ( isdefined( fx_blue_fire ) && isdefined( function_5c10bd79( localclientnum ) ) )
     {

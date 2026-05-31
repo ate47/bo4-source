@@ -254,7 +254,7 @@ function j_fore_le_01()
 function function_7446a885()
 {
     level flag::set( "attack_event_active" );
-    n_time = function_17b486d1();
+    n_time = get_time_limit();
     n_bomb_timer = int( gettime() + 1000 + int( n_time * 1000 ) );
     setmatchflag( "bomb_timer_a", 1 );
     setbombtimer( "A", n_bomb_timer );
@@ -438,7 +438,7 @@ function function_7f166658()
 // Params 0
 // Checksum 0x37c1a5ba, Offset: 0x14d0
 // Size: 0x8e
-function function_17b486d1()
+function get_time_limit()
 {
     switch ( level.var_347db8b6 )
     {

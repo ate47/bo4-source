@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_teabag",
-    "hash_ff3063df": "model#",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_teabag",
     "name": "charm_teabag",
     "displayname": "localized17#hash_42a1ebe46692515a",
     "icon": "ui_icon_weapon_charms_teabag",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_teabag"
 }

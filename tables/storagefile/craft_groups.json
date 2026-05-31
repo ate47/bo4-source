@@ -1,5 +1,163 @@
 {
-    "name": "#craft_groups",
     "nameStr": "craft_groups",
-    "ddl": "#gamedata/ddl/generated/emblem.ddl"
+    "name": "#craft_groups",
+    "ddlPath": "#gamedata/ddl/generated/emblem.ddl",
+    "files": [
+        {
+            "fileName": "craft_groups"
+        },
+        {
+            "fileName": "craft_groups_1"
+        },
+        {
+            "fileName": "craft_groups_2"
+        },
+        {
+            "fileName": "craft_groups_3"
+        },
+        {
+            "fileName": "craft_groups_4"
+        },
+        {
+            "fileName": "craft_groups_5"
+        },
+        {
+            "fileName": "craft_groups_6"
+        },
+        {
+            "fileName": "craft_groups_7"
+        },
+        {
+            "fileName": "craft_groups_8"
+        },
+        {
+            "fileName": "craft_groups_9"
+        },
+        {
+            "fileName": "craft_groups_10"
+        },
+        {
+            "fileName": "craft_groups_11"
+        },
+        {
+            "fileName": "craft_groups_12"
+        },
+        {
+            "fileName": "craft_groups_13"
+        },
+        {
+            "fileName": "craft_groups_14"
+        },
+        {
+            "fileName": "craft_groups_15"
+        },
+        {
+            "fileName": "craft_groups_16"
+        },
+        {
+            "fileName": "craft_groups_17"
+        },
+        {
+            "fileName": "craft_groups_18"
+        },
+        {
+            "fileName": "craft_groups_19"
+        },
+        {
+            "fileName": "craft_groups_20"
+        },
+        {
+            "fileName": "craft_groups_21"
+        },
+        {
+            "fileName": "craft_groups_22"
+        },
+        {
+            "fileName": "craft_groups_23"
+        },
+        {
+            "fileName": "craft_groups_24"
+        },
+        {
+            "fileName": "craft_groups_25"
+        },
+        {
+            "fileName": "craft_groups_26"
+        },
+        {
+            "fileName": "craft_groups_27"
+        },
+        {
+            "fileName": "craft_groups_28"
+        },
+        {
+            "fileName": "craft_groups_29"
+        },
+        {
+            "fileName": "craft_groups_30"
+        },
+        {
+            "fileName": "craft_groups_31"
+        },
+        {
+            "fileName": "craft_groups_32"
+        },
+        {
+            "fileName": "craft_groups_33"
+        },
+        {
+            "fileName": "craft_groups_34"
+        },
+        {
+            "fileName": "craft_groups_35"
+        },
+        {
+            "fileName": "craft_groups_36"
+        },
+        {
+            "fileName": "craft_groups_37"
+        },
+        {
+            "fileName": "craft_groups_38"
+        },
+        {
+            "fileName": "craft_groups_39"
+        },
+        {
+            "fileName": "craft_groups_40"
+        },
+        {
+            "fileName": "craft_groups_41"
+        },
+        {
+            "fileName": "craft_groups_42"
+        },
+        {
+            "fileName": "craft_groups_43"
+        },
+        {
+            "fileName": "craft_groups_44"
+        },
+        {
+            "fileName": "craft_groups_45"
+        },
+        {
+            "fileName": "craft_groups_46"
+        },
+        {
+            "fileName": "craft_groups_47"
+        },
+        {
+            "fileName": "craft_groups_48"
+        },
+        {
+            "fileName": "craft_groups_49"
+        }
+    ],
+    "size": 2048,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

@@ -1,16 +1,13 @@
 {
     "name": "#zm_rank_34",
-    "shortNameRef": "#",
     "fullNameRef": "#hash_2e4fd23495866326",
-    "ingameNameRef": "#",
-    "iconName": "#hash_1096cbb1860b38a",
-    "iconNameLarge": "#hash_6bcc63cc5732e5ea",
     "level": 34,
     "minXp": 493400,
     "maxXp": 523800,
+    "icon": "#ui_icon_rank_zm_level34",
+    "iconLarge": "#ui_icon_rank_zm_level34_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#eq_wraith_fire"
         }
     ]

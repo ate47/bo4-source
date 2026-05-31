@@ -1,10 +1,10 @@
 {
-    "lootid": "#hash_784f232e821aafe6",
-    "hash_ff3063df": "model#",
+    "lootid": "#charm_crystals",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_crystal",
     "name": "charm_crystal",
     "displayname": "localized17#hash_65a2111107d32d17",
     "icon": "ui_icon_weapon_charms_crystal",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_crystal"
 }

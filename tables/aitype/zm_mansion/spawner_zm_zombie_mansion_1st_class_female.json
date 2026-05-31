@@ -19,11 +19,14 @@
         "#hash_5c209c475c4f889e",
         "#hash_5c209b475c4f86eb",
         "#hash_1548b0053c612dc1",
-        "#hash_1541b4a658a3331c",
-        "#hash_1541b5a658a334cf",
-        "#hash_3b15d1449a0f77ea"
+        "#c_t8_zmb_dlc1_zombie_1stclass_female1_skin2",
+        "#c_t8_zmb_dlc1_zombie_1stclass_female1_skin3",
+        "#c_t8_zmb_dlc1_zombie_1stclass_female1"
     ],
-    "meleeWeapon": "#hash_479f8de44d618b68",
+    "animMappingTables": [
+        "#hash_13b1ea38b9421ce0"
+    ],
+    "meleeWeapon": "#zombie_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
     "footstepTable": "#zombfootstep",
     "footstepScriptCallback": false,
@@ -31,7 +34,7 @@
     "footstepFXTable2": "#player_footstep",
     "behaviorTree": "#zm_zombie.ai_bt",
     "animStateMachine": "#zm_zombie.ai_asm",
-    "animSelectorTable": "#zm_zombie.ai_ast",
+    "animSelectorTable": "#hash_39d3a662cbad64aa",
     "traversalExtents": "#default_traversal_extents_zm",
     "aiFxBundle": "#c_54i_grunt_fx_table",
     "aiSettingsBundle": "#zm_mansion_zombie_settings",

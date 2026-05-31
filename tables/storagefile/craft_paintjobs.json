@@ -1,5 +1,163 @@
 {
-    "name": "#craft_paintjobs",
     "nameStr": "craft_paintjobs",
-    "ddl": "#gamedata/ddl/generated/paintjobs.ddl"
+    "name": "#craft_paintjobs",
+    "ddlPath": "#gamedata/ddl/generated/paintjobs.ddl",
+    "files": [
+        {
+            "fileName": "craft_paintjobs"
+        },
+        {
+            "fileName": "craft_paintjobs_1"
+        },
+        {
+            "fileName": "craft_paintjobs_2"
+        },
+        {
+            "fileName": "craft_paintjobs_3"
+        },
+        {
+            "fileName": "craft_paintjobs_4"
+        },
+        {
+            "fileName": "craft_paintjobs_5"
+        },
+        {
+            "fileName": "craft_paintjobs_6"
+        },
+        {
+            "fileName": "craft_paintjobs_7"
+        },
+        {
+            "fileName": "craft_paintjobs_8"
+        },
+        {
+            "fileName": "craft_paintjobs_9"
+        },
+        {
+            "fileName": "craft_paintjobs_10"
+        },
+        {
+            "fileName": "craft_paintjobs_11"
+        },
+        {
+            "fileName": "craft_paintjobs_12"
+        },
+        {
+            "fileName": "craft_paintjobs_13"
+        },
+        {
+            "fileName": "craft_paintjobs_14"
+        },
+        {
+            "fileName": "craft_paintjobs_15"
+        },
+        {
+            "fileName": "craft_paintjobs_16"
+        },
+        {
+            "fileName": "craft_paintjobs_17"
+        },
+        {
+            "fileName": "craft_paintjobs_18"
+        },
+        {
+            "fileName": "craft_paintjobs_19"
+        },
+        {
+            "fileName": "craft_paintjobs_20"
+        },
+        {
+            "fileName": "craft_paintjobs_21"
+        },
+        {
+            "fileName": "craft_paintjobs_22"
+        },
+        {
+            "fileName": "craft_paintjobs_23"
+        },
+        {
+            "fileName": "craft_paintjobs_24"
+        },
+        {
+            "fileName": "craft_paintjobs_25"
+        },
+        {
+            "fileName": "craft_paintjobs_26"
+        },
+        {
+            "fileName": "craft_paintjobs_27"
+        },
+        {
+            "fileName": "craft_paintjobs_28"
+        },
+        {
+            "fileName": "craft_paintjobs_29"
+        },
+        {
+            "fileName": "craft_paintjobs_30"
+        },
+        {
+            "fileName": "craft_paintjobs_31"
+        },
+        {
+            "fileName": "craft_paintjobs_32"
+        },
+        {
+            "fileName": "craft_paintjobs_33"
+        },
+        {
+            "fileName": "craft_paintjobs_34"
+        },
+        {
+            "fileName": "craft_paintjobs_35"
+        },
+        {
+            "fileName": "craft_paintjobs_36"
+        },
+        {
+            "fileName": "craft_paintjobs_37"
+        },
+        {
+            "fileName": "craft_paintjobs_38"
+        },
+        {
+            "fileName": "craft_paintjobs_39"
+        },
+        {
+            "fileName": "craft_paintjobs_40"
+        },
+        {
+            "fileName": "craft_paintjobs_41"
+        },
+        {
+            "fileName": "craft_paintjobs_42"
+        },
+        {
+            "fileName": "craft_paintjobs_43"
+        },
+        {
+            "fileName": "craft_paintjobs_44"
+        },
+        {
+            "fileName": "craft_paintjobs_45"
+        },
+        {
+            "fileName": "craft_paintjobs_46"
+        },
+        {
+            "fileName": "craft_paintjobs_47"
+        },
+        {
+            "fileName": "craft_paintjobs_48"
+        },
+        {
+            "fileName": "craft_paintjobs_49"
+        }
+    ],
+    "size": 6144,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

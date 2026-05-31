@@ -1,7 +1,7 @@
 {
     "name": "#hash_23cc1f9c16b375c3",
     "baseWeapon": "#hash_23cc1f9c16b375c3",
-    "streamkey": "#hash_73b17d9fa973e101",
+    "soundbank": "#hash_73b17d9fa973e101",
     "scrstr_8c8": [
         "tag_lid"
     ],
@@ -13,21 +13,22 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "unknown",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
     "soundb0": "#hash_321e0616ad37f67d",
     "firesound": "#hash_2058b0dbb3d49daa",
     "sound240": "#hash_631a067190b54300",
@@ -35,6 +36,9 @@
     "sound4e0": "#hash_7de02f3f0a5f070b",
     "tunables1": "#hash_2809750ef41e518f",
     "weaponCamo": "#hash_4ed140aeb8494a8d",
+    "gestureTables": [
+        "#hash_762838126dccff15"
+    ],
     "viewmodel": [
         "#wpn_t8_zm_elixir_bottle_rare_view"
     ],

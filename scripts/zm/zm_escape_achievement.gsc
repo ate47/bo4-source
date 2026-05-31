@@ -137,13 +137,13 @@ function private function_e5df009()
     }
     else
     {
-        var_76f21e6b = array( "zone_model_industries", "zone_model_industries_upper", "zone_west_side_exterior_upper", "zone_west_side_exterior_upper_02", "zone_west_side_exterior_lower", "zone_powerhouse", "zone_west_side_exterior_tunnel", "zone_new_industries", "zone_new_industries_transverse_tunnel" );
+        a_str_allowed_zones = array( "zone_model_industries", "zone_model_industries_upper", "zone_west_side_exterior_upper", "zone_west_side_exterior_upper_02", "zone_west_side_exterior_lower", "zone_powerhouse", "zone_west_side_exterior_tunnel", "zone_new_industries", "zone_new_industries_transverse_tunnel" );
         
         while ( level.round_number < 20 )
         {
             str_zone = self zm_zonemgr::get_player_zone();
             
-            if ( !isdefined( str_zone ) || !isinarray( var_76f21e6b, str_zone ) )
+            if ( !isdefined( str_zone ) || !isinarray( a_str_allowed_zones, str_zone ) )
             {
                 self notify( #"hash_b5d3534da3f4508" );
             }

@@ -53,44 +53,44 @@ function private on_begin( var_8a72a00b, var_49d8a02c, var_325ff213, var_dd2fad6
     
     if ( isdefined( var_873a1b70 ) )
     {
-        if ( !isdefined( level.var_692c062e ) )
+        if ( !isdefined( level.a_w_allowed ) )
         {
-            level.var_692c062e = [];
+            level.a_w_allowed = [];
         }
-        else if ( !isarray( level.var_692c062e ) )
+        else if ( !isarray( level.a_w_allowed ) )
         {
-            level.var_692c062e = array( level.var_692c062e );
+            level.a_w_allowed = array( level.a_w_allowed );
         }
         
-        level.var_692c062e[ level.var_692c062e.size ] = getweapon( var_873a1b70 );
+        level.a_w_allowed[ level.a_w_allowed.size ] = getweapon( var_873a1b70 );
     }
     
     if ( isdefined( var_957937ee ) )
     {
-        if ( !isdefined( level.var_692c062e ) )
+        if ( !isdefined( level.a_w_allowed ) )
         {
-            level.var_692c062e = [];
+            level.a_w_allowed = [];
         }
-        else if ( !isarray( level.var_692c062e ) )
+        else if ( !isarray( level.a_w_allowed ) )
         {
-            level.var_692c062e = array( level.var_692c062e );
+            level.a_w_allowed = array( level.a_w_allowed );
         }
         
-        level.var_692c062e[ level.var_692c062e.size ] = getweapon( var_957937ee );
+        level.a_w_allowed[ level.a_w_allowed.size ] = getweapon( var_957937ee );
     }
     
     if ( isdefined( var_9c56c5a9 ) )
     {
-        if ( !isdefined( level.var_692c062e ) )
+        if ( !isdefined( level.a_w_allowed ) )
         {
-            level.var_692c062e = [];
+            level.a_w_allowed = [];
         }
-        else if ( !isarray( level.var_692c062e ) )
+        else if ( !isarray( level.a_w_allowed ) )
         {
-            level.var_692c062e = array( level.var_692c062e );
+            level.a_w_allowed = array( level.a_w_allowed );
         }
         
-        level.var_692c062e[ level.var_692c062e.size ] = getweapon( var_9c56c5a9 );
+        level.a_w_allowed[ level.a_w_allowed.size ] = getweapon( var_9c56c5a9 );
     }
     
     callback::on_ai_killed( &on_ai_killed );
@@ -155,7 +155,7 @@ function private on_ai_killed( params )
     w_root = zm_weapons::function_386dacbc( params.weapon );
     b_valid_weapon = 0;
     
-    if ( isinarray( level.var_692c062e, w_root ) )
+    if ( isinarray( level.a_w_allowed, w_root ) )
     {
         b_valid_weapon = 1;
     }
@@ -191,7 +191,7 @@ function is_active( var_a75461b4 )
     
     if ( isdefined( var_a75461b4 ) )
     {
-        if ( isdefined( s_challenge ) && isarray( level.var_692c062e ) && isinarray( level.var_692c062e, var_a75461b4 ) )
+        if ( isdefined( s_challenge ) && isarray( level.a_w_allowed ) && isinarray( level.a_w_allowed, var_a75461b4 ) )
         {
             return true;
         }

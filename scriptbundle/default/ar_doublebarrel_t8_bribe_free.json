@@ -1,10 +1,10 @@
 {
-    "hash_2703f9fb7e481f6d:hash_c7bd8867": "localized17#hash_2703f9fb7e481f6d",
+    "hash_c25093de08d3ac8:hash_c7bd8867": "localized17#hash_2703f9fb7e481f6d",
     "popupimage": "image#ui_icon_weapon_ar_doublebarrel_render",
-    "ui_icon_weapon_ar_doublebarrel_render": "image#ui_icon_weapon_ar_doublebarrel_render",
+    "hash_2b47c2d1a4104152:hash_5162d01b": "image#ui_icon_weapon_ar_doublebarrel_render",
     "nametext": "localized17#weapon/ar_doublebarrel_t8",
     "categorytext": "localized17#mpui/bm_bribe",
     "name": "ar_doublebarrel_t8_bribe_free",
     "desctext": "localized17#hash_555d271fac29e654",
-    "weapon/ar_doublebarrel_t8": "localized17#weapon/ar_doublebarrel_t8"
+    "hash_7b2bb983050b1101:hash_c1acffb6": "localized17#weapon/ar_doublebarrel_t8"
 }

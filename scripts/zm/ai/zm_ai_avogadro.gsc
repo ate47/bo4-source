@@ -755,7 +755,7 @@ function private function_e805c4d0( entity, asmstatename )
 {
     animationstatenetworkutility::requeststate( entity, asmstatename );
     entity.previous_origin = entity.origin;
-    entity.var_faaea04c = gettime();
+    entity.last_move_time = gettime();
     return 5;
 }
 
@@ -768,7 +768,7 @@ function private function_292adb83( entity, asmstatename )
     result = 5;
     function_d59c4b07( entity );
     
-    if ( gettime() - entity.var_faaea04c > int( 1 * 1000 ) )
+    if ( gettime() - entity.last_move_time > int( 1 * 1000 ) )
     {
         if ( distance2dsquared( entity.origin, entity.previous_origin ) < 25 )
         {
@@ -777,7 +777,7 @@ function private function_292adb83( entity, asmstatename )
         else
         {
             entity.previous_origin = entity.origin;
-            entity.var_faaea04c = gettime();
+            entity.last_move_time = gettime();
         }
     }
     
@@ -879,7 +879,7 @@ function private function_9c41ab55( entity )
 function private function_c96c9ef8( entity )
 {
     result = 0;
-    var_61835cce = 0;
+    player_touching_volume = 0;
     
     if ( isdefined( entity.var_885c1824 ) )
     {
@@ -889,7 +889,7 @@ function private function_c96c9ef8( entity )
         {
             if ( players[ i ] istouching( entity.var_885c1824 ) )
             {
-                var_61835cce = 1;
+                player_touching_volume = 1;
                 break;
             }
         }

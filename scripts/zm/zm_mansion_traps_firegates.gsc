@@ -758,9 +758,9 @@ function function_5ad19000( e_trap )
     
     self thread zombie_death::flame_death_fx();
     
-    if ( isdefined( self.var_5475b4ad ) )
+    if ( isdefined( self.fire_damage_func ) )
     {
-        self [[ self.var_5475b4ad ]]( e_trap );
+        self [[ self.fire_damage_func ]]( e_trap );
         return;
     }
     

@@ -49,7 +49,7 @@ function init_clientfields()
     clientfield::register( "scriptmover", "bs_att_bm_tell_fx_cf", 1, 1, "int", &function_f5116ee2, 0, 0 );
     clientfield::register( "scriptmover", "bs_att_bm_cf", 1, 1, "int", &function_bf5b47d7, 0, 0 );
     clientfield::register( "allplayers", "bs_att_bm_targ_hit_cf", 1, 1, "int", &function_dac3a61d, 0, 0 );
-    clientfield::register( "toplayer", "bs_att_bm_targ_frz_fx_cf", 1, 1, "int", &skullquest_ritual_, 0, 0 );
+    clientfield::register( "toplayer", "bs_att_bm_targ_frz_fx_cf", 1, 1, "int", &function_e1af20d7, 0, 0 );
     clientfield::register( "scriptmover", "bs_att_blst_tll", 1, 1, "int", &function_eb5c7406, 0, 0 );
     clientfield::register( "scriptmover", "bs_att_blst", 1, 1, "int", &function_50703d72, 0, 0 );
     clientfield::register( "world", "in_engine_room", 1, 1, "int", &function_218857fd, 0, 0 );
@@ -881,11 +881,11 @@ function function_dac3a61d( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x8be25ff1, Offset: 0x3928
 // Size: 0x1c4
-function skullquest_ritual_( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function function_e1af20d7( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {
-        self thread postfx::playpostfxbundle( #"hash_1c4bae784c38419" );
+        self thread postfx::playpostfxbundle( #"pstfx_zm_frozen" );
         self function_116b95e5( #"hash_349a56ada2bc0bc8", "Reveal Threshold", 1 );
         
         if ( self zm_utility::function_f8796df3( localclientnum ) )
@@ -909,7 +909,7 @@ function skullquest_ritual_( localclientnum, oldval, newval, bnewent, binitialsn
     }
     
     self function_116b95e5( #"hash_349a56ada2bc0bc8", "Reveal Threshold", 0 );
-    self thread postfx::exitpostfxbundle( #"hash_1c4bae784c38419" );
+    self thread postfx::exitpostfxbundle( #"pstfx_zm_frozen" );
 }
 
 // Namespace zodt8_boss/zm_zodt8_eye

@@ -4920,7 +4920,7 @@ function get_players( team = #"any" )
         return arraycopy( level.players );
     }
     
-    assert( isdefined( level.teams[ team ] ), "<dev string:x9e6>" + function_9e72a96( team ) + "<dev string:x9ea>" );
+    assert( isdefined( level.teams[ team ] ), "<dev string:x9e6>" + hashtostring( team ) + "<dev string:x9ea>" );
     players = [];
     
     foreach ( player in level.players )
@@ -4948,7 +4948,7 @@ function get_active_players( team = #"any" )
     /#
         if ( team != #"any" )
         {
-            assert( isdefined( level.teams[ team ] ), "<dev string:x9e6>" + function_9e72a96( team ) + "<dev string:x9ea>" );
+            assert( isdefined( level.teams[ team ] ), "<dev string:x9e6>" + hashtostring( team ) + "<dev string:x9ea>" );
         }
     #/
     
@@ -4984,7 +4984,7 @@ function function_81ccf6d3( team = #"any" )
         return players;
     }
     
-    assert( isdefined( level.teams[ team ] ), "<dev string:x9e6>" + function_9e72a96( team ) + "<dev string:x9ea>" );
+    assert( isdefined( level.teams[ team ] ), "<dev string:x9e6>" + hashtostring( team ) + "<dev string:x9ea>" );
     enemies = [];
     
     foreach ( player in players )

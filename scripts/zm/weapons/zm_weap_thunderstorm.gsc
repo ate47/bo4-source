@@ -39,7 +39,7 @@ function __init__()
     clientfield::register( "actor", "" + #"hash_51b05e5d116438a9", 16000, 3, "int" );
     clientfield::register( "actor", "" + #"hash_561a1fd86bc1a53a", 16000, 1, "int" );
     clientfield::register( "scriptmover", "" + #"hash_43cf6c236d2e9ba", 16000, 1, "counter" );
-    clientfield::register( "scriptmover", "" + #"hash_1187b848bf7868c5", 16000, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"pegasus_staff_fx", 16000, 1, "int" );
     weaponobjects::function_e6400478( #"thunderstorm", &function_72e5d54f, undefined );
     deployable::register_deployable( getweapon( #"thunderstorm" ), &function_3b0168a9, undefined, undefined, #"hash_3b6c37d4718707a2" );
     level.a_mdl_pegasus = [];
@@ -182,14 +182,14 @@ function function_3b0168a9( v_origin, v_angles, player )
         return false;
     }
     
-    foreach ( var_10d4f67d in level.a_mdl_pegasus )
+    foreach ( mdl_pegasus in level.a_mdl_pegasus )
     {
-        n_dist = distance( var_10d4f67d.var_f013d620, player.origin );
+        n_dist = distance( mdl_pegasus.var_f013d620, player.origin );
         
         if ( n_dist < 600 )
         {
             n_time = gettime() / 1000;
-            dt = n_time - var_10d4f67d.n_created_time;
+            dt = n_time - mdl_pegasus.n_created_time;
             
             if ( dt > 2 )
             {
@@ -326,15 +326,15 @@ function function_5f724c2e( e_grenade )
         
         level.var_373fe23f++;
         var_373fe23f = level.var_373fe23f;
-        var_10d4f67d = level function_57011892( self );
-        var_10d4f67d.var_373fe23f = var_373fe23f;
-        var_10d4f67d.var_f013d620 = var_f013d620;
-        var_10d4f67d.n_created_time = gettime() / 1000;
-        level.a_mdl_pegasus[ level.a_mdl_pegasus.size ] = var_10d4f67d;
-        level thread function_b603ab34( self, var_10d4f67d );
-        var_10d4f67d thread function_6973e5e8( self getentitynumber() + 1, var_f013d620 );
-        var_10d4f67d thread function_72085d9();
-        var_10d4f67d thread function_5d44b698( var_dd83e2c2 );
+        mdl_pegasus = level function_57011892( self );
+        mdl_pegasus.var_373fe23f = var_373fe23f;
+        mdl_pegasus.var_f013d620 = var_f013d620;
+        mdl_pegasus.n_created_time = gettime() / 1000;
+        level.a_mdl_pegasus[ level.a_mdl_pegasus.size ] = mdl_pegasus;
+        level thread function_b603ab34( self, mdl_pegasus );
+        mdl_pegasus thread function_6973e5e8( self getentitynumber() + 1, var_f013d620 );
+        mdl_pegasus thread function_72085d9();
+        mdl_pegasus thread function_5d44b698( var_dd83e2c2 );
         slot = self gadgetgetslot( weapon );
         self gadgetpowerreset( slot );
         self gadgetpowerset( slot, 0 );
@@ -396,7 +396,7 @@ function function_5d44b698( v_origin )
 // Params 2
 // Checksum 0xef3f7b35, Offset: 0x1230
 // Size: 0x1a4
-function function_b603ab34( e_player, var_10d4f67d )
+function function_b603ab34( e_player, mdl_pegasus )
 {
     level scene::function_27f5972e( #"p8_fxanim_zm_zod_staff_ra_bundle" );
     e_player playsound( #"hash_178614dae860a551" );
@@ -411,8 +411,8 @@ function function_b603ab34( e_player, var_10d4f67d )
     v_pos = util::ground_position( v_pos + ( 0, 0, 30 ), 1000, 12 );
     mdl_temp = util::spawn_model( #"hash_30b0badbca0a10de", v_pos + ( 0, 0, -5 ), ( 0, 0, 0 ) );
     waitframe( 1 );
-    mdl_temp clientfield::set( "" + #"hash_1187b848bf7868c5", 1 );
-    var_10d4f67d waittill( #"hash_7a19b162c9e303dc" );
+    mdl_temp clientfield::set( "" + #"pegasus_staff_fx", 1 );
+    mdl_pegasus waittill( #"hash_7a19b162c9e303dc" );
     mdl_temp delete();
 }
 
@@ -422,12 +422,12 @@ function function_b603ab34( e_player, var_10d4f67d )
 // Size: 0xa0
 function function_57011892( e_player )
 {
-    var_10d4f67d = spawn( "script_model", e_player.origin + ( 0, 0, 170 ) );
-    var_10d4f67d setmodel( "c_t8_zmb_dlc2_pegasus_fb" );
-    var_10d4f67d notsolid();
-    var_10d4f67d.player = e_player;
-    var_10d4f67d thread pegasus_think();
-    return var_10d4f67d;
+    mdl_pegasus = spawn( "script_model", e_player.origin + ( 0, 0, 170 ) );
+    mdl_pegasus setmodel( "c_t8_zmb_dlc2_pegasus_fb" );
+    mdl_pegasus notsolid();
+    mdl_pegasus.player = e_player;
+    mdl_pegasus thread pegasus_think();
+    return mdl_pegasus;
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
@@ -452,11 +452,11 @@ function pegasus_think()
 // Size: 0x5c
 function function_4b198b8f( a_ents )
 {
-    var_10d4f67d = a_ents[ #"prop 1" ];
+    mdl_pegasus = a_ents[ #"prop 1" ];
     
-    if ( isdefined( var_10d4f67d ) )
+    if ( isdefined( mdl_pegasus ) )
     {
-        var_10d4f67d thread scene::play( "aib_zm_red_vign_peg_inair_flapattack_01", "loop", var_10d4f67d );
+        mdl_pegasus thread scene::play( "aib_zm_red_vign_peg_inair_flapattack_01", "loop", mdl_pegasus );
     }
 }
 
@@ -491,7 +491,7 @@ function function_6973e5e8( n_player_index, var_f013d620 )
 // Params 1
 // Checksum 0x323bff95, Offset: 0x1788
 // Size: 0xd0, Type: bool
-function function_3f08f8e9( var_10d4f67d )
+function function_3f08f8e9( mdl_pegasus )
 {
     if ( !isdefined( self.var_534a42ac ) )
     {
@@ -500,13 +500,13 @@ function function_3f08f8e9( var_10d4f67d )
     
     foreach ( var_56a585e8 in self.var_534a42ac )
     {
-        if ( var_56a585e8 == var_10d4f67d.var_373fe23f )
+        if ( var_56a585e8 == mdl_pegasus.var_373fe23f )
         {
             return true;
         }
     }
     
-    self.var_534a42ac[ self.var_534a42ac.size ] = var_10d4f67d.var_373fe23f;
+    self.var_534a42ac[ self.var_534a42ac.size ] = mdl_pegasus.var_373fe23f;
     self.var_45bfef99 = 1;
     return false;
 }
@@ -515,10 +515,10 @@ function function_3f08f8e9( var_10d4f67d )
 // Params 2
 // Checksum 0xd7bde5a0, Offset: 0x1860
 // Size: 0x142
-function function_9c1450b8( var_10d4f67d, n_player_index )
+function function_9c1450b8( mdl_pegasus, n_player_index )
 {
     self endon( #"death" );
-    e_player = var_10d4f67d.player;
+    e_player = mdl_pegasus.player;
     self.var_45bfef99 = 1;
     
     switch ( self.zm_ai_category )
@@ -527,10 +527,10 @@ function function_9c1450b8( var_10d4f67d, n_player_index )
         case #"miniboss":
             var_b1c1c5cf = zm_equipment::function_7d948481( 0.1, 0.25, 0.25, 1 );
             var_5d7b4163 = zm_equipment::function_379f6b5d( 500, var_b1c1c5cf, 1, 4, 50 );
-            self thread function_7c333a0f( var_10d4f67d, var_5d7b4163, n_player_index );
+            self thread function_7c333a0f( mdl_pegasus, var_5d7b4163, n_player_index );
             break;
         default:
-            self thread function_90c53706( var_10d4f67d, n_player_index );
+            self thread function_90c53706( mdl_pegasus, n_player_index );
             break;
     }
 }
@@ -539,10 +539,10 @@ function function_9c1450b8( var_10d4f67d, n_player_index )
 // Params 2
 // Checksum 0x381ded3a, Offset: 0x19b0
 // Size: 0x14c
-function function_90c53706( var_10d4f67d, n_player_index )
+function function_90c53706( mdl_pegasus, n_player_index )
 {
     self endon( #"death" );
-    e_player = var_10d4f67d.player;
+    e_player = mdl_pegasus.player;
     
     if ( isdefined( e_player ) )
     {
@@ -563,12 +563,12 @@ function function_90c53706( var_10d4f67d, n_player_index )
 // Params 3
 // Checksum 0x48a91ca8, Offset: 0x1b08
 // Size: 0x110
-function function_7c333a0f( var_10d4f67d, var_5d7b4163, n_player_index )
+function function_7c333a0f( mdl_pegasus, var_5d7b4163, n_player_index )
 {
     self endon( #"death" );
-    var_10d4f67d endon( #"death" );
-    e_player = var_10d4f67d.player;
-    self thread function_54ad0847( var_10d4f67d );
+    mdl_pegasus endon( #"death" );
+    e_player = mdl_pegasus.player;
+    self thread function_54ad0847( mdl_pegasus );
     
     while ( isalive( self ) )
     {
@@ -583,10 +583,10 @@ function function_7c333a0f( var_10d4f67d, var_5d7b4163, n_player_index )
 // Params 1
 // Checksum 0xb9b07425, Offset: 0x1c20
 // Size: 0x3e
-function function_54ad0847( var_10d4f67d )
+function function_54ad0847( mdl_pegasus )
 {
     self endon( #"death" );
-    var_10d4f67d waittill( #"hash_7a19b162c9e303dc" );
+    mdl_pegasus waittill( #"hash_7a19b162c9e303dc" );
     self.var_c6aafbdb = 0;
 }
 
@@ -693,7 +693,7 @@ function function_97429d68( n_player_index )
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
 // Params 0
 // Checksum 0xc06cdcec, Offset: 0x2018
-// Size: 0x1a, Type: bool
+// Size: 0x1a
 function function_d0671de3()
 {
     return zm_weapons::is_weapon_included( level.w_thunderstorm );

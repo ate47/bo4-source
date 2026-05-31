@@ -115,7 +115,7 @@ function function_cec06121( var_264ee2f5 )
     
     foreach ( player in getplayers() )
     {
-        var_4cd7f83c = player getweaponslistprimaries();
+        a_w_current = player getweaponslistprimaries();
         
         if ( isarray( player.var_ad52095e ) )
         {

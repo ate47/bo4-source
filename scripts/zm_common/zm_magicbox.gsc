@@ -438,7 +438,7 @@ function boxstub_update_prompt( player )
 // Namespace zm_magicbox/zm_magicbox
 // Params 1
 // Checksum 0xedd16a98, Offset: 0x1b40
-// Size: 0x22, Type: bool
+// Size: 0x22
 function default_magic_box_check_equipment( weapon )
 {
     return zm_loadout::is_offhand_weapon( weapon );
@@ -816,7 +816,7 @@ function treasure_chest_think()
         
         if ( isdefined( self.auto_open ) && zm_utility::is_player_valid( user ) )
         {
-            if ( !isdefined( self.var_3b8f3332 ) )
+            if ( !isdefined( self.no_charge ) )
             {
                 user zm_score::minus_to_player_score( self.zombie_cost );
                 user_cost = self.zombie_cost;
@@ -868,7 +868,7 @@ function treasure_chest_think()
     user zm_stats::increment_client_stat( "use_magicbox" );
     user zm_stats::increment_player_stat( "use_magicbox" );
     user zm_stats::increment_challenge_stat( #"survivalist_buy_magic_box", undefined, 1 );
-    user zm_stats::forced_attachment( "boas_use_magicbox" );
+    user zm_stats::function_8f10788e( "boas_use_magicbox" );
     user zm_daily_challenges::increment_magic_box();
     user zm_stats::function_c0c6ab19( #"boxbuys", 1, 1 );
     user zm_stats::function_c0c6ab19( #"weapons_bought", 1, 1 );
@@ -1061,7 +1061,7 @@ function treasure_chest_think()
                     potm::bookmark( #"zm_player_grabbed_magicbox", gettime(), user );
                     user zm_stats::increment_client_stat( "grabbed_from_magicbox" );
                     user zm_stats::increment_player_stat( "grabbed_from_magicbox" );
-                    user zm_stats::forced_attachment( "boas_grabbed_from_magicbox" );
+                    user zm_stats::function_8f10788e( "boas_grabbed_from_magicbox" );
                     
                     if ( isdefined( level.var_bb6907a4 ) )
                     {
@@ -1160,40 +1160,40 @@ function function_e4dcca48()
     self.var_481aa649 = 0;
     self.var_c2f3a87c = 0;
     var_369ce419 = self.chest_user;
-    var_63f52acb = self.zbarrier.weapon_model;
+    mdl_weapon_model = self.zbarrier.weapon_model;
     
-    if ( isdefined( var_63f52acb ) )
+    if ( isdefined( mdl_weapon_model ) )
     {
-        var_63f52acb endon( #"death" );
+        mdl_weapon_model endon( #"death" );
     }
     
-    for ( var_1e99deea = undefined; !isdefined( var_1e99deea ) ; var_1e99deea = zm_unitrigger::function_f1794fbf( self.unitrigger_stub, var_369ce419 ) )
+    for ( t_unitrigger = undefined; !isdefined( t_unitrigger ) ; t_unitrigger = zm_unitrigger::function_f1794fbf( self.unitrigger_stub, var_369ce419 ) )
     {
         util::wait_network_frame();
     }
     
-    var_1e99deea endon( #"kill_trigger" );
+    t_unitrigger endon( #"kill_trigger" );
     
     while ( true )
     {
         self.var_c2f3a87c = 0;
         
-        if ( isdefined( var_369ce419 ) && isdefined( var_63f52acb ) )
+        if ( isdefined( var_369ce419 ) && isdefined( mdl_weapon_model ) )
         {
-            if ( var_369ce419 util::is_looking_at( var_63f52acb ) )
+            if ( var_369ce419 util::is_looking_at( mdl_weapon_model ) )
             {
                 self.var_c2f3a87c = 1;
             }
         }
         
-        if ( isdefined( var_369ce419 ) && var_369ce419 meleebuttonpressed() && self.var_c2f3a87c && var_369ce419 istouching( var_1e99deea ) )
+        if ( isdefined( var_369ce419 ) && var_369ce419 meleebuttonpressed() && self.var_c2f3a87c && var_369ce419 istouching( t_unitrigger ) )
         {
             self.var_481aa649 = 1;
             self.var_75c86f89 = var_369ce419;
             
-            if ( isdefined( var_63f52acb ) )
+            if ( isdefined( mdl_weapon_model ) )
             {
-                var_63f52acb clientfield::set( "powerup_fx", 1 );
+                mdl_weapon_model clientfield::set( "powerup_fx", 1 );
             }
             
             var_369ce419 thread zm_audio::create_and_play_dialog( #"magicbox", #"share" );
@@ -1682,7 +1682,7 @@ function function_db355791( player, weapon, var_21b5a3f4 = 1 )
 function function_4aa1f177( player )
 {
     a_weapons = array::randomize( getarraykeys( level.zombie_weapons ) );
-    var_b865ddb7 = a_weapons[ 0 ];
+    w_first = a_weapons[ 0 ];
     w_second = a_weapons[ 1 ];
     
     if ( isdefined( player ) )
@@ -1729,7 +1729,7 @@ function function_4aa1f177( player )
     
     if ( isdefined( player ) )
     {
-        if ( a_weapons[ 0 ] === var_b865ddb7 && a_weapons[ 1 ] === w_second )
+        if ( a_weapons[ 0 ] === w_first && a_weapons[ 1 ] === w_second )
         {
             var_d07a7ff9 = 1;
             var_bf43f78f = randomfloat( 100 );
@@ -2057,9 +2057,9 @@ function treasure_chest_should_move( chest, player )
             chance_of_joker = -1;
         }
         
-        if ( isdefined( level.var_b0344a3c ) )
+        if ( isdefined( level._zombiemode_chest_joker_chance_override_func ) )
         {
-            chance_of_joker = [[ level.var_b0344a3c ]]( chance_of_joker );
+            chance_of_joker = [[ level._zombiemode_chest_joker_chance_override_func ]]( chance_of_joker );
         }
         
         if ( isdefined( level.var_401aaa92 ) && level.var_401aaa92 )
@@ -2231,9 +2231,9 @@ function treasure_chest_weapon_spawn( chest, player, respin )
         }
     }
     
-    if ( isdefined( level.var_9e2df930 ) )
+    if ( isdefined( level.custom_magic_box_weapon_wait ) )
     {
-        [[ level.var_9e2df930 ]]();
+        [[ level.custom_magic_box_weapon_wait ]]();
     }
     
     if ( !move_the_box && preferred_weapon == level.weaponnone )

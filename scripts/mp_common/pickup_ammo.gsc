@@ -141,7 +141,7 @@ function private function_5bb13b48( player )
         }
         else
         {
-            player iprintlnbold( #"hash_2ea29b19d0e205e7" );
+            player iprintlnbold( #"mpui/ammo_full" );
             self playsoundtoplayer( #"uin_unavailable_charging", player );
         }
     }

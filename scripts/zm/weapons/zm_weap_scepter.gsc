@@ -895,7 +895,7 @@ function function_d5c9a81( e_revivee )
         return false;
     }
     
-    if ( isdefined( level.var_1461fd14 ) && ![[ level.var_1461fd14 ]]( e_revivee ) )
+    if ( isdefined( level.can_revive_game_module ) && ![[ level.can_revive_game_module ]]( e_revivee ) )
     {
         return false;
     }

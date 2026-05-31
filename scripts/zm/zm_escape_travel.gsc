@@ -42,9 +42,9 @@ function init_alcatraz_zipline()
     level.e_gondola.t_ride = getent( "gondola_ride_trigger", "targetname" );
     level.e_gondola.t_ride enablelinkto();
     level.e_gondola.t_ride linkto( e_gondola );
-    var_57ba058f = getentarray( "gondola_call_trigger", "targetname" );
+    a_t_call_triggers = getentarray( "gondola_call_trigger", "targetname" );
     
-    foreach ( trigger in var_57ba058f )
+    foreach ( trigger in a_t_call_triggers )
     {
         trigger sethintstring( #"hash_ebd3d1458a3b46e" );
     }
@@ -98,9 +98,9 @@ function init_alcatraz_zipline()
     level.var_b9656485 = 0;
     level.var_cf10ac23 = 0;
     level.var_b5f05d46 = 0;
-    var_9ce0aba1 = getentarray( "gondola_move_trigger", "targetname" );
-    array::thread_all( var_9ce0aba1, &zipline_move_trigger_think );
-    array::thread_all( var_57ba058f, &zipline_call_trigger_think );
+    a_t_move_triggers = getentarray( "gondola_move_trigger", "targetname" );
+    array::thread_all( a_t_move_triggers, &zipline_move_trigger_think );
+    array::thread_all( a_t_call_triggers, &zipline_call_trigger_think );
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
@@ -109,9 +109,9 @@ function init_alcatraz_zipline()
 // Size: 0x140
 function function_815e3997()
 {
-    var_9ce0aba1 = getentarray( "gondola_move_trigger", "targetname" );
+    a_t_move_triggers = getentarray( "gondola_move_trigger", "targetname" );
     
-    foreach ( trigger in var_9ce0aba1 )
+    foreach ( trigger in a_t_move_triggers )
     {
         if ( zm_utility::is_standard() )
         {

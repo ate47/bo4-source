@@ -2,9 +2,9 @@
     "name": "#ray_gun_mk2z_wz",
     "baseWeapon": "#ray_gun_mk2z",
     "displayname": "#hash_4911d1f708fff427",
-    "xhash_60": "#hash_1c5218e81b12355",
-    "xhash_70": "#ray_gun_mk2z",
-    "streamkey": "#hash_58637b726d05588d",
+    "xhash_60": "#au_ray_gun",
+    "weapon70": "#ray_gun_mk2z",
+    "soundbank": "#ray_gun_mk2z_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_118c": "tag_flash",
@@ -14,21 +14,38 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "WARZONE",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.1 1",
+            "0.2 0",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0524 0.9014",
+            "0.1251 0.4004",
+            "0.2517 0.1204",
+            "0.5021 0.0508",
+            "1 0.05"
+        ]
+    ],
     "sound90": "#hash_44f407588f82aa53",
     "firesound": "#hash_1c3534ce92c118f7",
     "firesoundplayer": "#hash_2aee85ce9a5bee52",
@@ -53,6 +70,10 @@
         "#hash_395beda50c680534"
     ],
     "sharedWeaponSounds": "#hash_b2107e63787b0c3",
+    "tracers": [
+        "#hash_1b65e8b55dee64aa",
+        "#hash_1b65e8b55dee64aa"
+    ],
     "viewmodel": [
         "#wpn_t8_zm_raygun_mk2_view_purple"
     ],

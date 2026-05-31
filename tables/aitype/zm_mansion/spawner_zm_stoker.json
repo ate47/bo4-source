@@ -20,16 +20,19 @@
         "j_head_deadshot"
     ],
     "character": [
-        "#hash_7df5d3fdd9c1a7fb"
+        "#c_t8_zmb_titanic_stoker"
+    ],
+    "animMappingTables": [
+        "#hash_2d39f55bc6d9801c"
     ],
     "meleeWeapon": "#stoker_melee",
-    "grenadeWeapon": "#hash_62121eddf8120244",
+    "grenadeWeapon": "#stoker_coal_bomb_zm",
     "aimTable": "#soldier_aim",
     "footstepTable": "#hash_3b5d3e2adb4ba892",
     "footstepScriptCallback": true,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#zm_stoker.ai_bt",
+    "behaviorTree": "#hash_2d2fdc5bc6d1011c",
     "animStateMachine": "#hash_32da5ff2e3786069",
     "animSelectorTable": "#hash_32da56f2e378511e",
     "traversalExtents": "#default_traversal_extents_zm",

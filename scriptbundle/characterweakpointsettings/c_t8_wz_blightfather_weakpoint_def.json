@@ -1,42 +1,42 @@
 {
     "weakpoints": [
         {
-            "hash_8223b0cf": 0,
+            "hash_1a833a23347d4bda:hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_910e2f9b": "j_head",
-            "hash_51e8b151": "tag_mouth_weakspot",
+            "hittag2": "j_head",
+            "hittag1": "tag_mouth_weakspot",
             "activebydefault": 1,
             "hitradius": 16,
             "health": 0.3
         },
         {
-            "hash_8223b0cf": 0,
+            "hash_1a833a23347d4bda:hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_51e8b151": "tag_elbow_weakspot_le",
+            "hittag1": "tag_elbow_weakspot_le",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 0.06
         },
         {
-            "hash_8223b0cf": 0,
+            "hash_1a833a23347d4bda:hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_51e8b151": "tag_elbow_weakspot_ri",
+            "hittag1": "tag_elbow_weakspot_ri",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 0.06
         },
         {
-            "hash_8223b0cf": 0,
+            "hash_1a833a23347d4bda:hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_51e8b151": "tag_eggsack_weakspot_le",
+            "hittag1": "tag_eggsack_weakspot_le",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 0.35
         },
         {
-            "hash_8223b0cf": 0,
+            "hash_1a833a23347d4bda:hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_51e8b151": "tag_eggsack_weakspot_ri",
+            "hittag1": "tag_eggsack_weakspot_ri",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 0.35
@@ -46,5 +46,5 @@
     "model": "model#c_t8_zmb_blightfather_body1",
     "type": "characterweakpointsettings",
     "name": "c_t8_wz_blightfather_weakpoint_def",
-    "hash_96a09826": 5
+    "list_weakpoints": 5
 }

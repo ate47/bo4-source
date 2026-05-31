@@ -138,7 +138,7 @@ function function_53d38216( einflictor, attacker, idamage, smeansofdeath, weapon
                 return;
             }
             
-            ct_utils::function_c314f6b1( 10 );
+            ct_utils::addtotimer( 10 );
         }
     }
 }

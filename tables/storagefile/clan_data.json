@@ -1,5 +1,16 @@
 {
-    "name": "#clan_data",
     "nameStr": "clan_data",
-    "ddl": "#gamedata/ddl/generated/clan_data.ddl"
+    "name": "#clan_data",
+    "ddlPath": "#gamedata/ddl/generated/clan_data.ddl",
+    "files": [
+        {
+            "fileName": "clan_data"
+        }
+    ],
+    "size": 1024,
+    "readOnLogin": false,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": true
 }

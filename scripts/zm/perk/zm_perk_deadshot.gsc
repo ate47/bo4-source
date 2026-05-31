@@ -57,13 +57,13 @@ function enable_deadshot_perk_for_level()
 // Size: 0x10e
 function deadshot_precache()
 {
-    if ( isdefined( level.var_bc5f9f6a ) )
+    if ( isdefined( level.deadshot_precache_override_func ) )
     {
-        [[ level.var_bc5f9f6a ]]();
+        [[ level.deadshot_precache_override_func ]]();
         return;
     }
     
-    level._effect[ #"deadshot_light" ] = #"hash_2225287695ddf9c9";
+    level._effect[ #"deadshot_light" ] = #"_t6/misc/fx_zombie_cola_dtap_on";
     level.machine_assets[ #"specialty_deadshot" ] = spawnstruct();
     level.machine_assets[ #"specialty_deadshot" ].weapon = getweapon( "zombie_perk_bottle_deadshot" );
     level.machine_assets[ #"specialty_deadshot" ].off_model = "p7_zm_vending_ads";

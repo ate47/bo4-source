@@ -1509,7 +1509,7 @@ function setup_bomblet( bomb )
     bomb setteam( self.team );
     bomb thread setup_bomblet_map_icon();
     bomb.killcament = self;
-    bomb thread function_22e29ec5( self );
+    bomb thread bomblet_explosion_waiter( self );
     bomb thread function_4c8c3b0b( self );
 }
 
@@ -1625,7 +1625,7 @@ function cleanup_bombs( bomb )
 // Params 1
 // Checksum 0x830b84ec, Offset: 0x5850
 // Size: 0xa0
-function function_22e29ec5( player )
+function bomblet_explosion_waiter( player )
 {
     player thread cleanup_bombs( self );
     player endon( #"disconnect", #"remotemissile_done", #"death" );

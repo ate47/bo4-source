@@ -41,13 +41,13 @@ function function_a28f0b21( e_holder, w_item )
     
     if ( function_8b1a219a() )
     {
-        level.var_51823720[ 0 ] sethintstring( #"hash_323a35945e51c09a" );
-        level.var_51823720[ 1 ] sethintstring( #"hash_323a35945e51c09a" );
+        level.fix_trigger_array[ 0 ] sethintstring( #"hash_323a35945e51c09a" );
+        level.fix_trigger_array[ 1 ] sethintstring( #"hash_323a35945e51c09a" );
     }
     else
     {
-        level.var_51823720[ 0 ] sethintstring( #"hash_595a7e6ce85abd6e" );
-        level.var_51823720[ 1 ] sethintstring( #"hash_595a7e6ce85abd6e" );
+        level.fix_trigger_array[ 0 ] sethintstring( #"hash_595a7e6ce85abd6e" );
+        level.fix_trigger_array[ 1 ] sethintstring( #"hash_595a7e6ce85abd6e" );
     }
     
     level flag::set( #"hash_7b57f5f8bfe10b93" );
@@ -64,13 +64,13 @@ function function_af5c24bb( e_holder, w_item )
     
     if ( function_8b1a219a() )
     {
-        level.var_51823720[ 0 ] sethintstring( #"hash_323a35945e51c09a" );
-        level.var_51823720[ 1 ] sethintstring( #"hash_323a35945e51c09a" );
+        level.fix_trigger_array[ 0 ] sethintstring( #"hash_323a35945e51c09a" );
+        level.fix_trigger_array[ 1 ] sethintstring( #"hash_323a35945e51c09a" );
         return;
     }
     
-    level.var_51823720[ 0 ] sethintstring( #"hash_595a7e6ce85abd6e" );
-    level.var_51823720[ 1 ] sethintstring( #"hash_595a7e6ce85abd6e" );
+    level.fix_trigger_array[ 0 ] sethintstring( #"hash_595a7e6ce85abd6e" );
+    level.fix_trigger_array[ 1 ] sethintstring( #"hash_595a7e6ce85abd6e" );
 }
 
 // Namespace zm_office_traps/zm_office_traps
@@ -79,11 +79,11 @@ function function_af5c24bb( e_holder, w_item )
 // Size: 0x64
 function function_e021562c()
 {
-    level.var_51823720 = getentarray( "trigger_battery_trap_fix", "targetname" );
+    level.fix_trigger_array = getentarray( "trigger_battery_trap_fix", "targetname" );
     
-    if ( isdefined( level.var_51823720 ) )
+    if ( isdefined( level.fix_trigger_array ) )
     {
-        array::thread_all( level.var_51823720, &function_cebfdd08 );
+        array::thread_all( level.fix_trigger_array, &function_cebfdd08 );
     }
 }
 
@@ -107,9 +107,9 @@ function function_cebfdd08()
     self setcursorhint( "HINT_NOICON" );
     self usetriggerrequirelookat();
     trap_trigger = getentarray( self.script_flag_wait, "targetname" );
-    array::thread_all( trap_trigger, &function_a72b7c27, self.script_flag_wait );
-    var_81f22deb = getent( self.script_string, "targetname" );
-    level thread function_5bd53e9b( var_81f22deb, self.script_flag_wait );
+    array::thread_all( trap_trigger, &electric_hallway_trap_piece_hide, self.script_flag_wait );
+    trap_cover = getent( self.script_string, "targetname" );
+    level thread function_5bd53e9b( trap_cover, self.script_flag_wait );
     
     if ( zm_utility::is_standard() )
     {
@@ -138,8 +138,8 @@ function function_cebfdd08()
                     
                     if ( level.var_e2103f01 == 0 )
                     {
-                        level.var_51823720[ 0 ] sethintstring( #"hash_100d349fbdcacb2b" );
-                        level.var_51823720[ 1 ] sethintstring( #"hash_100d349fbdcacb2b" );
+                        level.fix_trigger_array[ 0 ] sethintstring( #"hash_100d349fbdcacb2b" );
+                        level.fix_trigger_array[ 1 ] sethintstring( #"hash_100d349fbdcacb2b" );
                     }
                     
                     if ( level flag::get( #"hash_7b57f5f8bfe10b93" ) )
@@ -165,7 +165,7 @@ function function_cebfdd08()
 // Params 1
 // Checksum 0x53973f90, Offset: 0x990
 // Size: 0x7c
-function function_a72b7c27( str_flag )
+function electric_hallway_trap_piece_hide( str_flag )
 {
     if ( !isdefined( str_flag ) )
     {
@@ -175,7 +175,7 @@ function function_a72b7c27( str_flag )
     if ( self.classname == "trigger_use_new" )
     {
         self sethintstring( #"zombie/need_power" );
-        self thread function_91882233( str_flag );
+        self thread electric_hallway_trap_piece_show( str_flag );
         self triggerenable( 0 );
     }
 }
@@ -184,7 +184,7 @@ function function_a72b7c27( str_flag )
 // Params 1
 // Checksum 0x74fe2677, Offset: 0xa18
 // Size: 0x5c
-function function_91882233( str_flag )
+function electric_hallway_trap_piece_show( str_flag )
 {
     if ( !isdefined( str_flag ) )
     {
@@ -202,20 +202,20 @@ function function_91882233( str_flag )
 // Params 2
 // Checksum 0x304bc79c, Offset: 0xa80
 // Size: 0x1d4
-function function_5bd53e9b( var_a703e7de, str_flag )
+function function_5bd53e9b( ent_cover, str_flag )
 {
     level flag::wait_till( str_flag );
-    var_a703e7de notsolid();
-    var_a703e7de.fx = spawn( "script_model", var_a703e7de.origin );
-    var_a703e7de.fx setmodel( "tag_origin" );
-    var_a703e7de movez( 48, 1, 0.4, 0 );
-    var_a703e7de waittill( #"movedone" );
-    var_a703e7de rotateroll( 360 * randomintrange( 4, 10 ), 1.2, 0.6, 0 );
-    playfxontag( level._effect[ #"poltergeist" ], var_a703e7de.fx, "tag_origin" );
-    var_a703e7de waittill( #"rotatedone" );
-    var_a703e7de hide();
-    var_a703e7de.fx hide();
-    var_a703e7de.fx delete();
-    var_a703e7de delete();
+    ent_cover notsolid();
+    ent_cover.fx = spawn( "script_model", ent_cover.origin );
+    ent_cover.fx setmodel( "tag_origin" );
+    ent_cover movez( 48, 1, 0.4, 0 );
+    ent_cover waittill( #"movedone" );
+    ent_cover rotateroll( 360 * randomintrange( 4, 10 ), 1.2, 0.6, 0 );
+    playfxontag( level._effect[ #"poltergeist" ], ent_cover.fx, "tag_origin" );
+    ent_cover waittill( #"rotatedone" );
+    ent_cover hide();
+    ent_cover.fx hide();
+    ent_cover.fx delete();
+    ent_cover delete();
 }
 

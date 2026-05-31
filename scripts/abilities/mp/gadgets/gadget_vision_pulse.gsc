@@ -99,14 +99,14 @@ function awardscore()
                 
                 if ( isalive( enemy ) )
                 {
-                    var_bf11ed35 = distance2d( self.origin, enemy.origin );
+                    distancefromplayer = distance2d( self.origin, enemy.origin );
                     
-                    if ( var_bf11ed35 > level.weaponvisionpulse.gadget_pulse_max_range )
+                    if ( distancefromplayer > level.weaponvisionpulse.gadget_pulse_max_range )
                     {
                         continue;
                     }
                     
-                    timetotarget = var_bf11ed35 / level.weaponvisionpulse.var_f9eec1ec;
+                    timetotarget = distancefromplayer / level.weaponvisionpulse.var_f9eec1ec;
                     self thread function_c0520f6f( enemy, timetotarget );
                 }
             }

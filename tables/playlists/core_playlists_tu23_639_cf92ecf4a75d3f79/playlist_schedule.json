@@ -1,0 +1,1450 @@
+{
+    "name": "#playlist_schedule",
+    "checksum": 138629049,
+    "version": 12,
+    "startTime": 1572973200,
+    "periodTime": 9072000,
+    "isPeriodical": true,
+    "schedules": [
+        {
+            "name": "#temp1",
+            "softRestartRequired": true,
+            "startTime": 1572973200,
+            "endTime": 1573578000,
+            "members": [
+                {
+                    "category": 56,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 60,
+                    "member:unk4": 3,
+                    "mask": 7
+                },
+                {
+                    "category": 69,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 90,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 94,
+                    "member:unk4": 3,
+                    "mask": 1
+                },
+                {
+                    "category": 97,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 64,
+                    "mask": 1
+                },
+                {
+                    "category": 152,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 153,
+                    "member:unk4": 66,
+                    "mask": 6
+                },
+                {
+                    "category": 158,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 1,
+                    "mask": 1
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 178,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 190,
+                    "member:unk4": 131,
+                    "mask": 7
+                },
+                {
+                    "category": 207,
+                    "member:unk4": 1,
+                    "mask": 7
+                },
+                {
+                    "category": 221,
+                    "member:unk4": 4,
+                    "mask": 7
+                },
+                {
+                    "category": 223,
+                    "member:unk4": 4,
+                    "mask": 7
+                }
+            ]
+        },
+        {
+            "name": "#temp2",
+            "softRestartRequired": true,
+            "startTime": 1573578000,
+            "endTime": 1574182800,
+            "members": [
+                {
+                    "category": 56,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 60,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 81,
+                    "member:unk4": 3,
+                    "mask": 7
+                },
+                {
+                    "category": 90,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 94,
+                    "member:unk4": 3,
+                    "mask": 1
+                },
+                {
+                    "category": 97,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 152,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 153,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 158,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 1,
+                    "mask": 1
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 64,
+                    "mask": 7
+                },
+                {
+                    "category": 178,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 190,
+                    "member:unk4": 131,
+                    "mask": 7
+                },
+                {
+                    "category": 208,
+                    "member:unk4": 1,
+                    "mask": 7
+                },
+                {
+                    "category": 221,
+                    "member:unk4": 4,
+                    "mask": 7
+                },
+                {
+                    "category": 223,
+                    "member:unk4": 4,
+                    "mask": 7
+                }
+            ]
+        },
+        {
+            "name": "#temp3",
+            "softRestartRequired": true,
+            "startTime": 1574182800,
+            "endTime": 1574787600,
+            "members": [
+                {
+                    "category": 56,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 60,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 88,
+                    "member:unk4": 3,
+                    "mask": 7
+                },
+                {
+                    "category": 90,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 94,
+                    "member:unk4": 3,
+                    "mask": 1
+                },
+                {
+                    "category": 97,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 152,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 153,
+                    "member:unk4": 66,
+                    "mask": 6
+                },
+                {
+                    "category": 158,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 65,
+                    "mask": 1
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 178,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 190,
+                    "member:unk4": 131,
+                    "mask": 7
+                },
+                {
+                    "category": 215,
+                    "member:unk4": 1,
+                    "mask": 7
+                },
+                {
+                    "category": 221,
+                    "member:unk4": 4,
+                    "mask": 7
+                },
+                {
+                    "category": 223,
+                    "member:unk4": 4,
+                    "mask": 7
+                }
+            ]
+        },
+        {
+            "name": "#temp4",
+            "softRestartRequired": true,
+            "startTime": 1574787600,
+            "endTime": 1575392400,
+            "members": [
+                {
+                    "category": 56,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 57,
+                    "member:unk4": 3,
+                    "mask": 7
+                },
+                {
+                    "category": 60,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 90,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 94,
+                    "member:unk4": 3,
+                    "mask": 1
+                },
+                {
+                    "category": 97,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 66,
+                    "mask": 7
+                },
+                {
+                    "category": 152,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 153,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 158,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 1,
+                    "mask": 1
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 178,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 190,
+                    "member:unk4": 131,
+                    "mask": 7
+                },
+                {
+                    "category": 220,
+                    "member:unk4": 1,
+                    "mask": 7
+                },
+                {
+                    "category": 221,
+                    "member:unk4": 4,
+                    "mask": 7
+                },
+                {
+                    "category": 223,
+                    "member:unk4": 4,
+                    "mask": 7
+                }
+            ]
+        },
+        {
+            "name": "#temp5",
+            "softRestartRequired": true,
+            "startTime": 1575392400,
+            "endTime": 1575997200,
+            "members": [
+                {
+                    "category": 56,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 60,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 90,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 91,
+                    "member:unk4": 3,
+                    "mask": 7
+                },
+                {
+                    "category": 94,
+                    "member:unk4": 3,
+                    "mask": 1
+                },
+                {
+                    "category": 97,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 152,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 153,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 158,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 1,
+                    "mask": 1
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 64,
+                    "mask": 7
+                },
+                {
+                    "category": 178,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 190,
+                    "member:unk4": 131,
+                    "mask": 7
+                },
+                {
+                    "category": 221,
+                    "member:unk4": 4,
+                    "mask": 7
+                },
+                {
+                    "category": 222,
+                    "member:unk4": 1,
+                    "mask": 7
+                },
+                {
+                    "category": 223,
+                    "member:unk4": 4,
+                    "mask": 7
+                }
+            ]
+        },
+        {
+            "name": "#temp6",
+            "softRestartRequired": true,
+            "startTime": 1575997200,
+            "endTime": 1576602000,
+            "members": [
+                {
+                    "category": 56,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 60,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 90,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 94,
+                    "member:unk4": 3,
+                    "mask": 1
+                },
+                {
+                    "category": 95,
+                    "member:unk4": 3,
+                    "mask": 7
+                },
+                {
+                    "category": 97,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 64,
+                    "mask": 1
+                },
+                {
+                    "category": 152,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 153,
+                    "member:unk4": 66,
+                    "mask": 6
+                },
+                {
+                    "category": 158,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 1,
+                    "mask": 1
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 178,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 190,
+                    "member:unk4": 131,
+                    "mask": 7
+                },
+                {
+                    "category": 201,
+                    "member:unk4": 1,
+                    "mask": 7
+                },
+                {
+                    "category": 221,
+                    "member:unk4": 4,
+                    "mask": 7
+                },
+                {
+                    "category": 223,
+                    "member:unk4": 4,
+                    "mask": 7
+                }
+            ]
+        },
+        {
+            "name": "#temp7",
+            "softRestartRequired": true,
+            "startTime": 1576602000,
+            "endTime": 1577206800,
+            "members": [
+                {
+                    "category": 56,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 60,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 90,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 94,
+                    "member:unk4": 3,
+                    "mask": 1
+                },
+                {
+                    "category": 97,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 99,
+                    "member:unk4": 3,
+                    "mask": 7
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 152,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 153,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 158,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 1,
+                    "mask": 1
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 64,
+                    "mask": 7
+                },
+                {
+                    "category": 178,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 190,
+                    "member:unk4": 131,
+                    "mask": 7
+                },
+                {
+                    "category": 202,
+                    "member:unk4": 1,
+                    "mask": 7
+                },
+                {
+                    "category": 221,
+                    "member:unk4": 4,
+                    "mask": 7
+                },
+                {
+                    "category": 223,
+                    "member:unk4": 4,
+                    "mask": 7
+                }
+            ]
+        },
+        {
+            "name": "#temp8",
+            "softRestartRequired": true,
+            "startTime": 1577206800,
+            "endTime": 1577811600,
+            "members": [
+                {
+                    "category": 56,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 60,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 71,
+                    "member:unk4": 3,
+                    "mask": 7
+                },
+                {
+                    "category": 90,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 94,
+                    "member:unk4": 3,
+                    "mask": 1
+                },
+                {
+                    "category": 97,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 152,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 153,
+                    "member:unk4": 66,
+                    "mask": 6
+                },
+                {
+                    "category": 158,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 65,
+                    "mask": 1
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 178,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 190,
+                    "member:unk4": 131,
+                    "mask": 7
+                },
+                {
+                    "category": 206,
+                    "member:unk4": 1,
+                    "mask": 7
+                },
+                {
+                    "category": 221,
+                    "member:unk4": 4,
+                    "mask": 7
+                },
+                {
+                    "category": 223,
+                    "member:unk4": 4,
+                    "mask": 7
+                }
+            ]
+        },
+        {
+            "name": "#temp9",
+            "softRestartRequired": true,
+            "startTime": 1577811600,
+            "endTime": 1578416400,
+            "members": [
+                {
+                    "category": 56,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 60,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 78,
+                    "member:unk4": 3,
+                    "mask": 7
+                },
+                {
+                    "category": 90,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 94,
+                    "member:unk4": 3,
+                    "mask": 1
+                },
+                {
+                    "category": 97,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 66,
+                    "mask": 7
+                },
+                {
+                    "category": 152,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 153,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 158,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 1,
+                    "mask": 1
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 178,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 190,
+                    "member:unk4": 131,
+                    "mask": 7
+                },
+                {
+                    "category": 207,
+                    "member:unk4": 1,
+                    "mask": 7
+                },
+                {
+                    "category": 221,
+                    "member:unk4": 4,
+                    "mask": 7
+                },
+                {
+                    "category": 223,
+                    "member:unk4": 4,
+                    "mask": 7
+                }
+            ]
+        },
+        {
+            "name": "#temp10",
+            "softRestartRequired": true,
+            "startTime": 1578416400,
+            "endTime": 1579021200,
+            "members": [
+                {
+                    "category": 56,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 60,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 61,
+                    "member:unk4": 3,
+                    "mask": 7
+                },
+                {
+                    "category": 90,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 94,
+                    "member:unk4": 3,
+                    "mask": 1
+                },
+                {
+                    "category": 97,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 152,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 153,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 158,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 1,
+                    "mask": 1
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 64,
+                    "mask": 7
+                },
+                {
+                    "category": 178,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 190,
+                    "member:unk4": 131,
+                    "mask": 7
+                },
+                {
+                    "category": 208,
+                    "member:unk4": 1,
+                    "mask": 7
+                },
+                {
+                    "category": 221,
+                    "member:unk4": 4,
+                    "mask": 7
+                },
+                {
+                    "category": 223,
+                    "member:unk4": 4,
+                    "mask": 7
+                }
+            ]
+        },
+        {
+            "name": "#temp11",
+            "softRestartRequired": true,
+            "startTime": 1579021200,
+            "endTime": 1579626000,
+            "members": [
+                {
+                    "category": 56,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 60,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 83,
+                    "member:unk4": 3,
+                    "mask": 7
+                },
+                {
+                    "category": 90,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 94,
+                    "member:unk4": 3,
+                    "mask": 1
+                },
+                {
+                    "category": 97,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 64,
+                    "mask": 1
+                },
+                {
+                    "category": 152,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 153,
+                    "member:unk4": 66,
+                    "mask": 6
+                },
+                {
+                    "category": 158,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 1,
+                    "mask": 1
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 178,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 190,
+                    "member:unk4": 131,
+                    "mask": 7
+                },
+                {
+                    "category": 215,
+                    "member:unk4": 1,
+                    "mask": 7
+                },
+                {
+                    "category": 221,
+                    "member:unk4": 4,
+                    "mask": 7
+                },
+                {
+                    "category": 223,
+                    "member:unk4": 4,
+                    "mask": 7
+                }
+            ]
+        },
+        {
+            "name": "#temp12",
+            "softRestartRequired": true,
+            "startTime": 1579626000,
+            "endTime": 1580230800,
+            "members": [
+                {
+                    "category": 56,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 60,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 76,
+                    "member:unk4": 3,
+                    "mask": 7
+                },
+                {
+                    "category": 90,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 94,
+                    "member:unk4": 3,
+                    "mask": 1
+                },
+                {
+                    "category": 97,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 152,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 153,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 158,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 1,
+                    "mask": 1
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 64,
+                    "mask": 7
+                },
+                {
+                    "category": 178,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 190,
+                    "member:unk4": 131,
+                    "mask": 7
+                },
+                {
+                    "category": 220,
+                    "member:unk4": 1,
+                    "mask": 7
+                },
+                {
+                    "category": 221,
+                    "member:unk4": 4,
+                    "mask": 7
+                },
+                {
+                    "category": 223,
+                    "member:unk4": 4,
+                    "mask": 7
+                }
+            ]
+        },
+        {
+            "name": "#temp13",
+            "softRestartRequired": true,
+            "startTime": 1580230800,
+            "endTime": 1580835600,
+            "members": [
+                {
+                    "category": 56,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 60,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 90,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 94,
+                    "member:unk4": 3,
+                    "mask": 1
+                },
+                {
+                    "category": 97,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 100,
+                    "member:unk4": 3,
+                    "mask": 7
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 152,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 153,
+                    "member:unk4": 66,
+                    "mask": 6
+                },
+                {
+                    "category": 158,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 65,
+                    "mask": 1
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 178,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 190,
+                    "member:unk4": 131,
+                    "mask": 7
+                },
+                {
+                    "category": 221,
+                    "member:unk4": 4,
+                    "mask": 7
+                },
+                {
+                    "category": 222,
+                    "member:unk4": 1,
+                    "mask": 7
+                },
+                {
+                    "category": 223,
+                    "member:unk4": 4,
+                    "mask": 7
+                }
+            ]
+        },
+        {
+            "name": "#temp14",
+            "softRestartRequired": true,
+            "startTime": 1580835600,
+            "endTime": 1581440400,
+            "members": [
+                {
+                    "category": 56,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 60,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 86,
+                    "member:unk4": 3,
+                    "mask": 7
+                },
+                {
+                    "category": 90,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 94,
+                    "member:unk4": 3,
+                    "mask": 1
+                },
+                {
+                    "category": 97,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 66,
+                    "mask": 7
+                },
+                {
+                    "category": 152,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 153,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 158,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 1,
+                    "mask": 1
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 178,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 190,
+                    "member:unk4": 131,
+                    "mask": 7
+                },
+                {
+                    "category": 201,
+                    "member:unk4": 1,
+                    "mask": 7
+                },
+                {
+                    "category": 221,
+                    "member:unk4": 4,
+                    "mask": 7
+                },
+                {
+                    "category": 223,
+                    "member:unk4": 4,
+                    "mask": 7
+                }
+            ]
+        },
+        {
+            "name": "#temp15",
+            "softRestartRequired": true,
+            "startTime": 1581440400,
+            "endTime": 1582045200,
+            "members": [
+                {
+                    "category": 56,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 60,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 66,
+                    "member:unk4": 3,
+                    "mask": 7
+                },
+                {
+                    "category": 90,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 94,
+                    "member:unk4": 3,
+                    "mask": 1
+                },
+                {
+                    "category": 97,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 151,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 152,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 153,
+                    "member:unk4": 2,
+                    "mask": 6
+                },
+                {
+                    "category": 158,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 1,
+                    "mask": 1
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 2,
+                    "mask": 7
+                },
+                {
+                    "category": 163,
+                    "member:unk4": 64,
+                    "mask": 7
+                },
+                {
+                    "category": 178,
+                    "member:unk4": 48,
+                    "mask": 7
+                },
+                {
+                    "category": 190,
+                    "member:unk4": 131,
+                    "mask": 7
+                },
+                {
+                    "category": 202,
+                    "member:unk4": 1,
+                    "mask": 7
+                },
+                {
+                    "category": 221,
+                    "member:unk4": 4,
+                    "mask": 7
+                },
+                {
+                    "category": 223,
+                    "member:unk4": 4,
+                    "mask": 7
+                }
+            ]
+        }
+    ]
+}

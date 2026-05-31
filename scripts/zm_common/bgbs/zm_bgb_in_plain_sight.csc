@@ -39,7 +39,7 @@ function function_8b05d1ce( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval == 1 )
     {
-        self thread postfx::playpostfxbundle( #"hash_1e8cc5b28385a579" );
+        self thread postfx::playpostfxbundle( #"pstfx_zm_bgb_in_plain_sight" );
         
         if ( !isdefined( self.var_6fc0e881 ) )
         {
@@ -50,7 +50,7 @@ function function_8b05d1ce( localclientnum, oldval, newval, bnewent, binitialsna
         return;
     }
     
-    self postfx::stoppostfxbundle( #"hash_1e8cc5b28385a579" );
+    self postfx::stoppostfxbundle( #"pstfx_zm_bgb_in_plain_sight" );
     
     if ( isdefined( self.var_6fc0e881 ) )
     {

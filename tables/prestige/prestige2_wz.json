@@ -1,9 +1,9 @@
 {
     "name": "#prestige2_wz",
-    "displayName": "#hash_6607ac040a1dda7f",
-    "iconName": "#hash_1ded43589ba68de7",
-    "iconNameLarge": "#hash_34d7eadadfeebbb7",
+    "displayName": "#challenge/prestige_2",
+    "iconName": "#hash_9ded43589ba68de7",
+    "iconNameLarge": "#hash_b4d7eadadfeebbb7",
     "unlockLevel": 2,
     "winsRequired": 0,
-    "titleOfOrigin": 4
+    "titleOfOrigin": "t8"
 }

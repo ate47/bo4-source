@@ -1,8 +1,9 @@
 {
     "name": "#zhield_zpear_lh_zm",
     "baseWeapon": "#zhield_zpear_lh",
-    "displayname": "#hash_7a95bcef27a91bf4",
-    "streamkey": "#hash_cf8c8abddea90d7",
+    "displayname": "#zm_red/shield",
+    "dualwieldWeaponName": "#zhield_zpear_dw_zm",
+    "soundbank": "#zhield_zpear_lh_soundbank",
     "scrstr_8d8": [
         "tag_ik_loc_le_dw"
     ],
@@ -14,23 +15,23 @@
     "weaponstarthitpoints": 800,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
     "sound660": "#uin_unavailable_charging",
-    "sound740": "#zhield_zpear_dw_zm",
     "tunables1": "#zhield_zpear_lh_tunables_zm",
     "sharedWeaponSounds": "#hash_7ed5a8a63848a4a8",
     "viewmodel": [
@@ -45,5 +46,13 @@
     "reticleCenter": "#hash_89113a4bd1b38c65",
     "inventoryIconZm": "#hash_b6874c847ee7d671",
     "image_e90": "#t7_icon_weapon_hero_reaper_kf",
-    "fireRumble": "#defaultweapon_fire"
+    "fireRumble": "#defaultweapon_fire",
+    "#hash_21329beb": [
+        {
+            "model": "#hash_1c041d670c2923c8"
+        },
+        {
+            "model": "#hash_507d2315ba090279"
+        }
+    ]
 }

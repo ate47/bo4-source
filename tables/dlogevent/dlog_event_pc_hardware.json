@@ -1,0 +1,492 @@
+{
+    "name": "#dlog_event_pc_hardware",
+    "ddlDef": "#hash_3bc1c459decf4e99",
+    "unk18": 0,
+    "unk19": 1,
+    "unk1a": 0,
+    "unk1b": 0,
+    "unk1c": 1,
+    "rate": 1,
+    "fields": [
+        {
+            "name": "#telemetry",
+            "arraySize": 0,
+            "members": {
+                "name": "#telemetry_header",
+                "members": [
+                    {
+                        "name": "#game_session_id",
+                        "scrName": "#hash_50f7aa03",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#action_type",
+                        "scrName": "#action_type",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#title_id",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#build_version",
+                        "scrName": "#build_version",
+                        "type": "STRING",
+                        "len": 32
+                    },
+                    {
+                        "name": "#platform",
+                        "scrName": "#platform",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#source_version",
+                        "scrName": "#source_version",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_56a1b6d783aa7a25",
+                        "scrName": "#hash_ee3228f8",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#changelist_number",
+                        "scrName": "#changelist_number",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#client",
+            "arraySize": 0,
+            "members": {
+                "name": "#client_header",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#user_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#user_session_id",
+                        "scrName": "#hash_e004f74d",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#uno_id",
+                        "scrName": "#uno_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#hash_45c4c0c903afe1d3",
+            "arraySize": 8,
+            "members": {
+                "name": "#hash_6f622749aa2bbcbe",
+                "members": [
+                    {
+                        "name": "#description",
+                        "scrName": "#description",
+                        "type": "STRING",
+                        "len": 128
+                    },
+                    {
+                        "name": "#device_id",
+                        "scrName": "#device_id",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#vendor_id",
+                        "scrName": "#vendor_id",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#vram",
+                        "scrName": "#vram",
+                        "type": "UINT32"
+                    }
+                ]
+            }
+        }
+    ],
+    "members": [
+        {
+            "name": "#hash_bf62b1b1fc4261",
+            "scrName": "#hash_d6b52a2d",
+            "type": "STRING",
+            "len": 128
+        },
+        {
+            "name": "#sys_language",
+            "scrName": "#hash_af497a54",
+            "type": "STRING",
+            "len": 128
+        },
+        {
+            "name": "#hash_39f8059a58f3215",
+            "scrName": "#hash_5ef6f308",
+            "type": "UINT32"
+        },
+        {
+            "name": "#hash_85c7bd324ffbc53",
+            "scrName": "#hash_4bd922d0",
+            "type": "BOOL"
+        },
+        {
+            "name": "#dxver",
+            "scrName": "#dxver",
+            "type": "UINT16"
+        },
+        {
+            "name": "#hash_b5093b3a47a3ef0",
+            "scrName": "#hash_60c55dcf",
+            "type": "BOOL"
+        },
+        {
+            "name": "#hash_fdc5b9653d078ee",
+            "scrName": "#hash_d4c36848",
+            "type": "BOOL"
+        },
+        {
+            "name": "#refresh_rate",
+            "scrName": "#refresh_rate",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#display_height",
+            "scrName": "#hash_be462b5a",
+            "type": "UINT16"
+        },
+        {
+            "name": "#sysmem",
+            "scrName": "#sysmem",
+            "type": "UINT32"
+        },
+        {
+            "name": "#hash_2b948819b7fded62",
+            "scrName": "#hash_c1baf5b8",
+            "type": "BOOL"
+        },
+        {
+            "name": "#hash_2bcdf372470d05f9",
+            "scrName": "#hash_bebf6ce7",
+            "type": "UINT16"
+        },
+        {
+            "name": "#hash_2d73b88a401c9b9e",
+            "scrName": "#hash_6febc2ca",
+            "type": "UINT8"
+        },
+        {
+            "name": "#hash_30bdfaf4ba9b4387",
+            "scrName": "#hash_2fd9b1f1",
+            "type": "INT8"
+        },
+        {
+            "name": "#scene_width",
+            "scrName": "#scene_width",
+            "type": "UINT16"
+        },
+        {
+            "name": "#hash_3811bc485fc9bc1d",
+            "scrName": "#hash_88fd1dec",
+            "type": "UINT32"
+        },
+        {
+            "name": "#hash_381564915200bec1",
+            "scrName": "#hash_2629ec68",
+            "type": "STRING",
+            "len": 128
+        },
+        {
+            "name": "#monitor_count",
+            "scrName": "#hash_21c6fe5b",
+            "type": "UINT16"
+        },
+        {
+            "name": "#hash_4015c9179aa19318",
+            "scrName": "#hash_db8b9156",
+            "type": "BOOL"
+        },
+        {
+            "name": "#hash_42c8ba9f799f6132",
+            "scrName": "#hash_73c6fe7f",
+            "type": "UINT64"
+        },
+        {
+            "name": "#dxgi_version_support",
+            "scrName": "#hash_43faea03",
+            "type": "UINT16"
+        },
+        {
+            "name": "#hash_4605d0cc4d9e3750",
+            "scrName": "#hash_3f4ab04d",
+            "type": "STRING",
+            "len": 64
+        },
+        {
+            "name": "#hash_4741579e93e4fff2",
+            "scrName": "#hash_fb13b64d",
+            "type": "BOOL"
+        },
+        {
+            "name": "#os_version",
+            "scrName": "#os_version",
+            "type": "STRING",
+            "len": 512
+        },
+        {
+            "name": "#hash_4a2353ab17a0b583",
+            "scrName": "#hash_fb99b295",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_4a2659ab17a2f58c",
+            "scrName": "#hash_56c1678b",
+            "type": "INT32"
+        },
+        {
+            "name": "#display_width",
+            "scrName": "#display_width",
+            "type": "UINT16"
+        },
+        {
+            "name": "#hash_50721d3ddc064237",
+            "scrName": "#hash_ade26e78",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#cpu_name",
+            "scrName": "#hash_efe0fcc8",
+            "type": "STRING",
+            "len": 64
+        },
+        {
+            "name": "#language",
+            "scrName": "#language",
+            "type": "INT32"
+        },
+        {
+            "name": "#scene_height",
+            "scrName": "#hash_e33479cd",
+            "type": "UINT16"
+        },
+        {
+            "name": "#hash_5396540bb72f02c9",
+            "scrName": "#hash_604f21d0",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_53a7520bb73d7296",
+            "scrName": "#hash_a5d8b47a",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_53a792e4d6795b08",
+            "scrName": "#hash_89e2ed41",
+            "type": "UINT8"
+        },
+        {
+            "name": "#cpu_vendor",
+            "scrName": "#hash_91000702",
+            "type": "STRING",
+            "len": 16
+        },
+        {
+            "name": "#hash_5509126391fabbea",
+            "scrName": "#hash_fd53ef47",
+            "type": "BOOL"
+        },
+        {
+            "name": "#gpu_count",
+            "scrName": "#hash_306c9df2",
+            "type": "UINT16"
+        },
+        {
+            "name": "#gpu_driver_version",
+            "scrName": "#hash_48206dfe",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_589ec9042dd9446e",
+            "scrName": "#hash_3ee8ce05",
+            "type": "STRING",
+            "len": 128
+        },
+        {
+            "name": "#window_mode",
+            "scrName": "#hash_2a434de3",
+            "type": "UINT8"
+        },
+        {
+            "name": "#hash_674b4bab754b1e14",
+            "scrName": "#hash_e10caa6",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_674f51ab754f111d",
+            "scrName": "#hash_f50419c5",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_677e1a171188e031",
+            "scrName": "#hash_30a88723",
+            "type": "UINT32"
+        },
+        {
+            "name": "#vram",
+            "scrName": "#vram",
+            "type": "UINT32"
+        },
+        {
+            "name": "#hash_6a0c81df1fd299d0",
+            "scrName": "#hash_d7d31ca9",
+            "type": "UINT32"
+        },
+        {
+            "name": "#display_is_hdr",
+            "scrName": "#hash_74a5394e",
+            "type": "BOOL"
+        },
+        {
+            "name": "#hash_6f954264048addf8",
+            "scrName": "#hash_2308cdc1",
+            "type": "BOOL"
+        },
+        {
+            "name": "#hash_7573068d7b84d80a",
+            "scrName": "#hash_e921037a",
+            "type": "UINT32"
+        },
+        {
+            "name": "#hash_76254b39c666fad6",
+            "scrName": "#hash_138633cf",
+            "type": "UINT8"
+        },
+        {
+            "name": "#hash_766b023cc3930121",
+            "scrName": "#hash_2bf8c517",
+            "type": "STRING",
+            "len": 64
+        },
+        {
+            "name": "#winver",
+            "scrName": "#winver",
+            "type": "STRING",
+            "len": 128
+        },
+        {
+            "name": "#hash_78cb8b567c4d2cea",
+            "scrName": "#hash_38c26923",
+            "type": "UINT32"
+        },
+        {
+            "name": "#hash_79719197fcd5039f",
+            "scrName": "#hash_20bc938a",
+            "type": "UINT16"
+        },
+        {
+            "name": "#hash_7d22e6b66b02ad27",
+            "scrName": "#hash_f215c1f9",
+            "type": "STRING",
+            "len": 128
+        }
+    ],
+    "unk60": [
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_855c9a40dc060cf",
+                "s3u10": "#hash_2",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    0
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_775a1eb90e25df27",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    0,
+                    5,
+                    4
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_5509b91edf99f9a4",
+                "s3u10": "#hash_6",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    2,
+                    3,
+                    9
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_415a3e8b41b48599",
+                "s3u10": "#hash_4",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_a",
+                "unk28": [
+                    2,
+                    3,
+                    5
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_68cc9f8f64640d09",
+                "s3u10": "#hash_7",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2,
+                    3
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_7b52e3919e2a5b79",
+                "s3u10": "#hash_9",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2
+                ]
+            }
+        }
+    ]
+}

@@ -1,5 +1,16 @@
 {
-    "name": "#zm_loadouts_online",
     "nameStr": "zm_loadouts_online",
-    "ddl": "#gamedata/ddl/generated/zm_loadouts.ddl"
+    "name": "#zm_loadouts_online",
+    "ddlPath": "#gamedata/ddl/generated/zm_loadouts.ddl",
+    "files": [
+        {
+            "fileName": "zm_loadouts_online"
+        }
+    ],
+    "size": 66700,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

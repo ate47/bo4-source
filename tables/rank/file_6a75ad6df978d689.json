@@ -3,14 +3,13 @@
     "shortNameRef": "#hash_60a71e4011bfb8e3",
     "fullNameRef": "#hash_59053426872bd399",
     "ingameNameRef": "#hash_3913205f2a58ea94",
-    "iconName": "#hash_75d27ea2fc38afc5",
-    "iconNameLarge": "#hash_16433ec6be75da49",
     "level": 22,
     "minXp": 225600,
     "maxXp": 244800,
+    "icon": "#ui_icon_rank_mp_level22",
+    "iconLarge": "#ui_icon_rank_mp_level22_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#pistol_burst_t8"
         }
     ]

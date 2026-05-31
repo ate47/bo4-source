@@ -1,16 +1,13 @@
 {
     "name": "#zm_rank_11",
-    "shortNameRef": "#",
     "fullNameRef": "#hash_6b6746cda81f1841",
-    "ingameNameRef": "#",
-    "iconName": "#hash_102ddbb185b54df",
-    "iconNameLarge": "#hash_716429cb230551af",
     "level": 11,
     "minXp": 54500,
     "maxXp": 64100,
+    "icon": "#ui_icon_rank_zm_level11",
+    "iconLarge": "#ui_icon_rank_zm_level11_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#zm_bgb_anti_entrapment"
         }
     ]

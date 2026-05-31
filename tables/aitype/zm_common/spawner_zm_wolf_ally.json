@@ -15,7 +15,10 @@
     "typeSuffix": "_zombie_dog",
     "spawnerType": "hellhound",
     "character": [
-        "#hash_5a6bb7233cd3bb69"
+        "#character_sp_direwolf"
+    ],
+    "animMappingTables": [
+        "#hash_599a1630e234ef1b"
     ],
     "meleeWeapon": "#hash_3dfb86de416b5192",
     "aimTable": "#soldier_aim",
@@ -23,7 +26,7 @@
     "footstepScriptCallback": false,
     "footstepFXTable1": "#zm_wolf_footstep",
     "footstepFXTable2": "#zm_wolf_footstep",
-    "behaviorTree": "#zm_wolf_ally.ai_bt",
+    "behaviorTree": "#hash_59a40f30e23d37bb",
     "animStateMachine": "#hash_758607105fbefa38",
     "animSelectorTable": "#hash_758610105fbf0983",
     "traversalExtents": "#default_traversal_extents_zm",

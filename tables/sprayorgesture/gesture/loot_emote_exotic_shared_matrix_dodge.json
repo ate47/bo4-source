@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_matrix_dodge",
+    "type": "#gesture",
+    "gesture": "#hash_9e665de6f03ece",
+    "gesture2": "#hash_47d831017b7edd9",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_64fcdab4e07bcc91",
+        "icon": "image#ui_icon_emotes_matrixdodge",
+        "isdefault": 0
+    }
+}

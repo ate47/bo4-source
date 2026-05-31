@@ -1,0 +1,18 @@
+{
+    "name": "#hash_6c25431460febe10",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "unk68:unk10": true,
+            "model": "#c_t8_bo_hero_sarah_head1",
+            "unk68:unk48": [
+                "#mc/mtl_c_hro_sarah_base_hair_shell_streak",
+                "#mc/mtl_c_hro_sarah_base_hair_shell_fine",
+                "#mc/mtl_c_hro_sarah_base_hair_shell_alphatest",
+                "#mc/mtl_c_hro_sarah_base_hair_fibermesh"
+            ],
+            "unk68:unk50": 1
+        }
+    ]
+}

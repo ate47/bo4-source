@@ -1,10 +1,10 @@
 {
-    "hash_ac8f613d": "j_head",
+    "head_gibeffecttag": "j_head",
     "configstringfiletype": "scriptbundle",
     "type": "gibcharacterdef",
-    "hash_a13e30ab": "fx#hash_f7ec4b628659c6f",
+    "annihilate_gibfx": "fx#blood/fx_blood_impact_exp_body_lg",
     "vmtype": "both",
     "name": "c_default_annhilate_gib_def",
-    "hash_d94aaeb4": "fx#hash_25d71c3a3cd5a62e",
-    "hash_86de3f71": "j_spinelower"
+    "head_gibfx": "fx#impacts/fx_bul_impact_blood_head_fatal_exit",
+    "annihilate_gibeffecttag": "j_spinelower"
 }

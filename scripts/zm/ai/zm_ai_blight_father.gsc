@@ -329,7 +329,7 @@ function private killed_callback( e_attacker )
     
     if ( level flag::get( "zombie_drop_powerups" ) && !zm_utility::is_standard() )
     {
-        self thread zm_powerups::specific_powerup_drop( self.var_d0686fde, self.origin, undefined, undefined, undefined, undefined, undefined, undefined, 0, 1 );
+        self thread zm_powerups::specific_powerup_drop( self.a_str_powerups, self.origin, undefined, undefined, undefined, undefined, undefined, undefined, 0, 1 );
     }
 }
 
@@ -1029,14 +1029,14 @@ function private function_911c3934( entity )
 // Params 1
 // Checksum 0xdd9ad022, Offset: 0x4ba8
 // Size: 0x66, Type: bool
-function function_51dbdb8f( var_9cb85074 )
+function function_51dbdb8f( w_poi )
 {
-    if ( !isdefined( var_9cb85074 ) || !isarray( level.var_fe96a4c4 ) )
+    if ( !isdefined( w_poi ) || !isarray( level.var_fe96a4c4 ) )
     {
         return false;
     }
     
-    if ( isinarray( level.var_fe96a4c4, var_9cb85074 ) )
+    if ( isinarray( level.var_fe96a4c4, w_poi ) )
     {
         return true;
     }
@@ -1580,7 +1580,7 @@ function private function_96f5d05a( entity, var_4c0587b )
     entity.var_54c1950f.status = 1;
     grapple_end playsound( #"zmb_grapple_start" );
     grapple_end moveto( var_4c0587b, n_time, 0, n_time * 0.1 );
-    grapple_end.return_pos = entity zm_grappler::function_f21c3519();
+    grapple_end.return_pos = entity zm_grappler::grapple_point();
     thread function_9d1a26f1( entity, entity ai::function_9139c839().var_23426e9a * entity ai::function_9139c839().var_23426e9a, level.players );
     grapple_end flagsys::wait_till( "grapple_moveto_done" );
     grapple_end flagsys::clear( "grapple_moveto_done" );
@@ -1644,7 +1644,7 @@ function private function_28dddd64( entity )
     
     if ( zombie_utility::is_player_valid( entity.var_bef7624d, 1, 1, 0 ) )
     {
-        dir = entity.var_bef7624d zm_grappler::function_f21c3519() - entity zm_grappler::function_f21c3519();
+        dir = entity.var_bef7624d zm_grappler::grapple_point() - entity zm_grappler::grapple_point();
         dir_norm = vectornormalize( dir );
         
         if ( vectordot( dir_norm, anglestoforward( entity.angles ) ) < entity ai::function_9139c839().var_b2656f44 )
@@ -1652,8 +1652,8 @@ function private function_28dddd64( entity )
             dir_norm = anglestoforward( entity.angles );
         }
         
-        var_4c0587b = entity zm_grappler::function_f21c3519() + dir_norm * entity ai::function_9139c839().var_b30a945;
-        test_trace = worldtrace( entity zm_grappler::function_f21c3519(), var_4c0587b );
+        var_4c0587b = entity zm_grappler::grapple_point() + dir_norm * entity ai::function_9139c839().var_b30a945;
+        test_trace = worldtrace( entity zm_grappler::grapple_point(), var_4c0587b );
         
         if ( test_trace[ #"fraction" ] < 1 )
         {
@@ -1780,7 +1780,7 @@ function function_9d1a26f1( entity, var_8a713db5, var_3e06882e )
                 }
                 else
                 {
-                    function_91dcbd1c( entity, entity.var_54c1950f.beamend, e_grapplee );
+                    grapple_entity( entity, entity.var_54c1950f.beamend, e_grapplee );
                 }
                 
                 entity.var_54c1950f.beamend flagsys::set( "grapple_moveto_done" );
@@ -1841,7 +1841,7 @@ function private function_c1b0cbda()
 // Params 3, eflags: 0x4
 // Checksum 0x30d38813, Offset: 0x7488
 // Size: 0x384
-function private function_91dcbd1c( prone_2_run_roll, var_a424c06a, e_grapplee )
+function private grapple_entity( prone_2_run_roll, var_a424c06a, e_grapplee )
 {
     if ( !isdefined( var_a424c06a ) )
     {
@@ -3047,8 +3047,8 @@ function private function_19249d10( entity )
     forward = anglestoforward( entity.angles );
     forward2d = vectornormalize( ( forward[ 0 ], forward[ 1 ], 0 ) );
     dirtotarget = entity.favoriteenemy.origin - entity.origin;
-    var_854904a = vectornormalize( ( dirtotarget[ 0 ], dirtotarget[ 1 ], 0 ) );
-    dot = vectordot( forward2d, var_854904a );
+    dirtotarget2d = vectornormalize( ( dirtotarget[ 0 ], dirtotarget[ 1 ], 0 ) );
+    dot = vectordot( forward2d, dirtotarget2d );
     
     if ( dot < entity ai::function_9139c839().var_aa503e5a )
     {
@@ -3568,7 +3568,7 @@ function private function_8e8b1dfc( var_c45ef84c, blight_father, weapon )
             continue;
         }
         
-        status_effect = getstatuseffect( #"hash_7867f8f9aaaa0c40" );
+        status_effect = getstatuseffect( #"chaos_missile_damage" );
         player status_effect::status_effect_apply( status_effect, weapon, blight_father );
         player clientfield::increment_to_player( "blight_father_chaos_missile_rumble_clientfield", 1 );
     }

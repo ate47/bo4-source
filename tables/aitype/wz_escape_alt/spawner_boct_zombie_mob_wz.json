@@ -12,20 +12,23 @@
         "#none",
         "#none"
     ],
-    "compassIcon": "#hash_3030e82a0acd7277",
+    "compassIcon": "#icon_minimap_player_enemy_firing",
     "typeSuffix": "_zombie",
     "spawnerType": "zombie",
     "character": [
-        "#hash_5f5ffee50e1a0b32",
-        "#hash_5f5ffde50e1a097f"
+        "#c_t8_zmb_mob_zombie1",
+        "#c_t8_zmb_mob_zombie2"
     ],
-    "meleeWeapon": "#hash_c7a982e44d69cd3c",
+    "animMappingTables": [
+        "#hash_bf027eb19b3ab1de"
+    ],
+    "meleeWeapon": "#zombie_ai_defaultmelee_wz",
     "aimTable": "#soldier_aim",
     "footstepTable": "#zombfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#zm_zombie_wz.ai_bt",
+    "behaviorTree": "#hash_bf0595b19b3d0eca",
     "animStateMachine": "#hash_cc10f6cac4d8d2c3",
     "animSelectorTable": "#hash_cc10edcac4d8c378",
     "traversalExtents": "#default_traversal_extents_zm",

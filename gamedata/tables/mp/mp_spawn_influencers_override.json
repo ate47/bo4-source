@@ -1,0 +1,166 @@
+[
+    {
+        "id": 1,
+        "name": "friend",
+        "override_multiteam": 1,
+        "radius": 1200,
+        "score": 200
+    },
+    {
+        "id": 2,
+        "name": "friendly_spawn",
+        "override_gametypes": "koth",
+        "score": 0
+    },
+    {
+        "evaluation": "min",
+        "id": 3,
+        "name": "enemy",
+        "override_gametypes": "dm"
+    },
+    {
+        "evaluation": "min",
+        "id": 4,
+        "name": "enemy",
+        "override_gametypes": "conf"
+    },
+    {
+        "evaluation": "min",
+        "id": 5,
+        "name": "enemy",
+        "override_gametypes": "gun"
+    },
+    {
+        "id": 6,
+        "name": "friend",
+        "override_gametypes": "clean",
+        "radius": 1000,
+        "score": 100
+    },
+    {
+        "id": 7,
+        "name": "enemy",
+        "override_maps": "mp_frenetic",
+        "radius": 2300
+    },
+    {
+        "id": 8,
+        "name": "enemy",
+        "override_maps": "mp_urban",
+        "radius": 2500
+    },
+    {
+        "id": 9,
+        "name": "enemy",
+        "override_maps": "mp_arsenal",
+        "radius": 2100
+    },
+    {
+        "id": 10,
+        "name": "enemy",
+        "override_maps": "mp_firingrange2",
+        "radius": 2100
+    },
+    {
+        "id": 11,
+        "name": "enemy",
+        "override_maps": "mp_icebreaker",
+        "radius": 2100
+    },
+    {
+        "id": 12,
+        "name": "enemy",
+        "override_maps": "mp_mountain2",
+        "radius": 2400
+    },
+    {
+        "id": 13,
+        "name": "enemy",
+        "override_maps": "mp_slums2",
+        "radius": 2400
+    },
+    {
+        "evaluation": "min",
+        "id": 14,
+        "name": "enemy",
+        "override_gametypes": "dm_hc"
+    },
+    {
+        "evaluation": "min",
+        "id": 15,
+        "name": "enemy",
+        "override_gametypes": "tdm"
+    },
+    {
+        "id": 16,
+        "name": "enemy",
+        "override_maps": "mp_nuketown_4",
+        "radius": 1600
+    },
+    {
+        "id": 17,
+        "name": "friend_dead",
+        "override_maps": "mp_nuketown_4",
+        "radius": 1300
+    },
+    {
+        "id": 18,
+        "name": "friend_dead",
+        "override_maps": "mp_nuketown_4",
+        "time_out": 8
+    },
+    {
+        "id": 19,
+        "name": "enemy",
+        "override_maps": "mp_seaside",
+        "radius": 2400
+    },
+    {
+        "id": 20,
+        "name": "enemy",
+        "override_maps": "mp_gridlock",
+        "radius": 2600
+    },
+    {
+        "id": 21,
+        "name": "dom_neutral",
+        "override_maps": "mp_nuketown_4",
+        "radius": 200
+    },
+    {
+        "id": 22,
+        "name": "dom_neutral",
+        "override_maps": "mp_firingrange2",
+        "radius": 200
+    },
+    {
+        "id": 23,
+        "name": "enemy",
+        "override_maps": "mp_firingrange2_alt",
+        "radius": 2100
+    },
+    {
+        "id": 24,
+        "name": "dom_neutral",
+        "override_maps": "mp_firingrange2_alt",
+        "radius": 200
+    },
+    {
+        "id": 25,
+        "name": "enemy",
+        "override_maps": "mp_seaside_alt",
+        "radius": 2400
+    },
+    {
+        "evaluation": "min",
+        "id": 26,
+        "name": "enemy",
+        "override_gametypes": "sas"
+    },
+    {
+        "id": 27,
+        "name": "enemy",
+        "override_maps": "mp_arsenal_alt",
+        "radius": 2100
+    }
+]

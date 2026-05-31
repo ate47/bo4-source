@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_geothermal.d3dbsp",
+    "baseName": "mp_geothermal",
+    "mins": "-393216 -393216 -2121.9731",
+    "maxs": "393216 393216 17474.8",
+    "checksum": 0,
+    "streamerworld": "#hash_2081a7ac832b0945",
+    "lighting": "#maps/mp/mp_geothermal.d3dbsp",
+    "lutMaterial": "#lut_mp_geothermal",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_geothermal",
+        "#img_trim_lut_geothermal",
+        "#img_trim_lut_geothermal",
+        "#img_trim_lut_geothermal"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 2,
+        "cookieArray": "#*cookie_array"
+    }
+}

@@ -1,11 +1,10 @@
 {
     "name": "#zmdlc3",
-    "blackMarketName": "#",
-    "blackMarketDesc": "#",
-    "entitlementNameXHash": "#",
+    "previewImage": "#ui_menu_store_product_b04_alpha_omega_large",
+    "productImage": "#ui_menu_store_product_b04_alpha_omega_large",
+    "blackMarketImage": "#t7_store_product_bo4",
     "metadata": "DLC3ZM",
-    "previewImageName": "hash_32e6eea4a7bcfdcf",
-    "productImageName": "hash_32e6eea4a7bcfdcf",
-    "blackMarketImageName": "hash_1217b62ca29dad38",
-    "visibility": true
+    "visibility": true,
+    "unka2": true,
+    "unka3": true
 }

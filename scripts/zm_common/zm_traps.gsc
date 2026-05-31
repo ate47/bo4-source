@@ -501,7 +501,7 @@ function trap_lights_green()
     {
         light = self._trap_lights[ i ];
         
-        if ( isdefined( light.var_1cc6f364 ) )
+        if ( isdefined( light._switch_disabled ) )
         {
             continue;
         }
@@ -911,9 +911,9 @@ function zombie_trap_death( e_trap, param )
                 }
             }
             
-            if ( isdefined( self.var_5475b4ad ) )
+            if ( isdefined( self.fire_damage_func ) )
             {
-                self [[ self.var_5475b4ad ]]( e_trap );
+                self [[ self.fire_damage_func ]]( e_trap );
             }
             else
             {
@@ -927,9 +927,9 @@ function zombie_trap_death( e_trap, param )
             ang = vectortoangles( e_trap.origin - self.origin );
             direction_vec = vectorscale( anglestoright( ang ), param );
             
-            if ( isdefined( self.var_d89f2f98 ) )
+            if ( isdefined( self.trap_reaction_func ) )
             {
-                self [[ self.var_d89f2f98 ]]( e_trap );
+                self [[ self.trap_reaction_func ]]( e_trap );
             }
             
             level notify( #"trap_kill", { #e_victim:self, #e_trap:e_trap } );
@@ -1393,7 +1393,7 @@ function register_trap_damage( str_trap, func_player_damage, func_damage )
 // Params 3
 // Checksum 0xf26f7d7a, Offset: 0x3f70
 // Size: 0x8e
-function function_60d9e800( str_trap, var_75734507, var_53d35f37 )
+function register_trap_lights( str_trap, var_75734507, var_53d35f37 )
 {
     assert( isdefined( str_trap ), "<dev string:x38>" );
     _register_undefined_trap( str_trap );

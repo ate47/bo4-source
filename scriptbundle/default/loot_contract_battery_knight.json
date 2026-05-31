@@ -1,16 +1,16 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "localized17#hash_17596207123b54e4"
+            "hash_619e25922b4aedcf:hash_826726a": "localized17#hash_17596207123b54e4"
         }
     ],
     "contracticon": "image#hash_32664ad15411759a",
-    "hash_d0100eab": 1,
-    "relateditemname": "localized17#hash_759cb09309cf4447",
+    "hash_202e3311080f8de3:hash_d0100eab": 1,
+    "relateditemname": "localized17#heroes/battery",
     "contracttitle": "localized17#hash_17596207123b54e4",
     "name": "loot_contract_battery_knight",
     "contractdescription": "localized17#hash_471d3d570cc92a00",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_6b7df65b756b50a8",
-    "hash_e08fc162": "localized17#hash_40534ffb27a37ede"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_6b7df65b756b50a8",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_40534ffb27a37ede"
 }

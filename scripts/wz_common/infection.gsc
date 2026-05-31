@@ -38,7 +38,7 @@ function private __init__()
     }
     
     globallogic_defaults::function_daa7e9d5();
-    level.var_6b2b1231 = getweapon( #"hash_6b525d940c1c1e39" );
+    level.var_6b2b1231 = getweapon( #"bare_hands_infected" );
     clientfield::register( "toplayer", "infected", 21000, 1, "int" );
     callback::on_player_killed_with_params( &function_2cdab964 );
     callback::on_player_killed_with_params( &function_70f6e873 );

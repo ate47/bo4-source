@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_nuketown_4.d3dbsp",
+    "baseName": "mp_nuketown_4",
+    "mins": "-29942.887 -33097.26 -3739.75",
+    "maxs": "26092.441 32574.998 2443.75",
+    "checksum": 0,
+    "streamerworld": "#hash_7a4076ff1032faa3",
+    "lighting": "#maps/mp/mp_nuketown_4.d3dbsp",
+    "lutMaterial": "#lut_mp_nuketown_4",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_nuketown_4",
+        "#img_trim_lut_mp_nuketown_4",
+        "#img_trim_lut_mp_nuketown_4",
+        "#img_trim_lut_mp_nuketown_4"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 10,
+        "cookieArray": "#*cookie_array"
+    }
+}

@@ -1,10 +1,11 @@
 {
-    "name": "featured",
-    "nameHash": "#featured",
+    "nameStr": "featured",
+    "name": "#featured",
     "displayName": "#menu/store_featured",
-    "imageName": "#1115325376032266039",
     "visibility": true,
+    "image": "#t7_icon_menu_store_featured",
     "products": [
+        "#hash_3f24eb323e8b440",
         "#blackopspass",
         "#zombiesdlc0",
         "#hash_6dea0086f1a1a211",

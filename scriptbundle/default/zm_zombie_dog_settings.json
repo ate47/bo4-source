@@ -1,5 +1,5 @@
 {
-    "hash_10460f1e": 1,
+    "hash_a78cddfd3bcda83:hash_10460f1e": 1,
     "scoreevent": "#kill_dog",
     "configstringfiletype": "scriptbundle",
     "maxhealth": 100,
@@ -7,11 +7,11 @@
     "name": "zm_zombie_dog_settings",
     "minhealth": 100,
     "weakpointdamagescale": 1,
-    "hash_250a1683": 100,
-    "hash_97b22faa": 1,
+    "hash_4ef0b181b1951d65:hash_250a1683": 100,
+    "hash_566126040878b09b:hash_97b22faa": 1,
     "damagescale": 1,
     "category": "#popcorn",
-    "hash_854eebd": 0,
+    "hash_5cd90d9d100292aa:hash_854eebd": 0,
     "stunduration": 1,
     "animationspeed": 1
 }

@@ -32,7 +32,7 @@ function init()
 // Params 0
 // Checksum 0xe56dba18, Offset: 0x390
 // Size: 0x3c
-function function_47569560()
+function get_draft_struct()
 {
     if ( currentsessionmode() == 0 )
     {
@@ -196,7 +196,7 @@ function show_cam( localclientnum, xcam, animname, lerpduration, force )
         return;
     }
     
-    draftstruct = struct::get( function_47569560(), "targetname" );
+    draftstruct = struct::get( get_draft_struct(), "targetname" );
     
     if ( isdefined( draftstruct ) )
     {
@@ -795,7 +795,7 @@ function function_37313c1b( localclientnum )
 // Params 1
 // Checksum 0xd9f70492, Offset: 0x2670
 // Size: 0xf4
-function function_9afd868e( localclientnum )
+function setup_draft( localclientnum )
 {
     self notify( "2a36a3356b6e1b6f" );
     self endon( "2a36a3356b6e1b6f" );
@@ -825,7 +825,7 @@ function function_ca03ab69()
     {
         waitresult = level waittill( #"positiondraft_open" );
         localclientnum = waitresult.localclientnum;
-        function_9afd868e( localclientnum );
+        setup_draft( localclientnum );
     }
 }
 

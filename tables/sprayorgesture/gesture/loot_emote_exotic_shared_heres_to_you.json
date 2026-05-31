@@ -1,0 +1,34 @@
+{
+    "name": "#loot_emote_exotic_shared_heres_to_you",
+    "type": "#gesture",
+    "gesture": "#hash_19573c5c3498f772",
+    "gesture2": "#hash_2e883ff474fe5aed",
+    "sub": [
+        {
+            "gesture": "#hash_59f603f48d9fefda",
+            "gesture2": "#hash_880473efa88b015",
+            "roles": [
+                "#prt_mp_firebreak",
+                "#prt_wz_firebreak",
+                "#prt_mp_enforcer",
+                "#prt_wz_enforcer",
+                "#prt_wz_soldier_air_female",
+                "#prt_wz_soldier_hardened_male",
+                "#prt_wz_soldier_land_male",
+                "#prt_wz_soldier_sea_male",
+                "#prt_wz_soldier_seal_female",
+                "#hash_76ccdd2bfc985ae8",
+                "#prt_wz_spectre",
+                "#prt_mp_spectre",
+                "#prt_mp_reaper",
+                "#hash_76cce42bfc9866cd"
+            ]
+        }
+    ],
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_2ab8834587f07ad3",
+        "icon": "image#hash_735fef17faa20ad5",
+        "isdefault": 0
+    }
+}

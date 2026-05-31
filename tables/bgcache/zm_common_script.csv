@@ -64,7 +64,7 @@ string,#hash_8919019fbbe2bdc
 string,#hash_8e65f1e90063e14
 string,#zombie/perk_quickrevive
 string,#hash_90ca7c41027482c
-string,#hash_91829275c00db24
+string,#zmarcade/fasttravel_disabled
 string,#hash_980c4fda0ffe694
 string,#hash_9ad280f8b462963
 string,#hash_9ad290f8b462b16
@@ -158,7 +158,7 @@ string,#hash_2463923420099bb0
 string,#hash_2463933420099d63
 string,#hash_2463943420099f16
 string,#hash_246399342009a795
-string,#hash_24699632563e87ab
+string,#zombie_weaponcostammo
 string,#zombie/wallbuy_cooldown
 string,#zombie/perk_dying_wish
 string,#hash_24bb668f17a9cc67
@@ -275,7 +275,7 @@ string,#hash_4a6901dda0793d3c
 string,#zombie/perk_electric_cherry
 string,#hash_4b18cdd522ca58f7
 string,#hash_4b77c0a6bc72bc31
-string,#hash_4ba6bddb362745d9
+string,#zmarcade/blank
 string,#hash_4bdc72ede1ba196c
 string,#zombie/fasttravel_delay
 string,#hash_4bef74a6e7f21aa0
@@ -468,7 +468,7 @@ eventstring,#changeclass_wager
 eventstring,#quick_fade
 eventstring,#zm_inventory_opened
 eventstring,#hash_57d001515ec39771
-eventstring,#hash_57f3463ec116381f
+eventstring,#changeclass_barebones
 eventstring,#zombie_bgb_notification
 eventstring,#zombie_notification
 eventstring,#testplayerscorefortan
@@ -503,7 +503,7 @@ fx,#zombie/fx_bul_flesh_head_nochunks_zmb
 fx,#hash_1e43d43c6586fcb5
 fx,#zombie/fx_blood_torso_explo_zmb
 fx,#zombie/fx_bul_flesh_neck_spurt_zmb
-fx,#hash_2225287695ddf9c9
+fx,#_t6/misc/fx_zombie_cola_dtap_on
 fx,#zombie/fx_weapon_box_marker_zmb
 fx,#hash_26f37488feec03c3
 fx,#zombie/fx_perk_widows_wine_zmb
@@ -514,13 +514,13 @@ fx,#hash_359f0993cf4ebe66
 fx,#hash_35ee6425adf16fb6
 fx,#zombie/fx_weapon_box_closed_glow_zmb
 fx,#zombie/fx_bul_flesh_head_fatal_zmb
-fx,#hash_3a408a0a84bbbeec
+fx,#zombie/fx_crafting_dust_zmb
 fx,#zm_ai/fx8_elec_shock_eyes
 fx,#zombie/fx_powerup_off_green_zmb
 fx,#zm_ai/fx8_elec_shock
 fx,#_t6/bio/player/fx_footstep_sand
 fx,#hash_409439bf8b3dd862
-fx,#hash_413a313438a3a4e1
+fx,#dlc1/castle/fx_castle_electric_cherry_down
 fx,#zombie/fx_perk_stamin_up_zmb
 fx,#_t6/maps/zombie/fx_fog_zombie_amb
 fx,#hash_5686def5b4c85661
@@ -532,7 +532,7 @@ fx,#zombie/fx_monkey_lightning_zmb
 fx,#hash_718a24841c1e00c9
 fx,#hash_757d002378ec934c
 lui_elem_uid,#zm_hint_text
-lui_elem_uid,#hash_ec5675942b9ad00
+lui_elem_uid,#zm_trial_counter
 lui_elem_uid,#zm_arcade_timer
 lui_elem_uid,#self_revive_visuals
 lui_elem_uid,#zm_armor
@@ -579,7 +579,7 @@ client_fx,#zombie/fx_blood_torso_explo_zmb
 client_fx,#zombie/fx8_perk_altar_symbol_ambient_stronghold
 client_fx,#zombie/fx8_teleport_instant_1p
 client_fx,#zombie/fx8_wallbuy_amb_reverse
-client_fx,#hash_2225287695ddf9c9
+client_fx,#_t6/misc/fx_zombie_cola_dtap_on
 client_fx,#zombie/fx_tesla_shock_eyes_zmb
 client_fx,#zombie/fx_powerup_grab_caution_zmb
 client_fx,#zombie/fx8_perk_altar_symbol_ambient_dead_shot
@@ -613,7 +613,7 @@ client_fx,#zombie/fx_powerup_grab_solo_zmb
 client_fx,#zm_ai/fx8_elec_shock
 client_fx,#hash_3f4154d786124350
 client_fx,#hash_409439bf8b3dd862
-client_fx,#hash_413a313438a3a4e1
+client_fx,#dlc1/castle/fx_castle_electric_cherry_down
 client_fx,#hash_420040b9ccd8bd85
 client_fx,#maps/zm_escape/fx8_flame_wall_128x128
 client_fx,#zombie/fx8_packapunch_zmb_red_gauntlet
@@ -631,7 +631,7 @@ client_fx,#hash_55cc904817de4a07
 client_fx,#hash_56161fdf383c5fdc
 client_fx,#zombie/fx8_perk_vic_tort_exp
 client_fx,#hash_57eb5602b41fa4db
-client_fx,#hash_58c2d7d24c0d61a7
+client_fx,#dlc1/castle/fx_castle_electric_cherry_trail
 client_fx,#zombie/fx_powerup_grab_red_zmb
 client_fx,#hash_5c054ea9b299c2f0
 client_fx,#hash_5f376e9395e16666

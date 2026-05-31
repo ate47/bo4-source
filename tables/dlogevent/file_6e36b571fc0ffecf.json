@@ -1,0 +1,505 @@
+{
+    "name": "#hash_6e36b571fc0ffecf",
+    "unk28": "#cploadouts",
+    "ddlDef": "#hash_77b094cffd177ffb",
+    "unk18": 0,
+    "unk19": 1,
+    "unk1a": 1,
+    "unk1b": 0,
+    "unk1c": 1,
+    "rate": 1,
+    "fields": [
+        {
+            "name": "#telemetry",
+            "arraySize": 0,
+            "members": {
+                "name": "#telemetry_header",
+                "members": [
+                    {
+                        "name": "#game_session_id",
+                        "scrName": "#hash_50f7aa03",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#action_type",
+                        "scrName": "#action_type",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#title_id",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#build_version",
+                        "scrName": "#build_version",
+                        "type": "STRING",
+                        "len": 32
+                    },
+                    {
+                        "name": "#platform",
+                        "scrName": "#platform",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#source_version",
+                        "scrName": "#source_version",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_56a1b6d783aa7a25",
+                        "scrName": "#hash_ee3228f8",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#changelist_number",
+                        "scrName": "#changelist_number",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#match",
+            "arraySize": 0,
+            "members": {
+                "name": "#match_header",
+                "members": [
+                    {
+                        "name": "#lobby_id",
+                        "scrName": "#lobby_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#hash_c05315ddb26eb93",
+                        "scrName": "#hash_f81804cf",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#match_id",
+                        "scrName": "#match_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#client",
+            "arraySize": 0,
+            "members": {
+                "name": "#client_header",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#user_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#user_session_id",
+                        "scrName": "#hash_e004f74d",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#uno_id",
+                        "scrName": "#uno_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#cploadouts",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_3b1f2a75446de239",
+                "members": [
+                    {
+                        "name": "#primaryname",
+                        "scrName": "#primaryname",
+                        "type": "STRING",
+                        "len": 128
+                    },
+                    {
+                        "name": "#primaryreticle",
+                        "scrName": "#primaryreticle",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#spawnid",
+                        "scrName": "#spawnid",
+                        "type": "INT32",
+                        "len": 48
+                    },
+                    {
+                        "name": "#talent9",
+                        "scrName": "#hash_890578e8",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#talent8",
+                        "scrName": "#hash_1c3f1f5d",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#talent3",
+                        "scrName": "#talent3",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#talent2",
+                        "scrName": "#talent2",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#talent1",
+                        "scrName": "#talent1",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#talent0",
+                        "scrName": "#hash_942f949",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#talent7",
+                        "scrName": "#hash_f6cdd47b",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#talent6",
+                        "scrName": "#talent6",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#talent5",
+                        "scrName": "#talent5",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#talent4",
+                        "scrName": "#talent4",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#primarygrenadecount",
+                        "scrName": "#primarygrenadecount",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#secondaryattachment4",
+                        "scrName": "#secondaryattachment4",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#secondaryattachment5",
+                        "scrName": "#secondaryattachment5",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#secondaryattachment1",
+                        "scrName": "#secondaryattachment1",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#secondaryattachment2",
+                        "scrName": "#secondaryattachment2",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#secondaryattachment3",
+                        "scrName": "#secondaryattachment3",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#specialgrenadecount",
+                        "scrName": "#specialgrenadecount",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#specialty6",
+                        "scrName": "#specialty6",
+                        "type": "STRING",
+                        "len": 64
+                    },
+                    {
+                        "name": "#specialty5",
+                        "scrName": "#specialty5",
+                        "type": "STRING",
+                        "len": 64
+                    },
+                    {
+                        "name": "#specialty4",
+                        "scrName": "#specialty4",
+                        "type": "STRING",
+                        "len": 64
+                    },
+                    {
+                        "name": "#specialty3",
+                        "scrName": "#specialty3",
+                        "type": "STRING",
+                        "len": 64
+                    },
+                    {
+                        "name": "#specialty2",
+                        "scrName": "#specialty2",
+                        "type": "STRING",
+                        "len": 64
+                    },
+                    {
+                        "name": "#specialty1",
+                        "scrName": "#specialty1",
+                        "type": "STRING",
+                        "len": 64
+                    },
+                    {
+                        "name": "#primary",
+                        "scrName": "#primary",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#specialgrenade",
+                        "scrName": "#specialgrenade",
+                        "type": "STRING",
+                        "len": 64
+                    },
+                    {
+                        "name": "#secondarycamo",
+                        "scrName": "#secondarycamo",
+                        "type": "STRING",
+                        "len": 64
+                    },
+                    {
+                        "name": "#specialistindex",
+                        "scrName": "#specialistindex",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#secondaryreticle",
+                        "scrName": "#secondaryreticle",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#primarycamo",
+                        "scrName": "#primarycamo",
+                        "type": "STRING",
+                        "len": 64
+                    },
+                    {
+                        "name": "#secondaryname",
+                        "scrName": "#secondaryname",
+                        "type": "STRING",
+                        "len": 64
+                    },
+                    {
+                        "name": "#secondary",
+                        "scrName": "#secondary",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#wildcard2",
+                        "scrName": "#wildcard2",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#wildcard1",
+                        "scrName": "#wildcard1",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#wildcard0",
+                        "scrName": "#wildcard0",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#gametime",
+                        "scrName": "#gametime",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#primaryattachment4",
+                        "scrName": "#primaryattachment4",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#primaryattachment5",
+                        "scrName": "#primaryattachment5",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#primaryattachment6",
+                        "scrName": "#primaryattachment6",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#primaryattachment7",
+                        "scrName": "#primaryattachment7",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#primaryattachment1",
+                        "scrName": "#primaryattachment1",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#primaryattachment2",
+                        "scrName": "#primaryattachment2",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#primaryattachment3",
+                        "scrName": "#primaryattachment3",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#tacticalgear",
+                        "scrName": "#tacticalgear",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#talisman1",
+                        "scrName": "#talisman1",
+                        "type": "STRING",
+                        "len": 64
+                    },
+                    {
+                        "name": "#primarygrenade",
+                        "scrName": "#primarygrenade",
+                        "type": "STRING",
+                        "len": 64
+                    },
+                    {
+                        "name": "#specialistability",
+                        "scrName": "#hash_9911e1f2",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#killstreak4",
+                        "scrName": "#killstreak4",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#killstreak3",
+                        "scrName": "#killstreak3",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#killstreak2",
+                        "scrName": "#killstreak2",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#killstreak1",
+                        "scrName": "#killstreak1",
+                        "type": "XHASH"
+                    }
+                ]
+            }
+        }
+    ],
+    "unk60": [
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_855c9a40dc060cf",
+                "s3u10": "#hash_2",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    0
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_775a1eb90e25df27",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    0,
+                    5,
+                    4
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_290c784cb9dce798",
+                "s3u10": "#hash_6",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_f0",
+                "unk28": [
+                    2,
+                    3,
+                    9
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_415a3e8b41b48599",
+                "s3u10": "#hash_4",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_a",
+                "unk28": [
+                    2,
+                    3,
+                    5
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_68cc9f8f64640d09",
+                "s3u10": "#hash_7",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2,
+                    3
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_7b52e3919e2a5b79",
+                "s3u10": "#hash_9",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_9e7f226bd2c2c2c",
+                "s3u10": "#hash_8",
+                "s3u18": "#hash_400",
+                "unk28": [
+                    8
+                ]
+            }
+        }
+    ]
+}

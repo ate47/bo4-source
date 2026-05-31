@@ -1,0 +1,17 @@
+{
+    "name": "#hash_5dafd6747188d076",
+    "desc": "#hash_51b856257aed7ad2",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "unk68:unk10": true,
+            "model": "#c_t8_mp_spe_firebreak_head1_cst",
+            "unk68:unk48": [
+                "#mc/mtl_c_t8_mp_spe_firebreak_head1_brace_cst",
+                "#mc/mtl_c_t8_mp_spe_firebreak_head1_flashlight_cst"
+            ],
+            "unk68:unk50": 1
+        }
+    ]
+}

@@ -1,5 +1,16 @@
 {
-    "name": "#user_settings",
     "nameStr": "user_settings",
-    "ddl": "#gamedata/ddl/generated/profile_common.ddl"
+    "name": "#user_settings",
+    "ddlPath": "#gamedata/ddl/generated/profile_common.ddl",
+    "files": [
+        {
+            "fileName": "user_settings"
+        }
+    ],
+    "size": 3072,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

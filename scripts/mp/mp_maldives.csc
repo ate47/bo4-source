@@ -10,7 +10,7 @@
 function event_handler[level_init] main( eventstruct )
 {
     level.draftxcam = #"ui_cam_draft_common";
-    level.var_482af62e = #"hash_12263e5d70551bf9";
+    level.var_482af62e = #"ui_cam_draft_common_zoom";
     setsaveddvar( #"enable_global_wind", 1 );
     setsaveddvar( #"wind_global_vector", "88 0 0" );
     setsaveddvar( #"wind_global_low_altitude", 0 );

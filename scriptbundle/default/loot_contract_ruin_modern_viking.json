@@ -1,16 +1,16 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "localized17#hash_2644cc8d6e0f3c69"
+            "hash_619e25922b4aedcf:hash_826726a": "localized17#hash_2644cc8d6e0f3c69"
         }
     ],
     "contracticon": "image#hash_3df484a208e77e2b",
-    "hash_d0100eab": 1,
-    "relateditemname": "localized17#hash_318a13787fd10f6a",
+    "hash_202e3311080f8de3:hash_d0100eab": 1,
+    "relateditemname": "localized17#heroes/mercenary",
     "contracttitle": "localized17#hash_2644cc8d6e0f3c69",
     "name": "loot_contract_ruin_modern_viking",
     "contractdescription": "localized17#hash_5f3abaf73890048b",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_7b6abf0a2fda66db",
-    "hash_e08fc162": "localized17#hash_7e38c55c1dbd99da"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_7b6abf0a2fda66db",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_7e38c55c1dbd99da"
 }

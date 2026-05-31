@@ -659,7 +659,7 @@ function add_zombie_weapon( weapon_name, upgrade_name, is_ee, cost, weaponvo, we
     struct.vox_response = weaponvoresp;
     struct.is_wonder_weapon = is_wonder_weapon;
     struct.tier = tier;
-    println( "<dev string:x38>" + function_9e72a96( weapon_name ) );
+    println( "<dev string:x38>" + hashtostring( weapon_name ) );
     struct.is_in_box = level.zombie_include_weapons[ weapon ];
     
     if ( !isdefined( ammo_cost ) || ammo_cost == 0 )
@@ -729,7 +729,7 @@ function include_zombie_weapon( weapon_name, in_box )
         in_box = 1;
     }
     
-    println( "<dev string:x56>" + function_9e72a96( weapon_name ) );
+    println( "<dev string:x56>" + hashtostring( weapon_name ) );
     level.zombie_include_weapons[ getweapon( weapon_name ) ] = in_box;
 }
 
@@ -959,7 +959,7 @@ function player_can_use_content( weapon )
 // Size: 0x72
 function get_weapon_hint( weapon )
 {
-    assert( isdefined( level.zombie_weapons[ weapon ] ), function_9e72a96( weapon.name ) + "<dev string:x72>" );
+    assert( isdefined( level.zombie_weapons[ weapon ] ), hashtostring( weapon.name ) + "<dev string:x72>" );
     return level.zombie_weapons[ weapon ].hint;
 }
 
@@ -969,7 +969,7 @@ function get_weapon_hint( weapon )
 // Size: 0x72
 function get_weapon_cost( weapon )
 {
-    assert( isdefined( level.zombie_weapons[ weapon ] ), function_9e72a96( weapon.name ) + "<dev string:x72>" );
+    assert( isdefined( level.zombie_weapons[ weapon ] ), hashtostring( weapon.name ) + "<dev string:x72>" );
     return level.zombie_weapons[ weapon ].cost;
 }
 
@@ -979,7 +979,7 @@ function get_weapon_cost( weapon )
 // Size: 0x72
 function get_ammo_cost( weapon )
 {
-    assert( isdefined( level.zombie_weapons[ weapon ] ), function_9e72a96( weapon.name ) + "<dev string:x72>" );
+    assert( isdefined( level.zombie_weapons[ weapon ] ), hashtostring( weapon.name ) + "<dev string:x72>" );
     return level.zombie_weapons[ weapon ].ammo_cost;
 }
 
@@ -989,7 +989,7 @@ function get_ammo_cost( weapon )
 // Size: 0x94
 function get_upgraded_ammo_cost( weapon )
 {
-    assert( isdefined( level.zombie_weapons[ weapon ] ), function_9e72a96( weapon.name ) + "<dev string:x72>" );
+    assert( isdefined( level.zombie_weapons[ weapon ] ), hashtostring( weapon.name ) + "<dev string:x72>" );
     
     if ( isdefined( level.zombie_weapons[ weapon ].upgraded_ammo_cost ) )
     {
@@ -1266,7 +1266,7 @@ function get_upgrade_weapon( weapon, add_attachment )
     }
     
     /#
-        if ( isdefined( self.var_8d5839f4 ) && isinarray( self.var_8d5839f4, weapon ) && weapon.attachments.size )
+        if ( isdefined( self.a_w_devgui ) && isinarray( self.a_w_devgui, weapon ) && weapon.attachments.size )
         {
             newweapon = getweapon( newweapon.name, weapon.attachments );
             return newweapon;
@@ -1375,7 +1375,7 @@ function get_weapon_with_attachments( weapon )
     if ( self has_weapon_or_attachments( rootweapon ) )
     {
         /#
-            if ( isdefined( self.var_8d5839f4 ) && isinarray( self.var_8d5839f4, weapon ) && weapon.attachments.size )
+            if ( isdefined( self.a_w_devgui ) && isinarray( self.a_w_devgui, weapon ) && weapon.attachments.size )
             {
                 return weapon;
             }
@@ -1657,7 +1657,7 @@ function give_build_kit_weapon( weapon, var_51ec4e93, var_bd5d43c6, b_switch_wea
     }
     
     /#
-        if ( isdefined( self.var_8d5839f4 ) && isinarray( self.var_8d5839f4, weapon ) && weapon.attachments.size )
+        if ( isdefined( self.a_w_devgui ) && isinarray( self.a_w_devgui, weapon ) && weapon.attachments.size )
         {
             if ( !isdefined( n_camo ) )
             {
@@ -2296,7 +2296,7 @@ function weapondata_take( weapondata )
         
         if ( isinarray( a_alt_weapons, alt_weapon ) )
         {
-            println( "<dev string:xe9>" + function_9e72a96( alt_weapon.name ) + "<dev string:x108>" );
+            println( "<dev string:xe9>" + hashtostring( alt_weapon.name ) + "<dev string:x108>" );
             break;
         }
     }
@@ -2652,9 +2652,9 @@ function function_f5a0899d( weapon, var_d921715f = 1 )
             return false;
         }
         
-        var_3ba4bf7d = self getweaponslistprimaries();
+        a_w_primaries = self getweaponslistprimaries();
         
-        if ( isinarray( var_3ba4bf7d, weapon ) )
+        if ( isinarray( a_w_primaries, weapon ) )
         {
             return true;
         }

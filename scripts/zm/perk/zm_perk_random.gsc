@@ -775,9 +775,9 @@ function perk_random_idle()
 {
     self clientfield::set( "client_stone_emmissive_blink", 0 );
     
-    if ( isdefined( level.var_5e48927d ) )
+    if ( isdefined( level.perk_random_idle_effects_override ) )
     {
-        self [[ level.var_5e48927d ]]();
+        self [[ level.perk_random_idle_effects_override ]]();
         return;
     }
     
@@ -899,9 +899,9 @@ function process_perk_random_machine_state( state )
             self.state = "initial";
             break;
         default:
-            if ( isdefined( level.var_7453ade8 ) )
+            if ( isdefined( level.custom_perk_random_state_handler ) )
             {
-                self [[ level.var_7453ade8 ]]( state );
+                self [[ level.custom_perk_random_state_handler ]]( state );
             }
             
             break;

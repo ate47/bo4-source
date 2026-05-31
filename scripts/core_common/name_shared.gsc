@@ -510,13 +510,13 @@ function getrankfromname( name )
     
     switch ( shortrank )
     {
-        case #"hash_61c7340e20b9c509":
+        case #"pvt.":
             self.airank = "private";
             break;
-        case #"hash_5827a20dd30caea2":
+        case #"pfc.":
             self.airank = "private";
             break;
-        case #"hash_2116fd90943206f0":
+        case #"cpl.":
             self.airank = "corporal";
             break;
         case #"sgt.":

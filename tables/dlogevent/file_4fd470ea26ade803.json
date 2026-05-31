@@ -1,0 +1,319 @@
+{
+    "name": "#hash_4fd470ea26ade803",
+    "ddlDef": "#hash_410a4e25a5c411fb",
+    "unk18": 0,
+    "unk19": 1,
+    "unk1a": 1,
+    "unk1b": 0,
+    "unk1c": 0,
+    "rate": 1,
+    "fields": [
+        {
+            "name": "#telemetry",
+            "arraySize": 0,
+            "members": {
+                "name": "#telemetry_header",
+                "members": [
+                    {
+                        "name": "#game_session_id",
+                        "scrName": "#hash_50f7aa03",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#action_type",
+                        "scrName": "#action_type",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#title_id",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#build_version",
+                        "scrName": "#build_version",
+                        "type": "STRING",
+                        "len": 32
+                    },
+                    {
+                        "name": "#platform",
+                        "scrName": "#platform",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#source_version",
+                        "scrName": "#source_version",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_56a1b6d783aa7a25",
+                        "scrName": "#hash_ee3228f8",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#changelist_number",
+                        "scrName": "#changelist_number",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#match",
+            "arraySize": 0,
+            "members": {
+                "name": "#match_header",
+                "members": [
+                    {
+                        "name": "#lobby_id",
+                        "scrName": "#lobby_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#hash_c05315ddb26eb93",
+                        "scrName": "#hash_f81804cf",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#match_id",
+                        "scrName": "#match_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#client",
+            "arraySize": 0,
+            "members": {
+                "name": "#client_header",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#user_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#user_session_id",
+                        "scrName": "#hash_e004f74d",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#uno_id",
+                        "scrName": "#uno_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        }
+    ],
+    "members": [
+        {
+            "name": "#passenger_deaths",
+            "scrName": "#raw/russian/sound/vox/scripted/isa/vox_isa_encourage_lost_01.SN65.xenon.snd",
+            "type": "UINT16"
+        },
+        {
+            "name": "#vehicle_kills",
+            "scrName": "#vehicle_kills",
+            "type": "UINT16"
+        },
+        {
+            "name": "#max_occupants",
+            "scrName": "#hash_efe98761",
+            "type": "UINT8"
+        },
+        {
+            "name": "#player_xuid",
+            "scrName": "#player_xuid",
+            "type": "UINT64",
+            "s111u20": true
+        },
+        {
+            "name": "#hash_1f6f99c615ebe865",
+            "scrName": "#hash_770fd50d",
+            "type": "UINT16"
+        },
+        {
+            "name": "#passenger_kills",
+            "scrName": "#passenger_kills",
+            "type": "UINT16"
+        },
+        {
+            "name": "#end_health",
+            "scrName": "#end_health",
+            "type": "UINT16"
+        },
+        {
+            "name": "#hash_27d7493da1ae3b08",
+            "scrName": "#hash_ecd1fe60",
+            "type": "UINT16"
+        },
+        {
+            "name": "#vehicle_id",
+            "scrName": "#hash_c87538d9",
+            "type": "UINT32"
+        },
+        {
+            "name": "#first_player",
+            "scrName": "#first_player",
+            "type": "UINT64"
+        },
+        {
+            "name": "#hash_493b0b37aa073d11",
+            "scrName": "#hash_309ad81f",
+            "type": "UINT16"
+        },
+        {
+            "name": "#end_time",
+            "scrName": "#end_time",
+            "type": "UINT32"
+        },
+        {
+            "name": "#hash_4b57cc6a0164c1b2",
+            "scrName": "#hash_1ff15d37",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#hash_4b57cd6a0164c365",
+            "scrName": "#hash_2dbaf8ca",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#passenger_damage_taken",
+            "scrName": "#hash_ffb0c509",
+            "type": "UINT16"
+        },
+        {
+            "name": "#hash_4c4e7e6968f548cd",
+            "scrName": "#hash_33f48e5a",
+            "type": "UINT16"
+        },
+        {
+            "name": "#start_health",
+            "scrName": "#start_health",
+            "type": "UINT16"
+        },
+        {
+            "name": "#start_time",
+            "scrName": "#start_time",
+            "type": "UINT32"
+        },
+        {
+            "name": "#hash_576e854d5397d59e",
+            "scrName": "#hash_5ba0df6e",
+            "type": "UINT16"
+        },
+        {
+            "name": "#hash_6373313e132d49b8",
+            "scrName": "#hash_16f7d5d0",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#hash_6373323e132d4b6b",
+            "scrName": "#hash_4ba3155",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#hash_7410c2f4f7747523",
+            "scrName": "#hash_45bf3627",
+            "type": "UINT16"
+        },
+        {
+            "name": "#vehicle",
+            "scrName": "#vehicle",
+            "type": "XHASH"
+        }
+    ],
+    "unk60": [
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_855c9a40dc060cf",
+                "s3u10": "#hash_2",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    0
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_775a1eb90e25df27",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    0,
+                    5,
+                    4
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 0.03,
+            "s3u8": {
+                "s31u0": "#hash_290c784cb9dce798",
+                "s3u10": "#hash_6",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_f0",
+                "unk28": [
+                    2,
+                    3,
+                    9
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_415a3e8b41b48599",
+                "s3u10": "#hash_4",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_a",
+                "unk28": [
+                    2,
+                    3,
+                    5
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_68cc9f8f64640d09",
+                "s3u10": "#hash_7",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2,
+                    3
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_7b52e3919e2a5b79",
+                "s3u10": "#hash_9",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2
+                ]
+            }
+        }
+    ]
+}

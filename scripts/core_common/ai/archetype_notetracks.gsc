@@ -36,10 +36,10 @@ function autoexec registerdefaultnotetrackhandlerfunctions()
     registernotetrackhandlerfunction( "step1", &notetrackstaircasestep1 );
     registernotetrackhandlerfunction( "step2", &notetrackstaircasestep2 );
     registernotetrackhandlerfunction( "anim_movement = \"stop\"", &notetrackanimmovementstop );
-    registerblackboardnotetrackhandler( "anim_pose = \\"stand\\"", "_stance", "stand" );
-    registerblackboardnotetrackhandler( "anim_pose = \\"crouch\\"", "_stance", "crouch" );
-    registerblackboardnotetrackhandler( "anim_pose = \\"prone_front\\"", "_stance", "prone_front" );
-    registerblackboardnotetrackhandler( "anim_pose = \\"prone_back\\"", "_stance", "prone_back" );
+    registerblackboardnotetrackhandler( "anim_pose = \\\"stand\\\"", "_stance", "stand" );
+    registerblackboardnotetrackhandler( "anim_pose = \\\"crouch\\\"", "_stance", "crouch" );
+    registerblackboardnotetrackhandler( "anim_pose = \\\"prone_front\\\"", "_stance", "prone_front" );
+    registerblackboardnotetrackhandler( "anim_pose = \\\"prone_back\\\"", "_stance", "prone_back" );
     registerblackboardnotetrackhandler( "anim_pose = stand", "_stance", "stand" );
     registerblackboardnotetrackhandler( "anim_pose = crouch", "_stance", "crouch" );
     registerblackboardnotetrackhandler( "anim_pose = prone_front", "_stance", "prone_front" );

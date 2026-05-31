@@ -82,7 +82,7 @@ function function_14afd300()
         return;
     }
     
-    level._effect[ #"divetonuke_light" ] = #"hash_2225287695ddf9c9";
+    level._effect[ #"divetonuke_light" ] = #"_t6/misc/fx_zombie_cola_dtap_on";
     level.machine_assets[ #"specialty_cooldown" ] = spawnstruct();
     level.machine_assets[ #"specialty_cooldown" ].weapon = getweapon( "zombie_perk_bottle_cooldown" );
     level.machine_assets[ #"specialty_cooldown" ].off_model = "p7_zm_vending_nuke";
@@ -132,7 +132,7 @@ function function_cf203b00( use_trigger, perk_machine, bump_trigger, collision )
 // Size: 0x32
 function function_8ba0e035()
 {
-    level._effect[ #"divetonuke_light" ] = #"hash_2225287695ddf9c9";
+    level._effect[ #"divetonuke_light" ] = #"_t6/misc/fx_zombie_cola_dtap_on";
 }
 
 // Namespace zm_perk_cooldown/zm_perk_cooldown

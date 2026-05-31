@@ -82,7 +82,7 @@ function laststand_postfx( localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0xfe
 function laststand_bleed( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    self endon( #"death", #"hash_7698972484f247e8" );
+    self endon( #"death", #"end_bleed_fx" );
     
     if ( newval != oldval && newval )
     {
@@ -96,7 +96,7 @@ function laststand_bleed( localclientnum, oldval, newval, bnewent, binitialsnap,
         stopfx( localclientnum, self.var_63796ff0 );
     }
     
-    self notify( #"hash_7698972484f247e8" );
+    self notify( #"end_bleed_fx" );
 }
 
 // Namespace laststand/laststand

@@ -14,7 +14,7 @@ version 2 {
     // offset 0x0, size 0x8
     uint:6 count;
     // offset 0x8, size 0x12c0
-    recentplayer hash_224419b9dcb9832d[50];
+    recentplayer playersmet[50];
     // offset 0x12c8, size 0x1
     bool issorted;
     // offset 0x12c9, size 0x7

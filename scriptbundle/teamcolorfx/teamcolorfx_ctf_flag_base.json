@@ -1,46 +1,46 @@
 {
     "objects": [
         {
-            "colorid": "fx#hash_3708e3f3ea135109"
+            "colorid": "fx#ui/fx_ctf_flag_base_team_red"
         },
         {
-            "colorid": "fx#hash_3708e3f3ea135109"
+            "colorid": "fx#ui/fx_ctf_flag_base_team_red"
         },
         {
-            "colorid": "fx#hash_3708e3f3ea135109"
+            "colorid": "fx#ui/fx_ctf_flag_base_team_red"
         },
         {
-            "colorid": "fx#hash_3708e3f3ea135109"
+            "colorid": "fx#ui/fx_ctf_flag_base_team_red"
         },
         {
-            "colorid": "fx#hash_2dc7d7e3f0d56e1a"
+            "colorid": "fx#ui/fx_ctf_flag_base_team_yellow"
         },
         {
-            "colorid": "fx#hash_2dc7d7e3f0d56e1a"
+            "colorid": "fx#ui/fx_ctf_flag_base_team_yellow"
         },
         {
-            "colorid": "fx#hash_5aeba06c60de78d"
+            "colorid": "fx#ui/fx_ctf_flag_base_team_green"
         },
         {
-            "colorid": "fx#hash_5aeba06c60de78d"
+            "colorid": "fx#ui/fx_ctf_flag_base_team_green"
         },
         {
-            "colorid": "fx#hash_5aeba06c60de78d"
+            "colorid": "fx#ui/fx_ctf_flag_base_team_green"
         },
         {
-            "colorid": "fx#hash_5aeba06c60de78d"
+            "colorid": "fx#ui/fx_ctf_flag_base_team_green"
         },
         {
-            "colorid": "fx#hash_5aeba06c60de78d"
+            "colorid": "fx#ui/fx_ctf_flag_base_team_green"
         },
         {
-            "colorid": "fx#hash_5aeba06c60de78d"
+            "colorid": "fx#ui/fx_ctf_flag_base_team_green"
         },
         {
-            "colorid": "fx#hash_2dc7d7e3f0d56e1a"
+            "colorid": "fx#ui/fx_ctf_flag_base_team_yellow"
         },
         {
-            "colorid": "fx#hash_2dc7d7e3f0d56e1a"
+            "colorid": "fx#ui/fx_ctf_flag_base_team_yellow"
         }
     ],
     "configstringfiletype": "scriptbundle",

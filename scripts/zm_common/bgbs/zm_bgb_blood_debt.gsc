@@ -88,7 +88,7 @@ function function_4b163259( einflictor, eattacker, idamage, idflags, smeansofdea
             }
             else
             {
-                n_cost = zm_score::function_ffc2d0bc();
+                n_cost = zm_score::get_player_score();
                 
                 if ( n_cost == 0 )
                 {

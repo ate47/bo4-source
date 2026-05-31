@@ -1,0 +1,114 @@
+{
+    "name": "#vehicle_t8_drone_recon_wz",
+    "type": "wheels4",
+    "scriptVehicleType": "recon_wz",
+    "scoreType": "rcbomb",
+    "var_409bdb86": "vehicle_t8_drone_recon_wz_pc",
+    "cameraTag": "tag_origin",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "deathFx": "#hash_59174ad01884a794",
+    "deathFxTag": "tag_body",
+    "deathFxSound": "#hash_2d5cdc03d392d5ec",
+    "sndMaterialNames": [
+        "#hash_268ebbfd586fc64f",
+        "#hash_34321daed8ad643a",
+        "#hash_f2e5dec7a4694f3"
+    ],
+    "skidSpeedMin": 50,
+    "skidSpeedMax": 151,
+    "peelSpeedMax": 600,
+    "model": "#veh_t8_drone_recon_wz",
+    "deathModel": "#veh_t8_drone_recon",
+    "enemyModel": "#veh_t8_drone_recon_wz",
+    "soundDef": "#hash_7df2002194200c28",
+    "compassIconMaterial": "#hash_497f5e433364a80",
+    "tacticalModeIcon": "#hash_619b22638b3035f5",
+    "steerAxisName": "AXIS_LSTICK",
+    "handBrakeButtonName": "BUTTON_LSHLDR",
+    "boostButtonName": "BUTTON_LSTICK",
+    "unk1608": "BUTTON_A",
+    "unk1658": "BUTTON_RSTICK",
+    "bundle": {
+        "huds": [
+            {
+                "bindings": [
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_79d336e3dd657b0a",
+                        "buttondirection": "left",
+                        "prompt": "+breath_sprint"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#GAMEPAD",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#menu/vehicle_horn",
+                        "buttondirection": "left",
+                        "prompt": "+melee"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#GAMEPAD",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_159422619daa50d8",
+                        "buttondirection": "left",
+                        "prompt": "+smoke"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#GAMEPAD",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_5dba026ffa1d58cd",
+                        "buttondirection": "right",
+                        "prompt": "+lookstick"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_7280cf21dcaf1f18",
+                        "buttondirection": "left",
+                        "prompt": "+gostand"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#kbm",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_159422619daa50d8",
+                        "buttondirection": "right",
+                        "prompt": "+smoke"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#kbm",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#menu/vehicle_horn",
+                        "buttondirection": "right",
+                        "prompt": "+melee"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#kbm",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_5d353ec43eb36759",
+                        "buttondirection": "right",
+                        "prompt": "+vehiclealtcontrol"
+                    }
+                ],
+                "widgets": [
+                    {
+                        "hash_303b76d86d727423:hash_513059ad": 0,
+                        "hash_5d479f6320d21682:hash_189dcbff": "localized17#hash_2232f0cfd847af2f",
+                        "widgettype": 14
+                    }
+                ],
+                "hash_16b4c5c47fcf7794:hash_56985ec1": 1,
+                "hideweaponinfo": 1,
+                "hash_3a63348c09d91b8d:hash_24c083a4": 0,
+                "vehiclehud": "VehicleHUD_GroundVehicle",
+                "tintcolor": "1 1 1 1",
+                "hudcondition": "IsAttackMode"
+            }
+        ],
+        "healthpoolsize": 650,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 2
+    }
+}

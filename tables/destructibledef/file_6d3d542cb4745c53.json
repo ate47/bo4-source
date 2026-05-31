@@ -1,0 +1,101 @@
+{
+    "name": "#hash_6d3d542cb4745c53",
+    "model": "#hash_31771af97bf3d0d5",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_1a5b2f2c3b69119c",
+            "unk268": 800,
+            "hideBones": [
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_panel_left"
+                },
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_1a5b302c3b69134f",
+            "unk268": 400,
+            "hideBones": [
+                35,
+                87,
+                91,
+                92
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_panel_right"
+                },
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_1a5b312c3b691502",
+            "unk268": 400,
+            "hideBones": [
+                34,
+                88,
+                93,
+                94
+            ]
+        }
+    ]
+}

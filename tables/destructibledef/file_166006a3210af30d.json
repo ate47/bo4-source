@@ -1,0 +1,2115 @@
+{
+    "name": "#hash_166006a3210af30d",
+    "model": "#wpn_t8_eqp_smartcover_barrier_double_8x8_red_fac",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_base_d0"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0.5,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_36d7d1774ee478e",
+            "unk268": 3500,
+            "hideBones": [
+                31,
+                94
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_01"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_36d7e1774ee4941",
+            "burnSound": "#hash_166a5c94650",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                30,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_02"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_36d7b1774ee4428",
+            "burnSound": "#hash_166a5c94680",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                29,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_03"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_36d7c1774ee45db",
+            "burnSound": "#hash_166a5c946b0",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                28,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_04"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_36d811774ee4e5a",
+            "burnSound": "#hash_166a5c946e0",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                27,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_05"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_36d821774ee500d",
+            "burnSound": "#hash_166a5c94710",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                26,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_06"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_36d7f1774ee4af4",
+            "unk268": 150,
+            "hideBones": [
+                25,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_07"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_36d801774ee4ca7",
+            "burnSound": "#hash_166a5c94740",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                24,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_08"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_36d751774ee39f6",
+            "burnSound": "#hash_166a5c94770",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                23,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_09"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_36d761774ee3ba9",
+            "burnSound": "#hash_166a5c947a0",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                22,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_10"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_4156b2dbb0e6cb03",
+            "burnSound": "#hash_166a5c947d0",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                21,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_11"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_4156b1dbb0e6c950",
+            "burnSound": "#hash_166a5c94800",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                20,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_12"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_4156b4dbb0e6ce69",
+            "burnSound": "#hash_166a5c94830",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                19,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_13"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_4156b3dbb0e6ccb6",
+            "burnSound": "#hash_166a5c94860",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                18,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_14"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_4156b6dbb0e6d1cf",
+            "burnSound": "#hash_166a5c94890",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                17,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_15"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_4156b5dbb0e6d01c",
+            "burnSound": "#hash_166a5c948c0",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                16,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_16"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_4156b8dbb0e6d535",
+            "burnSound": "#hash_166a5c948f0",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                15,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_17"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_4156b7dbb0e6d382",
+            "burnSound": "#hash_166a5c94920",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                14,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_18"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_4156badbb0e6d89b",
+            "burnSound": "#hash_166a5c94950",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                13,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_19"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_4156b9dbb0e6d6e8",
+            "burnSound": "#hash_166a5c94980",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                12,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_20"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_414c40dbb0ddb4c8",
+            "burnSound": "#hash_166a5c949b0",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                11,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_21"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_414c41dbb0ddb67b",
+            "burnSound": "#hash_166a5c949e0",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                10,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_22"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_414c42dbb0ddb82e",
+            "burnSound": "#hash_166a5c94a10",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                9,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_23"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_414c43dbb0ddb9e1",
+            "burnSound": "#hash_166a5c94a40",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                8,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_24"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_414c44dbb0ddbb94",
+            "burnSound": "#hash_166a5c94a70",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                7,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_25"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_414c45dbb0ddbd47",
+            "burnSound": "#hash_166a5c94aa0",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                6,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_26"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_414c46dbb0ddbefa",
+            "burnSound": "#hash_166a5c94ad0",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                5,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_27"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_414c47dbb0ddc0ad",
+            "burnSound": "#hash_166a5c94b00",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                4,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_28"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_414c38dbb0dda730",
+            "unk268": 250,
+            "hideBones": [
+                3,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_29"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_414c39dbb0dda8e3",
+            "burnSound": "#hash_166a5c94b30",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                2,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_30"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_414fc6dbb0e0ce51",
+            "burnSound": "#hash_166a5c94b60",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                1,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_31"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_414fc5dbb0e0cc9e",
+            "burnSound": "#hash_166a5c94b90",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                0,
+                31
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_32"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                63
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_33"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                62
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_34"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                61
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_35"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                60
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_36"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                59
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_37"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                58
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_38"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                57
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_39"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                56
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_40"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                55
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_41"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                54
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_42"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.69,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                53
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_43"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                52
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_44"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                51
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_45"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                50
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_46"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                49
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_47"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                48
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_48"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                47
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_49"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                46
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_50"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                45
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_51"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                44
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_52"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                43
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_53"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                42
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_54"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                41
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_55"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                40
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_56",
+                    "unk2c": [
+                        "joint_64"
+                    ]
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                39,
+                95
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_57"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                38
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_58"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                37
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_59"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                36
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_60"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.74,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                35
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_61"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                34
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_62"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                33
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "joint_63"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0.75,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "burnEffect": "#hash_60386f257720d1e2",
+            "unk268": 250,
+            "hideBones": [
+                31,
+                32
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_frenetic.d3dbsp",
+    "baseName": "mp_frenetic",
+    "mins": "-59816.098 -40997.098 -20123.684",
+    "maxs": "43229.4 43047.54 12620.095",
+    "checksum": 0,
+    "streamerworld": "#hash_60e58780cdbe1ec7",
+    "lighting": "#maps/mp/mp_frenetic.d3dbsp",
+    "lutMaterial": "#lut_mp_frenetic",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_frenetic",
+        "#img_trim_lut_mp_frenetic",
+        "#img_trim_lut_mp_frenetic",
+        "#img_trim_lut_mp_frenetic"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 11,
+        "cookieArray": "#*cookie_array"
+    }
+}

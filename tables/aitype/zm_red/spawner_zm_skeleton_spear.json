@@ -17,13 +17,16 @@
     "character": [
         "#hash_261012a1e1a57f4"
     ],
+    "animMappingTables": [
+        "#hash_a50db61e6e6acd3"
+    ],
     "meleeWeapon": "#hash_cefc023f78e833b",
     "aimTable": "#soldier_aim",
     "footstepTable": "#skeletonfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#zm_skeleton.ai_bt",
+    "behaviorTree": "#hash_8ecaaed25a2f33d",
     "animStateMachine": "#hash_546bcdf6f7a77ede",
     "animSelectorTable": "#hash_546bd6f6f7a78e29",
     "traversalExtents": "#default_traversal_extents_zm",

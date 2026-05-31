@@ -66,9 +66,9 @@ function enable_additional_primary_weapon_perk_for_level()
 // Size: 0x106
 function additional_primary_weapon_precache()
 {
-    if ( isdefined( level.var_525672d4 ) )
+    if ( isdefined( level.additional_primary_weapon_precache_override_func ) )
     {
-        [[ level.var_525672d4 ]]();
+        [[ level.additional_primary_weapon_precache_override_func ]]();
         return;
     }
     
@@ -148,10 +148,10 @@ function take_additional_primary_weapon_perk( b_pause, str_perk, str_result, n_s
     
     if ( isdefined( self.var_2a62e678 ) && self hasweapon( self.var_2a62e678 ) )
     {
-        var_3ba4bf7d = self getweaponslistprimaries();
-        var_287a8343 = zm_utility::get_player_weapon_limit( self );
+        a_w_primaries = self getweaponslistprimaries();
+        n_weapon_limit = zm_utility::get_player_weapon_limit( self );
         
-        if ( var_3ba4bf7d.size > var_287a8343 )
+        if ( a_w_primaries.size > n_weapon_limit )
         {
             if ( zm_perks::function_e56d8ef4( #"specialty_additionalprimaryweapon" ) && !zm_trial_disable_perks::is_active() )
             {
@@ -165,7 +165,7 @@ function take_additional_primary_weapon_perk( b_pause, str_perk, str_result, n_s
                 self.var_dd1b11fe = undefined;
             }
             
-            if ( self.var_2a62e678 == self getcurrentweapon() && var_3ba4bf7d.size > 1 )
+            if ( self.var_2a62e678 == self getcurrentweapon() && a_w_primaries.size > 1 )
             {
                 self switchtoweapon();
             }
@@ -197,9 +197,9 @@ function function_1a9f3a91()
         wait 0.05;
     }
     
-    var_3ba4bf7d = self getweaponslistprimaries();
+    a_w_primaries = self getweaponslistprimaries();
     
-    if ( var_3ba4bf7d.size < level.additionalprimaryweapon_limit )
+    if ( a_w_primaries.size < level.additionalprimaryweapon_limit )
     {
         self.var_2a62e678 = undefined;
         self.var_64f51f65 = undefined;
@@ -215,13 +215,13 @@ function function_1a9f3a91()
             continue;
         }
         
-        if ( s_result.weapon !== level.weaponnone && !isinarray( var_3ba4bf7d, s_result.weapon ) )
+        if ( s_result.weapon !== level.weaponnone && !isinarray( a_w_primaries, s_result.weapon ) )
         {
             var_b13885a = self getweaponslistprimaries();
             
             if ( var_b13885a.size >= level.additionalprimaryweapon_limit )
             {
-                if ( !isdefined( self.var_2a62e678 ) && var_b13885a.size > var_3ba4bf7d.size )
+                if ( !isdefined( self.var_2a62e678 ) && var_b13885a.size > a_w_primaries.size )
                 {
                     self.var_2a62e678 = s_result.weapon;
                 }
@@ -236,7 +236,7 @@ function function_1a9f3a91()
                 }
             }
             
-            var_3ba4bf7d = var_b13885a;
+            a_w_primaries = var_b13885a;
         }
         
         if ( isdefined( self.var_2a62e678 ) && self.var_2a62e678 == self getcurrentweapon() )

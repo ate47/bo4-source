@@ -20,6 +20,9 @@
     "character": [
         "#hash_4febe8d7596e488e"
     ],
+    "animMappingTables": [
+        "#zod_robot_companion.ai_am"
+    ],
     "sideArm": "#pistol_standard_zm",
     "grenadeWeapon": "#frag_grenade_zm",
     "aimTable": "#robot_aim",
@@ -27,9 +30,9 @@
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#zm_mannequin_ally.ai_bt",
-    "animStateMachine": "#hash_2f25da9176864f6c",
-    "animSelectorTable": "#hash_2f25f391768679e7",
+    "behaviorTree": "#hash_1d89eba8365c59c1",
+    "animStateMachine": "#zod_robot_companion.ai_asm",
+    "animSelectorTable": "#zod_robot_companion.ai_ast",
     "aiFxBundle": "#c_54i_grunt_fx_table",
     "aiSettingsBundle": "#zm_mannequin_ally_settings",
     "ignoresDamageHitLocations": false,

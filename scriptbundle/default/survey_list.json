@@ -13,12 +13,12 @@
                 }
             ],
             "description": "localized17#hash_47cde512453830c5",
-            "hash_80ddf16e": 0,
+            "playlistrestricted": 0,
             "surveychance": 0.005,
             "devonly": 0,
             "randomizebuttonorder": 0,
             "title": "localized17#hash_1871a9be264ce732",
-            "hash_33ba47f0": 0,
+            "hash_660d268723518cdf:hash_33ba47f0": 0,
             "enabled": 0
         }
     ],
@@ -36,12 +36,12 @@
                 }
             ],
             "description": "localized17#hash_47cde512453830c5",
-            "hash_80ddf16e": 0,
+            "playlistrestricted": 0,
             "surveychance": 0.005,
             "devonly": 0,
             "randomizebuttonorder": 0,
             "title": "localized17#hash_1871a9be264ce732",
-            "hash_33ba47f0": 0,
+            "hash_660d268723518cdf:hash_33ba47f0": 0,
             "enabled": 0
         }
     ],
@@ -68,12 +68,12 @@
                 }
             ],
             "description": "localized17#hash_58e24cd38cd1d20d",
-            "hash_80ddf16e": 0,
+            "playlistrestricted": 0,
             "surveychance": 1,
             "devonly": 1,
             "randomizebuttonorder": 1,
             "title": "localized17#hash_7130895060cfded6",
-            "hash_33ba47f0": 0,
+            "hash_660d268723518cdf:hash_33ba47f0": 0,
             "enabled": 0
         }
     ],
@@ -91,12 +91,12 @@
                 }
             ],
             "description": "localized17#hash_47cde512453830c5",
-            "hash_80ddf16e": 0,
+            "playlistrestricted": 0,
             "surveychance": 0.005,
             "devonly": 0,
             "randomizebuttonorder": 0,
             "title": "localized17#hash_1871a9be264ce732",
-            "hash_33ba47f0": 0,
+            "hash_660d268723518cdf:hash_33ba47f0": 0,
             "enabled": 0
         }
     ],
@@ -114,12 +114,12 @@
                 }
             ],
             "description": "localized17#hash_47cde512453830c5",
-            "hash_80ddf16e": 0,
+            "playlistrestricted": 0,
             "surveychance": 0.005,
             "devonly": 0,
             "randomizebuttonorder": 0,
             "title": "localized17#hash_1871a9be264ce732",
-            "hash_33ba47f0": 501,
+            "hash_660d268723518cdf:hash_33ba47f0": 501,
             "enabled": 0
         }
     ],
@@ -146,12 +146,12 @@
                 }
             ],
             "description": "localized17#hash_a77d3d06eb40a65",
-            "hash_80ddf16e": 0,
+            "playlistrestricted": 0,
             "surveychance": 1,
             "devonly": 1,
             "randomizebuttonorder": 1,
             "title": "localized17#hash_380a0eaf6220607e",
-            "hash_33ba47f0": 0,
+            "hash_660d268723518cdf:hash_33ba47f0": 0,
             "enabled": 0
         }
     ],
@@ -178,12 +178,12 @@
                 }
             ],
             "description": "localized17#hash_2a88bdf212b6ff6d",
-            "hash_80ddf16e": 0,
+            "playlistrestricted": 0,
             "surveychance": 1,
             "devonly": 1,
             "randomizebuttonorder": 1,
             "title": "localized17#hash_7de72c11a18dc504",
-            "hash_33ba47f0": 0,
+            "hash_660d268723518cdf:hash_33ba47f0": 0,
             "enabled": 0
         }
     ],
@@ -210,12 +210,12 @@
                 }
             ],
             "description": "localized17#hash_4218a1d3b7a25bc9",
-            "hash_80ddf16e": 0,
+            "playlistrestricted": 0,
             "surveychance": 1,
             "devonly": 1,
             "randomizebuttonorder": 1,
             "title": "localized17#hash_4b5964d0ada3421e",
-            "hash_33ba47f0": 0,
+            "hash_660d268723518cdf:hash_33ba47f0": 0,
             "enabled": 0
         }
     ],

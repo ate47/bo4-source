@@ -608,8 +608,8 @@ function private function_92a54dac()
         
         if ( n_dist_sq < 262144 )
         {
-            var_2ed6f142 = self getweaponmuzzlepoint();
-            v_normal = vectornormalize( e_afterlife.origin - var_2ed6f142 );
+            v_view_pos = self getweaponmuzzlepoint();
+            v_normal = vectornormalize( e_afterlife.origin - v_view_pos );
             var_ee5864e0 = self getweaponforwarddir();
             n_dot = vectordot( var_ee5864e0, v_normal );
             
@@ -627,7 +627,7 @@ function private function_92a54dac()
 // Size: 0x240
 function private function_b18688c9()
 {
-    var_2ed6f142 = self getweaponmuzzlepoint();
+    v_view_pos = self getweaponmuzzlepoint();
     v_forward_angles = self getweaponforwarddir();
     
     if ( level.players.size == 1 )
@@ -644,7 +644,7 @@ function private function_b18688c9()
         
         n_dist_sq = distancesquared( e_player.origin, self.origin );
         
-        if ( n_dist_sq < 262144 && isdefined( e_player sightconetrace( var_2ed6f142, self, v_forward_angles, 25 ) ) && e_player sightconetrace( var_2ed6f142, self, v_forward_angles, 25 ) )
+        if ( n_dist_sq < 262144 && isdefined( e_player sightconetrace( v_view_pos, self, v_forward_angles, 25 ) ) && e_player sightconetrace( v_view_pos, self, v_forward_angles, 25 ) )
         {
             if ( e_player laststand::player_is_in_laststand() )
             {
@@ -737,8 +737,8 @@ function private function_d1cb7257( n_clientfield )
 // Size: 0x618
 function function_750abd36()
 {
-    var_2ed6f142 = self getweaponmuzzlepoint();
-    a_zombies = array::get_all_closest( var_2ed6f142, getaiteamarray( level.zombie_team ), undefined, undefined, 1200 );
+    v_view_pos = self getweaponmuzzlepoint();
+    a_zombies = array::get_all_closest( v_view_pos, getaiteamarray( level.zombie_team ), undefined, undefined, 1200 );
     
     if ( !a_zombies.size )
     {
@@ -752,7 +752,7 @@ function function_750abd36()
     var_60f35d29 = 9216;
     var_d6b10e11 = 9216;
     var_ee5864e0 = self getweaponforwarddir();
-    v_end_pos = var_2ed6f142 + vectorscale( var_ee5864e0, 1200 );
+    v_end_pos = v_view_pos + vectorscale( var_ee5864e0, 1200 );
     
     for ( i = 0; i < a_zombies.size ; i++ )
     {
@@ -762,21 +762,21 @@ function function_750abd36()
         }
         
         v_zombie_origin = a_zombies[ i ] getcentroid();
-        var_a155935 = distancesquared( var_2ed6f142, v_zombie_origin );
+        var_a155935 = distancesquared( v_view_pos, v_zombie_origin );
         
         if ( var_a155935 > var_c57defd6 )
         {
             return;
         }
         
-        normal = vectornormalize( v_zombie_origin - var_2ed6f142 );
+        normal = vectornormalize( v_zombie_origin - v_view_pos );
         dot = vectordot( var_ee5864e0, normal );
         
         if ( var_a155935 < var_d6b10e11 )
         {
             level.var_2f7aae6c[ level.var_2f7aae6c.size ] = a_zombies[ i ];
             dist_mult = 1;
-            fling_vec = vectornormalize( v_zombie_origin - var_2ed6f142 );
+            fling_vec = vectornormalize( v_zombie_origin - v_view_pos );
             fling_vec = ( fling_vec[ 0 ], fling_vec[ 1 ], abs( fling_vec[ 2 ] ) );
             fling_vec = vectorscale( fling_vec, 50 + 50 * dist_mult );
             level.var_8cd4a995[ level.var_8cd4a995.size ] = fling_vec;
@@ -799,14 +799,14 @@ function function_750abd36()
             continue;
         }
         
-        radial_origin = pointonsegmentnearesttopoint( var_2ed6f142, v_end_pos, v_zombie_origin );
+        radial_origin = pointonsegmentnearesttopoint( v_view_pos, v_end_pos, v_zombie_origin );
         
         if ( distancesquared( v_zombie_origin, radial_origin ) > var_74238e2c )
         {
             continue;
         }
         
-        if ( 0 == a_zombies[ i ] damageconetrace( var_2ed6f142, self ) )
+        if ( 0 == a_zombies[ i ] damageconetrace( v_view_pos, self ) )
         {
             continue;
         }
@@ -817,7 +817,7 @@ function function_750abd36()
         {
             level.var_2f7aae6c[ level.var_2f7aae6c.size ] = a_zombies[ i ];
             dist_mult = ( n_fling_range_sq - var_a155935 ) / n_fling_range_sq;
-            fling_vec = vectornormalize( v_zombie_origin - var_2ed6f142 );
+            fling_vec = vectornormalize( v_zombie_origin - v_view_pos );
             
             if ( 5000 < var_a155935 )
             {
@@ -1287,10 +1287,10 @@ function private function_81947c70()
 // Size: 0x300
 function function_f0b16c98( w_curr, n_dist_sq_max )
 {
-    var_2ed6f142 = self getweaponmuzzlepoint();
+    v_view_pos = self getweaponmuzzlepoint();
     v_forward_angles = self getweaponforwarddir();
     
-    if ( isalive( self.var_f1b20bef ) && isdefined( self.var_f1b20bef sightconetrace( var_2ed6f142, self, v_forward_angles, 25 ) ) && self.var_f1b20bef sightconetrace( var_2ed6f142, self, v_forward_angles, 25 ) )
+    if ( isalive( self.var_f1b20bef ) && isdefined( self.var_f1b20bef sightconetrace( v_view_pos, self, v_forward_angles, 25 ) ) && self.var_f1b20bef sightconetrace( v_view_pos, self, v_forward_angles, 25 ) )
     {
         return self.var_f1b20bef;
     }
@@ -1301,7 +1301,7 @@ function function_f0b16c98( w_curr, n_dist_sq_max )
         
         if ( n_dist_sq < n_dist_sq_max )
         {
-            if ( isdefined( level.var_68fa1bc sightconetrace( var_2ed6f142, self, v_forward_angles, 25 ) ) && level.var_68fa1bc sightconetrace( var_2ed6f142, self, v_forward_angles, 25 ) )
+            if ( isdefined( level.var_68fa1bc sightconetrace( v_view_pos, self, v_forward_angles, 25 ) ) && level.var_68fa1bc sightconetrace( v_view_pos, self, v_forward_angles, 25 ) )
             {
                 return level.var_68fa1bc;
             }
@@ -1309,7 +1309,7 @@ function function_f0b16c98( w_curr, n_dist_sq_max )
     }
     
     var_c581a3b2 = getaiteamarray( level.zombie_team );
-    a_ai_zombies = arraysortclosest( var_c581a3b2, var_2ed6f142, 12 );
+    a_ai_zombies = arraysortclosest( var_c581a3b2, v_view_pos, 12 );
     
     for ( i = 0; i < a_ai_zombies.size ; i++ )
     {
@@ -1317,7 +1317,7 @@ function function_f0b16c98( w_curr, n_dist_sq_max )
         
         if ( n_dist_sq < n_dist_sq_max )
         {
-            if ( isdefined( a_ai_zombies[ i ] sightconetrace( var_2ed6f142, self, v_forward_angles, 25 ) && isdefined( a_ai_zombies[ i ].allowdeath ) && a_ai_zombies[ i ].allowdeath ) && a_ai_zombies[ i ] sightconetrace( var_2ed6f142, self, v_forward_angles, 25 ) && isdefined( a_ai_zombies[ i ].allowdeath ) && a_ai_zombies[ i ].allowdeath )
+            if ( isdefined( a_ai_zombies[ i ] sightconetrace( v_view_pos, self, v_forward_angles, 25 ) && isdefined( a_ai_zombies[ i ].allowdeath ) && a_ai_zombies[ i ].allowdeath ) && a_ai_zombies[ i ] sightconetrace( v_view_pos, self, v_forward_angles, 25 ) && isdefined( a_ai_zombies[ i ].allowdeath ) && a_ai_zombies[ i ].allowdeath )
             {
                 return a_ai_zombies[ i ];
             }
@@ -1616,7 +1616,7 @@ function function_d0b3a2c6()
 {
     self endon( #"death" );
     
-    if ( isdefined( self.stub.blueprint ) && isdefined( self.stub.blueprint.var_54a97edd ) && self.stub.blueprint.var_54a97edd === level.var_d7e67022 )
+    if ( isdefined( self.stub.blueprint ) && isdefined( self.stub.blueprint.w_result ) && self.stub.blueprint.w_result === level.var_d7e67022 )
     {
         if ( isdefined( self.stub.model ) )
         {
@@ -1654,7 +1654,7 @@ function function_9693e041( player )
     
     if ( player hasweapon( level.var_637136f3 ) )
     {
-        if ( isdefined( self.blueprint.var_54a97edd.isriotshield ) && self.blueprint.var_54a97edd.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
+        if ( isdefined( self.blueprint.w_result.isriotshield ) && self.blueprint.w_result.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
         {
             self.cost = self zm_crafting::function_ceac3bf9( player, 1 );
             self.hint_string = zm_utility::function_d6046228( #"hash_35387f35bd87b96b", #"hash_3ee2e0100fefb461" );
@@ -1706,7 +1706,7 @@ function function_df8ce6e2( player )
     
     if ( player zm_crafting::function_2d53738e( w_shield_upgraded ) )
     {
-        if ( isdefined( self.stub.blueprint.var_54a97edd.isriotshield ) && self.stub.blueprint.var_54a97edd.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
+        if ( isdefined( self.stub.blueprint.w_result.isriotshield ) && self.stub.blueprint.w_result.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
         {
             var_d97673ff = 1;
         }
@@ -1766,7 +1766,7 @@ function function_df8ce6e2( player )
         player thread zm_weapons::weapon_give( w_shield_upgraded );
     }
     
-    player notify( #"hash_77d44943fb143b18", { #weapon:self.stub.blueprint.var_54a97edd } );
+    player notify( #"hash_77d44943fb143b18", { #weapon:self.stub.blueprint.w_result } );
     return false;
 }
 

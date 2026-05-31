@@ -6,11 +6,11 @@
     "team": "TEAM_ALLIES",
     "species": "#human",
     "archeType": "#civilian",
-    "scoreType": "#hash_75bd31c6a2b41518",
+    "scoreType": "#human_ar",
     "movementType": "#civilian",
     "spawnInfluencers": [
-        "#hash_1d35c27ce5c628ec",
-        "#hash_74915792bd5cfefd"
+        "#human_friendly",
+        "#human_enemy"
     ],
     "compassIcon": "#t7_hud_waypoints_compassping_friendly_mp",
     "typeSuffix": "_assault",
@@ -18,13 +18,16 @@
     "character": [
         "#hash_4981ee148d957a62"
     ],
+    "animMappingTables": [
+        "#hash_2d792a60c628fdc"
+    ],
     "grenadeWeapon": "#molotov_fire_cp",
     "aimTable": "#soldier_aim",
-    "footstepTable": "#hash_b008da66d91b8ad7",
+    "footstepTable": "#defaultnpcfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#zm_npc_orange.ai_bt",
+    "behaviorTree": "#hash_2cd79a60c5a10dc",
     "animStateMachine": "#hash_36bbe5270b5d4a29",
     "animSelectorTable": "#hash_36bbdc270b5d3ade",
     "traversalExtents": "#default_traversal_extents_zm",

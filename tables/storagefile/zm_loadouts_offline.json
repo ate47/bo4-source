@@ -1,5 +1,16 @@
 {
-    "name": "#zm_loadouts_offline",
     "nameStr": "zm_loadouts_offline",
-    "ddl": "#gamedata/ddl/generated/zm_loadouts_offline.ddl"
+    "name": "#zm_loadouts_offline",
+    "ddlPath": "#gamedata/ddl/generated/zm_loadouts_offline.ddl",
+    "files": [
+        {
+            "fileName": "zm_loadouts_offline"
+        }
+    ],
+    "size": 67100,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

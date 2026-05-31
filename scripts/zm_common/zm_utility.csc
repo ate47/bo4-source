@@ -674,11 +674,11 @@ function function_c599ed65()
 // Params 2
 // Checksum 0xe8a1999c, Offset: 0x1ab8
 // Size: 0x52
-function function_beed5764( var_ee6bcd51, str_fx )
+function function_beed5764( str_rob, str_fx )
 {
-    if ( isdefined( var_ee6bcd51 ) )
+    if ( isdefined( str_rob ) )
     {
-        level.var_12b59dee = var_ee6bcd51;
+        level.var_12b59dee = str_rob;
     }
     
     if ( isdefined( str_fx ) )
@@ -697,11 +697,11 @@ function function_704f7c0e( localclientnum )
     
     if ( isdefined( self.var_3234aaa4 ) )
     {
-        var_ee6bcd51 = self.var_3234aaa4;
+        str_rob = self.var_3234aaa4;
     }
     else
     {
-        var_ee6bcd51 = level.var_12b59dee;
+        str_rob = level.var_12b59dee;
     }
     
     if ( isdefined( self.var_3ec34470 ) )
@@ -713,17 +713,17 @@ function function_704f7c0e( localclientnum )
         str_fx = level._effect[ #"eye_glow" ];
     }
     
-    self function_fe127aaf( localclientnum, var_ee6bcd51, str_fx );
+    self function_fe127aaf( localclientnum, str_rob, str_fx );
 }
 
 // Namespace zm_utility/zm_utility
 // Params 3
 // Checksum 0x435e07e1, Offset: 0x1bd0
 // Size: 0x54
-function function_3a020b0f( localclientnum, var_ee6bcd51, str_fx )
+function function_3a020b0f( localclientnum, str_rob, str_fx )
 {
     self good_barricade_damaged( localclientnum );
-    self function_fe127aaf( localclientnum, var_ee6bcd51, str_fx );
+    self function_fe127aaf( localclientnum, str_rob, str_fx );
 }
 
 // Namespace zm_utility/zm_utility
@@ -749,12 +749,12 @@ function good_barricade_damaged( localclientnum )
 // Params 3, eflags: 0x4
 // Checksum 0xc347abf8, Offset: 0x1cb8
 // Size: 0xc2
-function private function_fe127aaf( localclientnum, var_ee6bcd51, str_fx )
+function private function_fe127aaf( localclientnum, str_rob, str_fx )
 {
-    if ( isdefined( var_ee6bcd51 ) )
+    if ( isdefined( str_rob ) )
     {
-        self playrenderoverridebundle( var_ee6bcd51, "j_head" );
-        self.var_12b59dee = var_ee6bcd51;
+        self playrenderoverridebundle( str_rob, "j_head" );
+        self.var_12b59dee = str_rob;
     }
     
     if ( isdefined( str_fx ) )

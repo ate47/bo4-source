@@ -1,0 +1,11 @@
+{
+    "name": "#prc_mp_slayer",
+    "displayName": "#menu/slayer_caps",
+    "description": "#menu/slayer_desc",
+    "icon": "#hash_59570c5f18931ab6",
+    "sortOrder": 0,
+    "bundle": {
+        "iconbig": "image#hash_51202badea0c3c13",
+        "enabled": 1
+    }
+}

@@ -6,7 +6,7 @@
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "cdp_taacom_kls_sentrygun",
-    "firewallbeinghacked": "#hash_75a5bdbf8055f031",
+    "firewallbeinghacked": "#being_hacked_fw",
     "timeout": "#timeout",
     "firewallhacked": "#hacked_fw",
     "hacked": "#hacked"

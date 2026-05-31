@@ -2,8 +2,8 @@
     "name": "#hash_7507f9c3c526368c",
     "baseWeapon": "#hash_492e530f9862f6cc",
     "displayname": "#hash_4e6ad0a0aed9c99",
-    "xhash_70": "#hero_minigun_t8_lv1",
-    "streamkey": "#hash_3170be53c39258be",
+    "weapon70": "#hero_minigun_t8_lv1",
+    "soundbank": "#hash_3170be53c39258be",
     "scrstr_8c8": [
         "tag_handle_upgrade",
         "tag_handle_rotate_animate",
@@ -18,27 +18,44 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
     "sound90": "#hash_28da5e9c8c6fdb90",
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
     "projexplosionsound": "#hash_4e25b7e8e6211763",
     "tunables1": "#hash_25fcb25802a1553f",
     "cacWeaponXCam": "#hash_9c4ea39463d14ac",
+    "statusEffects": [
+        {
+            "effect": "#hash_a608bf886a137e8e",
+            "statusEffects:unk8": "[ll0x0=1f400000064][f0x0=1.4013e-43][f0x4=7.00649e-43] 64 00 00 00 f4 01 00 00",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        }
+    ],
     "#hash_2e4a8800": "#hero_pineapplegun_scoreevents",
     "projectilemodel": "#wpn_t8_zm_minigun_projectile",
     "image_e90": "#t7_icon_weapon_hero_battery_kf",
@@ -53,6 +70,6 @@
     "normalImpactFX": "#hash_17ceb54c38c1afe4",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
-    "normalImpactSounds": "#hash_a43498ac40a58702",
-    "bounceImpactSounds": "#hash_ebde0439d1eb051d"
+    "normalImpactSounds": "#grenade_pineapple_explode_material",
+    "bounceImpactSounds": "#grenade_pineapple_bounce"
 }

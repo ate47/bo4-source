@@ -30,12 +30,12 @@ function __init__()
     function_e9e03d6f( #"default", &handle_default );
     function_e9e03d6f( #"in_combat", &function_567289f );
     function_e9e03d6f( #"hash_156be21f04d01350", &function_d2161ccd );
-    function_e9e03d6f( #"hash_c0bcf7fa0d58e5", &function_b94f5770 );
+    function_e9e03d6f( #"not_in_combat", &function_b94f5770 );
     function_e9e03d6f( #"revive_player", &function_8adaa75f );
     function_e9e03d6f( #"gameobject_interact", &function_daab6847 );
     function_e9e03d6f( #"hash_797d652ff338b7d4", &function_90ff35fc );
     function_e9e03d6f( #"visible_enemy", &handle_visible_enemy );
-    function_e9e03d6f( #"hash_608fe62234892b49", &function_7ed3ada6 );
+    function_e9e03d6f( #"find_best_cover", &function_7ed3ada6 );
     function_aa8c6854( #"goal", &get_goal_center );
     function_aa8c6854( #"gameobject_interact", &function_4fa26afe );
     function_aa8c6854( #"revive_target", &function_f94e1790 );
@@ -562,7 +562,7 @@ function function_22d4d2d( params, tacbundle )
     }
     
     /#
-        self bot::record_text( function_9e72a96( params.name ), ( 1, 1, 1 ), "<dev string:x4e>" );
+        self bot::record_text( hashtostring( params.name ), ( 1, 1, 1 ), "<dev string:x4e>" );
     #/
     
     handled = self [[ func ]]( params, tacbundle );
@@ -580,7 +580,7 @@ function function_795a469( name )
     if ( !isdefined( func ) )
     {
         /#
-            self botprinterror( "<dev string:x138>" + function_9e72a96( name ) );
+            self botprinterror( "<dev string:x138>" + hashtostring( name ) );
         #/
         
         return undefined;
@@ -609,7 +609,7 @@ function handle_default( params, tacbundle )
     if ( !isdefined( center ) )
     {
         /#
-            self bot::record_text( "<dev string:x15b>" + function_9e72a96( params.center ), ( 1, 0, 0 ), "<dev string:x4e>" );
+            self bot::record_text( "<dev string:x15b>" + hashtostring( params.center ), ( 1, 0, 0 ), "<dev string:x4e>" );
         #/
         
         return 0;
@@ -646,8 +646,8 @@ function handle_default( params, tacbundle )
         else
         {
             /#
-                self bot::record_text( "<dev string:x17b>" + function_9e72a96( params.center ), ( 1, 0, 0 ), "<dev string:x4e>" );
-                self botprinterror( function_9e72a96( params.name ) + "<dev string:x195>" + params.center );
+                self bot::record_text( "<dev string:x17b>" + hashtostring( params.center ), ( 1, 0, 0 ), "<dev string:x4e>" );
+                self botprinterror( hashtostring( params.name ) + "<dev string:x195>" + params.center );
             #/
             
             return 0;
@@ -1106,7 +1106,7 @@ function function_d0cf287b( params, tacbundle )
     if ( !isdefined( center ) )
     {
         /#
-            self bot::record_text( "<dev string:x15b>" + function_9e72a96( params.center ), ( 1, 0, 0 ), "<dev string:x4e>" );
+            self bot::record_text( "<dev string:x15b>" + hashtostring( params.center ), ( 1, 0, 0 ), "<dev string:x4e>" );
         #/
         
         return false;
@@ -1131,8 +1131,8 @@ function function_d0cf287b( params, tacbundle )
     if ( !isdefined( position ) )
     {
         /#
-            self bot::record_text( "<dev string:x17b>" + function_9e72a96( params.center ), ( 1, 0, 0 ), "<dev string:x4e>" );
-            self botprinterror( function_9e72a96( params.name ) + "<dev string:x195>" + params.center );
+            self bot::record_text( "<dev string:x17b>" + hashtostring( params.center ), ( 1, 0, 0 ), "<dev string:x4e>" );
+            self botprinterror( hashtostring( params.name ) + "<dev string:x195>" + params.center );
         #/
         
         return false;
@@ -1215,10 +1215,10 @@ function function_b33e4e67( center, fillpos, enemy, querylist )
         [[ level.var_d1a4558d ]]->waitinqueue( self );
         
         /#
-            self bot::record_text( "<dev string:x1e3>" + function_9e72a96( query.name ), ( 1, 1, 1 ), "<dev string:x4e>" );
+            self bot::record_text( "<dev string:x1e3>" + hashtostring( query.name ), ( 1, 1, 1 ), "<dev string:x4e>" );
         #/
         
-        if ( !isdefined( enemy ) || function_3132f113( enemy ) )
+        if ( !isdefined( enemy ) || isremovedentity( enemy ) )
         {
             enemy = lastenemypos;
         }

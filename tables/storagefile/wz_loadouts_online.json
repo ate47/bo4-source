@@ -1,5 +1,16 @@
 {
-    "name": "#wz_loadouts_online",
     "nameStr": "wz_loadouts_online",
-    "ddl": "#gamedata/ddl/generated/wz_loadouts.ddl"
+    "name": "#wz_loadouts_online",
+    "ddlPath": "#gamedata/ddl/generated/wz_loadouts.ddl",
+    "files": [
+        {
+            "fileName": "wz_loadouts_online"
+        }
+    ],
+    "size": 96703,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

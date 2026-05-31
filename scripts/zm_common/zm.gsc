@@ -724,7 +724,7 @@ function init_custom_ai_type()
 // Size: 0x74
 function zombiemode_melee_miss()
 {
-    if ( isdefined( self.enemy.var_e764ac36 ) )
+    if ( isdefined( self.enemy.curr_pay_turret ) )
     {
         self.enemy dodamage( getdvarint( #"ai_meleedamage", 0 ), self.origin, self, self, "none", "melee" );
     }
@@ -996,14 +996,14 @@ function function_268ef952()
             break;
     }
     
-    foreach ( var_c9db62d5 in array( "zomMoveSpeedMult", "zomBaseHealth", "zomHealthIncrease", "zomHealthIncreaseMult", "zomSpawnDelay", "zomNewRunnerInt", "zomMaxCount", "zomMaxCountPerPlayer", "zomCountScalar", "zomCountSoloMult", "zomPointScalar", "plyBaseHealth", "plyPenaltyNoRevive", "plyPenaltyDeath", "plyPenaltyDowned", "plyPenaltyDownedPointStep", "plySelfReviveCountCoop", "plySelfReviveCountSolo", "zomMixedStart", "zomMixedStartSolo", "zomCatalystStart", "zomCatalystStartSolo", "zomStokerStart", "zomStokerStartSolo", "plyShieldDamageMult", "plyRetainWeapons", "plyPerksDecay", "plyHealthRegenRate", "plyHealthRegenDelay", "plyXPModfier", "plyHighlightCraftables" ) )
+    foreach ( str_setting in array( "zomMoveSpeedMult", "zomBaseHealth", "zomHealthIncrease", "zomHealthIncreaseMult", "zomSpawnDelay", "zomNewRunnerInt", "zomMaxCount", "zomMaxCountPerPlayer", "zomCountScalar", "zomCountSoloMult", "zomPointScalar", "plyBaseHealth", "plyPenaltyNoRevive", "plyPenaltyDeath", "plyPenaltyDowned", "plyPenaltyDownedPointStep", "plySelfReviveCountCoop", "plySelfReviveCountSolo", "zomMixedStart", "zomMixedStartSolo", "zomCatalystStart", "zomCatalystStartSolo", "zomStokerStart", "zomStokerStartSolo", "plyShieldDamageMult", "plyRetainWeapons", "plyPerksDecay", "plyHealthRegenRate", "plyHealthRegenDelay", "plyXPModfier", "plyHighlightCraftables" ) )
     {
-        if ( !isdefined( zmdifficultysettings.( var_c9db62d5 + str_suffix ) ) )
+        if ( !isdefined( zmdifficultysettings.( str_setting + str_suffix ) ) )
         {
-            zmdifficultysettings.( var_c9db62d5 + str_suffix ) = 0;
+            zmdifficultysettings.( str_setting + str_suffix ) = 0;
         }
         
-        var_c6ceb446[ var_c9db62d5 ] = zmdifficultysettings.( var_c9db62d5 + str_suffix );
+        var_c6ceb446[ str_setting ] = zmdifficultysettings.( str_setting + str_suffix );
     }
     
     return var_c6ceb446;
@@ -2055,7 +2055,7 @@ function end_game()
             players[ i ] recordplayerdeathzombies();
             players[ i ] zm_stats::increment_player_stat( "deaths" );
             players[ i ] zm_stats::increment_client_stat( "deaths" );
-            players[ i ] zm_stats::forced_attachment( "boas_deaths" );
+            players[ i ] zm_stats::function_8f10788e( "boas_deaths" );
         }
     }
     
@@ -2110,9 +2110,9 @@ function end_game()
     util::preload_frontend();
     players = getplayers();
     
-    if ( isdefined( level.var_77805e8 ) )
+    if ( isdefined( level.custom_end_screen ) )
     {
-        level [[ level.var_77805e8 ]]();
+        level [[ level.custom_end_screen ]]();
     }
     
     for ( i = 0; i < players.size ; i++ )
@@ -2842,7 +2842,7 @@ function function_a2b54d42()
                 continue;
             }
             
-            outputstring += function_9e72a96( perk.alias ) + "<dev string:x19c>" + perk.alias + "<dev string:x1a0>";
+            outputstring += hashtostring( perk.alias ) + "<dev string:x19c>" + perk.alias + "<dev string:x1a0>";
         }
         
         outputstring += "<dev string:x1c7>";

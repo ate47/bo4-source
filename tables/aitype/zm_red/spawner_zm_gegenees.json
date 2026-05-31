@@ -17,13 +17,16 @@
     "character": [
         "#hash_4741c11750ad3c8"
     ],
+    "animMappingTables": [
+        "#hash_554cf02499a86d6b"
+    ],
     "meleeWeapon": "#gegenees_melee",
     "aimTable": "#soldier_aim",
     "footstepTable": "#hash_27d4403c667002ff",
     "footstepScriptCallback": true,
     "footstepFXTable1": "#zm_gegenees_footstep",
     "footstepFXTable2": "#zm_gegenees_footstep",
-    "behaviorTree": "#zm_gegenees.ai_bt",
+    "behaviorTree": "#hash_5557092499b0ec6b",
     "animStateMachine": "#hash_1a593031195a9488",
     "animSelectorTable": "#hash_1a591931195a6d73",
     "traversalExtents": "#default_traversal_extents_zm",

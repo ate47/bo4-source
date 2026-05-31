@@ -29,7 +29,7 @@ function __init__()
 {
     level.w_thundergun = getweapon( #"thundergun" );
     level.w_thundergun_upgraded = getweapon( #"thundergun_upgraded" );
-    clientfield::register( "actor", "" + #"hash_7549405bcfcbcfb", 24000, 1, "counter" );
+    clientfield::register( "actor", "" + #"thundergun_impact_fx", 24000, 1, "counter" );
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
@@ -366,9 +366,9 @@ function thundergun_fling_zombie( player, fling_vec, index )
         return;
     }
     
-    if ( isdefined( self.var_4462c95e ) )
+    if ( isdefined( self.thundergun_fling_func ) )
     {
-        self [[ self.var_4462c95e ]]( player );
+        self [[ self.thundergun_fling_func ]]( player );
         return;
     }
     
@@ -387,7 +387,7 @@ function thundergun_fling_zombie( player, fling_vec, index )
         self.thundergun_death = 1;
     }
     
-    self clientfield::increment( "" + #"hash_7549405bcfcbcfb", 1 );
+    self clientfield::increment( "" + #"thundergun_impact_fx", 1 );
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
@@ -496,7 +496,7 @@ function thundergun_knockdown_zombie( player, gib )
     if ( isdefined( self.thundergun_knockdown_func ) )
     {
         self [[ self.thundergun_knockdown_func ]]( player, gib );
-        self clientfield::increment( "" + #"hash_7549405bcfcbcfb", 1 );
+        self clientfield::increment( "" + #"thundergun_impact_fx", 1 );
     }
 }
 

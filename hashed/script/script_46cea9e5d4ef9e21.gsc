@@ -47,9 +47,9 @@ function function_fb0bd6b9()
     level flag::init( #"hash_795bde5570f8b67c" );
     var_5554a9f4 = getent( "nixie_door_trigger", "targetname" );
     var_5554a9f4 thread _goodlighting_hangar_a();
-    var_679f0ee5 = struct::get_array( "nixie_tubes", "script_noteworthy" );
+    a_s_nixie_tubes = struct::get_array( "nixie_tubes", "script_noteworthy" );
     
-    foreach ( s_tube in var_679f0ee5 )
+    foreach ( s_tube in a_s_nixie_tubes )
     {
         mdl_tube = util::spawn_model( #"p8_zm_esc_nixie_tubes", s_tube.origin, s_tube.angles );
         mdl_tube.script_noteworthy = "blast_attack_interactables";
@@ -65,7 +65,7 @@ function function_fb0bd6b9()
 function _goodlighting_hangar_a()
 {
     self sethintstring( #"hash_2f5a14e8bf175422" );
-    self.var_c6613c99 = 0;
+    self.b_can_open = 0;
     level flag::wait_till( #"hash_7039457b1cc827de" );
     
     if ( function_8b1a219a() )
@@ -166,10 +166,10 @@ function function_97f8efcd()
         }
         
         s_target = struct::get( s_tube.target );
-        var_68c9a993 = util::spawn_model( #"p8_zm_esc_nixie_tubes", s_target.origin, s_target.angles );
-        s_tube.mdl_tube.var_68c9a993 = var_68c9a993;
-        var_68c9a993 ghost();
-        var_68c9a993 notsolid();
+        mdl_fake_tube = util::spawn_model( #"p8_zm_esc_nixie_tubes", s_target.origin, s_target.angles );
+        s_tube.mdl_tube.mdl_fake_tube = mdl_fake_tube;
+        mdl_fake_tube ghost();
+        mdl_fake_tube notsolid();
     }
     
     wait 0.75;
@@ -224,9 +224,9 @@ function function_172e72fa()
             s_tube thread function_d6ae109c( 0 );
         }
         
-        if ( isdefined( s_tube.mdl_tube.var_68c9a993 ) )
+        if ( isdefined( s_tube.mdl_tube.mdl_fake_tube ) )
         {
-            s_tube.mdl_tube.var_68c9a993 delete();
+            s_tube.mdl_tube.mdl_fake_tube delete();
         }
     }
 }
@@ -302,14 +302,14 @@ function function_d6ae109c( b_turn_on )
 // Size: 0x12c
 function function_152c339e()
 {
-    var_18b64c03 = struct::get( "nixie_tube_2" );
-    var_18b64c03.unitrigger_stub = var_18b64c03 zm_unitrigger::create( &function_bad2e505, ( 128, 64, 96 ), &function_290d172d );
-    var_18b64c03.unitrigger_stub.cursor_hint = "HINT_NOICON";
-    var_18b64c03.unitrigger_stub.targetname = var_18b64c03.script_string;
-    var_18b64c03.unitrigger_stub.s_tube = var_18b64c03;
-    v_pos = var_18b64c03.origin + anglestoright( var_18b64c03.angles ) * 24;
-    var_18b64c03.unitrigger_stub.origin = v_pos;
-    zm_unitrigger::unitrigger_force_per_player_triggers( var_18b64c03.unitrigger_stub, 1 );
+    s_nixie_tube = struct::get( "nixie_tube_2" );
+    s_nixie_tube.unitrigger_stub = s_nixie_tube zm_unitrigger::create( &function_bad2e505, ( 128, 64, 96 ), &function_290d172d );
+    s_nixie_tube.unitrigger_stub.cursor_hint = "HINT_NOICON";
+    s_nixie_tube.unitrigger_stub.targetname = s_nixie_tube.script_string;
+    s_nixie_tube.unitrigger_stub.s_tube = s_nixie_tube;
+    v_pos = s_nixie_tube.origin + anglestoright( s_nixie_tube.angles ) * 24;
+    s_nixie_tube.unitrigger_stub.origin = v_pos;
+    zm_unitrigger::unitrigger_force_per_player_triggers( s_nixie_tube.unitrigger_stub, 1 );
 }
 
 // Namespace namespace_1063645/namespace_fdf9d496
@@ -360,9 +360,9 @@ function function_290d172d()
         {
             var_dc40fc85 = s_tube.mdl_tube sightconetrace( s_result.activator getweaponmuzzlepoint(), s_result.activator, s_result.activator getweaponforwarddir(), 15 );
             
-            if ( isdefined( s_tube.mdl_tube.var_68c9a993 ) )
+            if ( isdefined( s_tube.mdl_tube.mdl_fake_tube ) )
             {
-                var_6c48173b = s_tube.mdl_tube.var_68c9a993 sightconetrace( s_result.activator getweaponmuzzlepoint(), s_result.activator, s_result.activator getweaponforwarddir(), 20 );
+                var_6c48173b = s_tube.mdl_tube.mdl_fake_tube sightconetrace( s_result.activator getweaponmuzzlepoint(), s_result.activator, s_result.activator getweaponforwarddir(), 20 );
             }
             
             if ( isdefined( var_dc40fc85 ) && var_dc40fc85 || isdefined( var_6c48173b ) && var_6c48173b )

@@ -257,7 +257,7 @@ function round_spawn()
 // Params 5
 // Checksum 0x3969a656, Offset: 0x9e8
 // Size: 0x2fc
-function function_47a88a0c( n_to_spawn = 1, var_1fafa3fc, b_force_spawn = 0, var_eb3a8721, n_round )
+function function_47a88a0c( n_to_spawn = 1, func_on_spawned, b_force_spawn = 0, var_eb3a8721, n_round )
 {
     n_spawned = 0;
     
@@ -269,7 +269,7 @@ function function_47a88a0c( n_to_spawn = 1, var_1fafa3fc, b_force_spawn = 0, var
         }
         
         players = getplayers();
-        var_46d2ec35 = get_favorite_enemy();
+        e_favorite_enemy = get_favorite_enemy();
         
         if ( isdefined( var_eb3a8721 ) )
         {
@@ -306,9 +306,9 @@ function function_47a88a0c( n_to_spawn = 1, var_1fafa3fc, b_force_spawn = 0, var
                 ai.var_cf3ac201 = 1;
             }
             
-            if ( isdefined( var_46d2ec35 ) )
+            if ( isdefined( e_favorite_enemy ) )
             {
-                ai.favoriteenemy = var_46d2ec35;
+                ai.favoriteenemy = e_favorite_enemy;
                 ai.favoriteenemy.hunted_by++;
             }
             
@@ -319,9 +319,9 @@ function function_47a88a0c( n_to_spawn = 1, var_1fafa3fc, b_force_spawn = 0, var
                 ai thread [[ level.var_7e40409b ]]( s_spawn_loc );
             }
             
-            if ( isdefined( var_1fafa3fc ) )
+            if ( isdefined( func_on_spawned ) )
             {
-                ai thread [[ var_1fafa3fc ]]();
+                ai thread [[ func_on_spawned ]]();
             }
             
             ai playsound( #"hash_63299a75a97f9678" );

@@ -51,7 +51,7 @@ function init()
     level thread function_33e9442f();
     level thread function_31c7123b();
     level thread function_d8a7606();
-    level thread function_982029e3();
+    level thread init_spinning_trap();
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
@@ -128,7 +128,7 @@ function function_31c7123b()
     s_trap._trap_type = "acid";
     s_trap.e_volume = getent( s_trap.target, "targetname" );
     s_trap.e_volume._trap_type = "acid";
-    s_trap.var_28ea1870 = struct::get_array( s_trap.target3, "targetname" );
+    s_trap.a_s_trap_fx = struct::get_array( s_trap.target3, "targetname" );
     s_trap.a_s_buttons = struct::get_array( s_trap.target2, "targetname" );
     s_trap.a_e_lights = getentarray( s_trap.target4, "targetname" );
     s_trap.a_s_panels = struct::get_array( s_trap.target5, "targetname" );
@@ -302,24 +302,24 @@ function function_a77f3804( e_activator, e_volume )
 // Params 1
 // Checksum 0xa2943acb, Offset: 0x15b0
 // Size: 0x170
-function shower_trap_fx( var_9d9f02b4 )
+function shower_trap_fx( b_is_on )
 {
-    if ( var_9d9f02b4 )
+    if ( b_is_on )
     {
-        foreach ( var_9e659454 in self.var_28ea1870 )
+        foreach ( s_trap_fx in self.a_s_trap_fx )
         {
-            var_9e659454.mdl_fx = util::spawn_model( "tag_origin", var_9e659454.origin, var_9e659454.angles );
-            var_9e659454.mdl_fx clientfield::set( "shower_trap_fx", 1 );
+            s_trap_fx.mdl_fx = util::spawn_model( "tag_origin", s_trap_fx.origin, s_trap_fx.angles );
+            s_trap_fx.mdl_fx clientfield::set( "shower_trap_fx", 1 );
         }
         
         return;
     }
     
-    foreach ( var_9e659454 in self.var_28ea1870 )
+    foreach ( s_trap_fx in self.a_s_trap_fx )
     {
-        var_9e659454.mdl_fx clientfield::set( "shower_trap_fx", 0 );
+        s_trap_fx.mdl_fx clientfield::set( "shower_trap_fx", 0 );
         waitframe( 1 );
-        var_9e659454.mdl_fx delete();
+        s_trap_fx.mdl_fx delete();
     }
 }
 
@@ -428,7 +428,7 @@ function function_d8a7606()
     s_trap._trap_type = "fire";
     s_trap.e_volume = getent( s_trap.target, "targetname" );
     s_trap.e_volume._trap_type = "fire";
-    s_trap.var_28ea1870 = struct::get_array( s_trap.target3, "targetname" );
+    s_trap.a_s_trap_fx = struct::get_array( s_trap.target3, "targetname" );
     s_trap.a_s_buttons = struct::get_array( s_trap.target2, "targetname" );
     s_trap.a_e_lights = getentarray( s_trap.target4, "targetname" );
     s_trap.a_s_panels = struct::get_array( s_trap.target5, "targetname" );
@@ -623,24 +623,24 @@ function function_11e5b2ee( e_activator, e_volume )
 // Params 1
 // Checksum 0x41976f3a, Offset: 0x2658
 // Size: 0x170
-function fire_trap_fx( var_9d9f02b4 )
+function fire_trap_fx( b_is_on )
 {
-    if ( var_9d9f02b4 )
+    if ( b_is_on )
     {
-        foreach ( var_9e659454 in self.var_28ea1870 )
+        foreach ( s_trap_fx in self.a_s_trap_fx )
         {
-            var_9e659454.mdl_fx = util::spawn_model( "tag_origin", var_9e659454.origin, var_9e659454.angles );
-            var_9e659454.mdl_fx clientfield::set( "fire_trap_fx", 1 );
+            s_trap_fx.mdl_fx = util::spawn_model( "tag_origin", s_trap_fx.origin, s_trap_fx.angles );
+            s_trap_fx.mdl_fx clientfield::set( "fire_trap_fx", 1 );
         }
         
         return;
     }
     
-    foreach ( var_9e659454 in self.var_28ea1870 )
+    foreach ( s_trap_fx in self.a_s_trap_fx )
     {
-        var_9e659454.mdl_fx clientfield::set( "fire_trap_fx", 0 );
+        s_trap_fx.mdl_fx clientfield::set( "fire_trap_fx", 0 );
         waitframe( 1 );
-        var_9e659454.mdl_fx delete();
+        s_trap_fx.mdl_fx delete();
     }
 }
 
@@ -716,7 +716,7 @@ function function_867c70bf()
 // Params 0
 // Checksum 0xf85c33c5, Offset: 0x2a68
 // Size: 0x2b8
-function function_982029e3()
+function init_spinning_trap()
 {
     level.s_spinning_trap = struct::get( "s_spinning_trap", "targetname" );
     s_trap = level.s_spinning_trap;

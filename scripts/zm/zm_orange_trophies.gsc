@@ -18,7 +18,7 @@
 // Size: 0x164
 function init()
 {
-    level function_e12fb431();
+    level init_bells();
     level function_2b6fe83b();
     
     if ( zm_custom::function_901b751c( #"zmpowerdoorstate" ) != 2 )
@@ -86,7 +86,7 @@ function function_ea67bd7c()
 // Params 0
 // Checksum 0xa66804d6, Offset: 0x750
 // Size: 0xa0
-function function_e12fb431()
+function init_bells()
 {
     a_e_bells = getentarray( "challenges_bell", "targetname" );
     

@@ -274,7 +274,7 @@ function function_37507fb7( var_a276c861 )
             }
             
             s_campfire.e_snd = spawn( "script_origin", s_campfire.origin );
-            s_campfire.e_snd playloopsound( #"hash_4557560b04b84279" );
+            s_campfire.e_snd playloopsound( #"amb_blue_fire" );
             zm_sq_modules::function_3f808d3d( s_campfire.var_b9989e12 );
             s_campfire waittill( #"hash_1f9b852104ab2c13" );
             s_campfire.e_fire setmodel( "p8_zm_gla_nor_fire_pit_01_wood_pile" );

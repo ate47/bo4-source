@@ -1,9 +1,9 @@
 {
     "keys": [
         {
-            "name": "#mp_austria_en_stream",
+            "name": "#hash_2427d65ec02b3a27",
             "xPakEntry": {
-                "key": 18023140263536638072,
+                "key": "#hash_fa1f0e9439243878",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -15,12 +15,14 @@
                 "adjacentRight": 0
             },
             "size": 6144,
+            "unk44": 512,
+            "unk46": 5,
             "keyFlags": 3
         },
         {
             "name": "#hash_49ad34d8eaec75ee",
             "xPakEntry": {
-                "key": 18311699732009076359,
+                "key": "#hash_fe2039e300044687",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -32,12 +34,14 @@
                 "adjacentRight": 0
             },
             "size": 2048,
+            "unk44": 512,
+            "unk46": 5,
             "keyFlags": 1
         },
         {
             "name": "#hash_467b945b4f20bfb1",
             "xPakEntry": {
-                "key": 18311699732009076359,
+                "key": "#hash_fe2039e300044687",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -49,12 +53,14 @@
                 "adjacentRight": 0
             },
             "size": 2048,
+            "unk44": 512,
+            "unk46": 5,
             "keyFlags": 3
         },
         {
             "name": "#hash_1c1b1d3677d0690c",
             "xPakEntry": {
-                "key": 18311699732009076359,
+                "key": "#hash_fe2039e300044687",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -66,6 +72,8 @@
                 "adjacentRight": 0
             },
             "size": 2048,
+            "unk44": 512,
+            "unk46": 5,
             "keyFlags": 1
         }
     ]

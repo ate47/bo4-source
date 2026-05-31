@@ -69,20 +69,20 @@ function function_a380fe5( localclientnum, oldval, newval, bnewent, binitialsnap
             
             if ( isdefined( player ) && isdefined( player.var_2cbc8a68 ) )
             {
-                player.var_2cbc8a68 stoprenderoverridebundle( #"hash_75168376918f5ab7" );
+                player.var_2cbc8a68 stoprenderoverridebundle( #"rob_wz_boundary" );
                 player.var_2cbc8a68 delete();
             }
             
             if ( isdefined( self.var_2c8e49d2 ) )
             {
-                self.var_2c8e49d2 stoprenderoverridebundle( #"hash_75168376918f5ab7" );
+                self.var_2c8e49d2 stoprenderoverridebundle( #"rob_wz_boundary" );
                 self.var_2c8e49d2 delete();
             }
             
             self function_a5edb367( #"death_ring" );
             self.var_2c8e49d2 = spawn( localclientnum, self.origin, "script_model" );
             self.var_2c8e49d2 setmodel( "p8_big_cylinder" );
-            self.var_2c8e49d2 playrenderoverridebundle( #"hash_75168376918f5ab7" );
+            self.var_2c8e49d2 playrenderoverridebundle( #"rob_wz_boundary" );
             self.var_2c8e49d2 linkto( self );
             self.var_29b256b0 = spawn( 0, self.origin, "script_origin" );
             self.var_29b256b0.handle = self.var_29b256b0 playloopsound( level.var_cb450873 );
@@ -100,7 +100,7 @@ function function_a380fe5( localclientnum, oldval, newval, bnewent, binitialsnap
     
     if ( isdefined( self.var_2c8e49d2 ) )
     {
-        self.var_2c8e49d2 stoprenderoverridebundle( #"hash_75168376918f5ab7" );
+        self.var_2c8e49d2 stoprenderoverridebundle( #"rob_wz_boundary" );
         self.var_2c8e49d2 delete();
     }
     
@@ -122,7 +122,7 @@ function on_localclient_connect( localclientnum )
     if ( isdefined( player ) )
     {
         player.var_2cbc8a68 = spawn( localclientnum, ( 0, 0, -10000 ), "script_model" );
-        player.var_2cbc8a68 playrenderoverridebundle( #"hash_75168376918f5ab7" );
+        player.var_2cbc8a68 playrenderoverridebundle( #"rob_wz_boundary" );
     }
     
     level thread function_382da026( localclientnum );
@@ -464,13 +464,13 @@ function private function_a453467f( localclientnum )
         
         if ( isdefined( self.var_2c8e49d2 ) )
         {
-            if ( !self.var_2c8e49d2 function_d2503806( #"hash_75168376918f5ab7" ) )
+            if ( !self.var_2c8e49d2 function_d2503806( #"rob_wz_boundary" ) )
             {
-                self.var_2c8e49d2 playrenderoverridebundle( #"hash_75168376918f5ab7" );
+                self.var_2c8e49d2 playrenderoverridebundle( #"rob_wz_boundary" );
             }
             
             modelscale = radius / 150000;
-            self.var_2c8e49d2 function_78233d29( #"hash_75168376918f5ab7", "", "Scale", modelscale );
+            self.var_2c8e49d2 function_78233d29( #"rob_wz_boundary", "", "Scale", modelscale );
             
             if ( isdefined( self.var_29b256b0 ) )
             {
@@ -495,7 +495,7 @@ function function_71f8d788()
     
     if ( isdefined( self.var_2c8e49d2 ) )
     {
-        self.var_2c8e49d2 stoprenderoverridebundle( #"hash_75168376918f5ab7" );
+        self.var_2c8e49d2 stoprenderoverridebundle( #"rob_wz_boundary" );
         self.var_2c8e49d2 delete();
     }
 }

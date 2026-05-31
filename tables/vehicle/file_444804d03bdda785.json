@@ -1,0 +1,43 @@
+{
+    "name": "#hash_444804d03bdda785",
+    "type": "helicopter",
+    "scriptVehicleType": "wasp",
+    "scoreType": "sentinel",
+    "cameraTag": "tag_driver_camera",
+    "archeType": "#wasp",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "exhaustFxTag1": "tag_origin",
+    "scriptBundleSettings": "#waspsettings_mp",
+    "deathFx": "#killstreaks/fx_sentinel_exp",
+    "deathFxTag": "tag_origin",
+    "lightFx": [
+        "#killstreaks/fx_sentinel_lights"
+    ],
+    "lightFxTag": [
+        "tag_origin"
+    ],
+    "unk11f4": [
+        "tag_rotor_left",
+        "tag_rotor_right"
+    ],
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#flying_camera_drone_model",
+    "viewModel": "#flying_camera_drone_model",
+    "deathModel": "#flying_camera_drone_model",
+    "enemyModel": "#flying_camera_drone_model",
+    "steerAxisName": "AXIS_RSTICK",
+    "gasAxisName": "AXIS_LSTICK",
+    "attackButtonName": "BUTTON_RTRIG",
+    "boostButtonName": "BUTTON_LTRIG",
+    "unk1608": "BUTTON_RSHLDR",
+    "unk1618": "BUTTON_LSHLDR",
+    "bundle": {
+        "healthpoolsize": 650,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 2
+    }
+}

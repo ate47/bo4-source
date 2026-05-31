@@ -1,11 +1,10 @@
 {
     "name": "#mpdlc4",
-    "blackMarketName": "#",
-    "blackMarketDesc": "#",
-    "entitlementNameXHash": "#",
+    "previewImage": "#hash_fde4d0fb418f955a",
+    "productImage": "#hash_fde4d0fb418f955a",
+    "blackMarketImage": "#t7_store_product_bo4",
     "metadata": "DLC5MP",
-    "previewImageName": "hash_7de4d0fb418f955a",
-    "productImageName": "hash_7de4d0fb418f955a",
-    "blackMarketImageName": "hash_1217b62ca29dad38",
-    "visibility": true
+    "visibility": true,
+    "unka2": true,
+    "unka3": true
 }

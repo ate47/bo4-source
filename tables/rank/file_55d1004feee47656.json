@@ -1,20 +1,18 @@
 {
     "name": "#hash_55d1004feee47656",
-    "shortNameRef": "#hash_7bc6cb14ed7206bd",
+    "shortNameRef": "#rank/cpl",
     "fullNameRef": "#hash_78578cd29aae45e7",
     "ingameNameRef": "#hash_2997f0dcd4e65d3a",
-    "iconName": "#hash_75cb88a2fc32a215",
-    "iconNameLarge": "#hash_47b99d03d759ea19",
     "level": 8,
     "minXp": 40600,
     "maxXp": 48800,
+    "icon": "#ui_icon_rank_mp_level08",
+    "iconLarge": "#ui_icon_rank_mp_level08_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#feature_custom_class_6"
         },
         {
-            "prestigeTarget": "#",
             "rewardName": "#shotgun_pump_t8"
         }
     ]

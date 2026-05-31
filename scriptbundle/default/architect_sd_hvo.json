@@ -1,40 +1,40 @@
 {
     "statsarray": [
         {
-            "hash_82670522": "stats_deployable_cover_kill",
+            "playerstatsliststatname": "stats_deployable_cover_kill",
             "stattype": "playerstatslist",
-            "hash_26568428": 1,
+            "statweight": 1,
             "displaystatname": "localized17#hash_f16f29c7e6f1c19"
         },
         {
-            "hash_82670522": "stats_hpm_suppress",
+            "playerstatsliststatname": "stats_hpm_suppress",
             "stattype": "playerstatslist",
-            "hash_26568428": 1,
+            "statweight": 1,
             "displaystatname": "localized17#hash_785366bfc4a5f74f"
         },
         {
-            "hash_82670522": "stats_deployable_cover_assist",
+            "playerstatsliststatname": "stats_deployable_cover_assist",
             "stattype": "playerstatslist",
-            "hash_26568428": 1,
+            "statweight": 1,
             "displaystatname": "localized17#hash_73d3def88fa5cf5d"
         },
         {
             "stattype": "objectiveekia",
-            "hash_26568428": 1,
+            "statweight": 1,
             "displaystatname": "localized17#hash_5d1ab6f5e0227795"
         },
         {
             "stattype": "damagedone",
-            "hash_26568428": 1,
+            "statweight": 1,
             "displaystatname": "localized17#hash_5418827f408e5ca2"
         },
         {
             "stattype": "objectivescore",
-            "hash_26568428": 1,
+            "statweight": 1,
             "displaystatname": "localized17#hash_6abbd7a88ee593ed"
         }
     ],
-    "hash_447510ee": "prt_mp_engineer",
+    "associatedspecialist": "prt_mp_engineer",
     "defaultimage": "image#ui_icon_hvo_base",
     "cardname": "localized17#hash_6c3a2112468353be",
     "name": "architect_sd_hvo",

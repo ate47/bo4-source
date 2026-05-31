@@ -364,7 +364,7 @@ function function_c5b157a6( einflictor, attacker, idamage, smeansofdeath, weapon
     
     self thread zombie_utility::zombie_gib( idamage, attacker, vdir, self gettagorigin( "j_spine4" ), smeansofdeath, shitloc, undefined, undefined, weapon );
     
-    if ( isdefined( self.lgt_env_helping_hand_room_1 ) && self.lgt_env_helping_hand_room_1 && zm_utility::is_explosive_damage( smeansofdeath ) )
+    if ( isdefined( self.var_c858954a ) && self.var_c858954a && zm_utility::is_explosive_damage( smeansofdeath ) )
     {
         gibserverutils::annihilate( self );
         return;

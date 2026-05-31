@@ -1,16 +1,13 @@
 {
     "name": "#zm_rank_18",
-    "shortNameRef": "#",
     "fullNameRef": "#hash_49074caf69f1d5e8",
-    "ingameNameRef": "#",
-    "iconName": "#hash_102e4bb185b60c4",
-    "iconNameLarge": "#hash_2fc45f63854408b0",
     "level": 18,
     "minXp": 138500,
     "maxXp": 153800,
+    "icon": "#ui_icon_rank_zm_level18",
+    "iconLarge": "#ui_icon_rank_zm_level18_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#perk_dead_shot"
         }
     ]

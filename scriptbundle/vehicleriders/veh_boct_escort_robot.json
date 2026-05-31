@@ -1,42 +1,42 @@
 {
     "objects": [
         {
-            "exithighloopanim": "anim4#ai_crew_escortrobot_vtolrider_highdrop_loop",
+            "exithighloopanim": "anim#ai_crew_escortrobot_vtolrider_highdrop_loop",
             "aligntag": "tag_attach_cargo_hook",
-            "rideanim": "anim4#ai_crew_escortrobot_vtolrider_idle_left",
+            "rideanim": "anim#ai_crew_escortrobot_vtolrider_idle_left",
             "position": "driver",
-            "exithighlandanim": "anim4#ai_crew_escortrobot_vtolrider_highdrop_land",
-            "exithighanim": "anim4#ai_crew_escortrobot_vtolrider_highdrop_intro_left"
+            "exithighlandanim": "anim#ai_crew_escortrobot_vtolrider_highdrop_land",
+            "exithighanim": "anim#ai_crew_escortrobot_vtolrider_highdrop_intro_left"
         },
         {
-            "exithighanim": "anim4#hash_58f3e6afc17957a5"
+            "exithighanim": "anim#hash_58f3e6afc17957a5"
         },
         {
-            "exithighanim": "anim4#hash_43e17a5e3392f278"
+            "exithighanim": "anim#hash_43e17a5e3392f278"
         },
         {
-            "exithighanim": "anim4#hash_f64dc458399f55f"
+            "exithighanim": "anim#hash_f64dc458399f55f"
         },
         {
-            "exithighanim": "anim4#hash_1bb9ba5a94757d2a"
+            "exithighanim": "anim#hash_1bb9ba5a94757d2a"
         },
         {
-            "exithighanim": "anim4#hash_37f1a6f045ffd429"
+            "exithighanim": "anim#hash_37f1a6f045ffd429"
         },
         {
-            "exithighanim": "anim4#hash_2cd15b05049c6ac"
+            "exithighanim": "anim#hash_2cd15b05049c6ac"
         },
         {
-            "exithighanim": "anim4#hash_3d6bb8e8fa94e833"
+            "exithighanim": "anim#hash_3d6bb8e8fa94e833"
         },
         {
-            "exithighanim": "anim4#hash_24e0629f30d0185e"
+            "exithighanim": "anim#hash_24e0629f30d0185e"
         }
     ],
     "configstringfiletype": "scriptbundle",
     "model": "model#hash_621a555c6c220455",
     "type": "vehicleriders",
-    "hash_4301b21d": 1,
+    "numseats": 1,
     "vmtype": "both",
     "dropspeed": 350,
     "name": "veh_boct_escort_robot",

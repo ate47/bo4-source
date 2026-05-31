@@ -1,16 +1,16 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "localized17#hash_55ea2d0c95af597a"
+            "hash_619e25922b4aedcf:hash_826726a": "localized17#hash_55ea2d0c95af597a"
         }
     ],
     "contracticon": "image#hash_72f383625e61304f",
-    "hash_d0100eab": 1,
-    "relateditemname": "localized17#hash_57252f16d6cf4edb",
+    "hash_202e3311080f8de3:hash_d0100eab": 1,
+    "relateditemname": "localized17#heroes/swatpolice",
     "contracttitle": "localized17#hash_55ea2d0c95af597a",
     "name": "loot_contract_ajax_roman_warrior",
     "contractdescription": "localized17#hash_546a942e348c5da2",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_38bac0dcfaeeacd7",
-    "hash_e08fc162": "localized17#hash_4b71cb37b34176"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_38bac0dcfaeeacd7",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_4b71cb37b34176"
 }

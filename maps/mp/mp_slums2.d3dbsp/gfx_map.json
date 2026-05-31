@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_slums2.d3dbsp",
+    "baseName": "mp_slums2",
+    "mins": "-131438.12 -114433.33 -13934.286",
+    "maxs": "130553.72 129408.01 45152.27",
+    "checksum": 0,
+    "streamerworld": "#hash_118a5d7f55996c4d",
+    "lighting": "#maps/mp/mp_slums2.d3dbsp",
+    "lutMaterial": "#lut_mp_slums2",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_slums2",
+        "#img_trim_lut_mp_slums2",
+        "#img_trim_lut_mp_slums2",
+        "#img_trim_lut_mp_slums2"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 2,
+        "cookieArray": "#*cookie_array"
+    }
+}

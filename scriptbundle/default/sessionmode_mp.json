@@ -1,10 +1,10 @@
 {
-    "hash_5ee3f5bd": "mp_seaside",
+    "hash_17b49743c623cfb5:hash_5ee3f5bd": "mp_seaside",
     "defaultgametype": "control",
     "abbreviation": "mp",
     "name": "sessionmode_mp",
     "selectdescription": "localized17#menu/multiplayer_desc",
     "displayname": "localized17#menu/multiplayer",
     "defaultmap": "mp_seaside",
-    "hash_fba50b79": "control_cwl"
+    "defaultarenagametype": "control_cwl"
 }

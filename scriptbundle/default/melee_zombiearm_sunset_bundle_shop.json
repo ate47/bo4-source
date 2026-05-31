@@ -1,6 +1,6 @@
 {
     "detailsicon": "image#hash_78a27511dad5fb48",
-    "hash_6c274f86": "image#loot07_ui_icon_blackmarket_itemshop_bundle_zombiearm",
+    "shopicon": "image#loot07_ui_icon_blackmarket_itemshop_bundle_zombiearm",
     "nametext": "localized17#weapon/melee_zombiearm_t8",
     "name": "melee_zombiearm_sunset_bundle_shop",
     "desctext": "localized17#hash_4b902213e1369b7a"

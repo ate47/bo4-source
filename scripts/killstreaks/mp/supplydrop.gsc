@@ -691,14 +691,14 @@ function islocationgood( location, context )
 // Namespace supplydrop/supplydrop
 // Params 1
 // Checksum 0x67b884d3, Offset: 0x2928
-// Size: 0x152, Type: bool
+// Size: 0x152
 function usekillstreaksupplydrop( killstreak )
 {
     player = self;
     
     if ( !player issupplydropgrenadeallowed( killstreak ) )
     {
-        return false;
+        return 0;
     }
     
     context = spawnstruct();

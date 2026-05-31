@@ -1,0 +1,28 @@
+{
+    "name": "#hash_2c1ce346c5d09760",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "unk68:unk10": true,
+            "model": "#c_t8_bo_soldier_hardened_male_head1",
+            "unk68:unk48": [
+                "#mc/mtl_c_t8_3rd_ar1_helmet",
+                "#mc/mtl_c_t8_3rd_ar1_helmet_goggles",
+                "#hash_5fc1f8b1e9fd9964",
+                "#hash_42e9e67ac36ff638",
+                "#hash_76b28ddefa2ed084",
+                "#hash_6c020ed87d111445",
+                "#mc/mtl_c_t8_3rd_ar1_rail",
+                "#hash_6b95da5e04528e33",
+                "#mc/mtl_c_t8_mp_spe_engineer_body1_patches",
+                "#mc/mtl_c_t8_3rd_ar1_connector",
+                "#mc/mtl_c_t8_3rd_ar1_strobe",
+                "#mc/mtl_c_t8_3rd_ar1_helmet_chinstrap",
+                "#mc/mtl_c_t8_3rd_ar1_helmet_straps",
+                "#mc/mtl_c_t8_3rd_ar1_helmet_battery"
+            ],
+            "unk68:unk50": 1
+        }
+    ]
+}

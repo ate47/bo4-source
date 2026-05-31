@@ -11,7 +11,7 @@
 function init()
 {
     init_clientfields();
-    level._effect[ #"hash_604a40ef1ed899a4" ] = #"hash_7d36c353ea2640ad";
+    level._effect[ #"fire_extinguisher_fx" ] = #"hash_7d36c353ea2640ad";
     level._effect[ #"hash_74f5897234e8d579" ] = #"hash_59c49f21e6675534";
 }
 
@@ -34,14 +34,14 @@ function function_f65638a4( localclientnum, oldval, newval, bnewent, binitialsna
     if ( newval == 1 )
     {
         s_fx = struct::get( "fire_extinguisher_l_fx_struct", "targetname" );
-        playfx( localclientnum, level._effect[ #"hash_604a40ef1ed899a4" ], s_fx.origin, anglestoforward( s_fx.angles ) );
+        playfx( localclientnum, level._effect[ #"fire_extinguisher_fx" ], s_fx.origin, anglestoforward( s_fx.angles ) );
         return;
     }
     
     if ( newval == 2 )
     {
         s_fx = struct::get( "fire_extinguisher_r_fx_struct", "targetname" );
-        playfx( localclientnum, level._effect[ #"hash_604a40ef1ed899a4" ], s_fx.origin, anglestoforward( s_fx.angles ) );
+        playfx( localclientnum, level._effect[ #"fire_extinguisher_fx" ], s_fx.origin, anglestoforward( s_fx.angles ) );
     }
 }
 

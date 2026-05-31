@@ -439,21 +439,21 @@ function function_a890cac2( attacker, owningteam, weapon, scoreevents, objective
 // Params 7
 // Checksum 0xa58c51b, Offset: 0x12d8
 // Size: 0x32c, Type: bool
-function function_7d830bc( einflictor, attacker, weapon, objectiveobj, var_1bbdd8b0, owningteam, objectivetrigger )
+function function_7d830bc( einflictor, attacker, weapon, objectiveobj, var_1bbdd8b0, owningteam, objectiveTrigger )
 {
     attacker endon( #"disconnect", #"death" );
     level endon( #"game_ended" );
     self notify( "38c4e69a4b1b634c" );
     self endon( "38c4e69a4b1b634c" );
     
-    if ( !isplayer( attacker ) || !isplayer( self ) || !isdefined( weapon ) || !isdefined( objectiveobj ) || !isdefined( objectivetrigger ) || !isdefined( var_1bbdd8b0 ) )
+    if ( !isplayer( attacker ) || !isplayer( self ) || !isdefined( weapon ) || !isdefined( objectiveobj ) || !isdefined( objectiveTrigger ) || !isdefined( var_1bbdd8b0 ) )
     {
         return false;
     }
     
-    if ( !self istouching( objectivetrigger, ( var_1bbdd8b0, var_1bbdd8b0, 100 ) ) )
+    if ( !self istouching( objectiveTrigger, ( var_1bbdd8b0, var_1bbdd8b0, 100 ) ) )
     {
-        if ( !isdefined( einflictor ) || einflictor != attacker || !attacker istouching( objectivetrigger, ( var_1bbdd8b0, var_1bbdd8b0, 100 ) ) )
+        if ( !isdefined( einflictor ) || einflictor != attacker || !attacker istouching( objectiveTrigger, ( var_1bbdd8b0, var_1bbdd8b0, 100 ) ) )
         {
             return false;
         }
@@ -1197,7 +1197,7 @@ function function_d3ca3608( eventname )
                 level.var_10cd7193 = [];
             }
             
-            eventstr = ishash( eventname ) ? function_9e72a96( eventname ) : eventname;
+            eventstr = ishash( eventname ) ? hashtostring( eventname ) : eventname;
             
             if ( !isdefined( level.var_10cd7193 ) )
             {

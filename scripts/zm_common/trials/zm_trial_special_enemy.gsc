@@ -157,7 +157,7 @@ function private spawn_enemy()
     
     /#
         assert( isdefined( level.var_1cc18005 ) );
-        assert( isdefined( level.var_1cc18005[ challenge.enemy_type ] ), "<dev string:x5a>" + function_9e72a96( challenge.enemy_type ) );
+        assert( isdefined( level.var_1cc18005[ challenge.enemy_type ] ), "<dev string:x5a>" + hashtostring( challenge.enemy_type ) );
     #/
     
     spawn_callback = level.var_1cc18005[ challenge.enemy_type ];

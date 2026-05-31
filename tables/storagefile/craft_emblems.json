@@ -1,5 +1,109 @@
 {
-    "name": "#craft_emblems",
     "nameStr": "craft_emblems",
-    "ddl": "#gamedata/ddl/generated/emblem.ddl"
+    "name": "#craft_emblems",
+    "ddlPath": "#gamedata/ddl/generated/emblem.ddl",
+    "files": [
+        {
+            "fileName": "craft_emblems"
+        },
+        {
+            "fileName": "craft_emblems_1"
+        },
+        {
+            "fileName": "craft_emblems_2"
+        },
+        {
+            "fileName": "craft_emblems_3"
+        },
+        {
+            "fileName": "craft_emblems_4"
+        },
+        {
+            "fileName": "craft_emblems_5"
+        },
+        {
+            "fileName": "craft_emblems_6"
+        },
+        {
+            "fileName": "craft_emblems_7"
+        },
+        {
+            "fileName": "craft_emblems_8"
+        },
+        {
+            "fileName": "craft_emblems_9"
+        },
+        {
+            "fileName": "craft_emblems_10"
+        },
+        {
+            "fileName": "craft_emblems_11"
+        },
+        {
+            "fileName": "craft_emblems_12"
+        },
+        {
+            "fileName": "craft_emblems_13"
+        },
+        {
+            "fileName": "craft_emblems_14"
+        },
+        {
+            "fileName": "craft_emblems_15"
+        },
+        {
+            "fileName": "craft_emblems_16"
+        },
+        {
+            "fileName": "craft_emblems_17"
+        },
+        {
+            "fileName": "craft_emblems_18"
+        },
+        {
+            "fileName": "craft_emblems_19"
+        },
+        {
+            "fileName": "craft_emblems_20"
+        },
+        {
+            "fileName": "craft_emblems_21"
+        },
+        {
+            "fileName": "craft_emblems_22"
+        },
+        {
+            "fileName": "craft_emblems_23"
+        },
+        {
+            "fileName": "craft_emblems_24"
+        },
+        {
+            "fileName": "craft_emblems_25"
+        },
+        {
+            "fileName": "craft_emblems_26"
+        },
+        {
+            "fileName": "craft_emblems_27"
+        },
+        {
+            "fileName": "craft_emblems_28"
+        },
+        {
+            "fileName": "craft_emblems_29"
+        },
+        {
+            "fileName": "craft_emblems_30"
+        },
+        {
+            "fileName": "craft_emblems_31"
+        }
+    ],
+    "size": 2048,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

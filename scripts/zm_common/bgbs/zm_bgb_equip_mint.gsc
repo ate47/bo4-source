@@ -66,7 +66,7 @@ function validation()
     n_slot = self gadgetgetslot( w_lethal );
     n_power = self gadgetpowerget( n_slot );
     
-    if ( ( w_lethal == getweapon( #"tomahawk_t8" ) || w_lethal == getweapon( #"tomahawk_t8_upgraded" ) ) && self function_36dfc05f( n_slot ) )
+    if ( ( w_lethal == getweapon( #"tomahawk_t8" ) || w_lethal == getweapon( #"tomahawk_t8_upgraded" ) ) && self gadgetisdeployed( n_slot ) )
     {
         return false;
     }

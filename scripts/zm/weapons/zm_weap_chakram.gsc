@@ -994,9 +994,9 @@ function private function_b475223e( weapon )
 // Params 1, eflags: 0x4
 // Checksum 0xfa5445db, Offset: 0x3930
 // Size: 0xb0
-function private function_7d1739b8( var_201c5b1f )
+function private function_7d1739b8( notify_hash )
 {
-    assert( var_201c5b1f == #"round_reset" );
+    assert( notify_hash == #"round_reset" );
     
     foreach ( player in getplayers() )
     {

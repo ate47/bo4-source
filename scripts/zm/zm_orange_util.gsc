@@ -162,7 +162,7 @@ function private on_connect()
     level endon( #"end_game" );
     self endon( #"disconnect" );
     
-    if ( self zm_characters::is_character( array( #"hash_447b3c77b73aa2a9" ) ) )
+    if ( self zm_characters::is_character( array( #"prt_zm_stuhlinger" ) ) )
     {
         self thread function_3e0d878f();
         self thread function_2e565334();

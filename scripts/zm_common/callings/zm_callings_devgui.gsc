@@ -25,8 +25,8 @@
         
         foreach ( var_acbd7392 in var_94237d8 )
         {
-            var_31e48984 = "<dev string:x53>" + function_9e72a96( var_acbd7392 );
-            adddebugcommand( "<dev string:x75>" + function_9e72a96( var_acbd7392 ) + "<dev string:xa9>" + i + "<dev string:xb2>" + var_31e48984 + "<dev string:xc6>" );
+            var_31e48984 = "<dev string:x53>" + hashtostring( var_acbd7392 );
+            adddebugcommand( "<dev string:x75>" + hashtostring( var_acbd7392 ) + "<dev string:xa9>" + i + "<dev string:xb2>" + var_31e48984 + "<dev string:xc6>" );
             i += 1;
         }
         
@@ -83,7 +83,7 @@
                 
                 if ( !( isdefined( var_fe8112e6 ) && var_fe8112e6 ) )
                 {
-                    iprintln( self.name + "<dev string:x1cf>" + function_9e72a96( var_762ca590 ) + "<dev string:x1d5>" );
+                    iprintln( self.name + "<dev string:x1cf>" + hashtostring( var_762ca590 ) + "<dev string:x1d5>" );
                 }
             }
             
@@ -132,7 +132,7 @@
             if ( isdefined( progress ) )
             {
                 target = var_d1017f27.var_e226ec4f;
-                iprintln( self.name + "<dev string:x213>" + function_9e72a96( var_d1017f27.var_ad971622 ) + "<dev string:x226>" + progress + "<dev string:x238>" + target );
+                iprintln( self.name + "<dev string:x213>" + hashtostring( var_d1017f27.var_ad971622 ) + "<dev string:x226>" + progress + "<dev string:x238>" + target );
             }
             
             wait n_interval;

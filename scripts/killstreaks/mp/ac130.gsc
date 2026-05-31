@@ -48,7 +48,7 @@ function __init__()
     killstreaks::register_killstreak( "killstreak_ac130", &activatemaingunner );
     killstreaks::register_alt_weapon( "ac130", getweapon( #"killstreak_remote" ) );
     killstreaks::register_alt_weapon( "ac130", getweapon( #"hash_17df39d53492b0bf" ) );
-    killstreaks::register_alt_weapon( "ac130", getweapon( #"hash_7b24d0d0d2823bca" ) );
+    killstreaks::register_alt_weapon( "ac130", getweapon( #"ac130_autocannon" ) );
     killstreaks::register_alt_weapon( "ac130", getweapon( #"ac130_chaingun" ) );
     killstreaks::set_team_kill_penalty_scale( "ac130", level.teamkillreducedpenalty );
     player::function_cf3aa03d( &function_d45a1f8d, 1 );
@@ -878,7 +878,7 @@ function vtoldestructiblecallback( brokennotify, eattacker, weapon, pieceindex, 
 // Params 3
 // Checksum 0xe1f54f6b, Offset: 0x33d8
 // Size: 0x420
-function function_8721028e( player, ownerleft, var_dbcb1965 = 0 )
+function function_8721028e( player, ownerleft, should_explode = 0 )
 {
     if ( isbot( player ) )
     {
@@ -929,7 +929,7 @@ function function_8721028e( player, ownerleft, var_dbcb1965 = 0 )
         level.ac130 function_60d50ea4();
     }
     
-    if ( var_dbcb1965 )
+    if ( should_explode )
     {
         var_15f570c1 += ( 0, 0, -8000 );
     }
@@ -937,7 +937,7 @@ function function_8721028e( player, ownerleft, var_dbcb1965 = 0 )
     level.ac130 thread helicopter::heli_leave( var_15f570c1, 1 );
     level.ac130 thread audio::sndupdatevehiclecontext( 0 );
     
-    if ( var_dbcb1965 )
+    if ( should_explode )
     {
         level.ac130 thread function_60e3edcc();
     }
@@ -1113,8 +1113,8 @@ function function_46d0e4e5()
     ac130 thread remote_weapons::do_static_fx();
     failsafe_timeout = 5;
     ac130 waittilltimeout( failsafe_timeout, #"static_fx_done" );
-    var_dbcb1965 = 1;
-    function_8721028e( ac130.owner, 1, var_dbcb1965 );
+    should_explode = 1;
+    function_8721028e( ac130.owner, 1, should_explode );
 }
 
 // Namespace ac130/ac130
@@ -1565,7 +1565,7 @@ function function_d45a1f8d( einflictor, attacker, idamage, smeansofdeath, weapon
         return;
     }
     
-    if ( einflictor.owner == attacker && ( weapon == getweapon( #"hash_17df39d53492b0bf" ) || weapon == getweapon( #"hash_7b24d0d0d2823bca" ) ) )
+    if ( einflictor.owner == attacker && ( weapon == getweapon( #"hash_17df39d53492b0bf" ) || weapon == getweapon( #"ac130_autocannon" ) ) )
     {
         isprimaryweapon = weapon == getweapon( #"hash_17df39d53492b0bf" ) ? 1 : 0;
         level.ac130 function_631f02c5( isprimaryweapon );

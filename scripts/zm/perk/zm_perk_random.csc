@@ -37,7 +37,7 @@ function __init__()
     level._effect[ #"perk_machine_light_yellow" ] = #"hash_63cff764b54ceca2";
     level._effect[ #"perk_machine_light_red" ] = #"hash_5b7d2edb8392ef21";
     level._effect[ #"perk_machine_light_green" ] = #"hash_130f1aaf8384975";
-    level._effect[ #"perk_machine_location" ] = #"hash_53e8ba7551663778";
+    level._effect[ #"perk_machine_location" ] = #"dlc1/castle/fx_wonder_fizz_light_green";
 }
 
 // Namespace zm_perk_random/zm_perk_random

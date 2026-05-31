@@ -3,10 +3,9 @@
     "shortNameRef": "#hash_6c03400980dc8a71",
     "fullNameRef": "#hash_6c03400980dc8a71",
     "ingameNameRef": "#hash_6c03400980dc8a71",
-    "iconName": "#ui_icon_wz_prestige_05",
-    "iconNameLarge": "#ui_icon_wz_prestige_05_large",
     "level": 5,
     "minXp": 75,
     "maxXp": 100,
-    "rewards": []
+    "icon": "#ui_icon_wz_prestige_05",
+    "iconLarge": "#ui_icon_wz_prestige_05_large"
 }

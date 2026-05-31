@@ -41,7 +41,7 @@ function event_handler[gametype_init] main( eventstruct )
 {
     globallogic::init();
     infection::initialize();
-    infection::function_153000d0( #"hash_70fe115fad3f4fa", #"hash_3ca96ae1bd7d344f" );
+    infection::function_153000d0( #"prt_mp_zombie_male", #"prt_mp_zombie_female" );
     level.var_757f1b92 = getweapon( "melee_bowie_bloody" );
     level.var_4ae49bbd = getweapon( "hatchet" );
     level.var_30783ca9 = &function_1a87243c;
@@ -216,13 +216,13 @@ function function_8d346fd8( winningteam )
 // Size: 0xee
 function inithud()
 {
-    level.var_43406ee9 = spawnstruct();
-    level.var_43406ee9.label = #"hash_7bf80a392d947b6e";
-    level.var_43406ee9.alpha = 0;
-    level.var_43406ee9.archived = 0;
-    level.var_43406ee9.hidewheninmenu = 1;
+    level.infect_timerdisplay = spawnstruct();
+    level.infect_timerdisplay.label = #"mp_draft_starts_in";
+    level.infect_timerdisplay.alpha = 0;
+    level.infect_timerdisplay.archived = 0;
+    level.infect_timerdisplay.hidewheninmenu = 1;
     level.var_6c6b8981 = spawnstruct();
-    level.var_6c6b8981.label = #"hash_29028683f846db5d";
+    level.var_6c6b8981.label = #"mp_infected_time_extended";
     level.var_6c6b8981.alpha = 0;
     level.var_6c6b8981.archived = 0;
     level.var_6c6b8981.hidewheninmenu = 1;
@@ -234,7 +234,7 @@ function inithud()
 // Size: 0xd4
 function onplayerconnect()
 {
-    self.var_9007c3f6 = 1;
+    self.infect_firstspawn = 1;
     self.var_fc81f69c = level.inprematchperiod;
     
     if ( self.sessionteam != "spectator" )
@@ -383,13 +383,13 @@ function function_f86ae9e5()
 // Params 3
 // Checksum 0xa657717b, Offset: 0x1578
 // Size: 0xc8
-function function_24ca3437( team, var_efb758a8, calloutplayer )
+function function_24ca3437( team, calloutmessage, calloutplayer )
 {
     players = getplayers( team );
     
     foreach ( player in players )
     {
-        player luinotifyevent( #"player_callout", 2, var_efb758a8, calloutplayer );
+        player luinotifyevent( #"player_callout", 2, calloutmessage, calloutplayer );
     }
 }
 
@@ -602,7 +602,7 @@ function finalsurvivoruav( finalsurvivor )
 {
     level endon( #"game_ended" );
     finalsurvivor endon( #"disconnect", #"death" );
-    level endon( #"hash_c99e3873a00e736" );
+    level endon( #"infect_latejoiner" );
     level thread enduavonlatejoiner( finalsurvivor );
     setteamspyplane( game.attackers, 1 );
     util::set_team_radar( game.attackers, 1 );
@@ -651,7 +651,7 @@ function enduavonlatejoiner( finalsurvivor )
         
         if ( var_63f8204e > 1 )
         {
-            level notify( #"hash_c99e3873a00e736" );
+            level notify( #"infect_latejoiner" );
             waitframe( 1 );
             setteamspyplane( game.attackers, 1 );
             util::set_team_radar( game.attackers, 1 );
@@ -945,9 +945,9 @@ function function_a6489256()
     {
         waitresult = level waittill( #"game_ended", #"infect_stopcountdown" );
         
-        if ( isdefined( level.var_43406ee9 ) )
+        if ( isdefined( level.infect_timerdisplay ) )
         {
-            level.var_43406ee9.alpha = 0;
+            level.infect_timerdisplay.alpha = 0;
         }
         
         if ( waitresult._notify == "game_ended" )
@@ -966,10 +966,10 @@ function function_a6489256()
 function function_a5abd7ee()
 {
     level notify( #"timeextended" );
-    level endon( #"game_ended", #"hash_14fed44cd3ece79d", #"timeextended" );
+    level endon( #"game_ended", #"infect_stoptimeextended", #"timeextended" );
     timeout = 0;
     
-    while ( isdefined( level.var_43406ee9 ) && level.var_43406ee9.alpha > 0 )
+    while ( isdefined( level.infect_timerdisplay ) && level.infect_timerdisplay.alpha > 0 )
     {
         hostmigration::waitlongdurationwithhostmigrationpause( 0.5 );
         timeout++;
@@ -993,7 +993,7 @@ function function_3ba09e5e()
 {
     while ( true )
     {
-        waitresult = level waittill( #"game_ended", #"hash_14fed44cd3ece79d" );
+        waitresult = level waittill( #"game_ended", #"infect_stoptimeextended" );
         
         if ( isdefined( level.var_6c6b8981 ) )
         {

@@ -1,11 +1,11 @@
 {
-    "surfacefxtable_vtollanding": "surface_fx_table#hash_1cc16e61f7f6ee88",
+    "surfacefxtable_vtollanding": "surface_fx_table#player_vtol_drop",
     "configstringfiletype": "scriptbundle",
     "type": "aifxtable",
     "vmtype": "client",
     "surfacefxtable_footstep": "surface_fx_table#hash_36a0995dddf6bde9",
     "name": "fxb8_zm_char_blightfather",
-    "surfacefxtable_landing": "surface_fx_table#hash_3ea9c255df90466e",
-    "hash_306eaa3a": "surface_fx_table#hash_48c266414feaddbc",
-    "surfacefxtable_jumping": "surface_fx_table#hash_3ea9c255df90466e"
+    "surfacefxtable_landing": "surface_fx_table#player_jump_start",
+    "hash_75d65bc19b8cc14c:hash_306eaa3a": "surface_fx_table#hash_48c266414feaddbc",
+    "surfacefxtable_jumping": "surface_fx_table#player_jump_start"
 }

@@ -2,11 +2,11 @@
     "name": "#maptable_zm_base",
     "mapCount": 4,
     "images": [
-        "#hash_35b6232b91451836",
+        "#t8_menu_zm_loadscreen_zodt8",
         "#blacktransparent",
-        "#hash_6897cf1b16c24d1a",
+        "#t8_menu_zm_loadscreen_dlc0",
         "#blacktransparent",
-        "#hash_3b6813d4efa82af2",
+        "#t8_menu_zm_loadscreen_escape",
         "#blacktransparent",
         "#blacktransparent",
         "#blacktransparent"

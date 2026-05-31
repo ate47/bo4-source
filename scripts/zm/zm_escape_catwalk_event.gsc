@@ -298,9 +298,9 @@ function function_40312eda( mdl_sparks, mdl_gate )
 // Params 1
 // Checksum 0xce788bf8, Offset: 0x17a0
 // Size: 0x144
-function function_1b943b6c( var_5213b44c )
+function function_1b943b6c( str_catwalk_spawner )
 {
-    a_spots = struct::get_array( var_5213b44c, "catwalk_spawner" );
+    a_spots = struct::get_array( str_catwalk_spawner, "catwalk_spawner" );
     
     if ( a_spots.size > 0 )
     {
@@ -835,7 +835,7 @@ function function_e11ac4f5()
         level.var_b2b15659 = undefined;
     }
     
-    if ( !level.var_a3f67fc2 )
+    if ( !level.dog_rounds_enabled )
     {
         level.var_973488a5 = level.round_number + 1;
         level thread zombie_dog_util::dog_enable_rounds( 1 );

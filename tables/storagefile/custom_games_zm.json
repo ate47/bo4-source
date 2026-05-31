@@ -1,5 +1,43 @@
 {
-    "name": "#custom_games_zm",
     "nameStr": "custom_games_zm",
-    "ddl": "#hash_23e03d96e7cf1901"
+    "name": "#custom_games_zm",
+    "ddlPath": "#hash_23e03d96e7cf1901",
+    "files": [
+        {
+            "fileName": "custom_games_zm"
+        },
+        {
+            "fileName": "custom_games_zm_1"
+        },
+        {
+            "fileName": "custom_games_zm_2"
+        },
+        {
+            "fileName": "custom_games_zm_3"
+        },
+        {
+            "fileName": "custom_games_zm_4"
+        },
+        {
+            "fileName": "custom_games_zm_5"
+        },
+        {
+            "fileName": "custom_games_zm_6"
+        },
+        {
+            "fileName": "custom_games_zm_7"
+        },
+        {
+            "fileName": "custom_games_zm_8"
+        },
+        {
+            "fileName": "custom_games_zm_9"
+        }
+    ],
+    "size": 1024,
+    "readOnLogin": false,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

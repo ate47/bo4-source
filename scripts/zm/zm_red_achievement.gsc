@@ -75,13 +75,13 @@ function private function_653f23be()
         return;
     }
     
-    var_76f21e6b = array( "zone_temple_of_apollo", "zone_temple_of_apollo_left_path", "zone_temple_of_apollo_right_path", "zone_temple_of_apollo_back" );
+    a_str_allowed_zones = array( "zone_temple_of_apollo", "zone_temple_of_apollo_left_path", "zone_temple_of_apollo_right_path", "zone_temple_of_apollo_back" );
     
     while ( level.round_number <= 20 )
     {
         str_zone = self zm_zonemgr::get_player_zone();
         
-        if ( !isdefined( str_zone ) || !isinarray( var_76f21e6b, str_zone ) )
+        if ( !isdefined( str_zone ) || !isinarray( a_str_allowed_zones, str_zone ) )
         {
             return;
         }

@@ -939,7 +939,7 @@
         {
             if ( ishash( self.scriptbundlename ) )
             {
-                str_scene = function_9e72a96( self.scriptbundlename );
+                str_scene = hashtostring( self.scriptbundlename );
             }
             else
             {
@@ -959,7 +959,7 @@
     {
         v_origin = debug_display_origin();
         n_offset = 15 * ( i + 1 );
-        str_scene = function_9e72a96( str_scene );
+        str_scene = hashtostring( str_scene );
         print3d( v_origin - ( 0, 0, n_offset ), str_scene, ( 0.8, 0.2, 0.8 ), 1, 0.3, debug_frames );
         print3d( v_origin - ( 0, 0, n_offset + 5 ), "<dev string:x387>" + str_state + "<dev string:x38b>", ( 0.8, 0.2, 0.8 ), 1, 0.15, debug_frames );
     }

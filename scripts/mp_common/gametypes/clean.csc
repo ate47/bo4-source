@@ -16,13 +16,13 @@ function event_handler[gametype_init] main( eventstruct )
     clientfield::register( "allplayers", "taco_carry", 14000, 1, "int", &function_aa7bb941, 0, 0 );
     clientfield::register( "scriptmover", "taco_player_entnum", 14000, 4, "int", &function_568727a2, 0, 0 );
     level.var_aaaae0b = "ui/fx8_fracture_plyr_marker";
-    level.var_5844252c = "ui/fx8_fracture_drop_marker";
+    level.tacofx = "ui/fx8_fracture_drop_marker";
     level.var_ce64ea3e = #"clean_taco";
     
     if ( isdefined( getgametypesetting( #"hash_5cc4c3042b7d4935" ) ) && getgametypesetting( #"hash_5cc4c3042b7d4935" ) )
     {
         level.var_aaaae0b = "ui/fx8_fracture_plyr_marker_shamrock";
-        level.var_5844252c = "ui/fx8_fracture_drop_marker_shamrock";
+        level.tacofx = "ui/fx8_fracture_drop_marker_shamrock";
         level.var_ce64ea3e = #"hash_3a64e972390f43aa";
     }
     
@@ -63,8 +63,8 @@ function function_11abf5b2( localclientnum, oldval, newval, bnewent, binitialsna
             self thread function_bcb88fb7( localclientnum );
         }
         
-        self.var_5844252c = util::playfxontag( localclientnum, level.var_5844252c, self.var_47b256ef, "tag_origin" );
-        setfxteam( localclientnum, self.var_5844252c, self.team );
+        self.tacofx = util::playfxontag( localclientnum, level.tacofx, self.var_47b256ef, "tag_origin" );
+        setfxteam( localclientnum, self.tacofx, self.team );
     }
     
     if ( newval == 1 )
@@ -75,7 +75,7 @@ function function_11abf5b2( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( newval == 2 )
     {
-        self thread function_d1834e16( localclientnum );
+        self thread bounce_effect( localclientnum );
     }
 }
 
@@ -97,10 +97,10 @@ function function_bcb88fb7( localclientnum )
 // Size: 0x3e
 function function_81431153( localclientnum )
 {
-    if ( isdefined( self.var_5844252c ) )
+    if ( isdefined( self.tacofx ) )
     {
-        killfx( localclientnum, self.var_5844252c );
-        self.var_5844252c = undefined;
+        killfx( localclientnum, self.tacofx );
+        self.tacofx = undefined;
     }
 }
 
@@ -108,7 +108,7 @@ function function_81431153( localclientnum )
 // Params 1
 // Checksum 0xddaa6c37, Offset: 0x6e0
 // Size: 0xfc
-function function_d1834e16( localclientnum )
+function bounce_effect( localclientnum )
 {
     self endon( #"stopbounce" );
     self endon( #"death" );

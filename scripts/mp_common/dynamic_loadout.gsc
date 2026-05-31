@@ -619,9 +619,9 @@ function private function_659633d8( var_31e314e8 )
 {
     switch ( var_31e314e8.name )
     {
-        case #"hash_16cfc7f70dbd8712":
+        case #"gear_armor_tier_two":
             return #"specialty_armor_tier_two";
-        case #"hash_39045b0020cc3e00":
+        case #"gear_armor_tier_three":
             return #"specialty_armor_tier_three";
         default:
             return #"specialty_armor";
@@ -641,9 +641,9 @@ function private function_51a2c3b3( var_31e314e8 )
     
     switch ( var_31e314e8.name )
     {
-        case #"hash_16cfc7f70dbd8712":
+        case #"gear_armor_tier_two":
             playfxontag( #"hash_56c8182de62c1c6", self, "j_spineupper" );
-        case #"hash_39045b0020cc3e00":
+        case #"gear_armor_tier_three":
             playfxontag( #"hash_3c6a01bd4394d4f3", self, "j_spineupper" );
         default:
             playfxontag( #"hash_4a955131370a3720", self, "j_spineupper" );
@@ -755,7 +755,7 @@ function private function_898839b4()
         }
     }
     
-    return getweapon( #"hash_1773b576c62a506" );
+    return getweapon( #"bare_hands_bounty" );
 }
 
 // Namespace dynamic_loadout/dynamic_loadout

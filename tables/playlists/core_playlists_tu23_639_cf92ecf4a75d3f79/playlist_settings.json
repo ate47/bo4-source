@@ -1,0 +1,2074 @@
+{
+    "name": "#playlist_settings",
+    "version": 68,
+    "checksum": 2024429203,
+    "rules": [
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#marketing_enabled",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#arena_defaultplaylist",
+            "value": "40",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#tu2_disablechallengesforlockeditemsinarena",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#groupcountsvisible",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#tu2_catchmissingrbendframe",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#fracture_enabled",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#cg_paintshopforcecleardiskcache",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#totalsamplerateblackbox",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_7553d84fb958d9f0",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#lobbysearchskipdlcprobability",
+            "value": "0.5",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#demo_fileblockwriterate",
+            "value": "30",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#profiledwupdateinterval",
+            "value": "-1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#tu9_highestavailabledlc",
+            "value": "6",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_60defd1cfc9d3495",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_79b57f7244620e28",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#probation_league_enabled",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#probation_version",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#loot_enabled",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#tu4_burnduplicates",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#loot_mpitemversions",
+            "value": "1,2,3,4,5,6,7,8",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_1f9978289daaa740",
+            "value": "MENU/MONTHS_JUL",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#inventory_maxpages",
+            "value": "8",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#inventory_itemsperpage",
+            "value": "513",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_18fc8b5dde925a02",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#loot_bribecrate_dwid",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#loot_bribecrate_cpcost",
+            "value": "300",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_edd48f4dbf3bdaa",
+            "value": "60",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_64a03ce96aabe0ba",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#tu3_lobby_droprejoiningclients",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#lobbysearchmindedisearchtime",
+            "value": "30",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#lobbysearchmindedisearchclientadd",
+            "value": "5",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#qos_echo_chance",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#demo_downloadentirefile",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#mlg_audio_volume",
+            "value": "1.75",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#forceliveevent",
+            "value": "-1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_48ae44a948ef5ae0",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#arena_enablearenachallenges",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_71c83c841914b02b",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#enable_retail_incentive",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#enable_season_pass_incentive",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_572e0bb69f3dc902",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_8632208b0221599",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#survey_count",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#survey_chance",
+            "value": ".001",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#live_enablepolls",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#live_experimentsenabled",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 4,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#profiledwupdateinterval",
+            "value": "10",
+            "platformMask": 7,
+            "environmentMask": 4,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#tu8_enabledurableproductsexchange",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#arena_enablelistenhosting",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 1,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#sv_mapswitchpreloadfrontend",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 4,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 4,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#com_script_recordeventprobability_client",
+            "value": "0.0001",
+            "platformMask": 7,
+            "environmentMask": 6,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#com_script_recordeventprobability_server",
+            "value": "0.0001",
+            "platformMask": 7,
+            "environmentMask": 6,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#com_script_recordeventprobability_client",
+            "value": "1.0",
+            "platformMask": 7,
+            "environmentMask": 1,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#com_script_recordeventprobability_server",
+            "value": "1.0",
+            "platformMask": 7,
+            "environmentMask": 1,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_3d5134a2ca8dc94e",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#live_useumbrella",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_3844122242209637",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_showwarzone",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_475d40fd034432a4",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#lobby_matchmakingtest",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_4c9e3bec0d93697b",
+            "value": "45000",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_29e281e55a8dcd19",
+            "value": "1.0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_7e000f33d5986319",
+            "value": "1.0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_35605714e01de6d0",
+            "value": "45000",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_1c1b99856528fdf9",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_2cc9b0ef1896d89a",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_4264944aa415ec0",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_743d611f01babb41",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 4,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#cl_packetdup",
+            "value": "4",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_46d1131228da307d",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_6e24885f4fa8a2a2",
+            "value": "16000",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_50d334bd22c16346",
+            "value": "25",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#loot_allow_stream_progress",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_ed47eb88ebf25b2",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#loot_enableblackmarket",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#live_autoeventenabled",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#tu4_enablecodpoints",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#zm_personalization",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_138e4c481ef6cfb1",
+            "value": "0.308",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_13a346481f092189",
+            "value": "0.336",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_4571c0e5a8f3be34",
+            "value": "0.308",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_2dd67fb3e65f3d8b",
+            "value": "0.308",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#laboratory_codpoints_enabled",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_enableitemshop",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_32512fbbbaae5e39",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#loot_tier_skips_enabled",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_50c636b462826c27",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_791817cfbe348223",
+            "value": "7",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#laboratory_show_special_offers",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_3aba86ed113b0d17",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_1ce7bfb47551fb23",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_69b436c6e1560b5c",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_showzmaarstamp",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#wz_offline",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#wz_mp_character_unlocks_outfits",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#tabbedmultiitempickup",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_4b83f2025861254e",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_65ace5f4e5f09824",
+            "value": "FNG",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#enablewzweaponpersonalization",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_showwzpersonalization",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_1788f2e1ae9c2cc3",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_zmenablemasterycamos",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#tu12_zmenablereticlecustomization",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_1fdb5e4871cd9666",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_5f2ca8473fe83d33",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_524f09132bf3b228",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_242c984f3186d725",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_66dd613db7550bc5",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_777e610875906022",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 6,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#demo_filesizelimit",
+            "value": "30",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_enableprestigewz",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_4fdf506c770b343",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_19f350e474489456",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_65bdf5cf34dd4a2d",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_54a35a9a09159e10",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#live_supports_paragon_wz",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_5bb505659db06d9b",
+            "value": "0.308",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_5b9ffb659d9e0093",
+            "value": "0.336",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_41ef264ae8370dc7",
+            "value": "2",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_6278f2b45a6906e7",
+            "value": "200",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_59cf9b57d5140714",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_39c2fac18048e5c7",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_1be82680d771cfa1",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#cg_allowdavidmason",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_1e7a59ec414a9aa0",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_406dceec6665bab7",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#zm_holiday_event",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_2a2b2cff0731bedf",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_131b12f5b3ef14f9",
+            "value": "180",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_allowreactiveonanyweapon",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_49ef5478510b5af3",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_37c3ebc11793a175",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_4686ed971e896201",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_3323f1a0f6c70ed0",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_4a691796c1d95e3b",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_15fce0f7071c3495",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_7dccfb95a022e8d8",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_5e563e6544ff9705",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_72642ac141d2411d",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#arena_showskilldivisioninformation",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_53ef31f82cad4be1",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_54a800edd0c9bde2",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#lobby_gestures_enabled",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_5715f2013b7512b0",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_6a29eb7b0b47996c",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_6362dedc404612d0",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_632261e3333dc0e9",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_470bedfad5049e10",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#enable_clip_mask",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_7dc2e4c6eddb0062",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_253f500bc17b06ca",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_19118694b8022530",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_2af367141bf7ea81",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_1e30b8b2f3629da3",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_10956c9a593b283c",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_167f161c4baa5d55",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "platformMask": 0,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_4a8cf37dd4fd801b",
+            "value": "1,2,3,4",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_showwzcustomgameoption",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_enablecontracts",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_4e1190045ef3588b",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_5bfa5bda576be7c4",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_21232038a2928edd",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#lootcontracts_version",
+            "value": "9",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_191fb26f9f52274",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#lootcontracts_enabled",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#scr_contract_debug",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_enablecontractsandbounties",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#contracts_enabled_mp",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#contracts_enabled_cwl",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#contracts_enabled_wz",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#contracts_enabled_zm",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#contracts_enabled",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_3e9e1ba445014bad",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_wzmedalsenabled",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_464823fbbf00e91e",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_enablenodupecrates",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_645494e5865d80f",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_73741541de314c2a",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_1c1a8ed8d0bf271c",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_7fe994cf328ab60b",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_spectrerewardswap",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_23b9c106cfcde18b",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#lobbymultiplaylistsearchenabled",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_freempdlc",
+            "value": "0",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_prioritizequickplayforshowcase",
+            "value": "1",
+            "platformMask": 6,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_prioritizequickplayforshowcase",
+            "value": "-1",
+            "platformMask": 1,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_3a7864b7f74641c9",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#hash_3a646ab7f735a2f1",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#ui_showquickplayinplaylistszm",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        },
+        {
+            "type": "SET_DVAR",
+            "name": "#live_useregulation",
+            "value": "1",
+            "platformMask": 7,
+            "environmentMask": 7,
+            "utcStartTime": 0,
+            "utcEndTime": 0
+        }
+    ]
+}

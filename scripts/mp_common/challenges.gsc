@@ -1258,7 +1258,7 @@ function function_a79ea08b( einflictor, victim, idamage, weapon )
         
         if ( var_6af452fc.var_b535f1ea === self && isdefined( var_6af452fc.var_2acdce3e ) )
         {
-            if ( isdefined( var_6af452fc.var_2acdce3e[ #"hash_1527a22d8a6fdc21" ] ) && var_6af452fc.var_2acdce3e[ #"hash_1527a22d8a6fdc21" ].endtime > time )
+            if ( isdefined( var_6af452fc.var_2acdce3e[ #"stunned_slow_grenade" ] ) && var_6af452fc.var_2acdce3e[ #"stunned_slow_grenade" ].endtime > time )
             {
                 if ( self util::is_item_purchased( #"eq_slow_grenade" ) )
                 {
@@ -2479,11 +2479,11 @@ function function_223ff464()
         self force_challenge_stat( #"mastery_marksman", 0 );
         marksmanarray = [];
         array::add( marksmanarray, #"hash_4075f20007923416" );
-        array::add( marksmanarray, #"hash_72d1952fced05f40" );
+        array::add( marksmanarray, #"gold_any_smg" );
         array::add( marksmanarray, #"hash_70cd6c54d1c07272" );
-        array::add( marksmanarray, #"hash_6b828c2fcb0e8df5" );
+        array::add( marksmanarray, #"gold_any_lmg" );
         array::add( marksmanarray, #"hash_2ea8a6bab2364c58" );
-        array::add( marksmanarray, #"hash_7ecfcae46143397c" );
+        array::add( marksmanarray, #"gold_any_pistol" );
         array::add( marksmanarray, #"hash_3b30f98820bc20cf" );
         array::add( marksmanarray, #"hash_18816731b999fbfb" );
         array::add( marksmanarray, #"hash_6c1c399dcbe1af97" );
@@ -3141,7 +3141,7 @@ function function_2f462ffd( victim, weapon, inflictor, objective )
         
         if ( isdefined( victim.lastconcussedby ) && victim.lastconcussedby == self && isdefined( victim.var_121392a1 ) )
         {
-            if ( isdefined( victim.var_121392a1[ #"hash_1527a22d8a6fdc21" ] ) && victim.var_121392a1[ #"hash_1527a22d8a6fdc21" ].endtime > gettime() )
+            if ( isdefined( victim.var_121392a1[ #"stunned_slow_grenade" ] ) && victim.var_121392a1[ #"stunned_slow_grenade" ].endtime > gettime() )
             {
                 if ( self util::is_item_purchased( #"eq_slow_grenade" ) )
                 {

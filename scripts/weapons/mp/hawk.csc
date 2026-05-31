@@ -225,9 +225,9 @@ function function_775073e( localclientnum )
         codestoppostfxbundlelocal( localclientnum, #"hash_63b0389eb9286669" );
     }
     
-    if ( !function_148ccc79( localclientnum, #"hash_594d5293046135ff" ) )
+    if ( !function_148ccc79( localclientnum, #"pstfx_mp_recon_drone" ) )
     {
-        function_a837926b( localclientnum, #"hash_594d5293046135ff" );
+        function_a837926b( localclientnum, #"pstfx_mp_recon_drone" );
     }
     
     var_e39026ad = createuimodel( getuimodelforcontroller( localclientnum ), "hudItems.hawkWeakSignal" );
@@ -244,9 +244,9 @@ function function_775073e( localclientnum )
 // Size: 0xec
 function function_6367489e( localclientnum )
 {
-    if ( function_148ccc79( localclientnum, #"hash_594d5293046135ff" ) )
+    if ( function_148ccc79( localclientnum, #"pstfx_mp_recon_drone" ) )
     {
-        codestoppostfxbundlelocal( localclientnum, #"hash_594d5293046135ff" );
+        codestoppostfxbundlelocal( localclientnum, #"pstfx_mp_recon_drone" );
     }
     
     if ( !function_148ccc79( localclientnum, #"hash_63b0389eb9286669" ) )
@@ -268,9 +268,9 @@ function function_6367489e( localclientnum )
 // Size: 0xec
 function function_3759fcf( localclientnum, var_c5e2f09a )
 {
-    if ( function_148ccc79( localclientnum, #"hash_594d5293046135ff" ) )
+    if ( function_148ccc79( localclientnum, #"pstfx_mp_recon_drone" ) )
     {
-        codestoppostfxbundlelocal( localclientnum, #"hash_594d5293046135ff" );
+        codestoppostfxbundlelocal( localclientnum, #"pstfx_mp_recon_drone" );
     }
     
     if ( function_148ccc79( localclientnum, #"hash_63b0389eb9286669" ) )

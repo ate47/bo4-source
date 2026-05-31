@@ -27,15 +27,15 @@
 #using scripts\zm_common\zm_vo;
 #using scripts\zm_common\zm_zonemgr;
 
-#namespace namespace_a8113e97;
+#namespace mansion_ley_line;
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x2837a2c1, Offset: 0xa30
 // Size: 0x804
 function init()
 {
-    clientfield::register( "allplayers", "" + #"hash_5370f4bc9fc25d13", 8000, 1, "int" );
+    clientfield::register( "allplayers", "" + #"shield_elec_fx", 8000, 1, "int" );
     clientfield::register( "scriptmover", "" + #"ley_lines", 8000, 2, "int" );
     clientfield::register( "scriptmover", "" + #"power_beam", 8000, 2, "int" );
     clientfield::register( "scriptmover", "" + #"red_ray", 8000, 2, "int" );
@@ -44,8 +44,8 @@ function init()
     clientfield::register( "scriptmover", "" + #"stone_glow", 8000, 1, "int" );
     clientfield::register( "scriptmover", "" + #"stone_despawn", 8000, 1, "counter" );
     clientfield::register( "scriptmover", "" + #"stone_soul", 8000, 1, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_34c5ab29531f15f0", 8000, 1, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_546e7612359187c3", 8000, 1, "counter" );
+    clientfield::register( "scriptmover", "" + #"atlas_crystal_fx", 8000, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"coil_hit_fx", 8000, 1, "counter" );
     clientfield::register( "toplayer", "" + #"mansion_mq_rumble", 8000, 1, "counter" );
     clientfield::register( "world", "" + #"skybox_stream", 8000, 1, "int" );
     register_steps();
@@ -64,18 +64,18 @@ function init()
     level.mdl_ring_middle linkto( level.mdl_ring_middle.e_linkto );
     level.mdl_ring_inner.e_linkto = getent( "ring_inner_linkto", "targetname" );
     level.mdl_ring_inner linkto( level.mdl_ring_inner.e_linkto );
-    level.mdl_ring_outer.var_846c254a = getent( level.mdl_ring_outer.target, "targetname" );
-    level.mdl_ring_middle.var_846c254a = getent( level.mdl_ring_middle.target, "targetname" );
-    level.mdl_ring_inner.var_846c254a = getent( level.mdl_ring_inner.target, "targetname" );
-    level.mdl_ring_outer.var_846c254a linkto( level.mdl_ring_outer );
-    level.mdl_ring_middle.var_846c254a linkto( level.mdl_ring_middle );
-    level.mdl_ring_inner.var_846c254a linkto( level.mdl_ring_inner );
-    level.mdl_ring_outer.v_start = level.mdl_ring_outer.var_846c254a.origin;
-    level.mdl_ring_middle.v_start = level.mdl_ring_middle.var_846c254a.origin;
-    level.mdl_ring_inner.v_start = level.mdl_ring_inner.var_846c254a.origin;
+    level.mdl_ring_outer.e_pos = getent( level.mdl_ring_outer.target, "targetname" );
+    level.mdl_ring_middle.e_pos = getent( level.mdl_ring_middle.target, "targetname" );
+    level.mdl_ring_inner.e_pos = getent( level.mdl_ring_inner.target, "targetname" );
+    level.mdl_ring_outer.e_pos linkto( level.mdl_ring_outer );
+    level.mdl_ring_middle.e_pos linkto( level.mdl_ring_middle );
+    level.mdl_ring_inner.e_pos linkto( level.mdl_ring_inner );
+    level.mdl_ring_outer.v_start = level.mdl_ring_outer.e_pos.origin;
+    level.mdl_ring_middle.v_start = level.mdl_ring_middle.e_pos.origin;
+    level.mdl_ring_inner.v_start = level.mdl_ring_inner.e_pos.origin;
     mdl_stone = getent( "stone_obs", "targetname" );
     mdl_stone ghost();
-    level thread function_5f259315();
+    level thread start_ley_line();
     level thread function_30fcf7ae();
     
     if ( zm_utility::is_ee_enabled() )
@@ -86,7 +86,7 @@ function init()
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x3c411fbf, Offset: 0x1240
 // Size: 0x3a4
@@ -121,11 +121,11 @@ function function_30fcf7ae()
     level.e_red clientfield::set( "" + #"red_ray", 1 );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x5a13781, Offset: 0x15f0
 // Size: 0x9c
-function function_5f259315()
+function start_ley_line()
 {
     level flag::wait_till( #"open_pap" );
     
@@ -138,7 +138,7 @@ function function_5f259315()
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x354aef79, Offset: 0x1698
 // Size: 0x184
@@ -150,7 +150,7 @@ function register_steps()
     zm_sq::register( #"zm_mansion_ley_line", #"step_4", #"ley_line_step_4", &init_step_4, &cleanup_step_4 );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xee9a857e, Offset: 0x1828
 // Size: 0x1c4
@@ -172,7 +172,7 @@ function init_flags()
     level flag::init( #"hash_702dbaf6695a5607" );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0x1d13099e, Offset: 0x19f8
 // Size: 0x134
@@ -197,7 +197,7 @@ function init_step_1( var_a276c861 )
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 2
 // Checksum 0x3fbd42a5, Offset: 0x1b38
 // Size: 0x17c
@@ -215,13 +215,13 @@ function cleanup_step_1( var_5ea5c94d, ended_early )
     var_2782a2fe clientfield::set( "" + #"ley_lines", 1 );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0x508108c2, Offset: 0x1cc0
 // Size: 0x5c
 function init_step_2( var_a276c861 )
 {
-    level zm_ui_inventory::function_7df6bb60( #"hash_7b006e4a8b2139a2", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_2", 1 );
     
     if ( !var_a276c861 )
     {
@@ -229,7 +229,7 @@ function init_step_2( var_a276c861 )
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 2
 // Checksum 0xd49a21b1, Offset: 0x1d28
 // Size: 0x34
@@ -238,13 +238,13 @@ function cleanup_step_2( var_5ea5c94d, ended_early )
     level flag::set( #"rings_done" );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0x5880635c, Offset: 0x1d68
 // Size: 0x15c
 function init_step_3( var_a276c861 )
 {
-    level zm_ui_inventory::function_7df6bb60( #"hash_7b006f4a8b213b55", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_3", 1 );
     exploder::exploder( "fxexp_telescope_charge" );
     playsoundatposition( #"hash_75404411ef08e098", ( 4029, -146, -138 ) );
     level thread door_opener();
@@ -262,7 +262,7 @@ function init_step_3( var_a276c861 )
     level thread tube_shoot();
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 2
 // Checksum 0x1a1f04cd, Offset: 0x1ed0
 // Size: 0x2bc
@@ -296,13 +296,13 @@ function cleanup_step_3( var_5ea5c94d, ended_early )
     var_7f147f52 delete();
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0x91c1f17c, Offset: 0x2198
 // Size: 0x1dc
 function init_step_4( var_a276c861 )
 {
-    level zm_ui_inventory::function_7df6bb60( #"hash_7b00684a8b212f70", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_4", 1 );
     level thread function_c888f1f4();
     level thread function_1be5e603();
     
@@ -328,7 +328,7 @@ function init_step_4( var_a276c861 )
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 2
 // Checksum 0x599e23e1, Offset: 0x2380
 // Size: 0x174
@@ -351,7 +351,7 @@ function cleanup_step_4( var_5ea5c94d, ended_early )
     mdl_relic clientfield::set( "" + #"stone_glow", 1 );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x83b4d470, Offset: 0x2500
 // Size: 0x1a0
@@ -374,7 +374,7 @@ function function_55b79f54()
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0x90e49969, Offset: 0x26a8
 // Size: 0xc
@@ -383,20 +383,20 @@ function function_a8de7aeb( player )
     
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x9010b346, Offset: 0x26c0
 // Size: 0xe4
 function crescent_activate()
 {
     level flag::wait_till( #"gazed_library" );
-    level zm_ui_inventory::function_7df6bb60( #"hash_7b006d4a8b2137ef", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_1", 1 );
     scene::add_scene_func( #"p8_fxanim_zm_man_beam_device_bundle", &function_d961aafc, "shot 1" );
     level scene::play( #"p8_fxanim_zm_man_beam_device_bundle", "shot 1" );
     scene::remove_scene_func( #"p8_fxanim_zm_man_beam_device_bundle", &function_d961aafc, "shot 1" );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0xfa8a6909, Offset: 0x27b0
 // Size: 0x7c
@@ -408,7 +408,7 @@ function function_d961aafc( a_ents )
     level thread function_fde77b55();
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x581e97bf, Offset: 0x2838
 // Size: 0x1ba
@@ -430,7 +430,7 @@ function function_70d8a7cb()
                 if ( a_players[ i ] === s_result.attacker )
                 {
                     self playsound( #"hash_7651f08f562fc850" );
-                    self clientfield::increment( "" + #"hash_546e7612359187c3", 1 );
+                    self clientfield::increment( "" + #"coil_hit_fx", 1 );
                     level flag::set( "symbol_hit_player_" + i + 1 );
                 }
             }
@@ -438,7 +438,7 @@ function function_70d8a7cb()
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0xe4ba85e, Offset: 0x2a00
 // Size: 0x26a
@@ -476,14 +476,14 @@ function function_fde77b55( mdl_coil )
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x4c60f120, Offset: 0x2c78
 // Size: 0x31c
 function function_d3128b5f()
 {
     level flag::wait_till( #"ley_start" );
-    level.mdl_crystal clientfield::set( "" + #"hash_34c5ab29531f15f0", 0 );
+    level.mdl_crystal clientfield::set( "" + #"atlas_crystal_fx", 0 );
     var_95807f2d = [];
     a_s_rings = struct::get_array( #"control_ring", "script_string" );
     
@@ -525,7 +525,7 @@ function function_d3128b5f()
     #/
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xeede6759, Offset: 0x2fa0
 // Size: 0x194
@@ -565,7 +565,7 @@ function rings_start()
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0x930aeaa6, Offset: 0x3140
 // Size: 0x206
@@ -617,7 +617,7 @@ function function_57692917( s_ring )
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xf027c70a, Offset: 0x3350
 // Size: 0x16c
@@ -632,13 +632,13 @@ function ring_reset()
     level.mdl_ring_outer.e_linkto waittilltimeout( 2, #"rotatedone" );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 3
 // Checksum 0xbe66fdef, Offset: 0x34c8
 // Size: 0x4b4
-function ring_rotate( str_pos, s_ring, var_50cc0d4f = 1 )
+function ring_rotate( str_pos, s_ring, b_starting = 1 )
 {
-    if ( var_50cc0d4f )
+    if ( b_starting )
     {
         n_move_time = 0.1;
     }
@@ -653,7 +653,7 @@ function ring_rotate( str_pos, s_ring, var_50cc0d4f = 1 )
         n_rot = 30;
         var_6c4c2561 = -30;
         
-        if ( !var_50cc0d4f )
+        if ( !b_starting )
         {
             level thread scene::play( s_ring.script_noteworthy + "_control", "wheel_right" );
         }
@@ -663,7 +663,7 @@ function ring_rotate( str_pos, s_ring, var_50cc0d4f = 1 )
         n_rot = -30;
         var_6c4c2561 = 30;
         
-        if ( !var_50cc0d4f )
+        if ( !b_starting )
         {
             level thread scene::play( s_ring.script_noteworthy + "_control", "wheel_left" );
         }
@@ -692,7 +692,7 @@ function ring_rotate( str_pos, s_ring, var_50cc0d4f = 1 )
             break;
     }
     
-    if ( var_50cc0d4f )
+    if ( b_starting )
     {
         level.mdl_ring_inner.e_linkto.var_5287d229 = level.mdl_ring_inner.e_linkto.angles;
         level.mdl_ring_middle.e_linkto.var_5287d229 = level.mdl_ring_middle.e_linkto.angles;
@@ -707,7 +707,7 @@ function ring_rotate( str_pos, s_ring, var_50cc0d4f = 1 )
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0x1849b927, Offset: 0x3988
 // Size: 0x324
@@ -756,7 +756,7 @@ function ring_watcher( player )
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x5f34e52d, Offset: 0x3cb8
 // Size: 0x42c
@@ -770,7 +770,7 @@ function function_71d1b235()
     s_atlas thread scene::play( "melt" );
     e_head = getent( "head_collision", "targetname" );
     e_head movey( 32, 3 );
-    level.mdl_crystal clientfield::set( "" + #"hash_34c5ab29531f15f0", 1 );
+    level.mdl_crystal clientfield::set( "" + #"atlas_crystal_fx", 1 );
     level waittill( #"rings_delete" );
     level.mdl_rings showpart( "link_ring1_jnt", "p8_fxanim_zm_man_atlas_rings_mod", 1 );
     level.mdl_rings showpart( "link_ring2_jnt", "p8_fxanim_zm_man_atlas_rings_mod", 1 );
@@ -810,7 +810,7 @@ function function_71d1b235()
     level scene::play( #"p8_fxanim_zm_man_atlas_control_panel_bundle", "close" );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0x9e5467ae, Offset: 0x40f0
 // Size: 0x14c
@@ -820,33 +820,33 @@ function function_ea49787e( a_ents )
     level.mdl_atlas = a_ents[ #"atlas" ];
     level.mdl_rings = a_ents[ #"atlas_rings" ];
     util::wait_network_frame( 5 );
-    level.mdl_crystal clientfield::set( "" + #"hash_34c5ab29531f15f0", 1 );
+    level.mdl_crystal clientfield::set( "" + #"atlas_crystal_fx", 1 );
     level.mdl_rings hidepart( "link_ring1_jnt", "p8_fxanim_zm_man_atlas_rings_mod", 1 );
     level.mdl_rings hidepart( "link_ring2_jnt", "p8_fxanim_zm_man_atlas_rings_mod", 1 );
     level.mdl_rings hidepart( "link_ring3_jnt", "p8_fxanim_zm_man_atlas_rings_mod", 1 );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xb0af5faa, Offset: 0x4248
 // Size: 0x154
 function function_f856cc2()
 {
     level.mdl_ring_outer.e_linkto delete();
-    level.mdl_ring_outer.var_846c254a delete();
+    level.mdl_ring_outer.e_pos delete();
     level.mdl_ring_outer delete();
     level.mdl_ring_middle.e_linkto delete();
-    level.mdl_ring_middle.var_846c254a delete();
+    level.mdl_ring_middle.e_pos delete();
     level.mdl_ring_middle delete();
     level.mdl_ring_inner.e_linkto delete();
-    level.mdl_ring_inner.var_846c254a delete();
+    level.mdl_ring_inner.e_pos delete();
     level.mdl_ring_inner delete();
     level.e_blue delete();
     level.e_red delete();
     level.e_green delete();
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0x260d649a, Offset: 0x43a8
 // Size: 0x6c
@@ -856,7 +856,7 @@ function function_604f9d73( a_ents )
     scene::remove_scene_func( #"p8_fxanim_zm_man_telescope_bundle", &function_604f9d73, "init" );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xf68bddce, Offset: 0x4420
 // Size: 0xc8
@@ -870,7 +870,7 @@ function function_b1b02a54()
     return mdl_wheel;
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x898bc4aa, Offset: 0x44f0
 // Size: 0xec
@@ -886,7 +886,7 @@ function door_opener()
     zm_unitrigger::unregister_unitrigger( var_47323b73 );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x85e9e966, Offset: 0x45e8
 // Size: 0x788
@@ -994,7 +994,7 @@ function function_250cf19b()
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x2b32eb, Offset: 0x4d78
 // Size: 0x288
@@ -1025,7 +1025,7 @@ function function_5164d716()
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x23acb2fe, Offset: 0x5008
 // Size: 0x248
@@ -1053,7 +1053,7 @@ function function_e188ae5d()
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x5b7e8c9f, Offset: 0x5258
 // Size: 0x388
@@ -1115,7 +1115,7 @@ function function_3f64b455()
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0x9c7836ef, Offset: 0x55e8
 // Size: 0x128
@@ -1135,7 +1135,7 @@ function function_39b9ecb( s_unitrigger )
     return 0;
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xb389514, Offset: 0x5718
 // Size: 0x4c
@@ -1146,7 +1146,7 @@ function function_5e54642e()
     self zm_unitrigger::function_69168e61();
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x86999a2e, Offset: 0x5770
 // Size: 0x45c
@@ -1155,29 +1155,29 @@ function function_9513d3a6()
     level flag::wait_till( #"rings_done" );
     a_s_locs = struct::get_array( "symbol_combo_loc" );
     struct::get( "s_zodiac_symbol_spawn" );
-    var_3ab52107 = [];
+    a_n_symbols = [];
     
     for ( i = 1; i <= 12 ; i++ )
     {
-        if ( !isdefined( var_3ab52107 ) )
+        if ( !isdefined( a_n_symbols ) )
         {
-            var_3ab52107 = [];
+            a_n_symbols = [];
         }
-        else if ( !isarray( var_3ab52107 ) )
+        else if ( !isarray( a_n_symbols ) )
         {
-            var_3ab52107 = array( var_3ab52107 );
+            a_n_symbols = array( a_n_symbols );
         }
         
-        var_3ab52107[ var_3ab52107.size ] = i;
+        a_n_symbols[ a_n_symbols.size ] = i;
     }
     
     if ( isdefined( level.var_d181080c ) )
     {
         foreach ( mdl_symbol in level.var_d181080c )
         {
-            if ( isdefined( mdl_symbol.var_c6f538f0 ) )
+            if ( isdefined( mdl_symbol.a_mdl_hints ) )
             {
-                array::run_all( mdl_symbol.var_c6f538f0, &delete );
+                array::run_all( mdl_symbol.a_mdl_hints, &delete );
             }
             
             mdl_symbol delete();
@@ -1189,8 +1189,8 @@ function function_9513d3a6()
     
     for ( i = 0; i < 3 ; i++ )
     {
-        n_symbol = array::random( var_3ab52107 );
-        arrayremovevalue( var_3ab52107, n_symbol );
+        n_symbol = array::random( a_n_symbols );
+        arrayremovevalue( a_n_symbols, n_symbol );
         
         switch ( n_symbol )
         {
@@ -1242,7 +1242,7 @@ function function_9513d3a6()
     level thread function_8ced5d5b();
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xab4bef59, Offset: 0x5bd8
 // Size: 0x1a6
@@ -1258,66 +1258,66 @@ function function_8ced5d5b()
         arrayremovevalue( a_n_numbers, n_num );
     }
     
-    var_db303d4f = array::sort_by_value( var_679750f5, 1 );
+    a_n_hints = array::sort_by_value( var_679750f5, 1 );
     
     for ( i = 0; i < 3 ; i++ )
     {
         level.var_d181080c[ i ].origin = level.var_d181080c[ i ].s_loc.origin;
         level.var_d181080c[ i ].angles = level.var_d181080c[ i ].s_loc.angles;
-        level.var_d181080c[ i ].var_19d827d = var_db303d4f[ i ];
+        level.var_d181080c[ i ].n_hints = a_n_hints[ i ];
         level.var_d181080c[ i ] thread function_7cc34fef();
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x9b4193d, Offset: 0x5d88
 // Size: 0x5d2
 function function_7cc34fef()
 {
-    self.var_c6f538f0 = [];
+    self.a_mdl_hints = [];
     self.a_s_locs = struct::get_array( self.s_loc.script_noteworthy );
     self.a_s_locs = array::randomize( self.a_s_locs );
     
-    switch ( self.var_19d827d )
+    switch ( self.n_hints )
     {
         case 7:
-            self.var_c6f538f0[ 0 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[ 0 ].origin, self.a_s_locs[ 0 ].angles );
-            self.var_c6f538f0[ 1 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_04_01", self.a_s_locs[ 1 ].origin, self.a_s_locs[ 1 ].angles );
+            self.a_mdl_hints[ 0 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[ 0 ].origin, self.a_s_locs[ 0 ].angles );
+            self.a_mdl_hints[ 1 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_04_01", self.a_s_locs[ 1 ].origin, self.a_s_locs[ 1 ].angles );
             break;
         case 9:
             if ( math::cointoss() )
             {
-                self.var_c6f538f0[ 0 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_04_01", self.a_s_locs[ 0 ].origin, self.a_s_locs[ 0 ].angles );
-                self.var_c6f538f0[ 1 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[ 1 ].origin, self.a_s_locs[ 1 ].angles );
+                self.a_mdl_hints[ 0 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_04_01", self.a_s_locs[ 0 ].origin, self.a_s_locs[ 0 ].angles );
+                self.a_mdl_hints[ 1 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[ 1 ].origin, self.a_s_locs[ 1 ].angles );
             }
             else
             {
-                self.var_c6f538f0[ 0 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[ 0 ].origin, self.a_s_locs[ 0 ].angles );
-                self.var_c6f538f0[ 1 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[ 1 ].origin, self.a_s_locs[ 1 ].angles );
-                self.var_c6f538f0[ 2 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[ 2 ].origin, self.a_s_locs[ 2 ].angles );
+                self.a_mdl_hints[ 0 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[ 0 ].origin, self.a_s_locs[ 0 ].angles );
+                self.a_mdl_hints[ 1 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[ 1 ].origin, self.a_s_locs[ 1 ].angles );
+                self.a_mdl_hints[ 2 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[ 2 ].origin, self.a_s_locs[ 2 ].angles );
             }
             
             break;
         case 11:
-            self.var_c6f538f0[ 0 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[ 0 ].origin, self.a_s_locs[ 0 ].angles );
-            self.var_c6f538f0[ 1 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[ 1 ].origin, self.a_s_locs[ 1 ].angles );
-            self.var_c6f538f0[ 2 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[ 2 ].origin, self.a_s_locs[ 2 ].angles );
+            self.a_mdl_hints[ 0 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[ 0 ].origin, self.a_s_locs[ 0 ].angles );
+            self.a_mdl_hints[ 1 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[ 1 ].origin, self.a_s_locs[ 1 ].angles );
+            self.a_mdl_hints[ 2 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[ 2 ].origin, self.a_s_locs[ 2 ].angles );
             break;
         case 13:
-            self.var_c6f538f0[ 0 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[ 0 ].origin, self.a_s_locs[ 0 ].angles );
-            self.var_c6f538f0[ 1 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[ 1 ].origin, self.a_s_locs[ 1 ].angles );
-            self.var_c6f538f0[ 2 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[ 2 ].origin, self.a_s_locs[ 2 ].angles );
+            self.a_mdl_hints[ 0 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[ 0 ].origin, self.a_s_locs[ 0 ].angles );
+            self.a_mdl_hints[ 1 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[ 1 ].origin, self.a_s_locs[ 1 ].angles );
+            self.a_mdl_hints[ 2 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[ 2 ].origin, self.a_s_locs[ 2 ].angles );
             break;
         case 15:
-            self.var_c6f538f0[ 0 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[ 0 ].origin, self.a_s_locs[ 0 ].angles );
-            self.var_c6f538f0[ 1 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[ 1 ].origin, self.a_s_locs[ 1 ].angles );
-            self.var_c6f538f0[ 2 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[ 2 ].origin, self.a_s_locs[ 2 ].angles );
+            self.a_mdl_hints[ 0 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[ 0 ].origin, self.a_s_locs[ 0 ].angles );
+            self.a_mdl_hints[ 1 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[ 1 ].origin, self.a_s_locs[ 1 ].angles );
+            self.a_mdl_hints[ 2 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[ 2 ].origin, self.a_s_locs[ 2 ].angles );
             break;
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x299610a2, Offset: 0x6368
 // Size: 0x310
@@ -1362,7 +1362,7 @@ function function_bfefc7aa()
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x286f7f7e, Offset: 0x6680
 // Size: 0x628
@@ -1427,7 +1427,7 @@ function combo_watcher()
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x3bedf87, Offset: 0x6cb0
 // Size: 0x16c
@@ -1444,7 +1444,7 @@ function function_d8162064()
     level flag::set( #"hash_702dbaf6695a5607" );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0x2f955fbf, Offset: 0x6e28
 // Size: 0xe8
@@ -1472,7 +1472,7 @@ function function_a99a5c4e( a_s_valid_respawn_points )
     return var_e9b059c7;
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x219e5ae1, Offset: 0x6f18
 // Size: 0xec
@@ -1487,7 +1487,7 @@ function power_beam()
     level thread zm_utility::function_9ad5aeb1( 1, 1, 0, 1, 0 );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xa8c2c9a3, Offset: 0x7010
 // Size: 0x292
@@ -1543,7 +1543,7 @@ function function_d5bfc8e8()
     while ( var_1a50a8c5 < getplayers().size );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xc08fc02a, Offset: 0x72b0
 // Size: 0x8e
@@ -1562,7 +1562,7 @@ function function_3d93d103()
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0x2dfdaf17, Offset: 0x7348
 // Size: 0x1ce
@@ -1592,7 +1592,7 @@ function function_b87ae607( n_stage )
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0x1bb0bf3d, Offset: 0x7520
 // Size: 0x1ea
@@ -1600,7 +1600,7 @@ function function_371e56be( e_trap )
 {
     self notify( #"hash_1e76041e9fa5f479" );
     self endon( #"disconnect", #"hash_1e76041e9fa5f479", #"death" );
-    self clientfield::set( "" + #"hash_5370f4bc9fc25d13", 1 );
+    self clientfield::set( "" + #"shield_elec_fx", 1 );
     
     while ( level flag::get( #"hash_6f483dda6f8ab19d" ) && self istouching( e_trap ) && mansion_util::is_shield( self getcurrentweapon() ) )
     {
@@ -1627,7 +1627,7 @@ function function_371e56be( e_trap )
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x5360edfd, Offset: 0x7718
 // Size: 0x9e
@@ -1636,11 +1636,11 @@ function function_53577dc7()
     self endon( #"disconnect" );
     self waittilltimeout( 9.2, #"shield_timeout", #"hash_459246e5bfcc3713", #"destroy_riotshield" );
     self.var_4ceff143 = 0;
-    self clientfield::set( "" + #"hash_5370f4bc9fc25d13", 0 );
+    self clientfield::set( "" + #"shield_elec_fx", 0 );
     self notify( #"shield_timeout" );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xd1982af5, Offset: 0x77c0
 // Size: 0x306
@@ -1674,7 +1674,7 @@ function tube_shoot()
     level.mdl_telescope = undefined;
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xfe4586e9, Offset: 0x7ad0
 // Size: 0x6c
@@ -1686,7 +1686,7 @@ function function_f3668a9()
     level flag::set( #"zombie_drop_powerups" );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xac2f0dd3, Offset: 0x7b48
 // Size: 0x2dc
@@ -1719,7 +1719,7 @@ function function_c888f1f4()
     mdl_stone thread function_31e641f5();
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x2a37bcf3, Offset: 0x7e30
 // Size: 0x4cc
@@ -1788,7 +1788,7 @@ function function_31e641f5()
     zm_unitrigger::unregister_unitrigger( self.s_unitrigger );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xcce27dee, Offset: 0x8308
 // Size: 0x1ae
@@ -1811,7 +1811,7 @@ function function_a8ddd91f()
     var_47323b73 = mdl_stone zm_unitrigger::create( undefined, 96, &function_c9ebaa3 );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x5dbc8773, Offset: 0x84c0
 // Size: 0xc0
@@ -1833,7 +1833,7 @@ function function_c9ebaa3()
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x742debe0, Offset: 0x8588
 // Size: 0x10c
@@ -1853,7 +1853,7 @@ function function_78a99a79()
     level flag::set( #"greenhouse_open" );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x212e23ed, Offset: 0x86a0
 // Size: 0x36c
@@ -1884,7 +1884,7 @@ function wave_1()
             break;
     }
     
-    level.var_e12e0420 = 0;
+    level.n_bats = 0;
     level.var_84b2907f = &function_a9b81878;
     a_s_locs = array::randomize( struct::get_array( "greenhouse_bat" ) );
     x = 0;
@@ -1901,7 +1901,7 @@ function wave_1()
         
         if ( isdefined( ai_bat ) )
         {
-            level.var_e12e0420++;
+            level.n_bats++;
             x++;
             ai_bat.no_powerups = 1;
             ai_bat zm_score::function_acaab828();
@@ -1912,7 +1912,7 @@ function wave_1()
                 x = 0;
             }
             
-            while ( level.var_e12e0420 >= n_current || getaiteamarray( level.zombie_team ).size >= 24 )
+            while ( level.n_bats >= n_current || getaiteamarray( level.zombie_team ).size >= 24 )
             {
                 waitframe( 1 );
             }
@@ -1926,7 +1926,7 @@ function wave_1()
     function_aa1d0bc6();
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0x8f142617, Offset: 0x8a18
 // Size: 0x80
@@ -1938,23 +1938,23 @@ function function_a9b81878( ai )
         ai zm_score::function_acaab828();
         ai waittill( #"death" );
         
-        if ( isdefined( level.var_e12e0420 ) )
+        if ( isdefined( level.n_bats ) )
         {
-            level.var_e12e0420--;
+            level.n_bats--;
         }
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0x7f78431f, Offset: 0x8aa0
 // Size: 0x18
 function function_3da8da85( params )
 {
-    level.var_e12e0420--;
+    level.n_bats--;
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xd5e33dd8, Offset: 0x8ac0
 // Size: 0x9c
@@ -1970,7 +1970,7 @@ function function_aa1d0bc6()
     function_655a2fcc();
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xc8811425, Offset: 0x8b68
 // Size: 0x2c
@@ -1978,7 +1978,7 @@ function function_655a2fcc()
 {
     while ( true )
     {
-        if ( level.var_e12e0420 < 5 )
+        if ( level.n_bats < 5 )
         {
             return;
         }
@@ -1987,7 +1987,7 @@ function function_655a2fcc()
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x7ea4cca5, Offset: 0x8ba0
 // Size: 0x2c4
@@ -2046,7 +2046,7 @@ function wave_2()
     function_cd9e9ab1();
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0x9c31bf1, Offset: 0x8e70
 // Size: 0x18
@@ -2055,7 +2055,7 @@ function function_831a12ae( params )
     level.var_20f423f6--;
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x44d455cd, Offset: 0x8e90
 // Size: 0xac
@@ -2071,7 +2071,7 @@ function function_cd9e9ab1()
     function_a918c691();
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xcd08f22e, Offset: 0x8f48
 // Size: 0x2c
@@ -2088,7 +2088,7 @@ function function_a918c691()
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x9d8706b8, Offset: 0x8f80
 // Size: 0x3fc
@@ -2174,7 +2174,7 @@ function wave_3()
     function_acf54a6a();
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x322456df, Offset: 0x9388
 // Size: 0x304
@@ -2228,7 +2228,7 @@ function function_d89f5961()
     var_51dd97e5 zm_vo::vo_say( a_str_vo[ var_e04d003f ], 0, 1, 9999 );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0xf519ba7c, Offset: 0x9698
 // Size: 0x18
@@ -2237,7 +2237,7 @@ function function_70e83f44( params )
     level.var_4b9e58af--;
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x9e6c172c, Offset: 0x96b8
 // Size: 0x4c
@@ -2255,7 +2255,7 @@ function function_acf54a6a()
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0x5b7dd93a, Offset: 0x9710
 // Size: 0xac
@@ -2269,7 +2269,7 @@ function function_1be5e603()
     mansion_util::function_5904a8e1();
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 1
 // Checksum 0xd2e84cd6, Offset: 0x97c8
 // Size: 0xea

@@ -76,7 +76,7 @@ function callback_playerconnect()
         {
             challenge_name = tablelookupcolumnforrow( #"gamedata/stats/zm/statsmilestones4.csv", row_num, 5 );
             display_row_num = row_num - 2;
-            devgui_string = "<dev string:x38>" + "<dev string:x47>" + ( display_row_num > 10 ? display_row_num : "<dev string:x5e>" + display_row_num ) + "<dev string:x62>" + function_9e72a96( challenge_name ) + "<dev string:x66>" + row_num + "<dev string:x80>";
+            devgui_string = "<dev string:x38>" + "<dev string:x47>" + ( display_row_num > 10 ? display_row_num : "<dev string:x5e>" + display_row_num ) + "<dev string:x62>" + hashtostring( challenge_name ) + "<dev string:x66>" + row_num + "<dev string:x80>";
             adddebugcommand( devgui_string );
         }
     }
@@ -458,7 +458,7 @@ function callback_playerconnect()
                     }
                     
                     name = tablelookupcolumnforrow( tablename, j, 5 );
-                    devgui_cmd_challenge_path = notif_challenges_devgui_base + function_9e72a96( type ) + "<dev string:x27a>" + function_9e72a96( name ) + "<dev string:x27a>" + challengetierstring + "<dev string:x720>" + challengeid;
+                    devgui_cmd_challenge_path = notif_challenges_devgui_base + hashtostring( type ) + "<dev string:x27a>" + hashtostring( name ) + "<dev string:x27a>" + challengetierstring + "<dev string:x720>" + challengeid;
                     util::waittill_can_add_debug_command();
                     adddebugcommand( devgui_cmd_challenge_path + "<dev string:x728>" + "<dev string:x72d>" + "<dev string:x731>" + "<dev string:x739>" + "<dev string:x62>" + j + "<dev string:x731>" + "<dev string:x751>" + "<dev string:x62>" + i + "<dev string:x731>" + "<dev string:x645>" + "<dev string:x76b>" + "<dev string:x80>" );
                     

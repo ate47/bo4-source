@@ -27,7 +27,7 @@ function __init__()
     clientfield::register( "world", "" + #"narrative_room", 1, 1, "int", &narrative_room, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_46dbc12bdc275121", 1, 1, "int", &glyph_fx, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_59623b8b4fc694c8", 1, 2, "int", &function_db9b47b5, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_ce418c45d804842", 1, 1, "counter", &function_2f00e842, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"walnut_teleporter_fx", 1, 1, "counter", &function_2f00e842, 0, 0 );
     level._effect[ #"hash_7184fc7d78dcf1c0" ] = #"hash_73000f9a6abd5658";
     level._effect[ #"hash_20080a107a8533e" ] = #"hash_7965ec9e0938553f";
     level._effect[ #"walnut_teleport" ] = #"hash_2844b7026fd0f451";

@@ -115,7 +115,7 @@ DEVBLOCK 0x516c
 DEVBLOCK 0x53ae
 # zm_zonemgr::function_8a9003ae@4e0
 DEVBLOCK 0x5428
-# zm_zonemgr::function_54fc7938@22
+# zm_zonemgr::get_zone_path@22
 DEVBLOCK 0x54ca
-# zm_zonemgr::function_54fc7938@4a
+# zm_zonemgr::get_zone_path@4a
 DEVBLOCK 0x54f2

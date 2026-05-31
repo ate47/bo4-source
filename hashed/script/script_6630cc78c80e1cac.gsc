@@ -234,7 +234,7 @@ function function_bd81f4e2( user )
             iprintlnbold( "<dev string:x9f>" );
         #/
         
-        if ( user zm_characters::is_character( array( #"hash_1aa57ef704f24fa5", #"hash_36bc80636f0fdac4" ) ) )
+        if ( user zm_characters::is_character( array( #"prt_zm_dempsey", #"prt_zm_dempsey_ofc" ) ) )
         {
             user thread zm_vo::vo_say( "vox_mcnamara_log_repair_plr_6_0" );
         }

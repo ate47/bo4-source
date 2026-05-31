@@ -1,0 +1,159 @@
+{
+    "name": "#vehicle_t8_mil_helicopter_light_gunner_wz_heroes",
+    "type": "helicopter",
+    "scriptVehicleType": "helicopter_light",
+    "cameraTag": "tag_body",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "exhaustFx": "#hash_5fa1874396786bd7",
+    "exhaustFxTag1": "tag_body",
+    "unk1340": "#hash_12c0d224e578c92a",
+    "unk1350": "#hash_12c0d224e578c92a",
+    "scriptBundleSettings": "#helicopter_wz_heroes_bundle_settings",
+    "deathFx": "#hash_4475fd2c32ab3987",
+    "deathFxTag": "tag_deathfx",
+    "deathFxSound": "#hash_626995667a4ff5c",
+    "unk11f4": [
+        "tag_tail_rotor",
+        "tag_main_rotor"
+    ],
+    "targetTags": [
+        "tag_missle_target"
+    ],
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#hash_16a78b87b7ea9d42",
+    "deathModel": "#veh_t8_mil_helicopter_light_debris_fuselage",
+    "soundDef": "#hash_70aa32f249d9e457",
+    "compassIconMaterial": "#hash_169458fb2df20b0e",
+    "lightCollisionRumble": "#veh_collision_light",
+    "heavyCollisionRumble": "#veh_collision_heavy",
+    "destructibleDef": "#hash_6a9b18a7f337e414",
+    "tacticalModeIcon": "#hash_e79c5098faff525b",
+    "steerAxisName": "AXIS_LSTICK",
+    "boostButtonName": "BUTTON_LSTICK",
+    "unk1608": "BUTTON_RTRIG",
+    "unk1618": "BUTTON_LTRIG",
+    "unk1648": "BUTTON_B",
+    "unk1658": "BUTTON_RSTICK",
+    "bundle": {
+        "huds": [
+            {
+                "bindings": [
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_5145090d78d3a9f6",
+                        "buttondirection": "left",
+                        "prompt": "+switchseat"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_1c59b497e5ef478f",
+                        "buttondirection": "left",
+                        "prompt": "+speed_throw"
+                    }
+                ],
+                "widgets": [
+                    {
+                        "hash_303b76d86d727423:hash_513059ad": 0,
+                        "widgettype": 1
+                    },
+                    {
+                        "hash_303b76d86d727423:hash_513059ad": 0,
+                        "widgettype": 14
+                    },
+                    {
+                        "hash_303b76d86d727423:hash_513059ad": 10,
+                        "widgettype": 15
+                    },
+                    {
+                        "hash_303b76d86d727423:hash_513059ad": 0,
+                        "widgettype": 12
+                    },
+                    {
+                        "hash_114f6fc8e568fd75:hash_5c178a00": "localized17#hash_56e69a26093aa88d",
+                        "hash_303b76d86d727423:hash_513059ad": 0,
+                        "widgettype": 16
+                    }
+                ],
+                "hash_16b4c5c47fcf7794:hash_56985ec1": 0,
+                "hideweaponinfo": 0,
+                "hash_3a63348c09d91b8d:hash_24c083a4": 0,
+                "vehiclehud": "VehicleHUD_GroundVehicle",
+                "tintcolor": "1 1 1 1",
+                "hudcondition": "IsAttackMode"
+            },
+            {
+                "bindings": [
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_5145090d78d3a9f6",
+                        "buttondirection": "left",
+                        "prompt": "+switchseat"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#GAMEPAD",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#menu/look",
+                        "buttondirection": "left",
+                        "prompt": "+lookstick"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#GAMEPAD",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#menu/strafe",
+                        "buttondirection": "left",
+                        "prompt": "+movestick"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#menu/descend",
+                        "buttondirection": "left",
+                        "prompt": "+vehiclemovedown"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#menu/ascend",
+                        "buttondirection": "left",
+                        "prompt": "+vehiclemoveup"
+                    }
+                ],
+                "widgets": [
+                    {
+                        "hash_303b76d86d727423:hash_513059ad": 0,
+                        "widgettype": 1
+                    },
+                    {
+                        "hash_303b76d86d727423:hash_513059ad": 0,
+                        "widgettype": 14
+                    },
+                    {
+                        "hash_303b76d86d727423:hash_513059ad": 10,
+                        "widgettype": 15
+                    },
+                    {
+                        "hash_303b76d86d727423:hash_513059ad": 0,
+                        "widgettype": 12
+                    }
+                ],
+                "hash_16b4c5c47fcf7794:hash_56985ec1": 0,
+                "hideweaponinfo": 0,
+                "hash_3a63348c09d91b8d:hash_24c083a4": 0,
+                "vehiclehud": "VehicleHUD_GroundVehicle",
+                "tintcolor": "1 1 1 1",
+                "hudcondition": "IsVehicleOwner"
+            }
+        ],
+        "healthpoolsize": 3000,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 1
+    }
+}

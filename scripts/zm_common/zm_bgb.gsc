@@ -178,11 +178,11 @@ function private bgb_player_init()
         
         if ( !isbot( self ) )
         {
-            self.bgb_stats[ bgb ].var_c2a984f0 = self getbgbremaining( bgb );
+            self.bgb_stats[ bgb ].bgb_available_at_start = self getbgbremaining( bgb );
         }
         else
         {
-            self.bgb_stats[ bgb ].var_c2a984f0 = 0;
+            self.bgb_stats[ bgb ].bgb_available_at_start = 0;
         }
         
         self.bgb_stats[ bgb ].bgb_used_this_game = 0;
@@ -340,7 +340,7 @@ function private bgb_player_monitor()
         
         foreach ( key in keys )
         {
-            name = function_9e72a96( level.bgb[ key ].name );
+            name = hashtostring( level.bgb[ key ].name );
             adddebugcommand( bgb_devgui_base + name + "<dev string:x92>" + "<dev string:xa2>" + "<dev string:xb7>" + name + "<dev string:xbb>" );
         }
         
@@ -363,11 +363,11 @@ function private bgb_player_monitor()
     {
         for ( ;; )
         {
-            var_522737d6 = getdvarstring( #"bgb_acquire_devgui" );
+            bgb_acquire_name = getdvarstring( #"bgb_acquire_devgui" );
             
-            if ( var_522737d6 != "<dev string:x79>" )
+            if ( bgb_acquire_name != "<dev string:x79>" )
             {
-                bgb_devgui_acquire( var_522737d6 );
+                bgb_devgui_acquire( bgb_acquire_name );
             }
             
             setdvar( #"bgb_acquire_devgui", "<dev string:x79>" );
@@ -480,10 +480,10 @@ function private bgb_player_monitor()
     // Size: 0x114, Type: dev
     function bgb_print_stats( bgb )
     {
-        printtoprightln( function_9e72a96( bgb ) + "<dev string:x169>" + self.bgb_stats[ bgb ].var_c2a984f0, ( 1, 1, 1 ) );
-        printtoprightln( function_9e72a96( bgb ) + "<dev string:x185>" + self.bgb_stats[ bgb ].bgb_used_this_game, ( 1, 1, 1 ) );
-        n_available = self.bgb_stats[ bgb ].var_c2a984f0 - self.bgb_stats[ bgb ].bgb_used_this_game;
-        printtoprightln( function_9e72a96( bgb ) + "<dev string:x19c>" + n_available, ( 1, 1, 1 ) );
+        printtoprightln( hashtostring( bgb ) + "<dev string:x169>" + self.bgb_stats[ bgb ].bgb_available_at_start, ( 1, 1, 1 ) );
+        printtoprightln( hashtostring( bgb ) + "<dev string:x185>" + self.bgb_stats[ bgb ].bgb_used_this_game, ( 1, 1, 1 ) );
+        n_available = self.bgb_stats[ bgb ].bgb_available_at_start - self.bgb_stats[ bgb ].bgb_used_this_game;
+        printtoprightln( hashtostring( bgb ) + "<dev string:x19c>" + n_available, ( 1, 1, 1 ) );
     }
 
 #/
@@ -546,9 +546,9 @@ function get_bgb_available( bgb )
         return true;
     }
     
-    var_cb4d0349 = self.bgb_stats[ bgb ].var_c2a984f0;
+    n_bgb_available_at_start = self.bgb_stats[ bgb ].bgb_available_at_start;
     n_bgb_used_this_game = self.bgb_stats[ bgb ].bgb_used_this_game;
-    n_bgb_remaining = var_cb4d0349 - n_bgb_used_this_game;
+    n_bgb_remaining = n_bgb_available_at_start - n_bgb_used_this_game;
     
     if ( isdefined( level.var_4af38aa3 ) && level.var_4af38aa3 )
     {
@@ -564,7 +564,7 @@ function get_bgb_available( bgb )
 // Size: 0xd4
 function private function_b331a28c( bgb )
 {
-    if ( !( isdefined( level.bgb[ bgb ].var_50206ca3 ) && level.bgb[ bgb ].var_50206ca3 ) )
+    if ( !( isdefined( level.bgb[ bgb ].invulnerable_during_activation ) && level.bgb[ bgb ].invulnerable_during_activation ) )
     {
         return;
     }
@@ -704,7 +704,7 @@ function run_activation_func( bgb )
 // Size: 0x7c
 function private bgb_get_gumball_anim_weapon( bgb )
 {
-    var_ab8d8da3 = undefined;
+    w_elixir = undefined;
     
     if ( isdefined( level.bgb[ bgb ] ) )
     {
@@ -712,11 +712,11 @@ function private bgb_get_gumball_anim_weapon( bgb )
         
         if ( isdefined( level.var_ddff6359 ) && isdefined( n_rarity ) )
         {
-            var_ab8d8da3 = level.var_ddff6359[ n_rarity ];
+            w_elixir = level.var_ddff6359[ n_rarity ];
         }
     }
     
-    return var_ab8d8da3;
+    return w_elixir;
 }
 
 // Namespace bgb/zm_bgb
@@ -761,7 +761,7 @@ function function_3b2a02d8( bgb )
     self zm_stats::increment_client_stat( "bgbs_chewed" );
     self zm_stats::increment_player_stat( "bgbs_chewed" );
     self zm_stats::increment_challenge_stat( #"gum_gobbler_consume" );
-    self zm_stats::forced_attachment( "boas_bgbs_chewed" );
+    self zm_stats::function_8f10788e( "boas_bgbs_chewed" );
     self zm_stats::function_c0c6ab19( #"hash_67f429ee3f93764d" );
     
     if ( level.bgb[ bgb ].rarity > 0 )
@@ -839,7 +839,7 @@ function private bgb_limit_monitor()
                 
                 if ( level.bgb[ self.bgb ].var_57eb02e )
                 {
-                    function_f0d592c9();
+                    fill_timer();
                 }
                 else
                 {
@@ -975,12 +975,12 @@ function private bgb_activation_monitor()
 // Params 2
 // Checksum 0xeeb79a51, Offset: 0x2e88
 // Size: 0x18c, Type: bool
-function function_e98aa964( var_3e37f503 = 0, str_check = self.bgb )
+function function_e98aa964( b_chewing = 0, str_check = self.bgb )
 {
     var_ceb582a8 = isdefined( level.bgb[ str_check ].validation_func ) && !self [[ level.bgb[ str_check ].validation_func ]]();
     var_e6b14ccc = isdefined( level.var_67713b46 ) && !self [[ level.var_67713b46 ]]();
     
-    if ( !var_3e37f503 && isdefined( self.is_drinking ) && self.is_drinking || isdefined( self.bgb_activation_in_progress ) && self.bgb_activation_in_progress && !( isdefined( self.var_ec8a9710 ) && self.var_ec8a9710 ) || self laststand::player_is_in_laststand() || var_ceb582a8 || var_e6b14ccc || isdefined( self.var_16735873 ) && self.var_16735873 || isdefined( self.var_30cbff55 ) && self.var_30cbff55 )
+    if ( !b_chewing && isdefined( self.is_drinking ) && self.is_drinking || isdefined( self.bgb_activation_in_progress ) && self.bgb_activation_in_progress && !( isdefined( self.var_ec8a9710 ) && self.var_ec8a9710 ) || self laststand::player_is_in_laststand() || var_ceb582a8 || var_e6b14ccc || isdefined( self.var_16735873 ) && self.var_16735873 || isdefined( self.var_30cbff55 ) && self.var_30cbff55 )
     {
         self clientfield::increment_uimodel( "zmhud.bgb_invalid_use" );
         return false;
@@ -997,7 +997,7 @@ function private function_1fdcef80( bgb )
 {
     self endon( #"disconnect", #"bled_out", #"bgb_update" );
     
-    if ( isdefined( level.bgb[ bgb ].var_5a047886 ) && level.bgb[ bgb ].var_5a047886 )
+    if ( isdefined( level.bgb[ bgb ].is_cancellable ) && level.bgb[ bgb ].is_cancellable )
     {
         function_9c8e12d1( 6 );
     }
@@ -1221,7 +1221,7 @@ function private bgb_set_timer_clientfield( percent, var_5f12e334 = 0 )
 // Params 0, eflags: 0x4
 // Checksum 0x84385a9c, Offset: 0x3738
 // Size: 0x1c
-function private function_f0d592c9()
+function private fill_timer()
 {
     self bgb_set_timer_clientfield( 1 );
 }
@@ -1377,7 +1377,7 @@ function register_lost_perk_override( name, lost_perk_override_func, lost_perk_o
 // Params 3
 // Checksum 0x20357908, Offset: 0x40d0
 // Size: 0x96
-function function_c2721e81( name, add_to_player_score_override_func, add_to_player_score_override_func_always_run )
+function register_add_to_player_score_override( name, add_to_player_score_override_func, add_to_player_score_override_func_always_run )
 {
     assert( isdefined( level.bgb[ name ] ), "<dev string:x564>" + name + "<dev string:x4c0>" );
     level.bgb[ name ].add_to_player_score_override_func = add_to_player_score_override_func;
@@ -1388,10 +1388,10 @@ function function_c2721e81( name, add_to_player_score_override_func, add_to_play
 // Params 2
 // Checksum 0xe908a2f1, Offset: 0x4170
 // Size: 0x72
-function function_72469efe( name, var_50206ca3 )
+function register_invulnerable_during_activation( name, invulnerable_during_activation )
 {
     assert( isdefined( level.bgb[ name ] ), "<dev string:x59a>" + name + "<dev string:x4c0>" );
-    level.bgb[ name ].var_50206ca3 = var_50206ca3;
+    level.bgb[ name ].invulnerable_during_activation = invulnerable_during_activation;
 }
 
 // Namespace bgb/zm_bgb
@@ -1418,10 +1418,10 @@ function function_be42abb0( name, var_f8d9ac8c )
 // Params 1
 // Checksum 0xc33da3ba, Offset: 0x42f0
 // Size: 0x6a
-function function_afe7b8e7( name )
+function register_cancellable( name )
 {
     assert( isdefined( level.bgb[ name ] ), "<dev string:x632>" + name + "<dev string:x4c0>" );
-    level.bgb[ name ].var_5a047886 = 1;
+    level.bgb[ name ].is_cancellable = 1;
 }
 
 // Namespace bgb/zm_bgb
@@ -1459,7 +1459,7 @@ function give( name )
     }
     
     assert( isdefined( level.bgb[ name ] ), "<dev string:x6d0>" + name + "<dev string:x4c0>" );
-    self notify( #"bgb_update", { #var_3aee8e4:name, #var_826ddd38:self.bgb } );
+    self notify( #"bgb_update", { #to_bgb:name, #var_826ddd38:self.bgb } );
     self notify( "bgb_update_give_" + name );
     self.bgb = name;
     self clientfield::set_player_uimodel( "zmhud.bgb_current", level.bgb[ name ].item_index );
@@ -1503,7 +1503,7 @@ function take()
     }
     
     self bgb_clear_monitors_and_clientfields();
-    self notify( #"bgb_update", { #var_3aee8e4:#"none", #var_826ddd38:self.bgb } );
+    self notify( #"bgb_update", { #to_bgb:#"none", #var_826ddd38:self.bgb } );
     self notify( "bgb_update_take_" + self.bgb );
     self.bgb = #"none";
 }
@@ -1618,7 +1618,7 @@ function function_9d8118f5( v_origin )
         var_116b3a00 = 0;
     }
     
-    if ( self zm_utility::function_ab9a9770() || var_806b07bd zm_utility::function_ab9a9770() )
+    if ( self zm_utility::duf47() || var_806b07bd zm_utility::duf47() )
     {
         var_116b3a00 = 0;
     }

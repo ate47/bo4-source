@@ -65,7 +65,7 @@ function activation()
         
         if ( isdefined( chest.zbarrier.weapon_model ) && isdefined( chest.chest_user ) && self == chest.chest_user )
         {
-            chest thread function_80b33681( self );
+            chest thread respin_chest_thread( self );
         }
     }
 }
@@ -74,7 +74,7 @@ function activation()
 // Params 1
 // Checksum 0xf452bb1e, Offset: 0x348
 // Size: 0x19c
-function function_80b33681( player )
+function respin_chest_thread( player )
 {
     self.zbarrier clientfield::increment( "zm_bgb_respin_cycle" );
     

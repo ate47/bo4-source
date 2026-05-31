@@ -2,8 +2,8 @@
     "name": "#ww_blundergat_acid_t8_upgraded_zm",
     "baseWeapon": "#ww_blundergat_acid_t8_upgraded",
     "displayname": "#zmweapon/acidgat_upgraded",
-    "xhash_70": "#ww_blundergat_t8",
-    "streamkey": "#hash_6d48b7408f3604f4",
+    "weapon70": "#ww_blundergat_t8",
+    "soundbank": "#ww_blundergat_acid_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_armor_acid",
         "tag_barrel_le_in",
@@ -17,21 +17,42 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.0303 0.95",
+            "0.2242 0.5",
+            "0.4 0.1",
+            "0.4992 0.05",
+            "0.7426 0.001",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0605 1",
+            "0.2242 0.7161",
+            "0.375 0.3412",
+            "0.4992 0.0032",
+            "0.7426 0",
+            "1 0"
+        ]
+    ],
     "firesound": "#hash_7e4c332825ca8b83",
     "firesoundplayer": "#hash_4b703c28094c2d5e",
     "sound240": "#hash_631a067190b54300",
@@ -39,6 +60,9 @@
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
     "tunables1": "#ww_blundergat_acid_t8_upgraded_tunables_zm",
+    "tracers": [
+        "#hash_d6f045ae9b61e985"
+    ],
     "viewmodel": [
         "#wpn_t8_zm_blundergat_acid_view"
     ],

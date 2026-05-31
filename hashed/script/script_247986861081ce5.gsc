@@ -28,7 +28,7 @@ function init()
     level.var_a7b0c29c[ 3 ] = { #start_func:&function_6882655b, #end_func:&function_55f180c2, #n_index:4, #n_target:8 };
     level.var_a7b0c29c[ 4 ] = { #start_func:&function_6882655b, #end_func:&function_55f180c2, #n_index:5, #n_target:10 };
     level.var_f0efd877 = 0;
-    function_1525b94c();
+    start_next_challenge();
     function_a5cebb9a( 0 );
     level thread function_1b350677();
 }
@@ -37,7 +37,7 @@ function init()
 // Params 0
 // Checksum 0xcbbf6ce4, Offset: 0x3b8
 // Size: 0x34
-function function_1525b94c()
+function start_next_challenge()
 {
     start_challenge( array::pop_front( level.var_a7b0c29c ) );
 }
@@ -60,7 +60,7 @@ function challenge_completed()
         return;
     }
     
-    function_1525b94c();
+    start_next_challenge();
 }
 
 // Namespace namespace_ff847c6a/namespace_ff847c6a

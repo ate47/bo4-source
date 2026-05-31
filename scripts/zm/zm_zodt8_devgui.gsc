@@ -90,7 +90,7 @@
             case #"hash_687e53bfcb79ec3b":
                 if ( isdefined( level.chests ) && isdefined( level.chest_index ) && isdefined( level.chests[ level.chest_index ].zbarrier ) )
                 {
-                    level.chests[ level.chest_index ].zbarrier thread namespace_b45e3f05::function_8baed388();
+                    level.chests[ level.chest_index ].zbarrier thread zodt8_side_quests::function_8baed388();
                 }
                 
                 break;
@@ -267,13 +267,13 @@
             switch ( str_color )
             {
                 case #"red":
-                    namespace_b45e3f05::give_flare( "<dev string:x567>" );
+                    zodt8_side_quests::give_flare( "<dev string:x567>" );
                     break;
                 case #"green":
-                    namespace_b45e3f05::give_flare( "<dev string:x56d>" );
+                    zodt8_side_quests::give_flare( "<dev string:x56d>" );
                     break;
                 case #"blue":
-                    namespace_b45e3f05::give_flare( "<dev string:x575>" );
+                    zodt8_side_quests::give_flare( "<dev string:x575>" );
                     break;
             }
         }
@@ -291,7 +291,7 @@
         
         foreach ( player in getplayers() )
         {
-            player zm_score::function_c1f146ff( var_efac84b3[ round_index ] );
+            player zm_score::set_player_score( var_efac84b3[ round_index ] );
         }
         
         if ( round_number >= 7 )
@@ -302,9 +302,9 @@
         
         if ( round_number >= 8 )
         {
-            assert( isdefined( level.var_4fe2f84d[ #"zblueprint_shield_dual_wield" ] ) );
+            assert( isdefined( level.a_t_crafting[ #"zblueprint_shield_dual_wield" ] ) );
             
-            foreach ( trigger in level.var_4fe2f84d[ #"zblueprint_shield_dual_wield" ] )
+            foreach ( trigger in level.a_t_crafting[ #"zblueprint_shield_dual_wield" ] )
             {
                 trigger.crafted = 1;
                 trigger.blueprint = trigger.craftfoundry;

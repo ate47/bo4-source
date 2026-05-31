@@ -1,5 +1,12 @@
 {
-    "name": "#custom_games_official",
     "nameStr": "custom_games_official",
-    "ddl": "#gamedata/ddl/generated/mp_custom_game.ddl"
+    "name": "#custom_games_official",
+    "ddlPath": "#gamedata/ddl/generated/mp_custom_game.ddl",
+    "files": [],
+    "size": 29696,
+    "readOnLogin": true,
+    "readOnly": true,
+    "sendToServer": false,
+    "useScratch": false,
+    "optional": true
 }

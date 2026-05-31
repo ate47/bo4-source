@@ -164,7 +164,7 @@ function function_a1a9bd5d( name )
 // Namespace zm_trial/zm_trial
 // Params 0
 // Checksum 0x8f9d560, Offset: 0x848
-// Size: 0x12, Type: bool
+// Size: 0x12
 function is_trial_mode()
 {
     return zm_utility::is_trials();
@@ -354,7 +354,7 @@ function fail( reason = undefined, var_eeb30248 = undefined )
     if ( function_ba9853db() < 3 )
     {
         level flag::set( "round_reset" );
-        playsoundatposition( #"hash_13781c956ed2b1ca", ( 0, 0, 0 ) );
+        playsoundatposition( #"zmb_trials_round_fail", ( 0, 0, 0 ) );
     }
     else
     {
@@ -613,7 +613,7 @@ function private function_10801ad3()
     foreach ( player in getplayers() )
     {
         player.var_42a4759e = {};
-        player.var_42a4759e.score = player zm_score::function_ffc2d0bc();
+        player.var_42a4759e.score = player zm_score::get_player_score();
         player.var_42a4759e.score_total = player.score_total;
         
         if ( player.sessionstate == "spectator" )
@@ -678,7 +678,7 @@ function private function_bcd35efc()
         }
         
         player zm_trial_util::function_d37a769( player.var_42a4759e.var_8c5bddf5 );
-        player zm_score::function_c1f146ff( player.var_42a4759e.score );
+        player zm_score::set_player_score( player.var_42a4759e.score );
         player.score_total = player.var_42a4759e.score_total;
         
         if ( isdefined( player.var_42a4759e.loadout ) )

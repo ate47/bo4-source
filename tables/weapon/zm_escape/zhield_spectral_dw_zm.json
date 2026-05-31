@@ -2,9 +2,10 @@
     "name": "#zhield_spectral_dw_zm",
     "baseWeapon": "#zhield_spectral_dw",
     "displayname": "#zmweapon/shield_spectral",
-    "xhash_30": "#zhield_spectral_turret_zm",
-    "xhash_70": "#zhield_spectral_dw",
-    "streamkey": "#hash_6b90bfc61e239988",
+    "altWeapon": "#zhield_spectral_turret_zm",
+    "weapon70": "#zhield_spectral_dw",
+    "dualwieldWeaponName": "#zhield_spectral_lh_zm",
+    "soundbank": "#zhield_spectral_dw_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_right",
     "stowedModelTag": "tag_stowed_back",
@@ -13,21 +14,38 @@
     "weaponstarthitpoints": 800,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 5,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.1 1",
+            "0.2 0",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0524 0.9014",
+            "0.1251 0.4004",
+            "0.2517 0.1204",
+            "0.5021 0.0508",
+            "1 0.05"
+        ]
+    ],
     "firesounddistant": "#hash_f74753fbac3a42d",
     "sound140": "#hash_4c444e794ffeba63",
     "sound150": "#hash_1969577933820f3e",
@@ -48,7 +66,6 @@
     "sound6a0": "#hash_4acee684993f771a",
     "sound6b0": "#hash_3987dc18bd5ea9d1",
     "sound6c0": "#hash_1e69091865bbdbb8",
-    "sound740": "#zhield_spectral_lh_zm",
     "sound800": "#hash_21cba6ae89a3493c",
     "sound810": "#hash_21cba6ae89a3493c",
     "tunables1": "#zhield_spectral_dw_tunables_zm",
@@ -68,5 +85,13 @@
     "hudIcon": "#hash_93ef923686346dc9",
     "image_e90": "#hash_93ef923686346dc9",
     "image_1048": "#hash_93ef923686346dc9",
-    "fx_bd8": "#hash_f282363a66bd14e2"
+    "fx_bd8": "#hash_f282363a66bd14e2",
+    "#hash_21329beb": [
+        {
+            "model": "#hash_6db3dde314ca084"
+        },
+        {
+            "model": "#hash_6db3dde314ca084"
+        }
+    ]
 }

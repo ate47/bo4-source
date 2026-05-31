@@ -14,8 +14,11 @@
     ],
     "typeSuffix": "none",
     "spawnerType": "vox_hr",
+    "animMappingTables": [
+        "#default.ai_am"
+    ],
     "aimTable": "#soldier_aim",
-    "footstepTable": "#hash_3008da66d91b8ad7",
+    "footstepTable": "#defaultnpcfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",

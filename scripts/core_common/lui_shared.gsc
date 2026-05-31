@@ -45,7 +45,7 @@ class cluielem
     // Size: 0x2a
     function function_7bfd10e6( player )
     {
-        return player function_3fc81484( _uid );
+        return player isluielemopenforplayer( _uid );
     }
 
     // Namespace cluielem/lui_shared

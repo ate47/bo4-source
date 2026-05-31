@@ -734,7 +734,7 @@ function function_78083139()
             if ( getdvarint( #"scr_contract_debug", 0 ) > 0 )
             {
                 var_7b6acdb1 = var_9224acc ? "<dev string:x262>" : "<dev string:x1d2>";
-                iprintln( "<dev string:x272>" + function_9e72a96( var_38280f2f ) + "<dev string:x280>" + delta + "<dev string:x28e>" + var_4b67585c + "<dev string:x2ae>" + var_2de8a050 + var_7b6acdb1 );
+                iprintln( "<dev string:x272>" + hashtostring( var_38280f2f ) + "<dev string:x280>" + delta + "<dev string:x28e>" + var_4b67585c + "<dev string:x2ae>" + var_2de8a050 + var_7b6acdb1 );
             }
         #/
         

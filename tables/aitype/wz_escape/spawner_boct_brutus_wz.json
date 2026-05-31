@@ -12,11 +12,14 @@
         "#none",
         "#none"
     ],
-    "compassIcon": "#hash_3030e82a0acd7277",
+    "compassIcon": "#icon_minimap_player_enemy_firing",
     "typeSuffix": "_zombie",
     "spawnerType": "brutus_boss",
     "character": [
-        "#hash_485ee556a46c1860"
+        "#c_t8_zmb_mob_brutus"
+    ],
+    "animMappingTables": [
+        "#hash_198b3e1b70862e07"
     ],
     "meleeWeapon": "#hash_77eb0451c840bdf3",
     "aimTable": "#soldier_aim",
@@ -24,9 +27,9 @@
     "footstepScriptCallback": true,
     "footstepFXTable1": "#zm_brutus_footstep",
     "footstepFXTable2": "#zm_brutus_footstep",
-    "behaviorTree": "#wz_brutus.ai_bt",
+    "behaviorTree": "#hash_1995371b708e76a7",
     "animStateMachine": "#hash_6d700ea033b4e4dc",
-    "animSelectorTable": "#wz_brutus.ai_ast",
+    "animSelectorTable": "#hash_6d7007a033b4d8f7",
     "traversalExtents": "#default_traversal_extents_zm",
     "aiFxBundle": "#fxb8_zm_char_brutus",
     "aiSettingsBundle": "#zm_brutus_settings",

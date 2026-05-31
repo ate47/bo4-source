@@ -1,0 +1,44 @@
+{
+    "name": "#hash_4f9a1f36c1e838fc",
+    "model": "#p8_fan_box_plastic_allstates",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_d0"
+                },
+                {
+                    "unk28": "tag_d1"
+                },
+                {
+                    "unk28": "tag_d2"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_7e0a20d6ce4a8181",
+            "unk268": 200,
+            "hideBones": [
+                24,
+                25,
+                26,
+                28,
+                29,
+                30
+            ]
+        }
+    ]
+}

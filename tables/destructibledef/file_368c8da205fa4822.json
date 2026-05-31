@@ -1,0 +1,73 @@
+{
+    "name": "#hash_368c8da205fa4822",
+    "model": "#p8_fxanim_gp_fan_electric_wall_allstates_mod",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "physPreset": "#hash_365d9cdb35f2959c",
+                    "unk28": "cage_d0_jnt"
+                },
+                {
+                    "unk28": "cage_d1_jnt"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 1,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_44c4337598758b27",
+            "unk268": 100,
+            "hideBones": [
+                26,
+                27
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "fan_d0_jnt"
+                },
+                {
+                    "physPreset": "#hash_365d9cdb35f2959c",
+                    "unk28": "fan_d1_jnt"
+                },
+                {
+                    "unk28": "fan_d2_jnt"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_44c4327598758974",
+            "unk268": 100,
+            "hideBones": [
+                22,
+                23,
+                24
+            ]
+        }
+    ]
+}

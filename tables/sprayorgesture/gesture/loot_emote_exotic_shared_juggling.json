@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_juggling",
+    "type": "#gesture",
+    "gesture": "#boast_juggling",
+    "gesture2": "#boast_juggling_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_7ad3675167aedcb9",
+        "icon": "image#hash_718d9a025ccd7bf4",
+        "isdefault": 0
+    }
+}

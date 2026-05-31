@@ -1,0 +1,79 @@
+{
+    "name": "#veh_hawk_player_mp",
+    "type": "helicopter",
+    "scriptVehicleType": "hawk",
+    "cameraTag": "tag_driver_camera",
+    "archeType": "#wasp",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "exhaustFx": "#hash_7df0b9c77cf2da5",
+    "exhaustFxTag1": "tag_body",
+    "scriptBundleSettings": "#waspsettings_mp",
+    "deathFx": "#hash_6616b470cbf9bea8",
+    "deathFxTag": "tag_origin",
+    "deathFxSound": "#veh_wasp_explo",
+    "lightFx": [
+        "#hash_3b8dffee73dd848b",
+        "#hash_3b8dffee73dd848b",
+        "#hash_3b8dffee73dd848b",
+        "#hash_471aa69ea0155984"
+    ],
+    "lightFxTag": [
+        "tag_wing_back_propeller_light_fx_1",
+        "tag_wing_left_propeller_light_fx_2",
+        "tag_wing_right_propeller_light_fx_3",
+        "tag_body"
+    ],
+    "unk11f4": [
+        "tag_rotor_left_front",
+        "tag_rotor_right_front",
+        "tag_rotor_left_rear",
+        "tag_rotor_right_rear"
+    ],
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#wpn_t8_eqp_drone_hawk_world",
+    "viewModel": "#wpn_t8_eqp_drone_hawk_view",
+    "deathModel": "#wpn_t8_eqp_drone_hawk_world",
+    "enemyModel": "#wpn_t8_eqp_drone_hawk_world",
+    "soundDef": "#hash_751d2eface7a3e31",
+    "compassIconMaterial": "#icon_minimap_hawk",
+    "steerAxisName": "AXIS_LSTICK",
+    "unk1608": "BUTTON_RTRIG",
+    "unk1618": "BUTTON_LTRIG",
+    "unk1628": "BUTTON_RSHLDR",
+    "unk1638": "BUTTON_LSHLDR",
+    "bundle": {
+        "huds": [
+            {
+                "bindings": [
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_29f6a908f9b269ad",
+                        "buttondirection": "left",
+                        "prompt": "+speed_throw"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_2577b757c1ca9678",
+                        "buttondirection": "right",
+                        "prompt": "+attack"
+                    }
+                ],
+                "hash_16b4c5c47fcf7794:hash_56985ec1": 0,
+                "hideweaponinfo": 0,
+                "hash_3a63348c09d91b8d:hash_24c083a4": 0,
+                "vehiclehud": "VHUDHawk",
+                "tintcolor": "1 1 1 1",
+                "hudcondition": "IsAttackMode"
+            }
+        ],
+        "healthpoolsize": 650,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 2
+    }
+}

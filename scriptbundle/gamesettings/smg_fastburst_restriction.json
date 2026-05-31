@@ -4,14 +4,14 @@
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",
-    "hash_5a6dee5a": 0,
+    "hash_3d268f562204a4fb:hash_5a6dee5a": 0,
     "name": "smg_fastburst_restriction",
     "displayname": "localized17#weapon/smg_fastburst_t8",
     "label1": "localized17#menu/enabled",
     "label2": "localized17#menu/disabled",
-    "hash_54e336e4": 0,
+    "hash_4dd5060aa2f3ff5f:hash_54e336e4": 0,
     "optionscount": 2,
-    "hash_765cfd09": 0,
+    "hash_70853ef08fe1e46d:hash_765cfd09": 0,
     "setting": "itemRestrictions__smg_fastburst_t8__restricted",
     "isenableddisabled": 0
 }

@@ -171,9 +171,9 @@ DEVBLOCK 0x60da
 DEVBLOCK 0x6d28
 # zm_ai_blight_father::function_9d1a26f1@122
 DEVBLOCK 0x6d8a
-# zm_ai_blight_father::function_91dcbd1c@cc
+# zm_ai_blight_father::grapple_entity@cc
 DEVBLOCK 0x7554
-# zm_ai_blight_father::function_91dcbd1c@1ea
+# zm_ai_blight_father::grapple_entity@1ea
 DEVBLOCK 0x7672
 # zm_ai_blight_father::function_689831cf@8a
 DEVBLOCK 0x7faa

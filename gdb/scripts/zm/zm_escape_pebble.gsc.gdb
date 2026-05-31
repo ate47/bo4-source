@@ -31,7 +31,7 @@ DEVBLOCK 0x3896
 DEVBLOCK 0x396c
 # pebble::function_3c089853@17c
 DEVBLOCK 0x4c9c
-# pebble::function_24089629@a
+# pebble::setup_audio_logs@a
 DEVBLOCK 0x70f2
 # pebble::function_5bae5249@2
 DEVBLOCK 0x9cba

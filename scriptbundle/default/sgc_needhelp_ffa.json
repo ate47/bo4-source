@@ -1,8 +1,8 @@
 {
     "type": "#callout",
     "name": "sgc_needhelp_ffa",
-    "hash_24d23b21": 0,
-    "hash_1c9900c6": 0,
+    "hash_46a3a04e156e3184:hash_24d23b21": 0,
+    "hash_54963972d2a614aa:hash_1c9900c6": 0,
     "title": "localized18#hash_13d6e6281ae4c785",
     "gametype": "#ffa_gun",
     "gestablecallout": "gesture_table&gestable_command_taunt"

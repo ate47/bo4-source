@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_icebreaker.d3dbsp",
+    "baseName": "mp_icebreaker",
+    "mins": "-131072 -131616 -14281.16",
+    "maxs": "241536 131072 8008.7803",
+    "checksum": 0,
+    "streamerworld": "#hash_589fa730206f0c5a",
+    "lighting": "#maps/mp/mp_icebreaker.d3dbsp",
+    "lutMaterial": "#lut_mp_icebreaker",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_icebreaker",
+        "#img_trim_lut_mp_icebreaker",
+        "#img_trim_lut_mp_icebreaker",
+        "#img_trim_lut_mp_icebreaker"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 4,
+        "cookieArray": "#*cookie_array"
+    }
+}

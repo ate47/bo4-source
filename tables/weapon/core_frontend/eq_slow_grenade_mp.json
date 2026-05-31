@@ -2,8 +2,8 @@
     "name": "#eq_slow_grenade_mp",
     "baseWeapon": "#eq_slow_grenade",
     "displayname": "#weapon/slow_grenade",
-    "xhash_70": "#eq_slow_grenade",
-    "streamkey": "#hash_638e773d7e6050b2",
+    "weapon70": "#eq_slow_grenade",
+    "soundbank": "#eq_slow_grenade_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -12,31 +12,47 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 100,
     "soundrattlerangemax": 200,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "MULTIPLAYER",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": true,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": true,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
     "soundb0": "#hash_1407719def7423c5",
-    "firesound": "#hash_69acb760c1a05692",
-    "firesoundplayer": "#hash_69acb760c1a05692",
+    "firesound": "#wpn_grenade_throw",
+    "firesoundplayer": "#wpn_grenade_throw",
     "sound240": "#hash_631a067190b54300",
     "gadgetreadysoundplayer": "#hash_6f5b79a1a69b43a8",
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#hash_120db8330a68be06",
     "tunables1": "#eq_slow_grenade_tunables_mp",
-    "cacWeaponXCam": "#hash_114a9866237d87a3",
+    "cacWeaponXCam": "#ui_cam_cac_equip_concussion",
     "sharedWeaponSounds": "#equipment",
+    "statusEffects": [
+        {
+            "effect": "#stunned_slow_grenade",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        }
+    ],
     "#hash_8456d4d": "#damageeffecttype_flash",
     "projectilemodel": "#wpn_t8_eqp_grenade_concussion_projectile",
     "viewmodel": [

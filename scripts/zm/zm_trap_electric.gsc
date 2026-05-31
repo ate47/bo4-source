@@ -115,7 +115,7 @@ function play_electrical_sound( trap )
 // Size: 0x84
 function player_damage( trigger )
 {
-    shock_status_effect = getstatuseffect( #"hash_19533caf858a9f3b" );
+    shock_status_effect = getstatuseffect( #"shock_zm_trap" );
     
     if ( !( isdefined( self.b_no_trap_damage ) && self.b_no_trap_damage ) )
     {
@@ -145,9 +145,9 @@ function damage( trap )
         trap.activated_by_player zm_stats::increment_challenge_stat( #"zombie_hunter_kill_trap" );
         trap.activated_by_player contracts::increment_zm_contract( #"contract_zm_trap_kills" );
         
-        if ( isdefined( trap.activated_by_player.var_a8049e3d ) )
+        if ( isdefined( trap.activated_by_player.zapped_zombies ) )
         {
-            trap.activated_by_player.var_a8049e3d++;
+            trap.activated_by_player.zapped_zombies++;
             trap.activated_by_player notify( #"zombie_zapped" );
         }
     }
@@ -187,9 +187,9 @@ function damage( trap )
         }
     }
     
-    if ( isdefined( self.var_5475b4ad ) )
+    if ( isdefined( self.fire_damage_func ) )
     {
-        self [[ self.var_5475b4ad ]]( trap );
+        self [[ self.fire_damage_func ]]( trap );
         return;
     }
     

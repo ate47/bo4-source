@@ -1,17 +1,17 @@
 {
-    "hash_b2353cab": "fx#hash_349d2789fc29dd7b",
+    "effect5_fx": "fx#hash_349d2789fc29dd7b",
     "effectcount": 5,
     "configstringfiletype": "scriptbundle",
-    "hash_702e93ea": "j_shoulder_le",
+    "effect3_attachtag": "j_shoulder_le",
     "type": "fxcharacterdef",
-    "hash_70f592cb": "fx#hash_63074eb9d1a1e00c",
+    "effect2_fx": "fx#hash_63074eb9d1a1e00c",
     "vmtype": "client",
     "name": "fxd8_zm_char_cata_cor_body",
-    "hash_a0d91763": "j_elbow_ri",
-    "hash_320e9190": "fx#hash_5400356a313e2ec3",
-    "hash_c7a3c7dd": "fx#hash_22aac55b4e3e4c42",
-    "hash_bae031ea": "fx#hash_5400356a313e2ec3",
-    "hash_edb57500": "j_elbow_le",
-    "hash_743ecb88": "j_teeth_upper",
-    "hash_434f4b19": "j_shoulder_ri"
+    "effect1_attachtag": "j_elbow_ri",
+    "effect4_fx": "fx#hash_5400356a313e2ec3",
+    "effect1_fx": "fx#hash_22aac55b4e3e4c42",
+    "effect3_fx": "fx#hash_5400356a313e2ec3",
+    "effect2_attachtag": "j_elbow_le",
+    "effect5_attachtag": "j_teeth_upper",
+    "effect4_attachtag": "j_shoulder_ri"
 }

@@ -1,0 +1,17 @@
+{
+    "name": "#hash_7daa25214ad20926",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "unk68:unk10": true,
+            "model": "#c_t8_bo_soldier_sea_male_head1",
+            "unk68:unk48": [
+                "#hash_5262354bd0a887c7",
+                "#mc/mtl_c_t8_bo_soldier_sea_gear",
+                "#mc/mtl_c_t8_fpa_ar_gasmask"
+            ],
+            "unk68:unk50": 1
+        }
+    ]
+}

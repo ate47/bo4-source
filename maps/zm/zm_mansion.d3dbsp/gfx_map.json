@@ -1,0 +1,23 @@
+{
+    "name": "#maps/zm/zm_mansion.d3dbsp",
+    "baseName": "zm_mansion",
+    "mins": "-46534.766 -49909.72 -6577.5",
+    "maxs": "16297.44 8203.225 2337.2344",
+    "checksum": 0,
+    "streamerworld": "#hash_52510c4594eb8b5c",
+    "lighting": "#maps/zm/zm_mansion.d3dbsp",
+    "lutMaterial": "#mtl_lut_zm_mansion",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_zm_mansion",
+        "#img_trim_lut_zm_mansion",
+        "#img_trim_lut_zm_mansion",
+        "#img_trim_lut_zm_mansion"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 15,
+        "cookieArray": "#*cookie_array"
+    }
+}

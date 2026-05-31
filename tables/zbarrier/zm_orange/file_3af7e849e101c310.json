@@ -1,0 +1,29 @@
+{
+    "name": "#hash_3af7e849e101c310",
+    "delayBetweenRepSoundsDuration": 0,
+    "earthquakeOnRepair": 0,
+    "earthquakeMinScale": 0.3,
+    "earthquakeMaxScale": 0.4,
+    "earthquakeMinDuration": 0.2,
+    "earthquakeMaxDuration": 0.4,
+    "earthquakeRadius": 150,
+    "numBoardsInBarrier": 1,
+    "autoHideOpenPieces": 1,
+    "taunts": 0,
+    "reachThroughAttacks": 0,
+    "numAttackSlots": 1,
+    "attackSpotHorzOffset": 0,
+    "boards": [
+        {
+            "boardModel": "#hash_7db1d554468496a8",
+            "tearAnim": "#hash_57ac2b306fedfe12",
+            "boardAnim": "#hash_35d4bd35cfc99823",
+            "staticAnim": "#hash_35d4bd35cfc99823",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        }
+    ]
+}

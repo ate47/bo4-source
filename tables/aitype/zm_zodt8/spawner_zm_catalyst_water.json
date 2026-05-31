@@ -15,9 +15,13 @@
     "typeSuffix": "_zombie",
     "spawnerType": "catalyst_water",
     "character": [
-        "#hash_3e484bd8252c7959"
+        "#c_t8_zmb_catalyst_water"
     ],
-    "meleeWeapon": "#hash_479f8de44d618b68",
+    "animMappingTables": [
+        "#hash_13b1ea38b9421ce0",
+        "#hash_23e997345b2495f5"
+    ],
+    "meleeWeapon": "#zombie_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
     "footstepTable": "#hash_306849c54e2546df",
     "footstepScriptCallback": false,
@@ -25,7 +29,7 @@
     "footstepFXTable2": "#hash_4dbce506dd3f2df0",
     "behaviorTree": "#zm_zombie.ai_bt",
     "animStateMachine": "#zm_zombie.ai_asm",
-    "animSelectorTable": "#zm_zombie.ai_ast",
+    "animSelectorTable": "#hash_39d3a662cbad64aa",
     "traversalExtents": "#default_traversal_extents_zm",
     "aiFxBundle": "#fxb8_zm_char_cata_water",
     "aiSettingsBundle": "#zm_catalyst_settings",

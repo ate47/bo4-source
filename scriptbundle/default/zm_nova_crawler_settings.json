@@ -1,18 +1,18 @@
 {
-    "hash_10460f1e": 1,
+    "hash_a78cddfd3bcda83:hash_10460f1e": 1,
     "scoreevent": "#kill_nova_crawler",
     "configstringfiletype": "scriptbundle",
     "maxhealth": 5000,
-    "hash_f2367046": 100,
+    "hash_36bf115718cff42a:hash_f2367046": 100,
     "instakilldamagescale": 1,
     "name": "zm_nova_crawler_settings",
     "minhealth": 50,
     "weakpointdamagescale": 1,
-    "hash_250a1683": 50,
-    "hash_97b22faa": 1,
+    "hash_4ef0b181b1951d65:hash_250a1683": 50,
+    "hash_566126040878b09b:hash_97b22faa": 1,
     "damagescale": 1,
     "category": "#enhanced",
-    "hash_854eebd": 0.15,
+    "hash_5cd90d9d100292aa:hash_854eebd": 0.15,
     "stunduration": 4,
     "animationspeed": 1
 }

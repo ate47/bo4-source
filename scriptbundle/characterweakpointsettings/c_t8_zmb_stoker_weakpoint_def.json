@@ -2,38 +2,38 @@
     "weakpoints": [
         {
             "hitloc": "right_arm_upper",
-            "hash_641ce20e": 1,
-            "hash_8223b0cf": 0,
+            "hash_18ab0945bdd17214:hash_641ce20e": 1,
+            "hash_1a833a23347d4bda:hash_8223b0cf": 0,
             "type": "#armor",
-            "hash_51e8b151": "j_clavicle_ri",
+            "hittag1": "j_clavicle_ri",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 0.1
         },
         {
             "hitloc": "left_arm_upper",
-            "hash_641ce20e": 1,
-            "hash_8223b0cf": 0,
+            "hash_18ab0945bdd17214:hash_641ce20e": 1,
+            "hash_1a833a23347d4bda:hash_8223b0cf": 0,
             "type": "#armor",
-            "hash_51e8b151": "j_clavicle_le",
+            "hittag1": "j_clavicle_le",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 0.1
         },
         {
             "hitloc": "head",
-            "hash_641ce20e": 1,
-            "hash_8223b0cf": 0,
+            "hash_18ab0945bdd17214:hash_641ce20e": 1,
+            "hash_1a833a23347d4bda:hash_8223b0cf": 0,
             "type": "#armor",
-            "hash_51e8b151": "j_head",
+            "hittag1": "j_head",
             "activebydefault": 1,
             "hitradius": 10,
             "health": 0.1
         },
         {
             "hitloc": "left_arm_lower",
-            "hash_641ce20e": 1,
-            "hash_8223b0cf": 0,
+            "hash_18ab0945bdd17214:hash_641ce20e": 1,
+            "hash_1a833a23347d4bda:hash_8223b0cf": 0,
             "type": "#armor",
             "activebydefault": 1,
             "hitradius": 12,
@@ -41,25 +41,25 @@
         },
         {
             "hitloc": "left_arm_upper",
-            "hash_8223b0cf": 0,
+            "hash_1a833a23347d4bda:hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_51e8b151": "j_clavicle_le",
+            "hittag1": "j_clavicle_le",
             "hitradius": 12,
             "health": 1
         },
         {
             "hitloc": "right_arm_upper",
-            "hash_8223b0cf": 0,
+            "hash_1a833a23347d4bda:hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_51e8b151": "j_clavicle_ri",
+            "hittag1": "j_clavicle_ri",
             "hitradius": 12,
             "health": 1
         },
         {
             "hitloc": "head",
-            "hash_8223b0cf": 0,
+            "hash_1a833a23347d4bda:hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_51e8b151": "j_head",
+            "hittag1": "j_head",
             "hitradius": 10,
             "health": 1
         }
@@ -68,5 +68,5 @@
     "model": "model#c_t8_zmb_titanic_stoker_body1",
     "type": "characterweakpointsettings",
     "name": "c_t8_zmb_stoker_weakpoint_def",
-    "hash_96a09826": 7
+    "list_weakpoints": 7
 }

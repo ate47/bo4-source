@@ -739,10 +739,10 @@ function private function_de053460( pap_machine )
         waitframe( 1 );
     }
     
-    var_287a8343 = zm_utility::get_player_weapon_limit( self );
+    n_weapon_limit = zm_utility::get_player_weapon_limit( self );
     a_primaries = self getweaponslistprimaries();
     
-    if ( isdefined( a_primaries ) && a_primaries.size >= var_287a8343 )
+    if ( isdefined( a_primaries ) && a_primaries.size >= n_weapon_limit )
     {
         return;
     }

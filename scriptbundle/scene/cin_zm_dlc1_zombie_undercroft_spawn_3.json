@@ -1,8 +1,8 @@
 {
     "objects": [
         {
-            "mainanim": "anim4#ai_zm_dlc1_zombie_undercroft_spawn_3",
-            "model": "character#hash_6c258fe575114eac",
+            "mainanim": "anim#ai_zm_dlc1_zombie_undercroft_spawn_3",
+            "model": "character#c_zom_der_zombie2",
             "type": "prop",
             "vmtype": "server",
             "allowdeath": 1,

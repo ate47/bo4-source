@@ -161,18 +161,18 @@ function function_9e497c58()
     foreach ( var_f711229a in var_96fdae0e )
     {
         var_f711229a.var_8dd6242b = randomintrange( 0, 5 );
-        var_f711229a.var_8ace5ace = randomintrange( 0, 5 );
+        var_f711229a.n_station = randomintrange( 0, 5 );
         
-        while ( var_f711229a.var_8dd6242b == var_f711229a.var_8ace5ace )
+        while ( var_f711229a.var_8dd6242b == var_f711229a.n_station )
         {
-            var_f711229a.var_8ace5ace = randomintrange( 0, 5 );
+            var_f711229a.n_station = randomintrange( 0, 5 );
         }
         
         var_f711229a.is_active = 0;
         var_f711229a.is_complete = 0;
         var_f711229a.scene = struct::get( var_f711229a.target, "targetname" );
-        var_f711229a.var_808cd5ad = var_f711229a.var_8ace5ace;
-        var_f711229a.scene scene::play( "idle_off_" + var_f711229a.var_8ace5ace );
+        var_f711229a.var_808cd5ad = var_f711229a.n_station;
+        var_f711229a.scene scene::play( "idle_off_" + var_f711229a.n_station );
         var_f711229a.scene flagsys::wait_till( #"scene_ents_ready" );
         var_f711229a.scene_entity = var_f711229a.scene.scene_ents[ #"prop 1" ];
         var_f711229a.scene.var_eb397f67 = var_f711229a.scene_entity gettagorigin( "tag_tuner_knob" );
@@ -191,7 +191,7 @@ function function_a7f8aee6()
     for ( i = 0; i < level.var_96fdae0e.size ; i++ )
     {
         level.var_96fdae0e[ i ].is_active = 1;
-        level.var_96fdae0e[ i ].scene scene::play( "idle_on_" + string( level.var_96fdae0e[ i ].var_8ace5ace ) );
+        level.var_96fdae0e[ i ].scene scene::play( "idle_on_" + string( level.var_96fdae0e[ i ].n_station ) );
         s_unitrigger = level.var_96fdae0e[ i ] zm_unitrigger::create( "", 96 );
         level.var_96fdae0e[ i ] thread function_22393009();
         
@@ -214,13 +214,13 @@ function function_22393009()
 {
     while ( self.is_active && !self.is_complete )
     {
-        var_2dc7965c = self.var_8ace5ace;
+        var_2dc7965c = self.n_station;
         s_waitresult = self waittill( #"trigger_activated" );
         e_who = s_waitresult.e_who;
         b_using = 1;
         var_ee23f17d = 1;
         
-        if ( self.var_8ace5ace == 5 )
+        if ( self.n_station == 5 )
         {
             var_ee23f17d = 0;
         }
@@ -229,21 +229,21 @@ function function_22393009()
         
         if ( e_who function_626095c1( self.scene ) )
         {
-            if ( self.var_8ace5ace > 0 )
+            if ( self.n_station > 0 )
             {
-                self.var_8ace5ace -= 1;
-                self.scene thread scene::play( "backward_to_" + string( self.var_8ace5ace ) );
+                self.n_station -= 1;
+                self.scene thread scene::play( "backward_to_" + string( self.n_station ) );
             }
         }
-        else if ( self.var_8ace5ace < 5 )
+        else if ( self.n_station < 5 )
         {
-            self.var_8ace5ace += 1;
-            self.scene thread scene::play( "forward_to_" + string( self.var_8ace5ace ) );
+            self.n_station += 1;
+            self.scene thread scene::play( "forward_to_" + string( self.n_station ) );
         }
         
-        self.scene.var_a64d570 = self.var_8ace5ace;
+        self.scene.var_a64d570 = self.n_station;
         
-        if ( self.var_8ace5ace === self.var_8dd6242b )
+        if ( self.n_station === self.var_8dd6242b )
         {
             self.is_complete = 1;
         }
@@ -398,7 +398,7 @@ function function_8c80503()
         iprintlnbold( "<dev string:x87>" + self.var_614bfc5c );
     #/
     
-    self.var_b21e0263 = 0;
+    self.is_playing_audio = 0;
 }
 
 // Namespace zm_white_audio_interactables/zm_white_audio_interactables
@@ -407,12 +407,12 @@ function function_8c80503()
 // Size: 0x154
 function function_d4c6dc0d()
 {
-    self.var_b21e0263 = 1;
+    self.is_playing_audio = 1;
     var_df4e73a7 = getentarray( self.target2, "targetname" );
     var_df4e73a7[ 0 ] playsound( #"hash_3cca3c060dacc7de" );
     var_df4e73a7[ 0 ] playloopsound( #"hash_14cf26f9ee5a9962" );
     
-    while ( self.var_b21e0263 && var_df4e73a7.size > 0 )
+    while ( self.is_playing_audio && var_df4e73a7.size > 0 )
     {
         var_df4e73a7[ 0 ] rotatepitch( 45, 1 );
         wait 0.1;
@@ -462,7 +462,7 @@ function function_ac06ab3a()
         var_2e2b46e8 zm_item_pickup::item_pickup_init( &function_1792ae3, 1 );
     }
     
-    level.var_e046b238 = struct::get( #"hash_5201d44a6f57e32a" );
+    level.var_e046b238 = struct::get( #"audio_reel_player" );
     level.var_94b00cff = spawn( "script_model", level.var_e046b238.origin );
     s_unitrigger = level.var_e046b238 zm_unitrigger::create( &function_6fb01110, 64, &function_aa07edab );
     s_unitrigger thread function_8352562a();

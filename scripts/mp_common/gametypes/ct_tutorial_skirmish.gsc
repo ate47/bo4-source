@@ -418,7 +418,7 @@ function challenges_init()
     level.var_6f99c3bd = function_5f516f9d( #"melee_kills" );
     level.var_7e008e0c = function_5f516f9d( #"best_killstreak" );
     level.var_24370902 = function_5f516f9d( #"scorestreak_kills" );
-    level.var_924497ca = function_5f516f9d( #"hash_512584b15284d144" );
+    level.var_924497ca = function_5f516f9d( #"secondary_weapon_kills" );
     level.var_94b2e2da = function_5f516f9d( #"hash_513bb5302a850f1c" );
     level.var_9356f44c = function_5f516f9d( #"hash_1ebacadf6dc3dbdf" );
     level.var_f0b5757d = function_5f516f9d( #"veteran_kills" );
@@ -721,9 +721,9 @@ function function_1833fe3e( einflictor, attacker, idamage, smeansofdeath, weapon
             case #"weapon_pistol":
             case #"weapon_launcher":
             case #"weapon_cqb":
-                if ( attacker newvalueoptions( #"hash_512584b15284d144" ) < level.var_924497ca )
+                if ( attacker newvalueoptions( #"secondary_weapon_kills" ) < level.var_924497ca )
                 {
-                    attacker function_9401373f( #"hash_512584b15284d144", 1 );
+                    attacker function_9401373f( #"secondary_weapon_kills", 1 );
                 }
                 
                 break;
@@ -823,7 +823,7 @@ function function_8e22d234()
 function function_b4ebcd8a()
 {
     wait 0.5;
-    var_10e6d37f = 0;
+    n_completed = 0;
     var_3e22bae5 = [];
     mode = currentsessionmode();
     var_40682b3d = getplayerroletemplatecount( mode );
@@ -844,11 +844,11 @@ function function_b4ebcd8a()
         
         if ( str_state == #"tutorial_completed" || str_state == #"skirmish_completed" || str_state == #"skirmish_started" )
         {
-            var_10e6d37f++;
+            n_completed++;
         }
     }
     
-    if ( var_10e6d37f > 9 )
+    if ( n_completed > 9 )
     {
         self giveachievement( "st_mp101" );
         self function_ea859fe2();
@@ -944,7 +944,7 @@ function function_78a17c00()
         b_complete = 0;
     }
     
-    if ( self newvalueoptions( #"hash_512584b15284d144" ) < level.var_924497ca )
+    if ( self newvalueoptions( #"secondary_weapon_kills" ) < level.var_924497ca )
     {
         b_complete = 0;
     }

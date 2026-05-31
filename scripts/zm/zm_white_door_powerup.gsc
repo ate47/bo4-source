@@ -34,21 +34,21 @@ function init_flags()
 // Params 4
 // Checksum 0x7b0da623, Offset: 0x2e8
 // Size: 0x13a
-function door_powerup_drop( powerup_name, var_e3a28454, powerup_team, powerup_location )
+function door_powerup_drop( powerup_name, drop_spot, powerup_team, powerup_location )
 {
     if ( isdefined( level.door_powerup ) )
     {
         level.door_powerup zm_powerups::powerup_delete();
     }
     
-    powerup = zm_net::network_safe_spawn( "powerup", 1, "script_model", var_e3a28454 + ( 0, 0, 40 ) );
+    powerup = zm_net::network_safe_spawn( "powerup", 1, "script_model", drop_spot + ( 0, 0, 40 ) );
     powerup setmodel( #"tag_origin" );
     level notify( #"powerup_dropped", powerup );
     
     if ( isdefined( powerup ) )
     {
         powerup.grabbed_level_notify = #"magic_door_power_up_grabbed";
-        powerup function_94cd396e( powerup_name, powerup_team, var_e3a28454 );
+        powerup function_94cd396e( powerup_name, powerup_team, drop_spot );
         powerup thread zm_powerups::powerup_wobble();
         powerup thread zm_powerups::powerup_grab( powerup_team );
         level.door_powerup = powerup;
@@ -74,15 +74,15 @@ function perks_behind_door()
     level endon( #"magic_door_power_up_grabbed", #"population_count_step_complete" );
     level thread powerup_grabbed_watcher();
     level flag::wait_till( "initial_blackscreen_passed" );
-    level.var_2cc90a51 = [];
-    level.var_2cc90a51[ 0 ] = "nuke";
-    level.var_2cc90a51[ 1 ] = "double_points";
-    level.var_2cc90a51[ 2 ] = "insta_kill";
-    level.var_2cc90a51[ 3 ] = "fire_sale";
-    level.var_2cc90a51[ 4 ] = "full_ammo";
+    level.door_perk_drop_list = [];
+    level.door_perk_drop_list[ 0 ] = "nuke";
+    level.door_perk_drop_list[ 1 ] = "double_points";
+    level.door_perk_drop_list[ 2 ] = "insta_kill";
+    level.door_perk_drop_list[ 3 ] = "fire_sale";
+    level.door_perk_drop_list[ 4 ] = "full_ammo";
     index = 0;
     level.ammodrop = struct::get( "zm_nuked_ammo_drop", "script_noteworthy" );
-    level.perk_type = level.var_2cc90a51[ index ];
+    level.perk_type = level.door_perk_drop_list[ index ];
     index++;
     door_powerup_drop( level.perk_type, level.ammodrop.origin );
     
@@ -90,12 +90,12 @@ function perks_behind_door()
     {
         level waittill( #"nuke_clock_moved" );
         
-        if ( index == level.var_2cc90a51.size )
+        if ( index == level.door_perk_drop_list.size )
         {
             index = 0;
         }
         
-        level.perk_type = level.var_2cc90a51[ index ];
+        level.perk_type = level.door_perk_drop_list[ index ];
         index++;
         door_powerup_drop( level.perk_type, level.ammodrop.origin );
     }

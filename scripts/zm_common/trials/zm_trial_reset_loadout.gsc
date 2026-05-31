@@ -122,7 +122,7 @@ function private reset_ammo( var_f2c84b6b )
             
             if ( weapon == getweapon( #"tomahawk_t8" ) || weapon == getweapon( #"tomahawk_t8_upgraded" ) )
             {
-                while ( self function_36dfc05f( n_slot ) )
+                while ( self gadgetisdeployed( n_slot ) )
                 {
                     waitframe( 1 );
                 }

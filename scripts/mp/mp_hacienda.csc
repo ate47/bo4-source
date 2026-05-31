@@ -14,7 +14,7 @@
 function event_handler[level_init] main( eventstruct )
 {
     level.draftxcam = #"ui_cam_draft_common";
-    level.var_482af62e = #"hash_12263e5d70551bf9";
+    level.var_482af62e = #"ui_cam_draft_common_zoom";
     callback::on_localclient_connect( &on_localclient_connect );
     callback::on_gameplay_started( &on_gameplay_started );
     mp_hacienda_fx::main();

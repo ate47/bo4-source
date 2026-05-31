@@ -6,7 +6,7 @@
     "team": "TEAM_AXIS",
     "species": "#human",
     "archeType": "#nosferatu",
-    "scoreType": "#hash_2affb03405165f44",
+    "scoreType": "#base_nosferatu",
     "movementType": "#nosferatu",
     "spawnInfluencers": [
         "#none",
@@ -17,13 +17,16 @@
     "character": [
         "#hash_64b521b97ee8cab"
     ],
+    "animMappingTables": [
+        "#hash_2a573a3048fab6c7"
+    ],
     "meleeWeapon": "#hash_2ab63008299706dc",
     "aimTable": "#soldier_aim",
     "footstepTable": "#hash_78c774673e4b1875",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#zm_nos_footstep",
     "footstepFXTable2": "#zm_nos_footstep",
-    "behaviorTree": "#zm_nosferatu.ai_bt",
+    "behaviorTree": "#hash_2a6233304904b267",
     "animStateMachine": "#hash_6c96a60c01ba1c9c",
     "animSelectorTable": "#hash_6c969f0c01ba10b7",
     "traversalExtents": "#default_traversal_extents_zm",

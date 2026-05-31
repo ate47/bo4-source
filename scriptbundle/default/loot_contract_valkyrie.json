@@ -3,8 +3,8 @@
     "relateditemname": "localized17#weapon/sniper_powerbolt_t8",
     "contracttitle": "localized17#hash_452fd06faf792671",
     "name": "loot_contract_valkyrie",
-    "contractdescription": "localized17#hash_7680bf2bc2219eb1",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_7c1aeddf12a07116",
-    "hash_e08fc162": "localized17#hash_485e43ae0c8e5c85"
+    "contractdescription": "localized17#menu/mastercraft",
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_7c1aeddf12a07116",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_485e43ae0c8e5c85"
 }

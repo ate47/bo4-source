@@ -82,7 +82,7 @@ function private __init__()
         
         foreach ( i, list in level.var_2e96a450 )
         {
-            str_set = function_9e72a96( i );
+            str_set = hashtostring( i );
             println( str_set + "<dev string:xb1>" + list );
             n_total += list;
             a_tokens = strtok( str_set, "<dev string:xc1>" );
@@ -211,7 +211,7 @@ function private __init__()
                     
                     if ( isdefined( the_item[ 0 ].itementry ) )
                     {
-                        debug_string = the_item[ 0 ].itementry.name + "<dev string:x64e>" + function_9e72a96( the_item[ 0 ].targetname ) + "<dev string:x64e>" + the_item[ 0 ].origin + "<dev string:x64e>" + type;
+                        debug_string = the_item[ 0 ].itementry.name + "<dev string:x64e>" + hashtostring( the_item[ 0 ].targetname ) + "<dev string:x64e>" + the_item[ 0 ].origin + "<dev string:x64e>" + type;
                         fprintln( file, debug_string );
                         item_count++;
                     }
@@ -1171,7 +1171,7 @@ function private __init__()
                                 
                                 if ( isdefined( item.targetname ) )
                                 {
-                                    print3d( item.origin + ( 0, 0, 32 ), function_9e72a96( item.targetname ), color, 1, 0.3, 20 );
+                                    print3d( item.origin + ( 0, 0, 32 ), hashtostring( item.targetname ), color, 1, 0.3, 20 );
                                 }
                                 
                                 break;

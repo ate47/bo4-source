@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_station.d3dbsp",
+    "baseName": "mp_station",
+    "mins": "-90517.125 -98143.05 -6020",
+    "maxs": "117414.53 110055.25 15440",
+    "checksum": 0,
+    "streamerworld": "#hash_348677593104c917",
+    "lighting": "#maps/mp/mp_station.d3dbsp",
+    "lutMaterial": "#lut_mp_policestation",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_station",
+        "#img_trim_lut_mp_station",
+        "#img_trim_lut_mp_station",
+        "#img_trim_lut_mp_station"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 9,
+        "cookieArray": "#*cookie_array"
+    }
+}

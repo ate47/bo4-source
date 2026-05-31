@@ -146,7 +146,7 @@ function watch_player_drowning()
             
             n_swimtime = int( self.playerrole.swimtime * 1000 );
             
-            if ( self hasperk( #"hash_4ef368f54cd86ab7" ) )
+            if ( self hasperk( #"specialty_ironlungs" ) )
             {
                 n_swimtime = int( n_swimtime * 1.5 );
             }

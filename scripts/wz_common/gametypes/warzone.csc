@@ -339,9 +339,9 @@ function function_f8c70ad7( localclientnum )
             }
             else if ( var_ebe45f6a <= 7500 )
             {
-                var_f9d98743 = ( var_ebe45f6a - 3000 ) / 4500;
-                setsoundvolume( var_408847b6.var_41266084, var_f9d98743 );
-                setsoundvolume( var_408847b6.var_2f3960f5, var_f9d98743 );
+                n_volume = ( var_ebe45f6a - 3000 ) / 4500;
+                setsoundvolume( var_408847b6.var_41266084, n_volume );
+                setsoundvolume( var_408847b6.var_2f3960f5, n_volume );
             }
             else
             {
@@ -547,9 +547,9 @@ function private function_7e3a43c3( localclientnum )
             continue;
         }
         
-        if ( !currentplayer postfx::function_556665f2( #"hash_13defe66b6177d0b" ) )
+        if ( !currentplayer postfx::function_556665f2( #"pstfx_wz_toon" ) )
         {
-            currentplayer postfx::playpostfxbundle( #"hash_13defe66b6177d0b" );
+            currentplayer postfx::playpostfxbundle( #"pstfx_wz_toon" );
         }
         
         waitframe( 1 );

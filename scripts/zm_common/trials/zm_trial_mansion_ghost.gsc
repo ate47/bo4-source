@@ -40,7 +40,7 @@ function __init__()
 // Size: 0x1c
 function private on_begin()
 {
-    level thread function_eb301e1b();
+    level thread ghost_path();
 }
 
 // Namespace zm_trial_mansion_ghost/zm_trial_mansion_ghost
@@ -122,7 +122,7 @@ function private function_889abd74()
 // Params 0, eflags: 0x4
 // Checksum 0xa59d9fc0, Offset: 0x588
 // Size: 0x5a0
-function private function_eb301e1b()
+function private ghost_path()
 {
     level endon( #"hash_7646638df88a3656" );
     wait randomintrange( 0, 3 );

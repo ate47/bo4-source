@@ -18,13 +18,16 @@
         "#hash_7337aeb379996092",
         "#hash_7337adb379995edf"
     ],
-    "meleeWeapon": "#hash_479f8de44d618b68",
+    "animMappingTables": [
+        "#hash_309b0a08ff43015d"
+    ],
+    "meleeWeapon": "#zombie_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
     "footstepTable": "#zombfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#zm_zombie_orange.ai_bt",
+    "behaviorTree": "#hash_30982308ff40f601",
     "animStateMachine": "#hash_5a7a2149bee0f3aa",
     "animSelectorTable": "#hash_5a7a2a49bee102f5",
     "traversalExtents": "#default_traversal_extents_zm",

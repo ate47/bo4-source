@@ -6,7 +6,7 @@
     "team": "TEAM_AXIS",
     "species": "#human",
     "archeType": "#zombie_dog",
-    "scoreType": "#hash_36915c371e333775",
+    "scoreType": "#ghost_hound",
     "movementType": "#zombie_dog",
     "spawnInfluencers": [
         "#none",
@@ -15,9 +15,12 @@
     "typeSuffix": "_zombie_dog",
     "spawnerType": "hellhound",
     "character": [
-        "#hash_6d3f09354806fd4f"
+        "#c_zom_der_hellhound_ghost"
     ],
-    "meleeWeapon": "#hash_1783057563ce1ca2",
+    "animMappingTables": [
+        "#hash_693f6906a677d076"
+    ],
+    "meleeWeapon": "#dog_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
     "footstepTable": "#zdogfootstep",
     "footstepScriptCallback": false,

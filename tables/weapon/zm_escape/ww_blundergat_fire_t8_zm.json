@@ -2,8 +2,8 @@
     "name": "#ww_blundergat_fire_t8_zm",
     "baseWeapon": "#ww_blundergat_fire_t8",
     "displayname": "#zmweapon/magmagat",
-    "xhash_70": "#ww_blundergat_t8",
-    "streamkey": "#hash_2c5eb2d4ddfff760",
+    "weapon70": "#ww_blundergat_t8",
+    "soundbank": "#ww_blundergat_fire_t8_soundbank",
     "scrstr_8c8": [
         "tag_armor_acid",
         "tag_armor",
@@ -23,21 +23,36 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.2517 1",
+            "0.5006 1",
+            "1 0.0507"
+        ],
+        [
+            "0 1",
+            "0.2517 1",
+            "0.5006 1",
+            "1 0.0507"
+        ]
+    ],
     "firesound": "#hash_711623bb9a2d2940",
     "firesoundplayer": "#hash_3226bebb2decfe81",
     "sound240": "#hash_631a067190b54300",
@@ -45,6 +60,9 @@
     "sound800": "#hash_54f28bb508a46096",
     "sound810": "#hash_54f28bb508a46096",
     "tunables1": "#ww_blundergat_fire_t8_tunables_zm",
+    "tracers": [
+        "#hash_d6f045ae9b61e985"
+    ],
     "projectilemodel": "#p8_fxp_magma_blob",
     "projectileModelEnemy": "#p8_fxp_magma_blob",
     "viewmodel": [

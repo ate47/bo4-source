@@ -57,25 +57,25 @@ function __init__()
 function __main__()
 {
     level thread function_8aeee6b8();
-    var_e4f517f0 = getentarray( "zm_spinning_trap", "script_noteworthy" );
+    a_t_spinning_traps = getentarray( "zm_spinning_trap", "script_noteworthy" );
     
-    foreach ( var_fe861167 in var_e4f517f0 )
+    foreach ( t_spinning_trap in a_t_spinning_traps )
     {
-        var_fe861167 thread function_dcd775a();
+        t_spinning_trap thread function_dcd775a();
     }
     
-    var_59fe5c9e = getentarray( "zm_fan_trap", "script_noteworthy" );
+    a_t_fan_traps = getentarray( "zm_fan_trap", "script_noteworthy" );
     
-    foreach ( var_7c68fa38 in var_59fe5c9e )
+    foreach ( t_fan_trap in a_t_fan_traps )
     {
-        var_7c68fa38 thread function_ea490292();
+        t_fan_trap thread function_ea490292();
     }
     
-    var_5c2bef3d = getentarray( "zm_acid_trap", "script_noteworthy" );
+    a_t_acid_traps = getentarray( "zm_acid_trap", "script_noteworthy" );
     
-    foreach ( var_4d42c97f in var_5c2bef3d )
+    foreach ( t_acid_trap in a_t_acid_traps )
     {
-        var_4d42c97f thread function_39f2d90f();
+        t_acid_trap thread function_39f2d90f();
     }
 }
 
@@ -85,13 +85,13 @@ function __main__()
 // Size: 0x424
 function init_fan_trap_trigs()
 {
-    var_59fe5c9e = getentarray( "zm_fan_trap", "script_noteworthy" );
+    a_t_fan_traps = getentarray( "zm_fan_trap", "script_noteworthy" );
     
-    foreach ( var_7c68fa38 in var_59fe5c9e )
+    foreach ( t_fan_trap in a_t_fan_traps )
     {
-        var_7c68fa38._trap_cooldown_time = 25;
-        var_7c68fa38.var_cd6ebde4 = [];
-        a_e_trap = getentarray( var_7c68fa38.target, "targetname" );
+        t_fan_trap._trap_cooldown_time = 25;
+        t_fan_trap.var_cd6ebde4 = [];
+        a_e_trap = getentarray( t_fan_trap.target, "targetname" );
         
         for ( i = 0; i < a_e_trap.size ; i++ )
         {
@@ -99,36 +99,36 @@ function init_fan_trap_trigs()
             {
                 if ( a_e_trap[ i ].script_string == "fan_trap_rumble" )
                 {
-                    var_7c68fa38.t_rumble = a_e_trap[ i ];
+                    t_fan_trap.t_rumble = a_e_trap[ i ];
                     continue;
                 }
                 
                 if ( a_e_trap[ i ].script_string == "fxanim_fan" )
                 {
-                    var_7c68fa38.mdl_fan = a_e_trap[ i ];
+                    t_fan_trap.mdl_fan = a_e_trap[ i ];
                     continue;
                 }
                 
                 if ( a_e_trap[ i ].script_string == "trap_control_panel" )
                 {
-                    if ( !isdefined( var_7c68fa38.var_cd6ebde4 ) )
+                    if ( !isdefined( t_fan_trap.var_cd6ebde4 ) )
                     {
-                        var_7c68fa38.var_cd6ebde4 = [];
+                        t_fan_trap.var_cd6ebde4 = [];
                     }
-                    else if ( !isarray( var_7c68fa38.var_cd6ebde4 ) )
+                    else if ( !isarray( t_fan_trap.var_cd6ebde4 ) )
                     {
-                        var_7c68fa38.var_cd6ebde4 = array( var_7c68fa38.var_cd6ebde4 );
+                        t_fan_trap.var_cd6ebde4 = array( t_fan_trap.var_cd6ebde4 );
                     }
                     
-                    if ( !isinarray( var_7c68fa38.var_cd6ebde4, a_e_trap[ i ] ) )
+                    if ( !isinarray( t_fan_trap.var_cd6ebde4, a_e_trap[ i ] ) )
                     {
-                        var_7c68fa38.var_cd6ebde4[ var_7c68fa38.var_cd6ebde4.size ] = a_e_trap[ i ];
+                        t_fan_trap.var_cd6ebde4[ t_fan_trap.var_cd6ebde4.size ] = a_e_trap[ i ];
                     }
                 }
             }
         }
         
-        a_s_trap = struct::get_array( var_7c68fa38.target );
+        a_s_trap = struct::get_array( t_fan_trap.target );
         
         for ( i = 0; i < a_s_trap.size ; i++ )
         {
@@ -136,18 +136,18 @@ function init_fan_trap_trigs()
             {
                 if ( a_s_trap[ i ].script_noteworthy == "brutus_trap_finder" )
                 {
-                    if ( !isdefined( var_7c68fa38.var_31004a80 ) )
+                    if ( !isdefined( t_fan_trap.var_31004a80 ) )
                     {
-                        var_7c68fa38.var_31004a80 = [];
+                        t_fan_trap.var_31004a80 = [];
                     }
-                    else if ( !isarray( var_7c68fa38.var_31004a80 ) )
+                    else if ( !isarray( t_fan_trap.var_31004a80 ) )
                     {
-                        var_7c68fa38.var_31004a80 = array( var_7c68fa38.var_31004a80 );
+                        t_fan_trap.var_31004a80 = array( t_fan_trap.var_31004a80 );
                     }
                     
-                    if ( !isinarray( var_7c68fa38.var_31004a80, a_s_trap[ i ] ) )
+                    if ( !isinarray( t_fan_trap.var_31004a80, a_s_trap[ i ] ) )
                     {
-                        var_7c68fa38.var_31004a80[ var_7c68fa38.var_31004a80.size ] = a_s_trap[ i ];
+                        t_fan_trap.var_31004a80[ t_fan_trap.var_31004a80.size ] = a_s_trap[ i ];
                     }
                 }
             }
@@ -156,7 +156,7 @@ function init_fan_trap_trigs()
     
     zm_traps::register_trap_basic_info( "zm_fan_trap", &activate_zm_fan_trap, &function_76e0728d );
     zm_traps::register_trap_damage( "zm_fan_trap", &function_5758997a, &function_9c2d463d );
-    zm_traps::function_60d9e800( "zm_fan_trap", &zapper_light_red, &zapper_light_green );
+    zm_traps::register_trap_lights( "zm_fan_trap", &zapper_light_red, &zapper_light_green );
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
@@ -549,15 +549,15 @@ function function_8aeee6b8()
 // Size: 0x4c4
 function init_acid_trap_trigs()
 {
-    var_5c2bef3d = getentarray( "zm_acid_trap", "script_noteworthy" );
+    a_t_acid_traps = getentarray( "zm_acid_trap", "script_noteworthy" );
     
-    foreach ( var_4d42c97f in var_5c2bef3d )
+    foreach ( t_acid_trap in a_t_acid_traps )
     {
-        var_4d42c97f._trap_cooldown_time = 25;
-        var_4d42c97f.var_28ea1870 = [];
-        var_4d42c97f.var_cd6ebde4 = [];
-        var_4d42c97f.var_31004a80 = [];
-        a_e_trap = getentarray( var_4d42c97f.target, "targetname" );
+        t_acid_trap._trap_cooldown_time = 25;
+        t_acid_trap.a_s_trap_fx = [];
+        t_acid_trap.var_cd6ebde4 = [];
+        t_acid_trap.var_31004a80 = [];
+        a_e_trap = getentarray( t_acid_trap.target, "targetname" );
         
         for ( i = 0; i < a_e_trap.size ; i++ )
         {
@@ -565,24 +565,24 @@ function init_acid_trap_trigs()
             {
                 if ( a_e_trap[ i ].script_string == "trap_control_panel" )
                 {
-                    if ( !isdefined( var_4d42c97f.var_cd6ebde4 ) )
+                    if ( !isdefined( t_acid_trap.var_cd6ebde4 ) )
                     {
-                        var_4d42c97f.var_cd6ebde4 = [];
+                        t_acid_trap.var_cd6ebde4 = [];
                     }
-                    else if ( !isarray( var_4d42c97f.var_cd6ebde4 ) )
+                    else if ( !isarray( t_acid_trap.var_cd6ebde4 ) )
                     {
-                        var_4d42c97f.var_cd6ebde4 = array( var_4d42c97f.var_cd6ebde4 );
+                        t_acid_trap.var_cd6ebde4 = array( t_acid_trap.var_cd6ebde4 );
                     }
                     
-                    if ( !isinarray( var_4d42c97f.var_cd6ebde4, a_e_trap[ i ] ) )
+                    if ( !isinarray( t_acid_trap.var_cd6ebde4, a_e_trap[ i ] ) )
                     {
-                        var_4d42c97f.var_cd6ebde4[ var_4d42c97f.var_cd6ebde4.size ] = a_e_trap[ i ];
+                        t_acid_trap.var_cd6ebde4[ t_acid_trap.var_cd6ebde4.size ] = a_e_trap[ i ];
                     }
                 }
             }
         }
         
-        a_s_trap = struct::get_array( var_4d42c97f.target, "targetname" );
+        a_s_trap = struct::get_array( t_acid_trap.target, "targetname" );
         
         for ( i = 0; i < a_s_trap.size ; i++ )
         {
@@ -590,18 +590,18 @@ function init_acid_trap_trigs()
             {
                 if ( a_s_trap[ i ].script_string == "acid_trap_fx" )
                 {
-                    if ( !isdefined( var_4d42c97f.var_28ea1870 ) )
+                    if ( !isdefined( t_acid_trap.a_s_trap_fx ) )
                     {
-                        var_4d42c97f.var_28ea1870 = [];
+                        t_acid_trap.a_s_trap_fx = [];
                     }
-                    else if ( !isarray( var_4d42c97f.var_28ea1870 ) )
+                    else if ( !isarray( t_acid_trap.a_s_trap_fx ) )
                     {
-                        var_4d42c97f.var_28ea1870 = array( var_4d42c97f.var_28ea1870 );
+                        t_acid_trap.a_s_trap_fx = array( t_acid_trap.a_s_trap_fx );
                     }
                     
-                    if ( !isinarray( var_4d42c97f.var_28ea1870, a_s_trap[ i ] ) )
+                    if ( !isinarray( t_acid_trap.a_s_trap_fx, a_s_trap[ i ] ) )
                     {
-                        var_4d42c97f.var_28ea1870[ var_4d42c97f.var_28ea1870.size ] = a_s_trap[ i ];
+                        t_acid_trap.a_s_trap_fx[ t_acid_trap.a_s_trap_fx.size ] = a_s_trap[ i ];
                     }
                 }
             }
@@ -610,18 +610,18 @@ function init_acid_trap_trigs()
             {
                 if ( a_s_trap[ i ].script_noteworthy == "brutus_trap_finder" )
                 {
-                    if ( !isdefined( var_4d42c97f.var_31004a80 ) )
+                    if ( !isdefined( t_acid_trap.var_31004a80 ) )
                     {
-                        var_4d42c97f.var_31004a80 = [];
+                        t_acid_trap.var_31004a80 = [];
                     }
-                    else if ( !isarray( var_4d42c97f.var_31004a80 ) )
+                    else if ( !isarray( t_acid_trap.var_31004a80 ) )
                     {
-                        var_4d42c97f.var_31004a80 = array( var_4d42c97f.var_31004a80 );
+                        t_acid_trap.var_31004a80 = array( t_acid_trap.var_31004a80 );
                     }
                     
-                    if ( !isinarray( var_4d42c97f.var_31004a80, a_s_trap[ i ] ) )
+                    if ( !isinarray( t_acid_trap.var_31004a80, a_s_trap[ i ] ) )
                     {
-                        var_4d42c97f.var_31004a80[ var_4d42c97f.var_31004a80.size ] = a_s_trap[ i ];
+                        t_acid_trap.var_31004a80[ t_acid_trap.var_31004a80.size ] = a_s_trap[ i ];
                     }
                 }
             }
@@ -630,7 +630,7 @@ function init_acid_trap_trigs()
     
     zm_traps::register_trap_basic_info( "zm_acid_trap", &activate_zm_acid_trap, &function_6219e5ab );
     zm_traps::register_trap_damage( "zm_acid_trap", &function_efd61793, &function_9699194a );
-    zm_traps::function_60d9e800( "zm_acid_trap", &zapper_light_red, &zapper_light_green );
+    zm_traps::register_trap_lights( "zm_acid_trap", &zapper_light_red, &zapper_light_green );
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
@@ -662,9 +662,9 @@ function activate_zm_acid_trap()
 {
     level.trapped_track[ #"acid" ] = 1;
     
-    for ( i = 0; i < self.var_28ea1870.size ; i++ )
+    for ( i = 0; i < self.a_s_trap_fx.size ; i++ )
     {
-        self.var_28ea1870[ i ] thread acid_trap_fx( self );
+        self.a_s_trap_fx[ i ] thread acid_trap_fx( self );
         waitframe( 1 );
     }
     
@@ -866,14 +866,14 @@ function function_1a5df584( t_damage )
 // Size: 0x464
 function function_6dbbc97()
 {
-    var_e4f517f0 = getentarray( "zm_spinning_trap", "script_noteworthy" );
+    a_t_spinning_traps = getentarray( "zm_spinning_trap", "script_noteworthy" );
     
-    foreach ( var_fe861167 in var_e4f517f0 )
+    foreach ( t_spinning_trap in a_t_spinning_traps )
     {
-        var_fe861167._trap_cooldown_time = 25;
-        a_e_targets = getentarray( var_fe861167.target, "targetname" );
-        var_fe861167.var_cd6ebde4 = [];
-        var_fe861167.var_31004a80 = [];
+        t_spinning_trap._trap_cooldown_time = 25;
+        a_e_targets = getentarray( t_spinning_trap.target, "targetname" );
+        t_spinning_trap.var_cd6ebde4 = [];
+        t_spinning_trap.var_31004a80 = [];
         
         for ( i = 0; i < a_e_targets.size ; i++ )
         {
@@ -881,36 +881,36 @@ function function_6dbbc97()
             {
                 if ( a_e_targets[ i ].script_string == "spinning_trap_rumble" )
                 {
-                    var_fe861167.t_rumble = a_e_targets[ i ];
+                    t_spinning_trap.t_rumble = a_e_targets[ i ];
                     continue;
                 }
                 
                 if ( a_e_targets[ i ].script_string == "fxanim_spinning_trap" )
                 {
-                    var_fe861167.mdl_trap = a_e_targets[ i ];
+                    t_spinning_trap.mdl_trap = a_e_targets[ i ];
                     continue;
                 }
                 
                 if ( a_e_targets[ i ].script_string == "trap_control_panel" )
                 {
-                    if ( !isdefined( var_fe861167.var_cd6ebde4 ) )
+                    if ( !isdefined( t_spinning_trap.var_cd6ebde4 ) )
                     {
-                        var_fe861167.var_cd6ebde4 = [];
+                        t_spinning_trap.var_cd6ebde4 = [];
                     }
-                    else if ( !isarray( var_fe861167.var_cd6ebde4 ) )
+                    else if ( !isarray( t_spinning_trap.var_cd6ebde4 ) )
                     {
-                        var_fe861167.var_cd6ebde4 = array( var_fe861167.var_cd6ebde4 );
+                        t_spinning_trap.var_cd6ebde4 = array( t_spinning_trap.var_cd6ebde4 );
                     }
                     
-                    if ( !isinarray( var_fe861167.var_cd6ebde4, a_e_targets[ i ] ) )
+                    if ( !isinarray( t_spinning_trap.var_cd6ebde4, a_e_targets[ i ] ) )
                     {
-                        var_fe861167.var_cd6ebde4[ var_fe861167.var_cd6ebde4.size ] = a_e_targets[ i ];
+                        t_spinning_trap.var_cd6ebde4[ t_spinning_trap.var_cd6ebde4.size ] = a_e_targets[ i ];
                     }
                 }
             }
         }
         
-        a_s_trap = struct::get_array( var_fe861167.target );
+        a_s_trap = struct::get_array( t_spinning_trap.target );
         
         for ( i = 0; i < a_s_trap.size ; i++ )
         {
@@ -918,29 +918,29 @@ function function_6dbbc97()
             {
                 if ( a_s_trap[ i ].script_noteworthy == "brutus_trap_finder" )
                 {
-                    if ( !isdefined( var_fe861167.var_31004a80 ) )
+                    if ( !isdefined( t_spinning_trap.var_31004a80 ) )
                     {
-                        var_fe861167.var_31004a80 = [];
+                        t_spinning_trap.var_31004a80 = [];
                     }
-                    else if ( !isarray( var_fe861167.var_31004a80 ) )
+                    else if ( !isarray( t_spinning_trap.var_31004a80 ) )
                     {
-                        var_fe861167.var_31004a80 = array( var_fe861167.var_31004a80 );
+                        t_spinning_trap.var_31004a80 = array( t_spinning_trap.var_31004a80 );
                     }
                     
-                    if ( !isinarray( var_fe861167.var_31004a80, a_s_trap[ i ] ) )
+                    if ( !isinarray( t_spinning_trap.var_31004a80, a_s_trap[ i ] ) )
                     {
-                        var_fe861167.var_31004a80[ var_fe861167.var_31004a80.size ] = a_s_trap[ i ];
+                        t_spinning_trap.var_31004a80[ t_spinning_trap.var_31004a80.size ] = a_s_trap[ i ];
                     }
                 }
             }
         }
         
-        var_fe861167.mdl_trap thread scene::play( #"p8_fxanim_zm_esc_trap_spinning_bundle", var_fe861167.mdl_trap );
+        t_spinning_trap.mdl_trap thread scene::play( #"p8_fxanim_zm_esc_trap_spinning_bundle", t_spinning_trap.mdl_trap );
     }
     
     zm_traps::register_trap_basic_info( "zm_spinning_trap", &activate_zm_spinning_trap, &function_ffe09b75 );
     zm_traps::register_trap_damage( "zm_spinning_trap", &function_7e74aa5, &function_1f7e661f );
-    zm_traps::function_60d9e800( "zm_spinning_trap", &zapper_light_red, &zapper_light_green );
+    zm_traps::register_trap_lights( "zm_spinning_trap", &zapper_light_red, &zapper_light_green );
 }
 
 // Namespace zm_escape_traps/zm_escape_traps

@@ -355,9 +355,9 @@ DEVBLOCK 0x92ca
 DEVBLOCK 0x9386
 # bot_action::bleed_out_weight@2bc
 DEVBLOCK 0x941c
-# bot_action::function_d2e41376@142
+# bot_action::calculate_aim_offset@142
 DEVBLOCK 0x9df2
-# bot_action::function_d2e41376@162
+# bot_action::calculate_aim_offset@162
 DEVBLOCK 0x9e12
 # bot_action::function_ecf6dc7a@24
 DEVBLOCK 0xa2b4

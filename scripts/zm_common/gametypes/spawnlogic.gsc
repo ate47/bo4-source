@@ -1931,7 +1931,7 @@ function spawnlogic_begin()
             {
                 spawnkill = oldspawnkills[ i ];
                 
-                if ( spawnkill.var_47d2dfb )
+                if ( spawnkill.dierwasspawner )
                 {
                     line( spawnkill.spawnpointorigin, spawnkill.dierorigin, ( 0.4, 0.5, 0.4 ) );
                     line( spawnkill.dierorigin, spawnkill.killerorigin, ( 0, 1, 1 ) );

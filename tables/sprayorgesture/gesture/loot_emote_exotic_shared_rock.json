@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_rock",
+    "type": "#gesture",
+    "gesture": "#hash_1e6e9bbaa00bc323",
+    "gesture2": "#hash_3c9d5738fdafc08c",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/rock",
+        "icon": "image#hash_58a955cd1bea93bb",
+        "isdefault": 0
+    }
+}

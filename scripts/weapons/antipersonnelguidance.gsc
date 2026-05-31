@@ -488,7 +488,7 @@ function locksighttest( target )
         return false;
     }
     
-    if ( isdefined( target.var_e8ec304d ) && target.var_e8ec304d )
+    if ( isdefined( target.nolockon ) && target.nolockon )
     {
         return false;
     }

@@ -1,0 +1,72 @@
+{
+    "name": "#zm_golden_packapunch",
+    "delayBetweenRepSoundsDuration": 0,
+    "earthquakeOnRepair": 0,
+    "earthquakeMinScale": 0.3,
+    "earthquakeMaxScale": 0.4,
+    "earthquakeMinDuration": 0.2,
+    "earthquakeMaxDuration": 0.4,
+    "earthquakeRadius": 150,
+    "numBoardsInBarrier": 5,
+    "autoHideOpenPieces": 0,
+    "taunts": 0,
+    "reachThroughAttacks": 0,
+    "numAttackSlots": 1,
+    "attackSpotHorzOffset": 0,
+    "boards": [
+        {
+            "boardModel": "#hash_134184edcbce9750",
+            "tearAnim": "#o_zombie_base_packapunch_poweron",
+            "boardAnim": "#o_zombie_base_packapunch_poweron",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        },
+        {
+            "boardModel": "#p8_zm_vending_packapunch_ora_gold_on",
+            "tearAnim": "#o_zombie_base_packapunch_working_take_gun",
+            "boardAnim": "#o_zombie_base_packapunch_working_eject_gun",
+            "pauseAndRepeatRepSound": "#hash_1",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        },
+        {
+            "boardModel": "#p7_zm_der2_vending_packapunch_sign_wait",
+            "tearAnim": "#o_zombie_base_packapunch_flag_up",
+            "boardAnim": "#o_zombie_base_packapunch_flag_down",
+            "pauseAndRepeatRepSound": "#hash_1",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        },
+        {
+            "boardModel": "#p7_zm_vending_packapunch_weapon",
+            "tearAnim": "#o_zombie_base_packapunch_worldguns_taken",
+            "boardAnim": "#o_zombie_base_packapunch_worldguns_ejected",
+            "pauseAndRepeatRepSound": "#hash_1",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 1,
+            "maxPause": 1,
+            "numRepsToPullProBoard": 3
+        },
+        {
+            "boardModel": "#p8_zm_vending_packapunch_ora_gold_on",
+            "tearAnim": "#o_zombie_base_packapunch_working_loop",
+            "boardAnim": "#o_zombie_base_packapunch_working_loop",
+            "pauseAndRepeatRepSound": "#hash_1",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        }
+    ]
+}

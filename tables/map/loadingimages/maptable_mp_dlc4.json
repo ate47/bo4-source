@@ -2,11 +2,11 @@
     "name": "#maptable_mp_dlc4",
     "mapCount": 3,
     "images": [
-        "#hash_6be01ac67a743443",
+        "#img_t8_menu_mp_loadscreen_embassy",
         "#blacktransparent",
-        "#hash_225be685057945b1",
+        "#img_t8_menu_mp_loadscreen_geothermal",
         "#blacktransparent",
-        "#hash_3d9594ddb9d9c3fb",
+        "#img_t8_menu_mp_loadscreen_russianbase",
         "#blacktransparent"
     ]
 }

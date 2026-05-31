@@ -640,7 +640,7 @@ function function_4990741c()
             var_3c73ecd4 = level.zombie_total;
         }
         
-        var_a6559064 = 1 + level.var_38b15968 - var_3c73ecd4;
+        var_a6559064 = 1 + level.n_zombie_spawns - var_3c73ecd4;
         
         if ( var_a6559064 > level.var_fb9b5925 && isdefined( level.var_c1a3937d[ var_a6559064 ] ) )
         {
@@ -654,13 +654,13 @@ function function_4990741c()
             }
             
             /#
-                foreach ( var_c28e5f72 in level.var_50cfb6c2 )
+                foreach ( a_s_ai_spawn in level.var_50cfb6c2 )
                 {
-                    foreach ( var_e5aaf7f4 in var_c28e5f72 )
+                    foreach ( s_ai_spawn in a_s_ai_spawn )
                     {
-                        if ( var_e5aaf7f4.n_spawn == var_a6559064 )
+                        if ( s_ai_spawn.n_spawn == var_a6559064 )
                         {
-                            var_e5aaf7f4.b_spawned = 1;
+                            s_ai_spawn.b_spawned = 1;
                         }
                     }
                 }
@@ -700,7 +700,7 @@ function private function_3d5b3f85( str_archetype )
     level.var_c1a3937d[ var_31b155cf ] = str_archetype;
     
     /#
-        var_e5aaf7f4 = { #str_archetype:str_archetype, #n_spawn:var_31b155cf, #b_spawned:0 };
+        s_ai_spawn = { #str_archetype:str_archetype, #n_spawn:var_31b155cf, #b_spawned:0 };
         
         if ( !isdefined( level.var_50cfb6c2[ 0 ] ) )
         {
@@ -711,7 +711,7 @@ function private function_3d5b3f85( str_archetype )
             level.var_50cfb6c2[ 0 ] = array( level.var_50cfb6c2[ 0 ] );
         }
         
-        level.var_50cfb6c2[ 0 ][ level.var_50cfb6c2[ 0 ].size ] = var_e5aaf7f4;
+        level.var_50cfb6c2[ 0 ][ level.var_50cfb6c2[ 0 ].size ] = s_ai_spawn;
         
         if ( !isdefined( level.var_f4e76c2[ str_archetype ] ) )
         {
@@ -1085,7 +1085,7 @@ function function_e84b609c( s_params )
 // Size: 0x212
 function private function_44298b05()
 {
-    level.var_722fb772 = level.var_38b15968;
+    level.var_722fb772 = level.n_zombie_spawns;
     var_d43195ce = array::randomize( getarraykeys( level.var_c1a3937d ) );
     var_e6f6bd65 = [];
     
@@ -1448,7 +1448,7 @@ function private function_d7864087( var_dbce0c44 )
                 level.var_c1a3937d[ n_spawn ] = str_archetype;
                 
                 /#
-                    var_e5aaf7f4 = { #str_archetype:str_archetype, #n_spawn:n_spawn, #b_spawned:0 };
+                    s_ai_spawn = { #str_archetype:str_archetype, #n_spawn:n_spawn, #b_spawned:0 };
                     
                     if ( !isdefined( level.var_50cfb6c2[ i ] ) )
                     {
@@ -1459,7 +1459,7 @@ function private function_d7864087( var_dbce0c44 )
                         level.var_50cfb6c2[ i ] = array( level.var_50cfb6c2[ i ] );
                     }
                     
-                    level.var_50cfb6c2[ i ][ level.var_50cfb6c2[ i ].size ] = var_e5aaf7f4;
+                    level.var_50cfb6c2[ i ][ level.var_50cfb6c2[ i ].size ] = s_ai_spawn;
                     
                     if ( !isdefined( level.var_f4e76c2[ str_archetype ] ) )
                     {
@@ -1783,7 +1783,7 @@ function private function_bc9fd0f8( n_round )
                 var_c708e6e1 += 33;
                 debug2dtext( ( 510, var_c708e6e1, 0 ), "<dev string:x593>", ( 0, 1, 0 ), 1, ( 0, 0, 0 ), 0.8, 1, 2 );
                 var_c708e6e1 += 22;
-                debug2dtext( ( 510, var_c708e6e1, 0 ), "<dev string:x5bd>" + level.var_38b15968 + "<dev string:x5d4>", ( 0, 1, 0 ), 1, ( 0, 0, 0 ), 0.8, 1, 2 );
+                debug2dtext( ( 510, var_c708e6e1, 0 ), "<dev string:x5bd>" + level.n_zombie_spawns + "<dev string:x5d4>", ( 0, 1, 0 ), 1, ( 0, 0, 0 ), 0.8, 1, 2 );
                 var_c708e6e1 += 22;
                 debug2dtext( ( 510, var_c708e6e1, 0 ), "<dev string:x5d8>" + level.var_e654b7de + "<dev string:x5d4>", ( 0, 1, 0 ), 1, ( 0, 0, 0 ), 0.8, 1, 2 );
                 var_c708e6e1 += 22;
@@ -1792,7 +1792,7 @@ function private function_bc9fd0f8( n_round )
                 
                 foreach ( str_archetype in level.var_5d2cd3b1 )
                 {
-                    str_text = "<dev string:x5f8>" + function_9e72a96( str_archetype );
+                    str_text = "<dev string:x5f8>" + hashtostring( str_archetype );
                     
                     if ( isdefined( level.var_f4e76c2[ str_archetype ] ) )
                     {
@@ -1827,7 +1827,7 @@ function private function_bc9fd0f8( n_round )
                         str_color = ( 1, 0, 0 );
                     }
                     
-                    str_text = "<dev string:x613>" + var_27100bc7 + "<dev string:x5fe>" + function_9e72a96( str_archetype ) + "<dev string:x5d4>";
+                    str_text = "<dev string:x613>" + var_27100bc7 + "<dev string:x5fe>" + hashtostring( str_archetype ) + "<dev string:x5d4>";
                     debug2dtext( ( 510, var_c708e6e1, 0 ), str_text, str_color, 1, ( 0, 0, 0 ), 0.8, 1, 2 );
                 }
                 
@@ -1880,7 +1880,7 @@ function private function_bc9fd0f8( n_round )
                     {
                         foreach ( str_archetype in var_a630f8a4.var_d7d3cd31 )
                         {
-                            str_text += function_9e72a96( str_archetype ) + "<dev string:x5d4>";
+                            str_text += hashtostring( str_archetype ) + "<dev string:x5d4>";
                         }
                     }
                     
@@ -1917,7 +1917,7 @@ function private function_bc9fd0f8( n_round )
                     foreach ( var_1bda1c94 in var_ec9d31d7 )
                     {
                         var_c708e6e1 += 22;
-                        str_archetype = function_9e72a96( var_1bda1c94.var_2ecba2c5 );
+                        str_archetype = hashtostring( var_1bda1c94.var_2ecba2c5 );
                         str_text = str_archetype + "<dev string:x5fe>" + var_1bda1c94.var_123aa3d9 + "<dev string:x5d4>";
                         
                         if ( var_1bda1c94.var_74f6178a )
@@ -2018,7 +2018,7 @@ function private function_bc9fd0f8( n_round )
                 }
                 
                 var_c708e6e1 += 22;
-                debug2dtext( ( 1020, var_c708e6e1, 0 ), "<dev string:x5bd>" + level.var_38b15968 + "<dev string:x5d4>", ( 0, 1, 0 ), 1, ( 0, 0, 0 ), 0.8, 1, 2 );
+                debug2dtext( ( 1020, var_c708e6e1, 0 ), "<dev string:x5bd>" + level.n_zombie_spawns + "<dev string:x5d4>", ( 0, 1, 0 ), 1, ( 0, 0, 0 ), 0.8, 1, 2 );
                 var_c708e6e1 += 22;
                 var_73f63202 = 0;
                 
@@ -2034,7 +2034,7 @@ function private function_bc9fd0f8( n_round )
                 {
                     if ( isdefined( level.var_f4e76c2[ str_archetype ] ) )
                     {
-                        str_text = "<dev string:x5f8>" + function_9e72a96( str_archetype ) + "<dev string:x5fe>" + level.var_f4e76c2[ str_archetype ];
+                        str_text = "<dev string:x5f8>" + hashtostring( str_archetype ) + "<dev string:x5fe>" + level.var_f4e76c2[ str_archetype ];
                         debug2dtext( ( 1020, var_c708e6e1, 0 ), str_text, ( 0, 1, 1 ), 1, ( 0, 0, 0 ), 0.8, 0.85, 2 );
                         var_c708e6e1 += 18.7;
                     }
@@ -2044,11 +2044,11 @@ function private function_bc9fd0f8( n_round )
                 {
                     debug2dtext( ( 1020, var_c708e6e1, 0 ), "<dev string:x838>", ( 0, 1, 0 ), 1, ( 0, 0, 0 ), 0.8, 1, 2 );
                     var_c708e6e1 += 22;
-                    var_e5aaf7f4 = level.var_50cfb6c2[ 0 ][ 0 ];
+                    s_ai_spawn = level.var_50cfb6c2[ 0 ][ 0 ];
                     
-                    if ( isdefined( var_e5aaf7f4 ) )
+                    if ( isdefined( s_ai_spawn ) )
                     {
-                        if ( var_e5aaf7f4.b_spawned )
+                        if ( s_ai_spawn.b_spawned )
                         {
                             str_color = ( 0, 1, 1 );
                         }
@@ -2057,7 +2057,7 @@ function private function_bc9fd0f8( n_round )
                             str_color = ( 1, 0, 0 );
                         }
                         
-                        str_text = "<dev string:x848>" + var_e5aaf7f4.n_spawn + "<dev string:x5fe>" + function_9e72a96( var_e5aaf7f4.str_archetype ) + "<dev string:x5d4>";
+                        str_text = "<dev string:x848>" + s_ai_spawn.n_spawn + "<dev string:x5fe>" + hashtostring( s_ai_spawn.str_archetype ) + "<dev string:x5d4>";
                         debug2dtext( ( 1020, var_c708e6e1, 0 ), str_text, str_color, 1, ( 0, 0, 0 ), 0.8, 0.85, 2 );
                         var_c708e6e1 += 18.7;
                     }
@@ -2072,9 +2072,9 @@ function private function_bc9fd0f8( n_round )
                         
                         if ( level.var_50cfb6c2[ i ].size < 10 )
                         {
-                            foreach ( var_e5aaf7f4 in level.var_50cfb6c2[ i ] )
+                            foreach ( s_ai_spawn in level.var_50cfb6c2[ i ] )
                             {
-                                if ( var_e5aaf7f4.b_spawned )
+                                if ( s_ai_spawn.b_spawned )
                                 {
                                     str_color = ( 0, 1, 1 );
                                 }
@@ -2083,7 +2083,7 @@ function private function_bc9fd0f8( n_round )
                                     str_color = ( 1, 0, 0 );
                                 }
                                 
-                                str_text = "<dev string:x848>" + var_e5aaf7f4.n_spawn + "<dev string:x5fe>" + function_9e72a96( var_e5aaf7f4.str_archetype ) + "<dev string:x5d4>";
+                                str_text = "<dev string:x848>" + s_ai_spawn.n_spawn + "<dev string:x5fe>" + hashtostring( s_ai_spawn.str_archetype ) + "<dev string:x5d4>";
                                 debug2dtext( ( 1020, var_c708e6e1, 0 ), str_text, str_color, 1, ( 0, 0, 0 ), 0.8, 0.85, 2 );
                                 var_c708e6e1 += 18.7;
                             }

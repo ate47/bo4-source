@@ -1,11 +1,10 @@
 {
     "name": "#mpdlc1",
-    "blackMarketName": "#",
-    "blackMarketDesc": "#",
-    "entitlementNameXHash": "#",
+    "previewImage": "#ui_menu_store_product_b04_absolute_zero_large",
+    "productImage": "#ui_menu_store_product_b04_absolute_zero_large",
+    "blackMarketImage": "#t7_store_product_bo4",
     "metadata": "DLC2MP",
-    "previewImageName": "hash_ed61745e162557",
-    "productImageName": "hash_ed61745e162557",
-    "blackMarketImageName": "hash_1217b62ca29dad38",
-    "visibility": true
+    "visibility": true,
+    "unka2": true,
+    "unka3": true
 }

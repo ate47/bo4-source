@@ -248,9 +248,9 @@ function function_7927b4f1()
     
     while ( true )
     {
-        var_bdf9e3c2 = self zm_zonemgr::get_player_zone();
+        str_current_zone = self zm_zonemgr::get_player_zone();
         
-        if ( var_bdf9e3c2 === "zone_roof" || var_bdf9e3c2 === "zone_roof_infirmary" )
+        if ( str_current_zone === "zone_roof" || str_current_zone === "zone_roof_infirmary" )
         {
             self.var_3909389c = 1;
         }
@@ -395,7 +395,7 @@ function function_48d7e846()
     level.var_4b9d0136 thread scene::play( #"p8_fxanim_zm_esc_water_tower_bundle", level.var_4b9d0136 );
     level thread clientfield::increment( "" + #"hash_cd028842e18845e", 1 );
     wait 3;
-    e_closest = arraygetclosest( level.var_4b9d0136.origin, zm_vo::function_347f7d34() );
+    e_closest = arraygetclosest( level.var_4b9d0136.origin, zm_vo::get_valid_players() );
     
     if ( isalive( e_closest ) )
     {

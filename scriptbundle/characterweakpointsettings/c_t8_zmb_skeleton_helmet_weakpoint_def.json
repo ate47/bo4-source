@@ -1,21 +1,21 @@
 {
     "weakpoints": [
         {
-            "hash_641ce20e": 1,
-            "hash_8223b0cf": 0,
+            "hash_18ab0945bdd17214:hash_641ce20e": 1,
+            "hash_1a833a23347d4bda:hash_8223b0cf": 0,
             "absolutehealth": 1,
             "type": "#armor",
-            "hash_910e2f9b": "j_helmet",
-            "hash_51e8b151": "j_head",
+            "hittag2": "j_helmet",
+            "hittag1": "j_head",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 100
         },
         {
-            "hash_8223b0cf": 0,
+            "hash_1a833a23347d4bda:hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_910e2f9b": "j_helmet",
-            "hash_51e8b151": "j_head",
+            "hittag2": "j_helmet",
+            "hittag1": "j_head",
             "hitradius": 12,
             "health": 2
         }
@@ -24,5 +24,5 @@
     "model": "model#c_t8_zmb_dlc2_skeleton_fb",
     "type": "characterweakpointsettings",
     "name": "c_t8_zmb_skeleton_helmet_weakpoint_def",
-    "hash_96a09826": 2
+    "list_weakpoints": 2
 }

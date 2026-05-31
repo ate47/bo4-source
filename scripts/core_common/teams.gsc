@@ -117,7 +117,7 @@ function function_959bac94()
     // Size: 0x134, Type: dev
     function private function_ba459d03( team )
     {
-        if ( isdefined( level.var_ba13fb7a ) && level.var_ba13fb7a )
+        if ( isdefined( level.debug_team_assignment ) && level.debug_team_assignment )
         {
             team_str = string( team );
             

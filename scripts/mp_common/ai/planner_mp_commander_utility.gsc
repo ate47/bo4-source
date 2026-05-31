@@ -42,7 +42,7 @@ function private __init__()
     plannercommanderutility::registerutilityapi( "commanderScoreDomFlags", &function_78126acd );
     plannercommanderutility::registerutilityapi( "commanderScoreStopWanderingDom", &function_8ee25278 );
     plannercommanderutility::registerutilityapi( "commanderScoreKothZone", &function_eb0a4e86 );
-    plannerutility::registerplannerapi( #"hash_6130077bb861d4fa", &raw\italian\sound\vox\scripted\zmb_tomb\vox_plr_1_exert_death_high_d_0.SN40.xenon.snd );
+    plannerutility::registerplannerapi( #"hash_6130077bb861d4fa", &raw/italian/sound/vox/scripted/zmb_tomb/vox_plr_1_exert_death_high_d_0.SN40.xenon.snd );
     plannerutility::registerplannerapi( #"hash_23ede7441ff7e15f", &function_34c0ebaf );
     plannerutility::registerplannerapi( #"hash_9d5448e604895e", &function_68a32d83 );
     plannerutility::registerplannerapi( #"hash_58f852e4b26d4080", &function_380f4233 );
@@ -677,7 +677,7 @@ function private function_eb0a4e86( commander, squad, constants )
 // Params 2, eflags: 0x4
 // Checksum 0x6cb6d536, Offset: 0x2460
 // Size: 0x1a2, Type: bool
-function private raw\italian\sound\vox\scripted\zmb_tomb\vox_plr_1_exert_death_high_d_0.SN40.xenon.snd( planner, constants )
+function private raw/italian/sound/vox/scripted/zmb_tomb/vox_plr_1_exert_death_high_d_0.SN40.xenon.snd( planner, constants )
 {
     squadindex = planner::getblackboardattribute( planner, #"current_squad" );
     commanderteam = planner::getblackboardattribute( planner, #"team" );

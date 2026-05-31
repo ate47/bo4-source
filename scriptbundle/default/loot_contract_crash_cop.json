@@ -1,19 +1,19 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "localized17#hash_6ed6f16e719818bc"
+            "hash_619e25922b4aedcf:hash_826726a": "localized17#hash_6ed6f16e719818bc"
         },
         {
-            "hash_826726a": "localized17#hash_feee6890a6759fe"
+            "hash_619e25922b4aedcf:hash_826726a": "localized17#heroes/buffassault"
         }
     ],
     "contracticon": "image#hash_5947883ecc75021",
-    "hash_d0100eab": 2,
-    "relateditemname": "localized17#hash_feee6890a6759fe",
+    "hash_202e3311080f8de3:hash_d0100eab": 2,
+    "relateditemname": "localized17#heroes/buffassault",
     "contracttitle": "localized17#hash_6ed6f16e719818bc",
     "name": "loot_contract_crash_cop",
     "contractdescription": "localized17#hash_5d723ae8855383fa",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_1acfc0046503e008",
-    "hash_e08fc162": "localized17#hash_202b143ac8709224"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_1acfc0046503e008",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_202b143ac8709224"
 }

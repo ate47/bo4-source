@@ -1,16 +1,13 @@
 {
     "name": "#zm_rank_15",
-    "shortNameRef": "#",
     "fullNameRef": "#hash_a184266cda1ce4c",
-    "ingameNameRef": "#",
-    "iconName": "#hash_102d9bb185b4e13",
-    "iconNameLarge": "#hash_723df9be56281373",
     "level": 15,
     "minXp": 97700,
     "maxXp": 110500,
+    "icon": "#ui_icon_rank_zm_level15",
+    "iconLarge": "#ui_icon_rank_zm_level15_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#zm_bgb_nowhere_but_there"
         }
     ]

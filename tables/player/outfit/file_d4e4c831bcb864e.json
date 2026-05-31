@@ -1,0 +1,20 @@
+{
+    "name": "#hash_d4e4c831bcb864e",
+    "desc": "#hash_2ed10f5e91a70c68",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "desc": "#hash_2219d2672d506c37",
+            "unk68:unk10": true,
+            "model": "#c_t8_bo_hero_cosmic_silverback_head1",
+            "unk68:unk48": [
+                "#hash_7633e7d5d9e5a30",
+                "#hash_767949ae2ed9b929",
+                "#hash_29d14df99bf588e1",
+                "#hash_29d14cf99bf5872e"
+            ],
+            "unk68:unk50": 1
+        }
+    ]
+}

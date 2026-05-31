@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_militia.d3dbsp",
+    "baseName": "mp_militia",
+    "mins": "-75513.78 -45024.758 -5644.624",
+    "maxs": "4644.216 31660.766 2292.159",
+    "checksum": 0,
+    "streamerworld": "#hash_30e1cea5d71ad348",
+    "lighting": "#maps/mp/mp_militia.d3dbsp",
+    "lutMaterial": "#lut_mp_militia",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_militia",
+        "#img_trim_lut_mp_militia",
+        "#img_trim_lut_mp_militia",
+        "#img_trim_lut_mp_militia"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 4,
+        "cookieArray": "#*cookie_array"
+    }
+}

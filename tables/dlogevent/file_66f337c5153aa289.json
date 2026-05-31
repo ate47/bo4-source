@@ -1,0 +1,654 @@
+{
+    "name": "#hash_66f337c5153aa289",
+    "ddlDef": "#gamedata/ddl/generated/dlog_event_graphics_options.ddl",
+    "unk18": 0,
+    "unk19": 1,
+    "unk1a": 0,
+    "unk1b": 0,
+    "unk1c": 0,
+    "rate": 1,
+    "fields": [
+        {
+            "name": "#telemetry",
+            "arraySize": 0,
+            "members": {
+                "name": "#telemetry_header",
+                "members": [
+                    {
+                        "name": "#game_session_id",
+                        "scrName": "#hash_50f7aa03",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#action_type",
+                        "scrName": "#action_type",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#title_id",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#build_version",
+                        "scrName": "#build_version",
+                        "type": "STRING",
+                        "len": 32
+                    },
+                    {
+                        "name": "#platform",
+                        "scrName": "#platform",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#source_version",
+                        "scrName": "#source_version",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_56a1b6d783aa7a25",
+                        "scrName": "#hash_ee3228f8",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#changelist_number",
+                        "scrName": "#changelist_number",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#client",
+            "arraySize": 0,
+            "members": {
+                "name": "#client_header",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#user_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#user_session_id",
+                        "scrName": "#hash_e004f74d",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#uno_id",
+                        "scrName": "#uno_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        }
+    ],
+    "members": [
+        {
+            "name": "#vsync",
+            "scrName": "#vsync",
+            "type": "BOOL"
+        },
+        {
+            "name": "#ssr",
+            "scrName": "#ssr",
+            "type": "BOOL"
+        },
+        {
+            "name": "#shader_warming",
+            "scrName": "#shader_warming",
+            "type": "INT32"
+        },
+        {
+            "name": "#auto_detect_has_run",
+            "scrName": "#hash_ef78241d",
+            "type": "BOOL"
+        },
+        {
+            "name": "#mouse_ads_pitch_ads_multiplier",
+            "scrName": "#hash_c366d2e8",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#aspect_ratio",
+            "scrName": "#aspect_ratio",
+            "type": "INT32"
+        },
+        {
+            "name": "#ssao_technique",
+            "scrName": "#ssao_technique",
+            "type": "INT32"
+        },
+        {
+            "name": "#mouse_ads_pitch_ads_multiplier_high_zoom",
+            "scrName": "#hash_b04e1958",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#config_version",
+            "scrName": "#config_version",
+            "type": "INT32"
+        },
+        {
+            "name": "#mouse_ads_yaw_ads_multiplier_high_zoom",
+            "scrName": "#hash_16261fb6",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#voice_output_device",
+            "scrName": "#hash_7522a48d",
+            "type": "STRING",
+            "len": 64
+        },
+        {
+            "name": "#worker_threads",
+            "scrName": "#worker_threads",
+            "type": "INT32"
+        },
+        {
+            "name": "#fullscreen_resolution",
+            "scrName": "#fullscreen_resolution",
+            "type": "STRING",
+            "len": 16
+        },
+        {
+            "name": "#splitscreen_orientation",
+            "scrName": "#splitscreen_orientation",
+            "type": "BOOL"
+        },
+        {
+            "name": "#mouse_vertical_sensitivity",
+            "scrName": "#hash_74d4f922",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#auto_config",
+            "scrName": "#hash_4e92fd6d",
+            "type": "BOOL"
+        },
+        {
+            "name": "#music_scale",
+            "scrName": "#music_scale",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#refresh_rate",
+            "scrName": "#refresh_rate",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#local_ambient_lighting",
+            "scrName": "#hash_8d1ff5e2",
+            "type": "BOOL"
+        },
+        {
+            "name": "#sfx_scale",
+            "scrName": "#sfx_scale",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#window_maximized",
+            "scrName": "#window_maximized",
+            "type": "BOOL"
+        },
+        {
+            "name": "#voice_input_device",
+            "scrName": "#voice_input_device",
+            "type": "STRING",
+            "len": 128
+        },
+        {
+            "name": "#oit",
+            "scrName": "#oit",
+            "type": "BOOL"
+        },
+        {
+            "name": "#resolution_percent",
+            "scrName": "#resolution_percent",
+            "type": "INT32"
+        },
+        {
+            "name": "#aa_technique",
+            "scrName": "#aa_technique",
+            "type": "INT32"
+        },
+        {
+            "name": "#mouse_ads_use_monitor_distance",
+            "scrName": "#mouse_ads_use_monitor_distance",
+            "type": "BOOL"
+        },
+        {
+            "name": "#smooth_framerate",
+            "scrName": "#smooth_framerate",
+            "type": "BOOL"
+        },
+        {
+            "name": "#voice_push_to_talk",
+            "scrName": "#voice_push_to_talk",
+            "type": "BOOL"
+        },
+        {
+            "name": "#audio_scale_when_speaking",
+            "scrName": "#audio_scale_when_speaking",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#show_performance_graph",
+            "scrName": "#show_performance_graph",
+            "type": "INT32"
+        },
+        {
+            "name": "#vsync_menu",
+            "scrName": "#vsync_menu",
+            "type": "BOOL"
+        },
+        {
+            "name": "#voice_output_volume",
+            "scrName": "#voice_output_volume",
+            "type": "INT32"
+        },
+        {
+            "name": "#disable_dynamic_light_shadows",
+            "scrName": "#disable_dynamic_light_shadows",
+            "type": "BOOL"
+        },
+        {
+            "name": "#mouse_ads_monitor_distance_coefficient",
+            "scrName": "#mouse_ads_monitor_distance_coefficient",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#window_x",
+            "scrName": "#window_x",
+            "type": "INT32"
+        },
+        {
+            "name": "#window_y",
+            "scrName": "#window_y",
+            "type": "INT32"
+        },
+        {
+            "name": "#last_driver_nvidia",
+            "scrName": "#last_driver_nvidia",
+            "type": "INT32"
+        },
+        {
+            "name": "#display_adapter",
+            "scrName": "#display_adapter",
+            "type": "INT32"
+        },
+        {
+            "name": "#disable_dynamic_sun_shadows",
+            "scrName": "#disable_dynamic_sun_shadows",
+            "type": "BOOL"
+        },
+        {
+            "name": "#mouse_ads_sensitivity_fully_scoped",
+            "scrName": "#hash_94720287",
+            "type": "BOOL"
+        },
+        {
+            "name": "#oit_layers",
+            "scrName": "#oit_layers",
+            "type": "INT32"
+        },
+        {
+            "name": "#threaded_rendering",
+            "scrName": "#hash_34704f3d",
+            "type": "BOOL"
+        },
+        {
+            "name": "#window_width",
+            "scrName": "#window_width",
+            "type": "INT32"
+        },
+        {
+            "name": "#voice_va_sensitivity",
+            "scrName": "#voice_va_sensitivity",
+            "type": "INT32"
+        },
+        {
+            "name": "#mute_music",
+            "scrName": "#mute_music",
+            "type": "BOOL"
+        },
+        {
+            "name": "#texture_quality",
+            "scrName": "#texture_quality",
+            "type": "INT32"
+        },
+        {
+            "name": "#fx_shadows",
+            "scrName": "#fx_shadows",
+            "type": "BOOL"
+        },
+        {
+            "name": "#fullscreen_mode",
+            "scrName": "#fullscreen_mode",
+            "type": "INT32"
+        },
+        {
+            "name": "#master_scale",
+            "scrName": "#master_scale",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#monitor",
+            "scrName": "#monitor",
+            "type": "INT32"
+        },
+        {
+            "name": "#mouse_vertical_look",
+            "scrName": "#mouse_vertical_look",
+            "type": "BOOL"
+        },
+        {
+            "name": "#shadow_viewmodel_self",
+            "scrName": "#shadow_viewmodel_self",
+            "type": "INT32"
+        },
+        {
+            "name": "#mouse_acceleration",
+            "scrName": "#mouse_acceleration",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#video_memory",
+            "scrName": "#video_memory",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#relative_ads_fov",
+            "scrName": "#relative_ads_fov",
+            "type": "BOOL"
+        },
+        {
+            "name": "#mouse_ads_yaw_ads_multiplier",
+            "scrName": "#hash_8f8b6d53",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#backbuffer_count",
+            "scrName": "#backbuffer_count",
+            "type": "INT32"
+        },
+        {
+            "name": "#shadow_filtering",
+            "scrName": "#shadow_filtering",
+            "type": "BOOL"
+        },
+        {
+            "name": "#last_recommended_driver_nvidia",
+            "scrName": "#last_recommended_driver_nvidia",
+            "type": "INT32"
+        },
+        {
+            "name": "#voice_input_volume",
+            "scrName": "#voice_input_volume",
+            "type": "INT32"
+        },
+        {
+            "name": "#automatic_process_priority",
+            "scrName": "#automatic_process_priority",
+            "type": "BOOL"
+        },
+        {
+            "name": "#spot_shadow_texture_size",
+            "scrName": "#hash_6bc6546b",
+            "type": "INT32"
+        },
+        {
+            "name": "#texture_quality_probes",
+            "scrName": "#hash_f82c6e4d",
+            "type": "INT32"
+        },
+        {
+            "name": "#texture_quality_fx",
+            "scrName": "#hash_7bd4c4a6",
+            "type": "INT32"
+        },
+        {
+            "name": "#sound_occlusion",
+            "scrName": "#sound_occlusion",
+            "type": "BOOL"
+        },
+        {
+            "name": "#voice_scale",
+            "scrName": "#voice_scale",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#fullscreen_preferred_mode",
+            "scrName": "#fullscreen_preferred_mode",
+            "type": "INT32"
+        },
+        {
+            "name": "#enable_voice",
+            "scrName": "#enable_voice",
+            "type": "BOOL"
+        },
+        {
+            "name": "#dedicated_player_shadow",
+            "scrName": "#dedicated_player_shadow",
+            "type": "INT32"
+        },
+        {
+            "name": "#volumetric_light_quality",
+            "scrName": "#volumetric_light_quality",
+            "type": "INT32"
+        },
+        {
+            "name": "#fov",
+            "scrName": "#fov",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#texture_filter",
+            "scrName": "#texture_filter",
+            "type": "INT32"
+        },
+        {
+            "name": "#cinematic_scale",
+            "scrName": "#cinematic_scale",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#texture_quality_baked_sun_shadows",
+            "scrName": "#hash_314d0c8d",
+            "type": "INT32"
+        },
+        {
+            "name": "#display_gamma",
+            "scrName": "#display_gamma",
+            "type": "INT32"
+        },
+        {
+            "name": "#enable_scale_when_speaking",
+            "scrName": "#enable_scale_when_speaking",
+            "type": "BOOL"
+        },
+        {
+            "name": "#mouse_filter",
+            "scrName": "#mouse_filter",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#mute_voice",
+            "scrName": "#mute_voice",
+            "type": "BOOL"
+        },
+        {
+            "name": "#auto_cull_radius",
+            "scrName": "#auto_cull_radius",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#max_fps",
+            "scrName": "#max_fps",
+            "type": "INT32"
+        },
+        {
+            "name": "#hardware_checksum",
+            "scrName": "#hardware_checksum",
+            "type": "INT32"
+        },
+        {
+            "name": "#subsurface_scattering",
+            "scrName": "#subsurface_scattering",
+            "type": "BOOL"
+        },
+        {
+            "name": "#play_intro_movies",
+            "scrName": "#play_intro_movies",
+            "type": "BOOL"
+        },
+        {
+            "name": "#mouse_sensitivity",
+            "scrName": "#mouse_sensitivity",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#last_driver_amd",
+            "scrName": "#last_driver_amd",
+            "type": "INT32"
+        },
+        {
+            "name": "#mute_master",
+            "scrName": "#mute_master",
+            "type": "BOOL"
+        },
+        {
+            "name": "#window_height",
+            "scrName": "#window_height",
+            "type": "INT32"
+        },
+        {
+            "name": "#motion_blur",
+            "scrName": "#motion_blur",
+            "type": "INT32"
+        },
+        {
+            "name": "#omni_shadow_texture_size",
+            "scrName": "#hash_e1fced9a",
+            "type": "INT32"
+        },
+        {
+            "name": "#motion_blur_quality",
+            "scrName": "#motion_blur_quality",
+            "type": "INT32"
+        },
+        {
+            "name": "#volumetric_light_sample_mult",
+            "scrName": "#volumetric_light_sample_mult",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#mesh_quality",
+            "scrName": "#mesh_quality",
+            "type": "INT32"
+        },
+        {
+            "name": "#max_fps_menu",
+            "scrName": "#max_fps_menu",
+            "type": "INT32"
+        },
+        {
+            "name": "#hdr_display_mode",
+            "scrName": "#hdr_display_mode",
+            "type": "INT32"
+        }
+    ],
+    "unk60": [
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_855c9a40dc060cf",
+                "s3u10": "#hash_2",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    0
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_775a1eb90e25df27",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    0,
+                    5,
+                    4
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 0.05,
+            "s3u8": {
+                "s31u0": "#hash_5509b91edf99f9a4",
+                "s3u10": "#hash_6",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    2,
+                    3,
+                    9
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_415a3e8b41b48599",
+                "s3u10": "#hash_4",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_a",
+                "unk28": [
+                    2,
+                    3,
+                    5
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_68cc9f8f64640d09",
+                "s3u10": "#hash_7",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2,
+                    3
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_7b52e3919e2a5b79",
+                "s3u10": "#hash_9",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2
+                ]
+            }
+        }
+    ]
+}

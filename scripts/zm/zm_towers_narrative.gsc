@@ -849,9 +849,9 @@ function acid_trap_think()
     
     scene::add_scene_func( #"p8_fxanim_zm_towers_trap_acid_02_bundle", &function_89add587, "play" );
     var_74331c2 = level.var_482bcfef;
-    var_4d42c97f = arraygetclosest( var_8a88c4c8.origin, var_74331c2 );
-    var_4d42c97f thread function_e6f26f04();
-    var_4d42c97f thread function_ffc6c45f();
+    t_acid_trap = arraygetclosest( var_8a88c4c8.origin, var_74331c2 );
+    t_acid_trap thread function_e6f26f04();
+    t_acid_trap thread function_ffc6c45f();
     
     while ( true )
     {
@@ -875,8 +875,8 @@ function function_89add587( a_ents )
     if ( s_closest == self )
     {
         level scene::remove_scene_func( self.scriptbundlename, &function_89add587, "play" );
-        var_110cafc1 = a_ents[ #"prop 1" ];
-        var_8a88c4c8 linkto( var_110cafc1, var_8a88c4c8.var_ab585079 );
+        mdl_acid_trap = a_ents[ #"prop 1" ];
+        var_8a88c4c8 linkto( mdl_acid_trap, var_8a88c4c8.var_ab585079 );
     }
 }
 
@@ -1112,8 +1112,8 @@ function scepter_think()
         array::thread_all( level.players, &function_cab1990a );
         level flag::wait_till( #"hash_4863d7214aa660e2" );
         callback::remove_on_connect( &function_cab1990a );
-        var_656fdc6c = getent( "nardel", "targetname" );
-        var_656fdc6c delete();
+        mdl_roof = getent( "nardel", "targetname" );
+        mdl_roof delete();
         mdl_frame = getent( "narsho", "targetname" );
         mdl_frame show();
     }

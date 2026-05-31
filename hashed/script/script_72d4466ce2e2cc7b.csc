@@ -537,7 +537,7 @@ function function_af712255( localclientnum )
     
     while ( !( isdefined( level.gameended ) && level.gameended ) )
     {
-        var_e1c5622e = getuimodelvalue( var_f15e30b1 );
+        momentumvalue = getuimodelvalue( var_f15e30b1 );
         
         for ( i = 0; i < var_a74def26.size ; i++ )
         {

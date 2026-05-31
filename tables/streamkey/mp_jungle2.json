@@ -1,9 +1,9 @@
 {
     "keys": [
         {
-            "name": "#hash_138efa391b393db7",
+            "name": "#mp_jungle2_all_stream",
             "xPakEntry": {
-                "key": 16538547369314609631,
+                "key": "#hash_e584b93518f7e9df",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -15,12 +15,14 @@
                 "adjacentRight": 0
             },
             "size": 4096,
+            "unk44": 512,
+            "unk46": 5,
             "keyFlags": 3
         },
         {
             "name": "#hash_663060e9149379de",
             "xPakEntry": {
-                "key": 16266285094016793992,
+                "key": "#hash_e1bd741c4c1a3d88",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -32,12 +34,14 @@
                 "adjacentRight": 0
             },
             "size": 60467328,
+            "unk44": 512,
+            "unk46": 5,
             "keyFlags": 1
         },
         {
             "name": "#hash_7cb442c66833a1",
             "xPakEntry": {
-                "key": 16270922992539044963,
+                "key": "#hash_e1cdee4132068c63",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -49,12 +53,14 @@
                 "adjacentRight": 0
             },
             "size": 2048,
+            "unk44": 512,
+            "unk46": 5,
             "keyFlags": 3
         },
         {
             "name": "#hash_24a9238f5c6715c",
             "xPakEntry": {
-                "key": 17379514879504878370,
+                "key": "#hash_f13070b3c9810b22",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -66,12 +72,14 @@
                 "adjacentRight": 0
             },
             "size": 332288,
+            "unk44": 512,
+            "unk46": 5,
             "keyFlags": 1
         },
         {
             "name": "#hash_965b34040bce7d2",
             "xPakEntry": {
-                "key": 18005782379510961466,
+                "key": "#hash_f9e163ace9bd153a",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -83,12 +91,14 @@
                 "adjacentRight": 0
             },
             "size": 1507328,
+            "unk44": 64,
+            "unk46": 2,
             "keyFlags": 0
         },
         {
             "name": "#hash_259403f96e6b8be3",
             "xPakEntry": {
-                "key": 16280671992195411672,
+                "key": "#hash_e1f090eb0f756ed8",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -100,12 +110,14 @@
                 "adjacentRight": 0
             },
             "size": 155713536,
+            "unk44": 64,
+            "unk46": 2,
             "keyFlags": 0
         },
         {
             "name": "#hash_599e047a26f9f4d0",
             "xPakEntry": {
-                "key": 18005782379510961466,
+                "key": "#hash_f9e163ace9bd153a",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -117,6 +129,8 @@
                 "adjacentRight": 0
             },
             "size": 1507328,
+            "unk44": 64,
+            "unk46": 3,
             "keyFlags": 0
         }
     ]

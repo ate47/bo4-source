@@ -203,7 +203,7 @@ function private function_bf7acc22( squad )
                 for ( index = 0; index < squad.plan.size ; index++ )
                 {
                     yoffset += 13;
-                    recordtext( function_9e72a96( squad.plan[ index ].name ), position + ( xoffset, yoffset, 0 ), ( 1, 1, 1 ), "<dev string:x53>", textscale );
+                    recordtext( hashtostring( squad.plan[ index ].name ), position + ( xoffset, yoffset, 0 ), ( 1, 1, 1 ), "<dev string:x53>", textscale );
                 }
             }
             

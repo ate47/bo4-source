@@ -29,7 +29,7 @@ function autoexec function_f031a77f()
 // Size: 0x74
 function __init__()
 {
-    character_unlock_fixup::register_character_unlock( #"seraph_unlock", #"hash_17c02481305f0e24", #"annihilator_wz_item", &function_d95e620c, #"hash_633d185cd2140f1a", #"hash_633d175cd2140d67" );
+    character_unlock_fixup::register_character_unlock( #"seraph_unlock", #"prt_wz_enforcer", #"annihilator_wz_item", &function_d95e620c, #"hash_633d185cd2140f1a", #"hash_633d175cd2140d67" );
 }
 
 // Namespace character_unlock_seraph_fixup/character_unlock_seraph_fixup

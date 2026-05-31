@@ -538,7 +538,7 @@ function callback_playerdamage( einflictor, eattacker, idamage, idflags, smeanso
         if ( isdefined( eattacker ) && eattacker.team == level.zombie_team )
         {
             self zm_stats::increment_player_stat( "hits_taken" );
-            self zm_stats::forced_attachment( "boas_hits_taken" );
+            self zm_stats::function_8f10788e( "boas_hits_taken" );
         }
     }
     
@@ -1114,32 +1114,32 @@ function function_de3936f8( var_ffb1863c )
         return;
     }
     
-    var_287a8343 = zm_utility::get_player_weapon_limit( self );
-    var_3ba4bf7d = self getweaponslistprimaries();
+    n_weapon_limit = zm_utility::get_player_weapon_limit( self );
+    a_w_primaries = self getweaponslistprimaries();
     
-    if ( var_3ba4bf7d.size > var_287a8343 )
+    if ( a_w_primaries.size > n_weapon_limit )
     {
         self zm_melee_weapon::take_fallback_weapon();
-        var_3ba4bf7d = self getweaponslistprimaries();
+        a_w_primaries = self getweaponslistprimaries();
         
-        if ( var_3ba4bf7d.size > var_287a8343 )
+        if ( a_w_primaries.size > n_weapon_limit )
         {
             self zm_stats::increment_map_cheat_stat( "cheat_too_many_weapons" );
             self zm_stats::increment_client_stat( "cheat_too_many_weapons", 0 );
             self zm_stats::increment_client_stat( "cheat_total", 0 );
             self playlocalsound( level.zmb_laugh_alias );
             
-            if ( isdefined( var_ffb1863c ) && self hasweapon( var_ffb1863c ) && isinarray( var_3ba4bf7d, var_ffb1863c ) )
+            if ( isdefined( var_ffb1863c ) && self hasweapon( var_ffb1863c ) && isinarray( a_w_primaries, var_ffb1863c ) )
             {
                 self takeweapon( var_ffb1863c );
             }
-            else if ( isinarray( var_3ba4bf7d, self.currentweapon ) )
+            else if ( isinarray( a_w_primaries, self.currentweapon ) )
             {
                 self takeweapon( self.currentweapon );
             }
             else
             {
-                self takeweapon( var_3ba4bf7d[ 0 ] );
+                self takeweapon( a_w_primaries[ 0 ] );
             }
             
             wait 1;
@@ -1343,7 +1343,7 @@ function player_prevent_damage( einflictor, eattacker, idamage, idflags, smeanso
     /#
         if ( isai( eattacker ) && self.ignoreme )
         {
-            println( "<dev string:x185>" + function_9e72a96( eattacker.archetype ) + "<dev string:x1be>" + smeansofdeath );
+            println( "<dev string:x185>" + hashtostring( eattacker.archetype ) + "<dev string:x1be>" + smeansofdeath );
         }
         
         if ( isdefined( self.bgb_in_plain_sight_active ) && self.bgb_in_plain_sight_active )
@@ -1352,7 +1352,7 @@ function player_prevent_damage( einflictor, eattacker, idamage, idflags, smeanso
             
             if ( isai( eattacker ) )
             {
-                str += function_9e72a96( eattacker.archetype );
+                str += hashtostring( eattacker.archetype );
             }
             else if ( isdefined( eattacker ) )
             {
@@ -1503,9 +1503,9 @@ function spawnspectator()
     println( "<dev string:x282>" );
     self detachall();
     
-    if ( isdefined( level.var_7abfc4ea ) )
+    if ( isdefined( level.custom_spectate_permissions ) )
     {
-        self [[ level.var_7abfc4ea ]]();
+        self [[ level.custom_spectate_permissions ]]();
     }
     else
     {
@@ -1634,9 +1634,9 @@ function spectator_respawn_player()
         {
             self.old_score = self.score;
             
-            if ( isdefined( level.var_cf66a6f6 ) )
+            if ( isdefined( level.spectator_respawn_custom_score ) )
             {
-                self [[ level.var_cf66a6f6 ]]();
+                self [[ level.spectator_respawn_custom_score ]]();
             }
             
             self.score = 1500;
@@ -1668,9 +1668,9 @@ function spectator_respawn()
     self setspectatepermissions( 0 );
     new_origin = undefined;
     
-    if ( isdefined( level.var_5816975b ) )
+    if ( isdefined( level.check_valid_spawn_override ) )
     {
-        new_origin = [[ level.var_5816975b ]]( self );
+        new_origin = [[ level.check_valid_spawn_override ]]( self );
     }
     
     if ( !isdefined( new_origin ) )
@@ -2406,14 +2406,14 @@ function player_damage_override( einflictor, eattacker, idamage, idflags, smeans
         return finaldamage;
     }
     
-    if ( isdefined( level.var_57cc29f3 ) && [[ level.var_57cc29f3 ]]( self ) )
+    if ( isdefined( level.check_end_game_override ) && [[ level.check_end_game_override ]]( self ) )
     {
         return finaldamage;
     }
     
     if ( getplayers().size == 1 && level flag::get( "solo_game" ) )
     {
-        if ( isdefined( level.var_fb697fca ) && [[ level.var_fb697fca ]]() )
+        if ( isdefined( level.check_end_solo_game_override ) && [[ level.check_end_solo_game_override ]]() )
         {
             return finaldamage;
         }

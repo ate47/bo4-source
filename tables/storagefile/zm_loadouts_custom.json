@@ -1,5 +1,16 @@
 {
-    "name": "#zm_loadouts_custom",
     "nameStr": "zm_loadouts_custom",
-    "ddl": "#gamedata/ddl/generated/zm_loadouts_custom.ddl"
+    "name": "#zm_loadouts_custom",
+    "ddlPath": "#gamedata/ddl/generated/zm_loadouts_custom.ddl",
+    "files": [
+        {
+            "fileName": "zm_loadouts_custom"
+        }
+    ],
+    "size": 66700,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_hacienda.d3dbsp",
+    "baseName": "mp_hacienda",
+    "mins": "-49609.89 -50402.812 -5374.8228",
+    "maxs": "57815.527 47632.99 5190.417",
+    "checksum": 0,
+    "streamerworld": "#hash_7d9410a309f3e024",
+    "lighting": "#maps/mp/mp_hacienda.d3dbsp",
+    "lutMaterial": "#lut_mp_hacienda",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_hacienda",
+        "#img_trim_lut_mp_hacienda",
+        "#img_trim_lut_mp_hacienda",
+        "#img_trim_lut_mp_hacienda"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 11,
+        "cookieArray": "#*cookie_array"
+    }
+}

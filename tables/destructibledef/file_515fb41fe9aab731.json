@@ -1,0 +1,38 @@
+{
+    "name": "#hash_515fb41fe9aab731",
+    "model": "#p7_camera_security_01_allstates",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "camera_ds0_jnt"
+                },
+                {
+                    "unk28": "camera_ds1_jnt"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_67d2560fef01ff9a",
+            "unk268": 200,
+            "hideBones": [
+                28,
+                29
+            ]
+        }
+    ]
+}

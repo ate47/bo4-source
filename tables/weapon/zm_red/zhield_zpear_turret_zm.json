@@ -1,10 +1,10 @@
 {
     "name": "#zhield_zpear_turret_zm",
     "baseWeapon": "#zhield_zpear_turret",
-    "displayname": "#hash_7a95bcef27a91bf4",
-    "xhash_30": "#zhield_zpear_dw_zm",
-    "xhash_70": "#zhield_zpear_dw",
-    "streamkey": "#hash_3bfcf22c36eaff11",
+    "displayname": "#zm_red/shield",
+    "altWeapon": "#zhield_zpear_dw_zm",
+    "weapon70": "#zhield_zpear_dw",
+    "soundbank": "#zhield_zpear_turret_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -13,21 +13,22 @@
     "weaponstarthitpoints": 800,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 8,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": true,
+    "#hash_554be9f7": false,
     "sound100": "#hash_48b8785c4ac59202",
     "sound110": "#hash_68f04f5bcc6c59c7",
     "sound140": "#hash_1f1d143c192cb526",
@@ -68,5 +69,13 @@
     "normalImpactFX": "#hash_bc8751cba87f5a8",
     "bounceImpactFX": "#rocket_bounce",
     "normalImpactSounds": "#spear_impact",
-    "exitImpactSounds": "#bullet_exit"
+    "exitImpactSounds": "#bullet_exit",
+    "#hash_21329beb": [
+        {
+            "model": "#hash_71c46d843c8b6162"
+        },
+        {
+            "model": "#hash_17c9f540216720af"
+        }
+    ]
 }

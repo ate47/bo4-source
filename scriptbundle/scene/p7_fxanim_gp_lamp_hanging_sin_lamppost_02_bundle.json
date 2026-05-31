@@ -1,7 +1,7 @@
 {
     "objects": [
         {
-            "mainanim": "anim4#p7_fxanim_gp_lamp_hanging_sin_lamppost_02_idle_anim",
+            "mainanim": "anim#p7_fxanim_gp_lamp_hanging_sin_lamppost_02_idle_anim",
             "model": "model#p7_fxanim_gp_lamp_hanging_sin_lamppost_02_mod",
             "type": "prop",
             "vmtype": "server",

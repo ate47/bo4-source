@@ -19,7 +19,7 @@
 // Size: 0x372
 function init()
 {
-    clientfield::register( "scriptmover", "" + #"hash_65a58403194ef1b4", 8000, 1, "int", &function_438d8674, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"secret_bookshelf_fx", 8000, 1, "int", &function_438d8674, 0, 0 );
     clientfield::register( "world", "" + #"start_billiards", 8000, 1, "int", &start_billiards, 0, 0 );
     serverfield::register( "billiard_ball_sunk_sf", 8000, getminbitcountfornum( 9 ), "int" );
     clientfield::register( "world", "" + #"hash_354bb8ac5de6640a", 8000, getminbitcountfornum( 9 ), "int", &function_954a27a2, 0, 0 );

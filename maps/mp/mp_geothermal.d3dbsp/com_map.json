@@ -1,0 +1,341 @@
+{
+    "name": "#maps/mp/mp_geothermal.d3dbsp",
+    "isInUse": true,
+    "primaryLights": 163,
+    "lightExploders": [
+        {
+            "lightExploderName": "#hash_7e17d35a668424",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 151,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 152,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 153,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 154,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 155,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 156,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 157,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 158,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 159,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 160,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 161,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 162,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#fxexp_pipe_aftermath",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 105,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 106,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 107,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 108,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 109,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#fxexp_pipe_explosion_fires",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 105,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 106,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 107,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 108,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 109,
+                    "reversed": false
+                }
+            ]
+        }
+    ],
+    "probeExploders": [
+        {
+            "lightExploderName": "#hash_7e17d35a668424",
+            "triggerData": [
+                {
+                    "probeID": 111,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 110,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        }
+    ],
+    "sunVolumeProbeCount": [
+        111,
+        1
+    ],
+    "probeGuids": [
+        2363462417,
+        3036256740,
+        2918843684,
+        1736537614,
+        1304898722,
+        1247473327,
+        3470221921,
+        2119697739,
+        2331700241,
+        1513465129,
+        3177060014,
+        3259641012,
+        149314501,
+        3951060983,
+        511289953,
+        2481178980,
+        523445890,
+        1783673000,
+        1609353380,
+        2891728741,
+        962310176,
+        3637218845,
+        3614698914,
+        2878702766,
+        2287021941,
+        3715520214,
+        3866328690,
+        3572316486,
+        3592153894,
+        1558337693,
+        3394703344,
+        3602739328,
+        2854854872,
+        1163567319,
+        3894817504,
+        2513188431,
+        1274785696,
+        396622993,
+        328973765,
+        1207862905,
+        3925573614,
+        1452854138,
+        1948191723,
+        2186858574,
+        2701649171,
+        2867949710,
+        2667998886,
+        56158510,
+        1159248718,
+        804005697,
+        2953100178,
+        3287879236,
+        548536325,
+        3267837978,
+        1137762267,
+        3516207,
+        1364153981,
+        2943549311,
+        495115786,
+        1257324075,
+        1205880007,
+        2357459840,
+        4006731913,
+        3472593008,
+        3190209792,
+        1046694158,
+        1842044544,
+        3820038320,
+        3520220502,
+        602237433,
+        3856123450,
+        3074887204,
+        240490423,
+        35281886,
+        1847030354,
+        2473006329,
+        1980302533,
+        1675190126,
+        4132775971,
+        1924989337,
+        886161723,
+        726080995,
+        3977251104,
+        1637550929,
+        1686001108,
+        405276586,
+        9025524,
+        49026980,
+        4134985017,
+        3752896553,
+        4149652651,
+        3356445575,
+        433718954,
+        1936322743,
+        57988292,
+        2958074874,
+        1525419421,
+        2864110342,
+        3496976907,
+        2102696492,
+        983418898,
+        3852805444,
+        2951343415,
+        3774517709,
+        251853330,
+        2868102123,
+        2743905013,
+        4182516942,
+        3690929959,
+        2505456390,
+        2505456378,
+        0
+    ]
+}

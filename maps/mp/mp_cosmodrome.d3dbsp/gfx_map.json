@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_cosmodrome.d3dbsp",
+    "baseName": "mp_cosmodrome",
+    "mins": "-589824 -589824 -1484",
+    "maxs": "589824 589824 12032",
+    "checksum": 0,
+    "streamerworld": "#hash_3782c045342ed0c5",
+    "lighting": "#maps/mp/mp_cosmodrome.d3dbsp",
+    "lutMaterial": "#lut_mp_cosmodrome2",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_cosmodrome2",
+        "#img_trim_lut_mp_cosmodrome2",
+        "#img_trim_lut_mp_cosmodrome2",
+        "#img_trim_lut_mp_cosmodrome2"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 10,
+        "cookieArray": "#*cookie_array"
+    }
+}

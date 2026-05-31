@@ -36,7 +36,7 @@ class cluielem
     function set_data( localclientnum, field, value )
     {
         assert( var_47d8642e, "<dev string:x162>" );
-        function_bcc2134a( localclientnum, _uid, field, value );
+        setluielemdata( localclientnum, _uid, field, value );
     }
 
     // Namespace cluielem/lui_shared

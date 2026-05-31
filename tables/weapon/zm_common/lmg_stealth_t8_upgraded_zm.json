@@ -3,8 +3,8 @@
     "baseWeapon": "#lmg_stealth_t8_upgraded",
     "displayname": "#zmweapon/lmg_stealth_t8_upgraded",
     "xhash_60": "#hash_2db391d92310a0f5",
-    "xhash_70": "#lmg_stealth_t8",
-    "streamkey": "#hash_23878ce05a0edcbf",
+    "weapon70": "#lmg_stealth_t8",
+    "soundbank": "#lmg_stealth_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -18,21 +18,42 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 2,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.0303 0.95",
+            "0.2242 0.5",
+            "0.4 0.1",
+            "0.4992 0.05",
+            "0.7426 0.001",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0605 1",
+            "0.2242 0.7161",
+            "0.375 0.3412",
+            "0.4992 0.0032",
+            "0.7426 0",
+            "1 0"
+        ]
+    ],
     "firesounddistant": "#hash_559cabfa6cde7f7a",
     "sound140": "#hash_2ac674a535394b32",
     "sound150": "#hash_609b8ba5543e36d7",
@@ -62,6 +83,10 @@
         "#hash_bb95ac78aae02d14"
     ],
     "sharedWeaponSounds": "#lmg",
+    "tracers": [
+        "#hash_d3494eccb1c6aba5",
+        "#hash_b8ac80fa23bb1346"
+    ],
     "viewmodel": [
         "#wpn_t8_loot_lmg_mk48_view",
         "#wpn_t8_loot_lmg_mk48_mk2_view"
@@ -88,8 +113,8 @@
     "fx_c88": "#hash_9c7f0dbc37829f85",
     "fx_c90": "#hash_9c7f0dbc37829f85",
     "fx_c98": "#hash_9c7f0dbc37829f85",
-    "normalImpactFX": "#hash_fee0671def6af7a4",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_xlarge_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#bullet_exit"
 }

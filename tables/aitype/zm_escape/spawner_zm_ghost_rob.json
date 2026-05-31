@@ -19,13 +19,16 @@
         "#hash_56df76d826cfdafe",
         "#hash_678c9a5a803404bb"
     ],
-    "meleeWeapon": "#hash_479f8de44d618b68",
+    "animMappingTables": [
+        "#hash_73c5d8cdfac4fe0b"
+    ],
+    "meleeWeapon": "#zombie_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
     "footstepTable": "#zombfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#zm_ghost.ai_bt",
+    "behaviorTree": "#hash_73cff1cdfacd7d0b",
     "animStateMachine": "#hash_7e5ce8011ce3e7a8",
     "animSelectorTable": "#hash_7e5cd1011ce3c093",
     "traversalExtents": "#default_traversal_extents_zm",

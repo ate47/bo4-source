@@ -155,7 +155,7 @@ function private function_582a3075()
     self.var_71841cf9 = -1;
     self.var_2208281f = -1;
     self.var_34b2e48 = 0;
-    self.lgt_env_helping_hand_room_1 = 1;
+    self.var_c858954a = 1;
     self.var_442eb649 = 0;
     function_ba6a44f();
     function_3df69749();

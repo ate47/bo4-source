@@ -49,7 +49,7 @@ function __init__()
     killstreaks::register_killstreak( "killstreak_drone_squadron", &function_d52c51c6 );
     killstreaks::register_alt_weapon( "drone_squadron", getweapon( #"killstreak_remote" ) );
     killstreaks::register_alt_weapon( "drone_squadron", getweapon( #"hash_26ffb92552ae26be" ) );
-    killstreaks::register_alt_weapon( "drone_squadron", getweapon( #"hash_5fbda3ef4b135b49" ) );
+    killstreaks::register_alt_weapon( "drone_squadron", getweapon( #"wasp_main_turret" ) );
     remote_weapons::registerremoteweapon( "drone_squadron", #"hash_7c833954874f735d", &function_97bbef8, &function_d9733cc9, 0 );
     level.killstreaks[ #"drone_squadron" ].threatonkill = 1;
     visionset_mgr::register_info( "visionset", "drone_squadron_visionset", 1, 120, 16, 1, &visionset_mgr::ramp_in_out_thread_per_player_death_shutdown, 0 );

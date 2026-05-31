@@ -295,7 +295,7 @@ function function_5e2c9b64( e_target, leftswing, weapon = level.weaponnone )
 function function_787cd537( first_time, leftswing, weapon = level.weaponnone )
 {
     self endon( #"disconnect" );
-    var_2ed6f142 = self getweaponmuzzlepoint();
+    v_view_pos = self getweaponmuzzlepoint();
     var_16d329c7 = self getweaponforwarddir();
     a_e_targets = zm_hero_weapon::function_7c3681f7();
     a_e_targets = arraysortclosest( a_e_targets, self.origin );
@@ -317,7 +317,7 @@ function function_787cd537( first_time, leftswing, weapon = level.weaponnone )
         }
         
         test_origin = e_target getcentroid();
-        n_dist_sq = distancesquared( var_2ed6f142, test_origin );
+        n_dist_sq = distancesquared( v_view_pos, test_origin );
         var_b1ef33ec = level.hero_weapon_stats[ #"sword_pistol" ][ #"hash_6fba0e2bde88b416" ];
         var_7efcfc36 = level.hero_weapon_stats[ #"sword_pistol" ][ #"hash_55062ef720314247" ];
         
@@ -326,7 +326,7 @@ function function_787cd537( first_time, leftswing, weapon = level.weaponnone )
             continue;
         }
         
-        if ( 0 == e_target sightconetrace( var_2ed6f142, self, var_16d329c7, 270 ) )
+        if ( 0 == e_target sightconetrace( v_view_pos, self, var_16d329c7, 270 ) )
         {
             continue;
         }
@@ -428,15 +428,15 @@ function private function_698ddbd9( weapon )
         }
     }
     
-    var_2ed6f142 = self getweaponmuzzlepoint();
+    v_view_pos = self getweaponmuzzlepoint();
     var_16d329c7 = self getweaponforwarddir();
-    v_end_pos = var_2ed6f142 + vectorscale( var_16d329c7, var_c05cba98 );
-    a_beamtrace = beamtrace( var_2ed6f142, v_end_pos, 0, self );
+    v_end_pos = v_view_pos + vectorscale( var_16d329c7, var_c05cba98 );
+    a_beamtrace = beamtrace( v_view_pos, v_end_pos, 0, self );
     var_26f49352 = var_f5df740b * var_f5df740b;
-    var_2dfd6afd = distance( var_2ed6f142, a_beamtrace[ #"position" ] );
+    var_2dfd6afd = distance( v_view_pos, a_beamtrace[ #"position" ] );
     var_825c6643 = var_2dfd6afd * var_2dfd6afd;
     var_2069eb4c = zm_hero_weapon::function_7c3681f7();
-    var_2069eb4c = arraysortclosest( var_2069eb4c, var_2ed6f142, undefined, undefined, var_2dfd6afd );
+    var_2069eb4c = arraysortclosest( var_2069eb4c, v_view_pos, undefined, undefined, var_2dfd6afd );
     
     if ( isdefined( a_beamtrace[ #"entity" ] ) && a_beamtrace[ #"entity" ].zm_ai_category === #"inanimate" || isdefined( level.var_2c19331b ) && isinarray( level.var_2c19331b, a_beamtrace[ #"entity" ] ) )
     {
@@ -569,15 +569,15 @@ function private function_698ddbd9( weapon )
         {
             v_target_location = var_2069eb4c[ i ] getcentroid();
             v_target_origin = var_2069eb4c[ i ] getorigin();
-            var_4061b1b2 = distancesquared( var_2ed6f142, v_target_location );
-            var_1dc736c5 = pointonsegmentnearesttopoint( var_2ed6f142, v_end_pos, v_target_origin );
+            var_4061b1b2 = distancesquared( v_view_pos, v_target_location );
+            var_1dc736c5 = pointonsegmentnearesttopoint( v_view_pos, v_end_pos, v_target_origin );
             
             if ( var_4061b1b2 > var_825c6643 )
             {
                 continue;
             }
             
-            normal = vectornormalize( v_target_location - var_2ed6f142 );
+            normal = vectornormalize( v_target_location - v_view_pos );
             dot = vectordot( var_16d329c7, normal );
             
             if ( 0 > dot )
@@ -694,13 +694,13 @@ function private function_698ddbd9( weapon )
     }
     else if ( n_level > 0 )
     {
-        v_end = var_2ed6f142 + var_16d329c7 * sqrt( var_825c6643 );
-        a_trace = bullettrace( var_2ed6f142, v_end, 0, self );
+        v_end = v_view_pos + var_16d329c7 * sqrt( var_825c6643 );
+        a_trace = bullettrace( v_view_pos, v_end, 0, self );
         var_a1db2464 = a_trace[ #"position" ];
-        check1 = distance( var_2ed6f142, var_a1db2464 );
-        check2 = distance( var_2ed6f142, v_end );
+        check1 = distance( v_view_pos, var_a1db2464 );
+        check2 = distance( v_view_pos, v_end );
         
-        if ( distancesquared( var_2ed6f142, var_a1db2464 ) < distancesquared( var_2ed6f142, v_end ) )
+        if ( distancesquared( v_view_pos, var_a1db2464 ) < distancesquared( v_view_pos, v_end ) )
         {
             var_fb504c3b = var_a1db2464;
         }
@@ -722,7 +722,7 @@ function private function_698ddbd9( weapon )
         self.var_4ecb8a5c.origin = var_fb504c3b;
         self.var_4ecb8a5c clientfield::increment( "" + #"dragon_roar_explosion" );
         var_2069eb4c = zm_hero_weapon::function_7c3681f7();
-        var_2069eb4c = arraysortclosest( var_2069eb4c, var_2ed6f142, undefined, undefined, level.hero_weapon_stats[ #"sword_pistol" ][ #"hash_634b06c9d5064145" ] );
+        var_2069eb4c = arraysortclosest( var_2069eb4c, v_view_pos, undefined, undefined, level.hero_weapon_stats[ #"sword_pistol" ][ #"hash_634b06c9d5064145" ] );
         
         if ( isdefined( a_trace ) && isdefined( a_trace[ #"entity" ] ) && function_ffa5b184( a_trace[ #"entity" ].zm_ai_category === #"inanimate" ) )
         {
@@ -806,10 +806,10 @@ function function_5ff8ad0b( weapon, var_fb504c3b )
         return;
     }
     
-    var_2ed6f142 = self getweaponmuzzlepoint();
+    v_view_pos = self getweaponmuzzlepoint();
     v_forward = self getweaponforwarddir();
-    v_end = var_2ed6f142 + v_forward * 10000;
-    a_trace = bullettrace( var_2ed6f142, v_end, 0, self );
+    v_end = v_view_pos + v_forward * 10000;
+    a_trace = bullettrace( v_view_pos, v_end, 0, self );
     level notify( #"hero_weapon_hit", { #player:self, #e_entity:a_trace[ #"entity" ], #var_80e17549:weapon, #v_position:var_fb504c3b } );
 }
 
@@ -963,11 +963,11 @@ function private function_5c924730()
     var_9298ef1e = var_b2dd8c4f * var_b2dd8c4f;
     var_92916829 = level.hero_weapon_stats[ #"sword_pistol" ][ #"hash_48e41904bfc0f47c" ];
     var_5f63dfa7 = var_92916829 * var_92916829;
-    var_2ed6f142 = self getweaponmuzzlepoint();
+    v_view_pos = self getweaponmuzzlepoint();
     var_16d329c7 = self getweaponforwarddir();
-    v_end_pos = var_2ed6f142 + vectorscale( var_16d329c7, var_92916829 );
+    v_end_pos = v_view_pos + vectorscale( var_16d329c7, var_92916829 );
     a_ai_zombies = zm_hero_weapon::function_7c3681f7();
-    a_ai_zombies = util::get_array_of_closest( var_2ed6f142, a_ai_zombies, undefined, undefined, var_92916829 );
+    a_ai_zombies = util::get_array_of_closest( v_view_pos, a_ai_zombies, undefined, undefined, var_92916829 );
     
     if ( !a_ai_zombies.size )
     {
@@ -992,7 +992,7 @@ function private function_5c924730()
             var_ca4c48f1 = a_ai_zombies[ i ] getcentroid();
         }
         
-        if ( !( isdefined( bullettracepassed( var_2ed6f142, var_ca4c48f1, 0, self, a_ai_zombies[ i ] ) ) && bullettracepassed( var_2ed6f142, var_ca4c48f1, 0, self, a_ai_zombies[ i ] ) ) )
+        if ( !( isdefined( bullettracepassed( v_view_pos, var_ca4c48f1, 0, self, a_ai_zombies[ i ] ) ) && bullettracepassed( v_view_pos, var_ca4c48f1, 0, self, a_ai_zombies[ i ] ) ) )
         {
             continue;
         }
@@ -1013,7 +1013,7 @@ function private function_5c924730()
         }
         
         v_zombie_location = a_ai_zombies[ i ] getcentroid();
-        normal = vectornormalize( v_zombie_location - var_2ed6f142 );
+        normal = vectornormalize( v_zombie_location - v_view_pos );
         dot = vectordot( var_16d329c7, normal );
         
         if ( 0 > dot )
@@ -1021,8 +1021,8 @@ function private function_5c924730()
             continue;
         }
         
-        var_4061b1b2 = distancesquared( var_2ed6f142, v_zombie_location );
-        var_1dc736c5 = pointonsegmentnearesttopoint( var_2ed6f142, v_end_pos, v_zombie_location );
+        var_4061b1b2 = distancesquared( v_view_pos, v_zombie_location );
+        var_1dc736c5 = pointonsegmentnearesttopoint( v_view_pos, v_end_pos, v_zombie_location );
         
         if ( var_4061b1b2 > var_5f63dfa7 )
         {

@@ -114,7 +114,7 @@ function private function_b4bc7751( entity )
         
         if ( isalive( entity ) )
         {
-            entity notify( #"hash_4d2293524fe1c94c", { #var_bad0e17c:var_54d06303, #var_c17a3b30:entity.node } );
+            entity notify( #"hash_4d2293524fe1c94c", { #s_interactable:var_54d06303, #var_c17a3b30:entity.node } );
         }
     }
 }

@@ -330,7 +330,7 @@ function function_cdddec81( inflictor, attacker, damage, flags, meansofdeath, we
             }
             
             self zombie_utility::zombie_eye_glow_stop();
-            self clientfield::set( "" + #"hash_757f891a37d3db00", 1 );
+            self clientfield::set( "" + #"freezegun_crumple_fx", 1 );
             return ( self.health + 666 );
         }
     }

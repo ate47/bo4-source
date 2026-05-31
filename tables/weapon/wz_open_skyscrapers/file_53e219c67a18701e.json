@@ -2,7 +2,7 @@
     "name": "#hash_53e219c67a18701e",
     "baseWeapon": "#hash_48206b17d50533c2",
     "displayname": "#weapon/lmg_pbr",
-    "streamkey": "#hash_1a35fa4993283f08",
+    "soundbank": "#hash_1a35fa4993283f08",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -11,21 +11,36 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "WARZONE",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 0.25",
+            "0.125 0.15",
+            "0.5 0.05",
+            "1 0.03"
+        ],
+        [
+            "0 0.15",
+            "0.125 0.15",
+            "0.5 0.05",
+            "1 0.05"
+        ]
+    ],
     "sound140": "#hash_d5b60e461910f57",
     "sound150": "#hash_1f79b1e46c0d5ab2",
     "sound180": "#hash_5b8dea73bb03ea82",
@@ -43,6 +58,10 @@
     "tunables1": "#hash_64d16f6f8c491703",
     "xanim_a68": "#hash_741d72c69fa33961",
     "ballisticDesc": "#hash_e297011667973dfb",
+    "tracers": [
+        "#hash_aa99504579880c97",
+        "#hash_aa99504579880c97"
+    ],
     "turretAnimSettings": "#player_turret_pbr_gunner_anims",
     "reticleCenter": "#hash_ac0bcb8f12647ad4",
     "inventoryIconZm": "#hash_83a6289850abc2af",
@@ -54,8 +73,8 @@
     "fx_c88": "#hash_a5b14fa7b1a0f91",
     "fx_c90": "#hash_a5b14fa7b1a0f91",
     "fx_c98": "#hash_a5b14fa7b1a0f91",
-    "normalImpactFX": "#hash_d8f69efe70ca1e40",
-    "exitImpactFX": "#hash_8ed5098cd739247e",
+    "normalImpactFX": "#bullet_xtreme_enter",
+    "exitImpactFX": "#bullet_xtreme_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#bullet_exit"
 }

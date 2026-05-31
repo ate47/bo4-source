@@ -715,7 +715,7 @@
                     {
                         n_offset = 15 * ( i + 1 );
                         print3d( self.origin - ( 0, 0, n_offset ), o_scene._str_name, ( 0.8, 0.2, 0.8 ), 1, 0.3, debug_frames );
-                        print3d( self.origin - ( 0, 0, n_offset + 5 ), "<dev string:x22f>" + ( isdefined( [[ o_scene ]]->function_2ba44cd0() ) ? "<dev string:x38>" + [[ o_scene ]]->function_2ba44cd0() : "<dev string:x38>" ) + "<dev string:x241>", ( 0.8, 0.2, 0.8 ), 1, 0.15, debug_frames );
+                        print3d( self.origin - ( 0, 0, n_offset + 5 ), "<dev string:x22f>" + ( isdefined( [[ o_scene ]]->get_current_shot() ) ? "<dev string:x38>" + [[ o_scene ]]->get_current_shot() : "<dev string:x38>" ) + "<dev string:x241>", ( 0.8, 0.2, 0.8 ), 1, 0.15, debug_frames );
                         print3d( self.origin - ( 0, 0, n_offset + 10 ), "<dev string:x245>" + ( isdefined( function_12479eba( o_scene._str_name ) ) ? "<dev string:x38>" + function_12479eba( o_scene._str_name ) : "<dev string:x38>" ) + "<dev string:x257>", ( 0.8, 0.2, 0.8 ), 1, 0.15, debug_frames );
                     }
                 }

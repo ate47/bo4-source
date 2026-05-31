@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_computer_teeth",
-    "hash_ff3063df": "model#",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_computer_teeth",
     "name": "charm_computer_teeth",
     "displayname": "localized17#hash_4a74c75b8c778b4f",
     "icon": "ui_icon_weapon_charms_computer_teeth",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_computer_teeth"
 }

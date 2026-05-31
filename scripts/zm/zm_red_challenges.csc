@@ -18,8 +18,8 @@ function init()
         return;
     }
     
-    clientfield::register( "scriptmover", "" + #"hash_74fc30de57a0657a", 16000, 3, "int", &function_de1bffd6, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_21f5fab6a3d22093", 16000, 3, "int", &function_9ed71eeb, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"apollo_bowl_fx", 16000, 3, "int", &function_de1bffd6, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"tribute_flame_fx", 16000, 3, "int", &function_9ed71eeb, 0, 0 );
     clientfield::register( "scriptmover", "" + #"keyline_model", 16000, 1, "int", &keyline_model, 0, 0 );
     clientfield::register( "scriptmover", "" + #"pickup_glow", 16000, 1, "int", &pickup_glow, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_8b48433c3fe40e4", 16000, 3, "int", &function_75ac8f21, 0, 0 );

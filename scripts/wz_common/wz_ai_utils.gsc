@@ -97,7 +97,7 @@ function private __init__()
         {
             if ( function_e949cfd7( type ) )
             {
-                util::add_debug_command( "<dev string:x3b>" + function_9e72a96( type ) + "<dev string:x5b>" + function_9e72a96( type ) + "<dev string:x81>" );
+                util::add_debug_command( "<dev string:x3b>" + hashtostring( type ) + "<dev string:x5b>" + hashtostring( type ) + "<dev string:x81>" );
             }
         }
         

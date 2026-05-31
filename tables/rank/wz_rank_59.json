@@ -1,12 +1,9 @@
 {
     "name": "#wz_rank_59",
-    "shortNameRef": "#",
     "fullNameRef": "#hash_401d7f974e549b8c",
-    "ingameNameRef": "#",
-    "iconName": "#hash_484a6552aa725b0f",
-    "iconNameLarge": "#hash_1d70c344a0abd85f",
     "level": 59,
     "minXp": 268000,
     "maxXp": 274500,
-    "rewards": []
+    "icon": "#ui_icon_rank_wz_level59",
+    "iconLarge": "#ui_icon_rank_wz_level59_large"
 }

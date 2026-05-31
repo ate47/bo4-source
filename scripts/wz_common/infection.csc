@@ -63,12 +63,12 @@ function private function_667d34b7( localclientnum )
             if ( infected === 1 && !var_d5823792 )
             {
                 var_d5823792 = 1;
-                function_a837926b( localclientnum, #"hash_29b452119475ca86" );
+                function_a837926b( localclientnum, #"pstfx_wz_zombified" );
             }
             else if ( infected === 0 && var_d5823792 )
             {
                 var_d5823792 = 0;
-                function_24cd4cfb( localclientnum, #"hash_29b452119475ca86" );
+                function_24cd4cfb( localclientnum, #"pstfx_wz_zombified" );
             }
         }
         

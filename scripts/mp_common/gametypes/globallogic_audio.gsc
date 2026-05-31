@@ -1382,14 +1382,14 @@ function set_music_global( state, wait_time = 0, save_state = 0, return_state = 
 // Params 2
 // Checksum 0xd38ea1f0, Offset: 0x4088
 // Size: 0x13c
-function function_85818e24( var_9c1ed9ea, team )
+function function_85818e24( str_musicstate, team )
 {
     if ( !isdefined( game.musicset ) )
     {
         return;
     }
     
-    if ( !isdefined( var_9c1ed9ea ) )
+    if ( !isdefined( str_musicstate ) )
     {
         return;
     }
@@ -1408,12 +1408,12 @@ function function_85818e24( var_9c1ed9ea, team )
                 continue;
             }
             
-            music::setmusicstate( var_9c1ed9ea + game.musicset, player );
+            music::setmusicstate( str_musicstate + game.musicset, player );
         }
         
         return;
     }
     
-    music::setmusicstate( var_9c1ed9ea + game.musicset );
+    music::setmusicstate( str_musicstate + game.musicset );
 }
 

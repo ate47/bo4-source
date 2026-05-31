@@ -1,5 +1,5 @@
 {
-    "hash_2ecceeab": "#automated_turret_kill",
+    "killscoreevent": "#automated_turret_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",

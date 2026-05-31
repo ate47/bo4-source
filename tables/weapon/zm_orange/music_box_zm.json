@@ -2,8 +2,8 @@
     "name": "#music_box_zm",
     "baseWeapon": "#music_box",
     "displayname": "#zmweapon/music_box",
-    "xhash_70": "#music_box",
-    "streamkey": "#hash_2c2000b90a0a8a54",
+    "weapon70": "#music_box",
+    "soundbank": "#music_box_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -12,30 +12,47 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 300,
     "soundrattlerangemax": 700,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
     "soundb0": "#hash_1407719def7423c5",
-    "firesound": "#hash_69acb760c1a05692",
-    "firesoundplayer": "#hash_69acb760c1a05692",
+    "firesound": "#wpn_grenade_throw",
+    "firesoundplayer": "#wpn_grenade_throw",
     "gadgetreadysoundplayer": "#hash_6f5b79a1a69b43a8",
     "sound450": "#hash_3c89dce559dfe797",
     "sound660": "#uin_unavailable_charging",
     "tunables1": "#music_box_tunables_zm",
-    "cacWeaponXCam": "#hash_ca93d9d6b1c015ab",
+    "cacWeaponXCam": "#ui_cam_cac_equip_semtex",
     "sharedWeaponSounds": "#equipment",
+    "statusEffects": [
+        {
+            "effect": "#hash_a608bf886a137e8e",
+            "statusEffects:unk8": "[ll0x0=1f400000064][f0x0=1.4013e-43][f0x4=7.00649e-43] 64 00 00 00 f4 01 00 00",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        }
+    ],
     "projectilemodel": "#p8_zm_ora_music_box_world",
     "viewmodel": [
         "#p8_zm_ora_music_box"
@@ -58,5 +75,5 @@
     ],
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
-    "bounceImpactSounds": "#hash_615552a2d30bfc86"
+    "bounceImpactSounds": "#musicbox_bounce"
 }

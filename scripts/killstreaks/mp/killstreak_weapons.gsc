@@ -80,7 +80,7 @@ function watchkillstreakweapondelay()
                 timeleft = 1;
             }
             
-            self iprintlnbold( #"hash_55a79f95e07a10bc", " " + timeleft + " ", #"hash_79a58948c3b976f5" );
+            self iprintlnbold( #"hash_55a79f95e07a10bc", " " + timeleft + " ", #"exe/seconds" );
             self switchtoweapon( currentweapon );
             wait 0.5;
         }

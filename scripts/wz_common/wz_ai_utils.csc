@@ -29,7 +29,7 @@ function __init__()
     level._effect[ #"hash_7fe086085cbbacac" ] = #"hash_4bd4c9b0fb97f425";
     level._effect[ #"hash_4048cb4967032c4a" ] = #"hash_1e43d43c6586fcb5";
     level._effect[ #"hash_1e35a559be3b8286" ] = #"wz/fx8_magicbox_marker_fl_red";
-    level._effect[ #"hash_19f4dd97cbb87594" ] = #"hash_5f376e9395e16666";
+    level._effect[ #"t8_leave_fx" ] = #"hash_5f376e9395e16666";
     level._effect[ #"hash_4fbab83578c5a7e7" ] = #"hash_5c4ef04b0752716a";
     level._effect[ #"hash_538c528b09706dc8" ] = #"hash_286e0d228779181";
     level.var_96add4a1 = #"hash_210be93b3bfae433";
@@ -126,7 +126,7 @@ function function_7e5339f3( localclientnum, oldval, newval, bnewent, binitialsna
         
         if ( newval == 2 )
         {
-            self.var_8ddb3e81 = util::playfxontag( localclientnum, level._effect[ #"hash_19f4dd97cbb87594" ], self, "tag_origin" );
+            self.var_8ddb3e81 = util::playfxontag( localclientnum, level._effect[ #"t8_leave_fx" ], self, "tag_origin" );
             self playsound( localclientnum, level.var_96add4a1, self.origin );
             return;
         }
@@ -144,7 +144,7 @@ function function_7e5339f3( localclientnum, oldval, newval, bnewent, binitialsna
         
         if ( newval == 4 )
         {
-            self.var_8ddb3e81 = util::playfxontag( localclientnum, level._effect[ #"hash_19f4dd97cbb87594" ], self, "tag_origin" );
+            self.var_8ddb3e81 = util::playfxontag( localclientnum, level._effect[ #"t8_leave_fx" ], self, "tag_origin" );
         }
     }
 }

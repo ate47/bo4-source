@@ -1,11 +1,12 @@
 {
     "name": "#hash_583953d8f4c2afaa",
-    "blackMarketName": "#",
-    "blackMarketDesc": "#",
-    "entitlementNameXHash": "#",
+    "productName": "#hash_1297545e48d65c9f",
+    "productDesc": "#hash_7b4176a66e2eb231",
+    "previewImage": "#ui_menu_store_product_b04_digital_refresh_spectre_rising_large",
+    "productImage": "#ui_menu_store_product_b04_digital_refresh_spectre_rising_large",
+    "blackMarketImage": "#t7_store_product_bo4",
     "productID": "55951",
-    "previewImageName": "hash_261fbb781ef22f23",
-    "productImageName": "hash_261fbb781ef22f23",
-    "blackMarketImageName": "hash_1217b62ca29dad38",
-    "visibility": false
+    "unk78": "!10065",
+    "visibility": false,
+    "unka3": true
 }

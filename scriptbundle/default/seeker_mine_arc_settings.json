@@ -1,15 +1,15 @@
 {
     "fx_tag": "j_spineupper",
-    "hash_e179fff4": "status_effect&shock_seeker_secondary",
-    "hash_41000980": "status_effect&shock_seeker_primary",
+    "hash_163d36b1a8fc07c1:hash_e179fff4": "status_effect&shock_seeker_secondary",
+    "hash_197aa2802baec309:hash_41000980": "status_effect&shock_seeker_primary",
     "chain": "fx#hash_4f56d4d19d13e31c",
     "max_range": 320,
-    "hash_8ceb67db": "j_spineupper",
+    "fx_tag_end": "j_spineupper",
     "fx_delay": 250,
     "name": "seeker_mine_arc_settings",
-    "hash_755593b1": 1,
-    "hash_8ce60046": 1,
+    "hash_482d7e0f2faf8305:hash_755593b1": 1,
+    "hash_524a442a15905a72:hash_8ce60046": 1,
     "range": 128,
-    "hash_9294a0dd": 1,
+    "hash_5682c2853acc5ea5:hash_9294a0dd": 1,
     "depth": 1
 }

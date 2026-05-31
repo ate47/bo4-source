@@ -412,8 +412,8 @@ function function_3f8a4145( var_26f4f16d )
     assert( isdefined( self.var_c27f1e90 ) );
     assert( self.var_c27f1e90.size >= 4 );
     var_806e2de0 = {};
-    var_806e2de0.var_149ec45c = [];
-    var_806e2de0.var_8f0c164f = [];
+    var_806e2de0.a_b_vapors = [];
+    var_806e2de0.a_str_vapor_names = [];
     
     for ( slot = 0; slot < 4 ; slot++ )
     {
@@ -442,12 +442,12 @@ function function_3f8a4145( var_26f4f16d )
                 var_806e2de0.additional_primary_weapon = self.var_2a62e678;
             }
             
-            var_806e2de0.var_149ec45c[ slot ] = 1;
-            var_806e2de0.var_8f0c164f[ slot ] = vapor;
+            var_806e2de0.a_b_vapors[ slot ] = 1;
+            var_806e2de0.a_str_vapor_names[ slot ] = vapor;
             continue;
         }
         
-        var_806e2de0.var_149ec45c[ slot ] = 0;
+        var_806e2de0.a_b_vapors[ slot ] = 0;
     }
     
     if ( self.var_67ba1237.size )
@@ -479,19 +479,19 @@ function function_d37a769( var_806e2de0 )
 {
     assert( isdefined( self.var_c27f1e90 ) );
     assert( self.var_c27f1e90.size >= 4 );
-    assert( var_806e2de0.var_149ec45c.size == 4 );
+    assert( var_806e2de0.a_b_vapors.size == 4 );
     level.var_bd1e770b = 1;
     
     for ( slot = 0; slot < 4 ; slot++ )
     {
-        if ( isdefined( var_806e2de0.var_8f0c164f[ slot ] ) )
+        if ( isdefined( var_806e2de0.a_str_vapor_names[ slot ] ) )
         {
-            self.var_c27f1e90[ slot ] = var_806e2de0.var_8f0c164f[ slot ];
+            self.var_c27f1e90[ slot ] = var_806e2de0.a_str_vapor_names[ slot ];
         }
         
         vapor = self.var_c27f1e90[ slot ];
         
-        if ( var_806e2de0.var_149ec45c[ slot ] || self zm_perks::function_e56d8ef4( vapor ) && !zm_trial_disable_perks::is_active( 1 ) )
+        if ( var_806e2de0.a_b_vapors[ slot ] || self zm_perks::function_e56d8ef4( vapor ) && !zm_trial_disable_perks::is_active( 1 ) )
         {
             if ( isdefined( var_806e2de0.var_c4193958 ) && isdefined( var_806e2de0.var_c4193958[ slot ] ) )
             {
@@ -528,7 +528,7 @@ function function_7f999aa0( var_806e2de0 )
     slot = self zm_perks::function_c1efcc57( #"specialty_additionalprimaryweapon" );
     var_4493e3e1 = isarray( var_806e2de0.var_724d826b ) && isinarray( var_806e2de0.var_724d826b, #"specialty_additionalprimaryweapon" );
     
-    if ( ( var_4493e3e1 || slot != -1 ) && ( var_4493e3e1 || var_806e2de0.var_149ec45c[ slot ] || zm_perks::function_e56d8ef4( #"specialty_additionalprimaryweapon" ) ) && isdefined( var_806e2de0.additional_primary_weapon ) )
+    if ( ( var_4493e3e1 || slot != -1 ) && ( var_4493e3e1 || var_806e2de0.a_b_vapors[ slot ] || zm_perks::function_e56d8ef4( #"specialty_additionalprimaryweapon" ) ) && isdefined( var_806e2de0.additional_primary_weapon ) )
     {
         if ( var_4493e3e1 || isinarray( self.var_466b927f, #"specialty_additionalprimaryweapon" ) )
         {

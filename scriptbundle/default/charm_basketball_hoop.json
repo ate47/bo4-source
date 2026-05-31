@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_basketball_hoop",
-    "hash_ff3063df": "model#",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_basketballhoop",
     "name": "charm_basketball_hoop",
     "displayname": "localized17#hash_180ffb384689ed3",
     "icon": "ui_icon_weapon_charms_basketballhoop",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_basketballhoop"
 }

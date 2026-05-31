@@ -780,11 +780,11 @@ function function_6cbea0ea()
     
     if ( zm_loadout::is_placeable_mine( w_current ) || zm_equipment::is_equipment( w_current ) || ability_util::is_weapon_gadget( w_current ) )
     {
-        var_2e07b8ff = self getweaponslistprimaries();
+        a_w_primary_weapons = self getweaponslistprimaries();
         
-        if ( isdefined( var_2e07b8ff ) && var_2e07b8ff.size > 0 )
+        if ( isdefined( a_w_primary_weapons ) && a_w_primary_weapons.size > 0 )
         {
-            self switchtoweapon( var_2e07b8ff[ 0 ] );
+            self switchtoweapon( a_w_primary_weapons[ 0 ] );
         }
     }
     

@@ -5,7 +5,7 @@
     "image": "loot05_ui_icon_blackmarket_item_shop_wingsuit_preview_savage",
     "name": "c_t8_bo_jumpkit_savage",
     "displayname": "localized17#hash_228d88341db37905",
-    "hash_4fa85a25": "scriptbundle&dfxt_savage",
+    "hash_4f69520e335e1dc6:hash_4fa85a25": "scriptbundle&dfxt_savage",
     "entitlement": "#hash_377b58d9f38de25f",
     "parachute": "scriptbundle&c_t8_bo_parachute_savage"
 }

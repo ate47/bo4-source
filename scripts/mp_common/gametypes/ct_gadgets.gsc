@@ -135,7 +135,7 @@ function function_ac7d2bdd( n_time = 0.5 )
 // Params 2
 // Checksum 0x16f3184d, Offset: 0x430
 // Size: 0x28c
-function function_4d6c7d92( var_e8ee1cd1, n_time = 0 )
+function function_4d6c7d92( n_ndx, n_time = 0 )
 {
     level endon( #"combattraining_logic_finished" );
     self endoncallback( &function_649b67d, #"death" );
@@ -145,18 +145,18 @@ function function_4d6c7d92( var_e8ee1cd1, n_time = 0 )
         self.var_5c519f98 = [];
     }
     
-    gadget = self._gadgets_player[ var_e8ee1cd1 ];
+    gadget = self._gadgets_player[ n_ndx ];
     
     if ( isdefined( gadget ) && !function_f2f3407( gadget.name ) )
     {
-        self gadgetpowerset( var_e8ee1cd1, 0 );
+        self gadgetpowerset( n_ndx, 0 );
         return;
     }
     
-    if ( !( isdefined( self.var_5c519f98[ var_e8ee1cd1 ] ) && self.var_5c519f98[ var_e8ee1cd1 ] ) )
+    if ( !( isdefined( self.var_5c519f98[ n_ndx ] ) && self.var_5c519f98[ n_ndx ] ) )
     {
-        self.var_5c519f98[ var_e8ee1cd1 ] = 1;
-        var_d5b8c6cf = self._gadgets_player[ var_e8ee1cd1 ].gadget_powermax;
+        self.var_5c519f98[ n_ndx ] = 1;
+        var_d5b8c6cf = self._gadgets_player[ n_ndx ].gadget_powermax;
         n_steps = 10;
         var_128b4383 = 0.1;
         var_589ea782 = n_time ? var_d5b8c6cf * var_128b4383 / n_time : var_d5b8c6cf;
@@ -164,21 +164,21 @@ function function_4d6c7d92( var_e8ee1cd1, n_time = 0 )
         
         while ( n_power < var_d5b8c6cf && function_f2f3407( gadget.name ) )
         {
-            n_power = self gadgetpowerget( var_e8ee1cd1 ) + var_589ea782;
+            n_power = self gadgetpowerget( n_ndx ) + var_589ea782;
             
-            if ( !isdefined( self.var_bb7ec6ae ) || !( isdefined( self.var_bb7ec6ae[ var_e8ee1cd1 ] ) && self.var_bb7ec6ae[ var_e8ee1cd1 ] ) )
+            if ( !isdefined( self.var_bb7ec6ae ) || !( isdefined( self.var_bb7ec6ae[ n_ndx ] ) && self.var_bb7ec6ae[ n_ndx ] ) )
             {
-                self gadgetpowerset( var_e8ee1cd1, n_power );
+                self gadgetpowerset( n_ndx, n_power );
             }
             
             wait var_128b4383;
         }
         
-        self.var_5c519f98[ var_e8ee1cd1 ] = 0;
+        self.var_5c519f98[ n_ndx ] = 0;
         
         if ( !function_f2f3407( gadget.name ) )
         {
-            self gadgetpowerset( var_e8ee1cd1, 0 );
+            self gadgetpowerset( n_ndx, 0 );
         }
     }
 }

@@ -79,27 +79,27 @@ function on_player_connect()
 // Namespace contracts/contracts
 // Params 0
 // Checksum 0x6abfa6e0, Offset: 0x3d8
-// Size: 0xa2, Type: bool
+// Size: 0xa2
 function can_process_contracts()
 {
     if ( getdvarint( #"contracts_enabled", 0 ) == 0 )
     {
-        return false;
+        return 0;
     }
     
     if ( getdvarint( #"contracts_enabled_mp", 1 ) == 0 )
     {
-        return false;
+        return 0;
     }
     
     if ( !sessionmodeismultiplayergame() )
     {
-        return false;
+        return 0;
     }
     
     if ( level.var_aa5e6547 === 1 )
     {
-        return false;
+        return 0;
     }
     
     return challenges::canprocesschallenges();
@@ -340,7 +340,7 @@ function private function_902ef0de( var_38280f2f, delta )
         
         if ( isdefined( level.contract_ids[ var_38280f2f ] ) )
         {
-            self luinotifyevent( #"hash_4b04b1cb4b3498d0", 2, level.contract_ids[ var_38280f2f ], new_progress );
+            self luinotifyevent( #"loot_contract_progress", 2, level.contract_ids[ var_38280f2f ], new_progress );
         }
     }
     
@@ -351,18 +351,18 @@ function private function_902ef0de( var_38280f2f, delta )
         
         if ( isdefined( level.contract_ids[ var_38280f2f ] ) )
         {
-            self luinotifyevent( #"hash_1739c4bd5baf83bc", 1, level.contract_ids[ var_38280f2f ] );
+            self luinotifyevent( #"loot_contract_complete", 1, level.contract_ids[ var_38280f2f ] );
         }
     }
     
     /#
         if ( getdvarint( #"scr_contract_debug", 0 ) > 0 )
         {
-            iprintln( function_9e72a96( var_38280f2f ) + "<dev string:x38>" + new_progress + "<dev string:x46>" + target_value );
+            iprintln( hashtostring( var_38280f2f ) + "<dev string:x38>" + new_progress + "<dev string:x46>" + target_value );
             
             if ( old_progress < target_value && target_value <= new_progress )
             {
-                iprintln( function_9e72a96( var_38280f2f ) + "<dev string:x4a>" );
+                iprintln( hashtostring( var_38280f2f ) + "<dev string:x4a>" );
             }
         }
     #/

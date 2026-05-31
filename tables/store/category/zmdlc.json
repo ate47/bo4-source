@@ -1,9 +1,9 @@
 {
-    "name": "zmdlc",
-    "nameHash": "#zmdlc",
+    "nameStr": "zmdlc",
+    "name": "#zmdlc",
     "displayName": "#hash_22f962ee6f885bb6",
-    "imageName": "#7027376462748829854",
     "visibility": false,
+    "image": "#t7_icon_menu_store_codpoints",
     "products": [
         "#blackopspass",
         "#zombiesdlc0",

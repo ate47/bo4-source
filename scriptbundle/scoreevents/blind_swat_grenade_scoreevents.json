@@ -1,17 +1,17 @@
 {
-    "hash_d58bd0e9": "#hash_6ec759f3f677ce10",
-    "hash_67b4a761": "#hash_6ec759f3f677ce10",
-    "hash_2eaed769": "#hash_6da3ec0deab3fd5f",
+    "hash_aea877001f3d9b2:hash_d58bd0e9": "#hash_6ec759f3f677ce10",
+    "hash_1392470036d7f11e:hash_67b4a761": "#hash_6ec759f3f677ce10",
+    "hash_15d363323c36cb1b:hash_2eaed769": "#hash_6da3ec0deab3fd5f",
     "configstringfiletype": "scriptbundle",
-    "hash_3e3b11a9": 0.5,
+    "activationthreshold": 0.5,
     "type": "scoreevents",
-    "hash_1253685d": "#hash_35b87598fe829859",
+    "activationscoreevent": "#hash_35b87598fe829859",
     "vmtype": "both",
-    "hash_16abf654": "#hash_6ec759f3f677ce10",
+    "hash_3c9a57250734ff5c:hash_16abf654": "#hash_6ec759f3f677ce10",
     "name": "blind_swat_grenade_scoreevents",
     "customsettingstype": "status effect",
-    "hash_1b8b6771": "#hash_6ec759f3f677ce10",
-    "hash_fcd2ff3a": 1,
-    "hash_170b3630": "#hash_50758e6ecb611127",
-    "hash_6643c0a0": "#hash_6ec759f3f677ce10"
+    "hash_5b80674ef0f7f78b:hash_1b8b6771": "#hash_6ec759f3f677ce10",
+    "hash_734fc584bdfde65d:hash_fcd2ff3a": 1,
+    "assistscoreevent": "#hash_50758e6ecb611127",
+    "hash_7c6bc18dcf98c8b1:hash_6643c0a0": "#hash_6ec759f3f677ce10"
 }

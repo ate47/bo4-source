@@ -1,0 +1,17 @@
+{
+    "name": "#maps/mp/mp_cairo.d3dbsp",
+    "baseName": "mp_cairo",
+    "mins": "-130776 -130832 -6746.0635",
+    "maxs": "130888.01 130992 9338.366",
+    "checksum": 0,
+    "streamerworld": "#hash_3177b7f04608b5f",
+    "lighting": "#maps/mp/mp_cairo.d3dbsp",
+    "lutMaterial": "#lut_mp_cairo",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 14,
+        "cookieArray": "#*cookie_array"
+    }
+}

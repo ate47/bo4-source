@@ -178,7 +178,7 @@ function function_593774d0()
 // Params 3
 // Checksum 0xb36d5687, Offset: 0x970
 // Size: 0x86a
-function function_a5ed4dd9( var_6c367c57, var_e7c0257b, var_4eec77ed )
+function function_a5ed4dd9( var_6c367c57, var_e7c0257b, n_time_between )
 {
     var_93a7b94d = randomintrangeinclusive( 1, 7 );
     

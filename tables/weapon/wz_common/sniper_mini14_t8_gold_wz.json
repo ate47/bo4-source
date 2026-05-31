@@ -3,8 +3,9 @@
     "baseWeapon": "#sniper_mini14_t8_gold",
     "displayname": "#weapon/sniper_mini14_t8",
     "xhash_60": "#hash_3672e42741f846a1",
-    "xhash_70": "#sniper_mini14_t8_gold",
-    "streamkey": "#hash_2e12a7ff5f145f6b",
+    "weapon70": "#sniper_mini14_t8_gold",
+    "weapon890": "#sniper_mini14_t8_wz",
+    "soundbank": "#sniper_mini14_t8_gold_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -19,21 +20,44 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 2,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "WARZONE",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.0393 0.5",
+            "0.1504 0.485",
+            "0.2911 0.4277",
+            "0.4004 0.3617",
+            "0.5404 0.241",
+            "0.5914 0.0372",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0393 1",
+            "0.1504 0.9704",
+            "0.2911 0.8574",
+            "0.4004 0.7234",
+            "0.5404 0.482",
+            "0.5914 0.0743",
+            "1 0"
+        ]
+    ],
     "firesounddistant": "#hash_5f022cd68aefd198",
     "firesound": "#hash_35e8115f42cdb5e0",
     "firesoundplayer": "#hash_76f8ac5ed68d8b21",
@@ -50,7 +74,6 @@
     "sound610": "#hash_5c9addf2686f77e2",
     "sound800": "#hash_17c846b05b70637f",
     "sound810": "#hash_17c846b05b70637f",
-    "sound890": "#sniper_mini14_t8_wz",
     "tunables1": "#sniper_mini14_t8_tunables_wz",
     "weaponCamo": "#hash_9b1bdce30a0368ef",
     "cacWeaponXCam": "#hash_decc4c42f7e87974",
@@ -68,6 +91,10 @@
     ],
     "sharedWeaponSounds": "#rifle",
     "ballisticDesc": "#hash_d333368f53c3f71b",
+    "tracers": [
+        "#hash_fa6c24626f115206",
+        "#hash_f0561f677d3c0da1"
+    ],
     "viewmodel": [
         "#wpn_t8_loot_sniper_mini14_view",
         "#wpn_t8_loot_sniper_mini14_mk2_view"
@@ -94,8 +121,8 @@
     "fx_c88": "#hash_83613e307817774e",
     "fx_c90": "#hash_83613e307817774e",
     "fx_c98": "#hash_83613e307817774e",
-    "normalImpactFX": "#hash_fee0671def6af7a4",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_xlarge_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#bullet_exit"
 }

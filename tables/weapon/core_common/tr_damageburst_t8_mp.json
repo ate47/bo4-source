@@ -2,8 +2,8 @@
     "name": "#tr_damageburst_t8_mp",
     "baseWeapon": "#tr_damageburst_t8",
     "displayname": "#weapon/tr_damageburst_t8",
-    "xhash_70": "#tr_damageburst_t8",
-    "streamkey": "#hash_ecd4f30e8d0841c",
+    "weapon70": "#tr_damageburst_t8",
+    "soundbank": "#tr_damageburst_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond",
@@ -17,21 +17,42 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "MULTIPLAYER",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.0303 0.95",
+            "0.2242 0.5",
+            "0.4 0.1",
+            "0.4992 0.05",
+            "0.7426 0.001",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0605 1",
+            "0.2242 0.7161",
+            "0.375 0.3412",
+            "0.4992 0.0032",
+            "0.7426 0",
+            "1 0"
+        ]
+    ],
     "firesounddistant": "#hash_56369e9a0553981f",
     "sound100": "#hash_17553cf564a7be3e",
     "sound110": "#hash_5a2ebf55a8691c3",
@@ -60,6 +81,11 @@
         "#hash_11eac6f9fb2e3734"
     ],
     "sharedWeaponSounds": "#rifle",
+    "tracers": [
+        "#hash_4930471310f548b8",
+        "#hash_3b61ed67c2a1458f",
+        "#hash_4930471310f548b8"
+    ],
     "viewmodel": [
         "#wpn_t8_loot_tac_rifle_damageburst_view"
     ],
@@ -83,8 +109,8 @@
     "fx_c88": "#hash_83613e307817774e",
     "fx_c90": "#hash_83613e307817774e",
     "fx_c98": "#hash_83613e307817774e",
-    "normalImpactFX": "#hash_1cafc46b8c735870",
-    "exitImpactFX": "#hash_56ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_large_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#bullet_exit"
 }

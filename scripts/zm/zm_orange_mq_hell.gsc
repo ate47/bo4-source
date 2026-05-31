@@ -50,7 +50,7 @@ function preload()
     clientfield::register( "world", "" + #"hash_5e69ee96304ec40b", 24000, 1, "int" );
     clientfield::register( "vehicle", "" + #"lantern_fx", 24000, 2, "int" );
     clientfield::register( "vehicle", "" + #"lantern_explode_fx", 24000, 1, "counter" );
-    clientfield::register( "toplayer", "" + #"hash_78b8d89d34b32241", 24000, 2, "int" );
+    clientfield::register( "toplayer", "" + #"hell_burn_fx", 24000, 2, "int" );
     clientfield::register( "scriptmover", "" + #"lantern_outline", 24000, 1, "int" );
     zm_sq_modules::function_d8383812( #"sc_lantern_1", 24000, "sc_lantern_1", &function_36eb3c96, &function_defd8c26, 1 );
     zm_sq_modules::function_d8383812( #"sc_lantern_2", 24000, "sc_lantern_2", &function_36eb3c96, &function_defd8c26, 1 );
@@ -397,12 +397,12 @@ function function_a340f5a2()
     function_5c135d54( 500 );
     level.var_5d5b7e8e.var_a41818b5.e_ring linkto( level.var_5d5b7e8e.var_a41818b5 );
     level.var_5d5b7e8e.var_a41818b5.e_ring thread function_93a18905();
-    array::run_all( getplayers(), &clientfield::set_to_player, "" + #"hash_78b8d89d34b32241", 1 );
+    array::run_all( getplayers(), &clientfield::set_to_player, "" + #"hell_burn_fx", 1 );
     level.var_5d5b7e8e.var_a41818b5 clientfield::set( "" + #"lantern_fx", 1 );
     
     foreach ( s_altar in level.var_76a7ad28 )
     {
-        s_altar.var_3468124 zm_perks::function_efd2c9e6();
+        s_altar.s_vapor_altar zm_perks::function_efd2c9e6();
     }
     
     foreach ( e_pap in level.var_4d8e32c8 )
@@ -529,7 +529,7 @@ function function_87b541aa()
 {
     self endon( #"death" );
     self.var_8ec9550d = 1;
-    self clientfield::set_to_player( "" + #"hash_78b8d89d34b32241", 2 );
+    self clientfield::set_to_player( "" + #"hell_burn_fx", 2 );
     self zm_audio::create_and_play_dialog( #"hell_on_earth", #"circle" );
     
     while ( self.var_8ec9550d )
@@ -546,7 +546,7 @@ function function_87b541aa()
 function function_2649e7fc()
 {
     self.var_8ec9550d = 0;
-    self clientfield::set_to_player( "" + #"hash_78b8d89d34b32241", 1 );
+    self clientfield::set_to_player( "" + #"hell_burn_fx", 1 );
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
@@ -558,7 +558,7 @@ function function_c1189522( s_notify )
     foreach ( e_player in getplayers() )
     {
         e_player.var_8ec9550d = 0;
-        e_player clientfield::set_to_player( "" + #"hash_78b8d89d34b32241", 0 );
+        e_player clientfield::set_to_player( "" + #"hell_burn_fx", 0 );
     }
 }
 
@@ -667,7 +667,7 @@ function function_5e3a92e()
 function function_f78ab325()
 {
     wait 1;
-    self clientfield::set_to_player( "" + #"hash_78b8d89d34b32241", 1 );
+    self clientfield::set_to_player( "" + #"hell_burn_fx", 1 );
     self.var_8ec9550d = 0;
 }
 
@@ -1020,7 +1020,7 @@ function function_737be926()
         
         foreach ( s_altar in level.var_76a7ad28 )
         {
-            s_altar.var_3468124 zm_perks::function_efd2c9e6();
+            s_altar.s_vapor_altar zm_perks::function_efd2c9e6();
         }
         
         foreach ( e_pap in level.var_4d8e32c8 )

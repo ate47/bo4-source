@@ -2,7 +2,8 @@
     "name": "#sig_buckler_lh_mp",
     "baseWeapon": "#sig_buckler_lh",
     "displayname": "#weapon/sig_buckler_dw",
-    "streamkey": "#hash_3fbe4476a3fbae56",
+    "dualwieldWeaponName": "#sig_buckler_dw_mp",
+    "soundbank": "#sig_buckler_lh_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_right",
     "stowedModelTag": "tag_stowed_back",
@@ -11,25 +12,29 @@
     "weaponstarthitpoints": 1500,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "MULTIPLAYER",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
     "sound660": "#uin_unavailable_charging",
-    "sound740": "#sig_buckler_dw_mp",
     "tunables1": "#sig_buckler_lh_tunables_mp",
     "sharedWeaponSounds": "#battle_shield",
+    "tracers": [
+        "#hash_a6d5c1a903fba6f4",
+        "#hash_e0e8c9de7086f843"
+    ],
     "#hash_2e4a8800": "#sig_buckler_scoreevents",
     "viewmodel": [
         "#wpn_t8_sig_battle_shield_buckler_view"
@@ -40,5 +45,13 @@
     "reticleSide": "#reticle_side_round",
     "inventoryIconZm": "#ui_icon_weapon_hud_sig_buckler",
     "image_e90": "#t7_icon_weapon_hero_reaper_kf",
-    "fireRumble": "#defaultweapon_fire"
+    "fireRumble": "#defaultweapon_fire",
+    "#hash_21329beb": [
+        {
+            "model": "#wpn_t8_sig_battle_shield_buckler_world_d1"
+        },
+        {
+            "model": "#wpn_t8_sig_battle_shield_buckler_world_d2"
+        }
+    ]
 }

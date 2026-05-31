@@ -35,7 +35,7 @@ version 114 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -87,7 +87,7 @@ version 114 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -105,7 +105,7 @@ version 114 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -115,7 +115,7 @@ version 114 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -147,7 +147,7 @@ version 114 {
     };
 
     // idx 0 members 146
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -297,7 +297,7 @@ version 114 {
     };
 
     // idx 1 members 114
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -415,7 +415,7 @@ version 114 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -436,7 +436,7 @@ version 114 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -486,7 +486,7 @@ version 114 {
     };
 
     // idx 4 members 52
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -542,7 +542,7 @@ version 114 {
     };
 
     // idx 5 members 51
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -597,7 +597,7 @@ version 114 {
     };
 
     // idx 6 members 10
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -615,25 +615,25 @@ version 114 {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_russman, // 0x1,
         prt_zm_diego, // 0x2,
-        hash_14e91ceb9a7b3eb6, // 0x3,
-        hash_1a427f842f175b3c, // 0x4,
+        prt_zm_bruno_dlc0, // 0x3,
+        prt_zm_scarlett_dlc0, // 0x4,
         prt_zm_dempsey, // 0x5,
         prt_zm_takeo_whi, // 0x6,
         prt_zm_nikolai, // 0x7,
-        hash_26072a3b34719d22, // 0x8,
+        prt_zm_diego_dlc0, // 0x8,
         prt_zm_misty, // 0x9,
         prt_zm_richtofen_ofc, // 0xa,
         prt_zm_takeo, // 0xb,
         prt_zm_dempsey_ofc, // 0xc,
         prt_zm_brigadier, // 0xd,
-        hash_3e63362aea484e09, // 0xe,
+        prt_zm_stanton, // 0xe,
         prt_zm_stuhlinger, // 0xf,
         prt_zm_nikolai_ofc, // 0x10,
         prt_zm_gunslinger, // 0x11,
-        hash_515977e191d13967, // 0x12,
+        prt_zm_psychic, // 0x12,
         prt_zm_richtofen, // 0x13,
         hash_5a715cb0a6e071ae, // 0x14,
-        hash_5a906d7137467771, // 0x15,
+        prt_zm_stanton_dlc0, // 0x15,
         prt_zm_butler, // 0x16,
         prt_zm_scarlett, // 0x17,
         prt_zm_takeo_ofc, // 0x18,
@@ -669,15 +669,15 @@ version 114 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x219f0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x232c0, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x232c1, size 0x92
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x23353, size 0x10
     bool extrabools[16];
     // offset 0x23363, size 0x1
@@ -703,11 +703,11 @@ version 114 {
     // offset 0x2336d, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x2336e, size 0x34
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x233a2, size 0x1
     bool completedfirsttimeflow;
     // offset 0x233a3, size 0x33
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x233d6, size 0x2
     uint:1 __pad[2];
 }
@@ -750,7 +750,7 @@ version 113 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -802,7 +802,7 @@ version 113 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -820,7 +820,7 @@ version 113 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -830,7 +830,7 @@ version 113 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -862,7 +862,7 @@ version 113 {
     };
 
     // idx 0 members 146
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -1012,7 +1012,7 @@ version 113 {
     };
 
     // idx 1 members 114
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -1130,7 +1130,7 @@ version 113 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -1151,7 +1151,7 @@ version 113 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -1201,7 +1201,7 @@ version 113 {
     };
 
     // idx 4 members 52
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -1257,7 +1257,7 @@ version 113 {
     };
 
     // idx 5 members 51
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -1312,7 +1312,7 @@ version 113 {
     };
 
     // idx 6 members 10
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -1330,24 +1330,24 @@ version 113 {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_russman, // 0x1,
         prt_zm_diego, // 0x2,
-        hash_14e91ceb9a7b3eb6, // 0x3,
-        hash_1a427f842f175b3c, // 0x4,
+        prt_zm_bruno_dlc0, // 0x3,
+        prt_zm_scarlett_dlc0, // 0x4,
         prt_zm_dempsey, // 0x5,
         prt_zm_takeo_whi, // 0x6,
         prt_zm_nikolai, // 0x7,
-        hash_26072a3b34719d22, // 0x8,
+        prt_zm_diego_dlc0, // 0x8,
         prt_zm_misty, // 0x9,
         prt_zm_richtofen_ofc, // 0xa,
         prt_zm_takeo, // 0xb,
         prt_zm_dempsey_ofc, // 0xc,
         prt_zm_brigadier, // 0xd,
-        hash_3e63362aea484e09, // 0xe,
+        prt_zm_stanton, // 0xe,
         prt_zm_stuhlinger, // 0xf,
         prt_zm_nikolai_ofc, // 0x10,
         prt_zm_gunslinger, // 0x11,
-        hash_515977e191d13967, // 0x12,
+        prt_zm_psychic, // 0x12,
         prt_zm_richtofen, // 0x13,
-        hash_5a906d7137467771, // 0x14,
+        prt_zm_stanton_dlc0, // 0x14,
         prt_zm_butler, // 0x15,
         prt_zm_scarlett, // 0x16,
         prt_zm_takeo_ofc, // 0x17,
@@ -1383,15 +1383,15 @@ version 113 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x219f0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x232c0, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x232c1, size 0x92
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x23353, size 0x10
     bool extrabools[16];
     // offset 0x23363, size 0x1
@@ -1417,11 +1417,11 @@ version 113 {
     // offset 0x2336d, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x2336e, size 0x34
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x233a2, size 0x1
     bool completedfirsttimeflow;
     // offset 0x233a3, size 0x33
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x233d6, size 0x2
     uint:1 __pad[2];
 }
@@ -1464,7 +1464,7 @@ version 112 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -1516,7 +1516,7 @@ version 112 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -1534,7 +1534,7 @@ version 112 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -1544,7 +1544,7 @@ version 112 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -1576,7 +1576,7 @@ version 112 {
     };
 
     // idx 0 members 144
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -1724,7 +1724,7 @@ version 112 {
     };
 
     // idx 1 members 112
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -1840,7 +1840,7 @@ version 112 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -1861,7 +1861,7 @@ version 112 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -1911,7 +1911,7 @@ version 112 {
     };
 
     // idx 4 members 52
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -1967,7 +1967,7 @@ version 112 {
     };
 
     // idx 5 members 51
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -2022,7 +2022,7 @@ version 112 {
     };
 
     // idx 6 members 10
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -2040,24 +2040,24 @@ version 112 {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_russman, // 0x1,
         prt_zm_diego, // 0x2,
-        hash_14e91ceb9a7b3eb6, // 0x3,
-        hash_1a427f842f175b3c, // 0x4,
+        prt_zm_bruno_dlc0, // 0x3,
+        prt_zm_scarlett_dlc0, // 0x4,
         prt_zm_dempsey, // 0x5,
         prt_zm_takeo_whi, // 0x6,
         prt_zm_nikolai, // 0x7,
-        hash_26072a3b34719d22, // 0x8,
+        prt_zm_diego_dlc0, // 0x8,
         prt_zm_misty, // 0x9,
         prt_zm_richtofen_ofc, // 0xa,
         prt_zm_takeo, // 0xb,
         prt_zm_dempsey_ofc, // 0xc,
         prt_zm_brigadier, // 0xd,
-        hash_3e63362aea484e09, // 0xe,
+        prt_zm_stanton, // 0xe,
         prt_zm_stuhlinger, // 0xf,
         prt_zm_nikolai_ofc, // 0x10,
         prt_zm_gunslinger, // 0x11,
-        hash_515977e191d13967, // 0x12,
+        prt_zm_psychic, // 0x12,
         prt_zm_richtofen, // 0x13,
-        hash_5a906d7137467771, // 0x14,
+        prt_zm_stanton_dlc0, // 0x14,
         prt_zm_butler, // 0x15,
         prt_zm_scarlett, // 0x16,
         prt_zm_takeo_ofc, // 0x17,
@@ -2093,15 +2093,15 @@ version 112 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x21080
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x22950, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x22951, size 0x90
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x229e1, size 0x10
     bool extrabools[16];
     // offset 0x229f1, size 0x1
@@ -2127,11 +2127,11 @@ version 112 {
     // offset 0x229fb, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x229fc, size 0x34
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x22a30, size 0x1
     bool completedfirsttimeflow;
     // offset 0x22a31, size 0x33
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x22a64, size 0x4
     uint:1 __pad[4];
 }
@@ -2174,7 +2174,7 @@ version 111 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -2226,7 +2226,7 @@ version 111 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -2244,7 +2244,7 @@ version 111 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -2254,7 +2254,7 @@ version 111 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -2286,7 +2286,7 @@ version 111 {
     };
 
     // idx 0 members 138
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -2428,7 +2428,7 @@ version 111 {
     };
 
     // idx 1 members 106
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -2538,7 +2538,7 @@ version 111 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -2559,7 +2559,7 @@ version 111 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -2609,7 +2609,7 @@ version 111 {
     };
 
     // idx 4 members 52
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -2665,7 +2665,7 @@ version 111 {
     };
 
     // idx 5 members 51
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -2720,7 +2720,7 @@ version 111 {
     };
 
     // idx 6 members 10
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -2738,25 +2738,25 @@ version 111 {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_russman, // 0x1,
         prt_zm_diego, // 0x2,
-        hash_14e91ceb9a7b3eb6, // 0x3,
-        hash_1a427f842f175b3c, // 0x4,
+        prt_zm_bruno_dlc0, // 0x3,
+        prt_zm_scarlett_dlc0, // 0x4,
         prt_zm_dempsey, // 0x5,
         prt_zm_takeo_whi, // 0x6,
         prt_zm_nikolai, // 0x7,
-        hash_26072a3b34719d22, // 0x8,
+        prt_zm_diego_dlc0, // 0x8,
         prt_zm_misty, // 0x9,
         prt_zm_richtofen_ofc, // 0xa,
         prt_zm_takeo, // 0xb,
         prt_zm_dempsey_ofc, // 0xc,
         prt_zm_brigadier, // 0xd,
-        hash_3e63362aea484e09, // 0xe,
+        prt_zm_stanton, // 0xe,
         prt_zm_stuhlinger, // 0xf,
         prt_zm_nikolai_ofc, // 0x10,
         prt_zm_gunslinger, // 0x11,
-        hash_515977e191d13967, // 0x12,
+        prt_zm_psychic, // 0x12,
         prt_zm_richtofen, // 0x13,
         hash_5a715cb0a6e071ae, // 0x14,
-        hash_5a906d7137467771, // 0x15,
+        prt_zm_stanton_dlc0, // 0x15,
         prt_zm_butler, // 0x16,
         prt_zm_scarlett, // 0x17,
         prt_zm_takeo_ofc, // 0x18,
@@ -2792,15 +2792,15 @@ version 111 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x1f430
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x20d00, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x20d01, size 0x8a
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x20d8b, size 0x10
     bool extrabools[16];
     // offset 0x20d9b, size 0x1
@@ -2826,11 +2826,11 @@ version 111 {
     // offset 0x20da5, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x20da6, size 0x34
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x20dda, size 0x1
     bool completedfirsttimeflow;
     // offset 0x20ddb, size 0x33
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x20e0e, size 0x2
     uint:1 __pad[2];
 }
@@ -2873,7 +2873,7 @@ version 110 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -2925,7 +2925,7 @@ version 110 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -2943,7 +2943,7 @@ version 110 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -2953,7 +2953,7 @@ version 110 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -2985,7 +2985,7 @@ version 110 {
     };
 
     // idx 0 members 138
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -3127,7 +3127,7 @@ version 110 {
     };
 
     // idx 1 members 106
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -3237,7 +3237,7 @@ version 110 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -3258,7 +3258,7 @@ version 110 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -3308,7 +3308,7 @@ version 110 {
     };
 
     // idx 4 members 51
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -3363,7 +3363,7 @@ version 110 {
     };
 
     // idx 5 members 51
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -3418,7 +3418,7 @@ version 110 {
     };
 
     // idx 6 members 10
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -3436,25 +3436,25 @@ version 110 {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_russman, // 0x1,
         prt_zm_diego, // 0x2,
-        hash_14e91ceb9a7b3eb6, // 0x3,
-        hash_1a427f842f175b3c, // 0x4,
+        prt_zm_bruno_dlc0, // 0x3,
+        prt_zm_scarlett_dlc0, // 0x4,
         prt_zm_dempsey, // 0x5,
         prt_zm_takeo_whi, // 0x6,
         prt_zm_nikolai, // 0x7,
-        hash_26072a3b34719d22, // 0x8,
+        prt_zm_diego_dlc0, // 0x8,
         prt_zm_misty, // 0x9,
         prt_zm_richtofen_ofc, // 0xa,
         prt_zm_takeo, // 0xb,
         prt_zm_dempsey_ofc, // 0xc,
         prt_zm_brigadier, // 0xd,
-        hash_3e63362aea484e09, // 0xe,
+        prt_zm_stanton, // 0xe,
         prt_zm_stuhlinger, // 0xf,
         prt_zm_nikolai_ofc, // 0x10,
         prt_zm_gunslinger, // 0x11,
-        hash_515977e191d13967, // 0x12,
+        prt_zm_psychic, // 0x12,
         prt_zm_richtofen, // 0x13,
         hash_5a715cb0a6e071ae, // 0x14,
-        hash_5a906d7137467771, // 0x15,
+        prt_zm_stanton_dlc0, // 0x15,
         prt_zm_butler, // 0x16,
         prt_zm_scarlett, // 0x17,
         prt_zm_takeo_ofc, // 0x18,
@@ -3490,15 +3490,15 @@ version 110 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x1f430
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x20d00, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x20d01, size 0x8a
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x20d8b, size 0x10
     bool extrabools[16];
     // offset 0x20d9b, size 0x1
@@ -3524,11 +3524,11 @@ version 110 {
     // offset 0x20da5, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x20da6, size 0x33
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x20dd9, size 0x1
     bool completedfirsttimeflow;
     // offset 0x20dda, size 0x33
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x20e0d, size 0x3
     uint:1 __pad[3];
 }
@@ -3571,7 +3571,7 @@ version 109 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -3623,7 +3623,7 @@ version 109 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -3641,7 +3641,7 @@ version 109 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -3651,7 +3651,7 @@ version 109 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -3683,7 +3683,7 @@ version 109 {
     };
 
     // idx 0 members 138
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -3825,7 +3825,7 @@ version 109 {
     };
 
     // idx 1 members 106
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -3935,7 +3935,7 @@ version 109 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -3956,7 +3956,7 @@ version 109 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -4006,7 +4006,7 @@ version 109 {
     };
 
     // idx 4 members 51
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -4061,7 +4061,7 @@ version 109 {
     };
 
     // idx 5 members 51
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -4116,7 +4116,7 @@ version 109 {
     };
 
     // idx 6 members 10
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -4134,24 +4134,24 @@ version 109 {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_russman, // 0x1,
         prt_zm_diego, // 0x2,
-        hash_14e91ceb9a7b3eb6, // 0x3,
-        hash_1a427f842f175b3c, // 0x4,
+        prt_zm_bruno_dlc0, // 0x3,
+        prt_zm_scarlett_dlc0, // 0x4,
         prt_zm_dempsey, // 0x5,
         prt_zm_takeo_whi, // 0x6,
         prt_zm_nikolai, // 0x7,
-        hash_26072a3b34719d22, // 0x8,
+        prt_zm_diego_dlc0, // 0x8,
         prt_zm_misty, // 0x9,
         prt_zm_richtofen_ofc, // 0xa,
         prt_zm_takeo, // 0xb,
         prt_zm_dempsey_ofc, // 0xc,
         prt_zm_brigadier, // 0xd,
-        hash_3e63362aea484e09, // 0xe,
+        prt_zm_stanton, // 0xe,
         prt_zm_stuhlinger, // 0xf,
         prt_zm_nikolai_ofc, // 0x10,
         prt_zm_gunslinger, // 0x11,
-        hash_515977e191d13967, // 0x12,
+        prt_zm_psychic, // 0x12,
         prt_zm_richtofen, // 0x13,
-        hash_5a906d7137467771, // 0x14,
+        prt_zm_stanton_dlc0, // 0x14,
         prt_zm_butler, // 0x15,
         prt_zm_scarlett, // 0x16,
         prt_zm_takeo_ofc, // 0x17,
@@ -4187,15 +4187,15 @@ version 109 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x1f430
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x20d00, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x20d01, size 0x8a
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x20d8b, size 0x10
     bool extrabools[16];
     // offset 0x20d9b, size 0x1
@@ -4221,11 +4221,11 @@ version 109 {
     // offset 0x20da5, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x20da6, size 0x33
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x20dd9, size 0x1
     bool completedfirsttimeflow;
     // offset 0x20dda, size 0x33
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x20e0d, size 0x3
     uint:1 __pad[3];
 }
@@ -4268,7 +4268,7 @@ version 108 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -4320,7 +4320,7 @@ version 108 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -4338,7 +4338,7 @@ version 108 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -4348,7 +4348,7 @@ version 108 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -4380,7 +4380,7 @@ version 108 {
     };
 
     // idx 0 members 138
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -4522,7 +4522,7 @@ version 108 {
     };
 
     // idx 1 members 106
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -4632,7 +4632,7 @@ version 108 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -4653,7 +4653,7 @@ version 108 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -4703,7 +4703,7 @@ version 108 {
     };
 
     // idx 4 members 51
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -4758,7 +4758,7 @@ version 108 {
     };
 
     // idx 5 members 51
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -4813,8 +4813,8 @@ version 108 {
     };
 
     // idx 6 members 10
-    enum hash_24b9393a5db48d33 {
-        hash_b28dd7e8e0761a6, // 0x0,
+    enum zmgametypes {
+        quickplay, // 0x0,
         ztcm_mansion, // 0x1,
         ztcm_towers, // 0x2,
         ztcm_zod, // 0x3,
@@ -4831,24 +4831,24 @@ version 108 {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_russman, // 0x1,
         prt_zm_diego, // 0x2,
-        hash_14e91ceb9a7b3eb6, // 0x3,
-        hash_1a427f842f175b3c, // 0x4,
+        prt_zm_bruno_dlc0, // 0x3,
+        prt_zm_scarlett_dlc0, // 0x4,
         prt_zm_dempsey, // 0x5,
         prt_zm_takeo_whi, // 0x6,
         prt_zm_nikolai, // 0x7,
-        hash_26072a3b34719d22, // 0x8,
+        prt_zm_diego_dlc0, // 0x8,
         prt_zm_misty, // 0x9,
         prt_zm_richtofen_ofc, // 0xa,
         prt_zm_takeo, // 0xb,
         prt_zm_dempsey_ofc, // 0xc,
         prt_zm_brigadier, // 0xd,
-        hash_3e63362aea484e09, // 0xe,
+        prt_zm_stanton, // 0xe,
         prt_zm_stuhlinger, // 0xf,
         prt_zm_nikolai_ofc, // 0x10,
         prt_zm_gunslinger, // 0x11,
-        hash_515977e191d13967, // 0x12,
+        prt_zm_psychic, // 0x12,
         prt_zm_richtofen, // 0x13,
-        hash_5a906d7137467771, // 0x14,
+        prt_zm_stanton_dlc0, // 0x14,
         prt_zm_butler, // 0x15,
         prt_zm_scarlett, // 0x16,
         prt_zm_takeo_ofc, // 0x17,
@@ -4884,15 +4884,15 @@ version 108 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x1f430
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x20d00, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x20d01, size 0x8a
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x20d8b, size 0x10
     bool extrabools[16];
     // offset 0x20d9b, size 0x1
@@ -4918,11 +4918,11 @@ version 108 {
     // offset 0x20da5, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x20da6, size 0x33
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x20dd9, size 0x1
     bool completedfirsttimeflow;
     // offset 0x20dda, size 0x33
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x20e0d, size 0x3
     uint:1 __pad[3];
 }
@@ -4965,7 +4965,7 @@ version 107 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -5017,7 +5017,7 @@ version 107 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -5035,7 +5035,7 @@ version 107 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -5045,7 +5045,7 @@ version 107 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -5077,7 +5077,7 @@ version 107 {
     };
 
     // idx 0 members 134
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -5215,7 +5215,7 @@ version 107 {
     };
 
     // idx 1 members 102
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -5321,7 +5321,7 @@ version 107 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -5342,7 +5342,7 @@ version 107 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -5392,7 +5392,7 @@ version 107 {
     };
 
     // idx 4 members 51
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -5447,7 +5447,7 @@ version 107 {
     };
 
     // idx 5 members 51
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -5502,8 +5502,8 @@ version 107 {
     };
 
     // idx 6 members 10
-    enum hash_24b9393a5db48d33 {
-        hash_b28dd7e8e0761a6, // 0x0,
+    enum zmgametypes {
+        quickplay, // 0x0,
         ztcm_mansion, // 0x1,
         ztcm_towers, // 0x2,
         ztcm_zod, // 0x3,
@@ -5520,24 +5520,24 @@ version 107 {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_russman, // 0x1,
         prt_zm_diego, // 0x2,
-        hash_14e91ceb9a7b3eb6, // 0x3,
-        hash_1a427f842f175b3c, // 0x4,
+        prt_zm_bruno_dlc0, // 0x3,
+        prt_zm_scarlett_dlc0, // 0x4,
         prt_zm_dempsey, // 0x5,
         prt_zm_takeo_whi, // 0x6,
         prt_zm_nikolai, // 0x7,
-        hash_26072a3b34719d22, // 0x8,
+        prt_zm_diego_dlc0, // 0x8,
         prt_zm_misty, // 0x9,
         prt_zm_richtofen_ofc, // 0xa,
         prt_zm_takeo, // 0xb,
         prt_zm_dempsey_ofc, // 0xc,
         prt_zm_brigadier, // 0xd,
-        hash_3e63362aea484e09, // 0xe,
+        prt_zm_stanton, // 0xe,
         prt_zm_stuhlinger, // 0xf,
         prt_zm_nikolai_ofc, // 0x10,
         prt_zm_gunslinger, // 0x11,
-        hash_515977e191d13967, // 0x12,
+        prt_zm_psychic, // 0x12,
         prt_zm_richtofen, // 0x13,
-        hash_5a906d7137467771, // 0x14,
+        prt_zm_stanton_dlc0, // 0x14,
         prt_zm_butler, // 0x15,
         prt_zm_scarlett, // 0x16,
         prt_zm_takeo_ofc, // 0x17,
@@ -5573,15 +5573,15 @@ version 107 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x1e150
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x1fa20, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x1fa21, size 0x86
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1faa7, size 0x10
     bool extrabools[16];
     // offset 0x1fab7, size 0x1
@@ -5607,11 +5607,11 @@ version 107 {
     // offset 0x1fac1, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x1fac2, size 0x33
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1faf5, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1faf6, size 0x33
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x1fb29, size 0x7
     uint:1 __pad[7];
 }
@@ -5654,7 +5654,7 @@ version 106 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -5706,7 +5706,7 @@ version 106 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -5724,7 +5724,7 @@ version 106 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -5734,7 +5734,7 @@ version 106 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -5766,7 +5766,7 @@ version 106 {
     };
 
     // idx 0 members 134
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -5904,7 +5904,7 @@ version 106 {
     };
 
     // idx 1 members 102
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -6010,7 +6010,7 @@ version 106 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -6031,7 +6031,7 @@ version 106 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -6081,7 +6081,7 @@ version 106 {
     };
 
     // idx 4 members 51
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -6136,7 +6136,7 @@ version 106 {
     };
 
     // idx 5 members 51
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -6191,8 +6191,8 @@ version 106 {
     };
 
     // idx 6 members 10
-    enum hash_24b9393a5db48d33 {
-        hash_b28dd7e8e0761a6, // 0x0,
+    enum zmgametypes {
+        quickplay, // 0x0,
         ztcm_mansion, // 0x1,
         ztcm_towers, // 0x2,
         ztcm_zod, // 0x3,
@@ -6208,22 +6208,22 @@ version 106 {
     enum zmcharacters {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_diego, // 0x1,
-        hash_14e91ceb9a7b3eb6, // 0x2,
-        hash_1a427f842f175b3c, // 0x3,
+        prt_zm_bruno_dlc0, // 0x2,
+        prt_zm_scarlett_dlc0, // 0x3,
         prt_zm_dempsey, // 0x4,
         prt_zm_takeo_whi, // 0x5,
         prt_zm_nikolai, // 0x6,
-        hash_26072a3b34719d22, // 0x7,
+        prt_zm_diego_dlc0, // 0x7,
         prt_zm_richtofen_ofc, // 0x8,
         prt_zm_takeo, // 0x9,
         prt_zm_dempsey_ofc, // 0xa,
         prt_zm_brigadier, // 0xb,
-        hash_3e63362aea484e09, // 0xc,
+        prt_zm_stanton, // 0xc,
         prt_zm_nikolai_ofc, // 0xd,
         prt_zm_gunslinger, // 0xe,
-        hash_515977e191d13967, // 0xf,
+        prt_zm_psychic, // 0xf,
         prt_zm_richtofen, // 0x10,
-        hash_5a906d7137467771, // 0x11,
+        prt_zm_stanton_dlc0, // 0x11,
         prt_zm_butler, // 0x12,
         prt_zm_scarlett, // 0x13,
         prt_zm_takeo_ofc, // 0x14,
@@ -6258,15 +6258,15 @@ version 106 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x1e150
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x1fa20, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x1fa21, size 0x86
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1faa7, size 0x10
     bool extrabools[16];
     // offset 0x1fab7, size 0x1
@@ -6292,11 +6292,11 @@ version 106 {
     // offset 0x1fac1, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x1fac2, size 0x33
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1faf5, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1faf6, size 0x33
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x1fb29, size 0x7
     uint:1 __pad[7];
 }
@@ -6339,7 +6339,7 @@ version 105 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -6391,7 +6391,7 @@ version 105 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -6409,7 +6409,7 @@ version 105 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -6419,7 +6419,7 @@ version 105 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -6451,7 +6451,7 @@ version 105 {
     };
 
     // idx 0 members 132
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -6587,7 +6587,7 @@ version 105 {
     };
 
     // idx 1 members 100
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -6691,7 +6691,7 @@ version 105 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -6712,7 +6712,7 @@ version 105 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -6762,7 +6762,7 @@ version 105 {
     };
 
     // idx 4 members 51
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -6817,7 +6817,7 @@ version 105 {
     };
 
     // idx 5 members 51
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -6872,8 +6872,8 @@ version 105 {
     };
 
     // idx 6 members 10
-    enum hash_24b9393a5db48d33 {
-        hash_b28dd7e8e0761a6, // 0x0,
+    enum zmgametypes {
+        quickplay, // 0x0,
         ztcm_mansion, // 0x1,
         ztcm_towers, // 0x2,
         ztcm_zod, // 0x3,
@@ -6889,22 +6889,22 @@ version 105 {
     enum zmcharacters {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_diego, // 0x1,
-        hash_14e91ceb9a7b3eb6, // 0x2,
-        hash_1a427f842f175b3c, // 0x3,
+        prt_zm_bruno_dlc0, // 0x2,
+        prt_zm_scarlett_dlc0, // 0x3,
         prt_zm_dempsey, // 0x4,
         prt_zm_takeo_whi, // 0x5,
         prt_zm_nikolai, // 0x6,
-        hash_26072a3b34719d22, // 0x7,
+        prt_zm_diego_dlc0, // 0x7,
         prt_zm_richtofen_ofc, // 0x8,
         prt_zm_takeo, // 0x9,
         prt_zm_dempsey_ofc, // 0xa,
         prt_zm_brigadier, // 0xb,
-        hash_3e63362aea484e09, // 0xc,
+        prt_zm_stanton, // 0xc,
         prt_zm_nikolai_ofc, // 0xd,
         prt_zm_gunslinger, // 0xe,
-        hash_515977e191d13967, // 0xf,
+        prt_zm_psychic, // 0xf,
         prt_zm_richtofen, // 0x10,
-        hash_5a906d7137467771, // 0x11,
+        prt_zm_stanton_dlc0, // 0x11,
         prt_zm_butler, // 0x12,
         prt_zm_scarlett, // 0x13,
         prt_zm_takeo_ofc, // 0x14,
@@ -6939,15 +6939,15 @@ version 105 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x1d7e0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x1f0b0, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x1f0b1, size 0x84
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1f135, size 0x10
     bool extrabools[16];
     // offset 0x1f145, size 0x1
@@ -6973,11 +6973,11 @@ version 105 {
     // offset 0x1f14f, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x1f150, size 0x33
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1f183, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1f184, size 0x33
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x1f1b7, size 0x1
     uint:1 __pad[1];
 }
@@ -7020,7 +7020,7 @@ version 104 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -7072,7 +7072,7 @@ version 104 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -7090,7 +7090,7 @@ version 104 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -7100,7 +7100,7 @@ version 104 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -7132,7 +7132,7 @@ version 104 {
     };
 
     // idx 0 members 130
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -7266,7 +7266,7 @@ version 104 {
     };
 
     // idx 1 members 98
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -7368,7 +7368,7 @@ version 104 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -7389,7 +7389,7 @@ version 104 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -7439,7 +7439,7 @@ version 104 {
     };
 
     // idx 4 members 51
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -7494,7 +7494,7 @@ version 104 {
     };
 
     // idx 5 members 51
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -7549,7 +7549,7 @@ version 104 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -7565,22 +7565,22 @@ version 104 {
     enum zmcharacters {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_diego, // 0x1,
-        hash_14e91ceb9a7b3eb6, // 0x2,
-        hash_1a427f842f175b3c, // 0x3,
+        prt_zm_bruno_dlc0, // 0x2,
+        prt_zm_scarlett_dlc0, // 0x3,
         prt_zm_dempsey, // 0x4,
         prt_zm_takeo_whi, // 0x5,
         prt_zm_nikolai, // 0x6,
-        hash_26072a3b34719d22, // 0x7,
+        prt_zm_diego_dlc0, // 0x7,
         prt_zm_richtofen_ofc, // 0x8,
         prt_zm_takeo, // 0x9,
         prt_zm_dempsey_ofc, // 0xa,
         prt_zm_brigadier, // 0xb,
-        hash_3e63362aea484e09, // 0xc,
+        prt_zm_stanton, // 0xc,
         prt_zm_nikolai_ofc, // 0xd,
         prt_zm_gunslinger, // 0xe,
-        hash_515977e191d13967, // 0xf,
+        prt_zm_psychic, // 0xf,
         prt_zm_richtofen, // 0x10,
-        hash_5a906d7137467771, // 0x11,
+        prt_zm_stanton_dlc0, // 0x11,
         prt_zm_butler, // 0x12,
         prt_zm_scarlett, // 0x13,
         prt_zm_takeo_ofc, // 0x14,
@@ -7615,15 +7615,15 @@ version 104 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x1ce70
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x1e740, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x1e741, size 0x82
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1e7c3, size 0x10
     bool extrabools[16];
     // offset 0x1e7d3, size 0x1
@@ -7649,11 +7649,11 @@ version 104 {
     // offset 0x1e7dd, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x1e7de, size 0x33
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1e811, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1e812, size 0x33
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x1e845, size 0x3
     uint:1 __pad[3];
 }
@@ -7696,7 +7696,7 @@ version 103 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -7748,7 +7748,7 @@ version 103 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -7766,7 +7766,7 @@ version 103 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -7776,7 +7776,7 @@ version 103 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -7808,7 +7808,7 @@ version 103 {
     };
 
     // idx 0 members 130
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -7942,7 +7942,7 @@ version 103 {
     };
 
     // idx 1 members 98
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -8044,7 +8044,7 @@ version 103 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -8065,7 +8065,7 @@ version 103 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -8115,7 +8115,7 @@ version 103 {
     };
 
     // idx 4 members 51
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -8170,7 +8170,7 @@ version 103 {
     };
 
     // idx 5 members 49
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -8223,7 +8223,7 @@ version 103 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -8239,22 +8239,22 @@ version 103 {
     enum zmcharacters {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_diego, // 0x1,
-        hash_14e91ceb9a7b3eb6, // 0x2,
-        hash_1a427f842f175b3c, // 0x3,
+        prt_zm_bruno_dlc0, // 0x2,
+        prt_zm_scarlett_dlc0, // 0x3,
         prt_zm_dempsey, // 0x4,
         prt_zm_takeo_whi, // 0x5,
         prt_zm_nikolai, // 0x6,
-        hash_26072a3b34719d22, // 0x7,
+        prt_zm_diego_dlc0, // 0x7,
         prt_zm_richtofen_ofc, // 0x8,
         prt_zm_takeo, // 0x9,
         prt_zm_dempsey_ofc, // 0xa,
         prt_zm_brigadier, // 0xb,
-        hash_3e63362aea484e09, // 0xc,
+        prt_zm_stanton, // 0xc,
         prt_zm_nikolai_ofc, // 0xd,
         prt_zm_gunslinger, // 0xe,
-        hash_515977e191d13967, // 0xf,
+        prt_zm_psychic, // 0xf,
         prt_zm_richtofen, // 0x10,
-        hash_5a906d7137467771, // 0x11,
+        prt_zm_stanton_dlc0, // 0x11,
         prt_zm_butler, // 0x12,
         prt_zm_scarlett, // 0x13,
         prt_zm_takeo_ofc, // 0x14,
@@ -8289,15 +8289,15 @@ version 103 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x1ce70
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x1e740, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x1e741, size 0x82
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1e7c3, size 0x10
     bool extrabools[16];
     // offset 0x1e7d3, size 0x1
@@ -8323,11 +8323,11 @@ version 103 {
     // offset 0x1e7dd, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x1e7de, size 0x33
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1e811, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1e812, size 0x31
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x1e843, size 0x5
     uint:1 __pad[5];
 }
@@ -8370,7 +8370,7 @@ version 102 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -8422,7 +8422,7 @@ version 102 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -8440,7 +8440,7 @@ version 102 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -8450,7 +8450,7 @@ version 102 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -8482,7 +8482,7 @@ version 102 {
     };
 
     // idx 0 members 130
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -8616,7 +8616,7 @@ version 102 {
     };
 
     // idx 1 members 98
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -8718,7 +8718,7 @@ version 102 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -8739,7 +8739,7 @@ version 102 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -8789,7 +8789,7 @@ version 102 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -8843,7 +8843,7 @@ version 102 {
     };
 
     // idx 5 members 49
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -8896,7 +8896,7 @@ version 102 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -8912,22 +8912,22 @@ version 102 {
     enum zmcharacters {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_diego, // 0x1,
-        hash_14e91ceb9a7b3eb6, // 0x2,
-        hash_1a427f842f175b3c, // 0x3,
+        prt_zm_bruno_dlc0, // 0x2,
+        prt_zm_scarlett_dlc0, // 0x3,
         prt_zm_dempsey, // 0x4,
         prt_zm_takeo_whi, // 0x5,
         prt_zm_nikolai, // 0x6,
-        hash_26072a3b34719d22, // 0x7,
+        prt_zm_diego_dlc0, // 0x7,
         prt_zm_richtofen_ofc, // 0x8,
         prt_zm_takeo, // 0x9,
         prt_zm_dempsey_ofc, // 0xa,
         prt_zm_brigadier, // 0xb,
-        hash_3e63362aea484e09, // 0xc,
+        prt_zm_stanton, // 0xc,
         prt_zm_nikolai_ofc, // 0xd,
         prt_zm_gunslinger, // 0xe,
-        hash_515977e191d13967, // 0xf,
+        prt_zm_psychic, // 0xf,
         prt_zm_richtofen, // 0x10,
-        hash_5a906d7137467771, // 0x11,
+        prt_zm_stanton_dlc0, // 0x11,
         prt_zm_butler, // 0x12,
         prt_zm_scarlett, // 0x13,
         prt_zm_takeo_ofc, // 0x14,
@@ -8962,15 +8962,15 @@ version 102 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x1ce70
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x1e740, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x1e741, size 0x82
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1e7c3, size 0x10
     bool extrabools[16];
     // offset 0x1e7d3, size 0x1
@@ -8996,11 +8996,11 @@ version 102 {
     // offset 0x1e7dd, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x1e7de, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1e810, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1e811, size 0x31
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x1e842, size 0x6
     uint:1 __pad[6];
 }
@@ -9043,7 +9043,7 @@ version 101 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -9095,7 +9095,7 @@ version 101 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -9113,7 +9113,7 @@ version 101 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -9123,7 +9123,7 @@ version 101 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -9155,7 +9155,7 @@ version 101 {
     };
 
     // idx 0 members 130
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -9289,7 +9289,7 @@ version 101 {
     };
 
     // idx 1 members 98
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -9391,7 +9391,7 @@ version 101 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -9412,7 +9412,7 @@ version 101 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -9462,7 +9462,7 @@ version 101 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -9516,7 +9516,7 @@ version 101 {
     };
 
     // idx 5 members 48
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -9568,7 +9568,7 @@ version 101 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -9584,22 +9584,22 @@ version 101 {
     enum zmcharacters {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_diego, // 0x1,
-        hash_14e91ceb9a7b3eb6, // 0x2,
-        hash_1a427f842f175b3c, // 0x3,
+        prt_zm_bruno_dlc0, // 0x2,
+        prt_zm_scarlett_dlc0, // 0x3,
         prt_zm_dempsey, // 0x4,
         prt_zm_takeo_whi, // 0x5,
         prt_zm_nikolai, // 0x6,
-        hash_26072a3b34719d22, // 0x7,
+        prt_zm_diego_dlc0, // 0x7,
         prt_zm_richtofen_ofc, // 0x8,
         prt_zm_takeo, // 0x9,
         prt_zm_dempsey_ofc, // 0xa,
         prt_zm_brigadier, // 0xb,
-        hash_3e63362aea484e09, // 0xc,
+        prt_zm_stanton, // 0xc,
         prt_zm_nikolai_ofc, // 0xd,
         prt_zm_gunslinger, // 0xe,
-        hash_515977e191d13967, // 0xf,
+        prt_zm_psychic, // 0xf,
         prt_zm_richtofen, // 0x10,
-        hash_5a906d7137467771, // 0x11,
+        prt_zm_stanton_dlc0, // 0x11,
         prt_zm_butler, // 0x12,
         prt_zm_scarlett, // 0x13,
         prt_zm_takeo_ofc, // 0x14,
@@ -9634,15 +9634,15 @@ version 101 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x1ce70
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x1e740, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x1e741, size 0x82
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1e7c3, size 0x10
     bool extrabools[16];
     // offset 0x1e7d3, size 0x1
@@ -9668,11 +9668,11 @@ version 101 {
     // offset 0x1e7dd, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x1e7de, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1e810, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1e811, size 0x30
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x1e841, size 0x7
     uint:1 __pad[7];
 }
@@ -9715,7 +9715,7 @@ version 100 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -9767,7 +9767,7 @@ version 100 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -9785,7 +9785,7 @@ version 100 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -9795,7 +9795,7 @@ version 100 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -9827,7 +9827,7 @@ version 100 {
     };
 
     // idx 0 members 130
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -9961,7 +9961,7 @@ version 100 {
     };
 
     // idx 1 members 98
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -10063,7 +10063,7 @@ version 100 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -10084,7 +10084,7 @@ version 100 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -10134,7 +10134,7 @@ version 100 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -10188,7 +10188,7 @@ version 100 {
     };
 
     // idx 5 members 47
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -10239,7 +10239,7 @@ version 100 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -10255,22 +10255,22 @@ version 100 {
     enum zmcharacters {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_diego, // 0x1,
-        hash_14e91ceb9a7b3eb6, // 0x2,
-        hash_1a427f842f175b3c, // 0x3,
+        prt_zm_bruno_dlc0, // 0x2,
+        prt_zm_scarlett_dlc0, // 0x3,
         prt_zm_dempsey, // 0x4,
         prt_zm_takeo_whi, // 0x5,
         prt_zm_nikolai, // 0x6,
-        hash_26072a3b34719d22, // 0x7,
+        prt_zm_diego_dlc0, // 0x7,
         prt_zm_richtofen_ofc, // 0x8,
         prt_zm_takeo, // 0x9,
         prt_zm_dempsey_ofc, // 0xa,
         prt_zm_brigadier, // 0xb,
-        hash_3e63362aea484e09, // 0xc,
+        prt_zm_stanton, // 0xc,
         prt_zm_nikolai_ofc, // 0xd,
         prt_zm_gunslinger, // 0xe,
-        hash_515977e191d13967, // 0xf,
+        prt_zm_psychic, // 0xf,
         prt_zm_richtofen, // 0x10,
-        hash_5a906d7137467771, // 0x11,
+        prt_zm_stanton_dlc0, // 0x11,
         prt_zm_butler, // 0x12,
         prt_zm_scarlett, // 0x13,
         prt_zm_takeo_ofc, // 0x14,
@@ -10305,15 +10305,15 @@ version 100 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x1ce70
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x1e740, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x1e741, size 0x82
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1e7c3, size 0x10
     bool extrabools[16];
     // offset 0x1e7d3, size 0x1
@@ -10339,11 +10339,11 @@ version 100 {
     // offset 0x1e7dd, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x1e7de, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1e810, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1e811, size 0x2f
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
 }
 
 /////////////////////////////////////////////////
@@ -10384,7 +10384,7 @@ version 99 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -10436,7 +10436,7 @@ version 99 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -10454,7 +10454,7 @@ version 99 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -10464,7 +10464,7 @@ version 99 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -10496,7 +10496,7 @@ version 99 {
     };
 
     // idx 0 members 139
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -10521,7 +10521,7 @@ version 99 {
         hero_flamethrower_t8_lv3, // 0x15,
         shotgun_trenchgun_t8, // 0x16,
         ww_blundergat_t8, // 0x17,
-        hash_1b1df5c494f25984, // 0x18,
+        shock_knuckles, // 0x18,
         hero_gravityspikes_t8_lv3, // 0x19,
         hero_gravityspikes_t8_lv2, // 0x1a,
         hero_gravityspikes_t8_lv1, // 0x1b,
@@ -10639,7 +10639,7 @@ version 99 {
     };
 
     // idx 1 members 105
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         tr_powersemi_t8_upgraded, // 0x0,
         pistol_topbreak_t8, // 0x1,
         tr_midburst_t8, // 0x2,
@@ -10657,7 +10657,7 @@ version 99 {
         bowie_knife, // 0xe,
         shotgun_trenchgun_t8, // 0xf,
         ww_blundergat_t8, // 0x10,
-        hash_1b1df5c494f25984, // 0x11,
+        shock_knuckles, // 0x11,
         lmg_spray_t8_upgraded, // 0x12,
         pistol_fullauto_t8, // 0x13,
         lmg_standard_t8_upgraded, // 0x14,
@@ -10748,7 +10748,7 @@ version 99 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -10769,7 +10769,7 @@ version 99 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -10819,7 +10819,7 @@ version 99 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -10873,7 +10873,7 @@ version 99 {
     };
 
     // idx 5 members 47
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -10924,7 +10924,7 @@ version 99 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -10940,22 +10940,22 @@ version 99 {
     enum zmcharacters {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_diego, // 0x1,
-        hash_14e91ceb9a7b3eb6, // 0x2,
-        hash_1a427f842f175b3c, // 0x3,
+        prt_zm_bruno_dlc0, // 0x2,
+        prt_zm_scarlett_dlc0, // 0x3,
         prt_zm_dempsey, // 0x4,
         prt_zm_takeo_whi, // 0x5,
         prt_zm_nikolai, // 0x6,
-        hash_26072a3b34719d22, // 0x7,
+        prt_zm_diego_dlc0, // 0x7,
         prt_zm_richtofen_ofc, // 0x8,
         prt_zm_takeo, // 0x9,
         prt_zm_dempsey_ofc, // 0xa,
         prt_zm_brigadier, // 0xb,
-        hash_3e63362aea484e09, // 0xc,
+        prt_zm_stanton, // 0xc,
         prt_zm_nikolai_ofc, // 0xd,
         prt_zm_gunslinger, // 0xe,
-        hash_515977e191d13967, // 0xf,
+        prt_zm_psychic, // 0xf,
         prt_zm_richtofen, // 0x10,
-        hash_5a906d7137467771, // 0x11,
+        prt_zm_stanton_dlc0, // 0x11,
         prt_zm_butler, // 0x12,
         prt_zm_scarlett, // 0x13,
         prt_zm_takeo_ofc, // 0x14,
@@ -10990,15 +10990,15 @@ version 99 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x1ef78
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x20848, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x20849, size 0x8b
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x208d4, size 0x10
     bool extrabools[16];
     // offset 0x208e4, size 0x1
@@ -11024,11 +11024,11 @@ version 99 {
     // offset 0x208ee, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x208ef, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x20921, size 0x1
     bool completedfirsttimeflow;
     // offset 0x20922, size 0x2f
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x20951, size 0x7
     uint:1 __pad[7];
 }
@@ -11071,7 +11071,7 @@ version 98 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -11123,7 +11123,7 @@ version 98 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -11141,7 +11141,7 @@ version 98 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -11151,7 +11151,7 @@ version 98 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -11183,7 +11183,7 @@ version 98 {
     };
 
     // idx 0 members 149
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         tr_powersemi_t8_upgraded, // 0x1,
         pistol_topbreak_t8, // 0x2,
@@ -11210,7 +11210,7 @@ version 98 {
         hero_flamethrower_t8_lv3, // 0x17,
         shotgun_trenchgun_t8, // 0x18,
         ww_blundergat_t8, // 0x19,
-        hash_1b1df5c494f25984, // 0x1a,
+        shock_knuckles, // 0x1a,
         hero_gravityspikes_t8_lv3, // 0x1b,
         hero_gravityspikes_t8_lv2, // 0x1c,
         hero_gravityspikes_t8_lv1, // 0x1d,
@@ -11336,7 +11336,7 @@ version 98 {
     };
 
     // idx 1 members 115
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         hash_85ac8bd3ebb20e, // 0x0,
         tr_powersemi_t8_upgraded, // 0x1,
         pistol_topbreak_t8, // 0x2,
@@ -11356,7 +11356,7 @@ version 98 {
         bowie_knife, // 0x10,
         shotgun_trenchgun_t8, // 0x11,
         ww_blundergat_t8, // 0x12,
-        hash_1b1df5c494f25984, // 0x13,
+        shock_knuckles, // 0x13,
         lmg_spray_t8_upgraded, // 0x14,
         pistol_fullauto_t8, // 0x15,
         lmg_standard_t8_upgraded, // 0x16,
@@ -11455,7 +11455,7 @@ version 98 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -11476,7 +11476,7 @@ version 98 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -11526,7 +11526,7 @@ version 98 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -11580,7 +11580,7 @@ version 98 {
     };
 
     // idx 5 members 47
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -11631,7 +11631,7 @@ version 98 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -11647,22 +11647,22 @@ version 98 {
     enum zmcharacters {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_diego, // 0x1,
-        hash_14e91ceb9a7b3eb6, // 0x2,
-        hash_1a427f842f175b3c, // 0x3,
+        prt_zm_bruno_dlc0, // 0x2,
+        prt_zm_scarlett_dlc0, // 0x3,
         prt_zm_dempsey, // 0x4,
         prt_zm_takeo_whi, // 0x5,
         prt_zm_nikolai, // 0x6,
-        hash_26072a3b34719d22, // 0x7,
+        prt_zm_diego_dlc0, // 0x7,
         prt_zm_richtofen_ofc, // 0x8,
         prt_zm_takeo, // 0x9,
         prt_zm_dempsey_ofc, // 0xa,
         prt_zm_brigadier, // 0xb,
-        hash_3e63362aea484e09, // 0xc,
+        prt_zm_stanton, // 0xc,
         prt_zm_nikolai_ofc, // 0xd,
         prt_zm_gunslinger, // 0xe,
-        hash_515977e191d13967, // 0xf,
+        prt_zm_psychic, // 0xf,
         prt_zm_richtofen, // 0x10,
-        hash_5a906d7137467771, // 0x11,
+        prt_zm_stanton_dlc0, // 0x11,
         prt_zm_butler, // 0x12,
         prt_zm_scarlett, // 0x13,
         prt_zm_takeo_ofc, // 0x14,
@@ -11697,15 +11697,15 @@ version 98 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x21ea8
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x23778, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x23779, size 0x95
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x2380e, size 0x10
     bool extrabools[16];
     // offset 0x2381e, size 0x1
@@ -11731,11 +11731,11 @@ version 98 {
     // offset 0x23828, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x23829, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x2385b, size 0x1
     bool completedfirsttimeflow;
     // offset 0x2385c, size 0x2f
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x2388b, size 0x5
     uint:1 __pad[5];
 }
@@ -11778,7 +11778,7 @@ version 97 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -11830,7 +11830,7 @@ version 97 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -11848,7 +11848,7 @@ version 97 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -11858,7 +11858,7 @@ version 97 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -11890,7 +11890,7 @@ version 97 {
     };
 
     // idx 0 members 201
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -11931,7 +11931,7 @@ version 97 {
         hero_flamethrower_t8_lv3, // 0x25,
         shotgun_trenchgun_t8, // 0x26,
         ww_blundergat_t8, // 0x27,
-        hash_1b1df5c494f25984, // 0x28,
+        shock_knuckles, // 0x28,
         ww_blundergat_fire_t8_upgraded, // 0x29,
         hero_gravityspikes_t8_lv3, // 0x2a,
         hero_gravityspikes_t8_lv2, // 0x2b,
@@ -12095,7 +12095,7 @@ version 97 {
     };
 
     // idx 1 members 167
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -12129,7 +12129,7 @@ version 97 {
         bowie_knife, // 0x1e,
         shotgun_trenchgun_t8, // 0x1f,
         ww_blundergat_t8, // 0x20,
-        hash_1b1df5c494f25984, // 0x21,
+        shock_knuckles, // 0x21,
         ww_blundergat_fire_t8_upgraded, // 0x22,
         lmg_spray_t8_upgraded, // 0x23,
         pistol_fullauto_t8, // 0x24,
@@ -12266,7 +12266,7 @@ version 97 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -12287,7 +12287,7 @@ version 97 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -12337,7 +12337,7 @@ version 97 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -12391,7 +12391,7 @@ version 97 {
     };
 
     // idx 5 members 47
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -12442,7 +12442,7 @@ version 97 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -12458,22 +12458,22 @@ version 97 {
     enum zmcharacters {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_diego, // 0x1,
-        hash_14e91ceb9a7b3eb6, // 0x2,
-        hash_1a427f842f175b3c, // 0x3,
+        prt_zm_bruno_dlc0, // 0x2,
+        prt_zm_scarlett_dlc0, // 0x3,
         prt_zm_dempsey, // 0x4,
         prt_zm_takeo_whi, // 0x5,
         prt_zm_nikolai, // 0x6,
-        hash_26072a3b34719d22, // 0x7,
+        prt_zm_diego_dlc0, // 0x7,
         prt_zm_richtofen_ofc, // 0x8,
         prt_zm_takeo, // 0x9,
         prt_zm_dempsey_ofc, // 0xa,
         prt_zm_brigadier, // 0xb,
-        hash_3e63362aea484e09, // 0xc,
+        prt_zm_stanton, // 0xc,
         prt_zm_nikolai_ofc, // 0xd,
         prt_zm_gunslinger, // 0xe,
-        hash_515977e191d13967, // 0xf,
+        prt_zm_psychic, // 0xf,
         prt_zm_richtofen, // 0x10,
-        hash_5a906d7137467771, // 0x11,
+        prt_zm_stanton_dlc0, // 0x11,
         prt_zm_butler, // 0x12,
         prt_zm_scarlett, // 0x13,
         prt_zm_takeo_ofc, // 0x14,
@@ -12508,15 +12508,15 @@ version 97 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x31408
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x32cd8, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x32cd9, size 0xc9
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x32da2, size 0x10
     bool extrabools[16];
     // offset 0x32db2, size 0x1
@@ -12542,11 +12542,11 @@ version 97 {
     // offset 0x32dbc, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x32dbd, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x32def, size 0x1
     bool completedfirsttimeflow;
     // offset 0x32df0, size 0x2f
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x32e1f, size 0x1
     uint:1 __pad[1];
 }
@@ -12589,7 +12589,7 @@ version 96 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -12641,7 +12641,7 @@ version 96 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -12659,7 +12659,7 @@ version 96 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -12669,7 +12669,7 @@ version 96 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -12701,7 +12701,7 @@ version 96 {
     };
 
     // idx 0 members 201
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -12742,7 +12742,7 @@ version 96 {
         hero_flamethrower_t8_lv3, // 0x25,
         shotgun_trenchgun_t8, // 0x26,
         ww_blundergat_t8, // 0x27,
-        hash_1b1df5c494f25984, // 0x28,
+        shock_knuckles, // 0x28,
         ww_blundergat_fire_t8_upgraded, // 0x29,
         hero_gravityspikes_t8_lv3, // 0x2a,
         hero_gravityspikes_t8_lv2, // 0x2b,
@@ -12906,7 +12906,7 @@ version 96 {
     };
 
     // idx 1 members 167
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -12940,7 +12940,7 @@ version 96 {
         bowie_knife, // 0x1e,
         shotgun_trenchgun_t8, // 0x1f,
         ww_blundergat_t8, // 0x20,
-        hash_1b1df5c494f25984, // 0x21,
+        shock_knuckles, // 0x21,
         ww_blundergat_fire_t8_upgraded, // 0x22,
         lmg_spray_t8_upgraded, // 0x23,
         pistol_fullauto_t8, // 0x24,
@@ -13077,7 +13077,7 @@ version 96 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -13098,7 +13098,7 @@ version 96 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -13148,7 +13148,7 @@ version 96 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -13202,7 +13202,7 @@ version 96 {
     };
 
     // idx 5 members 46
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -13252,7 +13252,7 @@ version 96 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -13268,22 +13268,22 @@ version 96 {
     enum zmcharacters {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_diego, // 0x1,
-        hash_14e91ceb9a7b3eb6, // 0x2,
-        hash_1a427f842f175b3c, // 0x3,
+        prt_zm_bruno_dlc0, // 0x2,
+        prt_zm_scarlett_dlc0, // 0x3,
         prt_zm_dempsey, // 0x4,
         prt_zm_takeo_whi, // 0x5,
         prt_zm_nikolai, // 0x6,
-        hash_26072a3b34719d22, // 0x7,
+        prt_zm_diego_dlc0, // 0x7,
         prt_zm_richtofen_ofc, // 0x8,
         prt_zm_takeo, // 0x9,
         prt_zm_dempsey_ofc, // 0xa,
         prt_zm_brigadier, // 0xb,
-        hash_3e63362aea484e09, // 0xc,
+        prt_zm_stanton, // 0xc,
         prt_zm_nikolai_ofc, // 0xd,
         prt_zm_gunslinger, // 0xe,
-        hash_515977e191d13967, // 0xf,
+        prt_zm_psychic, // 0xf,
         prt_zm_richtofen, // 0x10,
-        hash_5a906d7137467771, // 0x11,
+        prt_zm_stanton_dlc0, // 0x11,
         prt_zm_butler, // 0x12,
         prt_zm_scarlett, // 0x13,
         prt_zm_takeo_ofc, // 0x14,
@@ -13318,15 +13318,15 @@ version 96 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x31408
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x32cd8, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x32cd9, size 0xc9
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x32da2, size 0x10
     bool extrabools[16];
     // offset 0x32db2, size 0x1
@@ -13352,11 +13352,11 @@ version 96 {
     // offset 0x32dbc, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x32dbd, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x32def, size 0x1
     bool completedfirsttimeflow;
     // offset 0x32df0, size 0x2e
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x32e1e, size 0x2
     uint:1 __pad[2];
 }
@@ -13399,7 +13399,7 @@ version 95 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -13451,7 +13451,7 @@ version 95 {
     // idx 9 members 7 size 0x4b8
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x40
@@ -13469,7 +13469,7 @@ version 95 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -13479,7 +13479,7 @@ version 95 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -13511,7 +13511,7 @@ version 95 {
     };
 
     // idx 0 members 199
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -13552,7 +13552,7 @@ version 95 {
         hero_flamethrower_t8_lv3, // 0x25,
         shotgun_trenchgun_t8, // 0x26,
         ww_blundergat_t8, // 0x27,
-        hash_1b1df5c494f25984, // 0x28,
+        shock_knuckles, // 0x28,
         ww_blundergat_fire_t8_upgraded, // 0x29,
         hero_gravityspikes_t8_lv3, // 0x2a,
         hero_gravityspikes_t8_lv2, // 0x2b,
@@ -13714,7 +13714,7 @@ version 95 {
     };
 
     // idx 1 members 165
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -13748,7 +13748,7 @@ version 95 {
         bowie_knife, // 0x1e,
         shotgun_trenchgun_t8, // 0x1f,
         ww_blundergat_t8, // 0x20,
-        hash_1b1df5c494f25984, // 0x21,
+        shock_knuckles, // 0x21,
         ww_blundergat_fire_t8_upgraded, // 0x22,
         lmg_spray_t8_upgraded, // 0x23,
         pistol_fullauto_t8, // 0x24,
@@ -13883,7 +13883,7 @@ version 95 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -13904,7 +13904,7 @@ version 95 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -13954,7 +13954,7 @@ version 95 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -14008,7 +14008,7 @@ version 95 {
     };
 
     // idx 5 members 46
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -14058,7 +14058,7 @@ version 95 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -14074,22 +14074,22 @@ version 95 {
     enum zmcharacters {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_diego, // 0x1,
-        hash_14e91ceb9a7b3eb6, // 0x2,
-        hash_1a427f842f175b3c, // 0x3,
+        prt_zm_bruno_dlc0, // 0x2,
+        prt_zm_scarlett_dlc0, // 0x3,
         prt_zm_dempsey, // 0x4,
         prt_zm_takeo_whi, // 0x5,
         prt_zm_nikolai, // 0x6,
-        hash_26072a3b34719d22, // 0x7,
+        prt_zm_diego_dlc0, // 0x7,
         prt_zm_richtofen_ofc, // 0x8,
         prt_zm_takeo, // 0x9,
         prt_zm_dempsey_ofc, // 0xa,
         prt_zm_brigadier, // 0xb,
-        hash_3e63362aea484e09, // 0xc,
+        prt_zm_stanton, // 0xc,
         prt_zm_nikolai_ofc, // 0xd,
         prt_zm_gunslinger, // 0xe,
-        hash_515977e191d13967, // 0xf,
+        prt_zm_psychic, // 0xf,
         prt_zm_richtofen, // 0x10,
-        hash_5a906d7137467771, // 0x11,
+        prt_zm_stanton_dlc0, // 0x11,
         prt_zm_butler, // 0x12,
         prt_zm_scarlett, // 0x13,
         prt_zm_takeo_ofc, // 0x14,
@@ -14124,15 +14124,15 @@ version 95 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x30a98
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x32368, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x32369, size 0xc7
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x32430, size 0x10
     bool extrabools[16];
     // offset 0x32440, size 0x1
@@ -14158,11 +14158,11 @@ version 95 {
     // offset 0x3244a, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x3244b, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x3247d, size 0x1
     bool completedfirsttimeflow;
     // offset 0x3247e, size 0x2e
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x324ac, size 0x4
     uint:1 __pad[4];
 }
@@ -14205,7 +14205,7 @@ version 94 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -14257,7 +14257,7 @@ version 94 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x200
@@ -14271,7 +14271,7 @@ version 94 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -14281,7 +14281,7 @@ version 94 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -14313,7 +14313,7 @@ version 94 {
     };
 
     // idx 0 members 199
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -14354,7 +14354,7 @@ version 94 {
         hero_flamethrower_t8_lv3, // 0x25,
         shotgun_trenchgun_t8, // 0x26,
         ww_blundergat_t8, // 0x27,
-        hash_1b1df5c494f25984, // 0x28,
+        shock_knuckles, // 0x28,
         ww_blundergat_fire_t8_upgraded, // 0x29,
         hero_gravityspikes_t8_lv3, // 0x2a,
         hero_gravityspikes_t8_lv2, // 0x2b,
@@ -14516,7 +14516,7 @@ version 94 {
     };
 
     // idx 1 members 165
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -14550,7 +14550,7 @@ version 94 {
         bowie_knife, // 0x1e,
         shotgun_trenchgun_t8, // 0x1f,
         ww_blundergat_t8, // 0x20,
-        hash_1b1df5c494f25984, // 0x21,
+        shock_knuckles, // 0x21,
         ww_blundergat_fire_t8_upgraded, // 0x22,
         lmg_spray_t8_upgraded, // 0x23,
         pistol_fullauto_t8, // 0x24,
@@ -14685,7 +14685,7 @@ version 94 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -14706,7 +14706,7 @@ version 94 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -14756,7 +14756,7 @@ version 94 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -14810,7 +14810,7 @@ version 94 {
     };
 
     // idx 5 members 46
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -14860,7 +14860,7 @@ version 94 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -14876,22 +14876,22 @@ version 94 {
     enum zmcharacters {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_diego, // 0x1,
-        hash_14e91ceb9a7b3eb6, // 0x2,
-        hash_1a427f842f175b3c, // 0x3,
+        prt_zm_bruno_dlc0, // 0x2,
+        prt_zm_scarlett_dlc0, // 0x3,
         prt_zm_dempsey, // 0x4,
         prt_zm_takeo_whi, // 0x5,
         prt_zm_nikolai, // 0x6,
-        hash_26072a3b34719d22, // 0x7,
+        prt_zm_diego_dlc0, // 0x7,
         prt_zm_richtofen_ofc, // 0x8,
         prt_zm_takeo, // 0x9,
         prt_zm_dempsey_ofc, // 0xa,
         prt_zm_brigadier, // 0xb,
-        hash_3e63362aea484e09, // 0xc,
+        prt_zm_stanton, // 0xc,
         prt_zm_nikolai_ofc, // 0xd,
         prt_zm_gunslinger, // 0xe,
-        hash_515977e191d13967, // 0xf,
+        prt_zm_psychic, // 0xf,
         prt_zm_richtofen, // 0x10,
-        hash_5a906d7137467771, // 0x11,
+        prt_zm_stanton_dlc0, // 0x11,
         prt_zm_butler, // 0x12,
         prt_zm_scarlett, // 0x13,
         prt_zm_takeo_ofc, // 0x14,
@@ -14926,15 +14926,15 @@ version 94 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x19758
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x1b028, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x1b029, size 0xc7
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1b0f0, size 0x10
     bool extrabools[16];
     // offset 0x1b100, size 0x1
@@ -14960,11 +14960,11 @@ version 94 {
     // offset 0x1b10a, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x1b10b, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1b13d, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1b13e, size 0x2e
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x1b16c, size 0x4
     uint:1 __pad[4];
 }
@@ -15007,7 +15007,7 @@ version 93 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -15059,7 +15059,7 @@ version 93 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x200
@@ -15073,7 +15073,7 @@ version 93 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -15083,7 +15083,7 @@ version 93 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -15115,7 +15115,7 @@ version 93 {
     };
 
     // idx 0 members 199
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -15156,7 +15156,7 @@ version 93 {
         hero_flamethrower_t8_lv3, // 0x25,
         shotgun_trenchgun_t8, // 0x26,
         ww_blundergat_t8, // 0x27,
-        hash_1b1df5c494f25984, // 0x28,
+        shock_knuckles, // 0x28,
         ww_blundergat_fire_t8_upgraded, // 0x29,
         hero_gravityspikes_t8_lv3, // 0x2a,
         hero_gravityspikes_t8_lv2, // 0x2b,
@@ -15318,7 +15318,7 @@ version 93 {
     };
 
     // idx 1 members 165
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -15352,7 +15352,7 @@ version 93 {
         bowie_knife, // 0x1e,
         shotgun_trenchgun_t8, // 0x1f,
         ww_blundergat_t8, // 0x20,
-        hash_1b1df5c494f25984, // 0x21,
+        shock_knuckles, // 0x21,
         ww_blundergat_fire_t8_upgraded, // 0x22,
         lmg_spray_t8_upgraded, // 0x23,
         pistol_fullauto_t8, // 0x24,
@@ -15487,7 +15487,7 @@ version 93 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -15508,7 +15508,7 @@ version 93 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -15558,7 +15558,7 @@ version 93 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -15612,7 +15612,7 @@ version 93 {
     };
 
     // idx 5 members 45
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -15661,7 +15661,7 @@ version 93 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -15677,22 +15677,22 @@ version 93 {
     enum zmcharacters {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_diego, // 0x1,
-        hash_14e91ceb9a7b3eb6, // 0x2,
-        hash_1a427f842f175b3c, // 0x3,
+        prt_zm_bruno_dlc0, // 0x2,
+        prt_zm_scarlett_dlc0, // 0x3,
         prt_zm_dempsey, // 0x4,
         prt_zm_takeo_whi, // 0x5,
         prt_zm_nikolai, // 0x6,
-        hash_26072a3b34719d22, // 0x7,
+        prt_zm_diego_dlc0, // 0x7,
         prt_zm_richtofen_ofc, // 0x8,
         prt_zm_takeo, // 0x9,
         prt_zm_dempsey_ofc, // 0xa,
         prt_zm_brigadier, // 0xb,
-        hash_3e63362aea484e09, // 0xc,
+        prt_zm_stanton, // 0xc,
         prt_zm_nikolai_ofc, // 0xd,
         prt_zm_gunslinger, // 0xe,
-        hash_515977e191d13967, // 0xf,
+        prt_zm_psychic, // 0xf,
         prt_zm_richtofen, // 0x10,
-        hash_5a906d7137467771, // 0x11,
+        prt_zm_stanton_dlc0, // 0x11,
         prt_zm_butler, // 0x12,
         prt_zm_scarlett, // 0x13,
         prt_zm_takeo_ofc, // 0x14,
@@ -15727,15 +15727,15 @@ version 93 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x19758
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x1b028, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x1b029, size 0xc7
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1b0f0, size 0x10
     bool extrabools[16];
     // offset 0x1b100, size 0x1
@@ -15761,11 +15761,11 @@ version 93 {
     // offset 0x1b10a, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x1b10b, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1b13d, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1b13e, size 0x2d
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x1b16b, size 0x5
     uint:1 __pad[5];
 }
@@ -15808,7 +15808,7 @@ version 92 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -15860,7 +15860,7 @@ version 92 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x200
@@ -15874,7 +15874,7 @@ version 92 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -15884,7 +15884,7 @@ version 92 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -15916,7 +15916,7 @@ version 92 {
     };
 
     // idx 0 members 199
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -15957,7 +15957,7 @@ version 92 {
         hero_flamethrower_t8_lv3, // 0x25,
         shotgun_trenchgun_t8, // 0x26,
         ww_blundergat_t8, // 0x27,
-        hash_1b1df5c494f25984, // 0x28,
+        shock_knuckles, // 0x28,
         ww_blundergat_fire_t8_upgraded, // 0x29,
         hero_gravityspikes_t8_lv3, // 0x2a,
         hero_gravityspikes_t8_lv2, // 0x2b,
@@ -16119,7 +16119,7 @@ version 92 {
     };
 
     // idx 1 members 165
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -16153,7 +16153,7 @@ version 92 {
         bowie_knife, // 0x1e,
         shotgun_trenchgun_t8, // 0x1f,
         ww_blundergat_t8, // 0x20,
-        hash_1b1df5c494f25984, // 0x21,
+        shock_knuckles, // 0x21,
         ww_blundergat_fire_t8_upgraded, // 0x22,
         lmg_spray_t8_upgraded, // 0x23,
         pistol_fullauto_t8, // 0x24,
@@ -16288,7 +16288,7 @@ version 92 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -16309,7 +16309,7 @@ version 92 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -16359,7 +16359,7 @@ version 92 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -16413,7 +16413,7 @@ version 92 {
     };
 
     // idx 5 members 44
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -16461,7 +16461,7 @@ version 92 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -16477,22 +16477,22 @@ version 92 {
     enum zmcharacters {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_diego, // 0x1,
-        hash_14e91ceb9a7b3eb6, // 0x2,
-        hash_1a427f842f175b3c, // 0x3,
+        prt_zm_bruno_dlc0, // 0x2,
+        prt_zm_scarlett_dlc0, // 0x3,
         prt_zm_dempsey, // 0x4,
         prt_zm_takeo_whi, // 0x5,
         prt_zm_nikolai, // 0x6,
-        hash_26072a3b34719d22, // 0x7,
+        prt_zm_diego_dlc0, // 0x7,
         prt_zm_richtofen_ofc, // 0x8,
         prt_zm_takeo, // 0x9,
         prt_zm_dempsey_ofc, // 0xa,
         prt_zm_brigadier, // 0xb,
-        hash_3e63362aea484e09, // 0xc,
+        prt_zm_stanton, // 0xc,
         prt_zm_nikolai_ofc, // 0xd,
         prt_zm_gunslinger, // 0xe,
-        hash_515977e191d13967, // 0xf,
+        prt_zm_psychic, // 0xf,
         prt_zm_richtofen, // 0x10,
-        hash_5a906d7137467771, // 0x11,
+        prt_zm_stanton_dlc0, // 0x11,
         prt_zm_butler, // 0x12,
         prt_zm_scarlett, // 0x13,
         prt_zm_takeo_ofc, // 0x14,
@@ -16527,15 +16527,15 @@ version 92 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x19758
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x1b028, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x1b029, size 0xc7
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1b0f0, size 0x10
     bool extrabools[16];
     // offset 0x1b100, size 0x1
@@ -16561,11 +16561,11 @@ version 92 {
     // offset 0x1b10a, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x1b10b, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1b13d, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1b13e, size 0x2c
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x1b16a, size 0x6
     uint:1 __pad[6];
 }
@@ -16608,7 +16608,7 @@ version 91 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -16660,7 +16660,7 @@ version 91 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x200
@@ -16674,7 +16674,7 @@ version 91 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -16684,7 +16684,7 @@ version 91 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -16716,7 +16716,7 @@ version 91 {
     };
 
     // idx 0 members 199
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -16757,7 +16757,7 @@ version 91 {
         hero_flamethrower_t8_lv3, // 0x25,
         shotgun_trenchgun_t8, // 0x26,
         ww_blundergat_t8, // 0x27,
-        hash_1b1df5c494f25984, // 0x28,
+        shock_knuckles, // 0x28,
         ww_blundergat_fire_t8_upgraded, // 0x29,
         hero_gravityspikes_t8_lv3, // 0x2a,
         hero_gravityspikes_t8_lv2, // 0x2b,
@@ -16919,7 +16919,7 @@ version 91 {
     };
 
     // idx 1 members 165
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -16953,7 +16953,7 @@ version 91 {
         bowie_knife, // 0x1e,
         shotgun_trenchgun_t8, // 0x1f,
         ww_blundergat_t8, // 0x20,
-        hash_1b1df5c494f25984, // 0x21,
+        shock_knuckles, // 0x21,
         ww_blundergat_fire_t8_upgraded, // 0x22,
         lmg_spray_t8_upgraded, // 0x23,
         pistol_fullauto_t8, // 0x24,
@@ -17088,7 +17088,7 @@ version 91 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -17109,7 +17109,7 @@ version 91 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -17159,7 +17159,7 @@ version 91 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -17213,7 +17213,7 @@ version 91 {
     };
 
     // idx 5 members 43
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -17260,7 +17260,7 @@ version 91 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -17276,22 +17276,22 @@ version 91 {
     enum zmcharacters {
         prt_zm_dempsey_whi, // 0x0,
         prt_zm_diego, // 0x1,
-        hash_14e91ceb9a7b3eb6, // 0x2,
-        hash_1a427f842f175b3c, // 0x3,
+        prt_zm_bruno_dlc0, // 0x2,
+        prt_zm_scarlett_dlc0, // 0x3,
         prt_zm_dempsey, // 0x4,
         prt_zm_takeo_whi, // 0x5,
         prt_zm_nikolai, // 0x6,
-        hash_26072a3b34719d22, // 0x7,
+        prt_zm_diego_dlc0, // 0x7,
         prt_zm_richtofen_ofc, // 0x8,
         prt_zm_takeo, // 0x9,
         prt_zm_dempsey_ofc, // 0xa,
         prt_zm_brigadier, // 0xb,
-        hash_3e63362aea484e09, // 0xc,
+        prt_zm_stanton, // 0xc,
         prt_zm_nikolai_ofc, // 0xd,
         prt_zm_gunslinger, // 0xe,
-        hash_515977e191d13967, // 0xf,
+        prt_zm_psychic, // 0xf,
         prt_zm_richtofen, // 0x10,
-        hash_5a906d7137467771, // 0x11,
+        prt_zm_stanton_dlc0, // 0x11,
         prt_zm_butler, // 0x12,
         prt_zm_scarlett, // 0x13,
         prt_zm_takeo_ofc, // 0x14,
@@ -17326,15 +17326,15 @@ version 91 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x19758
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x1b028, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x1b029, size 0xc7
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1b0f0, size 0x10
     bool extrabools[16];
     // offset 0x1b100, size 0x1
@@ -17360,11 +17360,11 @@ version 91 {
     // offset 0x1b10a, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x1b10b, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1b13d, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1b13e, size 0x2b
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x1b169, size 0x7
     uint:1 __pad[7];
 }
@@ -17407,7 +17407,7 @@ version 90 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -17459,7 +17459,7 @@ version 90 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2e
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2e, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x36, size 0x200
@@ -17473,7 +17473,7 @@ version 90 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -17483,7 +17483,7 @@ version 90 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -17515,7 +17515,7 @@ version 90 {
     };
 
     // idx 0 members 201
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -17556,7 +17556,7 @@ version 90 {
         hero_flamethrower_t8_lv3, // 0x25,
         shotgun_trenchgun_t8, // 0x26,
         ww_blundergat_t8, // 0x27,
-        hash_1b1df5c494f25984, // 0x28,
+        shock_knuckles, // 0x28,
         ww_blundergat_fire_t8_upgraded, // 0x29,
         hero_gravityspikes_t8_lv3, // 0x2a,
         hero_gravityspikes_t8_lv2, // 0x2b,
@@ -17720,7 +17720,7 @@ version 90 {
     };
 
     // idx 1 members 167
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -17754,7 +17754,7 @@ version 90 {
         bowie_knife, // 0x1e,
         shotgun_trenchgun_t8, // 0x1f,
         ww_blundergat_t8, // 0x20,
-        hash_1b1df5c494f25984, // 0x21,
+        shock_knuckles, // 0x21,
         ww_blundergat_fire_t8_upgraded, // 0x22,
         lmg_spray_t8_upgraded, // 0x23,
         pistol_fullauto_t8, // 0x24,
@@ -17891,7 +17891,7 @@ version 90 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -17912,7 +17912,7 @@ version 90 {
     };
 
     // idx 3 members 46
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -17962,7 +17962,7 @@ version 90 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -18016,7 +18016,7 @@ version 90 {
     };
 
     // idx 5 members 43
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -18063,7 +18063,7 @@ version 90 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -18078,21 +18078,21 @@ version 90 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -18125,15 +18125,15 @@ version 90 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x19c48
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x1b518, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x1b519, size 0xc9
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1b5e2, size 0x10
     bool extrabools[16];
     // offset 0x1b5f2, size 0x1
@@ -18159,11 +18159,11 @@ version 90 {
     // offset 0x1b5fc, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x1b5fd, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1b62f, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1b630, size 0x2b
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x1b65b, size 0x5
     uint:1 __pad[5];
 }
@@ -18206,7 +18206,7 @@ version 89 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -18258,7 +18258,7 @@ version 89 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2d
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2d, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x35, size 0x200
@@ -18272,7 +18272,7 @@ version 89 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -18282,7 +18282,7 @@ version 89 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -18314,7 +18314,7 @@ version 89 {
     };
 
     // idx 0 members 201
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -18355,7 +18355,7 @@ version 89 {
         hero_flamethrower_t8_lv3, // 0x25,
         shotgun_trenchgun_t8, // 0x26,
         ww_blundergat_t8, // 0x27,
-        hash_1b1df5c494f25984, // 0x28,
+        shock_knuckles, // 0x28,
         ww_blundergat_fire_t8_upgraded, // 0x29,
         hero_gravityspikes_t8_lv3, // 0x2a,
         hero_gravityspikes_t8_lv2, // 0x2b,
@@ -18519,7 +18519,7 @@ version 89 {
     };
 
     // idx 1 members 167
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -18553,7 +18553,7 @@ version 89 {
         bowie_knife, // 0x1e,
         shotgun_trenchgun_t8, // 0x1f,
         ww_blundergat_t8, // 0x20,
-        hash_1b1df5c494f25984, // 0x21,
+        shock_knuckles, // 0x21,
         ww_blundergat_fire_t8_upgraded, // 0x22,
         lmg_spray_t8_upgraded, // 0x23,
         pistol_fullauto_t8, // 0x24,
@@ -18690,7 +18690,7 @@ version 89 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -18711,7 +18711,7 @@ version 89 {
     };
 
     // idx 3 members 45
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -18760,7 +18760,7 @@ version 89 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -18814,7 +18814,7 @@ version 89 {
     };
 
     // idx 5 members 43
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -18861,7 +18861,7 @@ version 89 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -18876,21 +18876,21 @@ version 89 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -18923,15 +18923,15 @@ version 89 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x19c48
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x1b518, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x1b519, size 0xc9
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1b5e2, size 0x10
     bool extrabools[16];
     // offset 0x1b5f2, size 0x1
@@ -18957,11 +18957,11 @@ version 89 {
     // offset 0x1b5fc, size 0x1
     bool hash_4bfb4b2d10866d54;
     // offset 0x1b5fd, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1b62f, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1b630, size 0x2b
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x1b65b, size 0x5
     uint:1 __pad[5];
 }
@@ -19004,7 +19004,7 @@ version 88 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -19056,7 +19056,7 @@ version 88 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2d
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2d, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x35, size 0x200
@@ -19070,7 +19070,7 @@ version 88 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -19080,7 +19080,7 @@ version 88 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -19112,7 +19112,7 @@ version 88 {
     };
 
     // idx 0 members 201
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -19153,7 +19153,7 @@ version 88 {
         hero_flamethrower_t8_lv3, // 0x25,
         shotgun_trenchgun_t8, // 0x26,
         ww_blundergat_t8, // 0x27,
-        hash_1b1df5c494f25984, // 0x28,
+        shock_knuckles, // 0x28,
         ww_blundergat_fire_t8_upgraded, // 0x29,
         hero_gravityspikes_t8_lv3, // 0x2a,
         hero_gravityspikes_t8_lv2, // 0x2b,
@@ -19317,7 +19317,7 @@ version 88 {
     };
 
     // idx 1 members 167
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -19351,7 +19351,7 @@ version 88 {
         bowie_knife, // 0x1e,
         shotgun_trenchgun_t8, // 0x1f,
         ww_blundergat_t8, // 0x20,
-        hash_1b1df5c494f25984, // 0x21,
+        shock_knuckles, // 0x21,
         ww_blundergat_fire_t8_upgraded, // 0x22,
         lmg_spray_t8_upgraded, // 0x23,
         pistol_fullauto_t8, // 0x24,
@@ -19488,7 +19488,7 @@ version 88 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -19509,7 +19509,7 @@ version 88 {
     };
 
     // idx 3 members 45
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -19558,7 +19558,7 @@ version 88 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -19612,7 +19612,7 @@ version 88 {
     };
 
     // idx 5 members 43
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -19659,7 +19659,7 @@ version 88 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -19674,21 +19674,21 @@ version 88 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -19721,15 +19721,15 @@ version 88 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x19c48
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x1b518, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x1b519, size 0xc9
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1b5e2, size 0x10
     bool extrabools[16];
     // offset 0x1b5f2, size 0x1
@@ -19755,11 +19755,11 @@ version 88 {
     // offset 0x1b5fc, size 0x1
     bool hash_289e1da441035808;
     // offset 0x1b5fd, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1b62f, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1b630, size 0x2b
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x1b65b, size 0x5
     uint:1 __pad[5];
 }
@@ -19802,7 +19802,7 @@ version 87 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -19854,7 +19854,7 @@ version 87 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2d
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2d, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x35, size 0x200
@@ -19868,7 +19868,7 @@ version 87 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -19878,7 +19878,7 @@ version 87 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -19910,7 +19910,7 @@ version 87 {
     };
 
     // idx 0 members 201
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -19951,7 +19951,7 @@ version 87 {
         hero_flamethrower_t8_lv3, // 0x25,
         shotgun_trenchgun_t8, // 0x26,
         ww_blundergat_t8, // 0x27,
-        hash_1b1df5c494f25984, // 0x28,
+        shock_knuckles, // 0x28,
         ww_blundergat_fire_t8_upgraded, // 0x29,
         hero_gravityspikes_t8_lv3, // 0x2a,
         hero_gravityspikes_t8_lv2, // 0x2b,
@@ -20115,7 +20115,7 @@ version 87 {
     };
 
     // idx 1 members 138
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -20142,7 +20142,7 @@ version 87 {
         bowie_knife, // 0x17,
         shotgun_trenchgun_t8, // 0x18,
         ww_blundergat_t8, // 0x19,
-        hash_1b1df5c494f25984, // 0x1a,
+        shock_knuckles, // 0x1a,
         ww_blundergat_fire_t8_upgraded, // 0x1b,
         lmg_spray_t8_upgraded, // 0x1c,
         pistol_fullauto_t8, // 0x1d,
@@ -20257,7 +20257,7 @@ version 87 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -20278,7 +20278,7 @@ version 87 {
     };
 
     // idx 3 members 45
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -20327,7 +20327,7 @@ version 87 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -20381,7 +20381,7 @@ version 87 {
     };
 
     // idx 5 members 43
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -20428,7 +20428,7 @@ version 87 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -20443,21 +20443,21 @@ version 87 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -20490,15 +20490,15 @@ version 87 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x154b0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x16d80, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x16d81, size 0xc9
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x16e4a, size 0x10
     bool extrabools[16];
     // offset 0x16e5a, size 0x1
@@ -20524,11 +20524,11 @@ version 87 {
     // offset 0x16e64, size 0x1
     bool hash_289e1da441035808;
     // offset 0x16e65, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x16e97, size 0x1
     bool completedfirsttimeflow;
     // offset 0x16e98, size 0x2b
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x16ec3, size 0x5
     uint:1 __pad[5];
 }
@@ -20571,7 +20571,7 @@ version 86 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -20623,7 +20623,7 @@ version 86 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2d
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2d, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x35, size 0x200
@@ -20637,7 +20637,7 @@ version 86 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -20647,7 +20647,7 @@ version 86 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -20679,7 +20679,7 @@ version 86 {
     };
 
     // idx 0 members 195
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -20719,7 +20719,7 @@ version 86 {
         hero_flamethrower_t8_lv3, // 0x24,
         shotgun_trenchgun_t8, // 0x25,
         ww_blundergat_t8, // 0x26,
-        hash_1b1df5c494f25984, // 0x27,
+        shock_knuckles, // 0x27,
         ww_blundergat_fire_t8_upgraded, // 0x28,
         hero_gravityspikes_t8_lv3, // 0x29,
         hero_gravityspikes_t8_lv2, // 0x2a,
@@ -20878,7 +20878,7 @@ version 86 {
     };
 
     // idx 1 members 132
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -20904,7 +20904,7 @@ version 86 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         pistol_fullauto_t8, // 0x1c,
@@ -21014,7 +21014,7 @@ version 86 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -21035,7 +21035,7 @@ version 86 {
     };
 
     // idx 3 members 45
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -21084,7 +21084,7 @@ version 86 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -21138,7 +21138,7 @@ version 86 {
     };
 
     // idx 5 members 43
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -21185,7 +21185,7 @@ version 86 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -21200,21 +21200,21 @@ version 86 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -21247,15 +21247,15 @@ version 86 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x145e0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x15eb0, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x15eb1, size 0xc3
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x15f74, size 0x10
     bool extrabools[16];
     // offset 0x15f84, size 0x1
@@ -21281,11 +21281,11 @@ version 86 {
     // offset 0x15f8e, size 0x1
     bool hash_289e1da441035808;
     // offset 0x15f8f, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x15fc1, size 0x1
     bool completedfirsttimeflow;
     // offset 0x15fc2, size 0x2b
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x15fed, size 0x3
     uint:1 __pad[3];
 }
@@ -21328,7 +21328,7 @@ version 85 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -21380,7 +21380,7 @@ version 85 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -21394,7 +21394,7 @@ version 85 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -21404,7 +21404,7 @@ version 85 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -21436,7 +21436,7 @@ version 85 {
     };
 
     // idx 0 members 193
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -21476,7 +21476,7 @@ version 85 {
         hero_flamethrower_t8_lv3, // 0x24,
         shotgun_trenchgun_t8, // 0x25,
         ww_blundergat_t8, // 0x26,
-        hash_1b1df5c494f25984, // 0x27,
+        shock_knuckles, // 0x27,
         ww_blundergat_fire_t8_upgraded, // 0x28,
         hero_gravityspikes_t8_lv3, // 0x29,
         hero_gravityspikes_t8_lv2, // 0x2a,
@@ -21633,7 +21633,7 @@ version 85 {
     };
 
     // idx 1 members 132
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -21659,7 +21659,7 @@ version 85 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         pistol_fullauto_t8, // 0x1c,
@@ -21769,7 +21769,7 @@ version 85 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -21790,7 +21790,7 @@ version 85 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -21838,7 +21838,7 @@ version 85 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -21892,7 +21892,7 @@ version 85 {
     };
 
     // idx 5 members 43
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -21939,7 +21939,7 @@ version 85 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -21954,21 +21954,21 @@ version 85 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -22001,15 +22001,15 @@ version 85 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x145e0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x15eb0, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x15eb1, size 0xc1
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x15f72, size 0x10
     bool extrabools[16];
     // offset 0x15f82, size 0x1
@@ -22035,11 +22035,11 @@ version 85 {
     // offset 0x15f8c, size 0x1
     bool hash_289e1da441035808;
     // offset 0x15f8d, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x15fbf, size 0x1
     bool completedfirsttimeflow;
     // offset 0x15fc0, size 0x2b
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x15feb, size 0x5
     uint:1 __pad[5];
 }
@@ -22082,7 +22082,7 @@ version 84 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -22134,7 +22134,7 @@ version 84 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -22148,7 +22148,7 @@ version 84 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -22158,7 +22158,7 @@ version 84 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -22190,7 +22190,7 @@ version 84 {
     };
 
     // idx 0 members 193
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -22230,7 +22230,7 @@ version 84 {
         hero_flamethrower_t8_lv3, // 0x24,
         shotgun_trenchgun_t8, // 0x25,
         ww_blundergat_t8, // 0x26,
-        hash_1b1df5c494f25984, // 0x27,
+        shock_knuckles, // 0x27,
         ww_blundergat_fire_t8_upgraded, // 0x28,
         hero_gravityspikes_t8_lv3, // 0x29,
         hero_gravityspikes_t8_lv2, // 0x2a,
@@ -22387,7 +22387,7 @@ version 84 {
     };
 
     // idx 1 members 132
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -22413,7 +22413,7 @@ version 84 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         pistol_fullauto_t8, // 0x1c,
@@ -22523,7 +22523,7 @@ version 84 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -22544,7 +22544,7 @@ version 84 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -22592,7 +22592,7 @@ version 84 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -22646,7 +22646,7 @@ version 84 {
     };
 
     // idx 5 members 43
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -22693,7 +22693,7 @@ version 84 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -22708,21 +22708,21 @@ version 84 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -22755,15 +22755,15 @@ version 84 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x145e0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x15eb0, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x15eb1, size 0xc1
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x15f72, size 0x10
     bool extrabools[16];
     // offset 0x15f82, size 0x1
@@ -22787,11 +22787,11 @@ version 84 {
     // offset 0x15f8b, size 0x1
     bool hash_289e1da441035808;
     // offset 0x15f8c, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x15fbe, size 0x1
     bool completedfirsttimeflow;
     // offset 0x15fbf, size 0x2b
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x15fea, size 0x6
     uint:1 __pad[6];
 }
@@ -22834,7 +22834,7 @@ version 83 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -22886,7 +22886,7 @@ version 83 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -22900,7 +22900,7 @@ version 83 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -22910,7 +22910,7 @@ version 83 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -22942,7 +22942,7 @@ version 83 {
     };
 
     // idx 0 members 191
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -22982,7 +22982,7 @@ version 83 {
         hero_flamethrower_t8_lv3, // 0x24,
         shotgun_trenchgun_t8, // 0x25,
         ww_blundergat_t8, // 0x26,
-        hash_1b1df5c494f25984, // 0x27,
+        shock_knuckles, // 0x27,
         ww_blundergat_fire_t8_upgraded, // 0x28,
         hero_gravityspikes_t8_lv3, // 0x29,
         hero_gravityspikes_t8_lv2, // 0x2a,
@@ -23137,7 +23137,7 @@ version 83 {
     };
 
     // idx 1 members 132
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -23163,7 +23163,7 @@ version 83 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         pistol_fullauto_t8, // 0x1c,
@@ -23273,7 +23273,7 @@ version 83 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -23294,7 +23294,7 @@ version 83 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -23342,7 +23342,7 @@ version 83 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -23396,7 +23396,7 @@ version 83 {
     };
 
     // idx 5 members 43
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -23443,7 +23443,7 @@ version 83 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -23458,21 +23458,21 @@ version 83 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -23505,15 +23505,15 @@ version 83 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x145e0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x15eb0, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x15eb1, size 0xbf
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x15f70, size 0x10
     bool extrabools[16];
     // offset 0x15f80, size 0x1
@@ -23537,11 +23537,11 @@ version 83 {
     // offset 0x15f89, size 0x1
     bool hash_289e1da441035808;
     // offset 0x15f8a, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x15fbc, size 0x1
     bool completedfirsttimeflow;
     // offset 0x15fbd, size 0x2b
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
 }
 
 /////////////////////////////////////////////////
@@ -23582,7 +23582,7 @@ version 82 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -23634,7 +23634,7 @@ version 82 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -23648,7 +23648,7 @@ version 82 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -23658,7 +23658,7 @@ version 82 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -23690,7 +23690,7 @@ version 82 {
     };
 
     // idx 0 members 183
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -23725,7 +23725,7 @@ version 82 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -23877,7 +23877,7 @@ version 82 {
     };
 
     // idx 1 members 132
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -23903,7 +23903,7 @@ version 82 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         pistol_fullauto_t8, // 0x1c,
@@ -24013,7 +24013,7 @@ version 82 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -24034,7 +24034,7 @@ version 82 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -24082,7 +24082,7 @@ version 82 {
     };
 
     // idx 4 members 50
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -24136,7 +24136,7 @@ version 82 {
     };
 
     // idx 5 members 43
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -24183,7 +24183,7 @@ version 82 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -24198,21 +24198,21 @@ version 82 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -24245,15 +24245,15 @@ version 82 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x145e0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x15eb0, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x15eb1, size 0xb7
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x15f68, size 0x10
     bool extrabools[16];
     // offset 0x15f78, size 0x1
@@ -24277,11 +24277,11 @@ version 82 {
     // offset 0x15f81, size 0x1
     bool hash_289e1da441035808;
     // offset 0x15f82, size 0x32
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x15fb4, size 0x1
     bool completedfirsttimeflow;
     // offset 0x15fb5, size 0x2b
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
 }
 
 /////////////////////////////////////////////////
@@ -24322,7 +24322,7 @@ version 81 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -24374,7 +24374,7 @@ version 81 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -24388,7 +24388,7 @@ version 81 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -24398,7 +24398,7 @@ version 81 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -24430,7 +24430,7 @@ version 81 {
     };
 
     // idx 0 members 183
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -24465,7 +24465,7 @@ version 81 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -24617,7 +24617,7 @@ version 81 {
     };
 
     // idx 1 members 132
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -24643,7 +24643,7 @@ version 81 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         pistol_fullauto_t8, // 0x1c,
@@ -24753,7 +24753,7 @@ version 81 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -24774,7 +24774,7 @@ version 81 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -24822,7 +24822,7 @@ version 81 {
     };
 
     // idx 4 members 49
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -24875,7 +24875,7 @@ version 81 {
     };
 
     // idx 5 members 43
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -24922,7 +24922,7 @@ version 81 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -24937,21 +24937,21 @@ version 81 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -24984,15 +24984,15 @@ version 81 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x145e0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x15eb0, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x15eb1, size 0xb7
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x15f68, size 0x10
     bool extrabools[16];
     // offset 0x15f78, size 0x1
@@ -25016,11 +25016,11 @@ version 81 {
     // offset 0x15f81, size 0x1
     bool hash_289e1da441035808;
     // offset 0x15f82, size 0x31
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x15fb3, size 0x1
     bool completedfirsttimeflow;
     // offset 0x15fb4, size 0x2b
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x15fdf, size 0x1
     uint:1 __pad[1];
 }
@@ -25063,7 +25063,7 @@ version 80 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -25115,7 +25115,7 @@ version 80 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -25129,7 +25129,7 @@ version 80 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -25139,7 +25139,7 @@ version 80 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -25171,7 +25171,7 @@ version 80 {
     };
 
     // idx 0 members 183
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -25206,7 +25206,7 @@ version 80 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -25358,7 +25358,7 @@ version 80 {
     };
 
     // idx 1 members 132
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -25384,7 +25384,7 @@ version 80 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         pistol_fullauto_t8, // 0x1c,
@@ -25494,7 +25494,7 @@ version 80 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -25515,7 +25515,7 @@ version 80 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -25563,7 +25563,7 @@ version 80 {
     };
 
     // idx 4 members 47
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -25614,7 +25614,7 @@ version 80 {
     };
 
     // idx 5 members 42
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -25660,7 +25660,7 @@ version 80 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -25675,21 +25675,21 @@ version 80 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -25722,15 +25722,15 @@ version 80 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x145e0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x15eb0, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x15eb1, size 0xb7
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x15f68, size 0x10
     bool extrabools[16];
     // offset 0x15f78, size 0x1
@@ -25754,11 +25754,11 @@ version 80 {
     // offset 0x15f81, size 0x1
     bool hash_289e1da441035808;
     // offset 0x15f82, size 0x2f
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x15fb1, size 0x1
     bool completedfirsttimeflow;
     // offset 0x15fb2, size 0x2a
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x15fdc, size 0x4
     uint:1 __pad[4];
 }
@@ -25801,7 +25801,7 @@ version 79 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -25853,7 +25853,7 @@ version 79 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -25867,7 +25867,7 @@ version 79 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -25877,7 +25877,7 @@ version 79 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -25909,7 +25909,7 @@ version 79 {
     };
 
     // idx 0 members 183
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -25944,7 +25944,7 @@ version 79 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -26096,7 +26096,7 @@ version 79 {
     };
 
     // idx 1 members 132
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -26122,7 +26122,7 @@ version 79 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         pistol_fullauto_t8, // 0x1c,
@@ -26232,7 +26232,7 @@ version 79 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -26253,7 +26253,7 @@ version 79 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -26301,7 +26301,7 @@ version 79 {
     };
 
     // idx 4 members 47
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -26352,7 +26352,7 @@ version 79 {
     };
 
     // idx 5 members 41
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -26397,7 +26397,7 @@ version 79 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -26412,21 +26412,21 @@ version 79 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -26459,15 +26459,15 @@ version 79 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x145e0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x15eb0, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x15eb1, size 0xb7
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x15f68, size 0x10
     bool extrabools[16];
     // offset 0x15f78, size 0x1
@@ -26491,11 +26491,11 @@ version 79 {
     // offset 0x15f81, size 0x1
     bool hash_289e1da441035808;
     // offset 0x15f82, size 0x2f
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x15fb1, size 0x1
     bool completedfirsttimeflow;
     // offset 0x15fb2, size 0x29
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x15fdb, size 0x5
     uint:1 __pad[5];
 }
@@ -26538,7 +26538,7 @@ version 78 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -26590,7 +26590,7 @@ version 78 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -26604,7 +26604,7 @@ version 78 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -26614,7 +26614,7 @@ version 78 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -26646,7 +26646,7 @@ version 78 {
     };
 
     // idx 0 members 183
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -26681,7 +26681,7 @@ version 78 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -26833,7 +26833,7 @@ version 78 {
     };
 
     // idx 1 members 132
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -26859,7 +26859,7 @@ version 78 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         pistol_fullauto_t8, // 0x1c,
@@ -26969,7 +26969,7 @@ version 78 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -26990,7 +26990,7 @@ version 78 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -27038,7 +27038,7 @@ version 78 {
     };
 
     // idx 4 members 47
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -27089,7 +27089,7 @@ version 78 {
     };
 
     // idx 5 members 40
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -27133,7 +27133,7 @@ version 78 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -27148,21 +27148,21 @@ version 78 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -27195,15 +27195,15 @@ version 78 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x145e0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x15eb0, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x15eb1, size 0xb7
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x15f68, size 0x10
     bool extrabools[16];
     // offset 0x15f78, size 0x1
@@ -27227,11 +27227,11 @@ version 78 {
     // offset 0x15f81, size 0x1
     bool hash_289e1da441035808;
     // offset 0x15f82, size 0x2f
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x15fb1, size 0x1
     bool completedfirsttimeflow;
     // offset 0x15fb2, size 0x28
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x15fda, size 0x6
     uint:1 __pad[6];
 }
@@ -27274,7 +27274,7 @@ version 77 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -27326,7 +27326,7 @@ version 77 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -27340,7 +27340,7 @@ version 77 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -27350,7 +27350,7 @@ version 77 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -27382,7 +27382,7 @@ version 77 {
     };
 
     // idx 0 members 183
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -27417,7 +27417,7 @@ version 77 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -27569,7 +27569,7 @@ version 77 {
     };
 
     // idx 1 members 132
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -27595,7 +27595,7 @@ version 77 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         pistol_fullauto_t8, // 0x1c,
@@ -27705,7 +27705,7 @@ version 77 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -27726,7 +27726,7 @@ version 77 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -27774,7 +27774,7 @@ version 77 {
     };
 
     // idx 4 members 47
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -27825,7 +27825,7 @@ version 77 {
     };
 
     // idx 5 members 39
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -27868,7 +27868,7 @@ version 77 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -27883,21 +27883,21 @@ version 77 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -27930,15 +27930,15 @@ version 77 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x145e0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x15eb0, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x15eb1, size 0xb7
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x15f68, size 0x10
     bool extrabools[16];
     // offset 0x15f78, size 0x1
@@ -27962,11 +27962,11 @@ version 77 {
     // offset 0x15f81, size 0x1
     bool hash_289e1da441035808;
     // offset 0x15f82, size 0x2f
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x15fb1, size 0x1
     bool completedfirsttimeflow;
     // offset 0x15fb2, size 0x27
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x15fd9, size 0x7
     uint:1 __pad[7];
 }
@@ -28009,7 +28009,7 @@ version 76 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -28061,7 +28061,7 @@ version 76 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -28075,7 +28075,7 @@ version 76 {
     // idx 10 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -28085,7 +28085,7 @@ version 76 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 11 members 4 size 0x20
@@ -28117,7 +28117,7 @@ version 76 {
     };
 
     // idx 0 members 183
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -28152,7 +28152,7 @@ version 76 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -28304,7 +28304,7 @@ version 76 {
     };
 
     // idx 1 members 132
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -28330,7 +28330,7 @@ version 76 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         pistol_fullauto_t8, // 0x1c,
@@ -28440,7 +28440,7 @@ version 76 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -28461,7 +28461,7 @@ version 76 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -28509,7 +28509,7 @@ version 76 {
     };
 
     // idx 4 members 47
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -28560,7 +28560,7 @@ version 76 {
     };
 
     // idx 5 members 38
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -28602,7 +28602,7 @@ version 76 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -28617,21 +28617,21 @@ version 76 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -28664,15 +28664,15 @@ version 76 {
     // offset 0x13f0, size 0x20
     uint uploadbandwidth;
     // offset 0x1410, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x14d0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x18d0, size 0x145e0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x15eb0, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x15eb1, size 0xb7
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x15f68, size 0x10
     bool extrabools[16];
     // offset 0x15f78, size 0x1
@@ -28696,11 +28696,11 @@ version 76 {
     // offset 0x15f81, size 0x1
     bool hash_289e1da441035808;
     // offset 0x15f82, size 0x2f
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x15fb1, size 0x1
     bool completedfirsttimeflow;
     // offset 0x15fb2, size 0x26
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
 }
 
 /////////////////////////////////////////////////
@@ -28741,7 +28741,7 @@ version 75 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -28793,7 +28793,7 @@ version 75 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -28805,7 +28805,7 @@ version 75 {
     };
 
     // idx 10 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -28817,7 +28817,7 @@ version 75 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -28825,13 +28825,13 @@ version 75 {
     };
 
     // idx 12 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -28839,9 +28839,9 @@ version 75 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -28861,7 +28861,7 @@ version 75 {
     // idx 14 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -28869,9 +28869,9 @@ version 75 {
     // idx 15 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -28885,13 +28885,13 @@ version 75 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -28899,7 +28899,7 @@ version 75 {
     // idx 17 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -28909,7 +28909,7 @@ version 75 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 18 members 4 size 0x20
@@ -28941,7 +28941,7 @@ version 75 {
     };
 
     // idx 0 members 183
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -28976,7 +28976,7 @@ version 75 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -29128,7 +29128,7 @@ version 75 {
     };
 
     // idx 1 members 132
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -29154,7 +29154,7 @@ version 75 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         pistol_fullauto_t8, // 0x1c,
@@ -29264,7 +29264,7 @@ version 75 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -29285,7 +29285,7 @@ version 75 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -29333,7 +29333,7 @@ version 75 {
     };
 
     // idx 4 members 47
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -29384,7 +29384,7 @@ version 75 {
     };
 
     // idx 5 members 38
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -29426,7 +29426,7 @@ version 75 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -29441,21 +29441,21 @@ version 75 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -29490,17 +29490,17 @@ version 75 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x145e0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x165d8, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x165d9, size 0xb7
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x16690, size 0x10
     bool extrabools[16];
     // offset 0x166a0, size 0x1
@@ -29522,11 +29522,11 @@ version 75 {
     // offset 0x166a8, size 0x1
     bool hash_289e1da441035808;
     // offset 0x166a9, size 0x2f
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x166d8, size 0x1
     bool completedfirsttimeflow;
     // offset 0x166d9, size 0x26
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x166ff, size 0x1
     uint:1 __pad[1];
 }
@@ -29569,7 +29569,7 @@ version 74 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -29621,7 +29621,7 @@ version 74 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -29633,7 +29633,7 @@ version 74 {
     };
 
     // idx 10 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -29645,7 +29645,7 @@ version 74 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -29653,13 +29653,13 @@ version 74 {
     };
 
     // idx 12 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -29667,9 +29667,9 @@ version 74 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -29689,7 +29689,7 @@ version 74 {
     // idx 14 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -29697,9 +29697,9 @@ version 74 {
     // idx 15 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -29713,13 +29713,13 @@ version 74 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -29727,7 +29727,7 @@ version 74 {
     // idx 17 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -29737,7 +29737,7 @@ version 74 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 18 members 4 size 0x20
@@ -29769,7 +29769,7 @@ version 74 {
     };
 
     // idx 0 members 183
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -29804,7 +29804,7 @@ version 74 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -29956,7 +29956,7 @@ version 74 {
     };
 
     // idx 1 members 135
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         hash_509ee360cb99602, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -29983,7 +29983,7 @@ version 74 {
         bowie_knife, // 0x17,
         shotgun_trenchgun_t8, // 0x18,
         ww_blundergat_t8, // 0x19,
-        hash_1b1df5c494f25984, // 0x1a,
+        shock_knuckles, // 0x1a,
         ww_blundergat_fire_t8_upgraded, // 0x1b,
         lmg_spray_t8_upgraded, // 0x1c,
         pistol_fullauto_t8, // 0x1d,
@@ -30095,7 +30095,7 @@ version 74 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -30116,7 +30116,7 @@ version 74 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -30164,7 +30164,7 @@ version 74 {
     };
 
     // idx 4 members 47
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -30215,7 +30215,7 @@ version 74 {
     };
 
     // idx 5 members 42
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -30261,7 +30261,7 @@ version 74 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -30276,21 +30276,21 @@ version 74 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -30325,17 +30325,17 @@ version 74 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x14d48
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x16d40, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x16d41, size 0xb7
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x16df8, size 0x10
     bool extrabools[16];
     // offset 0x16e08, size 0x1
@@ -30357,11 +30357,11 @@ version 74 {
     // offset 0x16e10, size 0x1
     bool hash_289e1da441035808;
     // offset 0x16e11, size 0x2f
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x16e40, size 0x1
     bool completedfirsttimeflow;
     // offset 0x16e41, size 0x2a
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x16e6b, size 0x5
     uint:1 __pad[5];
 }
@@ -30404,7 +30404,7 @@ version 73 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -30456,7 +30456,7 @@ version 73 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -30468,7 +30468,7 @@ version 73 {
     };
 
     // idx 10 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -30480,7 +30480,7 @@ version 73 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -30488,13 +30488,13 @@ version 73 {
     };
 
     // idx 12 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -30502,9 +30502,9 @@ version 73 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -30524,7 +30524,7 @@ version 73 {
     // idx 14 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -30532,9 +30532,9 @@ version 73 {
     // idx 15 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -30548,13 +30548,13 @@ version 73 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -30562,7 +30562,7 @@ version 73 {
     // idx 17 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -30572,7 +30572,7 @@ version 73 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 18 members 4 size 0x20
@@ -30604,7 +30604,7 @@ version 73 {
     };
 
     // idx 0 members 183
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -30639,7 +30639,7 @@ version 73 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -30791,7 +30791,7 @@ version 73 {
     };
 
     // idx 1 members 135
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -30818,7 +30818,7 @@ version 73 {
         bowie_knife, // 0x17,
         shotgun_trenchgun_t8, // 0x18,
         ww_blundergat_t8, // 0x19,
-        hash_1b1df5c494f25984, // 0x1a,
+        shock_knuckles, // 0x1a,
         ww_blundergat_fire_t8_upgraded, // 0x1b,
         lmg_spray_t8_upgraded, // 0x1c,
         pistol_fullauto_t8, // 0x1d,
@@ -30930,7 +30930,7 @@ version 73 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -30951,7 +30951,7 @@ version 73 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -30999,7 +30999,7 @@ version 73 {
     };
 
     // idx 4 members 47
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -31050,7 +31050,7 @@ version 73 {
     };
 
     // idx 5 members 42
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -31096,7 +31096,7 @@ version 73 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -31111,21 +31111,21 @@ version 73 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -31160,17 +31160,17 @@ version 73 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x14d48
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x16d40, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x16d41, size 0xb7
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x16df8, size 0x10
     bool extrabools[16];
     // offset 0x16e08, size 0x1
@@ -31192,11 +31192,11 @@ version 73 {
     // offset 0x16e10, size 0x1
     bool hash_289e1da441035808;
     // offset 0x16e11, size 0x2f
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x16e40, size 0x1
     bool completedfirsttimeflow;
     // offset 0x16e41, size 0x2a
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x16e6b, size 0x5
     uint:1 __pad[5];
 }
@@ -31239,7 +31239,7 @@ version 72 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -31291,7 +31291,7 @@ version 72 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -31303,7 +31303,7 @@ version 72 {
     };
 
     // idx 10 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -31315,7 +31315,7 @@ version 72 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -31323,13 +31323,13 @@ version 72 {
     };
 
     // idx 12 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -31337,9 +31337,9 @@ version 72 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -31359,7 +31359,7 @@ version 72 {
     // idx 14 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -31367,9 +31367,9 @@ version 72 {
     // idx 15 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -31383,13 +31383,13 @@ version 72 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -31397,7 +31397,7 @@ version 72 {
     // idx 17 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -31407,7 +31407,7 @@ version 72 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 18 members 4 size 0x20
@@ -31439,7 +31439,7 @@ version 72 {
     };
 
     // idx 0 members 183
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -31474,7 +31474,7 @@ version 72 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -31626,7 +31626,7 @@ version 72 {
     };
 
     // idx 1 members 135
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -31654,7 +31654,7 @@ version 72 {
         bowie_knife, // 0x18,
         shotgun_trenchgun_t8, // 0x19,
         ww_blundergat_t8, // 0x1a,
-        hash_1b1df5c494f25984, // 0x1b,
+        shock_knuckles, // 0x1b,
         ww_blundergat_fire_t8_upgraded, // 0x1c,
         lmg_spray_t8_upgraded, // 0x1d,
         pistol_fullauto_t8, // 0x1e,
@@ -31765,7 +31765,7 @@ version 72 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -31786,7 +31786,7 @@ version 72 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -31834,7 +31834,7 @@ version 72 {
     };
 
     // idx 4 members 47
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -31885,7 +31885,7 @@ version 72 {
     };
 
     // idx 5 members 42
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -31931,7 +31931,7 @@ version 72 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -31946,21 +31946,21 @@ version 72 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -31995,17 +31995,17 @@ version 72 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x14d48
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x16d40, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x16d41, size 0xb7
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x16df8, size 0x10
     bool extrabools[16];
     // offset 0x16e08, size 0x1
@@ -32027,11 +32027,11 @@ version 72 {
     // offset 0x16e10, size 0x1
     bool hash_289e1da441035808;
     // offset 0x16e11, size 0x2f
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x16e40, size 0x1
     bool completedfirsttimeflow;
     // offset 0x16e41, size 0x2a
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x16e6b, size 0x5
     uint:1 __pad[5];
 }
@@ -32074,7 +32074,7 @@ version 71 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -32126,7 +32126,7 @@ version 71 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -32138,7 +32138,7 @@ version 71 {
     };
 
     // idx 10 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -32150,7 +32150,7 @@ version 71 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -32158,13 +32158,13 @@ version 71 {
     };
 
     // idx 12 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -32172,9 +32172,9 @@ version 71 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -32194,7 +32194,7 @@ version 71 {
     // idx 14 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -32202,9 +32202,9 @@ version 71 {
     // idx 15 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -32218,13 +32218,13 @@ version 71 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -32232,7 +32232,7 @@ version 71 {
     // idx 17 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -32242,7 +32242,7 @@ version 71 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 18 members 4 size 0x20
@@ -32274,7 +32274,7 @@ version 71 {
     };
 
     // idx 0 members 177
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -32309,7 +32309,7 @@ version 71 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -32455,7 +32455,7 @@ version 71 {
     };
 
     // idx 1 members 129
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -32483,7 +32483,7 @@ version 71 {
         bowie_knife, // 0x18,
         shotgun_trenchgun_t8, // 0x19,
         ww_blundergat_t8, // 0x1a,
-        hash_1b1df5c494f25984, // 0x1b,
+        shock_knuckles, // 0x1b,
         ww_blundergat_fire_t8_upgraded, // 0x1c,
         lmg_spray_t8_upgraded, // 0x1d,
         pistol_fullauto_t8, // 0x1e,
@@ -32588,7 +32588,7 @@ version 71 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -32609,7 +32609,7 @@ version 71 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -32657,7 +32657,7 @@ version 71 {
     };
 
     // idx 4 members 47
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -32708,7 +32708,7 @@ version 71 {
     };
 
     // idx 5 members 42
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -32754,7 +32754,7 @@ version 71 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -32769,21 +32769,21 @@ version 71 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -32818,17 +32818,17 @@ version 71 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x13e78
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x15e70, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x15e71, size 0xb1
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x15f22, size 0x10
     bool extrabools[16];
     // offset 0x15f32, size 0x1
@@ -32850,11 +32850,11 @@ version 71 {
     // offset 0x15f3a, size 0x1
     bool hash_289e1da441035808;
     // offset 0x15f3b, size 0x2f
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x15f6a, size 0x1
     bool completedfirsttimeflow;
     // offset 0x15f6b, size 0x2a
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x15f95, size 0x3
     uint:1 __pad[3];
 }
@@ -32897,7 +32897,7 @@ version 70 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -32949,7 +32949,7 @@ version 70 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -32961,7 +32961,7 @@ version 70 {
     };
 
     // idx 10 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -32973,7 +32973,7 @@ version 70 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -32981,13 +32981,13 @@ version 70 {
     };
 
     // idx 12 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -32995,9 +32995,9 @@ version 70 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -33017,7 +33017,7 @@ version 70 {
     // idx 14 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -33025,9 +33025,9 @@ version 70 {
     // idx 15 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -33041,13 +33041,13 @@ version 70 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -33055,7 +33055,7 @@ version 70 {
     // idx 17 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -33065,7 +33065,7 @@ version 70 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 18 members 4 size 0x20
@@ -33097,7 +33097,7 @@ version 70 {
     };
 
     // idx 0 members 177
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -33132,7 +33132,7 @@ version 70 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -33278,7 +33278,7 @@ version 70 {
     };
 
     // idx 1 members 129
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -33306,7 +33306,7 @@ version 70 {
         bowie_knife, // 0x18,
         shotgun_trenchgun_t8, // 0x19,
         ww_blundergat_t8, // 0x1a,
-        hash_1b1df5c494f25984, // 0x1b,
+        shock_knuckles, // 0x1b,
         ww_blundergat_fire_t8_upgraded, // 0x1c,
         lmg_spray_t8_upgraded, // 0x1d,
         pistol_fullauto_t8, // 0x1e,
@@ -33411,7 +33411,7 @@ version 70 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -33432,7 +33432,7 @@ version 70 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -33480,7 +33480,7 @@ version 70 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -33530,7 +33530,7 @@ version 70 {
     };
 
     // idx 5 members 42
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -33576,7 +33576,7 @@ version 70 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -33591,21 +33591,21 @@ version 70 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -33640,17 +33640,17 @@ version 70 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x13e78
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x15e70, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x15e71, size 0xb1
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x15f22, size 0x10
     bool extrabools[16];
     // offset 0x15f32, size 0x1
@@ -33672,11 +33672,11 @@ version 70 {
     // offset 0x15f3a, size 0x1
     bool hash_289e1da441035808;
     // offset 0x15f3b, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x15f69, size 0x1
     bool completedfirsttimeflow;
     // offset 0x15f6a, size 0x2a
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x15f94, size 0x4
     uint:1 __pad[4];
 }
@@ -33719,7 +33719,7 @@ version 69 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -33771,7 +33771,7 @@ version 69 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -33783,7 +33783,7 @@ version 69 {
     };
 
     // idx 10 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -33795,7 +33795,7 @@ version 69 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -33803,13 +33803,13 @@ version 69 {
     };
 
     // idx 12 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -33817,9 +33817,9 @@ version 69 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -33839,7 +33839,7 @@ version 69 {
     // idx 14 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -33847,9 +33847,9 @@ version 69 {
     // idx 15 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -33863,13 +33863,13 @@ version 69 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -33877,7 +33877,7 @@ version 69 {
     // idx 17 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -33887,7 +33887,7 @@ version 69 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 18 members 4 size 0x20
@@ -33919,7 +33919,7 @@ version 69 {
     };
 
     // idx 0 members 173
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -33954,7 +33954,7 @@ version 69 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -34096,7 +34096,7 @@ version 69 {
     };
 
     // idx 1 members 125
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -34124,7 +34124,7 @@ version 69 {
         bowie_knife, // 0x18,
         shotgun_trenchgun_t8, // 0x19,
         ww_blundergat_t8, // 0x1a,
-        hash_1b1df5c494f25984, // 0x1b,
+        shock_knuckles, // 0x1b,
         ww_blundergat_fire_t8_upgraded, // 0x1c,
         lmg_spray_t8_upgraded, // 0x1d,
         pistol_fullauto_t8, // 0x1e,
@@ -34225,7 +34225,7 @@ version 69 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -34246,7 +34246,7 @@ version 69 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -34294,7 +34294,7 @@ version 69 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -34344,7 +34344,7 @@ version 69 {
     };
 
     // idx 5 members 42
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -34390,7 +34390,7 @@ version 69 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -34405,21 +34405,21 @@ version 69 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -34454,17 +34454,17 @@ version 69 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x13498
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x15490, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x15491, size 0xad
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1553e, size 0x10
     bool extrabools[16];
     // offset 0x1554e, size 0x1
@@ -34486,11 +34486,11 @@ version 69 {
     // offset 0x15556, size 0x1
     bool hash_289e1da441035808;
     // offset 0x15557, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x15585, size 0x1
     bool completedfirsttimeflow;
     // offset 0x15586, size 0x2a
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
 }
 
 /////////////////////////////////////////////////
@@ -34531,7 +34531,7 @@ version 68 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -34583,7 +34583,7 @@ version 68 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -34595,7 +34595,7 @@ version 68 {
     };
 
     // idx 10 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -34607,7 +34607,7 @@ version 68 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -34615,13 +34615,13 @@ version 68 {
     };
 
     // idx 12 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -34629,9 +34629,9 @@ version 68 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -34651,7 +34651,7 @@ version 68 {
     // idx 14 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -34659,9 +34659,9 @@ version 68 {
     // idx 15 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -34675,13 +34675,13 @@ version 68 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -34689,7 +34689,7 @@ version 68 {
     // idx 17 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -34699,7 +34699,7 @@ version 68 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 18 members 4 size 0x20
@@ -34731,7 +34731,7 @@ version 68 {
     };
 
     // idx 0 members 173
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -34766,7 +34766,7 @@ version 68 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -34908,7 +34908,7 @@ version 68 {
     };
 
     // idx 1 members 125
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -34936,7 +34936,7 @@ version 68 {
         bowie_knife, // 0x18,
         shotgun_trenchgun_t8, // 0x19,
         ww_blundergat_t8, // 0x1a,
-        hash_1b1df5c494f25984, // 0x1b,
+        shock_knuckles, // 0x1b,
         ww_blundergat_fire_t8_upgraded, // 0x1c,
         lmg_spray_t8_upgraded, // 0x1d,
         pistol_fullauto_t8, // 0x1e,
@@ -35037,7 +35037,7 @@ version 68 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -35058,7 +35058,7 @@ version 68 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -35106,7 +35106,7 @@ version 68 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -35156,7 +35156,7 @@ version 68 {
     };
 
     // idx 5 members 41
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -35201,7 +35201,7 @@ version 68 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -35216,21 +35216,21 @@ version 68 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -35265,17 +35265,17 @@ version 68 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x13498
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x15490, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x15491, size 0xad
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1553e, size 0x10
     bool extrabools[16];
     // offset 0x1554e, size 0x1
@@ -35297,11 +35297,11 @@ version 68 {
     // offset 0x15556, size 0x1
     bool hash_289e1da441035808;
     // offset 0x15557, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x15585, size 0x1
     bool completedfirsttimeflow;
     // offset 0x15586, size 0x29
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x155af, size 0x1
     uint:1 __pad[1];
 }
@@ -35344,7 +35344,7 @@ version 67 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -35396,7 +35396,7 @@ version 67 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -35408,7 +35408,7 @@ version 67 {
     };
 
     // idx 10 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -35420,7 +35420,7 @@ version 67 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -35428,13 +35428,13 @@ version 67 {
     };
 
     // idx 12 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -35442,9 +35442,9 @@ version 67 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -35464,7 +35464,7 @@ version 67 {
     // idx 14 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -35472,9 +35472,9 @@ version 67 {
     // idx 15 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -35488,13 +35488,13 @@ version 67 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -35502,7 +35502,7 @@ version 67 {
     // idx 17 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -35512,7 +35512,7 @@ version 67 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 18 members 4 size 0x20
@@ -35544,7 +35544,7 @@ version 67 {
     };
 
     // idx 0 members 173
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -35579,7 +35579,7 @@ version 67 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -35721,7 +35721,7 @@ version 67 {
     };
 
     // idx 1 members 122
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -35747,7 +35747,7 @@ version 67 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         pistol_fullauto_t8, // 0x1c,
@@ -35847,7 +35847,7 @@ version 67 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -35868,7 +35868,7 @@ version 67 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -35916,7 +35916,7 @@ version 67 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -35966,7 +35966,7 @@ version 67 {
     };
 
     // idx 5 members 38
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -36008,7 +36008,7 @@ version 67 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -36023,21 +36023,21 @@ version 67 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -36072,17 +36072,17 @@ version 67 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x12d30
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x14d28, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x14d29, size 0xad
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x14dd6, size 0x10
     bool extrabools[16];
     // offset 0x14de6, size 0x1
@@ -36104,11 +36104,11 @@ version 67 {
     // offset 0x14dee, size 0x1
     bool hash_289e1da441035808;
     // offset 0x14def, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x14e1d, size 0x1
     bool completedfirsttimeflow;
     // offset 0x14e1e, size 0x26
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x14e44, size 0x4
     uint:1 __pad[4];
 }
@@ -36151,7 +36151,7 @@ version 66 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -36203,7 +36203,7 @@ version 66 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2c
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2c, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x34, size 0x200
@@ -36215,7 +36215,7 @@ version 66 {
     };
 
     // idx 10 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -36227,7 +36227,7 @@ version 66 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -36235,13 +36235,13 @@ version 66 {
     };
 
     // idx 12 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -36249,9 +36249,9 @@ version 66 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -36271,7 +36271,7 @@ version 66 {
     // idx 14 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -36279,9 +36279,9 @@ version 66 {
     // idx 15 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -36295,13 +36295,13 @@ version 66 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -36309,7 +36309,7 @@ version 66 {
     // idx 17 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -36319,7 +36319,7 @@ version 66 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 18 members 4 size 0x20
@@ -36351,7 +36351,7 @@ version 66 {
     };
 
     // idx 0 members 172
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -36386,7 +36386,7 @@ version 66 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -36527,7 +36527,7 @@ version 66 {
     };
 
     // idx 1 members 122
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -36553,7 +36553,7 @@ version 66 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         pistol_fullauto_t8, // 0x1c,
@@ -36653,7 +36653,7 @@ version 66 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -36674,7 +36674,7 @@ version 66 {
     };
 
     // idx 3 members 44
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -36722,7 +36722,7 @@ version 66 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -36772,7 +36772,7 @@ version 66 {
     };
 
     // idx 5 members 38
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -36814,7 +36814,7 @@ version 66 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -36829,21 +36829,21 @@ version 66 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -36878,17 +36878,17 @@ version 66 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x12d30
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x14d28, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x14d29, size 0xac
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x14dd5, size 0x10
     bool extrabools[16];
     // offset 0x14de5, size 0x1
@@ -36910,11 +36910,11 @@ version 66 {
     // offset 0x14ded, size 0x1
     bool hash_289e1da441035808;
     // offset 0x14dee, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x14e1c, size 0x1
     bool completedfirsttimeflow;
     // offset 0x14e1d, size 0x26
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x14e43, size 0x5
     uint:1 __pad[5];
 }
@@ -36957,7 +36957,7 @@ version 65 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -37009,7 +37009,7 @@ version 65 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2b
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2b, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x33, size 0x200
@@ -37021,7 +37021,7 @@ version 65 {
     };
 
     // idx 10 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -37033,7 +37033,7 @@ version 65 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -37041,13 +37041,13 @@ version 65 {
     };
 
     // idx 12 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -37055,9 +37055,9 @@ version 65 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -37077,7 +37077,7 @@ version 65 {
     // idx 14 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -37085,9 +37085,9 @@ version 65 {
     // idx 15 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -37101,13 +37101,13 @@ version 65 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -37115,7 +37115,7 @@ version 65 {
     // idx 17 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -37125,7 +37125,7 @@ version 65 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 18 members 4 size 0x20
@@ -37157,7 +37157,7 @@ version 65 {
     };
 
     // idx 0 members 162
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -37192,7 +37192,7 @@ version 65 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -37323,7 +37323,7 @@ version 65 {
     };
 
     // idx 1 members 112
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -37349,7 +37349,7 @@ version 65 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         lmg_standard_t8_upgraded, // 0x1c,
@@ -37439,7 +37439,7 @@ version 65 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -37460,7 +37460,7 @@ version 65 {
     };
 
     // idx 3 members 43
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -37507,7 +37507,7 @@ version 65 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -37557,7 +37557,7 @@ version 65 {
     };
 
     // idx 5 members 38
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -37599,7 +37599,7 @@ version 65 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -37614,21 +37614,21 @@ version 65 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -37663,17 +37663,17 @@ version 65 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x11480
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x13478, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x13479, size 0xa2
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1351b, size 0x10
     bool extrabools[16];
     // offset 0x1352b, size 0x1
@@ -37695,11 +37695,11 @@ version 65 {
     // offset 0x13533, size 0x1
     bool hash_289e1da441035808;
     // offset 0x13534, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x13562, size 0x1
     bool completedfirsttimeflow;
     // offset 0x13563, size 0x26
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x13589, size 0x7
     uint:1 __pad[7];
 }
@@ -37742,7 +37742,7 @@ version 64 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -37794,7 +37794,7 @@ version 64 {
     // idx 9 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2b
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2b, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x33, size 0x200
@@ -37806,7 +37806,7 @@ version 64 {
     };
 
     // idx 10 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -37818,7 +37818,7 @@ version 64 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -37826,13 +37826,13 @@ version 64 {
     };
 
     // idx 12 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -37840,9 +37840,9 @@ version 64 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -37862,7 +37862,7 @@ version 64 {
     // idx 14 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -37870,9 +37870,9 @@ version 64 {
     // idx 15 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -37886,13 +37886,13 @@ version 64 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -37900,7 +37900,7 @@ version 64 {
     // idx 17 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -37910,7 +37910,7 @@ version 64 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 18 members 4 size 0x20
@@ -37942,7 +37942,7 @@ version 64 {
     };
 
     // idx 0 members 162
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -37977,7 +37977,7 @@ version 64 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -38108,7 +38108,7 @@ version 64 {
     };
 
     // idx 1 members 112
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -38134,7 +38134,7 @@ version 64 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         lmg_standard_t8_upgraded, // 0x1c,
@@ -38224,7 +38224,7 @@ version 64 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -38245,7 +38245,7 @@ version 64 {
     };
 
     // idx 3 members 43
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -38292,7 +38292,7 @@ version 64 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -38342,7 +38342,7 @@ version 64 {
     };
 
     // idx 5 members 38
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -38384,7 +38384,7 @@ version 64 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -38399,21 +38399,21 @@ version 64 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -38448,17 +38448,17 @@ version 64 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x11480
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x13478, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x13479, size 0xa2
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1351b, size 0x10
     bool extrabools[16];
     // offset 0x1352b, size 0x1
@@ -38480,11 +38480,11 @@ version 64 {
     // offset 0x13533, size 0x1
     bool hash_289e1da441035808;
     // offset 0x13534, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x13562, size 0x1
     bool completedfirsttimeflow;
     // offset 0x13563, size 0x26
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x13589, size 0x7
     uint:1 __pad[7];
 }
@@ -38527,7 +38527,7 @@ version 63 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -38571,7 +38571,7 @@ version 63 {
     // idx 8 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2b
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2b, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x33, size 0x200
@@ -38583,7 +38583,7 @@ version 63 {
     };
 
     // idx 9 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -38595,7 +38595,7 @@ version 63 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -38603,13 +38603,13 @@ version 63 {
     };
 
     // idx 11 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -38617,9 +38617,9 @@ version 63 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -38639,7 +38639,7 @@ version 63 {
     // idx 13 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -38647,9 +38647,9 @@ version 63 {
     // idx 14 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -38663,13 +38663,13 @@ version 63 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -38677,7 +38677,7 @@ version 63 {
     // idx 16 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -38687,7 +38687,7 @@ version 63 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 17 members 4 size 0x20
@@ -38719,7 +38719,7 @@ version 63 {
     };
 
     // idx 0 members 162
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -38754,7 +38754,7 @@ version 63 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -38885,7 +38885,7 @@ version 63 {
     };
 
     // idx 1 members 112
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -38911,7 +38911,7 @@ version 63 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         lmg_standard_t8_upgraded, // 0x1c,
@@ -39001,7 +39001,7 @@ version 63 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -39022,7 +39022,7 @@ version 63 {
     };
 
     // idx 3 members 43
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -39069,7 +39069,7 @@ version 63 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -39119,7 +39119,7 @@ version 63 {
     };
 
     // idx 5 members 38
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -39161,7 +39161,7 @@ version 63 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -39176,21 +39176,21 @@ version 63 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -39225,17 +39225,17 @@ version 63 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x11480
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x13478, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x13479, size 0xa2
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1351b, size 0x10
     bool extrabools[16];
     // offset 0x1352b, size 0x1
@@ -39257,11 +39257,11 @@ version 63 {
     // offset 0x13533, size 0x1
     bool hash_289e1da441035808;
     // offset 0x13534, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x13562, size 0x1
     bool completedfirsttimeflow;
     // offset 0x13563, size 0x26
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x13589, size 0x7
     uint:1 __pad[7];
 }
@@ -39304,7 +39304,7 @@ version 62 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -39348,7 +39348,7 @@ version 62 {
     // idx 8 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2b
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2b, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x33, size 0x200
@@ -39360,7 +39360,7 @@ version 62 {
     };
 
     // idx 9 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -39372,7 +39372,7 @@ version 62 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -39380,13 +39380,13 @@ version 62 {
     };
 
     // idx 11 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -39394,9 +39394,9 @@ version 62 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -39416,7 +39416,7 @@ version 62 {
     // idx 13 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -39424,9 +39424,9 @@ version 62 {
     // idx 14 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -39440,13 +39440,13 @@ version 62 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -39454,7 +39454,7 @@ version 62 {
     // idx 16 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -39464,7 +39464,7 @@ version 62 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 17 members 4 size 0x20
@@ -39496,7 +39496,7 @@ version 62 {
     };
 
     // idx 0 members 161
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -39531,7 +39531,7 @@ version 62 {
         hero_flamethrower_t8_lv3, // 0x1f,
         shotgun_trenchgun_t8, // 0x20,
         ww_blundergat_t8, // 0x21,
-        hash_1b1df5c494f25984, // 0x22,
+        shock_knuckles, // 0x22,
         ww_blundergat_fire_t8_upgraded, // 0x23,
         hero_gravityspikes_t8_lv3, // 0x24,
         hero_gravityspikes_t8_lv2, // 0x25,
@@ -39661,7 +39661,7 @@ version 62 {
     };
 
     // idx 1 members 112
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -39687,7 +39687,7 @@ version 62 {
         bowie_knife, // 0x16,
         shotgun_trenchgun_t8, // 0x17,
         ww_blundergat_t8, // 0x18,
-        hash_1b1df5c494f25984, // 0x19,
+        shock_knuckles, // 0x19,
         ww_blundergat_fire_t8_upgraded, // 0x1a,
         lmg_spray_t8_upgraded, // 0x1b,
         lmg_standard_t8_upgraded, // 0x1c,
@@ -39777,7 +39777,7 @@ version 62 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -39798,7 +39798,7 @@ version 62 {
     };
 
     // idx 3 members 43
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -39845,7 +39845,7 @@ version 62 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -39895,7 +39895,7 @@ version 62 {
     };
 
     // idx 5 members 38
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -39937,7 +39937,7 @@ version 62 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -39952,21 +39952,21 @@ version 62 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -40001,17 +40001,17 @@ version 62 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x11480
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x13478, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x13479, size 0xa1
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1351a, size 0x10
     bool extrabools[16];
     // offset 0x1352a, size 0x1
@@ -40033,11 +40033,11 @@ version 62 {
     // offset 0x13532, size 0x1
     bool hash_289e1da441035808;
     // offset 0x13533, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x13561, size 0x1
     bool completedfirsttimeflow;
     // offset 0x13562, size 0x26
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
 }
 
 /////////////////////////////////////////////////
@@ -40078,7 +40078,7 @@ version 61 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -40122,7 +40122,7 @@ version 61 {
     // idx 8 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2b
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2b, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x33, size 0x200
@@ -40134,7 +40134,7 @@ version 61 {
     };
 
     // idx 9 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -40146,7 +40146,7 @@ version 61 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -40154,13 +40154,13 @@ version 61 {
     };
 
     // idx 11 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -40168,9 +40168,9 @@ version 61 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -40190,7 +40190,7 @@ version 61 {
     // idx 13 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -40198,9 +40198,9 @@ version 61 {
     // idx 14 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -40214,13 +40214,13 @@ version 61 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -40228,7 +40228,7 @@ version 61 {
     // idx 16 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -40238,7 +40238,7 @@ version 61 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 17 members 4 size 0x20
@@ -40270,7 +40270,7 @@ version 61 {
     };
 
     // idx 0 members 160
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -40304,7 +40304,7 @@ version 61 {
         hero_flamethrower_t8_lv3, // 0x1e,
         shotgun_trenchgun_t8, // 0x1f,
         ww_blundergat_t8, // 0x20,
-        hash_1b1df5c494f25984, // 0x21,
+        shock_knuckles, // 0x21,
         ww_blundergat_fire_t8_upgraded, // 0x22,
         hero_gravityspikes_t8_lv3, // 0x23,
         hero_gravityspikes_t8_lv2, // 0x24,
@@ -40434,7 +40434,7 @@ version 61 {
     };
 
     // idx 1 members 111
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -40459,7 +40459,7 @@ version 61 {
         bowie_knife, // 0x15,
         shotgun_trenchgun_t8, // 0x16,
         ww_blundergat_t8, // 0x17,
-        hash_1b1df5c494f25984, // 0x18,
+        shock_knuckles, // 0x18,
         ww_blundergat_fire_t8_upgraded, // 0x19,
         lmg_spray_t8_upgraded, // 0x1a,
         lmg_standard_t8_upgraded, // 0x1b,
@@ -40549,7 +40549,7 @@ version 61 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -40570,7 +40570,7 @@ version 61 {
     };
 
     // idx 3 members 43
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -40617,7 +40617,7 @@ version 61 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -40667,7 +40667,7 @@ version 61 {
     };
 
     // idx 5 members 38
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -40709,7 +40709,7 @@ version 61 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -40724,21 +40724,21 @@ version 61 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -40773,17 +40773,17 @@ version 61 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x11208
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x13200, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x13201, size 0xa0
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x132a1, size 0x10
     bool extrabools[16];
     // offset 0x132b1, size 0x1
@@ -40805,11 +40805,11 @@ version 61 {
     // offset 0x132b9, size 0x1
     bool hash_289e1da441035808;
     // offset 0x132ba, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x132e8, size 0x1
     bool completedfirsttimeflow;
     // offset 0x132e9, size 0x26
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x1330f, size 0x1
     uint:1 __pad[1];
 }
@@ -40852,7 +40852,7 @@ version 60 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -40896,7 +40896,7 @@ version 60 {
     // idx 8 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2b
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2b, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x33, size 0x200
@@ -40908,7 +40908,7 @@ version 60 {
     };
 
     // idx 9 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -40920,7 +40920,7 @@ version 60 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -40928,13 +40928,13 @@ version 60 {
     };
 
     // idx 11 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -40942,9 +40942,9 @@ version 60 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -40964,7 +40964,7 @@ version 60 {
     // idx 13 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -40972,9 +40972,9 @@ version 60 {
     // idx 14 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -40988,13 +40988,13 @@ version 60 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -41002,7 +41002,7 @@ version 60 {
     // idx 16 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -41012,7 +41012,7 @@ version 60 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 17 members 4 size 0x20
@@ -41044,7 +41044,7 @@ version 60 {
     };
 
     // idx 0 members 159
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -41078,7 +41078,7 @@ version 60 {
         hero_flamethrower_t8_lv3, // 0x1e,
         shotgun_trenchgun_t8, // 0x1f,
         ww_blundergat_t8, // 0x20,
-        hash_1b1df5c494f25984, // 0x21,
+        shock_knuckles, // 0x21,
         ww_blundergat_fire_t8_upgraded, // 0x22,
         hero_gravityspikes_t8_lv3, // 0x23,
         hero_gravityspikes_t8_lv2, // 0x24,
@@ -41207,7 +41207,7 @@ version 60 {
     };
 
     // idx 1 members 110
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -41232,7 +41232,7 @@ version 60 {
         bowie_knife, // 0x15,
         shotgun_trenchgun_t8, // 0x16,
         ww_blundergat_t8, // 0x17,
-        hash_1b1df5c494f25984, // 0x18,
+        shock_knuckles, // 0x18,
         ww_blundergat_fire_t8_upgraded, // 0x19,
         lmg_spray_t8_upgraded, // 0x1a,
         lmg_standard_t8_upgraded, // 0x1b,
@@ -41321,7 +41321,7 @@ version 60 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -41342,7 +41342,7 @@ version 60 {
     };
 
     // idx 3 members 43
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -41389,7 +41389,7 @@ version 60 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -41439,7 +41439,7 @@ version 60 {
     };
 
     // idx 5 members 38
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -41481,7 +41481,7 @@ version 60 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -41496,21 +41496,21 @@ version 60 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -41545,17 +41545,17 @@ version 60 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x10f90
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x12f88, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x12f89, size 0x9f
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x13028, size 0x10
     bool extrabools[16];
     // offset 0x13038, size 0x1
@@ -41577,11 +41577,11 @@ version 60 {
     // offset 0x13040, size 0x1
     bool hash_289e1da441035808;
     // offset 0x13041, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1306f, size 0x1
     bool completedfirsttimeflow;
     // offset 0x13070, size 0x26
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x13096, size 0x2
     uint:1 __pad[2];
 }
@@ -41624,7 +41624,7 @@ version 59 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -41668,7 +41668,7 @@ version 59 {
     // idx 8 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2b
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2b, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x33, size 0x200
@@ -41680,7 +41680,7 @@ version 59 {
     };
 
     // idx 9 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -41692,7 +41692,7 @@ version 59 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -41700,13 +41700,13 @@ version 59 {
     };
 
     // idx 11 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -41714,9 +41714,9 @@ version 59 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -41736,7 +41736,7 @@ version 59 {
     // idx 13 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -41744,9 +41744,9 @@ version 59 {
     // idx 14 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -41760,13 +41760,13 @@ version 59 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -41774,7 +41774,7 @@ version 59 {
     // idx 16 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -41784,7 +41784,7 @@ version 59 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 17 members 4 size 0x20
@@ -41816,7 +41816,7 @@ version 59 {
     };
 
     // idx 0 members 157
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -41850,7 +41850,7 @@ version 59 {
         hero_flamethrower_t8_lv3, // 0x1e,
         shotgun_trenchgun_t8, // 0x1f,
         ww_blundergat_t8, // 0x20,
-        hash_1b1df5c494f25984, // 0x21,
+        shock_knuckles, // 0x21,
         ww_blundergat_fire_t8_upgraded, // 0x22,
         hero_gravityspikes_t8_lv3, // 0x23,
         hero_gravityspikes_t8_lv2, // 0x24,
@@ -41977,7 +41977,7 @@ version 59 {
     };
 
     // idx 1 members 110
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -42002,7 +42002,7 @@ version 59 {
         bowie_knife, // 0x15,
         shotgun_trenchgun_t8, // 0x16,
         ww_blundergat_t8, // 0x17,
-        hash_1b1df5c494f25984, // 0x18,
+        shock_knuckles, // 0x18,
         ww_blundergat_fire_t8_upgraded, // 0x19,
         lmg_spray_t8_upgraded, // 0x1a,
         lmg_standard_t8_upgraded, // 0x1b,
@@ -42091,7 +42091,7 @@ version 59 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -42112,7 +42112,7 @@ version 59 {
     };
 
     // idx 3 members 43
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -42159,7 +42159,7 @@ version 59 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -42209,7 +42209,7 @@ version 59 {
     };
 
     // idx 5 members 38
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -42251,7 +42251,7 @@ version 59 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -42266,21 +42266,21 @@ version 59 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -42315,17 +42315,17 @@ version 59 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x10f90
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x12f88, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x12f89, size 0x9d
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x13026, size 0x10
     bool extrabools[16];
     // offset 0x13036, size 0x1
@@ -42347,11 +42347,11 @@ version 59 {
     // offset 0x1303e, size 0x1
     bool hash_289e1da441035808;
     // offset 0x1303f, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1306d, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1306e, size 0x26
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x13094, size 0x4
     uint:1 __pad[4];
 }
@@ -42394,7 +42394,7 @@ version 58 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -42438,7 +42438,7 @@ version 58 {
     // idx 8 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2b
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2b, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x33, size 0x200
@@ -42450,7 +42450,7 @@ version 58 {
     };
 
     // idx 9 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -42462,7 +42462,7 @@ version 58 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -42470,13 +42470,13 @@ version 58 {
     };
 
     // idx 11 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -42484,9 +42484,9 @@ version 58 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -42506,7 +42506,7 @@ version 58 {
     // idx 13 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -42514,9 +42514,9 @@ version 58 {
     // idx 14 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -42530,13 +42530,13 @@ version 58 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -42544,7 +42544,7 @@ version 58 {
     // idx 16 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -42554,7 +42554,7 @@ version 58 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 17 members 4 size 0x20
@@ -42586,7 +42586,7 @@ version 58 {
     };
 
     // idx 0 members 157
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         hash_85ac8bd3ebb20e, // 0x0,
         ww_blundergat_fire_t8, // 0x1,
         ww_tricannon_fire_t8, // 0x2,
@@ -42620,7 +42620,7 @@ version 58 {
         hero_flamethrower_t8_lv3, // 0x1e,
         shotgun_trenchgun_t8, // 0x1f,
         ww_blundergat_t8, // 0x20,
-        hash_1b1df5c494f25984, // 0x21,
+        shock_knuckles, // 0x21,
         ww_blundergat_fire_t8_upgraded, // 0x22,
         hero_gravityspikes_t8_lv3, // 0x23,
         hero_gravityspikes_t8_lv2, // 0x24,
@@ -42747,7 +42747,7 @@ version 58 {
     };
 
     // idx 1 members 110
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -42772,7 +42772,7 @@ version 58 {
         bowie_knife, // 0x15,
         shotgun_trenchgun_t8, // 0x16,
         ww_blundergat_t8, // 0x17,
-        hash_1b1df5c494f25984, // 0x18,
+        shock_knuckles, // 0x18,
         ww_blundergat_fire_t8_upgraded, // 0x19,
         lmg_spray_t8_upgraded, // 0x1a,
         lmg_standard_t8_upgraded, // 0x1b,
@@ -42861,7 +42861,7 @@ version 58 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -42882,7 +42882,7 @@ version 58 {
     };
 
     // idx 3 members 43
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -42929,7 +42929,7 @@ version 58 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -42979,7 +42979,7 @@ version 58 {
     };
 
     // idx 5 members 38
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -43021,7 +43021,7 @@ version 58 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -43036,21 +43036,21 @@ version 58 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -43085,17 +43085,17 @@ version 58 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x10f90
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x12f88, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x12f89, size 0x9d
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x13026, size 0x10
     bool extrabools[16];
     // offset 0x13036, size 0x1
@@ -43117,11 +43117,11 @@ version 58 {
     // offset 0x1303e, size 0x1
     bool hash_289e1da441035808;
     // offset 0x1303f, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1306d, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1306e, size 0x26
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x13094, size 0x4
     uint:1 __pad[4];
 }
@@ -43164,7 +43164,7 @@ version 57 {
     };
 
     // idx 4 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -43208,7 +43208,7 @@ version 57 {
     // idx 8 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2b
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2b, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x33, size 0x200
@@ -43220,7 +43220,7 @@ version 57 {
     };
 
     // idx 9 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -43232,7 +43232,7 @@ version 57 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -43240,13 +43240,13 @@ version 57 {
     };
 
     // idx 11 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -43254,9 +43254,9 @@ version 57 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -43276,7 +43276,7 @@ version 57 {
     // idx 13 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -43284,9 +43284,9 @@ version 57 {
     // idx 14 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -43300,13 +43300,13 @@ version 57 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -43314,7 +43314,7 @@ version 57 {
     // idx 16 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -43324,7 +43324,7 @@ version 57 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 17 members 4 size 0x20
@@ -43356,7 +43356,7 @@ version 57 {
     };
 
     // idx 0 members 156
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -43389,7 +43389,7 @@ version 57 {
         hero_flamethrower_t8_lv3, // 0x1d,
         shotgun_trenchgun_t8, // 0x1e,
         ww_blundergat_t8, // 0x1f,
-        hash_1b1df5c494f25984, // 0x20,
+        shock_knuckles, // 0x20,
         ww_blundergat_fire_t8_upgraded, // 0x21,
         hero_gravityspikes_t8_lv3, // 0x22,
         hero_gravityspikes_t8_lv2, // 0x23,
@@ -43516,7 +43516,7 @@ version 57 {
     };
 
     // idx 1 members 110
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -43541,7 +43541,7 @@ version 57 {
         bowie_knife, // 0x15,
         shotgun_trenchgun_t8, // 0x16,
         ww_blundergat_t8, // 0x17,
-        hash_1b1df5c494f25984, // 0x18,
+        shock_knuckles, // 0x18,
         ww_blundergat_fire_t8_upgraded, // 0x19,
         lmg_spray_t8_upgraded, // 0x1a,
         lmg_standard_t8_upgraded, // 0x1b,
@@ -43630,7 +43630,7 @@ version 57 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -43651,7 +43651,7 @@ version 57 {
     };
 
     // idx 3 members 43
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -43698,7 +43698,7 @@ version 57 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -43748,7 +43748,7 @@ version 57 {
     };
 
     // idx 5 members 38
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -43790,7 +43790,7 @@ version 57 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -43805,21 +43805,21 @@ version 57 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -43854,17 +43854,17 @@ version 57 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x10f90
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x12f88, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x12f89, size 0x9c
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x13025, size 0x10
     bool extrabools[16];
     // offset 0x13035, size 0x1
@@ -43886,11 +43886,11 @@ version 57 {
     // offset 0x1303d, size 0x1
     bool hash_289e1da441035808;
     // offset 0x1303e, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1306c, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1306d, size 0x26
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x13093, size 0x5
     uint:1 __pad[5];
 }
@@ -43921,7 +43921,7 @@ version 56 {
     };
 
     // idx 3 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -43965,7 +43965,7 @@ version 56 {
     // idx 7 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2b
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2b, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x33, size 0x200
@@ -43977,7 +43977,7 @@ version 56 {
     };
 
     // idx 8 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -43989,7 +43989,7 @@ version 56 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -43997,13 +43997,13 @@ version 56 {
     };
 
     // idx 10 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -44011,9 +44011,9 @@ version 56 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -44033,7 +44033,7 @@ version 56 {
     // idx 12 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -44041,9 +44041,9 @@ version 56 {
     // idx 13 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -44057,13 +44057,13 @@ version 56 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -44071,7 +44071,7 @@ version 56 {
     // idx 15 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -44081,7 +44081,7 @@ version 56 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 16 members 4 size 0x20
@@ -44113,7 +44113,7 @@ version 56 {
     };
 
     // idx 0 members 156
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -44146,7 +44146,7 @@ version 56 {
         hero_flamethrower_t8_lv3, // 0x1d,
         shotgun_trenchgun_t8, // 0x1e,
         ww_blundergat_t8, // 0x1f,
-        hash_1b1df5c494f25984, // 0x20,
+        shock_knuckles, // 0x20,
         ww_blundergat_fire_t8_upgraded, // 0x21,
         hero_gravityspikes_t8_lv3, // 0x22,
         hero_gravityspikes_t8_lv2, // 0x23,
@@ -44273,7 +44273,7 @@ version 56 {
     };
 
     // idx 1 members 110
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -44298,7 +44298,7 @@ version 56 {
         bowie_knife, // 0x15,
         shotgun_trenchgun_t8, // 0x16,
         ww_blundergat_t8, // 0x17,
-        hash_1b1df5c494f25984, // 0x18,
+        shock_knuckles, // 0x18,
         ww_blundergat_fire_t8_upgraded, // 0x19,
         lmg_spray_t8_upgraded, // 0x1a,
         lmg_standard_t8_upgraded, // 0x1b,
@@ -44387,7 +44387,7 @@ version 56 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -44408,7 +44408,7 @@ version 56 {
     };
 
     // idx 3 members 43
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -44455,7 +44455,7 @@ version 56 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -44505,7 +44505,7 @@ version 56 {
     };
 
     // idx 5 members 38
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_refresh_mint, // 0x1,
         zm_bgb_kill_joy, // 0x2,
@@ -44547,7 +44547,7 @@ version 56 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -44562,21 +44562,21 @@ version 56 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -44611,17 +44611,17 @@ version 56 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x10f90
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x12f88, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x12f89, size 0x9c
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x13025, size 0x10
     bool extrabools[16];
     // offset 0x13035, size 0x1
@@ -44643,11 +44643,11 @@ version 56 {
     // offset 0x1303d, size 0x1
     bool hash_289e1da441035808;
     // offset 0x1303e, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x1306c, size 0x1
     bool completedfirsttimeflow;
     // offset 0x1306d, size 0x26
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x13093, size 0x5
     uint:1 __pad[5];
 }
@@ -44678,7 +44678,7 @@ version 55 {
     };
 
     // idx 3 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -44722,7 +44722,7 @@ version 55 {
     // idx 7 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2b
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2b, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x33, size 0x200
@@ -44734,7 +44734,7 @@ version 55 {
     };
 
     // idx 8 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -44746,7 +44746,7 @@ version 55 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -44754,13 +44754,13 @@ version 55 {
     };
 
     // idx 10 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -44768,9 +44768,9 @@ version 55 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -44790,7 +44790,7 @@ version 55 {
     // idx 12 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -44798,9 +44798,9 @@ version 55 {
     // idx 13 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -44814,13 +44814,13 @@ version 55 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -44828,7 +44828,7 @@ version 55 {
     // idx 15 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -44838,7 +44838,7 @@ version 55 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 16 members 4 size 0x20
@@ -44870,7 +44870,7 @@ version 55 {
     };
 
     // idx 0 members 148
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -44903,7 +44903,7 @@ version 55 {
         hero_flamethrower_t8_lv3, // 0x1d,
         shotgun_trenchgun_t8, // 0x1e,
         ww_blundergat_t8, // 0x1f,
-        hash_1b1df5c494f25984, // 0x20,
+        shock_knuckles, // 0x20,
         ww_blundergat_fire_t8_upgraded, // 0x21,
         hero_gravityspikes_t8_lv3, // 0x22,
         hero_gravityspikes_t8_lv2, // 0x23,
@@ -45022,7 +45022,7 @@ version 55 {
     };
 
     // idx 1 members 110
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -45047,7 +45047,7 @@ version 55 {
         bowie_knife, // 0x15,
         shotgun_trenchgun_t8, // 0x16,
         ww_blundergat_t8, // 0x17,
-        hash_1b1df5c494f25984, // 0x18,
+        shock_knuckles, // 0x18,
         ww_blundergat_fire_t8_upgraded, // 0x19,
         lmg_spray_t8_upgraded, // 0x1a,
         lmg_standard_t8_upgraded, // 0x1b,
@@ -45136,7 +45136,7 @@ version 55 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -45157,7 +45157,7 @@ version 55 {
     };
 
     // idx 3 members 43
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -45204,7 +45204,7 @@ version 55 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -45254,7 +45254,7 @@ version 55 {
     };
 
     // idx 5 members 43
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_kill_joy, // 0x1,
         zm_bgb_head_scan, // 0x2,
@@ -45301,7 +45301,7 @@ version 55 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -45316,21 +45316,21 @@ version 55 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -45365,17 +45365,17 @@ version 55 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0x10f90
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x12f88, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x12f89, size 0x94
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1301d, size 0x10
     bool extrabools[16];
     // offset 0x1302d, size 0x1
@@ -45397,11 +45397,11 @@ version 55 {
     // offset 0x13035, size 0x1
     bool hash_289e1da441035808;
     // offset 0x13036, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x13064, size 0x1
     bool completedfirsttimeflow;
     // offset 0x13065, size 0x2b
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
 }
 
 /////////////////////////////////////////////////
@@ -45430,7 +45430,7 @@ version 54 {
     };
 
     // idx 3 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -45474,7 +45474,7 @@ version 54 {
     // idx 7 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2b
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2b, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x33, size 0x200
@@ -45486,7 +45486,7 @@ version 54 {
     };
 
     // idx 8 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -45498,7 +45498,7 @@ version 54 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -45506,13 +45506,13 @@ version 54 {
     };
 
     // idx 10 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -45520,9 +45520,9 @@ version 54 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -45542,7 +45542,7 @@ version 54 {
     // idx 12 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -45550,9 +45550,9 @@ version 54 {
     // idx 13 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -45566,13 +45566,13 @@ version 54 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -45580,7 +45580,7 @@ version 54 {
     // idx 15 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -45590,7 +45590,7 @@ version 54 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 16 members 4 size 0x20
@@ -45622,7 +45622,7 @@ version 54 {
     };
 
     // idx 0 members 143
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -45769,7 +45769,7 @@ version 54 {
     };
 
     // idx 1 members 98
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -45871,7 +45871,7 @@ version 54 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -45892,7 +45892,7 @@ version 54 {
     };
 
     // idx 3 members 43
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -45939,7 +45939,7 @@ version 54 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -45989,7 +45989,7 @@ version 54 {
     };
 
     // idx 5 members 35
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_kill_joy, // 0x1,
         zm_bgb_head_scan, // 0x2,
@@ -46028,7 +46028,7 @@ version 54 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -46043,21 +46043,21 @@ version 54 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -46092,17 +46092,17 @@ version 54 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0xf1f0
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x111e8, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x111e9, size 0x8f
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x11278, size 0x10
     bool extrabools[16];
     // offset 0x11288, size 0x1
@@ -46124,11 +46124,11 @@ version 54 {
     // offset 0x11290, size 0x1
     bool hash_289e1da441035808;
     // offset 0x11291, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x112bf, size 0x1
     bool completedfirsttimeflow;
     // offset 0x112c0, size 0x23
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x112e3, size 0x5
     uint:1 __pad[5];
 }
@@ -46159,7 +46159,7 @@ version 53 {
     };
 
     // idx 3 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -46203,7 +46203,7 @@ version 53 {
     // idx 7 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2b
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2b, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x33, size 0x200
@@ -46215,7 +46215,7 @@ version 53 {
     };
 
     // idx 8 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -46227,7 +46227,7 @@ version 53 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -46235,13 +46235,13 @@ version 53 {
     };
 
     // idx 10 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -46249,9 +46249,9 @@ version 53 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -46271,7 +46271,7 @@ version 53 {
     // idx 12 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -46279,9 +46279,9 @@ version 53 {
     // idx 13 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -46295,13 +46295,13 @@ version 53 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -46309,7 +46309,7 @@ version 53 {
     // idx 15 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -46319,7 +46319,7 @@ version 53 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 16 members 4 size 0x20
@@ -46351,7 +46351,7 @@ version 53 {
     };
 
     // idx 0 members 142
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -46497,7 +46497,7 @@ version 53 {
     };
 
     // idx 1 members 97
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -46598,7 +46598,7 @@ version 53 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -46619,7 +46619,7 @@ version 53 {
     };
 
     // idx 3 members 43
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -46666,7 +46666,7 @@ version 53 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -46716,7 +46716,7 @@ version 53 {
     };
 
     // idx 5 members 35
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_kill_joy, // 0x1,
         zm_bgb_head_scan, // 0x2,
@@ -46755,7 +46755,7 @@ version 53 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -46770,21 +46770,21 @@ version 53 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -46819,17 +46819,17 @@ version 53 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0xef78
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x10f70, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x10f71, size 0x8e
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x10fff, size 0x10
     bool extrabools[16];
     // offset 0x1100f, size 0x1
@@ -46851,11 +46851,11 @@ version 53 {
     // offset 0x11017, size 0x1
     bool hash_289e1da441035808;
     // offset 0x11018, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x11046, size 0x1
     bool completedfirsttimeflow;
     // offset 0x11047, size 0x23
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x1106a, size 0x6
     uint:1 __pad[6];
 }
@@ -46886,7 +46886,7 @@ version 52 {
     };
 
     // idx 3 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -46930,7 +46930,7 @@ version 52 {
     // idx 7 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2b
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2b, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x33, size 0x200
@@ -46942,7 +46942,7 @@ version 52 {
     };
 
     // idx 8 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -46954,7 +46954,7 @@ version 52 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -46962,13 +46962,13 @@ version 52 {
     };
 
     // idx 10 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -46976,9 +46976,9 @@ version 52 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -46998,7 +46998,7 @@ version 52 {
     // idx 12 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -47006,9 +47006,9 @@ version 52 {
     // idx 13 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -47022,13 +47022,13 @@ version 52 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -47036,7 +47036,7 @@ version 52 {
     // idx 15 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -47046,7 +47046,7 @@ version 52 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 16 members 4 size 0x20
@@ -47078,7 +47078,7 @@ version 52 {
     };
 
     // idx 0 members 137
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -47219,7 +47219,7 @@ version 52 {
     };
 
     // idx 1 members 93
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -47316,7 +47316,7 @@ version 52 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -47337,7 +47337,7 @@ version 52 {
     };
 
     // idx 3 members 43
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -47384,7 +47384,7 @@ version 52 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -47434,7 +47434,7 @@ version 52 {
     };
 
     // idx 5 members 35
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_kill_joy, // 0x1,
         zm_bgb_head_scan, // 0x2,
@@ -47473,7 +47473,7 @@ version 52 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -47488,21 +47488,21 @@ version 52 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -47537,17 +47537,17 @@ version 52 {
     // offset 0x1a30, size 0x20
     uint uploadbandwidth;
     // offset 0x1a50, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b38, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bf8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1ff8, size 0xe598
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x10590, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x10591, size 0x89
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x1061a, size 0x10
     bool extrabools[16];
     // offset 0x1062a, size 0x1
@@ -47569,11 +47569,11 @@ version 52 {
     // offset 0x10632, size 0x1
     bool hash_289e1da441035808;
     // offset 0x10633, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x10661, size 0x1
     bool completedfirsttimeflow;
     // offset 0x10662, size 0x23
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x10685, size 0x3
     uint:1 __pad[3];
 }
@@ -47604,7 +47604,7 @@ version 51 {
     };
 
     // idx 3 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -47648,7 +47648,7 @@ version 51 {
     // idx 7 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2b
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2b, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x33, size 0x200
@@ -47660,7 +47660,7 @@ version 51 {
     };
 
     // idx 8 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -47672,7 +47672,7 @@ version 51 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -47680,13 +47680,13 @@ version 51 {
     };
 
     // idx 10 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -47694,9 +47694,9 @@ version 51 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -47716,7 +47716,7 @@ version 51 {
     // idx 12 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -47724,9 +47724,9 @@ version 51 {
     // idx 13 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -47740,13 +47740,13 @@ version 51 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -47754,7 +47754,7 @@ version 51 {
     // idx 15 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -47764,7 +47764,7 @@ version 51 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 16 members 4 size 0x20
@@ -47796,7 +47796,7 @@ version 51 {
     };
 
     // idx 0 members 137
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -47937,7 +47937,7 @@ version 51 {
     };
 
     // idx 1 members 93
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -48034,7 +48034,7 @@ version 51 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -48055,7 +48055,7 @@ version 51 {
     };
 
     // idx 3 members 43
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -48102,7 +48102,7 @@ version 51 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -48152,7 +48152,7 @@ version 51 {
     };
 
     // idx 5 members 35
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_kill_joy, // 0x1,
         zm_bgb_head_scan, // 0x2,
@@ -48191,7 +48191,7 @@ version 51 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -48206,21 +48206,21 @@ version 51 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -48253,17 +48253,17 @@ version 51 {
     // offset 0x1a10, size 0x20
     uint uploadbandwidth;
     // offset 0x1a30, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b18, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bd8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1fd8, size 0xe598
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x10570, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x10571, size 0x89
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x105fa, size 0x10
     bool extrabools[16];
     // offset 0x1060a, size 0x1
@@ -48285,11 +48285,11 @@ version 51 {
     // offset 0x10612, size 0x1
     bool hash_289e1da441035808;
     // offset 0x10613, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x10641, size 0x1
     bool completedfirsttimeflow;
     // offset 0x10642, size 0x23
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x10665, size 0x3
     uint:1 __pad[3];
 }
@@ -48320,7 +48320,7 @@ version 50 {
     };
 
     // idx 3 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -48352,7 +48352,7 @@ version 50 {
     // idx 6 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2b
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2b, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x33, size 0x200
@@ -48364,7 +48364,7 @@ version 50 {
     };
 
     // idx 7 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -48376,7 +48376,7 @@ version 50 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -48384,13 +48384,13 @@ version 50 {
     };
 
     // idx 9 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -48398,9 +48398,9 @@ version 50 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -48420,7 +48420,7 @@ version 50 {
     // idx 11 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -48428,9 +48428,9 @@ version 50 {
     // idx 12 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -48444,13 +48444,13 @@ version 50 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -48458,7 +48458,7 @@ version 50 {
     // idx 14 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -48468,7 +48468,7 @@ version 50 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 15 members 4 size 0x20
@@ -48500,7 +48500,7 @@ version 50 {
     };
 
     // idx 0 members 137
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -48641,7 +48641,7 @@ version 50 {
     };
 
     // idx 1 members 93
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -48738,7 +48738,7 @@ version 50 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -48759,7 +48759,7 @@ version 50 {
     };
 
     // idx 3 members 43
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -48806,7 +48806,7 @@ version 50 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -48856,7 +48856,7 @@ version 50 {
     };
 
     // idx 5 members 35
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_kill_joy, // 0x1,
         zm_bgb_head_scan, // 0x2,
@@ -48895,7 +48895,7 @@ version 50 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -48910,21 +48910,21 @@ version 50 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -48957,17 +48957,17 @@ version 50 {
     // offset 0x1a10, size 0x20
     uint uploadbandwidth;
     // offset 0x1a30, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b18, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bd8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1fd8, size 0xe598
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x10570, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x10571, size 0x89
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x105fa, size 0x10
     bool extrabools[16];
     // offset 0x1060a, size 0x1
@@ -48989,11 +48989,11 @@ version 50 {
     // offset 0x10612, size 0x1
     bool hash_289e1da441035808;
     // offset 0x10613, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x10641, size 0x1
     bool completedfirsttimeflow;
     // offset 0x10642, size 0x23
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x10665, size 0x3
     uint:1 __pad[3];
 }
@@ -49024,7 +49024,7 @@ version 49 {
     };
 
     // idx 3 members 3 size 0x48
-    struct hash_18a8724145eb9652 {
+    struct uintchallenge {
         // offset 0x0, size 0x20
         uint challengevalue;
         // offset 0x20, size 0x20
@@ -49056,7 +49056,7 @@ version 49 {
     // idx 6 members 5 size 0x278
     struct hash_1898703fb0109487 {
         // offset 0x0, size 0x2d
-        bool hash_1ac5d98f9ecf4617[hash_50fac9e1dd6b8eca];
+        bool hash_1ac5d98f9ecf4617[zmattachments];
         // offset 0x2d, size 0x8
         bool hash_5d8e0e10a5664d5c[8];
         // offset 0x35, size 0x200
@@ -49068,7 +49068,7 @@ version 49 {
     };
 
     // idx 7 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -49080,7 +49080,7 @@ version 49 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -49088,13 +49088,13 @@ version 49 {
     };
 
     // idx 9 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -49102,9 +49102,9 @@ version 49 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -49124,7 +49124,7 @@ version 49 {
     // idx 11 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -49132,9 +49132,9 @@ version 49 {
     // idx 12 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -49148,13 +49148,13 @@ version 49 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -49162,7 +49162,7 @@ version 49 {
     // idx 14 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -49172,7 +49172,7 @@ version 49 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 15 members 4 size 0x20
@@ -49204,7 +49204,7 @@ version 49 {
     };
 
     // idx 0 members 136
-    enum hash_5eebfbb04245f834 {
+    enum zmitems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -49344,7 +49344,7 @@ version 49 {
     };
 
     // idx 1 members 93
-    enum hash_3d48a101d09c73b1 {
+    enum zmrankeditems {
         ww_blundergat_fire_t8, // 0x0,
         ww_tricannon_fire_t8, // 0x1,
         tr_powersemi_t8_upgraded, // 0x2,
@@ -49441,7 +49441,7 @@ version 49 {
     };
 
     // idx 2 members 17
-    enum hash_77b01c8d2f5181df {
+    enum zmitemgroups {
         specialty, // 0x0,
         bubblegum, // 0x1,
         hero, // 0x2,
@@ -49462,7 +49462,7 @@ version 49 {
     };
 
     // idx 3 members 45
-    enum hash_50fac9e1dd6b8eca {
+    enum zmattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -49511,7 +49511,7 @@ version 49 {
     };
 
     // idx 4 members 46
-    enum hash_467d26312a6276d8 {
+    enum zmspecialties {
         talisman_start_weapon_ar, // 0x0,
         talisman_box_guarantee_lmg, // 0x1,
         talisman_weapon_reducepapcost, // 0x2,
@@ -49561,7 +49561,7 @@ version 49 {
     };
 
     // idx 5 members 35
-    enum hash_3d41ec9f763b7890 {
+    enum zmbgbs {
         zm_bgb_cache_back, // 0x0,
         zm_bgb_kill_joy, // 0x1,
         zm_bgb_head_scan, // 0x2,
@@ -49600,7 +49600,7 @@ version 49 {
     };
 
     // idx 6 members 9
-    enum hash_24b9393a5db48d33 {
+    enum zmgametypes {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -49615,21 +49615,21 @@ version 49 {
     // idx 7 members 20
     enum zmcharacters {
         prt_zm_diego, // 0x0,
-        hash_14e91ceb9a7b3eb6, // 0x1,
-        hash_1a427f842f175b3c, // 0x2,
+        prt_zm_bruno_dlc0, // 0x1,
+        prt_zm_scarlett_dlc0, // 0x2,
         prt_zm_dempsey, // 0x3,
         prt_zm_nikolai, // 0x4,
-        hash_26072a3b34719d22, // 0x5,
+        prt_zm_diego_dlc0, // 0x5,
         prt_zm_richtofen_ofc, // 0x6,
         prt_zm_takeo, // 0x7,
         prt_zm_dempsey_ofc, // 0x8,
         prt_zm_brigadier, // 0x9,
-        hash_3e63362aea484e09, // 0xa,
+        prt_zm_stanton, // 0xa,
         prt_zm_nikolai_ofc, // 0xb,
         prt_zm_gunslinger, // 0xc,
-        hash_515977e191d13967, // 0xd,
+        prt_zm_psychic, // 0xd,
         prt_zm_richtofen, // 0xe,
-        hash_5a906d7137467771, // 0xf,
+        prt_zm_stanton_dlc0, // 0xf,
         prt_zm_butler, // 0x10,
         prt_zm_scarlett, // 0x11,
         prt_zm_takeo_ofc, // 0x12,
@@ -49662,17 +49662,17 @@ version 49 {
     // offset 0x1a10, size 0x20
     uint uploadbandwidth;
     // offset 0x1a30, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x1b18, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x1bd8, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x1fd8, size 0xe598
-    hash_1898703fb0109487 hash_6326a574b8674519[hash_3d48a101d09c73b1];
+    hash_1898703fb0109487 hash_6326a574b8674519[zmrankeditems];
     // offset 0x10570, size 0x1
     bool hash_1ddf1d6abb002f50;
     // offset 0x10571, size 0x88
-    bool hash_24b9a9540a303875[hash_5eebfbb04245f834];
+    bool hash_24b9a9540a303875[zmitems];
     // offset 0x105f9, size 0x10
     bool extrabools[16];
     // offset 0x10609, size 0x1
@@ -49694,11 +49694,11 @@ version 49 {
     // offset 0x10611, size 0x1
     bool hash_289e1da441035808;
     // offset 0x10612, size 0x2e
-    bool hash_5a4b44a7cb161266[hash_467d26312a6276d8];
+    bool hash_5a4b44a7cb161266[zmspecialties];
     // offset 0x10640, size 0x1
     bool completedfirsttimeflow;
     // offset 0x10641, size 0x23
-    bool hash_64aad149b477a6a3[hash_3d41ec9f763b7890];
+    bool hash_64aad149b477a6a3[zmbgbs];
     // offset 0x10664, size 0x4
     uint:1 __pad[4];
 }
@@ -49717,7 +49717,7 @@ version 48 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -49745,7 +49745,7 @@ version 48 {
     };
 
     // idx 4 members 24 size 0x388
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int kills;
         // offset 0x20, size 0x20
@@ -49797,17 +49797,17 @@ version 48 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -49943,13 +49943,13 @@ version 48 {
         // offset 0x468, size 0x28
         hash_6b3db80d498eb06 challenge10;
         // offset 0x490, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x850, size 0x28
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -49973,19 +49973,19 @@ version 48 {
     };
 
     // idx 15 members 4 size 0x3278
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x118
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x118, size 0x3138
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3250, size 0x10
         short vote_succeeded;
         // offset 0x3260, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x320
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x320
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -50015,7 +50015,7 @@ version 48 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x4a
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x6a, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x196, size 0x2
@@ -50023,7 +50023,7 @@ version 48 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -50035,7 +50035,7 @@ version 48 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -50043,13 +50043,13 @@ version 48 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -50057,9 +50057,9 @@ version 48 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -50079,7 +50079,7 @@ version 48 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -50087,9 +50087,9 @@ version 48 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -50103,13 +50103,13 @@ version 48 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -50217,7 +50217,7 @@ version 48 {
     // idx 36 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -50227,7 +50227,7 @@ version 48 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 0 members 358
@@ -50270,7 +50270,7 @@ version 48 {
         hash_c59a95e3be43538, // 0x23,
         points_spent, // 0x24,
         sacrifices, // 0x25,
-        hash_cd7cea298d209a0, // 0x26,
+        killed_by_hellhound, // 0x26,
         hero_weapon_power_pickedup, // 0x27,
         sessionbans, // 0x28,
         hash_cff2ec7244f14a8, // 0x29,
@@ -50405,7 +50405,7 @@ version 48 {
         zombie_hunter_kill_packapunch, // 0xaa,
         specialty_mod_armorvest_drank, // 0xab,
         bgb_tokens_used, // 0xac,
-        hash_3e1a66815798ba48, // 0xad,
+        survivalist_craftable, // 0xad,
         hash_3ebae93ea866519c, // 0xae,
         pack_a_punch_pickedup, // 0xaf,
         hash_3fa2584a22ebf623, // 0xb0,
@@ -50472,7 +50472,7 @@ version 48 {
         special_weapon_used, // 0xed,
         gum_gobbler_consume, // 0xee,
         specialty_cooldown_drank, // 0xef,
-        hash_53b7863a536e08fb, // 0xf0,
+        hellhounds_killed, // 0xf0,
         towers_acid_trap_built_odin, // 0xf1,
         paragon_rankxp, // 0xf2,
         grabbed_from_magicbox, // 0xf3,
@@ -50502,7 +50502,7 @@ version 48 {
         zm_daily_kills_headshots, // 0x10b,
         total_shots, // 0x10c,
         survivalist_buy_perk, // 0x10d,
-        hash_5c5cab0cce302a01, // 0x10e,
+        weekly_timestamp, // 0x10e,
         specialty_mod_cooldown_drank, // 0x10f,
         hash_5d098efca02f7c99, // 0x110,
         towers_acid_trap_built_danu, // 0x111,
@@ -50551,7 +50551,7 @@ version 48 {
         player_kills, // 0x13c,
         use_perk_random, // 0x13d,
         specialty_doubletap2_drank, // 0x13e,
-        hash_7283f3e1d914d95b, // 0x13f,
+        strategist_complete, // 0x13f,
         hash_7308e83074174e6a, // 0x140,
         hits, // 0x141,
         hash_733e96c5baacb1da, // 0x142,
@@ -50593,7 +50593,7 @@ version 48 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -50605,23 +50605,23 @@ version 48 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -50636,7 +50636,7 @@ version 48 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -50649,7 +50649,7 @@ version 48 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -50678,7 +50678,7 @@ version 48 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -50699,7 +50699,7 @@ version 48 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -50749,7 +50749,7 @@ version 48 {
     };
 
     // idx 12 members 74
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         burstcount, // 0x2,
@@ -50773,7 +50773,7 @@ version 48 {
         hipgrip, // 0x14,
         vzoom, // 0x15,
         supply, // 0x16,
-        hash_1186a81dc9223fb0, // 0x17,
+        dragonbreath, // 0x17,
         hash_130d0ba804c50f5d, // 0x18,
         stalker2, // 0x19,
         extclip2, // 0x1a,
@@ -50786,38 +50786,38 @@ version 48 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e203b811df0afcc, // 0x24,
+        firingunit, // 0x24,
         reddot, // 0x25,
         extclip, // 0x26,
-        hash_38719aa5d77f40e0, // 0x27,
-        hash_3c889e3a4e2d2669, // 0x28,
-        hash_3dec836e02d8b348, // 0x29,
+        burstaccelerator, // 0x27,
+        wildfire, // 0x28,
+        fatbarrel, // 0x29,
         holo, // 0x2a,
         elo, // 0x2b,
         fastreload2, // 0x2c,
         extrapellets, // 0x2d,
         holdbreath, // 0x2e,
         fmj2, // 0x2f,
-        hash_5852e05f7124f770, // 0x30,
-        hash_58fce02b5a5aa925, // 0x31,
+        boltcylinder, // 0x30,
+        burstfire, // 0x31,
         quickdraw2, // 0x32,
         fmj, // 0x33,
         adsreload, // 0x34,
-        hash_5e09bab29a8105f9, // 0x35,
-        hash_5e9a7aab94f60985, // 0x36,
+        speedcenter, // 0x35,
+        tacticalknife, // 0x36,
         hash_61d5e40b17986f13, // 0x37,
-        hash_656bc6b8a65407b6, // 0x38,
+        sentrygrip, // 0x38,
         suppressed, // 0x39,
         beltfed, // 0x3a,
         grip2, // 0x3b,
-        hash_6c9beb46519c5830, // 0x3c,
+        suppressivebarrel, // 0x3c,
         custom4, // 0x3d,
         custom5, // 0x3e,
         custom2, // 0x3f,
         custom3, // 0x40,
         custom1, // 0x41,
-        hash_70c5df826407902b, // 0x42,
-        hash_753ba170218ee392, // 0x43,
+        bayonet, // 0x42,
+        strobeflash, // 0x43,
         dualwield, // 0x44,
         dualoptic, // 0x45,
         grip, // 0x46,
@@ -50833,20 +50833,20 @@ version 48 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -50856,7 +50856,7 @@ version 48 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -50870,23 +50870,23 @@ version 48 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xe740
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x11f40, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x12140, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x12160, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x12180, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x121a0, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x122a0, size 0x27d80
     hash_1608f63ae729eda5 weaponstats[400];
     // offset 0x3a020, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x3a040, size 0x40
     uint64 connectionid;
     // offset 0x3a080, size 0x8
@@ -50900,49 +50900,49 @@ version 48 {
     // offset 0x3a0d0, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x3ad00, size 0xfc58
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x4a958, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x4bad8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x4bb18, size 0x4c38
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x50750, size 0x100
     byte demonwareflags[32];
     // offset 0x50850, size 0x20
     float skill_rating;
     // offset 0x50870, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x50990, size 0x20
     uint uploadbandwidth;
     // offset 0x509b0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x50af0, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x50bb0, size 0x8
     byte vialsowed;
     // offset 0x50bb8, size 0x20
     int motdviewtime;
     // offset 0x50bd8, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x50cc0, size 0x4b00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x557c0, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x55880, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x55c80, size 0x37f0
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x59470, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x59bf0, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x59c90, size 0x20
     float skill_variance;
     // offset 0x59cb0, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x59dd0, size 0x388
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x5a158, size 0x100
     byte unlocks[32];
     // offset 0x5a258, size 0x40
@@ -50970,7 +50970,7 @@ version 48 {
     // offset 0xe3926, size 0x1
     bool hash_35cdc5a3f423cdc3;
     // offset 0xe3927, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xe3967, size 0x1
     bool hash_529bb2c13ffc11c2;
     // offset 0xe3968, size 0x1
@@ -50982,7 +50982,7 @@ version 48 {
     // offset 0xe396b, size 0x1
     bool completedfirsttimeflow;
     // offset 0xe396c, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xe396f, size 0x1
     uint:1 __pad[1];
 }
@@ -51001,7 +51001,7 @@ version 47 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -51029,7 +51029,7 @@ version 47 {
     };
 
     // idx 4 members 24 size 0x388
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int kills;
         // offset 0x20, size 0x20
@@ -51081,17 +51081,17 @@ version 47 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -51227,13 +51227,13 @@ version 47 {
         // offset 0x468, size 0x28
         hash_6b3db80d498eb06 challenge10;
         // offset 0x490, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x850, size 0x28
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -51257,19 +51257,19 @@ version 47 {
     };
 
     // idx 15 members 4 size 0x3278
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x118
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x118, size 0x3138
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3250, size 0x10
         short vote_succeeded;
         // offset 0x3260, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x320
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x320
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -51299,7 +51299,7 @@ version 47 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x4a
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x6a, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x196, size 0x2
@@ -51307,7 +51307,7 @@ version 47 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -51319,7 +51319,7 @@ version 47 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -51327,13 +51327,13 @@ version 47 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -51341,9 +51341,9 @@ version 47 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -51363,7 +51363,7 @@ version 47 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -51371,9 +51371,9 @@ version 47 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -51387,13 +51387,13 @@ version 47 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -51501,7 +51501,7 @@ version 47 {
     // idx 36 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -51511,7 +51511,7 @@ version 47 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 0 members 338
@@ -51552,7 +51552,7 @@ version 47 {
         hash_c59a95e3be43538, // 0x21,
         points_spent, // 0x22,
         sacrifices, // 0x23,
-        hash_cd7cea298d209a0, // 0x24,
+        killed_by_hellhound, // 0x24,
         hero_weapon_power_pickedup, // 0x25,
         sessionbans, // 0x26,
         hash_cff2ec7244f14a8, // 0x27,
@@ -51678,7 +51678,7 @@ version 47 {
         zombie_hunter_kill_packapunch, // 0x9f,
         specialty_mod_armorvest_drank, // 0xa0,
         bgb_tokens_used, // 0xa1,
-        hash_3e1a66815798ba48, // 0xa2,
+        survivalist_craftable, // 0xa2,
         hash_3ebae93ea866519c, // 0xa3,
         pack_a_punch_pickedup, // 0xa4,
         hash_3fa2584a22ebf623, // 0xa5,
@@ -51741,7 +51741,7 @@ version 47 {
         special_weapon_used, // 0xde,
         gum_gobbler_consume, // 0xdf,
         specialty_cooldown_drank, // 0xe0,
-        hash_53b7863a536e08fb, // 0xe1,
+        hellhounds_killed, // 0xe1,
         towers_acid_trap_built_odin, // 0xe2,
         paragon_rankxp, // 0xe3,
         grabbed_from_magicbox, // 0xe4,
@@ -51768,7 +51768,7 @@ version 47 {
         zm_daily_kills_headshots, // 0xf9,
         total_shots, // 0xfa,
         survivalist_buy_perk, // 0xfb,
-        hash_5c5cab0cce302a01, // 0xfc,
+        weekly_timestamp, // 0xfc,
         specialty_mod_cooldown_drank, // 0xfd,
         hash_5d098efca02f7c99, // 0xfe,
         towers_acid_trap_built_danu, // 0xff,
@@ -51815,7 +51815,7 @@ version 47 {
         player_kills, // 0x128,
         use_perk_random, // 0x129,
         specialty_doubletap2_drank, // 0x12a,
-        hash_7283f3e1d914d95b, // 0x12b,
+        strategist_complete, // 0x12b,
         hash_7308e83074174e6a, // 0x12c,
         hits, // 0x12d,
         hash_733e96c5baacb1da, // 0x12e,
@@ -51857,7 +51857,7 @@ version 47 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -51869,23 +51869,23 @@ version 47 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -51900,7 +51900,7 @@ version 47 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -51913,7 +51913,7 @@ version 47 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -51942,7 +51942,7 @@ version 47 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -51963,7 +51963,7 @@ version 47 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -52013,7 +52013,7 @@ version 47 {
     };
 
     // idx 12 members 74
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         burstcount, // 0x2,
@@ -52037,7 +52037,7 @@ version 47 {
         hipgrip, // 0x14,
         vzoom, // 0x15,
         supply, // 0x16,
-        hash_1186a81dc9223fb0, // 0x17,
+        dragonbreath, // 0x17,
         hash_130d0ba804c50f5d, // 0x18,
         stalker2, // 0x19,
         extclip2, // 0x1a,
@@ -52050,38 +52050,38 @@ version 47 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e203b811df0afcc, // 0x24,
+        firingunit, // 0x24,
         reddot, // 0x25,
         extclip, // 0x26,
-        hash_38719aa5d77f40e0, // 0x27,
-        hash_3c889e3a4e2d2669, // 0x28,
-        hash_3dec836e02d8b348, // 0x29,
+        burstaccelerator, // 0x27,
+        wildfire, // 0x28,
+        fatbarrel, // 0x29,
         holo, // 0x2a,
         elo, // 0x2b,
         fastreload2, // 0x2c,
         extrapellets, // 0x2d,
         holdbreath, // 0x2e,
         fmj2, // 0x2f,
-        hash_5852e05f7124f770, // 0x30,
-        hash_58fce02b5a5aa925, // 0x31,
+        boltcylinder, // 0x30,
+        burstfire, // 0x31,
         quickdraw2, // 0x32,
         fmj, // 0x33,
         adsreload, // 0x34,
-        hash_5e09bab29a8105f9, // 0x35,
-        hash_5e9a7aab94f60985, // 0x36,
+        speedcenter, // 0x35,
+        tacticalknife, // 0x36,
         hash_61d5e40b17986f13, // 0x37,
-        hash_656bc6b8a65407b6, // 0x38,
+        sentrygrip, // 0x38,
         suppressed, // 0x39,
         beltfed, // 0x3a,
         grip2, // 0x3b,
-        hash_6c9beb46519c5830, // 0x3c,
+        suppressivebarrel, // 0x3c,
         custom4, // 0x3d,
         custom5, // 0x3e,
         custom2, // 0x3f,
         custom3, // 0x40,
         custom1, // 0x41,
-        hash_70c5df826407902b, // 0x42,
-        hash_753ba170218ee392, // 0x43,
+        bayonet, // 0x42,
+        strobeflash, // 0x43,
         dualwield, // 0x44,
         dualoptic, // 0x45,
         grip, // 0x46,
@@ -52097,20 +52097,20 @@ version 47 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -52120,7 +52120,7 @@ version 47 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -52134,23 +52134,23 @@ version 47 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xe740
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x11f40, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x12140, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x12160, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x12180, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x121a0, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x122a0, size 0x27d80
     hash_1608f63ae729eda5 weaponstats[400];
     // offset 0x3a020, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x3a040, size 0x40
     uint64 connectionid;
     // offset 0x3a080, size 0x8
@@ -52164,49 +52164,49 @@ version 47 {
     // offset 0x3a0d0, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x3ad00, size 0xfc58
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x4a958, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x4bad8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x4bb18, size 0x4c38
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x50750, size 0x100
     byte demonwareflags[32];
     // offset 0x50850, size 0x20
     float skill_rating;
     // offset 0x50870, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x50990, size 0x20
     uint uploadbandwidth;
     // offset 0x509b0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x50af0, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x50bb0, size 0x8
     byte vialsowed;
     // offset 0x50bb8, size 0x20
     int motdviewtime;
     // offset 0x50bd8, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x50cc0, size 0x4b00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x557c0, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x55880, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x55c80, size 0x34d0
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x59150, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x598d0, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x59970, size 0x20
     float skill_variance;
     // offset 0x59990, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x59ab0, size 0x388
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x59e38, size 0x100
     byte unlocks[32];
     // offset 0x59f38, size 0x40
@@ -52234,7 +52234,7 @@ version 47 {
     // offset 0xe3606, size 0x1
     bool hash_35cdc5a3f423cdc3;
     // offset 0xe3607, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xe3647, size 0x1
     bool hash_529bb2c13ffc11c2;
     // offset 0xe3648, size 0x1
@@ -52246,7 +52246,7 @@ version 47 {
     // offset 0xe364b, size 0x1
     bool completedfirsttimeflow;
     // offset 0xe364c, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xe364f, size 0x1
     uint:1 __pad[1];
 }
@@ -52265,7 +52265,7 @@ version 46 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -52293,7 +52293,7 @@ version 46 {
     };
 
     // idx 4 members 24 size 0x388
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int kills;
         // offset 0x20, size 0x20
@@ -52345,17 +52345,17 @@ version 46 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -52491,13 +52491,13 @@ version 46 {
         // offset 0x468, size 0x28
         hash_6b3db80d498eb06 challenge10;
         // offset 0x490, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x850, size 0x28
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -52521,19 +52521,19 @@ version 46 {
     };
 
     // idx 15 members 4 size 0x3278
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x118
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x118, size 0x3138
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3250, size 0x10
         short vote_succeeded;
         // offset 0x3260, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x320
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x320
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -52563,7 +52563,7 @@ version 46 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x4a
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x6a, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x196, size 0x2
@@ -52571,7 +52571,7 @@ version 46 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -52583,7 +52583,7 @@ version 46 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -52591,13 +52591,13 @@ version 46 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -52605,9 +52605,9 @@ version 46 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -52627,7 +52627,7 @@ version 46 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -52635,9 +52635,9 @@ version 46 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -52651,13 +52651,13 @@ version 46 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -52765,7 +52765,7 @@ version 46 {
     // idx 36 members 6 size 0xc0
     struct hash_6d7a1373d79780a5 {
         // offset 0x0, size 0x20
-        int hash_590227e36ca116c2;
+        int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
         int hash_5da867109e469462;
         // offset 0x40, size 0x20
@@ -52775,7 +52775,7 @@ version 46 {
         // offset 0x80, size 0x20
         int hash_2e8ad409e4ad1243;
         // offset 0xa0, size 0x20
-        int hash_5f35c3dbc90c6dfd;
+        int host_consecutive_disrupted_count_from_go;
     };
 
     // idx 0 members 337
@@ -52816,7 +52816,7 @@ version 46 {
         hash_c59a95e3be43538, // 0x21,
         points_spent, // 0x22,
         sacrifices, // 0x23,
-        hash_cd7cea298d209a0, // 0x24,
+        killed_by_hellhound, // 0x24,
         hero_weapon_power_pickedup, // 0x25,
         sessionbans, // 0x26,
         hash_cff2ec7244f14a8, // 0x27,
@@ -52942,7 +52942,7 @@ version 46 {
         zombie_hunter_kill_packapunch, // 0x9f,
         specialty_mod_armorvest_drank, // 0xa0,
         bgb_tokens_used, // 0xa1,
-        hash_3e1a66815798ba48, // 0xa2,
+        survivalist_craftable, // 0xa2,
         hash_3ebae93ea866519c, // 0xa3,
         pack_a_punch_pickedup, // 0xa4,
         hash_3fa2584a22ebf623, // 0xa5,
@@ -53004,7 +53004,7 @@ version 46 {
         zm_daily_purchase_magic_box, // 0xdd,
         gum_gobbler_consume, // 0xde,
         specialty_cooldown_drank, // 0xdf,
-        hash_53b7863a536e08fb, // 0xe0,
+        hellhounds_killed, // 0xe0,
         towers_acid_trap_built_odin, // 0xe1,
         paragon_rankxp, // 0xe2,
         grabbed_from_magicbox, // 0xe3,
@@ -53031,7 +53031,7 @@ version 46 {
         zm_daily_kills_headshots, // 0xf8,
         total_shots, // 0xf9,
         survivalist_buy_perk, // 0xfa,
-        hash_5c5cab0cce302a01, // 0xfb,
+        weekly_timestamp, // 0xfb,
         specialty_mod_cooldown_drank, // 0xfc,
         hash_5d098efca02f7c99, // 0xfd,
         towers_acid_trap_built_danu, // 0xfe,
@@ -53078,7 +53078,7 @@ version 46 {
         player_kills, // 0x127,
         use_perk_random, // 0x128,
         specialty_doubletap2_drank, // 0x129,
-        hash_7283f3e1d914d95b, // 0x12a,
+        strategist_complete, // 0x12a,
         hash_7308e83074174e6a, // 0x12b,
         hits, // 0x12c,
         hash_733e96c5baacb1da, // 0x12d,
@@ -53120,7 +53120,7 @@ version 46 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -53132,23 +53132,23 @@ version 46 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -53163,7 +53163,7 @@ version 46 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -53176,7 +53176,7 @@ version 46 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -53205,7 +53205,7 @@ version 46 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -53226,7 +53226,7 @@ version 46 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -53276,7 +53276,7 @@ version 46 {
     };
 
     // idx 12 members 74
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         burstcount, // 0x2,
@@ -53300,7 +53300,7 @@ version 46 {
         hipgrip, // 0x14,
         vzoom, // 0x15,
         supply, // 0x16,
-        hash_1186a81dc9223fb0, // 0x17,
+        dragonbreath, // 0x17,
         hash_130d0ba804c50f5d, // 0x18,
         stalker2, // 0x19,
         extclip2, // 0x1a,
@@ -53313,38 +53313,38 @@ version 46 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e203b811df0afcc, // 0x24,
+        firingunit, // 0x24,
         reddot, // 0x25,
         extclip, // 0x26,
-        hash_38719aa5d77f40e0, // 0x27,
-        hash_3c889e3a4e2d2669, // 0x28,
-        hash_3dec836e02d8b348, // 0x29,
+        burstaccelerator, // 0x27,
+        wildfire, // 0x28,
+        fatbarrel, // 0x29,
         holo, // 0x2a,
         elo, // 0x2b,
         fastreload2, // 0x2c,
         extrapellets, // 0x2d,
         holdbreath, // 0x2e,
         fmj2, // 0x2f,
-        hash_5852e05f7124f770, // 0x30,
-        hash_58fce02b5a5aa925, // 0x31,
+        boltcylinder, // 0x30,
+        burstfire, // 0x31,
         quickdraw2, // 0x32,
         fmj, // 0x33,
         adsreload, // 0x34,
-        hash_5e09bab29a8105f9, // 0x35,
-        hash_5e9a7aab94f60985, // 0x36,
+        speedcenter, // 0x35,
+        tacticalknife, // 0x36,
         hash_61d5e40b17986f13, // 0x37,
-        hash_656bc6b8a65407b6, // 0x38,
+        sentrygrip, // 0x38,
         suppressed, // 0x39,
         beltfed, // 0x3a,
         grip2, // 0x3b,
-        hash_6c9beb46519c5830, // 0x3c,
+        suppressivebarrel, // 0x3c,
         custom4, // 0x3d,
         custom5, // 0x3e,
         custom2, // 0x3f,
         custom3, // 0x40,
         custom1, // 0x41,
-        hash_70c5df826407902b, // 0x42,
-        hash_753ba170218ee392, // 0x43,
+        bayonet, // 0x42,
+        strobeflash, // 0x43,
         dualwield, // 0x44,
         dualoptic, // 0x45,
         grip, // 0x46,
@@ -53360,20 +53360,20 @@ version 46 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -53383,7 +53383,7 @@ version 46 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -53397,23 +53397,23 @@ version 46 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xe740
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x11f40, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x12140, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x12160, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x12180, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x121a0, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x122a0, size 0x27d80
     hash_1608f63ae729eda5 weaponstats[400];
     // offset 0x3a020, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x3a040, size 0x40
     uint64 connectionid;
     // offset 0x3a080, size 0x8
@@ -53427,49 +53427,49 @@ version 46 {
     // offset 0x3a0d0, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x3ad00, size 0xfc58
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x4a958, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x4bad8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x4bb18, size 0x4c38
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x50750, size 0x100
     byte demonwareflags[32];
     // offset 0x50850, size 0x20
     float skill_rating;
     // offset 0x50870, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x50990, size 0x20
     uint uploadbandwidth;
     // offset 0x509b0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x50af0, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x50bb0, size 0x8
     byte vialsowed;
     // offset 0x50bb8, size 0x20
     int motdviewtime;
     // offset 0x50bd8, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x50cc0, size 0x4b00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x557c0, size 0xc0
-    hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
+    hash_6d7a1373d79780a5 match_participation_history;
     // offset 0x55880, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x55c80, size 0x34a8
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x59128, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x598a8, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x59948, size 0x20
     float skill_variance;
     // offset 0x59968, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x59a88, size 0x388
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x59e10, size 0x100
     byte unlocks[32];
     // offset 0x59f10, size 0x40
@@ -53497,7 +53497,7 @@ version 46 {
     // offset 0xe35de, size 0x1
     bool hash_35cdc5a3f423cdc3;
     // offset 0xe35df, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xe361f, size 0x1
     bool hash_529bb2c13ffc11c2;
     // offset 0xe3620, size 0x1
@@ -53509,7 +53509,7 @@ version 46 {
     // offset 0xe3623, size 0x1
     bool completedfirsttimeflow;
     // offset 0xe3624, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xe3627, size 0x1
     uint:1 __pad[1];
 }
@@ -53528,7 +53528,7 @@ version 45 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -53556,7 +53556,7 @@ version 45 {
     };
 
     // idx 4 members 24 size 0x388
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int kills;
         // offset 0x20, size 0x20
@@ -53608,17 +53608,17 @@ version 45 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -53754,13 +53754,13 @@ version 45 {
         // offset 0x468, size 0x28
         hash_6b3db80d498eb06 challenge10;
         // offset 0x490, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x850, size 0x28
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -53784,19 +53784,19 @@ version 45 {
     };
 
     // idx 15 members 4 size 0x3278
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x118
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x118, size 0x3138
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3250, size 0x10
         short vote_succeeded;
         // offset 0x3260, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x320
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x320
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -53826,7 +53826,7 @@ version 45 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x4a
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x6a, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x196, size 0x2
@@ -53834,7 +53834,7 @@ version 45 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -53846,7 +53846,7 @@ version 45 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -53854,13 +53854,13 @@ version 45 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -53868,9 +53868,9 @@ version 45 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -53890,7 +53890,7 @@ version 45 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -53898,9 +53898,9 @@ version 45 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -53914,13 +53914,13 @@ version 45 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -54063,7 +54063,7 @@ version 45 {
         hash_c59a95e3be43538, // 0x21,
         points_spent, // 0x22,
         sacrifices, // 0x23,
-        hash_cd7cea298d209a0, // 0x24,
+        killed_by_hellhound, // 0x24,
         hero_weapon_power_pickedup, // 0x25,
         sessionbans, // 0x26,
         hash_cff2ec7244f14a8, // 0x27,
@@ -54189,7 +54189,7 @@ version 45 {
         zombie_hunter_kill_packapunch, // 0x9f,
         specialty_mod_armorvest_drank, // 0xa0,
         bgb_tokens_used, // 0xa1,
-        hash_3e1a66815798ba48, // 0xa2,
+        survivalist_craftable, // 0xa2,
         hash_3ebae93ea866519c, // 0xa3,
         pack_a_punch_pickedup, // 0xa4,
         hash_3fa2584a22ebf623, // 0xa5,
@@ -54251,7 +54251,7 @@ version 45 {
         zm_daily_purchase_magic_box, // 0xdd,
         gum_gobbler_consume, // 0xde,
         specialty_cooldown_drank, // 0xdf,
-        hash_53b7863a536e08fb, // 0xe0,
+        hellhounds_killed, // 0xe0,
         towers_acid_trap_built_odin, // 0xe1,
         paragon_rankxp, // 0xe2,
         grabbed_from_magicbox, // 0xe3,
@@ -54278,7 +54278,7 @@ version 45 {
         zm_daily_kills_headshots, // 0xf8,
         total_shots, // 0xf9,
         survivalist_buy_perk, // 0xfa,
-        hash_5c5cab0cce302a01, // 0xfb,
+        weekly_timestamp, // 0xfb,
         specialty_mod_cooldown_drank, // 0xfc,
         hash_5d098efca02f7c99, // 0xfd,
         towers_acid_trap_built_danu, // 0xfe,
@@ -54325,7 +54325,7 @@ version 45 {
         player_kills, // 0x127,
         use_perk_random, // 0x128,
         specialty_doubletap2_drank, // 0x129,
-        hash_7283f3e1d914d95b, // 0x12a,
+        strategist_complete, // 0x12a,
         hash_7308e83074174e6a, // 0x12b,
         hits, // 0x12c,
         hash_733e96c5baacb1da, // 0x12d,
@@ -54367,7 +54367,7 @@ version 45 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -54379,23 +54379,23 @@ version 45 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -54410,7 +54410,7 @@ version 45 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -54423,7 +54423,7 @@ version 45 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -54452,7 +54452,7 @@ version 45 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -54473,7 +54473,7 @@ version 45 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -54523,7 +54523,7 @@ version 45 {
     };
 
     // idx 12 members 74
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         burstcount, // 0x2,
@@ -54547,7 +54547,7 @@ version 45 {
         hipgrip, // 0x14,
         vzoom, // 0x15,
         supply, // 0x16,
-        hash_1186a81dc9223fb0, // 0x17,
+        dragonbreath, // 0x17,
         hash_130d0ba804c50f5d, // 0x18,
         stalker2, // 0x19,
         extclip2, // 0x1a,
@@ -54560,38 +54560,38 @@ version 45 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e203b811df0afcc, // 0x24,
+        firingunit, // 0x24,
         reddot, // 0x25,
         extclip, // 0x26,
-        hash_38719aa5d77f40e0, // 0x27,
-        hash_3c889e3a4e2d2669, // 0x28,
-        hash_3dec836e02d8b348, // 0x29,
+        burstaccelerator, // 0x27,
+        wildfire, // 0x28,
+        fatbarrel, // 0x29,
         holo, // 0x2a,
         elo, // 0x2b,
         fastreload2, // 0x2c,
         extrapellets, // 0x2d,
         holdbreath, // 0x2e,
         fmj2, // 0x2f,
-        hash_5852e05f7124f770, // 0x30,
-        hash_58fce02b5a5aa925, // 0x31,
+        boltcylinder, // 0x30,
+        burstfire, // 0x31,
         quickdraw2, // 0x32,
         fmj, // 0x33,
         adsreload, // 0x34,
-        hash_5e09bab29a8105f9, // 0x35,
-        hash_5e9a7aab94f60985, // 0x36,
+        speedcenter, // 0x35,
+        tacticalknife, // 0x36,
         hash_61d5e40b17986f13, // 0x37,
-        hash_656bc6b8a65407b6, // 0x38,
+        sentrygrip, // 0x38,
         suppressed, // 0x39,
         beltfed, // 0x3a,
         grip2, // 0x3b,
-        hash_6c9beb46519c5830, // 0x3c,
+        suppressivebarrel, // 0x3c,
         custom4, // 0x3d,
         custom5, // 0x3e,
         custom2, // 0x3f,
         custom3, // 0x40,
         custom1, // 0x41,
-        hash_70c5df826407902b, // 0x42,
-        hash_753ba170218ee392, // 0x43,
+        bayonet, // 0x42,
+        strobeflash, // 0x43,
         dualwield, // 0x44,
         dualoptic, // 0x45,
         grip, // 0x46,
@@ -54607,20 +54607,20 @@ version 45 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -54630,7 +54630,7 @@ version 45 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -54644,23 +54644,23 @@ version 45 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xe740
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x11f40, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x12140, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x12160, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x12180, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x121a0, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x122a0, size 0x27d80
     hash_1608f63ae729eda5 weaponstats[400];
     // offset 0x3a020, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x3a040, size 0x40
     uint64 connectionid;
     // offset 0x3a080, size 0x8
@@ -54674,47 +54674,47 @@ version 45 {
     // offset 0x3a0d0, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x3ad00, size 0xfc58
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x4a958, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x4bad8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x4bb18, size 0x4c38
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x50750, size 0x100
     byte demonwareflags[32];
     // offset 0x50850, size 0x20
     float skill_rating;
     // offset 0x50870, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x50990, size 0x20
     uint uploadbandwidth;
     // offset 0x509b0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x50af0, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x50bb0, size 0x8
     byte vialsowed;
     // offset 0x50bb8, size 0x20
     int motdviewtime;
     // offset 0x50bd8, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x50cc0, size 0x4b00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x557c0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x55bc0, size 0x34a8
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x59068, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x597e8, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x59888, size 0x20
     float skill_variance;
     // offset 0x598a8, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x599c8, size 0x388
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x59d50, size 0x100
     byte unlocks[32];
     // offset 0x59e50, size 0x40
@@ -54742,7 +54742,7 @@ version 45 {
     // offset 0xe351e, size 0x1
     bool hash_35cdc5a3f423cdc3;
     // offset 0xe351f, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xe355f, size 0x1
     bool hash_529bb2c13ffc11c2;
     // offset 0xe3560, size 0x1
@@ -54754,7 +54754,7 @@ version 45 {
     // offset 0xe3563, size 0x1
     bool completedfirsttimeflow;
     // offset 0xe3564, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xe3567, size 0x1
     uint:1 __pad[1];
 }
@@ -54773,7 +54773,7 @@ version 44 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -54801,7 +54801,7 @@ version 44 {
     };
 
     // idx 4 members 24 size 0x388
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int kills;
         // offset 0x20, size 0x20
@@ -54853,17 +54853,17 @@ version 44 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -54999,13 +54999,13 @@ version 44 {
         // offset 0x468, size 0x28
         hash_6b3db80d498eb06 challenge10;
         // offset 0x490, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x850, size 0x28
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -55029,19 +55029,19 @@ version 44 {
     };
 
     // idx 15 members 4 size 0x3278
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x118
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x118, size 0x3138
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3250, size 0x10
         short vote_succeeded;
         // offset 0x3260, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x320
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x320
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -55071,7 +55071,7 @@ version 44 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x4a
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x6a, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x196, size 0x2
@@ -55079,7 +55079,7 @@ version 44 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -55091,7 +55091,7 @@ version 44 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -55099,13 +55099,13 @@ version 44 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -55113,9 +55113,9 @@ version 44 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -55135,7 +55135,7 @@ version 44 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -55143,9 +55143,9 @@ version 44 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -55159,13 +55159,13 @@ version 44 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -55308,7 +55308,7 @@ version 44 {
         hash_c59a95e3be43538, // 0x21,
         points_spent, // 0x22,
         sacrifices, // 0x23,
-        hash_cd7cea298d209a0, // 0x24,
+        killed_by_hellhound, // 0x24,
         hero_weapon_power_pickedup, // 0x25,
         sessionbans, // 0x26,
         hash_cff2ec7244f14a8, // 0x27,
@@ -55434,7 +55434,7 @@ version 44 {
         zombie_hunter_kill_packapunch, // 0x9f,
         specialty_mod_armorvest_drank, // 0xa0,
         bgb_tokens_used, // 0xa1,
-        hash_3e1a66815798ba48, // 0xa2,
+        survivalist_craftable, // 0xa2,
         hash_3ebae93ea866519c, // 0xa3,
         pack_a_punch_pickedup, // 0xa4,
         hash_3fa2584a22ebf623, // 0xa5,
@@ -55496,7 +55496,7 @@ version 44 {
         zm_daily_purchase_magic_box, // 0xdd,
         gum_gobbler_consume, // 0xde,
         specialty_cooldown_drank, // 0xdf,
-        hash_53b7863a536e08fb, // 0xe0,
+        hellhounds_killed, // 0xe0,
         towers_acid_trap_built_odin, // 0xe1,
         paragon_rankxp, // 0xe2,
         grabbed_from_magicbox, // 0xe3,
@@ -55523,7 +55523,7 @@ version 44 {
         zm_daily_kills_headshots, // 0xf8,
         total_shots, // 0xf9,
         survivalist_buy_perk, // 0xfa,
-        hash_5c5cab0cce302a01, // 0xfb,
+        weekly_timestamp, // 0xfb,
         specialty_mod_cooldown_drank, // 0xfc,
         hash_5d098efca02f7c99, // 0xfd,
         towers_acid_trap_built_danu, // 0xfe,
@@ -55570,7 +55570,7 @@ version 44 {
         player_kills, // 0x127,
         use_perk_random, // 0x128,
         specialty_doubletap2_drank, // 0x129,
-        hash_7283f3e1d914d95b, // 0x12a,
+        strategist_complete, // 0x12a,
         hash_7308e83074174e6a, // 0x12b,
         hits, // 0x12c,
         hash_733e96c5baacb1da, // 0x12d,
@@ -55612,7 +55612,7 @@ version 44 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -55624,23 +55624,23 @@ version 44 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -55655,7 +55655,7 @@ version 44 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -55668,7 +55668,7 @@ version 44 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -55697,7 +55697,7 @@ version 44 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -55718,7 +55718,7 @@ version 44 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -55768,7 +55768,7 @@ version 44 {
     };
 
     // idx 12 members 74
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         burstcount, // 0x2,
@@ -55792,7 +55792,7 @@ version 44 {
         hipgrip, // 0x14,
         vzoom, // 0x15,
         supply, // 0x16,
-        hash_1186a81dc9223fb0, // 0x17,
+        dragonbreath, // 0x17,
         hash_130d0ba804c50f5d, // 0x18,
         stalker2, // 0x19,
         extclip2, // 0x1a,
@@ -55805,38 +55805,38 @@ version 44 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e203b811df0afcc, // 0x24,
+        firingunit, // 0x24,
         reddot, // 0x25,
         extclip, // 0x26,
-        hash_38719aa5d77f40e0, // 0x27,
-        hash_3c889e3a4e2d2669, // 0x28,
-        hash_3dec836e02d8b348, // 0x29,
+        burstaccelerator, // 0x27,
+        wildfire, // 0x28,
+        fatbarrel, // 0x29,
         holo, // 0x2a,
         elo, // 0x2b,
         fastreload2, // 0x2c,
         extrapellets, // 0x2d,
         holdbreath, // 0x2e,
         fmj2, // 0x2f,
-        hash_5852e05f7124f770, // 0x30,
-        hash_58fce02b5a5aa925, // 0x31,
+        boltcylinder, // 0x30,
+        burstfire, // 0x31,
         quickdraw2, // 0x32,
         fmj, // 0x33,
         adsreload, // 0x34,
-        hash_5e09bab29a8105f9, // 0x35,
-        hash_5e9a7aab94f60985, // 0x36,
+        speedcenter, // 0x35,
+        tacticalknife, // 0x36,
         hash_61d5e40b17986f13, // 0x37,
-        hash_656bc6b8a65407b6, // 0x38,
+        sentrygrip, // 0x38,
         suppressed, // 0x39,
         beltfed, // 0x3a,
         grip2, // 0x3b,
-        hash_6c9beb46519c5830, // 0x3c,
+        suppressivebarrel, // 0x3c,
         custom4, // 0x3d,
         custom5, // 0x3e,
         custom2, // 0x3f,
         custom3, // 0x40,
         custom1, // 0x41,
-        hash_70c5df826407902b, // 0x42,
-        hash_753ba170218ee392, // 0x43,
+        bayonet, // 0x42,
+        strobeflash, // 0x43,
         dualwield, // 0x44,
         dualoptic, // 0x45,
         grip, // 0x46,
@@ -55852,20 +55852,20 @@ version 44 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -55875,7 +55875,7 @@ version 44 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -55889,23 +55889,23 @@ version 44 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xe740
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x11f40, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x12140, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x12160, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x12180, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x121a0, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x122a0, size 0x27d80
     hash_1608f63ae729eda5 weaponstats[400];
     // offset 0x3a020, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x3a040, size 0x40
     uint64 connectionid;
     // offset 0x3a080, size 0x8
@@ -55919,47 +55919,47 @@ version 44 {
     // offset 0x3a0d0, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x3ad00, size 0xfc58
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x4a958, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x4bad8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x4bb18, size 0x4c38
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x50750, size 0x100
     byte demonwareflags[32];
     // offset 0x50850, size 0x20
     float skill_rating;
     // offset 0x50870, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x50990, size 0x20
     uint uploadbandwidth;
     // offset 0x509b0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x50af0, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x50bb0, size 0x8
     byte vialsowed;
     // offset 0x50bb8, size 0x20
     int motdviewtime;
     // offset 0x50bd8, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x50cc0, size 0x4b00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x557c0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x55bc0, size 0x34a8
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x59068, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x597e8, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x59888, size 0x20
     float skill_variance;
     // offset 0x598a8, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x599c8, size 0x388
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x59d50, size 0x100
     byte unlocks[32];
     // offset 0x59e50, size 0x40
@@ -55977,7 +55977,7 @@ version 44 {
     // offset 0xe3519, size 0x1
     bool hash_35cdc5a3f423cdc3;
     // offset 0xe351a, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xe355a, size 0x1
     bool hash_529bb2c13ffc11c2;
     // offset 0xe355b, size 0x1
@@ -55989,7 +55989,7 @@ version 44 {
     // offset 0xe355e, size 0x1
     bool completedfirsttimeflow;
     // offset 0xe355f, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xe3562, size 0x6
     uint:1 __pad[6];
 }
@@ -56008,7 +56008,7 @@ version 43 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -56036,7 +56036,7 @@ version 43 {
     };
 
     // idx 4 members 24 size 0x388
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int kills;
         // offset 0x20, size 0x20
@@ -56088,17 +56088,17 @@ version 43 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -56234,13 +56234,13 @@ version 43 {
         // offset 0x468, size 0x28
         hash_6b3db80d498eb06 challenge10;
         // offset 0x490, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x850, size 0x28
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -56264,19 +56264,19 @@ version 43 {
     };
 
     // idx 15 members 4 size 0x3278
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x118
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x118, size 0x3138
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3250, size 0x10
         short vote_succeeded;
         // offset 0x3260, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x320
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x320
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -56306,7 +56306,7 @@ version 43 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x4a
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x6a, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x196, size 0x2
@@ -56314,7 +56314,7 @@ version 43 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -56326,7 +56326,7 @@ version 43 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -56334,13 +56334,13 @@ version 43 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -56348,9 +56348,9 @@ version 43 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -56370,7 +56370,7 @@ version 43 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -56378,9 +56378,9 @@ version 43 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -56394,13 +56394,13 @@ version 43 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -56543,7 +56543,7 @@ version 43 {
         hash_c59a95e3be43538, // 0x21,
         points_spent, // 0x22,
         sacrifices, // 0x23,
-        hash_cd7cea298d209a0, // 0x24,
+        killed_by_hellhound, // 0x24,
         hero_weapon_power_pickedup, // 0x25,
         sessionbans, // 0x26,
         hash_cff2ec7244f14a8, // 0x27,
@@ -56669,7 +56669,7 @@ version 43 {
         zombie_hunter_kill_packapunch, // 0x9f,
         specialty_mod_armorvest_drank, // 0xa0,
         bgb_tokens_used, // 0xa1,
-        hash_3e1a66815798ba48, // 0xa2,
+        survivalist_craftable, // 0xa2,
         hash_3ebae93ea866519c, // 0xa3,
         pack_a_punch_pickedup, // 0xa4,
         hash_3fa2584a22ebf623, // 0xa5,
@@ -56731,7 +56731,7 @@ version 43 {
         zm_daily_purchase_magic_box, // 0xdd,
         gum_gobbler_consume, // 0xde,
         specialty_cooldown_drank, // 0xdf,
-        hash_53b7863a536e08fb, // 0xe0,
+        hellhounds_killed, // 0xe0,
         towers_acid_trap_built_odin, // 0xe1,
         paragon_rankxp, // 0xe2,
         grabbed_from_magicbox, // 0xe3,
@@ -56758,7 +56758,7 @@ version 43 {
         zm_daily_kills_headshots, // 0xf8,
         total_shots, // 0xf9,
         survivalist_buy_perk, // 0xfa,
-        hash_5c5cab0cce302a01, // 0xfb,
+        weekly_timestamp, // 0xfb,
         specialty_mod_cooldown_drank, // 0xfc,
         hash_5d098efca02f7c99, // 0xfd,
         towers_acid_trap_built_danu, // 0xfe,
@@ -56805,7 +56805,7 @@ version 43 {
         player_kills, // 0x127,
         use_perk_random, // 0x128,
         specialty_doubletap2_drank, // 0x129,
-        hash_7283f3e1d914d95b, // 0x12a,
+        strategist_complete, // 0x12a,
         hash_7308e83074174e6a, // 0x12b,
         hits, // 0x12c,
         hash_733e96c5baacb1da, // 0x12d,
@@ -56847,7 +56847,7 @@ version 43 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -56859,23 +56859,23 @@ version 43 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -56890,7 +56890,7 @@ version 43 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -56903,7 +56903,7 @@ version 43 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -56932,7 +56932,7 @@ version 43 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -56953,7 +56953,7 @@ version 43 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -57003,7 +57003,7 @@ version 43 {
     };
 
     // idx 12 members 74
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         burstcount, // 0x2,
@@ -57027,7 +57027,7 @@ version 43 {
         hipgrip, // 0x14,
         vzoom, // 0x15,
         supply, // 0x16,
-        hash_1186a81dc9223fb0, // 0x17,
+        dragonbreath, // 0x17,
         hash_130d0ba804c50f5d, // 0x18,
         stalker2, // 0x19,
         extclip2, // 0x1a,
@@ -57040,38 +57040,38 @@ version 43 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e203b811df0afcc, // 0x24,
+        firingunit, // 0x24,
         reddot, // 0x25,
         extclip, // 0x26,
-        hash_38719aa5d77f40e0, // 0x27,
-        hash_3c889e3a4e2d2669, // 0x28,
-        hash_3dec836e02d8b348, // 0x29,
+        burstaccelerator, // 0x27,
+        wildfire, // 0x28,
+        fatbarrel, // 0x29,
         holo, // 0x2a,
         elo, // 0x2b,
         fastreload2, // 0x2c,
         extrapellets, // 0x2d,
         holdbreath, // 0x2e,
         fmj2, // 0x2f,
-        hash_5852e05f7124f770, // 0x30,
-        hash_58fce02b5a5aa925, // 0x31,
+        boltcylinder, // 0x30,
+        burstfire, // 0x31,
         quickdraw2, // 0x32,
         fmj, // 0x33,
         adsreload, // 0x34,
-        hash_5e09bab29a8105f9, // 0x35,
-        hash_5e9a7aab94f60985, // 0x36,
+        speedcenter, // 0x35,
+        tacticalknife, // 0x36,
         hash_61d5e40b17986f13, // 0x37,
-        hash_656bc6b8a65407b6, // 0x38,
+        sentrygrip, // 0x38,
         suppressed, // 0x39,
         beltfed, // 0x3a,
         grip2, // 0x3b,
-        hash_6c9beb46519c5830, // 0x3c,
+        suppressivebarrel, // 0x3c,
         custom4, // 0x3d,
         custom5, // 0x3e,
         custom2, // 0x3f,
         custom3, // 0x40,
         custom1, // 0x41,
-        hash_70c5df826407902b, // 0x42,
-        hash_753ba170218ee392, // 0x43,
+        bayonet, // 0x42,
+        strobeflash, // 0x43,
         dualwield, // 0x44,
         dualoptic, // 0x45,
         grip, // 0x46,
@@ -57087,20 +57087,20 @@ version 43 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -57110,7 +57110,7 @@ version 43 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -57124,23 +57124,23 @@ version 43 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xe740
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x11f40, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x12140, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x12160, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x12180, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x121a0, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x122a0, size 0x27d80
     hash_1608f63ae729eda5 weaponstats[400];
     // offset 0x3a020, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x3a040, size 0x40
     uint64 connectionid;
     // offset 0x3a080, size 0x8
@@ -57154,47 +57154,47 @@ version 43 {
     // offset 0x3a0d0, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x3ad00, size 0xfc58
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x4a958, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x4bad8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x4bb18, size 0x4c38
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x50750, size 0x100
     byte demonwareflags[32];
     // offset 0x50850, size 0x20
     float skill_rating;
     // offset 0x50870, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x50990, size 0x20
     uint uploadbandwidth;
     // offset 0x509b0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x50af0, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x50bb0, size 0x8
     byte vialsowed;
     // offset 0x50bb8, size 0x20
     int motdviewtime;
     // offset 0x50bd8, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x50cc0, size 0x4b00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x557c0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x55bc0, size 0x34a8
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x59068, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x597e8, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x59888, size 0x20
     float skill_variance;
     // offset 0x598a8, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x599c8, size 0x388
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x59d50, size 0x100
     byte unlocks[32];
     // offset 0x59e50, size 0x40
@@ -57208,13 +57208,13 @@ version 43 {
     // offset 0xe34f8, size 0x20
     bool musicunlocks[32];
     // offset 0xe3518, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xe3558, size 0x1
     bool hash_1892554e7234468;
     // offset 0xe3559, size 0x1
     bool completedfirsttimeflow;
     // offset 0xe355a, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xe355d, size 0x3
     uint:1 __pad[3];
 }
@@ -57233,7 +57233,7 @@ version 42 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -57261,7 +57261,7 @@ version 42 {
     };
 
     // idx 4 members 24 size 0x388
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int kills;
         // offset 0x20, size 0x20
@@ -57313,17 +57313,17 @@ version 42 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -57459,13 +57459,13 @@ version 42 {
         // offset 0x468, size 0x28
         hash_6b3db80d498eb06 challenge10;
         // offset 0x490, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x850, size 0x28
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -57489,19 +57489,19 @@ version 42 {
     };
 
     // idx 15 members 4 size 0x3278
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x118
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x118, size 0x3138
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3250, size 0x10
         short vote_succeeded;
         // offset 0x3260, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x320
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x320
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -57531,7 +57531,7 @@ version 42 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x4a
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x6a, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x196, size 0x2
@@ -57539,7 +57539,7 @@ version 42 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -57551,7 +57551,7 @@ version 42 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -57559,13 +57559,13 @@ version 42 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -57573,9 +57573,9 @@ version 42 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -57595,7 +57595,7 @@ version 42 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -57603,9 +57603,9 @@ version 42 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -57619,13 +57619,13 @@ version 42 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -57768,7 +57768,7 @@ version 42 {
         hash_c59a95e3be43538, // 0x21,
         points_spent, // 0x22,
         sacrifices, // 0x23,
-        hash_cd7cea298d209a0, // 0x24,
+        killed_by_hellhound, // 0x24,
         hero_weapon_power_pickedup, // 0x25,
         sessionbans, // 0x26,
         hash_cff2ec7244f14a8, // 0x27,
@@ -57893,7 +57893,7 @@ version 42 {
         zombie_hunter_kill_packapunch, // 0x9e,
         specialty_mod_armorvest_drank, // 0x9f,
         bgb_tokens_used, // 0xa0,
-        hash_3e1a66815798ba48, // 0xa1,
+        survivalist_craftable, // 0xa1,
         hash_3ebae93ea866519c, // 0xa2,
         pack_a_punch_pickedup, // 0xa3,
         hash_3fa2584a22ebf623, // 0xa4,
@@ -57955,7 +57955,7 @@ version 42 {
         zm_daily_purchase_magic_box, // 0xdc,
         gum_gobbler_consume, // 0xdd,
         specialty_cooldown_drank, // 0xde,
-        hash_53b7863a536e08fb, // 0xdf,
+        hellhounds_killed, // 0xdf,
         towers_acid_trap_built_odin, // 0xe0,
         paragon_rankxp, // 0xe1,
         grabbed_from_magicbox, // 0xe2,
@@ -57982,7 +57982,7 @@ version 42 {
         zm_daily_kills_headshots, // 0xf7,
         total_shots, // 0xf8,
         survivalist_buy_perk, // 0xf9,
-        hash_5c5cab0cce302a01, // 0xfa,
+        weekly_timestamp, // 0xfa,
         specialty_mod_cooldown_drank, // 0xfb,
         hash_5d098efca02f7c99, // 0xfc,
         towers_acid_trap_built_danu, // 0xfd,
@@ -58029,7 +58029,7 @@ version 42 {
         player_kills, // 0x126,
         use_perk_random, // 0x127,
         specialty_doubletap2_drank, // 0x128,
-        hash_7283f3e1d914d95b, // 0x129,
+        strategist_complete, // 0x129,
         hash_7308e83074174e6a, // 0x12a,
         hits, // 0x12b,
         hash_733e96c5baacb1da, // 0x12c,
@@ -58071,7 +58071,7 @@ version 42 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -58083,23 +58083,23 @@ version 42 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -58114,7 +58114,7 @@ version 42 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -58127,7 +58127,7 @@ version 42 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -58156,7 +58156,7 @@ version 42 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -58177,7 +58177,7 @@ version 42 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -58227,7 +58227,7 @@ version 42 {
     };
 
     // idx 12 members 74
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         burstcount, // 0x2,
@@ -58251,7 +58251,7 @@ version 42 {
         hipgrip, // 0x14,
         vzoom, // 0x15,
         supply, // 0x16,
-        hash_1186a81dc9223fb0, // 0x17,
+        dragonbreath, // 0x17,
         hash_130d0ba804c50f5d, // 0x18,
         stalker2, // 0x19,
         extclip2, // 0x1a,
@@ -58264,38 +58264,38 @@ version 42 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e203b811df0afcc, // 0x24,
+        firingunit, // 0x24,
         reddot, // 0x25,
         extclip, // 0x26,
-        hash_38719aa5d77f40e0, // 0x27,
-        hash_3c889e3a4e2d2669, // 0x28,
-        hash_3dec836e02d8b348, // 0x29,
+        burstaccelerator, // 0x27,
+        wildfire, // 0x28,
+        fatbarrel, // 0x29,
         holo, // 0x2a,
         elo, // 0x2b,
         fastreload2, // 0x2c,
         extrapellets, // 0x2d,
         holdbreath, // 0x2e,
         fmj2, // 0x2f,
-        hash_5852e05f7124f770, // 0x30,
-        hash_58fce02b5a5aa925, // 0x31,
+        boltcylinder, // 0x30,
+        burstfire, // 0x31,
         quickdraw2, // 0x32,
         fmj, // 0x33,
         adsreload, // 0x34,
-        hash_5e09bab29a8105f9, // 0x35,
-        hash_5e9a7aab94f60985, // 0x36,
+        speedcenter, // 0x35,
+        tacticalknife, // 0x36,
         hash_61d5e40b17986f13, // 0x37,
-        hash_656bc6b8a65407b6, // 0x38,
+        sentrygrip, // 0x38,
         suppressed, // 0x39,
         beltfed, // 0x3a,
         grip2, // 0x3b,
-        hash_6c9beb46519c5830, // 0x3c,
+        suppressivebarrel, // 0x3c,
         custom4, // 0x3d,
         custom5, // 0x3e,
         custom2, // 0x3f,
         custom3, // 0x40,
         custom1, // 0x41,
-        hash_70c5df826407902b, // 0x42,
-        hash_753ba170218ee392, // 0x43,
+        bayonet, // 0x42,
+        strobeflash, // 0x43,
         dualwield, // 0x44,
         dualoptic, // 0x45,
         grip, // 0x46,
@@ -58311,20 +58311,20 @@ version 42 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -58334,7 +58334,7 @@ version 42 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -58348,23 +58348,23 @@ version 42 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xe740
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x11f40, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x12140, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x12160, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x12180, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x121a0, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x122a0, size 0x27d80
     hash_1608f63ae729eda5 weaponstats[400];
     // offset 0x3a020, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x3a040, size 0x40
     uint64 connectionid;
     // offset 0x3a080, size 0x8
@@ -58378,47 +58378,47 @@ version 42 {
     // offset 0x3a0d0, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x3ad00, size 0xfc58
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x4a958, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x4bad8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x4bb18, size 0x4c38
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x50750, size 0x100
     byte demonwareflags[32];
     // offset 0x50850, size 0x20
     float skill_rating;
     // offset 0x50870, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x50990, size 0x20
     uint uploadbandwidth;
     // offset 0x509b0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x50af0, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x50bb0, size 0x8
     byte vialsowed;
     // offset 0x50bb8, size 0x20
     int motdviewtime;
     // offset 0x50bd8, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x50cc0, size 0x4b00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x557c0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x55bc0, size 0x3480
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x59040, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x597c0, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x59860, size 0x20
     float skill_variance;
     // offset 0x59880, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x599a0, size 0x388
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x59d28, size 0x100
     byte unlocks[32];
     // offset 0x59e28, size 0x40
@@ -58432,13 +58432,13 @@ version 42 {
     // offset 0xe34d0, size 0x20
     bool musicunlocks[32];
     // offset 0xe34f0, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xe3530, size 0x1
     bool hash_1892554e7234468;
     // offset 0xe3531, size 0x1
     bool completedfirsttimeflow;
     // offset 0xe3532, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xe3535, size 0x3
     uint:1 __pad[3];
 }
@@ -58457,7 +58457,7 @@ version 41 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -58485,7 +58485,7 @@ version 41 {
     };
 
     // idx 4 members 24 size 0x388
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int kills;
         // offset 0x20, size 0x20
@@ -58537,17 +58537,17 @@ version 41 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -58683,13 +58683,13 @@ version 41 {
         // offset 0x468, size 0x28
         hash_6b3db80d498eb06 challenge10;
         // offset 0x490, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x850, size 0x28
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -58713,19 +58713,19 @@ version 41 {
     };
 
     // idx 15 members 4 size 0x3278
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x118
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x118, size 0x3138
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3250, size 0x10
         short vote_succeeded;
         // offset 0x3260, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x320
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x320
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -58755,7 +58755,7 @@ version 41 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x4a
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x6a, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x196, size 0x2
@@ -58763,7 +58763,7 @@ version 41 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -58775,7 +58775,7 @@ version 41 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -58783,13 +58783,13 @@ version 41 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -58797,9 +58797,9 @@ version 41 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -58819,7 +58819,7 @@ version 41 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -58827,9 +58827,9 @@ version 41 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -58843,13 +58843,13 @@ version 41 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -58992,7 +58992,7 @@ version 41 {
         hash_c59a95e3be43538, // 0x21,
         points_spent, // 0x22,
         sacrifices, // 0x23,
-        hash_cd7cea298d209a0, // 0x24,
+        killed_by_hellhound, // 0x24,
         hero_weapon_power_pickedup, // 0x25,
         sessionbans, // 0x26,
         hash_cff2ec7244f14a8, // 0x27,
@@ -59117,7 +59117,7 @@ version 41 {
         zombie_hunter_kill_packapunch, // 0x9e,
         specialty_mod_armorvest_drank, // 0x9f,
         bgb_tokens_used, // 0xa0,
-        hash_3e1a66815798ba48, // 0xa1,
+        survivalist_craftable, // 0xa1,
         hash_3ebae93ea866519c, // 0xa2,
         pack_a_punch_pickedup, // 0xa3,
         hash_3fa2584a22ebf623, // 0xa4,
@@ -59179,7 +59179,7 @@ version 41 {
         zm_daily_purchase_magic_box, // 0xdc,
         gum_gobbler_consume, // 0xdd,
         specialty_cooldown_drank, // 0xde,
-        hash_53b7863a536e08fb, // 0xdf,
+        hellhounds_killed, // 0xdf,
         towers_acid_trap_built_odin, // 0xe0,
         paragon_rankxp, // 0xe1,
         grabbed_from_magicbox, // 0xe2,
@@ -59206,7 +59206,7 @@ version 41 {
         zm_daily_kills_headshots, // 0xf7,
         total_shots, // 0xf8,
         survivalist_buy_perk, // 0xf9,
-        hash_5c5cab0cce302a01, // 0xfa,
+        weekly_timestamp, // 0xfa,
         specialty_mod_cooldown_drank, // 0xfb,
         hash_5d098efca02f7c99, // 0xfc,
         towers_acid_trap_built_danu, // 0xfd,
@@ -59253,7 +59253,7 @@ version 41 {
         player_kills, // 0x126,
         use_perk_random, // 0x127,
         specialty_doubletap2_drank, // 0x128,
-        hash_7283f3e1d914d95b, // 0x129,
+        strategist_complete, // 0x129,
         hash_7308e83074174e6a, // 0x12a,
         hits, // 0x12b,
         hash_733e96c5baacb1da, // 0x12c,
@@ -59295,7 +59295,7 @@ version 41 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -59307,23 +59307,23 @@ version 41 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -59338,7 +59338,7 @@ version 41 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -59351,7 +59351,7 @@ version 41 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -59380,7 +59380,7 @@ version 41 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -59401,7 +59401,7 @@ version 41 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -59451,7 +59451,7 @@ version 41 {
     };
 
     // idx 12 members 74
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         burstcount, // 0x2,
@@ -59475,7 +59475,7 @@ version 41 {
         hipgrip, // 0x14,
         vzoom, // 0x15,
         supply, // 0x16,
-        hash_1186a81dc9223fb0, // 0x17,
+        dragonbreath, // 0x17,
         hash_130d0ba804c50f5d, // 0x18,
         stalker2, // 0x19,
         extclip2, // 0x1a,
@@ -59488,38 +59488,38 @@ version 41 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e203b811df0afcc, // 0x24,
+        firingunit, // 0x24,
         reddot, // 0x25,
         extclip, // 0x26,
-        hash_38719aa5d77f40e0, // 0x27,
-        hash_3c889e3a4e2d2669, // 0x28,
-        hash_3dec836e02d8b348, // 0x29,
+        burstaccelerator, // 0x27,
+        wildfire, // 0x28,
+        fatbarrel, // 0x29,
         holo, // 0x2a,
         elo, // 0x2b,
         fastreload2, // 0x2c,
         extrapellets, // 0x2d,
         holdbreath, // 0x2e,
         fmj2, // 0x2f,
-        hash_5852e05f7124f770, // 0x30,
-        hash_58fce02b5a5aa925, // 0x31,
+        boltcylinder, // 0x30,
+        burstfire, // 0x31,
         quickdraw2, // 0x32,
         fmj, // 0x33,
         adsreload, // 0x34,
-        hash_5e09bab29a8105f9, // 0x35,
-        hash_5e9a7aab94f60985, // 0x36,
+        speedcenter, // 0x35,
+        tacticalknife, // 0x36,
         hash_61d5e40b17986f13, // 0x37,
-        hash_656bc6b8a65407b6, // 0x38,
+        sentrygrip, // 0x38,
         suppressed, // 0x39,
         beltfed, // 0x3a,
         grip2, // 0x3b,
-        hash_6c9beb46519c5830, // 0x3c,
+        suppressivebarrel, // 0x3c,
         custom4, // 0x3d,
         custom5, // 0x3e,
         custom2, // 0x3f,
         custom3, // 0x40,
         custom1, // 0x41,
-        hash_70c5df826407902b, // 0x42,
-        hash_753ba170218ee392, // 0x43,
+        bayonet, // 0x42,
+        strobeflash, // 0x43,
         dualwield, // 0x44,
         dualoptic, // 0x45,
         grip, // 0x46,
@@ -59535,20 +59535,20 @@ version 41 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -59558,7 +59558,7 @@ version 41 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -59572,23 +59572,23 @@ version 41 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xe740
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x11f40, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x12140, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x12160, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x12180, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x121a0, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x122a0, size 0x1de20
     hash_1608f63ae729eda5 weaponstats[300];
     // offset 0x300c0, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x300e0, size 0x40
     uint64 connectionid;
     // offset 0x30120, size 0x8
@@ -59602,47 +59602,47 @@ version 41 {
     // offset 0x30170, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x30da0, size 0xfc58
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x409f8, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x41b78, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x41bb8, size 0x4c38
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x467f0, size 0x100
     byte demonwareflags[32];
     // offset 0x468f0, size 0x20
     float skill_rating;
     // offset 0x46910, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x46a30, size 0x20
     uint uploadbandwidth;
     // offset 0x46a50, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x46b90, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x46c50, size 0x8
     byte vialsowed;
     // offset 0x46c58, size 0x20
     int motdviewtime;
     // offset 0x46c78, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x46d60, size 0x4b00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x4b860, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x4bc60, size 0x3480
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x4f0e0, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x4f860, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x4f900, size 0x20
     float skill_variance;
     // offset 0x4f920, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x4fa40, size 0x388
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x4fdc8, size 0x100
     byte unlocks[32];
     // offset 0x4fec8, size 0x40
@@ -59656,13 +59656,13 @@ version 41 {
     // offset 0xd9570, size 0x20
     bool musicunlocks[32];
     // offset 0xd9590, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xd95d0, size 0x1
     bool hash_1892554e7234468;
     // offset 0xd95d1, size 0x1
     bool completedfirsttimeflow;
     // offset 0xd95d2, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xd95d5, size 0x3
     uint:1 __pad[3];
 }
@@ -59681,7 +59681,7 @@ version 40 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -59709,7 +59709,7 @@ version 40 {
     };
 
     // idx 4 members 24 size 0x388
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int kills;
         // offset 0x20, size 0x20
@@ -59761,17 +59761,17 @@ version 40 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -59907,13 +59907,13 @@ version 40 {
         // offset 0x548, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x578, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x938, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -59937,19 +59937,19 @@ version 40 {
     };
 
     // idx 15 members 4 size 0x3c88
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x150
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x150, size 0x3b10
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3c60, size 0x10
         short vote_succeeded;
         // offset 0x3c70, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x3c0
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x3c0
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -59979,7 +59979,7 @@ version 40 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x4a
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x6a, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x196, size 0x2
@@ -59987,7 +59987,7 @@ version 40 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -59999,7 +59999,7 @@ version 40 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -60007,13 +60007,13 @@ version 40 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -60021,9 +60021,9 @@ version 40 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -60043,7 +60043,7 @@ version 40 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -60051,9 +60051,9 @@ version 40 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -60067,13 +60067,13 @@ version 40 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -60214,7 +60214,7 @@ version 40 {
         weighted_downs, // 0x1f,
         points_spent, // 0x20,
         sacrifices, // 0x21,
-        hash_cd7cea298d209a0, // 0x22,
+        killed_by_hellhound, // 0x22,
         hero_weapon_power_pickedup, // 0x23,
         sessionbans, // 0x24,
         bgbs_chewed, // 0x25,
@@ -60333,7 +60333,7 @@ version 40 {
         zombie_hunter_kill_packapunch, // 0x96,
         specialty_mod_armorvest_drank, // 0x97,
         bgb_tokens_used, // 0x98,
-        hash_3e1a66815798ba48, // 0x99,
+        survivalist_craftable, // 0x99,
         hash_3ebae93ea866519c, // 0x9a,
         pack_a_punch_pickedup, // 0x9b,
         hash_3fa2584a22ebf623, // 0x9c,
@@ -60394,7 +60394,7 @@ version 40 {
         zm_daily_purchase_magic_box, // 0xd3,
         gum_gobbler_consume, // 0xd4,
         specialty_cooldown_drank, // 0xd5,
-        hash_53b7863a536e08fb, // 0xd6,
+        hellhounds_killed, // 0xd6,
         darkops_island_super_ee, // 0xd7,
         towers_acid_trap_built_odin, // 0xd8,
         paragon_rankxp, // 0xd9,
@@ -60421,7 +60421,7 @@ version 40 {
         zm_daily_kills_headshots, // 0xee,
         total_shots, // 0xef,
         survivalist_buy_perk, // 0xf0,
-        hash_5c5cab0cce302a01, // 0xf1,
+        weekly_timestamp, // 0xf1,
         specialty_mod_cooldown_drank, // 0xf2,
         hash_5d098efca02f7c99, // 0xf3,
         towers_acid_trap_built_danu, // 0xf4,
@@ -60463,7 +60463,7 @@ version 40 {
         player_kills, // 0x118,
         use_perk_random, // 0x119,
         specialty_doubletap2_drank, // 0x11a,
-        hash_7283f3e1d914d95b, // 0x11b,
+        strategist_complete, // 0x11b,
         hash_72cb74b1539b94b4, // 0x11c,
         hits, // 0x11d,
         hash_733e96c5baacb1da, // 0x11e,
@@ -60503,7 +60503,7 @@ version 40 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -60515,23 +60515,23 @@ version 40 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -60546,7 +60546,7 @@ version 40 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -60559,7 +60559,7 @@ version 40 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -60588,7 +60588,7 @@ version 40 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -60609,7 +60609,7 @@ version 40 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -60659,7 +60659,7 @@ version 40 {
     };
 
     // idx 12 members 74
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         burstcount, // 0x2,
@@ -60683,7 +60683,7 @@ version 40 {
         hipgrip, // 0x14,
         vzoom, // 0x15,
         supply, // 0x16,
-        hash_1186a81dc9223fb0, // 0x17,
+        dragonbreath, // 0x17,
         hash_130d0ba804c50f5d, // 0x18,
         stalker2, // 0x19,
         extclip2, // 0x1a,
@@ -60696,38 +60696,38 @@ version 40 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e203b811df0afcc, // 0x24,
+        firingunit, // 0x24,
         reddot, // 0x25,
         extclip, // 0x26,
-        hash_38719aa5d77f40e0, // 0x27,
-        hash_3c889e3a4e2d2669, // 0x28,
-        hash_3dec836e02d8b348, // 0x29,
+        burstaccelerator, // 0x27,
+        wildfire, // 0x28,
+        fatbarrel, // 0x29,
         holo, // 0x2a,
         elo, // 0x2b,
         fastreload2, // 0x2c,
         extrapellets, // 0x2d,
         holdbreath, // 0x2e,
         fmj2, // 0x2f,
-        hash_5852e05f7124f770, // 0x30,
-        hash_58fce02b5a5aa925, // 0x31,
+        boltcylinder, // 0x30,
+        burstfire, // 0x31,
         quickdraw2, // 0x32,
         fmj, // 0x33,
         adsreload, // 0x34,
-        hash_5e09bab29a8105f9, // 0x35,
-        hash_5e9a7aab94f60985, // 0x36,
+        speedcenter, // 0x35,
+        tacticalknife, // 0x36,
         hash_61d5e40b17986f13, // 0x37,
-        hash_656bc6b8a65407b6, // 0x38,
+        sentrygrip, // 0x38,
         suppressed, // 0x39,
         beltfed, // 0x3a,
         grip2, // 0x3b,
-        hash_6c9beb46519c5830, // 0x3c,
+        suppressivebarrel, // 0x3c,
         custom4, // 0x3d,
         custom5, // 0x3e,
         custom2, // 0x3f,
         custom3, // 0x40,
         custom1, // 0x41,
-        hash_70c5df826407902b, // 0x42,
-        hash_753ba170218ee392, // 0x43,
+        bayonet, // 0x42,
+        strobeflash, // 0x43,
         dualwield, // 0x44,
         dualoptic, // 0x45,
         grip, // 0x46,
@@ -60743,20 +60743,20 @@ version 40 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -60766,7 +60766,7 @@ version 40 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -60780,23 +60780,23 @@ version 40 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0x11580
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x14d80, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x14f80, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x14fa0, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x14fc0, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x14fe0, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x150e0, size 0x1de20
     hash_1608f63ae729eda5 weaponstats[300];
     // offset 0x32f00, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x32f20, size 0x40
     uint64 connectionid;
     // offset 0x32f60, size 0x8
@@ -60810,47 +60810,47 @@ version 40 {
     // offset 0x32fb0, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x33be0, size 0x12ea8
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x46a88, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x47c08, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x47c48, size 0x54a8
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x4d0f0, size 0x100
     byte demonwareflags[32];
     // offset 0x4d1f0, size 0x20
     float skill_rating;
     // offset 0x4d210, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x4d330, size 0x20
     uint uploadbandwidth;
     // offset 0x4d350, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x4d490, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x4d550, size 0x8
     byte vialsowed;
     // offset 0x4d558, size 0x20
     int motdviewtime;
     // offset 0x4d578, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x4d660, size 0x5a00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x53060, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x53460, size 0x3c00
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x57060, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x577e0, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x57880, size 0x20
     float skill_variance;
     // offset 0x578a0, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x579c0, size 0x388
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x57d48, size 0x100
     byte unlocks[32];
     // offset 0x57e48, size 0x40
@@ -60864,13 +60864,13 @@ version 40 {
     // offset 0xfbdf0, size 0x20
     bool musicunlocks[32];
     // offset 0xfbe10, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xfbe50, size 0x1
     bool hash_1892554e7234468;
     // offset 0xfbe51, size 0x1
     bool completedfirsttimeflow;
     // offset 0xfbe52, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xfbe55, size 0x3
     uint:1 __pad[3];
 }
@@ -60889,7 +60889,7 @@ version 39 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -60917,7 +60917,7 @@ version 39 {
     };
 
     // idx 4 members 24 size 0x388
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int kills;
         // offset 0x20, size 0x20
@@ -60969,17 +60969,17 @@ version 39 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -61115,13 +61115,13 @@ version 39 {
         // offset 0x548, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x578, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x938, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -61145,19 +61145,19 @@ version 39 {
     };
 
     // idx 15 members 4 size 0x3c88
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x150
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x150, size 0x3b10
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3c60, size 0x10
         short vote_succeeded;
         // offset 0x3c70, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x3c0
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x3c0
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -61187,7 +61187,7 @@ version 39 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x4a
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x6a, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x196, size 0x2
@@ -61195,7 +61195,7 @@ version 39 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -61207,7 +61207,7 @@ version 39 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -61215,13 +61215,13 @@ version 39 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -61229,9 +61229,9 @@ version 39 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -61251,7 +61251,7 @@ version 39 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -61259,9 +61259,9 @@ version 39 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -61275,13 +61275,13 @@ version 39 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -61422,7 +61422,7 @@ version 39 {
         weighted_downs, // 0x1f,
         points_spent, // 0x20,
         sacrifices, // 0x21,
-        hash_cd7cea298d209a0, // 0x22,
+        killed_by_hellhound, // 0x22,
         hero_weapon_power_pickedup, // 0x23,
         sessionbans, // 0x24,
         bgbs_chewed, // 0x25,
@@ -61541,7 +61541,7 @@ version 39 {
         zombie_hunter_kill_packapunch, // 0x96,
         specialty_mod_armorvest_drank, // 0x97,
         bgb_tokens_used, // 0x98,
-        hash_3e1a66815798ba48, // 0x99,
+        survivalist_craftable, // 0x99,
         hash_3ebae93ea866519c, // 0x9a,
         pack_a_punch_pickedup, // 0x9b,
         hash_3fa2584a22ebf623, // 0x9c,
@@ -61602,7 +61602,7 @@ version 39 {
         zm_daily_purchase_magic_box, // 0xd3,
         gum_gobbler_consume, // 0xd4,
         specialty_cooldown_drank, // 0xd5,
-        hash_53b7863a536e08fb, // 0xd6,
+        hellhounds_killed, // 0xd6,
         darkops_island_super_ee, // 0xd7,
         towers_acid_trap_built_odin, // 0xd8,
         paragon_rankxp, // 0xd9,
@@ -61629,7 +61629,7 @@ version 39 {
         zm_daily_kills_headshots, // 0xee,
         total_shots, // 0xef,
         survivalist_buy_perk, // 0xf0,
-        hash_5c5cab0cce302a01, // 0xf1,
+        weekly_timestamp, // 0xf1,
         specialty_mod_cooldown_drank, // 0xf2,
         hash_5d098efca02f7c99, // 0xf3,
         towers_acid_trap_built_danu, // 0xf4,
@@ -61670,7 +61670,7 @@ version 39 {
         player_kills, // 0x117,
         use_perk_random, // 0x118,
         specialty_doubletap2_drank, // 0x119,
-        hash_7283f3e1d914d95b, // 0x11a,
+        strategist_complete, // 0x11a,
         hash_72cb74b1539b94b4, // 0x11b,
         hits, // 0x11c,
         hash_733e96c5baacb1da, // 0x11d,
@@ -61710,7 +61710,7 @@ version 39 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -61722,23 +61722,23 @@ version 39 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -61753,7 +61753,7 @@ version 39 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -61766,7 +61766,7 @@ version 39 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -61795,7 +61795,7 @@ version 39 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -61816,7 +61816,7 @@ version 39 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -61866,7 +61866,7 @@ version 39 {
     };
 
     // idx 12 members 74
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         burstcount, // 0x2,
@@ -61890,7 +61890,7 @@ version 39 {
         hipgrip, // 0x14,
         vzoom, // 0x15,
         supply, // 0x16,
-        hash_1186a81dc9223fb0, // 0x17,
+        dragonbreath, // 0x17,
         hash_130d0ba804c50f5d, // 0x18,
         stalker2, // 0x19,
         extclip2, // 0x1a,
@@ -61903,38 +61903,38 @@ version 39 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e203b811df0afcc, // 0x24,
+        firingunit, // 0x24,
         reddot, // 0x25,
         extclip, // 0x26,
-        hash_38719aa5d77f40e0, // 0x27,
-        hash_3c889e3a4e2d2669, // 0x28,
-        hash_3dec836e02d8b348, // 0x29,
+        burstaccelerator, // 0x27,
+        wildfire, // 0x28,
+        fatbarrel, // 0x29,
         holo, // 0x2a,
         elo, // 0x2b,
         fastreload2, // 0x2c,
         extrapellets, // 0x2d,
         holdbreath, // 0x2e,
         fmj2, // 0x2f,
-        hash_5852e05f7124f770, // 0x30,
-        hash_58fce02b5a5aa925, // 0x31,
+        boltcylinder, // 0x30,
+        burstfire, // 0x31,
         quickdraw2, // 0x32,
         fmj, // 0x33,
         adsreload, // 0x34,
-        hash_5e09bab29a8105f9, // 0x35,
-        hash_5e9a7aab94f60985, // 0x36,
+        speedcenter, // 0x35,
+        tacticalknife, // 0x36,
         hash_61d5e40b17986f13, // 0x37,
-        hash_656bc6b8a65407b6, // 0x38,
+        sentrygrip, // 0x38,
         suppressed, // 0x39,
         beltfed, // 0x3a,
         grip2, // 0x3b,
-        hash_6c9beb46519c5830, // 0x3c,
+        suppressivebarrel, // 0x3c,
         custom4, // 0x3d,
         custom5, // 0x3e,
         custom2, // 0x3f,
         custom3, // 0x40,
         custom1, // 0x41,
-        hash_70c5df826407902b, // 0x42,
-        hash_753ba170218ee392, // 0x43,
+        bayonet, // 0x42,
+        strobeflash, // 0x43,
         dualwield, // 0x44,
         dualoptic, // 0x45,
         grip, // 0x46,
@@ -61950,20 +61950,20 @@ version 39 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -61973,7 +61973,7 @@ version 39 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -61987,23 +61987,23 @@ version 39 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0x11580
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x14d80, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x14f80, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x14fa0, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x14fc0, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x14fe0, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x150e0, size 0x1de20
     hash_1608f63ae729eda5 weaponstats[300];
     // offset 0x32f00, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x32f20, size 0x40
     uint64 connectionid;
     // offset 0x32f60, size 0x8
@@ -62017,47 +62017,47 @@ version 39 {
     // offset 0x32fb0, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x33be0, size 0x12ea8
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x46a88, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x47c08, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x47c48, size 0x54a8
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x4d0f0, size 0x100
     byte demonwareflags[32];
     // offset 0x4d1f0, size 0x20
     float skill_rating;
     // offset 0x4d210, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x4d330, size 0x20
     uint uploadbandwidth;
     // offset 0x4d350, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x4d490, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x4d550, size 0x8
     byte vialsowed;
     // offset 0x4d558, size 0x20
     int motdviewtime;
     // offset 0x4d578, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x4d660, size 0x5a00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x53060, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x53460, size 0x3bd0
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x57030, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x577b0, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x57850, size 0x20
     float skill_variance;
     // offset 0x57870, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x57990, size 0x388
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x57d18, size 0x100
     byte unlocks[32];
     // offset 0x57e18, size 0x40
@@ -62071,13 +62071,13 @@ version 39 {
     // offset 0xfbdc0, size 0x20
     bool musicunlocks[32];
     // offset 0xfbde0, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xfbe20, size 0x1
     bool hash_1892554e7234468;
     // offset 0xfbe21, size 0x1
     bool completedfirsttimeflow;
     // offset 0xfbe22, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xfbe25, size 0x3
     uint:1 __pad[3];
 }
@@ -62096,7 +62096,7 @@ version 38 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -62124,7 +62124,7 @@ version 38 {
     };
 
     // idx 4 members 24 size 0x388
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int kills;
         // offset 0x20, size 0x20
@@ -62176,17 +62176,17 @@ version 38 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -62322,13 +62322,13 @@ version 38 {
         // offset 0x548, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x578, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x938, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -62352,19 +62352,19 @@ version 38 {
     };
 
     // idx 15 members 4 size 0x3c88
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x150
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x150, size 0x3b10
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3c60, size 0x10
         short vote_succeeded;
         // offset 0x3c70, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x3c0
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x3c0
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -62394,7 +62394,7 @@ version 38 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x4a
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x6a, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x196, size 0x2
@@ -62402,7 +62402,7 @@ version 38 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -62414,7 +62414,7 @@ version 38 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -62422,13 +62422,13 @@ version 38 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -62436,9 +62436,9 @@ version 38 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -62458,7 +62458,7 @@ version 38 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -62466,9 +62466,9 @@ version 38 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -62482,13 +62482,13 @@ version 38 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -62629,7 +62629,7 @@ version 38 {
         weighted_downs, // 0x1f,
         points_spent, // 0x20,
         sacrifices, // 0x21,
-        hash_cd7cea298d209a0, // 0x22,
+        killed_by_hellhound, // 0x22,
         hero_weapon_power_pickedup, // 0x23,
         sessionbans, // 0x24,
         bgbs_chewed, // 0x25,
@@ -62750,7 +62750,7 @@ version 38 {
         zombie_hunter_kill_packapunch, // 0x98,
         specialty_mod_armorvest_drank, // 0x99,
         bgb_tokens_used, // 0x9a,
-        hash_3e1a66815798ba48, // 0x9b,
+        survivalist_craftable, // 0x9b,
         hash_3ebae93ea866519c, // 0x9c,
         pack_a_punch_pickedup, // 0x9d,
         hash_3fa2584a22ebf623, // 0x9e,
@@ -62810,7 +62810,7 @@ version 38 {
         zm_daily_purchase_magic_box, // 0xd4,
         gum_gobbler_consume, // 0xd5,
         specialty_cooldown_drank, // 0xd6,
-        hash_53b7863a536e08fb, // 0xd7,
+        hellhounds_killed, // 0xd7,
         darkops_island_super_ee, // 0xd8,
         towers_acid_trap_built_odin, // 0xd9,
         paragon_rankxp, // 0xda,
@@ -62838,7 +62838,7 @@ version 38 {
         zm_daily_kills_headshots, // 0xf0,
         total_shots, // 0xf1,
         survivalist_buy_perk, // 0xf2,
-        hash_5c5cab0cce302a01, // 0xf3,
+        weekly_timestamp, // 0xf3,
         specialty_mod_cooldown_drank, // 0xf4,
         hash_5d098efca02f7c99, // 0xf5,
         towers_acid_trap_built_danu, // 0xf6,
@@ -62878,7 +62878,7 @@ version 38 {
         player_kills, // 0x118,
         use_perk_random, // 0x119,
         specialty_doubletap2_drank, // 0x11a,
-        hash_7283f3e1d914d95b, // 0x11b,
+        strategist_complete, // 0x11b,
         hash_72cb74b1539b94b4, // 0x11c,
         hits, // 0x11d,
         hash_733e96c5baacb1da, // 0x11e,
@@ -62918,7 +62918,7 @@ version 38 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -62930,23 +62930,23 @@ version 38 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -62961,7 +62961,7 @@ version 38 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -62974,7 +62974,7 @@ version 38 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -63003,7 +63003,7 @@ version 38 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -63024,7 +63024,7 @@ version 38 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -63074,7 +63074,7 @@ version 38 {
     };
 
     // idx 12 members 74
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         burstcount, // 0x2,
@@ -63098,7 +63098,7 @@ version 38 {
         hipgrip, // 0x14,
         vzoom, // 0x15,
         supply, // 0x16,
-        hash_1186a81dc9223fb0, // 0x17,
+        dragonbreath, // 0x17,
         hash_130d0ba804c50f5d, // 0x18,
         stalker2, // 0x19,
         extclip2, // 0x1a,
@@ -63111,38 +63111,38 @@ version 38 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e203b811df0afcc, // 0x24,
+        firingunit, // 0x24,
         reddot, // 0x25,
         extclip, // 0x26,
-        hash_38719aa5d77f40e0, // 0x27,
-        hash_3c889e3a4e2d2669, // 0x28,
-        hash_3dec836e02d8b348, // 0x29,
+        burstaccelerator, // 0x27,
+        wildfire, // 0x28,
+        fatbarrel, // 0x29,
         holo, // 0x2a,
         elo, // 0x2b,
         fastreload2, // 0x2c,
         extrapellets, // 0x2d,
         holdbreath, // 0x2e,
         fmj2, // 0x2f,
-        hash_5852e05f7124f770, // 0x30,
-        hash_58fce02b5a5aa925, // 0x31,
+        boltcylinder, // 0x30,
+        burstfire, // 0x31,
         quickdraw2, // 0x32,
         fmj, // 0x33,
         adsreload, // 0x34,
-        hash_5e09bab29a8105f9, // 0x35,
-        hash_5e9a7aab94f60985, // 0x36,
+        speedcenter, // 0x35,
+        tacticalknife, // 0x36,
         hash_61d5e40b17986f13, // 0x37,
-        hash_656bc6b8a65407b6, // 0x38,
+        sentrygrip, // 0x38,
         suppressed, // 0x39,
         beltfed, // 0x3a,
         grip2, // 0x3b,
-        hash_6c9beb46519c5830, // 0x3c,
+        suppressivebarrel, // 0x3c,
         custom4, // 0x3d,
         custom5, // 0x3e,
         custom2, // 0x3f,
         custom3, // 0x40,
         custom1, // 0x41,
-        hash_70c5df826407902b, // 0x42,
-        hash_753ba170218ee392, // 0x43,
+        bayonet, // 0x42,
+        strobeflash, // 0x43,
         dualwield, // 0x44,
         dualoptic, // 0x45,
         grip, // 0x46,
@@ -63158,20 +63158,20 @@ version 38 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -63181,7 +63181,7 @@ version 38 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -63195,23 +63195,23 @@ version 38 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0x11580
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x14d80, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x14f80, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x14fa0, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x14fc0, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x14fe0, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x150e0, size 0x1de20
     hash_1608f63ae729eda5 weaponstats[300];
     // offset 0x32f00, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x32f20, size 0x40
     uint64 connectionid;
     // offset 0x32f60, size 0x8
@@ -63225,47 +63225,47 @@ version 38 {
     // offset 0x32fb0, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x33be0, size 0x12ea8
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x46a88, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x47c08, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x47c48, size 0x54a8
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x4d0f0, size 0x100
     byte demonwareflags[32];
     // offset 0x4d1f0, size 0x20
     float skill_rating;
     // offset 0x4d210, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x4d330, size 0x20
     uint uploadbandwidth;
     // offset 0x4d350, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x4d490, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x4d550, size 0x8
     byte vialsowed;
     // offset 0x4d558, size 0x20
     int motdviewtime;
     // offset 0x4d578, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x4d660, size 0x5a00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x53060, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x53460, size 0x3c00
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x57060, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x577e0, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x57880, size 0x20
     float skill_variance;
     // offset 0x578a0, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x579c0, size 0x388
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x57d48, size 0x100
     byte unlocks[32];
     // offset 0x57e48, size 0x40
@@ -63279,13 +63279,13 @@ version 38 {
     // offset 0xfbdf0, size 0x20
     bool musicunlocks[32];
     // offset 0xfbe10, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xfbe50, size 0x1
     bool hash_1892554e7234468;
     // offset 0xfbe51, size 0x1
     bool completedfirsttimeflow;
     // offset 0xfbe52, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xfbe55, size 0x3
     uint:1 __pad[3];
 }
@@ -63304,7 +63304,7 @@ version 37 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -63332,7 +63332,7 @@ version 37 {
     };
 
     // idx 4 members 24 size 0x388
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int kills;
         // offset 0x20, size 0x20
@@ -63384,17 +63384,17 @@ version 37 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -63530,13 +63530,13 @@ version 37 {
         // offset 0x548, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x578, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x938, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -63560,19 +63560,19 @@ version 37 {
     };
 
     // idx 15 members 4 size 0x3c88
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x150
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x150, size 0x3b10
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3c60, size 0x10
         short vote_succeeded;
         // offset 0x3c70, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x3c0
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x3c0
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -63602,7 +63602,7 @@ version 37 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x38
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x58, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x184, size 0x4
@@ -63610,7 +63610,7 @@ version 37 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -63622,7 +63622,7 @@ version 37 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -63630,13 +63630,13 @@ version 37 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -63644,9 +63644,9 @@ version 37 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -63666,7 +63666,7 @@ version 37 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -63674,9 +63674,9 @@ version 37 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -63690,13 +63690,13 @@ version 37 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -63832,7 +63832,7 @@ version 37 {
         doors_purchased, // 0x1a,
         weighted_downs, // 0x1b,
         sacrifices, // 0x1c,
-        hash_cd7cea298d209a0, // 0x1d,
+        killed_by_hellhound, // 0x1d,
         hero_weapon_power_pickedup, // 0x1e,
         sessionbans, // 0x1f,
         bgbs_chewed, // 0x20,
@@ -63941,7 +63941,7 @@ version 37 {
         zombie_hunter_kill_packapunch, // 0x87,
         specialty_mod_armorvest_drank, // 0x88,
         bgb_tokens_used, // 0x89,
-        hash_3e1a66815798ba48, // 0x8a,
+        survivalist_craftable, // 0x8a,
         pack_a_punch_pickedup, // 0x8b,
         hash_3fa2584a22ebf623, // 0x8c,
         island_seed_pickedup, // 0x8d,
@@ -63993,7 +63993,7 @@ version 37 {
         zm_daily_purchase_magic_box, // 0xbb,
         gum_gobbler_consume, // 0xbc,
         specialty_cooldown_drank, // 0xbd,
-        hash_53b7863a536e08fb, // 0xbe,
+        hellhounds_killed, // 0xbe,
         darkops_island_super_ee, // 0xbf,
         towers_acid_trap_built_odin, // 0xc0,
         paragon_rankxp, // 0xc1,
@@ -64019,7 +64019,7 @@ version 37 {
         zm_daily_kills_headshots, // 0xd5,
         total_shots, // 0xd6,
         survivalist_buy_perk, // 0xd7,
-        hash_5c5cab0cce302a01, // 0xd8,
+        weekly_timestamp, // 0xd8,
         specialty_mod_cooldown_drank, // 0xd9,
         towers_acid_trap_built_danu, // 0xda,
         bgb_tokens_gained, // 0xdb,
@@ -64093,7 +64093,7 @@ version 37 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -64105,23 +64105,23 @@ version 37 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -64136,7 +64136,7 @@ version 37 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -64149,7 +64149,7 @@ version 37 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -64178,7 +64178,7 @@ version 37 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -64199,7 +64199,7 @@ version 37 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -64249,7 +64249,7 @@ version 37 {
     };
 
     // idx 12 members 56
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         quickdraw, // 0x2,
@@ -64315,20 +64315,20 @@ version 37 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -64338,7 +64338,7 @@ version 37 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -64352,23 +64352,23 @@ version 37 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xd200
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x10a00, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x10c00, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x10c20, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x10c40, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x10c60, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x10d60, size 0x1cb60
     hash_1608f63ae729eda5 weaponstats[300];
     // offset 0x2d8c0, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x2d8e0, size 0x40
     uint64 connectionid;
     // offset 0x2d920, size 0x8
@@ -64382,47 +64382,47 @@ version 37 {
     // offset 0x2d970, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x2e5a0, size 0x12ea8
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x41448, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x425c8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x42608, size 0x54a8
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x47ab0, size 0x100
     byte demonwareflags[32];
     // offset 0x47bb0, size 0x20
     float skill_rating;
     // offset 0x47bd0, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x47cf0, size 0x20
     uint uploadbandwidth;
     // offset 0x47d10, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x47e50, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x47f10, size 0x8
     byte vialsowed;
     // offset 0x47f18, size 0x20
     int motdviewtime;
     // offset 0x47f38, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x48020, size 0x5a00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x4da20, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x4de20, size 0x35d0
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x513f0, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x51b70, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x51c10, size 0x20
     float skill_variance;
     // offset 0x51c30, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x51d50, size 0x388
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x520d8, size 0x100
     byte unlocks[32];
     // offset 0x521d8, size 0x40
@@ -64436,13 +64436,13 @@ version 37 {
     // offset 0xf6180, size 0x20
     bool musicunlocks[32];
     // offset 0xf61a0, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xf61e0, size 0x1
     bool hash_1892554e7234468;
     // offset 0xf61e1, size 0x1
     bool completedfirsttimeflow;
     // offset 0xf61e2, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xf61e5, size 0x3
     uint:1 __pad[3];
 }
@@ -64461,7 +64461,7 @@ version 36 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -64489,7 +64489,7 @@ version 36 {
     };
 
     // idx 4 members 19 size 0x2e8
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int hash_20e770cec441c9f2;
         // offset 0x20, size 0x20
@@ -64531,17 +64531,17 @@ version 36 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -64677,13 +64677,13 @@ version 36 {
         // offset 0x548, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x578, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x938, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -64707,19 +64707,19 @@ version 36 {
     };
 
     // idx 15 members 4 size 0x3c88
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x150
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x150, size 0x3b10
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3c60, size 0x10
         short vote_succeeded;
         // offset 0x3c70, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x3c0
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x3c0
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -64749,7 +64749,7 @@ version 36 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x38
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x58, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x184, size 0x4
@@ -64757,7 +64757,7 @@ version 36 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -64769,7 +64769,7 @@ version 36 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -64777,13 +64777,13 @@ version 36 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -64791,9 +64791,9 @@ version 36 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -64813,7 +64813,7 @@ version 36 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -64821,9 +64821,9 @@ version 36 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -64837,13 +64837,13 @@ version 36 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -64979,7 +64979,7 @@ version 36 {
         doors_purchased, // 0x1a,
         weighted_downs, // 0x1b,
         sacrifices, // 0x1c,
-        hash_cd7cea298d209a0, // 0x1d,
+        killed_by_hellhound, // 0x1d,
         hero_weapon_power_pickedup, // 0x1e,
         sessionbans, // 0x1f,
         bgbs_chewed, // 0x20,
@@ -65088,7 +65088,7 @@ version 36 {
         zombie_hunter_kill_packapunch, // 0x87,
         specialty_mod_armorvest_drank, // 0x88,
         bgb_tokens_used, // 0x89,
-        hash_3e1a66815798ba48, // 0x8a,
+        survivalist_craftable, // 0x8a,
         pack_a_punch_pickedup, // 0x8b,
         hash_3fa2584a22ebf623, // 0x8c,
         island_seed_pickedup, // 0x8d,
@@ -65140,7 +65140,7 @@ version 36 {
         zm_daily_purchase_magic_box, // 0xbb,
         gum_gobbler_consume, // 0xbc,
         specialty_cooldown_drank, // 0xbd,
-        hash_53b7863a536e08fb, // 0xbe,
+        hellhounds_killed, // 0xbe,
         darkops_island_super_ee, // 0xbf,
         towers_acid_trap_built_odin, // 0xc0,
         paragon_rankxp, // 0xc1,
@@ -65166,7 +65166,7 @@ version 36 {
         zm_daily_kills_headshots, // 0xd5,
         total_shots, // 0xd6,
         survivalist_buy_perk, // 0xd7,
-        hash_5c5cab0cce302a01, // 0xd8,
+        weekly_timestamp, // 0xd8,
         specialty_mod_cooldown_drank, // 0xd9,
         towers_acid_trap_built_danu, // 0xda,
         bgb_tokens_gained, // 0xdb,
@@ -65240,7 +65240,7 @@ version 36 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -65252,23 +65252,23 @@ version 36 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -65283,7 +65283,7 @@ version 36 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -65296,7 +65296,7 @@ version 36 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -65325,7 +65325,7 @@ version 36 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -65346,7 +65346,7 @@ version 36 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -65396,7 +65396,7 @@ version 36 {
     };
 
     // idx 12 members 56
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         quickdraw, // 0x2,
@@ -65462,20 +65462,20 @@ version 36 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -65485,7 +65485,7 @@ version 36 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -65499,23 +65499,23 @@ version 36 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xd200
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x10a00, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x10c00, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x10c20, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x10c40, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x10c60, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x10d60, size 0x1cb60
     hash_1608f63ae729eda5 weaponstats[300];
     // offset 0x2d8c0, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x2d8e0, size 0x40
     uint64 connectionid;
     // offset 0x2d920, size 0x8
@@ -65529,47 +65529,47 @@ version 36 {
     // offset 0x2d970, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x2e5a0, size 0x12ea8
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x41448, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x425c8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x42608, size 0x54a8
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x47ab0, size 0x100
     byte demonwareflags[32];
     // offset 0x47bb0, size 0x20
     float skill_rating;
     // offset 0x47bd0, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x47cf0, size 0x20
     uint uploadbandwidth;
     // offset 0x47d10, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x47e50, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x47f10, size 0x8
     byte vialsowed;
     // offset 0x47f18, size 0x20
     int motdviewtime;
     // offset 0x47f38, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x48020, size 0x5a00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x4da20, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x4de20, size 0x35d0
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x513f0, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x51b70, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x51c10, size 0x20
     float skill_variance;
     // offset 0x51c30, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x51d50, size 0x2e8
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x52038, size 0x100
     byte unlocks[32];
     // offset 0x52138, size 0x40
@@ -65583,13 +65583,13 @@ version 36 {
     // offset 0xf60e0, size 0x20
     bool musicunlocks[32];
     // offset 0xf6100, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xf6140, size 0x1
     bool hash_1892554e7234468;
     // offset 0xf6141, size 0x1
     bool completedfirsttimeflow;
     // offset 0xf6142, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xf6145, size 0x3
     uint:1 __pad[3];
 }
@@ -65608,7 +65608,7 @@ version 35 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -65636,7 +65636,7 @@ version 35 {
     };
 
     // idx 4 members 18 size 0x2c8
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int hash_20e770cec441c9f2;
         // offset 0x20, size 0x20
@@ -65676,17 +65676,17 @@ version 35 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -65822,13 +65822,13 @@ version 35 {
         // offset 0x548, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x578, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x938, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -65852,19 +65852,19 @@ version 35 {
     };
 
     // idx 15 members 4 size 0x3c88
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x150
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x150, size 0x3b10
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3c60, size 0x10
         short vote_succeeded;
         // offset 0x3c70, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x3c0
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x3c0
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -65894,7 +65894,7 @@ version 35 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x38
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x58, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x184, size 0x4
@@ -65902,7 +65902,7 @@ version 35 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -65914,7 +65914,7 @@ version 35 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -65922,13 +65922,13 @@ version 35 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -65936,9 +65936,9 @@ version 35 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -65958,7 +65958,7 @@ version 35 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -65966,9 +65966,9 @@ version 35 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -65982,13 +65982,13 @@ version 35 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -66124,7 +66124,7 @@ version 35 {
         doors_purchased, // 0x1a,
         weighted_downs, // 0x1b,
         sacrifices, // 0x1c,
-        hash_cd7cea298d209a0, // 0x1d,
+        killed_by_hellhound, // 0x1d,
         hero_weapon_power_pickedup, // 0x1e,
         sessionbans, // 0x1f,
         bgbs_chewed, // 0x20,
@@ -66233,7 +66233,7 @@ version 35 {
         zombie_hunter_kill_packapunch, // 0x87,
         specialty_mod_armorvest_drank, // 0x88,
         bgb_tokens_used, // 0x89,
-        hash_3e1a66815798ba48, // 0x8a,
+        survivalist_craftable, // 0x8a,
         pack_a_punch_pickedup, // 0x8b,
         hash_3fa2584a22ebf623, // 0x8c,
         island_seed_pickedup, // 0x8d,
@@ -66285,7 +66285,7 @@ version 35 {
         zm_daily_purchase_magic_box, // 0xbb,
         gum_gobbler_consume, // 0xbc,
         specialty_cooldown_drank, // 0xbd,
-        hash_53b7863a536e08fb, // 0xbe,
+        hellhounds_killed, // 0xbe,
         darkops_island_super_ee, // 0xbf,
         towers_acid_trap_built_odin, // 0xc0,
         paragon_rankxp, // 0xc1,
@@ -66311,7 +66311,7 @@ version 35 {
         zm_daily_kills_headshots, // 0xd5,
         total_shots, // 0xd6,
         survivalist_buy_perk, // 0xd7,
-        hash_5c5cab0cce302a01, // 0xd8,
+        weekly_timestamp, // 0xd8,
         specialty_mod_cooldown_drank, // 0xd9,
         towers_acid_trap_built_danu, // 0xda,
         bgb_tokens_gained, // 0xdb,
@@ -66385,7 +66385,7 @@ version 35 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -66397,23 +66397,23 @@ version 35 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -66428,7 +66428,7 @@ version 35 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -66441,7 +66441,7 @@ version 35 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -66470,7 +66470,7 @@ version 35 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -66491,7 +66491,7 @@ version 35 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -66541,7 +66541,7 @@ version 35 {
     };
 
     // idx 12 members 56
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         quickdraw, // 0x2,
@@ -66607,20 +66607,20 @@ version 35 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -66630,7 +66630,7 @@ version 35 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -66644,23 +66644,23 @@ version 35 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xd200
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x10a00, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x10c00, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x10c20, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x10c40, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x10c60, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x10d60, size 0x1cb60
     hash_1608f63ae729eda5 weaponstats[300];
     // offset 0x2d8c0, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x2d8e0, size 0x40
     uint64 connectionid;
     // offset 0x2d920, size 0x8
@@ -66674,47 +66674,47 @@ version 35 {
     // offset 0x2d970, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x2e5a0, size 0x12ea8
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x41448, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x425c8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x42608, size 0x54a8
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x47ab0, size 0x100
     byte demonwareflags[32];
     // offset 0x47bb0, size 0x20
     float skill_rating;
     // offset 0x47bd0, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x47cf0, size 0x20
     uint uploadbandwidth;
     // offset 0x47d10, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x47e50, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x47f10, size 0x8
     byte vialsowed;
     // offset 0x47f18, size 0x20
     int motdviewtime;
     // offset 0x47f38, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x48020, size 0x5a00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x4da20, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x4de20, size 0x35d0
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x513f0, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x51b70, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x51c10, size 0x20
     float skill_variance;
     // offset 0x51c30, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x51d50, size 0x2c8
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x52018, size 0x100
     byte unlocks[32];
     // offset 0x52118, size 0x40
@@ -66728,13 +66728,13 @@ version 35 {
     // offset 0xf60c0, size 0x20
     bool musicunlocks[32];
     // offset 0xf60e0, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xf6120, size 0x1
     bool hash_1892554e7234468;
     // offset 0xf6121, size 0x1
     bool completedfirsttimeflow;
     // offset 0xf6122, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xf6125, size 0x3
     uint:1 __pad[3];
 }
@@ -66753,7 +66753,7 @@ version 34 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -66781,7 +66781,7 @@ version 34 {
     };
 
     // idx 4 members 18 size 0x2c8
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int hash_20e770cec441c9f2;
         // offset 0x20, size 0x20
@@ -66821,17 +66821,17 @@ version 34 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -66967,13 +66967,13 @@ version 34 {
         // offset 0x548, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x578, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x938, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -66997,19 +66997,19 @@ version 34 {
     };
 
     // idx 15 members 4 size 0x3c88
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x150
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x150, size 0x3b10
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3c60, size 0x10
         short vote_succeeded;
         // offset 0x3c70, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x3c0
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x3c0
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -67039,7 +67039,7 @@ version 34 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x38
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x58, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x184, size 0x4
@@ -67047,7 +67047,7 @@ version 34 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -67059,7 +67059,7 @@ version 34 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -67067,13 +67067,13 @@ version 34 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -67081,9 +67081,9 @@ version 34 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -67103,7 +67103,7 @@ version 34 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -67111,9 +67111,9 @@ version 34 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -67127,13 +67127,13 @@ version 34 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -67269,7 +67269,7 @@ version 34 {
         doors_purchased, // 0x1a,
         weighted_downs, // 0x1b,
         sacrifices, // 0x1c,
-        hash_cd7cea298d209a0, // 0x1d,
+        killed_by_hellhound, // 0x1d,
         hero_weapon_power_pickedup, // 0x1e,
         sessionbans, // 0x1f,
         bgbs_chewed, // 0x20,
@@ -67378,7 +67378,7 @@ version 34 {
         zombie_hunter_kill_packapunch, // 0x87,
         specialty_mod_armorvest_drank, // 0x88,
         bgb_tokens_used, // 0x89,
-        hash_3e1a66815798ba48, // 0x8a,
+        survivalist_craftable, // 0x8a,
         pack_a_punch_pickedup, // 0x8b,
         hash_3fa2584a22ebf623, // 0x8c,
         island_seed_pickedup, // 0x8d,
@@ -67430,7 +67430,7 @@ version 34 {
         zm_daily_purchase_magic_box, // 0xbb,
         gum_gobbler_consume, // 0xbc,
         specialty_cooldown_drank, // 0xbd,
-        hash_53b7863a536e08fb, // 0xbe,
+        hellhounds_killed, // 0xbe,
         darkops_island_super_ee, // 0xbf,
         paragon_rankxp, // 0xc0,
         grabbed_from_magicbox, // 0xc1,
@@ -67455,7 +67455,7 @@ version 34 {
         zm_daily_kills_headshots, // 0xd4,
         total_shots, // 0xd5,
         survivalist_buy_perk, // 0xd6,
-        hash_5c5cab0cce302a01, // 0xd7,
+        weekly_timestamp, // 0xd7,
         specialty_mod_cooldown_drank, // 0xd8,
         bgb_tokens_gained, // 0xd9,
         zombie_hunter_explosion_multikill, // 0xda,
@@ -67526,7 +67526,7 @@ version 34 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -67538,23 +67538,23 @@ version 34 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -67569,7 +67569,7 @@ version 34 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -67582,7 +67582,7 @@ version 34 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -67611,7 +67611,7 @@ version 34 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -67632,7 +67632,7 @@ version 34 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -67682,7 +67682,7 @@ version 34 {
     };
 
     // idx 12 members 56
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         quickdraw, // 0x2,
@@ -67748,20 +67748,20 @@ version 34 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -67771,7 +67771,7 @@ version 34 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -67785,23 +67785,23 @@ version 34 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xd200
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x10a00, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x10c00, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x10c20, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x10c40, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x10c60, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x10d60, size 0x1cb60
     hash_1608f63ae729eda5 weaponstats[300];
     // offset 0x2d8c0, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x2d8e0, size 0x40
     uint64 connectionid;
     // offset 0x2d920, size 0x8
@@ -67815,47 +67815,47 @@ version 34 {
     // offset 0x2d970, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x2e5a0, size 0x12ea8
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x41448, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x425c8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x42608, size 0x54a8
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x47ab0, size 0x100
     byte demonwareflags[32];
     // offset 0x47bb0, size 0x20
     float skill_rating;
     // offset 0x47bd0, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x47cf0, size 0x20
     uint uploadbandwidth;
     // offset 0x47d10, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x47e50, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x47f10, size 0x8
     byte vialsowed;
     // offset 0x47f18, size 0x20
     int motdviewtime;
     // offset 0x47f38, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x48020, size 0x5a00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x4da20, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x4de20, size 0x3510
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x51330, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x51ab0, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x51b50, size 0x20
     float skill_variance;
     // offset 0x51b70, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x51c90, size 0x2c8
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x51f58, size 0x100
     byte unlocks[32];
     // offset 0x52058, size 0x40
@@ -67869,13 +67869,13 @@ version 34 {
     // offset 0xf6000, size 0x20
     bool musicunlocks[32];
     // offset 0xf6020, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xf6060, size 0x1
     bool hash_1892554e7234468;
     // offset 0xf6061, size 0x1
     bool completedfirsttimeflow;
     // offset 0xf6062, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xf6065, size 0x3
     uint:1 __pad[3];
 }
@@ -67894,7 +67894,7 @@ version 33 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -67922,7 +67922,7 @@ version 33 {
     };
 
     // idx 4 members 18 size 0x2c8
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int hash_20e770cec441c9f2;
         // offset 0x20, size 0x20
@@ -67962,17 +67962,17 @@ version 33 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -68108,13 +68108,13 @@ version 33 {
         // offset 0x548, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x578, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x938, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -68138,19 +68138,19 @@ version 33 {
     };
 
     // idx 15 members 4 size 0x3c88
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x150
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x150, size 0x3b10
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3c60, size 0x10
         short vote_succeeded;
         // offset 0x3c70, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x3c0
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x3c0
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -68180,7 +68180,7 @@ version 33 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x38
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x58, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x184, size 0x4
@@ -68188,7 +68188,7 @@ version 33 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -68200,7 +68200,7 @@ version 33 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -68208,13 +68208,13 @@ version 33 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -68222,9 +68222,9 @@ version 33 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -68244,7 +68244,7 @@ version 33 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -68252,9 +68252,9 @@ version 33 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -68268,13 +68268,13 @@ version 33 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -68410,7 +68410,7 @@ version 33 {
         doors_purchased, // 0x1a,
         weighted_downs, // 0x1b,
         sacrifices, // 0x1c,
-        hash_cd7cea298d209a0, // 0x1d,
+        killed_by_hellhound, // 0x1d,
         hero_weapon_power_pickedup, // 0x1e,
         sessionbans, // 0x1f,
         bgbs_chewed, // 0x20,
@@ -68519,7 +68519,7 @@ version 33 {
         zombie_hunter_kill_packapunch, // 0x87,
         specialty_mod_armorvest_drank, // 0x88,
         bgb_tokens_used, // 0x89,
-        hash_3e1a66815798ba48, // 0x8a,
+        survivalist_craftable, // 0x8a,
         pack_a_punch_pickedup, // 0x8b,
         hash_3fa2584a22ebf623, // 0x8c,
         island_seed_pickedup, // 0x8d,
@@ -68571,7 +68571,7 @@ version 33 {
         zm_daily_purchase_magic_box, // 0xbb,
         gum_gobbler_consume, // 0xbc,
         specialty_cooldown_drank, // 0xbd,
-        hash_53b7863a536e08fb, // 0xbe,
+        hellhounds_killed, // 0xbe,
         darkops_island_super_ee, // 0xbf,
         paragon_rankxp, // 0xc0,
         grabbed_from_magicbox, // 0xc1,
@@ -68596,7 +68596,7 @@ version 33 {
         zm_daily_kills_headshots, // 0xd4,
         total_shots, // 0xd5,
         survivalist_buy_perk, // 0xd6,
-        hash_5c5cab0cce302a01, // 0xd7,
+        weekly_timestamp, // 0xd7,
         specialty_mod_cooldown_drank, // 0xd8,
         bgb_tokens_gained, // 0xd9,
         zombie_hunter_explosion_multikill, // 0xda,
@@ -68667,7 +68667,7 @@ version 33 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -68679,23 +68679,23 @@ version 33 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -68710,7 +68710,7 @@ version 33 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -68723,7 +68723,7 @@ version 33 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -68752,7 +68752,7 @@ version 33 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -68773,7 +68773,7 @@ version 33 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -68823,7 +68823,7 @@ version 33 {
     };
 
     // idx 12 members 56
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         quickdraw, // 0x2,
@@ -68889,20 +68889,20 @@ version 33 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -68912,7 +68912,7 @@ version 33 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -68926,21 +68926,21 @@ version 33 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xd200
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x10a00, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x10a20, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x10a40, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x10a60, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x10b60, size 0x13240
     hash_1608f63ae729eda5 weaponstats[200];
     // offset 0x23da0, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x23dc0, size 0x40
     uint64 connectionid;
     // offset 0x23e00, size 0x8
@@ -68954,47 +68954,47 @@ version 33 {
     // offset 0x23e50, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x24a80, size 0x12ea8
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x37928, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x38aa8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x38ae8, size 0x54a8
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x3df90, size 0x100
     byte demonwareflags[32];
     // offset 0x3e090, size 0x20
     float skill_rating;
     // offset 0x3e0b0, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x3e1d0, size 0x20
     uint uploadbandwidth;
     // offset 0x3e1f0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x3e330, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x3e3f0, size 0x8
     byte vialsowed;
     // offset 0x3e3f8, size 0x20
     int motdviewtime;
     // offset 0x3e418, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x3e500, size 0x5a00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x43f00, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x44300, size 0x3510
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x47810, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x47f90, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x48030, size 0x20
     float skill_variance;
     // offset 0x48050, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x48170, size 0x2c8
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x48438, size 0x100
     byte unlocks[32];
     // offset 0x48538, size 0x40
@@ -69008,13 +69008,13 @@ version 33 {
     // offset 0xec4e0, size 0x20
     bool musicunlocks[32];
     // offset 0xec500, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xec540, size 0x1
     bool hash_1892554e7234468;
     // offset 0xec541, size 0x1
     bool completedfirsttimeflow;
     // offset 0xec542, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xec545, size 0x3
     uint:1 __pad[3];
 }
@@ -69033,7 +69033,7 @@ version 32 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -69061,7 +69061,7 @@ version 32 {
     };
 
     // idx 4 members 18 size 0x2c8
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int hash_20e770cec441c9f2;
         // offset 0x20, size 0x20
@@ -69101,17 +69101,17 @@ version 32 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -69247,13 +69247,13 @@ version 32 {
         // offset 0x548, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x578, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x938, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -69277,19 +69277,19 @@ version 32 {
     };
 
     // idx 15 members 4 size 0x3c88
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x150
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x150, size 0x3b10
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x3c60, size 0x10
         short vote_succeeded;
         // offset 0x3c70, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x3c0
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x3c0
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -69319,7 +69319,7 @@ version 32 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x40
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x60, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x18c, size 0x4
@@ -69327,7 +69327,7 @@ version 32 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -69339,7 +69339,7 @@ version 32 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -69347,13 +69347,13 @@ version 32 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -69361,9 +69361,9 @@ version 32 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -69383,7 +69383,7 @@ version 32 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -69391,9 +69391,9 @@ version 32 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -69407,13 +69407,13 @@ version 32 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -69549,7 +69549,7 @@ version 32 {
         doors_purchased, // 0x1a,
         weighted_downs, // 0x1b,
         sacrifices, // 0x1c,
-        hash_cd7cea298d209a0, // 0x1d,
+        killed_by_hellhound, // 0x1d,
         hero_weapon_power_pickedup, // 0x1e,
         sessionbans, // 0x1f,
         bgbs_chewed, // 0x20,
@@ -69658,7 +69658,7 @@ version 32 {
         zombie_hunter_kill_packapunch, // 0x87,
         specialty_mod_armorvest_drank, // 0x88,
         bgb_tokens_used, // 0x89,
-        hash_3e1a66815798ba48, // 0x8a,
+        survivalist_craftable, // 0x8a,
         pack_a_punch_pickedup, // 0x8b,
         hash_3fa2584a22ebf623, // 0x8c,
         island_seed_pickedup, // 0x8d,
@@ -69710,7 +69710,7 @@ version 32 {
         zm_daily_purchase_magic_box, // 0xbb,
         gum_gobbler_consume, // 0xbc,
         specialty_cooldown_drank, // 0xbd,
-        hash_53b7863a536e08fb, // 0xbe,
+        hellhounds_killed, // 0xbe,
         darkops_island_super_ee, // 0xbf,
         paragon_rankxp, // 0xc0,
         grabbed_from_magicbox, // 0xc1,
@@ -69735,7 +69735,7 @@ version 32 {
         zm_daily_kills_headshots, // 0xd4,
         total_shots, // 0xd5,
         survivalist_buy_perk, // 0xd6,
-        hash_5c5cab0cce302a01, // 0xd7,
+        weekly_timestamp, // 0xd7,
         specialty_mod_cooldown_drank, // 0xd8,
         bgb_tokens_gained, // 0xd9,
         zombie_hunter_explosion_multikill, // 0xda,
@@ -69806,7 +69806,7 @@ version 32 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -69818,23 +69818,23 @@ version 32 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -69849,7 +69849,7 @@ version 32 {
     };
 
     // idx 5 members 9
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztcm_mansion, // 0x0,
         ztcm_towers, // 0x1,
         ztcm_zod, // 0x2,
@@ -69862,7 +69862,7 @@ version 32 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -69891,7 +69891,7 @@ version 32 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -69912,7 +69912,7 @@ version 32 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -69962,7 +69962,7 @@ version 32 {
     };
 
     // idx 12 members 64
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         quickdraw, // 0x2,
@@ -69989,9 +69989,9 @@ version 32 {
         extclip2, // 0x17,
         floatdot, // 0x18,
         steadyaim2, // 0x19,
-        hash_19f95db795729dff, // 0x1a,
+        confirmkill, // 0x1a,
         tacknife, // 0x1b,
-        hash_1cedcb161a0f9050, // 0x1c,
+        turbohip, // 0x1c,
         mixclip, // 0x1d,
         stackfire, // 0x1e,
         killcounter, // 0x1f,
@@ -69999,24 +69999,24 @@ version 32 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e9c1ae290001c77, // 0x24,
-        hash_30e2842163afed57, // 0x25,
+        directionalthreat, // 0x24,
+        penetrationscan, // 0x25,
         reddot, // 0x26,
         extclip, // 0x27,
         holo, // 0x28,
-        hash_42a14ec552763dbc, // 0x29,
+        acogwide, // 0x29,
         elo, // 0x2a,
         fastreload2, // 0x2b,
         extrapellets, // 0x2c,
         holdbreath, // 0x2d,
         fmj2, // 0x2e,
-        hash_561b988220ea0f76, // 0x2f,
+        lowzoom, // 0x2f,
         quickdraw2, // 0x30,
-        hash_59df3d5966c1db75, // 0x31,
-        hash_5a7a05163d2daf77, // 0x32,
-        hash_5a902d129ff53760, // 0x33,
+        spreaddot, // 0x31,
+        turboads, // 0x32,
+        acogcanted, // 0x33,
         fmj, // 0x34,
-        hash_5d43c70ab246bed5, // 0x35,
+        hybridacog, // 0x35,
         adsreload, // 0x36,
         suppressed, // 0x37,
         sprintout, // 0x38,
@@ -70024,7 +70024,7 @@ version 32 {
         dualoptic, // 0x3a,
         grip, // 0x3b,
         reflex, // 0x3c,
-        hash_7ea53a02579e79d1, // 0x3d,
+        holoboa, // 0x3d,
         uber, // 0x3e,
         damage, // 0x3f
     };
@@ -70036,20 +70036,20 @@ version 32 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -70059,7 +70059,7 @@ version 32 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -70073,21 +70073,21 @@ version 32 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xf000
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x12800, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x12820, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x12840, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x12860, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x12960, size 0x13880
     hash_1608f63ae729eda5 weaponstats[200];
     // offset 0x261e0, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x26200, size 0x40
     uint64 connectionid;
     // offset 0x26240, size 0x8
@@ -70101,47 +70101,47 @@ version 32 {
     // offset 0x26290, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x26ec0, size 0x12ea8
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x39d68, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x3aee8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x3af28, size 0x54a8
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x403d0, size 0x100
     byte demonwareflags[32];
     // offset 0x404d0, size 0x20
     float skill_rating;
     // offset 0x404f0, size 0x120
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x40610, size 0x20
     uint uploadbandwidth;
     // offset 0x40630, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x40770, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x40830, size 0x8
     byte vialsowed;
     // offset 0x40838, size 0x20
     int motdviewtime;
     // offset 0x40858, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x40940, size 0x5a00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x46340, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x46740, size 0x3510
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x49c50, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x4a3d0, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x4a470, size 0x20
     float skill_variance;
     // offset 0x4a490, size 0x120
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x4a5b0, size 0x2c8
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x4a878, size 0x100
     byte unlocks[32];
     // offset 0x4a978, size 0x40
@@ -70155,13 +70155,13 @@ version 32 {
     // offset 0xee920, size 0x20
     bool musicunlocks[32];
     // offset 0xee940, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xee980, size 0x1
     bool hash_1892554e7234468;
     // offset 0xee981, size 0x1
     bool completedfirsttimeflow;
     // offset 0xee982, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xee985, size 0x3
     uint:1 __pad[3];
 }
@@ -70180,7 +70180,7 @@ version 31 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -70208,7 +70208,7 @@ version 31 {
     };
 
     // idx 4 members 18 size 0x2c8
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int hash_20e770cec441c9f2;
         // offset 0x20, size 0x20
@@ -70248,17 +70248,17 @@ version 31 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -70394,13 +70394,13 @@ version 31 {
         // offset 0x548, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x578, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x938, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -70424,19 +70424,19 @@ version 31 {
     };
 
     // idx 15 members 4 size 0x2248
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x150
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x150, size 0x20d0
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x2220, size 0x10
         short vote_succeeded;
         // offset 0x2230, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x3c0
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x3c0
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -70466,7 +70466,7 @@ version 31 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x40
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x60, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x18c, size 0x4
@@ -70474,7 +70474,7 @@ version 31 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -70486,7 +70486,7 @@ version 31 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -70494,13 +70494,13 @@ version 31 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -70508,9 +70508,9 @@ version 31 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -70530,7 +70530,7 @@ version 31 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -70538,9 +70538,9 @@ version 31 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -70554,13 +70554,13 @@ version 31 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -70696,7 +70696,7 @@ version 31 {
         doors_purchased, // 0x1a,
         weighted_downs, // 0x1b,
         sacrifices, // 0x1c,
-        hash_cd7cea298d209a0, // 0x1d,
+        killed_by_hellhound, // 0x1d,
         hero_weapon_power_pickedup, // 0x1e,
         sessionbans, // 0x1f,
         bgbs_chewed, // 0x20,
@@ -70805,7 +70805,7 @@ version 31 {
         zombie_hunter_kill_packapunch, // 0x87,
         specialty_mod_armorvest_drank, // 0x88,
         bgb_tokens_used, // 0x89,
-        hash_3e1a66815798ba48, // 0x8a,
+        survivalist_craftable, // 0x8a,
         pack_a_punch_pickedup, // 0x8b,
         hash_3fa2584a22ebf623, // 0x8c,
         island_seed_pickedup, // 0x8d,
@@ -70857,7 +70857,7 @@ version 31 {
         zm_daily_purchase_magic_box, // 0xbb,
         gum_gobbler_consume, // 0xbc,
         specialty_cooldown_drank, // 0xbd,
-        hash_53b7863a536e08fb, // 0xbe,
+        hellhounds_killed, // 0xbe,
         darkops_island_super_ee, // 0xbf,
         paragon_rankxp, // 0xc0,
         grabbed_from_magicbox, // 0xc1,
@@ -70882,7 +70882,7 @@ version 31 {
         zm_daily_kills_headshots, // 0xd4,
         total_shots, // 0xd5,
         survivalist_buy_perk, // 0xd6,
-        hash_5c5cab0cce302a01, // 0xd7,
+        weekly_timestamp, // 0xd7,
         specialty_mod_cooldown_drank, // 0xd8,
         bgb_tokens_gained, // 0xd9,
         zombie_hunter_explosion_multikill, // 0xda,
@@ -70953,7 +70953,7 @@ version 31 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -70965,23 +70965,23 @@ version 31 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -70996,7 +70996,7 @@ version 31 {
     };
 
     // idx 5 members 5
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztutorial, // 0x0,
         zgrief, // 0x1,
         zstandard, // 0x2,
@@ -71005,7 +71005,7 @@ version 31 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -71034,7 +71034,7 @@ version 31 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -71055,7 +71055,7 @@ version 31 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -71105,7 +71105,7 @@ version 31 {
     };
 
     // idx 12 members 64
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         quickdraw, // 0x2,
@@ -71132,9 +71132,9 @@ version 31 {
         extclip2, // 0x17,
         floatdot, // 0x18,
         steadyaim2, // 0x19,
-        hash_19f95db795729dff, // 0x1a,
+        confirmkill, // 0x1a,
         tacknife, // 0x1b,
-        hash_1cedcb161a0f9050, // 0x1c,
+        turbohip, // 0x1c,
         mixclip, // 0x1d,
         stackfire, // 0x1e,
         killcounter, // 0x1f,
@@ -71142,24 +71142,24 @@ version 31 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e9c1ae290001c77, // 0x24,
-        hash_30e2842163afed57, // 0x25,
+        directionalthreat, // 0x24,
+        penetrationscan, // 0x25,
         reddot, // 0x26,
         extclip, // 0x27,
         holo, // 0x28,
-        hash_42a14ec552763dbc, // 0x29,
+        acogwide, // 0x29,
         elo, // 0x2a,
         fastreload2, // 0x2b,
         extrapellets, // 0x2c,
         holdbreath, // 0x2d,
         fmj2, // 0x2e,
-        hash_561b988220ea0f76, // 0x2f,
+        lowzoom, // 0x2f,
         quickdraw2, // 0x30,
-        hash_59df3d5966c1db75, // 0x31,
-        hash_5a7a05163d2daf77, // 0x32,
-        hash_5a902d129ff53760, // 0x33,
+        spreaddot, // 0x31,
+        turboads, // 0x32,
+        acogcanted, // 0x33,
         fmj, // 0x34,
-        hash_5d43c70ab246bed5, // 0x35,
+        hybridacog, // 0x35,
         adsreload, // 0x36,
         suppressed, // 0x37,
         sprintout, // 0x38,
@@ -71167,7 +71167,7 @@ version 31 {
         dualoptic, // 0x3a,
         grip, // 0x3b,
         reflex, // 0x3c,
-        hash_7ea53a02579e79d1, // 0x3d,
+        holoboa, // 0x3d,
         uber, // 0x3e,
         damage, // 0x3f
     };
@@ -71179,20 +71179,20 @@ version 31 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -71202,7 +71202,7 @@ version 31 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -71216,21 +71216,21 @@ version 31 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xf000
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x12800, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x12820, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x12840, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x12860, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x12960, size 0x13880
     hash_1608f63ae729eda5 weaponstats[200];
     // offset 0x261e0, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x26200, size 0x40
     uint64 connectionid;
     // offset 0x26240, size 0x8
@@ -71244,47 +71244,47 @@ version 31 {
     // offset 0x26290, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x26ec0, size 0xab68
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x31a28, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x32ba8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x32be8, size 0x2f08
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x35af0, size 0x100
     byte demonwareflags[32];
     // offset 0x35bf0, size 0x20
     float skill_rating;
     // offset 0x35c10, size 0xa0
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x35cb0, size 0x20
     uint uploadbandwidth;
     // offset 0x35cd0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x35e10, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x35ed0, size 0x8
     byte vialsowed;
     // offset 0x35ed8, size 0x20
     int motdviewtime;
     // offset 0x35ef8, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x35fe0, size 0x5a00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x3b9e0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x3bde0, size 0x3510
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x3f2f0, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x3fa70, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x3fb10, size 0x20
     float skill_variance;
     // offset 0x3fb30, size 0xa0
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x3fbd0, size 0x2c8
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x3fe98, size 0x100
     byte unlocks[32];
     // offset 0x3ff98, size 0x40
@@ -71298,13 +71298,13 @@ version 31 {
     // offset 0xe3f40, size 0x20
     bool musicunlocks[32];
     // offset 0xe3f60, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xe3fa0, size 0x1
     bool hash_1892554e7234468;
     // offset 0xe3fa1, size 0x1
     bool completedfirsttimeflow;
     // offset 0xe3fa2, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xe3fa5, size 0x3
     uint:1 __pad[3];
 }
@@ -71323,7 +71323,7 @@ version 30 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -71351,7 +71351,7 @@ version 30 {
     };
 
     // idx 4 members 18 size 0x2c8
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x20
         int hash_20e770cec441c9f2;
         // offset 0x20, size 0x20
@@ -71391,17 +71391,17 @@ version 30 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -71537,13 +71537,13 @@ version 30 {
         // offset 0x548, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x578, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x938, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -71567,19 +71567,19 @@ version 30 {
     };
 
     // idx 15 members 4 size 0x2248
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x150
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x150, size 0x20d0
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x2220, size 0x10
         short vote_succeeded;
         // offset 0x2230, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x3c0
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x3c0
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -71609,7 +71609,7 @@ version 30 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x40
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x60, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x18c, size 0x4
@@ -71617,7 +71617,7 @@ version 30 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -71629,7 +71629,7 @@ version 30 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -71637,13 +71637,13 @@ version 30 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -71651,9 +71651,9 @@ version 30 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -71673,7 +71673,7 @@ version 30 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -71681,9 +71681,9 @@ version 30 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -71697,13 +71697,13 @@ version 30 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -71935,7 +71935,7 @@ version 30 {
         zombie_hunter_kill_packapunch, // 0x7a,
         specialty_mod_armorvest_drank, // 0x7b,
         bgb_tokens_used, // 0x7c,
-        hash_3e1a66815798ba48, // 0x7d,
+        survivalist_craftable, // 0x7d,
         pack_a_punch_pickedup, // 0x7e,
         hash_3fa2584a22ebf623, // 0x7f,
         island_seed_pickedup, // 0x80,
@@ -72008,7 +72008,7 @@ version 30 {
         zm_daily_kills_headshots, // 0xc3,
         total_shots, // 0xc4,
         survivalist_buy_perk, // 0xc5,
-        hash_5c5cab0cce302a01, // 0xc6,
+        weekly_timestamp, // 0xc6,
         specialty_mod_cooldown_drank, // 0xc7,
         bgb_tokens_gained, // 0xc8,
         zombie_hunter_explosion_multikill, // 0xc9,
@@ -72072,7 +72072,7 @@ version 30 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -72084,23 +72084,23 @@ version 30 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -72115,7 +72115,7 @@ version 30 {
     };
 
     // idx 5 members 5
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztutorial, // 0x0,
         zgrief, // 0x1,
         zstandard, // 0x2,
@@ -72124,7 +72124,7 @@ version 30 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -72153,7 +72153,7 @@ version 30 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -72174,7 +72174,7 @@ version 30 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -72224,7 +72224,7 @@ version 30 {
     };
 
     // idx 12 members 64
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         quickdraw, // 0x2,
@@ -72251,9 +72251,9 @@ version 30 {
         extclip2, // 0x17,
         floatdot, // 0x18,
         steadyaim2, // 0x19,
-        hash_19f95db795729dff, // 0x1a,
+        confirmkill, // 0x1a,
         tacknife, // 0x1b,
-        hash_1cedcb161a0f9050, // 0x1c,
+        turbohip, // 0x1c,
         mixclip, // 0x1d,
         stackfire, // 0x1e,
         killcounter, // 0x1f,
@@ -72261,24 +72261,24 @@ version 30 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e9c1ae290001c77, // 0x24,
-        hash_30e2842163afed57, // 0x25,
+        directionalthreat, // 0x24,
+        penetrationscan, // 0x25,
         reddot, // 0x26,
         extclip, // 0x27,
         holo, // 0x28,
-        hash_42a14ec552763dbc, // 0x29,
+        acogwide, // 0x29,
         elo, // 0x2a,
         fastreload2, // 0x2b,
         extrapellets, // 0x2c,
         holdbreath, // 0x2d,
         fmj2, // 0x2e,
-        hash_561b988220ea0f76, // 0x2f,
+        lowzoom, // 0x2f,
         quickdraw2, // 0x30,
-        hash_59df3d5966c1db75, // 0x31,
-        hash_5a7a05163d2daf77, // 0x32,
-        hash_5a902d129ff53760, // 0x33,
+        spreaddot, // 0x31,
+        turboads, // 0x32,
+        acogcanted, // 0x33,
         fmj, // 0x34,
-        hash_5d43c70ab246bed5, // 0x35,
+        hybridacog, // 0x35,
         adsreload, // 0x36,
         suppressed, // 0x37,
         sprintout, // 0x38,
@@ -72286,7 +72286,7 @@ version 30 {
         dualoptic, // 0x3a,
         grip, // 0x3b,
         reflex, // 0x3c,
-        hash_7ea53a02579e79d1, // 0x3d,
+        holoboa, // 0x3d,
         uber, // 0x3e,
         damage, // 0x3f
     };
@@ -72298,20 +72298,20 @@ version 30 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -72321,7 +72321,7 @@ version 30 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -72335,21 +72335,21 @@ version 30 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xf000
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x12800, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x12820, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x12840, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x12860, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x12960, size 0x13880
     hash_1608f63ae729eda5 weaponstats[200];
     // offset 0x261e0, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x26200, size 0x40
     uint64 connectionid;
     // offset 0x26240, size 0x8
@@ -72363,47 +72363,47 @@ version 30 {
     // offset 0x26290, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x26ec0, size 0xab68
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x31a28, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x32ba8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x32be8, size 0x2f08
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x35af0, size 0x100
     byte demonwareflags[32];
     // offset 0x35bf0, size 0x20
     float skill_rating;
     // offset 0x35c10, size 0xa0
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x35cb0, size 0x20
     uint uploadbandwidth;
     // offset 0x35cd0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x35e10, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x35ed0, size 0x8
     byte vialsowed;
     // offset 0x35ed8, size 0x20
     int motdviewtime;
     // offset 0x35ef8, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x35fe0, size 0x5a00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x3b9e0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x3bde0, size 0x3090
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x3ee70, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x3f5f0, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x3f690, size 0x20
     float skill_variance;
     // offset 0x3f6b0, size 0xa0
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x3f750, size 0x2c8
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x3fa18, size 0x100
     byte unlocks[32];
     // offset 0x3fb18, size 0x40
@@ -72417,13 +72417,13 @@ version 30 {
     // offset 0xdc950, size 0x20
     bool musicunlocks[32];
     // offset 0xdc970, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xdc9b0, size 0x1
     bool hash_1892554e7234468;
     // offset 0xdc9b1, size 0x1
     bool completedfirsttimeflow;
     // offset 0xdc9b2, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xdc9b5, size 0x3
     uint:1 __pad[3];
 }
@@ -72442,7 +72442,7 @@ version 29 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -72470,7 +72470,7 @@ version 29 {
     };
 
     // idx 4 members 11 size 0x1e8
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x10
         short nemesisrankicon;
         // offset 0x10, size 0x40
@@ -72496,17 +72496,17 @@ version 29 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -72642,13 +72642,13 @@ version 29 {
         // offset 0x548, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x578, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x938, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -72672,19 +72672,19 @@ version 29 {
     };
 
     // idx 15 members 4 size 0x2248
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x150
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x150, size 0x20d0
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x2220, size 0x10
         short vote_succeeded;
         // offset 0x2230, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x3c0
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x3c0
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -72714,7 +72714,7 @@ version 29 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x40
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x60, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x18c, size 0x4
@@ -72722,7 +72722,7 @@ version 29 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -72734,7 +72734,7 @@ version 29 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -72742,13 +72742,13 @@ version 29 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -72756,9 +72756,9 @@ version 29 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -72778,7 +72778,7 @@ version 29 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -72786,9 +72786,9 @@ version 29 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -72802,13 +72802,13 @@ version 29 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -73040,7 +73040,7 @@ version 29 {
         zombie_hunter_kill_packapunch, // 0x7a,
         specialty_mod_armorvest_drank, // 0x7b,
         bgb_tokens_used, // 0x7c,
-        hash_3e1a66815798ba48, // 0x7d,
+        survivalist_craftable, // 0x7d,
         pack_a_punch_pickedup, // 0x7e,
         hash_3fa2584a22ebf623, // 0x7f,
         island_seed_pickedup, // 0x80,
@@ -73113,7 +73113,7 @@ version 29 {
         zm_daily_kills_headshots, // 0xc3,
         total_shots, // 0xc4,
         survivalist_buy_perk, // 0xc5,
-        hash_5c5cab0cce302a01, // 0xc6,
+        weekly_timestamp, // 0xc6,
         specialty_mod_cooldown_drank, // 0xc7,
         bgb_tokens_gained, // 0xc8,
         zombie_hunter_explosion_multikill, // 0xc9,
@@ -73177,7 +73177,7 @@ version 29 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -73189,23 +73189,23 @@ version 29 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -73220,7 +73220,7 @@ version 29 {
     };
 
     // idx 5 members 5
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztutorial, // 0x0,
         zgrief, // 0x1,
         zstandard, // 0x2,
@@ -73229,7 +73229,7 @@ version 29 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -73258,7 +73258,7 @@ version 29 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -73279,7 +73279,7 @@ version 29 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -73329,7 +73329,7 @@ version 29 {
     };
 
     // idx 12 members 64
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         quickdraw, // 0x2,
@@ -73356,9 +73356,9 @@ version 29 {
         extclip2, // 0x17,
         floatdot, // 0x18,
         steadyaim2, // 0x19,
-        hash_19f95db795729dff, // 0x1a,
+        confirmkill, // 0x1a,
         tacknife, // 0x1b,
-        hash_1cedcb161a0f9050, // 0x1c,
+        turbohip, // 0x1c,
         mixclip, // 0x1d,
         stackfire, // 0x1e,
         killcounter, // 0x1f,
@@ -73366,24 +73366,24 @@ version 29 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e9c1ae290001c77, // 0x24,
-        hash_30e2842163afed57, // 0x25,
+        directionalthreat, // 0x24,
+        penetrationscan, // 0x25,
         reddot, // 0x26,
         extclip, // 0x27,
         holo, // 0x28,
-        hash_42a14ec552763dbc, // 0x29,
+        acogwide, // 0x29,
         elo, // 0x2a,
         fastreload2, // 0x2b,
         extrapellets, // 0x2c,
         holdbreath, // 0x2d,
         fmj2, // 0x2e,
-        hash_561b988220ea0f76, // 0x2f,
+        lowzoom, // 0x2f,
         quickdraw2, // 0x30,
-        hash_59df3d5966c1db75, // 0x31,
-        hash_5a7a05163d2daf77, // 0x32,
-        hash_5a902d129ff53760, // 0x33,
+        spreaddot, // 0x31,
+        turboads, // 0x32,
+        acogcanted, // 0x33,
         fmj, // 0x34,
-        hash_5d43c70ab246bed5, // 0x35,
+        hybridacog, // 0x35,
         adsreload, // 0x36,
         suppressed, // 0x37,
         sprintout, // 0x38,
@@ -73391,7 +73391,7 @@ version 29 {
         dualoptic, // 0x3a,
         grip, // 0x3b,
         reflex, // 0x3c,
-        hash_7ea53a02579e79d1, // 0x3d,
+        holoboa, // 0x3d,
         uber, // 0x3e,
         damage, // 0x3f
     };
@@ -73403,20 +73403,20 @@ version 29 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -73426,7 +73426,7 @@ version 29 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -73440,21 +73440,21 @@ version 29 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xf000
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x12800, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x12820, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x12840, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x12860, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x12960, size 0x13880
     hash_1608f63ae729eda5 weaponstats[200];
     // offset 0x261e0, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x26200, size 0x40
     uint64 connectionid;
     // offset 0x26240, size 0x8
@@ -73468,47 +73468,47 @@ version 29 {
     // offset 0x26290, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x26ec0, size 0xab68
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x31a28, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x32ba8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x32be8, size 0x2f08
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x35af0, size 0x100
     byte demonwareflags[32];
     // offset 0x35bf0, size 0x20
     float skill_rating;
     // offset 0x35c10, size 0xa0
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x35cb0, size 0x20
     uint uploadbandwidth;
     // offset 0x35cd0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x35e10, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x35ed0, size 0x8
     byte vialsowed;
     // offset 0x35ed8, size 0x20
     int motdviewtime;
     // offset 0x35ef8, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x35fe0, size 0x5a00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x3b9e0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x3bde0, size 0x3090
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x3ee70, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x3f5f0, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x3f690, size 0x20
     float skill_variance;
     // offset 0x3f6b0, size 0xa0
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x3f750, size 0x1e8
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x3f938, size 0x100
     byte unlocks[32];
     // offset 0x3fa38, size 0x40
@@ -73522,13 +73522,13 @@ version 29 {
     // offset 0xdc870, size 0x20
     bool musicunlocks[32];
     // offset 0xdc890, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xdc8d0, size 0x1
     bool hash_1892554e7234468;
     // offset 0xdc8d1, size 0x1
     bool completedfirsttimeflow;
     // offset 0xdc8d2, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xdc8d5, size 0x3
     uint:1 __pad[3];
 }
@@ -73547,7 +73547,7 @@ version 28 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -73575,7 +73575,7 @@ version 28 {
     };
 
     // idx 4 members 10 size 0x1a8
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x10
         short nemesisrankicon;
         // offset 0x10, size 0x20
@@ -73599,17 +73599,17 @@ version 28 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -73745,13 +73745,13 @@ version 28 {
         // offset 0x548, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x578, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x938, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -73775,19 +73775,19 @@ version 28 {
     };
 
     // idx 15 members 4 size 0x2248
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x150
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x150, size 0x20d0
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x2220, size 0x10
         short vote_succeeded;
         // offset 0x2230, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x3c0
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x3c0
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -73817,7 +73817,7 @@ version 28 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x40
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x60, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x18c, size 0x4
@@ -73825,7 +73825,7 @@ version 28 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -73837,7 +73837,7 @@ version 28 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -73845,13 +73845,13 @@ version 28 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -73859,9 +73859,9 @@ version 28 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -73881,7 +73881,7 @@ version 28 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -73889,9 +73889,9 @@ version 28 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -73905,13 +73905,13 @@ version 28 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -74143,7 +74143,7 @@ version 28 {
         zombie_hunter_kill_packapunch, // 0x7a,
         specialty_mod_armorvest_drank, // 0x7b,
         bgb_tokens_used, // 0x7c,
-        hash_3e1a66815798ba48, // 0x7d,
+        survivalist_craftable, // 0x7d,
         pack_a_punch_pickedup, // 0x7e,
         hash_3fa2584a22ebf623, // 0x7f,
         island_seed_pickedup, // 0x80,
@@ -74216,7 +74216,7 @@ version 28 {
         zm_daily_kills_headshots, // 0xc3,
         total_shots, // 0xc4,
         survivalist_buy_perk, // 0xc5,
-        hash_5c5cab0cce302a01, // 0xc6,
+        weekly_timestamp, // 0xc6,
         specialty_mod_cooldown_drank, // 0xc7,
         bgb_tokens_gained, // 0xc8,
         zombie_hunter_explosion_multikill, // 0xc9,
@@ -74280,7 +74280,7 @@ version 28 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -74292,23 +74292,23 @@ version 28 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -74323,7 +74323,7 @@ version 28 {
     };
 
     // idx 5 members 5
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztutorial, // 0x0,
         zgrief, // 0x1,
         zstandard, // 0x2,
@@ -74332,7 +74332,7 @@ version 28 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -74361,7 +74361,7 @@ version 28 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -74382,7 +74382,7 @@ version 28 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -74432,7 +74432,7 @@ version 28 {
     };
 
     // idx 12 members 64
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         quickdraw, // 0x2,
@@ -74459,9 +74459,9 @@ version 28 {
         extclip2, // 0x17,
         floatdot, // 0x18,
         steadyaim2, // 0x19,
-        hash_19f95db795729dff, // 0x1a,
+        confirmkill, // 0x1a,
         tacknife, // 0x1b,
-        hash_1cedcb161a0f9050, // 0x1c,
+        turbohip, // 0x1c,
         mixclip, // 0x1d,
         stackfire, // 0x1e,
         killcounter, // 0x1f,
@@ -74469,24 +74469,24 @@ version 28 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e9c1ae290001c77, // 0x24,
-        hash_30e2842163afed57, // 0x25,
+        directionalthreat, // 0x24,
+        penetrationscan, // 0x25,
         reddot, // 0x26,
         extclip, // 0x27,
         holo, // 0x28,
-        hash_42a14ec552763dbc, // 0x29,
+        acogwide, // 0x29,
         elo, // 0x2a,
         fastreload2, // 0x2b,
         extrapellets, // 0x2c,
         holdbreath, // 0x2d,
         fmj2, // 0x2e,
-        hash_561b988220ea0f76, // 0x2f,
+        lowzoom, // 0x2f,
         quickdraw2, // 0x30,
-        hash_59df3d5966c1db75, // 0x31,
-        hash_5a7a05163d2daf77, // 0x32,
-        hash_5a902d129ff53760, // 0x33,
+        spreaddot, // 0x31,
+        turboads, // 0x32,
+        acogcanted, // 0x33,
         fmj, // 0x34,
-        hash_5d43c70ab246bed5, // 0x35,
+        hybridacog, // 0x35,
         adsreload, // 0x36,
         suppressed, // 0x37,
         sprintout, // 0x38,
@@ -74494,7 +74494,7 @@ version 28 {
         dualoptic, // 0x3a,
         grip, // 0x3b,
         reflex, // 0x3c,
-        hash_7ea53a02579e79d1, // 0x3d,
+        holoboa, // 0x3d,
         uber, // 0x3e,
         damage, // 0x3f
     };
@@ -74506,20 +74506,20 @@ version 28 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -74529,7 +74529,7 @@ version 28 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -74543,21 +74543,21 @@ version 28 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xf000
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x12800, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x12820, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x12840, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x12860, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x12960, size 0x13880
     hash_1608f63ae729eda5 weaponstats[200];
     // offset 0x261e0, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x26200, size 0x40
     uint64 connectionid;
     // offset 0x26240, size 0x8
@@ -74571,47 +74571,47 @@ version 28 {
     // offset 0x26290, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x26ec0, size 0xab68
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x31a28, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x32ba8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x32be8, size 0x2f08
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x35af0, size 0x100
     byte demonwareflags[32];
     // offset 0x35bf0, size 0x20
     float skill_rating;
     // offset 0x35c10, size 0xa0
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x35cb0, size 0x20
     uint uploadbandwidth;
     // offset 0x35cd0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x35e10, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x35ed0, size 0x8
     byte vialsowed;
     // offset 0x35ed8, size 0x20
     int motdviewtime;
     // offset 0x35ef8, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x35fe0, size 0x5a00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x3b9e0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x3bde0, size 0x3090
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x3ee70, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x3f5f0, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x3f690, size 0x20
     float skill_variance;
     // offset 0x3f6b0, size 0xa0
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x3f750, size 0x1a8
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x3f8f8, size 0x100
     byte unlocks[32];
     // offset 0x3f9f8, size 0x40
@@ -74625,13 +74625,13 @@ version 28 {
     // offset 0xdc830, size 0x20
     bool musicunlocks[32];
     // offset 0xdc850, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xdc890, size 0x1
     bool hash_1892554e7234468;
     // offset 0xdc891, size 0x1
     bool completedfirsttimeflow;
     // offset 0xdc892, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xdc895, size 0x3
     uint:1 __pad[3];
 }
@@ -74650,7 +74650,7 @@ version 27 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -74678,7 +74678,7 @@ version 27 {
     };
 
     // idx 4 members 9 size 0x188
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x10
         short nemesisrankicon;
         // offset 0x10, size 0x10
@@ -74700,17 +74700,17 @@ version 27 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -74846,13 +74846,13 @@ version 27 {
         // offset 0x548, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x578, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x938, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -74876,19 +74876,19 @@ version 27 {
     };
 
     // idx 15 members 4 size 0x2248
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x150
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x150, size 0x20d0
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x2220, size 0x10
         short vote_succeeded;
         // offset 0x2230, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x3c0
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x3c0
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -74918,7 +74918,7 @@ version 27 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x40
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x60, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x18c, size 0x4
@@ -74926,7 +74926,7 @@ version 27 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -74938,7 +74938,7 @@ version 27 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -74946,13 +74946,13 @@ version 27 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -74960,9 +74960,9 @@ version 27 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -74982,7 +74982,7 @@ version 27 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -74990,9 +74990,9 @@ version 27 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -75006,13 +75006,13 @@ version 27 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -75244,7 +75244,7 @@ version 27 {
         zombie_hunter_kill_packapunch, // 0x7a,
         specialty_mod_armorvest_drank, // 0x7b,
         bgb_tokens_used, // 0x7c,
-        hash_3e1a66815798ba48, // 0x7d,
+        survivalist_craftable, // 0x7d,
         pack_a_punch_pickedup, // 0x7e,
         hash_3fa2584a22ebf623, // 0x7f,
         island_seed_pickedup, // 0x80,
@@ -75317,7 +75317,7 @@ version 27 {
         zm_daily_kills_headshots, // 0xc3,
         total_shots, // 0xc4,
         survivalist_buy_perk, // 0xc5,
-        hash_5c5cab0cce302a01, // 0xc6,
+        weekly_timestamp, // 0xc6,
         specialty_mod_cooldown_drank, // 0xc7,
         bgb_tokens_gained, // 0xc8,
         zombie_hunter_explosion_multikill, // 0xc9,
@@ -75381,7 +75381,7 @@ version 27 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -75393,23 +75393,23 @@ version 27 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -75424,7 +75424,7 @@ version 27 {
     };
 
     // idx 5 members 5
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztutorial, // 0x0,
         zgrief, // 0x1,
         zstandard, // 0x2,
@@ -75433,7 +75433,7 @@ version 27 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -75462,7 +75462,7 @@ version 27 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -75483,7 +75483,7 @@ version 27 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -75533,7 +75533,7 @@ version 27 {
     };
 
     // idx 12 members 64
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         quickdraw, // 0x2,
@@ -75560,9 +75560,9 @@ version 27 {
         extclip2, // 0x17,
         floatdot, // 0x18,
         steadyaim2, // 0x19,
-        hash_19f95db795729dff, // 0x1a,
+        confirmkill, // 0x1a,
         tacknife, // 0x1b,
-        hash_1cedcb161a0f9050, // 0x1c,
+        turbohip, // 0x1c,
         mixclip, // 0x1d,
         stackfire, // 0x1e,
         killcounter, // 0x1f,
@@ -75570,24 +75570,24 @@ version 27 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e9c1ae290001c77, // 0x24,
-        hash_30e2842163afed57, // 0x25,
+        directionalthreat, // 0x24,
+        penetrationscan, // 0x25,
         reddot, // 0x26,
         extclip, // 0x27,
         holo, // 0x28,
-        hash_42a14ec552763dbc, // 0x29,
+        acogwide, // 0x29,
         elo, // 0x2a,
         fastreload2, // 0x2b,
         extrapellets, // 0x2c,
         holdbreath, // 0x2d,
         fmj2, // 0x2e,
-        hash_561b988220ea0f76, // 0x2f,
+        lowzoom, // 0x2f,
         quickdraw2, // 0x30,
-        hash_59df3d5966c1db75, // 0x31,
-        hash_5a7a05163d2daf77, // 0x32,
-        hash_5a902d129ff53760, // 0x33,
+        spreaddot, // 0x31,
+        turboads, // 0x32,
+        acogcanted, // 0x33,
         fmj, // 0x34,
-        hash_5d43c70ab246bed5, // 0x35,
+        hybridacog, // 0x35,
         adsreload, // 0x36,
         suppressed, // 0x37,
         sprintout, // 0x38,
@@ -75595,7 +75595,7 @@ version 27 {
         dualoptic, // 0x3a,
         grip, // 0x3b,
         reflex, // 0x3c,
-        hash_7ea53a02579e79d1, // 0x3d,
+        holoboa, // 0x3d,
         uber, // 0x3e,
         damage, // 0x3f
     };
@@ -75607,20 +75607,20 @@ version 27 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -75630,7 +75630,7 @@ version 27 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -75644,21 +75644,21 @@ version 27 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xf000
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x12800, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x12820, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x12840, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x12860, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x12960, size 0x13880
     hash_1608f63ae729eda5 weaponstats[200];
     // offset 0x261e0, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x26200, size 0x40
     uint64 connectionid;
     // offset 0x26240, size 0x8
@@ -75672,47 +75672,47 @@ version 27 {
     // offset 0x26290, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x26ec0, size 0xab68
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x31a28, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x32ba8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x32be8, size 0x2f08
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x35af0, size 0x100
     byte demonwareflags[32];
     // offset 0x35bf0, size 0x20
     float skill_rating;
     // offset 0x35c10, size 0xa0
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x35cb0, size 0x20
     uint uploadbandwidth;
     // offset 0x35cd0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x35e10, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x35ed0, size 0x8
     byte vialsowed;
     // offset 0x35ed8, size 0x20
     int motdviewtime;
     // offset 0x35ef8, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x35fe0, size 0x5a00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x3b9e0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x3bde0, size 0x3090
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x3ee70, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x3f5f0, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x3f690, size 0x20
     float skill_variance;
     // offset 0x3f6b0, size 0xa0
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x3f750, size 0x188
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x3f8d8, size 0x100
     byte unlocks[32];
     // offset 0x3f9d8, size 0x40
@@ -75726,13 +75726,13 @@ version 27 {
     // offset 0xdc810, size 0x20
     bool musicunlocks[32];
     // offset 0xdc830, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xdc870, size 0x1
     bool hash_1892554e7234468;
     // offset 0xdc871, size 0x1
     bool completedfirsttimeflow;
     // offset 0xdc872, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xdc875, size 0x3
     uint:1 __pad[3];
 }
@@ -75751,7 +75751,7 @@ version 26 {
     };
 
     // idx 2 members 6 size 0x60
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x10
         uint:16 kills;
         // offset 0x10, size 0x18
@@ -75779,7 +75779,7 @@ version 26 {
     };
 
     // idx 4 members 9 size 0x188
-    struct hash_6d83fd06705c52be {
+    struct afteractionreportstats_s {
         // offset 0x0, size 0x10
         short nemesisrankicon;
         // offset 0x10, size 0x10
@@ -75801,17 +75801,17 @@ version 26 {
     };
 
     // idx 5 members 5 size 0xa0
-    struct hash_d00a3c4fcc583a9 {
+    struct buildable_s {
         // offset 0x0, size 0x20
-        uint hash_59acb9038ec900fd;
+        uint buildable_pickedup;
         // offset 0x20, size 0x20
-        uint hash_32e66984b77ed2de;
+        uint pieces_pickedup;
         // offset 0x40, size 0x20
-        uint hash_1ebdeb2af8e79f90;
+        uint buildable_built;
         // offset 0x60, size 0x20
-        uint hash_11c3c433f8d0aa55;
+        uint buildable_placed;
         // offset 0x80, size 0x20
-        uint hash_33d54e87f090f37d;
+        uint pieces_built;
     };
 
     // idx 6 members 6 size 0x90
@@ -75947,13 +75947,13 @@ version 26 {
         // offset 0x548, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x578, size 0x3c0
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x938, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 12 members 3 size 0x18
-    struct hash_6475ee24d92ebf9f {
+    struct cheats_s {
         // offset 0x0, size 0x8
         uint:8 cheat_out_of_playable;
         // offset 0x8, size 0x8
@@ -75977,19 +75977,19 @@ version 26 {
     };
 
     // idx 15 members 4 size 0x2218
-    struct hash_5de9604a6e7b79da {
+    struct mapstats_s {
         // offset 0x0, size 0x120
         hash_6b3db80d498eb06 stats[hash_1ff6c8b54b4a12f9];
         // offset 0x120, size 0x20d0
-        hash_3f31ab949bdea261 hash_74e26ca9652802fb[hash_6501ee9650acd12c];
+        hash_3f31ab949bdea261 statsbygametype[gametypes_e];
         // offset 0x21f0, size 0x10
         short vote_succeeded;
         // offset 0x2200, size 0x18
-        hash_6475ee24d92ebf9f cheats;
+        cheats_s cheats;
     };
 
     // idx 16 members 1 size 0x3c0
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x3c0
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -76019,7 +76019,7 @@ version 26 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x40
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x60, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x18c, size 0x4
@@ -76027,7 +76027,7 @@ version 26 {
     };
 
     // idx 20 members 2 size 0x18
-    struct hash_7662ce32708de040 {
+    struct callingtask_s {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x10
@@ -76039,7 +76039,7 @@ version 26 {
         // offset 0x0, size 0x8
         uint:8 index;
         // offset 0x8, size 0x1
-        bool hash_46d9f05601b23fc2;
+        bool shownawarded;
         // offset 0x9, size 0x1
         bool awarded;
         // offset 0xa, size 0x6
@@ -76047,13 +76047,13 @@ version 26 {
     };
 
     // idx 22 members 12 size 0xe8
-    struct hash_506d08f6b39538d1 {
+    struct calling_s {
         // offset 0x0, size 0x10
         uint:16 currentweek;
         // offset 0x10, size 0x8
         uint:8 hash_146600056a610453;
         // offset 0x18, size 0x8
-        uint:8 hash_6fd95a9d76a74396;
+        uint:8 chosenseason;
         // offset 0x20, size 0x40
         hash_2005d75f3c92e3ea rewardlist[4];
         // offset 0x60, size 0x8
@@ -76061,9 +76061,9 @@ version 26 {
         // offset 0x68, size 0x8
         uint:8 hash_7dfcc1388ea0ffb2;
         // offset 0x70, size 0x60
-        hash_7662ce32708de040 tasklist[4];
+        callingtask_s tasklist[4];
         // offset 0xd0, size 0x8
-        uint:2 hash_67a2b047b6546765;
+        uint:2 chosenfaction;
         // offset 0xd8, size 0x8
         uint:2 callingtype;
         // offset 0xe0, size 0x4
@@ -76083,7 +76083,7 @@ version 26 {
     // idx 24 members 2 size 0x8
     struct hash_a08f7087f25a53c {
         // offset 0x0, size 0x4
-        hash_6fee10de3992f771 hash_6d901c669ac8eec2[4];
+        hash_6fee10de3992f771 rewardcategories[4];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -76091,9 +76091,9 @@ version 26 {
     // idx 25 members 5 size 0x30
     struct hash_3cd734c8987c9cae {
         // offset 0x0, size 0x8
-        uint:8 hash_1c86003ee015ee63;
+        uint:8 tierscompleted;
         // offset 0x8, size 0x18
-        hash_a08f7087f25a53c hash_73b893d892872220[3];
+        hash_a08f7087f25a53c charactergroups[3];
         // offset 0x20, size 0x8
         uint:8 tokens;
         // offset 0x28, size 0x1
@@ -76107,13 +76107,13 @@ version 26 {
         // offset 0x0, size 0xc0
         hash_3cd734c8987c9cae factions[4];
         // offset 0xc0, size 0x1
-        bool hash_40b627d2f6c810dd;
+        bool warpaintcompletion;
         // offset 0xc1, size 0x1
-        bool hash_28df1074aafdc50e;
+        bool materialcompletion;
         // offset 0xc2, size 0x1
-        bool hash_70aa098fb103d3ba;
+        bool headgearcompletion;
         // offset 0xc3, size 0x1
-        bool hash_523b1268ee8d6f5f;
+        bool totalcompletion;
         // offset 0xc4, size 0x4
         uint:1 __pad[4];
     };
@@ -76345,7 +76345,7 @@ version 26 {
         zombie_hunter_kill_packapunch, // 0x7a,
         specialty_mod_armorvest_drank, // 0x7b,
         bgb_tokens_used, // 0x7c,
-        hash_3e1a66815798ba48, // 0x7d,
+        survivalist_craftable, // 0x7d,
         pack_a_punch_pickedup, // 0x7e,
         hash_3fa2584a22ebf623, // 0x7f,
         island_seed_pickedup, // 0x80,
@@ -76418,7 +76418,7 @@ version 26 {
         zm_daily_kills_headshots, // 0xc3,
         total_shots, // 0xc4,
         survivalist_buy_perk, // 0xc5,
-        hash_5c5cab0cce302a01, // 0xc6,
+        weekly_timestamp, // 0xc6,
         specialty_mod_cooldown_drank, // 0xc7,
         bgb_tokens_gained, // 0xc8,
         zombie_hunter_explosion_multikill, // 0xc9,
@@ -76482,7 +76482,7 @@ version 26 {
     };
 
     // idx 1 members 8
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -76494,23 +76494,23 @@ version 26 {
     };
 
     // idx 2 members 12
-    enum hash_d0095c4fcc56bdf {
-        hash_977a6f2c2d0855, // 0x0,
-        hash_37f744a5a4f0af4, // 0x1,
-        hash_640eef8ba24fac7, // 0x2,
+    enum buildable_e {
+        gravityspike, // 0x0,
+        ritual_pap, // 0x1,
+        second_idgun, // 0x2,
         hash_c8bcffe94788f81, // 0x3,
-        hash_f3131176cd45b44, // 0x4,
-        hash_290550660b45d91f, // 0x5,
+        dragonride, // 0x4,
+        ritual_femme, // 0x5,
         hash_325c3ee10fb36956, // 0x6,
         hash_4d1b3d98bdd6152a, // 0x7,
-        hash_504fe6a409375c5f, // 0x8,
+        ritual_boxer, // 0x8,
         gasmask, // 0x9,
-        hash_79f7c93b2f41f81a, // 0xa,
-        hash_7b945b56a5046ac5, // 0xb
+        idgun, // 0xa,
+        police_box, // 0xb
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         privatematch, // 0x0,
         publicmatch, // 0x1
     };
@@ -76525,7 +76525,7 @@ version 26 {
     };
 
     // idx 5 members 5
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         ztutorial, // 0x0,
         zgrief, // 0x1,
         zstandard, // 0x2,
@@ -76534,7 +76534,7 @@ version 26 {
     };
 
     // idx 6 members 5
-    enum hash_37010c3ce951c3ba {
+    enum maps_e {
         zm_office, // 0x0,
         zm_zodt8, // 0x1,
         zm_mansion, // 0x2,
@@ -76562,7 +76562,7 @@ version 26 {
         hash_20e46acec43f89e9, // 0x5,
         hash_20e770cec441c9f2, // 0x6,
         revives, // 0x7,
-        hash_3dcc8fce565ac628, // 0x8,
+        quests_completed, // 0x8,
         total_games_played, // 0x9,
         highest_team_score, // 0xa,
         highest_round_reached, // 0xb,
@@ -76583,7 +76583,7 @@ version 26 {
     // idx 10 members 20
     enum hash_1609003ae729fea3 {
         destroyed, // 0x0,
-        hash_36f7fa2d825ec851, // 0x1,
+        bgbconsumablesused, // 0x1,
         combatrecordstat, // 0x2,
         deathsduringuse, // 0x3,
         deaths, // 0x4,
@@ -76633,7 +76633,7 @@ version 26 {
     };
 
     // idx 12 members 64
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         quickdraw, // 0x2,
@@ -76660,9 +76660,9 @@ version 26 {
         extclip2, // 0x17,
         floatdot, // 0x18,
         steadyaim2, // 0x19,
-        hash_19f95db795729dff, // 0x1a,
+        confirmkill, // 0x1a,
         tacknife, // 0x1b,
-        hash_1cedcb161a0f9050, // 0x1c,
+        turbohip, // 0x1c,
         mixclip, // 0x1d,
         stackfire, // 0x1e,
         killcounter, // 0x1f,
@@ -76670,24 +76670,24 @@ version 26 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e9c1ae290001c77, // 0x24,
-        hash_30e2842163afed57, // 0x25,
+        directionalthreat, // 0x24,
+        penetrationscan, // 0x25,
         reddot, // 0x26,
         extclip, // 0x27,
         holo, // 0x28,
-        hash_42a14ec552763dbc, // 0x29,
+        acogwide, // 0x29,
         elo, // 0x2a,
         fastreload2, // 0x2b,
         extrapellets, // 0x2c,
         holdbreath, // 0x2d,
         fmj2, // 0x2e,
-        hash_561b988220ea0f76, // 0x2f,
+        lowzoom, // 0x2f,
         quickdraw2, // 0x30,
-        hash_59df3d5966c1db75, // 0x31,
-        hash_5a7a05163d2daf77, // 0x32,
-        hash_5a902d129ff53760, // 0x33,
+        spreaddot, // 0x31,
+        turboads, // 0x32,
+        acogcanted, // 0x33,
         fmj, // 0x34,
-        hash_5d43c70ab246bed5, // 0x35,
+        hybridacog, // 0x35,
         adsreload, // 0x36,
         suppressed, // 0x37,
         sprintout, // 0x38,
@@ -76695,7 +76695,7 @@ version 26 {
         dualoptic, // 0x3a,
         grip, // 0x3b,
         reflex, // 0x3c,
-        hash_7ea53a02579e79d1, // 0x3d,
+        holoboa, // 0x3d,
         uber, // 0x3e,
         damage, // 0x3f
     };
@@ -76707,20 +76707,20 @@ version 26 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 14 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -76730,7 +76730,7 @@ version 26 {
     // offset 0x0, size 0xa0
     dlc_t dlc;
     // offset 0xa0, size 0x20
-    int hash_24f7bb044fb8a7b5;
+    int extmsgversionviewed_ugc;
     // offset 0xc0, size 0x20
     uint hash_3ec47111a3993e52;
     // offset 0xe0, size 0x640
@@ -76744,21 +76744,21 @@ version 26 {
     // offset 0x770, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0x7b0, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3800, size 0xf000
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x12800, size 0x20
     int hash_5199b511aa25f017;
     // offset 0x12820, size 0x20
-    int hash_516aa111a9fe5d59;
+    int extmsgversionviewed_mp;
     // offset 0x12840, size 0x20
-    int hash_51b19c11aa3a577d;
+    int extmsgversionviewed_zm;
     // offset 0x12860, size 0x100
-    uint higheststats[hash_1cbddecc4f162d46];
+    uint higheststats[higheststats_e];
     // offset 0x12960, size 0x13880
     hash_1608f63ae729eda5 weaponstats[200];
     // offset 0x261e0, size 0x20
-    int hash_62512286fe0c2426;
+    int extmsgversionviewed_loot;
     // offset 0x26200, size 0x40
     uint64 connectionid;
     // offset 0x26240, size 0x8
@@ -76772,47 +76772,47 @@ version 26 {
     // offset 0x26290, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x26ec0, size 0xaa78
-    hash_5de9604a6e7b79da playerstatsbymap[hash_37010c3ce951c3ba];
+    mapstats_s playerstatsbymap[maps_e];
     // offset 0x31938, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x32ab8, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x32af8, size 0x2f08
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x35a00, size 0x100
     byte demonwareflags[32];
     // offset 0x35b00, size 0x20
     float skill_rating;
     // offset 0x35b20, size 0xa0
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x35bc0, size 0x20
     uint uploadbandwidth;
     // offset 0x35be0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x35d20, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x35de0, size 0x8
     byte vialsowed;
     // offset 0x35de8, size 0x20
     int motdviewtime;
     // offset 0x35e08, size 0xe8
-    hash_506d08f6b39538d1 playercalling;
+    calling_s playercalling;
     // offset 0x35ef0, size 0x5a00
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x3b8f0, size 0x400
     uint64 gamebookmarks[16];
     // offset 0x3bcf0, size 0x3090
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x3ed80, size 0x780
-    hash_d00a3c4fcc583a9 buildables[hash_d0095c4fcc56bdf];
+    buildable_s buildables[buildable_e];
     // offset 0x3f500, size 0xa0
     hash_402baff65ae9b838 clantagstats;
     // offset 0x3f5a0, size 0x20
     float skill_variance;
     // offset 0x3f5c0, size 0xa0
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x3f660, size 0x188
-    hash_6d83fd06705c52be afteractionreportstats;
+    afteractionreportstats_s afteractionreportstats;
     // offset 0x3f7e8, size 0x100
     byte unlocks[32];
     // offset 0x3f8e8, size 0x40
@@ -76826,13 +76826,13 @@ version 26 {
     // offset 0xdc720, size 0x20
     bool musicunlocks[32];
     // offset 0xdc740, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0xdc780, size 0x1
     bool hash_1892554e7234468;
     // offset 0xdc781, size 0x1
     bool completedfirsttimeflow;
     // offset 0xdc782, size 0x3
-    bool hash_40bf08bd152c479[3];
+    bool eastereggcompleted[3];
     // offset 0xdc785, size 0x3
     uint:1 __pad[3];
 }

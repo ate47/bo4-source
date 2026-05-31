@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_lucky_cat",
-    "hash_ff3063df": "model#",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_cat",
     "name": "charm_lucky_cat",
     "displayname": "localized17#hash_544d427e3450a3a2",
     "icon": "ui_icon_weapon_charms_cat",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_cat"
 }

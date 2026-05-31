@@ -1,0 +1,40 @@
+{
+    "name": "#p7_zm_nac_barrel_explosive_red_ddef",
+    "model": "#p7_zm_nac_barrel_explosive_red_dest",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_d0"
+                },
+                {
+                    "unk28": "tag_d0"
+                },
+                {
+                    "unk28": "tag_d1"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_48b49b54f8cd31a5",
+            "unk268": 350,
+            "hideBones": [
+                29,
+                30
+            ]
+        }
+    ]
+}

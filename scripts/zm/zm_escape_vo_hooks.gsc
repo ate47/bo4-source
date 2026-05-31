@@ -116,14 +116,14 @@ function function_29543c()
     e_player = s_info.activator;
     b_say = e_player zm_audio::create_and_play_dialog( #"zone_dock", #"react_0", undefined, 1 );
     
-    if ( isdefined( b_say ) && b_say && e_player zm_characters::is_character( array( #"hash_1aa57ef704f24fa5", #"hash_36bc80636f0fdac4" ) ) )
+    if ( isdefined( b_say ) && b_say && e_player zm_characters::is_character( array( #"prt_zm_dempsey", #"prt_zm_dempsey_ofc" ) ) )
     {
         wait soundgetplaybacktime( #"hash_6598db6cd61c4aad" ) / 1000;
         e_nikolai = undefined;
         
         foreach ( var_a7cf1037 in level.players )
         {
-            if ( var_a7cf1037 zm_characters::is_character( array( #"hash_22e6f7e13c3a99ef", #"hash_46b92e1337b43236" ) ) )
+            if ( var_a7cf1037 zm_characters::is_character( array( #"prt_zm_nikolai", #"prt_zm_nikolai_ofc" ) ) )
             {
                 e_nikolai = var_a7cf1037;
                 break;

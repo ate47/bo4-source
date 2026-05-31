@@ -1,0 +1,5138 @@
+{
+    "name": "#maps/mp/mp_gridlock.d3dbsp",
+    "models": [
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 0
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 1
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 2
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 3
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 4
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 5
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 6
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 7
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 8
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 9
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 10
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 11
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 12
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 13
+        },
+        {
+            "contents": 536887297,
+            "hullCount": 1,
+            "firstHull": 14
+        },
+        {
+            "contents": 536887297,
+            "hullCount": 1,
+            "firstHull": 15
+        },
+        {
+            "contents": 536887297,
+            "hullCount": 1,
+            "firstHull": 16
+        },
+        {
+            "contents": 536887297,
+            "hullCount": 1,
+            "firstHull": 17
+        },
+        {
+            "contents": 536887297,
+            "hullCount": 1,
+            "firstHull": 18
+        },
+        {
+            "contents": 536887297,
+            "hullCount": 1,
+            "firstHull": 19
+        },
+        {
+            "contents": 536887297,
+            "hullCount": 1,
+            "firstHull": 20
+        },
+        {
+            "contents": 536887297,
+            "hullCount": 6,
+            "firstHull": 21
+        },
+        {
+            "contents": 536887297,
+            "hullCount": 1,
+            "firstHull": 27
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 28
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 30
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 31
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 32
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 34
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 36
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 38
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 40
+        },
+        {
+            "contents": 536887297,
+            "hullCount": 1,
+            "firstHull": 41
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 3,
+            "firstHull": 42
+        },
+        {
+            "contents": 536887297,
+            "hullCount": 4,
+            "firstHull": 45
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 51,
+            "firstHull": 49
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 100
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 101
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 103
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 105
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 107
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 108
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 110
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 112
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 113
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 114
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 115
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 116
+        }
+    ],
+    "hulls": [
+        {
+            "boundsMidPoint": "-0.375 -0.5 -0.5",
+            "boundsHullCount": "223.625 346.75 193.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.375 0.125 -0.5",
+            "boundsHullCount": "43.625 173.625 193.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-0.125 -0.375 0.25",
+            "boundsHullCount": "67.125 172.875 127.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-0.25 -0.125 0.25",
+            "boundsHullCount": "294.75 181.625 225.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.25 0 0.25",
+            "boundsHullCount": "155.75 151.75 225.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-0.375 -0.5 0.25",
+            "boundsHullCount": "282.875 596 225.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.25 0.375 0.25",
+            "boundsHullCount": "539.75 182.875 225.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.125 0 0.25",
+            "boundsHullCount": "415.375 465.25 225.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-0.25 0.25 0.25",
+            "boundsHullCount": "180 299 225.5",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-0.25 -0.25 -0.25",
+            "boundsHullCount": "251 225.75 120",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.125 -0.5 -0.5",
+            "boundsHullCount": "263.875 261.25 154.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 -0.5",
+            "boundsHullCount": "206.5 187.75 154.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-0.5 -0.125 0.25",
+            "boundsHullCount": "401 70.125 225.5",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 1
+        },
+        {
+            "boundsMidPoint": "-0.15730286 -0.14678955 0",
+            "boundsHullCount": "270.1996 185.60321 61",
+            "contents": 536870913,
+            "hullCount": 3,
+            "firstHull": 2
+        },
+        {
+            "boundsMidPoint": "0.125 -0.125 0",
+            "boundsHullCount": "0.125 0.125 64",
+            "contents": 536887297,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-0.125 -0.125 0",
+            "boundsHullCount": "0.125 0.125 64",
+            "contents": 536887297,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.125 -0.125 0",
+            "boundsHullCount": "0.125 0.125 64",
+            "contents": 536887297,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 -0.125 0",
+            "boundsHullCount": "384 206.125 80",
+            "contents": 536887297,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "348 460 80",
+            "contents": 536887297,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "352 500 108",
+            "contents": 536887297,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "364 270 80",
+            "contents": 536887297,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-221 -232 0",
+            "boundsHullCount": "80 56 70",
+            "contents": 536887297,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-93 -144 -22",
+            "boundsHullCount": "48 32 48",
+            "contents": 536887297,
+            "hullCount": 1,
+            "firstHull": 5
+        },
+        {
+            "boundsMidPoint": "-221 -144 -22",
+            "boundsHullCount": "80 32 48",
+            "contents": 536887297,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "128 56 0",
+            "boundsHullCount": "173 232 70",
+            "contents": 536887297,
+            "hullCount": 1,
+            "firstHull": 6
+        },
+        {
+            "boundsMidPoint": "-172.75 -88 0",
+            "boundsHullCount": "127.75 24 70",
+            "contents": 536887297,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-158.75 112 0",
+            "boundsHullCount": "113.75 176 70",
+            "contents": 536887297,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0.018173218 0",
+            "boundsHullCount": "446 303.0182 128",
+            "contents": 536887297,
+            "hullCount": 2,
+            "firstHull": 7
+        },
+        {
+            "boundsMidPoint": "-0.5000019 0 10.25",
+            "boundsHullCount": "32.124306 32.124306 18",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 9
+        },
+        {
+            "boundsMidPoint": "-0.50000024 4.7683716e-07 0.25",
+            "boundsHullCount": "8.083612 8.083612 8",
+            "contents": 536870912,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 -0.5 -0.5",
+            "boundsHullCount": "38 199.5 63.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 -0.5 -0.5",
+            "boundsHullCount": "174 268.5 63.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 50",
+            "boundsHullCount": "32 32 54",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 11
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "8 8 8",
+            "contents": 536870912,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 50",
+            "boundsHullCount": "32 32 54",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 13
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "8 8 8",
+            "contents": 536870912,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 50",
+            "boundsHullCount": "32 32 54",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 15
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "8 8 8",
+            "contents": 536870912,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 50",
+            "boundsHullCount": "32 32 54",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 17
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "8 8 8",
+            "contents": 536870912,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "58 74 80",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.048171997 0.3867798 0",
+            "boundsHullCount": "286.7732 197.42291 2",
+            "contents": 536887297,
+            "hullCount": 4,
+            "firstHull": 19
+        },
+        {
+            "boundsMidPoint": "79.2746 -42.388515 0",
+            "boundsHullCount": "61.636307 67.82647 36",
+            "contents": 536870913,
+            "hullCount": 6,
+            "firstHull": 23
+        },
+        {
+            "boundsMidPoint": "16.702686 12.3479 32",
+            "boundsHullCount": "89.43048 97.82324 4",
+            "contents": 536870913,
+            "hullCount": 3,
+            "firstHull": 29
+        },
+        {
+            "boundsMidPoint": "-103.2272 15.0293455 32",
+            "boundsHullCount": "37.864563 26.904346 4",
+            "contents": 536870913,
+            "hullCount": 3,
+            "firstHull": 32
+        },
+        {
+            "boundsMidPoint": "-65.47152 62.544426 16.5",
+            "boundsHullCount": "34.06328 35.205574 5.5",
+            "contents": 536887297,
+            "hullCount": 3,
+            "firstHull": 35
+        },
+        {
+            "boundsMidPoint": "-90.1909 86.197334 -1",
+            "boundsHullCount": "45.211853 46.14411 18",
+            "contents": 536887297,
+            "hullCount": 4,
+            "firstHull": 38
+        },
+        {
+            "boundsMidPoint": "-108.96404 103.648636 -18",
+            "boundsHullCount": "40.683205 42.2791 7",
+            "contents": 536887297,
+            "hullCount": 5,
+            "firstHull": 42
+        },
+        {
+            "boundsMidPoint": "29.704975 -27.468388 22",
+            "boundsHullCount": "120.89316 118.01607 2",
+            "contents": 536887297,
+            "hullCount": 2,
+            "firstHull": 47
+        },
+        {
+            "boundsMidPoint": "2340 61762 0",
+            "boundsHullCount": "188 61118 256",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 49
+        },
+        {
+            "boundsMidPoint": "2876 61588 0",
+            "boundsHullCount": "348 61292 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 51
+        },
+        {
+            "boundsMidPoint": "3306 61560 0",
+            "boundsHullCount": "82 61320 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "2012 61920 0",
+            "boundsHullCount": "140 60960 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 52
+        },
+        {
+            "boundsMidPoint": "1844.5 62065.5 0",
+            "boundsHullCount": "27.5 60814.5 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 53
+        },
+        {
+            "boundsMidPoint": "1797 62086 0",
+            "boundsHullCount": "20 60794 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 54
+        },
+        {
+            "boundsMidPoint": "1752.5 62097.5 0",
+            "boundsHullCount": "24.5 60782.5 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 55
+        },
+        {
+            "boundsMidPoint": "1712.5 62128.5 0",
+            "boundsHullCount": "15.5 60751.5 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 56
+        },
+        {
+            "boundsMidPoint": "1682.5 62138 0",
+            "boundsHullCount": "14.5 60742 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "1658 62138 0",
+            "boundsHullCount": "10 60742 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 57
+        },
+        {
+            "boundsMidPoint": "686 62233.5 0",
+            "boundsHullCount": "962 60646.5 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-1558 62180 0",
+            "boundsHullCount": "770 60700 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-741 62182 0",
+            "boundsHullCount": "47 60698 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 58
+        },
+        {
+            "boundsMidPoint": "-689 62186 0",
+            "boundsHullCount": "5 60694 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 59
+        },
+        {
+            "boundsMidPoint": "-647.5 62187.5 0",
+            "boundsHullCount": "36.5 60692.5 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 60
+        },
+        {
+            "boundsMidPoint": "-605 62193 0",
+            "boundsHullCount": "6 60687 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-557 62187 0",
+            "boundsHullCount": "42 60693 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 61
+        },
+        {
+            "boundsMidPoint": "-475 62186 0",
+            "boundsHullCount": "40 60694 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-399 62186 0",
+            "boundsHullCount": "36 60694 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 62
+        },
+        {
+            "boundsMidPoint": "-312.5 62199.5 0",
+            "boundsHullCount": "36.5 60680.5 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 63
+        },
+        {
+            "boundsMidPoint": "-356 62194.5 0",
+            "boundsHullCount": "7 60685.5 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 64
+        },
+        {
+            "boundsMidPoint": "-2009 -62176 0",
+            "boundsHullCount": "409 60704 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-62649 -61645 0",
+            "boundsHullCount": "60231 61235 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "62973 -61942 0",
+            "boundsHullCount": "59907 60938 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-62604 61632 0",
+            "boundsHullCount": "60276 61248 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "63134 61240 0",
+            "boundsHullCount": "59746 61640 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "63134 -438 0",
+            "boundsHullCount": "59746 38 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 65
+        },
+        {
+            "boundsMidPoint": "63147.5 -479.5 0",
+            "boundsHullCount": "59732.5 3.5 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 66
+        },
+        {
+            "boundsMidPoint": "63150.5 -520 0",
+            "boundsHullCount": "59729.5 37 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 67
+        },
+        {
+            "boundsMidPoint": "63159.5 -597 0",
+            "boundsHullCount": "59720.5 40 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 68
+        },
+        {
+            "boundsMidPoint": "63158 -643 0",
+            "boundsHullCount": "59722 6 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 69
+        },
+        {
+            "boundsMidPoint": "63151 -685.5 0",
+            "boundsHullCount": "59729 36.5 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 70
+        },
+        {
+            "boundsMidPoint": "63149 -727 0",
+            "boundsHullCount": "59731 5 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 71
+        },
+        {
+            "boundsMidPoint": "63142 -769 0",
+            "boundsHullCount": "59738 37 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 72
+        },
+        {
+            "boundsMidPoint": "63142 -812 0",
+            "boundsHullCount": "59738 6 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "63126 -863 0",
+            "boundsHullCount": "59754 45 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 73
+        },
+        {
+            "boundsMidPoint": "63096 -956 0",
+            "boundsHullCount": "59784 48 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 74
+        },
+        {
+            "boundsMidPoint": "-62804 114 0",
+            "boundsHullCount": "60076 94 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-62844 -58 0",
+            "boundsHullCount": "60036 78 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-62800 -273 0",
+            "boundsHullCount": "60080 137 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-62800 296 0",
+            "boundsHullCount": "60080 88 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "1683 1406 34",
+            "boundsHullCount": "17 22 222",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "1742.9536 1350.5211 46.081223",
+            "boundsHullCount": "35.046387 28.978882 209.91878",
+            "contents": 536870913,
+            "hullCount": 3,
+            "firstHull": 75
+        },
+        {
+            "boundsMidPoint": "1706 1373 32.5",
+            "boundsHullCount": "12 12 223.5",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 78
+        },
+        {
+            "boundsMidPoint": "1832.75 1288.25 34",
+            "boundsHullCount": "25.25 27.25 222",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 80
+        },
+        {
+            "boundsMidPoint": "1853 1247 32.5",
+            "boundsHullCount": "12 12 223.5",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 82
+        },
+        {
+            "boundsMidPoint": "28 -62442 0",
+            "boundsHullCount": "540 60438 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-1056 -62442 0",
+            "boundsHullCount": "544 60438 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "768 -62366 0",
+            "boundsHullCount": "200 60514 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "1036 -62202 0",
+            "boundsHullCount": "68 60678 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "2085 -62250 0",
+            "boundsHullCount": "981 60630 256",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.27723694 0 0",
+            "boundsHullCount": "316.27722 118 256",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 84
+        },
+        {
+            "boundsMidPoint": "-0.3039856 -0.030029297 0",
+            "boundsHullCount": "8 8 8",
+            "contents": 536870912,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "7.6960144 -0.030029297 8.5",
+            "boundsHullCount": "80 64 16.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-0.3039856 -0.030029297 0",
+            "boundsHullCount": "8 8 8",
+            "contents": 536870912,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-0.3039856 -0.030029297 24",
+            "boundsHullCount": "32 32 32",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-0.5 -0.5 0",
+            "boundsHullCount": "2 2 2",
+            "contents": 536870912,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-0.5 -0.5 28",
+            "boundsHullCount": "40 40 28",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 85
+        },
+        {
+            "boundsMidPoint": "-0.43514633 -0.38339138 -0.28141022",
+            "boundsHullCount": "32.000137 32.000034 48",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.107681274 0.07677078 8.972906",
+            "boundsHullCount": "72.87385 64.82677 17.81855",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.032369137 0.071065426 -0.2427671",
+            "boundsHullCount": "8.157112 8.093143 8.066957",
+            "contents": 536870912,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.22846794 0.07442665 23.756432",
+            "boundsHullCount": "32.62845 32.37258 32.26783",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.03237009 0.071065426 -0.24276757",
+            "boundsHullCount": "8.157114 8.093143 8.066957",
+            "contents": 536870912,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "122880 122880 61184",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "122880 122880 61412",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 -0.5 -0.5",
+            "boundsHullCount": "2835 543.5 269.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 -0.5 -0.5",
+            "boundsHullCount": "2835 543.5 269.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 -0.5",
+            "boundsHullCount": "2835 654 269.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        }
+    ],
+    "slabs": [
+        {
+            "boundsMidPoint": "-0.70710677 -0.70710677 0",
+            "hullCount": -21.566757,
+            "firstHull": 317.1374
+        },
+        {
+            "boundsMidPoint": "-0.70710677 -0.70710677 0",
+            "hullCount": 0.44195557,
+            "firstHull": 333.13568
+        },
+        {
+            "boundsMidPoint": "-0.48772174 -0.8729992 -0",
+            "hullCount": 0.21816635,
+            "firstHull": 57.647854
+        },
+        {
+            "boundsMidPoint": "0.8726523 -0.488342 0",
+            "hullCount": -0.08937073,
+            "firstHull": 277.4054
+        },
+        {
+            "boundsMidPoint": "-0.96515995 -0.26166046 0",
+            "hullCount": 0.22241211,
+            "firstHull": 238.53519
+        },
+        {
+            "boundsMidPoint": "-0.5633368 0 0.8262273",
+            "hullCount": 7.173155,
+            "firstHull": 39.658913
+        },
+        {
+            "boundsMidPoint": "0 -0.57346237 0.8192319",
+            "hullCount": -68.93837,
+            "firstHull": 153.56503
+        },
+        {
+            "boundsMidPoint": "0.49173424 0.87074536 0",
+            "hullCount": -130.17642,
+            "firstHull": 352.9729
+        },
+        {
+            "boundsMidPoint": "-0.33500966 0.94221467 0",
+            "hullCount": -60.699554,
+            "firstHull": 374.2058
+        },
+        {
+            "boundsMidPoint": "-0.69963807 0.7144975 0",
+            "hullCount": 0.34981728,
+            "firstHull": 31.112692
+        },
+        {
+            "boundsMidPoint": "0.7144975 0.69963807 0",
+            "hullCount": -0.35725117,
+            "firstHull": 31.11269
+        },
+        {
+            "boundsMidPoint": "0.7071068 0.7071068 0",
+            "hullCount": 0,
+            "firstHull": 31.112701
+        },
+        {
+            "boundsMidPoint": "0.7071068 -0.7071068 0",
+            "hullCount": 0,
+            "firstHull": 31.112701
+        },
+        {
+            "boundsMidPoint": "0.7071068 0.7071068 0",
+            "hullCount": 0,
+            "firstHull": 31.112701
+        },
+        {
+            "boundsMidPoint": "0.7071068 -0.7071068 0",
+            "hullCount": 0,
+            "firstHull": 31.112701
+        },
+        {
+            "boundsMidPoint": "0.7071068 0.7071068 0",
+            "hullCount": 0,
+            "firstHull": 31.112701
+        },
+        {
+            "boundsMidPoint": "0.7071068 -0.7071068 0",
+            "hullCount": 0,
+            "firstHull": 31.112701
+        },
+        {
+            "boundsMidPoint": "0.7071068 0.7071068 0",
+            "hullCount": 0,
+            "firstHull": 31.112701
+        },
+        {
+            "boundsMidPoint": "0.7071068 -0.7071068 0",
+            "hullCount": 0,
+            "firstHull": 31.112701
+        },
+        {
+            "boundsMidPoint": "0.49096525 0.87117916 -0",
+            "hullCount": -2.6261559,
+            "firstHull": 66.000015
+        },
+        {
+            "boundsMidPoint": "0.8711792 -0.49096507 0",
+            "hullCount": 10.552322,
+            "firstHull": 301
+        },
+        {
+            "boundsMidPoint": "0.2688517 -0.96318156 0",
+            "hullCount": -1.9951172,
+            "firstHull": 248.19444
+        },
+        {
+            "boundsMidPoint": "0.96318156 0.2688517 0",
+            "hullCount": -5.709053,
+            "firstHull": 248.19449
+        },
+        {
+            "boundsMidPoint": "-0.61849046 -0.7857924 0",
+            "hullCount": -14.687271,
+            "firstHull": 69.00001
+        },
+        {
+            "boundsMidPoint": "0.7857924 -0.61849046 0",
+            "hullCount": 97.19519,
+            "firstHull": 32.000443
+        },
+        {
+            "boundsMidPoint": "0.1183004 -0.99297786 0",
+            "hullCount": 51.271156,
+            "firstHull": 64.34672
+        },
+        {
+            "boundsMidPoint": "0.9929778 0.11829979 0",
+            "hullCount": 72.04219,
+            "firstHull": 64.346634
+        },
+        {
+            "boundsMidPoint": "0.5556365 -0.4373366 0.70711017",
+            "hullCount": 70.14147,
+            "firstHull": 4.2429733
+        },
+        {
+            "boundsMidPoint": "-0.70283383 0.5531947 0.44721383",
+            "hullCount": -88.72286,
+            "firstHull": 42.9329
+        },
+        {
+            "boundsMidPoint": "-0.61849046 -0.7857924 0",
+            "hullCount": -14.687275,
+            "firstHull": 69.000015
+        },
+        {
+            "boundsMidPoint": "0.70283383 -0.5531947 -0.44721383",
+            "hullCount": -17.266376,
+            "firstHull": 63.05711
+        },
+        {
+            "boundsMidPoint": "-0.87336373 0.4870686 0",
+            "hullCount": -11.886974,
+            "firstHull": 69.62085
+        },
+        {
+            "boundsMidPoint": "-0.61849046 -0.7857924 0",
+            "hullCount": 46.84632,
+            "firstHull": 7.4664173
+        },
+        {
+            "boundsMidPoint": "0.87336373 -0.4870686 0",
+            "hullCount": -100.69145,
+            "firstHull": 42.957565
+        },
+        {
+            "boundsMidPoint": "0.47252008 0.8813199 0",
+            "hullCount": -37.27136,
+            "firstHull": 7.559662
+        },
+        {
+            "boundsMidPoint": "0.17621155 -0.16665266 -0.9701425",
+            "hullCount": -37.96676,
+            "firstHull": 2.9111614
+        },
+        {
+            "boundsMidPoint": "-0.72653836 0.687126 0",
+            "hullCount": 90.54089,
+            "firstHull": 10.003017
+        },
+        {
+            "boundsMidPoint": "-0.687126 -0.72653836 0",
+            "hullCount": -0.45374298,
+            "firstHull": 38.999504
+        },
+        {
+            "boundsMidPoint": "0.43592307 -0.4122757 -0.79999983",
+            "hullCount": -72.3248,
+            "firstHull": 3.201561
+        },
+        {
+            "boundsMidPoint": "-0.7265383 0.68712604 1.2715664e-07",
+            "hullCount": 120.54131,
+            "firstHull": 20.002602
+        },
+        {
+            "boundsMidPoint": "-0.66115695 -0.69907945 0.27232227",
+            "hullCount": -5.550396,
+            "firstHull": 46.99656
+        },
+        {
+            "boundsMidPoint": "0.66177875 0.69973695 0.26910445",
+            "hullCount": -4.736351,
+            "firstHull": 47.04076
+        },
+        {
+            "boundsMidPoint": "0.22975177 -0.2172884 -0.9486832",
+            "hullCount": -30.371336,
+            "firstHull": 3.9532871
+        },
+        {
+            "boundsMidPoint": "0.7265383 -0.68712604 -2.0133135e-07",
+            "hullCount": -149.54388,
+            "firstHull": 9.000008
+        },
+        {
+            "boundsMidPoint": "-0.66115695 -0.69907945 0.27232227",
+            "hullCount": -7.1725006,
+            "firstHull": 48.6215
+        },
+        {
+            "boundsMidPoint": "-0.7092373 0.6707635 0.21693042",
+            "hullCount": 141.21033,
+            "firstHull": 8.134895
+        },
+        {
+            "boundsMidPoint": "0.66177875 0.69973695 0.26910445",
+            "hullCount": -6.3628216,
+            "firstHull": 48.66723
+        },
+        {
+            "boundsMidPoint": "0.6871258 0.72653854 0",
+            "hullCount": 0.45418167,
+            "firstHull": 48.000057
+        },
+        {
+            "boundsMidPoint": "0.7265384 -0.6871259 0",
+            "hullCount": 40.456013,
+            "firstHull": 120.999954
+        },
+        {
+            "boundsMidPoint": "-0.70710677 -0.70710677 0",
+            "hullCount": -45425.953,
+            "firstHull": 43250.89
+        },
+        {
+            "boundsMidPoint": "-0.16990691 -0.9854601 0",
+            "hullCount": -61293.51,
+            "firstHull": 60229.348
+        },
+        {
+            "boundsMidPoint": "-0.70710677 -0.70710677 0",
+            "hullCount": -45591.418,
+            "firstHull": 43577.574
+        },
+        {
+            "boundsMidPoint": "-0.70710677 -0.70710677 0",
+            "hullCount": -45305.746,
+            "firstHull": 43105.23
+        },
+        {
+            "boundsMidPoint": "-0.6494859 -0.7603737 -0",
+            "hullCount": -48406.535,
+            "firstHull": 46244.02
+        },
+        {
+            "boundsMidPoint": "-0.70710677 -0.70710677 0",
+            "hullCount": -45180.234,
+            "firstHull": 42993.86
+        },
+        {
+            "boundsMidPoint": "-0.58123815 -0.8137334 0",
+            "hullCount": -51563.67,
+            "firstHull": 49460.75
+        },
+        {
+            "boundsMidPoint": "-0.70710677 -0.70710677 0",
+            "hullCount": -45147,
+            "firstHull": 42964.164
+        },
+        {
+            "boundsMidPoint": "-0.70710677 -0.70710677 0",
+            "hullCount": -45117.656,
+            "firstHull": 42951.08
+        },
+        {
+            "boundsMidPoint": "0.084799826 -0.996398 0",
+            "hullCount": -62024.84,
+            "firstHull": 60479.363
+        },
+        {
+            "boundsMidPoint": "0.28734788 -0.95782626 0",
+            "hullCount": -59762.805,
+            "firstHull": 58134.305
+        },
+        {
+            "boundsMidPoint": "0.14900279 -0.9888367 0",
+            "hullCount": -61595.2,
+            "firstHull": 60014.973
+        },
+        {
+            "boundsMidPoint": "-0.14142136 -0.98994946 0",
+            "hullCount": -61489.16,
+            "firstHull": 60083.004
+        },
+        {
+            "boundsMidPoint": "0.2297927 -0.97323966 0",
+            "hullCount": -60621.84,
+            "firstHull": 59069.81
+        },
+        {
+            "boundsMidPoint": "0.6816036 -0.7317215 0",
+            "hullCount": -45750.594,
+            "firstHull": 44401.227
+        },
+        {
+            "boundsMidPoint": "0.5812382 -0.81373346 0",
+            "hullCount": -50820.74,
+            "firstHull": 49381.824
+        },
+        {
+            "boundsMidPoint": "-0.9423017 -0.33476508 0",
+            "hullCount": -59357.367,
+            "firstHull": 56298.758
+        },
+        {
+            "boundsMidPoint": "-0.7592566 -0.65079135 0",
+            "hullCount": -47635.383,
+            "firstHull": 45352.297
+        },
+        {
+            "boundsMidPoint": "-0.97166765 -0.2363516 0",
+            "hullCount": -61247.14,
+            "firstHull": 58037.227
+        },
+        {
+            "boundsMidPoint": "-0.99805254 -0.062378284 0",
+            "hullCount": -63001.754,
+            "firstHull": 59604.2
+        },
+        {
+            "boundsMidPoint": "-0.8320503 0.5547002 0",
+            "hullCount": -52910.633,
+            "firstHull": 49691.71
+        },
+        {
+            "boundsMidPoint": "-0.98210233 0.1883484 0",
+            "hullCount": -62156.73,
+            "firstHull": 58659.99
+        },
+        {
+            "boundsMidPoint": "-0.9284767 0.37139067 0",
+            "hullCount": -58904.234,
+            "firstHull": 55458.844
+        },
+        {
+            "boundsMidPoint": "-0.9825703 0.18589167 0",
+            "hullCount": -62191.28,
+            "firstHull": 58696.78
+        },
+        {
+            "boundsMidPoint": "-0.9422147 0.33500966 0",
+            "hullCount": -59782.434,
+            "firstHull": 56301.098
+        },
+        {
+            "boundsMidPoint": "-0.5547002 0.8320503 0",
+            "hullCount": -35811.445,
+            "firstHull": 33185.492
+        },
+        {
+            "boundsMidPoint": "0.25485536 0.5606818 -0.7878355",
+            "hullCount": 1153.9467,
+            "firstHull": 165.38147
+        },
+        {
+            "boundsMidPoint": "0.41380292 0.9103665 -0",
+            "hullCount": 1950.7085,
+            "firstHull": 18.124512
+        },
+        {
+            "boundsMidPoint": "0.9091989 -0.4163621 0",
+            "hullCount": 1022.38574,
+            "firstHull": 30.20755
+        },
+        {
+            "boundsMidPoint": "-0.70710677 0.70710677 0",
+            "hullCount": -235.82013,
+            "firstHull": 11.667297
+        },
+        {
+            "boundsMidPoint": "0.70710677 0.70710677 0",
+            "hullCount": 2176.8281,
+            "firstHull": 11.667358
+        },
+        {
+            "boundsMidPoint": "0.94045335 -0.33992288 0",
+            "hullCount": 1285.7102,
+            "firstHull": 18.902588
+        },
+        {
+            "boundsMidPoint": "0.34386602 0.9390187 0",
+            "hullCount": 1839.9114,
+            "firstHull": 22.06366
+        },
+        {
+            "boundsMidPoint": "-0.70710677 -0.70710677 0",
+            "hullCount": -2191.6775,
+            "firstHull": 11.667236
+        },
+        {
+            "boundsMidPoint": "-0.70710677 0.70710677 0",
+            "hullCount": -428.86026,
+            "firstHull": 11.667267
+        },
+        {
+            "boundsMidPoint": "0.83331746 0.55279475 -0",
+            "hullCount": -64.99876,
+            "firstHull": 263.55936
+        },
+        {
+            "boundsMidPoint": "-0.70710677 0.70710677 0",
+            "hullCount": 0,
+            "firstHull": 39.59798
+        },
+        {
+            "boundsMidPoint": "0.70710677 0.70710677 0",
+            "hullCount": -0.70710754,
+            "firstHull": 39.59798
+        }
+    ],
+    "spawnVars": [
+        {
+            "modelIndex": 0,
+            "origin": "4.619e-41 -999 853",
+            "angles": "148 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-999 853 148",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_gridlock_teahouse",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6191e-41 -1247 679",
+            "angles": "148 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-1247 679 148",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "2",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_gridlock_teahouse",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6192e-41 -724 1027",
+            "angles": "18 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-724 1027 18",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "2",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_gridlock_teahouse",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6194e-41 -912 338",
+            "angles": "116 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-912 338 116",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "3",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_gridlock_teahouse",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6195e-41 -434 559",
+            "angles": "116 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-434 559 116",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_gridlock_icecream_rm",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6197e-41 -779 -1319",
+            "angles": "116 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-779 -1319 116",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_gridlock_bathhouse_sml",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6198e-41 38 -1739",
+            "angles": "116 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "38 -1739 116",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_gridlock_bathhouse_med",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.62e-41 696 -1528",
+            "angles": "116 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "696 -1528 116",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_gridlock_bathhouse_med",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6201e-41 3166 -90",
+            "angles": "117 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "3166 -90 117",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_gridlock_ally",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6202e-41 1606 -575",
+            "angles": "12 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "1606 -575 12",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_gridlock_overhang",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6204e-41 1373 149",
+            "angles": "72 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "1373 149 72",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_gridlock_food_packing",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6205e-41 542 722",
+            "angles": "72 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "542 722 72",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_gridlock_restaurant",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6206e-41 -1170 1274",
+            "angles": "117 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-1170 1274 117",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_gridlock_ally",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6208e-41 1391 979",
+            "angles": "112 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "1391 979 112",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_gridlock_truck",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6209e-41 2900 -2302",
+            "angles": "64 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "2900 -2302 64"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 1 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_bump_volume_threshold",
+                    "type": "string",
+                    "value": "0.75",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "audio_bump_trigger",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_bump_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.621e-41 5162 -3180",
+            "angles": "64 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "5162 -3180 64"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 1 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_bump_volume_threshold",
+                    "type": "string",
+                    "value": "0.75",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "audio_bump_trigger",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_bump_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6212e-41 5864 -1100",
+            "angles": "68 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "5864 -1100 68"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 1 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_bump_volume_threshold",
+                    "type": "string",
+                    "value": "0.75",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "audio_bump_trigger",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_bump_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6213e-41 -104 -1774",
+            "angles": "48 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-104 -1774 48"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "control_zone_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6215e-41 676 980",
+            "angles": "80 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "676 980 80",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "control_zone_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6216e-41 168 -324",
+            "angles": "148 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "168 -324 148"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "koth_zone_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6218e-41 -104 -1262",
+            "angles": "48 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-104 -1262 48",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "koth_zone_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6219e-41 -979 896",
+            "angles": "78 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-979 896 78",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "koth_zone_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.622e-41 1202 739",
+            "angles": "128 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "1202 739 128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "koth_zone_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6222e-41 2908 -594",
+            "angles": "-3 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "2908 -594 -3"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "sd",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "sd_bomb_pickup_trig",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6223e-41 499 -1287",
+            "angles": "64 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "499 -1287 64"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "ENTITY_VEHICLE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "ct_crash"
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "trigger_enemies",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6225e-41 758 -1294",
+            "angles": "63 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "758 -1294 63"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "ct_crash"
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "trigger_bathhouse",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6226e-41 -1744 -448",
+            "angles": "0 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-1744 -448 0"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "ctf",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_team",
+                    "type": "string",
+                    "value": "allies",
+                    "unk1a": true
+                },
+                {
+                    "key": "target",
+                    "type": "string",
+                    "value": "ctf_flag_allies",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ctf_flag_pickup_trig",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6227e-41 -1744 -448",
+            "angles": "0 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-1744 -448 0"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "ctf",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_team",
+                    "type": "string",
+                    "value": "allies",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ctf_flag_zone_trig",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.6229e-41 2327 -82",
+            "angles": "-8 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "2327 -82 -8"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "ctf",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_team",
+                    "type": "string",
+                    "value": "axis",
+                    "unk1a": true
+                },
+                {
+                    "key": "target",
+                    "type": "string",
+                    "value": "ctf_flag_axis",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ctf_flag_pickup_trig",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.623e-41 2327 -82",
+            "angles": "-8 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "2327 -82 -8"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "ctf",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_team",
+                    "type": "string",
+                    "value": "axis",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ctf_flag_zone_trig",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.2561e-40 -523 488",
+            "angles": "84 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-523 488 84"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "ENTITY_VEHICLE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_out_of_bounds_new",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.25611e-40 1398 976",
+            "angles": "176 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "ENTITY_VEHICLE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_out_of_bounds_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "1398 976 176",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.25612e-40 1660 790",
+            "angles": "148 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "1660 790 148"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "ENTITY_VEHICLE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_out_of_bounds_new",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.25614e-40 -317 1210",
+            "angles": "115 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-317 1210 115"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "ENTITY_VEHICLE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_out_of_bounds_new",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.25615e-40 0 0",
+            "angles": "224 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "ENTITY_VEHICLE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_out_of_bounds_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "0 0 224",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.25617e-40 -1284 -1886",
+            "angles": "224 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "ENTITY_VEHICLE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_out_of_bounds_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-1284 -1886 224",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.26463e-40 -422 1024",
+            "angles": "6 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-422 1024 6"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "0.3 0.5 0.8",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_use_touch_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "cursorhint",
+                    "type": "string",
+                    "value": "HINT_ACTIVATE",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_bombmode_original",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "bombzone",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_label",
+                    "type": "string",
+                    "value": "_b",
+                    "unk1a": true
+                },
+                {
+                    "key": "target",
+                    "type": "string",
+                    "value": "pfD937D583_auto1",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "bombzone",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.26464e-40 -422 1024",
+            "angles": "6 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-422 1024 6"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "0.3 0.5 0.8",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_use_touch_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "cursorhint",
+                    "type": "string",
+                    "value": "HINT_ACTIVATE",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "bombzone",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "pfD937D583_auto2",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.26466e-40 -3644 1704",
+            "angles": "-4 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-3644 1704 -4"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_use_touch_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "bombzone",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "bombtrigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.26467e-40 -1403 387",
+            "angles": "48 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-1403 387 48"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "0.3 0.5 0.8",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_use_touch_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "cursorhint",
+                    "type": "string",
+                    "value": "HINT_ACTIVATE",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "escort",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "escort_robot_reboot_trig",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.26469e-40 -104 -1252",
+            "angles": "-24 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-104 -1252 -24"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "0.3 0.5 0.8",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_use_touch_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "cursorhint",
+                    "type": "string",
+                    "value": "HINT_ACTIVATE",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_bombmode_original",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "bombzone",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_label",
+                    "type": "string",
+                    "value": "_a",
+                    "unk1a": true
+                },
+                {
+                    "key": "target",
+                    "type": "string",
+                    "value": "pfDA6BFB38_auto1",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "bombzone",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.2647e-40 -104 -1252",
+            "angles": "-24 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-104 -1252 -24"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "0.3 0.5 0.8",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_use_touch_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "cursorhint",
+                    "type": "string",
+                    "value": "HINT_ACTIVATE",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "bombzone",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "pfDA6BFB38_auto2",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.26477e-40 0 0",
+            "angles": "61696 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "0 0 61696"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_hurt_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "dmg",
+                    "type": "string",
+                    "value": "10000",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_hazard",
+                    "type": "string",
+                    "value": "false",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.26478e-40 0 0",
+            "angles": "-61468 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_hurt_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "dmg",
+                    "type": "string",
+                    "value": "10000",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "0 0 -61468",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_hazard",
+                    "type": "string",
+                    "value": "false",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.26691e-40 387 -1392",
+            "angles": "79 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "info_volume",
+                    "unk1a": true
+                },
+                {
+                    "key": "client_server",
+                    "type": "string",
+                    "value": "ServerSide",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "387 -1392 79",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "vol_tregion_lane_0",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.26693e-40 387 -293",
+            "angles": "79 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "info_volume",
+                    "unk1a": true
+                },
+                {
+                    "key": "client_server",
+                    "type": "string",
+                    "value": "ServerSide",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "387 -293 79",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "vol_tregion_lane_1",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.26694e-40 387 909",
+            "angles": "79 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "info_volume",
+                    "unk1a": true
+                },
+                {
+                    "key": "client_server",
+                    "type": "string",
+                    "value": "ServerSide",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "387 909 79",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "vol_tregion_lane_2",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.25855e-40 243 -328.5",
+            "angles": "57.5 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_radius_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "height",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "243 -328 58",
+                    "unk1a": true
+                },
+                {
+                    "key": "radius",
+                    "type": "string",
+                    "value": "200",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "dom onslaught",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "flag_trigger_b",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.25856e-40 -1466 -1040",
+            "angles": "2 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_radius_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "height",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-1466 -1040 2",
+                    "unk1a": true
+                },
+                {
+                    "key": "radius",
+                    "type": "string",
+                    "value": "90",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "dom onslaught",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "flag_trigger_a",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.25858e-40 1951.5 427.5",
+            "angles": "-8 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_radius_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "height",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "1952 428 -8",
+                    "unk1a": true
+                },
+                {
+                    "key": "radius",
+                    "type": "string",
+                    "value": "90",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "dom onslaught",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "flag_trigger_c",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.25859e-40 2089 -1318.75",
+            "angles": "0 0 89.99996",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "2089 -1319 0"
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 90 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_radius_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "height",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "radius",
+                    "type": "string",
+                    "value": "120",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "escort",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "escort_robot_goal_trig",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.2586e-40 -1405 389.5",
+            "angles": "0 0 89.99996",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-1405 390 0"
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 90 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_radius_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "height",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "radius",
+                    "type": "string",
+                    "value": "180",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "escort",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "escort_robot_move_trig",
+                    "unk1a": true
+                }
+            ]
+        }
+    ]
+}

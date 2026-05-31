@@ -15,7 +15,10 @@
     "typeSuffix": "_zombie",
     "spawnerType": "marauder",
     "character": [
-        "#hash_2eec65cfd7adee2b"
+        "#c_t8_zmb_dlc0_zombie_marauder1"
+    ],
+    "animMappingTables": [
+        "#hash_715898036aa8e6d1"
     ],
     "meleeWeapon": "#gladiator_melee",
     "aimTable": "#soldier_aim",
@@ -23,7 +26,7 @@
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#zm_gladiator_marauder.ai_bt",
+    "behaviorTree": "#hash_7154a1036aa50d45",
     "animStateMachine": "#hash_4292edce3d1cc846",
     "animSelectorTable": "#hash_429306ce3d1cf2c1",
     "traversalExtents": "#default_traversal_extents_zm",

@@ -1062,13 +1062,13 @@ function function_5a68c330( var_e0dd85aa, s_team, n_clientnum, extradata = 0 )
     switch ( s_team )
     {
         case #"axis":
-            var_dfc4aab4 = 2;
+            n_team = 2;
             break;
         case #"allies":
-            var_dfc4aab4 = 1;
+            n_team = 1;
             break;
         default:
-            var_dfc4aab4 = 0;
+            n_team = 0;
             break;
     }
     
@@ -1081,7 +1081,7 @@ function function_5a68c330( var_e0dd85aa, s_team, n_clientnum, extradata = 0 )
     
     foreach ( player in players )
     {
-        player luinotifyevent( #"announcement_event", 4, var_e0dd85aa, var_dfc4aab4, n_clientnum, extradata );
+        player luinotifyevent( #"announcement_event", 4, var_e0dd85aa, n_team, n_clientnum, extradata );
     }
 }
 

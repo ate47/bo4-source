@@ -183,7 +183,7 @@ function function_8e0b371()
     {
         if ( isalive( self ) )
         {
-            str_location = function_ab7f70b9( self );
+            str_location = get_location_string( self );
             self zm_hud::function_29780fb5( isdefined( str_location ) ? str_location : #"" );
         }
         else
@@ -199,7 +199,7 @@ function function_8e0b371()
 // Params 1
 // Checksum 0x96b5d8ca, Offset: 0x1218
 // Size: 0x45e
-function function_ab7f70b9( e_player )
+function get_location_string( e_player )
 {
     str_zone = e_player zm_zonemgr::get_player_zone();
     

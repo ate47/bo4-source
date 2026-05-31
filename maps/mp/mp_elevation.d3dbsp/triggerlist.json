@@ -1,0 +1,5935 @@
+{
+    "name": "#maps/mp/mp_elevation.d3dbsp",
+    "models": [
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 0
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 1
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 2
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 3
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 4
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 5
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 6
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 7
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 8
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 10
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 12
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 14
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 15
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 17
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 19
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 21
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 22
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 23
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 24
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 25
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 26
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 27
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 28
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 29
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 30
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 31
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 32
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 33
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 34
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 3,
+            "firstHull": 35
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 38
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 3,
+            "firstHull": 39
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 42
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 137,
+            "firstHull": 43
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 180
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 182
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 184
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 186
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 188
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 190
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 192
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 193
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 194
+        },
+        {
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 195
+        }
+    ],
+    "hulls": [
+        {
+            "boundsMidPoint": "0.375 -0.375 -0.5",
+            "boundsHullCount": "247.625 241.375 107",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.31600952 0.22502136 -0.5",
+            "boundsHullCount": "494.19785 401.05707 156",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-0.125 -0.375 -0.5",
+            "boundsHullCount": "354.375 106.875 207",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.125 -0.375 0",
+            "boundsHullCount": "188.875 124.125 133.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.375 -0.125 0",
+            "boundsHullCount": "212.375 156.875 133.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.25 0.375 -0.5",
+            "boundsHullCount": "178 201.375 162",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.25 0.25 0",
+            "boundsHullCount": "293.75 152.25 167.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "694.25 193.75 167.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-46 0 -25",
+            "boundsHullCount": "130 596 79",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "130 -122 0",
+            "boundsHullCount": "46 474 104",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-9 -256 0",
+            "boundsHullCount": "364 192 96",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 2
+        },
+        {
+            "boundsMidPoint": "-0.5 192 0",
+            "boundsHullCount": "372.5 256 96",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-19.517914 263.5 0",
+            "boundsHullCount": "335.21225 165.5 124",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 3
+        },
+        {
+            "boundsMidPoint": "0.24293518 -165.04172 0",
+            "boundsHullCount": "377.24292 263.04172 124",
+            "contents": 536870913,
+            "hullCount": 3,
+            "firstHull": 5
+        },
+        {
+            "boundsMidPoint": "-0.36540222 0.455719 0.25",
+            "boundsHullCount": "482.7785 365.5844 88.75",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 8
+        },
+        {
+            "boundsMidPoint": "-46 0 -24",
+            "boundsHullCount": "134 540 80",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "134 -122 0",
+            "boundsHullCount": "46 418 104",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.24293518 -165.04172 0",
+            "boundsHullCount": "377.24292 263.04172 124",
+            "contents": 536870913,
+            "hullCount": 3,
+            "firstHull": 10
+        },
+        {
+            "boundsMidPoint": "-19.517914 263.5 0",
+            "boundsHullCount": "335.21225 165.5 124",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 13
+        },
+        {
+            "boundsMidPoint": "-0.25 0 10.25",
+            "boundsHullCount": "33.57922 33.57922 18",
+            "contents": 536870913,
+            "hullCount": 4,
+            "firstHull": 15
+        },
+        {
+            "boundsMidPoint": "-0.25 0 0.25",
+            "boundsHullCount": "9.25 9.25 8",
+            "contents": 536870912,
+            "hullCount": 2,
+            "firstHull": 19
+        },
+        {
+            "boundsMidPoint": "0.25 -0.375 0.25",
+            "boundsHullCount": "29.25 28.125 52",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "1760 1312 328",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "1280 3584 208",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "1024 544 240",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "768 1056 240",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "1280 4864 148",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "256 4472 216",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "122880 122880 32",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "122880 122880 60832",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "122848 60096 768",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "122848 60352 768",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "58880 2432 768",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "58880 2432 768",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-0.3333435 0 0",
+            "boundsHullCount": "700.6666 256 992",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 21
+        },
+        {
+            "boundsMidPoint": "-1332 406 -2",
+            "boundsHullCount": "654 218 990",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "1338 0 0",
+            "boundsHullCount": "648 624 992",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "6 252 0",
+            "boundsHullCount": "684 372 992",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "648 240 992",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 -496 0",
+            "boundsHullCount": "1052 240 992",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 22
+        },
+        {
+            "boundsMidPoint": "0 -21 0",
+            "boundsHullCount": "1052 235 992",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "41 475 0",
+            "boundsHullCount": "1011 261 992",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.26187134 0.39538574 0",
+            "boundsHullCount": "349.29828 220.58698 496",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 23
+        },
+        {
+            "boundsMidPoint": "-3072 -44 -274",
+            "boundsHullCount": "32 1524 416",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 25
+        },
+        {
+            "boundsMidPoint": "-3136 -34 -276",
+            "boundsHullCount": "32 1534 414",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 27
+        },
+        {
+            "boundsMidPoint": "-3200 -16 -280",
+            "boundsHullCount": "32 1552 410",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 29
+        },
+        {
+            "boundsMidPoint": "-2804 -178 -252",
+            "boundsHullCount": "44 1390 438",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 31
+        },
+        {
+            "boundsMidPoint": "-2872 -138 -252",
+            "boundsHullCount": "24 1430 438",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 32
+        },
+        {
+            "boundsMidPoint": "-2716 -216 -252",
+            "boundsHullCount": "44 1352 438",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 33
+        },
+        {
+            "boundsMidPoint": "-2632 -336 -252",
+            "boundsHullCount": "40 1232 438",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 34
+        },
+        {
+            "boundsMidPoint": "-3008 -54 -264",
+            "boundsHullCount": "32 1514 426",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 35
+        },
+        {
+            "boundsMidPoint": "-2948 -54 -252",
+            "boundsHullCount": "28 1514 438",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 36
+        },
+        {
+            "boundsMidPoint": "-2908 -96 -252",
+            "boundsHullCount": "12 1472 438",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 37
+        },
+        {
+            "boundsMidPoint": "-2112 -508 -220",
+            "boundsHullCount": "32 1060 470",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 38
+        },
+        {
+            "boundsMidPoint": "-1756 -616 -208",
+            "boundsHullCount": "4 952 482",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 39
+        },
+        {
+            "boundsMidPoint": "-1792 -612 -208",
+            "boundsHullCount": "32 956 482",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 40
+        },
+        {
+            "boundsMidPoint": "-2560 -368 -248",
+            "boundsHullCount": "32 1200 442",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 42
+        },
+        {
+            "boundsMidPoint": "-2432 -398 -230",
+            "boundsHullCount": "32 1170 460",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 44
+        },
+        {
+            "boundsMidPoint": "-2304 -432 -222",
+            "boundsHullCount": "32 1136 468",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 46
+        },
+        {
+            "boundsMidPoint": "-2176 -474 -220",
+            "boundsHullCount": "32 1094 470",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 48
+        },
+        {
+            "boundsMidPoint": "-2048 -520 -220",
+            "boundsHullCount": "32 1048 470",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 49
+        },
+        {
+            "boundsMidPoint": "-1984 -526 -218",
+            "boundsHullCount": "32 1042 472",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 50
+        },
+        {
+            "boundsMidPoint": "-2240 -464 -220",
+            "boundsHullCount": "32 1104 470",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 52
+        },
+        {
+            "boundsMidPoint": "-2368 -388 -226",
+            "boundsHullCount": "32 1180 464",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 54
+        },
+        {
+            "boundsMidPoint": "-2496 -392 -246",
+            "boundsHullCount": "32 1176 444",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 56
+        },
+        {
+            "boundsMidPoint": "-1920 -552 -216",
+            "boundsHullCount": "32 1016 474",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 58
+        },
+        {
+            "boundsMidPoint": "-1856 -596 -212",
+            "boundsHullCount": "32 972 478",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 60
+        },
+        {
+            "boundsMidPoint": "-1746 -640 -208",
+            "boundsHullCount": "6 928 482",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 62
+        },
+        {
+            "boundsMidPoint": "-1714 -672 -208",
+            "boundsHullCount": "26 896 482",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 63
+        },
+        {
+            "boundsMidPoint": "-1652 -704 -208",
+            "boundsHullCount": "36 864 482",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 64
+        },
+        {
+            "boundsMidPoint": "-1590 -736 -208",
+            "boundsHullCount": "26 832 482",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 65
+        },
+        {
+            "boundsMidPoint": "-1532 -768 -208",
+            "boundsHullCount": "32 800 482",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 66
+        },
+        {
+            "boundsMidPoint": "4224 -462 -18",
+            "boundsHullCount": "32 1106 672",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 67
+        },
+        {
+            "boundsMidPoint": "-1088 -930 -206",
+            "boundsHullCount": "32 638 484",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 69
+        },
+        {
+            "boundsMidPoint": "-960 -958 -204",
+            "boundsHullCount": "32 610 486",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 70
+        },
+        {
+            "boundsMidPoint": "-832 -992 -204",
+            "boundsHullCount": "32 576 486",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 71
+        },
+        {
+            "boundsMidPoint": "-704 -992 -204",
+            "boundsHullCount": "32 576 486",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 72
+        },
+        {
+            "boundsMidPoint": "-576 -1006 -194",
+            "boundsHullCount": "32 562 496",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 73
+        },
+        {
+            "boundsMidPoint": "-448 -1038 -188",
+            "boundsHullCount": "32 530 502",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 75
+        },
+        {
+            "boundsMidPoint": "-320 -1042 -184",
+            "boundsHullCount": "32 526 506",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 77
+        },
+        {
+            "boundsMidPoint": "-192 -1038 -166",
+            "boundsHullCount": "32 530 524",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 79
+        },
+        {
+            "boundsMidPoint": "-64 -1066 -154",
+            "boundsHullCount": "32 502 536",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 81
+        },
+        {
+            "boundsMidPoint": "64 -1052 -154",
+            "boundsHullCount": "32 516 536",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 82
+        },
+        {
+            "boundsMidPoint": "192 -1024 -140",
+            "boundsHullCount": "32 544 550",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 83
+        },
+        {
+            "boundsMidPoint": "320 -1002 -140",
+            "boundsHullCount": "32 566 550",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 85
+        },
+        {
+            "boundsMidPoint": "448 -1018 -86",
+            "boundsHullCount": "32 550 604",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 86
+        },
+        {
+            "boundsMidPoint": "576 -1050 -80",
+            "boundsHullCount": "32 518 610",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 88
+        },
+        {
+            "boundsMidPoint": "960 -1048 -64",
+            "boundsHullCount": "32 520 626",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 89
+        },
+        {
+            "boundsMidPoint": "896 -1060 -118",
+            "boundsHullCount": "32 508 572",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 91
+        },
+        {
+            "boundsMidPoint": "512 -1034 -80",
+            "boundsHullCount": "32 534 610",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 92
+        },
+        {
+            "boundsMidPoint": "384 -1020 -140",
+            "boundsHullCount": "32 548 550",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 94
+        },
+        {
+            "boundsMidPoint": "256 -1010 -140",
+            "boundsHullCount": "32 558 550",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 95
+        },
+        {
+            "boundsMidPoint": "128 -1038 -148",
+            "boundsHullCount": "32 530 542",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 96
+        },
+        {
+            "boundsMidPoint": "0 -1066 -154",
+            "boundsHullCount": "32 502 536",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "-128 -1052 -162",
+            "boundsHullCount": "32 516 528",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 98
+        },
+        {
+            "boundsMidPoint": "-256 -1038 -184",
+            "boundsHullCount": "32 530 506",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 100
+        },
+        {
+            "boundsMidPoint": "-384 -1044 -186",
+            "boundsHullCount": "32 524 504",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 101
+        },
+        {
+            "boundsMidPoint": "-512 -1026 -190",
+            "boundsHullCount": "32 542 500",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 102
+        },
+        {
+            "boundsMidPoint": "-640 -994 -204",
+            "boundsHullCount": "32 574 486",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 104
+        },
+        {
+            "boundsMidPoint": "-768 -992 -204",
+            "boundsHullCount": "32 576 486",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 105
+        },
+        {
+            "boundsMidPoint": "-896 -974 -204",
+            "boundsHullCount": "32 594 486",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 106
+        },
+        {
+            "boundsMidPoint": "-1024 -944 -204",
+            "boundsHullCount": "32 624 486",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 107
+        },
+        {
+            "boundsMidPoint": "-1152 -914 -206",
+            "boundsHullCount": "32 654 484",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 109
+        },
+        {
+            "boundsMidPoint": "-1280 -876 -206",
+            "boundsHullCount": "32 692 484",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 110
+        },
+        {
+            "boundsMidPoint": "-1216 -902 -206",
+            "boundsHullCount": "32 666 484",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 112
+        },
+        {
+            "boundsMidPoint": "-1344 -854 -208",
+            "boundsHullCount": "32 714 482",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 113
+        },
+        {
+            "boundsMidPoint": "-1408 -838 -208",
+            "boundsHullCount": "32 730 482",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 114
+        },
+        {
+            "boundsMidPoint": "-1470 -800 -208",
+            "boundsHullCount": "30 768 482",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 115
+        },
+        {
+            "boundsMidPoint": "4992 -250 -2",
+            "boundsHullCount": "32 1318 688",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 116
+        },
+        {
+            "boundsMidPoint": "4928 -270 -2",
+            "boundsHullCount": "32 1298 688",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 117
+        },
+        {
+            "boundsMidPoint": "4864 -286 -2",
+            "boundsHullCount": "32 1282 688",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 118
+        },
+        {
+            "boundsMidPoint": "4800 -302 -2",
+            "boundsHullCount": "32 1266 688",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 119
+        },
+        {
+            "boundsMidPoint": "4736 -326 -6",
+            "boundsHullCount": "32 1242 684",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 121
+        },
+        {
+            "boundsMidPoint": "4608 -344 -20",
+            "boundsHullCount": "32 1224 670",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 123
+        },
+        {
+            "boundsMidPoint": "4480 -374 -22",
+            "boundsHullCount": "32 1194 668",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 124
+        },
+        {
+            "boundsMidPoint": "4544 -360 -20",
+            "boundsHullCount": "32 1208 670",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 126
+        },
+        {
+            "boundsMidPoint": "4416 -402 -24",
+            "boundsHullCount": "32 1166 666",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 128
+        },
+        {
+            "boundsMidPoint": "4352 -442 -20",
+            "boundsHullCount": "32 1126 670",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 129
+        },
+        {
+            "boundsMidPoint": "4288 -452 -20",
+            "boundsHullCount": "32 1116 670",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 131
+        },
+        {
+            "boundsMidPoint": "4160 -472 -18",
+            "boundsHullCount": "32 1096 672",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 132
+        },
+        {
+            "boundsMidPoint": "4096 -482 -18",
+            "boundsHullCount": "32 1086 672",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 134
+        },
+        {
+            "boundsMidPoint": "4032 -512 -16",
+            "boundsHullCount": "32 1056 674",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 136
+        },
+        {
+            "boundsMidPoint": "3968 -538 -14",
+            "boundsHullCount": "32 1030 676",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 138
+        },
+        {
+            "boundsMidPoint": "3904 -552 -12",
+            "boundsHullCount": "32 1016 678",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 140
+        },
+        {
+            "boundsMidPoint": "3840 -566 -8",
+            "boundsHullCount": "32 1002 682",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 142
+        },
+        {
+            "boundsMidPoint": "3776 -572 -8",
+            "boundsHullCount": "32 996 682",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 144
+        },
+        {
+            "boundsMidPoint": "3712 -614 -8",
+            "boundsHullCount": "32 954 682",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 145
+        },
+        {
+            "boundsMidPoint": "3648 -644 -8",
+            "boundsHullCount": "32 924 682",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 146
+        },
+        {
+            "boundsMidPoint": "3584 -658 -12",
+            "boundsHullCount": "32 910 678",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 148
+        },
+        {
+            "boundsMidPoint": "3520 -666 -12",
+            "boundsHullCount": "32 902 678",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 150
+        },
+        {
+            "boundsMidPoint": "3456 -710 -12",
+            "boundsHullCount": "32 858 678",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 152
+        },
+        {
+            "boundsMidPoint": "3392 -728 -12",
+            "boundsHullCount": "32 840 678",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 153
+        },
+        {
+            "boundsMidPoint": "3328 -752 -16",
+            "boundsHullCount": "32 816 674",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 155
+        },
+        {
+            "boundsMidPoint": "3264 -768 -22",
+            "boundsHullCount": "32 800 668",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 157
+        },
+        {
+            "boundsMidPoint": "3200 -774 -28",
+            "boundsHullCount": "32 794 662",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 159
+        },
+        {
+            "boundsMidPoint": "3136 -796 -34",
+            "boundsHullCount": "32 772 656",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 161
+        },
+        {
+            "boundsMidPoint": "3072 -828 -38",
+            "boundsHullCount": "32 740 652",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 163
+        },
+        {
+            "boundsMidPoint": "3008 -828 -36",
+            "boundsHullCount": "32 740 654",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 164
+        },
+        {
+            "boundsMidPoint": "2944 -844 -36",
+            "boundsHullCount": "32 724 654",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 166
+        },
+        {
+            "boundsMidPoint": "2880 -850 -36",
+            "boundsHullCount": "32 718 654",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 167
+        },
+        {
+            "boundsMidPoint": "2816 -850 -36",
+            "boundsHullCount": "32 718 654",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 168
+        },
+        {
+            "boundsMidPoint": "2752 -858 -36",
+            "boundsHullCount": "32 710 654",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 169
+        },
+        {
+            "boundsMidPoint": "2688 -876 -32",
+            "boundsHullCount": "32 692 658",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 170
+        },
+        {
+            "boundsMidPoint": "2624 -876 -32",
+            "boundsHullCount": "32 692 658",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 172
+        },
+        {
+            "boundsMidPoint": "2560 -894 -34",
+            "boundsHullCount": "32 674 656",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 174
+        },
+        {
+            "boundsMidPoint": "2496 -904 -36",
+            "boundsHullCount": "32 664 654",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 176
+        },
+        {
+            "boundsMidPoint": "2432 -930 -40",
+            "boundsHullCount": "32 638 650",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 178
+        },
+        {
+            "boundsMidPoint": "2368 -956 -42",
+            "boundsHullCount": "32 612 648",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 180
+        },
+        {
+            "boundsMidPoint": "2304 -982 -46",
+            "boundsHullCount": "32 586 644",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 182
+        },
+        {
+            "boundsMidPoint": "2240 -994 -46",
+            "boundsHullCount": "32 574 644",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 183
+        },
+        {
+            "boundsMidPoint": "2176 -1016 -46",
+            "boundsHullCount": "32 552 644",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 184
+        },
+        {
+            "boundsMidPoint": "2048 -1018 0",
+            "boundsHullCount": "32 550 690",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 186
+        },
+        {
+            "boundsMidPoint": "1984 -1006 -6",
+            "boundsHullCount": "32 562 684",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 188
+        },
+        {
+            "boundsMidPoint": "1920 -1006 -12",
+            "boundsHullCount": "32 562 678",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 190
+        },
+        {
+            "boundsMidPoint": "1856 -1012 -16",
+            "boundsHullCount": "32 556 674",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 192
+        },
+        {
+            "boundsMidPoint": "1792 -1024 -16",
+            "boundsHullCount": "32 544 674",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 193
+        },
+        {
+            "boundsMidPoint": "1728 -1016 -16",
+            "boundsHullCount": "32 528 674",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 194
+        },
+        {
+            "boundsMidPoint": "1664 -1032 -16",
+            "boundsHullCount": "32 536 674",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 195
+        },
+        {
+            "boundsMidPoint": "1600 -1032 -16",
+            "boundsHullCount": "32 536 674",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 196
+        },
+        {
+            "boundsMidPoint": "1536 -1028 -16",
+            "boundsHullCount": "32 540 674",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 197
+        },
+        {
+            "boundsMidPoint": "1472 -1010 -16",
+            "boundsHullCount": "32 558 674",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 198
+        },
+        {
+            "boundsMidPoint": "1408 -1020 -70",
+            "boundsHullCount": "32 548 620",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 200
+        },
+        {
+            "boundsMidPoint": "1344 -1020 -82",
+            "boundsHullCount": "32 548 608",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 202
+        },
+        {
+            "boundsMidPoint": "1280 -1020 -90",
+            "boundsHullCount": "32 548 600",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 203
+        },
+        {
+            "boundsMidPoint": "1216 -1032 -96",
+            "boundsHullCount": "32 536 594",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 205
+        },
+        {
+            "boundsMidPoint": "1152 -1036 -56",
+            "boundsHullCount": "32 532 634",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 207
+        },
+        {
+            "boundsMidPoint": "1088 -1034 -56",
+            "boundsHullCount": "32 514 634",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 208
+        },
+        {
+            "boundsMidPoint": "1024 -1048 -62",
+            "boundsHullCount": "32 520 628",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 210
+        },
+        {
+            "boundsMidPoint": "4672 -330 -14",
+            "boundsHullCount": "32 1238 676",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 212
+        },
+        {
+            "boundsMidPoint": "-3264 0 -284",
+            "boundsHullCount": "32 1568 406",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 214
+        },
+        {
+            "boundsMidPoint": "-4160 0 -288",
+            "boundsHullCount": "864 1568 402",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "832 -1060 -126",
+            "boundsHullCount": "32 508 564",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 216
+        },
+        {
+            "boundsMidPoint": "768 -1068 -126",
+            "boundsHullCount": "32 500 564",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 217
+        },
+        {
+            "boundsMidPoint": "768 -1040 484",
+            "boundsHullCount": "32 528 46",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 218
+        },
+        {
+            "boundsMidPoint": "704 -1068 -126",
+            "boundsHullCount": "32 500 564",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 219
+        },
+        {
+            "boundsMidPoint": "704 -1050 484",
+            "boundsHullCount": "32 518 46",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 220
+        },
+        {
+            "boundsMidPoint": "814 -1038 484",
+            "boundsHullCount": "14 530 46",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 221
+        },
+        {
+            "boundsMidPoint": "846 -1038 484",
+            "boundsHullCount": "18 530 46",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 222
+        },
+        {
+            "boundsMidPoint": "640 -1056 -80",
+            "boundsHullCount": "32 512 610",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 223
+        },
+        {
+            "boundsMidPoint": "2112 -1012 0",
+            "boundsHullCount": "32 556 690",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 224
+        },
+        {
+            "boundsMidPoint": "0 0 564",
+            "boundsHullCount": "32 522 58",
+            "contents": 536870913,
+            "hullCount": 3,
+            "firstHull": 226
+        },
+        {
+            "boundsMidPoint": "0 -14 -50",
+            "boundsHullCount": "32 508 572",
+            "contents": 536870913,
+            "hullCount": 1,
+            "firstHull": 229
+        },
+        {
+            "boundsMidPoint": "-0.49999237 7.6293945e-06 8.715971",
+            "boundsHullCount": "95.82831 96.321724 17.215971",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 230
+        },
+        {
+            "boundsMidPoint": "-0.5 0 -0.5",
+            "boundsHullCount": "11.302941 11.302941 8",
+            "contents": 536870912,
+            "hullCount": 2,
+            "firstHull": 232
+        },
+        {
+            "boundsMidPoint": "-0.4999981 0 23.5",
+            "boundsHullCount": "45.21177 45.211765 32",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 234
+        },
+        {
+            "boundsMidPoint": "-0.49999952 0 -0.5",
+            "boundsHullCount": "11.30294 11.302941 8",
+            "contents": 536870912,
+            "hullCount": 2,
+            "firstHull": 236
+        },
+        {
+            "boundsMidPoint": "0.25 -0.5 0",
+            "boundsHullCount": "8 8 8",
+            "contents": 536870912,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "8.25 -0.5 8.5",
+            "boundsHullCount": "80 64 16.5",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.25 -0.5 0",
+            "boundsHullCount": "8 8 8",
+            "contents": 536870912,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0.25 -0.5 24",
+            "boundsHullCount": "32 32 32",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 -0.25 -0.5",
+            "boundsHullCount": "2 2 2",
+            "contents": 536870912,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 -0.25 27.5",
+            "boundsHullCount": "40 40 28",
+            "contents": 536870913,
+            "hullCount": 2,
+            "firstHull": 238
+        },
+        {
+            "boundsMidPoint": "0.43514633 0.38339138 -0.28141022",
+            "boundsHullCount": "32.000137 32.000034 48",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 0 0",
+            "boundsHullCount": "4110 620 574",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 -0.5 0",
+            "boundsHullCount": "4110 545.5 574",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        },
+        {
+            "boundsMidPoint": "0 -0.5 0",
+            "boundsHullCount": "4110 582.5 574",
+            "contents": 536870913,
+            "hullCount": 0,
+            "firstHull": 0
+        }
+    ],
+    "slabs": [
+        {
+            "boundsMidPoint": "0.19132562 -0.9815266 0",
+            "hullCount": -0.62893677,
+            "firstHull": 323.22784
+        },
+        {
+            "boundsMidPoint": "0.9817719 0.19006266 0",
+            "hullCount": 0.4437561,
+            "firstHull": 440.90894
+        },
+        {
+            "boundsMidPoint": "0.89813817 -0.43971348 0",
+            "hullCount": 20.058426,
+            "firstHull": 326.9223
+        },
+        {
+            "boundsMidPoint": "0.79601747 0.60527366 0",
+            "hullCount": 43.78022,
+            "firstHull": 266.8348
+        },
+        {
+            "boundsMidPoint": "-0.997345 0.07282201 0",
+            "hullCount": 26.602646,
+            "firstHull": 334.32227
+        },
+        {
+            "boundsMidPoint": "0.95911473 0.28301746 0",
+            "hullCount": -75.82117,
+            "firstHull": 406.92017
+        },
+        {
+            "boundsMidPoint": "-0.997345 0.07282201 0",
+            "hullCount": -11.761597,
+            "firstHull": 372.6865
+        },
+        {
+            "boundsMidPoint": "0.79243803 -0.60995233 0",
+            "hullCount": 12.483444,
+            "firstHull": 353.36047
+        },
+        {
+            "boundsMidPoint": "0.19310424 -0.9811783 0",
+            "hullCount": -2.869995,
+            "firstHull": 288.6917
+        },
+        {
+            "boundsMidPoint": "0.98310816 0.18302546 0",
+            "hullCount": 0.16296387,
+            "firstHull": 438.1621
+        },
+        {
+            "boundsMidPoint": "0.95911473 0.28301746 0",
+            "hullCount": -75.82117,
+            "firstHull": 406.92017
+        },
+        {
+            "boundsMidPoint": "-0.997345 0.07282201 0",
+            "hullCount": -11.761597,
+            "firstHull": 372.6865
+        },
+        {
+            "boundsMidPoint": "0.79243803 -0.60995233 0",
+            "hullCount": 12.483444,
+            "firstHull": 353.36047
+        },
+        {
+            "boundsMidPoint": "0.79601747 0.60527366 0",
+            "hullCount": 43.78022,
+            "firstHull": 266.8348
+        },
+        {
+            "boundsMidPoint": "-0.997345 0.07282201 0",
+            "hullCount": 26.602646,
+            "firstHull": 334.32227
+        },
+        {
+            "boundsMidPoint": "0.9853096 0.17077804 0",
+            "hullCount": -0.24632835,
+            "firstHull": 31.999983
+        },
+        {
+            "boundsMidPoint": "-0.17077804 0.9853096 0",
+            "hullCount": 0.04269409,
+            "firstHull": 31.99998
+        },
+        {
+            "boundsMidPoint": "-0.81747735 0.57596076 0",
+            "hullCount": 0.20436954,
+            "firstHull": 31.112679
+        },
+        {
+            "boundsMidPoint": "0.57596076 0.81747735 0",
+            "hullCount": -0.14398956,
+            "firstHull": 31.112679
+        },
+        {
+            "boundsMidPoint": "0.9853095 0.17077802 0",
+            "hullCount": -0.2463274,
+            "firstHull": 8.001281
+        },
+        {
+            "boundsMidPoint": "-0.17077802 0.9853095 0",
+            "hullCount": 0.04269457,
+            "firstHull": 8.001282
+        },
+        {
+            "boundsMidPoint": "0.96522635 0.26141548 -0",
+            "hullCount": -67.24411,
+            "firstHull": 676.3019
+        },
+        {
+            "boundsMidPoint": "-0.8884259 -0.45902002 -0",
+            "hullCount": 117.509155,
+            "firstHull": 934.624
+        },
+        {
+            "boundsMidPoint": "0.10105199 -0.9948812 0",
+            "hullCount": -0.36691284,
+            "firstHull": 188.00008
+        },
+        {
+            "boundsMidPoint": "-0.99488115 -0.10105181 0",
+            "hullCount": -0.30047607,
+            "firstHull": 332
+        },
+        {
+            "boundsMidPoint": "-0.062378284 0 0.99805254",
+            "hullCount": -83.836395,
+            "firstHull": 415.18985
+        },
+        {
+            "boundsMidPoint": "0.29827502 0.95448005 -0",
+            "hullCount": -967.8428,
+            "firstHull": 1454.6277
+        },
+        {
+            "boundsMidPoint": "-0.12403473 0 0.99227786",
+            "hullCount": 111.13512,
+            "firstHull": 410.80304
+        },
+        {
+            "boundsMidPoint": "0.29827502 0.95448005 -0",
+            "hullCount": -977.38763,
+            "firstHull": 1464.1724
+        },
+        {
+            "boundsMidPoint": "-0.12403475 0 0.992278",
+            "hullCount": 115.10425,
+            "firstHull": 406.83398
+        },
+        {
+            "boundsMidPoint": "0.49026126 0.87157553 0",
+            "hullCount": -1598.4696,
+            "firstHull": 1352.6852
+        },
+        {
+            "boundsMidPoint": "0.6536199 0.75682306 0",
+            "hullCount": -1996.2239,
+            "firstHull": 1051.9841
+        },
+        {
+            "boundsMidPoint": "0.85749286 0.51449573 0",
+            "hullCount": -2554.2998,
+            "firstHull": 735.7289
+        },
+        {
+            "boundsMidPoint": "0.6536199 0.75682306 0",
+            "hullCount": -1967.4646,
+            "firstHull": 1023.2248
+        },
+        {
+            "boundsMidPoint": "0.62469506 0.7808688 -0",
+            "hullCount": -1931.5571,
+            "firstHull": 962.03033
+        },
+        {
+            "boundsMidPoint": "-0.298275 0 0.95448",
+            "hullCount": 635.68365,
+            "firstHull": 406.60846
+        },
+        {
+            "boundsMidPoint": "0.8320503 0.5547002 0",
+            "hullCount": -2506.1355,
+            "firstHull": 839.81616
+        },
+        {
+            "boundsMidPoint": "0.96152395 0.27472115 0",
+            "hullCount": -2834.023,
+            "firstHull": 404.38953
+        },
+        {
+            "boundsMidPoint": "0.35112342 0.9363292 -0",
+            "hullCount": -1228.4637,
+            "firstHull": 992.5089
+        },
+        {
+            "boundsMidPoint": "0.9863939 0.16439898 -0",
+            "hullCount": -1837.323,
+            "firstHull": 156.50787
+        },
+        {
+            "boundsMidPoint": "-0.12403474 0 0.9922779",
+            "hullCount": 11.907349,
+            "firstHull": 478.27795
+        },
+        {
+            "boundsMidPoint": "0.12403473 0.99227786 -0",
+            "hullCount": -833.5134,
+            "firstHull": 948.6177
+        },
+        {
+            "boundsMidPoint": "-0.12403474 0 0.9922779",
+            "hullCount": 67.4749,
+            "firstHull": 438.58685
+        },
+        {
+            "boundsMidPoint": "0.6 0.8 -0",
+            "hullCount": -1849.6001,
+            "firstHull": 960
+        },
+        {
+            "boundsMidPoint": "-0.062378284 0 0.99805254",
+            "hullCount": -79.84421,
+            "firstHull": 459.10416
+        },
+        {
+            "boundsMidPoint": "0.52999896 0.8479983 -0",
+            "hullCount": -1643.4208,
+            "firstHull": 992.1581
+        },
+        {
+            "boundsMidPoint": "-0.12403474 0 0.9922779",
+            "hullCount": 61.521225,
+            "firstHull": 464.38605
+        },
+        {
+            "boundsMidPoint": "0.70710677 0.70710677 0",
+            "hullCount": -1957.2716,
+            "firstHull": 803.2733
+        },
+        {
+            "boundsMidPoint": "0.7282 0.6853647 0",
+            "hullCount": -1932.7285,
+            "firstHull": 749.78906
+        },
+        {
+            "boundsMidPoint": "0.18428853 0.9828721 -0",
+            "hullCount": -894.4137,
+            "firstHull": 1030.05
+        },
+        {
+            "boundsMidPoint": "-0.062378284 0 0.99805254",
+            "hullCount": -95.81305,
+            "firstHull": 471.0808
+        },
+        {
+            "boundsMidPoint": "0.63059264 0.776114 -0",
+            "hullCount": -1679.5107,
+            "firstHull": 808.7109
+        },
+        {
+            "boundsMidPoint": "-0.062378287 0 0.9980526",
+            "hullCount": -81.84032,
+            "firstHull": 469.08472
+        },
+        {
+            "boundsMidPoint": "0.298275 0.95447993 0",
+            "hullCount": -1120.5593,
+            "firstHull": 1053.7458
+        },
+        {
+            "boundsMidPoint": "-0.12403474 0 0.9922779",
+            "hullCount": 65.49034,
+            "firstHull": 460.41693
+        },
+        {
+            "boundsMidPoint": "0.8087361 0.58817166 -0",
+            "hullCount": -2169.1772,
+            "firstHull": 694.0426
+        },
+        {
+            "boundsMidPoint": "-0.062378284 0 0.99805254",
+            "hullCount": -91.82083,
+            "firstHull": 443.13535
+        },
+        {
+            "boundsMidPoint": "0.18428853 0.9828721 -0",
+            "hullCount": -851.16724,
+            "firstHull": 1155.8577
+        },
+        {
+            "boundsMidPoint": "-0.062378284 0 0.99805254",
+            "hullCount": -97.80914,
+            "firstHull": 473.0769
+        },
+        {
+            "boundsMidPoint": "0.8087361 0.58817166 0",
+            "hullCount": -1903.3235,
+            "firstHull": 597.58246
+        },
+        {
+            "boundsMidPoint": "-0.12403473 0 0.99227786",
+            "hullCount": 15.876434,
+            "firstHull": 474.30884
+        },
+        {
+            "boundsMidPoint": "0.4472136 0.8944272 -0",
+            "hullCount": -1377.4178,
+            "firstHull": 869.3832
+        },
+        {
+            "boundsMidPoint": "0.9828721 0.18428853 -0",
+            "hullCount": -1839.9365,
+            "firstHull": 171.01971
+        },
+        {
+            "boundsMidPoint": "0.7761139 0.6305926 -0",
+            "hullCount": -1774.1965,
+            "firstHull": 565.011
+        },
+        {
+            "boundsMidPoint": "0.66436386 0.74740934 -0",
+            "hullCount": -1647.6223,
+            "firstHull": 645.7617
+        },
+        {
+            "boundsMidPoint": "0.7761139 0.6305926 -0",
+            "hullCount": -1718.3162,
+            "firstHull": 524.653
+        },
+        {
+            "boundsMidPoint": "0.7071068 0.7071068 -0",
+            "hullCount": -1648.9731,
+            "firstHull": 565.68555
+        },
+        {
+            "boundsMidPoint": "0.062378287 0 0.9980526",
+            "hullCount": 243.52483,
+            "firstHull": 670.69135
+        },
+        {
+            "boundsMidPoint": "-0.298275 0.95448 0",
+            "hullCount": -1710.4281,
+            "firstHull": 1055.6549
+        },
+        {
+            "boundsMidPoint": "0.40081882 0.91615736 -0",
+            "hullCount": -1300.9435,
+            "firstHull": 584.5084
+        },
+        {
+            "boundsMidPoint": "0.4472136 0.8944272 -0",
+            "hullCount": -1300.4971,
+            "firstHull": 545.6006
+        },
+        {
+            "boundsMidPoint": "0.12403473 0.99227786 -0",
+            "hullCount": -1091.5056,
+            "firstHull": 571.55206
+        },
+        {
+            "boundsMidPoint": "0.062378287 0.9980526 -0",
+            "hullCount": -1035.9786,
+            "firstHull": 574.8783
+        },
+        {
+            "boundsMidPoint": "-0.298275 0 0.95447993",
+            "hullCount": -22.907501,
+            "firstHull": 473.42203
+        },
+        {
+            "boundsMidPoint": "0.52999896 0.8479983 -0",
+            "hullCount": -1175.3257,
+            "firstHull": 476.57507
+        },
+        {
+            "boundsMidPoint": "-0.06237829 0 0.99805266",
+            "hullCount": -161.68452,
+            "firstHull": 501.02246
+        },
+        {
+            "boundsMidPoint": "0.18428853 0.9828721 -0",
+            "hullCount": -1108.6798,
+            "firstHull": 520.92224
+        },
+        {
+            "boundsMidPoint": "-0.06237829 0 0.99805266",
+            "hullCount": -165.67673,
+            "firstHull": 505.01462
+        },
+        {
+            "boundsMidPoint": "-0.062378287 0.9980526 0",
+            "hullCount": -1022.00586,
+            "firstHull": 524.9757
+        },
+        {
+            "boundsMidPoint": "-0.49026123 0 0.87157553",
+            "hullCount": -66.23976,
+            "firstHull": 456.70563
+        },
+        {
+            "boundsMidPoint": "0.40081882 0.91615736 -0",
+            "hullCount": -1040.7548,
+            "firstHull": 485.56345
+        },
+        {
+            "boundsMidPoint": "-0.24253564 0 0.97014254",
+            "hullCount": -141.64081,
+            "firstHull": 519.9964
+        },
+        {
+            "boundsMidPoint": "-0.40081882 0.91615736 0",
+            "hullCount": -1002.2762,
+            "firstHull": 472.73724
+        },
+        {
+            "boundsMidPoint": "-0.24253562 0 0.9701425",
+            "hullCount": -190.14793,
+            "firstHull": 533.57837
+        },
+        {
+            "boundsMidPoint": "-0.40081882 0.91615736 0",
+            "hullCount": -1027.9286,
+            "firstHull": 498.38965
+        },
+        {
+            "boundsMidPoint": "0.4902613 0.8715756 -0",
+            "hullCount": -732.1235,
+            "firstHull": 493.3118
+        },
+        {
+            "boundsMidPoint": "-0.18428855 0 0.98287225",
+            "hullCount": -172.98549,
+            "firstHull": 593.65485
+        },
+        {
+            "boundsMidPoint": "0.4472136 0.8944272 -0",
+            "hullCount": -724.48596,
+            "firstHull": 491.9349
+        },
+        {
+            "boundsMidPoint": "0.18428853 0.9828721 0",
+            "hullCount": -931.7628,
+            "firstHull": 509.1278
+        },
+        {
+            "boundsMidPoint": "-0.12403473 0 0.99227786",
+            "hullCount": -186.54826,
+            "firstHull": 621.16595
+        },
+        {
+            "boundsMidPoint": "0.062378287 0.9980526 -0",
+            "hullCount": -988.0721,
+            "firstHull": 518.98737
+        },
+        {
+            "boundsMidPoint": "-0.24253564 0 0.97014254",
+            "hullCount": -339.5499,
+            "firstHull": 554.9215
+        },
+        {
+            "boundsMidPoint": "-0.18428855 0 0.98287225",
+            "hullCount": -178.88274,
+            "firstHull": 599.55206
+        },
+        {
+            "boundsMidPoint": "0.4472136 0.8944272 -0",
+            "hullCount": -710.1752,
+            "firstHull": 477.6241
+        },
+        {
+            "boundsMidPoint": "0.298275 0.95448 -0",
+            "hullCount": -868.5768,
+            "firstHull": 523.05505
+        },
+        {
+            "boundsMidPoint": "-0.40081882 0.91615736 0",
+            "hullCount": -1040.7548,
+            "firstHull": 511.21582
+        },
+        {
+            "boundsMidPoint": "-0.18428855 0 0.9828722",
+            "hullCount": -174.95125,
+            "firstHull": 532.71674
+        },
+        {
+            "boundsMidPoint": "-0.40081882 0.91615736 0",
+            "hullCount": -1015.10236,
+            "firstHull": 485.56342
+        },
+        {
+            "boundsMidPoint": "-0.12403474 0 0.9922779",
+            "hullCount": -148.84167,
+            "firstHull": 523.9227
+        },
+        {
+            "boundsMidPoint": "0.40081882 0.91615736 -0",
+            "hullCount": -1027.9286,
+            "firstHull": 472.7372
+        },
+        {
+            "boundsMidPoint": "-0.12403473 0.99227786 0",
+            "hullCount": -1002.2006,
+            "firstHull": 525.9073
+        },
+        {
+            "boundsMidPoint": "-0.062378284 0 0.99805254",
+            "hullCount": -163.68062,
+            "firstHull": 503.0185
+        },
+        {
+            "boundsMidPoint": "-0.12403473 0 0.99227786",
+            "hullCount": -128.99612,
+            "firstHull": 496.13895
+        },
+        {
+            "boundsMidPoint": "0.35112345 0.9363292 -0",
+            "hullCount": -1151.6848,
+            "firstHull": 507.49042
+        },
+        {
+            "boundsMidPoint": "0.35112345 0.9363292 0",
+            "hullCount": -1166.6663,
+            "firstHull": 537.45294
+        },
+        {
+            "boundsMidPoint": "-0.12403473 0.99227786 0",
+            "hullCount": -893.0501,
+            "firstHull": 571.55206
+        },
+        {
+            "boundsMidPoint": "0.4902613 0.8715756 -0",
+            "hullCount": -1303.8771,
+            "firstHull": 517.71594
+        },
+        {
+            "boundsMidPoint": "-0.062378284 0 0.99805254",
+            "hullCount": -141.72345,
+            "firstHull": 485.05353
+        },
+        {
+            "boundsMidPoint": "0.40081882 0.91615736 0",
+            "hullCount": -1288.1172,
+            "firstHull": 571.6822
+        },
+        {
+            "boundsMidPoint": "0.4472136 0.8944272 -0",
+            "hullCount": -1347.0073,
+            "firstHull": 584.9553
+        },
+        {
+            "boundsMidPoint": "-0.062378287 0 0.9980526",
+            "hullCount": -127.75076,
+            "firstHull": 483.05746
+        },
+        {
+            "boundsMidPoint": "0.6305926 0.7761139 -0",
+            "hullCount": -1507.2134,
+            "firstHull": 537.07086
+        },
+        {
+            "boundsMidPoint": "0.35112345 0.9363292 -0",
+            "hullCount": -1282.771,
+            "firstHull": 623.5952
+        },
+        {
+            "boundsMidPoint": "0.56652886 0.82404196 -0",
+            "hullCount": -1483.2756,
+            "firstHull": 588.366
+        },
+        {
+            "boundsMidPoint": "0.4472136 0.8944272 -0",
+            "hullCount": -1393.5176,
+            "firstHull": 652.9318
+        },
+        {
+            "boundsMidPoint": "0.7848828 0.6196443 -0",
+            "hullCount": -1673.0397,
+            "firstHull": 475.88684
+        },
+        {
+            "boundsMidPoint": "-0.52999896 0.8479983 0",
+            "hullCount": -2874.7144,
+            "firstHull": 1117.6619
+        },
+        {
+            "boundsMidPoint": "-0.4472136 0.8944272 0",
+            "hullCount": -2459.6746,
+            "firstHull": 1160.9666
+        },
+        {
+            "boundsMidPoint": "-0.4472136 0.8944272 0",
+            "hullCount": -2445.3638,
+            "firstHull": 1146.6558
+        },
+        {
+            "boundsMidPoint": "-0.12403474 0 0.9922779",
+            "hullCount": -601.32043,
+            "firstHull": 682.68713
+        },
+        {
+            "boundsMidPoint": "-0.6 0.8 0",
+            "hullCount": -3140.8,
+            "firstHull": 1012.80005
+        },
+        {
+            "boundsMidPoint": "-0.24253564 0 0.97014254",
+            "hullCount": -1162.2307,
+            "firstHull": 663.5776
+        },
+        {
+            "boundsMidPoint": "-0.12403473 0.99227786 0",
+            "hullCount": -914.8802,
+            "firstHull": 1232.4092
+        },
+        {
+            "boundsMidPoint": "-0.44721362 0.89442724 0",
+            "hullCount": -2382.7544,
+            "firstHull": 1094.7789
+        },
+        {
+            "boundsMidPoint": "-0.062378284 0 0.99805254",
+            "hullCount": -303.40796,
+            "firstHull": 666.6991
+        },
+        {
+            "boundsMidPoint": "-0.65850466 0.7525767 0",
+            "hullCount": -3252.6367,
+            "firstHull": 898.57666
+        },
+        {
+            "boundsMidPoint": "-0.062378287 0 0.9980526",
+            "hullCount": -305.4041,
+            "firstHull": 668.69525
+        },
+        {
+            "boundsMidPoint": "-0.40081882 0.91615736 0",
+            "hullCount": -2163.9636,
+            "firstHull": 1106.718
+        },
+        {
+            "boundsMidPoint": "-0.7808688 0.62469506 0",
+            "hullCount": -3724.4316,
+            "firstHull": 728.3944
+        },
+        {
+            "boundsMidPoint": "0.12403474 0 0.9922779",
+            "hullCount": 515.98456,
+            "firstHull": 664.82623
+        },
+        {
+            "boundsMidPoint": "-0.298275 0.95448 0",
+            "hullCount": -1729.5177,
+            "firstHull": 1074.7445
+        },
+        {
+            "boundsMidPoint": "-0.298275 0.95448 0",
+            "hullCount": -1719.9729,
+            "firstHull": 1065.1997
+        },
+        {
+            "boundsMidPoint": "-0.12403474 0 0.9922779",
+            "hullCount": -537.8146,
+            "firstHull": 666.8108
+        },
+        {
+            "boundsMidPoint": "-0.298275 0.95448 0",
+            "hullCount": -1700.8833,
+            "firstHull": 1046.1101
+        },
+        {
+            "boundsMidPoint": "0.12403474 0 0.9922779",
+            "hullCount": 486.2162,
+            "firstHull": 666.8108
+        },
+        {
+            "boundsMidPoint": "-0.68394107 0.7295371 0",
+            "hullCount": -3174.9458,
+            "firstHull": 792.27747
+        },
+        {
+            "boundsMidPoint": "0.062378287 0 0.9980526",
+            "hullCount": 233.54433,
+            "firstHull": 672.6875
+        },
+        {
+            "boundsMidPoint": "-0.6305926 0.7761139 0",
+            "hullCount": -2960.0986,
+            "firstHull": 819.5763
+        },
+        {
+            "boundsMidPoint": "0.062378284 0 0.99805254",
+            "hullCount": 231.54819,
+            "firstHull": 674.6835
+        },
+        {
+            "boundsMidPoint": "-0.40081882 0.91615736 0",
+            "hullCount": -2096.168,
+            "firstHull": 943.6421
+        },
+        {
+            "boundsMidPoint": "0.062378284 0 0.99805254",
+            "hullCount": 229.55208,
+            "firstHull": 676.6796
+        },
+        {
+            "boundsMidPoint": "-0.40081882 0.91615736 0",
+            "hullCount": -2083.3418,
+            "firstHull": 930.8159
+        },
+        {
+            "boundsMidPoint": "0.12403473 0 0.99227786",
+            "hullCount": 464.386,
+            "firstHull": 676.7335
+        },
+        {
+            "boundsMidPoint": "-0.18428853 0.9828721 0",
+            "hullCount": -1269.8708,
+            "firstHull": 984.8379
+        },
+        {
+            "boundsMidPoint": "-0.74740934 0.66436386 0",
+            "hullCount": -3226.151,
+            "firstHull": 661.70654
+        },
+        {
+            "boundsMidPoint": "-0.68394107 0.7295371 0",
+            "hullCount": -3008.6108,
+            "firstHull": 695.9784
+        },
+        {
+            "boundsMidPoint": "-0.124034725 0 0.9922778",
+            "hullCount": -464.38605,
+            "firstHull": 676.73346
+        },
+        {
+            "boundsMidPoint": "-0.40081882 0.91615736 0",
+            "hullCount": -2065.0186,
+            "firstHull": 846.5295
+        },
+        {
+            "boundsMidPoint": "-0.062378284 0 0.99805254",
+            "hullCount": -237.5365,
+            "firstHull": 676.6796
+        },
+        {
+            "boundsMidPoint": "-0.24253562 0.9701425 0",
+            "hullCount": -1515.3627,
+            "firstHull": 882.8297
+        },
+        {
+            "boundsMidPoint": "0.062378284 0 0.99805254",
+            "hullCount": 205.59882,
+            "firstHull": 676.6796
+        },
+        {
+            "boundsMidPoint": "-0.6305926 0.7761139 0",
+            "hullCount": -2756.7568,
+            "firstHull": 700.0548
+        },
+        {
+            "boundsMidPoint": "-0.4902613 0.8715756 0",
+            "hullCount": -2328.85,
+            "firstHull": 747.8118
+        },
+        {
+            "boundsMidPoint": "-0.12403474 0 0.9922779",
+            "hullCount": -436.60226,
+            "firstHull": 672.7644
+        },
+        {
+            "boundsMidPoint": "-0.59999996 0.79999995 0",
+            "hullCount": -2636.7998,
+            "firstHull": 671.99994
+        },
+        {
+            "boundsMidPoint": "-0.18428855 0 0.9828722",
+            "hullCount": -634.9355,
+            "firstHull": 662.4559
+        },
+        {
+            "boundsMidPoint": "-0.4472136 0.8944272 0",
+            "hullCount": -2175.247,
+            "firstHull": 729.85266
+        },
+        {
+            "boundsMidPoint": "-0.18428853 0 0.9828722",
+            "hullCount": -629.0382,
+            "firstHull": 656.5586
+        },
+        {
+            "boundsMidPoint": "-0.18428853 0.9828721 0",
+            "hullCount": -1362.2609,
+            "firstHull": 786.2977
+        },
+        {
+            "boundsMidPoint": "-0.18428855 0 0.98287225",
+            "hullCount": -623.141,
+            "firstHull": 650.6615
+        },
+        {
+            "boundsMidPoint": "-0.56652886 0.82404196 0",
+            "hullCount": -2468.8298,
+            "firstHull": 654.28937
+        },
+        {
+            "boundsMidPoint": "-0.12403473 0 0.99227786",
+            "hullCount": -426.6795,
+            "firstHull": 650.93427
+        },
+        {
+            "boundsMidPoint": "-0.7282 0.6853647 0",
+            "hullCount": -2852.4878,
+            "firstHull": 529.1017
+        },
+        {
+            "boundsMidPoint": "0.062378287 0.9980526 0",
+            "hullCount": -636.75757,
+            "firstHull": 738.55896
+        },
+        {
+            "boundsMidPoint": "0.06237829 0 0.99805266",
+            "hullCount": 149.7079,
+            "firstHull": 652.72644
+        },
+        {
+            "boundsMidPoint": "-0.4472136 0.8944272 0",
+            "hullCount": -2100.115,
+            "firstHull": 661.87616
+        },
+        {
+            "boundsMidPoint": "-0.35112345 0.9363292 0",
+            "hullCount": -1835.2051,
+            "firstHull": 677.9023
+        },
+        {
+            "boundsMidPoint": "0.18428853 0.9828721 0",
+            "hullCount": -310.5876,
+            "firstHull": 705.7022
+        },
+        {
+            "boundsMidPoint": "-0.24253562 0.9701425 0",
+            "hullCount": -1515.3625,
+            "firstHull": 696.56226
+        },
+        {
+            "boundsMidPoint": "-0.6305926 0.7761139 0",
+            "hullCount": -2421.4756,
+            "firstHull": 551.0409
+        },
+        {
+            "boundsMidPoint": "0.12403473 0 0.99227786",
+            "hullCount": 297.68335,
+            "firstHull": 652.9188
+        },
+        {
+            "boundsMidPoint": "0.24253562 0.9701425 0",
+            "hullCount": -205.67023,
+            "firstHull": 671.3386
+        },
+        {
+            "boundsMidPoint": "-0.062378287 0 0.9980526",
+            "hullCount": -197.6144,
+            "firstHull": 656.7186
+        },
+        {
+            "boundsMidPoint": "-0.4902613 0.8715756 0",
+            "hullCount": -2065.6343,
+            "firstHull": 603.13043
+        },
+        {
+            "boundsMidPoint": "-0.062378287 0 0.9980526",
+            "hullCount": -195.61832,
+            "firstHull": 654.72253
+        },
+        {
+            "boundsMidPoint": "-0.298275 0.95448 0",
+            "hullCount": -1626.4338,
+            "firstHull": 643.3195
+        },
+        {
+            "boundsMidPoint": "-0.12403473 0 0.99227786",
+            "hullCount": -349.28183,
+            "firstHull": 648.9497
+        },
+        {
+            "boundsMidPoint": "-0.6305926 0.7761139 0",
+            "hullCount": -2295.745,
+            "firstHull": 515.33966
+        },
+        {
+            "boundsMidPoint": "-0.062378287 0 0.9980526",
+            "hullCount": -193.62222,
+            "firstHull": 648.73425
+        },
+        {
+            "boundsMidPoint": "-0.6305926 0.7761139 0",
+            "hullCount": -2275.5662,
+            "firstHull": 495.1607
+        },
+        {
+            "boundsMidPoint": "-0.12403473 0 0.99227786",
+            "hullCount": -339.35904,
+            "firstHull": 642.9961
+        },
+        {
+            "boundsMidPoint": "-0.6305926 0.7761139 0",
+            "hullCount": -2255.3872,
+            "firstHull": 474.98175
+        },
+        {
+            "boundsMidPoint": "-0.35112345 0.9363292 0",
+            "hullCount": -1739.6997,
+            "firstHull": 548.68896
+        },
+        {
+            "boundsMidPoint": "-0.56652886 0.82404196 0",
+            "hullCount": -2106.2515,
+            "firstHull": 473.00012
+        },
+        {
+            "boundsMidPoint": "-0.12403473 0 0.99227786",
+            "hullCount": -319.5135,
+            "firstHull": 639.0269
+        },
+        {
+            "boundsMidPoint": "-0.24253562 0.9701425 0",
+            "hullCount": -1521.1835,
+            "firstHull": 535.5187
+        },
+        {
+            "boundsMidPoint": "-0.18428853 0 0.9828722",
+            "hullCount": -383.32013,
+            "firstHull": 678.1818
+        },
+        {
+            "boundsMidPoint": "-0.298275 0.95448005 0",
+            "hullCount": -1592.0726,
+            "firstHull": 524.964
+        },
+        {
+            "boundsMidPoint": "-0.18428853 0 0.9828722",
+            "hullCount": -377.4229,
+            "firstHull": 672.2846
+        },
+        {
+            "boundsMidPoint": "0.5665288 0.82404184 -0",
+            "hullCount": 276.87814,
+            "firstHull": 463.11154
+        },
+        {
+            "boundsMidPoint": "-0.12403474 0 0.9922779",
+            "hullCount": -254.02315,
+            "firstHull": 672.76447
+        },
+        {
+            "boundsMidPoint": "-0.18428853 0.9828722 0",
+            "hullCount": -1348.5006,
+            "firstHull": 552.37415
+        },
+        {
+            "boundsMidPoint": "-0.35112345 0.9363292 0",
+            "hullCount": -1610.4862,
+            "firstHull": 520.599
+        },
+        {
+            "boundsMidPoint": "-0.124034725 0.9922778 0",
+            "hullCount": -1242.3318,
+            "firstHull": 539.7992
+        },
+        {
+            "boundsMidPoint": "-0.12403474 0.9922779 0",
+            "hullCount": -1226.4556,
+            "firstHull": 523.9227
+        },
+        {
+            "boundsMidPoint": "-0.12403474 0.9922779 0",
+            "hullCount": -1234.3937,
+            "firstHull": 531.86096
+        },
+        {
+            "boundsMidPoint": "0.12403474 0.9922779 -0",
+            "hullCount": -829.5443,
+            "firstHull": 531.86096
+        },
+        {
+            "boundsMidPoint": "0.124034725 0.9922778 -0",
+            "hullCount": -833.51337,
+            "firstHull": 535.83
+        },
+        {
+            "boundsMidPoint": "-0.18428853 0 0.9828722",
+            "hullCount": -292.89594,
+            "firstHull": 662.4559
+        },
+        {
+            "boundsMidPoint": "0.49026126 0.87157553 -0",
+            "hullCount": -174.31512,
+            "firstHull": 486.33917
+        },
+        {
+            "boundsMidPoint": "-0.35112342 0 0.9363291",
+            "hullCount": -571.16077,
+            "firstHull": 580.52405
+        },
+        {
+            "boundsMidPoint": "0.298275 0.95448 -0",
+            "hullCount": -563.1432,
+            "firstHull": 523.05505
+        },
+        {
+            "boundsMidPoint": "-0.24253562 0 0.9701425",
+            "hullCount": -413.2807,
+            "firstHull": 589.8466
+        },
+        {
+            "boundsMidPoint": "-0.18428852 0 0.9828721",
+            "hullCount": -330.245,
+            "firstHull": 589.72327
+        },
+        {
+            "boundsMidPoint": "-0.35112345 0.9363292 0",
+            "hullCount": -1415.7297,
+            "firstHull": 513.1084
+        },
+        {
+            "boundsMidPoint": "-0.12403474 0 0.9922779",
+            "hullCount": -250.05402,
+            "firstHull": 589.4131
+        },
+        {
+            "boundsMidPoint": "-0.12403474 0.9922779 0",
+            "hullCount": -1178.8262,
+            "firstHull": 531.8609
+        },
+        {
+            "boundsMidPoint": "-0.2425356 0.9701424 0",
+            "hullCount": -1292.2297,
+            "firstHull": 516.1157
+        },
+        {
+            "boundsMidPoint": "-0.18428853 0 0.9828722",
+            "hullCount": -261.444,
+            "firstHull": 623.141
+        },
+        {
+            "boundsMidPoint": "-0.12403474 0.9922779 0",
+            "hullCount": -1164.9343,
+            "firstHull": 510.03088
+        },
+        {
+            "boundsMidPoint": "-0.062378284 0 0.99805254",
+            "hullCount": -127.7507,
+            "firstHull": 626.777
+        },
+        {
+            "boundsMidPoint": "-0.062378287 0.9980526 0",
+            "hullCount": -1111.8306,
+            "firstHull": 518.98737
+        },
+        {
+            "boundsMidPoint": "-0.18428853 0 0.9828721",
+            "hullCount": -880.65344,
+            "firstHull": 664.4215
+        },
+        {
+            "boundsMidPoint": "-0.40081882 0.9161573 0",
+            "hullCount": -2187.7837,
+            "firstHull": 1134.2028
+        },
+        {
+            "boundsMidPoint": "-0.12403473 0 0.99227786",
+            "hullCount": 119.07333,
+            "firstHull": 402.86484
+        },
+        {
+            "boundsMidPoint": "0.4472136 0.8944272 0",
+            "hullCount": -1474.016,
+            "firstHull": 1402.4618
+        },
+        {
+            "boundsMidPoint": "-0.24253562 0.9701425 0",
+            "hullCount": -1237.9019,
+            "firstHull": 492.8324
+        },
+        {
+            "boundsMidPoint": "-0.24253562 0.9701425 0",
+            "hullCount": -1230.1406,
+            "firstHull": 485.07123
+        },
+        {
+            "boundsMidPoint": "-0.29827502 0.95448005 0",
+            "hullCount": -1231.2793,
+            "firstHull": 503.96548
+        },
+        {
+            "boundsMidPoint": "0.24253562 0.9701425 0",
+            "hullCount": -873.1283,
+            "firstHull": 485.0713
+        },
+        {
+            "boundsMidPoint": "-0.35112345 0.9363292 0",
+            "hullCount": -1241.5725,
+            "firstHull": 485.01855
+        },
+        {
+            "boundsMidPoint": "-0.14142135 0.9899494 0",
+            "hullCount": -1144.6644,
+            "firstHull": 524.6732
+        },
+        {
+            "boundsMidPoint": "0.40613845 0.9138115 -0",
+            "hullCount": -612.2537,
+            "firstHull": 484.32013
+        },
+        {
+            "boundsMidPoint": "0.18428855 0.98287225 -0",
+            "hullCount": -925.8656,
+            "firstHull": 503.23056
+        },
+        {
+            "boundsMidPoint": "-0.24253562 0.9701425 0",
+            "hullCount": -1499.8403,
+            "firstHull": 541.3396
+        },
+        {
+            "boundsMidPoint": "0.8320503 0.5547002 0",
+            "hullCount": 1189.2773,
+            "firstHull": 328.3825
+        },
+        {
+            "boundsMidPoint": "-0.12403474 0 0.9922779",
+            "hullCount": 559.6448,
+            "firstHull": 53.583023
+        },
+        {
+            "boundsMidPoint": "0.062378284 0.99805254 -0",
+            "hullCount": -1.9960938,
+            "firstHull": 520.9834
+        },
+        {
+            "boundsMidPoint": "0.24253564 0 -0.97014254",
+            "hullCount": -551.041,
+            "firstHull": 52.387726
+        },
+        {
+            "boundsMidPoint": "-0.24253564 0 0.97014254",
+            "hullCount": -56.26828,
+            "firstHull": 554.9215
+        },
+        {
+            "boundsMidPoint": "0.7372721 -0.67559606 0",
+            "hullCount": -0.3686447,
+            "firstHull": 64.00001
+        },
+        {
+            "boundsMidPoint": "0.67559594 0.737272 0",
+            "hullCount": -0.33779526,
+            "firstHull": 71.999985
+        },
+        {
+            "boundsMidPoint": "0.737272 -0.675596 0",
+            "hullCount": -0.36863613,
+            "firstHull": 8.004858
+        },
+        {
+            "boundsMidPoint": "0.675596 0.737272 0",
+            "hullCount": -0.33779812,
+            "firstHull": 8.004858
+        },
+        {
+            "boundsMidPoint": "0.7372721 -0.67559606 0",
+            "hullCount": -0.36863327,
+            "firstHull": 31.999996
+        },
+        {
+            "boundsMidPoint": "0.67559606 0.7372721 0",
+            "hullCount": -0.3377962,
+            "firstHull": 31.999996
+        },
+        {
+            "boundsMidPoint": "0.7372721 -0.67559606 0",
+            "hullCount": -0.36863613,
+            "firstHull": 8.004859
+        },
+        {
+            "boundsMidPoint": "0.67559606 0.7372721 0",
+            "hullCount": -0.33779764,
+            "firstHull": 8.004858
+        },
+        {
+            "boundsMidPoint": "-0.70710677 0.70710677 0",
+            "hullCount": -0.17677689,
+            "firstHull": 39.59798
+        },
+        {
+            "boundsMidPoint": "0.70710677 0.70710677 0",
+            "hullCount": -0.17677689,
+            "firstHull": 39.59798
+        }
+    ],
+    "spawnVars": [
+        {
+            "modelIndex": 0,
+            "origin": "1.3062e-41 2787 117",
+            "angles": "442 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "2787 117 442",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_elevation_small_room",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.3063e-41 1196 244",
+            "angles": "393 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "1196 244 393",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_elevation_small_room",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.3064e-41 991 1552",
+            "angles": "343 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "991 1552 343",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_elevation_out_stairs",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.3066e-41 63 -574",
+            "angles": "163 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "63 -574 163",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_elevation_small_room",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.3067e-41 -87 -979",
+            "angles": "163 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-87 -979 163",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_elevation_small_room",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.3069e-41 -460 -432",
+            "angles": "136 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-460 -432 136",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_elevation_hallway",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.307e-41 -1072 27",
+            "angles": "129 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-1072 27 129",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_elevation_small_room",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.3071e-41 -915 796",
+            "angles": "129 0 0",
+            "spawnVars": [
+                {
+                    "key": "CLIENTSIDE_TRIGGER",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-915 796 129",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientpriority",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_ambientroom",
+                    "type": "string",
+                    "value": "mp_elevation_small_room",
+                    "unk1a": true
+                },
+                {
+                    "key": "spawnflags",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "ambient_package",
+                    "unk1a": true
+                },
+                {
+                    "key": "variantName",
+                    "type": "string",
+                    "value": "sound_amb_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.3073e-41 -736 -1016",
+            "angles": "100 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-736 -1016 100",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "koth_zone_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.3074e-41 5 1216",
+            "angles": "312 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "5 1216 312",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "koth_zone_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.3076e-41 124 -18",
+            "angles": "136 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "124 -18 136",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "koth_zone_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.3077e-41 1201 206",
+            "angles": "421 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "1201 206 421",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "koth_zone_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.3078e-41 -740 -960",
+            "angles": "100 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-740 -960 100",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "control_zone_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.308e-41 124 -18",
+            "angles": "136 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "124 -18 136",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "control_zone_trigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "1.3081e-41 2755 992",
+            "angles": "381 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "2755 992 381"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_multiple_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "sd",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "sd_bomb_pickup_trig",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.269e-41 1740 -282",
+            "angles": "374 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "1740 -282 374"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "accumulate",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_damage_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "snd_bell",
+                    "unk1a": true
+                },
+                {
+                    "key": "threshold",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.8506e-41 3296 -1312",
+            "angles": "-248 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "3296 -1312 -248"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_hurt_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "dmg",
+                    "type": "string",
+                    "value": "1000",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_hazard",
+                    "type": "string",
+                    "value": "false",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.8507e-41 6912 3584",
+            "angles": "-128 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "6912 3584 -128"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_hurt_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "dmg",
+                    "type": "string",
+                    "value": "1000",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_hazard",
+                    "type": "string",
+                    "value": "false",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.8509e-41 512 -2080",
+            "angles": "-336 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "512 -2080 -336"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_hurt_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "dmg",
+                    "type": "string",
+                    "value": "1000",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_hazard",
+                    "type": "string",
+                    "value": "false",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.851e-41 -1280 -1568",
+            "angles": "-336 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-1280 -1568 -336"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_hurt_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "dmg",
+                    "type": "string",
+                    "value": "1000",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_hazard",
+                    "type": "string",
+                    "value": "false",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.8512e-41 -3840 -4352",
+            "angles": "-428 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_hurt_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "dmg",
+                    "type": "string",
+                    "value": "1000",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-3840 -4352 -428",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_hazard",
+                    "type": "string",
+                    "value": "false",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.8513e-41 -2304 -4744",
+            "angles": "-360 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_hurt_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "dmg",
+                    "type": "string",
+                    "value": "1000",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-2304 -4744 -360",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_hazard",
+                    "type": "string",
+                    "value": "false",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.8514e-41 0 0",
+            "angles": "-608 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_hurt_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "dmg",
+                    "type": "string",
+                    "value": "1000",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "0 0 -608",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_hazard",
+                    "type": "string",
+                    "value": "false",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.8516e-41 0 0",
+            "angles": "62048 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "0 0 62048"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_hurt_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "dmg",
+                    "type": "string",
+                    "value": "1000",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_hazard",
+                    "type": "string",
+                    "value": "false",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.8517e-41 32 -62784",
+            "angles": "192 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "32 -62784 192"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_hurt_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "dmg",
+                    "type": "string",
+                    "value": "1000",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_hazard",
+                    "type": "string",
+                    "value": "false",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.8519e-41 32 62528",
+            "angles": "192 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "32 62528 192"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_hurt_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "dmg",
+                    "type": "string",
+                    "value": "1000",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_hazard",
+                    "type": "string",
+                    "value": "false",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.852e-41 64000 -256",
+            "angles": "192 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "64000 -256 192"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_hurt_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "dmg",
+                    "type": "string",
+                    "value": "1000",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_hazard",
+                    "type": "string",
+                    "value": "false",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.8521e-41 -63936 -256",
+            "angles": "192 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-63936 -256 192"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_hurt_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "dmg",
+                    "type": "string",
+                    "value": "1000",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_hazard",
+                    "type": "string",
+                    "value": "false",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.8524e-41 -4291 768",
+            "angles": "-32 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "ENTITY_VEHICLE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_out_of_bounds_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-4291 768 -32",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.8526e-41 3070 1488",
+            "angles": "-32 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "ENTITY_VEHICLE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_out_of_bounds_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "3070 1488 -32",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.8527e-41 4408 624",
+            "angles": "-32 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "ENTITY_VEHICLE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_out_of_bounds_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "4408 624 -32",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.8528e-41 4004 -352",
+            "angles": "-32 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "ENTITY_VEHICLE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_out_of_bounds_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "4004 -352 -32",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.853e-41 3103 571",
+            "angles": "-24 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "3103 571 -24"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "ENTITY_VEHICLE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_out_of_bounds_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "mco(t8_lv8_wood_trim_painted_02)::colorTint",
+                    "type": "string",
+                    "value": "mp_elevation_red_03",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.8531e-41 32 -1056",
+            "angles": "-334 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "ENTITY_VEHICLE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_out_of_bounds_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "32 -1056 -334",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "4.8533e-41 928 -2102",
+            "angles": "-402 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "ENTITY_VEHICLE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0 1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_out_of_bounds_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "928 -2102 -402",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "5.1904e-41 -577 -795",
+            "angles": "6 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-577 -795 6"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "0.3 0.5 0.8",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_use_touch_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "cursorhint",
+                    "type": "string",
+                    "value": "HINT_ACTIVATE",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_bombmode_original",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "bombzone",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_label",
+                    "type": "string",
+                    "value": "_a",
+                    "unk1a": true
+                },
+                {
+                    "key": "target",
+                    "type": "string",
+                    "value": "pf83281E1E_auto1",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "bombzone",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "5.1905e-41 -577 -795",
+            "angles": "6 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-577 -795 6"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "0.3 0.5 0.8",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_use_touch_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "cursorhint",
+                    "type": "string",
+                    "value": "HINT_ACTIVATE",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "bombzone",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "pf83281E1E_auto2",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "5.1907e-41 -760 1391",
+            "angles": "200 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-760 1391 200"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "0.3 0.5 0.8",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_use_touch_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "cursorhint",
+                    "type": "string",
+                    "value": "HINT_ACTIVATE",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_bombmode_original",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "bombzone",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_label",
+                    "type": "string",
+                    "value": "_b",
+                    "unk1a": true
+                },
+                {
+                    "key": "target",
+                    "type": "string",
+                    "value": "pf1187BDCA_auto1",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "bombzone",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "5.1908e-41 -760 1391",
+            "angles": "200 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-760 1391 200"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "0.3 0.5 0.8",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_use_touch_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "cursorhint",
+                    "type": "string",
+                    "value": "HINT_ACTIVATE",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "bombzone",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "pf1187BDCA_auto2",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "5.191e-41 4104 1395",
+            "angles": "526 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "4104 1395 526"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_use_touch_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "bombzone",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "bombtrigger",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "5.1911e-41 2276 634",
+            "angles": "424 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "2276 634 424"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "0.3 0.5 0.8",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_use_touch_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "cursorhint",
+                    "type": "string",
+                    "value": "HINT_ACTIVATE",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "escort",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "escort_robot_reboot_trig",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "5.2184e-41 895 71",
+            "angles": "141 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "895 71 141"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "info_volume",
+                    "unk1a": true
+                },
+                {
+                    "key": "client_server",
+                    "type": "string",
+                    "value": "ServerSide",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "vol_tregion_lane_1",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "5.2186e-41 910 -1008",
+            "angles": "141 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "910 -1008 141"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "info_volume",
+                    "unk1a": true
+                },
+                {
+                    "key": "client_server",
+                    "type": "string",
+                    "value": "ServerSide",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "vol_tregion_lane_0",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "5.2187e-41 813 1174",
+            "angles": "141 0 0",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "813 1174 141"
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "info_volume",
+                    "unk1a": true
+                },
+                {
+                    "key": "client_server",
+                    "type": "string",
+                    "value": "ServerSide",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "vol_tregion_lane_2",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "5.1569e-41 1506 877.75",
+            "angles": "376 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_radius_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "height",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "1506 878 376",
+                    "unk1a": true
+                },
+                {
+                    "key": "radius",
+                    "type": "string",
+                    "value": "90",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "dom onslaught",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "flag_trigger_a",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "5.157e-41 -1502.25 -155.219",
+            "angles": "-8.5462 0 0",
+            "spawnVars": [
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 0 0"
+                },
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_radius_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "height",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-1502 -155 -9",
+                    "unk1a": true
+                },
+                {
+                    "key": "radius",
+                    "type": "string",
+                    "value": "90",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "dom onslaught",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "flag_trigger_c",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "5.1572e-41 -79.1466 115.495",
+            "angles": "43.1798 355.44598 0.24706355",
+            "spawnVars": [
+                {
+                    "key": "TEAM_ALLIES",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_AXIS",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_NEUTRAL",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "TEAM_THREE",
+                    "type": "string",
+                    "value": "1",
+                    "unk1a": true
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "355 0 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_radius_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "height",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-79 115 43",
+                    "unk1a": true
+                },
+                {
+                    "key": "radius",
+                    "type": "string",
+                    "value": "120",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "dom onslaught",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "flag_trigger_b",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "5.1573e-41 -1625 266",
+            "angles": "-32.5 0 269.99997",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "-1625 266 -32"
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 270 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_radius_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "height",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "radius",
+                    "type": "string",
+                    "value": "120",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "escort",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "escort_robot_goal_trig",
+                    "unk1a": true
+                }
+            ]
+        },
+        {
+            "modelIndex": 0,
+            "origin": "5.1575e-41 2278 631.5",
+            "angles": "376 0 269.99997",
+            "spawnVars": [
+                {
+                    "key": "origin",
+                    "type": "vector",
+                    "value": "2278 632 376"
+                },
+                {
+                    "key": "_color",
+                    "type": "string",
+                    "value": "1 0.3 0.1",
+                    "unk1a": true
+                },
+                {
+                    "key": "angles",
+                    "type": "vector",
+                    "value": "0 270 0",
+                    "unk1a": true
+                },
+                {
+                    "key": "classname",
+                    "type": "string",
+                    "value": "trigger_radius_new",
+                    "unk1a": true
+                },
+                {
+                    "key": "footprint_mask_group",
+                    "type": "string",
+                    "value": "default",
+                    "unk1a": true
+                },
+                {
+                    "key": "height",
+                    "type": "string",
+                    "value": "128",
+                    "unk1a": true
+                },
+                {
+                    "key": "radius",
+                    "type": "string",
+                    "value": "180",
+                    "unk1a": true
+                },
+                {
+                    "key": "script_gameobjectname",
+                    "type": "string",
+                    "value": "escort",
+                    "unk1a": true
+                },
+                {
+                    "key": "targetname",
+                    "type": "string",
+                    "value": "escort_robot_move_trig",
+                    "unk1a": true
+                }
+            ]
+        }
+    ]
+}

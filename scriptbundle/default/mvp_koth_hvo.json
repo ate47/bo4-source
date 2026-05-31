@@ -39,35 +39,35 @@
     ],
     "statsarray": [
         {
-            "hash_233a23b6": 1,
-            "hash_82670522": "stats_ekia",
+            "hash_1544dcc6127aa440:hash_233a23b6": 1,
+            "playerstatsliststatname": "stats_ekia",
             "stattype": "playerstatslist",
-            "hash_26568428": 1,
+            "statweight": 1,
             "displaystatname": "localized17#hash_2391441b1e8929a5"
         },
         {
-            "hash_233a23b6": 1,
+            "hash_1544dcc6127aa440:hash_233a23b6": 1,
             "stattype": "objectiveekia",
-            "hash_26568428": 1,
+            "statweight": 1,
             "displaystatname": "localized17#hash_5d1ab6f5e0227795"
         },
         {
-            "hash_233a23b6": 1,
+            "hash_1544dcc6127aa440:hash_233a23b6": 1,
             "stattype": "damagedone",
-            "hash_26568428": 1,
+            "statweight": 1,
             "displaystatname": "localized17#hash_7d5bfb6a433e4d37"
         },
         {
-            "hash_233a23b6": 1,
-            "hash_82670522": "stats_shutdowns",
+            "hash_1544dcc6127aa440:hash_233a23b6": 1,
+            "playerstatsliststatname": "stats_shutdowns",
             "stattype": "playerstatslist",
-            "hash_26568428": 1,
+            "statweight": 1,
             "displaystatname": "localized17#hash_158193577a14c86e"
         },
         {
-            "hash_233a23b6": 1,
+            "hash_1544dcc6127aa440:hash_233a23b6": 1,
             "stattype": "objectivetime",
-            "hash_26568428": 1,
+            "statweight": 1,
             "displaystatname": "localized17#hash_646cc2b52d248258"
         }
     ],

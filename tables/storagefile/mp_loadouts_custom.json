@@ -1,5 +1,16 @@
 {
-    "name": "#mp_loadouts_custom",
     "nameStr": "mp_loadouts_custom",
-    "ddl": "#gamedata/ddl/generated/mp_loadouts_custom.ddl"
+    "name": "#mp_loadouts_custom",
+    "ddlPath": "#gamedata/ddl/generated/mp_loadouts_custom.ddl",
+    "files": [
+        {
+            "fileName": "mp_loadouts_custom"
+        }
+    ],
+    "size": 20480,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

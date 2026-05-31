@@ -1,12 +1,9 @@
 {
     "name": "#wz_rank_07",
-    "shortNameRef": "#",
     "fullNameRef": "#hash_7fb86910f7d83fb0",
-    "ingameNameRef": "#",
-    "iconName": "#hash_483fdb52aa691c0c",
-    "iconNameLarge": "#hash_4fb08ef6440d3d98",
     "level": 7,
     "minXp": 12000,
     "maxXp": 14500,
-    "rewards": []
+    "icon": "#ui_icon_rank_wz_level07",
+    "iconLarge": "#ui_icon_rank_wz_level07_large"
 }

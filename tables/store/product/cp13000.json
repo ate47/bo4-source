@@ -2,10 +2,13 @@
     "name": "#cp13000",
     "blackMarketName": "#hash_7255d1169436847",
     "blackMarketDesc": "#hash_31dd23f85cd94ed9",
-    "entitlementNameXHash": "#",
+    "productName": "#hash_5a4705083d51caad",
+    "productDesc": "#menu/store_cod_points",
+    "previewImage": "#ui_menu_store_product_b04_cp_13000_small",
+    "productImage": "#ui_menu_store_product_b04_cp_13000_small",
+    "blackMarketImage": "#ui_icon_blackmarket_cp13000_case",
     "productID": "43756",
-    "previewImageName": "hash_9177c507e88ab15",
-    "productImageName": "hash_9177c507e88ab15",
-    "blackMarketImageName": "hash_7cdba04b4ecb71ec",
-    "visibility": true
+    "visibility": true,
+    "unka2": true,
+    "unka3": true
 }

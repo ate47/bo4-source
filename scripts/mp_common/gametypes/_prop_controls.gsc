@@ -281,13 +281,13 @@ function propcontrolshud()
     }
     
     self.abilitykey = addupperrighthudelem();
-    self.clonekey = addupperrighthudelem( #"hash_2f560292a2fb7eab" );
+    self.clonekey = addupperrighthudelem( #"mp_ph_clone" );
     self.changepropkey = addupperrighthudelem( #"mp_ph_change", 0 );
     self.currenthudy -= 20;
-    self.var_8e3b5c8c = addupperrighthudelem( #"hash_fb73fdc2aff963f" );
-    self.matchslopekey = addupperrighthudelem( #"hash_7f59350f5f223501", undefined, undefined, #"hash_4c7fbb5c1ccd5107" );
+    self.hidepropkey = addupperrighthudelem( #"mp_ph_hideprop" );
+    self.matchslopekey = addupperrighthudelem( #"mp_ph_slope", undefined, undefined, #"mp_ph_slope_pc" );
     self.lockpropkey = addupperrighthudelem( #"mp_ph_lock" );
-    self.spinpropkey = addupperrighthudelem( #"mp_ph_spin", undefined, undefined, #"hash_39e61050ab8d325e" );
+    self.spinpropkey = addupperrighthudelem( #"mp_ph_spin", undefined, undefined, #"mp_ph_spin_pc" );
     self setnewabilityhud();
     self.zoomkey = addupperrighthudelem( #"mp_ph_zoom" );
     self thread updatetextongamepadchange();
@@ -334,7 +334,7 @@ function cleanuppropcontrolshud()
     self.zoomkey = undefined;
     self.spectatekey = undefined;
     self.clonekey = undefined;
-    self.var_8e3b5c8c = undefined;
+    self.hidepropkey = undefined;
 }
 
 // Namespace prop_controls/_prop_controls
@@ -366,11 +366,11 @@ function updatetextongamepadchange()
             {
                 if ( !( isdefined( self.slopelocked ) && self.slopelocked ) )
                 {
-                    self.matchslopekey.label = #"hash_7f59350f5f223501";
+                    self.matchslopekey.label = #"mp_ph_slope";
                 }
                 else
                 {
-                    self.matchslopekey.label = #"hash_6ca8e1ea720ba9f";
+                    self.matchslopekey.label = #"mp_ph_sloped";
                 }
                 
                 self.spinpropkey.label = #"mp_ph_spin";
@@ -379,14 +379,14 @@ function updatetextongamepadchange()
             {
                 if ( !( isdefined( self.slopelocked ) && self.slopelocked ) )
                 {
-                    self.matchslopekey.label = #"hash_4c7fbb5c1ccd5107";
+                    self.matchslopekey.label = #"mp_ph_slope_pc";
                 }
                 else
                 {
-                    self.matchslopekey.label = #"hash_3cd8ecbf9f39b3e9";
+                    self.matchslopekey.label = #"mp_ph_sloped_pc";
                 }
                 
-                self.spinpropkey.label = #"hash_39e61050ab8d325e";
+                self.spinpropkey.label = #"mp_ph_spin_pc";
             }
         }
         
@@ -731,11 +731,11 @@ function propmatchslope()
         {
             if ( self is_player_gamepad_enabled() )
             {
-                self.matchslopekey.label = #"hash_6ca8e1ea720ba9f";
+                self.matchslopekey.label = #"mp_ph_sloped";
             }
             else
             {
-                self.matchslopekey.label = #"hash_3cd8ecbf9f39b3e9";
+                self.matchslopekey.label = #"mp_ph_sloped_pc";
             }
         }
         
@@ -756,11 +756,11 @@ function propmatchslope()
     {
         if ( self is_player_gamepad_enabled() )
         {
-            self.matchslopekey.label = #"hash_7f59350f5f223501";
+            self.matchslopekey.label = #"mp_ph_slope";
             return;
         }
         
-        self.matchslopekey.label = #"hash_4c7fbb5c1ccd5107";
+        self.matchslopekey.label = #"mp_ph_slope_pc";
     }
 }
 
@@ -923,8 +923,8 @@ function set_pitch_roll_for_ground_normal( traceignore )
     new_angles = vectortoangles( groundnormal );
     pitch = angleclamp180( new_angles[ 0 ] + 90 );
     new_angles = ( 0, new_angles[ 1 ], 0 );
-    var_c13d4c82 = anglestoforward( new_angles );
-    mod = vectordot( var_c13d4c82, ovr );
+    nvf = anglestoforward( new_angles );
+    mod = vectordot( nvf, ovr );
     
     if ( mod < 0 )
     {
@@ -935,7 +935,7 @@ function set_pitch_roll_for_ground_normal( traceignore )
         mod = 1;
     }
     
-    dot = vectordot( var_c13d4c82, ovf );
+    dot = vectordot( nvf, ovf );
     newpitch = dot * pitch;
     newroll = ( 1 - abs( dot ) ) * pitch * mod;
     self.angles = ( newpitch, self.angles[ 1 ], newroll );
@@ -1550,7 +1550,7 @@ function flashenemies( var_c8c9bf0f = self, position = self.origin )
     fwd = vectornormalize( ( fwd[ 0 ], fwd[ 1 ], 0 ) );
     var_ec24ae95 = fwd * 60;
     spawn_pos = position + ( 0, 0, 10 ) + fwd * 30;
-    concuss = var_c8c9bf0f magicmissile( getweapon( #"hash_25d3ed64dda487d" ), spawn_pos, var_ec24ae95 );
+    concuss = var_c8c9bf0f magicmissile( getweapon( #"eq_slow_grenade_ph" ), spawn_pos, var_ec24ae95 );
 }
 
 // Namespace prop_controls/_prop_controls
@@ -2046,7 +2046,7 @@ function function_44a27dd6( issolid )
 {
     foreach ( player in level.players )
     {
-        if ( !player prop::function_84793f03() || !isalive( player ) )
+        if ( !player prop::ishunter() || !isalive( player ) )
         {
             continue;
         }
@@ -2132,7 +2132,7 @@ function propabilitykeysvisible( visible, override )
         safesetalpha( self.abilitykey, alphavalue );
         safesetalpha( self.clonekey, alphavalue );
         safesetalpha( self.zoomkey, alphavalue );
-        safesetalpha( self.var_8e3b5c8c, alphavalue );
+        safesetalpha( self.hidepropkey, alphavalue );
         
         if ( !( isdefined( level.nopropsspectate ) && level.nopropsspectate ) )
         {
@@ -2147,22 +2147,22 @@ function propabilitykeysvisible( visible, override )
 // Size: 0xe2
 function function_2b14e8b1()
 {
-    if ( !isdefined( self.var_b251eb4f ) )
+    if ( !isdefined( self.prophidden ) )
     {
-        self.var_b251eb4f = 1;
+        self.prophidden = 1;
     }
     else
     {
-        self.var_b251eb4f = !self.var_b251eb4f;
+        self.prophidden = !self.prophidden;
     }
     
-    if ( self.var_b251eb4f )
+    if ( self.prophidden )
     {
         self clientfield::set_to_player( "PROP.hide_prop", 1 );
         
         if ( prop::useprophudserver() )
         {
-            self.var_8e3b5c8c.label = #"hash_54ba1311175de71e";
+            self.hidepropkey.label = #"mp_ph_showprop";
         }
         
         return;
@@ -2172,7 +2172,7 @@ function function_2b14e8b1()
     
     if ( prop::useprophudserver() )
     {
-        self.var_8e3b5c8c.label = #"hash_fb73fdc2aff963f";
+        self.hidepropkey.label = #"mp_ph_hideprop";
     }
 }
 

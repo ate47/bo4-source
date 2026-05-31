@@ -410,11 +410,11 @@ function private function_c179676a()
         return;
     }
     
-    var_3ba4bf7d = self getweaponslistprimaries();
+    a_w_primaries = self getweaponslistprimaries();
     
-    if ( isdefined( var_3ba4bf7d[ 0 ] ) )
+    if ( isdefined( a_w_primaries[ 0 ] ) )
     {
-        self switchtoweaponimmediate( var_3ba4bf7d[ 0 ], 1 );
+        self switchtoweaponimmediate( a_w_primaries[ 0 ], 1 );
     }
     
     self waittill( #"fasttravel_finished" );

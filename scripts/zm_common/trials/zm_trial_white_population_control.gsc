@@ -61,7 +61,7 @@ function private on_begin( var_80bd7996, var_49d28bc1, var_5b932f42, var_a53dc29
     level flag::set( #"infinite_round_spawning" );
     level thread function_a4adaedb();
     level thread nuked_population_sign_think( n_base );
-    level thread function_8e69c85();
+    level thread monitor_trigger();
 }
 
 // Namespace zm_trial_white_population_control/zm_trial_white_population_control
@@ -92,7 +92,7 @@ function private on_end( round_reset )
 // Params 0, eflags: 0x4
 // Checksum 0x880a0416, Offset: 0x420
 // Size: 0x8c
-function private function_8e69c85()
+function private monitor_trigger()
 {
     level endon( #"hash_7646638df88a3656" );
     level.var_d76270a8 = spawn( "trigger_damage_new", ( -208, 530, -24 ), 1048576 | 2097152 | 8388608, 16, 16 );

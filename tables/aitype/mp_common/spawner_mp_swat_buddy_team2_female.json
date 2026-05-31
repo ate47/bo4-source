@@ -9,8 +9,8 @@
     "scoreType": "#human_lmg",
     "movementType": "#human",
     "spawnInfluencers": [
-        "#hash_1d35c27ce5c628ec",
-        "#hash_74915792bd5cfefd"
+        "#human_friendly",
+        "#human_enemy"
     ],
     "compassIcon": "#t7_hud_waypoints_compassping_friendly_mp",
     "typeSuffix": "_suppressor",
@@ -21,8 +21,12 @@
     "character": [
         "#hash_1b29a3225248de6"
     ],
+    "animMappingTables": [
+        "#hash_6425d08a8e28f140",
+        "#hash_23385eaadc2b3acb"
+    ],
     "aimTable": "#soldier_aim",
-    "footstepTable": "#hash_b008da66d91b8ad7",
+    "footstepTable": "#defaultnpcfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",

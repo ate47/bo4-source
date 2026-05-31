@@ -583,10 +583,10 @@ function lightning_bolt( weapon )
 // Size: 0x110
 function function_f911e261()
 {
-    var_2ed6f142 = self getweaponmuzzlepoint();
+    v_view_pos = self getweaponmuzzlepoint();
     v_forward = self getweaponforwarddir();
-    v_end = var_2ed6f142 + v_forward * 10000;
-    a_trace = bullettrace( var_2ed6f142, v_end, 0, self );
+    v_end = v_view_pos + v_forward * 10000;
+    a_trace = bullettrace( v_view_pos, v_end, 0, self );
     level notify( #"hero_weapon_hit", { #player:self, #e_entity:a_trace[ #"entity" ], #var_80e17549:self.currentweapon, #v_position:a_trace[ #"position" ] } );
 }
 

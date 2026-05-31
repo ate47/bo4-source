@@ -5,10 +5,10 @@
 
 // Namespace ct_recon_enemy_reinforcement
 // Method(s) 5 Total 12
-class class_27e8fec4 : cluielem
+class cct_recon_enemy_reinforcement : cluielem
 {
 
-    // Namespace namespace_27e8fec4/ct_recon_enemy_reinforcement
+    // Namespace cct_recon_enemy_reinforcement/ct_recon_enemy_reinforcement
     // Params 1
     // Checksum 0x7e07fdba, Offset: 0x240
     // Size: 0x24
@@ -17,7 +17,7 @@ class class_27e8fec4 : cluielem
         cluielem::close_luielem( player );
     }
 
-    // Namespace namespace_27e8fec4/ct_recon_enemy_reinforcement
+    // Namespace cct_recon_enemy_reinforcement/ct_recon_enemy_reinforcement
     // Params 2
     // Checksum 0x796bcc77, Offset: 0x1f0
     // Size: 0x44
@@ -26,7 +26,7 @@ class class_27e8fec4 : cluielem
         cluielem::open_luielem( player, "ct_recon_enemy_reinforcement", persistent );
     }
 
-    // Namespace namespace_27e8fec4/ct_recon_enemy_reinforcement
+    // Namespace cct_recon_enemy_reinforcement/ct_recon_enemy_reinforcement
     // Params 1
     // Checksum 0xdf3221cd, Offset: 0x1c0
     // Size: 0x24
@@ -43,7 +43,7 @@ class class_27e8fec4 : cluielem
 // Size: 0x40
 function register( uid )
 {
-    elem = new class_27e8fec4();
+    elem = new cct_recon_enemy_reinforcement();
     [[ elem ]]->setup_clientfields( uid );
     return elem;
 }

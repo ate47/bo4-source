@@ -1,0 +1,40 @@
+{
+    "name": "#hash_5b1d70daefa9b794",
+    "model": "#p8_fxanim_zm_red_ww_vase_mod",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_d0"
+                },
+                {
+                    "unk28": "tag_d1"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_1adfa4a376a24da1",
+            "unk268": 600,
+            "hideBones": [
+                25,
+                26,
+                28,
+                29
+            ]
+        }
+    ]
+}

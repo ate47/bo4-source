@@ -126,13 +126,13 @@ function function_79fad591()
 {
     level flagsys::wait_till( #"load_main_complete" );
     
-    foreach ( s_stub in level.var_4fe2f84d[ #"zblueprint_mansion_silver_bullet" ] )
+    foreach ( s_stub in level.a_t_crafting[ #"zblueprint_mansion_silver_bullet" ] )
     {
         s_stub.prompt_and_visibility_func = &function_62018caa;
         s_stub.var_c060d2c8 = 0;
     }
     
-    foreach ( s_stub in level.var_4fe2f84d[ #"zblueprint_mansion_silver_molten" ] )
+    foreach ( s_stub in level.a_t_crafting[ #"zblueprint_mansion_silver_molten" ] )
     {
         s_stub.var_c060d2c8 = 0;
     }
@@ -144,9 +144,9 @@ function function_79fad591()
 // Size: 0x138
 function function_62018caa( e_player )
 {
-    var_235457fd = self zm_crafting::function_126fc77c( e_player );
+    b_can_use = self zm_crafting::function_126fc77c( e_player );
     
-    if ( var_235457fd )
+    if ( b_can_use )
     {
         var_87d6e5ff = zm_crafting::function_b18074d0( self.stub.blueprint.name );
         var_b3c7df1a = zm_crafting::function_b18074d0( #"zblueprint_mansion_silver_molten" );
@@ -157,7 +157,7 @@ function function_62018caa( e_player )
         }
     }
     
-    return var_235457fd;
+    return b_can_use;
 }
 
 // Namespace mansion_silver_bullet/zm_mansion_silver_bullet
@@ -346,7 +346,7 @@ function function_252cf612( player )
             else
             {
                 /#
-                    iprintln( "<dev string:x4f>" + function_9e72a96( var_12680c28.name ) + "<dev string:x59>" );
+                    iprintln( "<dev string:x4f>" + hashtostring( var_12680c28.name ) + "<dev string:x59>" );
                 #/
                 
                 return 0;
@@ -378,7 +378,7 @@ function function_dad1960c()
             w_weapon = player getcurrentweapon();
             
             /#
-                iprintln( "<dev string:x4f>" + function_9e72a96( w_weapon.name ) + "<dev string:x59>" );
+                iprintln( "<dev string:x4f>" + hashtostring( w_weapon.name ) + "<dev string:x59>" );
             #/
             
             continue;
@@ -547,11 +547,11 @@ function function_5a2bd56f( var_e7b17c0d )
     
     while ( true )
     {
-        var_54a97edd = self waittill( #"weapon_give", #"pap_timeout" );
+        w_result = self waittill( #"weapon_give", #"pap_timeout" );
         
-        if ( isdefined( var_54a97edd ) && zm_weapons::function_93cd8e76( var_54a97edd ) === var_e7b17c0d )
+        if ( isdefined( w_result ) && zm_weapons::function_93cd8e76( w_result ) === var_e7b17c0d )
         {
-            zm_utility::function_28ee38f4( var_54a97edd, 0, 0 );
+            zm_utility::function_28ee38f4( w_result, 0, 0 );
             return;
         }
     }

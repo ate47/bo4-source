@@ -119,9 +119,9 @@ function zombie_death_gib()
 // Params 3
 // Checksum 0x432a9c3, Offset: 0x6b8
 // Size: 0x6a
-function function_89e9bca5( var_df1a3385, v_origin, v_angles )
+function function_89e9bca5( str_component, v_origin, v_angles )
 {
-    w_component = zm_crafting::get_component( var_df1a3385 );
+    w_component = zm_crafting::get_component( str_component );
     crafting_component = zm_items::spawn_item( w_component, v_origin, v_angles );
     return crafting_component;
 }
@@ -315,7 +315,7 @@ function is_valid()
 // Params 2
 // Checksum 0xee3bbe0e, Offset: 0xd78
 // Size: 0xe4
-function function_a8176b98( v_pos, n_radius )
+function get_drop_pos( v_pos, n_radius )
 {
     if ( !isdefined( v_pos ) )
     {
@@ -495,7 +495,7 @@ function function_9e147e0c( s_params )
                 
                 if ( isdefined( var_9420259c ) )
                 {
-                    v_drop = function_a8176b98( var_9420259c, 360 );
+                    v_drop = get_drop_pos( var_9420259c, 360 );
                 }
                 
                 if ( isdefined( v_drop ) )
@@ -714,9 +714,9 @@ function function_7d92a49c( b_disable = 1 )
 // Size: 0xc4
 function function_b1fb2b71()
 {
-    if ( isdefined( level.var_923e8cb4 ) )
+    if ( isdefined( level.a_s_respawn_locs ) )
     {
-        foreach ( s_loc in level.var_923e8cb4 )
+        foreach ( s_loc in level.a_s_respawn_locs )
         {
             if ( s_loc.script_int === self.playernum )
             {
@@ -839,7 +839,7 @@ function function_f1c106b( str_blocker, b_solid )
         
         if ( isdefined( str_spawner ) )
         {
-            level.var_923e8cb4 = struct::get_array( str_spawner, "targetname" );
+            level.a_s_respawn_locs = struct::get_array( str_spawner, "targetname" );
         }
         
         level zm_bgb_anywhere_but_here::function_886fce8f( 0 );
@@ -854,7 +854,7 @@ function function_f1c106b( str_blocker, b_solid )
         return;
     }
     
-    level.var_923e8cb4 = undefined;
+    level.a_s_respawn_locs = undefined;
     level zm_bgb_anywhere_but_here::function_886fce8f( 1 );
     function_4aea06b0( 0 );
     function_7d92a49c( 0 );
@@ -871,7 +871,7 @@ function function_f1c106b( str_blocker, b_solid )
 // Size: 0x23c
 function function_5f310cf9()
 {
-    level.var_923e8cb4 = undefined;
+    level.a_s_respawn_locs = undefined;
     
     for ( i = 0; i <= 3 ; i++ )
     {
@@ -904,16 +904,16 @@ function function_5f310cf9()
             s_respawn.script_int = i;
             s_respawn.script_noteworthy = "player_" + i;
             
-            if ( !isdefined( level.var_923e8cb4 ) )
+            if ( !isdefined( level.a_s_respawn_locs ) )
             {
-                level.var_923e8cb4 = [];
+                level.a_s_respawn_locs = [];
             }
-            else if ( !isarray( level.var_923e8cb4 ) )
+            else if ( !isarray( level.a_s_respawn_locs ) )
             {
-                level.var_923e8cb4 = array( level.var_923e8cb4 );
+                level.a_s_respawn_locs = array( level.a_s_respawn_locs );
             }
             
-            level.var_923e8cb4[ level.var_923e8cb4.size ] = s_respawn;
+            level.a_s_respawn_locs[ level.a_s_respawn_locs.size ] = s_respawn;
         }
     }
 }
@@ -948,7 +948,7 @@ function function_f15c4657()
     level.sam_clue_dig_traversal++;
     str_alias = #"hash_63097ff550404256" + level.sam_clue_dig_traversal + "_pickup";
     
-    if ( self zm_characters::is_character( array( #"hash_5ebf024e1559c04a" ) ) && level.sam_clue_dig_traversal == 3 )
+    if ( self zm_characters::is_character( array( #"prt_zm_butler" ) ) && level.sam_clue_dig_traversal == 3 )
     {
         self zm_vo::function_a2bd5a0c( #"hash_4c470787fc7738eb" );
         self playsoundtoplayer( #"hash_663346a99e3bdffc", self );
@@ -1126,7 +1126,7 @@ function function_268efa09( b_active = 0 )
     {
         while ( isdefined( self ) && getdvarint( #"hash_3c4df2fe4b1618d5", 0 ) )
         {
-            draw_arrow( self.origin, anglestoforward( self.angles ), ( 0, 1, 0 ), function_9e72a96( self.model ) );
+            draw_arrow( self.origin, anglestoforward( self.angles ), ( 0, 1, 0 ), hashtostring( self.model ) );
             waitframe( 1 );
         }
     }

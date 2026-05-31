@@ -1,0 +1,31 @@
+{
+    "name": "#hash_2e67a436e47d1f84",
+    "type": "plane",
+    "scoreType": "none",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "vehicleRidersBundle": "#veh_bo3_mil_apc_riders",
+    "deathFx": "#_t6/explosions/fx_vexp_cougar",
+    "deathFxTag": "tag_origin",
+    "deathFxSound": "#hash_2149db0c502305e3",
+    "skidSpeedMin": 20,
+    "skidSpeedMax": 100,
+    "peelSpeedMax": 600,
+    "model": "#p8_zm_esc_gondola_lift",
+    "deathModel": "#p8_zm_esc_gondola_lift",
+    "steerAxisName": "AXIS_LSTICK",
+    "handBrakeButtonName": "BUTTON_B",
+    "attackButtonName": "BUTTON_RTRIG",
+    "attackSecondaryButtonName": "BUTTON_RSHLDR",
+    "unk1608": "BUTTON_A",
+    "unk1648": "BUTTON_Y",
+    "shootshock": "tankblast",
+    "rumbletype": "tank_rumble",
+    "bundle": {
+        "healthpoolsize": 650,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 2
+    }
+}

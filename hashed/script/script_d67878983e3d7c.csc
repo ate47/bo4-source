@@ -48,7 +48,7 @@ function function_f4515ba8( localclientnum, oldval, newval, bnewent, binitialsna
         return;
     }
     
-    self notify( #"hash_395dfda1274cd506" );
+    self notify( #"stop_burn_fx" );
     
     if ( isdefined( self.var_62f2a054 ) )
     {
@@ -73,7 +73,7 @@ function function_f4515ba8( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x20a
 function private function_8847b8aa( localclientnum )
 {
-    self endon( #"death", #"hash_395dfda1274cd506" );
+    self endon( #"death", #"stop_burn_fx" );
     wait 1;
     a_str_tags = [];
     a_str_tags[ 0 ] = "j_elbow_le";

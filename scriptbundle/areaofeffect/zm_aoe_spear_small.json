@@ -6,7 +6,7 @@
     "vmtype": "client",
     "end_effect": "fx#hash_595ec25b8b3b0e9b",
     "name": "zm_aoe_spear_small",
-    "hash_a8609f98": "rumble&damage_light",
+    "dmgrumble": "rumble&damage_light",
     "endrumble": "rumble&damage_heavy",
     "earthquakeduration": 2,
     "loop_effect": "fx#hash_154f7e9ec688102d",

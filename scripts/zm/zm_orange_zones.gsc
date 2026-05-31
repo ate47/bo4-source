@@ -455,7 +455,7 @@ function function_8e0b371()
     {
         if ( isalive( self ) )
         {
-            str_location = function_ab7f70b9( self );
+            str_location = get_location_string( self );
             self zm_hud::function_29780fb5( isdefined( str_location ) ? str_location : #"" );
         }
         else
@@ -471,7 +471,7 @@ function function_8e0b371()
 // Params 2
 // Checksum 0x92edb4f9, Offset: 0x2230
 // Size: 0x5fe
-function function_ab7f70b9( e_player, str_zone )
+function get_location_string( e_player, str_zone )
 {
     if ( isdefined( e_player ) )
     {
@@ -642,12 +642,12 @@ function function_f7a190a8( str_wait_flag, var_ab660f9a, str_location, var_39acf
         wait var_ab660f9a;
     }
     
-    for ( var_33625d75 = function_ab7f70b9( self ); var_33625d75 !== str_location ; var_33625d75 = function_ab7f70b9( self ) )
+    for ( var_33625d75 = get_location_string( self ); var_33625d75 !== str_location ; var_33625d75 = get_location_string( self ) )
     {
         wait 0.5;
     }
     
-    for ( var_33625d75 = function_ab7f70b9( self ); var_33625d75 === str_location ; var_33625d75 = function_ab7f70b9( self ) )
+    for ( var_33625d75 = get_location_string( self ); var_33625d75 === str_location ; var_33625d75 = get_location_string( self ) )
     {
         wait 0.5;
     }
@@ -692,7 +692,7 @@ function function_9d1d7efd()
             a_players = arraycombine( a_players, zm_zonemgr::get_players_in_zone( zone, 1 ), 0, 0 );
         }
         
-        if ( a_players.size > 0 && level.pablo_npc.var_f75b1f16.size < 1 )
+        if ( a_players.size > 0 && level.pablo_npc.a_n_interacts.size < 1 )
         {
             if ( a_players[ 0 ] zm_audio::can_speak() && !level flag::get( #"hell_on_earth" ) )
             {

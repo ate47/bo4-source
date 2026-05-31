@@ -1,11 +1,11 @@
 {
     "lootid": "#charm_shark",
-    "hash_ff3063df": "model#",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_shark",
     "name": "charm_shark",
     "displayname": "localized17#hash_3c98a68d0fc8ec90",
     "entitlement": "#hash_5bd04e15802702be",
     "icon": "ui_icon_weapon_charms_shark",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_shark"
 }

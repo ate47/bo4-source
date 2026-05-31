@@ -1,10 +1,11 @@
 {
     "name": "#hash_5c84c2910c186cbc",
-    "blackMarketName": "#",
-    "blackMarketDesc": "#",
-    "entitlementNameXHash": "#",
-    "previewImageName": "hash_39e6a1fffd953cc",
-    "productImageName": "hash_39e6a1fffd953cc",
-    "blackMarketImageName": "hash_1217b62ca29dad38",
+    "previewImage": "#ui_menu_store_product_b04_kronos_preorder_oe_large",
+    "productImage": "#ui_menu_store_product_b04_kronos_preorder_oe_large",
+    "blackMarketImage": "#t7_store_product_bo4",
+    "unka8": "0",
+    "unkb0": "1 2",
+    "unkb8": "1",
+    "unkc0": "1",
     "visibility": false
 }

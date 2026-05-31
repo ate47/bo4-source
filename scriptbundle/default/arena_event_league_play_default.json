@@ -25,28 +25,28 @@
     ],
     "matchquitpenalty": [
         {
-            "hash_193f434b": 0,
-            "hash_2ec63ef8": 5
+            "timewindow": 0,
+            "penaltyminutes": 5
         },
         {
-            "hash_193f434b": 2,
-            "hash_2ec63ef8": 10
+            "timewindow": 2,
+            "penaltyminutes": 10
         },
         {
-            "hash_193f434b": 3,
-            "hash_2ec63ef8": 20
+            "timewindow": 3,
+            "penaltyminutes": 20
         },
         {
-            "hash_193f434b": 4,
-            "hash_2ec63ef8": 30
+            "timewindow": 4,
+            "penaltyminutes": 30
         }
     ],
-    "hash_aa4ed926": 25,
-    "hash_bf6e0661": 400,
+    "hash_17c8bffa0bf5d50f:hash_aa4ed926": 25,
+    "hash_1e5b62f37edd83a3:hash_bf6e0661": 400,
     "name": "arena_event_league_play_default",
-    "hash_504c84f8": 50,
-    "hash_e6467560": 200,
-    "hash_e69785eb": 3,
-    "hash_7cd9bea8": 0,
-    "hash_76b4e29": 50
+    "subdivisionsize": 50,
+    "hash_5fbb65b0cd948c1b:hash_e6467560": 200,
+    "hash_6a1aced8ddf5f039:hash_e69785eb": 3,
+    "rewardmax": 0,
+    "hash_7a210a5e11ba587c:hash_76b4e29": 50
 }

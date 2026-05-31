@@ -647,7 +647,7 @@ function giveplayermomentum( event, player, victim, descvalue, weapon, playersaf
     
     if ( !isdefined( label ) )
     {
-        player giveplayermomentumnotification( score, #"hash_480234a872bd64ac", descvalue, countstowardrampage, weapon, combatefficiencyscore, eventindex, event, playersaffected );
+        player giveplayermomentumnotification( score, #"score/blank", descvalue, countstowardrampage, weapon, combatefficiencyscore, eventindex, event, playersaffected );
         return;
     }
     

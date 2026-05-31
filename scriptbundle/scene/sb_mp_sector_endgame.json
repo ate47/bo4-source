@@ -1,7 +1,7 @@
 {
     "objects": [
         {
-            "mainanim": "anim5#pb_rifle_endgame_1stplace_idle",
+            "mainanim": "playeranim#pb_rifle_endgame_1stplace_idle",
             "model": "model#c_t7_mp_warrior_mpc_fb1_skin1",
             "type": "actor",
             "vmtype": "server",

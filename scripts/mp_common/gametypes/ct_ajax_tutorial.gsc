@@ -1360,7 +1360,7 @@ function wait_for_car()
         wait 0.5;
         level notify( #"hash_24bd25e0736c3ca3" );
         a_bots = ct_bots::function_fbe3dcbb();
-        var_9bff2467 = a_bots.size;
+        n_max_bots = a_bots.size;
         var_e2bcb756 = struct::get_array( "bot_killstreak_respawn_pos", "targetname" );
         var_16bd65fd = 0;
         b_player_died = 0;
@@ -1396,7 +1396,7 @@ function wait_for_car()
             {
                 a_bots = e_player ct_bots::function_dde6edbd();
                 
-                if ( a_bots.size < var_9bff2467 )
+                if ( a_bots.size < n_max_bots )
                 {
                     s_loc = var_e2bcb756[ var_16bd65fd ];
                     var_16bd65fd++;

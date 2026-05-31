@@ -537,8 +537,8 @@ function function_30e4da9a( var_4d4513ee )
     level waittill( #"hash_7fb8a9f892ea26f9" );
     level thread function_d485c784();
     level.var_42a4603 = &function_42a4603;
-    var_7716dee7 = "warlord_spawn_point_" + var_4d4513ee + 1;
-    var_97f91376 = getnodearray( var_7716dee7, "targetname" );
+    str_node_name = "warlord_spawn_point_" + var_4d4513ee + 1;
+    var_97f91376 = getnodearray( str_node_name, "targetname" );
     var_97f91376 = array::randomize( var_97f91376 );
     level thread spawn_warlords( var_ec102dab, var_97f91376 );
 }
@@ -692,8 +692,8 @@ function function_5ccd53d5()
 // Size: 0x1fc
 function function_d3aa2fd3()
 {
-    var_7716dee7 = "player_spawn_point_" + level.var_156f3cee;
-    var_b74696c9 = getnodearray( var_7716dee7, "targetname" );
+    str_node_name = "player_spawn_point_" + level.var_156f3cee;
+    var_b74696c9 = getnodearray( str_node_name, "targetname" );
     var_b74696c9 = array::randomize( var_b74696c9 );
     a_bots = ct_bots::function_fbe3dcbb();
     var_3fe7e48b = var_b74696c9.size;
@@ -734,8 +734,8 @@ function function_d3aa2fd3()
 // Size: 0x9e, Type: bool
 function function_f71e7ad9()
 {
-    var_7716dee7 = "player_spawn_point_" + level.var_156f3cee;
-    var_b74696c9 = getnodearray( var_7716dee7, "targetname" );
+    str_node_name = "player_spawn_point_" + level.var_156f3cee;
+    var_b74696c9 = getnodearray( str_node_name, "targetname" );
     var_b74696c9 = array::randomize( var_b74696c9 );
     nd_spawn = var_b74696c9[ 0 ];
     self.var_6b6241ac = nd_spawn.origin;
@@ -754,8 +754,8 @@ function function_795960e7()
         level.var_736740f3 = 0;
     }
     
-    var_7716dee7 = "bot_spawn_point_" + level.var_156f3cee;
-    var_b74696c9 = getnodearray( var_7716dee7, "targetname" );
+    str_node_name = "bot_spawn_point_" + level.var_156f3cee;
+    var_b74696c9 = getnodearray( str_node_name, "targetname" );
     e_player = getplayers()[ 0 ];
     var_70eb710b = 0;
     

@@ -183,13 +183,13 @@ function function_12e09509( localclientnum = 0 )
         var_46e1fb08.angles = ( angleclamp180( vectortoangles( trace1[ #"normal" ] )[ 0 ] + 90 ), vectortoangles( trace1[ #"normal" ] )[ 1 ], 0 );
         speed = length( velocity );
         var_2571f440 = grenadeangles + ( var_de0fa6f1, var_71c4a0d9, 0 );
-        var_d2922c1e = vectorscale( anglestoforward( var_2571f440 ), speed * var_46f48578 );
-        trace2 = projectiletrace( eye_pos, var_d2922c1e, 0 );
+        velocity2 = vectorscale( anglestoforward( var_2571f440 ), speed * var_46f48578 );
+        trace2 = projectiletrace( eye_pos, velocity2, 0 );
         var_37b85cb5.origin = trace2[ #"position" ];
         var_37b85cb5.angles = ( angleclamp180( vectortoangles( trace2[ #"normal" ] )[ 0 ] + 90 ), vectortoangles( trace2[ #"normal" ] )[ 1 ], 0 );
         var_c1917dbc = grenadeangles + ( var_99803ce, var_6b0817d7, 0 );
-        var_c0cb8891 = vectorscale( anglestoforward( var_c1917dbc ), speed * var_3300383 );
-        trace3 = projectiletrace( eye_pos, var_c0cb8891, 0 );
+        velocity3 = vectorscale( anglestoforward( var_c1917dbc ), speed * var_3300383 );
+        trace3 = projectiletrace( eye_pos, velocity3, 0 );
         var_618fb067.origin = trace3[ #"position" ];
         var_618fb067.angles = ( angleclamp180( vectortoangles( trace3[ #"normal" ] )[ 0 ] + 90 ), vectortoangles( trace3[ #"normal" ] )[ 1 ], 0 );
     }
@@ -311,10 +311,10 @@ function function_a189ab2e( localclientnum, enemy )
         enemy_eye_pos = enemy.origin + ( 0, 0, var_936b9149 );
         player_eye_pos = local_player geteye();
         trace = bullettrace( player_eye_pos, enemy_eye_pos, 1, enemy );
-        var_8c0e537d = can_see_enemy;
+        saw_enemy = can_see_enemy;
         can_see_enemy = trace[ #"fraction" ] > 0.95;
         
-        if ( var_8c0e537d != can_see_enemy )
+        if ( saw_enemy != can_see_enemy )
         {
             enemy duplicate_render::set_hacker_tool_hacked( localclientnum, can_see_enemy );
         }

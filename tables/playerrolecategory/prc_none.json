@@ -1,9 +1,0 @@
-{
-    "name": "#prc_none",
-    "displayName": "#menu/none",
-    "description": "#menu/none",
-    "sortOrder": 1,
-    "fields": {
-        "var_af8f68ab": "#uie_t7_icon_error_overlays"
-    }
-}

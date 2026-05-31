@@ -43,11 +43,11 @@ function private __init__()
     
     zm_cleanup::function_cdf5a512( #"skeleton", &function_ad4293a8 );
     zm_trial_special_enemy::function_95c1dd81( #"skeleton", &function_8609d56e );
-    level.var_5fc2833 = getentarray( "zombie_skeleton_spawner", "script_noteworthy" );
+    level.a_sp_skeleton = getentarray( "zombie_skeleton_spawner", "script_noteworthy" );
     level.var_7b7fd31e = getentarray( "zombie_skeleton_spear_spawner", "script_noteworthy" );
     level.var_ea48e91 = getentarray( "zombie_skeleton_helmet_spawner", "script_noteworthy" );
     level.var_c34db86 = getentarray( "zombie_skeleton_helmet_spear_spawner", "script_noteworthy" );
-    level.var_5781a278 = arraycombine( level.var_5fc2833, level.var_7b7fd31e, 0, 0 );
+    level.var_5781a278 = arraycombine( level.a_sp_skeleton, level.var_7b7fd31e, 0, 0 );
     level.var_5781a278 = arraycombine( level.var_5781a278, level.var_ea48e91, 0, 0 );
     level.var_5781a278 = arraycombine( level.var_5781a278, level.var_c34db86, 0, 0 );
 }
@@ -145,23 +145,23 @@ function function_1ea880bd( b_force_spawn = 0, var_eb3a8721, round_number, b_spe
     {
         if ( b_helmet )
         {
-            var_5fc2833 = level.var_c34db86;
+            a_sp_skeleton = level.var_c34db86;
         }
         else
         {
-            var_5fc2833 = level.var_7b7fd31e;
+            a_sp_skeleton = level.var_7b7fd31e;
         }
     }
     else if ( b_helmet )
     {
-        var_5fc2833 = level.var_ea48e91;
+        a_sp_skeleton = level.var_ea48e91;
     }
     else
     {
-        var_5fc2833 = level.var_5fc2833;
+        a_sp_skeleton = level.a_sp_skeleton;
     }
     
-    ai = zombie_utility::spawn_zombie( array::random( var_5fc2833 ), undefined, undefined, round_number );
+    ai = zombie_utility::spawn_zombie( array::random( a_sp_skeleton ), undefined, undefined, round_number );
     
     if ( isdefined( ai ) )
     {
@@ -179,11 +179,11 @@ function function_1ea880bd( b_force_spawn = 0, var_eb3a8721, round_number, b_spe
             ai thread [[ level.var_1a540a38 ]]( s_spawn_loc );
         }
         
-        var_46d2ec35 = get_favorite_enemy();
+        e_favorite_enemy = get_favorite_enemy();
         
-        if ( isdefined( var_46d2ec35 ) )
+        if ( isdefined( e_favorite_enemy ) )
         {
-            ai.favoriteenemy = var_46d2ec35;
+            ai.favoriteenemy = e_favorite_enemy;
             ai.favoriteenemy.hunted_by++;
         }
     }
@@ -266,14 +266,14 @@ function function_d325f6a4( entity )
     
     if ( isdefined( entity ) && isdefined( entity.favoriteenemy ) && zm_utility::is_player_valid( entity.favoriteenemy ) )
     {
-        var_46d2ec35 = entity.favoriteenemy;
+        e_favorite_enemy = entity.favoriteenemy;
     }
     else
     {
-        var_46d2ec35 = get_favorite_enemy();
+        e_favorite_enemy = get_favorite_enemy();
     }
     
-    if ( !isdefined( var_46d2ec35 ) || !isalive( var_46d2ec35 ) )
+    if ( !isdefined( e_favorite_enemy ) || !isalive( e_favorite_enemy ) )
     {
         return array::random( a_locs );
     }
@@ -287,7 +287,7 @@ function function_d325f6a4( entity )
             continue;
         }
         
-        n_dist_squared = distancesquared( a_locs[ i ].origin, var_46d2ec35.origin );
+        n_dist_squared = distancesquared( a_locs[ i ].origin, e_favorite_enemy.origin );
         
         if ( n_dist_squared < var_ae2b4871 )
         {
@@ -296,7 +296,7 @@ function function_d325f6a4( entity )
         }
     }
     
-    return arraygetclosest( var_46d2ec35.origin, a_locs );
+    return arraygetclosest( e_favorite_enemy.origin, a_locs );
 }
 
 // Namespace zombie_skeleton_util/ai_skeleton_util

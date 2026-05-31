@@ -2,9 +2,9 @@
     "name": "#maptable_mp_dlc2",
     "mapCount": 2,
     "images": [
-        "#hash_19932cbc2066b534",
+        "#img_t8_menu_mp_loadscreen_elevation",
         "#blacktransparent",
-        "#hash_6ef623608081d0c5",
+        "#img_t8_menu_mp_loadscreen_madagascar",
         "#blacktransparent"
     ]
 }

@@ -35,7 +35,7 @@ function __init__()
     level._effect[ #"teleport_aoe" ] = "zombie/fx_bgb_anywhere_but_here_teleport_aoe_zmb";
     level._effect[ #"teleport_aoe_kill" ] = "zombie/fx_bgb_anywhere_but_here_teleport_aoe_kill_zmb";
     bgb::register( #"zm_bgb_anywhere_but_here", "activated", 1, undefined, undefined, &validation, &activation );
-    bgb::function_72469efe( #"zm_bgb_anywhere_but_here", 1 );
+    bgb::register_invulnerable_during_activation( #"zm_bgb_anywhere_but_here", 1 );
     bgb::function_8a5d8cfb( #"zm_bgb_anywhere_but_here", 1 );
 }
 
@@ -50,7 +50,7 @@ function activation( var_fad9ed02 = 1 )
     self.var_ffe2c4d7 = 1;
     zm_ai_utility::function_594bb7bd( self );
     
-    if ( self zm_utility::function_ab9a9770() )
+    if ( self zm_utility::duf47() )
     {
         self.var_b520496e = 1;
     }

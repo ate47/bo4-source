@@ -12,19 +12,22 @@
         "#none",
         "#none"
     ],
-    "compassIcon": "#hash_3030e82a0acd7277",
+    "compassIcon": "#icon_minimap_player_enemy_firing",
     "typeSuffix": "_zombie_dog",
     "spawnerType": "hellhound",
     "character": [
         "#c_zom_der_hellhound"
     ],
-    "meleeWeapon": "#hash_1771f67563bf8ff2",
+    "animMappingTables": [
+        "#hash_2c26095d13744691"
+    ],
+    "meleeWeapon": "#dog_ai_defaultmelee_wz",
     "aimTable": "#soldier_aim",
     "footstepTable": "#zdogfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#wz_zombie_dog.ai_bt",
+    "behaviorTree": "#hash_2c23125d13722005",
     "animStateMachine": "#hash_790ac9280eb15506",
     "animSelectorTable": "#hash_790ae2280eb17f81",
     "traversalExtents": "#default_traversal_extents_zm",

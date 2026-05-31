@@ -318,7 +318,7 @@ function private event_handler[grenade_fire] function_4776caf4( eventstruct )
             }
         }
         
-        var_aec6fa7f = undefined;
+        itemamount = undefined;
         
         if ( !var_994e5c9a )
         {
@@ -331,7 +331,7 @@ function private event_handler[grenade_fire] function_4776caf4( eventstruct )
                 
                 if ( isdefined( item ) && item.amount > 0 )
                 {
-                    var_aec6fa7f = item.amount;
+                    itemamount = item.amount;
                 }
             }
             
@@ -368,7 +368,7 @@ function private event_handler[grenade_fire] function_4776caf4( eventstruct )
                 {
                     if ( isdefined( item ) )
                     {
-                        self._trophy_system_ammo1 = var_aec6fa7f;
+                        self._trophy_system_ammo1 = itemamount;
                     }
                 }
                 
@@ -1472,7 +1472,7 @@ function consume_item( item )
         
         currentweapon = self getcurrentweapon();
         
-        if ( isdefined( currentweapon ) && isdefined( currentweapon.var_29d24e37 ) && currentweapon.var_29d24e37 )
+        if ( isdefined( currentweapon ) && isdefined( currentweapon.isvehicleturret ) && currentweapon.isvehicleturret )
         {
             self playsoundtoplayer( #"uin_unavailable_charging", self );
             return 0;
@@ -2250,14 +2250,14 @@ function drop_inventory_item( networkid, stashitem = 0, var_7cab8e12 = undefined
 // Params 2
 // Checksum 0xc4d0dcdb, Offset: 0x7138
 // Size: 0x22e
-function equip_ammo( item, var_aec6fa7f )
+function equip_ammo( item, itemamount )
 {
     assert( isplayer( self ) );
     assert( isdefined( item ) );
     self function_db2abc4( item );
     itementry = item.itementry;
     ammoweapon = itementry.weapon;
-    ammoamount = isdefined( itementry.amount ) ? itementry.amount : isdefined( var_aec6fa7f ) ? var_aec6fa7f : 1;
+    ammoamount = isdefined( itementry.amount ) ? itementry.amount : isdefined( itemamount ) ? itemamount : 1;
     maxstockammo = item_inventory_util::function_2879cbe0( self.inventory.var_7658cbec, ammoweapon );
     currentammostock = self getweaponammostock( ammoweapon );
     var_9b9ba643 = maxstockammo - currentammostock;
@@ -2268,7 +2268,7 @@ function equip_ammo( item, var_aec6fa7f )
         self.inventory.ammo[ ammoweapon.name ] = item.id;
         self function_fc9f8b05( ammoweapon, addammo );
         
-        if ( isdefined( var_aec6fa7f ) )
+        if ( isdefined( itemamount ) )
         {
             return ( ammoamount - addammo );
         }
@@ -2478,7 +2478,7 @@ function debug_print( message, weapon )
             
             if ( isdefined( weapon ) )
             {
-                weaponname = "<dev string:x5c>" + function_9e72a96( weapon.name );
+                weaponname = "<dev string:x5c>" + hashtostring( weapon.name );
             }
             
             self iprintlnbold( "<dev string:x69>" + message + weaponname );
@@ -3080,7 +3080,7 @@ function function_bad4a3a5()
     
     foreach ( weapon in weapons )
     {
-        if ( isdefined( weapon.var_29d24e37 ) && weapon.var_29d24e37 )
+        if ( isdefined( weapon.isvehicleturret ) && weapon.isvehicleturret )
         {
             continue;
         }
@@ -3415,7 +3415,7 @@ function function_3f7ef88()
 // Params 4
 // Checksum 0xe71cdc1b, Offset: 0xab38
 // Size: 0xe80
-function give_inventory_item( item, itemcount = 1, var_aec6fa7f = 0, slotid = undefined )
+function give_inventory_item( item, itemcount = 1, itemamount = 0, slotid = undefined )
 {
     if ( !isplayer( self ) || !isdefined( self.inventory ) )
     {
@@ -3455,7 +3455,7 @@ function give_inventory_item( item, itemcount = 1, var_aec6fa7f = 0, slotid = un
     }
     
     maxstacksize = item_inventory_util::function_cfa794ca( self.inventory.var_7658cbec, item.itementry );
-    var_1393d318 = maxstacksize > 1;
+    isstackable = maxstacksize > 1;
     
     if ( item.itementry.itemtype == #"resource" && item_world_util::function_41f06d9d( item.itementry ) )
     {
@@ -3464,7 +3464,7 @@ function give_inventory_item( item, itemcount = 1, var_aec6fa7f = 0, slotid = un
         maxstacksize = var_b41045b2 + ( isdefined( var_92d652f2.count ) ? var_92d652f2.count : 0 );
     }
     
-    if ( isdefined( itementry.name ) && var_1393d318 )
+    if ( isdefined( itementry.name ) && isstackable )
     {
         for ( i = 0; i < self.inventory.items.size ; i++ )
         {
@@ -3533,7 +3533,7 @@ function give_inventory_item( item, itemcount = 1, var_aec6fa7f = 0, slotid = un
             var_8c6165fc = int( min( itemcount, maxstacksize ) );
             item.networkid = item_world_util::function_970b8d86( self, slotid );
             item_inventory_util::function_6e9e7169( item );
-            var_92d652f2.amount = var_aec6fa7f;
+            var_92d652f2.amount = itemamount;
             var_92d652f2.count = var_8c6165fc;
             var_92d652f2.id = itemid;
             var_92d652f2.networkid = item.networkid;
@@ -3635,7 +3635,7 @@ function give_inventory_item( item, itemcount = 1, var_aec6fa7f = 0, slotid = un
         {
             var_8c6165fc = int( min( itemcount, maxstacksize ) );
             item.networkid = item_world_util::function_970b8d86( self, i );
-            self.inventory.items[ i ].amount = var_aec6fa7f;
+            self.inventory.items[ i ].amount = itemamount;
             self.inventory.items[ i ].count = var_8c6165fc;
             self.inventory.items[ i ].id = itemid;
             self.inventory.items[ i ].networkid = item.networkid;

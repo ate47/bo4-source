@@ -1,0 +1,16 @@
+{
+    "name": "#hash_6251013a1a529574",
+    "desc": "#hash_7a326b2ce15b2df9",
+    "tag": "j_spinelower",
+    "fxEffect": "#blood/fx_blood_impact_exp_body_lg",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "desc": "#hash_2219d2672d506c37",
+            "unk68:unk10": true,
+            "model": "#c_t8_mp_spe_firebreak_superhero_head1",
+            "unk68:unk50": 1
+        }
+    ]
+}

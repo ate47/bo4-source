@@ -1,0 +1,46 @@
+{
+    "name": "#hash_3f1dae2bf740d597",
+    "model": "#veh_t8_mil_helicopter_light_transport",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "name": "#hash_21d849eee4d897a",
+                    "unk28": "tag_origin"
+                },
+                {
+                    "name": "#hash_4d024c686b015e3d",
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_6efa1aca51e4be20",
+            "unk268": 3000,
+            "hideBones": [
+                31,
+                65,
+                80,
+                86
+            ]
+        }
+    ]
+}

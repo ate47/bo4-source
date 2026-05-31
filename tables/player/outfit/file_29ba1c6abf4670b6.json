@@ -1,0 +1,17 @@
+{
+    "name": "#hash_29ba1c6abf4670b6",
+    "desc": "#hash_63fe012e40283fa8",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "unk68:unk10": true,
+            "model": "#c_t8_zmb_dlc0_hero_bruno_head1_cst",
+            "unk68:unk48": [
+                "#mc/mtl_c_t8_zmb_dlc0_hero_bruno_head1_hair_haircard1",
+                "#mc/mtl_c_t8_zmb_dlc0_hero_bruno_head1_hair_haircard2"
+            ],
+            "unk68:unk50": 1
+        }
+    ]
+}

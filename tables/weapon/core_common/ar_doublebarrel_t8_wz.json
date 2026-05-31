@@ -3,8 +3,8 @@
     "baseWeapon": "#ar_doublebarrel_t8",
     "displayname": "#weapon/ar_doublebarrel_t8",
     "xhash_60": "#hash_50247dd90634637c",
-    "xhash_70": "#ar_doublebarrel_t8",
-    "streamkey": "#hash_126d6f55bfbbf5f9",
+    "weapon70": "#ar_doublebarrel_t8",
+    "soundbank": "#ar_doublebarrel_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -17,21 +17,42 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "WARZONE",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.0303 0.95",
+            "0.2242 0.5",
+            "0.4 0.1",
+            "0.4992 0.05",
+            "0.7426 0.001",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0605 1",
+            "0.2242 0.7161",
+            "0.375 0.3412",
+            "0.4992 0.0032",
+            "0.7426 0",
+            "1 0"
+        ]
+    ],
     "firesounddistant": "#hash_56369e9a0553981f",
     "sound100": "#hash_1008d49206af5707",
     "sound110": "#hash_bb1e591731740c2",
@@ -63,6 +84,11 @@
     ],
     "sharedWeaponSounds": "#rifle",
     "ballisticDesc": "#hash_93bb659213ccd72",
+    "tracers": [
+        "#hash_2a99504579880c97",
+        "#hash_38ac80fa23bb1346",
+        "#hash_2a99504579880c97"
+    ],
     "viewmodel": [
         "#wpn_t8_loot_ar_double_barrel_view"
     ],
@@ -86,8 +112,8 @@
     "fx_c88": "#hash_74e38c410df710a4",
     "fx_c90": "#hash_74e38c410df710a4",
     "fx_c98": "#hash_74e38c410df710a4",
-    "normalImpactFX": "#hash_1cafc46b8c735870",
-    "exitImpactFX": "#hash_56ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_large_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#bullet_exit"
 }

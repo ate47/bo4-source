@@ -2040,7 +2040,7 @@ function private function_54d75299( entity, mocompanim, mocompanimblendouttime, 
     /#
         recordcircle( endpoint, 3, ( 1, 0, 0 ), "<dev string:x98>" );
         recordline( entity.origin, endpoint, ( 1, 0, 0 ), "<dev string:x98>" );
-        record3dtext( "<dev string:xa1>" + distance( entity.origin, endpoint ) + "<dev string:xa9>" + function_9e72a96( mocompanim ), endpoint, ( 1, 0, 0 ), "<dev string:x45>" );
+        record3dtext( "<dev string:xa1>" + distance( entity.origin, endpoint ) + "<dev string:xa9>" + hashtostring( mocompanim ), endpoint, ( 1, 0, 0 ), "<dev string:x45>" );
     #/
 }
 

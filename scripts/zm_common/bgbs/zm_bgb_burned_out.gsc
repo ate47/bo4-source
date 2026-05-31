@@ -42,7 +42,7 @@ function __init__()
 function event()
 {
     self endon( #"disconnect", #"bgb_update" );
-    var_3c24cb96 = 0;
+    limit_count = 0;
     self thread bgb::set_timer( 3, 3 );
     
     for ( ;; )
@@ -58,11 +58,11 @@ function event()
         
         self thread result();
         self playsound( #"zmb_bgb_powerup_burnedout" );
-        var_3c24cb96++;
-        self thread bgb::set_timer( 3 - var_3c24cb96, 3 );
+        limit_count++;
+        self thread bgb::set_timer( 3 - limit_count, 3 );
         self bgb::do_one_shot_use();
         
-        if ( 3 <= var_3c24cb96 )
+        if ( 3 <= limit_count )
         {
             return;
         }
@@ -87,7 +87,7 @@ function result()
     }
     
     dist_sq = 128 * 128;
-    var_7694ea6b = [];
+    zombies_burned_out = [];
     
     for ( i = 0; i < zombies.size ; i++ )
     {
@@ -127,24 +127,24 @@ function result()
             zombies[ i ] clientfield::increment( "zm_bgb_burned_out" + "_fire_torso" + "_actor" );
         }
         
-        var_7694ea6b[ var_7694ea6b.size ] = zombies[ i ];
+        zombies_burned_out[ zombies_burned_out.size ] = zombies[ i ];
     }
     
-    for ( i = 0; i < var_7694ea6b.size ; i++ )
+    for ( i = 0; i < zombies_burned_out.size ; i++ )
     {
         util::wait_network_frame();
         
-        if ( !isdefined( var_7694ea6b[ i ] ) )
+        if ( !isdefined( zombies_burned_out[ i ] ) )
         {
             continue;
         }
         
-        if ( zm_utility::is_magic_bullet_shield_enabled( var_7694ea6b[ i ] ) )
+        if ( zm_utility::is_magic_bullet_shield_enabled( zombies_burned_out[ i ] ) )
         {
             continue;
         }
         
-        var_7694ea6b[ i ] dodamage( var_7694ea6b[ i ].health + 666, var_7694ea6b[ i ].origin, self, undefined, undefined, "MOD_BURNED", 0, level.weapondefault );
+        zombies_burned_out[ i ] dodamage( zombies_burned_out[ i ].health + 666, zombies_burned_out[ i ].origin, self, undefined, undefined, "MOD_BURNED", 0, level.weapondefault );
         
         if ( isdefined( self ) )
         {

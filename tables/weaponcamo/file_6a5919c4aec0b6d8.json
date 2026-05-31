@@ -1,0 +1,216 @@
+{
+    "name": "#hash_6a5919c4aec0b6d8",
+    "camoMaterials": [
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_p8_zm_elixir_icon_base"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_7de83d6dc507e7d4",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "rotation": 0,
+                            "normalBlend": 0,
+                            "glossBlend": 0,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_p8_zm_elixir_icon_base"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_7e52859e25059564",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "rotation": 0,
+                            "normalBlend": 0,
+                            "glossBlend": 0,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        }
+    ]
+}

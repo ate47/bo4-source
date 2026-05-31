@@ -1,0 +1,16 @@
+{
+    "name": "#hash_6caf45796083b244",
+    "desc": "#hash_25105a1e4c1d1e63",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "unk68:unk10": true,
+            "model": "#c_t8_mp_spe_recon_head1_cst",
+            "unk68:unk48": [
+                "#mc/mtl_c_t8_mp_spe_recon_head1_helmet_cst"
+            ],
+            "unk68:unk50": 1
+        }
+    ]
+}

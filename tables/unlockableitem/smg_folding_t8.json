@@ -1,11 +1,9 @@
 {
-    "name": "",
-    "nameHash": "#smg_folding_t8",
+    "name": "#smg_folding_t8",
+    "nameStr": "",
     "displayName": "#weapon/smg_folding_t8",
-    "displayNameShort": "#",
     "description": "#hash_71fb50cf884de11e",
-    "wzDescription": "#",
-    "zmDescription": "#",
+    "refHash": "#hash_7da76ad9",
     "previewImage": "#ui_icon_weapon_smg_folding_render",
     "previewImageLarge": "#ui_icon_weapon_smg_folding_xl",
     "wzPreviewImage": "#ui_icon_weapon_smg_folding_render",
@@ -17,7 +15,16 @@
     "scoreToUnlock": 0,
     "lowestScoreToUnlockAllowed": 0,
     "allocation": 1,
+    "modes": 11,
+    "loadoutSlotIndex": "primary",
+    "isNullItem": false,
+    "isPassive": false,
+    "isValid": true,
+    "isLootItem": false,
     "attributeItems": true,
+    "unkbc_ZOMBIES": 27,
+    "unkbc_WARZONE": 22,
+    "unkd4": "[f0x0=1.4013e-45] 01 00 00 00",
     "itemGroupIndex": "weapon_smg",
     "attachments": [
         "reflex",
@@ -35,5 +42,38 @@
         "clantag",
         "killcounter",
         "custom2"
-    ]
+    ],
+    "bundle": {
+        "attachmentUpgrades": [
+            {
+                "upgradedattachment": "quickdraw2",
+                "baseattachment": "quickdraw"
+            },
+            {
+                "upgradedattachment": "custom1",
+                "baseattachment": "rf"
+            }
+        ],
+        "hash_72dde61f5350e2c:hash_781a480e": 0,
+        "hash_72de161f5351345:hash_d4b00140": 0,
+        "unequipsound": "#hash_58cf7a81be5ea28e",
+        "sortindex": 7,
+        "bgbcamoindex": 1,
+        "hash_1a9c48738bfe4409:hash_d1d9a14f": 4,
+        "hash_1b451b56a0ee77e5:hash_cc0135f7": 0,
+        "featuretype": 0,
+        "hideinmenu": 0,
+        "hash_406e3b76844e6637:hash_7fc3b44a": 5,
+        "loadoutindex": 1,
+        "previewmodelscale": 1,
+        "talismanrarity": 0,
+        "hash_52616a8f1602bb4b:hash_fe242d4b": 0,
+        "bgbrarity": 0,
+        "hash_574c7ec1a4019f56:hash_c874ab9e": 0,
+        "hash_62dc0ff35042f577:hash_3f2c4d2f": 0,
+        "equipsound": "#hash_5c782c151f76f0df",
+        "sortindexzm": 59,
+        "hash_6c190a0450674b42:hash_4d850f47": 0,
+        "talismantype": 0
+    }
 }

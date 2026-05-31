@@ -6,20 +6,20 @@
 // Size: 0x276
 function init_pentagon_box_screens()
 {
-    level.var_f6d11e0b = array( "p8_zm_off_monitor_security_screen_sale_01", "p8_zm_off_monitor_security_screen_sale_02" );
-    level.var_1c9068af = array( "p8_zm_off_monitor_security_screen_off" );
-    level.var_944b0c72 = array( "p8_zm_off_monitor_security_screen_on" );
-    level.var_ac5c8c02 = array( "p8_zm_off_monitor_security_screen_lobby", "p8_zm_off_monitor_security_screen_lobby_01" );
-    level.var_da9f6887 = array( "p8_zm_off_monitor_security_screen_lobby", "p8_zm_off_monitor_security_screen_lobby_02" );
+    level._pentagon_fire_sale = array( "p8_zm_off_monitor_security_screen_sale_01", "p8_zm_off_monitor_security_screen_sale_02" );
+    level.magic_box_tv_off = array( "p8_zm_off_monitor_security_screen_off" );
+    level.magic_box_tv_on = array( "p8_zm_off_monitor_security_screen_on" );
+    level.magic_box_tv_lobby_1 = array( "p8_zm_off_monitor_security_screen_lobby", "p8_zm_off_monitor_security_screen_lobby_01" );
+    level.magic_box_tv_lobby_2 = array( "p8_zm_off_monitor_security_screen_lobby", "p8_zm_off_monitor_security_screen_lobby_02" );
     level.var_ffdbb303 = array( "p8_zm_off_monitor_security_screen_lobby", "p8_zm_off_monitor_security_screen_lobby_03" );
-    level.var_8eaa08d5 = array( "p8_zm_off_monitor_security_screen_warroom", "p8_zm_off_monitor_security_screen_warroom_01" );
+    level.magic_box_tv_warroom_1 = array( "p8_zm_off_monitor_security_screen_warroom", "p8_zm_off_monitor_security_screen_warroom_01" );
     level.var_a47d347b = array( "p8_zm_off_monitor_security_screen_warroom", "p8_zm_off_monitor_security_screen_warroom_02" );
     level.var_f32c51dc = array( "p8_zm_off_monitor_security_screen_warroom", "p8_zm_off_monitor_security_screen_warroom_03" );
-    level.var_ae05b855 = array( "p8_zm_off_monitor_security_screen_labs", "p8_zm_off_monitor_security_screen_labs_01" );
-    level.var_680eac7c = array( "p8_zm_off_monitor_security_screen_labs", "p8_zm_off_monitor_security_screen_labs_02" );
-    level.var_37c4cbe9 = array( "p8_zm_off_monitor_security_screen_labs", "p8_zm_off_monitor_security_screen_labs_03" );
-    level.var_be9b9bfc = array( "p8_zm_off_monitor_security_screen_logo" );
-    level.open_chest_location = array( level.var_ac5c8c02, level.var_da9f6887, level.var_ffdbb303, level.var_8eaa08d5, level.var_a47d347b, level.var_f32c51dc, level.var_ae05b855, level.var_680eac7c, level.var_37c4cbe9 );
+    level.magic_box_tv_labs_1 = array( "p8_zm_off_monitor_security_screen_labs", "p8_zm_off_monitor_security_screen_labs_01" );
+    level.magic_box_tv_labs_2 = array( "p8_zm_off_monitor_security_screen_labs", "p8_zm_off_monitor_security_screen_labs_02" );
+    level.magic_box_tv_labs_3 = array( "p8_zm_off_monitor_security_screen_labs", "p8_zm_off_monitor_security_screen_labs_03" );
+    level.magic_box_tv_random = array( "p8_zm_off_monitor_security_screen_logo" );
+    level.open_chest_location = array( level.magic_box_tv_lobby_1, level.magic_box_tv_lobby_2, level.var_ffdbb303, level.magic_box_tv_warroom_1, level.var_a47d347b, level.var_f32c51dc, level.magic_box_tv_labs_1, level.magic_box_tv_labs_2, level.magic_box_tv_labs_3 );
     level._custom_box_monitor = &function_d531af7d;
 }
 
@@ -35,16 +35,16 @@ function function_d531af7d( client_num, state )
     {
         if ( level._power_on == 0 )
         {
-            screen_to_display = level.var_1c9068af;
+            screen_to_display = level.magic_box_tv_off;
         }
         else
         {
-            screen_to_display = level.var_944b0c72;
+            screen_to_display = level.magic_box_tv_on;
         }
     }
     else if ( state == "f" )
     {
-        screen_to_display = level.var_f6d11e0b;
+        screen_to_display = level._pentagon_fire_sale;
     }
     else
     {
@@ -84,7 +84,7 @@ function function_349aed4a( client_num )
     for ( i = 0; i < level.var_c1947c95[ client_num ].size ; i++ )
     {
         tele = level.var_c1947c95[ client_num ][ i ];
-        tele setmodel( level.var_1c9068af[ 0 ] );
+        tele setmodel( level.magic_box_tv_off[ 0 ] );
         wait 0.1;
     }
 }
@@ -105,9 +105,9 @@ function function_ecd6c9b9( model_array, endon_notify )
             wait 3;
         }
         
-        if ( 6 > randomint( 100 ) && isdefined( level.var_be9b9bfc ) )
+        if ( 6 > randomint( 100 ) && isdefined( level.magic_box_tv_random ) )
         {
-            self setmodel( level.var_be9b9bfc[ randomint( level.var_be9b9bfc.size ) ] );
+            self setmodel( level.magic_box_tv_random[ randomint( level.magic_box_tv_random.size ) ] );
             wait 2;
         }
         

@@ -1,11 +1,10 @@
 {
     "name": "#zmdlc4",
-    "blackMarketName": "#",
-    "blackMarketDesc": "#",
-    "entitlementNameXHash": "#",
+    "previewImage": "#ui_menu_store_product_b04_tag_der_toten_large",
+    "productImage": "#ui_menu_store_product_b04_tag_der_toten_large",
+    "blackMarketImage": "#t7_store_product_bo4",
     "metadata": "DLC4ZM",
-    "previewImageName": "hash_607218a890fec39c",
-    "productImageName": "hash_607218a890fec39c",
-    "blackMarketImageName": "hash_1217b62ca29dad38",
-    "visibility": true
+    "visibility": true,
+    "unka2": true,
+    "unka3": true
 }

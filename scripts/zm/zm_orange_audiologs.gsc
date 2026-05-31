@@ -16,7 +16,7 @@
 // Size: 0x44
 function preload()
 {
-    clientfield::register( "scriptmover", "" + #"hash_4a18e1ea1950215d", 24000, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"sam_orb_fx", 24000, 1, "int" );
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
@@ -30,7 +30,7 @@ function init()
     if ( zm_utility::is_ee_enabled() )
     {
         init_records();
-        function_d6fec498();
+        init_reels();
         function_ecba80df();
         function_922ff46a();
         init_orbs();
@@ -121,7 +121,7 @@ function function_aef698f1()
 // Params 0
 // Checksum 0x8e371ca5, Offset: 0x798
 // Size: 0x1dc
-function function_d6fec498()
+function init_reels()
 {
     level.s_audiologs.s_reels = spawnstruct();
     level.s_audiologs.s_reels.n_collected = 0;
@@ -275,7 +275,7 @@ function setup_orb()
     self setcandamage( 1 );
     self.allowdeath = 0;
     self thread function_530a6195();
-    self clientfield::set( "" + #"hash_4a18e1ea1950215d", 1 );
+    self clientfield::set( "" + #"sam_orb_fx", 1 );
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs

@@ -72,7 +72,7 @@ function enable_zombshell_perk_for_level()
 function function_137d1be7()
 {
     clientfield::register( "scriptmover", "" + #"zombshell_aoe", 15000, 1, "int" );
-    clientfield::register( "toplayer", "" + #"hash_5f545b88ba3e2938", 15000, 1, "int" );
+    clientfield::register( "toplayer", "" + #"player_zombshell_fx", 15000, 1, "int" );
     clientfield::register( "actor", "" + #"zombshell_explosion", 15000, 1, "counter" );
 }
 
@@ -396,7 +396,7 @@ function function_279e31b8( e_owner )
         if ( !isdefined( self.var_9c1c5b59 ) )
         {
             self val::set( #"perk_zombshell", "ignoreme" );
-            self clientfield::set_to_player( "" + #"hash_5f545b88ba3e2938", 1 );
+            self clientfield::set_to_player( "" + #"player_zombshell_fx", 1 );
             self.var_9c1c5b59 = 1;
         }
         
@@ -416,7 +416,7 @@ function function_279e31b8( e_owner )
 function function_993d228c()
 {
     self val::reset( #"perk_zombshell", "ignoreme" );
-    self clientfield::set_to_player( "" + #"hash_5f545b88ba3e2938", 0 );
+    self clientfield::set_to_player( "" + #"player_zombshell_fx", 0 );
     self.var_9c1c5b59 = undefined;
 }
 

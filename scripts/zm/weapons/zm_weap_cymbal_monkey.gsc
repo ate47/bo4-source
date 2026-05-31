@@ -512,7 +512,7 @@ function player_throw_cymbal_monkey( e_grenade, num_attractors, max_attract_dist
 // Params 0, eflags: 0x4
 // Checksum 0x551125e0, Offset: 0x1648
 // Size: 0xae, Type: bool
-function private function_ab9a9770()
+function private duf47()
 {
     s_trace = groundtrace( self.origin + ( 0, 0, 70 ), self.origin + ( 0, 0, -100 ), 0, self );
     

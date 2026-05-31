@@ -3,8 +3,8 @@
     "baseWeapon": "#ww_blundergat_t8",
     "displayname": "#zmweapon/blundergat",
     "xhash_60": "#hash_2531b83efe0f772c",
-    "xhash_70": "#ww_blundergat_t8",
-    "streamkey": "#hash_2b7edf676209ff77",
+    "weapon70": "#ww_blundergat_t8",
+    "soundbank": "#ww_blundergat_t8_soundbank",
     "scrstr_8c8": [
         "tag_muzzle_acid",
         "tag_barrel_le_acid",
@@ -26,21 +26,22 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "WARZONE",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
     "firesound": "#hash_409862427a8c12b2",
     "firesoundplayer": "#hash_766d79429990fe57",
     "sound240": "#hash_631a067190b54300",
@@ -51,6 +52,9 @@
     ],
     "attachmentUniques": [
         "#hash_3bf69852eaa6bc6f"
+    ],
+    "tracers": [
+        "#hash_d6f045ae9b61e985"
     ],
     "viewmodel": [
         "#wpn_t8_zm_blundergat_view"

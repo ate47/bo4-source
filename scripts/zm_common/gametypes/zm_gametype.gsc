@@ -135,7 +135,7 @@ function main()
     zm_utility::set_gamemode_var( "post_init_zombie_spawn_func", undefined );
     zm_utility::set_gamemode_var( "match_end_notify", undefined );
     zm_utility::set_gamemode_var( "match_end_func", undefined );
-    bundle = function_302bd0b9();
+    bundle = getgametypescriptbundle();
     setvisiblescoreboardcolumns( bundle.scoreboard_1, bundle.scoreboard_2, bundle.scoreboard_3, bundle.scoreboard_4, bundle.scoreboard_5, bundle.var_d4259e74, bundle.var_54dd9ff6, bundle.var_5ee7b40a );
     callback::on_connect( &onplayerconnect_check_for_hotjoin );
 }
@@ -227,9 +227,9 @@ function canplayersuicide()
 // Size: 0x5c
 function onplayerdisconnect()
 {
-    if ( isdefined( level.var_7b27c856 ) )
+    if ( isdefined( level.game_mode_custom_onplayerdisconnect ) )
     {
-        level [[ level.var_7b27c856 ]]( self );
+        level [[ level.game_mode_custom_onplayerdisconnect ]]( self );
     }
     
     self zm_laststand::add_weighted_down();
@@ -466,9 +466,9 @@ function onspawnplayer( predictedspawn = 0 )
         self enableweapons();
     }
     
-    if ( isdefined( level.var_ce6bb796 ) )
+    if ( isdefined( level.game_mode_spawn_player_logic ) )
     {
-        spawn_in_spectate = [[ level.var_ce6bb796 ]]();
+        spawn_in_spectate = [[ level.game_mode_spawn_player_logic ]]();
         
         if ( spawn_in_spectate )
         {
@@ -847,9 +847,9 @@ function onplayerconnect()
         waitresult = level waittill( #"connected" );
         waitresult.player thread onplayerspawned();
         
-        if ( isdefined( level.var_2742b26e ) )
+        if ( isdefined( level.game_module_onplayerconnect ) )
         {
-            waitresult.player [[ level.var_2742b26e ]]();
+            waitresult.player [[ level.game_module_onplayerconnect ]]();
         }
     }
 }
@@ -877,9 +877,9 @@ function onplayerspawned()
             self thread zm_laststand::auto_revive( self );
         }
         
-        if ( isdefined( level.var_3129849c ) )
+        if ( isdefined( level.custom_player_fake_death_cleanup ) )
         {
-            self [[ level.var_3129849c ]]();
+            self [[ level.custom_player_fake_death_cleanup ]]();
         }
         
         self setstance( "stand" );
@@ -908,9 +908,9 @@ function onplayerspawned()
             self switchtoweapon( level._team_loadout );
         }
         
-        if ( isdefined( level.var_3c7ec322 ) )
+        if ( isdefined( level.gamemode_post_spawn_logic ) )
         {
-            self [[ level.var_3c7ec322 ]]();
+            self [[ level.gamemode_post_spawn_logic ]]();
         }
     }
 }
@@ -963,9 +963,9 @@ function player_hotjoin()
     
     self util::streamer_wait( undefined, 0, 30 );
     
-    if ( isdefined( level.var_58d27156 ) )
+    if ( isdefined( level.hotjoin_extra_blackscreen_time ) )
     {
-        wait level.var_58d27156;
+        wait level.hotjoin_extra_blackscreen_time;
     }
     
     initialblackend();

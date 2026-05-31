@@ -924,7 +924,7 @@ function shutdownoncancelevent( placeable )
         }
     }
     
-    if ( function_3132f113( placeable ) )
+    if ( isremovedentity( placeable ) )
     {
         if ( isdefined( vehicle ) )
         {

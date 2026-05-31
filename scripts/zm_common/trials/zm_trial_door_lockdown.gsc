@@ -46,10 +46,10 @@ function private on_begin()
 {
     function_58fc4e38( 8 );
     level flag::set( #"disable_fast_travel" );
-    var_57ba058f = getentarray( "gondola_call_trigger", "targetname" );
-    var_9ce0aba1 = getentarray( "gondola_move_trigger", "targetname" );
-    array::run_all( var_57ba058f, &setinvisibletoall );
-    array::run_all( var_9ce0aba1, &setinvisibletoall );
+    a_t_call_triggers = getentarray( "gondola_call_trigger", "targetname" );
+    a_t_move_triggers = getentarray( "gondola_move_trigger", "targetname" );
+    array::run_all( a_t_call_triggers, &setinvisibletoall );
+    array::run_all( a_t_move_triggers, &setinvisibletoall );
 }
 
 // Namespace zm_trial_door_lockdown/zm_trial_door_lockdown
@@ -59,10 +59,10 @@ function private on_begin()
 function private on_end( round_reset )
 {
     level flag::clear( #"disable_fast_travel" );
-    var_57ba058f = getentarray( "gondola_call_trigger", "targetname" );
-    var_9ce0aba1 = getentarray( "gondola_move_trigger", "targetname" );
-    array::run_all( var_57ba058f, &setvisibletoall );
-    array::run_all( var_9ce0aba1, &setvisibletoall );
+    a_t_call_triggers = getentarray( "gondola_call_trigger", "targetname" );
+    a_t_move_triggers = getentarray( "gondola_move_trigger", "targetname" );
+    array::run_all( a_t_call_triggers, &setvisibletoall );
+    array::run_all( a_t_move_triggers, &setvisibletoall );
     function_92f23ef0();
 }
 

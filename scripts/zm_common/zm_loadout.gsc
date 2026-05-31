@@ -738,9 +738,9 @@ function has_player_hero_weapon()
 // Size: 0x216
 function register_offhand_weapons_for_level_defaults()
 {
-    if ( isdefined( level.var_54f1e174 ) )
+    if ( isdefined( level.register_offhand_weapons_for_level_defaults_override ) )
     {
-        [[ level.var_54f1e174 ]]();
+        [[ level.register_offhand_weapons_for_level_defaults_override ]]();
         return;
     }
     

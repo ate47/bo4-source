@@ -1,0 +1,247 @@
+[
+    {
+        "name": "#mp_seaside_alt",
+        "base": "#mp_seaside",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_offshore",
+        "base": "#mp_offshore",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_frenetic",
+        "base": "#mp_frenetic",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_silo",
+        "base": "#mp_silo",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_hacienda",
+        "base": "#mp_hacienda",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_gridlock",
+        "base": "#mp_gridlock",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_urban",
+        "base": "#mp_urban",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_icebreaker",
+        "base": "#mp_icebreaker",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_morocco",
+        "base": "#mp_morocco",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_militia",
+        "base": "#mp_militia",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_firingrange2_alt",
+        "base": "#mp_firingrange2",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_mountain2",
+        "base": "#mp_mountain2",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_slums2",
+        "base": "#mp_slums2",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_jungle2",
+        "base": "#mp_jungle2",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_nuketown_4",
+        "base": "#mp_nuketown_4",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_seaside",
+        "base": "#mp_seaside",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_firingrange2",
+        "base": "#mp_firingrange2",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_offshore_alt",
+        "base": "#mp_offshore",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_grind",
+        "base": "#mp_grind",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_hacienda_alt",
+        "base": "#mp_hacienda_alt",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_madagascar",
+        "base": "#mp_madagascar",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_elevation",
+        "base": "#mp_elevation",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_station",
+        "base": "#mp_station",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_casino",
+        "base": "#mp_casino",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_geothermal",
+        "base": "#mp_geothermal",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_russianbase",
+        "base": "#mp_russianbase",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_embassy",
+        "base": "#mp_embassy",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_austria",
+        "base": "#mp_austria",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_zombie_museum",
+        "base": "#mp_zombie_museum",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_cairo",
+        "base": "#mp_cairo",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_cosmodrome",
+        "base": "#mp_cosmodrome",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_maldives",
+        "base": "#mp_maldives",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_jungle2_alt",
+        "base": "#mp_jungle2",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#mp_quickplay",
+        "base": "#mp_quickplay",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#wz_open_skyscrapers",
+        "base": "#wz_open_skyscrapers",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#wz_escape",
+        "base": "#wz_escape",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#wz_quickplay",
+        "base": "#wz_quickplay",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#wz_escape_alt",
+        "base": "#wz_escape_alt",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#zm_zodt8",
+        "base": "#zm_zodt8",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#zm_towers",
+        "base": "#zm_towers",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#zm_escape",
+        "base": "#zm_escape",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#zm_office",
+        "base": "#zm_office",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#zm_red",
+        "base": "#zm_red",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#zm_mansion",
+        "base": "#zm_mansion",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#zm_quickplay",
+        "base": "#zm_quickplay",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#zm_white",
+        "base": "#zm_white",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#zm_orange",
+        "base": "#zm_orange",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#zm_blue",
+        "base": "#zm_blue",
+        "mapPlatformMask": 7
+    },
+    {
+        "name": "#wz_features_test",
+        "base": "#wz_features_test",
+        "mapPlatformMask": 7
+    }
+]

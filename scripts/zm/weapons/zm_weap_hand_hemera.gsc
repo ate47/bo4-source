@@ -446,9 +446,9 @@ function function_8e7f5291( e_projectile, ai_zombie, n_damage )
     }
     else
     {
-        var_2ed6f142 = self getweaponmuzzlepoint();
+        v_view_pos = self getweaponmuzzlepoint();
         v_forward = self getweaponforwarddir();
-        v_end = var_2ed6f142 + v_forward * 200;
+        v_end = v_view_pos + v_forward * 200;
         n_dist_sq = distance2dsquared( self.origin, v_end );
         
         if ( isdefined( ai_zombie ) && distance2dsquared( e_projectile.origin, ai_zombie.origin ) <= n_dist_sq )
@@ -474,11 +474,11 @@ function function_8e7f5291( e_projectile, ai_zombie, n_damage )
             v_org = function_30239376( ai_zombie );
             n_dist = distance( self.origin, v_org );
             var_7fd007f9 = n_dist * 0.5;
-            v_end = var_2ed6f142 + v_forward * 100;
+            v_end = v_view_pos + v_forward * 100;
             var_a93a9211 = distance( self.origin, v_end );
-            v_right = var_2ed6f142 + anglestoright( self.angles ) * 50;
+            v_right = v_view_pos + anglestoright( self.angles ) * 50;
             v_right_end = v_right + v_forward * 100 + ( 0, 0, 24 );
-            v_left = var_2ed6f142 - anglestoright( self.angles ) * 50;
+            v_left = v_view_pos - anglestoright( self.angles ) * 50;
             v_left_end = v_left + v_forward * 100 + ( 0, 0, -24 );
             n_time = var_a93a9211 / 1500;
             
@@ -782,10 +782,10 @@ function function_aa6f2b4()
 // Size: 0x110
 function function_3f079da()
 {
-    var_2ed6f142 = self getweaponmuzzlepoint();
+    v_view_pos = self getweaponmuzzlepoint();
     v_forward = self getweaponforwarddir();
-    v_end = var_2ed6f142 + v_forward * 3000;
-    a_trace = bullettrace( var_2ed6f142, v_end, 1, self );
+    v_end = v_view_pos + v_forward * 3000;
+    a_trace = bullettrace( v_view_pos, v_end, 1, self );
     
     if ( isdefined( level.var_137b8e71 ) )
     {

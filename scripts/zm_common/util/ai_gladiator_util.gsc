@@ -129,7 +129,7 @@ function vo()
 // Params 2
 // Checksum 0x357953b6, Offset: 0x758
 // Size: 0xcc
-function function_c03b6f46( var_4e77d211, var_3551e3b9 )
+function function_c03b6f46( n_min_dist_sq, n_max_dist_sq )
 {
     self endon( #"death" );
     
@@ -141,7 +141,7 @@ function function_c03b6f46( var_4e77d211, var_3551e3b9 )
         {
             n_dist_sq = distance2dsquared( self.origin, self.enemy.origin );
             
-            if ( n_dist_sq > var_4e77d211 && n_dist_sq < var_3551e3b9 )
+            if ( n_dist_sq > n_min_dist_sq && n_dist_sq < n_max_dist_sq )
             {
                 break;
             }
@@ -193,7 +193,7 @@ function function_bfa79e98( sp_spawner = level.var_4d136b9a[ 0 ], s_spot, str_ty
 // Params 6
 // Checksum 0xc45b8545, Offset: 0x978
 // Size: 0x294
-function function_69f309b( n_to_spawn = 1, str_type, var_1fafa3fc, b_force_spawn = 0, var_eb3a8721 = undefined, n_round )
+function function_69f309b( n_to_spawn = 1, str_type, func_on_spawned, b_force_spawn = 0, var_eb3a8721 = undefined, n_round )
 {
     n_spawned = 0;
     
@@ -238,9 +238,9 @@ function function_69f309b( n_to_spawn = 1, str_type, var_1fafa3fc, b_force_spawn
             ai.find_flesh_struct_string = s_spawn_loc.find_flesh_struct_string;
             n_spawned++;
             
-            if ( isdefined( var_1fafa3fc ) )
+            if ( isdefined( func_on_spawned ) )
             {
-                ai thread [[ var_1fafa3fc ]]( s_spawn_loc );
+                ai thread [[ func_on_spawned ]]( s_spawn_loc );
             }
         }
         

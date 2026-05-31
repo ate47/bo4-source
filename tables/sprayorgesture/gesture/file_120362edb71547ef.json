@@ -15,17 +15,17 @@
             "gesture2": "#hash_422f2e5ab5c7c1ab",
             "roles": [
                 "#prt_mp_firebreak",
-                "#hash_8596bc069593313",
+                "#prt_wz_firebreak",
                 "#prt_mp_enforcer",
-                "#hash_17c02481305f0e24",
-                "#hash_42e7a274de12337e",
-                "#hash_7beba0d40d750e10",
-                "#hash_6c8d991db6f42c4a",
-                "#hash_57d9e98fa3f08f76",
-                "#hash_203a1dcc75cf8c53",
-                "#hash_4a011dffec0dd650",
-                "#hash_1ee2659e8dff07d8",
-                "#hash_5517568f2fb8127",
+                "#prt_wz_enforcer",
+                "#prt_wz_soldier_air_female",
+                "#prt_wz_soldier_hardened_male",
+                "#prt_wz_soldier_land_male",
+                "#prt_wz_soldier_sea_male",
+                "#prt_wz_soldier_seal_female",
+                "#prt_mp_spectre",
+                "#prt_wz_spectre",
+                "#prt_mp_reaper",
                 "#hash_76cce42bfc9866cd"
             ]
         }

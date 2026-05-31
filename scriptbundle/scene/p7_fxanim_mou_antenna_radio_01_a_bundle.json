@@ -1,7 +1,7 @@
 {
     "objects": [
         {
-            "mainanim": "anim4#hash_5d3306893a5030f9",
+            "mainanim": "anim#hash_5d3306893a5030f9",
             "model": "model#p7_fxanim_mou_antenna_radio_01_a_animated",
             "type": "prop",
             "vmtype": "server",

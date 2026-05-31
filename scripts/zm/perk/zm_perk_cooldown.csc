@@ -43,7 +43,7 @@ function init_cooldown()
 {
     if ( isdefined( level.enable_magic ) && level.enable_magic )
     {
-        level._effect[ #"divetonuke_light" ] = #"hash_2225287695ddf9c9";
+        level._effect[ #"divetonuke_light" ] = #"_t6/misc/fx_zombie_cola_dtap_on";
     }
 }
 

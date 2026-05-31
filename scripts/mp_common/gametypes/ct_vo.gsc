@@ -482,7 +482,7 @@ function function_625a37f9( vo, _notify, b_once = 1, var_cd53c705 = 1, var_dfbbb
         e_player endoncallback( &function_dae6df54, #"death", #"hash_4c2e751dd9e2bb57" );
     }
     
-    var_e8ee1cd1 = 0;
+    n_ndx = 0;
     
     if ( isdefined( var_352fef28 ) && var_352fef28 )
     {
@@ -500,13 +500,13 @@ function function_625a37f9( vo, _notify, b_once = 1, var_cd53c705 = 1, var_dfbbb
         
         if ( var_352fef28 )
         {
-            str_vo = vo[ var_e8ee1cd1 ];
+            str_vo = vo[ n_ndx ];
             e_player function_831e0584( array( str_vo ) );
-            var_e8ee1cd1++;
+            n_ndx++;
             
-            if ( var_e8ee1cd1 >= vo.size )
+            if ( n_ndx >= vo.size )
             {
-                var_e8ee1cd1 = 0;
+                n_ndx = 0;
                 
                 if ( var_37338add )
                 {

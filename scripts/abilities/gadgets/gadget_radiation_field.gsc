@@ -659,8 +659,8 @@ function function_a1cc4c59( weapon, killcament )
     player = self;
     player endon( #"radiation_shutdown", #"disconnect" );
     player.var_5350f794 = undefined;
-    damage_state( 1, weapon, level.radiationfield_bundle.var_4d16c61f, level.radiationfield_bundle.var_9c3a936e, level.radiationfield_bundle.baseheightmin, level.radiationfield_bundle.baseheightmax, level.radiationfield_bundle.baseduration, level.radiationfield_bundle.var_1acd89e2, level.radiationfield_bundle.var_e5a95fca, undefined, killcament );
-    damage_state( 2, weapon, level.radiationfield_bundle.var_9c3a936e, level.radiationfield_bundle.var_2b4199b5, level.radiationfield_bundle.baseheightmax, level.radiationfield_bundle.midheight, level.radiationfield_bundle.var_500496c9, level.radiationfield_bundle.var_1acd89e2, level.radiationfield_bundle.var_e5a95fca, undefined, killcament );
+    damage_state( 1, weapon, level.radiationfield_bundle.var_4d16c61f, level.radiationfield_bundle.var_9c3a936e, level.radiationfield_bundle.baseheightmin, level.radiationfield_bundle.baseheightmax, level.radiationfield_bundle.baseduration, level.radiationfield_bundle.var_1acd89e2, level.radiationfield_bundle.baseloop, undefined, killcament );
+    damage_state( 2, weapon, level.radiationfield_bundle.var_9c3a936e, level.radiationfield_bundle.var_2b4199b5, level.radiationfield_bundle.baseheightmax, level.radiationfield_bundle.midheight, level.radiationfield_bundle.var_500496c9, level.radiationfield_bundle.var_1acd89e2, level.radiationfield_bundle.baseloop, undefined, killcament );
     player playlocalsound( #"hash_352529c7ca9f6143" );
     player hide_player();
     player.var_d44d1214 clientfield::set( "self_destruct_start", 1 );

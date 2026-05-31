@@ -166,22 +166,22 @@ function is_enabled()
 // Namespace draft/draft
 // Params 0
 // Checksum 0x22e59475, Offset: 0x7f8
-// Size: 0x72, Type: bool
+// Size: 0x72
 function is_draft_this_round()
 {
     if ( !is_enabled() )
     {
-        return false;
+        return 0;
     }
     
     if ( getgametypesetting( #"drafteveryround" ) == 1 )
     {
-        return true;
+        return 1;
     }
     
     if ( util::isoneround() )
     {
-        return true;
+        return 1;
     }
     
     return util::isfirstround();
@@ -403,7 +403,7 @@ function draft_initialize()
         player clientfield::set_player_uimodel( "PositionDraft.autoSelected", 0 );
     }
     
-    level.var_b318d3d1 = getgametypesetting( #"drafttime" ) + getgametypesetting( #"hash_4e4352bd1aaeedfe" );
+    level.var_b318d3d1 = getgametypesetting( #"drafttime" ) + getgametypesetting( #"draftmatchstarttime" );
     function_ee80d2e8( int( max( 0, level.var_b318d3d1 ) ) );
 }
 
@@ -523,7 +523,7 @@ function wait_for_players()
         wait 0.2;
     }
     
-    level.var_b318d3d1 = getgametypesetting( #"drafttime" ) + getgametypesetting( #"hash_4e4352bd1aaeedfe" ) + 20;
+    level.var_b318d3d1 = getgametypesetting( #"drafttime" ) + getgametypesetting( #"draftmatchstarttime" ) + 20;
     function_ee80d2e8( int( max( 0, level.var_b318d3d1 ) ) );
     starttime = gettime();
     
@@ -537,7 +537,7 @@ function wait_for_players()
         }
     }
     
-    level.var_b318d3d1 = getgametypesetting( #"drafttime" ) + getgametypesetting( #"hash_4e4352bd1aaeedfe" );
+    level.var_b318d3d1 = getgametypesetting( #"drafttime" ) + getgametypesetting( #"draftmatchstarttime" );
     function_ee80d2e8( int( max( 0, level.var_b318d3d1 ) ) );
 }
 
@@ -955,7 +955,7 @@ function assign_remaining_players( only_assign_player )
 // Size: 0x24c
 function game_start()
 {
-    timeremaining = getgametypesetting( #"hash_4e4352bd1aaeedfe" );
+    timeremaining = getgametypesetting( #"draftmatchstarttime" );
     starttime = gettime();
     
     if ( level.var_5be52892 == 1 )

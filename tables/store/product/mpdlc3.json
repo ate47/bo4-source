@@ -1,11 +1,10 @@
 {
     "name": "#mpdlc3",
-    "blackMarketName": "#",
-    "blackMarketDesc": "#",
-    "entitlementNameXHash": "#",
+    "previewImage": "#ui_menu_store_product_b04_spectre_rising_large",
+    "productImage": "#ui_menu_store_product_b04_spectre_rising_large",
+    "blackMarketImage": "#t7_store_product_bo4",
     "metadata": "DLC4MP",
-    "previewImageName": "hash_25bef1c4aad063aa",
-    "productImageName": "hash_25bef1c4aad063aa",
-    "blackMarketImageName": "hash_1217b62ca29dad38",
-    "visibility": true
+    "visibility": true,
+    "unka2": true,
+    "unka3": true
 }

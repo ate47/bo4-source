@@ -16,7 +16,7 @@ server,#scripts/zm/archetype/archetype_zod_companion.gsc
 server,#scripts/zm/ai/zm_ai_dog_interface.gsc
 server,#scripts/zm/weapons/zm_weap_galvaknuckles_t8.gsc
 server,#scripts/zm/ai/zm_ai_mannequin.gsc
-server,#script_5eb334a29c814cf2
+server,#scripts/zm/ai/zm_ai_mannequin_ally.gsc
 server,#scripts/zm/powerup/zm_powerup_free_perk.gsc
 server,#scripts/zm/ai/zm_ai_nova_crawler.gsc
 server,#scripts/zm/ai/zm_ai_weeping_angel.gsc

@@ -1,46 +1,46 @@
 {
     "objects": [
         {
-            "colorid": "fx#hash_220042bdcc89cd35"
+            "colorid": "fx#ui/fx_koth_marker_red_window"
         },
         {
-            "colorid": "fx#hash_220042bdcc89cd35"
+            "colorid": "fx#ui/fx_koth_marker_red_window"
         },
         {
-            "colorid": "fx#hash_4794548dd4d279cc"
+            "colorid": "fx#ui/fx_koth_marker_orng_window"
         },
         {
-            "colorid": "fx#hash_4794548dd4d279cc"
+            "colorid": "fx#ui/fx_koth_marker_orng_window"
         },
         {
-            "colorid": "fx#hash_5090794c3a87874a"
+            "colorid": "fx#ui/fx_koth_marker_yellow_window"
         },
         {
-            "colorid": "fx#hash_5090794c3a87874a"
+            "colorid": "fx#ui/fx_koth_marker_yellow_window"
         },
         {
-            "colorid": "fx#hash_79842657e19be0f5"
+            "colorid": "fx#ui/fx_koth_marker_green_window"
         },
         {
-            "colorid": "fx#hash_79842657e19be0f5"
+            "colorid": "fx#ui/fx_koth_marker_green_window"
         },
         {
-            "colorid": "fx#hash_7e6be698bd794446"
+            "colorid": "fx#ui/fx_koth_marker_blue_window"
         },
         {
-            "colorid": "fx#hash_7e6be698bd794446"
+            "colorid": "fx#ui/fx_koth_marker_blue_window"
         },
         {
-            "colorid": "fx#hash_7e6be698bd794446"
+            "colorid": "fx#ui/fx_koth_marker_blue_window"
         },
         {
-            "colorid": "fx#hash_7e6be698bd794446"
+            "colorid": "fx#ui/fx_koth_marker_blue_window"
         },
         {
-            "colorid": "fx#hash_451ca69d2f44f3d7"
+            "colorid": "fx#ui/fx_koth_marker_white_window"
         },
         {
-            "colorid": "fx#hash_451ca69d2f44f3d7"
+            "colorid": "fx#ui/fx_koth_marker_white_window"
         }
     ],
     "configstringfiletype": "scriptbundle",

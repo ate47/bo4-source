@@ -11,7 +11,7 @@ version 19 {
     };
 
     // idx 2 members 3 size 0x20
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x18
         uint:24 score;
         // offset 0x18, size 0x1
@@ -97,7 +97,7 @@ version 19 {
     };
 
     // idx 7 members 1 size 0x1
-    struct hash_7690a9df20146d8a {
+    struct zmcampaign {
         // offset 0x0, size 0x1
         bool unlocked;
     };
@@ -227,13 +227,13 @@ version 19 {
         // offset 0x488, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x4b8, size 0x140
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x5f8, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 14 members 3 size 0x48
-    struct hash_63565a3d40f66255 {
+    struct accolade_s {
         // offset 0x0, size 0x8
         uint:2 state;
         // offset 0x8, size 0x20
@@ -253,15 +253,15 @@ version 19 {
         // offset 0x188, size 0x20
         uint hash_7787ac0184215bc1;
         // offset 0x1a8, size 0x558
-        hash_63565a3d40f66255 accolades[19];
+        accolade_s accolades[19];
         // offset 0x700, size 0x20
         uint hash_3cd96ca92c6f0d4c;
         // offset 0x720, size 0x10
         short hash_1cc8d841efacb52a;
         // offset 0x730, size 0x6
-        bool hash_1e0160af4fd80dff[6];
+        bool completeddifficulties[6];
         // offset 0x736, size 0x6
-        bool hash_518113a79b08988[6];
+        bool previouscompleteddifficulties[6];
         // offset 0x73c, size 0x1
         bool allcollectiblescollected;
         // offset 0x73d, size 0x1
@@ -271,7 +271,7 @@ version 19 {
         // offset 0x748, size 0x1
         bool hash_71b609b078e360c0;
         // offset 0x749, size 0x6
-        bool hash_657891d65d881524[6];
+        bool receivedxpfordifficulty[6];
         // offset 0x74f, size 0x1
         bool hasbeencompleted;
         // offset 0x750, size 0x6
@@ -287,9 +287,9 @@ version 19 {
         // offset 0x8, size 0x20
         uint highestscore;
         // offset 0x28, size 0x20
-        uint hash_1b146f5d12b2b147;
+        uint limbhits;
         // offset 0x48, size 0x20
-        uint hash_25ce643c6cf6507e;
+        uint torsohits;
         // offset 0x68, size 0x20
         uint hash_52dbe660cac88df9;
         // offset 0x88, size 0x4
@@ -303,7 +303,7 @@ version 19 {
         // offset 0x0, size 0x20
         uint hash_2b12202dea292a78;
         // offset 0x20, size 0x20
-        uint hash_65157f3e7aec5b46;
+        uint roundachieved;
         // offset 0x40, size 0x20
         uint hash_256e550d360e7cf6;
         // offset 0x60, size 0x20
@@ -313,27 +313,27 @@ version 19 {
         // offset 0xa0, size 0x20
         uint hash_477109e1674d778e;
         // offset 0xc0, size 0x20
-        uint hash_6f7512e92e96a86a;
+        uint cowsexploded;
         // offset 0xe0, size 0x20
         uint hash_52086efefda6cd87;
         // offset 0x100, size 0x20
         uint hash_4c59bf00eb8047c0;
         // offset 0x120, size 0x20
-        uint hash_4cda3bb269028c08;
+        uint enemykills;
         // offset 0x140, size 0x20
-        uint hash_c159a616c8e909f;
+        uint totalgamesplayed;
         // offset 0x160, size 0x20
-        uint hash_1b75e7812ae582a0;
+        uint scoreachieved;
         // offset 0x180, size 0x20
         uint hash_6e3edce84270ac4c;
         // offset 0x1a0, size 0x20
         uint hash_3ed0ae0744c78900;
         // offset 0x1c0, size 0x20
-        uint hash_24bfa4caccae7ccc;
+        uint skullsearned;
     };
 
     // idx 18 members 1 size 0x390
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x390
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -343,7 +343,7 @@ version 19 {
         // offset 0x0, size 0x390
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
         // offset 0x390, size 0x8
-        bool hash_798921f18e351b13[8];
+        bool challengecompleted[8];
         // offset 0x398, size 0x1
         bool purchased;
         // offset 0x399, size 0x1
@@ -357,7 +357,7 @@ version 19 {
         // offset 0x0, size 0x390
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
         // offset 0x390, size 0x8
-        bool hash_798921f18e351b13[8];
+        bool challengecompleted[8];
     };
 
     // idx 21 members 5 size 0x188
@@ -367,7 +367,7 @@ version 19 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x38
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x58, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x184, size 0x4
@@ -499,7 +499,7 @@ version 19 {
     };
 
     // idx 34 members 1 size 0x280
-    struct hash_6962b6aa0c4853f4 {
+    struct featureproperties {
         // offset 0x0, size 0x280
         float properties[20];
     };
@@ -516,26 +516,26 @@ version 19 {
         destroy_car, // 0x7,
         medal_bomb_detonated, // 0x8,
         stun_aitank_with_emp_grenade, // 0x9,
-        hash_359f05e4bb4fa57, // 0xa,
+        shotgun_mastery, // 0xa,
         films_shoutcasted, // 0xb,
         medal_flag_capture, // 0xc,
         hash_3bba76aa8987218, // 0xd,
-        hash_3bef98f1093a802, // 0xe,
+        coop_medal_scavenger_streak, // 0xe,
         time_played_total, // 0xf,
         hash_495a843c176b50c, // 0x10,
-        hash_4b3d34b8f0e5b8f, // 0x11,
+        medal_destroyed_uav, // 0x11,
         perk_fastweaponswitch_kill_after_swap, // 0x12,
         mappackmask, // 0x13,
         kill_nemesis, // 0x14,
         hash_60f3f9adb22e924, // 0x15,
-        hash_66b80bdb17c4a04, // 0x16,
+        medal_kill_hacker_then_hack_in_hack, // 0x16,
         perk_protection_stun_kills, // 0x17,
         hash_7afff19891fb72e, // 0x18,
         hash_7dc6ebcd202e54f, // 0x19,
         perk_hacker_destroy, // 0x1a,
         hash_85ed95e3662c128, // 0x1b,
         rankxp, // 0x1c,
-        hash_976be36aea95e59, // 0x1d,
+        medal_destroyed_microwave_turret, // 0x1d,
         lifetime_buyin, // 0x1e,
         hash_9904e795162f703, // 0x1f,
         killsdenied, // 0x20,
@@ -546,32 +546,32 @@ version 19 {
         sessionbans, // 0x25,
         hash_d31df6b18ade168, // 0x26,
         kdratio, // 0x27,
-        hash_e2a2b7303f42341, // 0x28,
+        medal_destroyed_heli_gunner, // 0x28,
         returns, // 0x29,
         assist, // 0x2a,
-        hash_fdad95a70f179d7, // 0x2b,
-        hash_1023368faabde7bb, // 0x2c,
+        medal_destroyed_heli_guard, // 0x2b,
+        coop_medal_ransack_secured_unobtanium, // 0x2c,
         currencyspent, // 0x2d,
         emblem_version, // 0x2e,
         cp_challenges, // 0x2f,
         highlights_created, // 0x30,
         medal_defused_bomb, // 0x31,
-        hash_11d98f202734032b, // 0x32,
-        hash_124fa750b68f0d7e, // 0x33,
+        assignments_mastery, // 0x32,
+        medal_kill_enemy_with_more_ammo_oic, // 0x33,
         medal_completed_match, // 0x34,
         contracts_completed, // 0x35,
-        hash_12d8d630663bb4ba, // 0x36,
+        medal_destroyed_supply_drop, // 0x36,
         hash_13eb46cb3c4c5613, // 0x37,
-        hash_13ece4de9e4e2180, // 0x38,
-        hash_143a19a14a3654db, // 0x39,
+        coop_medal_actor_melee_kill_quadtank, // 0x38,
+        career_collectibles, // 0x39,
         assist_score_killstreak, // 0x3a,
         get_final_kill, // 0x3b,
-        hash_14e63336430e7e93, // 0x3c,
+        medal_destroyed_heli_comlink, // 0x3c,
         hash_154b0a4b01b8b616, // 0x3d,
         hash_156adf3fdb4091b7, // 0x3e,
         assist_score_microwave_turret, // 0x3f,
         hash_1715d388ed114bcd, // 0x40,
-        hash_171c599dfd8645fb, // 0x41,
+        career_accolades, // 0x41,
         hash_174beaaa686374bd, // 0x42,
         kill_with_resupplied_lethal_grenade, // 0x43,
         medal_kill_enemy_who_killed_teammate, // 0x44,
@@ -584,34 +584,34 @@ version 19 {
         medal_multikill_3, // 0x4b,
         medal_multikill_2, // 0x4c,
         medal_multikill_8, // 0x4d,
-        hash_1994a1e6fd4eac28, // 0x4e,
-        hash_19b8cdc5c2c0aeaa, // 0x4f,
+        medal_destroyed_dart, // 0x4e,
+        medal_microwave_turret_kill, // 0x4f,
         suicides, // 0x50,
         timewhennexthost, // 0x51,
-        hash_1b0d87a2f1c0272a, // 0x52,
-        hash_1b148631540ae995, // 0x53,
+        medal_x2_score_shrp, // 0x52,
+        support_killstreak_mastery, // 0x53,
         killed_dog, // 0x54,
         hash_1b5a22bbb1c029a2, // 0x55,
         hash_1bb99705ba9a0e6c, // 0x56,
         hash_1bc0e2d787ec3594, // 0x57,
         hash_1be36c00d02a3702, // 0x58,
-        hash_1be3ce237f8e1363, // 0x59,
+        medal_destroyed_aitank, // 0x59,
         hash_1cafb2c429e2e97f, // 0x5a,
         streaker, // 0x5b,
         captures, // 0x5c,
         leaderboardfailures, // 0x5d,
-        hash_1e2dfda54cd5e4c9, // 0x5e,
+        time_played_allies, // 0x5e,
         ties, // 0x5f,
         hash_1ebf7dbc9624adec, // 0x60,
-        hash_1edccd77f0b71ac2, // 0x61,
+        medal_hq_destroyed, // 0x61,
         medal_clear_2_attackers, // 0x62,
         capture_objective_in_smoke, // 0x63,
         medal_kill_enemy_while_capping, // 0x64,
-        hash_20179a04c1573a20, // 0x65,
+        sniper_mastery, // 0x65,
         career_score_multiteam, // 0x66,
         cur_win_streak, // 0x67,
-        hash_20ce01ed472f2cfa, // 0x68,
-        hash_215f2670384d5d7b, // 0x69,
+        medal_straff_run_kill, // 0x68,
+        medal_destroyed_sentry_gun, // 0x69,
         medal_multikill_more_than_8, // 0x6a,
         destroyed_helicopter_with_bullet, // 0x6b,
         hash_24c25fad1ac01302, // 0x6c,
@@ -622,12 +622,12 @@ version 19 {
         hash_26d6f92287f0a1e8, // 0x71,
         hash_26e0be3755c42495, // 0x72,
         defuses, // 0x73,
-        hash_275f021a92a63aee, // 0x74,
+        career_tokens, // 0x74,
         medal_quickly_secure_point, // 0x75,
         hash_281d1546e5e55ca2, // 0x76,
         longshot_3_onelife, // 0x77,
-        hash_2864c17bca6e0048, // 0x78,
-        hash_28db499720aedb6e, // 0x79,
+        smg_mastery, // 0x78,
+        medal_capture_enemy_crate, // 0x79,
         perk_scavenger_kills_after_resupply, // 0x7a,
         hash_2934211bcdcc9e9f, // 0x7b,
         hash_29361ee6a3ecd300, // 0x7c,
@@ -641,21 +641,21 @@ version 19 {
         score_hc, // 0x84,
         revives, // 0x85,
         hash_2b75a2161643473b, // 0x86,
-        hash_2b75aabcf73dc800, // 0x87,
+        coop_medal_actor_melee_kill_warlord, // 0x87,
         medal_killstreak_5, // 0x88,
         hash_2bc315db95982551, // 0x89,
-        hash_2bc5c849844383ea, // 0x8a,
+        coop_medal_actor_kill_hunter, // 0x8a,
         hack_enemy_target, // 0x8b,
-        hash_2c5ae152d1f6928b, // 0x8c,
+        medal_teammate_confirm_kill, // 0x8c,
         hash_2d27ed7c35d831b4, // 0x8d,
         medal_kill_enemy_with_their_weapon, // 0x8e,
         medal_kill_flag_carrier, // 0x8f,
-        hash_2e5c1654a4fc1b1c, // 0x90,
+        medal_most_points_shrp, // 0x90,
         career_score, // 0x91,
         laststatsbackup, // 0x92,
-        hash_2f9649f2756709d6, // 0x93,
+        time_played_axis, // 0x93,
         pickups, // 0x94,
-        hash_30298932ae26bbda, // 0x95,
+        medal_multiple_grenade_launcher_kill, // 0x95,
         medal_killed_enemy_while_carrying_flag, // 0x96,
         killed_dog_close_to_teammate, // 0x97,
         hash_308b22e7c87a0709, // 0x98,
@@ -666,48 +666,48 @@ version 19 {
         hash_32227db686e80e47, // 0x9d,
         perk_noname_kills, // 0x9e,
         kill_enemy_one_bullet_sniper, // 0x9f,
-        hash_3349efb239eee96f, // 0xa0,
+        medal_destroyed_plane_mortar, // 0xa0,
         medal_kill_enemy_after_death, // 0xa1,
         hash_34783bf7a1179064, // 0xa2,
         match_bonus, // 0xa3,
         medal_backstabber_kill, // 0xa4,
         hash_349aad0f6083abf5, // 0xa5,
-        hash_34d9af35f8b02185, // 0xa6,
+        contracts_cp_spent, // 0xa6,
         hash_34e0fb49ecfca3e4, // 0xa7,
         lifetime_earnings, // 0xa8,
-        hash_3553f8161e7781d7, // 0xa9,
+        coop_medal_actor_kill_quadtank, // 0xa9,
         hash_361c89bc5aadcdac, // 0xaa,
         hash_362683bc5ab617ff, // 0xab,
         destroy_turret, // 0xac,
         hash_37e875290614f1e1, // 0xad,
         medal_killed_bomb_planter, // 0xae,
         medal_uninterrupted_obit_feed_kills, // 0xaf,
-        hash_39e43b41e43d1803, // 0xb0,
+        time_played_team3, // 0xb0,
         medal_kill_enemy_with_care_package_crush, // 0xb1,
         medal_kill_enemy_with_hacked_care_package, // 0xb2,
         chickens, // 0xb3,
         version, // 0xb4,
-        hash_3bbf88b211193c04, // 0xb5,
+        coop_medal_sabotage_cache_destroyed, // 0xb5,
         perk_gpsjammer_immune_kills, // 0xb6,
         hash_3c299d0329cb332c, // 0xb7,
-        hash_3c4542a7c82860e0, // 0xb8,
+        coop_medal_hvt_secure_data, // 0xb8,
         assist_score_cuav, // 0xb9,
         medal_elimination_and_last_player_alive, // 0xba,
         hash_3dd99fa1b0d098d9, // 0xbb,
-        hash_3e76cbc8ac01d9d7, // 0xbc,
-        hash_3f1cf355fd388770, // 0xbd,
+        medal_destroyed_remote_missle, // 0xbc,
+        medal_knife_with_ammo_oic, // 0xbd,
         kill_enemy_through_wall, // 0xbe,
         wlratio, // 0xbf,
         hash_405015b29793595f, // 0xc0,
-        hash_40882db8b6a7f07c, // 0xc1,
-        hash_40a19266327e603c, // 0xc2,
+        medal_plane_mortar_kill, // 0xc1,
+        diamond_club, // 0xc2,
         teamkills_nostats, // 0xc3,
         score, // 0xc4,
         hash_416018859c2a61e0, // 0xc5,
         hash_417ca489457d2cf4, // 0xc6,
-        hash_419d426a0886d25b, // 0xc7,
+        coop_medal_sabotage_bomb_defuser_stopped, // 0xc7,
         medal_bounce_hatchet_kill, // 0xc8,
-        hash_41ca7e5eeaa76eeb, // 0xc9,
+        time_played_opfor, // 0xc9,
         kill_every_enemy, // 0xca,
         medal_comeback_from_deathstreak, // 0xcb,
         hash_43261bbcab41f5ea, // 0xcc,
@@ -718,9 +718,9 @@ version 19 {
         hash_4474df73df91d1a5, // 0xd1,
         statsbackupversion, // 0xd2,
         perk_fastmantle_kills, // 0xd3,
-        hash_4563c8418dc6e528, // 0xd4,
-        hash_465a039cdd937ec7, // 0xd5,
-        hash_4667e99dc6606eae, // 0xd6,
+        gold_club, // 0xd4,
+        medal_kill_x2_score_shrp, // 0xd5,
+        precision_master, // 0xd6,
         hash_470c0ed4799f236a, // 0xd7,
         disarm_hacked_carepackage, // 0xd8,
         medal_won_match, // 0xd9,
@@ -728,11 +728,11 @@ version 19 {
         destroy_explosive_with_trophy, // 0xdb,
         medal_retrieve_own_tags, // 0xdc,
         killstreak_5_picked_up_weapon, // 0xdd,
-        hash_490052167ba0e80d, // 0xde,
+        coop_medal_actor_melee_kill_hunter, // 0xde,
         hash_4926ee717d694914, // 0xdf,
         long_distance_hatchet_kill, // 0xe0,
         medal_hatchet_kill, // 0xe1,
-        hash_4a10990c96559d2f, // 0xe2,
+        medal_knife_leader_gun, // 0xe2,
         hash_4a1c48bcaeb7db8b, // 0xe3,
         teamkills, // 0xe4,
         destroy_helicopter, // 0xe5,
@@ -740,26 +740,26 @@ version 19 {
         contracts_purchased, // 0xe7,
         destroy_explosive, // 0xe8,
         hash_4cb5d718c79cca63, // 0xe9,
-        hash_4e0b68c44638153e, // 0xea,
+        coop_medal_team_bonus_complete, // 0xea,
         hash_4e450148b31156f5, // 0xeb,
         assist_score_emp, // 0xec,
         hash_4ed745a0ed607a71, // 0xed,
-        hash_4ee566b815c01f47, // 0xee,
+        medal_destroyed_straferun, // 0xee,
         medal_killed_bomb_defuser, // 0xef,
         hash_4f4597af75828585, // 0xf0,
         hash_4fc11abc691b8a37, // 0xf1,
-        hash_50253bf63c3f8b9d, // 0xf2,
+        lmg_mastery, // 0xf2,
         losses, // 0xf3,
         weapons_mastery, // 0xf4,
         medal_kill_enemy_injuring_teammate, // 0xf5,
         hash_51ab6bbcb2afbcf9, // 0xf6,
-        hash_520cc126821992fd, // 0xf7,
+        medal_hacked, // 0xf7,
         destructions, // 0xf8,
         hash_52abffb28461993b, // 0xf9,
         hash_52b4d13e62f857e5, // 0xfa,
         hash_52f5a81d5f96353f, // 0xfb,
         destroy_qrdrone, // 0xfc,
-        hash_54faafb480f79981, // 0xfd,
+        hasclantag, // 0xfd,
         career_score_hc, // 0xfe,
         hash_55fec19a7934aaad, // 0xff,
         destroy_equipment_with_emp_grenade, // 0x100,
@@ -767,21 +767,21 @@ version 19 {
         deaths, // 0x102,
         lastxp, // 0x103,
         challenges, // 0x104,
-        hash_57f78bc1a13bd0de, // 0x105,
+        coop_medal_player_did_revive, // 0x105,
         medal_kill_enemy_one_bullet, // 0x106,
         medal_killstreak_more_than_30, // 0x107,
         hash_5944fa5ab0189744, // 0x108,
         medal_kill_enemy_when_injured, // 0x109,
-        hash_5a716221adc293be, // 0x10a,
+        medal_hack_3_agrs_in_hack, // 0x10a,
         destroy_5_tactical_inserts, // 0x10b,
         maxxp, // 0x10c,
-        hash_5afc248bef0531a3, // 0x10d,
-        hash_5afdb3c40e9b3c4d, // 0x10e,
+        master_killer, // 0x10d,
+        medal_humiliation_gun, // 0x10e,
         medal_kill_confirmed_multi, // 0x10f,
         assist_score_uav, // 0x110,
-        hash_5be3ebfe3f3384cc, // 0x111,
+        medal_defend_hq_last_alive, // 0x111,
         total_shots, // 0x112,
-        hash_5c5cab0cce302a01, // 0x113,
+        weekly_timestamp, // 0x113,
         hash_5cd23704d9c298c1, // 0x114,
         perk_longersprint, // 0x115,
         hash_5d409c26ab2b77d5, // 0x116,
@@ -793,21 +793,21 @@ version 19 {
         kill_shocked_enemy, // 0x11c,
         time_played_other, // 0x11d,
         hash_611f84a4a10d3e3e, // 0x11e,
-        hash_620ca70cc9416098, // 0x11f,
+        medal_sentry_gun_kill, // 0x11f,
         hash_621283451861c9e1, // 0x120,
-        hash_63420e05d8642fcd, // 0x121,
-        hash_63599ac17b01c38b, // 0x122,
+        medal_destroyed_sentinel, // 0x121,
+        career_decorations, // 0x122,
         multikill_3_lmg_or_smg_hip_fire, // 0x123,
         hits_headshot, // 0x124,
         hash_640adebcbd63d90f, // 0x125,
         hash_64c0bac013acc9f6, // 0x126,
-        hash_64fdb6c907a131c5, // 0x127,
+        medal_eliminate_oic, // 0x127,
         hash_657cf19d17d5b366, // 0x128,
         last_escrow, // 0x129,
         medal_first_kill, // 0x12a,
         hash_65f463ce38d57812, // 0x12b,
         field_specialist, // 0x12c,
-        hash_6639a2d5dd155965, // 0x12d,
+        coop_medal_actor_kill_warlord, // 0x12d,
         hash_668c1bd08c419f31, // 0x12e,
         wins_hc, // 0x12f,
         perk_loudenemies_kills, // 0x130,
@@ -820,15 +820,15 @@ version 19 {
         plants, // 0x137,
         secondary_mastery, // 0x138,
         perk_immune_cuav_kills, // 0x139,
-        hash_69b5c8e5faf24cdf, // 0x13a,
-        hash_69df2755783ea5b9, // 0x13b,
-        hash_6a237bc096133b0a, // 0x13c,
-        hash_6a4804b6ccfa8228, // 0x13d,
+        medal_eliminate_sd, // 0x13a,
+        medal_remote_missile_kill, // 0x13b,
+        medal_hq_secure, // 0x13c,
+        medal_aitank_kill, // 0x13d,
         incaps, // 0x13e,
         activate_cuav_while_enemy_satelite_active, // 0x13f,
         assist_score_satellite, // 0x140,
-        hash_6ad99bdc72451712, // 0x141,
-        hash_6b1f1900b1afff8b, // 0x142,
+        medal_kill_hacker_in_hack, // 0x141,
+        primary_mastery, // 0x142,
         hash_6b5388190c66aa86, // 0x143,
         medal_stop_enemy_killstreak, // 0x144,
         perk_movefaster_kills, // 0x145,
@@ -838,11 +838,11 @@ version 19 {
         time_played_alive, // 0x149,
         hash_6cda7af101a7813b, // 0x14a,
         rank, // 0x14b,
-        hash_6df09ff7e0a31041, // 0x14c,
+        contracts_xp_earned, // 0x14c,
         hash_6df6b645014f20ba, // 0x14d,
         hash_6edacd218965f8bd, // 0x14e,
         hash_6f14dca5dad9d904, // 0x14f,
-        hash_6f1b532646f903fd, // 0x150,
+        medal_destroyed_counteruav, // 0x150,
         destroy_aircraft_with_emp, // 0x151,
         perk_nottargetedbyairsupport_destroy_aircraft, // 0x152,
         medal_kill_enemies_one_bullet, // 0x153,
@@ -858,22 +858,22 @@ version 19 {
         medal_killstreak_25, // 0x15d,
         medal_killstreak_30, // 0x15e,
         hash_77728de853e5ac67, // 0x15f,
-        hash_78245078b8f303d0, // 0x160,
+        medal_kill_in_3_seconds_gun, // 0x160,
         gametypeban, // 0x161,
         accuracy, // 0x162,
         hash_794996196e74a949, // 0x163,
         score_multiteam, // 0x164,
         multikill_2_zone_attackers, // 0x165,
         defend_teammate_who_captured_package, // 0x166,
-        hash_7a6ac3d3a3905c74, // 0x167,
+        medal_death_machine_kill, // 0x167,
         hash_7aa90c8abdf600e6, // 0x168,
         skulls, // 0x169,
-        hash_7bf32e23f3be8ec6, // 0x16a,
+        flagcarrierkills, // 0x16a,
         kills, // 0x16b,
         medal_defused_bomb_last_man_alive, // 0x16c,
         perk_bulletflinch_kills, // 0x16d,
         offends, // 0x16e,
-        hash_7d320079120592ee, // 0x16f,
+        medal_final_kill_elimination, // 0x16f,
         kill_enemy_through_wall_with_fmj, // 0x170,
         assists, // 0x171,
         medal_headshot, // 0x172,
@@ -882,13 +882,13 @@ version 19 {
         kill_enemy_one_bullet_shotgun, // 0x175,
         hash_7f2ed78b0d2848f2, // 0x176,
         medal_position_secure, // 0x177,
-        hash_7fa27167eb8b2f65, // 0x178,
+        misc_bonus, // 0x178,
         hash_7fb734eea073a2c7, // 0x179,
-        hash_7fc096557d0251c4, // 0x17a
+        medal_stick_explosive_kill, // 0x17a
     };
 
     // idx 1 members 6
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -898,13 +898,13 @@ version 19 {
     };
 
     // idx 2 members 2
-    enum hash_28f0e9c96e9d895d {
+    enum achievements_e {
         hash_f08aa26fabae647, // 0x0,
         hash_5740a8698a4d0345, // 0x1
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         publicmatch, // 0x0,
         leaguematch, // 0x1
     };
@@ -919,23 +919,23 @@ version 19 {
     };
 
     // idx 5 members 12
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         coop, // 0x0,
         hash_166b6fdf8bfc14b0, // 0x1,
         cpzm, // 0x2,
         hvt, // 0x3,
         download, // 0x4,
         doa, // 0x5,
-        hash_4cb6801fbfb4feba, // 0x6,
-        hash_59109354c237d415, // 0x7,
+        resg, // 0x6,
+        sabotage, // 0x7,
         pvpo, // 0x8,
-        hash_6dbe071fd1f51551, // 0x9,
-        hash_73a25371d607ae0f, // 0xa,
+        raid, // 0x9,
+        nonar, // 0xa,
         pvp, // 0xb
     };
 
     // idx 6 members 10
-    enum hash_77d9cc12441881d5 {
+    enum mission_e {
         hash_118a6332af43d97c, // 0x0,
         hash_1868403ad767bcd5, // 0x1,
         hash_192de2ac4a272b77, // 0x2,
@@ -1007,7 +1007,7 @@ version 19 {
     };
 
     // idx 10 members 56
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         quickdraw, // 0x2,
@@ -1085,20 +1085,20 @@ version 19 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 13 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -1137,25 +1137,25 @@ version 19 {
     // offset 0xe0, size 0x8
     uint:4 lastconsolesave;
     // offset 0xe8, size 0xc80
-    hash_6962b6aa0c4853f4 facialfeatureproperties[hash_8fa49f7da0821e];
+    featureproperties facialfeatureproperties[hash_8fa49f7da0821e];
     // offset 0xd68, size 0x8
     uint:5 selectedcustomclass;
     // offset 0xd70, size 0x140
-    hash_5ef0b8418736fce5 recentearnings[10];
+    prevscores_s recentearnings[10];
     // offset 0xeb0, size 0x20
     uint hashlen;
     // offset 0xed0, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0xf10, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3f60, size 0xc940
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x108a0, size 0x90
-    uint:24 higheststats[hash_1cbddecc4f162d46];
+    uint:24 higheststats[higheststats_e];
     // offset 0x10930, size 0x13240
     hash_1608f63ae729eda5 weaponstats[200];
     // offset 0x23b70, size 0x320
-    hash_1a52129598e71dab hash_53f43899387a360d[10];
+    hash_1a52129598e71dab recentscores[10];
     // offset 0x23e90, size 0x20
     int combattrainingwins;
     // offset 0x23eb0, size 0x200
@@ -1163,7 +1163,7 @@ version 19 {
     // offset 0x240b0, size 0x40
     uint64 connectionid;
     // offset 0x240f0, size 0x1e0
-    hash_722a4055916df1ff hash_7dd9f1ac62a346d;
+    hash_722a4055916df1ff deadopsarcade;
     // offset 0x242d0, size 0x20
     int motdversionviewed;
     // offset 0x242f0, size 0xfb00
@@ -1171,15 +1171,15 @@ version 19 {
     // offset 0x33df0, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x33df8, size 0x20
-    uint hash_6dcaad4976588a44;
+    uint currentrankxp;
     // offset 0x33e18, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x34a48, size 0x190
-    byte hash_5988aeaa53d6e90c[50];
+    byte statshash[50];
     // offset 0x34bd8, size 0x260
     uint hash_3de5a4846f45ad78[19];
     // offset 0x34e38, size 0x4970
-    hash_2e0567490210dd82 playerstatsbymap[hash_77d9cc12441881d5];
+    hash_2e0567490210dd82 playerstatsbymap[mission_e];
     // offset 0x397a8, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x3a928, size 0xd20
@@ -1187,9 +1187,9 @@ version 19 {
     // offset 0x3b648, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x3b688, size 0x40
-    uint achievements[hash_28f0e9c96e9d895d];
+    uint achievements[achievements_e];
     // offset 0x3b6c8, size 0x49e0
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x400a8, size 0x100
     byte demonwareflags[32];
     // offset 0x401a8, size 0x8
@@ -1201,13 +1201,13 @@ version 19 {
     // offset 0x401f0, size 0x20
     uint hash_3313a30250a39ec5;
     // offset 0x40210, size 0x180
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x40390, size 0x20
     uint uploadbandwidth;
     // offset 0x403b0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x404f0, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x405b0, size 0x20
     int motdviewtime;
     // offset 0x405d0, size 0x8
@@ -1215,11 +1215,11 @@ version 19 {
     // offset 0x405d8, size 0x90
     hash_5cb2d75a230a501f trainingsimstats;
     // offset 0x40668, size 0x4ad0
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x45138, size 0x8
     uint:4 hash_191fbfb9e1a3acf3;
     // offset 0x45140, size 0x20
-    float hash_54a74aa3d5f3346d;
+    float storyprogress;
     // offset 0x45160, size 0x4710
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x49870, size 0xa0
@@ -1227,7 +1227,7 @@ version 19 {
     // offset 0x49910, size 0x20
     float skill_variance;
     // offset 0x49930, size 0x180
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x49ab0, size 0x22e8
     hash_6b411bb770fc8f6c afteractionreportstats;
     // offset 0x4bd98, size 0x100
@@ -1243,19 +1243,19 @@ version 19 {
     // offset 0x89310, size 0x1
     bool hash_3ceb201776787882;
     // offset 0x89311, size 0x1
-    hash_7690a9df20146d8a zmcampaigndata;
+    zmcampaign zmcampaigndata;
     // offset 0x89312, size 0x20
     bool musicunlocks[32];
     // offset 0x89332, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0x89372, size 0x1
     bool hash_46e7db8ceaba5b2f;
     // offset 0x89373, size 0x14
-    bool hash_711b1260308620e7[20];
+    bool currentplayercpdecorations[20];
     // offset 0x89387, size 0x14
     bool playercpdecorations[20];
     // offset 0x8939b, size 0x1
-    bool hash_8cbe2e4ecb4fc43;
+    bool hasseenmaxlevelnotification;
     // offset 0x8939c, size 0x1
     bool completedfirsttimeflow;
     // offset 0x8939d, size 0x4d
@@ -1278,7 +1278,7 @@ version 18 {
     };
 
     // idx 2 members 3 size 0x20
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x18
         uint:24 score;
         // offset 0x18, size 0x1
@@ -1364,7 +1364,7 @@ version 18 {
     };
 
     // idx 7 members 1 size 0x1
-    struct hash_7690a9df20146d8a {
+    struct zmcampaign {
         // offset 0x0, size 0x1
         bool unlocked;
     };
@@ -1494,13 +1494,13 @@ version 18 {
         // offset 0x488, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x4b8, size 0x140
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x5f8, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 14 members 3 size 0x48
-    struct hash_63565a3d40f66255 {
+    struct accolade_s {
         // offset 0x0, size 0x8
         uint:2 state;
         // offset 0x8, size 0x20
@@ -1520,15 +1520,15 @@ version 18 {
         // offset 0x188, size 0x20
         uint hash_7787ac0184215bc1;
         // offset 0x1a8, size 0x558
-        hash_63565a3d40f66255 accolades[19];
+        accolade_s accolades[19];
         // offset 0x700, size 0x20
         uint hash_3cd96ca92c6f0d4c;
         // offset 0x720, size 0x10
         short hash_1cc8d841efacb52a;
         // offset 0x730, size 0x6
-        bool hash_1e0160af4fd80dff[6];
+        bool completeddifficulties[6];
         // offset 0x736, size 0x6
-        bool hash_518113a79b08988[6];
+        bool previouscompleteddifficulties[6];
         // offset 0x73c, size 0x1
         bool allcollectiblescollected;
         // offset 0x73d, size 0x1
@@ -1538,7 +1538,7 @@ version 18 {
         // offset 0x748, size 0x1
         bool hash_71b609b078e360c0;
         // offset 0x749, size 0x6
-        bool hash_657891d65d881524[6];
+        bool receivedxpfordifficulty[6];
         // offset 0x74f, size 0x1
         bool hasbeencompleted;
         // offset 0x750, size 0x6
@@ -1554,9 +1554,9 @@ version 18 {
         // offset 0x8, size 0x20
         uint highestscore;
         // offset 0x28, size 0x20
-        uint hash_1b146f5d12b2b147;
+        uint limbhits;
         // offset 0x48, size 0x20
-        uint hash_25ce643c6cf6507e;
+        uint torsohits;
         // offset 0x68, size 0x20
         uint hash_52dbe660cac88df9;
         // offset 0x88, size 0x4
@@ -1570,7 +1570,7 @@ version 18 {
         // offset 0x0, size 0x20
         uint hash_2b12202dea292a78;
         // offset 0x20, size 0x20
-        uint hash_65157f3e7aec5b46;
+        uint roundachieved;
         // offset 0x40, size 0x20
         uint hash_256e550d360e7cf6;
         // offset 0x60, size 0x20
@@ -1580,27 +1580,27 @@ version 18 {
         // offset 0xa0, size 0x20
         uint hash_477109e1674d778e;
         // offset 0xc0, size 0x20
-        uint hash_6f7512e92e96a86a;
+        uint cowsexploded;
         // offset 0xe0, size 0x20
         uint hash_52086efefda6cd87;
         // offset 0x100, size 0x20
         uint hash_4c59bf00eb8047c0;
         // offset 0x120, size 0x20
-        uint hash_4cda3bb269028c08;
+        uint enemykills;
         // offset 0x140, size 0x20
-        uint hash_c159a616c8e909f;
+        uint totalgamesplayed;
         // offset 0x160, size 0x20
-        uint hash_1b75e7812ae582a0;
+        uint scoreachieved;
         // offset 0x180, size 0x20
         uint hash_6e3edce84270ac4c;
         // offset 0x1a0, size 0x20
         uint hash_3ed0ae0744c78900;
         // offset 0x1c0, size 0x20
-        uint hash_24bfa4caccae7ccc;
+        uint skullsearned;
     };
 
     // idx 18 members 1 size 0x390
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x390
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -1610,7 +1610,7 @@ version 18 {
         // offset 0x0, size 0x390
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
         // offset 0x390, size 0x8
-        bool hash_798921f18e351b13[8];
+        bool challengecompleted[8];
         // offset 0x398, size 0x1
         bool purchased;
         // offset 0x399, size 0x1
@@ -1624,7 +1624,7 @@ version 18 {
         // offset 0x0, size 0x390
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
         // offset 0x390, size 0x8
-        bool hash_798921f18e351b13[8];
+        bool challengecompleted[8];
     };
 
     // idx 21 members 5 size 0x188
@@ -1634,7 +1634,7 @@ version 18 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x38
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x58, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x184, size 0x4
@@ -1766,7 +1766,7 @@ version 18 {
     };
 
     // idx 34 members 1 size 0x280
-    struct hash_6962b6aa0c4853f4 {
+    struct featureproperties {
         // offset 0x0, size 0x280
         float properties[20];
     };
@@ -1783,26 +1783,26 @@ version 18 {
         destroy_car, // 0x7,
         medal_bomb_detonated, // 0x8,
         stun_aitank_with_emp_grenade, // 0x9,
-        hash_359f05e4bb4fa57, // 0xa,
+        shotgun_mastery, // 0xa,
         films_shoutcasted, // 0xb,
         medal_flag_capture, // 0xc,
         hash_3bba76aa8987218, // 0xd,
-        hash_3bef98f1093a802, // 0xe,
+        coop_medal_scavenger_streak, // 0xe,
         time_played_total, // 0xf,
         hash_495a843c176b50c, // 0x10,
-        hash_4b3d34b8f0e5b8f, // 0x11,
+        medal_destroyed_uav, // 0x11,
         perk_fastweaponswitch_kill_after_swap, // 0x12,
         mappackmask, // 0x13,
         kill_nemesis, // 0x14,
         hash_60f3f9adb22e924, // 0x15,
-        hash_66b80bdb17c4a04, // 0x16,
+        medal_kill_hacker_then_hack_in_hack, // 0x16,
         perk_protection_stun_kills, // 0x17,
         hash_7afff19891fb72e, // 0x18,
         hash_7dc6ebcd202e54f, // 0x19,
         perk_hacker_destroy, // 0x1a,
         hash_85ed95e3662c128, // 0x1b,
         rankxp, // 0x1c,
-        hash_976be36aea95e59, // 0x1d,
+        medal_destroyed_microwave_turret, // 0x1d,
         lifetime_buyin, // 0x1e,
         hash_9904e795162f703, // 0x1f,
         killsdenied, // 0x20,
@@ -1813,32 +1813,32 @@ version 18 {
         sessionbans, // 0x25,
         hash_d31df6b18ade168, // 0x26,
         kdratio, // 0x27,
-        hash_e2a2b7303f42341, // 0x28,
+        medal_destroyed_heli_gunner, // 0x28,
         returns, // 0x29,
         assist, // 0x2a,
-        hash_fdad95a70f179d7, // 0x2b,
-        hash_1023368faabde7bb, // 0x2c,
+        medal_destroyed_heli_guard, // 0x2b,
+        coop_medal_ransack_secured_unobtanium, // 0x2c,
         currencyspent, // 0x2d,
         emblem_version, // 0x2e,
         cp_challenges, // 0x2f,
         highlights_created, // 0x30,
         medal_defused_bomb, // 0x31,
-        hash_11d98f202734032b, // 0x32,
-        hash_124fa750b68f0d7e, // 0x33,
+        assignments_mastery, // 0x32,
+        medal_kill_enemy_with_more_ammo_oic, // 0x33,
         medal_completed_match, // 0x34,
         contracts_completed, // 0x35,
-        hash_12d8d630663bb4ba, // 0x36,
+        medal_destroyed_supply_drop, // 0x36,
         hash_13eb46cb3c4c5613, // 0x37,
-        hash_13ece4de9e4e2180, // 0x38,
-        hash_143a19a14a3654db, // 0x39,
+        coop_medal_actor_melee_kill_quadtank, // 0x38,
+        career_collectibles, // 0x39,
         assist_score_killstreak, // 0x3a,
         get_final_kill, // 0x3b,
-        hash_14e63336430e7e93, // 0x3c,
+        medal_destroyed_heli_comlink, // 0x3c,
         hash_154b0a4b01b8b616, // 0x3d,
         hash_156adf3fdb4091b7, // 0x3e,
         assist_score_microwave_turret, // 0x3f,
         hash_1715d388ed114bcd, // 0x40,
-        hash_171c599dfd8645fb, // 0x41,
+        career_accolades, // 0x41,
         hash_174beaaa686374bd, // 0x42,
         kill_with_resupplied_lethal_grenade, // 0x43,
         medal_kill_enemy_who_killed_teammate, // 0x44,
@@ -1851,34 +1851,34 @@ version 18 {
         medal_multikill_3, // 0x4b,
         medal_multikill_2, // 0x4c,
         medal_multikill_8, // 0x4d,
-        hash_1994a1e6fd4eac28, // 0x4e,
-        hash_19b8cdc5c2c0aeaa, // 0x4f,
+        medal_destroyed_dart, // 0x4e,
+        medal_microwave_turret_kill, // 0x4f,
         suicides, // 0x50,
         timewhennexthost, // 0x51,
-        hash_1b0d87a2f1c0272a, // 0x52,
-        hash_1b148631540ae995, // 0x53,
+        medal_x2_score_shrp, // 0x52,
+        support_killstreak_mastery, // 0x53,
         killed_dog, // 0x54,
         hash_1b5a22bbb1c029a2, // 0x55,
         hash_1bb99705ba9a0e6c, // 0x56,
         hash_1bc0e2d787ec3594, // 0x57,
         hash_1be36c00d02a3702, // 0x58,
-        hash_1be3ce237f8e1363, // 0x59,
+        medal_destroyed_aitank, // 0x59,
         hash_1cafb2c429e2e97f, // 0x5a,
         streaker, // 0x5b,
         captures, // 0x5c,
         leaderboardfailures, // 0x5d,
-        hash_1e2dfda54cd5e4c9, // 0x5e,
+        time_played_allies, // 0x5e,
         ties, // 0x5f,
         hash_1ebf7dbc9624adec, // 0x60,
-        hash_1edccd77f0b71ac2, // 0x61,
+        medal_hq_destroyed, // 0x61,
         medal_clear_2_attackers, // 0x62,
         capture_objective_in_smoke, // 0x63,
         medal_kill_enemy_while_capping, // 0x64,
-        hash_20179a04c1573a20, // 0x65,
+        sniper_mastery, // 0x65,
         career_score_multiteam, // 0x66,
         cur_win_streak, // 0x67,
-        hash_20ce01ed472f2cfa, // 0x68,
-        hash_215f2670384d5d7b, // 0x69,
+        medal_straff_run_kill, // 0x68,
+        medal_destroyed_sentry_gun, // 0x69,
         medal_multikill_more_than_8, // 0x6a,
         destroyed_helicopter_with_bullet, // 0x6b,
         hash_24c25fad1ac01302, // 0x6c,
@@ -1889,12 +1889,12 @@ version 18 {
         hash_26d6f92287f0a1e8, // 0x71,
         hash_26e0be3755c42495, // 0x72,
         defuses, // 0x73,
-        hash_275f021a92a63aee, // 0x74,
+        career_tokens, // 0x74,
         medal_quickly_secure_point, // 0x75,
         hash_281d1546e5e55ca2, // 0x76,
         longshot_3_onelife, // 0x77,
-        hash_2864c17bca6e0048, // 0x78,
-        hash_28db499720aedb6e, // 0x79,
+        smg_mastery, // 0x78,
+        medal_capture_enemy_crate, // 0x79,
         perk_scavenger_kills_after_resupply, // 0x7a,
         hash_2934211bcdcc9e9f, // 0x7b,
         hash_29361ee6a3ecd300, // 0x7c,
@@ -1908,21 +1908,21 @@ version 18 {
         score_hc, // 0x84,
         revives, // 0x85,
         hash_2b75a2161643473b, // 0x86,
-        hash_2b75aabcf73dc800, // 0x87,
+        coop_medal_actor_melee_kill_warlord, // 0x87,
         medal_killstreak_5, // 0x88,
         hash_2bc315db95982551, // 0x89,
-        hash_2bc5c849844383ea, // 0x8a,
+        coop_medal_actor_kill_hunter, // 0x8a,
         hack_enemy_target, // 0x8b,
-        hash_2c5ae152d1f6928b, // 0x8c,
+        medal_teammate_confirm_kill, // 0x8c,
         hash_2d27ed7c35d831b4, // 0x8d,
         medal_kill_enemy_with_their_weapon, // 0x8e,
         medal_kill_flag_carrier, // 0x8f,
-        hash_2e5c1654a4fc1b1c, // 0x90,
+        medal_most_points_shrp, // 0x90,
         career_score, // 0x91,
         laststatsbackup, // 0x92,
-        hash_2f9649f2756709d6, // 0x93,
+        time_played_axis, // 0x93,
         pickups, // 0x94,
-        hash_30298932ae26bbda, // 0x95,
+        medal_multiple_grenade_launcher_kill, // 0x95,
         medal_killed_enemy_while_carrying_flag, // 0x96,
         killed_dog_close_to_teammate, // 0x97,
         hash_308b22e7c87a0709, // 0x98,
@@ -1933,48 +1933,48 @@ version 18 {
         hash_32227db686e80e47, // 0x9d,
         perk_noname_kills, // 0x9e,
         kill_enemy_one_bullet_sniper, // 0x9f,
-        hash_3349efb239eee96f, // 0xa0,
+        medal_destroyed_plane_mortar, // 0xa0,
         medal_kill_enemy_after_death, // 0xa1,
         hash_34783bf7a1179064, // 0xa2,
         match_bonus, // 0xa3,
         medal_backstabber_kill, // 0xa4,
         hash_349aad0f6083abf5, // 0xa5,
-        hash_34d9af35f8b02185, // 0xa6,
+        contracts_cp_spent, // 0xa6,
         hash_34e0fb49ecfca3e4, // 0xa7,
         lifetime_earnings, // 0xa8,
-        hash_3553f8161e7781d7, // 0xa9,
+        coop_medal_actor_kill_quadtank, // 0xa9,
         hash_361c89bc5aadcdac, // 0xaa,
         hash_362683bc5ab617ff, // 0xab,
         destroy_turret, // 0xac,
         hash_37e875290614f1e1, // 0xad,
         medal_killed_bomb_planter, // 0xae,
         medal_uninterrupted_obit_feed_kills, // 0xaf,
-        hash_39e43b41e43d1803, // 0xb0,
+        time_played_team3, // 0xb0,
         medal_kill_enemy_with_care_package_crush, // 0xb1,
         medal_kill_enemy_with_hacked_care_package, // 0xb2,
         chickens, // 0xb3,
         version, // 0xb4,
-        hash_3bbf88b211193c04, // 0xb5,
+        coop_medal_sabotage_cache_destroyed, // 0xb5,
         perk_gpsjammer_immune_kills, // 0xb6,
         hash_3c299d0329cb332c, // 0xb7,
-        hash_3c4542a7c82860e0, // 0xb8,
+        coop_medal_hvt_secure_data, // 0xb8,
         assist_score_cuav, // 0xb9,
         medal_elimination_and_last_player_alive, // 0xba,
         hash_3dd99fa1b0d098d9, // 0xbb,
-        hash_3e76cbc8ac01d9d7, // 0xbc,
-        hash_3f1cf355fd388770, // 0xbd,
+        medal_destroyed_remote_missle, // 0xbc,
+        medal_knife_with_ammo_oic, // 0xbd,
         kill_enemy_through_wall, // 0xbe,
         wlratio, // 0xbf,
         hash_405015b29793595f, // 0xc0,
-        hash_40882db8b6a7f07c, // 0xc1,
-        hash_40a19266327e603c, // 0xc2,
+        medal_plane_mortar_kill, // 0xc1,
+        diamond_club, // 0xc2,
         teamkills_nostats, // 0xc3,
         score, // 0xc4,
         hash_416018859c2a61e0, // 0xc5,
         hash_417ca489457d2cf4, // 0xc6,
-        hash_419d426a0886d25b, // 0xc7,
+        coop_medal_sabotage_bomb_defuser_stopped, // 0xc7,
         medal_bounce_hatchet_kill, // 0xc8,
-        hash_41ca7e5eeaa76eeb, // 0xc9,
+        time_played_opfor, // 0xc9,
         kill_every_enemy, // 0xca,
         medal_comeback_from_deathstreak, // 0xcb,
         hash_43261bbcab41f5ea, // 0xcc,
@@ -1985,9 +1985,9 @@ version 18 {
         hash_4474df73df91d1a5, // 0xd1,
         statsbackupversion, // 0xd2,
         perk_fastmantle_kills, // 0xd3,
-        hash_4563c8418dc6e528, // 0xd4,
-        hash_465a039cdd937ec7, // 0xd5,
-        hash_4667e99dc6606eae, // 0xd6,
+        gold_club, // 0xd4,
+        medal_kill_x2_score_shrp, // 0xd5,
+        precision_master, // 0xd6,
         hash_470c0ed4799f236a, // 0xd7,
         disarm_hacked_carepackage, // 0xd8,
         medal_won_match, // 0xd9,
@@ -1995,11 +1995,11 @@ version 18 {
         destroy_explosive_with_trophy, // 0xdb,
         medal_retrieve_own_tags, // 0xdc,
         killstreak_5_picked_up_weapon, // 0xdd,
-        hash_490052167ba0e80d, // 0xde,
+        coop_medal_actor_melee_kill_hunter, // 0xde,
         hash_4926ee717d694914, // 0xdf,
         long_distance_hatchet_kill, // 0xe0,
         medal_hatchet_kill, // 0xe1,
-        hash_4a10990c96559d2f, // 0xe2,
+        medal_knife_leader_gun, // 0xe2,
         hash_4a1c48bcaeb7db8b, // 0xe3,
         teamkills, // 0xe4,
         destroy_helicopter, // 0xe5,
@@ -2007,26 +2007,26 @@ version 18 {
         contracts_purchased, // 0xe7,
         destroy_explosive, // 0xe8,
         hash_4cb5d718c79cca63, // 0xe9,
-        hash_4e0b68c44638153e, // 0xea,
+        coop_medal_team_bonus_complete, // 0xea,
         hash_4e450148b31156f5, // 0xeb,
         assist_score_emp, // 0xec,
         hash_4ed745a0ed607a71, // 0xed,
-        hash_4ee566b815c01f47, // 0xee,
+        medal_destroyed_straferun, // 0xee,
         medal_killed_bomb_defuser, // 0xef,
         hash_4f4597af75828585, // 0xf0,
         hash_4fc11abc691b8a37, // 0xf1,
-        hash_50253bf63c3f8b9d, // 0xf2,
+        lmg_mastery, // 0xf2,
         losses, // 0xf3,
         weapons_mastery, // 0xf4,
         medal_kill_enemy_injuring_teammate, // 0xf5,
         hash_51ab6bbcb2afbcf9, // 0xf6,
-        hash_520cc126821992fd, // 0xf7,
+        medal_hacked, // 0xf7,
         destructions, // 0xf8,
         hash_52abffb28461993b, // 0xf9,
         hash_52b4d13e62f857e5, // 0xfa,
         hash_52f5a81d5f96353f, // 0xfb,
         destroy_qrdrone, // 0xfc,
-        hash_54faafb480f79981, // 0xfd,
+        hasclantag, // 0xfd,
         career_score_hc, // 0xfe,
         hash_55fec19a7934aaad, // 0xff,
         destroy_equipment_with_emp_grenade, // 0x100,
@@ -2034,21 +2034,21 @@ version 18 {
         deaths, // 0x102,
         lastxp, // 0x103,
         challenges, // 0x104,
-        hash_57f78bc1a13bd0de, // 0x105,
+        coop_medal_player_did_revive, // 0x105,
         medal_kill_enemy_one_bullet, // 0x106,
         medal_killstreak_more_than_30, // 0x107,
         hash_5944fa5ab0189744, // 0x108,
         medal_kill_enemy_when_injured, // 0x109,
-        hash_5a716221adc293be, // 0x10a,
+        medal_hack_3_agrs_in_hack, // 0x10a,
         destroy_5_tactical_inserts, // 0x10b,
         maxxp, // 0x10c,
-        hash_5afc248bef0531a3, // 0x10d,
-        hash_5afdb3c40e9b3c4d, // 0x10e,
+        master_killer, // 0x10d,
+        medal_humiliation_gun, // 0x10e,
         medal_kill_confirmed_multi, // 0x10f,
         assist_score_uav, // 0x110,
-        hash_5be3ebfe3f3384cc, // 0x111,
+        medal_defend_hq_last_alive, // 0x111,
         total_shots, // 0x112,
-        hash_5c5cab0cce302a01, // 0x113,
+        weekly_timestamp, // 0x113,
         hash_5cd23704d9c298c1, // 0x114,
         perk_longersprint, // 0x115,
         hash_5d409c26ab2b77d5, // 0x116,
@@ -2060,21 +2060,21 @@ version 18 {
         kill_shocked_enemy, // 0x11c,
         time_played_other, // 0x11d,
         hash_611f84a4a10d3e3e, // 0x11e,
-        hash_620ca70cc9416098, // 0x11f,
+        medal_sentry_gun_kill, // 0x11f,
         hash_621283451861c9e1, // 0x120,
-        hash_631a17c263ea7faf, // 0x121,
-        hash_63420e05d8642fcd, // 0x122,
-        hash_63599ac17b01c38b, // 0x123,
+        hits_headshots, // 0x121,
+        medal_destroyed_sentinel, // 0x122,
+        career_decorations, // 0x123,
         multikill_3_lmg_or_smg_hip_fire, // 0x124,
         hash_640adebcbd63d90f, // 0x125,
         hash_64c0bac013acc9f6, // 0x126,
-        hash_64fdb6c907a131c5, // 0x127,
+        medal_eliminate_oic, // 0x127,
         hash_657cf19d17d5b366, // 0x128,
         last_escrow, // 0x129,
         medal_first_kill, // 0x12a,
         hash_65f463ce38d57812, // 0x12b,
         field_specialist, // 0x12c,
-        hash_6639a2d5dd155965, // 0x12d,
+        coop_medal_actor_kill_warlord, // 0x12d,
         hash_668c1bd08c419f31, // 0x12e,
         wins_hc, // 0x12f,
         perk_loudenemies_kills, // 0x130,
@@ -2087,15 +2087,15 @@ version 18 {
         plants, // 0x137,
         secondary_mastery, // 0x138,
         perk_immune_cuav_kills, // 0x139,
-        hash_69b5c8e5faf24cdf, // 0x13a,
-        hash_69df2755783ea5b9, // 0x13b,
-        hash_6a237bc096133b0a, // 0x13c,
-        hash_6a4804b6ccfa8228, // 0x13d,
+        medal_eliminate_sd, // 0x13a,
+        medal_remote_missile_kill, // 0x13b,
+        medal_hq_secure, // 0x13c,
+        medal_aitank_kill, // 0x13d,
         incaps, // 0x13e,
         activate_cuav_while_enemy_satelite_active, // 0x13f,
         assist_score_satellite, // 0x140,
-        hash_6ad99bdc72451712, // 0x141,
-        hash_6b1f1900b1afff8b, // 0x142,
+        medal_kill_hacker_in_hack, // 0x141,
+        primary_mastery, // 0x142,
         hash_6b5388190c66aa86, // 0x143,
         medal_stop_enemy_killstreak, // 0x144,
         perk_movefaster_kills, // 0x145,
@@ -2105,11 +2105,11 @@ version 18 {
         time_played_alive, // 0x149,
         hash_6cda7af101a7813b, // 0x14a,
         rank, // 0x14b,
-        hash_6df09ff7e0a31041, // 0x14c,
+        contracts_xp_earned, // 0x14c,
         hash_6df6b645014f20ba, // 0x14d,
         hash_6edacd218965f8bd, // 0x14e,
         hash_6f14dca5dad9d904, // 0x14f,
-        hash_6f1b532646f903fd, // 0x150,
+        medal_destroyed_counteruav, // 0x150,
         destroy_aircraft_with_emp, // 0x151,
         perk_nottargetedbyairsupport_destroy_aircraft, // 0x152,
         medal_kill_enemies_one_bullet, // 0x153,
@@ -2125,22 +2125,22 @@ version 18 {
         medal_killstreak_25, // 0x15d,
         medal_killstreak_30, // 0x15e,
         hash_77728de853e5ac67, // 0x15f,
-        hash_78245078b8f303d0, // 0x160,
+        medal_kill_in_3_seconds_gun, // 0x160,
         gametypeban, // 0x161,
         accuracy, // 0x162,
         hash_794996196e74a949, // 0x163,
         score_multiteam, // 0x164,
         multikill_2_zone_attackers, // 0x165,
         defend_teammate_who_captured_package, // 0x166,
-        hash_7a6ac3d3a3905c74, // 0x167,
+        medal_death_machine_kill, // 0x167,
         hash_7aa90c8abdf600e6, // 0x168,
         skulls, // 0x169,
-        hash_7bf32e23f3be8ec6, // 0x16a,
+        flagcarrierkills, // 0x16a,
         kills, // 0x16b,
         medal_defused_bomb_last_man_alive, // 0x16c,
         perk_bulletflinch_kills, // 0x16d,
         offends, // 0x16e,
-        hash_7d320079120592ee, // 0x16f,
+        medal_final_kill_elimination, // 0x16f,
         kill_enemy_through_wall_with_fmj, // 0x170,
         assists, // 0x171,
         medal_headshot, // 0x172,
@@ -2149,13 +2149,13 @@ version 18 {
         kill_enemy_one_bullet_shotgun, // 0x175,
         hash_7f2ed78b0d2848f2, // 0x176,
         medal_position_secure, // 0x177,
-        hash_7fa27167eb8b2f65, // 0x178,
+        misc_bonus, // 0x178,
         hash_7fb734eea073a2c7, // 0x179,
-        hash_7fc096557d0251c4, // 0x17a
+        medal_stick_explosive_kill, // 0x17a
     };
 
     // idx 1 members 6
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -2165,13 +2165,13 @@ version 18 {
     };
 
     // idx 2 members 2
-    enum hash_28f0e9c96e9d895d {
+    enum achievements_e {
         hash_f08aa26fabae647, // 0x0,
         hash_5740a8698a4d0345, // 0x1
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         publicmatch, // 0x0,
         leaguematch, // 0x1
     };
@@ -2186,23 +2186,23 @@ version 18 {
     };
 
     // idx 5 members 12
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         coop, // 0x0,
         hash_166b6fdf8bfc14b0, // 0x1,
         cpzm, // 0x2,
         hvt, // 0x3,
         download, // 0x4,
         doa, // 0x5,
-        hash_4cb6801fbfb4feba, // 0x6,
-        hash_59109354c237d415, // 0x7,
+        resg, // 0x6,
+        sabotage, // 0x7,
         pvpo, // 0x8,
-        hash_6dbe071fd1f51551, // 0x9,
-        hash_73a25371d607ae0f, // 0xa,
+        raid, // 0x9,
+        nonar, // 0xa,
         pvp, // 0xb
     };
 
     // idx 6 members 10
-    enum hash_77d9cc12441881d5 {
+    enum mission_e {
         hash_118a6332af43d97c, // 0x0,
         hash_1868403ad767bcd5, // 0x1,
         hash_192de2ac4a272b77, // 0x2,
@@ -2274,7 +2274,7 @@ version 18 {
     };
 
     // idx 10 members 56
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         quickdraw, // 0x2,
@@ -2352,20 +2352,20 @@ version 18 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 13 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -2404,25 +2404,25 @@ version 18 {
     // offset 0xe0, size 0x8
     uint:4 lastconsolesave;
     // offset 0xe8, size 0xc80
-    hash_6962b6aa0c4853f4 facialfeatureproperties[hash_8fa49f7da0821e];
+    featureproperties facialfeatureproperties[hash_8fa49f7da0821e];
     // offset 0xd68, size 0x8
     uint:5 selectedcustomclass;
     // offset 0xd70, size 0x140
-    hash_5ef0b8418736fce5 recentearnings[10];
+    prevscores_s recentearnings[10];
     // offset 0xeb0, size 0x20
     uint hashlen;
     // offset 0xed0, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0xf10, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3f60, size 0xc940
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x108a0, size 0x90
-    uint:24 higheststats[hash_1cbddecc4f162d46];
+    uint:24 higheststats[higheststats_e];
     // offset 0x10930, size 0x13240
     hash_1608f63ae729eda5 weaponstats[200];
     // offset 0x23b70, size 0x320
-    hash_1a52129598e71dab hash_53f43899387a360d[10];
+    hash_1a52129598e71dab recentscores[10];
     // offset 0x23e90, size 0x20
     int combattrainingwins;
     // offset 0x23eb0, size 0x200
@@ -2430,7 +2430,7 @@ version 18 {
     // offset 0x240b0, size 0x40
     uint64 connectionid;
     // offset 0x240f0, size 0x1e0
-    hash_722a4055916df1ff hash_7dd9f1ac62a346d;
+    hash_722a4055916df1ff deadopsarcade;
     // offset 0x242d0, size 0x20
     int motdversionviewed;
     // offset 0x242f0, size 0xfb00
@@ -2438,15 +2438,15 @@ version 18 {
     // offset 0x33df0, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x33df8, size 0x20
-    uint hash_6dcaad4976588a44;
+    uint currentrankxp;
     // offset 0x33e18, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x34a48, size 0x190
-    byte hash_5988aeaa53d6e90c[50];
+    byte statshash[50];
     // offset 0x34bd8, size 0x260
     uint hash_3de5a4846f45ad78[19];
     // offset 0x34e38, size 0x4970
-    hash_2e0567490210dd82 playerstatsbymap[hash_77d9cc12441881d5];
+    hash_2e0567490210dd82 playerstatsbymap[mission_e];
     // offset 0x397a8, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x3a928, size 0xd20
@@ -2454,9 +2454,9 @@ version 18 {
     // offset 0x3b648, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x3b688, size 0x40
-    uint achievements[hash_28f0e9c96e9d895d];
+    uint achievements[achievements_e];
     // offset 0x3b6c8, size 0x49e0
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x400a8, size 0x100
     byte demonwareflags[32];
     // offset 0x401a8, size 0x8
@@ -2468,13 +2468,13 @@ version 18 {
     // offset 0x401f0, size 0x20
     uint hash_3313a30250a39ec5;
     // offset 0x40210, size 0x180
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x40390, size 0x20
     uint uploadbandwidth;
     // offset 0x403b0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x404f0, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x405b0, size 0x20
     int motdviewtime;
     // offset 0x405d0, size 0x8
@@ -2482,11 +2482,11 @@ version 18 {
     // offset 0x405d8, size 0x90
     hash_5cb2d75a230a501f trainingsimstats;
     // offset 0x40668, size 0x4ad0
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x45138, size 0x8
     uint:4 hash_191fbfb9e1a3acf3;
     // offset 0x45140, size 0x20
-    float hash_54a74aa3d5f3346d;
+    float storyprogress;
     // offset 0x45160, size 0x4710
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x49870, size 0xa0
@@ -2494,7 +2494,7 @@ version 18 {
     // offset 0x49910, size 0x20
     float skill_variance;
     // offset 0x49930, size 0x180
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x49ab0, size 0x22e8
     hash_6b411bb770fc8f6c afteractionreportstats;
     // offset 0x4bd98, size 0x100
@@ -2510,19 +2510,19 @@ version 18 {
     // offset 0x89310, size 0x1
     bool hash_3ceb201776787882;
     // offset 0x89311, size 0x1
-    hash_7690a9df20146d8a zmcampaigndata;
+    zmcampaign zmcampaigndata;
     // offset 0x89312, size 0x20
     bool musicunlocks[32];
     // offset 0x89332, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0x89372, size 0x1
     bool hash_46e7db8ceaba5b2f;
     // offset 0x89373, size 0x14
-    bool hash_711b1260308620e7[20];
+    bool currentplayercpdecorations[20];
     // offset 0x89387, size 0x14
     bool playercpdecorations[20];
     // offset 0x8939b, size 0x1
-    bool hash_8cbe2e4ecb4fc43;
+    bool hasseenmaxlevelnotification;
     // offset 0x8939c, size 0x1
     bool completedfirsttimeflow;
     // offset 0x8939d, size 0x4d
@@ -2545,7 +2545,7 @@ version 17 {
     };
 
     // idx 2 members 3 size 0x20
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x18
         uint:24 score;
         // offset 0x18, size 0x1
@@ -2631,7 +2631,7 @@ version 17 {
     };
 
     // idx 7 members 1 size 0x1
-    struct hash_7690a9df20146d8a {
+    struct zmcampaign {
         // offset 0x0, size 0x1
         bool unlocked;
     };
@@ -2761,13 +2761,13 @@ version 17 {
         // offset 0x488, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x4b8, size 0x140
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x5f8, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 14 members 3 size 0x48
-    struct hash_63565a3d40f66255 {
+    struct accolade_s {
         // offset 0x0, size 0x8
         uint:2 state;
         // offset 0x8, size 0x20
@@ -2787,15 +2787,15 @@ version 17 {
         // offset 0x188, size 0x20
         uint hash_7787ac0184215bc1;
         // offset 0x1a8, size 0x558
-        hash_63565a3d40f66255 accolades[19];
+        accolade_s accolades[19];
         // offset 0x700, size 0x20
         uint hash_3cd96ca92c6f0d4c;
         // offset 0x720, size 0x10
         short hash_1cc8d841efacb52a;
         // offset 0x730, size 0x6
-        bool hash_1e0160af4fd80dff[6];
+        bool completeddifficulties[6];
         // offset 0x736, size 0x6
-        bool hash_518113a79b08988[6];
+        bool previouscompleteddifficulties[6];
         // offset 0x73c, size 0x1
         bool allcollectiblescollected;
         // offset 0x73d, size 0x1
@@ -2805,7 +2805,7 @@ version 17 {
         // offset 0x748, size 0x1
         bool hash_71b609b078e360c0;
         // offset 0x749, size 0x6
-        bool hash_657891d65d881524[6];
+        bool receivedxpfordifficulty[6];
         // offset 0x74f, size 0x1
         bool hasbeencompleted;
         // offset 0x750, size 0x6
@@ -2821,9 +2821,9 @@ version 17 {
         // offset 0x8, size 0x20
         uint highestscore;
         // offset 0x28, size 0x20
-        uint hash_1b146f5d12b2b147;
+        uint limbhits;
         // offset 0x48, size 0x20
-        uint hash_25ce643c6cf6507e;
+        uint torsohits;
         // offset 0x68, size 0x20
         uint hash_52dbe660cac88df9;
         // offset 0x88, size 0x4
@@ -2837,7 +2837,7 @@ version 17 {
         // offset 0x0, size 0x20
         uint hash_2b12202dea292a78;
         // offset 0x20, size 0x20
-        uint hash_65157f3e7aec5b46;
+        uint roundachieved;
         // offset 0x40, size 0x20
         uint hash_256e550d360e7cf6;
         // offset 0x60, size 0x20
@@ -2847,27 +2847,27 @@ version 17 {
         // offset 0xa0, size 0x20
         uint hash_477109e1674d778e;
         // offset 0xc0, size 0x20
-        uint hash_6f7512e92e96a86a;
+        uint cowsexploded;
         // offset 0xe0, size 0x20
         uint hash_52086efefda6cd87;
         // offset 0x100, size 0x20
         uint hash_4c59bf00eb8047c0;
         // offset 0x120, size 0x20
-        uint hash_4cda3bb269028c08;
+        uint enemykills;
         // offset 0x140, size 0x20
-        uint hash_c159a616c8e909f;
+        uint totalgamesplayed;
         // offset 0x160, size 0x20
-        uint hash_1b75e7812ae582a0;
+        uint scoreachieved;
         // offset 0x180, size 0x20
         uint hash_6e3edce84270ac4c;
         // offset 0x1a0, size 0x20
         uint hash_3ed0ae0744c78900;
         // offset 0x1c0, size 0x20
-        uint hash_24bfa4caccae7ccc;
+        uint skullsearned;
     };
 
     // idx 18 members 1 size 0x390
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x390
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -2877,7 +2877,7 @@ version 17 {
         // offset 0x0, size 0x390
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
         // offset 0x390, size 0x8
-        bool hash_798921f18e351b13[8];
+        bool challengecompleted[8];
         // offset 0x398, size 0x1
         bool purchased;
         // offset 0x399, size 0x1
@@ -2891,7 +2891,7 @@ version 17 {
         // offset 0x0, size 0x390
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
         // offset 0x390, size 0x8
-        bool hash_798921f18e351b13[8];
+        bool challengecompleted[8];
     };
 
     // idx 21 members 5 size 0x188
@@ -2901,7 +2901,7 @@ version 17 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x38
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x58, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x184, size 0x4
@@ -3033,7 +3033,7 @@ version 17 {
     };
 
     // idx 34 members 1 size 0x280
-    struct hash_6962b6aa0c4853f4 {
+    struct featureproperties {
         // offset 0x0, size 0x280
         float properties[20];
     };
@@ -3050,26 +3050,26 @@ version 17 {
         destroy_car, // 0x7,
         medal_bomb_detonated, // 0x8,
         stun_aitank_with_emp_grenade, // 0x9,
-        hash_359f05e4bb4fa57, // 0xa,
+        shotgun_mastery, // 0xa,
         films_shoutcasted, // 0xb,
         medal_flag_capture, // 0xc,
         hash_3bba76aa8987218, // 0xd,
-        hash_3bef98f1093a802, // 0xe,
+        coop_medal_scavenger_streak, // 0xe,
         time_played_total, // 0xf,
         hash_495a843c176b50c, // 0x10,
-        hash_4b3d34b8f0e5b8f, // 0x11,
+        medal_destroyed_uav, // 0x11,
         perk_fastweaponswitch_kill_after_swap, // 0x12,
         mappackmask, // 0x13,
         kill_nemesis, // 0x14,
         hash_60f3f9adb22e924, // 0x15,
-        hash_66b80bdb17c4a04, // 0x16,
+        medal_kill_hacker_then_hack_in_hack, // 0x16,
         perk_protection_stun_kills, // 0x17,
         hash_7afff19891fb72e, // 0x18,
         hash_7dc6ebcd202e54f, // 0x19,
         perk_hacker_destroy, // 0x1a,
         hash_85ed95e3662c128, // 0x1b,
         rankxp, // 0x1c,
-        hash_976be36aea95e59, // 0x1d,
+        medal_destroyed_microwave_turret, // 0x1d,
         lifetime_buyin, // 0x1e,
         hash_9904e795162f703, // 0x1f,
         killsdenied, // 0x20,
@@ -3080,32 +3080,32 @@ version 17 {
         sessionbans, // 0x25,
         hash_d31df6b18ade168, // 0x26,
         kdratio, // 0x27,
-        hash_e2a2b7303f42341, // 0x28,
+        medal_destroyed_heli_gunner, // 0x28,
         returns, // 0x29,
         assist, // 0x2a,
-        hash_fdad95a70f179d7, // 0x2b,
-        hash_1023368faabde7bb, // 0x2c,
+        medal_destroyed_heli_guard, // 0x2b,
+        coop_medal_ransack_secured_unobtanium, // 0x2c,
         currencyspent, // 0x2d,
         emblem_version, // 0x2e,
         cp_challenges, // 0x2f,
         highlights_created, // 0x30,
         medal_defused_bomb, // 0x31,
-        hash_11d98f202734032b, // 0x32,
-        hash_124fa750b68f0d7e, // 0x33,
+        assignments_mastery, // 0x32,
+        medal_kill_enemy_with_more_ammo_oic, // 0x33,
         medal_completed_match, // 0x34,
         contracts_completed, // 0x35,
-        hash_12d8d630663bb4ba, // 0x36,
+        medal_destroyed_supply_drop, // 0x36,
         hash_13eb46cb3c4c5613, // 0x37,
-        hash_13ece4de9e4e2180, // 0x38,
-        hash_143a19a14a3654db, // 0x39,
+        coop_medal_actor_melee_kill_quadtank, // 0x38,
+        career_collectibles, // 0x39,
         assist_score_killstreak, // 0x3a,
         get_final_kill, // 0x3b,
-        hash_14e63336430e7e93, // 0x3c,
+        medal_destroyed_heli_comlink, // 0x3c,
         hash_154b0a4b01b8b616, // 0x3d,
         hash_156adf3fdb4091b7, // 0x3e,
         assist_score_microwave_turret, // 0x3f,
         hash_1715d388ed114bcd, // 0x40,
-        hash_171c599dfd8645fb, // 0x41,
+        career_accolades, // 0x41,
         hash_174beaaa686374bd, // 0x42,
         kill_with_resupplied_lethal_grenade, // 0x43,
         medal_kill_enemy_who_killed_teammate, // 0x44,
@@ -3118,34 +3118,34 @@ version 17 {
         medal_multikill_3, // 0x4b,
         medal_multikill_2, // 0x4c,
         medal_multikill_8, // 0x4d,
-        hash_1994a1e6fd4eac28, // 0x4e,
-        hash_19b8cdc5c2c0aeaa, // 0x4f,
+        medal_destroyed_dart, // 0x4e,
+        medal_microwave_turret_kill, // 0x4f,
         suicides, // 0x50,
         timewhennexthost, // 0x51,
-        hash_1b0d87a2f1c0272a, // 0x52,
-        hash_1b148631540ae995, // 0x53,
+        medal_x2_score_shrp, // 0x52,
+        support_killstreak_mastery, // 0x53,
         killed_dog, // 0x54,
         hash_1b5a22bbb1c029a2, // 0x55,
         hash_1bb99705ba9a0e6c, // 0x56,
         hash_1bc0e2d787ec3594, // 0x57,
         hash_1be36c00d02a3702, // 0x58,
-        hash_1be3ce237f8e1363, // 0x59,
+        medal_destroyed_aitank, // 0x59,
         hash_1cafb2c429e2e97f, // 0x5a,
         streaker, // 0x5b,
         captures, // 0x5c,
         leaderboardfailures, // 0x5d,
-        hash_1e2dfda54cd5e4c9, // 0x5e,
+        time_played_allies, // 0x5e,
         ties, // 0x5f,
         hash_1ebf7dbc9624adec, // 0x60,
-        hash_1edccd77f0b71ac2, // 0x61,
+        medal_hq_destroyed, // 0x61,
         medal_clear_2_attackers, // 0x62,
         capture_objective_in_smoke, // 0x63,
         medal_kill_enemy_while_capping, // 0x64,
-        hash_20179a04c1573a20, // 0x65,
+        sniper_mastery, // 0x65,
         career_score_multiteam, // 0x66,
         cur_win_streak, // 0x67,
-        hash_20ce01ed472f2cfa, // 0x68,
-        hash_215f2670384d5d7b, // 0x69,
+        medal_straff_run_kill, // 0x68,
+        medal_destroyed_sentry_gun, // 0x69,
         medal_multikill_more_than_8, // 0x6a,
         destroyed_helicopter_with_bullet, // 0x6b,
         hash_24c25fad1ac01302, // 0x6c,
@@ -3156,12 +3156,12 @@ version 17 {
         hash_26d6f92287f0a1e8, // 0x71,
         hash_26e0be3755c42495, // 0x72,
         defuses, // 0x73,
-        hash_275f021a92a63aee, // 0x74,
+        career_tokens, // 0x74,
         medal_quickly_secure_point, // 0x75,
         hash_281d1546e5e55ca2, // 0x76,
         longshot_3_onelife, // 0x77,
-        hash_2864c17bca6e0048, // 0x78,
-        hash_28db499720aedb6e, // 0x79,
+        smg_mastery, // 0x78,
+        medal_capture_enemy_crate, // 0x79,
         perk_scavenger_kills_after_resupply, // 0x7a,
         hash_2934211bcdcc9e9f, // 0x7b,
         hash_29361ee6a3ecd300, // 0x7c,
@@ -3175,21 +3175,21 @@ version 17 {
         score_hc, // 0x84,
         revives, // 0x85,
         hash_2b75a2161643473b, // 0x86,
-        hash_2b75aabcf73dc800, // 0x87,
+        coop_medal_actor_melee_kill_warlord, // 0x87,
         medal_killstreak_5, // 0x88,
         hash_2bc315db95982551, // 0x89,
-        hash_2bc5c849844383ea, // 0x8a,
+        coop_medal_actor_kill_hunter, // 0x8a,
         hack_enemy_target, // 0x8b,
-        hash_2c5ae152d1f6928b, // 0x8c,
+        medal_teammate_confirm_kill, // 0x8c,
         hash_2d27ed7c35d831b4, // 0x8d,
         medal_kill_enemy_with_their_weapon, // 0x8e,
         medal_kill_flag_carrier, // 0x8f,
-        hash_2e5c1654a4fc1b1c, // 0x90,
+        medal_most_points_shrp, // 0x90,
         career_score, // 0x91,
         laststatsbackup, // 0x92,
-        hash_2f9649f2756709d6, // 0x93,
+        time_played_axis, // 0x93,
         pickups, // 0x94,
-        hash_30298932ae26bbda, // 0x95,
+        medal_multiple_grenade_launcher_kill, // 0x95,
         medal_killed_enemy_while_carrying_flag, // 0x96,
         killed_dog_close_to_teammate, // 0x97,
         hash_308b22e7c87a0709, // 0x98,
@@ -3200,48 +3200,48 @@ version 17 {
         hash_32227db686e80e47, // 0x9d,
         perk_noname_kills, // 0x9e,
         kill_enemy_one_bullet_sniper, // 0x9f,
-        hash_3349efb239eee96f, // 0xa0,
+        medal_destroyed_plane_mortar, // 0xa0,
         medal_kill_enemy_after_death, // 0xa1,
         hash_34783bf7a1179064, // 0xa2,
         match_bonus, // 0xa3,
         medal_backstabber_kill, // 0xa4,
         hash_349aad0f6083abf5, // 0xa5,
-        hash_34d9af35f8b02185, // 0xa6,
+        contracts_cp_spent, // 0xa6,
         hash_34e0fb49ecfca3e4, // 0xa7,
         lifetime_earnings, // 0xa8,
-        hash_3553f8161e7781d7, // 0xa9,
+        coop_medal_actor_kill_quadtank, // 0xa9,
         hash_361c89bc5aadcdac, // 0xaa,
         hash_362683bc5ab617ff, // 0xab,
         destroy_turret, // 0xac,
         hash_37e875290614f1e1, // 0xad,
         medal_killed_bomb_planter, // 0xae,
         medal_uninterrupted_obit_feed_kills, // 0xaf,
-        hash_39e43b41e43d1803, // 0xb0,
+        time_played_team3, // 0xb0,
         medal_kill_enemy_with_care_package_crush, // 0xb1,
         medal_kill_enemy_with_hacked_care_package, // 0xb2,
         chickens, // 0xb3,
         version, // 0xb4,
-        hash_3bbf88b211193c04, // 0xb5,
+        coop_medal_sabotage_cache_destroyed, // 0xb5,
         perk_gpsjammer_immune_kills, // 0xb6,
         hash_3c299d0329cb332c, // 0xb7,
-        hash_3c4542a7c82860e0, // 0xb8,
+        coop_medal_hvt_secure_data, // 0xb8,
         assist_score_cuav, // 0xb9,
         medal_elimination_and_last_player_alive, // 0xba,
         hash_3dd99fa1b0d098d9, // 0xbb,
-        hash_3e76cbc8ac01d9d7, // 0xbc,
-        hash_3f1cf355fd388770, // 0xbd,
+        medal_destroyed_remote_missle, // 0xbc,
+        medal_knife_with_ammo_oic, // 0xbd,
         kill_enemy_through_wall, // 0xbe,
         wlratio, // 0xbf,
         hash_405015b29793595f, // 0xc0,
-        hash_40882db8b6a7f07c, // 0xc1,
-        hash_40a19266327e603c, // 0xc2,
+        medal_plane_mortar_kill, // 0xc1,
+        diamond_club, // 0xc2,
         teamkills_nostats, // 0xc3,
         score, // 0xc4,
         hash_416018859c2a61e0, // 0xc5,
         hash_417ca489457d2cf4, // 0xc6,
-        hash_419d426a0886d25b, // 0xc7,
+        coop_medal_sabotage_bomb_defuser_stopped, // 0xc7,
         medal_bounce_hatchet_kill, // 0xc8,
-        hash_41ca7e5eeaa76eeb, // 0xc9,
+        time_played_opfor, // 0xc9,
         kill_every_enemy, // 0xca,
         medal_comeback_from_deathstreak, // 0xcb,
         hash_43261bbcab41f5ea, // 0xcc,
@@ -3252,9 +3252,9 @@ version 17 {
         hash_4474df73df91d1a5, // 0xd1,
         statsbackupversion, // 0xd2,
         perk_fastmantle_kills, // 0xd3,
-        hash_4563c8418dc6e528, // 0xd4,
-        hash_465a039cdd937ec7, // 0xd5,
-        hash_4667e99dc6606eae, // 0xd6,
+        gold_club, // 0xd4,
+        medal_kill_x2_score_shrp, // 0xd5,
+        precision_master, // 0xd6,
         hash_470c0ed4799f236a, // 0xd7,
         disarm_hacked_carepackage, // 0xd8,
         medal_won_match, // 0xd9,
@@ -3262,11 +3262,11 @@ version 17 {
         destroy_explosive_with_trophy, // 0xdb,
         medal_retrieve_own_tags, // 0xdc,
         killstreak_5_picked_up_weapon, // 0xdd,
-        hash_490052167ba0e80d, // 0xde,
+        coop_medal_actor_melee_kill_hunter, // 0xde,
         hash_4926ee717d694914, // 0xdf,
         long_distance_hatchet_kill, // 0xe0,
         medal_hatchet_kill, // 0xe1,
-        hash_4a10990c96559d2f, // 0xe2,
+        medal_knife_leader_gun, // 0xe2,
         hash_4a1c48bcaeb7db8b, // 0xe3,
         teamkills, // 0xe4,
         destroy_helicopter, // 0xe5,
@@ -3274,26 +3274,26 @@ version 17 {
         contracts_purchased, // 0xe7,
         destroy_explosive, // 0xe8,
         hash_4cb5d718c79cca63, // 0xe9,
-        hash_4e0b68c44638153e, // 0xea,
+        coop_medal_team_bonus_complete, // 0xea,
         hash_4e450148b31156f5, // 0xeb,
         assist_score_emp, // 0xec,
         hash_4ed745a0ed607a71, // 0xed,
-        hash_4ee566b815c01f47, // 0xee,
+        medal_destroyed_straferun, // 0xee,
         medal_killed_bomb_defuser, // 0xef,
         hash_4f4597af75828585, // 0xf0,
         hash_4fc11abc691b8a37, // 0xf1,
-        hash_50253bf63c3f8b9d, // 0xf2,
+        lmg_mastery, // 0xf2,
         losses, // 0xf3,
         weapons_mastery, // 0xf4,
         medal_kill_enemy_injuring_teammate, // 0xf5,
         hash_51ab6bbcb2afbcf9, // 0xf6,
-        hash_520cc126821992fd, // 0xf7,
+        medal_hacked, // 0xf7,
         destructions, // 0xf8,
         hash_52abffb28461993b, // 0xf9,
         hash_52b4d13e62f857e5, // 0xfa,
         hash_52f5a81d5f96353f, // 0xfb,
         destroy_qrdrone, // 0xfc,
-        hash_54faafb480f79981, // 0xfd,
+        hasclantag, // 0xfd,
         career_score_hc, // 0xfe,
         hash_55fec19a7934aaad, // 0xff,
         destroy_equipment_with_emp_grenade, // 0x100,
@@ -3301,21 +3301,21 @@ version 17 {
         deaths, // 0x102,
         lastxp, // 0x103,
         challenges, // 0x104,
-        hash_57f78bc1a13bd0de, // 0x105,
+        coop_medal_player_did_revive, // 0x105,
         medal_kill_enemy_one_bullet, // 0x106,
         medal_killstreak_more_than_30, // 0x107,
         hash_5944fa5ab0189744, // 0x108,
         medal_kill_enemy_when_injured, // 0x109,
-        hash_5a716221adc293be, // 0x10a,
+        medal_hack_3_agrs_in_hack, // 0x10a,
         destroy_5_tactical_inserts, // 0x10b,
         maxxp, // 0x10c,
-        hash_5afc248bef0531a3, // 0x10d,
-        hash_5afdb3c40e9b3c4d, // 0x10e,
+        master_killer, // 0x10d,
+        medal_humiliation_gun, // 0x10e,
         medal_kill_confirmed_multi, // 0x10f,
         assist_score_uav, // 0x110,
-        hash_5be3ebfe3f3384cc, // 0x111,
+        medal_defend_hq_last_alive, // 0x111,
         total_shots, // 0x112,
-        hash_5c5cab0cce302a01, // 0x113,
+        weekly_timestamp, // 0x113,
         hash_5cd23704d9c298c1, // 0x114,
         perk_longersprint, // 0x115,
         hash_5d409c26ab2b77d5, // 0x116,
@@ -3327,20 +3327,20 @@ version 17 {
         kill_shocked_enemy, // 0x11c,
         time_played_other, // 0x11d,
         hash_611f84a4a10d3e3e, // 0x11e,
-        hash_620ca70cc9416098, // 0x11f,
+        medal_sentry_gun_kill, // 0x11f,
         hash_621283451861c9e1, // 0x120,
-        hash_63420e05d8642fcd, // 0x121,
-        hash_63599ac17b01c38b, // 0x122,
+        medal_destroyed_sentinel, // 0x121,
+        career_decorations, // 0x122,
         multikill_3_lmg_or_smg_hip_fire, // 0x123,
         hash_640adebcbd63d90f, // 0x124,
         hash_64c0bac013acc9f6, // 0x125,
-        hash_64fdb6c907a131c5, // 0x126,
+        medal_eliminate_oic, // 0x126,
         hash_657cf19d17d5b366, // 0x127,
         last_escrow, // 0x128,
         medal_first_kill, // 0x129,
         hash_65f463ce38d57812, // 0x12a,
         field_specialist, // 0x12b,
-        hash_6639a2d5dd155965, // 0x12c,
+        coop_medal_actor_kill_warlord, // 0x12c,
         hash_668c1bd08c419f31, // 0x12d,
         wins_hc, // 0x12e,
         perk_loudenemies_kills, // 0x12f,
@@ -3353,15 +3353,15 @@ version 17 {
         plants, // 0x136,
         secondary_mastery, // 0x137,
         perk_immune_cuav_kills, // 0x138,
-        hash_69b5c8e5faf24cdf, // 0x139,
-        hash_69df2755783ea5b9, // 0x13a,
-        hash_6a237bc096133b0a, // 0x13b,
-        hash_6a4804b6ccfa8228, // 0x13c,
+        medal_eliminate_sd, // 0x139,
+        medal_remote_missile_kill, // 0x13a,
+        medal_hq_secure, // 0x13b,
+        medal_aitank_kill, // 0x13c,
         incaps, // 0x13d,
         activate_cuav_while_enemy_satelite_active, // 0x13e,
         assist_score_satellite, // 0x13f,
-        hash_6ad99bdc72451712, // 0x140,
-        hash_6b1f1900b1afff8b, // 0x141,
+        medal_kill_hacker_in_hack, // 0x140,
+        primary_mastery, // 0x141,
         hash_6b5388190c66aa86, // 0x142,
         medal_stop_enemy_killstreak, // 0x143,
         perk_movefaster_kills, // 0x144,
@@ -3371,11 +3371,11 @@ version 17 {
         time_played_alive, // 0x148,
         hash_6cda7af101a7813b, // 0x149,
         rank, // 0x14a,
-        hash_6df09ff7e0a31041, // 0x14b,
+        contracts_xp_earned, // 0x14b,
         hash_6df6b645014f20ba, // 0x14c,
         hash_6edacd218965f8bd, // 0x14d,
         hash_6f14dca5dad9d904, // 0x14e,
-        hash_6f1b532646f903fd, // 0x14f,
+        medal_destroyed_counteruav, // 0x14f,
         destroy_aircraft_with_emp, // 0x150,
         perk_nottargetedbyairsupport_destroy_aircraft, // 0x151,
         medal_kill_enemies_one_bullet, // 0x152,
@@ -3391,22 +3391,22 @@ version 17 {
         medal_killstreak_25, // 0x15c,
         medal_killstreak_30, // 0x15d,
         hash_77728de853e5ac67, // 0x15e,
-        hash_78245078b8f303d0, // 0x15f,
+        medal_kill_in_3_seconds_gun, // 0x15f,
         gametypeban, // 0x160,
         accuracy, // 0x161,
         hash_794996196e74a949, // 0x162,
         score_multiteam, // 0x163,
         multikill_2_zone_attackers, // 0x164,
         defend_teammate_who_captured_package, // 0x165,
-        hash_7a6ac3d3a3905c74, // 0x166,
+        medal_death_machine_kill, // 0x166,
         hash_7aa90c8abdf600e6, // 0x167,
         skulls, // 0x168,
-        hash_7bf32e23f3be8ec6, // 0x169,
+        flagcarrierkills, // 0x169,
         kills, // 0x16a,
         medal_defused_bomb_last_man_alive, // 0x16b,
         perk_bulletflinch_kills, // 0x16c,
         offends, // 0x16d,
-        hash_7d320079120592ee, // 0x16e,
+        medal_final_kill_elimination, // 0x16e,
         kill_enemy_through_wall_with_fmj, // 0x16f,
         assists, // 0x170,
         medal_headshot, // 0x171,
@@ -3415,13 +3415,13 @@ version 17 {
         kill_enemy_one_bullet_shotgun, // 0x174,
         hash_7f2ed78b0d2848f2, // 0x175,
         medal_position_secure, // 0x176,
-        hash_7fa27167eb8b2f65, // 0x177,
+        misc_bonus, // 0x177,
         hash_7fb734eea073a2c7, // 0x178,
-        hash_7fc096557d0251c4, // 0x179
+        medal_stick_explosive_kill, // 0x179
     };
 
     // idx 1 members 6
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -3431,13 +3431,13 @@ version 17 {
     };
 
     // idx 2 members 2
-    enum hash_28f0e9c96e9d895d {
+    enum achievements_e {
         hash_f08aa26fabae647, // 0x0,
         hash_5740a8698a4d0345, // 0x1
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         publicmatch, // 0x0,
         leaguematch, // 0x1
     };
@@ -3452,23 +3452,23 @@ version 17 {
     };
 
     // idx 5 members 12
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         coop, // 0x0,
         hash_166b6fdf8bfc14b0, // 0x1,
         cpzm, // 0x2,
         hvt, // 0x3,
         download, // 0x4,
         doa, // 0x5,
-        hash_4cb6801fbfb4feba, // 0x6,
-        hash_59109354c237d415, // 0x7,
+        resg, // 0x6,
+        sabotage, // 0x7,
         pvpo, // 0x8,
-        hash_6dbe071fd1f51551, // 0x9,
-        hash_73a25371d607ae0f, // 0xa,
+        raid, // 0x9,
+        nonar, // 0xa,
         pvp, // 0xb
     };
 
     // idx 6 members 10
-    enum hash_77d9cc12441881d5 {
+    enum mission_e {
         hash_118a6332af43d97c, // 0x0,
         hash_1868403ad767bcd5, // 0x1,
         hash_192de2ac4a272b77, // 0x2,
@@ -3540,7 +3540,7 @@ version 17 {
     };
 
     // idx 10 members 56
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         quickdraw, // 0x2,
@@ -3618,20 +3618,20 @@ version 17 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 13 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -3670,25 +3670,25 @@ version 17 {
     // offset 0xe0, size 0x8
     uint:4 lastconsolesave;
     // offset 0xe8, size 0xc80
-    hash_6962b6aa0c4853f4 facialfeatureproperties[hash_8fa49f7da0821e];
+    featureproperties facialfeatureproperties[hash_8fa49f7da0821e];
     // offset 0xd68, size 0x8
     uint:5 selectedcustomclass;
     // offset 0xd70, size 0x140
-    hash_5ef0b8418736fce5 recentearnings[10];
+    prevscores_s recentearnings[10];
     // offset 0xeb0, size 0x20
     uint hashlen;
     // offset 0xed0, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0xf10, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3f60, size 0xc940
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x108a0, size 0x90
-    uint:24 higheststats[hash_1cbddecc4f162d46];
+    uint:24 higheststats[higheststats_e];
     // offset 0x10930, size 0x13240
     hash_1608f63ae729eda5 weaponstats[200];
     // offset 0x23b70, size 0x320
-    hash_1a52129598e71dab hash_53f43899387a360d[10];
+    hash_1a52129598e71dab recentscores[10];
     // offset 0x23e90, size 0x20
     int combattrainingwins;
     // offset 0x23eb0, size 0x200
@@ -3696,7 +3696,7 @@ version 17 {
     // offset 0x240b0, size 0x40
     uint64 connectionid;
     // offset 0x240f0, size 0x1e0
-    hash_722a4055916df1ff hash_7dd9f1ac62a346d;
+    hash_722a4055916df1ff deadopsarcade;
     // offset 0x242d0, size 0x20
     int motdversionviewed;
     // offset 0x242f0, size 0xfb00
@@ -3704,15 +3704,15 @@ version 17 {
     // offset 0x33df0, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x33df8, size 0x20
-    uint hash_6dcaad4976588a44;
+    uint currentrankxp;
     // offset 0x33e18, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x34a48, size 0x190
-    byte hash_5988aeaa53d6e90c[50];
+    byte statshash[50];
     // offset 0x34bd8, size 0x260
     uint hash_3de5a4846f45ad78[19];
     // offset 0x34e38, size 0x4970
-    hash_2e0567490210dd82 playerstatsbymap[hash_77d9cc12441881d5];
+    hash_2e0567490210dd82 playerstatsbymap[mission_e];
     // offset 0x397a8, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x3a928, size 0xd20
@@ -3720,9 +3720,9 @@ version 17 {
     // offset 0x3b648, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x3b688, size 0x40
-    uint achievements[hash_28f0e9c96e9d895d];
+    uint achievements[achievements_e];
     // offset 0x3b6c8, size 0x49e0
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x400a8, size 0x100
     byte demonwareflags[32];
     // offset 0x401a8, size 0x8
@@ -3734,13 +3734,13 @@ version 17 {
     // offset 0x401f0, size 0x20
     uint hash_3313a30250a39ec5;
     // offset 0x40210, size 0x180
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x40390, size 0x20
     uint uploadbandwidth;
     // offset 0x403b0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x404f0, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x405b0, size 0x20
     int motdviewtime;
     // offset 0x405d0, size 0x8
@@ -3748,11 +3748,11 @@ version 17 {
     // offset 0x405d8, size 0x90
     hash_5cb2d75a230a501f trainingsimstats;
     // offset 0x40668, size 0x4ad0
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x45138, size 0x8
     uint:4 hash_191fbfb9e1a3acf3;
     // offset 0x45140, size 0x20
-    float hash_54a74aa3d5f3346d;
+    float storyprogress;
     // offset 0x45160, size 0x46e0
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x49840, size 0xa0
@@ -3760,7 +3760,7 @@ version 17 {
     // offset 0x498e0, size 0x20
     float skill_variance;
     // offset 0x49900, size 0x180
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x49a80, size 0x22e8
     hash_6b411bb770fc8f6c afteractionreportstats;
     // offset 0x4bd68, size 0x100
@@ -3776,19 +3776,19 @@ version 17 {
     // offset 0x892e0, size 0x1
     bool hash_3ceb201776787882;
     // offset 0x892e1, size 0x1
-    hash_7690a9df20146d8a zmcampaigndata;
+    zmcampaign zmcampaigndata;
     // offset 0x892e2, size 0x20
     bool musicunlocks[32];
     // offset 0x89302, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0x89342, size 0x1
     bool hash_46e7db8ceaba5b2f;
     // offset 0x89343, size 0x14
-    bool hash_711b1260308620e7[20];
+    bool currentplayercpdecorations[20];
     // offset 0x89357, size 0x14
     bool playercpdecorations[20];
     // offset 0x8936b, size 0x1
-    bool hash_8cbe2e4ecb4fc43;
+    bool hasseenmaxlevelnotification;
     // offset 0x8936c, size 0x1
     bool completedfirsttimeflow;
     // offset 0x8936d, size 0x4d
@@ -3811,7 +3811,7 @@ version 16 {
     };
 
     // idx 2 members 3 size 0x20
-    struct hash_5ef0b8418736fce5 {
+    struct prevscores_s {
         // offset 0x0, size 0x18
         uint:24 score;
         // offset 0x18, size 0x1
@@ -3897,7 +3897,7 @@ version 16 {
     };
 
     // idx 7 members 1 size 0x1
-    struct hash_7690a9df20146d8a {
+    struct zmcampaign {
         // offset 0x0, size 0x1
         bool unlocked;
     };
@@ -4027,13 +4027,13 @@ version 16 {
         // offset 0x488, size 0x30
         hash_6b3db80d498eb06 challenge10;
         // offset 0x4b8, size 0x140
-        hash_5ef0b8418736fce5 prevscores[10];
+        prevscores_s prevscores[10];
         // offset 0x5f8, size 0x30
         hash_6b3db80d498eb06 kdratio;
     };
 
     // idx 14 members 3 size 0x48
-    struct hash_63565a3d40f66255 {
+    struct accolade_s {
         // offset 0x0, size 0x8
         uint:2 state;
         // offset 0x8, size 0x20
@@ -4053,15 +4053,15 @@ version 16 {
         // offset 0x188, size 0x20
         uint hash_7787ac0184215bc1;
         // offset 0x1a8, size 0x558
-        hash_63565a3d40f66255 accolades[19];
+        accolade_s accolades[19];
         // offset 0x700, size 0x20
         uint hash_3cd96ca92c6f0d4c;
         // offset 0x720, size 0x10
         short hash_1cc8d841efacb52a;
         // offset 0x730, size 0x6
-        bool hash_1e0160af4fd80dff[6];
+        bool completeddifficulties[6];
         // offset 0x736, size 0x6
-        bool hash_518113a79b08988[6];
+        bool previouscompleteddifficulties[6];
         // offset 0x73c, size 0x1
         bool allcollectiblescollected;
         // offset 0x73d, size 0x1
@@ -4071,7 +4071,7 @@ version 16 {
         // offset 0x748, size 0x1
         bool hash_71b609b078e360c0;
         // offset 0x749, size 0x6
-        bool hash_657891d65d881524[6];
+        bool receivedxpfordifficulty[6];
         // offset 0x74f, size 0x1
         bool hasbeencompleted;
         // offset 0x750, size 0x6
@@ -4087,9 +4087,9 @@ version 16 {
         // offset 0x8, size 0x20
         uint highestscore;
         // offset 0x28, size 0x20
-        uint hash_1b146f5d12b2b147;
+        uint limbhits;
         // offset 0x48, size 0x20
-        uint hash_25ce643c6cf6507e;
+        uint torsohits;
         // offset 0x68, size 0x20
         uint hash_52dbe660cac88df9;
         // offset 0x88, size 0x4
@@ -4103,7 +4103,7 @@ version 16 {
         // offset 0x0, size 0x20
         uint hash_2b12202dea292a78;
         // offset 0x20, size 0x20
-        uint hash_65157f3e7aec5b46;
+        uint roundachieved;
         // offset 0x40, size 0x20
         uint hash_256e550d360e7cf6;
         // offset 0x60, size 0x20
@@ -4113,27 +4113,27 @@ version 16 {
         // offset 0xa0, size 0x20
         uint hash_477109e1674d778e;
         // offset 0xc0, size 0x20
-        uint hash_6f7512e92e96a86a;
+        uint cowsexploded;
         // offset 0xe0, size 0x20
         uint hash_52086efefda6cd87;
         // offset 0x100, size 0x20
         uint hash_4c59bf00eb8047c0;
         // offset 0x120, size 0x20
-        uint hash_4cda3bb269028c08;
+        uint enemykills;
         // offset 0x140, size 0x20
-        uint hash_c159a616c8e909f;
+        uint totalgamesplayed;
         // offset 0x160, size 0x20
-        uint hash_1b75e7812ae582a0;
+        uint scoreachieved;
         // offset 0x180, size 0x20
         uint hash_6e3edce84270ac4c;
         // offset 0x1a0, size 0x20
         uint hash_3ed0ae0744c78900;
         // offset 0x1c0, size 0x20
-        uint hash_24bfa4caccae7ccc;
+        uint skullsearned;
     };
 
     // idx 18 members 1 size 0x390
-    struct hash_6ef8b9b7a8fd75e1 {
+    struct groupstats_s {
         // offset 0x0, size 0x390
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
     };
@@ -4143,7 +4143,7 @@ version 16 {
         // offset 0x0, size 0x390
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
         // offset 0x390, size 0x8
-        bool hash_798921f18e351b13[8];
+        bool challengecompleted[8];
         // offset 0x398, size 0x1
         bool purchased;
         // offset 0x399, size 0x1
@@ -4157,7 +4157,7 @@ version 16 {
         // offset 0x0, size 0x390
         hash_6b3db80d498eb06 stats[hash_1609003ae729fea3];
         // offset 0x390, size 0x8
-        bool hash_798921f18e351b13[8];
+        bool challengecompleted[8];
     };
 
     // idx 21 members 5 size 0x190
@@ -4167,7 +4167,7 @@ version 16 {
         // offset 0x18, size 0x8
         uint:2 plevel;
         // offset 0x20, size 0x40
-        bool attachmentmarkedold[hash_12cd35aeeec0ae2d];
+        bool attachmentmarkedold[attachments_e];
         // offset 0x60, size 0x12c
         bool optionmarkedasold[300];
         // offset 0x18c, size 0x4
@@ -4299,7 +4299,7 @@ version 16 {
     };
 
     // idx 34 members 1 size 0x280
-    struct hash_6962b6aa0c4853f4 {
+    struct featureproperties {
         // offset 0x0, size 0x280
         float properties[20];
     };
@@ -4316,26 +4316,26 @@ version 16 {
         destroy_car, // 0x7,
         medal_bomb_detonated, // 0x8,
         stun_aitank_with_emp_grenade, // 0x9,
-        hash_359f05e4bb4fa57, // 0xa,
+        shotgun_mastery, // 0xa,
         films_shoutcasted, // 0xb,
         medal_flag_capture, // 0xc,
         hash_3bba76aa8987218, // 0xd,
-        hash_3bef98f1093a802, // 0xe,
+        coop_medal_scavenger_streak, // 0xe,
         time_played_total, // 0xf,
         hash_495a843c176b50c, // 0x10,
-        hash_4b3d34b8f0e5b8f, // 0x11,
+        medal_destroyed_uav, // 0x11,
         perk_fastweaponswitch_kill_after_swap, // 0x12,
         mappackmask, // 0x13,
         kill_nemesis, // 0x14,
         hash_60f3f9adb22e924, // 0x15,
-        hash_66b80bdb17c4a04, // 0x16,
+        medal_kill_hacker_then_hack_in_hack, // 0x16,
         perk_protection_stun_kills, // 0x17,
         hash_7afff19891fb72e, // 0x18,
         hash_7dc6ebcd202e54f, // 0x19,
         perk_hacker_destroy, // 0x1a,
         hash_85ed95e3662c128, // 0x1b,
         rankxp, // 0x1c,
-        hash_976be36aea95e59, // 0x1d,
+        medal_destroyed_microwave_turret, // 0x1d,
         lifetime_buyin, // 0x1e,
         hash_9904e795162f703, // 0x1f,
         killsdenied, // 0x20,
@@ -4346,32 +4346,32 @@ version 16 {
         sessionbans, // 0x25,
         hash_d31df6b18ade168, // 0x26,
         kdratio, // 0x27,
-        hash_e2a2b7303f42341, // 0x28,
+        medal_destroyed_heli_gunner, // 0x28,
         returns, // 0x29,
         assist, // 0x2a,
-        hash_fdad95a70f179d7, // 0x2b,
-        hash_1023368faabde7bb, // 0x2c,
+        medal_destroyed_heli_guard, // 0x2b,
+        coop_medal_ransack_secured_unobtanium, // 0x2c,
         currencyspent, // 0x2d,
         emblem_version, // 0x2e,
         cp_challenges, // 0x2f,
         highlights_created, // 0x30,
         medal_defused_bomb, // 0x31,
-        hash_11d98f202734032b, // 0x32,
-        hash_124fa750b68f0d7e, // 0x33,
+        assignments_mastery, // 0x32,
+        medal_kill_enemy_with_more_ammo_oic, // 0x33,
         medal_completed_match, // 0x34,
         contracts_completed, // 0x35,
-        hash_12d8d630663bb4ba, // 0x36,
+        medal_destroyed_supply_drop, // 0x36,
         hash_13eb46cb3c4c5613, // 0x37,
-        hash_13ece4de9e4e2180, // 0x38,
-        hash_143a19a14a3654db, // 0x39,
+        coop_medal_actor_melee_kill_quadtank, // 0x38,
+        career_collectibles, // 0x39,
         assist_score_killstreak, // 0x3a,
         get_final_kill, // 0x3b,
-        hash_14e63336430e7e93, // 0x3c,
+        medal_destroyed_heli_comlink, // 0x3c,
         hash_154b0a4b01b8b616, // 0x3d,
         hash_156adf3fdb4091b7, // 0x3e,
         assist_score_microwave_turret, // 0x3f,
         hash_1715d388ed114bcd, // 0x40,
-        hash_171c599dfd8645fb, // 0x41,
+        career_accolades, // 0x41,
         hash_174beaaa686374bd, // 0x42,
         kill_with_resupplied_lethal_grenade, // 0x43,
         medal_kill_enemy_who_killed_teammate, // 0x44,
@@ -4384,34 +4384,34 @@ version 16 {
         medal_multikill_3, // 0x4b,
         medal_multikill_2, // 0x4c,
         medal_multikill_8, // 0x4d,
-        hash_1994a1e6fd4eac28, // 0x4e,
-        hash_19b8cdc5c2c0aeaa, // 0x4f,
+        medal_destroyed_dart, // 0x4e,
+        medal_microwave_turret_kill, // 0x4f,
         suicides, // 0x50,
         timewhennexthost, // 0x51,
-        hash_1b0d87a2f1c0272a, // 0x52,
-        hash_1b148631540ae995, // 0x53,
+        medal_x2_score_shrp, // 0x52,
+        support_killstreak_mastery, // 0x53,
         killed_dog, // 0x54,
         hash_1b5a22bbb1c029a2, // 0x55,
         hash_1bb99705ba9a0e6c, // 0x56,
         hash_1bc0e2d787ec3594, // 0x57,
         hash_1be36c00d02a3702, // 0x58,
-        hash_1be3ce237f8e1363, // 0x59,
+        medal_destroyed_aitank, // 0x59,
         hash_1cafb2c429e2e97f, // 0x5a,
         streaker, // 0x5b,
         captures, // 0x5c,
         leaderboardfailures, // 0x5d,
-        hash_1e2dfda54cd5e4c9, // 0x5e,
+        time_played_allies, // 0x5e,
         ties, // 0x5f,
         hash_1ebf7dbc9624adec, // 0x60,
-        hash_1edccd77f0b71ac2, // 0x61,
+        medal_hq_destroyed, // 0x61,
         medal_clear_2_attackers, // 0x62,
         capture_objective_in_smoke, // 0x63,
         medal_kill_enemy_while_capping, // 0x64,
-        hash_20179a04c1573a20, // 0x65,
+        sniper_mastery, // 0x65,
         career_score_multiteam, // 0x66,
         cur_win_streak, // 0x67,
-        hash_20ce01ed472f2cfa, // 0x68,
-        hash_215f2670384d5d7b, // 0x69,
+        medal_straff_run_kill, // 0x68,
+        medal_destroyed_sentry_gun, // 0x69,
         medal_multikill_more_than_8, // 0x6a,
         destroyed_helicopter_with_bullet, // 0x6b,
         hash_24c25fad1ac01302, // 0x6c,
@@ -4422,12 +4422,12 @@ version 16 {
         hash_26d6f92287f0a1e8, // 0x71,
         hash_26e0be3755c42495, // 0x72,
         defuses, // 0x73,
-        hash_275f021a92a63aee, // 0x74,
+        career_tokens, // 0x74,
         medal_quickly_secure_point, // 0x75,
         hash_281d1546e5e55ca2, // 0x76,
         longshot_3_onelife, // 0x77,
-        hash_2864c17bca6e0048, // 0x78,
-        hash_28db499720aedb6e, // 0x79,
+        smg_mastery, // 0x78,
+        medal_capture_enemy_crate, // 0x79,
         perk_scavenger_kills_after_resupply, // 0x7a,
         hash_2934211bcdcc9e9f, // 0x7b,
         hash_29361ee6a3ecd300, // 0x7c,
@@ -4441,21 +4441,21 @@ version 16 {
         score_hc, // 0x84,
         revives, // 0x85,
         hash_2b75a2161643473b, // 0x86,
-        hash_2b75aabcf73dc800, // 0x87,
+        coop_medal_actor_melee_kill_warlord, // 0x87,
         medal_killstreak_5, // 0x88,
         hash_2bc315db95982551, // 0x89,
-        hash_2bc5c849844383ea, // 0x8a,
+        coop_medal_actor_kill_hunter, // 0x8a,
         hack_enemy_target, // 0x8b,
-        hash_2c5ae152d1f6928b, // 0x8c,
+        medal_teammate_confirm_kill, // 0x8c,
         hash_2d27ed7c35d831b4, // 0x8d,
         medal_kill_enemy_with_their_weapon, // 0x8e,
         medal_kill_flag_carrier, // 0x8f,
-        hash_2e5c1654a4fc1b1c, // 0x90,
+        medal_most_points_shrp, // 0x90,
         career_score, // 0x91,
         laststatsbackup, // 0x92,
-        hash_2f9649f2756709d6, // 0x93,
+        time_played_axis, // 0x93,
         pickups, // 0x94,
-        hash_30298932ae26bbda, // 0x95,
+        medal_multiple_grenade_launcher_kill, // 0x95,
         medal_killed_enemy_while_carrying_flag, // 0x96,
         killed_dog_close_to_teammate, // 0x97,
         hash_308b22e7c87a0709, // 0x98,
@@ -4466,48 +4466,48 @@ version 16 {
         hash_32227db686e80e47, // 0x9d,
         perk_noname_kills, // 0x9e,
         kill_enemy_one_bullet_sniper, // 0x9f,
-        hash_3349efb239eee96f, // 0xa0,
+        medal_destroyed_plane_mortar, // 0xa0,
         medal_kill_enemy_after_death, // 0xa1,
         hash_34783bf7a1179064, // 0xa2,
         match_bonus, // 0xa3,
         medal_backstabber_kill, // 0xa4,
         hash_349aad0f6083abf5, // 0xa5,
-        hash_34d9af35f8b02185, // 0xa6,
+        contracts_cp_spent, // 0xa6,
         hash_34e0fb49ecfca3e4, // 0xa7,
         lifetime_earnings, // 0xa8,
-        hash_3553f8161e7781d7, // 0xa9,
+        coop_medal_actor_kill_quadtank, // 0xa9,
         hash_361c89bc5aadcdac, // 0xaa,
         hash_362683bc5ab617ff, // 0xab,
         destroy_turret, // 0xac,
         hash_37e875290614f1e1, // 0xad,
         medal_killed_bomb_planter, // 0xae,
         medal_uninterrupted_obit_feed_kills, // 0xaf,
-        hash_39e43b41e43d1803, // 0xb0,
+        time_played_team3, // 0xb0,
         medal_kill_enemy_with_care_package_crush, // 0xb1,
         medal_kill_enemy_with_hacked_care_package, // 0xb2,
         chickens, // 0xb3,
         version, // 0xb4,
-        hash_3bbf88b211193c04, // 0xb5,
+        coop_medal_sabotage_cache_destroyed, // 0xb5,
         perk_gpsjammer_immune_kills, // 0xb6,
         hash_3c299d0329cb332c, // 0xb7,
-        hash_3c4542a7c82860e0, // 0xb8,
+        coop_medal_hvt_secure_data, // 0xb8,
         assist_score_cuav, // 0xb9,
         medal_elimination_and_last_player_alive, // 0xba,
         hash_3dd99fa1b0d098d9, // 0xbb,
-        hash_3e76cbc8ac01d9d7, // 0xbc,
-        hash_3f1cf355fd388770, // 0xbd,
+        medal_destroyed_remote_missle, // 0xbc,
+        medal_knife_with_ammo_oic, // 0xbd,
         kill_enemy_through_wall, // 0xbe,
         wlratio, // 0xbf,
         hash_405015b29793595f, // 0xc0,
-        hash_40882db8b6a7f07c, // 0xc1,
-        hash_40a19266327e603c, // 0xc2,
+        medal_plane_mortar_kill, // 0xc1,
+        diamond_club, // 0xc2,
         teamkills_nostats, // 0xc3,
         score, // 0xc4,
         hash_416018859c2a61e0, // 0xc5,
         hash_417ca489457d2cf4, // 0xc6,
-        hash_419d426a0886d25b, // 0xc7,
+        coop_medal_sabotage_bomb_defuser_stopped, // 0xc7,
         medal_bounce_hatchet_kill, // 0xc8,
-        hash_41ca7e5eeaa76eeb, // 0xc9,
+        time_played_opfor, // 0xc9,
         kill_every_enemy, // 0xca,
         medal_comeback_from_deathstreak, // 0xcb,
         hash_43261bbcab41f5ea, // 0xcc,
@@ -4518,9 +4518,9 @@ version 16 {
         hash_4474df73df91d1a5, // 0xd1,
         statsbackupversion, // 0xd2,
         perk_fastmantle_kills, // 0xd3,
-        hash_4563c8418dc6e528, // 0xd4,
-        hash_465a039cdd937ec7, // 0xd5,
-        hash_4667e99dc6606eae, // 0xd6,
+        gold_club, // 0xd4,
+        medal_kill_x2_score_shrp, // 0xd5,
+        precision_master, // 0xd6,
         hash_470c0ed4799f236a, // 0xd7,
         disarm_hacked_carepackage, // 0xd8,
         medal_won_match, // 0xd9,
@@ -4528,11 +4528,11 @@ version 16 {
         destroy_explosive_with_trophy, // 0xdb,
         medal_retrieve_own_tags, // 0xdc,
         killstreak_5_picked_up_weapon, // 0xdd,
-        hash_490052167ba0e80d, // 0xde,
+        coop_medal_actor_melee_kill_hunter, // 0xde,
         hash_4926ee717d694914, // 0xdf,
         long_distance_hatchet_kill, // 0xe0,
         medal_hatchet_kill, // 0xe1,
-        hash_4a10990c96559d2f, // 0xe2,
+        medal_knife_leader_gun, // 0xe2,
         hash_4a1c48bcaeb7db8b, // 0xe3,
         teamkills, // 0xe4,
         destroy_helicopter, // 0xe5,
@@ -4540,26 +4540,26 @@ version 16 {
         contracts_purchased, // 0xe7,
         destroy_explosive, // 0xe8,
         hash_4cb5d718c79cca63, // 0xe9,
-        hash_4e0b68c44638153e, // 0xea,
+        coop_medal_team_bonus_complete, // 0xea,
         hash_4e450148b31156f5, // 0xeb,
         assist_score_emp, // 0xec,
         hash_4ed745a0ed607a71, // 0xed,
-        hash_4ee566b815c01f47, // 0xee,
+        medal_destroyed_straferun, // 0xee,
         medal_killed_bomb_defuser, // 0xef,
         hash_4f4597af75828585, // 0xf0,
         hash_4fc11abc691b8a37, // 0xf1,
-        hash_50253bf63c3f8b9d, // 0xf2,
+        lmg_mastery, // 0xf2,
         losses, // 0xf3,
         weapons_mastery, // 0xf4,
         medal_kill_enemy_injuring_teammate, // 0xf5,
         hash_51ab6bbcb2afbcf9, // 0xf6,
-        hash_520cc126821992fd, // 0xf7,
+        medal_hacked, // 0xf7,
         destructions, // 0xf8,
         hash_52abffb28461993b, // 0xf9,
         hash_52b4d13e62f857e5, // 0xfa,
         hash_52f5a81d5f96353f, // 0xfb,
         destroy_qrdrone, // 0xfc,
-        hash_54faafb480f79981, // 0xfd,
+        hasclantag, // 0xfd,
         career_score_hc, // 0xfe,
         hash_55fec19a7934aaad, // 0xff,
         destroy_equipment_with_emp_grenade, // 0x100,
@@ -4567,21 +4567,21 @@ version 16 {
         deaths, // 0x102,
         lastxp, // 0x103,
         challenges, // 0x104,
-        hash_57f78bc1a13bd0de, // 0x105,
+        coop_medal_player_did_revive, // 0x105,
         medal_kill_enemy_one_bullet, // 0x106,
         medal_killstreak_more_than_30, // 0x107,
         hash_5944fa5ab0189744, // 0x108,
         medal_kill_enemy_when_injured, // 0x109,
-        hash_5a716221adc293be, // 0x10a,
+        medal_hack_3_agrs_in_hack, // 0x10a,
         destroy_5_tactical_inserts, // 0x10b,
         maxxp, // 0x10c,
-        hash_5afc248bef0531a3, // 0x10d,
-        hash_5afdb3c40e9b3c4d, // 0x10e,
+        master_killer, // 0x10d,
+        medal_humiliation_gun, // 0x10e,
         medal_kill_confirmed_multi, // 0x10f,
         assist_score_uav, // 0x110,
-        hash_5be3ebfe3f3384cc, // 0x111,
+        medal_defend_hq_last_alive, // 0x111,
         total_shots, // 0x112,
-        hash_5c5cab0cce302a01, // 0x113,
+        weekly_timestamp, // 0x113,
         hash_5cd23704d9c298c1, // 0x114,
         perk_longersprint, // 0x115,
         hash_5d409c26ab2b77d5, // 0x116,
@@ -4593,20 +4593,20 @@ version 16 {
         kill_shocked_enemy, // 0x11c,
         time_played_other, // 0x11d,
         hash_611f84a4a10d3e3e, // 0x11e,
-        hash_620ca70cc9416098, // 0x11f,
+        medal_sentry_gun_kill, // 0x11f,
         hash_621283451861c9e1, // 0x120,
-        hash_63420e05d8642fcd, // 0x121,
-        hash_63599ac17b01c38b, // 0x122,
+        medal_destroyed_sentinel, // 0x121,
+        career_decorations, // 0x122,
         multikill_3_lmg_or_smg_hip_fire, // 0x123,
         hash_640adebcbd63d90f, // 0x124,
         hash_64c0bac013acc9f6, // 0x125,
-        hash_64fdb6c907a131c5, // 0x126,
+        medal_eliminate_oic, // 0x126,
         hash_657cf19d17d5b366, // 0x127,
         last_escrow, // 0x128,
         medal_first_kill, // 0x129,
         hash_65f463ce38d57812, // 0x12a,
         field_specialist, // 0x12b,
-        hash_6639a2d5dd155965, // 0x12c,
+        coop_medal_actor_kill_warlord, // 0x12c,
         hash_668c1bd08c419f31, // 0x12d,
         wins_hc, // 0x12e,
         perk_loudenemies_kills, // 0x12f,
@@ -4619,15 +4619,15 @@ version 16 {
         plants, // 0x136,
         secondary_mastery, // 0x137,
         perk_immune_cuav_kills, // 0x138,
-        hash_69b5c8e5faf24cdf, // 0x139,
-        hash_69df2755783ea5b9, // 0x13a,
-        hash_6a237bc096133b0a, // 0x13b,
-        hash_6a4804b6ccfa8228, // 0x13c,
+        medal_eliminate_sd, // 0x139,
+        medal_remote_missile_kill, // 0x13a,
+        medal_hq_secure, // 0x13b,
+        medal_aitank_kill, // 0x13c,
         incaps, // 0x13d,
         activate_cuav_while_enemy_satelite_active, // 0x13e,
         assist_score_satellite, // 0x13f,
-        hash_6ad99bdc72451712, // 0x140,
-        hash_6b1f1900b1afff8b, // 0x141,
+        medal_kill_hacker_in_hack, // 0x140,
+        primary_mastery, // 0x141,
         hash_6b5388190c66aa86, // 0x142,
         medal_stop_enemy_killstreak, // 0x143,
         perk_movefaster_kills, // 0x144,
@@ -4637,11 +4637,11 @@ version 16 {
         time_played_alive, // 0x148,
         hash_6cda7af101a7813b, // 0x149,
         rank, // 0x14a,
-        hash_6df09ff7e0a31041, // 0x14b,
+        contracts_xp_earned, // 0x14b,
         hash_6df6b645014f20ba, // 0x14c,
         hash_6edacd218965f8bd, // 0x14d,
         hash_6f14dca5dad9d904, // 0x14e,
-        hash_6f1b532646f903fd, // 0x14f,
+        medal_destroyed_counteruav, // 0x14f,
         destroy_aircraft_with_emp, // 0x150,
         perk_nottargetedbyairsupport_destroy_aircraft, // 0x151,
         medal_kill_enemies_one_bullet, // 0x152,
@@ -4657,22 +4657,22 @@ version 16 {
         medal_killstreak_25, // 0x15c,
         medal_killstreak_30, // 0x15d,
         hash_77728de853e5ac67, // 0x15e,
-        hash_78245078b8f303d0, // 0x15f,
+        medal_kill_in_3_seconds_gun, // 0x15f,
         gametypeban, // 0x160,
         accuracy, // 0x161,
         hash_794996196e74a949, // 0x162,
         score_multiteam, // 0x163,
         multikill_2_zone_attackers, // 0x164,
         defend_teammate_who_captured_package, // 0x165,
-        hash_7a6ac3d3a3905c74, // 0x166,
+        medal_death_machine_kill, // 0x166,
         hash_7aa90c8abdf600e6, // 0x167,
         skulls, // 0x168,
-        hash_7bf32e23f3be8ec6, // 0x169,
+        flagcarrierkills, // 0x169,
         kills, // 0x16a,
         medal_defused_bomb_last_man_alive, // 0x16b,
         perk_bulletflinch_kills, // 0x16c,
         offends, // 0x16d,
-        hash_7d320079120592ee, // 0x16e,
+        medal_final_kill_elimination, // 0x16e,
         kill_enemy_through_wall_with_fmj, // 0x16f,
         assists, // 0x170,
         medal_headshot, // 0x171,
@@ -4681,13 +4681,13 @@ version 16 {
         kill_enemy_one_bullet_shotgun, // 0x174,
         hash_7f2ed78b0d2848f2, // 0x175,
         medal_position_secure, // 0x176,
-        hash_7fa27167eb8b2f65, // 0x177,
+        misc_bonus, // 0x177,
         hash_7fb734eea073a2c7, // 0x178,
-        hash_7fc096557d0251c4, // 0x179
+        medal_stick_explosive_kill, // 0x179
     };
 
     // idx 1 members 6
-    enum hash_1cbddecc4f162d46 {
+    enum higheststats_e {
         kill_streak, // 0x0,
         highest_accuracy, // 0x1,
         highest_kdratio, // 0x2,
@@ -4697,13 +4697,13 @@ version 16 {
     };
 
     // idx 2 members 2
-    enum hash_28f0e9c96e9d895d {
+    enum achievements_e {
         hash_f08aa26fabae647, // 0x0,
         hash_5740a8698a4d0345, // 0x1
     };
 
     // idx 3 members 2
-    enum hash_6fc913ce2d7e3a05 {
+    enum gamemodes_e {
         publicmatch, // 0x0,
         leaguematch, // 0x1
     };
@@ -4718,23 +4718,23 @@ version 16 {
     };
 
     // idx 5 members 12
-    enum hash_6501ee9650acd12c {
+    enum gametypes_e {
         coop, // 0x0,
         hash_166b6fdf8bfc14b0, // 0x1,
         cpzm, // 0x2,
         hvt, // 0x3,
         download, // 0x4,
         doa, // 0x5,
-        hash_4cb6801fbfb4feba, // 0x6,
-        hash_59109354c237d415, // 0x7,
+        resg, // 0x6,
+        sabotage, // 0x7,
         pvpo, // 0x8,
-        hash_6dbe071fd1f51551, // 0x9,
-        hash_73a25371d607ae0f, // 0xa,
+        raid, // 0x9,
+        nonar, // 0xa,
         pvp, // 0xb
     };
 
     // idx 6 members 10
-    enum hash_77d9cc12441881d5 {
+    enum mission_e {
         hash_118a6332af43d97c, // 0x0,
         hash_1868403ad767bcd5, // 0x1,
         hash_192de2ac4a272b77, // 0x2,
@@ -4806,7 +4806,7 @@ version 16 {
     };
 
     // idx 10 members 64
-    enum hash_12cd35aeeec0ae2d {
+    enum attachments_e {
         speedreloader, // 0x0,
         dynzoom, // 0x1,
         quickdraw, // 0x2,
@@ -4833,9 +4833,9 @@ version 16 {
         extclip2, // 0x17,
         floatdot, // 0x18,
         steadyaim2, // 0x19,
-        hash_19f95db795729dff, // 0x1a,
+        confirmkill, // 0x1a,
         tacknife, // 0x1b,
-        hash_1cedcb161a0f9050, // 0x1c,
+        turbohip, // 0x1c,
         mixclip, // 0x1d,
         stackfire, // 0x1e,
         killcounter, // 0x1f,
@@ -4843,24 +4843,24 @@ version 16 {
         damage2, // 0x21,
         swayreduc, // 0x22,
         extbarrel2, // 0x23,
-        hash_2e9c1ae290001c77, // 0x24,
-        hash_30e2842163afed57, // 0x25,
+        directionalthreat, // 0x24,
+        penetrationscan, // 0x25,
         reddot, // 0x26,
         extclip, // 0x27,
         holo, // 0x28,
-        hash_42a14ec552763dbc, // 0x29,
+        acogwide, // 0x29,
         elo, // 0x2a,
         fastreload2, // 0x2b,
         extrapellets, // 0x2c,
         holdbreath, // 0x2d,
         fmj2, // 0x2e,
-        hash_561b988220ea0f76, // 0x2f,
+        lowzoom, // 0x2f,
         quickdraw2, // 0x30,
-        hash_59df3d5966c1db75, // 0x31,
-        hash_5a7a05163d2daf77, // 0x32,
-        hash_5a902d129ff53760, // 0x33,
+        spreaddot, // 0x31,
+        turboads, // 0x32,
+        acogcanted, // 0x33,
         fmj, // 0x34,
-        hash_5d43c70ab246bed5, // 0x35,
+        hybridacog, // 0x35,
         adsreload, // 0x36,
         suppressed, // 0x37,
         sprintout, // 0x38,
@@ -4868,7 +4868,7 @@ version 16 {
         dualoptic, // 0x3a,
         grip, // 0x3b,
         reflex, // 0x3c,
-        hash_7ea53a02579e79d1, // 0x3d,
+        holoboa, // 0x3d,
         uber, // 0x3e,
         damage, // 0x3f
     };
@@ -4892,20 +4892,20 @@ version 16 {
         move, // 0x2,
         green, // 0x3,
         left, // 0x4,
-        hash_27d748f975c1cca2, // 0x5,
+        cylon, // 0x5,
         animo, // 0x6,
         rainbow, // 0x7,
         blue, // 0x8,
         cycle, // 0x9,
-        hash_6c90e772edbc8708, // 0xa,
+        magenta, // 0xa,
         cyan, // 0xb,
-        hash_71874fda6a03b630, // 0xc,
+        animplus, // 0xc,
         right, // 0xd
     };
 
     // idx 13 members 4
     enum prestigetokentype_e {
-        hash_b48a752eef7af35, // 0x0,
+        prestige_unlock, // 0x0,
         prestige_extra_cac, // 0x1,
         prestige_respec, // 0x2,
         prestige_reset_stats, // 0x3
@@ -4944,25 +4944,25 @@ version 16 {
     // offset 0xe0, size 0x8
     uint:4 lastconsolesave;
     // offset 0xe8, size 0xc80
-    hash_6962b6aa0c4853f4 facialfeatureproperties[hash_8fa49f7da0821e];
+    featureproperties facialfeatureproperties[hash_8fa49f7da0821e];
     // offset 0xd68, size 0x8
     uint:5 selectedcustomclass;
     // offset 0xd70, size 0x140
-    hash_5ef0b8418736fce5 recentearnings[10];
+    prevscores_s recentearnings[10];
     // offset 0xeb0, size 0x20
     uint hashlen;
     // offset 0xed0, size 0x40
     uint64 hash_37aeca4d39214e62;
     // offset 0xf10, size 0x3050
-    hash_503eb0de8f9cf7c2 gamehistory[hash_6fc913ce2d7e3a05];
+    hash_503eb0de8f9cf7c2 gamehistory[gamemodes_e];
     // offset 0x3f60, size 0xe600
-    hash_67b00e3091cde2fd attachments[hash_12cd35aeeec0ae2d];
+    hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x12560, size 0x90
-    uint:24 higheststats[hash_1cbddecc4f162d46];
+    uint:24 higheststats[higheststats_e];
     // offset 0x125f0, size 0x13880
     hash_1608f63ae729eda5 weaponstats[200];
     // offset 0x25e70, size 0x320
-    hash_1a52129598e71dab hash_53f43899387a360d[10];
+    hash_1a52129598e71dab recentscores[10];
     // offset 0x26190, size 0x20
     int combattrainingwins;
     // offset 0x261b0, size 0x200
@@ -4970,7 +4970,7 @@ version 16 {
     // offset 0x263b0, size 0x40
     uint64 connectionid;
     // offset 0x263f0, size 0x1e0
-    hash_722a4055916df1ff hash_7dd9f1ac62a346d;
+    hash_722a4055916df1ff deadopsarcade;
     // offset 0x265d0, size 0x20
     int motdversionviewed;
     // offset 0x265f0, size 0xfb00
@@ -4978,15 +4978,15 @@ version 16 {
     // offset 0x360f0, size 0x8
     uint:4 currenthitlocationindex;
     // offset 0x360f8, size 0x20
-    uint hash_6dcaad4976588a44;
+    uint currentrankxp;
     // offset 0x36118, size 0xc30
     hash_3b0f9e0921513e2c recenthitloccounts[10];
     // offset 0x36d48, size 0x190
-    byte hash_5988aeaa53d6e90c[50];
+    byte statshash[50];
     // offset 0x36ed8, size 0x260
     uint hash_3de5a4846f45ad78[19];
     // offset 0x37138, size 0x4970
-    hash_2e0567490210dd82 playerstatsbymap[hash_77d9cc12441881d5];
+    hash_2e0567490210dd82 playerstatsbymap[mission_e];
     // offset 0x3baa8, size 0x1180
     hash_4976dab983b23e8c consoleinfo[10];
     // offset 0x3cc28, size 0xd20
@@ -4994,9 +4994,9 @@ version 16 {
     // offset 0x3d948, size 0x40
     uint64 hash_188ecc3aca50f93d;
     // offset 0x3d988, size 0x40
-    uint achievements[hash_28f0e9c96e9d895d];
+    uint achievements[achievements_e];
     // offset 0x3d9c8, size 0x49e0
-    hash_2e1d3d3bb036d22c playerstatsbygametype[hash_6501ee9650acd12c];
+    hash_2e1d3d3bb036d22c playerstatsbygametype[gametypes_e];
     // offset 0x423a8, size 0x100
     byte demonwareflags[32];
     // offset 0x424a8, size 0x8
@@ -5008,13 +5008,13 @@ version 16 {
     // offset 0x424f0, size 0x20
     uint hash_3313a30250a39ec5;
     // offset 0x42510, size 0x180
-    float hash_2363e7e74077b1c0[hash_6501ee9650acd12c];
+    float hash_2363e7e74077b1c0[gametypes_e];
     // offset 0x42690, size 0x20
     uint uploadbandwidth;
     // offset 0x426b0, size 0x140
     hash_4f6f299a12577aa4 prestigetokens[20];
     // offset 0x427f0, size 0xc0
-    hash_4bb25d7ad41fb449 probation[hash_6fc913ce2d7e3a05];
+    hash_4bb25d7ad41fb449 probation[gamemodes_e];
     // offset 0x428b0, size 0x20
     int motdviewtime;
     // offset 0x428d0, size 0x8
@@ -5022,11 +5022,11 @@ version 16 {
     // offset 0x428d8, size 0x90
     hash_5cb2d75a230a501f trainingsimstats;
     // offset 0x42968, size 0x4ad0
-    hash_6ef8b9b7a8fd75e1 groupstats[hash_5075e11eecf4d03d];
+    groupstats_s groupstats[hash_5075e11eecf4d03d];
     // offset 0x47438, size 0x8
     uint:4 hash_191fbfb9e1a3acf3;
     // offset 0x47440, size 0x20
-    float hash_54a74aa3d5f3346d;
+    float storyprogress;
     // offset 0x47460, size 0x46e0
     hash_6b3db80d498eb06 playerstatslist[hash_44d262eb4cb5ed61];
     // offset 0x4bb40, size 0xa0
@@ -5034,7 +5034,7 @@ version 16 {
     // offset 0x4bbe0, size 0x20
     float skill_variance;
     // offset 0x4bc00, size 0x180
-    float hash_3a7324ad328f0e2e[hash_6501ee9650acd12c];
+    float hash_3a7324ad328f0e2e[gametypes_e];
     // offset 0x4bd80, size 0x22e8
     hash_6b411bb770fc8f6c afteractionreportstats;
     // offset 0x4e068, size 0x100
@@ -5050,19 +5050,19 @@ version 16 {
     // offset 0x8b5e0, size 0x1
     bool hash_3ceb201776787882;
     // offset 0x8b5e1, size 0x1
-    hash_7690a9df20146d8a zmcampaigndata;
+    zmcampaign zmcampaigndata;
     // offset 0x8b5e2, size 0x20
     bool musicunlocks[32];
     // offset 0x8b602, size 0x40
-    bool hash_1576a2fd30a2dfb0[64];
+    bool doublexpgroups[64];
     // offset 0x8b642, size 0x1
     bool hash_46e7db8ceaba5b2f;
     // offset 0x8b643, size 0x14
-    bool hash_711b1260308620e7[20];
+    bool currentplayercpdecorations[20];
     // offset 0x8b657, size 0x14
     bool playercpdecorations[20];
     // offset 0x8b66b, size 0x1
-    bool hash_8cbe2e4ecb4fc43;
+    bool hasseenmaxlevelnotification;
     // offset 0x8b66c, size 0x1
     bool completedfirsttimeflow;
     // offset 0x8b66d, size 0x4d

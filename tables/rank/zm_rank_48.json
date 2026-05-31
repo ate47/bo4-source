@@ -1,16 +1,13 @@
 {
     "name": "#zm_rank_48",
-    "shortNameRef": "#",
     "fullNameRef": "#hash_3f749ebce4f4231d",
-    "ingameNameRef": "#",
-    "iconName": "#hash_f862bb18522f59",
-    "iconNameLarge": "#hash_b1053ec6a5775fd",
     "level": 48,
     "minXp": 1021600,
     "maxXp": 1068800,
+    "icon": "#ui_icon_rank_zm_level48",
+    "iconLarge": "#ui_icon_rank_zm_level48_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#ar_damage_t8"
         }
     ]

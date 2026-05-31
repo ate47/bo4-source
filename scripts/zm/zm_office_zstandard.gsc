@@ -55,7 +55,7 @@ function init_level_vars()
     level thread zm_blockers::function_6f01c3cf( "conference1_screens_left_barricade", "script_string", 0 );
     level thread zm_blockers::function_6f01c3cf( "conference1_screens_right_barricade", "script_string", 0 );
     level thread defend_areas();
-    level thread function_9217567c();
+    level thread init_crafting();
     level thread init_traps();
     level thread function_f436d901();
     level thread init_pack_a_punch();
@@ -89,7 +89,7 @@ function function_aee9d1fb( n_max )
         return 0;
     }
     
-    return int( 0.2 * level.var_38b15968 );
+    return int( 0.2 * level.n_zombie_spawns );
 }
 
 // Namespace zm_office_zstandard/zm_office_zstandard
@@ -222,9 +222,9 @@ function defend_areas()
     str_next_defend = array::random( array( #"server_room", #"war_room_lower" ) );
     s_defend_area = zm_utility::function_a877cd10( str_next_defend );
     zombie_dog_util::dog_enable_rounds( 0 );
-    var_3e4bb460 = "elevator2";
+    str_elevator = "elevator2";
     level zm_utility::open_door( "elev2_blocker", undefined, undefined, 1 );
-    function_cc31fe55( var_3e4bb460 );
+    function_cc31fe55( str_elevator );
     var_420e4589 = array( "war_room_stair", "war_room_east", "war_room_west", "war_room_server_door" );
     level zm_utility::open_door( var_420e4589, undefined, undefined, 1 );
     util::delay( 4, undefined, &zm_utility::function_11101458, str_next_defend );
@@ -238,9 +238,9 @@ function defend_areas()
     str_next_defend = array::random( array( #"lab_halls", #"morgue" ) );
     str_third_defend = str_next_defend;
     s_defend_area = zm_utility::function_a877cd10( str_next_defend );
-    var_3e4bb460 = "elevator1";
+    str_elevator = "elevator1";
     level zm_utility::open_door( "elev1_blocker", undefined, undefined, 1 );
-    function_cc31fe55( var_3e4bb460 );
+    function_cc31fe55( str_elevator );
     
     if ( str_next_defend == #"morgue" )
     {
@@ -492,19 +492,19 @@ function function_35ff3f69()
 // Params 1
 // Checksum 0x76e247f1, Offset: 0x1f60
 // Size: 0x434
-function function_cc31fe55( var_3e4bb460 )
+function function_cc31fe55( str_elevator )
 {
     level endon( #"end_game" );
-    var_52cb42f5 = getent( var_3e4bb460 + "_buy", "script_noteworthy" );
-    var_2ffe3076 = getent( var_3e4bb460 + "_touch_volume", "targetname" );
-    e_elevator = getent( var_3e4bb460, "targetname" );
-    s_objective_loc = struct::get( "s_" + var_3e4bb460 );
+    t_move_trigger = getent( str_elevator + "_buy", "script_noteworthy" );
+    var_2ffe3076 = getent( str_elevator + "_touch_volume", "targetname" );
+    e_elevator = getent( str_elevator, "targetname" );
+    s_objective_loc = struct::get( "s_" + str_elevator );
     n_obj_id = gameobjects::get_next_obj_id();
     level flag::wait_till( "elevators_initialized" );
     wait 0.1;
     objective_add( n_obj_id, "active", s_objective_loc.origin, #"hash_2b0ffc46eaa608c5" );
     function_da7940a3( n_obj_id, 1 );
-    var_52cb42f5 triggerenable( 0 );
+    t_move_trigger triggerenable( 0 );
     
     foreach ( player in level.players )
     {
@@ -686,11 +686,11 @@ function init_traps()
 // Params 0
 // Checksum 0xcad2deb, Offset: 0x2fe0
 // Size: 0x1a2
-function function_9217567c()
+function init_crafting()
 {
     level waittill( #"all_players_spawned" );
     
-    foreach ( a_s_crafting in level.var_4fe2f84d )
+    foreach ( a_s_crafting in level.a_t_crafting )
     {
         foreach ( s_crafting in a_s_crafting )
         {

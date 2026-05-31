@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_head_shot",
-    "displayname": "localized17#hash_874506d3bfcc38c",
+    "displayname": "localized17#ui/mod_head_shot",
     "icon": "image#ui_icon_meansofdeath_headshot",
     "iconlarge": "image#ui_icon_meansofdeath_headshot_xl"
 }

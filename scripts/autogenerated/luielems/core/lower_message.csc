@@ -43,7 +43,7 @@ class clower_message : cluielem
             return;
         }
         
-        if ( #"hash_45bfcb1cd8c9b50a" == state_name )
+        if ( #"visiblemessageonly" == state_name )
         {
             set_data( localclientnum, "_state", 2 );
             return;

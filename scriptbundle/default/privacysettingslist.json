@@ -9,11 +9,11 @@
                         }
                     ],
                     "buttonlabel": "localized17#hash_5c78caf09b7d4d85",
-                    "hash_db9c06fd": 0,
-                    "hash_7a610673": 1
+                    "hash_516ec83454242826:hash_db9c06fd": 0,
+                    "hash_5571c2bdc5ee62d7:hash_7a610673": 1
                 }
             ],
-            "hash_4099f2b9": "ccpa"
+            "hash_3adcc08ca48ed01a:hash_4099f2b9": "ccpa"
         }
     ],
     "name": "privacysettingslist"

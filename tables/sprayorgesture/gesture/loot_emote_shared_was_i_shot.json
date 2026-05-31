@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_shared_was_i_shot",
+    "type": "#gesture",
+    "gesture": "#hash_6a768f8f7c7f4271",
+    "gesture2": "#hash_95dbeb7c75741fa",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/close_call",
+        "icon": "image#ui_icon_emotes_s3_was_i_shot",
+        "isdefault": 0
+    }
+}

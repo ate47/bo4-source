@@ -1,7 +1,7 @@
 {
     "objects": [
         {
-            "mainanim": "anim4#hash_39265b4ed372175a",
+            "mainanim": "anim#hash_39265b4ed372175a",
             "model": "model#p8_fxanim_wz_parachute_supplydrop_mod",
             "type": "prop",
             "vmtype": "server",
@@ -9,7 +9,7 @@
             "team": "any"
         },
         {
-            "mainanim": "anim4#hash_4f2b2f1b4df13119",
+            "mainanim": "anim#hash_4f2b2f1b4df13119",
             "model": "model#c_t7_ally_fb",
             "type": "prop",
             "vmtype": "server",
@@ -17,7 +17,7 @@
             "team": "any"
         },
         {
-            "mainanim": "anim4#hash_32ad963f25f115d2",
+            "mainanim": "anim#hash_32ad963f25f115d2",
             "model": "model#c_t7_ally_fb",
             "type": "prop",
             "vmtype": "server",

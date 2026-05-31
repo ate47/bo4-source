@@ -29,7 +29,7 @@ function __init__()
     }
     
     /#
-        level.var_ba13fb7a = getdvarint( #"hash_40fe9055da22add4", 0 );
+        level.debug_team_assignment = getdvarint( #"debug_team_assignment", 0 );
     #/
 }
 
@@ -93,14 +93,14 @@ function function_ee150fcc( team, team_players )
         #/
     }
     
-    var_6195506c = 0;
+    used_spots = 0;
     
     foreach ( count in var_ab9e77bf )
     {
-        var_6195506c += count;
+        used_spots += count;
     }
     
-    return level.maxteamplayers - var_6195506c;
+    return level.maxteamplayers - used_spots;
 }
 
 // Namespace teams/team_assignment
@@ -860,7 +860,7 @@ function function_a9822793()
     var_ed0a1ecc = function_94478182( distribution );
     
     /#
-        if ( level.var_ba13fb7a )
+        if ( level.debug_team_assignment )
         {
             println( "<dev string:x38>" + "<dev string:xab>" );
             function_a9bfa6d6();
@@ -917,7 +917,7 @@ function function_a9822793()
     }
     
     /#
-        if ( level.var_ba13fb7a )
+        if ( level.debug_team_assignment )
         {
             println( "<dev string:x38>" + "<dev string:x111>" );
             function_a9bfa6d6();
@@ -933,7 +933,7 @@ function function_a9822793()
     // Size: 0x90, Type: dev
     function private function_a9bfa6d6()
     {
-        if ( level.var_ba13fb7a )
+        if ( level.debug_team_assignment )
         {
             foreach ( team in level.teams )
             {
@@ -1022,7 +1022,7 @@ function function_a9822793()
                         var_f554d31e = var_f554d31e + player.name + "<dev string:x19a>" + party.party_id + "<dev string:x1a7>";
                     }
                     
-                    assertmsg( "<dev string:x1ab>" + self.name + "<dev string:x1c0>" + ( ishash( team ) ? function_9e72a96( team ) : team ) + "<dev string:x1e5>" + var_dcbb8617.size + "<dev string:x1f9>" + level.maxteamplayers + "<dev string:x1a7>" + var_f554d31e );
+                    assertmsg( "<dev string:x1ab>" + self.name + "<dev string:x1c0>" + ( ishash( team ) ? hashtostring( team ) : team ) + "<dev string:x1e5>" + var_dcbb8617.size + "<dev string:x1f9>" + level.maxteamplayers + "<dev string:x1a7>" + var_f554d31e );
                 }
             }
             
@@ -1046,7 +1046,7 @@ function function_a9822793()
                         
                         if ( party_member.team != player.team )
                         {
-                            assertmsg( "<dev string:x209>" + player.name + "<dev string:x237>" + function_9e72a96( player.team ) + "<dev string:x23c>" + party_member.name + "<dev string:x237>" + function_9e72a96( party_member.team ) + "<dev string:x241>" );
+                            assertmsg( "<dev string:x209>" + player.name + "<dev string:x237>" + hashtostring( player.team ) + "<dev string:x23c>" + party_member.name + "<dev string:x237>" + hashtostring( party_member.team ) + "<dev string:x241>" );
                         }
                     }
                 }

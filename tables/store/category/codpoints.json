@@ -1,9 +1,9 @@
 {
-    "name": "codpoints",
-    "nameHash": "#codpoints",
-    "displayName": "#hash_293582834683fcc5",
-    "imageName": "#7027376462748829854",
+    "nameStr": "codpoints",
+    "name": "#codpoints",
+    "displayName": "#menu/store_cod_points",
     "visibility": true,
+    "image": "#t7_icon_menu_store_codpoints",
     "products": [
         "#cp200",
         "#cp500",

@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_firingrange2.d3dbsp",
+    "baseName": "mp_firingrange2",
+    "mins": "-177728 -169472 -9505.143",
+    "maxs": "215488 209344 23798.281",
+    "checksum": 0,
+    "streamerworld": "#hash_112a57260d66da9b",
+    "lighting": "#maps/mp/mp_firingrange2.d3dbsp",
+    "lutMaterial": "#lut_mp_firingrange2",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_firingrange2",
+        "#img_trim_lut_mp_firingrange2",
+        "#img_trim_lut_mp_firingrange2",
+        "#img_trim_lut_mp_firingrange2"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 1,
+        "cookieArray": "#*cookie_array"
+    }
+}

@@ -163,20 +163,20 @@ function function_e7fd1a33()
 // Size: 0x284
 function function_7b89f32a()
 {
-    var_ff4b3a13 = getent( "clottedcreamtea", "targetname" );
+    mdl_painting = getent( "clottedcreamtea", "targetname" );
     
-    if ( !isdefined( var_ff4b3a13 ) )
+    if ( !isdefined( mdl_painting ) )
     {
         return;
     }
     
-    var_ff4b3a13 val::set( #"painting_cipher", "takedamage", 1 );
-    var_ff4b3a13 val::set( #"painting_cipher", "allowdeath", 0 );
+    mdl_painting val::set( #"painting_cipher", "takedamage", 1 );
+    mdl_painting val::set( #"painting_cipher", "allowdeath", 0 );
     w_weapon = getweapon( #"bowie_knife" );
     
     for ( n_attacks = 0; n_attacks < 9 ; n_attacks++ )
     {
-        s_result = var_ff4b3a13 waittill( #"damage" );
+        s_result = mdl_painting waittill( #"damage" );
         
         if ( s_result.mod === #"mod_melee" )
         {
@@ -185,14 +185,14 @@ function function_7b89f32a()
     
     s_loc = struct::get( #"clottedcreamtea" );
     v_offset = ( 0, 0, -32 );
-    var_55e11aa9 = util::spawn_model( "tag_origin", var_ff4b3a13.origin + v_offset, var_ff4b3a13.angles );
-    var_ff4b3a13 linkto( var_55e11aa9 );
+    var_55e11aa9 = util::spawn_model( "tag_origin", mdl_painting.origin + v_offset, mdl_painting.angles );
+    mdl_painting linkto( var_55e11aa9 );
     v_offset = ( 0, 20, 24 );
     var_55e11aa9 moveto( s_loc.origin + v_offset, 1.5, 1.5 );
     var_55e11aa9 rotatepitch( 138, 1.5, 1.5 );
     var_55e11aa9 waittill( #"movedone" );
     var_55e11aa9 delete();
-    var_ff4b3a13 disconnectpaths();
+    mdl_painting disconnectpaths();
 }
 
 // Namespace zodt8_narrative/zm_zodt8_narrative

@@ -17,13 +17,16 @@
     "character": [
         "#c_zom_der_hellhound"
     ],
-    "meleeWeapon": "#hash_1783057563ce1ca2",
+    "animMappingTables": [
+        "#hash_5c4ace24eae59e42"
+    ],
+    "meleeWeapon": "#dog_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
     "footstepTable": "#zdogfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#zm_dog.ai_bt",
+    "behaviorTree": "#hash_5c4ec524eae977ce",
     "animStateMachine": "#hash_388a93bb2402d5af",
     "animSelectorTable": "#hash_388a8abb2402c664",
     "traversalExtents": "#default_traversal_extents_zm",

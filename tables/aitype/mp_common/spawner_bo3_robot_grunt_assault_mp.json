@@ -12,16 +12,20 @@
         "#none",
         "#none"
     ],
-    "compassIcon": "#hash_255f7340aecb8573",
+    "compassIcon": "#compass_combat_robot_top",
     "typeSuffix": "_robotsoldier",
     "spawnerType": "vox_robot",
     "tag1": "j_neck",
     "tag2": "j_chest_door",
     "primaryWeapons": [
-        "#hash_4e81ab43a74f9f59"
+        "#lmg_light_robot_mp"
     ],
     "character": [
-        "#hash_81ecaa5cc48e9c0"
+        "#c_zsf_robot_grunt_1"
+    ],
+    "animMappingTables": [
+        "#robot_soldier.ai_am",
+        "#robot_soldier_riotshield.ai_am"
     ],
     "sideArm": "#pistol_standard_mp",
     "grenadeWeapon": "#frag_grenade_mp",
@@ -30,9 +34,9 @@
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#hash_3be2ef217e1d8f91",
-    "animStateMachine": "#hash_6a927ee9529d0c5a",
-    "animSelectorTable": "#hash_6a9267e9529ce545",
+    "behaviorTree": "#robot_soldier.ai_bt",
+    "animStateMachine": "#robot_soldier.ai_asm",
+    "animSelectorTable": "#robot_soldier.ai_ast",
     "traversalExtents": "#default_traversal_extents",
     "aiFxBundle": "#c_54i_robot_grunt_fx_table",
     "ignoresDamageHitLocations": false,

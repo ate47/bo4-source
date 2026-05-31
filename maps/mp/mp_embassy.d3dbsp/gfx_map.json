@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_embassy.d3dbsp",
+    "baseName": "mp_embassy",
+    "mins": "-88566.664 -121619.26 -3204.1797",
+    "maxs": "47160.133 110874.36 11897.529",
+    "checksum": 0,
+    "streamerworld": "#hash_779a8d29631c5bbf",
+    "lighting": "#maps/mp/mp_embassy.d3dbsp",
+    "lutMaterial": "#lut_mp_embassy",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_embassy",
+        "#img_trim_lut_mp_embassy",
+        "#img_trim_lut_mp_embassy",
+        "#img_trim_lut_mp_embassy"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 5,
+        "cookieArray": "#*cookie_array"
+    }
+}

@@ -123,7 +123,7 @@ class csceneobject
     // Size: 0xd4, Type: dev
     function log( str_msg )
     {
-        println( _o_scene._s.type + "<dev string:x2a0>" + function_9e72a96( _o_scene._str_name ) + "<dev string:x2a4>" + ( isdefined( "<dev string:x2ad>" ) ? "<dev string:x2aa>" + "<dev string:x2ad>" : isdefined( _s.name ) ? "<dev string:x2aa>" + _s.name : "<dev string:x2aa>" ) + "<dev string:x2b7>" + str_msg );
+        println( _o_scene._s.type + "<dev string:x2a0>" + hashtostring( _o_scene._str_name ) + "<dev string:x2a4>" + ( isdefined( "<dev string:x2ad>" ) ? "<dev string:x2aa>" + "<dev string:x2ad>" : isdefined( _s.name ) ? "<dev string:x2aa>" + _s.name : "<dev string:x2aa>" ) + "<dev string:x2b7>" + str_msg );
     }
 
     // Namespace csceneobject/scene_objects_shared
@@ -899,7 +899,7 @@ class csceneobject
         /#
             if ( getdvarint( #"debug_scene", 0 ) > 0 )
             {
-                log( toupper( _s.type ) + "<dev string:x208>" + function_9e72a96( animation ) + "<dev string:x217>" );
+                log( toupper( _s.type ) + "<dev string:x208>" + hashtostring( animation ) + "<dev string:x217>" );
             }
         #/
         
@@ -2232,7 +2232,7 @@ class csceneobject
                                 /#
                                     if ( ishash( entry ) )
                                     {
-                                        error( !isassetloaded( "<dev string:x4b>", entry ), "<dev string:x52>" + function_9e72a96( entry ) + "<dev string:x5a>" );
+                                        error( !isassetloaded( "<dev string:x4b>", entry ), "<dev string:x52>" + hashtostring( entry ) + "<dev string:x5a>" );
                                     }
                                     else
                                     {
@@ -2249,7 +2249,7 @@ class csceneobject
                                     {
                                         if ( ishash( entry ) )
                                         {
-                                            error( !isassetloaded( "<dev string:xa7>", entry ), "<dev string:xaf>" + function_9e72a96( entry ) + "<dev string:xb8>" );
+                                            error( !isassetloaded( "<dev string:xa7>", entry ), "<dev string:xaf>" + hashtostring( entry ) + "<dev string:xb8>" );
                                         }
                                         else
                                         {
@@ -2258,7 +2258,7 @@ class csceneobject
                                     }
                                     else if ( ishash( entry ) )
                                     {
-                                        error( !isassetloaded( "<dev string:x167>", entry ), "<dev string:x16f>" + function_9e72a96( entry ) + "<dev string:x5a>" );
+                                        error( !isassetloaded( "<dev string:x167>", entry ), "<dev string:x16f>" + hashtostring( entry ) + "<dev string:x5a>" );
                                     }
                                     else
                                     {
@@ -3042,7 +3042,7 @@ class cscene
             }
             else
             {
-                assertmsg( _s.type + "<dev string:x2a0>" + function_9e72a96( _str_name ) + "<dev string:x56b>" + str_msg );
+                assertmsg( _s.type + "<dev string:x2a0>" + hashtostring( _str_name ) + "<dev string:x56b>" + str_msg );
             }
             
             thread on_error();
@@ -3058,7 +3058,7 @@ class cscene
     // Size: 0x64, Type: dev
     function log( str_msg )
     {
-        println( _s.type + "<dev string:x2a0>" + function_9e72a96( _str_name ) + "<dev string:x56b>" + str_msg );
+        println( _s.type + "<dev string:x2a0>" + hashtostring( _str_name ) + "<dev string:x56b>" + str_msg );
     }
 
     // Namespace cscene/scene_objects_shared
@@ -3748,7 +3748,7 @@ class cscene
     // Namespace cscene/scene_objects_shared
     // Params 0
     // Checksum 0xb5fb9be2, Offset: 0xf980
-    // Size: 0x1a, Type: bool
+    // Size: 0x1a
     function has_init_state()
     {
         return scene::has_init_state( _str_name );
@@ -5399,7 +5399,7 @@ class cscene
                         var_7b160393 = ceil( obj._e getanimtime( animation ) * var_13edeb1f );
                         var_958054e5 = getanimlength( animation );
                         var_f667af2f = obj._e getanimtime( animation ) * var_958054e5;
-                        var_2e63fccd = obj._str_name + "<dev string:x303>" + function_9e72a96( animation );
+                        var_2e63fccd = obj._str_name + "<dev string:x303>" + hashtostring( animation );
                         var_1cae5962 = "<dev string:x30d>" + str_shot + "<dev string:x316>" + var_7b160393 + "<dev string:x2e7>" + var_13edeb1f + "<dev string:x321>" + var_f667af2f + "<dev string:x2e7>" + var_958054e5 + "<dev string:x2fd>";
                         debug2dtext( v_pos, var_2e63fccd, undefined, undefined, undefined, 1, 0.8 );
                         v_pos += ( 0, 20, 0 );

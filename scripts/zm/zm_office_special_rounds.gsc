@@ -75,7 +75,7 @@ function init()
 // Size: 0x32
 function function_f3f325cb( var_148cc603 )
 {
-    return int( 0.3 * level.var_38b15968 );
+    return int( 0.3 * level.n_zombie_spawns );
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
@@ -86,10 +86,10 @@ function function_6f502b52( var_148cc603 )
 {
     if ( level.round_number === 12 )
     {
-        return int( 0.75 * level.var_38b15968 );
+        return int( 0.75 * level.n_zombie_spawns );
     }
     
-    return int( 0.3 * level.var_38b15968 );
+    return int( 0.3 * level.n_zombie_spawns );
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds

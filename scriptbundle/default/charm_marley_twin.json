@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_marley_twin",
-    "hash_ff3063df": "model#",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_seraph_doll",
     "name": "charm_marley_twin",
     "displayname": "localized17#hash_c2f98fa2d2845e8",
     "icon": "ui_icon_weapon_charms_seraph_doll",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_seraph_doll"
 }

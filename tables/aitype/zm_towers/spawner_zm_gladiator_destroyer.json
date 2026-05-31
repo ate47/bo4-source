@@ -20,7 +20,10 @@
         "j_head_deadshot"
     ],
     "character": [
-        "#hash_11f91bc319e519f1"
+        "#c_t8_zmb_dlc0_zombie_destroyer1"
+    ],
+    "animMappingTables": [
+        "#hash_1c9fab938387089f"
     ],
     "meleeWeapon": "#gladiator_melee",
     "aimTable": "#soldier_aim",
@@ -28,7 +31,7 @@
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#zm_gladiator_destroyer.ai_bt",
+    "behaviorTree": "#hash_1ca9b493838f6c6f",
     "animStateMachine": "#hash_2aa459a87eb3e184",
     "animSelectorTable": "#hash_2aa462a87eb3f0cf",
     "traversalExtents": "#default_traversal_extents_zm",

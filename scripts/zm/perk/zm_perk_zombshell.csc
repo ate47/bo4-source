@@ -29,7 +29,7 @@ function __init__()
         zm_perks::function_b60f4a9f( #"specialty_zombshell", #"p8_zm_vapor_altar_icon_01_zombshell", "zombie/fx8_perk_altar_symbol_ambient_zombshell", #"zmperkszombshell" );
         zm_perks::function_f3c80d73( "zombie_perk_bottle_zombshell", "zombie_perk_totem_zombshell" );
         clientfield::register( "scriptmover", "" + #"zombshell_aoe", 15000, 1, "int", &zombshell_aoe, 0, 0 );
-        clientfield::register( "toplayer", "" + #"hash_5f545b88ba3e2938", 15000, 1, "int", &function_1e112e5f, 0, 1 );
+        clientfield::register( "toplayer", "" + #"player_zombshell_fx", 15000, 1, "int", &function_1e112e5f, 0, 1 );
         clientfield::register( "actor", "" + #"zombshell_explosion", 15000, 1, "counter", &zombshell_explosion, 0, 0 );
     }
 }

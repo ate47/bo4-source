@@ -213,16 +213,16 @@ function function_15e0dfb8( localclientnum, var_dc9f0c39 )
     {
         localplayer = function_5c10bd79( localclientnum );
         spectating = function_65b9eb0f( localclientnum ) && !function_1cbf351b( localclientnum );
-        var_6955388c = ( !isdefined( self.owner ) || self.owner != localplayer || spectating ) && isdefined( self.team ) && isdefined( localplayer.team ) && self.team == localplayer.team;
+        ishighlighted = ( !isdefined( self.owner ) || self.owner != localplayer || spectating ) && isdefined( self.team ) && isdefined( localplayer.team ) && self.team == localplayer.team;
         
         if ( var_dc9f0c39 == 1 )
         {
-            self duplicate_render::update_dr_flag( localclientnum, "prop_ally", var_6955388c );
+            self duplicate_render::update_dr_flag( localclientnum, "prop_ally", ishighlighted );
             self duplicate_render::update_dr_flag( localclientnum, "prop_clone", 0 );
         }
         else
         {
-            self duplicate_render::update_dr_flag( localclientnum, "prop_clone", var_6955388c );
+            self duplicate_render::update_dr_flag( localclientnum, "prop_clone", ishighlighted );
             self duplicate_render::update_dr_flag( localclientnum, "prop_ally", 0 );
         }
         
@@ -266,8 +266,8 @@ function function_29561f83( localclientnum, var_dc9f0c39 )
             break;
         }
         
-        var_6955388c = self != localplayer && isdefined( self.team ) && isdefined( localplayer.team ) && self.team == localplayer.team;
-        self duplicate_render::update_dr_flag( localclientnum, "prop_clone", var_6955388c );
+        ishighlighted = self != localplayer && isdefined( self.team ) && isdefined( localplayer.team ) && self.team == localplayer.team;
+        self duplicate_render::update_dr_flag( localclientnum, "prop_clone", ishighlighted );
         level waittill( "team_changed" + localclientnum, "localPlayerSpectating" + localclientnum );
     }
 }
@@ -279,9 +279,9 @@ function function_29561f83( localclientnum, var_dc9f0c39 )
 function hideprop( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     localplayer = function_5c10bd79( localclientnum );
-    var_6955388c = newval && isdefined( self ) && self == localplayer;
+    ishighlighted = newval && isdefined( self ) && self == localplayer;
     
-    if ( var_6955388c )
+    if ( ishighlighted )
     {
         if ( isdefined( self.prop ) )
         {

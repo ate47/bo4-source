@@ -205,8 +205,8 @@ function private _play_banter( var_3e24b5d5, var_a33019a0, a_players, b_force = 
                         /#
                             if ( getdvarint( #"zm_debug_vo", 0 ) )
                             {
-                                iprintlnbold( var_3e24b5d5 + "<dev string:x38>" + function_9e72a96( var_ac829b0 ) + "<dev string:x38>" + n_index );
-                                println( var_3e24b5d5 + "<dev string:x38>" + function_9e72a96( var_ac829b0 ) + "<dev string:x38>" + n_index );
+                                iprintlnbold( var_3e24b5d5 + "<dev string:x38>" + hashtostring( var_ac829b0 ) + "<dev string:x38>" + n_index );
+                                println( var_3e24b5d5 + "<dev string:x38>" + hashtostring( var_ac829b0 ) + "<dev string:x38>" + n_index );
                             }
                         #/
                         
@@ -246,8 +246,8 @@ function private _play_banter( var_3e24b5d5, var_a33019a0, a_players, b_force = 
                     /#
                         if ( getdvarint( #"zm_debug_vo", 0 ) )
                         {
-                            iprintlnbold( var_3e24b5d5 + "<dev string:x38>" + function_9e72a96( var_ac829b0 ) + "<dev string:x38>" + n_index + "<dev string:x3e>" );
-                            println( var_3e24b5d5 + "<dev string:x38>" + function_9e72a96( var_ac829b0 ) + "<dev string:x38>" + n_index + "<dev string:x3e>" );
+                            iprintlnbold( var_3e24b5d5 + "<dev string:x38>" + hashtostring( var_ac829b0 ) + "<dev string:x38>" + n_index + "<dev string:x3e>" );
+                            println( var_3e24b5d5 + "<dev string:x38>" + hashtostring( var_ac829b0 ) + "<dev string:x38>" + n_index + "<dev string:x3e>" );
                         }
                     #/
                     
@@ -647,7 +647,7 @@ function function_ee847f80( str_line1, str_line2 )
 // Params 2, eflags: 0x4
 // Checksum 0x3f95a9ab, Offset: 0x1cd0
 // Size: 0x1f6
-function private function_172de553( var_ec88b612 = 1, a_players = array::randomize( function_347f7d34() ) )
+function private function_172de553( var_ec88b612 = 1, a_players = array::randomize( get_valid_players() ) )
 {
     var_f5f6332 = [];
     
@@ -825,7 +825,7 @@ function is_player_valid( e_player )
 // Params 0
 // Checksum 0x6724da45, Offset: 0x2370
 // Size: 0xe8
-function function_347f7d34()
+function get_valid_players()
 {
     a_valid_players = [];
     
@@ -857,7 +857,7 @@ function function_2ee2ece4( var_79dbc69 = 1 )
 {
     while ( true )
     {
-        a_valid_players = function_347f7d34();
+        a_valid_players = get_valid_players();
         
         if ( a_valid_players.size >= var_79dbc69 )
         {
@@ -876,9 +876,9 @@ function function_2ee2ece4( var_79dbc69 = 1 )
 // Size: 0x9a, Type: bool
 function function_45e29f06()
 {
-    var_5eb47b1d = util::get_active_players();
+    a_active_players = util::get_active_players();
     
-    foreach ( player in var_5eb47b1d )
+    foreach ( player in a_active_players )
     {
         if ( is_player_speaking( player ) )
         {
@@ -986,8 +986,8 @@ function vo_say( str_vo_alias, n_delay = 0, b_wait_if_busy = 0, n_priority = 0, 
         /#
             if ( getdvarint( #"zm_debug_vo", 0 ) )
             {
-                iprintlnbold( "<dev string:xd1>" + function_9e72a96( str_vo_alias ) );
-                println( "<dev string:xd1>" + function_9e72a96( str_vo_alias ) );
+                iprintlnbold( "<dev string:xd1>" + hashtostring( str_vo_alias ) );
+                println( "<dev string:xd1>" + hashtostring( str_vo_alias ) );
             }
         #/
         

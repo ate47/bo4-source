@@ -67,7 +67,7 @@ function function_fd19ef53( e_entity, str_field )
 // Params 4
 // Checksum 0x34888d09, Offset: 0x220
 // Size: 0x3a, Type: bool
-function function_7e40ae2d( x, e_entity, str_field, var_value )
+function setentityfield( x, e_entity, str_field, var_value )
 {
     e_entity.( str_field ) = var_value;
     return true;

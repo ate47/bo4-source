@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_casino.d3dbsp",
+    "baseName": "mp_casino",
+    "mins": "-342716 -445996 -7509.048",
+    "maxs": "181068 340460 41840.76",
+    "checksum": 0,
+    "streamerworld": "#hash_32e9578c9a68f828",
+    "lighting": "#maps/mp/mp_casino.d3dbsp",
+    "lutMaterial": "#lut_mp_casino",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_casino",
+        "#img_trim_lut_mp_casino",
+        "#img_trim_lut_mp_casino",
+        "#img_trim_lut_mp_casino"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 8,
+        "cookieArray": "#*cookie_array"
+    }
+}

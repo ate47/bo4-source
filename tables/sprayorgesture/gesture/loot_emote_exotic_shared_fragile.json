@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_fragile",
+    "type": "#gesture",
+    "gesture": "#boast_fragile",
+    "gesture2": "#boast_fragile_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_5814dc6de1b22d46",
+        "icon": "image#hash_1d415efab13023ce",
+        "isdefault": 0
+    }
+}

@@ -321,7 +321,7 @@ function function_304304b4()
         if ( scenes.size == 0 )
         {
             /#
-                print( "<dev string:x38>" + function_9e72a96( vign_name ) + "<dev string:x59>" + "<dev string:x63>" );
+                print( "<dev string:x38>" + hashtostring( vign_name ) + "<dev string:x59>" + "<dev string:x63>" );
             #/
             
             continue;
@@ -351,7 +351,7 @@ function function_9b8bc25c( a_ents )
         while ( getdvarint( #"hash_51e8e64c588c30af", 0 ) )
         {
             waitframe( 20 );
-            print3d( self.origin, function_9e72a96( self.scriptbundlename ), ( 0, 1, 0 ), 1, 0.3, 20 );
+            print3d( self.origin, hashtostring( self.scriptbundlename ), ( 0, 1, 0 ), 1, 0.3, 20 );
             
             foreach ( ent in a_ents )
             {

@@ -12,7 +12,7 @@
         "#none",
         "#none"
     ],
-    "compassIcon": "#hash_73a24679ac455245",
+    "compassIcon": "#icon_minimap_player_enemy_mp",
     "typeSuffix": "_zombie",
     "spawnerType": "bfather",
     "tag3": "j_spine2",
@@ -24,9 +24,12 @@
         "tag_elbow_weakspot_ri"
     ],
     "character": [
-        "#hash_3cfdabbcf1b0c978"
+        "#c_t8_zmb_blightfather1_noreveal"
     ],
-    "meleeWeapon": "#hash_2651b3623c8008b",
+    "animMappingTables": [
+        "#hash_5a994bbfc64b4883"
+    ],
+    "meleeWeapon": "#blight_father_melee_mp",
     "aimTable": "#soldier_aim",
     "footstepTable": "#hash_1e4bee88a4cf05d8",
     "footstepScriptCallback": true,

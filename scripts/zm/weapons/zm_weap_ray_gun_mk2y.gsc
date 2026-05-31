@@ -21,13 +21,13 @@ function autoexec __init__system__()
 function __init__()
 {
     level.var_585eeded = spawnstruct();
-    level.var_585eeded.var_ba76fe32[ #"ray_gun_mk2y" ] = getweapon( "ray_gun_mk2y" );
-    level.var_585eeded.var_ba76fe32[ #"ray_gun_mk2y_charged" ] = getweapon( "ray_gun_mk2y_charged" );
-    level.var_585eeded.var_ba76fe32[ #"ray_gun_mk2y_upgraded" ] = getweapon( "ray_gun_mk2y_upgraded" );
-    level.var_585eeded.var_ba76fe32[ #"ray_gun_mk2y_upgraded_charged" ] = getweapon( "ray_gun_mk2y_upgraded_charged" );
+    level.var_585eeded.a_w_ray_gun_mk2y[ #"ray_gun_mk2y" ] = getweapon( "ray_gun_mk2y" );
+    level.var_585eeded.a_w_ray_gun_mk2y[ #"ray_gun_mk2y_charged" ] = getweapon( "ray_gun_mk2y_charged" );
+    level.var_585eeded.a_w_ray_gun_mk2y[ #"ray_gun_mk2y_upgraded" ] = getweapon( "ray_gun_mk2y_upgraded" );
+    level.var_585eeded.a_w_ray_gun_mk2y[ #"ray_gun_mk2y_upgraded_charged" ] = getweapon( "ray_gun_mk2y_upgraded_charged" );
     callback::on_weapon_change( &on_weapon_change );
-    callback::add_weapon_fired( level.var_585eeded.var_ba76fe32[ #"ray_gun_mk2y_charged" ], &function_8a977b42 );
-    callback::add_weapon_fired( level.var_585eeded.var_ba76fe32[ #"ray_gun_mk2y_upgraded_charged" ], &function_8a977b42 );
+    callback::add_weapon_fired( level.var_585eeded.a_w_ray_gun_mk2y[ #"ray_gun_mk2y_charged" ], &function_8a977b42 );
+    callback::add_weapon_fired( level.var_585eeded.a_w_ray_gun_mk2y[ #"ray_gun_mk2y_upgraded_charged" ], &function_8a977b42 );
     clientfield::register( "allplayers", "" + #"ray_gun_mk2y_charged", 20000, 1, "int" );
 }
 
@@ -100,7 +100,7 @@ function function_a059fe7f( str_notify )
 // Size: 0x3c, Type: bool
 function function_5b0214e( weapon )
 {
-    return isdefined( weapon ) && isinarray( level.var_585eeded.var_ba76fe32, weapon );
+    return isdefined( weapon ) && isinarray( level.var_585eeded.a_w_ray_gun_mk2y, weapon );
 }
 
 // Namespace zm_weap_ray_gun_mk2y/zm_weap_ray_gun_mk2y
@@ -109,12 +109,12 @@ function function_5b0214e( weapon )
 // Size: 0xa6
 function function_60365a28( weapon )
 {
-    if ( weapon == level.var_585eeded.var_ba76fe32[ #"ray_gun_mk2y" ] || weapon == level.var_585eeded.var_ba76fe32[ #"ray_gun_mk2y_charged" ] )
+    if ( weapon == level.var_585eeded.a_w_ray_gun_mk2y[ #"ray_gun_mk2y" ] || weapon == level.var_585eeded.a_w_ray_gun_mk2y[ #"ray_gun_mk2y_charged" ] )
     {
-        return level.var_585eeded.var_ba76fe32[ #"ray_gun_mk2y" ];
+        return level.var_585eeded.a_w_ray_gun_mk2y[ #"ray_gun_mk2y" ];
     }
     
-    return level.var_585eeded.var_ba76fe32[ #"ray_gun_mk2y_upgraded" ];
+    return level.var_585eeded.a_w_ray_gun_mk2y[ #"ray_gun_mk2y_upgraded" ];
 }
 
 // Namespace zm_weap_ray_gun_mk2y/zm_weap_ray_gun_mk2y

@@ -1,5 +1,16 @@
 {
-    "name": "#pc_achievements",
     "nameStr": "pc_achievements",
-    "ddl": "#gamedata/ddl/generated/pc_achievements.ddl"
+    "name": "#pc_achievements",
+    "ddlPath": "#gamedata/ddl/generated/pc_achievements.ddl",
+    "files": [
+        {
+            "fileName": "pc_achievements"
+        }
+    ],
+    "size": 1024,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

@@ -1,0 +1,29 @@
+{
+    "name": "#hash_6f787505ca140027",
+    "delayBetweenRepSoundsDuration": 0,
+    "earthquakeOnRepair": 0,
+    "earthquakeMinScale": 0.3,
+    "earthquakeMaxScale": 0.4,
+    "earthquakeMinDuration": 0.2,
+    "earthquakeMaxDuration": 0.4,
+    "earthquakeRadius": 150,
+    "numBoardsInBarrier": 1,
+    "autoHideOpenPieces": 1,
+    "taunts": 0,
+    "reachThroughAttacks": 0,
+    "numAttackSlots": 1,
+    "attackSpotHorzOffset": 0,
+    "boards": [
+        {
+            "boardModel": "#p8_fxanim_zm_esc_door_debris_buy_mod",
+            "tearAnim": "#hash_6ddb58ef3edc443a",
+            "boardAnim": "#hash_57745b7bf5b23423",
+            "staticAnim": "#hash_57745b7bf5b23423",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        }
+    ]
+}

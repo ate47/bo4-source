@@ -1,5 +1,16 @@
 {
-    "name": "#leaderboards_player_list",
     "nameStr": "leaderboards_player_list",
-    "ddl": "#gamedata/ddl/generated/leaderboards_player_list.ddl"
+    "name": "#leaderboards_player_list",
+    "ddlPath": "#gamedata/ddl/generated/leaderboards_player_list.ddl",
+    "files": [
+        {
+            "fileName": "leaderboards_player_list"
+        }
+    ],
+    "size": 4096,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

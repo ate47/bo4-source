@@ -1,0 +1,52 @@
+[
+    {
+        "id": 0,
+        "logo_icon": "t8_codcaster_icon_team01",
+        "logo_name": "CODCASTER/TEAM_01"
+    },
+    {
+        "id": 1,
+        "logo_icon": "t8_codcaster_icon_team02",
+        "logo_name": "CODCASTER/TEAM_02"
+    },
+    {
+        "id": 2,
+        "logo_icon": "t8_codcaster_icon_team03",
+        "logo_name": "CODCASTER/TEAM_03"
+    },
+    {
+        "id": 3,
+        "logo_icon": "t8_codcaster_icon_team04",
+        "logo_name": "CODCASTER/TEAM_04"
+    },
+    {
+        "id": 4,
+        "logo_icon": "t8_codcaster_icon_team05",
+        "logo_name": "CODCASTER/TEAM_05"
+    },
+    {
+        "id": 5,
+        "logo_icon": "t8_codcaster_icon_team06",
+        "logo_name": "CODCASTER/TEAM_06"
+    },
+    {
+        "id": 6,
+        "logo_icon": "t8_codcaster_icon_team07",
+        "logo_name": "CODCASTER/TEAM_07"
+    },
+    {
+        "id": 7,
+        "logo_icon": "t8_codcaster_icon_team08",
+        "logo_name": "CODCASTER/TEAM_08"
+    },
+    {
+        "id": 8,
+        "logo_icon": "uie_t7_codcaster_faction1",
+        "logo_name": "CODCASTER/TEAM_09"
+    },
+    {
+        "id": 9,
+        "logo_icon": "uie_t7_codcaster_faction2",
+        "logo_name": "CODCASTER/TEAM_10"
+    }
+]

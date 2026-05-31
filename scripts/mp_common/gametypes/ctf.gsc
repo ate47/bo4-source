@@ -925,9 +925,9 @@ function onpickup( player )
     self gameobjects::set_owner_team( util::get_enemy_team( self.team ) );
     function_18d7960( team, player );
     function_d1b40f6e( team, 2 );
-    var_beb30c2b = anglestoforward( player.angles ) * -1;
+    awayfromplayer = anglestoforward( player.angles ) * -1;
     var_1ac1d901 = anglestoforward( player gettagangles( "tag_stowed_back" ) );
-    up = vectorcross( var_beb30c2b, var_1ac1d901 );
+    up = vectorcross( awayfromplayer, var_1ac1d901 );
     var_fb082d39 = axistoangles( var_1ac1d901, up * -1 );
     self.var_94885886 = util::spawn_model( level.var_537d7278[ team ].friendly, player gettagorigin( "tag_stowed_back" ), var_fb082d39 );
     self.var_94885886 setinvisibletoall();

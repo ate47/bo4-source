@@ -70,7 +70,7 @@ function function_90ee7a97( unlock_name, activation_func )
     
     if ( !isdefined( var_9ba1646c ) )
     {
-        assertmsg( "<dev string:x7c>" + function_9e72a96( unlock_name ) + "<dev string:x94>" );
+        assertmsg( "<dev string:x7c>" + hashtostring( unlock_name ) + "<dev string:x94>" );
         return;
     }
     

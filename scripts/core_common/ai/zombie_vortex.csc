@@ -117,8 +117,8 @@ function function_2dd3c5bc( localclientnum, vortex_fx_handle, vposition, fx_vort
     playsound( 0, #"wpn_idgun_portal_stop", vposition );
     wait 0.15;
     self notify( #"vortex_stop" );
-    var_ad8208a9 = playfx( localclientnum, fx_vortex_explosion, vposition );
-    setfxignorepause( localclientnum, var_ad8208a9, 1 );
+    vortex_explosion_fx_handle = playfx( localclientnum, fx_vortex_explosion, vposition );
+    setfxignorepause( localclientnum, vortex_explosion_fx_handle, 1 );
     playsound( 0, #"wpn_idgun_portal_explode", vposition );
     waitframe( 1 );
     self playrumbleonentity( localclientnum, "zod_idgun_vortex_shockwave" );

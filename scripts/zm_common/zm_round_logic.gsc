@@ -309,7 +309,7 @@ function round_spawning()
     if ( !( isdefined( level.kill_counter_hud ) && level.zombie_total > 0 ) )
     {
         level.zombie_total = get_zombie_count_for_round( level.round_number, level.players.size );
-        level.var_38b15968 = level.zombie_total;
+        level.n_zombie_spawns = level.zombie_total;
         level.var_9427911d = level.zombie_total;
         level.var_412516cb = level.var_2125984b;
         level.zombie_respawns = level.var_2125984b;
@@ -698,9 +698,9 @@ function round_start()
     
     println( "<dev string:xd2>" );
     
-    if ( isdefined( level.var_b2f996e6 ) )
+    if ( isdefined( level.round_prestart_func ) )
     {
-        [[ level.var_b2f996e6 ]]();
+        [[ level.round_prestart_func ]]();
     }
     else
     {
@@ -993,9 +993,9 @@ function round_think( restart = 0 )
     
     if ( !( isdefined( restart ) && restart ) )
     {
-        if ( isdefined( level.var_12e11406 ) )
+        if ( isdefined( level.initial_round_wait_func ) )
         {
-            [[ level.var_12e11406 ]]();
+            [[ level.initial_round_wait_func ]]();
         }
         
         if ( !( isdefined( level.host_ended_game ) && level.host_ended_game ) )
@@ -1028,10 +1028,10 @@ function round_think( restart = 0 )
         level.pro_tips_start_time = gettime();
         level.zombie_last_run_time = gettime();
         
-        if ( isdefined( level.var_fc735431 ) )
+        if ( isdefined( level.zombie_round_change_custom ) )
         {
             level thread zm_audio::function_4138a262();
-            [[ level.var_fc735431 ]]();
+            [[ level.zombie_round_change_custom ]]();
         }
         else
         {

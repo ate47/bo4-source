@@ -1,0 +1,63 @@
+{
+    "name": "#hash_3c7ad3f215cfc8d5",
+    "type": "tank",
+    "scoreType": "none",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "vehicleRidersBundle": "#veh_bo3_mil_apc_riders",
+    "deathFx": "#explosions/fx_vexp_truck_pickup",
+    "deathFxTag": "tag_origin",
+    "deathFxSound": "#hash_2149db0c502305e3",
+    "lightFx": [
+        "#hash_1dc451a16def3d6",
+        "#hash_1dc451a16def3d6"
+    ],
+    "lightFxTag": [
+        "tag_fx_headlight_left",
+        "tag_fx_headlight_right"
+    ],
+    "unk1438": [
+        "#hash_2e94c3f0bd739180",
+        "#hash_2e94c3f0bd739180"
+    ],
+    "unk1458": [
+        "tag_fx_brakelight_right",
+        "tag_fx_brakelight_left"
+    ],
+    "unk1468": [
+        "#hash_7d7050073ce880fd",
+        "#hash_7d7050073ce880fd"
+    ],
+    "unk1488": [
+        "tag_fx_brakelight_left",
+        "tag_fx_brakelight_right"
+    ],
+    "unk11f4": [
+        "tag_wheel_spin_front_left_03",
+        "tag_wheel_spin_front_right_03",
+        "tag_wheel_spin_back_left_03",
+        "tag_wheel_spin_back_right_03"
+    ],
+    "skidSpeedMin": 20,
+    "skidSpeedMax": 100,
+    "peelSpeedMax": 600,
+    "model": "#hash_7199085fbfc8ee81",
+    "deathModel": "#hash_7199085fbfc8ee81",
+    "steerAxisName": "AXIS_LSTICK",
+    "gasButtonName": "BUTTON_RTRIG",
+    "reverseBrakeButtonName": "BUTTON_LTRIG",
+    "handBrakeButtonName": "BUTTON_B",
+    "attackButtonName": "BUTTON_RSHLDR",
+    "attackSecondaryButtonName": "BUTTON_LSHLDR",
+    "unk1608": "BUTTON_A",
+    "unk1648": "BUTTON_Y",
+    "shootshock": "tankblast",
+    "rumbletype": "tank_rumble",
+    "bundle": {
+        "healthpoolsize": 650,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 2
+    }
+}

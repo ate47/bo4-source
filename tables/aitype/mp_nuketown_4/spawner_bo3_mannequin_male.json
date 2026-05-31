@@ -18,8 +18,11 @@
         "#hash_4fd4560281b08c3e",
         "#hash_4fd4570281b08df1"
     ],
-    "meleeWeapon": "#hash_2eb9b535f09d1b3c",
-    "footstepTable": "#hash_77e84cc60b083c69",
+    "animMappingTables": [
+        "#hash_e705855d824681c"
+    ],
+    "meleeWeapon": "#mannequin_ai_defaultmelee_mp",
+    "footstepTable": "#mannfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",

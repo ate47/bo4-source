@@ -13,7 +13,7 @@
 
 // Namespace elevators
 // Method(s) 18 Total 18
-class class_727456f3
+class celevator
 {
 
     var m_e_trigger;
@@ -26,7 +26,7 @@ class class_727456f3
     var var_a2f96f78;
     var var_de7ae77;
 
-    // Namespace namespace_727456f3/elevators_shared
+    // Namespace celevator/elevators_shared
     // Params 1
     // Checksum 0x6b39a806, Offset: 0x2ee8
     // Size: 0xa4
@@ -47,7 +47,7 @@ class class_727456f3
         }
     }
 
-    // Namespace namespace_727456f3/elevators_shared
+    // Namespace celevator/elevators_shared
     // Params 1
     // Checksum 0x76c48c1b, Offset: 0x2e30
     // Size: 0xac
@@ -68,7 +68,7 @@ class class_727456f3
         }
     }
 
-    // Namespace namespace_727456f3/elevators_shared
+    // Namespace celevator/elevators_shared
     // Params 2
     // Checksum 0xe44342d0, Offset: 0x2960
     // Size: 0x4c4
@@ -117,7 +117,7 @@ class class_727456f3
             var_b66bd46e = var_de7ae77 - var_c0a091bc;
         }
         
-        n_movetime = m_s_bundle.var_db3c84cf * var_b66bd46e;
+        n_movetime = m_s_bundle.elevator_move_time * var_b66bd46e;
         n_movetime = math::clamp( n_movetime, 1, 30 );
         var_2af3d553 movez( -1 * m_s_bundle.var_a4446fd0 * var_b66bd46e, n_movetime, 0.1, 0.1 );
         var_2af3d553 waittill( #"movedone" );
@@ -168,7 +168,7 @@ class class_727456f3
         }
     }
 
-    // Namespace namespace_727456f3/elevators_shared
+    // Namespace celevator/elevators_shared
     // Params 2
     // Checksum 0xd0a1b604, Offset: 0x2498
     // Size: 0x4bc
@@ -217,7 +217,7 @@ class class_727456f3
             var_b66bd46e = var_de7ae77 - var_c0a091bc;
         }
         
-        n_movetime = m_s_bundle.var_db3c84cf * var_b66bd46e;
+        n_movetime = m_s_bundle.elevator_move_time * var_b66bd46e;
         n_movetime = math::clamp( n_movetime, 1, 30 );
         var_2af3d553 movez( m_s_bundle.var_a4446fd0 * var_b66bd46e, n_movetime, 0.1, 0.1 );
         var_2af3d553 waittill( #"movedone" );
@@ -269,7 +269,7 @@ class class_727456f3
         }
     }
 
-    // Namespace namespace_727456f3/elevators_shared
+    // Namespace celevator/elevators_shared
     // Params 1
     // Checksum 0x8df22591, Offset: 0x1f78
     // Size: 0x512
@@ -398,7 +398,7 @@ class class_727456f3
         }
     }
 
-    // Namespace namespace_727456f3/elevators_shared
+    // Namespace celevator/elevators_shared
     // Params 1
     // Checksum 0x54eb6d79, Offset: 0x1a60
     // Size: 0x50a
@@ -527,7 +527,7 @@ class class_727456f3
         }
     }
 
-    // Namespace namespace_727456f3/elevators_shared
+    // Namespace celevator/elevators_shared
     // Params 2
     // Checksum 0x654e1b8, Offset: 0x1860
     // Size: 0x1f4
@@ -587,11 +587,11 @@ class class_727456f3
         }
     }
 
-    // Namespace namespace_727456f3/elevators_shared
+    // Namespace celevator/elevators_shared
     // Params 3
     // Checksum 0x12deba49, Offset: 0x15a8
     // Size: 0x2ae
-    function function_64d6a132( s_gameobject, var_2605b4dd, b_inside )
+    function function_64d6a132( s_gameobject, b_call, b_inside )
     {
         var_a7a692e3 = isdefined( s_gameobject.script_int ) ? s_gameobject.script_int : 1;
         
@@ -605,7 +605,7 @@ class class_727456f3
             waitresult = s_gameobject.mdl_gameobject waittill( #"gameobject_end_use_player" );
             e_player = waitresult.player;
             
-            if ( var_2605b4dd )
+            if ( b_call )
             {
                 function_47b06180( var_a7a692e3 );
             }
@@ -642,7 +642,7 @@ class class_727456f3
         }
     }
 
-    // Namespace namespace_727456f3/elevators_shared
+    // Namespace celevator/elevators_shared
     // Params 1
     // Checksum 0x6cd835e5, Offset: 0x14c8
     // Size: 0xd6
@@ -672,7 +672,7 @@ class class_727456f3
         }
     }
 
-    // Namespace namespace_727456f3/elevators_shared
+    // Namespace celevator/elevators_shared
     // Params 1
     // Checksum 0x91cd70b3, Offset: 0x1360
     // Size: 0x15a
@@ -704,7 +704,7 @@ class class_727456f3
         }
     }
 
-    // Namespace namespace_727456f3/elevators_shared
+    // Namespace celevator/elevators_shared
     // Params 0
     // Checksum 0x89a18863, Offset: 0x1338
     // Size: 0x1c
@@ -713,11 +713,11 @@ class class_727456f3
         var_10b20309 gameobjects::disable_object();
     }
 
-    // Namespace namespace_727456f3/elevators_shared
+    // Namespace celevator/elevators_shared
     // Params 3
     // Checksum 0x74c9bc09, Offset: 0x1288
     // Size: 0xa4
-    function function_8986542b( s_gameobject, var_2605b4dd, b_inside )
+    function function_8986542b( s_gameobject, b_call, b_inside )
     {
         if ( b_inside )
         {
@@ -726,10 +726,10 @@ class class_727456f3
             s_gameobject.mdl_gameobject.trigger linkto( var_2af3d553 );
         }
         
-        thread function_64d6a132( s_gameobject, var_2605b4dd, b_inside );
+        thread function_64d6a132( s_gameobject, b_call, b_inside );
     }
 
-    // Namespace namespace_727456f3/elevators_shared
+    // Namespace celevator/elevators_shared
     // Params 0
     // Checksum 0xd45cc5b8, Offset: 0x1100
     // Size: 0x17e
@@ -775,7 +775,7 @@ class class_727456f3
         }
     }
 
-    // Namespace namespace_727456f3/elevators_shared
+    // Namespace celevator/elevators_shared
     // Params 0
     // Checksum 0x7b936818, Offset: 0xed8
     // Size: 0x21c
@@ -808,7 +808,7 @@ class class_727456f3
         m_e_trigger linkto( var_2af3d553 );
     }
 
-    // Namespace namespace_727456f3/elevators_shared
+    // Namespace celevator/elevators_shared
     // Params 0
     // Checksum 0xfa45de71, Offset: 0xde8
     // Size: 0xe4
@@ -833,7 +833,7 @@ class class_727456f3
         var_2af3d553 setmovingplatformenabled( 1 );
     }
 
-    // Namespace namespace_727456f3/elevators_shared
+    // Namespace celevator/elevators_shared
     // Params 2
     // Checksum 0x1979dc4f, Offset: 0xc08
     // Size: 0x1d6
@@ -882,9 +882,9 @@ function autoexec __init__system__()
 function __init__()
 {
     clientfield::register( "toplayer", "elevator_floor_selection", 1, 1, "int" );
-    var_78f0e5f1 = struct::get_array( "scriptbundle_elevators", "classname" );
+    a_elevators = struct::get_array( "scriptbundle_elevators", "classname" );
     
-    foreach ( s_instance in var_78f0e5f1 )
+    foreach ( s_instance in a_elevators )
     {
         var_1313d6ba = s_instance init_elevator();
         
@@ -894,9 +894,9 @@ function __init__()
         }
     }
     
-    var_9ee4aad1 = struct::get( "elevator_doors_roof", "targetname" );
+    s_roof = struct::get( "elevator_doors_roof", "targetname" );
     
-    if ( isdefined( var_9ee4aad1 ) )
+    if ( isdefined( s_roof ) )
     {
         level scene::init( "elevator_doors_roof", "targetname" );
     }
@@ -948,7 +948,7 @@ function init_elevator()
     }
     
     var_1ec3151c = struct::get_script_bundle( "elevators", isdefined( self.var_e87a94f3 ) ? self.var_e87a94f3 : self.scriptbundlename );
-    var_1313d6ba = new class_727456f3();
+    var_1313d6ba = new celevator();
     [[ var_1313d6ba ]]->init( var_1ec3151c, self );
     var_1313d6ba flag::init( "elevator_moving" );
     var_1313d6ba flag::init( "floor_reached" );
@@ -991,9 +991,9 @@ function __main__()
 // Size: 0x2cc
 function function_a7d817a6()
 {
-    var_78f0e5f1 = struct::get_array( "scriptbundle_elevators", "classname" );
+    a_elevators = struct::get_array( "scriptbundle_elevators", "classname" );
     
-    foreach ( s_instance in var_78f0e5f1 )
+    foreach ( s_instance in a_elevators )
     {
         if ( s_instance.var_1313d6ba.m_s_bundle.var_46d9acb0 == "auto_up" || s_instance.var_1313d6ba.m_s_bundle.var_46d9acb0 == "auto_down" )
         {

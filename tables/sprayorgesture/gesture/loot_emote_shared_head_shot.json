@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_shared_head_shot",
+    "type": "#gesture",
+    "gesture": "#boast_head_shot",
+    "gesture2": "#boast_head_shot_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_7799898558eb5378",
+        "icon": "image#ui_icon_emotes_head_shot",
+        "isdefault": 0
+    }
+}

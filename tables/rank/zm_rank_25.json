@@ -1,16 +1,13 @@
 {
     "name": "#zm_rank_25",
-    "shortNameRef": "#",
     "fullNameRef": "#hash_30015a36c4b15887",
-    "ingameNameRef": "#",
-    "iconName": "#hash_10ce9bb1863bdc8",
-    "iconNameLarge": "#hash_40833a1e708d5d44",
     "level": 25,
     "minXp": 264500,
     "maxXp": 286100,
+    "icon": "#ui_icon_rank_zm_level25",
+    "iconLarge": "#ui_icon_rank_zm_level25_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#smg_standard_t8"
         }
     ]

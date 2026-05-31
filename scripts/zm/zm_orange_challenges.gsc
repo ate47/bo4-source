@@ -161,7 +161,7 @@ function function_d3fc7131()
             self.a_s_challenges[ self.a_s_challenges.size ] = init_challenge( 7, 20, 40, #"hash_d9f2cedb84b8d66", &function_658f9053, &function_5ba49bb9, "bonus_points_team", #"hash_78a6b67ab7d98b2f" );
             self.a_s_challenges[ self.a_s_challenges.size ] = init_challenge( 8, 6, 12, #"hash_d9f2bedb84b8bb3", &function_8885885d, &function_b0848cf7, "full_ammo", #"hash_697d3cc07f8424da" );
             self.a_s_challenges[ self.a_s_challenges.size ] = init_challenge( 9, 5, 5, #"hash_d9f2aedb84b8a00", &function_39ca7654, &function_a0ebbf07, "extra_snowballs", #"hash_607ea24c3576c5b2" );
-            self function_e12fb431();
+            self init_bells();
             break;
         case #"lighthouse_station":
             self.a_s_challenges[ self.a_s_challenges.size ] = init_challenge( 10, 25, 50, #"hash_3f452857bdecf44e", &function_6384ebfd, &function_fd31e27b, "carpenter", #"hash_78a6b67ab7d98b2f" );
@@ -323,7 +323,7 @@ function function_af2eff2e()
         }
         
         callback::on_connect( &function_76007e28 );
-        self thread function_1525b94c();
+        self thread start_next_challenge();
         
         if ( self.script_location != "frozen_crevasse" )
         {
@@ -347,7 +347,7 @@ function function_2a4de81f()
 // Params 0
 // Checksum 0xcab59cf7, Offset: 0x1aa0
 // Size: 0xf4
-function function_1525b94c()
+function start_next_challenge()
 {
     n_size = self.a_s_challenges.size;
     
@@ -591,7 +591,7 @@ function start_challenge()
         self function_98233b53();
     }
     
-    self function_1525b94c();
+    self start_next_challenge();
 }
 
 // Namespace zm_orange_challenges/zm_orange_challenges
@@ -1396,14 +1396,14 @@ function function_89754c19( var_d6578e1f )
 // Size: 0x568
 function function_dfeb1c1b()
 {
-    var_7176f841 = struct::get_array( "pablo_soup_ingredients", "targetname" );
+    a_s_soup_ingredients = struct::get_array( "pablo_soup_ingredients", "targetname" );
     a_s_meats = [];
     a_s_spices = [];
     a_s_vegetables = [];
     
-    foreach ( var_33e4d4f0 in var_7176f841 )
+    foreach ( s_soup_ingredient in a_s_soup_ingredients )
     {
-        if ( var_33e4d4f0.script_string === "meats" )
+        if ( s_soup_ingredient.script_string === "meats" )
         {
             if ( !isdefined( a_s_meats ) )
             {
@@ -1414,11 +1414,11 @@ function function_dfeb1c1b()
                 a_s_meats = array( a_s_meats );
             }
             
-            a_s_meats[ a_s_meats.size ] = var_33e4d4f0;
+            a_s_meats[ a_s_meats.size ] = s_soup_ingredient;
             continue;
         }
         
-        if ( var_33e4d4f0.script_string === "spices" )
+        if ( s_soup_ingredient.script_string === "spices" )
         {
             if ( !isdefined( a_s_spices ) )
             {
@@ -1429,7 +1429,7 @@ function function_dfeb1c1b()
                 a_s_spices = array( a_s_spices );
             }
             
-            a_s_spices[ a_s_spices.size ] = var_33e4d4f0;
+            a_s_spices[ a_s_spices.size ] = s_soup_ingredient;
             continue;
         }
         
@@ -1442,7 +1442,7 @@ function function_dfeb1c1b()
             a_s_vegetables = array( a_s_vegetables );
         }
         
-        a_s_vegetables[ a_s_vegetables.size ] = var_33e4d4f0;
+        a_s_vegetables[ a_s_vegetables.size ] = s_soup_ingredient;
     }
     
     self.a_s_ingredients = [];
@@ -1886,7 +1886,7 @@ function function_f1da3c8( s_challenge )
 // Params 0
 // Checksum 0xba655fc4, Offset: 0x5e88
 // Size: 0x120
-function function_e12fb431()
+function init_bells()
 {
     level endon( #"end_game" );
     s_challenge = self.a_s_challenges[ 2 ];

@@ -43,9 +43,9 @@ function __init__()
 function event()
 {
     self endon( #"disconnect", #"death", #"bgb_update" );
-    self.var_727695ba = 5;
+    self.bgb_remaining_hits = 5;
     
-    while ( self.var_727695ba > 0 )
+    while ( self.bgb_remaining_hits > 0 )
     {
         wait 0.1;
     }
@@ -59,7 +59,7 @@ function actor_damage_override( inflictor, attacker, damage, flags, meansofdeath
 {
     if ( meansofdeath === "MOD_MELEE" && !zm_trial_headshots_only::is_active() && !zm_loadout::is_hero_weapon( weapon ) && weapon != level.weaponnone )
     {
-        attacker function_40383770( self );
+        attacker electric_strike( self );
     }
     
     return damage;
@@ -73,7 +73,7 @@ function vehicle_damage_override( einflictor, eattacker, idamage, idflags, smean
 {
     if ( smeansofdeath === "MOD_MELEE" && !zm_loadout::is_hero_weapon( weapon ) )
     {
-        eattacker function_40383770( self );
+        eattacker electric_strike( self );
     }
     
     return idamage;
@@ -83,7 +83,7 @@ function vehicle_damage_override( einflictor, eattacker, idamage, idflags, smean
 // Params 1
 // Checksum 0x96dcae, Offset: 0x440
 // Size: 0x1a8
-function function_40383770( target )
+function electric_strike( target )
 {
     if ( isdefined( self.beastmode ) && self.beastmode )
     {
@@ -91,8 +91,8 @@ function function_40383770( target )
     }
     
     self bgb::do_one_shot_use();
-    self.var_727695ba -= 1;
-    self bgb::set_timer( self.var_727695ba, 5 );
+    self.bgb_remaining_hits -= 1;
+    self bgb::set_timer( self.bgb_remaining_hits, 5 );
     self playsound( #"zmb_bgb_popshocks_impact" );
     zombie_list = getaiteamarray( level.zombie_team );
     
@@ -189,7 +189,7 @@ function tesla_death( player )
 {
     self endon( #"death" );
     player endon( #"disconnect" );
-    self thread function_f724a242( 1 );
+    self thread zombie_explodes_on_swipe( 1 );
     wait 2;
     player zm_stats::increment_challenge_stat( #"hash_133575f669ffc55c" );
     
@@ -209,7 +209,7 @@ function tesla_death( player )
 // Params 1
 // Checksum 0x8c171e23, Offset: 0xa00
 // Size: 0x144
-function function_f724a242( random_gibs )
+function zombie_explodes_on_swipe( random_gibs )
 {
     self waittill( #"death" );
     

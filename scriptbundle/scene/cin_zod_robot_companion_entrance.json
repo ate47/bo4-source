@@ -1,7 +1,7 @@
 {
     "objects": [
         {
-            "mainanim": "anim4#ai_robot_cmpn_spawn_drop",
+            "mainanim": "anim#ai_robot_cmpn_spawn_drop",
             "model": "model#c_zom_zod_robot_protector_fb",
             "type": "actor",
             "vmtype": "server",

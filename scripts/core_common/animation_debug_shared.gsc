@@ -166,7 +166,7 @@
             if ( true )
             {
                 print3d( maso_they_don_t_see_us_ye_, self getentnum() + get_ent_type() + "<dev string:xdd>" + str_name, color, 0.8, 0.3 );
-                print3d( maso_they_don_t_see_us_ye_ - ( 0, 0, 5 ), "<dev string:xe8>" + ( isanimlooping( animation ) ? "<dev string:xef>" : "<dev string:xf9>" ) + function_9e72a96( animation ), color, 0.8, 0.3 );
+                print3d( maso_they_don_t_see_us_ye_ - ( 0, 0, 5 ), "<dev string:xe8>" + ( isanimlooping( animation ) ? "<dev string:xef>" : "<dev string:xf9>" ) + hashtostring( animation ), color, 0.8, 0.3 );
                 print3d( maso_they_don_t_see_us_ye_ - ( 0, 0, 11 ), str_extra_info, color, 0.8, 0.3 );
                 
                 if ( isdefined( var_1c56a327 ) )

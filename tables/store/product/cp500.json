@@ -2,10 +2,13 @@
     "name": "#cp500",
     "blackMarketName": "#hash_1fb853a1a82bd368",
     "blackMarketDesc": "#hash_487bb390c245eeb0",
-    "entitlementNameXHash": "#",
+    "productName": "#hash_75169da49d09c6ba",
+    "productDesc": "#menu/store_cod_points",
+    "previewImage": "#ui_menu_store_product_b04_cp_500_small",
+    "productImage": "#ui_menu_store_product_b04_cp_500_small",
+    "blackMarketImage": "#ui_icon_blackmarket_cp500_case",
     "productID": "43751",
-    "previewImageName": "hash_1dfe071dcb3b99ce",
-    "productImageName": "hash_1dfe071dcb3b99ce",
-    "blackMarketImageName": "hash_16297d10018c5819",
-    "visibility": true
+    "visibility": true,
+    "unka2": true,
+    "unka3": true
 }

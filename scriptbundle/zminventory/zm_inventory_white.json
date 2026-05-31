@@ -9,8 +9,8 @@
                             "stageimage": "image#hash_520db7764f24e6bb"
                         }
                     ],
-                    "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "list_stages": 1,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                     "clientfield": "#hash_6608231515ad6e93"
                 },
                 {
@@ -20,8 +20,8 @@
                             "stageimage": "image#hash_520db8764f24e86e"
                         }
                     ],
-                    "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "list_stages": 1,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                     "clientfield": "#hash_6608241515ad7046"
                 },
                 {
@@ -31,12 +31,12 @@
                             "stageimage": "image#hash_520db9764f24ea21"
                         }
                     ],
-                    "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "list_stages": 1,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                     "clientfield": "#hash_6608251515ad71f9"
                 }
             ],
-            "hash_b048489f": 3
+            "list_components": 3
         },
         {
             "components": [
@@ -47,8 +47,8 @@
                             "stageimage": "image#hash_6497c30520ed9f0a"
                         }
                     ],
-                    "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "list_stages": 1,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                     "clientfield": "#teleporter_pad_1"
                 },
                 {
@@ -58,27 +58,27 @@
                             "stageimage": "image#hash_6497c30520ed9f0a"
                         }
                     ],
-                    "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "list_stages": 1,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                     "clientfield": "#teleporter_pad_2"
                 }
             ],
-            "hash_b048489f": 2
+            "list_components": 2
         }
     ],
     "shieldpieces": [
         {
-            "hash_7db3435c": 0,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "pieceimage": "image#hash_57735462a52670f9",
             "clientfield": "#shield_1"
         },
         {
-            "hash_7db3435c": 0,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "pieceimage": "image#hash_57735162a5266be0",
             "clientfield": "#shield_2"
         },
         {
-            "hash_7db3435c": 0,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "pieceimage": "image#hash_57735262a5266d93",
             "clientfield": "#shield_3"
         }
@@ -97,8 +97,8 @@
                                     "stageimage": "image#ui_icon_inventory_zm_white_fuse_pickup_yellow"
                                 }
                             ],
-                            "hash_1d91eeba": 2,
-                            "hash_7db3435c": 1,
+                            "list_stages": 2,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 1,
                             "clientfield": "#zm_white_ww_mk2v_ammo"
                         }
                     ],
@@ -115,8 +115,8 @@
                                     "stageimage": "image#hash_53a64436ec4d6140"
                                 }
                             ],
-                            "hash_1d91eeba": 2,
-                            "hash_7db3435c": 1,
+                            "list_stages": 2,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 1,
                             "clientfield": "#zm_white_ww_mk2x_ammo"
                         }
                     ],
@@ -133,8 +133,8 @@
                                     "stageimage": "image#hash_460ca6a260f318c4"
                                 }
                             ],
-                            "hash_1d91eeba": 2,
-                            "hash_7db3435c": 1,
+                            "list_stages": 2,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 1,
                             "clientfield": "#zm_white_ww_mk2y_ammo"
                         }
                     ],
@@ -151,18 +151,18 @@
                                     "stageimage": "image#hash_4c928b221443789e"
                                 }
                             ],
-                            "hash_1d91eeba": 2,
-                            "hash_7db3435c": 1,
+                            "list_stages": 2,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 1,
                             "clientfield": "#zm_white_ww_mk2z_ammo"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "hash_7db3435c": 1,
-            "hash_516217cd": 4,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 1,
+            "list_phases": 4,
             "name": "zm_white_ww_mod",
-            "hash_a0ebe517": "#zm_white_ww_mod_phase"
+            "hash_629ce50b0115bfc1:hash_a0ebe517": "#zm_white_ww_mod_phase"
         },
         {
             "phases": [
@@ -174,16 +174,16 @@
                                     "stageimage": "image#hash_5c241e7c16d67796"
                                 }
                             ],
-                            "hash_1d91eeba": 1,
-                            "hash_7db3435c": 1,
+                            "list_stages": 1,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 1,
                             "clientfield": "#zm_white_ww_husk_part"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "hash_7db3435c": 1,
-            "hash_516217cd": 1,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 1,
+            "list_phases": 1,
             "name": "zm_white_ww_husk"
         },
         {
@@ -196,16 +196,16 @@
                                     "stageimage": "image#hash_5cc7e44a03efab70"
                                 }
                             ],
-                            "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "list_stages": 1,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                             "clientfield": "#zm_white_private_mannequin_key_part"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "hash_7db3435c": 0,
-            "hash_516217cd": 1,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
+            "list_phases": 1,
             "name": "zm_white_private_mannequin_key"
         }
     ],
@@ -254,8 +254,8 @@
                     "stageimage": "image#hash_35c94057300e0eac"
                 }
             ],
-            "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "list_stages": 1,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "clientfield": "#hash_133f5935959cbd21"
         },
         {
@@ -264,8 +264,8 @@
                     "stageimage": "image#hash_125dcc445cdead9"
                 }
             ],
-            "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "list_stages": 1,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "clientfield": "#hash_133f5635959cb808"
         },
         {
@@ -274,25 +274,25 @@
                     "stageimage": "image#hash_125d9c445cde5c0"
                 }
             ],
-            "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "list_stages": 1,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "clientfield": "#hash_133f5735959cb9bb"
         }
     ],
     "objectivebackground": "image#hash_71aaa3fae51b94e2",
     "configstringfiletype": "scriptbundle",
-    "hash_aa76b7dd": 9,
-    "hash_3e38620e": 0,
-    "hash_6fa1ca44": 3,
+    "hash_18f4a9668000591d:hash_aa76b7dd": 9,
+    "hash_1dd088b99b7444ff:hash_3e38620e": 0,
+    "list_quests": 3,
     "type": "zminventory",
-    "hash_af62a8e8": 3,
-    "hash_b10f2611": "#zm_whiteteleporter_phase_num",
+    "list_shieldpieces": 3,
+    "hash_3f9ea9d3b1ed0e8f:hash_b10f2611": "#zm_whiteteleporter_phase_num",
     "name": "zm_inventory_white",
-    "hash_f128673a": "image#hash_1b86326ea73c0d46",
-    "hash_a05daa90": 3,
-    "hash_c029b82f": 2,
-    "hash_846fa8e": "#zm_white_breakfast_trial",
-    "hash_f3d39d90": 0,
-    "hash_38b9613": 0,
-    "hash_16fb993f": "image#hash_1ebd66c5e00ca2ef"
+    "hash_46ae6385a01aa163:hash_f128673a": "image#hash_1b86326ea73c0d46",
+    "hash_4cc5530197ae7206:hash_a05daa90": 3,
+    "hash_55c625aa7c011e55:hash_c029b82f": 2,
+    "hash_5964032c6ccd2477:hash_846fa8e": "#zm_white_breakfast_trial",
+    "hash_65b46d8804cb3bba:hash_f3d39d90": 0,
+    "hash_6ef84b6e3c25015d:hash_38b9613": 0,
+    "hash_7563aee2ccae246c:hash_16fb993f": "image#hash_1ebd66c5e00ca2ef"
 }

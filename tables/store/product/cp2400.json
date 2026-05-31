@@ -2,10 +2,13 @@
     "name": "#cp2400",
     "blackMarketName": "#hash_79305bec43f3c7d3",
     "blackMarketDesc": "#hash_deaa6e36b82ef85",
-    "entitlementNameXHash": "#",
+    "productName": "#hash_1f5588d3c304b75",
+    "productDesc": "#menu/store_cod_points",
+    "previewImage": "#ui_menu_store_product_b04_cp_2400_small",
+    "productImage": "#ui_menu_store_product_b04_cp_2400_small",
+    "blackMarketImage": "#ui_icon_blackmarket_cp2400_case",
     "productID": "43753",
-    "previewImageName": "hash_3bbb21ba08e620bd",
-    "productImageName": "hash_3bbb21ba08e620bd",
-    "blackMarketImageName": "hash_76c0f96814781880",
-    "visibility": true
+    "visibility": true,
+    "unka2": true,
+    "unka3": true
 }

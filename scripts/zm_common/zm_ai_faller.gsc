@@ -521,7 +521,7 @@ function zombie_faller_death_wait( endon_notify )
 // Namespace zm_ai_faller/zm_ai_faller
 // Params 8, eflags: 0x4
 // Checksum 0x4c413ada, Offset: 0x1518
-// Size: 0x82, Type: bool
+// Size: 0x82
 function private zombie_fall_death_func( einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime )
 {
     self animmode( "noclip" );
@@ -659,7 +659,7 @@ function handle_fall_notetracks( note, spot )
 // Namespace zm_ai_faller/zm_ai_faller
 // Params 0
 // Checksum 0xc32936f, Offset: 0x1ab8
-// Size: 0x4a, Type: bool
+// Size: 0x4a
 function faller_death_ragdoll()
 {
     self startragdoll();

@@ -4,7 +4,7 @@
     "contracttitle": "localized17#weapon/smg_standard_t8",
     "name": "loot_contract_patriot",
     "contractdescription": "localized17#hash_716d36532454c43a",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_75e860848ce5d45c",
-    "hash_e08fc162": "localized17#hash_5d6d28f28d01fc52"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_75e860848ce5d45c",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_5d6d28f28d01fc52"
 }

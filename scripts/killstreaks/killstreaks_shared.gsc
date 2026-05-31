@@ -2285,7 +2285,7 @@ function display_unavailable_time()
         timeleft = 1;
     }
     
-    self iprintlnbold( #"hash_55a79f95e07a10bc", " " + timeleft + " ", #"hash_79a58948c3b976f5" );
+    self iprintlnbold( #"hash_55a79f95e07a10bc", " " + timeleft + " ", #"exe/seconds" );
 }
 
 // Namespace killstreaks/killstreaks_shared

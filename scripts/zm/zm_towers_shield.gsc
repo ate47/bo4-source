@@ -37,7 +37,7 @@ function autoexec __init__system__()
 // Size: 0x62e
 function __init__()
 {
-    clientfield::register( "allplayers", "" + #"hash_26af481b9a9d41ce", 1, 1, "counter" );
+    clientfield::register( "allplayers", "" + #"firestorm_shot_fx", 1, 1, "counter" );
     clientfield::register( "allplayers", "" + #"hash_18fc1da5f1785e6b", 1, 1, "counter" );
     clientfield::register( "allplayers", "" + #"charge_gem", 1, 2, "int" );
     clientfield::register( "allplayers", "" + #"hash_275debebcd185ea1", 1, 1, "int" );
@@ -196,7 +196,7 @@ function function_28f576a9( player )
     
     if ( player hasweapon( w_shield_upgraded ) )
     {
-        if ( isdefined( self.blueprint.var_54a97edd.isriotshield ) && self.blueprint.var_54a97edd.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
+        if ( isdefined( self.blueprint.w_result.isriotshield ) && self.blueprint.w_result.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
         {
             self.cost = self zm_crafting::function_ceac3bf9( player, 1 );
             self.hint_string = zm_utility::function_d6046228( #"hash_4b00caebf5058f14", #"hash_5db3ede8aef13738" );
@@ -263,7 +263,7 @@ function function_22d79d55( player )
     
     if ( player zm_crafting::function_2d53738e( w_shield_upgraded ) )
     {
-        if ( isdefined( self.stub.blueprint.var_54a97edd.isriotshield ) && self.stub.blueprint.var_54a97edd.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
+        if ( isdefined( self.stub.blueprint.w_result.isriotshield ) && self.stub.blueprint.w_result.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
         {
             var_d97673ff = 1;
         }
@@ -455,7 +455,7 @@ function function_618e1db4( weapon )
     if ( !isdefined( self.var_e2c32bbb ) || !self.var_e2c32bbb )
     {
         self.var_e2c32bbb = 1;
-        self clientfield::increment( "" + #"hash_26af481b9a9d41ce", 1 );
+        self clientfield::increment( "" + #"firestorm_shot_fx", 1 );
         self waittill( #"end_firing" );
         self.var_e2c32bbb = 0;
     }

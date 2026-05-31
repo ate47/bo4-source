@@ -36,7 +36,7 @@ function event_handler[gametype_init] main( eventstruct )
 {
     globallogic::init();
     infection::initialize();
-    infection::function_153000d0( #"hash_70fe115fad3f4fa", #"hash_3ca96ae1bd7d344f" );
+    infection::function_153000d0( #"prt_mp_zombie_male", #"prt_mp_zombie_female" );
     level.var_757f1b92 = getweapon( "melee_bowie_bloody" );
     level.var_4ae49bbd = getweapon( "hatchet" );
     util::registerroundswitch( 0, 9 );
@@ -78,7 +78,7 @@ function event_handler[gametype_init] main( eventstruct )
     globallogic_spawn::addsupportedspawnpointtype( "tdm" );
     globallogic_audio::set_leader_gametype_dialog( "startInfect", "hcStartInfect", "infectOrdersOfs", "infectOrdersDef", "bbStartInfect", "hcbbStartInfect" );
     setdvar( #"g_allowlaststandforactiveclients", 1 );
-    setdvar( #"hash_7036719f41a78d54", 50 );
+    setdvar( #"player_laststandrevivehealth", 50 );
     
     if ( getdvarint( #"hash_5795d85dc4b1b0d9", 0 ) )
     {

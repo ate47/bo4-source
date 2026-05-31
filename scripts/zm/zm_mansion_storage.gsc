@@ -51,7 +51,7 @@
 // Size: 0x2c4
 function init()
 {
-    clientfield::register( "scriptmover", "" + #"hash_65a58403194ef1b4", 8000, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"secret_bookshelf_fx", 8000, 1, "int" );
     clientfield::register( "world", "" + #"start_billiards", 8000, 1, "int" );
     serverfield::register( "billiard_ball_sunk_sf", 8000, getminbitcountfornum( 9 ), "int", &function_cf048af );
     clientfield::register( "world", "" + #"hash_354bb8ac5de6640a", 8000, getminbitcountfornum( 9 ), "int" );
@@ -278,7 +278,7 @@ function function_34f6d80a()
             
             if ( !b_failed )
             {
-                level.var_969e8ac2.a_e_books[ s_waitresult.array_index ] clientfield::set( "" + #"hash_65a58403194ef1b4", 1 );
+                level.var_969e8ac2.a_e_books[ s_waitresult.array_index ] clientfield::set( "" + #"secret_bookshelf_fx", 1 );
                 level.var_969e8ac2.e_activator = s_waitresult.activator;
             }
             
@@ -1025,14 +1025,14 @@ function function_cd9f1d74( n_reward )
             if ( isdefined( var_b7a9df7c ) )
             {
                 mdl_elixir = util::spawn_model( var_b7a9df7c, s_shelf.origin, s_shelf.angles );
-                var_7b57e2cc = util::spawn_model( #"p8_zm_elixir_bottle_plain_sight_lid", s_shelf.origin + ( 0, 0, 6.75 ), s_shelf.angles );
+                mdl_lid = util::spawn_model( #"p8_zm_elixir_bottle_plain_sight_lid", s_shelf.origin + ( 0, 0, 6.75 ), s_shelf.angles );
                 
                 if ( isdefined( mdl_elixir ) )
                 {
                     var_47323b73 = mdl_elixir zm_unitrigger::create( &function_cc012e8d, 64 );
                     mdl_elixir thread function_67c3a7dd();
                     var_47323b73.mdl_elixir = mdl_elixir;
-                    var_47323b73.var_7b57e2cc = var_7b57e2cc;
+                    var_47323b73.mdl_lid = mdl_lid;
                     var_47323b73.str_elixir = str_elixir;
                 }
                 
@@ -1075,7 +1075,7 @@ function function_67c3a7dd()
         }
         
         self delete();
-        var_163c35fc.var_7b57e2cc delete();
+        var_163c35fc.mdl_lid delete();
         str_bgb = var_163c35fc.str_elixir;
         player thread function_7f4f9503( str_bgb );
         zm_unitrigger::unregister_unitrigger( var_163c35fc );

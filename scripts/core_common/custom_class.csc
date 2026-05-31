@@ -730,19 +730,19 @@ function function_8bf05e82( localclientnum )
 // Namespace customclass/custom_class
 // Params 2, eflags: 0x4
 // Checksum 0xb4d7f600, Offset: 0x2248
-// Size: 0xb2, Type: bool
+// Size: 0xb2
 function private function_3e2b5b60( localclientnum, weaponmodel )
 {
     if ( level.var_dd70be5b[ localclientnum ] <= -1 )
     {
-        return false;
+        return 0;
     }
     
     activecamoinfo = activecamo::function_ae141bf2( level.camo_index[ localclientnum ] );
     
     if ( !isdefined( activecamoinfo ) )
     {
-        return false;
+        return 0;
     }
     
     var_3594168e = activecamoinfo.stages[ level.var_dd70be5b[ localclientnum ] ];

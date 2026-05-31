@@ -521,7 +521,7 @@ function function_a2e8fd7b( entity, player, var_3f120c4d = 4 )
     
     if ( getdvarint( #"zm_zone_pathing", 1 ) )
     {
-        zone_path = zm_zonemgr::function_54fc7938( player, entity );
+        zone_path = zm_zonemgr::get_zone_path( player, entity );
         
         if ( isdefined( zone_path ) && zone_path.cost >= var_3f120c4d )
         {
@@ -529,7 +529,7 @@ function function_a2e8fd7b( entity, player, var_3f120c4d = 4 )
             
             for ( var_3a38abb0 = 0; isdefined( to_zone.var_458fe8a ) && to_zone.var_458fe8a && var_3a38abb0 < 4 ; var_3a38abb0++ )
             {
-                zone_path = zm_zonemgr::function_54fc7938( player, zone_path.to_zone );
+                zone_path = zm_zonemgr::get_zone_path( player, zone_path.to_zone );
                 
                 if ( !isdefined( zone_path ) )
                 {
@@ -633,18 +633,18 @@ function function_3edc6292()
         return 0;
     }
     
-    if ( !isdefined( self.var_d0686fde ) )
+    if ( !isdefined( self.a_str_powerups ) )
     {
-        self.var_d0686fde = [];
+        self.a_str_powerups = [];
     }
-    else if ( !isarray( self.var_d0686fde ) )
+    else if ( !isarray( self.a_str_powerups ) )
     {
-        self.var_d0686fde = array( self.var_d0686fde );
+        self.a_str_powerups = array( self.a_str_powerups );
     }
     
     for ( i = 0; i < self.powerups.size ; i++ )
     {
-        self.var_d0686fde[ i ] = self.powerups[ i ].dropid;
+        self.a_str_powerups[ i ] = self.powerups[ i ].dropid;
     }
 }
 

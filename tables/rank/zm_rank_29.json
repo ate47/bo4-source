@@ -1,16 +1,13 @@
 {
     "name": "#zm_rank_29",
-    "shortNameRef": "#",
     "fullNameRef": "#hash_704c99f3210103c4",
-    "ingameNameRef": "#",
-    "iconName": "#hash_10ce5bb1863b6fc",
-    "iconNameLarge": "#hash_214590bafc12cbc8",
     "level": 29,
     "minXp": 356400,
     "maxXp": 381800,
+    "icon": "#ui_icon_rank_zm_level29",
+    "iconLarge": "#ui_icon_rank_zm_level29_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#ar_mg1909_t8"
         }
     ]

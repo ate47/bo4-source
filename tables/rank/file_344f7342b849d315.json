@@ -1,16 +1,15 @@
 {
     "name": "#hash_344f7342b849d315",
     "shortNameRef": "#hash_5790f73527b8ca2",
-    "fullNameRef": "#hash_7de8b3e81c16d962",
+    "fullNameRef": "#rank/ltgen_full",
     "ingameNameRef": "#hash_fe1494274c41b8b",
-    "iconName": "#hash_75bdffa2fc272eee",
-    "iconNameLarge": "#hash_6729aa98420aa27e",
     "level": 49,
     "minXp": 1093200,
     "maxXp": 1141600,
+    "icon": "#ui_icon_rank_mp_level49",
+    "iconLarge": "#ui_icon_rank_mp_level49_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#ar_fastfire_t8"
         }
     ]

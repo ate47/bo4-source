@@ -68,7 +68,7 @@ function init()
     zm_sq_modules::function_d8383812( "ee_asf_altar", 8000, #"a_skeet_fink_charge", &function_123eb361, &function_9bb74431, 1 );
     register_steps();
     level.w_stake_knife = getweapon( #"stake_knife" );
-    level thread function_93bd3e32();
+    level thread start_a_skeet_fink();
 }
 
 // Namespace mansion_a_skeet_fink/zm_mansion_a_skeet_fink
@@ -87,12 +87,12 @@ function register_steps()
 // Params 0
 // Checksum 0x251bde7d, Offset: 0x970
 // Size: 0x18c
-function function_93bd3e32()
+function start_a_skeet_fink()
 {
     level flagsys::wait_till( "start_zombie_round_logic" );
     clientfield::set( "" + #"hash_3b4f11e825b1f62b", 1 );
     
-    foreach ( s_unitrigger_stub in level.var_4fe2f84d[ #"zblueprint_mansion_a_skeet_fink" ] )
+    foreach ( s_unitrigger_stub in level.a_t_crafting[ #"zblueprint_mansion_a_skeet_fink" ] )
     {
         s_unitrigger_stub.locked = 1;
     }
@@ -135,12 +135,12 @@ function function_f2971bfd( b_respawn = 0 )
                 break;
         }
         
-        var_d3018aec.var_740e1e0e = util::spawn_model( var_ca5e3125, var_d3018aec.origin, var_d3018aec.angles );
+        var_d3018aec.mdl_rune = util::spawn_model( var_ca5e3125, var_d3018aec.origin, var_d3018aec.angles );
         var_d3018aec.script_int = n_index;
         
         if ( b_respawn )
         {
-            var_d3018aec.var_740e1e0e clientfield::set( "" + #"hash_693891d7b7f47419", 2 );
+            var_d3018aec.mdl_rune clientfield::set( "" + #"hash_693891d7b7f47419", 2 );
         }
     }
 }
@@ -214,32 +214,32 @@ function function_ff3b1efd( var_a276c861, ended_early )
 // Size: 0x1d6
 function function_abf0bf8c()
 {
-    self.var_740e1e0e endon( #"death" );
-    self.var_740e1e0e setcandamage( 1 );
-    self.var_740e1e0e.health = 9999;
+    self.mdl_rune endon( #"death" );
+    self.mdl_rune setcandamage( 1 );
+    self.mdl_rune.health = 9999;
     
     while ( true )
     {
-        s_waitresult = self.var_740e1e0e waittill( #"damage" );
+        s_waitresult = self.mdl_rune waittill( #"damage" );
         
         if ( isplayer( s_waitresult.attacker ) && !zm_loadout::is_offhand_weapon( s_waitresult.weapon ) )
         {
             if ( isdefined( s_waitresult.position ) && distancesquared( s_waitresult.position, self.origin ) < 100 )
             {
-                level.var_d5f74526 notify( #"hash_5a5c7c802e5f3037", { #var_c8407ea2:self.script_int, #var_740e1e0e:self.var_740e1e0e, #attacker:s_waitresult.attacker } );
-                self.var_740e1e0e ghost();
+                level.var_d5f74526 notify( #"hash_5a5c7c802e5f3037", { #var_c8407ea2:self.script_int, #mdl_rune:self.mdl_rune, #attacker:s_waitresult.attacker } );
+                self.mdl_rune ghost();
                 wait 1;
                 
-                if ( isdefined( self.var_740e1e0e ) )
+                if ( isdefined( self.mdl_rune ) )
                 {
-                    self.var_740e1e0e delete();
+                    self.mdl_rune delete();
                 }
                 
                 return;
             }
         }
         
-        self.var_740e1e0e.health = 9999;
+        self.mdl_rune.health = 9999;
     }
 }
 
@@ -258,14 +258,14 @@ function function_29a3aca4()
         
         if ( s_waitresult.var_c8407ea2 !== var_1fc5672 )
         {
-            s_waitresult.var_740e1e0e clientfield::set( "" + #"hash_693891d7b7f47419", 2 );
-            playsoundatposition( "zmb_sk_stones_dest", s_waitresult.var_740e1e0e.origin );
+            s_waitresult.mdl_rune clientfield::set( "" + #"hash_693891d7b7f47419", 2 );
+            playsoundatposition( "zmb_sk_stones_dest", s_waitresult.mdl_rune.origin );
             return false;
         }
         
-        s_waitresult.var_740e1e0e clientfield::set( "" + #"hash_693891d7b7f47419", 1 );
+        s_waitresult.mdl_rune clientfield::set( "" + #"hash_693891d7b7f47419", 1 );
         var_1fc5672++;
-        playsoundatposition( "zmb_sk_stones_dest_correct", s_waitresult.var_740e1e0e.origin );
+        playsoundatposition( "zmb_sk_stones_dest_correct", s_waitresult.mdl_rune.origin );
     }
     
     s_waitresult.attacker thread zm_vo::function_a2bd5a0c( #"hash_307199a2e20f6edc", 1 );
@@ -285,9 +285,9 @@ function function_834e6f7()
     
     foreach ( var_d3018aec in level.var_6d3c8378 )
     {
-        if ( isdefined( var_d3018aec.var_740e1e0e ) )
+        if ( isdefined( var_d3018aec.mdl_rune ) )
         {
-            var_d3018aec.var_740e1e0e delete();
+            var_d3018aec.mdl_rune delete();
         }
         
         if ( isdefined( var_d3018aec.t_damage ) )
@@ -645,7 +645,7 @@ function function_2879cfed( var_a276c861 )
 {
     if ( level flag::get( #"hash_6df692c4073d421b" ) )
     {
-        foreach ( s_unitrigger_stub in level.var_4fe2f84d[ #"zblueprint_mansion_a_skeet_fink" ] )
+        foreach ( s_unitrigger_stub in level.a_t_crafting[ #"zblueprint_mansion_a_skeet_fink" ] )
         {
             s_unitrigger_stub.locked = undefined;
         }
@@ -712,7 +712,7 @@ function function_7aa50bb7( e_player )
     
     if ( can_use )
     {
-        self sethintstring( self.stub.blueprint.var_391591d0 );
+        self sethintstring( self.stub.blueprint.purchaseprompt );
     }
     else
     {

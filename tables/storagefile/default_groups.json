@@ -1,5 +1,61 @@
 {
-    "name": "#default_groups",
     "nameStr": "default_groups",
-    "ddl": "#gamedata/ddl/generated/emblem.ddl"
+    "name": "#default_groups",
+    "ddlPath": "#gamedata/ddl/generated/emblem.ddl",
+    "files": [
+        {
+            "fileName": "default_groups",
+            "assetName": "#hash_66f42a4e0d9c7737"
+        },
+        {
+            "fileName": "default_groups_1",
+            "assetName": "#hash_65df2f62732b96a6"
+        },
+        {
+            "fileName": "default_groups_2",
+            "assetName": "#hash_76cf4ac558903ab5"
+        },
+        {
+            "fileName": "default_groups_3",
+            "assetName": "#hash_48bd132c2424fb64"
+        },
+        {
+            "fileName": "default_groups_4",
+            "assetName": "#hash_1d5f67d016b41edb"
+        },
+        {
+            "fileName": "default_groups_5",
+            "assetName": "#hash_293440ffe371530a"
+        },
+        {
+            "fileName": "default_groups_6",
+            "assetName": "#hash_3c4a54f54765c6a9"
+        },
+        {
+            "fileName": "default_groups_7",
+            "assetName": "#hash_2f3fdb46e5944ba8"
+        },
+        {
+            "fileName": "default_groups_8",
+            "assetName": "#hash_430b456724c4415f"
+        },
+        {
+            "fileName": "default_groups_9",
+            "assetName": "#hash_7828bd5937cb8a11"
+        },
+        {
+            "fileName": "default_groups_10",
+            "assetName": "#hash_2bd26272b44defd2"
+        },
+        {
+            "fileName": "default_groups_11",
+            "assetName": "#hash_1ae4bff26e4b2503"
+        }
+    ],
+    "size": 2048,
+    "readOnLogin": true,
+    "readOnly": true,
+    "sendToServer": false,
+    "useScratch": false,
+    "optional": true
 }

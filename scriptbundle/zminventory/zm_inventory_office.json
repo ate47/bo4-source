@@ -1,17 +1,17 @@
 {
     "shieldpieces": [
         {
-            "hash_7db3435c": 0,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "pieceimage": "image#hash_57735262a5266d93",
             "clientfield": "#shield_3"
         },
         {
-            "hash_7db3435c": 0,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "pieceimage": "image#hash_57735462a52670f9",
             "clientfield": "#shield_1"
         },
         {
-            "hash_7db3435c": 0,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "pieceimage": "image#hash_57735162a5266be0",
             "clientfield": "#shield_2"
         }
@@ -27,8 +27,8 @@
                                     "stageimage": "image#hash_4b1901f1dfc5158a"
                                 }
                             ],
-                            "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "list_stages": 1,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                             "clientfield": "#hash_56af1bf88e729603"
                         }
                     ],
@@ -42,18 +42,18 @@
                                     "stageimage": "image#hash_5ef0b8da29c42486"
                                 }
                             ],
-                            "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "list_stages": 1,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                             "clientfield": "#hash_2695edd24ddf6e7b"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "hash_7db3435c": 0,
-            "hash_516217cd": 2,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
+            "list_phases": 2,
             "name": "trap_part_1",
-            "hash_a0ebe517": "#hash_48c5bcc6c9fab9d6"
+            "hash_629ce50b0115bfc1:hash_a0ebe517": "#hash_48c5bcc6c9fab9d6"
         },
         {
             "phases": [
@@ -65,8 +65,8 @@
                                     "stageimage": "image#hash_4b1901f1dfc5158a"
                                 }
                             ],
-                            "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "list_stages": 1,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                             "clientfield": "#hash_639cad37c167bf8e"
                         }
                     ],
@@ -80,18 +80,18 @@
                                     "stageimage": "image#hash_5ef0b8da29c42486"
                                 }
                             ],
-                            "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "list_stages": 1,
+                            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                             "clientfield": "#hash_4a5aa2652a3ee760"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "hash_7db3435c": 0,
-            "hash_516217cd": 2,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
+            "list_phases": 2,
             "name": "trap_part_2",
-            "hash_a0ebe517": "#hash_7d940511ce9f0341"
+            "hash_629ce50b0115bfc1:hash_a0ebe517": "#hash_7d940511ce9f0341"
         }
     ],
     "challenges": [
@@ -128,8 +128,8 @@
                     "stageimage": "image#hash_73dc667901a5a4dd"
                 }
             ],
-            "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "list_stages": 1,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "clientfield": "#hash_6608231515ad6e93"
         },
         {
@@ -138,8 +138,8 @@
                     "stageimage": "image#hash_70ad7a9e5372134f"
                 }
             ],
-            "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "list_stages": 1,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "clientfield": "#hash_6608241515ad7046"
         },
         {
@@ -148,22 +148,22 @@
                     "stageimage": "image#hash_17ed6d25067fba24"
                 }
             ],
-            "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "list_stages": 1,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "clientfield": "#hash_6608251515ad71f9"
         }
     ],
-    "hash_5a90928f": "#hash_7ed874a0ecdefd90",
+    "challengesclientfield": "#hash_7ed874a0ecdefd90",
     "configstringfiletype": "scriptbundle",
-    "hash_aa76b7dd": 1,
-    "hash_3e38620e": 0,
-    "hash_6fa1ca44": 2,
+    "hash_18f4a9668000591d:hash_aa76b7dd": 1,
+    "hash_1dd088b99b7444ff:hash_3e38620e": 0,
+    "list_quests": 2,
     "type": "zminventory",
-    "hash_af62a8e8": 3,
+    "list_shieldpieces": 3,
     "name": "zm_inventory_office",
-    "hash_a05daa90": 3,
-    "hash_f22d6ad5": 5,
-    "hash_f7d932ea": "#hash_518608853a37856e",
-    "hash_f3d39d90": 0,
-    "hash_38b9613": 0
+    "hash_4cc5530197ae7206:hash_a05daa90": 3,
+    "list_challenges": 5,
+    "hash_626730799cb1fd40:hash_f7d932ea": "#hash_518608853a37856e",
+    "hash_65b46d8804cb3bba:hash_f3d39d90": 0,
+    "hash_6ef84b6e3c25015d:hash_38b9613": 0
 }

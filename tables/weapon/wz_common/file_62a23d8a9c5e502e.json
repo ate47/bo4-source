@@ -2,8 +2,8 @@
     "name": "#hash_62a23d8a9c5e502e",
     "baseWeapon": "#hash_66401df7cd6bf292",
     "displayname": "#weapon/fraggrenade",
-    "xhash_70": "#eq_cluster_semtex_grenade",
-    "streamkey": "#hash_72d80a1a6a531c38",
+    "weapon70": "#eq_cluster_semtex_grenade",
+    "soundbank": "#hash_72d80a1a6a531c38",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -12,30 +12,47 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 300,
     "soundrattlerangemax": 700,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "WARZONE",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": true,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
-    "firesound": "#hash_69acb760c1a05692",
-    "firesoundplayer": "#hash_69acb760c1a05692",
+    "#hash_965cc0b3": true,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": true,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "firesound": "#wpn_grenade_throw",
+    "firesoundplayer": "#wpn_grenade_throw",
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
     "gadgetreadysoundplayer": "#hash_6f5b79a1a69b43a8",
     "projexplosionsound": "#hash_117d3a361091a4a5",
     "tunables1": "#hash_19a3a2f2c6cb1d49",
-    "cacWeaponXCam": "#hash_e602e473c324fc07",
+    "cacWeaponXCam": "#ui_cam_cac_equip_frag",
     "sharedWeaponSounds": "#equipment",
+    "statusEffects": [
+        {
+            "effect": "#hash_a608bf886a137e8e",
+            "statusEffects:unk8": "[ll0x0=12c00000064][f0x0=1.4013e-43][f0x4=4.2039e-43] 64 00 00 00 2c 01 00 00",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        }
+    ],
     "#hash_2e4a8800": "#eq_cluster_semtex_scoreevents",
     "projectilemodel": "#hash_7ccbeda8d7b8477c",
     "viewmodel": [
@@ -62,6 +79,6 @@
     "normalImpactFX": "#hash_25bf0d1ebd614ccd",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
+    "normalImpactSounds": "#grenade_explode_material",
     "bounceImpactSounds": "#grenade_bounce"
 }

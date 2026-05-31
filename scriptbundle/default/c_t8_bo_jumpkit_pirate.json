@@ -4,6 +4,6 @@
     "image": "loot04_ui_icon_blackmarket_item_shop_wingsuit_preview_pirate",
     "name": "c_t8_bo_jumpkit_pirate",
     "displayname": "localized17#hash_15b174e15dcd83f",
-    "hash_4fa85a25": "scriptbundle&dfxt_pirate",
+    "hash_4f69520e335e1dc6:hash_4fa85a25": "scriptbundle&dfxt_pirate",
     "parachute": "scriptbundle&c_t8_bo_parachute_pirate"
 }

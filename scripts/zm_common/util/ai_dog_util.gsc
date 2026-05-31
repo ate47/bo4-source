@@ -44,8 +44,8 @@ function __init__()
     clientfield::register( "actor", "dog_fx", 1, 1, "int" );
     clientfield::register( "actor", "dog_spawn_fx", 1, 1, "counter" );
     clientfield::register( "world", "dog_round_fog_bank", 1, 1, "int" );
-    level.var_57c1626e = 1;
-    level.var_a3f67fc2 = 0;
+    level.dogs_enabled = 1;
+    level.dog_rounds_enabled = 0;
     level.dog_round_count = 1;
     level.dog_spawners = [];
     level flag::init( "dog_clips" );
@@ -72,7 +72,7 @@ function dog_enable_rounds( b_ignore_cleanup = 1 )
         return;
     }
     
-    level.var_a3f67fc2 = 1;
+    level.dog_rounds_enabled = 1;
     level.var_dc50acfa = b_ignore_cleanup;
     
     if ( !isdefined( level.dog_round_track_override ) )
@@ -622,9 +622,9 @@ function dog_init()
         self zm_spawner::zombie_history( "<dev string:x6f>" + self.origin );
     #/
     
-    if ( isdefined( level.var_9c55db3 ) )
+    if ( isdefined( level.achievement_monitor_func ) )
     {
-        self [[ level.var_9c55db3 ]]();
+        self [[ level.achievement_monitor_func ]]();
     }
 }
 
@@ -638,7 +638,7 @@ function dog_death()
     
     if ( zombie_utility::get_current_zombie_count() == 0 && level.zombie_total == 0 )
     {
-        level.var_eb06f292 = self.origin;
+        level.last_dog_origin = self.origin;
         level notify( #"last_dog_down" );
     }
     
@@ -746,9 +746,9 @@ function zombie_setup_attack_properties_dog()
     self.disablearrivals = 1;
     self.disableexits = 1;
     
-    if ( isdefined( level.var_a5d11757 ) )
+    if ( isdefined( level.dog_setup_func ) )
     {
-        self [[ level.var_a5d11757 ]]();
+        self [[ level.dog_setup_func ]]();
     }
 }
 
@@ -820,7 +820,7 @@ function dog_clip_monitor()
         
         level flag::wait_till( "dog_clips" );
         
-        if ( isdefined( level.var_53f3cbde ) && level.var_53f3cbde == 1 )
+        if ( isdefined( level.no_dog_clip ) && level.no_dog_clip == 1 )
         {
             return;
         }
@@ -996,20 +996,20 @@ function function_62db7b1c( b_force_spawn = 0, var_eb3a8721 )
             return undefined;
         }
         
-        var_24f5d9f8 = [];
+        a_str_valid_zones = [];
         
-        if ( !isdefined( var_24f5d9f8 ) )
+        if ( !isdefined( a_str_valid_zones ) )
         {
-            var_24f5d9f8 = [];
+            a_str_valid_zones = [];
         }
-        else if ( !isarray( var_24f5d9f8 ) )
+        else if ( !isarray( a_str_valid_zones ) )
         {
-            var_24f5d9f8 = array( var_24f5d9f8 );
+            a_str_valid_zones = array( a_str_valid_zones );
         }
         
-        if ( !isinarray( var_24f5d9f8, str_target_zone ) )
+        if ( !isinarray( a_str_valid_zones, str_target_zone ) )
         {
-            var_24f5d9f8[ var_24f5d9f8.size ] = str_target_zone;
+            a_str_valid_zones[ a_str_valid_zones.size ] = str_target_zone;
         }
         
         var_4cb112e = level.zones[ str_target_zone ];
@@ -1019,18 +1019,18 @@ function function_62db7b1c( b_force_spawn = 0, var_eb3a8721 )
         {
             if ( var_4cb112e.adjacent_zones[ str_zone ].is_connected )
             {
-                if ( !isdefined( var_24f5d9f8 ) )
+                if ( !isdefined( a_str_valid_zones ) )
                 {
-                    var_24f5d9f8 = [];
+                    a_str_valid_zones = [];
                 }
-                else if ( !isarray( var_24f5d9f8 ) )
+                else if ( !isarray( a_str_valid_zones ) )
                 {
-                    var_24f5d9f8 = array( var_24f5d9f8 );
+                    a_str_valid_zones = array( a_str_valid_zones );
                 }
                 
-                if ( !isinarray( var_24f5d9f8, level.zones[ str_zone ].name ) )
+                if ( !isinarray( a_str_valid_zones, level.zones[ str_zone ].name ) )
                 {
-                    var_24f5d9f8[ var_24f5d9f8.size ] = level.zones[ str_zone ].name;
+                    a_str_valid_zones[ a_str_valid_zones.size ] = level.zones[ str_zone ].name;
                 }
                 
                 continue;
@@ -1048,18 +1048,18 @@ function function_62db7b1c( b_force_spawn = 0, var_eb3a8721 )
             {
                 if ( s_zone.adjacent_zones[ str_adj_zone ].is_connected )
                 {
-                    if ( !isdefined( var_24f5d9f8 ) )
+                    if ( !isdefined( a_str_valid_zones ) )
                     {
-                        var_24f5d9f8 = [];
+                        a_str_valid_zones = [];
                     }
-                    else if ( !isarray( var_24f5d9f8 ) )
+                    else if ( !isarray( a_str_valid_zones ) )
                     {
-                        var_24f5d9f8 = array( var_24f5d9f8 );
+                        a_str_valid_zones = array( a_str_valid_zones );
                     }
                     
-                    if ( !isinarray( var_24f5d9f8, level.zones[ str_adj_zone ].name ) )
+                    if ( !isinarray( a_str_valid_zones, level.zones[ str_adj_zone ].name ) )
                     {
-                        var_24f5d9f8[ var_24f5d9f8.size ] = level.zones[ str_adj_zone ].name;
+                        a_str_valid_zones[ a_str_valid_zones.size ] = level.zones[ str_adj_zone ].name;
                     }
                 }
             }
@@ -1072,7 +1072,7 @@ function function_62db7b1c( b_force_spawn = 0, var_eb3a8721 )
         
         foreach ( v_loc in var_5adfb389 )
         {
-            if ( isinarray( var_24f5d9f8, v_loc.zone_name ) )
+            if ( isinarray( a_str_valid_zones, v_loc.zone_name ) )
             {
                 n_sqr_dist = distancesquared( v_loc.origin, e_target.origin );
                 

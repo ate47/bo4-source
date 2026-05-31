@@ -1,0 +1,263 @@
+{
+    "name": "#maps/mp/mp_slums2.d3dbsp",
+    "isInUse": true,
+    "primaryLights": 52,
+    "lightExploders": [
+        {
+            "lightExploderName": "#exp_lgt_draft",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 40,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 41,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 42,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 43,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 44,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 45,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 46,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 47,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 48,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 49,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 50,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 51,
+                    "reversed": false
+                }
+            ]
+        }
+    ],
+    "probeExploders": [
+        {
+            "lightExploderName": "#exp_lgt_draft",
+            "triggerData": [
+                {
+                    "probeID": 108,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 109,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_28857a524de67ca0",
+            "triggerData": [
+                {
+                    "probeID": 107,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        }
+    ],
+    "sunVolumeProbeCount": [
+        109,
+        1
+    ],
+    "probeGuids": [
+        1706239342,
+        2310723412,
+        2730986123,
+        702945084,
+        2718827602,
+        1783289424,
+        775718368,
+        3815340830,
+        759088155,
+        2881655578,
+        710798750,
+        2107274415,
+        619167607,
+        228365167,
+        169991607,
+        3992407718,
+        3060529124,
+        3960339361,
+        1807955510,
+        2716080402,
+        3058381918,
+        578366517,
+        576227768,
+        3585490961,
+        210052669,
+        370774753,
+        2139328554,
+        3724232591,
+        3537103151,
+        1559669223,
+        1802236415,
+        2282043005,
+        2949091865,
+        2628965473,
+        3640172577,
+        3938123438,
+        4222396273,
+        1732034856,
+        2609419800,
+        4183526485,
+        863985504,
+        685797091,
+        2545046476,
+        162800428,
+        3395958533,
+        160945902,
+        958256730,
+        3450621067,
+        709424888,
+        3416699939,
+        1064059539,
+        172936310,
+        1836697897,
+        3516278385,
+        2626906938,
+        1063907698,
+        1070674964,
+        2534122248,
+        823826041,
+        1041218728,
+        3962553057,
+        1586654906,
+        601687512,
+        85131917,
+        3353534553,
+        2351686310,
+        3220934292,
+        867171384,
+        725856291,
+        4065063946,
+        963177974,
+        3943554882,
+        4211015483,
+        4084762201,
+        4014284897,
+        3040890227,
+        3178859289,
+        1469768800,
+        2704402100,
+        2031915461,
+        2189300365,
+        2247470574,
+        242283167,
+        1310427541,
+        1684636677,
+        1747774239,
+        2717207279,
+        1255030621,
+        2240402862,
+        4036966105,
+        3059465554,
+        3766721300,
+        610677984,
+        702949746,
+        1795673429,
+        2280194295,
+        582545517,
+        2340059315,
+        691852011,
+        3362710860,
+        3371431428,
+        1095145290,
+        1764850353,
+        1491143161,
+        3448394851,
+        317035862,
+        116267973,
+        3716372361,
+        3716372367,
+        0
+    ]
+}

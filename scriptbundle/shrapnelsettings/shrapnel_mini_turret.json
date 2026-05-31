@@ -1,14 +1,14 @@
 {
-    "hash_8bd09e10": 224,
+    "hash_14c248c921344ac0:hash_8bd09e10": 224,
     "configstringfiletype": "scriptbundle",
-    "hash_41be15d0": 64,
+    "hash_252ddabcb0325861:hash_41be15d0": 64,
     "type": "shrapnelsettings",
-    "hash_49bb6ce5": 201,
+    "hash_29251a518fc53234:hash_49bb6ce5": 201,
     "xmultiplier": 4,
     "vmtype": "both",
-    "hash_fbc3b297": 5,
+    "zmultiplier": 5,
     "name": "shrapnel_mini_turret",
-    "hash_ae9c702e": 4,
-    "hash_2790072b": 75,
+    "ymultiplier": 4,
+    "hash_68256d01a4c6554d:hash_2790072b": 75,
     "shrapnelfx": "fx#hash_66478d394cf5596d"
 }

@@ -172,7 +172,7 @@ function function_6661621a()
     mploadout.spawnid = getplayerspawnid( self );
     primaryweapon = self getloadoutweapon( self.class_num, "primary" );
     mploadout.primary = primaryweapon.name;
-    primaryattachments = function_285f8efd( primaryweapon );
+    primaryattachments = getattachmentsforweapon( primaryweapon );
     mploadout.primaryattachment1 = primaryattachments.attachment0;
     mploadout.primaryattachment2 = primaryattachments.attachment1;
     mploadout.primaryattachment3 = primaryattachments.attachment2;
@@ -183,7 +183,7 @@ function function_6661621a()
     mploadout.var_5f2a5b01 = self function_73182cb6( self.class_num, 1 );
     secondaryweapon = self getloadoutweapon( self.class_num, "secondary" );
     mploadout.secondary = secondaryweapon.name;
-    secondaryattachments = function_285f8efd( secondaryweapon );
+    secondaryattachments = getattachmentsforweapon( secondaryweapon );
     mploadout.secondaryattachment1 = secondaryattachments.attachment0;
     mploadout.secondaryattachment2 = secondaryattachments.attachment1;
     mploadout.secondaryattachment3 = secondaryattachments.attachment2;
@@ -206,7 +206,7 @@ function function_6661621a()
     wildcards = self function_6f2c0492( self.class_num );
     mploadout.wildcard0 = wildcards.size < 0 ? 0 : wildcards[ 0 ];
     mploadout.wildcard1 = wildcards.size < 1 ? 0 : wildcards[ 1 ];
-    mploadout.var_13573300 = wildcards.size < 2 ? 0 : wildcards[ 2 ];
+    mploadout.wildcard2 = wildcards.size < 2 ? 0 : wildcards[ 2 ];
     
     if ( isdefined( self.playerrole ) && isdefined( self.playerrole.var_c21d61e9 ) )
     {
@@ -255,7 +255,7 @@ function commit_spawn_data()
 // Params 1
 // Checksum 0x9143ab7c, Offset: 0x1218
 // Size: 0x2b2
-function function_285f8efd( weapon )
+function getattachmentsforweapon( weapon )
 {
     var_e38a0464 = spawnstruct();
     var_e38a0464.attachment0 = 0;

@@ -27,10 +27,10 @@ function __init__()
     }
     
     bgb::register( #"zm_bgb_burned_out", "event" );
-    clientfield::register( "toplayer", "zm_bgb_burned_out" + "_1p" + "toplayer", 1, 1, "counter", &function_874dcef1, 0, 0 );
-    clientfield::register( "allplayers", "zm_bgb_burned_out" + "_3p" + "_allplayers", 1, 1, "counter", &function_5b403c46, 0, 0 );
-    clientfield::register( "actor", "zm_bgb_burned_out" + "_fire_torso" + "_actor", 1, 1, "counter", &function_908b00b2, 0, 0 );
-    clientfield::register( "vehicle", "zm_bgb_burned_out" + "_fire_torso" + "_vehicle", 1, 1, "counter", &function_35616d2, 0, 0 );
+    clientfield::register( "toplayer", "zm_bgb_burned_out" + "_1p" + "toplayer", 1, 1, "counter", &zm_bgb_burned_out_1p_toplayer_cb, 0, 0 );
+    clientfield::register( "allplayers", "zm_bgb_burned_out" + "_3p" + "_allplayers", 1, 1, "counter", &zm_bgb_burned_out_3p_allplayers_cb, 0, 0 );
+    clientfield::register( "actor", "zm_bgb_burned_out" + "_fire_torso" + "_actor", 1, 1, "counter", &zm_bgb_burned_out_fire_torso_actor_cb, 0, 0 );
+    clientfield::register( "vehicle", "zm_bgb_burned_out" + "_fire_torso" + "_vehicle", 1, 1, "counter", &zm_bgb_burned_out_fire_torso_vehicle_cb, 0, 0 );
     level._effect[ "zm_bgb_burned_out" + "_1p" ] = "zombie/fx_bgb_burned_out_1p_zmb";
     level._effect[ "zm_bgb_burned_out" + "_3p" ] = "zombie/fx_bgb_burned_out_3p_zmb";
     level._effect[ "zm_bgb_burned_out" + "_fire_torso" ] = "zombie/fx_bgb_burned_out_fire_torso_zmb";
@@ -40,7 +40,7 @@ function __init__()
 // Params 7
 // Checksum 0x2f4cd058, Offset: 0x438
 // Size: 0x94
-function function_874dcef1( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function zm_bgb_burned_out_1p_toplayer_cb( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( self zm_utility::function_f8796df3( localclientnum ) )
     {
@@ -52,7 +52,7 @@ function function_874dcef1( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0xba0368ba, Offset: 0x4d8
 // Size: 0x94
-function function_5b403c46( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function zm_bgb_burned_out_3p_allplayers_cb( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( !self zm_utility::function_f8796df3( localclientnum ) )
     {
@@ -64,16 +64,16 @@ function function_5b403c46( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x7c84ec1e, Offset: 0x578
 // Size: 0x10a
-function function_908b00b2( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function zm_bgb_burned_out_fire_torso_actor_cb( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    var_54e59513 = "j_spinelower";
+    fire_torso_tag = "j_spinelower";
     
-    if ( isdefined( self gettagorigin( var_54e59513 ) ) )
+    if ( isdefined( self gettagorigin( fire_torso_tag ) ) )
     {
-        var_54e59513 = "tag_origin";
+        fire_torso_tag = "tag_origin";
     }
     
-    util::playfxontag( localclientnum, level._effect[ "zm_bgb_burned_out" + "_fire_torso" ], self, var_54e59513 );
+    util::playfxontag( localclientnum, level._effect[ "zm_bgb_burned_out" + "_fire_torso" ], self, fire_torso_tag );
     
     if ( !isdefined( self.var_de2c8500 ) )
     {
@@ -86,16 +86,16 @@ function function_908b00b2( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0xfecc54bd, Offset: 0x690
 // Size: 0x10a
-function function_35616d2( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function zm_bgb_burned_out_fire_torso_vehicle_cb( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    var_54e59513 = "tag_body";
+    fire_torso_tag = "tag_body";
     
-    if ( isdefined( self gettagorigin( var_54e59513 ) ) )
+    if ( isdefined( self gettagorigin( fire_torso_tag ) ) )
     {
-        var_54e59513 = "tag_origin";
+        fire_torso_tag = "tag_origin";
     }
     
-    util::playfxontag( localclientnum, level._effect[ "zm_bgb_burned_out" + "_fire_torso" ], self, var_54e59513 );
+    util::playfxontag( localclientnum, level._effect[ "zm_bgb_burned_out" + "_fire_torso" ], self, fire_torso_tag );
     
     if ( !isdefined( self.var_de2c8500 ) )
     {

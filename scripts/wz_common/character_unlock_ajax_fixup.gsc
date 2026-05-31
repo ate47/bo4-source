@@ -18,7 +18,7 @@ function autoexec __init__system__()
 // Size: 0x64
 function __init__()
 {
-    character_unlock_fixup::register_character_unlock( #"ajax_unlock", #"hash_69bbe1ec48f79df5", #"cu01_item", &function_d95e620c, #"hash_6e5a10ffa958d875" );
+    character_unlock_fixup::register_character_unlock( #"ajax_unlock", #"prt_wz_swatpolice", #"cu01_item", &function_d95e620c, #"hash_6e5a10ffa958d875" );
 }
 
 // Namespace character_unlock_ajax_fixup/character_unlock_ajax_fixup

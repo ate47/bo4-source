@@ -1,7 +1,7 @@
 {
     "objects": [
         {
-            "mainanim": "anim4#p7_fxanim_gp_vent_roof_slow_anim",
+            "mainanim": "anim#p7_fxanim_gp_vent_roof_slow_anim",
             "model": "model#p7_fxanim_gp_vent_roof_mod",
             "type": "prop",
             "vmtype": "server",

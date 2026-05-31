@@ -279,7 +279,7 @@ function private function_22b5323d()
 {
     exploder::exploder( "fxexp_quest_raygun_m2_v_stage_3_xtra_hint_" + self.exploder_id );
     t_damage = spawn( "trigger_damage_new", self.origin - ( 0, 0, 12 ), 1048576 | 2097152 | 8388608, 24, 24 );
-    t_damage.var_504994c2 = 0;
+    t_damage.n_hit_count = 0;
     t_damage.s_target = self;
     t_damage thread function_27766b0b();
     self.t_damage = t_damage;
@@ -301,9 +301,9 @@ function private function_27766b0b()
         
         if ( s_notify zm_hms_util::function_69320b44( "zm_aat_kill_o_watt" ) )
         {
-            self.var_504994c2++;
+            self.n_hit_count++;
             
-            if ( self.var_504994c2 >= 3 )
+            if ( self.n_hit_count >= 3 )
             {
                 self.s_target function_6d765bb3();
                 break;

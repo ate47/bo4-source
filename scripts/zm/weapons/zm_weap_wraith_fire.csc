@@ -114,7 +114,7 @@ function function_f144789c( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x1d2
 function private function_8847b8aa( localclientnum )
 {
-    self endon( #"death", #"hash_395dfda1274cd506" );
+    self endon( #"death", #"stop_burn_fx" );
     wait 1;
     a_str_tags = [];
     a_str_tags[ 0 ] = "j_elbow_le";

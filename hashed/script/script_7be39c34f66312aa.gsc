@@ -10,8 +10,8 @@
 // Size: 0x5c
 function init()
 {
-    level.var_ce7f71ea = "n";
-    level.var_f6d11e0b = "f";
+    level._pentagon_no_power = "n";
+    level._pentagon_fire_sale = "f";
     level flag::wait_till( "magicbox_initialized" );
     level thread magic_box_update();
 }
@@ -46,7 +46,7 @@ function magic_box_update()
 {
     self endon( #"end_game" );
     util::registerclientsys( "box_indicator" );
-    util::setclientsysstate( "box_indicator", level.var_ce7f71ea );
+    util::setclientsysstate( "box_indicator", level._pentagon_no_power );
     
     if ( zm_custom::function_901b751c( #"zmmysteryboxstate" ) == 0 )
     {
@@ -73,7 +73,7 @@ function magic_box_update()
         switch ( box_mode )
         {
             case #"no_power":
-                util::setclientsysstate( "box_indicator", level.var_ce7f71ea );
+                util::setclientsysstate( "box_indicator", level._pentagon_no_power );
                 
                 while ( !level flag::get( "power_on" ) && level.zombie_vars[ #"zombie_powerup_fire_sale_on" ] == 0 )
                 {
@@ -82,7 +82,7 @@ function magic_box_update()
                 
                 break;
             case #"fire_sale":
-                util::setclientsysstate( "box_indicator", level.var_f6d11e0b );
+                util::setclientsysstate( "box_indicator", level._pentagon_fire_sale );
                 
                 while ( level.zombie_vars[ #"zombie_powerup_fire_sale_on" ] == 1 )
                 {
@@ -105,7 +105,7 @@ function magic_box_update()
                 
                 break;
             default:
-                util::setclientsysstate( "box_indicator", level.var_ce7f71ea );
+                util::setclientsysstate( "box_indicator", level._pentagon_no_power );
                 break;
         }
         

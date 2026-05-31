@@ -107,19 +107,19 @@ function private function_6bf7d04f( var_c766fbe6 )
         {
             level.var_43fb4347 = "walk";
             level.var_102b1301 = "run";
-            var_84572f0c = 0;
+            n_bots = 0;
             
             foreach ( player in getplayers() )
             {
                 if ( isbot( player ) )
                 {
-                    var_84572f0c++;
+                    n_bots++;
                 }
             }
             
-            if ( var_84572f0c > 0 )
+            if ( n_bots > 0 )
             {
-                level.zombie_total = int( level.zombie_total / var_84572f0c );
+                level.zombie_total = int( level.zombie_total / n_bots );
             }
             
             foreach ( player in getplayers() )

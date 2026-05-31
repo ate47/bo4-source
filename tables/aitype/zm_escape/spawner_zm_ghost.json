@@ -15,17 +15,20 @@
     "typeSuffix": "_zombie",
     "spawnerType": "zombie",
     "character": [
-        "#hash_6205190718bd89cd",
-        "#hash_6205160718bd84b4",
-        "#hash_6205170718bd8667"
+        "#c_t8_zmb_mob_ghoul1",
+        "#c_t8_zmb_mob_ghoul2",
+        "#c_t8_zmb_mob_ghoul3"
     ],
-    "meleeWeapon": "#hash_479f8de44d618b68",
+    "animMappingTables": [
+        "#hash_73c5d8cdfac4fe0b"
+    ],
+    "meleeWeapon": "#zombie_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
     "footstepTable": "#zombfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#zm_ghost.ai_bt",
+    "behaviorTree": "#hash_73cff1cdfacd7d0b",
     "animStateMachine": "#hash_7e5ce8011ce3e7a8",
     "animSelectorTable": "#hash_7e5cd1011ce3c093",
     "traversalExtents": "#default_traversal_extents_zm",

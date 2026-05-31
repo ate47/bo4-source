@@ -102,9 +102,9 @@ function init_powerups()
     
     add_zombie_powerup( "insta_kill_ug", "zombie_skull", #"hash_1784640b956f2f85", &func_should_never_drop, 1, 0, 0, undefined, "powerup_instant_kill_ug", "zombie_powerup_insta_kill_ug_time", "zombie_powerup_insta_kill_ug_on", 1 );
     
-    if ( isdefined( level.var_cacd8f96 ) )
+    if ( isdefined( level.level_specific_init_powerups ) )
     {
-        [[ level.var_cacd8f96 ]]();
+        [[ level.level_specific_init_powerups ]]();
     }
     
     randomize_powerups();
@@ -222,9 +222,9 @@ function powerup_hud_monitor()
                     continue;
                 }
                 
-                if ( isdefined( level.var_209e0eb4 ) )
+                if ( isdefined( level.powerup_player_valid ) )
                 {
-                    if ( ![[ level.var_209e0eb4 ]]( player ) )
+                    if ( ![[ level.powerup_player_valid ]]( player ) )
                     {
                         continue;
                     }
@@ -898,9 +898,9 @@ function powerup_drop( drop_point, powerup, var_4e31704a = 1 )
         return;
     }
     
-    if ( isdefined( level.var_7e3a9cf2 ) )
+    if ( isdefined( level.custom_zombie_powerup_drop ) )
     {
-        b_outcome = [[ level.var_7e3a9cf2 ]]( drop_point );
+        b_outcome = [[ level.custom_zombie_powerup_drop ]]( drop_point );
         
         if ( isdefined( b_outcome ) && b_outcome )
         {
@@ -1372,9 +1372,9 @@ function powerup_zombie_grab( powerup_team )
         waitresult = zombie_grab_trigger waittill( #"trigger" );
         who = waitresult.activator;
         
-        if ( isdefined( level.var_e387a39 ) )
+        if ( isdefined( level._powerup_grab_check ) )
         {
-            if ( !self [[ level.var_e387a39 ]]( who ) )
+            if ( !self [[ level._powerup_grab_check ]]( who ) )
             {
                 continue;
             }
@@ -1448,9 +1448,9 @@ function powerup_grab( powerup_team )
             grabbers = [];
             grabbers[ 0 ] = self.powerup_player;
         }
-        else if ( isdefined( level.var_9671faed ) )
+        else if ( isdefined( level.powerup_grab_get_players_override ) )
         {
-            grabbers = [[ level.var_9671faed ]]();
+            grabbers = [[ level.powerup_grab_get_players_override ]]();
         }
         else
         {
@@ -1505,9 +1505,9 @@ function powerup_grab( powerup_team )
             
             if ( isalive( grabber ) && ( distancesquared( grabber.origin, self.origin ) < range_squared || ignore_range ) )
             {
-                if ( isdefined( level.var_e387a39 ) )
+                if ( isdefined( level._powerup_grab_check ) )
                 {
-                    if ( !self [[ level.var_e387a39 ]]( player ) )
+                    if ( !self [[ level._powerup_grab_check ]]( player ) )
                     {
                         continue;
                     }
@@ -1566,11 +1566,11 @@ function powerup_grab( powerup_team )
                 {
                     player zm_stats::increment_client_stat( "drops" );
                     player zm_stats::increment_player_stat( "drops" );
-                    player zm_stats::forced_attachment( "boas_drops" );
+                    player zm_stats::function_8f10788e( "boas_drops" );
                     player zm_stats::increment_client_stat( self.powerup_name + "_pickedup" );
                     player zm_stats::increment_player_stat( self.powerup_name + "_pickedup" );
                     player zm_stats::increment_challenge_stat( #"survivalist_powerup" );
-                    player zm_stats::forced_attachment( "boas_" + self.powerup_name + "_pickedup" );
+                    player zm_stats::function_8f10788e( "boas_" + self.powerup_name + "_pickedup" );
                     player contracts::increment_zm_contract( #"contract_zm_powerups" );
                     
                     if ( zm_utility::is_standard() )
@@ -1974,9 +1974,9 @@ function powerup_timeout()
     self powerup_show();
     wait_time = 15;
     
-    if ( isdefined( level.var_977f68ea ) )
+    if ( isdefined( level._powerup_timeout_custom_time ) )
     {
-        time = [[ level.var_977f68ea ]]( self );
+        time = [[ level._powerup_timeout_custom_time ]]( self );
         
         if ( time == 0 )
         {

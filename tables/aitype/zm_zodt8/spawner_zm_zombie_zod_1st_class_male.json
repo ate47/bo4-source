@@ -15,15 +15,18 @@
     "typeSuffix": "_zombie",
     "spawnerType": "zombie",
     "character": [
-        "#hash_982b1a4c65e73801",
-        "#hash_982b174c65e732e8",
-        "#hash_182b184c65e7349b",
+        "#c_t8_zmb_1stclass_male1",
+        "#c_t8_zmb_1stclass_male2",
+        "#c_t8_zmb_1stclass_male3",
         "#hash_2f441451d3b56959",
         "#hash_cecf5a5c3d66868",
-        "#hash_7d45b54d5e3cd677",
-        "#hash_7d45b44d5e3cd4c4"
+        "#c_t8_zmb_1stclass_male1_skin2",
+        "#c_t8_zmb_1stclass_male1_skin3"
     ],
-    "meleeWeapon": "#hash_479f8de44d618b68",
+    "animMappingTables": [
+        "#hash_13b1ea38b9421ce0"
+    ],
+    "meleeWeapon": "#zombie_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
     "footstepTable": "#zombfootstep",
     "footstepScriptCallback": false,
@@ -31,7 +34,7 @@
     "footstepFXTable2": "#player_footstep",
     "behaviorTree": "#zm_zombie.ai_bt",
     "animStateMachine": "#zm_zombie.ai_asm",
-    "animSelectorTable": "#zm_zombie.ai_ast",
+    "animSelectorTable": "#hash_39d3a662cbad64aa",
     "traversalExtents": "#default_traversal_extents_zm",
     "aiFxBundle": "#c_54i_grunt_fx_table",
     "aiSettingsBundle": "#zm_zod_zombie_settings",

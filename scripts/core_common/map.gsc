@@ -17,7 +17,7 @@ function get_script_bundle()
 {
     if ( !isdefined( level.var_427d6976 ) )
     {
-        level.var_427d6976 = function_2717b55f();
+        level.var_427d6976 = getmapscriptbundle();
     }
     
     if ( !isdefined( level.var_427d6976 ) )

@@ -52,7 +52,7 @@ function init()
     callback::on_ai_damage( &function_615d8c38 );
     register_steps();
     init_flags();
-    function_c6e2a4fd();
+    init_components();
     
     if ( zm_custom::function_901b751c( #"zmwonderweaponisenabled" ) && zm_custom::function_901b751c( #"zmpapenabled" ) != 2 )
     {
@@ -99,7 +99,7 @@ function init_flags()
 // Params 0
 // Checksum 0x3bae7147, Offset: 0xb68
 // Size: 0x54
-function function_c6e2a4fd()
+function init_components()
 {
     array::thread_all( struct::get_array( "s_burn" ), &function_edb1add2 );
     level thread function_355450a4();
@@ -860,7 +860,7 @@ function function_9ee098d5()
             v_death = e_possessed.origin;
         }
         
-        v_drop = mansion_util::function_a8176b98( v_death );
+        v_drop = mansion_util::get_drop_pos( v_death );
         
         if ( isdefined( v_drop ) )
         {

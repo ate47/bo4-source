@@ -46,7 +46,7 @@ function init_deadshot()
 {
     if ( isdefined( level.enable_magic ) && level.enable_magic )
     {
-        level._effect[ #"deadshot_light" ] = #"hash_2225287695ddf9c9";
+        level._effect[ #"deadshot_light" ] = #"_t6/misc/fx_zombie_cola_dtap_on";
     }
 }
 

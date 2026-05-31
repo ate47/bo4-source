@@ -12,7 +12,7 @@ STRING "<dev string:x155>" 0x320 0x338
 STRING "<dev string:x19e>" 0x380 0x398
 # zm_sq::register@2d8 zm_sq::register@2f0
 STRING "<dev string:x1e9>" 0x420 0x438
-# zm_sq::start@98 zm_sq::start@120 zm_sq::start@158 zm_sq::is_complete@48 zm_sq::function_9212ff4d@9c zm_sq::run_step@818 zm_sq::run_step@858 zm_sq::function_f09763fd@64 zm_sq::function_f09763fd@100 zm_sq::function_f09763fd@150
+# zm_sq::start@98 zm_sq::start@120 zm_sq::start@158 zm_sq::is_complete@48 zm_sq::get_step_index@9c zm_sq::run_step@818 zm_sq::run_step@858 zm_sq::function_f09763fd@64 zm_sq::function_f09763fd@100 zm_sq::function_f09763fd@150
 STRING "<dev string:x244>" 0x860 0x8e8 0x920 0xa70 0xb74 0x1440 0x1480 0x1724 0x17c0 0x1810
 # zm_sq::start@b4 zm_sq::is_complete@64
 STRING "<dev string:x24a>" 0x87c 0xa8c
@@ -20,7 +20,7 @@ STRING "<dev string:x24a>" 0x87c 0xa8c
 STRING "<dev string:x265>" 0x904 0x93c
 # zm_sq::start@1c4 zm_sq::run_step@538
 STRING "<dev string:x281>" 0x98c 0x1160
-# zm_sq::function_9212ff4d@a8 zm_sq::function_f09763fd@70
+# zm_sq::get_step_index@a8 zm_sq::function_f09763fd@70
 STRING "<dev string:x2a5>" 0xb80 0x1730
 # zm_sq::run_step@dc zm_sq::run_step@134 zm_sq::run_step@23c zm_sq::run_step@294 zm_sq::run_step@374 zm_sq::run_step@3cc zm_sq::function_df365859@5c zm_sq::function_df365859@b4 zm_sq::function_b3da1a16@104 zm_sq::function_b3da1a16@15c zm_sq::function_614612f@ac zm_sq::function_614612f@11c zm_sq::function_f2dd8601@144 zm_sq::function_f2dd8601@1ac zm_sq::function_f2dd8601@244 zm_sq::function_f2dd8601@2bc zm_sq::devgui_think@b0 zm_sq::devgui_think@1b4 zm_sq::devgui_think@224 zm_sq::devgui_think@2cc zm_sq::devgui_think@324 zm_sq::devgui_think@3a4 zm_sq::devgui_think@404 zm_sq::devgui_think@504 zm_sq::devgui_think@574
 STRING "<dev string:x2c4>" 0xd04 0xd5c 0xe64 0xebc 0xf9c 0xff4 0x15e4 0x163c 0x1aec 0x1b44 0x1d0c 0x1d7c 0x1f1c 0x1f84 0x201c 0x2094 0x21b8 0x22bc 0x232c 0x23d4 0x242c 0x24ac 0x250c 0x260c 0x267c
@@ -86,9 +86,9 @@ STRING "<dev string:x4e9>" 0x2938
 STRING "<dev string:x4f2>" 0x294c
 # zm_sq::function_5df75220@13c
 STRING "<dev string:x4f8>" 0x2acc
-# zm_sq::register@60 zm_sq::start@64 zm_sq::is_complete@14 zm_sq::function_9212ff4d@3c zm_sq::function_f09763fd@30 zm_sq::function_44e256d8@18 zm_sq::function_28aee167@20 zm_sq::function_b3da1a16@30
+# zm_sq::register@60 zm_sq::start@64 zm_sq::is_complete@14 zm_sq::get_step_index@3c zm_sq::function_f09763fd@30 zm_sq::function_44e256d8@18 zm_sq::function_28aee167@20 zm_sq::function_b3da1a16@30
 STRING "<dev string:x77>" 0x1a8 0x82c 0xa3c 0xb14 0x16f0 0x18c0 0x1938 0x1a18
-# zm_sq::register@94 zm_sq::function_9212ff4d@6c zm_sq::function_b3da1a16@64
+# zm_sq::register@94 zm_sq::get_step_index@6c zm_sq::function_b3da1a16@64
 STRING "<dev string:x90>" 0x1dc 0xb44 0x1a4c
 # zm_sq::register@c4
 STRING "<dev string:xab>" 0x20c
@@ -129,11 +129,11 @@ DEVBLOCK 0xa32
 DEVBLOCK 0xa62
 # zm_sq::is_complete@3e
 DEVBLOCK 0xa66
-# zm_sq::function_9212ff4d@32
+# zm_sq::get_step_index@32
 DEVBLOCK 0xb0a
-# zm_sq::function_9212ff4d@62
+# zm_sq::get_step_index@62
 DEVBLOCK 0xb3a
-# zm_sq::function_9212ff4d@92
+# zm_sq::get_step_index@92
 DEVBLOCK 0xb6a
 # zm_sq::run_step@90
 DEVBLOCK 0xcb8

@@ -1,11 +1,9 @@
 {
-    "name": "",
-    "nameHash": "#hero_scepter_lv2",
+    "name": "#hero_scepter_lv2",
+    "nameStr": "",
     "displayName": "#zmweapon/hero_scepter",
-    "displayNameShort": "#",
     "description": "#hash_7e342cb8f8f569ec",
-    "wzDescription": "#",
-    "zmDescription": "#",
+    "refHash": "#hash_b5924e3b",
     "previewImage": "#hash_6c39df49ab5e243",
     "zmPreviewImage": "#ui_icon_equpiment_zm_rastaff_lv2_dark",
     "zmPreviewImageLarge": "#ui_icon_equpiment_zm_rastaff_lv2_dark",
@@ -14,7 +12,53 @@
     "scoreToUnlock": 0,
     "lowestScoreToUnlockAllowed": 0,
     "allocation": 1,
+    "modes": 1,
+    "loadoutSlotIndex": "herogadget",
+    "isNullItem": false,
+    "isPassive": false,
+    "isValid": true,
+    "isLootItem": false,
     "attributeItems": false,
+    "unkd4": "[f0x0=1.4013e-45] 01 00 00 00",
     "itemGroupIndex": "hero",
-    "attachments": []
+    "bundle": {
+        "unlockableItemStages": [
+            {
+                "stagedisplayname": "localized17#hash_3034df36fd3201b9",
+                "stagedescription": "localized17#hash_4f3201489095f493",
+                "hash_6f8fdb4ecf60c2fe:hash_3618d112": "#hero_scepter_lv1"
+            },
+            {
+                "stagedisplayname": "localized17#hash_3034dc36fd31fca0",
+                "stagedescription": "localized17#hash_4e7a4ebac031d668",
+                "hash_6f8fdb4ecf60c2fe:hash_3618d112": "#hero_scepter_lv2"
+            },
+            {
+                "stagedisplayname": "localized17#hash_3034dd36fd31fe53",
+                "stagedescription": "localized17#hash_2e3c934c22a30305",
+                "hash_6f8fdb4ecf60c2fe:hash_3618d112": "#hero_scepter_lv3"
+            }
+        ],
+        "hash_72dde61f5350e2c:hash_781a480e": 0,
+        "hash_72de161f5351345:hash_d4b00140": 1,
+        "unequipsound": "#hash_58cf7a81be5ea28e",
+        "sortindex": 0,
+        "bgbcamoindex": 1,
+        "hash_1a9c48738bfe4409:hash_d1d9a14f": 0,
+        "hash_1b451b56a0ee77e5:hash_cc0135f7": 0,
+        "featuretype": 0,
+        "hideinmenu": 1,
+        "hash_406e3b76844e6637:hash_7fc3b44a": 0,
+        "loadoutindex": 1,
+        "previewmodelscale": 1,
+        "talismanrarity": 0,
+        "hash_52616a8f1602bb4b:hash_fe242d4b": 0,
+        "bgbrarity": 0,
+        "hash_574c7ec1a4019f56:hash_c874ab9e": 0,
+        "hash_62dc0ff35042f577:hash_3f2c4d2f": 0,
+        "equipsound": "#hash_61d2f373ce8e0a26",
+        "sortindexzm": 13,
+        "hash_6c190a0450674b42:hash_4d850f47": 0,
+        "talismantype": 0
+    }
 }

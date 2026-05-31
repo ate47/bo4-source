@@ -130,7 +130,7 @@ function state_combat_update( params )
         
         if ( isdefined( isatgoal ) && isatgoal )
         {
-            self asmrequestsubstate( #"hash_236f963ae1728eb3" );
+            self asmrequestsubstate( #"idle@stationary" );
             self cancelaimove();
             self function_d4c687c9();
         }
@@ -149,7 +149,7 @@ function state_combat_update( params )
             }
             else
             {
-                self asmrequestsubstate( #"hash_236f963ae1728eb3" );
+                self asmrequestsubstate( #"idle@stationary" );
                 self cancelaimove();
                 self function_d4c687c9();
             }

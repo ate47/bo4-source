@@ -1019,7 +1019,7 @@ function weapon_spawn_think()
                     player notify( #"weapon_purchased", { #weapon:weapon } );
                     player zm_stats::increment_client_stat( "wallbuy_weapons_purchased" );
                     player zm_stats::increment_player_stat( "wallbuy_weapons_purchased" );
-                    player zm_stats::forced_attachment( "boas_wallbuy_weapons_purchased" );
+                    player zm_stats::function_8f10788e( "boas_wallbuy_weapons_purchased" );
                     bb::logpurchaseevent( player, self, cost, weapon.name, player zm_weapons::has_upgrade( weapon ), "_weapon", "_purchase" );
                     weaponindex = undefined;
                     
@@ -1134,7 +1134,7 @@ function weapon_spawn_think()
                     {
                         player zm_stats::increment_client_stat( "ammo_purchased" );
                         player zm_stats::increment_player_stat( "ammo_purchased" );
-                        player zm_stats::forced_attachment( "boas_ammo_purchased" );
+                        player zm_stats::function_8f10788e( "boas_ammo_purchased" );
                     }
                     
                     player contracts::increment_zm_contract( #"contract_zm_wallbuys", 1, #"zstandard" );
@@ -1195,9 +1195,9 @@ function weapon_spawn_think()
 // Size: 0x56
 function should_upgrade_weapon( player )
 {
-    if ( isdefined( level.var_f270168a ) )
+    if ( isdefined( level.wallbuy_should_upgrade_weapon_override ) )
     {
-        return [[ level.var_f270168a ]]();
+        return [[ level.wallbuy_should_upgrade_weapon_override ]]();
     }
     
     if ( player bgb::is_enabled( #"zm_bgb_wall_power" ) )

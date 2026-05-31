@@ -802,7 +802,7 @@ class cdoor
             }
             else
             {
-                m_e_door fly_step_crouch_walk_bot_plr_brick();
+                m_e_door function_fd4aa4b5();
             }
         }
         
@@ -1077,7 +1077,7 @@ class cdoor
         {
             if ( isdefined( m_s_bundle.var_a6324e06 ) && m_s_bundle.var_a6324e06 )
             {
-                m_e_door fly_step_crouch_walk_bot_plr_brick();
+                m_e_door function_fd4aa4b5();
             }
             else
             {
@@ -2034,7 +2034,7 @@ function function_dc98f943( c_door )
     }
     
     e_door notsolid();
-    e_door fly_step_crouch_walk_bot_plr_brick();
+    e_door function_fd4aa4b5();
     e_door notify( #"door_cleared" );
 }
 

@@ -267,9 +267,9 @@ function player_stats_init()
     self add_map_stat( "score", self.score );
     self globallogic_score::initpersstat( #"zteam", 0 );
     
-    if ( isdefined( level.var_4b5a61cf ) )
+    if ( isdefined( level.level_specific_stats_init ) )
     {
-        [[ level.var_4b5a61cf ]]();
+        [[ level.level_specific_stats_init ]]();
     }
     
     if ( !isdefined( self.stats_this_frame ) )
@@ -1124,11 +1124,11 @@ function increment_challenge_stat( stat_name, amount = 1, var_b68b08b1 = 0 )
         
         if ( isdefined( self.entity_num ) )
         {
-            println( "<dev string:x38>" + self.entity_num + "<dev string:x42>" + function_9e72a96( stat_name ) + "<dev string:x46>" + var_ba1fb8c1 );
+            println( "<dev string:x38>" + self.entity_num + "<dev string:x42>" + hashtostring( stat_name ) + "<dev string:x46>" + var_ba1fb8c1 );
             return;
         }
         
-        println( "<dev string:x38>" + function_9e72a96( stat_name ) + "<dev string:x46>" + var_ba1fb8c1 );
+        println( "<dev string:x38>" + hashtostring( stat_name ) + "<dev string:x46>" + var_ba1fb8c1 );
     #/
 }
 
@@ -1246,7 +1246,7 @@ function function_301c4be2( stat_name, value )
 // Params 1
 // Checksum 0xd95f617c, Offset: 0x5028
 // Size: 0x74
-function forced_attachment( stat_name )
+function function_8f10788e( stat_name )
 {
     if ( isdefined( level.zm_disable_recording_stats ) && level.zm_disable_recording_stats && !issubstr( stat_name, "boas_" ) )
     {
@@ -1338,54 +1338,54 @@ function handle_death( einflictor, eattacker, weapon, smeansofdeath )
             case #"blight_father":
                 entity increment_client_stat( "killed_by_blightfather" );
                 entity increment_player_stat( "killed_by_blightfather" );
-                entity forced_attachment( "boas_killed_by_blightfather" );
+                entity function_8f10788e( "boas_killed_by_blightfather" );
                 break;
             case #"brutus":
                 entity increment_client_stat( "killed_by_brutus" );
                 entity increment_player_stat( "killed_by_brutus" );
-                entity forced_attachment( "boas_killed_by_brutus" );
+                entity function_8f10788e( "boas_killed_by_brutus" );
                 break;
             case #"gladiator":
                 entity increment_client_stat( "killed_by_gladiator" );
                 entity increment_player_stat( "killed_by_gladiator" );
-                entity forced_attachment( "boas_killed_by_gladiator" );
+                entity function_8f10788e( "boas_killed_by_gladiator" );
                 break;
             case #"stoker":
                 entity increment_client_stat( "killed_by_stoker" );
                 entity increment_player_stat( "killed_by_stoker" );
-                entity forced_attachment( "boas_killed_by_stoker" );
+                entity function_8f10788e( "boas_killed_by_stoker" );
                 break;
             case #"tiger":
                 entity increment_client_stat( "killed_by_tiger" );
                 entity increment_player_stat( "killed_by_tiger" );
-                entity forced_attachment( "boas_killed_by_tiger" );
+                entity function_8f10788e( "boas_killed_by_tiger" );
                 break;
             case #"catalyst":
                 entity increment_client_stat( "killed_by_catalyst" );
                 entity increment_player_stat( "killed_by_catalyst" );
-                entity forced_attachment( "boas_killed_by_catalyst" );
+                entity function_8f10788e( "boas_killed_by_catalyst" );
                 
                 switch ( eattacker.subarchetype )
                 {
                     case #"catalyst_electric":
                         entity increment_client_stat( "killed_by_catalyst_electric" );
                         entity increment_player_stat( "killed_by_catalyst_electric" );
-                        entity forced_attachment( "boas_killed_by_catalyst_electric" );
+                        entity function_8f10788e( "boas_killed_by_catalyst_electric" );
                         break;
                     case #"catalyst_water":
                         entity increment_client_stat( "killed_by_catalyst_water" );
                         entity increment_player_stat( "killed_by_catalyst_water" );
-                        entity forced_attachment( "boas_killed_by_catalyst_water" );
+                        entity function_8f10788e( "boas_killed_by_catalyst_water" );
                         break;
                     case #"catalyst_plasma":
                         entity increment_client_stat( "killed_by_catalyst_plasma" );
                         entity increment_player_stat( "killed_by_catalyst_plasma" );
-                        entity forced_attachment( "boas_killed_by_catalyst_plasma" );
+                        entity function_8f10788e( "boas_killed_by_catalyst_plasma" );
                         break;
                     case #"catalyst_corrosive":
                         entity increment_client_stat( "killed_by_catalyst_corrosive" );
                         entity increment_player_stat( "killed_by_catalyst_corrosive" );
-                        entity forced_attachment( "boas_killed_by_catalyst_corrosive" );
+                        entity function_8f10788e( "boas_killed_by_catalyst_corrosive" );
                         break;
                 }
                 
@@ -1393,32 +1393,32 @@ function handle_death( einflictor, eattacker, weapon, smeansofdeath )
             case #"nova_crawler":
                 entity increment_client_stat( "killed_by_nova_crawler" );
                 entity increment_player_stat( "killed_by_nova_crawler" );
-                entity forced_attachment( "boas_killed_by_nova_crawler" );
+                entity function_8f10788e( "boas_killed_by_nova_crawler" );
                 break;
             case #"zombie_dog":
                 entity increment_client_stat( "killed_by_zdog" );
                 entity increment_player_stat( "killed_by_zdog" );
-                entity forced_attachment( "boas_killed_by_zdog" );
+                entity function_8f10788e( "boas_killed_by_zdog" );
                 break;
             case #"nosferatu":
                 if ( eattacker.subarchetype === #"crimson_nosferatu" )
                 {
                     entity increment_client_stat( "killed_by_crimson_nosferatu" );
                     entity increment_player_stat( "killed_by_crimson_nosferatu" );
-                    entity forced_attachment( "boas_killed_by_crimson_nosferatu" );
+                    entity function_8f10788e( "boas_killed_by_crimson_nosferatu" );
                 }
                 else
                 {
                     entity increment_client_stat( "killed_by_nosferatu" );
                     entity increment_player_stat( "killed_by_nosferatu" );
-                    entity forced_attachment( "boas_killed_by_nosferatu" );
+                    entity function_8f10788e( "boas_killed_by_nosferatu" );
                 }
                 
                 break;
             case #"werewolf":
                 entity increment_client_stat( "killed_by_werewolf" );
                 entity increment_player_stat( "killed_by_werewolf" );
-                entity forced_attachment( "boas_killed_by_werewolf" );
+                entity function_8f10788e( "boas_killed_by_werewolf" );
                 break;
         }
         
@@ -1434,54 +1434,54 @@ function handle_death( einflictor, eattacker, weapon, smeansofdeath )
                 case #"blight_father":
                     eattacker increment_client_stat( "blightfathers_killed" );
                     eattacker increment_player_stat( "blightfathers_killed" );
-                    eattacker forced_attachment( "boas_blightfathers_killed" );
+                    eattacker function_8f10788e( "boas_blightfathers_killed" );
                     break;
                 case #"brutus":
                     eattacker increment_client_stat( "brutuses_killed" );
                     eattacker increment_player_stat( "brutuses_killed" );
-                    eattacker forced_attachment( "boas_brutuses_killed" );
+                    eattacker function_8f10788e( "boas_brutuses_killed" );
                     break;
                 case #"gladiator":
                     eattacker increment_client_stat( "gladiators_killed" );
                     eattacker increment_player_stat( "gladiators_killed" );
-                    eattacker forced_attachment( "boas_gladiators_killed" );
+                    eattacker function_8f10788e( "boas_gladiators_killed" );
                     break;
                 case #"stoker":
                     eattacker increment_client_stat( "stokers_killed" );
                     eattacker increment_player_stat( "stokers_killed" );
-                    eattacker forced_attachment( "boas_stokers_killed" );
+                    eattacker function_8f10788e( "boas_stokers_killed" );
                     break;
                 case #"tiger":
                     eattacker increment_client_stat( "tigers_killed" );
                     eattacker increment_player_stat( "tigers_killed" );
-                    eattacker forced_attachment( "boas_tigers_killed" );
+                    eattacker function_8f10788e( "boas_tigers_killed" );
                     break;
                 case #"catalyst":
                     eattacker increment_client_stat( "catalysts_killed" );
                     eattacker increment_player_stat( "catalysts_killed" );
-                    eattacker forced_attachment( "boas_catalysts_killed" );
+                    eattacker function_8f10788e( "boas_catalysts_killed" );
                     
                     switch ( entity.subarchetype )
                     {
                         case #"catalyst_electric":
                             eattacker increment_client_stat( "catalyst_electrics_killed" );
                             eattacker increment_player_stat( "catalyst_electrics_killed" );
-                            eattacker forced_attachment( "boas_catalyst_electrics_killed" );
+                            eattacker function_8f10788e( "boas_catalyst_electrics_killed" );
                             break;
                         case #"catalyst_water":
                             eattacker increment_client_stat( "catalyst_waters_killed" );
                             eattacker increment_player_stat( "catalyst_waters_killed" );
-                            eattacker forced_attachment( "boas_catalyst_waters_killed" );
+                            eattacker function_8f10788e( "boas_catalyst_waters_killed" );
                             break;
                         case #"catalyst_plasma":
                             eattacker increment_client_stat( "catalyst_plasmas_killed" );
                             eattacker increment_player_stat( "catalyst_plasmas_killed" );
-                            eattacker forced_attachment( "boas_catalyst_plasmas_killed" );
+                            eattacker function_8f10788e( "boas_catalyst_plasmas_killed" );
                             break;
                         case #"catalyst_corrosive":
                             eattacker increment_client_stat( "catalyst_corrosives_killed" );
                             eattacker increment_player_stat( "catalyst_corrosives_killed" );
-                            eattacker forced_attachment( "boas_catalyst_corrosives_killed" );
+                            eattacker function_8f10788e( "boas_catalyst_corrosives_killed" );
                             break;
                     }
                     
@@ -1489,37 +1489,37 @@ function handle_death( einflictor, eattacker, weapon, smeansofdeath )
                 case #"nova_crawler":
                     eattacker increment_client_stat( "nova_crawlers_killed" );
                     eattacker increment_player_stat( "nova_crawlers_killed" );
-                    eattacker forced_attachment( "boas_nova_crawlers_killed" );
+                    eattacker function_8f10788e( "boas_nova_crawlers_killed" );
                     break;
                 case #"zombie_dog":
                     eattacker increment_client_stat( "zdogs_killed" );
                     eattacker increment_player_stat( "zdogs_killed" );
-                    eattacker forced_attachment( "boas_zdogs_killed" );
+                    eattacker function_8f10788e( "boas_zdogs_killed" );
                     break;
                 case #"nosferatu":
                     if ( entity.subarchetype === #"crimson_nosferatu" )
                     {
                         eattacker increment_client_stat( "crimson_nosferatus_killed" );
                         eattacker increment_player_stat( "crimson_nosferatus_killed" );
-                        eattacker forced_attachment( "boas_crimson_nosferatus_killed" );
+                        eattacker function_8f10788e( "boas_crimson_nosferatus_killed" );
                     }
                     else
                     {
                         eattacker increment_client_stat( "nosferatus_killed" );
                         eattacker increment_player_stat( "nosferatus_killed" );
-                        eattacker forced_attachment( "boas_nosferatus_killed" );
+                        eattacker function_8f10788e( "boas_nosferatus_killed" );
                     }
                     
                     break;
                 case #"werewolf":
                     eattacker increment_client_stat( "werewolves_killed" );
                     eattacker increment_player_stat( "werewolves_killed" );
-                    eattacker forced_attachment( "boas_werewolves_killed" );
+                    eattacker function_8f10788e( "boas_werewolves_killed" );
                     break;
                 case #"bat":
                     eattacker increment_client_stat( "bats_killed" );
                     eattacker increment_player_stat( "bats_killed" );
-                    eattacker forced_attachment( "boas_bats_killed" );
+                    eattacker function_8f10788e( "boas_bats_killed" );
                     break;
             }
         }
@@ -1528,7 +1528,7 @@ function handle_death( einflictor, eattacker, weapon, smeansofdeath )
         {
             eattacker increment_client_stat( "wonder_weapon_kills" );
             eattacker increment_player_stat( "wonder_weapon_kills" );
-            eattacker forced_attachment( "boas_wonder_weapon_kills" );
+            eattacker function_8f10788e( "boas_wonder_weapon_kills" );
         }
         
         if ( isdefined( einflictor ) && isdefined( einflictor.turret ) && isdefined( einflictor.turret.item ) )
@@ -1550,7 +1550,7 @@ function track_craftables_pickedup( craftable )
     {
         player increment_client_stat( "shields_purchased" );
         player increment_player_stat( "shields_purchased" );
-        player forced_attachment( "boas_shields_purchased" );
+        player function_8f10788e( "boas_shields_purchased" );
     }
 }
 
@@ -2047,7 +2047,7 @@ function function_ea5b4947( b_end_game = 0 )
                 }
                 
                 player reportlootconsume( bgb, player.bgb_stats[ bgb ].bgb_used_this_game );
-                player.bgb_stats[ bgb ].var_c2a984f0 -= player.bgb_stats[ bgb ].bgb_used_this_game;
+                player.bgb_stats[ bgb ].bgb_available_at_start -= player.bgb_stats[ bgb ].bgb_used_this_game;
                 player.bgb_stats[ bgb ].bgb_used_this_game = 0;
             }
         }
@@ -2208,14 +2208,14 @@ function function_7f377150( s_event_calling_task, n_value = 1 )
             self addrankxpvalue( "event_calling_task", s_event_calling_task.n_xp );
             self stats::set_stat( #"hash_3b52e51401f0229c", level.var_6ad5a223, s_event_calling_task.var_1f2bdb95, 1 );
             uploadstats( self );
-            println( function_9e72a96( level.var_6ad5a223 ) + "<dev string:x177>" + self stats::get_stat( #"hash_3b52e51401f0229c", level.var_6ad5a223, "<dev string:x188>" ) + "<dev string:x198>" + function_9e72a96( s_event_calling_task.var_ad971622 ) );
+            println( hashtostring( level.var_6ad5a223 ) + "<dev string:x177>" + self stats::get_stat( #"hash_3b52e51401f0229c", level.var_6ad5a223, "<dev string:x188>" ) + "<dev string:x198>" + hashtostring( s_event_calling_task.var_ad971622 ) );
             return;
         }
         
         /#
             progress = var_e4edaaf0 + n_value;
             target = s_event_calling_task.var_e226ec4f;
-            iprintln( self.name + "<dev string:x1a7>" + function_9e72a96( s_event_calling_task.var_ad971622 ) + "<dev string:x1c0>" + progress + "<dev string:x1d2>" + target );
+            iprintln( self.name + "<dev string:x1a7>" + hashtostring( s_event_calling_task.var_ad971622 ) + "<dev string:x1c0>" + progress + "<dev string:x1d2>" + target );
         #/
         
         self stats::inc_stat( #"hash_3b52e51401f0229c", level.var_6ad5a223, #"progress", n_value );
@@ -2276,10 +2276,10 @@ function function_55109709( s_daily_calling_task, n_value = 1 )
             self function_e8f77739( #"hash_74ccf1507183e99f", var_ae857992 );
             uploadstats( self );
             self function_4835d26a();
-            println( "<dev string:x1d6>" + function_9e72a96( s_daily_calling_task.var_ad971622 ) );
+            println( "<dev string:x1d6>" + hashtostring( s_daily_calling_task.var_ad971622 ) );
             
             /#
-                iprintln( self.name + "<dev string:x1f2>" + function_9e72a96( s_daily_calling_task.var_ad971622 ) + "<dev string:x203>" + s_daily_calling_task.n_xp + "<dev string:x21b>" );
+                iprintln( self.name + "<dev string:x1f2>" + hashtostring( s_daily_calling_task.var_ad971622 ) + "<dev string:x203>" + s_daily_calling_task.n_xp + "<dev string:x21b>" );
             #/
             
             return;
@@ -2288,7 +2288,7 @@ function function_55109709( s_daily_calling_task, n_value = 1 )
         /#
             progress = var_e4edaaf0 + n_value;
             target = s_daily_calling_task.var_e226ec4f;
-            iprintln( self.name + "<dev string:x1f2>" + function_9e72a96( s_daily_calling_task.var_ad971622 ) + "<dev string:x1c0>" + progress + "<dev string:x1d2>" + target );
+            iprintln( self.name + "<dev string:x1f2>" + hashtostring( s_daily_calling_task.var_ad971622 ) + "<dev string:x1c0>" + progress + "<dev string:x1d2>" + target );
         #/
         
         self stats::inc_stat( #"hash_18e3320ccf4091e5", #"progress", n_value );

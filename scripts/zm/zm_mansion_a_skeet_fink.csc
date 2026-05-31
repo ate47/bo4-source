@@ -34,7 +34,7 @@ function init()
     level._effect[ #"hash_1a9940efe1d3ed25" ] = #"hash_4fc9f92d9016ecad";
     level._effect[ #"hash_7cd0c2ae0222691" ] = #"hash_4a2a2a8ca5ef4c74";
     level._effect[ #"hash_c2169a9806df05e" ] = #"hash_34d06e6d2aa00b39";
-    level._effect[ #"hash_7a260c02e8c345c2" ] = #"hash_65d0a2cee07e8664";
+    level._effect[ #"hash_7a260c02e8c345c2" ] = #"zombie/fx_spawn_blood_billowing_doa";
 }
 
 // Namespace mansion_a_skeet_fink/zm_mansion_a_skeet_fink

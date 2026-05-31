@@ -1,14 +1,14 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "localized17#hash_280a44c85709ba6"
+            "hash_619e25922b4aedcf:hash_826726a": "localized17#hash_280a44c85709ba6"
         }
     ],
     "contracticon": "image#ui_icon_hvo_killer_firebreak",
-    "hash_d0100eab": 1,
-    "relateditemname": "localized17#hash_5b4889e3a720c949",
+    "hash_202e3311080f8de3:hash_d0100eab": 1,
+    "relateditemname": "localized17#heroes/firebreak",
     "contracttitle": "localized17#hash_280a44c85709ba6",
     "name": "loot_contract_firebreak_warrior",
-    "hash_f15e270f": "#white",
-    "hash_e08fc162": "localized17#hash_40534ffb27a37ede"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_40534ffb27a37ede"
 }

@@ -476,10 +476,10 @@ function magma_forging_fx( localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x1c2
 function magma_urn_fire_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
-    if ( isdefined( self.var_d8243293 ) )
+    if ( isdefined( self.n_fire_fx ) )
     {
-        stopfx( localclientnum, self.var_d8243293 );
-        self.var_d8243293 = undefined;
+        stopfx( localclientnum, self.n_fire_fx );
+        self.n_fire_fx = undefined;
     }
     
     if ( isdefined( self.var_5abbf89a ) )
@@ -490,14 +490,14 @@ function magma_urn_fire_fx( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( newval == 1 )
     {
-        self.var_d8243293 = util::playfxontag( localclientnum, level._effect[ #"magma_urn" ], self, "tag_origin" );
+        self.n_fire_fx = util::playfxontag( localclientnum, level._effect[ #"magma_urn" ], self, "tag_origin" );
         self.var_5abbf89a = util::playfxontag( localclientnum, level._effect[ #"hash_71cebe03a25b3339" ], self, "tag_origin" );
         return;
     }
     
     if ( newval == 2 )
     {
-        self.var_d8243293 = util::playfxontag( localclientnum, level._effect[ #"hash_577c7197e639a24b" ], self, "tag_origin" );
+        self.n_fire_fx = util::playfxontag( localclientnum, level._effect[ #"hash_577c7197e639a24b" ], self, "tag_origin" );
         self.var_5abbf89a = util::playfxontag( localclientnum, level._effect[ #"hash_28455b81d5e86c62" ], self, "tag_origin" );
     }
 }

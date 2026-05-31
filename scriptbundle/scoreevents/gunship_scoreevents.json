@@ -1,5 +1,5 @@
 {
-    "hash_2ecceeab": "#gunship_kill",
+    "killscoreevent": "#gunship_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",

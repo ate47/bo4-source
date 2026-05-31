@@ -2,8 +2,8 @@
     "name": "#hero_minigun_mp",
     "baseWeapon": "#hero_minigun",
     "displayname": "#weapon/hero_minigun",
-    "xhash_70": "#hero_minigun",
-    "streamkey": "#hash_61e5eaa0c10b567",
+    "weapon70": "#hero_minigun",
+    "soundbank": "#hero_minigun_soundbank",
     "scrstr_8c8": [
         "tag_minigun_flaps"
     ],
@@ -15,21 +15,40 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "MULTIPLAYER",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.002 1",
+            "0.1 0.75",
+            "0.25 0.35",
+            "0.5 0.1",
+            "1 0.05"
+        ],
+        [
+            "0 1",
+            "0.002 1",
+            "0.1 0.8",
+            "0.25 0.6",
+            "0.5 0.15",
+            "1 0.05"
+        ]
+    ],
     "sound140": "#hash_565323a11e204bba",
     "sound150": "#hash_15428aa18a6079df",
     "sound180": "#hash_779a739dcc541b08",
@@ -50,6 +69,10 @@
     "sound810": "#hash_5d8b6dc75a094136",
     "tunables1": "#hero_minigun_tunables_mp",
     "sharedWeaponSounds": "#rifle",
+    "tracers": [
+        "#hero_minigun",
+        "#hero_minigun_enemy"
+    ],
     "viewmodel": [
         "#wpn_t7_hero_reaper_minigun_view"
     ],
@@ -64,14 +87,14 @@
     "image_e90": "#t7_icon_weapon_hero_reaper_kf",
     "image_1048": "#t7_icon_weapon_hero_reaper_kf",
     "fireRumble": "#heavygun_fire",
-    "fx_bc8": "#hash_6f4c0d9be8ebb8aa",
+    "fx_bc8": "#weapon/fx_hero_minigun_muz_1p",
     "fx_bd0": "#weapon/fx_muz_md_rifle_3p",
-    "fx_c80": "#hash_58b227559fe0083",
-    "fx_c88": "#hash_58b227559fe0083",
-    "fx_c90": "#hash_58b227559fe0083",
-    "fx_c98": "#hash_58b227559fe0083",
-    "normalImpactFX": "#hash_4637c3c261229290",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "fx_c80": "#weapon/fx_shellejects_minigun",
+    "fx_c88": "#weapon/fx_shellejects_minigun",
+    "fx_c90": "#weapon/fx_shellejects_minigun",
+    "fx_c98": "#weapon/fx_shellejects_minigun",
+    "normalImpactFX": "#hero_minigun_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#bullet_exit"
 }

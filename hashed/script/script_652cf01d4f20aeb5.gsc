@@ -260,14 +260,14 @@ function function_f83bfaa()
 function function_61298be5()
 {
     var_1a304a2f = struct::get( self.target, "targetname" );
-    self.var_b6aa4c4f = util::spawn_model( "p8_zm_ora_keycard_0", var_1a304a2f.origin, var_1a304a2f.angles );
-    playsoundatposition( #"hash_7b375cb6d6863713", self.var_b6aa4c4f.origin );
+    self.e_key_1 = util::spawn_model( "p8_zm_ora_keycard_0", var_1a304a2f.origin, var_1a304a2f.angles );
+    playsoundatposition( #"hash_7b375cb6d6863713", self.e_key_1.origin );
     level zm_ui_inventory::function_7df6bb60( "zm_orange_zipquest_keycard_1", 0 );
     level.var_79260935.var_f4c36022--;
     level.var_79260935.var_30df7623++;
     wait 0.5;
-    self.var_b6aa4c4f zm_hms_util::function_dc4ab629( -8, 1.5 );
-    self.var_b6aa4c4f waittill( #"movedone" );
+    self.e_key_1 zm_hms_util::function_dc4ab629( -8, 1.5 );
+    self.e_key_1 waittill( #"movedone" );
 }
 
 // Namespace namespace_5449c7ba/namespace_5449c7ba
@@ -277,22 +277,22 @@ function function_61298be5()
 function function_2ec6a1aa()
 {
     var_1a304a2f = struct::get( self.target2, "targetname" );
-    self.var_a56fa9da = util::spawn_model( "p8_zm_ora_keycard_0", var_1a304a2f.origin, var_1a304a2f.angles );
-    playsoundatposition( #"hash_7b375cb6d6863713", self.var_a56fa9da.origin );
+    self.e_key_2 = util::spawn_model( "p8_zm_ora_keycard_0", var_1a304a2f.origin, var_1a304a2f.angles );
+    playsoundatposition( #"hash_7b375cb6d6863713", self.e_key_2.origin );
     level zm_ui_inventory::function_7df6bb60( "zm_orange_zipquest_keycard_2", 0 );
     level.var_79260935.var_f4c36022--;
     level.var_79260935.var_30df7623++;
     wait 0.5;
-    self.var_a56fa9da zm_hms_util::function_dc4ab629( -8, 1.5 );
-    self.var_a56fa9da waittill( #"movedone" );
+    self.e_key_2 zm_hms_util::function_dc4ab629( -8, 1.5 );
+    self.e_key_2 waittill( #"movedone" );
     self zm_unitrigger::unregister_unitrigger( self.s_unitrigger );
     playsoundatposition( #"hash_105229c7410bf423", self.origin );
     wait 4;
-    self.var_b6aa4c4f setmodel( "p8_zm_ora_keycard_1" );
-    self.var_a56fa9da setmodel( "p8_zm_ora_keycard_2" );
-    self.var_b6aa4c4f zm_hms_util::function_dc4ab629( 8, 1.5 );
-    self.var_a56fa9da zm_hms_util::function_dc4ab629( 8, 1.5 );
-    self.var_a56fa9da waittill( #"movedone" );
+    self.e_key_1 setmodel( "p8_zm_ora_keycard_1" );
+    self.e_key_2 setmodel( "p8_zm_ora_keycard_2" );
+    self.e_key_1 zm_hms_util::function_dc4ab629( 8, 1.5 );
+    self.e_key_2 zm_hms_util::function_dc4ab629( 8, 1.5 );
+    self.e_key_2 waittill( #"movedone" );
     level flag::set( #"hash_7220fbbcfb27dbd4" );
 }
 
@@ -354,9 +354,9 @@ function function_6c5a5d32()
     self waittill( #"trigger_activated" );
     level zm_ui_inventory::function_7df6bb60( "zm_orange_zipquest_keycard_1", 2 );
     level zm_ui_inventory::function_7df6bb60( "zm_orange_zipquest_keycard_2", 2 );
-    playsoundatposition( #"hash_218d931e2eeaafc4", self.var_b6aa4c4f.origin );
-    self.var_b6aa4c4f delete();
-    self.var_a56fa9da delete();
+    playsoundatposition( #"hash_218d931e2eeaafc4", self.e_key_1.origin );
+    self.e_key_1 delete();
+    self.e_key_2 delete();
     level flag::set( #"hash_4119ce1986c28b9d" );
 }
 
@@ -368,14 +368,14 @@ function sams_box_step2_cleanup( var_5ea5c94d, ended_early )
 {
     if ( var_5ea5c94d || ended_early )
     {
-        if ( isdefined( self.var_b6aa4c4f ) )
+        if ( isdefined( self.e_key_1 ) )
         {
-            self.var_b6aa4c4f delete();
+            self.e_key_1 delete();
         }
         
-        if ( isdefined( self.var_a56fa9da ) )
+        if ( isdefined( self.e_key_2 ) )
         {
-            self.var_a56fa9da delete();
+            self.e_key_2 delete();
         }
         
         level flag::set( #"hash_4119ce1986c28b9d" );

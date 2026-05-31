@@ -118,7 +118,7 @@ function function_ee579eb5()
     self.var_1ce249af = 0;
     self.var_15aa1ae0 = 2000;
     self.var_f3bbe853 = 1;
-    self.var_7fde19e8 = 0;
+    self.last_phase_time = 0;
     self.var_9bff71aa = 0;
     self function_8a404313();
 }
@@ -533,7 +533,7 @@ function function_3b8d314c( entity )
         entity clientfield::set( "" + #"avogadro_phase_fx", 1 );
     }
     
-    if ( gettime() - entity.var_7fde19e8 > 1000 )
+    if ( gettime() - entity.last_phase_time > 1000 )
     {
         entity.var_9bff71aa = 0;
         return;
@@ -562,7 +562,7 @@ function function_dbba31c1( entity )
     entity.blockingpain = 0;
     entity.phase_time = gettime() + self.var_15aa1ae0;
     entity.is_phasing = undefined;
-    entity.var_7fde19e8 = gettime();
+    entity.last_phase_time = gettime();
     
     if ( isdefined( self.var_f3bbe853 ) && self.var_f3bbe853 )
     {

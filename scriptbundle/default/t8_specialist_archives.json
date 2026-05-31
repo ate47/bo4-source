@@ -1,1 +1,273 @@
-{}
+{
+    "intellist": [
+        {
+            "audiotitle": "localized17#hash_4a608d3fbb6904f9",
+            "hash_23e2313142abe602:hash_5c27b533": 0,
+            "audiodesc": "localized17#hash_6bf7b28420869eaf",
+            "hash_4c98796b474d4d5b:hash_dbf06f92": "localized17#hash_2d96670a1b64ff33",
+            "audio": "evt_audio_log_1_vox"
+        },
+        {
+            "audiotitle": "localized17#hash_1d25924ca477662e",
+            "hash_23e2313142abe602:hash_5c27b533": 0,
+            "audiodesc": "localized17#hash_3a67fa0778b392f4",
+            "hash_4c98796b474d4d5b:hash_dbf06f92": "localized17#hash_2cdeb47c4b00e108",
+            "audio": "evt_audio_log_2_vox"
+        },
+        {
+            "audiotitle": "localized17#hash_257c88f70eb4907f",
+            "hash_23e2313142abe602:hash_5c27b533": 0,
+            "audiodesc": "localized17#hash_719bd3d782d9f111",
+            "hash_4c98796b474d4d5b:hash_dbf06f92": "localized17#hash_5ebe96a28ae3d025",
+            "audio": "evt_audio_log_3_vox"
+        },
+        {
+            "audiotitle": "localized17#hash_52b0e6128444c4b4",
+            "hash_23e2313142abe602:hash_5c27b533": 0,
+            "audiodesc": "localized17#hash_6e43739e41dc8e56",
+            "hash_4c98796b474d4d5b:hash_dbf06f92": "localized17#hash_62c7bbe1cf228c22",
+            "audio": "evt_audio_log_4_vox"
+        },
+        {
+            "audiotitle": "localized17#hash_323604e7b8b3c2ad",
+            "hash_23e2313142abe602:hash_5c27b533": 0,
+            "audiodesc": "localized17#hash_15de082fcdb80173",
+            "hash_4c98796b474d4d5b:hash_dbf06f92": "localized17#hash_7c5aef3c3f69516f",
+            "audio": "evt_audio_log_5_vox"
+        },
+        {
+            "audiotitle": "localized17#hash_3302fc33c18f9062",
+            "hash_23e2313142abe602:hash_5c27b533": 0,
+            "audiodesc": "localized17#hash_11bf55a1fa6f0748",
+            "hash_4c98796b474d4d5b:hash_dbf06f92": "localized17#hash_26a42e6479db09b4",
+            "audio": "evt_audio_log_6_vox"
+        },
+        {
+            "audiotitle": "localized17#hash_411b1a87f66d4d23",
+            "hash_23e2313142abe602:hash_5c27b533": 0,
+            "audiodesc": "localized17#hash_1f782f6d1c96ba65",
+            "hash_4c98796b474d4d5b:hash_dbf06f92": "localized17#hash_5dd80834840167d1",
+            "audio": "evt_audio_log_7_vox"
+        },
+        {
+            "audiotitle": "localized17#hash_68fa3ff9a1b7f298",
+            "hash_23e2313142abe602:hash_5c27b533": 0,
+            "audiodesc": "localized17#hash_55603e2b876c693a",
+            "hash_4c98796b474d4d5b:hash_dbf06f92": "localized17#hash_592735c9fb198bce",
+            "audio": "evt_audio_log_8_vox"
+        },
+        {
+            "audiotitle": "localized17#hash_24f6c0f728089371",
+            "hash_23e2313142abe602:hash_5c27b533": 0,
+            "audiodesc": "localized17#hash_42610051a06bba87",
+            "hash_4c98796b474d4d5b:hash_dbf06f92": "localized17#hash_803bb4a9a46c08b",
+            "audio": "evt_audio_log_9_vox"
+        },
+        {
+            "audiotitle": "localized17#hash_6a121b6a02df0fd3",
+            "hash_23e2313142abe602:hash_5c27b533": 0,
+            "audiodesc": "localized17#hash_26c2f5c2c6a32f6d",
+            "hash_4c98796b474d4d5b:hash_dbf06f92": "localized17#hash_73b491690ceb621",
+            "audio": "evt_audio_log_10_vox"
+        },
+        {
+            "audiotitle": "localized17#hash_34c5c38792458392",
+            "hash_23e2313142abe602:hash_5c27b533": 0,
+            "audiodesc": "localized17#hash_6cf89bf6690aa9d0",
+            "hash_4c98796b474d4d5b:hash_dbf06f92": "localized17#hash_28c8b5bbf9a3e644",
+            "audio": "evt_audio_log_11_vox"
+        },
+        {
+            "audiotitle": "localized17#hash_64682ea6ae232b9d",
+            "hash_23e2313142abe602:hash_5c27b533": 0,
+            "audiodesc": "localized17#hash_758794f73babd51b",
+            "hash_4c98796b474d4d5b:hash_dbf06f92": "localized17#hash_7f80d8f9f6de977f",
+            "audio": "evt_audio_log_12_vox"
+        },
+        {
+            "audiotitle": "localized17#hash_4e6308c47136e028",
+            "hash_23e2313142abe602:hash_5c27b533": 0,
+            "audiodesc": "localized17#hash_2141b7df98791d1e",
+            "hash_4c98796b474d4d5b:hash_dbf06f92": "localized17#hash_16507e939265eebe",
+            "audio": "evt_audio_log_13_vox"
+        }
+    ],
+    "interstitiallist": [
+        {
+            "stillpreview": "image#hash_8101ed77b2b62f3",
+            "videodesc": "localized17#hash_54d3b6ebc3f0b45c",
+            "movie": "<unk19>:ct_interstitial_savannah1",
+            "videotitle": "localized17#hash_15fd5a9ea9cce494",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_63168f93cef4835a:hash_e04f5aeb": "localized17#hash_2b6d57e239576d2a"
+        },
+        {
+            "stillpreview": "image#hash_50b63de65d2a8274",
+            "videodesc": "localized17#hash_10f77bea1805117",
+            "movie": "<unk19>:ct_interstitial_bunker1",
+            "videotitle": "localized17#hash_15fd5d9ea9cce9ad",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_63168f93cef4835a:hash_e04f5aeb": "localized17#hash_3c1a1639240ea3e3"
+        },
+        {
+            "stillpreview": "image#hash_8101fd77b2b64a6",
+            "videodesc": "localized17#hash_389919e6e1cf28ca",
+            "movie": "<unk19>:ct_interstitial_savannah2",
+            "videotitle": "localized17#hash_15fd5c9ea9cce7fa",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_63168f93cef4835a:hash_e04f5aeb": "localized17#hash_12aaba8f4724268"
+        },
+        {
+            "stillpreview": "image#hash_50b640e65d2a878d",
+            "videodesc": "localized17#hash_603574a8d8a6206d",
+            "movie": "<unk19>:ct_interstitial_bunker2",
+            "videotitle": "localized17#hash_15fd579ea9ccdf7b",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_63168f93cef4835a:hash_e04f5aeb": "localized17#hash_5c3fdfecacbb0ba1"
+        },
+        {
+            "stillpreview": "image#hash_81020d77b2b6659",
+            "videodesc": "localized17#hash_266b1adc7b0d9ad0",
+            "movie": "<unk19>:ct_interstitial_savannah3",
+            "videotitle": "localized17#hash_15fd569ea9ccddc8",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_63168f93cef4835a:hash_e04f5aeb": "localized17#hash_2f0378d6e39f311e"
+        },
+        {
+            "stillpreview": "image#hash_50b63fe65d2a85da",
+            "videodesc": "localized17#hash_2efa13dd4daec61b",
+            "movie": "<unk19>:ct_interstitial_bunker3",
+            "videotitle": "localized17#hash_15fd599ea9cce2e1",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_63168f93cef4835a:hash_e04f5aeb": "localized17#hash_9496c11029171c7"
+        },
+        {
+            "stillpreview": "image#hash_81021d77b2b680c",
+            "videodesc": "localized17#hash_5ab436c5aa7c0e1e",
+            "movie": "<unk19>:ct_interstitial_savannah4",
+            "videotitle": "localized17#hash_15fd589ea9cce12e",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_63168f93cef4835a:hash_e04f5aeb": "localized17#hash_73ccb4e2bd1c5cdc"
+        },
+        {
+            "stillpreview": "image#hash_50b63ae65d2a7d5b",
+            "videodesc": "localized17#hash_304a8b4483eef461",
+            "movie": "<unk19>:ct_interstitial_bunker4",
+            "videotitle": "localized17#hash_15fd539ea9ccd8af",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_63168f93cef4835a:hash_e04f5aeb": "localized17#hash_44e948bc1422c0d5"
+        },
+        {
+            "stillpreview": "image#hash_81022d77b2b69bf",
+            "videodesc": "localized17#hash_22f5cd6c9d5b7484",
+            "movie": "<unk19>:ct_interstitial_savannah5",
+            "videotitle": "localized17#hash_15fd529ea9ccd6fc",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_63168f93cef4835a:hash_e04f5aeb": "localized17#hash_142b7a54990d7142"
+        }
+    ],
+    "onboardinglist": [
+        {
+            "stillpreview": "image#hash_8043a73c4677d23",
+            "movie": "ct_skirmishcontrol_loadingmovie",
+            "videotitle": "localized17#hash_4be57ac3b61368b4",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_7f86c2144eef36a8:hash_80abd9a0": 0
+        },
+        {
+            "stillpreview": "image#hash_324fed310e967746",
+            "movie": "ct_skirmishdomination_loadingmovie",
+            "videotitle": "localized17#hash_29af1adf1bc9d98b",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_7f86c2144eef36a8:hash_80abd9a0": 0
+        },
+        {
+            "stillpreview": "image#hash_669f92c48467b1e",
+            "movie": "ct_skirmishfreeforall_loadingmovie",
+            "videotitle": "localized17#hash_3cd00ac4f56ea207",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_7f86c2144eef36a8:hash_80abd9a0": 0
+        },
+        {
+            "stillpreview": "image#hash_449cdf16ea73b957",
+            "movie": "ct_skirmishhardpoint_loadingmovie",
+            "videotitle": "localized17#hash_70dc23f8a9014828",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_7f86c2144eef36a8:hash_80abd9a0": 0
+        },
+        {
+            "stillpreview": "image#hash_483fed180b02c19",
+            "movie": "ct_skirmishhkillconfirmed_loadingmovie",
+            "videotitle": "localized17#hash_524782db90d0fdc",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_7f86c2144eef36a8:hash_80abd9a0": 0
+        },
+        {
+            "stillpreview": "image#hash_25268e01fd0b4eb0",
+            "movie": "ct_skirmishhsearchndestroy_loadingmovie",
+            "videotitle": "localized17#hash_56e4f3cdeca1754f",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_7f86c2144eef36a8:hash_80abd9a0": 0
+        },
+        {
+            "stillpreview": "image#hash_cf616eb2e2b68ee",
+            "movie": "ct_skirmishhteamdeathmatch_loadingmovie",
+            "videotitle": "localized17#hash_44ec1141f5cd41b9",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_7f86c2144eef36a8:hash_80abd9a0": 0
+        },
+        {
+            "stillpreview": "image#hash_39c69d1ac94e69f1",
+            "videodesc": "localized17#hash_180fa7e6ca727f3d",
+            "movie": "ct_powerinnumbers_trailer",
+            "videotitle": "localized17#hash_f20c8f91381efeb",
+            "hash_46a7910e9cdc80be:hash_818be2e7": 0,
+            "hash_7f86c2144eef36a8:hash_80abd9a0": 1
+        }
+    ],
+    "hash_4832787480d8552:hash_2581d62e": "localized17#hash_7589193b5de7570e",
+    "hash_92ef4a2bfb1b67f:hash_d8ab280a": "localized17#hash_6cd85b4bea28966b",
+    "hash_dc263f4717b5d99:hash_dd247f02": "image#hash_4ce3d70092472412",
+    "hash_1009301d995e3462:hash_9d9991b0": "localized17#hash_5b602acdd5327618",
+    "hash_106f3c4d03c30332:hash_e66917e8": "<unk19>:ct_interstitial_outro",
+    "hash_154631da7703202c:hash_681a6482": "image#ui_menu_specialist_hud_poster_frame_locked",
+    "configstringfiletype": "scriptbundle",
+    "hash_1837781ed9d28dfe:hash_a6f33806": "image#hash_39cafe8d4bc39c9c",
+    "classifiedtitle": "localized17#hash_4e600291d76fc624",
+    "hash_20ef31cf4bca6610:hash_fc508fc2": "image#hash_2a8ab86381ba9f07",
+    "hash_22f18c36176e53b0:hash_eaed9869": 1,
+    "hash_3059e33e621ba5c9:hash_598f27d1": "image#hash_39cafe8d4bc39c9c",
+    "hash_31e6f480eba7b1ef:hash_55852802": "localized17#hash_68ecfa0d2c14f886",
+    "hash_32a86a3123124448:hash_e79a1208": "image#hash_39cafe8d4bc39c9c",
+    "hash_336e2b225b641667:hash_b51717c3": "<unk19>:ct_outro",
+    "hash_3515e45ad81b9327:hash_e561ef46": 0,
+    "hash_3b9f9b5916459069:hash_55028714": "localized17#hash_d21e0621740ee5",
+    "hash_3e2a12aa0c693432:hash_aaf5b491": 0,
+    "hash_3fd8a140b4b74739:hash_1a3ff6c2": "localized17#hash_68b554c96cbc04de",
+    "hash_401686694219f5a8:hash_21fead41": "localized17#hash_3be8370e8e360a76",
+    "hash_40b33a692ca73c2c:hash_af40a7c6": "image#hash_412af61aaa3eda3a",
+    "hash_43f9e31256148abc:hash_bc17fea": "localized17#hash_784b6c5e9fae6f50",
+    "name": "t8_specialist_archives",
+    "hash_44fbde8bf1bd0004:hash_28bfa23": "image#hash_7cf33a4d59f1823d",
+    "hash_4605d675d630a78c:hash_66aeaf0a": "localized17#hash_3921fdcc4a67a525",
+    "hash_4d32d556f8f0b4b0:hash_7c340560": "localized17#hash_68b553c96cbc032b",
+    "hash_4ee9d30c4ff6408b:hash_44f465a": "localized17#hash_45bb82b75d47434e",
+    "hash_551125a3ee94a935:hash_d12ba32c": "localized17#hash_28b80bc12714b700",
+    "hash_57b08a6c17b1a530:hash_42f1a30": "localized17#hash_45bb80b75d473fe8",
+    "hash_57d1a480bb3a9cc0:hash_61e58285": "localized17#hash_599723bf203e77ef",
+    "hash_584e2724cce4b658:hash_1e0276d2": 0,
+    "hash_5b7dd66ddc6ec9a9:hash_405b6292": "<unk19>:ct_interstitial_intro",
+    "hash_5b8491cc31d691c6:hash_157f4bb2": 0,
+    "hash_5d9736e875a1df6b:hash_6aae8bdf": "localized17#hash_5310ccaf05bcd0ba",
+    "hash_62e2a3a8e466ed43:hash_7b492fe7": "image#hash_101150ecc7979d1c",
+    "hash_62edacfcaa4e38c7:hash_41314be1": 0,
+    "hash_641ff0587d0a3b33:hash_93282e9f": 1,
+    "hash_64775a9844e7ef0d:hash_a530e658": "localized17#hash_1558e0276fd6a433",
+    "hash_6b9793aa447a56d6:hash_2b248d86": "localized17#hash_45bb81b75d47419b",
+    "hash_734b4156ebe6988b:hash_e0bfe97": 0,
+    "hash_75fa20bf63243ba6:hash_293c7211": "localized17#hash_68b552c96cbc0178",
+    "hash_7b01945311af5acd:hash_9d0328df": "image#hash_6ae286c70dae3abc",
+    "hash_7c873ff231aabae6:hash_3942120c": "<unk19>:ct_intro",
+    "hash_7ea2980b60c4d28b:hash_ecd7b41b": "localized17#hash_3ba9d8506bb9afb",
+    "hash_7f27d1ad2c9b5996:hash_f2c62f1f": "image#hash_15b157393103a411"
+}

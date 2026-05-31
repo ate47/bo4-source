@@ -779,18 +779,18 @@ function private function_c81af561( entity )
 // Namespace zm_ai_gegenees/zm_ai_gegenees
 // Params 1, eflags: 0x4
 // Checksum 0x76df42df, Offset: 0x2b40
-// Size: 0x3aa, Type: bool
+// Size: 0x3aa
 function private gegeneestargetservice( entity )
 {
     if ( isdefined( entity.ignoreall ) && entity.ignoreall )
     {
-        return false;
+        return 0;
     }
     
     /#
         if ( isdefined( entity.ispuppet ) && entity.ispuppet )
         {
-            return false;
+            return 0;
         }
     #/
     
@@ -798,7 +798,7 @@ function private gegeneestargetservice( entity )
         if ( isdefined( entity.devgui_stop_move ) && entity.devgui_stop_move )
         {
             entity setgoal( entity.origin );
-            return false;
+            return 0;
         }
     #/
     
@@ -844,14 +844,14 @@ function private gegeneestargetservice( entity )
         }
         
         entity setgoal( entity.origin );
-        return false;
+        return 0;
     }
     
     /#
         if ( entity.favoriteenemy isnotarget() )
         {
             entity setgoal( entity.origin );
-            return false;
+            return 0;
         }
     #/
     
@@ -1304,19 +1304,19 @@ function private function_a231dd3b( s_params )
             }
         }
         
-        self.var_d0686fde = [];
-        self.var_d0686fde[ self.var_d0686fde.size ] = #"fire_sale";
-        self.var_d0686fde[ self.var_d0686fde.size ] = #"nuke";
+        self.a_str_powerups = [];
+        self.a_str_powerups[ self.a_str_powerups.size ] = #"fire_sale";
+        self.a_str_powerups[ self.a_str_powerups.size ] = #"nuke";
         
         if ( var_67a1b262 )
         {
-            self.var_d0686fde[ self.var_d0686fde.size ] = #"full_ammo";
-            self.var_d0686fde[ self.var_d0686fde.size ] = #"full_ammo";
+            self.a_str_powerups[ self.a_str_powerups.size ] = #"full_ammo";
+            self.a_str_powerups[ self.a_str_powerups.size ] = #"full_ammo";
         }
         
         level.var_51c8013a = n_time;
         self.no_powerups = 1;
-        level thread zm_powerups::specific_powerup_drop( self.var_d0686fde, self.origin, undefined, undefined, undefined, undefined, undefined, undefined, 0, 1 );
+        level thread zm_powerups::specific_powerup_drop( self.a_str_powerups, self.origin, undefined, undefined, undefined, undefined, undefined, undefined, 0, 1 );
     }
     
     if ( !isplayer( s_params.eattacker ) )

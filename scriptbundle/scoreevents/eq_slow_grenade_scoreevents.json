@@ -1,16 +1,16 @@
 {
-    "hash_d58bd0e9": "#hash_d68266070c54aa7",
-    "hash_67b4a761": "#hash_d68266070c54aa7",
-    "hash_2ecceeab": "#hash_2719e22561441ed5",
-    "hash_2eaed769": "#hash_1352459d518467e4",
+    "hash_aea877001f3d9b2:hash_d58bd0e9": "#hash_d68266070c54aa7",
+    "hash_1392470036d7f11e:hash_67b4a761": "#hash_d68266070c54aa7",
+    "killscoreevent": "#concussion_grenade_kill",
+    "hash_15d363323c36cb1b:hash_2eaed769": "#hash_1352459d518467e4",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
-    "hash_1253685d": "#hash_7b589b3c0bd1a913",
+    "activationscoreevent": "#hash_7b589b3c0bd1a913",
     "vmtype": "both",
-    "hash_16abf654": "#hash_d68266070c54aa7",
+    "hash_3c9a57250734ff5c:hash_16abf654": "#hash_d68266070c54aa7",
     "name": "eq_slow_grenade_scoreevents",
     "customsettingstype": "status effect",
-    "hash_1b8b6771": "#hash_d68266070c54aa7",
-    "hash_170b3630": "#hash_55c0e2f8f8f4f342",
-    "hash_6643c0a0": "#hash_d68266070c54aa7"
+    "hash_5b80674ef0f7f78b:hash_1b8b6771": "#hash_d68266070c54aa7",
+    "assistscoreevent": "#concussion_grenade_assist",
+    "hash_7c6bc18dcf98c8b1:hash_6643c0a0": "#hash_d68266070c54aa7"
 }

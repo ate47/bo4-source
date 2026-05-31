@@ -162,7 +162,7 @@ function function_38b44aab()
 // Size: 0x84
 function function_436d9a24( t_damage )
 {
-    shock_status_effect = getstatuseffect( #"hash_19533caf858a9f3b" );
+    shock_status_effect = getstatuseffect( #"shock_zm_trap" );
     
     if ( !( isdefined( self.b_no_trap_damage ) && self.b_no_trap_damage ) )
     {
@@ -207,9 +207,9 @@ function ai_damage( e_trap )
         e_trap.activated_by_player zm_stats::increment_challenge_stat( #"zombie_hunter_kill_trap" );
         e_trap.activated_by_player contracts::increment_zm_contract( #"contract_zm_trap_kills" );
         
-        if ( isdefined( e_trap.activated_by_player.var_a8049e3d ) )
+        if ( isdefined( e_trap.activated_by_player.zapped_zombies ) )
         {
-            e_trap.activated_by_player.var_a8049e3d++;
+            e_trap.activated_by_player.zapped_zombies++;
             e_trap.activated_by_player notify( #"zombie_zapped" );
         }
     }
@@ -221,7 +221,7 @@ function ai_damage( e_trap )
     {
         self thread zm_traps::electroctute_death_fx();
         self thread zm_traps::play_elec_vocals();
-        self function_a3059f6( e_trap );
+        self electric_trap_damage( e_trap );
     }
     else if ( self.archetype === #"zombie" )
     {
@@ -243,11 +243,11 @@ function ai_damage( e_trap )
         bhtnactionstartevent( self, "electrocute" );
         self notify( #"bhtn_action_notify", { #action:"electrocute" } );
         wait randomfloat( 1.25 );
-        self function_a3059f6( e_trap );
+        self electric_trap_damage( e_trap );
     }
     else
     {
-        self function_a3059f6( e_trap );
+        self electric_trap_damage( e_trap );
     }
     
     wait 2;
@@ -258,14 +258,14 @@ function ai_damage( e_trap )
 // Params 1
 // Checksum 0x42d20a1b, Offset: 0xe18
 // Size: 0x16c
-function function_a3059f6( e_trap )
+function electric_trap_damage( e_trap )
 {
     self endon( #"death" );
     [[ level.var_7aa02c24 ]]->waitinqueue( self );
     
-    if ( isdefined( self.var_5475b4ad ) )
+    if ( isdefined( self.fire_damage_func ) )
     {
-        self [[ self.var_5475b4ad ]]( e_trap );
+        self [[ self.fire_damage_func ]]( e_trap );
         return;
     }
     

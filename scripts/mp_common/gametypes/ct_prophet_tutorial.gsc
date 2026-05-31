@@ -1204,11 +1204,11 @@ function function_235b259b()
     self thread function_222141a5();
     a_str_spawns = array( "s_tut_fin1_wave1_enemy_a", "s_tut_fin1_wave1_enemy_b" );
     str_spawns = array::random( a_str_spawns );
-    var_31879d4d = [];
-    var_31879d4d[ #"s_tut_fin1_wave1_enemy_a" ] = "s_tut_fin1_respawn_a";
-    var_31879d4d[ #"s_tut_fin1_wave1_enemy_b" ] = "s_tut_fin1_respawn_b";
-    var_31879d4d[ #"s_tut_fin1_wave2_enemy" ] = "s_tut_fin1_respawn_wave_2";
-    str_respawn = var_31879d4d[ str_spawns ];
+    a_str_player_respawn = [];
+    a_str_player_respawn[ #"s_tut_fin1_wave1_enemy_a" ] = "s_tut_fin1_respawn_a";
+    a_str_player_respawn[ #"s_tut_fin1_wave1_enemy_b" ] = "s_tut_fin1_respawn_b";
+    a_str_player_respawn[ #"s_tut_fin1_wave2_enemy" ] = "s_tut_fin1_respawn_wave_2";
+    str_respawn = a_str_player_respawn[ str_spawns ];
     level.var_3f7591c4 = 0;
     level.var_72c3ea74 = struct::get_array( str_spawns, "targetname" );
     level.var_da5432a2 = 0;
@@ -1218,7 +1218,7 @@ function function_235b259b()
     self thread function_25bdd976( 0, 0 );
     self thread function_f4ca14fb();
     self thread ct_vo::function_625a37f9( "vox_tvoi_tutor_prop_wine_chain_success", "enemy_tempest_chained", 1, 0 );
-    level waittill( #"hash_5d67cd17870cf7b6" );
+    level waittill( #"player_can_see_enemy" );
     level.var_3f7591c4 = 1;
     ct_utils::function_9aca2fa0( "ct_action2" );
     level notify( #"hash_60e26e14a51c5211" );
@@ -1233,14 +1233,14 @@ function function_235b259b()
     self ct_vo::function_831e0584( array( "vox_tvoi_tutor_prop_wine_comp_0" ) );
     level.var_3f7591c4 = 0;
     str_spawns = "s_tut_fin1_wave2_enemy";
-    str_respawn = var_31879d4d[ str_spawns ];
+    str_respawn = a_str_player_respawn[ str_spawns ];
     level.var_72c3ea74 = struct::get_array( str_spawns, "targetname" );
     level.var_da5432a2 = 0;
     level thread ct_bots::activate_bots( level.var_72c3ea74.size, #"axis" );
     level.var_c271b8e0 = level.var_72c3ea74.size;
     ct_utils::function_9aca2fa0( "ct_action2" );
     self thread function_f4ca14fb( 1 );
-    level waittill( #"hash_5d67cd17870cf7b6" );
+    level waittill( #"player_can_see_enemy" );
     level.var_3f7591c4 = 1;
     level notify( #"hash_60e26e14a51c5211" );
     waitframe( 1 );
@@ -1260,7 +1260,7 @@ function function_235b259b()
 // Size: 0x22a
 function function_f4ca14fb( var_a8183c4a = 0 )
 {
-    level endon( #"combattraining_logic_finished", #"hash_5d67cd17870cf7b6" );
+    level endon( #"combattraining_logic_finished", #"player_can_see_enemy" );
     
     while ( true )
     {
@@ -1358,8 +1358,8 @@ function function_aae68385( s_loc )
         }
     }
     
-    e_player notify( #"hash_5d67cd17870cf7b6" );
-    level notify( #"hash_5d67cd17870cf7b6" );
+    e_player notify( #"player_can_see_enemy" );
+    level notify( #"player_can_see_enemy" );
 }
 
 // Namespace ct_prophet_tutorial/ct_prophet_tutorial
@@ -2405,7 +2405,7 @@ function function_980638c8( params )
         level.var_595e41ee = 50;
         event = #"ekia";
         eventindex = level.scoreinfo[ event ][ #"row" ];
-        eattacker globallogic_score::giveplayermomentumnotification( level.var_595e41ee, #"hash_480234a872bd64ac", undefined, 0, weapon, 0, eventindex, event, undefined );
+        eattacker globallogic_score::giveplayermomentumnotification( level.var_595e41ee, #"score/blank", undefined, 0, weapon, 0, eventindex, event, undefined );
         level.var_d1f07c87++;
         
         if ( !eattacker ct_utils::function_a7540094() )

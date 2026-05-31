@@ -1,0 +1,50 @@
+{
+    "name": "#hash_4a1cd71dc9088a98",
+    "model": "#hash_14651845f484599d",
+    "unk20": "#veh_t8_mil_atv_recon_dead_police",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin",
+                    "unk2c": [
+                        "tag_rollbar_rear"
+                    ]
+                },
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_20348c9cf6d99885",
+            "unk268": 1000,
+            "hideBones": [
+                31,
+                70,
+                136,
+                139,
+                171,
+                184
+            ]
+        }
+    ]
+}

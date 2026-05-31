@@ -50,7 +50,7 @@ function event_handler[gametype_init] main( eventstruct )
     level._game_module_custom_spawn_init_func = &zm_gametype::custom_spawn_init_func;
     level._game_module_stat_update_func = &zm_stats::survival_classic_custom_stat_update;
     level._round_start_func = &zm_round_logic::round_start;
-    level.var_57cc29f3 = &function_491101ba;
+    level.check_end_game_override = &function_491101ba;
     level.var_d0b54199 = &function_b8839207;
     level.var_9093a47e = &function_b8839207;
     level.round_end_custom_logic = &function_61fd0e87;
@@ -332,7 +332,7 @@ function private function_b8839207( e_door, n_cost )
         
         foreach ( round_info in level.var_6d87ac05.rounds )
         {
-            adddebugcommand( "<dev string:xeb>" + round_info.round + "<dev string:x10e>" + function_9e72a96( round_info.name ) + "<dev string:x112>" + round_info.round + "<dev string:x116>" + round_info.round + "<dev string:x138>" );
+            adddebugcommand( "<dev string:xeb>" + round_info.round + "<dev string:x10e>" + hashtostring( round_info.name ) + "<dev string:x112>" + round_info.round + "<dev string:x116>" + round_info.round + "<dev string:x138>" );
         }
         
         for ( i = 0; i <= 3 ; i++ )

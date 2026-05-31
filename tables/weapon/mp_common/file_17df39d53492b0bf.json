@@ -2,8 +2,8 @@
     "name": "#hash_17df39d53492b0bf",
     "baseWeapon": "#hash_17df39d53492b0bf",
     "displayname": "#killstreak/ac130",
-    "xhash_70": "#ac130",
-    "streamkey": "#hash_269451c2acfebb7d",
+    "weapon70": "#ac130",
+    "soundbank": "#hash_269451c2acfebb7d",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -12,21 +12,22 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "unknown",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
     "sound90": "#hash_6e9ee0f0f9ecd8d7",
     "firesound": "#hash_31cfc445d32d6caf",
     "firesoundplayer": "#hash_376d85458d8adfca",
@@ -36,16 +37,36 @@
     "sound5e0": "#hash_21cfea621573025a",
     "projexplosionsound": "#hash_682efe6527d706fa",
     "tunables1": "#hash_6bd5cfce08264f88",
+    "tracers": [
+        "#chopper_gunner",
+        "#chopper_gunner"
+    ],
+    "statusEffects": [
+        {
+            "effect": "#hash_a608bf886a137e8e",
+            "statusEffects:unk8": "[ll0x0=1f400000064][f0x0=1.4013e-43][f0x4=7.00649e-43] 64 00 00 00 f4 01 00 00",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        }
+    ],
     "killcamSettings": "#killcam_ac130",
     "#hash_2e4a8800": "#gunship_scoreevents",
     "projectilemodel": "#projectile_t8_drone_amws_missile",
     "reticleCenter": "#reticle_center_cross",
     "inventoryIconZm": "#t7_hud_ks_gunship",
     "image_e90": "#ui_icon_obit_gunship",
-    "fireRumble": "#hash_47433cb7c8cca603",
+    "fireRumble": "#ac130_105mm_fire",
     "rumble_de8": "#hash_55f87e8a0ae6038d",
     "fx_bd0": "#hash_6c3725e3c8e5fce",
     "fx_ed8": "#hash_1ae397a2f822f91f",
     "fx_f00": "#hash_209c0f28bb709b3c",
-    "normalImpactSounds": "#hash_13ab500733e2f350"
+    "normalImpactSounds": "#heavy_bullet_impact"
 }

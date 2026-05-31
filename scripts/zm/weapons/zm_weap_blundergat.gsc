@@ -1580,10 +1580,10 @@ function function_b1347a6()
             if ( zm_utility::is_player_valid( e_player ) && !e_player zm_utility::is_drinking() && !zm_loadout::is_placeable_mine( e_player.currentweapon ) && !zm_equipment::is_equipment( e_player.currentweapon ) && e_player.currentweapon.name != "none" )
             {
                 e_player notify( #"acid_taken" );
-                var_287a8343 = zm_utility::get_player_weapon_limit( e_player );
+                n_weapon_limit = zm_utility::get_player_weapon_limit( e_player );
                 a_primaries = e_player getweaponslistprimaries();
                 
-                if ( isdefined( a_primaries ) && a_primaries.size >= var_287a8343 )
+                if ( isdefined( a_primaries ) && a_primaries.size >= n_weapon_limit )
                 {
                     e_player takeweapon( e_player.currentweapon );
                 }

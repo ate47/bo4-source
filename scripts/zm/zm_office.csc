@@ -168,7 +168,7 @@ function function_b8da6f44()
 {
     level._effect[ #"hash_2bba72fdcc5508b5" ] = #"hash_1e8cb303d3103833";
     level._effect[ #"chest_light_closed" ] = #"hash_602f075818a2fb2e";
-    level._effect[ #"hash_19f4dd97cbb87594" ] = #"hash_2f7533f7f5b59f7c";
+    level._effect[ #"t8_leave_fx" ] = #"hash_2f7533f7f5b59f7c";
     level._effect[ #"hash_246062f68a34e289" ] = #"hash_61b9b9ada5bb46b1";
     level._effect[ #"hash_73c11d9bf55cbb6" ] = #"hash_71e5e40c76a09b21";
     level._effect[ #"hash_5239f7431d4c72ca" ] = #"hash_200de2be21c77806";

@@ -5,15 +5,15 @@
     "value3": "2",
     "value1": "0",
     "type": "gamesettings",
-    "hash_5a6dee5a": 0,
+    "hash_3d268f562204a4fb:hash_5a6dee5a": 0,
     "name": "zm_zombiespread",
     "displayname": "localized17#hash_5469d52f29775c3d",
     "label1": "localized17#hash_4bf2d101b5a0c299",
     "label3": "localized17#hash_118e4d7cfa60ba63",
     "label2": "localized17#hash_1ba60b6389d20648",
-    "hash_54e336e4": 0,
+    "hash_4dd5060aa2f3ff5f:hash_54e336e4": 0,
     "optionscount": 3,
-    "hash_765cfd09": 0,
+    "hash_70853ef08fe1e46d:hash_765cfd09": 0,
     "setting": "zmZombieSpread",
     "isenableddisabled": 0
 }

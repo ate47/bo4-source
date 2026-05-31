@@ -331,7 +331,7 @@ function get_shots_to_kill( weapon, meansofdeath, bundle )
         case #"hash_17df39d53492b0bf":
             shotstokill = bundle.var_605815a6;
             break;
-        case #"hash_7b24d0d0d2823bca":
+        case #"ac130_autocannon":
             shotstokill = bundle.var_50c51e5;
             break;
         case #"ac130_chaingun":

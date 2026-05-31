@@ -3,14 +3,13 @@
     "shortNameRef": "#hash_5d4e17f8ce7586a",
     "fullNameRef": "#hash_63cb659a9cd09ae8",
     "ingameNameRef": "#hash_61e82db875597df3",
-    "iconName": "#hash_75bdf9a2fc2724bc",
-    "iconNameLarge": "#hash_710fcb22fe65d988",
     "level": 47,
     "minXp": 1000000,
     "maxXp": 1046000,
+    "icon": "#ui_icon_rank_mp_level47",
+    "iconLarge": "#ui_icon_rank_mp_level47_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#bonuscard_perk_3_gluttony"
         }
     ]

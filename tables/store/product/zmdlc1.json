@@ -1,11 +1,10 @@
 {
     "name": "#zmdlc1",
-    "blackMarketName": "#",
-    "blackMarketDesc": "#",
-    "entitlementNameXHash": "#",
+    "previewImage": "#ui_menu_store_product_b04_dead_of_nights_large",
+    "productImage": "#ui_menu_store_product_b04_dead_of_nights_large",
+    "blackMarketImage": "#t7_store_product_bo4",
     "metadata": "DLC1ZM",
-    "previewImageName": "hash_2e6939d202b26899",
-    "productImageName": "hash_2e6939d202b26899",
-    "blackMarketImageName": "hash_1217b62ca29dad38",
-    "visibility": true
+    "visibility": true,
+    "unka2": true,
+    "unka3": true
 }

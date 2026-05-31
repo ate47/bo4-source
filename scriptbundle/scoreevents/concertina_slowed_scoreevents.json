@@ -1,13 +1,13 @@
 {
-    "hash_d58bd0e9": "#hash_40568818ca44b240",
-    "hash_67b4a761": "#hash_40568818ca44b240",
+    "hash_aea877001f3d9b2:hash_d58bd0e9": "#hash_40568818ca44b240",
+    "hash_1392470036d7f11e:hash_67b4a761": "#hash_40568818ca44b240",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "hash_16abf654": "#hash_40568818ca44b240",
+    "hash_3c9a57250734ff5c:hash_16abf654": "#hash_40568818ca44b240",
     "name": "concertina_slowed_scoreevents",
     "customsettingstype": "status effect",
-    "hash_1b8b6771": "#hash_40568818ca44b240",
-    "hash_170b3630": "#concertina_wire_assist",
-    "hash_6643c0a0": "#hash_40568818ca44b240"
+    "hash_5b80674ef0f7f78b:hash_1b8b6771": "#hash_40568818ca44b240",
+    "assistscoreevent": "#concertina_wire_assist",
+    "hash_7c6bc18dcf98c8b1:hash_6643c0a0": "#hash_40568818ca44b240"
 }

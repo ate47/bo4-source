@@ -51,8 +51,8 @@ function zone_init()
     zm_zonemgr::add_adjacent_zone( "labs_hallway1", "labs_zone3", "lab3_level3", 0 );
     zm_zonemgr::add_adjacent_zone( "labs_zone1", "labs_hallway1", "lab1_level3", 1 );
     zm_zonemgr::add_adjacent_zone( "cage", "cage_upper", #"hash_537cc10c9deca9da", 0 );
-    level.zones[ #"conference_level1" ].var_305d6168 = 4;
-    level.zones[ #"hallway_level1" ].var_305d6168 = 4;
+    level.zones[ #"conference_level1" ].num_spawners = 4;
+    level.zones[ #"hallway_level1" ].num_spawners = 4;
     level thread function_d03a6fa( "conference_level1", "offices_level1", "conf1_offices1" );
     level thread function_d03a6fa( "hallway_level1", "file_room_level1", "hall1_file1" );
     
@@ -106,7 +106,7 @@ function function_8e0b371()
     {
         if ( isalive( self ) )
         {
-            str_location = function_ab7f70b9( self );
+            str_location = get_location_string( self );
             self zm_hud::function_29780fb5( isdefined( str_location ) ? str_location : #"" );
         }
         else
@@ -122,7 +122,7 @@ function function_8e0b371()
 // Params 1
 // Checksum 0xaea5cf36, Offset: 0xa00
 // Size: 0x336
-function function_ab7f70b9( e_player )
+function get_location_string( e_player )
 {
     str_zone = e_player zm_zonemgr::get_player_zone();
     

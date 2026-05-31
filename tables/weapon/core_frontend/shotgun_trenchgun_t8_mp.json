@@ -2,8 +2,8 @@
     "name": "#shotgun_trenchgun_t8_mp",
     "baseWeapon": "#shotgun_trenchgun_t8",
     "displayname": "#weapon/shotgun_trenchgun_t8",
-    "xhash_70": "#shotgun_trenchgun_t8",
-    "streamkey": "#hash_4051cc0fd16863d",
+    "weapon70": "#shotgun_trenchgun_t8",
+    "soundbank": "#shotgun_trenchgun_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -17,21 +17,37 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "MULTIPLAYER",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.1 1",
+            "0.2 0",
+            "1 0"
+        ],
+        [
+            "0 0.9",
+            "0.15 0.8",
+            "0.25 0.4",
+            "0.5 0.1",
+            "1 0.02"
+        ]
+    ],
     "firesounddistant": "#hash_34c98fc26535cfe4",
     "firesound": "#hash_70a040e333bf5cc3",
     "firesoundplayer": "#hash_3a5f49e3145f889e",
@@ -49,7 +65,7 @@
     "weaponCamo": "#hash_7d118934bb4f29bc",
     "cacWeaponXCam": "#hash_670792a8d6ede9d7",
     "cacAttachmentsXCam": "#hash_670792a8d6ede9d7",
-    "weaponIconXCam": "#hash_f5c3c07d99378a6f",
+    "weaponIconXCam": "#ui_cam_icon_shotgun_pump",
     "attachments": [
         "#defaultattachment"
     ],
@@ -57,6 +73,10 @@
         "#hash_54765e7bf07c9cd"
     ],
     "sharedWeaponSounds": "#shotgun",
+    "tracers": [
+        "#hash_d6f045ae9b61e985",
+        "#hash_d49acf5d655c4d42"
+    ],
     "viewmodel": [
         "#wpn_t8_zm_shotgun_trenchgun_view"
     ],
@@ -67,7 +87,7 @@
     "inventoryIconZm": "#t7_icon_weapon_shotgun_pump_pu",
     "image_e90": "#t7_icon_weapon_shotgun_pump_kf",
     "fireRumble": "#shotgun_fire",
-    "rumble_dc8": "#hash_f1fceb6e20f9fbdc",
+    "rumble_dc8": "#shotgun_adsfire",
     "fx_bc8": "#hash_e772b94434b7d921",
     "fx_bd0": "#hash_e779a54434bdd5d3",
     "fx_c80": "#hash_6e32286d3d179753",

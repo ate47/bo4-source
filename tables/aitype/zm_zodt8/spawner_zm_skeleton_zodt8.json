@@ -17,15 +17,18 @@
     "character": [
         "#hash_5b8d1e30fe018f89"
     ],
-    "meleeWeapon": "#hash_479f8de44d618b68",
+    "animMappingTables": [
+        "#zm_castle_zombie.ai_am"
+    ],
+    "meleeWeapon": "#zombie_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
     "footstepTable": "#skeletonfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
     "behaviorTree": "#zm_castle_zombie.ai_bt",
-    "animStateMachine": "#hash_cbd125ac200ec08",
-    "animSelectorTable": "#hash_cbcfb5ac200c4f3",
+    "animStateMachine": "#zm_castle_zombie.ai_asm",
+    "animSelectorTable": "#zm_castle_zombie.ai_ast",
     "traversalExtents": "#default_traversal_extents_zm",
     "aiFxBundle": "#c_54i_grunt_fx_table",
     "ignoresDamageHitLocations": false,

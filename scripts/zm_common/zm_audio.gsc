@@ -460,7 +460,7 @@ function function_dd19aefa( death )
     }
     
     e_speaker = undefined;
-    var_a841b5f1 = array::randomize( zm_vo::function_347f7d34() );
+    var_a841b5f1 = array::randomize( zm_vo::get_valid_players() );
     
     foreach ( e_player in var_a841b5f1 )
     {
@@ -1315,7 +1315,7 @@ function private function_bf1b121a( timeout, n_range, var_618a04 )
 // Size: 0x90, Type: bool
 function function_bca32e49( category, subcategory, force_variant, b_wait_if_busy = 0 )
 {
-    e_player = array::random( zm_vo::function_347f7d34() );
+    e_player = array::random( zm_vo::get_valid_players() );
     
     if ( isdefined( e_player ) )
     {
@@ -2493,7 +2493,7 @@ function function_a3c4af48( str_location )
 // Params 5
 // Checksum 0xeb86eb6e, Offset: 0x6398
 // Size: 0x144
-function function_3442c81a( str_location, var_f9761829, b_repeat = 0, var_57b726a7 = 1, var_22324b12 = 2 )
+function function_3442c81a( str_location, str_music_state, b_repeat = 0, var_57b726a7 = 1, var_22324b12 = 2 )
 {
     if ( !isdefined( level.var_4d771f19 ) )
     {
@@ -2501,12 +2501,12 @@ function function_3442c81a( str_location, var_f9761829, b_repeat = 0, var_57b726
     }
     
     level.var_4d771f19[ str_location ] = spawnstruct();
-    level.var_4d771f19[ str_location ].var_f9761829 = var_f9761829;
+    level.var_4d771f19[ str_location ].str_music_state = str_music_state;
     level.var_4d771f19[ str_location ].b_repeat = b_repeat;
     level.var_4d771f19[ str_location ].var_496a8f95 = 0;
     level.var_4d771f19[ str_location ].b_played = 0;
     level.var_4d771f19[ str_location ].var_57b726a7 = var_57b726a7;
-    musicstate_create( var_f9761829, var_22324b12, var_f9761829 );
+    musicstate_create( str_music_state, var_22324b12, str_music_state );
 }
 
 // Namespace zm_audio/zm_audio
@@ -2581,7 +2581,7 @@ function function_b9d832a0( var_790f33a7 )
     
     var_790f33a7.b_played = 1;
     var_790f33a7.var_496a8f95 = 0;
-    level thread sndmusicsystem_playstate( var_790f33a7.var_f9761829 );
+    level thread sndmusicsystem_playstate( var_790f33a7.str_music_state );
 }
 
 // Namespace zm_audio/zm_audio
@@ -3084,7 +3084,7 @@ function sndannouncerplayvox( type, player, str_sound, var_e08a84d6, b_wait_if_b
                 {
                     if ( !soundexists( str_sound ) )
                     {
-                        var_2dbe34fe = "<dev string:x190>" + "<dev string:x1a0>" + function_9e72a96( str_sound ) + "<dev string:x1b0>";
+                        var_2dbe34fe = "<dev string:x190>" + "<dev string:x1a0>" + hashtostring( str_sound ) + "<dev string:x1b0>";
                         iprintlnbold( var_2dbe34fe );
                         println( var_2dbe34fe );
                     }

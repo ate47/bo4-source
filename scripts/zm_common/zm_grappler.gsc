@@ -97,17 +97,17 @@ function private function_2772f623( id )
 function start_grapple( prone_2_run_roll, e_grapplee, n_type, n_speed = 1800 )
 {
     assert( n_type == 2 );
-    e_source = create_mover( prone_2_run_roll function_f21c3519(), prone_2_run_roll.angles );
-    e_beamend = create_mover( prone_2_run_roll function_f21c3519(), prone_2_run_roll.angles * -1 );
+    e_source = create_mover( prone_2_run_roll grapple_point(), prone_2_run_roll.angles );
+    e_beamend = create_mover( prone_2_run_roll grapple_point(), prone_2_run_roll.angles * -1 );
     thread function_30a5f5c1( e_source, e_beamend );
     
     if ( isdefined( e_beamend ) )
     {
         e_grapplee function_a60cb756( 1, 1 );
         util::wait_network_frame();
-        n_time = function_b9937e84( prone_2_run_roll, e_grapplee, n_speed );
-        e_beamend.origin = prone_2_run_roll function_f21c3519();
-        var_5f04bf66 = e_grapplee function_f21c3519();
+        n_time = grapple_time( prone_2_run_roll, e_grapplee, n_speed );
+        e_beamend.origin = prone_2_run_roll grapple_point();
+        var_5f04bf66 = e_grapplee grapple_point();
         e_beamend playsound( #"zmb_grapple_start" );
         e_beamend moveto( var_5f04bf66, n_time );
         e_beamend waittill( #"movedone" );
@@ -124,7 +124,7 @@ function start_grapple( prone_2_run_roll, e_grapplee, n_type, n_speed = 1800 )
         }
         
         e_grapplee playsound( #"zmb_grapple_grab" );
-        var_b7f19309 = prone_2_run_roll function_f21c3519() - var_7fdf7771;
+        var_b7f19309 = prone_2_run_roll grapple_point() - var_7fdf7771;
         e_beamend moveto( var_b7f19309, n_time );
         e_beamend playsound( #"zmb_grapple_pull" );
         e_beamend waittill( #"movedone" );
@@ -204,9 +204,9 @@ function function_30a5f5c1( e_source, e_target )
 // Params 3, eflags: 0x4
 // Checksum 0x2057f273, Offset: 0x9a0
 // Size: 0x68
-function private function_b9937e84( e_from, e_to, n_speed )
+function private grapple_time( e_from, e_to, n_speed )
 {
-    n_distance = distance( e_from function_f21c3519(), e_to function_f21c3519() );
+    n_distance = distance( e_from grapple_point(), e_to grapple_point() );
     return n_distance / n_speed;
 }
 
@@ -265,7 +265,7 @@ function function_a60cb756( var_b4666218, var_e9f8c8f3 )
 // Params 0
 // Checksum 0xac5e7ae0, Offset: 0xbb0
 // Size: 0x42
-function function_f21c3519()
+function grapple_point()
 {
     if ( isdefined( self.grapple_tag ) )
     {

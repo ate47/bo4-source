@@ -1,0 +1,279 @@
+{
+    "name": "#hash_6e32a63dfb46f8d2",
+    "model": "#p8_ven_hotdog_cart_01_allstates",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "physPreset": "#hash_365d9cdb35f2959c",
+                    "unk28": "tag_base_d0"
+                },
+                {
+                    "unk28": "tag_base_d2"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 8,
+            "subtargetID": 0,
+            "parentDamagePercent": 1,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_31de7e2e577a3237",
+            "unk268": 500,
+            "hideBones": [
+                29,
+                30
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_cooler_d0"
+                },
+                {
+                    "unk28": "tag_cooler_d2"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 8,
+            "subtargetID": 0,
+            "parentDamagePercent": 1,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_31de7d2e577a3084",
+            "unk268": 500,
+            "hideBones": [
+                17,
+                18
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_hotplate_d0"
+                },
+                {
+                    "unk28": "tag_hotplate_d2"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 8,
+            "subtargetID": 0,
+            "parentDamagePercent": 1,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_31de802e577a359d",
+            "unk268": 500,
+            "hideBones": [
+                15,
+                16
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_left_tire_d0"
+                },
+                {
+                    "unk28": "tag_left_tire_d2"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 8,
+            "subtargetID": 0,
+            "parentDamagePercent": 1,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_31de7f2e577a33ea",
+            "unk268": 500,
+            "hideBones": [
+                27,
+                28
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_right_tire_d0"
+                },
+                {
+                    "unk28": "tag_right_tire_d2"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 8,
+            "subtargetID": 0,
+            "parentDamagePercent": 1,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_31de7a2e577a2b6b",
+            "unk268": 500,
+            "hideBones": [
+                25,
+                26
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_napkins_d0"
+                },
+                {
+                    "unk28": "tag_napkins_d2"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 8,
+            "subtargetID": 0,
+            "parentDamagePercent": 1,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_31de792e577a29b8",
+            "unk268": 500,
+            "hideBones": [
+                13,
+                14
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_pretzal_rack_d0"
+                },
+                {
+                    "unk28": "tag_pretzal_rack_d2"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 8,
+            "subtargetID": 0,
+            "parentDamagePercent": 1,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_31de7c2e577a2ed1",
+            "unk268": 500,
+            "hideBones": [
+                11,
+                12
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_umbrella_d0"
+                },
+                {
+                    "unk28": "tag_umbrella_d2"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 8,
+            "subtargetID": 0,
+            "parentDamagePercent": 1,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_31de7b2e577a2d1e",
+            "unk268": 500,
+            "hideBones": [
+                9,
+                10
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_body_d0"
+                },
+                {
+                    "unk28": "tag_body_d2"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_31de762e577a249f",
+            "unk268": 500,
+            "hideBones": [
+                19,
+                20
+            ]
+        }
+    ]
+}

@@ -3,10 +3,10 @@
     "relateditemname": "localized17#weapon/smg_handling_t8",
     "contracttitle": "localized17#hash_1c07c87a45375aaf",
     "name": "loot_contract_party_rock",
-    "hash_69b5a265": "core_frontend_smg_handling_party_rock",
-    "hash_4b258f2c": "image#hash_2f384027de380f64",
+    "hash_572bca0762ce7b9c:hash_69b5a265": "core_frontend_smg_handling_party_rock",
+    "hash_5d63fbb2bf3f4957:hash_4b258f2c": "image#hash_2f384027de380f64",
     "contractdescription": "localized17#hash_7e40f1e9f5f5b22",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_2f384027de380f64",
-    "hash_e08fc162": "localized17#hash_3dab7c3f83b698e0"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_2f384027de380f64",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_3dab7c3f83b698e0"
 }

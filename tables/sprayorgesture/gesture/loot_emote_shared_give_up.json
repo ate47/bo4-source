@@ -1,8 +1,8 @@
 {
     "name": "#loot_emote_shared_give_up",
     "type": "#gesture",
-    "gesture": "#hash_23f854fba7aff1a6",
-    "gesture2": "#hash_18461d2fce932db1",
+    "gesture": "#boast_give_up",
+    "gesture2": "#boast_give_up_fem",
     "bundle": {
         "type": "#gesture",
         "title": "localized18#hash_2e4d3e24fffb77d0",

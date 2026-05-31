@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_jungle2.d3dbsp",
+    "baseName": "mp_jungle2",
+    "mins": "-127140.45 -83845.58 -9712.048",
+    "maxs": "98494.914 109391.23 14345.982",
+    "checksum": 0,
+    "streamerworld": "#hash_125d7113018be074",
+    "lighting": "#maps/mp/mp_jungle2.d3dbsp",
+    "lutMaterial": "#lut_mp_jungle2",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_jungle2",
+        "#img_trim_lut_mp_jungle2",
+        "#img_trim_lut_mp_jungle2",
+        "#img_trim_lut_mp_jungle2"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 2,
+        "cookieArray": "#*cookie_array"
+    }
+}

@@ -3,8 +3,8 @@
     "baseWeapon": "#ar_an94_t8_upgraded",
     "displayname": "#zmweapon/ar_an94_upgraded",
     "xhash_60": "#hash_229d69919d134e9b",
-    "xhash_70": "#ar_an94_t8",
-    "streamkey": "#hash_3d3d039ddc5bd49d",
+    "weapon70": "#ar_an94_t8",
+    "soundbank": "#ar_an94_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -19,21 +19,42 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.0303 0.95",
+            "0.2242 0.5",
+            "0.4 0.1",
+            "0.4992 0.05",
+            "0.7426 0.001",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0605 1",
+            "0.2242 0.7161",
+            "0.375 0.3412",
+            "0.4992 0.0032",
+            "0.7426 0",
+            "1 0"
+        ]
+    ],
     "firesounddistant": "#hash_56369e9a0553981f",
     "sound140": "#hash_7c5499d4b372e5c4",
     "sound150": "#hash_17fb7cd50b8968a5",
@@ -52,9 +73,9 @@
     "sound810": "#hash_5ee962527afebfb1",
     "tunables1": "#ar_an94_t8_upgraded_tunables_zm",
     "weaponCamo": "#hash_a5f086b500e3e02f",
-    "cacWeaponXCam": "#hash_98b0ebea10d5a554",
-    "cacAttachmentsXCam": "#hash_98b0ebea10d5a554",
-    "weaponIconXCam": "#hash_bfdb8ca61bcf31dc",
+    "cacWeaponXCam": "#ui_cam_cac_ar_an94",
+    "cacAttachmentsXCam": "#ui_cam_cac_ar_an94",
+    "weaponIconXCam": "#ui_cam_icon_ar_an94",
     "attachments": [
         "#defaultattachment"
     ],
@@ -62,6 +83,10 @@
         "#hash_f1d80fbb9a2e44ae"
     ],
     "sharedWeaponSounds": "#rifle",
+    "tracers": [
+        "#hash_c930471310f548b8",
+        "#hash_bb61ed67c2a1458f"
+    ],
     "viewmodel": [
         "#wpn_t8_loot_ar_an94_view"
     ],
@@ -85,8 +110,8 @@
     "fx_c88": "#hash_83613e307817774e",
     "fx_c90": "#hash_83613e307817774e",
     "fx_c98": "#hash_83613e307817774e",
-    "normalImpactFX": "#hash_9cafc46b8c735870",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_large_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#bullet_exit"
 }

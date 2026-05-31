@@ -7,15 +7,15 @@
     "value4": "3",
     "type": "gamesettings",
     "label": "localized17#hash_4bf59e78dfb9da30",
-    "hash_5a6dee5a": 0,
+    "hash_3d268f562204a4fb:hash_5a6dee5a": 0,
     "name": "zm_doorstate",
     "displayname": "localized17#hash_c8cbcf5089e3cb5",
     "label1": "localized17#hash_3b41c280ca439dd1",
     "label3": "localized17#hash_7ebc76ab224b7dcb",
     "label2": "localized17#hash_4bf59e78dfb9da30",
-    "hash_54e336e4": 0,
+    "hash_4dd5060aa2f3ff5f:hash_54e336e4": 0,
     "optionscount": 3,
-    "hash_765cfd09": 0,
+    "hash_70853ef08fe1e46d:hash_765cfd09": 0,
     "setting": "zmDoorState",
     "isenableddisabled": 0
 }

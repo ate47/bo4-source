@@ -3,10 +3,10 @@
     "relateditemname": "localized17#weapon/smg_fastfire_t8",
     "contracttitle": "localized17#hash_3824d76b4a721017",
     "name": "loot_contract_deep_voyage",
-    "hash_69b5a265": "core_frontend_smg_fastfire_deep_voyage",
-    "hash_4b258f2c": "image#hash_2127aae7139504a7",
-    "contractdescription": "localized17#hash_7680bf2bc2219eb1",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_631267d72e41ae8e",
-    "hash_e08fc162": "localized17#hash_7d8a86decfd51e90"
+    "hash_572bca0762ce7b9c:hash_69b5a265": "core_frontend_smg_fastfire_deep_voyage",
+    "hash_5d63fbb2bf3f4957:hash_4b258f2c": "image#hash_2127aae7139504a7",
+    "contractdescription": "localized17#menu/mastercraft",
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_631267d72e41ae8e",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_7d8a86decfd51e90"
 }

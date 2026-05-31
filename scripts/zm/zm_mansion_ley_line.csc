@@ -10,15 +10,15 @@
 #using scripts\zm_common\zm_wallbuy;
 #using scripts\zm_common\zm_weapons;
 
-#namespace namespace_a8113e97;
+#namespace mansion_ley_line;
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 0
 // Checksum 0xcca9c678, Offset: 0x250
 // Size: 0x62a
 function init_clientfields()
 {
-    clientfield::register( "allplayers", "" + #"hash_5370f4bc9fc25d13", 8000, 1, "int", &function_bdecc239, 0, 1 );
+    clientfield::register( "allplayers", "" + #"shield_elec_fx", 8000, 1, "int", &function_bdecc239, 0, 1 );
     clientfield::register( "scriptmover", "" + #"ley_lines", 8000, 2, "int", &ley_lines, 0, 0 );
     clientfield::register( "scriptmover", "" + #"power_beam", 8000, 2, "int", &power_beam, 0, 0 );
     clientfield::register( "scriptmover", "" + #"red_ray", 8000, 2, "int", &red_ray, 0, 0 );
@@ -27,8 +27,8 @@ function init_clientfields()
     clientfield::register( "scriptmover", "" + #"stone_glow", 8000, 1, "int", &function_b75c6b4f, 0, 0 );
     clientfield::register( "scriptmover", "" + #"stone_despawn", 8000, 1, "counter", &function_dea9fad1, 0, 0 );
     clientfield::register( "scriptmover", "" + #"stone_soul", 8000, 1, "int", &function_6628d887, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_34c5ab29531f15f0", 8000, 1, "int", &crystal_fx, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_546e7612359187c3", 8000, 1, "counter", &function_a0d4ae11, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"atlas_crystal_fx", 8000, 1, "int", &crystal_fx, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"coil_hit_fx", 8000, 1, "counter", &function_a0d4ae11, 0, 0 );
     clientfield::register( "toplayer", "" + #"mansion_mq_rumble", 8000, 1, "counter", &mansion_mq_rumble, 0, 0 );
     clientfield::register( "world", "" + #"skybox_stream", 8000, 1, "int", &function_bca55d4e, 0, 0 );
     level._effect[ #"red_ray" ] = #"hash_7046110ad3c65161";
@@ -37,12 +37,12 @@ function init_clientfields()
     level._effect[ #"hash_415a43ea0ce519d0" ] = #"hash_6a1ab09280787b72";
     level._effect[ #"hash_52032416326181f0" ] = #"hash_2cd1f480eb43a66e";
     level._effect[ #"hash_4588a89d6156133b" ] = #"hash_547b680a63dd5023";
-    level._effect[ #"hash_250f495cbd75db2a" ] = #"zombie/fx8_doorbuy_death";
+    level._effect[ #"stone_despawn_fx" ] = #"zombie/fx8_doorbuy_death";
     level._effect[ #"hash_52d102bc9f3a4964" ] = #"hash_1e6d673cdbbf3f40";
     level._effect[ #"hash_52d7eebc9f404616" ] = #"hash_1e74733cdbc57252";
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 7
 // Checksum 0x8a8ad572, Offset: 0x888
 // Size: 0x74
@@ -54,7 +54,7 @@ function function_a0d4ae11( localclientnum, oldval, newval, bnewent, binitialsna
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 7
 // Checksum 0xba6d7409, Offset: 0x908
 // Size: 0x64
@@ -66,7 +66,7 @@ function mansion_mq_rumble( localclientnum, oldval, newval, bnewent, binitialsna
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 7
 // Checksum 0xac3f6516, Offset: 0x978
 // Size: 0x1b4
@@ -109,7 +109,7 @@ function crystal_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fiel
     self playrenderoverridebundle( #"hash_591c2c7461c7beed" );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 7
 // Checksum 0x3feca2d, Offset: 0xb38
 // Size: 0xee
@@ -130,7 +130,7 @@ function function_6628d887( localclientnum, oldval, newval, bnewent, binitialsna
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 7
 // Checksum 0xc6980eb4, Offset: 0xc30
 // Size: 0x7c
@@ -138,11 +138,11 @@ function function_dea9fad1( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval )
     {
-        playfx( localclientnum, level._effect[ #"hash_250f495cbd75db2a" ], self.origin );
+        playfx( localclientnum, level._effect[ #"stone_despawn_fx" ], self.origin );
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 7
 // Checksum 0xc07c3eb9, Offset: 0xcb8
 // Size: 0xdc
@@ -160,7 +160,7 @@ function function_b75c6b4f( localclientnum, oldval, newval, bnewent, binitialsna
     self stoprenderoverridebundle( #"hash_7f2b5509bb2ebd3f" );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 7
 // Checksum 0xd80d7592, Offset: 0xda0
 // Size: 0x194
@@ -192,7 +192,7 @@ function red_ray( localclientnum, oldval, newval, bnewent, binitialsnap, fieldna
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 7
 // Checksum 0x43288d90, Offset: 0xf40
 // Size: 0x194
@@ -224,7 +224,7 @@ function green_ray( localclientnum, oldval, newval, bnewent, binitialsnap, field
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 7
 // Checksum 0x5078cd4c, Offset: 0x10e0
 // Size: 0x194
@@ -256,7 +256,7 @@ function blue_ray( localclientnum, oldval, newval, bnewent, binitialsnap, fieldn
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 7
 // Checksum 0x1beca2b6, Offset: 0x1280
 // Size: 0x312
@@ -318,7 +318,7 @@ function ley_lines( localclientnum, oldval, newval, bnewent, binitialsnap, field
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 3
 // Checksum 0x58c5950b, Offset: 0x15a0
 // Size: 0x604
@@ -431,7 +431,7 @@ function function_81f056fe( localclientnum, newval, var_db37a1f6 )
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 7
 // Checksum 0xeb7bac6c, Offset: 0x1bb0
 // Size: 0x84
@@ -446,7 +446,7 @@ function function_bca55d4e( localclientnum, oldval, newval, bnewent, binitialsna
     stopforcestreamingmaterial( "mc/mtl_skybox_zm_mansion_exposed_moon" );
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 7
 // Checksum 0xa8005704, Offset: 0x1c40
 // Size: 0x206
@@ -486,7 +486,7 @@ function power_beam( localclientnum, oldval, newval, bnewent, binitialsnap, fiel
     }
 }
 
-// Namespace namespace_a8113e97/zm_mansion_ley_line
+// Namespace mansion_ley_line/zm_mansion_ley_line
 // Params 7
 // Checksum 0xb6b91e32, Offset: 0x1e50
 // Size: 0x1ec

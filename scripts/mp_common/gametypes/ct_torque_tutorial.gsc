@@ -2228,7 +2228,7 @@ function function_78986232( params )
         var_595e41ee = 150;
         event = #"ekia";
         eventindex = level.scoreinfo[ event ][ #"row" ];
-        eattacker globallogic_score::giveplayermomentumnotification( var_595e41ee, #"hash_480234a872bd64ac", undefined, 0, weapon, 0, eventindex, event, undefined );
+        eattacker globallogic_score::giveplayermomentumnotification( var_595e41ee, #"score/blank", undefined, 0, weapon, 0, eventindex, event, undefined );
         level.var_d1f07c87++;
         
         if ( !eattacker ct_utils::function_a7540094() )
@@ -2990,7 +2990,7 @@ function function_400149db()
 // Params 3
 // Checksum 0x896c214d, Offset: 0xc010
 // Size: 0xac
-function function_6ad22c31( var_9a9deac6, var_227aa02e, str_objective = #"hash_5fadc5cf57233ef4" )
+function function_6ad22c31( var_9a9deac6, a_str_vo_obj, str_objective = #"hash_5fadc5cf57233ef4" )
 {
     level endon( #"combattraining_logic_finished" );
     self ct_utils::function_1bb93418();
@@ -3001,7 +3001,7 @@ function function_6ad22c31( var_9a9deac6, var_227aa02e, str_objective = #"hash_5
         self ct_vo::function_831e0584( var_9a9deac6 );
     }
     
-    self ct_utils::function_61c3d59c( str_objective, var_227aa02e );
+    self ct_utils::function_61c3d59c( str_objective, a_str_vo_obj );
 }
 
 // Namespace ct_torque_tutorial/ct_torque_tutorial

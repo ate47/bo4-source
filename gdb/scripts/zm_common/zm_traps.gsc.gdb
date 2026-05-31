@@ -4,7 +4,7 @@ CHECKSUM 0x4268f29f
 ######################################################
 ####################  DEV STRINGS  ###################
 ######################################################
-# zm_traps::register_trap_basic_info@24 zm_traps::register_trap_damage@24 zm_traps::function_60d9e800@24
+# zm_traps::register_trap_basic_info@24 zm_traps::register_trap_damage@24 zm_traps::register_trap_lights@24
 STRING "<dev string:x38>" 0x3db4 0x3efc 0x3f94
 # zm_traps::register_trap_basic_info@44
 STRING "<dev string:x78>" 0x3dd4
@@ -23,5 +23,5 @@ DEVBLOCK 0x3dca
 DEVBLOCK 0x3dea
 # zm_traps::register_trap_damage@1a
 DEVBLOCK 0x3ef2
-# zm_traps::function_60d9e800@1a
+# zm_traps::register_trap_lights@1a
 DEVBLOCK 0x3f8a

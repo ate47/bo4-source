@@ -41,9 +41,9 @@ function __init__()
     
     if ( isdefined( level.a_zombie_blood_entities ) )
     {
-        foreach ( var_8bd48f90 in level.a_zombie_blood_entities )
+        foreach ( e_zombie_blood_entity in level.a_zombie_blood_entities )
         {
-            var_8bd48f90 thread make_zombie_blood_entity();
+            e_zombie_blood_entity thread make_zombie_blood_entity();
         }
     }
     

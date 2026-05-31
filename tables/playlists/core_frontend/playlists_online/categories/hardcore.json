@@ -1,0 +1,4180 @@
+{
+    "name": "#hardcore",
+    "description": "#menu/hardcore",
+    "lobbyMainMode": "MULTIPLAYER",
+    "hidden": false,
+    "environmentMask": 7,
+    "entries": [
+        {
+            "name": "#hash_7bf5d744775590f7",
+            "description": "#hash_601b338c991b4712",
+            "unique_name": "#hash_ea48476a791ce42",
+            "visibleProfileVar": "#hash_5e563e6544ff9705",
+            "lobbyMainMode": "MULTIPLAYER",
+            "image": "#ui_icon_gamemode_freeforall_large",
+            "imageBackground": "#hash_e23442604a67a1d9",
+            "imageBackgroundFocus": "#hash_9257dba7154c2f46",
+            "imageTileSideInfo": "#hash_ea7ef4e239a68ece",
+            "id": 101,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 1,
+            "maxLocalPlayers": 1,
+            "maxPlayers": 8,
+            "minPlayers": 6,
+            "minPlayersToCreate": 6,
+            "searchType": 1,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 256,
+            "unke0": [
+                {
+                    "name": "5",
+                    "unk0": 7,
+                    "unk4": 1,
+                    "unk8": 2
+                },
+                {
+                    "name": "5",
+                    "unk0": 7,
+                    "unk4": 1,
+                    "unk8": 4
+                }
+            ],
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalemp",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hardcoremode",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hardcoremode",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#friendlyfiretype",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#friendlyfiretype",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#playerhealthregentime",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#playerhealthregentime",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#playermaxhealth",
+                    "value": "30",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#playermaxhealth",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#allowkillcam",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#allowkillcam",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#allowbattlechatter",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#allowbattlechatter",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#teamkillpunishcount",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#teamkillpunishcount",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#teamkillpointloss",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#teamkillpointloss",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#inactivitykick",
+                    "value": "60",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#inactivitykick",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_4ca06c610b5d53bd",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_4ca06c610b5d53bd",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#g_hitdet_logging",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#cg_hitdet_client_marker",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_68e3f54e05f57d85",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_68e3f54e05f57d85",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_51e989796c38cd87",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_51e989796c38cd87",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_5c918cbf75e16116",
+                    "value": "5",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_5c918cbf75e16116",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_ecf2124e9108fc4",
+                    "value": "15",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_ecf2124e9108fc4",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#specialistfriendlyfire_allies_1",
+                    "value": "4",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#specialistfriendlyfire_allies_1",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_5a03a381725cacd1",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#mp_seaside_alt",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_frenetic",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_silo",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_gridlock",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_urban",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_icebreaker",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_morocco",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_militia",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2_alt",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_mountain2",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_slums2",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_nuketown_4",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_seaside",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore_alt",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_grind",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda_alt",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_madagascar",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_elevation",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_station",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_casino",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_geothermal",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_russianbase",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_embassy",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_austria",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_zombie_museum",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cairo",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cosmodrome",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_maldives",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2_alt",
+                    "gametype": "#hash_3a29fa301c31c305",
+                    "weight": 2,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_60d009441facacaf",
+            "description": "#hash_688ff98c55e23366",
+            "unique_name": "#hash_51999e17d4138a96",
+            "visibleProfileVar": "#hash_5e563e6544ff9705",
+            "lobbyMainMode": "MULTIPLAYER",
+            "image": "#ui_icon_gamemode_teamdeathmatch_large",
+            "imageBackground": "#hash_860864d03ee636de",
+            "imageBackgroundFocus": "#hash_cecd9269aa90c57e",
+            "imageTileSideInfo": "#hash_860864d03ee636de",
+            "id": 102,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 6,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 12,
+            "minPlayers": 10,
+            "minPlayersToCreate": 10,
+            "searchType": 1,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 256,
+            "unke0": [
+                {
+                    "name": "8",
+                    "unk0": 7,
+                    "unk4": 1,
+                    "unk8": 2
+                },
+                {
+                    "name": "8",
+                    "unk0": 7,
+                    "unk4": 1,
+                    "unk8": 4
+                }
+            ],
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalemp",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hardcoremode",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hardcoremode",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#friendlyfiretype",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#friendlyfiretype",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#playerhealthregentime",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#playerhealthregentime",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#playermaxhealth",
+                    "value": "30",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#playermaxhealth",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#allowkillcam",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#allowkillcam",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#allowbattlechatter",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#allowbattlechatter",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#teamkillpunishcount",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#teamkillpunishcount",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#teamkillpointloss",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#teamkillpointloss",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#inactivitykick",
+                    "value": "60",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#inactivitykick",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_4ca06c610b5d53bd",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_4ca06c610b5d53bd",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#g_hitdet_logging",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#cg_hitdet_client_marker",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_68e3f54e05f57d85",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_68e3f54e05f57d85",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_51e989796c38cd87",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_51e989796c38cd87",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_5c918cbf75e16116",
+                    "value": "5",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_5c918cbf75e16116",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_ecf2124e9108fc4",
+                    "value": "15",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_ecf2124e9108fc4",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#specialistfriendlyfire_allies_1",
+                    "value": "4",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#specialistfriendlyfire_allies_1",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_5a03a381725cacd1",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#mp_seaside_alt",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_frenetic",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_silo",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_gridlock",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_urban",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_icebreaker",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_morocco",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_militia",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2_alt",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_mountain2",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_slums2",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_nuketown_4",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_seaside",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore_alt",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_grind",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda_alt",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_madagascar",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_elevation",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_station",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_casino",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_geothermal",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_russianbase",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_embassy",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_austria",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_zombie_museum",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cairo",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cosmodrome",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_maldives",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2_alt",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 2,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#entry_mp_hc_conf",
+            "description": "#hash_75c1ad04f41f7681",
+            "unique_name": "#hash_706b20585816787b",
+            "visibleProfileVar": "#hash_5e563e6544ff9705",
+            "lobbyMainMode": "MULTIPLAYER",
+            "image": "#ui_icon_gamemode_killconfirmed_large",
+            "imageBackground": "#ui_icon_director_mp_playlist_killconfirmed",
+            "imageBackgroundFocus": "#ui_icon_director_mp_playlist_killconfirmed_focus",
+            "imageTileSideInfo": "#hash_ce49ae562588ad30",
+            "id": 103,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 6,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 12,
+            "minPlayers": 10,
+            "minPlayersToCreate": 10,
+            "searchType": 1,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 256,
+            "unke0": [
+                {
+                    "name": "8",
+                    "unk0": 7,
+                    "unk4": 1,
+                    "unk8": 2
+                },
+                {
+                    "name": "8",
+                    "unk0": 7,
+                    "unk4": 1,
+                    "unk8": 4
+                }
+            ],
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalemp",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hardcoremode",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hardcoremode",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#friendlyfiretype",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#friendlyfiretype",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#playerhealthregentime",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#playerhealthregentime",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#playermaxhealth",
+                    "value": "30",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#playermaxhealth",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#allowkillcam",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#allowkillcam",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#allowbattlechatter",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#allowbattlechatter",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#teamkillpunishcount",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#teamkillpunishcount",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#teamkillpointloss",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#teamkillpointloss",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#inactivitykick",
+                    "value": "60",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#inactivitykick",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_4ca06c610b5d53bd",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_4ca06c610b5d53bd",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#g_hitdet_logging",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#cg_hitdet_client_marker",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_68e3f54e05f57d85",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_68e3f54e05f57d85",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_51e989796c38cd87",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_51e989796c38cd87",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_5c918cbf75e16116",
+                    "value": "5",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_5c918cbf75e16116",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_ecf2124e9108fc4",
+                    "value": "15",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_ecf2124e9108fc4",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#specialistfriendlyfire_allies_1",
+                    "value": "4",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#specialistfriendlyfire_allies_1",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_5a03a381725cacd1",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#mp_seaside_alt",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_frenetic",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_silo",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_gridlock",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_urban",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_icebreaker",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_morocco",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_militia",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2_alt",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_mountain2",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_slums2",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_nuketown_4",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_seaside",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore_alt",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_grind",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda_alt",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_madagascar",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_elevation",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_station",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_casino",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_geothermal",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_russianbase",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_embassy",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_austria",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_zombie_museum",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cairo",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cosmodrome",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_maldives",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2_alt",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 2,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#entry_mp_hc_dom",
+            "description": "#hash_7193898ca30b03c5",
+            "unique_name": "#hash_4af5683be7fbe48f",
+            "visibleProfileVar": "#hash_5e563e6544ff9705",
+            "lobbyMainMode": "MULTIPLAYER",
+            "image": "#ui_icon_gamemode_domination_large",
+            "imageBackground": "#hash_f456c06054e82282",
+            "imageBackgroundFocus": "#hash_d73d1f46655c8689",
+            "imageTileSideInfo": "#hash_f88709102b8ce8d1",
+            "id": 104,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 5,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 10,
+            "minPlayers": 8,
+            "minPlayersToCreate": 8,
+            "searchType": 1,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 256,
+            "unke0": [
+                {
+                    "name": "6",
+                    "unk0": 7,
+                    "unk4": 1,
+                    "unk8": 2
+                },
+                {
+                    "name": "6",
+                    "unk0": 7,
+                    "unk4": 1,
+                    "unk8": 4
+                }
+            ],
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalemp",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hardcoremode",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hardcoremode",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#friendlyfiretype",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#friendlyfiretype",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#playerhealthregentime",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#playerhealthregentime",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#playermaxhealth",
+                    "value": "30",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#playermaxhealth",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#allowkillcam",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#allowkillcam",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#allowbattlechatter",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#allowbattlechatter",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#teamkillpunishcount",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#teamkillpunishcount",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#teamkillpointloss",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#teamkillpointloss",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#inactivitykick",
+                    "value": "60",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#inactivitykick",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_4ca06c610b5d53bd",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_4ca06c610b5d53bd",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#g_hitdet_logging",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#cg_hitdet_client_marker",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_68e3f54e05f57d85",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_68e3f54e05f57d85",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_51e989796c38cd87",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_51e989796c38cd87",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_5c918cbf75e16116",
+                    "value": "5",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_5c918cbf75e16116",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_ecf2124e9108fc4",
+                    "value": "15",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_ecf2124e9108fc4",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#specialistfriendlyfire_allies_1",
+                    "value": "4",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#specialistfriendlyfire_allies_1",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_5a03a381725cacd1",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#mp_seaside_alt",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_frenetic",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_silo",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_gridlock",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_urban",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_icebreaker",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_morocco",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_militia",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2_alt",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_mountain2",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_slums2",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_nuketown_4",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_seaside",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore_alt",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_grind",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda_alt",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_madagascar",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_elevation",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_station",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_casino",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_geothermal",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_russianbase",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_embassy",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_austria",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_zombie_museum",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cairo",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cosmodrome",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_maldives",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2_alt",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 2,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_778b1fd620d5efb7",
+            "description": "#hash_56b1f294099f0c80",
+            "unique_name": "#hash_31394aed34e9b408",
+            "visibleProfileVar": "#hash_5e563e6544ff9705",
+            "lobbyMainMode": "MULTIPLAYER",
+            "image": "#ui_icon_gamemode_searchanddestroy_large",
+            "imageBackground": "#hash_80f4846012c38865",
+            "imageBackgroundFocus": "#hash_e232b65e3fb51732",
+            "imageTileSideInfo": "#hash_bb06825978313082",
+            "id": 105,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 5,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 10,
+            "minPlayers": 8,
+            "minPlayersToCreate": 8,
+            "searchType": 1,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 256,
+            "unke0": [
+                {
+                    "name": "6",
+                    "unk0": 7,
+                    "unk4": 1,
+                    "unk8": 2
+                },
+                {
+                    "name": "6",
+                    "unk0": 7,
+                    "unk4": 1,
+                    "unk8": 4
+                }
+            ],
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalemp",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hardcoremode",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hardcoremode",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#friendlyfiretype",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#friendlyfiretype",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#playerhealthregentime",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#playerhealthregentime",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#playermaxhealth",
+                    "value": "30",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#playermaxhealth",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#allowkillcam",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#allowkillcam",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#allowbattlechatter",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#allowbattlechatter",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#teamkillpunishcount",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#teamkillpunishcount",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#teamkillpointloss",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#teamkillpointloss",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#inactivitykick",
+                    "value": "60",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#inactivitykick",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_4ca06c610b5d53bd",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_4ca06c610b5d53bd",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#g_hitdet_logging",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#cg_hitdet_client_marker",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_68e3f54e05f57d85",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_68e3f54e05f57d85",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_51e989796c38cd87",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_51e989796c38cd87",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_5c918cbf75e16116",
+                    "value": "5",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_5c918cbf75e16116",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_ecf2124e9108fc4",
+                    "value": "15",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_ecf2124e9108fc4",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#specialistfriendlyfire_allies_1",
+                    "value": "4",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#specialistfriendlyfire_allies_1",
+                            "unk10": 0
+                        }
+                    ]
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#mp_seaside_alt",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_frenetic",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_silo",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_gridlock",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_urban",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_icebreaker",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_morocco",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_militia",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2_alt",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_mountain2",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_slums2",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_nuketown_4",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_seaside",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore_alt",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_grind",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda_alt",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_madagascar",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_elevation",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_station",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_casino",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_geothermal",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_russianbase",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_embassy",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_austria",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_zombie_museum",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cairo",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cosmodrome",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_maldives",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2_alt",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 2,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#entry_mp_hc_control",
+            "description": "#hash_5f23492c97be3430",
+            "unique_name": "#hash_7f9df896b36fee98",
+            "visibleProfileVar": "#hash_5e563e6544ff9705",
+            "lobbyMainMode": "MULTIPLAYER",
+            "image": "#ui_icon_gamemode_infiltration",
+            "imageBackground": "#hash_93597b8a8c3107fb",
+            "imageBackgroundFocus": "#hash_df7ff423cbabd1b4",
+            "imageTileSideInfo": "#hash_903c2b38be2a46a8",
+            "id": 106,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 5,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 10,
+            "minPlayers": 8,
+            "minPlayersToCreate": 8,
+            "searchType": 1,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 256,
+            "unke0": [
+                {
+                    "name": "6",
+                    "unk0": 7,
+                    "unk4": 1,
+                    "unk8": 2
+                },
+                {
+                    "name": "6",
+                    "unk0": 7,
+                    "unk4": 1,
+                    "unk8": 4
+                }
+            ],
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalemp",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hardcoremode",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hardcoremode",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#friendlyfiretype",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#friendlyfiretype",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#playerhealthregentime",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#playerhealthregentime",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#playermaxhealth",
+                    "value": "30",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#playermaxhealth",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#allowkillcam",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#allowkillcam",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#allowbattlechatter",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#allowbattlechatter",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#teamkillpunishcount",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#teamkillpunishcount",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#teamkillpointloss",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#teamkillpointloss",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#inactivitykick",
+                    "value": "60",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#inactivitykick",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_4ca06c610b5d53bd",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_4ca06c610b5d53bd",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#g_hitdet_logging",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#cg_hitdet_client_marker",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_68e3f54e05f57d85",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_68e3f54e05f57d85",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_51e989796c38cd87",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_51e989796c38cd87",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_5c918cbf75e16116",
+                    "value": "5",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_5c918cbf75e16116",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_ecf2124e9108fc4",
+                    "value": "15",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_ecf2124e9108fc4",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#specialistfriendlyfire_allies_1",
+                    "value": "4",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#specialistfriendlyfire_allies_1",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_5a03a381725cacd1",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#mp_seaside_alt",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_frenetic",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_silo",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_gridlock",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_urban",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_icebreaker",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_morocco",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_militia",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2_alt",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_mountain2",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_slums2",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_nuketown_4",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_seaside",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore_alt",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_grind",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda_alt",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_madagascar",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_elevation",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_station",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_casino",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_geothermal",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_russianbase",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_embassy",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_austria",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_zombie_museum",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cairo",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cosmodrome",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_maldives",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2_alt",
+                    "gametype": "#hash_1d83e594534dc717",
+                    "weight": 2,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_394d872f2421a5cf",
+            "description": "#hash_6fdd75e4c28ee3b3",
+            "unique_name": "#hash_62c1b320aa7333a5",
+            "visibleProfileVar": "#hash_5e563e6544ff9705",
+            "lobbyMainMode": "MULTIPLAYER",
+            "image": "#ui_icon_gamemode_moshpit",
+            "imageBackground": "#hash_8d6ecff7d02f1d29",
+            "imageBackgroundFocus": "#hash_a77fcdb93d69bef6",
+            "imageTileSideInfo": "#hash_860864d03ee636de",
+            "id": 107,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 6,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 12,
+            "minPlayers": 8,
+            "minPlayersToCreate": 8,
+            "searchType": 1,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 9001,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 1536,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalemp",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#g_hitdet_logging",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#cg_hitdet_client_marker",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_5a03a381725cacd1",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_68e3f54e05f57d85",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_68e3f54e05f57d85",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_51e989796c38cd87",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_51e989796c38cd87",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_5c918cbf75e16116",
+                    "value": "5",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_5c918cbf75e16116",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_ecf2124e9108fc4",
+                    "value": "15",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_ecf2124e9108fc4",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#specialistfriendlyfire_allies_1",
+                    "value": "4",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#specialistfriendlyfire_allies_1",
+                            "unk10": 0
+                        }
+                    ]
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#mp_seaside_alt",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_frenetic",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_silo",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_gridlock",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_urban",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_icebreaker",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_morocco",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_militia",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2_alt",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_mountain2",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_slums2",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_nuketown_4",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_seaside",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore_alt",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_grind",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda_alt",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_seaside_alt",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_frenetic",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_silo",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_gridlock",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_urban",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_icebreaker",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_morocco",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_militia",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2_alt",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_mountain2",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_slums2",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_nuketown_4",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_seaside",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore_alt",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_grind",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda_alt",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_madagascar",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_elevation",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_station",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_casino",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_geothermal",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_russianbase",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_embassy",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_austria",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_zombie_museum",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cairo",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_madagascar",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_elevation",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_station",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_casino",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_geothermal",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_russianbase",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_embassy",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_austria",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_zombie_museum",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cairo",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cosmodrome",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_maldives",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cosmodrome",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_maldives",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2_alt",
+                    "gametype": "#hash_30667fbde58f8415",
+                    "weight": 2,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2_alt",
+                    "gametype": "#hash_7829b53c9f01ac9a",
+                    "weight": 2,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_3747ad8f7e609071",
+            "description": "#hash_6b970a5de056352d",
+            "unique_name": "#hash_6b2033815e5b8397",
+            "visibleProfileVar": "#hash_5e563e6544ff9705",
+            "lobbyMainMode": "MULTIPLAYER",
+            "image": "#ui_icon_gamemode_moshpit",
+            "imageBackground": "#hash_8d6ecff7d02f1d29",
+            "imageBackgroundFocus": "#hash_a77fcdb93d69bef6",
+            "imageTileSideInfo": "#hash_860864d03ee636de",
+            "id": 108,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 5,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 10,
+            "minPlayers": 6,
+            "minPlayersToCreate": 6,
+            "searchType": 1,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 9001,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 1536,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalemp",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#g_hitdet_logging",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#cg_hitdet_client_marker",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_5a03a381725cacd1",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_68e3f54e05f57d85",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_68e3f54e05f57d85",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_51e989796c38cd87",
+                    "value": "3",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_51e989796c38cd87",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_5c918cbf75e16116",
+                    "value": "5",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_5c918cbf75e16116",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#hash_ecf2124e9108fc4",
+                    "value": "15",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#hash_ecf2124e9108fc4",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#specialistfriendlyfire_allies_1",
+                    "value": "4",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#specialistfriendlyfire_allies_1",
+                            "unk10": 0
+                        }
+                    ]
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#mp_seaside_alt",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_frenetic",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_silo",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_gridlock",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_urban",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_icebreaker",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_morocco",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_militia",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2_alt",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_mountain2",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_slums2",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_nuketown_4",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_seaside",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore_alt",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_grind",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda_alt",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_seaside_alt",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_frenetic",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_silo",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_gridlock",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_urban",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_icebreaker",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_morocco",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_militia",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2_alt",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_mountain2",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_slums2",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_nuketown_4",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_seaside",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_firingrange2",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_offshore_alt",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_grind",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_hacienda_alt",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_madagascar",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_elevation",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_station",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_casino",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_geothermal",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_russianbase",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_embassy",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_austria",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_zombie_museum",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cairo",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_madagascar",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_elevation",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_station",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_casino",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_geothermal",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_russianbase",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_embassy",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_austria",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_zombie_museum",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cairo",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 3,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cosmodrome",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_maldives",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_cosmodrome",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_maldives",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 5,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2_alt",
+                    "gametype": "#hash_ca607e6dced8bf5",
+                    "weight": 2,
+                    "isFree": false
+                },
+                {
+                    "map": "#mp_jungle2_alt",
+                    "gametype": "#hash_53a99d329a47e9c4",
+                    "weight": 2,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        }
+    ]
+}

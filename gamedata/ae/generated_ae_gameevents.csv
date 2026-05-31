@@ -1,4 +1,4 @@
-1,#hash_68238261fe17bb75,0,#,3,0,u9?0
+1,#login_event,0,#,3,0,u9?0
 3,#mp_addxp,1,#hash_3167c7050d50cb08,3,1,u9?0
 5,#zm_addxp,1,#hash_18b261700bb73710,3,0,u9?0
 6,#zm_timeplayed,1,#,3,0,u9?0
@@ -6,13 +6,13 @@
 12,#hash_74ccf1507183e99f,0,#hash_1195869d5779bcba,3,0,u9?0
 13,#zm_gauntlet_reward,0,#hash_127d36f8f508810b,3,0,u9?0
 14,#tier_skip,1,#hash_704418ee3775ee79,3,0,u9?0
-15,#hash_b9d992688034e59,0,#,3,0,u9?0
+15,#trial_login,0,#,3,0,u9?0
 16,#hash_5a26ff83b4fe7c97,0,#hash_5a26ff83b4fe7c97,3,1,u9?0
 17,#hash_1f93e0248ebe0e15,0,#hash_1f93e0248ebe0e15,3,1,u9?0
 18,#hash_7c81ccc32581870e,0,#hash_d7eb7447ebcf249,3,1,u9?0
 19,#hash_499fb9199cdc0a5e,0,#hash_499fb9199cdc0a5e,3,1,u9?0
 20,#hash_80d11bc20ff619e,0,#hash_80d11bc20ff619e,3,0,u9?0
-21,#hash_cf6c99aecf79c4f,0,#hash_cf6c99aecf79c4f,3,0,u9?0
+21,#pin_contract,0,#pin_contract,3,0,u9?0
 22,#hash_243e425916855df3,0,#community_galil_achievement,3,1,u9?0
 23,#hash_85b4e472dba4daa,0,#hash_85b4e472dba4daa,3,0,u9?0
 10001,#hash_317a8b8df3aa8838,1,#hash_317a8b8df3aa8838,3,1,u9?0
@@ -51,7 +51,7 @@
 10034,#contract_mp_lightning_strike,1,#contract_mp_lightning_strike,3,1,u9?0
 10035,#contract_mp_hellstorm_kills,1,#contract_mp_hellstorm_kills,3,1,u9?0
 10036,#contract_mp_mantis_kills,1,#contract_mp_mantis_kills,3,1,u9?0
-10037,#hash_45b74ebf1ab2fd47,1,#hash_45b74ebf1ab2fd47,3,1,u9?0
+10037,#contract_mp_collateral,1,#contract_mp_collateral,3,1,u9?0
 10038,#hash_ca75e54eb5e5ef8,1,#hash_ca75e54eb5e5ef8,3,1,u9?0
 10039,#contract_mp_merciless,1,#contract_mp_merciless,3,1,u9?0
 10040,#contract_mp_objective_capture,1,#contract_mp_objective_capture,3,1,u9?0

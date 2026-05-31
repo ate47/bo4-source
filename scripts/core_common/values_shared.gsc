@@ -589,7 +589,7 @@ function private set_ignore_health_regen_delay( b_value = 1 )
         
         if ( b_assert )
         {
-            assert( b_match, "<dev string:xc7>" + function_9e72a96( str_name ) + "<dev string:xdc>" + current_value + "<dev string:xe5>" + value + "<dev string:xf9>" );
+            assert( b_match, "<dev string:xc7>" + hashtostring( str_name ) + "<dev string:xdc>" + current_value + "<dev string:xe5>" + value + "<dev string:xf9>" );
         }
         
         return b_match;
@@ -689,12 +689,12 @@ function private set_ignore_health_regen_delay( b_value = 1 )
         
         if ( ishash( str_name ) )
         {
-            str_name = function_9e72a96( str_name );
+            str_name = hashtostring( str_name );
         }
         
         if ( ishash( str_id ) )
         {
-            str_id = function_9e72a96( str_id );
+            str_id = hashtostring( str_id );
         }
         
         str_value = "<dev string:x127>";

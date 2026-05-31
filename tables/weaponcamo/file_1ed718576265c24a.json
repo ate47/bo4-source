@@ -1,0 +1,1337 @@
+{
+    "name": "#hash_1ed718576265c24a",
+    "camoMaterials": [
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_wpn_t8_wz_water_balloon"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_3feffb4941ceb158",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_wpn_t8_wz_water_balloon"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_1501bef80dbd31e9",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_wpn_t8_wz_water_balloon"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_20c35bfd7f36a7a8",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_wpn_t8_wz_water_balloon"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_6cecc98aaed2ca75",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_wpn_t8_wz_water_balloon"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_42424d3e5375e5ff",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_wpn_t8_wz_water_balloon"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_5b65600bf2b948ab",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        },
+        {
+            "materials": []
+        }
+    ]
+}

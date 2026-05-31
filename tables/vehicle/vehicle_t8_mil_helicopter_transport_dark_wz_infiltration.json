@@ -1,0 +1,96 @@
+{
+    "name": "#vehicle_t8_mil_helicopter_transport_dark_wz_infiltration",
+    "type": "helicopter",
+    "cameraTag": "tag_body",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "exhaustFx": "#hash_8bde9396a806f8d4",
+    "exhaustFxTag1": "tag_body",
+    "deathFxTag": "tag_deathfx",
+    "lightFx": [
+        "#hash_bd70aa7090b628a2"
+    ],
+    "lightFxTag": [
+        "tag_body"
+    ],
+    "unk11f4": [
+        "tag_tail_rotor",
+        "tag_main_rotor"
+    ],
+    "targetTags": [
+        "tag_driver_camera"
+    ],
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#hash_edda1db9f151043",
+    "deathModel": "#hash_edda1db9f151043",
+    "soundDef": "#hash_8e1609607098dd6d",
+    "compassIconMaterial": "#t8_hud_waypoints_drone_hunter_scaled_down",
+    "tacticalModeIcon": "#hash_7b90e5f39b4f6008",
+    "steerAxisName": "AXIS_LSTICK",
+    "unk1608": "BUTTON_RTRIG",
+    "unk1618": "BUTTON_LTRIG",
+    "unk1648": "BUTTON_B",
+    "bundle": {
+        "huds": [
+            {
+                "bindings": [
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#menu/gas",
+                        "buttondirection": "left",
+                        "prompt": "+movestick"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_5145090d78d3a9f6",
+                        "buttondirection": "left",
+                        "prompt": "+switchseat"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_2577b757c1ca9678",
+                        "buttondirection": "left",
+                        "prompt": "+vehiclemoveup"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_29f6a908f9b269ad",
+                        "buttondirection": "left",
+                        "prompt": "+vehiclemovedown"
+                    }
+                ],
+                "widgets": [
+                    {
+                        "hash_303b76d86d727423:hash_513059ad": 0,
+                        "widgettype": 1
+                    },
+                    {
+                        "hash_303b76d86d727423:hash_513059ad": 0,
+                        "widgettype": 10
+                    },
+                    {
+                        "hash_303b76d86d727423:hash_513059ad": 0,
+                        "widgettype": 14
+                    }
+                ],
+                "hash_16b4c5c47fcf7794:hash_56985ec1": 0,
+                "hideweaponinfo": 0,
+                "hash_3a63348c09d91b8d:hash_24c083a4": 0,
+                "vehiclehud": "VehicleHUD_GroundVehicle",
+                "tintcolor": "1 1 1 1",
+                "hudcondition": "IsAttackMode"
+            }
+        ],
+        "healthpoolsize": 3000,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 1
+    }
+}

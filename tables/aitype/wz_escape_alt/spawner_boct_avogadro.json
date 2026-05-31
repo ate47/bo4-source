@@ -12,21 +12,24 @@
         "#none",
         "#none"
     ],
-    "compassIcon": "#hash_3030e82a0acd7277",
+    "compassIcon": "#icon_minimap_player_enemy_firing",
     "typeSuffix": "_zombie",
     "spawnerType": "zombie",
     "character": [
-        "#hash_54a5cc01102e5520"
+        "#c_t8_c_zom_avagadro"
     ],
-    "meleeWeapon": "#hash_c7a982e44d69cd3c",
+    "animMappingTables": [
+        "#hash_6f36f6868342e151"
+    ],
+    "meleeWeapon": "#zombie_ai_defaultmelee_wz",
     "aimTable": "#soldier_aim",
     "footstepTable": "#zombfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",
-    "behaviorTree": "#wz_avogadro.ai_bt",
+    "behaviorTree": "#hash_6f32ff86833f07c5",
     "animStateMachine": "#hash_3d6806910ac16fc6",
-    "animSelectorTable": "#wz_avogadro.ai_ast",
+    "animSelectorTable": "#hash_3d681f910ac19a41",
     "traversalExtents": "#default_traversal_extents_zm",
     "aiFxBundle": "#c_54i_grunt_fx_table",
     "ignoresDamageHitLocations": false,

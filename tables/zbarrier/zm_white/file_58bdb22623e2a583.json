@@ -1,0 +1,29 @@
+{
+    "name": "#hash_58bdb22623e2a583",
+    "delayBetweenRepSoundsDuration": 0,
+    "earthquakeOnRepair": 0,
+    "earthquakeMinScale": 0.3,
+    "earthquakeMaxScale": 0.4,
+    "earthquakeMinDuration": 0.2,
+    "earthquakeMaxDuration": 0.4,
+    "earthquakeRadius": 150,
+    "numBoardsInBarrier": 1,
+    "autoHideOpenPieces": 1,
+    "taunts": 0,
+    "reachThroughAttacks": 0,
+    "numAttackSlots": 3,
+    "attackSpotHorzOffset": 0,
+    "boards": [
+        {
+            "boardModel": "#p8_fxanim_zm_white_debris_buy_02",
+            "tearAnim": "#hash_5d1ee5933dd3c08b",
+            "boardAnim": "#hash_5133226535259f54",
+            "staticAnim": "#hash_5133226535259f54",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        }
+    ]
+}

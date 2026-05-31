@@ -1,14 +1,14 @@
 {
-    "hash_d58bd0e9": "#annihilator_multikill_2",
-    "hash_67b4a761": "#annihilator_multikill_2",
-    "hash_2ecceeab": "#annihilator_kill",
+    "hash_aea877001f3d9b2:hash_d58bd0e9": "#annihilator_multikill_2",
+    "hash_1392470036d7f11e:hash_67b4a761": "#annihilator_multikill_2",
+    "killscoreevent": "#annihilator_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "hash_16abf654": "#annihilator_multikill_2",
+    "hash_3c9a57250734ff5c:hash_16abf654": "#annihilator_multikill_2",
     "name": "hero_annihilator_scoreevents",
     "customsettingstype": "ability",
-    "hash_1b8b6771": "#annihilator_multikill_2",
-    "hash_3143c814": "#annihilator_shutdown",
-    "hash_6643c0a0": "#annihilator_multikill_2"
+    "hash_5b80674ef0f7f78b:hash_1b8b6771": "#annihilator_multikill_2",
+    "destroyedscoreevent": "#annihilator_shutdown",
+    "hash_7c6bc18dcf98c8b1:hash_6643c0a0": "#annihilator_multikill_2"
 }

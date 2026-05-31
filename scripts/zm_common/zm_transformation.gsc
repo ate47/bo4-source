@@ -162,7 +162,7 @@ function function_cfca77a7( var_42de336c, id, condition_func, cooldown_time, int
         
         if ( !isentity( var_42de336c ) && !isassetloaded( "<dev string:x221>", var_42de336c ) )
         {
-            println( "<dev string:xad>" + id + "<dev string:x22a>" + ( ishash( var_42de336c ) ? function_9e72a96( var_42de336c ) : var_42de336c ) + "<dev string:x245>" );
+            println( "<dev string:xad>" + id + "<dev string:x22a>" + ( ishash( var_42de336c ) ? hashtostring( var_42de336c ) : var_42de336c ) + "<dev string:x245>" );
             return;
         }
     #/
@@ -863,7 +863,7 @@ function private update()
 // Params 1, eflags: 0x4
 // Checksum 0xd4b17dcc, Offset: 0x2960
 // Size: 0x2c
-function private function_4c0d0d28( var_201c5b1f )
+function private function_4c0d0d28( notify_hash )
 {
     function_e95ec8df();
     function_fb608075();
@@ -894,9 +894,9 @@ function function_bbaec2fd()
         
         foreach ( id, transformation in level.var_b175714d )
         {
-            adddebugcommand( "<dev string:x4e3>" + function_9e72a96( id ) + "<dev string:x50a>" + function_9e72a96( id ) + "<dev string:x534>" );
-            adddebugcommand( "<dev string:x539>" + function_9e72a96( id ) + "<dev string:x560>" + function_9e72a96( id ) + "<dev string:x534>" );
-            adddebugcommand( "<dev string:x58a>" + function_9e72a96( id ) + "<dev string:x5b1>" + function_9e72a96( id ) + "<dev string:x534>" );
+            adddebugcommand( "<dev string:x4e3>" + hashtostring( id ) + "<dev string:x50a>" + hashtostring( id ) + "<dev string:x534>" );
+            adddebugcommand( "<dev string:x539>" + hashtostring( id ) + "<dev string:x560>" + hashtostring( id ) + "<dev string:x534>" );
+            adddebugcommand( "<dev string:x58a>" + hashtostring( id ) + "<dev string:x5b1>" + hashtostring( id ) + "<dev string:x534>" );
         }
         
         registershack_walla = 0;
@@ -1137,7 +1137,7 @@ function function_bbaec2fd()
             y += 10;
             current_color = colors[ i % colors.size ];
             id_elem = create_hudelem( y );
-            id_elem settext( function_9e72a96( id ) );
+            id_elem settext( hashtostring( id ) );
             id_elem.color = current_color;
             id_elem.fontscale = 1.2;
             var_83db7237 = create_hudelem( y, 160 );
@@ -1184,7 +1184,7 @@ function function_bbaec2fd()
         
         while ( true )
         {
-            record3dtext( function_9e72a96( id ), self.origin + ( 0, 0, self.maxs[ 2 ] ), color );
+            record3dtext( hashtostring( id ), self.origin + ( 0, 0, self.maxs[ 2 ] ), color );
             waitframe( 1 );
         }
     }
@@ -1257,7 +1257,7 @@ function function_bbaec2fd()
             
             foreach ( pauser in level.var_50f7dbd5 )
             {
-                debug2dtext( ( var_c2624dfc, var_b010a959, 0 ), function_9e72a96( pauser ), ( 1, 1, 1 ), 1, ( 0, 0, 0 ), 0.8, 1 );
+                debug2dtext( ( var_c2624dfc, var_b010a959, 0 ), hashtostring( pauser ), ( 1, 1, 1 ), 1, ( 0, 0, 0 ), 0.8, 1 );
                 var_b010a959 += 25;
             }
             

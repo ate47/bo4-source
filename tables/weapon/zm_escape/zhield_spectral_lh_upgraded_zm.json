@@ -2,7 +2,8 @@
     "name": "#zhield_spectral_lh_upgraded_zm",
     "baseWeapon": "#zhield_spectral_lh_upgraded",
     "displayname": "#hash_5b5dc1454044a964",
-    "streamkey": "#hash_f8c2a09d8578da6",
+    "dualwieldWeaponName": "#zhield_spectral_dw_upgraded_zm",
+    "soundbank": "#zhield_spectral_lh_upgraded_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_right",
     "stowedModelTag": "tag_stowed_back",
@@ -11,23 +12,23 @@
     "weaponstarthitpoints": 1000,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
     "sound660": "#uin_unavailable_charging",
-    "sound740": "#zhield_spectral_dw_upgraded_zm",
     "tunables1": "#hash_7fadd2075e0cecab",
     "sharedWeaponSounds": "#battle_shield",
     "viewmodel": [
@@ -41,5 +42,13 @@
     ],
     "inventoryIconZm": "#hash_93ef923686346dc9",
     "image_e90": "#t7_icon_weapon_hero_reaper_kf",
-    "fireRumble": "#defaultweapon_fire"
+    "fireRumble": "#defaultweapon_fire",
+    "#hash_21329beb": [
+        {
+            "model": "#hash_7aa44eb45c359e1b"
+        },
+        {
+            "model": "#hash_7aa44eb45c359e1b"
+        }
+    ]
 }

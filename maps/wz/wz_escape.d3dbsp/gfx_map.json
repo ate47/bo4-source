@@ -1,0 +1,17 @@
+{
+    "name": "#maps/wz/wz_escape.d3dbsp",
+    "baseName": "wz_escape",
+    "mins": "-1906636.6 -1906636 -8398.984",
+    "maxs": "1906636.2 1906635.8 4077.179",
+    "checksum": 0,
+    "streamerworld": "#hash_613a9fa7a0db713c",
+    "lighting": "#maps/wz/wz_escape.d3dbsp",
+    "lutMaterial": "#hash_6f84ab13bee899ac",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 12,
+        "cookieArray": "#*cookie_array"
+    }
+}

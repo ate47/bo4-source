@@ -4,20 +4,20 @@
             "item": "#eq_concertina_wire"
         }
     ],
-    "hash_ef921c3c": 1,
+    "refillpickup": 1,
     "configstringfiletype": "scriptbundle",
     "tracktier": 0,
     "type": "bountyhunterpackage",
-    "hash_85d7cf08": 1,
+    "hash_285aafd5d344ff0e:hash_85d7cf08": 1,
     "refillammo": 0,
-    "hash_ee686ece": 0,
+    "hash_31bb676d9c37bf7a:hash_ee686ece": 0,
     "refillcost": 0,
     "name": "package_concertina",
     "packagetype": "equipment",
     "purchasecost": 250,
     "startammo": 2,
-    "hash_673a16ad": 1,
-    "hash_741010b5": 1,
-    "hash_782dbf79": 1,
-    "hash_767b7337": 1
+    "hash_62c8e3ff810378c4:hash_673a16ad": 1,
+    "hash_794d865e7d54fd10:hash_741010b5": 1,
+    "hash_79ff8ec09c725c6d:hash_782dbf79": 1,
+    "hash_7ad2a94673025eab:hash_767b7337": 1
 }

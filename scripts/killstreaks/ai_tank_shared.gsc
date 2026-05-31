@@ -1263,8 +1263,8 @@ function cobra_raise()
         playfxontag( self.settings.cobra_fx_1, self, self.settings.cobra_tag_1 );
     }
     
-    self asmrequestsubstate( #"hash_3e3fc20d5fcbf6e0" );
-    self vehicle_ai::waittill_asm_complete( #"hash_3e3fc20d5fcbf6e0", 4 );
+    self asmrequestsubstate( #"cobra@stationary" );
+    self vehicle_ai::waittill_asm_complete( #"cobra@stationary", 4 );
     self laseron();
 }
 
@@ -1871,7 +1871,7 @@ function function_dd91d091( params )
         }
         else
         {
-            self asmrequestsubstate( #"hash_236f963ae1728eb3" );
+            self asmrequestsubstate( #"idle@stationary" );
         }
         
         wait randomintrange( 2, 5 );
@@ -2164,7 +2164,7 @@ function state_combat_update( params )
             self function_d4c687c9();
             self setbrake( 1 );
             vehicle_ai::clearallmovement( 1 );
-            self asmrequestsubstate( #"hash_236f963ae1728eb3" );
+            self asmrequestsubstate( #"idle@stationary" );
             wait 1;
         }
     }

@@ -177,7 +177,7 @@ function private function_5ef1fdde( w_minigun )
     self endon( #"disconnect" );
     n_slot = self gadgetgetslot( w_minigun );
     
-    while ( self function_36dfc05f( n_slot ) )
+    while ( self gadgetisdeployed( n_slot ) )
     {
         waitframe( 1 );
     }

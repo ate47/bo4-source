@@ -466,7 +466,7 @@ function private get_wait_locations_in_zones( a_zones )
         }
         
         /#
-            str_zone = function_9e72a96( zone );
+            str_zone = hashtostring( zone );
             println( "<dev string:x38>" + str_zone + "<dev string:x4b>" );
             iprintln( "<dev string:x38>" + str_zone + "<dev string:x4b>" );
         #/

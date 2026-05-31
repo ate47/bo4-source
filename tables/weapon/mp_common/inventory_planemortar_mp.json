@@ -2,8 +2,8 @@
     "name": "#inventory_planemortar_mp",
     "baseWeapon": "#inventory_planemortar",
     "displayname": "#killstreak/planemortar",
-    "xhash_70": "#planemortar",
-    "streamkey": "#hash_63ff7a19dcef549",
+    "weapon70": "#planemortar",
+    "soundbank": "#inventory_planemortar_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -12,27 +12,44 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 251,
     "soundrattlerangemax": 1001,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "MULTIPLAYER",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": true,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": true,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
     "sound90": "#hash_52822fc2c68b551c",
     "gadgetreadysoundplayer": "#hash_6cba703094a0d029",
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#hash_65621a7aea1d2d39",
     "tunables1": "#inventory_planemortar_tunables_mp",
     "crateObjective": "#planemortar_waypoint",
+    "statusEffects": [
+        {
+            "effect": "#hash_a608bf886a137e8e",
+            "statusEffects:unk8": "[ll0x0=3e8000000c8][f0x0=2.8026e-43][f0x4=1.4013e-42] c8 00 00 00 e8 03 00 00",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        }
+    ],
     "killcamSettings": "#killcam_explosive_core",
     "#hash_2e4a8800": "#artillery_barrage_scoreevents",
     "projectilemodel": "#projectile_t8_hellfire_missile",

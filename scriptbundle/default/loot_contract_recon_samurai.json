@@ -1,16 +1,16 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "localized17#hash_326eb2964a3a4152"
+            "hash_619e25922b4aedcf:hash_826726a": "localized17#hash_326eb2964a3a4152"
         }
     ],
     "contracticon": "image#hash_3d530ab86d3ef60",
-    "hash_d0100eab": 1,
-    "relateditemname": "localized17#hash_6ce34ffbb3998db9",
+    "hash_202e3311080f8de3:hash_d0100eab": 1,
+    "relateditemname": "localized17#heroes/recon",
     "contracttitle": "localized17#hash_326eb2964a3a4152",
     "name": "loot_contract_recon_samurai",
     "contractdescription": "localized17#hash_4574c3ce7d0e7da",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_5828a13dacba6f5e",
-    "hash_e08fc162": "localized17#hash_1a37bb83d6aa1860"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_5828a13dacba6f5e",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_1a37bb83d6aa1860"
 }

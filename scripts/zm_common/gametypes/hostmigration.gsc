@@ -320,9 +320,9 @@ function host_migration_respawn()
     println( "<dev string:xe0>" );
     new_origin = undefined;
     
-    if ( isdefined( level.var_5816975b ) )
+    if ( isdefined( level.check_valid_spawn_override ) )
     {
-        new_origin = [[ level.var_5816975b ]]( self );
+        new_origin = [[ level.check_valid_spawn_override ]]( self );
     }
     
     if ( !isdefined( new_origin ) )

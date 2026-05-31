@@ -62,7 +62,7 @@ function processscoreevent( event, player, victim, weapon, playersaffected )
                 level.var_10cd7193 = [];
             }
             
-            eventstr = ishash( event ) ? function_9e72a96( event ) : event;
+            eventstr = ishash( event ) ? hashtostring( event ) : event;
             
             if ( !isdefined( level.var_10cd7193 ) )
             {
@@ -283,7 +283,7 @@ function function_2b96d7dc()
         return undefined;
     }
     
-    args = strtok( table_name, "\" );
+    args = strtok( table_name, "\\" );
     
     if ( args.size )
     {
@@ -374,7 +374,7 @@ function getscoreeventtableid( gametype )
         scoreinfotableloaded = 1;
     }
     
-    assert( scoreinfotableloaded, "<dev string:x70>" + function_9e72a96( getscoreeventtablename() ) );
+    assert( scoreinfotableloaded, "<dev string:x70>" + hashtostring( getscoreeventtablename() ) );
     return scoreinfotableid;
 }
 

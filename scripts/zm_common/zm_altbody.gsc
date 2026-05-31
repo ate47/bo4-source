@@ -39,9 +39,9 @@ function autoexec __init__system__()
 // Size: 0xe4
 function __init__()
 {
-    if ( !isdefined( level.var_28f2d2b1 ) )
+    if ( !isdefined( level.altbody_bgb_blacklists ) )
     {
-        level.var_28f2d2b1 = [];
+        level.altbody_bgb_blacklists = [];
     }
     
     clientfield::register( "clientuimodel", "player_lives", 1, 2, "int" );
@@ -54,7 +54,7 @@ function __init__()
 // Params 12
 // Checksum 0x595658e6, Offset: 0x378
 // Size: 0x224
-function init( name, kiosk_name, trigger_hint, visionset_name, visionset_priority, loadout, character_index, enter_callback, exit_callback, allow_callback, notrigger_hint, var_64d51f6 )
+function init( name, kiosk_name, trigger_hint, visionset_name, visionset_priority, loadout, character_index, enter_callback, exit_callback, allow_callback, notrigger_hint, bgb_blacklist )
 {
     if ( !isdefined( level.altbody_enter_callbacks ) )
     {
@@ -92,21 +92,21 @@ function init( name, kiosk_name, trigger_hint, visionset_name, visionset_priorit
         visionset_mgr::register_info( "visionset", visionset_name, 1, visionset_priority, 1, 1 );
     }
     
-    function_87585132( name, kiosk_name, trigger_hint, notrigger_hint );
+    register_kiosk_triggers( name, kiosk_name, trigger_hint, notrigger_hint );
     level.altbody_enter_callbacks[ name ] = enter_callback;
     level.altbody_exit_callbacks[ name ] = exit_callback;
     level.altbody_allow_callbacks[ name ] = allow_callback;
     level.altbody_loadouts[ name ] = loadout;
     level.altbody_charindexes[ name ] = character_index;
-    level.var_28f2d2b1[ name ] = var_64d51f6;
-    level thread function_6991025d();
+    level.altbody_bgb_blacklists[ name ] = bgb_blacklist;
+    level thread watch_end_game();
 }
 
 // Namespace zm_altbody/zm_altbody
 // Params 0
 // Checksum 0xb86c1a74, Offset: 0x5a8
 // Size: 0x78
-function function_6991025d()
+function watch_end_game()
 {
     level waittill( #"end_game" );
     players = getplayers();
@@ -134,7 +134,7 @@ function function_6991025d()
 // Params 2, eflags: 0x4
 // Checksum 0x9ccda7c3, Offset: 0x658
 // Size: 0x100, Type: bool
-function private function_17d98816( trigger, name )
+function private player_can_altbody_trigger( trigger, name )
 {
     if ( self zm_utility::is_drinking() && !( isdefined( self.trigger_kiosks_in_altbody ) && self.trigger_kiosks_in_altbody ) )
     {
@@ -229,17 +229,17 @@ function private player_can_altbody( kiosk, name )
 // Size: 0xda, Type: bool
 function function_1193c448( name )
 {
-    if ( !isdefined( level.var_28f2d2b1 ) )
+    if ( !isdefined( level.altbody_bgb_blacklists ) )
     {
-        level.var_28f2d2b1 = [];
+        level.altbody_bgb_blacklists = [];
     }
     
-    if ( !isdefined( level.var_28f2d2b1[ name ] ) )
+    if ( !isdefined( level.altbody_bgb_blacklists[ name ] ) )
     {
-        level.var_28f2d2b1[ name ] = [];
+        level.altbody_bgb_blacklists[ name ] = [];
     }
     
-    foreach ( str_bgb in level.var_28f2d2b1[ name ] )
+    foreach ( str_bgb in level.altbody_bgb_blacklists[ name ] )
     {
         if ( self bgb::is_enabled( str_bgb ) )
         {
@@ -461,7 +461,7 @@ function function_d709966a( washuman )
 // Params 4
 // Checksum 0x25656818, Offset: 0x1210
 // Size: 0x110
-function function_87585132( name, kiosk_name, trigger_hint, notrigger_hint )
+function register_kiosk_triggers( name, kiosk_name, trigger_hint, notrigger_hint )
 {
     if ( !isdefined( level.altbody_kiosks ) )
     {
@@ -472,7 +472,7 @@ function function_87585132( name, kiosk_name, trigger_hint, notrigger_hint )
     
     foreach ( kiosk in level.altbody_kiosks[ name ] )
     {
-        function_f5e5eac2( kiosk, name, trigger_hint, notrigger_hint );
+        register_kiosk_unitrigger( kiosk, name, trigger_hint, notrigger_hint );
     }
     
     level notify( #"hash_3cf24457a0015f72", name );
@@ -482,7 +482,7 @@ function function_87585132( name, kiosk_name, trigger_hint, notrigger_hint )
 // Params 4
 // Checksum 0xb457a5cd, Offset: 0x1328
 // Size: 0x16c
-function function_f5e5eac2( kiosk, name, trigger_hint, notrigger_hint )
+function register_kiosk_unitrigger( kiosk, name, trigger_hint, notrigger_hint )
 {
     width = 128;
     height = 128;

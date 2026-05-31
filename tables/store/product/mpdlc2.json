@@ -1,11 +1,10 @@
 {
     "name": "#mpdlc2",
-    "blackMarketName": "#",
-    "blackMarketDesc": "#",
-    "entitlementNameXHash": "#",
+    "previewImage": "#ui_menu_store_product_b04_grand_heist_large",
+    "productImage": "#ui_menu_store_product_b04_grand_heist_large",
+    "blackMarketImage": "#t7_store_product_bo4",
     "metadata": "DLC3MP",
-    "previewImageName": "hash_367d7af7799260ab",
-    "productImageName": "hash_367d7af7799260ab",
-    "blackMarketImageName": "hash_1217b62ca29dad38",
-    "visibility": true
+    "visibility": true,
+    "unka2": true,
+    "unka3": true
 }

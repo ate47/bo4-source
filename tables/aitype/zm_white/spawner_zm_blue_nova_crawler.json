@@ -15,9 +15,12 @@
     "typeSuffix": "_zombie",
     "spawnerType": "quad",
     "character": [
-        "#hash_2f54b2203de88815"
+        "#c_t8_zmb_ofc_quadcrawler1"
     ],
-    "meleeWeapon": "#hash_479f8de44d618b68",
+    "animMappingTables": [
+        "#hash_1448cef0ccfeb2d3"
+    ],
+    "meleeWeapon": "#zombie_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
     "footstepTable": "#hash_3368aeee6dad5cf",
     "footstepScriptCallback": false,

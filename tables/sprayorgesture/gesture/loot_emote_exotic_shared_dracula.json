@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_dracula",
+    "type": "#gesture",
+    "gesture": "#boast_dracula",
+    "gesture2": "#boast_dracula_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_5d3ec8308c9f0332",
+        "icon": "image#hash_32f8a4d6452dcfea",
+        "isdefault": 0
+    }
+}

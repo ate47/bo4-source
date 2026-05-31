@@ -41,7 +41,7 @@ version 4 {
         // offset 0x40, size 0x40
         uint64 subdivisionid;
         // offset 0x80, size 0x20
-        uint hash_40ab2c89a089b5a1;
+        uint subdivisionpoints;
         // offset 0xa0, size 0x20
         uint subdivisionrank;
         // offset 0xc0, size 0x20
@@ -59,7 +59,7 @@ version 4 {
         // offset 0x0, size 0x60
         uint gamestates[3];
         // offset 0x60, size 0x20
-        uint hash_22c57e1351555439;
+        uint challengerstate;
         // offset 0x80, size 0x100
         hash_7b048091b1488cec matchesstats;
     };
@@ -141,7 +141,7 @@ version 3 {
         // offset 0x40, size 0x40
         uint64 subdivisionid;
         // offset 0x80, size 0x20
-        uint hash_40ab2c89a089b5a1;
+        uint subdivisionpoints;
         // offset 0xa0, size 0x20
         uint subdivisionrank;
         // offset 0xc0, size 0x20
@@ -159,7 +159,7 @@ version 3 {
         // offset 0x0, size 0x60
         uint gamestates[3];
         // offset 0x60, size 0x20
-        uint hash_22c57e1351555439;
+        uint challengerstate;
         // offset 0x80, size 0xe0
         hash_7b048091b1488cec matchesstats;
     };
@@ -237,7 +237,7 @@ version 2 {
         // offset 0x40, size 0x40
         uint64 subdivisionid;
         // offset 0x80, size 0x20
-        uint hash_40ab2c89a089b5a1;
+        uint subdivisionpoints;
         // offset 0xa0, size 0x20
         uint subdivisionrank;
         // offset 0xc0, size 0x20
@@ -255,7 +255,7 @@ version 2 {
         // offset 0x0, size 0x60
         uint gamestates[3];
         // offset 0x60, size 0x20
-        uint hash_22c57e1351555439;
+        uint challengerstate;
         // offset 0x80, size 0xa0
         hash_7b048091b1488cec matchesstats;
     };
@@ -307,7 +307,7 @@ version 1 {
         // offset 0x20, size 0x40
         uint64 subdivisionid;
         // offset 0x60, size 0x20
-        uint hash_40ab2c89a089b5a1;
+        uint subdivisionpoints;
         // offset 0x80, size 0x20
         uint points;
         // offset 0xa0, size 0x40

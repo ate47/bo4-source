@@ -19,7 +19,7 @@
 // Size: 0x4c
 function init()
 {
-    callback::on_spawned( &function_ea6a4006 );
+    callback::on_spawned( &setup_character_vo );
     
     if ( !zm_utility::is_standard() )
     {
@@ -31,11 +31,11 @@ function init()
 // Params 0
 // Checksum 0xa0d00f5a, Offset: 0x188
 // Size: 0x9c
-function function_ea6a4006()
+function setup_character_vo()
 {
     if ( !zm_trial::is_trial_mode() && !zm_utility::is_standard() )
     {
-        if ( self zm_characters::is_character( array( #"hash_59f3598ad57dadd8", #"hash_2bcebdf1bef33311", #"hash_5a715cb0a6e071ae" ) ) )
+        if ( self zm_characters::is_character( array( #"prt_zm_richtofen", #"prt_zm_richtofen_ofc", #"hash_5a715cb0a6e071ae" ) ) )
         {
             self thread function_5bd0ee94();
         }
@@ -142,7 +142,7 @@ function function_76659f5e()
     {
         level notify( #"next_rmb" );
         
-        if ( e_player zm_characters::is_character( array( #"hash_59f3598ad57dadd8", #"hash_2bcebdf1bef33311", #"hash_5a715cb0a6e071ae" ) ) )
+        if ( e_player zm_characters::is_character( array( #"prt_zm_richtofen", #"prt_zm_richtofen_ofc", #"hash_5a715cb0a6e071ae" ) ) )
         {
             level notify( #"next_rmb" );
         }
@@ -210,7 +210,7 @@ function play_pentagon_announcer_vox( alias, defcon_level )
     if ( level.pentann_is_speaking == 0 )
     {
         level.pentann_is_speaking = 1;
-        level function_b66105cb();
+        level play_initial_alarm();
         level function_2389bb7a( alias );
         level.pentann_is_speaking = 0;
     }
@@ -240,7 +240,7 @@ function function_2389bb7a( str_sound )
 // Params 0
 // Checksum 0xc3d1e34b, Offset: 0x1290
 // Size: 0x90
-function function_b66105cb()
+function play_initial_alarm()
 {
     structs = struct::get_array( "defcon_alarms", "targetname" );
     
@@ -289,7 +289,7 @@ function function_d7b93e68( e_player, n_index )
 // Size: 0x42
 function function_d62aaf66()
 {
-    a_players = zm_vo::function_347f7d34();
+    a_players = zm_vo::get_valid_players();
     e_player = array::random( a_players );
     return e_player;
 }

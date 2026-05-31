@@ -2,9 +2,9 @@
     "name": "#zhield_zword_turret_upgraded_zm",
     "baseWeapon": "#zhield_zword_turret_upgraded",
     "displayname": "#hash_31c1e6747f6070b2",
-    "xhash_30": "#hash_7fcc9f73649d03f7",
-    "xhash_70": "#zhield_zword_dw",
-    "streamkey": "#hash_3264fccc4690e12e",
+    "altWeapon": "#hash_7fcc9f73649d03f7",
+    "weapon70": "#zhield_zword_dw",
+    "soundbank": "#zhield_zword_turret_upgraded_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -13,21 +13,22 @@
     "weaponstarthitpoints": 500,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 8,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
     "sound100": "#hash_48b8785c4ac59202",
     "sound110": "#hash_68f04f5bcc6c59c7",
     "sound140": "#hash_1f1d143c192cb526",
@@ -63,7 +64,15 @@
     "fireRumble": "#pistol_fire",
     "fx_c08": "#hash_7665ecbd288a84d7",
     "normalImpactFX": "#hash_161a8b3e1ac8b19f",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
-    "normalImpactSounds": "#bullet_explode",
-    "exitImpactSounds": "#bullet_exit"
+    "exitImpactFX": "#bullet_small_exit",
+    "normalImpactSounds": "#hash_f8e291a8acdea947",
+    "exitImpactSounds": "#bullet_exit",
+    "#hash_21329beb": [
+        {
+            "model": "#hash_2e66e889356753b5"
+        },
+        {
+            "model": "#hash_453007fe24e9df4"
+        }
+    ]
 }

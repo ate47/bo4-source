@@ -3,7 +3,7 @@
     "contracttitle": "localized17#menu/contract_misty",
     "name": "loot_contract_misty",
     "contractdescription": "localized17#menu/blackout_character",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_77b7303027d05e92",
-    "hash_e08fc162": "localized17#hash_490d8ac5a53902e6"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_77b7303027d05e92",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_490d8ac5a53902e6"
 }

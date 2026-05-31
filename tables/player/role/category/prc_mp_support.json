@@ -1,0 +1,11 @@
+{
+    "name": "#prc_mp_support",
+    "displayName": "#menu/support_caps",
+    "description": "#menu/support_desc",
+    "icon": "#hash_3639f16535eb0cbb",
+    "sortOrder": 2,
+    "bundle": {
+        "iconbig": "image#hash_5e12b6089d2d047a",
+        "enabled": 1
+    }
+}

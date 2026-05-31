@@ -1,0 +1,81 @@
+{
+    "name": "#veh_t8_ac130_gunship_mp",
+    "type": "helicopter",
+    "scoreType": "none",
+    "cameraTag": "tag_driver_camera",
+    "archeType": "#mothership",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "scriptBundleSettings": "#gunshipsettings_mp",
+    "deathFx": "#killstreaks/fx_heli_exp_lg",
+    "deathFxTag": "tag_origin",
+    "deathFxSound": "#exp_ac130",
+    "unk11f4": [
+        "tag_tail_rotor",
+        "tag_main_rotor"
+    ],
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#veh_t8_mil_air_gunship_mp_light",
+    "deathModel": "#veh_t8_mil_air_gunship_mp_dark",
+    "enemyModel": "#hash_661a3fffa36d816d",
+    "soundDef": "#veh_bomber",
+    "compassIconMaterial": "#compass_vtol",
+    "steerAxisName": "AXIS_LSTICK",
+    "attackButtonName": "BUTTON_RTRIG",
+    "unk1648": "BUTTON_Y",
+    "bundle": {
+        "huds": [
+            {
+                "bindings": [
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_4c7d903a026627fc",
+                        "buttondirection": "left",
+                        "prompt": "+activate"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_1cd7eb3f7d80e6f7",
+                        "buttondirection": "right",
+                        "prompt": "+switchseat"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_5f6588c74f549827",
+                        "buttondirection": "right",
+                        "prompt": "+vehicleattack"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_64d22aa20ae809f",
+                        "buttondirection": "left",
+                        "prompt": "+speed_throw"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_1c7f2479f11bf72c",
+                        "buttondirection": "left",
+                        "prompt": "+smoke"
+                    }
+                ],
+                "hash_16b4c5c47fcf7794:hash_56985ec1": 0,
+                "hideweaponinfo": 0,
+                "hash_3a63348c09d91b8d:hash_24c083a4": 0,
+                "vehiclehud": "VHUD_Gunship",
+                "tintcolor": "1 1 1 1",
+                "hudcondition": "IsAttackMode"
+            }
+        ],
+        "healthpoolsize": 650,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 2
+    }
+}

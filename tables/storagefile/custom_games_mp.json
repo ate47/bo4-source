@@ -1,5 +1,43 @@
 {
-    "name": "#custom_games_mp",
     "nameStr": "custom_games_mp",
-    "ddl": "#gamedata/ddl/generated/mp_custom_game.ddl"
+    "name": "#custom_games_mp",
+    "ddlPath": "#gamedata/ddl/generated/mp_custom_game.ddl",
+    "files": [
+        {
+            "fileName": "custom_games_mp"
+        },
+        {
+            "fileName": "custom_games_mp_1"
+        },
+        {
+            "fileName": "custom_games_mp_2"
+        },
+        {
+            "fileName": "custom_games_mp_3"
+        },
+        {
+            "fileName": "custom_games_mp_4"
+        },
+        {
+            "fileName": "custom_games_mp_5"
+        },
+        {
+            "fileName": "custom_games_mp_6"
+        },
+        {
+            "fileName": "custom_games_mp_7"
+        },
+        {
+            "fileName": "custom_games_mp_8"
+        },
+        {
+            "fileName": "custom_games_mp_9"
+        }
+    ],
+    "size": 29696,
+    "readOnLogin": false,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

@@ -85,17 +85,17 @@
     function function_99bd35ec()
     {
         level.zdraw.commands = [];
-        level.zdraw.commands[ #"color" ] = &function_54389019;
-        level.zdraw.commands[ #"alpha" ] = &function_82f2d020;
-        level.zdraw.commands[ #"duration" ] = &function_cb18c560;
+        level.zdraw.commands[ #"color" ] = &zdraw_color;
+        level.zdraw.commands[ #"alpha" ] = &zdraw_alpha;
+        level.zdraw.commands[ #"duration" ] = &zdraw_duration;
         level.zdraw.commands[ #"seconds" ] = &function_82201799;
-        level.zdraw.commands[ #"scale" ] = &function_f7176625;
+        level.zdraw.commands[ #"scale" ] = &zdraw_scale;
         level.zdraw.commands[ #"radius" ] = &function_a026f442;
         level.zdraw.commands[ #"sides" ] = &function_912c8db9;
-        level.zdraw.commands[ #"text" ] = &function_b5cdeec6;
+        level.zdraw.commands[ #"text" ] = &zdraw_text;
         level.zdraw.commands[ #"star" ] = &function_da7503f4;
         level.zdraw.commands[ #"sphere" ] = &function_3a2c5c6b;
-        level.zdraw.commands[ #"line" ] = &function_25fd7d2a;
+        level.zdraw.commands[ #"line" ] = &zdraw_line;
     }
 
     // Namespace zm_zdraw/zm_zdraw
@@ -132,7 +132,7 @@
             {
                 function_b36498d3();
                 params = strtok( cmd, "<dev string:x3b>" );
-                function_cd7ed6c5( params, 0, 1 );
+                zdraw_command( params, 0, 1 );
                 setdvar( #"zdraw", "<dev string:x38>" );
             }
             
@@ -144,7 +144,7 @@
     // Params 3
     // Checksum 0x1f0db96a, Offset: 0xa78
     // Size: 0xdc, Type: dev
-    function function_cd7ed6c5( var_a99ac828, startat, toplevel )
+    function zdraw_command( var_a99ac828, startat, toplevel )
     {
         if ( !isdefined( toplevel ) )
         {
@@ -180,7 +180,7 @@
         {
             if ( function_b0f457f2( var_a99ac828[ startat ] ) )
             {
-                var_769ff4d7 = function_b59acc83( var_a99ac828, startat );
+                var_769ff4d7 = zdraw_vector( var_a99ac828, startat );
                 
                 if ( var_769ff4d7 > startat )
                 {
@@ -193,7 +193,7 @@
                 continue;
             }
             
-            var_769ff4d7 = function_cd7ed6c5( var_a99ac828, startat );
+            var_769ff4d7 = zdraw_command( var_a99ac828, startat );
             
             if ( var_769ff4d7 > startat )
             {
@@ -217,7 +217,7 @@
         {
             if ( function_b0f457f2( var_a99ac828[ startat ] ) )
             {
-                var_769ff4d7 = function_b59acc83( var_a99ac828, startat );
+                var_769ff4d7 = zdraw_vector( var_a99ac828, startat );
                 
                 if ( var_769ff4d7 > startat )
                 {
@@ -230,7 +230,7 @@
                 continue;
             }
             
-            var_769ff4d7 = function_cd7ed6c5( var_a99ac828, startat );
+            var_769ff4d7 = zdraw_command( var_a99ac828, startat );
             
             if ( var_769ff4d7 > startat )
             {
@@ -248,7 +248,7 @@
     // Params 2
     // Checksum 0xc0ddd9fb, Offset: 0xdf8
     // Size: 0x186, Type: dev
-    function function_25fd7d2a( var_a99ac828, startat )
+    function zdraw_line( var_a99ac828, startat )
     {
         level.zdraw.linestart = undefined;
         
@@ -256,7 +256,7 @@
         {
             if ( function_b0f457f2( var_a99ac828[ startat ] ) )
             {
-                var_769ff4d7 = function_b59acc83( var_a99ac828, startat );
+                var_769ff4d7 = zdraw_vector( var_a99ac828, startat );
                 
                 if ( var_769ff4d7 > startat )
                 {
@@ -275,7 +275,7 @@
                 continue;
             }
             
-            var_769ff4d7 = function_cd7ed6c5( var_a99ac828, startat );
+            var_769ff4d7 = zdraw_command( var_a99ac828, startat );
             
             if ( var_769ff4d7 > startat )
             {
@@ -293,7 +293,7 @@
     // Params 2
     // Checksum 0x52b1da06, Offset: 0xf88
     // Size: 0x1de, Type: dev
-    function function_b5cdeec6( var_a99ac828, startat )
+    function zdraw_text( var_a99ac828, startat )
     {
         level.zdraw.text = "<dev string:x38>";
         
@@ -313,7 +313,7 @@
         {
             if ( function_b0f457f2( var_a99ac828[ startat ] ) )
             {
-                var_769ff4d7 = function_b59acc83( var_a99ac828, startat );
+                var_769ff4d7 = zdraw_vector( var_a99ac828, startat );
                 
                 if ( var_769ff4d7 > startat )
                 {
@@ -326,7 +326,7 @@
                 continue;
             }
             
-            var_769ff4d7 = function_cd7ed6c5( var_a99ac828, startat );
+            var_769ff4d7 = zdraw_command( var_a99ac828, startat );
             
             if ( var_769ff4d7 > startat )
             {
@@ -344,13 +344,13 @@
     // Params 2
     // Checksum 0x196cf798, Offset: 0x1170
     // Size: 0x170, Type: dev
-    function function_54389019( var_a99ac828, startat )
+    function zdraw_color( var_a99ac828, startat )
     {
         if ( isdefined( var_a99ac828[ startat ] ) )
         {
             if ( function_b0f457f2( var_a99ac828[ startat ] ) )
             {
-                var_769ff4d7 = function_b59acc83( var_a99ac828, startat );
+                var_769ff4d7 = zdraw_vector( var_a99ac828, startat );
                 
                 if ( var_769ff4d7 > startat )
                 {
@@ -386,7 +386,7 @@
     // Params 2
     // Checksum 0xe7c01b8b, Offset: 0x12e8
     // Size: 0xb4, Type: dev
-    function function_82f2d020( var_a99ac828, startat )
+    function zdraw_alpha( var_a99ac828, startat )
     {
         if ( isdefined( var_a99ac828[ startat ] ) )
         {
@@ -411,7 +411,7 @@
     // Params 2
     // Checksum 0xe28ea788, Offset: 0x13a8
     // Size: 0xb4, Type: dev
-    function function_f7176625( var_a99ac828, startat )
+    function zdraw_scale( var_a99ac828, startat )
     {
         if ( isdefined( var_a99ac828[ startat ] ) )
         {
@@ -436,7 +436,7 @@
     // Params 2
     // Checksum 0x737c9516, Offset: 0x1468
     // Size: 0xe0, Type: dev
-    function function_cb18c560( var_a99ac828, startat )
+    function zdraw_duration( var_a99ac828, startat )
     {
         if ( isdefined( var_a99ac828[ startat ] ) )
         {
@@ -550,7 +550,7 @@
     // Params 2
     // Checksum 0x7796c86, Offset: 0x1860
     // Size: 0x258, Type: dev
-    function function_b59acc83( var_a99ac828, startat )
+    function zdraw_vector( var_a99ac828, startat )
     {
         if ( isdefined( var_a99ac828[ startat ] ) )
         {

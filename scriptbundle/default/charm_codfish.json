@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_codfish",
-    "hash_ff3063df": "model#",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_cod_fish",
     "name": "charm_codfish",
     "displayname": "localized17#hash_520c1567c772dc89",
     "icon": "ui_icon_weapon_charms_cod_fish",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_cod_fish"
 }

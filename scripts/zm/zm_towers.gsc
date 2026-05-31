@@ -359,7 +359,7 @@ function function_c8ce0a17( var_404e4288, var_8dd554ee )
 function function_f6e12f01()
 {
     a_s_acid_traps = struct::get_array( "s_ww_quest_acid_trap_unitrigger" );
-    var_7eb95af0 = arraycopy( level.var_4fe2f84d[ #"zblueprint_trap_hellpools" ] );
+    var_7eb95af0 = arraycopy( level.a_t_crafting[ #"zblueprint_trap_hellpools" ] );
     var_7eb95af0 = array::randomize( var_7eb95af0 );
     
     foreach ( s_acid_trap in a_s_acid_traps )
@@ -503,9 +503,9 @@ function function_ebe4d15c()
     
     while ( true )
     {
-        var_7e5b8365 = level flag::get( #"infinite_round_spawning" ) || zombie_utility::get_current_zombie_count() > 0 || level.zombie_total > 0 || level.intermission;
+        b_should_wait = level flag::get( #"infinite_round_spawning" ) || zombie_utility::get_current_zombie_count() > 0 || level.zombie_total > 0 || level.intermission;
         
-        if ( !var_7e5b8365 || level flag::get( "end_round_wait" ) )
+        if ( !b_should_wait || level flag::get( "end_round_wait" ) )
         {
             break;
         }
@@ -1121,9 +1121,9 @@ function function_58a931ce()
 // Size: 0xec
 function function_5b2f92b3()
 {
-    var_8011b2df = getentarray( "lore_room", "targetname" );
+    a_e_lore_room = getentarray( "lore_room", "targetname" );
     
-    foreach ( e_door in var_8011b2df )
+    foreach ( e_door in a_e_lore_room )
     {
         e_door delete();
     }
@@ -1545,7 +1545,7 @@ function setup_end_igc( var_24486b2e = 1 )
         
         foreach ( player in getplayers() )
         {
-            player zm_score::function_c1f146ff( var_efac84b3[ round_index ] );
+            player zm_score::set_player_score( var_efac84b3[ round_index ] );
         }
         
         if ( round_number >= 9 )

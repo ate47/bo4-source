@@ -117,7 +117,7 @@ function private function_52ce9654()
     if ( isarray( level.zm_loc_types ) && level.zm_loc_types[ #"zombie_location" ].size > 0 )
     {
         a_s_spawn_locs = level.zm_loc_types[ #"zombie_location" ];
-        var_31b16a0 = [];
+        a_s_valid_spawns = [];
         
         foreach ( s_spawn_loc in a_s_spawn_locs )
         {
@@ -126,24 +126,24 @@ function private function_52ce9654()
                 continue;
             }
             
-            if ( !isdefined( var_31b16a0 ) )
+            if ( !isdefined( a_s_valid_spawns ) )
             {
-                var_31b16a0 = [];
+                a_s_valid_spawns = [];
             }
-            else if ( !isarray( var_31b16a0 ) )
+            else if ( !isarray( a_s_valid_spawns ) )
             {
-                var_31b16a0 = array( var_31b16a0 );
+                a_s_valid_spawns = array( a_s_valid_spawns );
             }
             
-            var_31b16a0[ var_31b16a0.size ] = s_spawn_loc;
+            a_s_valid_spawns[ a_s_valid_spawns.size ] = s_spawn_loc;
         }
         
         if ( isarray( level.zm_loc_types[ #"blight_father_location" ] ) && level.zm_loc_types[ #"blight_father_location" ].size > 0 )
         {
-            var_31b16a0 = arraycombine( var_31b16a0, level.zm_loc_types[ #"blight_father_location" ], 0, 0 );
+            a_s_valid_spawns = arraycombine( a_s_valid_spawns, level.zm_loc_types[ #"blight_father_location" ], 0, 0 );
         }
         
-        ai_catalyst = zombie_utility::spawn_zombie( array::random( level.a_sp_catalyst ), undefined, array::random( var_31b16a0 ) );
+        ai_catalyst = zombie_utility::spawn_zombie( array::random( level.a_sp_catalyst ), undefined, array::random( a_s_valid_spawns ) );
         
         if ( isdefined( ai_catalyst ) )
         {
@@ -1307,8 +1307,8 @@ function private function_75070c6()
 // Size: 0x1d4
 function function_e5e8cbd2( b_respawn )
 {
-    self notify( #"hash_25ca29da51a78702" );
-    self endon( #"hash_25ca29da51a78702" );
+    self notify( #"update_purified_fx" );
+    self endon( #"update_purified_fx" );
     self.var_5c8ac43e = 1;
     
     if ( isdefined( level.var_e1ade08 ) )

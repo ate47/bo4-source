@@ -112,7 +112,7 @@ class cinteractobj
             return;
         }
         
-        var_9c2f0815 = var_15547ed4 || isdefined( e_object.var_f66cebb1 ) ? m_str_team : #"none";
+        str_side_team = var_15547ed4 || isdefined( e_object.var_f66cebb1 ) ? m_str_team : #"none";
         
         for ( var_fb20e730 = util::get_players( m_str_team ); var_fb20e730.size ; var_fb20e730 = util::get_players( m_str_team ) )
         {
@@ -120,7 +120,7 @@ class cinteractobj
             {
                 if ( function_aa070e6f( e_player ) && !isinarray( var_2854e7f7, e_player.team ) && !e_player isinvehicle() )
                 {
-                    voiceparams = { #team:m_str_team, #side:var_9c2f0815, #targetname:e_object.var_f66cebb1 };
+                    voiceparams = { #team:m_str_team, #side:str_side_team, #targetname:e_object.var_f66cebb1 };
                     
                     if ( isdefined( e_object.var_fa2dfcb4 ) )
                     {

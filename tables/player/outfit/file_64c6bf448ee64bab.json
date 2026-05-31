@@ -1,0 +1,32 @@
+{
+    "name": "#hash_64c6bf448ee64bab",
+    "desc": "#hash_7179c152ecf1e39",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "unk68:unk10": true,
+            "model": "#c_t8_mp_spe_prophet_head1_cst",
+            "unk68:unk48": [
+                "#mc/mtl_c_t8_mp_spe_prophet_head1_hair_hairshell2",
+                "#mc/mtl_c_t8_mp_spe_prophet_head1_hair_card1",
+                "#mc/mtl_c_t8_mp_spe_prophet_head1_hair_card2",
+                "#mc/mtl_c_t8_mp_spe_prophet_head1_hair_card3",
+                "#mc/mtl_c_t8_mp_spe_prophet_head1_hair_card4"
+            ],
+            "unk68:unk50": 1
+        },
+        {
+            "desc": "#hash_51bc1e86576ff25a",
+            "unk68:unk10": true,
+            "model": "#c_t8_mp_spe_prophet_egyptian_head1_cst",
+            "unk68:unk50": 2
+        },
+        {
+            "desc": "#hash_51bc1d86576ff0a7",
+            "unk68:unk10": true,
+            "model": "#c_t8_mp_spe_prophet_egyptian_head2_cst",
+            "unk68:unk50": 3
+        }
+    ]
+}

@@ -3,8 +3,8 @@
     "baseWeapon": "#sniper_fastrechamber_t8_upgraded",
     "displayname": "#zmweapon/sniper_fastrechamber_t8_upgraded",
     "xhash_60": "#hash_3795ead29c556c2c",
-    "xhash_70": "#sniper_fastrechamber_t8",
-    "streamkey": "#hash_5b372a8bc3988076",
+    "weapon70": "#sniper_fastrechamber_t8",
+    "soundbank": "#sniper_fastrechamber_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -18,21 +18,44 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 3,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.0393 0.5",
+            "0.1504 0.485",
+            "0.2911 0.4277",
+            "0.4004 0.3617",
+            "0.5404 0.241",
+            "0.5914 0.0372",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0393 1",
+            "0.1504 0.9704",
+            "0.2911 0.8574",
+            "0.4004 0.7234",
+            "0.5404 0.482",
+            "0.5914 0.0743",
+            "1 0"
+        ]
+    ],
     "firesounddistant": "#hash_5f022cd68aefd198",
     "firesound": "#hash_60313ff70c87832c",
     "firesoundplayer": "#hash_5c4792f6794caeed",
@@ -66,6 +89,10 @@
     ],
     "sharedWeaponSounds": "#rifle",
     "ballisticDesc": "#hash_d61ffd897d1b6977",
+    "tracers": [
+        "#hash_fa6c24626f115206",
+        "#hash_f0561f677d3c0da1"
+    ],
     "viewmodel": [
         "#hash_d6e53a36ef2f2539",
         "#hash_d6e53a36ef2f2539",
@@ -85,8 +112,8 @@
     "fx_bc8": "#hash_5d8349873cdddbb1",
     "fx_bd0": "#hash_270e30b8d51c3f53",
     "fx_bd8": "#hash_bc501ea0c64b9112",
-    "normalImpactFX": "#hash_fee0671def6af7a4",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_xlarge_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#bullet_exit"
 }

@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_flat_earth",
-    "hash_ff3063df": "model#",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_flat_earth",
     "name": "charm_flat_earth",
     "displayname": "localized17#hash_2988751d63c6fbb",
     "icon": "ui_icon_weapon_charms_flat_earth",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_flat_earth"
 }

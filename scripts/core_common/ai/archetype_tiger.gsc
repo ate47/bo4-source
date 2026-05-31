@@ -63,9 +63,9 @@ function autoexec registerbehaviorscriptfunctions()
     assert( isscriptfunctionptr( &function_fdde7116 ) );
     behaviorstatemachine::registerbsmscriptapiinternal( #"hash_6263cd4f7b34692e", &function_fdde7116 );
     assert( isscriptfunctionptr( &function_66063225 ) );
-    behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_4068cafe20c75854", &function_66063225 );
+    behaviortreenetworkutility::registerbehaviortreescriptapi( #"tigershouldrun", &function_66063225 );
     assert( isscriptfunctionptr( &function_66063225 ) );
-    behaviorstatemachine::registerbsmscriptapiinternal( #"hash_4068cafe20c75854", &function_66063225 );
+    behaviorstatemachine::registerbsmscriptapiinternal( #"tigershouldrun", &function_66063225 );
     assert( !isdefined( &function_e0f73303 ) || isscriptfunctionptr( &function_e0f73303 ) );
     assert( !isdefined( undefined ) || isscriptfunctionptr( undefined ) );
     assert( !isdefined( &function_351bcb1b ) || isscriptfunctionptr( &function_351bcb1b ) );
@@ -1402,7 +1402,7 @@ function function_b708cfe7()
     // Params 0, eflags: 0x4
     // Checksum 0xc19fd21c, Offset: 0x4980
     // Size: 0xb6, Type: dev
-    function private function_88b22921()
+    function private xmodelalias/bodies_civilian_asm_female_1.csc()
     {
         enemies = getaiarchetypearray( #"tiger" );
         
@@ -1442,7 +1442,7 @@ function function_b708cfe7()
                         function_21c73eb5();
                         break;
                     case #"pounce":
-                        function_88b22921();
+                        xmodelalias/bodies_civilian_asm_female_1.csc();
                         break;
                     default:
                         if ( isdefined( level.var_3d89b095 ) )

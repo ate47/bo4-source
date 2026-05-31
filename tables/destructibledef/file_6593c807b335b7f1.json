@@ -1,0 +1,39 @@
+{
+    "name": "#hash_6593c807b335b7f1",
+    "model": "#p8_ac_unit_sml_02_allstates",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_d0"
+                },
+                {
+                    "unk28": "tag_d1"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_787b2b6c139c1f5a",
+            "unk268": 50,
+            "hideBones": [
+                28,
+                29,
+                30
+            ]
+        }
+    ]
+}

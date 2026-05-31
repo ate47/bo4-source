@@ -724,9 +724,9 @@ function function_9258efe1( str_zone )
     
     foreach ( e_player in getplayers() )
     {
-        var_bdf9e3c2 = e_player zm_zonemgr::get_player_zone();
+        str_current_zone = e_player zm_zonemgr::get_player_zone();
         
-        if ( !isdefined( var_bdf9e3c2 ) || var_bdf9e3c2 != str_zone )
+        if ( !isdefined( str_current_zone ) || str_current_zone != str_zone )
         {
             var_cb24ec97 = 0;
             break;
@@ -1072,7 +1072,7 @@ function function_df67a12d( category, subcategory )
     {
         if ( !isvehicle( self ) )
         {
-            log_debug_event( "<dev string:xa0>", self.actor_id, function_9e72a96( self.archetype ) );
+            log_debug_event( "<dev string:xa0>", self.actor_id, hashtostring( self.archetype ) );
             self thread function_fc28e798();
         }
     }
@@ -1090,7 +1090,7 @@ function function_df67a12d( category, subcategory )
             str_event = "<dev string:xb9>";
         }
         
-        log_debug_event( str_event, self.actor_id, function_9e72a96( self.archetype ) );
+        log_debug_event( str_event, self.actor_id, hashtostring( self.archetype ) );
     }
 
     // Namespace zm_hms_util/zm_hms_util
@@ -1120,7 +1120,7 @@ function function_df67a12d( category, subcategory )
     {
         self endon( #"death" );
         self waittill( #"completed_emerging_into_playable_area" );
-        log_debug_event( "<dev string:xd7>", self.actor_id, function_9e72a96( self.archetype ) );
+        log_debug_event( "<dev string:xd7>", self.actor_id, hashtostring( self.archetype ) );
     }
 
     // Namespace zm_hms_util/zm_hms_util

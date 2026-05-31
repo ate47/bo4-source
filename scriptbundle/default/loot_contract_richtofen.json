@@ -3,7 +3,7 @@
     "contracttitle": "localized17#menu/contract_richtofen",
     "name": "loot_contract_richtofen",
     "contractdescription": "localized17#menu/blackout_character",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_327a4adce2d60323",
-    "hash_e08fc162": "localized17#hash_621dc92c959f9a02"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_327a4adce2d60323",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_621dc92c959f9a02"
 }

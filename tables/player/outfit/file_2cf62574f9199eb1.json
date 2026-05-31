@@ -1,0 +1,21 @@
+{
+    "name": "#hash_2cf62574f9199eb1",
+    "desc": "#hash_1f055bdaffbbca74",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "unk68:unk10": true,
+            "model": "#c_t8_zmb_dlc0_hero_stanton_head1_cst",
+            "unk68:unk48": [
+                "#mc/mtl_c_t8_zmb_dlc0_hero_stanton_head1_hair_braid1",
+                "#hash_48c97bb5cdc3ed5c",
+                "#mc/mtl_c_t8_zmb_dlc0_hero_stanton_head1_hair_haircard1",
+                "#mc/mtl_c_t8_zmb_dlc0_hero_stanton_head1_hair_haircard2",
+                "#mc/mtl_c_t8_zmb_dlc0_hero_stanton_head1_hair_haircard3",
+                "#mc/mtl_c_t8_zmb_dlc0_hero_stanton_head1_hair_haircard4"
+            ],
+            "unk68:unk50": 1
+        }
+    ]
+}

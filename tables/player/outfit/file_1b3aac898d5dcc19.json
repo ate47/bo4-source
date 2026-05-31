@@ -1,0 +1,45 @@
+{
+    "name": "#hash_1b3aac898d5dcc19",
+    "desc": "#hash_8b1fc81e30f868",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "unk68:unk10": true,
+            "model": "#c_t8_mp_spe_engineer_highlander_head1_cst",
+            "unk68:unk48": [
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles",
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_details",
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_frames",
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_lenses",
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_rubber"
+            ],
+            "unk68:unk50": 1
+        },
+        {
+            "unk68:unk10": true,
+            "model": "#c_t8_mp_spe_engineer_highlander_head1_cst",
+            "unk68:unk48": [
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles",
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_details",
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_frames",
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_lenses",
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_rubber"
+            ],
+            "unk68:unk50": 2
+        },
+        {
+            "unk68:unk10": true,
+            "model": "#c_t8_mp_spe_engineer_highlander_head2_cst",
+            "unk68:unk48": [
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles",
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_details",
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_frames",
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_lenses",
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_rubber",
+                "#mc/mtl_c_t8_mp_spe_engineer_body1_decals"
+            ],
+            "unk68:unk50": 3
+        }
+    ]
+}

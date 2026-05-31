@@ -1,16 +1,16 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "localized17#hash_24453b4e3dec5078"
+            "hash_619e25922b4aedcf:hash_826726a": "localized17#hash_24453b4e3dec5078"
         }
     ],
     "contracticon": "image#hash_5737a008dbb2041a",
-    "hash_d0100eab": 1,
-    "relateditemname": "localized17#hash_3b87d7eb92a261aa",
+    "hash_202e3311080f8de3:hash_d0100eab": 1,
+    "relateditemname": "localized17#heroes/enforcer",
     "contracttitle": "localized17#hash_24453b4e3dec5078",
     "name": "loot_contract_seraph_crimson_lotus",
     "contractdescription": "localized17#hash_8f8f9b22d24a874",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_38ca0a1ddd036c28",
-    "hash_e08fc162": "localized17#hash_43e3667277169979"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_38ca0a1ddd036c28",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_43e3667277169979"
 }

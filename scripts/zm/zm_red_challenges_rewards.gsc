@@ -520,7 +520,7 @@ function function_29e6dc49( var_be164210 = 1, var_6c9485fc = 15 )
 // Params 3
 // Checksum 0x275938de, Offset: 0x1970
 // Size: 0x24c
-function function_d36fb590( var_aa4f9213, var_6c9485fc = 15, var_b7e0faf0 = 1 )
+function function_d36fb590( var_aa4f9213, var_6c9485fc = 15, n_fx_type = 1 )
 {
     self endon( #"death" );
     
@@ -548,7 +548,7 @@ function function_d36fb590( var_aa4f9213, var_6c9485fc = 15, var_b7e0faf0 = 1 )
     mdl_reward = util::spawn_model( var_24a867e4, var_8b84b3ce, v_spawn_angles );
     mdl_reward playsound( #"zmb_spawn_powerup" );
     mdl_reward playloopsound( #"zmb_spawn_powerup_loop" );
-    b_give_reward = self function_dcda5d87( mdl_reward, 1, 1, var_b7e0faf0 );
+    b_give_reward = self function_dcda5d87( mdl_reward, 1, 1, n_fx_type );
     
     if ( b_give_reward )
     {
@@ -834,7 +834,7 @@ function function_b858f95a()
         
         if ( isdefined( s_bowl.var_9d32404 ) && isdefined( self.var_9e09931e ) )
         {
-            s_bowl.var_9d32404 clientfield::set( "" + #"hash_21f5fab6a3d22093", self.var_9e09931e );
+            s_bowl.var_9d32404 clientfield::set( "" + #"tribute_flame_fx", self.var_9e09931e );
         }
     }
 }
@@ -1275,12 +1275,12 @@ function get_weapon_upgrade( weapon )
 // Params 4
 // Checksum 0x77091587, Offset: 0x3948
 // Size: 0x208, Type: bool
-function function_dcda5d87( mdl_reward, b_rotate = 1, var_b9b24 = 1, var_b7e0faf0 = 1 )
+function function_dcda5d87( mdl_reward, b_rotate = 1, var_b9b24 = 1, n_fx_type = 1 )
 {
     self endon( #"death" );
     self.var_7a281a7e = mdl_reward;
     mdl_reward thread pickup_timeout( self, "challenge_reward_timeout" );
-    mdl_reward thread function_f7cdf2f7( var_b7e0faf0 );
+    mdl_reward thread function_f7cdf2f7( n_fx_type );
     
     if ( isdefined( b_rotate ) && b_rotate )
     {
@@ -1363,7 +1363,7 @@ function function_57b8a4e9( e_pickup )
 // Params 1
 // Checksum 0x9f25f045, Offset: 0x3e18
 // Size: 0x5c
-function function_f7cdf2f7( var_b7e0faf0 = 1 )
+function function_f7cdf2f7( n_fx_type = 1 )
 {
     self endon( #"death" );
     
@@ -1372,7 +1372,7 @@ function function_f7cdf2f7( var_b7e0faf0 = 1 )
         return;
     }
     
-    self clientfield::set( "powerup_fx", var_b7e0faf0 );
+    self clientfield::set( "powerup_fx", n_fx_type );
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
@@ -1647,7 +1647,7 @@ function give_bgb( var_de21c97b )
 // Params 3
 // Checksum 0xf8b0e698, Offset: 0x4a08
 // Size: 0x2d4
-function function_445c5623( var_aa4f9213, var_8b84b3ce, var_b7e0faf0 = 1 )
+function function_445c5623( var_aa4f9213, var_8b84b3ce, n_fx_type = 1 )
 {
     if ( !zm_custom::function_901b751c( #"zmpowerupsactive" ) )
     {
@@ -1680,7 +1680,7 @@ function function_445c5623( var_aa4f9213, var_8b84b3ce, var_b7e0faf0 = 1 )
     n_power = length( mdl_reward.origin - var_8b84b3ce );
     var_cef149e8 = mdl_reward zm_utility::fake_physicslaunch( var_8b84b3ce + ( 0, 0, 50 ), n_power );
     wait var_cef149e8;
-    e_player = level function_c45635c7( mdl_reward, 0, 1, var_b7e0faf0 );
+    e_player = level function_c45635c7( mdl_reward, 0, 1, n_fx_type );
     
     if ( isplayer( e_player ) )
     {
@@ -1737,10 +1737,10 @@ function function_ae58bd73( var_8b84b3ce )
 // Params 4
 // Checksum 0x35919b32, Offset: 0x4f38
 // Size: 0x1e6
-function function_c45635c7( mdl_reward, b_rotate, var_b9b24, var_b7e0faf0 = 1 )
+function function_c45635c7( mdl_reward, b_rotate, var_b9b24, n_fx_type = 1 )
 {
     mdl_reward thread pickup_timeout( undefined, "spew_reward_picked_up" );
-    mdl_reward thread function_f7cdf2f7( var_b7e0faf0 );
+    mdl_reward thread function_f7cdf2f7( n_fx_type );
     
     if ( isdefined( b_rotate ) && b_rotate )
     {
@@ -1788,14 +1788,14 @@ function function_c45635c7( mdl_reward, b_rotate, var_b9b24, var_b7e0faf0 = 1 )
 // Params 4
 // Checksum 0xbf8c4cd7, Offset: 0x5128
 // Size: 0x176, Type: bool
-function function_cdb9fba6( mdl_reward, b_rotate, var_b9b24, var_b7e0faf0 = 1 )
+function function_cdb9fba6( mdl_reward, b_rotate, var_b9b24, n_fx_type = 1 )
 {
     self endon( #"death" );
     mdl_reward thread pickup_timeout( self, "spew_reward_picked_up" );
     
     if ( isdefined( var_b9b24 ) && var_b9b24 )
     {
-        mdl_reward thread function_f7cdf2f7( var_b7e0faf0 );
+        mdl_reward thread function_f7cdf2f7( n_fx_type );
     }
     
     if ( isdefined( b_rotate ) && b_rotate )

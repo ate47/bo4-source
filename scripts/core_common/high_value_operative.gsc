@@ -312,23 +312,23 @@ function function_323c6715()
                     continue;
                 }
                 
-                for ( var_82927499 = 2; var_82927499 > index ; var_82927499-- )
+                for ( reverseindex = 2; reverseindex > index ; reverseindex-- )
                 {
-                    if ( !isdefined( level.var_1a0a6769[ var_82927499 ] ) )
+                    if ( !isdefined( level.var_1a0a6769[ reverseindex ] ) )
                     {
-                        level.var_1a0a6769[ var_82927499 ] = spawnstruct();
+                        level.var_1a0a6769[ reverseindex ] = spawnstruct();
                     }
                     
-                    if ( !isdefined( level.var_1a0a6769[ var_82927499 - 1 ] ) )
+                    if ( !isdefined( level.var_1a0a6769[ reverseindex - 1 ] ) )
                     {
-                        level.var_1a0a6769[ var_82927499 - 1 ] = spawnstruct();
+                        level.var_1a0a6769[ reverseindex - 1 ] = spawnstruct();
                     }
                     
-                    level.var_1a0a6769[ var_82927499 ].var_29da3a57 = level.var_1a0a6769[ var_82927499 - 1 ].var_29da3a57;
-                    level.var_1a0a6769[ var_82927499 ].player = level.var_1a0a6769[ var_82927499 - 1 ].player;
-                    level.var_1a0a6769[ var_82927499 ].hvo = level.var_1a0a6769[ var_82927499 - 1 ].hvo;
-                    level.var_1a0a6769[ var_82927499 ].var_74be6838 = level.var_1a0a6769[ var_82927499 - 1 ].var_74be6838;
-                    level.var_1a0a6769[ var_82927499 ].var_6ad8c73b = level.var_1a0a6769[ var_82927499 - 1 ].var_6ad8c73b;
+                    level.var_1a0a6769[ reverseindex ].var_29da3a57 = level.var_1a0a6769[ reverseindex - 1 ].var_29da3a57;
+                    level.var_1a0a6769[ reverseindex ].player = level.var_1a0a6769[ reverseindex - 1 ].player;
+                    level.var_1a0a6769[ reverseindex ].hvo = level.var_1a0a6769[ reverseindex - 1 ].hvo;
+                    level.var_1a0a6769[ reverseindex ].var_74be6838 = level.var_1a0a6769[ reverseindex - 1 ].var_74be6838;
+                    level.var_1a0a6769[ reverseindex ].var_6ad8c73b = level.var_1a0a6769[ reverseindex - 1 ].var_6ad8c73b;
                 }
                 
                 level.var_1a0a6769[ index ].var_29da3a57 = var_29da3a57;

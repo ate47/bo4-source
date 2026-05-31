@@ -22,7 +22,7 @@ function __init__()
 {
     level._effect[ #"hash_2bba72fdcc5508b5" ] = #"hash_3b22162a96d9389";
     level._effect[ #"chest_light_closed" ] = #"zombie/fx_weapon_box_closed_glow_zmb";
-    level._effect[ #"hash_19f4dd97cbb87594" ] = #"hash_5f376e9395e16666";
+    level._effect[ #"t8_leave_fx" ] = #"hash_5f376e9395e16666";
     level._effect[ #"hash_246062f68a34e289" ] = #"hash_55cc904817de4a07";
     level._effect[ #"hash_73c11d9bf55cbb6" ] = #"hash_31c4723879504cb7";
     level._effect[ #"hash_5239f7431d4c72ca" ] = #"hash_3f4154d786124350";
@@ -251,7 +251,7 @@ function function_b4b9937( localclientnum, newval, str_state )
         
         if ( isdefined( self ) && str_state == "leave" )
         {
-            util::playfxontag( localclientnum, level._effect[ #"hash_19f4dd97cbb87594" ], self.var_ed9e4472, "tag_fx" );
+            util::playfxontag( localclientnum, level._effect[ #"t8_leave_fx" ], self.var_ed9e4472, "tag_fx" );
         }
     }
 }

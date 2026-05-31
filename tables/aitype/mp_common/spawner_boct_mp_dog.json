@@ -9,16 +9,19 @@
     "scoreType": "#dog",
     "movementType": "#dog",
     "spawnInfluencers": [
-        "#hash_386e1bb6a5348b51",
-        "#hash_9742d61cd586672"
+        "#raps_friendly",
+        "#raps_enemy"
     ],
     "compassIcon": "#hash_67af4c8e6092942d",
     "typeSuffix": "_direwolf",
     "spawnerType": "hellhound",
     "character": [
-        "#hash_27016f0c841f8d5c"
+        "#c_t8_mp_spe_nomad_dog1"
     ],
-    "meleeWeapon": "#hash_175df87563aeea4e",
+    "animMappingTables": [
+        "#hash_415d64bf0a9ab8fa"
+    ],
+    "meleeWeapon": "#dog_ai_defaultmelee_mp",
     "aimTable": "#soldier_aim",
     "footstepTable": "#dogstep",
     "footstepScriptCallback": false,

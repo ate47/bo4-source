@@ -1,11 +1,13 @@
 {
     "name": "#hash_6dea0086f1a1a211",
-    "blackMarketName": "#",
-    "blackMarketDesc": "#",
-    "entitlementNameXHash": "#",
+    "productName": "#hash_759ef26905421d6d",
+    "productDesc": "#hash_36236366ef7bf4d7",
+    "previewImage": "#hash_fca237b3288dd21a",
+    "productImage": "#hash_fca237b3288dd21a",
+    "blackMarketImage": "#t7_store_product_bo4",
     "productID": "60490",
-    "previewImageName": "hash_7ca237b3288dd21a",
-    "productImageName": "hash_7ca237b3288dd21a",
-    "blackMarketImageName": "hash_1217b62ca29dad38",
-    "visibility": true
+    "unk78": "!10076",
+    "visibility": true,
+    "unka2": true,
+    "unka3": true
 }

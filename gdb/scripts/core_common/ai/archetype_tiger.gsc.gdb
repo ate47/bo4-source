@@ -121,7 +121,7 @@ DEVBLOCK 0x4594
 DEVBLOCK 0x466c
 # tigerbehavior::function_21c73eb5@2a
 DEVBLOCK 0x48e2
-# tigerbehavior::function_88b22921@2a
+# tigerbehavior::xmodelalias/bodies_civilian_asm_female_1.csc@2a
 DEVBLOCK 0x49aa
 # tigerbehavior::function_1e4eb5f0@12
 DEVBLOCK 0x4a52

@@ -1,16 +1,13 @@
 {
     "name": "#zm_rank_08",
-    "shortNameRef": "#",
     "fullNameRef": "#hash_2bab47021ccc7d0",
-    "ingameNameRef": "#",
-    "iconName": "#hash_1066abb185e7a4d",
-    "iconNameLarge": "#hash_f65f88eb4d49fd1",
     "level": 8,
     "minXp": 30500,
     "maxXp": 37700,
+    "icon": "#ui_icon_rank_zm_level08",
+    "iconLarge": "#ui_icon_rank_zm_level08_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#pistol_revolver_t8"
         }
     ]

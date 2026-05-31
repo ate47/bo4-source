@@ -1,12 +1,13 @@
 {
     "name": "#zombiesdlc0",
-    "blackMarketName": "#",
-    "blackMarketDesc": "#",
-    "entitlementNameXHash": "#",
-    "productID": "46270",
+    "productName": "#hash_5160f5aeff3820dc",
+    "productDesc": "#hash_60a43b46539e906b",
+    "previewImage": "#ui_menu_store_product_b04_classified_large",
+    "productImage": "#ui_menu_store_product_b04_classified_large",
+    "blackMarketImage": "#t7_store_product_bo4",
     "metadata": "DLC0ZM",
-    "previewImageName": "hash_e054b6f0539364e",
-    "productImageName": "hash_e054b6f0539364e",
-    "blackMarketImageName": "hash_1217b62ca29dad38",
-    "visibility": true
+    "productID": "46270",
+    "unk78": "!10055 !10067 10065",
+    "visibility": true,
+    "unka3": true
 }

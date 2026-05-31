@@ -412,7 +412,7 @@ function private shoutcaster_monitor_player_pucks( localclientnum )
         
         foreach ( player in getplayers( localclientnum ) )
         {
-            if ( isdefined( player ) && !function_3132f113( player ) )
+            if ( isdefined( player ) && !isremovedentity( player ) )
             {
                 if ( isalive( player ) )
                 {

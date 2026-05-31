@@ -484,12 +484,12 @@ function function_e82679f8( e_player )
     
     if ( function_8b1a219a() )
     {
-        zone = zm_orange_zones::function_ab7f70b9( undefined, s_zipline_use.str_destination );
+        zone = zm_orange_zones::get_location_string( undefined, s_zipline_use.str_destination );
         self sethintstring( #"hash_1c90be4081261de3", zone );
         return 1;
     }
     
-    zone = zm_orange_zones::function_ab7f70b9( undefined, s_zipline_use.str_destination );
+    zone = zm_orange_zones::get_location_string( undefined, s_zipline_use.str_destination );
     self sethintstring( #"hash_498ce6b1275c33fd", zone );
     return 1;
 }
@@ -762,18 +762,18 @@ function function_fc9707f4( vnd_start, s_zipline_use )
     
     if ( zm_loadout::is_placeable_mine( w_current ) || zm_equipment::is_equipment( w_current ) || ability_util::is_weapon_gadget( w_current ) || ability_util::is_hero_weapon( w_current ) )
     {
-        var_2e07b8ff = self getweaponslistprimaries();
+        a_w_primary_weapons = self getweaponslistprimaries();
         
-        if ( isdefined( var_2e07b8ff ) && var_2e07b8ff.size > 0 )
+        if ( isdefined( a_w_primary_weapons ) && a_w_primary_weapons.size > 0 )
         {
-            self switchtoweapon( var_2e07b8ff[ 0 ] );
+            self switchtoweapon( a_w_primary_weapons[ 0 ] );
             
             for ( var_5a7831c4 = 0; !var_5a7831c4 ; var_5a7831c4 = 1 )
             {
                 waitframe( 1 );
                 w_current = self getcurrentweapon();
                 
-                if ( w_current == var_2e07b8ff[ 0 ] )
+                if ( w_current == a_w_primary_weapons[ 0 ] )
                 {
                 }
             }

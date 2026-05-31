@@ -1,0 +1,44 @@
+{
+    "name": "#hash_6f6065c6ee2d5d97",
+    "model": "#hash_119c76393cd60b39",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_d0"
+                },
+                {
+                    "name": "#hash_7b6af4c427172417",
+                    "unk28": "tag_d1"
+                },
+                {
+                    "unk28": "tag_d1"
+                },
+                {
+                    "unk28": "tag_d2"
+                },
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_361f064ef33c8ee0",
+            "unk268": 1200,
+            "hideBones": [
+                28,
+                29,
+                30
+            ]
+        }
+    ]
+}

@@ -46,16 +46,16 @@ function player_keyline_render( localclientnum, oldval, newval, bnewent, binitia
         return;
     }
     
-    if ( newval && !( isdefined( self.var_a7656c04 ) && self.var_a7656c04 ) )
+    if ( newval && !( isdefined( self.b_keylined ) && self.b_keylined ) )
     {
-        self.var_a7656c04 = 1;
+        self.b_keylined = 1;
         self playrenderoverridebundle( #"hash_1c90592671f4c6e9" );
         return;
     }
     
-    if ( isdefined( self.var_a7656c04 ) && self.var_a7656c04 )
+    if ( isdefined( self.b_keylined ) && self.b_keylined )
     {
-        self.var_a7656c04 = 0;
+        self.b_keylined = 0;
         self stoprenderoverridebundle( #"hash_1c90592671f4c6e9" );
     }
 }
@@ -71,16 +71,16 @@ function enemy_keyline_render( localclientnum, oldval, newval, bnewent, binitial
         return;
     }
     
-    if ( newval && !( isdefined( self.var_a7656c04 ) && self.var_a7656c04 ) )
+    if ( newval && !( isdefined( self.b_keylined ) && self.b_keylined ) )
     {
-        self.var_a7656c04 = 1;
+        self.b_keylined = 1;
         self playrenderoverridebundle( #"hash_1dced6114b72a678" );
         return;
     }
     
-    if ( isdefined( self.var_a7656c04 ) && self.var_a7656c04 )
+    if ( isdefined( self.b_keylined ) && self.b_keylined )
     {
-        self.var_a7656c04 = 0;
+        self.b_keylined = 0;
         self stoprenderoverridebundle( #"hash_1dced6114b72a678" );
     }
 }

@@ -4,9 +4,9 @@
 #using scripts\core_common\util_shared;
 #using scripts\zm_common\zm_utility;
 
-#namespace namespace_b6ca3ccc;
+#namespace mansion_stick_man;
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xa8f0a5fe, Offset: 0x128
 // Size: 0x3b2
@@ -22,12 +22,12 @@ function init_clientfields()
     clientfield::register( "allplayers", "" + #"hash_30aa04edc476253f", 8000, 1, "int", &function_3c4642b1, 0, 0 );
     level._effect[ #"stick_fire" ] = #"hash_31d36dbca458b0dd";
     level._effect[ #"falling_leaves" ] = #"hash_6d3c039680511839";
-    level._effect[ #"hash_dea2f3dceff7569" ] = #"zombie/fx_spawn_dirt_body_billowing_zmb";
+    level._effect[ #"stone_rise_fx" ] = #"zombie/fx_spawn_dirt_body_billowing_zmb";
     level._effect[ #"player_afterlife" ] = #"hash_6484874c383f70f9";
     level._effect[ #"hash_418533e3f4de4e1a" ] = #"hash_5586bb7a838e870a";
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 7
 // Checksum 0x834303d7, Offset: 0x4e8
 // Size: 0x7c
@@ -35,11 +35,11 @@ function function_a7012457( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval )
     {
-        playfx( localclientnum, level._effect[ #"hash_dea2f3dceff7569" ], self.origin );
+        playfx( localclientnum, level._effect[ #"stone_rise_fx" ], self.origin );
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 7
 // Checksum 0xd453ff67, Offset: 0x570
 // Size: 0x8c
@@ -54,7 +54,7 @@ function function_f6c7ad1b( localclientnum, oldval, newval, bnewent, binitialsna
     self stoprenderoverridebundle( #"hash_2db85fc8b73a1571" );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 7
 // Checksum 0x599bd8a, Offset: 0x608
 // Size: 0xaa
@@ -71,7 +71,7 @@ function function_664898b6( localclientnum, oldval, newval, bnewent, binitialsna
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 7
 // Checksum 0x2cfbed70, Offset: 0x6c0
 // Size: 0x312
@@ -79,10 +79,10 @@ function function_959fcbff( localclientnum, oldval, newval, bnewent, binitialsna
 {
     self endon( #"death" );
     
-    if ( isdefined( self.var_d8243293 ) )
+    if ( isdefined( self.n_fire_fx ) )
     {
-        stopfx( localclientnum, self.var_d8243293 );
-        self.var_d8243293 = undefined;
+        stopfx( localclientnum, self.n_fire_fx );
+        self.n_fire_fx = undefined;
     }
     
     if ( isdefined( self.var_f756621f ) )
@@ -99,7 +99,7 @@ function function_959fcbff( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( newval == 1 )
     {
-        self.var_d8243293 = util::playfxontag( localclientnum, level._effect[ #"stick_fire" ], self, "tag_origin" );
+        self.n_fire_fx = util::playfxontag( localclientnum, level._effect[ #"stick_fire" ], self, "tag_origin" );
         
         if ( !isdefined( self.var_a0bfa25b ) )
         {
@@ -114,7 +114,7 @@ function function_959fcbff( localclientnum, oldval, newval, bnewent, binitialsna
     {
         forcestreamxmodel( #"p8_zm_man_dead_tree_branches_burned" );
         util::delay( 2, undefined, &stopforcestreamingxmodel, #"p8_zm_man_dead_tree_branches_burned" );
-        self.var_d8243293 = util::playfxontag( localclientnum, level._effect[ #"stick_fire" ], self, "tag_origin" );
+        self.n_fire_fx = util::playfxontag( localclientnum, level._effect[ #"stick_fire" ], self, "tag_origin" );
         
         if ( !isdefined( self.var_a0bfa25b ) )
         {
@@ -127,7 +127,7 @@ function function_959fcbff( localclientnum, oldval, newval, bnewent, binitialsna
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 7
 // Checksum 0xffbe2f6d, Offset: 0x9e0
 // Size: 0x1d6
@@ -168,7 +168,7 @@ function function_a5f32c8f( localclientnum, oldval, newval, bnewent, binitialsna
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 7
 // Checksum 0xdffdf0ba, Offset: 0xbc0
 // Size: 0x146
@@ -197,7 +197,7 @@ function function_f568352e( localclientnum, oldval, newval, bnewent, binitialsna
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 7
 // Checksum 0x14b0b781, Offset: 0xd10
 // Size: 0x4de
@@ -293,7 +293,7 @@ function function_d61c8c59( localclientnum, oldval, newval, bnewent, binitialsna
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 7
 // Checksum 0x65638026, Offset: 0x11f8
 // Size: 0x114
@@ -303,7 +303,7 @@ function function_3c4642b1( localclientnum, oldval, newval, bnewent, binitialsna
     {
         stopfx( localclientnum, self.var_928ceb18 );
         self.var_928ceb18 = undefined;
-        self notify( #"hash_ac788aea26a8b23" );
+        self notify( #"stop_drag_fx" );
     }
     
     if ( function_65b9eb0f( localclientnum ) )
@@ -319,13 +319,13 @@ function function_3c4642b1( localclientnum, oldval, newval, bnewent, binitialsna
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0xd0b2aa4d, Offset: 0x1318
 // Size: 0x5c
 function function_443d6ae( localclientnum )
 {
-    self endon( #"death", #"hash_ac788aea26a8b23" );
+    self endon( #"death", #"stop_drag_fx" );
     wait 0.15;
     self playrenderoverridebundle( #"hash_429426f01ad84c8b" );
 }

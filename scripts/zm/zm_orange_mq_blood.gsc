@@ -47,11 +47,11 @@ function main()
     level.var_4adebdfc.a_wisps = [];
     level.var_9e3c632e = 1;
     level.var_ed1e7d4d = 0;
-    level.var_63a35083 = zm_hms_util::function_2719d4c0( "mq_blood_loc", "targetname", "script_int" );
+    level.a_s_mq_blood_locs = zm_hms_util::function_2719d4c0( "mq_blood_loc", "targetname", "script_int" );
     level.var_e70fa660 = zm_hms_util::function_2719d4c0( "mq_blood_whisp_loc", "targetname", "script_int" );
     level waittill( #"start_zombie_round_logic" );
     level.s_mq_blood_vessel_loc thread blood_think();
-    level.var_4adebdfc moveto( level.var_63a35083[ 0 ].origin, 1, 0.1, 0.3 );
+    level.var_4adebdfc moveto( level.a_s_mq_blood_locs[ 0 ].origin, 1, 0.1, 0.3 );
     level.var_4adebdfc clientfield::set( "" + #"hash_10906b9ce905bda8", level.var_9e3c632e );
     level.var_9928b94b = [];
     level.var_9928b94b[ 0 ] = array( "docks_1", "docks_2", "boathouse", "frozen_crevasse", "ice_grotto", "lagoon" );
@@ -186,7 +186,7 @@ function blood_think()
             
             if ( level flag::get( #"blood_hints" ) )
             {
-                level.var_4adebdfc playsoundtoplayer( level.var_60b08c24.var_489c2917 + "_apot_0", player );
+                level.var_4adebdfc playsoundtoplayer( level.var_60b08c24.current_hint + "_apot_0", player );
             }
             
             wait 2;
@@ -289,7 +289,7 @@ function blood_event()
     
     level flag::clear( #"blood_active" );
     level thread function_9a991dc2( 2 );
-    self moveto( level.var_63a35083[ 0 ].origin, 1, 0.1, 0.5 );
+    self moveto( level.a_s_mq_blood_locs[ 0 ].origin, 1, 0.1, 0.5 );
     self.var_d0fed9fb = undefined;
     level.var_9e3c632e++;
     level.var_4adebdfc clientfield::set( "" + #"hash_10906b9ce905bda8", level.var_9e3c632e );
@@ -362,7 +362,7 @@ function blood_move()
     
     while ( level flag::get( #"blood_active" ) )
     {
-        stance_any_step = array::remove_index( level.var_63a35083, 0 );
+        stance_any_step = array::remove_index( level.a_s_mq_blood_locs, 0 );
         
         if ( isdefined( self.var_d0fed9fb ) )
         {
@@ -516,7 +516,7 @@ function function_a4fa2df0( n_index )
         
         while ( !self.b_near )
         {
-            a_players = zm_vo::function_347f7d34();
+            a_players = zm_vo::get_valid_players();
             
             foreach ( player in a_players )
             {

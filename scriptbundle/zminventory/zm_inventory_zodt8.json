@@ -9,8 +9,8 @@
                             "stageimage": "image#hash_28dfe18aa5794bf3"
                         }
                     ],
-                    "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "list_stages": 1,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                     "clientfield": "#zm_zodt8_dist_kit_1"
                 },
                 {
@@ -20,8 +20,8 @@
                             "stageimage": "image#hash_7d9c76d563c5825"
                         }
                     ],
-                    "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "list_stages": 1,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                     "clientfield": "#zm_zodt8_dist_kit_2"
                 },
                 {
@@ -31,8 +31,8 @@
                             "stageimage": "image#hash_7bdfc18a438de769"
                         }
                     ],
-                    "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "list_stages": 1,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
                     "clientfield": "#zm_zodt8_dist_kit_3"
                 },
                 {
@@ -54,34 +54,34 @@
                             "stageimage": "image#hash_210dbe01aa690110"
                         }
                     ],
-                    "hash_1d91eeba": 4,
-                    "hash_7db3435c": 1,
+                    "list_stages": 4,
+                    "hash_3f4bf8262e8164fe:hash_7db3435c": 1,
                     "clientfield": "#zm_zodt8_conc_catalyst"
                 }
             ],
-            "hash_b048489f": 4
+            "list_components": 4
         }
     ],
     "shieldpieces": [
         {
-            "hash_7db3435c": 0,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "pieceimage": "image#hash_bf20e4b3a86d1b5",
             "clientfield": "#shield_2"
         },
         {
-            "hash_7db3435c": 0,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "pieceimage": "image#hash_bf20d4b3a86d002",
             "clientfield": "#shield_3"
         },
         {
-            "hash_7db3435c": 0,
+            "hash_3f4bf8262e8164fe:hash_7db3435c": 0,
             "pieceimage": "image#hash_bf20c4b3a86ce4f",
             "clientfield": "#shield_1"
         }
     ],
     "objprogitems": [
         {
-            "description": "localized17#hash_4ba6bddb362745d9"
+            "description": "localized17#zmarcade/blank"
         },
         {
             "description": "localized17#hash_4574396eada01122"
@@ -121,17 +121,17 @@
     ],
     "objectivebackground": "image#hash_285e9a8a4926a4c1",
     "configstringfiletype": "scriptbundle",
-    "hash_aa76b7dd": 10,
-    "hash_3e38620e": 0,
+    "hash_18f4a9668000591d:hash_aa76b7dd": 10,
+    "hash_1dd088b99b7444ff:hash_3e38620e": 0,
     "type": "zminventory",
-    "hash_af62a8e8": 3,
+    "list_shieldpieces": 3,
     "name": "zm_inventory_zodt8",
-    "hash_f128673a": "image#hash_2028b2c0395c86bf",
-    "hash_88c17f11": "#zm_zodt8_sentinel_artifact",
-    "hash_c029b82f": 1,
-    "hash_846fa8e": "#zm_zodt8_sentinel_trial",
-    "hash_f3d39d90": 0,
-    "hash_250f773d": 2,
-    "hash_38b9613": 0,
-    "hash_16fb993f": "image#hash_30727aefda60cbd4"
+    "hash_46ae6385a01aa163:hash_f128673a": "image#hash_2028b2c0395c86bf",
+    "hash_4a28bffb41f0ab0a:hash_88c17f11": "#zm_zodt8_sentinel_artifact",
+    "hash_55c625aa7c011e55:hash_c029b82f": 1,
+    "hash_5964032c6ccd2477:hash_846fa8e": "#zm_zodt8_sentinel_trial",
+    "hash_65b46d8804cb3bba:hash_f3d39d90": 0,
+    "hash_692b290a49abb981:hash_250f773d": 2,
+    "hash_6ef84b6e3c25015d:hash_38b9613": 0,
+    "hash_7563aee2ccae246c:hash_16fb993f": "image#hash_30727aefda60cbd4"
 }

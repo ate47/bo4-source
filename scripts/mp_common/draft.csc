@@ -52,20 +52,20 @@ function __init__()
     level.var_8cb8d474[ #"allies" ][ 3 ] = #"draft_player_struct_3_allies";
     level.var_8cb8d474[ #"allies" ][ 4 ] = #"draft_player_struct_4_allies";
     level.var_8cb8d474[ #"axis" ] = [];
-    level.var_8cb8d474[ #"axis" ][ 0 ] = #"hash_3b2607cfca030035";
-    level.var_8cb8d474[ #"axis" ][ 2 ] = #"hash_253fd3975ea7547c";
-    level.var_8cb8d474[ #"axis" ][ 1 ] = #"hash_1edd5ff5456df7f7";
-    level.var_8cb8d474[ #"axis" ][ 3 ] = #"hash_61f816d9a00b29c6";
-    level.var_8cb8d474[ #"axis" ][ 4 ] = #"hash_753a11f84aa8941";
+    level.var_8cb8d474[ #"axis" ][ 0 ] = #"draft_player_struct_0_axis";
+    level.var_8cb8d474[ #"axis" ][ 2 ] = #"draft_player_struct_1_axis";
+    level.var_8cb8d474[ #"axis" ][ 1 ] = #"draft_player_struct_2_axis";
+    level.var_8cb8d474[ #"axis" ][ 3 ] = #"draft_player_struct_3_axis";
+    level.var_8cb8d474[ #"axis" ][ 4 ] = #"draft_player_struct_4_axis";
     level.var_a72b250f = [];
     level.var_a72b250f[ #"free" ] = #"hash_24d789c80dba10e6";
-    level.var_a72b250f[ #"allies" ] = #"hash_e2e52f9cab15dce";
-    level.var_a72b250f[ #"axis" ] = #"hash_50c9ef9e41155cf9";
-    level.var_a72b250f[ #"spectator" ] = #"hash_e2e52f9cab15dce";
+    level.var_a72b250f[ #"allies" ] = #"match_intro_allies";
+    level.var_a72b250f[ #"axis" ] = #"match_intro_axis";
+    level.var_a72b250f[ #"spectator" ] = #"match_intro_allies";
     level.draftstructs = [];
     level.draftstructs[ #"free" ] = #"draft_team_struct";
     level.draftstructs[ #"allies" ] = #"draft_team_struct_allies";
-    level.draftstructs[ #"axis" ] = #"hash_700492f71a083a7c";
+    level.draftstructs[ #"axis" ] = #"draft_team_struct_axis";
     level.draftstructs[ #"spectator" ] = #"draft_team_struct_allies";
     level.draftexploders = [];
     level.draftexploders[ #"allies" ] = "mp_draft_lights_allies";
@@ -498,8 +498,8 @@ function function_6b532f83( localclientnum, var_de58f286, sessionmode )
         {
             if ( var_de58f286.var_91065a59 )
             {
-                var_ca1716fe = weapongroupanim[ #"ready" ][ gender ];
-                anim_intro_name = var_ca1716fe[ posindex % var_ca1716fe.size ];
+                readyanimarray = weapongroupanim[ #"ready" ][ gender ];
+                anim_intro_name = readyanimarray[ posindex % readyanimarray.size ];
                 var_177782dd = weapongroupanim[ #"readyidle" ][ gender ];
                 anim_name = var_177782dd[ posindex % var_177782dd.size ];
             }
@@ -530,8 +530,8 @@ function function_6b532f83( localclientnum, var_de58f286, sessionmode )
             }
             else
             {
-                var_ca1716fe = weapongroupanim[ #"ready" ][ gender ];
-                anim_intro_name = var_ca1716fe[ posindex % var_ca1716fe.size ];
+                readyanimarray = weapongroupanim[ #"ready" ][ gender ];
+                anim_intro_name = readyanimarray[ posindex % readyanimarray.size ];
                 var_177782dd = weapongroupanim[ #"readyidle" ][ gender ];
                 anim_name = var_177782dd[ posindex % var_177782dd.size ];
             }
@@ -969,7 +969,7 @@ function watchkillcam()
 // Params 1
 // Checksum 0xa48b6017, Offset: 0x8590
 // Size: 0x14c
-function function_9afd868e( localclientnum )
+function setup_draft( localclientnum )
 {
     self notify( "5d2e4287c1d8f08d" );
     self endon( "5d2e4287c1d8f08d" );
@@ -1008,7 +1008,7 @@ function function_ca03ab69()
         localclientnum = waitresult.localclientnum;
         localplayer = function_5c10bd79( localclientnum );
         localplayer serverfield::set( "PositionDraft.uiLoaded", 1 );
-        level thread function_9afd868e( localclientnum );
+        level thread setup_draft( localclientnum );
     }
 }
 

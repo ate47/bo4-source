@@ -20,19 +20,19 @@ STRING "<dev string:x14a>" 0x29e4 0x2a28 0x2a68
 STRING "<dev string:x153>" 0x29dc 0x2a20
 # zm_equipment::setup_client_hintelem@158
 STRING "<dev string:x15c>" 0x2a60
-# zm_equipment::function_e418901e@3c zm_equipment::function_e418901e@ec zm_equipment::function_e418901e@19c
+# zm_equipment::run_equipment_devgui@3c zm_equipment::run_equipment_devgui@ec zm_equipment::run_equipment_devgui@19c
 STRING "<dev string:x165>" 0x361c 0x36cc 0x377c
-# zm_equipment::function_e418901e@6c zm_equipment::function_1d34b98d@28
+# zm_equipment::run_equipment_devgui@6c zm_equipment::add_devgui_equipment@28
 STRING "<dev string:x168>" 0x364c 0x37e0
-# zm_equipment::function_e418901e@8c
+# zm_equipment::run_equipment_devgui@8c
 STRING "<dev string:x183>" 0x366c
-# zm_equipment::function_e418901e@94 zm_equipment::function_e418901e@13c
+# zm_equipment::run_equipment_devgui@94 zm_equipment::run_equipment_devgui@13c
 STRING "<dev string:x1bf>" 0x3674 0x371c
-# zm_equipment::function_e418901e@9c zm_equipment::function_1d34b98d@84
+# zm_equipment::run_equipment_devgui@9c zm_equipment::add_devgui_equipment@84
 STRING "<dev string:x1c6>" 0x367c 0x383c
-# zm_equipment::function_1d34b98d@68
+# zm_equipment::add_devgui_equipment@68
 STRING "<dev string:x1cb>" 0x3820
-# zm_equipment::function_1d34b98d@74
+# zm_equipment::add_devgui_equipment@74
 STRING "<dev string:x1e7>" 0x382c
 # zm_equipment::abilities_devgui_add_gadgets_custom@48
 STRING "<dev string:x38>" 0x358
@@ -75,7 +75,7 @@ DEVBLOCK 0x1f86
 DEVBLOCK 0x2164
 # zm_equipment::setup_client_hintelem@12
 DEVBLOCK 0x291a
-# zm_equipment::function_e418901e@32
+# zm_equipment::run_equipment_devgui@32
 DEVBLOCK 0x3612
-# zm_equipment::function_1d34b98d@1a
+# zm_equipment::add_devgui_equipment@1a
 DEVBLOCK 0x37d2

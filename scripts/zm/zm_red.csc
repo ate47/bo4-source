@@ -255,14 +255,14 @@ function function_ef690ed4( localclientnum, oldval, newval, bnewent, binitialsna
 function function_ade26abd( str_dir )
 {
     self endon( #"death" );
-    var_10d4f67d = level.var_1c8295a8;
+    mdl_pegasus = level.var_1c8295a8;
     
-    if ( !isdefined( var_10d4f67d ) )
+    if ( !isdefined( mdl_pegasus ) )
     {
         return;
     }
     
-    var_10d4f67d endon( #"death" );
+    mdl_pegasus endon( #"death" );
     str_tag = "j_wingulna_le";
     
     if ( str_dir == #"right" )
@@ -270,9 +270,9 @@ function function_ade26abd( str_dir )
         str_tag = "j_wingulna_ri";
     }
     
-    level beam::launch( var_10d4f67d, str_tag, self, "j_spine4", "beam8_zm_red_peg_lightning_strike", 1 );
+    level beam::launch( mdl_pegasus, str_tag, self, "j_spine4", "beam8_zm_red_peg_lightning_strike", 1 );
     waitframe( 1 );
-    level beam::kill( var_10d4f67d, str_tag, self, "j_spine4", "beam8_zm_red_peg_lightning_strike" );
+    level beam::kill( mdl_pegasus, str_tag, self, "j_spine4", "beam8_zm_red_peg_lightning_strike" );
 }
 
 // Namespace zm_red/zm_red

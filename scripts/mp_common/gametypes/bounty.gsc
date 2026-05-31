@@ -144,7 +144,7 @@ function event_handler[gametype_init] main( eventstruct )
     globallogic_defaults::function_daa7e9d5();
     laststand_mp::function_367cfa1b( &function_95002a59 );
     laststand_mp::function_eb8c0e47( &onplayerrevived );
-    setdvar( #"hash_7036719f41a78d54", getgametypesetting( #"laststandrevivehealth" ) );
+    setdvar( #"player_laststandrevivehealth", getgametypesetting( #"laststandrevivehealth" ) );
     clientfield::register( "allplayers", "bountymoneytrail", 1, 1, "int" );
     clientfield::register( "toplayer", "realtime_multiplay", 1, 1, "int" );
     level.var_1aef539f = &function_a800815;
@@ -394,7 +394,7 @@ function private function_95002a59( attacker, victim, inflictor, weapon, meansof
     {
         overrideentitycamera = player::function_c0f28ff9( attacker, weapon );
         var_50d1e41a = potm::function_775b9ad1( weapon, meansofdeath );
-        potm::function_66d09fea( #"hash_11588f7b0737f095", attacker, self, inflictor, var_50d1e41a, overrideentitycamera );
+        potm::function_66d09fea( #"bh_downed", attacker, self, inflictor, var_50d1e41a, overrideentitycamera );
     }
     
     if ( isdefined( attacker ) )

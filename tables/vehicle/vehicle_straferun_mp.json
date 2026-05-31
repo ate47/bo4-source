@@ -1,0 +1,41 @@
+{
+    "name": "#vehicle_straferun_mp",
+    "type": "plane",
+    "scoreType": "none",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "exhaustFx": "#hash_b16821db5beb5e8",
+    "exhaustFxTag1": "tag_body_animate",
+    "lightFx": [
+        "#hash_38ba762988328b48",
+        "#hash_38ba762988328b48",
+        "#hash_38ba762988328b48",
+        "#hash_38ba762988328b48"
+    ],
+    "lightFxTag": [
+        "tag_engine_left_fx",
+        "tag_engine_left_outboard_fx",
+        "tag_engine_right_fx",
+        "tag_engine_right_outboard_fx"
+    ],
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#hash_69d37e96eca2adde",
+    "enemyModel": "#hash_44312120c2b44666",
+    "soundDef": "#hash_1003ed8ac5a00a12",
+    "compassIconMaterial": "#compass_lightningstrike",
+    "steerAxisName": "AXIS_LSTICK",
+    "gasButtonName": "BUTTON_LTRIG",
+    "reverseBrakeButtonName": "BUTTON_B",
+    "handBrakeButtonName": "BUTTON_B",
+    "attackButtonName": "BUTTON_RTRIG",
+    "attackSecondaryButtonName": "BUTTON_RSHLDR",
+    "bundle": {
+        "healthpoolsize": 650,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 2
+    }
+}

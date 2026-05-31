@@ -1,9 +1,9 @@
 {
-    "name": "code",
-    "nameHash": "#code",
+    "nameStr": "code",
+    "name": "#code",
     "displayName": "#menu/store_code",
-    "imageName": "#7027376462748829854",
     "visibility": false,
+    "image": "#t7_icon_menu_store_codpoints",
     "products": [
         "#hash_6dea0086f1a1a211",
         "#hash_2a93e67ff169d892",

@@ -257,9 +257,9 @@ function private lavapit_breach_( object )
 // Size: 0xa0
 function function_a02dfba()
 {
-    var_aff5104e = getentarray( "mq_dial_number", "targetname" );
+    a_e_code_numbers = getentarray( "mq_dial_number", "targetname" );
     
-    foreach ( e_code in var_aff5104e )
+    foreach ( e_code in a_e_code_numbers )
     {
         e_code function_eb2835af();
     }

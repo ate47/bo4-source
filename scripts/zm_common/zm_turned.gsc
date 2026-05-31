@@ -164,9 +164,9 @@ function turn_to_zombie()
     self.meleedamage = 1000;
     self detachall();
     
-    if ( isdefined( level.var_d78dbeb6 ) )
+    if ( isdefined( level.custom_zombie_player_loadout ) )
     {
-        self [[ level.var_d78dbeb6 ]]();
+        self [[ level.custom_zombie_player_loadout ]]();
     }
     else
     {

@@ -1,14 +1,14 @@
 {
     "contracticon": "image#hash_2976acc433c2ac92",
-    "hash_cb6692ec": "image#ui_icon_blackmarket_lockskull_256",
+    "hash_1b87a822f3633bf1:hash_cb6692ec": "image#ui_icon_blackmarket_lockskull_256",
     "contracttitle": "localized17#hash_8592b1d7469de35",
-    "hash_f5f86430": "image#hash_3365fee9119c3a79",
-    "hash_832d7586": "localized17#hash_16d1cbfde1cbd2d4",
-    "hash_b96387a0": "localized17#hash_24fc3c0245767e8d",
+    "hash_322c49bd38f7a781:hash_f5f86430": "image#hash_3365fee9119c3a79",
+    "hash_333645ebd6764bd9:hash_832d7586": "localized17#hash_16d1cbfde1cbd2d4",
+    "hash_36339d994438ca53:hash_b96387a0": "localized17#hash_24fc3c0245767e8d",
     "name": "loot_season_4_postseason",
     "bannerstring": "localized17#hash_2b81b691a5faa21d",
     "bannerimage": "image#hash_2fc620e4c5d0b7a9",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_2f2364b0acdf1940",
-    "hash_acb60209": "localized17#hash_57a6b0d2b9666740"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_2f2364b0acdf1940",
+    "hash_78cf2b49497d8762:hash_acb60209": "localized17#hash_57a6b0d2b9666740"
 }

@@ -219,7 +219,7 @@ function function_ede90521()
         }
     #/
     
-    level.var_60b08c24.var_489c2917 = self.var_d1f4d20d;
+    level.var_60b08c24.current_hint = self.var_d1f4d20d;
     level.var_60b08c24 thread zm_audio::do_player_or_npc_playvox( self.script_string + "_apot_0" );
     level flag::set( #"blood_hints" );
     self clientfield::set( "" + #"hash_60a7e5b79e8064a5", 1 );

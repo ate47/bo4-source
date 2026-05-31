@@ -1,5 +1,21 @@
 {
-    "name": "#loot_emblems",
     "nameStr": "loot_emblems",
-    "ddl": "#gamedata/ddl/generated/emblem.ddl"
+    "name": "#loot_emblems",
+    "ddlPath": "#gamedata/ddl/generated/emblem.ddl",
+    "files": [
+        {
+            "fileName": "loot_emblems",
+            "assetName": "#hash_11f3a8c2611acbfe"
+        },
+        {
+            "fileName": "loot_emblems_1",
+            "assetName": "#hash_2affb071b0e10e96"
+        }
+    ],
+    "size": 2048,
+    "readOnLogin": true,
+    "readOnly": true,
+    "sendToServer": false,
+    "useScratch": false,
+    "optional": true
 }

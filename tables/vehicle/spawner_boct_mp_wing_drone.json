@@ -1,0 +1,60 @@
+{
+    "name": "#spawner_boct_mp_wing_drone",
+    "type": "helicopter",
+    "scriptVehicleType": "wing_drone",
+    "scoreType": "sentinel",
+    "cameraTag": "tag_origin",
+    "archeType": "#wing_drone",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#wasp_friendly",
+    "spawnInfluencers2": "#wasp_enemy",
+    "scriptBundleSettings": "#drone_squadronsettings_wingman_mp",
+    "deathFx": "#hash_381d7a0eabc18b0c",
+    "deathFxTag": "tag_body_animate",
+    "deathFxSound": "#veh_wasp_explo",
+    "lightFx": [
+        "#hash_11e786b255074ab4",
+        "#hash_4af3a7f527705f47",
+        "#hash_4af3a7f527705f47"
+    ],
+    "lightFxTag": [
+        "tag_body_animate",
+        "tag_main_rotor",
+        "tag_tail_rotor"
+    ],
+    "unk11f4": [
+        "tag_main_rotor_animate",
+        "tag_tail_rotor_animate"
+    ],
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#hash_5e4e32ae8eb3f6e6",
+    "viewModel": "#hash_5e4e32ae8eb3f6e6",
+    "deathModel": "#hash_17eccbba0c8ea93e",
+    "enemyModel": "#hash_4498988c792da97e",
+    "soundDef": "#hash_7436337b9ee0ffac",
+    "lightCollisionRumble": "#veh_collision_light",
+    "heavyCollisionRumble": "#veh_collision_heavy",
+    "steerAxisName": "AXIS_LSTICK",
+    "gasAxisName": "AXIS_LSTICK",
+    "attackButtonName": "BUTTON_RTRIG",
+    "attackSecondaryButtonName": "BUTTON_LTRIG",
+    "unk1608": "BUTTON_RSHLDR",
+    "unk1618": "BUTTON_LSHLDR",
+    "bundle": {
+        "huds": [
+            {
+                "hash_16b4c5c47fcf7794:hash_56985ec1": 0,
+                "hideweaponinfo": 0,
+                "hash_3a63348c09d91b8d:hash_24c083a4": 0,
+                "vehiclehud": "VHUD_Sentinel",
+                "tintcolor": "1 1 1 1",
+                "hudcondition": "IsAttackMode"
+            }
+        ],
+        "healthpoolsize": 650,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 3
+    }
+}

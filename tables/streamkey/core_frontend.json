@@ -3,7 +3,7 @@
         {
             "name": "#core_frontend_all_stream",
             "xPakEntry": {
-                "key": 17651380893599420407,
+                "key": "#hash_f4f64d66d61c4ff7",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -15,12 +15,14 @@
                 "adjacentRight": 0
             },
             "size": 4096,
+            "unk44": 512,
+            "unk46": 5,
             "keyFlags": 3
         },
         {
             "name": "#hash_4badae32d1dacef9",
             "xPakEntry": {
-                "key": 18105424188531607044,
+                "key": "#hash_fb43635f71310604",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -32,12 +34,14 @@
                 "adjacentRight": 0
             },
             "size": 40104064,
+            "unk44": 512,
+            "unk46": 5,
             "keyFlags": 1
         },
         {
             "name": "#hash_6c8ecdc9fd4c3ace",
             "xPakEntry": {
-                "key": 17244848124532227941,
+                "key": "#hash_ef5202008c4dff65",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -49,12 +53,14 @@
                 "adjacentRight": 0
             },
             "size": 6144,
+            "unk44": 512,
+            "unk46": 5,
             "keyFlags": 3
         },
         {
             "name": "#hash_457eba97d957406f",
             "xPakEntry": {
-                "key": 16262116563684804153,
+                "key": "#hash_e1aea4dab26dc639",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -66,12 +72,14 @@
                 "adjacentRight": 0
             },
             "size": 1469440,
+            "unk44": 512,
+            "unk46": 5,
             "keyFlags": 1
         },
         {
             "name": "#hash_574cb7ddc449ba83",
             "xPakEntry": {
-                "key": 18005782379510961466,
+                "key": "#hash_f9e163ace9bd153a",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -83,12 +91,14 @@
                 "adjacentRight": 0
             },
             "size": 1507328,
+            "unk44": 64,
+            "unk46": 2,
             "keyFlags": 0
         },
         {
             "name": "#hash_5a39eb8cc175605f",
             "xPakEntry": {
-                "key": 18005782379510961466,
+                "key": "#hash_f9e163ace9bd153a",
                 "offset": 0,
                 "size": 0,
                 "xpakIndex": 0,
@@ -100,6 +110,8 @@
                 "adjacentRight": 0
             },
             "size": 1507328,
+            "unk44": 64,
+            "unk46": 3,
             "keyFlags": 0
         }
     ]

@@ -122,7 +122,7 @@ function on_player_spawned()
     {
         self.pers[ #"held_gadgets_power" ] = [];
         self.pers[ #"hash_7a954c017d693f69" ] = [];
-        self.pers[ #"hash_68cdf8807cfaabff" ] = [];
+        self.pers[ #"held_gadgets_deployed" ] = [];
     }
     
     self.heroabilityactivatetime = undefined;
@@ -184,7 +184,7 @@ function gadgets_save_power( game_ended )
         gadgetweapon = self._gadgets_player[ slot ];
         powerleft = self gadgetpowerchange( slot, 0 );
         var_51ec1787 = self function_adc6203f( slot );
-        deployed = self function_36dfc05f( slot );
+        deployed = self gadgetisdeployed( slot );
         
         if ( game_ended && ( deployed || util::gadget_is_in_use( slot ) ) )
         {
@@ -197,7 +197,7 @@ function gadgets_save_power( game_ended )
         
         self.pers[ #"held_gadgets_power" ][ gadgetweapon ] = powerleft;
         self.pers[ #"hash_7a954c017d693f69" ][ gadgetweapon ] = var_51ec1787;
-        self.pers[ #"hash_68cdf8807cfaabff" ][ gadgetweapon ] = deployed;
+        self.pers[ #"held_gadgets_deployed" ][ gadgetweapon ] = deployed;
     }
 }
 
@@ -345,7 +345,7 @@ function function_95218c27( slot, var_4dd90b81 = 0 )
         return;
     }
     
-    self.pers[ #"hash_68cdf8807cfaabff" ][ self._gadgets_player[ slot ] ] = 0;
+    self.pers[ #"held_gadgets_deployed" ][ self._gadgets_player[ slot ] ] = 0;
     self function_48e08b4( slot, self._gadgets_player[ slot ], var_4dd90b81 );
 }
 
@@ -765,7 +765,7 @@ function give_gadget( slot, weapon )
     {
         if ( self._gadgets_player[ slot ] != weapon )
         {
-            self.pers[ #"hash_68cdf8807cfaabff" ][ self._gadgets_player[ slot ] ] = 0;
+            self.pers[ #"held_gadgets_deployed" ][ self._gadgets_player[ slot ] ] = 0;
         }
         
         self take_gadget( slot, self._gadgets_player[ slot ] );
@@ -893,7 +893,7 @@ function turn_gadget_on( slot, weapon )
     {
         if ( weapon.name == #"gadget_health_regen" )
         {
-            var_f8e6b703 = self match_record::get_player_stat( #"hash_ec4aea1a8bbd82" );
+            var_f8e6b703 = self match_record::get_player_stat( #"current_life_index" );
             
             if ( isdefined( var_f8e6b703 ) )
             {
@@ -1251,11 +1251,11 @@ function gadget_ready( slot, weapon )
     {
         if ( weapon.name == #"gadget_health_regen" )
         {
-            var_f8e6b703 = self match_record::get_player_stat( #"hash_ec4aea1a8bbd82" );
+            var_f8e6b703 = self match_record::get_player_stat( #"current_life_index" );
             
             if ( isdefined( var_f8e6b703 ) )
             {
-                self match_record::inc_stat( #"lives", var_f8e6b703, #"hash_656f3981134db095", 1 );
+                self match_record::inc_stat( #"lives", var_f8e6b703, #"health_regen_earned_count", 1 );
             }
         }
         else
@@ -1477,7 +1477,7 @@ function function_fc4dc54( var_6fcde3b6 = 0 )
     {
         if ( ishash( str ) )
         {
-            str = function_9e72a96( str );
+            str = hashtostring( str );
         }
         
         toprint = "<dev string:x38>" + str;
@@ -1637,7 +1637,7 @@ function function_fc4dc54( var_6fcde3b6 = 0 )
                 var_1a27a47a = "<dev string:x1b3>";
             }
             
-            var_eb49090f = function_9e72a96( function_b14806c6( i, session_mode ) );
+            var_eb49090f = hashtostring( function_b14806c6( i, session_mode ) );
             var_4f6b7b98 = var_1a27a47a + "<dev string:x1c2>" + ( isdefined( var_eb49090f ) ? var_eb49090f : "<dev string:x1c8>" ) + "<dev string:x1cf>";
             
             if ( !isdefined( var_d59b8ebf.enabled ) || var_d59b8ebf.enabled == 0 )
@@ -2325,7 +2325,7 @@ function function_fc4dc54( var_6fcde3b6 = 0 )
                 {
                     n_power = self gadgetpowerget( i );
                     
-                    if ( !self util::gadget_is_in_use( i ) && !self function_36dfc05f( i ) && n_power < self._gadgets_player[ i ].gadget_powermax )
+                    if ( !self util::gadget_is_in_use( i ) && !self gadgetisdeployed( i ) && n_power < self._gadgets_player[ i ].gadget_powermax )
                     {
                         self gadgetpowerset( i, self._gadgets_player[ i ].gadget_powermax );
                     }

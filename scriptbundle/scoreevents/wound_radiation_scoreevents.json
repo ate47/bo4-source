@@ -4,6 +4,6 @@
     "vmtype": "both",
     "name": "wound_radiation_scoreevents",
     "customsettingstype": "status effect",
-    "hash_170b3630": "#hash_25a59c026e2a4fb3",
-    "hash_a6bfdc5f": "#hash_508ab107a010afcf"
+    "assistscoreevent": "#hash_25a59c026e2a4fb3",
+    "hash_7b912163cdd4e18a:hash_a6bfdc5f": "#hash_508ab107a010afcf"
 }

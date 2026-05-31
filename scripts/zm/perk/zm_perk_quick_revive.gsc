@@ -61,9 +61,9 @@ function enable_quick_revive_perk_for_level()
 // Size: 0x10e
 function quick_revive_precache()
 {
-    if ( isdefined( level.var_88d522c3 ) )
+    if ( isdefined( level.quick_revive_precache_override_func ) )
     {
-        [[ level.var_88d522c3 ]]();
+        [[ level.quick_revive_precache_override_func ]]();
         return;
     }
     

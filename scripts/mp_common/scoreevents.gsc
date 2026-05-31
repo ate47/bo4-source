@@ -1979,7 +1979,7 @@ function updateoneshotmultikills( victim, weapon, firsttimedamaged, meansofdeath
     if ( self.oneshotmultikills > 1 )
     {
         processscoreevent( #"kill_enemies_one_bullet", self, victim, weapon );
-        self contracts::increment_contract( #"hash_45b74ebf1ab2fd47" );
+        self contracts::increment_contract( #"contract_mp_collateral" );
     }
     else if ( weapon.statindex != level.weapon_hero_annihilator.statindex )
     {

@@ -481,12 +481,12 @@ function private init_rider( ai, vehicle, seat )
     
     if ( isdefined( ai.var_ec30f5da.rideanim ) && !isanimlooping( ai.var_ec30f5da.rideanim ) )
     {
-        assertmsg( "<dev string:x174>" + seat + "<dev string:x199>" + function_9e72a96( ai.vehicle.vehicletype ) + "<dev string:x1a9>" );
+        assertmsg( "<dev string:x174>" + seat + "<dev string:x199>" + hashtostring( ai.vehicle.vehicletype ) + "<dev string:x1a9>" );
     }
     
     if ( isdefined( ai.var_ec30f5da.aligntag ) && !isdefined( ai.vehicle gettagorigin( ai.var_ec30f5da.aligntag ) ) )
     {
-        assertmsg( "<dev string:x174>" + seat + "<dev string:x199>" + function_9e72a96( ai.vehicle.vehicletype ) + "<dev string:x1c4>" + ai.var_ec30f5da.aligntag + "<dev string:x1d9>" );
+        assertmsg( "<dev string:x174>" + seat + "<dev string:x199>" + hashtostring( ai.vehicle.vehicletype ) + "<dev string:x1c4>" + ai.var_ec30f5da.aligntag + "<dev string:x1d9>" );
     }
     
     ai flag::init( "in_vehicle" );
@@ -503,7 +503,7 @@ function fill_riders( a_ai, vehicle, seat )
     
     if ( !function_196797c9( vehicle ) )
     {
-        assertmsg( "<dev string:x1de>" + function_9e72a96( vehicle.vehicletype ) + "<dev string:x1f1>" );
+        assertmsg( "<dev string:x1de>" + hashtostring( vehicle.vehicletype ) + "<dev string:x1f1>" );
         return;
     }
     
@@ -601,7 +601,7 @@ function unload( seat )
     
     if ( !function_196797c9( self ) )
     {
-        assertmsg( "<dev string:x1de>" + function_9e72a96( self.vehicletype ) + "<dev string:x1f1>" );
+        assertmsg( "<dev string:x1de>" + hashtostring( self.vehicletype ) + "<dev string:x1f1>" );
         return;
     }
     
@@ -1139,7 +1139,7 @@ function get_in( ai, vehicle, seat, var_7c3e4d44 = 1 )
                 /#
                     if ( var_7c3e4d44 )
                     {
-                        assertmsg( "<dev string:x32e>" + function_9e72a96( vehicle.vehicletype ) + "<dev string:x355>" );
+                        assertmsg( "<dev string:x32e>" + hashtostring( vehicle.vehicletype ) + "<dev string:x355>" );
                     }
                 #/
                 
@@ -1154,7 +1154,7 @@ function get_in( ai, vehicle, seat, var_7c3e4d44 = 1 )
                 /#
                     if ( var_7c3e4d44 )
                     {
-                        assertmsg( "<dev string:x381>" + function_9e72a96( vehicle.vehicletype ) + "<dev string:x3ab>" );
+                        assertmsg( "<dev string:x381>" + hashtostring( vehicle.vehicletype ) + "<dev string:x3ab>" );
                     }
                 #/
                 
@@ -1169,7 +1169,7 @@ function get_in( ai, vehicle, seat, var_7c3e4d44 = 1 )
                 /#
                     if ( var_7c3e4d44 )
                     {
-                        assertmsg( "<dev string:x3da>" + function_9e72a96( vehicle.vehicletype ) + "<dev string:x401>" );
+                        assertmsg( "<dev string:x3da>" + hashtostring( vehicle.vehicletype ) + "<dev string:x401>" );
                     }
                 #/
                 
@@ -1186,7 +1186,7 @@ function get_in( ai, vehicle, seat, var_7c3e4d44 = 1 )
                 /#
                     if ( var_7c3e4d44 )
                     {
-                        assertmsg( "<dev string:x42d>" + function_9e72a96( vehicle.vehicletype ) + "<dev string:x452>" );
+                        assertmsg( "<dev string:x42d>" + hashtostring( vehicle.vehicletype ) + "<dev string:x452>" );
                     }
                 #/
                 
@@ -1203,7 +1203,7 @@ function get_in( ai, vehicle, seat, var_7c3e4d44 = 1 )
     
     if ( !isdefined( ai.var_ec30f5da.rideanim ) )
     {
-        assertmsg( "<dev string:x48f>" + seat + "<dev string:x199>" + function_9e72a96( vehicle.vehicletype ) + "<dev string:x4b2>" + function_e84837df( ai, vehicle ) );
+        assertmsg( "<dev string:x48f>" + seat + "<dev string:x199>" + hashtostring( vehicle.vehicletype ) + "<dev string:x4b2>" + function_e84837df( ai, vehicle ) );
         return;
     }
     

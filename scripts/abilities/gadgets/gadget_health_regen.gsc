@@ -105,9 +105,9 @@ function function_ddfdddb1()
         self clientfield::set_to_player( "healthregen", 1 );
     }
     
-    if ( isdefined( level.p8_wep_gun_storage_rack_03_lod5_s1_geo_rigid_bs_pehghddpjrzbf52gqu27h64a4b ) )
+    if ( isdefined( level.var_5568effe ) )
     {
-        [[ level.p8_wep_gun_storage_rack_03_lod5_s1_geo_rigid_bs_pehghddpjrzbf52gqu27h64a4b ]]( self );
+        [[ level.var_5568effe ]]( self );
     }
 }
 
@@ -181,9 +181,9 @@ function function_bc0ce7d5( slot, weapon )
             
             if ( isdefined( var_1594ab5[ i ].laststand ) && var_1594ab5[ i ].laststand )
             {
-                if ( isdefined( var_1594ab5[ i ].var_84c0402e ) )
+                if ( isdefined( var_1594ab5[ i ].last_bleedout_time ) )
                 {
-                    var_1594ab5[ i ].bleedout_time = var_1594ab5[ i ].var_84c0402e;
+                    var_1594ab5[ i ].bleedout_time = var_1594ab5[ i ].last_bleedout_time;
                 }
             }
             else

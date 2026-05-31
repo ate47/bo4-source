@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_paper",
+    "type": "#gesture",
+    "gesture": "#hash_4589fc15480441c4",
+    "gesture2": "#hash_7488e1b2d6fb8eb7",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/paper",
+        "icon": "image#hash_7f90c2028916846c",
+        "isdefault": 0
+    }
+}

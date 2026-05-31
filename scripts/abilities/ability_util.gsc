@@ -411,7 +411,7 @@ function gadget_reset( gadgetweapon, changedclass, roundbased, firstround, chang
         var_9468eb59 = isdefined( self.switchedteamsresetgadgets ) && self.switchedteamsresetgadgets && getdvarint( #"hash_8351525729015ab", 0 );
         deployed = 0;
         
-        if ( isdefined( self.pers[ #"hash_68cdf8807cfaabff" ] ) && isdefined( self.pers[ #"hash_68cdf8807cfaabff" ][ gadgetweapon ] ) && self.pers[ #"hash_68cdf8807cfaabff" ][ gadgetweapon ] )
+        if ( isdefined( self.pers[ #"held_gadgets_deployed" ] ) && isdefined( self.pers[ #"held_gadgets_deployed" ][ gadgetweapon ] ) && self.pers[ #"held_gadgets_deployed" ][ gadgetweapon ] )
         {
             if ( ( gadgetweapon.var_7b5016a7 || !changedclass ) && !isfirstspawn )
             {

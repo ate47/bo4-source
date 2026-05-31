@@ -80,7 +80,7 @@ function private init()
         game.var_659f084a = getgametypesetting( #"hash_6881c7cab0dcef39" );
         game.var_50b05a28 = getgametypesetting( #"hash_7c0dcff6ffb1e348" );
         game.var_6bd02863 = getgametypesetting( #"hash_4f4a73f236278ba8" );
-        game.var_691bbcd2 = getgametypesetting( #"hash_7c0acf14fb1f4080" );
+        game.actsq = getgametypesetting( #"hash_7c0acf14fb1f4080" );
         function_f6b119c7();
         game.var_c7826a3f = getgametypesetting( #"hash_6269eb986d22cd37" );
         game.var_b924522a = getgametypesetting( #"hash_6e2abf2cc40e03f1" );
@@ -499,7 +499,7 @@ function function_f909006c( currentevent )
                     
                     if ( !isdefined( label ) )
                     {
-                        label = #"hash_480234a872bd64ac";
+                        label = #"score/blank";
                     }
                     
                     if ( !isdefined( score ) )
@@ -1866,19 +1866,19 @@ function function_5b1e9ed4( modulename, bookmarkname, time, var_81538b15, var_f2
     
     if ( !isdefined( var_900768bc ) )
     {
-        println( function_9e72a96( modulename ) + "<dev string:x6b2>" + bookmarkname + "<dev string:x6cf>" + inflictorenttype + "<dev string:x6de>" + var_6f810a5 + "<dev string:x6f4>" );
+        println( hashtostring( modulename ) + "<dev string:x6b2>" + bookmarkname + "<dev string:x6cf>" + inflictorenttype + "<dev string:x6de>" + var_6f810a5 + "<dev string:x6f4>" );
         return undefined;
     }
     
     if ( var_7491f0eb && isdefined( var_81538b15 ) && isplayer( var_81538b15 ) && !isalive( var_81538b15 ) )
     {
-        println( function_9e72a96( modulename ) + "<dev string:x6b2>" + bookmarkname + "<dev string:x6cf>" + inflictorenttype + "<dev string:x6de>" + var_6f810a5 + "<dev string:x720>" + var_81538b15 getentitynumber() + "<dev string:x731>" );
+        println( hashtostring( modulename ) + "<dev string:x6b2>" + bookmarkname + "<dev string:x6cf>" + inflictorenttype + "<dev string:x6de>" + var_6f810a5 + "<dev string:x720>" + var_81538b15 getentitynumber() + "<dev string:x731>" );
         return undefined;
     }
     
     if ( isdefined( level.infinalkillcam ) && level.infinalkillcam )
     {
-        println( function_9e72a96( modulename ) + "<dev string:x6b2>" + bookmarkname + "<dev string:x6cf>" + inflictorenttype + "<dev string:x6de>" + var_6f810a5 + "<dev string:x743>" );
+        println( hashtostring( modulename ) + "<dev string:x6b2>" + bookmarkname + "<dev string:x6cf>" + inflictorenttype + "<dev string:x6de>" + var_6f810a5 + "<dev string:x743>" );
         return undefined;
     }
     
@@ -2107,7 +2107,7 @@ function kill_bookmark( var_81538b15, var_f28fb772, einflictor, var_50d1e41a, ov
         return;
     }
     
-    if ( game.var_691bbcd2 )
+    if ( game.actsq )
     {
         println( "<dev string:x814>" );
         return;
@@ -2141,9 +2141,9 @@ function function_66d09fea( bookmarkname, var_81538b15, var_f28fb772, einflictor
         return;
     }
     
-    if ( game.var_691bbcd2 )
+    if ( game.actsq )
     {
-        println( function_9e72a96( game.var_8ea529d1 ) + "<dev string:x87e>" );
+        println( hashtostring( game.var_8ea529d1 ) + "<dev string:x87e>" );
         return;
     }
     

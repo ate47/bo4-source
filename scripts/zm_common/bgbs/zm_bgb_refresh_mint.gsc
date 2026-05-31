@@ -48,7 +48,7 @@ function activation()
             
             if ( w_lethal == getweapon( #"tomahawk_t8" ) || w_lethal == getweapon( #"tomahawk_t8_upgraded" ) )
             {
-                if ( !player function_36dfc05f( n_slot ) )
+                if ( !player gadgetisdeployed( n_slot ) )
                 {
                     player notify( #"hash_3d73720d4588203c" );
                     player gadgetpowerset( n_slot, 100 );

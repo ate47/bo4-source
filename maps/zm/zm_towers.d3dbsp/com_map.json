@@ -1,0 +1,3550 @@
+{
+    "name": "#maps/zm/zm_towers.d3dbsp",
+    "isInUse": true,
+    "primaryLights": 1611,
+    "lightExploders": [
+        {
+            "lightExploderName": "#exp_lgt_ar_stealth_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1427,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_body_pit_secret_room",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1135,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1136,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1137,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1138,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1139,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1140,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1141,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1142,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1143,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1144,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1145,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1146,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1147,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1148,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1149,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1150,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1151,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1152,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1153,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1154,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1155,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1156,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_magic_box_danub",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 366,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 367,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 368,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_magic_box_danu2",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 360,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 361,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 362,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_smg_standard_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1449,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1454,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_15a435b03b930760",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 500,
+                    "primaryLightIndex": 1518,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 500,
+                    "primaryLightIndex": 1546,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_16a766485c754eaa",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1093,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1094,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1097,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1098,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1099,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1100,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1101,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1130,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1131,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_ar_fastfire_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1445,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1446,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_pistol_revolver_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1429,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1431,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_ar_modular_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1433,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1434,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_225ee17770c0100b",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 1500,
+                    "primaryLightIndex": 1498,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 1500,
+                    "primaryLightIndex": 1499,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 1500,
+                    "primaryLightIndex": 1501,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 1500,
+                    "primaryLightIndex": 1502,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 1500,
+                    "primaryLightIndex": 1503,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 1500,
+                    "primaryLightIndex": 1504,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1534,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 1500,
+                    "primaryLightIndex": 1553,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_ar_accurate_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1459,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1460,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_pistol_burst_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1440,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1441,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_smg_handling_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1442,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1461,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_smg_drum_pistol_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1438,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1439,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_magic_box_odin2",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 404,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_magic_box_odinb",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 405,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_shotgun_pump_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1463,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_magic_box_zeus2",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 363,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 364,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 365,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_magic_box_zeusb",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 639,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_tr_longburst_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1452,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1453,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_tr_leveraction_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1443,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_special_round",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 3000,
+                    "fadeOut": 3000,
+                    "primaryLightIndex": 30,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 3000,
+                    "fadeOut": 3000,
+                    "primaryLightIndex": 31,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 3000,
+                    "fadeOut": 3000,
+                    "primaryLightIndex": 32,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 3000,
+                    "fadeOut": 3000,
+                    "primaryLightIndex": 33,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 3000,
+                    "fadeOut": 3000,
+                    "primaryLightIndex": 1093,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 3000,
+                    "fadeOut": 3000,
+                    "primaryLightIndex": 1094,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1097,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1098,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1099,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1100,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1101,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1112,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1113,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1114,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1115,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1116,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1117,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1118,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1119,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1120,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1121,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1122,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1123,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1124,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1125,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1126,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1127,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1128,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1129,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 3000,
+                    "fadeOut": 3000,
+                    "primaryLightIndex": 1130,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 3000,
+                    "fadeOut": 3000,
+                    "primaryLightIndex": 1131,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_smg_fastfire_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1457,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1458,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_magic_box_cat_swt",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 44,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_pistol_standard_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1436,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_5404accb1f4e5061",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1535,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 1500,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1536,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 1500,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1537,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 1500,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1538,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 1500,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1539,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_bowie",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1437,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_57abb9429e7824d5",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 1000,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1524,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 1000,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1525,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_player_start",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 5000,
+                    "primaryLightIndex": 295,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 5000,
+                    "primaryLightIndex": 300,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 5000,
+                    "primaryLightIndex": 301,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 5000,
+                    "primaryLightIndex": 302,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 5000,
+                    "primaryLightIndex": 303,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_magic_box_cat_net",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 23,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_magic_box_ra2",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 406,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 407,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 408,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_magic_box_rab",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 409,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 410,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 411,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_lmg_standard_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1428,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1462,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_shotgun_trenchgun_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1464,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1465,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c2fabf3b60f3d00",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1479,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1480,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1481,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1580,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1581,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1582,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1600,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1607,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1608,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1609,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c4b3bf3b626f968",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1469,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1471,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1473,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1558,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1585,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1601,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1602,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1603,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c4e41f3b6293971",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1472,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1587,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1588,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1589,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c51c7f3b62c52fa",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1476,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1521,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1547,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1559,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1560,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1561,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c5530f3b62f3b3c",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1477,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1478,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1544,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1562,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1590,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c5535f3b62f43bb",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1482,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1483,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1530,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1531,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1563,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1564,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1565,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c58b0f3b6324a93",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1484,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1570,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1595,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1596,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c58b3f3b6324fac",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1485,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1486,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1545,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1566,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1567,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1568,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1569,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c5c39f3b6356935",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1489,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1490,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1491,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1571,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1572,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1573,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c5f37f3b6379ba6",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1494,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1579,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1592,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c5f3ff3b637a93e",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1487,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1488,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1493,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1523,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1574,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1575,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1576,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c5f44f3b637b1bd",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1492,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1522,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1577,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1578,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1591,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c62c5f3b63ac2c7",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1496,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1532,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1533,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1597,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1598,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1599,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_tr_powersemi_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1432,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7545e6f3bb53a0cb",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1513,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1514,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1520,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1556,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1557,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1604,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1605,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7556e4f3bb621098",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1497,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1505,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_755a6af3bb652a21",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1468,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1500,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1506,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1526,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1527,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1528,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1529,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_755df0f3bb6843aa",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1495,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1548,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1549,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1550,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1551,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1552,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1583,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1584,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1606,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7564dcf3bb6e405c",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1466,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1467,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1470,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1474,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1475,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1511,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1512,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1515,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1516,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1517,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1519,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1555,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1586,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_xd_sh060",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1509,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1510,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1554,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1593,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1594,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_756b68f3bb7399ee",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1507,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1508,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_756eeef3bb76b377",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1540,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1541,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1542,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1543,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_pap",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 26,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 27,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 28,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 29,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 34,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 305,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 306,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 307,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 308,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 310,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 311,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 312,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 313,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 314,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 315,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 316,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 317,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 369,
+                    "reversed": true
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_smg_accurate_t8",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1450,
+                    "reversed": true
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 1451,
+                    "reversed": true
+                }
+            ]
+        }
+    ],
+    "probeExploders": [
+        {
+            "lightExploderName": "#exp_lgt_body_pit_secret_room",
+            "triggerData": [
+                {
+                    "probeID": 116,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": true
+                },
+                {
+                    "probeID": 122,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 123,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_pap",
+            "triggerData": [
+                {
+                    "probeID": 115,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": true
+                },
+                {
+                    "probeID": 113,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": true
+                },
+                {
+                    "probeID": 114,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": true
+                },
+                {
+                    "probeID": 111,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": true
+                },
+                {
+                    "probeID": 119,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 120,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 117,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 112,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": true
+                },
+                {
+                    "probeID": 121,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 118,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_755df0f3bb6843aa",
+            "triggerData": [
+                {
+                    "probeID": 321,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 320,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 319,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 322,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_755a6af3bb652a21",
+            "triggerData": [
+                {
+                    "probeID": 318,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 316,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 317,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7556e4f3bb621098",
+            "triggerData": [
+                {
+                    "probeID": 315,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_756eeef3bb76b377",
+            "triggerData": [
+                {
+                    "probeID": 318,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_756b68f3bb7399ee",
+            "triggerData": [
+                {
+                    "probeID": 318,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#exp_lgt_xd_sh060",
+            "triggerData": [
+                {
+                    "probeID": 314,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7564dcf3bb6e405c",
+            "triggerData": [
+                {
+                    "probeID": 312,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 313,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 301,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_7545e6f3bb53a0cb",
+            "triggerData": [
+                {
+                    "probeID": 311,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 310,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c4b3bf3b626f968",
+            "triggerData": [
+                {
+                    "probeID": 309,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 300,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 301,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 308,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c4e41f3b6293971",
+            "triggerData": [
+                {
+                    "probeID": 307,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c51c7f3b62c52fa",
+            "triggerData": [
+                {
+                    "probeID": 306,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c5530f3b62f3b3c",
+            "triggerData": [
+                {
+                    "probeID": 128,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 305,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 304,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c5535f3b62f43bb",
+            "triggerData": [
+                {
+                    "probeID": 302,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 303,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c58b3f3b6324fac",
+            "triggerData": [
+                {
+                    "probeID": 300,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 291,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 301,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c58b0f3b6324a93",
+            "triggerData": [
+                {
+                    "probeID": 299,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 298,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c5c39f3b6356935",
+            "triggerData": [
+                {
+                    "probeID": 297,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c5f3ff3b637a93e",
+            "triggerData": [
+                {
+                    "probeID": 296,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 295,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 294,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c5f44f3b637b1bd",
+            "triggerData": [
+                {
+                    "probeID": 293,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 294,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c5f37f3b6379ba6",
+            "triggerData": [
+                {
+                    "probeID": 291,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 292,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c62c5f3b63ac2c7",
+            "triggerData": [
+                {
+                    "probeID": 301,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 289,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 290,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#hash_6c2fabf3b60f3d00",
+            "triggerData": [
+                {
+                    "probeID": 287,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 288,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 286,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        }
+    ],
+    "sunVolumeProbeCount": [
+        322,
+        22,
+        1
+    ],
+    "probeGuids": [
+        912285467,
+        759782206,
+        3198989040,
+        759782209,
+        759782399,
+        759782335,
+        759782317,
+        3790749128,
+        4031884957,
+        759782396,
+        759782393,
+        759782218,
+        759782347,
+        8198700,
+        759782248,
+        759782155,
+        759782447,
+        759782308,
+        759782158,
+        2553089469,
+        759782077,
+        759782167,
+        759782152,
+        759782344,
+        759782365,
+        759782350,
+        759782323,
+        759782320,
+        759782227,
+        759782387,
+        759782149,
+        1708383732,
+        759782146,
+        1069353423,
+        759782311,
+        1164687268,
+        759782080,
+        1380167094,
+        3948903593,
+        759782095,
+        1605917737,
+        328947533,
+        759782098,
+        759782089,
+        759782224,
+        940060707,
+        759782435,
+        1242266280,
+        3558838532,
+        759782185,
+        759782197,
+        759782188,
+        759782194,
+        117445760,
+        3629328969,
+        759782191,
+        759782233,
+        759782432,
+        759782429,
+        759782182,
+        2268903695,
+        1892917831,
+        1402648304,
+        759782251,
+        759782179,
+        1517801471,
+        759782212,
+        759782353,
+        759782420,
+        759782338,
+        759782414,
+        759782411,
+        759782299,
+        759782450,
+        759782200,
+        1839526175,
+        424396714,
+        759782296,
+        759782107,
+        2035038965,
+        759782071,
+        3060188825,
+        3484670951,
+        759782245,
+        759782065,
+        759782257,
+        759782116,
+        759782384,
+        759782215,
+        3499998684,
+        4140277322,
+        4219258040,
+        3924409227,
+        759782128,
+        1872104816,
+        1525090130,
+        1060099660,
+        759782137,
+        759782441,
+        759782119,
+        759782444,
+        759782140,
+        759782068,
+        552629676,
+        2435430865,
+        3995664853,
+        759782405,
+        759782408,
+        759782230,
+        759782329,
+        3429704065,
+        759782176,
+        715258804,
+        759782356,
+        759782368,
+        759782390,
+        3636393331,
+        163338658,
+        3636393325,
+        3636393328,
+        871873387,
+        3217774522,
+        1251267859,
+        97664861,
+        97664876,
+        97664870,
+        1838276108,
+        500592891,
+        97664855,
+        97665404,
+        97665401,
+        97664858,
+        97664867,
+        97665074,
+        97665071,
+        97665119,
+        267399720,
+        97665116,
+        97665083,
+        97664873,
+        97664864,
+        97665086,
+        97665383,
+        97665377,
+        97665350,
+        2287300321,
+        97665356,
+        97665008,
+        97665398,
+        97665353,
+        97665395,
+        97665266,
+        97665392,
+        2921914091,
+        1502403284,
+        97664798,
+        97665365,
+        97664909,
+        97665362,
+        2911505147,
+        97665005,
+        97665359,
+        3361118506,
+        1558030428,
+        4024748600,
+        97664915,
+        597990038,
+        782499088,
+        2666178592,
+        759782101,
+        2933646268,
+        97664906,
+        97664927,
+        542314700,
+        3300745311,
+        97664918,
+        2971962694,
+        97664948,
+        97664951,
+        97664945,
+        97664939,
+        97664903,
+        97665041,
+        3559259343,
+        97664936,
+        332739850,
+        1533079379,
+        2197337441,
+        86452130,
+        104642788,
+        97665098,
+        97665089,
+        4145632325,
+        97665065,
+        1872104819,
+        4191494041,
+        97664933,
+        97665056,
+        97665062,
+        2749957816,
+        225251805,
+        3720468439,
+        97665059,
+        97665044,
+        97665068,
+        97665101,
+        97665155,
+        97665164,
+        97665179,
+        97665209,
+        1156009412,
+        3823684951,
+        1429353647,
+        97665173,
+        97665176,
+        97665185,
+        97665182,
+        97665200,
+        97665161,
+        97665158,
+        97665188,
+        2042863730,
+        97665212,
+        1735410866,
+        2135598601,
+        97665197,
+        97665122,
+        97665152,
+        97665257,
+        97665242,
+        97665227,
+        97665254,
+        2188967694,
+        97665113,
+        97665107,
+        97665263,
+        2582431245,
+        97665368,
+        97665269,
+        97665407,
+        97665260,
+        97665170,
+        97665146,
+        97665167,
+        97665272,
+        1940328150,
+        1463914903,
+        2092069272,
+        1701188499,
+        539672760,
+        937383705,
+        1251595562,
+        2178407413,
+        97664987,
+        3197562861,
+        1771989385,
+        990340004,
+        759782293,
+        97664960,
+        906994985,
+        97665218,
+        97665224,
+        97664978,
+        759782164,
+        97664972,
+        97664999,
+        1315475017,
+        3656326904,
+        97664990,
+        97664957,
+        223178056,
+        97664954,
+        97665080,
+        3801843895,
+        1477350784,
+        469661911,
+        2638936459,
+        2661680227,
+        229448718,
+        2919364978,
+        790643308,
+        2423794990,
+        97664996,
+        97664969,
+        97665047,
+        489948420,
+        3139859307,
+        3138741648,
+        3468586860,
+        4259136823,
+        2780491953,
+        1142815399,
+        1718669014,
+        300217661,
+        2433980107,
+        2268952050,
+        2561835795,
+        1626581116,
+        2826941937,
+        3607673189,
+        1644047130,
+        3833957260,
+        2662029992,
+        984945460,
+        3886486304,
+        678812033,
+        1999071934,
+        920165102,
+        119917067,
+        2745599064,
+        1710012732,
+        952427835,
+        1149526891,
+        1250774917,
+        3382179341,
+        4141931794,
+        2787544582,
+        165384848,
+        3266535253,
+        4101662874,
+        1874760073,
+        3316247406,
+        2405447464,
+        2405447452,
+        2405447488,
+        2405447482,
+        2405447476,
+        2405447479,
+        2405447458,
+        2405447467,
+        1967146221,
+        1304602086,
+        2405447470,
+        1904639372,
+        1771326006,
+        1771326015,
+        1771326231,
+        1771325997,
+        1771326228,
+        3016439684,
+        1771326000,
+        1771326216,
+        295146735,
+        1771326018,
+        0
+    ]
+}

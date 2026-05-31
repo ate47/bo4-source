@@ -7,14 +7,14 @@
             "available": -1
         }
     ],
-    "hash_3d685b35": 0,
+    "hash_10c6cc011716f6f3:hash_3d685b35": 0,
     "configstringfiletype": "scriptbundle",
     "type": "itemspawnlist",
-    "hash_345eba59": 1,
+    "list_itemlist": 1,
     "vehiclespawner": 0,
-    "hash_9b009839": -1,
-    "hash_dc7ffbef": 0,
+    "hash_3ddace39cf864a1f:hash_9b009839": -1,
+    "hash_42d149b1b6c12f78:hash_dc7ffbef": 0,
     "name": "diner_list_health",
     "supplystashweight": 100,
-    "hash_dc91e192": 0
+    "prioritizedspawning": 0
 }

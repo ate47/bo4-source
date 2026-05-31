@@ -46,7 +46,7 @@ class clower_message : cluielem
             return;
         }
         
-        if ( #"hash_45bfcb1cd8c9b50a" == state_name )
+        if ( #"visiblemessageonly" == state_name )
         {
             player clientfield::function_9bf78ef8( _uid, "_state", 2 );
             return;

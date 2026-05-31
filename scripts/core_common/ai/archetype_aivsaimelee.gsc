@@ -460,7 +460,7 @@ function private chooseaivsaimeleeanimations( behaviortreeentity )
     if ( !aivsaimeleebundleexists( behaviortreeentity, attacker_variant, defender_variant ) )
     {
         /#
-            record3dtext( "<dev string:x515>" + function_9e72a96( behaviortreeentity.archetype ) + "<dev string:x54a>" + behaviortreeentity.enemy.archetype + "<dev string:x54a>" + attacker_variant + "<dev string:x54a>" + defender_variant, behaviortreeentity.origin, ( 1, 0.5, 0 ), "<dev string:x63>", behaviortreeentity, 0.4 );
+            record3dtext( "<dev string:x515>" + hashtostring( behaviortreeentity.archetype ) + "<dev string:x54a>" + behaviortreeentity.enemy.archetype + "<dev string:x54a>" + attacker_variant + "<dev string:x54a>" + defender_variant, behaviortreeentity.origin, ( 1, 0.5, 0 ), "<dev string:x63>", behaviortreeentity, 0.4 );
         #/
         
         return false;

@@ -434,7 +434,7 @@ function function_9d86d74c( enemy )
 // Size: 0x154, Type: bool
 function function_2034705c( bundle )
 {
-    var_351b3c55 = isdefined( self.enemy ) ? max( isdefined( self.enemylastseentime ) ? self.enemylastseentime : 0, isdefined( self.var_c8072bcc ) ? self.var_c8072bcc : 0 ) : 0;
+    last_seen_time = isdefined( self.enemy ) ? max( isdefined( self.enemylastseentime ) ? self.enemylastseentime : 0, isdefined( self.var_c8072bcc ) ? self.var_c8072bcc : 0 ) : 0;
     var_c112caa0 = int( ( isdefined( bundle.var_fa38350a ) ? bundle.var_fa38350a : 1 ) * 1000 );
     
     if ( isdefined( self.enemy ) && self.var_7eb3ebd5[ self.enemy getentitynumber() ] === #"damage" )
@@ -442,7 +442,7 @@ function function_2034705c( bundle )
         var_c112caa0 = int( ( isdefined( bundle.var_33561c46 ) ? bundle.var_33561c46 : 3 ) * 1000 );
     }
     
-    return gettime() < var_351b3c55 + var_c112caa0;
+    return gettime() < last_seen_time + var_c112caa0;
 }
 
 // Namespace ultimate_turret/ultimate_turret

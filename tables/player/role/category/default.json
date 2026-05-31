@@ -1,0 +1,9 @@
+{
+    "name": "#default",
+    "displayName": "#heroes/default",
+    "description": "#heroes/default",
+    "sortOrder": 0,
+    "bundle": {
+        "enabled": 0
+    }
+}

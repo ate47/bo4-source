@@ -2,10 +2,13 @@
     "name": "#cp9500",
     "blackMarketName": "#hash_c78328ff7303b63",
     "blackMarketDesc": "#hash_243ccf6c2b4ce835",
-    "entitlementNameXHash": "#",
+    "productName": "#hash_fd6a753f85f3471",
+    "productDesc": "#menu/store_cod_points",
+    "previewImage": "#ui_menu_store_product_b04_cp_9500_small",
+    "productImage": "#ui_menu_store_product_b04_cp_9500_small",
+    "blackMarketImage": "#ui_icon_blackmarket_cp9500_case",
     "productID": "43755",
-    "previewImageName": "hash_600b607aeabf6b9",
-    "productImageName": "hash_600b607aeabf6b9",
-    "blackMarketImageName": "hash_76cf6b45066e3100",
-    "visibility": true
+    "visibility": true,
+    "unka2": true,
+    "unka3": true
 }

@@ -4,10 +4,10 @@
 
 // Namespace ct_recon_enemy_reinforcement
 // Method(s) 6 Total 12
-class class_27e8fec4 : cluielem
+class cct_recon_enemy_reinforcement : cluielem
 {
 
-    // Namespace namespace_27e8fec4/ct_recon_enemy_reinforcement
+    // Namespace cct_recon_enemy_reinforcement/ct_recon_enemy_reinforcement
     // Params 1
     // Checksum 0xab138b20, Offset: 0x258
     // Size: 0x2c
@@ -16,7 +16,7 @@ class class_27e8fec4 : cluielem
         cluielem::open( localclientnum, #"ct_recon_enemy_reinforcement" );
     }
 
-    // Namespace namespace_27e8fec4/ct_recon_enemy_reinforcement
+    // Namespace cct_recon_enemy_reinforcement/ct_recon_enemy_reinforcement
     // Params 1
     // Checksum 0xfd4173f0, Offset: 0x228
     // Size: 0x24
@@ -25,7 +25,7 @@ class class_27e8fec4 : cluielem
         cluielem::function_fa582112( localclientnum );
     }
 
-    // Namespace namespace_27e8fec4/ct_recon_enemy_reinforcement
+    // Namespace cct_recon_enemy_reinforcement/ct_recon_enemy_reinforcement
     // Params 1
     // Checksum 0x2db13416, Offset: 0x1f8
     // Size: 0x24
@@ -34,7 +34,7 @@ class class_27e8fec4 : cluielem
         cluielem::register_clientside( uid );
     }
 
-    // Namespace namespace_27e8fec4/ct_recon_enemy_reinforcement
+    // Namespace cct_recon_enemy_reinforcement/ct_recon_enemy_reinforcement
     // Params 1
     // Checksum 0x5caadb76, Offset: 0x1c8
     // Size: 0x24
@@ -51,7 +51,7 @@ class class_27e8fec4 : cluielem
 // Size: 0x40
 function register( uid )
 {
-    elem = new class_27e8fec4();
+    elem = new cct_recon_enemy_reinforcement();
     [[ elem ]]->setup_clientfields( uid );
     return elem;
 }
@@ -62,7 +62,7 @@ function register( uid )
 // Size: 0x40
 function register_clientside( uid )
 {
-    elem = new class_27e8fec4();
+    elem = new cct_recon_enemy_reinforcement();
     [[ elem ]]->register_clientside( uid );
     return elem;
 }

@@ -1,0 +1,44 @@
+{
+    "name": "#vehicle_t8_mil_helicopter_gunship_wz_infiltration",
+    "type": "helicopter",
+    "cameraTag": "tag_turret",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "exhaustFx": "#hash_28a2464b588c7c85",
+    "exhaustFxTag1": "tag_body_animate",
+    "deathFxTag": "tag_deathfx",
+    "unk11f4": [
+        "tag_tail_rotor",
+        "tag_main_rotor"
+    ],
+    "targetTags": [
+        "tag_driver_camera"
+    ],
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#hash_7fc63ec9e947d27c",
+    "deathModel": "#hash_7fc63ec9e947d27c",
+    "soundDef": "#hash_6860990b9ca80521",
+    "compassIconMaterial": "#t8_hud_waypoints_drone_hunter_scaled_down",
+    "steerAxisName": "AXIS_LSTICK",
+    "unk1608": "BUTTON_LSHLDR",
+    "unk1618": "BUTTON_RSHLDR",
+    "bundle": {
+        "huds": [
+            {
+                "hash_16b4c5c47fcf7794:hash_56985ec1": 0,
+                "hideweaponinfo": 0,
+                "hash_3a63348c09d91b8d:hash_24c083a4": 0,
+                "vehiclehud": "VehicleHUD_Prompts",
+                "tintcolor": "1 1 1 1",
+                "hudcondition": "IsAttackMode"
+            }
+        ],
+        "healthpoolsize": 6000,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 1
+    }
+}

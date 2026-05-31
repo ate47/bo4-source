@@ -1,0 +1,132 @@
+{
+    "name": "#dedicated",
+    "description": "#hash_6e9461351bfebe4c",
+    "lobbyMainMode": "MULTIPLAYER",
+    "hidden": true,
+    "environmentMask": 7,
+    "entries": [
+        {
+            "name": "#hash_51ef41056ad1fb1b",
+            "description": "#hash_4aabb07df17dbfbb",
+            "unique_name": "#hash_15d9df5b420b29ad",
+            "lobbyMainMode": "MULTIPLAYER",
+            "image": "#ui_icon_gamemode_teamdeathmatch_large",
+            "imageBackground": "#ui_icon_director_tile_mp_dom",
+            "imageBackgroundFocus": "#ui_icon_director_tile_mp_dom_focus",
+            "id": 701,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 6,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 18,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 2,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 9025,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": true,
+            "hideifmissingdlc": false,
+            "disableGuests": false,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [],
+            "rotations": [],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_7f26ed4cc8b84eaa",
+            "description": "#hash_51b8ac734ec29ab0",
+            "unique_name": "#hash_6d4a961f6e149218",
+            "visibleProfileVar": "#hash_5e563e6544ff9705",
+            "lobbyMainMode": "MULTIPLAYER",
+            "image": "#ui_icon_gamemode_teamdeathmatch",
+            "imageBackground": "#ui_icon_director_tile_mp_dom",
+            "imageBackgroundFocus": "#ui_icon_director_tile_mp_dom_focus",
+            "id": 702,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 5,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 12,
+            "minPlayers": 6,
+            "minPlayersToCreate": 1,
+            "searchType": 1,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 9001,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalemp",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#g_hitdet_logging",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#cg_hitdet_client_marker",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 1,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#drafttime",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#drafttime",
+                            "unk10": 0
+                        }
+                    ]
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#mp_seaside",
+                    "gametype": "#hash_1ee0474b3247b983",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        }
+    ]
+}

@@ -113,7 +113,7 @@ function registernotetracks()
     anim.notetracks[ #"anim_alertness = alert" ] = &notetrackalertnessalert;
     anim.notetracks[ #"gravity on" ] = &notetrackgravity;
     anim.notetracks[ #"gravity off" ] = &notetrackgravity;
-    anim.notetracks[ #"hash_3a65333187809d2e" ] = &notetrackgravity;
+    anim.notetracks[ #"gravity code" ] = &notetrackgravity;
     anim.notetracks[ #"bodyfall large" ] = &notetrackbodyfall;
     anim.notetracks[ #"bodyfall small" ] = &notetrackbodyfall;
     anim.notetracks[ #"footstep" ] = &notetrackfootstep;
@@ -369,10 +369,10 @@ function handlenotetrack( note, flagname, customfunction, var1 )
         case #"end":
         case #"finish":
             return note;
-        case #"hash_701bc5c059dfaa52":
+        case #"swish small":
             self thread sound::play_in_space( "fly_gear_enemy", self gettagorigin( "TAG_WEAPON_RIGHT" ) );
             break;
-        case #"hash_5f5e275b9f3b93ee":
+        case #"swish large":
             self thread sound::play_in_space( "fly_gear_enemy_large", self gettagorigin( "TAG_WEAPON_RIGHT" ) );
             break;
         case #"no death":
@@ -385,11 +385,11 @@ function handlenotetrack( note, flagname, customfunction, var1 )
             self.allowpain = 1;
             break;
         case #"anim_melee = right":
-        case #"hash_39ec7b0969bab796":
+        case #"anim_melee = "right"":
             self.a.meleestate = "right";
             break;
         case #"anim_melee = left":
-        case #"hash_6b554a9080ec8b07":
+        case #"anim_melee = "left"":
             self.a.meleestate = "left";
             break;
         case #"swap taghelmet to tagleft":

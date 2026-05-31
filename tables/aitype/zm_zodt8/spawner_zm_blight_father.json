@@ -21,7 +21,10 @@
         "tag_mouth_weakspot_deadshot"
     ],
     "character": [
-        "#hash_e7c2e22b47572e5"
+        "#c_t8_zmb_blightfather1"
+    ],
+    "animMappingTables": [
+        "#hash_269ff22bc33a5489"
     ],
     "meleeWeapon": "#blight_father_melee",
     "aimTable": "#soldier_aim",
@@ -29,7 +32,7 @@
     "footstepScriptCallback": true,
     "footstepFXTable1": "#hash_36a0995dddf6bde9",
     "footstepFXTable2": "#hash_48c266414feaddbc",
-    "behaviorTree": "#zm_blight_father.ai_bt",
+    "behaviorTree": "#hash_269ceb2bc33812cd",
     "animStateMachine": "#hash_5c08885cbc0c208e",
     "animSelectorTable": "#hash_5c08715cbc0bf979",
     "traversalExtents": "#default_traversal_extents_zm",

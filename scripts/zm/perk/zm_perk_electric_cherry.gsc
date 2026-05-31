@@ -73,9 +73,9 @@ function enable_electric_cherry_perk_for_level()
 // Size: 0x10e
 function electric_cherry_precache()
 {
-    if ( isdefined( level.var_e0f12444 ) )
+    if ( isdefined( level.electric_cherry_precache_override_func ) )
     {
-        [[ level.var_e0f12444 ]]();
+        [[ level.electric_cherry_precache_override_func ]]();
         return;
     }
     
@@ -129,7 +129,7 @@ function electric_cherry_perk_machine_setup( use_trigger, perk_machine, bump_tri
 // Size: 0x164
 function init_electric_cherry()
 {
-    level._effect[ #"electric_cherry_explode" ] = #"hash_413a313438a3a4e1";
+    level._effect[ #"electric_cherry_explode" ] = #"dlc1/castle/fx_castle_electric_cherry_down";
     level.custom_laststand_func = &electric_cherry_laststand;
     zombie_utility::set_zombie_var( #"tesla_head_gib_chance", 50 );
     clientfield::register( "allplayers", "electric_cherry_reload_fx", 1, 2, "int" );
@@ -183,9 +183,9 @@ function electric_cherry_laststand()
                 {
                     a_zombies[ i ] thread electric_cherry_death_fx();
                     
-                    if ( isdefined( self.var_999011b9 ) )
+                    if ( isdefined( self.cherry_kills ) )
                     {
-                        self.var_999011b9++;
+                        self.cherry_kills++;
                     }
                     
                     self zm_score::add_to_player_score( 40 );
@@ -399,9 +399,9 @@ function electric_cherry_reload_attack()
                     {
                         a_zombies[ i ] thread electric_cherry_death_fx();
                         
-                        if ( isdefined( self.var_999011b9 ) )
+                        if ( isdefined( self.cherry_kills ) )
                         {
-                            self.var_999011b9++;
+                            self.cherry_kills++;
                         }
                         
                         self zm_score::add_to_player_score( 40 );

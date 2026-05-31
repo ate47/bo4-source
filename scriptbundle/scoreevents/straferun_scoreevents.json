@@ -1,5 +1,5 @@
 {
-    "hash_2ecceeab": "#warthog_kill",
+    "killscoreevent": "#warthog_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",

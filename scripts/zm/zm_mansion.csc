@@ -111,8 +111,8 @@ function event_handler[level_init] main( eventstruct )
     level._uses_sticky_grenades = 1;
     level._uses_taser_knuckles = 1;
     level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_mansion_weapons.csv";
-    namespace_a8113e97::init_clientfields();
-    namespace_b6ca3ccc::init_clientfields();
+    mansion_ley_line::init_clientfields();
+    mansion_stick_man::init_clientfields();
     mansion_triad::init_clientfields();
     mansion_impaler::init_clientfields();
     mansion_storage::init();

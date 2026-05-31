@@ -1,7 +1,7 @@
 {
     "objects": [
         {
-            "mainanim": "anim4#hash_7d793ebdf8267965",
+            "mainanim": "anim#hash_7d793ebdf8267965",
             "model": "model#p7_fxanim_mp_slums_tarp_plastic_wall_01_mod",
             "type": "prop",
             "vmtype": "server",

@@ -3,14 +3,13 @@
     "shortNameRef": "#hash_45e0cd14ce5ed260",
     "fullNameRef": "#hash_25008098c7a5f1b5",
     "ingameNameRef": "#hash_4933e9b3def887d",
-    "iconName": "#hash_75cef8a2fc35963c",
-    "iconNameLarge": "#hash_514829da86e61f08",
     "level": 36,
     "minXp": 573200,
     "maxXp": 606000,
+    "icon": "#ui_icon_rank_mp_level36",
+    "iconLarge": "#ui_icon_rank_mp_level36_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#talent_tracker"
         }
     ]

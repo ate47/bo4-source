@@ -1,10 +1,10 @@
 {
     "lootid": "#hash_6689219248f36951",
-    "hash_ff3063df": "model#",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_steel_balls",
     "name": "charm_steelballs",
     "displayname": "localized17#hash_364a3728ac22f2ab",
     "icon": "ui_icon_weapon_charms_steel_balls",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_steel_balls"
 }

@@ -292,7 +292,7 @@ function init_blocker_fx()
 // Size: 0x10a
 function init_riser_fx()
 {
-    if ( isdefined( level.var_7f632569 ) && level.var_7f632569 )
+    if ( isdefined( level.use_new_riser_water ) && level.use_new_riser_water )
     {
     }
     

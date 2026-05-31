@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_megaphone",
+    "type": "#gesture",
+    "gesture": "#boast_megaphone",
+    "gesture2": "#boast_megaphone_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/attention",
+        "icon": "image#ui_icon_emotes_s3_police_megaphone",
+        "isdefault": 0
+    }
+}

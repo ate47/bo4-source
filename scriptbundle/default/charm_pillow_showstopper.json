@@ -1,10 +1,10 @@
 {
     "lootid": "#hash_6d99c90ed48043d9",
-    "hash_ff3063df": "model#",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_animepillow",
     "name": "charm_pillow_showstopper",
     "displayname": "localized17#hash_42ce83eeededaa77",
     "icon": "ui_icon_weapon_charms_animepillow",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_animepillow"
 }

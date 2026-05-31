@@ -1,9 +1,9 @@
 {
-    "name": "mpdlc",
-    "nameHash": "#mpdlc",
+    "nameStr": "mpdlc",
+    "name": "#mpdlc",
     "displayName": "#hash_767da271883e42ee",
-    "imageName": "#7027376462748829854",
     "visibility": false,
+    "image": "#t7_icon_menu_store_codpoints",
     "products": [
         "#blackopspass",
         "#mpdlc1",

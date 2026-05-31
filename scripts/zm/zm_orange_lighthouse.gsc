@@ -88,7 +88,7 @@ function __main__()
 function init_clientfields()
 {
     clientfield::register( "scriptmover", "lighthouse_on", 24000, 3, "int" );
-    clientfield::register( "vehicle", "" + #"hash_19bce46b8ab82440", 24000, 1, "int" );
+    clientfield::register( "vehicle", "" + #"lighthouse_beam_fx", 24000, 1, "int" );
     clientfield::register( "actor", "" + #"hash_5af1cd27f90895ae", 24000, 1, "counter" );
 }
 
@@ -470,7 +470,7 @@ function function_71399d9c()
     self function_1b488412( vh_target.origin, 1 );
     self waittill( #"rotatedone" );
     level.var_ab11c23d clientfield::set( "lighthouse_on", 4 );
-    self.vh_target clientfield::set( "" + #"hash_19bce46b8ab82440", 1 );
+    self.vh_target clientfield::set( "" + #"lighthouse_beam_fx", 1 );
     self.vh_target thread function_18f63949();
     self function_2b2f2a7f();
     self.t_trap thread zm_traps::trap_damage();
@@ -545,7 +545,7 @@ function function_76ff758d()
     self.vh_target.b_moving = 0;
     wait 2;
     self.t_trap notify( #"trap_done" );
-    self.vh_target clientfield::set( "" + #"hash_19bce46b8ab82440", 0 );
+    self.vh_target clientfield::set( "" + #"lighthouse_beam_fx", 0 );
     self.t_trap delete();
     self.vh_target delete();
     level thread function_ad646ef8( 1 );
@@ -747,7 +747,7 @@ function electrocute_zombie()
 // Size: 0x84
 function electrocute_player()
 {
-    shock_status_effect = getstatuseffect( #"hash_19533caf858a9f3b" );
+    shock_status_effect = getstatuseffect( #"shock_zm_trap" );
     
     if ( !( isdefined( self.b_no_trap_damage ) && self.b_no_trap_damage ) )
     {
@@ -919,9 +919,9 @@ function function_2853c44e( e_trap )
     self endon( #"death" );
     self clientfield::increment( "" + #"hash_5af1cd27f90895ae", 1 );
     
-    if ( isdefined( self.var_5475b4ad ) )
+    if ( isdefined( self.fire_damage_func ) )
     {
-        self [[ self.var_5475b4ad ]]( e_trap );
+        self [[ self.fire_damage_func ]]( e_trap );
         return;
     }
     

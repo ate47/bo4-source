@@ -1,16 +1,13 @@
 {
     "name": "#zm_rank_42",
-    "shortNameRef": "#",
     "fullNameRef": "#hash_33776e9c39ad1969",
-    "ingameNameRef": "#",
-    "iconName": "#hash_f868bb1852398b",
-    "iconNameLarge": "#hash_6eebac09f07e13ab",
     "level": 42,
     "minXp": 766600,
     "maxXp": 806000,
+    "icon": "#ui_icon_rank_zm_level42",
+    "iconLarge": "#ui_icon_rank_zm_level42_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#perk_slider"
         }
     ]

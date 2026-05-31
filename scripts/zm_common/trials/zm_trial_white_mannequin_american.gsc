@@ -41,8 +41,8 @@ function private on_begin()
     var_a2c75164 = getent( "mannequin_ally_door", "targetname" );
     var_a2c75164 zm_white_private_mannequin::function_a51b6403( 1 );
     wait 1;
-    level.var_1a612d42 = getplayers()[ 0 ];
-    level.var_1a612d42.eligible_leader = 1;
+    level.companion_leader = getplayers()[ 0 ];
+    level.companion_leader.eligible_leader = 1;
     mannequin_ally_spawner = getent( "mannequin_american_spawner", "targetname" );
     
     if ( isdefined( mannequin_ally_spawner ) )
@@ -105,7 +105,7 @@ function private function_545d53bf()
 {
     self endon( #"disconnect" );
     level endon( #"hash_7646638df88a3656" );
-    var_407eb07 = 0;
+    b_locked_weapons = 0;
     
     while ( true )
     {
@@ -117,15 +117,15 @@ function private function_545d53bf()
             var_972e1f84 = 1;
         }
         
-        if ( var_972e1f84 && var_407eb07 )
+        if ( var_972e1f84 && b_locked_weapons )
         {
             self zm_trial_util::function_dc0859e();
-            var_407eb07 = 0;
+            b_locked_weapons = 0;
         }
-        else if ( !var_972e1f84 && !var_407eb07 )
+        else if ( !var_972e1f84 && !b_locked_weapons )
         {
             self zm_trial_util::function_bf710271();
-            var_407eb07 = 1;
+            b_locked_weapons = 1;
         }
         
         waitframe( 1 );

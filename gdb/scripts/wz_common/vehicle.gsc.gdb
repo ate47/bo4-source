@@ -31,7 +31,7 @@ STRING "<dev string:xf0>" 0xcf88
 DEVBLOCK 0xcc8
 # wz_vehicle::function_eaba72c9@2
 DEVBLOCK 0xcf2
-# wz_vehicle::function_40fc185b@2
+# wz_vehicle::delete_all_vehicles@2
 DEVBLOCK 0xd8a
 # wz_vehicle::_setup_devgui@a
 DEVBLOCK 0xdba

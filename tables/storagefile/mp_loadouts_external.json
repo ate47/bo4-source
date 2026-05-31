@@ -1,5 +1,16 @@
 {
-    "name": "#mp_loadouts_external",
     "nameStr": "mp_loadouts_external",
-    "ddl": "#gamedata/ddl/generated/mp_loadouts_external.ddl"
+    "name": "#mp_loadouts_external",
+    "ddlPath": "#gamedata/ddl/generated/mp_loadouts_external.ddl",
+    "files": [
+        {
+            "fileName": "mp_loadouts_external"
+        }
+    ],
+    "size": 2048,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": true
 }

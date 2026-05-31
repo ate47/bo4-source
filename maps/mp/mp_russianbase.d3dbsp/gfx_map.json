@@ -1,0 +1,17 @@
+{
+    "name": "#maps/mp/mp_russianbase.d3dbsp",
+    "baseName": "mp_russianbase",
+    "mins": "-18128.602 -12393.236 -1914.7988",
+    "maxs": "12034.3955 13658.623 3602.704",
+    "checksum": 0,
+    "streamerworld": "#hash_42c573481cb87ef3",
+    "lighting": "#maps/mp/mp_russianbase.d3dbsp",
+    "lutMaterial": "#lut_mp_russianbase",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 9,
+        "cookieArray": "#*cookie_array"
+    }
+}

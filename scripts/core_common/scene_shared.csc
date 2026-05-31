@@ -375,7 +375,7 @@ class cscene : cscriptbundlebase
     // Params 0
     // Checksum 0xdf32b210, Offset: 0x6b30
     // Size: 0xa
-    function function_2ba44cd0()
+    function get_current_shot()
     {
         return _str_shot;
     }
@@ -2800,7 +2800,7 @@ function _trigger_stop( trig )
 // Size: 0x184
 function add_scene_func( str_scenedef, func, var_e21c4c4c = "play", ... )
 {
-    assert( isdefined( getscriptbundle( str_scenedef ) ), "<dev string:x155>" + function_9e72a96( str_scenedef ) + "<dev string:x13d>" );
+    assert( isdefined( getscriptbundle( str_scenedef ) ), "<dev string:x155>" + hashtostring( str_scenedef ) + "<dev string:x13d>" );
     var_e21c4c4c = tolower( var_e21c4c4c );
     
     if ( !isdefined( level.scene_funcs ) )
@@ -2919,7 +2919,7 @@ function init( arg1, arg2, arg3, b_test_run )
 function get_scenedef( str_scenedef )
 {
     s_scriptbundle = getscriptbundle( str_scenedef );
-    assert( isdefined( s_scriptbundle ) && isdefined( s_scriptbundle.objects ), "<dev string:x1df>" + function_9e72a96( str_scenedef ) + "<dev string:x1ef>" );
+    assert( isdefined( s_scriptbundle ) && isdefined( s_scriptbundle.objects ), "<dev string:x1df>" + hashtostring( str_scenedef ) + "<dev string:x1ef>" );
     s_scriptbundle = fixup_scenedef( s_scriptbundle );
     return s_scriptbundle;
 }
@@ -3634,11 +3634,11 @@ function function_6f382548( struct, str_scene_name )
         /#
             if ( struct.type === "<dev string:x326>" )
             {
-                str_debug = "<dev string:x32e>" + function_9e72a96( str_scene_name ) + "<dev string:x337>";
+                str_debug = "<dev string:x32e>" + hashtostring( str_scene_name ) + "<dev string:x337>";
             }
             else
             {
-                str_debug = "<dev string:x370>" + function_9e72a96( struct.name ) + "<dev string:x380>" + str_scene_name + "<dev string:x38d>";
+                str_debug = "<dev string:x370>" + hashtostring( struct.name ) + "<dev string:x380>" + str_scene_name + "<dev string:x38d>";
             }
             
             println( str_debug );

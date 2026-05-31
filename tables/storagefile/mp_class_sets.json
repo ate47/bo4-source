@@ -1,5 +1,16 @@
 {
-    "name": "#mp_class_sets",
     "nameStr": "mp_class_sets",
-    "ddl": "#gamedata/ddl/generated/class_sets.ddl"
+    "name": "#mp_class_sets",
+    "ddlPath": "#gamedata/ddl/generated/class_sets.ddl",
+    "files": [
+        {
+            "fileName": "mp_class_sets"
+        }
+    ],
+    "size": 117760,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

@@ -37,7 +37,7 @@ function init()
     clientfield::register( "allplayers", "" + #"shield_fire", 8000, 1, "int" );
     clientfield::register( "scriptmover", "" + #"triad_beam", 8000, getminbitcountfornum( 3 ), "int" );
     clientfield::register( "scriptmover", "" + #"wisp_fx", 8000, 2, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_2108935a0c33f89a", 8000, getminbitcountfornum( 3 ), "int" );
+    clientfield::register( "scriptmover", "" + #"knight_sigil_fx", 8000, getminbitcountfornum( 3 ), "int" );
     zm_sq_modules::function_d8383812( #"soul_capture_kp1", 8000, #"kp_1", &function_4175b958, &function_138b784e, 1 );
     zm_sq_modules::function_d8383812( #"soul_capture_kp2", 8000, #"kp_2", &function_53e85e3d, &function_25d21cdb, 1 );
     zm_sq_modules::function_d8383812( #"soul_capture_kp3", 8000, #"kp_3", &function_5e8b7383, &function_28082147, 1 );
@@ -47,7 +47,7 @@ function init()
     zm_sq_modules::function_d8383812( #"soul_capture_forest", 8000, #"kp_forest", &is_soul_capture_forest, &function_b570f926, 1 );
     init_flags();
     register_steps();
-    level thread function_c6e2a4fd();
+    level thread init_components();
     level thread function_6eb39fe4();
     level thread function_b8cc9d7e();
 }
@@ -87,7 +87,7 @@ function function_b8cc9d7e()
 // Params 0
 // Checksum 0x973b34f0, Offset: 0xfe8
 // Size: 0x1d8
-function function_c6e2a4fd()
+function init_components()
 {
     level flag::wait_till( "all_players_spawned" );
     level thread forest_entrance();
@@ -231,7 +231,7 @@ function init_step_1( var_a276c861 )
     if ( !var_a276c861 )
     {
         level flag::wait_till( #"gazed_main_hall" );
-        level zm_ui_inventory::function_7df6bb60( #"hash_7b00754a8b214587", 1 );
+        level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_9", 1 );
         level thread kp_fireplace();
         level flag::wait_till_all( array( #"kp_upg_main", #"kp_upg_dead", #"kp_upg_green" ) );
     }
@@ -256,7 +256,7 @@ function cleanup_step_1( var_5ea5c94d, ended_early )
 // Size: 0x234
 function init_step_2( var_a276c861 )
 {
-    level zm_ui_inventory::function_7df6bb60( #"hash_22f194aa6971efed", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_10", 1 );
     a_s_fireplaces = struct::get_array( "fireplace_location" );
     
     foreach ( s_fireplace in a_s_fireplaces )
@@ -382,7 +382,7 @@ function cleanup_step_2( var_5ea5c94d, ended_early )
 // Size: 0x2bc
 function init_step_3( var_a276c861 )
 {
-    level zm_ui_inventory::function_7df6bb60( #"hash_22f193aa6971ee3a", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_11", 1 );
     
     if ( !isdefined( level.var_fbcb1d5b ) )
     {
@@ -543,7 +543,7 @@ function init_step_4( var_a276c861 )
         level flag::wait_till( #"forest_open" );
     }
     
-    level zm_ui_inventory::function_7df6bb60( #"hash_22f192aa6971ec87", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_12", 1 );
 }
 
 // Namespace mansion_triad/zm_mansion_triad
@@ -1082,7 +1082,7 @@ function function_4490aa7d()
             var_ca0ae05d = "knight_main_hall_stationed";
             s_loc = struct::get( "kp_1", "script_noteworthy" );
             mdl_symbol = getent( "kp_mark_lion", "script_noteworthy" );
-            mdl_symbol clientfield::set( "" + #"hash_2108935a0c33f89a", 1 );
+            mdl_symbol clientfield::set( "" + #"knight_sigil_fx", 1 );
             e_wisp = util::spawn_model( #"p8_zm_man_statue_kisa_stone_02", s_spawn.origin, s_spawn.angles );
             level.var_fbcb1d5b = e_wisp;
             break;
@@ -1090,7 +1090,7 @@ function function_4490aa7d()
             var_ca0ae05d = "knight_cemetery_stationed";
             s_loc = struct::get( "kp_2", "script_noteworthy" );
             mdl_symbol = getent( "kp_mark_cobra", "script_noteworthy" );
-            mdl_symbol clientfield::set( "" + #"hash_2108935a0c33f89a", 2 );
+            mdl_symbol clientfield::set( "" + #"knight_sigil_fx", 2 );
             e_wisp = util::spawn_model( #"p8_zm_man_statue_kisa_stone_01", s_spawn.origin, s_spawn.angles );
             level.var_abe1b67c = e_wisp;
             break;
@@ -1098,7 +1098,7 @@ function function_4490aa7d()
             var_ca0ae05d = "knight_greenhouse_stationed";
             s_loc = struct::get( "kp_3", "script_noteworthy" );
             mdl_symbol = getent( "kp_mark_wolf", "script_noteworthy" );
-            mdl_symbol clientfield::set( "" + #"hash_2108935a0c33f89a", 3 );
+            mdl_symbol clientfield::set( "" + #"knight_sigil_fx", 3 );
             e_wisp = util::spawn_model( #"p8_zm_man_statue_kisa_stone_03", s_spawn.origin, s_spawn.angles );
             level.var_c22f75e6 = e_wisp;
             break;
@@ -1185,13 +1185,13 @@ function function_d409a74f( mdl_symbol )
     switch ( mdl_symbol.script_noteworthy )
     {
         case #"kp_mark_lion":
-            mdl_symbol clientfield::set( "" + #"hash_2108935a0c33f89a", 0 );
+            mdl_symbol clientfield::set( "" + #"knight_sigil_fx", 0 );
             break;
         case #"kp_mark_wolf":
-            mdl_symbol clientfield::set( "" + #"hash_2108935a0c33f89a", 0 );
+            mdl_symbol clientfield::set( "" + #"knight_sigil_fx", 0 );
             break;
         case #"kp_mark_cobra":
-            mdl_symbol clientfield::set( "" + #"hash_2108935a0c33f89a", 0 );
+            mdl_symbol clientfield::set( "" + #"knight_sigil_fx", 0 );
             break;
     }
     
@@ -1998,7 +1998,7 @@ function function_3f504167()
     {
         if ( isalive( e_zombie ) && !( isdefined( e_zombie.var_c57bc555 ) && e_zombie.var_c57bc555 ) )
         {
-            v_zombie_loc = mansion_util::function_a8176b98( e_zombie.origin );
+            v_zombie_loc = mansion_util::get_drop_pos( e_zombie.origin );
         }
         
         if ( isdefined( v_zombie_loc ) && zm_zonemgr::function_66bf6a43( v_zombie_loc ) && distance2dsquared( v_zombie_loc, self.origin > 250000 ) )
@@ -2050,7 +2050,7 @@ function function_de68c9b7( s_params )
 function function_5ffc956( v_zombie_origin )
 {
     level endon( #"end_game", #"hash_6402d013069eb3a" );
-    e_closest_player = arraygetclosest( v_zombie_origin, zm_vo::function_347f7d34() );
+    e_closest_player = arraygetclosest( v_zombie_origin, zm_vo::get_valid_players() );
     
     if ( isalive( e_closest_player ) && e_closest_player util::is_player_looking_at( v_zombie_origin ) && distance2dsquared( v_zombie_origin, e_closest_player.origin ) < 147456 )
     {
@@ -2453,7 +2453,7 @@ function trigger_forest_entrance()
         wait 0.1;
     }
     
-    player = array::random( zm_vo::function_347f7d34() );
+    player = array::random( zm_vo::get_valid_players() );
     
     if ( isdefined( player ) )
     {

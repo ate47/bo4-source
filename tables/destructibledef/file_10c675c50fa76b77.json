@@ -1,0 +1,135 @@
+{
+    "name": "#hash_10c675c50fa76b77",
+    "model": "#veh_t8_mil_boat_pbr_wz_grey",
+    "unk20": "#hash_1604d871fb1dacd",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_2ace9b49ea6162b0",
+            "unk268": 3000,
+            "hideBones": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                93,
+                100,
+                117,
+                148,
+                154
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_gunner_turret1"
+                },
+                {
+                    "unk28": "tag_gunner_turret1"
+                },
+                {
+                    "unk28": "tag_gunner_turret1"
+                },
+                {
+                    "unk28": "tag_gunner_turret1"
+                },
+                {
+                    "unk28": "tag_gunner_turret1"
+                },
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 0,
+            "explosiveDamageScale": 0,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 0,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_2ace9c49ea616463",
+            "unk268": 1000,
+            "hideBones": [
+                3,
+                38,
+                89
+            ]
+        }
+    ]
+}

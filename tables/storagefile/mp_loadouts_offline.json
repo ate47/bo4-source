@@ -1,5 +1,16 @@
 {
-    "name": "#mp_loadouts_offline",
     "nameStr": "mp_loadouts_offline",
-    "ddl": "#gamedata/ddl/generated/mp_loadouts_offline.ddl"
+    "name": "#mp_loadouts_offline",
+    "ddlPath": "#gamedata/ddl/generated/mp_loadouts_offline.ddl",
+    "files": [
+        {
+            "fileName": "mp_loadouts_offline"
+        }
+    ],
+    "size": 20480,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

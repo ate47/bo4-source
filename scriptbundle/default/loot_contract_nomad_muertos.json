@@ -1,19 +1,19 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "localized17#hash_4f3d3e5e7b6182ef"
+            "hash_619e25922b4aedcf:hash_826726a": "localized17#hash_4f3d3e5e7b6182ef"
         },
         {
-            "hash_826726a": "localized17#hash_725b1719bd56b4ec"
+            "hash_619e25922b4aedcf:hash_826726a": "localized17#heroes/trapper"
         }
     ],
     "contracticon": "image#hash_5058f75abc7e8c41",
-    "hash_d0100eab": 2,
-    "relateditemname": "localized17#hash_725b1719bd56b4ec",
+    "hash_202e3311080f8de3:hash_d0100eab": 2,
+    "relateditemname": "localized17#heroes/trapper",
     "contracttitle": "localized17#hash_4f3d3e5e7b6182ef",
     "name": "loot_contract_nomad_muertos",
     "contractdescription": "localized17#hash_25105a1e4c1d1e63",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_65626f95894681ce",
-    "hash_e08fc162": "localized17#hash_1228188324cf56e"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_65626f95894681ce",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_1228188324cf56e"
 }

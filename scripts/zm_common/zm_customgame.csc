@@ -128,15 +128,15 @@ function private function_ecc5a0b9( local_client_num, player, damage )
 // Params 1
 // Checksum 0xdfa6b531, Offset: 0x648
 // Size: 0x70
-function function_901b751c( var_c9db62d5 )
+function function_901b751c( str_setting )
 {
-    if ( var_c9db62d5 === "" )
+    if ( str_setting === "" )
     {
         return undefined;
     }
     
-    setting = getgametypesetting( var_c9db62d5 );
-    assert( isdefined( setting ), "<dev string:x38>" + var_c9db62d5 + "<dev string:x50>" );
+    setting = getgametypesetting( str_setting );
+    assert( isdefined( setting ), "<dev string:x38>" + str_setting + "<dev string:x50>" );
     return setting;
 }
 

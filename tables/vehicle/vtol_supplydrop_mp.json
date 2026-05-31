@@ -1,0 +1,29 @@
+{
+    "name": "#vtol_supplydrop_mp",
+    "type": "helicopter",
+    "scoreType": "none",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "scriptBundleSettings": "#vtol_dropshipsettings_mp",
+    "vehicleRidersRobotBundle": "#vtol_riders_combat_robot",
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#hash_2bfa78470894c282",
+    "enemyModel": "#hash_623b8cead6674c6a",
+    "soundDef": "#veh_vtol_supplyship",
+    "compassIconMaterial": "#hud_anim_littlebird",
+    "steerAxisName": "AXIS_LSTICK",
+    "gasButtonName": "BUTTON_LTRIG",
+    "reverseBrakeButtonName": "BUTTON_B",
+    "handBrakeButtonName": "BUTTON_B",
+    "attackButtonName": "BUTTON_RTRIG",
+    "attackSecondaryButtonName": "BUTTON_RSHLDR",
+    "bundle": {
+        "healthpoolsize": 650,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 2
+    }
+}

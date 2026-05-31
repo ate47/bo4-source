@@ -518,7 +518,7 @@ function function_944278fd( n_count, var_6448415b = 0, var_29a34c68 = 1000, var_
 // Params 6
 // Checksum 0xff2a798b, Offset: 0x1cd0
 // Size: 0x18e
-function function_db21e968( var_36778522, var_6448415b = 0, var_29a34c68 = 800, var_719f528b = 1600, var_c69d025b = 50, var_677d04ac = 1 )
+function function_db21e968( n_maxcount, var_6448415b = 0, var_29a34c68 = 800, var_719f528b = 1600, var_c69d025b = 50, var_677d04ac = 1 )
 {
     level endon( #"combattraining_logic_finished" );
     self notify( #"hash_3bd66153d302d5e3" );
@@ -530,9 +530,9 @@ function function_db21e968( var_36778522, var_6448415b = 0, var_29a34c68 = 800, 
     {
         self function_27bf93d( var_719f528b + 50, 1 );
         
-        if ( var_36778522 > level.a_ai_zombies.size )
+        if ( n_maxcount > level.a_ai_zombies.size )
         {
-            n_count = var_36778522 - level.a_ai_zombies.size;
+            n_count = n_maxcount - level.a_ai_zombies.size;
             self function_944278fd( n_count, var_6448415b, var_29a34c68, var_719f528b, var_c69d025b, 1 );
         }
         
@@ -683,10 +683,10 @@ function checkpoints_think()
 // Params 2
 // Checksum 0xd9bc487b, Offset: 0x2720
 // Size: 0x50c
-function function_96d0afea( var_e8ee1cd1, var_c8e04bda = 0 )
+function function_96d0afea( n_ndx, var_c8e04bda = 0 )
 {
     level endon( #"combattraining_logic_finished" );
-    level.var_94dda6f = level.var_ac03813[ var_e8ee1cd1 ];
+    level.var_94dda6f = level.var_ac03813[ n_ndx ];
     level.var_94dda6f.waypoint gameobjects::set_visible_team( "any" );
     level clientfield::set( "area_arrows", level.var_94dda6f.script_int );
     self thread ct_utils::function_61c3d59c( #"hash_1e6dbca449a65f9", undefined );
@@ -721,14 +721,14 @@ function function_96d0afea( var_e8ee1cd1, var_c8e04bda = 0 )
     self notify( #"hash_3bd66153d302d5e3" );
     level.ai_vip notify( #"hash_3bd66153d302d5e3" );
     wait 2;
-    a_parms = function_e4e6f295( var_e8ee1cd1 );
+    a_parms = function_e4e6f295( n_ndx );
     self thread function_db21e968( a_parms[ #"hash_26e3f994cd3be7ad" ], 0, a_parms[ #"hash_6ac476a653e52b43" ], a_parms[ #"hash_79c09420f2a9d1b5" ], a_parms[ #"hash_c89b29b1052eb3a" ], a_parms[ #"hash_65d515c48dec9a90" ] );
     level.ai_vip thread function_db21e968( a_parms[ #"hash_666d68ff5ab5708b" ], 0, a_parms[ #"hash_1b654f4b57692315" ], a_parms[ #"hash_26f2c8d3a06033f3" ], a_parms[ #"hash_53a6b6a30b8be9ae" ], a_parms[ #"hash_4afa2b23e812aa80" ] );
     self thread function_2444772e( 30 );
     level waittill( #"sabotage_done" );
     self thread function_beca73db();
     
-    if ( level.var_ac03813.size - 1 > var_e8ee1cd1 )
+    if ( level.var_ac03813.size - 1 > n_ndx )
     {
         self thread ct_utils::function_329f9ba6( #"hash_494852129a3c431c", 7, "grey", 1 );
         self thread ct_utils::function_61c3d59c( #"hash_1e6dbca449a65f9", undefined );
@@ -792,7 +792,7 @@ function function_2444772e( n_time, var_94629f1a = 50 )
         wait var_6f0549ed;
     }
     
-    self ct_utils::function_c314f6b1( 45 );
+    self ct_utils::addtotimer( 45 );
     self thread ct_utils::function_b42ce622( #"hash_7185fe2194047325" );
     level thread ct_utils::function_bfa522d1();
     level.ai_vip flag::clear( "vip_checkpoint_action" );
@@ -1417,9 +1417,9 @@ function function_8d5cfdef()
                     {
                         if ( isdefined( var_553008b4 ) )
                         {
-                            var_337e484e = self canpath( self.origin, var_553008b4.origin );
+                            b_can_path = self canpath( self.origin, var_553008b4.origin );
                             
-                            if ( var_337e484e )
+                            if ( b_can_path )
                             {
                                 var_a3e53b82 = var_553008b4;
                                 var_20e43fcf[ var_20e43fcf.size ] = var_553008b4;
@@ -1441,9 +1441,9 @@ function function_8d5cfdef()
                     {
                         if ( isdefined( var_553008b4 ) )
                         {
-                            var_337e484e = self canpath( self.origin, var_553008b4.origin );
+                            b_can_path = self canpath( self.origin, var_553008b4.origin );
                             
-                            if ( var_337e484e )
+                            if ( b_can_path )
                             {
                                 var_20e43fcf[ var_20e43fcf.size ] = var_553008b4;
                             }

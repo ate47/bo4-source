@@ -2,9 +2,9 @@
     "name": "#sig_lmg_alt_mp",
     "baseWeapon": "#sig_lmg_alt",
     "displayname": "#weapon/sig_lmg",
-    "xhash_30": "#sig_lmg_mp",
+    "altWeapon": "#sig_lmg_mp",
     "luigiReticleWidget": "ScytheReticle",
-    "streamkey": "#hash_66f986da915a57ab",
+    "soundbank": "#sig_lmg_alt_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -13,21 +13,40 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 200,
     "soundrattlerangemax": 600,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "MULTIPLAYER",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.002 1",
+            "0.1 0.75",
+            "0.25 0.35",
+            "0.5 0.1",
+            "1 0.05"
+        ],
+        [
+            "0 1",
+            "0.002 1",
+            "0.1 0.8",
+            "0.25 0.6",
+            "0.5 0.15",
+            "1 0.05"
+        ]
+    ],
     "firesound": "#hash_1a8618a42206290a",
     "firesoundplayer": "#hash_43d97fa3f0ea530f",
     "sound250": "#uin_unavailable_charging",
@@ -39,6 +58,25 @@
     "sound810": "#hash_5d8b6dc75a094136",
     "tunables1": "#hash_126552b24c70cc56",
     "sharedWeaponSounds": "#rifle",
+    "tracers": [
+        "#lmg",
+        "#lmg_enemy"
+    ],
+    "statusEffects": [
+        {
+            "effect": "#hash_2d37104ba9e6e867",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        }
+    ],
     "#hash_2e4a8800": "#sig_lmg_scoreevents",
     "viewmodel": [
         "#wpn_t8_sig_minigun_view"
@@ -61,6 +99,6 @@
     "fx_c98": "#hash_4b144677a622ffb3",
     "normalImpactFX": "#hash_5c5dac9355d4dd1c",
     "exitImpactFX": "#hash_400b5ef5792265c2",
-    "normalImpactSounds": "#bullet_explode",
+    "normalImpactSounds": "#hash_78e291a8acdea947",
     "exitImpactSounds": "#bullet_exit"
 }

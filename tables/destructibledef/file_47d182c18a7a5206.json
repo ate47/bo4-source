@@ -1,0 +1,39 @@
+{
+    "name": "#hash_47d182c18a7a5206",
+    "model": "#p8_fxanim_zm_red_ww_shell_chaos_mod",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_chunk_d0"
+                },
+                {
+                    "unk28": "tag_chunk_d1"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_30a248862280673b",
+            "physConstraints": "#hash_2fad421ab3e060a7",
+            "unk268": 600,
+            "hideBones": [
+                28,
+                29
+            ]
+        }
+    ]
+}

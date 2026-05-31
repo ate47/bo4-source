@@ -208,15 +208,15 @@ function function_88c02b18()
 // Size: 0xe8
 function function_5c1184e( b_enable = 1 )
 {
-    foreach ( var_9e45f43d in array( "siege_crowds_grp27", "siege_zm_crowds_indv_1", "siege_zm_crowds_indv_2", "siege_zm_crowds_indv_3", "siege_zm_crowds_indv_4", "siege_zm_crowds_indv_5" ) )
+    foreach ( str_crowd in array( "siege_crowds_grp27", "siege_zm_crowds_indv_1", "siege_zm_crowds_indv_2", "siege_zm_crowds_indv_3", "siege_zm_crowds_indv_4", "siege_zm_crowds_indv_5" ) )
     {
         if ( b_enable )
         {
-            showmiscmodels( var_9e45f43d );
+            showmiscmodels( str_crowd );
             continue;
         }
         
-        hidemiscmodels( var_9e45f43d );
+        hidemiscmodels( str_crowd );
     }
 }
 
@@ -258,17 +258,17 @@ function function_8237489a( b_enable = 1 )
 {
     if ( b_enable )
     {
-        foreach ( var_9e45f43d in array( "siege_crowd_stand_a_grp27", "siege_crowd_stand_b_grp27", "siege_crowd_stand_c_grp27", "siege_crowd_stand_d_grp27" ) )
+        foreach ( str_crowd in array( "siege_crowd_stand_a_grp27", "siege_crowd_stand_b_grp27", "siege_crowd_stand_c_grp27", "siege_crowd_stand_d_grp27" ) )
         {
-            showmiscmodels( var_9e45f43d );
+            showmiscmodels( str_crowd );
         }
         
         return;
     }
     
-    foreach ( var_9e45f43d in array( "siege_crowd_stand_a_grp27", "siege_crowd_stand_b_grp27", "siege_crowd_stand_c_grp27", "siege_crowd_stand_d_grp27" ) )
+    foreach ( str_crowd in array( "siege_crowd_stand_a_grp27", "siege_crowd_stand_b_grp27", "siege_crowd_stand_c_grp27", "siege_crowd_stand_d_grp27" ) )
     {
-        hidemiscmodels( var_9e45f43d );
+        hidemiscmodels( str_crowd );
     }
 }
 
@@ -1094,11 +1094,11 @@ function function_b8dfa139( str_event )
         {
             if ( isplayer( self ) )
             {
-                self iprintlnbold( function_9e72a96( str_text ) );
+                self iprintlnbold( hashtostring( str_text ) );
             }
             else
             {
-                iprintlnbold( function_9e72a96( str_text ) );
+                iprintlnbold( hashtostring( str_text ) );
             }
             
             return;
@@ -1251,7 +1251,7 @@ function function_acab98ce( var_82c32aa7, var_9c93ba8f, var_ac39950d = 0, str_ev
     }
     
     /#
-        self thread zm_net::network_choke_action( "<dev string:x38>", &function_f3e454c1, function_9e72a96( var_82c32aa7 ) + self.name );
+        self thread zm_net::network_choke_action( "<dev string:x38>", &function_f3e454c1, hashtostring( var_82c32aa7 ) + self.name );
     #/
     
     if ( !var_ac39950d )

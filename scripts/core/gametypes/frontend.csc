@@ -239,7 +239,7 @@ function function_89c6128e( mode )
                 prtname = function_b14806c6( index, mode );
                 
                 /#
-                    prtname = function_9e72a96( prtname );
+                    prtname = hashtostring( prtname );
                 #/
                 
                 function_3a965fac( fields.var_4c65efc8, prtname, mode, fields );
@@ -561,17 +561,17 @@ function update_inspection_character( localclientnum, xuid, menu_name )
         fields = getcharacterfields( var_23904c1d.charactertype, var_23904c1d.charactermode );
     }
     
-    var_8e0277a = undefined;
+    new_scene_name = undefined;
     
     if ( isdefined( fields ) )
     {
-        var_8e0277a = fields.var_2081b2ed;
+        new_scene_name = fields.var_2081b2ed;
     }
     
-    if ( isdefined( var_8e0277a ) && character_customization::function_aa5382ed( [[ var_d0b01271 ]]->function_e599283f(), var_23904c1d ) )
+    if ( isdefined( new_scene_name ) && character_customization::function_aa5382ed( [[ var_d0b01271 ]]->function_e599283f(), var_23904c1d ) )
     {
         [[ var_d0b01271 ]]->function_1ec9448d( 0 );
-        params = { #var_401d9a1:1, #var_c76f3e47:1, #scene:var_8e0277a };
+        params = { #var_401d9a1:1, #var_c76f3e47:1, #scene:new_scene_name };
         [[ var_d0b01271 ]]->function_15a8906a( var_23904c1d );
         [[ var_d0b01271 ]]->update( params );
     }
@@ -842,15 +842,15 @@ function entityspawned( localclientnum )
         }
         while ( ![[ var_d0b01271 ]]->function_ea4ac9f8() );
         
-        var_f75a02ea = function_9e72a96( function_b14806c6( character_index, mode ) );
+        var_f75a02ea = hashtostring( function_b14806c6( character_index, mode ) );
         
         if ( var_b34f01f0 )
         {
-            shot_name = "<dev string:x118>" + var_f75a02ea + "<dev string:x12a>" + function_9e72a96( item_data.lootid ) + "<dev string:x12e>";
+            shot_name = "<dev string:x118>" + var_f75a02ea + "<dev string:x12a>" + hashtostring( item_data.lootid ) + "<dev string:x12e>";
         }
         else
         {
-            shot_name = "<dev string:x118>" + var_f75a02ea + "<dev string:x12a>" + function_9e72a96( item_data.lootid ) + "<dev string:x148>";
+            shot_name = "<dev string:x118>" + var_f75a02ea + "<dev string:x12a>" + hashtostring( item_data.lootid ) + "<dev string:x148>";
         }
         
         function_da10fc8f( localclientnum, shot_name );
@@ -1053,9 +1053,9 @@ function entityspawned( localclientnum )
             
             for ( index = 0; index < getplayerroletemplatecount( mode ) ; index++ )
             {
-                var_f75a02ea = function_9e72a96( function_b14806c6( index, mode ) );
-                var_11f96a92 = var_82414930 + var_f75a02ea + "<dev string:x12a>";
-                adddebugcommand( localclientnum, "<dev string:x66>" + var_11f96a92 + "<dev string:x250>" + "<dev string:x256>" + "<dev string:x25b>" + "<dev string:x263>" + "<dev string:x167>" + mode + "<dev string:x167>" + index + "<dev string:x167>" + -1 + "<dev string:x167>" + -1 + "<dev string:x271>" + "<dev string:x275>" );
+                var_f75a02ea = hashtostring( function_b14806c6( index, mode ) );
+                player_path = var_82414930 + var_f75a02ea + "<dev string:x12a>";
+                adddebugcommand( localclientnum, "<dev string:x66>" + player_path + "<dev string:x250>" + "<dev string:x256>" + "<dev string:x25b>" + "<dev string:x263>" + "<dev string:x167>" + mode + "<dev string:x167>" + index + "<dev string:x167>" + -1 + "<dev string:x167>" + -1 + "<dev string:x271>" + "<dev string:x275>" );
                 outfitcount = function_d299ef16( index, mode );
                 
                 for ( outfitindex = 0; outfitindex < outfitcount ; outfitindex++ )
@@ -1064,7 +1064,7 @@ function entityspawned( localclientnum )
                     
                     if ( var_9cf37283.valid )
                     {
-                        var_b614b3ba = var_11f96a92 + function_9e72a96( var_9cf37283.namehash ) + "<dev string:x12a>";
+                        var_b614b3ba = player_path + hashtostring( var_9cf37283.namehash ) + "<dev string:x12a>";
                         adddebugcommand( localclientnum, "<dev string:x66>" + var_b614b3ba + "<dev string:x250>" + "<dev string:x256>" + "<dev string:x25b>" + "<dev string:x263>" + "<dev string:x167>" + mode + "<dev string:x167>" + index + "<dev string:x167>" + outfitindex + "<dev string:x167>" + -1 + "<dev string:x271>" + "<dev string:x275>" );
                         
                         if ( mode == 1 )
@@ -1130,7 +1130,7 @@ function entityspawned( localclientnum )
                 if ( !( isdefined( var_3594168e.disabled ) && var_3594168e.disabled ) )
                 {
                     camo_index = function_8b51d9d1( var_3594168e.camooption );
-                    var_9ce34e01 = function_9e72a96( var_3594168e.camooption );
+                    var_9ce34e01 = hashtostring( var_3594168e.camooption );
                 }
                 else
                 {
@@ -1406,7 +1406,7 @@ function entityspawned( localclientnum )
         
         foreach ( i, jumpkit in jumpkits )
         {
-            name = function_9e72a96( jumpkit );
+            name = hashtostring( jumpkit );
             markswarzone = "<dev string:x3cb>" + name + "<dev string:x12a>";
             adddebugcommand( localclientnum, "<dev string:x66>" + markswarzone + "<dev string:x250>" + "<dev string:x369>" + "<dev string:x42e>" + "<dev string:x167>" + i + "<dev string:x167>" + -1 + "<dev string:x9a>" );
             
@@ -1520,7 +1520,7 @@ function entityspawned( localclientnum )
                             var_351da865.origin += step_size;
                         }
                         
-                        function_da10fc8f( localclientnum, "<dev string:x46f>" + function_9e72a96( kit_name ) + "<dev string:x12a>" + function_9e72a96( trail.name ) + "<dev string:x482>" );
+                        function_da10fc8f( localclientnum, "<dev string:x46f>" + hashtostring( kit_name ) + "<dev string:x12a>" + hashtostring( trail.name ) + "<dev string:x482>" );
                         killfx( localclientnum, handle );
                         break;
                     default:
@@ -2236,7 +2236,7 @@ function function_f00765ad( localclientnum, xuid, ccobject, index, var_3f0e790b 
         }
     }
     
-    var_8e0277a = undefined;
+    new_scene_name = undefined;
     
     if ( isdefined( fields ) )
     {
@@ -2244,13 +2244,13 @@ function function_f00765ad( localclientnum, xuid, ccobject, index, var_3f0e790b 
         
         if ( isdefined( scenes ) )
         {
-            var_8e0277a = scenes[ index % scenes.size ].scene;
+            new_scene_name = scenes[ index % scenes.size ].scene;
         }
     }
     
-    if ( isdefined( var_8e0277a ) )
+    if ( isdefined( new_scene_name ) )
     {
-        params = { #scene:var_8e0277a, #scene_target:self, #var_a34c858c:1, #var_c76f3e47:1, #var_401d9a1:1 };
+        params = { #scene:new_scene_name, #scene_target:self, #var_a34c858c:1, #var_c76f3e47:1, #var_401d9a1:1 };
         
         if ( isdefined( var_23904c1d ) )
         {
@@ -2710,23 +2710,23 @@ function function_f00ff0c7( localclientnum )
 function function_b1b8f767( localclientnum, play )
 {
     var_6aeec2ad = getdvarstring( #"hash_52abdac1a234fa29", "" );
-    var_bfe5e572 = struct::get( #"lobby_align_tag" + var_6aeec2ad );
+    camera_struct = struct::get( #"lobby_align_tag" + var_6aeec2ad );
     
-    if ( isdefined( var_bfe5e572 ) )
+    if ( isdefined( camera_struct ) )
     {
         if ( play )
         {
-            var_bfe5e572.var_e8b5aff5 = 1;
+            camera_struct.var_e8b5aff5 = 1;
             function_b0442428( level.var_6f1da91a, 0 );
-            var_bfe5e572 thread scene::play( "scene_frontend_lobby_team" + var_6aeec2ad );
+            camera_struct thread scene::play( "scene_frontend_lobby_team" + var_6aeec2ad );
             return;
         }
         
-        if ( !play && isdefined( var_bfe5e572.var_e8b5aff5 ) && var_bfe5e572.var_e8b5aff5 )
+        if ( !play && isdefined( camera_struct.var_e8b5aff5 ) && camera_struct.var_e8b5aff5 )
         {
-            var_bfe5e572.var_e8b5aff5 = 0;
+            camera_struct.var_e8b5aff5 = 0;
             function_f5eca51d( level.var_6f1da91a, 0 );
-            var_bfe5e572 thread scene::stop( "scene_frontend_lobby_team" + var_6aeec2ad, 1 );
+            camera_struct thread scene::stop( "scene_frontend_lobby_team" + var_6aeec2ad, 1 );
         }
     }
 }
@@ -2737,23 +2737,23 @@ function function_b1b8f767( localclientnum, play )
 // Size: 0x11c
 function function_db9d479f( localclientnum, play )
 {
-    var_bfe5e572 = struct::get( #"arena_align_tag" );
+    camera_struct = struct::get( #"arena_align_tag" );
     
-    if ( isdefined( var_bfe5e572 ) )
+    if ( isdefined( camera_struct ) )
     {
         if ( play )
         {
-            var_bfe5e572.var_e8b5aff5 = 1;
+            camera_struct.var_e8b5aff5 = 1;
             function_b0442428( level.var_6f1da91a, 1 );
-            var_bfe5e572 thread scene::play( "scene_frontend_arena_team" );
+            camera_struct thread scene::play( "scene_frontend_arena_team" );
             return;
         }
         
-        if ( !play && isdefined( var_bfe5e572.var_e8b5aff5 ) && var_bfe5e572.var_e8b5aff5 )
+        if ( !play && isdefined( camera_struct.var_e8b5aff5 ) && camera_struct.var_e8b5aff5 )
         {
-            var_bfe5e572.var_e8b5aff5 = 0;
+            camera_struct.var_e8b5aff5 = 0;
             function_f5eca51d( level.var_6f1da91a, 1 );
-            var_bfe5e572 thread scene::stop( "scene_frontend_arena_team", 1 );
+            camera_struct thread scene::stop( "scene_frontend_arena_team", 1 );
         }
     }
 }
@@ -3193,9 +3193,9 @@ function function_a71254a9( localclientnum, play, player_data, var_1c5551d6 = 0,
             
             if ( isdefined( scene_shot ) )
             {
-                var_e9a3b264 = scene::get_all_shot_names( var_53511779, undefined, 0 );
+                all_scenes = scene::get_all_shot_names( var_53511779, undefined, 0 );
                 
-                if ( !isdefined( var_e9a3b264 ) || var_e9a3b264.size == 0 || !array::contains( var_e9a3b264, scene_shot ) )
+                if ( !isdefined( all_scenes ) || all_scenes.size == 0 || !array::contains( all_scenes, scene_shot ) )
                 {
                     scene_shot = undefined;
                 }

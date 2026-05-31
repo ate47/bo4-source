@@ -1,0 +1,83 @@
+{
+    "name": "#zm_esc_magicbox",
+    "delayBetweenRepSoundsDuration": 0,
+    "earthquakeOnRepair": 0,
+    "earthquakeMinScale": 0.3,
+    "earthquakeMaxScale": 0.4,
+    "earthquakeMinDuration": 0.2,
+    "earthquakeMaxDuration": 0.4,
+    "earthquakeRadius": 150,
+    "numBoardsInBarrier": 6,
+    "autoHideOpenPieces": 0,
+    "taunts": 0,
+    "reachThroughAttacks": 0,
+    "numAttackSlots": 1,
+    "attackSpotHorzOffset": 0,
+    "boards": [
+        {
+            "boardModel": "#p8_zm_esc_magic_box",
+            "tearAnim": "#hash_686fc7137d570b69",
+            "boardAnim": "#hash_79399e1cb5a7b2d2",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        },
+        {
+            "boardModel": "#p8_zm_esc_magic_box",
+            "tearAnim": "#hash_795a43ad40873a4d",
+            "boardAnim": "#hash_14a67b4d9c623c05",
+            "pauseAndRepeatRepSound": "#hash_1",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        },
+        {
+            "boardModel": "#p8_zm_esc_magic_box",
+            "tearAnim": "#hash_19ab6cf268c124e0",
+            "boardAnim": "#hash_1c81a9b7ed0fc33c",
+            "pauseAndRepeatRepSound": "#hash_1",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        },
+        {
+            "boardModel": "#tag_origin",
+            "tearAnim": "#o_zombie_magic_box_weapon_rise",
+            "boardAnim": "#hash_40a826f77e1e14a",
+            "pauseAndRepeatRepSound": "#hash_1",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        },
+        {
+            "boardModel": "#tag_origin",
+            "tearAnim": "#o_zombie_magic_box_weapon_dual_rise",
+            "boardAnim": "#hash_40a826f77e1e14a",
+            "pauseAndRepeatRepSound": "#hash_1",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        },
+        {
+            "boardModel": "#p8_zm_esc_magic_box",
+            "tearAnim": "#hash_611f208f61fa91e4",
+            "boardAnim": "#hash_3bb897cd21daa07d",
+            "pauseAndRepeatRepSound": "#hash_1",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        }
+    ]
+}

@@ -153,7 +153,7 @@ function update()
         
         /#
             forcedstr = isdefined( self.bot.actionparams.forced ) && self.bot.actionparams.forced ? "<dev string:x38>" : "<dev string:x43>";
-            record3dtext( "<dev string:x46>" + function_9e72a96( self.bot.action.name ) + forcedstr, self.origin, ( 1, 0, 1 ), "<dev string:x4b>", self, 0.5 );
+            record3dtext( "<dev string:x46>" + hashtostring( self.bot.action.name ) + forcedstr, self.origin, ( 1, 0, 1 ), "<dev string:x4b>", self, 0.5 );
         #/
         
         return;
@@ -207,7 +207,7 @@ function function_ee2eaccc( slot )
     if ( !isdefined( var_13e42e18 ) || var_13e42e18.size <= 0 )
     {
         /#
-            self botprinterror( "<dev string:x54>" + function_9e72a96( weapon.name ) );
+            self botprinterror( "<dev string:x54>" + hashtostring( weapon.name ) );
         #/
         
         return;
@@ -246,7 +246,7 @@ function function_4a53ae1f()
     if ( !isdefined( var_13e42e18 ) || var_13e42e18.size <= 0 )
     {
         /#
-            self botprinterror( "<dev string:x73>" + function_9e72a96( weapons[ i ].name ) );
+            self botprinterror( "<dev string:x73>" + hashtostring( weapons[ i ].name ) );
         #/
         
         return;
@@ -301,7 +301,7 @@ function register_weapon( weaponname, rankfunc )
     {
         if ( !isdefined( level.botweapons[ weaponname ] ) )
         {
-            assertmsg( "<dev string:x97>" + function_9e72a96( weaponname ) + "<dev string:xa9>" );
+            assertmsg( "<dev string:x97>" + hashtostring( weaponname ) + "<dev string:xa9>" );
         }
     }
 
@@ -529,7 +529,7 @@ function function_9480d296()
         if ( !isdefined( action ) )
         {
             /#
-                self botprinterror( "<dev string:xcf>" + function_9e72a96( actionname ) );
+                self botprinterror( "<dev string:xcf>" + hashtostring( actionname ) );
             #/
             
             continue;
@@ -598,7 +598,7 @@ function private function_e7b123e8( actionparams )
     if ( executetime == finishtime )
     {
         /#
-            self botprinterror( "<dev string:xfb>" + function_9e72a96( action.name ) + "<dev string:x105>" );
+            self botprinterror( "<dev string:xfb>" + hashtostring( action.name ) + "<dev string:x105>" );
         #/
         
         self waittill( #"hash_347a612b61067eb3" );
@@ -639,7 +639,7 @@ function private action_timeout( actionname )
     }
     
     /#
-        self botprintwarning( "<dev string:xfb>" + function_9e72a96( actionname ) + "<dev string:x119>" + 10 + "<dev string:x12d>" );
+        self botprintwarning( "<dev string:xfb>" + hashtostring( actionname ) + "<dev string:x119>" + 10 + "<dev string:x12d>" );
     #/
     
     self notify( #"hash_5b4f399c08222e2" );
@@ -683,7 +683,7 @@ function function_9e181b0f()
         /#
             if ( self bot::should_record( "<dev string:x131>" ) )
             {
-                record3dtext( "<dev string:x144>" + function_9e72a96( var_e6a1f475.action.name ), self.origin, ( 1, 0, 1 ), "<dev string:x4b>", self, 0.5 );
+                record3dtext( "<dev string:x144>" + hashtostring( var_e6a1f475.action.name ), self.origin, ( 1, 0, 1 ), "<dev string:x4b>", self, 0.5 );
             }
         #/
         
@@ -741,7 +741,7 @@ function function_9e181b0f()
                     }
                 }
                 
-                record3dtext( headerstr + function_9e72a96( actionparams.action.name ) + "<dev string:x18d>" + recordrank + "<dev string:x192>" + recordweight, self.origin, color, "<dev string:x4b>", self, 0.5 );
+                record3dtext( headerstr + hashtostring( actionparams.action.name ) + "<dev string:x18d>" + recordrank + "<dev string:x192>" + recordweight, self.origin, color, "<dev string:x4b>", self, 0.5 );
                 
                 if ( isdefined( actionparams.weapon ) && isdefined( self.bot.var_c4fbaffc[ actionparams.weapon ] ) )
                 {
@@ -3581,14 +3581,14 @@ function function_7355c240( actionparams )
         fwd = anglestoforward( angles );
         right = anglestoright( angles );
         up = anglestoup( angles );
-        aimoffset = function_d2e41376( actionparams.aimpoint, eyes, fwd, right, up, self.bot.var_ea5b64df, 0 );
+        aimoffset = calculate_aim_offset( actionparams.aimpoint, eyes, fwd, right, up, self.bot.var_ea5b64df, 0 );
         
         if ( isdefined( aimoffset ) )
         {
             self.bot.aimoffset = aimoffset;
         }
         
-        var_9492fdcb = function_d2e41376( actionparams.var_97065630, eyes, fwd, right, up, self.bot.var_ea5b64df, 1 );
+        var_9492fdcb = calculate_aim_offset( actionparams.var_97065630, eyes, fwd, right, up, self.bot.var_ea5b64df, 1 );
         
         if ( isdefined( var_9492fdcb ) )
         {
@@ -3610,7 +3610,7 @@ function function_7355c240( actionparams )
 // Params 7
 // Checksum 0x3030c6bb, Offset: 0x9cb0
 // Size: 0x2a8
-function function_d2e41376( var_9d9ae85, eyes, fwd, right, up, var_ea5b64df, close )
+function calculate_aim_offset( var_9d9ae85, eyes, fwd, right, up, var_ea5b64df, close )
 {
     attachmentisselectable = var_9d9ae85 - eyes;
     var_df4809a5 = vectornormalize( attachmentisselectable );

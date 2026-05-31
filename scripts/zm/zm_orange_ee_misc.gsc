@@ -89,7 +89,7 @@ function main()
         zm_sq::start( #"hash_729a1e4eb041be9b" );
         level thread function_716974ba();
         level thread sq_glasses();
-        level thread function_7836d215();
+        level thread hidden_song_2();
     }
 }
 
@@ -409,7 +409,7 @@ function function_8b0417eb()
 // Params 1
 // Checksum 0x7c55c29e, Offset: 0x1930
 // Size: 0x4c
-function function_9e857126( Params )
+function function_9e857126( params )
 {
     if ( zombie_utility::get_current_zombie_count() == 1 && level.zombie_total == 0 )
     {
@@ -1193,7 +1193,7 @@ function function_fdc3c7c4()
 // Params 0
 // Checksum 0x5ee13994, Offset: 0x3ec8
 // Size: 0x144
-function function_7836d215()
+function hidden_song_2()
 {
     s_location = struct::spawn( ( -528, 1196, 320 ) );
     s_unitrigger = s_location zm_unitrigger::create( "", 32 );

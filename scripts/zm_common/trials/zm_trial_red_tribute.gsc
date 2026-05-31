@@ -124,7 +124,7 @@ function private function_29bcf2f8()
     
     if ( isdefined( self.s_tribute_bowl ) && isdefined( self.s_tribute_bowl.var_9d32404 ) )
     {
-        self.s_tribute_bowl.var_9d32404 clientfield::set( "" + #"hash_21f5fab6a3d22093", 0 );
+        self.s_tribute_bowl.var_9d32404 clientfield::set( "" + #"tribute_flame_fx", 0 );
     }
     
     self zm_red_challenges_rewards::set_tribute( 0 );
@@ -199,7 +199,7 @@ function private track_spawns()
     {
         level.var_ddd04c77++;
         
-        if ( level.var_ddd04c77 >= level.var_38b15968 )
+        if ( level.var_ddd04c77 >= level.n_zombie_spawns )
         {
             self zm_score::function_acaab828( 1 );
         }

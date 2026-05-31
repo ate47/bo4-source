@@ -651,11 +651,11 @@ function function_53ffbb2e( var_cf2bbe1e )
     {
         if ( var_ab611263[ #"gas_cloud" ].script_string == var_cf2bbe1e )
         {
-            var_3e91e4d2 = var_ab611263[ #"gas_cloud" ].script_noteworthy;
+            s_zone_name = var_ab611263[ #"gas_cloud" ].script_noteworthy;
             
             foreach ( s_loc in level.zm_loc_types[ #"dog_location" ] )
             {
-                if ( s_loc.zone_name == var_3e91e4d2 )
+                if ( s_loc.zone_name == s_zone_name )
                 {
                     if ( !isdefined( a_s_result[ #"dog_location" ] ) )
                     {
@@ -1267,7 +1267,7 @@ function function_751e9580()
     
     if ( level.var_154aee78 <= zm_round_logic::get_round_number() && level.var_bcaf8591 > 0 && ( !level flag::get( #"hash_1478cafcd626c361" ) || level flag::get( #"circuit_step_complete" ) ) )
     {
-        n_zombie_count = level.var_38b15968;
+        n_zombie_count = level.n_zombie_spawns;
         var_26d4dd52 = floor( randomfloatrange( floor( n_zombie_count / 5 ), floor( n_zombie_count * 2 / 3 ) ) );
         
         while ( level.var_9427911d > var_26d4dd52 )
@@ -2566,7 +2566,7 @@ function function_f3f325cb( var_148cc603 )
         return 0;
     }
     
-    return int( 0.1 * level.var_38b15968 );
+    return int( 0.1 * level.n_zombie_spawns );
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds

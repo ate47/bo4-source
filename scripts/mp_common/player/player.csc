@@ -29,7 +29,7 @@ function __init__()
     callback::on_spawned( &on_player_spawned );
     callback::on_player_corpse( &on_player_corpse );
     callback::function_930e5d42( &function_930e5d42 );
-    callback::on_weapon_change( &function_585458 );
+    callback::on_weapon_change( &on_player_weapon_change );
     callback::on_localclient_connect( &shoutcaster::function_981be10f );
     level.var_15ab9bbd = 1;
     renderoverridebundle::function_f72f089c( #"hash_27554b8df2b9e92b", sessionmodeiscampaigngame() ? #"hash_1cbf6d26721c59a7" : #"hash_1c90592671f4c6e9", &function_6803f977, undefined, undefined, 1 );
@@ -165,7 +165,7 @@ function on_player_corpse( localclientnum, params )
 // Params 1
 // Checksum 0x36090d86, Offset: 0x7d8
 // Size: 0xac
-function function_585458( params )
+function on_player_weapon_change( params )
 {
     if ( self == level )
     {
@@ -228,44 +228,44 @@ function function_fac25f84( local_client_num, bundle )
 // Namespace player/player
 // Params 2
 // Checksum 0xf375fad0, Offset: 0x9c8
-// Size: 0x112, Type: bool
+// Size: 0x112
 function function_6803f977( local_client_num, bundle )
 {
     if ( !function_2f9b4fe8( local_client_num, #"specialty_friendliesthroughwalls" ) )
     {
-        return false;
+        return 0;
     }
     
     if ( level.gameended )
     {
-        return false;
+        return 0;
     }
     
     if ( self function_da43934d() )
     {
-        return false;
+        return 0;
     }
     
     player = function_5c10bd79( local_client_num );
     
     if ( self == player )
     {
-        return false;
+        return 0;
     }
     
     if ( function_1cbf351b( local_client_num ) && !player function_4e0ca360() )
     {
-        return false;
+        return 0;
     }
     
     if ( gadget_vision_pulse::is_active( local_client_num ) )
     {
-        return false;
+        return 0;
     }
     
     if ( player.var_33b61b6f === 1 )
     {
-        return false;
+        return 0;
     }
     
     return renderoverridebundle::function_6803f977( local_client_num, bundle );

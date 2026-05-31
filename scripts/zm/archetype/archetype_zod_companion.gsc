@@ -501,9 +501,9 @@ function private manage_companion_movement( entity )
 {
     self endon( #"death" );
     
-    if ( isdefined( level.var_1a612d42 ) && level.var_1a612d42.eligible_leader )
+    if ( isdefined( level.companion_leader ) && level.companion_leader.eligible_leader )
     {
-        self.leader = level.var_1a612d42;
+        self.leader = level.companion_leader;
     }
     
     if ( !isdefined( entity.var_5f694f04 ) )
@@ -544,7 +544,7 @@ function private manage_companion_movement( entity )
     
     if ( isdefined( entity.leader ) && entity.leader.is_flung === 1 )
     {
-        entity thread function_d5390a05( entity.leader.var_a76eba5b );
+        entity thread take_flinger( entity.leader.var_a76eba5b );
     }
     
     foreach ( player in level.players )
@@ -746,7 +746,7 @@ function private function_818f64d1( var_d2a1361a )
 // Params 1, eflags: 0x4
 // Checksum 0xba0604d2, Offset: 0x29c8
 // Size: 0xc2
-function private function_d5390a05( var_33d955f9 )
+function private take_flinger( var_33d955f9 )
 {
     self endon( #"death" );
     self.var_7e56b71c = 1;
@@ -1307,9 +1307,9 @@ function function_dbd6fcc6()
 // Size: 0x346
 function define_new_leader()
 {
-    if ( isdefined( level.var_1a612d42 ) && level.var_1a612d42.eligible_leader )
+    if ( isdefined( level.companion_leader ) && level.companion_leader.eligible_leader )
     {
-        self.leader = level.var_1a612d42;
+        self.leader = level.companion_leader;
         return;
     }
     

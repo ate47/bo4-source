@@ -24,7 +24,7 @@
 function init()
 {
     level.var_d2ed4be7 = array( #"zombie", #"mannequin" );
-    callback::on_spawned( &function_ea6a4006 );
+    callback::on_spawned( &setup_character_vo );
     level.var_5dd0d3ff = spawn( "script_origin", ( 0, 0, 0 ) );
     level.var_5dd0d3ff.name = "rush";
     level.var_5dd0d3ff.isspeaking = 0;
@@ -64,7 +64,7 @@ function init()
 // Params 0
 // Checksum 0xf244589d, Offset: 0x8d0
 // Size: 0x1a4
-function function_ea6a4006()
+function setup_character_vo()
 {
     self zm_audio::function_6191af93( #"surrounded", #"self", #"oh", #"shit", 100 );
     self zm_audio::function_6191af93( #"magicbox", #"homunculus", #"magicbox", #"monkey", 100 );
@@ -510,7 +510,7 @@ function function_1526eabf( e_player )
 // Params 0
 // Checksum 0x47fc0e07, Offset: 0x20c8
 // Size: 0x84
-function function_d7c9337c()
+function get_ray_gun_mk2()
 {
     if ( self hasweapon( level.a_w_ray_guns[ 2 ] ) )
     {
@@ -531,7 +531,7 @@ function function_d7c9337c()
 // Size: 0x44
 function take_ray_gun_mk2()
 {
-    w_ray_gun_mk2 = self function_d7c9337c();
+    w_ray_gun_mk2 = self get_ray_gun_mk2();
     
     if ( isdefined( w_ray_gun_mk2 ) )
     {

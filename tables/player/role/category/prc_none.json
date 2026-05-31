@@ -1,0 +1,11 @@
+{
+    "name": "#prc_none",
+    "displayName": "#menu/none",
+    "description": "#menu/none",
+    "icon": "#uie_t7_icon_error_overlays",
+    "sortOrder": 1,
+    "bundle": {
+        "iconbig": "image#uie_t7_icon_error_overlays",
+        "enabled": 0
+    }
+}

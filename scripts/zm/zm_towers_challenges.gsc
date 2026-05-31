@@ -1479,14 +1479,14 @@ function function_347214f4( e_player )
 {
     self endon( #"temple_challenge_completed" );
     e_player endon( #"disconnect" );
-    var_24f5d9f8 = array( "zone_pap_room", "zone_pap_room_balcony_flooded_crypt" );
+    a_str_valid_zones = array( "zone_pap_room", "zone_pap_room_balcony_flooded_crypt" );
     
     while ( true )
     {
         level waittill( #"start_of_round" );
         str_zone = e_player zm_zonemgr::get_player_zone();
         
-        if ( !isinarray( var_24f5d9f8, str_zone ) )
+        if ( !isinarray( a_str_valid_zones, str_zone ) )
         {
             continue;
         }
@@ -1514,13 +1514,13 @@ function function_29c490cf( var_31e6bd22 )
 {
     self endon( #"death", #"hash_7df55853368e6305" );
     var_31e6bd22 endon( #"temple_challenge_completed" );
-    var_24f5d9f8 = array( "zone_pap_room", "zone_pap_room_balcony_flooded_crypt" );
+    a_str_valid_zones = array( "zone_pap_room", "zone_pap_room_balcony_flooded_crypt" );
     
     while ( true )
     {
         str_zone = self zm_zonemgr::get_player_zone();
         
-        if ( !isinarray( var_24f5d9f8, str_zone ) )
+        if ( !isinarray( a_str_valid_zones, str_zone ) )
         {
             break;
         }

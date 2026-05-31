@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_sparkler",
+    "type": "#gesture",
+    "gesture": "#boast_sparkler",
+    "gesture2": "#boast_sparkler_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/sparky",
+        "icon": "image#ui_icon_emotes_sparkler",
+        "isdefault": 0
+    }
+}

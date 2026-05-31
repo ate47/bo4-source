@@ -3,8 +3,9 @@
     "baseWeapon": "#pistol_topbreak_t8_lh_upgraded",
     "displayname": "#zmweapon/pistol_topbreak_t8_upgraded",
     "xhash_60": "#hash_742873882276263",
-    "xhash_70": "#pistol_topbreak_t8",
-    "streamkey": "#hash_317b09819dc8916a",
+    "weapon70": "#pistol_topbreak_t8",
+    "dualwieldWeaponName": "#pistol_topbreak_t8_upgraded_zm",
+    "soundbank": "#pistol_topbreak_t8_lh_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -21,21 +22,38 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 1,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.1 1",
+            "0.2 0",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0524 0.9014",
+            "0.1251 0.4004",
+            "0.2517 0.1204",
+            "0.5021 0.0508",
+            "1 0.05"
+        ]
+    ],
     "firesounddistant": "#hash_f74753fbac3a42d",
     "firesound": "#hash_3f3429b0a7cb6afc",
     "firesoundplayer": "#hash_50e67cb0b1ec9add",
@@ -46,7 +64,6 @@
     "sound240": "#hash_6329b05b647edd44",
     "sound250": "#hash_7ed0935bbc956025",
     "sound610": "#hash_72a07537a35e0368",
-    "sound740": "#pistol_topbreak_t8_upgraded_zm",
     "projexplosionsound": "#hash_4b54922aa9a7114c",
     "sound800": "#hash_21cba6ae89a3493c",
     "sound810": "#hash_21cba6ae89a3493c",
@@ -54,7 +71,7 @@
     "weaponCamo": "#hash_3d696a3142afc98b",
     "cacWeaponXCam": "#hash_2f20c8b9ca4ddf74",
     "cacAttachmentsXCam": "#hash_2f20c8b9ca4ddf74",
-    "weaponIconXCam": "#hash_16d2791a641b8f64",
+    "weaponIconXCam": "#ui_cam_icon_pistol_shotgun",
     "attachments": [
         "#defaultattachment"
     ],
@@ -62,7 +79,7 @@
         "#hash_6d5da4c74dc6e246"
     ],
     "sharedWeaponSounds": "#pistol",
-    "ballisticDesc": "#hash_fa8de762a01fac90",
+    "ballisticDesc": "#9mm_fmj",
     "projectilemodel": "#wpn_t8_hero_war_machine_projectile",
     "viewmodel": [
         "#wpn_t8_zm_pistol_webly_view_dw"
@@ -76,7 +93,7 @@
     "fireRumble": "#damage_heavy",
     "fx_bc8": "#hash_785b070ad413a638",
     "fx_bd0": "#hash_59dcccd22b7d037e",
-    "fx_f00": "#hash_80e7395fb42d35f6",
+    "fx_f00": "#weapon/fx_trail_grenade",
     "normalImpactFX": "#grenade_explosion",
     "exitImpactFX": "#grenade_exit",
     "bounceImpactFX": "#grenade_bounce",

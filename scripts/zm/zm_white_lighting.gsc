@@ -46,7 +46,7 @@ function function_2bdf9f35()
 // Size: 0x32
 function function_3d4e24ea()
 {
-    level._effect[ #"hash_5ee980374efab771" ] = #"hash_964810cc067cb78";
+    level._effect[ #"fx_light_example" ] = #"hash_964810cc067cb78";
 }
 
 // Namespace zm_white_lighting/zm_white_lighting

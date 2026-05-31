@@ -20,12 +20,12 @@
     "value19": "5000",
     "value18": "4500",
     "label": "localized17#menu/x_money",
-    "hash_5a6dee5a": 0,
+    "hash_3d268f562204a4fb:hash_5a6dee5a": 0,
     "name": "starting_cash",
     "displayname": "localized17#menu/starting_cash",
-    "hash_54e336e4": 0,
+    "hash_4dd5060aa2f3ff5f:hash_54e336e4": 0,
     "optionscount": 19,
-    "hash_765cfd09": 0,
+    "hash_70853ef08fe1e46d:hash_765cfd09": 0,
     "setting": "bountyStartMoney",
     "isenableddisabled": 0
 }

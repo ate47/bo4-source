@@ -1,7 +1,7 @@
 {
     "objects": [
         {
-            "mainanim": "anim4#hash_7b79fb44c02e5dc7",
+            "mainanim": "anim#hash_7b79fb44c02e5dc7",
             "model": "model#p7_fxanim_mp_slums_tarp_plastic_roof_01_mod",
             "type": "prop",
             "vmtype": "server",

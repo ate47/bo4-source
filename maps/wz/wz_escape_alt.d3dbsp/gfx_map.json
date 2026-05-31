@@ -1,0 +1,23 @@
+{
+    "name": "#maps/wz/wz_escape_alt.d3dbsp",
+    "baseName": "wz_escape_alt",
+    "mins": "-1906636.6 -1906636 -8398.984",
+    "maxs": "1906636.2 1906635.8 4077.179",
+    "checksum": 0,
+    "streamerworld": "#hash_35a2e220c973f758",
+    "lighting": "#maps/wz/wz_escape_alt.d3dbsp",
+    "lutMaterial": "#hash_33fd8dd681a14d35",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#hash_3bbc41c0fab9117c",
+        "#hash_3bbc41c0fab9117c",
+        "#hash_3bbc41c0fab9117c",
+        "#hash_3bbc41c0fab9117c"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 12,
+        "cookieArray": "#*cookie_array"
+    }
+}

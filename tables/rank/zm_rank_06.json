@@ -1,16 +1,13 @@
 {
     "name": "#zm_rank_06",
-    "shortNameRef": "#",
     "fullNameRef": "#hash_27be8422dcb9321d",
-    "ingameNameRef": "#",
-    "iconName": "#hash_1065cbb185e6283",
-    "iconNameLarge": "#hash_3c15dd49af9b8823",
     "level": 6,
     "minXp": 18400,
     "maxXp": 24100,
+    "icon": "#ui_icon_rank_zm_level06",
+    "iconLarge": "#ui_icon_rank_zm_level06_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#perk_mystery"
         }
     ]

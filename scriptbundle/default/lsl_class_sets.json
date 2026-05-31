@@ -37,22 +37,22 @@
             "value": "localized17#hash_73459873da388a3f"
         },
         {
-            "value": "localized17#hash_73bf78bd8d8db95d"
+            "value": "localized17#class/breach"
         },
         {
-            "value": "localized17#hash_6338674bdead3158"
+            "value": "localized17#class/mercenary"
         },
         {
-            "value": "localized17#hash_76fba834032b8fb7"
+            "value": "localized17#class/support"
         },
         {
-            "value": "localized17#hash_13262c0a18d54ad0"
+            "value": "localized17#class/sentinel"
         },
         {
-            "value": "localized17#hash_554a0a19e3773c1a"
+            "value": "localized17#class/marksman"
         },
         {
-            "value": "localized17#hash_639f992affc7299e"
+            "value": "localized17#class/hunter"
         }
     ],
     "name": "lsl_class_sets"

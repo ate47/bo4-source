@@ -986,12 +986,12 @@ function private function_ac53cb4e( entity )
 // Namespace zm_ai_stoker/zm_ai_stoker
 // Params 1, eflags: 0x4
 // Checksum 0xb9c9e60a, Offset: 0x3398
-// Size: 0x3a, Type: bool
+// Size: 0x3a
 function private function_6d817d57( entity )
 {
     if ( isdefined( self.completed_emerging_into_playable_area ) && self.completed_emerging_into_playable_area )
     {
-        return true;
+        return 1;
     }
     
     return zm_behavior::zombieenteredplayable( entity );

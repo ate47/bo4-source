@@ -134,8 +134,8 @@ function function_1ad84248()
                 {
                     if ( getdvarint( #"zm_debug_ee", 0 ) )
                     {
-                        iprintlnbold( "<dev string:x38>" + function_9e72a96( story ) );
-                        println( "<dev string:x38>" + function_9e72a96( story ) );
+                        iprintlnbold( "<dev string:x38>" + hashtostring( story ) );
+                        println( "<dev string:x38>" + hashtostring( story ) );
                     }
                 }
             #/
@@ -230,8 +230,8 @@ function function_561d9cff()
         {
             if ( getdvarint( #"zm_debug_ee", 0 ) )
             {
-                iprintlnbold( "<dev string:x38>" + function_9e72a96( story ) );
-                println( "<dev string:x38>" + function_9e72a96( story ) );
+                iprintlnbold( "<dev string:x38>" + hashtostring( story ) );
+                println( "<dev string:x38>" + hashtostring( story ) );
             }
         }
     #/

@@ -1,5 +1,16 @@
 {
-    "name": "#wz_progression_online",
     "nameStr": "wz_progression_online",
-    "ddl": "#gamedata/ddl/generated/wz_progression.ddl"
+    "name": "#wz_progression_online",
+    "ddlPath": "#gamedata/ddl/generated/wz_progression.ddl",
+    "files": [
+        {
+            "fileName": "wz_progression_online"
+        }
+    ],
+    "size": 112640,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

@@ -1,0 +1,8 @@
+{
+    "name": "#c_rus_nikolai_zm",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_zom_der_nikolai_mpc_fb"
+}

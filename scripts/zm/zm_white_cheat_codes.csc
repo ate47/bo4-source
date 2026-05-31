@@ -19,7 +19,7 @@ function init()
 // Size: 0x5c
 function init_clientfields()
 {
-    clientfield::register( "scriptmover", "" + #"hash_7876f33937c8a764", 20000, 1, "int", &vomit, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"vomit_blade_fx", 20000, 1, "int", &vomit, 0, 0 );
 }
 
 // Namespace zm_white_cheat_codes/zm_white_cheat_codes

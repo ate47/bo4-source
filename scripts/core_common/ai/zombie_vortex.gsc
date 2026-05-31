@@ -466,7 +466,7 @@ function state_idgun_flying_crush_update( params )
     attacker = params.attacker;
     weapon = params.weapon;
     self setspeed( 2 );
-    self asmrequestsubstate( #"hash_605a76518deb2c5f" );
+    self asmrequestsubstate( #"idgun@movement" );
     self thread switch_to_crush_asm( black_hole_center );
     self function_a57c34b7( black_hole_center, 0, 0 );
     self waittill( #"near_goal" );
@@ -487,7 +487,7 @@ function switch_to_crush_asm( black_hole_center )
     {
         if ( distancesquared( self.origin, black_hole_center ) < 900 )
         {
-            self asmrequestsubstate( #"hash_1d57c7f1617da95b" );
+            self asmrequestsubstate( #"idgun_crush@movement" );
             return;
         }
         

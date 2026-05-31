@@ -29,6 +29,7 @@ class class_7b5e0861
     var m_spawnsentity;
     var m_timeout;
     var m_type;
+    var m_validmodel;
     var m_vehicle;
     var m_weapon;
     var var_28f1ce55;
@@ -37,7 +38,6 @@ class class_7b5e0861
     var var_656cbe2d;
     var var_b4662b52;
     var var_c59ba447;
-    var var_e84fc5dc;
     var var_f81e0192;
 
     // Namespace class_7b5e0861/traps_deployable
@@ -65,7 +65,7 @@ class class_7b5e0861
         m_weapon = bundle.weapon;
         m_vehicle = bundle.vehicle;
         m_model = bundle.model;
-        var_e84fc5dc = bundle.var_f495bc84;
+        m_validmodel = bundle.model_valid;
         var_28f1ce55 = bundle.var_90f05429;
         m_spawnsentity = bundle.spawnsentity;
         var_656cbe2d = bundle.str_pickup;
@@ -259,7 +259,7 @@ function register_trap( var_2d727ba0 )
         switch ( var_2d727ba0.trap_type )
         {
             case #"generic":
-                function_2ce21754( var_2d727ba0.trap_type, &lb_color, &function_6ce6a400, &function_2b8baf6d, &function_a879466e, &function_efe68db2, &function_6ef47474, &function_a21e6a22 );
+                function_2ce21754( var_2d727ba0.trap_type, &function_c75a9937, &function_6ce6a400, &function_2b8baf6d, &function_a879466e, &function_efe68db2, &function_6ef47474, &function_a21e6a22 );
                 break;
             case #"fire_bomb":
             case #"flash_disruptor":
@@ -832,7 +832,7 @@ function function_a879466e( var_3af54106, origin, angles )
             return;
         }
         
-        placeable = player placeables::spawnplaceable( level._traps_deployable.traptypes[ type ].onplacecallback, level._traps_deployable.traptypes[ type ].oncancelcallback, onmovecallback, level._traps_deployable.traptypes[ type ].onshutdowncallback, level._traps_deployable.traptypes[ type ].ondeathcallback, level._traps_deployable.traptypes[ type ].onempcallback, level._traps_deployable.traptypes[ type ].ondamagecallback, level._traps_deployable.traptypes[ type ].var_d0dd7e76, var_3af54106.m_model, var_3af54106.var_e84fc5dc, var_3af54106.var_28f1ce55, var_3af54106.m_spawnsentity, var_3af54106.var_656cbe2d, var_3af54106.m_timeout, var_3af54106.m_health, var_3af54106.m_empdamage, var_3af54106.var_f81e0192, var_3af54106.var_b4662b52, var_3af54106.m_placeimmediately, level._traps_deployable.traptypes[ type ].damagewrapper );
+        placeable = player placeables::spawnplaceable( level._traps_deployable.traptypes[ type ].onplacecallback, level._traps_deployable.traptypes[ type ].oncancelcallback, onmovecallback, level._traps_deployable.traptypes[ type ].onshutdowncallback, level._traps_deployable.traptypes[ type ].ondeathcallback, level._traps_deployable.traptypes[ type ].onempcallback, level._traps_deployable.traptypes[ type ].ondamagecallback, level._traps_deployable.traptypes[ type ].var_d0dd7e76, var_3af54106.m_model, var_3af54106.m_validmodel, var_3af54106.var_28f1ce55, var_3af54106.m_spawnsentity, var_3af54106.var_656cbe2d, var_3af54106.m_timeout, var_3af54106.m_health, var_3af54106.m_empdamage, var_3af54106.var_f81e0192, var_3af54106.var_b4662b52, var_3af54106.m_placeimmediately, level._traps_deployable.traptypes[ type ].damagewrapper );
         placeable.var_3af54106 = var_3af54106;
         placeable.is_placeable = 1;
         placeable.var_25404db4 = 1;
@@ -845,7 +845,7 @@ function function_a879466e( var_3af54106, origin, angles )
 // Params 1
 // Checksum 0xe0a38255, Offset: 0x2348
 // Size: 0x4c
-function lb_color( placeable )
+function function_c75a9937( placeable )
 {
     player = self;
     var_3af54106 = placeable.var_3af54106;
@@ -1142,7 +1142,7 @@ function function_3c3f30e3( placeable )
             trap_instance.var_c98531e5 = var_c98531e5;
             trap_instance.weapon_instance = placeable.weapon_instance;
             var_3af54106 track_trap( trap_instance );
-            player lb_color( placeable );
+            player function_c75a9937( placeable );
         }
     }
     

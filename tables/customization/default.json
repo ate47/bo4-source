@@ -1,6 +1,5 @@
 {
-    "heads": [
-    ],
-    "playerRoles": [
-    ]
+    "name": "#default",
+    "numHeads": 0,
+    "numPlayerRoles": 0
 }

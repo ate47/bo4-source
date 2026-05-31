@@ -1,0 +1,19 @@
+{
+    "name": "#hash_639eb0f9ba52a454",
+    "desc": "#hash_42490c9faeaafef8",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "desc": "#hash_2219d2672d506c37",
+            "unk68:unk10": true,
+            "model": "#c_t8_mp_spe_outrider_head1_cst",
+            "unk68:unk48": [
+                "#mc/mtl_c_t8_mp_spe_outrider1_body1_glasses_frame_cst",
+                "#mc/mtl_c_t8_mp_spe_outrider1_body1_glasses_glass_cst",
+                "#mc/mtl_c_t8_mp_spe_outrider1_body1_cap_cst"
+            ],
+            "unk68:unk50": 1
+        }
+    ]
+}

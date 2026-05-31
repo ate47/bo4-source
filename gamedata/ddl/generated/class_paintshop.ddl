@@ -15,7 +15,7 @@ version 15 {
         // offset 0x26, size 0xc
         uint:12 posy;
         // offset 0x32, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x3a, size 0x8
         uint:8 alpha;
         // offset 0x42, size 0x9
@@ -61,7 +61,7 @@ version 15 {
     };
 
     // idx 2 members 27 size 0xb4
-    struct hash_24f699c797bc9492 {
+    struct emblemgroup {
         // offset 0x0, size 0x8
         uint:8 red;
         // offset 0x8, size 0x8
@@ -71,7 +71,7 @@ version 15 {
         // offset 0x1c, size 0xc
         uint:12 posy;
         // offset 0x28, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x30, size 0x8
         uint:8 alpha;
         // offset 0x38, size 0x9
@@ -119,25 +119,25 @@ version 15 {
     };
 
     // idx 3 members 2 size 0x37bc
-    struct hash_62325f44a788da78 {
+    struct layerinformation {
         // offset 0x0, size 0x3000
         emblemlayer layer[64];
         // offset 0x3000, size 0x7bc
-        hash_24f699c797bc9492 groups[11];
+        emblemgroup groups[11];
     };
 
     // idx 4 members 2 size 0x30b4
-    struct hash_6ac42a2c4c8f3b10 {
+    struct decalinformation {
         // offset 0x0, size 0x3000
         emblemlayer layer[64];
         // offset 0x3000, size 0xb4
-        hash_24f699c797bc9492 groups[1];
+        emblemgroup groups[1];
     };
 
     // idx 5 members 2 size 0x37c6
     struct emblem {
         // offset 0x0, size 0x37bc
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
         // offset 0x37bc, size 0xa
         uint:10 background;
     };
@@ -145,7 +145,7 @@ version 15 {
     // idx 6 members 1 size 0x37bc
     struct hash_4e00feaf81ba241c {
         // offset 0x0, size 0x37bc
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
     };
 
     // idx 7 members 1 size 0x6f78
@@ -247,7 +247,7 @@ version 14 {
         // offset 0x26, size 0xc
         uint:12 posy;
         // offset 0x32, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x3a, size 0x8
         uint:8 alpha;
         // offset 0x42, size 0x9
@@ -293,7 +293,7 @@ version 14 {
     };
 
     // idx 2 members 27 size 0xb4
-    struct hash_24f699c797bc9492 {
+    struct emblemgroup {
         // offset 0x0, size 0x8
         uint:8 red;
         // offset 0x8, size 0x8
@@ -303,7 +303,7 @@ version 14 {
         // offset 0x1c, size 0xc
         uint:12 posy;
         // offset 0x28, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x30, size 0x8
         uint:8 alpha;
         // offset 0x38, size 0x9
@@ -351,25 +351,25 @@ version 14 {
     };
 
     // idx 3 members 2 size 0x37bc
-    struct hash_62325f44a788da78 {
+    struct layerinformation {
         // offset 0x0, size 0x3000
         emblemlayer layer[64];
         // offset 0x3000, size 0x7bc
-        hash_24f699c797bc9492 groups[11];
+        emblemgroup groups[11];
     };
 
     // idx 4 members 2 size 0x30b4
-    struct hash_6ac42a2c4c8f3b10 {
+    struct decalinformation {
         // offset 0x0, size 0x3000
         emblemlayer layer[64];
         // offset 0x3000, size 0xb4
-        hash_24f699c797bc9492 groups[1];
+        emblemgroup groups[1];
     };
 
     // idx 5 members 2 size 0x37c6
     struct emblem {
         // offset 0x0, size 0x37bc
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
         // offset 0x37bc, size 0xa
         uint:10 background;
     };
@@ -377,7 +377,7 @@ version 14 {
     // idx 6 members 1 size 0x37bc
     struct hash_4e00feaf81ba241c {
         // offset 0x0, size 0x37bc
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
     };
 
     // idx 7 members 1 size 0x6f78
@@ -479,7 +479,7 @@ version 13 {
         // offset 0x26, size 0xc
         uint:12 posy;
         // offset 0x32, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x3a, size 0x8
         uint:8 alpha;
         // offset 0x42, size 0x9
@@ -525,7 +525,7 @@ version 13 {
     };
 
     // idx 2 members 27 size 0xb4
-    struct hash_24f699c797bc9492 {
+    struct emblemgroup {
         // offset 0x0, size 0x8
         uint:8 red;
         // offset 0x8, size 0x8
@@ -535,7 +535,7 @@ version 13 {
         // offset 0x1c, size 0xc
         uint:12 posy;
         // offset 0x28, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x30, size 0x8
         uint:8 alpha;
         // offset 0x38, size 0x9
@@ -583,25 +583,25 @@ version 13 {
     };
 
     // idx 3 members 2 size 0x37bc
-    struct hash_62325f44a788da78 {
+    struct layerinformation {
         // offset 0x0, size 0x3000
         emblemlayer layer[64];
         // offset 0x3000, size 0x7bc
-        hash_24f699c797bc9492 groups[11];
+        emblemgroup groups[11];
     };
 
     // idx 4 members 2 size 0x30b4
-    struct hash_6ac42a2c4c8f3b10 {
+    struct decalinformation {
         // offset 0x0, size 0x3000
         emblemlayer layer[64];
         // offset 0x3000, size 0xb4
-        hash_24f699c797bc9492 groups[1];
+        emblemgroup groups[1];
     };
 
     // idx 5 members 2 size 0x37c6
     struct emblem {
         // offset 0x0, size 0x37bc
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
         // offset 0x37bc, size 0xa
         uint:10 background;
     };
@@ -609,7 +609,7 @@ version 13 {
     // idx 6 members 1 size 0x37bc
     struct hash_4e00feaf81ba241c {
         // offset 0x0, size 0x37bc
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
     };
 
     // idx 7 members 1 size 0x6f78
@@ -711,7 +711,7 @@ version 12 {
         // offset 0x26, size 0xc
         uint:12 posy;
         // offset 0x32, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x3a, size 0x8
         uint:8 alpha;
         // offset 0x42, size 0x9
@@ -757,7 +757,7 @@ version 12 {
     };
 
     // idx 2 members 27 size 0xb4
-    struct hash_24f699c797bc9492 {
+    struct emblemgroup {
         // offset 0x0, size 0x8
         uint:8 red;
         // offset 0x8, size 0x8
@@ -767,7 +767,7 @@ version 12 {
         // offset 0x1c, size 0xc
         uint:12 posy;
         // offset 0x28, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x30, size 0x8
         uint:8 alpha;
         // offset 0x38, size 0x9
@@ -815,25 +815,25 @@ version 12 {
     };
 
     // idx 3 members 2 size 0x37bc
-    struct hash_62325f44a788da78 {
+    struct layerinformation {
         // offset 0x0, size 0x3000
         emblemlayer layer[64];
         // offset 0x3000, size 0x7bc
-        hash_24f699c797bc9492 groups[11];
+        emblemgroup groups[11];
     };
 
     // idx 4 members 2 size 0x30b4
-    struct hash_6ac42a2c4c8f3b10 {
+    struct decalinformation {
         // offset 0x0, size 0x3000
         emblemlayer layer[64];
         // offset 0x3000, size 0xb4
-        hash_24f699c797bc9492 groups[1];
+        emblemgroup groups[1];
     };
 
     // idx 5 members 2 size 0x37c6
     struct emblem {
         // offset 0x0, size 0x37bc
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
         // offset 0x37bc, size 0xa
         uint:10 background;
     };
@@ -841,7 +841,7 @@ version 12 {
     // idx 6 members 1 size 0x37bc
     struct hash_4e00feaf81ba241c {
         // offset 0x0, size 0x37bc
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
     };
 
     // idx 7 members 1 size 0x6f78
@@ -941,7 +941,7 @@ version 11 {
         // offset 0x25, size 0xb
         uint:11 posy;
         // offset 0x30, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x38, size 0x8
         uint:8 alpha;
         // offset 0x40, size 0x9
@@ -985,7 +985,7 @@ version 11 {
     };
 
     // idx 2 members 26 size 0xb3
-    struct hash_24f699c797bc9492 {
+    struct emblemgroup {
         // offset 0x0, size 0x8
         uint:8 red;
         // offset 0x8, size 0x8
@@ -995,7 +995,7 @@ version 11 {
         // offset 0x1b, size 0xb
         uint:11 posy;
         // offset 0x26, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x2e, size 0x8
         uint:8 alpha;
         // offset 0x36, size 0x9
@@ -1041,25 +1041,25 @@ version 11 {
     };
 
     // idx 3 members 2 size 0x3771
-    struct hash_62325f44a788da78 {
+    struct layerinformation {
         // offset 0x0, size 0x2fc0
         emblemlayer layer[64];
         // offset 0x2fc0, size 0x7b1
-        hash_24f699c797bc9492 groups[11];
+        emblemgroup groups[11];
     };
 
     // idx 4 members 2 size 0x3073
-    struct hash_6ac42a2c4c8f3b10 {
+    struct decalinformation {
         // offset 0x0, size 0x2fc0
         emblemlayer layer[64];
         // offset 0x2fc0, size 0xb3
-        hash_24f699c797bc9492 groups[1];
+        emblemgroup groups[1];
     };
 
     // idx 5 members 2 size 0x377b
     struct emblem {
         // offset 0x0, size 0x3771
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
         // offset 0x3771, size 0xa
         uint:10 background;
     };
@@ -1067,7 +1067,7 @@ version 11 {
     // idx 6 members 1 size 0x3771
     struct hash_4e00feaf81ba241c {
         // offset 0x0, size 0x3771
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
     };
 
     // idx 7 members 1 size 0x6ee2
@@ -1167,7 +1167,7 @@ version 10 {
         // offset 0x24, size 0xb
         uint:11 posy;
         // offset 0x2f, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x37, size 0x8
         uint:8 alpha;
         // offset 0x3f, size 0x9
@@ -1211,7 +1211,7 @@ version 10 {
     };
 
     // idx 2 members 26 size 0xb3
-    struct hash_24f699c797bc9492 {
+    struct emblemgroup {
         // offset 0x0, size 0x8
         uint:8 red;
         // offset 0x8, size 0x8
@@ -1221,7 +1221,7 @@ version 10 {
         // offset 0x1b, size 0xb
         uint:11 posy;
         // offset 0x26, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x2e, size 0x8
         uint:8 alpha;
         // offset 0x36, size 0x9
@@ -1267,25 +1267,25 @@ version 10 {
     };
 
     // idx 3 members 2 size 0x37b1
-    struct hash_62325f44a788da78 {
+    struct layerinformation {
         // offset 0x0, size 0x3000
         emblemlayer layer[64];
         // offset 0x3000, size 0x7b1
-        hash_24f699c797bc9492 groups[11];
+        emblemgroup groups[11];
     };
 
     // idx 4 members 2 size 0x30b3
-    struct hash_6ac42a2c4c8f3b10 {
+    struct decalinformation {
         // offset 0x0, size 0x3000
         emblemlayer layer[64];
         // offset 0x3000, size 0xb3
-        hash_24f699c797bc9492 groups[1];
+        emblemgroup groups[1];
     };
 
     // idx 5 members 2 size 0x37bb
     struct emblem {
         // offset 0x0, size 0x37b1
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
         // offset 0x37b1, size 0xa
         uint:10 background;
     };
@@ -1293,7 +1293,7 @@ version 10 {
     // idx 6 members 1 size 0x37b1
     struct hash_4e00feaf81ba241c {
         // offset 0x0, size 0x37b1
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
     };
 
     // idx 7 members 1 size 0x6f62
@@ -1393,7 +1393,7 @@ version 9 {
         // offset 0x24, size 0xb
         uint:11 posy;
         // offset 0x2f, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x37, size 0x8
         uint:8 alpha;
         // offset 0x3f, size 0x9
@@ -1435,7 +1435,7 @@ version 9 {
     };
 
     // idx 2 members 25 size 0xac
-    struct hash_24f699c797bc9492 {
+    struct emblemgroup {
         // offset 0x0, size 0x8
         uint:8 red;
         // offset 0x8, size 0x8
@@ -1445,7 +1445,7 @@ version 9 {
         // offset 0x1b, size 0xb
         uint:11 posy;
         // offset 0x26, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x2e, size 0x8
         uint:8 alpha;
         // offset 0x36, size 0x9
@@ -1489,25 +1489,25 @@ version 9 {
     };
 
     // idx 3 members 2 size 0x35a4
-    struct hash_62325f44a788da78 {
+    struct layerinformation {
         // offset 0x0, size 0x2e40
         emblemlayer layer[64];
         // offset 0x2e40, size 0x764
-        hash_24f699c797bc9492 groups[11];
+        emblemgroup groups[11];
     };
 
     // idx 4 members 2 size 0x2eec
-    struct hash_6ac42a2c4c8f3b10 {
+    struct decalinformation {
         // offset 0x0, size 0x2e40
         emblemlayer layer[64];
         // offset 0x2e40, size 0xac
-        hash_24f699c797bc9492 groups[1];
+        emblemgroup groups[1];
     };
 
     // idx 5 members 2 size 0x35ae
     struct emblem {
         // offset 0x0, size 0x35a4
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
         // offset 0x35a4, size 0xa
         uint:10 background;
     };
@@ -1515,7 +1515,7 @@ version 9 {
     // idx 6 members 1 size 0x35a4
     struct hash_4e00feaf81ba241c {
         // offset 0x0, size 0x35a4
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
     };
 
     // idx 7 members 1 size 0x6b48
@@ -1615,7 +1615,7 @@ version 8 {
         // offset 0x24, size 0xb
         uint:11 posy;
         // offset 0x2f, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x37, size 0x8
         uint:8 alpha;
         // offset 0x3f, size 0x9
@@ -1657,7 +1657,7 @@ version 8 {
     };
 
     // idx 2 members 25 size 0xab
-    struct hash_24f699c797bc9492 {
+    struct emblemgroup {
         // offset 0x0, size 0x8
         uint:8 red;
         // offset 0x8, size 0x8
@@ -1667,7 +1667,7 @@ version 8 {
         // offset 0x1b, size 0xb
         uint:11 posy;
         // offset 0x26, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x2e, size 0x8
         uint:8 alpha;
         // offset 0x36, size 0x9
@@ -1711,25 +1711,25 @@ version 8 {
     };
 
     // idx 3 members 2 size 0x3559
-    struct hash_62325f44a788da78 {
+    struct layerinformation {
         // offset 0x0, size 0x2e00
         emblemlayer layer[64];
         // offset 0x2e00, size 0x759
-        hash_24f699c797bc9492 groups[11];
+        emblemgroup groups[11];
     };
 
     // idx 4 members 2 size 0x2eab
-    struct hash_6ac42a2c4c8f3b10 {
+    struct decalinformation {
         // offset 0x0, size 0x2e00
         emblemlayer layer[64];
         // offset 0x2e00, size 0xab
-        hash_24f699c797bc9492 groups[1];
+        emblemgroup groups[1];
     };
 
     // idx 5 members 2 size 0x3563
     struct emblem {
         // offset 0x0, size 0x3559
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
         // offset 0x3559, size 0xa
         uint:10 background;
     };
@@ -1737,7 +1737,7 @@ version 8 {
     // idx 6 members 1 size 0x3559
     struct hash_4e00feaf81ba241c {
         // offset 0x0, size 0x3559
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
     };
 
     // idx 7 members 1 size 0x6ab2
@@ -1837,7 +1837,7 @@ version 7 {
         // offset 0x24, size 0xb
         uint:11 posy;
         // offset 0x2f, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x37, size 0x8
         uint:8 alpha;
         // offset 0x3f, size 0x9
@@ -1879,7 +1879,7 @@ version 7 {
     };
 
     // idx 2 members 25 size 0xab
-    struct hash_24f699c797bc9492 {
+    struct emblemgroup {
         // offset 0x0, size 0x8
         uint:8 red;
         // offset 0x8, size 0x8
@@ -1889,7 +1889,7 @@ version 7 {
         // offset 0x1b, size 0xb
         uint:11 posy;
         // offset 0x26, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x2e, size 0x8
         uint:8 alpha;
         // offset 0x36, size 0x9
@@ -1933,25 +1933,25 @@ version 7 {
     };
 
     // idx 3 members 2 size 0x3559
-    struct hash_62325f44a788da78 {
+    struct layerinformation {
         // offset 0x0, size 0x2e00
         emblemlayer layer[64];
         // offset 0x2e00, size 0x759
-        hash_24f699c797bc9492 groups[11];
+        emblemgroup groups[11];
     };
 
     // idx 4 members 2 size 0x2eab
-    struct hash_6ac42a2c4c8f3b10 {
+    struct decalinformation {
         // offset 0x0, size 0x2e00
         emblemlayer layer[64];
         // offset 0x2e00, size 0xab
-        hash_24f699c797bc9492 groups[1];
+        emblemgroup groups[1];
     };
 
     // idx 5 members 2 size 0x3563
     struct emblem {
         // offset 0x0, size 0x3559
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
         // offset 0x3559, size 0xa
         uint:10 background;
     };
@@ -1959,7 +1959,7 @@ version 7 {
     // idx 6 members 1 size 0x3559
     struct hash_4e00feaf81ba241c {
         // offset 0x0, size 0x3559
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
     };
 
     // idx 7 members 1 size 0x6ab2
@@ -2057,7 +2057,7 @@ version 6 {
         // offset 0x24, size 0xb
         uint:11 posy;
         // offset 0x2f, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x37, size 0x8
         uint:8 alpha;
         // offset 0x3f, size 0x9
@@ -2099,7 +2099,7 @@ version 6 {
     };
 
     // idx 2 members 25 size 0xab
-    struct hash_24f699c797bc9492 {
+    struct emblemgroup {
         // offset 0x0, size 0x8
         uint:8 red;
         // offset 0x8, size 0x8
@@ -2109,7 +2109,7 @@ version 6 {
         // offset 0x1b, size 0xb
         uint:11 posy;
         // offset 0x26, size 0x8
-        uint:8 hash_4cf0321fbfe5f277;
+        uint:8 red1;
         // offset 0x2e, size 0x8
         uint:8 alpha;
         // offset 0x36, size 0x9
@@ -2153,25 +2153,25 @@ version 6 {
     };
 
     // idx 3 members 2 size 0x3559
-    struct hash_62325f44a788da78 {
+    struct layerinformation {
         // offset 0x0, size 0x2e00
         emblemlayer layer[64];
         // offset 0x2e00, size 0x759
-        hash_24f699c797bc9492 groups[11];
+        emblemgroup groups[11];
     };
 
     // idx 4 members 2 size 0x2eab
-    struct hash_6ac42a2c4c8f3b10 {
+    struct decalinformation {
         // offset 0x0, size 0x2e00
         emblemlayer layer[64];
         // offset 0x2e00, size 0xab
-        hash_24f699c797bc9492 groups[1];
+        emblemgroup groups[1];
     };
 
     // idx 5 members 2 size 0x3563
     struct emblem {
         // offset 0x0, size 0x3559
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
         // offset 0x3559, size 0xa
         uint:10 background;
     };
@@ -2179,7 +2179,7 @@ version 6 {
     // idx 6 members 1 size 0x3559
     struct hash_4e00feaf81ba241c {
         // offset 0x0, size 0x3559
-        hash_62325f44a788da78 layerinfo;
+        layerinformation layerinfo;
     };
 
     // idx 7 members 1 size 0x6ab2

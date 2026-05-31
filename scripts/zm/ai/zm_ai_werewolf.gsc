@@ -377,7 +377,7 @@ function on_werewolf_killed( params )
     if ( level flag::get( "zombie_drop_powerups" ) && !zm_utility::is_standard() && randomint( 100 ) <= 40 )
     {
         self.no_powerups = 1;
-        self thread zm_powerups::specific_powerup_drop( self.var_d0686fde, self.origin, undefined, undefined, undefined, undefined, undefined, undefined, 0, 1 );
+        self thread zm_powerups::specific_powerup_drop( self.a_str_powerups, self.origin, undefined, undefined, undefined, undefined, undefined, undefined, 0, 1 );
     }
 }
 

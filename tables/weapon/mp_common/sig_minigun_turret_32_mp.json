@@ -2,8 +2,8 @@
     "name": "#sig_minigun_turret_32_mp",
     "baseWeapon": "#sig_minigun_turret_32",
     "displayname": "#hash_28e56245387c39fd",
-    "xhash_70": "#sig_minigun",
-    "streamkey": "#hash_5a86e78797555909",
+    "weapon70": "#sig_minigun",
+    "soundbank": "#sig_minigun_turret_32_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -12,21 +12,40 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "MULTIPLAYER",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.002 1",
+            "0.1 0.75",
+            "0.25 0.35",
+            "0.5 0.1",
+            "1 0.05"
+        ],
+        [
+            "0 1",
+            "0.002 1",
+            "0.1 0.8",
+            "0.25 0.6",
+            "0.5 0.15",
+            "1 0.05"
+        ]
+    ],
     "firesound": "#hash_1a8618a42206290a",
     "firesoundplayer": "#hash_43d97fa3f0ea530f",
     "sound240": "#hash_631a067190b54300",
@@ -39,6 +58,25 @@
     "sound840": "#hash_7a5614b91f27d6ca",
     "tunables1": "#sig_minigun_turret_32_tunables_mp",
     "sharedWeaponSounds": "#rifle",
+    "tracers": [
+        "#hash_17bf123db6369ed1",
+        "#hash_55561bc3da6b4eb6"
+    ],
+    "statusEffects": [
+        {
+            "effect": "#suppress",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        }
+    ],
     "turretAnimSettings": "#sig_reaper_turret_32_anims",
     "gadgetIconAvailable": "#hash_ea6351c461085379",
     "gadgetIconUnavailable": "#hash_ea6351c461085379",
@@ -56,6 +94,6 @@
     "fx_c98": "#hash_9c7f0dbc37829f85",
     "normalImpactFX": "#hash_dc5dac9355d4dd1c",
     "exitImpactFX": "#hash_c00b5ef5792265c2",
-    "normalImpactSounds": "#bullet_explode",
+    "normalImpactSounds": "#hash_f8e291a8acdea947",
     "exitImpactSounds": "#bullet_exit"
 }

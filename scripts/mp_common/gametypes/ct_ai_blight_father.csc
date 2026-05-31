@@ -228,7 +228,7 @@ function private function_f02b0934( localclientnum, oldvalue, newvalue, bnewent,
     if ( isdefined( position ) && isdefined( angles ) )
     {
         playfx( localclientnum, level._effect[ #"fx8_blightfather_maggot_death_exp" ], position, anglestoforward( angles ), anglestoup( angles ) );
-        function_2a9101fe( localclientnum, #"hash_7867f8f9aaaa0c40", position );
+        function_2a9101fe( localclientnum, #"chaos_missile_damage", position );
     }
     
     earthquake( localclientnum, 0.4, 0.8, self.origin, 300 );

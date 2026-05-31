@@ -56,9 +56,9 @@ function enable_staminup_perk_for_level()
 // Size: 0x106
 function staminup_precache()
 {
-    if ( isdefined( level.var_cf57ff63 ) )
+    if ( isdefined( level.staminup_precache_override_func ) )
     {
-        [[ level.var_cf57ff63 ]]();
+        [[ level.staminup_precache_override_func ]]();
         return;
     }
     

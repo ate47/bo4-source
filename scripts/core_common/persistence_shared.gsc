@@ -368,7 +368,7 @@ function challenge_complete( eventstruct )
             {
                 return;
             }
-            else if ( getdvarint( #"hash_730fab929626f598", 0 ) == 0 )
+            else if ( getdvarint( #"ui_zmenablemasterycamos", 0 ) == 0 )
             {
                 if ( var_a05af556 === #"camo_gold" || var_a05af556 === #"camo_diamond" || var_a05af556 === #"camo_darkmatter" )
                 {
@@ -411,7 +411,7 @@ function challenge_complete( eventstruct )
     /#
         if ( getdvarint( #"scr_debugchallenges", 0 ) != 0 )
         {
-            challengestring = function_9e72a96( var_eb67c133 );
+            challengestring = hashtostring( var_eb67c133 );
             challengedescstring = challengestring + "<dev string:x3b>";
             challengetiernext = int( tablelookupcolumnforrow( tablename, row + 1, 1 ) );
             tiertext = "<dev string:x43>" + challengetier;

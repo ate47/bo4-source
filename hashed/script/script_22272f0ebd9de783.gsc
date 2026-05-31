@@ -324,13 +324,13 @@ function player_damage( t_damage )
 // Params 4
 // Checksum 0x3f866014, Offset: 0xf78
 // Size: 0x16c
-function function_373d49f( v_dest, n_time = 1, n_accel = 0, var_99997505 = 0 )
+function function_373d49f( v_dest, n_time = 1, n_accel = 0, n_decel = 0 )
 {
     if ( isplayer( self ) )
     {
         var_3fba37cd = util::spawn_model( "tag_origin", self.origin, self.angles );
         self linkto( var_3fba37cd );
-        var_3fba37cd moveto( v_dest, n_time, n_accel, var_99997505 );
+        var_3fba37cd moveto( v_dest, n_time, n_accel, n_decel );
         var_3fba37cd waittill( #"movedone" );
         var_3fba37cd delete();
         return;

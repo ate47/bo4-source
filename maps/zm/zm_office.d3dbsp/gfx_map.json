@@ -1,0 +1,23 @@
+{
+    "name": "#maps/zm/zm_office.d3dbsp",
+    "baseName": "zm_office",
+    "mins": "-3188 -1272.0009 -1295",
+    "maxs": "13176.424 8512 837.75",
+    "checksum": 0,
+    "streamerworld": "#hash_73a5b14e312f0ff9",
+    "lighting": "#maps/zm/zm_office.d3dbsp",
+    "lutMaterial": "#mtl_lut_zm_office",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_zm_office",
+        "#img_trim_lut_zm_office",
+        "#img_trim_lut_zm_office",
+        "#img_trim_lut_zm_office"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 27,
+        "cookieArray": "#*cookie_array"
+    }
+}

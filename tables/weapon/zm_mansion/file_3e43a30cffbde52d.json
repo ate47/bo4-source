@@ -1,8 +1,8 @@
 {
     "name": "#hash_3e43a30cffbde52d",
     "baseWeapon": "#hash_538ad52e56a4078b",
-    "xhash_70": "#ww_random_ray_gun1",
-    "streamkey": "#hash_148c6c6f02bed4f9",
+    "weapon70": "#ww_random_ray_gun1",
+    "soundbank": "#hash_148c6c6f02bed4f9",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -11,21 +11,38 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.1 1",
+            "0.2 0",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0524 0.9014",
+            "0.1251 0.4004",
+            "0.2517 0.1204",
+            "0.5021 0.0508",
+            "1 0.05"
+        ]
+    ],
     "sound90": "#hash_2f61dd6a758811a0",
     "firesound": "#hash_1ba1ed4c5853209a",
     "firesoundplayer": "#hash_5a91544cc4934ebf",
@@ -51,8 +68,8 @@
     "reticleSide": "#reticle_side_small",
     "inventoryIconZm": "#t7_icon_weapon_pistol_energy",
     "fireRumble": "#defaultweapon_fire",
-    "fx_bc8": "#hash_77310dc06c46ad59",
-    "fx_bd0": "#hash_5f35cbb67bd0747c",
-    "fx_ed8": "#hash_351b1ab12522bffa",
-    "fx_f00": "#hash_19a3306432e494f3"
+    "fx_bc8": "#zombie/fx_raygun_view_zmb",
+    "fx_bd0": "#zombie/fx_raygun_world_zmb",
+    "fx_ed8": "#zombie/fx_raygun_impact_zmb",
+    "fx_f00": "#zombie/fx_raygun_geotrail_zmb"
 }

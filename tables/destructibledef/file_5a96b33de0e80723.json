@@ -1,0 +1,45 @@
+{
+    "name": "#hash_5a96b33de0e80723",
+    "model": "#p7_slu_fire_hydrant_allstates",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_d0"
+                },
+                {
+                    "name": "#hash_52bc44bad528b837",
+                    "unk28": "tag_d0"
+                },
+                {
+                    "name": "#hash_216d884bc3670a16",
+                    "unk28": "tag_d1"
+                },
+                {
+                    "name": "#hash_216d884bc3670a16",
+                    "unk28": "tag_d1"
+                },
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_65c5c600184e2ffc",
+            "unk268": 500,
+            "hideBones": [
+                29,
+                30
+            ]
+        }
+    ]
+}

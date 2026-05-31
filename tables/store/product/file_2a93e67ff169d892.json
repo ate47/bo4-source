@@ -1,11 +1,13 @@
 {
     "name": "#hash_2a93e67ff169d892",
-    "blackMarketName": "#",
-    "blackMarketDesc": "#",
-    "entitlementNameXHash": "#",
+    "productName": "#hash_4b8dd4c97c2df5b1",
+    "productDesc": "#hash_58f76a6a7bd870b",
+    "previewImage": "#ui_menu_store_product_b04_code_salute_small",
+    "productImage": "#ui_menu_store_product_b04_code_salute_small",
+    "blackMarketImage": "#t7_store_product_bo4",
     "productID": "43770",
-    "previewImageName": "hash_401342059bae9f25",
-    "productImageName": "hash_401342059bae9f25",
-    "blackMarketImageName": "hash_1217b62ca29dad38",
-    "visibility": true
+    "unk78": "!10056",
+    "visibility": true,
+    "unka2": true,
+    "unka3": true
 }

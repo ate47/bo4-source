@@ -1,16 +1,16 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "localized17#hash_338ac2c6c906b7f2"
+            "hash_619e25922b4aedcf:hash_826726a": "localized17#hash_338ac2c6c906b7f2"
         }
     ],
     "contracticon": "image#hash_5bc2f47ba444360c",
-    "hash_d0100eab": 1,
-    "relateditemname": "localized17#hash_725b1719bd56b4ec",
+    "hash_202e3311080f8de3:hash_d0100eab": 1,
+    "relateditemname": "localized17#heroes/trapper",
     "contracttitle": "localized17#hash_338ac2c6c906b7f2",
     "name": "loot_contract_nomad_splinter",
     "contractdescription": "localized17#hash_40a2ff4afd63b73",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_7cb73ccb446d8da2",
-    "hash_e08fc162": "localized17#hash_68fd7eb321aa416d"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_7cb73ccb446d8da2",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_68fd7eb321aa416d"
 }

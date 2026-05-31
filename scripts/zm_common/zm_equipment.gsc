@@ -190,7 +190,7 @@ function register( equipment_name, hint, howto_hint, hint_icon, equipmentvo )
     level.zombie_equipment[ equipment ] = struct;
     
     /#
-        level thread function_1d34b98d( equipment );
+        level thread add_devgui_equipment( equipment );
     #/
 }
 
@@ -1080,7 +1080,7 @@ function function_379f6b5d( n_base_damage, var_177ec733 = 1, var_b68e56de = 1, v
     // Params 0
     // Checksum 0x6f6385f6, Offset: 0x35e0
     // Size: 0x1ce, Type: dev
-    function function_e418901e()
+    function run_equipment_devgui()
     {
         setdvar( #"give_equipment", "<dev string:x165>" );
         waitframe( 1 );
@@ -1120,7 +1120,7 @@ function function_379f6b5d( n_base_damage, var_177ec733 = 1, var_b68e56de = 1, v
     // Params 1
     // Checksum 0x58006ec8, Offset: 0x37b8
     // Size: 0xa4, Type: dev
-    function function_1d34b98d( equipment )
+    function add_devgui_equipment( equipment )
     {
         waitframe( 1 );
         level flag::wait_till( "<dev string:x168>" );

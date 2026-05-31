@@ -2,8 +2,8 @@
     "name": "#lmg_standard_t8_zm",
     "baseWeapon": "#lmg_standard_t8",
     "displayname": "#weapon/lmg_standard_t8",
-    "xhash_70": "#lmg_standard_t8",
-    "streamkey": "#hash_72d8a4cd7417e278",
+    "weapon70": "#lmg_standard_t8",
+    "soundbank": "#lmg_standard_t8_soundbank",
     "scrstr_8c8": [
         "tag_sights_rear_off",
         "tag_sights_front_off",
@@ -20,21 +20,42 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 3,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.0303 0.95",
+            "0.2242 0.5",
+            "0.4 0.1",
+            "0.4992 0.05",
+            "0.7426 0.001",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0605 1",
+            "0.2242 0.7161",
+            "0.375 0.3412",
+            "0.4992 0.0032",
+            "0.7426 0",
+            "1 0"
+        ]
+    ],
     "sound140": "#hash_3832ec3aa91d1d02",
     "sound150": "#hash_586ac33a2ac3e4c7",
     "sound180": "#hash_5b8dea73bb03ea82",
@@ -66,6 +87,10 @@
     ],
     "sharedWeaponSounds": "#lmg",
     "ballisticDesc": "#hash_561ffd897d1b6977",
+    "tracers": [
+        "#hash_53494eccb1c6aba5",
+        "#hash_38ac80fa23bb1346"
+    ],
     "viewmodel": [
         "#wpn_t8_lmg_titan_view",
         "#wpn_t8_lmg_titan_sig_01_view",
@@ -96,8 +121,8 @@
     "fx_c88": "#hash_5797e5e407d06708",
     "fx_c90": "#hash_5797e5e407d06708",
     "fx_c98": "#hash_5797e5e407d06708",
-    "normalImpactFX": "#hash_7ee0671def6af7a4",
-    "exitImpactFX": "#hash_56ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_xlarge_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#bullet_exit"
 }

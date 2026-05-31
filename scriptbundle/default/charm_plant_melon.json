@@ -1,10 +1,10 @@
 {
-    "lootid": "#hash_6ac17458ca821fe7",
-    "hash_ff3063df": "model#",
+    "lootid": "#charm_pumpkin",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_melon",
     "name": "charm_plant_melon",
     "displayname": "localized17#hash_10518d360dd68bc",
     "icon": "ui_icon_weapon_charms_melon",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_melon"
 }

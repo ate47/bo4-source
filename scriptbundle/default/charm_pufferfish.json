@@ -1,10 +1,10 @@
 {
     "lootid": "#hash_4496188f136a5dc8",
-    "hash_ff3063df": "model#",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_pufferfish",
     "name": "charm_pufferfish",
     "displayname": "localized17#hash_382ec7bc89c0903d",
     "icon": "ui_icon_weapon_charms_pufferfish",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_pufferfish"
 }

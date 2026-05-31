@@ -1628,7 +1628,7 @@ function private function_e3f18577()
     // Params 3
     // Checksum 0xa99f6571, Offset: 0x62c0
     // Size: 0x30a, Type: dev
-    function function_7d880672( original_origin, var_9f8395cb, refly )
+    function function_7d880672( original_origin, original_yaw, refly )
     {
         self notify( "<dev string:xb9>" );
         self endon( "<dev string:xb9>" );
@@ -1646,7 +1646,7 @@ function private function_e3f18577()
                 var_59526dd5 = 0;
                 break;
             case 1:
-                var_59526dd5 = var_9f8395cb;
+                var_59526dd5 = original_yaw;
                 break;
             case 2:
                 var_59526dd5 = randomint( 360 );
@@ -1683,7 +1683,7 @@ function private function_e3f18577()
                         waitframe( 1 );
                     }
                     
-                    self thread function_7d880672( original_origin, var_9f8395cb, refly );
+                    self thread function_7d880672( original_origin, original_yaw, refly );
                     return;
                 }
             }

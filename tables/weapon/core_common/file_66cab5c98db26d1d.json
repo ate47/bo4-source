@@ -2,9 +2,9 @@
     "name": "#hash_66cab5c98db26d1d",
     "baseWeapon": "#hash_61f57a1b00a77d87",
     "displayname": "#weapon/sniper_locus_t8",
-    "xhash_30": "#sniper_locus_t8_mp",
-    "xhash_70": "#sniper_locus_t8",
-    "streamkey": "#hash_70cfd2212b307cd5",
+    "altWeapon": "#sniper_locus_t8_mp",
+    "weapon70": "#sniper_locus_t8",
+    "soundbank": "#hash_70cfd2212b307cd5",
     "scrstr_8c8": [
         "tag_scope",
         "tag_scope_mount",
@@ -27,21 +27,44 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "MULTIPLAYER",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.0393 0.5",
+            "0.1504 0.485",
+            "0.2911 0.4277",
+            "0.4004 0.3617",
+            "0.5404 0.241",
+            "0.5914 0.0372",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0393 1",
+            "0.1504 0.9704",
+            "0.2911 0.8574",
+            "0.4004 0.7234",
+            "0.5404 0.482",
+            "0.5914 0.0743",
+            "1 0"
+        ]
+    ],
     "firesounddistant": "#hash_5f022cd68aefd198",
     "firesound": "#hash_94f9f21b8c5c7af",
     "firesoundplayer": "#hash_eed602173233aca",
@@ -64,6 +87,10 @@
     "cacAttachmentsXCam": "#hash_49df139d3352f52c",
     "weaponIconXCam": "#hash_5a36991b2da1ef84",
     "sharedWeaponSounds": "#rifle",
+    "tracers": [
+        "#hash_7a6c24626f115206",
+        "#hash_70561f677d3c0da1"
+    ],
     "viewmodel": [
         "#wpn_t8_loot_sniper_locus_view"
     ],
@@ -87,8 +114,8 @@
     "fx_c88": "#hash_83613e307817774e",
     "fx_c90": "#hash_83613e307817774e",
     "fx_c98": "#hash_83613e307817774e",
-    "normalImpactFX": "#hash_7ee0671def6af7a4",
-    "exitImpactFX": "#hash_56ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_xlarge_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#bullet_exit"
 }

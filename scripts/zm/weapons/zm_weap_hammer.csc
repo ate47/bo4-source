@@ -25,14 +25,14 @@ function __init__()
 {
     clientfield::register( "allplayers", "" + #"lightning_bolt_fx", 1, 1, "counter", &function_37d03e44, 0, 0 );
     clientfield::register( "toplayer", "" + #"hero_hammer_armor_postfx", 1, 1, "counter", &function_6765f5b4, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"lightning_miss_fx", 1, 1, "int", &function_93d275f2, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"lightning_miss_fx", 1, 1, "int", &lightning_miss_play_fx, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hammer_storm", 1, 1, "int", &hammer_storm, 0, 0 );
     clientfield::register( "actor", "" + #"hero_hammer_melee_impact_trail", 1, 1, "counter", &function_e6845153, 0, 0 );
     clientfield::register( "vehicle", "" + #"hero_hammer_melee_impact_trail", 1, 1, "counter", &function_e6845153, 0, 0 );
-    clientfield::register( "actor", "" + #"lightning_impact_fx", 1, 1, "int", &function_54b0b1b, 0, 0 );
-    clientfield::register( "vehicle", "" + #"lightning_impact_fx", 1, 1, "int", &function_54b0b1b, 0, 0 );
-    clientfield::register( "actor", "" + #"lightning_arc_fx", 1, 1, "int", &function_311f3501, 0, 0 );
-    clientfield::register( "vehicle", "" + #"lightning_arc_fx", 1, 1, "int", &function_311f3501, 0, 0 );
+    clientfield::register( "actor", "" + #"lightning_impact_fx", 1, 1, "int", &lightning_impact_play_fx, 0, 0 );
+    clientfield::register( "vehicle", "" + #"lightning_impact_fx", 1, 1, "int", &lightning_impact_play_fx, 0, 0 );
+    clientfield::register( "actor", "" + #"lightning_arc_fx", 1, 1, "int", &lightning_arc_play_fx, 0, 0 );
+    clientfield::register( "vehicle", "" + #"lightning_arc_fx", 1, 1, "int", &lightning_arc_play_fx, 0, 0 );
     clientfield::register( "actor", "" + #"hero_hammer_stun", 1, 1, "int", &function_cd968d6, 0, 0 );
     clientfield::register( "vehicle", "" + #"hero_hammer_stun", 1, 1, "int", &function_cd968d6, 0, 0 );
     clientfield::register( "toplayer", "" + #"hammer_rumble", 1, 1, "counter", &hammer_rumble, 0, 0 );
@@ -143,7 +143,7 @@ function function_9f78a957( localclientnum )
 // Params 7
 // Checksum 0xb423c8e5, Offset: 0xb98
 // Size: 0xfc
-function function_54b0b1b( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function lightning_impact_play_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     if ( isdefined( self.var_89d8285 ) )
     {
@@ -162,7 +162,7 @@ function function_54b0b1b( localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7
 // Checksum 0xe9b0de5a, Offset: 0xca0
 // Size: 0xfe
-function function_93d275f2( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function lightning_miss_play_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     if ( isdefined( self.var_9f5d50f5 ) )
     {
@@ -186,9 +186,9 @@ function function_93d275f2( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 1, eflags: 0x4
 // Checksum 0x25aeacb4, Offset: 0xda8
 // Size: 0x250
-function private function_7dac3bb6( localclientnum )
+function private lightning_arc_play_fx_thread( localclientnum )
 {
-    self endon( #"death", #"hash_5531647ca0352039" );
+    self endon( #"death", #"stop_arc_fx" );
     
     while ( !isdefined( level.var_76234ae5[ localclientnum ] ) )
     {
@@ -236,16 +236,16 @@ function private function_7dac3bb6( localclientnum )
 // Params 7
 // Checksum 0xe4b76de3, Offset: 0x1000
 // Size: 0x96
-function function_311f3501( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function lightning_arc_play_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     if ( newval == 1 )
     {
-        self thread function_7dac3bb6( localclientnum );
+        self thread lightning_arc_play_fx_thread( localclientnum );
         self thread function_85050f7f( localclientnum );
         return;
     }
     
-    self notify( #"hash_5531647ca0352039" );
+    self notify( #"stop_arc_fx" );
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
@@ -254,7 +254,7 @@ function function_311f3501( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x96
 function private function_85050f7f( localclientnum )
 {
-    self waittill( #"death", #"hash_5531647ca0352039" );
+    self waittill( #"death", #"stop_arc_fx" );
     
     if ( isdefined( self.fx_arc ) )
     {

@@ -1,0 +1,486 @@
+{
+    "name": "#maps/mp/mp_nuketown_4.d3dbsp",
+    "isInUse": true,
+    "primaryLights": 278,
+    "lightExploders": [
+        {
+            "lightExploderName": "#exp_lgt_draft",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 265,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 266,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 267,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 268,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 269,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 270,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 271,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 272,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 273,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 274,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 275,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 276,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 277,
+                    "reversed": false
+                }
+            ]
+        },
+        {
+            "lightExploderName": "#ending_sequence_lights",
+            "triggerData": [
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 243,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 244,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 245,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 246,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 247,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 248,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 249,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 250,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 251,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 252,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 253,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 254,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 255,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 256,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 257,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 258,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 259,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 260,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 261,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 262,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 263,
+                    "reversed": false
+                },
+                {
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "primaryLightIndex": 264,
+                    "reversed": false
+                }
+            ]
+        }
+    ],
+    "probeExploders": [
+        {
+            "lightExploderName": "#exp_lgt_draft",
+            "triggerData": [
+                {
+                    "probeID": 156,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                },
+                {
+                    "probeID": 157,
+                    "volumeID": 0,
+                    "delayOn": 0,
+                    "delayOff": 0,
+                    "fadeIn": 0,
+                    "fadeOut": 0,
+                    "reversed": false
+                }
+            ]
+        }
+    ],
+    "sunVolumeProbeCount": [
+        157,
+        1
+    ],
+    "probeGuids": [
+        2959206134,
+        840289867,
+        2636667261,
+        2087595832,
+        1669996346,
+        793202139,
+        1015407916,
+        450840765,
+        3620876514,
+        861788204,
+        2748688844,
+        861788267,
+        4023669479,
+        4069478677,
+        2714410718,
+        861788270,
+        861788264,
+        3719140990,
+        861788201,
+        861788297,
+        861788222,
+        3094656185,
+        1460329307,
+        2414861027,
+        391605658,
+        861788207,
+        4041481762,
+        1495178057,
+        650129065,
+        1495178060,
+        1199953788,
+        2270370457,
+        2462659502,
+        2953036514,
+        573197484,
+        249511070,
+        3866333074,
+        2548605259,
+        3251922109,
+        2571790661,
+        2424599002,
+        2133772416,
+        2671512655,
+        661228891,
+        2975041479,
+        861788279,
+        3132481338,
+        2289569598,
+        3847485012,
+        3007542430,
+        3624587495,
+        306695738,
+        1487241699,
+        1806838901,
+        861788570,
+        861788246,
+        861788288,
+        861788285,
+        2671512641,
+        3652105459,
+        861788282,
+        861788252,
+        3707433170,
+        866751439,
+        2265882543,
+        2194424399,
+        2555481769,
+        2265882624,
+        2396902312,
+        2265882741,
+        2265882648,
+        3174663377,
+        216457124,
+        2265882627,
+        2253039914,
+        2265882549,
+        94410109,
+        2250124827,
+        2265882540,
+        984360650,
+        440497308,
+        3097728324,
+        861788198,
+        2265882537,
+        2265882621,
+        3430833491,
+        3711784992,
+        1755231479,
+        4274736481,
+        1021505255,
+        3430642643,
+        969761057,
+        861788249,
+        2494027108,
+        300861389,
+        1053469359,
+        3546268713,
+        2431836698,
+        153633555,
+        2615660040,
+        1152101605,
+        1402067937,
+        4084970810,
+        3779475364,
+        1575323732,
+        861788273,
+        861788219,
+        861788213,
+        861788276,
+        861788291,
+        1595259498,
+        2773077141,
+        861788216,
+        56157907,
+        2519375239,
+        202709595,
+        2837939107,
+        2705916876,
+        1023845613,
+        2265883018,
+        1739325439,
+        872199113,
+        3370241601,
+        551462461,
+        633945681,
+        2063303480,
+        2265883087,
+        2265883078,
+        3318301896,
+        3744669661,
+        2265883081,
+        888986423,
+        3166082110,
+        2265883000,
+        2265883006,
+        37629316,
+        2742648123,
+        1629388461,
+        1629388458,
+        3910634613,
+        2193355075,
+        3586470670,
+        2868322343,
+        2265883003,
+        2265883021,
+        2265883093,
+        4176517933,
+        1957632235,
+        2392746721,
+        2265883009,
+        1210819837,
+        470311560,
+        629527154,
+        3384955263,
+        3533306304,
+        2590307713,
+        2590307728,
+        0
+    ]
+}

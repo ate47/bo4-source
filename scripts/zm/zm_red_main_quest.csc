@@ -22,7 +22,7 @@ function init()
 {
     var_7551dff2 = getminbitcountfornum( 4 );
     var_b7863a03 = getminbitcountfornum( 3 );
-    clientfield::register( "allplayers", "" + #"hash_72bd7a6af2ba1c5e", 16000, 1, "int", &function_d087b08c, 0, 1 );
+    clientfield::register( "allplayers", "" + #"spear_fire_fx", 16000, 1, "int", &function_d087b08c, 0, 1 );
     clientfield::register( "allplayers", "" + #"hash_4a149c9daff159cd", 16000, 1, "int", &function_d02ccc7c, 0, 1 );
     clientfield::register( "toplayer", "" + #"hash_7343b1cdab1f31c5", 16000, 1, "counter", &function_3d3614aa, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_2a17f2993036fab4", 16000, 1, "counter", &function_6a9e68bf, 0, 0 );
@@ -323,8 +323,8 @@ function function_77072f95( localclientnum, str_step, a_s_points )
         v_start_angles = vectortoangles( v_start_origin - var_e64db026 );
         v_end_angles = vectortoangles( var_e64db026 - v_start_origin );
         mdl_start = util::spawn_model( localclientnum, #"tag_origin", v_start_origin, v_start_angles );
-        var_b5d35012 = util::spawn_model( localclientnum, #"tag_origin", var_e64db026, v_end_angles );
-        level beam::launch( mdl_start, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_mirror_light", 1 );
+        mdl_end = util::spawn_model( localclientnum, #"tag_origin", var_e64db026, v_end_angles );
+        level beam::launch( mdl_start, "tag_origin", mdl_end, "tag_origin", "beam8_zm_red_mirror_light", 1 );
         
         if ( !isdefined( level.var_b20dd024[ str_step ] ) )
         {
@@ -335,7 +335,7 @@ function function_77072f95( localclientnum, str_step, a_s_points )
             level.var_b20dd024[ str_step ] = array( level.var_b20dd024[ str_step ] );
         }
         
-        level.var_b20dd024[ str_step ][ level.var_b20dd024[ str_step ].size ] = array( mdl_start, var_b5d35012 );
+        level.var_b20dd024[ str_step ][ level.var_b20dd024[ str_step ].size ] = array( mdl_start, mdl_end );
     }
 }
 
@@ -351,15 +351,15 @@ function function_c6f495b3( localclientnum, str_step, a_s_points )
     s_end = a_s_points[ a_s_points.size - 1 ];
     var_95bce808 = var_9c2546ae[ var_9c2546ae.size - 1 ];
     mdl_start = var_95bce808[ 0 ];
-    var_b5d35012 = var_95bce808[ 1 ];
+    mdl_end = var_95bce808[ 1 ];
     v_start_origin = s_start.origin;
     var_e64db026 = s_end.origin;
     mdl_start.origin = v_start_origin;
-    var_b5d35012.origin = var_e64db026;
+    mdl_end.origin = var_e64db026;
     v_start_angles = vectortoangles( v_start_origin - var_e64db026 );
     v_end_angles = vectortoangles( var_e64db026 - v_start_origin );
     mdl_start.angles = v_start_angles;
-    var_b5d35012.angles = v_end_angles;
+    mdl_end.angles = v_end_angles;
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest
@@ -380,10 +380,10 @@ function function_ed4ed5e( localclientnum, str_step )
         foreach ( var_95bce808 in a_beams )
         {
             mdl_start = var_95bce808[ 0 ];
-            var_b5d35012 = var_95bce808[ 1 ];
-            level beam::kill( mdl_start, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_mirror_light" );
+            mdl_end = var_95bce808[ 1 ];
+            level beam::kill( mdl_start, "tag_origin", mdl_end, "tag_origin", "beam8_zm_red_mirror_light" );
             mdl_start delete();
-            var_b5d35012 delete();
+            mdl_end delete();
         }
         
         level.var_b20dd024[ str_step ] = undefined;
@@ -801,13 +801,13 @@ function function_73a5ca1a( localclientnum, oldval, newval, bnewent, binitialsna
     }
     
     mdl_start = level.var_94068374;
-    var_b5d35012 = level.var_656f903a;
+    mdl_end = level.var_656f903a;
     
     switch ( newval )
     {
         case 0:
             level.var_534f1bad = undefined;
-            level beam::kill( mdl_start, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_ra_ray" );
+            level beam::kill( mdl_start, "tag_origin", mdl_end, "tag_origin", "beam8_zm_red_ra_ray" );
             
             if ( isdefined( mdl_start.arsenalteleportoutstart ) )
             {
@@ -815,41 +815,41 @@ function function_73a5ca1a( localclientnum, oldval, newval, bnewent, binitialsna
                 mdl_start stoploopsound( mdl_start.arsenalteleportoutstart );
             }
             
-            if ( isdefined( var_b5d35012.arsenalteleportoutstart ) )
+            if ( isdefined( mdl_end.arsenalteleportoutstart ) )
             {
-                var_b5d35012 stoploopsound( var_b5d35012.arsenalteleportoutstart );
+                mdl_end stoploopsound( mdl_end.arsenalteleportoutstart );
             }
             
-            if ( isdefined( var_b5d35012.var_85c90678 ) )
+            if ( isdefined( mdl_end.var_85c90678 ) )
             {
-                var_b5d35012 stoploopsound( var_b5d35012.var_85c90678 );
-                var_b5d35012.var_85c90678 = undefined;
+                mdl_end stoploopsound( mdl_end.var_85c90678 );
+                mdl_end.var_85c90678 = undefined;
             }
             
             mdl_start delete();
-            var_b5d35012 delete();
+            mdl_end delete();
             return;
         case 1:
-            if ( isdefined( var_b5d35012.var_85c90678 ) )
+            if ( isdefined( mdl_end.var_85c90678 ) )
             {
-                var_b5d35012 stoploopsound( var_b5d35012.var_85c90678 );
-                var_b5d35012.var_85c90678 = undefined;
+                mdl_end stoploopsound( mdl_end.var_85c90678 );
+                mdl_end.var_85c90678 = undefined;
             }
             
             s_end = struct::get( #"hash_120883658590601c" );
             break;
         case 2:
-            if ( !isdefined( var_b5d35012.var_85c90678 ) )
+            if ( !isdefined( mdl_end.var_85c90678 ) )
             {
-                var_b5d35012.var_85c90678 = var_b5d35012 playloopsound( #"hash_11855496f2ae0456" );
+                mdl_end.var_85c90678 = mdl_end playloopsound( #"hash_11855496f2ae0456" );
             }
             
             s_end = struct::get( #"hash_7e325197a32f4394" );
             break;
         case 3:
-            if ( !isdefined( var_b5d35012.var_85c90678 ) )
+            if ( !isdefined( mdl_end.var_85c90678 ) )
             {
-                var_b5d35012.var_85c90678 = var_b5d35012 playloopsound( #"hash_11855496f2ae0456" );
+                mdl_end.var_85c90678 = mdl_end playloopsound( #"hash_11855496f2ae0456" );
             }
             
             s_end = struct::get( #"hash_394e0d84e8666511" );
@@ -863,13 +863,13 @@ function function_73a5ca1a( localclientnum, oldval, newval, bnewent, binitialsna
     v_end_angles = vectortoangles( var_e64db026 - v_start_origin );
     mdl_start.origin = v_start_origin;
     mdl_start.angles = v_start_angles;
-    var_b5d35012.origin = var_e64db026;
-    var_b5d35012.angles = v_end_angles;
+    mdl_end.origin = var_e64db026;
+    mdl_end.angles = v_end_angles;
     
     if ( !( isdefined( level.var_534f1bad ) && level.var_534f1bad ) )
     {
         level.var_534f1bad = 1;
-        level beam::launch( mdl_start, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_ra_ray", 1 );
+        level beam::launch( mdl_start, "tag_origin", mdl_end, "tag_origin", "beam8_zm_red_ra_ray", 1 );
     }
 }
 
@@ -955,27 +955,27 @@ function function_6fd9deaa( localclientnum, oldval, newval, bnewent, binitialsna
         var_e64db026 = s_end.origin;
         v_start_angles = vectortoangles( var_e64db026 - v_start_origin );
         mdl_start = util::spawn_model( localclientnum, #"tag_origin", v_start_origin, v_start_angles );
-        var_b5d35012 = util::spawn_model( localclientnum, #"tag_origin", var_e64db026 );
+        mdl_end = util::spawn_model( localclientnum, #"tag_origin", var_e64db026 );
         mdl_start playsound( localclientnum, #"hash_3765e25049981166" );
         mdl_start.sfx_id = mdl_start playloopsound( #"hash_170aa1970243fc4a" );
         e_player.var_636aecd9 = mdl_start;
-        e_player.var_2667ae26 = var_b5d35012;
-        level beam::launch( mdl_start, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_ra_ray_bath", 1 );
+        e_player.var_2667ae26 = mdl_end;
+        level beam::launch( mdl_start, "tag_origin", mdl_end, "tag_origin", "beam8_zm_red_ra_ray_bath", 1 );
         return;
     }
     
     mdl_start = e_player.var_636aecd9;
-    var_b5d35012 = e_player.var_2667ae26;
+    mdl_end = e_player.var_2667ae26;
     
-    if ( !isdefined( mdl_start ) || !isdefined( var_b5d35012 ) )
+    if ( !isdefined( mdl_start ) || !isdefined( mdl_end ) )
     {
         return;
     }
     
     mdl_start playsound( localclientnum, #"hash_3126b098b980b5a3" );
-    level beam::kill( mdl_start, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_ra_ray_bath" );
+    level beam::kill( mdl_start, "tag_origin", mdl_end, "tag_origin", "beam8_zm_red_ra_ray_bath" );
     mdl_start delete();
-    var_b5d35012 delete();
+    mdl_end delete();
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest
@@ -1338,7 +1338,7 @@ function function_b750bd91( localclientnum, newval, str_ww )
         level.var_39ab105d = [];
     }
     
-    var_740e1e0e = level.var_39ab105d[ str_ww ];
+    mdl_rune = level.var_39ab105d[ str_ww ];
     var_408c2f30 = "";
     var_f5257d20 = "";
     
@@ -1350,21 +1350,21 @@ function function_b750bd91( localclientnum, newval, str_ww )
             level.var_6ca19725[ str_ww ] = undefined;
         }
         
-        if ( isdefined( var_740e1e0e ) )
+        if ( isdefined( mdl_rune ) )
         {
-            if ( isdefined( var_740e1e0e.var_f5257d20 ) )
+            if ( isdefined( mdl_rune.var_f5257d20 ) )
             {
-                var_740e1e0e playsound( localclientnum, var_740e1e0e.var_f5257d20 );
+                mdl_rune playsound( localclientnum, mdl_rune.var_f5257d20 );
             }
             
-            var_740e1e0e delete();
+            mdl_rune delete();
             level.var_39ab105d[ str_ww ] = undefined;
         }
         
         return;
     }
     
-    if ( !isdefined( n_fx ) && !isdefined( var_740e1e0e ) )
+    if ( !isdefined( n_fx ) && !isdefined( mdl_rune ) )
     {
         if ( newval == 1 )
         {
@@ -1433,14 +1433,14 @@ function function_b750bd91( localclientnum, newval, str_ww )
         
         n_fx = playfx( localclientnum, str_fx, s_pos.origin, anglestoforward( s_pos.angles ), anglestoup( s_pos.angles ) );
         var_cfc545ad = function_985f4598( str_ww );
-        var_740e1e0e = util::spawn_model( localclientnum, var_cfc545ad, s_pos.origin );
-        var_740e1e0e setscale( var_88dfc0c9 );
-        var_740e1e0e thread zm_red_ww_quests::function_58806d4f( localclientnum, undefined, 1 );
-        var_740e1e0e playsound( localclientnum, var_408c2f30 );
-        var_740e1e0e.var_b3673abf = var_740e1e0e playloopsound( #"hash_bd407bab72c8280" );
-        var_740e1e0e.var_f5257d20 = var_f5257d20;
+        mdl_rune = util::spawn_model( localclientnum, var_cfc545ad, s_pos.origin );
+        mdl_rune setscale( var_88dfc0c9 );
+        mdl_rune thread zm_red_ww_quests::function_58806d4f( localclientnum, undefined, 1 );
+        mdl_rune playsound( localclientnum, var_408c2f30 );
+        mdl_rune.var_b3673abf = mdl_rune playloopsound( #"hash_bd407bab72c8280" );
+        mdl_rune.var_f5257d20 = var_f5257d20;
         level.var_6ca19725[ str_ww ] = n_fx;
-        level.var_39ab105d[ str_ww ] = var_740e1e0e;
+        level.var_39ab105d[ str_ww ] = mdl_rune;
     }
 }
 

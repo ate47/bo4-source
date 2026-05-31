@@ -552,7 +552,7 @@ function apply_damage( weapon, damage, smeansofdeath, eattacker, shitloc )
         
         if ( var_9bb721d3 > 0 )
         {
-            var_9bb721d3 *= self function_e95ae03( #"hash_47245d009e766628" );
+            var_9bb721d3 *= self getplayerdamagescale( #"hash_47245d009e766628" );
         }
     }
     

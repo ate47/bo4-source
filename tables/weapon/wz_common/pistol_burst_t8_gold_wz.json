@@ -3,8 +3,9 @@
     "baseWeapon": "#pistol_burst_t8_gold",
     "displayname": "#weapon/pistol_burst_t8",
     "xhash_60": "#hash_260799c91ac50389",
-    "xhash_70": "#pistol_burst_t8_gold",
-    "streamkey": "#hash_6d54a8129d28af45",
+    "weapon70": "#pistol_burst_t8_gold",
+    "weapon890": "#pistol_burst_t8_wz",
+    "soundbank": "#pistol_burst_t8_gold_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -19,21 +20,38 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 3,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "WARZONE",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.1 1",
+            "0.2 0",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0524 0.9014",
+            "0.1251 0.4004",
+            "0.2517 0.1204",
+            "0.5021 0.0508",
+            "1 0.05"
+        ]
+    ],
     "firesounddistant": "#hash_f74753fbac3a42d",
     "sound100": "#hash_4a6c36c05dd253d8",
     "sound110": "#hash_2d9961c0df0d0579",
@@ -50,12 +68,11 @@
     "sound610": "#hash_72a07537a35e0368",
     "sound800": "#hash_21cba6ae89a3493c",
     "sound810": "#hash_21cba6ae89a3493c",
-    "sound890": "#pistol_burst_t8_wz",
     "tunables1": "#pistol_burst_t8_tunables_wz",
     "weaponCamo": "#hash_ee7b092fda35f22d",
-    "cacWeaponXCam": "#hash_ee0716099355cd54",
-    "cacAttachmentsXCam": "#hash_ee0716099355cd54",
-    "weaponIconXCam": "#hash_ceb437da2b44b4bc",
+    "cacWeaponXCam": "#ui_cam_cac_pistol_burst",
+    "cacAttachmentsXCam": "#ui_cam_cac_pistol_burst",
+    "weaponIconXCam": "#ui_cam_icon_pistol_burst",
     "attachments": [
         "#defaultattachment"
     ],
@@ -63,7 +80,11 @@
         "#hash_cbc7fc017e0d3e58"
     ],
     "sharedWeaponSounds": "#pistol",
-    "ballisticDesc": "#hash_fa8de762a01fac90",
+    "ballisticDesc": "#9mm_fmj",
+    "tracers": [
+        "#hash_e5ee8c43e5f98cd8",
+        "#hash_e0e8c9de7086f843"
+    ],
     "viewmodel": [
         "#wpn_t8_pistol_burst_view",
         "#wpn_t8_pistol_burst_view",
@@ -92,8 +113,8 @@
     "fx_c88": "#hash_8a5567d0168ae02f",
     "fx_c90": "#hash_8a5567d0168ae02f",
     "fx_c98": "#hash_8a5567d0168ae02f",
-    "normalImpactFX": "#hash_e1b4c700060ee40c",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#bullet_exit"
 }

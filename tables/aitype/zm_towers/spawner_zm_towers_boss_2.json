@@ -15,17 +15,20 @@
     "typeSuffix": "_zombie",
     "spawnerType": "hellephant",
     "character": [
-        "#hash_70118a35bf16629d"
+        "#c_t8_zmb_dlc0_elephant1_evil"
     ],
-    "meleeWeapon": "#hash_479f8de44d618b68",
+    "animMappingTables": [
+        "#hash_576a513bda4f98cf"
+    ],
+    "meleeWeapon": "#zombie_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
     "footstepTable": "#hash_2d541633bdb100af",
     "footstepScriptCallback": true,
     "footstepFXTable1": "#zm_elephant_footstep",
     "footstepFXTable2": "#zm_elephant_footstep",
-    "behaviorTree": "#elephant.ai_bt",
+    "behaviorTree": "#hash_57743a3bda57c63f",
     "animStateMachine": "#hash_591ec6b3f523a474",
-    "animSelectorTable": "#elephant.ai_ast",
+    "animSelectorTable": "#hash_591eafb3f5237d5f",
     "traversalExtents": "#default_traversal_extents_zm",
     "aiFxBundle": "#fxb8_zm_char_towers_boss",
     "aiNotetrackBoneMappingBundle": "#towers_boss_footstep_notetrack_bones",

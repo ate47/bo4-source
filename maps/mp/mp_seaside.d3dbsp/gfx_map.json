@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_seaside.d3dbsp",
+    "baseName": "mp_seaside",
+    "mins": "-373782 -712770 -3008",
+    "maxs": "370794 727230 7515.203",
+    "checksum": 0,
+    "streamerworld": "#hash_7cc02127dc351947",
+    "lighting": "#maps/mp/mp_seaside.d3dbsp",
+    "lutMaterial": "#lut_mp_seaside",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_seaside",
+        "#img_trim_lut_mp_seaside",
+        "#img_trim_lut_mp_seaside",
+        "#img_trim_lut_mp_seaside"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 8,
+        "cookieArray": "#*cookie_array"
+    }
+}

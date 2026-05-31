@@ -2,8 +2,9 @@
     "name": "#hash_466bb8e86c975cbd",
     "baseWeapon": "#hash_6acc134700e4c9df",
     "displayname": "#hash_73f926dd393ef4df",
-    "xhash_70": "#special_ballisticknife_t8_dw",
-    "streamkey": "#hash_8d158a01af16ddd",
+    "weapon70": "#special_ballisticknife_t8_dw",
+    "dualwieldWeaponName": "#special_ballisticknife_t8_dw_wz",
+    "soundbank": "#hash_8d158a01af16ddd",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -19,27 +20,27 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "WARZONE",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
     "sound90": "#hash_216f906579fc3e07",
     "firesound": "#hash_6fb83eb099d08f17",
     "firesoundplayer": "#hash_5dd45a19c71bbacb",
     "sound240": "#hash_5993e31af4dd53ec",
     "sound250": "#hash_55a9361a61a0ccad",
-    "sound740": "#special_ballisticknife_t8_dw_wz",
     "sound800": "#hash_41b8cf5f69b41ad4",
     "sound810": "#hash_41b8cf5f69b41ad4",
     "sound820": "#hash_279da5cfe15ceafc",
@@ -52,6 +53,10 @@
         "#hash_660bda4c9ead3de1"
     ],
     "sharedWeaponSounds": "#ballistic",
+    "tracers": [
+        "#hash_26d5c1a903fba6f4",
+        "#hash_60e8c9de7086f843"
+    ],
     "viewmodel": [
         "#wpn_t8_loot_knife_ballistic_karambit_dw_view"
     ],
@@ -69,7 +74,7 @@
     "fx_bc8": "#hash_3e3caddc73aa8167",
     "fx_bd0": "#hash_3e35a1dc73a44e55",
     "fx_f00": "#hash_5fdd021d80dd8fc6",
-    "normalImpactFX": "#hash_25f3e55b8e1070ab",
-    "bounceImpactFX": "#hash_61b4c700060ee40c",
+    "normalImpactFX": "#knife_large_enter",
+    "bounceImpactFX": "#bullet_small_enter",
     "bounceImpactSounds": "#hatchet_bounce"
 }

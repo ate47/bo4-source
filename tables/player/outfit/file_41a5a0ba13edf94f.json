@@ -1,0 +1,13 @@
+{
+    "name": "#hash_41a5a0ba13edf94f",
+    "desc": "#hash_4d27579155f6cf5c",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "unk68:unk10": true,
+            "model": "#c_t8_bo_hero_hudson_head1_hawaii",
+            "unk68:unk50": 1
+        }
+    ]
+}

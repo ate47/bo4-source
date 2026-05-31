@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_mic_drop",
+    "type": "#gesture",
+    "gesture": "#boast_mic_drop",
+    "gesture2": "#boast_mic_drop_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_23858156307e6bec",
+        "icon": "image#hash_3ea39676390ac31e",
+        "isdefault": 0
+    }
+}

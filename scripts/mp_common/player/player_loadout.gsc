@@ -1404,7 +1404,7 @@ function function_5536bd9e()
     give_armor = has_specialty_armor && ( !isdefined( self.var_a06951b7 ) || self.var_a06951b7 < gettime() );
     armor = give_armor ? self.spawnarmor : 0;
     self.health = new_health;
-    self armor::set_armor( armor, armor, 0, self function_e95ae03( #"hash_56055daf9601d89e" ), self function_e95ae03( #"hash_e7550a3c852687e" ), self function_e95ae03( #"hash_5a20313f9a8825a9" ), self function_e95ae03( #"hash_7c24b2a7dce26e8f" ), 1, 1, 1 );
+    self armor::set_armor( armor, armor, 0, self getplayerdamagescale( #"hash_56055daf9601d89e" ), self getplayerdamagescale( #"hash_e7550a3c852687e" ), self getplayerdamagescale( #"hash_5a20313f9a8825a9" ), self getplayerdamagescale( #"hash_7c24b2a7dce26e8f" ), 1, 1, 1 );
     self.var_ed2f8b3a = self.spawnhealth;
     
     if ( give_armor || isdefined( self.var_a06951b7 ) && self.var_a06951b7 < gettime() )

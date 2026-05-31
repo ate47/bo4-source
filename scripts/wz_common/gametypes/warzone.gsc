@@ -159,7 +159,7 @@ function event_handler[gametype_init] main( eventstruct )
     function_aaa24662();
     level.var_bde3d03 = &function_b777ff94;
     setdvar( #"g_allowlaststandforactiveclients", 1 );
-    setdvar( #"hash_7036719f41a78d54", 50 );
+    setdvar( #"player_laststandrevivehealth", 50 );
     setdvar( #"hash_6d545f685fa213dd", 3 );
     setdvar( #"scr_deleteexplosivesonspawn", 0 );
     level.wound_disabled = 1;
@@ -1883,7 +1883,7 @@ function function_73b0f715( player = undefined )
     
     if ( isdedicated() )
     {
-        if ( getdvarint( #"hash_41feb500743b0d15", 0 ) != 0 )
+        if ( getdvarint( #"sv_wznostartever", 0 ) != 0 )
         {
             return;
         }
@@ -1895,17 +1895,17 @@ function function_73b0f715( player = undefined )
 // Namespace warzone/warzone
 // Params 0
 // Checksum 0x161a416a, Offset: 0x6960
-// Size: 0xca, Type: bool
+// Size: 0xca
 function function_47851c07()
 {
     if ( game.state != "playing" )
     {
-        return false;
+        return 0;
     }
     
     if ( infection::function_74650d7() )
     {
-        return true;
+        return 1;
     }
     
     if ( isdefined( level.deathcirclerespawn ) && level.deathcirclerespawn )
@@ -1915,10 +1915,10 @@ function function_47851c07()
     
     if ( isdefined( level.wave_spawn ) && level.wave_spawn && ( death_circle::function_9956f107() || isdefined( level.var_75db41a7 ) && gettime() > level.var_75db41a7 ) )
     {
-        return false;
+        return 0;
     }
     
-    return true;
+    return 1;
 }
 
 // Namespace warzone/warzone
@@ -2725,27 +2725,27 @@ function function_ec375172( player )
 // Namespace warzone/warzone
 // Params 1
 // Checksum 0x3ae34062, Offset: 0x8f78
-// Size: 0xaa, Type: bool
+// Size: 0xaa
 function function_10dc43bc( params )
 {
     if ( infection::function_74650d7() )
     {
         if ( params.var_8245068d == 0 )
         {
-            return false;
+            return 0;
         }
         
         if ( params.platoons_alive.size == 1 && params.platoons_alive[ 0 ] == infection::function_76601b7d() )
         {
-            return true;
+            return 1;
         }
         
         if ( params.var_dfa2cc2c.size == 1 )
         {
-            return true;
+            return 1;
         }
         
-        return false;
+        return 0;
     }
     
     return globallogic::function_10dc43bc( params );

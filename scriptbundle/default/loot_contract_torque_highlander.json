@@ -1,16 +1,16 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "localized17#hash_318630efd9dca28c"
+            "hash_619e25922b4aedcf:hash_826726a": "localized17#hash_318630efd9dca28c"
         }
     ],
     "contracticon": "image#hash_63837c0a45951f67",
-    "hash_d0100eab": 1,
-    "relateditemname": "localized17#hash_62bd0375e9e20dab",
+    "hash_202e3311080f8de3:hash_d0100eab": 1,
+    "relateditemname": "localized17#heroes/engineer",
     "contracttitle": "localized17#hash_318630efd9dca28c",
     "name": "loot_contract_torque_highlander",
     "contractdescription": "localized17#hash_8b1fc81e30f868",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_2912e9ec8da5726f",
-    "hash_e08fc162": "localized17#hash_5ed2a0cc9b45c73f"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_2912e9ec8da5726f",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_5ed2a0cc9b45c73f"
 }

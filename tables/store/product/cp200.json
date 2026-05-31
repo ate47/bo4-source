@@ -2,10 +2,13 @@
     "name": "#cp200",
     "blackMarketName": "#hash_5d33f0a1cb3c2795",
     "blackMarketDesc": "#hash_276fedc1f26d753f",
-    "entitlementNameXHash": "#",
+    "productName": "#hash_49c736a48481cd63",
+    "productDesc": "#menu/store_cod_points",
+    "previewImage": "#ui_menu_store_product_b04_cp_200_small",
+    "productImage": "#ui_menu_store_product_b04_cp_200_small",
+    "blackMarketImage": "#ui_icon_blackmarket_cp200_case",
     "productID": "43750",
-    "previewImageName": "hash_34cd7ecd0667243b",
-    "productImageName": "hash_34cd7ecd0667243b",
-    "blackMarketImageName": "hash_17bb610ec51d4b5a",
-    "visibility": true
+    "visibility": true,
+    "unka2": true,
+    "unka3": true
 }

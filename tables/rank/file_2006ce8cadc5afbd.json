@@ -1,16 +1,15 @@
 {
     "name": "#hash_2006ce8cadc5afbd",
     "shortNameRef": "#rank/lt",
-    "fullNameRef": "#hash_2203a420d2de543c",
+    "fullNameRef": "#rank/lt_full",
     "ingameNameRef": "#hash_82899f993357fd5",
-    "iconName": "#hash_75d284a2fc38b9f7",
-    "iconNameLarge": "#hash_765cd0c40f1c0e07",
     "level": 28,
     "minXp": 352800,
     "maxXp": 376800,
+    "icon": "#ui_icon_rank_mp_level28",
+    "iconLarge": "#ui_icon_rank_mp_level28_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#smg_fastfire_t8"
         }
     ]

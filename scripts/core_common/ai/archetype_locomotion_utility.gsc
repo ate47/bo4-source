@@ -496,7 +496,7 @@ function traverseactionstart( behaviortreeentity, asmstatename )
         }
         else
         {
-            record3dtext( "<dev string:xa6>" + ( ishash( result[ #"animation" ] ) ? function_9e72a96( result[ #"animation" ] ) : result[ #"animation" ] ), self.origin + ( 0, 0, 16 ), ( 1, 0, 0 ), "<dev string:x4d>" );
+            record3dtext( "<dev string:xa6>" + ( ishash( result[ #"animation" ] ) ? hashtostring( result[ #"animation" ] ) : result[ #"animation" ] ), self.origin + ( 0, 0, 16 ), ( 1, 0, 0 ), "<dev string:x4d>" );
         }
     #/
     

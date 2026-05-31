@@ -1,0 +1,25 @@
+{
+    "uniqueID": 801,
+    "nameStr": "quickplay_wz",
+    "baseGameType": "quickplay_wz",
+    "groupName": "standard",
+    "name": "#quickplay_wz",
+    "nameRef": "#hash_1f6a84783744b749",
+    "nameRefCaps": "#hash_1f6a84783744b749",
+    "descriptionRef": "#hash_57c09e48ba54a363",
+    "isHardcoreAvailable": false,
+    "isTeamBased": false,
+    "hideHudScore": false,
+    "image": "#ui_icon_gamemode_quickplay_wz_large",
+    "bundle": {
+        "hash_257ac79ebd56b66:hash_e779605d": 1,
+        "hash_21b72360c39ecfda:hash_93590cb": 1,
+        "hash_30ef53f0b666d343:hash_41a0ce9b": "#hash_6965556e7b8762a4",
+        "hash_31ebe909570dca37:hash_470ee0da": 0,
+        "hash_4afc27d8bd37cb04:hash_4442cc93": 0,
+        "switchsides": 0,
+        "displayroundswitch": 1,
+        "displayroundend": 1,
+        "hash_6e5603bda6a73b59:hash_e71fd632": 0
+    }
+}

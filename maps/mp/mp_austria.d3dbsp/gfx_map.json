@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_austria.d3dbsp",
+    "baseName": "mp_austria",
+    "mins": "-115285.29 -98304.01 -9494.789",
+    "maxs": "156564.28 122263.78 68358.09",
+    "checksum": 0,
+    "streamerworld": "#hash_1ba330244415df1e",
+    "lighting": "#maps/mp/mp_austria.d3dbsp",
+    "lutMaterial": "#lut_mp_austria",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_austria",
+        "#img_trim_lut_austria",
+        "#img_trim_lut_austria",
+        "#img_trim_lut_austria"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 7,
+        "cookieArray": "#*cookie_array"
+    }
+}

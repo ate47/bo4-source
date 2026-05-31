@@ -53,7 +53,7 @@ function __init__()
     level.var_c08cd9fa = &function_1d4b0ec0;
     level.var_da2d586a = &function_78c16252;
     level.var_17d1b660 = &function_e3ebbf87;
-    level.p8_wep_gun_storage_rack_03_lod5_s1_geo_rigid_bs_pehghddpjrzbf52gqu27h64a4b = &function_30146e82;
+    level.var_5568effe = &function_30146e82;
     level.var_ee30f81d = &function_e9f06034;
     level.var_ddfd70d = &function_95e44f78;
     

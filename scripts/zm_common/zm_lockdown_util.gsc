@@ -731,7 +731,7 @@ function private function_fea6f0c0( entity, stub, current_zone )
         return false;
     }
     
-    if ( isdefined( stub.var_3468124 ) && stub.var_3468124.var_2977c27 !== "on" )
+    if ( isdefined( stub.s_vapor_altar ) && stub.s_vapor_altar.var_2977c27 !== "on" )
     {
         /#
             function_78eae22a( entity, stub, 17 );
@@ -1350,7 +1350,7 @@ function function_7258b5cc( entity, var_410a8c7, var_2baba799, unlockfunc )
     
     if ( stub.lockdowntype === "lockdown_stub_type_perks" )
     {
-        stub.var_3468124 zm_perks::function_efd2c9e6();
+        stub.s_vapor_altar zm_perks::function_efd2c9e6();
     }
     
     stub.unlockfunc = unlockfunc;
@@ -1437,7 +1437,7 @@ function function_ac6907ec()
     
     if ( self.lockdowntype === "lockdown_stub_type_perks" )
     {
-        self.var_3468124 zm_perks::function_1e721859();
+        self.s_vapor_altar zm_perks::function_1e721859();
     }
     
     self.var_a0fc37f6 = undefined;

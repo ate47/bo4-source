@@ -4,15 +4,15 @@ CHECKSUM 0x34bdda03
 ######################################################
 ####################  DEV STRINGS  ###################
 ######################################################
-# zm_zdraw::__init__@c zm_zdraw::function_b36498d3@dc zm_zdraw::function_c78d9e67@c8 zm_zdraw::function_b5cdeec6@28 zm_zdraw::function_b5cdeec6@9c
+# zm_zdraw::__init__@c zm_zdraw::function_b36498d3@dc zm_zdraw::function_c78d9e67@c8 zm_zdraw::zdraw_text@28 zm_zdraw::zdraw_text@9c
 STRING "<dev string:x38>" 0x11c 0x954 0xa40 0xfb0 0x1024
 # zm_zdraw::function_c78d9e67@88
 STRING "<dev string:x3b>" 0xa00
-# zm_zdraw::function_cd7ed6c5@ac
+# zm_zdraw::zdraw_command@ac
 STRING "<dev string:x41>" 0xb24
-# zm_zdraw::function_54389019@138
+# zm_zdraw::zdraw_color@138
 STRING "<dev string:x59>" 0x12a8
-# zm_zdraw::function_b59acc83@d0 zm_zdraw::function_b59acc83@184 zm_zdraw::function_b59acc83@238
+# zm_zdraw::zdraw_vector@d0 zm_zdraw::zdraw_vector@184 zm_zdraw::zdraw_vector@238
 STRING "<dev string:x6f>" 0x1930 0x19e4 0x1a98
 # zm_zdraw::function_96c207f@14
 STRING "<dev string:x94>" 0x1bc4
@@ -33,23 +33,23 @@ DEVBLOCK 0x642
 DEVBLOCK 0x87a
 # zm_zdraw::function_c78d9e67@12
 DEVBLOCK 0x98a
-# zm_zdraw::function_cd7ed6c5@1a
+# zm_zdraw::zdraw_command@1a
 DEVBLOCK 0xa92
 # zm_zdraw::function_3a2c5c6b@22
 DEVBLOCK 0xb82
 # zm_zdraw::function_da7503f4@22
 DEVBLOCK 0xcea
-# zm_zdraw::function_25fd7d2a@22
+# zm_zdraw::zdraw_line@22
 DEVBLOCK 0xe1a
-# zm_zdraw::function_b5cdeec6@22
+# zm_zdraw::zdraw_text@22
 DEVBLOCK 0xfaa
-# zm_zdraw::function_54389019@1a
+# zm_zdraw::zdraw_color@1a
 DEVBLOCK 0x118a
-# zm_zdraw::function_82f2d020@1a
+# zm_zdraw::zdraw_alpha@1a
 DEVBLOCK 0x1302
-# zm_zdraw::function_f7176625@1a
+# zm_zdraw::zdraw_scale@1a
 DEVBLOCK 0x13c2
-# zm_zdraw::function_cb18c560@1a
+# zm_zdraw::zdraw_duration@1a
 DEVBLOCK 0x1482
 # zm_zdraw::function_82201799@1a
 DEVBLOCK 0x156a
@@ -59,7 +59,7 @@ DEVBLOCK 0x165a
 DEVBLOCK 0x171a
 # zm_zdraw::function_b0f457f2@a
 DEVBLOCK 0x17da
-# zm_zdraw::function_b59acc83@1a
+# zm_zdraw::zdraw_vector@1a
 DEVBLOCK 0x187a
 # zm_zdraw::revive_getdvar@12
 DEVBLOCK 0x1ad2

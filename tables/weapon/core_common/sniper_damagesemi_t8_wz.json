@@ -3,8 +3,8 @@
     "baseWeapon": "#sniper_damagesemi_t8",
     "displayname": "#weapon/sniper_damagesemi_t8",
     "xhash_60": "#hash_669c6933f2466156",
-    "xhash_70": "#sniper_damagesemi_t8",
-    "streamkey": "#hash_1fabb1c03e1fd8ff",
+    "weapon70": "#sniper_damagesemi_t8",
+    "soundbank": "#sniper_damagesemi_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -18,21 +18,44 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "WARZONE",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.0393 0.5",
+            "0.1504 0.485",
+            "0.2911 0.4277",
+            "0.4004 0.3617",
+            "0.5404 0.241",
+            "0.5914 0.0372",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0393 1",
+            "0.1504 0.9704",
+            "0.2911 0.8574",
+            "0.4004 0.7234",
+            "0.5404 0.482",
+            "0.5914 0.0743",
+            "1 0"
+        ]
+    ],
     "firesounddistant": "#hash_5f022cd68aefd198",
     "firesound": "#hash_47d80eebdef454db",
     "firesoundplayer": "#hash_80f67eb71fbc936",
@@ -66,6 +89,10 @@
     ],
     "sharedWeaponSounds": "#rifle",
     "ballisticDesc": "#hash_6297011667973dfb",
+    "tracers": [
+        "#hash_7a6c24626f115206",
+        "#hash_70561f677d3c0da1"
+    ],
     "viewmodel": [
         "#wpn_t8_sniper_semiauto_view"
     ],
@@ -86,8 +113,8 @@
     "fx_c88": "#hash_83613e307817774e",
     "fx_c90": "#hash_83613e307817774e",
     "fx_c98": "#hash_83613e307817774e",
-    "normalImpactFX": "#hash_7ee0671def6af7a4",
-    "exitImpactFX": "#hash_56ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_xlarge_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#bullet_exit"
 }

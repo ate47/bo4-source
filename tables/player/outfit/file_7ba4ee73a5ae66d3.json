@@ -1,0 +1,21 @@
+{
+    "name": "#hash_7ba4ee73a5ae66d3",
+    "desc": "#hash_66b6feae974012e8",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "unk68:unk10": true,
+            "model": "#c_t8_mp_spe_engineer_head1_cst",
+            "unk68:unk48": [
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_cst",
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_details_cst",
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_frames_cst",
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_lenses_cst",
+                "#mc/mtl_c_t8_mp_spe_engineer_head1_goggles_rubber_cst",
+                "#mc/mtl_c_t8_mp_spe_engineer_body1_decals"
+            ],
+            "unk68:unk50": 1
+        }
+    ]
+}

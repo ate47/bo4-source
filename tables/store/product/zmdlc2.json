@@ -1,11 +1,10 @@
 {
     "name": "#zmdlc2",
-    "blackMarketName": "#",
-    "blackMarketDesc": "#",
-    "entitlementNameXHash": "#",
+    "previewImage": "#ui_menu_store_product_b04_ancient_evil_large",
+    "productImage": "#ui_menu_store_product_b04_ancient_evil_large",
+    "blackMarketImage": "#t7_store_product_bo4",
     "metadata": "DLC2ZM",
-    "previewImageName": "hash_7ef03c3c6adb738e",
-    "productImageName": "hash_7ef03c3c6adb738e",
-    "blackMarketImageName": "hash_1217b62ca29dad38",
-    "visibility": true
+    "visibility": true,
+    "unka2": true,
+    "unka3": true
 }

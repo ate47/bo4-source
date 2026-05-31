@@ -2,9 +2,9 @@
     "contracticon": "image#hash_283fe4a2070c233d",
     "contracttitle": "localized17#hash_67e165c686d154cd",
     "name": "loot_contract_grigori_weaver_presunset",
-    "hash_4b258f2c": "image#hash_44ac91599bed3394",
+    "hash_5d63fbb2bf3f4957:hash_4b258f2c": "image#hash_44ac91599bed3394",
     "contractdescription": "localized17#menu/blackout_character",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_5c05723285d88e75",
-    "hash_e08fc162": "localized17#hash_31e8034c0fbce37"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_5c05723285d88e75",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_31e8034c0fbce37"
 }

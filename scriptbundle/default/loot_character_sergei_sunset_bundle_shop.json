@@ -1,6 +1,6 @@
 {
     "detailsicon": "image#hash_3dec00291768759a",
-    "hash_6c274f86": "image#loot04_ui_icon_blackmarket_itemshop_sergei",
+    "shopicon": "image#loot04_ui_icon_blackmarket_itemshop_sergei",
     "nametext": "localized17#menu/contract_sergei",
     "name": "loot_character_sergei_sunset_bundle_shop",
     "desctext": "localized17#hash_4f9480ed63df01a8"

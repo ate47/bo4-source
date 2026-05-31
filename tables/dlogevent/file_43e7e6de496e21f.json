@@ -1,0 +1,347 @@
+{
+    "name": "#hash_43e7e6de496e21f",
+    "ddlDef": "#hash_1673548869c6e873",
+    "unk18": 0,
+    "unk19": 1,
+    "unk1a": 0,
+    "unk1b": 0,
+    "unk1c": 1,
+    "rate": 1,
+    "fields": [
+        {
+            "name": "#telemetry",
+            "arraySize": 0,
+            "members": {
+                "name": "#telemetry_header",
+                "members": [
+                    {
+                        "name": "#game_session_id",
+                        "scrName": "#hash_50f7aa03",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#action_type",
+                        "scrName": "#action_type",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#title_id",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#build_version",
+                        "scrName": "#build_version",
+                        "type": "STRING",
+                        "len": 32
+                    },
+                    {
+                        "name": "#platform",
+                        "scrName": "#platform",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#source_version",
+                        "scrName": "#source_version",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_56a1b6d783aa7a25",
+                        "scrName": "#hash_ee3228f8",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#changelist_number",
+                        "scrName": "#changelist_number",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#header",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_6a65101a136eab93",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#user_id",
+                        "type": "UINT64",
+                        "s111u20": true
+                    },
+                    {
+                        "name": "#lobby_id",
+                        "scrName": "#lobby_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#title_id",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hash_426fb7404d1fbf32",
+                        "scrName": "#hash_86d5a83c",
+                        "type": "INT64"
+                    },
+                    {
+                        "name": "#hash_6bdd7ebe59310aa2",
+                        "scrName": "#hash_b8bfa824",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#client",
+            "arraySize": 0,
+            "members": {
+                "name": "#client_header",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#user_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#user_session_id",
+                        "scrName": "#hash_e004f74d",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#uno_id",
+                        "scrName": "#uno_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#hash_5d48574fc72fa62a",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_75410917f1349195",
+                "members": [
+                    {
+                        "name": "#hash_2d44b36998706f7",
+                        "scrName": "#hash_59005aa7",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hash_1050a7ff012698f8",
+                        "scrName": "#hash_cc9c2591",
+                        "type": "UINT8"
+                    },
+                    {
+                        "name": "#hash_18cb1067529b24e6",
+                        "scrName": "#hash_322dffee",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hash_1b0d39256f62ffa4",
+                        "scrName": "#hash_e8215c81",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#result",
+                        "scrName": "#result",
+                        "type": "UINT8"
+                    },
+                    {
+                        "name": "#duration_ms",
+                        "scrName": "#duration_ms",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hash_20b0abc2a13dc92b",
+                        "scrName": "#hash_543ac3fa",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#hash_20f159c75c2c7f4e",
+                        "scrName": "#hash_bd32c3d0",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#hash_34c5635e8db13ab3",
+                        "scrName": "#hash_c3506e3f",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_3772e4882104a032",
+                        "scrName": "#hash_7cc94c69",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "name": "#hash_383e72b38f06fdef",
+                        "scrName": "#hash_5ce2af17",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_4d8b250da4767eb7",
+                        "scrName": "#hash_13969774",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hash_4d8e465f87a92f48",
+                        "scrName": "#hash_b51a6cdc",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hash_54d04e9876cf3bb2",
+                        "scrName": "#hash_49d42a39",
+                        "type": "UINT8"
+                    },
+                    {
+                        "name": "#hash_58d62c257c3f9e9d",
+                        "scrName": "#hash_8ab2f809",
+                        "type": "UINT8"
+                    },
+                    {
+                        "name": "#hash_5bf606466b9e7bbb",
+                        "scrName": "#hash_4d59a7e3",
+                        "type": "BOOL"
+                    },
+                    {
+                        "name": "#hash_66838b2bb2c0d307",
+                        "scrName": "#hash_c64b3a4",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hash_70f2b19ca673843f",
+                        "scrName": "#hash_4f9439a0",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_7a7ad9d0b762f0d3",
+                        "scrName": "#hash_2943ed20",
+                        "type": "UINT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#hash_7c0d8ffa40ab2f1c",
+            "arraySize": 4,
+            "members": {
+                "name": "#hash_3463e9551f90555",
+                "members": [
+                    {
+                        "name": "#port",
+                        "scrName": "#port",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_113c5771496a44ed",
+                        "scrName": "#hash_76b1cf26",
+                        "type": "STRING",
+                        "len": 128
+                    },
+                    {
+                        "name": "#hash_32e3f837e2ac1c9b",
+                        "scrName": "#hash_aaa06d3e",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#addr",
+                        "scrName": "#addr",
+                        "type": "UINT32"
+                    }
+                ]
+            }
+        }
+    ],
+    "unk60": [
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_855c9a40dc060cf",
+                "s3u10": "#hash_2",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    0
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_775a1eb90e25df27",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    0,
+                    5,
+                    4
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 0.02,
+            "s3u8": {
+                "s31u0": "#hash_5509b91edf99f9a4",
+                "s3u10": "#hash_6",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    2,
+                    3,
+                    9
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_415a3e8b41b48599",
+                "s3u10": "#hash_4",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_a",
+                "unk28": [
+                    2,
+                    3,
+                    5
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_68cc9f8f64640d09",
+                "s3u10": "#hash_7",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2,
+                    3
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_7b52e3919e2a5b79",
+                "s3u10": "#hash_9",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2
+                ]
+            }
+        }
+    ]
+}

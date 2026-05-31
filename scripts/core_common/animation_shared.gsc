@@ -136,7 +136,7 @@ function stop( n_blend = 0.2 )
         {
             if ( !isstring( str_animation ) )
             {
-                str_animation = isdefined( function_9e72a96( str_animation ) ) ? "<dev string:x38>" + function_9e72a96( str_animation ) : "<dev string:x38>";
+                str_animation = isdefined( hashtostring( str_animation ) ) ? "<dev string:x38>" + hashtostring( str_animation ) : "<dev string:x38>";
             }
             
             b_print = 0;
@@ -202,7 +202,7 @@ function _play( animation, v_origin_or_ent, v_angles_or_tag, n_rate, n_blend_in,
         str_tag = v_angles_or_tag;
         v_origin = v_origin_or_ent gettagorigin( str_tag );
         v_angles = v_origin_or_ent gettagangles( str_tag );
-        assert( isdefined( v_origin ) && isdefined( v_angles ), "<dev string:x54>" + function_9e72a96( animation ) + "<dev string:x87>" + v_origin_or_ent getentitynumber() + "<dev string:x96>" + v_angles_or_tag + "<dev string:xa3>" );
+        assert( isdefined( v_origin ) && isdefined( v_angles ), "<dev string:x54>" + hashtostring( animation ) + "<dev string:x87>" + v_origin_or_ent getentitynumber() + "<dev string:x96>" + v_angles_or_tag + "<dev string:xa3>" );
     }
     else
     {

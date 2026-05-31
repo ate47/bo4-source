@@ -212,7 +212,7 @@ function private function_b516210b( var_889058cc, origin, activator )
 // Params 7, eflags: 0x4
 // Checksum 0xe25c16b1, Offset: 0x10d8
 // Size: 0x132
-function private function_d045e83b( item, player, networkid, itemid, itemcount, var_aec6fa7f, slot )
+function private function_d045e83b( item, player, networkid, itemid, itemcount, itemamount, slot )
 {
     if ( item.itementry.itemtype !== #"ammo" )
     {
@@ -222,18 +222,18 @@ function private function_d045e83b( item, player, networkid, itemid, itemcount, 
     
     if ( !self item_inventory::can_pickup_ammo( item ) )
     {
-        return ( isdefined( item.itementry.amount ) ? item.itementry.amount : isdefined( var_aec6fa7f ) ? var_aec6fa7f : 1 );
+        return ( isdefined( item.itementry.amount ) ? item.itementry.amount : isdefined( itemamount ) ? itemamount : 1 );
     }
     
     player function_b00db06( 8, itemid );
-    return player item_inventory::equip_ammo( item, var_aec6fa7f );
+    return player item_inventory::equip_ammo( item, itemamount );
 }
 
 // Namespace item_world/item_world
 // Params 7, eflags: 0x4
 // Checksum 0x5b992843, Offset: 0x1218
 // Size: 0x200
-function private function_2e5b5858( item, player, networkid, itemid, itemcount, var_aec6fa7f, slotid )
+function private function_2e5b5858( item, player, networkid, itemid, itemcount, itemamount, slotid )
 {
     droppeditem = undefined;
     var_3d1f9df4 = 0;
@@ -252,7 +252,7 @@ function private function_2e5b5858( item, player, networkid, itemid, itemcount, 
     }
     
     player item_inventory::drop_armor();
-    remainingitems = player item_inventory::give_inventory_item( item, 1, var_aec6fa7f, slotid );
+    remainingitems = player item_inventory::give_inventory_item( item, 1, itemamount, slotid );
     
     if ( remainingitems < itemcount )
     {
@@ -277,7 +277,7 @@ function private function_2e5b5858( item, player, networkid, itemid, itemcount, 
 // Params 7, eflags: 0x4
 // Checksum 0x3d09cc7a, Offset: 0x1420
 // Size: 0x80
-function private function_cb9b4dd7( item, player, networkid, itemid, itemcount, var_aec6fa7f, slotid )
+function private function_cb9b4dd7( item, player, networkid, itemid, itemcount, itemamount, slotid )
 {
     remainingitems = player item_inventory::give_inventory_item( item, itemcount, undefined, slotid );
     player item_inventory::function_3d113bfb();
@@ -288,7 +288,7 @@ function private function_cb9b4dd7( item, player, networkid, itemid, itemcount, 
 // Params 7, eflags: 0x4
 // Checksum 0xd478a3c0, Offset: 0x14a8
 // Size: 0x178
-function private function_14b2eddf( item, player, networkid, itemid, itemcount, var_aec6fa7f, slotid )
+function private function_14b2eddf( item, player, networkid, itemid, itemcount, itemamount, slotid )
 {
     var_f0dc4e93 = player item_inventory::function_ec087745();
     weaponslotid = undefined;
@@ -317,7 +317,7 @@ function private function_14b2eddf( item, player, networkid, itemid, itemcount, 
 // Params 7, eflags: 0x4
 // Checksum 0x8746470f, Offset: 0x1628
 // Size: 0x110
-function private function_42ffe9b2( item, player, networkid, itemid, itemcount, var_aec6fa7f, slotid )
+function private function_42ffe9b2( item, player, networkid, itemid, itemcount, itemamount, slotid )
 {
     if ( player item_inventory::function_fba4a353( item ) )
     {
@@ -343,9 +343,9 @@ function private function_42ffe9b2( item, player, networkid, itemid, itemcount, 
 // Params 7, eflags: 0x4
 // Checksum 0x548acf6b, Offset: 0x1740
 // Size: 0xf8
-function private function_2eebeff5( item, player, networkid, itemid, itemcount, var_aec6fa7f, slotid )
+function private function_2eebeff5( item, player, networkid, itemid, itemcount, itemamount, slotid )
 {
-    remainingitems = player item_inventory::give_inventory_item( item, itemcount, var_aec6fa7f, slotid );
+    remainingitems = player item_inventory::give_inventory_item( item, itemcount, itemamount, slotid );
     
     if ( remainingitems < itemcount )
     {
@@ -367,7 +367,7 @@ function private function_2eebeff5( item, player, networkid, itemid, itemcount, 
 // Params 7, eflags: 0x4
 // Checksum 0xefa8bf38, Offset: 0x1840
 // Size: 0xf0
-function private function_349d4c26( item, player, networkid, itemid, itemcount, var_aec6fa7f, slotid )
+function private function_349d4c26( item, player, networkid, itemid, itemcount, itemamount, slotid )
 {
     remainingitems = player item_inventory::give_inventory_item( item, itemcount, undefined, slotid );
     
@@ -391,7 +391,7 @@ function private function_349d4c26( item, player, networkid, itemid, itemcount, 
 // Params 7, eflags: 0x4
 // Checksum 0x27da6b48, Offset: 0x1938
 // Size: 0x6a
-function private function_670cce3f( item, player, networkid, itemid, itemcount, var_aec6fa7f, slotid )
+function private function_670cce3f( item, player, networkid, itemid, itemcount, itemamount, slotid )
 {
     remainingitems = player item_inventory::give_inventory_item( item, itemcount, undefined, slotid );
     return remainingitems;
@@ -401,7 +401,7 @@ function private function_670cce3f( item, player, networkid, itemid, itemcount, 
 // Params 7, eflags: 0x4
 // Checksum 0xb991e6d1, Offset: 0x19b0
 // Size: 0x6a
-function private function_41a52251( item, player, networkid, itemid, itemcount, var_aec6fa7f, slotid )
+function private function_41a52251( item, player, networkid, itemid, itemcount, itemamount, slotid )
 {
     remainingitems = player item_inventory::give_inventory_item( item, itemcount, undefined, slotid );
     return remainingitems;
@@ -411,7 +411,7 @@ function private function_41a52251( item, player, networkid, itemid, itemcount, 
 // Params 7, eflags: 0x4
 // Checksum 0xbd3bf315, Offset: 0x1a28
 // Size: 0x90
-function private function_2b2e9302( item, player, networkid, itemid, itemcount, var_aec6fa7f, slotid )
+function private function_2b2e9302( item, player, networkid, itemid, itemcount, itemamount, slotid )
 {
     remainingitems = player item_inventory::give_inventory_item( item, itemcount, undefined, slotid );
     player callback::callback( #"hash_3b891b6daa75c782", item );
@@ -422,7 +422,7 @@ function private function_2b2e9302( item, player, networkid, itemid, itemcount, 
 // Params 7, eflags: 0x4
 // Checksum 0x4c73e20e, Offset: 0x1ac0
 // Size: 0x6a
-function private function_a240798a( item, player, networkid, itemid, itemcount, var_aec6fa7f, slotid )
+function private function_a240798a( item, player, networkid, itemid, itemcount, itemamount, slotid )
 {
     remainingitems = player item_inventory::give_inventory_item( item, itemcount, undefined, slotid );
     return remainingitems;
@@ -432,7 +432,7 @@ function private function_a240798a( item, player, networkid, itemid, itemcount, 
 // Params 7, eflags: 0x4
 // Checksum 0xe9ce1164, Offset: 0x1b38
 // Size: 0x220
-function private function_a712496a( item, player, networkid, itemid, itemcount, var_aec6fa7f, slotid )
+function private function_a712496a( item, player, networkid, itemid, itemcount, itemamount, slotid )
 {
     assert( isplayer( self ) );
     
@@ -452,7 +452,7 @@ function private function_a712496a( item, player, networkid, itemid, itemcount, 
         }
     }
     
-    remainingitems = player item_inventory::give_inventory_item( item, itemcount, var_aec6fa7f, slotid );
+    remainingitems = player item_inventory::give_inventory_item( item, itemcount, itemamount, slotid );
     
     if ( remainingitems < itemcount )
     {
@@ -1437,7 +1437,7 @@ function private function_ba96cdf( player )
 function private function_116fd9a7()
 {
     level.var_66383953 = [];
-    function_937ea9e( #"hash_9ed0c30684ca35a", &function_d045e83b );
+    function_937ea9e( #"generic_ammo_pickup", &function_d045e83b );
     function_937ea9e( #"generic_armor_pickup", &function_2e5b5858 );
     function_937ea9e( #"hash_3bfb97e39d67e5f9", &function_cb9b4dd7 );
     function_937ea9e( #"hash_788c59214ead02af", &function_14b2eddf );
@@ -1446,9 +1446,9 @@ function private function_116fd9a7()
     function_937ea9e( #"hash_51b30f6e7331e136", &function_349d4c26 );
     function_937ea9e( #"hash_2b4dff2e0db72d06", &function_670cce3f );
     function_937ea9e( #"generic_pickup", &function_41a52251 );
-    function_937ea9e( #"hash_5c844f5c1207159c", &function_2b2e9302 );
+    function_937ea9e( #"generic_quest_pickup", &function_2b2e9302 );
     function_937ea9e( #"hash_31380667bf69d3a0", &function_a240798a );
-    function_937ea9e( #"hash_50375e5de228e9fc", &function_a712496a );
+    function_937ea9e( #"generic_weapon_pickup", &function_a712496a );
 }
 
 // Namespace item_world/item_world
@@ -2166,9 +2166,9 @@ function function_de2018e3( item, player, slotid = undefined )
         
         if ( isdefined( handlerfunc ) )
         {
-            var_aec6fa7f = item.amount;
+            itemamount = item.amount;
             
-            if ( !isdefined( var_aec6fa7f ) || item.amount == 0 )
+            if ( !isdefined( itemamount ) || item.amount == 0 )
             {
                 if ( itementry.itemtype == #"ammo" )
                 {
@@ -2178,40 +2178,40 @@ function function_de2018e3( item, player, slotid = undefined )
                     if ( !isdefined( item.amount ) )
                     {
                         weapon = item_world_util::function_35e06774( itementry );
-                        var_aec6fa7f = itementry.amount;
+                        itemamount = itementry.amount;
                         
                         if ( isdefined( weapon ) )
                         {
-                            var_aec6fa7f = itementry.amount * weapon.clipsize;
+                            itemamount = itementry.amount * weapon.clipsize;
                         }
                     }
                 }
                 else if ( itementry.itemtype == #"armor" )
                 {
-                    var_aec6fa7f = itementry.amount;
+                    itemamount = itementry.amount;
                 }
                 else if ( itementry.itemtype == #"equipment" )
                 {
                     if ( isentity( item ) )
                     {
-                        var_aec6fa7f = item.ammo;
+                        itemamount = item.ammo;
                     }
                     
-                    if ( !isdefined( var_aec6fa7f ) )
+                    if ( !isdefined( itemamount ) )
                     {
-                        var_aec6fa7f = 0;
+                        itemamount = 0;
                     }
                 }
                 else
                 {
-                    var_aec6fa7f = 0;
+                    itemamount = 0;
                 }
             }
             
             var_d72b1a4b = function_c8ab2022( item, 0 );
             var_8cd447d8 = function_c8ab2022( item, 1 );
             profilestart();
-            var_c5781c22 = player [[ handlerfunc ]]( item, player, item.networkid, item.id, var_8cd447d8, var_aec6fa7f, slotid );
+            var_c5781c22 = player [[ handlerfunc ]]( item, player, item.networkid, item.id, var_8cd447d8, itemamount, slotid );
             profilestop();
             var_c5781c22 += var_d72b1a4b - var_8cd447d8;
             assert( isint( var_c5781c22 ) && var_c5781c22 >= 0 );

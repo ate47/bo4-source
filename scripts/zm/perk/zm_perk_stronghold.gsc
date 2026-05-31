@@ -84,7 +84,7 @@ function function_e03779ee()
         return;
     }
     
-    level._effect[ #"divetonuke_light" ] = #"hash_2225287695ddf9c9";
+    level._effect[ #"divetonuke_light" ] = #"_t6/misc/fx_zombie_cola_dtap_on";
     level.machine_assets[ #"specialty_camper" ] = spawnstruct();
     level.machine_assets[ #"specialty_camper" ].weapon = getweapon( "zombie_perk_bottle_stronghold" );
     level.machine_assets[ #"specialty_camper" ].off_model = "p7_zm_vending_nuke";

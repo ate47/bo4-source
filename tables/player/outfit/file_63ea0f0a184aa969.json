@@ -1,0 +1,13 @@
+{
+    "name": "#hash_63ea0f0a184aa969",
+    "desc": "#hash_1f055bdaffbbca74",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "unk68:unk10": true,
+            "model": "#c_t8_zmb_hero_stanton_head1_cst",
+            "unk68:unk50": 1
+        }
+    ]
+}

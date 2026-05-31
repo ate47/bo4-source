@@ -107,7 +107,7 @@
             }
             
             print3d( self.origin, self getentnum() + get_ent_type() + "<dev string:xa1>" + str_name, color, 0.8, 0.3 );
-            print3d( self.origin - ( 0, 0, 5 ), "<dev string:xaa>" + function_9e72a96( animation ), color, 0.8, 0.3 );
+            print3d( self.origin - ( 0, 0, 5 ), "<dev string:xaa>" + hashtostring( animation ), color, 0.8, 0.3 );
             print3d( self.origin - ( 0, 0, 7 ), str_extra_info, color, 0.8, 0.15 );
             render_tag( "<dev string:xc0>", "<dev string:xd3>" );
             render_tag( "<dev string:xdb>", "<dev string:xed>" );

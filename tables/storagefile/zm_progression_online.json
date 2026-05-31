@@ -1,5 +1,16 @@
 {
-    "name": "#zm_progression_online",
     "nameStr": "zm_progression_online",
-    "ddl": "#gamedata/ddl/generated/zm_progression.ddl"
+    "name": "#zm_progression_online",
+    "ddlPath": "#gamedata/ddl/generated/zm_progression.ddl",
+    "files": [
+        {
+            "fileName": "zm_progression_online"
+        }
+    ],
+    "size": 113664,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
 }

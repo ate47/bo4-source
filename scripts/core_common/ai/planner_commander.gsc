@@ -269,12 +269,12 @@ function private _debugcommander( commander )
             /#
                 if ( commander.pause )
                 {
-                    recordtext( function_9e72a96( commander.planner.name ) + "<dev string:x38>" + function_9e72a96( team ) + "<dev string:x41>", position + ( xoffset, yoffset, 0 ), ( 1, 1, 1 ), "<dev string:x4c>", textscale );
+                    recordtext( hashtostring( commander.planner.name ) + "<dev string:x38>" + hashtostring( team ) + "<dev string:x41>", position + ( xoffset, yoffset, 0 ), ( 1, 1, 1 ), "<dev string:x4c>", textscale );
                     waitframe( 1 );
                     continue;
                 }
                 
-                recordtext( function_9e72a96( commander.planner.name ) + "<dev string:x38>" + function_9e72a96( team ) + "<dev string:x59>" + commander.planstarttime + "<dev string:x64>" + commander.planfinishtime + "<dev string:x70>" + int( ( commander.planfinishtime - commander.planstarttime ) / int( float( function_60d95f53() ) / 1000 * 1000 ) + 1 ) + "<dev string:x7c>", position + ( xoffset, yoffset, 0 ), ( 1, 1, 1 ), "<dev string:x4c>", textscale );
+                recordtext( hashtostring( commander.planner.name ) + "<dev string:x38>" + hashtostring( team ) + "<dev string:x59>" + commander.planstarttime + "<dev string:x64>" + commander.planfinishtime + "<dev string:x70>" + int( ( commander.planfinishtime - commander.planstarttime ) / int( float( function_60d95f53() ) / 1000 * 1000 ) + 1 ) + "<dev string:x7c>", position + ( xoffset, yoffset, 0 ), ( 1, 1, 1 ), "<dev string:x4c>", textscale );
             #/
             
             xoffset += 15;
@@ -297,7 +297,7 @@ function private _debugcommander( commander )
                 yoffset += 13;
                 
                 /#
-                    recordtext( function_9e72a96( commander.plan[ index ].name ), position + ( xoffset, yoffset, 0 ), ( 1, 1, 1 ), "<dev string:x4c>", textscale );
+                    recordtext( hashtostring( commander.plan[ index ].name ), position + ( xoffset, yoffset, 0 ), ( 1, 1, 1 ), "<dev string:x4c>", textscale );
                 #/
             }
             
@@ -1394,7 +1394,7 @@ function function_2974807c( commander )
     {
         /#
             team = blackboard::getstructblackboardattribute( commander, #"team" );
-            iprintlnbold( "<dev string:x377>" + function_9e72a96( team ) + "<dev string:x7c>" );
+            iprintlnbold( "<dev string:x377>" + hashtostring( team ) + "<dev string:x7c>" );
         #/
         
         commander.pause = 0;

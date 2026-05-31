@@ -3,14 +3,13 @@
     "shortNameRef": "#hash_5d4e17f8ce7586a",
     "fullNameRef": "#hash_63cb669a9cd09c9b",
     "ingameNameRef": "#hash_61e82db875597df3",
-    "iconName": "#hash_75be00a2fc2730a1",
-    "iconNameLarge": "#hash_7bd4819ac3eb98e5",
     "level": 48,
     "minXp": 1046000,
     "maxXp": 1093200,
+    "icon": "#ui_icon_rank_mp_level48",
+    "iconLarge": "#ui_icon_rank_mp_level48_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#eq_molotov"
         }
     ]

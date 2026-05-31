@@ -134,7 +134,7 @@ function player_last_stand_stats( einflictor, attacker, idamage, smeansofdeath, 
     {
         self zm_stats::increment_client_stat( "deaths" );
         self zm_stats::increment_player_stat( "deaths" );
-        self zm_stats::forced_attachment( "boas_deaths" );
+        self zm_stats::function_8f10788e( "boas_deaths" );
     }
 }
 
@@ -154,7 +154,7 @@ function increment_downed_stat()
     self zm_stats::function_f1a1191d( "TOTAL_DOWNS" );
     self zm_stats::function_2726a7c2( "TOTAL_DOWNS" );
     self zm_stats::increment_client_stat( "downs" );
-    self zm_stats::forced_attachment( "boas_downs" );
+    self zm_stats::function_8f10788e( "boas_downs" );
     self add_weighted_down();
     self zm_stats::increment_player_stat( "downs" );
     zonename = self zm_utility::get_current_zone();
@@ -216,7 +216,7 @@ function playerlaststand( einflictor, attacker, idamage, smeansofdeath, weapon, 
     {
         self zm_stats::increment_client_stat( "suicides" );
         self zm_stats::increment_player_stat( "suicides" );
-        self zm_stats::forced_attachment( "boas_suicides" );
+        self zm_stats::function_8f10788e( "boas_suicides" );
     }
     
     self allowjump( 0 );
@@ -517,11 +517,11 @@ function refire_player_downed()
 function laststand_disable_player_weapons()
 {
     self disableweaponcycling();
-    var_df4942c2 = self getweaponslist( 1 );
+    a_w_inventory = self getweaponslist( 1 );
     self.lastactiveweapon = self getcurrentweapon();
     self.laststandpistol = indeploying_ui();
     
-    foreach ( weapon in var_df4942c2 )
+    foreach ( weapon in a_w_inventory )
     {
         if ( weapon == self.laststandpistol )
         {
@@ -1018,7 +1018,7 @@ function bleed_out()
     self clientfield::set( "zmbLastStand", 0 );
     self zm_stats::increment_client_stat( "deaths" );
     self zm_stats::increment_player_stat( "deaths" );
-    self zm_stats::forced_attachment( "boas_deaths" );
+    self zm_stats::function_8f10788e( "boas_deaths" );
     self recordplayerdeathzombies();
     self.last_bleed_out_time = gettime();
     self zm_equipment::take();
@@ -1666,7 +1666,7 @@ function can_revive( e_revivee, ignore_sight_checks = 0, ignore_touch_checks = 0
         return false;
     }
     
-    if ( isdefined( level.var_1461fd14 ) && ![[ level.var_1461fd14 ]]( e_revivee ) )
+    if ( isdefined( level.can_revive_game_module ) && ![[ level.can_revive_game_module ]]( e_revivee ) )
     {
         return false;
     }
@@ -2038,7 +2038,7 @@ function private revive_internal( reviver, b_track_stats, var_c0ab6a65 = 0 )
             reviver zm_stats::function_f1a1191d( "revives" );
             reviver zm_stats::function_3468f864( "revives" );
             reviver zm_stats::function_7bc347f6( "revives" );
-            reviver zm_stats::forced_attachment( "boas_revives" );
+            reviver zm_stats::function_8f10788e( "boas_revives" );
             self recordplayerrevivezombies( reviver );
             demo::bookmark( #"zm_player_revived", gettime(), reviver, self );
             potm::bookmark( #"zm_player_revived", gettime(), reviver, self );
@@ -2202,7 +2202,7 @@ function check_for_failed_revive( e_revivee )
     e_revivee waittill( #"bled_out" );
     self zm_stats::increment_client_stat( "failed_revives" );
     self zm_stats::increment_player_stat( "failed_revives" );
-    self zm_stats::forced_attachment( "boas_failed_revives" );
+    self zm_stats::function_8f10788e( "boas_failed_revives" );
 }
 
 // Namespace zm_laststand/zm_laststand

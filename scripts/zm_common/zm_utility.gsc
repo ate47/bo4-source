@@ -1971,9 +1971,9 @@ function get_closest_valid_player( origin, ignore_player = array(), var_b106b254
             continue;
         }
         
-        if ( isdefined( level.var_63707e9c ) )
+        if ( isdefined( level.evaluate_zone_path_override ) )
         {
-            if ( ![[ level.var_63707e9c ]]( player ) )
+            if ( ![[ level.evaluate_zone_path_override ]]( player ) )
             {
                 array::add( ignore_player, player );
             }
@@ -2081,9 +2081,9 @@ function update_valid_players( origin, ignore_player )
             continue;
         }
         
-        if ( isdefined( level.var_63707e9c ) )
+        if ( isdefined( level.evaluate_zone_path_override ) )
         {
-            if ( ![[ level.var_63707e9c ]]( player ) )
+            if ( ![[ level.evaluate_zone_path_override ]]( player ) )
             {
                 array::add( ignore_player, player );
             }
@@ -3386,7 +3386,7 @@ function play_sound_2d( sound )
 // Size: 0x6c
 function include_weapon( weapon_name, in_box )
 {
-    println( "<dev string:x22f>" + function_9e72a96( weapon_name ) );
+    println( "<dev string:x22f>" + hashtostring( weapon_name ) );
     
     if ( !isdefined( in_box ) )
     {
@@ -4227,7 +4227,7 @@ function pick_up()
 // Params 0
 // Checksum 0xd68034cf, Offset: 0x9ce0
 // Size: 0xa0, Type: bool
-function function_ab9a9770()
+function duf47()
 {
     s_trace = groundtrace( self.origin + ( 0, 0, 70 ), self.origin + ( 0, 0, -100 ), 0, self );
     
@@ -5316,12 +5316,12 @@ function get_player_weapon_limit( player )
 // Namespace zm_utility/zm_utility
 // Params 2
 // Checksum 0x2ed2b726, Offset: 0xc340
-// Size: 0x62, Type: bool
+// Size: 0x62
 function function_e05ac4ad( e_player, n_cost )
 {
     if ( isdefined( level.var_236b9f7a ) && [[ level.var_236b9f7a ]]( e_player, self.clientfieldname ) )
     {
-        return false;
+        return 0;
     }
     
     return e_player zm_score::can_player_purchase( n_cost );
@@ -6207,7 +6207,7 @@ function function_fdb0368( n_round_number, str_endon )
 // Params 6
 // Checksum 0x46e61e57, Offset: 0xe418
 // Size: 0x600
-function function_9ad5aeb1( var_a8d0b313 = 1, var_82ea43f2 = 1, b_hide_body = 0, var_b0e62e21 = 1, var_814b69d3 = 1, var_87c98387 = "white" )
+function function_9ad5aeb1( var_a8d0b313 = 1, var_82ea43f2 = 1, b_hide_body = 0, b_flash_screen = 1, var_814b69d3 = 1, var_87c98387 = "white" )
 {
     var_4b9821e4 = 0;
     a_players = util::get_active_players();
@@ -6217,9 +6217,9 @@ function function_9ad5aeb1( var_a8d0b313 = 1, var_82ea43f2 = 1, b_hide_body = 0,
         player val::set( #"hash_2f1b514922b9901e", "takedamage", 0 );
     }
     
-    if ( !isarray( var_b0e62e21 ) )
+    if ( !isarray( b_flash_screen ) )
     {
-        if ( var_b0e62e21 )
+        if ( b_flash_screen )
         {
             if ( var_814b69d3 )
             {
@@ -6233,9 +6233,9 @@ function function_9ad5aeb1( var_a8d0b313 = 1, var_82ea43f2 = 1, b_hide_body = 0,
     }
     else
     {
-        var_72487f42 = var_b0e62e21[ 0 ];
-        n_hold = var_b0e62e21[ 1 ];
-        var_7012f1e9 = var_b0e62e21[ 2 ];
+        var_72487f42 = b_flash_screen[ 0 ];
+        n_hold = b_flash_screen[ 1 ];
+        var_7012f1e9 = b_flash_screen[ 2 ];
         n_alpha = array( 0.8, 1 )[ var_814b69d3 ];
         level thread lui::screen_flash( var_72487f42, n_hold, var_7012f1e9, n_alpha, var_87c98387 );
     }
@@ -6604,7 +6604,7 @@ function is_jumping()
 // Params 3
 // Checksum 0x66d87381, Offset: 0xf570
 // Size: 0x262
-function function_9f7fd525( var_c61df77f = "zombie_location", a_str_zones, var_a6f0ec9f = 1 )
+function get_spawn_locs( var_c61df77f = "zombie_location", a_str_zones, var_a6f0ec9f = 1 )
 {
     a_s_locs = [];
     

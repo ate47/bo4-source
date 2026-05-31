@@ -438,10 +438,10 @@ function function_99207e4d( w_flamethrower )
 {
     var_a092956c = [];
     var_560ef51 = [];
-    var_2ed6f142 = self getweaponmuzzlepoint();
+    v_view_pos = self getweaponmuzzlepoint();
     v_forward_angles = self getweaponforwarddir();
     self playrumbleonentity( "grenade_rumble" );
-    a_ai_zombies = util::get_array_of_closest( var_2ed6f142, getaispeciesarray( level.zombie_team ), undefined, undefined, 614 );
+    a_ai_zombies = util::get_array_of_closest( v_view_pos, getaispeciesarray( level.zombie_team ), undefined, undefined, 614 );
     
     foreach ( ai_zombie in a_ai_zombies )
     {
@@ -476,7 +476,7 @@ function function_99207e4d( w_flamethrower )
             self.var_1374cdc6 = 1;
         }
         
-        if ( isdefined( ai_zombie sightconetrace( var_2ed6f142, self, v_forward_angles, 29 ) ) && ai_zombie sightconetrace( var_2ed6f142, self, v_forward_angles, 29 ) )
+        if ( isdefined( ai_zombie sightconetrace( v_view_pos, self, v_forward_angles, 29 ) ) && ai_zombie sightconetrace( v_view_pos, self, v_forward_angles, 29 ) )
         {
             if ( distance( ai_zombie.origin, self.origin ) <= 296 )
             {
@@ -633,14 +633,14 @@ function function_3be93b07( w_flamethrower )
     self notify( #"hash_2ca901b5ada4f20f" );
     self endon( #"bled_out", #"death", #"hero_flamethrower_expired", #"hash_2ca901b5ada4f20f" );
     var_a85d39a2 = [];
-    var_2ed6f142 = self getweaponmuzzlepoint();
+    v_view_pos = self getweaponmuzzlepoint();
     v_forward_angles = self getweaponforwarddir();
-    var_a812a69b = var_2ed6f142 + v_forward_angles * 40;
+    var_a812a69b = v_view_pos + v_forward_angles * 40;
     var_a812a69b = getclosestpointonnavmesh( var_a812a69b, 128, 16 );
     
     if ( !isdefined( var_a812a69b ) )
     {
-        var_a812a69b = var_2ed6f142;
+        var_a812a69b = v_view_pos;
     }
     
     s_trace = groundtrace( var_a812a69b + ( 0, 0, 100 ), var_a812a69b + ( 0, 0, -1000 ), 0, undefined, 0 );
@@ -675,7 +675,7 @@ function function_3be93b07( w_flamethrower )
     
     foreach ( ai_zombie in a_ai_zombies )
     {
-        if ( isdefined( ai_zombie sightconetrace( var_2ed6f142, self, v_forward_angles, 29 ) ) && ai_zombie sightconetrace( var_2ed6f142, self, v_forward_angles, 29 ) )
+        if ( isdefined( ai_zombie sightconetrace( v_view_pos, self, v_forward_angles, 29 ) ) && ai_zombie sightconetrace( v_view_pos, self, v_forward_angles, 29 ) )
         {
             if ( !isdefined( var_a85d39a2 ) )
             {

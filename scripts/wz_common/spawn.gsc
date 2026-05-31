@@ -310,7 +310,7 @@ function function_ea62f5af()
     var_a56604c5 = namespace_eb06e24d::get_parachute_kit().lootid;
     var_c9b1d229 = namespace_eb06e24d::function_4a39b434().lootid;
     var_42b02106 = namespace_eb06e24d::get_wingsuit_kit().lootid;
-    var_f8e6b703 = self match_record::get_player_stat( #"hash_ec4aea1a8bbd82" );
+    var_f8e6b703 = self match_record::get_player_stat( #"current_life_index" );
     
     if ( isdefined( var_f8e6b703 ) )
     {

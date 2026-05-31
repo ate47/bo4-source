@@ -19,5 +19,5 @@ DEVBLOCK 0x202
 DEVBLOCK 0x2c2
 # path::function_3c367117@22
 DEVBLOCK 0x36a
-# path::function_aa9bfd9d@22
+# path::debug_draw_path@22
 DEVBLOCK 0x402

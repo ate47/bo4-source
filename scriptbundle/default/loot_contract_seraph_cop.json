@@ -1,16 +1,16 @@
 {
     "contentsdetaileddescincludelist": [
         {
-            "hash_826726a": "localized17#hash_3963c3e923f20726"
+            "hash_619e25922b4aedcf:hash_826726a": "localized17#hash_3963c3e923f20726"
         }
     ],
     "contracticon": "image#hash_58fad9d8c3565ebc",
-    "hash_d0100eab": 1,
-    "relateditemname": "localized17#hash_3b87d7eb92a261aa",
+    "hash_202e3311080f8de3:hash_d0100eab": 1,
+    "relateditemname": "localized17#heroes/enforcer",
     "contracttitle": "localized17#hash_3963c3e923f20726",
     "name": "loot_contract_seraph_cop",
     "contractdescription": "localized17#hash_2b74684c4562d5ef",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_20768a52ba1603b4",
-    "hash_e08fc162": "localized17#hash_6cd16258087119d6"
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_20768a52ba1603b4",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_6cd16258087119d6"
 }

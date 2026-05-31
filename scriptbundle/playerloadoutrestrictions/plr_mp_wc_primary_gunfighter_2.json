@@ -1,15 +1,15 @@
 {
-    "hash_ab1984e9": 0,
-    "hash_934131b6": 0,
+    "hash_12a472d9855f06c:hash_ab1984e9": 0,
+    "hash_9a900bd76ad6bc3:hash_934131b6": 0,
     "configstringfiletype": "scriptbundle",
     "numprimaryweapons": 0,
-    "hash_882b6b71": 0,
+    "hash_251dc0368004a45c:hash_882b6b71": 0,
     "type": "playerloadoutrestrictions",
-    "hash_355c3581": 1,
+    "hash_3f6ded0dcdab2217:hash_355c3581": 1,
     "name": "plr_mp_wc_primary_gunfighter_2",
-    "hash_9bb0ceab": "#bonuscard_primary_gunfighter_2",
-    "hash_25a22f4": 0,
-    "hash_cd3db98c": 0,
-    "hash_a2ef45f8": 0,
-    "hash_c3fc8c73": 0
+    "wildcarditemname": "#bonuscard_primary_gunfighter_2",
+    "hash_5a656244c65797b1:hash_25a22f4": 0,
+    "hash_5a696244c65b8088:hash_cd3db98c": 0,
+    "hash_5a6c6a44c65dc3f7:hash_a2ef45f8": 0,
+    "hash_6e35942820ad33b8:hash_c3fc8c73": 0
 }

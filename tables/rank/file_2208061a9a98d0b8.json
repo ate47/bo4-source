@@ -3,18 +3,16 @@
     "shortNameRef": "#hash_18f4f0fb136da8ee",
     "fullNameRef": "#hash_498da5326e2c6ec7",
     "ingameNameRef": "#hash_293c5db1367379b7",
-    "iconName": "#hash_75c802a2fc2f888c",
-    "iconNameLarge": "#hash_2dde4e5695a66618",
     "level": 18,
     "minXp": 156800,
     "maxXp": 172800,
+    "icon": "#ui_icon_rank_mp_level18",
+    "iconLarge": "#ui_icon_rank_mp_level18_large",
     "rewards": [
         {
-            "prestigeTarget": "#",
             "rewardName": "#talent_deadsilence"
         },
         {
-            "prestigeTarget": "#",
             "rewardName": "#counteruav"
         }
     ]

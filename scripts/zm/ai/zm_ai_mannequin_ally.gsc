@@ -7,9 +7,9 @@
 #using scripts\zm_common\zm_powerups;
 #using scripts\zm_common\zm_spawner;
 
-#namespace namespace_ca8676a3;
+#namespace zm_ai_mannequin_ally;
 
-// Namespace namespace_ca8676a3/namespace_ca8676a3
+// Namespace zm_ai_mannequin_ally/zm_ai_mannequin_ally
 // Params 0, eflags: 0x2
 // Checksum 0x4041b5ee, Offset: 0x110
 // Size: 0x44
@@ -18,7 +18,7 @@ function autoexec __init__system__()
     system::register( #"hash_217942543a3e669b", &__init__, &__main__, undefined );
 }
 
-// Namespace namespace_ca8676a3/namespace_ca8676a3
+// Namespace zm_ai_mannequin_ally/zm_ai_mannequin_ally
 // Params 0
 // Checksum 0xd32c139b, Offset: 0x160
 // Size: 0x7e
@@ -29,7 +29,7 @@ function __init__()
     level.var_af29d768 = &function_80bc397d;
 }
 
-// Namespace namespace_ca8676a3/namespace_ca8676a3
+// Namespace zm_ai_mannequin_ally/zm_ai_mannequin_ally
 // Params 0
 // Checksum 0x80f724d1, Offset: 0x1e8
 // Size: 0x4
@@ -38,7 +38,7 @@ function __main__()
     
 }
 
-// Namespace namespace_ca8676a3/namespace_ca8676a3
+// Namespace zm_ai_mannequin_ally/zm_ai_mannequin_ally
 // Params 0, eflags: 0x4
 // Checksum 0x957bdda7, Offset: 0x1f8
 // Size: 0x9c
@@ -56,7 +56,7 @@ function private function_10c92445()
     }
 }
 
-// Namespace namespace_ca8676a3/namespace_ca8676a3
+// Namespace zm_ai_mannequin_ally/zm_ai_mannequin_ally
 // Params 1, eflags: 0x4
 // Checksum 0xcbe69eda, Offset: 0x2a0
 // Size: 0x34
@@ -65,7 +65,7 @@ function private function_188e5077( angles )
     self thread animation::play( "ai_t8_zm_mannequin_ally_stn_exposed_revive", self, angles, 1 );
 }
 
-// Namespace namespace_ca8676a3/namespace_ca8676a3
+// Namespace zm_ai_mannequin_ally/zm_ai_mannequin_ally
 // Params 2
 // Checksum 0x7adc5e21, Offset: 0x2e0
 // Size: 0x84
@@ -77,7 +77,7 @@ function function_65ed0370( origin, angles )
     self animation::play( "ai_t8_zm_mannequin_ally_intro" );
 }
 
-// Namespace namespace_ca8676a3/namespace_ca8676a3
+// Namespace zm_ai_mannequin_ally/zm_ai_mannequin_ally
 // Params 12
 // Checksum 0x36dc1b6a, Offset: 0x370
 // Size: 0x1c6
@@ -124,7 +124,7 @@ function function_f1be5640( inflictor, attacker, damage, flags, meansofdeath, we
     return n_base_damage;
 }
 
-// Namespace namespace_ca8676a3/namespace_ca8676a3
+// Namespace zm_ai_mannequin_ally/zm_ai_mannequin_ally
 // Params 0, eflags: 0x4
 // Checksum 0x5d9fd1d6, Offset: 0x540
 // Size: 0x9c

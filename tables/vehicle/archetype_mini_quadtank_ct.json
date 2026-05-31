@@ -1,0 +1,47 @@
+{
+    "name": "#archetype_mini_quadtank_ct",
+    "type": "tank",
+    "scriptVehicleType": "amws",
+    "scoreType": "_amws",
+    "playerDrivenVersion": "archetype_mini_quadtank_mp_player",
+    "cameraTag": "tag_driver",
+    "archeType": "#amws",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "scriptBundleSettings": "#miniquadtanksettings_ct",
+    "shrapnelSettings": "#default_shrapnel_settings",
+    "deathFxTag": "tag_origin",
+    "lightFx": [
+        "#killstreaks/fx_agr_vlight"
+    ],
+    "lightFxTag": [
+        "tag_origin"
+    ],
+    "driverHideTag": "tag_pov_hide",
+    "driverOtherHideTags": [
+        "tag_armored_bib_rotate_animate",
+        "tag_armored_bib_slide_animate"
+    ],
+    "skidSpeedMin": 15,
+    "skidSpeedMax": 80,
+    "peelSpeedMax": 600,
+    "model": "#hash_4ddae52ce1f1f0a5",
+    "deathModel": "#hash_6b5019f0e80e1ffd",
+    "enemyModel": "#hash_1c263f69a281d36b",
+    "compassIconMaterial": "#compass_talon",
+    "animStateMachine": "#hash_d2b29e63b9a5f25",
+    "animSelectorTable": "#hash_d2b40e63b9a863a",
+    "animMappingTable": "#hash_1dfbd744351a4310",
+    "vehicleFootstepTable": "#hash_d1186ee65b16e0c",
+    "steerAxisName": "AXIS_LSTICK",
+    "gasAxisName": "AXIS_LSTICK",
+    "attackButtonName": "BUTTON_RTRIG",
+    "attackSecondaryButtonName": "BUTTON_RTRIG",
+    "rumbletype": "tank_rumble",
+    "bundle": {
+        "healthpoolsize": 650,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 2
+    }
+}

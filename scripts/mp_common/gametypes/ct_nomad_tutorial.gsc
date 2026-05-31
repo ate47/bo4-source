@@ -1090,11 +1090,11 @@ function function_76739a65()
     e_player thread ct_utils::function_68848e5( "ultimate_turret" );
     e_player thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_KillToEarnNomadKS" );
     e_player ct_utils::function_80bf685b( 0 );
-    level.var_a934617 = [];
-    level.var_a934617[ level.var_a934617.size ] = struct::get( "s_ks_righ_path1", "targetname" );
-    level.var_a934617[ level.var_a934617.size ] = struct::get( "s_ks_righ_path2", "targetname" );
-    level.var_a934617[ level.var_a934617.size ] = struct::get( "s_ks_left_path1", "targetname" );
-    level.var_a934617[ level.var_a934617.size ] = struct::get( "s_ks_left_path2", "targetname" );
+    level.a_s_paths = [];
+    level.a_s_paths[ level.a_s_paths.size ] = struct::get( "s_ks_righ_path1", "targetname" );
+    level.a_s_paths[ level.a_s_paths.size ] = struct::get( "s_ks_righ_path2", "targetname" );
+    level.a_s_paths[ level.a_s_paths.size ] = struct::get( "s_ks_left_path1", "targetname" );
+    level.a_s_paths[ level.a_s_paths.size ] = struct::get( "s_ks_left_path2", "targetname" );
     level.n_path_index = 0;
     
     while ( !( isdefined( e_player.var_d5d10814 ) && e_player.var_d5d10814 ) )
@@ -1493,8 +1493,8 @@ function function_432f35f8( v_obj )
 function function_e19de01()
 {
     str_name = "s_nomad_easy_enemy_" + level.var_ad7c0539;
-    var_40118c33 = struct::get_array( str_name, "targetname" );
-    level thread ct_bots::activate_bots( var_40118c33.size, #"axis" );
+    a_s_spawn_loc = struct::get_array( str_name, "targetname" );
+    level thread ct_bots::activate_bots( a_s_spawn_loc.size, #"axis" );
 }
 
 // Namespace ct_nomad_tutorial/ct_nomad_tutorial
@@ -1829,10 +1829,10 @@ function function_54f2fd97( b_keyline )
     
     self setorigin( s_loc.origin );
     self setplayerangles( s_loc.angles );
-    s_path = level.var_a934617[ level.n_path_index ];
+    s_path = level.a_s_paths[ level.n_path_index ];
     level.n_path_index++;
     
-    if ( level.n_path_index >= level.var_a934617.size )
+    if ( level.n_path_index >= level.a_s_paths.size )
     {
         level.n_path_index = 0;
     }
@@ -1913,12 +1913,12 @@ function function_e8009771()
     while ( true )
     {
         waitresult = level waittill( #"tripwire_detonation" );
-        var_2249999 = waitresult.entity;
+        e_soldier = waitresult.entity;
         wait 0.1;
         
-        if ( isalive( var_2249999 ) )
+        if ( isalive( e_soldier ) )
         {
-            var_2249999 thread ct_utils::function_3e0767e2( 0 );
+            e_soldier thread ct_utils::function_3e0767e2( 0 );
             level flag::set( "tripwire_kill" );
             level notify( #"tripwire_kill" );
         }

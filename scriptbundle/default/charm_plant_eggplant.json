@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_eggplant",
-    "hash_ff3063df": "model#",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_eggplant",
     "name": "charm_plant_eggplant",
     "displayname": "localized17#hash_2bfc921caac510fb",
     "icon": "ui_icon_weapon_charms_eggplant",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_eggplant"
 }

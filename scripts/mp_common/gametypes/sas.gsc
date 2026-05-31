@@ -330,7 +330,7 @@ function onendgame( var_c1e98979 )
 // Params 0
 // Checksum 0x4c0f12e4, Offset: 0x1320
 // Size: 0x28
-function function_bbf3128e()
+function playerhumiliation()
 {
     self endon( #"disconnect", #"death" );
 }

@@ -23,20 +23,20 @@ function init()
     clientfield::register( "scriptmover", "" + #"hash_6e2f9a57d1bc4b6a", 1, 1, "int", &function_e5437696, 0, 0 );
     clientfield::register( "scriptmover", "" + #"ritual_gobo", 1, 1, "int", &function_d598fd7e, 0, 0 );
     clientfield::register( "scriptmover", "" + #"seagull_fx", 1, 1, "int", &seagull_fx, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_7c708a514455bf88", 1, 1, "int", &function_430edc4e, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_592c96b2803d9fd5", 1, 1, "int", &function_a4c0dc8a, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"seagull_blast_fx", 1, 1, "int", &function_430edc4e, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"seagull_disappear_fx", 1, 1, "int", &function_a4c0dc8a, 0, 0 );
     clientfield::register( "scriptmover", "" + #"summoning_key_glow", 1, 1, "int", &summoning_key_glow, 0, 0 );
     clientfield::register( "actor", "" + #"hash_2b6e463a7a482630", 1, 1, "counter", &function_de16ce8a, 0, 0 );
     clientfield::register( "actor", "" + #"hash_29d283d7f747d358", 1, 1, "counter", &function_9c59bce1, 0, 0 );
     clientfield::register( "actor", "" + #"hash_df589cc30f4c7dd", 1, 1, "int", &function_e482b6b8, 0, 0 );
     clientfield::register( "allplayers", "" + #"hash_4f58771e117ee3ee", 1, 1, "int", &function_a596ea8d, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_2928b6d60aaacda6", 1, getminbitcountfornum( 7 ), "int", &function_6357e884, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_670a34b297f8faca", 1, 1, "int", &function_d326587e, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"seagull_glint_fx", 1, 1, "int", &function_d326587e, 0, 0 );
     clientfield::register( "toplayer", "" + #"duffel_prison", 1, 1, "int", &duffel_prison, 0, 0 );
     clientfield::register( "toplayer", "" + #"hash_1ee540924e569350", 1, 1, "int", &function_e83bf3a, 0, 0 );
     clientfield::register( "actor", "" + #"hash_27db1707c088563c", 1, 1, "int", &function_e33e10b9, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_376c030aee1d6ccb", 1, 2, "int", &function_3537ad19, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_201ef69f0a0a5dce", 1, 1, "int", &group_bot_mp, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"corpse_burn_fx", 1, 1, "int", &group_bot_mp, 0, 0 );
     clientfield::register( "allplayers", "" + #"hash_b8601726e1e4a6a", 1, 1, "int", &function_5688631d, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_624198b41791933f", 1, 1, "int", &function_8fe4f2a7, 0, 0 );
     clientfield::register( "toplayer", "" + #"hash_5cab8aa95fc9ea84", 1, 1, "counter", &function_d663c13e, 0, 0 );
@@ -52,9 +52,9 @@ function init()
     level._effect[ #"ritual_gobo" ] = #"hash_140f0bd65e4d70d2";
     level._effect[ #"hash_180f832f742958d6" ] = #"hash_66bb6697a9882bd6";
     level._effect[ #"door_explosion" ] = #"hash_4fba451426ea3bb7";
-    level._effect[ #"hash_1a454ca256b757e6" ] = #"hash_5028a74e717df332";
+    level._effect[ #"seagull_trail_fx" ] = #"hash_5028a74e717df332";
     level._effect[ #"hash_7d5a495febe292e4" ] = #"hash_321ad275226af072";
-    level._effect[ #"hash_592c96b2803d9fd5" ] = #"hash_2a63b961f5ed2417";
+    level._effect[ #"seagull_disappear_fx" ] = #"hash_2a63b961f5ed2417";
     level._effect[ #"hash_6d3840ae2ba64bdd" ] = #"hash_362eac491136c198";
     level._effect[ #"hash_289e42e25063ac26" ] = #"hash_e714752caf5a93d";
     level._effect[ #"hash_287c57e25046e96f" ] = #"hash_e416a52caccc0f4";
@@ -65,7 +65,7 @@ function init()
     level._effect[ #"hash_86cc6dd23ec4ddb" ] = #"hash_152749b3d661b4cd";
     level._effect[ #"hash_6b3f19f4c90a1b75" ] = #"hash_6f69cced7e86cb70";
     level._effect[ #"hash_508055920f327121" ] = #"hash_8c3d3c756b91f54";
-    level._effect[ #"hash_201ef69f0a0a5dce" ] = #"hash_1f06be75e7efc6a2";
+    level._effect[ #"corpse_burn_fx" ] = #"hash_1f06be75e7efc6a2";
     level._effect[ "" + #"hash_3fafd72f00908d53" ] = #"hash_992fe8f8e8dfb1";
     scene::add_scene_func( #"p8_fxanim_zm_esc_blast_afterlife_seagull_ghost_bundle", &function_bbf4268e, "shot_1" );
 }
@@ -207,8 +207,8 @@ function seagull_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fiel
     
     if ( newval )
     {
-        self.var_d1a51444 = util::playfxontag( localclientnum, level._effect[ #"hash_1a454ca256b757e6" ], self, "j_wrist_ri" );
-        self.var_7b2dcfc6 = util::playfxontag( localclientnum, level._effect[ #"hash_1a454ca256b757e6" ], self, "j_wrist_le" );
+        self.var_d1a51444 = util::playfxontag( localclientnum, level._effect[ #"seagull_trail_fx" ], self, "j_wrist_ri" );
+        self.var_7b2dcfc6 = util::playfxontag( localclientnum, level._effect[ #"seagull_trail_fx" ], self, "j_wrist_le" );
         self.n_trail_fx = util::playfxontag( localclientnum, level._effect[ #"hash_7d5a495febe292e4" ], self, "j_spine1" );
         self function_78233d29( #"hash_24cdaac09819f0e", "", "Alpha", 1 );
     }
@@ -279,7 +279,7 @@ function function_430edc4e( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x7a
 function function_a4c0dc8a( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    self.var_a5b517e5 = util::playfxontag( localclientnum, level._effect[ #"hash_592c96b2803d9fd5" ], self, "tag_origin" );
+    self.var_a5b517e5 = util::playfxontag( localclientnum, level._effect[ #"seagull_disappear_fx" ], self, "tag_origin" );
 }
 
 // Namespace paschal/zm_escape_paschal
@@ -626,7 +626,7 @@ function group_bot_mp( localclientnum, oldval, newval, bnewent, binitialsnap, fi
     
     if ( newval == 1 )
     {
-        self.var_f756621f = util::playfxontag( localclientnum, level._effect[ #"hash_201ef69f0a0a5dce" ], self, "tag_origin" );
+        self.var_f756621f = util::playfxontag( localclientnum, level._effect[ #"corpse_burn_fx" ], self, "tag_origin" );
         
         if ( !isdefined( self.var_dae2b711 ) )
         {

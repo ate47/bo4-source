@@ -1,18 +1,18 @@
 {
-    "hash_4dbc4aee": "localized18#hash_6c7060c02cfbede4",
+    "craftingprompt": "localized18#hash_6c7060c02cfbede4",
     "configstringfiletype": "scriptbundle",
     "result": "weapon#thunderstorm_zm",
     "type": "craftblueprint",
-    "hash_e414062": -12,
+    "resultoffsety": -12,
     "component01": "weapon#zitem_red_strike_part_1_zm",
     "component02": "weapon#zitem_red_strike_part_2_zm",
     "component03": "weapon#zitem_red_strike_part_3_zm",
     "name": "zblueprint_red_strike",
     "displayname": "ID Gun",
-    "hash_391591d0": "localized18#hash_791a26a14b97f770",
+    "purchaseprompt": "localized18#hash_791a26a14b97f770",
     "postcraft": "buy_once_then_box",
-    "hash_abd9b2d0": "localized18#hash_791a26a14b97f770",
+    "hash_64869b7d451b2fbe:hash_abd9b2d0": "localized18#hash_791a26a14b97f770",
     "componentcount": 3,
-    "hash_c028dcfe": 1,
-    "hash_318c150c": "section_quests"
+    "hash_6d856d2f8b4a5911:hash_c028dcfe": 1,
+    "inventorysection": "section_quests"
 }

@@ -3,9 +3,9 @@
     "relateditemname": "localized17#weapon/smg_capacity_t8",
     "contracttitle": "localized17#hash_2d85a60f366822d1",
     "name": "loot_contract_space_shuttle",
-    "hash_69b5a265": "core_frontend_smg_capacity_spaceshuttle",
-    "contractdescription": "localized17#hash_7680bf2bc2219eb1",
-    "hash_f15e270f": "#white",
-    "hash_1c057e8c": "image#hash_11e9f2f0cfc349d4",
-    "hash_e08fc162": "localized17#hash_469af5f3adb94023"
+    "hash_572bca0762ce7b9c:hash_69b5a265": "core_frontend_smg_capacity_spaceshuttle",
+    "contractdescription": "localized17#menu/mastercraft",
+    "hash_69014841451a5872:hash_f15e270f": "#white",
+    "hash_6b3de4579d73ceb6:hash_1c057e8c": "image#hash_11e9f2f0cfc349d4",
+    "hash_7883881b5c75bf5e:hash_e08fc162": "localized17#hash_469af5f3adb94023"
 }

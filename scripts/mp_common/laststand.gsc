@@ -306,11 +306,11 @@ function function_5de626dc( var_a1258c6b )
 function function_dc7906e8( einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc )
 {
     self.laststandparams = spawnstruct();
-    self.var_bfc8055f = spawnstruct();
+    self.laststandkillcam = spawnstruct();
     self.laststandparams.einflictor = einflictor;
-    self.var_bfc8055f.var_b5346661 = isdefined( einflictor ) ? einflictor getentitynumber() : -1;
+    self.laststandkillcam.einflictornum = isdefined( einflictor ) ? einflictor getentitynumber() : -1;
     self.laststandparams.attacker = attacker;
-    self.var_bfc8055f.attackernum = isdefined( attacker ) ? attacker getentitynumber() : -1;
+    self.laststandkillcam.attackernum = isdefined( attacker ) ? attacker getentitynumber() : -1;
     self.laststandparams.attackerorigin = attacker.origin;
     
     if ( isplayer( attacker ) )
@@ -357,15 +357,15 @@ function function_67b38e11( einflictor, attacker, idamage, smeansofdeath, weapon
         self.laststandparams = [];
     }
     
-    if ( !isdefined( self.var_bfc8055f ) )
+    if ( !isdefined( self.laststandkillcam ) )
     {
-        self.var_bfc8055f = [];
+        self.laststandkillcam = [];
     }
     
     self.laststandparams.einflictor = einflictor;
-    self.var_bfc8055f.var_b5346661 = isdefined( einflictor ) ? einflictor getentitynumber() : -1;
+    self.laststandkillcam.einflictornum = isdefined( einflictor ) ? einflictor getentitynumber() : -1;
     self.laststandparams.attacker = attacker;
-    self.var_bfc8055f.attackernum = isdefined( attacker ) ? attacker getentitynumber() : -1;
+    self.laststandkillcam.attackernum = isdefined( attacker ) ? attacker getentitynumber() : -1;
     self.laststandparams.idamage = idamage;
     self.laststandparams.smeansofdeath = smeansofdeath;
     self.laststandparams.sweapon = weapon;
@@ -783,7 +783,7 @@ function laststand_bleedout_damage()
 function laststand_bleedout( bleedouttime, var_969fabf4 )
 {
     self endon( #"player_revived", #"player_bleedout", #"death" );
-    self.var_84c0402e = bleedouttime;
+    self.last_bleedout_time = bleedouttime;
     self.bleedout_time = bleedouttime;
     self.var_969fabf4 = var_969fabf4;
     self.var_2d19ce3c = 0;
@@ -898,11 +898,11 @@ function bleed_out()
     
     if ( getdvarint( #"hash_62b8db0428755a32", 1 ) && isplayer( self ) )
     {
-        var_d7e063c = getdvarfloat( #"hash_44de9418bb6289ac", 1.5 );
+        bleed_out_fade_time = getdvarfloat( #"hash_44de9418bb6289ac", 1.5 );
         self playsoundtoplayer( #"hash_11d39dca0f911535", self );
-        self lui::screen_fade( var_d7e063c, 1, 0, "black", 0 );
-        wait var_d7e063c + 0.2;
-        self lui::screen_fade( var_d7e063c, 0, 1, "black", 0 );
+        self lui::screen_fade( bleed_out_fade_time, 1, 0, "black", 0 );
+        wait bleed_out_fade_time + 0.2;
+        self lui::screen_fade( bleed_out_fade_time, 0, 1, "black", 0 );
     }
     
     if ( isdefined( self ) && self.no_respawn !== 1 )
@@ -1356,7 +1356,7 @@ function can_revive( revivee, ignore_touch_checks = 0, height = undefined )
         return false;
     }
     
-    if ( isdefined( level.var_1461fd14 ) && ![[ level.var_1461fd14 ]]( revivee ) )
+    if ( isdefined( level.can_revive_game_module ) && ![[ level.can_revive_game_module ]]( revivee ) )
     {
         return false;
     }
@@ -1674,7 +1674,7 @@ function revive_success( reviver, b_track_stats = 1 )
     self notify( #"player_revived", { #reviver:reviver } );
     self reviveplayer();
     self.var_d887a4ad = undefined;
-    health = getdvarint( #"hash_7036719f41a78d54", 0 );
+    health = getdvarint( #"player_laststandrevivehealth", 0 );
     
     if ( isdefined( reviver ) )
     {

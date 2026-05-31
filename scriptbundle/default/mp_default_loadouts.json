@@ -34,12 +34,12 @@
                     "bonuscard": "#bonuscard_primary_gunfighter"
                 }
             ],
-            "customclassname": "localized17#hash_73bf78bd8d8db95d",
-            "hash_d0c837c7": 3,
-            "hash_d73c4f3b": 5,
+            "customclassname": "localized17#class/breach",
+            "hash_10664c9fcf68e0a6:hash_d0c837c7": 3,
+            "hash_192a309b90f05d8e:hash_d73c4f3b": 5,
             "primary": "#smg_capacity_t8",
-            "hash_aadf0bc9": 2,
-            "hash_38f854e5": 6,
+            "hash_437ed14afa174a5c:hash_aadf0bc9": 2,
+            "list_talents": 6,
             "tacticalgear": "#gear_medicalinjectiongun"
         },
         {
@@ -73,13 +73,13 @@
                     "bonuscard": "#bonuscard_perk_1_greed"
                 }
             ],
-            "customclassname": "localized17#hash_6338674bdead3158",
-            "hash_d0c837c7": 3,
-            "hash_d73c4f3b": 5,
+            "customclassname": "localized17#class/mercenary",
+            "hash_10664c9fcf68e0a6:hash_d0c837c7": 3,
+            "hash_192a309b90f05d8e:hash_d73c4f3b": 5,
             "primary": "#ar_modular_t8",
-            "hash_aadf0bc9": 2,
+            "hash_437ed14afa174a5c:hash_aadf0bc9": 2,
             "secondary": "#pistol_standard_t8",
-            "hash_38f854e5": 6,
+            "list_talents": 6,
             "tacticalgear": "#gear_equipmentcharge"
         },
         {
@@ -113,13 +113,13 @@
                     "attachment": "fmj2"
                 }
             ],
-            "customclassname": "localized17#hash_76fba834032b8fb7",
-            "hash_d0c837c7": 3,
-            "hash_d73c4f3b": 5,
+            "customclassname": "localized17#class/support",
+            "hash_10664c9fcf68e0a6:hash_d0c837c7": 3,
+            "hash_192a309b90f05d8e:hash_d73c4f3b": 5,
             "primary": "#lmg_standard_t8",
-            "hash_aadf0bc9": 1,
+            "hash_437ed14afa174a5c:hash_aadf0bc9": 1,
             "secondary": "#launcher_standard_t8",
-            "hash_38f854e5": 6,
+            "list_talents": 6,
             "tacticalgear": "#gear_armor"
         },
         {
@@ -153,13 +153,13 @@
                     "bonuscard": "#bonuscard_primary_operator_mod"
                 }
             ],
-            "customclassname": "localized17#hash_13262c0a18d54ad0",
-            "hash_d0c837c7": 3,
-            "hash_d73c4f3b": 5,
+            "customclassname": "localized17#class/sentinel",
+            "hash_10664c9fcf68e0a6:hash_d0c837c7": 3,
+            "hash_192a309b90f05d8e:hash_d73c4f3b": 5,
             "primary": "#tr_longburst_t8",
-            "hash_aadf0bc9": 1,
+            "hash_437ed14afa174a5c:hash_aadf0bc9": 1,
             "secondary": "#shotgun_semiauto_t8",
-            "hash_38f854e5": 6,
+            "list_talents": 6,
             "tacticalgear": "#gear_scorestreakcharge"
         },
         {
@@ -198,13 +198,13 @@
                     "bonuscard": "#bonuscard_overkill"
                 }
             ],
-            "customclassname": "localized17#hash_554a0a19e3773c1a",
-            "hash_d0c837c7": 3,
-            "hash_d73c4f3b": 5,
+            "customclassname": "localized17#class/marksman",
+            "hash_10664c9fcf68e0a6:hash_d0c837c7": 3,
+            "hash_192a309b90f05d8e:hash_d73c4f3b": 5,
             "primary": "#sniper_quickscope_t8",
-            "hash_aadf0bc9": 1,
+            "hash_437ed14afa174a5c:hash_aadf0bc9": 1,
             "secondary": "#smg_fastfire_t8",
-            "hash_38f854e5": 5,
+            "list_talents": 5,
             "tacticalgear": "#gear_awareness"
         },
         {
@@ -246,13 +246,13 @@
                     "bonuscard": "#bonuscard_underkill"
                 }
             ],
-            "customclassname": "localized17#hash_639f992affc7299e",
-            "hash_d0c837c7": 3,
-            "hash_d73c4f3b": 3,
+            "customclassname": "localized17#class/hunter",
+            "hash_10664c9fcf68e0a6:hash_d0c837c7": 3,
+            "hash_192a309b90f05d8e:hash_d73c4f3b": 3,
             "primary": "#pistol_revolver_t8",
-            "hash_aadf0bc9": 1,
+            "hash_437ed14afa174a5c:hash_aadf0bc9": 1,
             "secondary": "#shotgun_pump_t8",
-            "hash_38f854e5": 3,
+            "list_talents": 3,
             "tacticalgear": "#gear_medicalinjectiongun",
             "primarygrenade": "#hatchet"
         }
@@ -271,11 +271,11 @@
                 }
             ],
             "customclassname": "localized17#class/slot1",
-            "hash_d0c837c7": 3,
-            "hash_d73c4f3b": 5,
+            "hash_10664c9fcf68e0a6:hash_d0c837c7": 3,
+            "hash_192a309b90f05d8e:hash_d73c4f3b": 5,
             "primary": "#smg_standard_t8",
             "secondary": "#pistol_standard_t8",
-            "hash_38f854e5": 6,
+            "list_talents": 6,
             "tacticalgear": "#gear_medicalinjectiongun"
         },
         {
@@ -291,11 +291,11 @@
                 }
             ],
             "customclassname": "localized17#class/slot2",
-            "hash_d0c837c7": 3,
-            "hash_d73c4f3b": 5,
+            "hash_10664c9fcf68e0a6:hash_d0c837c7": 3,
+            "hash_192a309b90f05d8e:hash_d73c4f3b": 5,
             "primary": "#ar_accurate_t8",
             "secondary": "#pistol_standard_t8",
-            "hash_38f854e5": 6,
+            "list_talents": 6,
             "tacticalgear": "#gear_equipmentcharge"
         },
         {
@@ -311,11 +311,11 @@
                 }
             ],
             "customclassname": "localized17#class/slot3",
-            "hash_d0c837c7": 3,
-            "hash_d73c4f3b": 5,
+            "hash_10664c9fcf68e0a6:hash_d0c837c7": 3,
+            "hash_192a309b90f05d8e:hash_d73c4f3b": 5,
             "primary": "#lmg_standard_t8",
             "secondary": "#launcher_standard_t8",
-            "hash_38f854e5": 6,
+            "list_talents": 6,
             "tacticalgear": "#gear_scorestreakcharge"
         },
         {
@@ -331,11 +331,11 @@
                 }
             ],
             "customclassname": "localized17#class/slot4",
-            "hash_d0c837c7": 3,
-            "hash_d73c4f3b": 5,
+            "hash_10664c9fcf68e0a6:hash_d0c837c7": 3,
+            "hash_192a309b90f05d8e:hash_d73c4f3b": 5,
             "primary": "#tr_powersemi_t8",
             "secondary": "#launcher_standard_t8",
-            "hash_38f854e5": 6,
+            "list_talents": 6,
             "tacticalgear": "#gear_armor"
         },
         {
@@ -351,11 +351,11 @@
                 }
             ],
             "customclassname": "localized17#class/slot5",
-            "hash_d0c837c7": 3,
-            "hash_d73c4f3b": 5,
+            "hash_10664c9fcf68e0a6:hash_d0c837c7": 3,
+            "hash_192a309b90f05d8e:hash_d73c4f3b": 5,
             "primary": "#sniper_powerbolt_t8",
             "secondary": "#pistol_standard_t8",
-            "hash_38f854e5": 5,
+            "list_talents": 5,
             "tacticalgear": "#gear_awareness"
         },
         {
@@ -373,7 +373,7 @@
             "customclassname": "localized17#class/slot6",
             "primary": "#ar_accurate_t8",
             "secondary": "#shotgun_pump_t8",
-            "hash_38f854e5": 3,
+            "list_talents": 3,
             "tacticalgear": "#gear_awareness"
         }
     ],
@@ -388,18 +388,18 @@
             "killstreak": "#helicopter_comlink"
         }
     ],
-    "hash_9027ef1e": "#hash_71dab9659ba194f4",
-    "hash_68c52059": "#hash_71dab7659ba1918e",
-    "hash_b255336c": "#hash_71daba659ba196a7",
-    "hash_55e07a90": "#hash_27b5b2b4f08e4dcb",
-    "hash_7afec4cc": "#hash_71dabb659ba1985a",
-    "hash_326fb3af": "#hash_3de97428b08ef1b3",
-    "hash_67931df5": "#hash_3aae961aff62ddf0",
-    "hash_fafb44c3": "#hash_71daba659ba196a7",
-    "hash_43b5563a": "#hash_41038f141e60fbfc",
+    "hash_2f14396c8d45b312:hash_9027ef1e": "#loot_tags_default_04",
+    "hash_2f143b6c8d45b678:hash_68c52059": "#loot_tags_default_02",
+    "hash_2f143c6c8d45b82b:hash_b255336c": "#hash_71daba659ba196a7",
+    "hash_2f143d6c8d45b9de:hash_55e07a90": "#hash_27b5b2b4f08e4dcb",
+    "hash_2f143e6c8d45bb91:hash_7afec4cc": "#hash_71dabb659ba1985a",
+    "hash_2f143f6c8d45bd44:hash_326fb3af": "#hash_3de97428b08ef1b3",
+    "hash_2f14406c8d45bef7:hash_67931df5": "#hash_3aae961aff62ddf0",
+    "hash_2f14416c8d45c0aa:hash_fafb44c3": "#hash_71daba659ba196a7",
+    "hash_2f14426c8d45c25d:hash_43b5563a": "#hash_41038f141e60fbfc",
     "name": "mp_default_loadouts",
     "sessionmode": "mp",
-    "hash_4f96d17e": 6,
-    "hash_57ed547e": 6,
-    "hash_ebfaaff3": 3
+    "hash_4713f52608cbdd7d:hash_4f96d17e": 6,
+    "hash_4f306720a0d69626:hash_57ed547e": 6,
+    "list_killstreaks": 3
 }

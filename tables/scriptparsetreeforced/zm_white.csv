@@ -29,7 +29,7 @@ server,#scripts/zm/ai/zm_ai_weeping_angel.gsc
 server,#scripts/core_common/ai/archetype_avogadro.gsc
 server,#scripts/zm/ai/zm_ai_avogadro.gsc
 server,#scripts/core_common/ai/archetype_human_exposed.gsc
-server,#script_5eb334a29c814cf2
+server,#scripts/zm/ai/zm_ai_mannequin_ally.gsc
 server,#scripts/zm/zm_hms_util.gsc
 server,#scripts/zm/zm_white_main_quest.gsc
 server,#scripts/zm/zm_white_private_mannequin.gsc

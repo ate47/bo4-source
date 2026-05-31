@@ -2,8 +2,8 @@
     "name": "#ray_gun_mk2_zm",
     "baseWeapon": "#ray_gun_mk2",
     "displayname": "#zmweapon/ray_gun_mk2",
-    "xhash_70": "#ray_gun_mk2",
-    "streamkey": "#hash_45cbfe8397bde34d",
+    "weapon70": "#ray_gun_mk2",
+    "soundbank": "#ray_gun_mk2_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_118c": "tag_flash",
@@ -13,21 +13,38 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.1 1",
+            "0.2 0",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0524 0.9014",
+            "0.1251 0.4004",
+            "0.2517 0.1204",
+            "0.5021 0.0508",
+            "1 0.05"
+        ]
+    ],
     "sound90": "#hash_44f407588f82aa53",
     "firesound": "#hash_179993ed08d61a45",
     "firesoundplayer": "#hash_410808ecd7d123cc",
@@ -44,6 +61,10 @@
     "sound810": "#hash_21cba6ae89a3493c",
     "tunables1": "#ray_gun_mk2_tunables_zm",
     "sharedWeaponSounds": "#hash_b2107e63787b0c3",
+    "tracers": [
+        "#hash_cd33e1ac4ac2df3",
+        "#hash_cd33e1ac4ac2df3"
+    ],
     "projectilemodel": "#tag_flash",
     "viewmodel": [
         "#wpn_t8_zm_raygun_mk2_view_green"

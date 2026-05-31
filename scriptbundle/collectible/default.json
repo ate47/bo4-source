@@ -1,5 +1,5 @@
 {
-    "slotsize": "button:0",
+    "slotsize": "enum:0",
     "configstringfiletype": "scriptbundle",
     "uimodel": "model#",
     "type": "collectible",

@@ -34,7 +34,7 @@ function init()
     level flag::init( #"hash_6e81da82129193f6" );
     level flag::init( #"hash_6a7b24db9087b2eb" );
     level.pablo_npc.var_3e21d491 = struct::get( "s_pap_rock_dropoff" );
-    level.pablo_npc.var_f75b1f16 = [];
+    level.pablo_npc.a_n_interacts = [];
     level.pablo_npc.var_cb3ed98f = [];
     level.pablo_npc.var_cb3ed98f[ 2 ] = { #var_fcab5f41:#"hash_22abfa5a48ecff33", #var_e7b75754:#"hash_22abfa5a48ecff33", #var_c67e664c:1, #var_23d421c1:#"", #n_obj:2 };
     level.pablo_npc.var_cb3ed98f[ 3 ] = { #var_fcab5f41:#"", #var_e7b75754:#"hash_6eb46d1457a1406a", #var_23d421c1:#"hash_5ec5a17bd8bad06c", #n_obj:1 };
@@ -192,7 +192,7 @@ function private function_57c115a8()
     
     while ( true )
     {
-        if ( self.isspeaking == 0 && self.var_f75b1f16.size > 0 && zm_hms_util::any_player_in_zone( var_de23a374 ) && !zm_hms_util::any_player_in_zone( "lighthouse_level_4" ) )
+        if ( self.isspeaking == 0 && self.a_n_interacts.size > 0 && zm_hms_util::any_player_in_zone( var_de23a374 ) && !zm_hms_util::any_player_in_zone( "lighthouse_level_4" ) )
         {
             str_nag = self function_e81ee0e3();
             
@@ -227,9 +227,9 @@ function private function_57c115a8()
 // Size: 0x82
 function private function_e81ee0e3()
 {
-    for ( i = 0; i < self.var_f75b1f16.size ; i++ )
+    for ( i = 0; i < self.a_n_interacts.size ; i++ )
     {
-        var_4ad2924d = self.var_f75b1f16[ i ];
+        var_4ad2924d = self.a_n_interacts[ i ];
         
         if ( isdefined( self.var_cb3ed98f[ var_4ad2924d ].var_23d421c1 ) )
         {
@@ -246,9 +246,9 @@ function private function_e81ee0e3()
 // Size: 0x74
 function private function_17440011()
 {
-    for ( i = 0; i < self.var_f75b1f16.size ; i++ )
+    for ( i = 0; i < self.a_n_interacts.size ; i++ )
     {
-        var_4ad2924d = self.var_f75b1f16[ i ];
+        var_4ad2924d = self.a_n_interacts[ i ];
         
         if ( isdefined( self.var_cb3ed98f[ var_4ad2924d ].var_f26e362 ) )
         {
@@ -293,17 +293,17 @@ function function_3f9e02b8( n_pick_up, str_hint, var_306b9dd6, func_interact, fu
 // Size: 0xf2
 function function_d83490c5( n_quest )
 {
-    if ( !isdefined( level.pablo_npc.var_f75b1f16 ) )
+    if ( !isdefined( level.pablo_npc.a_n_interacts ) )
     {
-        level.pablo_npc.var_f75b1f16 = [];
+        level.pablo_npc.a_n_interacts = [];
     }
-    else if ( !isarray( level.pablo_npc.var_f75b1f16 ) )
+    else if ( !isarray( level.pablo_npc.a_n_interacts ) )
     {
-        level.pablo_npc.var_f75b1f16 = array( level.pablo_npc.var_f75b1f16 );
+        level.pablo_npc.a_n_interacts = array( level.pablo_npc.a_n_interacts );
     }
     
-    level.pablo_npc.var_f75b1f16[ level.pablo_npc.var_f75b1f16.size ] = n_quest;
-    level.pablo_npc.var_f75b1f16 = array::sort_by_value( level.pablo_npc.var_f75b1f16, 1 );
+    level.pablo_npc.a_n_interacts[ level.pablo_npc.a_n_interacts.size ] = n_quest;
+    level.pablo_npc.a_n_interacts = array::sort_by_value( level.pablo_npc.a_n_interacts, 1 );
 }
 
 // Namespace zm_orange_pablo/zm_orange_pablo
@@ -312,8 +312,8 @@ function function_d83490c5( n_quest )
 // Size: 0x6a
 function function_6aaeff92( n_quest )
 {
-    arrayremovevalue( level.pablo_npc.var_f75b1f16, n_quest );
-    level.pablo_npc.var_f75b1f16 = array::sort_by_value( level.pablo_npc.var_f75b1f16, 1 );
+    arrayremovevalue( level.pablo_npc.a_n_interacts, n_quest );
+    level.pablo_npc.a_n_interacts = array::sort_by_value( level.pablo_npc.a_n_interacts, 1 );
 }
 
 // Namespace zm_orange_pablo/zm_orange_pablo
@@ -415,7 +415,7 @@ function private function_12d23d57()
 // Size: 0x23e
 function private function_39614d4b()
 {
-    arrayremovevalue( self.var_f75b1f16, self.var_df3d62aa );
+    arrayremovevalue( self.a_n_interacts, self.var_df3d62aa );
     s_info = level.pablo_npc.var_cb3ed98f[ level.pablo_npc.var_df3d62aa ];
     level.var_f45a0bfd.is_moving = 1;
     
@@ -501,9 +501,9 @@ function private function_1dc9b29a()
     
     while ( true )
     {
-        if ( self.var_f75b1f16.size > 0 && zm_hms_util::any_player_in_zone( "lighthouse_level_4" ) )
+        if ( self.a_n_interacts.size > 0 && zm_hms_util::any_player_in_zone( "lighthouse_level_4" ) )
         {
-            self.var_df3d62aa = self.var_f75b1f16[ getfirstarraykey( self.var_f75b1f16 ) ];
+            self.var_df3d62aa = self.a_n_interacts[ getfirstarraykey( self.a_n_interacts ) ];
             s_info = self.var_cb3ed98f[ self.var_df3d62aa ];
             self.var_3e21d491.s_info = s_info;
             
@@ -590,14 +590,14 @@ function function_e435077()
     
     while ( var_a3992d9c < 10 )
     {
-        var_a10acf3c = zm_zonemgr::get_players_in_zone( "lighthouse_level_4", 1 );
+        a_e_valid_players = zm_zonemgr::get_players_in_zone( "lighthouse_level_4", 1 );
         var_23cd9374 = 0;
         
-        if ( self.var_f75b1f16.size > 0 && var_a10acf3c.size > 0 )
+        if ( self.a_n_interacts.size > 0 && a_e_valid_players.size > 0 )
         {
             if ( isdefined( s_info.func_hint ) )
             {
-                foreach ( e_player in var_a10acf3c )
+                foreach ( e_player in a_e_valid_players )
                 {
                     if ( level [[ s_info.func_hint ]]( e_player ) )
                     {

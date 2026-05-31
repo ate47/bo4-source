@@ -1,8 +1,8 @@
 {
     "name": "#gadget_smart_cover_wz",
     "baseWeapon": "#gadget_smart_cover",
-    "displayname": "#hash_3bf437dd2e981df1",
-    "streamkey": "#hash_3025e159307901ad",
+    "displayname": "#smartcover/name",
+    "soundbank": "#gadget_smart_cover_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -11,24 +11,40 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "WARZONE",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": true,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
     "gadgetreadysoundplayer": "#hash_26a44e9e76150c7f",
     "sound660": "#uin_unavailable_charging",
     "tunables1": "#gadget_smart_cover_tunables_wz",
+    "statusEffects": [
+        {
+            "effect": "#microwave_dot",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        }
+    ],
     "shrapnelsettings": "#default_shrapnel_settings",
     "#hash_2e4a8800": "#gadget_smart_cover_scoreevents",
     "#hash_22082a57": "#wpn_t8_eqp_smartcover_cover_blue_fac_10",

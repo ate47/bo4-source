@@ -1,0 +1,286 @@
+{
+    "name": "#hash_254df1f29bb34c9f",
+    "ddlDef": "#hash_78215c802e31884f",
+    "unk18": 0,
+    "unk19": 1,
+    "unk1a": 0,
+    "unk1b": 0,
+    "unk1c": 1,
+    "rate": 1,
+    "fields": [
+        {
+            "name": "#hash_1fa61848c108ccd",
+            "arraySize": 8,
+            "members": {
+                "name": "#hash_6b847dfe653f9716",
+                "members": [
+                    {
+                        "name": "#addr",
+                        "scrName": "#addr",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hash_5327ec0dac3839c4",
+                        "scrName": "#hash_9a23896b",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hostname",
+                        "scrName": "#hostname",
+                        "type": "STRING",
+                        "len": 32
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#telemetry",
+            "arraySize": 0,
+            "members": {
+                "name": "#telemetry_header",
+                "members": [
+                    {
+                        "name": "#game_session_id",
+                        "scrName": "#hash_50f7aa03",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#action_type",
+                        "scrName": "#action_type",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#title_id",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#build_version",
+                        "scrName": "#build_version",
+                        "type": "STRING",
+                        "len": 32
+                    },
+                    {
+                        "name": "#platform",
+                        "scrName": "#platform",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#source_version",
+                        "scrName": "#source_version",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_56a1b6d783aa7a25",
+                        "scrName": "#hash_ee3228f8",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#changelist_number",
+                        "scrName": "#changelist_number",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#local_addr_array",
+            "arraySize": 8,
+            "members": {
+                "name": "#hash_2f7ae21344d86dba",
+                "members": [
+                    {
+                        "name": "#hash_1a03a43c6642e4d6",
+                        "scrName": "#hash_d74784cd",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_585f73b9a8dbaec2",
+                        "scrName": "#hash_21c90bb",
+                        "type": "UINT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#header",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_6a65101a136eab93",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#user_id",
+                        "type": "UINT64",
+                        "s111u20": true
+                    },
+                    {
+                        "name": "#lobby_id",
+                        "scrName": "#lobby_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#title_id",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hash_426fb7404d1fbf32",
+                        "scrName": "#hash_86d5a83c",
+                        "type": "INT64"
+                    },
+                    {
+                        "name": "#hash_6bdd7ebe59310aa2",
+                        "scrName": "#hash_b8bfa824",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#client",
+            "arraySize": 0,
+            "members": {
+                "name": "#client_header",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#user_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#user_session_id",
+                        "scrName": "#hash_e004f74d",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#uno_id",
+                        "scrName": "#uno_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#hash_78a43a2161d0c844",
+            "arraySize": 0,
+            "members": {
+                "name": "#hash_4faa964964a05e35",
+                "members": [
+                    {
+                        "name": "#hash_fc6534eb8b0b9e5",
+                        "scrName": "#hash_1530e5e0",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#result",
+                        "scrName": "#result",
+                        "type": "INT8"
+                    },
+                    {
+                        "name": "#duration_ms",
+                        "scrName": "#duration_ms",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#hash_6000a3f7b99ebc4b",
+                        "scrName": "#hash_b9e1a45b",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        }
+    ],
+    "unk60": [
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_855c9a40dc060cf",
+                "s3u10": "#hash_2",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    0
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_775a1eb90e25df27",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    0,
+                    5,
+                    4
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_5509b91edf99f9a4",
+                "s3u10": "#hash_6",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    2,
+                    3,
+                    9
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_415a3e8b41b48599",
+                "s3u10": "#hash_4",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_a",
+                "unk28": [
+                    2,
+                    3,
+                    5
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_68cc9f8f64640d09",
+                "s3u10": "#hash_7",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2,
+                    3
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_7b52e3919e2a5b79",
+                "s3u10": "#hash_9",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2
+                ]
+            }
+        }
+    ]
+}

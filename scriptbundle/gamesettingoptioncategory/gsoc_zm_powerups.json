@@ -1,8 +1,8 @@
 {
     "configstringfiletype": "scriptbundle",
-    "hash_ce9b2d06": "gsol_zm_powerups",
+    "hash_1ac203d32950d429:hash_ce9b2d06": "gsol_zm_powerups",
     "type": "gamesettingoptioncategory",
     "name": "gsoc_zm_powerups",
-    "hash_dea17465": "localized17#hash_40c3c9f045a1912d",
-    "hash_608158f2": "localized17#hash_32a451af7dd31b3a"
+    "hash_48907aa9f3779b44:hash_dea17465": "localized17#hash_40c3c9f045a1912d",
+    "hash_548d88758c193892:hash_608158f2": "localized17#menu/powerups_caps"
 }

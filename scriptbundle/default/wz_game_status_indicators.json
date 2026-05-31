@@ -16,12 +16,12 @@
             "indicator": "playersspectating"
         }
     ],
-    "hash_e41e73bc": "image#uie_ui_icon_wz_hud_portal_lives_left",
-    "hash_7fb0fb2a": 5,
+    "hash_318a55459e36d8ed:hash_e41e73bc": "image#uie_ui_icon_wz_hud_portal_lives_left",
+    "hash_32149550ee396b7a:hash_7fb0fb2a": 5,
     "name": "wz_game_status_indicators",
-    "hash_64c41c9": "image#uie_ui_hud_wz_hud_core_icon_lives",
+    "hash_481b6af3b07a67cb:hash_64c41c9": "image#uie_ui_hud_wz_hud_core_icon_lives",
     "iconcleanups": "image#uie_ui_icon_wz_hud_cleanup",
     "iconcash": "image#ui_icon_wz_hud_cash",
-    "hash_41b27c8f": "image#uie_ui_hud_wz_hud_core_icon_kills",
-    "hash_7a5e8f79": "image#uie_ui_hud_wz_hud_core_spectate_eyeball"
+    "iconkills": "image#uie_ui_hud_wz_hud_core_icon_kills",
+    "hash_7ae8cb6b532d4e5a:hash_7a5e8f79": "image#uie_ui_hud_wz_hud_core_spectate_eyeball"
 }

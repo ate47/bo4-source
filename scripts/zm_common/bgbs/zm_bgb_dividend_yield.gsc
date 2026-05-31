@@ -29,7 +29,7 @@ function __init__()
     clientfield::register( "allplayers", "" + #"hash_11a25fb3db96fc2d", 1, 1, "int" );
     clientfield::register( "toplayer", "" + #"hash_31b61c511ced94d7", 1, 1, "int" );
     bgb::register( #"zm_bgb_dividend_yield", "time", 300, &enable, &disable, undefined, undefined );
-    bgb::function_c2721e81( #"zm_bgb_dividend_yield", &add_to_player_score_override, 1 );
+    bgb::register_add_to_player_score_override( #"zm_bgb_dividend_yield", &add_to_player_score_override, 1 );
 }
 
 // Namespace zm_bgb_dividend_yield/zm_bgb_dividend_yield

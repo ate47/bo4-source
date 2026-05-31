@@ -1,0 +1,393 @@
+{
+    "name": "#hash_534335e58349b6d1",
+    "unk28": "#zmattacks",
+    "ddlDef": "#hash_b8d2d9b2c5e6bc5",
+    "unk18": 1,
+    "unk19": 1,
+    "unk1a": 1,
+    "unk1b": 0,
+    "unk1c": 0,
+    "rate": 1,
+    "fields": [
+        {
+            "name": "#telemetry",
+            "arraySize": 0,
+            "members": {
+                "name": "#telemetry_header",
+                "members": [
+                    {
+                        "name": "#game_session_id",
+                        "scrName": "#hash_50f7aa03",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#action_type",
+                        "scrName": "#action_type",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#title_id",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#build_version",
+                        "scrName": "#build_version",
+                        "type": "STRING",
+                        "len": 32
+                    },
+                    {
+                        "name": "#platform",
+                        "scrName": "#platform",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#source_version",
+                        "scrName": "#source_version",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_56a1b6d783aa7a25",
+                        "scrName": "#hash_ee3228f8",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#changelist_number",
+                        "scrName": "#changelist_number",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#match",
+            "arraySize": 0,
+            "members": {
+                "name": "#match_header",
+                "members": [
+                    {
+                        "name": "#lobby_id",
+                        "scrName": "#lobby_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#hash_c05315ddb26eb93",
+                        "scrName": "#hash_f81804cf",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#match_id",
+                        "scrName": "#match_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#client",
+            "arraySize": 0,
+            "members": {
+                "name": "#client_header",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#user_id",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#user_session_id",
+                        "scrName": "#hash_e004f74d",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#uno_id",
+                        "scrName": "#uno_id",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        }
+    ],
+    "members": [
+        {
+            "name": "#attackerid",
+            "scrName": "#attackerid",
+            "type": "INT32"
+        },
+        {
+            "name": "#attackeranimname",
+            "scrName": "#hash_3b40bee",
+            "type": "STRING",
+            "len": 128
+        },
+        {
+            "name": "#downed",
+            "scrName": "#downed",
+            "type": "INT32"
+        },
+        {
+            "name": "#victimanimname",
+            "scrName": "#hash_f3e621df",
+            "type": "STRING",
+            "len": 128
+        },
+        {
+            "name": "#victimignoreme",
+            "scrName": "#hash_b318ef7a",
+            "type": "INT32"
+        },
+        {
+            "name": "#downs",
+            "scrName": "#downs",
+            "type": "INT32"
+        },
+        {
+            "name": "#victimmaxsightdistsqrd",
+            "scrName": "#hash_f8a2358b",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#victimfovcos",
+            "scrName": "#hash_4d5bb08b",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#victimy",
+            "scrName": "#victimy",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#victimx",
+            "scrName": "#victimx",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#victimz",
+            "scrName": "#victimz",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#victimname",
+            "scrName": "#victimname",
+            "type": "STRING",
+            "len": 48
+        },
+        {
+            "name": "#aivictimcombatmode",
+            "scrName": "#hash_e6a5332b",
+            "type": "STRING",
+            "len": 64
+        },
+        {
+            "name": "#attackertype",
+            "scrName": "#attackertype",
+            "type": "STRING",
+            "len": 64
+        },
+        {
+            "name": "#attackerz",
+            "scrName": "#attackerz",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#attackerx",
+            "scrName": "#attackerx",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#attackery",
+            "scrName": "#attackery",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#hash_37d6ea7634d791c8",
+            "scrName": "#hash_6116a39c",
+            "type": "STRING",
+            "len": 64
+        },
+        {
+            "name": "#attackerfovcos",
+            "scrName": "#hash_7aafb2d3",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#victimignoreall",
+            "scrName": "#hash_dec66cf0",
+            "type": "INT32"
+        },
+        {
+            "name": "#victimtype",
+            "scrName": "#victimtype",
+            "type": "STRING",
+            "len": 64
+        },
+        {
+            "name": "#attackerweapon",
+            "scrName": "#attackerweapon",
+            "type": "XHASH"
+        },
+        {
+            "name": "#damagetype",
+            "scrName": "#damagetype",
+            "type": "STRING",
+            "len": 64
+        },
+        {
+            "name": "#attackermaxsightdistsqrd",
+            "scrName": "#hash_e80b2895",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#victimid",
+            "scrName": "#victimid",
+            "type": "INT32"
+        },
+        {
+            "name": "#attackerignoreme",
+            "scrName": "#hash_599f95b5",
+            "type": "INT32"
+        },
+        {
+            "name": "#damagelocation",
+            "scrName": "#damagelocation",
+            "type": "STRING",
+            "len": 64
+        },
+        {
+            "name": "#attackername",
+            "scrName": "#attackername",
+            "type": "STRING",
+            "len": 48
+        },
+        {
+            "name": "#gametime",
+            "scrName": "#gametime",
+            "type": "INT32"
+        },
+        {
+            "name": "#death",
+            "scrName": "#death",
+            "type": "INT32"
+        },
+        {
+            "name": "#attackerignoreall",
+            "scrName": "#hash_b88cee53",
+            "type": "INT32"
+        },
+        {
+            "name": "#roundnumber",
+            "scrName": "#roundnumber",
+            "type": "UINT8"
+        },
+        {
+            "name": "#damage",
+            "scrName": "#damage",
+            "type": "INT32"
+        }
+    ],
+    "unk60": [
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_855c9a40dc060cf",
+                "s3u10": "#hash_2",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    0
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_775a1eb90e25df27",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    0,
+                    5,
+                    4
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_290c784cb9dce798",
+                "s3u10": "#hash_6",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_f0",
+                "unk28": [
+                    2,
+                    3,
+                    9
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_415a3e8b41b48599",
+                "s3u10": "#hash_4",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_a",
+                "unk28": [
+                    2,
+                    3,
+                    5
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_68cc9f8f64640d09",
+                "s3u10": "#hash_7",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2,
+                    3
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_7b52e3919e2a5b79",
+                "s3u10": "#hash_9",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_9e7f226bd2c2c2c",
+                "s3u10": "#hash_8",
+                "s3u18": "#hash_400",
+                "unk28": [
+                    8
+                ]
+            }
+        }
+    ]
+}

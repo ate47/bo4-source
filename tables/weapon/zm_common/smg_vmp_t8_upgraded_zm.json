@@ -3,8 +3,8 @@
     "baseWeapon": "#smg_vmp_t8_upgraded",
     "displayname": "#zmweapon/smg_vmp_upgraded",
     "xhash_60": "#hash_41283033897cbf0a",
-    "xhash_70": "#smg_vmp_t8",
-    "streamkey": "#hash_5ae6709fa8a37d16",
+    "weapon70": "#smg_vmp_t8",
+    "soundbank": "#smg_vmp_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -17,21 +17,42 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.03 0.95",
+            "0.1 0.5",
+            "0.25 0.25",
+            "0.5 0.01",
+            "0.75 0.005",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.03 1",
+            "0.1 0.6",
+            "0.2 0.35",
+            "0.3 0.1",
+            "0.375 0.02",
+            "1 0"
+        ]
+    ],
     "firesounddistant": "#hash_1fa3c110880b1635",
     "sound140": "#hash_68994a7f75995563",
     "sound150": "#hash_35be537f591caa3e",
@@ -60,7 +81,11 @@
         "#hash_b985dd251c787ed1"
     ],
     "sharedWeaponSounds": "#smg",
-    "ballisticDesc": "#hash_fa8de762a01fac90",
+    "ballisticDesc": "#9mm_fmj",
+    "tracers": [
+        "#hash_a6d5c1a903fba6f4",
+        "#hash_e0e8c9de7086f843"
+    ],
     "viewmodel": [
         "#wpn_t8_loot_smg_vmp_view"
     ],
@@ -87,8 +112,8 @@
     "fx_f90": "#hash_ccfe9475f47d6ca2",
     "fx_f98": "#hash_a24ed66be5768225",
     "fx_fa0": "#hash_f640e06584066fc4",
-    "normalImpactFX": "#hash_e1b4c700060ee40c",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#bullet_exit"
 }

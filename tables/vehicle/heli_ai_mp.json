@@ -1,0 +1,27 @@
+{
+    "name": "#heli_ai_mp",
+    "type": "helicopter",
+    "scoreType": "none",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#veh_t8_drone_hunter_mp_light",
+    "enemyModel": "#veh_t8_drone_hunter_mp_dark",
+    "soundDef": "#hash_4cf37bb05a19f37d",
+    "compassIconMaterial": "#hud_anim_cobra",
+    "steerAxisName": "AXIS_LSTICK",
+    "gasButtonName": "BUTTON_LTRIG",
+    "reverseBrakeButtonName": "BUTTON_B",
+    "handBrakeButtonName": "BUTTON_B",
+    "attackButtonName": "BUTTON_RTRIG",
+    "attackSecondaryButtonName": "BUTTON_RSHLDR",
+    "bundle": {
+        "healthpoolsize": 650,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 2
+    }
+}

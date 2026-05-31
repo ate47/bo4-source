@@ -1,5 +1,41 @@
 {
-    "name": "#default_emblems",
     "nameStr": "default_emblems",
-    "ddl": "#gamedata/ddl/generated/emblem.ddl"
+    "name": "#default_emblems",
+    "ddlPath": "#gamedata/ddl/generated/emblem.ddl",
+    "files": [
+        {
+            "fileName": "default_emblems",
+            "assetName": "#hash_5f0550b9dea9202b"
+        },
+        {
+            "fileName": "default_emblems_1",
+            "assetName": "#hash_1d3efe4c7ebb31f6"
+        },
+        {
+            "fileName": "default_emblems_2",
+            "assetName": "#hash_25fa6e9b55f2c90"
+        },
+        {
+            "fileName": "default_emblems_3",
+            "assetName": "#hash_61e6b743b01b414a"
+        },
+        {
+            "fileName": "default_emblems_4",
+            "assetName": "#hash_553b4d1c4af59b0e"
+        },
+        {
+            "fileName": "default_emblems_5",
+            "assetName": "#hash_1c22156089f09504"
+        },
+        {
+            "fileName": "default_emblems_6",
+            "assetName": "#hash_20411a111c43a4ea"
+        }
+    ],
+    "size": 2048,
+    "readOnLogin": true,
+    "readOnly": true,
+    "sendToServer": false,
+    "useScratch": false,
+    "optional": true
 }

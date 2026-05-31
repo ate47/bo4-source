@@ -1,7 +1,7 @@
 {
     "objects": [
         {
-            "mainanim": "anim4#hash_ed338a160597c69",
+            "mainanim": "anim#hash_ed338a160597c69",
             "model": "model#p7_fxanim_mp_slums_wire_control_mod",
             "type": "prop",
             "vmtype": "server",

@@ -2,8 +2,8 @@
     "name": "#shock_rifle_mp",
     "baseWeapon": "#shock_rifle",
     "displayname": "#weapon/hero_lightninggun",
-    "xhash_70": "#shock_rifle",
-    "streamkey": "#hash_2028ed2238d51896",
+    "weapon70": "#shock_rifle",
+    "soundbank": "#shock_rifle_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -12,21 +12,42 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "MULTIPLAYER",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": true,
+    "#hash_83b1dc1": true,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.0303 0.95",
+            "0.2242 0.5",
+            "0.4 0.1",
+            "0.4992 0.05",
+            "0.7426 0.001",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0605 1",
+            "0.2242 0.7161",
+            "0.375 0.3412",
+            "0.4992 0.0032",
+            "0.7426 0",
+            "1 0"
+        ]
+    ],
     "firesound": "#hash_5074c55475fcc6fa",
     "firesoundplayer": "#hash_f652c54e23ea81f",
     "sound260": "#hash_48b9cfe38764779f",
@@ -39,6 +60,10 @@
     "hitsound": "#mpl_hit_alert_shockrifle",
     "tunables1": "#shock_rifle_tunables_mp",
     "sharedWeaponSounds": "#rifle",
+    "tracers": [
+        "#lightninggun_tracer",
+        "#lightninggun_tracer"
+    ],
     "customsettings": "#shock_rifle_custom_settings",
     "#hash_2e4a8800": "#hero_lightninggun_scoreevents",
     "#hash_8456d4d": "#damageeffecttype_electrical",
@@ -69,5 +94,5 @@
     "fx_f00": "#hash_3d503204096ad06f",
     "enemyDeathFxSet": "#hash_2b0c6064f0f341f7",
     "normalImpactFX": "#hash_31c7b4d84351c44f",
-    "normalImpactSounds": "#hash_7e602393a94cd0bb"
+    "normalImpactSounds": "#lightning_gun_impact"
 }

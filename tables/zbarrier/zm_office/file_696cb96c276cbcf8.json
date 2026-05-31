@@ -1,0 +1,30 @@
+{
+    "name": "#hash_696cb96c276cbcf8",
+    "collisionModel": "#zm_office_debris_groom_lake_med_clip",
+    "delayBetweenRepSoundsDuration": 0,
+    "earthquakeOnRepair": 0,
+    "earthquakeMinScale": 0.3,
+    "earthquakeMaxScale": 0.4,
+    "earthquakeMinDuration": 0.2,
+    "earthquakeMaxDuration": 0.4,
+    "earthquakeRadius": 150,
+    "numBoardsInBarrier": 1,
+    "autoHideOpenPieces": 1,
+    "taunts": 0,
+    "reachThroughAttacks": 0,
+    "numAttackSlots": 1,
+    "attackSpotHorzOffset": 0,
+    "boards": [
+        {
+            "boardModel": "#zm_office_debris_groom_lake_med",
+            "tearAnim": "#hash_59b83096368befc2",
+            "boardAnim": "#hash_69a5d466eae0aeb3",
+            "staticAnim": "#hash_69a5d466eae0aeb3",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        }
+    ]
+}

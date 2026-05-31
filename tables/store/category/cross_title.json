@@ -1,9 +1,9 @@
 {
-    "name": "cross_title",
-    "nameHash": "#cross_title",
-    "displayName": "#menu/cross_title",
-    "imageName": "#1115325376032266039",
+    "nameStr": "cross_title",
+    "name": "#cross_title",
+    "displayName": "#hash_66c4a4616603d38a",
     "visibility": false,
+    "image": "#t7_icon_menu_store_featured",
     "products": [
         "#hash_3629fa6a15b5c782",
         "#hash_33252cc4cf2bf2be",
@@ -14,6 +14,10 @@
         "#prestige_token",
         "#hash_40c372c02844f430",
         "#hash_4991a7de79cefc0b",
-        "#hash_3e91a8e28e30108"
+        "#hash_3e91a8e28e30108",
+        "#hash_2edae5f46a3b7f5f",
+        "#hash_6c0e436a2a302912",
+        "#hash_3f24eb323e8b440",
+        "#hash_255d2e866e3ddc97"
     ]
 }

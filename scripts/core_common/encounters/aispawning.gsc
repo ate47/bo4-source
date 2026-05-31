@@ -6,7 +6,7 @@
 // Params 3
 // Checksum 0x2ff42dde, Offset: 0x80
 // Size: 0x51a
-function function_e312ad4d( str_team, var_f8de2ad5, var_82706add )
+function function_e312ad4d( str_team, var_f8de2ad5, str_ai_type )
 {
     var_6aa88db7 = [];
     
@@ -23,7 +23,7 @@ function function_e312ad4d( str_team, var_f8de2ad5, var_82706add )
         {
             if ( isspawner( var_46023177 ) )
             {
-                if ( var_82706add === var_46023177.subarchetype )
+                if ( str_ai_type === var_46023177.subarchetype )
                 {
                     if ( !isdefined( var_9e81c42 ) )
                     {
@@ -45,8 +45,8 @@ function function_e312ad4d( str_team, var_f8de2ad5, var_82706add )
         if ( !var_9e81c42.size )
         {
             /#
-                println( "<dev string:x38>" + var_82706add + "<dev string:x5c>" );
-                iprintln( "<dev string:x38>" + var_82706add + "<dev string:x5c>" );
+                println( "<dev string:x38>" + str_ai_type + "<dev string:x5c>" );
+                iprintln( "<dev string:x38>" + str_ai_type + "<dev string:x5c>" );
             #/
             
             return undefined;
@@ -110,8 +110,8 @@ function function_e312ad4d( str_team, var_f8de2ad5, var_82706add )
         }
         
         /#
-            println( "<dev string:x60>" + var_82706add + "<dev string:x8b>" + str_team + "<dev string:x93>" );
-            iprintln( "<dev string:x60>" + var_82706add + "<dev string:x8b>" + str_team + "<dev string:x93>" );
+            println( "<dev string:x60>" + str_ai_type + "<dev string:x8b>" + str_team + "<dev string:x93>" );
+            iprintln( "<dev string:x60>" + str_ai_type + "<dev string:x8b>" + str_team + "<dev string:x93>" );
         #/
         
         return undefined;

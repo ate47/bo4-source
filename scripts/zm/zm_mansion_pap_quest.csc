@@ -379,9 +379,9 @@ function ghost_trail_fx( localclientnum, oldval, newval, bnewent, binitialsnap, 
                 level.var_e62313ec = [];
             }
             
-            foreach ( var_ff4b3a13 in array::remove_undefined( level.var_e62313ec ) )
+            foreach ( mdl_painting in array::remove_undefined( level.var_e62313ec ) )
             {
-                var_ff4b3a13.b_force_stream = 0;
+                mdl_painting.b_force_stream = 0;
             }
             
             self.fx_ghost_trail = util::playfxontag( localclientnum, level._effect[ #"ghost_trail" ], self, "j_spine4" );
@@ -703,7 +703,7 @@ function function_6812bd74( localclientnum, oldval, newval, bnewent, binitialsna
         
         while ( getdvarint( #"hash_3c4df2fe4b1618d5", 0 ) && isdefined( self ) )
         {
-            debug2dtext( ( 100, 800, 0 ), "<dev string:x51>" + newval + "<dev string:x5b>" + str_hint + "<dev string:x60>" + function_9e72a96( str_fx ), ( 1, 1, 1 ) );
+            debug2dtext( ( 100, 800, 0 ), "<dev string:x51>" + newval + "<dev string:x5b>" + str_hint + "<dev string:x60>" + hashtostring( str_fx ), ( 1, 1, 1 ) );
             waitframe( 1 );
         }
     }
@@ -740,7 +740,7 @@ function function_6812bd74( localclientnum, oldval, newval, bnewent, binitialsna
             foreach ( i, n_step in level.var_d23472c9 )
             {
                 var_8b7c6b64 += n_offset;
-                debug2dtext( v_pos + ( 0, var_8b7c6b64, 0 ), function_9e72a96( i ) + "<dev string:x5b>" + n_step, ( 0, 1, 0 ) );
+                debug2dtext( v_pos + ( 0, var_8b7c6b64, 0 ), hashtostring( i ) + "<dev string:x5b>" + n_step, ( 0, 1, 0 ) );
             }
             
             waitframe( 1 );

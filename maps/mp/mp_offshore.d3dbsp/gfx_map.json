@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_offshore.d3dbsp",
+    "baseName": "mp_offshore",
+    "mins": "-782336 -786432 -9089.5",
+    "maxs": "790528 786432 17328.596",
+    "checksum": 0,
+    "streamerworld": "#hash_41164f764659b423",
+    "lighting": "#maps/mp/mp_offshore.d3dbsp",
+    "lutMaterial": "#lut_mp_offshore",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_offshore",
+        "#img_trim_lut_mp_offshore",
+        "#img_trim_lut_mp_offshore",
+        "#img_trim_lut_mp_offshore"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 3,
+        "cookieArray": "#*cookie_array"
+    }
+}

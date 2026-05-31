@@ -1,0 +1,391 @@
+[
+    {
+        "debug_color": "1,1,1,1",
+        "evaluation": "additive",
+        "falloff": "constant",
+        "id": 0,
+        "inverse_falloff": 0,
+        "length": 0,
+        "mark_spawns_dangerous": 0,
+        "max_count": 0,
+        "name": "every possible field",
+        "radius": 0,
+        "score": 0,
+        "shape": "sphere",
+        "time_out": 0
+    },
+    {
+        "debug_color": "0.5,0.5,1,1",
+        "evaluation": "additive",
+        "falloff": "linear",
+        "id": 1,
+        "name": "friend",
+        "radius": 700,
+        "score": 20,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "0.7,0.7,1,1",
+        "falloff": "linear",
+        "id": 2,
+        "max_count": 7,
+        "name": "friend_dead",
+        "radius": 800,
+        "score": 4294967196,
+        "shape": "sphere",
+        "time_out": 6
+    },
+    {
+        "debug_color": "1,0,0,1",
+        "evaluation": "additive",
+        "falloff": "linear",
+        "id": 3,
+        "name": "enemy",
+        "radius": 2200,
+        "score": 4294967146,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "0.5,0,0,1",
+        "falloff": "constant",
+        "id": 4,
+        "name": "enemy_spawn",
+        "radius": 1000,
+        "score": 4294966896,
+        "shape": "sphere",
+        "time_out": 6
+    },
+    {
+        "debug_color": "1,0,1,1",
+        "falloff": "linear",
+        "id": 5,
+        "name": "vehicle",
+        "radius": 144,
+        "score": 4294967246,
+        "shape": "cylinder_sight_line"
+    },
+    {
+        "debug_color": "0.25,0.25,0,1",
+        "falloff": "steep",
+        "id": 6,
+        "name": "dog",
+        "radius": 1050,
+        "score": 4294967146,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0,1,1",
+        "falloff": "linear",
+        "id": 7,
+        "name": "artillery",
+        "radius": 700,
+        "score": 4294966896,
+        "shape": "sphere",
+        "time_out": 3
+    },
+    {
+        "debug_color": "1,0,1,1",
+        "falloff": "linear",
+        "id": 8,
+        "name": "grenade",
+        "radius": 560,
+        "score": 4294966996,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0,1,1",
+        "falloff": "steep",
+        "id": 9,
+        "name": "claymore",
+        "radius": 630,
+        "score": 4294967146,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0,1,1",
+        "falloff": "linear",
+        "id": 10,
+        "name": "turret",
+        "radius": 1200,
+        "score": 4294966646,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0,1,1",
+        "falloff": "steep",
+        "id": 11,
+        "mark_spawns_dangerous": 1,
+        "name": "turret_close",
+        "radius": 500,
+        "score": 4294967046,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0,1,1",
+        "falloff": "linear",
+        "id": 12,
+        "name": "small_vehicle",
+        "radius": 2000,
+        "score": 4294966796,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0,1,1",
+        "falloff": "linear",
+        "id": 13,
+        "length": 2000,
+        "name": "qrdrone_cylinder",
+        "radius": 1000,
+        "score": 4294966996,
+        "shape": "cylinder"
+    },
+    {
+        "debug_color": "1,0,1,1",
+        "falloff": "linear",
+        "id": 14,
+        "name": "pegasus",
+        "radius": 1400,
+        "score": 4294967046,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0.7,0,1",
+        "evaluation": "max",
+        "falloff": "constant",
+        "id": 15,
+        "name": "dom_friendly",
+        "radius": 1250,
+        "score": 0,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0.7,0,1",
+        "falloff": "linear",
+        "id": 16,
+        "name": "dom_enemy",
+        "radius": 1000,
+        "score": 4294967246,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0.7,0,1",
+        "falloff": "constant",
+        "id": 17,
+        "name": "dom_neutral",
+        "radius": 1050,
+        "score": 4294966796,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0.7,0,1",
+        "falloff": "constant",
+        "id": 18,
+        "name": "ctf_base_friendly",
+        "radius": 1050,
+        "score": 0,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0.7,0,1",
+        "falloff": "constant",
+        "id": 19,
+        "name": "ctf_base_enemy",
+        "radius": 1050,
+        "score": 4294966796,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0.7,0,1",
+        "falloff": "constant",
+        "id": 20,
+        "name": "ctf_carrier_friendly",
+        "radius": 700,
+        "score": 0,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0.7,0,1",
+        "falloff": "steep",
+        "id": 21,
+        "name": "ctf_carrier_enemy",
+        "radius": 1000,
+        "score": 4294967196,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0.7,0,1",
+        "falloff": "constant",
+        "id": 22,
+        "name": "ctf_flag_dropped",
+        "radius": 700,
+        "score": 0,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0.7,0,1",
+        "falloff": "constant",
+        "id": 24,
+        "name": "dem_enemy_base",
+        "radius": 1000,
+        "score": 4294966796,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0.7,0,1",
+        "falloff": "linear",
+        "id": 25,
+        "name": "hq_small",
+        "radius": 2000,
+        "score": 4294966696,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0.7,0,1",
+        "falloff": "linear",
+        "id": 26,
+        "name": "hq_large",
+        "radius": 4000,
+        "score": 200,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0.7,0,1",
+        "falloff": "constant",
+        "id": 27,
+        "name": "koth_small",
+        "radius": 1000,
+        "score": 4294966496,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0.7,0,1",
+        "falloff": "linear",
+        "id": 28,
+        "name": "koth_large",
+        "radius": 4000,
+        "score": 145,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0.7,0,1",
+        "falloff": "constant",
+        "id": 29,
+        "name": "res_friendly",
+        "radius": 1750,
+        "score": 10,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0.7,0,1",
+        "falloff": "constant",
+        "id": 30,
+        "name": "res_enemy",
+        "radius": 1050,
+        "score": 4294967286,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0.7,0,1",
+        "falloff": "constant",
+        "id": 31,
+        "name": "res_neutral",
+        "radius": 1750,
+        "score": 500,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "1,0,1,1",
+        "falloff": "linear",
+        "id": 32,
+        "length": 2000,
+        "name": "helicopter",
+        "radius": 1000,
+        "score": 4294966996,
+        "shape": "cylinder"
+    },
+    {
+        "debug_color": "0.97,1.0,0.88,1",
+        "falloff": "constant",
+        "id": 33,
+        "name": "raps",
+        "radius": 500,
+        "score": 4294966796,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "0.5,0.5,1,1",
+        "falloff": "constant",
+        "id": 34,
+        "name": "friendly_spawn",
+        "radius": 1000,
+        "score": 0,
+        "shape": "sphere",
+        "time_out": 3
+    },
+    {
+        "debug_color": "0.5,0.5,1,1",
+        "evaluation": "additive",
+        "falloff": "linear",
+        "id": 35,
+        "name": "escort_robot_attackers",
+        "radius": 5000,
+        "score": 250,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "0.5,0.5,1,1",
+        "evaluation": "additive",
+        "falloff": "constant",
+        "id": 36,
+        "name": "clean_deposit_hub",
+        "radius": 700,
+        "score": 4294966896,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "0.0,0.5,1,1",
+        "evaluation": "additive",
+        "falloff": "constant",
+        "id": 37,
+        "name": "activeForwardSpawn",
+        "radius": 1500,
+        "score": 5000,
+        "shape": "sphere"
+    },
+    {
+        "debug_color": "0.0,0.5,1,1",
+        "falloff": "steep",
+        "id": 38,
+        "name": "activeSpawnBeacon",
+        "radius": 800,
+        "score": 0
+    },
+    {
+        "debug_color": "0.0,0.5,1,1",
+        "id": 39,
+        "name": "spawnVisibleToBeacon",
+        "radius": 100,
+        "score": 50
+    },
+    {
+        "boundless": 1,
+        "debug_color": "0.0,0.5,1,1",
+        "id": 40,
+        "name": "dom_flag_spawn_friendly",
+        "score": 50
+    },
+    {
+        "boundless": 1,
+        "debug_color": "0.0,0.5,1,1",
+        "id": 41,
+        "name": "dom_flag_spawn_enemy",
+        "score": 4294967246
+    },
+    {
+        "boundless": 1,
+        "debug_color": "0.0,0.5,1,1",
+        "id": 42,
+        "name": "dom_flag_spawn_neutral",
+        "score": 0
+    }
+]

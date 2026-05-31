@@ -2,8 +2,8 @@
     "name": "#ar_peacekeeper_t8_zm",
     "baseWeapon": "#ar_peacekeeper_t8",
     "displayname": "#weapon/ar_peacekeeper_t8",
-    "xhash_70": "#ar_peacekeeper_t8",
-    "streamkey": "#hash_4a71bcb0a61fb03c",
+    "weapon70": "#ar_peacekeeper_t8",
+    "soundbank": "#ar_peacekeeper_t8_soundbank",
     "scrstr_8c8": [
         "tag_sights_off",
         "tag_clan_tag",
@@ -19,21 +19,42 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 2,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.0303 0.95",
+            "0.2242 0.5",
+            "0.4 0.1",
+            "0.4992 0.05",
+            "0.7426 0.001",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0605 1",
+            "0.2242 0.7161",
+            "0.375 0.3412",
+            "0.4992 0.0032",
+            "0.7426 0",
+            "1 0"
+        ]
+    ],
     "firesounddistant": "#hash_56369e9a0553981f",
     "sound140": "#hash_3a9ae5308d1fd32e",
     "sound150": "#hash_3e859431205c5dd3",
@@ -51,8 +72,8 @@
     "sound810": "#hash_5ee962527afebfb1",
     "tunables1": "#ar_peacekeeper_t8_tunables_zm",
     "weaponCamo": "#hash_4ffb1ba3ef2bc4cb",
-    "cacWeaponXCam": "#hash_67d517dec4fba992",
-    "cacAttachmentsXCam": "#hash_67d517dec4fba992",
+    "cacWeaponXCam": "#ui_cam_cac_ar_peacekeeper",
+    "cacAttachmentsXCam": "#ui_cam_cac_ar_peacekeeper",
     "weaponIconXCam": "#hash_47cd480757c242da",
     "attachments": [
         "#defaultattachment"
@@ -61,6 +82,10 @@
         "#hash_771010970c5860f4"
     ],
     "sharedWeaponSounds": "#rifle",
+    "tracers": [
+        "#hash_4930471310f548b8",
+        "#hash_3b61ed67c2a1458f"
+    ],
     "viewmodel": [
         "#wpn_t8_loot_ar_peacekeeper_view",
         "#wpn_t8_loot_ar_peacekeeper_mk2_view"
@@ -87,8 +112,8 @@
     "fx_c88": "#hash_83613e307817774e",
     "fx_c90": "#hash_83613e307817774e",
     "fx_c98": "#hash_83613e307817774e",
-    "normalImpactFX": "#hash_1cafc46b8c735870",
-    "exitImpactFX": "#hash_56ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_large_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#bullet_exit"
 }

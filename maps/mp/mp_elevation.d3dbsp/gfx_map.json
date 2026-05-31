@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_elevation.d3dbsp",
+    "baseName": "mp_elevation",
+    "mins": "-131318 -36959.01 -12292.943",
+    "maxs": "130799.19 28860.37 21266.512",
+    "checksum": 0,
+    "streamerworld": "#hash_189ffc29b44074f6",
+    "lighting": "#maps/mp/mp_elevation.d3dbsp",
+    "lutMaterial": "#lut_mp_elevation",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_elevation",
+        "#img_trim_lut_mp_elevation",
+        "#img_trim_lut_mp_elevation",
+        "#img_trim_lut_mp_elevation"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 1,
+        "cookieArray": "#*cookie_array"
+    }
+}

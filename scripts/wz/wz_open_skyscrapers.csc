@@ -58,13 +58,13 @@ function on_localplayer_spawned( local_client_num )
             
             if ( isdefined( self ) && self function_8e51b4f( 11 ) )
             {
-                setdvar( #"hash_7327ca257aa61e93", 1 );
-                setdvar( #"hash_7b7e1cadbd098787", 1 );
+                setdvar( #"g_hitdet_logging", 1 );
+                setdvar( #"cg_hitdet_client_marker", 1 );
             }
             else
             {
-                setdvar( #"hash_7327ca257aa61e93", 0 );
-                setdvar( #"hash_7b7e1cadbd098787", 0 );
+                setdvar( #"g_hitdet_logging", 0 );
+                setdvar( #"cg_hitdet_client_marker", 0 );
             }
             
             if ( isprofilebuild() )

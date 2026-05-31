@@ -72,7 +72,7 @@ function private function_9e0e99e1()
 {
     self endon( #"disconnect" );
     level endon( #"hash_7646638df88a3656" );
-    var_407eb07 = 0;
+    b_locked_weapons = 0;
     
     while ( true )
     {
@@ -83,7 +83,7 @@ function private function_9e0e99e1()
             var_f2b6fe6e = 1;
         }
         
-        if ( var_f2b6fe6e && var_407eb07 )
+        if ( var_f2b6fe6e && b_locked_weapons )
         {
             foreach ( weapon in self getweaponslist( 1 ) )
             {
@@ -96,9 +96,9 @@ function private function_9e0e99e1()
             }
             
             self zm_trial_util::function_dc0859e();
-            var_407eb07 = 0;
+            b_locked_weapons = 0;
         }
-        else if ( !var_f2b6fe6e && !var_407eb07 )
+        else if ( !var_f2b6fe6e && !b_locked_weapons )
         {
             self zm_trial_util::function_bf710271();
             
@@ -124,7 +124,7 @@ function private function_9e0e99e1()
                 }
             }
             
-            var_407eb07 = 1;
+            b_locked_weapons = 1;
         }
         
         waitframe( 1 );

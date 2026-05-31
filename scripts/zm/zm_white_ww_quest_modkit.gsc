@@ -115,7 +115,7 @@ function modkit_crafted( e_player )
 function function_1665b086()
 {
     function_456e91dd();
-    level.var_4fe2f84d[ #"ztable_white_ww_modkit" ][ 0 ] zm_crafting::function_a187b293( getplayers()[ 0 ] );
+    level.a_t_crafting[ #"ztable_white_ww_modkit" ][ 0 ] zm_crafting::function_a187b293( getplayers()[ 0 ] );
     zm_crafting::function_ca244624( #"ztable_white_ww_modkit" );
 }
 

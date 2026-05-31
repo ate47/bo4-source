@@ -74,7 +74,7 @@ function set_flag( outcome, flag )
 // Namespace outcome/outcome
 // Params 2
 // Checksum 0xda160e79, Offset: 0x370
-// Size: 0x2a, Type: bool
+// Size: 0x2a
 function get_flag( outcome, flag )
 {
     return outcome flagsys::get( flag );

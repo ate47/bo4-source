@@ -1,0 +1,23 @@
+{
+    "name": "#hash_413cf54d0ec05345",
+    "desc": "#hash_4e282d9329b9bcdb",
+    "unk10": "[32h0x4=][ll0x0=1][f0x0=1.4013e-45][f0x4=0] 01 00 00 00 00 00 00 00",
+    "unk30": "[ll0x0=100000001][f0x0=1.4013e-45][f0x4=1.4013e-45] 01 00 00 00 01 00 00 00",
+    "unk68": [
+        {
+            "desc": "#hash_2219d2672d506c37",
+            "unk68:unk10": true,
+            "model": "#c_t8_mp_spe_hacker_pirate_head1",
+            "unk68:unk48": [
+                "#mc/mtl_c_t8_mp_spc_hacker_head1_hair_haircard1",
+                "#mc/mtl_c_t8_mp_spc_hacker_head1_hair_haircard2",
+                "#mc/mtl_c_t8_mp_spc_hacker_head1_hair_haircard3",
+                "#mc/mtl_c_t8_mp_spc_hacker_head1_hair_haircard4",
+                "#mc/mtl_c_t8_mp_spe_hacker_pirate_hat",
+                "#mc/mtl_c_t8_mp_spe_hacker_pirate_hat_bandanna",
+                "#mc/mtl_c_t8_mp_spe_hacker_pirate_hat_string"
+            ],
+            "unk68:unk50": 1
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_mountain2.d3dbsp",
+    "baseName": "mp_mountain2",
+    "mins": "-12122.843 -18687.8 -19904.846",
+    "maxs": "10687.921 6804.8574 5084.8984",
+    "checksum": 0,
+    "streamerworld": "#hash_c6874609c5922a6",
+    "lighting": "#maps/mp/mp_mountain2.d3dbsp",
+    "lutMaterial": "#lut_mp_mountain2",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_mountain2",
+        "#img_trim_lut_mp_mountain2",
+        "#img_trim_lut_mp_mountain2",
+        "#img_trim_lut_mp_mountain2"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 3,
+        "cookieArray": "#*cookie_array"
+    }
+}

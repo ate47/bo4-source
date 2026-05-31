@@ -2,8 +2,8 @@
     "name": "#ac130_chaingun",
     "baseWeapon": "#ac130_chaingun",
     "displayname": "#killstreak/ac130",
-    "xhash_70": "#ac130",
-    "streamkey": "#hash_3dd1ba956cf7de33",
+    "weapon70": "#ac130",
+    "soundbank": "#ac130_chaingun_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -12,21 +12,22 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "unknown",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
     "sound90": "#hash_6cb22fbf3d5fd91f",
     "sound140": "#hash_693e1fbc96d006da",
     "sound150": "#hash_1a801cc6ebd2d077",
@@ -38,6 +39,26 @@
     "sound520": "#hash_443785451ec9871",
     "sound5e0": "#hash_21cfea621573025a",
     "tunables1": "#ac130_chaingun_tunables",
+    "tracers": [
+        "#chopper_gunner",
+        "#chopper_gunner"
+    ],
+    "statusEffects": [
+        {
+            "effect": "#hash_a608bf886a137e8e",
+            "statusEffects:unk8": "[ll0x0=1f400000064][f0x0=1.4013e-43][f0x4=7.00649e-43] 64 00 00 00 f4 01 00 00",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        }
+    ],
     "killcamSettings": "#killcam_ac130",
     "#hash_2e4a8800": "#gunship_scoreevents",
     "reticleCenter": "#reticle_center_cross",

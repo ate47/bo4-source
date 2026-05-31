@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_urban.d3dbsp",
+    "baseName": "mp_urban",
+    "mins": "-121375.08 -130908.01 -4224.0913",
+    "maxs": "131990.22 100383 3344.49",
+    "checksum": 0,
+    "streamerworld": "#hash_5c5d4db0bdefe1ef",
+    "lighting": "#maps/mp/mp_urban.d3dbsp",
+    "lutMaterial": "#lut_mp_urban",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_urban",
+        "#img_trim_lut_mp_urban",
+        "#img_trim_lut_mp_urban",
+        "#img_trim_lut_mp_urban"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 10,
+        "cookieArray": "#*cookie_array"
+    }
+}

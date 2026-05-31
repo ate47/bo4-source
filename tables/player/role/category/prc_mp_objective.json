@@ -1,0 +1,11 @@
+{
+    "name": "#prc_mp_objective",
+    "displayName": "#menu/objective_caps",
+    "description": "#menu/objective_desc",
+    "icon": "#hash_4491e422a2d93e07",
+    "sortOrder": 1,
+    "bundle": {
+        "iconbig": "image#hash_40b914e320dd97d6",
+        "enabled": 1
+    }
+}

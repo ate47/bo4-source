@@ -697,7 +697,7 @@ function function_34bcd465()
 // Params 7
 // Checksum 0x73604f5, Offset: 0x1ff0
 // Size: 0x186
-function function_742f2c18( n_round, archetype, n_count_total, var_4f886dd2, var_37dc6df8, var_d58fab26, var_8857c54d )
+function function_742f2c18( n_round, archetype, n_count_total, n_count_min, var_37dc6df8, var_d58fab26, var_8857c54d )
 {
     if ( !isdefined( level.var_f944d22e ) )
     {
@@ -724,7 +724,7 @@ function function_742f2c18( n_round, archetype, n_count_total, var_4f886dd2, var
         }
         
         var_4debc821 = spawnstruct();
-        var_4debc821.var_4f886dd2 = var_4f886dd2;
+        var_4debc821.n_count_min = n_count_min;
         var_4debc821.n_count_total = n_count_total;
         level.var_ea47b206[ n_round ] = var_4debc821;
     }
@@ -790,11 +790,11 @@ function function_c492c4d6( str_index, var_ed1db1a7, a_str_zones, a_str_next_def
         
         foreach ( str_index, s_defend_area in level.a_s_defend_areas )
         {
-            assert( isarray( s_defend_area.a_str_next_defend ), "<dev string:x16d>" + function_9e72a96( str_index ) + "<dev string:x17c>" );
+            assert( isarray( s_defend_area.a_str_next_defend ), "<dev string:x16d>" + hashtostring( str_index ) + "<dev string:x17c>" );
             
             foreach ( str_next_defend in s_defend_area.a_str_next_defend )
             {
-                assert( isinarray( a_str_defend_areas, str_next_defend ), "<dev string:x16d>" + function_9e72a96( str_next_defend ) + "<dev string:x1c1>" );
+                assert( isinarray( a_str_defend_areas, str_next_defend ), "<dev string:x16d>" + hashtostring( str_next_defend ) + "<dev string:x1c1>" );
             }
         }
     }
@@ -891,7 +891,7 @@ function function_defc6586( var_3d15828d, b_random = 1 )
 // Size: 0x6c
 function function_a877cd10( str_index )
 {
-    assert( isdefined( level.a_s_defend_areas[ str_index ] ), "<dev string:x1e0>" + function_9e72a96( str_index ) + "<dev string:x1f0>" );
+    assert( isdefined( level.a_s_defend_areas[ str_index ] ), "<dev string:x1e0>" + hashtostring( str_index ) + "<dev string:x1f0>" );
     return level.a_s_defend_areas[ str_index ];
 }
 

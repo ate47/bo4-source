@@ -1136,14 +1136,14 @@ function function_7edbaf3a( v_origin )
     {
         wait n_wait;
         n_move_x = randomfloatrange( 0.1, 0.5 );
-        var_a6fa9fe7 = randomfloatrange( 0.1, 0.5 );
+        n_move_y = randomfloatrange( 0.1, 0.5 );
         var_ac28398c = randomintrange( -180, 180 );
-        self moveto( self.origin + ( n_move_x, var_a6fa9fe7, 0 ), 0.15 );
+        self moveto( self.origin + ( n_move_x, n_move_y, 0 ), 0.15 );
         self rotatevelocity( ( 0, var_ac28398c, 0 ), 0.15 );
         self waittill( #"movedone" );
         wait 0.25;
         var_ac28398c = randomintrange( -180, 180 );
-        self moveto( self.origin - ( n_move_x, var_a6fa9fe7, 0 ), 0.15 );
+        self moveto( self.origin - ( n_move_x, n_move_y, 0 ), 0.15 );
         self rotatevelocity( ( 0, var_ac28398c, 0 ), 0.15 );
         self waittill( #"movedone" );
     }

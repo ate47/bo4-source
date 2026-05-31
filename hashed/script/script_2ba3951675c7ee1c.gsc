@@ -60,7 +60,7 @@ function __init__()
     level.var_5f506a2b = getent( "mg_ho_vol", "targetname" );
     zm_powerups::set_weapon_ignore_max_ammo( #"ww_blundergat_fire_t8_unfinished" );
     var_e34de65b = struct::get( "mg_door_frame_pos", "targetname" );
-    level.var_760f9184 = util::spawn_model( "tag_origin", var_e34de65b.origin, var_e34de65b.angles );
+    level.mdl_door_pos = util::spawn_model( "tag_origin", var_e34de65b.origin, var_e34de65b.angles );
     var_9eb4d270 = struct::get( "mg_fp_pos", "targetname" );
     level.var_cc5631a6 = util::spawn_model( "tag_origin", var_9eb4d270.origin, var_9eb4d270.angles );
     var_dc49a24d = struct::get( "mg_forg_pos", "targetname" );
@@ -443,9 +443,9 @@ function magma_gat_disappear_fx()
 function function_d586e457()
 {
     level endon( #"hash_fd8be2ffb55eaf7" );
-    var_ec3ff08c = array::sort_by_script_int( level.var_8e6fc65e, 0 );
+    a_mdl_skulls = array::sort_by_script_int( level.var_8e6fc65e, 0 );
     
-    foreach ( mdl_skull in var_ec3ff08c )
+    foreach ( mdl_skull in a_mdl_skulls )
     {
         mdl_skull setmodel( "p8_zm_esc_skull_sgl" );
         mdl_skull clientfield::set( "" + #"magma_fireplace_skull_fx", 0 );
@@ -478,10 +478,10 @@ function private function_11efbb03( e_player )
             {
                 self notify( #"magma_taken" );
                 e_player notify( #"magma_taken" );
-                var_287a8343 = zm_utility::get_player_weapon_limit( e_player );
+                n_weapon_limit = zm_utility::get_player_weapon_limit( e_player );
                 a_primaries = e_player getweaponslistprimaries();
                 
-                if ( isdefined( a_primaries ) && a_primaries.size >= var_287a8343 )
+                if ( isdefined( a_primaries ) && a_primaries.size >= n_weapon_limit )
                 {
                     e_player takeweapon( e_player.currentweapon );
                 }
@@ -534,11 +534,11 @@ function private wait_for_timeout( e_player, var_9bce3ebf )
 function function_181eb502()
 {
     self endoncallback( &function_6eca1fcc, #"disconnect" );
-    level.var_760f9184 thread clientfield::set( "" + #"magma_door_barrier_fx", 1 );
+    level.mdl_door_pos thread clientfield::set( "" + #"magma_door_barrier_fx", 1 );
     callback::on_ai_killed( &function_ed30e654 );
     s_result = level flag::wait_till_any( array( #"hash_3ec656e276ceee53", #"hash_3fb7d58b07b04333" ) );
     callback::remove_on_ai_killed( &function_ed30e654 );
-    level.var_760f9184 thread clientfield::set( "" + #"magma_door_barrier_fx", 0 );
+    level.mdl_door_pos thread clientfield::set( "" + #"magma_door_barrier_fx", 0 );
     wait 1;
 }
 
@@ -1243,10 +1243,10 @@ function function_d3db303d()
             {
                 self.stub notify( #"magma_taken" );
                 e_player notify( #"magma_taken" );
-                var_287a8343 = zm_utility::get_player_weapon_limit( e_player );
+                n_weapon_limit = zm_utility::get_player_weapon_limit( e_player );
                 a_primaries = e_player getweaponslistprimaries();
                 
-                if ( isdefined( a_primaries ) && a_primaries.size >= var_287a8343 )
+                if ( isdefined( a_primaries ) && a_primaries.size >= n_weapon_limit )
                 {
                     e_player takeweapon( e_player.currentweapon );
                 }
@@ -1458,29 +1458,29 @@ function function_ecc34f71( e_player )
 // Size: 0x34c
 function function_b00fd241()
 {
-    var_7de73bd2 = struct::get_array( "key_door_trigger", "targetname" );
+    a_s_key_doors = struct::get_array( "key_door_trigger", "targetname" );
     
-    foreach ( var_f4539b2e in var_7de73bd2 )
+    foreach ( s_key_door in a_s_key_doors )
     {
-        var_f4539b2e.a_e_doors = [];
-        a_e_parts = getentarray( var_f4539b2e.target, "targetname" );
+        s_key_door.a_e_doors = [];
+        a_e_parts = getentarray( s_key_door.target, "targetname" );
         
         foreach ( e_part in a_e_parts )
         {
             if ( e_part.script_noteworthy === "door" )
             {
-                if ( !isdefined( var_f4539b2e.a_e_doors ) )
+                if ( !isdefined( s_key_door.a_e_doors ) )
                 {
-                    var_f4539b2e.a_e_doors = [];
+                    s_key_door.a_e_doors = [];
                 }
-                else if ( !isarray( var_f4539b2e.a_e_doors ) )
+                else if ( !isarray( s_key_door.a_e_doors ) )
                 {
-                    var_f4539b2e.a_e_doors = array( var_f4539b2e.a_e_doors );
+                    s_key_door.a_e_doors = array( s_key_door.a_e_doors );
                 }
                 
-                if ( !isinarray( var_f4539b2e.a_e_doors, e_part ) )
+                if ( !isinarray( s_key_door.a_e_doors, e_part ) )
                 {
-                    var_f4539b2e.a_e_doors[ var_f4539b2e.a_e_doors.size ] = e_part;
+                    s_key_door.a_e_doors[ s_key_door.a_e_doors.size ] = e_part;
                 }
                 
                 continue;
@@ -1488,19 +1488,19 @@ function function_b00fd241()
             
             if ( e_part.script_noteworthy === "clip" )
             {
-                var_f4539b2e.e_clip = e_part;
+                s_key_door.e_clip = e_part;
                 continue;
             }
             
             if ( e_part.script_noteworthy === "lock" )
             {
-                var_f4539b2e.e_lock = e_part;
+                s_key_door.e_lock = e_part;
                 continue;
             }
             
             if ( e_part.script_noteworthy === "item_part" )
             {
-                var_f4539b2e.e_item = e_part;
+                s_key_door.e_item = e_part;
             }
         }
     }
@@ -1508,7 +1508,7 @@ function function_b00fd241()
     zm_items::function_4d230236( getweapon( #"zitem_acid_gat_part_1" ), &function_6fe98729 );
     zm_items::function_4d230236( getweapon( #"zitem_acid_gat_part_2" ), &function_6fe98729 );
     zm_items::function_4d230236( getweapon( #"zitem_acid_gat_part_3" ), &function_6fe98729 );
-    array::thread_all( var_7de73bd2, &function_48c915fa );
+    array::thread_all( a_s_key_doors, &function_48c915fa );
 }
 
 // Namespace namespace_fc5c8455/namespace_8d08012b

@@ -965,7 +965,7 @@ function spawnplayer()
         var_8fa79650 = self getcharacterwarpaintlootid();
         decallootid = self getcharacterdecallootid();
         var_b3d9cfaa = self function_11d0e790();
-        var_f8e6b703 = self match_record::get_player_stat( #"hash_ec4aea1a8bbd82" );
+        var_f8e6b703 = self match_record::get_player_stat( #"current_life_index" );
         
         if ( isdefined( var_f8e6b703 ) )
         {

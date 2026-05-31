@@ -1,0 +1,85 @@
+{
+    "name": "#archetype_mini_quadtank_mp_player",
+    "type": "tank",
+    "scriptVehicleType": "amws",
+    "scoreType": "_amws",
+    "var_409bdb86": "archetype_mini_quadtank_mp_player_pc",
+    "cameraTag": "tag_driver",
+    "archeType": "#mini_ai_quadtank",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "scriptBundleSettings": "#amwssettings_mp",
+    "shrapnelSettings": "#default_shrapnel_settings",
+    "deathFxTag": "tag_origin",
+    "lightFx": [
+        "#killstreaks/fx_agr_vlight"
+    ],
+    "lightFxTag": [
+        "tag_origin"
+    ],
+    "driverHideTag": "tag_pov_hide",
+    "driverOtherHideTags": [
+        "tag_armored_bib_rotate_animate",
+        "tag_armored_bib_slide_animate"
+    ],
+    "skidSpeedMin": 15,
+    "skidSpeedMax": 80,
+    "peelSpeedMax": 600,
+    "model": "#hash_4ddae52ce1f1f0a5",
+    "deathModel": "#hash_6b5019f0e80e1ffd",
+    "enemyModel": "#hash_1c263f69a281d36b",
+    "compassIconMaterial": "#compass_talon",
+    "animStateMachine": "#hash_d2b29e63b9a5f25",
+    "animSelectorTable": "#hash_d2b40e63b9a863a",
+    "animMappingTable": "#hash_1dfbd744351a4310",
+    "vehicleFootstepTable": "#hash_d1186ee65b16e0c",
+    "steerAxisName": "AXIS_LSTICK",
+    "gasAxisName": "AXIS_LSTICK",
+    "attackButtonName": "BUTTON_RTRIG",
+    "rumbletype": "tank_rumble",
+    "bundle": {
+        "huds": [
+            {
+                "bindings": [
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_6a6f3045bdae0240",
+                        "buttondirection": "left",
+                        "prompt": "+vehicleattack"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_4c7d903a026627fc",
+                        "buttondirection": "left",
+                        "prompt": "+activate"
+                    },
+                    {
+                        "hash_41590175a80bbf59:hash_dc9f8e27": "#none",
+                        "cooldownindex": 0,
+                        "displaystring": "localized17#hash_41299eb8c4915260",
+                        "buttondirection": "left",
+                        "prompt": "+speed_throw"
+                    }
+                ],
+                "widgets": [
+                    {
+                        "hash_303b76d86d727423:hash_513059ad": 0,
+                        "widgettype": 7
+                    }
+                ],
+                "hash_16b4c5c47fcf7794:hash_56985ec1": 0,
+                "hideweaponinfo": 0,
+                "hash_3a63348c09d91b8d:hash_24c083a4": 0,
+                "vehiclehud": "VHUD_Tank_Robot",
+                "tintcolor": "0.439216 1 0.443137 1",
+                "hudcondition": "IsAttackMode"
+            }
+        ],
+        "healthpoolsize": 650,
+        "hash_7965b8f0abaa90e2:hash_7812fce8": 2
+    }
+}

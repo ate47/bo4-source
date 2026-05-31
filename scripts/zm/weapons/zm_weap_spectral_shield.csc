@@ -975,11 +975,11 @@ function function_6b58c030( localclientnum, oldval, newval, bnewent, binitialsna
     }
     
     util::playfxontag( localclientnum, level._effect[ #"air_blast" ], self, "tag_origin" );
-    var_d58aab0e = util::spawn_model( localclientnum, "tag_origin", self gettagorigin( "tag_flash_window" ), self gettagangles( "tag_flash_window" ) );
-    var_d58aab0e linkto( self, "tag_flash_window" );
-    var_d58aab0e scene::play( #"p8_fxanim_zm_esc_blast_afterlife_bundle" );
-    var_d58aab0e unlink();
-    var_d58aab0e delete();
+    mdl_blast = util::spawn_model( localclientnum, "tag_origin", self gettagorigin( "tag_flash_window" ), self gettagangles( "tag_flash_window" ) );
+    mdl_blast linkto( self, "tag_flash_window" );
+    mdl_blast scene::play( #"p8_fxanim_zm_esc_blast_afterlife_bundle" );
+    mdl_blast unlink();
+    mdl_blast delete();
     
     if ( isdefined( self ) )
     {

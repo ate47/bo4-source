@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_cartoon_bomb",
-    "hash_ff3063df": "model#",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_cartoon_bomb",
     "name": "charm_cartoon_bomb",
     "displayname": "localized17#hash_1f4644dbb92268a8",
     "icon": "ui_icon_weapon_charms_cartoon_bomb",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_cartoon_bomb"
 }

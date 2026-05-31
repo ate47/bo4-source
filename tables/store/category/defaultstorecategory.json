@@ -1,8 +1,7 @@
 {
-    "name": "defaultstorecategory",
-    "nameHash": "#defaultstorecategory",
+    "nameStr": "defaultstorecategory",
+    "name": "#defaultstorecategory",
     "displayName": "#menu/store_featured",
-    "imageName": "#1115325376032266039",
     "visibility": false,
-    "products": []
+    "image": "#t7_icon_menu_store_featured"
 }

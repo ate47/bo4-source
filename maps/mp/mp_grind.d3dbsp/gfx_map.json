@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_grind.d3dbsp",
+    "baseName": "mp_grind",
+    "mins": "-131072 -125169.25 -1322",
+    "maxs": "131584 131584 13657",
+    "checksum": 0,
+    "streamerworld": "#hash_5ff2731de0b92285",
+    "lighting": "#maps/mp/mp_grind.d3dbsp",
+    "lutMaterial": "#lut_mp_grind",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_grind",
+        "#img_trim_lut_grind",
+        "#img_trim_lut_grind",
+        "#img_trim_lut_grind"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 7,
+        "cookieArray": "#*cookie_array"
+    }
+}

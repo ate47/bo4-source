@@ -1,0 +1,2683 @@
+{
+    "name": "#zombies public",
+    "description": "#menu/zombies",
+    "lobbyMainMode": "CAMPAIGN",
+    "hidden": false,
+    "environmentMask": 7,
+    "entries": [
+        {
+            "name": "#hash_4ef169949dbadfea",
+            "description": "#hash_6fdcc66d6ac640ff",
+            "unique_name": "#hash_4906aad8b00560af",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_classic",
+            "imageBackground": "#ui_icon_director_tile_zm_zod",
+            "imageBackgroundFocus": "#ui_icon_director_tile_zm_zod",
+            "imageTileLarge": "#hash_fb2a16cd194d02a2",
+            "imageTileSmall": "#img_t8_menu_zm_preview_zodt8",
+            "imageTileSideInfo": "#img_t8_menu_zm_preview_zodt8_large",
+            "id": 201,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_zodt8",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_79f70a063aecd744",
+            "description": "#playlist/zm_towers",
+            "unique_name": "#hash_7a91c22c69d54dc4",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_classic",
+            "imageBackground": "#hash_c566d51261573f6c",
+            "imageBackgroundFocus": "#hash_efd1dff8e8d0c827",
+            "imageTileLarge": "#img_t8_menu_zm_preview_towers_playlist",
+            "imageTileSmall": "#img_t8_menu_zm_preview_towers",
+            "imageTileSideInfo": "#img_t8_menu_zm_preview_towers_large",
+            "id": 202,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_towers",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": true
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_3c6025835cb3158f",
+            "description": "#hash_3902d5c7b3234136",
+            "unique_name": "#hash_52bd0a716921ca46",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_classic",
+            "imageBackground": "#ui_icon_director_tile_zm_zod",
+            "imageBackgroundFocus": "#ui_icon_director_tile_zm_zod",
+            "imageTileLarge": "#hash_936df8a1b610b7c9",
+            "imageTileSmall": "#hash_936df8a1b610b7c9",
+            "imageTileSideInfo": "#hash_f67babdf2e16cced",
+            "id": 203,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 1792,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_escape",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#zm_office",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_3e54b2ed09c4ad89",
+            "description": "#hash_15aa852a71a78e4",
+            "unique_name": "#hash_54e9ae0a03c6864c",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_classic",
+            "imageBackground": "#ui_icon_director_tile_zm_zod",
+            "imageBackgroundFocus": "#ui_icon_director_tile_zm_zod",
+            "imageTileLarge": "#hash_c3ab4eae2af975e8",
+            "imageTileSmall": "#hash_c3ab4eae2af975e8",
+            "imageTileSideInfo": "#hash_d4dc5f27ed47c724",
+            "id": 204,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 1792,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_max_rank",
+                    "value": "20",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_towers",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_4956e4fec80115d0",
+            "description": "#hash_258afaaa792e80a0",
+            "unique_name": "#hash_190b1e1afd80e268",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_rush",
+            "imageBackground": "#ui_icon_director_tile_zm_zod",
+            "imageBackgroundFocus": "#ui_icon_director_tile_zm_zod",
+            "imageTileLarge": "#hash_f737b79c6b489f18",
+            "imageTileSmall": "#hash_f737b79c6b489f18",
+            "imageTileSideInfo": "#hash_c2832f91d8117054",
+            "id": 205,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 1792,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_zodt8",
+                    "gametype": "#gametype_zm_zstandard",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#zm_towers",
+                    "gametype": "#gametype_zm_zstandard",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#zm_escape",
+                    "gametype": "#gametype_zm_zstandard",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#zm_red",
+                    "gametype": "#gametype_zm_zstandard",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_5bae0bf59a9b2fbf",
+            "description": "#playlist/zm_office",
+            "unique_name": "#hash_3d7df7f70551f80a",
+            "dlcName": "dlc0zm",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_classic",
+            "imageBackground": "#hash_b44867611837bcf4",
+            "imageBackgroundFocus": "#hash_b44867611837bcf4",
+            "imageTileLarge": "#img_t8_menu_zm_preview_office_playlist",
+            "imageTileSmall": "#img_t8_menu_zm_preview_office",
+            "imageTileSideInfo": "#img_t8_menu_zm_preview_office",
+            "id": 206,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_office",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_c1c870fa5e24518",
+            "description": "#playlist/zm_escape",
+            "unique_name": "#hash_7226cb1d509ebfbd",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_classic",
+            "imageBackground": "#ui_icon_director_tile_zm_zod",
+            "imageBackgroundFocus": "#ui_icon_director_tile_zm_zod",
+            "imageTileLarge": "#img_t8_menu_zm_preview_escape_playlist",
+            "imageTileSmall": "#img_t8_menu_zm_preview_escape",
+            "imageTileSideInfo": "#img_t8_menu_zm_preview_escape_large",
+            "id": 207,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_escape",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_590e2b04d3a3e59a",
+            "description": "#playlist/zm_mansion",
+            "unique_name": "#hash_708ca3393b7322ab",
+            "dlcName": "dlc1zm",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_classic",
+            "imageBackground": "#hash_8b524a74b4e4f5c3",
+            "imageBackgroundFocus": "#hash_908d2c085ce84dfc",
+            "imageTileLarge": "#img_t8_menu_zm_preview_mansion_playlist",
+            "imageTileSmall": "#img_t8_menu_zm_preview_mansion",
+            "imageTileSideInfo": "#img_t8_menu_zm_preview_mansion_large",
+            "id": 208,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_mansion",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_10e9eede22e04d65",
+            "description": "#zmtrials/unsinkable",
+            "unique_name": "#hash_4906aad8b00560af",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_gauntlet",
+            "imageBackground": "#hash_c33394350e965ad8",
+            "imageBackgroundFocus": "#hash_9cceef95e84a7253",
+            "imageTileLarge": "#hash_e8d1d9ad88639307",
+            "imageTileSmall": "#hash_91aea8301d2466f7",
+            "imageTileSideInfo": "#hash_e8d1d9ad88639307",
+            "id": 209,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": false,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 1792,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_zodt8",
+                    "gametype": "#gametype_zm_ztrials",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_6b698c618d4cd400",
+            "description": "#hash_35523e90f72c6608",
+            "unique_name": "#hash_1a48f92d66d40fd0",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_gauntlet",
+            "imageBackground": "#hash_d80a45ffb70ff694",
+            "imageBackgroundFocus": "#hash_c41d3306b197c42f",
+            "imageTileLarge": "#hash_b5a6309c5777e49b",
+            "imageTileSmall": "#hash_eb551941fb81823b",
+            "imageTileSideInfo": "#hash_b5a6309c5777e49b",
+            "id": 210,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": false,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 1792,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_towers",
+                    "gametype": "#gametype_zm_ztrials",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_1963f62e20335f56",
+            "description": "#hash_1ccbcbb068003f80",
+            "unique_name": "#hash_3d7df7f70551f80a",
+            "dlcName": "dlc0zm",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_gauntlet",
+            "imageBackground": "#hash_ddb4b48f1ed3e283",
+            "imageBackgroundFocus": "#hash_bb16e27e1fd716bc",
+            "imageTileLarge": "#hash_85a79132ad1befd0",
+            "imageTileSmall": "#hash_f93d1d7ea7b44f24",
+            "imageTileSideInfo": "#hash_85a79132ad1befd0",
+            "id": 211,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": false,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 1792,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_office",
+                    "gametype": "#gametype_zm_ztrials",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_284ce70696a9ae9d",
+            "description": "#hash_3902d5c7b3234136",
+            "unique_name": "#hash_52bd0a716921ca46",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_classic",
+            "imageBackground": "#ui_icon_director_tile_zm_zod",
+            "imageBackgroundFocus": "#ui_icon_director_tile_zm_zod",
+            "imageTileLarge": "#hash_c5b1335aa89afc17",
+            "imageTileSmall": "#hash_c70b857a3185ed7c",
+            "imageTileSideInfo": "#hash_e8c1d72262441967",
+            "id": 212,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 1792,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_escape",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#zm_office",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_32c2c8940919bfd8",
+            "description": "#hash_3902d4c7b3233f83",
+            "unique_name": "#hash_2c986c63cfb84515",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_classic",
+            "imageBackground": "#ui_icon_director_tile_zm_zod",
+            "imageBackgroundFocus": "#ui_icon_director_tile_zm_zod",
+            "imageTileLarge": "#hash_f6979e5d5d6ae0e5",
+            "imageTileSmall": "#hash_eaf48238953f750e",
+            "imageTileSideInfo": "#hash_d87cd3242fc42929",
+            "id": 213,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 1792,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_zodt8",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#zm_towers",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#zm_mansion",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": false
+                },
+                {
+                    "map": "#zm_red",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_597022ba3d5fa8cf",
+            "description": "#zmtrials/hell",
+            "unique_name": "#hash_7226cb1d509ebfbd",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_gauntlet",
+            "imageBackground": "#hash_ba8cd237fe76ef03",
+            "imageBackgroundFocus": "#hash_82e506214b4fdf3c",
+            "imageTileLarge": "#hash_e62ace8b324bcb50",
+            "imageTileSmall": "#hash_a3dcd6b96c1f06a4",
+            "imageTileSideInfo": "#hash_e62ace8b324bcb50",
+            "id": 214,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": false,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 1792,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_escape",
+                    "gametype": "#gametype_zm_ztrials",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_5a7ce2c2d7a0bbd6",
+            "description": "#hash_608fcf2dc350cb93",
+            "unique_name": "#hash_7850ad2f674a8769",
+            "dlcName": "dlc2zm",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_classic",
+            "imageBackground": "#hash_c43f5e353a5f7071",
+            "imageBackgroundFocus": "#hash_f614cf96f6d4583e",
+            "imageTileLarge": "#img_t8_menu_zm_preview_red_playlist",
+            "imageTileSmall": "#img_t8_menu_zm_preview_red",
+            "imageTileSideInfo": "#img_t8_menu_zm_preview_red_large",
+            "id": 215,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_red",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_600af4c768517855",
+            "description": "#hash_1c6c7f02f2a5c119",
+            "unique_name": "#hash_708ca3393b7322ab",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_gauntlet",
+            "imageBackground": "#hash_e288a55f8443a313",
+            "imageBackgroundFocus": "#hash_fdd767631b13332c",
+            "imageTileLarge": "#hash_e017ea5b1f564a62",
+            "imageTileSmall": "#hash_b3f8e0237f44b0e2",
+            "imageTileSideInfo": "#hash_e017ea5b1f564a62",
+            "id": 216,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": false,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 1792,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_mansion",
+                    "gametype": "#gametype_zm_ztrials",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_63fb37249090f051",
+            "description": "#hash_f48516bcc7d44e5",
+            "unique_name": "#hash_7850ad2f674a8769",
+            "dlcName": "dlc2zm",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_gauntlet",
+            "imageBackground": "#hash_89eef42d81ba7d52",
+            "imageBackgroundFocus": "#hash_962649b4325cc5f9",
+            "imageTileLarge": "#hash_b1abe89cc585f845",
+            "imageTileSmall": "#hash_f821f71dd7a88ac1",
+            "imageTileSideInfo": "#hash_b1abe89cc585f845",
+            "id": 217,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 512,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_red",
+                    "gametype": "#gametype_zm_ztrials",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_59f60aa68e8f77bf",
+            "description": "#hash_74badfdcf63f6338",
+            "unique_name": "#hash_4906aad8b00560af",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_gauntlet",
+            "imageBackground": "#hash_c33394350e965ad8",
+            "imageBackgroundFocus": "#hash_9cceef95e84a7253",
+            "imageTileLarge": "#hash_e8d1d9ad88639307",
+            "imageTileSmall": "#hash_91aea8301d2466f7",
+            "imageTileSideInfo": "#hash_e8d1d9ad88639307",
+            "id": 218,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": false,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "unk112": 1792,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmtrialsvariant",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmtrialsvariant",
+                            "unk10": 0
+                        }
+                    ]
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_zodt8",
+                    "gametype": "#gametype_zm_ztrials",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_ab1bba1991eea46",
+            "description": "#hash_1f6a84783744b749",
+            "unique_name": "#hash_323c7dc6a618ba91",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_quickplay_zm",
+            "imageBackground": "#ui_icon_director_quickplay",
+            "imageBackgroundFocus": "#ui_icon_director_quickplay",
+            "imageTileLarge": "#ui_icon_director_quickplay_preview",
+            "imageTileSmall": "#ui_icon_director_quickplay",
+            "imageTileSideInfo": "#ui_icon_director_quickplay_large",
+            "id": 219,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 1,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": true,
+            "isNewGameOrResumeGame": false,
+            "unk112": 1792,
+            "rules": [],
+            "rotations": [
+                {
+                    "map": "#zm_quickplay",
+                    "gametype": "#gametype_zm_quickplay",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_2830aec2df4b9476",
+            "description": "#playlist/zm_white",
+            "unique_name": "#hash_2e9ec32a2b942215",
+            "dlcName": "dlc3zm",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_classic",
+            "imageBackground": "#hash_dd872e3a3d920fbe",
+            "imageBackgroundFocus": "#hash_dfa4296630868e75",
+            "imageTileLarge": "#hash_cba945140d74f223",
+            "imageTileSmall": "#hash_cae8ac7d0ad31c83",
+            "imageTileSideInfo": "#hash_cba945140d74f223",
+            "id": 220,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_white",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_66c7a819906751f1",
+            "description": "#zmtrials/dac",
+            "unique_name": "#hash_2e9ec32a2b942215",
+            "dlcName": "dlc3zm",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_gauntlet",
+            "imageBackground": "#hash_e546c1f2ea167c57",
+            "imageBackgroundFocus": "#hash_890ccd9595476b10",
+            "imageTileLarge": "#hash_c640700399977bef",
+            "imageTileSmall": "#hash_8d70cad0e674af1f",
+            "imageTileSideInfo": "#hash_c640700399977bef",
+            "id": 221,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": false,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_white",
+                    "gametype": "#gametype_zm_ztrials",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_6898a0b2be8539bd",
+            "description": "#playlist/zm_orange",
+            "unique_name": "#hash_36437ccd18f85074",
+            "dlcName": "dlc4zm",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_classic",
+            "imageBackground": "#hash_bf54001f2a6ca7ab",
+            "imageBackgroundFocus": "#hash_8b5c4d54204e0dc4",
+            "imageTileLarge": "#hash_96b8ce73bac29f28",
+            "imageTileSmall": "#hash_f321c5220753931c",
+            "imageTileSideInfo": "#hash_96b8ce73bac29f28",
+            "id": 222,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_orange",
+                    "gametype": "#gametype_zm_zclassic",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        },
+        {
+            "name": "#hash_4ee1b008f897cdb0",
+            "description": "#hash_37702cf66b8230f9",
+            "unique_name": "#hash_36437ccd18f85074",
+            "dlcName": "dlc4zm",
+            "lobbyMainMode": "CAMPAIGN",
+            "image": "#ui_icon_gamemode_zm_gauntlet",
+            "imageBackground": "#hash_f34ad345d6c0a041",
+            "imageBackgroundFocus": "#hash_e0ad13d6d89059ae",
+            "imageTileLarge": "#hash_951a4c2f87dd0d6c",
+            "imageTileSmall": "#hash_8ba8f100c1c88ab0",
+            "imageTileSideInfo": "#hash_951a4c2f87dd0d6c",
+            "id": 223,
+            "arenaSlot": -1,
+            "minPartySize": 0,
+            "maxPartySize": 4,
+            "maxLocalPlayers": 2,
+            "maxPlayers": 4,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "parkingPlaylist": 0,
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "environmentMask": 7,
+            "platformMask": 7,
+            "isCustomMatch": false,
+            "hideifmissingdlc": false,
+            "disableGuests": false,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [
+                {
+                    "type": "SET_DVAR",
+                    "name": "#lobby_readyuppercentrequired",
+                    "value": ".65",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_xpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#scr_gunxpscalezm",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "GAMETYPE_SETTINGS",
+                    "name": "#zmdifficulty",
+                    "value": "1",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "unk40": [
+                        {
+                            "unk0": "#zmdifficulty",
+                            "unk10": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_55b202dcd35d7145",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#hash_2f8a737a2a6c0989",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                },
+                {
+                    "type": "SET_DVAR",
+                    "name": "#zm_ee_enabled",
+                    "value": "0",
+                    "platformMask": 7,
+                    "environmentMask": 7,
+                    "utcStartTime": 0,
+                    "utcEndTime": 0
+                }
+            ],
+            "rotations": [
+                {
+                    "map": "#zm_orange",
+                    "gametype": "#gametype_zm_ztrials",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ],
+            "bundle": {}
+        }
+    ]
+}

@@ -1,27 +1,27 @@
 {
     "objects": [
         {
-            "exitgroundanim": "anim4#bo3_ai_crew_cougar_driver_exit",
+            "exitgroundanim": "anim#bo3_ai_crew_cougar_driver_exit",
             "aligntag": "tag_driver",
-            "rideanim": "anim4#bo3_ai_crew_cougar_driver_idle",
+            "rideanim": "anim#bo3_ai_crew_cougar_driver_idle",
             "position": "driver"
         },
         {
-            "exitgroundanim": "anim4#bo3_ai_crew_cougar_passenger_exit",
+            "exitgroundanim": "anim#bo3_ai_crew_cougar_passenger_exit",
             "aligntag": "tag_passenger",
-            "rideanim": "anim4#bo3_ai_crew_cougar_passenger_idle",
+            "rideanim": "anim#bo3_ai_crew_cougar_passenger_idle",
             "position": "passenger1"
         },
         {
-            "exitgroundanim": "anim4#bo3_ai_crew_cougar_guy0_exit",
+            "exitgroundanim": "anim#bo3_ai_crew_cougar_guy0_exit",
             "aligntag": "tag_passenger",
-            "rideanim": "anim4#bo3_ai_crew_cougar_guy0_idle",
+            "rideanim": "anim#bo3_ai_crew_cougar_guy0_idle",
             "position": "crew1"
         },
         {
-            "exitgroundanim": "anim4#bo3_ai_crew_cougar_guy1_exit",
+            "exitgroundanim": "anim#bo3_ai_crew_cougar_guy1_exit",
             "aligntag": "tag_passenger",
-            "rideanim": "anim4#bo3_ai_crew_cougar_guy1_idle",
+            "rideanim": "anim#bo3_ai_crew_cougar_guy1_idle",
             "position": "crew2"
         }
     ],

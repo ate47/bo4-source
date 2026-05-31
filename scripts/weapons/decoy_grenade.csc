@@ -42,7 +42,7 @@ function monitor_footsteps( localclientnum )
 {
     while ( clientfield::get( "decoy_grenade_footsteps" ) === 1 )
     {
-        self playsound( localclientnum, #"hash_4990634cec4a1aff" );
+        self playsound( localclientnum, #"defaultplayerfootstep_sprint_plr" );
         wait 0.23;
     }
 }

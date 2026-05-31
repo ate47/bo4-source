@@ -48,7 +48,7 @@ function init()
 // Size: 0x44
 function init_clientfields()
 {
-    clientfield::register( "scriptmover", "" + #"hash_7876f33937c8a764", 20000, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"vomit_blade_fx", 20000, 1, "int" );
 }
 
 // Namespace zm_white_cheat_codes/zm_white_cheat_codes
@@ -134,8 +134,8 @@ function guns()
     foreach ( e_player in a_e_players )
     {
         e_player.var_679c4d4e = e_player zm_weapons::player_get_loadout();
-        var_dac0c546 = e_player getweaponslist();
-        e_player switchtoweaponimmediate( var_dac0c546[ 0 ], 1 );
+        a_w_order = e_player getweaponslist();
+        e_player switchtoweaponimmediate( a_w_order[ 0 ], 1 );
         e_player disableweaponcycling();
         e_player perks::perk_setperk( "specialty_ammodrainsfromstockfirst" );
         e_player thread function_9992bb68();
@@ -160,11 +160,11 @@ function guns()
                 continue;
             }
             
-            var_4cd7f83c = e_player getweaponslistprimaries();
+            a_w_current = e_player getweaponslistprimaries();
             
-            for ( i = 0; i < var_4cd7f83c.size ; i++ )
+            for ( i = 0; i < a_w_current.size ; i++ )
             {
-                var_4cd7f83c[ i ] = zm_weapons::get_base_weapon( var_4cd7f83c[ i ] );
+                a_w_current[ i ] = zm_weapons::get_base_weapon( a_w_current[ i ] );
             }
             
             w_current = e_player getcurrentweapon();
@@ -177,7 +177,7 @@ function guns()
             {
                 w_random = array::random( var_fb1db24c );
             }
-            while ( w_random == level.weaponnone || isdefined( array::find( var_4cd7f83c, w_random ) ) );
+            while ( w_random == level.weaponnone || isdefined( array::find( a_w_current, w_random ) ) );
             
             if ( is_weapon_upgraded )
             {
@@ -273,8 +273,8 @@ function function_ad15a8b3()
         
         self.var_3be6d813 = 1;
         wait 3;
-        var_dac0c546 = self getweaponslist();
-        self switchtoweaponimmediate( var_dac0c546[ 0 ], 1 );
+        a_w_order = self getweaponslist();
+        self switchtoweaponimmediate( a_w_order[ 0 ], 1 );
         wait 2;
         self.var_3be6d813 = 0;
     }
@@ -746,7 +746,7 @@ function function_82457e35( params )
         v_down = v_origin + var_4095cc33 * -4;
         mdl_fx = util::spawn_model( "tag_origin", v_origin, v_angles );
         mdl_fx linkto( self, "tag_eye", v_down - v_origin, ( 60, 0, 90 ) );
-        mdl_fx clientfield::set( "" + #"hash_7876f33937c8a764", 1 );
+        mdl_fx clientfield::set( "" + #"vomit_blade_fx", 1 );
         
         while ( isdefined( self ) && self ai::is_stunned() )
         {

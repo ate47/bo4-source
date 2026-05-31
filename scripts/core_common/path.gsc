@@ -72,7 +72,7 @@
     // Params 4
     // Checksum 0x378de650, Offset: 0x3e0
     // Size: 0x8c, Type: dev
-    function function_aa9bfd9d( path_points, point_color, line_color, var_80bf7c44 )
+    function debug_draw_path( path_points, point_color, line_color, var_80bf7c44 )
     {
         if ( !isdefined( point_color ) )
         {

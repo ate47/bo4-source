@@ -278,7 +278,7 @@ function get_challenge_stat( stat_name )
 // Namespace blackjack_challenges/blackjack_challenges
 // Params 2
 // Checksum 0x386f42c0, Offset: 0xae0
-// Size: 0x3a, Type: bool
+// Size: 0x3a
 function set_challenge_stat( stat_name, stat_value )
 {
     return self stats::set_stat( #"tenthspecialistcontract", stat_name, stat_value );

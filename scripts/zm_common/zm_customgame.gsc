@@ -71,15 +71,15 @@ function autoexec function_d776b402()
 // Params 1
 // Checksum 0xd3b52bd, Offset: 0x7e8
 // Size: 0x88
-function function_901b751c( var_c9db62d5 )
+function function_901b751c( str_setting )
 {
-    if ( var_c9db62d5 === "" )
+    if ( str_setting === "" )
     {
         return undefined;
     }
     
-    setting = getgametypesetting( var_c9db62d5 );
-    assert( isdefined( setting ), "<dev string:x38>" + function_9e72a96( var_c9db62d5 ) + "<dev string:x50>" );
+    setting = getgametypesetting( str_setting );
+    assert( isdefined( setting ), "<dev string:x38>" + hashtostring( str_setting ) + "<dev string:x50>" );
     return setting;
 }
 
@@ -87,13 +87,13 @@ function function_901b751c( var_c9db62d5 )
 // Params 1
 // Checksum 0xdf23cf61, Offset: 0x878
 // Size: 0xa6
-function function_16020b98( var_c9db62d5 )
+function function_16020b98( str_setting )
 {
     a_s_defaults = function_a8e9a6c7();
     
     foreach ( s_setting in a_s_defaults )
     {
-        if ( var_c9db62d5 == s_setting.name )
+        if ( str_setting == s_setting.name )
         {
             return s_setting.default_val;
         }
@@ -106,7 +106,7 @@ function function_16020b98( var_c9db62d5 )
 // Params 1
 // Checksum 0x31ca666e, Offset: 0x928
 // Size: 0xb8
-function function_9be9c072( var_c9db62d5 )
+function function_9be9c072( str_setting )
 {
     foreach ( e_player in level.players )
     {
@@ -122,7 +122,7 @@ function function_9be9c072( var_c9db62d5 )
 // Size: 0x92, Type: bool
 function function_8b8fa6e5( e_player )
 {
-    foreach ( str_perk in level.var_b8be892e )
+    foreach ( str_perk in level.a_str_vapors )
     {
         if ( !e_player hasperk( str_perk ) )
         {
@@ -1271,7 +1271,7 @@ function function_318d417b( e_player )
     e_player.var_ec426a71 = 1;
     sound = "evt_bottle_dispense";
     playsoundatposition( sound, self.origin );
-    var_cc1db3c1 = array::exclude( level.var_b8be892e, e_player.perks_active );
+    var_cc1db3c1 = array::exclude( level.a_str_vapors, e_player.perks_active );
     e_player.var_62fef0f1 = array::random( var_cc1db3c1 );
     
     if ( !isdefined( e_player.var_62fef0f1 ) )

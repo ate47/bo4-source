@@ -2,9 +2,9 @@
     "name": "#maptable_mp_dlc3",
     "mapCount": 2,
     "images": [
-        "#hash_b69da540b3e7f0a",
+        "#img_t8_menu_mp_loadscreen_casino",
         "#blacktransparent",
-        "#hash_18e8658abd318e03",
+        "#img_t8_menu_mp_loadscreen_station",
         "#blacktransparent"
     ]
 }

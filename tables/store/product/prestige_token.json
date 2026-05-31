@@ -1,10 +1,7 @@
 {
     "name": "#prestige_token",
-    "blackMarketName": "#",
-    "blackMarketDesc": "#",
-    "entitlementNameXHash": "#",
-    "previewImageName": "hash_af34426de73eda6",
-    "productImageName": "hash_af34426de73eda6",
-    "blackMarketImageName": "hash_1217b62ca29dad38",
-    "visibility": true
+    "previewImage": "#hash_8af34426de73eda6",
+    "productImage": "#hash_8af34426de73eda6",
+    "blackMarketImage": "#t7_store_product_bo4",
+    "visibility": false
 }

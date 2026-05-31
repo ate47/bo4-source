@@ -172,14 +172,14 @@ function pap_quest_init( var_5ea5c94d )
         array::run_all( var_9840ab47, &sethintstring, #"hash_2a4860e40142bac5" );
     }
     
-    var_16561d51 = array( #"marauder", #"destroyer", #"both", #"tigers" );
+    a_str_encounters = array( #"marauder", #"destroyer", #"both", #"tigers" );
     a_str_towers = array( #"danu", #"ra", #"odin", #"zeus" );
-    var_16561d51 = array::randomize( var_16561d51 );
+    a_str_encounters = array::randomize( a_str_encounters );
     level.var_4118581a = 0;
     
     foreach ( i, str_tower in a_str_towers )
     {
-        level thread function_199b1814( str_tower, var_16561d51[ i ] );
+        level thread function_199b1814( str_tower, a_str_encounters[ i ] );
     }
     
     level.var_c22016cf = 0;
@@ -300,14 +300,14 @@ function pap_quest_restart()
         array::run_all( var_9840ab47, &sethintstring, #"hash_2a4860e40142bac5" );
     }
     
-    var_16561d51 = array( #"marauder", #"destroyer", #"both", #"tigers" );
+    a_str_encounters = array( #"marauder", #"destroyer", #"both", #"tigers" );
     a_str_towers = array( #"danu", #"ra", #"odin", #"zeus" );
-    var_16561d51 = array::randomize( var_16561d51 );
+    a_str_encounters = array::randomize( a_str_encounters );
     level.var_4118581a = 0;
     
     foreach ( i, str_tower in a_str_towers )
     {
-        level thread function_199b1814( str_tower, var_16561d51[ i ] );
+        level thread function_199b1814( str_tower, a_str_encounters[ i ] );
     }
     
     level.var_c22016cf = 0;

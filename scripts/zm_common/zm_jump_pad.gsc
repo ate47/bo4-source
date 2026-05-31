@@ -335,9 +335,9 @@ function jump_pad_start( ent_player, endon_condition )
         {
             self playsound( #"evt_jump_pad_launch" );
             
-            if ( isdefined( level.var_8c6636af ) )
+            if ( isdefined( level.func_jump_pad_pulse_override ) )
             {
-                self [[ level.var_8c6636af ]]();
+                self [[ level.func_jump_pad_pulse_override ]]();
             }
             else
             {
@@ -358,9 +358,9 @@ function jump_pad_start( ent_player, endon_condition )
     {
         self playsound( #"evt_jump_pad_launch" );
         
-        if ( isdefined( level.var_8c6636af ) )
+        if ( isdefined( level.func_jump_pad_pulse_override ) )
         {
-            self [[ level.var_8c6636af ]]();
+            self [[ level.func_jump_pad_pulse_override ]]();
         }
         else
         {
@@ -468,9 +468,9 @@ function jump_pad_move( vec_direction, flt_time, struct_poi, trigger )
     {
         self.poi_spot = spawn( "script_origin", struct_poi.origin );
         
-        if ( isdefined( level.var_fa55c70a ) )
+        if ( isdefined( level._pad_poi_ignore ) )
         {
-            level [[ level.var_fa55c70a ]]( self.poi_spot );
+            level [[ level._pad_poi_ignore ]]( self.poi_spot );
         }
         
         self thread jump_pad_enemy_follow_or_ignore( self.poi_spot );

@@ -38,7 +38,7 @@ function exists( str_flag )
 // Size: 0x82
 function set( str_flag )
 {
-    assert( exists( str_flag ), "<dev string:x71>" + function_9e72a96( str_flag ) + "<dev string:x8e>" );
+    assert( exists( str_flag ), "<dev string:x71>" + hashtostring( str_flag ) + "<dev string:x8e>" );
     self.flag[ str_flag ] = 1;
     self notify( str_flag );
 }

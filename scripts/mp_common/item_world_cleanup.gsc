@@ -35,13 +35,13 @@ function private __init__()
 function private _cleanup()
 {
     level flagsys::wait_till( #"item_world_reset" );
-    var_314770d8 = array( &function_b465b436, &function_35e11623, &function_b7c5f376, &function_6ef5c287, &function_ada16428 );
+    cleanupfuncs = array( &function_b465b436, &function_35e11623, &function_b7c5f376, &function_6ef5c287, &function_ada16428 );
     
     while ( true )
     {
         if ( isdefined( level.deathcircle ) )
         {
-            foreach ( func in var_314770d8 )
+            foreach ( func in cleanupfuncs )
             {
                 util::wait_network_frame( 1 );
                 [[ func ]]( level.deathcircle, level.deathcircles[ level.deathcircleindex - 1 ] );

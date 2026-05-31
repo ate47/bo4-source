@@ -231,19 +231,19 @@ function private function_62c0d32d( item_name, stashitem = 0 )
     itementry = isdefined( level.var_de3d5d56 ) ? level.var_de3d5d56[ item_name ] : getscriptbundle( item_name );
     weapon = item_world_util::function_35e06774( itementry, isdefined( itementry.attachments ) );
     itemcount = isdefined( itementry.amount ) ? itementry.amount : 1;
-    var_aec6fa7f = 0;
+    itemamount = 0;
     
     if ( itementry.itemtype == #"weapon" )
     {
-        var_aec6fa7f = itementry.amount * weapon.clipsize;
+        itemamount = itementry.amount * weapon.clipsize;
     }
     else if ( itementry.itemtype == #"armor" || itementry.itemtype == #"ammo" )
     {
-        var_aec6fa7f = itementry.amount;
+        itemamount = itementry.amount;
         itemcount = 1;
     }
     
-    item = item_drop::drop_item( weapon, itemcount, var_aec6fa7f, itemspawnpoint.id, origin, angles, stashitem );
+    item = item_drop::drop_item( weapon, itemcount, itemamount, itemspawnpoint.id, origin, angles, stashitem );
     
     if ( isdefined( item ) )
     {
@@ -395,7 +395,7 @@ function private _spawn_item( point, row, stashitem = 0 )
             if ( !isdefined( itementry.wallbuyitem ) )
             {
                 angles = ( 0, angleclamp180( origin[ 0 ] + origin[ 1 ] + origin[ 2 ] ), 0 );
-                forward = anglestoforward( angles ) * level.raw\spanish\sound\vox\scripted\hrt\vox_hr0_attack_grenade_000.SN60.xenon.snd[ 0 ];
+                forward = anglestoforward( angles ) * level.raw/spanish/sound/vox/scripted/hrt/vox_hr0_attack_grenade_000.SN60.xenon.snd[ 0 ];
                 offset = rotatepoint( forward, ( 0, level.var_cc113617[ 0 ], 0 ) );
                 origin += offset;
                 ground_pos = physicstraceex( origin + ( 0, 0, 24 ), origin - ( 0, 0, 96 ), ( 0, 0, 0 ), ( 0, 0, 0 ), undefined, 32 );
@@ -493,7 +493,7 @@ function private function_f0e5262b( item_name, point, childindex, stashitem = 0,
         assert( childindex > 0 && childindex <= 5 );
         parentangles = ( 0, point.angles[ 1 ], 0 );
         degree = level.var_cc113617[ childindex ];
-        distance = level.raw\spanish\sound\vox\scripted\hrt\vox_hr0_attack_grenade_000.SN60.xenon.snd[ childindex ];
+        distance = level.raw/spanish/sound/vox/scripted/hrt/vox_hr0_attack_grenade_000.SN60.xenon.snd[ childindex ];
         offset = ( cos( degree ) * distance, sin( degree ) * distance, 0 );
         offset = rotatepoint( offset, parentangles );
         origin += offset;
@@ -1635,7 +1635,7 @@ function setup_groups( reset = 1 )
     level.var_5b2a8d88 = [];
     level.var_cc113617 = [ -130, 50, 120, 315, 225, 270 ];
     level.var_82e94a26 = [ 1:10, 2:-5, 3:-15, 4:5, 5:0 ];
-    level.raw\spanish\sound\vox\scripted\hrt\vox_hr0_attack_grenade_000.SN60.xenon.snd = [ 17, 34, 32, 25, 25, 25 ];
+    level.raw/spanish/sound/vox/scripted/hrt/vox_hr0_attack_grenade_000.SN60.xenon.snd = [ 17, 34, 32, 25, 25, 25 ];
     
     /#
         level.var_136445c0 = 0;

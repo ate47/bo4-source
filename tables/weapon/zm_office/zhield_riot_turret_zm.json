@@ -2,9 +2,9 @@
     "name": "#zhield_riot_turret_zm",
     "baseWeapon": "#zhield_riot_turret",
     "displayname": "#zmweapon/riotshield",
-    "xhash_30": "#hash_6bc98c4c2176f9b8",
-    "xhash_70": "#zhield_riot_dw",
-    "streamkey": "#hash_60b9c78b7b6bf99",
+    "altWeapon": "#hash_6bc98c4c2176f9b8",
+    "weapon70": "#zhield_riot_dw",
+    "soundbank": "#zhield_riot_turret_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -13,21 +13,22 @@
     "weaponstarthitpoints": 500,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 8,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "ZOMBIES",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
     "sound140": "#hash_1f1d143c192cb526",
     "sound150": "#hash_1685733c5c476e4b",
     "sound180": "#hash_3b2202fcb577fdf3",
@@ -45,6 +46,10 @@
     "sound810": "#hash_21cba6ae89a3493c",
     "tunables1": "#zhield_turret_tunables_zm",
     "sharedWeaponSounds": "#battle_shield",
+    "tracers": [
+        "#pistol",
+        "#pistol_enemy"
+    ],
     "viewmodel": [
         "#hash_10c4ac12157186cc"
     ],
@@ -67,8 +72,16 @@
     "fx_c88": "#hash_8a5567d0168ae02f",
     "fx_c90": "#hash_8a5567d0168ae02f",
     "fx_c98": "#hash_8a5567d0168ae02f",
-    "normalImpactFX": "#hash_e1b4c700060ee40c",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#bullet_exit"
+    "exitImpactSounds": "#bullet_exit",
+    "#hash_21329beb": [
+        {
+            "model": "#hash_511638854c2cd007"
+        },
+        {
+            "model": "#hash_511638854c2cd007"
+        }
+    ]
 }

@@ -617,7 +617,7 @@ function hero_weapon_on( n_slot, w_hero )
     self thread function_60878f7f( w_hero );
     self zm_stats::increment_client_stat( "special_weapon_used" );
     self zm_stats::increment_player_stat( "special_weapon_used" );
-    self zm_stats::forced_attachment( "boas_special_weapon_used" );
+    self zm_stats::function_8f10788e( "boas_special_weapon_used" );
 }
 
 // Namespace zm_hero_weapon/zm_hero_weapon
@@ -1103,7 +1103,7 @@ function function_29e4516d()
     }
     
     n_power = self gadgetpowerget( level.var_a53a05b5 );
-    is_deployed = self function_36dfc05f( level.var_a53a05b5 );
+    is_deployed = self gadgetisdeployed( level.var_a53a05b5 );
     
     if ( n_power > 50 && !is_deployed )
     {

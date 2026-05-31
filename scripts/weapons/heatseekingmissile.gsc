@@ -967,7 +967,7 @@ function locksighttest( target, subtarget )
         return false;
     }
     
-    if ( isdefined( target.var_e8ec304d ) && target.var_e8ec304d )
+    if ( isdefined( target.nolockon ) && target.nolockon )
     {
         return false;
     }
@@ -1618,7 +1618,7 @@ function _missiledetonate( attacker, weapon, range, mindamage, maxdamage, allowd
     
     attackerentity = attacker;
     
-    if ( function_3132f113( attacker ) || isdefined( attacker ) && !isplayer( attacker ) && !isalive( attacker ) )
+    if ( isremovedentity( attacker ) || isdefined( attacker ) && !isplayer( attacker ) && !isalive( attacker ) )
     {
         attackerentity = undefined;
     }

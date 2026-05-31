@@ -32,7 +32,7 @@ function autoexec __init()
 // Size: 0x4c
 function __init__()
 {
-    level thread function_82141ae4();
+    level thread init_switch();
     level thread function_920f9a6();
     level thread function_624de77b();
 }
@@ -111,7 +111,7 @@ function function_920f9a6()
 // Params 0
 // Checksum 0xda9cf11d, Offset: 0x820
 // Size: 0x1ea
-function function_82141ae4()
+function init_switch()
 {
     if ( !level.var_c30abd0d )
     {

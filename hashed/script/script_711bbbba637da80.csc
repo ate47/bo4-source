@@ -68,7 +68,7 @@ function __init__()
     level._effect[ #"shower_circle_112" ] = #"hash_7a9e103684dcd9e9";
     level._effect[ #"shower_circle_128" ] = #"hash_7a93943684d3b2b0";
     level._effect[ #"generator_sparks" ] = #"hash_274f915858a5ba54";
-    level._effect[ #"hash_45f8b28452411669" ] = #"hash_5a70a6908023185e";
+    level._effect[ #"hash_45f8b28452411669" ] = #"light/fx_light_headlight_generic";
     level._effect[ #"hash_7a8eab5597b25400" ] = #"hash_680b356c3283464f";
     level._effect[ #"hash_2f996104bd7c64fb" ] = #"hash_7c6c9fc790a994bb";
     level._effect[ #"hash_55bcc76865d0c844" ] = #"hash_652d04bb8b685664";

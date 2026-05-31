@@ -87,7 +87,7 @@ function __main__()
 // Size: 0xc4
 function function_cfc02934()
 {
-    var_88846d2d = getdvar( #"hash_4a5fd7d94cfc9dfd", 0 ) != 0 || getdvarint( #"hash_4a5fd7d94cfc9dfd", 0 ) != 0;
+    var_88846d2d = getdvar( #"wz_mp_character_unlocks_outfits", 0 ) != 0 || getdvarint( #"wz_mp_character_unlocks_outfits", 0 ) != 0;
     
     if ( isplayer( self ) && !isbot( self ) && var_88846d2d )
     {
@@ -895,7 +895,7 @@ function private function_a117c988()
         
         if ( isdefined( attacker ) && isdefined( attacker.var_121392a1 ) && isarray( attacker.var_121392a1 ) )
         {
-            if ( isdefined( attacker.var_121392a1[ #"blind_base" ] ) || isdefined( attacker.var_121392a1[ #"swat_grenade" ] ) || isdefined( attacker.var_121392a1[ #"hash_1527a22d8a6fdc21" ] ) )
+            if ( isdefined( attacker.var_121392a1[ #"blind_base" ] ) || isdefined( attacker.var_121392a1[ #"swat_grenade" ] ) || isdefined( attacker.var_121392a1[ #"stunned_slow_grenade" ] ) )
             {
                 self.laststandparams.var_6314a3a3 = 1;
             }
@@ -1543,40 +1543,40 @@ function on_character_unlock( params )
     {
         waitframe( 1 );
         player = self;
-        var_bff5f1d6 = player stats::get_stat( #"characters", #"hash_44599132bf7320e8", #"unlocked" );
-        var_b88d2887 = player stats::get_stat( #"characters", #"hash_72350169be9133ae", #"unlocked" );
-        var_4a9b8b0b = player stats::get_stat( #"characters", #"hash_3f01badbd66b2962", #"unlocked" );
-        var_7052e449 = player stats::get_stat( #"characters", #"hash_77118b5dbb73e0b6", #"unlocked" );
+        var_bff5f1d6 = player stats::get_stat( #"characters", #"prt_wz_reznov", #"unlocked" );
+        var_b88d2887 = player stats::get_stat( #"characters", #"prt_wz_mason", #"unlocked" );
+        var_4a9b8b0b = player stats::get_stat( #"characters", #"prt_wz_woods", #"unlocked" );
+        var_7052e449 = player stats::get_stat( #"characters", #"prt_wz_menendez", #"unlocked" );
         
         if ( var_bff5f1d6 && var_b88d2887 && var_4a9b8b0b && var_7052e449 )
         {
             player giveachievement( "wz_blackout_historian" );
         }
         
-        var_871f238c = player stats::get_stat( #"characters", #"hash_7f410b145dce17bd", #"unlocked" );
-        var_aa7878e8 = player stats::get_stat( #"characters", #"hash_63b894fa4d634238", #"unlocked" );
-        var_4e36df97 = player stats::get_stat( #"characters", #"hash_8596bc069593313", #"unlocked" );
-        var_a71f1b0f = player stats::get_stat( #"characters", #"hash_17c02481305f0e24", #"unlocked" );
-        var_199c1316 = player stats::get_stat( #"characters", #"hash_4b77f84c47802222", #"unlocked" );
-        var_6851d31e = player stats::get_stat( #"characters", #"hash_62361c68e083d401", #"unlocked" );
-        var_f67cceb4 = player stats::get_stat( #"characters", #"hash_69bbe1ec48f79df5", #"unlocked" );
-        var_7fec1dca = player stats::get_stat( #"characters", #"hash_7a9842f6bec0e568", #"unlocked" );
-        var_ccc5605d = player stats::get_stat( #"characters", #"hash_6999516e5e35a515", #"unlocked" );
-        var_620230a2 = player stats::get_stat( #"characters", #"hash_78c357c8a5680d67", #"unlocked" );
+        var_871f238c = player stats::get_stat( #"characters", #"prt_wz_battery", #"unlocked" );
+        var_aa7878e8 = player stats::get_stat( #"characters", #"prt_wz_mercenary", #"unlocked" );
+        var_4e36df97 = player stats::get_stat( #"characters", #"prt_wz_firebreak", #"unlocked" );
+        var_a71f1b0f = player stats::get_stat( #"characters", #"prt_wz_enforcer", #"unlocked" );
+        var_199c1316 = player stats::get_stat( #"characters", #"prt_wz_trapper", #"unlocked" );
+        var_6851d31e = player stats::get_stat( #"characters", #"prt_wz_technomancer", #"unlocked" );
+        var_f67cceb4 = player stats::get_stat( #"characters", #"prt_wz_swatpolice", #"unlocked" );
+        var_7fec1dca = player stats::get_stat( #"characters", #"prt_wz_buffassault", #"unlocked" );
+        var_ccc5605d = player stats::get_stat( #"characters", #"prt_wz_engineer", #"unlocked" );
+        var_620230a2 = player stats::get_stat( #"characters", #"prt_wz_recon", #"unlocked" );
         
         if ( var_871f238c && var_aa7878e8 && var_4e36df97 && var_a71f1b0f && var_199c1316 && var_6851d31e && var_f67cceb4 && var_7fec1dca && var_ccc5605d && var_620230a2 )
         {
             player giveachievement( "wz_specialist_super_fan" );
         }
         
-        var_bae2998 = player stats::get_stat( #"characters", #"hash_4815f130a1c1d840", #"unlocked" );
-        var_db2f35af = player stats::get_stat( #"characters", #"hash_6f105a897d64112", #"unlocked" );
-        var_c7bf8a47 = player stats::get_stat( #"characters", #"hash_7fc15da2c5864d3c", #"unlocked" );
-        var_c0c6b37a = player stats::get_stat( #"characters", #"hash_4f0c567012b33fd9", #"unlocked" );
-        var_7434f372 = player stats::get_stat( #"characters", #"hash_23d5f8566508f9f5", #"unlocked" );
-        var_98f0457e = player stats::get_stat( #"characters", #"hash_36157750ed7c6584", #"unlocked" );
-        var_a5b8977e = player stats::get_stat( #"characters", #"hash_1d718be46a94371f", #"unlocked" );
-        var_35efd1cf = player stats::get_stat( #"characters", #"hash_66b69b90a30bcc88", #"unlocked" );
+        var_bae2998 = player stats::get_stat( #"characters", #"prt_wz_bruno", #"unlocked" );
+        var_db2f35af = player stats::get_stat( #"characters", #"prt_wz_scarlett", #"unlocked" );
+        var_c7bf8a47 = player stats::get_stat( #"characters", #"prt_wz_diego", #"unlocked" );
+        var_c0c6b37a = player stats::get_stat( #"characters", #"prt_wz_stanton", #"unlocked" );
+        var_7434f372 = player stats::get_stat( #"characters", #"prt_wz_dempsey", #"unlocked" );
+        var_98f0457e = player stats::get_stat( #"characters", #"prt_wz_takeo", #"unlocked" );
+        var_a5b8977e = player stats::get_stat( #"characters", #"prt_wz_nikolai", #"unlocked" );
+        var_35efd1cf = player stats::get_stat( #"characters", #"prt_wz_richtofen", #"unlocked" );
         
         if ( var_bae2998 && var_db2f35af && var_c7bf8a47 && var_c0c6b37a && var_7434f372 && var_98f0457e && var_a5b8977e && var_35efd1cf )
         {

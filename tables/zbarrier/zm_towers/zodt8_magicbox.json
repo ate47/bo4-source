@@ -1,0 +1,88 @@
+{
+    "name": "#zodt8_magicbox",
+    "delayBetweenRepSoundsDuration": 0,
+    "earthquakeOnRepair": 0,
+    "earthquakeMinScale": 0.3,
+    "earthquakeMaxScale": 0.4,
+    "earthquakeMinDuration": 0.2,
+    "earthquakeMaxDuration": 0.4,
+    "earthquakeRadius": 150,
+    "numBoardsInBarrier": 6,
+    "autoHideOpenPieces": 0,
+    "taunts": 0,
+    "reachThroughAttacks": 0,
+    "numAttackSlots": 1,
+    "attackSpotHorzOffset": 0,
+    "boards": [
+        {
+            "boardModel": "#p7_zm_der_magic_box_fake",
+            "tearAnim": "#o_zombie_base_magic_box_fake_idle_twitch_b",
+            "boardAnim": "#o_zombie_base_magic_box_fake_idle_twitch_a",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        },
+        {
+            "boardModel": "#hash_9af0ce07aab606c",
+            "tearAnim": "#p8_fxanim_zm_zod_magic_box_arrive_anim",
+            "boardAnim": "#p8_fxanim_zm_zod_magic_box_leave_anim",
+            "idleAnim": "#p8_fxanim_zm_zod_magic_box_idle_anim",
+            "pauseAndRepeatRepSound": "#hash_1",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        },
+        {
+            "boardModel": "#p8_fxanim_zm_zod_magic_box_mod",
+            "tearAnim": "#p8_fxanim_zm_zod_magic_box_open_anim",
+            "boardAnim": "#hash_6f59ffe77f150034",
+            "idleAnim": "#p8_fxanim_zm_zod_magic_box_open_idle_anim",
+            "staticAnim": "#p8_fxanim_zm_zod_magic_box_idle_anim",
+            "pauseAndRepeatRepSound": "#hash_1",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        },
+        {
+            "boardModel": "#tag_origin",
+            "tearAnim": "#o_zombie_magic_box_weapon_rise",
+            "boardAnim": "#o_zombie_base_magic_box_teddy_rise",
+            "idleAnim": "#p8_fxanim_zm_zod_magic_box_open_idle_anim",
+            "staticAnim": "#p8_fxanim_zm_zod_magic_box_idle_anim",
+            "pauseAndRepeatRepSound": "#hash_1",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        },
+        {
+            "boardModel": "#tag_origin",
+            "tearAnim": "#o_zombie_magic_box_weapon_dual_rise",
+            "boardAnim": "#o_zombie_base_magic_box_teddy_rise",
+            "pauseAndRepeatRepSound": "#hash_1",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        },
+        {
+            "boardModel": "#p8_fxanim_zm_zod_magic_box_mod",
+            "tearAnim": "#p8_fxanim_zm_zod_magic_box_open_idle_anim",
+            "boardAnim": "#p8_fxanim_zm_zod_magic_box_idle_anim",
+            "pauseAndRepeatRepSound": "#hash_1",
+            "repairEffect1Offset": "0 0 0",
+            "repairEffect2Offset": "0 0 0",
+            "minPause": 0.3,
+            "maxPause": 0.6,
+            "numRepsToPullProBoard": 3
+        }
+    ]
+}

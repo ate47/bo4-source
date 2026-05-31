@@ -1,19 +1,19 @@
 {
     "globstate": 8,
     "numplasma": 0,
-    "hash_92340672": 0,
+    "hash_14a555cf71b7907a:hash_92340672": 0,
     "skuid": 0,
-    "hash_b889f476": 0,
+    "hash_24c3f8de7b651e1e:hash_b889f476": 0,
     "bannertitle": "localized17#hash_5777fc84adc979bb",
     "droptype": 14,
     "plasmaprice": 100,
     "descriptiontext": "localized17#hash_e2264562e719d6e",
-    "hash_51a0da4c": 0,
+    "hash_42e0c54a32852fa5:hash_51a0da4c": 0,
     "name": "zm_lab_tungsten_tripler",
     "popupname": "localized17#hash_562bce41ed62d703",
-    "hash_619ae0f2": 1,
+    "hash_6221e7d2cd7ef58c:hash_619ae0f2": 1,
     "maxquantity": 0,
     "descriptiontitle": "localized17#hash_562bce41ed62d703",
-    "hash_40cee9c0": "image#ui_icon_laboratory_tripler",
-    "hash_e8a9006": "blue"
+    "tileicon": "image#ui_icon_laboratory_tripler",
+    "centrifugecolor": "blue"
 }

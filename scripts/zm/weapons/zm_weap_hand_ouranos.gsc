@@ -419,9 +419,9 @@ function function_1fc2378f( e_projectile, ai_zombie, n_damage )
     }
     else
     {
-        var_2ed6f142 = self getweaponmuzzlepoint();
+        v_view_pos = self getweaponmuzzlepoint();
         v_forward = self getweaponforwarddir();
-        v_end = var_2ed6f142 + v_forward * 200;
+        v_end = v_view_pos + v_forward * 200;
         n_dist_sq = distance2dsquared( self.origin, v_end );
         
         if ( isdefined( ai_zombie ) && distance2dsquared( e_projectile.origin, ai_zombie.origin ) <= n_dist_sq )
@@ -449,11 +449,11 @@ function function_1fc2378f( e_projectile, ai_zombie, n_damage )
             n_dist = distance( self.origin, v_org );
             var_7fd007f9 = n_dist * 0.8;
             var_4c92ff0e = n_dist * 0.4;
-            v_end = var_2ed6f142 + v_forward * 100;
+            v_end = v_view_pos + v_forward * 100;
             var_a93a9211 = distance( self.origin, v_end );
-            v_right = var_2ed6f142 + anglestoright( self.angles ) * 50;
+            v_right = v_view_pos + anglestoright( self.angles ) * 50;
             v_right_end = v_right + v_forward * 100;
-            v_left = var_2ed6f142 - anglestoright( self.angles ) * 50;
+            v_left = v_view_pos - anglestoright( self.angles ) * 50;
             v_left_end = v_left + v_forward * 100;
             n_time = var_a93a9211 / 1500;
             
@@ -791,14 +791,14 @@ function ouranos_feather_hit( oldval, newval )
 // Size: 0x120
 function function_180bae11()
 {
-    var_2ed6f142 = self getweaponmuzzlepoint();
+    v_view_pos = self getweaponmuzzlepoint();
     v_forward = self getweaponforwarddir();
-    v_end = var_2ed6f142 + v_forward * 10000;
-    a_trace = bullettrace( var_2ed6f142, v_end, 0, self );
+    v_end = v_view_pos + v_forward * 10000;
+    a_trace = bullettrace( v_view_pos, v_end, 0, self );
     
     if ( isdefined( level.var_21343c57 ) )
     {
-        var_ec8dc708 = bullettrace( var_2ed6f142, v_end, 0, self );
+        var_ec8dc708 = bullettrace( v_view_pos, v_end, 0, self );
         level notify( #"ww_ouranos_hit", { #player:self, #e_entity:var_ec8dc708[ #"entity" ] } );
     }
     

@@ -120,9 +120,9 @@ function private function_31f197c2()
     level endon( #"hash_7646638df88a3656" );
     self endon( #"disconnect" );
     wait 0.5;
-    var_9a703be9 = level.var_869f4c31;
+    var_9a703be9 = level.n_trial_timer;
     
-    while ( var_9a703be9 == level.var_869f4c31 )
+    while ( var_9a703be9 == level.n_trial_timer )
     {
         waitframe( 1 );
     }
@@ -132,7 +132,7 @@ function private function_31f197c2()
         level.var_f995ece6 zm_trial_timer::open( self );
         level.var_f995ece6 zm_trial_timer::set_timer_text( self, level.var_489d6aa2 );
         level.var_f995ece6 zm_trial_timer::set_under_round_rules( self, 1 );
-        self zm_trial_util::start_timer( level.var_869f4c31 );
+        self zm_trial_util::start_timer( level.n_trial_timer );
     }
 }
 
@@ -146,12 +146,12 @@ function private function_14a98a41( str_label, n_time_limit )
     self endon( "6b2c93b0788dd738" );
     level endon( #"end_of_round", #"host_migration_begin" );
     level.var_489d6aa2 = str_label;
-    level.var_869f4c31 = n_time_limit;
+    level.n_trial_timer = n_time_limit;
     
     while ( true )
     {
         wait 1;
-        level.var_869f4c31--;
+        level.n_trial_timer--;
     }
 }
 
@@ -172,6 +172,6 @@ function private function_ff66b979()
     }
     
     wait 5;
-    level thread function_8b87e57c( level.var_489d6aa2, 0, level.var_869f4c31 );
+    level thread function_8b87e57c( level.var_489d6aa2, 0, level.n_trial_timer );
 }
 

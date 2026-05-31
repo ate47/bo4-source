@@ -241,29 +241,29 @@ function private function_9a898f07( e_target )
         }
         
         target_zone = level.zones[ str_target_zone ];
-        var_24f5d9f8 = array( target_zone.name );
+        a_str_valid_zones = array( target_zone.name );
         a_str_adj_zones = getarraykeys( target_zone.adjacent_zones );
         
         foreach ( str_zone in a_str_adj_zones )
         {
             if ( target_zone.adjacent_zones[ str_zone ].is_connected )
             {
-                if ( !isdefined( var_24f5d9f8 ) )
+                if ( !isdefined( a_str_valid_zones ) )
                 {
-                    var_24f5d9f8 = [];
+                    a_str_valid_zones = [];
                 }
-                else if ( !isarray( var_24f5d9f8 ) )
+                else if ( !isarray( a_str_valid_zones ) )
                 {
-                    var_24f5d9f8 = array( var_24f5d9f8 );
+                    a_str_valid_zones = array( a_str_valid_zones );
                 }
                 
-                var_24f5d9f8[ var_24f5d9f8.size ] = str_zone;
+                a_str_valid_zones[ a_str_valid_zones.size ] = str_zone;
             }
         }
         
         foreach ( loc in level.zm_loc_types[ #"nova_crawler_location" ] )
         {
-            if ( array::contains( var_24f5d9f8, loc.zone_name ) )
+            if ( array::contains( a_str_valid_zones, loc.zone_name ) )
             {
                 if ( !isdefined( var_a6c95035 ) )
                 {

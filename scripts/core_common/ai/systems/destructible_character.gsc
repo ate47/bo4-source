@@ -101,9 +101,9 @@ function getdestructstate( entity )
 // Params 3
 // Checksum 0x7c52e446, Offset: 0x760
 // Size: 0x5c
-function function_f865501b( entity, var_e9807706, var_9cea16fe )
+function function_f865501b( entity, destruct_state, var_9cea16fe )
 {
-    entity._destruct_state = var_e9807706;
+    entity._destruct_state = destruct_state;
     togglespawngibs( entity, var_9cea16fe );
     reapplydestructedpieces( entity );
 }

@@ -1,12 +1,13 @@
 {
     "name": "#blackopspass",
-    "blackMarketName": "#",
-    "blackMarketDesc": "#",
-    "entitlementNameXHash": "#",
-    "productID": "38562",
+    "productName": "#hash_5d103382b94326bf",
+    "productDesc": "#hash_15a18a17f7ee95c2",
+    "previewImage": "#ui_menu_store_product_b04_blops_pass_new_large",
+    "productImage": "#ui_menu_store_product_b04_blops_pass_new_large",
+    "blackMarketImage": "#t7_store_product_bo4",
     "metadata": "SEASONPASS",
-    "previewImageName": "ui_menu_store_product_b04_blops_pass_new_large",
-    "productImageName": "ui_menu_store_product_b04_blops_pass_new_large",
-    "blackMarketImageName": "hash_1217b62ca29dad38",
-    "visibility": true
+    "productID": "38562",
+    "unk78": "!10055 10065",
+    "visibility": true,
+    "unka3": true
 }

@@ -28,7 +28,7 @@ function __init__()
 {
     init_shared();
     level.var_1dd2fbe1 = &function_c44c9bde;
-    level.aitank_explode = &function_1e11d939;
+    level.aitank_explode = &tankexplode;
     level.var_2e0b35c2 = &function_103d8f6;
     level.var_daa33d93 = &function_23e43434;
     level.var_cffcf4da = &function_577150fd;
@@ -90,7 +90,7 @@ function function_dd1ad60e( drone )
 // Namespace ai_tank/ai_tank
 // Params 1
 // Checksum 0x5f8e1a8d, Offset: 0x438
-// Size: 0x22, Type: bool
+// Size: 0x22
 function function_103d8f6( killstreaktype )
 {
     return supplydrop::issupplydropgrenadeallowed( killstreaktype );
@@ -118,7 +118,7 @@ function function_23e43434( killstreak_id, context, team )
 // Params 2
 // Checksum 0x170d08f9, Offset: 0x4f8
 // Size: 0xf2
-function function_1e11d939( attacker, weapon )
+function tankexplode( attacker, weapon )
 {
     if ( self.exploding === 1 )
     {

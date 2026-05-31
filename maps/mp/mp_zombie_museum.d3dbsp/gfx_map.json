@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_zombie_museum.d3dbsp",
+    "baseName": "mp_zombie_museum",
+    "mins": "-135168 -135168 -855.5",
+    "maxs": "135168 135168 4991.2695",
+    "checksum": 0,
+    "streamerworld": "#hash_2d0ff510dbc97eb6",
+    "lighting": "#maps/mp/mp_zombie_museum.d3dbsp",
+    "lutMaterial": "#lut_mp_zombie_museum",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_zm_museum",
+        "#img_trim_lut_mp_zm_museum",
+        "#img_trim_lut_mp_zm_museum",
+        "#img_trim_lut_mp_zm_museum"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 6,
+        "cookieArray": "#*cookie_array"
+    }
+}

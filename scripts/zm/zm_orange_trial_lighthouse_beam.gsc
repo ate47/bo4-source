@@ -135,7 +135,7 @@ function private setup_lighthouse()
         if ( isdefined( level.var_ab11c23d.vh_target ) )
         {
             level.var_ab11c23d.vh_target.b_moving = 0;
-            level.var_ab11c23d.vh_target clientfield::set( "" + #"hash_19bce46b8ab82440", 0 );
+            level.var_ab11c23d.vh_target clientfield::set( "" + #"lighthouse_beam_fx", 0 );
             waitframe( 1 );
             level.var_ab11c23d.vh_target delete();
         }
@@ -210,7 +210,7 @@ function function_f223e16f( round_reset )
     self endon( #"death" );
     self.vh_target.b_moving = 0;
     wait 2;
-    self.vh_target clientfield::set( "" + #"hash_19bce46b8ab82440", 0 );
+    self.vh_target clientfield::set( "" + #"lighthouse_beam_fx", 0 );
     self.vh_target.e_spotlight delete();
     self.vh_target delete();
     
@@ -238,7 +238,7 @@ function private function_1e902f3b()
 {
     self endon( #"disconnect" );
     level endon( #"hash_7646638df88a3656" );
-    var_407eb07 = 0;
+    b_locked_weapons = 0;
     
     while ( true )
     {
@@ -250,15 +250,15 @@ function private function_1e902f3b()
             var_f2b6fe6e = 1;
         }
         
-        if ( var_f2b6fe6e && var_407eb07 )
+        if ( var_f2b6fe6e && b_locked_weapons )
         {
             self zm_trial_util::function_dc0859e();
-            var_407eb07 = 0;
+            b_locked_weapons = 0;
         }
-        else if ( !var_f2b6fe6e && !var_407eb07 )
+        else if ( !var_f2b6fe6e && !b_locked_weapons )
         {
             self zm_trial_util::function_bf710271();
-            var_407eb07 = 1;
+            b_locked_weapons = 1;
         }
         
         waitframe( 1 );

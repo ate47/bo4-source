@@ -2,9 +2,9 @@
     "name": "#hero_lightninggun_wz",
     "baseWeapon": "#hero_lightninggun",
     "displayname": "#weapon/hero_lightninggun",
-    "xhash_70": "#hero_lightninggun",
+    "weapon70": "#hero_lightninggun",
     "luigiReticleWidget": "TempestReticle",
-    "streamkey": "#hash_7b8239df091ad050",
+    "soundbank": "#hero_lightninggun_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_118c": "tag_flash",
@@ -15,21 +15,42 @@
     "weaponstarthitpoints": 0,
     "soundrattlerangemin": 0,
     "soundrattlerangemax": 0,
-    "grenadeweapon": 0,
-    "dualwieldweapon": 0,
-    "dualWieldWeaponIndex": 0,
-    "altWeaponIndex": 0,
-    "itemIndex": 0,
     "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
     "weaponheadobjectiveheight": 20,
     "sessionMode": "WARZONE",
     "bDrawOffhandModelInHand": true,
     "lockonseekersearchsoundloops": false,
     "lockonseekerlockedsoundloops": false,
     "lockontargetlockedsoundloops": false,
-    "#hash_965cc0b3": false,
     "lockontargetfiredonsoundloops": false,
     "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.0303 0.95",
+            "0.2242 0.5",
+            "0.4 0.1",
+            "0.4992 0.05",
+            "0.7426 0.001",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0605 1",
+            "0.2242 0.7161",
+            "0.375 0.3412",
+            "0.4992 0.0032",
+            "0.7426 0",
+            "1 0"
+        ]
+    ],
     "firesound": "#hash_5e10f7d1551ddcba",
     "firesoundplayer": "#hash_1d005ed1c15e0adf",
     "sound260": "#hash_48b9cfe38764779f",
@@ -49,6 +70,10 @@
         "#hash_25bce61fc2fd5c90"
     ],
     "sharedWeaponSounds": "#rifle",
+    "tracers": [
+        "#lightninggun_tracer",
+        "#lightninggun_tracer"
+    ],
     "#hash_2e4a8800": "#hero_lightninggun_scoreevents",
     "viewmodel": [
         "#wpn_t7_hero_electro_view"
@@ -70,7 +95,7 @@
     "fx_be8": "#hash_1129917200ed80af",
     "fx_ca0": "#hash_3e00d314f4b2b053",
     "fx_ca8": "#hash_3df9e714f4acb3a1",
-    "enemyDeathFxSet": "#hash_638244505961166a",
-    "normalImpactFX": "#hash_6b794a92fe7beeab",
-    "normalImpactSounds": "#hash_7e602393a94cd0bb"
+    "enemyDeathFxSet": "#weapon_hero_lightninggun_death",
+    "normalImpactFX": "#hero_lightninggun_enter",
+    "normalImpactSounds": "#lightning_gun_impact"
 }

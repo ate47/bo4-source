@@ -98,7 +98,7 @@ function setlowermessage( text, time )
         return;
     }
     
-    level.lower_message lower_message::set_state( self, #"hash_45bfcb1cd8c9b50a" );
+    level.lower_message lower_message::set_state( self, #"visiblemessageonly" );
 }
 
 // Namespace hud_message/hud_message_shared

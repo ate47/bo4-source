@@ -1,0 +1,15 @@
+type,name
+xmodelmesh,d#hash_6d0e5ff109f50f2d
+techset,d#hash_5c620bec3ab6c90d
+image,d#$identitynormalmap
+image,d#$white_reveal
+image,d#$gray_32_one_channel
+image,d#$blacktransparent_color
+keyvaluepairs,#jpsafe_mp_urban
+material,d#mc/global_invisible
+xmodel,d#p7_gib_chunk_flesh_01
+xmodel,d#p7_gib_chunk_flesh_03
+xmodel,d#p7_gib_chunk_bone_03
+xmodel,d#p7_gib_chunk_meat_01
+xmodel,d#p7_gib_chunk_meat_02
+xmodel,d#p7_gib_chunk_meat_03

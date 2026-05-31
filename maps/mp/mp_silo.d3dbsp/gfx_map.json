@@ -1,0 +1,23 @@
+{
+    "name": "#maps/mp/mp_silo.d3dbsp",
+    "baseName": "mp_silo",
+    "mins": "-17613.998 -19664.969 -4124.952",
+    "maxs": "22696.188 24486.324 5442.325",
+    "checksum": 0,
+    "streamerworld": "#hash_cf48cc8d37c6e6a",
+    "lighting": "#maps/mp/mp_silo.d3dbsp",
+    "lutMaterial": "#lut_mp_silo",
+    "volumeDecalRevealTexture": "#vdreveal",
+    "unk550": [
+        "#img_trim_lut_mp_silo",
+        "#img_trim_lut_mp_silo",
+        "#img_trim_lut_mp_silo",
+        "#img_trim_lut_mp_silo"
+    ],
+    "draw": {
+        "blubIESprofileCNT": 0,
+        "blubIESprofileIMG": "#hash_7a2b772e4c99fcf4",
+        "cookieCount": 3,
+        "cookieArray": "#*cookie_array"
+    }
+}

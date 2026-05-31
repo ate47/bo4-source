@@ -1,0 +1,38 @@
+{
+    "name": "#hash_247f9e2b9f4b6e5d",
+    "model": "#p8_zm_man_pap_gazing_stone_vase_01_allstates",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_d0"
+                },
+                {
+                    "unk28": "tag_d1"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_1ada64a6db623c16",
+            "unk268": 10,
+            "hideBones": [
+                28,
+                29
+            ]
+        }
+    ]
+}

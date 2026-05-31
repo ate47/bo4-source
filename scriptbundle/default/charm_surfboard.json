@@ -1,10 +1,10 @@
 {
     "lootid": "#charm_surfboard",
-    "hash_ff3063df": "model#",
+    "hash_8a334535be3afb1:hash_ff3063df": "model#",
     "image": "ui_icon_weapon_charms_surfboard",
     "name": "charm_surfboard",
     "displayname": "localized17#hash_3ac2a0e7855ec359",
     "icon": "ui_icon_weapon_charms_surfboard",
-    "hash_ef5ad2b3": "model#",
+    "charmviewmodel": "model#",
     "previewimage": "image#ui_icon_weapon_charms_surfboard"
 }

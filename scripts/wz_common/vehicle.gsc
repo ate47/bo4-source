@@ -88,7 +88,7 @@ function __init__()
         {
             if ( getdvarint( #"wz_delete_vehicles", 0 ) > 0 )
             {
-                function_40fc185b();
+                delete_all_vehicles();
                 setdvar( #"wz_delete_vehicles", 0 );
             }
             
@@ -100,9 +100,9 @@ function __init__()
     // Params 0, eflags: 0x4
     // Checksum 0xb3ca057d, Offset: 0xd88
     // Size: 0x20, Type: dev
-    function private function_40fc185b()
+    function private delete_all_vehicles()
     {
-        level notify( #"hash_724a3976e45a71e2" );
+        level notify( #"delete_all_vehicles" );
     }
 
     // Namespace wz_vehicle/vehicle
@@ -712,7 +712,7 @@ function private function_e63726f6()
     
     self makevehicleunusable();
     self.takedamage = 0;
-    self.var_e8ec304d = 1;
+    self.nolockon = 1;
     self clientfield::set( "stopallfx", 1 );
     self clientfield::set( "flickerlights", 1 );
 }
@@ -728,7 +728,7 @@ function function_3054737a( vehicle )
         return;
     }
     
-    vehicle.session = { #vehicle:vehicle.vehicletype, #var_2dbaf8ca:vehicle.origin[ 0 ], #var_1ff15d37:vehicle.origin[ 1 ], #var_16f7d5d0:vehicle.origin[ 0 ], #var_4ba3155:vehicle.origin[ 1 ], #var_c87538d9:vehicle.trackingindex, #start_time:gettime(), #end_time:0, #start_health:vehicle.health, #end_health:vehicle.health, #first_player:int( self getxuid( 1 ) ), #var_efe98761:1, #var_309ad81f:0, #var_5ba0df6e:0, #var_770fd50d:0, #var_33f48e5a:0, #var_ecd1fe60:0, #vehicle_kills:0, #var_ffb0c509:0, #var_45bf3627:0, #raw\russian\sound\vox\scripted\isa\vox_isa_encourage_lost_01.SN65.xenon.snd:0, #passenger_kills:0 };
+    vehicle.session = { #vehicle:vehicle.vehicletype, #var_2dbaf8ca:vehicle.origin[ 0 ], #var_1ff15d37:vehicle.origin[ 1 ], #var_16f7d5d0:vehicle.origin[ 0 ], #var_4ba3155:vehicle.origin[ 1 ], #var_c87538d9:vehicle.trackingindex, #start_time:gettime(), #end_time:0, #start_health:vehicle.health, #end_health:vehicle.health, #first_player:int( self getxuid( 1 ) ), #var_efe98761:1, #var_309ad81f:0, #var_5ba0df6e:0, #var_770fd50d:0, #var_33f48e5a:0, #var_ecd1fe60:0, #vehicle_kills:0, #var_ffb0c509:0, #var_45bf3627:0, #raw/russian/sound/vox/scripted/isa/vox_isa_encourage_lost_01.SN65.xenon.snd:0, #passenger_kills:0 };
 }
 
 // Namespace wz_vehicle/vehicle
@@ -963,7 +963,7 @@ function on_player_killed( params )
         
         if ( isdefined( vehicle ) && isdefined( vehicle.session ) )
         {
-            vehicle.session.raw\russian\sound\vox\scripted\isa\vox_isa_encourage_lost_01.SN65.xenon.snd++;
+            vehicle.session.raw/russian/sound/vox/scripted/isa/vox_isa_encourage_lost_01.SN65.xenon.snd++;
         }
     }
     
@@ -1020,7 +1020,7 @@ function private function_ea4291d3()
 // Params 1, eflags: 0x4
 // Checksum 0xc0695a97, Offset: 0x3b88
 // Size: 0x14e
-function private function_b3caeebc( player )
+function private lock_on_warning( player )
 {
     self endon( #"death" );
     player endon( #"exit_vehicle", #"death" );
@@ -1207,7 +1207,7 @@ function event_handler[enter_vehicle] codecallback_vehicleenter( eventstruct )
     
     isemped = vehicle function_adc0649a();
     vehicle function_388973e4( isemped );
-    vehicle thread function_b3caeebc( self );
+    vehicle thread lock_on_warning( self );
 }
 
 // Namespace wz_vehicle/exit_vehicle
@@ -2579,7 +2579,7 @@ function private function_b1d54776()
     self.var_96c0f900[ 2 ] = 1000;
     self.var_96c0f900[ 1 ] = 1000;
     
-    if ( !isdefined( self ) || function_3132f113( self ) )
+    if ( !isdefined( self ) || isremovedentity( self ) )
     {
         return;
     }
@@ -2621,7 +2621,7 @@ function private function_8fb65b2a()
     self.var_96c0f900[ 2 ] = 1000;
     self function_4c6bcfe2( 1 );
     
-    if ( !isdefined( self ) || function_3132f113( self ) )
+    if ( !isdefined( self ) || isremovedentity( self ) )
     {
         return;
     }
